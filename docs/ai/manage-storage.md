@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: ae419c67b493ef03b08f6fcf627ad0fbe42ca6d0
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: b145c4acf4047356b8996d09d746679900314f1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099207"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726567"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>データのアップロードまたはモデルとログのダウンロードを行うストレージを参照する
 
@@ -27,7 +27,7 @@ ms.locfileid: "92099207"
 2. リモート マシンまたは Batch AI 計算コンテキストを展開します。
 3. **[ストレージ]** を右クリックしてから **[参照]** をクリックします。
 
-    ![storage](media/manage-storage/browse-storage.png)
+    ![サーバー エクスプローラーのスクリーンショット。[リモート マシン] フォルダーが展開されています。 フォルダー ツリーで [ストレージ] が強調されています。コンテキスト メニューで [参照] が選択されています。](media/manage-storage/browse-storage.png)
 
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>リモート マシンまたはファイル共有上にあるジョブ固有のデータにアクセスするには
 
@@ -35,4 +35,4 @@ ms.locfileid: "92099207"
 2. ジョブを選択します。
 3. **[作業フォルダー]** をクリックします。あるいは、これらの重要なログ ファイルにすばやくアクセスするために **[StdOut] または [Stderr]** をクリックします。
 
-    ![storage](media/manage-storage/job-workingfolder.png)
+    ![サーバー エクスプローラーの [ジョブ ブラウザー] ウィンドウのスクリーンショット。 train_mnist ジョブが選択されています。[ジョブ詳細] で [作業フォルダー] リンクが選択されています。](media/manage-storage/job-workingfolder.png)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58faf100c61a25ae014bdcc0b09d161e924ad5c9
-ms.sourcegitcommit: 21ac4a0c8ffac3964b75604678b12e0955e0159b
+ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97098528"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833365"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -70,7 +70,7 @@ Visual Studio には、マネージド コードおよびネイティブ コー�
 
 - 実行する個々のテストを選択し、選択したテストの右クリック メニューを開いて、 **[選択したテストの実行]** を選択します。
 
-- 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+- 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![Visual Studio テスト エクスプローラー ツールバーの並列テスト実行トグル ボタンのスクリーンショット。 このボタンが選択されると、テストが並列実行されます。](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
 テストの実行中、**テスト エクスプローラー ウィンドウ** の一番上にある **成功/失敗ステータス バー** がアニメーション化されます。 テストの実行の終了時に、すべてのテストが成功した場合は、**成功/失敗ステータス バー** が緑色に変わり、いずれかのテストが失敗した場合は、赤色に変わります。
 ::: moniker-end
@@ -150,7 +150,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 
 たとえば、優先順位で [グループ化] オプションを選択することで、階層の独自のレベルを定義し、 **[状態]** と **[クラス]** でグループ化することができます。
 
-![状態とクラスによるグループ化](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
+![Visual Studio テスト エクスプローラーのスクリーンショット。ウィンドウにそれぞれ、テスト階層と [グループ化] メニューが表示されています。[クラス] オプションと [状態] オプションが選択されています。](../test/media/vs-2019/test-explorer-groupby-state-16-2.png)
 ::: moniker-end
 
 ### <a name="test-explorer-groups"></a>テスト エクスプローラーのグループ
@@ -207,7 +207,7 @@ Visual Studio エディターでテスト メソッドのソース コードを�
 
 **プレイリストを開くには**、Visual Studio メニューから **[テスト]** > **[プレイリスト]** を選択し、最近使用されたプレイリストのリストから選択するか、 **[プレイリストを開く]** を選択してプレイリストの名前と場所を指定します。
 
-個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![Visual Studio テスト エクスプローラー ツールバーの並列テスト実行トグル ボタンのスクリーンショット。](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 グループとして実行または表示するテストのリストを作成して保存できます。 プレイリストを選択すると、リスト内のテストが新しい [テスト エクスプローラー] タブに表示されます。複数のプレイリストにテストを追加できます。
@@ -264,7 +264,7 @@ Visual Studio 2019 バージョン 16.7 以降では、ツールバーの **[編
 
 [グループ](#test-explorer-groups)は、テスト エクスプローラーの列として、特徴、スタックトレース、エラー メッセージ、完全修飾名と共に使用することもできます。 既定では、ほとんどの列が表示されないため、表示する列とその表示順序をカスタマイズできます。
 
-![状態とクラスによるグループ化](../test/media/vs-2019/test-explorer-columns-16-2.png)
+![Visual Studio テスト エクスプローラーのスクリーンショット。メニューで [列] が、サブメニューで [期間]、[特徴]、[エラー メッセージ] が選択されています。](../test/media/vs-2019/test-explorer-columns-16-2.png)
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>テスト列のフィルター処理、並べ替え、再配置
 

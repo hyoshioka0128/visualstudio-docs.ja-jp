@@ -1,6 +1,7 @@
 ---
 title: Web アプリのデバッグ - トラブルシューティング | Microsoft Docs
-ms.custom: seodec18
+description: Web アプリケーションのエラーをデバッグしたり、解決したりするときに利用できる一般的な手順のリンクをまとめています。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 569b967a91ea3a93ff75bc45aec8974f5474ce84
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188321"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728162"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Web アプリケーションのデバッグ:トラブルシューティング
 ここでは、エラーを解決するための一般的な手順について説明します。

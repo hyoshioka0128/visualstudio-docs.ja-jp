@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f563d37e6456ec775b2e70d59e07b0627c82994b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330200"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833313"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -24,17 +24,17 @@ ms.locfileid: "96330200"
 
 単体テストは、ソフトウェア開発ワークフローの構成要素になったときに、コードの品質に最大の効果をもたらします。 関数またはその他のアプリケーション コードを記述したらすぐに、標準的な入力データ、境界上のデータ、および正しくないデータに対するコードの動作を検証し、コードによる明示的または暗黙的な前提を確認する単体テストを作成してください。 *テスト駆動開発* では、コードを記述する前に単体テストを作成することで、設計ドキュメントと機能仕様の両方として単体テストを使用します。
 
-コードから簡単にテスト プロジェクトとテスト メソッドを生成したり、必要に応じて手動でテストを作成したりできます。 IntelliTest を使用して .NET コードを精査する際は、テスト データと単体テストのスイートを生成できます。 コードにある各ステートメントについて、そのステートメントを実行するテスト入力が生成されます。 [コードの単体テストを生成する](generate-unit-tests-for-your-code-with-intellitest.md)方法をご覧ください。
-
 テスト エクスプローラーは、テスト エクスプローラーのアドオン インターフェイスを実装した、サードパーティ製やオープン ソースの単体テスト フレームワークも実行できます。 Visual Studio 拡張機能マネージャーおよび Visual Studio ギャラリーを使用して、これらのフレームワークの多くを追加できます。 詳細については、「[サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)」をご覧ください。
+
+コードから簡単にテスト プロジェクトとテスト メソッドを生成したり、必要に応じて手動でテストを作成したりできます。 IntelliTest を使用して .NET コードを精査する際は、テスト データと単体テストのスイートを生成できます。 コードにある各ステートメントについて、そのステートメントを実行するテスト入力が生成されます。 [.NET コードの単体テストを生成する](generate-unit-tests-for-your-code-with-intellitest.md)方法をご覧ください。
 
 ## <a name="get-started"></a>作業開始
 
 コーディングに直接関係する単体テストの概要については、次のいずれかのトピックを参照してください。
 
-- [チュートリアル: マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [チュートリアル: .NET コード用の単体テストの作成および実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [クイック スタート:テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [チュートリアル: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Visual Studio で C/C++ 用の単体テストを作成する](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -85,11 +85,11 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>単体テスト プロジェクトとテスト メソッドを作成する
 
-ほとんどの場合、コードから単体テスト プロジェクトと単体テスト スタブを生成する方が手軽です。 また、必要に応じて単体テスト プロジェクトとテストを手動で作成することもできます。 サード パーティ製のフレームワークで単体テストを作成する場合は、拡張機能[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) または [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator) のいずれかをインストールする必要があります。
+C# については、ほとんどの場合、コードから単体テスト プロジェクトと単体テスト スタブを生成する方が手軽です。 また、必要に応じて単体テスト プロジェクトとテストを手動で作成することもできます。 サード パーティ製のフレームワークでコードから単体テストを作成する場合は、拡張機能[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) または [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator) のいずれかをインストールする必要があります。 C# を使用していない場合、このセクションをスキップし、「[単体テスト プロジェクトと単体テストを手動で作成する](#create-the-unit-test-project-and-unit-tests-manually)」に進んでください。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>単体テスト プロジェクトと単体テスト スタブを生成する
 
-1. コード エディター ウィンドウで、右クリックして右クリック メニューから [ **[単体テストの作成]** ](create-unit-tests-menu.md) を選択します。
+1. コード エディター ウィンドウで、右クリックして右クリック メニューから [ **[単体テストの作成]**](create-unit-tests-menu.md) を選択します。
 
    ::: moniker range="vs-2017"
    ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/createunittestsrightclick.png)
@@ -101,7 +101,7 @@ public void Withdraw(double amount)
    ![エディター ウィンドウで、コンテキスト メニューを表示](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > **[単体テストの作成]** メニュー コマンドは、マネージド コードに対してのみ使用できます。
+   > **[単体テストの作成]** メニュー コマンドは、C# コードに対してのみ使用できます。
    ::: moniker-end
 
 2. **[OK]** をクリックして、既定値をそのまま使用して単体テストを作成するか、単体テスト プロジェクトと単体テストの作成と名前付けに使用される値を変更します。 単体テスト メソッドに既定で追加されるコードを選択することができます。
@@ -264,7 +264,7 @@ public void My_Test ()
 
 ::: moniker range="vs-2017"
 
-個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![Visual Studio テスト エクスプローラー ツールバーの並列テスト実行トグル ボタンのスクリーンショット。](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
 ::: moniker-end
 

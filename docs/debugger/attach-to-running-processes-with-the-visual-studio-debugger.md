@@ -1,6 +1,7 @@
 ---
 title: デバッガーで実行中のプロセスにアタッチする
-ms.custom: seodec18
+description: ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチする方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33af839406497a2a30fba2f5103a64a1da36ed7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671460"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760927"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 
@@ -58,7 +59,7 @@ ms.locfileid: "94671460"
 
 1. **[接続先]** をローカル コンピューター名に設定します。
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![[プロセスにアタッチ] ダイアログ ボックスのスクリーンショット。接続ターゲットがローカル コンピューター名に設定されています。](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. **[使用可能なプロセス]** リストで、アタッチする 1 つまたは複数のプロセスを見つけて選択します。
 

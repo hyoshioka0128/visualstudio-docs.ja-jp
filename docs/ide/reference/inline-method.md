@@ -1,5 +1,6 @@
 ---
 title: メソッドのインライン化
+description: Visual Studio の [クイック アクションとリファクタリング] メニューを使用してインライン メソッド宣言をリファクターし、より明確な構文を提供する方法について説明します。
 ms.date: 11/03/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cc619ea61a7fd4d7f4bc542b946e298933a8f73
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 655c6dad03b05b257aec3d92199321a0e0e93d22
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93403538"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761421"
 ---
 # <a name="inline-method"></a>メソッドのインライン化
 
@@ -41,11 +42,11 @@ ms.locfileid: "93403538"
     
    **[Inline `<QualifiedMethodName>`]\(`<QualifiedMethodName>` のインライン化\)** を選択し、メソッドのインラインでの宣言を削除します。
 
-    ![クラスを抽象にする](media/inline-method-remove-declaration.png)
+    ![Visual Studio の [クイック アクションとリファクタリング] メニューのスクリーンショット。[Inline 'CreateWidget()']\(CreateWidget()' のインライン化\) が選択され、C# コードの変更が表示されています。](media/inline-method-remove-declaration.png)
 
    **[Inline and keep `<QualifiedMethodName>`]\(インライン化して `<QualifiedMethodName>` を保持\)** を選択して、元のメソッド宣言を保持します。
 
-    ![クラスを抽象にする](media/inline-method-preserve-declaration.png)
+    ![Visual Studio の [クイック アクションとリファクタリング] メニューのスクリーンショット。[Inline and keep 'CreateWidget()']\('CreateWidget()' をインライン化して保持\) が選択され、C# コードの変更が表示されています。](media/inline-method-preserve-declaration.png)
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,5 +1,7 @@
 ---
 title: '[アサートに失敗しました] ダイアログ ボックス | Microsoft Docs'
+description: '[アサートに失敗しました] ダイアログ ボックスについて説明します。これは、Visual Studio のデバッグ ユーザー インターフェイスで表示されることがあるダイアログ ボックスです。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb42067bb4c88777a6c25ace71f53b9d9b3aa36b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: acc8f5abaa0c839232bbcedc63d24387444bd749
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745769"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729081"
 ---
 # <a name="assertion-failed-dialog-box"></a>[アサートに失敗しました] ダイアログ ボックス
 アサート ステートメントでは、プログラムの特定位置にある true となるはずの条件を指定します。 条件が true にならない場合、アサーションは失敗し、プログラムの実行が停止し、このダイアログ ボックスが表示されます。

@@ -1,5 +1,7 @@
 ---
 title: '[メッセージ プロパティ] ダイアログ ボックス | Microsoft Docs'
+description: '[メッセージ プロパティ] を参照して、メッセージ ビューに表示されるメッセージよりも詳細な情報を確認します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f58ad7344c7de9a9486fcb3ccefbf263688926f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846116"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903065"
 ---
 # <a name="message-properties-dialog-box"></a>[メッセージ プロパティ] ダイアログ ボックス
 このダイアログ ボックスを使用して、特定のメッセージの詳細を確認します。 このダイアログ ボックスを表示するには、[メッセージ ビュー](../debugger/messages-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のメッセージ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。
@@ -48,6 +50,6 @@ ms.locfileid: "62846116"
 
  [メッセージ ビュー](../debugger/messages-view.md) ウィンドウ、プロセス、またはスレッドに関するメッセージ ストリームが表示されます。
 
- [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
  [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。

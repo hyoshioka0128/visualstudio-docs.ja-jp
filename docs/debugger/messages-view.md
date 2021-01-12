@@ -1,5 +1,7 @@
 ---
 title: メッセージ ビュー | Microsoft Docs
+description: 各ウィンドウ、スレッド、プロセスには、メッセージ ビュー ウィンドウで表示できる関連するメッセージ ストリームがあります。 メッセージ ビューを開いて制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62845854"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903404"
 ---
 # <a name="messages-view"></a>メッセージ ビュー
 各ウィンドウには、メッセージ ストリームが関連付けられています。 メッセージ ビュー ウィンドウには、このメッセージ ストリームが表示されます。 ウィンドウ ハンドル、メッセージ コード、およびメッセージが表示されます。 スレッドまたはプロセスのメッセージ ビューも作成できます。 これにより、特定のプロセスまたはスレッドが所有するすべてのウィンドウに送信されたメッセージを表示できます。これは、ウィンドウ初期化メッセージをキャプチャする場合に特に便利です。
@@ -60,7 +62,7 @@ ms.locfileid: "62845854"
  [[メッセージ プロパティ] の表示](../debugger/how-to-display-message-properties.md) メッセージに関する詳細を表示する方法です。
 
 ## <a name="related-sections"></a>関連項目
- [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
  [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 

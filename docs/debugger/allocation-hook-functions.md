@@ -1,5 +1,7 @@
 ---
 title: 割り当てフック関数 | Microsoft Docs
+description: Visual Studio で C ランタイム (CRT) デバッグを実行する必要があるとき、_CrtSetAllocHook を利用してインストールされる割り当てフック関数を使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b0bea73a044dabce5270c06f68658f85c612574c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745818"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729185"
 ---
 # <a name="allocation-hook-functions"></a>割り当てフック関数
 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) を使用して組み込まれたメモリ割り当て用のフック関数は、メモリの割り当て、再割り当て、および解放のたびに呼び出されます。 この種類のフックは、さまざまな目的で使用できます。 メモリ不足の状況がアプリケーションでどのように処理されるかをテストする場合、たとえば、割り当てパターンを調査する場合や、後から分析するために割り当て情報をログに記録する場合に使用します。

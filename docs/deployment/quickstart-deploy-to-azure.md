@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 83446ab87af07e3ac46594beeecec781f596ecff
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349582"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815595"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 
@@ -53,11 +53,11 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 1. **[Azure App Service の作成 (Windows)]** ダイアログで、 **[アプリ名]** 、 **[リソース グループ]** 、 **[App Service プラン]** の各入力フィールドに値が設定されます。 これらの名前を保持することも、変更することもできます。 準備ができたら、 **[作成]** を選択します。
 
-    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Azure App Service (Windows) の作成ダイアログのスクリーンショット。[名前]、[サブスクリプション]、[リソース グループ]、[ホスティング プラン] の各フィールドが設定されています。](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. **[発行]** ダイアログで、新しく作成されたインスタンスが自動的に選択されています。 準備ができたら、 **[完了]** を選択します。
 
-    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Visual Studio のソリューション エクスプローラーからアクセスした [発行] ウィンドウのスクリーンショット。 発行先として Azure が選択されています。](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. **[発行]** を選びます。 Visual Studio によってアプリが Azure App Service にデプロイされ、ブラウザに Web アプリが読み込まれます。 プロジェクト プロパティの **[発行]** ウィンドウに、サイト URL とその他の詳細が示されます。
 

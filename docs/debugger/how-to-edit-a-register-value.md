@@ -1,5 +1,7 @@
 ---
 title: レジスタ値を編集する | Microsoft Docs
+description: '[レジスタ] ウィンドウで値を編集して、レジスタの内容を変更する方法について説明します (アドレス レベルのデバッグが有効になっている場合にのみ使用できます)。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ccbfbc0ede95fe93974474f4917e1b141797e6
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4f83f67f57e67080f97a6df434f8dfc008e36892
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851646"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903546"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>方法: レジスタ値を編集する (C#、C++、Visual Basic、F#)
 

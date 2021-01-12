@@ -1,5 +1,7 @@
 ---
 title: OnStart メソッドをデバッグする | Microsoft Docs
+description: メソッド内からデバッガーを起動して、Visual Studio で Windows サービスの OnStart メソッドをデバッグする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d695e4d22c728eb256aeb0e1350819ba23b93385
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 488fe471552256e8fad62bb6f831448811ca343f
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852375"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903143"
 ---
 # <a name="how-to-debug-the-onstart-method"></a>方法: OnStart メソッドをデバッグする
 Windows サービスをデバッグするには、サービスを起動し、デバッガーをサービス プロセスにアタッチします。 詳細については、「[方法:Windows サービス アプリケーションをデバッグする](/dotnet/framework/windows-services/how-to-debug-windows-service-applications) ただし、Windows サービスの <xref:System.ServiceProcess.ServiceBase.OnStart%2A?displayProperty=fullName> メソッドをデバッグするには、メソッド内部からデバッガーを起動する必要があります。
@@ -42,13 +44,13 @@ Windows サービスをデバッグするには、サービスを起動し、デ
 
     次のようなダイアログ ボックスが表示されます。
 
-    ![OnStartDebug](../debugger/media/onstartdebug.png "OnStartDebug")
+    ![WindowsService-Asis.exe で発生した未処理の .NET Framework 例外を示す Visual Studio の [Just-In-Time デバッガー] ダイアログ ボックスのスクリーンショット。](../debugger/media/onstartdebug.png)
 
 3. **[はい、\<service name> をデバッグします]** をクリックします。
 
 4. [Just-In-Time デバッガー] ウィンドウで、デバッグに使う Visual Studio のバージョンを選びます。
 
-    ![JustInTimeDebugger](../debugger/media/justintimedebugger.png "JustInTimeDebugger")
+    ![使用可能なデバッガーの一覧で "Microsoft Visual Studio 2015 の新しいインスタンス" が選択されている、Visual Studio の [Just-In-Time デバッガー] ウィンドウのスクリーンショット。](../debugger/media/justintimedebugger.png)
 
 5. Visual Studio の新しいインスタンスが開始し、 `Debugger.Launch()` メソッドで実行が停止します。
 

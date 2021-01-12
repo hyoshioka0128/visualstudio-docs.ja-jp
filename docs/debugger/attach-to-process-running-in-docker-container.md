@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b32b402e2bbf85cf5c028ec2dc94821ec463644
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674790"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761265"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Docker コンテナー上で実行されているプロセスにアタッチする 
 
@@ -34,7 +34,7 @@ Visual Studio を使用して、Windows Docker コンテナーまたは Linux .N
 
 1. Visual Studio で、 **[デバッグ] > [プロセスにアタッチ] (CTRL + ALT + P キー)** を選択して、 **[プロセスにアタッチ]** ダイアログ ボックスを開きます。
 
-![[プロセスにアタッチ] メニュー](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
+![Docker (Linux コンテナー) の接続の種類が表示されている Visual Studio の [プロセスにアタッチ] ダイアログのスクリーンショット。](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
 
 2. **[接続の種類]** を **[Docker (Linux コンテナー)]** に設定します。
 3. **[Docker コンテナーの選択]** ダイアログボックスを使用して **[検索]** を選択し、 **[接続先]** を設定します。
@@ -63,7 +63,7 @@ Visual Studio を使用して、Windows Docker コンテナーまたは Linux .N
 
 4. Visual Studio で **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
 
-    ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete.png "入力された Linux Docker の [アタッチ] メニュー")
+    ![Visual Studio の [プロセスにアタッチ] ダイアログのスクリーンショット。[接続の種類] が [Docker (Linux コンテナー)] に設定され、dotnet プロセスが選択されています。](../debugger/media/docker-attach-complete.png "入力された Linux Docker の [アタッチ] メニュー")
 
 ## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a> Windows Docker コンテナー上で実行されているプロセスにアタッチする
 
@@ -76,7 +76,7 @@ Visual Studio を使用して、Windows Docker コンテナーまたは Linux .N
 
 1. Visual Studio で、 **[デバッグ] > [プロセスにアタッチ]** (**CTRL + ALT + P** キー) を選択して、 **[プロセスにアタッチ]** ダイアログ ボックスを開きます。
 
-   ![[プロセスにアタッチ] メニュー](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
+   ![Visual Studio の [プロセスにアタッチ] ダイアログのスクリーンショット。Docker (Windows コンテナー) の接続の種類が表示されています。](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
 
 2. **[接続の種類]** を **[Docker (Windows コンテナー)]** に設定します。
 3. **[Docker コンテナーの選択]** ダイアログボックスを使用して **[検索]** を選択し、 **[接続先]** を設定します。
@@ -93,6 +93,6 @@ Visual Studio を使用して、Windows Docker コンテナーまたは Linux .N
 
 4. **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
 
-    ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete-windows.png "入力された Windows Docker の [アタッチ] メニュー")
+    ![Visual Studio の [プロセスにアタッチ] ダイアログのスクリーンショット。[接続の種類] が [Docker (Windows コンテナー)] に設定され、dotnet.exe プロセスが選択されています。](../debugger/media/docker-attach-complete-windows.png "入力された Windows Docker の [アタッチ] メニュー")
 
-5.  Visual Studio で [使用可能なプロセス] リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
+5. Visual Studio で [使用可能なプロセス] リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。

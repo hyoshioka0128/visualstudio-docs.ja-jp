@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 32f6535e92f41d8030b6e060960940339da91fc9
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92298213"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729302"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>ローカルの Docker コンテナーでのアプリのデバッグ
 
@@ -94,12 +94,12 @@ Docker コンテナーは .NET Framework プロジェクトと .NET Core プロ�
 
    詳細については、「[ASP.NET Core での Razor ファイルのコンパイル](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1&preserve-view=true)」を参照してください。
 
-1. **[ソリューション構成]** を **[デバッグ]** に設定します。 次に、 **Ctrl**+**F5** を押し、Docker イメージをビルドしてローカルで実行します。
+1. **[ソリューション構成]** を **[デバッグ]** に設定します。 次に、**Ctrl**+**F5** を押し、Docker イメージをビルドしてローカルで実行します。
 
     コンテナー イメージがビルドされ、Docker コンテナーで実行されると、Visual Studio では、既定のブラウザーでその Web アプリが起動します。
 
 1. *インデックス* ページに移動します。 このページで変更を行います。
-1. Visual Studio に戻り、 *Index.cshtml* を開きます。
+1. Visual Studio に戻り、*Index.cshtml* を開きます。
 1. ファイルの最後に次の HTML コンテンツを追加し、変更を保存します。
 
     ```html
@@ -130,7 +130,7 @@ Docker コンテナーは .NET Framework プロジェクトと .NET Core プロ�
 4. デバッグを開始してブレークポイントまで進めるには、F5 キーを押します。
 5. Visual Studio に切り替えるとブレークポイントが表示されます。 値を調べます。
 
-   ![ブレークポイント](media/edit-and-refresh/breakpoint.png)
+   ![Visual Studio の Index.cshtml.cs のコードの一部を示すスクリーンショット。黄色で強調表示されているコード行の左側にブレークポイントが設定されています。](media/edit-and-refresh/breakpoint.png)
 
 ## <a name="create-a-net-framework-console-app"></a>.NET Framework コンソール アプリを作成する
 
@@ -141,7 +141,7 @@ Docker コンテナーは .NET Framework プロジェクトと .NET Core プロ�
 
 ### <a name="debug-with-breakpoints"></a>ブレークポイントを使用してデバッグする
 
-1. ソリューション エクスプローラーで、 *Program.cs* を開きます。
+1. ソリューション エクスプローラーで、*Program.cs* を開きます。
 2. `Main` メソッドの内容を次のコードに置き換えます。
 
    ```csharp
@@ -152,7 +152,7 @@ Docker コンテナーは .NET Framework プロジェクトと .NET Core プロ�
 4. F5 キーを押すと、デバッグが開始され、ブレークポイントまで進みます。
 5. Visual Studio に切り替えてブレークポイントを表示し、値を調べます。
 
-   ![ブレークポイント](media/edit-and-refresh/breakpoint-console.png)
+   ![Visual Studio の Program.cs のコード ウィンドウのスクリーンショット。黄色で強調表示されているコード行の左側にブレークポイントが設定されています。](media/edit-and-refresh/breakpoint-console.png)
 
 ## <a name="container-reuse"></a>コンテナーの再利用
 

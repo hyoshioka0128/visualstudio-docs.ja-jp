@@ -1,9 +1,9 @@
 ---
 title: 単体テストの概要
-description: Visual Studio を使用して、単体テストを定義および実行してコードの正常性を維持し、コード カバレッジを保証し、事前にエラーとフォールトを見つけます。
+description: Visual Studio を使用すると、コードの正常性を維持するための単体テストを定義および実行し、顧客で発生する前にエラーとフォールトを見つけておくことができます。
 ms.custom: SEO-VS-2020
 ms.date: 04/07/2020
-ms.topic: conceptual
+ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daff1a7b7c2e62b4ca4a508c5c8dd31261a40dd
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441782"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756657"
 ---
 # <a name="get-started-with-unit-testing"></a>単体テストの概要
 
 Visual Studio を使用して、単体テストを定義および実行してコードの正常性を維持し、コード カバレッジを保証し、事前にエラーとフォールトを見つけます。 単体テストを頻繁に実行し、コードが正しく動作していることを確認します。
+
+この記事では、コードと図に C# が使用されていますが、概念と機能は .NET 言語、C++、Python、JavaScript、および TypeScript に適用されます。
 
 ## <a name="create-unit-tests"></a>単体テストを作成する
 
@@ -28,7 +30,7 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 1. Visual Studio でテストするプロジェクトを開きます。
 
-   単体テストの例をデモすることを目的として、この記事では **HelloWorldCore** という名前のシンプルな "Hello World" プロジェクトをテストします。 そのようなプロジェクトのサンプル コードは、次のとおりです。
+   単体テストの例をデモすることを目的として、この記事では **HelloWorldCore** という名前のシンプルな "Hello World" C# プロジェクトをテストします。 そのようなプロジェクトのサンプル コードは、次のとおりです。
 
    ```csharp
    namespace HelloWorldCore
@@ -44,7 +46,14 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 1. **ソリューション エクスプローラー** で、ソリューション ノードを選びます。 次に、上部のメニュー バーで **[ファイル]**  >  **[追加]**  >  **[新しいプロジェクト]** を選択します。
 
-1. 新しいプロジェクトのダイアログ ボックスで、使用するテスト フレームワーク用の単体テスト プロジェクト テンプレートを検索して選択します。
+1. 新しいプロジェクトのダイアログ ボックスで、MSTest など、使用するテスト フレームワーク用の単体テスト プロジェクト テンプレートを検索して選択します。
+
+   Visual Studio 2017 バージョン 14.8 以降、.NET 言語には NUnit と xUnit 用の組み込みのテンプレートが含まれています。 C++ の場合、言語でサポートされているテスト フレームワークを選択する必要があります。 Python の場合、使用するテスト プロジェクトを設定するには、[Python コードでの単体テストの設定](../python/unit-testing-python-in-visual-studio.md)に関するページを参照してください。
+
+   > [!TIP]
+   > C# の場合、より高速なメソッドを使用して、単体テスト プロジェクトをコードから作成することができます。 詳細については、「[単体テスト プロジェクトとテスト メソッドを作成する](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods)」を参照してください。 .NET Core または .NET Standard でこのメソッドを使用するには、Visual Studio 2019 が必要です。
+
+   次の図に、.NET でサポートされている MSTest 単体テストを示します。
 
    ::: moniker range=">=vs-2019"
 
@@ -58,7 +67,7 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
    ![Visual Studio 2019 の単体テスト プロジェクト テンプレート](media/mstest-test-project-template.png)
 
-   テスト プロジェクトの名前を選択し、**[OK]** をクリックします。
+   テスト プロジェクトの名前 (HelloWorldTests など) を選択して、 **[OK]** をクリックします。
 
    ::: moniker-end
 
@@ -74,7 +83,9 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 
 1. 単体テスト メソッドにコードを追加します。
 
-   たとえば、MSTest プロジェクトには、次のコードを使用できます。
+   たとえば、ご利用のテスト フレームワークに一致する適切なドキュメント タブを選択して、次のコードを使用します: MSTest、NUnit、または xUnit (.NET でのみサポートされます)。
+
+   # <a name="mstest"></a>[MSTest](#tab/mstest)
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -103,7 +114,7 @@ Visual Studio を使用して、単体テストを定義および実行してコ
    }
    ```
 
-   あるいは、NUnit プロジェクトの場合、次のコードを使用することもできます。
+   # <a name="nunit"></a>[NUnit](#tab/nunit)
 
    ```csharp
    using NUnit.Framework;
@@ -136,8 +147,33 @@ Visual Studio を使用して、単体テストを定義および実行してコ
    }
    ```
 
-> [!TIP]
-> 単体テストの作成について詳しくは、[マネージド コードの単体テストの作成および実行](walkthrough-creating-and-running-unit-tests-for-managed-code.md)に関するページを参照してください。
+    # <a name="xunit"></a>[xUnit](#tab/xunit)
+
+    ```csharp
+    using System;
+    using Xunit;
+    using System.IO;
+    
+    namespace HelloWorldTests
+    {
+        public class UnitTest1
+        {
+            private const string Expected = "Hello World!";
+            [Fact]
+            public void Test1()
+            {
+                using (var sw = new StringWriter())
+                {
+                    Console.SetOut(sw);
+                    HelloWorldCore.Program.Main();
+    
+                    var result = sw.ToString().Trim();
+                    Assert.Equal(Expected, result);
+                }
+            }
+        }
+    }
+    ```
 
 ## <a name="run-unit-tests"></a>単体テストを実行する
 
@@ -161,12 +197,12 @@ Visual Studio を使用して、単体テストを定義および実行してコ
 > [!TIP]
 > [テスト エクスプローラー](../test/run-unit-tests-with-test-explorer.md)を使用して、組み込みのテスト フレームワーク (MSTest) またはサードパーティのテスト フレームワークから、単体テストを実行できます。 テストをカテゴリにまとめたり、テストの一覧にフィルターを適用したり、テストのプレイリストを実行したりできます。 テストをデバッグし、テストのパフォーマンスとコード カバレッジを分析することもできます。
 
-## <a name="view-live-unit-test-results"></a>ライブ単体テストの結果を表示する
+## <a name="view-live-unit-test-results-visual-studio-enterprise"></a>ライブ単体テストの結果を表示する (Visual Studio Enterprise)
 
 Visual Studio 2017 以降で MSTest、xUnit、または NUnit テスト フレームワークを使用する場合は、単体テストのライブ結果を表示できます。
 
 > [!NOTE]
-> ライブ単体テストは、Enterprise Edition でのみ使用できます。
+> これらの手順に従うには、Visual Studio Enterprise が必要です。
 
 1. **[テスト]** > **[Live Unit Testing]** > **[開始]** を選択して、**[テスト]** メニューでライブ単体テストをオンにします。
 
@@ -192,30 +228,25 @@ Visual Studio 2017 以降で MSTest、xUnit、または NUnit テスト フレ�
 
 ライブ単体テストの詳細については、[ライブ単体テスト](../test/live-unit-testing-intro.md)に関するページを参照してください。
 
-## <a name="generate-unit-tests-with-intellitest"></a>IntelliTest で単体テストを生成する
-
-IntelliTest を実行すると、どのテストが失敗しているかを把握し、必要なコードを追加して修正できます。 回帰スイートを提供するために、生成されたどのテストをテスト プロジェクトに保存するかを選択できます。 コードを変更する際に、IntelliTest を再実行して、生成されたテストとコードの変更を同期させます。 その方法については、「[IntelliTest でのコードの単体テストの生成](../test/generate-unit-tests-for-your-code-with-intellitest.md)」を参照してください。
-
-> [!TIP]
-> IntelliTest は、.NET Framework を対象とするマネージド コードでのみ使用できます。
-
-![IntelliTest での単体テストの生成](media/intellitest.png)
-
-## <a name="analyze-code-coverage"></a>コード カバレッジの分析
-
-単体テストなどのコード化されたテストによって実際にテストされるプロジェクトのコードの割合を調べるには、Visual Studio のコード カバレッジ機能を使用できます。 バグを効果的に回避するには、コードの大部分を対象としたテストが必要です。 その方法については、「[コード カバレッジを使用した、テストされるプロジェクトのコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)」を参照してください。
-
 ## <a name="use-a-third-party-test-framework"></a>サードパーティのテスト フレームワークを使用する
 
-Boost、Google、NUnit など、サードパーティのテスト フレームワークを利用して、Visual Studio で単体テストを実行できます。 **NuGet パッケージ マネージャー** を使用して、お好きなフレームワーク用の NuGet パッケージをインストールします。 また、NUnit テスト フレームワークと xUnit テスト フレームワーク用に、Visual Studio には、必要な NuGet パッケージを含む事前構成済みのテスト プロジェクト テンプレートが含まれています。
+ご利用のプログラミング言語に応じて、Boost、Google、NUnit など、サードパーティのテスト フレームワークを利用して、Visual Studio で単体テストを実行できます。 サードパーティのフレームワークを使用するには:
 
-[NUnit](https://nunit.org/) を使用する単体テストを作成するには:
+- **NuGet パッケージ マネージャー** を使用して、お好きなフレームワーク用の NuGet パッケージをインストールします。
+
+- (.NET) Visual studio 2017 バージョン 14.6 以降、Visual Studio には、NUnit および xUnit テスト フレームワーク用に構成済みのテスト プロジェクト テンプレートが含まれています。 これらのテンプレートには、サポートを有効にするために必要な NuGet パッケージも含まれています。
+
+- (C++) Visual Studio 2017 以降のバージョンには、Boost などの一部のフレームワークが既に含まれています。 詳細については、「[Visual Studio で C/C++ 用の単体テストを作成する](../test/writing-unit-tests-for-c-cpp.md)」を参照してください。
+
+単体テスト プロジェクトを作成するには:
 
 1. テストするコードを含むソリューションを開きます。
 
 2. **ソリューション エクスプローラー** でソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** を選択します。
 
-3. **[NUnit テスト プロジェクト]** プロジェクト テンプレートを選択します。
+3. 単体テスト プロジェクト テンプレートを選択します。
+
+   この例では、[NUnit](https://nunit.org/) を選択します
 
    ::: moniker range=">=vs-2019"
 
@@ -245,10 +276,10 @@ Boost、Google、NUnit など、サードパーティのテスト フレーム�
 
 6. **テスト エクスプローラー** で、またはテスト コードを右クリックして **[テストの実行]** を選択して、テストを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="next-steps"></a>次のステップ
 
-* [チュートリアル: マネージド コードの単体テストを作成し、実行する](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
-* [単体テスト コマンドの作成](create-unit-tests-menu.md)
-* [IntelliTest でのテストの生成](generate-unit-tests-for-your-code-with-intellitest.md)
-* [テスト エクスプローラーを使用してテストを実行する](run-unit-tests-with-test-explorer.md)
-* [コード カバレッジの分析](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+> [!div class="nextstepaction"]
+> [単体テストの基本](../test/unit-test-basics.md)
+
+> [!div class="nextstepaction"]
+> [マネージド コードの単体テストを作成し、実行する](walkthrough-creating-and-running-unit-tests-for-managed-code.md)

@@ -1,5 +1,7 @@
 ---
 title: COM サーバーおよび COM コンテナーのデバッグ | Microsoft Docs
+description: COM サーバーと COM コンテナーのデバッグについて説明します。 同じソリューションの COM サーバーと COM コンテナー、コンテナー情報のないサーバー アプリ、または SDI アプリをデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec5ed51c72ad7fd64bbdfd0135f53a13bb8c6e4b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9b1d4ceecae385ac6e5444c60f6634b260f2e887
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745675"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728977"
 ---
 # <a name="com-server-and-container-debugging"></a>COM サーバーおよび COM コンテナーのデバッグ
 COM アプリケーションは、プログラマが直接コントロールできないところで多くのタスクを実行します。 DLL 間の通信、オブジェクトの使用数のカウント、クリップボード処理などは、予期せぬ動作に遭遇する領域のほんの一例です。 このような事態が発生した場合は、まず問題の原因を追及します。

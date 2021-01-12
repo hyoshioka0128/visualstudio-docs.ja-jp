@@ -1,5 +1,7 @@
 ---
 title: 混合モードでデバッグする | Microsoft Docs
+description: 呼び出し元アプリのプロジェクトのプロパティ ページで、混合モードのデバッグを (マネージドとネイティブ コードを一緒に) 有効にする方法を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb563b260175d3385288c4cb6f046af8526069cf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 123fb61cb223d8db3c447f5925639df33a2b3e11
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852114"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903988"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>方法: 混合モードでデバッグする (C#、C++、Visual Basic)
 
@@ -41,7 +43,7 @@ ms.locfileid: "90852114"
 
 ## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>ネイティブの呼び出し元アプリに対する混合モード デバッグを有効にする
 
-1. **ソリューション エクスプローラー**で C++ プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt** + **Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で C++ プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt** + **Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[\<Project> プロパティ ページ]** ダイアログ ボックスで、 **[構成プロパティ]** を展開して、 **[デバッグ]** を選択します。
 
@@ -53,7 +55,7 @@ ms.locfileid: "90852114"
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>マネージド呼び出し元アプリに対する混合モード デバッグを有効にする
 
-1. **ソリューション エクスプローラー**で C# または Visual Basic プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt** + **Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で C# または Visual Basic プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt** + **Enter** キーを押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[デバッグ]** タブを選択してから、 **[ネイティブ コードのデバッグを有効にする]** を選択します。
 

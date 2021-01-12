@@ -1,6 +1,6 @@
 ---
 title: 'チュートリアル: C# のコードをデバッグする'
-description: Visual Studio デバッガーを起動し、コードをステップ実行し、データを検査する方法について説明します。
+description: Visual Studio デバッガーの機能と、C# アプリケーションでのデバッガーの起動、コードのステップ実行、データの検査を行う方法について説明します。
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 04/23/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d6e9ee79602f3a0db8f68d701120c450bfee721
-ms.sourcegitcommit: dab57cebd484228e6f0cf7ab1b9685c575410c06
+ms.openlocfilehash: 435564a9bf4e90dd25ed5fee3a44d0578c201a99
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/25/2020
-ms.locfileid: "82153071"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846944"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した C# のデバッグについて理解する
 
@@ -40,12 +40,12 @@ ms.locfileid: "82153071"
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 をインストールし、 **.NET Core クロスプラットフォームの開発**ワークロードを用意しておく必要があります。
+Visual Studio 2019 をインストールし、 **.NET Core クロスプラットフォームの開発** ワークロードを用意しておく必要があります。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 をインストールし、 **.NET Core クロスプラットフォームの開発**ワークロードを用意しておく必要があります。
+Visual Studio 2017 をインストールし、 **.NET Core クロスプラットフォームの開発** ワークロードを用意しておく必要があります。
 
 ::: moniker-end
 
@@ -187,7 +187,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. `letters` 変数を展開してそのプロパティを表示します。これには変数が含むすべての要素が入っています。
 
-     ![データ ヒントを表示する](../csharp/media/get-started-view-data-tip.png "データ ヒントを表示する")
+     ![Visual Studio デバッガーのスクリーンショット。"name+= letters[I]" ステートメントが強調されています。ドロップダウン リストに letters 配列の要素が表示されています。](../csharp/media/get-started-view-data-tip.png)
 
 1. 次に、`name` 変数にカーソルを合わせると、その現在の値である空の文字列が表示されます。
 
@@ -197,7 +197,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. 数回、**F10** キーを押して (または **[デバッグ]** 、 **[ステップ オーバー]** の順に選択して)、`for` ループを数回繰り返します。ブレークポイントで再び一時停止したら、`name` 変数にカーソルを合わせて毎回値を確認します。
 
-     ![データ ヒントを表示する](../csharp/media/get-started-data-tip.gif "データ ヒントを表示する")
+     ![Visual Studio デバッガーのアニメーション スクリーンショット。F10 を押すと "ステップ オーバー" し、デバッグ中、ループを繰り返すことがわかります。](../csharp/media/get-started-data-tip.gif)
 
      変数の値は、`for` ループが繰り返されるたびに変化し、表示される値は、`f`、次は `fr`、その次は `fre` という具合になります。 このシナリオでデバッガーのループを速く進めるため、代わりに **F5** キーを押し (または **[デバッグ]** 、 **[続行]** の順に選択し)、次のステートメントではなくブレークポイントに進むことができます。
 
@@ -264,7 +264,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
      ![[ローカル] ウィンドウでの変数の検査](../csharp/media/get-started-locals-window.png "ローカル ウィンドウ")
 
-    **[ローカル]** ウィンドウを確認すれば、現在の[スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
+    **[ローカル]** ウィンドウを確認すれば、現在の [スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
 
 ## <a name="set-a-watch"></a>ウォッチ式を設定する
 

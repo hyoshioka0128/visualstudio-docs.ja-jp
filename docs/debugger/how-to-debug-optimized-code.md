@@ -1,5 +1,7 @@
 ---
 title: 最適化されたコードをデバッグする | Microsoft Docs
+description: 最適化によってデバッグが複雑になる可能性があるため、可能であれば、プログラムがデバッグされるまで Win32 リリース ターゲットをビルドしないようにしてください。 詳細については、この記事をご覧ください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da0a9c40a2c4887b2798e908ad0c12d6c9a85b32
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 971ceb59a17788076a1188e42d834f7b4bd704cc
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852388"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903182"
 ---
 # <a name="how-to-debug-optimized-code"></a>方法: 最適化されたコードをデバッグする
 
@@ -58,7 +60,7 @@ ms.locfileid: "90852388"
 
 ## <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>デバッグ ビルド構成で最適化をオンにするには
 
-1. 新しいプロジェクトの作成時に、`Win32 Debug` ターゲットを選択します。 プログラムが完全にデバッグされ、`Win32 Release` ターゲットをビルドできるようになるまでは、`Win32``Debug` ターゲットを使用します。 コンパイラは、`Win32 Debug` ターゲットの最適化は行いません。
+1. 新しいプロジェクトの作成時に、`Win32 Debug` ターゲットを選択します。 プログラムが完全にデバッグされ、`Win32 Release` ターゲットをビルドできるようになるまでは、`Win32 Debug` ターゲットを使用します。 コンパイラは、`Win32 Debug` ターゲットの最適化は行いません。
 
 2. ソリューション エクスプローラーでプロジェクトを選択します。
 

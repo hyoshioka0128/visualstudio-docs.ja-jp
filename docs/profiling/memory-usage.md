@@ -9,16 +9,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 3d259c6fa69821d1fecd26944227bff86cc82104
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074983"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815855"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Visual Studio でのメモリ使用量の測定
 
-デバッガーに統合された**メモリ使用量**診断ツールを使用したデバッグ中に、メモリ リークおよび非効率的なメモリを見つけます。 メモリ使用量ツールを使うと、マネージド メモリ ヒープとネイティブ メモリ ヒープの 1 つまたは複数の "*スナップショット*" を取得して、オブジェクト型のメモリ使用量への影響を理解するのに役立てることができます。 デバッガーがアタッチされていない状態で、または実行中のアプリをターゲットにして、メモリ使用率を分析することもできます。 詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。
+デバッガーに統合された **メモリ使用量** 診断ツールを使用したデバッグ中に、メモリ リークおよび非効率的なメモリを見つけます。 メモリ使用量ツールを使うと、マネージド メモリ ヒープとネイティブ メモリ ヒープの 1 つまたは複数の "*スナップショット*" を取得して、オブジェクト型のメモリ使用量への影響を理解するのに役立てることができます。 デバッガーがアタッチされていない状態で、または実行中のアプリをターゲットにして、メモリ使用率を分析することもできます。 詳細については、「[デバッガーを使用して、または使用せずにプロファイリング ツールを実行する](../profiling/running-profiling-tools-with-or-without-the-debugger.md)」を参照してください。
 
 **メモリ使用量** ツールでメモリのスナップショットをいつでも収集できますが、Visual Studio デバッガーを使用すると、パフォーマンスの問題を調査中にアプリケーションの実行方法を制御することができます。 ブレークポイントの設定、ステップ実行、すべて中断、その他のデバッガー アクションは、パフォーマンスの調査を最も関連性の高いコード パスに集中させるのに役立ちます。 アプリの実行中にこれらのアクションを実行することで、目的としていないコードからのノイズを除去することができ、問題の診断にかかる時間を大幅に短縮できます。
 
@@ -31,7 +31,7 @@ ms.locfileid: "90074983"
 > * メモリのスナップショットの作成
 > * メモリ使用量データの分析
 
-**メモリ使用率**では必要なデータを得ることができない場合、[パフォーマンス プロファイラー](../profiling/profiling-feature-tour.md#post_mortem)の他のプロファイリング ツールが別の種類の情報を提供します。その情報が役に立つ可能性があります。 多くの場合、アプリケーションのパフォーマンス上の問題は、CPU、UI のレンダリング、ネットワークの要求時間など、メモリ以外の何かが原因になります。
+**メモリ使用率** では必要なデータを得ることができない場合、[パフォーマンス プロファイラー](../profiling/profiling-feature-tour.md#post_mortem)の他のプロファイリング ツールが別の種類の情報を提供します。その情報が役に立つ可能性があります。 多くの場合、アプリケーションのパフォーマンス上の問題は、CPU、UI のレンダリング、ネットワークの要求時間など、メモリ以外の何かが原因になります。
 
 > [!NOTE]
 > **カスタム アロケーター サポート** ネイティブ メモリ プロファイラーは、実行時に生成された割り当て [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) イベント データを収集して機能します。  CRT および Windows SDK のアロケーターには、割り当てデータをキャプチャできるように、ソース レベルで注釈が付けられています。 独自のアロケーターを作成する場合、新しく割り当てられたヒープ メモリへのポインターを返すすべての関数は、[__declspec](/cpp/cpp/declspec)(アロケーター) で修飾できます。myMalloc での例を次に示します。
@@ -124,7 +124,7 @@ ms.locfileid: "90074983"
 
  上のウィンドウで選択した型のインスタンスを表示するには、![インスタンス アイコン](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") アイコンを選択します。
 
- ![インスタンス ビュー](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Visual Studio メモリ使用量ツールの [インスタンス] ビューのスクリーンショット。[インスタンス]、[ルートのパス]、[参照されたオブジェクト] ウィンドウが表示されています。](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  **[インスタンス]** ビューには、上のウィンドウのスナップショットで選択されているインスタンスが表示されます。 **[ルートのパス]** および **[参照されたオブジェクト]** ウィンドウには、選択したインスタンスを参照するオブジェクト、および選択したインスタンスで参照される型が表示されます。 スナップショットが取得された時点でデバッガーを停止すると、 **[値]** セルの上にマウス カーソルを移動して、ツール ヒントにオブジェクトの値を表示することができます。
 
@@ -139,7 +139,7 @@ ms.locfileid: "90074983"
 
      **[インスタンス]** ビューには、選択した型の各インスタンスが表示されます。 インスタンスを選択すると呼び出し履歴が表示され、その結果、 **[割り当て呼び出し履歴]** ウィンドウにそのインスタンスが作成されます。
 
-     ![インスタンス ビュー](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Visual Studio メモリ使用量ツールのスクリーンショット。[インスタンス] ウィンドウと [割り当て呼び出し履歴] ウィンドウが表示されています。](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - **[表示モード]** の一覧で **[スタック ビュー]** を選択し、選択した型の割り当て履歴を表示します。
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 6badbb7723bf4d8ed0c9385558204c2dc4907574
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3f90a3d42eb1390adbb242242172aea152a0a54f
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441249"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833235"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>方法: .NET Framework の旧バージョンを対象とした単体テストを構成する
 
@@ -62,7 +62,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 4. 次の図の吹き出し B に示すように、 **[ターゲット フレームワーク (すべての構成)]** ドロップダウン リストを使用して、ターゲット フレームワークを **.NET Framework 3.5** 以降のバージョンに変更します。 クライアント バージョンは指定しません。
 
-     ![[ターゲット フレームワーク] ドロップダウン リスト](../test/media/howtoconfigureunitest35frameworkstepb.png)
+     ![[コンパイラの詳細設定] ダイアログのスクリーンショット。 [ターゲット フレームワーク] ドロップダウン リストが強調表示されています。値が ".NET Frameowrk 3.5" に設定されています。](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="retargeting-for-c-unit-test-projects"></a>C# 単体テスト プロジェクト用の再ターゲット
 
@@ -74,7 +74,7 @@ Microsoft Visual Studio でテスト プロジェクトを作成すると、最�
 
 3. **[アプリケーション]** タブの **[ターゲット フレームワーク]** を選択します。 次の図に示すように、ドロップダウン リストから **[.NET Framework 3.5]** またはそれ以降のバージョンを選択します。 クライアント バージョンは指定しません。
 
-   ![[ターゲット フレームワーク] ドロップダウン リスト](../test/media/howtoconfigureunittest35frameworkcsharp.png)
+   ![ソリューション エクスプローラーの [プロパティ] ウィンドウの [アプリケーション] タブの図。[ターゲット フレームワーク] ドロップダウン リストの場所が強調表示されています。](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="retargeting-for-ccli-unit-test-projects"></a>C++/CLI 単体テスト プロジェクト用の再ターゲット
 

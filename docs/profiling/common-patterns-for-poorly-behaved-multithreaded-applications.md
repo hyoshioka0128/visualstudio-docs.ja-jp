@@ -1,5 +1,6 @@
 ---
 title: 適切に動作しないマルチスレッド アプリの一般的なパターン
+description: Visual Studio コンカレンシー ビジュアライザー ツールに含まれている、適切に動作しないマルチスレッド アプリケーションの一般的なパターンについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f45c22684ef737de7235caebd4ad0b1b4189155
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808943"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815790"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
 
@@ -37,17 +38,17 @@ ms.locfileid: "90808943"
 
 ## <a name="uneven-workload-distribution"></a>不均一なワークロード分散
 
-![不均一なワークロード](../profiling/media/unevenworkload_1.png "UnevenWorkLoad_1")
+![コンカレンシー ビジュアライザーの並列スレッドに対するワークロード グラフのスクリーンショット。 スレッドはさまざまなタイミングで終了し、階段パターンを示します。](../profiling/media/unevenworkload_1.png)
 
 アプリケーションの複数の並列スレッドで作業の不規則な分散が発生している場合、前の図のように、各スレッドの作業が完了するときに一般的な階段パターンが発生します。 ほとんどの場合、コンカレンシー ビジュアライザーに表示される各コンカレント スレッドの開始時間はとても近接しています。 一方で、同時実行スレッドは同時に終了するのではなく、不規則に終了するのが一般的です。 このパターンは、並列スレッドのグループ内で作業の分散が不規則であることを示します。これがパフォーマンス低下の原因にもなります。 このような問題の最適なアプローチは、並列スレッドで作業を分散するアルゴリズムを再評価することです。
 
 次の図のように、コンカレンシー ビジュアライザーの [CPU 使用状況] ビューでは、CPU 使用状況の段階的な低下としてこの現象を確認できます。
 
-![不均一なワークロード](../profiling/media/unevenworkload_2.png "UnevenWorkload_2")
+![コンカレンシー ビジュアライザーの CPU 使用状況ビューのスクリーンショット。CPU 使用状況グラフの終わりの階段パターンを示しています。](../profiling/media/unevenworkload_2.png)
 
 ## <a name="oversubscription"></a>オーバーサブスクリプション
 
-![オーバーサブスクリプション](../profiling/media/oversubscription.png "オーバーサブスクリプション")
+![コンカレンシー ビジュアライザーのすべてのアクティブなスレッドに対するワークロード グラフのスクリーンショット。 凡例は、実行と優先に費やされた時間を示します。](../profiling/media/oversubscription.png)
 
 オーバーサブスクリプションが発生している場合、プロセス内のアクティブなスレッド数がシステムの空き論理コア数よりも多くなっています。 前の図は、すべてのアクティブなスレッドで重要な優先度の縞模様が表示されているオーバーサブスクリプションの結果を示しています。 また、凡例には、大部分の時間が "優先" に使われていることが示されています (この例では 84%)。 これは、プロセスがシステムに対して、論理コア数よりも多くの同時実行スレッドを実行するように求めていることを示す可能性があります。 ただし、このプロセスに使用されるはずだったリソースを、システム上の他のプロセスが使用していることを示す可能性もあります。
 

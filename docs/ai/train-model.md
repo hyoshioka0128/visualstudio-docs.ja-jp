@@ -11,12 +11,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - azure
-ms.openlocfilehash: 110468de264370b22d64dae40cf55e9766804c31
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 72f5fa5aab9f9afa6268f8acd737430af0568928
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036614"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727360"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Azure Batch AI での AI モデルのトレーニング
 
@@ -24,13 +24,13 @@ Batch AI は、データ サイエンティストおよび AI 研究者が、Azu
 
 Azure Batch AI は、Visual Studio Tools for AI に統合されているため、Azure にてトレーニング モデルを動的にスケールアウトすることができます。  [Visual Studio Tools for AI をインストール](installation.md)すれば、Azure Machine Learning サンプル ギャラリーにある事前に定義されたレシピを使用して新しい Python プロジェクトを容易に作成することができます。
 
-1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、 **[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー**を開きます
+1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、 **[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー** を開きます
 
     ![クラスターの選択](media/train-model/select-cluster.png)
 
 2. **[AI Tools]\(AI Tools\)** を選択します。 所有している Batch AI リソースが自動的に検出され、サーバー エクスプローラーに表示されます。
 
-    ![サンプル ギャラリー](media/train-model/batchai.png)
+    ![サーバー エクスプローラーで AI Tools のフォルダー ツリーを展開した画面のスクリーンショット。Azure Batch AI と Azure Machine Learning のサブフォルダーが展開されています。](media/train-model/batchai.png)
 
 3. **[表示] > [チーム エクスプローラー]** の順に選択し、 **[チーム エクスプローラー]** ウィンドウを開きます。ここでは、GitHub または Azure DevOps に接続したり、リポジトリを複製したりすることができます。
 
@@ -43,19 +43,19 @@ Azure Batch AI は、Visual Studio Tools for AI に統合されているため�
 
 5. 複製が完了したら、 **[ファイル]、[ソリューションを開く]、[プロジェクト/ソリューション]** の順にクリックします。
 
-    ![サンプル ギャラリー](media/train-model/open-solution.png)
+    ![サーバー エクスプローラーのファイル メニューの一部を示すスクリーンショット。[開く] コマンドとコンテキスト メニューの [プロジェクト/ソリューション] が選択されています。](media/train-model/open-solution.png)
 
 6. リポジトリを複製したディレクトリで、**samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** を開きます。
 
-    ![サンプル ギャラリー](media/train-model/tensorflowexamples.png)
+    ![samples-for-ai リポジトリで TensorflowExamples フォルダーのコンテンツの一覧にあるソリューション ファイル TensorflowExamples.sln を示すスクリーンショット。](media/train-model/tensorflowexamples.png)
 
-7. MNIST プロジェクトを**スタートアップ プロジェクト**として設定します
+7. MNIST プロジェクトを **スタートアップ プロジェクト** として設定します
 
-    ![サンプル ギャラリー](media/train-model/mnist-startup.png)
+    ![ソリューション エクスプローラーで MNIST プロジェクトのコンテキスト メニューで選択されている [スタートアップ プロジェクトに設定] のスクリーンショット。](media/train-model/mnist-startup.png)
 
-8. <strong>**MNIST プロジェクト**を右クリックし、 **[ジョブの送信]** をクリックします</strong>
+8. <strong>**MNIST プロジェクト** を右クリックし、 **[ジョブの送信]** をクリックします</strong>
 
-    ![サンプル ギャラリー](media/train-model/submit-job.png)
+    ![ソリューション エクスプローラーで MNIST プロジェクトのコンテキスト メニューで選択されている [ジョブの送信] のスクリーンショット。](media/train-model/submit-job.png)
 9. 目的の **Azure Batch AI** クラスターを選択し、 **[インポート]** をクリックします。 `AzureBatchAI_TF_MNIST.json` ファイルを選択します。これにより、使用する Docker イメージなど、いくつかの既定値がすぐに入力されます。 **[送信]** をクリックします。
 
-    ![サンプル ギャラリー](media/train-model/submit-batch.png)
+    ![[ジョブの送信] ダイアログのスクリーンショット。クラスターの使用、スタートアップ スクリプト、ジョブ名、画像名、StdOutErr パス プレフィックス、CLI パラメーターに値が入力されています。](media/train-model/submit-batch.png)

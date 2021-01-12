@@ -1,6 +1,7 @@
 ---
 title: 変数を確認する - [自動変数] ウィンドウと [ローカル] ウィンドウ | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio でのデバッグ中に、[自動変数] と [ローカル] のウィンドウで変数を検査します。 デバッグしている間、 [自動変数] ウィンドウと [ローカル] ウィンドウに変数の値が表示されます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,16 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae67fadf5d9710f2088f47617b74eeeb8212826
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b57c27d038193a5c73bee48814a2aa457a94b6a6
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350746"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97760914"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>[自動変数] ウィンドウと [ローカル] ウィンドウで変数を確認する
 
-デバッグしている間、 **[自動変数]** ウィンドウと **[ローカル]** ウィンドウに変数の値が表示されます。 こウィンドウは、デバッグ セッション中にのみ使用できます。 **[自動変数]** ウィンドウには、現在のブレークポイントに関連して使用される変数が表示されます。 **[ローカル]** ウィンドウには、ローカル スコープ (通常は現在の関数またはメソッド) で定義されている変数が表示されます。 コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に「[入門者向けのデバッグ](../debugger/debugging-absolute-beginners.md)」および「[デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)」を参照することをお勧めします。
+デバッグしている間、 **[自動変数]** ウィンドウと **[ローカル]** ウィンドウに変数の値が表示されます。 こウィンドウは、デバッグ セッション中にのみ使用できます。 **[自動変数]** ウィンドウには、現在のブレークポイントに関連して使用される変数が表示されます。 **[ローカル]** ウィンドウには、ローカル スコープ (通常は現在の関数またはメソッド) で定義されている変数が表示されます。
+
+> [!NOTE]
+> コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に「[入門者向けのデバッグ](../debugger/debugging-absolute-beginners.md)」および「[デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)」を参照することをお勧めします。
 
  **[自動変数]** ウィンドウは、C#、Visual Basic、C++、および Python コードで使用できますが、JavaScript または F# では使用できません。
 
@@ -39,7 +43,7 @@ ms.locfileid: "85350746"
 
 配列とオブジェクトは、 **[自動変数]** ウィンドウと **[ローカル]** ウィンドウにツリー コントロールで表示されます。 変数名の左側にある矢印を選択するとビューが展開され、フィールドとプロパティが表示されます。 以下に、 **[ローカル]** ウィンドウに表示されている <xref:System.IO.FileStream?displayProperty=fullName> オブジェクトの例を示します。
 
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+![[ローカル] ウィンドウのスクリーンショット。ファイルが System.IO.FileStream 値に設定されています。](../debugger/media/locals-filestream.png)
 
 **[ローカル]** または **[自動変数]** ウィンドウの赤い値は、最後の評価移行に値が変更されたことを意味します。 この変更は前のデバッグ セッションに由来する場合もあれば、ユーザーがウィンドウで値を変更したための場合もあります。
 
@@ -116,7 +120,7 @@ ms.locfileid: "85350746"
 
    `c = 3;` 行内にブレークポイントを設定し、デバッガーを開始します。 実行が一時停止すると、 **[自動変数]** ウィンドウに次のように表示されます。
 
-   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![[自動変数] ウィンドウのスクリーンショット。値 c が 0 に設定されています。](../debugger/media/autos-csharp.png)
 
    `c` の値が 0 です。これは、行 `c = 3` がまだ実行されていないからです。
 
@@ -136,7 +140,7 @@ ms.locfileid: "85350746"
 
     `e = 5;` 行内にブレークポイントを設定し、デバッガーを実行します。 実行が停止すると、 **[自動変数]** ウィンドウに次のように表示されます。
 
-    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
+    ![[自動変数] ウィンドウのスクリーンショット。値が 3 の int c を示す行が強調表示されています。](../debugger/media/autos-cplus.png)
 
     変数 `e`が初期化されていないことにご注意ください。これは行 `e = 5` がまだ実行されていないからです。
 

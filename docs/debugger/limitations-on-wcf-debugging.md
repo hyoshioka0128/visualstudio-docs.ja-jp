@@ -1,5 +1,7 @@
 ---
 title: WCF デバッグの制約 | Microsoft Docs
+description: WCF サービスのデバッグを開始する方法、必要な条件、デバッグの制約について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8612bd2423849c61f21a5c184a3e1d39da0302b
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407745"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903858"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF デバッグの制約
 WCF サービスのデバッグを開始するには、次の 3 つの方法があります。
@@ -32,7 +34,7 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
 
 - **[プロセスにアタッチ]** を使用して、現在実行されているサービスにアタッチします。 サービス内部でデバッグが開始されます。
 
-  このトピックでは、これらのシナリオの制約について説明します。
+このトピックでは、これらのシナリオの制約について説明します。
 
 ## <a name="limitations-on-stepping-into-a-service"></a>サービスへのステップ インの制約
  デバッグ中のクライアント アプリケーションのサービスにステップ インするには、次の条件を満たす必要があります。

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f3a5e97153997908a0360bc123fd1b88fb5c009
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8716e980581ffe1103adddbc3c776def1166ff94
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596841"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756605"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing の概要
 
@@ -26,7 +26,7 @@ Live Unit Testing では、単体テストによってコードが適切にカ�
 1 つ以上の単体テスト プロジェクトが含まれるソリューションがある場合、Live Unit Testing を有効にするには、Visual Studio の最上位メニューから、 **[テスト]**  >  **[Live Unit Testing]**  >  **[開始]** の順に選択します。
 
 > [!NOTE]
-> Live Unit Testing は、Visual Studio Enterprise エディションのみで使用できます。
+> Live Unit Testing は Visual Studio Enterprise エディションでのみ使用でき、.NET でのみサポートされています。
 
 Live Unit Testing について詳細を学習するには:
 

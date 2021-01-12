@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878918"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729211"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android のトラブルシューティング
 このトピックには、Visual Studio Emulator for Android の使用時に発生する可能性のある問題の解決に役立つ情報が含まれています。
@@ -70,7 +70,7 @@ ms.locfileid: "91878918"
 ## <a name="emulator-fails-to-install"></a><a name="NoInstall"></a> エミュレーターをインストールできない
  Hyper-V がインストールされていないと、エミュレーターのインストール時に次のメッセージが表示されます。 HyperV がコンピューターでサポートされていて、有効になっていなければなりません。
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Visual Studio メッセージのスクリーンショット。Hyper-V がコンピューターでサポートされていないため、Microsoft Visual Studio Emulator for Android のセットアップがブロックされたとあります。](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > このメッセージは、Visual Studio Emulator for Android と Windows Phone エミュレーターの両方に適用されます。 Windows 8.1 と Windows 10 はエミュレーターをサポートします。
@@ -135,7 +135,7 @@ ms.locfileid: "91878918"
 
 - Hyper-V マネージャーで仮想スイッチ マネージャーを開き、2 つのネットワーク スイッチがあることを確認します。最初のスイッチが内部スイッチで、2 つ目が外部スイッチであることをご確認ください。
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Hyper-V Manager の仮想スイッチ マネージャーのスクリーンショット。新しい仮想スイッチが強調されています。外部ネットワーク スイッチであることを示すプロパティです。](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
      セットアップに誤りがあり、Windows 10 を使っている場合は、 [netcfg -d コマンドを使ってネットワーク デバイスを再インストール](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (セクション 6) してみることもできます。
 
@@ -182,7 +182,7 @@ ms.locfileid: "91878918"
 
   6. Windows 8 Professional 以上を実行していることを確認します (Windows Server 2008 はサポートされていません)。 Windows Server 2012 はサポートされていますが、デスクトップ エクスペリエンスを有効にする必要があります。
 
-     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き ( **スタート キー**+**R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー** に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
+     イベント ビューアーを調べて、ハイパーバイザーのエラーがないかどうかを確認することができます。 これを行うには、イベント ビューアーを開き (**スタート キー**+**R** キーを押して、「`eventvwr`」と入力)、 **[Windows ログ]** 、 **[システム]** の順に選択します。 次に、ソースを **Hyper-V ハイパーバイザー** に設定して、イベント ソースでログをフィルタリングします。 エラー確認は、根本原因の特定に役立ちます。
 
      プロセッサが最小要件を満たしているにもかかわらず、ハイパーバイザーでまだ障害が発生する場合は、コンピューターに使用可能な BIOS アップグレードがあるかどうかを確認してみてください。 アップグレードがあり、アップグレードすることを選択する場合は、BIOS のアップグレード時に製造元からの注意事項 (BIOS が完全に破損する可能性のある、停電により BIOS ファームウェアのアップグレードが中断されないようにするなど) をすべて確認してください。
 
@@ -264,7 +264,7 @@ ms.locfileid: "91878918"
 
 - スタート ボタンのコンテキスト メニューから **[ファイル名を指定して実行]** を選択して、ダイアログ ボックスに「 `regedit` 」と入力し、 **[OK]** を選択してレジストリ エディターを開きます。
 
-- 左側のフォルダー ツリーで、 *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* ツールに移動します。
+- 左側のフォルダー ツリーで、*HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* ツールに移動します。
 
 - Android SDK へのパスと一致するように **パス** レジストリ変数を変更します。
 

@@ -1,6 +1,7 @@
 ---
 title: 例外の後にシステム コードを調べる | Microsoft Docs
-ms.custom: seodec18
+description: システム コールのコードを調べて、例外の原因を見つける方法について説明します。 システム コードのシンボルが読み込まれていない場合でも、プロシージャは適用されます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe2dcc283f84bbcd5cd0b5a04dd5d1c300d9e14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceb9f898b4329940408e4063dc73d81e2a604a4
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349654"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903456"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>方法: 例外の後にシステム コードを調べる
 例外が発生した場合、システム コール内のコードを調べて、例外の原因を判断する必要がある場合があります。 システム コードのシンボルが読み込まれていない場合、または [マイ コードのみ] が有効な場合にこの操作を行う方法を次の手順に示します。

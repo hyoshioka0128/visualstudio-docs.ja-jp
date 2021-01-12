@@ -1,6 +1,7 @@
 ---
 title: C#、F#、および VB プロジェクトのデバッグを準備する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio プロジェクト テンプレートによって作成された C#、F#、Visual Basic プロジェクトをデバッグするための準備に関する情報をお届けします。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 90e108ddd64a9b520c8ae1d0c86e416dea64e5be
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1536c00f68232bb9e4aa92102b605b59ec58b196
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738125"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726853"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>デバッグの準備:C#、F#、および Visual Basic のプロジェクト
 ここでは、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクト テンプレートで作成した C#、F#、および [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] のプロジェクトをデバッグする方法について説明します。

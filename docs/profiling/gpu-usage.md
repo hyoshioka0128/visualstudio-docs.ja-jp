@@ -1,5 +1,6 @@
 ---
 title: GPU 使用率 | Microsoft Docs
+description: パフォーマンス プロファイラーに含まれる GPU 使用率ツールを使用して、Direct3D アプリのハードウェア使用率の概要をより良く理解する方法を学習します。
 ms.date: 11/01/2018
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a6b143cc0b3001f0a182de43f1b6eea554025eda
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074970"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815653"
 ---
 # <a name="gpu-usage"></a>GPU 使用率
 
@@ -62,11 +63,11 @@ GPU 使用率レポートを生成して表示するには:
 
 1. [診断セッション] ウィンドウの下部で **[コレクションの停止]** リンクを選択するか、左上隅の **[停止]** を選択します。
 
-   ![診断セッション ウィンドウのスクリーンショット](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
+   ![GPU 使用率ツールの診断セッション ウィンドウのスクリーンショット。1 秒あたりのフレーム数、GPU 使用率、停止ボタン、コレクションの停止リンクが表示されています。](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")
 
 2. レポートの上部で、調査対象の問題を示している範囲をいずれか 1 つのグラフから選択します。 選択できる期間は最大 3 秒です。 それより長いセクションは、先頭方向に切り捨てられます。
 
-   ![診断セッション ウィンドウのスクリーンショット](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
+   ![診断セッション タイムラインの一部が選択されている、GPU 使用率ツールの診断セッション ウィンドウのスクリーンショット。](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")
 
 3. 選択項目の詳細なタイムラインを表示するには、レポートの下部で、 **[その範囲の GPU 使用率の詳細が表示されます]** というメッセージにある **[詳細の表示]** を選択します。
 
@@ -84,7 +85,7 @@ Visual Studio 2017 以降、このデータは [GPUView](/windows-hardware/drive
 
 ## <a name="use-the-gpu-usage-report"></a>GPU 使用率レポートを使用する
 
-GPU 使用率レポートの上部には、CPU 処理アクティビティ、GPU レンダリング アクティビティ、GPU コピー アクティビティのタイムラインが表示されます。 これらのタイムラインは、ディスプレイの垂直同期を表す薄い灰色の垂直線で分けられます。 この線の周波数は、GPU 使用率データを収集したディスプレイの 1 つ ( **[ディスプレイ]** ドロップダウン リストを使用して選択) のリフレッシュ レートと一致します。
+GPU 使用率レポートの上部には、CPU 処理アクティビティ、GPU レンダリング アクティビティ、GPU コピー アクティビティのタイムラインが表示されます。 これらのタイムラインは、ディスプレイの垂直同期 (vsync) を示す薄い灰色の垂直線で分割されています。 この線の周波数は、GPU 使用率データを収集したディスプレイの 1 つ ( **[ディスプレイ]** ドロップダウン リストを使用して選択) のリフレッシュ レートと一致します。
 
 アプリのパフォーマンス目標よりもディスプレイのリフレッシュ レートのほうが高いことがあるので、垂直同期とアプリで実現したいフレーム レートが 1 対 1 の関係にならない可能性があります。 その目標パフォーマンスを達成するには、アプリですべての処理を完了し、レンダリングを行い、目標のフレームレートで `Present()` を呼び出す必要があります。 ただし、レンダリングされたフレームは、`Present()` の後の次の垂直同期まで表示されません。
 

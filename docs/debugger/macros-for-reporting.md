@@ -1,5 +1,7 @@
 ---
 title: レポート用マクロ | Microsoft Docs
+description: CRTDBG.H で提供されるデバッグ マクロ _RPTn と _RPTFn についてと、独自のデバッグ マクロの作成について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,20 +24,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731386"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903793"
 ---
 # <a name="macros-for-reporting"></a>レポート用マクロの使用
 デバッグでは、CRTDBG.H に定義されている **_RPTn** マクロと **_RPTFn** マクロで使用される `printf` ステートメントを置き換えることができます。 **_DEBUG** が定義されていないリリース ビルドでは自動的に消滅するため、これらのマクロを **#ifdef** で囲む必要はありません。
 
 |マクロ|説明|
 |-----------|-----------------|
-|**_RPT0**、 **_RPT1**、 **_RPT2**、 **_RPT3**、 **_RPT4**|メッセージ文字列と、0 から 4 個の引数を出力します。 _RPT1 から **_RPT4** の場合、メッセージ文字列は、引数に対して printf 形式の書式設定文字列として機能します。|
-|**_RPTF0**、 **_RPTF1**、 **_RPTF2**、 **_RPTF4**|**_RPTn** と同様ですが、これらのマクロが記述されているファイル名と行番号も出力します。|
+|**_RPT0**、 **_RPT1**、 **_RPT2**、 **_RPT3**、 **_RPT4**|メッセージ文字列と、0 から 4 個の引数を出力します。 **_RPT1** から **_RPT4** の場合、メッセージ文字列は、引数に対して printf 形式の書式設定文字列として機能します。|
+|**_RPTF0**、 **_RPTF1**、 **_RPTF2**、 **_RPTF3**、 **_RPTF4**|**_RPTn** と同様ですが、これらのマクロが記述されているファイル名と行番号も出力します。|
 
  次に例を示します。
 

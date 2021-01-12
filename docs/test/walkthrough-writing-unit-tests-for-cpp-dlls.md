@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 178fef548bc52346a78c7f9e4607aad7b1c56f65
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598407"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727542"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>方法: C++ DLL 用の単体テストを作成する
 
@@ -328,7 +328,7 @@ ms.locfileid: "95598407"
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> 個々のテストに実行順序を定める依存関係がない場合、ツール バーにある ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
+> 何らかの順序で実行することを禁止する依存関係が個々のテストにない場合、![ で並列テスト実行をオンにします。テスト エクスプローラー ツール バーのテスト実行トグル ボタンのスクリーンショット。 このボタンが選択されると、テストが並列実行されます。](../test/media/ute_parallelicon-small.png) トグル ボタンで並列テストの実行を有効にします。 これにより、すべてのテスト実行にかかる時間を著しく短縮できます。
 
 ::: moniker-end
 

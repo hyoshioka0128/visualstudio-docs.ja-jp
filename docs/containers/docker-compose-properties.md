@@ -1,18 +1,18 @@
 ---
 title: Docker Compose のビルド設定
 author: ghogen
-description: コンテナー ツールのビルド プロセスの概要
+description: Visual Studio による Docker Compose アプリケーションのビルドおよび実行方法をカスタマイズする目的で Docker Compose のビルド プロパティを編集する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a25aca5082d8a55eccff861d542d16095c178a4f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a27535e9c07f87391b3cdfd8440578e36feee9e
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036302"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846813"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose のビルド プロパティ
 
@@ -94,7 +94,7 @@ services:
 
 ## <a name="docker-compose-file-labels"></a>Docker Compose ファイル ラベル
 
-*docker-compose.yml* ファイルと同じディレクトリに *docker-compose.vs.debug.yml* という名前のファイル (**デバッグ**構成の場合) または *docker-compose.vs.release.yml* という名前のファイル (**リリース**構成の場合) を置くことで一部の設定をオーバーライドすることもできます。  このファイルでは、次のように設定を指定できます。
+*docker-compose.yml* ファイルと同じディレクトリに *docker-compose.vs.debug.yml* という名前のファイル (**デバッグ** 構成の場合) または *docker-compose.vs.release.yml* という名前のファイル (**リリース** 構成の場合) を置くことで一部の設定をオーバーライドすることもできます。  このファイルでは、次のように設定を指定できます。
 
 ```yml
 services:
@@ -114,7 +114,7 @@ services:
 
 ## <a name="customize-the-app-startup-process"></a>アプリのスタートアップ プロセスをカスタマイズする
 
-`entrypoint` 設定を使用してアプリを起動する前に、コマンドまたはカスタム スクリプトを実行して、アプリを構成に依存させることができます。 たとえば、`update-ca-certificates` を実行して、証明書を**リリース** モードではなく**デバッグ** モードでのみ設定する必要がある場合、次のコードを *docker-compose.vs.debug.yml* にのみ追加できます。
+`entrypoint` 設定を使用してアプリを起動する前に、コマンドまたはカスタム スクリプトを実行して、アプリを構成に依存させることができます。 たとえば、`update-ca-certificates` を実行して、証明書を **リリース** モードではなく **デバッグ** モードでのみ設定する必要がある場合、次のコードを *docker-compose.vs.debug.yml* にのみ追加できます。
 
 ```yml
 services:

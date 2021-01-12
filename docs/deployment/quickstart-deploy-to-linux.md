@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 4e474cc96e4b950aee2f509a8e2879b0c31f912a
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350723"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815634"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Visual Studio を使用して App Service on Linux に ASP.NET Core アプリを発行する
 
@@ -52,11 +52,11 @@ Visual Studio 2017 バージョン 15.7 以降では、次のいずれかの方�
 
 1. **[Azure App Service の作成 (Linux)]** ダイアログで、 **[アプリ名]** 、 **[リソース グループ]** 、 **[App Service プラン]** の各入力フィールドに値が設定されます。 これらの名前を保持することも、変更することもできます。 準備ができたら、 **[作成]** を選択します。
 
-    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
+    ![Azure App Service (Linux) の作成ダイアログのスクリーンショット。[名前]、[サブスクリプション]、[リソース グループ]、[ホスティング プラン] の各フィールドが設定されています。](../deployment/media/quickstart-publish-linux-create-new-dialog.png)
 
 1. **[発行]** ダイアログで、新しく作成されたインスタンスが自動的に選択されています。 準備ができたら、 **[完了]** をクリックします。
 
-    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-linux-select-instance.png)
+    ![新しく作成された MyASpCoreWebAppOnAzure サービスが発行用の App Service として選択されている [発行] ダイアログのスクリーンショット。](../deployment/media/quickstart-publish-linux-select-instance.png)
 
 1. **[発行]** を選びます。 Visual Studio によってアプリが Azure App Service にデプロイされ、ブラウザに Web アプリが読み込まれます。 プロジェクト プロパティの **[発行]** ウィンドウに、サイト URL とその他の詳細が示されます。
 

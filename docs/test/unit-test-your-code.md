@@ -1,5 +1,5 @@
 ---
-title: 単体テスト
+title: 単体テストのツールとタスク
 description: 自分のコードのロジック エラーを開発者やテスト担当者がすばやく検出するために使用する単体テスト ツールについて説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8f48a50b39c04df9abab7c11b3b85cc0d2670025
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330135"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756592"
 ---
-# <a name="unit-test-your-code"></a>コードの単体テスト
+# <a name="unit-test-tools-and-tasks"></a>単体テストのツールとタスク
 
 単体テストを実行することにより、開発者およびテスト担当者は、C#、Visual Basic、C++ のプロジェクトでクラスのメソッドに論理エラーがないかどうかをすばやく確認できます。
 
@@ -34,7 +34,7 @@ ms.locfileid: "96330135"
 
 * **コード カバレッジ ツール**&mdash; テスト エクスプローラーで、単体テストが 1 つのコマンドから実行する製品コードの量を確認できます。
 
-* **Microsoft Fakes 分離フレームワーク**&mdash; Microsoft Fakes 分離フレームワークによって、テスト対象コード内の依存関係を作成する実稼働コードおよびシステム コード向けの代替クラスおよび代替メソッドを作成できます。 関数の Fake デリゲートを実装して、依存関係オブジェクトの動作と出力を制御します。
+* **Microsoft Fakes 分離フレームワーク**&mdash; Microsoft Fakes 分離フレームワークによって、テスト対象コード内の依存関係を作成する実稼働コードおよびシステム .NET コード向けの代替クラスおよび代替メソッドを作成できます。 関数の Fake デリゲートを実装して、依存関係オブジェクトの動作と出力を制御します。
 
 また、[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) を使用して .NET コードを確認し、テスト データと単体テストのスイートを生成することもできます。 コードにある各ステートメントについて、そのステートメントを実行するテスト入力が生成されます。 コード内の各条件付き分岐について、ケース分析が実行されます。
 
@@ -44,12 +44,12 @@ ms.locfileid: "96330135"
 
 |タスク|関連するトピック|
 |-|-----------------------|
-|**クイック スタートおよびチュートリアル:** Visual Studio での単体テストについてコード例から学習します。|- [チュートリアル: マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [クイック スタート: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [方法: C++ アプリに単体テストを追加する](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**クイック スタートおよびチュートリアル:** Visual Studio での単体テストについてコード例から学習します。|- [チュートリアル: .NET コード用の単体テストの作成および実行](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [チュートリアル: テスト エクスプローラーによるテスト駆動開発](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [方法: C++ アプリに単体テストを追加する](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
 |**テスト エクスプローラーによる単体テスト:** テスト エクスプローラーによって、さらに生産性が高く効率的な単体テストを作成できることを学習します。|- [単体テストの基本](../test/unit-test-basics.md)<br />- [単体テスト プロジェクトを作成する](../test/create-a-unit-test-project.md)<br />- [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md)<br />- [サードパーティ製の単体テスト フレームワークをインストールする](../test/install-third-party-unit-test-frameworks.md)|
 |**C++ コードの単体テスト**|- [C/C++ 用の単体テストの記述](../test/writing-unit-tests-for-c-cpp.md)|
-|**単体テストの分離**|- [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**コード カバレッジを使用して、テストされたプロジェクトのコードの割合を調べる:** Visual Studio のテスト ツールのコード カバレッジ機能について学習します。|- [コード カバレッジを使用した、テストされるコード割合の確認](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**ロード テストを使用したストレスおよびパフォーマンスの分析の実行:** アプリケーションのパフォーマンスとストレスの問題を分離する目的で役立つロード テストの作成方法を説明します。|- [クイック スタート: ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)<br />- [ロード テスト (Azure Test Plans と TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**単体テストの分離**|- [Microsoft Fakes を使用したテストで .NET コードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)|
+|**ロード テストを使用したストレスおよびパフォーマンスの分析の実行:** アプリケーションのパフォーマンスとストレスの問題を分離する目的で役立つロード テストの作成方法 (非推奨) を説明します。|- [クイック スタート: ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)<br />- [ロード テスト (Azure Test Plans と TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
 |**品質ゲートの設定:** コードがチェックインまたはマージされる前にテストが実行されるよう、品質ゲートを作成する方法について説明します。|- [チェックイン ポリシー (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**テストのオプションを設定する:** テスト結果の保存場所など、テスト オプションの構成方法について説明します。|[.runsettings ファイルを使用して単体テストを構成する](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 

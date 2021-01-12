@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 10/22/2020
 ms.topic: how-to
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てる方法について説明します
-ms.openlocfilehash: 6cb3613d76faca2adc9c6e946f6a8ec2c73770f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467545"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696618"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -86,7 +86,7 @@ ms.locfileid: "92467545"
 > - グループには、少なくとも 1 人のメンバーを含んでいる必要があります。  空のグループはサポートされていません。
 > - グループのユーザー数は 1,000 未満にする必要があります。 
 > - すべてのユーザーが、グループの最上位レベルにいる必要があります。  入れ子になったグループはサポートされていません。
-> - 信頼済みの契約のみがサポートされます。
+> - 信頼済みの契約のみがサポートされます。 (サブスクリプションを "超過割り当て" できる契約のみが信頼されます)
 > - グループのすべてのメンバーが、Azure AD アカウントに関連付けられた電子メール アドレスを保持している必要があります。
 > - Azure AD グループを使用して追加されたサブスクリプションの場合、通知用の個別の電子メール アドレスはサポートされていません。  
 
@@ -129,6 +129,12 @@ A: いいえ -- グループ内のすべてのユーザーが同じサブスク�
 
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Q:Azure AD グループに追加されたユーザーのサブスクライバーの詳細を編集できますか?  
 A: いいえ -- 個々のサブスクライバーの情報を変更するには、それらを Azure AD セキュリティ グループから削除して、サブスクリプションを個別に割り当てる必要があります。  
+
+### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>Q:Azure Active Directory グループを使用してサブスクライバーを追加するオプションが見当たりません。なぜでしょうか。
+A: この機能は現在、契約が信頼されている組織のみ利用できます。  **[詳細]** ボタンを選択すると、契約情報が表示されます。
+
+   > [!div class="mx-imgBorder"]
+   > ![[詳細] ボタンをクリックします](_img/assign-license-bulk/bulk-add-agreement.png "[詳細] ボタンをクリックすると、どのような種類の契約を持っているか確認できます。")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q:Azure AD セキュリティ グループにユーザーを追加しましたが、そのユーザーが追加されたことがサブスクリプション管理ポータル上に表示されず、サブスクリプションもありません。 なぜでしょうか。  
 A: 組織で Azure AD がどのように構成されているかに応じて、ユーザーが追加されるまでに最大 24 時間の遅延が発生することがあります。 24 時間以上経過している場合は、[サポートにお問い合わせください](https://visualstudio.microsoft.com/support/support-overview-vs)。  

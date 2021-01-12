@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 6202fa019aed8e6fc9eb9ff93bdb390bf22f2911
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77416397"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761252"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>超初心者でもわかるデバッグ方法
 
@@ -76,9 +76,9 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 次に、バグがいくつか含まれるアプリケーションを作成します。
 
-1. Visual Studio をインストールし、作成するアプリの種類に応じて、 **.NET デスクトップ開発**ワークロードまたは **.NET Core クロス プラットフォーム開発**ワークロードをインストールする必要があります。
+1. Visual Studio をインストールし、作成するアプリの種類に応じて、 **.NET デスクトップ開発** ワークロードまたは **.NET Core クロス プラットフォーム開発** ワークロードをインストールする必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
 
     Visual Studio は既にインストールされていて、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** の順にクリックします。 Visual Studio インストーラーが起動します。 **[.NET デスクトップ開発]** または **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
 
@@ -229,17 +229,17 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 1. 右側の `GalaxyType` 変数をポイントし、レンチのアイコンの左側の `theGalaxy.GalaxyType` を展開します。 `GalaxyType` にはプロパティ `MyGType` が含まれ、プロパティの値が `Spiral` に設定されていることがわかります。
 
-    ![変数を調べる](../debugger/media/beginners-inspect-variable.png)
+    ![Visual Studio デバッガーのスクリーンショット。コード行が黄色で表示され、行の末尾では、Galaxy.GalaxyType プロパティの下にメニューが展開されています。](../debugger/media/beginners-inspect-variable.png)
 
     "Spiral" は、コンソールに出力することを想定していた実際に正しい値です。 アプリの実行中にこのコードのこの値にアクセスできるのは、良いスタートです。 このシナリオでは、正しくない API を使用しています。 デバッガーでコードを実行しながらこれを修正できるかどうかを見ていきます。
 
 1. 同じコードで、まだデバッグしながら、カーソルを `theGalaxy.GalaxyType` の最後に置いて、`theGalaxy.GalaxyType.MyGType` に変更します。 この変更を行うことはできますが、コード エディターには、このコードをコンパイルできないことを示すエラーが表示されます。
 
-    ![構文エラー](../debugger/media/beginners-edit.png)
+    ![Visual Studio デバッガーのスクリーンショット。コード行が赤色で強調表示され、[編集] ボタンが選択された [エディット コンティニュ] メッセージ ボックスが表示されています。](../debugger/media/beginners-edit.png)
 
 1. **[エディット コンティニュ]** メッセージ ボックスで、 **[編集]** をクリックします。 **[エラー一覧]** ウィンドウにエラー メッセージが表示されるようになります。 エラーでは、`'object'` に `MyGType` の定義が含まれていないことが示されます。
 
-    ![構文エラー](../debugger/media/beginners-no-definition.png)
+    ![Visual Studio デバッガーのスクリーンショット。コード行が赤色で強調表示され、エラーが一覧表示された [エラー一覧] ウィンドウが表示されています。](../debugger/media/beginners-no-definition.png)
 
     各銀河を `GType` 型のオブジェクト (`MyGType` プロパティを含みます) で設定しましたが、デバッガーは `theGalaxy` オブジェクトを `GType` 型のオブジェクトとして認識していません。 何が起こっているのでしょうか。 銀河の種類を設定しているコードを調べてみます。 そうすると、`GType` クラスには確かに `MyGType` のプロパティがありますが、どこかにおかしなところがあります。 `object` に関するエラー メッセージが手掛かりになります。言語インタープリターに対しては、種類は `GType` 型のオブジェクトではなく `object` 型のオブジェクトとして認識されています。
 
@@ -288,7 +288,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 1. **F5** キーを押して、再び `type` 変数をポイントします。 `type` 変数の値が `I` になるまで、この手順を繰り返します。
 
-    ![変数を調べる](../debugger/media/beginners-inspecting-data.png)
+    ![Visual Studio デバッガーのスクリーンショット。コード行が黄色で表示され、型変数の値を 73 'I' として表示する小さいウィンドウが表示されています。](../debugger/media/beginners-inspecting-data.png)
 
 1. 次に、**F11** キーを押します ( **[デバッグ]**  >  **[ステップ イン]** またはデバッグ ツール バーの **[ステップ イン]** ボタン)。
 
@@ -310,7 +310,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 ## <a name="summary"></a>まとめ
 
-問題が見つかったら、デバッガーと **F10** や **F11** などの[ステップ コマンド](../debugger/navigating-through-code-with-the-debugger.md)を使用して、問題のあるコードの領域を探します。
+問題が見つかったら、デバッガーと **F10** や **F11** などの [ステップ コマンド](../debugger/navigating-through-code-with-the-debugger.md)を使用して、問題のあるコードの領域を探します。
 
 > [!NOTE]
 > 問題が発生しているコードの領域を特定するのが困難な場合は、問題が発生する前に実行されるコードにブレークポイントを設定した後、問題の兆候が現れるまでステップ コマンドを使用します。 [トレースポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)を使用して、 **[出力]** ウィンドウにメッセージを表示することもできます。 表示されたメッセージを見る (そして、まだ表示されていないメッセージに注意する) ことで、多くの場合、問題のあるコードの領域を分離できます。 このプロセスを複数回繰り返して、絞り込むことが必要な場合があります。

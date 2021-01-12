@@ -1,6 +1,7 @@
 ---
 title: JavaScript コンソール コマンド | Microsoft Docs
-ms.custom: ''
+description: JavaScript コンソール ウィンドウでコマンドを使用して、メッセージの送信や他のタスクを行います。 この記事は、Node.js アプリ、UWP アプリ、Apache Cordova アプリに適用されます。
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 301461caa15321b5a77f42872c93f52f3ec2c9c1
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211275"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903910"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio の JavaScript コンソール コマンド
 
@@ -43,7 +44,7 @@ console という名前のローカル オブジェクトとの混同を避け�
 
 |コマンド|説明|例|
 |-------------|-----------------|-------------|
-|`assert(expression, message)`|`expression` が **false**と評価された場合にメッセージを送信します。|`console.assert((x == 1), "assert message: x != 1");`|
+|`assert(expression, message)`|`expression` が **false** と評価された場合にメッセージを送信します。|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|コンソール ウィンドウからメッセージ (スクリプト エラー メッセージなど) をクリアし、コンソール ウィンドウに表示されているスクリプトもクリアします。 コンソールの入力プロンプトに入力したスクリプトはクリアされません。|`console.clear();`|
 |`count(title)`|カウント コマンドが呼び出された回数をコンソール ウィンドウに送信します。 `title`オプションにより、カウントの呼び出しはそれぞれ一意に識別されます。<br /><br /> コンソール ウィンドウの既存のエントリは `title` パラメーター (存在する場合) により識別され、カウント コマンドによって更新されます。 新しいエントリは作成されません。|`console.count();`<br /><br /> `console.count("inner loop");`|
 |`debug(message)`|`message` をコンソール ウィンドウに送信します。<br /><br /> このコマンドは console.log と同じものです。<br /><br /> このコマンドを使用して渡されたオブジェクトは、文字列値に変換されます。|`console.debug("logging message");`|

@@ -1,17 +1,17 @@
 ---
 title: Visual Studio コンテナー ツールの起動設定
 author: ghogen
-description: コンテナー ツールのビルド プロセスの概要
+description: コンテナー化されたアプリの Visual Studio による処理方法に関連する、コンテナー ツールの起動設定について説明します。
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91780876"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846711"
 ---
 # <a name="container-tools-launch-settings"></a>コンテナー ツールの起動設定
 

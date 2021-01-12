@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3da0a3868b410fbb78ed98265eb8f0920e6482b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 68d6d2823a4944ec74aaa477fb7b3913943a7296
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96330109"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833274"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>コード化された UI テストを使用してコードをテストする
 
@@ -217,7 +217,7 @@ UI コントロールのアサーションを作成するには、**コード化
 
 コントロールを追加し、プロパティを検証するとき、キーボードが必要になる場合もあります。 たとえば、右クリック メニュー コントロールを使用するコード化された UI テストを記録するとき、**コード化された UI テスト ビルダー** の **[アサーションの追加]** ツールで選択しようとすると、コントロールのメニュー項目の一覧がフォーカスを失い、非表示になります。 これを次の図に示します。Internet Explorer で、 **[アサーションの追加]** ツールで右クリック メニューを選択しようとすると、これはフォーカスを失い、表示されなくなります。
 
-![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
+![コード化された UI テスト ビルダーの [アサーションの追加] ツールのスクリーンショット。Internet Explorer の右クリック メニューと重なっています。](../test/media/codeduitest_selectcontrolkeyboard.png)
 
 キーボードを使用して UI コントロールを選択するには、マウスをコントロールの上に置きます。 次に、**Ctrl** キーと **I** キーを同時に押します。 キーを離します。 コントロールは、**コード化された UI のテスト ビルダー** によって記録されます。
 
@@ -229,7 +229,7 @@ UI コントロールのアサーションを作成するには、**コード化
 
 コード化された UI テストを実行するとき、コントロール上にマウスを置きます。 そして、キーボードの **Ctrl** キーを押しながら、**Shift** キーと **R** キーを押したままにします。 キーを離します。 **コード化された UI のテスト ビルダー** によって、マウス ホバー イベントが記録されます。
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png)
+![コード化された UI テスト ビルダー コマンド バーのスクリーンショット。[一時停止] アイコンが選択されています。 ツール ヒント ウィンドウには、マウス ホバー イベントの場所が表示されます。](../test/media/codedui_hover.png)
 
 テスト メソッドを作成すると、次の例のようなコードが *UIMap.Designer.cs* ファイルに追加されます。
 

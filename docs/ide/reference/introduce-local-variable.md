@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 564ba133074af3749bd909f1b0a7fe32822f5d75
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568816"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833261"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Visual Studio でローカル変数を導入する
 
@@ -47,14 +47,14 @@ ms.locfileid: "75568816"
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![[クイック アクションとリファクタリング] メニューの左余白に表示されるねじ回しアイコンのスクリーンショット。](media/screwdriver.png) アイコンをクリックします。
 
    ![ローカル導入のプレビュー](media/local-preview-cs.png)
 
 3. ドロップダウン メニューから **['<式>' のすべての発生に対してローカルを導入します]** を選択します。
 
    > [!TIP]
-   > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる[すべての変更を確認する](../../ide/preview-changes.md)ことができます。
+   > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる [すべての変更を確認する](../../ide/preview-changes.md)ことができます。
 
    ローカル変数と、その使用法から推論された型が作成されます。 新しいローカル変数に新しい名前を付けます。
 

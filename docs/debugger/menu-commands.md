@@ -1,5 +1,7 @@
 ---
 title: メニュー コマンド | Microsoft Docs
+description: Spy++ メニューの一覧を参照してください。各メニューには、詳細情報へのリンクがあります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db2c4ebe4a6aa24e0df8f66442f6128ecee8d491
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931309"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97902974"
 ---
 # <a name="menu-commands"></a>メニュー コマンド
 このセクションのヘルプ トピックには、Spy++ メニューで使用できるコマンドが一覧表示されています。

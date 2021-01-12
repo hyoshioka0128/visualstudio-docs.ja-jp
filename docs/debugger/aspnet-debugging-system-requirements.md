@@ -1,5 +1,7 @@
 ---
 title: 'ASP.NET のデバッグ: システム要件 | Microsoft Docs'
+description: Visual Studio と Web アプリが同じコンピューター上で実行される ASP.NET ローカル デバッグとリモート デバッグのためのソフトウェアおよびセキュリティの要件について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2002d6ccbbe8f2cd3e186c49aca7a846568eedb2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745806"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729120"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET のデバッグ: システム要件
 ここでは、 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] のデバッグ シナリオに必要なソフトウェアとセキュリティの要件について説明します。
@@ -37,14 +39,14 @@ ms.locfileid: "72745806"
 ## <a name="security-requirements"></a>セキュリティ要件
  リモート デバッグでは、ローカル コンピューターとリモート コンピューターが同じドメイン内または同じワークグループ内にセットアップされている必要があります。
 
- (アプリケーション プールによってホストされている) [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセス をデバッグするには、そのプロセスをデバッグするアクセス許可が必要です。 既定では、IIS 6.0 より前の [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションは、**ASPNET** ユーザーとして実行されます。 IIS 6.0 および IIS 7.0 では、**NETWORK SERVICE** アカウントが既定値です。 ワーカー プロセスが **ASPNET**(既定) または **NETWORK SERVICE**として実行されている場合、そのプロセスをデバッグするには管理者特権が必要です。
+ (アプリケーション プールによってホストされている) [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセス をデバッグするには、そのプロセスをデバッグするアクセス許可が必要です。 既定では、IIS 6.0 より前の [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションは、**ASPNET** ユーザーとして実行されます。 IIS 6.0 および IIS 7.0 では、**NETWORK SERVICE** アカウントが既定値です。 ワーカー プロセスが **ASPNET**(既定) または **NETWORK SERVICE** として実行されている場合、そのプロセスをデバッグするには管理者特権が必要です。
 
  > [!IMPORTANT]
  > Windows Server 2008 R2 以降、各アプリケーション プールの ID として [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) を使用することが推奨されます。
 
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスの名前は、デバッグ シナリオや IIS のバージョンによって異なります。 詳細については、[ASP.NET プロセスの名前を見つける](../debugger/how-to-find-the-name-of-the-aspnet-process.md)」を参照してください。
 
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを実行しているユーザー アカウントは、IIS を実行しているサーバーの machine.config ファイルを編集することによって変更できます。 これを行うには、 **インターネット インフォメーション サービス (IIS) マネージャー**を使用するのが最善です。 詳細については、[ユーザー アカウントでワーカー プロセスを実行する](../debugger/how-to-run-the-worker-process-under-a-user-account.md)」を参照してください。
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを実行しているユーザー アカウントは、IIS を実行しているサーバーの machine.config ファイルを編集することによって変更できます。 これを行うには、 **インターネット インフォメーション サービス (IIS) マネージャー** を使用するのが最善です。 詳細については、[ユーザー アカウントでワーカー プロセスを実行する](../debugger/how-to-run-the-worker-process-under-a-user-account.md)」を参照してください。
 
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセスを自分のユーザー アカウントで実行するように変更する場合、IIS を実行しているサーバーの管理者である必要はありません。
 

@@ -1,5 +1,7 @@
 ---
 title: '[ウィンドウ プロパティ] ダイアログ ボックスの [クラス] タブ | Microsoft Docs'
+description: Visual Studio で [クラス] タブを選択し、[ウィンドウ ビュー] ウィンドウにフォーカスを移動し、ウィンドウ ノードを選択し、[表示] から [プロパティ] を選択して [ウィンドウ プロパティ] ダイアログ ボックスを表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bf37d9e5d672f0ecce262699fdd5d704cde9efe
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565014"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729029"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>[クラス] タブ ([ウィンドウ プロパティ] ダイアログ ボックス)
 選択したウィンドウのクラスに関する情報を表示するには、 **[クラス]** タブを使用します。 [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md)を表示するには、[[ウィンドウ ビュー]](../debugger/windows-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のウィンドウ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

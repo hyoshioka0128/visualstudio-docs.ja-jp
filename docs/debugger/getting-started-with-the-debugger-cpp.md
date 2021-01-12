@@ -1,6 +1,6 @@
 ---
 title: 'チュートリアル: C++ コードをデバッグする'
-description: Visual Studio デバッガーを起動し、コードをステップ実行し、データを検査する方法について説明します。
+description: Visual Studio デバッガーの機能と、C++ アプリケーションでのデバッガーの起動、コードのステップ実行、データの検査を行う方法について説明します。
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 4cc5d0b85ac1406f214784976ca23467a0e0eb6c
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77091809"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847103"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した C++ のデバッグについて理解する
 
@@ -39,12 +39,12 @@ ms.locfileid: "77091809"
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 および **C++ によるデスクトップ開発**ワークロードをインストールしている必要があります。
+Visual Studio 2019 および **C++ によるデスクトップ開発** ワークロードをインストールしている必要があります。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 および **C++ によるデスクトップ開発**ワークロードをインストールしている必要があります。
+Visual Studio 2017 および **C++ によるデスクトップ開発** ワークロードをインストールしている必要があります。
 
 ::: moniker-end
 
@@ -158,7 +158,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
      このチュートリアルでは、デバッガーを使用してこのアプリを詳しく見て行くと共に、デバッガーの機能についても説明します。
 
-2. 赤色の停止![ デバッグの停止 ](../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします")ボタンを押して、デバッガーを停止します (**Shift** + **F5** キー)。
+2. 赤色の停止 ![ デバッグの停止](../debugger/media/dbg-tour-stop-debugging.png "デバッグ中に診断ツールを有効にします")ボタンを押して、デバッガーを停止します (**Shift** + **F5** キー)。
 
 3. コンソール ウィンドウで、任意のキーを押し、**Enter** キーを押してコンソール ウィンドウを閉じます。
 
@@ -273,7 +273,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
      ![[ローカル] ウィンドウでの変数の検査](../debugger/media/get-started-locals-window-cpp.png "ローカル ウィンドウ")
 
-    **[ローカル]** ウィンドウを確認すれば、現在の[スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
+    **[ローカル]** ウィンドウを確認すれば、現在の [スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
 
 ## <a name="set-a-watch"></a>ウォッチ式を設定する
 

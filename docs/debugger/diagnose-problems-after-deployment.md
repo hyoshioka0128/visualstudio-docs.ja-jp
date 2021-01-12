@@ -1,5 +1,7 @@
 ---
 title: 配置後の問題の診断 | Microsoft Docs
+description: Visual Studio で IntelliTrace を使用し、配置後の問題を診断します。 リリースにビルド情報を含めます。 アプリをリリースし、監視し、問題を見つけます。
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97499a88a04b2ae7b61b847c4aec133d297e613a
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928057"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726827"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使って配置後に問題を診断します (C#、Visual Basic)
 
@@ -169,7 +171,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 2. **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。なぜこのようなことが起きたのですか。どうしたらよいですか?](#InvalidConfigFile)
 
-     Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー**を確認します。
+     Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー** を確認します。
 
      変更する前に、適切なソースがあることを確認してください。 分岐を使用する場合、Visual Studio が対応するソースを検出した分岐 (リリース ブランチなど) とは異なる分岐で作業する可能性があります。
 
@@ -379,7 +381,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
      ![ソース管理から開く &#45; 移行済み](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。
- **A:** ご利用の[ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
+ **A:** ご利用の [ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> Q:信頼されていないシンボルに関する次のメッセージが表示されるのはなぜですか。
  ![信頼されていないシンボル パスでデバッグするか](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

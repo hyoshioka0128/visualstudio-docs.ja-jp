@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 0fa7d186623b69fd83c3ed7e4ab9cc12128847d2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037212"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729289"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>チュートリアル: Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -22,12 +22,12 @@ ms.locfileid: "90037212"
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* **Web 開発**、**Azure ツール** ワークロード、または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+* **Web 開発**、**Azure ツール** ワークロード、または **.NET Core クロスプラットフォーム開発** ワークロードがインストールされた [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 ::: moniker-end
 
 ::: moniker range=">= vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発** ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core 2.2 を使って開発するための [.NET Core 2.2 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * .NET Core 3.1 を使って開発するための [.NET Core 3 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
 ::: moniker-end
@@ -46,11 +46,11 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 
 ::: moniker range="vs-2019"
 
-![Web プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![ASP.NET Core Web アプリケーションの [新しいプロジェクトの構成] 画面のスクリーンショット。[プロジェクト名] と [ソリューション名] のフィールドが "WebFrontEnd" に設定されています。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
 
 **[Docker サポートを有効にする]** を選択しないでください。 Docker サポートは、後で追加します。
 
-![Web プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![[新しい ASP.NET Core Web アプリケーションを作成する] 画面のスクリーンショット。Web アプリケーションが選択されています。 [Enable Docker Support]\(Docker サポートを有効にする\) オプションは選択されていません。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
 
 ::: moniker-end
 

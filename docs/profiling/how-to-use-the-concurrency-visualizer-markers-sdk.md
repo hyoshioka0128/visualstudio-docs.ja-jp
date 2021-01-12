@@ -1,5 +1,6 @@
 ---
 title: コンカレンシー ビジュアライザー マーカー SDK を使用する | Microsoft Docs
+description: Visual Studio で同時実行ビジュアライザー マーカー SDK を使用してスパンを作成し、フラグ、メッセージ、警告を記述する方法を学習します。
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf33ad094716ee0f8f4c8cc4bb06220db1237e5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 24659a101da59ed3a8ca6389debfde6c08a038ed
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851581"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815608"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>方法: コンカレンシー ビジュアライザー マーカー SDK を使用する
 このトピックでは、コンカレンシー ビジュアライザー SDK を使用してスパンを作成し、フラグ、メッセージ、警告を記述する方法について説明します。
@@ -70,7 +71,7 @@ ms.locfileid: "90851581"
 
 6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 2 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、2 つの新しいスパンを示しています。
 
-     ![3 つのカスタム マーカー シリーズがあるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
+     ![同時実行ビジュアライザーのスレッド ビューのスクリーンショット。フラグ スパンとメッセージ スパンを含むマーカー、フラグ、メッセージ系列が表示されています。](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Visual Basic または C\# を使用するには
 
@@ -164,7 +165,7 @@ ms.locfileid: "90851581"
 
 6. 現在のプロジェクトを開始して、コンカレンシー ビジュアライザーを表示します。 3 つのマーカー系列がスレッド ビューのそれぞれ独自のレーンに表示されます。 次の図は、3 つの新しいスパンを示しています。
 
-     ![3 つのカスタム マーカー シリーズがあるコンカレンシー ビジュアライザー](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
+     ![同時実行ビジュアライザーのスレッド ビューのスクリーンショット。メッセージ、警告、フラグのスパンを含む、マーカー、フラグ、メッセージ系列が表示されています。](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 
 ## <a name="see-also"></a>関連項目
 - [コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)

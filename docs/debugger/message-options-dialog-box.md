@@ -1,5 +1,6 @@
 ---
 title: '[メッセージ オプション] ダイアログ ボックス | Microsoft Docs'
+description: '[メッセージ オプション] でメッセージ ビューに一覧表示されるメッセージと、表示するメッセージ データを指定します。'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931326"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903585"
 ---
 # <a name="message-options-dialog-box"></a>[メッセージ オプション] ダイアログ ボックス
 このダイアログ ボックスを使用して、[[メッセージ ビュー]](../debugger/messages-view.md) に一覧表示されるメッセージを選択します。 このダイアログ ボックスを表示するには、 **[Spy]** メニューから **[ログ メッセージ]** を選択します。

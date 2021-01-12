@@ -1,5 +1,7 @@
 ---
 title: GPU コードのデバッグ | Microsoft Docs
+description: Visual Studio で、グラフィックス処理装置 (GPU) で実行されている C++ コードをデバッグすることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 36359f8d5f2044c97e3479981290aff07d3f2e31
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599953"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727035"
 ---
 # <a name="debugging-gpu-code"></a>GPU コードのデバッグ
 グラフィックス処理装置 (GPU) で実行されている C++ コードをデバッグできます。 Visual Studio での GPU デバッグのサポートには、競合の検出、プロセスの開始、プロセスへのアタッチ、デバッグ ウィンドウへの統合が含まれます。
@@ -34,7 +36,7 @@ ms.locfileid: "89599953"
 
 - **[標準]** ツール バーの **[デバッグの種類]** リストで **[GPU のみ]** を選択します。
 
-- **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューの **[プロパティ]** を選びます。 **[プロパティ ページ]** ダイアログ ボックスで **[デバッグ]** をクリックし、 **[デバッガーの種類]** リストで **[GPU のみ]** を選択します。
+- **ソリューション エクスプローラー** で、プロジェクトのショートカット メニューの **[プロパティ]** を選びます。 **[プロパティ ページ]** ダイアログ ボックスで **[デバッグ]** をクリックし、 **[デバッガーの種類]** リストで **[GPU のみ]** を選択します。
 
 ## <a name="launching-and-attaching-to-applications"></a>アプリケーションの起動とアプリケーションへのアタッチ
  Visual Studio のデバッグ コマンドを使用して GPU デバッグを開始および停止できます。 詳細については、「[デバッガーでのコード間の移動](../debugger/navigating-through-code-with-the-debugger.md)」を参照してください。 また、実行中のプロセスに GPU デバッガーをアタッチできます。ただし、そのプロセスが GPU コードを実行している場合に限ります。 詳細については、[実行中のプロセスへのアタッチ](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)に関するページを参照してください。

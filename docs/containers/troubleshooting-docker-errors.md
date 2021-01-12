@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 31b9d8649abed0f9901aa872ff3939c25e3025b8
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235109"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729255"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker を使用した Visual Studio 開発のトラブルシューティング
 
@@ -24,22 +24,15 @@ Visual Studio コンテナー ツールを使用する際、アプリケーシ�
 
 ## <a name="volume-sharing-is-not-enabled-enable-volume-sharing-in-the-docker-ce-for-windows-settings--linux-containers-only"></a>ボリューム共有が有効にならない。 Docker CE for Windows の設定でのボリューム共有の有効化 (Linux コンテナーのみ)
 
-この問題を解決するには、次の操作を行います。
+ファイル共有を管理する必要があるのは、Docker で Hyper-V を使用している場合だけです。 WSL 2 を使用している場合、次の手順は必要ありません。また、[ファイル共有] オプションは表示されません。 この問題を解決するには、次の操作を行います。
 
 1. 通知領域で **[Windows 用の Docker]** を右クリックし、 **[設定]** を選択します。
-1. **[Shared Drives]\(共有ドライブ\)** を選択し、システム ドライブと共に、プロジェクトが存在するドライブを共有します。
+1. **[リソース]**  >  **[ファイル共有]** を選択し、アクセスする必要があるフォルダーを共有します。 システム ドライブ全体を共有することは可能ですが、お勧めできません。
 
-> [!NOTE]
-> ファイルが共有されているように見える場合は、ダイアログ下部の [資格情報のリセット] リンクをクリックしてボリューム共有を再度有効にすることが必要な場合があります。 資格情報をリセットした後で続行するには、Visual Studio の再起動が必要な場合があります。
-
-![共有ドライブ](media/troubleshooting-docker-errors/shareddrives.png)
+    ![共有ドライブ](media/troubleshooting-docker-errors/docker-settings-image.png)
 
 > [!TIP]
-> Visual Studio 2017 バージョン 15.6 以降の Visual Studio バージョンでは、**共有ドライブ**が構成されていない場合、プロンプトが表示されます。
-
-### <a name="container-type"></a>コンテナーの種類
-
-プロジェクトに Docker サポートを追加する場合は、Windows または Linux のいずれかのコンテナーを選択します。 Docker ホストが同じコンテナーの種類を実行している必要があります。 実行中の Docker インスタンスでコンテナーの種類を変更するには、システム トレイの Docker アイコンを右クリックして、 **[Switch to Windows containers...]\(Windows コンテナーに切り替える...\)** または **[Switch to Linux containers...]\(Linux コンテナーに切り替える...\)** を選択します。
+> Visual Studio 2017 バージョン 15.6 以降の Visual Studio バージョンでは、**共有ドライブ** が構成されていない場合、プロンプトが表示されます。
 
 ## <a name="unable-to-start-debugging"></a>デバッグを開始できない
 
@@ -54,7 +47,7 @@ Visual Studio コンテナー ツールを使用する際、アプリケーシ�
 
 ## <a name="mounts-denied"></a>マウントが拒否される
 
-MacOS 用の Docker を使用している場合、フォルダー /usr/local/share/dotnet/sdk/NuGetFallbackFolder を参照するとエラーが発生する可能性があります。 Docker で [ファイル共有] タブにフォルダーを追加する
+MacOS 用の Docker を使用している場合、フォルダー /usr/local/share/dotnet/sdk/NuGetFallbackFolder を参照するとエラーが発生する可能性があります。 Docker で [File Sharing]\(ファイル共有\) タブにフォルダーを追加します。
 
 ## <a name="docker-users-group"></a>Docker users グループ
 
@@ -83,15 +76,29 @@ PowerShell では、[Add-LocalGroupMember](/powershell/module/microsoft.powershe
 
 ## <a name="low-disk-space"></a>ディスク領域不足
 
-Docker では既定で、 *%ProgramData%/Docker/* フォルダーにイメージが格納されます。このフォルダーは通常、システム ドライブ上にあり、*C:\ProgramData\Docker\* となります。 システム ドライブの大切な領域をイメージで占有してしまわないよう、イメージ フォルダーの場所を変更できます。  タスク バーの Docker アイコンから Docker 設定を開き、 **[デーモン]** を選択し、 **[基本]** を **[詳細]** に切り替えます。 編集ウィンドウで `graph` プロパティ設定を追加し、Docker イメージに任意の場所を指定します。
+Docker では既定で、 *%ProgramData%/Docker/* フォルダーにイメージが格納されます。このフォルダーは通常、システム ドライブ上にあり、*C:\ProgramData\Docker\* となります。 システム ドライブの大切な領域をイメージで占有してしまわないよう、イメージ フォルダーの場所を変更できます。 そのためには次を行います。
+
+ 1. タスク バーの Docker アイコンを右クリックし、 **[設定]** を選択します。
+ 1. **[Docker エンジン]** を選択します。 
+ 1. 編集ウィンドウで `graph` プロパティ設定を追加し、Docker イメージに任意の場所を指定します。
 
 ```json
     "graph": "D:\\mypath\\images"
 ```
 
-![Docker イメージの場所設定のスクリーンショット](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+![Docker ファイル共有のスクリーンショット](media/troubleshooting-docker-errors/docker-daemon-settings.png)
 
-**[適用]** をクリックし、Docker を再起動します。 以上の手順で *%ProgramData%\docker\config\daemon.json* にある設定ファイルが変更されます。 以前に作成したイメージが移動されることはありません。
+**[適用および再起動]** をクリックします。 以上の手順で *%ProgramData%\docker\config\daemon.json* にある設定ファイルが変更されます。 以前に作成したイメージが移動されることはありません。
+
+## <a name="container-type-mismatch"></a>コンテナーの種類の不一致
+
+プロジェクトに Docker サポートを追加する場合は、Windows または Linux のいずれかのコンテナーを選択します。 Docker サーバー ホストがプロジェクト ターゲットと同じコンテナーの種類を実行するように構成されていない場合は、次のようなエラーが表示される可能性があります。
+
+![Docker ホストとプロジェクトの不一致のスクリーンショット](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+
+この問題を解決するには、次の手順を実行します。
+
+- システム トレイの Docker for Windows アイコンを右クリックし、 **[Switch to Windows containers...]\(Windows コンテナーに切り替える...\)** または **[Switch to Linux containers...]\(Linux コンテナーに切り替える...\)** を選択します。
 
 ## <a name="microsoftdockertools-github-repo"></a>Microsoft/DockerTools GitHub リポジトリ
 

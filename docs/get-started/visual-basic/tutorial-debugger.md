@@ -1,6 +1,6 @@
 ---
 title: 'チュートリアル: Visual Basic コードをデバッグする'
-description: Visual Studio デバッガーを起動し、コードをステップ実行し、データを検査する方法について説明します。
+description: Visual Studio デバッガーの機能と、Visual Basic アプリケーションでのデバッガーの起動、コードのステップ実行、データの検査を行う方法について説明します。
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84ed0de3542822597c64e0866c04f719ed6c2ab7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 000b46223811490695562159822f61240d0cea66
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77027239"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847003"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した Visual Basic コードのデバッグについて理解する
 
@@ -40,12 +40,12 @@ ms.locfileid: "77027239"
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 をインストールし、 **.NET Core クロスプラットフォームの開発**ワークロードを用意しておく必要があります。
+Visual Studio 2019 をインストールし、 **.NET Core クロスプラットフォームの開発** ワークロードを用意しておく必要があります。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 をインストールし、 **.NET Core クロスプラットフォームの開発**ワークロードを用意しておく必要があります。
+Visual Studio 2017 をインストールし、 **.NET Core クロスプラットフォームの開発** ワークロードを用意しておく必要があります。
 
 ::: moniker-end
 
@@ -266,7 +266,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
      ![[ローカル] ウィンドウでの変数の検査](../visual-basic/media/get-started-locals-window-vb.png "ローカル ウィンドウ")
 
-    **[ローカル]** ウィンドウを確認すれば、現在の[スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
+    **[ローカル]** ウィンドウを確認すれば、現在の [スコープ](https://www.wikipedia.org/wiki/Scope_(computer_science)) (現在の実行コンテキスト) に含まれている変数がわかります。
 
 ## <a name="set-a-watch"></a>ウォッチ式を設定する
 

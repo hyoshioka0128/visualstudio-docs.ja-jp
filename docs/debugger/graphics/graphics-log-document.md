@@ -1,5 +1,7 @@
 ---
 title: グラフィックス ログ ドキュメント | Microsoft Docs
+description: グラフィックス診断セッションでアプリが実行されているときに発生したグラフィックス イベントを記録する、Visual Studio のグラフィックス ログ ドキュメントについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 38dc7452493ebcd39bee5ee55c59fc70e0a6493c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735516"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727659"
 ---
 # <a name="graphics-log-document"></a>グラフィックス ログ ドキュメント
 グラフィックス ログのドキュメントは、アプリがグラフィックス診断のセッションで実行されているときに発生したグラフィックス イベントのレコードです。 記録した後で、Visual Studio Graphics Analyzer でログを確認して、レンダリングとパフォーマンスの問題を診断することができます。
@@ -85,7 +87,7 @@ ms.locfileid: "72735516"
 |**OS のアーキテクチャ**|オペレーティング システムのターゲット CPU アーキテクチャ。|
 |**OS バージョン**|オペレーティング システムのバージョン。|
 |**プロセッサ**|コンピューターにインストールされているプロセッサ。|
-|**ターゲット アプリケーションのアーキテクチャ**|アプリケーションのターゲット CPU アーキテクチャ。 これは **OS のアーキテクチャ**とは異なります。|
+|**ターゲット アプリケーションのアーキテクチャ**|アプリケーションのターゲット CPU アーキテクチャ。 これは **OS のアーキテクチャ** とは異なります。|
 
  **ターゲット アプリケーション**: キャプチャ セッションの対象であるアプリケーションに関する情報を一覧表示します。
 

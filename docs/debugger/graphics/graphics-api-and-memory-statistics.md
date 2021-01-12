@@ -1,5 +1,7 @@
 ---
 title: グラフィックス API 統計情報とメモリ統計情報 | Microsoft Docs
+description: グラフィックス API 統計情報ツールとメモリ統計情報ツールについて説明します。これらのツールには、さまざまなリソースの Direct3D API 使用状況と GPU メモリ消費に関する情報が表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0e0ad2bc48e1e15e1b061cdb600ce65773523e70
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735575"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727891"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>グラフィックス API 統計情報とメモリ統計情報
 <!-- VERSIONLESS -->

@@ -10,21 +10,21 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a9242cdd4a09b7d0cb1cae1904800696dc9c3d82
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 650189c4418355ae06b296bac7e16eece0ea88ad
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099181"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727256"
 ---
 # <a name="monitor-with-tensorboard"></a>TensorBoard で監視する
 
 TensorBoard では、モデルのトレーニングの進行状況を視覚化することができます。
 
-1. プロジェクトを右クリックし、 **[Run TensorBoard]\(TensorBoard の実行\)** をクリックして、TensorBoard の出力ログのディレクトリを選択します。
+1. プロジェクトを右クリックし、**[Run TensorBoard]\(TensorBoard の実行\)** をクリックして、TensorBoard の出力ログのディレクトリを選択します。
 
-    ![tensorboard を実行する](media/monitor-tensorboard/run-tensorboard.png)
+    ![Visual Studio ソリューション エクスプローラーのスクリーンショット。MNIST プロジェクトが選択されています。 コンテキスト メニューが開いています。[Run TensorBoard]\(TensorBoard の実行\) コマンドが選択されています。](media/monitor-tensorboard/run-tensorboard.png)
 
 2. 時間の経過に伴いエラーが減少していることに注目してください。これは品質が改善していることを意味します。
 
-    ![tensorboard を実行する](media/monitor-tensorboard/tensorboard.png)
+    ![メイン TensorBoard ウィンドウのスクリーンショット。TensorBoard ログのデータでグラフを作成しています。](media/monitor-tensorboard/tensorboard.png)

@@ -1,5 +1,7 @@
 ---
 title: F# のデバッグ | Microsoft Docs
+description: Visual Studio における F# のデバッグと他のマネージド言語のデバッグの違いを一覧にまとめています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7bc3934136f0966439bec2e4368488e52099602
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f2dcacff924386cc279708c34d2232e50aa92c55
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738268"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728422"
 ---
 # <a name="debugging-f"></a>F\# のデバッグ
 F# のデバッグは、他のマネージド言語のデバッグとほとんど同じですが、次の例外があります。

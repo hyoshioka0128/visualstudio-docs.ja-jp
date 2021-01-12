@@ -1,5 +1,7 @@
 ---
 title: '[メッセージの検索] ダイアログ ボックス | Microsoft Docs'
+description: この [メッセージ検索] を使用して、メッセージ ビューで特定のメッセージのノードを検索して選択します。 ハンドル、メッセージの種類、メッセージ ID で検索できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931297"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903052"
 ---
 # <a name="message-search-dialog-box"></a>[メッセージ検索] ダイアログ ボックス
 このダイアログ ボックスを使用して、[メッセージ ビュー](../debugger/messages-view.md)で特定のメッセージのノードを検索して選択します。 このダイアログ ボックスを表示するには、メッセージ ビュー ウィンドウにフォーカスを移動します。 その後、 **[検索]** メニューから、 **[メッセージの検索]** を選択します。

@@ -1,5 +1,7 @@
 ---
 title: 出力ウィンドウにメッセージを送信する | Microsoft Docs
+description: Visual Studio で、System.Diagnostics クラス ライブラリに含まれている Debug クラスまたは Trace クラスを使用して、[出力] ウィンドウに出力されるランタイム メッセージを記述します。
+ms.custom: SEO-VS-2020
 ms.date: 11/08/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -21,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 345efabedca63187fd9f16b4ed9622de8e320e89
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350473"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728084"
 ---
 # <a name="send-messages-to-the-output-window"></a>出力ウィンドウにメッセージを送信する
 
-<xref:System.Diagnostics> クラス ライブラリに含まれている <xref:System.Diagnostics.Debug> クラスまたは <xref:System.Diagnostics.Trace> クラスを使用して、**出力**ウィンドウにランタイム メッセージを出力することができます。 プログラムの*デバッグ* バージョンだけで出力する場合は <xref:System.Diagnostics.Debug> クラスを使用します。 プログラムの*デバッグ* バージョンと*リリース* バージョンの両方で出力する場合は <xref:System.Diagnostics.Trace> クラスを使用します。
+<xref:System.Diagnostics> クラス ライブラリに含まれている <xref:System.Diagnostics.Debug> クラスまたは <xref:System.Diagnostics.Trace> クラスを使用して、**出力** ウィンドウにランタイム メッセージを出力することができます。 プログラムの *デバッグ* バージョンだけで出力する場合は <xref:System.Diagnostics.Debug> クラスを使用します。 プログラムの *デバッグ* バージョンと *リリース* バージョンの両方で出力する場合は <xref:System.Diagnostics.Trace> クラスを使用します。
 
 ## <a name="output-methods"></a>出力メソッド
  <xref:System.Diagnostics.Trace> クラスと <xref:System.Diagnostics.Debug> クラスが提供する出力方法は次のとおりです。
@@ -41,7 +43,7 @@ ms.locfileid: "85350473"
 
 - <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> メソッドと <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> メソッド。常に実行を中断し、情報を出力します。 既定では、`Fail` メソッドはダイアログ ボックスに情報を出力します。
 
-**出力**ウィンドウには、次の情報も表示されます。
+**出力** ウィンドウには、次の情報も表示されます。
 
 - デバッガーが読み込んだり、アンロードしたりしたモジュール
 

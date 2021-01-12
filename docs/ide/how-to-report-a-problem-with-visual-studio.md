@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2956372882d4449345d026e691a12afb2988054a
-ms.sourcegitcommit: 6ef4e46c786c5bbcc52cd9c30e5ddfca12ea8b3c
+ms.openlocfilehash: a6f0d126853c518692725d495586b3adfa57c9aa
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97050829"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761356"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Visual Studio または Visual Studio Installer に関する問題を報告する方法
 
@@ -24,8 +24,9 @@ ms.locfileid: "97050829"
 Visual Studio またはそのインストーラーで発生した問題を報告できます。 組み込みのフィードバック ツールを使用すると、Visual Studio チームが問題を診断して解決するのに役立つ診断情報を簡単に追加できます。 問題を報告する手順を次に示します。
 
 1. **Visual Studio で**、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。 フィードバック ツールには、 **[ヘルプ]** メニュー >  **[フィードバックの送信]**  >  **[問題の報告]** からアクセスすることもできます。
-![Visual Studio Developer Community の [問題の報告] ポップアップ](media/feedback-button.png) Visual Studio をインストールできない場合、または Visual Studio 内のフィードバック ツールにアクセスできない場合は、**Visual Studio Installer** で問題を報告してください。  Installer で、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。
-![Visual Studio Developer Community での問題の報告に関するポップアップ](media/installer.png)
+![Visual Studio ウィンドウのスクリーンショット。右上隅でフィードバック アイコンが選択され、コンテキスト メニューで [問題の報告] が選択されています。](media/feedback-button.png)
+または、Visual Studio をインストールできない場合、または Visual Studio 内のフィードバック ツールにアクセスできない場合は、**Visual Studio インストーラー** で問題を報告してください。  Installer で、右上隅にあるフィードバック アイコンを選択し、[問題の報告] を選択します。
+![Visual Studio インストーラーのスクリーンショット。右上隅でフィードバック アイコンが選択され、コンテキスト メニューで [問題の報告] が選択されています。](media/installer.png)
 
 1. **[問題の報告]** をクリックすると、既定のブラウザーが開き、Visual Studio へのサインインで使用するものと同じアカウントでサインインされます。
 
@@ -67,11 +68,11 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 1. 電子メールに含まれるリンクに移動して問題のレポートに進むか、ホーム ページに進み、"**詳細情報が必要**" 状態のすべてのレポートを確認します。
 
-    ![マイ フィードバック](../ide/media/feedback-my-feedback.png)
+    ![[Visual Studio フィードバック] ウィンドウのホーム ページのスクリーンショット。 1 つのフィードバック項目が表示され、赤色の "詳細情報が必要" というラベルが付いています。](../ide/media/feedback-my-feedback.png)
 
 1. 問題のレポートで [さらに情報を提供] リンクを選択すると、新しい画面が表示されます。 要求されている情報をそこで確認できます。
 
-   ![マイ フィードバック](../ide/media/feedback-need-more-info.png)
+   ![[Visual Studio フィードバック] ウィンドウのスクリーンショット。問題の解決のために Microsoft から要求されている情報が示されています。](../ide/media/feedback-need-more-info.png)
 
 1. コメントや添付ファイルを追加するか、手順を記録することで、さらに情報を提供することができます。 このエクスペリエンスは、新しい問題を報告することや、問題への投票時に追加情報を提供することと似ています。
 
@@ -81,9 +82,9 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>解決策を検索するかフィードバックを提供する
 
-Visual Studio を使用して問題を報告したくない場合、またはできない場合は、既に問題が報告され、[Visual Studio Developer Community](https://developercommunity.visualstudio.com/) ページに解決策が投稿されている可能性があります。
+Visual Studio を使用して問題を報告したくない場合、またはできない場合は、既に問題が報告され、[Visual Studio Developer Community](https://developercommunity2.visualstudio.com/search?space=8) ページに解決策が投稿されている可能性があります。
 
-レポートする問題はないが、機能を提案したい場合は、そのための場所も用意されています。 詳細については、「[Suggest a feature](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)」(機能を提案する) ページをご覧ください。
+レポートする問題はないが、機能を提案したい場合は、そのための場所も用意されています。 詳細については、「[Suggest a feature](https://aka.ms/feedback/suggest?space=8)」(機能を提案する) ページをご覧ください。
 
 ## <a name="see-also"></a>関連項目
 
@@ -91,5 +92,5 @@ Visual Studio を使用して問題を報告したくない場合、またはで
 * [Visual Studio フィードバック オプション](../ide/feedback-options.md)
 * [Visual Studio for Mac に関する問題を報告する](/visualstudio/mac/report-a-problem)
 * [C++ に関する問題を報告する](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)
+* [Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)
 * [開発者コミュニティのデータのプライバシー](developer-community-privacy.md)

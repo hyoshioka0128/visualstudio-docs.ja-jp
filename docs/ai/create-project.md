@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e788cca7cb27b36e3f3567aff96cd33bf5aaae
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 28eccd9c564b7d368e823288311a823fdff86fb3
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099233"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726399"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio のテンプレートから AI プロジェクトを作成する
 
@@ -23,11 +23,11 @@ ms.locfileid: "92099233"
 
 1. Visual Studio を起動します。
 
-2. **[ファイル]、[新規]、[プロジェクト]** (Ctrl + Shift + N) の順に選択します。 **[新しいプロジェクト]** ダイアログで、" **AI Tools** " を検索し、希望のテンプレートを選択します。 テンプレートを選択すると、テンプレートの簡単な説明が表示されます。
+2. **[ファイル]、[新規]、[プロジェクト]** (Ctrl + Shift + N) の順に選択します。 **[新しいプロジェクト]** ダイアログで、"**AI Tools**" を検索し、希望のテンプレートを選択します。 テンプレートを選択すると、テンプレートの簡単な説明が表示されます。
 
     ![VS2017 Python テンプレートの [新しいプロジェクト] ダイアログ](media/create-project/new-ai-project.png)
 
-3. このクイック スタートでは、" **TensorFlow アプリケーション** " テンプレートを選択し、("MNIST" などの) プロジェクト名を付け、場所を指定し、 **[OK]** を選択します。
+3. このクイック スタートでは、"**TensorFlow アプリケーション**" テンプレートを選択し、("MNIST" などの) プロジェクト名を付け、場所を指定し、**[OK]** を選択します。
 
 4. Visual Studio によってプロジェクト ファイル (ディスク上に 1 つの `.pyproj` ファイル) と、テンプレートに記述されているその他のファイルが作成されます。 "TensorFlow アプリケーション" テンプレートでは、プロジェクトと同じ名前の 1 つのファイルがプロジェクトに含まれます。 このファイルは、既定で Visual Studio エディタで開きます。
 
@@ -37,10 +37,10 @@ ms.locfileid: "92099233"
 
 6. プロジェクトではいくつかのプロパティも作成されています。コマンドライン引数をこれらの入力パラメーターに自動的に渡すことで、アプリのデバッグが簡単になります。 プロジェクトを **右クリック** してから **[プロパティ]** を選択します。
 
-    ![Properties](media/create-project/project-properties.png)
+    ![Visual Studio ソリューション エクスプローラーのスクリーンショット。TensorFlowApplication1 のコンテキスト メニューが表示されています。[プロパティ] が選択されています。](media/create-project/project-properties.png)
 
 7. **[デバッグ]** タブをクリックして、自動的に追加された [スクリプト引数] を表示します。 必要に応じて、それらを入力データが配置される場所や出力の格納先に変更することができます。
 
-    ![Properties](media/create-project//project-properties_1.png)
+    ![TensorFlowApplication1 の [プロパティ] 設定にある [デバッグ] タブのスクリーンショット。プロジェクトの [スクリプト引数] が表示されています。](media/create-project//project-properties_1.png)
 
 8. Ctrl + F5 キーを押すか、メニューを **[デバッグ]、[デバッグなしで開始]** の順に選択して、プログラムを実行します。 結果は、コンソール ウィンドウに表示されます。

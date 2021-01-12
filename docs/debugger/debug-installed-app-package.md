@@ -1,6 +1,7 @@
 ---
 title: インストールされた UWP アプリ パッケージをデバッグする | Microsoft Docs
-ms.custom: ''
+description: Windows 10 コンピューター、Xbox、モノのインターネット (IoT) デバイスの Visual Studio で、インストールされているユニバーサル Windows プラットフォーム (UWP) アプリ パッケージをデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04ed043dbcb09c862fcdfc5f34d77fd938bd24dc
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350733"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728925"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio でインストールされた UWP アプリ パッケージをデバッグする
 

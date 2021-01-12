@@ -1,17 +1,17 @@
 ---
 title: Visual Studio コンテナー ツールのビルド プロパティ
 author: ghogen
-description: コンテナー ツールのビルド プロセスの概要
+description: Visual Studio によるコンテナー プロジェクトの構築および実行方法をカスタマイズする目的でコンテナー ツールのビルド プロパティを編集する方法について説明します。
 ms.author: ghogen
 ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e8675bd0ea12b30ce678ce454bcedee457ddacd
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283204"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846741"
 ---
 # <a name="container-tools-build-properties"></a>コンテナー ツールのビルド プロパティ
 
@@ -39,7 +39,7 @@ ms.locfileid: "85283204"
 | DockerDebuggeeWorkingDirectory | デバッグ時に、デバッガーは、このパスを作業ディレクトリとして使用するよう指示されます。 | C:\app (Windows) または /app (Linux) |1.7.8 以降|
 | DockerDefaultTargetOS | Docker イメージをビルドするときに使用される、既定のターゲット オペレーティング システム。 | Visual Studio によって設定されます。 |1.0.1985401 以降|
 | DockerImageLabels | Docker イメージに適用される、既定のラベル セット。 | com.microsoft.created-by=visual-studio;com.microsoft.visual-studio.project-name=$(MSBuildProjectName) |1.5.4 以降|
-| DockerFastModeProjectMountDirectory|**高速モード**では、このプロパティは、実行中のコンテナーにプロジェクト出力ディレクトリがボリュームマウントされる場所を制御します。|C:\app (Windows) または /app (Linux)|1.9.2 以降|
+| DockerFastModeProjectMountDirectory|**高速モード** では、このプロパティは、実行中のコンテナーにプロジェクト出力ディレクトリがボリュームマウントされる場所を制御します。|C:\app (Windows) または /app (Linux)|1.9.2 以降|
 | DockerfileBuildArguments | [Docker ビルド](https://docs.docker.com/engine/reference/commandline/build/) コマンドに渡される追加の引数。 | 該当なし。 |1.0.1872750 以降|
 | DockerfileContext | Dockerfile の相対パスとして Docker イメージをビルドするときに使用される既定のコンテキスト。 | Visual Studio によって設定されます。 |1.0.1872750 以降|
 | DockerfileFastModeStage | デバッグ モードでイメージをビルドするときに使用される、Dockerfile ステージ (つまり、ターゲット)。 | Dockerfile (ベース) で発見された最初のステージ |

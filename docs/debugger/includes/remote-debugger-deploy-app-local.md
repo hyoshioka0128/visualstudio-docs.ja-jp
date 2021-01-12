@@ -8,20 +8,20 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89327071"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97762612"
 ---
-1. **ソリューション エクスプローラー**で、プロジェクト ノードを右クリックし、 **[発行]** (Web フォームの場合は **[Web アプリの発行]** ) を選択します。
+1. **ソリューション エクスプローラー** で、プロジェクト ノードを右クリックし、 **[発行]** (Web フォームの場合は **[Web アプリの発行]** ) を選択します。
 
     以前に発行プロファイルを構成してある場合、 **[発行]** ウィンドウが表示されます。 **[新しいプロファイル]** をクリックします。
 
 1. **[発行]** ダイアログ ボックスで **[フォルダー]** を選択し、 **[参照]** をクリックして、新しいフォルダー **C:\Publish** を作成します。
 
-    ![RemoteDBG_Publish_Local](../media/remotedbg_publish_local.png "RemoteDBG_Publish_Local")
+    ![Visual Studio の [発行先を選択] ダイアログのスクリーンショット。発行先としてフォルダー `bin\Release\Publish' が選択されています。](../media/remotedbg_publish_local.png)
 
     Web フォーム アプリの場合は [発行] ダイアログ ボックスで **[カスタム]** を選択し、プロファイル名を入力して **[OK]** を選択します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "89327071"
 
 1. **[発行]** をクリックします。
 
-    ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
+    ![[発行] ダイアログボックスの [設定] タブのスクリーンショット。 構成が [デバッグ] に設定され、[発行] ボタンが選択されています。](../media/remotedbg_publish_debug_config.png)
 
     アプリケーションによって、プロジェクトの **[デバッグ]** 構成がローカル フォルダーに発行されます。 出力ウィンドウに進行状況が表示されます。
 

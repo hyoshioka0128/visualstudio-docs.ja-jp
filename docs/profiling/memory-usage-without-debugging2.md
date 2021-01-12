@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス プロファイラーでメモリ使用量を分析する
+description: アプリのメモリ使用量を監視する目的で、Visual Studio パフォーマンス プロファイラーでデバッガーなしでメモリ使用量ツールを使用する方法について説明します。
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e1bd3d38e6303f11ec5da0e88816d56dd43d98
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: 65ac088d52b4e7a288965bb75e1bc6a00da40f7b
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918228"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815816"
 ---
 # <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>パフォーマンス プロファイラーでメモリ使用量をデバッグなしで分析する
 
@@ -44,9 +45,9 @@ ms.locfileid: "92918228"
 
 ### <a name="monitor-memory-use"></a>メモリ使用量の監視
 
-診断セッションを開始すると、アプリが起動し、 **診断ツール** ウィンドウにアプリのメモリ使用量のタイムライン グラフが表示されます。
+診断セッションを開始すると、アプリが起動し、**診断ツール** ウィンドウにアプリのメモリ使用量のタイムライン グラフが表示されます。
 
-![メモリ使用量の概要ページ](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Visual Studio パフォーマンス プロファイラーの [診断ツール] ウィンドウのスクリーンショット。アプリのメモリ使用量のタイムライン グラフが表示されています。](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 タイムライン グラフには、アプリの実行中のメモリの変動が示されます。 グラフの急な上下動は、通常、何らかのコードでデータが収集または作成され、処理が終わったときにデータが破棄されていることを示します。 大きな上下動は、最適化できる可能性がある領域を示しています。 より重大な問題は、使われたまま返されないメモリが増えることです。これは、メモリが効率的に使われていないか、メモリ リークが起きていることを示す場合があるためです。
 
@@ -64,9 +65,9 @@ ms.locfileid: "92918228"
 
 ## <a name="memory-usage-reports"></a>メモリ使用量レポート
 
-データ収集を停止すると、 **メモリ使用量** ツールでアプリが停止され、 **メモリ使用量** の概要ページが表示されます。
+データ収集を停止すると、**メモリ使用量** ツールでアプリが停止され、**メモリ使用量** の概要ページが表示されます。
 
-![メモリ使用量の概要ページ](../profiling/media/memuse__reportoverview1.png "メモリ使用量の概要ページ")
+![Visual Studio パフォーマンス プロファイラーのメモリ使用量ツールの概要ページのスクリーンショット。メモリ使用量グラフと 2 つのスナップショット ウィンドウが表示されています。](../profiling/media/memuse__reportoverview1.png "メモリ使用量の概要ページ")
 
 ### <a name="memory-usage-snapshots"></a><a name="BKMK_Memory_Usage_snapshot_views"></a> メモリ使用量のスナップショット
 
@@ -93,7 +94,7 @@ ms.locfileid: "92918228"
 
 **[オブジェクトの種類]** が青色の場合は、それを選択し、別のウィンドウで、ソース コードのオブジェクトに移動することができます。
 
-識別できない種類や、理解できないコードに関連する種類は、.NET、オペレーティング システム、あるいはコンパイラのオブジェクトと考えられます。 これらのオブジェクトは、オブジェクトの所有権の継承に関連する場合、 **メモリ使用量** ツールに表示されます。
+識別できない種類や、理解できないコードに関連する種類は、.NET、オペレーティング システム、あるいはコンパイラのオブジェクトと考えられます。 これらのオブジェクトは、オブジェクトの所有権の継承に関連する場合、**メモリ使用量** ツールに表示されます。
 
 スナップショット レポートでは:
 

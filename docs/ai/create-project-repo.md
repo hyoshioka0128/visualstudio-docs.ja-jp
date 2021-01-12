@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 58e6bdae7ef85545d0790782f5ad825b8f27659c
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099246"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726619"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio で Python コードのリポジトリを複製する
 
@@ -40,7 +40,7 @@ ms.locfileid: "92099246"
 
     ![[チーム エクスプローラー] ウィンドウ、複製からの新しいプロジェクトの作成](media/create-project-repo/team-explorer-new-project.png)
 
-6. 表示された **[新しいプロジェクト]** ダイアログで、 **[既存の Python コードから]** を選択し、プロジェクトの名前を指定して、 **[場所]** をリポジトリと同じフォルダーに設定し、 **[OK]** を選択します。 表示されたウィザードで、 **[完了]** をクリックします。
+6. 表示された **[新しいプロジェクト]** ダイアログで、 **[既存の Python コードから]** を選択し、プロジェクトの名前を指定して、 **[場所]** をリポジトリと同じフォルダーに設定し、 **[OK]** を選択します。 表示されたウィザードで、**[完了]** をクリックします。
 
 7. メニューから **[表示]、[ソリューション エクスプローラー]** を選択します。
 
@@ -55,10 +55,10 @@ ms.locfileid: "92099246"
    > [!NOTE]
    > Anaconda を使用しているときに、numpy の欠落に関するエラーが発生した場合は、[Python 環境を Anaconda を使用するように変更する](../python/selecting-a-python-environment-for-a-project.md)必要があります。
 
-11. TensorBoard で進行状況を視覚化することができます。 プロジェクトを右クリックし、 **[Run TensorBoard]\(TensorBoard の実行\)** をクリックして、TensorBoard の出力ログのディレクトリを選択します。
+11. TensorBoard で進行状況を視覚化することができます。 プロジェクトを右クリックし、**[Run TensorBoard]\(TensorBoard の実行\)** をクリックして、TensorBoard の出力ログのディレクトリを選択します。
 
-   ![tensorboard を実行する](media/create-project-repo/run-tensorboard.png)
+   ![Visual Studio ソリューション エクスプローラーのスクリーンショット。MNIST プロジェクトが選択されており、コンテキスト メニューで [Run TensorBoard]\(TensorBoard の実行\) オプションが選択されています。](media/create-project-repo/run-tensorboard.png)
 
 12. 時間の経過に伴いエラーが減少していることに注目してください。これは品質が改善していることを意味します。
 
-   ![tensorboard を実行する](media/create-project-repo/tensorboard.png)
+   ![メイン TensorBoard ウィンドウのスクリーンショット。TensorBoard ログからデータを視覚化する 4 つのグラフを示しています。](media/create-project-repo/tensorboard.png)

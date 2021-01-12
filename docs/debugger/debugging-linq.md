@@ -1,5 +1,7 @@
 ---
 title: LINQ のデバッグ | Microsoft Docs
+description: Visual Studio で統合言語クエリ (LINQ) をデバッグします。 LINQ の結果を表示します。 LINQ コードにステップインするときの動作の違いについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146519b33be19da1103aed958e42ec5ffaee8bd0
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509771"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728370"
 ---
 # <a name="debugging-linq"></a>LINQ のデバッグ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、統合言語クエリ (LINQ) コードのデバッグがサポートされていますが、いくつかの制約事項があります。 ステップ実行、ブレークポイントの設定、デバッガー ウィンドウでの結果の表示など、ほとんどのデバッグ機能を、LINQ ステートメントと組み合わせて使用することができます。 このトピックでは、LINQ のデバッグに伴う主要な制限事項について説明します。

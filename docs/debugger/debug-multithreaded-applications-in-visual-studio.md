@@ -1,6 +1,7 @@
 ---
 title: マルチスレッド アプリケーションをデバッグする | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio でマルチスレッド アプリケーションをデバッグします。 マルチスレッド アプリをデバッグするためのツールとその他の関連記事を紹介します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b99f7b44168a451e8e927e5e0d2ca1a7f8d0bf93
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 4fed6580219964ab71f5a5010060c1af193375df
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600334"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727139"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Visual Studio でマルチスレッド アプリケーションをデバッグする
 スレッドは、オペレーティング システムでプロセッサ時間を許可する命令のシーケンスです。 オペレーティング システムで実行されているプロセスは、いずれも 1 つ以上のスレッドで構成されます。 複数のスレッドで構成されるプロセスをマルチスレッド プロセスといいます。
@@ -42,7 +43,7 @@ Visual Studio には、マルチスレッド アプリのデバッグに使用�
 
 - スレッドの場合、デバッグのための主なツールは、 **[スレッド]** ウィンドウ、ソース ウィンドウのスレッド マーカー、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、 **[デバッグの場所]** ツール バーです。 **[スレッド]** ウィンドウと **[デバッグの場所]** ツール バーの詳細については、「[チュートリアル: [スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md) **[並列スタック]** ウィンドウと **[並列ウォッチ]** ウィンドウの使用方法については、「[マルチ スレッド アプリケーションのデバッグの開始](../debugger/get-started-debugging-multithreaded-apps.md)」を参照してください。 どちらのトピックでも、スレッド マーカーを使用する方法が示されています。
 
-- [タスク並列ライブラリ (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) または[同時実行ランタイム](/cpp/parallel/concrt/concurrency-runtime/)を使用するコードの場合、デバッグのための主要なツールは、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、および JavaScript もサポートする **[タスク]** ウィンドウです。 作業を始めるときは、「[チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)」および「[チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)」を参照してください。
+- [タスク並列ライブラリ (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) または [同時実行ランタイム](/cpp/parallel/concrt/concurrency-runtime/)を使用するコードの場合、デバッグのための主要なツールは、 **[並列スタック]** ウィンドウ、 **[並列ウォッチ]** ウィンドウ、および JavaScript もサポートする **[タスク]** ウィンドウです。 作業を始めるときは、「[チュートリアル: 並行アプリケーションのデバッグ](../debugger/walkthrough-debugging-a-parallel-application.md)」および「[チュートリアル: C++ AMP アプリケーションのデバッグ](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)」を参照してください。
 
 - GPU 上のスレッドのデバッグの場合の主要なツールは、 **[GPU スレッド]** ウィンドウです。 「[方法:GPU スレッド ウィンドウを使用する](../debugger/how-to-use-the-gpu-threads-window.md)」を参照してください。
 

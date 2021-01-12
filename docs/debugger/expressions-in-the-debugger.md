@@ -1,6 +1,6 @@
 ---
 title: デバッガーでの式 | Microsoft Docs
-description: エディット コンティニュは、Visual C# プロジェクトで使用できます。 どのような編集がサポートされているかについて、および編集の適用の可否とタイミングを制御する方法について説明します。
+description: Visual Studio デバッガーの式エバリュエーターでサポートされていない言語式について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2020
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d04ce836316024eb4aef9f1b4a9955d98dbba8
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 5b05af635ba7774cdb31291ad7c2b7eb52686bcf
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862868"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846722"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの式
 Visual Studio デバッガーには式エバリュエーターという機能があり、 **[クイック ウォッチ]** ダイアログ ボックス、 **[ウォッチ]** ウィンドウ、または **[イミディエイト]** ウィンドウで式を入力するときに役立ちます。 式エバリュエーターは **[ブレークポイント]** ウィンドウなど、他のデバッガー機能でも使用できます。

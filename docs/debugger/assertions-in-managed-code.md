@@ -1,5 +1,7 @@
 ---
 title: マネージド コードのアサーション | Microsoft Docs
+description: Visual Studio での、C#、Visual Basic、F# マネージド コード用のデバッグ ツールとしてのアサーションについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d546beb45be7f1473992ab9c2afc5f02ced1a1b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745777"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729094"
 ---
 # <a name="assertions-in-managed-code"></a>マネージド コードのアサーション
 アサーション、つまり `Assert` ステートメントは、条件をテストします。この条件は、`Assert` ステートメントへの引数として指定します。 条件が true と評価された場合、アクションは発生しません。 条件が false と評価された場合、アサーションは失敗です。 また、デバッグ ビルドを実行している場合、プログラムは中断モードになります。
@@ -66,8 +68,10 @@ End Function
 
 ```csharp
 int IntegerDivide ( int dividend , int divisor )
-    { Debug.Assert ( divisor != 0 );
-        return ( dividend / divisor ); }
+{
+    Debug.Assert ( divisor != 0 );
+    return ( dividend / divisor );
+}
 ```
 
  デバッガーでこのコードを実行すると、アサーション ステートメントが評価されますが、リリース バージョンでは比較は行われません。このため、追加のオーバーヘッドは発生しません。

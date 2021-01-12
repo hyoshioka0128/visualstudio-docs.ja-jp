@@ -1,6 +1,6 @@
 ---
 title: NuGet を使用した TypeScript コードのコンパイルとビルド
-description: Visual Studio で TypeScript をコンパイルしてビルドする方法について説明します。
+description: NuGet パッケージを使用し、Visual Studio プロジェクトに Typescript サポートを追加する方法について説明します。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 16ff335fdf8ca76889562cfd94807ec1adc516d2
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91927927"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846821"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>TypeScript コードのコンパイル (ASP.NET Core)
 
@@ -77,7 +77,7 @@ Visual Studio がインストールされている場合は、バンドルされ
 
 ### <a name="build-the-application"></a>アプリケーションのビルド
 
-1. TypeScript ( *.ts* ) ファイルまたは TypeScript JSX ( *.tsx* ) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
+1. TypeScript ( *.ts*) ファイルまたは TypeScript JSX ( *.tsx*) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
 
    ```typescript
    let message: string = 'Hello World';
@@ -90,7 +90,7 @@ Visual Studio がインストールされている場合は、バンドルされ
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-   ソース マップを生成した場合は、 *outDir* オプションで指定したフォルダーを開くと、生成された *.js ファイルと生成された *js.map ファイルが見つかります。
+   ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された *.js ファイルと生成された *js.map ファイルが見つかります。
 
    ソース マップ ファイルはデバッグで必要となります。
 
@@ -123,11 +123,11 @@ Visual Studio で、想定したバージョンとは異なるバージョンの
 
     1. *Microsoft.TypeScript.MSBuild.targets*
 
-        このファイルによって、 *tools* フォルダーから *Microsoft.TypeScript.targets* をインポートする前に、実行時プラットフォームを指定する変数 ( *TypeScript.Tasks.dll* へのパスなど) を設定できます。
+        このファイルによって、*tools* フォルダーから *Microsoft.TypeScript.targets* をインポートする前に、実行時プラットフォームを指定する変数 (*TypeScript.Tasks.dll* へのパスなど) を設定できます。
 
     2. *Microsoft.TypeScript.MSBuild.props*
 
-        このファイルによって、 *tools* フォルダーから *Microsoft.TypeScript.Default.props* をインポートし、NuGet を通じてビルドが開始されたことを示すプロパティを設定できます。
+        このファイルによって、*tools* フォルダーから *Microsoft.TypeScript.Default.props* をインポートし、NuGet を通じてビルドが開始されたことを示すプロパティを設定できます。
 
 - *tools* フォルダー
 

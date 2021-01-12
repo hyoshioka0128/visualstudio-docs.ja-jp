@@ -1,6 +1,6 @@
 ---
 title: npm を使用した TypeScript コードのコンパイルとビルド
-description: Visual Studio で TypeScript をコンパイルしてビルドする方法について説明します。
+description: Node Package Manager (npm) を使用し、Visual Studio プロジェクトに Typescript サポートを追加する方法について説明します。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: add67535c0c3c9e4a48b95c2b9d5fe0717511797
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414374"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846800"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript コードのコンパイル (Node.js)
 
@@ -35,7 +35,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
    ソリューション エクスプローラー (右側のペイン) から、プロジェクトのルートにある *package.json* を開きます。 一覧表示されるパッケージは、ソリューション エクスプローラーの npm ノードの下にあるパッケージと対応しています。 詳細については、[npm パッケージの管理](../javascript/npm-package-management.md)に関するページを参照してください。
 
-   Node.js プロジェクトの場合は、コマンド ラインまたは IDE を使用して TypeScript npm パッケージをインストールできます。 IDE を使用してインストールするには、ソリューション エクスプローラーで npm ノードを右クリックして **[Install New npm package]\(新しい npm パッケージをインストールする\)** を選択し、「 **TypeScript** 」を検索して、パッケージをインストールします。
+   Node.js プロジェクトの場合は、コマンド ラインまたは IDE を使用して TypeScript npm パッケージをインストールできます。 IDE を使用してインストールするには、ソリューション エクスプローラーで npm ノードを右クリックして **[Install New npm package]\(新しい npm パッケージをインストールする\)** を選択し、「**TypeScript**」を検索して、パッケージをインストールします。
 
    **[出力]** ウィンドウの **[npm]** オプションをオンにして、パッケージのインストールの進行状況を確認します。 インストールされたパッケージは、ソリューション エクスプローラーの **npm** ノードの下に表示されます。
 
@@ -72,7 +72,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
 ## <a name="build-the-application"></a>アプリケーションのビルド
 
-1. TypeScript ( *.ts* ) ファイルまたは TypeScript JSX ( *.tsx* ) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
+1. TypeScript ( *.ts*) ファイルまたは TypeScript JSX ( *.tsx*) ファイルをプロジェクトに追加してから、TypeScript コードを追加します。 TypeScript のシンプルな例として、次をお使いください。
 
    ```typescript
    let message: string = 'Hello World';
@@ -88,7 +88,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
    },
    ```
 
-   webpack などのサード パーティ製ツールを使用してビルドする必要がある場合は、 *package.json* ファイルにコマンド ライン ビルド スクリプトを追加できます。
+   webpack などのサード パーティ製ツールを使用してビルドする必要がある場合は、*package.json* ファイルにコマンド ライン ビルド スクリプトを追加できます。
 
    ```json
    "scripts": {
@@ -109,7 +109,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-   ソース マップを生成した場合は、 *outDir* オプションで指定したフォルダーを開くと、生成された \*.js ファイルと生成された \*js.map ファイルが見つかります。
+   ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された \*.js ファイルと生成された \*js.map ファイルが見つかります。
 
    ソース マップ ファイルは[デバッグ](../javascript/debug-nodejs.md)で必要となります。
 

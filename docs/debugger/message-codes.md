@@ -1,5 +1,7 @@
 ---
 title: メッセージ コード | Microsoft Docs
+description: メッセージ ビューの各メッセージ行に表示されるメッセージ コードの意味について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4b836a5d4c1faad6b4c0375e2ec51d759816889
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846274"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903611"
 ---
 # <a name="message-codes"></a>メッセージ コード
 [メッセージ ビュー](../debugger/messages-view.md) に表示される各メッセージ行には、'P'、'S'、's'、または 'R' コードが含まれています。 これらのコードには、次の意味があります。

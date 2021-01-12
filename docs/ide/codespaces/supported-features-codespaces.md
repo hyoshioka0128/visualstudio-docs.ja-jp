@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f253ba9b7e46f809bc107aa2b3e26f635d778770
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928555"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696544"
 ---
 # <a name="supported-visual-studio-features-preview"></a>サポートされている Visual Studio の機能 (プレビュー)
 
@@ -24,10 +24,10 @@ Visual Studio は、codespace に接続するときに豊富な開発エクス�
 
 現在の GitHub Codespaces の[パブリック ベータ版](https://github.com/features/codespaces)では、一部の Visual Studio 機能が完全にサポートされていないか、そもそも表示されない可能性があります。 以下のセクションでは、Visual Studio と GitHub Codespaces ベータ版で何ができるかと、今後見込まれる内容について説明します。 
 
-ここには**すべての内容を記載しません**が、codespace に接続されている場合の、Visual Studio の全般的な機能について説明しています。
+ここには **すべての内容を記載しません** が、codespace に接続されている場合の、Visual Studio の全般的な機能について説明しています。
 
 > [!NOTE]
-> codespace を Visual Studio と共に使用しているときの機能で不足しているものがある場合は、 https://developercommunity.visualstudio.com/ からイシューを作成してお知らせください。 これにより、特に必要な機能の優先度付けができるようになります。
+> codespace を Visual Studio と共に使用しているときの機能で不足しているものがある場合は、[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) からイシューを作成してお知らせください。 これにより、特に必要な機能の優先度付けができるようになります。
 
 > [!NOTE]
 > 次に示す機能は Visual Studio 用であり、他の 2 つの GitHub Codespaces クライアント (Visual Studio Code とブラウザー内エディター) には対応していません。
@@ -108,8 +108,8 @@ IntelliSense、コードのナビゲーション、診断、提案などのス�
 
 codespace に接続されている Visual Studio を使用する場合、ローカルで作業する場合と同じユーザー補助機能を利用できます。
 
-* ソース管理 - 新しい [Git ウィンドウ](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)では、Git が完全にサポートされています。
-* アクセシビリティ - デバッグ対象のアプリの appcasting にアクセスできない支援技術の既知のイシューが 1 つあります。 この制限に加えて、ローカルの Visual Studio エクスペリエンスにまだ存在しない他の互換性のイシューがあるとは考えていません。 バグを見つけた場合は、[Developer Community](https://developercommunity.visualstudio.com/) にイシューを提出してお知らせください。
+* ソース管理 - 新しい[統合 Git 体験](../git-with-visual-studio.md)では、Git が完全にサポートされています。
+* アクセシビリティ - デバッグ対象のアプリの appcasting にアクセスできない支援技術の既知のイシューが 1 つあります。 この制限に加えて、ローカルの Visual Studio エクスペリエンスにまだ存在しない他の互換性のイシューがあるとは考えていません。 バグを見つけた場合は、[Developer Community](https://aka.ms/feedback/report?space=8) にイシューを提出してお知らせください。
 * 発行 - GitHub Actions では [Azure に発行する] がサポートされています。
 * 接続済みサービス - App Insights、KeyVault、Storage、SQL、Redis、Cosmos、OpenAPI、gRPC は部分的にサポートされています。
 * テスト エクスプローラー* - ほとんどがサポートされています。

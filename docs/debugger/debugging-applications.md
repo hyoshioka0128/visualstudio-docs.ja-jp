@@ -1,5 +1,7 @@
 ---
 title: アプリケーションのデバッグ | Microsoft Docs
+description: UWP アプリ、マネージド コード、ネイティブ コード、GPU コード、Web アプリなど、さまざまな種類のアプリケーションに対して Visual Studio のデバッグを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1849d6918c1fd5607c97b82c17e385d3c6521fc4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535162"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727009"
 ---
 # <a name="debugging-applications"></a>アプリケーションのデバッグ
 次のセクションでは、特定の種類のアプリケーションのデバッグを処理します。 さまざまなアプリケーションの種類とさまざまな言語には、異なる設定と手法が必要であり、デバッグする必要がある問題もさまざまに発生します。

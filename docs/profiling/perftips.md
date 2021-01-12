@@ -1,5 +1,6 @@
 ---
 title: PerfTips | Microsoft Docs
+description: Visual Studio デバッガーの PerfTips と統合診断ツールを使用し、デバッグしながらアプリのパフォーマンスを監視し、分析する方法について説明します。
 ms.date: 9/11/2020
 ms.topic: how-to
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f260307b677046be54e6d80b0d8fe122b13292e4
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 481113e9f5e2f5b66aec5f4dad29f581462165ca
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075471"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815829"
 ---
 # <a name="perftips"></a>パフォーマンスのヒント
 
@@ -33,7 +34,7 @@ Visual Studio デバッガーの *PerfTips* 、および統合デバッガー **
 
 次の図では、 **[診断ツール]** ウィンドウを示します。
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Visual Studio デバッガーの [診断ツール] ウィンドウのスクリーンショット。メモリと CPU 使用量のイベント タイムラインとグラフが表示されています。](../profiling/media/diagnostictools-update1.png)
 
 - **[Break イベント]** タイムラインは、デバッグ セッションでヒットしたブレークポイントにマークを付けます。 イベントをクリックして、 **[デバッガー]** の詳細リストで選択します。
 

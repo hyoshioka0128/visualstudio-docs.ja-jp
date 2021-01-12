@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f5eff2257988a4210e7f4cd8a8a37c66c57c185d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328692"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756644"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>初めて Visual Studio のテスト ツールを検討する
 
@@ -51,11 +51,17 @@ Visual Studio は拡張可能であり、NUnit や xUnit.net などのサード 
 
 [Live Unit Testing](../test/live-unit-testing.md) は、バックグラウンドで自動的に単体テストを実行し、Visual Studio のコード エディターにコード カバレッジとテスト結果をグラフィカルに表示します。
 
+> [!NOTE]
+> ライブ単体テストは Enterprise Edition でのみ使用でき、.NET コードでのみサポートされています。
+
 ## <a name="intellitest"></a>IntelliTest
 
 IntelliTest は、マネージド コードの単体テストとテスト データを自動生成します。 IntelliTest によって、対象範囲が増え、新規または既存のコードの単体テストを作成および保守する手間を大幅に削減できます。
 
 ![実行中の IntelliTest](media/devtest-intellitest.png)
+
+> [!NOTE]
+> IntelliTest は Enterprise Edition でのみ使用できます。 これは、.NET Framework を対象とする C# コードに対してサポートされています。 .NET Core と .NET Standard は現在サポートされていません。
 
 * [IntelliTest でのコードの単体テストの生成](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest – 1 回のテストですべてのルールを把握](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
@@ -64,6 +70,9 @@ IntelliTest は、マネージド コードの単体テストとテスト デー
 ## <a name="code-coverage"></a>コード カバレッジ
 
 [コード カバレッジ](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)は、プロジェクトのコードの中で、単体テストなどのコード化されたテストによって実際にテストされる割合を判断します。 バグから効果的に保護するには、コードの大部分を "カバー" するようにテストを実行する必要があります。
+
+> [!NOTE]
+> コード カバレッジは Enterprise Edition でのみ使用できます。
 
 コード カバレッジ分析は、マネージド コードにもアンマネージド (ネイティブ) コードにも適用できます。
 
@@ -77,9 +86,15 @@ IntelliTest は、マネージド コードの単体テストとテスト デー
 
 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) では、アプリケーションの別の部分をスタブまたは shim で置き換えることにより、テストするコードを分離できます。
 
+> [!NOTE]
+> Microsoft Fakes は Enterprise Edition でのみ使用でき、.NET コードでのみサポートされています。
+
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>コード化された UI と Selenium によるユーザー インターフェイスのテスト
 
 コード化された UI テストでは、アプリケーションのユーザー インターフェイスの機能と動作を検証するために完全に自動化されたテストを作成できます。 XAML ベースの UWP アプリ、ブラウザー アプリ、および SharePoint アプリなど、さまざまなテクノロジをカバーする UI テストを自動化できます。
+
+> [!NOTE]
+> コード化された UI は非推奨の機能です。
 
 コード化された UI テストまたは汎用ブラウザー ベースの UI テストと Selenium の最適な組み合わせを選択したかどうかに関係なく、Visual Studio では必要なツールがすべて提供されます。
 
@@ -89,10 +104,6 @@ IntelliTest は、マネージド コードの単体テストとテスト デー
 * [コード化された UI テストの作成、編集、および保守の概要](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [コード化された UI テストを使用して UWP アプリをテストする](test-uwp-app-with-coded-ui-test.md)
 * [Visual Studio Enterprise でのコード化された UI テストの概要 (ラボ)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
-
-## <a name="load-testing"></a>ロード テスト
-
-[ロード テスト](../test/quickstart-create-a-load-test-project.md)では、単体テストと Web パフォーマンス テストを実行することでサーバー アプリケーションの負荷をシミュレーションします。
 
 ## <a name="related-scenarios"></a>関連するシナリオ
 

@@ -1,5 +1,6 @@
 ---
 title: IntelliTrace でイベントを表示する | Microsoft Docs
+description: Visual Studio Enterprise の IntelliTrace を使用して、特定のイベント、イベントのカテゴリ、個々の関数呼び出しに関するデータを収集する方法を学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fef839b5473881450581db77a885da158e67bbc
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62929403"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815751"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Visual Studio Enterprise の IntelliTrace でイベントを表示する (C#、Visual Basic)
 
@@ -60,17 +61,17 @@ IntelliTrace イベントのみでデバッグを実行することができま�
 
 2. ブレークポイントで実行が停止します。 **[診断ツール]** ウィンドウが表示されない場合は、 **[デバッグ] > [Windows] > [IntelliTrace イベント]** の順にクリックします。
 
-    **[診断ツール]** ウィンドウで、 **[イベント]** タブを見つけます ( **[イベント]** 、 **[メモリ使用量]** 、および **[CPU 使用率]** の 3 つのタブが表示されます)。 **[イベント]** タブは、デバッガーが実行を中断する直前のイベントで終わる、イベントの時系列の一覧を示しています。 **Access WordSearchInputs.txt**という名前のイベントが表示されます。
+    **[診断ツール]** ウィンドウで、 **[イベント]** タブを見つけます ( **[イベント]** 、 **[メモリ使用量]** 、および **[CPU 使用率]** の 3 つのタブが表示されます)。 **[イベント]** タブは、デバッガーが実行を中断する直前のイベントで終わる、イベントの時系列の一覧を示しています。 **Access WordSearchInputs.txt** という名前のイベントが表示されます。
 
     次のスクリーン ショットは Visual Studio 2015 Update 1 のものです。
 
-    ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")
+    ![Visual Studio のコード ウィンドウのスクリーンショット。 ブレークポイントで実行が停止し、[診断ツール] ウィンドウの [イベント] タブにイベントが一覧表示されています。](../debugger/media/intellitrace-update1.png)
 
 3. イベント選択して詳細を展開します。
 
     次のスクリーン ショットは Visual Studio 2015 Update 1 のものです。
 
-    ![IntelliTraceUpdate1&#45;SingleEvent](../debugger/media/intellitraceupdate1-singleevent.png "IntelliTraceUpdate1-SingleEvent")
+    ![Visual Studio の [診断ツール] ウィンドウの [イベント] タブのスクリーンショット。 イベントが選択され、展開されて詳細が表示されています。](../debugger/media/intellitraceupdate1-singleevent.png)
 
     ファイルを開くには、パス名のリンクを選択します。 完全なパス名が使用できない場合、 **[ファイルを開く]** ダイアログ ボックスが表示されます。
 
@@ -78,7 +79,7 @@ IntelliTrace イベントのみでデバッグを実行することができま�
 
     次のスクリーン ショットは Visual Studio 2015 Update 1 のものです。
 
-    ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")
+    ![Visual Studio のコード ウィンドウのスクリーンショット。 ブレークポイントで実行が停止し、イベントが選択されて、対応するコード行が強調表示されています。](../debugger/media/historicaldebugging-update1.png)
 
 4. バグが見つからない場合は、バグが発生するまでの間に発生した他のイベントを確認します。 また、IntelliTrace で呼び出し情報を記録することで、関数呼び出しをステップ実行することもできます。
 

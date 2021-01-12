@@ -10,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bcc1932bad5b34d9695257feb163654f6b99514
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371626"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726645"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Visual Studio で Azure Machine Learning ギャラリーから AI プロジェクトを作成する
 
@@ -26,7 +26,7 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 > [!NOTE]
 > Azure Machine Learning ワークベンチをインストールする必要があります。 
 
-1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、 **[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー**を開きます
+1. Visual Studio を起動します。 **[AI Tools]\(AI Tools\)** メニューを開き、 **[Select Cluster]\(クラスターの選択\)** を選択して、**サーバー エクスプローラー** を開きます
 
     ![クラスターの選択](media/create-project-gallery/select-cluster.png)
 
@@ -52,12 +52,12 @@ Azure Machine Learning は Visual Studio Tools for AI と統合されていま�
 
 5. Visual Studio によって、プロジェクト ファイル (ディスク上の `.pyproj` ファイル) と、サンプルで定義されている他のファイルが作成されます。 "MNIST" テンプレートでは、プロジェクトに複数のファイルが含まれます。
 
-    ![mnist](media/create-project-gallery/azml-mnist.png)
+    ![Visual Studio ソリューション エクスプローラーのスクリーンショット。TensorFlowMNIST プロジェクトのファイルが表示されています。 tf_mnist.py のコードがメイン ウィンドウに表示されています。](media/create-project-gallery/azml-mnist.png)
 
 6. Azure Machine Learning にジョブを送信します。
 
-    ![mnist](media/create-project-gallery/submit-azml.png)
+    ![Visual Studio ソリューション エクスプローラーのスクリーンショット。TensorFlowMNIST プロジェクトのコンテキスト メニューが表示されています。[ジョブの送信...] が選択されています。](media/create-project-gallery/submit-azml.png)
 
 7. Docker コンテナーまたはローカル コンピューターで実行します
 
-    ![mnist](media/create-project-gallery/azml-local.png)
+    ![[ジョブの送信] ダイアログのスクリーンショット。[クラスターの使用] が "azureml:/local" に、[起動スクリプト] が "tf_mnist.py" に設定されています。](media/create-project-gallery/azml-local.png)

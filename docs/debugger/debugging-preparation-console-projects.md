@@ -1,6 +1,7 @@
 ---
 title: コンソール プロジェクトのデバッグを準備する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio でコンソール プロジェクト (C#、C++、Visual Basic、F#) をデバッグするための準備に関する情報をお届けします。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9de54feeb77f1bff31fc0b41e385e5a10393aba2
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916280"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728266"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備:コンソール プロジェクト (C#、C++、Visual Basic、F#)
 
@@ -35,7 +36,7 @@ ms.locfileid: "75916280"
 
 - C++ コンソール アプリケーション (Win32)
 
-  コンソール アプリケーションは、 **[コンソール]** ウィンドウを使用して、入力を受け付けたり出力メッセージを表示したりします。 **[コンソール]** ウィンドウに書き込むには、アプリケーションで Debug オブジェクトではなく **Console** オブジェクトを使用する必要があります。 ただし、**Visual Studio の出力**ウィンドウに書き込むには、通常どおりに Debug オブジェクトを使用します。 アプリケーションの書き込み先を理解し、間違った場所でメッセージを探すことのないようにしてください。 詳細については、「[Console クラス](/dotnet/api/system.console)」、「[Debug クラス](/dotnet/api/system.diagnostics.debug)」、「[[出力] ウィンドウ](../ide/reference/output-window.md)」を参照してください。
+  コンソール アプリケーションは、 **[コンソール]** ウィンドウを使用して、入力を受け付けたり出力メッセージを表示したりします。 **[コンソール]** ウィンドウに書き込むには、アプリケーションで Debug オブジェクトではなく **Console** オブジェクトを使用する必要があります。 ただし、**Visual Studio の出力** ウィンドウに書き込むには、通常どおりに Debug オブジェクトを使用します。 アプリケーションの書き込み先を理解し、間違った場所でメッセージを探すことのないようにしてください。 詳細については、「[Console クラス](/dotnet/api/system.console)」、「[Debug クラス](/dotnet/api/system.diagnostics.debug)」、「[[出力] ウィンドウ](../ide/reference/output-window.md)」を参照してください。
 
 ## <a name="set-command-line-arguments"></a>コマンド ライン引数を設定する
 

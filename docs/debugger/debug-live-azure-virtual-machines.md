@@ -1,6 +1,6 @@
 ---
 title: ライブ ASP.NET Azure VM とスケール セットをデバッグする
-description: スナップショット デバッガーを使用してスナップポイントを設定し、スナップショットを表示する方法について説明します。
+description: Azure VM やスケール セットでライブ ASP.NET アプリをデバッグするとき、Visual Studio のスナップショット デバッガーを使用し、スナップポイントを設定し、スナップショットを作成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 02/06/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 040fdee43262279a834978a4619b62fb62b10345
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809558"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846960"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用して、Azure Virtual Machines と Azure Virtual Machine Scale Sets 上のライブ ASP.NET アプリをデバッグする
 
@@ -35,7 +35,7 @@ ms.locfileid: "90809558"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure Virtual Machines (VM) および Azure Virtual Machine Scale Sets 用のスナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2019 Enterprise 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* Azure Virtual Machines (VM) および Azure Virtual Machine Scale Sets 用のスナップショット デバッガーは、**Azure 開発ワークロード** に対して Visual Studio 2019 Enterprise 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
     まだ [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/) がインストールされていない場合はインストールしてください。
 

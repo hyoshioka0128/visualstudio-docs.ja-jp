@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64166768dea1da015c223a74c74440ae09a0d106
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863037"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761330"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C++)
 書式指定子を使用して、 **[ウォッチ]** 、 **[自動変数]** 、 **[ローカル]** の各ウィンドウに表示される値の書式を変更することができます。
@@ -54,7 +54,7 @@ int main() {
 
 デバッグ中に `my_var1` 変数を **ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を整数ではなく文字として表示するには、最初に右クリックして **[16 進数で表示]** を選択解除します。 次に、文字書式指定子 **, c** を、 **[Name]** 列の変数名の後に追加します。 **[Value]** 列に **101 'e'** が表示されるようになります。
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Visual Studio のウォッチ ウィンドウのスクリーンショット。値が 101 'e' で型が int の my_var1.c を示す 1 行が選択されています。](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 **ウォッチ** ウィンドウの値にコンマ (,) を追加することで、使用できる書式指定子の一覧を表示して選択できます。 

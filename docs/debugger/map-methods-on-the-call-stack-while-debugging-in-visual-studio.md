@@ -1,5 +1,7 @@
 ---
 title: 呼び出し履歴のビジュアル マップを作成する | Microsoft Docs
+description: デバッグ中に呼び出し履歴を視覚的にトレースするためのコード マップを作成します。 コメントをマップに追加してコードの動作を追跡するため、バグの発見に重点を置くことができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cf0cda942241ca77aa750624b6de25b5ae39391
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 965232f56fcd2bf0d459910e983fb10dcca7f96d
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348536"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903832"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>デバッグ時に呼び出し履歴のビジュアル マップを作成する (C#、Visual Basic、C++、JavaScript)
 

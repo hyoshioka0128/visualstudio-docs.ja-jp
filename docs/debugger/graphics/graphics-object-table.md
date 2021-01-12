@@ -1,5 +1,7 @@
 ---
 title: グラフィックス オブジェクト テーブル | Microsoft Docs
+description: Visual Studio のグラフィックス分析に含まれ、ゲームまたはアプリのフレームをサポートする Direct3D オブジェクトについて理解するために役立つグラフィックス オブジェクト テーブルについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735447"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727581"
 ---
 # <a name="graphics-object-table"></a>グラフィックス オブジェクト テーブル
 Visual Studio のグラフィックス分析に含まれるグラフィックス オブジェクト テーブルは、ゲームまたはアプリのフレームをサポートする Direct3D オブジェクトについて理解するために役立ちます。
@@ -27,7 +29,7 @@ Visual Studio のグラフィックス分析に含まれるグラフィックス
  ![アプリによって作成された Direct3D オブジェクト。](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
 
 ## <a name="understanding-the-graphics-object-table"></a>グラフィックス オブジェクト テーブルについて
- オブジェクト テーブルを使用すると、特定のフレームのレンダリングをサポートする Direct3D のオブジェクトを解析できます。 プロパティとデータを調べることによってレンダリングの問題を特定のオブジェクトに絞り込むことができます (その時点までの診断で使用した他のグラフィックス診断ツールにより、リストを絞り込んで不要と思われるオブジェクトを除外できます)。問題のあるオブジェクトが見つかったら、その種類に固有の視覚化ツールを使用して調査できます。たとえば、テクスチャを表示するにはイメージ エディターを、バッファーの内容を表示するには*バッファー ビジュアライザー*を使用できます。
+ オブジェクト テーブルを使用すると、特定のフレームのレンダリングをサポートする Direct3D のオブジェクトを解析できます。 プロパティとデータを調べることによってレンダリングの問題を特定のオブジェクトに絞り込むことができます (その時点までの診断で使用した他のグラフィックス診断ツールにより、リストを絞り込んで不要と思われるオブジェクトを除外できます)。問題のあるオブジェクトが見つかったら、その種類に固有の視覚化ツールを使用して調査できます。たとえば、テクスチャを表示するにはイメージ エディターを、バッファーの内容を表示するには *バッファー ビジュアライザー* を使用できます。
 
  オブジェクト テーブルは、コピーして貼り付ける操作をサポートしているため、Microsoft Excel などの別のツールを使用してその内容を調べることができます。
 
