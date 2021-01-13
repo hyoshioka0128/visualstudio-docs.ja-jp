@@ -453,6 +453,12 @@
           href: how-to-generate-code-metrics-data.md
         - name: コード メトリックス データの操作
           href: working-with-code-metrics-data.md
+        - name: リソース
+          items:
+            - name: 保守容易性指数の範囲と意味
+              href: code-metrics-maintainability-index-range-and-meaning.md
+            - name: クラス結合
+              href: code-metrics-class-coupling.md
 - name: C++ コードの分析
   items:
     - name: C および C++ コードの分析
