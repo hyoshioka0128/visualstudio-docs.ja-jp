@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd1ff5ff0f8c7510185236c425ddd870f8b500f
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97760927"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031043"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 
@@ -199,7 +199,7 @@ C++ で記述されたコードにデバッガーをアタッチするには、�
 |ローカル コンピューター上で C#、Visual Basic、または C++ アプリをデバッグする|標準のデバッグ (**F5** キー) または **[プロセスにアタッチ]** を使用する|*\<appname>.exe*|ほとんどのシナリオでは、 **[プロセスにアタッチ]** ではなく、標準のデバッグを使用します。|
 |Windows デスクトップ アプリをリモート デバッグする|リモート ツール|N/A| [C# または Visual Basic アプリのリモート デバッグ](../debugger/remote-debugging-csharp.md)または [C++ アプリのリモート デバッグ](../debugger/remote-debugging-cpp.md)に関するページを参照してください|
 |Linux 上で .NET Core をデバッグする|**[プロセスにアタッチ]** を使用する|*dotnet.exe* または一意のプロセス名|SSH を使用するには、[Linux 上で実行されている .NET Core の SSH を使用したリモート デバッグ](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)に関するページを参照してください。 コンテナー化されたアプリについては、[Docker コンテナーで実行されているプロセスへのアタッチ](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)に関連する記事を参照してください。|
-|コンテナー化されたアプリのデバッグ|*dotnet.exe* または一意のプロセス名|[Docker コンテナーで実行されているプロセスへのアタッチ](../debugger/attach-to-process-running-in-docker-container.md)に関する記事を参照|
+|コンテナー化されたアプリのデバッグ|**[プロセスにアタッチ]** を使用する|*dotnet.exe* または一意のプロセス名|[Docker コンテナーで実行されているプロセスへのアタッチ](../debugger/attach-to-process-running-in-docker-container.md)に関する記事を参照|
 |Linux 上で Python をリモートでデバッグする|**[プロセスにアタッチ]** を使用する|*debugpy*|「[Python Tools からリモートでアタッチする](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)」を参照してください|
 |デバッガーを使用せずにアプリを起動した後、ローカル コンピューター上で ASP.NET アプリをデバッグする|**[プロセスにアタッチ]** を使用する|*iiexpress.exe*|これは、(たとえば) プロファイリング時など、アプリの読み込みを高速化するために役立ちます。 |
 |サーバー プロセスでサポートされている他の種類のアプリをデバッグする|サーバーがリモートの場合は、リモート ツールを使用し、 **[プロセスにアタッチ]** を行います|*chrome.exe*、*iexplore.exe*、またはその他のプロセス|必要に応じて、リソース モニターを使用してプロセスを特定します。 「[Remote debugging](../debugger/remote-debugging.md)」(リモート デバッグ) を参照してください。|

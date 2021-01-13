@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: ef287616f5b214566a273817c229d9105bf253c5
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781059"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129485"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
@@ -47,17 +47,17 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 * Visual Studio をインストールし、ASP.NET Web 開発ワークロードを用意する必要があります。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
     Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[ASP.NET と Web 開発]** ワークロードを選択してから **[変更]** を選択します。
 
 ## <a name="create-a-new-aspnet-core-mvc-project"></a>新しい ASP.NET Core MVC プロジェクトを作成する
 
-Visual Studio では、*プロジェクト*の 1 つのアプリケーションに対してファイルが管理されます。 プロジェクトには、ソース コード、リソース、構成ファイルが含まれています。
+Visual Studio では、*プロジェクト* の 1 つのアプリケーションに対してファイルが管理されます。 プロジェクトには、ソース コード、リソース、構成ファイルが含まれています。
 
 >[!NOTE]
 > 空の ASP.NET Core プロジェクトから開始して、TypeScript フロントエンドを追加するには、代わりに [TypeScript を使用した ASP.NET Core](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) に関するページを参照してください。
@@ -76,7 +76,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
     ::: moniker range="vs-2017"
     上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション - C#]** を選択してから **[OK]** を選択します。
     ::: moniker-end
-    **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
+    **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発** ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
 1. 表示されたダイアログ ボックスで **[Web アプリケーション (モデル ビュー コントローラー)]** を選択し、 **[作成]** (または **[OK]** ) を選択します。
 
@@ -100,6 +100,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
    ```json
    {
+     "compileOnSave": true,
      "compilerOptions": {
        "noImplicitAny": false,
        "noEmitOnError": true,
@@ -116,7 +117,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
    *outDir* オプションでは、TypeScript コンパイラによってトランスパイルされるプラン JavaScript ファイルの出力フォルダーを指定します。
 
-   この構成により、TypeScript の使用に関する基本的な手順が指定されます。 たとえば [gulp や webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) を使用する場合などのその他のシナリオでは、使用するツールと構成設定に応じて、トランスパイルされる JavaScript ファイル用に *wwwroot/js*以外の別の中間の場所を指定することができます。
+   この構成により、TypeScript の使用に関する基本的な手順が指定されます。 たとえば [gulp や webpack](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) を使用する場合などのその他のシナリオでは、使用するツールと構成設定に応じて、トランスパイルされる JavaScript ファイル用に *wwwroot/js* 以外の別の中間の場所を指定することができます。
 
 1. ソリューション エクスプローラーで、プロジェクト ノードを右クリックして **[追加] > [新しいフォルダー]** の順に選択します。 新しいフォルダーの名前は「*scripts*」とします。
 
@@ -186,7 +187,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
    アプリは実行時に自動的にビルドされますが、ここではビルド処理中に何が起きるのかを確認します。
 
-1. *wwwroot/js* フォルダーを開くと、2 つの新しいファイルが見つかります。*app.js*、およびソース マップ ファイルの *app.js.map*です。 これらのファイルは TypeScript コンパイラによって生成されます。
+1. *wwwroot/js* フォルダーを開くと、2 つの新しいファイルが見つかります。*app.js*、およびソース マップ ファイルの *app.js.map* です。 これらのファイルは TypeScript コンパイラによって生成されます。
 
    ソース マップ ファイルはデバッグで必要となります。
 
