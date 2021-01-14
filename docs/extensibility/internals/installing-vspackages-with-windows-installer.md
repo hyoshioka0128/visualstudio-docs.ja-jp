@@ -1,5 +1,7 @@
 ---
 title: Windows インストーラーを使用した Vspackage のインストール |Microsoft Docs
+description: Microsoft Windows インストーラーを使用して、VSPackage とその依存ファイルをインストールし、それらを Visual Studio に登録して統合する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ec49e5184071e0640d671ba0baaad8ac049fea25
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012205"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205235"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Windows インストーラーによる VSPackage のインストール
 VSPackage をに統合するに [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、ユーザーのコンピューターにファイルをコピーするだけではありません。 VSPackage のインストーラーは、VSPackage とその依存ファイルをインストールし、それらをに登録して統合する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] スプラッシュスクリーンと [バージョン情報] ダイアログボックスにアイコンを表示するなどの統合機能を利用できます。

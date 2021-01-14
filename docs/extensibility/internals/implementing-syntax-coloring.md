@@ -1,5 +1,7 @@
 ---
 title: 構文の色分けを実装する |Microsoft Docs
+description: Managed package framework (MPF) の言語サービス機能を使用して、Visual Studio で構文の色分けを実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 195cf7a26b1615b7c56f3f0d06cfd9e0d44a4384
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905208"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204671"
 ---
 # <a name="implementing-syntax-coloring"></a>構文の色分け表示の実装
 言語サービスが構文の色付けを提供すると、パーサーはテキスト行を装飾 items の配列に変換し、これらの装飾 items に対応するトークンの種類を返します。 パーサーは、装飾 items のリストに属するトークン型を返す必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] colorizer オブジェクトによって割り当てられた属性に従って、コードウィンドウ内の各装飾項目を適切なトークンの種類に表示します。
@@ -62,7 +64,7 @@ ms.locfileid: "85905208"
 ## <a name="managed-package-framework-colorizer"></a>マネージパッケージフレームワークの色計
  Managed package framework (MPF) には、colorizer 実装するために必要なすべてのクラスが用意されています。 言語サービスクラスは、クラスを継承し、必要なメソッドを実装する必要があり <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 インターフェイスを実装し、 <xref:Microsoft.VisualStudio.Package.IScanner> そのインターフェイスのインスタンスを <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> メソッド (クラスに実装する必要があるメソッドの1つ) から返すことによって、スキャナーとパーサーを提供する必要があり <xref:Microsoft.VisualStudio.Package.LanguageService> ます。 詳細については、「 [従来の言語サービスの構文色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [方法: ビルトインの配色可能な項目の使用](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [カスタムの配色可能な項目](../../extensibility/internals/custom-colorable-items.md)
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)

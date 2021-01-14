@@ -1,5 +1,7 @@
 ---
 title: Manifest to Code |Microsoft Docs
+description: Visual Studio Image Service で使用するために imagemanifest ファイルを使用するコードツールのマニフェストの使用方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e21f266cc0dea39cfbaba660ef3557af6023c104
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ca43ac07bbdcec98cd204cb2720ac9f2cdef1f1
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536124"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204554"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code ツールは、Visual Studio イメージサービスの imagemanifest ファイルを取得し、Visual Studio 拡張機能の C++、C#、VB、または vsct ファイルでイメージマニフェストの値を参照するためのラッパーファイルを生成するコンソールアプリケーションです。 このツールは、Visual Studio イメージサービスから直接イメージを要求するために使用できるラッパーファイルを生成します。また、コードが独自の UI やレンダリングを処理しない場合は、Api を介してマニフェスト値を渡すために使用できます。
@@ -25,7 +27,7 @@ Manifest to Code ツールは、Visual Studio イメージサービスの imagem
 
  **引数**
 
-|**スイッチ名**|**ノート**|**必須またはオプション**|
+|**スイッチ名**|**メモ**|**必須またはオプション**|
 |-|-|-|
 |/manifest|コードラッパーを作成または更新するために使用するイメージマニフェストへのパス。|必須|
 |/language|コードラッパーを生成する言語。<br /><br /> 有効な値: CPP、C++、CS、CSharp、C#、VB、または VSCT 値では大文字と小文字が区別されません。<br /><br /> VSCT 言語オプションでは、/monikerClass、/classaccess、および/namespace オプションは無視されます。|必須|
@@ -45,7 +47,7 @@ Manifest to Code ツールは、Visual Studio イメージサービスの imagem
 
 - ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: VSCT/imageidclass: MyImageIds
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>メモ
 
 - このツールは、Manifest from Resources ツールで生成されたイメージマニフェストと共に使用することをお勧めします。
 

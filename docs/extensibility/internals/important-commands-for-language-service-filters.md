@@ -1,5 +1,7 @@
 ---
 title: 言語サービスフィルターの重要なコマンド |Microsoft Docs
+description: Visual Studio でフル機能の言語サービスフィルターを作成するときにサポートする必要がある重要なコマンドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29ee5b5a5359d6cfe34911656dfe9be015262e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707612"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204619"
 ---
 # <a name="important-commands-for-language-service-filters"></a>言語サービス フィルターの重要なコマンド
 完全に機能する言語サービスフィルターを作成する場合は、次のコマンドを処理することを検討してください。 コマンド識別子の完全な一覧は、マネージ <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> コードの列挙と、アンマネージコードの Stdidcmd ヘッダーファイルで定義されてい [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ます。 Stdidcmd ファイルは、 *Visual STUDIO SDK のインストールパス*\VisualStudioIntegration\Common\Inc. にあります。
@@ -34,9 +36,9 @@ ms.locfileid: "80707612"
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|ユーザーが Enter キーを入力したときに送信されます。 このコマンドを監視して、でメソッドを呼び出して、メソッドのヒントウィンドウを閉じるタイミングを決定し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> ます。 既定では、このコマンドはテキストビューによって処理されます。|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|ユーザーが Backspace キーを入力したときに送信されます。 でメソッドを呼び出して、メソッドのヒントウィンドウを閉じるタイミングを監視し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> ます。 既定では、このコマンドはテキストビューによって処理されます。|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|メニューまたはショートカットキーから送信されます。 のメソッドを呼び出して、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> パラメーター情報を使用して tip ウィンドウを更新します。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|ユーザーが変数に移動したとき、または変数にカーソルを置いて、[**編集**] メニューの**IntelliSense**から**クイックヒント**を選択したときに送信されます。 でメソッドを呼び出して、ヒントの変数の型を返し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ます。 デバッグがアクティブな場合は、ヒントにも変数の値が表示されます。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|ユーザーが変数に移動したとき、または変数にカーソルを置いて、[**編集**] メニューの **IntelliSense** から **クイックヒント** を選択したときに送信されます。 でメソッドを呼び出して、ヒントの変数の型を返し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ます。 デバッグがアクティブな場合は、ヒントにも変数の値が表示されます。|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常、ユーザーが CTRL + SPACE キーを押したときに送信されます。 このコマンドは、でメソッドを呼び出すように言語サービスに指示し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ます。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|メニューから送信されます。通常は、[**編集**] メニューの **[詳細設定**] を**選択**するか、選択**項目**をコメント解除します。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ユーザーが選択したテキストをコメントアウトすることを示します。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ユーザーが選択したテキストのコメントを解除することを示します。 これらのコマンドは、言語サービスによってのみ実装できます。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|メニューから送信されます。通常は、[**編集**] メニューの **[詳細設定**] を **選択** するか、選択 **項目** をコメント解除します。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ユーザーが選択したテキストをコメントアウトすることを示します。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ユーザーが選択したテキストのコメントを解除することを示します。 これらのコマンドは、言語サービスによってのみ実装できます。|
 
 ## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)

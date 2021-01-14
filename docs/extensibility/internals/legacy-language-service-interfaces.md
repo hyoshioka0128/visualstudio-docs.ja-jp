@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスインターフェイス |Microsoft Docs
+description: 従来の言語サービス機能を提供する Visual Studio SDK で使用可能なインターフェイスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d80d6961f5eaf91721567ccb0efa73bbe31406
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707382"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205030"
 ---
 # <a name="legacy-language-service-interfaces"></a>従来の言語サービスのインターフェイス
 特定のプログラミング言語では、言語サービスのインスタンスは一度に1つしか存在できません。 ただし、1つの言語サービスで複数のエディターを使用できます。

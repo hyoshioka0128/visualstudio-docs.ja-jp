@@ -1,5 +1,7 @@
 ---
 title: 構成オプションの管理 |Microsoft Docs
+description: Visual Studio でプロジェクトおよびソリューションの構成設定を管理して、プロジェクトのビルド、パッケージ化、配置、および実行の方法を制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e18c308d74f8c20267c286c47d0e89bf82cd2850
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34f772b780cda825861e11e6816d1d88405f74e
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707307"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204530"
 ---
 # <a name="managing-configuration-options"></a>構成オプションの管理
 新しいプロジェクトの種類を作成する場合は、プロジェクトのビルド、パッケージ化、配置、および実行の方法を決定するプロジェクトとソリューションの構成設定を管理する必要があります。 次のトピックでは、プロジェクトとソリューションの構成について説明します。
@@ -29,7 +31,7 @@ ms.locfileid: "80707307"
 
  プロパティページを使用して、ユーザーがプロジェクト構成に依存するプロパティと独立したプロパティを表示および変更できることについて説明します。
 
-- [ソリューション構成](../../extensibility/internals/solution-configuration.md)
+- [ソリューションの構成](../../extensibility/internals/solution-configuration.md)
 
  ソリューション構成に格納されている内容と、ソリューション構成が **Start** コマンドと **Build** コマンドの動作をダイレクトする方法について説明します。
 

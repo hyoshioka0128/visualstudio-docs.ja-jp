@@ -1,5 +1,7 @@
 ---
 title: レガシ言語サービスコマンドのインターセプト |Microsoft Docs
+description: Visual Studio でコマンドフィルターを使用して、従来の言語サービスコマンドをインターセプトし、言語固有の動作を追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5206bced8b4bfae32498434765e5c3f61801b386
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b67ffab5935b0e52ee6c403f2e38e7bbafab2d06
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707452"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205191"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>従来の言語サービスのコマンドの受信
 では [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、テキストビューで処理されるような言語サービスをインターセプトすることができます。 これは、テキストビューでは管理されない言語固有の動作に便利です。 これらのコマンドを受け取るには、言語サービスからテキストビューに1つ以上のコマンドフィルターを追加します。

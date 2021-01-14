@@ -1,5 +1,7 @@
 ---
 title: Manifest from Resources |Microsoft Docs
+description: Manifest from Resources ツールを使用して、Visual Studio イメージサービスで使用するために .png ファイルまたは .xaml ファイルを imagemanifest ファイルに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ea5931c77e267bc6065693be1ae144c250ce6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536229"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204502"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
 Manifest from Resources ツールは、イメージリソース (.png または .xaml ファイル) の一覧を取得し、それらのイメージを Visual Studio Image Service と共に使用できるようにする imagemanifest ファイルを生成するコンソールアプリケーションです。 また、このツールを使用して、既存の imagemanifest にイメージを追加することもできます。 このツールは、イメージの高 DPI およびテーマサポートを Visual Studio 拡張機能に追加する場合に便利です。 生成された imagemanifest ファイルは、Visual Studio 拡張機能 (.vsix) の一部としてに含まれ、配置される必要があります。
@@ -25,7 +27,7 @@ Manifest from Resources ツールは、イメージリソース (.png または 
 
  **引数**
 
-|**スイッチ名**|**ノート**|**必須またはオプション**|
+|**スイッチ名**|**メモ**|**必須またはオプション**|
 |-|-|-|
 |/リソース|セミコロンで区切られたイメージまたはディレクトリのリスト。 この一覧には、マニフェストに含まれるイメージの完全な一覧が必ず含まれている必要があります。 部分的なリストだけを指定した場合、含まれていないエントリは失われます。<br /><br /> 指定されたリソースファイルがイメージストリップである場合は、各サブイメージをマニフェストに追加する前に、ツールによって個別のイメージに分割されます。<br /><br /> 画像が .png ファイルの場合は、次のように名前を設定して、ツールがイメージの適切な属性を入力できるようにすることをお \<Name> 勧めします \<Width> 。 \<Height>.png.|必須|
 |/assembly|マネージアセンブリの名前 (拡張子を含まない)、またはリソースをホストするネイティブアセンブリのランタイムパス (マニフェストのランタイムの場所を基準とします)。|必須|
@@ -48,7 +50,7 @@ Manifest from Resources ツールは、イメージリソース (.png または 
 
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \ imag? image1 xaml/assembly:/newIds/guidname: MyImages/newguid
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>メモ
 
 - このツールでは、.png ファイルと .xaml ファイルのみがサポートされます。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に検出された、サポートされていないすべての型に対して警告が生成されます。 ツールがリソースの解析を完了したときにサポートされているイメージが見つからない場合は、エラーが生成されます。
 

@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスパーサーとスキャナー |Microsoft Docs
+description: 表示されているコードに関する情報を選択する従来の言語サービスパーサーとスキャナーについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c87f447a4b8bca804d27aae4967f4adaf389c627
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707311"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204606"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 パーサーは言語サービスの中核です。 Managed Package Framework (MPF) 言語クラスでは、表示されているコードに関する情報を選択する言語パーサーが必要です。 パーサーはテキストを字句トークンに分割し、型と機能によってそれらのトークンを識別します。
 
-## <a name="discussion"></a>考察 (Discussion)
+## <a name="discussion"></a>ディスカッション
  C# のメソッドを次に示します。
 
 ```csharp
@@ -47,8 +49,8 @@ namespace MyNamespace
 |MyNamespace、MyClass、MyFunction、arg1、var1|identifier|
 |MyNamespace|namespace|
 |MyClass|class|
-|MyFunction|メソッド|
-|arg1|パラメーター (parameter)|
+|MyFunction|method|
+|arg1|parameter|
 |var1|ローカル変数 (local variable)|
 
  パーサーの役割は、トークンを識別することです。 トークンによっては、複数の型を持つことができます。 パーサーによってトークンが識別された後、言語サービスでは、構文の強調表示、かっこの一致、IntelliSense 操作などの有用な機能を提供するために情報を使用できます。
@@ -131,7 +133,7 @@ namespace MyNamespace
 
  オブジェクトは <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトの一部としてパーサーに渡され、新しいオブジェクトが作成されるたびに <xref:Microsoft.VisualStudio.Package.ParseRequest> 新しい <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトが作成され <xref:Microsoft.VisualStudio.Package.ParseRequest> ます。 また、メソッドは、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> さまざまな IntelliSense 操作を処理するために使用されるオブジェクトを返す必要があります。 オブジェクトは、 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 解析の理由に応じて、宣言のリストとメソッドのリストを保持します。これらのメソッドのいずれかに設定されます。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスを実装する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [従来の言語サービスの概要](../../extensibility/internals/legacy-language-service-overview.md)
 - [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

@@ -1,5 +1,7 @@
 ---
 title: コマンドを使用できるようにする |Microsoft Docs
+description: 遅延読み込み、コンテキスト、および可視性を使用して、Vspackage で Visual Studio IDE に追加されるコマンドの可用性を制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d64df85516e0a1ac326f8d40558755718c4644c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707335"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204541"
 ---
 # <a name="making-commands-available"></a>コマンドを使用できるようにする
 
@@ -51,7 +53,7 @@ ms.locfileid: "80707335"
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>現在のコンテキストとコマンドの可視性
 
-VSPackage データの現在の状態または現在の関連するアクションに応じて、表示または非表示にする VSPackage コマンドをプログラミングできます。 VSPackage を有効にすると、通常はインターフェイスからのメソッドの実装を使用して、コマンドの状態を設定できます。ただし、そのためには、 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> コードを実行する前に VSPackage を読み込む必要があります。 代わりに、パッケージを読み込まずにコマンドの可視性を管理するように IDE を有効にすることをお勧めします。 これを行うには、vsct ファイルで、コマンドを1つ以上の特殊な UI コンテキストに関連付けます。 これらの UI コンテキストは、 *コマンドコンテキスト guid*と呼ばれる guid によって識別されます。
+VSPackage データの現在の状態または現在の関連するアクションに応じて、表示または非表示にする VSPackage コマンドをプログラミングできます。 VSPackage を有効にすると、通常はインターフェイスからのメソッドの実装を使用して、コマンドの状態を設定できます。ただし、そのためには、 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> コードを実行する前に VSPackage を読み込む必要があります。 代わりに、パッケージを読み込まずにコマンドの可視性を管理するように IDE を有効にすることをお勧めします。 これを行うには、vsct ファイルで、コマンドを1つ以上の特殊な UI コンテキストに関連付けます。 これらの UI コンテキストは、 *コマンドコンテキスト guid* と呼ばれる guid によって識別されます。
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] プロジェクトの読み込み、編集、ビルドなどのユーザー操作によって発生した変更を監視します。 変更が発生すると、IDE の外観が自動的に変更されます。 次の表は、が監視する IDE 変更の主な4つのコンテキストを示して [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] います。
 
@@ -147,7 +149,7 @@ VSPackage データの現在の状態または現在の関連するアクショ�
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [ソリューションエクスプローラーツールバーにコマンドを追加する](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
