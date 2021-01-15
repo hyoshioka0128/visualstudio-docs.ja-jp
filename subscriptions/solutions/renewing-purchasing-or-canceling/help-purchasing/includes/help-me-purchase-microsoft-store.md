@@ -10,12 +10,12 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: b16123ef691036c027ac6046616699624e53b10a
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 90c56d7be8e4f3e687ff602619b5eda80807b030
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916180"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147361"
 ---
 ## <a name="purchase-subscriptions-through-microsoft-store"></a>Microsoft Store からサブスクリプションを購入する 
 
@@ -37,7 +37,7 @@ Microsoft Store を介して入手できる小売版の Visual Studio サブス�
 1. [Download - New]\(ダウンロード - 新規\) をクリックしてカートに追加します。 注: ストアでは既定で更新料金が表示される場合があります。新しいサブスクリプションを購入していることを確認してください。 更新料金で購入しているときに現在のサブスクリプションがあることは、ストアでは確認されません。 現在の一致するサブスクリプションがないと更新をアクティブ化することはできません。
 1. チェックアウト。確認ページに、サブスクリプションをアクティブ化するために使用する必要があるプロダクト キーが表示されます。 以下の手順を参照してください。 
 
-## <a name="how-to-activate"></a>ライセンス認証方法  
+## <a name="how-to-activate-your-subscription"></a>サブスクリプションをアクティブにする方法 
 
 Microsoft Store から Visual Studio のサブスクリプションを購入した後、購入後に受け取った支払いの確認ページまたは確認メールからアクティブ化プロセスを開始することができます。 
 
@@ -47,7 +47,7 @@ Microsoft Store から Visual Studio のサブスクリプションを購入し�
 
 サブスクリプションが [サブスクリプション ページ](https://my.visualstudio.com/subscriptions)に表示されるようになるので、ご利用のサブスクリプションのすべての特典にアクセスできるようになります。 
 
-## <a name="more-information"></a>説明 
+## <a name="compare-subscription-benefits"></a>サブスクリプションの特典を比較する
 
 [サブスクリプションのベネフィットと価格を比較](https://visualstudio.microsoft.com/vs/pricing/) して、各 Visual Studio サブスクリプションのベネフィットを理解してください。 
 

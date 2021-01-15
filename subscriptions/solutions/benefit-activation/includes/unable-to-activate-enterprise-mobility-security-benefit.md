@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, ems
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: df582df95932ae82e9be319f347f79745e1ad277
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 065527c86384e6eef46149ecc7d9606268bc1695
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916115"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147548"
 ---
 ## <a name="im-unable-to-activate-my-enterprise-mobility--security-ems-benefit"></a>Enterprise Mobility + Security (EMS) 特典をアクティブにすることができません。
 
@@ -40,6 +40,6 @@ Visual Studio のサブスクライバーは、Office 365 E3 開発者サンド�
 
 Office 365 E3 サブスクリプションを削除し、代わりの Microsoft 365 E5 サブスクリプションを作成したら、Office 365 E3 テナントが 60 日間利用できるのでデータを移行できます。 
 
-## <a name="more-information"></a>説明 
+## <a name="more-information-about-office-365-e3-subscriptions"></a>Office 365 E3 サブスクリプションに関する詳細情報
 
 資格、Office 365 E3 から Microsoft 365 に移行する方法、よくあるご質問については[こちら](https://docs.microsoft.com/visualstudio/subscriptions/vs-m365)をお読みください。  

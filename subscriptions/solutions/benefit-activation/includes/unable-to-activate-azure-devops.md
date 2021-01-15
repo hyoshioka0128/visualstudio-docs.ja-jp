@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 3980e21fd1ac1f96015725c80bb4b5994e30e529
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 7bd0cf67d86062b73bfdfe2461ace98e8ef43639
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916123"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147405"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>Azure DevOps 特典をアクティブにすることができません。
 
@@ -26,5 +26,5 @@ Visual Studio サブスクライバーは Azure DevOps のさまざまな機能�
 1. Azure DevOps に移動します。そこでサービス条件に同意する必要があります。 
 1. Visual Studio サブスクリプションへのサインインに使用する電子メールを使用し、Azure DevOps にサインインします。 別の電子メールを使用してログインする場合、サブスクリプションをリンクするための[代替アカウントを作成](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)できます。両方の電子メールを使用して Azure DevOps にアクセスできるようになります。 
 
-## <a name="more-information"></a>説明 
+## <a name="more-information-about-subscription-eligibility"></a>サブスクリプションの資格に関する詳細情報 
 サブスクリプション レベル別の資格については[こちら](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops)をお読みください。

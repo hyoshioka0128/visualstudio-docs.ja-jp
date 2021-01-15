@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: c862de5bc5006abc60650a26132453f260a51a89
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: e4d24412ab4e3aee22a9184d23ddbefb6ceb35fa
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916148"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147393"
 ---
 ## <a name="im-unable-to-locate-the-product-i-need-to-download"></a>ダウンロードする必要がある製品が見つかりません。
 
@@ -30,8 +30,8 @@ ms.locfileid: "96916148"
 1. ここで人気のあるダウンロードの一覧を表示したり、特定の製品を検索したりすることができます。 メモ:同じサインイン アドレスに複数のサブスクリプションが関連付けられている場合は、表示しているサブスクリプションに関係なく、最高レベルのサブスクリプションに含まれるダウンロードが表示されます。
 1. [キーの取得] をクリックすると、ダウンロードする製品で使用可能なすべてのキーが表示されます。 その後、ダウンロードを開始するのにキーが必要な場合は、[claim key]\(キーの要求\) をクリックしてプロダクト キーを要求します。 
 
-## <a name="product-keys-page"></a>[プロダクト キー] ページ 
+## <a name="find-available-product-keys"></a>利用可能なプロダクト キーの検索
 [[プロダクト キー]](https://my.visualstudio.com/productkeys)  ページを参照することもできます。ここには、使用可能なキーがすべてまとめて表示されています。 キーを要求したタイミングと理由を特定するためのメモ欄を編集できます。 
 
-## <a name="more-information"></a>説明 
+## <a name="more-information-about-product-keys"></a>プロダクト キーに関する詳細情報
 プロダクト キーとダウンロードの検索と要求について詳しくは、[こちら](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)を参照してください。  

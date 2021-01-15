@@ -10,18 +10,18 @@ user.type: subscriber, admin
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: 21555c11df2671a86d97d6f6c855756cd7e2d3b4
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 2cb74dda511efbed7a204ef11a163097efc2f54b
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916187"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98147383"
 ---
 ## <a name="purchase-monthly-subscriptions-through-visual-studio-marketplace"></a>Visual Studio Marketplace から月額サブスクリプションを購入する 
 
 月額クラウド サブスクリプションでは、長期契約なしで Visual Studio と Azure DevOps をレンタルすることができます。 これらのサブスクリプションは、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) から購入できます。  
 
-## <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
+## <a name="billing-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace での請求 
 
 請求は Microsoft Azure サブスクリプションを通じて処理されます。 まだ Azure サブスクリプションをお持ちでなくても、最初に購入を行う際に、無料で設定してこれを行うことができます。  
 
@@ -30,7 +30,7 @@ ms.locfileid: "96916187"
 
 月単位の Visual Studio サブスクリプション Azure の請求の詳細については、[こちら](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)をご覧ください。 
 
-## <a name="more-information"></a>説明 
+## <a name="more-information-about-subscription-benefits"></a>サブスクリプションの特典に関する詳細情報
 
 [サブスクリプションのベネフィットと価格を比較](https://visualstudio.microsoft.com/vs/pricing/) して、各 Visual Studio サブスクリプションのベネフィットを理解してください。 
 
