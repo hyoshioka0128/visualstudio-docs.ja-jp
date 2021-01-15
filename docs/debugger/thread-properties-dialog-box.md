@@ -1,5 +1,7 @@
 ---
 title: '[スレッド プロパティ] ダイアログ ボックス | Microsoft Docs'
+description: Spy++ デバッグ ツールの [スレッド プロパティ] ダイアログ ボックスについて説明します。 このダイアログ ボックスを使用して、特定のスレッドの詳細を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929711"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149132"
 ---
 # <a name="thread-properties-dialog-box"></a>[スレッド プロパティ] ダイアログ ボックス
 このダイアログ ボックスを使用して、特定のスレッドの詳細を確認します。 このダイアログボックスを表示するには、[[スレッド ビュー]](../debugger/threads-view.md) ウィンドウにフォーカスを移動するか、[[メッセージ ビュー]](../debugger/messages-view.md) を開いてメッセージを展開します。 ツリーで任意のスレッド ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

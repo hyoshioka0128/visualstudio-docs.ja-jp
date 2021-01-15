@@ -1,5 +1,7 @@
 ---
 title: プロセス ビュー | Microsoft Docs
+description: プロセス ビューには、ご利用のシステム上でアクティブになっているすべてのプロセスのツリーが表示されます。 その内容と使用について説明し、詳細情報へのリンクを参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62904231"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975135"
 ---
 # <a name="processes-view"></a>プロセス ビュー
 [プロセス] ビューには、お使いのシステム上でアクティブになっている全プロセスがツリー形式で表示されます。 プロセス ID とモジュール名が表示されます。 通常は実行中のプログラムに一致する特定のシステム プロセスを調べる場合、[プロセス] ビューを使用します。 プロセスはモジュール名で識別されます。あるいは、指名された "システム プロセス" となります。
@@ -42,7 +44,7 @@ ms.locfileid: "62904231"
  [プロセス プロパティの表示](../debugger/how-to-display-process-properties.md) メッセージに関する詳細を表示する方法について説明します。
 
 ### <a name="related-sections"></a>関連項目
- [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
  [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 

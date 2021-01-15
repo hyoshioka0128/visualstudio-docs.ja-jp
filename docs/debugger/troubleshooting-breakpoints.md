@@ -1,6 +1,7 @@
 ---
 title: デバッガーでのブレークポイントのトラブルシューティング | Microsoft Docs
-ms.custom: seodec18
+description: ブレークポイントが無効になっている場合、または設定できなかった場合は、それは白抜きの円として表示されます。 ここでは、ブレークポイントの設定時に発生する可能性がある問題について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: a07f92eccd7884ea3cc3871d04285a82cb5cb62e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535931"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148053"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのブレークポイントのトラブルシューティング
 

@@ -1,5 +1,7 @@
 ---
 title: Win32 のエラー コードを調べるには | Microsoft Docs
+description: Win32 エラー コードを調べるには、Watch または QuickWatch にそれを入力します。 たとえば、"0x80000004,hr" です。 エラー コードの定義は INCLUDE\WINERROR.H にあります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44a006be3b6ecad3ef723c00154354cb35df0049
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728032"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149288"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Win32 のエラー コードを調べるには
 WINERROR.H には、Win32 API 関数のエラー コード定義が含まれています。このファイルは、既定のインストールでは INCLUDE ディレクトリにあります。

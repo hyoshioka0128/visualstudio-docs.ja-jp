@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50f14cc2a7eafe5d65e0c6a6af54bafa2ebb5a1f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21f6ac868268c40ea6df837596546f86fd9a3a44
+ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569700"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98129472"
 ---
 # <a name="extract-a-method-refactoring"></a>メソッドの抽出リファクタリング
 
@@ -40,11 +40,11 @@ ms.locfileid: "75569700"
 
    - C#:
 
-       ![強調表示されたコード - C#](media/extractmethod-highlight-cs.png)
+       Program クラスの C# コードを示すスクリーンショット。 このクラスの Main 関数内で、コード行が強調表示されています (media/extractmethod-highlight-cs.png)。
 
    - Visual Basic:
 
-       ![強調表示されたコード - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![Main Sub の Visual Basic コードを示すスクリーンショット。 この Sub 内で、コード行が強調表示されています。](media/extractmethod-highlight-vb.png)
 
 2. 次に、以下のいずれかを実行します。
 
@@ -59,19 +59,19 @@ ms.locfileid: "75569700"
    メソッドがすぐに作成されます。 ここから、新しい名前を入力するだけで、メソッドの名前を今すぐ変更できます。
 
    > [!TIP]
-   > この新しい名前を使用するコメントやその他の文字列も更新できます。また、IDE の右上に表示される **[名前の変更]** ボックス内のチェックボックスを使用して、保存前に[変更をプレビュー](../../ide/preview-changes.md)することもできます。
+   > この新しい名前を使用するコメントやその他の文字列も更新できます。また、IDE の右上に表示される **[名前の変更]** ボックス内のチェックボックスを使用して、保存前に [変更をプレビュー](../../ide/preview-changes.md)することもできます。
 
    - C#:
 
-      ![メソッド名の変更 - C#](media/extractmethod-rename-cs.png)
+      ![Program クラスの C# コードを示すスクリーンショット。 メソッド名が強調表示され、[名前の変更] ポップアップ ウィンドウが開いています。](media/extractmethod-rename-cs.png)
 
    - Visual Basic:
 
-      ![メソッド名の変更 - Visual Basic](media/extractmethod-rename-vb.png)
+      ![Main Sub の Visual Basic コードを示すスクリーンショット。 メソッド名が強調表示され、[名前の変更] ポップアップ ウィンドウが開いています。](media/extractmethod-rename-vb.png)
 
 3. 変更を確認した後は、 **[適用]** ボタンを選ぶか、**Enter** キーを押すと、変更がコミットされます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

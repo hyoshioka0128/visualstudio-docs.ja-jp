@@ -1,5 +1,7 @@
 ---
 title: DebuggerTypeProxy を使用してカスタム型を表示する | Microsoft Docs
+description: DebuggerTypeProxyAttribute のインスタンスを使用して型のプロキシ (代理) を指定して、デバッガー ウィンドウでの型の表示方法を変更します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94551605581890692f8a1366fa2235811ccdc5f2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85347964"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150380"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>DebuggerTypeProxy 属性を使用して、デバッガーにどの型を表示するかを通知する (C#、Visual Basic、C++/CLI)
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute> では、ある型のプロキシ (代理) を指定し、その型をデバッガー ウィンドウで表示する方法を変更します。 プロキシを指定した変数を表示すると、元の型の代理としてプロキシが**表示**されます。 デバッガーの変数ウィンドウには、プロキシ型のパブリック メンバーのみが表示されます。 プライベート メンバーは表示されません。
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> では、ある型のプロキシ (代理) を指定し、その型をデバッガー ウィンドウで表示する方法を変更します。 プロキシを指定した変数を表示すると、元の型の代理としてプロキシが **表示** されます。 デバッガーの変数ウィンドウには、プロキシ型のパブリック メンバーのみが表示されます。 プライベート メンバーは表示されません。
 
 この属性は次の対象に適用できます。
 

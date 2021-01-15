@@ -1,5 +1,7 @@
 ---
 title: サポートされているコード変更 (C# および Visual Basic) | Microsoft Docs
+description: Visual Studio での C# または Visual Basic プロジェクトのデバッグ中にエディット コンティニュ機能を使用する際に、サポートされるコード変更について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149210"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (C# および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。

@@ -1,5 +1,7 @@
 ---
 title: ビジュアライザー API リファレンス | Microsoft Docs
+description: ビジュアライザーには、特定の種類のデータ要素が表示され、編集を許可することもできます。 作成するには、このセクションに記載されているビジュアライザー API を使用します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 37346c77b1488bb89ac071a0290f7b5219731591
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187213"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149769"
 ---
 # <a name="visualizer-api-reference"></a>ビジュアライザー API リファレンス
 

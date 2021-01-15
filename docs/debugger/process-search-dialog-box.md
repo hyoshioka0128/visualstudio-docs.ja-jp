@@ -1,5 +1,7 @@
 ---
 title: '[プロセス検索] ダイアログ ボックス | Microsoft Docs'
+description: '[プロセス検索] を使用して、[プロセス ビュー] で特定のプロセスのノードを検索して選択します。 プロセス ID、モジュール文字列、および検索の方向を指定できます。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 190ec35d014e6b443a9f80bf79433ac14b8fb8ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903770"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975096"
 ---
 # <a name="process-search-dialog-box"></a>[プロセス検索] ダイアログ ボックス
 このダイアログ ボックスを使用して、[プロセス ビュー](../debugger/processes-view.md)で特定のプロセスのノードを検索して選択します。 このダイアログ ボックスを表示するには、**プロセス** ビュー ウィンドウにフォーカスを移動します。 次に、 **[検索]** メニューから **[プロセス検索]** を選択します。

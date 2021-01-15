@@ -1,5 +1,7 @@
 ---
 title: ASP.NET Web アプリの統計情報を収集する
+description: VSPerfASPNETCmd および VSPerfCmd ツールとサンプリング プロファイル メソッドを使用して、ASP.NET Web アプリに対するパフォーマンスの統計情報を収集する手順とオプションについて確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,19 +14,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 017195cc86e958c70204a588de7678a5f15e6e09
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ef1f4ef1c50db1234425ab164f377dab5ff12ea6
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808930"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149535"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>ASP.NET Web アプリの統計情報を収集する
 
 このセクションでは、**VSPerfASPNETCmd** および **VSPerfCmd** コマンドライン ツールとサンプリング プロファイル メソッドを使用して、ASP.NET Web アプリケーションのパフォーマンスの統計情報を収集する手順とオプションについて説明します。
 
 > [!NOTE]
-> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 
 > [!NOTE]
 > **VSPerfCmd** ツールを使用すると、プロファイルの一時停止や再開など、すべてのプロファイル ツール機能にアクセスし、プロセッサと Windows パフォーマンス カウンターからその他のデータも収集できますが、この機能が不要な場合は **VSPerfASPNETCmd** コマンド ライン ツールを使用することをお勧めします。 **VSPerfASPNETCmd** コマンド ライン ツールは、スタンドアロン プロファイラーを使用して ASP.NET Web サイトのプロファイリングを実行するときに推奨される方法です。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 詳細については、「[VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)」を参照してください。

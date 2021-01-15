@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: IntelliTrace を使用し、Visual Studio のコードの実行履歴を記録し、トレースします。 特定のイベントを記録し、関連するコードを調べ、エラーをデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 878c2481164bc87d4af5e79a0a978e822e7baafe
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600246"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149002"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、C++)
 

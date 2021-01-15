@@ -1,6 +1,7 @@
 ---
 title: Windows フォームのデバッグ | Microsoft Docs
-ms.custom: seodec18
+description: チュートリアルに従い、一般的なマネージド アプリケーションである Windows フォームを作成し、デバッグする方法について確認します。 C#、Visual Basic、C++、F# を使用できます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599472"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148096"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>チュートリアル: Windows フォームのデバッグ
 Windows フォームは、最も一般的なマネージド アプリケーションの 1 つです。 Windows フォームは、標準 Windows アプリケーションを作成します。 このチュートリアルは、Visual Basic、C#、または C++ を使用して実行できます。

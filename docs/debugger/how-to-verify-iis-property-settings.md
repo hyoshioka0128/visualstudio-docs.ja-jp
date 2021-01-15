@@ -1,5 +1,7 @@
 ---
 title: IIS のプロパティ設定を確認する | Microsoft Docs
+description: IIS 管理ツールを使用して、Web アプリケーションに対して設定した IIS プロパティ設定を確認する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c883257abf48601f5131bdae239df61ea64ba77
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: b627fbd3d4875699faa28f551d68f5a99bd63340
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851048"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150549"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>方法: IIS のプロパティ設定を確認する
 
@@ -61,7 +63,7 @@ IIS 管理ツールで、Web アプリケーションのプロパティを設定
 
 5. ATL Server アプリケーションの場合は、DEBUG の動詞が ISAPI 拡張機能に関連付けられていることを確認してください。 詳細については、「[方法:動詞 DEBUG を拡張子に関連付ける](/previous-versions/ms165022(v=vs.100))」を参照してください。
 
-6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションの場合、アプリケーションの仮想フォルダーに、**インターネット インフォメーション サービス (IIS) マネージャー**、**インターネット サービス マネージャー**、または**インターネット インフォメーション サービス**で設定されたアプリケーション名があることを確認します。
+6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションの場合、アプリケーションの仮想フォルダーに、**インターネット インフォメーション サービス (IIS) マネージャー**、**インターネット サービス マネージャー**、または **インターネット インフォメーション サービス** で設定されたアプリケーション名があることを確認します。
 
    1. Web アプリケーションの **[プロパティ]** ウィンドウで、 **[ディレクトリ]** タブ (アプリケーションが仮想ディレクトリにある場合) または **[ホーム ディレクトリ]** タブ (アプリケーションが Web サイトにある場合) を選択します。
 

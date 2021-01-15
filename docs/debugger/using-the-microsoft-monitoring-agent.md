@@ -1,5 +1,7 @@
 ---
 title: Microsoft Monitoring Agent の使用 | Microsoft Docs
+description: Microsoft Monitoring Agent を使用して、ASP.NET Web アプリ (SharePoint 2010、2013 アプリケーション) のエラー、パフォーマンスの問題、またはその他の問題を監視します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
@@ -8,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f110af9aab6ae2ea01137043c834d38b29c4d1f9
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 16c0655cdd55a1825f0a872ef013392bc9e5db79
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600003"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150107"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Microsoft Monitoring Agent の使用 (C#、Visual Basic)
 
-**Microsoft Monitoring Agent**を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 次に、Visual Studio Enterprise (Professional Edition や Community Edition ではない) のログを開いて、すべての Visual Studio 診断ツールで問題をデバッグできます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/application-insights/) および [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。
+**Microsoft Monitoring Agent** を使用して、IIS によってホストされる ASP.NET Web アプリおよび SharePoint 2010 や SharePoint 2013 アプリケーションのエラー、パフォーマンスの問題、またはその他の問題をローカルで監視することができます。 エージェントからの診断イベントを IntelliTrace ログ (.iTrace) ファイルに保存できます。 次に、Visual Studio Enterprise (Professional Edition や Community Edition ではない) のログを開いて、すべての Visual Studio 診断ツールで問題をデバッグできます。 Agent を **トレース** モードで実行して、IntelliTrace 診断データとメソッド データを収集することもできます。 Microsoft Monitoring Agent は [Application Insights](/azure/application-insights/) および [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))と統合できます。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。
 
 > [!NOTE]
-> **IntelliTrace スタンドアロン コレクター**を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 「[IntelliTrace スタンドアロン コレクターの使用](../debugger/using-the-intellitrace-stand-alone-collector.md)」を参照してください。
+> **IntelliTrace スタンドアロン コレクター** を使用して、対象環境を変更することなく、リモート コンピューター上の Web、SharePoint、WPF、Windows フォーム アプリの IntelliTrace 診断データとメソッド データを収集することもできます。 スタンドアロン コレクターは、Microsoft Monitoring Agent を **モニター** モードで実行するよりも、パフォーマンスに大きな影響を及ぼします。 「[IntelliTrace スタンドアロン コレクターの使用](../debugger/using-the-intellitrace-stand-alone-collector.md)」を参照してください。
 
  System Center 2012 を使用する場合は、オペレーション マネージャーと連携する Microsoft Monitoring Agent を使用して、問題についてのアラートを取得し、保存された IntelliTrace ログへのリンクを含む Team Foundation Server の作業項目を作成します。 これで、さらにデバッグを行うためにこれらの作業項目をその他の項目に割り当てることができます。 「 [Operations Manager と開発プロセスの統合](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) 」および「 [Microsoft Monitoring Agent による監視](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))」をご覧ください。
 
@@ -50,7 +52,7 @@ ms.locfileid: "89600003"
 
     - 以前のバージョンの Microsoft Monitoring Agent をすべてアンインストールしました。
 
-2. Microsoft ダウンロード センターから Web サーバーへ[無料の Microsoft Monitoring Agent をダウンロードします](https://www.microsoft.com/download/details.aspx?id=40316)(32 ビット バージョン **MMASetup-i386.exe** 、または 64 ビット バージョン **MMASetup-AMD64.exe**)。
+2. Microsoft ダウンロード センターから Web サーバーへ [無料の Microsoft Monitoring Agent をダウンロードします](https://www.microsoft.com/download/details.aspx?id=40316)(32 ビット バージョン **MMASetup-i386.exe** 、または 64 ビット バージョン **MMASetup-AMD64.exe**)。
 
 3. ダウンロードされた実行可能ファイルを実行してインストール ウィザードを起動します。
 
@@ -105,7 +107,7 @@ ms.locfileid: "89600003"
 
   6. **[名前の確認]** を選択して名前を解決します。 **[OK]** をクリックします。
 
-  7. アプリケーション プールに**読み取りおよび実行**のアクセス許可があることを確認します。
+  7. アプリケーション プールに **読み取りおよび実行** のアクセス許可があることを確認します。
 
 ## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a>手順 2: アプリの監視を開始する
  Windows PowerShell の [Start-WebApplicationMonitoring](/previous-versions/system-center/powershell/system-center-2012-r2/dn472749(v=sc.20)) コマンドを使用してアプリの監視を開始します。 System Center 2012 を使用している場合は、「 [Microsoft Monitoring Agent による Web アプリケーションの監視](/previous-versions/system-center/system-center-2012-R2/dn465157(v=sc.12))」をご覧ください。

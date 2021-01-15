@@ -1,6 +1,7 @@
 ---
 title: C# でビジュアライザーを記述する | Microsoft Docs
-ms.custom: seodec18
+description: チュートリアルに従って、C# で簡単なビジュアライザーを作成します。 ビジュアライザー項目テンプレートの使用の有無にかかわらず、必要な手順を示します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8caf1be3c10c0d89ce8780213c0914944ae87842
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286308"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149717"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>チュートリアル: C\# でビジュアライザーを記述する
 
@@ -51,14 +52,14 @@ ms.locfileid: "85286308"
 
 ### <a name="to-rename-class1cs-and-add-microsoftvisualstudiodebuggervisualizers"></a>Class1.cs の名前を変更し Microsoft.VisualStudio.DebuggerVisualizers を追加するには
 
-1. **ソリューション エクスプローラー**で、[Class1.cs] を右クリックし、ショートカット メニューの **[名前の変更]** を選びます。
+1. **ソリューション エクスプローラー** で、[Class1.cs] を右クリックし、ショートカット メニューの **[名前の変更]** を選びます。
 
 2. Class1.cs の名前を、DebuggerSide.cs などのわかりやすい名前に変更します。
 
    > [!NOTE]
    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、新しいファイル名に合わせて DebuggerSide.cs のクラス宣言が自動的に変更されます。
 
-3. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
+3. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
 4. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで **[参照]** を選択し、Microsoft.VisualStudio.DebuggerVisualizers.DLL を探します。
 
@@ -92,7 +93,7 @@ ms.locfileid: "85286308"
 
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>DialogDebuggerVisualizer.Show メソッドをオーバーライドするには
 
-- `public class DebuggerSide` に、次の**メソッド**を追加します。
+- `public class DebuggerSide` に、次の **メソッド** を追加します。
 
   ```csharp
   protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
@@ -104,7 +105,7 @@ ms.locfileid: "85286308"
 
 ### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms を追加するには
 
-1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
+1. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
 2. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで **[参照]** System.Windows.Forms.DLL を探します。
 
@@ -185,7 +186,7 @@ ms.locfileid: "85286308"
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>必要な参照を MyTestConsole に追加するには
 
-1. **ソリューション エクスプローラー**で、 **[MyTestConsole]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
+1. **ソリューション エクスプローラー** で、 **[MyTestConsole]** を右クリックし、ショートカット メニューの **[参照の追加]** を選びます。
 
 2. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで、Microsoft.VisualStudio.DebuggerVisualizers.DLL を選択します。
 
@@ -201,7 +202,7 @@ ms.locfileid: "85286308"
 
 ### <a name="to-add-code-to-mytestconsole"></a>コードを MyTestConsole に追加するには
 
-1. **ソリューション エクスプローラー**で、[Program.cs] を右クリックし、ショートカット メニューの **[名前の変更]** を選びます。
+1. **ソリューション エクスプローラー** で、[Program.cs] を右クリックし、ショートカット メニューの **[名前の変更]** を選びます。
 
 2. Program.cs の名前を、TestConsole.cs などの、よりわかりやすい名前に変更します。
 
@@ -225,7 +226,7 @@ ms.locfileid: "85286308"
 
 ### <a name="to-test-the-visualizer"></a>ビジュアライザーをテストするには
 
-1. **ソリューション エクスプローラー**で **[MyTestConsole]** を右クリックし、ショートカット メニューの **[スタートアップ プロジェクトに設定]** を選びます。
+1. **ソリューション エクスプローラー** で **[MyTestConsole]** を右クリックし、ショートカット メニューの **[スタートアップ プロジェクトに設定]** を選びます。
 
 2. **[デバッグ]** メニューの **[開始]** を選びます。
 
@@ -259,7 +260,7 @@ ms.locfileid: "85286308"
 
 ### <a name="to-add-a-visualizer-item"></a>ビジュアライザー項目を追加するには
 
-1. **ソリューション エクスプローラー**で、[MySecondVisualizer] を右クリックします。
+1. **ソリューション エクスプローラー** で、[MySecondVisualizer] を右クリックします。
 
 2. ショートカット メニューの **[追加]** を選び、次に **[新しい項目]** をクリックします。
 

@@ -1,5 +1,7 @@
 ---
 title: サポートされているコード変更 (C++) | Microsoft Docs
+description: Visual Studio での C++ プロジェクトのデバッグ中にエディット コンティニュ機能を使用する際に、サポートされるコード変更について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/18/2020
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6c0d88dd230bee768641905e200f1f47749d77
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: d693753cbcc9844ff602ab4d20e90fdc6de7dae5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77629587"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150497"
 ---
 # <a name="supported-code-changes-c"></a>サポートされているコード変更 (C++)
 C++ プロジェクトのエディット コンティニュは、大半の種類のコード変更に対応します。 ただし、一部の変更はプログラムの実行中に適用できません。 これらの変更を適用するには、プログラムの実行を中断し、新しいバージョンのコードをビルドする必要があります。

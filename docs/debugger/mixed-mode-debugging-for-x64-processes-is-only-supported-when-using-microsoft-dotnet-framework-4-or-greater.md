@@ -1,5 +1,7 @@
 ---
 title: x64 プロセスの混合モード デバッグは、4 より前の Microsoft .NET Framework バージョンを使用している場合にはサポートされません。
+description: バージョンが 4 より前の .NET Framework では、x64 プロセスの混合モード デバッグはサポートされません。 回避策については、こちらの記事を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2256d5cfde8ea5ff02e4255c3534e87d8ba92f79
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 039f97fc102e98ba0b6809c4aae402c0f26c5cc1
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807899"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975226"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>x64 プロセスの混合モード デバッグは、4 より前の Microsoft .NET Framework バージョンを使用している場合にはサポートされません。
 バージョンが 4 より前の .NET Framework では、x64 プロセスの混合モード デバッグはサポートされません。 つまり、デバッグ中にマネージド コードからネイティブ コードにステップ インすることや、ネイティブ コードからマネージド コードにステップ インすることはできません。
@@ -39,7 +41,7 @@ ms.locfileid: "90807899"
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>プラットフォームを 32 ビットに変更するには (Visual Basic または C#)
 
-1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして、 **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** で、プロジェクトを右クリックして、 **[プロパティ]** をクリックします。
 
 2. プロパティ ページで、 **[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
 
@@ -49,7 +51,7 @@ ms.locfileid: "90807899"
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>プラットフォームを 32 ビットに変更するには (C/C++)
 
-1. **ソリューション エクスプローラー**で、プロジェクトを右クリックして、 **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** で、プロジェクトを右クリックして、 **[プロパティ]** をクリックします。
 
 2. プロパティ ページで **[プラットフォーム]** をクリックし、プラットフォームの一覧の [Win32] をクリックします。
 

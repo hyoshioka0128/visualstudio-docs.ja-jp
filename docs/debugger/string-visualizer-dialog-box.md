@@ -1,7 +1,8 @@
 ---
 title: '[String ビジュアライザー] ダイアログ ボックス | Microsoft Docs'
+description: Visual Studio でのデバッグ中に、組み込みの文字列ビジュアライザー ダイアログ ボックスを使用して文字列を表示します。
 ms.date: 10/10/2018
-ms.custom: seoapril2019
+ms.custom: seoapril2019, SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 1c33459312cb0c5c4dd4be3bc043956ccb33a6e1
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430823"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150276"
 ---
 # <a name="string-visualizer-dialog-box"></a>[String ビジュアライザー] ダイアログ ボックス
 
@@ -42,7 +43,7 @@ Visual Studio でのデバッグ中に、組み込みの文字列ビジュアラ
 
 **[式]** フィールドには、マウス ポインターを置いている変数または式が表示されます。
 
-**[値]** フィールドには、文字列値が表示されます。 **[値]** が空白の場合は、選択したビジュアライザーで文字列を認識できないことを意味します。 たとえば、**XML ビジュアライザー**では、XML タグのないテキスト文字列または JSON 文字列に対して、空白の **[値]** が表示されます。 選択したビジュアライザーから認識できない文字列を表示するには、代わりに **[テキスト ビジュアライザー]** を選択します。 **テキスト ビジュアライザー**にはプレーンテキストが表示されます。
+**[値]** フィールドには、文字列値が表示されます。 **[値]** が空白の場合は、選択したビジュアライザーで文字列を認識できないことを意味します。 たとえば、**XML ビジュアライザー** では、XML タグのないテキスト文字列または JSON 文字列に対して、空白の **[値]** が表示されます。 選択したビジュアライザーから認識できない文字列を表示するには、代わりに **[テキスト ビジュアライザー]** を選択します。 **テキスト ビジュアライザー** にはプレーンテキストが表示されます。
 
 ### <a name="json-string-data"></a>JSON 文字列データ
 

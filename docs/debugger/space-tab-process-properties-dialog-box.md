@@ -1,5 +1,7 @@
 ---
 title: '[スペース] タブ ([プロセス プロパティ] ダイアログ ボックス) | Microsoft Docs'
+description: デバッグ時、Spy++ で [プロセス プロパティ] ダイアログ ボックスを表示する方法について説明します。 [スペース] タブで使用可能な設定を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929823"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149080"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>[スペース] タブ ([プロセス プロパティ] ダイアログ ボックス)
 **[スペース]** タブを使用すると、プロセスのアドレス空間を調べることができます。 [[プロセス プロパティ] ダイアログ ボックス](../debugger/process-properties-dialog-box.md)を表示するには、[プロセス ビュー](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

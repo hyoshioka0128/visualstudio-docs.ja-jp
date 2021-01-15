@@ -1,5 +1,7 @@
 ---
 title: '[Spy] メニューのコマンド | Microsoft Docs'
+description: '[Spy] メニューについて説明します。このメニューには、Spy++ のウィンドウとビューを操作するためのコマンドがあります。 使用できるコマンドには、Windows、プロセス、スレッド、ログ メッセージ、検索ウィンドウなどがあります。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 036a99fc0f25f2302c82d043fa20cf6e35687668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c737bef539e541d1dc1e130eb0c9dedb3e00f2c4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929756"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148131"
 ---
 # <a name="spy-menu-commands"></a>[スパイ] メニューのコマンド
 **[Spy]** メニューには、Spy++ のウィンドウとビューを操作するためのコマンドが用意されています。

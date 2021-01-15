@@ -1,5 +1,7 @@
 ---
 title: 呼び出し元 - 呼び出し先ビュー - 競合データ | Microsoft Docs
+description: 呼び出し元/呼び出し先ビューによって、選択した関数およびその親と子の関数の競合情報がパフォーマンス エクスプローラーにどのように表示されるかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779741"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150913"
 ---
 # <a name="callercallee-view----contention-data"></a>呼び出し元/呼び出し先ビュー - 競合データ
 呼び出し元/呼び出し先ビューには、選択した関数およびその親関数と子関数の競合情報が表示されます。 [呼び出し元/呼び出し先] ビューは、3 つのグリッドで構成されます。
@@ -46,7 +48,7 @@ ms.locfileid: "74779741"
 |**プロセス ID**|競合が発生したプロセスのプロセス ID (PID)。|
 |**プロセス名**|プロセスの名前です。|
 |**ルート関数名**|現在の関数の名前です。 [VSPerfReport](../profiling/vsperfreport.md) コマンド ライン レポートでのみ有効です。|
-|**ソース ファイル**|この関数の定義を含むソース ファイルです。|
+|**[転送元ファイル]**|この関数の定義を含むソース ファイルです。|
 
 ## <a name="see-also"></a>関連項目
 - [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)

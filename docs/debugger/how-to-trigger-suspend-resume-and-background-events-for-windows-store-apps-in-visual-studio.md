@@ -1,5 +1,7 @@
 ---
 title: UWP のデバッグ時に中断、再開、バックグラウンド イベントをトリガーする
+description: Visual Studio でユニバーサル Windows プラットフォーム (UWP) アプリをデバッグするときに、中断、再開、およびバックグラウンド イベントをトリガーする方法について確認します。
+ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: how-to
 f1_keywords:
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5cbdfb443d07b01f4de6f43fb98103339566cde2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 87b2718b6cd9db5b66635ca165253bd1e93f17d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808195"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150679"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリをデバッグするときに、中断、再開、およびバックグラウンド イベントをトリガーする方法
 
 デバッグが行われていないときは、Windows の **プロセス継続時間管理** (PLM) によってアプリの実行状態 (ユーザー アクションに応じたアプリの開始、中断、再開、および終了) とデバイスの状態が管理されます。 デバッグが行われているとき、これらのアクティブ化イベントは Windows によって無効にされます。 このトピックでは、デバッガーでこれらのイベントを発生させる方法について説明します。
 
-このトピックでは、 **バックグラウンド タスク**をデバッグする方法についても説明します。 バックグラウンド タスクは、アプリが実行されていない場合でもバックグラウンド プロセスで特定の操作を行うことを可能にします。 デバッガーを使用してアプリをデバッグ モードに変更した後、UI の起動なしでバックグラウンド タスクを開始してデバッグできます。
+このトピックでは、 **バックグラウンド タスク** をデバッグする方法についても説明します。 バックグラウンド タスクは、アプリが実行されていない場合でもバックグラウンド プロセスで特定の操作を行うことを可能にします。 デバッガーを使用してアプリをデバッグ モードに変更した後、UI の起動なしでバックグラウンド タスクを開始してデバッグできます。
 
 プロセス継続時間管理とバックグラウンド タスクの詳細については、[起動、再開、マルチタスク処理](/windows/uwp/launch-resume/index)に関するページを参照してください。
 

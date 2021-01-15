@@ -1,5 +1,7 @@
 ---
 title: '[並列スタック] ウィンドウでスレッドを表示する | Microsoft Docs'
+description: '[並列スタック] を使用すると、マルチスレッド アプリケーションのデバッグに役立ちます。 すべてのスレッドのスタック情報と、タスク中心の呼び出し履歴情報を表示できます。'
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55a004e65a39f4a2b7bbf972cec36d689bf88d97
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62902422"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150172"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>[並列スタック] ウィンドウでスレッドを表示する (C#、Visual Basic、C++)
 
@@ -32,7 +34,7 @@ ms.locfileid: "62902422"
 
 - [タスク ビュー](#tasks-view)には、タスク中心の呼び出し履歴情報が表示されます。
   - マネージド コードでは、 **[タスク]** ビューに、<xref:System.Threading.Tasks.Task?displayProperty=fullName> オブジェクトの呼び出し履歴が表示されます。
-  - ネイティブ コードでは、 **[タスク]** ビューに、[タスク グループ](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)、[並列アルゴリズム](/cpp/parallel/concrt/parallel-algorithms)、[非同期エージェント](/cpp/parallel/concrt/asynchronous-agents)、および[軽量タスク](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)の呼び出し履歴が表示されます。
+  - ネイティブ コードでは、 **[タスク]** ビューに、[タスク グループ](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)、[並列アルゴリズム](/cpp/parallel/concrt/parallel-algorithms)、[非同期エージェント](/cpp/parallel/concrt/asynchronous-agents)、および [軽量タスク](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)の呼び出し履歴が表示されます。
 
 - [メソッド ビュー](#method-view)では、選択されたメソッドの呼び出し履歴がピボットされます。
 
@@ -129,7 +131,7 @@ ms.locfileid: "62902422"
 ![[スレッド] と [タスク] ツールヒント](../debugger/media/parallel_threads-tasks-tooltips.png "[スレッド] と [タスク] ツールヒント")
 
 ## <a name="method-view"></a>メソッド ビュー
-**[スレッド]** ビューまたは **[タスク]** ビューで、ツール バーの **[メソッド ビューの切り替え]** アイコンを選択することで、現在のメソッドのグラフをピボットできます。 **メソッド ビュー**を使用すると、現在のメソッドを呼び出すか現在のメソッドから呼び出されるすべてのスレッドのすべてのメソッドをひと目で確認できます。 次の図は、左側の **[スレッド]** ビューと、右側の **[メソッド ビュー]** で、同じ情報がどのように表示されるかを示しています。
+**[スレッド]** ビューまたは **[タスク]** ビューで、ツール バーの **[メソッド ビューの切り替え]** アイコンを選択することで、現在のメソッドのグラフをピボットできます。 **メソッド ビュー** を使用すると、現在のメソッドを呼び出すか現在のメソッドから呼び出されるすべてのスレッドのすべてのメソッドをひと目で確認できます。 次の図は、左側の **[スレッド]** ビューと、右側の **[メソッド ビュー]** で、同じ情報がどのように表示されるかを示しています。
 
 ![[スレッド] ビューと [メソッド ビュー]](../debugger/media/parallel_methodview.png "[スレッド] ビューと [メソッド ビュー]")
 

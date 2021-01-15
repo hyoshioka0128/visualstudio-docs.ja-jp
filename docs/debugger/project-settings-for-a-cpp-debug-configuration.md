@@ -1,6 +1,7 @@
 ---
 title: C++ デバッグ構成のプロジェクト設定
-ms.custom: seodec18
+description: '[プロパティ ページ] で C と C++ デバッグを構成します。 この記事では、各設定について説明し、これらのカテゴリを示します。'
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -112,12 +113,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bca39b97f6363d8b8fefcfd691b69baf85c32170
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450376"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975291"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ デバッグ構成のプロジェクト設定
 C または C++ のデバッグ構成のプロジェクト設定は **[プロパティ ページ]** ダイアログ ボックスで変更できます。「[方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。 次の表は、 **[プロパティ ページ]** ダイアログ ボックスのデバッガー関連の設定の場所を示しています。
@@ -175,7 +176,7 @@ C または C++ のデバッグ構成のプロジェクト設定は **[プロパ
 |**[マップ ファイルの作成]** ([/MAP](/cpp/build/reference/map-generate-mapfile))|リンク中にマップ ファイルを生成するようにリンカーに指示します。 既定の設定は [いいえ] です。 詳細については、「[/MAP (マップ ファイルの生成)](/cpp/build/reference/map-generate-mapfile)」を参照してください。|
 |**[マップ ファイル名]** ([/MAP:](/cpp/build/reference/map-generate-mapfile)*name*)|[マップ ファイルの作成] を選択する場合は、このボックスにマップ ファイルを指定できます。 詳細については、「[/MAP (マップ ファイルの生成)](/cpp/build/reference/map-generate-mapfile)」を参照してください。|
 |**[マップファイルのエクスポート]** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|エクスポートされた関数をマップ ファイルに含めます。 既定の設定は [いいえ] です。 詳細については、「[/MAPINFO (マップ ファイルに含める情報)](/cpp/build/reference/mapinfo-include-information-in-mapfile)」を参照してください。|
-|**[デバッグできるアセンブリ]** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|リンカーの /ASSEMBLYDEBUG オプションの設定を指定します。 指定できる値は次のとおりです。<br /><br /> -    **[デバッグできる属性が作成されませんでした]** 。<br />-    **[ランタイム トラッキングおよび最適化の無効 (/ASSEMBLYDEBUG)]** 。 これが既定の設定です。<br />-    **[ランタイム トラッキングおよび最適化の有効を無効にする (/ASSEMBLYDEBUG:DISABLE)]** 。<br />-    **[\<親またはプロジェクトの既定値から継承>]** 。<br />詳細については、「[/ASSEMBLYDEBUG (DebuggableAttribute の追加)](/cpp/build/reference/assemblydebug-add-debuggableattribute)」を参照してください。|
+|**[デバッグできるアセンブリ]** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|リンカーの /ASSEMBLYDEBUG オプションの設定を指定します。 指定できる値は次のとおりです。<br /><br /> -    **[デバッグできる属性が作成されませんでした]** 。<br />-    **[ランタイム トラッキングおよび最適化の無効 (/ASSEMBLYDEBUG)]** 。 これが既定の設定です。<br />-    **[ランタイム トラッキングおよび最適化の有効を無効にする (/ASSEMBLYDEBUG:DISABLE)]** 。<br />-   **\<inherit from parent or project defaults>**.<br />詳細については、「[/ASSEMBLYDEBUG (DebuggableAttribute の追加)](/cpp/build/reference/assemblydebug-add-debuggableattribute)」を参照してください。|
 
  [構成プロパティ] フォルダー ([デバッグ] カテゴリ) 内のこれらの設定は、Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings インターフェイスを使用してプログラムで変更できます。 詳細については、「<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>」を参照してください。
 

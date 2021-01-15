@@ -1,5 +1,7 @@
 ---
 title: ビジュアライザーのセキュリティに関する考慮事項 | Microsoft Docs
+description: Visual Studio デバッガーのビジュアライザーは、完全な信頼で実行する必要があります。 自分で記述する際には、セキュリティ上の脅威について考慮し、適切な予防措置を講じる必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2db18a1443b0c4faaa288a887a22d935d243f678
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187149"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149743"
 ---
 # <a name="visualizer-security-considerations"></a>ビジュアライザーのセキュリティに関する考慮事項
 ビジュアライザーを作成すると、セキュリティ上の脅威が発生する可能性があります。 今のところ、この脅威が悪用された例はありませんが、開発者はこの脅威を認識し、以下に説明する適切なセキュリティ対策を講じることによって将来の攻略行為に対抗する必要があります。

@@ -1,5 +1,7 @@
 ---
 title: デバッガーでスレッドを表示する |Microsoft Docs
+description: '[スレッド] を使用して、スレッドを検査および制御します。 スレッドのグループ化、並べ替え、フラグの設定、凍結、解凍、検索、列の選択、呼び出し履歴の表示を行うことができます。'
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b02d980292eaed40c7c1598c772b52f695bf23e2
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67821586"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149704"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>[スレッド] ウィンドウを使用して Visual Studio デバッガーでスレッドを表示する (C#、Visual Basic、C++)
 **[スレッド]** ウィンドウでは、デバッグ中のアプリケーション内のスレッドを調べて操作できます。 **[スレッド]** ウィンドウの使用方法の手順については、「[チュートリアル: [スレッド] ウィンドウを使用してデバッグする](../debugger/how-to-use-the-threads-window.md)」を参照してください。
@@ -106,7 +108,7 @@ ms.locfileid: "67821586"
   - スレッドを右クリックし、 **[スレッドに切り替え]** を選択します。
 
 ## <a name="group-and-sort-threads"></a>スレッドのグループ化と並べ替え
- スレッドをグループ化すると、グループごとに、見出しがテーブルに表示されます。 見出しには、**ワーカー スレッド**や**フラグが解除されたスレッド**などのグループの説明、およびツリー コントロールが表示されます。 各グループのメンバー スレッドは、そのグループの見出しの下に表示されます。 グループのメンバー スレッドを非表示にするには、ツリー コントロールを使用して、グループを折りたたみます。
+ スレッドをグループ化すると、グループごとに、見出しがテーブルに表示されます。 見出しには、**ワーカー スレッド** や **フラグが解除されたスレッド** などのグループの説明、およびツリー コントロールが表示されます。 各グループのメンバー スレッドは、そのグループの見出しの下に表示されます。 グループのメンバー スレッドを非表示にするには、ツリー コントロールを使用して、グループを折りたたみます。
 
  グループ化は並べ替えよりも優先されるので、たとえば、カテゴリ別にスレッドをグループ化してから、各カテゴリ内で ID によってグループを並べ替えることができます。
 

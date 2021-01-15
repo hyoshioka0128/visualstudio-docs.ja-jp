@@ -1,5 +1,7 @@
 ---
 title: ネイティブ ランタイム チェックを使用する | Microsoft Docs
+description: Visual Studio でネイティブ ランタイム チェックを使用して、スタック ポインターの破損、ローカル配列のオーバーラン、スタックの破損などの一般的なランタイム エラーをキャッチします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 586f43f14a8638ab9c3c67f8ffef52ef52a70c53
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852668"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150640"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>方法: ネイティブ ランタイム チェックを使用する
 Visual Studio C++ プロジェクトでは、ネイティブ [runtime_checks](/cpp/preprocessor/runtime-checks) を使用して、次のような一般的なランタイム エラーをキャッチできます。
@@ -57,7 +59,7 @@ Visual Studio C++ プロジェクトでは、ネイティブ [runtime_checks](/c
 
 - 短い変数への代入によるデータの消失
 
-  最適化された ( **/RTC** ) ビルドで **/O**を使用すると、コンパイラ エラーが発生します。 `runtime_checks` プラグマを最適化されたビルドに使用しても効果はありません。
+  最適化された ( **/RTC** ) ビルドで **/O** を使用すると、コンパイラ エラーが発生します。 `runtime_checks` プラグマを最適化されたビルドに使用しても効果はありません。
 
   ランタイム チェックが有効になっている状態のプログラムをデバッグすると、既定の動作では、ランタイム エラーの発生時にプログラムが停止し、デバッガーが起動されます。 この既定の動作は、任意のランタイム チェックで変更できます。 詳細については、「[デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)」を参照してください。
 

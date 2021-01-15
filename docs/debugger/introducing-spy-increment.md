@@ -1,5 +1,7 @@
 ---
 title: Spy++ の概要 | Microsoft Docs
+description: Spy++ デバッグ ツールについて説明します。 システム オブジェクトの関係をグラフィカルなツリーで表示します。 選択されたウィンドウ、スレッド、プロセス、またはメッセージのプロパティを取得します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fb8debef874dd32f52994d0edd4a27d81b340834
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731816"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148794"
 ---
 # <a name="introducing-spy"></a>Spy++ の概要
 Spy++ で実行できるタスクは以下のとおりです。
@@ -40,7 +42,7 @@ Spy++ で実行できるタスクは以下のとおりです。
 > Spy++ に似たユーティリティが他に 2 つあります。PView では、プロセスとスレッドについての詳細が表示されます。DDESPY.EXE では、ダイナミック データ エクスチェンジ (DDE) のメッセージを監視できます。
 
 ## <a name="64-bit-operating-systems"></a>64 ビット オペレーティング システム
- Spy++ には 2 つのバージョンがあります。 1 番目のバージョンである Spy++ (spyxx.exe) は、32 ビット プロセスで実行しているウィンドウに送信されるメッセージを表示するように設計されています。 たとえば、Visual Studio は 32 ビット プロセスで実行されます。 したがって、Spy++ を使用して、 **ソリューション エクスプローラー**に送信されるメッセージを表示できます。 Visual Studio におけるほとんどのビルドの既定の構成は 32 ビット プロセスで実行されるため、Visual Studio の **[ツール]** メニューで使用できる Spy++ はこの 1 番目のバージョンです ([必須コンポーネントがインストールされている](../debugger/how-to-start-spy-increment.md)場合)。
+ Spy++ には 2 つのバージョンがあります。 1 番目のバージョンである Spy++ (spyxx.exe) は、32 ビット プロセスで実行しているウィンドウに送信されるメッセージを表示するように設計されています。 たとえば、Visual Studio は 32 ビット プロセスで実行されます。 したがって、Spy++ を使用して、 **ソリューション エクスプローラー** に送信されるメッセージを表示できます。 Visual Studio におけるほとんどのビルドの既定の構成は 32 ビット プロセスで実行されるため、Visual Studio の **[ツール]** メニューで使用できる Spy++ はこの 1 番目のバージョンです ([必須コンポーネントがインストールされている](../debugger/how-to-start-spy-increment.md)場合)。
 
  2 番目のバージョンである Spy++ (64 ビット) (spyxx_amd64.exe) は、64 ビット プロセスで実行しているウィンドウに送信されるメッセージを表示するように設計されています。 たとえば、64 ビットのオペレーティング システムでは、メモ帳は 64 ビット プロセスで実行されます。 したがって、Spy++ (64 ビット) を使用して、メモ帳に送信されるメッセージを表示できます。 通常、Spy++ (64 ビット) は、
 

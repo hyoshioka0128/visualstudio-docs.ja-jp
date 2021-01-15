@@ -1,5 +1,7 @@
 ---
 title: '[シンボルの読み込み情報] ダイアログ ボックス | Microsoft Docs'
+description: Visual Studio デバッガーで [モジュール] ウィンドウを右クリックし、[シンボルの読み込み情報] を選択すると開く [シンボルの読み込み情報] ダイアログ ボックスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bc7a795d45caf712b837f7d59e3ce6a0f9c8aa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a2412aeade894b32ce3c42855ecf3f3dacf9bc16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729011"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149145"
 ---
 # <a name="symbol-load-information-dialog-box"></a>[シンボルの読み込み情報] ダイアログ ボックス
 **[モジュール]** ウィンドウを右クリックし、 **[シンボルの読み込み情報]** を選択すると、 **[シンボルの読み込み情報]** ダイアログ ボックスが開きます。

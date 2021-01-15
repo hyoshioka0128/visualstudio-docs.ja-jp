@@ -1,5 +1,7 @@
 ---
 title: メッセージ ビューでメッセージを検索する | Microsoft Docs
+description: Visual Studio でデバッグするとき、ハンドル、種類、またはメッセージ ID を検索条件として使用し、Spy++ ツールのメッセージ ビューで特定のメッセージを検索します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c351eacc6fc3793065bcd11eb5456eebdc1864f3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852010"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148586"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>方法: メッセージ ビューでメッセージを検索する
 メッセージ ビューで特定のメッセージを検索するには、そのハンドル、種類、またはメッセージ ID を検索条件として使用します。 これらのいずれか (または組み合わせ) が有効な検索条件になります。 検索の最初の方向を指定することもできます。 ダイアログ ボックス内のフィールドは、現在選択されているメッセージの属性で事前に読み込まれます。

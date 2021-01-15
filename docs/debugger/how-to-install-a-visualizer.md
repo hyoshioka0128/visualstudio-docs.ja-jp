@@ -1,5 +1,7 @@
 ---
 title: ビジュアライザーをインストールする | Microsoft Docs
+description: Visual Studio でデバッグに使用できるよう、ビジュアライザーをインストールする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/10/2020
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: 37b2da9418361144c740bed633eb755f7057936c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211366"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148963"
 ---
 # <a name="how-to-install-a-visualizer"></a>方法: ビジュアライザーをインストールする
 作成したビジュアライザーは、インストールして初めて [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] で使用できるようになります。 ビジュアライザーのインストールは簡単です。
@@ -35,7 +37,7 @@ ms.locfileid: "91211366"
 
 1. 作成したビジュアライザーが含まれる DLL を探します。
 
-   通常は、デバッガー側 DLL とデバッグ対象側 DLL の両方で、ターゲット プラットフォームとして**任意の CPU** が指定されている場合に最適です。 デバッガー側の DLL は、**任意の CPU** または **32 ビット**のいずれかである必要があります。 デバッグ対象側の DLL のターゲット プラットフォームは、デバッグ対象のプロセスに対応している必要があります。
+   通常は、デバッガー側 DLL とデバッグ対象側 DLL の両方で、ターゲット プラットフォームとして **任意の CPU** が指定されている場合に最適です。 デバッガー側の DLL は、**任意の CPU** または **32 ビット** のいずれかである必要があります。 デバッグ対象側の DLL のターゲット プラットフォームは、デバッグ対象のプロセスに対応している必要があります。
 
 2. [デバッガー側](create-custom-visualizers-of-data.md#to-create-the-debugger-side)の DLL (およびそれが依存するすべての DLL) を、次のいずれかの場所にコピーします。
 

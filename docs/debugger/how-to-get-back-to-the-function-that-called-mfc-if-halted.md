@@ -1,6 +1,7 @@
 ---
 title: 停止した場合に MFC を呼び出した関数に戻る | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio デバッガーで実行が停止している場合に MFC を呼び出した関数に戻る方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b05e703958fe7a1c630b542522f1f33b0fe5981
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 751688b72a7603e76733906775c594cd28e78c28
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600279"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148950"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>方法: 停止した場合に MFC を呼び出した関数に戻る
 

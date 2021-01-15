@@ -1,5 +1,7 @@
 ---
 title: ネイティブ ランタイム チェックのカスタマイズ | Microsoft Docs
+description: 実行時チェックをカスタマイズする方法について説明します。これには、メッセージの送信先の指定、エラー報告関数の記述、およびエラー情報の照会が含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3b5f5aa55ac9d8c13da605a09986569c534a30bf
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730898"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975200"
 ---
 # <a name="native-run-time-checks-customization"></a>ネイティブ ランタイム チェックのカスタマイズ
 **/RTC** (ランタイム チェック) を使用してコンパイルするか、`runtime_checks` プラグマを使用すると、C ランタイム ライブラリによってネイティブ ランタイム チェックが提供されます。 ランタイム チェックのカスタマイズが必要になる場合があります。次に例を示します。

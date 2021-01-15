@@ -1,5 +1,7 @@
 ---
 title: デバッグおよびリリース構成を設定する | Microsoft Docs
+description: Visual Studio でのデバッグおよびリリース構成を設定します。 デバッグ バージョンはデバッグ用に、リリース バージョンは最終リリース配布用にビルドします。
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 f1_keywords:
@@ -31,12 +33,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 51237a9b73825620c77c7f2a10ad1efe367cdd37
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599895"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149548"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Visual Studio でのデバッグおよびリリース構成の設定
 
@@ -107,7 +109,7 @@ C# または Visual Basic のデバッグ構成の、プロジェクト設定の
 
    C++ のデバッグ構成の、プロジェクト設定の詳細については、「[C++ デバッグ構成のプロジェクト設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)」を参照してください。
 
-5. **プログラム データベース ファイルを生成する**ためのオプションを構成します。
+5. **プログラム データベース ファイルを生成する** ためのオプションを構成します。
 
    ほとんどの C++ プロジェクトでは、既定値は `$(OutDir)$(TargetName).pdb` です。これにより、出力フォルダーに .pdb ファイルが生成されます。
 

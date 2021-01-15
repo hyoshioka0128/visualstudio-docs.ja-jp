@@ -1,5 +1,6 @@
 ---
 title: プロファイラーのコマンド ライン - ASP.NET のコンカレンシー データを取得する
+description: リソース競合データを収集できる、Visual Studio プロファイル ツールのコンカレンシー メソッドに関する参照情報を確認します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7a28e9cea6db337cbe114c7e51c387315879ccd5
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407706"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148326"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用した ASP.NET Web アプリケーションのコンカレンシー データの収集
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]プロファイリング ツールのコンカレンシー メソッドを使用すると、リソース競合データを収集できます。

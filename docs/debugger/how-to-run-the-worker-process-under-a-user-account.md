@@ -1,6 +1,7 @@
 ---
 title: ユーザー アカウントでワーカー プロセスを実行する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio でユーザー アカウントを使用し、ASP.NET ワーカー プロセス (aspnet_wp.exe または w3wp.exe) を実行できるようにコンピューターを設定します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac5bee0ffa05aa275782c57fc9b7b1c369bf65d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24dc3be78534610492dfada954f74a883808b40b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349407"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148690"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>方法: ユーザー アカウントでワーカー プロセスを実行する
 ユーザー アカウントを使用して [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ワーカー プロセス (aspnet_wp.exe または w3wp.exe) を実行できるようにコンピューターを設定するには、次の手順を実行します。
@@ -80,7 +81,7 @@ ms.locfileid: "85349407"
 
 10. **[選択するオブジェクト名を入力してください]** ボックスに、ユーザー名を入力して、 **[OK]** をクリックします。 ユーザー名は、次の形式で入力する必要があります: ドメイン名\ユーザー名。
 
-11. **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスで、ユーザーに**フル コントロール**を付与し、 **[OK]** をクリックして **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスを閉じます。
+11. **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスで、ユーザーに **フル コントロール** を付与し、 **[OK]** をクリックして **[Temporary ASP.NET Files のアクセス許可のエントリ]** ダイアログ ボックスを閉じます。
 
 12. **[セキュリティ]** ダイアログ ボックスが表示され、システム フォルダーのアクセス許可を本当に変更するかどうかの確認が求められます。 **[はい]** をクリックします。
 

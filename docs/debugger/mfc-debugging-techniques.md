@@ -1,5 +1,7 @@
 ---
 title: MFC のデバッグ技法 | Microsoft Docs
+description: コード化されたブレークポイント、トレース、メモリ リーク検出、オブジェクト メモリ ダンプ、プログラム サイズの縮小など、MFC プログラムをデバッグするための手法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5cf00191aff408b1133c281e10eea17e3a923215
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600243"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975122"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC のデバッグ技術
 MFC プログラムをデバッグする場合は、次のデバッグ技術が役立ちます。
@@ -117,7 +119,7 @@ MFC には、割り当てられた後、解放されていないメモリを検�
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> メモリ割り当ての追跡
 MFC では、通常 [new](/previous-versions/tz7sxz99(v=vs.140)) 演算子が使用される場所で **DEBUG_NEW** マクロを使用して、メモリ リークの位置を特定できます。 プログラムのデバッグ バージョンでは、 `DEBUG_NEW` はメモリを割り当てた各オブジェクトのファイル名と行番号を記録します。 プログラムのリリース バージョンをコンパイルするときは、 `DEBUG_NEW` は単に **new** 演算として機能し、ファイル名や行番号の情報を記録しません。 したがって、プログラムのリリース バージョンの実行速度が低下することはありません。
 
-ソース ファイルで次のように `DEBUG_NEW` マクロを定義すると、プログラム全体を書き直さなくても、 **new**の代わりにこのマクロを使用できます。
+ソース ファイルで次のように `DEBUG_NEW` マクロを定義すると、プログラム全体を書き直さなくても、 **new** の代わりにこのマクロを使用できます。
 
 ```cpp
 #define new DEBUG_NEW
@@ -138,7 +140,7 @@ MFC フレームワークのデバッグ バージョンでは自動的に `DEBU
 
   **afxMemDF を使用して特定のメモリ診断機能を選択するには**
 
-- メモリ診断機能をより細かく制御するには、MFC のグローバル変数 [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))に値を設定することにより、個々のメモリ診断機能を個別にオン、オフします。 この変数には、 **afxMemDF**列挙型で指定される次の値を設定できます。
+- メモリ診断機能をより細かく制御するには、MFC のグローバル変数 [afxMemDF](/previous-versions/ahe4a83t(v=vs.140))に値を設定することにより、個々のメモリ診断機能を個別にオン、オフします。 この変数には、 **afxMemDF** 列挙型で指定される次の値を設定できます。
 
   |[値]|説明|
   |-----------|-----------------|

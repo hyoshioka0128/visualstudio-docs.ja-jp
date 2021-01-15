@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b934c6cb7c2a6ba98113a5e68091ab53f54b1423
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833365"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150510"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>テスト エクスプローラーを使用して単体テストを実行する
 
@@ -377,6 +377,16 @@ Visual Studio Enterprise エディションで利用可能な Visual Studio の�
 > [!NOTE]
 > 抽象クラスではテストを実行できません。テストは抽象クラスでのみ定義され、インスタンス化されないためです。 抽象クラスでテストを実行するには、抽象クラスから誘導されるクラスを作成します。
 
+::: moniker range=">=vs-2019"
+## <a name="test-audio-cue"></a>オーディオ キューのテスト
+テスト エクスプローラーを使用すると、テストの実行が完了したときに音を鳴らすことができます。 サウンドには 2 種類あり、1 つは、テストの実行が成功し、すべてのテストに合格したことを示し、もう 1 つは、テストが完了し、少なくとも 1 つのテストに失敗したことを示します。 これらのサウンドは、Windows 10 の既定の [サウンド] ダイアログで設定できます。 この機能は、Visual Studio 2019 Update 16.9 Preview 3 以降で使用できます。
+
+1. Windows 10 の既定の [サウンド] ダイアログを開きます。
+2. **[サウンド]** タブに移動します。
+3. **[Microsoft Visual Studio]** カテゴリを見つけます。 **[テストの実行成功]** または **[テストの実行失敗]** のサウンドを選択して、事前設定済みのサウンドを選択するか、独自のオーディオ ファイルを参照します。  
+![Windows 10 の [サウンド] ダイアログ](../test/media/default-windows-10-sound-dialog.png)
+
+::: moniker-end
 ## <a name="see-also"></a>関連項目
 
 - [コードの単体テスト](../test/unit-test-your-code.md)

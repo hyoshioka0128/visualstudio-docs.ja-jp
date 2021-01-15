@@ -1,5 +1,7 @@
 ---
 title: '[ページ ファイル] タブ ([プロセス プロパティ] ダイアログ ボックス) | Microsoft Docs'
+description: '[プロセス プロパティ] の [ページ ファイル] タブを使用すると、プロセスのページング ファイルを確認することができます。 この記事では、使用可能な設定について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dc3b0aca1b58c18ae4038540c14fc4dbfe4036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904108"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975057"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>[ページ ファイル] タブ ([プロセス プロパティ] ダイアログ ボックス)
 **[ページ ファイル]** タブを使用し、プロセスのページング ファイルを調べます。 [[プロセス プロパティ]](../debugger/process-properties-dialog-box.md) ダイアログ ボックスを表示するには、[[プロセス ビュー]](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

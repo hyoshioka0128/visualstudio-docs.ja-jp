@@ -1,5 +1,7 @@
 ---
 title: デバッガーでの GPU スレッドの表示 | Microsoft Docs
+description: GPU スレッド ウィンドウを使用して、Visual Studio でデバッグ中のアプリケーション内の GPU 上で実行されているスレッドを調べて操作します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbb49a1017fb0bc65300f3c16050db4954e1103
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5919ac657d828e87e48b8cfb3f4f643e1187f701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348718"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150588"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>方法: GPU スレッド ウィンドウを使用する (C++)
 GPU スレッド ウィンドウでは、デバッグ中のアプリケーション内の GPU 上で実行されているスレッドを調べて操作できます。 GPU 上で実行されるアプリケーションの詳細については、「[C++ AMP の概要](/cpp/parallel/amp/cpp-amp-overview)」を参照してください。
@@ -52,7 +54,7 @@ GPU スレッド ウィンドウでは、デバッグ中のアプリケーショ
 
 ### <a name="to-display-the-gpu-threads-window"></a>GPU スレッド ウィンドウを表示するには
 
-1. **ソリューション エクスプローラー**で、プロジェクトのショートカット メニューを開き、 **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** で、プロジェクトのショートカット メニューを開き、 **[プロパティ]** をクリックします。
 
 2. プロジェクトの **[プロパティ ページ]** ウィンドウで、 **[構成プロパティ]** の **[デバッグ]** をクリックします。
 
