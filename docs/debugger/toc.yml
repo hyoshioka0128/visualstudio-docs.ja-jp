@@ -180,8 +180,6 @@
                   href: native-run-time-checks-customization.md
                 - name: ランタイム エラー レポート関数の記述
                   href: how-to-write-a-run-time-error-reporting-function.md
-                - name: C ランタイム ライブラリなしのランタイム チェックを使用する
-                  href: using-run-time-checks-without-the-c-run-time-library.md
         - name: デバッガーでのシンボル (.pdb) ファイルとソース ファイルを指定する
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: ユーザー コードをデバッグする
