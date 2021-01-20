@@ -17,16 +17,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238624"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533446"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 
-MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、 *Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
+MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
 
 ## <a name="common-items"></a>共通の項目
 
@@ -189,5 +189,4 @@ Visual Basic コンパイラによってその名前空間がインポートさ�
 ## <a name="see-also"></a>関連項目
 
 - [MSBuild プロジェクトの共通プロパティ](../msbuild/common-msbuild-project-properties.md)
-- [.NET Core SDK プロジェクトの MSBuild プロパティ](/dotnet/core/project-sdk/msbuild-props)
 - [一般的な MSBuild 項目メタデータ](common-msbuild-item-metadata.md)

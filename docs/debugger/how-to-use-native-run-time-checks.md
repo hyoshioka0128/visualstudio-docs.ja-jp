@@ -39,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150640"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240245"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>方法: ネイティブ ランタイム チェックを使用する
 Visual Studio C++ プロジェクトでは、ネイティブ [runtime_checks](/cpp/preprocessor/runtime-checks) を使用して、次のような一般的なランタイム エラーをキャッチできます。
@@ -68,8 +68,6 @@ Visual Studio C++ プロジェクトでは、ネイティブ [runtime_checks](/c
   このセクションのその他のトピックでは、次の内容について説明します。
 
 - [C ランタイム ライブラリによるネイティブ ランタイム チェックのカスタマイズ](../debugger/native-run-time-checks-customization.md)
-
-- [C ランタイム ライブラリなしのランタイム チェックの使用方法](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>デバッグ ビルドでネイティブ ランタイム チェックを有効にするには
 
