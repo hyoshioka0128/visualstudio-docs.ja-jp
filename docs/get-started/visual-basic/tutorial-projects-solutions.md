@@ -42,7 +42,7 @@ ms.locfileid: "94901272"
 プロジェクトの概念を学習して理解するための演習として、ソリューションとプロジェクトをゼロから構築します。 Visual Studio の一般的な使い方として、新しいプロジェクトを作成するときに、Visual Studio で用意されているさまざまなプロジェクト "*テンプレート*" を使うことがよくあります。
 
 > [!NOTE]
-> Visual Studio でアプリを開発するにあたり、ソリューションとプロジェクトは必須ではありません。 また、コードが含まれているフォルダーを開いて、コードの作成、ビルド、およびデバッグを開始することもできます。 たとえば、[GitHub](https://github.com/) リポジトリを複製しても、それには Visual Studio のプロジェクトとソリューションが含まれていない場合があります。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。
+> Visual Studio でアプリを開発するにあたり、ソリューションとプロジェクトは必須ではありません。 また、コードが含まれているフォルダーを開いて、コードの作成、ビルド、およびデバッグを開始することもできます。 たとえば、[GitHub](https://github.com/) リポジトリをクローンしても、それには Visual Studio のプロジェクトとソリューションが含まれていない場合があります。 詳細については、「[プロジェクトまたはソリューションを使用せずに Visual Studio でコードを開発する](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)」を参照してください。
 
 ## <a name="solutions-and-projects"></a>ソリューションとプロジェクト
 

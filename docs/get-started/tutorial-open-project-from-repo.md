@@ -86,7 +86,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. リポジトリの場所を入力し、**[複製]** を選択します。
 
-   ![[コードを複製またはチェックアウトする] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![[リポジトリのクローン] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    Visual Studio でリポジトリからプロジェクトが開かれます。
 
@@ -147,7 +147,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. **[リポジトリを参照する]** セクションで、**[Azure DevOps]** を選択します。
 
-   ![[コードを複製またはチェックアウトする] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+   ![[リポジトリのクローン] ウィンドウを表示する](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    サインイン ウィンドウが表示される場合は、アカウントにサインインします。
 

@@ -30,7 +30,7 @@ MNIST データベースには、60,000 例のトレーニング セットと、
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
-端末で次のコマンドを実行します。
+ターミナルで次のコマンドを実行します。
 
 ```cmd
 C:\>pip.exe install tensorflow
