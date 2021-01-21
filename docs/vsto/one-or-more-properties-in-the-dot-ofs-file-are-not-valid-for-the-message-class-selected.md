@@ -1,5 +1,7 @@
 ---
-title: .ofs ファイルの 1 つ以上のプロパティが、選択されたメッセージ クラスに対して有効ではありません
+title: メッセージクラスの .ofs ファイルのプロパティが無効です "
+description: .Ofs ファイルの1つ以上のプロパティが、選択されたメッセージクラスに対して有効でない場合に発生するエラーを修正する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b655a7bb6ab4b9ab971c0edd775aa8f29150dead
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977862"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525090"
 ---
-# <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>.ofs ファイルの 1 つ以上のプロパティが、選択されたメッセージ クラスに対して有効ではありません
-  このエラーは、Outlook でデザインされたフォーム領域をインポートするときに表示されますが、フォーム領域の1つ以上のフィールドが、 **新しいフォーム領域** ウィザードの最後のページで選択したメッセージクラスと互換性がありません。
+# <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Message クラスの .ofs ファイルのプロパティが無効です。
+
+  Outlook でデザインされたフォーム領域をインポートするときに、フォーム領域の1つ以上のフィールドが、 **新しいフォーム領域** ウィザードの最後のページで選択したメッセージクラスと互換性がない場合、"1 つ以上のプロパティが、選択されたメッセージクラスに対して有効ではありません" というエラーが表示されます。
 
 たとえば、 **新しいフォーム領域** ウィザードの最後のページで **[仕事 (IPM.Task)]** を選択したとします。 フォーム領域に [ **会社住所** ] フィールドがある場合は、このエラーが表示されます。これは、タスクに勤務先住所がないためです。 そのため、[ **ビジネスアドレス** ] フィールドはメッセージクラスと互換性がありません `IPM.Task` 。
 
@@ -30,7 +33,7 @@ ms.locfileid: "62977862"
 
 - **新しいフォーム領域** ウィザードの最後のページで、フォーム領域のフィールドと互換性のあるメッセージ クラスを選択します。
 
-- Outlook のフォームデザイナーで、メッセージクラスと互換性のないフィールドを削除します。 **新しいフォーム領域**ウィザードの最後のページで選択しようとしているフィールドを削除します。
+- Outlook のフォームデザイナーで、メッセージクラスと互換性のないフィールドを削除します。 **新しいフォーム領域** ウィザードの最後のページで選択しようとしているフィールドを削除します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [チュートリアル: Outlook でデザインされたフォーム領域をインポートする](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

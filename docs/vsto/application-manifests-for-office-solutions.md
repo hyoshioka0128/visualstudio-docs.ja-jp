@@ -1,5 +1,7 @@
 ---
 title: Office ソリューション用アプリケーションマニフェスト
+description: アプリケーションマニフェストが、Microsoft Office ソリューションに読み込まれるアセンブリを記述する XML ファイルであることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6272f145ee2c7ef2a91cc635112e440e6404457
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531509"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847924"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office ソリューション用アプリケーションマニフェスト
   アプリケーション マニフェストは、Microsoft Office ソリューションに読み込まれるアセンブリについて記述した XML ファイルです。 Visual Studio の Microsoft Office 開発ツールでは、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md) リファレンスで定義されているアプリケーションマニフェストスキーマを使用します。
@@ -89,7 +91,7 @@ ms.locfileid: "85531509"
 |[&#60;formRegion&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|フォーム領域を含んでいる Outlook VSTO アドインでのみ必須です。|**名前**|
 |[&#60;vstoRuntime&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|必須。 Office ソリューションでサポートされる、Visual Studio Tools for Office ランタイムの特定のバージョンを記述します。|**解除**<br /><br /> **version**<br /><br /> **supportUrl**|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  Office ソリューションのアプリケーション マニフェストと配置マニフェストは、手動で編集できます。 その後、マニフェスト生成および編集ツール (*mage.exe* と *mageui.exe*) を使用して、アプリケーションマニフェストと配置マニフェストに再署名する必要があります。 詳細については、「 [方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
 
 ## <a name="file-location"></a>ファイルの場所

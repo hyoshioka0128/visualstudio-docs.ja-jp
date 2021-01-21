@@ -1,5 +1,7 @@
 ---
 title: '方法: カスタムプロパティを追加する |Microsoft Docs'
+description: Visual Studio の BDC エクスプローラーでプロパティエディターを使用して、SharePoint の Business Data Connectivity (BDC) モデルにカスタムプロパティを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e79b18b4d2b388d2ff0387fed24778f8db03fd54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017075"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915480"
 ---
 # <a name="how-to-add-a-custom-property"></a>方法: カスタムプロパティを追加する
-  **プロパティエディター**を使用して、モデルにカスタムプロパティを追加できます。 コードでこれらのプロパティにアクセスして、実行時に接続文字列やその他のデータなどの情報を取得できます。
+  **プロパティエディター** を使用して、モデルにカスタムプロパティを追加できます。 コードでこれらのプロパティにアクセスして、実行時に接続文字列やその他のデータなどの情報を取得できます。
 
 ### <a name="to-add-a-custom-property"></a>カスタムプロパティを追加するには
 
-1. **BDC エクスプローラー**で、カスタムプロパティを適用するモデル要素を表すノードを選択します。
+1. **BDC エクスプローラー** で、カスタムプロパティを適用するモデル要素を表すノードを選択します。
 
-2. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
+2. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
 
 3. [ **プロパティ** ] ウィンドウで、[ **カスタムプロパティ** ] プロパティを選択し、省略記号ボタン (![ASP.NET Mobile Designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
 
@@ -44,7 +46,7 @@ ms.locfileid: "86017075"
 6. カスタムプロパティの [ **値** ] フィールドに値を指定し、[ **OK** ] をクリックします。
 
 ## <a name="see-also"></a>関連項目
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)
+- [SharePoint へのビジネス データの統合](../sharepoint/integrating-business-data-into-sharepoint.md)

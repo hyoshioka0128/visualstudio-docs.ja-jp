@@ -1,23 +1,23 @@
 ---
 title: Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 07/29/2020
+ms.date: 10/26/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
-ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801829"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92903625"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
 
-[[ダウンロード]](https://my.visualstudio.com/downloads/featured) ページには、サブスクリプションに含まれるダウンロードのみが表示されます。  複数のサブスクリプションまたはプログラムのメンバーシップがある場合は、所有している**最高サブスクリプション**のダウンロードが表示されます。現在、別のサブスクリプションを表示している場合でも同じです。  たとえば、ご利用の Visual Studio Enterprise サブスクリプションと Visual Studio Professional サブスクリプションが、どちらも同じサインイン ID に関連付けられている場合、現在 Professional サブスクリプションの特典が表示されていても、Enterprise サブスクリプションに含まれるダウンロードが表示されます。  
+[[ダウンロード]](https://my.visualstudio.com/downloads/featured) ページには、サブスクリプションに含まれるダウンロードのみが表示されます。  複数のサブスクリプションまたはプログラムのメンバーシップがある場合は、所有している **最高サブスクリプション** のダウンロードが表示されます。現在、別のサブスクリプションを表示している場合でも同じです。  たとえば、ご利用の Visual Studio Enterprise サブスクリプションと Visual Studio Professional サブスクリプションが、どちらも同じサインイン ID に関連付けられている場合、現在 Professional サブスクリプションの特典が表示されていても、Enterprise サブスクリプションに含まれるダウンロードが表示されます。  
 
 サブスクリプションが職場または学校によって提供されている場合は、サブスクリプション管理者がダウンロードにアクセスできるかどうかを制御します。 ダウンロードへのアクセスを無効にすると、プロダクト キーへのアクセスも無効になります。 ダウンロードとプロダクトキーへのアクセス権がなく、必要な場合は、[管理者に問い合わせてください](contact-my-admin.md)。
 
@@ -53,10 +53,10 @@ ms.locfileid: "88801829"
 > ![Visual Studio 2019 のプロダクト キーの要求](_img/subscriber-downloads/vs2019-claim-keys.png "[キーの要求] を選択して、残りのキーを要求します。")
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 プロダクト キーの検索、要求、エクスポートの詳細については、プロダクト キーのドキュメントをご覧ください。

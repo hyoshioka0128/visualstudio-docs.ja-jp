@@ -1,5 +1,7 @@
 ---
 title: 設定を同期する
+description: 同じ個人アカウントにサインインすることで、複数のコンピューター間で Visual Studio 設定を同期させる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/18/2020
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3129543656c0defe09543b8531d8a10998791083
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 310e716f890dcc2185d6ebf6e60411934a1761f4
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85285206"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560916"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>複数のコンピューター間で Visual Studio 設定を同期する
 
@@ -41,7 +43,7 @@ ms.locfileid: "85285206"
 
   - **[環境]**  >  **[スタートアップ]** オプション ページのすべての設定。
 
-  - **テキスト エディター**のオプション ページでのすべての設定。[コード スタイルのユーザー設定](code-styles-and-code-cleanup.md)など。
+  - **テキスト エディター** のオプション ページでのすべての設定。[コード スタイルのユーザー設定](code-styles-and-code-cleanup.md)など。
 
   - **[XAML デザイナー]** オプション ページのすべての設定。
 
@@ -87,7 +89,7 @@ Visual Studio の異なるサイド バイ サイド インストールの間で
 
 ## <a name="reset-synchronized-settings"></a>同期された設定をリセットする
 
-すべての設定を既定にリセットするには、Visual Studio にサインインし、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、**設定のインポートとエクスポート ウィザード**を開きます。 **[すべての設定をリセット]** を選択し、ウィザードの残りの手順に従います。
+すべての設定を既定にリセットするには、Visual Studio にサインインし、 **[ツール]**  >  **[設定のインポートとエクスポート]** を選択し、**設定のインポートとエクスポート ウィザード** を開きます。 **[すべての設定をリセット]** を選択し、ウィザードの残りの手順に従います。
 
 ## <a name="see-also"></a>関連項目
 

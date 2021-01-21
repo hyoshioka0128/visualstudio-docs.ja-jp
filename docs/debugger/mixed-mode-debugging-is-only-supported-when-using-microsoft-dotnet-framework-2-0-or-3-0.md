@@ -1,5 +1,7 @@
 ---
 title: 混合モード デバッグは Microsoft .NET Framework 2.0 または 3.0 を使用している場合にのみサポートされます | Microsoft Docs
+description: 2\.0 より前のバージョンの Microsoft .NET Framework では、64 ビット プロセスの混合モード デバッグはサポートされません。 回避策については、こちらの記事を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b20ef6b81e4d7162fd230d9d0c3437fe1b5232c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aa257db5059930d16685daee5aea2b6660300292
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730916"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975239"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>混合モード デバッグは、Microsoft .NET Framework 2.0 以上を使用している場合にのみサポートされます
 2\.0 より前のバージョンの Microsoft .NET Framework では、64 ビット プロセスの混合モード デバッグはサポートされません。 つまり、デバッグ中にマネージド コードからネイティブ コードにステップ インすることや、ネイティブ コードからマネージド コードにステップ インすることはできません。
@@ -35,7 +37,7 @@ ms.locfileid: "72730916"
 
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>オペレーティング システムを 32 ビットに変更するには (Visual Basic または C#)
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
 
 2. プロパティ ページで、 **[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
 
@@ -45,7 +47,7 @@ ms.locfileid: "72730916"
 
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>オペレーティング システムを 32 ビットに変更するには (C/C++)
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
 
      プロパティ ページで **[プラットフォーム]** をクリックして、プラットフォームの一覧から **[Win32]** を選択します。
 

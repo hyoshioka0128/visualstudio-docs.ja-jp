@@ -1,5 +1,7 @@
 ---
 title: SharePoint ワークフロー ソリューションの作成 | Microsoft Docs
+description: Sharepoint Web サイトのドキュメントとリスト アイテムのライフサイクルを管理するカスタム ワークフローを作成するには、ツールを使用して SharePoint ワークフロー ソリューションを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -20,16 +22,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c787009577735213437140513ec095f81c3f43b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd3f88df661537434c79a8b0049f90ddbce14c70
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015290"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850612"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>SharePoint ワークフロー ソリューションの作成
 
-[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint Web サイト上のドキュメントとリスト項目のライフ サイクルを管理するカスタム ワークフロー作成用のツールが用意されています。 用意されている項目として、デザイナー、一連のアクティビティ コントロール、必要なアセンブリ参照があります。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、ワークフローの作成および構成に役立つ **SharePoint カスタマイズ ウィザード**も含まれています。
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint Web サイト上のドキュメントとリスト項目のライフ サイクルを管理するカスタム ワークフロー作成用のツールが用意されています。 用意されている項目として、デザイナー、一連のアクティビティ コントロール、必要なアセンブリ参照があります。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、ワークフローの作成および構成に役立つ **SharePoint カスタマイズ ウィザード** も含まれています。
 
 SharePoint の詳細については、[Microsoft SharePoint 製品およびテクノロジ](/sharepoint/dev/)のページを参照してください。
 
@@ -39,7 +41,7 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
  SharePoint ワークフローは [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で作成し、SharePoint Web サイトに配置することができます。 SharePoint への配置後、ワークフローをライブラリまたはリストに関連付けます。 その後、自動的にまたはプロセスによって、あるいはユーザーが手動で起動できます。 ワークフロー操作の詳細については、「[Visual Studio を使用して SharePoint ワークフローを開発する](/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio)」を参照してください。
 
 ## <a name="create-custom-sharepoint-workflows"></a>カスタム SharePoint ワークフローを作成する
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] では、2 つの SharePoint ワークフロー プロジェクトを使用できます。**シーケンシャル ワークフロー**と**ステート マシン ワークフロー**です。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] では、2 つの SharePoint ワークフロー プロジェクトを使用できます。**シーケンシャル ワークフロー** と **ステート マシン ワークフロー** です。
 
  "*シーケンシャル ワークフロー*" は一連のステップを表します。 最後のアクティビティが完了するまで、ステップが 1 つずつ実行されます。 シーケンシャル ワークフローの実行は常に、厳密に逐次処理されます。 外部イベントを受信する場合や、並列ロジック フローを含む場合があるため、実行の正確な順序は一定でない可能性があります。 次の図は、シーケンシャル ワークフローの例を示しています。
 
@@ -52,18 +54,18 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
  ワークフローの種類の詳細については、「[ワークフローの種類](/previous-versions/office/developer/sharepoint-2010/ms468447(v=office.14))」を参照してください。
 
 ### <a name="use-the-wizard"></a>ウィザードを使用する
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で SharePoint ワークフロー プロジェクトを作成する場合は、まず、**SharePoint カスタマイズ ウィザード**で設定を指定します。 このウィザードでは、これらの設定を使用して**ソリューション エクスプローラー**でプロジェクトを作成します。 このプロジェクトには、コード ファイル、ワークフローの配置に使用される複数のファイル、カスタム SharePoint ワークフローを作成するために必要なアセンブリへの参照が含まれています。
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] で SharePoint ワークフロー プロジェクトを作成する場合は、まず、**SharePoint カスタマイズ ウィザード** で設定を指定します。 このウィザードでは、これらの設定を使用して **ソリューション エクスプローラー** でプロジェクトを作成します。 このプロジェクトには、コード ファイル、ワークフローの配置に使用される複数のファイル、カスタム SharePoint ワークフローを作成するために必要なアセンブリへの参照が含まれています。
 
- ワークフローを作成した後、プロパティ ウィンドウでそのプロパティを変更できます。 ほとんどのワークフロー プロパティはプロパティ ウィンドウで直接変更できますが、一部のプロパティについては、省略記号ボタン (![ASP.NET モバイル デザイナーの省略記号](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックして値を変更する必要があります。 このボタンによって **SharePoint カスタマイズ ウィザード**が再起動されます。 プロパティ値を変更した後、 **[完了]** ボタンを選択して設定を確定します。
+ ワークフローを作成した後、プロパティ ウィンドウでそのプロパティを変更できます。 ほとんどのワークフロー プロパティはプロパティ ウィンドウで直接変更できますが、一部のプロパティについては、省略記号ボタン (![ASP.NET モバイル デザイナーの省略記号](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックして値を変更する必要があります。 このボタンによって **SharePoint カスタマイズ ウィザード** が再起動されます。 プロパティ値を変更した後、 **[完了]** ボタンを選択して設定を確定します。
 
 > [!NOTE]
 > **[ワークフローの種類]** プロパティは読み取り専用であるため、変更できません。 ワークフローの種類を変更したい場合は、別のワークフローを作成する必要があります。
 
 ## <a name="design-a-sharepoint-workflow"></a>SharePoint ワークフローを設計する
- ビジネス プロセスのすべてのステップを定義したら、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ワークフロー デザイナーを使用して SharePoint ワークフローを設計します。 デザイナーを開くには、**ソリューション エクスプローラー**で Workflow1.cs または Workflow1.vb をダブルクリックするか、それらのファイルのいずれかのショートカット メニューを開いて **[開く]** を選択します。
+ ビジネス プロセスのすべてのステップを定義したら、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ワークフロー デザイナーを使用して SharePoint ワークフローを設計します。 デザイナーを開くには、**ソリューション エクスプローラー** で Workflow1.cs または Workflow1.vb をダブルクリックするか、それらのファイルのいずれかのショートカット メニューを開いて **[開く]** を選択します。
 
 ### <a name="activities"></a>アクティビティ
- ワークフローを設計するには、**ツールボックス**から、デザイナーの*ワークフロー スケジュール*にアクティビティを追加します。 ワークフロースケジュールには、一連のアクティビティが実行される順序で含まれています。
+ ワークフローを設計するには、**ツールボックス** から、デザイナーの *ワークフロー スケジュール* にアクティビティを追加します。 ワークフロースケジュールには、一連のアクティビティが実行される順序で含まれています。
 
  次の 2 種類のアクティビティがあります。
 
@@ -71,13 +73,13 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
 
 - "*複合アクティビティ*" には、他のアクティビティが含まれています。たとえば、条件付きアクティビティに 2 つの分岐が含まれている場合があります。
 
-  どちらの種類のアクティビティも、**ツールボックス**で使用できます。
+  どちらの種類のアクティビティも、**ツールボックス** で使用できます。
 
   アクティビティにはプロパティ、メソッド、およびイベントを設定できます。 アクティビティのプロパティを設定するには、 **[プロパティ]** ウィンドウを使用します。
 
   カスタム アクティビティを作成することもできます。 詳細については、「[チュートリアル:サイトのカスタム ワークフロー アクティビティの作成](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)」を参照してください。
 
-  アクティビティは、**ツールボックス**の次のタブで構成されています。
+  アクティビティは、**ツールボックス** の次のタブで構成されています。
 
 - **SharePoint ワークフロー**
 
@@ -122,7 +124,7 @@ SharePoint の詳細については、[Microsoft SharePoint 製品およびテ�
  SharePoint ライブラリまたはリストの項目のプロパティを使用して、ユーザーから情報を収集することもできます。 メイン コード ファイル (Workflow1.cs または Workflow1.vb) で、`workflowProperties` という名前の Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties クラスのインスタンスを宣言します。 コード内で `workflowProperties` オブジェクトを使用して、ライブラリまたは一覧のプロパティにアクセスします。 例については、「[チュートリアル: SharePoint ワークフロー ソリューションの作成とデバッグ](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)」を参照してください。
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>SharePoint ワークフロー テンプレートをデバッグする
- SharePoint ワークフロー プロジェクトは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の他の Web ベース プロジェクトをデバッグする場合と同じようにデバッグできます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを起動すると、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、**SharePoint カスタマイズ ウィザード**で指定した設定を使用して適切な SharePoint Web サイトが開かれ、ワークフロー テンプレートが適切なライブラリまたはリストに自動的に関連付けられます。 また、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーが *w3wp.exe* という [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] プロセスにアタッチされます。
+ SharePoint ワークフロー プロジェクトは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の他の Web ベース プロジェクトをデバッグする場合と同じようにデバッグできます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを起動すると、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、**SharePoint カスタマイズ ウィザード** で指定した設定を使用して適切な SharePoint Web サイトが開かれ、ワークフロー テンプレートが適切なライブラリまたはリストに自動的に関連付けられます。 また、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] によって、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーが *w3wp.exe* という [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] プロセスにアタッチされます。
 
  ワークフローをテストするには、手動で開始する必要があります。 詳細については、「[SharePoint ソリューションのデバッグ](../sharepoint/debugging-sharepoint-solutions.md)」の「ワークフローのデバッグ」のセクションを参照してください。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Web アプリケーションのデバッグの詳細については、[Web アプリケーションとスクリプトのデバッグ](../debugger/how-to-enable-debugging-for-aspnet-applications.md)に関するページを参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: WriteAllTLogs |Microsoft Docs
+description: すべてのスレッドとコンテキストの追跡ログを書き込む WriteAllTLogs の構文、要件、および戻り値について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7eadb30ee25b1182be5deb12feebd5ef280ebf4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 754b34b872ba0f0f677a194194b2ff893e7107e1
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77630679"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047479"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 
@@ -44,7 +46,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 
 ## <a name="return-value"></a>戻り値
 
- 追跡コンテキストが作成された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
+ 追跡コンテキストが作成された場合、 **HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
 

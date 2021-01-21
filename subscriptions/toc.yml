@@ -16,8 +16,6 @@
               href: vscloud-billing-faq.md
             - name: CSP のための購入
               href: vscloud-csp.md
-        - name: Visual Studio と GitHub Enterprise
-          href: access-github.md
         - name: Microsoft Partner Network
           items:
             - name: パートナー向けのサブスクリプション
@@ -46,10 +44,14 @@
       href: using-the-subscriber-portal.md
     - name: サブスクリプションを管理する
       href: manage-vs-subscriptions.md
-    - name: サブスクリプション管理者に連絡してください
+    - name: サブスクリプションが期限切れになったとき
+      href: subscription-expiration.md
+    - name: サブスクリプション管理者に連絡する
       href: contact-my-admin.md
     - name: 利点
       items:
+        - name: ベネフィットについて
+          href: about-benefits.md
         - name: ツール
           items:
             - name: Azure DevTest の個人クレジット
@@ -64,6 +66,8 @@
               href: vs-cast.md
             - name: CloudPilot
               href: vs-cloudpilot.md
+            - name: GitHub Enterprise
+              href: access-github.md
             - name: エンタープライズ向け Microsoft 365 アプリ
               href: microsoft-365-apps-for-enterprise.md
             - name: Microsoft 365 開発者
@@ -100,6 +104,12 @@
               href: vs-concierge-chat.md
             - name: テクニカル サポート
               href: vs-tech-support.md
+            - name: 開発者コミュニティ
+              href: vs-developer-community.md
+            - name: Microsoft Q&A
+              href: vs-microsoft-qa.md
+            - name: Microsoft Tech Community
+              href: vs-microsoft-tech-community.md
 - name: ソフトウェアとキー
   items:
     - name: ソフトウェアのダウンロード
@@ -141,7 +151,7 @@
         - name: 顧客を管理するパートナー
           href: open-migration.md
         - name: 'ビデオ チュートリアル:管理ポータルにアクセスする'
-          href: 'https://youtu.be/plSu6fpi7UI'
+          href: 'https://www.microsoft.com/videoplayer/embed/RE4th6L'
     - name: 管理ポータルの使用
       items:
         - name: スーパー管理者と管理者
@@ -178,7 +188,7 @@
           href: aliasing.md
         - name: 個人用電子メール サインインを持つサブスクライバー
           href: personal-email-sign-ins.md
-        - name: GitHub Enterprise による Visual Studio の管理
+        - name: Visual Studio Subscriptions with GitHub Enterprise の管理
           href: assign-github.md
 - name: リソース
   items:

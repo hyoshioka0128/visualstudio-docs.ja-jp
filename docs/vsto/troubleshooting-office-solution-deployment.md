@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの配置のトラブルシューティング
+description: Office ソリューションを配置するときに発生する可能性のある一般的な問題を解決する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fc8f336c3d43fb1f896d9e5e6b4d4d12c13d4064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234979"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522976"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office ソリューションの配置のトラブルシューティング
   このトピックでは、Office ソリューションを配置するときに発生する可能性がある一般的な問題を解決する方法について説明します。
@@ -30,7 +32,7 @@ ms.locfileid: "87234979"
  Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされるエラー メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。 詳細については、「 [Office ソリューションのイベントログ](../vsto/event-logging-for-office-solutions.md)」を参照してください。
 
 ## <a name="change-the-assembly-name-causes-conflicts"></a>アセンブリ名を変更すると競合が発生する
- ソリューションを配置した後に**プロジェクトデザイナー**の [**アプリケーション**] ページで [**アセンブリ名**] の値を変更すると、発行ツールによって、1つの*Setup.exe*ファイルと2つの配置マニフェストを含むセットアップパッケージが変更されます。 2 つのマニフェスト ファイルを配置すると、次のような状況が発生する場合があります。
+ ソリューションを配置した後に **プロジェクトデザイナー** の [**アプリケーション**] ページで [**アセンブリ名**] の値を変更すると、発行ツールによって、1つの *Setup.exe* ファイルと2つの配置マニフェストを含むセットアップパッケージが変更されます。 2 つのマニフェスト ファイルを配置すると、次のような状況が発生する場合があります。
 
 - エンド ユーザーが両方のバージョンをインストールすると、アプリケーションは両方の VSTO アドインを読み込みます。
 
@@ -60,7 +62,7 @@ ms.locfileid: "87234979"
  セットアップ パッケージには、Office ソリューションと共に配置される必須コンポーネントとして、.NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]、および Office プライマリ相互運用機能アセンブリを追加できます。 プライマリ相互運用機能アセンブリをインストールする方法の詳細については、「 [office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md) 」および「 [方法: office プライマリ相互運用機能アセンブリをインストール](../vsto/how-to-install-office-primary-interop-assemblies.md)する」を参照してください。
 
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Localhost を使用して発行すると、インストールの問題が発生することがある
- `http://localhost`ドキュメントレベルのソリューションの発行場所またはインストール先としてを使用すると、**発行ウィザード**によって文字列が実際のコンピューター名に変換されることはありません。 この場合は、ソリューションを開発用コンピューター上にインストールする必要があります。 配置ソリューションに開発用コンピューター上の IIS を使用させるには、HTTP、HTTPS、FTP のすべての場所について、localhost ではなく完全修飾名を使用します。
+ `http://localhost`ドキュメントレベルのソリューションの発行場所またはインストール先としてを使用すると、**発行ウィザード** によって文字列が実際のコンピューター名に変換されることはありません。 この場合は、ソリューションを開発用コンピューター上にインストールする必要があります。 配置ソリューションに開発用コンピューター上の IIS を使用させるには、HTTP、HTTPS、FTP のすべての場所について、localhost ではなく完全修飾名を使用します。
 
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>更新されたアセンブリではなく、キャッシュされたアセンブリが読み込まれる
  プロジェクトの出力パスがネットワーク ファイル共有上にあり、アセンブリが厳密な名前で署名されていて、カスタマイズ アセンブリのバージョンが変更されていない場合、.NET Framework アセンブリ ローダーである fusion は、キャッシュしたアセンブリのコピーを読み込みます。 アセンブリを更新しても、これらの条件が満たされるとキャッシュしたコピーが読み込まれるため、プロジェクトを次回実行するときに更新は表示されません。
@@ -73,7 +75,7 @@ ms.locfileid: "87234979"
 
 2. **[アプリケーション]** ページで、 **[アセンブリ情報]** を選択します。
 
-3. **アセンブリのバージョン**のリビジョン番号、3番目のフィールドをワイルドカード () に設定し \* ます。 たとえば、"1.0. *" のようになります。  次に、[ **OK** ] をクリックします。
+3. **アセンブリのバージョン** のリビジョン番号、3番目のフィールドをワイルドカード () に設定し \* ます。 たとえば、"1.0. *" のようになります。  次に、[ **OK** ] をクリックします。
 
    アセンブリのバージョンを変更したら、厳密な名前でアセンブリに署名します。fusion が最新バージョンのカスタマイズを読み込むようになります。
 
@@ -121,7 +123,7 @@ ms.locfileid: "87234979"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Web から配置マニフェストを開いて ClickOnce ソリューションをインストールすることはできません
  ユーザーは、Web で配置マニフェストを開くことにより、Office ソリューションをインストールできます。 ただし、インターネットインフォメーションサービス (IIS) の一部のインストールでは、 *.vsto* ファイル名拡張子はブロックされます。 Office ソリューションの配置に使用する前に、IIS で MIME の種類を定義する必要があります。
 
- IIS 7 で MIME の種類を定義する方法の詳細については、「 [mime の種類を追加する (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx)」を参照してください。
+ IIS 7 で MIME の種類を定義する方法の詳細については、「 [mime の種類を追加する (IIS7)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725608(v=ws.10))」を参照してください。
 
  拡張子を **.vsto** に、MIME の種類を " **application/x-ms-vsto**" に設定します。
 

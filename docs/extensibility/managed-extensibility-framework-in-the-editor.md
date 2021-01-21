@@ -1,5 +1,7 @@
 ---
 title: エディターでの Managed Extensibility Framework |Microsoft Docs
+description: Managed Extensibility Framework について説明します。これにより、Visual Studio SDK でエディターを拡張するために、独自のコンポーネントを作成できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 888c5206b87079cf9fa91cb68e9801cb3c4f8c1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702877"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615591"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>エディターでの Managed Extensibility Framework
 エディターは、Managed Extensibility Framework (MEF) コンポーネントを使用して作成されます。 独自の MEF コンポーネントをビルドしてエディターを拡張することができます。また、コードでエディターコンポーネントを使用することもできます。
@@ -82,7 +84,7 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>MEF コンポーネントパーツからエディター機能を使用するには
 
-1. グローバルアセンブリキャッシュ (GAC) およびエディターアセンブリにある *System.Composition.ComponentModel.dll*への参照を追加します。
+1. グローバルアセンブリキャッシュ (GAC) およびエディターアセンブリにある *System.Composition.ComponentModel.dll* への参照を追加します。
 
 2. 関連する using ディレクティブを追加します。
 
@@ -102,5 +104,5 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 5. アセンブリをコンパイルしたら、*.. に配置します。\* Visual Studio のインストールの \Common7\IDE\Components フォルダー。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)

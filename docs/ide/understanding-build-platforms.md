@@ -1,5 +1,7 @@
 ---
 title: ビルド プラットフォームについて
+description: Visual Studio でさまざまな対象プラットフォームに適用される、さまざまなバージョンのソリューションやプロジェクトのプロパティを保存する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3737bbe8fbffcb89ca4e03bcc6063ba45f8a44fd
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115064"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136655"
 ---
 # <a name="understand-build-platforms"></a>ビルド プラットフォームについて
 

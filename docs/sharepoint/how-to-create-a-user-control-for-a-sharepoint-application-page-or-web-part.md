@@ -1,5 +1,8 @@
 ---
 title: SharePoint アプリページまたは web パーツのユーザーコントロールを作成する
+titleSuffix: ''
+description: SharePoint ソリューションにカスタム機能を提供するカスタムユーザーコントロールを作成し、web パーツまたはアプリケーションページ内でその機能を再利用します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fbf1b646ae9e7fb697fcab93adfb8661a4372c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016974"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903677"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>方法: SharePoint アプリケーションページまたは web パーツのユーザーコントロールを作成する
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>方法: SharePoint アプリケーション ページまたは Web パーツのユーザー コントロールを作成する
   SharePoint ソリューション向けの独自の機能を備えたカスタム ユーザー コントロールを作成し、その機能をプロジェクト内で再利用することができます。 ユーザー コントロールは、Web パーツまたはアプリケーション ページに含めることができます。他の ASP.NET コントロールや SharePoint コントロールを追加し、コントロールのプロパティとメソッドを定義することもできます。 ユーザーコントロールの詳細については、「SharePoint で web パーツまたはアプリケーションページと[ユーザーコントロールおよびサーバーコントロール](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)[の再利用可能なコントロールを作成](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)する」を参照してください。
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>SharePoint のユーザー コントロールを作成するには
@@ -29,7 +32,7 @@ ms.locfileid: "86016974"
 
      「 [SharePoint プロジェクトとプロジェクト項目テンプレート」を](../sharepoint/sharepoint-project-and-project-item-templates.md)参照してください。
 
-2. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
+2. **ソリューション エクスプローラー** で、プロジェクト ノードを選択します。
 
 3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
 
@@ -53,6 +56,6 @@ ms.locfileid: "86016974"
      このファイルは、プロジェクトの言語に応じて、ユーザーコントロールファイルの下の **ソリューションエクスプローラー** に表示され、 *.cs* または *.vb* の拡張子が付いています。
 
 ## <a name="see-also"></a>関連項目
-- [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
-- [SharePoint のアプリケーションページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)
-- [SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [SharePoint のアプリケーション ページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [SharePoint の Web パーツを作成する](../sharepoint/creating-web-parts-for-sharepoint.md)

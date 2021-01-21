@@ -16,9 +16,9 @@
     - name: C# アプリを初めて作成する
       expanded: true
       items:
-        - name: '第 1 部:C# コンソール アプリを作成する'
+        - name: C# コンソール アプリを作成する
           href: tutorial-console.md
-        - name: '第 2 部: C# コンソール アプリを拡張する'
+        - name: C# コンソール アプリを拡張する
           href: tutorial-console-part-2.md
     - name: Web アプリの作成
       href: tutorial-aspnet-core.md

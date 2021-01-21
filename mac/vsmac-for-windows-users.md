@@ -1,20 +1,20 @@
 ---
 title: Windows ユーザー向けの Visual Studio for Mac
-description: Visual Studio for Mac のアクセシビリティ機能の概要と、それらを有効にする方法について説明します。
+description: Windows オペレーティング システムでの Visual Studio 使用に精通している開発者向けの Visual Studio for Mac 入門。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/25/2019
+ms.date: 11/09/2020
 ms.assetid: 61CB6883-08CE-470F-8599-6F7570DB756E
-ms.openlocfilehash: b414026ba7297dd6c93fecdf56d9a9c58c99f294
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 880811c675aac34a18a65c6eccb8ee10f3347d4c
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984259"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493375"
 ---
 # <a name="visual-studio-for-mac-for-windows-users"></a>Windows ユーザー向けの Visual Studio for Mac
 
-オペレーティング システム間の移行は困難な場合があります。 多くの場合、クロスプラットフォーム アプリケーションには、ユーザー インターフェイスからメニュー項目の分類まで、微妙な違いがあります。 また、ユーザーには、新しいオペレーティング システムのユーザー インターフェイスに慣れるための学習曲線もあります。 ここでは、Visual Studio for Mac と Visual Studio for Windows の最もよく見られる相違点について説明します。 macOS と Windows 間のいくつかの異なる規則についても説明します。
+オペレーティング システム間の移行は困難な場合があります。 多くの場合、クロスプラットフォーム アプリケーションには、ユーザー インターフェイスからメニュー項目の分類まで、微妙な違いがあります。 ここでは、Visual Studio for Mac と Visual Studio for Windows の最もよく見られる相違点について説明します。 macOS と Windows 間のいくつかの異なる規則についても説明します。
 
 ## <a name="keyboard-shortcuts"></a>キーボード ショートカット
 
@@ -49,10 +49,9 @@ macOS のメニューは、Windows のメニューと構成が異なります。
 |-----------------------|---------------------------------------------------------------------|-------------------------------------|
 |ユーザー設定 (オプション)  |[ツール] > [オプション]                                                   |[Visual Studio] > [ユーザー設定]       |
 |拡張機能             |[拡張機能] > [拡張機能の管理]                                       |[Visual Studio] > [拡張機能]        |
-|レイアウト                |[ウィンドウ] > [ウィンドウ レイアウトを適用] > (レイアウトを選択する)                       |[表示] > (レイアウトを選択する)               |
-|更新                |[ヘルプ] > [更新プログラムのチェック]                                             |[Visual Studio] > [更新プログラムのチェック] |
+|Layouts                |[ウィンドウ] > [ウィンドウ レイアウトを適用] > (レイアウトを選択する)                       |[表示] > [レイアウト] > (レイアウトを選択する)               |
+|更新プログラム                |[ヘルプ] > [更新プログラムのチェック]                                             |[Visual Studio] > [更新プログラムのチェック] |
 |NuGet パッケージ マネージャー  |[ツール] > [NuGet パッケージ マネージャー] > [Manage NuGet Packages or Solution]\(NuGet パッケージまたはソリューションの管理\) |[プロジェクト] > [NuGet パッケージの管理]   |
-|パッド/ウィンドウ         |[表示] > (パッド/ウィンドウを選択する)                                         |[表示] > (パッド/ウィンドウを選択する)  |
 |ツールを探す             |[編集] > [検索と置換] > (ツールを選択する)                              |[検索] > (ツールを選択する)               |
 |Visual Studio について    |[ヘルプ] > [Microsoft Visual Studio のバージョン情報]                                 |[Visual Studio] > [Visual Studio のバージョン]  
 

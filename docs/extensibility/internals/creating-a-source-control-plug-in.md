@@ -1,5 +1,7 @@
 ---
 title: ソース管理プラグインを作成する |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) にソース管理機能を追加するソース管理プラグインを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0d9dc54a61cabe7bdd5c21c10abf0def34ff6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709181"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305362"
 ---
 # <a name="create-a-source-control-plug-in"></a>ソース管理プラグインを作成する
 Visual Studio SDK には、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) にソース管理機能を追加できるリソースが用意されています。 このドキュメントに記載されているソース管理プラグイン API に準拠している任意のプラグイン DLL を使用できます。

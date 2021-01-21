@@ -1,5 +1,7 @@
 ---
 title: '[通知] ([オプション] ダイアログ ボックス - [環境])'
+description: '[環境] セクションの [通知] ページを使用して、以前に [通知] ダイアログで無視することを選択した通知を無視しないようにする方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: ad95a4a40d8f4f2ed0ab1c3fd37e329c850cc03f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d257f1703615fe4bcc072362326ce48f99f904e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770897"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616851"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>[通知] ([オプション] ダイアログ ボックス - [環境])
 

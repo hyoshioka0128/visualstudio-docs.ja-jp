@@ -1,5 +1,7 @@
 ---
 title: Web サイトサポートテンプレート |Microsoft Docs
+description: Web サイトサポートテンプレートについて説明します。 Visual Studio の web サイトプロジェクトと項目テンプレートは、再利用可能でカスタマイズ可能な web サイトプロジェクトと項目のスタブを提供します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3c139ae6f2f9ec618e6382a1551a9e35eee7ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703456"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487856"
 ---
 # <a name="web-site-support-templates"></a>Web サイト サポートのテンプレート
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイトプロジェクトと項目テンプレートでは、再利用可能でカスタマイズ可能な Web サイトプロジェクトと項目スタブが提供されます。これにより、新しい Web サイトプロジェクトと項目を最初から作成する必要がなくなり、開発プロセスが高速化されます。 テンプレートの詳細につい [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ては、「 [プロジェクトと項目テンプレートの作成](../../ide/creating-project-and-item-templates.md)」を参照してください。
@@ -40,7 +42,7 @@ ms.locfileid: "80703456"
 - Web サービスプロジェクト
 
 ### <a name="empty-web-site-projects"></a>空の Web サイトプロジェクト
- これらのファイルは、**空の web サイト**コマンドに応答して、新しい空の web サイトを作成します。このコマンドは、[**ファイル**] [  >  **新しい web サイト**] を選択した後で利用できます。
+ これらのファイルは、**空の web サイト** コマンドに応答して、新しい空の web サイトを作成します。このコマンドは、[**ファイル**] [  >  **新しい web サイト**] を選択した後で利用できます。
 
 - EmptyWeb .vstemplate
 
@@ -51,7 +53,7 @@ ms.locfileid: "80703456"
      このファイルは、プロジェクトテンプレートシステムの成果物です。 これは、EmptyWeb .vstemplate ファイル内のプロジェクトファイル参照を満たしています。
 
 ### <a name="web-site-projects"></a>Web サイトプロジェクト
- これらのファイルは、 **ASP.NET web サイト**コマンドに応答して新しい web サイトを作成します。これは、[**ファイル**] [  >  **新しい web サイト**] を選択した後で利用できます。
+ これらのファイルは、 **ASP.NET web サイト** コマンドに応答して新しい web サイトを作成します。これは、[**ファイル**] [  >  **新しい web サイト**] を選択した後で利用できます。
 
 - Default.aspx
 
@@ -74,7 +76,7 @@ ms.locfileid: "80703456"
      このファイルは、プロジェクトテンプレートシステムの成果物です。 これは、WebApplication ファイル内のプロジェクトファイル参照を満たしています。
 
 ### <a name="web-service-projects"></a>Web サービスプロジェクト
- これらのファイルは、 **ASP.NET web Service**コマンドに応答して新しい web サイトを作成します。これは、[**ファイル**] [  >  **新しい web サイト**] を選択した後で利用できます。
+ これらのファイルは、 **ASP.NET web Service** コマンドに応答して新しい web サイトを作成します。これは、[**ファイル**] [  >  **新しい web サイト**] を選択した後で利用できます。
 
 - サービス .asmx
 
@@ -135,7 +137,7 @@ ms.locfileid: "80703456"
 ### <a name="new-webform"></a>新しい Web フォーム
  このテンプレートは、[ **新しい Web フォームの追加** ] コマンドに応答して新しいスマート web ページを作成します。
 
- 依存する分離コードソースファイルを作成するには、[ **コードを別のファイルに配置**する] を選択します。 それ以外の場合は、空のスクリプトブロックを持ち、 \<% Page %> 依存ファイルをフックするディレクティブを持たない1つの Web ページが作成されます。
+ 依存する分離コードソースファイルを作成するには、[ **コードを別のファイルに配置** する] を選択します。 それ以外の場合は、空のスクリプトブロックを持ち、 \<% Page %> 依存ファイルをフックするディレクティブを持たない1つの Web ページが作成されます。
 
  選択したマスターページのコンテンツページを作成するには、[ **マスターページの選択**] を選択します。
 
@@ -166,7 +168,7 @@ ms.locfileid: "80703456"
 ### <a name="new-master-page"></a>新しいマスターページ
  このテンプレートは、[ **新しいマスターページの追加** ] コマンドに応答して新しいマスターページを作成します。
 
- 依存する分離コードソースファイルを作成するには、[ **コードを別のファイルに配置**する] を選択します。 それ以外の場合は、空のスクリプトブロックを持つ1つの Web ページが作成され、 \<% Page %> 依存ファイルをフックするディレクティブは作成されません。
+ 依存する分離コードソースファイルを作成するには、[ **コードを別のファイルに配置** する] を選択します。 それ以外の場合は、空のスクリプトブロックを持つ1つの Web ページが作成され、 \<% Page %> 依存ファイルをフックするディレクティブは作成されません。
 
 - マスターマスター
 
@@ -184,5 +186,5 @@ ms.locfileid: "80703456"
 
      新しいマスターページの内容とその依存ファイル (存在する場合) を決定するテンプレートファイル。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Web サイト サポート](../../extensibility/internals/web-site-support.md)

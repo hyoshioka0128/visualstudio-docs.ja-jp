@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 初めての Excel 用 VSTO アドインの作成'
+description: Microsoft Excel 用のアプリケーションレベルのアドインを作成します。 作成した機能は、どのブックが開いているかに関係なく、アプリケーション自体で使用できます。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b683b1f75f2967807f171c204fbf02a2e5db69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "69548018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527906"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>チュートリアル: 初めての Excel 用 VSTO アドインの作成
   この入門チュートリアルでは、Microsoft Office Excel 用のアプリケーション レベルのアドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのブックが開いているかにかかわらず、アプリケーション自体に対して使用できます。
@@ -48,7 +50,7 @@ ms.locfileid: "69548018"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Visual Studio で新しい Excel VSTO アドイン プロジェクトを作成するには
 
@@ -66,7 +68,7 @@ ms.locfileid: "69548018"
 
 7. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstexceladdin**プロジェクトが作成され、ThisAddIn コードファイルがエディターで開かれます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Firstexceladdin** プロジェクトが作成され、ThisAddIn コードファイルがエディターで開かれます。
 
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>保存されたブックにテキストを追加するコードを記述する
  次に、ThisAddIn コード ファイルにコードを追加します。 この新しいコードでは、Excel のオブジェクト モデルを使用して、アクティブなワークシートの最初の行に定型句を挿入します。 アクティブなワークシートとは、ユーザーがブックを保存したときに開いているワークシートのことです。 ThisAddIn コード ファイルには、次の生成されたコードが既定で含まれています。
@@ -94,7 +96,7 @@ ms.locfileid: "69548018"
 
 - `Wb` イベントのイベント ハンドラーの <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> パラメーター。 `Wb` パラメーターは、保存されるブックを表す <xref:Microsoft.Office.Interop.Excel.Workbook> オブジェクトです。 詳細については、「 [Excel オブジェクトモデルの概要](../vsto/excel-object-model-overview.md)」を参照してください。
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
 
 ### <a name="to-test-the-project"></a>プロジェクトをテストするには
 

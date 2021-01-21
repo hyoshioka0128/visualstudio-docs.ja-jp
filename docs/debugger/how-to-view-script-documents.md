@@ -1,5 +1,7 @@
 ---
-title: 方法 - スクリプト ドキュメントを表示する | Microsoft Docs
+title: スクリプト ドキュメントを表示する | Microsoft Docs
+description: ソリューション エクスプローラーを使用して Visual Studio で JavaScript のサーバー側スクリプト ドキュメントを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd9823e414005a1711ddccf9d972da929090920
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 91c2e1c0438ebf8fad69f985f62a976ff6710a81
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348445"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150484"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>方法: スクリプト ドキュメントを表示する (JavaScript)
 
@@ -33,7 +35,7 @@ ms.locfileid: "85348445"
 
 ### <a name="to-view-a-server-side-script-document"></a>サーバー側スクリプト ドキュメントを表示するには
 
-1. **ソリューション エクスプローラー**で、 **\<Website Pathname>** ノードを開きます。
+1. **ソリューション エクスプローラー** で、 **\<Website Pathname>** ノードを開きます。
 
 2. 表示するスクリプト ファイルをダブルクリックします。
 
@@ -41,7 +43,7 @@ ms.locfileid: "85348445"
 
 ### <a name="to-view-a-client-side-script-document"></a>クライアント側スクリプト ドキュメントを表示するには
 
-1. **ソリューション エクスプローラー**で、 **[スクリプト ドキュメント]** ノードを開きます。
+1. **ソリューション エクスプローラー** で、 **[スクリプト ドキュメント]** ノードを開きます。
 
 2. 表示するスクリプト ファイルをダブルクリックします。
 

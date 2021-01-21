@@ -1,5 +1,7 @@
 ---
 title: CRT デバッグ ライブラリの使用方法 | Microsoft Docs
+description: C ランタイム (CRT) ライブラリがデバッグを支援するしくみと、CRT デバッグ ライブラリを使用するための前提条件について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2019
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d145ccd8764e488a5d1270985050b29bcd8987d
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745605"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560565"
 ---
 # <a name="crt-debug-library-use"></a>CRT デバッグ ライブラリの使用方法
 C ランタイム ライブラリには、広範なデバッグ支援機能が用意されています。 CRT デバッグ ライブラリを使用するには、[/DEBUG](/cpp/build/reference/debug-generate-debug-info) を指定してリンクし、 **/MDd**、 **/MTd**、または **/LDd** を指定してコンパイルする必要があります。

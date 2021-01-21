@@ -1,5 +1,7 @@
 ---
 title: '方法: 無効になっている VSTO アドインを再度有効にする'
+description: Visual Studio を使用して、Microsoft Office アプリケーションで無効になっている VSTO アドインを再度有効にする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3575e119f4da3ca3050a28243104fb4773089cf3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d03a03494b149a761910ddbdaa1d41592704f969
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541259"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524480"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>方法: 無効になっている VSTO アドインを再度有効にする
   Microsoft Office アプリケーションにより、予期しない動作をする VSTO アドインが無効にされる場合があります。 VSTO アドインをデバッグする際に、アプリケーションが VSTO アドインを読み込まない場合は、アプリケーションにより VSTO アドインがハードに無効化、またはソフトに無効化されている可能性があります。

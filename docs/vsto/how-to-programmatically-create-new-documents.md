@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって新しいドキュメントを作成する'
+description: Visual Studio を使用して、Microsoft Word でプログラムで新しいドキュメントを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e82c5ca62c407481b73de9394c584c3039a8f57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7168c6b80657fe0e5ba7c8ae8511c1e000db4cb
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525878"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>方法: プログラムによって新しいドキュメントを作成する
   プログラムによって作成される新しい文書は、ネイティブの <xref:Microsoft.Office.Interop.Word.Document> オブジェクトです。 このオブジェクトは、<xref:Microsoft.Office.Tools.Word.Document> ホスト項目のような付加的なイベントやデータ バインディング機能を備えていません。 詳細については、「 [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)」を参照してください。
@@ -36,7 +38,7 @@ ms.locfileid: "85545991"
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
 
 ## <a name="use-custom-templates"></a>カスタムテンプレートを使用する
- <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>メソッドには、通常のテンプレート以外のテンプレートに基づいて新しいドキュメントを作成するためのオプションの*テンプレート*引数があります。 テンプレートのファイル名と完全修飾パスを指定する必要があります。
+ <xref:Microsoft.Office.Interop.Word.Documents.Add%2A>メソッドには、通常のテンプレート以外のテンプレートに基づいて新しいドキュメントを作成するためのオプションの *テンプレート* 引数があります。 テンプレートのファイル名と完全修飾パスを指定する必要があります。
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>カスタム テンプレートに基づいて新しい文書を作成するには
 

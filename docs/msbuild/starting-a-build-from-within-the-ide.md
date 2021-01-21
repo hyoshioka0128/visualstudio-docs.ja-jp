@@ -1,5 +1,7 @@
 ---
 title: IDE 内からのビルドの開始 | Microsoft Docs
+description: Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor を使用して、カスタム プロジェクト システムのビルドを開始する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e0447cae810da48bd592371a40f22c40ff45cec
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632122"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048161"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>IDE 内からのビルドの開始
 

@@ -1,5 +1,7 @@
 ---
 title: 到達できないコードの削除リファクタリング
+description: '[クイック アクションとリファクタリング] メニューを使用して、実行されないコードを削除する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd827870f07fb3161674d287d20f266942e61afe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3af9d0a14b600773c5025fcaad68380c7bb82b29
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093979"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616708"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>到達できないコードの削除リファクタリング
 
@@ -65,7 +67,7 @@ private void Method()
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

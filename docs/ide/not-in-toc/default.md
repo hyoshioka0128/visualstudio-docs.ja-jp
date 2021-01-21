@@ -3,19 +3,19 @@ title: F1 キー ヘルプの既定のページ
 description: Visual Studio 用 F1 ヘルプ要求の既定のページ
 ms.date: 08/20/2020
 ms.topic: troubleshooting
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 0ab7f2d9fac02cf370e7b3803adc7fd3016d22ad
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 3e3092c3f4cea22daf3b2b61d2c1aa8340340457
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800451"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684003"
 ---
 # <a name="f1-help"></a>F1 キー ヘルプ
 
@@ -25,7 +25,7 @@ ms.locfileid: "88800451"
 
 ウィンドウ、キーワード、または API 名に関する F1 ヘルプをお探しの場合:
 
-- [docs.microsoft.com](https://docs.microsoft.com) で検索してみてください
+- [docs.microsoft.com](/) で検索してみてください
 - 検索エンジンを使用して検索してみてください。
 
 ## <a name="find-help-on-a-keyword-or-api"></a>キーワードまたは API に関するヘルプを検索する

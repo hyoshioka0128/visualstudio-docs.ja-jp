@@ -1,5 +1,7 @@
 ---
 title: テスト中の画面と音声を記録する
+description: Visual Studio でテストを実行しているユーザーの画面と音声を記録する診断データ アダプターを構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4fb186c97126d843cc47c16fa16a836914ed2e9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ae6d19327a956b5dab71fa30b0b33742390d2b
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287767"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440988"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>方法: テスト設定を使用してテスト中に画面と音声の記録を含める
 
@@ -28,7 +30,7 @@ Visual Studio の構成エディターから、テストを実行しているユ
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>テストの設定に対して画面と音声の記録を構成するには
 
-1. 画面と音声を記録するために構成するテストの設定を開きます。 詳細については、「[Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)」(テスト中の診断データの収集 (Azure Test Plans)) または「[テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)」を参照してください。
+1. 画面と音声を記録するために構成するテストの設定を開きます。 詳細については、「[Collect diagnostic data while testing (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)」(テスト中の診断データの収集 (Azure Test Plans)) または「[テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)」を参照してください。
 
 2. テストの設定で、画面と音声の記録に使用する **[ロール]** をクリックします。
 
@@ -69,7 +71,7 @@ Visual Studio の構成エディターから、テストを実行しているユ
 
 ## <a name="see-also"></a>関連項目
 
-- [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)
-- [手動テストの実行 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)
+- [手動テストの実行 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

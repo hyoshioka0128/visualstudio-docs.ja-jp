@@ -1,5 +1,7 @@
 ---
 title: IDE をカスタマイズする
+description: 独自の開発スタイルと要件に最も適した方法で Visual Studio IDE をカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/20/2017
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4acd399aeb9de1d25cbe6abe2b8bba3f347dbc8a
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585744"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871458"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE のカスタマイズ
 
@@ -38,13 +40,13 @@ ms.locfileid: "75585744"
 
 ## <a name="environment-color-themes"></a>環境の配色テーマ
 
-明色、暗色、青の配色テーマを変更するには、検索ボックスに「**環境**」と入力した後、 **[環境] > [全般]** の順に選択します。 **[オプション]** ダイアログ ボックスで、 **[配色テーマ]** オプションを変更します。
+明色、暗色、青の配色テーマを変更するには、検索ボックスに「**環境**」と入力した後、 **[環境] > [全般]** の順に選択します。 **[オプション]** ダイアログ ボックスで、**[配色テーマ]** オプションを変更します。
 
 エディターで配色オプションを変更するには、検索ボックスに「**環境**」と入力した後、 **[環境] > [フォントおよび色]** の順に選択します。 「[方法: フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」を参照してください。
 
 ### <a name="main-menu-casing"></a>メイン メニューの大文字小文字の区別
 
-メイン メニューの大文字小文字の区別は、 **[タイトル文字]** ("File") と **[すべて大文字]** ("FILE") の間で変更できます。 検索ボックスに「**環境**」と入力し、 **[環境] > [全般]** の順に選択し、 **[タイトルの文字スタイルをメニュー バーに適用する]** オプションを変更します。
+メイン メニューの大文字小文字の区別は、**[タイトル文字]** ("File") と **[すべて大文字]** ("FILE") の間で変更できます。 検索ボックスに「**環境**」と入力し、 **[環境] > [全般]** の順に選択し、 **[タイトルの文字スタイルをメニュー バーに適用する]** オプションを変更します。
 
 ### <a name="customize-menus-and-toolbars"></a>メニューおよびツール バーをカスタマイズする
 
@@ -66,9 +68,9 @@ ms.locfileid: "75585744"
 
 **[ツール]** メニューをカスタマイズして、外部ツールを起動することができます。 詳細については、「[外部ツールの管理](../ide/managing-external-tools.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [環境設定](environment-settings.md)
 - [Visual Studio IDE の概要](../get-started/visual-studio-ide.md)
-- [クイックスタート: Visual Studio IDE の表示の紹介](../ide/quickstart-ide-orientation.md)
+- [クイック スタート: Visual Studio IDE の表示の紹介](../ide/quickstart-ide-orientation.md)
 - [Visual Studio for Mac IDE のカスタマイズ](/visualstudio/mac/customizing-the-ide)

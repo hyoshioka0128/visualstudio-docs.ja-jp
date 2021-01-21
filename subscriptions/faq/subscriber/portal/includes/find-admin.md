@@ -8,11 +8,11 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q1_3
 ms.openlocfilehash: 2b2a45f31cad9ff131aa41bb5979c3e566f20b88
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386001"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838314"
 ---
 ## <a name="how-do-i-find-my-admin-if-i-have-a-question"></a>質問がある場合に管理者を見つけるにはどうすればよいですか?
 

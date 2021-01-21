@@ -1,5 +1,7 @@
 ---
 title: '[ビルド イベント] ページ (プロジェクト デザイナー) (C#)'
+description: ビルド構成の手順を指定する方法について説明します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -16,20 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a56093ab14b9be72f99e36b03eefe7abb895183f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419056"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136850"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 
-**プロジェクト デザイナー**の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、[ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」および「[方法: ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
+**プロジェクト デザイナー** の **[ビルド イベント]** ページを使用して、ビルド構成の手順を指定します。 また、あらゆるビルド後イベントを実行する条件を指定することもできます。 詳細については、「[方法:ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)」および「[方法:ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)」を参照してください。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
-**構成**
+**Configuration**
 
 このコントロールは、このページでは編集できません。 このコントロールの詳細については、「[[ビルド] ページ (プロジェクト デザイナー) (C#)](../../ide/reference/build-page-project-designer-csharp.md)」を参照してください。
 
@@ -46,10 +48,10 @@ ms.locfileid: "85419056"
 
 **ビルド後に実行するコマンド ライン**
 
-ビルド終了後に実行する任意のコマンドを指定します。 長いコマンドを入力するには、 **[ビルド後の編集]** をクリックして **[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス**を表示します。
+ビルド終了後に実行する任意のコマンドを指定します。 長いコマンドを入力するには、 **[ビルド後の編集]** をクリックして **[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス** を表示します。
 
 > [!NOTE]
-> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` のようにします。
+> .bat ファイルを実行するすべてのビルド後コマンドの前に `call` ステートメントを追加します。 たとえば、`call C:\MyFile.bat` または `call C:\MyFile.bat call C:\MyFile2.bat` です。
 
 **ビルド後イベントの実行**
 
@@ -57,7 +59,7 @@ ms.locfileid: "85419056"
 
 |オプション|結果|
 |------------|------------|
-|**常時**|ビルド後イベントは、ビルドが成功したかどうかに関係なく実行されます。|
+|**毎回**|ビルド後イベントは、ビルドが成功したかどうかに関係なく実行されます。|
 |**ビルドが成功したとき**|ビルド後イベントは、ビルドが成功した場合に実行されます。 したがって、ビルドが成功した場合は、最新のプロジェクトについてもイベントが実行されます。|
 |**ビルドがプロジェクト出力を更新したとき**|ビルド後イベントは、コンパイラの出力ファイル (.exe または .dll) が以前のコンパイラの出力ファイルと異なる場合にのみ実行されます。 したがって、ビルド後イベントは、プロジェクトが最新の場合は実行されません。|
 
@@ -77,7 +79,7 @@ ms.locfileid: "85419056"
 </PropertyGroup>
 ```
 
-.NET Core プロジェクトでは、Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、**PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 これらのターゲットは、MSBuild によって認識される、**BeforeTargets** と **AfterTargets** の属性を使用します。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
+.NET Core プロジェクトでは、Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、 **PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 これらのターゲットは、MSBuild によって認識される、 **BeforeTargets** と **AfterTargets** の属性を使用します。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
@@ -98,7 +100,7 @@ ms.locfileid: "85419056"
 
 ## <a name="see-also"></a>関連項目
 
-- [方法: ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [方法: ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [方法 : ビルド イベントを指定する (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [プロジェクトのプロパティのリファレンス](../../ide/reference/project-properties-reference.md)
 - [コードのコンパイルとビルド](../../ide/compiling-and-building-in-visual-studio.md)

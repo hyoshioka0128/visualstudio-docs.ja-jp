@@ -1,5 +1,7 @@
 ---
 title: '方法: Finder メソッドにフィルター記述子を追加する |Microsoft Docs'
+description: Visual Studio の [BDC メソッドの詳細] ウィンドウを使用して、Finder メソッドにフィルター記述子を追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 228afb2f49f4d528fa9b806e9bf8d2531f7de901
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016740"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915428"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>方法: Finder メソッドにフィルター記述子を追加する
-  フィルター記述子を使用すると、モデルのコンシューマーは、実行前に値をメソッドに渡すことができます。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  フィルター記述子を使用すると、モデルのコンシューマーは、実行前に値をメソッドに渡すことができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
  一般的なシナリオの1つは、SharePoint のユーザーが、いくつかの条件に一致する外部コンテンツタイプのインスタンスを取得することです。 このシナリオをサポートするには、Finder メソッドにフィルター記述子を追加します。
 
@@ -33,11 +35,11 @@ ms.locfileid: "86016740"
 
 2. [ **メソッドの詳細** ] ウィンドウで、パラメーターの型記述子を選択します。
 
-3. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
+3. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
 
 4. [ **プロパティ** ] ウィンドウで、[ **型名** ] プロパティをフィルターに適したデータ型に設定します。
 
-     たとえば、フィルターでは、注文日を使用して、メソッドによって返される販売注文の数を制限することができます。 このフィルターをサポートするには、型記述子の **Type Name** プロパティを **system.string に設定**する必要があります。
+     たとえば、フィルターでは、注文日を使用して、メソッドによって返される販売注文の数を制限することができます。 このフィルターをサポートするには、型記述子の **Type Name** プロパティを **system.string に設定** する必要があります。
 
 5. [ **メソッドの詳細** ] ウィンドウで、[ **フィルター記述子** ] ノードを展開します。
 
@@ -45,11 +47,11 @@ ms.locfileid: "86016740"
 
      新しいフィルター記述子が [ **フィルター記述子** ノードの下に表示されます。
 
-7. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
+7. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
 
 8. [ **プロパティ** ] ウィンドウで、[ **型** ] プロパティを選択します。
 
-9. **Type**プロパティに表示される一覧で、目的のフィルターパターンを選択します。
+9. **Type** プロパティに表示される一覧で、目的のフィルターパターンを選択します。
 
      たとえば、Finder メソッドで返される販売注文数を制限するために注文日を使用するフィルターを作成するには、[ **比較**] を選択します。 比較フィルターにより、finder メソッドが特定の条件を満たすインスタンスだけを返すようにします。 各フィルター処理パターンの詳細については、「 [BDC でサポートされるフィルターの種類](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))」を参照してください。
 
@@ -72,5 +74,5 @@ ms.locfileid: "86016740"
 - [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [方法: メソッドにパラメーターを追加する](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [方法: パラメーターの型記述子を定義する](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)

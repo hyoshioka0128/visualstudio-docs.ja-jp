@@ -1,5 +1,7 @@
 ---
 title: SuspendTracking | Microsoft Docs
+description: 現在のコンテキストでの追跡を一時停止する MSBuild SuspendTracking の構文、要件、および戻り値について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950c6a07a46f7f4b970912e576257a577021367e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 164e1a11c7d107bf1d98419d77fdc50ed353f93b
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632013"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048089"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 
@@ -34,7 +36,7 @@ HRESULT WINAPI SuspendTracking(void);
 
 ## <a name="return-value"></a>戻り値
 
- 追跡が一時停止された場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
+ 追跡が一時停止された場合、 **HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
 

@@ -1,5 +1,6 @@
 ---
 title: Visual Studio の UI テキストとヘルプMicrosoft Docs
+description: Visual Studio のヘルプ情報で使用される UI テキストと用語について説明します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3247aeaa702b59722471c7d28e98957f04f3e07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698295"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668600"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio の UI テキストとヘルプ
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI のテキストと用語
@@ -60,11 +61,11 @@ ms.locfileid: "80698295"
 #### <a name="supplemental-instructions"></a>補足手順
  補足指示では、ユーザーがコントロールまたはコントロールのグループ化を理解するのに役立つ追加情報を提供します。 これには、入力コントロールで想定される形式を理解するために必要なヒントテキストを含めることもできます。 補足指示は控えめに使用してください。 ユーザーが行っている選択の影響を完全に理解できない可能性がある場合に備えて予約します。
 
- ![Visual Studio での補足のテキスト](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
+ ![オプションの設定を変更した場合の影響について説明している Internet Explorer の [オプション] ボタンの下に表示されるスクリーンショット。](../../extensibility/ux-guidelines/media/0601-b_supplementaltext1.png "0601-b_SupplementalText1")
 
  **Visual Studio での補足のテキスト**
 
- ![Visual Studio での補足のテキスト](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ ![Visual Studio の [ソース管理の選択] ダイアログのスクリーンショット。ソース管理システムの各オプションについて説明する補足テキストが表示されます。](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Visual Studio での補足のテキスト**
 
@@ -123,7 +124,7 @@ ms.locfileid: "80698295"
 
 - "ここに" のみリンクしないでください。 スクリーンリーダーによっては、ハイパーリンクされた単語だけが読み上げられることがあります。
 
-     誤り: "Windows Azure Mobile Services に関する情報を **ここ**に入力してください"
+     誤り: "Windows Azure Mobile Services に関する情報を **ここ** に入力してください"
 
      修正: 「Windows Azure Mobile Services で使用できる価格オプション
 
@@ -136,15 +137,15 @@ ms.locfileid: "80698295"
 
 - コントロールラベルの代わりに次のようにします。
 
-     ![Visual Studio でのヒント テキスト](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     !["Search ソリューションエクスプローラー (Ctrl +;)" を読み取るコントロールラベルの代わりにヒントテキストが表示されたドロップダウンコントロールのスクリーンショット。](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - 動詞を使用する場合は、次の手順に従います。
 
-     ![Visual Studio でのヒント テキスト](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
+     ![[名前を入力してください] というヒントテキストがコントロール内に表示されているテキストボックスのスクリーンショット。](../../extensibility/ux-guidelines/media/0601-g_hinttext2.png "0601-g_HintText2")
 
 - 必須のエントリを示すテキストを含む:
 
-     ![Visual Studio でのヒント テキスト](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
+     !["Required" を読み取るコントロール内のヒントテキストを含むテキストボックスのスクリーンショット \< \> 。](../../extensibility/ux-guidelines/media/0601-h_hinttext3.png "0601-h_HintText3")
 
 #### <a name="watermark-text"></a>透かしテキスト
  空のデザインサーフェイスでは、必要に応じて、他の関連ウィンドウを開くためのリンクを提供すると共に、何を行うかを示すテキストが表示されます。
@@ -208,7 +209,7 @@ ms.locfileid: "80698295"
 
  明確で簡潔なビルドエラーを記述します。
 
-- ほとんどまたはまったくコンパイラの専門用語で問題を説明する**プレーン言語を使用**します。 ビルドエラーのテキストは、あまり技術的ではないはずです。
+- ほとんどまたはまったくコンパイラの専門用語で問題を説明する **プレーン言語を使用** します。 ビルドエラーのテキストは、あまり技術的ではないはずです。
 
 - **考えられる原因の概要を示します。** たとえば、"(プロパティ): (値) ' 宣言のプロパティと値の間にコロンがありません。" というようになります。
 
@@ -217,7 +218,7 @@ ms.locfileid: "80698295"
 ### <a name="components-of-a-well-written-error-message"></a>適切に記述されたエラーメッセージのコンポーネント
 
 #### <a name="use-the-shell-dialog-service-for-error-messages"></a>エラーメッセージには、シェルダイアログサービスを使用します。
- Shell dialog service を使用すると、個々の要素に大きな変更を加えずに、メッセージの外観、特にフォントの外観を制御できます。 **IErrorInfo**メカニズムを使用して、 **IVsUIShell:: SetErrorInfo/ReportErrorInfo**を使用してレポートします。
+ Shell dialog service を使用すると、個々の要素に大きな変更を加えずに、メッセージの外観、特にフォントの外観を制御できます。 **IErrorInfo** メカニズムを使用して、 **IVsUIShell:: SetErrorInfo/ReportErrorInfo** を使用してレポートします。
 
 #### <a name="choose-an-effective-and-appropriate-notification-presentation"></a>効果的で適切な通知プレゼンテーションを選択します。
  データの損失を回避するために直ちに対処する必要がある場合は、重大な警告があるモーダルダイアログを使用します (同期通知)。 重要なアイコンは、メッセージを読み取らずに閉じると、悪影響が生じる可能性があります。 データの損失は、アラームレベルの応答を必要とする重大な状況です。 重要なアイコンを desensitizes して、ユーザーの重要度を超えています。 エラーメッセージに情報が含まれている場合は、モーダルダイアログ (非同期通知) の代替手段を検討してください。
@@ -247,7 +248,7 @@ ms.locfileid: "80698295"
 
 - **こと.** ユーザーをばかげしたり、感じたりすることは避けてください。 悪意のあるまたは不快な言語 (kill、execute、terminate、fatal、無効) を避けます。 大文字を使用しないでください。大文字のテキストは叫んとして認識され、読み取り可能ではありません。 ユーモアは使用しないでください。
 
-- **そうです。** 正しいスペルと文法を使用します (アルファでも)。 入力ミスは不自然見えると他人です。
+- **正解です。** 正しいスペルと文法を使用します (アルファでも)。 入力ミスは不自然見えると他人です。
 
 - **文脈に適しています。** 適切なボタンテキストを使用します。 [OK] ボタンを使用せずに、代わりに "Continue" または "Yes/No" を使用します。
 
@@ -300,9 +301,9 @@ ms.locfileid: "80698295"
 ##### <a name="dialogs-created-through-the-environment"></a>環境を使用して作成されたダイアログ
  多くのシェルダイアログは、 **vb、Boxparam** 関数を使用して作成されます。 この共有関数は、ダイアログボックスからに [ **ヘルプ** ] ボタンを移動するのに役立つように更新されました **。** ボタンをクリックして、下位互換性と拡張が可能なアーキテクチャを維持します。
 
- 具体的には、 **Vbdialogboxparam** 関数は、ID が **idhelp** (9) またはラベルが **ヘルプ** または **&ヘルプ**であるボタンのダイアログテンプレートを参照します。 [ヘルプ] ボタンが見つかった場合は非表示になり、ダイアログに **WS_EX_CONTEXTHELP** スタイルが追加され **ます。** ] ボタンをクリックします。
+ 具体的には、 **Vbdialogboxparam** 関数は、ID が **idhelp** (9) またはラベルが **ヘルプ** または **&ヘルプ** であるボタンのダイアログテンプレートを参照します。 [ヘルプ] ボタンが見つかった場合は非表示になり、ダイアログに **WS_EX_CONTEXTHELP** スタイルが追加され **ます。** ] ボタンをクリックします。
 
- ダイアログが作成されると、ダイアログプロシージャがスタックにプッシュされ、ダイアログが呼び出され **ます。この**ダイアログボックスには、[プロパティ] ダイアログボックスが開きます。 **?** ボタンがクリックされると、 **SC_CONTEXTHELP**の**WM_SYSCOMMAND**がダイアログに送信されます。 このコマンド **は、このコマンドをキャプチャし** て **WM_HELP** メッセージに変更し、元のダイアログプロシージャに渡されます。
+ ダイアログが作成されると、ダイアログプロシージャがスタックにプッシュされ、ダイアログが呼び出され **ます。この** ダイアログボックスには、[プロパティ] ダイアログボックスが開きます。 **?** ボタンがクリックされると、 **SC_CONTEXTHELP** の **WM_SYSCOMMAND** がダイアログに送信されます。 このコマンド **は、このコマンドをキャプチャし** て **WM_HELP** メッセージに変更し、元のダイアログプロシージャに渡されます。
 
  ほとんどの環境で作成されたダイアログには、ダイアログの [ヘルプ] ボタンがあります。 ダイアログが表示されると、[ヘルプ] ボタンは自動的に非表示になり **ます。** ボタンが動作します。 **?** Windows では、ボタンが削除または変更されています。このソリューションを使用すると、元のヘルプボタンにすばやく戻ることができます。
 
@@ -316,7 +317,7 @@ ms.locfileid: "80698295"
 
 - ダイアログが別のダイアログの内部に埋め込まれていません。
 
-  ダイアログが msenv 内に存在し、 **Vb/Boxparam**を使用していない場合は、独自のハンドラーを実装する前に、 **Vbの boxboxparam** を活用することを検討してください。
+  ダイアログが msenv 内に存在し、 **Vb/Boxparam** を使用していない場合は、独自のハンドラーを実装する前に、 **Vbの boxboxparam** を活用することを検討してください。
 
 ##### <a name="dialogs-created-through-other-packages"></a>他のパッケージを使用して作成されたダイアログ
  Msenv の外部にあるダイアログに対して独自のソリューションを実装できます。 VSPackage の共有ダイアログクラスの場合は、ボタンをタイトルバーに移動するか、各ダイアログにハンドラーを実装することを検討してください。 次のコードは、作業を開始するのに役立つ実装のスケルトンです。

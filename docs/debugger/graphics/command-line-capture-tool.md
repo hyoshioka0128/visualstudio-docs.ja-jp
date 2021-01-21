@@ -1,5 +1,7 @@
 ---
 title: コマンド ライン キャプチャ ツール | Microsoft Docs
+description: あらゆる機能レベルで Direct3D 10 から Direct3D 12 までをサポートする、グラフィックス診断のキャプチャと再生のためのコマンドライン ツールである DXCap.exe について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 3618c1d6e929d40108abd5fd0b0cc3a3361964bf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64808455"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727878"
 ---
 # <a name="command-line-capture-tool"></a>コマンド ライン キャプチャ ツール
 DXCap.exe は、グラフィックス診断のキャプチャと再生に使用されるコマンド ライン ツールです。 すべての機能レベルで、Direct3D 10 から Direct3D 12 をサポートしています。

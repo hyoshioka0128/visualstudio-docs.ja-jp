@@ -1,5 +1,7 @@
 ---
 title: 製品およびパッケージスキーマリファレンス |Microsoft Docs
+description: ClickOnce アプリケーションに必要な外部依存関係を記述する XML マニフェストである製品ファイルについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,15 +27,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66745614"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350713"
 ---
 # <a name="product-and-package-schema-reference"></a>製品およびパッケージ スキーマ リファレンス
-*製品ファイル*は、アプリケーションに必要なすべての外部依存関係を記述する XML マニフェストです [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部依存関係の例としては、.NET Framework や Microsoft Data Access Components (MDAC) などがあります。 パッケージファイルは製品ファイルに似ていますが、ローカライズされたアセンブリ、ライセンス契約、ドキュメントなど、依存関係のカルチャに依存するコンポーネントのインストールに使用されます。
+*製品ファイル* は、アプリケーションに必要なすべての外部依存関係を記述する XML マニフェストです [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部依存関係の例としては、.NET Framework や Microsoft Data Access Components (MDAC) などがあります。 パッケージファイルは製品ファイルに似ていますが、ローカライズされたアセンブリ、ライセンス契約、ドキュメントなど、依存関係のカルチャに依存するコンポーネントのインストールに使用されます。
 
  製品およびパッケージファイルは、最上位レベル `Product` または `Package` 要素で構成されます。各要素には、次の要素が含まれています。
 
@@ -48,7 +50,7 @@ ms.locfileid: "66745614"
 |[\<Strings> 要素](../deployment/strings-element-bootstrapper.md)|必須の要素です。 製品名とエラー文字列のローカライズ版を格納します。|なし|
 
 ## <a name="remarks"></a>解説
- パッケージスキーマは *Setup.exe*によって使用されます。これは、独自のハードコーディングされたロジックをほとんど含まない、MS Build ブートストラップタスクによって生成されるスタブプログラムです。 スキーマは、インストールプロセスのすべての側面を駆動します。
+ パッケージスキーマは *Setup.exe* によって使用されます。これは、独自のハードコーディングされたロジックをほとんど含まない、MS Build ブートストラップタスクによって生成されるスタブプログラムです。 スキーマは、インストールプロセスのすべての側面を駆動します。
 
  `InstallChecks` 指定されたパッケージの存在に対して setup.exe が実行するテスト。 `PackageFiles` 特定のテストが失敗した場合に、セットアッププロセスでインストールする必要があるすべてのパッケージが一覧表示されます。 コマンドの下の各コマンドエントリは、によって説明されているいずれかのテストを実行 `InstallChecks` し、 `PackageFile` テストに失敗した場合に実行するかどうかを指定します。 要素を使用して `Strings` 製品名とエラーメッセージをローカライズできます。これにより、1つのインストールバイナリを使用して、任意の数の言語のアプリケーションをインストールできます。
 

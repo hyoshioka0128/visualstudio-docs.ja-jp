@@ -6,13 +6,13 @@ ms.topic: conceptual
 ms.assetid: 933c7f9e-dce9-46e7-939e-68682c65d972
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 3/3/2020
-ms.openlocfilehash: 5136bc69dc8d74da879b3d8a5cbe8b9f3a174554
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.date: 11/30/2020
+ms.openlocfilehash: 472ede945e5fe245baaf820f01889da2d1071ded
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386151"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96329615"
 ---
 # <a name="managing-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの管理
 
@@ -31,3 +31,7 @@ ms.locfileid: "81386151"
 [!INCLUDE [How can I select an end date for a subscription?](includes/select-end-date.md)]
 
 [!INCLUDE [Why does my SLP agreement have an end date, and why is it sometimes different for my subscribers?](includes/slp-end-dates.md)]
+
+[!INCLUDE [What is the process for assigning GitHub Enterprise subscriptions?](includes/github-assign-process.md)]
+
+[!INCLUDE [Why am I not seeing an agreement while logged into the portal?](includes/no-agreement.md)]

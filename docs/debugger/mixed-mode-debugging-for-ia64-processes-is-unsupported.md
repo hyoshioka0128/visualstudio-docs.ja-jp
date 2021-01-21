@@ -1,5 +1,7 @@
 ---
-title: IA64 プロセスの混合モードのデバッグはサポートされていません。 | Microsoft Docs
+title: IA64 プロセスの混合モードのデバッグはサポートされていません。
+description: Visual Studio では、IA64 (Itanium) プロセスにおけるマネージド コードとネイティブ コードの混合モードのデバッグはサポートされていません。 回避策については、こちらの記事を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 65969e354a5d1ed2dc1cf54ca31e6088cc19de7a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731100"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975252"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>IA64 プロセスの混合モードのデバッグはサポートされていません。
 Visual Studio では、IA64 プロセスでマネージド コードとネイティブ コードの混合モードのデバッグはサポートされていません。 つまり、デバッグ中にマネージド コードからネイティブ コードにステップ インすることや、ネイティブ コードからマネージド コードにステップ インすることはできません。
@@ -35,7 +37,7 @@ Visual Studio では、IA64 プロセスでマネージド コードとネイテ
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>プラットフォームを 32 ビットに変更するには (Visual Basic または C#)
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
 
 2. プロパティ ページで、 **[コンパイル]** タブまたは **[デバッグ]** タブをクリックします。
 
@@ -45,7 +47,7 @@ Visual Studio では、IA64 プロセスでマネージド コードとネイテ
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>プラットフォームを 32 ビットに変更するには (C/C++)
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。
 
 2. プロパティ ページで **[プラットフォーム]** をクリックし、プラットフォームの一覧の [Win32] をクリックします。
 

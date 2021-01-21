@@ -1,5 +1,7 @@
 ---
 title: ロード テストのために遅延のペースに分布を適用する
+description: '[プロパティ] ウィンドウを使用してロード テストのために [遅延のペースに分布を適用] プロパティを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,23 +10,23 @@ ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa5d3239e3b096a2018d6ef9c9b3c6666dcd31c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c966eb9b4ad0bbf8e00c8a27fd69fef0c59cbc1
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288274"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440124"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>方法: ユーザー ペースのテスト ミックス モデルに対する遅延のペースに分布を適用する
 
-**新しいロード テスト ウィザード**でロード テストを作成した後、ロード テスト エディターを使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。
+**新しいロード テスト ウィザード** でロード テストを作成した後、ロード テスト エディターを使用して、テストのニーズや目標に合わせてシナリオのプロパティを変更できます。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 **[遅延のペースに分布を適用]** プロパティは、 **[プロパティ]** ウィンドウを使用して設定します。 ロード テスト シナリオの各プロパティは後でロード テスト エディターを使用して変更します。
 
 > [!NOTE]
-> **"遅延のペースに分布を適用"** プロパティは、*ロード テスト ミックス*がユーザーのペースに基づいて構成されている場合にのみ適用されます。 詳細については、「[テキスト ミックス モデルを編集して仮想ユーザーがテストを実行する確率を指定する](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)」を参照してください。
+> **"遅延のペースに分布を適用"** プロパティは、*ロード テスト ミックス* がユーザーのペースに基づいて構成されている場合にのみ適用されます。 詳細については、「[テキスト ミックス モデルを編集して仮想ユーザーがテストを実行する確率を指定する](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)」を参照してください。
 
 **"遅延のペースに分布を適用"** の値は、true または false に設定できます。
 
@@ -40,7 +42,7 @@ ms.locfileid: "85288274"
 
 1. ロード テストを開きます。
 
-   **ロード テスト エディター**が表示されます。 ロード テスト ツリーが表示されます。
+   **ロード テスト エディター** が表示されます。 ロード テスト ツリーが表示されます。
 
 2. ロード テスト ツリーの **[シナリオ]** フォルダーで、ペースの分布を適用するシナリオ ノードを選びます。
 
@@ -50,11 +52,11 @@ ms.locfileid: "85288274"
 
 4. **"遅延のペースに分布を適用"** のプロパティ値で、**True** または **False** を選択します。
 
-5. **[ファイル]**  >  **[保存]** を選びます。 次に、 **[遅延のペースに分布を適用]** の新しい値を使用して、ロード テストを実行します。
+5. **[ファイル]**  >  **[保存]** を選びます。 次に、**[遅延のペースに分布を適用]** の新しい値を使用して、ロード テストを実行します。
 
 ## <a name="see-also"></a>参照
 
 - [ロード テスト シナリオの編集](../test/edit-load-test-scenarios.md)
-- [チュートリアル: ロード テストの作成と実行](../test/walkthrough-create-and-run-a-load-test.md)
+- [チュートリアル: ロード テストの作成および実行](../test/walkthrough-create-and-run-a-load-test.md)
 - [テスト コントローラーとテスト エージェント](configure-test-agents-and-controllers-for-load-tests.md)
 - [ロード テスト シナリオのプロパティ](../test/load-test-scenario-properties.md)

@@ -1,5 +1,7 @@
 ---
 title: '[プロセス プロパティ] ダイアログ ボックス | Microsoft Docs'
+description: '[プロセス プロパティ] を使用して、[プロセス ビュー] で選択したプロセスの詳細を確認します。 次の 4 つのタブがあります。[全般]、[メモリ]、[ページ ファイル]、[スペース]。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abf4e8c6d1e61441459b0b48adfda4fa8728f44a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903757"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975109"
 ---
 # <a name="process-properties-dialog-box"></a>[プロセス プロパティ] ダイアログ ボックス
 このダイアログ ボックスを使用して、特定のプロセスの詳細を確認します。 このダイアログ ボックスを表示するには、[プロセス ビュー](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace データ
+description: Visual Studio で、IntelliTrace の診断データ アダプターを構成して、特定の診断トレース情報を収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/13/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a043f2841dc5a6918036c152628ebfc346e11ee
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288260"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440109"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>方法: 困難な問題をデバッグするのに役立つ IntelliTrace データを収集する
 
@@ -126,7 +128,7 @@ IntelliTrace ファイルに収集されたデータによって、コードの�
 
 ## <a name="see-also"></a>関連項目
 
-- [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)
 - [IntelliTrace データの収集](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

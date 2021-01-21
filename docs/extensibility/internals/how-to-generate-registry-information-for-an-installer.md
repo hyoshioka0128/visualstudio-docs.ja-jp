@@ -1,5 +1,7 @@
 ---
 title: '方法: インストーラーのレジストリ情報を生成する |Microsoft Docs'
+description: Visual Studio の RegPkg.exe ユーティリティを使用して、Windows インストーラセットアップパッケージに組み込むための VSPackage レジストリ情報を生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,23 +14,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0140ea2e1b894754b0cf35bc75676f277b12a0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 082833c97706868261e39b50377c158f90b46a4a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905466"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761226"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>方法: インストーラーのレジストリ情報を生成する
 
-*RegPkg.exe*ユーティリティを使用して、マネージ VSPackage の登録マニフェストを生成できます。 マニフェストは、Windows インストーラーセットアップパッケージに組み込むことができます。 RegPkg では、 [WINDOWS インストーラー XML ツールセット](https://wixtoolset.org/)に基づいてセットアップのソースファイルに含めることができるファイルを生成することもできます。
+*RegPkg.exe* ユーティリティを使用して、マネージ VSPackage の登録マニフェストを生成できます。 マニフェストは、Windows インストーラーセットアップパッケージに組み込むことができます。 RegPkg では、 [WINDOWS インストーラー XML ツールセット](https://wixtoolset.org/)に基づいてセットアップのソースファイルに含めることができるファイルを生成することもできます。
 
 > [!IMPORTANT]
-> RegPkg では、開発システムに固有のパス名が生成されるため、RegPkg を使用するたびに、適切な Windows インストーラー書式設定されたプロパティを使用するように出力を編集する必要があります。 たとえば、値は `InprocServer32` * \<SystemFolder\>mscoree.dll*し、パスにはとを使用する必要があり *\<#filekey\>* *\<$componentkey\>* ます。 この方法で出力を調整すると、別のドライブまたは別のディレクトリに Windows がインストールされているコンピューター、ローカライズされたディレクトリ名、およびユーザーが選択できるパスがサポートされます。 詳細については、「Windows インストーラー SDK での [書式設定](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 」を参照してください。 開発システムパスの RegPkg 規則 (たとえば、フォーム*File_ \<filename\> *のファイル id) に従う場合は、変更を減らす必要があります。
+> RegPkg では、開発システムに固有のパス名が生成されるため、RegPkg を使用するたびに、適切な Windows インストーラー書式設定されたプロパティを使用するように出力を編集する必要があります。 たとえば、値は `InprocServer32` *\<SystemFolder\>mscoree.dll* し、パスにはとを使用する必要があり *\<#filekey\>* *\<$componentkey\>* ます。 この方法で出力を調整すると、別のドライブまたは別のディレクトリに Windows がインストールされているコンピューター、ローカライズされたディレクトリ名、およびユーザーが選択できるパスがサポートされます。 詳細については、「Windows インストーラー SDK での [書式設定](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 」を参照してください。 開発システムパスの RegPkg 規則 (たとえば、フォーム *File_ \<filename\>* のファイル id) に従う場合は、変更を減らす必要があります。
 
 ## <a name="to-create-a-registration-manifest"></a>登録マニフェストを作成するには
 
-- **/Regfile**スイッチを使用して regpkg を実行します。 他のスイッチ、出力ファイルの名前、および VSPackage のパスを指定します。
+- **/Regfile** スイッチを使用して regpkg を実行します。 他のスイッチ、出力ファイルの名前、および VSPackage のパスを指定します。
 
      たとえば、コマンドプロンプトで、次のように入力します。
 
@@ -99,7 +101,7 @@ ms.locfileid: "85905466"
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Windows インストーラー XML ツールセットインクルードファイルを作成するには
 
-- **/Wixfile**スイッチを使用して regpkg を実行します。 他のスイッチ、出力ファイルの名前、および VSPackage のパスを指定します。
+- **/Wixfile** スイッチを使用して regpkg を実行します。 他のスイッチ、出力ファイルの名前、および VSPackage のパスを指定します。
 
      たとえば、コマンドプロンプトで、次のように入力します。
 

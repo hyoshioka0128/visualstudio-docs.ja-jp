@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションのコンシェルジェ チャット特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 03/25/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: 8c945a71d41a1545a4dc6155bbd63d3ddc78053c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906057"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538099"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
 コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
@@ -25,7 +25,7 @@ ms.locfileid: "85906057"
 
 2. 特典ページの [サポート] セクションでコンシェルジェ チャット タイルを見つけ、 **[今すぐチャットを開始]** をクリックします。
     > [!div class="mx-imgBorder"]
-    > ![コンシェルジェ チャット タイル](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > ![コンシェルジェ チャット タイル](_img/vs-concierge-chat/vs-concierge-chat-tile.png "新しいチャット セッションを開始するには、[今すぐチャットを開始] をクリックします。")
 
 3. **[続行]** をクリックします。
 
@@ -33,15 +33,15 @@ ms.locfileid: "85906057"
 
 5. エージェントが対応可能になると、チャットが開始されます。
     > [!div class="mx-imgBorder"]
-    > ![コンシェルジェ チャット セッション](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > ![コンシェルジェ チャット セッション](_img/vs-concierge-chat/vs-concierge-chat-session.png "エージェントがセッションに参加すると、チャット セッション ウィンドウが表示されます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise | VL| 使用可能       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL| 使用可能       |  はい          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
-| Visual Studio Professional with GitHub Enterprise | VL | 使用可能                                                            |  はい          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 使用可能                                                            |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  はい          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
@@ -62,10 +62,10 @@ ms.locfileid: "85906057"
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Microsoft のツールとサービスの詳細については、次のドキュメントを参照してください。

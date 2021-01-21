@@ -1,5 +1,7 @@
 ---
 title: リポジトリを複製する
+description: Visual Studio Tools for AI を使用して、Python コードのリポジトリを複製し、そこからプロジェクトを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bb3aa4a7aa9818f42f99860956e0e2ae73b2b7f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303c410bf519561844d95cc13fa036534ddb2aa7
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371587"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726619"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Visual Studio で Python コードのリポジトリを複製する
 
@@ -34,11 +36,11 @@ ms.locfileid: "85371587"
     > [!Tip]
     > チーム エクスプローラーで指定したフォルダーは、複製されたファイルを受け取る特定のフォルダーです。 `git clone` コマンドとは異なり、チーム エクスプローラーで複製を作成しても、リポジトリの名前のサブフォルダーは自動作成されません。
 
-5. 複製が完了したら、チーム エクスプローラーの下のリポジトリ フォルダーをダブルクリックして、リポジトリのダッシュボードに移動します。 **[ソリューション]** の下で **[新規]** を選択します。
+5. 複製が完了したら、チーム エクスプローラーの下のリポジトリ フォルダーをダブルクリックして、リポジトリのダッシュボードに移動します。 **[ソリューション]** の **[新規作成]** を選択します。
 
     ![[チーム エクスプローラー] ウィンドウ、複製からの新しいプロジェクトの作成](media/create-project-repo/team-explorer-new-project.png)
 
-6. 表示された **[新しいプロジェクト]** ダイアログで、 **[既存の Python コードから]** を選択し、プロジェクトの名前を指定して、 **[場所]** をリポジトリと同じフォルダーに設定し、 **[OK]** を選択します。 表示されたウィザードで、 **[完了]** を選択します。
+6. 表示された **[新しいプロジェクト]** ダイアログで、 **[既存の Python コードから]** を選択し、プロジェクトの名前を指定して、 **[場所]** をリポジトリと同じフォルダーに設定し、 **[OK]** を選択します。 表示されたウィザードで、**[完了]** をクリックします。
 
 7. メニューから **[表示]、[ソリューション エクスプローラー]** を選択します。
 
@@ -53,10 +55,10 @@ ms.locfileid: "85371587"
    > [!NOTE]
    > Anaconda を使用しているときに、numpy の欠落に関するエラーが発生した場合は、[Python 環境を Anaconda を使用するように変更する](../python/selecting-a-python-environment-for-a-project.md)必要があります。
 
-11. TensorBoard で進行状況を視覚化することができます。 プロジェクトを右クリックし、 **[Run TensorBoard]\(TensorBoard の実行\)** をクリックして、TensorBoard の出力ログのディレクトリを選択します。
+11. TensorBoard で進行状況を視覚化することができます。 プロジェクトを右クリックし、**[Run TensorBoard]\(TensorBoard の実行\)** をクリックして、TensorBoard の出力ログのディレクトリを選択します。
 
-   ![tensorboard を実行する](media/create-project-repo/run-tensorboard.png)
+   ![Visual Studio ソリューション エクスプローラーのスクリーンショット。MNIST プロジェクトが選択されており、コンテキスト メニューで [Run TensorBoard]\(TensorBoard の実行\) オプションが選択されています。](media/create-project-repo/run-tensorboard.png)
 
 12. 時間の経過に伴いエラーが減少していることに注目してください。これは品質が改善していることを意味します。
 
-   ![tensorboard を実行する](media/create-project-repo/tensorboard.png)
+   ![メイン TensorBoard ウィンドウのスクリーンショット。TensorBoard ログからデータを視覚化する 4 つのグラフを示しています。](media/create-project-repo/tensorboard.png)

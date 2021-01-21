@@ -1,5 +1,7 @@
 ---
 title: '方法 : ビルドをクリーンする | Microsoft Docs'
+description: MSBuild を使用してビルドをクリーンする方法について説明します。すべての中間ファイルと出力ファイルが削除され、プロジェクト ファイルとコンポーネント ファイルだけが残ります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 989bcd560c2c5cd9a7d8c571208bfab84adbd493
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633916"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436726"
 ---
 # <a name="how-to-clean-a-build"></a>方法: ビルドをクリーンする
 
@@ -103,7 +105,7 @@ ms.locfileid: "77633916"
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [MakeDir タスク](../msbuild/makedir-task.md)
 - [RemoveDir タスク](../msbuild/removedir-task.md)

@@ -3,18 +3,16 @@ title: Azure プライベート クラウドへのアクセス
 description: Visual Studio を使用してプライベート クラウドのリソースにアクセスする方法について説明します。
 author: ghogen
 manager: jillfra
-assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 6c1b46e34c688f232ee1f774ff2d19fdad7ff6bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92ab5ae3dc6fa5fd807203a1adf2353a20bfb666
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280389"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902832"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Visual Studio での Azure プライベート クラウドへのアクセス
 
@@ -22,7 +20,7 @@ ms.locfileid: "85280389"
 
 1. プライベート クラウドの Azure Portal で、発行設定ファイルをダウンロードするか、管理者に連絡して発行設定ファイルを入手します  (ファイル拡張子は `.publishsettings` です)。
 
-1. Visual Studio の**サーバー エクスプローラー**で **[Azure]** ノードを右クリックし、**[サブスクリプションの管理およびフィルター]** を選択します。
+1. Visual Studio の **サーバー エクスプローラー** で **[Azure]** ノードを右クリックし、**[サブスクリプションの管理およびフィルター]** を選択します。
 
     ![Manage subscriptions command](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 

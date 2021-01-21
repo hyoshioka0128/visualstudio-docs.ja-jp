@@ -1,5 +1,7 @@
 ---
 title: Office プロジェクトのユーザー補助機能
+description: Microsoft Office プロジェクトに、標準的なアクセシビリティ要件を満たすカスタムソリューションを構築するための多くのユーザー補助機能が含まれている方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189624"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847365"
 ---
 # <a name="accessibility-in-office-projects"></a>Office プロジェクトのユーザー補助機能
 
@@ -54,7 +56,7 @@ Microsoft Visual Studio と Microsoft Office には、標準的なアクセシ�
 
 6. プロジェクトのドキュメントデザイナーまたはブックデザイナーを開きます。
 
-7. **F6**キーを押して、リボンのショートカットキーを表示します。
+7. **F6** キーを押して、リボンのショートカットキーを表示します。
 
 ## <a name="accessibility-at-run-time"></a>実行時のアクセシビリティ
 
@@ -70,7 +72,7 @@ Microsoft Visual Studio と Microsoft Office には、標準的なアクセシ�
   ドキュメントの Windows フォームコントロールの制限事項については、「 [Office ドキュメントの Windows フォームコントロールの制限事項](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)」を参照してください。
 
 ### <a name="actions-panes-and-custom-task-panes"></a>操作ウィンドウとカスタム作業ウィンドウ
- 操作ウィンドウまたはカスタム作業ウィンドウにフォーカスがある場合は、Windows フォームアプリケーション上のコントロールにアクセスするのと同じ方法でコントロールにアクセスします。 操作ウィンドウとドキュメントの間でカーソルを移動するには、 **F6**キーを押します。
+ 操作ウィンドウまたはカスタム作業ウィンドウにフォーカスがある場合は、Windows フォームアプリケーション上のコントロールにアクセスするのと同じ方法でコントロールにアクセスします。 操作ウィンドウとドキュメントの間でカーソルを移動するには、 **F6** キーを押します。
 
  操作ウィンドウとカスタム作業ウィンドウの詳細については、「 [操作ウィンドウの概要](../vsto/actions-pane-overview.md) 」および「 [カスタム作業](../vsto/custom-task-panes.md)ウィンドウ」を参照してください。
 
@@ -80,7 +82,7 @@ Visual Studio には、表示モードに関連する次の制限事項があり
 
 - Word 文書または Excel ワークシートのコントロールは、ドキュメントのズーム設定を100% 以外のものに変更すると無効になります。
 
-- ユーザーが**ハイコントラストを使用**するようにコンピューターのユーザー補助オプションを変更した場合、[**新しいプロジェクト**] ダイアログボックスにコントロールが正しく表示されません。
+- ユーザーが **ハイコントラストを使用** するようにコンピューターのユーザー補助オプションを変更した場合、[**新しいプロジェクト**] ダイアログボックスにコントロールが正しく表示されません。
 
 拡大鏡を使用すると、これらの制限を克服できます。 拡大鏡は、ウィンドウの表示ユーティリティで、画面の拡大部分を表示するウィンドウを別に作成します。
 

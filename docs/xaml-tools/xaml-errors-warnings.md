@@ -1,5 +1,7 @@
 ---
 title: XAML のエラーと警告
+description: エラーの分類方法、エラー情報の取得方法、それらを修正するためのオプションの検索方法など、Visual Studio での XAML のエラーと警告について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
@@ -8,33 +10,36 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b740f0882edb2eae9f00bd7826543e7fe1b4597f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817269"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414478"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML のエラーと警告
 
-Visual Studio では、XAML を作成するとき、入力したコードがすぐに解析されます。 エラーが検出されると、コード行に波線が付きます。 この波線にマウス カーソルを合わせると、エラーまたは警告に関する詳細が表示されます。 一部のエラーと警告については、クイックアクションの電球が表示され、 **Ctrl キー**を使用し + **ます。** 問題解決のための選択肢が表示されます。
+Visual Studio では、XAML を作成するとき、入力したコードがすぐに解析されます。 エラーが検出されると、コード行に波線が付きます。 この波線にマウス カーソルを合わせると、エラーまたは警告に関する詳細が表示されます。 一部のエラーと警告については、クイックアクションの電球が表示され、 **Ctrl キー** を使用し + **ます。** 問題解決のための選択肢が表示されます。
 
 ## <a name="error-types"></a>エラーの種類
 
 バックグラウンドでは、複数のツールにより並列で XAML が解析されます。 XAML エラーは、エラーを検出したツールに基づき、次の 3 つの種類の 1 つに分類されます。
 
-|**エラーを検出した機能**|**エラー コードの形式**|
-| - |-----------------|
-|XAML 言語サービス (XAML エディター)|XLSxxxx|
-|XAML デザイナー|XDGxxxx|
-|XAML エディット コンティニュ|XECxxxx|
+|**エラーを検出した機能**|**エラー コードの形式**|**Visual Studio のバージョン**|
+| - |-----------------| - |
+|XAML 言語サービス (XAML エディター)|XLSxxxx| すべてのバージョン |
+|XAML デザイナー|XDGxxxx| すべてのバージョン | 
+|XAML のエディット コンティニュ|XECxxxx| Visual Studio 2019 バージョン16.1 以前 |
+|XAML ホット リロード | XHRxxxx | Visual Studio 2019 バージョン16.2 以降 |
+
+Xaml のブランド変更の編集 & の詳細については、XAML のホットリロードとして続行するには、「[リリースノート](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)」を参照してください。
 
 > [!Note]
 > 一部のエラーや警告には該当コードがありません。 そのようなエラーは通常、XAML デザイナーが検出したエラーです。
 
 ## <a name="suppress-xaml-designer-errors"></a>XAML デザイナー エラー
 
-**[ツール]、[オプション]** の順に選択して **[オプション]** ダイアログを開き、**[テキスト エディター]、[XAML]、[その他]** の順に選択します。
+**[ツール]、[オプション]** の順に選択して **[オプション]** ダイアログを開き、 **[テキスト エディター]、[XAML]、[その他]** の順に選択します。
 
 **[Show errors detected by the XAML designer]\(XAML デザイナーによって検出されたエラーを表示する\)** チェック ボックスの選択を解除します。
 

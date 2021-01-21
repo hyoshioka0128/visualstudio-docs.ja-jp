@@ -1,5 +1,7 @@
 ---
 title: テンプレートディレクトリの説明 (.Vsdir ファイル |Microsoft Docs
+description: テンプレートディレクトリの説明ファイルを使用して、プロジェクトに関連付けられているフォルダー、.vsz ファイル、およびテンプレートを Visual Studio IDE で表示できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16ba609d5b05d565a12b38bd19e9a777851ced5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704689"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877729"
 ---
 # <a name="template-directory-description-vsdir-files"></a>テンプレート ディレクトリの説明 (.Vsdir) ファイル
 テンプレートディレクトリ記述ファイル (.vsdir) は、統合開発環境 (IDE: integrated development environment) が、プロジェクトに関連付けられているフォルダー、ウィザード .vsz ファイル、およびテンプレートファイルをダイアログボックスに表示できるようにするテキストファイルです。 コンテンツには、ファイルまたはフォルダーごとに1つのレコードが含まれます。 参照先の場所にあるすべての .vsdir ファイルはマージされますが、複数のフォルダー、ウィザード、またはテンプレートファイルを記述するために通常提供されるのは1つの .vsdir ファイルだけです。
@@ -45,7 +47,7 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | 説明 | テンプレートファイルまたはテンプレートウィザードのローカライズされた説明。 このフィールドには、文字列または "#ResID" 形式のリソース識別子を指定できます。 この文字列は、項目が選択されたときに [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されます。 |
 | DLLPath または {clsidPackage} | テンプレートファイルまたはウィザードのアイコンを読み込むために使用します。 アイコンは、IconResourceId を使用して .dll または .exe ファイルからリソースとして読み込まれます。 この .dll または .exe ファイルは、完全パスを使用するか、VSPackage の GUID を使用して識別できます。 VSPackage の実装 DLL は、(サテライト DLL ではなく) アイコンを読み込むために使用されます。 |
 | IconResourceId | 表示するアイコンを決定する DLL または VSPackage の実装 DLL 内のリソース識別子。 |
-| Flags ( <xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS> ) | [**新しい項目の追加**] ダイアログボックスの [**名前**] フィールドと [**場所**] フィールドを無効または有効にするために使用します。 **Flags**フィールドの値は、必要なビットフラグの組み合わせに相当する10進数です。<br /><br /> ユーザーが [ **新規** ] タブで項目を選択すると、[ **新しい項目の追加** ] ダイアログボックスが最初に表示されたときに、[名前] フィールドと [場所] フィールドが表示されるかどうかがプロジェクトによって決定されます。 項目は、.vsdir ファイルを介して、項目が選択されている場合に、フィールドが有効か無効かを制御できます。 |
+| Flags ( <xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS> ) | [**新しい項目の追加**] ダイアログボックスの [**名前**] フィールドと [**場所**] フィールドを無効または有効にするために使用します。 **Flags** フィールドの値は、必要なビットフラグの組み合わせに相当する10進数です。<br /><br /> ユーザーが [ **新規** ] タブで項目を選択すると、[ **新しい項目の追加** ] ダイアログボックスが最初に表示されたときに、[名前] フィールドと [場所] フィールドが表示されるかどうかがプロジェクトによって決定されます。 項目は、.vsdir ファイルを介して、項目が選択されている場合に、フィールドが有効か無効かを制御できます。 |
 | SuggestedBaseName | ファイル、ウィザード、またはテンプレートの既定の名前を表します。 このフィールドは、文字列または "#ResID" 形式のリソース識別子のいずれかです。 IDE では、この値を使用して項目の既定の名前を指定します。 この基本値には、MyFile21 などの名前が一意になるように、整数値が付加されます。<br /><br /> 前の一覧では、Description、DLLPath、IconResourceId、Flags、および SuggestedBaseNumber がテンプレートおよびウィザードファイルにのみ適用されます。 これらのフィールドは、フォルダーには適用されません。 この事実は、\BscPrj\BscPrj\BscPrjProjectItems レジストリキーの BscPrjProjectItems ファイルのコードに示されてい \<EnvSDK> ます。 このファイルには、各レコードについて、RelPathName、{clsidPackage}、LocalizedName、および SortPriority の4つのフィールドを持つ3つのレコードが含まれています。<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
  ウィザードファイルを作成する場合は、次の問題についても考慮する必要があります。

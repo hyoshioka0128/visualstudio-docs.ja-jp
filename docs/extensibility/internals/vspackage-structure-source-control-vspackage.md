@@ -1,5 +1,7 @@
 ---
 title: VSPackage 構造体 (ソース管理 VSPackage) |Microsoft Docs
+description: ソース管理パッケージ SDK について説明します。これは、ソース管理者が Visual Studio と統合するための VSPackage のガイドラインを提供します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f09b189e1e4b47187586e66c74315ee32495c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703807"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487960"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 構造 (ソース管理 VSPackage)
 
@@ -72,7 +74,7 @@ Visual studio のすべてのプロジェクトは <xref:Microsoft.VisualStudio.
 
 ソース管理 VSPackage で考慮する必要があるインターフェイスの完全な一覧については、「 [関連するサービスとインターフェイス](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [デザイン要素](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [関連サービスとインターフェイス](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

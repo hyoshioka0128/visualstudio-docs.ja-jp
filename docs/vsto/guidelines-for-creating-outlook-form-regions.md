@@ -1,5 +1,7 @@
 ---
 title: Outlook フォーム領域を作成するためのガイドライン
+description: フォーム領域を最適化し、潜在的な問題を回避するために役立つ Outlook フォーム領域を作成するためのガイドラインについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a962b1ae2bff7b9a954204485a6ee73a3b63eb7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255953"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848093"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook フォーム領域を作成するためのガイドライン
   次に示す情報は、フォーム領域の最適化と、潜在的な問題の回避に役立ちます。
@@ -42,14 +44,14 @@ ms.locfileid: "71255953"
 
 |フォーム領域の名前|説明|
 |----------------------|-----------------|
-|フォーム領域の項目名|**[新しい項目の追加]** ダイアログ ボックスで **Outlook フォーム領域** のアイテムに指定した名前です。 これはフォーム領域コード ファイルの名前で、 **ソリューション エクスプローラー**に表示されます。|
+|フォーム領域の項目名|**[新しい項目の追加]** ダイアログ ボックスで **Outlook フォーム領域** のアイテムに指定した名前です。 これはフォーム領域コード ファイルの名前で、 **ソリューション エクスプローラー** に表示されます。|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> プロパティ|この名前は、 **新しい Outlook フォーム領域** ウィザードの **[説明用のテキストを指定し、表示設定を選択します]** ページで指定します。 この名前は、 **[プロパティ]** ウィンドウに **FormRegionName** プロパティとして表示されます。<br /><br /> <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> プロパティを使用して、Outlook ユーザー インターフェイス (UI) のフォーム領域を識別するラベルを指定します。 分離フォーム領域の場合、この名前は Outlook アイテムのリボンにボタンとして表示されます。<br /><br /> 隣接フォーム領域の場合、この名前は、フォーム領域上のヘッダー テキストとして表示されます。|
 |`Microsoft.Office.Tools.Outlook.FormRegionName` 属性|プロジェクトに **Outlook フォーム領域** アイテムを追加すると、Visual Studio によって、このプロパティはフォーム領域の完全修飾名に設定されます。 既定の完全修飾名は、VSTO アドインの名前にフォーム領域の名前を追加して、ドットで区切った名前に設定されます。たとえば、 `OutlookAddIn1.FormRegion1`のようになります。<br /><br /> この完全修飾名は、フォーム領域ファクトリ クラスの先頭にも属性として表示されます。<br /><br /> 属性を使用して、 `Microsoft.Office.Tools.Outlook.FormRegionName` すべての OUTLOOK VSTO アドインでフォーム領域を一意に識別します。フォーム領域の項目の名前を変更する `Microsoft.Office.Tools.Outlook.FormRegionName` か、プロパティを変更することによって、属性の値を変更することはできません <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> 。 この名前を変更するには、フォーム領域コード ファイルの `Microsoft.Office.Tools.Outlook.FormRegionName` 属性を変更する必要があります。|
 
 ## <a name="disable-form-region-inheritance"></a><a name="DisablingInheritance"></a> フォーム領域の継承を無効にする
  既定では、カスタム メッセージ クラスは、基本メッセージ クラスのすべてのフォーム領域の関連付けを継承します。 たとえば、`IPM.Task.Contoso` という名前のメッセージ クラスは `IPM.Task` から派生します。 そのため、`IPM.Task.Contoso` は `IPM.Task` のフォーム領域の関連付けを継承します。
 
- どの派生メッセージ クラスにもフォーム領域を関連付ける必要がない場合は、フォーム領域の <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> プロパティを **true**。 たとえば、隣接フォーム領域をに関連付けて、 `IPM.Task` <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> プロパティを **true**に設定した場合、フォーム領域は標準タスクフォームの下部にのみ追加されます。 フォーム領域は、標準タスク フォームのカスタマイズ バージョンの末尾には追加されません。
+ どの派生メッセージ クラスにもフォーム領域を関連付ける必要がない場合は、フォーム領域の <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> プロパティを **true**。 たとえば、隣接フォーム領域をに関連付けて、 `IPM.Task` <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.ExactMessageClass%2A> プロパティを **true** に設定した場合、フォーム領域は標準タスクフォームの下部にのみ追加されます。 フォーム領域は、標準タスク フォームのカスタマイズ バージョンの末尾には追加されません。
 
 ## <a name="understand-types-and-message-class-names"></a><a name="ClassNames"></a> 型とメッセージクラス名について
  Outlook アイテムの型名は、Outlook アイテムのメッセージ クラス名とは異なります。 たとえば、RSS アイテムの型名は `Microsoft.Office.Interop.Outlook.PostItem` です。 RSS アイテムのメッセージ クラス名は `IPM.Post.RSS` です。
@@ -65,7 +67,7 @@ ms.locfileid: "71255953"
 
 1. フォーム領域上のテキスト ボックスで、一部のテキストを選択します。
 
-2. Del **キーを**押します。
+2. Del **キーを** 押します。
 
 3. テキスト ボックスで選択したテキスト部分でなく、メール アイテム全体が削除されます。
 
@@ -84,7 +86,7 @@ ms.locfileid: "71255953"
 
   **ページ** アイコンは、分離、置換、またはすべて置換のフォーム領域を含むアイテムについて、インスペクターのリボンに表示されます。
 
-  **ウィンドウ**アイコンは、 **Alt** + 置換フォーム領域またはすべて置換フォーム領域を表示する開いているアイテムについて、通知領域および Alt**Tab**ダイアログボックスに表示されます。
+  **ウィンドウ** アイコンは、 **Alt** + 置換フォーム領域またはすべて置換フォーム領域を表示する開いているアイテムについて、通知領域および Alt **Tab** ダイアログボックスに表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [実行時のフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)

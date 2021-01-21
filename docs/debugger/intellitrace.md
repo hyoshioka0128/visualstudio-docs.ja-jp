@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace | Microsoft Docs
+description: IntelliTrace を使用し、Visual Studio のコードの実行履歴を記録し、トレースします。 特定のイベントを記録し、関連するコードを調べ、エラーをデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 09/19/2018
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 518043a38f3a0f6945840a36a1f7fcade5a313d7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536514"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149002"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio Enterprise の IntelliTrace (C#、Visual Basic、C++)
 
@@ -68,7 +70,7 @@ IntelliTrace は、これらの時点で特定のイベントやデータを記�
 
 - Visual Studio 2015 Enterprise 以降のバージョン、または Visual Studio Ultimate の前のバージョンの IntelliTrace セッション。
 
-- Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 詳細については、「[IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)」と「[Microsoft Monitoring Agent による監視](https://technet.microsoft.com/library/dn465153.aspx)」を参照してください。
+- Microsoft Monitoring Agent を単独、または System Center 2012 と連携して使用する場合の、IIS でホストされている ASP.NET Web アプリ、または配置されて実行中の SharePoint 2010 アプリケーションと SharePoint 2013 アプリケーション。 詳細については、「[IntelliTrace スタンドアロン コレクターを使用する](../debugger/using-the-intellitrace-stand-alone-collector.md)」と「[Microsoft Monitoring Agent による監視](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))」を参照してください。
 
 IntelliTrace を使用したデバッグがどのように役立つかの例を次に示します。
 

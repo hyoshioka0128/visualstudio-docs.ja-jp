@@ -1,5 +1,7 @@
 ---
-title: ASP.NET Web アプリのコンカレンシー データを取得するプロファイラーのコマンド ライン
+title: プロファイラーのコマンド ライン - ASP.NET のコンカレンシー データを取得する
+description: リソース競合データを収集できる、Visual Studio プロファイル ツールのコンカレンシー メソッドに関する参照情報を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: b7cb9d1c245f07f27eca097e0fa774710906d38c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e12288471bed62014f9a307d609ef3d588e0026a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331892"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148326"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>プロファイラーのコマンド ラインを使用した ASP.NET Web アプリケーションのコンカレンシー データの収集
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]プロファイリング ツールのコンカレンシー メソッドを使用すると、リソース競合データを収集できます。
@@ -53,5 +55,5 @@ ms.locfileid: "85331892"
 
 - [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>リファレンス
+## <a name="see-also"></a>関連項目
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2015 SDK のソース管理の新機能 |Microsoft Docs
+description: ソース管理 Vspackage の機能について説明し、実装手順の概要を確認します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f90ae3e1d327b10e99713ad28aa2d5a06c0be34b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af2c321eb91407808e71f4c0126b86d79980c53
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703409"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487817"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Visual Studio 2015 SDK のソース管理の新機能
 
@@ -45,7 +47,7 @@ VSPackage を使用すると、ほぼすべての種類の機能を Visual Studi
 
 6. ソース管理 VSPackage は、インターフェイスを実装するイベント <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> や、(インターフェイスによって実装される) プロジェクトドキュメント (TPD) イベントを追跡し、必要なアクションを実行するなどのイベントをリッスンする必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> ます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>参照
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>

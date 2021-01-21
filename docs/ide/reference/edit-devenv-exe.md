@@ -1,5 +1,7 @@
 ---
 title: -Edit (devenv.exe)
+description: devenv の Edit コマンド ライン スイッチを使用して、指定したファイルを Visual Studio の既存のインスタンスで開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d180d5a5d723d8085537f2993aac022d74df2c08
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 845f83d2078999e3b3e32e048f9a3fa716300b19
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595697"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040590"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv /Edit [File1[ FileN]...]
 
   任意。 Visual Studio の既存インスタンスで開く 1 つ以上の追加ファイル。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 ファイルが指定されていない場合は、既存の Visual Studio インスタンスがフォーカスを受け取ります。 ファイルが指定されておらず、Visual Studio のインスタンスが存在しない場合、簡略化されたウィンドウ レイアウトでインスタンスが作成されます。
 

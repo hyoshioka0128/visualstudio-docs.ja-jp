@@ -1,5 +1,7 @@
 ---
-title: 方法 - WPF ツリー ビジュアライザーを使用する | Microsoft Docs
+title: WPF ツリー ビジュアライザーを使用する | Microsoft Docs
+description: Visual Studio で Windows Presentation Foundation (WPF) ビジュアライザーを使用し、WPF オブジェクトのビジュアル ツリーを調べたり、WPF 依存関係プロパティを表示したりできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e210d41541ef2fe0f7f8da149c23dc17645e44f
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 83b11ec1c091d2a63ed89cd3089bc3b507b0db8f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348497"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149028"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>方法: WPF ツリー ビジュアライザーを使用する
 WPF ツリー ビジュアライザーを使用すると、WPF オプションのビジュアル ツリーを調べたり、ツリーに含まれるオブジェクトの WPF 依存関係プロパティを表示したりすることができます。 ビジュアル ツリーの詳細については、「[WPF のツリー](/dotnet/framework/wpf/advanced/trees-in-wpf)」を参照してください。 依存関係プロパティの詳細については、「[依存関係プロパティの概要](/dotnet/framework/wpf/advanced/dependency-properties-overview)」を参照してください。

@@ -1,5 +1,7 @@
 ---
 title: プログラムによって連絡先の電子メールアドレスを検索する
+description: Visual Studio を使用して、Microsoft Outlook の連絡先の電子メールアドレスをプログラムで検索する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a4a9d52ae16b77b40461a314c6008f8cdd741bcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fa6578612fb81d9d025e613697c4342bac11bee
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537645"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528224"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>方法: プログラムによって連絡先の電子メールアドレスを検索する
   この例では、連絡先フォルダーから、電子メール アドレスに **example.com** というドメイン名が含まれている連絡先を検索します。

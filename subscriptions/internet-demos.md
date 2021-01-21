@@ -1,18 +1,18 @@
 ---
-title: プロダクト キーを使用してターミナル サービスによるインターネット デモンストレーションをサポートする | Microsoft Docs
+title: Visual Studio サブスクリプションでのターミナル サービスを使用したインターネット デモ | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 10/28/2020
 ms.topic: conceptual
 description: プロダクト キーを使用してターミナル サービスによるインターネット デモンストレーションをサポートし、RDS アクセスを有効にする方法を説明します
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 9a63436e38779a51ba414969b36a2bb166e6cab9
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232441"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904618"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>ターミナル サービスを介したインターネット デモンストレーション
 Visual Studio サブスクリプションがあれば、ターミナル サービス (Windows Server 2003 または Windows Server 2008) やリモート デスクトップ サービス (Windows Server 2008 R2 以降) を介してエンド ユーザーに自分のプログラムのインターネット デモンストレーションへアクセスしてもらうことができます。 この方法で、最大 200 人の匿名ユーザーが同時に会員のデモンストレーションにアクセスすることができます。 デモンストレーションに実稼動データを使用することはできません。 Visual Studio サブスクライバーは、自分のアプリケーションのデモンストレーションをエンド ユーザーに提供することができます。 ターミナル サービス (TS) またはリモート デスクトップ サービス (RDS) を使用したこのインターネット デモンストレーションのシナリオにおいてのみ、Visual Studio サブスクリプションを持たないエンド ユーザーがデモンストレーション アプリケーションを操作できます。これは、そのソフトウェアが Visual Studio サブスクリプションでライセンスを付与されている間に限ります。
@@ -36,13 +36,13 @@ Windows Server 2008 R2 では、種類ごとに 5 つのキーが利用でき、
 - ユーザー接続を有効にするプロダクト キーは Visual Studio サブスクライバーが取得しなければなりません。
 
 ## <a name="see-also"></a>関連項目
-- [Windows Server ドキュメント](https://docs.microsoft.com/windows-server/)
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Windows Server ドキュメント](/windows-server/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-RDS の配置に関するガイダンスが必要な場合は、 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf のマルチパート ブログ シリーズ「**Remote Desktop Services (RDS) 2012 session deployment (リモート デスクトップ サービス (RDS) 2012 セッションの配置)** 」をご覧ください。 
+RDS の配置に関するガイダンスが必要な場合は、 https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf のマルチパート ブログ シリーズ「 **Remote Desktop Services (RDS) 2012 session deployment (リモート デスクトップ サービス (RDS) 2012 セッションの配置)** 」をご覧ください。 
 
 質問がある場合は、Microsoft [リモート デスクトップ サービス フォーラム](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS)にアクセスしてください。

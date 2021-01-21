@@ -1,5 +1,7 @@
 ---
-title: '[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])'
+title: '[オプション] ダイアログ ボックスの [Web プロジェクト]'
+description: '[Web プロジェクト] オプションを使用して、Visual Studio 内での開発用に Web プロジェクトによって使用される Web サーバーを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 07/14/2017
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b393291ccb316b62b2a056b55ca902781196b637
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 60aadb43c40e109fef9c4b9e2aa046c3f0d51edd
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114482"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96044012"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>[Web プロジェクト] ([オプション] ダイアログ ボックス - [プロジェクトおよびソリューション])
 

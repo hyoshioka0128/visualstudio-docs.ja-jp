@@ -1,5 +1,7 @@
 ---
 title: Vspackage | を読み込んでいますMicrosoft Docs
+description: パフォーマンスを向上させるために使用される遅延読み込みなど、Visual Studio での Vspackage の読み込みについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c221bf06ef3b7e37e2afc1856f3e54fe5ad95e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0aeab78a2f64be2df6f601ad8ed224f13071eb8c
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702959"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616105"
 ---
 # <a name="load-vspackages"></a>Load Vspackage
 Vspackage は、機能が必要な場合にのみ、Visual Studio に読み込まれます。 たとえば、VSPackage は、Visual Studio がプロジェクトファクトリまたは VSPackage が実装するサービスを使用するときに読み込まれます。 この機能は遅延読み込みと呼ばれます。これは、パフォーマンス向上のために可能な場合に使用されます。
@@ -35,7 +37,7 @@ Vspackage は、機能が必要な場合にのみ、Visual Studio に読み込�
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID
-    public class MyAutoloadedPackage : Package
+    public class MyAutoloadedPackage : Package
     {. . .}
     ```
 

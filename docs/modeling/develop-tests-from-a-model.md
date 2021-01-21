@@ -1,5 +1,7 @@
 ---
 title: モデルからテストを開発する
+description: 要件とアーキテクチャモデルを使用して、システムとそのコンポーネントのテストを整理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f49b52bece0c1dddc65da919d266c4f21b1bf69
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596659"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361834"
 ---
 # <a name="develop-tests-from-a-model"></a>モデルからテストを開発する
 システムとそのコンポーネントのテストを編成する際に、要件モデルとアーキテクチャ モデルを使用できます。 こうすることで、ユーザーやその他の利害関係者にとって重要な要求をテストしやすくなり、要求が変更された場合にすばやくテストを更新することができます。 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] を使用した場合、モデルとテストの間のリンクを維持することもできます。
@@ -22,7 +24,7 @@ ms.locfileid: "75596659"
  これらの機能をサポートしている Visual Studio のバージョンを確認するには、「 [アーキテクチャツールとモデリングツールのバージョンサポート](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)」を参照してください。
 
 ## <a name="system-and-subsystem-testing"></a>システムとサブシステムのテスト
- *システムテスト* は、 *受け入れテスト*とも呼ばれ、ユーザーのニーズが満たされているかどうかをテストします。 このようなテストでは内部の設計ではなく、外部から確認できるシステムの動作に焦点が当てられます。
+ *システムテスト* は、 *受け入れテスト* とも呼ばれ、ユーザーのニーズが満たされているかどうかをテストします。 このようなテストでは内部の設計ではなく、外部から確認できるシステムの動作に焦点が当てられます。
 
  システムの拡張またはシステムの再設計を行う場合、システム テストは非常に価値があります。 これらのテストにより、コードの変更時にバグの発生を回避することができます。
 
@@ -59,11 +61,11 @@ ms.locfileid: "75596659"
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。
 
-    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 これは、プロジェクトが Team Foundation で使用するプロセステンプレートに応じて、ユーザーストーリー、要件、またはユースケース作業項目である場合があります。 詳細については、「 [アジャイルツールとアジャイルプロジェクト管理について](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)」を参照してください。
+    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 これは、プロジェクトが Team Foundation で使用するプロセステンプレートに応じて、ユーザーストーリー、要件、またはユースケース作業項目である場合があります。 詳細については、「 [アジャイルツールとアジャイルプロジェクト管理について](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)」を参照してください。
 
 2. モデル内の 1 つまたは複数のユース ケースに対して、要求の作業項目をリンクします。
 
-    ユースケース図で、ユースケースを右クリックし、[ **作業項目へのリンク] を**クリックします。
+    ユースケース図で、ユースケースを右クリックし、[ **作業項目へのリンク] を** クリックします。
 
 3. テスト スイートに追加して、ユース ケースを確認するケースをテストします。
 
@@ -147,15 +149,15 @@ Assert (countAfter == countBefore = 1);
 
 1. [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] で要求を作成し、その要求に対してテスト スイートを作成します。
 
-    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 これは、プロジェクトが Team Foundation で使用するプロセステンプレートに応じて、ユーザーストーリー、要件、またはユースケース作業項目である場合があります。 詳細については、「 [アジャイルツールとアジャイルプロジェクト管理について](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)」を参照してください。
+    作成した要求は、[!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] の作業項目になります。 これは、プロジェクトが Team Foundation で使用するプロセステンプレートに応じて、ユーザーストーリー、要件、またはユースケース作業項目である場合があります。 詳細については、「 [アジャイルツールとアジャイルプロジェクト管理について](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)」を参照してください。
 
 2. モデル内の 1 つまたは複数の要素に対して、要求の作業項目をリンクします。
 
-    モデリング図で、要素、コメント、またはリレーションシップを右クリックし、[ **作業項目へのリンク] を**クリックします。
+    モデリング図で、要素、コメント、またはリレーションシップを右クリックし、[ **作業項目へのリンク] を** クリックします。
 
 3. テスト スイーツに追加し、モデル要素内で表された要求を検証するケースをテストします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [アプリのモデルを生成する](../modeling/create-models-for-your-app.md)
 - [ユーザー要件のモデリング](../modeling/model-user-requirements.md)

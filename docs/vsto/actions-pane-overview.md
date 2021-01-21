@@ -1,5 +1,7 @@
 ---
 title: 操作ウィンドウの概要
+description: 操作ウィンドウは、特定の Microsoft Office Word 文書または Excel ブックに関連付けられているカスタマイズ可能なドキュメントアクション作業ウィンドウのしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986313"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844830"
 ---
 # <a name="actions-pane-overview"></a>操作ウィンドウの概要
   操作ウィンドウは、特定の Microsoft Office Word 文書または Microsoft Office Excel ブックに添付された、カスタマイズ可能な **ドキュメントアクション** 作業ウィンドウです。 操作ウィンドウは、Office 作業ウィンドウ内で、Excel の [ **XML ソース** ] 作業ウィンドウや Word の [ **スタイルと書式設定** ] 作業ウィンドウなどの他の組み込み作業ウィンドウと共にホストされます。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。
@@ -43,7 +45,7 @@ ms.locfileid: "72986313"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>操作ウィンドウに複数のコントロールを追加する
  操作ウィンドウに複数のコントロールを追加する場合は、コントロールをユーザーコントロールにグループ化してから、プロパティにユーザーコントロールを追加する必要があり <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> ます。 このプロセスには、次の手順が含まれます。
 
-1. 操作ウィンドウ **コントロール** または **ユーザーコントロール** 項目をプロジェクトに追加して、操作ウィンドウのユーザーインターフェイス (UI) を作成します。 これらのアイテムのどちらにも、カスタム Windows フォーム <xref:System.Windows.Forms.UserControl> クラスが含まれています。 **操作ウィンドウコントロール**と**ユーザーコントロール**の項目は同等です。唯一の違いは、その名前です。
+1. 操作ウィンドウ **コントロール** または **ユーザーコントロール** 項目をプロジェクトに追加して、操作ウィンドウのユーザーインターフェイス (UI) を作成します。 これらのアイテムのどちらにも、カスタム Windows フォーム <xref:System.Windows.Forms.UserControl> クラスが含まれています。 **操作ウィンドウコントロール** と **ユーザーコントロール** の項目は同等です。唯一の違いは、その名前です。
 
 2. デザイナーを使用するか、またはコードを記述して、Windows フォーム コントロールを <xref:System.Windows.Forms.UserControl> に追加します。
 
@@ -59,17 +61,17 @@ ms.locfileid: "72986313"
 
  ソリューションの作業ウィンドウを非表示にするには、いくつかの方法があります。
 
-- Word の場合は、[ <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> ドキュメントアクション] 作業ウィンドウを表すオブジェクトのプロパティを **false**に設定します。 次のコード例は、プロジェクトの `ThisDocument` クラスから実行することを前提としています。
+- Word の場合は、[ <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> ドキュメントアクション] 作業ウィンドウを表すオブジェクトのプロパティを **false** に設定します。 次のコード例は、プロジェクトの `ThisDocument` クラスから実行することを前提としています。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Excel の場合は、 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> オブジェクトのプロパティを <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false**に設定します。 次のコード例は、プロジェクトの `ThisWorkbook` クラスから実行することを前提としています。
+- Excel の場合は、 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> オブジェクトのプロパティを <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false** に設定します。 次のコード例は、プロジェクトの `ThisWorkbook` クラスから実行することを前提としています。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Word または Excel の場合は、 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 作業ウィンドウを表すコマンドバーのプロパティを **false**に設定することもできます。 次のコード例は、プロジェクトの `ThisDocument` クラスまたは `ThisWorkbook` から実行することを前提としています。
+- Word または Excel の場合は、 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 作業ウィンドウを表すコマンドバーのプロパティを **false** に設定することもできます。 次のコード例は、プロジェクトの `ThisDocument` クラスまたは `ThisWorkbook` から実行することを前提としています。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]

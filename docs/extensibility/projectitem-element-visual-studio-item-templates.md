@@ -1,5 +1,7 @@
 ---
 title: ProjectItem 要素 (Visual Studio 項目テンプレート) |Microsoft Docs
+description: 項目テンプレートの ProjectItem 要素と、テンプレートがプロジェクトと項目のどちらであるかに応じて異なる属性を受け入れる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 885d0fbb50204f23a30fa43c1ffad45c9d67f829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770721"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672334"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 要素 (Visual Studio 項目テンプレート)
 項目テンプレートに含まれるファイルを指定します。
@@ -53,7 +55,7 @@ ms.locfileid: "85770721"
 | `SubType` | 省略可能な属性です。<br /><br /> 複数ファイルの項目テンプレートに含まれる項目のサブタイプを指定します。 この値は、項目を開くためにが使用するエディターを決定するために使用され [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 |
 | `CustomTool` | 省略可能な属性です。<br /><br /> プロジェクトファイル内の項目の CustomTool を設定します。 |
 | `ItemType` | 省略可能な属性です。<br /><br /> プロジェクトファイル内の項目の ItemType を設定します。 |
-| `ReplaceParameters` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値が項目にあるかどうかを指定するブール値。 既定値は `false`にする必要があります。 |
+| `ReplaceParameters` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値が項目にあるかどうかを指定するブール値。 既定値は `false` です。 |
 | `TargetFileName` | 省略可能な属性です。<br /><br /> テンプレートから作成された項目の名前を指定します。 この属性は、パラメーター置換を使用して項目名を作成する場合に便利です。 |
 
 ### <a name="child-elements"></a>子要素
@@ -68,9 +70,9 @@ ms.locfileid: "85770721"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- `string`テンプレート *.zip*ファイル内のファイルの名前を表す。
+ `string`テンプレート *.zip* ファイル内のファイルの名前を表す。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `ProjectItem` は、の省略可能な子です `TemplateContent` 。
 
  `TargetFileName`属性を使用すると、パラメーターを使用してファイルの名前を変更できます。 たとえば、 *myfile.txt* ファイルがテンプレート *.zip* ファイルのルートディレクトリに存在するが、[ **新しい項目の追加** ] ダイアログボックスでユーザーが指定したファイル名に基づいてファイル名を指定する場合は、次の XML を使用します。

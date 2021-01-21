@@ -1,5 +1,7 @@
 ---
 title: 式の評価 |Microsoft Docs
+description: '[自動変数]、[ウォッチ]、[クイックウォッチ]、または [イミディエイト] ウィンドウから渡された文字列から作成される式の評価について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b43fc91de129407f2fd01e12951cffee4028186f
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738835"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914596"
 ---
 # <a name="evaluate-expressions"></a>式の評価
 式は、[ **自動変数**]、[ **ウォッチ**]、[ **クイックウォッチ**]、または [ **イミディエイト** ] ウィンドウから渡された文字列から作成されます。 式が評価されると、変数または引数の名前と型、およびその値を含む、印刷可能な文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。
@@ -34,4 +36,4 @@ ms.locfileid: "80738835"
 ## <a name="see-also"></a>関連項目
 - [スタックフレーム](../../extensibility/debugger/stack-frames.md)
 - [式の評価コンテキスト](../../extensibility/debugger/expression-evaluation-context.md)
-- [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)
+- [タスクをデバッグする](../../extensibility/debugger/debugging-tasks.md)

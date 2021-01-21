@@ -1,5 +1,7 @@
 ---
 title: プログラムに直接アタッチする |Microsoft Docs
+description: Visual studio IDE でこの手順を使用して既に実行されているプロセスにデバッグエンジンを実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc78234b31b98865f1779dd65d743d4196f9cbf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80ee40d60b5a7511c3f44c22c16e02751d9f1f36
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903270"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96913777"
 ---
 # <a name="attach-directly-to-a-program"></a>プログラムに直接アタッチする
 既に実行中のプロセスでプログラムをデバッグする場合は、通常、次のプロセスに従います。

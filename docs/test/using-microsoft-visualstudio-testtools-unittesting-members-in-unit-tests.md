@@ -1,5 +1,7 @@
 ---
-title: 単体テストで Microsoft.VisualStudio.TestTools.UnitTesting を使用する
+title: 単体テストで MSTest を使用する
+description: Visual Studio での単体テストがサポートされる、MSTest フレームワークについて説明します。 これらのクラスとメンバーを使用して、単体テストのコードを書きます。
+ms.custom: SEO-VS-2020
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 21e78263e848a501d83414630de734368f90a179
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585562"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598576"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>単体テストでの MSTest フレームワークの使用
 
@@ -43,7 +45,7 @@ ms.locfileid: "75585562"
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>呼び出し順序を確立するために使用する属性
 
-次のいずれかの属性で装飾されたコード要素は、指定した時点で呼び出されます。 詳細については、「[単体テストの構造](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)」を参照してください。
+次のいずれかの属性で装飾されたコード要素は、指定した時点で呼び出されます。 詳細については、「[単体テストの構造](/previous-versions/ms182517(v=vs.110))」を参照してください。
 
 ### <a name="attributes-for-assemblies"></a>アセンブリの属性
 
@@ -69,7 +71,7 @@ ClassInitialize がクラスの読み込みの直後に、ClassCleanup がクラ
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>テスト クラスとテスト メソッドの識別に使用する属性
 
-すべてのテスト クラスには `TestClass` 属性が必要であり、すべてのテスト メソッドには `TestMethod` 属性が必要です。 詳細については、「[単体テストの構造](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)」を参照してください。
+すべてのテスト クラスには `TestClass` 属性が必要であり、すべてのテスト メソッドには `TestMethod` 属性が必要です。 詳細については、「[単体テストの構造](/previous-versions/ms182517(v=vs.110))」を参照してください。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

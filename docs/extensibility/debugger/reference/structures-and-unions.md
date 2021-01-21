@@ -1,5 +1,7 @@
 ---
 title: 構造体と共用体 |Microsoft Docs
+description: この記事では、Visual Studio デバッグ SDK の構造と共用体のリファレンスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19d8f547d98488edffc6049be7619e5b5e921d93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1f477b46083b5abd5b8e93593cc728b660b58d9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713495"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845766"
 ---
 # <a name="structures-and-unions"></a>構造体と共用体
 次に示すのは、Visual Studio デバッグ SDK の構造と共用体です。

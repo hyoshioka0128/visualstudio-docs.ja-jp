@@ -1,5 +1,7 @@
 ---
 title: 使用されていない値とパラメーター
+description: 未使用値の割り当て、変数、パラメーターと、それらが Visual Studio のコード エディターに表示されるしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/15/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce2b0f1e0c0db45c478c3917306683b314da0564
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8768992ce3ef9f40ab0adba1724d43b32e5bde5c
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531876"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560708"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>未使用値の割り当て、変数、およびパラメーター
 
@@ -24,7 +26,7 @@ ms.locfileid: "65531876"
 - C#
 - Visual Basic
 
-**概要:** 使用されていないパラメーターをフェードアウトし、使用されていない式の値に警告を生成します。 コンパイラでは、使用されていない割り当てを検索するフロー分析も実行されます。 使用されていない値割り当てはフェードアウトし、冗長の割り当てを削除するための[クイック アクション](../quick-actions.md)が電球と一緒に表示されます。 不明な値を持つ変数が使用されていない場合、代わりに[ディスカード](/dotnet/csharp/discards)の使用を提案する [[クイック アクション]](../quick-actions.md) が表示されます ディスカードは、アプリケーション コード内で意図的に使用しない一時的なダミー変数です。 これにより、メモリの割り当てが削減されるので、コードを読みやすくなります)。
+**概要:** 使用されていないパラメーターをフェードアウトし、使用されていない式の値に警告を生成します。 コンパイラでは、使用されていない割り当てを検索するフロー分析も実行されます。 使用されていない値割り当てはフェードアウトし、冗長の割り当てを削除するための[クイック アクション](../quick-actions.md)が電球と一緒に表示されます。 不明な値を持つ変数が使用されていない場合、代わりに[ディスカード](/dotnet/csharp/discards)の使用を提案する [[クイック アクション]](../quick-actions.md) が表示されます  ディスカードは、アプリケーション コード内で意図的に使用しない一時的なダミー変数です。 これにより、メモリの割り当てが削減されるので、コードを読みやすくなります)。
 
 **条件:** まったく使用されていない割り当て、パラメーター、または式の値があります。
 

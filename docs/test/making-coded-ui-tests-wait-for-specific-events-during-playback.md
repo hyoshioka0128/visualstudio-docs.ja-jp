@@ -1,5 +1,7 @@
 ---
 title: 特定のイベントを待機するようにコード化された UI テストを設定する
+description: コード化された UI テストの再生テストに対して、ウィンドウの表示、プログレス バーの非表示など、特定のイベントが発生するまで待機するように指示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0bd0135ca90f96c2275248da7d116ecfd92e01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 401888eee7fb5952c69c953824f3959c2b456a4d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286779"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329563"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>再生中に特定のイベントを待機するようにコード化された UI テストを設定する
 
@@ -47,7 +49,7 @@ Visual Studio Enterprise
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
-指定されたコントロールのプロパティが指定された値になるまで待機します。 たとえば、ステータス テキストが**完了**になるまで待機します。
+指定されたコントロールのプロパティが指定された値になるまで待機します。 たとえば、ステータス テキストが **完了** になるまで待機します。
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 
@@ -105,7 +107,7 @@ Playback.Wait() は、ユーザー取り消し/ブレーク操作の確認中に
 > [!TIP]
 > コード化された UI テスト エディターを使用すると、コード化された UI テストを簡単に変更できます。 Coded UI Test Editor (コード化された UI テスト エディター) を使用すると、テスト メソッドを検索、表示、および編集できます。 また、UI コントロール マップ内の UI 操作および関連コントロールを編集することもできます。 詳細については、「[コード化された UI テスト エディターを使用してコード化された UI テストを編集する](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)
 - [コード化された UI テストを作成する](../test/use-ui-automation-to-test-your-code.md)

@@ -1,5 +1,7 @@
 ---
 title: ラムダ式またはブロックの本体の使用
+description: '[クイック アクションとリファクタリング] メニューを使用して、式本体またはブロック本体を使用するようにラムダ式をリファクタリングする方法を説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/14/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 505a76a2300f2e3ddb9c1513ee64c2a17abb10ab
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "65531909"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480175"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>ラムダ式に式の本体またはブロックの本体を使用する
 

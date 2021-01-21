@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348120"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "92298709"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>リモート マシンの UWP アプリを Visual Studio からデバッグする
 
@@ -108,5 +108,5 @@ Visual Studio でリモート コンピューター上のアプリをデバッ�
 
 ## <a name="see-also"></a>関連項目
 - [高度なリモート配置オプション](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)
-- [Visual Studio での UWP アプリのテスト](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio/)
+- [Visual Studio での UWP アプリのテスト](../test/unit-test-your-code.md)
 - [Visual Studio で UWP アプリを展開する](debugging-windows-store-and-windows-universal-apps.md)

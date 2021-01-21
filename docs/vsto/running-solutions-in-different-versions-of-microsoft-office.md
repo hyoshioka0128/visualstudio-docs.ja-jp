@@ -1,5 +1,8 @@
 ---
 title: さまざまなバージョンの Microsoft Office でソリューションを実行する
+description: Visual Studio 2010 以降を使用して作成された Microsoft Office ソリューションのバージョンを実行する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15d0a3611f314abe4b571f2235346dde55d6e358
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d70e61e318f0f6afd0a58ed35f912b6a5f2cda8
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985597"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523542"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>さまざまなバージョンの Microsoft Office でソリューションを実行する
 
@@ -55,7 +58,7 @@ ms.locfileid: "72985597"
 
  3. Visual Studio 2005 Tools for Office Second Edition Runtime を必要とする Office ソリューションは、[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] および [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] の 64 ビット バージョンと互換性がありません。 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] または [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] の 64 ビット エディションでこれらのソリューションを実行するには、プロジェクトを [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] または 2007 Microsoft Office system を対象とする Visual Studio 2008 プロジェクトにアップグレードする必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
 - [Visual Studio Tools for Office ランタイムの概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)

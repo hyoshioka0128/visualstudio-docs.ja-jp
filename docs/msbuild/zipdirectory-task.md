@@ -1,5 +1,7 @@
 ---
 title: ZipDirectory タスク | Microsoft Docs
+description: MSBuild で ZipDirectory タスクを使用して、ディレクトリのコンテンツから .zip アーカイブを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1092add6386ccc5bc1de78efcf7b623a617d920b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: e2ffdd5e2601501146f0fa21e4adb572094ddbbf
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183068"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046619"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory タスク
 

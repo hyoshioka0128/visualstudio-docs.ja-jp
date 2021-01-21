@@ -1,5 +1,7 @@
 ---
 title: デバッガーイベントの呼び出し |Microsoft Docs
+description: デバッグセッションのイベントは、特定の順序で発生します。 この記事では、一般的なデバッグセッションで発生するイベントの呼び出し順序を示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 832b42e62731a087048b4aa50e19b74c408343c5
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904316"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914389"
 ---
 # <a name="call-debugger-events"></a>デバッガーイベントの呼び出し
 デバッグセッションのイベントは、特定の順序で発生します。
 
-## <a name="discussion"></a>考察 (Discussion)
+## <a name="discussion"></a>ディスカッション
  デバッグエンジン (DE) とセッションデバッグマネージャー (SDM) との間の呼び出しのパターンを理解するために、一般的なデバッグセッションで発生するイベントの呼び出し順序を次に示します。
 
 1. [プログラムへのアタッチとデタッチ](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)

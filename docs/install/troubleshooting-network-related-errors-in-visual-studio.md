@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114990"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135132"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング
 
@@ -92,11 +92,27 @@ ms.locfileid: "76114990"
 
 ::: moniker-end
 
-## <a name="error-the-underlying-connection-was-closed"></a>エラー :"基になる接続がサーバーによって閉じられました"
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>エラー :問題を報告しようとするときの "Visual Studio から切断されました"
+
+このエラーは通常、ユーザーがプロキシ サーバーを経由してインターネットに接続し、Visual Studio が一部のネットワーク リソースに対して行った呼び出しをプロキシ サーバーがブロックしたときに発生します。
+
+### <a name="to-fix-this-proxy-error"></a>このプロキシ エラーを解決するには
+
+1. **feedback.exe.config** (feedback.exe の構成ファイル) を次の場所から探します: **%ProgramFiles(x86)%\Microsoft Visual Studio\Installer** または **%ProgramFiles%\Microsoft Visual Studio\Installer**。
+
+2. 構成ファイル内に次のコードが存在するかどうかを確認します。コードが存在しない場合は、最後の `</configuration>` 行の前に追加します。
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
+
+## <a name="error-the-underlying-connection-was-closed"></a>エラー: "接続が切断されました"
 
 ファイアウォールが設定されたプライベート ネットワークで Visual Studio を使用する場合、Visual Studio を一部のネットワーク リソースに接続できない可能性があります。 これらのリソースには、サインインとライセンス取得のための Azure DevOps Services、NuGet、および Azure サービスが含まれます。 Visual Studio でこれらのリソースのいずれかに接続できない場合は、次のエラー メッセージが表示されることがあります。
 
-  **基になる接続がサーバーによって閉じられました:送信時、予期しないエラーが発生しました**
+  **基になる接続が閉じられました: 送信時に、予期しないエラーが発生しました**
 
 Visual Studio ではトランスポート層セキュリティ (TLS) 1.2 プロトコルを使用して、ネットワーク リソースに接続します。 Visual Studio で TLS 1.2 を使用している場合、一部のプライベート ネットワーク上のセキュリティ アプライアンスによって特定のサーバー接続がブロックされます。
 
@@ -148,7 +164,7 @@ Visual Studio ではトランスポート層セキュリティ (TLS) 1.2 プロ�
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 * [ファイアウォールまたはプロキシ サーバーの内側に Visual Studio をインストールして使用する](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)

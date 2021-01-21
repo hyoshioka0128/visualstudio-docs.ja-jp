@@ -1,5 +1,7 @@
 ---
 title: ユニバーサル Windows プロジェクトの管理 |Microsoft Docs
+description: ユニバーサル Windows アプリをサポートするには、プロジェクトを管理する Visual Studio 拡張機能が、ユニバーサル Windows アプリプロジェクトの構造を認識している必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
@@ -8,28 +10,28 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012309"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615565"
 ---
 # <a name="manage-universal-windows-projects"></a>ユニバーサル Windows プロジェクトを管理する
 
 ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1 の両方を対象とするアプリで、開発者は両方のプラットフォームでコードとその他の資産を使用できます。 共有コードとリソースは共有プロジェクトに保持されます。一方、プラットフォーム固有のコードとリソースは、Windows 用と Windows Phone 用の別々のプロジェクトに保持されます。 ユニバーサル Windows アプリの詳細については、「 [ユニバーサル windows アプリ](/windows/uwp/get-started/create-uwp-apps)」を参照してください。 プロジェクトを管理する Visual Studio 拡張機能では、ユニバーサル Windows アプリプロジェクトの構造が1つのプラットフォームアプリとは異なることに注意してください。 このチュートリアルでは、共有プロジェクト内を移動し、共有項目を管理する方法について説明します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>[前提条件]
 
 Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ### <a name="navigate-the-shared-project"></a>共有プロジェクト内を移動する
 
-1. **TestUniversalProject**という名前の C# VSIX プロジェクトを作成します。 (**ファイル**  > **新規**  > [**プロジェクト**]、[ **C#** の  >  **機能拡張**]、[  >  **Visual Studio パッケージ**] の順に選択します。 **カスタムコマンド**プロジェクト項目テンプレートを追加します (**ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[**追加**] [  >  **新しい項目**] の順に選択し、[**拡張機能**] にアクセスします)。 ファイルに **TestUniversalProject**という名前を指定します。
+1. **TestUniversalProject** という名前の C# VSIX プロジェクトを作成します。 (**ファイル**  > **新規**  > [**プロジェクト**]、[ **C#** の  >  **機能拡張**]、[  >  **Visual Studio パッケージ**] の順に選択します。 **カスタムコマンド** プロジェクト項目テンプレートを追加します (**ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[**追加**] [  >  **新しい項目**] の順に選択し、[**拡張機能**] にアクセスします)。 ファイルに **TestUniversalProject** という名前を指定します。
 
-2. *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll*と*Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*への参照を追加します (「 **Extensions** 」セクション)。
+2. *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* と *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* への参照を追加します (「 **Extensions** 」セクション)。
 
-3. *TestUniversalProject.cs*を開き、次のディレクティブを追加し `using` ます。
+3. *TestUniversalProject.cs* を開き、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using EnvDTE;
@@ -126,7 +128,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     }
     ```
 
-9. メソッドで `ShowMessageBox` 、共有プロジェクトのキャプション ( **ソリューションエクスプローラー**に表示されるプロジェクト名) を出力します。
+9. メソッドで `ShowMessageBox` 、共有プロジェクトのキャプション ( **ソリューションエクスプローラー** に表示されるプロジェクト名) を出力します。
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -291,7 +293,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. では、試してみましょう。F5 キーを押して実験用インスタンスを起動します。 実験用インスタンス ([**新しいプロジェクト**] ダイアログボックスの [ **Visual C#**] [windows  >  **Windows**  >  **8**  >  **ユニバーサル**  >  **ハブアプリ**]) で、C# universal hub アプリプロジェクトを作成します。 ソリューションが読み込まれたら、[ **ツール** ] メニューにアクセスし、[ **TestUniversalProject の呼び出し**] をクリックして、 **出力** ウィンドウのテキストを確認します。 次のように表示されます。
+16. では、試してみましょう。F5 キーを押して実験用インスタンスを起動します。 実験用インスタンス ([**新しいプロジェクト**] ダイアログボックスの [ **Visual C#**] [windows  >    >  **8**  >  **ユニバーサル**  >  **ハブアプリ**]) で、C# universal hub アプリプロジェクトを作成します。 ソリューションが読み込まれたら、[ **ツール** ] メニューにアクセスし、[ **TestUniversalProject の呼び出し**] をクリックして、 **出力** ウィンドウのテキストを確認します。 次のように表示されます。
 
     ```
     Found shared project: HubApp.Shared
@@ -304,7 +306,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>プラットフォームプロジェクトで共有項目を管理する
 
-1. プラットフォームプロジェクトで共有項目を検索します。 共有プロジェクト内の項目は、共有項目としてプラットフォームプロジェクトに表示されます。 **ソリューションエクスプローラー**に表示されることはありませんが、プロジェクト階層で検索することができます。 次のメソッドは、階層をウォークし、すべての共有項目を収集します。 必要に応じて、各項目のキャプションを出力します。 共有項目は、新しいプロパティによって識別され <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> ます。
+1. プラットフォームプロジェクトで共有項目を検索します。 共有プロジェクト内の項目は、共有項目としてプラットフォームプロジェクトに表示されます。 **ソリューションエクスプローラー** に表示されることはありませんが、プロジェクト階層で検索することができます。 次のメソッドは、階層をウォークし、すべての共有項目を収集します。 必要に応じて、各項目のキャプションを出力します。 共有項目は、新しいプロパティによって識別され <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem> ます。
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -353,7 +355,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. では、試してみましょう。 **F5** キーを押して実験用インスタンスを起動します。 実験用インスタンスで C# ユニバーサルハブアプリプロジェクトを作成します ([**新しいプロジェクト**] ダイアログボックスの [ **Visual C#]**  >  **windows**  >  **8**  >  **ユニバーサル**  >  **ハブアプリ**)。 [**ツール**] メニューにアクセスし、[ **TestUniversalProject の呼び出し**] をクリックして、**出力**ウィンドウのテキストを確認します。 次のように表示されます。
+4. では、試してみましょう。 **F5** キーを押して実験用インスタンスを起動します。 実験用インスタンスで C# ユニバーサルハブアプリプロジェクトを作成します ([**新しいプロジェクト**] ダイアログボックスの [ **Visual C#]**  >  **windows**  >  **8**  >  **ユニバーサル**  >  **ハブアプリ**)。 [**ツール**] メニューにアクセスし、[ **TestUniversalProject の呼び出し**] をクリックして、**出力** ウィンドウのテキストを確認します。 次のように表示されます。
 
     ```
     Found shared project: HubApp.Shared
@@ -417,15 +419,15 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
    2. プロジェクトファイルが更新され、ファイルの新しい名前が含められます。
 
-      階層イベント (たとえば、) は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> 通常、 **ソリューションエクスプローラー**のように、UI に表示される変更を追跡します。 階層イベントは、ファイルの名前変更操作をファイルの削除によって構成し、ファイルを追加することを検討します。 ただし、非表示の項目が変更された場合、階層のイベントシステムはイベントを発生さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> せますが、イベントは発生しません <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 。 したがって、プラットフォームプロジェクト内のファイルの名前を変更すると、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> と <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> の両方が取得されますが、共有プロジェクト内のファイルの名前を変更すると、のみが取得さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> れます。
+      階層イベント (たとえば、) は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents> 通常、 **ソリューションエクスプローラー** のように、UI に表示される変更を追跡します。 階層イベントは、ファイルの名前変更操作をファイルの削除によって構成し、ファイルを追加することを検討します。 ただし、非表示の項目が変更された場合、階層のイベントシステムはイベントを発生さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> せますが、イベントは発生しません <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 。 したがって、プラットフォームプロジェクト内のファイルの名前を変更すると、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> と <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> の両方が取得されますが、共有プロジェクト内のファイルの名前を変更すると、のみが取得さ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> れます。
 
       プロジェクト項目の変更を追跡するには、DTE プロジェクト項目イベント (で見つかったもの) を処理し <xref:EnvDTE.ProjectItemsEventsClass> ます。 ただし、大量のイベントを処理する場合は、のイベントを処理するパフォーマンスを向上させることができ <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> ます。 このチュートリアルでは、階層イベントと DTE イベントのみを示します。 この手順では、共有プロジェクトとプラットフォームプロジェクトにイベントリスナーを追加します。 次に、共有プロジェクト内の1つのファイルの名前を変更し、プラットフォームプロジェクト内の別のファイルを変更すると、各名前変更操作に対して発生したイベントを確認できます。
 
       この手順では、共有プロジェクトとプラットフォームプロジェクトにイベントリスナーを追加します。 次に、共有プロジェクト内の1つのファイルの名前を変更し、プラットフォームプロジェクト内の別のファイルを変更すると、各名前変更操作に対して発生したイベントを確認できます。
 
-2. イベントリスナーを追加します。 新しいクラスファイルをプロジェクトに追加し、 *HierarchyEventListener.cs*を呼び出します。
+2. イベントリスナーを追加します。 新しいクラスファイルをプロジェクトに追加し、 *HierarchyEventListener.cs* を呼び出します。
 
-3. *HierarchyEventListener.cs*ファイルを開き、次の using ディレクティブを追加します。
+3. *HierarchyEventListener.cs* ファイルを開き、次の using ディレクティブを追加します。
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;

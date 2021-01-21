@@ -1,5 +1,7 @@
 ---
 title: Side-by-side ファイルの関連付けの管理 |Microsoft Docs
+description: VSPackage がファイルの関連付けを提供する場合は、Visual Studio の特定のバージョンによってファイルが開かれるサイドバイサイドインストールの処理方法を決定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c284fe7ef4c2d07051a8524860583cb634e13bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702758"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616345"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Side-by-side ファイルの関連付けの管理
 
@@ -23,7 +25,7 @@ VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vs
 
 ユーザーは、新しいバージョンの製品を以前のバージョンと互換性があると想定しているため、既存のファイルを新しいバージョンに読み込んでデータを失うことはありません。 VSPackage を使用すると、以前のバージョンのファイル形式を読み込んで保存することができます。 それが当てはまる場合は、ファイル形式を VSPackage の新しいバージョンにアップグレードすることをお勧めします。 この方法の欠点は、アップグレードされたファイルを以前のバージョンで開くことができないことです。
 
-この問題を回避するには、ファイル形式に互換性がなくなったときに拡張機能を変更します。 たとえば、VSPackage のバージョン1では拡張子 *mypkg10*を使用し、バージョン2では拡張子 *mypkg20*を使用できます。 この違いにより、特定のファイルを開く VSPackage が識別されます。 古い拡張機能に関連付けられているプログラムの一覧に新しい Vspackage を追加した場合、ユーザーはファイルを右クリックして、新しい VSPackage で開くことができます。 この時点で、VSPackage は、ファイルを新しい形式にアップグレードするか、ファイルを開いて、以前のバージョンの VSPackage との互換性を維持することを提供できます。
+この問題を回避するには、ファイル形式に互換性がなくなったときに拡張機能を変更します。 たとえば、VSPackage のバージョン1では拡張子 *mypkg10* を使用し、バージョン2では拡張子 *mypkg20* を使用できます。 この違いにより、特定のファイルを開く VSPackage が識別されます。 古い拡張機能に関連付けられているプログラムの一覧に新しい Vspackage を追加した場合、ユーザーはファイルを右クリックして、新しい VSPackage で開くことができます。 この時点で、VSPackage は、ファイルを新しい形式にアップグレードするか、ファイルを開いて、以前のバージョンの VSPackage との互換性を維持することを提供できます。
 
 > [!NOTE]
 > これらのアプローチを組み合わせることができます。 たとえば、古いファイルを読み込んで旧バージョンとの互換性を提供し、ユーザーが保存したときにファイル形式をアップグレードすることができます。
@@ -59,13 +61,13 @@ VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vs
 
   **Visual Studio の最新バージョンを決定する InstallExecuteSequence テーブル行**
 
-  |アクション|条件|シーケンス|
+  |アクション|条件|Sequence|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 と NOT (DEVENV_EXE_2003 または DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 であり DEVENV_EXE_2005 ではありません|420|
   |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|
 
-   Windows インストーラーパッケージのレジストリテーブルの DEVENV_EXE_LATEST プロパティを使用して、 **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** キーの既定値である [DEVENV_EXE_LATEST] "%1" を書き込むことができます。
+   Windows インストーラーパッケージのレジストリテーブルの DEVENV_EXE_LATEST プロパティを使用して、 **HKEY_CLASSES_ROOT *ProgId* ShellOpenCommand** キーの既定値である [DEVENV_EXE_LATEST] "%1" を書き込むことができます。
 
 - 使用可能な VSPackage バージョンから最適な選択を行うことができる共有ランチャープログラムを実行します。
 
@@ -85,7 +87,7 @@ VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vs
 
 - [構成オプション] ページまたはダイアログボックスを使用して、ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できるようにします。 アンインストール後に実行するようにユーザーに指示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [サイドバイサイド配置のためにファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)

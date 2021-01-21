@@ -1,58 +1,57 @@
 ---
-title: 管理ポータルでのスーパー管理者と管理者ロール
+title: Visual Studio サブスクリプションのスーパー管理者と管理者ロール
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 04/07/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
-description: スーパー管理者と管理者ロール、および管理者を割り当てる方法について説明します。
-ms.openlocfilehash: bf10b95d44a960fea50bff6b2fba7b9a8dc98a26
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+description: スーパー管理者と管理者ロールについて、および管理者を割り当てる方法について説明します。
+ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248451"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92467376"
 ---
-# <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
+# <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
 
 新しい Visual Studio サブスクリプションの管理ポータルには、ボリューム ライセンスのお客様用に 2 つの異なるロールが用意されています。 これらのロールは、以前 VLSC にあった主要/通知連絡先ロールとサブスクリプション マネージャー ロールに似ています。
 
-**スーパー管理者:** 最初に組織を設定したとき、主要または通知連絡先が既定でスーパー管理者になります。 主要または通知連絡先は、追加のスーパー管理者または管理者を割り当てることを選択できます。 スーパー管理者では、他の管理者だけでなくサブスクライバーを追加および削除することができます。 システムに 2 人以上のスーパー管理者がいる場合、スーパー管理者はセキュリティのために最後の 2 人を除くすべての管理者を削除できます。
+**スーパー管理者:** 最初に組織を設定したとき、主要または通知連絡先が既定でスーパー管理者になります。 主要または通知連絡先は、追加のスーパー管理者または管理者を割り当てることを選択できます。 スーパー管理者は、他の管理者やサブスクライバーを追加および削除することができます。 システムに 2 人以上のスーパー管理者がいる場合、スーパー管理者はセキュリティのために最後の 2 人を除くすべての管理者を削除できます。
 
 **管理者:** スーパー管理者のみが管理者を割り当てることができます。管理者は、スーパー管理者に割り当てられた契約のサブスクライバーのみを管理できます。
 
+管理者の管理方法についてのデモをご覧ください。 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6L]
 
-## <a name="assigning-administrators"></a>管理者の割り当て
+## <a name="assigning-admins"></a>管理者の割り当て
 新しい管理者 (管理者) を割り当てるには:
 1. サブスクリプションを購入した契約でスーパー管理者に割り当てられるメール アドレスを使用し、 https://manage.visualstudio.com にサインインします。
-2. **[管理者の管理]** というラベルのタブを選択します。
-3. **[追加]** を選択します。
+2. **[管理者の管理]** というラベルのタブをクリックします。
+3. **[追加]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![管理者の追加](_img/admin-roles/add-admins.png "[管理者の管理] ブレードを選択し、[追加] を選択して新しい管理者を割り当てます。")
+   > ![管理者の追加](_img/admin-roles/add-admins.png "[管理者の管理] ブレードをクリックし、[追加] をクリックして新しい管理者を割り当てます。")
 4. 新しい管理者の情報でフォームを完成させます。  
    > [!div class="mx-imgBorder"]
-   > ![[管理者の追加] フォーム](_img/admin-roles/add-form.png "新しい管理者のサインイン情報を入力し、その管理者をスーパー管理者にするかどうかを選択します。次に、[追加] を選択します。")
+   > ![管理者の追加フォーム](_img/admin-roles/add-form.png "新しい管理者のサインイン情報を入力し、その管理者をスーパー管理者にするかどうかを選択します。次に [追加] をクリックします。")
 
    > [!NOTE]
    > この管理者が管理者をさらに割り当てることができるようにするには、 **[スーパー管理者]** チェックボックスをオンにすることを忘れないでください。
 
-5. **[追加]** を選択すると、新規に割り当てられた管理者は、ポータルにサインインする招待メールを受信します。  
+5. **[追加]** をクリックすると、新規に割り当てられた管理者は、ポータルにサインインする招待メールを受信します。  
 
 ## <a name="resources"></a>リソース
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>次の手順
 - [サブスクリプションを割り当てる](assign-license.md)方法を学ぶ
 - さまざまな[サブスクリプションのメリット](https://visualstudio.microsoft.com/vs/benefits/)について学ぶ
-- [契約の基本設定を設定する](admin-prefs.md) 
-
-
+- [契約の基本設定を設定する](admin-prefs.md)

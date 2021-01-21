@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの入れ子 |Microsoft Docs
+description: プロジェクトの入れ子について説明します。これにより、VSPackage を使用するアプリケーション開発者は、類似した種類のプロジェクトを Visual Studio でまとめてグループ化できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 814780fa8e7e57a022a75b2e09115cfa55a1b8be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707027"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876663"
 ---
 # <a name="nesting-projects"></a>入れ子になったプロジェクト
-VS パッケージを使用するエンタープライズアプリケーション開発者は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *プロジェクトの入れ子*を使用して、類似した種類のプロジェクトをで簡単にグループ化できます。 たとえば、エンタープライズテンプレートプロジェクトでは、入れ子になったプロジェクトを使用して、プロジェクトをカテゴリにグループ化します。 ビジネスファサードプロジェクト、Web UI プロジェクトなどは、1つのカテゴリにまとめられています。
+VS パッケージを使用するエンタープライズアプリケーション開発者は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] *プロジェクトの入れ子* を使用して、類似した種類のプロジェクトをで簡単にグループ化できます。 たとえば、エンタープライズテンプレートプロジェクトでは、入れ子になったプロジェクトを使用して、プロジェクトをカテゴリにグループ化します。 ビジネスファサードプロジェクト、Web UI プロジェクトなどは、1つのカテゴリにまとめられています。
 
  このシナリオでは、開発者はプログラムを使用して制限を提供できますが、開発者が各親プロジェクトの下で入れ子にできるプロジェクトの数に制限はありません。 この種類のグループ化を再帰的に行うこともできます。この場合、子プロジェクトと同じ種類のプロジェクトを子の下に入れ子にして、親のサブプロジェクトである子のサブプロジェクトにすることができます。
 

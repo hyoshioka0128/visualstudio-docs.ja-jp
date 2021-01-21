@@ -1,5 +1,7 @@
 ---
 title: ツールウィンドウの追加 |Microsoft Docs
+description: ツールウィンドウを作成して Visual Studio に統合する方法については、ツールウィンドウにコマンドを含むコントロールとツールバーを追加する方法に関するページを参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f386128ccdd79aef6b90a6703f50323b9b6f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904146"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597991"
 ---
 # <a name="add-a-tool-window"></a>ツールウィンドウを追加する
 
@@ -38,21 +40,21 @@ Visual Studio SDK は、Visual Studio セットアップでオプション機能
 
 ## <a name="create-a-tool-window"></a>ツールウィンドウを作成する
 
-1. VSIX テンプレートを使用して **Firsttoolwin** という名前のプロジェクトを作成し、 **FirstToolWindow**という名前のカスタムツールウィンドウ項目テンプレートを追加します。
+1. VSIX テンプレートを使用して **Firsttoolwin** という名前のプロジェクトを作成し、 **FirstToolWindow** という名前のカスタムツールウィンドウ項目テンプレートを追加します。
 
     > [!NOTE]
     > ツールウィンドウを使用した拡張機能の作成の詳細については、「 [ツールウィンドウを使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-tool-window.md)」を参照してください。
 
 ## <a name="add-a-control-to-the-tool-window"></a>ツールウィンドウにコントロールを追加する
 
-1. 既定のコントロールを削除します。 *Firsttoolwindowcontrol .xaml*を開き、 **[Click Me!]** を削除します。 ボタンを選択します。
+1. 既定のコントロールを削除します。 *Firsttoolwindowcontrol .xaml* を開き、 **[Click Me!]** を削除します。 を追加します。
 
-2. **ツールボックス**で、[**すべての WPF コントロール**] セクションを展開し、[ **Media 要素**] コントロールを**firsttoolwindowcontrol**フォームにドラッグします。 コントロールを選択し、[ **プロパティ** ] ウィンドウで、この要素に **mediaElement1**という名前を指定します。
+2. **ツールボックス** で、[**すべての WPF コントロール**] セクションを展開し、[ **Media 要素**] コントロールを **firsttoolwindowcontrol** フォームにドラッグします。 コントロールを選択し、[ **プロパティ** ] ウィンドウで、この要素に **mediaElement1** という名前を指定します。
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>ツールウィンドウにツールバーを追加する
 次のようにツールバーを追加すると、そのグラデーションと色が IDE の他の部分と一致することが保証されます。
 
-1. **ソリューションエクスプローラー**で、 *Firsttoolwindowpackage. vsct*を開きます。 *Vsct*ファイルは、XML を使用して、ツールウィンドウのグラフィカルユーザーインターフェイス (GUI) 要素を定義します。
+1. **ソリューションエクスプローラー** で、 *Firsttoolwindowpackage. vsct* を開きます。 *Vsct* ファイルは、XML を使用して、ツールウィンドウのグラフィカルユーザーインターフェイス (GUI) 要素を定義します。
 
 2. セクションで、 `<Symbols>` 属性がであるノードを見つけ `<GuidSymbol>` `name` `guidFirstToolWindowPackageCmdSet` ます。 `<IDSymbol>` `<IDSymbol>` ツールバーとツールバーグループを定義するには、このノードの要素のリストに次の2つの要素を追加します。
 
@@ -115,7 +117,7 @@ Visual Studio SDK は、Visual Studio セットアップでオプション機能
     </Button>
     ```
 
-3. *FirstToolWindowCommand.cs*を開き、既存のフィールドの直後に、クラスに次の行を追加します。
+3. *FirstToolWindowCommand.cs* を開き、既存のフィールドの直後に、クラスに次の行を追加します。
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -129,7 +131,7 @@ Visual Studio SDK は、Visual Studio セットアップでオプション機能
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>MediaPlayer プロパティを FirstToolWindowControl に追加します。
 ツールバーコントロールのイベントハンドラーから、コードは FirstToolWindowControl クラスの子である Media Player コントロールにアクセスできる必要があります。
 
-**ソリューションエクスプローラー**で、[ *firsttoolwindowcontrol .xaml*] を右クリックし、[**コードの表示**] をクリックして、firsttoolwindowcontrol クラスに次のコードを追加します。
+**ソリューションエクスプローラー** で、[ *firsttoolwindowcontrol .xaml*] を右クリックし、[**コードの表示**] をクリックして、firsttoolwindowcontrol クラスに次のコードを追加します。
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -141,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>ツールウィンドウとツールバーのインスタンス化
 ツールバーとメニューコマンドを追加して、[ **ファイルを開く** ] ダイアログを起動し、選択したメディアファイルを再生します。
 
-1. *FirstToolWindow.cs*を開き、次のディレクティブを追加し `using` ます。
+1. *FirstToolWindow.cs* を開き、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using System.ComponentModel.Design;
@@ -255,7 +257,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 次に、ツールウィンドウの IDE で既定の場所を指定します。 ツールウィンドウの構成情報は、 *FirstToolWindowPackage.cs* ファイルにあります。
 
-1. *FirstToolWindowPackage.cs*で、クラスの <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 属性を見つけ `FirstToolWindowPackage` ます。これにより、FirstToolWindow 型がコンストラクターに渡されます。 既定の位置を指定するには、次の例のように、コンストラクターにさらにパラメーターを追加する必要があります。
+1. *FirstToolWindowPackage.cs* で、クラスの <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 属性を見つけ `FirstToolWindowPackage` ます。これにより、FirstToolWindow 型がコンストラクターに渡されます。 既定の位置を指定するには、次の例のように、コンストラクターにさらにパラメーターを追加する必要があります。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -263,18 +265,18 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    最初の名前付きパラメーターはで、 `Style` その値はです。これは、ウィンドウが既存のウィンドウのタブになることを `Tabbed` 意味します。 ドッキング位置は、パラメーターによって指定され `Window` ます。 n このケースでは、 **ソリューションエクスプローラー**の GUID になります。
+    最初の名前付きパラメーターはで、 `Style` その値はです。これは、ウィンドウが既存のウィンドウのタブになることを `Tabbed` 意味します。 ドッキング位置は、パラメーターによって指定され `Window` ます。 n このケースでは、 **ソリューションエクスプローラー** の GUID になります。
 
     > [!NOTE]
     > IDE でのウィンドウの種類の詳細については、「」を参照してください <xref:EnvDTE.vsWindowType> 。
 
 ## <a name="test-the-tool-window"></a>ツールウィンドウをテストする
 
-1. **F5**キーを押して、Visual Studio の実験的なビルドの新しいインスタンスを開きます。
+1. **F5** キーを押して、Visual Studio の実験的なビルドの新しいインスタンスを開きます。
 
 2. [ **表示** ] メニューの [ **その他のウィンドウ** ] をポイントし、[ **最初のツールウィンドウ**] をクリックします。
 
-    メディアプレーヤーのツールウィンドウは、 **ソリューションエクスプローラー**と同じ位置で開きます。 それでも以前と同じ位置に表示されている場合は、ウィンドウのレイアウトをリセットします (ウィンドウまたはウィンドウの**レイアウトをリセット**します)。
+    メディアプレーヤーのツールウィンドウは、 **ソリューションエクスプローラー** と同じ位置で開きます。 それでも以前と同じ位置に表示されている場合は、ウィンドウのレイアウトをリセットします (ウィンドウまたはウィンドウの **レイアウトをリセット** します)。
 
 3. ツールウィンドウで、ボタン ( **検索** アイコンが表示されています) をクリックします。 サポートされているサウンドファイルまたはビデオファイル (たとえば、 *C:\windows\media\chimes.wav*) を選択し、[ **開く**] を押します。
 

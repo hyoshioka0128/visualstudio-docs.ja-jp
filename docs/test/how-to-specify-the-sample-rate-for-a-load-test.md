@@ -1,5 +1,7 @@
 ---
-title: '方法: ロード テストの実行設定のサンプル速度を指定する'
+title: ロード テストの実行設定のサンプル速度を指定する
+description: ロード テスト エディターを使用してプロパティ ウィンドウで実行設定値のサンプル レートを編集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,20 +10,20 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab77354226028397d5875137ed331860a4b32925
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c21e38671a43755c55a3f0c37c5b8ab40ae11530
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287390"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329005"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>方法: ロード テストの実行設定のサンプル速度を指定する
 
-**新しいロード テスト ウィザード**でロード テストを作成した後で、**ロード テスト エディター**を使用して、プロパティをテストのニーズおよび目標に合わせて変更できます。
+**新しいロード テスト ウィザード** でロード テストを作成した後で、**ロード テスト エディター** を使用して、プロパティをテストのニーズおよび目標に合わせて変更できます。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-**[プロパティ]** ウィンドウの実行設定の **[サンプル速度]** プロパティ値を編集するには、**ロード テスト エディター**を使用します。 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
+**[プロパティ]** ウィンドウの実行設定の **[サンプル速度]** プロパティ値を編集するには、**ロード テスト エディター** を使用します。 実行設定の各プロパティとその説明の一覧については、「[ロード テストの実行設定のプロパティ](../test/load-test-run-settings-properties.md)」を参照してください。
 
 ロード テストの長さに基づいて、ロード テストの実行設定の **[サンプル速度]** プロパティに適切な値を選択します。 既定値 (5 秒) のようにサンプル速度が小さいと、ロード テスト結果のデータベースに必要な容量が増えます。 長いロード テストでは、サンプル速度を増加すると、収集するデータ量を減らすことができます。 詳細については、「[方法: ロード テストの実行設定のサンプル速度を指定する](../test/how-to-specify-the-sample-rate-for-a-load-test.md)」を参照してください。
 
@@ -38,7 +40,7 @@ ms.locfileid: "85287390"
 
 1. ロード テストを開きます。
 
-     **ロード テスト エディター**が表示されます。 ロード テスト ツリーが表示されます。
+     **ロード テスト エディター** が表示されます。 ロード テスト ツリーが表示されます。
 
 2. ロード テスト ツリーの **[実行設定]** フォルダーで、サンプル速度を指定する実行設定を選択します。
 

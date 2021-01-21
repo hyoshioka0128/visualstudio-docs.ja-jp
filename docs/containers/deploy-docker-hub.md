@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485139"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829891"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub に配置する
 
@@ -40,7 +40,7 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 
    ![[Docker Hub] ダイアログのスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. 自分のリポジトリ (組織の一部ではない) に接続する場合は、 **[個人のレポジトリに発行する]** チェックボックスをオンのままにします。 リポジトリが組織によって所有されている場合は、チェックボックスをオフにして、組織名を入力します。 接続しているリポジトリへのアクセス許可を持つ Docker アカウントの Docker ユーザー名とパスワードを入力して、 **[保存]** を選択します。  
+1. 自分のリポジトリ (組織の一部ではない) に接続する場合は、 **[個人のレポジトリに発行する]** チェックボックスをオンのままにします。 リポジトリが組織によって所有されている場合は、チェックボックスをオフにして、組織名を入力します。 接続しているリポジトリへのアクセス許可を持つ Docker アカウントの Docker ユーザー名とパスワードを入力して、 **[保存]** を選択します。
 
    Visual Studio では、Docker Hub へのイメージのデプロイが試行されます。  成功した場合、 **[発行]** 画面に、リポジトリ イメージの URL、イメージ タグ、リポジトリ、ビルド構成 (**リリース**など) が表示されます。
 
@@ -52,7 +52,7 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 
 [Azure Container Registry へのデプロイ](hosting-web-apps-in-docker.md) に関するページに記載されている手順を行い、[Azure Container Registry](/azure/container-registry/) に発行します。
 
-[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops) を使用して、継続的インテグレーションおよび継続的配信 (CI/CD) を設定します。
+[Azure Pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true) を使用して、継続的インテグレーションおよび継続的配信 (CI/CD) を設定します。
 
 ## <a name="see-also"></a>関連項目
 

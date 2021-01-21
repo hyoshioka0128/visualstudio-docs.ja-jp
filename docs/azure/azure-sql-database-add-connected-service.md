@@ -3,18 +3,17 @@ title: 接続を Azure SQL Database | に追加します。Microsoft Docs
 description: Visual Studio を使用してアプリへの Azure SQL Database 接続を追加接続済みサービス
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: e1594ea4239b4200bf72ec4a2ef2c558839ef95c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d720c51d7245d60d40c286c71976132a119a56f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643170"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902871"
 ---
 # <a name="add-a-connection-to-azure-sql-database"></a>接続を Azure SQL Database に追加します
 
@@ -43,9 +42,9 @@ Visual Studio では、 **接続済みサービス** 機能を使用して、次
 
 1. Visual Studio でプロジェクトを開きます。
 
-1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
+1. **ソリューションエクスプローラー** で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
 
-1. [ **接続済みサービス** ] タブで、 **サービスの依存関係**の [+] アイコンを選択します。
+1. [ **接続済みサービス** ] タブで、 **サービスの依存関係** の [+] アイコンを選択します。
 
     ![サービスの依存関係の追加](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 

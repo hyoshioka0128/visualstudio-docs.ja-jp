@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの種類を作成する |Microsoft Docs
+description: プログラミングタスクをサポートする新しいプロジェクトの種類をデザイン、作成、および登録して Visual Studio を拡張する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2398b63b8cd52784252cfc764bb6c6a30e1accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709078"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329927"
 ---
 # <a name="create-project-types"></a>プロジェクトの種類の作成
 を拡張する [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、新しいプロジェクトの種類を作成します。 新しいプロジェクトの種類を作成するには、いくつかの概念を理解し、いくつかの手順を完了する必要があります。 次のトピックでは、プロジェクトの種類を作成する方法の概要について説明します。
@@ -49,7 +51,7 @@ ms.locfileid: "80709078"
 ## <a name="related-sections"></a>関連項目
 - [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- **オブジェクトブラウザー**や**クラスビュー**ウィンドウなどのコード表示ツールのアーキテクチャについて説明します。 VSPackage でオブジェクトの参照を実装するために使用されるインターフェイスとメソッドについて説明します。
+ **オブジェクトブラウザー** や **クラスビュー** ウィンドウなどのコード表示ツールのアーキテクチャについて説明します。 VSPackage でオブジェクトの参照を実装するために使用されるインターフェイスとメソッドについて説明します。
 
 - [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
@@ -57,7 +59,7 @@ ms.locfileid: "80709078"
 
 - [Windows インストーラーと共に Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- VSPackage に独自の一意の id を与える方法と、VSPackage Dll やその他の情報を Windows インストーラーパッケージ () にラップする方法を示し*ます。MSI* ファイル) をお客様に展開できます。
+ VSPackage に独自の一意の id を与える方法と、VSPackage Dll やその他の情報を Windows インストーラーパッケージ () にラップする方法を示し *ます。MSI* ファイル) をお客様に展開できます。
 
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

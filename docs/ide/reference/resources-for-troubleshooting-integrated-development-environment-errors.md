@@ -1,6 +1,8 @@
 ---
-title: エラーのトラブルシューティング情報
-ms.date: 07/23/2020
+title: IDE に関するエラーのトラブルシューティング情報
+description: サポート技術情報の記事、フォーラム、または製品サポートを使用して、問題を解決するのに情報が十分ではない IDE エラーのトラブルシューティングを行う方法について説明します。
+ms.custom: SEO-VS-2020
+ms.date: 12/18/2020
 ms.topic: troubleshooting
 f1_keywords:
 - VS.Message.0x00005A89
@@ -93,14 +95,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f18ef8a0bf8ffc6b7478f307b6c2a37247bef034
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 081b36767388da4f78e1fd8f1e0f279d7ca201c9
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234732"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696554"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>統合開発環境に関するエラーのトラブルシューティング情報
+# <a name="resources-for-troubleshooting-ide-errors"></a>IDE に関するエラーのトラブルシューティング情報
 
 一部のエラー メッセージには、関連する固有のヘルプ トピックがありません。 エラー メッセージの情報では問題を解決できなかった場合は、サポート技術情報の文書、フォーラム、製品サポートなど、その他のリソースを利用できます。
 
@@ -113,9 +115,14 @@ ms.locfileid: "87234732"
 
 ## <a name="developer-forums"></a>開発者フォーラム
 
-フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、ニュースグループで過去に同じような問題が投稿されていないかを検索することもできます。
+フォーラムを利用すると、他の開発者や Microsoft の社員との間でさまざまな情報を交換できます。 エラーの解決策が見つからなかった場合は、問題に関する質問をフォーラムに投稿できます。 また、フォーラムで過去に同じような問題が投稿されていないかを検索することもできます。
 
-フォーラム、ブログ、チャットなどのリソースには、[マイクロソフト コミュニティ](https://techcommunity.microsoft.com/t5/Communities/ct-p/communities) Web サイトでアクセスできます。
+フォーラム リソースの一覧を次に示します。
+
+- [Q&A の Visual Studio](/answers/products/vs/)
+- [Visual Studio MSDN フォーラム](https://social.msdn.microsoft.com/Forums/vstudio)
+- [Stack Overflow](https://stackoverflow.com/search?q=%22visual+studio%22)
+- [Reddit](https://www.reddit.com/r/VisualStudio)
 
 ## <a name="product-support"></a>製品のサポート
 

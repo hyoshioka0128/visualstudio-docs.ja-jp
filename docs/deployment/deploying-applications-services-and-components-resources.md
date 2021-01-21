@@ -1,9 +1,12 @@
 ---
 title: フォルダー、IIS、Azure、または別の場所に Visual Studio アプリを配置する
-description: 発行ウィザードを使用したアプリの発行オプションに関する詳細情報
-ms.custom: contperfq1
+titleSuffix: ''
+description: 発行ツールを使用したアプリの発行オプションに関する詳細情報
+ms.custom:
+- SEO-VS-2020
+- contperf-fy21q1
 ms.date: 08/21/2020
-ms.topic: overview
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -14,39 +17,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 86a771b1eae096227a46378c8146e6aa5d9e2a06
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800835"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683927"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>フォルダー、IIS、Azure、または別の場所にアプリを配置する
 
 アプリケーション、サービス、またはコンポーネントを配置すると、他のコンピューターのデバイス、サーバー、またはクラウドに対してインストールするために、それらを配布することになります。 必要な配置の種類に合わせて、Visual Studio で適切な手法を選択します。
 
-多くの一般的なアプリの種類では、Visual Studio でソリューション エクスプローラーから直接アプリケーションを配置することができます。 この機能のクイック ツアーについては、[配置の概要](../deployment/deploying-applications-services-and-components.md)に関するページを参照してください。
+配置タスクのサポートが必要な場合:
 
-![発行オプションを選択する](../deployment/media/quickstart-publish-dialog.png)
+- どの配置オプションを選択すればよいかわかりませんか? 「[どの発行オプションを使用すべきでしょうか?](#what-publishing-options-are-right-for-me)」を参照してください。
+- Azure App Service または IIS の配置に関するイシューのサポートについては、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」を参照してください。
+- .NET 配置設定の構成について詳しくは、「[.NET 配置設定を構成する](#configure-net-deployment-settings)」を参照してください。
+- 既に発行プロファイルを作成していて、新しいターゲットに配置する場合は、構成されているプロファイルの **[発行]** ウィンドウで **[新規]** を選択します。
+
+   ![新しい発行プロファイルを作成する](../deployment/media/create-a-new-publish-profile.png)
+
+   次に、[発行] ウィンドウで配置オプションを選択します。 発行オプションの詳細については、次のセクションを参照してください。
 
 ## <a name="what-publishing-options-are-right-for-me"></a>状況に適した発行オプション
 
 Visual Studio 内から、次のターゲットにアプリケーションを直接発行できます。
 
+::: moniker range=">=vs-2019"
 - [Azure](#azure)
 - [Docker コンテナー レジストリ](#docker-container-registry)
 - [フォルダー](#folder)
 - [FTP/FTPS サーバー](#ftpftps-server)
 - [Web サーバー (IIS)](#web-server-iis)
 - [プロファイルのインポート](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [App Service](#azure-app-service)
+- [App Service Linux](#azure-app-service)
+- [IIS (IIS、FTP などを選択します)](#web-server-iis)
+- [FTP/FTPS (IIS、FTP などを選択します)](#ftpftps-server)
+- [フォルダー](#folder)
+- [プロファイルのインポート](#import-profile)
+::: moniker-end
+
+上記のオプションは、次の図に示すように、新しい発行プロファイルを作成するときに表示されます。
+
+::: moniker range=">=vs-2019"
+![発行オプションを選択する](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![発行オプションを選択する](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+アプリケーションの配置に関する一般的なオプションの概要については、[配置の概要](../deployment/deploying-applications-services-and-components.md)に関する記事を参照してください
 
 ## <a name="azure"></a>Azure 
 
 Azure を選択する場合は、次のいずれかを選択できます。
 
-- Windows、Linux 上で実行している、または Docker イメージとして実行している Azure App Service
-- Azure Container Registry にデプロイした Docker イメージ
-- Azure 仮想マシン
+- Windows、Linux 上で実行している、または Docker イメージとして実行している [Azure App Service](#azure-app-service)
+- [Azure Container Registry](#azure-container-registry) にデプロイした Docker イメージ
+- [Azure 仮想マシン](#azure-virtual-machine)
 
 ![Azure サービスを選択する](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +97,9 @@ App Service の[価格レベルまたはプラン](/azure/app-service/azure-web-
 > 自社のデータセンターまたは他のオンプレミス コンピューターで Azure App Service を使いたい場合は、[Azure Stack](https://azure.microsoft.com/overview/azure-stack/) を使って行うことができます。
 
 App Service への発行について詳しくは、次を参照してください。
-- [クイック スタート - Azure App Service への発行](quickstart-deploy-to-azure.md)と[クイック スタート - Linux への ASP.NET Core の発行](quickstart-deploy-to-linux.md)に関するページ。
+- [クイックスタート - Azure App Service に発行する](quickstart-deploy-to-azure.md)
+- [クイックスタート - Linux に ASP.NET Core を発行する](quickstart-deploy-to-linux.md)
+- [Azure App Service に ASP.NET Core アプリを発行する](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - 「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」。
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
@@ -78,13 +111,17 @@ App Service への発行について詳しくは、次を参照してくださ�
 - 既存の Docker コンテナー開発とデプロイ パイプラインがある場合。
 - Azure で Docker コンテナー イメージをビルドする場合。
 
-### <a name="azure-virtual-machines"></a>Azure Virtual Machines
+詳細情報:
 
-[Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) を使うと、任意の数のコンピューティング リソースをクラウドに作成して管理できます。 VM 上のすべてのソフトウェアと更新プログラムについての責任を負うことにより、ユーザーはお使いのアプリケーションで必要なだけいくらでもカスタマイズできます。 また、ユーザーはリモート デスクトップを介して仮想マシンに直接アクセスでき、各マシンは必要な限り割り当てられた IP アドレスを保持します。
+- [ASP.NET コンテナーをコンテナー レジストリにデプロイする](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Azure Virtual Machine
+
+[Azure Virtual Machines (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) を使用すると、任意の数のコンピューティング リソースをクラウドに作成して管理できます。 VM 上のすべてのソフトウェアと更新プログラムについての責任を負うことにより、ユーザーはお使いのアプリケーションで必要なだけいくらでもカスタマイズできます。 また、ユーザーはリモート デスクトップを介して仮想マシンに直接アクセスでき、各マシンは必要な限り割り当てられた IP アドレスを保持します。
 
 仮想マシンでホストされているアプリケーションのスケーリングには、需要に応じた追加 VM のスピンアップと、必要なソフトウェアのデプロイが含まれます。 このような制御レベルの追加により、グローバル リージョンごとに拡張方法を変えることができます。 たとえば、異なるリージョンの従業員がアプリケーションを利用している場合、リージョンの従業員の数に従って VM を拡張でき、コストを削減できる可能性があります。
 
-詳しくは、Visual Studio の [カスタム] オプションを使ってデプロイ ターゲットとして使うことができる Azure App Service、Azure Virtual Machines、他の Azure サービスの間の[詳細な違い](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/)をご覧ください。
+詳しくは、Visual Studio の [カスタム] オプションを使って配置ターゲットとして使用できる Azure App Service、Azure Virtual Machines、およびその他の Azure サービスの間の[詳細な違い](/azure/architecture/guide/technology-choices/compute-decision-tree)を参照してください。
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Azure Virtual Machines を選択する状況
 
@@ -103,10 +140,19 @@ App Service への発行について詳しくは、次を参照してくださ�
 
 - コンテナー化されたアプリケーションを配置する場合
 
+詳細については、「
+
+- [ASP.NET コンテナーをコンテナー レジストリにデプロイする](../containers/hosting-web-apps-in-docker.md)
+- [Docker Hub に配置する](../containers/deploy-docker-hub.md)
+
 ## <a name="folder"></a>フォルダー
 
-ファイル システムへのデプロイとは、ユーザーが所有するコンピューターの特定のフォルダーにアプリケーションのファイルを単にコピーすることです。 この方法は、テスト目的で、またはコンピューターでサーバーも実行している場合に限られた数のユーザーが使うアプリケーションをデプロイする場合に、最もよく使われます。 ターゲット フォルダーがネットワークで共有されている場合、ファイル システムにデプロイすると、他のユーザーも Web アプリケーション ファイルを使用して特定のサーバーにデプロイできます。
+ファイル システムへの配置とは、ユーザーが所有するコンピューターの特定のフォルダーにアプリケーションのファイルをコピーすることを意味します。 フォルダーへの配置は、テスト目的で、またはコンピューターでサーバーも実行している場合に限られた数のユーザーが使用するアプリケーションを配置する場合に、最もよく使われます。 ターゲット フォルダーがネットワークで共有されている場合、ファイル システムにデプロイすると、他のユーザーも Web アプリケーション ファイルを使用して特定のサーバーにデプロイできます。
+::: moniker range=">=vs-2019"
+Visual Studio 2019 16.8 以降、フォルダー ターゲットには、ClickOnce を使用して .Net Windows アプリケーションを発行する機能が含まれています。
 
+ClickOnce を使用して .NET Core 3.1、またはそれ以降の Windows アプリケーションを発行する場合は、[ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)方法に関するページを参照してください。
+::: moniker-end
 アプリケーションの構成方法およびアプリケーションが接続されているネットワークに応じて、サーバーを実行しているすべてのローカル コンピューターで、インターネットまたはイントラネットを通してアプリケーションを利用できます (コンピューターがインターネットに直接接続されている場合、外部のセキュリティ脅威からの保護に特に注意が必要です)。ユーザーは、これらのコンピューターを管理するので、ソフトウェアとハードウェアの構成を完全に制御できます。
 
 何らかの理由で (コンピューターのアクセスなど) ユーザーが Azure App Service や Azure Virtual Machines などのクラウド サービスを使用できない場合、ユーザーは自社のデータセンターで [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) を使用できます。 Azure Stack を使うと、ユーザーは Azure App Service および Azure Virtual Machines によってコンピューティング リソースを管理および使用しながら、すべてのものをオンプレミスに保持できます。
@@ -114,16 +160,28 @@ App Service への発行について詳しくは、次を参照してくださ�
 ### <a name="when-to-choose-file-system-deployment"></a>ファイル システムのデプロイを選ぶ状況
 
 - ファイル共有にアプリケーションをデプロイし、他のユーザーがそれを別のサーバーにデプロイすることだけが必要である。
+::: moniker range=">=vs-2019"
+- ClickOnce を使用して .NET Windows アプリケーションを配置したい
+::: moniker-end
 - ローカル テスト デプロイのみが必要である。
 - 別のデプロイ ターゲットに送る前にアプリケーション ファイルを調べて場合によっては個別に変更したい。
 
-詳細については、[ローカル フォルダーへの配置のクイック スタート](quickstart-deploy-to-local-folder.md)に関するページを参照してください
+詳細については、[ローカル フォルダーへの配置のクイックスタート](quickstart-deploy-to-local-folder.md)に関するページを参照してください
+::: moniker range=">=vs-2019"
+ClickOnce を使用した .NET Windows アプリケーションの配置の詳細については、[ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)方法に関するページを参照してください。
+::: moniker-end
+
+設定を選択するための追加のヘルプを参照するには、次を参照してください。
+
+- [フレームワーク依存と自己完結型の展開](/dotnet/core/deploying/)
+- [ターゲット ランタイム識別子 (ポータブル RID など)](/dotnet/core/rid-catalog)
+- [デバッグ構成とリリース構成](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>FTP または FTPS サーバー
 
 FTP または FTPS サーバーを使用すると、Azure 以外のサーバーにアプリケーションをデプロイできます。 アクセスできるファイル システムや他のサーバー (インターネットまたはイントラネット) にデプロイできます。他のクラウド サービスも含まれます。 Web デプロイ (ファイルまたは .ZIP) および FTP で使用できます。
 
-FTP または FTPS サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の**接続**情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
+FTP または FTPS サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の **接続** 情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
 
 - デプロイする構成。
 - 宛先から既存のファイルを削除するかどうか。
@@ -142,7 +200,7 @@ Visual Studio では任意の数の FTP または FTPS デプロイ プロファ
 
 IIS Web サーバーを使用すると、Azure 以外の Web サーバーにアプリケーションをデプロイできます。 アクセス可能な IIS サーバー (インターネットまたはイントラネット) にデプロイできます。これには他のクラウド サービスのものも含まれます。 Web 配置または Web 配置パッケージと連携できます。
 
-IIS Web サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の**接続**情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
+IIS Web サーバーを選択すると、Visual Studio からプロファイル名の指定を求められます。その後、ターゲット サーバーまたは場所、サイト名、資格情報などの追加の **接続** 情報が収集されます。 **[設定]** タブで次のビヘイビアーをコントロールできます。
 
 - デプロイする構成。
 - 宛先から既存のファイルを削除するかどうか。
@@ -157,7 +215,9 @@ Visual Studio では任意の数の IIS Web サーバー デプロイ プロフ�
 - Visual Studio で使っている資格情報または Azure アカウントに直接結び付けられている資格情報とは異なる資格情報を使ってデプロイしたい。
 - デプロイするたびに、ターゲットからファイルを削除したい。
 
-詳細については、[クイック スタート - Web サイトへのデプロイ](quickstart-deploy-to-a-web-site.md)に関するページを参照してください。 IIS での ASP.NET Core のトラブルシューティングのヘルプについては、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」をご覧ください。
+詳細については、[クイック スタート - Web サイトへのデプロイ](quickstart-deploy-to-a-web-site.md)に関するページを参照してください。
+
+IIS での ASP.NET Core のトラブルシューティングについて詳しくは、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」を参照してください。
 
 ## <a name="import-profile"></a>インポート プロファイル
 
@@ -168,12 +228,20 @@ IIS または Azure App Service に発行するときに、プロファイルを
 ### <a name="when-to-choose-import-profile"></a>プロファイルのインポートを選択する状況
 
 - IIS に発行し、デプロイ構成を簡略化したい。
-- IIS または Azure App Service に発行し、再利用や同じサービスに発行するチーム メンバーのためにデプロイ構成を高速化したい。
+- IIS または Azure App Service に発行し、再利用や同じサービスに発行するチーム メンバーのために配置構成を高速化したい。
 
 詳細については、「
 
 - [発行設定のインポートと IIS へのデプロイ](tutorial-import-publish-settings-iis.md)
 - [発行設定のインポートと Azure へのデプロイ](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>.NET 配置設定を構成する
+
+設定を選択するための追加のヘルプを参照するには、次を参照してください。
+
+- [フレームワーク依存と自己完結型の展開](/dotnet/core/deploying/)
+- [ターゲット ランタイム識別子 (ポータブル RID など)](/dotnet/core/rid-catalog)
+- [デバッグ構成とリリース構成](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>次の手順
 

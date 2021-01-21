@@ -1,5 +1,7 @@
 ---
 title: テスト エージェントとテスト コントローラーのインストール
+description: Visual Studio エージェントを使用して、Azure Test Plans または Team Foundation Server でテストを調整する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2ffa3a1006057169d7e4f473922ff2eebbfe7bb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286897"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328887"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>テスト エージェントとテスト コントローラーのインストール
 
@@ -77,13 +79,13 @@ ISO ファイル形式のインストーラーを入手できるので、仮想�
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Visual Studio 2013 テスト エージェントからのアップグレード
 
-すべての新しい自動テストシナリオでは Agents for Visual Studio を使用することをお勧めします。 ビルド パイプラインで*テスト エージェントの配置*タスクを使用して、コンピューター上にテスト エージェントをダウンロードしてインストールすることができます。
+すべての新しい自動テストシナリオでは Agents for Visual Studio を使用することをお勧めします。 ビルド パイプラインで *テスト エージェントの配置* タスクを使用して、コンピューター上にテスト エージェントをダウンロードしてインストールすることができます。
 
 次の表は、Agents for Visual Studio 2013 でサポートされるシナリオと、Team Foundation Server (TFS) 2015 および Azure Test Plans での代替シナリオを示しています。
 
 | Agents for Visual Studio 2013 でサポートされるシナリオ | TFS および Azure Test Plans での代替シナリオ |
 | - | - |
-| Visual Studio でのビルド-配置-テスト ワークフロー | ユーザーは、TFS でのビルド、配置、およびテスト シナリオで[ビルド パイプライン](/azure/devops/pipelines/index?view=vsts) (XAML ビルドではない) を使用できます。 |
+| Visual Studio でのビルド-配置-テスト ワークフロー | ユーザーは、TFS でのビルド、配置、およびテスト シナリオで[ビルド パイプライン](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (XAML ビルドではない) を使用できます。 |
 | オンプレミス リモート コンピューターを使用するロード テスト (パフォーマンス テスト) | Test Controller と Test Agents 2013 Update 5 を使用して、オンプレミスでロード テストを実行します。 |
 | ラボ環境を使用する Microsoft Test Manager (Visual Studio 2017 では非推奨) からの自動テストのリモート実行 | 現在、このシナリオに代わるものはありません。 ビルドおよびリリース定義 (XAML ビルドではない) で機能テストの実行タスクを使用して、テストをリモートで実行することをお勧めします。 |
 | 開発者による Visual Studio でのリモート テストの実行 | サポート対象から除外されました。 |

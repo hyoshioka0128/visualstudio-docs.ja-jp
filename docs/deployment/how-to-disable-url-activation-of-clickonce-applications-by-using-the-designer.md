@@ -1,5 +1,7 @@
 ---
 title: デザイナーを使用して ClickOnce アプリの URL アクティベーションを無効にする
+description: Visual Studio を使用して ClickOnce アプリケーションの自動起動を無効にして、ユーザーが [スタート] メニューからアプリケーションを起動するようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 818ab634d48fb666ecab5d89464ea017040bd250
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c243b0e0565c082e05fd15a1e02aa0507120e16b
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382485"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350011"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>方法: デザイナーを使用して ClickOnce アプリケーションの URL アクティベーションを無効にする
 通常、アプリケーションは、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Web サーバーからインストールされた直後に自動的に起動します。 セキュリティ上の理由から、この動作を無効にし、代わりに [ **スタート** ] メニューからアプリケーションを起動するようにユーザーに指示することができます。 次の手順では、URL アクティベーションを無効にする方法を説明します。
@@ -34,15 +36,15 @@ ms.locfileid: "85382485"
 
 #### <a name="to-disable-url-activation-for-your-application"></a>アプリケーションの URL アクティベーションを無効にするには
 
-1. **ソリューションエクスプローラー**でプロジェクト名を右クリックし、[**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクト名を右クリックし、[ **プロパティ** ] をクリックします。
 
 2. [ **プロパティ** ] ページで、[ **発行** ] タブをクリックします。
 
 3. **[オプション]** をクリックします。
 
-4. [ **マニフェスト**] をクリックします。
+4. [ **マニフェスト** ] をクリックします。
 
-5. [ **ブロックアプリケーションが URL 経由でアクティブ化され**ないようにする] チェックボックスをオンにします。
+5. [ **ブロックアプリケーションが URL 経由でアクティブ化され** ないようにする] チェックボックスをオンにします。
 
 6. アプリケーションをデプロイします。
 

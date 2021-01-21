@@ -1,5 +1,7 @@
 ---
 title: Visual Studio の検索 |Microsoft Docs
+description: 同じバージョンの Visual Studio の複数のインスタンスをインストールできます。 COM クエリ API を使用して目的のインスタンスを検索する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012478"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616289"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio を探す
 
@@ -22,7 +24,7 @@ Visual Studio 2017 以降では、同じバージョンまたはエディショ�
 
 これは、ネイティブコードとマネージコードで使用できる NuGet パッケージを含む高速で読み取り専用の API です。
 
-| コード | Package |
+| コード | パッケージ |
 | ---- | --- |
 | ネイティブ | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | マネージド | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |

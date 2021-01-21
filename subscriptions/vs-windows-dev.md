@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの Windows 開発者アカウント特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 04/20/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86875476"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537722"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -25,10 +25,10 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 2. [ツール] セクションで、Windows 開発者アカウントのタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。  コードをクリップボードにコピーし、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Windows 開発者特典のタイル](_img/vs-windows-dev/vs-windows-dev-tile.png)
+   > ![Windows 開発者特典のタイル](_img/vs-windows-dev/vs-windows-dev-tile.png "Windows 開発者アカウント タイルの [コードの取得] をクリックし、[アクティブ化] をクリックします。")
 3. [https://developer.microsoft.com/store/register/](https://developer.microsoft.com/store/register/) サイト上で登録プロセスを開始できます。  **[サインアップ]** をクリックして続行します。
    > [!div class="mx-imgBorder"]
-   > ![Windows 開発者特典の登録](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
+   > ![Windows 開発者特典の登録](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png "[サインアップ] をクリックしてアカウントを作成します。")
 4. 自分のサブスクリプションにサインインします。  複数のアカウントがある場合は、エンタープライズ サブスクリプションに関連付けられているアカウントを選択します。
 0. 電子メールアドレスを入力し、優先言語を選択し、 **[保存]** をクリックします。
 5. 次のページで、居住地または会社の所在地の国または地域を選択し、 **[次へ]** をクリックします。
@@ -44,9 +44,9 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | Included       |  はい|
-| Visual Studio Enterprise with GitHub Enterprise   | VL  | Included       |  はい|
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL  | Included       |  はい|
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい|
-| Visual Studio Professional with GitHub Enterprise | VL                                        | Included                                                            |はい|
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                        | Included                                                            |はい|
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A|
 | MSDN Platforms (標準)                                          | VL、リテール                                              |  使用できません                                            |  N/A|
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
@@ -66,10 +66,10 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。

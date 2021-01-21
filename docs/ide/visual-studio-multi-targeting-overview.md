@@ -1,5 +1,6 @@
 ---
 title: 対象の .NET Framework
+description: 指定されたバージョンで使用可能な機能のみをアプリケーションで使用できるように、プロジェクトでターゲットとされる .NET Framework のバージョンを指定する方法を説明します。
 ms.date: 03/31/2020
 ms.topic: overview
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7c3c2b6b81f8f7793bda35c6b220e43caee9b5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc20c2ee08a2b838e0fd1ab14ee9a8388912542
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770451"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479733"
 ---
 # <a name="framework-targeting-overview"></a>フレームワーク対象設定機能の概要
 
@@ -47,7 +48,7 @@ Visual Studio のソリューションには、異なるバージョンの .NET 
 
 - **[新しい項目の追加]** 、 **[新しい参照の追加]** 、 **[サービス参照の追加]** の各ダイアログ ボックスの項目をフィルター処理して、対象のバージョンで使用できない選択肢を除外します。
 
-- **ツールボックス**内のカスタム コントロールをフィルター処理し、対象のバージョンで使用できないコントロールを除外したり、複数のコントロールが使用可能である場合に最新のコントロールのみを表示したりします。
+- **ツールボックス** 内のカスタム コントロールをフィルター処理し、対象のバージョンで使用できないコントロールを除外したり、複数のコントロールが使用可能である場合に最新のコントロールのみを表示したりします。
 
 - **IntelliSense** をフィルター処理して、対象のバージョンで使用できない言語機能を除外します。
 
@@ -81,7 +82,7 @@ Visual Studio のソリューションには、異なるバージョンの .NET 
 
 Visual Basic、C#、または F# の既存のプロジェクトでは、プロジェクトのプロパティ ダイアログ ボックスで、.NET のターゲット バージョンを変更します。 C++ プロジェクトのターゲット バージョンを変更する方法については、代わりに「[How to: Modify the Target Framework and Platform Toolset (方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)」をご覧ください。
 
-1. **ソリューション エクスプローラー**で、変更するプロジェクトの右クリック メニューを開き、 **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で、変更するプロジェクトの右クリック メニューを開き、 **[プロパティ]** を選択します。
 
 1. **[プロパティ]** ウィンドウの左側の列で、 **[アプリケーション]** タブを選択します。
 

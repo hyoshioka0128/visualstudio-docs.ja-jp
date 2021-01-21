@@ -1,5 +1,7 @@
 ---
 title: '[ウィンドウ検索] ダイアログ ボックス | Microsoft Docs'
+description: '[ウィンドウ検索] を使用し、ウィンドウ ビューに一覧表示されている特定のウィンドウのノードを検索して選択します。 設定の説明についてはこの記事を参照してください。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f83469d6bd97e493a704282aa1fca1fbec96962d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900924"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148989"
 ---
 # <a name="window-search-dialog-box"></a>[ウィンドウ検索] ダイアログ ボックス
 このダイアログ ボックスを使用して、[ウィンドウ ビュー](../debugger/windows-view.md)で特定のスレッドのノードを検索して選択します。 このダイアログ ボックスを表示するには、ウィンドウ ビュー ウィンドウにフォーカスを移動します。 その後、 **[検索]** メニューから **[ウィンドウ検索]** を選択します。
 
- **ファインダー ツール**を使用してウィンドウを選択するか、ウィンドウ ハンドルを入力するか、キャプションとクラスによってウィンドウを識別することができます。
+ **ファインダー ツール** を使用してウィンドウを選択するか、ウィンドウ ハンドルを入力するか、キャプションとクラスによってウィンドウを識別することができます。
 
  次の設定を使用できます。
 
@@ -41,7 +43,7 @@ ms.locfileid: "62900924"
 
  [ウィンドウ ビュー](../debugger/windows-view.md) 使用できるウィンドウとコントロールのツリー ビューが表示されます。
 
- [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
  [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 

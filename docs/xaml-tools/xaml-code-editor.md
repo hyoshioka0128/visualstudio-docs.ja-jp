@@ -7,12 +7,12 @@ monikerRange: vs-2019
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29fa854ab00764fc0166a53d8b48989f2c74f036
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329174"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833300"
 ---
 # <a name="xaml-code-editor"></a>XAML コード エディター
 
@@ -120,11 +120,11 @@ using の設定の詳細については、「[using を並べ替える](../ide/r
 
 左余白の色を使用すると、ファイルに対する変更を追跡することができます。 ここでは、色が実行する操作にどのように関連しているかを示します。
 
-- ファイルを開いてから行った変更で保存していないものは、左余白 (選択余白と呼ばれます) に**黄色**のバーで示されます。
+- ファイルを開いてから行った変更で保存していないものは、左余白 (選択余白と呼ばれます) に **黄色** のバーで示されます。
 
     ![コード エディターでの黄色いバーでの編集](media/code-editor-edit-yellow.png "選択余白の黄色のバーでマークされた変更を含むコード エディターのスクリーンショット。")
 
-- 変更を保存した後 (ファイルを閉じる前) は、バーが**緑色**に変わります。
+- 変更を保存した後 (ファイルを閉じる前) は、バーが **緑色** に変わります。
 
     ![コード エディターでの緑色のバーでの編集](media/code-editor-edit-green.png "選択余白の緑色のバーでマークされた変更を含むコード エディターのスクリーンショット。")
 
@@ -136,7 +136,7 @@ using の設定の詳細については、「[using を並べ替える](../ide/r
 
 XAML コード エディターでコードを編集しているときに、右クリックのコンテキスト メニューを使用してアクセスできる機能がいくつかあります。 これらの機能のほとんどは Visual Studio IDE で普遍的に利用できますが、一部はコード エディターのデザイン ウィンドウ使用時に固有のものです。
 
-![Visual Studio の XAML コード エディターの右クリック コンテキスト メニュー](media/xaml-code-editor-right-click-menu.png "Visual Studio 2019 の XAML コード エディターの右クリック コンテキスト メニューのスクリーンショット")
+![Visual Studio 2019 の XAML コード エディターの右クリック コンテキスト メニューのスクリーンショット。](media/xaml-code-editor-right-click-menu.png)
 
 各機能とその有用性は次のとおりです。
 
@@ -163,7 +163,7 @@ XAML コード エディターでコードを編集しているときに、右�
 
 コード エディターのスクロール バーの右上には、 **[分割]** ボタンがあります。 それを選択すると、別のコード エディター ペインを開くことができます。 それらは互いに独立して動作し、異なる場所のコードを作業できるため便利です。
 
-![Visual Studio の XAML コード エディターの中央ペインのみ](media/code-editor-split-window-button.png "Visual Studio 2019 の XAML コード エディターの中央ペインのみのスクリーンショット")
+![Visual Studio 2019 の XAML コード エディターの中央ウィンドウのスクリーンショット。ウィンドウの右上で [分割] ボタンが強調されています。](media/code-editor-split-window-button.png)
 
 エディター ウィンドウを分割する方法の詳細については、「[エディター ウィンドウを管理する](../ide/how-to-manage-editor-windows.md)」ページを参照してください。
 

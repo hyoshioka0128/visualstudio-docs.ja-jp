@@ -1,5 +1,7 @@
 ---
 title: 階層と選択 |Microsoft Docs
+description: Visual Studio がプロジェクトなどの階層を処理する方法と、選択コンテキストを使用してユーザーに表示される内容を判断する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38c2cea464abded5ecf6ee2c8ac087868b07e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708141"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480422"
 ---
 # <a name="hierarchies-and-selection"></a>階層と選択
 をカスタマイズするときは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、がプロジェクトなどの [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 階層をどのように処理するか、およびユーザーに表示される内容を判断するために選択コンテキストを使用する方法を理解しておく必要があります。 ここでは、階層と選択の概念について説明し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。

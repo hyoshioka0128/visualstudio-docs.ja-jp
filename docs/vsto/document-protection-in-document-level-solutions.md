@@ -1,5 +1,7 @@
 ---
 title: ドキュメントレベルのソリューションにおけるドキュメントの保護
+description: ドキュメントレベルのプロジェクトで Microsoft Office Word および Excel Microsoft Office の保護機能を使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c5f019907495c3cad3fddef501455aedf345bb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253807"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846195"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>ドキュメントレベルのソリューションにおけるドキュメントの保護
   ドキュメントレベルのプロジェクトで Microsoft Office Word および Excel Microsoft Office の保護機能を使用できます。 これらの機能は、承認されていないユーザーがドキュメントの保護された部分を変更できないようにします。

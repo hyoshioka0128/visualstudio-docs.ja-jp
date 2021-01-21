@@ -14,49 +14,51 @@
       href: quickstart-deploy-to-linux.md
     - name: Web サイトに配置する
       href: quickstart-deploy-to-a-web-site.md
-    - name: ローカル フォルダーに配置する
+    - name: デバイスに配置する
       href: quickstart-deploy-to-local-folder.md
 - name: チュートリアル
   items:
     - name: .NET
       items:
-        - name: 発行ツールを使用して .NET Core アプリケーションを展開する
-          href: /dotnet/core/deploying/deploy-with-vs
-        - name: Microsoft Store のデスクトップ アプリをパッケージ化する
-          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: ClickOnce を使用してデスクトップ アプリを配置する
+        - name: ClickOnce を使用して .NET Windows アプリケーションを配置する
+          href: quickstart-deploy-using-clickonce-folder.md
+        - name: ClickOnce を使用して .NET Framework デスクトップ アプリを配置する
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
+        - name: インストーラー パッケージを作成する (Windows デスクトップ)
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Microsoft Store のデスクトップ アプリをパッケージ化する >>
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: ClickOnce アプリケーションのコマンド ラインからのビルド
           href: building-clickonce-applications-from-the-command-line.md
     - name: ASP.NET
       items:
-        - name: Azure に ASP.NET Core アプリを発行する
+        - name: Azure に ASP.NET Core アプリを発行する >>
           href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
         - name: 発行の設定のインポートおよび IIS へのデプロイ
           href: tutorial-import-publish-settings-iis.md
         - name: 発行設定のインポートと Azure へのデプロイ
           href: tutorial-import-publish-settings-azure.md
-        - name: Git を使用した Azure への ASP.NET Core の継続的な配置
+        - name: Git を使用した Azure への ASP.NET Core の継続的な配置 >>
           href: /aspnet/core/publishing/azure-continuous-deployment
     - name: C++
       items:
-        - name: C/C++ アプリを配置する
-          href: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Microsoft Store のデスクトップ アプリをパッケージ化する
+        - name: インストーラー パッケージを作成する
+          href: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
+        - name: Microsoft Store のデスクトップ アプリをパッケージ化する >>
           href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-        - name: ClickOnce を使用して C++/CLR アプリを配置...
+        - name: ClickOnce を使用して C++/CLR アプリを配置する >>
           href: /cpp/windows/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
-        - name: Visual Studio を使用して UWP アプリをパッケージ化する
+        - name: Visual Studio を使用して UWP アプリをパッケージ化する >>
           href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Linux App Service に発行する
+        - name: Linux App Service に発行する >>
           href: ../javascript/publish-nodejs-app-azure.md
     - name: Python
       items:
-        - name: Azure App Service に発行する
+        - name: Azure App Service に発行する >>
           href: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
 - name: 使い方ガイド
   items:

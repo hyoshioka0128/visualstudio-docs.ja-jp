@@ -1,5 +1,7 @@
 ---
 title: XmlPoke タスク | Microsoft Docs
+description: MSBuild で XmlPoke タスクを使用して、XPath クエリによって指定された値を XML ファイルに設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b69afc20d15802ad79b201ca38e2d69f1d473b1e
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: 35e29004116807092452a08d3835ba3e5e1dabcd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072505"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047231"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke タスク
 

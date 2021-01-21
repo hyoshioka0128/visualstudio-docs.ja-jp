@@ -1,5 +1,7 @@
 ---
 title: 他の Office ソリューションから VSTO アドインのコードを呼び出す
+description: VSTO アドインのオブジェクトを他のソリューション (他の Microsoft Office ソリューションなど) に公開する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 584406098f058c17b3dd215dda9c8c4e9498cf46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255329"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847846"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>他の Office ソリューションから VSTO アドインのコードを呼び出す
   VSTO アドイン内のオブジェクトは、他の Microsoft Office ソリューションを含む、他のソリューションに公開できます。 このことは、VSTO アドインが他のソリューションで使用可能なサービスを含む場合に便利です。 たとえば、Web サービスからの財務データに対して計算を実行する Microsoft Office Excel 用の VSTO アドインがある場合、他のソリューションは、実行時に Excel VSTO アドインを呼び出すことによって、これらの計算を実行できます。
@@ -46,7 +48,7 @@ ms.locfileid: "71255329"
 
 - COM VSTO アドイン (つまり、 <xref:Extensibility.IDTExtensibility2> インターフェイスを直接実装する VSTO アドイン)。
 
-- VSTO アドインとは異なるプロセスで実行中の任意のソリューション (こうした種類のソリューションは *アウト プロセス クライアント*とも呼ばれます)。 これらには、Windows フォームまたはコンソール アプリケーションなど、Office アプリケーションを自動化するアプリケーションと、異なるプロセスに読み込まれる VSTO アドインが含まれます。
+- VSTO アドインとは異なるプロセスで実行中の任意のソリューション (こうした種類のソリューションは *アウト プロセス クライアント* とも呼ばれます)。 これらには、Windows フォームまたはコンソール アプリケーションなど、Office アプリケーションを自動化するアプリケーションと、異なるプロセスに読み込まれる VSTO アドインが含まれます。
 
 ## <a name="expose-objects-to-other-solutions"></a>オブジェクトを他のソリューションに公開する
  VSTO アドイン内のオブジェクトを他のソリューションに公開するには、VSTO アドインで次の手順を実行します。
@@ -56,13 +58,13 @@ ms.locfileid: "71255329"
 2. <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> クラスの `ThisAddIn` メソッドをオーバーライドします。 他のソリューションに公開するクラスのインスタンスを返します。
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>他のソリューションに公開するクラスを定義する
- 少なくとも、公開するクラスはパブリックであり、 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性の設定は **true**であり、 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) インターフェイスを公開する必要があります。
+ 少なくとも、公開するクラスはパブリックであり、 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性の設定は **true** であり、 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) インターフェイスを公開する必要があります。
 
  [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) インターフェイスを公開する推奨方法は以下の手順を実行することです。
 
 1. 他のソリューションに公開するメンバーを宣言するインターフェイスを定義します。 このインターフェイスは、VSTO アドイン プロジェクトで定義できます。 ただし、クラスを非 VBA ソリューションに公開する場合、このインターフェイスを別のクラス ライブラリ プロジェクトで定義することを推奨します。そうすることで、VSTO アドインを呼び出すソリューションは VSTO アドイン プロジェクトを参照することなく、インターフェイスを参照できます。
 
-2. <xref:System.Runtime.InteropServices.ComVisibleAttribute>このインターフェイスに属性を適用し、この属性を**true**に設定します。
+2. <xref:System.Runtime.InteropServices.ComVisibleAttribute>このインターフェイスに属性を適用し、この属性を **true** に設定します。
 
 3. クラスを変更して、このインターフェイスを実装します。
 
@@ -111,7 +113,7 @@ ms.locfileid: "71255329"
    COMAddIn オブジェクトプロパティの戻り値の使用方法は、VBA クライアントと非 VBA クライアントで異なります。 アウト プロセス クライアントの場合、可能性のある競合状態を避けるために追加のコードが必要です。
 
 ### <a name="access-objects-from-vba-solutions"></a>VBA ソリューションからオブジェクトにアクセスする
- 次のコード例では、VBA を使用して、VSTO アドインによって公開されているメソッドを呼び出す方法を示します。 この VBA マクロは、 `ImportData` **ExcelImportData**という名前の VSTO アドインで定義されているという名前のメソッドを呼び出します。 より大きなチュートリアルのコンテキストでこのコードを表示するには、「 [チュートリアル: VBA から VSTO アドインのコードを呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)」を参照してください。
+ 次のコード例では、VBA を使用して、VSTO アドインによって公開されているメソッドを呼び出す方法を示します。 この VBA マクロは、 `ImportData` **ExcelImportData** という名前の VSTO アドインで定義されているという名前のメソッドを呼び出します。 より大きなチュートリアルのコンテキストでこのコードを表示するには、「 [チュートリアル: VBA から VSTO アドインのコードを呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)」を参照してください。
 
 ```vb
 Sub CallVSTOMethod()

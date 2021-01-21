@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナーシーケンスアクティビティデザイナー
+description: Sequence アクティビティに、順番に実行される子アクティビティの順序付けられたコレクションが含まれていることを確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77980077a580724f6db6bb5a544200890421d8e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9e7e6e9114405bc1575e0256dd63211a4fb6d08
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875970"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94433974"
 ---
 # <a name="sequence-activity-designer"></a>Sequence アクティビティ デザイナー
 
@@ -25,7 +27,7 @@ ms.locfileid: "86875970"
 
 ## <a name="using-the-sequence-activity-designer"></a>Sequence アクティビティ デザイナーの使用
 
-アクティビティを追加するには <xref:System.Activities.Statements.Sequence> 、[**ツールボックス**] から**Sequence**アクティビティデザイナーをドラッグし、ワークフローデザイナー画面にドロップします。 このアクティビティに子アクティビティを追加するには <xref:System.Activities.Statements.Sequence> 、[ **ツールボックス** ] から他のアクティビティをドラッグし、[ここにアクティビティをドロップします] というヒントテキストが表示されているボックス内の三角形にドロップします。
+アクティビティを追加するには <xref:System.Activities.Statements.Sequence> 、[ **ツールボックス** ] から **Sequence** アクティビティデザイナーをドラッグし、ワークフローデザイナー画面にドロップします。 このアクティビティに子アクティビティを追加するには <xref:System.Activities.Statements.Sequence> 、[ **ツールボックス** ] から他のアクティビティをドラッグし、[ここにアクティビティをドロップします] というヒントテキストが表示されているボックス内の三角形にドロップします。
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>ワークフロー デザイナーでの Sequence アクティビティのプロパティ
 

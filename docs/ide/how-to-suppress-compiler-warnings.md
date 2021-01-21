@@ -1,5 +1,7 @@
 ---
-title: プロジェクトと NuGet パッケージのコンパイラの警告を非表示にする
+title: プロジェクトと NuGet パッケージの警告を非表示にする
+description: Visual Studio を使用して、1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -8,22 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283958"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136368"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラ警告の非表示
 
-1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを**標準**、**詳細**、または**診断**に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
+1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを **標準** 、 **詳細** 、または **診断** に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# または F\# の特定の警告を非表示にする
 
 C# または F# プロジェクトの特定の警告を非表示にするには、 **[ビルド]** プロパティ ページを使用します。
 
-1. **ソリューション エクスプローラー**で、警告を抑制するプロジェクトを選びます。
+1. **ソリューション エクスプローラー** で、警告を抑制するプロジェクトを選びます。
 
 1. メニュー バーで **[表示]**  >  **[プロパティ ページ]** の順に選びます。
 
@@ -37,7 +39,7 @@ C# または F# プロジェクトの特定の警告を非表示にするには�
 
 C++ プロジェクトの特定の警告を非表示にするには、 **[構成プロパティ]** プロパティ ページを使用します。
 
-1. **ソリューション エクスプローラー**で、警告を抑制するプロジェクトまたはソース ファイルを選びます。
+1. **ソリューション エクスプローラー** で、警告を抑制するプロジェクトまたはソース ファイルを選びます。
 
 1. メニュー バーで **[表示]**  >  **[プロパティ ページ]** の順に選びます。
 
@@ -53,23 +55,23 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
 ## <a name="suppress-warnings-for-visual-basic"></a>Visual Basic の警告を非表示にする
 
-プロジェクトの *.vbproj* ファイルを編集することで、Visual Basic の特定のコンパイラの警告を非表示にできます。 *カテゴリ*で警告を非表示にするには、[コンパイル プロパティ ページ](../ide/reference/compile-page-project-designer-visual-basic.md)を使用できます。 詳細については、「[Visual Basic での警告の構成](../ide/configuring-warnings-in-visual-basic.md)」を参照してください。
+プロジェクトの *.vbproj* ファイルを編集することで、Visual Basic の特定のコンパイラの警告を非表示にできます。 *カテゴリ* で警告を非表示にするには、 [コンパイル プロパティ ページ](../ide/reference/compile-page-project-designer-visual-basic.md)を使用できます。 詳細については、「[Visual Basic での警告の構成](../ide/configuring-warnings-in-visual-basic.md)」を参照してください。
 
 ### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Visual Basic の特定の警告を抑制するには
 
 この例は、 *.vbproj* ファイルを編集して特定のコンパイラの警告を非表示にする方法を示しています。
 
-1. **ソリューション エクスプローラー**で、警告を抑制するプロジェクトを選びます。
+1. **ソリューション エクスプローラー** で、警告を抑制するプロジェクトを選びます。
 
 1. メニュー バーから、 **[プロジェクト]**  >  **[プロジェクトのアンロード]** の順に選びます。
 
-1. **ソリューション エクスプローラー**で、プロジェクトの右クリックまたはショートカット メニューを開き、 **[編集 \<ProjectName>.vbproj]** を選択します。
+1. **ソリューション エクスプローラー** で、プロジェクトの右クリックまたはショートカット メニューを開き、 **[編集 \<ProjectName>.vbproj]** を選択します。
 
     コード エディターに XML プロジェクト ファイルが開きます。
 
 1. ビルドに使用するビルド構成の `<NoWarn>` 要素を見つけ、`<NoWarn>` 要素の値として 1 つまたは複数の警告番号を追加します。 複数の警告番号を指定する場合は、コンマで区切ります。
 
-     次の例では、2 つのコンパイラの警告が非表示にされた、x86 プラットフォームでの*デバッグ* ビルド構成の `<NoWarn>` 要素を太字で示してあります。
+     次の例では、2 つのコンパイラの警告が非表示にされた、x86 プラットフォームでの *デバッグ* ビルド構成の `<NoWarn>` 要素を太字で示してあります。
 
     ```xml
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -118,7 +120,7 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
 ### <a name="to-suppress-a-specific-warning-for-a-single-nuget-package"></a>1 つの NuGet パッケージに対して特定の警告を非表示にするには
 
-1. **ソリューション エクスプローラー**で、コンパイラの警告を非表示にする NuGet パッケージを選択します。
+1. **ソリューション エクスプローラー** で、コンパイラの警告を非表示にする NuGet パッケージを選択します。
 
    ![ソリューション エクスプローラーの NuGet パッケージ](media/nuget-package-with-warning.png)
 
@@ -128,7 +130,7 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
    ![NuGet パッケージのプロパティ](media/nuget-properties-nowarn.png)
 
-   **ソリューション エクスプローラー**と**エラー一覧**から警告が消えます。
+   **ソリューション エクスプローラー** と **エラー一覧** から警告が消えます。
 
 ## <a name="see-also"></a>関連項目
 

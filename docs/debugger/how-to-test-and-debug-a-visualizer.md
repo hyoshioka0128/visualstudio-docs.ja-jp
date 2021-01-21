@@ -1,5 +1,7 @@
 ---
-title: 方法 - ビジュアライザーをテストしてデバッグする | Microsoft Docs
+title: ビジュアライザーをテストしてデバッグする | Microsoft Docs
+description: ビジュアライザーをテスト ドライバー (ビジュアライザー開発ホスト) から実行するか、Visual Studio にインストールしてデバッガー ウィンドウから呼び出すことで、ビジュアライザーをテストしてデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a81a8d094999585620ab6ab412c3b0610caf517
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 1326fe9731a9d938678eb9397b106ab9e71b4fd5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348900"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150666"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>方法: ビジュアライザーをテストおよびデバッグする
 ビジュアライザーを記述したら、デバッグとテストを行う必要があります。
 
 テスト方法の 1 つとして、ビジュアライザーを Visual Studio にインストールし、デバッガー ウィンドウから呼び出します。 (「[方法: ビジュアライザーをインストールする](../debugger/how-to-install-a-visualizer.md)」を参照してください。)この方法では、Visual Studio のインスタンスをもう 1 つ使用してビジュアライザーの追加とデバッグを行う必要があります。デバッグ対象のビジュアライザーは、デバッガーの最初のインスタンス内で実行されます。
 
-ビジュアライザーのデバッグをより簡単に行うには、ビジュアライザーをテスト ドライバーから実行します。 ビジュアライザー API では、*ビジュアライザー開発ホスト*と呼ばれるこのようなドライバーを簡単に作成できます。
+ビジュアライザーのデバッグをより簡単に行うには、ビジュアライザーをテスト ドライバーから実行します。 ビジュアライザー API では、*ビジュアライザー開発ホスト* と呼ばれるこのようなドライバーを簡単に作成できます。
 
 ### <a name="to-create-a-visualizer-development-host"></a>ビジュアライザー開発ホストを作成するには
 

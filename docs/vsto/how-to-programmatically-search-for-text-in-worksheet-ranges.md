@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによってワークシートの範囲内のテキストを検索する'
+description: Visual Studio を使用して、Microsoft Excel ワークシートの範囲内のテキストをプログラムで検索する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547031"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524550"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>方法: プログラムによってワークシートの範囲内のテキストを検索する
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>オブジェクトのメソッドを <xref:Microsoft.Office.Interop.Excel.Range> 使用すると、範囲内のテキストを検索できます。 このテキストは、やなどのワークシートのセルに表示されるエラー文字列のいずれかにすることもでき `#NULL!` `#VALUE!` ます。 エラー文字列の詳細については、「 [セルエラー値](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)」を参照してください。
@@ -48,7 +51,7 @@ ms.locfileid: "85547031"
     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]
 
-4. 最初に見つかった範囲 ( `firstFind` ) と **Nothing**を比較します。 `firstFind`に値が含まれていない場合、コードは見つかった範囲 () を格納し `currentFind` ます。
+4. 最初に見つかった範囲 ( `firstFind` ) と **Nothing** を比較します。 `firstFind`に値が含まれていない場合、コードは見つかった範囲 () を格納し `currentFind` ます。
 
     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]

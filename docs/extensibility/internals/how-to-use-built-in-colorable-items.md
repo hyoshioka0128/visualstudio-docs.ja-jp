@@ -1,5 +1,7 @@
 ---
-title: '方法: 組み込みの装飾 Items | を使用するMicrosoft Docs'
+title: '方法: Built-In 装飾 Items | を使用するMicrosoft Docs'
+description: '言語サービス用の Visual Studio 統合開発環境 (IDE: integrated development environment) で組み込みの装飾項目を使用する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,21 +13,21 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 762d1e53f7aafa11ed345859e68fc98766eec77d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905215"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761011"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>方法: 組み込みの装飾項目を使用する
 組み込みの装飾項目を使用する前に、まず、独自のカスタム装飾項目 (この場合はオブジェクト) を提供しないことを統合開発環境 (IDE) に通知する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> ます。 これを行うには、言語サービスのレジストリエントリを設定します。
 
 ## <a name="to-use-built-in-colorable-items"></a>組み込みの装飾アイテムを使用するには
 
-1. **HKEY_LOCAL_MACHINE \visualstudio \\<X.y> \languages\language Services \\<\> language Name**(はのバージョンで、は \<X.Y> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<Language Name> お使いの言語の名前です) で、 **requeststockcolors**という DWORD レジストリエントリの値を作成します。
+1. [ **HKEY_LOCAL_MACHINE\VisualStudio\\<[x.y]> [\languages\language Services \\<言語 \> 名**] (はのバージョンであり、は \<X.Y> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \<Language Name> お使いの言語の名前) で、 **requeststockcolors** という DWORD レジストリエントリの値を作成します。
 
-2. **Requeststockcolors**レジストリエントリの値を*1*に設定します。
+2. **Requeststockcolors** レジストリエントリの値を *1* に設定します。
 
     レジストリエントリを作成した後は、その <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> 列挙体のメンバーを使用して、 <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> エディターで使用する色属性の配列を入力できます。
 

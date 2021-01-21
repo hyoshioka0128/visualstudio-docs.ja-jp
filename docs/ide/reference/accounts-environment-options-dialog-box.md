@@ -1,5 +1,7 @@
 ---
 title: アカウント オプション リファレンス
+description: Visual Studio へのサインインに使用するアカウントに関連する、いくつかのオプションを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2cd9f08cb1358d788db661871f6d229d0579ddbd
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595905"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871146"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>[アカウント] ([オプション] ダイアログ ボックス - [環境])
 
@@ -29,7 +31,7 @@ ms.locfileid: "75595905"
 
 ### <a name="enable-device-code-flow"></a>デバイス コード フローを有効にする
 
-このオプションをオンにすると、 **[ファイル]**  >  **[アカウント設定]** ページで **[アカウントの追加]** を選択したときの Visual Studio の動作が変わります。 **[アカウントにサインイン]** ページが表示されるのではなく、サインインするための URL とコードを Web ブラウザーに貼り付けることができるダイアログ ボックスが表示されます。 このオプションは、たとえば古いバージョンの Internet Explorer を使用していたり、ファイアウォールでアクセスが制限されていたりして、通常の方法では Visual Studio にサインインできない場合に便利です。 詳しくは、「[複数のユーザー アカウントを使って作業する](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)」をご覧ください。
+このオプションをオンにすると、**[ファイル]** > **[アカウント設定]** ページで **[アカウントの追加]** を選択したときの Visual Studio の動作が変わります。 **[アカウントにサインイン]** ページが表示されるのではなく、サインインするための URL とコードを Web ブラウザーに貼り付けることができるダイアログ ボックスが表示されます。 このオプションは、たとえば古いバージョンの Internet Explorer を使用していたり、ファイアウォールでアクセスが制限されていたりして、通常の方法では Visual Studio にサインインできない場合に便利です。 詳細については、「 [Work with multiple user accounts](../work-with-multiple-user-accounts.md#add-an-account-using-device-code-flow)」を参照してください。
 
 ## <a name="registered-azure-clouds"></a>登録済み Azure クラウド
 

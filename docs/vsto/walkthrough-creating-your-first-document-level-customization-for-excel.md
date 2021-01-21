@@ -1,5 +1,8 @@
 ---
 title: Excel 用のドキュメントレベルのカスタマイズを初めて作成する
+description: Microsoft Excel のドキュメントレベルのカスタマイズを作成します。 この種のソリューションで作成した機能は、特定のブックが開いている場合にのみ使用可能です。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4183e84a930957b7cf87a6cc1e6fabcb21420785
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74566985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527955"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>チュートリアル: 初めての Excel 用ドキュメントレベルのカスタマイズの作成
 
@@ -49,7 +52,7 @@ ms.locfileid: "74566985"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Visual Studio で新しい Excel ブック プロジェクトを作成するには
 
@@ -67,7 +70,7 @@ ms.locfileid: "74566985"
 
 7. **[OK]** をクリックします。
 
-8. **Visual Studio Tools for Office プロジェクトウィザード**で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
+8. **Visual Studio Tools for Office プロジェクトウィザード** で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 3. [ **新しいプロジェクトの作成** ] ダイアログで、[ **Excel VSTO ブック** ] プロジェクトを選択します。
@@ -78,19 +81,19 @@ ms.locfileid: "74566985"
 
 5. [**新しいプロジェクトの構成**] ダイアログの [**名前**] ボックスに「 **FirstWorkbookCustomization** 」と入力し、[**作成**] をクリックします。
 
-6. **Visual Studio Tools for Office プロジェクトウィザード**で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
+6. **Visual Studio Tools for Office プロジェクトウィザード** で [**新しいドキュメントの作成**] を選択し、[ **OK**] をクリックします。
 ::: moniker-end
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**FirstWorkbookCustomization**プロジェクトを作成し、次のファイルをプロジェクトに追加します。
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**FirstWorkbookCustomization** プロジェクトを作成し、次のファイルをプロジェクトに追加します。
 
    - *FirstWorkbookCustomization*-プロジェクト内の Excel ブックを表します。 すべてのワークシートとグラフが含まれます。
 
-   - Sheet1 (Visual Basic または Visual C# の *.cs*ファイル用の *.vb*ファイル)-ブックの最初のワークシートのデザイン画面とコードを提供するワークシート。 詳細については、「 [ワークシートホスト項目](../vsto/worksheet-host-item.md)」を参照してください。
+   - Sheet1 (Visual Basic または Visual C# の *.cs* ファイル用の *.vb* ファイル)-ブックの最初のワークシートのデザイン画面とコードを提供するワークシート。 詳細については、「 [ワークシートホスト項目](../vsto/worksheet-host-item.md)」を参照してください。
 
-   - Sheet2 (Visual Basic または Visual C# の *.cs*ファイルの *.vb*ファイル)-ブックの2番目のワークシートのデザイン画面とコードを提供するワークシート。
+   - Sheet2 (Visual Basic または Visual C# の *.cs* ファイルの *.vb* ファイル)-ブックの2番目のワークシートのデザイン画面とコードを提供するワークシート。
 
-   - Sheet3 (Visual C# の Visual Basic または *.cs*ファイルの *.vb*ファイル)-ブックの3番目のワークシートのデザイン画面とコードを提供するワークシート。
+   - Sheet3 (Visual C# の Visual Basic または *.cs* ファイルの *.vb* ファイル)-ブックの3番目のワークシートのデザイン画面とコードを提供するワークシート。
 
-   - ThisWorkbook (Visual C# の Visual Basic または *.cs*ファイルの *.vb*ファイル)-ブックレベルのカスタマイズのデザインサーフェイスとコードが含まれています。 詳細については、「 [Workbook host item](../vsto/workbook-host-item.md)」を参照してください。
+   - ThisWorkbook (Visual C# の Visual Basic または *.cs* ファイルの *.vb* ファイル)-ブックレベルのカスタマイズのデザインサーフェイスとコードが含まれています。 詳細については、「 [Workbook host item](../vsto/workbook-host-item.md)」を参照してください。
 
      デザイナーで、Sheet1 コード ファイルが自動的に開かれます。
 
@@ -102,11 +105,11 @@ ms.locfileid: "74566985"
 
 1. デザイナーウィンドウの [ **閉じる** ] ボタン (X) をクリックして、ブックを閉じます。
 
-2. **ソリューションエクスプローラー**で、 **Sheet1**コードファイルを右クリックし、[**デザイナーの表示**] をクリックします。
+2. **ソリューションエクスプローラー** で、 **Sheet1** コードファイルを右クリックし、[**デザイナーの表示**] をクリックします。
 
      \- または
 
-     **ソリューションエクスプローラー**で、 **Sheet1**コードファイルをダブルクリックします。
+     **ソリューションエクスプローラー** で、 **Sheet1** コードファイルをダブルクリックします。
 
 ## <a name="add-text-to-a-worksheet-in-the-designer"></a>デザイナーでワークシートにテキストを追加する
 
@@ -114,12 +117,12 @@ ms.locfileid: "74566985"
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>デザイナーを使用してワークシートにテキストを追加するには
 
-1. デザイナーで開いているワークシートで、セル **A1**を選択し、次のテキストを入力します。
+1. デザイナーで開いているワークシートで、セル **A1** を選択し、次のテキストを入力します。
 
      **このテキストは、デザイナーを使用して追加されました。**
 
 > [!WARNING]
-> このテキスト行をセル **A2**に追加すると、この例の他のコードによって上書きされます。
+> このテキスト行をセル **A2** に追加すると、この例の他のコードによって上書きされます。
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>プログラムによってワークシートにテキストを追加する
 
@@ -131,7 +134,7 @@ ms.locfileid: "74566985"
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>コードを使用してワークシートに 2 行目のテキストを追加するには
 
-1. **ソリューションエクスプローラー**で、[ **Sheet1**] を右クリックし、[**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **Sheet1**] を右クリックし、[**コードの表示**] をクリックします。
 
      Visual Studio でコード ファイルが開かれます。
 
@@ -140,7 +143,7 @@ ms.locfileid: "74566985"
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
@@ -164,7 +167,7 @@ ms.locfileid: "74566985"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
  Excel 用の基本的なドキュメント レベルのカスタマイズを作成したので、カスタマイズ開発の詳細な方法について、以下のトピックを参照してください。
 
@@ -182,7 +185,7 @@ ms.locfileid: "74566985"
 
 - Excel 用のドキュメントレベルのカスタマイズの配置: [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel ソリューション](../vsto/excel-solutions.md)

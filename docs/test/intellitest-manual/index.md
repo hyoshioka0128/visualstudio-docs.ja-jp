@@ -1,5 +1,7 @@
 ---
 title: 概要 | Microsoft IntelliTest 開発者テスト ツール
+description: IntelliTest が自動化された透過的なテスト アプローチを使用する方法について説明します。IntelliTest は、.NET コードの候補となるテスト スイートを生成できます。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f986d6727433dc01732232754b2d65d0d7c4ef8f
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6853ef6040df943ac3050621a5b3a2528d599d9f
+ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038284"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97756618"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest の概要
 
-IntelliTest は早い段階でバグを発見することができ、テストのメンテナンス コストを削減します。 自動化された透過的なテスト アプローチを使用することで、IntelliTest は .NET コードのテストの候補スイートを生成できます。 テスト スイートの生成は、指定する*正確性プロパティ*によってより細かく指示することができます。 IntelliTest はテスト対象のコードの進化に伴って、テスト スイートを自動的にさらに進化させます。
+IntelliTest は早い段階でバグを発見することができ、テストのメンテナンス コストを削減します。 自動化された透過的なテスト アプローチを使用することで、IntelliTest は .NET コードのテストの候補スイートを生成できます。 テスト スイートの生成は、指定する *正確性プロパティ* によってより細かく指示することができます。 IntelliTest はテスト対象のコードの進化に伴って、テスト スイートを自動的にさらに進化させます。
+
+> [!NOTE]
+> IntelliTest は Enterprise Edition でのみ使用できます。 これは、.NET Framework を対象とする C# コードに対してサポートされています。 .NET Core と .NET Standard は現在サポートされていません。
 
 **特性のテスト** IntelliTest では、従来の単体テストのスイートの観点から、コードの動作を決定することができます。
 このようなテスト スイートは、レガシ コードや馴染みのないコードのリファクタリングに伴う複雑さへの取り組みの基盤を形成する回帰スイートとして使用できます。

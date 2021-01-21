@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint プロジェクトに項目を追加する |Microsoft Docs'
+description: SharePoint ソリューションを開いたり作成したりした後、Visual Studio で新規または既存の項目を SharePoint プロジェクトに追加します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f7a36591d94e846a0024bce8c5d0b618479e647
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014700"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850729"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>方法: SharePoint プロジェクトに項目を追加する
   SharePoint ソリューションには1つ以上のプロジェクトが含まれており、それぞれに複数の SharePoint プロジェクト項目が含まれています。 SharePoint ソリューションを開いたり作成したりした後、これらのプロジェクトに新規または既存の項目を追加できます。 たとえば、新しいワークフロープロジェクトには default.aspx という名前の既定のフォームが付属していますが、そのフォームを新しい形式または別の形式に置き換えることも、別の ASPX フォームを追加することもできます。
@@ -26,7 +28,7 @@ ms.locfileid: "86014700"
 
 1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、SharePoint ソリューションを開くか作成します。
 
-2. **ソリューションエクスプローラー**で、プロジェクトのノードを選択します。
+2. **ソリューションエクスプローラー** で、プロジェクトのノードを選択します。
 
 3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択し、[**新しい項目の追加**] ダイアログボックスを表示します。
 
@@ -40,7 +42,7 @@ ms.locfileid: "86014700"
 
 1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、SharePoint ソリューションを開くか作成します。
 
-2. **ソリューションエクスプローラー**で、プロジェクトのノードを選択します。
+2. **ソリューションエクスプローラー** で、プロジェクトのノードを選択します。
 
 3. メニューバーで、[**プロジェクト**] [既存項目の追加] の順に選択し  >  **Add Existing Item** 、[**既存項目の追加**] ダイアログボックスを表示します。
 

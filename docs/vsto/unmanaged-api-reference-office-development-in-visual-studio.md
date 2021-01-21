@@ -1,5 +1,8 @@
 ---
 title: アンマネージ API リファレンス (Visual Studio での Office 開発)
+description: アンマネージ API リファレンスは、読み込みマネージ VSTO アドインを支援するために使用されます。このインターフェイスを実装することで、独自の VSTO アドインローダーコンポーネントを作成することもできます。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
 dev_langs:
@@ -13,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c1616d24ae9b2c072df4e5708eb98e86611a83d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dbb64b54d9b0dd9a244d9a614fbce211d1edfc5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540986"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522681"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>アンマネージ API リファレンス (Visual Studio での Office 開発)
 

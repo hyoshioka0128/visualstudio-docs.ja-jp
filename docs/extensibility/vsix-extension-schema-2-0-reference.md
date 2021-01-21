@@ -1,5 +1,7 @@
 ---
 title: VSIX 拡張機能スキーマ2.0 リファレンス |Microsoft Docs
+description: Vsix 拡張スキーマ2.0 では、vsix パッケージの内容を記述する VSIX 配置マニフェストファイルのファイル形式を定義します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78e260c62d67afc10fea25d52169c48b64c82f72
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2edd0349555380f6d98d24f7a40c22e48797d12
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697921"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863755"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 拡張機能スキーマ2.0 リファレンス
 Vsix 配置マニフェストファイルは、VSIX パッケージの内容を記述します。 ファイル形式は、スキーマによって管理されます。 このスキーマのバージョン2.0 では、カスタム型と属性の追加がサポートされています。  マニフェストのスキーマは拡張可能です。 マニフェストローダーは、認識されない XML 要素と属性を無視します。
@@ -131,7 +133,7 @@ Vsix 配置マニフェストファイルは、VSIX パッケージの内容を�
 
     Visual Studio 2017 のバージョン番号につい [ては、「Visual studio のビルド番号とリリース日](../install/visual-studio-build-numbers-and-release-dates.md)」を参照してください。
 
-    Visual Studio 2017 リリースのバージョンを表現する場合、マイナーバージョンは常に **0**にする必要があります。 たとえば、Visual Studio 2017 バージョン15.3.26730.0 は、[15.0.26730.0, 16.0) として表現する必要があります。 これは、Visual Studio 2017 以降のバージョン番号にのみ必要です。
+    Visual Studio 2017 リリースのバージョンを表現する場合、マイナーバージョンは常に **0** にする必要があります。 たとえば、Visual Studio 2017 バージョン15.3.26730.0 は、[15.0.26730.0, 16.0) として表現する必要があります。 これは、Visual Studio 2017 以降のバージョン番号にのみ必要です。
 
   - `AnyAttribute*` -要素は、 `<InstallationTarget>` 実行時に名前と値のペアのディクショナリとして公開される属性のオープンエンドのセットを許可します。
 
@@ -219,6 +221,6 @@ Vsix 配置マニフェストファイルは、VSIX パッケージの内容を�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio 拡張機能を出荷する](../extensibility/shipping-visual-studio-extensions.md)

@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 09/17/2019
-  ms.openlocfilehash: 26c3ce01f656f77c578eaa78902bddb7fd844a7d
-  ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
+  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90038492"
+  ms.lasthandoff: 11/19/2020
+  ms.locfileid: "94903911"
 landingContent:
 - title: 配置について
   linkLists:
@@ -23,10 +23,12 @@ landingContent:
     links:
     - text: 配置でのはじめに
       url: deploying-applications-services-and-components.md
+- title: はじめに (.NET Core、Python)
+  linkLists:
+  - linkListType: overview
+    links:
     - text: フォルダー、IIS、または Azure にデプロイする
       url: deploying-applications-services-and-components-resources.md
-- title: 作業開始
-  linkLists:
   - linkListType: quickstart
     links:
     - text: Azure App Service に発行する
@@ -37,18 +39,28 @@ landingContent:
       url: quickstart-deploy-to-a-web-site.md
     - text: フォルダーに発行する
       url: quickstart-deploy-to-local-folder.md
+    - text: ClickOnce を使用して .NET Core アプリをデプロイする
+      url: quickstart-deploy-using-clickonce-folder.md
 - title: .NET アプリを配置する
   linkLists:
   - linkListType: tutorial
     links:
     - text: .NET Core アプリを配置する
       url: /dotnet/core/deploying/deploy-with-vs
-    - text: ClickOnce を使用してデスクトップ アプリを配置する
+    - text: ClickOnce を使用して .NET Framework デスクトップ アプリを配置する
       url: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
-    - text: ClickOnce アプリケーションをコマンド ラインからビルドする
-      url: building-clickonce-applications-from-the-command-line.md
+    - text: インストーラー パッケージを使用してデスクトップ アプリを展開する
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
   - linkListType: how-to-guide
     links:
+    - text: Windows ストア用のデスクトップ アプリをパッケージ化する
+      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
+- title: C++ アプリを配置する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: インストーラー パッケージを使用して配置する
+      url: deploying-applications-services-and-components.md#create-an-installer-package-windows-desktop
     - text: Windows ストア用のデスクトップ アプリをパッケージ化する
       url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
 - title: ASP.NET Core アプリを配置する
@@ -61,31 +73,15 @@ landingContent:
       url: tutorial-import-publish-settings-iis.md
     - text: Git で発行する
       url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
-- title: C++ アプリを配置する
+- title: その他の配置の種類
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: セットアップ プロジェクトを使用して配置する (C/C++)
-      url: /cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-    - text: Windows ストア用のデスクトップ アプリをパッケージ化する
-      url: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
-- title: Python アプリを配置する
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Linux App Service に発行する
+    - text: Python アプリから Linux App Service へ
       url: ../python/publishing-python-web-applications-to-azure-from-visual-studio.md
-- title: Node.js アプリを配置する
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Linux App Service に発行する
+    - text: Node.js アプリから Linux App Service へ
       url: ../javascript/publish-nodejs-app-azure.md
-- title: .NET パッケージを NuGet.org に配置する
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: NuGet.org に発行する (.NET Standard)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
-    - text: NuGet.org に発行する (.NET Framework)
-      url: /nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework
+    - text: コンテナー化されたアプリを配置する
+      url: ../containers/index.yml
+    - text: NuGet パッケージを発行する
+      url: /nuget

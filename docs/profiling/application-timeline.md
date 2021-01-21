@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537281"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038349"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>リソース消費量と UI スレッド アクティビティを分析する (XAML)
 
@@ -100,7 +100,7 @@ ms.locfileid: "85537281"
 
 次のイベントがサポートされます。
 
-|名前|説明|
+|名前|[説明]|
 |-|-|
 |**解析**|XAML ファイルの解析とオブジェクトの作成に費やされた時間。<br /><br /> **[タイムラインの詳細]** の **[解析]** ノードを展開すると、ルート イベントの結果として解析されたすべての XAML ファイルの依存関係チェーンが表示されます。 このヒントにより、パフォーマンスが重要なシナリオにおいて不必要なファイル解析やオブジェクト作成を特定し、それらを取り除いて最適化できます。|
 |**レイアウト**|大規模なアプリケーションでは、多数の要素が画面に同時に表示される可能性があります。 場合によっては、この表示によって UI のフレーム レートが低下し、これに対応してアプリケーションの応答性も低下します。 レイアウト イベントでは、各要素 (つまり、Arrange、Measure、ApplyTemplate、ArrangeOverride、MeasureOverride に費やした時間) をレイアウトするコストが正確に判断されます。 レイアウト パスの一部を成すビジュアル ツリーも作成されます。 この視覚表現を使用すると、簡略化する論理ツリーを判断したり、レイアウト パスを最適化するために他の遅延メカニズムを評価したりできます。|
@@ -116,7 +116,7 @@ ms.locfileid: "85537281"
 
 **[タイムラインの詳細]** ツールバーを使用して、 **[タイムラインの詳細]** ビュー エントリの並べ替え、フィルター操作、注釈の指定を行います。
 
-|名前|説明|
+|名前|[説明]|
 |-|-|
 |**並べ替え**|開始時刻またはイベントの長さによって並べ替えます。|
 |![フレームごとのグループ イベント](../profiling/media/timeline_groupbyframes.png "TIMELINE_GroupByFrames")|フレームごとにイベントをグループ化する最上位の **[フレーム]** カテゴリを追加または削除します。|
@@ -125,7 +125,7 @@ ms.locfileid: "85537281"
 
 ## <a name="see-also"></a>関連項目
 
-- [WPF チーム ブログ:WPF アプリケーション用の新しい UI パフォーマンス分析ツール](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [WPF チーム ブログ:WPF アプリケーション用の新しい UI パフォーマンス分析ツール](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [C++、C#、または Visual Basic を使った UWP アプリのパフォーマンスのベスト プラクティス](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [WPF アプリケーションのパフォーマンスの最適化](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Visual Studio のプロファイル](../profiling/index.yml)

@@ -1,6 +1,8 @@
 ---
 title: コードメトリックスウィンドウ
 ms.date: 12/12/2017
+description: Visual Studio code のメトリック分析データを表示、フィルター処理、再配置、およびエクスポートする方法について説明します。 「コードメトリックスの結果に基づいて作業項目を作成する方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587083"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436811"
 ---
 # <a name="use-the-code-metrics-results-window"></a>[コードメトリックスの結果] ウィンドウを使用する
 
@@ -30,9 +32,9 @@ ms.locfileid: "75587083"
 
 コードメトリックスの結果ウィンドウは、次のいずれかのメニューシーケンスを使用して表示できます。
 
-- [**分析**] メニューの [ **Windows**  >  **コードメトリックスの結果**] をクリックします。
+- [ **分析** ] メニューの [ **Windows**  >  **コードメトリックスの結果** ] をクリックします。
 
-- [**表示**] メニューの [**その他の Windows**  >  **コードメトリックスの結果**] をクリックします。
+- [ **表示** ] メニューの [ **その他の Windows**  >  **コードメトリックスの結果** ] をクリックします。
 
 結果が含まれていない場合でも、[ **コードメトリックスの結果** ] ウィンドウが開きます。
 
@@ -50,9 +52,9 @@ ms.locfileid: "75587083"
 
 1. [ **フィルター** ] ボックスの一覧から列名を選択します。
 
-2. [ **最小**] で、表示する最小値を入力します。
+2. [ **最小** ] で、表示する最小値を入力します。
 
-3. [ **最大**] で、表示される最大値を入力します。
+3. [ **最大** ] で、表示される最大値を入力します。
 
 4. [ **フィルターの適用** ] ボタンをクリックします。
 
@@ -64,7 +66,7 @@ ms.locfileid: "75587083"
 
 ### <a name="add-or-remove-a-column"></a>列を追加または削除する
 
-1. [ **列の追加と削除** ] ボタンをクリックするか、任意の列見出しを右クリックして、[ **列の追加と削除**] をクリックします。
+1. [ **列の追加と削除** ] ボタンをクリックするか、任意の列見出しを右クリックして、[ **列の追加と削除** ] をクリックします。
 
 1. [ **列の追加と削除** ] ダイアログボックスで、追加または削除する列のチェックボックスをオンまたはオフにし、[ **OK]** をクリックします。
 
@@ -82,15 +84,15 @@ ms.locfileid: "75587083"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>コードメトリックスの結果に基づいて作業項目を作成する
 
-[**コードメトリックスの結果**] ウィンドウの結果に基づいて、 [Azure Boards](/azure/devops/boards/index?view=vsts)作業項目を作成できます。 作業項目が作成されると、Visual Studio によって [ **タイトル** ] フィールドにタイトルとコードメトリックスデータが自動的に [ **履歴** ] タブに入力されます。
+[ **コードメトリックスの結果** ] ウィンドウの結果に基づいて、 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)作業項目を作成できます。 作業項目が作成されると、Visual Studio によって [ **タイトル** ] フィールドにタイトルとコードメトリックスデータが自動的に [ **履歴** ] タブに入力されます。
 
-作業項目の Azure Boards の詳細については、「 [作業項目](/azure/devops/boards/work-items/index?view=vsts)」を参照してください。
+作業項目の Azure Boards の詳細については、「 [作業項目](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)」を参照してください。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>結果に基づいて作業項目を作成するには
 
 1. 結果を右クリックします。
 
-2. [ **作業項目の作成**] をポイントし、作成する作業項目の種類 (**バグ**、 **タスク**など) をクリックします。
+2. [ **作業項目の作成** ] をポイントし、作成する作業項目の種類 ( **バグ** 、 **タスク** など) をクリックします。
 
 3. すべての必須フィールドに入力して、作業項目フォームを完成させます。
 
@@ -106,7 +108,7 @@ ms.locfileid: "75587083"
 
 4. [ **ファイル** ] メニューの [ **すべてを保存** ] をクリックして、作業項目を保存します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コードメトリックスの値](../code-quality/code-metrics-values.md)
 - [方法: コードメトリックスデータを生成する](../code-quality/how-to-generate-code-metrics-data.md)

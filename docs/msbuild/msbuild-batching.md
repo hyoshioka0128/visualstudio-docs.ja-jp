@@ -1,5 +1,7 @@
 ---
 title: MSBuild バッチ | Microsoft Docs
+description: MSBuild で項目のメタデータに基づいて項目一覧が異なるカテゴリまたはバッチに分割され、バッチごとにターゲットまたはタスクが 1 回実行される方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/09/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289275"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047698"
 ---
 # <a name="msbuild-batching"></a>MSBuild バッチ
 
@@ -122,7 +124,7 @@ Target DemoIndependentBatches:
 
 ターゲットの `ItemGroup` は暗黙的にタスクであり、`Condition` 属性で `%(Color)` が使用されているので、タスクのバッチ処理が実行されます。 2 つのバッチがあります (red に対して 1 つと、blue に対して 1 つ)。 プロパティ `%(NeededColorChange)` は `%(Color)` メタデータが blue の場合にのみ設定され、その設定は、blue のバッチが実行されたときに条件が一致した個々の項目にのみ影響します。 `%(ItemMetadataName)` 構文が指定されていても、`Message` タスクの `Text` 属性ではバッチ処理はトリガーされません。これは、それが項目変換の内側で使用されているためです。
 
-バッチは個別に実行されますが、並列では実行されません。 それにより、バッチ実行で変更されるメタデータ値にアクセスするときに違いがあります。 バッチ実行の一部のメタデータに基づいてプロパティを設定する場合、プロパティは "*最後*" に設定された値になります。
+バッチは個別に実行されますが、並列では実行されません。 それにより、バッチ実行で変更されるメタデータ値にアクセスするときに違いがあります。 バッチ実行の一部のメタデータに基づいてプロパティを設定する場合、プロパティは " *最後* " に設定された値になります。
 
 ```xml
    <PropertyGroup>

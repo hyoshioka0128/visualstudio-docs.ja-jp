@@ -1,6 +1,7 @@
 ---
 title: デバッガーでコード間を移動する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio デバッガーを使用してコードのトラブルシューティングを行う方法について説明します。 トピックに含まれる内容は、中断モードへの移行、コードのステップ実行、ターゲットに対する実行、となります。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/12/2018
 ms.topic: how-to
 f1_keywords:
@@ -15,16 +16,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ffe163ab567de98161f185ba2f3d2522c505095
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348250"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975213"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Visual Studio デバッガーでコード間を移動する
 
-Visual Studio デバッガーを使用すると、コード間を移動してアプリの状態を調査し、その実行フローを表示することができます。 キーボード ショートカット、デバッグ コマンド、ブレークポイントなどの機能を使用して、調べるコードにすばやく移動できます。 デバッガーのナビゲーション コマンドやショートカットを使い慣れることで、アプリの問題をすばやく見つけて解決することができます。  コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に「[入門者向けのデバッグ](../debugger/debugging-absolute-beginners.md)」および「[デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)」を参照することをお勧めします。
+Visual Studio デバッガーを使用すると、コード間を移動してアプリの状態を調査し、その実行フローを表示することができます。 キーボード ショートカット、デバッグ コマンド、ブレークポイントなどの機能を使用して、調べるコードにすばやく移動できます。 デバッガーのナビゲーション コマンドやショートカットを使い慣れることで、アプリの問題をすばやく見つけて解決することができます。
+
+> [!NOTE]
+> コードのデバッグを試みるのが今回初めてである場合は、この記事を先に進む前に「[入門者向けのデバッグ](../debugger/debugging-absolute-beginners.md)」および「[デバッグの技術とツール](../debugger/write-better-code-with-visual-studio.md)」を参照することをお勧めします。
 
 ## <a name="get-into-break-mode"></a>"中断モード" に移行する
 

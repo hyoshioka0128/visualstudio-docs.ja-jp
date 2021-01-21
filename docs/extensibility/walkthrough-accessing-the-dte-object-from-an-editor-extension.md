@@ -1,5 +1,7 @@
 ---
 title: エディター拡張機能から DTE オブジェクトにアクセスする
+description: このチュートリアルのコード例を使用して、エディター拡張機能から DTE オブジェクトにアクセスする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +12,24 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e37bdb21b7c8132f0dfb166d19e03d36e838245d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a0ee789590bd411fe7955cf739683d016164f49
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697656"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863719"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする
 
 Vspackage では、dte <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> オブジェクトの型を使用してメソッドを呼び出すことにより、dte オブジェクトを取得できます。 Managed Extensibility Framework (MEF) 拡張機能では、型のを使用してメソッドをインポートし、呼び出すことができ <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> <xref:EnvDTE.DTE> ます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルを行うには、Visual Studio SDK をインストールする必要があります。 詳細については、「 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)」を参照してください。
 
 ## <a name="get-the-dte-object"></a>DTE オブジェクトを取得する
 
-1. C# VSIX プロジェクトを作成し、 **Dtetest**という名前を指定します。 **エディター分類子**項目テンプレートを追加し、 **dtetest**という名前を指定します。
+1. C# VSIX プロジェクトを作成し、 **Dtetest** という名前を指定します。 **エディター分類子** 項目テンプレートを追加し、 **dtetest** という名前を指定します。
 
    詳細については、「 [エディター項目テンプレートを使用して拡張機能を作成](../extensibility/creating-an-extension-with-an-editor-item-template.md)する」を参照してください。
 
@@ -38,7 +40,7 @@ Vspackage では、dte <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>
     - Microsoft. VisualStudio
     - VisualStudio (変更不可)
 
-3. *DTETestProvider.cs*ファイルで、次のディレクティブを追加し `using` ます。
+3. *DTETestProvider.cs* ファイルで、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using EnvDTE;
@@ -68,7 +70,7 @@ Vspackage では、dte <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>
    - EnvDTE
    - Microsoft. VisualStudio
 
-3. *DTETestProvider.cs*ファイルで、次のディレクティブを追加し `using` ます。
+3. *DTETestProvider.cs* ファイルで、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using EnvDTE;

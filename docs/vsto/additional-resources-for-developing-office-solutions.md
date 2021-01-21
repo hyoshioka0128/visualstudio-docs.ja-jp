@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの開発に関するその他のリソース
+description: Microsoft Office アプリケーションの拡張機能を開発するために使用できるその他のリソースについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 828cd2c451e531eeecda7574b5750bc3bb7023b2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986271"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844817"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Office ソリューションの開発に関するその他のリソース
   Visual Studio の Microsoft Office 開発ツールは、Office アプリケーションを拡張する数多くの方法のうちの 1 つにすぎません。 Office アプリケーションにも、Open XML Formats などの組み込み機能がいくつか用意されています。ただし、それらの機能は Visual Studio の Office 開発ツールには含まれず、このドキュメントでも取り上げていません。

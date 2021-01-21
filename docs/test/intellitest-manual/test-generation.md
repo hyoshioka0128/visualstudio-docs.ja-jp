@@ -1,5 +1,7 @@
 ---
 title: テスト生成 | Microsoft IntelliTest 開発者テスト ツール
+description: IntelliTest が実装のメソッドからテスト ケースをどのようにして生成し、メソッドの入力を生成し、データに対するアサーションを確認するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c251a1539b42da2b4e92c2996457075f3c3be135
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2ccb54995107bbd22e961f14ff3755b4a6f543a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315175"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668080"
 ---
 # <a name="test-generation"></a>テスト生成
 
@@ -168,7 +170,7 @@ public void Test2([PexAssumeNotNull] object o)
 ```
 
 <a name="precondition"></a>
-## <a name="precondition"></a>前提条件
+## <a name="precondition"></a>Precondition
 
 メソッドの前提条件は、メソッドが成功となるための条件を表します。
 
@@ -235,11 +237,11 @@ namespace MyTests
 ```
 
 <a name="further-reading"></a>
-## <a name="further-reading"></a>関連項目
+## <a name="further-reading"></a>参考資料
 
 * [テストとコードのバインディング](https://devblogs.microsoft.com/devops/smart-unit-tests-test-to-code-binding-test-case-management/)
 * [1 回のテストですべてのルールを指定する](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 
 ## <a name="got-feedback"></a>フィードバックが欲しい場合
 
-ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。
+ご意見や機能に関するご要望を[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で投稿してください。

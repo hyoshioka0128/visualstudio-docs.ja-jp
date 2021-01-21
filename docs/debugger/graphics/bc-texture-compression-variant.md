@@ -1,5 +1,7 @@
 ---
 title: BC テクスチャ圧縮バリアント | Microsoft Docs
+description: BC テクスチャ圧縮バリアントを使用し、B8G8R8X8、B8G8R8A8、または R8G8B8A8 のバリエーションであるピクセル形式を持つテクスチャでブロック圧縮 (BC) を許可します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e767268073f896de590386854a0d2c9ce2803073
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736158"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726450"
 ---
 # <a name="bc-texture-compression-variant"></a>BC テクスチャ圧縮バリアント
 B8G8R8X8、B8G8R8A8、または R8G8B8A8 のバリエーションであるピクセル形式を持つテクスチャで、ブロック圧縮を有効にします。

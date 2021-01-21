@@ -1,5 +1,7 @@
 ---
 title: テスト コントローラーとテスト エージェントの管理
+description: 初めてテスト コントローラーとテスト エージェントをインストールおよび構成した後に、それらを管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 author: mikejo5000
@@ -7,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9a416dc64a9d49d14e367a04023f067c7b595c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286701"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329641"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>テスト コントローラーとテスト エージェントの管理
 
@@ -83,7 +85,7 @@ Visual Studio でテストを実行するために、テスト エージェン�
     > [!NOTE]
     > 既定のポート番号は 6901 です。
 
-4. 変更を保存するには、 **[設定の適用]** を選択します。 **[構成の概要]** のダイアログ ボックスを閉じ、**Test Agent 構成ツール**を閉じます。
+4. 変更を保存するには、 **[設定の適用]** を選択します。 **[構成の概要]** のダイアログ ボックスを閉じ、**Test Agent 構成ツール** を閉じます。
 
 > [!WARNING]
 > エージェントが現在別のテスト コントローラーに対して実行するように構成されている場合は、テスト エージェントをそのコントローラーから削除する必要があります。
@@ -170,7 +172,7 @@ Visual Studio 2019 では、テスト コントローラーがプロジェクト
 
 ## <a name="configure-a-test-controller"></a>テスト コントローラーの構成
 
-テスト コントローラーを構成するには、**Team Test Controller 構成ツール**を使用する必要があります。 テスト コントローラーを構成するときに、テスト コントローラーを別のプロジェクト コレクションに登録したり、プロジェクト コレクションへのテスト コントローラーの登録を解除したりできます。
+テスト コントローラーを構成するには、**Team Test Controller 構成ツール** を使用する必要があります。 テスト コントローラーを構成するときに、テスト コントローラーを別のプロジェクト コレクションに登録したり、プロジェクト コレクションへのテスト コントローラーの登録を解除したりできます。
 
 テスト コントローラーを Team Foundation Server プロジェクト コレクションに登録する場合は、テスト コントローラー サービスに使用するアカウントがプロジェクト コレクションのプロジェクト コレクション テスト サービス アカウント グループのメンバーであるか、またはテスト コントローラー構成ツールを実行するために使用するアカウントがプロジェクト コレクション管理者である必要があります。
 

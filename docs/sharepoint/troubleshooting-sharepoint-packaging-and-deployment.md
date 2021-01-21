@@ -1,5 +1,7 @@
 ---
 title: SharePoint のパッケージ化と配置のトラブルシューティング |Microsoft Docs
+description: SharePoint ソリューションをパッケージ化して配置するときに発生する可能性のあるさまざまな問題について理解し、修正します。
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7eafac8015b7a2c51279b7a2d664f0e094d2397b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981933"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95969940"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint のパッケージ化と配置のトラブルシューティング
   このトピックでは、SharePoint ソリューションをパッケージ化および配置するときに発生する可能性があるさまざまな問題について説明します。
@@ -40,7 +42,7 @@ ms.locfileid: "72981933"
  パッケージ デザイナーを使用してパッケージにプロジェクト出力を追加することができます。 ただし、プロジェクト出力を追加する際には、そのプロジェクトのプラットフォームが SharePoint ソリューションのプラットフォームと一致していることを確認する必要があります。 SharePoint サーバーに配置するアセンブリには、 **ANY CPU** プラットフォームターゲットを使用することをお勧めします。 詳細については、「[ [コンパイル] ページ」、「プロジェクトデザイナー &#40;Visual Basic&#41;](../ide/reference/compile-page-project-designer-visual-basic.md) および [[コンパイラの詳細設定] ダイアログボックス &#40;Visual Basic&#41;](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)」を参照してください。
 
 ## <a name="validation-warnings-and-errors"></a>検証の警告とエラー
- Visual Studio の SharePoint 開発ツールでは、ソリューション パッケージが正しい形式になっていることを確認するために検証ステップが実行されます。 特定のフィーチャーやパッケージのためのカスタム検証ステップを作成することもできます。 詳細については、「 [方法: SharePoint ソリューションのカスタム機能およびパッケージ検証規則を作成する](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)」を参照してください。
+ Visual Studio の SharePoint 開発ツールでは、ソリューション パッケージが正しい形式になっていることを確認するために検証ステップが実行されます。 特定のフィーチャーやパッケージのためのカスタム検証ステップを作成することもできます。 詳細については、「[方法:SharePoint ソリューションのフィーチャーとパッケージのカスタム検証規則を作成する](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)」を参照してください。
 
 ## <a name="deployment-conflict-resolution"></a>配置の競合解決
  SharePoint ソリューションを配置する際に、ソリューション パッケージ内の項目と同じ名前、URL、または ID を持つ項目がサーバー上にあると、競合が発生します。 [ **配置の競合の解決** ] プロパティを変更して、モジュール、Web パーツ、リストインスタンス、およびコンテンツタイプの競合を解決、報告、または無視することができます。
@@ -110,6 +112,6 @@ ms.locfileid: "72981933"
 
  この警告を除去するには、プロジェクトをビルドしてからデザイナーを閉じて再度開くか、プロジェクトに対する自動取り消しオプションを無効にします。 これを行うには、[プロジェクトのプロパティ] ダイアログボックスの [ **SharePoint** ] タブで、[**デバッグ後に自動取り消し**] チェックボックスをオフにします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [SharePoint ソリューションのパッケージ化と配置](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

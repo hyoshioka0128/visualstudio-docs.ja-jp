@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint コマンドを作成する |Microsoft Docs'
+description: SharePoint ツールの拡張機能でサーバーオブジェクトモデルの API を呼び出すカスタム SharePoint コマンドを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15ea7ff86e90bf7a474f9d64c30a9803e3e20bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41e4ab0fd70f4993d148cd5c67cb816bdc92e77a
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016224"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850703"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>方法: SharePoint コマンドを作成する
   SharePoint ツールの拡張機能でサーバーオブジェクトモデルを使用する場合は、API を呼び出すカスタム *SharePoint コマンド* を作成する必要があります。 サーバーオブジェクトモデルを直接呼び出すことができるアセンブリで、SharePoint コマンドを定義します。

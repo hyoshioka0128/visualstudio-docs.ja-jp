@@ -1,5 +1,6 @@
 ---
-title: '&lt;postActions &gt; 要素 (Visual Studio での Office 開発)'
+title: '&lt;postActions &gt; 要素 (Office 開発)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfe9ae171f0f6fac1c2b5add5340de1c11f3da0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544418"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583711"
 ---
-# <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions &gt; 要素 (Visual Studio での Office 開発)
+# <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions &gt; 要素 (Office 開発)
   `postActions` 名前空間の `vstav3` の要素には、Office ソリューションのインストール後に実行する配置後アクションを説明する `postAction` 要素がすべて含まれています。
 
 ## <a name="syntax"></a>構文
@@ -45,7 +46,7 @@ ms.locfileid: "85544418"
  `postActions` には、次の要素があります。
 
 ### <a name="postaction"></a>postAction
- 省略可能。 `postAction`名前空間の要素のロールは `vstav3` [&#60;postaction&#62; 要素で定義され、Visual Studio&#41;での Office 開発 &#40;](../vsto/postaction-element-office-development-in-visual-studio.md)ます。
+ 任意。 `postAction`名前空間の要素のロールは `vstav3` [&#60;postaction&#62; 要素で定義され、Visual Studio&#41;での Office 開発 &#40;](../vsto/postaction-element-office-development-in-visual-studio.md)ます。
 
 ## <a name="post-deployment-action-example"></a>配置後アクションの例
 

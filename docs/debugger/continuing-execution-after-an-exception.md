@@ -1,5 +1,7 @@
 ---
 title: 例外後の実行の継続 | Microsoft Docs
+description: 未処理の例外が原因でデバッガーの実行が中断されるとどうなるかについて説明します。 同じスレッドで実行を継続できる場合があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e94867d845988b787247c32d32afd35af946972
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350681"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559382"
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外後の実行の継続
 例外が発生したためにデバッガーの実行が中断されると、既定で **[例外ヘルパー]** が表示されます。 **[オプション]** ダイアログ ボックスで **[例外ヘルパー]** を無効にしている場合は、 **[例外アシスタント]** (C# または Visual Basic) または **[例外]** ダイアログ ボックス (C++) が表示されます。

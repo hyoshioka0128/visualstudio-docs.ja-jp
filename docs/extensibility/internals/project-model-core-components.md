@@ -1,5 +1,7 @@
 ---
 title: プロジェクトモデルコアコンポーネント |Microsoft Docs
+description: この記事では、プロジェクトモデルコアで識別されるインターフェイスとサービス、およびオブジェクトに関連付けられたインターフェイスとサービスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,33 +13,33 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e29a9d40531b32f127054fe02f61c72738e508e
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012413"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876897"
 ---
 # <a name="project-model-core-components"></a>プロジェクト モデルのコア コンポーネント
 次の表は、プロジェクトモデルで拡張されています。 この表では、モデルで識別されるインターフェイスとサービス、および特定のオブジェクトに関連付けられているインターフェイスとサービスについて簡単に説明します。 また、特定のプロジェクトの種類の要件に応じて、プロジェクトの作成とメンテナンスでオプションとなる他のインターフェイスの詳細も示します。
 
- 詳細については、「 [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。
+ 詳細については、「 [Symbol-Browsing ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。
 
 ### <a name="package-object"></a>パッケージオブジェクト
 
-|インターフェイス|説明|
+|インターフェイス|コメント|
 |---------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>|IDE で VSPackage を初期化し、そのサービスを IDE で使用できるようにします。|
 
 ### <a name="project-factory-object"></a>プロジェクトファクトリオブジェクト
 
-|インターフェイス|説明|
+|インターフェイス|コメント|
 |---------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|新しいプロジェクトの作成と、既存のプロジェクトのオープンを管理します。|
 
 ### <a name="project-objects"></a>プロジェクトオブジェクト
 
-|インターフェイス|説明|
+|インターフェイス|コメント|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|プロジェクト項目の追加と削除を管理し、エディターを開き、各ドキュメントモニカーとの間のマッピングを維持し `VSITEMID` ます。 `IVsProject` と `IVsProject2` から継承されます。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|ナビゲーションと表示のプロパティを管理し、イベントを提供します。|
@@ -57,7 +59,7 @@ ms.locfileid: "90012413"
 
 ### <a name="configuration-object"></a>構成オブジェクト
 
-|インターフェイス|説明|
+|インターフェイス|コメント|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|構成に関する情報を提供します。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|プロジェクトで構成情報を管理できるようにします。|
@@ -66,13 +68,13 @@ ms.locfileid: "90012413"
 
 ### <a name="configuration-builder-object"></a>構成ビルダーオブジェクト
 
-|インターフェイス|説明|
+|インターフェイス|コメント|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|プロジェクト構成のビルド操作を管理します。|
 
 ### <a name="additional-project-objects"></a>追加のプロジェクトオブジェクト
 
-|インターフェイス|説明|
+|インターフェイス|コメント|
 |----------------|--------------|
 |`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|項目のプロパティを [ **プロパティ** ] ウィンドウに表示します。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|配置の出力を表示します。|
@@ -81,7 +83,7 @@ ms.locfileid: "90012413"
 
 ### <a name="services"></a>サービス
 
-|サービス|説明|
+|サービス|コメント|
 |-------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterProjectTypes>|プロジェクトファクトリが IDE に存在することを登録するプロジェクトの種類を実装する Vspackage によって使用されます。 VSPackage `QueryService` は、メソッドが呼び出されたときに、このサービスに対してを呼び出し、プロジェクトファクトリを登録する必要があり `IVsPackage::SetSite` ます。 `SetSite`メソッドが呼び出されていない場合、プロジェクトはインスタンス化されません。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|プロジェクトの列挙、新しいプロジェクトの作成、プロジェクトの変更の通知など、現在のソリューションに組み込まれている組み込みの概念にアクセスできるようにします。|

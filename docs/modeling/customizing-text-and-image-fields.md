@@ -1,5 +1,7 @@
 ---
 title: テキストおよびイメージ フィールドのカスタマイズ
+description: テキストファイルとイメージファイルのカスタマイズについて説明します。 また、図形でテキストデコレータを定義する場合は、テキストフィールドによって表されることにもついて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29210ec667bffd6b632bcfbee0b87c0cbb2d5f38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6effda90580a184bb8ebfb8c4f4830dc6cb844d5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542715"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362861"
 ---
 # <a name="customizing-text-and-image-fields"></a>テキストおよびイメージ フィールドのカスタマイズ
 図形にテキストデコレータを定義すると、その図形はテキストフィールドで表されます。 TextFields およびその他の図形フィールドの初期化の例については、DSL ソリューションでのを調べてください。

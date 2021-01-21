@@ -1,6 +1,7 @@
 ---
 title: JavaScript コンソール コマンド | Microsoft Docs
-ms.custom: ''
+description: JavaScript コンソール ウィンドウでコマンドを使用して、メッセージの送信や他のタスクを行います。 この記事は、Node.js アプリ、UWP アプリ、Apache Cordova アプリに適用されます。
+ms.custom: SEO-VS-2020
 ms.date: 10/17/2019
 ms.topic: reference
 helpviewer_keywords:
@@ -14,16 +15,16 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: b30b59b95b09cac8308474b2b2963f9b96d58146
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2877b3ca9fb644ae4dae1af27e79e6ee52423b97
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731699"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903910"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio の JavaScript コンソール コマンド
 
-Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウの使用方法の例については、「[クイックスタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)」を参照してください。 このトピックの情報は、Node.js アプリ、UWP アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。
+Visual Studio では、JavaScript コンソール ウィンドウでコマンドを使用して、メッセージを送信したり他のタスクを実行したりすることができます。 このウィンドウの使用方法の例については、「[クイックスタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)」を参照してください。 このトピックの情報は、Node.js アプリ、UWP アプリ、および Visual Studio Tools for Apache Cordova を使用して作成されたアプリに適用されます。
 
 JavaScript コンソール ウィンドウが閉じている場合は、Visual Studio でのデバッグ中に **[デバッグ]**  >  **[ウィンドウ]**  >  **[JavaScript コンソール]** を選択することで、それを開くことができます。
 
@@ -43,7 +44,7 @@ console という名前のローカル オブジェクトとの混同を避け�
 
 |コマンド|説明|例|
 |-------------|-----------------|-------------|
-|`assert(expression, message)`|`expression` が **false**と評価された場合にメッセージを送信します。|`console.assert((x == 1), "assert message: x != 1");`|
+|`assert(expression, message)`|`expression` が **false** と評価された場合にメッセージを送信します。|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|コンソール ウィンドウからメッセージ (スクリプト エラー メッセージなど) をクリアし、コンソール ウィンドウに表示されているスクリプトもクリアします。 コンソールの入力プロンプトに入力したスクリプトはクリアされません。|`console.clear();`|
 |`count(title)`|カウント コマンドが呼び出された回数をコンソール ウィンドウに送信します。 `title`オプションにより、カウントの呼び出しはそれぞれ一意に識別されます。<br /><br /> コンソール ウィンドウの既存のエントリは `title` パラメーター (存在する場合) により識別され、カウント コマンドによって更新されます。 新しいエントリは作成されません。|`console.count();`<br /><br /> `console.count("inner loop");`|
 |`debug(message)`|`message` をコンソール ウィンドウに送信します。<br /><br /> このコマンドは console.log と同じものです。<br /><br /> このコマンドを使用して渡されたオブジェクトは、文字列値に変換されます。|`console.debug("logging message");`|
@@ -127,5 +128,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```
 
 ## <a name="see-also"></a>関連項目
-- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
-- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [クイック スタート: JavaScript をデバッグする](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017&preserve-view=true)
+- [クイック スタート:HTML および CSS のデバッグ](../debugger/quickstart-debug-html-and-css.md?view=vs-2017&preserve-view=true)

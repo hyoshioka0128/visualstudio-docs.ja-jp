@@ -3,14 +3,14 @@ title: Docker の概要
 description: Visual Studio for Mac でプロジェクトに Docker を追加する方法について説明します
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 06/17/2019
+ms.date: 11/09/2020
 ms.topic: how-to
-ms.openlocfilehash: 5f21d55568328a9aeb9b7982e5978500f7ef715b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2bfb78369ae5da389820a318196dd7e9e13e897
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939047"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493076"
 ---
 # <a name="get-started-with-docker-in-visual-studio-for-mac"></a>Visual Studio for Mac での Docker の概要
 
@@ -31,7 +31,7 @@ Docker のインストールについては、「[Install Docker Desktop for Mac
 1. **[.NET Core] > [アプリ]** で、 **[Web アプリケーション]** テンプレートを選択します。![新しい ASP.NET アプリケーションを作成する](media/docker-quickstart-1.png)
 1. ターゲット フレームワークを選択します。 この例では、.NET Core 2.2 を使います。![ターゲット フレームワークを設定する](media/docker-quickstart-2.png)
 1. 名前 (この例では _DockerDemo_) など、プロジェクトの詳細を入力します。 作成されるプロジェクトには、ASP.NET Core の Web サイトをビルドして実行するために必要なすべての基本が含まれています。
-1. Solution Pad で DockerDemo プロジェクトを右クリックし、 **[追加] > [Add Docker Support]\(Docker サポートの追加\)** を選択します。![Docker サポートの追加](media/docker-quickstart-3.png)
+1. [ソリューション] ウィンドウで DockerDemo プロジェクトを右クリックし、 **[追加]、[Add Docker Support]\(Docker サポートの追加\)** の順に選択します。![Docker サポートの追加](media/docker-quickstart-3.png)
 
 Visual Studio for Mac で、**docker-compose** という名前の新しいプロジェクトがソリューションに自動的に追加され、既存のプロジェクトに **Dockerfile** が追加されます。
 

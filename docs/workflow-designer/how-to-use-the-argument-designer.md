@@ -1,5 +1,7 @@
 ---
 title: 'ワークフローデザイナー-方法: 引数デザイナーを使用する'
+description: 引数デザイナーについて、および引数デザイナーを使用して、アクティビティとの間でデータをやり取りできるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3c0fe3de3a9ab74ed09c1be45e0d39a71a5b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817451"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437867"
 ---
 # <a name="how-to-use-the-argument-designer"></a>引数デザイナーを使用する方法
 
@@ -28,7 +30,7 @@ ms.locfileid: "85817451"
 
 2. デザインキャンバスの左下隅にある [ **引数** ] ボタンをクリックして、引数デザイナーを開きます。 引数デザイナーが表示されます。
 
-3. [ **引数の作成**] というラベルの付いた空の行をクリックします。 これにより、新しい引数を含む新しい行が追加されます。**名前**には argumentx を使用します。ここで、x は、一意の引数名を作成するために自動的にインクリメントされ、**方向**が、**引数の型**が**String** **で**ある整数です。 **既定値**の値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
+3. [ **引数の作成** ] というラベルの付いた空の行をクリックします。 これにより、新しい引数を含む新しい行が追加されます。 **名前** には argumentx を使用します。ここで、x は、一意の引数名を作成するために自動的にインクリメントされ、 **方向** が、 **引数の型** が **String** **で** ある整数です。 **既定値** の値は追加されません。 これらの値は、ワークフローのデザイン プロセス中にいつでも変更できます。
 
     > [!NOTE]
     > 引数を削除するには、引数をクリックして選択し、 **del** キーを押します。

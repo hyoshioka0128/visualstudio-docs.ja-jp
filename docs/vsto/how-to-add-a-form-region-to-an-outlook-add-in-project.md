@@ -1,5 +1,7 @@
 ---
 title: '方法: フォーム領域を Outlook アドインプロジェクトに追加する'
+description: 新しい Outlook フォーム領域ウィザードを使用して、標準またはカスタムの Microsoft Office Outlook フォームを拡張するフォーム領域を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a03ba05226720913d48dc1828dcb849bee72d17e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f137dbe88b8b3ecf51f17e0f19f61368359087fa
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538399"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845064"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>方法: フォーム領域を Outlook アドインプロジェクトに追加する
   **新しい Outlook フォーム領域** ウィザードを使用して、標準またはカスタムの Microsoft Office Outlook フォームを拡張するフォーム領域を作成します。 新しいフォーム領域を作成して Visual Studio でユーザー インターフェイスをデザインするか、または Outlook でデザインしたフォーム領域をインポートして Visual Basic または C# コードを追加することができます。
@@ -35,7 +37,7 @@ ms.locfileid: "85538399"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で Outlook VSTO アドイン プロジェクトを開くか、作成します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-2. **ソリューション エクスプローラー**で Outlook VSTO アドイン プロジェクト ノードを選択します。
+2. **ソリューション エクスプローラー** で Outlook VSTO アドイン プロジェクト ノードを選択します。
 
 3. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -43,7 +45,7 @@ ms.locfileid: "85538399"
 
 5. **[名前]** ボックスにフォーム領域の名前を入力してから、 **[追加]** をクリックします。
 
-     **Newoutlook フォーム領域**ウィザードが起動します。
+     **Newoutlook フォーム領域** ウィザードが起動します。
 
 6. **[フォーム領域を作成する方法を選択します]** ページで、マネージド コントロールをビジュアル デザイナーまでドラッグしてフォーム領域をデザインするか、Outlook でデザインしたフォーム領域からインポートするかを選択します。
 

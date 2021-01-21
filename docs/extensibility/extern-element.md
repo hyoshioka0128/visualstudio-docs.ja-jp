@@ -1,5 +1,7 @@
 ---
 title: Extern 要素 |Microsoft Docs
+description: Extern 要素は、コンパイル時に、vsct ファイルとマージする外部ヘッダー (.h) ファイルを参照します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cf6f9db77abaa7034af8d074b9833a4c1560f07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711484"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994525"
 ---
 # <a name="extern-element"></a>Extern 要素
-Extern 要素は、コンパイル時に、 *vsct*ファイルとマージする外部ヘッダー (*.h*) ファイルを参照します。 マージするファイルは、VSCT コンパイラに指定されたインクルードパスに存在するか、 [include 要素](../extensibility/include-element.md)によって参照されている必要があります。 ファイルは、他の *vsct* ファイルまたは C++ ヘッダーファイルにすることができます。
+Extern 要素は、コンパイル時に、 *vsct* ファイルとマージする外部ヘッダー (*.h*) ファイルを参照します。 マージするファイルは、VSCT コンパイラに指定されたインクルードパスに存在するか、 [include 要素](../extensibility/include-element.md)によって参照されている必要があります。 ファイルは、他の *vsct* ファイルまたは C++ ヘッダーファイルにすることができます。
 
  ヘッダーファイル内の定義は、"#define [シンボル] [値]" の形式にする必要があります。以前に定義されている場合は、値が別のシンボルである可能性があります。 定義は、コマンド項目の条件付きステートメントで使用できます。 実際に使用されていないシンボルはすべて破棄されます。
 
@@ -40,7 +42,7 @@ Extern 要素は、コンパイル時に、 *vsct*ファイルとマージする
 
 |属性|説明|
 |---------------|-----------------|
-|href|必須です。 ヘッダーファイルのパス:<br /><br /> href = "stdidcmd"|
+|href|必須。 ヘッダーファイルのパス:<br /><br /> href = "stdidcmd"|
 |条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 |language|省略可能。 コマンドテーブル内のすべての要素の既定の言語 [\<Strings>](../extensibility/strings-element.md) :<br /><br /> language = "en-us"|
 
@@ -48,7 +50,7 @@ Extern 要素は、コンパイル時に、 *vsct*ファイルとマージする
 
 |要素|説明|
 |-------------|-----------------|
-|なし。|なし。|
+|[なし] :|[なし] :|
 
 ### <a name="parent-elements"></a>親要素
 

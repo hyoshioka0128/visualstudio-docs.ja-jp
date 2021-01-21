@@ -1,5 +1,7 @@
 ---
 title: プロジェクトプロパティのユーザーインターフェイス |Microsoft Docs
+description: プロジェクトのサブタイプで、基本プロジェクトによって提供される [プロジェクトのプロパティページ] ダイアログボックスを変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 2c9bba8b163b7fd21cfa829bb26e06cf37b887bd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011854"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877391"
 ---
 # <a name="project-property-user-interface"></a>プロジェクト プロパティのユーザー インターフェイス
 
@@ -27,7 +29,7 @@ ms.locfileid: "90011854"
 
 プロジェクトのサブタイプは、オートメーションエクステンダーとプロジェクト構成の参照オブジェクトを実装します。 これらのエクステンダー <xref:EnvDTE.IFilterProperties> は、特定のプロパティを非表示または読み取り専用にするためのインターフェイスを実装しています。 基本プロジェクトの [ **プロパティページ** ] ダイアログボックスでは、基本プロジェクトによって実装され、オートメーションエクステンダーによって実行されるフィルター処理が優先されます。
 
-**プロジェクトプロパティ**ダイアログボックスを拡張するプロセスを次に示します。
+**プロジェクトプロパティ** ダイアログボックスを拡張するプロセスを次に示します。
 
 - 基本プロジェクトは、インターフェイスを実装することで、プロジェクトのサブタイプからエクステンダーを取得し <xref:EnvDTE80.IInternalExtenderProvider> ます。 基本プロジェクトの [参照]、[プロジェクトオートメーション]、[プロジェクト構成] の各オブジェクトは、このインターフェイスを実装します。
 

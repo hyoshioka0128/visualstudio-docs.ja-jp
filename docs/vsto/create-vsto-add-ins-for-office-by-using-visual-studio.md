@@ -1,7 +1,8 @@
 ---
 title: Visual Studio を使用して Office 用 VSTO アドインを作成する
+description: Visual Studio の Microsoft Office 開発者ツールを使用して、Office を拡張する .NET Framework アプリケーションを作成する方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50337b728647b5e15a877216713cd6fc9823742a
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986157"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847976"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Visual Studio を使用して Office 用 VSTO アドインを作成する
-  Visual Studio の Microsoft Office Developer Tools を使用して、Office を拡張する .NET Framework アプリケーションを作成できます。 このようなアプリケーションは、 *Office ソリューション*とも呼ばれます。
+  Visual Studio の Microsoft Office Developer Tools を使用して、Office を拡張する .NET Framework アプリケーションを作成できます。 このようなアプリケーションは、 *Office ソリューション* とも呼ばれます。
 
  Office Developer Tools で提供される機能は、さまざまなビジネス要件に合った Office ソリューションを作成するのに役立ちます。 このツールには、Visual Basic または Visual C# を使用した Office ソリューションの作成に役立つプロジェクト テンプレートや、Office ソリューションで使用するカスタム ユーザー インターフェイスの作成に役立つビジュアルなデザイナーが含まれています。
 
@@ -116,6 +117,6 @@ ms.locfileid: "72986157"
 
 - [MSDN ライブラリの Microsoft Office 開発](/previous-versions/office/office-12/bb726434(v=office.12)) に関するセクションMSDN ライブラリの領域では、いくつかのバージョンの Office のソリューション開発に関する記事やリファレンスドキュメントを参照できます (Visual Studio を使用した Office 開発に固有ではありません)。
 
-- [Visual Studio でのアプリケーション開発](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Visual Studio を使用して、web アプリケーション、XML web サービス、および従来のクライアントアプリケーションを設計、開発、デバッグ、および配置する方法について説明するトピックへのリンクを示します。
+- [Visual Studio でのアプリケーション開発](/previous-versions/h8w79z10(v=vs.140)) Visual Studio を使用して、web アプリケーション、XML web サービス、および従来のクライアントアプリケーションを設計、開発、デバッグ、および配置する方法について説明するトピックへのリンクを示します。
 
 - [Visual Studio でのプログラミングの .NET Framework](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Visual Basic および Visual C# の .NET Framework を使用したアプリケーション開発について説明します。

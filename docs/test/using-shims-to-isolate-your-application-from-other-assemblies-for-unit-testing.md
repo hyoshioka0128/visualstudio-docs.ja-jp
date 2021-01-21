@@ -1,5 +1,7 @@
 ---
-title: shim を使用して単体テストのためにアプリケーションを分離する
+title: shim を使用してアプリを分離する (単体テスト)
+description: shim 型を使用して、特定のメソッドの呼び出しを、テストの一部として作成したコードに迂回させる方法について説明します。 shim を使用すると、すべての呼び出しで一定の結果を返すことができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -8,18 +10,18 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0f7d2f993891a4adfa9217357fbdb1a95e10b637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85289301"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598212"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim を使用して単体テストのためにアプリを分離する
 
-**Shim 型**は、テスト中のコンポーネントを環境から分離するために Microsoft Fakes Framework が使用する 2 つのテクノロジのうちの 1 つです。 Shim は、特定のメソッドの呼び出しを、テストの一部として作成したコードに迂回させます。 多くのメソッドは、外部の状況に応じて異なる結果を返しますが、shim はテストの制御下にあり、すべての呼び出しで一定の結果を返すことができます。 これにより、テストを簡単に記述できるようになります。
+**Shim 型** は、テスト中のコンポーネントを環境から分離するために Microsoft Fakes Framework が使用する 2 つのテクノロジのうちの 1 つです。 Shim は、特定のメソッドの呼び出しを、テストの一部として作成したコードに迂回させます。 多くのメソッドは、外部の状況に応じて異なる結果を返しますが、shim はテストの制御下にあり、すべての呼び出しで一定の結果を返すことができます。 これにより、テストを簡単に記述できるようになります。
 
-*shim* を使用して、ソリューションの一部ではないアセンブリからコードを分離します。 ソリューションの各コンポーネントを分離するには、*スタブ*を使用します。
+*shim* を使用して、ソリューションの一部ではないアセンブリからコードを分離します。 ソリューションの各コンポーネントを分離するには、*スタブ* を使用します。
 
 概要と "クイック スタート" ガイドについては、「[Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md)」を参照してください。
 
@@ -27,9 +29,9 @@ ms.locfileid: "85289301"
 
 - Visual Studio Enterprise
 - .NET Framework プロジェクト
-
-> [!NOTE]
-> .NET Standard プロジェクトはサポートされていません。
+::: moniker range=">=vs-2019"
+- Visual Studio 2019 Update 6 でプレビューされた .NET Core と SDK スタイルのプロジェクトのサポートは、Update 8 で既定で有効になっています。 詳細については、「[.NET Core および SDK スタイルのプロジェクトのための Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)」を参照してください。
+::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>例: Y2K バグ
 
@@ -66,9 +68,12 @@ using (ShimsContext.Create()) {
 
 まず、Fakes アセンブリを追加します。
 
-1. **ソリューション エクスプローラー**で、単体テスト プロジェクトの **[参照設定]** ノードを展開します。
-
-   - Visual Basic で作業している場合、**[参照設定]** ノードを表示するには、**ソリューション エクスプローラー** ツール バーの **[すべてのファイルを表示]** を選択する必要があります。
+1. **ソリューション エクスプローラー** で。 
+    - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
+    ::: moniker range=">=vs-2019"
+    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
+    ::: moniker-end
+    - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
 
 2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、**System.dll** を選択します。
 
@@ -519,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>制限事項
 
-shim は、.NET 基本クラス ライブラリ **mscorlib** および **System** のすべての型で使用できるわけではありません。
+.NET 基底クラス ライブラリ **mscorlib**、.NET Framework の **System**、および .NET Core の **System.Runtime** のすべての型で shim を使用できるわけではありません。
 
 ## <a name="see-also"></a>参照
 

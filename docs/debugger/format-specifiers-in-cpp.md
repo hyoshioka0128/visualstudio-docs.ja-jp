@@ -1,5 +1,7 @@
 ---
 title: デバッガーでの書式指定子 (C++) | Microsoft Docs
+description: 書式指定子を使用すると、[ウォッチ] ウィンドウ、[自動変数] ウィンドウ、または [ローカル] ウィンドウに表示される値の書式を変更できます。 この記事では、使用方法の詳細について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74b6b6b6a8f7a9f5f234a9b46c799e6e0580536f
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896621"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761330"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C++)
 書式指定子を使用して、 **[ウォッチ]** 、 **[自動変数]** 、 **[ローカル]** の各ウィンドウに表示される値の書式を変更することができます。
@@ -50,9 +52,9 @@ int main() {
 }
 ```
 
-デバッグ中に `my_var1` 変数を**ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を整数ではなく文字として表示するには、最初に右クリックして **[16 進数で表示]** を選択解除します。 次に、文字書式指定子 **, c** を、 **[Name]** 列の変数名の後に追加します。 **[Value]** 列に **101 'e'** が表示されるようになります。
+デバッグ中に `my_var1` 変数を **ウォッチ** ウィンドウに追加します ( **[デバッグ]**  >  **[Windows]**  >  **[ウォッチ]**  >  **[ウォッチ 1]** )。 次に、変数を右クリックし、 **[16 進数で表示]** を選択します。 これで、**ウォッチ** ウィンドウに値 0x0065 が示されます。 この値を整数ではなく文字として表示するには、最初に右クリックして **[16 進数で表示]** を選択解除します。 次に、文字書式指定子 **, c** を、 **[Name]** 列の変数名の後に追加します。 **[Value]** 列に **101 'e'** が表示されるようになります。
 
-![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
+![Visual Studio のウォッチ ウィンドウのスクリーンショット。値が 101 'e' で型が int の my_var1.c を示す 1 行が選択されています。](../debugger/media/watchformatcplus1.png)
 
 ::: moniker range=">= vs-2019" 
 **ウォッチ** ウィンドウの値にコンマ (,) を追加することで、使用できる書式指定子の一覧を表示して選択できます。 
@@ -78,7 +80,7 @@ int main() {
 |bb|符号なし 2 進整数 (先頭 0b なし)|25|00000000000000000000000000011001|
 |e|指数表記|25000000|2.500000e+07|
 |G|指数表記と浮動小数点のうちの短い方|25000000|2.5e+07|
-|c|単一文字|0x0065, c|101 'e'|
+|c|単一文字|0x0065|101 'e'|
 |s|const char* 文字列 (引用符あり)|\<location> "hello world"|"hello world"|
 |**sb**|const char* 文字列 (引用符なし)|\<location> "hello world"|hello world|
 |s8|UTF-8 文字列|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|

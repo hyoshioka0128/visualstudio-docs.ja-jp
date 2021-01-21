@@ -1,5 +1,7 @@
 ---
 title: ClickOnce 配置のサンプルとチュートリアル |Microsoft Docs
+description: これらのサンプルアプリケーション、コード例、およびウォークスルーを使用して、Windows フォーム、WPF、およびコンソールアプリケーションのデプロイに使用される手法を理解します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 419fa9f917358ae19a073b5f864ee76d92c33e75
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641461"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383041"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 配置のサンプルとチュートリアル
 このセクションには、Windows フォーム、WPF、コンソール アプリケーションの配置に使用されるサンプル アプリケーション、コード例、そして、構文、構造、および技法について説明した、詳細なチュートリアルが含まれています。

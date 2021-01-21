@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 331cb056132a2d90a932ff250c9bdbb7e22e38af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348263"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211090"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリの HTML と CSS をデバッグする
 
@@ -237,7 +237,7 @@ DOM Explorer を使用すると次のことができます。
 
 - **[要素の選択]** ボタン (Ctrl + B キー) を使用する。
 
-- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017) の 1 つである `select` コマンドを使用する。
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) の 1 つである `select` コマンドを使用する。
 
   DOM Explorer のウィンドウを使用して要素を選択するときに、要素にマウス ポインターを置くと、対応する要素が実行しているアプリで強調表示されます。 これを行うには、DOM Explorer の要素をクリックして選択する必要があります。または、方向キーを使用して、要素を強調表示して選択できます。 **[要素の選択]** ボタンを使用して DOM Explorer の要素を選択することもできます。 次の図は、 **[要素の選択]** ボタンを示しています。
 
@@ -259,7 +259,7 @@ DOM Explorer を使用すると次のことができます。
 - [Visual Studio でのアプリのデバッグ](debugging-windows-store-and-windows-universal-apps.md)
 - [アプリの更新 (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [WebView コントロールのデバッグ](../debugger/debug-a-webview-control.md)
-- [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017)
+- [ショートカット キー](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [JavaScript コンソール コマンド](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [HTML、CSS、および JavaScript サンプル コードのデバッグ](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [製品のサポートとユーザー補助](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)
+- [製品のサポートとユーザー補助](/previous-versions/tzbxw1af(v=vs.120))

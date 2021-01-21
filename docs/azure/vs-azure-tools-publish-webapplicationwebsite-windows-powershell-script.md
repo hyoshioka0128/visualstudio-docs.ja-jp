@@ -1,20 +1,19 @@
 ---
 title: PowerShell スクリプトを使用した web アプリの発行
 description: Web プロジェクトを Azure Web サイトに発行する方法について説明します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e91fed105ce61dfc7e1cd2779ebcca0b33a06c97
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036497"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902169"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -37,7 +36,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | エイリアス |なし |
 | 必須 |true |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -49,7 +48,7 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -61,7 +60,7 @@ Web サイトに発行する Web デプロイ パッケージへのパス。 Vis
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -73,7 +72,7 @@ Azure の SQL データベースのユーザー名およびパスワード。
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -85,12 +84,12 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 この中には、Web サイトの名前やユーザー名など、プロジェクトの作成時に指定した情報が含まれます。 また、プロビジョニングを行うデータベースがある場合はそれも含まれます。 次のコードは JSON 構成ファイルの例を示しています。

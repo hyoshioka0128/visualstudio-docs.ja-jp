@@ -1,8 +1,11 @@
 ---
 title: Visual Basic 開発者向けの概要
+description: Visual Basic 開発者として、Visual Studio を使用してコードの編集、デバッグ、およびビルドを行い、アプリを発行する方法について説明します。
 ms.date: 11/15/2018
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 990bff2832f290987ed29fd48b69f4d7a1a05bba
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312003"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189889"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
@@ -36,13 +39,13 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビ
 
 これはプロジェクトを開いている Visual Studio の画像です。使用頻度が高いツール ウィンドウがいくつか開いています。
 
-- "[ソリューション エクスプローラー](../../ide/solutions-and-projects-in-visual-studio.md)" (右上) では、ご自分のコード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](tutorial-projects-solutions.md)にまとめ、コードを整理できます。
+- [ソリューション エクスプローラー](../../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー** では、ファイルを [ソリューションやプロジェクト](tutorial-projects-solutions.md)にまとめ、コードを整理できます。
 
-- 作業時間の大半を費やすことになる "[エディター ウィンドウ](../../ide/writing-code-in-the-code-and-text-editor.md)" (中央) には、ファイルの内容が表示されます。 ここでは、コードを編集したり、ボタンやテキスト ボックスを持つウィンドウなどのユーザー インターフェイスをデザインすることができます。
+- 大部分の時間を費やすことになる[エディター ウィンドウ](../../ide/writing-code-in-the-code-and-text-editor.md) (中央) にはファイルの内容が表示されます。 ここでは、コードを編集したり、ボタンやテキスト ボックスを持つウィンドウなどのユーザー インターフェイスをデザインすることができます。
 
-- [[出力]](../../ide/reference/output-window.md) ウィンドウ (下中央) には、デバッグ メッセージ、エラー メッセージ、コンパイラの警告、公開状態メッセージなど、Visual Studio の通知が出力されます。 メッセージ ソースごとに専用のタブがあります。
+- [[出力]](../../ide/reference/output-window.md) ウィンドウ (下中央) には、デバッグ メッセージ、エラー メッセージ、コンパイラの警告、公開状態メッセージなど、Visual Studio の通知が出力されます。 メッセージ ソースごとに独自のタブがあります。
 
-- [チーム エクスプローラー](/azure/devops/user-guide/work-team-explorer?view=vsts) (右下) では、[Git](https://git-scm.com/) や [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) などのバージョン管理テクノロジを使用して、作業項目を追跡し、コードを他のユーザーと共有できます。
+- [チーム エクスプローラー](/azure/devops/user-guide/work-team-explorer?view=vsts&preserve-view=true) (右下) では、[Git](https://git-scm.com/) や [Team Foundation バージョン管理 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) などのバージョン管理テクノロジを使用して、作業項目を追跡し、コードを他のユーザーと共有できます。
 
 ## <a name="editions"></a>エディション
 
@@ -217,7 +220,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 ### <a name="change-the-color-theme"></a>[配色テーマ] を変更する
 
-**濃色**テーマに変更するには:
+**濃色** テーマに変更するには:
 
 ::: moniker range="vs-2017"
 
@@ -241,7 +244,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
    ![Visual Studio で配色テーマを濃色に変更する](media/change-color-theme.png)
 
-   IDE 全体の配色テーマが**濃色**に変更されます。
+   IDE 全体の配色テーマが **濃色** に変更されます。
 
    ::: moniker range="vs-2017"
 
@@ -261,7 +264,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 1. メニュー バーで、 **[ツール]**  >  **[設定のインポートとエクスポート]** の順にクリックします。
 
-2. **設定のインポートとエクスポート ウィザード**の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
+2. **設定のインポートとエクスポート ウィザード** の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
 
 3. **[現在の設定の保存]** ページで、現在の設定を保存するオプションを選択するか選択せずに、 **[次へ]** を選択します (設定をカスタマイズしていない場合は、 **[No, just reset settings, overwriting my current settings]\(いいえ、設定をリセットして現在の設定を上書きするだけです\)** を選択します)。
 
@@ -296,13 +299,13 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
    ![Visual Studio IDE](media/overview-ide-console-app.png)
 
-   アプリの Visual Basic コードは、領域の大部分を占めるエディター ウィンドウに表示されます。 キーワードや型など、コードの異なる部分を示すようにテキストが自動的に色分けされているのに注目してください。 また、コードの縦の小さな点線は互いに一致する括弧を示し、行番号は後でコードの場所を探すのに役立ちます。 小さな四角で囲まれたマイナス記号を選択するとコード ブロックが折りたたまれ、折りたたまれている場合は展開できます。 このコードのアウトライン機能を使用すると、必要のないコードを非表示にして画面を整理できます。 プロジェクト ファイルは右側の**ソリューション エクスプローラー**と呼ばれるウィンドウに一覧表示されます。
+   アプリの Visual Basic コードは、領域の大部分を占めるエディター ウィンドウに表示されます。 キーワードや型など、コードの異なる部分を示すようにテキストが自動的に色分けされているのに注目してください。 また、コードの縦の小さな点線は互いに一致する括弧を示し、行番号は後でコードの場所を探すのに役立ちます。 小さな四角で囲まれたマイナス記号を選択するとコード ブロックが折りたたまれ、折りたたまれている場合は展開できます。 このコードのアウトライン機能を使用すると、必要のないコードを非表示にして画面を整理できます。 プロジェクト ファイルは右側の **ソリューション エクスプローラー** と呼ばれるウィンドウに一覧表示されます。
 
    ![赤色のボックスを持つ Visual Studio IDE](media/overview-ide-console-app-red-boxes.png)
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー**を押します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー** を押します。
 
    ![[デバッグ]、[デバッグなしで開始] メニューを選択](../media/overview-start-without-debugging.png)
 
@@ -363,19 +366,19 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
    ![Visual Studio IDE](media/overview-ide-console-app.png)
 
-   アプリの Visual Basic コードは、領域の大部分を占めるエディター ウィンドウに表示されます。 キーワードや型など、コードの異なる部分を示すようにテキストが自動的に色分けされているのに注目してください。 また、コードの縦の小さな点線は互いに一致する括弧を示し、行番号は後でコードの場所を探すのに役立ちます。 小さな四角で囲まれたマイナス記号を選択するとコード ブロックが折りたたまれ、折りたたまれている場合は展開できます。 このコードのアウトライン機能を使用すると、必要のないコードを非表示にして画面を整理できます。 プロジェクト ファイルは右側の**ソリューション エクスプローラー**と呼ばれるウィンドウに一覧表示されます。
+   アプリの Visual Basic コードは、領域の大部分を占めるエディター ウィンドウに表示されます。 キーワードや型など、コードの異なる部分を示すようにテキストが自動的に色分けされているのに注目してください。 また、コードの縦の小さな点線は互いに一致する括弧を示し、行番号は後でコードの場所を探すのに役立ちます。 小さな四角で囲まれたマイナス記号を選択するとコード ブロックが折りたたまれ、折りたたまれている場合は展開できます。 このコードのアウトライン機能を使用すると、必要のないコードを非表示にして画面を整理できます。 プロジェクト ファイルは右側の **ソリューション エクスプローラー** と呼ばれるウィンドウに一覧表示されます。
 
    ![赤色のボックスを持つ Visual Studio IDE](media/overview-ide-console-app-red-boxes.png)
 
    他にもメニューやツール ウィンドウが用意されていますが、今は次に進みましょう。
 
-1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー**を押します。
+1. アプリを起動します。 そのためには、メニュー バーの **[デバッグ]** メニューから **[デバッグなしで開始]** を選択します。 あるいは、**Ctrl**+**F5 キー** を押します。
 
    ![[デバッグ]、[デバッグなしで開始] メニューを選択](media/vs-2019/start-without-debugging.png)
 
    Visual Studio でアプリがビルドされ、コンソール ウィンドウが開き、メッセージ **Hello World!** が表示されます。 これで実行中のアプリができました。
 
-   ![コンソール ウィンドウ](../media/vs-2019/overview-console-window.png)
+   ![Hello World メッセージを表示しているコンソール ウィンドウのスクリーンショット。](../media/vs-2019/overview-console-window.png)
 
 1. コンソール ウィンドウを閉じるには、キーボードで任意のキーを押します。
 
@@ -400,7 +403,7 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 1. コンソール ウィンドウに名前を入力し、**Enter** キーを押します。
 
-   ![コンソール ウィンドウ](../media/vs-2019/overview-console-input.png)
+   ![What is your name の質問とアプリの応答が表示されているコンソール ウィンドウのスクリーンショット。](../media/vs-2019/overview-console-input.png)
 
 1. 任意のキーを押してコンソール ウィンドウを閉じ、プログラムの実行を停止します。
 

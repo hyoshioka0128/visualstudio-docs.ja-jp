@@ -1,5 +1,6 @@
 ---
 title: プロジェクトの種類に対してマネージパッケージフレームワークを使用する (C#)
+description: マネージパッケージフレームワークについて説明します。これは、独自のプロジェクトの種類を実装するために使用または継承できる .NET クラスを提供します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca3f95780d548b4482c502f5b3eaa44005fd2e2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4b425962ed0f664b8255b6489ac8f0d38be7c13c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038648"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487544"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>マネージド パッケージ フレームワークを使用したプロジェクト タイプの実装 (C#)
 Managed Package Framework (MPF) には、独自のプロジェクトの種類を実装するために使用または継承できる C# クラスが用意されています。 MPF は、Visual Studio が提供するプロジェクトの種類を想定している多くのインターフェイスを実装しているため、プロジェクトの種類の詳しい実装に専念することができます。
@@ -28,7 +29,7 @@ Managed Package Framework (MPF) には、独自のプロジェクトの種類を
 
  このプロジェクトを VSPackage ソリューションに追加するには、次の手順を実行します。
 
-1. MPFProj ファイルを *Mpfprojectdir*にダウンロードします。
+1. MPFProj ファイルを *Mpfprojectdir* にダウンロードします。
 
 2. *Mpfprojectdir*\Dev10\Src\CSharp\ProjectBase.file で、次のブロックを変更します。
 
@@ -84,7 +85,7 @@ Managed Package Framework (MPF) には、独自のプロジェクトの種類を
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>ドキュメント処理クラス
+## <a name="document-handling-classes"></a>Document-Handling クラス
  次の表は、ドキュメントの処理をサポートする MPF のクラスを示しています。 詳細については、「 [プロジェクト項目を開いて保存](../../extensibility/internals/opening-and-saving-project-items.md)する」を参照してください。
 
 |クラス名|
@@ -103,7 +104,7 @@ Managed Package Framework (MPF) には、独自のプロジェクトの種類を
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>オートメーション-サポートクラス
+## <a name="automation-support-classes"></a>Automation-Support クラス
  次の表に、プロジェクトの種類のユーザーがアドインを記述できるように、自動化をサポートする MPF のクラスを示します。
 
 |クラス名|

@@ -1,5 +1,7 @@
 ---
 title: Vspackage | のコマンドルーティングMicrosoft Docs
+description: Vspackage のコマンドルーティングと、Visual Studio で実行されるコンテキストに基づいてコマンドがどのようにルーティングされるかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957ddcca46365a882609c15c96d666c2848ace6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709552"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305218"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage でのコマンドルーティング
 コマンドは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 実行されたコンテキストに基づいてルーティングされます。 初期コンテキストからグローバルコンテキストにルーティングされます。

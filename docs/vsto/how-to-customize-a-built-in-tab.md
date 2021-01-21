@@ -1,5 +1,7 @@
 ---
 title: '方法: 組み込みタブをカスタマイズする'
+description: 組み込みタブにグループとコントロールを追加する方法について説明します。組み込みタブは、既に Microsoft Office アプリケーションのリボンにあるタブです。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f73ec7a8555a5e5d569d4316ca619747550bf11
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac002b4c9ebacaf9cb522b583d6c4c9580b7bf2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547187"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846637"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>方法: 組み込みタブをカスタマイズする
   組み込みタブにグループとコントロールを追加できます。組み込みタブは、既に Microsoft Office アプリケーションのリボンにあるタブです。 たとえば、[ **データ** ] タブは Excel の組み込みタブです。 カスタム グループを作成すると、そのグループはタブの最後に表示されますが、タブ上のどこにでも移動できます。
@@ -30,16 +32,16 @@ ms.locfileid: "85547187"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>組み込みタブにグループを追加するには
 
-1. **ソリューションエクスプローラー**でリボンコードファイルを右クリックし、[デザイナーの**表示**] をクリックします。
+1. **ソリューションエクスプローラー** でリボンコードファイルを右クリックし、[デザイナーの **表示**] をクリックします。
 
     > [!NOTE]
-    > リボンコードファイルが **ソリューションエクスプローラー**に表示されない場合は、プロジェクトに **リボン項目** を追加する必要があります。 「 [方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)」を参照してください。
+    > リボンコードファイルが **ソリューションエクスプローラー** に表示されない場合は、プロジェクトに **リボン項目** を追加する必要があります。 「 [方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)」を参照してください。
 
 2. リボンデザイナーの任意のタブを右クリックし、[ **プロパティ**] をクリックします。
 
 3. [ **プロパティ** ] ウィンドウで、[ **ControlId** ] プロパティを展開し、[制御 **Lidtype** ] プロパティを「 **Office**」に設定します。
 
-4. **Officeid**プロパティを、カスタマイズする組み込みタブの*コントロール ID*に設定します。
+4. **Officeid** プロパティを、カスタマイズする組み込みタブの *コントロール ID* に設定します。
 
      コントロール ID は、Microsoft Office アプリケーションに組み込まれているタブ、グループ、コントロールを一意に識別する名前です。
 
@@ -56,19 +58,19 @@ ms.locfileid: "85547187"
 
 2. [ **プロパティ** ] ウィンドウで、[ **位置** ] プロパティを展開します。
 
-3. **Positiontype**プロパティを適切な値に設定します。
+3. **Positiontype** プロパティを適切な値に設定します。
 
     - **Beforeofficeid** は、指定された組み込みグループの前にグループを配置します。
 
     - **Afterofficeid** は、指定された組み込みグループの後にグループを配置します。
 
-4. **Officeid**プロパティを組み込みグループのコントロール ID に設定します。
+4. **Officeid** プロパティを組み込みグループのコントロール ID に設定します。
 
      コントロール Id の一覧については、「 [office 2010 のヘルプファイル: office fluent ユーザーインターフェイスコントロールの識別子](https://www.microsoft.com/download/details.aspx?id=6627)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [リボンの概要](../vsto/ribbon-overview.md)
-- [リボンデザイナー](../vsto/ribbon-designer.md)
+- [リボン デザイナー](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [チュートリアル: リボン XML を使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

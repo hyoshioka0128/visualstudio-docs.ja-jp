@@ -1,5 +1,7 @@
 ---
 title: ドキュメントコンテキスト |Microsoft Docs
+description: Visual Studio のデバッグでのドキュメントコンテキストについて説明します。これは、ソースファイル内の位置またはコードコンテキストのソースドキュメント内の位置を表します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48fe651e69e5e2c97756788cc30e54454c26e51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d19830346ea09731dde608e019109f61011cd60
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738922"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915532"
 ---
 # <a name="document-context"></a>ドキュメントのコンテキスト
-デバッグでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、 *ドキュメントコンテキスト*は次のようになります。
+デバッグでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、 *ドキュメントコンテキスト* は次のようになります。
 
 - ソースファイル内の位置を表します。 ソースファイルが存在しない可能性がある言語の場合、ドキュメントコンテキストは、通常、ランタイム環境によって生成されるドキュメント内の位置を識別します。 たとえば、スクリプトエンジンは、スクリプトからドキュメントを生成する場合があります。 詳細については、「 [ドキュメントの位置](../../extensibility/debugger/document-position.md)」を参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: Hello World 拡張機能のチュートリアル | Microsoft Docs
+description: 新しいコマンドを Visual Studio の拡張機能として追加する方法について説明します。これにはプロジェクトの作成、コマンドの追加、ソース コードの変更が伴います。
+ms.custom: SEO-VS-2020
 ms.date: 03/14/2019
 ms.topic: tutorial
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ba4d6cbca8d55cdaceb04a1a773fde376a8670a
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905928"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995721"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>チュートリアル - 初めての拡張機能の作成:Hello World
 
@@ -64,7 +66,7 @@ ms.locfileid: "85905928"
 
 ![新しいプロジェクト](media/hello-world-new-project-2019.png)
 
-これで、HelloWorld プロジェクトが**ソリューション エクスプローラー**に表示されます。
+これで、HelloWorld プロジェクトが **ソリューション エクスプローラー** に表示されます。
 
 ::: moniker-end
 
@@ -80,7 +82,7 @@ ms.locfileid: "85905928"
 
 ![カスタム コマンド](media/hello-world-vsix-command.png)
 
-新しいコマンド ファイルが**ソリューション エクスプローラー**に表示されます。 **[リソース]** ノードの下に、コマンドに関連する他のファイルが表示されます。 たとえば、画像を変更する場合は、PNG ファイルはここに表示されます。
+新しいコマンド ファイルが **ソリューション エクスプローラー** に表示されます。 **[リソース]** ノードの下に、コマンドに関連する他のファイルが表示されます。 たとえば、画像を変更する場合は、PNG ファイルはここに表示されます。
 
 ## <a name="modify-the-source-code"></a>ソース コードを変更する
 
@@ -92,7 +94,7 @@ ms.locfileid: "85905928"
 
 ::: moniker range="vs-2017"
 
-手順 1. **ソリューション エクスプローラー**で、新しいコマンドの VSCT ファイルを見つけます。 この例では *CommandPackage.vsct* という名前です。
+手順 1. **ソリューション エクスプローラー** で、新しいコマンドの VSCT ファイルを見つけます。 この例では *CommandPackage.vsct* という名前です。
 
 ![command package vsct](media/hello-world-command-package-vsct.png)
 
@@ -100,7 +102,7 @@ ms.locfileid: "85905928"
 
 ::: moniker range=">=vs-2019"
 
-手順 1. **ソリューション エクスプローラー**で、拡張機能 VS パッケージの VSCT ファイルを見つけます。 この例では、*HelloWorldPackage.vsct* という名前です。
+手順 1. **ソリューション エクスプローラー** で、拡張機能 VS パッケージの VSCT ファイルを見つけます。 この例では、*HelloWorldPackage.vsct* という名前です。
 
 ::: moniker-end
 
@@ -118,7 +120,7 @@ ms.locfileid: "85905928"
   ...
 ```
 
-手順 3. **ソリューション エクスプローラー**に戻り、*Command.cs* ファイルを見つけます。 `Execute` メソッドで、文字列 `message` を `string.Format(..)` から `Hello World!` に変更します。
+手順 3. **ソリューション エクスプローラー** に戻り、*Command.cs* ファイルを見つけます。 `Execute` メソッドで、文字列 `message` を `string.Format(..)` から `Hello World!` に変更します。
 
 ```csharp
   ...
@@ -146,11 +148,11 @@ ms.locfileid: "85905928"
 
 これで、Visual Studio の実験的なインスタンスでソース コードを実行できるようになりました。
 
-手順 1. **F5** キーを押して、 **[デバッグの開始]** コマンドを実行します。 このコマンドによって、プロジェクトがビルドされ、デバッガーが開始され、**実験的なインスタンス**と呼ばれる Visual Studio の新しいインスタンスが起動されます。
+手順 1. **F5** キーを押して、 **[デバッグの開始]** コマンドを実行します。 このコマンドによって、プロジェクトがビルドされ、デバッガーが開始され、**実験的なインスタンス** と呼ばれる Visual Studio の新しいインスタンスが起動されます。
 
 ::: moniker range="vs-2017"
 
-Visual Studio のタイトル バーに**実験的なインスタンス**という単語が表示されます。
+Visual Studio のタイトル バーに **実験的なインスタンス** という単語が表示されます。
 
 ![[実験的なインスタンス] タイトル バー](media/hello-world-exp-instance.png)
 

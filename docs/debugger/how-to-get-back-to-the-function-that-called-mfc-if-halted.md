@@ -1,6 +1,7 @@
 ---
 title: 停止した場合に MFC を呼び出した関数に戻る | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio デバッガーで実行が停止している場合に MFC を呼び出した関数に戻る方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef96bab28b1a17d4f20728a393511720fd10c624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751688b72a7603e76733906775c594cd28e78c28
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349472"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148950"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>方法: 停止した場合に MFC を呼び出した関数に戻る
 
@@ -38,7 +39,7 @@ ms.locfileid: "85349472"
 
 **[デバッグ]** メニューの **[中断]** コマンドでプログラムを中断した場合に MFC 内で実行が停止されたとします。そのとき、問題が自分自身で作成したコードにあることが明らかな場合は、[呼び出し履歴] ウィンドウを使用することにより、呼び出し元の関数に戻ることができます。 詳細については、[[呼び出し履歴] ウィンドウの使用](../debugger/how-to-use-the-call-stack-window.md)に関するページをご覧ください。
 
-コードがメッセージ ポンプ内で中断する場合があります。 この場合、呼び出し履歴にユーザー コードは存在しません。 この問題を回避するには、 **[中断]** コマンドではなく、ブレークポイントを使用する必要があります。適宜、条件とヒット カウントを組み合わせて使用します。 詳細については、「 [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)」を参照してください。
+コードがメッセージ ポンプ内で中断する場合があります。 この場合、呼び出し履歴にユーザー コードは存在しません。 この問題を回避するには、 **[中断]** コマンドではなく、ブレークポイントを使用する必要があります。適宜、条件とヒット カウントを組み合わせて使用します。 詳細については、「 [Breakpoints and Tracepoints](/previous-versions/ktf38f66(v=vs.100))」を参照してください。
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>MFC の呼び出し元の関数を参照する
 

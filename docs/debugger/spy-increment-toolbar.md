@@ -1,5 +1,7 @@
 ---
 title: Spy++ ツールバー | Microsoft Docs
+description: メニュー バーの下に表示される Spy++ ツール バーのインターフェイス要素について説明します。 ツールバーを表示または非表示にするには、 [表示] メニューの [ツールバー] をクリックします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1dfe0917fece3c814678295c5abd6013b426b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9dc2564a69c291055d53e358c084e7dd9c4d0506
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729735"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148196"
 ---
 # <a name="spy-toolbar"></a>Spy++ ツール バー
 このツールバーは、Spy++ のメニュー バーの下に表示されます。 ツールバーを表示または非表示にするには、 **[表示]** メニューの **[ツールバー]** をクリックします。
@@ -33,7 +35,7 @@ ms.locfileid: "72729735"
 |![Spy&#43;&#43; の [ログの開始] ボタン](../debugger/media/icon_spy--_startlog.gif "Icon_Spy++_StartLog")|メッセージのログ記録を開始し、メッセージ ストリームを表示します。 このコントロールは、 **[メッセージ]** ウィンドウがアクティブ ウィンドウである場合にのみ使用できます。 詳細については、[メッセージ ログの表示を開始および終了する](../debugger/how-to-start-and-stop-the-message-log-display.md)」を参照してください。|
 |![Spy&#43;&#43; の [ログの停止] ボタン](../debugger/media/icon_spy--_stoplog.gif "Icon_Spy++_StopLog")|メッセージのログ記録を停止し、メッセージ ストリームを表示します。 このコントロールは、 **[メッセージ]** ウィンドウがアクティブ ウィンドウである場合にのみ使用できます。 詳細については、[メッセージ ログの表示を開始および終了する](../debugger/how-to-start-and-stop-the-message-log-display.md)」を参照してください。|
 |Spy&#43;&#43; の ![[ログ オプション]](../debugger/media/icon_spy--_logoptions.gif "Icon_Spy++_LogOptions") ボタン|[[メッセージ オプション]](../debugger/message-options-dialog-box.md) ダイアログ ボックスを表示します。 このダイアログ ボックスを使用して、表示するウィンドウとメッセージの種類を選択します。 このコントロールは、 **[メッセージ]** ウィンドウがアクティブ ウィンドウである場合にのみ使用できます。|
-|Spy&#43;&#43; の ![[ログのクリア]](../debugger/media/spy--_clearlog.gif "Spy++_ClearLog") ボタン|アクティブな**メッセージ** ウィンドウの内容がクリアされます。 このコントロールは、 **[メッセージ]** ウィンドウがアクティブ ウィンドウである場合にのみ使用できます。|
+|Spy&#43;&#43; の ![[ログのクリア]](../debugger/media/spy--_clearlog.gif "Spy++_ClearLog") ボタン|アクティブな **メッセージ** ウィンドウの内容がクリアされます。 このコントロールは、 **[メッセージ]** ウィンドウがアクティブ ウィンドウである場合にのみ使用できます。|
 |![Spy&#43;&#43; の [ウィンドウ検索] ボタン](../debugger/media/icon_spy--_findwindow.gif "Icon_Spy++_FindWindow")|[[ウィンドウ検索]](../debugger/find-window-dialog-box.md) ダイアログ ボックスを開きます。このダイアログ ボックスで、ウィンドウの検索条件を設定したり、プロパティやメッセージを表示したりできます。 詳細については、[ファインダー ツールを使用する](../debugger/how-to-use-the-finder-tool.md)」を参照してください。|
 |![Spy&#43;&#43; の [最初のウィンドウを検索] ボタン](../debugger/media/icon_spy--_window.gif "Icon_Spy++_Window")|現在のビューで、一致するウィンドウ、プロセス、スレッド、またはメッセージを検索します。|
 |![Spy&#43;&#43; の [次のウィンドウを検索] ボタン](../debugger/media/icon_spy--_nextwindow.gif "Icon_Spy++_NextWindow")|現在のビューで、次に一致するウィンドウ、プロセス、スレッド、またはメッセージを検索します。 このコントロール (および関連するメニュー コマンド) は、一意ではない有効な検索結果がある場合にのみ使用できます。 たとえば、ウィンドウ ツリーの検索条件としてウィンドウ ハンドルを使用すると、そのハンドルを持つウィンドウはウィンドウ ツリー内に 1 つしかないため、一意の結果が生成されます。この場合、 **[次を検索]** を使用することはできません。|

@@ -1,5 +1,7 @@
 ---
 title: グラフィックス ピクセル履歴 | Microsoft Docs
+description: 特定のピクセルの履歴を表示して、レンダリングに関する問題をトラブルシューティングします。 グラフィックス ピクセル履歴には、Direct3D イベントの影響が示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0b12264c610d291ff49be0524663141a59082e9e
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735481"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995305"
 ---
 # <a name="graphics-pixel-history"></a>グラフィックス ピクセル履歴
 Visual Studio Graphics Analyzer の [ピクセル履歴] ウィンドウでは、特定のピクセルが、ゲームまたはアプリのフレームの生成中に発生する Direct3D イベントによってどのように影響を受けるかを理解できます。

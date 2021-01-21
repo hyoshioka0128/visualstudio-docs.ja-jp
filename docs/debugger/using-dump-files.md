@@ -1,6 +1,7 @@
 ---
 title: デバッガーでダンプ ファイルを使用する | Microsoft Docs
-ms.custom: seodec18
+description: ダンプ ファイルは、実行中のアプリと読み込まれたモジュールのスナップショットです。 アプリへのデバッグ アクセスがない場合は、ダンプ ファイルを作成することを検討してください。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 8bcd225bb64096d8a8e58e3cffd15e7bc94bf5cc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386954"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150874"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでのダンプ ファイル
 
@@ -55,9 +56,9 @@ Visual Studio デバッガーでは、マネージドまたはネイティブ �
 
 ダンプ ファイルには、ヒープ情報が含まれている場合もあれば、そうでない場合もあります。
 
-- **ヒープ付きダンプ ファイル**には、ダンプ時におけるアプリのメモリのスナップショット (変数の値を含む) が格納されます。 また、Visual Studio では、読み込まれたネイティブ モジュールのバイナリがヒープ付きのダンプ ファイルに保存されるため、デバッグが大幅に簡単になります。 Visual Studio では、アプリ バイナリを見つけられない場合でも、ヒープ付きのダンプ ファイルからシンボルを読み込むことができます。
+- **ヒープ付きダンプ ファイル** には、ダンプ時におけるアプリのメモリのスナップショット (変数の値を含む) が格納されます。 また、Visual Studio では、読み込まれたネイティブ モジュールのバイナリがヒープ付きのダンプ ファイルに保存されるため、デバッグが大幅に簡単になります。 Visual Studio では、アプリ バイナリを見つけられない場合でも、ヒープ付きのダンプ ファイルからシンボルを読み込むことができます。
 
-- **ヒープなしのダンプ ファイル**は、ヒープ付きのダンプよりもはるかに小さくなりますが、シンボル情報を検索する場合、デバッガーではアプリ バイナリを読み込む必要があります。 読み込まれたバイナリは、ダンプ作成中に実行されていたものと正確に一致する必要があります。 ヒープなしのダンプ ファイルには、スタック変数の値のみが保存されます。
+- **ヒープなしのダンプ ファイル** は、ヒープ付きのダンプよりもはるかに小さくなりますが、シンボル情報を検索する場合、デバッガーではアプリ バイナリを読み込む必要があります。 読み込まれたバイナリは、ダンプ作成中に実行されていたものと正確に一致する必要があります。 ヒープなしのダンプ ファイルには、スタック変数の値のみが保存されます。
 
 ## <a name="create-a-dump-file"></a><a name="BKMK_Create_a_dump_file"></a> ダンプ ファイルを作成する
 
@@ -74,7 +75,7 @@ Visual Studio でのプロセスのデバッグ中、デバッガーが例外ま
 1. パスを参照し、ダンプ ファイルの名前を選択してから、 **[保存]** を選択します。
 
 >[!NOTE]
->Windows ミニダンプ形式をサポートする任意のプログラムでダンプ ファイルを作成できます。 たとえば、[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) の **Procdump** コマンド ライン ユーティリティでは、トリガーまたは必要に応じてプロセスのクラッシュ ダンプ ファイルを作成できます。 その他のツールを使用したダンプ ファイルの作成については、「[要件と制限](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)」を参照してください。
+>Windows ミニダンプ形式をサポートする任意のプログラムでダンプ ファイルを作成できます。 たとえば、[Windows Sysinternals](/sysinternals/) の **Procdump** コマンド ライン ユーティリティでは、トリガーまたは必要に応じてプロセスのクラッシュ ダンプ ファイルを作成できます。 その他のツールを使用したダンプ ファイルの作成については、「[要件と制限](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)」を参照してください。
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> ダンプ ファイルを開く
 

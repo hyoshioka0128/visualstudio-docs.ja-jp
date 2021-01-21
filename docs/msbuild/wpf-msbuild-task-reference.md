@@ -1,5 +1,7 @@
 ---
 title: WPF MSBuild タスク リファレンス | Microsoft Docs
+description: 追加のタスクを使用して MSBuild を拡張する Windows Presentation Foundation (WPF) のビルド プロセスに関するタスク リファレンスを確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630848"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047518"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild タスク リファレンス
 
@@ -57,7 +59,7 @@ Windows Presentation Foundation (WPF) のビルド プロセスは、マーク�
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- 1 つ以上のリソース ( *.jpg*、 *.ico*、 *.bmp*、バイナリ形式の XAML、その他の種類の拡張子) を *.resources* ファイルに埋め込みます。
+ 1 つ以上のリソース ( *.jpg* 、 *.ico* 、 *.bmp* 、バイナリ形式の XAML、その他の種類の拡張子) を *.resources* ファイルに埋め込みます。
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -65,7 +67,7 @@ Windows Presentation Foundation (WPF) のビルド プロセスは、マーク�
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- XAML ブラウザー アプリケーション (XBAP) プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト ( *\<projectname>.exe.manifest*) に追加します。
+ XAML ブラウザー アプリケーション (XBAP) プロジェクトのビルド時に **\<hostInBrowser />** 要素をアプリケーション マニフェスト ( *\<projectname>.exe.manifest* ) に追加します。
 
 ## <a name="see-also"></a>関連項目
 

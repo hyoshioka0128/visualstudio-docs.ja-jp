@@ -1,5 +1,6 @@
 ---
 title: '新しいプロジェクトの生成: 内部的には、パート 2 |Microsoft Docs'
+description: '独自のプロジェクトの種類 (パート 2/2) を作成すると、Visual Studio 統合開発環境 (IDE: integrated development environment) で何が起こるかについて詳しく見ていきます。'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8692f2012e5f2733982f04e35a7fed415e49c636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e45c9643a1fd2e6dcf9d5520fbb2982736b5109
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707023"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668847"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 
-[新しいプロジェクトの生成: 内部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では、[**新しいプロジェクト**] ダイアログボックスがどのように設定されているかを説明します。 ここでは、 **Visual C# Windows アプリケーション**を選択し、[ **名前** ] と [ **場所** ] のテキストボックスに入力して、[OK] をクリックしたとします。
+[新しいプロジェクトの生成: 内部](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)では、[**新しいプロジェクト**] ダイアログボックスがどのように設定されているかを説明します。 ここでは、 **Visual C# Windows アプリケーション** を選択し、[ **名前** ] と [ **場所** ] のテキストボックスに入力して、[OK] をクリックしたとします。
 
 ## <a name="generating-the-solution-files"></a>ソリューションファイルの生成
  アプリケーションテンプレートを選択する [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] と、対応する .vstemplate ファイルを解凍して開き、このファイル内の XML コマンドを解釈するためのテンプレートを起動するように指示されます。 これらのコマンドは、新規または既存のソリューションにプロジェクトとプロジェクト項目を作成します。
@@ -68,7 +69,7 @@ namespace Simple
  基本 .vstemplate ファイルの形式は次のようになります。
 
 ```xml
-<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
+<VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
     <TemplateContent>
@@ -90,13 +91,13 @@ namespace Simple
     <ProjectItem TargetFileName="Properties\Resources.resx">
       Resources.resx
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Resources.Designer.cs">
       Resources.Designer.cs
     </ProjectItem>
     <ProjectItem TargetFileName="Properties\Settings.settings">
       Settings.settings
     </ProjectItem>
-    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
+    <ProjectItem ReplaceParameters="true"       TargetFileName="Properties\Settings.Designer.cs">
       Settings.Designer.cs
     </ProjectItem>
     <ProjectItem ReplaceParameters="true" OpenInEditor="true">
@@ -118,7 +119,7 @@ namespace Simple
 
  生成される Windows アプリケーションフォルダーの構造は次のようになります。
 
- ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")
+ ![Visual Studio ソリューションエクスプローラーの ' Simple ' ソリューションの Windows アプリケーションフォルダー構造のスクリーンショット。](../../extensibility/internals/media/simplesolution.png)
 
  テンプレートの最初のタグと唯一の \<Project> タグは次のようになります。
 

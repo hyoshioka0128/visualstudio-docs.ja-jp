@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773969"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037518"
 ---
 # <a name="marks-view"></a>マーク ビュー
 [マーク] ビューには、アプリケーションに挿入されたサンプリングおよび ETW イベントが表示されます。
@@ -43,4 +43,4 @@ ms.locfileid: "74773969"
 ## <a name="see-also"></a>参照
 - [パフォーマンス レポートの概要](../profiling/performance-report-overview.md)
 - [方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;NIB&#93; [データ収集コントロール] ウィンドウ](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;NIB&#93; [データ収集コントロール] ウィンドウ](/previous-versions/bb385767(v=vs.110))

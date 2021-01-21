@@ -1,5 +1,7 @@
 ---
 title: 従来の言語でのパラメーターヒント Service2 |Microsoft Docs
+description: 従来の言語サービスでメソッドが型指定されているときに、メソッドシグネチャを表示するための IntelliSense パラメーターヒント操作をサポートする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff6e871320d0727ed2fbec4188e8f7af2e5c5fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc239d5b0d580d420683c6940ac2bbd5198335d7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237959"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875948"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>従来の言語サービスのパラメーターヒント2
 IntelliSense パラメーターヒントは、ユーザーがメソッドパラメーターリストのパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、メソッドのシグネチャを表示するツールヒントです。 各パラメーターが入力され、パラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。

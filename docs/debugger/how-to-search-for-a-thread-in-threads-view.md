@@ -1,5 +1,7 @@
 ---
-title: 方法 - スレッド ビューでスレッドを検索する | Microsoft Docs
+title: スレッド ビューでスレッドを検索する | Microsoft Docs
+description: Visual Studio でデバッグするとき、スレッド ID またはモジュール文字列を検索条件として使用し、Spy++ ツールのスレッド ビューで特定のスレッドを検索します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e97d381fd0b1f6340035eec129e7304a8e73b03d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 92864c9d3c66a7547ef52a2694f6307d57a43304
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349264"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148534"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>方法: スレッド ビューでスレッドを検索する
 スレッド ID またはモジュール文字列を検索条件として使用することで、スレッド ビューで特定のスレッドを検索できます。 検索の最初の方向を指定することもできます。 ダイアログ ボックスのフィールドには、スレッド ツリー内の選択されたスレッドの属性が表示されます。

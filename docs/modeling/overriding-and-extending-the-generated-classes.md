@@ -1,5 +1,7 @@
 ---
 title: 生成済みクラスのオーバーライドおよび拡張
+description: DSL 定義が、ドメイン固有言語に基づいた強力なツールセットを構築するためのプラットフォームであることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1b36a7524530df7f9a18ce9abe1de2d430156d6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595892"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362094"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>生成されたクラスをオーバーライドして拡張する
 
@@ -46,7 +48,7 @@ public partial class Book
 
 オーバーライドできるメソッドを検出するには、クラスで「 **override** 」と入力し、その後にスペースを入力します。 IntelliSense ツールヒントには、オーバーライドできるメソッドが示されます。
 
-### <a name="double-derived-classes"></a>2つの派生クラス
+### <a name="double-derived-classes"></a>Double-Derived クラス
 
 生成されたクラスのメソッドのほとんどは、モデリング名前空間の固定されたクラスのセットから継承されます。 ただし、生成されるコードにはいくつかのメソッドが定義されています。 通常、これはオーバーライドできないことを意味します。1つの部分クラスで、同じクラスの別の部分定義で定義されているメソッドをオーバーライドすることはできません。
 

@@ -1,6 +1,7 @@
 ---
 title: Windows API 関数をデバッグする |Microsoft Docs
-ms.custom: seodec18
+Description: NT シンボルを読み込んだ状態で Windows API 関数をデバッグする方法について説明します。 32 ビット コードでは、関数名の装飾形式を使用してブレークポイントを設定します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ab50205d1ade2447b85ad7eee2ffb6aaf38363d
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350395"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398391"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Windows API 関数をデバッグするには
 NT シンボルを読み込んだ状態で Windows API 関数をデバッグするには、次の手順を実行する必要があります。
@@ -40,7 +41,7 @@ NT シンボルを読み込んだ状態で Windows API 関数をデバッグす�
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     装飾名を取得するには、「[装飾名の表示](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0)」を参照してください 。
+     装飾名を取得するには、「[装飾名の表示](/previous-versions/5x49w699(v=vs.140))」を参照してください 。
 
      装飾名をテストし、逆アセンブリ コードで表示できます。 Visual Studio デバッガーの関数で一時停止しているときに、コード エディターまたは呼び出し履歴ウィンドウで関数を右クリックし、 **[逆アセンブリへ移動]** を選択します。
 

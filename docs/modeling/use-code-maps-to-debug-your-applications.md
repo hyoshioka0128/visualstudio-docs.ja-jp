@@ -1,5 +1,7 @@
 ---
 title: コード マップを使用してアプリケーションをデバッグする
+description: コードマップを使用して、大規模なコードベース、見慣れないコード、またはレガシコードで失われないようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d935ee5c4341a2d625c6f85226cc649d696d6e6e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594111"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729393"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>コード マップを使用してアプリケーションをデバッグする
 
@@ -36,7 +38,7 @@ ms.locfileid: "75594111"
 > [!NOTE]
 > コードマップを作成および編集するには Visual Studio Enterprise エディションが必要です。 Visual Studio Community および Professional エディションでは、Enterprise edition で生成されたダイアグラムを開くことができますが、編集することはできません。
 
-## <a name="understand-the-problem"></a>問題を把握する
+## <a name="understand-the-problem"></a>問題を理解する
  作業中の描画プログラムにバグがあるとします。 バグを再現するには、Visual Studio でソリューションを開き、 **F5** キーを押してデバッグを開始します。
 
  線を描画し、[ **最後のストロークを元に戻す**] を選択すると、次の行を描画するまで何も起こりません。
@@ -58,11 +60,11 @@ ms.locfileid: "75594111"
  ![コードマップ &#45; ツールヒントを表示する](../modeling/media/codemapstoryboardpaint4.png)
 
 ## <a name="navigate-and-examine-code-from-the-map"></a>マップからコードを移動して調査する
- 各フィールドのコード定義を表示するには、マップのフィールドをダブルクリックするか、フィールドを選択して **F12**キーを押します。 緑色の矢印がマップの項目間を移動します。 コード エディターのカーソルも自動的に移動します。
+ 各フィールドのコード定義を表示するには、マップのフィールドをダブルクリックするか、フィールドを選択して **F12** キーを押します。 緑色の矢印がマップの項目間を移動します。 コード エディターのカーソルも自動的に移動します。
 
- ![コードマップ &#45; フィールド定義を確認する](../modeling/media/codemapstoryboardpaint5.png)
+ ![[履歴] フィールドが選択されたコードマップウィンドウと、履歴のすべてのインスタンスが強調表示されているコードエディターウィンドウのスクリーンショット。](../modeling/media/codemapstoryboardpaint5.png)
 
- ![コードマップ &#45; フィールド定義を確認する](../modeling/media/codemapstoryboardpaint5a.png)
+ ![List<paintobject> paintobjects フィールドが選択されたコードマップウィンドウと、すべての List<paintobject> paintobjects インスタンスが強調表示されているコードエディターウィンドウのスクリーンショット。](../modeling/media/codemapstoryboardpaint5a.png)
 
 > [!TIP]
 > また、コード エディターでカーソルを動かすと、マップの緑色の矢印を移動できます。
@@ -79,24 +81,24 @@ ms.locfileid: "75594111"
 
  関係のフローを再配置してマップを読みやすくするために、レイアウトを変更します。 項目をドラッグすることにより、マップ上で項目を移動することもできます。
 
- ![レイアウトの変更 &#45; コードマップ](../modeling/media/codemapstoryboardpaint7a.png)
+ ![[レイアウト] メニューが開き、左側が [Rgiht] コマンドを選択したコードマップウィンドウのスクリーンショット。](../modeling/media/codemapstoryboardpaint7a.png)
 
 > [!TIP]
 > 既定では、 **インクリメンタルレイアウト** はオンになっています。 この設定では、新しい項目の追加時にマップの再配置は最小限に抑えられます。 新しい項目を追加するたびにマップ全体を再配置するには、[ **インクリメンタルレイアウト**] をオフにします。
 
- ![レイアウトの変更 &#45; コードマップ](../modeling/media/codemapstoryboardpaint7.png)
+ ![左から右を指し示すフィールドの間に relationshiop 矢印があるコードマップウィンドウのスクリーンショット。](../modeling/media/codemapstoryboardpaint7.png)
 
- これらのメソッドを調べます。 マップで、 **paintcanvas]** メソッドをダブルクリックするか、この方法を選択して **F12**キーを押します。 このメソッドにより、`history` と `paintObjects` が空のリストとして作成されることがわかります。
+ これらのメソッドを調べます。 マップで、 **paintcanvas]** メソッドをダブルクリックするか、この方法を選択して **F12** キーを押します。 このメソッドにより、`history` と `paintObjects` が空のリストとして作成されることがわかります。
 
- ![コードマップ &#45; メソッド定義を調べる](../modeling/media/codemapstoryboardpaint8.png)
+ ![Paintcanvas] メソッドが選択されたコードマップウィンドウのスクリーンショットと、強調表示された PainCanvas メソッド名を示すコードスニペットイメージ。](../modeling/media/codemapstoryboardpaint8.png)
 
  ここで、同じ手順を繰り返して、`clear` メソッドの定義を調べます。 `clear` が `paintObjects` と `history`を使用して一部のタスクを実行することがわかります。 次に、このメソッドは `Repaint` メソッドを呼び出します。
 
- ![コードマップ &#45; メソッド定義を調べる](../modeling/media/codemapstoryboardpaint9.png)
+ ![Clear メソッドが選択されたコードマップウィンドウのスクリーンショットと、Clear メソッドのコードを示すコードスニペットイメージ。](../modeling/media/codemapstoryboardpaint9.png)
 
  ここで、`addPaintObject` メソッドの定義を調べます。 このメソッドも、`history` と `paintObjects` を使用して一部のタスクを実行します。 また、このメソッドは `Repaint` を呼び出します。
 
- ![コードマップ &#45; メソッド定義を調べる](../modeling/media/codemapstoryboardpaint10.png)
+ ![AddPaintObject メソッドが選択されたコードマップウィンドウのスクリーンショットと、addPaintObject メソッドのコードを示すコードスニペットイメージ。](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>マップを調べて問題を見つける
  `history` と `paintObjects` を変更するすべてのメソッドが `Repaint` を呼び出すと考えられます。 ただし、`undo` メソッドは `Repaint` を呼び出しませんが、`undo` メソッドは同じフィールドを変更します。 したがって、`Repaint` で `undo` を呼び出すことにより、この問題を解決できると考えられます。
@@ -131,7 +133,7 @@ ms.locfileid: "75594111"
 
  ![メソッド呼び出しがないコードマップ &#45; 更新マップ](../modeling/media/codemapstoryboardpaint16.png)
 
- マップには、 **undo** と **Repaint**の間のリンクが表示されるようになりました。
+ マップには、 **undo** と **Repaint** の間のリンクが表示されるようになりました。
 
  ![コードマップ &#45; 更新されたマップのメソッド呼び出し](../modeling/media/codemapstoryboardpaint17.png)
 
@@ -140,7 +142,7 @@ ms.locfileid: "75594111"
 
  これで、調査が完了しました。 コードのマップにより、問題を正常に検出して修正しました。 また、コード内を移動することや確認したことの記憶に役立ち、問題を解決するための手順を示すマップも備わりました。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [デバッグを行うときの呼び出し履歴に対するメソッドのマップ](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [コードの視覚化](../modeling/visualize-code.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 633ed9c37e8ccde0844205910a8fa2dc12d91414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa753a4ba3e0254ed7de026653759bbdcfce0631
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817620"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862322"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>value 引数の循環参照はサポートされません。
 無効な値を使用してを呼び出そうとしました `JSON.stringify` 。 `value`引数 (配列またはオブジェクト) に循環参照が含まれています。  
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>関連項目  
- [JSON オブジェクト](../../javascript/reference/json-object-javascript.md)   
- [JSON. parse 関数](../../javascript/reference/json-parse-function-javascript.md)   
- [JavaScript ランタイム エラー](../../javascript/reference/javascript-run-time-errors.md)
+ [JSON オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON. parse 関数](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [JavaScript ランタイム エラー](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

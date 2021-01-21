@@ -1,5 +1,7 @@
 ---
 title: Security
+description: セキュリティ コンセプトと、安全なアプリケーションの効果的開発に役立つセキュリティ機能について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07f0c685b61ab72d3db9ada79b29dcb5b4e4a1f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595450"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560825"
 ---
 # <a name="secure-applications"></a>セキュリティで保護されたアプリケーション
 
@@ -38,11 +40,11 @@ ms.locfileid: "75595450"
 - [Dotfuscator](dotfuscator/index.md) は無料で、.NET アセンブリをリバース エンジニアリングや許可されていないデバッグなどの許可されていない使用から保護するのに役立ちます。
 - [厳密な名前の署名](managing-assembly-and-manifest-signing.md)を使用すると、ソフトウェア コンポーネントを一意に識別し、名前のなりすましを防ぐことができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [.NET でのセキュリティ](/dotnet/standard/security/index)
 - [Azure のセキュリティ](/azure/security/)
 - [Windows 10 Mobile のセキュリティ ガイド](/windows/security/threat-protection/windows-10-mobile-security-guide)
-- [Apache Cordova プラットフォームのセキュリティ機能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
-- [ASP.NET Core のセキュリティ](/aspnet/core/security/?view=aspnetcore-2.1)
+- [Apache Cordova プラットフォームのセキュリティ機能](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017&preserve-view=true)
+- [ASP.NET Core のセキュリティ](/aspnet/core/security/?view=aspnetcore-2.1&preserve-view=true)
 - [Windows フォームのセキュリティ](/dotnet/framework/winforms/windows-forms-security)

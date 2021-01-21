@@ -1,5 +1,7 @@
 ---
 title: '方法: ワークシートに ListObject コントロールを追加する'
+description: ドキュメントレベルのプロジェクトでデザイン時および実行時に ListObject コントロールを Microsoft Office Excel ワークシートに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c53d820170c359e568b0a7b0ab5711a632d9eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dd72db2678f448158f268b790d39d4f6e44a737
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538321"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848158"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>方法: ワークシートに ListObject コントロールを追加する
   ドキュメント レベルのプロジェクトでは、デザイン時および実行時に、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールを Microsoft Office Excel ワークシートに追加できます。
@@ -38,7 +40,7 @@ ms.locfileid: "85538321"
   コントロールの詳細について <xref:Microsoft.Office.Tools.Excel.ListObject> は、「 [ListObject コントロール](../vsto/listobject-control.md)」を参照してください。
 
 ## <a name="add-listobject-controls-at-design-time"></a><a name="designtime"></a> デザイン時に ListObject コントロールを追加する
- <xref:Microsoft.Office.Tools.Excel.ListObject>デザイン時にドキュメントレベルのプロジェクトのワークシートにコントロールを追加するには、Excel 内、Visual Studio の**ツールボックス**、および [**データソース**] ウィンドウから、いくつかの方法があります。
+ <xref:Microsoft.Office.Tools.Excel.ListObject>デザイン時にドキュメントレベルのプロジェクトのワークシートにコントロールを追加するには、Excel 内、Visual Studio の **ツールボックス**、および [**データソース**] ウィンドウから、いくつかの方法があります。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -71,7 +73,7 @@ ms.locfileid: "85538321"
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>プログラムを使用してワークシートに ListObject コントロールを追加するには
 
-1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> の `Sheet1`イベント ハンドラーに以下のコードを挿入して、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールをセル **A1** ～ **A4**に追加します。
+1. <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> の `Sheet1`イベント ハンドラーに以下のコードを挿入して、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールをセル **A1** ～ **A4** に追加します。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
@@ -81,7 +83,7 @@ ms.locfileid: "85538321"
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>プログラムを使用してワークシートに ListObject コントロールを追加するには
 
-1. 次のコードでは、開いているワークシートに基づいたワークシート ホスト項目を生成し、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールをセル **A1** ～ **A4**に追加します。
+1. 次のコードでは、開いているワークシートに基づいたワークシート ホスト項目を生成し、 <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールをセル **A1** ～ **A4** に追加します。
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]

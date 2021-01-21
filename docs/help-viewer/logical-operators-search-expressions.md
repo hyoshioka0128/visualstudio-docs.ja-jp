@@ -1,5 +1,6 @@
 ---
 title: 検索式の論理演算子 (ヘルプビューアー)
+description: 論理演算子と高度な検索演算子を使用して Microsoft ヘルプビューアーの検索式を調整する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/02/2017
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daceca2540a2da61a46e12a458c012ce7851001
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038635"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878931"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>検索式の論理演算子と高度な演算子
 
@@ -67,7 +68,7 @@ ms.locfileid: "90038635"
 > [!NOTE]
 > `code:` 演算子は、コードとして一般的にマークされているコンテンツではなく、プログラミング言語ラベルでマークされているコンテンツのみを検索します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: トピックを検索する](../help-viewer/find-topics.md)
 - [Microsoft ヘルプ ビューアー](../help-viewer/overview.md)

@@ -1,5 +1,7 @@
 ---
 title: オプションページを作成する |Microsoft Docs
+description: プロパティグリッドを使用してプロパティを確認および設定する簡単なツール/オプションページを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be826b73e28a73216ea88ceba8e23eb1e9ea457b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903809"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973709"
 ---
 # <a name="create-an-options-page"></a>オプションページを作成する
 
@@ -37,7 +39,7 @@ ms.locfileid: "85903809"
 
 1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `MyToolsOptionsExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. という名前の Visual Studio パッケージ項目テンプレートを追加して、VSPackage を追加し `MyToolsOptionsPackage` ます。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加] ダイアログ**で、[ **visual C# 項目**の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名をに変更 `MyToolsOptionsPackage.cs` します。 VSPackage を作成する方法の詳細については、「 [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)」を参照してください。
+2. という名前の Visual Studio パッケージ項目テンプレートを追加して、VSPackage を追加し `MyToolsOptionsPackage` ます。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加] ダイアログ** で、[ **visual C# 項目** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名をに変更 `MyToolsOptionsPackage.cs` します。 VSPackage を作成する方法の詳細については、「 [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)」を参照してください。
 
 ### <a name="to-create-the-tools-options-property-grid"></a>ツールオプションのプロパティグリッドを作成するには
 
@@ -99,7 +101,7 @@ ms.locfileid: "85903809"
 
 7. Visual Studio の実験用インスタンスで、[ **ツール** ] メニューの [ **オプション**] をクリックします。
 
-     左側のウィンドウに **[マイカテゴリ]** が表示されます。 (オプションのカテゴリはアルファベット順に一覧表示されているため、一覧の半分になります)。[ **マイカテゴリ** ] を開き、[ **マイグリッドページ**] をクリックします。 右ペインに [オプション] グリッドが表示されます。 プロパティカテゴリは **My Options**で、プロパティ名は " **My Integer" オプション**です。 ペインの下部に [プロパティの説明] の **[整数] オプション**が表示されます。 値を256の初期値から別の値に変更します。 [ **OK**] をクリックし、[ **グリッドページ**] を再度開きます。 新しい値が保持されていることがわかります。
+     左側のウィンドウに **[マイカテゴリ]** が表示されます。 (オプションのカテゴリはアルファベット順に一覧表示されているため、一覧の半分になります)。[ **マイカテゴリ** ] を開き、[ **マイグリッドページ**] をクリックします。 右ペインに [オプション] グリッドが表示されます。 プロパティカテゴリは **My Options** で、プロパティ名は " **My Integer" オプション** です。 ペインの下部に [プロパティの説明] の **[整数] オプション** が表示されます。 値を256の初期値から別の値に変更します。 [ **OK**] をクリックし、[ **グリッドページ**] を再度開きます。 新しい値が保持されていることがわかります。
 
      [オプション] ページは、Visual Studio の検索ボックスからも使用できます。 IDE の上部付近にある検索ボックスに「 **My category** 」と入力すると、[ **カテゴリ-> マイグリッド] ページ** が結果に表示されます。
 
@@ -162,7 +164,7 @@ ms.locfileid: "85903809"
 
 6. MyUserControl という名前の新しい **ユーザーコントロール** をプロジェクトに追加します。
 
-7. **TextBox**コントロールをユーザーコントロールに追加します。
+7. **TextBox** コントロールをユーザーコントロールに追加します。
 
      [ **プロパティ** ] ウィンドウのツールバーで、[ **イベント** ] ボタンをクリックし、[ **Leave** ] イベントをダブルクリックします。 新しいイベントハンドラーが *MyUserControl.cs* コードに表示されます。
 
@@ -190,7 +192,7 @@ ms.locfileid: "85903809"
     }
     ```
 
-     フィールドは、 `optionsPage` 親インスタンスへの参照を保持し `OptionPageCustom` ます。 `Initialize`メソッドが `OptionString` **テキストボックス**に表示されます。 イベントハンドラーは、フォーカスが Textbox の外に出たときに、**テキストボックス**の現在の値をに書き込み `OptionString` ます。 **TextBox**
+     フィールドは、 `optionsPage` 親インスタンスへの参照を保持し `OptionPageCustom` ます。 `Initialize`メソッドが `OptionString` **テキストボックス** に表示されます。 イベントハンドラーは、フォーカスが Textbox の外に出たときに、**テキストボックス** の現在の値をに書き込み `OptionString` ます。 **TextBox**
 
 9. パッケージコードファイルで、プロパティのオーバーライドをクラスに追加して、 `OptionPageCustom.Window` `OptionPageCustom` のインスタンスを作成、初期化、および返すようにし `MyUserControl` ます。 クラスは次のようになります。
 
@@ -221,17 +223,17 @@ ms.locfileid: "85903809"
 
 10. プロジェクトをビルドして実行します。
 
-11. 実験用インスタンスで、[**ツール**] [オプション] の順にクリックし  >  **Options**ます。
+11. 実験用インスタンスで、[**ツール**] [オプション] の順にクリックし  >  **Options** ます。
 
-12. [ **マイカテゴリ]** 、[ **マイカスタム] ページ**の順に検索します。
+12. [ **マイカテゴリ]** 、[ **マイカスタム] ページ** の順に検索します。
 
-13. **Optionstring**の値を変更します。 [ **OK**] をクリックし、 **カスタムページ**を再度開きます。 新しい値が保持されていることを確認できます。
+13. **Optionstring** の値を変更します。 [ **OK**] をクリックし、 **カスタムページ** を再度開きます。 新しい値が保持されていることを確認できます。
 
 ## <a name="access-options"></a>アクセスオプション
 
  このセクションでは、関連付けられている [ツールオプション] ページをホストする VSPackage からオプションの値を取得します。 同じ手法を使用して、パブリックプロパティの値を取得することもできます。
 
-1. パッケージコードファイルで、 **MyToolsOptionsPackage**クラスに**optioninteger**というパブリックプロパティを追加します。
+1. パッケージコードファイルで、 **MyToolsOptionsPackage** クラスに **optioninteger** というパブリックプロパティを追加します。
 
     ```csharp
     public int OptionInteger
@@ -247,9 +249,9 @@ ms.locfileid: "85903809"
 
      このコード <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> は、を呼び出してインスタンスを作成または取得 `OptionPageGrid` します。 `OptionPageGrid` を呼び出して <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 、パブリックプロパティであるオプションを読み込みます。
 
-2. ここで、 **MyToolsOptionsCommand** という名前のカスタムコマンド項目テンプレートを追加して、値を表示します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolsOptionsCommand.cs*に変更します。
+2. ここで、 **MyToolsOptionsCommand** という名前のカスタムコマンド項目テンプレートを追加して、値を表示します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolsOptionsCommand.cs* に変更します。
 
-3. *MyToolsOptionsCommand*ファイルで、コマンドのメソッドの本体を `ShowMessageBox` 次のように置き換えます。
+3. *MyToolsOptionsCommand* ファイルで、コマンドのメソッドの本体を `ShowMessageBox` 次のように置き換えます。
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)

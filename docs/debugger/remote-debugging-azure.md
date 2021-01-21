@@ -1,5 +1,6 @@
 ---
 title: IIS と Azure 上で ASP.NET Core をリモート デバッグする | Microsoft Docs
+description: Visual Studio ASP.NET Core アプリをセットアップして構成し、Azure を使用して IIS に配置して、Visual Studio からリモート デバッガーをアタッチする方法について説明します。
 ms.custom: remotedebugging
 ms.date: 05/06/2020
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: b6535bb52221de780b9a8862be22a6a4deb79b57
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536787"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815842"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Azure の Visual Studio で IIS 上の ASP.NET Core をリモート デバッグする
 
@@ -29,13 +30,13 @@ Azure 上でリモート デバッグする際の推奨される方法は、シ�
 
     このシナリオでは、Visual Studio から Azure にアプリを配置する必要がありますが、次の図に示すように、IIS またはリモート デバッガー (これらのコンポーネントは点線で表されています) を手動でインストールまたは構成する必要はありません。
 
-    ![リモート デバッガーのコンポーネント](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+    ![Visual Studio、Azure App Service、ASP.NET アプリの関係を示す図。 IIS とリモート デバッガーは点線で表されています。](../debugger/media/remote-debugger-azure-app-service.png)
 
 * Azure VM 上で IIS をデバッグするには、このトピックの手順を実行してください ([Azure VM 上のリモート デバッグ](#remote_debug_azure_vm)に関するセクションを参照してください)。 これにより、IIS のカスタマイズされた構成を使用できますが、設定と配置の手順はより複雑になります。
 
     Azure VM の場合は、次の図に示すように、アプリを Visual Studio から Azure に配置する必要があります。また、IIS ロールとリモート デバッガーを手動でインストールする必要もあります。
 
-    ![リモート デバッガーのコンポーネント](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+    ![Visual Studio、Azure VM、ASP.NET アプリの関係を示す図。 IIS とリモート デバッガーは実線で表されます。](../debugger/media/remote-debugger-azure-vm.png)
 
 * Azure Service Fabric 上で ASP.NET Core をデバッグするには、「[リモートの Service Fabric アプリケーションをデバッグする](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)」を参照してください。
 
@@ -255,7 +256,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 6. プロセス名の最初の文字を入力すると、アプリをすばやく見つけることができます。
 
-    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
+    * IIS で [インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
 
     * それ以外の場合は、**dotnet.exe** プロセスを選択します (これはアウト プロセス ホスティング モデルです)。
 

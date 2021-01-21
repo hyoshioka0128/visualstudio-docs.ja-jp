@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションのトラブルシューティング |Microsoft Docs
+description: Visual Studio デバッガーを使用して SharePoint ソリューションをデバッグするときに発生する問題やアラートについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,15 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73661893"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970263"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint ソリューションのトラブルシューティング
-  以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、「 [SharePoint 2007 ワークフローソリューションのデバッグ](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)」を参照してください。
+  以下の問題または警告は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] デバッガーを使用して SharePoint ソリューションをデバッグするときに発生することがあります。 詳細については、「 [SharePoint 2007 ワークフローソリューションのデバッグ](/previous-versions/bb386166(v=vs.100))」を参照してください。
 
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>サンドボックス化される視覚的 web パーツでのトークン制限
  サンドボックス ソリューションの視覚的 Web パーツは、SharePoint ランタイムでサポートされる $SPUrl などの標準トークンを処理できません。 そのため、URL は解決されず、次の例のように、スクリプト要素でこのトークンを直接参照する場合、視覚的 Web パーツ デザイナーのデザイン ビューでコンテンツをプレビューできません。
@@ -102,7 +104,7 @@ ms.locfileid: "73661893"
  なし。
 
 ### <a name="resolution"></a>解決方法
- この問題は、 *webtemp_SiteDefinitionProject1.xml*などの webtemp サイト定義構成ファイルの**Path**プロパティの値が正しくないことが原因で発生します。 **配置場所**の下にある webtemp ファイルの**Path**プロパティで、1033を適切なロケールに変更し [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] ます。 たとえば、日本語のロケールを使用する場合は値を 1041 に変更します。 詳細については、「 [Microsoft によって割り当てられているロケール ID](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)」を参照してください。
+ この問題は、 *webtemp_SiteDefinitionProject1.xml* などの webtemp サイト定義構成ファイルの **Path** プロパティの値が正しくないことが原因で発生します。 **配置場所** の下にある webtemp ファイルの **Path** プロパティで、1033を適切なロケールに変更し [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)] ます。 たとえば、日本語のロケールを使用する場合は値を 1041 に変更します。 詳細については、「 [Microsoft によって割り当てられているロケール ID](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c)」を参照してください。
 
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>クリーンシステムにワークフロープロジェクトが配置されるときにエラーが表示される
  この問題は、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] のワークフロー プロジェクトをクリーン システムに配置した場合に発生します。 クリーン システムとは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] と SharePoint の新しいインストールが含まれているが、ワークフロー プロジェクトは配置されていないコンピューターです。
@@ -115,7 +117,7 @@ ms.locfileid: "73661893"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>ワークフロー ウィザードを再実行するには
 
-1. **ソリューションエクスプローラー**で、[ワークフロー] ノードを選択します。
+1. **ソリューションエクスプローラー** で、[ワークフロー] ノードを選択します。
 
 2. [ **プロパティ** ] ウィンドウで、省略記号ボタンがあるプロパティの省略記号ボタン ([...]) を選択します。
 
@@ -123,7 +125,7 @@ ms.locfileid: "73661893"
  デバッグしている SharePoint ソリューションに、イメージを表示するコントロール ([!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] Image コントロールなど) を含むアプリケーション ページが含まれている場合に、そのイメージに対して行われた変更を表示するには、ブラウザーでページを更新する必要があります。
 
 ## <a name="error-the-site-location-is-not-valid"></a>エラー: サイトの場所が無効です
- この問題は、[!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] がインストールされていない場合に発生することがあります。 また、 **Sharepoint カスタマイズウィザード**で指定された sharepoint Web サイトに対する管理者アクセス権がない場合にも発生する可能性があります。
+ この問題は、[!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] がインストールされていない場合に発生することがあります。 また、 **Sharepoint カスタマイズウィザード** で指定された sharepoint Web サイトに対する管理者アクセス権がない場合にも発生する可能性があります。
 
 ### <a name="error-message"></a>エラー メッセージ
 
@@ -156,7 +158,7 @@ ms.locfileid: "73661893"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>イベント レシーバーのフィーチャー スコープを変更するには
 
-1. **ソリューションエクスプローラー**で、ファイルをダブルクリックするか、そのショートカットメニューを開き、[**開く**] を選択して、**機能デザイナー**でイベントレシーバーの*機能*ファイルを開きます。
+1. **ソリューションエクスプローラー** で、ファイルをダブルクリックするか、そのショートカットメニューを開き、[**開く**] を選択して、**機能デザイナー** でイベントレシーバーの *機能* ファイルを開きます。
 
 2. [ **スコープ**] の横にある矢印をクリックし、表示される一覧で [ **サイト** ] を選択します。
 
@@ -189,13 +191,13 @@ ms.locfileid: "73661893"
 
 ##### <a name="to-resolve-this-issue"></a>この問題を解決するには
 
-1. **ソリューションエクスプローラー**で、ファイル名拡張子が *.ascx*であるユーザーコントロールファイルを選択します。
+1. **ソリューションエクスプローラー** で、ファイル名拡張子が *.ascx* であるユーザーコントロールファイルを選択します。
 
-2. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
+2. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
 
 3. [ **プロパティ** ] ウィンドウで、[ **配置場所** ] ノードを展開します。
 
-4. **Path**プロパティの値が文字列 "controltemplates" で始まることを確認し \\ ます。
+4. **Path** プロパティの値が文字列 "controltemplates" で始まることを確認し \\ ます。
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>タスクフォームフィールドを含むインポートされた再利用可能なワークフローを実行すると、エラーが表示される
  この問題は、フィールドを含むタスク フォームが存在するワークフローをインポートした後、ワークフローのインポート元と同じシステム上で新しいワークフローを実行したときに発生します。
@@ -238,7 +240,7 @@ ms.locfileid: "73661893"
 
 4. IIS がタイムアウトするまでの待機時間を長くするには、[ **Ping 最大応答時間 (秒)** ] の値を90秒より大きい値に変更します。
 
-5. IIS ping を無効にするには、 **Ping Enabled** を **False**に設定します。
+5. IIS ping を無効にするには、 **Ping Enabled** を **False** に設定します。
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>自動取り消しにより、孤立したリストインスタンスが SharePoint に残る
  この問題は、次の手順に従った場合に発生します。
@@ -257,7 +259,7 @@ ms.locfileid: "73661893"
 ### <a name="resolution"></a>解決方法
  このエラーは、SharePoint ソリューションのデバッグ セッションを閉じた後、自動取り消し機能によってソリューションが取り消されたために発生します。 取り消しにより、リスト定義は SharePoint から削除されますが、リスト インスタンスは削除されません。 リスト インスタンスは、基になるリスト定義を必要とします。
 
- この問題を解決するには、メニューバーで [**ビルド**] [デプロイ] の順に選択し、ソリューションをデプロイ  >  **Deploy**します。 (F5 キーを **押し** てソリューションをデバッグしないでください)。次に、SharePoint でリストインスタンスを削除します。
+ この問題を解決するには、メニューバーで [**ビルド**] [デプロイ] の順に選択し、ソリューションをデプロイ  >  **Deploy** します。 (F5 キーを **押し** てソリューションをデバッグしないでください)。次に、SharePoint でリストインスタンスを削除します。
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>元の SharePoint ソリューションがエクスポートされたバージョンに置き換えられる
  エクスポートした SharePoint ソリューションを [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] にインポートした後、そのソリューションをエクスポート元のサイトに配置した場合、元の SharePoint ソリューションが置換されます。 この問題は、ソリューションの配置先を元のソリューションがアクティブ化されていないサーバーにすると、発生しません。
@@ -277,7 +279,7 @@ ms.locfileid: "73661893"
 ### <a name="resolution"></a>解決方法
  この問題を解決するには、Visual Studio 内の SharePoint プロジェクトの [サイト URL] プロパティの値が、Web アプリケーションの代替アクセス マッピング用の既定のゾーンに割り当てられた URL と一致することを確認します。 URL でイントラネットなどの他のゾーンを使用すると、エラーは解消されません。 プロジェクトのサイト URL と既定のゾーンの URL は一致している必要があります。 代替アクセスマッピングにアクセスするには、SharePoint 2010 サーバーの全体管理ユーティリティを開き、[ **アプリケーション管理** ] リンクを選択します。次に、[ **Web アプリケーション**] で [ **代替アクセスマッピングの構成** ] リンクを選択します。 詳細については、「 [Web アプリケーションのゾーンを作成](/previous-versions/office/sharepoint-2007-products-and-technologies/cc263087(v=office.12))する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [SharePoint のパッケージ化と配置のトラブルシューティング](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)

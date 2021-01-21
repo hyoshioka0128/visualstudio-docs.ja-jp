@@ -1,5 +1,7 @@
 ---
 title: DSL の MSI および VSIX 配置
+description: 自分のコンピューターまたは他のコンピューターにドメイン固有言語 (DSL) をインストールする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d4de8d7560cb43115a30e29516e0e88b4d02d21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542617"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363134"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 ドメイン固有言語は、自分のコンピューターまたは他のコンピューターにインストールできます。 Visual Studio は、ターゲットコンピューターに既にインストールされている必要があります。
@@ -20,7 +22,7 @@ ms.locfileid: "85542617"
 ## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> VSIX と MSI の展開の選択
  ドメイン固有言語を展開するには、次の2つの方法があります。
 
-|Method|メリット|
+|Method|利点|
 |-|-|
 |VSX (Visual Studio 拡張機能)|デプロイが非常に簡単: DslPackage プロジェクトから **.vsix** ファイルをコピーして実行します。<br /><br /> 詳細について [は、「VSX を使用した DSL のインストールとアンインストール](#Installing)」を参照してください。|
 |MSI (インストーラーファイル)|-ユーザーが DSL ファイルをダブルクリックして Visual Studio を開くことを許可します。<br />-ターゲットコンピューターの DSL ファイルの種類にアイコンを関連付けます。<br />-XSD (XML スキーマ) を DSL ファイルの種類に関連付けます。 これにより、ファイルが Visual Studio に読み込まれるときに警告が回避されます。<br /><br /> MSI を作成するには、ソリューションにセットアッププロジェクトを追加する必要があります。<br /><br /> 詳細については、「 [MSI ファイルを使用した DSL の展開](#msi)」を参照してください。|
@@ -33,15 +35,15 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
 1. DSL パッケージプロジェクトによって作成された **.vsix** ファイルを見つけます。
 
-   1. **ソリューションエクスプローラー**で、[ **dslpackage** ] プロジェクトを右クリックし、[**エクスプローラーでフォルダーを開く**] をクリックします。
+   1. **ソリューションエクスプローラー** で、[ **dslpackage** ] プロジェクトを右クリックし、[**エクスプローラーでフォルダーを開く**] をクリックします。
 
-   2. ファイル** \\ \* bin \\ **_YourProject_を見つけ**ます。DslPackage。 .vsix**
+   2. ファイル **\\ \* bin \\**_YourProject_ を見つけ **ます。DslPackage。 .vsix**
 
-2. DSL をインストールするターゲットコンピューターに .vsix ファイルをコピー**します。** 自分のコンピューターでも別のコンピューターでもかまいません。
+2. DSL をインストールするターゲットコンピューターに .vsix ファイルをコピー **します。** 自分のコンピューターでも別のコンピューターでもかまいません。
 
    - ターゲットコンピューターは、 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 実行時に dsl をサポートするのいずれかのエディションを搭載している必要があります。 詳細については、「 [サポートされている Visual Studio エディションの視覚化 & モデリング SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)」を参照してください。
 
-   - 対象のコンピューターには、 **DslPackage\source.extensions.manifest**で指定されている Visual Studio のいずれかのエディションが必要です。
+   - 対象のコンピューターには、 **DslPackage\source.extensions.manifest** で指定されている Visual Studio のいずれかのエディションが必要です。
 
 3. ターゲットコンピューターで、 **.vsix** ファイルをダブルクリックします。
 
@@ -82,7 +84,7 @@ DSL がこの方法でインストールされている場合、ユーザーは 
        <InstalledByMsi>true</InstalledByMsi>
        ```
 
-2. Windows エクスプローラーで DSL を表すアイコンを作成または編集します。 たとえば、 **DslPackage\Resources\File.ico**を編集します。
+2. Windows エクスプローラーで DSL を表すアイコンを作成または編集します。 たとえば、 **DslPackage\Resources\File.ico** を編集します。
 
 3. DSL の次の属性が正しいことを確認します。
 
@@ -92,21 +94,21 @@ DSL がこの方法でインストールされている場合、ユーザーは 
 
        - Version
 
-   - [ **エディター** ] ノードをクリックし、プロパティウィンドウの [ **アイコン**] をクリックします。 **Dslpackage\ Resources**でアイコンファイルを参照するように値を設定し**ます。たとえば、ファイル .ico などです。**
+   - [ **エディター** ] ノードをクリックし、プロパティウィンドウの [ **アイコン**] をクリックします。 **Dslpackage\ Resources** でアイコンファイルを参照するように値を設定し **ます。たとえば、ファイル .ico などです。**
 
    - [ **ビルド** ] メニューの [ **Configuration Manager**] を開き、[ **リリース** ] や [ **デバッグ**] など、ビルドする構成を選択します。
 
-4. [視覚化とモデリング SDK のホームページ](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)にアクセスし、[**ダウンロード**] タブから**CreateMsiSetupProject.tt**をダウンロードします。
+4. [視覚化とモデリング SDK のホームページ](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)にアクセスし、[**ダウンロード**] タブから **CreateMsiSetupProject.tt** をダウンロードします。
 
 5. Dsl プロジェクトに **CreateMsiSetupProject.tt** を追加します。
 
-    Visual Studio によって、 **CreateMsiSetupProject**という名前のファイルが作成されます。
+    Visual Studio によって、 **CreateMsiSetupProject** という名前のファイルが作成されます。
 
 6. Windows エクスプローラーで、Dsl \\ *. .vdproj を Setup という名前の新しいフォルダーにコピーします。
 
     (必要に応じて、Dsl プロジェクトから CreateMsiSetupProject.tt を除外できるようになりました)。
 
-7. **ソリューションエクスプローラー**で、 ** \\ \* .vdproj**を既存のプロジェクトとして追加します。
+7. **ソリューションエクスプローラー** で、 **\\ \* .vdproj** を既存のプロジェクトとして追加します。
 
 8. [ **プロジェクト** ] メニューの [ **プロジェクトの依存関係**] をクリックします。
 

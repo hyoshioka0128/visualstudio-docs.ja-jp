@@ -1,5 +1,7 @@
 ---
-title: プロジェクト テンプレートと項目テンプレートの読み込みのトラブルシューティング
+title: プロジェクト テンプレートと項目テンプレートのトラブルシューティング
+description: テンプレートを開発環境に読み込むことができない場合に、テンプレートのトラブルシューティングを行う方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 42dc34d846f37ed1d7655d6758d045b2db7187d9
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591386"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596847"
 ---
 # <a name="how-to-troubleshoot-templates"></a>方法: テンプレートの問題を解決する
 

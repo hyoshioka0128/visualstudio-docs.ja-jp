@@ -1,5 +1,7 @@
 ---
 title: 依存関係図にコマンドおよびジェスチャを追加する
+description: Visual Studio の依存関係図で、右クリックメニューコマンドとジェスチャハンドラーを定義する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc91e2c160d2081db868daf8d8dbaeb041172297
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531392"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362224"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>依存関係図にコマンドおよびジェスチャを追加する
 
@@ -26,7 +28,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 > [!NOTE]
 > また、ユーザーのソースコードと依存関係図を比較して、アーキテクチャの検証をカスタマイズすることもできます。 アーキテクチャの検証は、別の Visual Studio プロジェクトで定義する必要があります。 それを他の拡張機能と同じ VSIX に追加できます。 詳細については、「 [依存関係図へのカスタムアーキテクチャ検証の追加](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)」を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 「 [要件](../modeling/extend-layer-diagrams.md#requirements)」を参照してください。
 
@@ -38,7 +40,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
    このテンプレートでは、動作する小さい例を含むプロジェクトが作成されます。
 
-2. 拡張機能をテストするには、 **ctrl** + **f5**キーまたは**f5**キーを押します。
+2. 拡張機能をテストするには、 **ctrl** + **f5** キーまたは **f5** キーを押します。
 
     Visual Studio の実験用インスタンスが起動します。 このインスタンスでは、依存関係図を作成します。 独自のコマンドまたはジェスチャ拡張機能が、この図で動作します。
 
@@ -52,13 +54,13 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
 ::: moniker range="vs-2017"
 
-5. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin*ディレクトリで *.vsix*ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**ツール**] メニューの [**拡張機能と更新プログラム**] をクリックします。
+5. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin* ディレクトリで *.vsix* ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**ツール**] メニューの [**拡張機能と更新プログラム**] をクリックします。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin*ディレクトリで *.vsix*ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**拡張**機能] メニューの [**拡張機能の管理**] を選択します。
+5. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin* ディレクトリで *.vsix* ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**拡張** 機能] メニューの [**拡張機能の管理**] を選択します。
 
 ::: moniker-end
 
@@ -66,16 +68,16 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
 コマンド、レイヤー検証コントロール、および他の拡張機能を含む 1 つの VSIX を作成する場合は、VSIX を定義するプロジェクトとハンドラー用のプロジェクトを分けることをお勧めします。
 
-1. 新しい**クラス ライブラリ** プロジェクトを作成します。 このプロジェクトに、コマンドまたはジェスチャ ハンドラーのクラスを格納します。
+1. 新しい **クラス ライブラリ** プロジェクトを作成します。 このプロジェクトに、コマンドまたはジェスチャ ハンドラーのクラスを格納します。
 
    > [!NOTE]
    > コマンドまたはジェスチャ ハンドラーのクラスは 1 つのクラス ライブラリに複数定義できますが、レイヤー検証クラスは別のクラス ライブラリで定義する必要があります。
 
-2. ソリューションで VSIX プロジェクトを追加または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest**という名前のファイルが含まれています。
+2. ソリューションで VSIX プロジェクトを追加または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest** という名前のファイルが含まれています。
 
-3. **ソリューションエクスプローラー**で、VSIX プロジェクトを右クリックし、[**スタートアッププロジェクトに設定**] を選択します。
+3. **ソリューションエクスプローラー** で、VSIX プロジェクトを右クリックし、[**スタートアッププロジェクトに設定**] を選択します。
 
-4. **source.extension.vsixmanifest**の **[アセット]** で、コマンドまたはジェスチャ ハンドラーのプロジェクトを MEF コンポーネントとして追加します。
+4. **source.extension.vsixmanifest** の **[アセット]** で、コマンドまたはジェスチャ ハンドラーのプロジェクトを MEF コンポーネントとして追加します。
 
     1. **[アセット]** タブで、 **[新規]** をクリックします。
 
@@ -87,7 +89,7 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
 5. コマンドまたはジェスチャハンドラープロジェクトに戻り、次のプロジェクト参照を追加します。
 
-   |**リファレンス**|**実行できる操作**|
+   |**参照**|**実行できる操作**|
    |-|-|
    |Program Files\Microsoft Visual Studio [バージョン]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|レイヤーを作成および編集する|
    |Microsoft.VisualStudio.Uml.Interfaces|レイヤーを作成および編集する|
@@ -102,11 +104,11 @@ Visual Studio の依存関係図では、右クリックメニューコマンド
 
      [ジェスチャ ハンドラーを定義する](#gesture)
 
-7. この機能をテストするには、 **ctrl** + **f5**キーまたは**f5**キーを押します。
+7. この機能をテストするには、 **ctrl** + **f5** キーまたは **f5** キーを押します。
 
    Visual Studio の実験用インスタンスが開きます。 このインスタンスでは、依存関係図を作成するか開きます。
 
-8. VSIX を Visual Studio のメインインスタンスまたは別のコンピューターにインストールするには、vsix プロジェクトの**bin**ディレクトリで **.vsix ファイルを見つけます。** このファイルを、VSIX をインストールするコンピューターにコピーします。 エクスプローラーで、VSIX ファイルをダブルクリックします。
+8. VSIX を Visual Studio のメインインスタンスまたは別のコンピューターにインストールするには、vsix プロジェクトの **bin** ディレクトリで **.vsix ファイルを見つけます。** このファイルを、VSIX をインストールするコンピューターにコピーします。 エクスプローラーで、VSIX ファイルをダブルクリックします。
 
 ## <a name="defining-a-menu-command"></a><a name="command"></a> メニューコマンドの定義
 
@@ -246,7 +248,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** : ユーザーが図にアイテムをドロップすると呼び出されます。
 
-- 各メソッドの最初の引数は、レイヤー要素を取得できる `IShape`です。 たとえば、次のように入力します。
+- 各メソッドの最初の引数は、レイヤー要素を取得できる `IShape`です。 次に例を示します。
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)

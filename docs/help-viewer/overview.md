@@ -1,5 +1,6 @@
 ---
 title: オフライン ヘルプ ドキュメント
+description: Microsoft ヘルプビューアーを使用して、Visual Studio や .NET などのさまざまな製品やテクノロジに関するオフラインヘルプドキュメントをインストールして表示します。
 ms.date: 11/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e0ec4755584a7021d4f5489500aa53b9bad87e
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824874"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878970"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft ヘルプ ビューアー
 

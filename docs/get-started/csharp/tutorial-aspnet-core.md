@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 15fcc5981c5711c7c3ddcf7262649a9d3473ee55
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580051"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833326"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -67,7 +67,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 ### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
-**ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発**ワークロードを追加して取得できます。 コンピューターにインストールされている Visual Studio 2017 の更新プログラムに応じて、次の 2 つの方法のうちのいずれかでこのワークロードを追加することができます。
+**ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発** ワークロードを追加して取得できます。 コンピューターにインストールされている Visual Studio 2017 の更新プログラムに応じて、次の 2 つの方法のうちのいずれかでこのワークロードを追加することができます。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 
@@ -139,7 +139,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 ### <a name="about-your-solution"></a>ソリューションについて
 
-このソリューションは **Razor ページ** デザイン パターンに従っています。 これは [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) デザイン パターンとは異なり、モデルとコント ローラーのコードが Razor ページ自体の中に含まれるよう効率化されています。
+このソリューションは **Razor ページ** デザイン パターンに従っています。 これは [Model-View-Controller (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) デザイン パターンとは異なり、モデルとコント ローラーのコードが Razor ページ自体の中に含まれるよう効率化されています。
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>ソリューションのツアーを体験する
@@ -154,7 +154,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
  1. コード エディターで **About.cshtml** ファイルを表示します。
 
-     ![Visual Studio コード エディターで About.cshtml ファイルを表示する](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
+     ![Visual Studio コード エディターの About.cshtml ファイルの最初の 10 行を示すスクリーンショット。](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code.png)
 
  1. **About.cshtml.cs** ファイルを選択します。
 
@@ -162,7 +162,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
  1. コード エディターで **About.cshtml.cs** ファイルを表示します。
 
-     ![Visual Studio コード エディターで About.cshtml ファイルを表示する](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
+     ![Visual Studio コード エディターの About.cshtml.cs ファイルの最初の 18 行を示すスクリーンショット。 ](media/csharp-aspnet-razor-aboutcshtmlcs-mycoreapp-code.png)
 
  1. プロジェクトには、Web サイトのルートとなる **wwwroot** フォルダーが含まれます。 その内容を表示するには、フォルダーを展開します。
 
@@ -170,7 +170,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
     &mdash;CSS、イメージ、JavaScript ライブラリなど&mdash;の静的サイト コンテンツを、任意のパスに直接配置することができます。
 
- 1. プロジェクトには、実行時に Web アプリを管理する構成ファイルも含まれます。 既定のアプリケーション[構成](/aspnet/core/fundamentals/configuration)は *appsettings.json* に格納されます。 しかし、*appsettings.Development.json* を使用して、これらの設定をオーバーライドすることができます。 **appsettings.Development.json** ファイルを表示するには、**appsettings.json** ファイルを展開します。
+ 1. プロジェクトには、実行時に Web アプリを管理する構成ファイルも含まれます。 既定のアプリケーション [構成](/aspnet/core/fundamentals/configuration)は *appsettings.json* に格納されます。 しかし、*appsettings.Development.json* を使用して、これらの設定をオーバーライドすることができます。 **appsettings.Development.json** ファイルを表示するには、**appsettings.json** ファイルを展開します。
 
      ![Visual Studio のソリューション エクスプローラーの構成ファイル](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -273,7 +273,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
     &mdash;CSS、イメージ、JavaScript ライブラリなど&mdash;の静的サイト コンテンツを、任意のパスに直接配置することができます。
 
- 1. プロジェクトには、実行時に Web アプリを管理する構成ファイルも含まれます。 既定のアプリケーション[構成](/aspnet/core/fundamentals/configuration)は *appsettings.json* に格納されます。 しかし、*appsettings.Development.json* を使用して、これらの設定をオーバーライドすることができます。 **appsettings.Development.json** ファイルを表示するには、**appsettings.json** ファイルを展開します。
+ 1. プロジェクトには、実行時に Web アプリを管理する構成ファイルも含まれます。 既定のアプリケーション [構成](/aspnet/core/fundamentals/configuration)は *appsettings.json* に格納されます。 しかし、*appsettings.Development.json* を使用して、これらの設定をオーバーライドすることができます。 **appsettings.Development.json** ファイルを表示するには、**appsettings.json** ファイルを展開します。
 
      ![Visual Studio のソリューション エクスプローラーの構成ファイル](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -366,7 +366,7 @@ Visual Studio は、開発者向け生産性向上ツールの統合開発スイ
 これでこのチュートリアルは完了です。 C#、ASP.NET Core、Visual Studio IDE について少しはご理解いただけたかと思います。 C# と ASP.NET を使用する Web アプリまたは Web サイトの作成方法の詳細については、以下のチュートリアルに進んで確認してください。
 
 > [!div class="nextstepaction"]
-> [ASP.NET Core で Razor ページ Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [ASP.NET Core で Razor ページ Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>関連項目
 

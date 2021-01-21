@@ -1,5 +1,7 @@
 ---
-title: 方法 - Spy++ の起動 | Microsoft Docs
+title: Spy++ の起動 | Microsoft Docs
+description: ソリューションをデバッグするときに、Visual Studio からまたはコマンド プロンプトで Spy++ ツールを起動する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/16/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b659350adc39fd1088964976b8bcdef629bad44b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 79796ec8984f9baee1d6b3e6c760d41297d70701
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349005"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150692"
 ---
 # <a name="how-to-start-spy"></a>方法: Spy++ の起動
 

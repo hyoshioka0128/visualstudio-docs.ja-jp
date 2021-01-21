@@ -1,5 +1,5 @@
 ---
-title: エラー - Kerberos 認証に失敗しました | Microsoft Docs
+title: Kerberos 認証に失敗しました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afa4aca82a83f5b7ba64ad0e9958710582a6a0
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460678"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852694"
 ---
 # <a name="error-kerberos-authentication-failed"></a>エラー :Kerberos 認証に失敗しました
 リモート デバッグを実行するときに、次のエラー メッセージが表示されることがあります。

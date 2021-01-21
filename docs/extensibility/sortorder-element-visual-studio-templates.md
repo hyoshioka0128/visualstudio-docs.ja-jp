@@ -1,5 +1,7 @@
 ---
 title: 順序の要素 (Visual Studio テンプレート) |Microsoft Docs
+description: 順序付け要素について説明し、[新しいプロジェクト] ダイアログボックスまたは [新しい項目の追加] ダイアログボックスに表示されるテンプレートの配置に使用される値を指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699963"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903755"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 要素 (Visual Studio テンプレート)
 [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートを、同じカテゴリの他のテンプレートの中に配置するために使用される値を指定します。
@@ -53,7 +55,7 @@ ms.locfileid: "80699963"
 
  `integer`並べ替え順序の値を表す。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `SortOrder` は省略可能な要素です。 既定値は100で、すべての値は10の倍数である必要があります。
 
  `SortOrder`ユーザーが作成したテンプレートでは、要素は無視されます。 ユーザーが作成したすべてのテンプレートはアルファベット順に並べ替えられます。
@@ -82,6 +84,6 @@ ms.locfileid: "80699963"
 
  この例では、 `SortOrder` 要素は比較的高いです。 他の [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 項目テンプレートの `SortOrder` 値がよりも小さく、[ `290` **新しい項目** ] ダイアログボックスでこのテンプレートの前に表示される可能性があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

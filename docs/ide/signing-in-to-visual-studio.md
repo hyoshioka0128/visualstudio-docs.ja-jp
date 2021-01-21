@@ -1,21 +1,22 @@
 ---
 title: Visual Studio にサインイン
+description: Visual Studio にサインインする方法について説明します。
 titleSuffix: ''
-ms.custom: seodec18
-ms.date: 07/24/2020
-ms.topic: conceptual
+ms.custom: seodec18, contperf-fy21q1
+ms.date: 09/11/2020
+ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d6bf69050348cbe078cfdf7ae2d419f1dd13745
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 87c0ad7517bb01aa68d98e0502e34af7c767e962
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235200"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683990"
 ---
 # <a name="sign-in-to-visual-studio"></a>Visual Studio にサインイン
 
@@ -38,7 +39,7 @@ Visual Studio の開発エクスペリエンスをカスタマイズし、最適
 期待できる内容とサイン後に行うことができる内容の完全なリストを以下に示します。
 - **Visual Studio の評価期間を拡張する** - 30 日の評価期間にとらわれることなく、Visual Studio Professional または Visual Studio Enterprise を 90 日間延長して使用できます。 詳細については、「[試用版を延長する、またはライセンスを更新する](../ide/how-to-unlock-visual-studio.md)」をご覧ください。
 
-- **Visual Studio Community エディションの使用を継続する** - Community エディションのインストール時にライセンスを求めるプロンプトが表示された場合、IDE にサインインし、引き続き Visual Studio Community を**無料**で使用します。 
+- **Visual Studio Community エディションの使用を継続する** - Community エディションのインストール時にライセンスを求めるプロンプトが表示された場合、IDE にサインインし、引き続き Visual Studio Community を **無料** で使用します。 
 
 - **Visual Studio サブスクリプションまたは Azure DevOps 組織に関連付けられているアカウントを使用している場合は、Visual Studio をロック解除します**。 詳細な手順については、「[試用版を延長する、またはライセンスを更新する](../ide/how-to-unlock-visual-studio.md)」をご覧ください。
 
@@ -46,11 +47,11 @@ Visual Studio の開発エクスペリエンスをカスタマイズし、最適
 
 - **Visual Studio の設定を同期する** - どのデバイス上の Visual Studio にサインインしても、ユーザーがカスタマイズした設定 (キー バインド、ウィンドウのレイアウト、配色テーマなど) がすぐに適用されます。 [Visual Studio での設定の同期](../ide/synchronized-settings-in-visual-studio.md)に関する記事をご覧ください。
 
-- IDE で、**Azure や Azure DevOps Services などのサービスに自動的に接続**され、同じアカウントの資格情報を再度要求されることはなくなります。
+- IDE で、**Azure や Azure DevOps Services などのサービスに自動的に接続** され、同じアカウントの資格情報を再度要求されることはなくなります。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Visual Studio にサインインする方法
 
-Visual Studio を初めて開くと、サインインして基本登録情報を入力するように求められます。 
+Visual Studio を初めて開くと、サインインして基本登録情報を入力するように求められます。
 
 ![サインイン プロンプト](../ide/media/vs2019_signinpopup.png)
 
@@ -62,7 +63,7 @@ Microsoft アカウント、またはユーザーを最も的確に表す職場�
 
 ![VS2019 に現在ログインしているユーザー](../ide/media/vs2019_username.png)
 
-最初に Visual Studio を開いたときにサインインしないように選択した場合、後から簡単にサインインできます。 Visual Studio 環境の右上隅にある **[サインイン]** リンクを探してください。 
+最初に Visual Studio を開いたときにサインインしないように選択した場合、後から簡単にサインインできます。 Visual Studio 環境の右上隅にある **[サインイン]** リンクを探してください。
 
 ![サインインしていないユーザー](../ide/media/vs2019_usernotsignedin.png)
 
@@ -83,6 +84,7 @@ Microsoft アカウント、またはユーザーを最も的確に表す職場�
 ## <a name="see-also"></a>関連項目
 
 * [試用版を延長する、またはライセンスを更新する](../ide/how-to-unlock-visual-studio.md)
+* [Visual Studio の GitHub アカウントを使って作業する](../ide/work-with-github-accounts.md)
 * [Visual Studio IDE の概要](../get-started/visual-studio-ide.md)
 * [サインイン (Visual Studio for Mac)](/visualstudio/mac/signing-in)
 * [アクティブ化 (Visual Studio for Mac)](/visualstudio/mac/activation)

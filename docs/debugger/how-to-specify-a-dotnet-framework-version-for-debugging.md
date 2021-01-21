@@ -1,6 +1,7 @@
 ---
 title: デバッグ用の .NET Framework のバージョンを指定する | Microsoft Docs
-ms.custom: seodec18
+description: デバッグ用に古い .NET Framework のバージョンを指定します。 Visual Studio デバッガーでは、.NET Framework の現在のバージョンだけでなく、古いバージョンのデバッグもサポートされています。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ae48670fceb78ff85f395852f0a31414f37e8cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6b536cbfbd1019fc9b55a0113525f37030493f8
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349069"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149418"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>デバッグ用に古い .NET Framework バージョンを指定する (C#、Visual Basic、F#)
 
@@ -44,7 +45,7 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
 2. **レジストリ エディター** (regedit) を起動します。
 
-3. **レジストリ エディター**で、[HKEY_LOCAL_MACHINE] フォルダーを開きます。
+3. **レジストリ エディター** で、[HKEY_LOCAL_MACHINE] フォルダーを開きます。
 
 4. 次に移動します。HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
@@ -60,7 +61,7 @@ The debugger has made an incorrect assumption about the .NET Framework version y
 
 8. **[OK]** をクリックします。
 
-9. **レジストリ エディター**を閉じます。
+9. **レジストリ エディター** を閉じます。
 
      それでもデバッグの開始時にエラー メッセージが表示される場合は、レジストリに正しいバージョン番号が入力されていることを確認します。 また、Visual Studio でサポートされている .NET Framework のバージョンを使用していることを確認します。 デバッガーは、現在のバージョンおよび以前のバージョンの .NET Framework と互換性がありますが、将来のバージョンとの上位互換性はない可能性があります。
 

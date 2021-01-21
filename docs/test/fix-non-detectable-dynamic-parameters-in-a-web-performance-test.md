@@ -1,5 +1,7 @@
 ---
-title: Web パフォーマンス テストでの検出できない動的パラメーターの修正
+title: 検出できない動的パラメーターの修正 (Web パフォーマンス テスト)
+description: Web パフォーマンス テスト レコーダーと再生エンジンによって、最も一般的な種類の動的パラメーターが自動的に処理されるしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 25df1c0d0d3165ba8afb068fc416a872af737a82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f670c9cf543ae209ebed63ce185fadfbbe253d0
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288755"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815725"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Web パフォーマンス テストでの検出できない動的パラメーターの修正
 
@@ -118,7 +120,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 13. プロジェクトを保存します。
 
-14. **ソリューション エクスプローラー**で、*Querystring.aspx* をスタート ページとして設定します。
+14. **ソリューション エクスプローラー** で、*Querystring.aspx* をスタート ページとして設定します。
 
      ![Querystring.aspx をスタート ページとして設定する](../test/media/web_test_dynamicparameter_setstartpage.png)
 
@@ -188,13 +190,13 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
 3. Web パフォーマンス テスト結果ビューアーに戻って、失敗した *JScriptQuery.aspx* ページを選択します。 次に、[要求] タブをクリックし、[生データの表示] チェック ボックスがオフになっていることを確認します。スクロール ダウンし、CustomQueryString の [クイック検索] をクリックします。
 
-     ![クイック検索を使用して動的パラメーターを特定する](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
+     ![Web パフォーマンス テスト結果ビューアーの [要求] タブのスクリーンショット。 QueryString パラメーターが選択され、コンテキスト メニューで [クイック検索] が強調表示されています。](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
 4. テスト エディターに表示された内容から、*JScriptQuery.aspx* 要求の CustomQueryString には `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` という値が割り当てられており、動的と思われる部分は "1v0yhyiyr0raa2w4j4pwf5zl" だということがわかっています。 [検索する文字列] ドロップダウン リストで、動的と思われる部分を検索文字列から削除します。 文字列は、"CustomQueryString=jScriptQueryString___" のようになります。
 
      動的パラメーターには、エラーが存在する要求より前の要求で値が割り当てられます。 このため、[上へ検索] チェック ボックスをオンにして、[次を検索] をクリックし、[要求] パネルで先行する *Querystring.aspx* の要求が強調表示されるまで検索を続けます。 [次を検索] を 3 回クリックすると、その状態になります。
 
-     ![クイック検索を使用して動的パラメーターを特定する](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
+     ![Web パフォーマンス テスト結果ビューアーのスクリーンショット。 クエリ文字列が選択され、[検索] ダイアログでは [上へ検索] が示され、[次を検索] が選択されています。](../test/media/web_test_dynamicparameter_runresultsquckfind4.png)
 
      [応答] タブや、前に実装した JavaScript (次に示すコード) からわかるように、クエリ文字列パラメーター CustomQueryString には "jScriptQueryString___" という値が割り当てられており、その後に var sessionId からの戻り値が連結されています。
 
@@ -241,7 +243,7 @@ Web サイトによっては、一部の Web 要求の処理に動的パラメ�
 
      ![QueryString に適用されたパラメーター](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
-10. **検索と置換**のダイアログ ボックスを閉じます。 要求ツリーで、検出された動的パラメーターと、関連付けた検出されない動的パラメーターとの間に同様の構造があることを確認します。
+10. **検索と置換** のダイアログ ボックスを閉じます。 要求ツリーで、検出された動的パラメーターと、関連付けた検出されない動的パラメーターとの間に同様の構造があることを確認します。
 
      ![検出され関連付けられた動的パラメーター](../test/media/web_test_dynamicparameter_conclusion.png)
 

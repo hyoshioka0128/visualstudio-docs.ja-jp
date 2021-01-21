@@ -1,5 +1,7 @@
 ---
 title: デザイナーに取り消しサポートを提供する |Microsoft Docs
+description: デザイナーで、自動的に、または Visual Studio SDK の機能を使用して、元に戻す機能を提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0580f974c362a71c3e400946f2ad34f565ad1232
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4108e259fb0a2e60c2719df8a7fb76f273634799
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699672"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715576"
 ---
 # <a name="supply-undo-support-to-designers"></a>デザイナーに取り消しサポートを提供する
 
@@ -29,7 +31,7 @@ Visual Studio で実装されているほとんどのデザイナーには、環
 
 - クラスとクラスを実装して、永続化および CodeDOM サポートを提供し <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  <xref:System.ComponentModel.Design.IComponentChangeService> ます。
 
-.NET Framework を使用したデザイナーの作成の詳細については、「 [デザイン時サポートの拡張](/previous-versions/37899azc(v=vs.140))」を参照してください。
+.NET Framework を使用したデザイナーの作成の詳細については、「 [Design-Time サポートの拡張](/previous-versions/37899azc(v=vs.140))」を参照してください。
 
 は、 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 次のように既定の元に戻すインフラストラクチャを提供します。
 
@@ -103,4 +105,4 @@ Visual Studio で作成されたすべてのデザイナーでは、デザイナ
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
-- [デザイン時サポートの拡張](/previous-versions/37899azc(v=vs.140))
+- [Design-Time サポートの拡張](/previous-versions/37899azc(v=vs.140))

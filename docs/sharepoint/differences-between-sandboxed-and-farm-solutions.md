@@ -1,5 +1,7 @@
 ---
 title: サンドボックスソリューションとファームソリューションの違い |Microsoft Docs
+description: サンドボックスソリューションとファームソリューションの違いについて説明します。 どちらの種類のソリューションでも Visual Studio がデバッグにどのように近づいているかを理解します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25c1c9047ba9e38e3e652abcbe92ce6575d7b750
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62967547"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672783"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>サンドボックスソリューションとファームソリューションの違い
   SharePoint ソリューションをコンパイルすると、sharepoint サーバーに配置され、デバッガーがアタッチされてデバッグされます。 ソリューションのデバッグに使用されるプロセスは、サンドボックスソリューションのプロパティの設定 (サンドボックスソリューションまたはファームソリューション) によって異なります。
@@ -38,7 +40,7 @@ ms.locfileid: "62967547"
 
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 現在のサイトを実行している w3wp.exe または Spucworkerprocess.exe プロセスにのみデバッガーをアタッチします。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] マネージ COM + とワークフローデバッグエンジンもアタッチします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [SharePoint ソリューションのデバッグ](../sharepoint/debugging-sharepoint-solutions.md)
 - [SharePoint ソリューションのビルドとデバッグ](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [サンドボックスソリューションに関する考慮事項](../sharepoint/sandboxed-solution-considerations.md)
+- [サンドボックス ソリューションの考慮事項](../sharepoint/sandboxed-solution-considerations.md)

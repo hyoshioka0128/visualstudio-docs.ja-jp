@@ -1,5 +1,7 @@
 ---
 title: IntelliSense の C++ プロジェクトを構成する
+description: IntelliSense の問題を特定および修正するために Visual Studio IDE を使用して、IntelliSense が正しく動作するように C++ プロジェクトを手動で構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2018
 ms.topic: conceptual
 author: corob-msft
@@ -7,12 +9,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 610f3d92d86e227973be9c481adaf830d3d16737
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 34be73203f5c1d01e4674e7892e0f89d4aae4816
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509888"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478797"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>IntelliSense の C++ プロジェクトを構成する
 
@@ -20,7 +22,7 @@ ms.locfileid: "89509888"
 
 ## <a name="single-file-intellisense"></a>単一ファイルの IntelliSense
 
-プロジェクトに含まれていないファイルを開くと、Visual Studio によっていくつかの IntelliSense サポートが提供されますが、既定ではエラーを示す波線は表示されません。 **ナビゲーション バー**に *[その他のファイル]* が表示されている場合は、それが不正なコードの下にエラーを示す波線が表示されない理由、またはプリプロセッサ マクロが定義されていない理由の説明になる場合があります。
+プロジェクトに含まれていないファイルを開くと、Visual Studio によっていくつかの IntelliSense サポートが提供されますが、既定ではエラーを示す波線は表示されません。 **ナビゲーション バー** に *[その他のファイル]* が表示されている場合は、それが不正なコードの下にエラーを示す波線が表示されない理由、またはプリプロセッサ マクロが定義されていない理由の説明になる場合があります。
 
 ## <a name="check-the-error-list"></a>エラー一覧を確認する
 
@@ -34,7 +36,7 @@ IntelliSense では、最大 1000 個のエラーが生成されます。 ソー
 
 ### <a name="msbuild-projects"></a>MSBuild プロジェクト
 
-Visual Studio IDE の外部でビルドを実行し、ビルドは成功したが IntelliSense が正しくない場合、コマンドラインが 1 つまたは複数の構成のプロジェクト設定と同期していない可能性があります。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして、現在の構成とプラットフォームに対してすべての **#include** パスが正しいことを確認します。 すべての構成とプラットフォームでパスが同一の場合は、 **[すべての構成]** と **[すべてのプラットフォーム]** を選択し、パスが正しいことを確認します。
+Visual Studio IDE の外部でビルドを実行し、ビルドは成功したが IntelliSense が正しくない場合、コマンドラインが 1 つまたは複数の構成のプロジェクト設定と同期していない可能性があります。 **ソリューション エクスプローラー** でプロジェクト ノードを右クリックして、現在の構成とプラットフォームに対してすべての **#include** パスが正しいことを確認します。 すべての構成とプラットフォームでパスが同一の場合は、 **[すべての構成]** と **[すべてのプラットフォーム]** を選択し、パスが正しいことを確認します。
 
 ![VC++ インクルード ディレクトリ](media/vcpp-intellisense-include-paths.png)
 
@@ -99,7 +101,7 @@ IntelliSense コンパイラが、インクルード パスとプリプロセッ
 
 Visual Studio では、専用の C++ コンパイラを使用して、すべての IntelliSense 機能を実現するデータベースを作成および維持します。 IntelliSense データベースをコードと同期させるため、Visual Studio はプロジェクト設定またはソース ファイルに行われた特定の変更に応えて、IntelliSense 専用のビルドをバックグラウンド タスクとして自動的に起動します。
 
-ただし、場合によっては、Visual Studio で IntelliSense データベースが適切なタイミングで更新されない場合があります。 たとえば、**git pull** または **git checkout** コマンドを実行すると、Visual Studio でファイル内の変更を検出するのに、最大 1 時間かかる場合があります。 **ソリューション エクスプローラー**でプロジェクト ノードを右クリックして **[ソリューションの再スキャン]** を選択し、ソリューション内のすべてのファイルの再スキャンを強制することができます。
+ただし、場合によっては、Visual Studio で IntelliSense データベースが適切なタイミングで更新されない場合があります。 たとえば、**git pull** または **git checkout** コマンドを実行すると、Visual Studio でファイル内の変更を検出するのに、最大 1 時間かかる場合があります。 **ソリューション エクスプローラー** でプロジェクト ノードを右クリックして **[ソリューションの再スキャン]** を選択し、ソリューション内のすべてのファイルの再スキャンを強制することができます。
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>IntelliSense のビルド エラーのトラブルシューティング
 

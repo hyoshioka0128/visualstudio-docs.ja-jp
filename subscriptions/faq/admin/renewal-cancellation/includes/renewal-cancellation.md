@@ -1,18 +1,18 @@
 ---
 title: クラウド サブスクリプションのキャンセルにはどのくらい時間がかかりますか?
 description: Visual Studio クラウド サブスクリプションをキャンセルすると、自動更新がキャンセルされます。 サブスクリプションは通常の...まで継続した後
-ms.faqid: group4_2
+ms.faqid: group4_3
 ms.topic: include
 ms.assetid: 2c83cd19-2692-4aef-9cd7-b7842639cbce
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 63e64b64b855df6f287dad0fbec363f8b783f6a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8420a48eb4e540d135d821de832b7a7c46bbefd
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85503459"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575420"
 ---
 ## <a name="how-long-does-it-take-for-my-cloud-subscription-to-be-canceled"></a>クラウド サブスクリプションのキャンセルにはどのくらい時間がかかりますか?
 

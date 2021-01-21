@@ -1,5 +1,7 @@
 ---
 title: デバッグ エラーと警告関連のダイアログ ボックス | Microsoft Docs
+description: Visual Studio でアプリケーションをデバッグするときに表示される可能性があるエラーと警告のダイアログ ボックスを一覧にまとめています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 73432c1693db1543095643a998396967b7aa2bdf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916442"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726983"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>デバッグ エラーと警告関連のダイアログ ボックス
 ここでは、アプリケーションのデバッグ中に表示される可能性があるエラーおよび警告のダイアログ ボックスの一覧を示します。
@@ -48,7 +50,7 @@ ms.locfileid: "75916442"
 
  [[現在の場所のソース コードを表示できません] ダイアログ ボックス](../debugger/no-source-available.md)
 
- [[シンボル情報なし] ダイアログ ボックス](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [[シンボル情報なし] ダイアログ ボックス](/previous-versions/d493t3ew(v=vs.100))
 
  [[あいまいさの解決] ダイアログ ボックス](../debugger/resolve-ambiguity-dialog-box.md)
 

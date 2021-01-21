@@ -1,6 +1,8 @@
 ---
 title: プロセスで回復不能なエラーが発生しました
-ms.date: 06/22/2018
+description: Visual Studio の通常の操作中に回復不能なエラーが発生する可能性があるプロセスについて説明します。
+ms.custom: SEO-VS-2020
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: eef26de3d7a5c971baedbecf3b4941fb683ddb2d
+ms.openlocfilehash: e44f96e0a8056a369b164e725aca6832b5a349cb
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81544342"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871484"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio の回復不能なプロセス エラー
 
@@ -51,3 +53,6 @@ Visual Studio では、アウト プロセスのプロセスをいくつか利�
 - WindowsAzureTelemetryService.exe
 
 これらのプロセスのいずれかが突然終了した場合、Visual Studio 内の一部の機能が停止します。 機能の損失がそれほど重要でないプロセスもありますが、 それ以外のプロセスは、Visual Studio の安定性に影響を及ぼし、エラー メッセージが表示されます。
+
+> [!NOTE]
+> このページで言及されていない問題に遭遇した場合、[[問題の報告]](../../ide/how-to-report-a-problem-with-visual-studio.md) ツールでご報告ください。このツールは、Visual Studio インストーラーと Visual Studio IDE の両方に表示されます。

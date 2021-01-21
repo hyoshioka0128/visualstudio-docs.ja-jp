@@ -1,5 +1,7 @@
 ---
 title: VSIX パッケージに署名しています |Microsoft Docs
+description: 拡張機能アセンブリに署名する方法について説明します。 VSIX インストーラーには、VSIX に署名されたことを示すメッセージと、その署名自体に関する情報が表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17179c35496fc19322c5bb951f4d04bc28e5d7bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9152e45b402294dfd0bbb41bfda2c685588f01e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700088"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97716082"
 ---
 # <a name="signing-vsix-packages"></a>VSIX パッケージの署名
 拡張機能アセンブリは、Visual Studio で実行する前に署名する必要はありませんが、これを行うことをお勧めします。
@@ -46,5 +48,5 @@ ms.locfileid: "80700088"
 
    VSIXSignTool.exe サインイン/f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio 拡張機能の配布](../extensibility/shipping-visual-studio-extensions.md)

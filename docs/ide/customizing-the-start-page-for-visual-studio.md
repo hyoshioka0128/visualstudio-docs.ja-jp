@@ -1,5 +1,7 @@
 ---
 title: スタートアップ エクスペリエンスを変更する
+description: Visual Studio が最も役立つツールと共に開かれるように、スタートアップ エクスペリエンスをカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/01/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3928ab1cad67cac26865229cbe6d317083a0a4f1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567217"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598108"
 ---
 # <a name="customize-startup"></a>スタートアップをカスタマイズする
 
@@ -32,9 +34,9 @@ Visual Studio のスタートアップ エクスペリエンスは何種類か�
 
 ## <a name="to-change-the-startup-item"></a>スタートアップ アイテムを変更する
 
-1. メニュー バーの **[ツール]**  >  **[オプション]** の順にクリックします。
+1. メニュー バーで、 **[ツール]**  >  **[オプション]** の順に選択します。
 
-2. **[環境]** を展開し、 **[スタートアップ]** を選びます。
+2. **[環境]** を展開し、**[スタートアップ]** を選びます。
 
 ::: moniker range="vs-2017"
 
@@ -44,7 +46,7 @@ Visual Studio のスタートアップ エクスペリエンスは何種類か�
 
 ::: moniker range=">=vs-2019"
 
-3. **[On startup, open]\(起動時に開く\)** リストで、Visual Studio の起動後に実行されるようにする動作を選択します。 **スタート ウィンドウ** (新しいプロジェクトまたは既存のプロジェクトを開くことができます)、**最新のソリューション**、または**空の環境**から選択します。
+3. **[On startup, open]\(起動時に開く\)** リストで、Visual Studio の起動後に実行されるようにする動作を選択します。 **スタート ウィンドウ** (新しいプロジェクトまたは既存のプロジェクトを開くことができます)、**最新のソリューション**、または **空の環境** から選択します。
 
 ::: moniker-end
 
@@ -54,20 +56,20 @@ Visual Studio のスタートアップ エクスペリエンスは何種類か�
 
 Visual Studio SDK を使用して[独自のカスタム スタート ページを作成する](../extensibility/creating-a-custom-start-page.md)か、他のユーザーが既に作成したカスタム スタート ページを利用できます。 たとえば、[Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=Start%20Pages&sortBy=Downloads) でカスタム スタート ページを検索できます。
 
-カスタム スタート ページをインストールするには、 *.vsix* ファイルを開くか、スタート ページ ファイルをコピーしてコンピューターの *%USERPROFILE%\ドキュメント\Visual Studio 2017\StartPages* フォルダーに貼り付けます。
+カスタム スタート ページをインストールするには、*.vsix* ファイルを開くか、スタート ページ ファイルをコピーしてコンピューターの *%USERPROFILE%\ドキュメント\Visual Studio 2017\StartPages* フォルダーに貼り付けます。
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>表示するカスタム スタート ページを選択する
 
 1. メニュー バーで **[ツール]** > **[オプション]** の順に選択します。
 
-1. **[環境]** を展開し、 **[スタートアップ]** を選びます。
+1. **[環境]** を展開し、**[スタートアップ]** を選びます。
 
 1. **[スタート ページのカスタマイズ]** の一覧で、使用するページを選択します。
 
 > [!TIP]
 > カスタム スタート ページのエラーによって Visual Studio がクラッシュする場合、セーフ モードで Visual Studio を開き、既定のスタート ページを使用するように設定します。 「[/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)」をご覧ください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio IDE のカスタマイズ](../ide/personalizing-the-visual-studio-ide.md)
 

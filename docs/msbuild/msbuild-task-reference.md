@@ -1,5 +1,7 @@
 ---
 title: MSBuild タスク リファレンス | Microsoft Docs
+description: MSBuild に含まれる、ビルド プロセス中に実行されるコードを提供するタスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 58e247dc242fcacd7ea94f9f078af05dd56299e0
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78865324"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049076"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild タスク リファレンス
 
@@ -31,7 +33,7 @@ ms.locfileid: "78865324"
 | パラメーター | 説明 |
 |-------------------| - |
 | `Condition` | 省略可能な `String` 型のパラメーターです。<br /><br /> このタスクが実行されるかどうかを MSBuild エンジンが決定するために使用する `Boolean` 式です。 MSBuild でサポートされている条件について詳しくは、[条件](../msbuild/msbuild-conditions.md)に関する記事をご覧ください。 |
-| `ContinueOnError` | 省略可能なパラメーターです。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、[タスクで発生したエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)」を参照してください。 |
+| `ContinueOnError` | 省略可能なパラメーター。 次の値のいずれかを含めることができます。<br /><br /> -   **WarnAndContinue** または **true** 。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。<br />-   **ErrorAndContinue** 。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。<br />-   **ErrorAndStop** または **false** (既定)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。<br /><br /> バージョン 4.5 より前の .NET Framework では、`true` 値と `false` 値のみがサポートされます。<br /><br /> 詳細については、「[方法:タスクで発生したエラーを無視する](../msbuild/how-to-ignore-errors-in-tasks.md)」を参照してください。 |
 
 ## <a name="in-this-section"></a>このセクションの内容
 
@@ -39,7 +41,7 @@ ms.locfileid: "78865324"
 
  <xref:Microsoft.Build.Utilities.Task> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 
-- [TaskExtension 基本クラス](../msbuild/taskextension-base-class.md)
+- [TaskExtension 基底クラス](../msbuild/taskextension-base-class.md)
 
  <xref:Microsoft.Build.Tasks.TaskExtension> クラスから派生したタスクにいくつかのパラメーターを追加します。 直接使用するためのものではありません。
 

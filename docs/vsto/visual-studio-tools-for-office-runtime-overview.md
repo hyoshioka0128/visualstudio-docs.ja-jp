@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for Office ランタイムの概要
+description: Microsoft Office 開発者ツールを使用して作成されたソリューションを実行するには、Visual Studio 2010 Tools for Office runtime をエンドユーザーのコンピューターにインストールする必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31d2244796282aaad56011d5b9963232d3438ce9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16431a9ba2fe56b88f9f6b7f2c874c75bfad61c3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253983"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526273"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office ランタイムの概要
   Visual Studio の Microsoft Office 開発者ツールを使用して作成されたソリューションを実行するには、エンドユーザーのコンピューターに Visual Studio 2010 Tools for Office runtime をインストールする必要があります。 詳細については、「 [方法: Visual Studio Tools for Office ランタイム再頒布可能パッケージをインストール](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)する」を参照してください。 Visual Studio 2010 Tools for Office runtime は、次の2つの主要コンポーネントで構成されています。
@@ -53,14 +55,14 @@ ms.locfileid: "71253983"
  ほとんどの場合、ソリューションが .NET Framework 3.5 を対象とするかまたは [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]を対象とするかに関係なく、Office ソリューションで記述するコードは同じです。 ただし、一部の機能については、対象となる .NET Framework のバージョンが異なる場合に別のコードが必要になります。 詳細については、「 [.NET Framework 4 以降への Office ソリューションの移行](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)」を参照してください。
 
 ### <a name="interfaces-in-the-office-extensions-for-the-net-framework-4-or-later"></a>.NET Framework 4 以降用の Office 拡張機能のインターフェイス
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降用の Office 拡張機能に含まれるインターフェイスの大部分は、ユーザー コードで実装されることを意図していません。 直接実装できるインターフェイスは、 **I**という文字で始まる名前の付いたインターフェイスです。たとえば、 <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>などです。
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降用の Office 拡張機能に含まれるインターフェイスの大部分は、ユーザー コードで実装されることを意図していません。 直接実装できるインターフェイスは、 **I** という文字で始まる名前の付いたインターフェイスです。たとえば、 <xref:Microsoft.Office.Tools.Excel.ISmartTagExtension>などです。
 
  文字 **I** で始まらないすべてのインターフェイスは、Visual Studio 2010 Tools for Office runtime によって内部的に実装されます。これらのインターフェイスは、今後のリリースで変更される可能性があります。 これらのインターフェイスを実装するオブジェクトを作成するには、プロジェクトで `Globals.Factory` オブジェクトによって提供されるメソッドを使用します。 たとえば、<xref:Microsoft.Office.Tools.Excel.SmartTag> インターフェイスを実装するオブジェクトを取得するには、`Globals.Factory.CreateSmartTag` メソッドを使用します。 の詳細について `Globals.Factory` は、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。
 
 ### <a name="enable-type-equivalence-and-embedded-types-in-projects-that-target-the-net-framework-4-or-later"></a>.NET Framework 4 以降を対象とするプロジェクトでの型の等価性と埋め込み型の有効化
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降用の Office 拡張機能のオブジェクト モデルはインターフェイスに基づいているため、Visual Studio の Visual C# および Visual Basic の両方で、型の等価性の機能を使用して [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] から取得した型情報をソリューションに埋め込むことができます。 この機能によって、Office ソリューションおよび [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] が、それぞれ独立してバージョン管理できるようになります。 たとえば、ソリューションで <xref:Microsoft.Office.Tools.Word.Document> インターフェイスを埋め込み型として使用し、ランタイムの次のバージョンによって <xref:Microsoft.Office.Tools.Word.Document> インターフェイスにメンバーが追加される場合でも、そのソリューションは引き続きランタイムの次のバージョンで機能します。 ソリューションで <xref:Microsoft.Office.Tools.Word.Document> インターフェイスを埋め込み型として使用しない場合、そのソリューションはランタイムの次のバージョンで機能しません。
 
- 既定では、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とする Office プロジェクトを作成するときに、型の等価性の機能は有効になりません。 この機能を有効にするには、プロジェクト内の次のアセンブリ参照の **相互運用型の埋め込み** プロパティを **True**に設定します。
+ 既定では、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 以降を対象とする Office プロジェクトを作成するときに、型の等価性の機能は有効になりません。 この機能を有効にするには、プロジェクト内の次のアセンブリ参照の **相互運用型の埋め込み** プロパティを **True** に設定します。
 
 - Microsoft.Office.Tools.dll
 
@@ -85,7 +87,7 @@ ms.locfileid: "71253983"
  *VSTOEE.dll* によって、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ソリューションおよびインストールされている Office のバージョンに適したバージョンのが読み込まれます。 複数のバージョンのを [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 同じコンピューターにインストールすることはできますが、 *VSTOEE.dll* のインスタンスは一度に1つしかインストールされません。 これは、コンピューターにインストールされているランタイムの最新バージョンに含まれていた *VSTOEE.dll* です。 他のソリューションで使用できるのさまざまなバージョンの詳細については [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、「 [異なるバージョンの Microsoft Office でのソリューションの実行](../vsto/running-solutions-in-different-versions-of-microsoft-office.md)」を参照してください。
 
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll
- *VSTOEE.dll*が適切なバージョンのを読み込んだ後 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、 *VSTOLoader.dll*は、ソリューションアセンブリの読み込みに必要なほとんどの作業を実行します。 *VSTOLoader.dll* はいくつかのことを行います。
+ *VSTOEE.dll* が適切なバージョンのを読み込んだ後 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、 *VSTOLoader.dll* は、ソリューションアセンブリの読み込みに必要なほとんどの作業を実行します。 *VSTOLoader.dll* はいくつかのことを行います。
 
 - ソリューション アセンブリごとにアプリケーション ドメインを作成します。
 

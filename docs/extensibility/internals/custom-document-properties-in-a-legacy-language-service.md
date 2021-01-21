@@ -1,5 +1,6 @@
 ---
 title: 従来の言語サービスでのカスタムドキュメントプロパティ
+description: 従来の言語サービスの一部として、Visual Studio プロパティウィンドウに表示されるカスタムドキュメントプロパティを作成する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,17 +14,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c38ad28456ab8b9bccf29d2249307b718a5767b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d5fa24f3d052ab9122776967607b2c197fb102bf
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036835"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329901"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>従来の言語サービスでのカスタムドキュメントプロパティ
 ドキュメントのプロパティは、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **プロパティ** ] ウィンドウに表示できます。 プログラミング言語には、通常、個々のソースファイルに関連付けられたプロパティはありません。 ただし、XML では、エンコード、スキーマ、およびスタイルシートに影響するドキュメントプロパティがサポートされています。
 
-## <a name="discussion"></a>考察 (Discussion)
+## <a name="discussion"></a>ディスカッション
  言語にカスタムドキュメントプロパティが必要な場合は、クラスからクラスを派生させ、 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 派生クラスに必要なプロパティを実装する必要があります。
 
  また、通常、ドキュメントのプロパティはソースファイル自体に格納されます。 そのためには、言語サービスでソースファイルからプロパティ情報を解析して [ **プロパティ** ] ウィンドウに表示し、[ **プロパティ** ] ウィンドウでドキュメントプロパティが変更されたときにソースファイルを更新する必要があります。
@@ -398,5 +399,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)

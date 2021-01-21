@@ -1,18 +1,18 @@
 ---
-title: GitHub アカウントで Visual Studio サブスクリプションにサインインする | Microsoft Docs
+title: GitHub アカウントを使用して Visual Studio サブスクリプションにサインインする | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/09/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: GitHub アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233226"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537995"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub アカウントで Visual Studio サブスクリプションにサインインする 
 
@@ -65,10 +65,10 @@ A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.co
 A: GitHub アカウントに Azure Active Directory のメール アドレスを登録している場合、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID が既に与えられています。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、 **[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-サブスクリプション ポータルに正常にサインインしたら、特典のページ https://my.visualstudio.com/benefits にアクセスし、お客様が利用できる優れたツール、サービス、およびオファーを確認することをお勧めします。  
+サブスクリプション ポータルに正常にサインインしたら、特典のページ https://my.visualstudio.com/benefits にアクセスし、お客様が利用できる優れたツール、サービス、およびオファーを確認することをお勧めします。

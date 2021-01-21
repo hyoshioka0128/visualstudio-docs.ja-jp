@@ -14,12 +14,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32eadcf5ae88dbe64c8ccdb3effbb85bc79f9b32
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ec17d9e421d06736a236e26dd5a1200a5564e7d
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816736"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862047"
 ---
 # <a name="return-statement-outside-of-function"></a>'return' ステートメントが関数の外にあります。
 `return`コードのグローバルスコープでステートメントを使用しています。 ステートメントは、 `return` 関数の本体内でのみ表示されます。  
@@ -42,6 +42,6 @@ return [ expression ];
 - `return`コードの本体 (グローバルスコープ) からステートメントを削除します。  
   
 ## <a name="see-also"></a>関連項目  
- [return ステートメント](../../javascript/reference/return-statement-javascript.md)   
- [関数オブジェクト](../../javascript/reference/function-object-javascript.md)   
- [caller プロパティ (Function)](../../javascript/reference/caller-property-function-javascript.md)
+ [return ステートメント](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/return)   
+ [関数オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [caller プロパティ (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/caller)

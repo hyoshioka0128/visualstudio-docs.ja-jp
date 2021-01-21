@@ -1,18 +1,18 @@
 ---
 title: 職場または学校アカウントで Visual Studio サブスクリプションにサインインする | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 03/11/2020
+ms.date: 10/28/2020
 ms.topic: how-to
 description: 職場または学校アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 74007dbca34294b580c1dacac7a8fef0da883f9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906133"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903390"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>職場または学校アカウントを使用して Visual Studio サブスクリプションにサインインする 
 
@@ -72,10 +72,10 @@ A: 多くのユーザーが、複数のサブスクリプションを持って�
 それでも問題が解消しない場合は、[サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/) チームまでお問い合わせください。  
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-サブスクリプション ポータルに正常にサインインしたら、特典ページ (https://my.visualstudio.com/benefits ) にアクセスし、お客様が利用できる優れたツール、サービス、オファーを調査することをお勧めします。  
+サブスクリプション ポータルに正常にサインインしたら、特典ページ (https://my.visualstudio.com/benefits ) にアクセスし、お客様が利用できる優れたツール、サービス、オファーを調査することをお勧めします。

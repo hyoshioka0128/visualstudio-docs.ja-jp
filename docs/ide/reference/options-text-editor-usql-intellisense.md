@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[U-SQL]、[IntelliSense]'
+description: '[U-SQL] セクションの [IntelliSense] ページを使用して、テキスト エディターの IntelliSense の設定を U-SQL 用に変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/17/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d2af8bfcd8c9d80b589e01aedd535afbd1a913
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1aea741c91f38be9d5b423226e635b77e440d9e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769466"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040200"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>[オプション]、[テキスト エディター]、[U-SQL]、[IntelliSense]
 
@@ -23,7 +25,7 @@ ms.locfileid: "85769466"
 
 ## <a name="intellisense-settings"></a>IntelliSense 設定
 
-チェック ボックスをオンにして、 **[クイック ヒント]** または **[Intellisense]** を有効にします。 クイック ヒントでは、変数の上にマウス カーソルを合わせるとその宣言全体が表示されます。
+チェック ボックスをオンにして、**[クイック ヒント]** または **[Intellisense]** を有効にします。 クイック ヒントでは、変数の上にマウス カーソルを合わせるとその宣言全体が表示されます。
 
 ## <a name="completion-lists"></a>入力候補一覧
 
@@ -53,7 +55,7 @@ ms.locfileid: "85769466"
 
    選択した場合、入力候補一覧の提案のすべての文字を入力すると、新しい行が自動的に追加されて、新しい行にカーソルが移動します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
 - [IntelliSense の使用](../../ide/using-intellisense.md)

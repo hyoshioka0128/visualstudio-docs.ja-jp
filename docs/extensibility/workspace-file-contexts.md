@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のワークスペースファイルのコンテキスト |Microsoft Docs
+description: IFileContextProvider インターフェイスを実装して、開いているフォルダーワークスペースへの洞察をサポートするファイルコンテキストプロバイダーについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36f986db6f2c7b483b46060e1f514acc8dd9e758
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 271b05d78123136d47cb618e8ed38cea64b7beac
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952816"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877066"
 ---
 # <a name="workspace-file-contexts"></a>ワークスペースファイルのコンテキスト
 
@@ -71,7 +73,7 @@ Visual Studio によって提供される型の詳細については、各シナ
 >[!TIP]
 >ワークスペースの [インデックスサービス](workspace-indexing.md) は、既定でファイルイベントをサブスクライブします。 ファイルの追加と変更により、関連 `IFileScanner` するイベントがそのファイルの新しいデータに対して呼び出されます。 ファイルの削除によってインデックス付きデータが削除されます。 ファイル監視サービスに対してをサブスクライブする必要はありません `IFileScanner` 。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [インデックス作成](workspace-indexing.md) -ワークスペースのインデックス作成は、ワークスペースに関する情報を収集して保持します。
 * [ワークスペース-ワーク](workspaces.md) スペースの概念と設定のストレージを確認します。

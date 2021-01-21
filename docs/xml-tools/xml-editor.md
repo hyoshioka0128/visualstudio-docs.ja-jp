@@ -1,5 +1,7 @@
 ---
 title: XML エディター
+description: テキスト エディターに基づいており、XML 言語のサポートが追加されている、Visual Studio の XML エディターについて学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64f36255a03939c649a91b4a91d15958475be3b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bd1cac1c688bf2efc0a4c08797d72eabf0133e2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815020"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351441"
 ---
 # <a name="xml-editor"></a>XML エディター
 
@@ -59,5 +61,5 @@ XML エディターは、よく知られている *.xml*、 *.xsd*、 *.xsl*、 
 - [XML エディターのオプション - 書式設定](../ide/reference/options-text-editor-xml-formatting.md)
 - [XML エディターのオプション - その他](../ide/reference/options-text-editor-xml-miscellaneous.md)
 - [コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)
-- [XML 標準のリファレンス](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
+- [XML 標準のリファレンス](/previous-versions/dotnet/netframework-4.0/ms256177(v=vs.100))
 - [Visual Studio の XML ツール](../xml-tools/xml-tools-in-visual-studio.md)

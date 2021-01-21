@@ -1,5 +1,7 @@
 ---
 title: Debug.Print
+description: Print コマンドと、それを使用して式を評価したり、指定したテキストを表示したりする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0524ce015ea4675254615c11e5768e59049c37f6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75567841"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304129"
 ---
 # <a name="print-command"></a>Print コマンド
 
@@ -35,9 +37,9 @@ ms.locfileid: "75567841"
 
 `text`
 
-必須。 評価対象の式または表示対象のテキストです。
+必須です。 評価対象の式または表示対象のテキストです。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このコマンドのエイリアスとして疑問符 (?) を使用できます。 したがって、たとえば次のコマンド
 
@@ -59,10 +61,10 @@ ms.locfileid: "75567841"
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Evaluate Statement コマンド](../../ide/reference/evaluate-statement-command.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,6 +1,8 @@
 ---
-title: '手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加'
+title: NumericUpDown コントロールの Enter イベント ハンドラーの追加
+description: 制限時間ありの計算クイズの作成チュートリアルで NumericUpDown コントロールの Enter イベント ハンドラーを追加します。
 ms.date: 11/04/2016
+ms.custom: SEO-VS-2020
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17fb9ba8e82739ddb0a420f52b6f7f945a6454b8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 19dc77469a08821f5fb9775450bf080c0d49181b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579832"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036965"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加
 
@@ -43,7 +45,7 @@ ms.locfileid: "77579832"
 
 ## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>NumericUpDown コントロールの Enter イベント ハンドラーを追加するには
 
-1. フォームの最初の **NumericUpDown** コントロール ("sum") を選択し、次に、 **[プロパティ]** ダイアログ ボックスでツール バーの **[イベント]** アイコンをクリックします。
+1. フォームの最初の **NumericUpDown** コントロール ("sum") を選択し、次に、**[プロパティ]** ダイアログ ボックスでツール バーの **[イベント]** アイコンをクリックします。
 
    ![プロパティ ツール バーのイベント ボタン](media/control-properties-events.png)
 
@@ -80,4 +82,4 @@ ms.locfileid: "77579832"
 
 - チュートリアルの次の手順に進むには、「 **[手順 6: 減算問題を追加する](../ide/step-6-add-a-subtraction-problem.md)** 」を参照してください。
 
-- チュートリアルの前の手順に戻るには、「[手順 4:CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 4: CheckTheAnswer() メソッドの追加](../ide/step-4-add-the-checktheanswer-parens-method.md)」をご覧ください。

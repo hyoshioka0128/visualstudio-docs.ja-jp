@@ -11,12 +11,12 @@ metadata:
   ms.technology: vs-data-tools
   ms.workload:
   - data-storage
-  ms.openlocfilehash: 0b04d00b249f32836fd98c5141c25787f97eea47
-  ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+  ms.openlocfilehash: f8b3ba815f7e6add2f89cd7912ea4f7be9cadaeb
+  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/07/2020
-  ms.locfileid: "89509030"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91860419"
 landingContent:
 - title: .NET
   linkLists:
@@ -57,9 +57,9 @@ landingContent:
     - text: Visual Studio でのデータの使用
       url: accessing-data-in-visual-studio.md
     - text: SQL Server Data Tools の操作
-      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15
+      url: /sql/ssdt/sql-server-data-tools?view=sql-server-ver15&preserve-view=true
     - text: C++ でのデータ アクセス
-      url: /cpp/data/data-access-in-cpp?view=vs-2019
+      url: /cpp/data/data-access-in-cpp?view=vs-2019&preserve-view=true
 - title: Azure
   linkLists:
   - linkListType: tutorial

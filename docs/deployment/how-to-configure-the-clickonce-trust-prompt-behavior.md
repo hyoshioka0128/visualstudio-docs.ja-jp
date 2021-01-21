@@ -1,5 +1,7 @@
 ---
-title: '方法: ClickOnce 信頼プロンプトの動作を構成する |Microsoft Docs'
+title: ClickOnce 信頼プロンプトの動作を構成する |Microsoft Docs
+description: Clickonce 信頼プロンプトを構成して、ClickOnce アプリケーションをインストールするオプションをエンドユーザーに付与するかどうかを制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7417f9cdce21dc09aeaf306b55834ad7d3a125a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382550"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350063"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>方法: ClickOnce 信頼プロンプトの動作を構成する
 ClickOnce 信頼プロンプトを構成して、Windows フォームアプリケーション、Windows Presentation Foundation アプリケーション、コンソールアプリケーション、WPF ブラウザーアプリケーション、Office ソリューションなど、ClickOnce アプリケーションをインストールするオプションをエンドユーザーに付与するかどうかを制御できます。 信頼プロンプトを構成するには、各エンドユーザーのコンピューターでレジストリキーを設定します。
@@ -57,17 +59,17 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK** ] をクリックします。
 
 2. 次のレジストリキーを探します。
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。
+3. 次のサブキーが存在しない場合は、 **文字列値** として追加します。次の表に、関連する値を示します。
 
-    |文字列値サブキー|値|
+    |文字列値サブキー|[値]|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -116,17 +118,17 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK** ] をクリックします。
 
 2. 次のレジストリキーを探します。
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。
+3. 次のサブキーが存在しない場合は、 **文字列値** として追加します。次の表に、関連する値を示します。
 
-    |文字列値サブキー|値|
+    |文字列値サブキー|[値]|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -173,17 +175,17 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 
     1. **[スタート]** ボタンをクリックし、 **[ファイル名を指定して実行]** をクリックします。
 
-    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK**] をクリックします。
+    2. [ **名前** ] ボックスに「 `regedit` 」と入力し、[ **OK** ] をクリックします。
 
 2. 次のレジストリキーを探します。
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、 **文字列値**として追加します。次の表に、関連する値を示します。
+3. 次のサブキーが存在しない場合は、 **文字列値** として追加します。次の表に、関連する値を示します。
 
-    |文字列値サブキー|値|
+    |文字列値サブキー|[値]|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -226,7 +228,7 @@ ClickOnce 信頼プロンプトを構成して、Windows フォームアプリ�
 - [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)
 - [ClickOnce アプリケーションのコード アクセス セキュリティ](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
-- [信頼されたアプリケーションの配置の概要](../deployment/trusted-application-deployment-overview.md)
+- [信頼されたアプリケーションの展開の概要](../deployment/trusted-application-deployment-overview.md)
 - [方法: ClickOnce のセキュリティ設定を有効にする](../deployment/how-to-enable-clickonce-security-settings.md)
 - [方法: ClickOnce アプリケーションのセキュリティゾーンを設定する](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
 - [方法: ClickOnce アプリケーションのカスタムアクセス許可を設定する](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)

@@ -1,5 +1,7 @@
 ---
 title: Windows インストーラーを使用した Office ソリューションの配置
+description: Visual Studio を使用して Windows インストーラーを作成することにより、エンドユーザーのコンピューターに管理アクセスを必要とする Office ソリューションを配置できます。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c001b3ce308c9e991cee747bdcab3ad646b226ab
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986149"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847118"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows インストーラーを使用した Office ソリューションの配置
 
@@ -105,9 +107,9 @@ InstallShield Limited Edition (ISLE) を使用して、Windows インストー�
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]で、配置しようとする Office プロジェクトを開きます。
 
-   このトピックに関連付けられた VSTO アドインの例には、 **ExcelAddIn**という名前のプロジェクトが含まれています。 ドキュメント レベルのカスタマイズの例には、 **ExcelWorkbook**という名前のプロジェクトが含まれています。 ここでは、これらの 2 つの名前のどちらかを使用して、ソリューション内で Office プロジェクトを参照します。
+   このトピックに関連付けられた VSTO アドインの例には、 **ExcelAddIn** という名前のプロジェクトが含まれています。 ドキュメント レベルのカスタマイズの例には、 **ExcelWorkbook** という名前のプロジェクトが含まれています。 ここでは、これらの 2 つの名前のどちらかを使用して、ソリューション内で Office プロジェクトを参照します。
 
-2. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト**の追加] の順に選択します。
+2. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト** の追加] の順に選択します。
 
    **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
 
@@ -117,7 +119,7 @@ InstallShield Limited Edition (ISLE) を使用して、Windows インストー�
 
    作成した InstallShield セットアッププロジェクトがソリューションに表示されます。
 
-   このトピックで使用するサンプルには **OfficeAddInSetup**という名前のセットアップ プロジェクトが含まれています。 ここでは、同じ名前を使用して、ソリューション内でセットアップ プロジェクトを参照します。
+   このトピックで使用するサンプルには **OfficeAddInSetup** という名前のセットアップ プロジェクトが含まれています。 ここでは、同じ名前を使用して、ソリューション内でセットアップ プロジェクトを参照します。
 
 ## <a name="add-the-project-output"></a><a name="Add"></a>プロジェクト出力の追加
 
@@ -125,11 +127,11 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ### <a name="to-add-the-project-output"></a>プロジェクト出力を追加するには
 
-1. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** プロジェクト ノードを展開し、次の図に示す **[Project Assistant]** ファイルをクリックします。
+1. **ソリューション エクスプローラー** で、 **[OfficeAddInSetup]** プロジェクト ノードを展開し、次の図に示す **[Project Assistant]** ファイルをクリックします。
 
    ![ソリューション エクスプローラーのプロジェクト アシスタント ファイル](../vsto/media/installshield-projectassistant.png "ソリューション エクスプローラーのプロジェクト アシスタント ファイル")
 
-2. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+2. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
 3. **[Project Assistant]** ページの下部で、次の図に示す **[Application Files]** をクリックします。
 
@@ -163,11 +165,11 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>前提条件として .NET Framework 4 または .NET Framework 4.5 を追加します。
 
-1. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** プロジェクト ノードを展開し、 **[Specify Application Data]** ノードを展開してから、次の図に示す **[Redistributables]** ファイルをクリックします。
+1. **ソリューション エクスプローラー** で、 **[OfficeAddInSetup]** プロジェクト ノードを展開し、 **[Specify Application Data]** ノードを展開してから、次の図に示す **[Redistributables]** ファイルをクリックします。
 
    ![ソリューション エクスプローラーの再頒布可能ファイル](../vsto/media/installshield-redistributablesfile.png "ソリューション エクスプローラーの再頒布可能ファイル")
 
-2. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+2. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
    **[Redistributables]** ページが開きます。
 
@@ -209,14 +211,14 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 4. メモ帳で、テキスト **Your GUID goes here** の位置に GUID を貼り付け、そのテキストを置換します。
 
-   ファイルの** &lt; properties &gt; **要素は次のようになります。
+   ファイルの **&lt; properties &gt;** 要素は次のようになります。
 
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
    </properties>
    ```
 
-5. メモ帳のメニューバーで、[**ファイル**] [保存] の順に選択し  >  **Save**ます。
+5. メモ帳のメニューバーで、[**ファイル**] [保存] の順に選択し  >  **Save** ます。
 
 6. **[名前を付けて保存]** ダイアログ ボックスで、 **[デスクトップ]** フォルダーを参照します。
 
@@ -229,9 +231,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 9. メモ帳を閉じます。
 
-10. **デスクトップ**フォルダーから、 *Visual Studio 2010 Tools for Office Runtime. prq*ファイルをコンピューター上の次のいずれかのディレクトリにコピーします。
+10. **デスクトップ** フォルダーから、 *Visual Studio 2010 Tools for Office Runtime. prq* ファイルをコンピューター上の次のいずれかのディレクトリにコピーします。
 
-   32ビットオペレーティングシステムの場合: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\ *
+   32ビットオペレーティングシステムの場合: *%ProgramFiles%\InstallShield\2013LE\SetupPrerequisites \\*
 
    64ビットオペレーティングシステムの場合: *% ProgramFiles (x86)% \ 2013LE \ SetupPrerequisites \\ 前提条件*
 
@@ -247,9 +249,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ## <a name="specify-where-to-install-the-solution-on-the-users-computer"></a><a name="Location"></a>ユーザーのコンピューター上でのソリューションのインストール場所の指定
 
-1. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** ノードを展開し、 **[Organize your Setup]** ノードを展開してから **[General Information]** ファイルをクリックします。
+1. **ソリューション エクスプローラー** で、 **[OfficeAddInSetup]** ノードを展開し、 **[Organize your Setup]** ノードを展開してから **[General Information]** ファイルをクリックします。
 
-2. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+2. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
 3. プロパティの一覧で、 **[INSTALLDIR]** プロパティの隣にある **[参照]** ボタンをクリックします。
 
@@ -271,9 +273,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>ユーザー単位またはコンピューター単位のインストールをサポートするかどうかを指定するには
 
-1. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** ノードを展開し、 **[Organize Your Setup]** ノードを展開してから **[General Information]** ファイルをクリックします。
+1. **ソリューション エクスプローラー** で、 **[OfficeAddInSetup]** ノードを展開し、 **[Organize Your Setup]** ノードを展開してから **[General Information]** ファイルをクリックします。
 
-2. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+2. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
    セットアップ プロジェクトのプロパティが表示されます。
 
@@ -285,9 +287,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ### <a name="to-create-registry-keys"></a>レジストリ キーを作成するには
 
-1. **ソリューション エクスプローラー**で、 **[Project Assistant]** ノードをクリックします。
+1. **ソリューション エクスプローラー** で、 **[Project Assistant]** ノードをクリックします。
 
-   メニューバーで、[開く **] を選択し**  >  **Open**ます。
+   メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
 2. **[Project Assistant]** ページの下部で、次の図に示す **[Application Registry]** をクリックします。
 
@@ -297,27 +299,27 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 3. **[Do you want to configure the registry data that your application will install?]** の下で、 **[Yes]** オプション ボタンをクリックします。
 
-4. **セットアップ先のコンピューターのレジストリビュー**の一覧で、作成するインストーラーの種類を有効にするキー階層を追加します。
+4. **セットアップ先のコンピューターのレジストリビュー** の一覧で、作成するインストーラーの種類を有効にするキー階層を追加します。
 
    このセクションで構成するパスは、ユーザー単位のインストーラーとコンピューター単位のインストーラーのどちらを作成するかによって異なります。
 
    **ユーザー単位のインストーラー**
 
-   **HKEY_CURRENT_USER \Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
+   **HKEY_CURRENT_USER\Software\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**
 
    **Office のバージョンに基づくコンピューター単位のインストーラー**
 
 | Office のバージョン<br /><br /> | InstallShield の構成パス<br /><br /> |
 |----------------------------| - |
-| 32 ビット<br /><br /> | **HKEY_LOCAL_MACHINE \ ソフトウェア (32 ビット) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE \ ソフトウェア (64 ビット) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Windows のバージョンに基づくコンピューター単位のインストーラー**
 
 | Windows のバージョン<br /><br /> | InstallShield の構成パス<br /><br /> |
 |-----------------------------| - |
-| 32 ビット<br /><br /> | **HKEY_LOCAL_MACHINE \ ソフトウェア (32 ビット) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE \ ソフトウェア (32 ビット) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \ ソフトウェア (64 ビット) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 32 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > 64ビット Windows のインストーラーには2つのレジストリパスが必要です。これは、ユーザーが64ビット版の Windows を実行するコンピューターで32ビットおよび64ビットバージョンの Office を実行できるためです。
@@ -325,7 +327,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
    > [!NOTE]
    > ベスト プラクティスとして、VSTO アドインの名前の先頭を、自分の会社の名前にします。 この規則により、キーが一意になる可能性が高くなり、別の業者からの VSTO アドインと競合する可能性が減少します。 同じ名前を持つ複数のアドインは、たとえば、互いのレジストリ キーを上書きする可能性があります。 この手法で、キーが一意になることを保証できるわけではありませんが、名前が競合する可能性を小さくすることができます。
 
-5. キーの階層を作成したら、 **の** キーのショートカットメニューを開き、[ **新規**作成]、[ **文字列値**] の順に選択します。
+5. キーの階層を作成したら、 **の** キーのショートカットメニューを開き、[ **新規** 作成]、[ **文字列値**] の順に選択します。
 
    新しい文字列値が、 **対象のコンピューターの [レジストリデータ** ] ボックスの一覧に表示されます。 この文字列値の名前が強調表示されていて、その名前を変更することができます。
 
@@ -337,7 +339,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 |--------------|--------|
 |[Key]<br /><br />|**フレンドリ**<br /><br />|
 |DWORD 値<br /><br />|**LoadBehavior**<br /><br />|
-|[Key]<br /><br />|**Manifest**<br /><br />|
+|[Key]<br /><br />|**file:///**<br /><br />|
 
 8. **[Description]** 値のショートカット メニューを開き、 **[Modify]** をクリックします。
 
@@ -384,7 +386,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ### <a name="to-create-a-program-that-modifies-document-properties"></a>ドキュメントのプロパティを変更するプログラムを作成するには
 
-1. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト**の追加] の順に選択します。
+1. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト** の追加] の順に選択します。
 
    **[新しいプロジェクトの追加]** ダイアログ ボックスが表示されます。
 
@@ -394,7 +396,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 4. プロジェクトに「 **SetExcelDocumentProperties**」という名前を付けて **[OK]** ボタンを選びます。
 
-5. **ソリューション エクスプローラー**で、 **[すべてのファイルの表示]** をクリックし、 **[SetExcelDocumentProperties]** プロジェクト ノードのショートカット メニューを開き、 **[参照の追加]** をクリックします。
+5. **ソリューション エクスプローラー** で、 **[すべてのファイルの表示]** をクリックし、 **[SetExcelDocumentProperties]** プロジェクト ノードのショートカット メニューを開き、 **[参照の追加]** をクリックします。
 
 6. **[参照マネージャー]** ダイアログ ボックスで、 **[拡張機能]** タブをクリックしてから、次のアセンブリの隣にあるチェック ボックスをオンにし、 **[OK]** をクリックします。
 
@@ -402,9 +404,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument
 
-7. **ソリューション エクスプローラー**で、 **[Program.cs]** ファイル (C# アプリケーションの場合)、または **[Module1.vb]** ファイル (Visual Basic アプリケーションの場合) をクリックします。
+7. **ソリューション エクスプローラー** で、 **[Program.cs]** ファイル (C# アプリケーションの場合)、または **[Module1.vb]** ファイル (Visual Basic アプリケーションの場合) をクリックします。
 
-8. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+8. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
 9. このファイルの内容全体を次のコードで置き換えます。
 
@@ -415,11 +417,11 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 ### <a name="to-add-a-custom-action-that-runs-your-program"></a>プログラムを実行するカスタム アクションを追加するには
 
-1. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** プロジェクト ノードを展開し、次の図に示す **[Project Assistant]** ファイルをクリックします。
+1. **ソリューション エクスプローラー** で、 **[OfficeAddInSetup]** プロジェクト ノードを展開し、次の図に示す **[Project Assistant]** ファイルをクリックします。
 
    ![ソリューション エクスプローラーのプロジェクト アシスタント ファイル](../vsto/media/installshield-projectassistant.png "ソリューション エクスプローラーのプロジェクト アシスタント ファイル")
 
-2. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+2. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
 3. **[Project Assistant]** ページの下部で、次の図に示す **[Application Files]** をクリックします。
 
@@ -431,9 +433,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 5. **[SetExcelDocumentProperties]** ノードの下で、 **[プライマリ出力]** チェック ボックスをオンにし、 **[OK]** をクリックします。
 
-6. **ソリューション エクスプローラー**で、 **[OfficeAddInSetup]** ノードの下にある **[Define Setup Requirements and Actions]** ノードを展開してから **[カスタム アクション]** フォルダーをクリックします。
+6. **ソリューション エクスプローラー** で、 **[OfficeAddInSetup]** ノードの下にある **[Define Setup Requirements and Actions]** ノードを展開してから **[カスタム アクション]** フォルダーをクリックします。
 
-7. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+7. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
    イベントの一覧は、画面の端にあるウィンドウの中に表示されます。
 
@@ -453,7 +455,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 11. **[Browse for a Destination File]** ダイアログ ボックスで、 **[SetExcelDocumentProperties.Primary.output]** ファイルを選択し、 **[開く]** をクリックします。
 
-    このファイルの場所は、セットアップ プロジェクトの **[INSTALLDIR]** プロパティで指定したフォルダーによって異なります。 たとえば、プロパティを **[PersonalFolder]DemoWorkbookApp**という名前のフォルダーに設定した場合は、 **[ProgramFilesFolder] \DemoWorkbookApp** を参照して、 **SetExcelDocumentProperties.Primary.output**ファイルを見つけることができます。
+    このファイルの場所は、セットアップ プロジェクトの **[INSTALLDIR]** プロパティで指定したフォルダーによって異なります。 たとえば、プロパティを **[PersonalFolder]DemoWorkbookApp** という名前のフォルダーに設定した場合は、 **[ProgramFilesFolder] \DemoWorkbookApp** を参照して、 **SetExcelDocumentProperties.Primary.output** ファイルを見つけることができます。
 
     次のいくつかの手順では、ドキュメントのソリューション ID を取得し、その ID をパラメーターとしてコンソールアプリケーションに渡します。 また、ドキュメント、配置マニフェスト、およびドキュメントアセンブリの場所も渡します。
 
@@ -461,9 +463,9 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
     ソリューションを含むフォルダーが開きます。
 
-13. ソリューションに対応するプロジェクト ファイルをメモ帳で開きます。 Visual Basic のプロジェクトでは、ファイルの名前は *Excelworkbook. .vbproj*です。 C# プロジェクトの場合、ファイルの名前は *Excelworkbook. .csproj*です。
+13. ソリューションに対応するプロジェクト ファイルをメモ帳で開きます。 Visual Basic のプロジェクトでは、ファイルの名前は *Excelworkbook. .vbproj* です。 C# プロジェクトの場合、ファイルの名前は *Excelworkbook. .csproj* です。
 
-14. プロジェクトファイルで、 ** &lt; SolutionID &gt; **要素を検索し、その値をクリップボードにコピーして、メモ帳を閉じます。
+14. プロジェクトファイルで、 **&lt; SolutionID &gt;** 要素を検索し、その値をクリップボードにコピーして、メモ帳を閉じます。
 
     この値を、パラメーターとしてコンソール アプリケーションに渡します。
 
@@ -476,13 +478,13 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 16. **Your Solution ID** を、クリップボードにコピーしたソリューション ID で置き換えます。
 
    > [!IMPORTANT]
-   > インストーラーをテストし、このカスタム アクションで実行するコンソール アプリケーションが INSTALLDIR ディレクトリ内のドキュメントにアクセスできることを確認します。 ユーザーのコンピューター上のディレクトリによっては、管理アクセス (Program Files ディレクトリなど) が必要になる場合があります。 管理アクセスを必要とするディレクトリにソリューションを配置する場合は、 *setup.exe*ファイルの [**プロパティ**] ダイアログボックスを開き、[**互換性**] タブを選択してから、インストーラーを配布する前に [**管理者としてこのプログラムを実行**する] チェックボックスをオンにする必要があります。 ユーザーに管理アクセス許可を使用してセットアッププログラムを実行させたくない場合は、[INSTALLDIR] プロパティを、ユーザーが既にアクセス権を持っているディレクトリ ( **Documents** ディレクトリなど) に設定します。 詳細については、このトピックの「 [ユーザーのコンピューターにソリューションをインストールする場所を指定](#Location) する」セクションを参照してください。
+   > インストーラーをテストし、このカスタム アクションで実行するコンソール アプリケーションが INSTALLDIR ディレクトリ内のドキュメントにアクセスできることを確認します。 ユーザーのコンピューター上のディレクトリによっては、管理アクセス (Program Files ディレクトリなど) が必要になる場合があります。 管理アクセスを必要とするディレクトリにソリューションを配置する場合は、 *setup.exe* ファイルの [**プロパティ**] ダイアログボックスを開き、[**互換性**] タブを選択してから、インストーラーを配布する前に [**管理者としてこのプログラムを実行** する] チェックボックスをオンにする必要があります。 ユーザーに管理アクセス許可を使用してセットアッププログラムを実行させたくない場合は、[INSTALLDIR] プロパティを、ユーザーが既にアクセス権を持っているディレクトリ ( **Documents** ディレクトリなど) に設定します。 詳細については、このトピックの「 [ユーザーのコンピューターにソリューションをインストールする場所を指定](#Location) する」セクションを参照してください。
 
 ## <a name="build-the-setup-project"></a><a name="Build"></a>Build the Setup Project
 
-1. **ソリューション エクスプローラー**で、 **[Prepare for Release]** ノードを展開し、 **[Releases]** ファイルをクリックします。
+1. **ソリューション エクスプローラー** で、 **[Prepare for Release]** ノードを展開し、 **[Releases]** ファイルをクリックします。
 
-2. メニューバーで、[開く **] を選択し**  >  **Open**ます。
+2. メニューバーで、[開く **] を選択し**  >  **Open** ます。
 
    横のウィンドウで **[Builds]** エクスプローラーが開き、作成しようとするリリースの種類を選択できます。
 
@@ -500,11 +502,11 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 9. メニューバーで、[**ビルド**] [  >  **officeaddinsetup**] の順に選択します。
 
-   ビルドが完了したら、 **Officeaddinsetup**プロジェクトの*setup.exe*ファイルを次の場所で見つけることができます。 <em>officeaddinsetupprojectroot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\ **
+   ビルドが完了したら、 **Officeaddinsetup** プロジェクトの *setup.exe* ファイルを次の場所で見つけることができます。 <em>officeaddinsetupprojectroot</em>**\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1 \\**
 
 ## <a name="see-also"></a>関連項目
 
-- [Office ソリューションの配置の前提条件](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Office ソリューションの配置の前提条件](/previous-versions/bb608617(v=vs.110))
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)
 - [カスタムドキュメントプロパティの概要](../vsto/custom-document-properties-overview.md)

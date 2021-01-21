@@ -1,5 +1,7 @@
 ---
 title: ドキュメント内のテキストの操作
+description: Microsoft Word のオブジェクトモデルを使用して Office プロジェクトのテキストを操作する手順とコード例について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815088"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523387"
 ---
 # <a name="work-with-text-in-documents"></a>ドキュメント内のテキストの操作
   このセクションのトピックでは、Microsoft Office Word のオブジェクト モデルを使用して Office プロジェクト内のテキストを操作する手順とコード例を示します。
@@ -46,6 +48,6 @@ ms.locfileid: "62815088"
 |文書を印刷する前に、ブックマーク内のテキストを非表示にします。|[方法: プログラムによって文書内のテキストを非表示にする](../vsto/how-to-programmatically-hide-text-in-documents.md)|
 |テキストにコメントを追加します。|[方法: プログラムによって文書内のテキストにコメントを追加する](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

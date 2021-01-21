@@ -1,5 +1,6 @@
 ---
-title: Windows 8 および Windows Server 2012 アプリでのパフォーマンス ツール
+title: Windows 8 & WS 2012 アプリのパフォーマンス ツール
+ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -8,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778428"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807834"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 と Windows Server 2012 アプリケーションのパフォーマンス ツール
 
@@ -42,9 +43,9 @@ UWP アプリのプロファイリングの詳細については、次の記事�
 - [リモート コンピューターで UWP アプリを実行する](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [プロファイル ツールの概要](profiling-feature-tour.md)
 - [JavaScript メモリ](../profiling/javascript-memory.md)
-- [ローカル コンピューターでの UWP アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [リモート デバイスでの UWP アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [UWP アプリの Visual C++、Visual C#、および Visual Basic コードのパフォーマンス データの分析](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [ローカル コンピューターでの UWP アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](/previous-versions/hh696631(v=vs.140))
+- [リモート デバイスでの UWP アプリの Visual C++、Visual C#、および Visual Basic コードのプロファイリング](/previous-versions/hh972878(v=vs.140))
+- [UWP アプリの Visual C++、Visual C#、および Visual Basic コードのパフォーマンス データの分析](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Windows 8 デスクトップまたは Windows Server 2012 で実行中のアプリ上のデータを Visual Studio IDE から収集する
 

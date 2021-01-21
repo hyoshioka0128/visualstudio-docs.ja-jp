@@ -1,5 +1,7 @@
 ---
 title: VSCT XML スキーマの条件付き属性 |Microsoft Docs
+description: VSCT XML スキーマのリストおよび項目に条件付き属性を適用する方法について説明します。 属性は、結果の出力を制御して、true または false に評価されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2b1fb3ee1b2cd396f25ec5591a585f8d87648d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697944"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863715"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件付き属性
 条件付き属性は、すべてのリストおよび項目に適用できます。 論理演算子と記号の展開式は、true または false に評価されます。 True の場合、関連付けられているリストまたは項目が結果の出力に含まれます。
@@ -27,7 +29,7 @@ ms.locfileid: "80697944"
 
  値1、' 1 '、' true ' は true と評価され、0、' 0 '、および ' false ' が false と評価されます。
 
-## <a name="operators"></a>オペレーター
+## <a name="operators"></a>演算子
  条件式を評価するには、次の演算子を使用します。
 
 |演算子|定義|

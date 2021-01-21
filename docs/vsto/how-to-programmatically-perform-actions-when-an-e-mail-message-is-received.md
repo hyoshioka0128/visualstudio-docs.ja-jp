@@ -1,5 +1,8 @@
 ---
 title: 電子メールメッセージを受信したときにプログラムによってアクションを実行する
+description: Microsoft Outlook で電子メールを受信した場合に、Visual Studio を使用してプログラムでカスタムアクションを実行する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75278a52fb989e5142e5981dab604bf3da49bd99
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 22dbd3ae72ac8c269de603ce22bbfebef669be08
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537866"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523886"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>方法: 電子メールメッセージを受信したときにプログラムによってアクションを実行する
   この例では、ユーザーが電子メールメッセージを受信したときにカスタムアクションを実行します。

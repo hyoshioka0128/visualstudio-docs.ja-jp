@@ -1,5 +1,7 @@
 ---
 title: C# コード スニペット
+description: コード スニペットを使用して、よく使用されるコードを C# コード ファイルに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/05/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 46b2d231f1fa9a0e90538c426f48c86e5fafecbe
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594163"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478758"
 ---
 # <a name="c-code-snippets"></a>C# コード スニペット
 
@@ -25,7 +27,7 @@ ms.locfileid: "75594163"
 
 カーソル位置にコード スニペットを挿入したり、現在選択されているコード ブロックを囲むように surround-with コード スニペットを挿入したりすることができます。 コード スニペット挿入機能は、**[IntelliSense]** メニューの **[コード スニペットの挿入]** または **[ブロックの挿入]** コマンドを使って、またはキーボード ショートカットの場合はそれぞれ **Ctrl**+**K**、**X** キーの順に押すか、**Ctrl**+**K**、**S** キーの順に押すことで、呼び出すことができます。
 
-**コード スニペット挿入機能**では、すべての利用可能なコード スニペットのコード スニペット名が表示されます。 また、コード スニペット挿入機能には、コード スニペットの名前または名前の一部を入力できる入力ダイアログ ボックスもあります。 最も近いコード スニペット名が強調表示されます。 **Tab** キーを押すと、コード スニペット挿入機能が閉じて、現在選択されているコード スニペットが挿入されます。 **Esc** キーを押すか、コード エディターをマウスでクリックすると、コード スニペットを挿入することなくコード スニペット挿入機能が閉じます。
+**コード スニペット挿入機能** では、すべての利用可能なコード スニペットのコード スニペット名が表示されます。 また、コード スニペット挿入機能には、コード スニペットの名前または名前の一部を入力できる入力ダイアログ ボックスもあります。 最も近いコード スニペット名が強調表示されます。 **Tab** キーを押すと、コード スニペット挿入機能が閉じて、現在選択されているコード スニペットが挿入されます。 **Esc** キーを押すか、コード エディターをマウスでクリックすると、コード スニペットを挿入することなくコード スニペット挿入機能が閉じます。
 
 ## <a name="default-code-snippets"></a>既定のコード スニペット
 
@@ -46,16 +48,16 @@ ms.locfileid: "75594163"
 |enum|[enum](/dotnet/csharp/language-reference/keywords/enum) 宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
 |equals|<xref:System.Object> クラスに定義された <xref:System.Object.Equals%2A> メソッドをオーバーライドするメソッド宣言を作成します。|クラスまたは構造体の内部。|
 |exception|exception (既定では <xref:System.Exception>) から派生するクラスの宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
-|for|[for](/dotnet/csharp/language-reference/keywords/for) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
+|対象|[for](/dotnet/csharp/language-reference/keywords/for) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |foreach|[foreach](/dotnet/csharp/language-reference/keywords/foreach-in) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |forr|各イテレーションの後でループ変数をデクリメントする [for](/dotnet/csharp/language-reference/keywords/for) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |if|[if](/dotnet/csharp/language-reference/keywords/if-else) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |インデクサー|インデクサーの宣言を作成します。|クラスまたは構造体の内部。|
-|インターフェイス|[interface](/dotnet/csharp/language-reference/keywords/interface) 宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
+|interface|[interface](/dotnet/csharp/language-reference/keywords/interface) 宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
 |invoke|イベントを安全に呼び出すブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |iterator|反復子を作成します。|クラスまたは構造体の内部。|
 |iterindex|入れ子になったクラスを使って "名前付き" の反復子とインデクサーのペアを作成します。|クラスまたは構造体の内部。|
-|lock|[lock](/dotnet/csharp/language-reference/keywords/lock-statement) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
+|ロック (lock)|[lock](/dotnet/csharp/language-reference/keywords/lock-statement) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |mbox|<xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> への呼び出しを作成します。 場合によっては、*System.Windows.Forms.dll* への参照を追加する必要があります。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |namespace|[namespace](/dotnet/csharp/language-reference/keywords/namespace) 宣言を作成します。|名前空間 (グローバル名前空間を含む) の内部。|
 |prop|[自動実装プロパティ](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)の宣言を作成します。|クラスまたは構造体の内部。|
@@ -64,7 +66,7 @@ ms.locfileid: "75594163"
 |sim|[static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int) の Main メソッドの宣言を作成します。|クラスまたは構造体の内部。|
 |struct|[struct](/dotnet/csharp/language-reference/keywords/struct) 宣言を作成します。|名前空間 (グローバル名前空間を含む)、クラス、または構造体の内部。|
 |svm|[static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void) の Main メソッドの宣言を作成します。|クラスまたは構造体の内部。|
-|スイッチ|[switch](/dotnet/csharp/language-reference/keywords/switch) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
+|switch|[switch](/dotnet/csharp/language-reference/keywords/switch) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |試す|[try-catch](/dotnet/csharp/language-reference/keywords/try-catch) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |tryf|[try-finally](/dotnet/csharp/language-reference/keywords/try-finally) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 |unchecked|[unchecked](/dotnet/csharp/language-reference/keywords/unchecked) ブロックを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
@@ -72,7 +74,7 @@ ms.locfileid: "75594163"
 |using|[using](/dotnet/csharp/language-reference/keywords/using-directive) ディレクティブを作成します。|名前空間 (グローバル名前空間を含む) の内部。|
 |while|[while](/dotnet/csharp/language-reference/keywords/while) ループを作成します。|メソッド、インデクサー、プロパティ アクセサー、またはイベント アクセサーの内部。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード スニペットの関数](../ide/code-snippet-functions.md)
 - [コード スニペット](../ide/code-snippets.md)

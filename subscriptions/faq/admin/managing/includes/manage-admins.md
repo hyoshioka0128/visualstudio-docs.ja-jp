@@ -9,11 +9,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: 8bbeb8a5e13ad000939057a7d476f6979b15dca8
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84200468"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "91838236"
 ---
 ## <a name="how-do-i-manage-administrators"></a>管理者を管理するにはどうすればよいですか?
 

@@ -1,5 +1,7 @@
 ---
 title: コンテンツ コントロール
+description: コンテンツコントロールと、コンテンツコントロールによるドキュメントとテンプレートのデザイン方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -38,12 +40,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8683f5379aaa33446b150adf34f8a5aa57a83ff3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986187"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96848041"
 ---
 # <a name="content-controls"></a>コンテンツ コントロール
   コンテンツ コントロールは、次のような機能を備える文書やテンプレートをデザインするときに使用します。
@@ -97,7 +99,7 @@ ms.locfileid: "72986187"
 ### <a name="group"></a>グループ
  グループ コントロールは、文書の中にユーザーが編集や削除を行うことができない (保護された) 領域を定義します。 グループ コントロールには、任意のドキュメント アイテム (テキスト、表、グラフィックス、およびその他のコンテンツ コントロール) を含めることができます。 詳細については、<xref:Microsoft.Office.Tools.Word.GroupContentControl> 型を参照してください。
 
-### <a name="picture"></a>写真
+### <a name="picture"></a>Picture
  画像コントロールには、画像が表示されます。 イメージは、デザイン時または実行時に指定できます。また、ユーザーがこのコントロールをクリックしてイメージを選択し、文書に挿入することもできます。 詳細については、<xref:Microsoft.Office.Tools.Word.PictureContentControl> 型を参照してください。
 
 ### <a name="rich-text"></a>リッチテキスト
@@ -116,10 +118,10 @@ ms.locfileid: "72986187"
 
 |タスク :|これを行うには、次の手順を実行します。|
 |--------------------|--------------|
-|コントロールに表示されるテキストを取得または設定する。|**Text**プロパティを使用します。 **注:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> 型と型には、 <xref:Microsoft.Office.Tools.Word.ContentControl> このプロパティはありません。|
-|ユーザーによるコントロールの編集、データ ソースからコントロールへのデータの読み込み、またはコントロールの内容の削除が行われるまでコントロールに表示される一時的なテキストを取得または設定します。|**PlaceholderText**プロパティを使用します。 **注:**  この型には、 <xref:Microsoft.Office.Tools.Word.PictureContentControl> このプロパティはありません。|
-|ユーザーがクリックしたときにコンテンツ コントロールの境界線に表示されるタイトルを取得または設定します。|**Title**プロパティを使用します。|
-|ユーザーがコントロールを編集した後で、文書からコントロールを自動的に削除します。  (コントロール内のテキストは文書内に残ります。)|**一時**プロパティを使用します。|
+|コントロールに表示されるテキストを取得または設定する。|**Text** プロパティを使用します。 **注:** <xref:Microsoft.Office.Tools.Word.PictureContentControl> 型と型には、 <xref:Microsoft.Office.Tools.Word.ContentControl> このプロパティはありません。|
+|ユーザーによるコントロールの編集、データ ソースからコントロールへのデータの読み込み、またはコントロールの内容の削除が行われるまでコントロールに表示される一時的なテキストを取得または設定します。|**PlaceholderText** プロパティを使用します。 **注:**  この型には、 <xref:Microsoft.Office.Tools.Word.PictureContentControl> このプロパティはありません。|
+|ユーザーがクリックしたときにコンテンツ コントロールの境界線に表示されるタイトルを取得または設定します。|**Title** プロパティを使用します。|
+|ユーザーがコントロールを編集した後で、文書からコントロールを自動的に削除します。  (コントロール内のテキストは文書内に残ります。)|**一時** プロパティを使用します。|
 |ユーザーがコンテンツ コントロールをクリックしたとき、またはプログラムによってカーソルがコンテンツ コントロールに移動したときに、コードを実行します。|コントロールの <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> イベントを処理します。|
 |ユーザーがコンテンツ コントロールの外部をクリックしたとき、またはプログラムによってカーソルがコンテンツ コントロールの外部に移動したときに、コードを実行します。|コントロールの <xref:Microsoft.Office.Tools.Word.ContentControlBase.Exiting> イベントを処理します。|
 |元に戻す操作またはやり直し操作の結果としてコンテンツ コントロールが文書に追加された後で、コードを実行します。|コントロールの <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> イベントを処理します。|
@@ -130,9 +132,9 @@ ms.locfileid: "72986187"
 
  保護対象とする領域がコンテンツ コントロールの内部にある場合は、コンテンツ コントロールのプロパティを使用して、ユーザーがコントロールの編集や削除を行うことができないようにします。
 
-- **Lockcontents**プロパティは、ユーザーがコンテンツを編集できないようにします。
+- **Lockcontents** プロパティは、ユーザーがコンテンツを編集できないようにします。
 
-- **Lockcontentcontrol**プロパティは、ユーザーがコントロールを削除できないようにします。
+- **Lockcontentcontrol** プロパティは、ユーザーがコントロールを削除できないようにします。
 
   保護対象とする領域がコンテンツ コントロールの内部にない場合、またはコンテンツ コントロールとその他の種類のコンテンツを含む領域を保護する場合は、領域全体を <xref:Microsoft.Office.Tools.Word.GroupContentControl> に配置します。 他のコンテンツ コントロールとは異なり、<xref:Microsoft.Office.Tools.Word.GroupContentControl> にはユーザーに対して表示される UI がありません。 このコントロールは、ユーザーが編集できない領域を定義することだけを目的としています。
 
@@ -148,7 +150,7 @@ ms.locfileid: "72986187"
 
 - Windows フォームと同じデータ バインディング モデルを使用して、データベース フィールドやマネージド オブジェクトにコンテンツ コントロールをバインドできます。
 
-- ドキュメントに埋め込まれている XML の一部 ( *カスタム XML 部分*とも呼ばれます) の要素にコンテンツコントロールをバインドできます。
+- ドキュメントに埋め込まれている XML の一部 ( *カスタム XML 部分* とも呼ばれます) の要素にコンテンツコントロールをバインドできます。
 
   Office ソリューションのホストコントロールをデータにバインドする方法の概要については、「 [office ソリューションでデータをコントロールにバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)」を参照してください。
 
@@ -165,7 +167,7 @@ ms.locfileid: "72986187"
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 配列|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|なし|
 
- ドキュメント レベルのプロジェクトおよび VSTO アドイン プロジェクトでは、コントロールの <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> プロパティの <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> メソッドを使用して、プログラムによってデータ ソースにコンテンツ コントロールをバインドできます。 これを行う場合は、文字列 **テキスト** をメソッドの *propertyName* パラメーターに渡し <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> ます。 **Text**プロパティは、コンテンツコントロールの既定のデータバインディングプロパティです。
+ ドキュメント レベルのプロジェクトおよび VSTO アドイン プロジェクトでは、コントロールの <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> プロパティの <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> メソッドを使用して、プログラムによってデータ ソースにコンテンツ コントロールをバインドできます。 これを行う場合は、文字列 **テキスト** をメソッドの *propertyName* パラメーターに渡し <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> ます。 **Text** プロパティは、コンテンツコントロールの既定のデータバインディングプロパティです。
 
  コンテンツ コントロールは双方向のデータ バインディングもサポートするため、コントロール内での変更によってデータ ソースが更新されます。 詳細については、「 [方法: ホストコントロールのデータを使用してデータソースを更新](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)する」を参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: '方法: VSIX パッケージに依存関係を追加する |Microsoft Docs'
+description: ターゲットコンピューターにまだ存在しない依存関係をインストールする VSIX パッケージの配置を設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7ee7cbc4dee800351689386056389d274e07f4f
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7ef19bafd0788ed15094979141679625e4e992f
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012231"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993836"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>方法: VSIX パッケージに依存関係を追加する
 
@@ -26,7 +28,7 @@ ms.locfileid: "90012231"
 
 ## <a name="to-add-a-dependency"></a>依存関係を追加するには
 
-1. **デザイン**ビューで*source.extension.vsixmanifest*ファイルを開きます。 [ **依存関係** ] タブにアクセスし、[ **新規**] をクリックします。
+1. **デザイン** ビューで *source.extension.vsixmanifest* ファイルを開きます。 [ **依存関係** ] タブにアクセスし、[ **新規**] をクリックします。
 
 2. インストールされている拡張機能を追加するには、[ **新しい依存関係の追加** ] ダイアログボックスで [ **インストールされている拡張機能** ] を選択し、[ **名前**] に一覧の拡張子を選択します。
 
@@ -34,7 +36,7 @@ ms.locfileid: "90012231"
 
 ## <a name="require-a-specific-visual-studio-release"></a>特定の Visual Studio リリースが必要
 
-拡張機能に特定のバージョンの Visual Studio 2017 が必要な場合、たとえば、15.3 でリリースされた機能に依存している場合は、VSIX **インストールターゲット**でビルド番号を指定できます。 たとえば、リリース15.3 のビルド番号は ' 15.0.26730.3 ' です。 [ここで](../install/visual-studio-build-numbers-and-release-dates.md)は、リリースのマッピングを参照して番号を作成できます。 リリース番号 ' 15.3 ' を使用しても正常に機能しないことに注意してください。
+拡張機能に特定のバージョンの Visual Studio 2017 が必要な場合、たとえば、15.3 でリリースされた機能に依存している場合は、VSIX **インストールターゲット** でビルド番号を指定できます。 たとえば、リリース15.3 のビルド番号は ' 15.0.26730.3 ' です。 [ここで](../install/visual-studio-build-numbers-and-release-dates.md)は、リリースのマッピングを参照して番号を作成できます。 リリース番号 ' 15.3 ' を使用しても正常に機能しないことに注意してください。
 
 拡張機能に15.3 以上が必要な場合は、 **Installationtarget バージョン** を [15.0.26730.3, 16.0) として宣言します。
 
@@ -46,7 +48,7 @@ ms.locfileid: "90012231"
 
 VSIXInstaller は、以前のバージョンの Visual Studio を検出し、後で更新する必要があることをユーザーに通知します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [VSIX 拡張機能スキーマ1.0 リファレンス](/previous-versions/dd393700(v=vs.110))
 - [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)

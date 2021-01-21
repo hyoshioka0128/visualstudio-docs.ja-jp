@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace 機能拡張 API のリファレンス | Microsoft Docs
+description: Visual Studio の IntelliTrace 拡張機能 API について説明します。アプリケーションで .itrace ファイルを読み取ったり、デコードしたりする目的で利用できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb5044059fa005c1d67b3b7055a294bb22e124e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 438fd02c91ab8aad6a6e6ce4214a655083911e61
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564295"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729107"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 機能拡張の API リファレンス
 

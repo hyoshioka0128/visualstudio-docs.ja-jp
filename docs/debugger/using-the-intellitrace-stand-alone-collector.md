@@ -1,5 +1,7 @@
 ---
 title: IntelliTrace スタンドアロン コレクターの使用 | Microsoft Docs
+description: IntelliTrace スタンドアロン コレクターを使用して、Visual Studio をインストールしたり、ターゲット システムの環境を変更したりすることなく、データを収集します。
+ms.custom: SEO-VS-2020
 ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f0e0ce657c1cc0ed79d56e3daa90480ed0c1381
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cbdd7e948aaafff8e90aa8e67907c9a53471b05c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536494"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150081"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>IntelliTrace スタンドアロン コレクターの使用 (C#、Visual Basic)
 
@@ -28,7 +30,7 @@ ms.locfileid: "85536494"
 > [!NOTE]
 > **Microsoft Monitoring Agent** を **トレース** モードで使用して、リモート マシン上で実行されている Web および SharePoint アプリの同じ IntelliTrace データを収集することもできます。
 >
-> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター**よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 「[Microsoft Monitoring Agent の使用](../debugger/using-the-microsoft-monitoring-agent.md)」を参照してください。
+> IntelliTrace データ内のパフォーマンス関連イベントを収集するには、エージェントを **モニター** モードで実行します。 **モニター** モードは、 **トレース** モードや **IntelliTrace スタンドアロン コレクター** よりもパフォーマンスに及ぼす影響が少なくなります。 Microsoft Monitoring Agent がインストールされている場合、対象システムの環境が変更されます。 「[Microsoft Monitoring Agent の使用](../debugger/using-the-microsoft-monitoring-agent.md)」を参照してください。
 > IntelliTrace スタンドアロン コレクターは、プロセスのスナップショットをサポートしていません。
 
  **必要条件**
@@ -82,9 +84,9 @@ ms.locfileid: "85536494"
 
 2. [Microsoft ダウンロード センター](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019)、[my.visualstudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)、または Visual Studio 2013 Update 3 のインストール フォルダーからコレクターを入手します。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::
 
-   - **Microsoft ダウンロード センター**または **my.visualstudio.com**:
+   - **Microsoft ダウンロード センター** または **my.visualstudio.com**:
 
-     1. **IntelliTraceCollector.exe**の横の **[ダウンロード]** を選択します。
+     1. **IntelliTraceCollector.exe** の横の **[ダウンロード]** を選択します。
 
      2. IntelliTraceCollector.exe をコレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) に保存します。
 
@@ -110,7 +112,7 @@ ms.locfileid: "85536494"
 
    2. コレクター ディレクトリ (たとえば、**C:\IntelliTraceCollector**) を参照します。
 
-   3. 末尾のピリオド ( **.** ) も含めて**expand**コマンドを使用して、IntelliTraceCollection.cab を展開します。
+   3. 末尾のピリオド ( **.** ) も含めて **expand** コマンドを使用して、IntelliTraceCollection.cab を展開します。
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
@@ -163,7 +165,7 @@ ms.locfileid: "85536494"
 
             - 32 ビット オペレーティング システムでは、 **[Windows PowerShell (x86)]** のショートカット メニューを開きます。 **[管理者として実行]** を選択します。
 
-    2. PowerShell コマンド ウィンドウで、 **Import-Module** コマンドを使用して **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**をインポートします。
+    2. PowerShell コマンド ウィンドウで、 **Import-Module** コマンドを使用して **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll** をインポートします。
 
          次に例を示します。
 
@@ -211,7 +213,7 @@ ms.locfileid: "85536494"
 
      6. **[名前の確認]** を選択して名前を解決します。 **[OK]** をクリックします。
 
-     7. アプリケーション プールに対して **フル コントロール**のアクセス許可が設定されていることを確認します。
+     7. アプリケーション プールに対して **フル コントロール** のアクセス許可が設定されていることを確認します。
 
 ## <a name="collect-data-from-a-web-app-or-sharepoint-application"></a><a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Web アプリまたは SharePoint アプリケーションからデータを収集する
 
@@ -261,7 +263,7 @@ ms.locfileid: "85536494"
 
      *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
-     たとえば、 **MyApp**という名前のアプリからデータを収集するには、次のように入力します。
+     たとえば、 **MyApp** という名前のアプリからデータを収集するには、次のように入力します。
 
      `C:IntelliTraceCollectorIntelliTraceSC.exe launch /cp:"C:IntelliTraceCollectorcollection_plan.ASP.NET.default.xml" /f:"C:IntelliTraceLogFilesMyApp.itrace" "C:MyAppMyApp.exe"`
 

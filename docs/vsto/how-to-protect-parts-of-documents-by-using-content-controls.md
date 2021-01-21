@@ -1,5 +1,8 @@
 ---
 title: '方法: コンテンツコントロールを使用して文書の一部を保護する'
+description: Visual Studio を使用して、コンテンツコントロールを使用して Microsoft Word 文書の一部を保護する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541350"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528241"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>方法: コンテンツコントロールを使用して文書の一部を保護する
   ドキュメントの一部を保護することにより、ユーザーがドキュメントのその部分を変更したり削除したりできないようにします。 コンテンツ コントロールを使用して Microsoft Office Word ドキュメントの一部を保護する方法は、いくつかあります。
@@ -45,15 +48,15 @@ ms.locfileid: "85541350"
 
 2. [ **プロパティ** ] ウィンドウで、次のプロパティのいずれかまたは両方を設定します。
 
-    - ユーザーがコントロールを編集できないようにするには、 **Lockcontents** を **True**に設定します。
+    - ユーザーがコントロールを編集できないようにするには、 **Lockcontents** を **True** に設定します。
 
-    - ユーザーがコントロールを削除できないようにするには、 **Lockcontentcontrol** を **True**に設定します。
+    - ユーザーがコントロールを削除できないようにするには、 **Lockcontentcontrol** を **True** に設定します。
 
 3. **[OK]** をクリックします。
 
 ### <a name="to-protect-a-content-control-at-run-time"></a>実行時に、コンテンツ コントロールを保護するには
 
-1. ユーザーがコントロールを編集できないようにするには、 `LockContents` コンテンツコントロールのプロパティを**true**に設定し、プロパティを true に設定して、 `LockContentControl` ユーザーがコントロールを削除できないようにします。 **true**
+1. ユーザーがコントロールを編集できないようにするには、 `LockContents` コンテンツコントロールのプロパティを **true** に設定し、プロパティを true に設定して、 `LockContentControl` ユーザーがコントロールを削除できないようにします。 
 
      次のコード例は、ドキュメント レベル プロジェクト内の 2 つの異なる <xref:Microsoft.Office.Tools.Word.RichTextContentControl> オブジェクトのプロパティ、<xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContents%2A> と <xref:Microsoft.Office.Tools.Word.RichTextContentControl.LockContentControl%2A> の使用法を示しています。 このコードを実行するには、プロジェクトの `ThisDocument` クラスにコードを追加し、 `AddProtectedContentControls` イベント ハンドラーから `ThisDocument_Startup` メソッドを呼び出します。
 
@@ -104,7 +107,7 @@ ms.locfileid: "85541350"
 
 ## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用して Word を自動化する](../vsto/automating-word-by-using-extended-objects.md)
-- [コンテンツ コントロール](../vsto/content-controls.md)
+- [コンテンツコントロール](../vsto/content-controls.md)
 - [方法: Word 文書にコンテンツコントロールを追加する](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [ホスト項目とホストコントロールの概要](../vsto/host-items-and-host-controls-overview.md)
 - [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

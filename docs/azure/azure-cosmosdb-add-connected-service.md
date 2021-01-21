@@ -3,18 +3,17 @@ title: 接続済みサービス | を使用して Azure CosmosDB を追加する
 description: Visual Studio を使用して接続済みサービスを追加することにより、Azure CosmosDB サポートをアプリに追加します。
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2d23081f541fbc12581450c60c6eb4b09f20c64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a2789246a75fe7d2331156eecb106f31f21cbf5
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643178"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902923"
 ---
 # <a name="add-azure-cosmos-db-to-your-app-by-using-visual-studio-connected-services"></a>Visual Studio を使用してアプリに Azure Cosmos DB を追加する接続済みサービス
 
@@ -43,9 +42,9 @@ Visual Studio では、次のいずれかを、 **接続済みサービス** 機
 
 1. Visual Studio でプロジェクトを開きます。
 
-1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
+1. **ソリューションエクスプローラー** で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
 
-1. [ **接続済みサービス** ] タブで、 **サービスの依存関係**の [+] アイコンを選択します。
+1. [ **接続済みサービス** ] タブで、 **サービスの依存関係** の [+] アイコンを選択します。
 
     ![サービスの依存関係の追加](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
@@ -55,7 +54,7 @@ Visual Studio では、次のいずれかを、 **接続済みサービス** 機
 
     まだサインインしていない場合は、Azure アカウントにサインインします。 Azure アカウントを持っていない場合、[無料試用版](https://azure.microsoft.com/account/free)でサインアップできます。
 
-1. **Azure Cosmos DB**画面で、既存の Azure Cosmos DB を選択し、[**次へ**] を選択します。
+1. **Azure Cosmos DB** 画面で、既存の Azure Cosmos DB を選択し、[**次へ**] を選択します。
 
     データベースを作成する必要がある場合は、次の手順に進んでください。 それ以外の場合は、手順 7 に進みます。
 

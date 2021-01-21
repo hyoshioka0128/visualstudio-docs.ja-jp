@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291003"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037544"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>.NET 非同期コードのパフォーマンスを分析する
 
@@ -41,7 +41,7 @@ ms.locfileid: "85291003"
 
 非同期イベントは、時系列順のアクティビティに整理されます。 それぞれの開始時刻、終了時刻、および期間が表示されます。
 
-[タスク](https://docs.microsoft.com/dotnet/api/system.threading.tasks)に対応する各行には、 **[名前]** 列にラベルが付けられます。 解決できないタスク名に対しては、 **[タスク イン]** ラベルが表示されます。 後ろに、その中でタスクが発生するメソッドの名前が続きます。 収集セッション内で非同期アクティビティが完了しない場合、 **[終了時刻]** 列に **[不完全]** ラベルが表示されます。
+[タスク](/dotnet/api/system.threading.tasks)に対応する各行には、 **[名前]** 列にラベルが付けられます。 解決できないタスク名に対しては、 **[タスク イン]** ラベルが表示されます。 後ろに、その中でタスクが発生するメソッドの名前が続きます。 収集セッション内で非同期アクティビティが完了しない場合、 **[終了時刻]** 列に **[不完全]** ラベルが表示されます。
 
 特定のタスクまたはアクティビティをさらに詳しく調査するには、行を右クリックします。 次に、 **[ソース ファイルに移動]** を選択して、アクティビティが発生したコード内の場所を確認します。
 

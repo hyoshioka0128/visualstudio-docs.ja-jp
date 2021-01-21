@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってワークシート内のデータを並べ替える'
+description: Visual Studio を使用して、実行時にワークシートの範囲と一覧に含まれるデータをプログラムで並べ替える方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08fa461dc55bf42857e21a5419cab6a0ff147173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f09fed7f1caff68a485d9d0d98789555ec30889c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546979"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523690"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>方法: プログラムによってワークシート内のデータを並べ替える
   実行時にワークシートの範囲およびリストに含まれているデータを並べ替えることができます。 次のコードは、複数の列で構成される `Fruits` という名前の範囲を、最初の列のデータを基に並べ替え、次に 2 番目の列のデータを基に並べ替えます。

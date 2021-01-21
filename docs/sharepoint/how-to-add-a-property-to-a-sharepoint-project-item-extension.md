@@ -1,5 +1,8 @@
 ---
 title: '方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する |Microsoft Docs'
+titleSuffix: ''
+description: SharePoint プロジェクト項目の拡張機能を使用して、Visual Studio に既にインストールされている SharePoint プロジェクト項目にプロパティを追加します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015990"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850170"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する
-  プロジェクト項目の拡張機能を使用して、Visual Studio に既にインストールされている SharePoint プロジェクト項目にプロパティを追加できます。 **ソリューションエクスプローラー**でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
+  プロジェクト項目の拡張機能を使用して、Visual Studio に既にインストールされている SharePoint プロジェクト項目にプロパティを追加できます。 **ソリューションエクスプローラー** でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
 
  次の手順では、プロジェクト項目の拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
 
@@ -30,7 +33,7 @@ ms.locfileid: "86015990"
 
 1. プロジェクト項目の種類に追加するプロパティを表すパブリックプロパティを持つクラスを定義します。 複数のプロパティをプロジェクト項目の種類に追加する場合は、同じクラスまたは異なるクラスのすべてのプロパティを定義できます。
 
-2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> *projectItemType*パラメーターのイベントを処理します。
+2. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> *projectItemType* パラメーターのイベントを処理します。
 
 3. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> 、properties クラスのインスタンスを <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> イベント引数パラメーターのコレクションに追加します。
 

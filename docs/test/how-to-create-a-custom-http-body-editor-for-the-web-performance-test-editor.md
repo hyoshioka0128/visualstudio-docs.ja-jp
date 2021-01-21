@@ -1,5 +1,7 @@
 ---
-title: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
+title: Web パフォーマンス テストの HTTP ボディ エディターを作成する
+description: カスタム コンテンツ エディターを作成して、Web サービス要求の文字列ボディのコンテンツまたはバイナリ ボディのコンテンツを編集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02faf2a6c495d7fd5566c8f4291ecaad20ef5eb7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 7d6da75b24a982c420b475815f665851ebf06504
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288144"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440148"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>方法: Web パフォーマンス テスト エディターのカスタム HTTP ボディ エディターを作成する
 
@@ -35,11 +37,11 @@ ms.locfileid: "85288144"
 
    プロジェクトが新しいソリューションに追加され、*UserControl1.cs* という名前の <xref:System.Windows.Forms.UserControl> がデザイナーに表示されます。
 
-1. **ツールボックス**の **[コモン コントロール]** カテゴリで、<xref:System.Windows.Forms.RichTextBox> を UserControl1 のサーフェイスにドラッグします。
+1. **ツールボックス** の **[コモン コントロール]** カテゴリで、<xref:System.Windows.Forms.RichTextBox> を UserControl1 のサーフェイスにドラッグします。
 
-1. <xref:System.Windows.Forms.RichTextBox> コントロールの右上隅にあるアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) を選び、親コンテナーを選択して**ドッキング**します。
+1. <xref:System.Windows.Forms.RichTextBox> コントロールの右上隅にあるアクション タグ グリフ (![スマート タグ グリフ](../test/media/vs_winformsmttagglyph.gif)) を選び、親コンテナーを選択して **ドッキング** します。
 
-1. **ソリューション エクスプローラー**で、Windows フォーム ライブラリ プロジェクトを右クリックし、 **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で、Windows フォーム ライブラリ プロジェクトを右クリックし、 **[プロパティ]** を選択します。
 
 1. **[プロパティ]** の **[アプリケーション]** タブを選択します。
 
@@ -49,13 +51,13 @@ ms.locfileid: "85288144"
 
 1. **[はい]** をクリックします。
 
-1. **ソリューション エクスプローラー**で、 **[参照設定]** ノードを右クリックし、 **[参照の追加]** を選択します。
+1. **ソリューション エクスプローラー** で、 **[参照設定]** ノードを右クリックし、 **[参照の追加]** を選択します。
 
 1. **[参照の追加]** ダイアログ ボックスが表示されます。
 
 1. **[.NET]** タブを選びます。下にスクロールして、 **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** を選択して、 **[OK]** を選びます。
 
-1. **ソリューション エクスプローラー**で**ビュー デザイナー**がまだ開いていない場合は、**UserControl1.cs** を右クリックし、 **[デザイナーの表示]** を選択します。
+1. **ソリューション エクスプローラー** で **ビュー デザイナー** がまだ開いていない場合は、**UserControl1.cs** を右クリックし、 **[デザイナーの表示]** を選択します。
 
 1. デザイン サーフェイスを右クリックし、 **[コードの表示]** を選択します。
 
@@ -119,11 +121,11 @@ private MessageEditorControl messageEditorControl
 
 messageEditorControl インスタンスは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*> メソッドによって作成されたプラグイン ダイアログ内でホストされます。 また、messageEditorControl の <xref:System.Windows.Forms.RichTextBox> には、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> のコンテンツが設定されます。 ただし、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> が `true` を返さない場合、プラグインの作成を行うことはできません。 このエディターの場合、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> の `true` に "xml" が含まれているときは、<xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> は <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> を返します。
 
-文字列ボディの編集が完了し、ユーザーがプラグイン ダイアログ ボックスで **[OK]** をクリックすると、Web テスト パフォーマンス エディターでは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> が呼び出されて、編集済みのテキストが文字列として取得され、要求の**文字列ボディ**が更新されます。
+文字列ボディの編集が完了し、ユーザーがプラグイン ダイアログ ボックスで **[OK]** をクリックすると、Web テスト パフォーマンス エディターでは <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> が呼び出されて、編集済みのテキストが文字列として取得され、要求の **文字列ボディ** が更新されます。
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>クラスを作成して IStringHttpBodyEditorPlugin インターフェイスを実装する
 
-1. **ソリューション エクスプローラー**で、Windows フォーム コントロール ライブラリ プロジェクトを右クリックし、 **[新しい項目の追加]** を選択します。
+1. **ソリューション エクスプローラー** で、Windows フォーム コントロール ライブラリ プロジェクトを右クリックし、 **[新しい項目の追加]** を選択します。
 
    **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 

@@ -1,5 +1,7 @@
 ---
 title: 静的ヘルパー クラス | Microsoft IntelliTest 開発者テスト ツール
+description: パラメーター化された単体テストを作成するために、IntelliTest に用意されている静的ヘルパー クラスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 5010761213cf79756cf8da3d2fffe60dd0b61efd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4b5ad68186142ae61a266d688a0430b0a623605
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315188"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668730"
 ---
 # <a name="static-helper-classes"></a>静的ヘルパー クラス
 
@@ -85,7 +87,7 @@ public void TestSomething(int i) {
 
 静的クラス。テストに補助入力値を提供し、それを[パラメーター化されたモック](input-generation.md#parameterized-mocks)の実装に使用できます。
 
-**PexChoose** クラスは特定の入力値に対するテストが成功するか失敗するかを判断する場合には有効ではありません。 **PexChoose** は入力値を提供するだけです。この入力値は*選択肢*とも呼ばれています。 入力値の制限、テストに成功または失敗したときに定義するアサーションの書き込みは、ユーザーに任されています。
+**PexChoose** クラスは特定の入力値に対するテストが成功するか失敗するかを判断する場合には有効ではありません。 **PexChoose** は入力値を提供するだけです。この入力値は *選択肢* とも呼ばれています。 入力値の制限、テストに成功または失敗したときに定義するアサーションの書き込みは、ユーザーに任されています。
 
 **操作モード**
 
@@ -172,4 +174,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>フィードバックが欲しい場合
 
-ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。
+ご意見や機能に関するご要望を[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で投稿してください。

@@ -1,5 +1,7 @@
 ---
 title: '方法: コードをローカライズする |Microsoft Docs'
+description: ハードコーディングされた文字列を、ローカライズされたリソースを参照するメソッドである GetGlobalResourceObject への呼び出しに置き換えることによって、SharePoint のコードをローカライズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,44 +15,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c1963ff0b6ef317dfa1a2c8154a1628710dc562
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016685"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304580"
 ---
 # <a name="how-to-localize-code"></a>方法: コードをローカライズする
   ローカライズされていないコードでは、ハードコーディングされた文字列値が使用されています。 コードの文字列をローカライズするには、それらを <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> の呼び出しに置き換えます。このメソッドは、ローカライズされたリソースを参照します。
 
-## <a name="localize-code"></a>コードのローカライズ
+## <a name="localize-code"></a>コードをローカライズする
 
 #### <a name="to-localize-code"></a>コードをローカライズするには
 
-1. **ソリューションエクスプローラー**で、プロジェクト項目のショートカットメニューを開き、[モジュールの**追加**] を選択し  >  **Module**ます。
+1. **ソリューションエクスプローラー** で、プロジェクト項目のショートカットメニューを開き、[モジュールの **追加**] を選択し  >  **Module** ます。
 
      [ **リソースファイル** ] テンプレートを選択します。
 
     > [!NOTE]
     > Deployment Type プロパティを使用できるように、SharePoint プロジェクト項目にリソース ファイルを必ず追加します。 このプロパティは、後で必要になります。
 
-2. 既定の言語リソースファイルに、 *MyAppResources*などの *.resx*拡張子を付加して追加した名前を付けます。
+2. 既定の言語リソースファイルに、 *MyAppResources* などの *.resx* 拡張子を付加して追加した名前を付けます。
 
 3. ローカライズ言語ごとに手順 1. と 2. を繰り返して、SharePoint プロジェクト項目にそれぞれのリソース ファイルを追加します。
 
-     ローカライズされた各リソース ファイルに対しては、同じ基本名にカルチャ ID を加えた名前を使用します  たとえば、ドイツ語のローカライズされたリソースに *MyAppResources.de*という名前を指定します。
+     ローカライズされた各リソース ファイルに対しては、同じ基本名にカルチャ ID を加えた名前を使用します  たとえば、ドイツ語のローカライズされたリソースに *MyAppResources.de* という名前を指定します。
 
 4. 各リソース ファイルを開いて、ローカライズされた文字列を追加します。 各ファイルで同じ文字列 ID を使用します。
 
 5. 各リソースファイルの [ **展開の種類** ] プロパティの値を **appglobalresource** に変更すると、各ファイルがサーバーの App_GlobalResources フォルダーに配置されます。
 
-6. 各ファイルの " **ビルドアクション** " プロパティの値は、 **埋め込みリソース**としてそのままにします。
+6. 各ファイルの " **ビルドアクション** " プロパティの値は、 **埋め込みリソース** としてそのままにします。
 
      埋め込みリソースはプロジェクトの DLL にコンパイルされます。
 
 7. プロジェクトをビルドして、リソースのサテライト DLL を作成します。
 
-8. **パッケージデザイナー**で [**詳細設定**] タブを選択し、サテライトアセンブリを追加します。
+8. **パッケージデザイナー** で [**詳細設定**] タブを選択し、サテライトアセンブリを追加します。
 
 9. [**場所**] ボックスで、" *de \\ \<Project Item Name>.resources.dll*" などの場所のパスにカルチャ ID フォルダーを付加します。
 
@@ -69,7 +71,7 @@ ms.locfileid: "86016685"
      ローカライズされた文字列がアプリケーションに表示されます。 ローカライズされたリソースを表示するには、リソース ファイルのカルチャに対応する Language Pack が SharePoint サーバーにインストールされている必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint ソリューションのローカライズ](../sharepoint/localizing-sharepoint-solutions.md)
+- [SharePoint ソリューションをローカライズする](../sharepoint/localizing-sharepoint-solutions.md)
 - [方法: フィーチャーをローカライズする](../sharepoint/how-to-localize-a-feature.md)
 - [方法: ASPX マークアップをローカライズする](../sharepoint/how-to-localize-aspx-markup.md)
-- [方法: リソースファイルを追加する](../sharepoint/how-to-add-a-resource-file.md)
+- [方法: リソース ファイルを追加する](../sharepoint/how-to-add-a-resource-file.md)

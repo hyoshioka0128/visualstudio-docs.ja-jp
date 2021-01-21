@@ -1,18 +1,18 @@
 ---
-title: 今日データ サイエンスのスキルを強化するには、選択した Visual Studio サブスクリプションの DataCamp 特典を使用します。 | Microsoft Docs
+title: Visual Studio サブスクリプションの DataCamp を使用してデータ サイエンスのスキルを向上させる | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 04/17/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904513"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538086"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
@@ -22,7 +22,7 @@ ms.locfileid: "85904513"
 
 2. "専門能力開発" カテゴリで DataCamp 特典タイルを見つけて、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp 特典のタイル](_img/vs-datacamp/vs-datacamp-tile-2.png)
+   > ![DataCamp 特典のタイル](_img/vs-datacamp/vs-datacamp-tile-2.png "開始するには、[アクティブ化] をクリックしてください。")
 
 3. [DataCamp] ページで、新しいアカウントを作成できます。  電子メール アドレスとパスワードを入力するか、LinkedIn、Google、または Facebook から既存のアカウントを使用してサインインすることができます。  サインイン情報を指定したら、 **[Get Started]\(作業の開始\)** をクリックします。
 
@@ -36,33 +36,33 @@ ms.locfileid: "85904513"
 
    開始するには、選択したパスをクリックするだけです。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: パスの選択](_img/vs-datacamp/vs-datacamp-choose-path.png)
+   > ![DataCamp: パスの選択](_img/vs-datacamp/vs-datacamp-choose-path.png "興味のあるラーニング パスを選択します。")
 
 5. 目的のパスを選択したら、目標を選択して、ラーニング パスを絞り込むことができます。  たとえば、"データ サイエンス スキルセットを開発する" パスを選択すると、次のオプションが表示されます。 オプションを選択するか、 **[I am not sure.Show me all career paths]\(わかりません。すべてのキャリア パスを表示してください\)** をクリックしてより広範なパスを作成します。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: データ サイエンス スキルセット](_img/vs-datacamp/vs-datacamp-datascience.png)
+   > ![DataCamp: データ サイエンス スキルセット](_img/vs-datacamp/vs-datacamp-datascience.png "[I am not sure.Show me all career paths]\(わかりません。すべてのキャリア パスを表示してください\) をクリックして、完全な一覧を表示します。")
 
 6. 選択したパスとオプションに基づいて、キャリア トラックの選択が表示されます。  選択したトラックの **[登録]** ボタンをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: キャリア トラック](_img/vs-datacamp/vs-datacamp-all-tracks.png)
+   > ![DataCamp: キャリア トラック](_img/vs-datacamp/vs-datacamp-all-tracks.png "開始するには、選択したパスの [登録] ボタンをクリックします。")
 
 7. トラックに登録されると、そのトラックの最初のコースが開きます。  コースの操作方法 (ナビゲーションやコース演習の実行など) を説明するチュートリアルが表示されます。
 
    > [!div class="mx-imgBorder"]
-   > ![DataCamp: 開始](_img/vs-datacamp/vs-datacamp-getting-started.png)
+   > ![DataCamp: 開始](_img/vs-datacamp/vs-datacamp-getting-started.png "コースをナビゲートする方法については、チュートリアルをご覧ください。")
 
 任意のポイントで停止し、次のセッションでトレーニングを再開できます。  [https://www.datacamp.com](https://www.datacamp.com) にアクセスしてサインインします。  ダッシュ ボードが表示され、一時停止した箇所からトレーニングを再開できます。 **[Continue Track]\(トラックを続行\)** をクリックします。
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png "[Continue Track]\(トラックを続行\) をクリックして、いつでもトレーニングを再開できます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
-| Visual Studio Professional with GitHub Enterprise| VL | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
+| Visual Studio Professional Subscription with GitHub Enterprise| VL | 3 か月間                                                            |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 3 か月間                                             |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 3 か月間                                              |  いいえ。  新しいサブスクライバーのみが使用できます           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
@@ -84,10 +84,10 @@ ms.locfileid: "85904513"
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 ご利用のサブスクリプションでより専門的な開発機会を確認してください。

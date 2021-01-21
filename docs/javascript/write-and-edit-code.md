@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a033c0fe1fd80edc7959c5f49993714982ecc805
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: bd1b12be2dba1526301cd0ea9a4356fb9cc14c14
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238181"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815738"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>JavaScript 用コード エディターを使用する方法を学習する
 
 この Visual Studio のコード エディターの概要では、Visual Studio でコードを記述、コード内を移動、およびコードを理解する簡単な方法をいくつか示します。
 
 > [!TIP]
-> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。 実行するアプリ開発の種類によっては、Visual Studio と共に **Node.js ワークロード**をインストールする必要がある場合があります。 TypeScript の言語サービスを取得する方法の詳細については、「[TypeScript のサポート](../javascript/javascript-in-vs-2019.md#typescript-support)」をご覧ください。
+> Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。 実行するアプリ開発の種類によっては、Visual Studio と共に **Node.js ワークロード** をインストールする必要がある場合があります。 TypeScript の言語サービスを取得する方法の詳細については、「[TypeScript のサポート](../javascript/javascript-in-vs-2019.md#typescript-support)」をご覧ください。
 
 この記事では、既に JavaScript の開発に慣れていることを前提としています。 慣れていない場合は、最初に [Node.js と Express のアプリの作成](../javascript/tutorial-nodejs.md)などのチュートリアルに関するページを参照することをお勧めします。
 
@@ -40,11 +40,11 @@ IDE を使用して、新しいファイルをプロジェクトに追加する�
 
 コードを記述する場合、IntelliSense は貴重なリソースです。 このリソースでは、使用可能な型のメンバーに関する情報、またはメソッドの各種オーバーロードのためのパラメーターの詳細を表示できます。 次のコードで、「`Router()`」と入力すると、渡すことができる引数の種類が示されます。 これはシグネチャ ヘルプと呼ばれます。
 
-![IntelliSense を使用する](../javascript/media/write-code-signature-checking.png)
+![JavaScript コードが入力されている Visual Studio のコード ウィンドウのスクリーンショット。 Router() 関数に対する IntelliSense 情報が表示されています。](../javascript/media/write-code-signature-checking.png)
 
 また、IntelliSense を使用すると、単語を区別するために十分な文字を入力した後に入力補完を利用することができます。 次のコードで `data` 文字列の後ろにカーソルを置き、「`get`」と入力すると、IntelliSense で、コードで前に定義した関数、またはプロジェクトに追加したサードパーティ ライブラリで定義した関数が表示されます。
 
-![IntelliSense を使用する](../javascript/media/write-code-intellisense.png)
+!["get" という単語が入力されている Visual Studio のコード ウィンドウのスクリーンショット。 "get" で始まるすべての関数に対する IntelliSense 情報が表示されています。](../javascript/media/write-code-intellisense.png)
 
 また、IntelliSense では、プログラミング要素をポイントしたときに種類に関する情報を表示できます。
 
@@ -98,7 +98,7 @@ Visual Studio エディターでは、型や関数などの定義の検査を容
 
 ## <a name="use-code-snippets"></a>コード スニペットを使用する
 
-Visual Studio で提供されている便利な*コード スニペット*を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../ide/code-snippets.md)は、JavaScript を含むさまざまなプログラミング言語で使用することができます。 コード ファイルに `for` ループを追加してみましょう。
+Visual Studio で提供されている便利な *コード スニペット* を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../ide/code-snippets.md)は、JavaScript を含むさまざまなプログラミング言語で使用することができます。 コード ファイルに `for` ループを追加してみましょう。
 
 スニペットを挿入する場所にカーソルを置き、右クリックして **[スニペット]**  >  **[スニペットの挿入]** の順に選択します。
 

@@ -1,5 +1,7 @@
 ---
 title: Shell コマンド
+description: Shell コマンドについて、およびそれを使用して Visual Studio 内から実行可能プログラムを起動する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6197201ed35520ba8d362b6aa448fe625a2fe3a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565878"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616370"
 ---
 # <a name="shell-command"></a>Shell コマンド
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内から実行可能プログラムを起動します。
@@ -37,24 +39,24 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>引数
 `path`
 
-必須。 実行するファイルまたは開くドキュメントのパスとファイル名。 指定したファイルが、PATH 環境変数のディレクトリのいずれにもない場合は、完全パスが必要です。
+必須です。 実行するファイルまたは開くドキュメントのパスとファイル名。 指定したファイルが、PATH 環境変数のディレクトリのいずれにもない場合は、完全パスが必要です。
 
 `args`
 
-任意。 呼び出されるプログラムに渡す引数。
+省略可能。 呼び出されるプログラムに渡す引数。
 
 ## <a name="switches"></a>スイッチ
 /commandwindow、/command、/c または /cmd
 
-任意。 実行可能ファイルの出力が **[コマンド]** ウィンドウに表示されるように指定します。
+省略可能。 実行可能ファイルの出力が **[コマンド]** ウィンドウに表示されるように指定します。
 
 /dir:`folder` または /d: `folder`
 
-任意。 プログラムの実行時に作業ディレクトリが設定されるように指定します。
+省略可能。 プログラムの実行時に作業ディレクトリが設定されるように指定します。
 
 /outputwindow、/output、/out、または /o
 
-任意。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。
+省略可能。 実行可能ファイルの出力が **[出力]** ウィンドウに表示されるように指定します。
 
 ## <a name="remarks"></a>解説
 /dir、/o、/c の各スイッチは、`Tools.Shell` の直後に指定する必要があります。 実行可能ファイルの名前の後に指定した内容は、その実行可能ファイルにコマンド ライン引数として渡されます。
@@ -78,16 +80,16 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > パス文字列をリテラル二重引用符 (""") で囲まなかった場合、Windows では、文字列のうち最初の空白までの部分のみが使用されます。 たとえば、上記のパス文字列を引用符で適切に囲まなかった場合、Windows では、C:\ ルート ディレクトリにある "Program" というファイルが検索されます。 C:\Program.exe という実行可能ファイルが実際は使用可能な場合、不正改ざんによってインストールされたファイルであっても、Windows では目的の "c:\Program Files\SomeFile.exe" プログラムではなく、そのプログラムの実行が試行されます。
 
 ## <a name="example"></a>例
-次のコマンドでは xcopy.exe を使用して、ファイル `MyText.txt` を `Text` フォルダーにコピーします。 xcopy.exe からの出力は、**コマンド ウィンドウ**と **[出力]** ウィンドウの両方に表示されます。
+次のコマンドでは xcopy.exe を使用して、ファイル `MyText.txt` を `Text` フォルダーにコピーします。 xcopy.exe からの出力は、**コマンド ウィンドウ** と **[出力]** ウィンドウの両方に表示されます。
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [出力ウィンドウ](../../ide/reference/output-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

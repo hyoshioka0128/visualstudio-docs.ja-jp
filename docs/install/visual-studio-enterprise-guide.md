@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247634"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713439"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 企業向けガイド
 お客様の会社で Visual Studio の利用を開始するときに時間を節約したい場合は、ここから開始してください。 この企業向けガイドには、一般的な企業シナリオにおいて Visual Studio をインストールおよび更新したり、問題が発生した場合にブロックを解除したり、さらにヘルプが必要な場合に問題を報告する方法を把握したりするためのヒントが含まれています。 
@@ -63,7 +63,7 @@ Visual Studio を正常に更新し、更新に関する問題を修正する方
 
 - **[Visual Studio を修復](repair-visual-studio.md)して更新プログラムの問題を修正します**。 Visual Studio のインストールが損傷したり、破損したりすることがあります。 修復は、更新プログラムを含め、すべてのインストール操作のインストール時の問題を解決するのに役立ちます。 
 
-- **[Windows セキュリティ ベースライン](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)に従います**。 Microsoft は、Windows 10 および Windows Server などのセキュリティで保護されたオペレーティング システムと、Microsoft Edge などのセキュリティで保護されたアプリなどをお客様に提供することに専念しています。 Microsoft は、製品のセキュリティ保証だけでなく、お客様にさまざまな構成機能を提供することで、ご利用環境のきめ細かい制御を可能にします。 
+- **[Windows セキュリティ ベースライン](/windows/security/threat-protection/windows-security-baselines)に従います**。 Microsoft は、Windows 10 および Windows Server などのセキュリティで保護されたオペレーティング システムと、Microsoft Edge などのセキュリティで保護されたアプリなどをお客様に提供することに専念しています。 Microsoft は、製品のセキュリティ保証だけでなく、お客様にさまざまな構成機能を提供することで、ご利用環境のきめ細かい制御を可能にします。 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

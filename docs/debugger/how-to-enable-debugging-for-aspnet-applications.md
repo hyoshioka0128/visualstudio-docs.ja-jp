@@ -1,7 +1,8 @@
 ---
 title: ASP.NET アプリのデバッグを有効にする | Microsoft Docs
-ms.custom: ''
-ms.date: 09/21/2018
+description: Visual Studio で ASP.NET および ASP.NET Core アプリのデバッグを有効にする方法について説明します。 IIS Express サーバーまたはローカル IIS サーバーでこのプロセスを実行できます。
+ms.custom: SEO-VS-2020
+ms.date: 10/29/2020
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 28f74c449e196d5eb0b3380d0ff1392db17e0b23
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349758"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903598"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Visual Studio で ASP.NET または ASP.NET Core アプリをデバッグする
 
@@ -37,16 +38,20 @@ Visual Studio では、ASP.NET アプリと ASP.NET Core アプリをデバッ�
 アプリを実行するように構成されているローカル IIS サーバー (バージョン 8.0 以降) 上で ASP.NET または ASP.NET Core アプリをデバッグすることもできます。 ローカル IIS 上でデバッグするには、次の要件を満たす必要があります。
 
 <a name="iis"></a>
-- Visual Studio のインストール時に、 **[開発時の IIS サポート]** を選択します (必要に応じて、Visual Studio インストーラーを再実行し、 **[変更]** を選択して、このコンポーネントを追加します)。
-- 管理者としての Visual Studio を実行します。
-- IIS をインストールし、適切なバージョンの ASP.NET または ASP.NET Core、またはその両方を使用して正しく構成します。 詳細と手順については、「[ASP.NET 3.5 および ASP.NET 4.5 を使用する IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)」または「[IIS を使用した Windows での ASP.NET Core のホスト](/aspnet/core/host-and-deploy/iis/index)」を参照してください。
+- **ASP.NET と Web 開発ワークロード** がインストールされていない場合はインストールします (Visual Studio インストーラーを再実行し、 **[変更]** を選択して、このワークロードを追加します)。
+
+   ::: moniker range="vs-2017"
+   Visual Studio 2017 で、 **[開発時 IIS サポート]** コンポーネントを探します。 ワークロードを追加するときに、それが選択されていることを確認します。
+   ::: moniker-end
+- Visual Studio を管理者として実行します。
+- IIS をインストールし、適切なバージョンの ASP.NET または ASP.NET Core、またはその両方を使用して正しく構成します。 IIS と ASP.NET Core の使用の詳細については、「[IIS を使用した Windows での ASP.NET Core のホスト](/aspnet/core/host-and-deploy/iis/index)」を参照してください。 ASP.NET については、[IIS と ASP.NET モジュールのインストール](/iis/application-frameworks/scenario-build-an-aspnet-website-on-iis/configuring-step-1-install-iis-and-asp-net-modules)に関する記事を参照してください。
 - IIS 上でアプリがエラーなしで動作することを確認します。
 
 ## <a name="debug-aspnet-apps"></a>ASP.NET アプリをデバッグする
 
 IIS Express が既定値であり、事前に構成されています。 ローカル IIS 上でデバッグする場合は、[ローカル IIS デバッグの要件](#iis)を満たしていることを確認します。
 
-1. Visual Studio の**ソリューション エクスプローラー**で ASP.NET プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** キーを押すか、右クリックして **[プロパティ]** をクリックします。
+1. Visual Studio の **ソリューション エクスプローラー** で ASP.NET プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** キーを押すか、右クリックして **[プロパティ]** をクリックします。
 
 1. **[Web]** タブを選択します。
 
@@ -70,7 +75,7 @@ IIS Express が既定値であり、事前に構成されています。 ロー�
 
 IIS Express が既定値であり、事前に構成されています。 ローカル IIS 上でデバッグする場合は、[ローカル IIS デバッグの要件](#iis)を満たしていることを確認します。
 
-1. Visual Studio の**ソリューション エクスプローラー**で ASP.NET Core プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** キーを押すか、右クリックして **[プロパティ]** をクリックします。
+1. Visual Studio の **ソリューション エクスプローラー** で ASP.NET Core プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** キーを押すか、右クリックして **[プロパティ]** をクリックします。
 
 1. **[デバッグ]** タブを選択します。
 
@@ -155,7 +160,7 @@ IIS にアプリを発行するには、さまざまな方法があります。 
 
 3. **[IIS、FTP、その他]** を選択し、 **[発行]** をクリックします。
 
-    ![IIS に発行する](media/dbg-aspnet-local-iis.png "IIS に発行する")
+    ![Visual Studio の [発行先を選択] ダイアログのスクリーンショット。 IIS、FTP、Web 配置が選択され、[発行] ボタンが強調表示されています。](media/dbg-aspnet-local-iis.png)
 
 4. **[CustomProfile]** ダイアログの **[発行方法]** で、 **[ファイル システム]** を選択します。
 
@@ -177,7 +182,7 @@ IIS にアプリを発行するには、さまざまな方法があります。 
 
 1. **[発行]** を選びます。
 
-    ![IIS に発行する](media/dbg-aspnet-local-iis-select-site.png "IIS に発行する")
+    ![[発行] ダイアログのスクリーンショット。CustomProfile アプリが選択され、[発行] ボタンが強調表示され、LastBuildConfiguration に [デバッグ] が設定されています。](media/dbg-aspnet-local-iis-select-site.png)
 
 > [!IMPORTANT]
 > デバッグ モードにすると、アプリのパフォーマンスは大幅に低下します。 最高のパフォーマンスを得るには、*web.config* で `debug="false"` を設定し、運用アプリを配置するとき、またはパフォーマンス測定を行うときに [リリース ビルド] を指定します。

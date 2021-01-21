@@ -1,5 +1,7 @@
 ---
 title: キーバインド要素 |Microsoft Docs
+description: キーバインド要素は、コマンドのキーボードショートカットを指定します。 コマンドには、単一キーバインドとデュアルキーバインドの両方を関連付けることができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b458e70a9a85c11707c50da2e16e3aa73f51bc12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33b2c1638b41afbdae56e0c4374937e7230dfffe
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703146"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616118"
 ---
 # <a name="keybinding-element"></a>キーバインド要素
 キーバインド要素は、コマンドのキーボードショートカットを指定します。
 
- コマンドには、単一キーバインドとデュアルキーバインドの両方を関連付けることができます。 1つのキーバインドの例と**Ctrl**しては、 + [**保存**] コマンドの Ctrl**S**があります。 デュアルキーバインドでは、コマンドをトリガーするために2つの連続するキーの組み合わせが必要です。 2つのキーのバインドの例として、 <strong>ctrl *+</strong> k、ctrl <strong>+</strong> k *<strong>、</strong>* ブックマークの設定などがあります。
+ コマンドには、単一キーバインドとデュアルキーバインドの両方を関連付けることができます。 1つのキーバインドの例としては、 + [**保存**] コマンドの Ctrl **S** があります。 デュアルキーバインドでは、コマンドをトリガーするために2つの連続するキーの組み合わせが必要です。 2つのキーのバインドの例として、 <strong>ctrl *+</strong> k、ctrl <strong>+</strong> k *<strong>、</strong>* ブックマークの設定などがあります。
 
 ## <a name="syntax"></a>構文
 

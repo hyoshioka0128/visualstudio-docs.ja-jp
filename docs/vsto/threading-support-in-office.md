@@ -1,5 +1,7 @@
 ---
 title: Office でのスレッドのサポート
+description: スレッド処理は、Microsoft Office オブジェクトモデルでサポートされています。 Office オブジェクトモデルはスレッドセーフではありませんが、Office ソリューションで複数のスレッドで作業できます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978768"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524198"
 ---
 # <a name="threading-support-in-office"></a>Office でのスレッドのサポート
   この記事では、Microsoft Office オブジェクトモデルでのスレッド処理のサポートについて説明します。 Office オブジェクトモデルはスレッドセーフではありませんが、Office ソリューションで複数のスレッドを使用することができます。 Office アプリケーションは、コンポーネントオブジェクトモデル (COM) サーバーです。 COM を使用すると、クライアントは任意のスレッドで COM サーバーを呼び出すことができます。 スレッドセーフでない COM サーバーの場合、COM は同時呼び出しをシリアル化して、サーバー上で一度に1つの論理スレッドだけが実行されるようにするメカニズムを提供します。 このメカニズムは、シングルスレッドアパートメント (STA) モデルと呼ばれています。 呼び出しはシリアル化されるため、サーバーがビジー状態であるかバックグラウンドスレッドで他の呼び出しを処理しているときに、呼び出し元が一定期間ブロックされることがあります。
@@ -36,7 +38,7 @@ ms.locfileid: "62978768"
 
 - コンカレンシー
 
-- 同期
+- Synchronization
 
 - マーシャリング
 
@@ -71,7 +73,7 @@ ms.locfileid: "62978768"
 ## <a name="modeless-forms"></a>モードレスフォーム
  モードレスフォームを使用すると、フォームの表示中にアプリケーションとの間で何らかの種類の操作を行うことができます。 ユーザーはフォームと対話し、フォームはを閉じずにアプリケーションと対話します。 Office オブジェクトモデルでは、マネージドモードレスフォームがサポートされています。ただし、バックグラウンドスレッドでは使用しないでください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [スレッド処理 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [スレッド処理 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
 - [スレッドとスレッド処理の使用](/dotnet/standard/threading/using-threads-and-threading)

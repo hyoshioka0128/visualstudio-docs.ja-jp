@@ -1,5 +1,7 @@
 ---
 title: AL (アセンブリ リンカー) タスク | Microsoft Docs
+description: MSBuild アセンブリ リンカー (AL) タスクを使用して、Windows ソフトウェア開発キットと共に配布されるツールである AL.exe をラップします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,16 +20,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c7964c6654d1f6996d1acc44542e3a7bf093a52
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: d59251240abc7ca39b3819adf2324bf5bb9cef0a
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167463"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353357"
 ---
 # <a name="al-assembly-linker-task"></a>AL (アセンブリ リンカー) タスク
 
-AL タスクは、Windows ソフトウェア開発キット (SDK) と共に配布されるツールである *AL.exe* をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 *AL.exe* について詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」をご覧ください。
+AL タスクは、Windows ソフトウェア開発キット (SDK) と共に配布されるツールである *AL.exe* をラップします。 アセンブリ リンカー ツールは、モジュールまたはリソース ファイルである 1 つ以上のファイルから、マニフェストを含むアセンブリを作成するために使われます。 これらの機能はコンパイラおよび開発環境で既に提供されていることがあるので、ほとんどの場合、このタスクを直接使う必要はありません。 アセンブリ リンカーは、混合言語の開発から生成されるものなど、複数のコンポーネント ファイルから 1 つのアセンブリを作成する必要がある開発者に適しています。 このタスクでは、複数のモジュールが 1 つのアセンブリ ファイルに結合されることはありません。生成されたアセンブリを正しく読み込むためには、やはり個々のモジュールを配布して使用できるようにする必要があります。 *AL.exe* について詳しくは、「 [Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」をご覧ください。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -52,7 +54,7 @@ AL タスクは、Windows ソフトウェア開発キット (SDK) と共に配�
 | `KeyContainer` | 省略可能な `String` 型のパラメーターです。<br /><br /> キー ペアを保持するコンテナーを指定します。 これにより、公開キーがアセンブリ マニフェストに挿入され、アセンブリに署名 (厳密な名前が指定) されます。 次に、タスクは最終的なアセンブリに秘密キーで署名します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/keyn[ame]` オプションのドキュメントをご覧ください。 |
 | `KeyFile` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリに署名するためのキー ペアまたは公開キーだけを含むファイルを指定します。 コンパイラは、アセンブリ マニフェストに公開キーを挿入し、最終的なアセンブリに秘密キーで署名します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/keyf[ile]` オプションのドキュメントをご覧ください。 |
 | `LinkResources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 指定したリソース ファイルをアセンブリにリンクします。 リソースはアセンブリの一部になりますが、ファイルはコピーされません。 このパラメーターに渡すアイテムには、`LogicalName`、`Target`、および `Access` という名前の省略可能なメタデータを添付することができます。 `LogicalName` メタデータは、リソースの内部識別子を指定するために使われます。 `Target` メタデータでは、タスクがファイルをコピーする先のパスとファイル名を指定できます。その後は、この新しいファイルがアセンブリにコンパイルされます。 リソースを他のアセンブリから見えないようにするには、`Access` メタデータを `private` に設定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/link[resource]` オプションのドキュメントをご覧ください。 |
-| `MainEntryPoint` | 省略可能な `String` 型のパラメーターです。<br /><br /> モジュールを実行可能ファイルに変換するときに、エントリ ポイントとして使うメソッドの完全修飾名 (*class.method*) を指定します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/main` オプションに対応します。 |
+| `MainEntryPoint` | 省略可能な `String` 型のパラメーターです。<br /><br /> モジュールを実行可能ファイルに変換するときに、エントリ ポイントとして使うメソッドの完全修飾名 ( *class.method* ) を指定します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/main` オプションに対応します。 |
 | `OutputAssembly` | 必須の <xref:Microsoft.Build.Framework.ITaskItem> 型の出力パラメーターです。<br /><br /> このタスクで生成されるファイルの名前を指定します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/out` オプションに対応します。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> このコードを実行できるプラットフォームを制限します。`x86`、`Itanium`、`x64`、または `anycpu` のいずれかでなければなりません。 既定値は、`anycpu` です。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/platform` オプションに対応します。 |
 | `ProductName` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリの `Product` フィールドに文字列を指定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/prod[uct]` オプションのドキュメントをご覧ください。 |
@@ -66,7 +68,7 @@ AL タスクは、Windows ソフトウェア開発キット (SDK) と共に配�
 | `Title` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリの `Title` フィールドに文字列を指定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/title` オプションのドキュメントをご覧ください。 |
 | `ToolPath` | 省略可能な `String` 型のパラメーターです。<br /><br /> タスクが基になる実行可能ファイル (Al.exe) を読み込む場所を指定します。 このパラメーターを指定しない場合、タスクでは、MSBuild を実行しているフレームワークのバージョンに対応する SDK インストール パスが使用されます。 |
 | `Trademark` | 省略可能な `String` 型のパラメーターです。<br /><br /> アセンブリの `Trademark` フィールドに文字列を指定します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/trade[mark]` オプションのドキュメントをご覧ください。 |
-| `Version` | 省略可能な `String` 型のパラメーターです。<br /><br /> このアセンブリのバージョン情報を指定します。 文字列の形式は、*major.minor.build.revision* です。 既定値は 0 です。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/v[ersion]` オプションのドキュメントをご覧ください。 |
+| `Version` | 省略可能な `String` 型のパラメーターです。<br /><br /> このアセンブリのバージョン情報を指定します。 文字列の形式は、 *major.minor.build.revision* です。 既定値は 0 です。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/v[ersion]` オプションのドキュメントをご覧ください。 |
 | `Win32Icon` | 省略可能な `String` 型のパラメーターです。<br /><br /> *.ico* ファイルをアセンブリに挿入します。 この *.ico* ファイルは、エクスプローラーにおける出力ファイルの視覚的な表現を提供します。 このパラメーターは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」の `/win32icon` オプションに対応します。 |
 | `Win32Resource` | 省略可能な `String` 型のパラメーターです。<br /><br /> Win32 リソース ( *.res* ファイル) を出力ファイルに挿入します。 詳しくは、「[Al.exe (アセンブリ リンカー)](/dotnet/framework/tools/al-exe-assembly-linker)」で `/win32res` オプションのドキュメントをご覧ください。 |
 

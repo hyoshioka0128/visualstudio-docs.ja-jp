@@ -1,5 +1,7 @@
 ---
 title: データセットへの WPF コントロールのバインド
+description: データバインドコントロールを含む WPF アプリケーションを Visual Studio で作成します。これは、データセットにカプセル化された製品レコードにバインドされています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282918"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518523"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -42,7 +44,7 @@ ms.locfileid: "85282918"
 
 このチュートリアルを実行するには、次のコンポーネントが必要です。
 
-- Visual Studio
+- Visual Studio
 
 - AdventureWorks Light (AdventureWorksLT) サンプルデータベースがアタッチされている SQL Server または SQL Server Express の実行中のインスタンスへのアクセス。 AdventureWorksLT データベースは、 [CodePlex アーカイブ](https://archive.codeplex.com/?p=awlt2008dbscript)からダウンロードできます。
 
@@ -62,7 +64,7 @@ ms.locfileid: "85282918"
 
 2. **[ファイル]** メニューの **[新規]** > **[プロジェクト]** を選択します。
 
-3. **[Visual Basic]** または **[Visual C#]** を展開し、**[Windows]** を選択します。
+3. **[Visual Basic]** または **[Visual C#]** を展開し、 **[Windows]** を選択します。
 
 4. [ **WPF アプリケーション** ] プロジェクトテンプレートを選択します。
 
@@ -76,7 +78,7 @@ ms.locfileid: "85282918"
 
 2. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-3. C# の **WPF アプリ** プロジェクトテンプレートを検索し、プロジェクトを作成する手順に従って、プロジェクトに **AdventureWorksProductsEditor**という名前を付けます。
+3. C# の **WPF アプリ** プロジェクトテンプレートを検索し、プロジェクトを作成する手順に従って、プロジェクトに **AdventureWorksProductsEditor** という名前を付けます。
 
 ::: moniker-end
 
@@ -84,7 +86,7 @@ ms.locfileid: "85282918"
 
 ## <a name="create-a-dataset-for-the-application"></a>アプリケーションのデータセットを作成する
 
-データ バインド コントロールを作成するには、まず、アプリケーション用のデータ モデルを定義し、**[データ ソース]** ウィンドウに追加する必要があります。 このチュートリアルでは、データ モデルとして使用するデータセットを作成します。
+データ バインド コントロールを作成するには、まず、アプリケーション用のデータ モデルを定義し、 **[データ ソース]** ウィンドウに追加する必要があります。 このチュートリアルでは、データ モデルとして使用するデータセットを作成します。
 
 1. **[データ]** メニューの **[データ ソースの表示]** をクリックします。
 
@@ -92,21 +94,21 @@ ms.locfileid: "85282918"
 
 2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックします。
 
-   **データソース構成**ウィザードが開きます。
+   **データソース構成** ウィザードが開きます。
 
-3. **[データソースの種類を選択]** ページで、**[データベース]** を選択し、**[次へ]** をクリックします。
+3. **[データソースの種類を選択]** ページで、 **[データベース]** を選択し、 **[次へ]** をクリックします。
 
-4. **[データベース モデルの選択]** ページで、**[データセット]** を選択し、**[次へ]** をクリックします。
+4. **[データベース モデルの選択]** ページで、 **[データセット]** を選択し、 **[次へ]** をクリックします。
 
 5. **[データ接続の選択]** ページで、次のいずれかのオプションを選択します。
 
-   - AdventureWorksLT サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これを選択し、**[次へ]** をクリックします。
+   - AdventureWorksLT サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は、これを選択し、 **[次へ]** をクリックします。
 
    - **[新しい接続]** をクリックして、AdventureWorksLT データベースへの接続を作成します。
 
-6. **[接続文字列をアプリケーション構成ファイルに保存する]** ページで、**[次の名前で接続を保存する]** チェック ボックスをオンにし、**[次へ]** をクリックします。
+6. **[接続文字列をアプリケーション構成ファイルに保存する]** ページで、 **[次の名前で接続を保存する]** チェック ボックスをオンにし、 **[次へ]** をクリックします。
 
-7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** を展開し、**Product (SalesLT)** テーブルを選択します。
+7. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** を展開し、 **Product (SalesLT)** テーブルを選択します。
 
 8. **[完了]** をクリックします。
 
@@ -118,13 +120,13 @@ ms.locfileid: "85282918"
 
 データセットにデータを読み込むには、`Fill` の `ProductTableAdapter` メソッドを使用します。 既定では、`Fill` メソッドによって、`ProductDataTable` の `AdventureWorksLTDataSet` に Product テーブルのすべてのデータ行が読み込まれます。 このメソッドは、行のサブセットのみを返すように変更できます。 このチュートリアルでは、写真付きの製品の行のみを返すように `Fill` メソッドを変更します。
 
-1. **ソリューション エクスプローラー**で、*AdventureWorksLTDataSet.xsd* ファイルをダブルクリックします。
+1. **ソリューション エクスプローラー** で、 *AdventureWorksLTDataSet.xsd* ファイルをダブルクリックします。
 
      データセット デザイナーが開きます。
 
-2. デザイナーで、**[Fill**, **GetData()]** クエリを右クリックし、**[構成]** を選択します。
+2. デザイナーで、 **[Fill** , **GetData()]** クエリを右クリックし、 **[構成]** を選択します。
 
-     **TableAdapter 構成**ウィザードが開きます。
+     **TableAdapter 構成** ウィザードが開きます。
 
 3. **[SQL ステートメントの入力]** ページのテキスト ボックスで、`SELECT` ステートメントの後に次の WHERE 句を追加します。
 
@@ -138,9 +140,9 @@ ms.locfileid: "85282918"
 
 WPF デザイナーで XAML を変更して、いくつかのボタンをウィンドウに追加します。 これらのボタンを使用して製品レコード間をスクロールしたり、製品レコードへの変更を保存したりできるようにするコードは、このチュートリアルで後で追加します。
 
-1. **ソリューション エクスプローラー**で、*MainWindow.xaml* をダブルクリックします。
+1. **ソリューション エクスプローラー** で、 *MainWindow.xaml* をダブルクリックします。
 
-    **WPF デザイナー**でウィンドウが開きます。
+    **WPF デザイナー** でウィンドウが開きます。
 
 2. デザイナーの [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] ビューで、`<Grid>` タグの間に次のコードを追加します。
 
@@ -149,8 +151,8 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
        <RowDefinition Height="75" />
        <RowDefinition Height="625" />
    </Grid.RowDefinitions>
-   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75">&lt;</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">&gt;</Button>
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
@@ -158,9 +160,9 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 ## <a name="create-data-bound-controls"></a>データ バインド コントロールを作成する
 
-`Product`[**データソース**] ウィンドウから WPF デザイナーにテーブルをドラッグして、顧客レコードを表示するコントロールを作成します。
+`Product`[ **データソース** ] ウィンドウから WPF デザイナーにテーブルをドラッグして、顧客レコードを表示するコントロールを作成します。
 
-1. **[データ ソース]** ウィンドウで、**[Product]** ノードのドロップダウン メニューをクリックし、**[詳細]** を選択します。
+1. **[データ ソース]** ウィンドウで、 **[Product]** ノードのドロップダウン メニューをクリックし、 **[詳細]** を選択します。
 
 2. **[Product]** ノードを展開します。
 
@@ -176,18 +178,18 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
     - ModifiedDate
 
-4. **[ThumbNailPhoto]** ノードの横にあるドロップダウン メニューをクリックし、**[イメージ]** を選択します。
+4. **[ThumbNailPhoto]** ノードの横にあるドロップダウン メニューをクリックし、 **[イメージ]** を選択します。
 
     > [!NOTE]
     > 既定では、画像を表す **[データ ソース]** ウィンドウ内の項目は、既定のコントロールが **[なし]** に設定されています。 これは、画像がデータベース内でバイト配列として格納されているためです。バイト配列には、単純なバイト配列から大規模なアプリケーションの実行可能ファイルまで、あらゆるデータを格納できます。
 
 5. **[データ ソース]** ウィンドウから、ボタンがある行の下のグリッド行に **[Product]** ノードをドラッグします。
 
-     Visual Studio によって、**Product** テーブルのデータにバインドされるコントロール セットを定義する XAML が生成されます。 また、データを読み込むコードも生成されます。 生成される XAML とコードの詳細については、「 [Visual Studio でのデータへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)」を参照してください。
+     Visual Studio によって、 **Product** テーブルのデータにバインドされるコントロール セットを定義する XAML が生成されます。 また、データを読み込むコードも生成されます。 生成される XAML とコードの詳細については、「 [Visual Studio でのデータへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)」を参照してください。
 
-6. デザイナーで、**[Product ID]** ラベルの横のテキスト ボックスをクリックします。
+6. デザイナーで、 **[Product ID]** ラベルの横のテキスト ボックスをクリックします。
 
-7. **[プロパティ]** ウィンドウで、**IsReadOnly** プロパティの横のチェック ボックスをオンにします。
+7. **[プロパティ]** ウィンドウで、 **IsReadOnly** プロパティの横のチェック ボックスをオンにします。
 
 ## <a name="navigate-product-records"></a>製品レコードの移動
 
@@ -218,7 +220,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 ユーザーが **[変更の保存]** ボタンを使用して製品レコードへの変更を保存できるようにするコードを追加します。
 
-1. デザイナーで、**[変更の保存]** をダブルクリックします。
+1. デザイナーで、 **[変更の保存]** をダブルクリックします。
 
      Visual Studio によって分離コード ファイルが開かれ、`saveButton_Click` イベントのために新しい <xref:System.Windows.Controls.Primitives.ButtonBase.Click> イベント ハンドラーが作成されます。
 
@@ -234,7 +236,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 アプリケーションをビルドして実行します。 製品レコードを表示および更新できることを確認します。
 
-1. **F5**キーを押します。
+1. **F5** キーを押します。
 
      アプリケーションがビルドされ、実行されます。 次の点を確認します。
 
@@ -242,7 +244,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
     - **>** または **<** ボタンをクリックすると、他の製品レコード間を移動できます。
 
-2. いずれかの製品レコードで **[サイズ]** の値を変更し、**[変更の保存]** をクリックします。
+2. いずれかの製品レコードで **[サイズ]** の値を変更し、 **[変更の保存]** をクリックします。
 
 3. アプリケーションを終了し、Visual Studio で **F5** キーを押してアプリケーションを再起動します。
 
@@ -261,5 +263,5 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 ## <a name="see-also"></a>関連項目
 
 - [Visual Studio でデータに WPF コントロールをバインドする](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
 - [データ バインディングの概要](/dotnet/desktop-wpf/data/data-binding-overview)

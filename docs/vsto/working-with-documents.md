@@ -1,5 +1,7 @@
 ---
 title: ドキュメントを操作する
+description: Microsoft Word のオブジェクトモデルを使用して Office プロジェクトのドキュメントを操作する手順とコード例について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63008691"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527028"
 ---
 # <a name="work-with-documents"></a>ドキュメントを操作する
   このセクションのトピックでは、Microsoft Office Word のオブジェクト モデルを使用して Office プロジェクト内の文書を操作する手順とコード例を示します。
@@ -42,6 +44,6 @@ ms.locfileid: "63008691"
 |文書にヘッダーまたはフッターを追加します。|[方法: プログラムによって文書にヘッダーとフッターを追加する](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
 |文書からすべてのコメントを削除します。|[方法: プログラムによって文書からすべてのコメントを削除する](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Word オブジェクトモデルの概要](../vsto/word-object-model-overview.md)
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

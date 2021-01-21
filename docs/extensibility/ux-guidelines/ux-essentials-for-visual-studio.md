@@ -1,5 +1,7 @@
 ---
 title: Visual Studio の UX Essentials |Microsoft Docs
+description: 画面の解像度についても含めて、Visual Studio 向けに開発した新機能については、これらのユーザーエクスペリエンスのベストプラクティスを確認してください。
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6c329eda477d77ab73be2ad913ac18d67ff3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698339"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97864043"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 
@@ -55,11 +57,11 @@ ms.locfileid: "80698339"
 
 ### <a name="minimum-resolution"></a>最小解像度
 
-- Visual Studio 2015 の最小解像度は **1280 0x720**です。 これは、この解像度で Visual Studio を *使用できること* を意味しますが、ユーザーエクスペリエンスが最適ではない可能性があります。 すべての側面が 1280 0x720 より低い解像度で使用できるという保証はありません。
+- Visual Studio 2015 の最小解像度は **1280 0x720** です。 これは、この解像度で Visual Studio を *使用できること* を意味しますが、ユーザーエクスペリエンスが最適ではない可能性があります。 すべての側面が 1280 0x720 より低い解像度で使用できるという保証はありません。
 
-- Visual Studio のターゲットの解像度は **1366x768**です。 これは、 *優れ* たユーザーエクスペリエンスを保証する最も低い解決策です。
+- Visual Studio のターゲットの解像度は **1366x768** です。 これは、 *優れ* たユーザーエクスペリエンスを保証する最も低い解決策です。
 
-- 初期ダイアログの高さは **700 ピクセル未満**にする必要があるため、IDE フレームの最小解像度 (96 dpi) 内に収まるようにしてください。
+- 初期ダイアログの高さは **700 ピクセル未満** にする必要があるため、IDE フレームの最小解像度 (96 dpi) 内に収まるようにしてください。
 
 ### <a name="high-density-displays"></a>高密度ディスプレイ
  Visual Studio の UI は、Windows が既定でサポートしているすべての DPI スケールファクター (150%、200%、250%) で適切に動作する必要があります。
@@ -120,11 +122,11 @@ UI を閉じる前に、ユーザーが説明テキストを強制的に読み�
 
 ![図 A: コマンドバーのアンチパターン](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-FigureA")<br />図 A: コマンドバーのアンチパターン
 
-少し良くなりますが、それでも望ましくありませんが、 **図 B**に示すように、ツールバーにこの種類の設定を配置します。分割ボタンでは領域が小さくなりますが、ドロップダウンに対する改善点がありますが、どちらのデザインでも、実際にはコマンドではないものを昇格するツールバーが使用されています。
+少し良くなりますが、それでも望ましくありませんが、 **図 B** に示すように、ツールバーにこの種類の設定を配置します。分割ボタンでは領域が小さくなりますが、ドロップダウンに対する改善点がありますが、どちらのデザインでも、実際にはコマンドではないものを昇格するツールバーが使用されています。
 
 ![図 B: 高度なコマンドバーのアンチパターン](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-FigureB")<br />図 B: 高度なコマンドバーのアンチパターン
 
-**図 C**に示されている正しい方法では、設定は一連のコマンドに関連付けられています。 グローバル設定が設定されておらず、4つのコマンドのみを切り替えています。 これは、ツールバーのコマンドが許容される唯一の状況です。
+**図 C** に示されている正しい方法では、設定は一連のコマンドに関連付けられています。 グローバル設定が設定されておらず、4つのコマンドのみを切り替えています。 これは、ツールバーのコマンドが許容される唯一の状況です。
 
 ![図 C: Visual Studio のコマンドバーパターンの適切な使用](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-FigureC")<br />図 C: Visual Studio のコマンドバーパターンの適切な使用
 
@@ -154,7 +156,7 @@ UI を閉じる前に、ユーザーが説明テキストを強制的に読み�
 
    ![Color サービスを無視し、ハイパーリンクの [詳細情報] を使用すると、Visual Studio のアンチパターンになります。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />Color サービスを無視し、ハイパーリンクの [詳細情報] を使用すると、Visual Studio のアンチパターンになります。
 
-**より優れたソリューション:** リンクをクリックして、ユーザーが質問する質問をします。 次に例を示します。
+**より優れたソリューション:** リンクをクリックして、ユーザーが質問する質問をします。 例:
 
 - Windows Azure サービスのしくみ
 

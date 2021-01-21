@@ -9,19 +9,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85291000"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352317"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>データベース ツールを使用してデータベースのパフォーマンスを分析する
 
 データベース ツールを使用して、診断セッション中にアプリによって実行されたデータベース クエリを記録します。 その後、個々のクエリに関する情報を分析して、アプリのパフォーマンスを向上させるための場所を見つけることができます。
 
 > [!NOTE]
-> データベース ツールでは、Visual Studio 2019 バージョン 16.3 以降と、[ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) または [Entity Framework Core](https://docs.microsoft.com/ef/core/) のいずれかを使用する Windows 上の .NET Core プロジェクトが必要です。
+> データベース ツールでは、Visual Studio 2019 バージョン 16.3 以降と、[ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) または [Entity Framework Core](/ef/core/) のいずれかを使用する Windows 上の .NET Core プロジェクトが必要です。
 
 ## <a name="setup"></a>セットアップ
 
@@ -50,7 +50,7 @@ ms.locfileid: "85291000"
 
 ![[ソース ファイルに移動] が選択されている](./media/db-gotosource.png "[ソース ファイルに移動] が選択されている")
 
-グラフで時間の範囲を選択した場合、クエリ テーブルには、その時間の範囲中に発生したクエリのみが表示されます。 この動作は、[CPU 使用率ツール](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019)も実行する場合に特に便利です。
+グラフで時間の範囲を選択した場合、クエリ テーブルには、その時間の範囲中に発生したクエリのみが表示されます。 この動作は、[CPU 使用率ツール](./cpu-usage.md?view=vs-2019&preserve-view=true)も実行する場合に特に便利です。
 
 ## <a name="see-also"></a>関連項目
 

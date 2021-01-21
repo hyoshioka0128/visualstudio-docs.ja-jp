@@ -3,19 +3,19 @@ title: テキスト エディターの既定の F1 ヘルプ ページ
 description: Visual Studio テキスト エディター用 F1 ヘルプ要求の既定のページ
 ms.date: 08/20/2020
 ms.topic: troubleshooting
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jillfra
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 726d0daed76212e9bda498a5afca0c84cd84281e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 1b2c34a2cb93bccd8b9f85d9dcbae9dfb86cae89
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88802292"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684063"
 ---
 # <a name="f1-help-for-the-text-editor"></a>テキスト エディターの F1 ヘルプ
 
@@ -37,7 +37,7 @@ ms.locfileid: "88802292"
 ## <a name="search-for-help-on-a-keyword-or-api-name"></a>キーワードまたは API 名に関するヘルプを検索する
 
 キーワードまたは API 名に関する F1 ヘルプをお探しの場合:
-- [docs.microsoft.com](https://docs.microsoft.com) で検索してみてください
+- [docs.microsoft.com](/) で検索してみてください
 - 検索エンジンを使用して検索してみてください。
 - [.NET API ブラウザー](/dotnet/api/)で参照ドキュメントを検索します。
 

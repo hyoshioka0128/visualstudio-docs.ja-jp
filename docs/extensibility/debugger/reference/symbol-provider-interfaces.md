@@ -1,5 +1,7 @@
 ---
 title: シンボルプロバイダーインターフェイス |Microsoft Docs
+description: この記事では、中断モード中に呼び出し履歴の変数を評価する、Visual Studio SDK のシンボル処理インターフェイスの説明へのリンクを示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,27 +14,27 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7929ba36c76f0db1cabab087afe3590de509efff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715850"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845792"
 ---
 # <a name="symbol-provider-interfaces"></a>シンボル プロバイダーのインターフェイス
 のシンボル処理インターフェイスを次に示し [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] ます。
 
-## <a name="discussion"></a>考察 (Discussion)
+## <a name="discussion"></a>ディスカッション
  これらのインターフェイスは、中断モード中に呼び出し履歴の変数を評価するために使用されます。 これらは、共通言語ランタイムシンボルプロバイダー (SP) に対してのみ実装されます。
 
-|インターフェイス|実装|[説明]|
+|インターフェイス|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|項目のアドレスを表します。|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|プロセス ID へのアクセスを提供する、項目のアドレスを表します。|
 |[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)|SP|配列シンボルまたは配列型を表します。|
 |[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)|SP|クラスシンボルまたはクラス型を表します。|
 |[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)|SP|マネージコードに固有のメソッドを持つ COM + シンボルプロバイダーを表します。|
-|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|SP|マネージコードに固有のメソッドを使用して **IDebugComPlusSymbolProvider**を拡張する com + シンボルプロバイダーを表します。|
+|[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)|SP|マネージコードに固有のメソッドを使用して **IDebugComPlusSymbolProvider** を拡張する com + シンボルプロバイダーを表します。|
 |[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)|SP|他のシンボルまたは型のコンテナーであるシンボルまたは型を表します。|
 |[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)|SP|シンボルにアタッチできるカスタム属性を表します。|
 |[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)|SP|メソッドまたは型のカスタム属性に対するクエリを表します。|
@@ -53,7 +55,7 @@ ms.locfileid: "80715850"
 |[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)|SP|シンボルと型を提供するシンボルプロバイダーを表します。|
 |[IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)|SP|メタデータおよびコアシンボルインターフェイスに直接アクセスできるシンボルプロバイダーを表します。|
 |[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)|SP|型を表すフィールドを作成する機能を表します。|
-|[IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)|SP|**IDebugTypeFieldBuilder**を拡張して、配列型を作成できるようにします。|
+|[IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)|SP|**IDebugTypeFieldBuilder** を拡張して、配列型を作成できるようにします。|
 |[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)|SP|[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)オブジェクトのコレクションを表します。|
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|[IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)オブジェクトのコレクションを表します。|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトのコレクションを表します。|

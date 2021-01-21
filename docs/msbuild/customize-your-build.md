@@ -1,5 +1,7 @@
 ---
 title: ビルドのカスタマイズ | Microsoft Docs
+description: 標準のビルド プロセスを使用する MSBuild プロジェクトのカスタマイズに使用できる、いくつかの拡張フックについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c52c6b584db94ff3cbe8dc041c00ebe969c9faf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 708b6bc57b53ab2c52f9e8fda51db5b5c60225f3
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288937"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796525"
 ---
 # <a name="customize-your-build"></a>ビルドのカスタマイズ
 
-標準のビルド プロセス (*Microsoft.Common.props* と *Microsoft.Common.targets* のインポート) を使用する MSBuild プロジェクトには、ビルド プロセスのカスタマイズに使用できる拡張フックがいくつかあります。
+標準のビルド プロセス ( *Microsoft.Common.props* と *Microsoft.Common.targets* のインポート) を使用する MSBuild プロジェクトには、ビルド プロセスのカスタマイズに使用できる拡張フックがいくつかあります。
 
 ## <a name="add-arguments-to-command-line-msbuild-invocations-for-your-project"></a>プロジェクトのコマンドライン MSBuild 呼び出しに引数を追加する
 
@@ -30,7 +32,7 @@ ms.locfileid: "85288937"
 
 MSBuild バージョン 15 より前では、ソリューション内のプロジェクトに新しいカスタム プロパティを提供する場合、ソリューション内のすべてのプロジェクト ファイルにそのプロパティへの参照を手動で追加する必要がありました。 または、 *.props* ファイルでプロパティを定義してから、ソリューションのすべてのプロジェクトでその *.props* ファイルを明示的にインポートする必要がありました。
 
-ただし、現在では、ソースが含まれるルート フォルダーにある *Directory.Build.props* という単一のファイルで新しいプロパティを定義することで、1 つのステップですべてのプロジェクトに追加できます。 MSBuild が実行されると、*Microsoft.Common.props* はディレクトリ構造で *Directory.Build.props* ファイルを検索します (また、*Microsoft.Common.targets* は *Directory.Build.targets* を探します)。 該当するものが見つかった場合、プロパティがインポートされます。 *Directory.Build.props* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。
+ただし、現在では、ソースが含まれるルート フォルダーにある *Directory.Build.props* という単一のファイルで新しいプロパティを定義することで、1 つのステップですべてのプロジェクトに追加できます。 MSBuild が実行されると、 *Microsoft.Common.props* はディレクトリ構造で *Directory.Build.props* ファイルを検索します (また、 *Microsoft.Common.targets* は *Directory.Build.targets* を探します)。 該当するものが見つかった場合、プロパティがインポートされます。 *Directory.Build.props* は、ディレクトリの下のプロジェクトをカスタマイズできるようにする、ユーザー定義のファイルです。
 
 > [!NOTE]
 > Linux ベースのファイル システムは、大文字小文字を区別します。 Directory.Build.props ファイル名の大文字と小文字が正確に一致していることを確認してください。一致していないと、ビルド プロセス中に検出されません。
@@ -56,7 +58,7 @@ MSBuild バージョン 15 より前では、ソリューション内のプロ�
 
 ### <a name="search-scope"></a>検索範囲
 
-*Directory.Build.props* ファイルを検索するときに、MSBuild は *Directory.Build.props* ファイルが見つかるまでプロジェクトの場所 (`$(MSBuildProjectFullPath)`) から上方向にディレクトリ構造を調べます。 たとえば、以下のディレクトリ構造のように、`$(MSBuildProjectFullPath)` が *c:\users\username\code\test\case1* である場合、MSBuild はそこから検索を開始し、*Directory.Build.props* ファイルが見つかるまでディレクトリ構造を上方向に検索します。
+*Directory.Build.props* ファイルを検索するときに、MSBuild は *Directory.Build.props* ファイルが見つかるまでプロジェクトの場所 (`$(MSBuildProjectFullPath)`) から上方向にディレクトリ構造を調べます。 たとえば、以下のディレクトリ構造のように、`$(MSBuildProjectFullPath)` が *c:\users\username\code\test\case1* である場合、MSBuild はそこから検索を開始し、 *Directory.Build.props* ファイルが見つかるまでディレクトリ構造を上方向に検索します。
 
 ```
 c:\users\username\code\test\case1
@@ -73,7 +75,7 @@ c:\
 
 *Directory.Build.props* は *Microsoft.Common.props* で最初にインポートされ、後で定義されるプロパティを使用することはできません。 そのため、まだ定義されていない (したがって、評価が空になる) プロパティを参照しないようにしてください。
 
-*Directory.Build.props* で設定されたプロパティは、プロジェクト ファイルまたはインポートされたファイル内の他の場所でオーバーライドできます。そのため、プロジェクトの既定値を指定する際に、*Directory.Build.props* の設定を考慮する必要があります。
+*Directory.Build.props* で設定されたプロパティは、プロジェクト ファイルまたはインポートされたファイル内の他の場所でオーバーライドできます。そのため、プロジェクトの既定値を指定する際に、 *Directory.Build.props* の設定を考慮する必要があります。
 
 *Directory.Build.targets* は、NuGet パッケージから *.targets* ファイルがインポートされた後に *Microsoft.Common.targets* からインポートされます。 そのため、ほとんどのビルド ロジックで定義されているプロパティやターゲットをオーバーライドしたり、個々のプロジェクトの設定に関係なく、すべてのプロジェクトのプロパティを設定したりできます。
 
@@ -100,9 +102,9 @@ c:\
     \Project2Tests
 ```
 
-すべてのプロジェクト *(1)* の共通プロパティ、*src* プロジェクト *(2-src)* の共通プロパティ、*test* プロジェクト *(2-test)* の共通プロパティを用意すると便利な場合があります。
+すべてのプロジェクト *(1)* の共通プロパティ、 *src* プロジェクト *(2-src)* の共通プロパティ、 *test* プロジェクト *(2-test)* の共通プロパティを用意すると便利な場合があります。
 
-MSBuild で "内" ファイル (*2-src* と *2-test*) と "外" ファイル (*1*) を正しく結合するには、MSBuild で *Directory.Build.props* ファイルが見つかると後続のスキャンが停止することを考慮する必要があります。 スキャンを続行し、外ファイルに結合するには、次のコードを両方の内ファイルに追加します。
+MSBuild で "内" ファイル ( *2-src* と *2-test* ) と "外" ファイル ( *1* ) を正しく結合するには、MSBuild で *Directory.Build.props* ファイルが見つかると後続のスキャンが停止することを考慮する必要があります。 スキャンを続行し、外ファイルに結合するには、次のコードを両方の内ファイルに追加します。
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
@@ -125,7 +127,7 @@ MSBuild はインポートの順序に依存するので、最後のプロパテ
 
 - *.targets* ファイルは、ビルド順序の後の方でインポートします。
 
-この規則は、`<Project Sdk="SdkName">` のインポートによって適用されます (つまり、*Sdk.props* はファイルのすべての内容の前で最初にインポートされ、*Sdk.targets* はファイルのすべての内容の後で最後にインポートされます)。
+この規則は、`<Project Sdk="SdkName">` のインポートによって適用されます (つまり、 *Sdk.props* はファイルのすべての内容の前で最初にインポートされ、 *Sdk.targets* はファイルのすべての内容の後で最後にインポートされます)。
 
 プロパティを格納する場所を決定するときは、次の一般的なガイドラインを使います。
 
@@ -147,7 +149,7 @@ MSBuild はインポートの順序に依存するので、最後のプロパテ
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
-既定では、*Microsoft.Common.props* は `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` をインポートし、*Microsoft.Common.targets* は `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets` をインポートします。 `MSBuildProjectExtensionsPath` の既定値は `$(BaseIntermediateOutputPath)`、`obj/` です。 NuGet はこのメカニズムを使って、パッケージに付随するビルド ロジックを参照します。つまり、復元時、パッケージの内容を参照する `{project}.nuget.g.props` ファイルが作成されます。
+既定では、 *Microsoft.Common.props* は `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.props` をインポートし、 *Microsoft.Common.targets* は `$(MSBuildProjectExtensionsPath)$(MSBuildProjectFile).*.targets` をインポートします。 `MSBuildProjectExtensionsPath` の既定値は `$(BaseIntermediateOutputPath)`、`obj/` です。 NuGet はこのメカニズムを使って、パッケージに付随するビルド ロジックを参照します。つまり、復元時、パッケージの内容を参照する `{project}.nuget.g.props` ファイルが作成されます。
 
 *Directory.Build.props* において、または *Microsoft.Common.props* をインポートする前に、`ImportProjectExtensionProps` プロパティを `false` に設定することによって、この拡張メカニズムを無効にできます。
 
@@ -182,11 +184,11 @@ $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.t
 ## <a name="customize-the-solution-build"></a>ソリューション ビルドをカスタマイズする
 
 > [!IMPORTANT]
-> この方法によるソリューション ビルドのカスタマイズは、*MSBuild.exe* を持つコマンドライン ビルドにのみ適用されます。 Visual Studio 内のビルドには適用**されません**。 このため、カスタマイズをソリューション レベルで行うことはお勧めしません。 ソリューション内のすべてのプロジェクトをカスタマイズする場合に推奨される代替手段は、この記事の他の部分で説明されているように、ソリューション フォルダー内の *Directory.Build.props* および *Directory.build.targets* ファイルを使用することです。
+> この方法によるソリューション ビルドのカスタマイズは、 *MSBuild.exe* を持つコマンドライン ビルドにのみ適用されます。 Visual Studio 内のビルドには適用 **されません** 。 このため、カスタマイズをソリューション レベルで行うことはお勧めしません。 ソリューション内のすべてのプロジェクトをカスタマイズする場合に推奨される代替手段は、この記事の他の部分で説明されているように、ソリューション フォルダー内の *Directory.Build.props* および *Directory.build.targets* ファイルを使用することです。
 
 MSBuild でソリューション ファイルがビルドされるとき、最初に内部でプロジェクト ファイルに変換され、それからビルドされます。 生成されたプロジェクト ファイルは、ターゲットを定義する前に `before.{solutionname}.sln.targets` をインポートし、ターゲットをインポートした後に `after.{solutionname}.sln.targets` をインポートします。ターゲットには、`$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportBefore` ディレクトリと `$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\SolutionFile\ImportAfter` ディレクトリにインストールされたターゲットが含まれます。
 
-たとえば、次のコードを含む *after.MyCustomizedSolution.sln.targets* という名前の同じディレクトリにファイルを作成することで、*MyCustomizedSolution.sln* のビルド後にカスタム ログ メッセージを書き込む新しいターゲットを定義できます。
+たとえば、次のコードを含む *after.MyCustomizedSolution.sln.targets* という名前の同じディレクトリにファイルを作成することで、 *MyCustomizedSolution.sln* のビルド後にカスタム ログ メッセージを書き込む新しいターゲットを定義できます。
 
 ```xml
 <Project>
@@ -202,7 +204,7 @@ MSBuild でソリューション ファイルがビルドされるとき、最�
 
 ビルド サーバーを管理する場合は、サーバー上のすべてのビルドに対してグローバルに MSBuild 設定を構成することが必要な場合があります。  原理的には、グローバルな *Microsoft.Common.Targets* ファイルまたは *Microsoft.Common.Props* ファイルを変更することができますが、より優れた方法があります。 特定の MSBuild プロパティを使用し、特定のカスタムの `.targets` および `.props` ファイルを追加することで、特定のプロジェクト タイプ (すべての C# プロジェクトなど) のすべてのビルドに影響を与えることができます。
 
-MSBuild または Visual Studio のインストールによって管理されているすべての C# または Visual Basic ビルドに影響を与えるには、*Microsoft.Common.targets* の前後に実行されるターゲットを使用してファイル *Custom.Before.Microsoft.Common.Targets* または *Custom.After.Microsoft.Common.Targets* を作成するか、*Microsoft.Common.props* の前後に処理されるプロパティを使用してファイル *Custom.Before.Microsoft.Common.Props* または *Custom.After.Microsoft.Common.Props* を作成します。
+MSBuild または Visual Studio のインストールによって管理されているすべての C# または Visual Basic ビルドに影響を与えるには、 *Microsoft.Common.targets* の前後に実行されるターゲットを使用してファイル *Custom.Before.Microsoft.Common.Targets* または *Custom.After.Microsoft.Common.Targets* を作成するか、 *Microsoft.Common.props* の前後に処理されるプロパティを使用してファイル *Custom.Before.Microsoft.Common.Props* または *Custom.After.Microsoft.Common.Props* を作成します。
 
 次の MSBuild プロパティを使用して、これらのファイルの場所を指定できます。
 
@@ -234,9 +236,9 @@ msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Mic
 
 ## <a name="customize-c-builds"></a>C++ ビルドのカスタマイズ
 
-C++ プロジェクトの場合、以前に説明したカスタム *.targets* と *.props* ファイルを同じ方法で使用して、既定の設定をオーバーライドすることはできません。 *Directory.Build.props* は、`Microsoft.Cpp.Default.props` でインポートされる *Microsoft.Common.props* によってインポートされます。一方、ほとんどの既定値は *Microsoft.Cpp.props* で定義されおり、多くのプロパティは既に定義されているため、"if not yet defined" 条件を使用できませんが、`PropertyGroup` で `Label="Configuration"` に定義されている特定のプロジェクト プロパティについては、既定値が異なっている必要があります (「[.vcxproj と .props ファイル構造](/cpp/build/reference/vcxproj-file-structure)」を参照してください)。
+C++ プロジェクトの場合、以前に説明したカスタム *.targets* と *.props* ファイルを同じ方法で使用して、既定の設定をオーバーライドすることはできません。 *Directory.Build.props* は、`Microsoft.Cpp.Default.props` でインポートされる *Microsoft.Common.props* によってインポートされます。一方、ほとんどの既定値は *Microsoft.Cpp.props* で定義されおり、多くのプロパティは既に定義されているため、"if not yet defined" 条件を使用できませんが、`PropertyGroup` で `Label="Configuration"` に定義されている特定のプロジェクト プロパティについては、既定値が異なっている必要があります (「 [.vcxproj と .props ファイル構造](/cpp/build/reference/vcxproj-file-structure)」を参照してください)。
 
-ただし、以下のプロパティを使用して、*Microsoft.Cpp.\** ファイルの前後に自動的にインポートされる *.props* ファイルを指定できます。
+ただし、以下のプロパティを使用して、 *Microsoft.Cpp.\** ファイルの前後に自動的にインポートされる *.props* ファイルを指定できます。
 
 - ForceImportAfterCppDefaultProps
 - ForceImportBeforeCppProps
@@ -244,12 +246,12 @@ C++ プロジェクトの場合、以前に説明したカスタム *.targets* �
 - ForceImportBeforeCppTargets
 - ForceImportAfterCppTargets
 
-すべての C++ ビルドのプロパティの既定値をカスタマイズするには、別の *props* ファイル (たとえば、*MyProps.props*) を作成し、それを指す `Directory.Build.props` の `ForceImportAfterCppProps` プロパティを定義します。
+すべての C++ ビルドのプロパティの既定値をカスタマイズするには、別の *props* ファイル (たとえば、 *MyProps.props* ) を作成し、それを指す `Directory.Build.props` の `ForceImportAfterCppProps` プロパティを定義します。
 
 <PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
 </PropertyGroup>
 
-*MyProps.props* は、*Microsoft.Cpp.props* の末尾に自動的にインポートされます。
+*MyProps.props* は、 *Microsoft.Cpp.props* の末尾に自動的にインポートされます。
 
 ## <a name="customize-all-c-builds"></a>すべての C++ ビルドをカスタマイズする
 

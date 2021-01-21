@@ -1,5 +1,7 @@
 ---
 title: '方法: カスタム作業ウィンドウをアプリケーションに追加する'
+description: Visual Studio Tools for Office (VSTO) アドインを使用して、カスタム作業ウィンドウをアプリケーションに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0df4d51795f01c98790f1d5b0525c45cc71899ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546212"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845051"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>方法: カスタム作業ウィンドウをアプリケーションに追加する
   VSTO アドインを使用して、上記にリストしたアプリケーションにカスタム作業ウィンドウを追加できます。 詳細については、「 [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」を参照してください。
@@ -36,13 +38,13 @@ ms.locfileid: "85546212"
 
 2. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** をクリックします。
 
-3. [ **新しい項目の追加** ] ダイアログボックスで、新しいユーザーコントロールの名前を **MyUserControl**に変更し、[ **追加**] をクリックします。
+3. [ **新しい項目の追加** ] ダイアログボックスで、新しいユーザーコントロールの名前を **MyUserControl** に変更し、[ **追加**] をクリックします。
 
      ユーザー コントロールがデザイナーで開きます。
 
-4. **ツールボックス**から1つまたは複数の Windows フォームコントロールをユーザーコントロールに追加します。
+4. **ツールボックス** から1つまたは複数の Windows フォームコントロールをユーザーコントロールに追加します。
 
-5. **ThisAddIn.cs**または**ThisAddIn**コードファイルを開きます。
+5. **ThisAddIn.cs** または **ThisAddIn** コードファイルを開きます。
 
 6. 次のコードを `ThisAddIn` クラスに追加します。 このコードは `MyUserControl` と <xref:Microsoft.Office.Tools.CustomTaskPane> のインスタンスを `ThisAddIn` クラスのメンバーとして宣言します。
 

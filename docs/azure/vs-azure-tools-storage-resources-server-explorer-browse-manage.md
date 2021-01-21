@@ -1,20 +1,19 @@
 ---
 title: ストレージリソースの参照と管理
 description: サーバー エクスプローラーを使用したストレージ リソースの参照と管理
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 658dc064-4a4e-414b-ae5a-a977a34c930d
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 059145dbce95ade9f628f26afe4f70e1d6a065e9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036445"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902221"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 
@@ -24,7 +23,7 @@ ms.locfileid: "90036445"
 
 Azure Tools for Microsoft Visual Studio をインストール済みである場合、Azure のストレージ アカウントから、BLOB、キュー、テーブルのデータを表示できます。 サーバーエクスプローラーの [Azure **storage** ] ノードには、ローカルストレージエミュレーターアカウントとその他の azure ストレージアカウント内のデータが表示されます。
 
-Visual Studio でサーバーエクスプローラーを表示するには、メニューバーで [サーバーエクスプローラーの**表示**] を選択し  >  **Server Explorer**ます。 **[ストレージ]** ノードには、接続先の各 Azure サブスクリプションまたは証明書に存在するすべてのストレージ アカウントが表示されます。 ストレージ アカウントが表示されない場合は、 [この記事の最後](#add-storage-accounts-by-using-server-explorer)に記載した手順で追加できます。
+Visual Studio でサーバーエクスプローラーを表示するには、メニューバーで [サーバーエクスプローラーの **表示**] を選択し  >  **Server Explorer** ます。 **[ストレージ]** ノードには、接続先の各 Azure サブスクリプションまたは証明書に存在するすべてのストレージ アカウントが表示されます。 ストレージ アカウントが表示されない場合は、 [この記事の最後](#add-storage-accounts-by-using-server-explorer)に記載した手順で追加できます。
 
 Azure SDK 2.7 以降では、Cloud Explorer を使用して Azure リソースを表示および管理することもできます。 詳細については、「 [Cloud Explorer を使用した Azure リソースの管理](vs-azure-tools-resources-managing-with-cloud-explorer.md)」を参照してください。
 
@@ -72,7 +71,7 @@ BLOB コンテナー ビューの右上隅にあるボタンを使用して、BL
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>BLOB コンテナーにフォルダーまたはサブフォルダーを作成するには
 
-1. **Cloud Explorer**で blob コンテナーを選択します。 コンテナー ウィンドウで **[BLOB のアップロード]** をクリックします。
+1. **Cloud Explorer** で blob コンテナーを選択します。 コンテナー ウィンドウで **[BLOB のアップロード]** をクリックします。
 
 1. **[新しいファイルのアップロード]** ダイアログ ボックスで、**[参照]** をクリックしてアップロードするファイルを指定し、**[フォルダー (省略可)]** ボックスにフォルダー名を入力します。
 
@@ -102,13 +101,13 @@ BLOB コンテナー内のフォルダーは仮想フォルダーであるため
 
 ### <a name="to-download-blob-data"></a>BLOB データをダウンロードするには
 
-**Cloud Explorer**で、次のいずれかの方法を使用します。
+**Cloud Explorer** で、次のいずれかの方法を使用します。
 
 * 1 つ以上の BLOB のショートカット メニューを開き、**[開く]** を選択します。
 * BLOB 名を選択し、**[開く]** をクリックします。
 * BLOB 名をダブルクリックします。
 
-BLOB のダウンロードの進行状況が **[Azure のアクティビティ ログ] **ウィンドウに表示されます。
+BLOB のダウンロードの進行状況が **[Azure のアクティビティ ログ]** ウィンドウに表示されます。
 
 その種類のファイルの既定のエディターで BLOB が開きます。 オペレーティング システムによってファイルの種類が認識された場合は、ローカルにインストールされているアプリケーションでファイルが開きます。 それ以外の場合は、BLOB のファイルの種類に適したアプリケーションを選択するよう求められます。 BLOB をダウンロードしたときに作成されるローカル ファイルは、読み取り専用としてマークされます。
 
@@ -166,12 +165,12 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 ### <a name="to-create-a-table"></a>テーブルを作成するには
 
-1. **Cloud Explorer**で、ストレージアカウントの [**テーブル**] ノードを選択し、[**テーブルの作成**] を選択します。
+1. **Cloud Explorer** で、ストレージアカウントの [**テーブル**] ノードを選択し、[**テーブルの作成**] を選択します。
 1. **[テーブルの作成]** ダイアログ ボックスでテーブルの名前を入力します。
 
 ### <a name="to-view-table-data"></a>テーブル データを表示するには
 
-1. **Cloud Explorer**で、[ **Azure** ] ノードを開き、[**ストレージ**] ノードを開きます。
+1. **Cloud Explorer** で、[ **Azure** ] ノードを開き、[**ストレージ**] ノードを開きます。
 1. 目的のストレージ アカウント ノードを開き、 **[テーブル]** ノードを開いて、そのストレージ アカウントのテーブルの一覧を表示します。
 1. テーブルのショートカット メニューを開き、**[テーブルの表示]** を選択します。
 
@@ -181,20 +180,20 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 ### <a name="to-edit-table-data"></a>テーブル データを編集するには
 
-**テーブルデザイナー**で、エンティティ (単一の行) またはプロパティ (1 つのセル) のショートカットメニューを開き、[**編集**] を選択します。
+**テーブルデザイナー** で、エンティティ (単一の行) またはプロパティ (1 つのセル) のショートカットメニューを開き、[**編集**] を選択します。
 
 ![テーブル エンティティの追加または編集](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 単一テーブルのエンティティが、同じ一連のプロパティ (列) を持っている必要はありません。 テーブル データの表示と編集には、次の制限があることに留意してください。
 
 * バイナリ データ (`type byte[]`) は、表示することも編集することもできませんが、テーブルに格納することは可能です。
-* **Partitionkey**または**RowKey**の値を編集することはできません。 Azure Table storage ではその操作がサポートされていないためです。
+* **Partitionkey** または **RowKey** の値を編集することはできません。 Azure Table storage ではその操作がサポートされていないためです。
 * **Timestamp** という名前のプロパティは作成できません。 Azure Storage サービスでこの名前のプロパティが使用されています。
-* **DateTime**値を入力する場合は、コンピューターの地域と言語の設定に適した形式に従う必要があります (たとえば、MM/DD/YYYY HH: MM: SS [AM |PM] を英語) にします。
+* **DateTime** 値を入力する場合は、コンピューターの地域と言語の設定に適した形式に従う必要があります (たとえば、MM/DD/YYYY HH: MM: SS [AM |PM] を英語) にします。
 
 ### <a name="to-add-entities"></a>エンティティを追加するには
 
-1. **テーブルデザイナー**で、[**エンティティの追加**] ボタンを選択します。
+1. **テーブルデザイナー** で、[**エンティティの追加**] ボタンを選択します。
 
     ![[エンティティの追加] ボタン](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
@@ -235,7 +234,7 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 ### <a name="to-refresh-table-data"></a>テーブル データを更新するには
 
 * **[ストレージ]** の下の **[テーブル]** ノードを選択し、サーバー エクスプローラー ツール バーの **[最新の情報に更新]** をクリックします。
-* **テーブルデザイナー**に表示されているエンティティの一覧を更新するには、テーブルデザイナーで [**実行**] ボタンを選択します。
+* **テーブルデザイナー** に表示されているエンティティの一覧を更新するには、テーブルデザイナーで [**実行**] ボタンを選択します。
 
 ### <a name="to-refresh-queue-data"></a>キュー データを更新するには
 

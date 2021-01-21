@@ -1,5 +1,7 @@
 ---
 title: 警告 :スクリプト デバッグが無効 | Microsoft Docs
+description: "\"スクリプト デバッグが無効\" は、Internet Explorer でスクリプトのデバッグを有効にすることなく、スクリプトをデバッグした場合に発生します。 これを有効にする手順を確認します。"
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: 7cc2e03a4efcf9a88675fd3c80f374ff78ba35bb
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81648502"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149561"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告 :スクリプト デバッグが無効
 Internet Explorer では、スクリプトのデバッグは現在無効になっています。

@@ -1,5 +1,6 @@
 ---
 title: C++ プロジェクトをリモート デバッグする | Microsoft Docs
+description: 次の手順に従い、リモート コンピューターから Visual Studio C++ アプリケーションをデバッグする方法について説明します。
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.openlocfilehash: a8d3b578e62b917a7553b42a04e53062c406c4fd
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79301087"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815803"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio での C++ プロジェクトのリモート デバッグ
 別のコンピューター上の Visual Studio アプリケーションをデバッグするには、アプリを配置したコンピューターにリモート ツールをインストールして実行し、Visual Studio からリモート コンピューターに接続するようにプロジェクトを構成してから、アプリを配置して実行します。
@@ -63,7 +64,7 @@ ms.locfileid: "79301087"
 
 4. **[起動するデバッガー]** を **[リモート Windows デバッガー]** に設定します。
 
-    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")
+    ![Visual Studio ソリューション エクスプローラーのプロパティの [デバッグ] タブのスクリーンショット。 [起動するデバッガー] プロパティが [リモート Windows デバッガー] に設定されています。](../debugger/media/remotedebuggingcplus.png)
 
 5. プロパティに次の変更を適用します。
 
@@ -83,7 +84,7 @@ ms.locfileid: "79301087"
 
 7. **[デバッグ]** 構成の **[配置]** チェック ボックスをオンにします。
 
-    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")
+    ![Visual Studio ソリューション エクスプローラーの構成マネージャーのスクリーンショット。 [デバッグ] 構成が選択されています。[配置] がオンになっています。](../debugger/media/remotedebugcplusdeploy.png)
 
 8. デバッグを開始します ( **[デバッグ] > [デバッグの開始]** 、または **F5** キー)。
 
@@ -96,7 +97,7 @@ ms.locfileid: "79301087"
 11. Visual Studio コンピューターで、実行がブレークポイントで停止したことを確認できるはずです。
 
     > [!TIP]
-    > また、これらのファイルは別の手順でも配置できます。 **ソリューション エクスプローラー**で、 **[mymfc]** ノードを右クリックして **[配置]** を選択します。
+    > また、これらのファイルは別の手順でも配置できます。 **ソリューション エクスプローラー** で、 **[mymfc]** ノードを右クリックして **[配置]** を選択します。
 
     アプリケーションで必要なコード以外のファイルがある場合は、 **[リモート Windows デバッガー]** ページの **[追加の配置ファイル]** で指定できます。
 

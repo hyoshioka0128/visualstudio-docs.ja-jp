@@ -1,5 +1,7 @@
 ---
 title: ParameterGroup 要素 | Microsoft Docs
+description: UsingTask TaskFactory によって生成されるタスクに存在するパラメーターのオプション リストを含む MSBuild ParameterGroup 要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c06b9c530d3fff0fdfa429df633daaa4dde8c52
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 104a7313104e194a85d9eb4fee00e84a8facb5b5
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263079"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048864"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 要素
 
 `UsingTask` `TaskFactory` によって生成されるタスクで使用される省略可能なパラメーターのリストが格納されます。 詳細については、「[UsingTask 要素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)」を参照してください。
 
- \<Project> \<UsingTask> \<ParameterGroup>
+ \<Project> \<UsingTask>
  \<ParameterGroup>
 
 ## <a name="syntax"></a>構文

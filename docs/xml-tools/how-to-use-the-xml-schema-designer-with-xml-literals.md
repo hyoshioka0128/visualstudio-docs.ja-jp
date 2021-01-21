@@ -1,5 +1,7 @@
 ---
 title: '方法: XML リテラルに XML スキーマ デザイナーを使用する'
+description: XML スキーマ デザイナーを使用して、Visual Basic プロジェクトの XML リテラルに関連付けられたスキーマを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b515092087ab213db5d3002f00c56753c2e3de14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b86cc50e5a25466b0ec80e45a225d64b8a97f72
+ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814643"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93399173"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>方法: XML リテラルに XML スキーマ デザイナーを使用する
 
@@ -35,7 +37,7 @@ ms.locfileid: "85814643"
 
 2. *PurchaseOrderSchema.xsd* という名前でファイルをどこかに保存します。
 
-3. **ソリューション エクスプローラー**で、プロジェクト名を右クリックし、 **[追加]** を選択して **[既存の項目]** をクリックします。 **[既存項目の追加]** ダイアログ ボックスが表示されます。 *PurchaseOrderSchema.xsd* ファイルを参照して選択し、 **[追加]** をクリックします。
+3. **ソリューション エクスプローラー** で、プロジェクト名を右クリックし、 **[追加]** を選択して **[既存の項目]** をクリックします。 **[既存項目の追加]** ダイアログ ボックスが表示されます。 *PurchaseOrderSchema.xsd* ファイルを参照して選択し、 **[追加]** をクリックします。
 
      XMLLiterals プロジェクトに、次の 2 つのファイルが含まれるようになります:*Module1.vb* および *PurchaseOrderSchema.xsd*。
 
@@ -74,4 +76,4 @@ ms.locfileid: "85814643"
 
 2. XML リテラルまたは XML 名前空間インポートの XML ノードを右クリックして、 **[スキーマ エクスプローラーで表示]** をクリックします。
 
-   **XML スキーマ エクスプローラー**が、XML スキーマ セットに関連付けられた XML リテラルを持つ Visual Basic ファイルと並んで表示されます。
+   **XML スキーマ エクスプローラー** が、XML スキーマ セットに関連付けられた XML リテラルを持つ Visual Basic ファイルと並んで表示されます。

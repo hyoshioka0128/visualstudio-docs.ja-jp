@@ -1,16 +1,16 @@
 ---
 title: コード スニペット
 description: Visual Studio for Mac でコード スニペットを利用して効率的にプログラミングする方法
-author: cobey
-ms.author: cobey
-ms.date: 02/07/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 11/09/2020
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8fdf70b4d966c644719047eca4249e432561ace
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68787699"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493453"
 ---
 # <a name="code-snippets"></a>コード スニペット
 
@@ -26,7 +26,7 @@ ms.locfileid: "68787699"
 
   ![コードでのタブ展開](media/source-editor-image13.png)
 
-- **ツールボックス** &ndash; ツールボックス パッドを使ってすべてのコード スニペットの一覧を表示します。 ツールボックスからソース コード内の正しい位置にテンプレートをドラッグします。
+- **ツールボックス** &ndash; ツールボックス ウィンドウを使ってすべてのコード スニペットの一覧を表示します。 ツールボックスからソース コード内の正しい位置にテンプレートをドラッグします。
 
   [![ツールボックスでのコード スニペット](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 

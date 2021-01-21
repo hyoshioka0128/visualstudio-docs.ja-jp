@@ -1,5 +1,7 @@
 ---
 title: デバッグ用 SDK ヘルパー |Microsoft Docs
+description: C++ でデバッグエンジン、式エバリュエーター、およびシンボルプロバイダーを実装するためのグローバルヘルパー関数である関数と宣言について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edb7c508fdea6736a71c0f70c0d2ff305d4a399
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713648"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606542"
 ---
 # <a name="sdk-helpers-for-debugging"></a>デバッグ用の SDK ヘルパー
 これらの関数と宣言は、C++ でデバッグエンジン、式エバリュエーター、およびシンボルプロバイダーを実装するためのグローバルヘルパー関数です。
@@ -121,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>式エバリュエーター関数
 
-|関数|説明|
+|機能|説明|
 |--------------|-----------------|
 |GetEEMetric|レジストリからメトリック値を取得します。|
 |SetEEMetric|指定されたメトリック値をレジストリに設定します。|
@@ -130,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>例外関数
 
-|関数|説明|
+|機能|説明|
 |--------------|-----------------|
 |GetExceptionMetric|レジストリからメトリック値を取得します。|
 |SetExceptionMetric|指定されたメトリック値をレジストリに設定します。|
@@ -139,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>シンボルプロバイダー関数
 
-|関数|説明|
+|機能|説明|
 |--------------|-----------------|
 |GetSPMetric|レジストリからメトリック値を取得します。|
 |SetSPMetric|指定されたメトリック値をレジストリに設定します。|
@@ -147,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>列挙関数
 
-|関数|説明|
+|機能|説明|
 |--------------|-----------------|
 |EnumMetricSections|指定したメトリックの種類のすべてのメトリックを列挙します。|
 |EnumDebugEngine|登録されているデバッグエンジンを列挙します。|
@@ -262,7 +264,7 @@ HRESULT EnumMetricSections(
 |プレースホルダー|説明|
 |-----------------|-----------------|
 |*[レジストリキー]*|`HKEY_CURRENT_USER` または `HKEY_LOCAL_MACHINE`。|
-|*[バージョンルート]*|Visual Studio のバージョン (たとえば、、、 `7.0` `7.1` または `8.0` )。 ただし、このルートは、 **/rootsuffix** スイッチを使用して **devenv.exe**に変更することもできます。 VSIP の場合、この修飾子は通常は **exp**であるため、バージョンのルートは 8.0 Exp のようになります。|
+|*[バージョンルート]*|Visual Studio のバージョン (たとえば、、、 `7.0` `7.1` または `8.0` )。 ただし、このルートは、 **/rootsuffix** スイッチを使用して **devenv.exe** に変更することもできます。 VSIP の場合、この修飾子は通常は **exp** であるため、バージョンのルートは 8.0 Exp のようになります。|
 |*[メトリックルート]*|これは `AD7Metrics` `AD7Metrics(Debug)` 、dbgmetric. lib のデバッグバージョンが使用されているかどうかによって、またはのいずれかになります。 **注:**  Dbgmetric が使用されているかどうかにかかわらず、レジストリに反映する必要があるデバッグバージョンとリリースバージョンが異なる場合は、この名前付け規則に従う必要があります。|
 |*[メトリックの種類]*|書き込まれるメトリックの種類 `Engine` (、、 `ExpressionEvaluator` など) `SymbolProvider` 。これらはすべて、として dbgmetric. h で定義されます。 `metricTypeXXXX` ここで、 `XXXX` は特定の型名です。|
 |*非対称*|メトリックを設定するために値が割り当てられるエントリの名前。 メトリックの実際の編成は、メトリックの種類によって異なります。|
@@ -414,8 +416,8 @@ HRESULT EnumMetricSections(
 |プレースホルダー|説明|
 |-----------------|-----------------|
 |*[デバッグエンジン guid]*|例外をサポートするデバッグエンジンの GUID。|
-|*[例外の種類]*|処理できる例外のクラスを識別するサブキーの一般的なタイトル。 一般的な名前は、 **C++ 例外**、 **Win32 例外**、 **共通言語ランタイム例外**、および **ネイティブランタイムチェック**です。 これらの名前は、ユーザーに対して特定のクラスの例外を識別するためにも使用されます。|
-|*例外的*|例外の名前。たとえば、 **_com_error** や **制御を解除**します。 これらの名前は、ユーザーに対する特定の例外を識別するためにも使用されます。|
+|*[例外の種類]*|処理できる例外のクラスを識別するサブキーの一般的なタイトル。 一般的な名前は、 **C++ 例外**、 **Win32 例外**、 **共通言語ランタイム例外**、および **ネイティブ Run-Time チェック** です。 これらの名前は、ユーザーに対して特定のクラスの例外を識別するためにも使用されます。|
+|*例外的*|例外の名前。たとえば、 **_com_error** や **制御を解除** します。 これらの名前は、ユーザーに対する特定の例外を識別するためにも使用されます。|
 
 ## <a name="requirements"></a>必要条件
  これらのファイルは、 [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK のインストールディレクトリにあります (既定では *[drive]*、VISUAL Studio 2010 sdk \\ )。

@@ -1,5 +1,7 @@
 ---
 title: '[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)'
+description: '[コンパイラの詳細設定] ダイアログ ボックスを使用し、プロジェクトの詳細なビルド構成プロパティを指定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -13,22 +15,22 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c0e6e9d41bb1d4bd7446bb77306ca5a4551906f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0335ee8ef1c385da13c2043ffcfa94c264a5934a
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419108"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137039"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)
 
-**プロジェクト デザイナー**の **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。
+**プロジェクト デザイナー** の **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。
 
 ## <a name="to-access-this-dialog-box"></a>このダイアログ ボックスを表示するには
 
-1. **ソリューション エクスプローラー**で、 **[ソリューション]** ノードではなくプロジェクト ノードを選びます。
+1. **ソリューション エクスプローラー** で、 **[ソリューション]** ノードではなくプロジェクト ノードを選びます。
 
-2. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー**が表示されたら、 **[コンパイル]** タブをクリックします。
+2. **[プロジェクト]** メニューの **[プロパティ]** をクリックします。 **プロジェクト デザイナー** が表示されたら、 **[コンパイル]** タブをクリックします。
 
 3. [[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) で、 **[構成]** と **[プラットフォーム]** を選択します。 簡易ビルド構成では、 **[構成]** と **[プラットフォーム]** の一覧は表示されません。 詳細については、[デバッグ構成とリリース構成を設定する](../../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。
 
@@ -72,9 +74,9 @@ ms.locfileid: "85419108"
 
  **カスタム定数**
 
-このテキスト ボックスには、アプリケーションのカスタム定数を入力します。 エントリは、**Name1="Value1",Name2="Value2",Name3="Value3"** の形式を使用して、コンマで区切る必要があります。
+このテキスト ボックスには、アプリケーションのカスタム定数を入力します。 エントリは、 **Name1="Value1",Name2="Value2",Name3="Value3"** の形式を使用して、コンマで区切る必要があります。
 
-## <a name="other-settings"></a>その他の設定
+## <a name="other-settings"></a>[その他の設定]
 
 **シリアル化アセンブリの生成**
 

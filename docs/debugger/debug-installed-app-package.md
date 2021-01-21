@@ -1,6 +1,7 @@
 ---
 title: インストールされた UWP アプリ パッケージをデバッグする | Microsoft Docs
-ms.custom: ''
+description: Windows 10 コンピューター、Xbox、モノのインターネット (IoT) デバイスの Visual Studio で、インストールされているユニバーサル Windows プラットフォーム (UWP) アプリ パッケージをデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2018
 ms.topic: how-to
 f1_keywords:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 04ed043dbcb09c862fcdfc5f34d77fd938bd24dc
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350733"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728925"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Visual Studio でインストールされた UWP アプリ パッケージをデバッグする
 
@@ -52,7 +53,7 @@ UWP アプリのデバッグの詳細については、[インストールされ
 1. **[開始]** を選択するか、アプリが実行されている場合は **[アタッチ]** を選択します。
 
 > [!NOTE]
-> Visual Studio で **[デバッグ]** ** > [プロセスにアタッチ]** を選択して、実行中の UWP またはその他のアプリ プロセスにアタッチすることもできます。 実行中のプロセスにアタッチするために元の Visual Studio プロジェクトは必要ありませんが、アプリのシンボルを読み込むことは、元のコードがないプロセスをデバッグする際に、非常に役立ちます。 [デバッガーでのシンボル ファイルとソース ファイルの指定](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事を参照してください。
+> Visual Studio で **[デバッグ]** > **[プロセスにアタッチ]** を選択して、実行中の UWP またはその他のアプリ プロセスにアタッチすることもできます。 実行中のプロセスにアタッチするために元の Visual Studio プロジェクトは必要ありませんが、アプリのシンボルを読み込むことは、元のコードがないプロセスをデバッグする際に、非常に役立ちます。 [デバッガーでのシンボル ファイルとソース ファイルの指定](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)に関する記事を参照してください。
 
 ## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> リモート コンピューターまたはリモート デバイスでインストールされている UWP アプリをデバッグする
 

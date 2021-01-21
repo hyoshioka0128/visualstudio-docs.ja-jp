@@ -1,5 +1,7 @@
 ---
 title: 既存の SharePoint サイトからのアイテムのインポート | Microsoft Docs
+description: SharePoint ソリューション パッケージのインポート プロジェクト テンプレートを使用して既存の SharePoint サイトから項目をインポートし、新しい SharePoint ソリューションで要素を再利用できるようにします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9c2703bfdd4f47281a1fc19060cb69f8b312e7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef77fb280021fcfb701a677bc9ce17ec26e39516
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017030"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304523"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>既存の SharePoint サイトからのアイテムのインポート
   SharePoint ソリューション パッケージのインポート プロジェクト テンプレートによって、新しい [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ソリューションの既存の SharePoint サイトからコンテンツ タイプやフィールドなどの要素を再利用できます。 インポートしたソリューションのほとんどは変更せずに実行できますが、それらをインポートした後にいずれかの項目を変更する場合は特に、考慮すべき特定の制限事項および問題があります。
@@ -74,13 +76,13 @@ ms.locfileid: "86017030"
 ## <a name="what-happens-when-you-import-a-solution"></a>ソリューションのインポート時に実行される動作
  SharePoint ソリューション パッケージのインポート テンプレートでソリューションをインポートする場合、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] では *.wsp* ファイルのすべての内容をコピーして調整しますが、インポートする要素とそのファイルの間の関連付けと参照を可能な限り調整し、維持しようとします。
 
- インポートされるすべてのアイテムは、 **ソリューション エクスプローラー**の対応するフォルダーにコピーされます。 たとえば、 **[コンテンツ タイプ]** フォルダーの下にコンテンツ タイプが表示され、 **[リスト インスタンス]** の下にリスト インスタンスが一覧表示されます。 インポートされたアイテムに関連付けられているファイルは、そのアイテムのフォルダーにコピーされます。 たとえば、インポートしたリスト インスタンスには、そのモジュール、フォーム、ASPX ページが含まれます。
+ インポートされるすべてのアイテムは、 **ソリューション エクスプローラー** の対応するフォルダーにコピーされます。 たとえば、 **[コンテンツ タイプ]** フォルダーの下にコンテンツ タイプが表示され、 **[リスト インスタンス]** の下にリスト インスタンスが一覧表示されます。 インポートされたアイテムに関連付けられているファイルは、そのアイテムのフォルダーにコピーされます。 たとえば、インポートしたリスト インスタンスには、そのモジュール、フォーム、ASPX ページが含まれます。
 
 ### <a name="dependent-items"></a>依存アイテム
  [SharePoint ソリューション パッケージのインポート] ウィザードでアイテムを選んだものの、その依存アイテムを選んでいない場合は、インポートする前に依存アイテムも選ぶ必要があることがメッセージ ボックスで通知されます。
 
 ### <a name="what-are-features"></a>フィーチャーとは
- SharePoint Designer のユーザーは、 *ソリューション エクスプローラー*のインポートされたソリューションに、 **フィーチャー** と呼ばれる予期せぬファイルが表示されているのに気付くことがあります。フィーチャーは SharePoint Designer ソリューションに存在していましたが、表示されていませんでした。 現在では [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]にフィーチャーが表示されるようになりました。
+ SharePoint Designer のユーザーは、 *ソリューション エクスプローラー* のインポートされたソリューションに、 **フィーチャー** と呼ばれる予期せぬファイルが表示されているのに気付くことがあります。フィーチャーは SharePoint Designer ソリューションに存在していましたが、表示されていませんでした。 現在では [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]にフィーチャーが表示されるようになりました。
 
  フィーチャーは、SharePoint アイテムのコンテナーになります。 各フィーチャーは、その中に含まれているコンテンツ タイプやリスト定義などの各アイテムへの参照を保持します。 ソリューションをインポートすると、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] はインポートされた要素のすべてのフィーチャーを設定して、ファイルのフィーチャーと要素との関係を維持しようと試みます。 参照を解決できないファイルがあれば、 **[その他のインポートされたファイル]** フォルダーに配置されます。
 
@@ -89,14 +91,14 @@ ms.locfileid: "86017030"
 ### <a name="handle-special-cases"></a>特殊な場合の処理
  Visual Studio はアイテムとその依存ファイルの調整ができない場合があります。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] が解決できないファイルは **[その他のインポートされたファイル]** フォルダーに表示されます。 また、その **DeploymentType** プロパティは **NoDeployment** に設定されるので、それらのファイルがソリューションと一緒に配置されることはありません。
 
- たとえば、リスト定義 ExpenseForms をインポートする場合、その名前を持つリスト定義は、**ソリューション エクスプローラー**の **[リスト定義]** フォルダーに、その *Elements.xml* ファイルおよび *Schema.xml* ファイルと一緒に表示されます。 しかし、関連付けられた ASPX と HTML フォームは、 **[その他のインポートされたファイル]** フォルダーの下にある **[ExpenseForms]** と呼ばれるフォルダーに配置される可能性があります。 インポートを完了するには、 **ソリューション エクスプローラー** で ExpenseForms リスト定義の下にあるそれらのファイルを移動し、各ファイルの **DeploymentType** プロパティを **NoDeployment** から **ElementFile**に変更します。
+ たとえば、リスト定義 ExpenseForms をインポートする場合、その名前を持つリスト定義は、**ソリューション エクスプローラー** の **[リスト定義]** フォルダーに、その *Elements.xml* ファイルおよび *Schema.xml* ファイルと一緒に表示されます。 しかし、関連付けられた ASPX と HTML フォームは、 **[その他のインポートされたファイル]** フォルダーの下にある **[ExpenseForms]** と呼ばれるフォルダーに配置される可能性があります。 インポートを完了するには、 **ソリューション エクスプローラー** で ExpenseForms リスト定義の下にあるそれらのファイルを移動し、各ファイルの **DeploymentType** プロパティを **NoDeployment** から **ElementFile** に変更します。
 
  イベント レシーバーをインポートする場合、*Elements.xml* ファイルは適切な場所にコピーされますが、アセンブリを手動でソリューション パッケージに含めて、ソリューションと一緒に配置されるようにする必要があります。 これを行う方法の[!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]、「[方法: アセンブリを追加および削除する](../sharepoint/how-to-add-and-remove-additional-assemblies.md)」を参照してください。
 
- ワークフローをインポートすると、InfoPath フォームが **[その他のインポートされたファイル]** フォルダーにコピーされます。 *.wsp* ファイルに Web テンプレートが含まれている場合、それが**ソリューション エクスプローラー**のスタートアップ ページとして設定されます。
+ ワークフローをインポートすると、InfoPath フォームが **[その他のインポートされたファイル]** フォルダーにコピーされます。 *.wsp* ファイルに Web テンプレートが含まれている場合、それが **ソリューション エクスプローラー** のスタートアップ ページとして設定されます。
 
 ## <a name="import-fields-and-property-bags"></a>フィールドとプロパティ バッグのインポート
- 複数のフィールドを持つソリューションをインポートするときには、すべての個別のフィールド定義が単一の *Elements.xml* ファイルにマージされ、**ソリューション エクスプローラー**内の **Fields** というノードの下に置かれます。 同様に、すべてのプロパティ バッグ エントリが、**PropertyBags** というノードの下にある *Elements.xml* ファイルにマージされます。
+ 複数のフィールドを持つソリューションをインポートするときには、すべての個別のフィールド定義が単一の *Elements.xml* ファイルにマージされ、**ソリューション エクスプローラー** 内の **Fields** というノードの下に置かれます。 同様に、すべてのプロパティ バッグ エントリが、**PropertyBags** というノードの下にある *Elements.xml* ファイルにマージされます。
 
  SharePoint 内のフィールドは、テキスト、ブール値、参照などの指定したデータ型の列です。 詳しくは、「 [構成要素: 列とフィールド型](/previous-versions/office/developer/sharepoint-2010/ee535893(v=office.14))」をご覧ください。 プロパティ バッグを使用することによって、SharePoint 内のオブジェクト (ファームから SharePoint サイト上のリストまですべて) にプロパティを追加できます。 プロパティ バッグは、プロパティの名前と値のハッシュ テーブルとして実装されます。 詳しくは、「 [SharePoint 構成の管理](/previous-versions/msp-n-p/ff647766(v=pandp.10)) 」または「 [SharePoint プロパティ バッグ設定](https://archive.codeplex.com/?p=pbs)」をご覧ください。
 

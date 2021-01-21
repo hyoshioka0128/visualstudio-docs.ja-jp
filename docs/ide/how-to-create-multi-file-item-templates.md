@@ -1,5 +1,7 @@
 ---
 title: 複数ファイルの項目テンプレートを作成する
+description: Visual Studio で複数のファイルから構成される項目テンプレートを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 4a4f0c50fc0a3fe21da560356d3551ca85ef9d66
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a947d23bd7094e003bae3cfe880299bb3698d92e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284426"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597263"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>方法: 複数ファイルの項目テンプレートを作成する
 
@@ -26,7 +28,7 @@ ms.locfileid: "85284426"
 
 - フォームの埋め込みリソースを含むファイル
 
-複数ファイルの項目テンプレートでは、項目が作成されるときに正しいファイル拡張子が使われるようにするため、パラメーターが必要です。 **テンプレートのエクスポート ウィザード**を使って複数ファイルの項目テンプレートを作成する場合、これらのパラメーターは自動的に生成されるので、それ以上編集する必要はありません。
+複数ファイルの項目テンプレートでは、項目が作成されるときに正しいファイル拡張子が使われるようにするため、パラメーターが必要です。 **テンプレートのエクスポート ウィザード** を使って複数ファイルの項目テンプレートを作成する場合、これらのパラメーターは自動的に生成されるので、それ以上編集する必要はありません。
 
 ## <a name="use-the-export-template-wizard"></a>[テンプレートのエクスポート] ウィザードを使用する
 

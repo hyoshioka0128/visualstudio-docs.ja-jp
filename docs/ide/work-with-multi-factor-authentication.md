@@ -1,6 +1,7 @@
 ---
-title: 多要素認証が必要なアカウントを使って作業する
+title: 多要素認証が必要なアカウントを使用する
 ms.date: 05/27/2020
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: 多要素認証が必要なアカウントで Visual Studio を使用する方法を説明します。
 author: ornellaalt
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283547"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093350"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>多要素認証が必要なアカウントで Visual Studio を使用する方法
 
@@ -49,10 +50,11 @@ ms.locfileid: "85283547"
 
 この操作により、システムの既定の Web ブラウザーが開き、アカウントへサインインが求められ、必要な MFA ポリシーが検証されます。
 
-開発アクティビティとリソース構成に基づいて、セッション中に資格情報を再入力するように求められる場合があります。 これは、新しいリソースを追加したとき、または以前に CA/MFA の認可要件を満たしていないリソースにアクセスしようとしたときに発生する可能性があります。
+サインイン中、サインイン状態を維持するかどうかを問う、追加のプロンプトが表示されることがあります。 このプロンプトは、あるアカウントをサインインに使用することが 2 回目になるときに表示されることがあります。 資格情報を再入力する必要性を最小限に抑えるため、 **[はい]** を選択することをお勧めします。[はい] を選択すると、ブラウザー セッション間で資格情報が保持されます。
 
-> [!NOTE] 
-> 最適なエクスペリエンスを実現するために、すべての CA/MFA ポリシーがリソースに対して検証されるまで、ブラウザーを開いたままにしておいてください。 ブラウザーを閉じると、以前に構築した MFA 状態が失われ、追加の認可プロンプトが表示される場合があります。
+:::image type="content" source="media/kmsi.png" alt-text="サインインの状態を維持しますか?":::
+
+開発アクティビティとリソース構成に基づいて、セッション中に資格情報を再入力するように求められる場合があります。 これは、新しいリソースを追加したとき、または以前に CA/MFA の認可要件を満たしていないリソースにアクセスしようとしたときに発生する可能性があります。
 
 ## <a name="reauthenticating-an-account"></a>アカウントの再認証  
 アカウントに問題がある場合、Visual Studio によってアカウントの資格情報の再入力を求めるメッセージが表示されることがあります。  

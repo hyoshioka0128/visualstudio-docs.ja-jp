@@ -1,6 +1,6 @@
 ---
 title: npm を使用した TypeScript コードのコンパイルとビルド
-description: Visual Studio で TypeScript をコンパイルしてビルドする方法について説明します。
+description: Node Package Manager (npm) を使用し、Visual Studio プロジェクトに Typescript サポートを追加する方法について説明します。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: be7bc30f260a492fbc783a8e730b1e550fcb4671
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250170"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846800"
 ---
 # <a name="compile-typescript-code-nodejs"></a>TypeScript コードのコンパイル (Node.js)
 
@@ -27,7 +27,7 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
 
 [TypeScript npm パッケージ](https://www.npmjs.com/package/typescript)によって、TypeScript サポートを追加できます。 TypeScript 2.1 以降の npm パッケージがプロジェクトにインストールされているときは、対応するバージョンの TypeScript 言語サービスがエディターに読み込まれます。
 
-1. [手順に従って](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json) Node.js 開発ワークロードと Node.js ランタイムをインストールします。
+1. [手順に従って](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json) Node.js 開発ワークロードと Node.js ランタイムをインストールします。
 
    最も簡単な方法で Visual Studio と統合するために、Node.js TypeScript テンプレートのいずれかを使用してプロジェクトを作成します (空の Node.js Web アプリケーション テンプレートなど)。 それ以外の場合は、Visual Studio に含まれている Node.js JavaScript テンプレートを使用してここに記載されている手順に従うか、[[フォルダーを開く]](../javascript/develop-javascript-code-without-solutions-projects.md) プロジェクトを使用します。
 
@@ -112,6 +112,10 @@ ASP.NET Core のプロジェクトでは、代わりに [NuGet パッケージ](
    ソース マップを生成した場合は、*outDir* オプションで指定したフォルダーを開くと、生成された \*.js ファイルと生成された \*js.map ファイルが見つかります。
 
    ソース マップ ファイルは[デバッグ](../javascript/debug-nodejs.md)で必要となります。
+
+### <a name="run-the-application"></a>アプリケーションの実行
+
+アプリをコンパイルした後に実行する手順については、[初めての Node.js アプリの作成](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json#run-the-application)に関するページを参照してください。
 
 ## <a name="automate-build-tasks"></a>ビルド タスクの自動化
 

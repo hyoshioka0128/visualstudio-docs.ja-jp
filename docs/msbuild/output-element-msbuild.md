@@ -1,5 +1,7 @@
 ---
 title: Output 要素 (MSBuild) | Microsoft Docs
+description: タスクの出力値を項目とプロパティに格納する、属性、要素、および MSBuild Output 要素の例を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f48f5166e102273651511ceb5a925b5e49e66878
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77633032"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048917"
 ---
 # <a name="output-element-msbuild"></a>Output 要素 (MSBuild)
 

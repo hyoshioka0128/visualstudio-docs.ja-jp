@@ -1,5 +1,7 @@
 ---
 title: RemoveDuplicates タスク | Microsoft Docs
+description: MSBuild で RemoveDuplicates タスクを使用して、指定した項目コレクションから重複項目を削除する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/01/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90366bab14eefd1be4edac81d6b09b3f57aa3332
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 269499153c4be228503d6bd5b22e91e63dd5b5dd
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77632785"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048668"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates タスク
 
@@ -33,12 +35,12 @@ ms.locfileid: "77632785"
 
  `RemoveDuplicates` タスクのパラメーターの説明を次の表に示します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |`Filtered`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> すべての重複する項目が削除された項目コレクションが含まれます。 入力項目の順序は保持され、重複する各項目は最初のインスタンスが保持されます。|
 |`Inputs`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 重複した項目を削除する対象となる項目コレクションです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  このタスクでは大文字と小文字が区別されず、重複の判断時、項目メタデータは比較されません。
 
@@ -93,7 +95,7 @@ ms.locfileid: "77632785"
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)

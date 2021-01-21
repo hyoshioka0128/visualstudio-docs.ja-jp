@@ -1,5 +1,7 @@
 ---
 title: 特殊化されたデプロイの処理 |Microsoft Docs
+description: Visual Studio でアプリケーションプロジェクトの特化された展開を処理する方法について説明します。 たとえば、Web サーバーまたはデバイスへのデプロイです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972965c3565088af8205d6f7903d7098e568c057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 664625cd8737fb9a9a3e398716d750d6d9665529
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708217"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480435"
 ---
 # <a name="handle-specialized-deployment"></a>特化した展開を処理する
 配置は、プロジェクトのオプションの操作です。 たとえば、Web プロジェクトでは、プロジェクトで Web サーバーを更新できる配置をサポートしています。 同様に、 **スマートデバイス** プロジェクトは、ビルドされたアプリケーションをターゲットデバイスにコピーするための配置をサポートしています。 プロジェクトのサブタイプは、インターフェイスを実装することによって、特殊な配置動作を提供でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> ます。 このインターフェイスは、デプロイ操作の完全なセットを定義します。

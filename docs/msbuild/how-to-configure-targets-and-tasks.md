@@ -1,5 +1,7 @@
 ---
 title: '方法: ターゲットとタスクを構成する | Microsoft Docs'
+description: 一部の MSBuild タスクを、開発コンピューターの環境に関係なく、それがターゲットとする環境で実行されるように設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 31537ea44e5c49a4fd98229a5886ca99a1464409
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288898"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92435767"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>方法: ターゲットとタスクを構成する
 
@@ -110,7 +112,7 @@ MSBuild はタスクを実行する前に、現在のソフトウェア コン�
 `MSBuildRuntime` および `MSBuildArchitecture` パラメーターは、ターゲット コンテキストを設定する最も柔軟な方法を提供しますが、範囲も最も制限されています。 柔軟性の点では、これらはタスク インスタンス自体で設定され、タスクの実行直前まで評価されないため、評価時とビルド時の両方で使用できるプロパティの完全なスコープからその値を派生できます。 制限については、これらのパラメーターは、特定のターゲットのタスクの特定のインスタンスにのみ適用されます。
 
 > [!NOTE]
-> タスク パラメーターは、タスク ホストのコンテキストではなく、親ノードのコンテキストで評価されます。 ランタイムまたはアーキテクチャに依存する環境変数は (*Program Files* の場所など)、親ノードに一致する値に評価されます。 一方、同じ環境変数がタスクによって直接読み取られた場合は、タスク ホストのコンテキストで正しく評価されます。
+> タスク パラメーターは、タスク ホストのコンテキストではなく、親ノードのコンテキストで評価されます。 ランタイムまたはアーキテクチャに依存する環境変数は ( *Program Files* の場所など)、親ノードに一致する値に評価されます。 一方、同じ環境変数がタスクによって直接読み取られた場合は、タスク ホストのコンテキストで正しく評価されます。
 
 ## <a name="see-also"></a>関連項目
 

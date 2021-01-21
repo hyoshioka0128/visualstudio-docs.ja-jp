@@ -2,17 +2,17 @@
 title: Visual Studio クラウド サブスクリプションを購入する方法
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 03/24/2020
+ms.date: 10/28/2020
 ms.topic: overview
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: fbb4204ec5b36d865a1c8b3d9c235cdf97b4019e
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248342"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "92918085"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -26,7 +26,7 @@ ms.locfileid: "88248342"
 購入に対する請求のため、[Azure サブスクリプション](https://azure.microsoft.com/pricing/purchase-options/)が必要になります。 Visual Studio Marketplace で初めて購入する前、または購入時に、[サインアップ](https://portal.azure.com)することができます。
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Visual Studio クラウド サブスクリプションの購入条件
-Azure サブスクリプションに対して、[所有者](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner)、[サービス管理者または共同管理者](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator)アクセス権を持っているユーザーは、だれでもクラウド サブスクリプションを購入できます。
+クラウド サブスクリプションを購入するには、お使いの EA 用に作成された Azure サブスクリプションに対して共同作成者以上の権限が与えられている必要があります。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>クラウド サブスクリプションの購入方法
 
@@ -36,7 +36,7 @@ Azure サブスクリプションに対して、[所有者](https://docs.microso
 
 3. 請求に使用する Azure サブスクリプションを選択します。 お持ちでなければ、新しい Azure サブスクリプションを作成できます。
     > [!div class="mx-imgBorder"]
-    > ![請求に使用する Azure サブスクリプションを選択する](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
+    > ![請求に使用する Azure サブスクリプションを選択する](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png "サブスクリプションの購入に使用する Azure サブスクリプションを選択します。")
 
 4. 購入するサブスクリプションの数を選択します。
     > [!div class="mx-imgBorder"]
@@ -47,18 +47,21 @@ Azure サブスクリプションに対して、[所有者](https://docs.microso
 5. 確認して購入を完了します。 自分にサブスクリプションを割り当てる場合は、[Visual Studio サブスクライバー ポータル](https://my.visualstudio.com)にアクセスして、ソフトウェアをダウンロードし、その他のサブスクライバー特典を利用開始します。
 
 > [!div class="mx-imgBorder"]
-> ![購入を完了する](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
+> ![購入を完了する](_img/buy-vs-subscriptions/buy-vs-sub-success.png "購入が成功したことを示す確認メッセージが表示されます。")
+
+0. **[自分のサブスクリプションを表示する]** をクリックしてサブスクライバー ポータルを開き、サブスクリプションの使用を開始します。
 
 > [!div class="mx-imgBorder"]
-> ![Visual Studio サブスクライバー ポータルに移動する](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
+> ![Visual Studio サブスクライバー ポータルに移動する](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png "Visual Studio サブスクリプション ポータルで、自分のサブスクリプションを調べ、利用可能な特典を使用することができます。")
 
-複数のサブスクリプションを購入した場合は、[Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com)に進み、他のユーザーにサブスクリプションを割り当てることができます。  今回が初めての購入の場合は、管理ポータルに[新しいサブスクリプションの追加](add-monthly-subs.md)が必要な可能性があります。
-
-> [!div class="mx-imgBorder"]
-> ![サブスクリプションを他のユーザーに割り当てる](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
+複数のサブスクリプションを購入した場合は、[Visual Studio サブスクリプションの管理ポータル](https://manage.visualstudio.com)に進み、他のユーザーにサブスクリプションを割り当てます。  今回が初めての購入の場合は、管理ポータルに[新しいサブスクリプションを追加する](add-monthly-subs.md)必要がある場合があります。
 
 > [!div class="mx-imgBorder"]
-> ![サブスクリプションを表示する](_img/buy-vs-subscriptions/assign-subscriptions.png)
+> ![サブスクリプションを他のユーザーに割り当てる](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png "サブスクリプションをユーザーに提供するには、[ユーザーへの割り当て] をクリックします。")
+
+
+> [!div class="mx-imgBorder"]
+> ![サブスクリプションを表示する](_img/buy-vs-subscriptions/assign-subscriptions.png "サブスクリプションをユーザーに割り当てるには、[追加] をクリックします")
 
 ## <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a><a name="manage-subscriptions"></a>購入したクラウド サブスクリプションの更新のキャンセル
 
@@ -99,7 +102,7 @@ A: いいえ。  サブスクリプションはそのまま維持され、現在
 A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは*ありません*。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、 https://manage.visualstudio.com にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは *ありません*。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>Q:サブスクリプションをキャンセルした場合、後で別のクラウド サブスクリプション年間プランを購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。
@@ -115,22 +118,22 @@ A: 既存のお客様には影響はありません。 新規のお客様は、V
 A: 特定の月の間に購入した年間サブスクリプションについては、1 年分がすぐに請求され、1 年間有効になります。 そのため、管理者は購入した当月でのみライセンスの数を変更できます (1 年間有効となり、1 年分が請求されます)。 購入した月以外では、サブスクリプションの数を増やすことができなくなります。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>Q:お客様のサブスクリプションの数を減らす場合はどうすればよいですか。
-A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは**ありません**。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
+A: 管理者は引き続き、サブスクリプションの数を減らすことができます。その場合、[https://manage.visualstudio.com](https://manage.visualstudio.com) にアクセスし、この記事の手順に従ってサブスクリプション数を減らします。 システムによってクレジットが日割りされることは **ありません**。 返金については、Azure 請求チームにお問い合わせいただく必要がございます。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>Q:お客様がサブスクリプションをキャンセルした場合、後でクラウド サブスクリプション年間プランをさらに購入することはできますか。
 A: 別のクラウド サブスクリプション年間プランを購入することはできませんが、Visual Studio サブスクリプションを購入する多くのオプションがあります。  詳細については、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) をご覧ください。
 
 ## <a name="related-resources"></a>関連資料
-- [Visual Studio サブスクリプション管理ポータル](https://manage.visualstudio.com/)
+- [Visual Studio サブスクリプションの管理ポータル](https://manage.visualstudio.com/)
 - [Visual Studio サブスクリプションのサポート](https://visualstudio.microsoft.com/vs/support/)
 - [Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問](vscloud-billing-faq.md)
 - [CSP 向けの Visual Studio クラウド サブスクリプションの購入](vscloud-csp.md)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 クラウド サブスクリプションを購入する

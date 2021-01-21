@@ -1,5 +1,7 @@
 ---
 title: '方法: 配置手順の実行時にコードを実行する |Microsoft Docs'
+description: Visual Studio が配置手順を実行する前と後に、SharePoint プロジェクト項目によって発生するイベントを処理するコードを実行します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2b0431ab4f985d801a78159fc2d324a29f8b638
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b921d8500c95ebbb771b5c0b5817db87b7c6ca
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015537"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304458"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>方法: 配置手順の実行時にコードを実行する
   SharePoint プロジェクトの配置手順に対して追加のタスクを実行する場合は、Visual Studio が各配置手順を実行する前と後に、SharePoint プロジェクト項目によって発生するイベントを処理できます。 詳細については、「 [SharePoint のパッケージ化と配置の拡張](../sharepoint/extending-sharepoint-packaging-and-deployment.md)」を参照してください。

@@ -1,18 +1,18 @@
 ---
-title: Parasoft Virtualize/SOAtest Professional Desktop の特典 | Microsoft Docs
+title: Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
-ms.date: 04/20/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Parasoft Virtualize/SOA Test Professional サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbe3ee78d46128a5944ee7b4d0bc69f001270588
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904392"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537449"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Parasoft Virtualize/SOAtest Professional Desktop
 
@@ -24,22 +24,22 @@ ms.locfileid: "85904392"
 
 2. [ツール] セクションで、Parasoft のタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。   コードが正常に取得された通知を受け取ります。  **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典タイル](_img/vs-parasoft/vs-parasoft-tile.png)
+   > ![Parasoft 特典タイル](_img/vs-parasoft/vs-parasoft-tile.png "Parasoft タイルで [コードの取得] をクリックし、[アクティブ化] をクリックして作業を開始します。")
 
 3. Parasoft の Web サイトにリダイレクトされるので、アカウントを作成します。  連絡先情報を入力して、 **[Submit]\(送信\)** をクリックするだけです。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-new-account.png)
+   > ![Parasoft 特典アカウント作成](_img/vs-parasoft/vs-parasoft-new-account.png "連絡先情報を入力し、[送信] をクリックしてアカウントを作成します。")
 
    > [!Note]
    > このページの表には、1 年間の価格と Visual Studio の割引が示されています。 この料金は、6 か月のサブスクリプションを使用した後に適用されます。  
 
 4. アカウントを作成すると、ダウンロード方法が記載されたメールが送信されたことの通知が表示されます  (受信トレイにメールが表示されない場合は、スパムまたは迷惑メール フォルダーを確認してください)。
 
-5. メールを開き、**アクティブ化コード**をクリップボードにコピーします。
+5. メールを開き、**アクティブ化コード** をクリップボードにコピーします。
 
 6. オペレーティング システムに対応するリンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Parasoft 特典ウェルカム メール](_img/vs-parasoft/vs-parasoft-email.png)
+   > ![Parasoft 特典ウェルカム メール](_img/vs-parasoft/vs-parasoft-email.png "お使いのオペレーティング システムに一致するダウンロード リンクを選択します。")
 
 7. 使っているブラウザーによっては、インストーラーを実行できる別のダイアログ ボックスが表示されることがあります。  たとえば、Internet Explorer では、parasoft_soavirt_9.10.2_win32_x86_64.exe の最近のダウンロードのリストが上部に表示されます。 **[Run]\(実行\)** をクリックしてインストーラーを開始します。
 
@@ -49,7 +49,7 @@ ms.locfileid: "85904392"
 
 10. Parasoft SOAtest & Virtualize セットアップ ウィザードが開始します。  **[次へ]** をクリックします。
     > [!div class="mx-imgBorder"]
-    > ![Parasoft 特典インストール開始](_img/vs-parasoft/vs-parasoft-start-install.png)
+    > ![Parasoft 特典インストール開始](_img/vs-parasoft/vs-parasoft-start-install.png "[次へ] をクリックして、Parasoft SOAtest & Virtualize のインストールを開始します。")
 
 11. **[同意する]** をクリックし、 **[次へ]** をクリックします。
 
@@ -74,9 +74,9 @@ ms.locfileid: "85904392"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  はい       |
-| Visual Studio Enterprise with GitHub Enterprise | VL | 6 か月       |  はい       |
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 6 か月       |  はい       |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                           |N/A         |
-| Visual Studio Professional with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
@@ -95,10 +95,10 @@ ms.locfileid: "85904392"
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
-[Azure DevTest の個人クレジット](vs-azure.md)をアクティブ化して、独自の開発サンドボックスを活用します。 
+[Azure DevTest の個人クレジット](vs-azure.md)をアクティブ化して、独自の開発サンドボックスを活用します。

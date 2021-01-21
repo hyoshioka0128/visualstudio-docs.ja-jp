@@ -1,16 +1,17 @@
 ---
 title: Docker Compose を使用した複数コンテナーのアプリ
 description: Visual Studio for Mac で複数のコンテナーを管理し、それらの間で通信を行う方法について学習します
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: 4dd8695ccf8f1fcf13b9b52387d28c68f8812aec
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: f2c5154e2f35c57b46817c36ea669c6a9d0f5797
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800724"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493544"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -27,7 +28,7 @@ ms.locfileid: "88800724"
 1. **[Web and Console]\(Web とコンソール\) > [アプリ]** で、 **[Web アプリケーション]** テンプレートを選択します。![新しい ASP.NET アプリケーションを作成する](media/docker-quickstart-1.png)
 1. ターゲット フレームワークを選択します。 この例では、.NET Core 3.1 を使います。![ターゲット フレームワークを設定する](media/docker-quickstart-2.png)
 1. プロジェクト名 (この例では _DockerDemoFrontEnd_) やソリューション名 (_DockerDemo_) など、プロジェクトの詳細を入力します。 作成されるプロジェクトには、ASP.NET Core の Web サイトをビルドして実行するために必要なすべての基本が含まれています。
-1. Solution Pad で DockerDemoFrontEnd プロジェクトを右クリックし、 **[追加] > [Add Docker Support]\(Docker サポートの追加\)** を選択します。![Docker サポートの追加](media/docker-quickstart-3.png)
+1. [ソリューション] ウィンドウで DockerDemoFrontEnd プロジェクトを右クリックし、 **[追加] の [Add Docker Support]\(Docker サポートの追加\)** を選択します。![Docker サポートの追加](media/docker-quickstart-3.png)
 
 Visual Studio for Mac で、**docker-compose** という名前の新しいプロジェクトがソリューションに自動的に追加され、既存のプロジェクトに **Dockerfile** が追加されます。
 
@@ -39,7 +40,7 @@ Visual Studio for Mac で、**docker-compose** という名前の新しいプロ
 1. **[Web and Console]\(Web とコンソール\) > [アプリ]** で、 **[API]** テンプレートを選択します。
 1. ターゲット フレームワークを選択します。 この例では、.NET Core 3.1 を使います。
 1. プロジェクト名 (この例では _MyWebAPI_) など、プロジェクトの詳細を入力します。
-1. 作成されたら、Solution Pad に移動して MyWebAPI プロジェクトを右クリックし、 **[追加] > [Add Docker Support]\(Docker サポートの追加\)** を選択します。
+1. 作成されたら、[ソリューション] ウィンドウに移動して MyWebAPI プロジェクトを右クリックし、 **[追加] の [Add Docker Support]\(Docker サポートの追加\)** を選択します。
 
 **docker-compose** プロジェクトの **docker-compose.yml** ファイルが、既存の Web アプリ プロジェクトと共に API プロジェクトを含むように自動的に更新されます。 **docker-compose** プロジェクトをビルドして実行すると、これらの各プロジェクトが異なる Docker コンテナーに配置されます。
 
@@ -83,7 +84,7 @@ services:
    ```
    
     > [!NOTE]
-    > 運用環境のコードでは、各要求の後で `HttpClient` を破棄しないでください。 ベスト プラクティスについては、「[HttpClientFactory を使用して回復力の高い HTTP 要求を実装する](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)」を参照してください。
+    > 運用環境のコードでは、各要求の後で `HttpClient` を破棄しないでください。 ベスト プラクティスについては、「[HttpClientFactory を使用して回復力の高い HTTP 要求を実装する](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests)」を参照してください。
 
 1. *Index.cshtml* ファイルで、`ViewData["Message"]` を表示する行を追加し、ファイルを次のコードのようにします。
 
@@ -101,7 +102,7 @@ services:
       </div>
       ```
   
-1. フロントエンドと Web API の両方のプロジェクトで、*Startup.cs* 内の `Configure` メソッドでの [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) への呼び出しをコメントアウトしてください。このサンプル コードでは、Web API を呼び出すために HTTPS ではなく HTTP を使用するためです。
+1. フロントエンドと Web API の両方のプロジェクトで、*Startup.cs* 内の `Configure` メソッドでの [Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) への呼び出しをコメントアウトしてください。このサンプル コードでは、Web API を呼び出すために HTTPS ではなく HTTP を使用するためです。
 
       ```csharp
                   //app.UseHttpsRedirection();

@@ -1,5 +1,7 @@
 ---
 title: '[発行] ページ (プロジェクトデザイナー) (Office 開発)'
+description: Visual Studio のプロジェクトデザイナーの [発行] ページを使用して、配置のプロパティを構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,41 +18,41 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f68ab8f0ee9efde903148d4702e85e99aad77d2
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328995"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525010"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>[発行] ページ (プロジェクトデザイナー) (Visual Studio での Office 開発)
   **プロジェクト デザイナー** の **[発行]** ページは、配置用のプロパティを構成する場合に使用します。
 
- このページにアクセスするには、 **ソリューションエクスプローラー**でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ *Projectname*の **プロパティ**] を選択します。 **[発行]** ページが表示されない場合は、 **[発行]** タブをクリックします。
+ このページにアクセスするには、 **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ *Projectname* の **プロパティ**] を選択します。 **[発行]** ページが表示されない場合は、 **[発行]** タブをクリックします。
 
 > [!NOTE]
-> **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「 [方法: ClickOnce を使用して Office ソリューションを発行する](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)」を参照してください。
+> **[発行ウィザード]** で発行場所を設定することもできます。 詳細については、「 [方法: ClickOnce を使用して Office ソリューションを発行する](/previous-versions/bb386095(v=vs.110))」を参照してください。
 
 ## <a name="uielement-list"></a>UIElement の一覧
  **発行フォルダーの場所 (web サイト、ftp サーバー、またはファイルパス)** 必須。
 
  発行フォルダーの場所とは、Visual Studio がビルドのマニフェスト、アセンブリ、その他のファイルなどのソリューション ファイルをコピーする先のディレクトリです。 このディレクトリへの書き込みアクセス権が必要です。
 
- オプションには、ローカル コンピューター、UNC ファイル共有、または HTTP/HTTPS Web サイトがあります。 パスには、ローカル (*c:\foldername\publishfolder*)、相対 (*発行 \\ *)、または完全修飾された場所 (* \\ \servername\foldername*または http://<em>servername/foldername</em>) を指定できます。
+ オプションには、ローカル コンピューター、UNC ファイル共有、または HTTP/HTTPS Web サイトがあります。 パスには、ローカル (*c:\foldername\publishfolder*)、相対 (*発行 \\*)、または完全修飾された場所 (*\\ \servername\foldername* または http://<em>servername/foldername</em>) を指定できます。
 
- 既定では、IIS がインストールされている場合は発行場所が、 *http://localhost/projectname/* iis がインストールされていない場合は*発行 \\ *ディレクトリになります。
+ 既定では、IIS がインストールされている場合は発行場所が、 *http://localhost/projectname/* iis がインストールされていない場合は *発行 \\* ディレクトリになります。
 
  **インストールフォルダーの URL** Optional.
 
  インストール フォルダーの URL は、エンド ユーザーがカスタマイズをインストールするディレクトリです。 このディレクトリは、ソリューションで更新プログラムを確認するために使用するパスでもあります。 このパスは、発行フォルダーの場所と同じにできますが、これは必要条件ではありません。
 
- オプションには、ローカル コンピューター、UNC ファイル共有、または HTTP/HTTPS Web サイトがあります。 パスには、ローカル (*c:\foldername\publishfolder*)、相対 (*発行 \\ *)、または完全修飾された場所 (* \\ \servername\foldername*または http://<em>servername/foldername</em>) を指定できます。 HTTP/HTTPS の場所は、すべて US-ASCII 文字で作成する必要があります。 Unicode 文字はサポートされていません。
+ オプションには、ローカル コンピューター、UNC ファイル共有、または HTTP/HTTPS Web サイトがあります。 パスには、ローカル (*c:\foldername\publishfolder*)、相対 (*発行 \\*)、または完全修飾された場所 (*\\ \servername\foldername* または http://<em>servername/foldername</em>) を指定できます。 HTTP/HTTPS の場所は、すべて US-ASCII 文字で作成する必要があります。 Unicode 文字はサポートされていません。
 
  インストール パスが設定されている場合、ユーザーがカスタマイズをインストールするために、カスタマイズ ファイルがその場所に存在する必要があります。 この場所は、最終的な配置場所がわかっている場合にのみ設定してください。
 
  CD オプションの場合のように、インストール ファイルがドキュメントまたはセットアップ プログラムを基準とする相対的な場所に存在する場合は、このボックスを空白のままにします。
 
- この値は、管理者が後で割り当てることができます。 詳細については、「 [方法: Office ソリューションのインストールパスを変更する](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)」を参照してください。
+ この値は、管理者が後で割り当てることができます。 詳細については、「 [方法: Office ソリューションのインストールパスを変更する](/previous-versions/bb608626(v=vs.110))」を参照してください。
 
  **前提条件** 必須コンポーネントは、セットアッププログラムに含めることも、インストール時に必要に応じてダウンロードすることもできます。
 
@@ -90,7 +92,7 @@ ms.locfileid: "67328995"
 
   **発行言語** このオプションは、Microsoft ソフトウェアライセンス条項の言語を設定し、前提条件の一覧に言語パックを含めます。 カスタマイズの言語には影響しません。 セットアップ プログラムの言語は、インストールされている Visual Studio の言語によって決まります。
 
-  **発行言語**を変更する方法の詳細については、「[方法: ClickOnce アプリケーションの発行言語を変更](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)する」を参照してください。
+  **発行言語** を変更する方法の詳細については、「[方法: ClickOnce アプリケーションの発行言語を変更](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)する」を参照してください。
 
   **バージョンの発行** カスタマイズのバージョン番号を設定します。 バージョン番号を変更すると、アプリケーションが更新プログラムとして発行されます。 ビルド プロセス時に各バージョン用の新しいフォルダーが作成されるため、前に発行されたバージョンは上書きされません。 発行バージョンを構成する各部分 (**[メジャー]**、 **[マイナー]**、 **[ビルド]**、 **[リビジョン]**) には、それぞれ 5 桁までの数値を含めることができます。
 
@@ -102,4 +104,4 @@ ms.locfileid: "67328995"
 
 - [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)
 - [ClickOnce を使用して Office ソリューションを配置する](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Office ソリューションの配置の前提条件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Office ソリューションの配置の前提条件](/previous-versions/bb608617(v=vs.110))

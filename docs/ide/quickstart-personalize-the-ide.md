@@ -3,18 +3,18 @@ title: Visual Studio ダーク テーマの設定とテキストの色の変更
 description: Visual Studio の既定の配色テーマをダーク モードに変更し、コード エディターのフォントの色を変更する方法について説明します。
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d58bf3a00d3db208abfad23a67bd115914f14a15
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d261d6c13572be6df80ca36f37e19792d53e2a32
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801400"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684039"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>方法: Visual Studio IDE とエディターのカスタマイズ
 
@@ -57,14 +57,14 @@ Visual Studio のユーザー インターフェイスの既定の配色テー�
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> **Visual Studio 配色テーマ エディター**を [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) からインストールして、定義済みテーマを追加でインストールすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ドロップダウン リストに表示されます。
+> **Visual Studio 配色テーマ エディター** を [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) からインストールして、定義済みテーマを追加でインストールすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ドロップダウン リストに表示されます。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> **Visual Studio 配色テーマ デザイナー**を [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) からインストールして、独自のテーマを作成できます。
+> **Visual Studio 配色テーマ デザイナー** を [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-madsk.ColorThemeDesigner) からインストールして、独自のテーマを作成できます。
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Visual Studio のユーザー インターフェイスの既定の配色テー�
 
    ![新しいフォントの色が設定された XML ファイル](media/quickstart-personalize-xml-file-new-colors.png)
 
-Visual Studio の色をカスタマイズするいくつかの方法について学習しました。 Visual Studio を自分の好みに合わせて完全にカスタマイズするために、[ **[オプション]** ](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) ダイアログ ボックスの他のカスタマイズ オプションも試してみることをお勧めします。
+Visual Studio の色をカスタマイズするいくつかの方法について学習しました。 Visual Studio を自分の好みに合わせて完全にカスタマイズするために、[ **[オプション]**](../ide/reference/fonts-and-colors-environment-options-dialog-box.md) ダイアログ ボックスの他のカスタマイズ オプションも試してみることをお勧めします。
 
 ## <a name="see-also"></a>関連項目
 

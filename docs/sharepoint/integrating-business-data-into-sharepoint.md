@@ -1,5 +1,7 @@
 ---
 title: SharePoint へのビジネス データの統合 | Microsoft Docs
+description: ビジネス データ接続 (BDC) サービスのモデルを作成してビジネス データを SharePoint に統合する方法の概要を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4bbfb681a0dac0825bf7af4f1f27ab1c1b50053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3156adc286222282ae63f70f70838bc6b7155a8
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016307"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304351"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>SharePoint へのビジネス データの統合
   ビジネス データを SharePoint に統合できます。 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)] や Siebel、SAP、または Web サービスなどのバック エンドのサーバー アプリケーションからのビジネス データを使用できます。 ユーザーは、SharePoint の外部リストまたはビジネス データ Web パーツを使用して、ビジネス データの表示、追加、更新、または削除を行うことができます。  また、ユーザーは、Microsoft Outlook などの Microsoft Office アプリケーションで、このデータにオフラインでアクセスすることもできます。 詳細については、「[外部データを表示できる場所](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))」を参照してください。

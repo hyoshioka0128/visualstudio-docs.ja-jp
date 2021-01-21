@@ -1,5 +1,7 @@
 ---
 title: '&lt;assemblyIdentity &gt; 要素 (ClickOnce アプリケーション) |Microsoft Docs'
+description: AssemblyIdentity 要素は、ClickOnce アプリケーションで必要です。 子要素は含まれず、この記事で説明する属性があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900668"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94383210"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; 要素 (ClickOnce アプリケーション)
 デプロイにデプロイされたアプリケーションを識別 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] します。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 
@@ -44,11 +46,11 @@ ms.locfileid: "62900668"
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 アプリケーションの名前を識別します。<br /><br /> に `Name` 1 つまたは二重引用符などの特殊文字が含まれている場合、アプリケーションのアクティブ化に失敗する可能性があります。|
-|`Version`|必須です。 アプリケーションのバージョン番号を次の形式で指定します。 `major.minor.build.revision`|
+|`Name`|必須。 アプリケーションの名前を識別します。<br /><br /> に `Name` 1 つまたは二重引用符などの特殊文字が含まれている場合、アプリケーションのアクティブ化に失敗する可能性があります。|
+|`Version`|必須。 アプリケーションのバージョン番号を次の形式で指定します。 `major.minor.build.revision`|
 |`publicKeyToken`|省略可能。 `SHA-1`アプリケーションまたはアセンブリに署名するときに使用する公開キーのハッシュ値の最後の8バイトを表す16文字の16進数文字列を指定します。 カタログの署名に使用される公開キーは、2048ビット以上である必要があります。<br /><br /> アセンブリに署名することをお勧めしますが、省略可能ですが、この属性は必須です。 アセンブリが署名されていない場合は、自己署名アセンブリから値をコピーするか、すべてゼロの "ダミー" 値を使用する必要があります。|
-|`processorArchitecture`|必須です。 プロセッサを指定します。 有効な値は、 `msil` 32 ビット windows の場合はすべてのプロセッサ、64ビット windows の場合は、 `x86` `IA64` `Itanium` Intel 64 ビット Itanium プロセッサの場合はです。|
-|`language`|必須です。 アセンブリの2つの部分言語コード (たとえば、) を識別し `en-US` ます。 この要素は `asmv2` 名前空間にあります。 指定されていない場合、既定値は `neutral` です。|
+|`processorArchitecture`|必須。 プロセッサを指定します。 有効な値は、 `msil` 32 ビット windows の場合はすべてのプロセッサ、64ビット windows の場合は、 `x86` `IA64` `Itanium` Intel 64 ビット Itanium プロセッサの場合はです。|
+|`language`|必須。 アセンブリの2つの部分言語コード (たとえば、) を識別し `en-US` ます。 この要素は `asmv2` 名前空間にあります。 指定されていない場合、既定値は `neutral` です。|
 
 ## <a name="examples"></a>例
 

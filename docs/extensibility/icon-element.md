@@ -1,5 +1,7 @@
 ---
 title: Icon 要素 |Microsoft Docs
+description: Icon 要素について説明します。これは、Visual Studio IDE 拡張機能で使用されるアイコンを表します。これには、使用されるビットマップの属性やビットマップストリップのスロットが含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710521"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993602"
 ---
 # <a name="icon-element"></a>Icon 要素
 Icon タグの guid 属性は、定義されているビットマップの guid です。 属性は、 `id` ビットマップストリップ内のスロットを選択します。 この要素は省略可能です。 この要素が含まれていない場合、 **guidOfficeIcon: msotcidNoIcon** の値は暗黙的に指定されます。
@@ -41,7 +43,7 @@ Icon タグの guid 属性は、定義されているビットマップの guid 
 
 |要素|説明|
 |-------------|-----------------|
-|なし。|なし。|
+|[なし] :|[なし] :|
 
 ### <a name="parent-elements"></a>親要素
 
@@ -49,5 +51,5 @@ Icon タグの guid 属性は、定義されているビットマップの guid 
 |-------------|-----------------|
 |[Buttons 要素](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

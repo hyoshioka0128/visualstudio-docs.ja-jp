@@ -1,5 +1,8 @@
 ---
 title: ドキュメントとドキュメントの一部をプログラムによって保護する
+description: Microsoft Word 文書に保護を追加して、ユーザーがドキュメントを編集できないようにする方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4654a2c218470e0d5e2a1ddd54a88de5c4546f7b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1dbb001a8c350b376f30047dbafbf747f043e91d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537840"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527773"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>方法: プログラムによって文書および文書の一部を保護する
   Microsoft Office Word 文書に保護を追加して、ユーザーによるドキュメントの編集を防止できます。

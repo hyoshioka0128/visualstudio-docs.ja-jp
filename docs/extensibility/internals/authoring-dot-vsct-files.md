@@ -1,5 +1,7 @@
 ---
 title: 文書.Vsct ファイル |Microsoft Docs
+description: メニュー項目、ツールバー、およびその他の UI 要素を Visual Studio 統合開発環境 (IDE) に追加する vsct ファイルを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,27 +12,27 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012153"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190084"
 ---
 # <a name="author-vsct-files"></a>作成した vsct ファイル
 このドキュメントでは、メニュー項目、ツールバー、およびその他のユーザーインターフェイス (UI) 要素を Visual Studio 統合開発環境 (IDE) に追加するために、vsct ファイルを作成する方法について説明 *します* 。 この手順は、まだ *vsct* ファイルがない Visual Studio パッケージ (VSPackage) に UI 要素を追加する場合に使用します。
 
- 新しいプロジェクトでは、Visual Studio パッケージテンプレートを使用することをお勧めし *ます。* これは、選択内容によっては、メニューコマンド、ツールウィンドウ、またはカスタムエディターに必要な要素が既に存在するためです。 この *vsct* ファイルを変更して、VSPackage の要件を満たすことができます。 *Vsct*ファイルを変更する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」の例を参照してください。
+ 新しいプロジェクトでは、Visual Studio パッケージテンプレートを使用することをお勧めし *ます。* これは、選択内容によっては、メニューコマンド、ツールウィンドウ、またはカスタムエディターに必要な要素が既に存在するためです。 この *vsct* ファイルを変更して、VSPackage の要件を満たすことができます。 *Vsct* ファイルを変更する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」の例を参照してください。
 
 ## <a name="author-the-file"></a>ファイルを作成する
  これらのフェーズで *vsct* ファイルを作成します。ファイルとリソースの構造を作成し、ui 要素を宣言し、ui 要素を IDE に配置し、特殊な動作を追加します。
 
 ### <a name="file-structure"></a>ファイル構造
- *Vsct*ファイルの基本構造は[commandtable](../../extensibility/commandtable-element.md)ルート要素であり、 [Commands](../../extensibility/commands-element.md)要素と[Symbols](../../extensibility/symbols-element.md)要素が含まれています。
+ *Vsct* ファイルの基本構造は [commandtable](../../extensibility/commandtable-element.md)ルート要素であり、 [Commands](../../extensibility/commands-element.md)要素と [Symbols](../../extensibility/symbols-element.md)要素が含まれています。
 
 #### <a name="to-create-the-file-structure"></a>ファイル構造を作成するには
 
-1. [「方法: vsct ファイルを作成](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)する」の手順に従って、 *vsct*ファイルをプロジェクトに追加します。
+1. [「方法: vsct ファイルを作成](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)する」の手順に従って、 *vsct* ファイルをプロジェクトに追加します。
 
 2. 次の例に示すように、要素に必要な名前空間を追加し `CommandTable` ます。
 
@@ -108,7 +110,7 @@ ms.locfileid: "90012153"
        > [!NOTE]
        > ツールバーのボタンにはアイコンが必要です。
 
-   詳細については、「 [Menucommands と OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)」を参照してください。
+   詳細については、「 [Menucommands と OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)」を参照してください。
 
 4. いずれかのコマンドでアイコンが必要な場合は、要素に [ビットマップ](../../extensibility/bitmaps-element.md) 要素を追加し `Commands` ます。 次に、各アイコンに対して、要素に [Bitmap](../../extensibility/bitmap-element.md) 要素を追加し `Bitmaps` ます。 ここで、ビットマップリソースの場所を指定します。 詳細については、「 [メニューコマンドにアイコンを追加する](../../extensibility/adding-icons-to-menu-commands.md)」を参照してください。
 

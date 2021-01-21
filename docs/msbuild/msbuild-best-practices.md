@@ -1,5 +1,7 @@
 ---
 title: MSBuild ベスト プラクティス | Microsoft Docs
+description: 条件属性の使用やワイルドカードの未使用などの MSBuild スクリプトを記述するためのベスト プラクティスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2742324f737a4e70221e3cbe4c78cff56fa7e7ca
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "78263150"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047660"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild のベスト プラクティス
 

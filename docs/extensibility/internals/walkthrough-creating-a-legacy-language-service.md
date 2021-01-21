@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 従来の言語サービスの作成 |Microsoft Docs'
+description: マネージパッケージフレームワーク言語クラスを使用して、Visual C# で言語サービスを実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbdad85dd1c0f62b22bb33b5ed6ab2c597e62164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905985"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487934"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>チュートリアル: 従来の言語サービスの作成
 Managed package framework (MPF) 言語クラスを使用して、言語サービスをに実装するの [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] は簡単です。 言語サービス、言語サービス自体、および言語のパーサーをホストするための VSPackage が必要です。
@@ -46,23 +48,23 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
 4. 適切な会社およびパッケージの情報を入力します。 **[次へ]** をクリックします。
 
-5. **メニューコマンド**を選択します。 **[次へ]** をクリックします。
+5. **メニューコマンド** を選択します。 **[次へ]** をクリックします。
 
     コードスニペットをサポートしない場合は、[完了] をクリックするだけで、次の手順は無視できます。
 
-6. **コマンド名**として「 **Insert スニペット**」と入力し、 `cmdidInsertSnippet` **コマンド ID**に「」と入力します。 **[完了]** をクリックします。
+6. **コマンド名** として「 **Insert スニペット**」と入力し、 `cmdidInsertSnippet` **コマンド ID** に「」と入力します。 **[完了]** をクリックします。
 
-    **コマンド名**と**コマンド ID**は任意のものにすることができます。これらは例にすぎません。
+    **コマンド名** と **コマンド ID** は任意のものにすることができます。これらは例にすぎません。
 
 ### <a name="create-the-language-service-class"></a>言語サービスクラスを作成する
 
-1. **ソリューションエクスプローラー**で、My言語パッケージプロジェクトを右クリックし、[**追加**]、[**参照**] の順に選択し、[**新しい参照の追加**] をクリックします。
+1. **ソリューションエクスプローラー** で、My言語パッケージプロジェクトを右クリックし、[**追加**]、[**参照**] の順に選択し、[**新しい参照の追加**] をクリックします。
 
 2. [**参照の追加**] ダイアログボックスで、[ **.net** ] タブの [ **LanguageService** ] を選択し、[ **OK**] をクリックします。
 
      これは、言語パッケージプロジェクトに対して1回だけ実行する必要があります。
 
-3. **ソリューションエクスプローラー**で、VSPackage プロジェクトを右クリックし、[**追加**]、[**クラス**] の順に選択します。
+3. **ソリューションエクスプローラー** で、VSPackage プロジェクトを右クリックし、[**追加**]、[**クラス**] の順に選択します。
 
 4. [テンプレート] ボックスの一覧で [ **クラス** ] が選択されていることを確認します。
 
@@ -104,7 +106,7 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
 #### <a name="deriving-from-an-mpf-class"></a>MPF クラスからの派生
 
-1. **ソリューションエクスプローラー**で、VSPackage プロジェクトを右クリックし、[**追加**]、[**クラス**] の順に選択します。
+1. **ソリューションエクスプローラー** で、VSPackage プロジェクトを右クリックし、[**追加**]、[**クラス**] の順に選択します。
 
 2. [テンプレート] ボックスの一覧で [ **クラス** ] が選択されていることを確認します。
 
@@ -130,5 +132,5 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
      たとえば、「」と入力すると、 `public override` そのクラスでオーバーライド可能なすべてのメソッドの一覧が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)

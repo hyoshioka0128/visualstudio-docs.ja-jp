@@ -3,16 +3,16 @@ title: '方法: 複数のソリューションを開く'
 description: Visual Studio for Mac で複数のソリューションを開く方法、およびアプリケーションの複数のインスタンスを開く方法について説明します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 04/02/2019
+ms.date: 11/09/2020
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: d90a2a92e2902633e5667e71c5692faa8fa161e1
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: e54f002141379d93a40df69ea070d5a64eba2f7d
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950058"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493440"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Visual Studio for Mac の複数のソリューションまたはインスタンスを開く
 
@@ -22,7 +22,7 @@ ms.locfileid: "85950058"
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>Visual Studio for Mac の 2 つ目のインスタンスを開く
 
-統合開発環境 (IDE) の 2 番目のインスタンスを開くには、ドックまたは**アプリケーション** フォルダーで Visual Studio アイコンを右クリックし、 **[新しいインスタンス]** を選択します。
+統合開発環境 (IDE) の 2 番目のインスタンスを開くには、ドックまたは **アプリケーション** フォルダーで Visual Studio アイコンを右クリックし、 **[新しいインスタンス]** を選択します。
 
 ![Visual Studio アイコンを右クリックした状態の [新しいインスタンス] メニュー オプションのスクリーンショット](media/open-new-instance.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "85950058"
 
     ![[現在のワークスペースを閉じる] ボックスがクリアされた [オプション] ダイアログ ボックスのスクリーンショット](media/open-multiple-solutions-image1.png)
 
-5. **[開く]** ボタンを選択して、Solution Pad で 2 つ目のソリューションを開きます。
+5. **[開く]** ボタンを選択して、[ソリューション] ウィンドウで 2 つ目のソリューションを開きます。
 
 または、最近ソリューションを開いた場合は、次の手順を使うこともできます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "85950058"
 
     ![[最近のソリューション] メニューのスクリーンショット](media/open-multiple-solutions-image2.png)
 
-1. **Ctrl** キーを押しながら、ソリューションを選択します。 この組み合わせにより、Solution Pad で 2 つ目のソリューションが開きます。
+1. **Ctrl** キーを押しながら、ソリューションを選択します。 この組み合わせにより、[ソリューション] ウィンドウで 2 つ目のソリューションが開きます。
 
 ## <a name="related-video"></a>関連ビデオ
 

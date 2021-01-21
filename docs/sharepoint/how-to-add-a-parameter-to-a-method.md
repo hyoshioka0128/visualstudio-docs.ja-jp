@@ -1,5 +1,7 @@
 ---
 title: '方法: メソッドにパラメーターを追加する |Microsoft Docs'
+description: ビジネスデータ接続 (BDC) メソッドにパラメーターを追加する方法を理解します。これにより、メソッドに情報を渡したり、メソッドから情報を返したりできます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d0496d0fd6a347683d56630990e50af585520ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016716"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915402"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>方法: メソッドにパラメーターを追加する
   パラメーターを使用して、メソッドに情報を渡すか、メソッドから情報を返します。 すべてのメソッドには、少なくとも1つのパラメーターが必要です。 作成するメソッドの種類をサポートするパラメーターをデザインする方法の詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -33,7 +35,7 @@ ms.locfileid: "86016716"
 
 1. メソッドをエンティティに追加します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細**を表示] を選択します。
+2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
      [ **BDC メソッドの詳細** ] ウィンドウが開きます。 詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
@@ -43,9 +45,9 @@ ms.locfileid: "86016716"
 
      [ **パラメーター** ノードの下に新しいパラメーターが表示されます。
 
-5. メニューバーで、[ **View**  >  **プロパティウィンドウ**の表示] を選択します。
+5. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
 
-6. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを意味のある任意の名前に設定します。 たとえば、メソッドが顧客を返す場合は、メソッドに **Getcustomers**という名前を指定できます。
+6. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを意味のある任意の名前に設定します。 たとえば、メソッドが顧客を返す場合は、メソッドに **Getcustomers** という名前を指定できます。
 
 7. [ **BDC メソッドの詳細** ] ウィンドウで、パラメーターの方向に対して表示される一覧を開き、[ **In**]、[ **InOut**]、[ **Out**]、または [ **戻る**] を選択します。
 
@@ -58,4 +60,4 @@ ms.locfileid: "86016716"
 - [方法: モデルにエンティティを追加する](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [方法: パラメーターの型記述子を定義する](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
 - [方法: メソッドインスタンスを定義する](../sharepoint/how-to-define-a-method-instance.md)
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)

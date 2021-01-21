@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 初めての Project 用 VSTO アドインの作成'
+description: Microsoft Project 用のアプリケーションレベルのアドインを作成します。 この機能は、どのプロジェクトが開いているかに関係なく、アプリケーション自体で使用できます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4774b8f5ba55d54e05e3a9ef18f8ea13fd48fc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981403"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527897"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>チュートリアル: 初めての Project 用 VSTO アドインの作成
   このチュートリアルでは、Microsoft Office プロジェクト用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのプロジェクトが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -46,7 +48,7 @@ ms.locfileid: "62981403"
 
 - [!INCLUDE[Project_15_short](../vsto/includes/project-15-short-md.md)] または [!INCLUDE[Project_14_short](../vsto/includes/project-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
 
 ### <a name="to-create-a-new-project-in-visual-studio"></a>Visual Studio で新しいプロジェクトを作成するには
 
@@ -92,7 +94,7 @@ ms.locfileid: "62981403"
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
 
-## <a name="test-the-project"></a>プロジェクトのテスト
+## <a name="test-the-project"></a>プロジェクトをテストする
  プロジェクトをビルドして実行し、新しいプロジェクトに新しいタスクが表示されることを確認します。
 
 ### <a name="to-test-the-project"></a>プロジェクトをテストするには
@@ -116,7 +118,7 @@ ms.locfileid: "62981403"
 
 1. Visual Studio で、 **[ビルド]** メニューの **[ソリューションのクリーン]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  これで Project 用の基本的な VSTO アドインの作成が完了しました。VSTO アドインの開発方法について詳しくは、次に示すトピックをご覧ください。
 
 - Project 用 VSTO アドインで実行できる一般的なプログラミングタスク: [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)。
@@ -127,7 +129,7 @@ ms.locfileid: "62981403"
 
 - Project 用 VSTO アドインの配置: [Office ソリューションを配置](../vsto/deploying-an-office-solution.md)します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)
 - [プロジェクトソリューション](../vsto/project-solutions.md)
 - [Office ソリューションのビルド](../vsto/building-office-solutions.md)

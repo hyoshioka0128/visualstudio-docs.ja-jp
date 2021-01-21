@@ -1,5 +1,7 @@
 ---
 title: チェックボックスコントロールを使用してワークシートの書式を変更する
+description: Visual Studio の Office 開発ツールを使用して、プロジェクトにコードを作成して追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328704"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527226"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したワークシートの書式設定の変更
   このチュートリアルでは、Microsoft Office Excel ワークシートでチェックボックスを使用して書式を変更する方法の基本について説明します。 プロジェクトにコードを作成して追加するには、Visual Studio の Office 開発ツールを使用します。 完成したサンプルとして結果を表示するには、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の Excel コントロールのサンプルを参照してください。
@@ -44,14 +46,14 @@ ms.locfileid: "67328704"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] または [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  この手順では、Visual Studio を使用して Excel ブックプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
 1. 「 **My excel の書式設定**」という名前の excel ブックプロジェクトを作成します。 [ **新しいドキュメントを作成** する。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     新しい Excel ブックがデザイナーで開き、 **[My Excel 書式** ] プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     新しい Excel ブックがデザイナーで開き、 **[My Excel 書式** ] プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="add-text-and-controls-to-the-worksheet"></a>ワークシートにテキストとコントロールを追加する
  このチュートリアルでは、コントロールに3つの <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> コントロールといくつかのテキストが必要です <xref:Microsoft.Office.Tools.Excel.NamedRange> 。
@@ -60,32 +62,32 @@ ms.locfileid: "67328704"
 
 1. ブックが Visual Studio デザイナーで開かれていて、開いていることを確認し `Sheet1` ます。
 
-2. **ツールボックス**の [**コモンコントロール**] タブから、 <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> コントロールを**Sheet1**内またはセル**B2**の近くにドラッグします。
+2. **ツールボックス** の [**コモンコントロール**] タブから、 <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> コントロールを **Sheet1** 内またはセル **B2** の近くにドラッグします。
 
 3. [ **表示** ] メニューの [ **プロパティ** ウィンドウ] をクリックします。
 
-4. [**プロパティ**] ウィンドウの [オブジェクト名] ボックスの一覧に**Checkbox1**が表示されていることを確認し、次のプロパティを変更します。
+4. [**プロパティ**] ウィンドウの [オブジェクト名] ボックスの一覧に **Checkbox1** が表示されていることを確認し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**Text**|**太字**|
+    |**テキスト**|**太字**|
 
 5. セル **B4** の横にある2つ目のチェックボックスをドラッグし、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**Text**|**斜体**|
+    |**テキスト**|**斜体**|
 
 6. セル **B6** の横にある3番目のチェックボックスをドラッグし、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**applyUnderlineFont**|
-    |**Text**|**強調**|
+    |**テキスト**|**Underline**|
 
-7. **Ctrl**キーを押しながら、3つのチェックボックスコントロールをすべて選択します。
+7. **Ctrl** キーを押しながら、3つのチェックボックスコントロールをすべて選択します。
 
 8. Excel の [書式] タブの [配置] グループで、[ **配置**] をクリックし、[ **左揃え**] をクリックします。
 
@@ -98,7 +100,7 @@ ms.locfileid: "67328704"
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>NamedRange コントロールにテキストを追加するには
 
-1. ツールボックスの [ **Excel コントロール** ] タブから、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをセル **B9**にドラッグします。
+1. ツールボックスの [ **Excel コントロール** ] タブから、 <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールをセル **B9** にドラッグします。
 
 2. 編集可能なテキストボックスに **$B $9** が表示され、セル **B9** が選択されていることを確認します。 そうでない場合は、セル **B9** をクリックして選択します。
 
@@ -106,9 +108,9 @@ ms.locfileid: "67328704"
 
 4. セル **B9** は、という名前の範囲になり `NamedRange1` ます。
 
-    ワークシートには表示されませんが、 `NamedRange1` セル**B9**を選択すると、[**名前] ボックス**(左側のワークシートのすぐ上) に表示されます。
+    ワークシートには表示されませんが、 `NamedRange1` セル **B9** を選択すると、[**名前] ボックス**(左側のワークシートのすぐ上) に表示されます。
 
-5. [**プロパティ**] ウィンドウの [オブジェクト名] ボックスの一覧に**NamedRange1**が表示されていることを確認し、次のプロパティを変更します。
+5. [**プロパティ**] ウィンドウの [オブジェクト名] ボックスの一覧に **NamedRange1** が表示されていることを確認し、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
@@ -148,7 +150,7 @@ ms.locfileid: "67328704"
 
 ### <a name="to-test-your-workbook"></a>ブックをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. チェック ボックスをオンまたはオフにします。
 

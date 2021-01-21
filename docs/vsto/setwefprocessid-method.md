@@ -1,5 +1,7 @@
 ---
 title: SetWefProcessId メソッド
+description: SetWefProcessId メソッドが Web Extensions Framework (WEF) コンテンツを実行するプロセス識別子をどのように提供するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13a6748e2e3b66f581a3c72c1f847e0329189e64
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 523279d70215af90ea070ea8272a5221d9947582
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537333"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524319"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId メソッド
   Web Extensions Framework (WEF) コンテンツを実行するプロセス識別子を提供します。

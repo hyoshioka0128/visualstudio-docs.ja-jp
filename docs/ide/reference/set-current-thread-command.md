@@ -1,5 +1,7 @@
 ---
 title: SetCurrentThread コマンド
+description: SetCurrentThread コマンドについて、およびそれを使用して指定したスレッドを現在のスレッドとして設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54c2dabeea14293fdb86120f822eb396a028757a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cedd37ece7bcc0eb79ad52cc426b07f8cb2ca57
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768682"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616565"
 ---
 # <a name="set-current-thread-command"></a>SetCurrentThread コマンド
 指定したスレッドを現在のスレッドとして設定します。
@@ -32,7 +34,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>引数
 `index`
 
-必須。 スレッドをそのインデックスで選択します。
+必須です。 スレッドをそのインデックスで選択します。
 
 ## <a name="example"></a>例
 
@@ -40,9 +42,9 @@ Debug.SetCurrentThread index
 >Debug.SetCurrentThread 1
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

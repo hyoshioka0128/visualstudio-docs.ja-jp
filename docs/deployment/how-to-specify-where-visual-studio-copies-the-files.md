@@ -1,6 +1,9 @@
 ---
 title: ファイルのコピー先を指定してください |Microsoft Docs
-ms.custom: seodec18
+description: アプリケーションファイルとマニフェストが配置される場所を指定する ClickOnce アプリケーションの発行場所プロパティを設定する方法について説明します。
+ms.custom:
+- SEO-VS-2020
+- seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0618a6e0b74c16efaaf8a70b7b8745e0f3dd142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381718"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349595"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>方法: Visual Studio がファイルをコピーする場所を指定する
 ClickOnce を使用してアプリケーションを発行する場合、`Publish Location` プロパティによってアプリケーション ファイルとマニフェストが配置される場所が指定されます。 これには、ファイル パスまたは FTP サーバーへのパスを指定できます。
@@ -33,17 +36,17 @@ ClickOnce を使用してアプリケーションを発行する場合、`Publis
 
 ### <a name="to-specify-a-publishing-location"></a>発行場所を指定するには
 
-1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
 2. **[公開]** タブをクリックします。
 
 3. **[発行場所]** フィールドに、次の形式のいずれかを使用して、発行場所を入力します。
 
-   - ファイル共有またはディスクパスに発行するには、UNC パス (* \\ \ \*) またはファイルパス (*c:\*) を使用してパスを入力します。
+   - ファイル共有またはディスクパスに発行するには、UNC パス ( *\\ \ \* ) またはファイルパス ( *c:\* ) を使用してパスを入力します。
 
    - FTP サーバーに発行するには、 <em>ftp://ftp.microsoft.com/ \<ApplicationName> </em>の形式を使用してパスを入力します。
 
-     参照ボタン ([.**..**]) を使用するには、[**発行場所**] ボックスにテキストが表示されている必要があります。
+     参照ボタン ([. **..** ]) を使用するには、[ **発行場所** ] ボックスにテキストが表示されている必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションの発行](../deployment/publishing-clickonce-applications.md)

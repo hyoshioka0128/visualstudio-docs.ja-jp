@@ -1,5 +1,7 @@
 ---
 title: NewFile コマンド
+description: NewFile コマンドと、それを使用することで新しいファイルを作成して開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c800ce0ed130ed78f9537584c95a29a717f405fa
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595957"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304098"
 ---
 # <a name="new-file-command"></a>NewFile コマンド
 新規ファイルを作成して開きます。 ファイルは [その他のファイル] フォルダーの下に表示されます。
@@ -36,7 +38,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
 ## <a name="switches"></a>スイッチ
 /t:`templatename`\
-任意。 作成するファイルの種類を指定します。
+省略可能。 作成するファイルの種類を指定します。
 
 /t:`templatename` 引数の構文は、[新しいファイル] ダイアログ ボックスにある情報を反映します。 カテゴリ名に続けて円記号 (`\`)、およびテンプレート名を入力し、文字列全体を引用符で囲みます。
 
@@ -49,7 +51,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 上の例で、C++ File のテンプレートは **[新しいファイル]** ダイアログ ボックスの [Visual C++] カテゴリにあります。
 
 /e:`editorname`\
-任意。 ファイルを開くために使用するエディターの名前です。 引数は指定されていても、エディター名がない場合、 **[プログラムから開く]** ダイアログ ボックスが表示されます。
+省略可能。 ファイルを開くために使用するエディターの名前です。 引数は指定されていても、エディター名がない場合、**[プログラムから開く]** ダイアログ ボックスが表示されます。
 
 /e:`editorname` 引数の構文では、[ファイルを開くアプリケーションの選択] ダイアログ ボックスで表示されるようにエディター名を入力し、引用符で囲みます。
 
@@ -66,10 +68,10 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [イミディエイト ウィンドウ](../../ide/reference/immediate-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

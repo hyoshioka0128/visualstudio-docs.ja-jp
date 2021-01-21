@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426903"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583958"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
@@ -62,7 +62,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
    |**.NET Core アプリケーション**|         |**.NET Core** プラットフォームを選択します。|         |
    |**ASP.NET Core Web アプリケーション**|         |**.NET Core** プラットフォームを選択します。|         |
    |**Azure Functions**|         |**.NET Core** プラットフォームを選択します。|         |
-   |**クロスプラットフォーム Unity ゲームの開発**|         |Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。| Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](/visualstudio/mac/setup-vsmac-tools-unity)に関するページをご覧ください。|
+   |**クロスプラットフォーム Unity ゲームの開発**|         |Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。| Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](./setup-vsmac-tools-unity.md)に関するページをご覧ください。|
 
 7. 選択を行ったら、 **[インストール]** ボタンを押します。
 8. インストーラーではダウンロードの進行状況が表示され、Visual Studio for Mac と選択したワークロードがインストールされます。 インストールに必要な権限を付与するため、パスワードの入力が求められます。
@@ -75,7 +75,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
     [![使用するキーボード ショートカットを選択する](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-企業環境でのインストール中にネットワークに問題が発生した場合は、[ファイアウォールまたはプロキシの背後へのインストール](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)の指示を確認してください。
+企業環境でのインストール中にネットワークに問題が発生した場合は、[ファイアウォールまたはプロキシの背後へのインストール](#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server)の指示を確認してください。
 
 [リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes)における変更点について学習します。
 
@@ -88,7 +88,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
 以下の場所にアクセスできるようにネットワークを構成します。
 
-- [Visual Studio エンドポイント](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+- [Visual Studio エンドポイント](./install-behind-a-firewall-or-proxy-server.md)
 
 ## <a name="next-steps"></a>次の手順
 

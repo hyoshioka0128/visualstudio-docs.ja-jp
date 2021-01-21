@@ -3,7 +3,7 @@ title: テーマ、フォント、テキスト、およびアクセシビリテ�
 description: Visual Studio の配色テーマ、フォントの色、テキストのサイズ、および使いやすさとアクセシビリティ配慮のためにエクストラコントラストの色を変更する方法について説明します。
 ms.date: 08/20/2020
 ms.topic: how-to
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2410974ed95b1aa8dca3dc3e31a39c39df2d4a0
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 7c52be25c007a16d7e6221663c434767c02d8d50
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801439"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97683899"
 ---
 # <a name="how-to-change-fonts-colors-and-themes-in-visual-studio"></a>方法: Visual Studio のフォント、色、テーマを変更する
 
@@ -116,7 +116,7 @@ Visual Studio のエクスロラ コントラスト オプションを切り替�
 使用できるその他の Visual Studio アクセシビリティ オプションの詳細については、「[Visual Studio のユーザー補助機能](../ide/reference/accessibility-features-of-visual-studio.md)」ページを参照してください。
 
 > [!TIP]
-> 役に立つと思われるものの、Visual Studio では現在使用できない色やフォントのアクセシビリティ オプションがある場合は、[Visual Studio Developer Community](https://developercommunity.visualstudio.com/) で **[機能を提案する]** を選択してお知らせください。 このフォーラムとそのしくみの詳細については、[機能の提案](../ide/suggest-a-feature.md)に関するページを参照してください。
+> 役に立つと思われるものの、Visual Studio では現在使用できない色やフォントのアクセシビリティ オプションがある場合は、[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) で **[機能を提案する]** を選択してお知らせください。 このフォーラムとそのしくみの詳細については、[機能の提案](../ide/suggest-a-feature.md)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

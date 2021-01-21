@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの共同開発
+description: 複数の開発者が、他の Visual Studio プロジェクトで共同作業するのと同じ方法で Office プロジェクトを操作できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76c26a110d88d3dee8bf7540647ea0bfde4e7c4f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62949488"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845805"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office ソリューションの共同開発
   複数の開発者は、他の Visual Studio プロジェクトで共同作業するのと同じ方法で Office プロジェクトを操作できます。 Office が異なる場所にインストールされている場合でも、Visual Studio は各コンピューターに Microsoft Office のインストールを正しく検索します。 ただし、注意すべき重要な考慮事項がいくつかあります。
@@ -38,11 +40,11 @@ ms.locfileid: "62949488"
  変更が完了したら、すべてのファイルを再度確認します。 プロジェクト内の非表示コードファイルの詳細については、「 [Visual Studio 環境の Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。
 
 ## <a name="security-for-informal-collaboration-on-a-network"></a>ネットワークで非公式に共同作業を行うためのセキュリティ
- ネットワークの場所にあるすべてのドキュメントレベルのソリューション (Servername Sharename など) については、使用している \\ \\ *Servername* \\ *Sharename*Microsoft Office アプリケーションの信頼されたフォルダーの一覧に、完全修飾された場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、またはデバッグフォルダーとビルドフォルダーを信頼されたフォルダーの一覧に追加するオプションを選択します。 これを行う方法の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
+ ネットワークの場所にあるすべてのドキュメントレベルのソリューション (Servername Sharename など) については、使用している \\ \\ *Servername* \\ *Sharename* Microsoft Office アプリケーションの信頼されたフォルダーの一覧に、完全修飾された場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、またはデバッグフォルダーとビルドフォルダーを信頼されたフォルダーの一覧に追加するオプションを選択します。 これを行う方法の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
  ビルド時に自動的に生成される一時的な証明書は、パスワードによって保護されません。 証明書には、開発者のログイン名とその他の個人情報が含まれています。 一時的な証明書によって署名されたカスタマイズを展開する場合、他のユーザーがこの情報にアクセスできる可能性があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
 - [Office ソリューションのビルド](../vsto/building-office-solutions.md)

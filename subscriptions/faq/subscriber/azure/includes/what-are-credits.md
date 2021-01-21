@@ -5,15 +5,23 @@ ms.topic: include
 ms.assetid: 5de7f746-1856-457a-8241-8ac3a4540490
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 4/3/2020
+ms.date: 10/07/2020
 ms.faqid: q5_1
-ms.openlocfilehash: de7b21e66dcc3328398c91184bfbcbec84448f50
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3c08eb06541484342410c1c8830bbebaee978bb1
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386181"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91829011"
 ---
 ## <a name="what-are-the-monthly-azure-credits"></a>月単位の Azure クレジットとは何ですか?
 
-月間および年間の両方のクラウド サブスクリプションは、お客様がキャンセルするまで自動的に更新されるため、それらを更新するためのアクションを行う必要はありません。
+月単位の Azure クレジットでは、さまざまな Azure サービスを無料で使ってみることができます。  たとえば、次のようになります。 
+- 静的 Web サイトのホスト
+- Azure に ASP.NET サイトを発行する
+- コンテナー化された Web サイトをデプロイする
+- 仮想マシンに Web サイトをデプロイする
+- サーバーレス バックエンドを使用してデータとサービスを統合する
+- Python Web アプリをデプロイする
+
+Azure クレジットの詳しい使用方法については、「[Visual Studio サブスクライバー向けの月単位の Azure クレジット](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)」を参照してください

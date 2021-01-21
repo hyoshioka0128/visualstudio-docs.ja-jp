@@ -1,5 +1,5 @@
 ---
-title: エラー - Windows 統合認証が無効になっているため、デバッグに失敗しました | Microsoft Docs
+title: Windows 統合認証が無効になっているため、デバッグに失敗しました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "85460839"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852785"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー :Windows 統合認証が無効になっているため、デバッグに失敗しました
 デバッグを要求したユーザーの認証が認証エラーで失敗しました。 このエラーは、Web アプリケーションまたは XML Web サービスにステップ インしようとするときに発生することがあります。 このエラーの原因の 1 つとして、統合 Windows 認証が有効ではないことが挙げられます。 その機能を有効にする場合は、「統合 Windows 認証を有効にするには」の手順を実行します。
@@ -116,4 +116,4 @@ ms.locfileid: "85460839"
 ## <a name="see-also"></a>関連項目
 - [Web アプリケーションのデバッグ: エラーとトラブルシューティング](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft ダイジェスト認証](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Windows Vista 上での IIS 7.0 および Visual Studio を使用した Web アプリケーションの実行](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Windows Vista 上での IIS 7.0 および Visual Studio を使用した Web アプリケーションの実行](/previous-versions/aa964620(v=vs.140))

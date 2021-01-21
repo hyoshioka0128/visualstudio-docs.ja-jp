@@ -1,5 +1,7 @@
 ---
-title: 方法 - レジスタ グループの表示と非表示を切り替える | Microsoft Docs
+title: レジスタ グループの表示と非表示を切り替える | Microsoft Docs
+description: '[レジスタ] ウィンドウ (アドレス レベルのデバッグが有効になっている場合に使用できる) では、レジスタがグループ別に表示されます。 表示されるグループを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f08e31f67f9626c15dee0b6b4b8202a0370c976b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c14d325d417606c6945d51d99461d34ccd9a4bc8
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349901"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903039"
 ---
 # <a name="how-to-display-and-hide-register-groups-c-c-visual-basic-f"></a>方法: レジスタ グループの表示と非表示を切り替える (C#、C++、Visual Basic、F#)
 

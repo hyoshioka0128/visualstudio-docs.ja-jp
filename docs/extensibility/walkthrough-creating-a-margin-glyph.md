@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: Margin グリフの作成 |Microsoft Docs'
+description: このチュートリアルを使用して、カスタムエディター拡張機能を使用してエディターの余白の外観をカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905047"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863080"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>チュートリアル: 余白のグリフの作成
 エディターの余白の外観をカスタマイズするには、カスタムエディター拡張機能を使用します。 このチュートリアルでは、コードコメントに "todo" という語が表示されるたびに、カスタムグリフをインジケーターの余白に配置します。
@@ -132,7 +134,7 @@ ms.locfileid: "85905047"
 
 1. ソリューションをビルドします。
 
-2. **F5**キーを押してプロジェクトを実行します。 Visual Studio の2番目のインスタンスが起動します。
+2. **F5** キーを押してプロジェクトを実行します。 Visual Studio の2番目のインスタンスが起動します。
 
 3. インジケーターマージンが表示されていることを確認します。 ([ **ツール** ] メニューの [ **オプション**] をクリックします。 [ **テキストエディター** ] ページで、[ **インジケーターマージン** ] が選択されていることを確認します。)
 

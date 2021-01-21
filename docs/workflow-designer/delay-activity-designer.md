@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー遅延アクティビティデザイナー
+description: 遅延アクティビティと、delay アクティビティデザイナーを使用して Delay アクティビティを作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abfd625a248c14f646683c7b035065e6ca096f68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876113"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438088"
 ---
 # <a name="delay-activity-designer"></a>Delay アクティビティ デザイナー
 
-**Delay**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Delay> ます。
+**Delay** アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Delay> ます。
 
 ## <a name="the-delay-activity"></a>Delay アクティビティ
 
@@ -27,9 +29,9 @@ ms.locfileid: "86876113"
 
 ### <a name="use-the-delay-activity-designer"></a>Delay アクティビティデザイナーの使用
 
-**Delay**アクティビティデザイナーは、[**ツールボックス**] の [**プリミティブ**] カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの [**ツールボックス**] タブをクリックします。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X**キーを押します。
+**Delay** アクティビティデザイナーは、[ **ツールボックス** ] の [ **プリミティブ** ] カテゴリにあります。このカテゴリにアクセスするには、ワークフローデザイナーの [ **ツールボックス** ] タブをクリックします。 または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
 
-**Delay**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Delay> と、既定値の Delay を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Delay** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**Delay** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Delay> と、既定値の Delay を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Delay** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-delay-properties"></a>Delay プロパティ
 

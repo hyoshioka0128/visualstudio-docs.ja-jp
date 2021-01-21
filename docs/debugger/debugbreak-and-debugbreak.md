@@ -1,5 +1,7 @@
 ---
 title: DebugBreak と __debugbreak | Microsoft Docs
+description: ブレークポイントが設定されている場合と同様に、DebugBreak 関数と __debugbreak の組み込みを使用して、プログラムを中断させる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 376dd75062dc5a78582a23a12e9e025db60b9f3a
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75404655"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559772"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak と __debugbreak
 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) Win32 関数または [__debugbreak](/cpp/intrinsics/debugbreak) 組み込み関数は、コード内のどこからでも呼び出すことができます。 `DebugBreak` および `__debugbreak` を呼び出した場合の動作は、その位置にブレークポイントを設定した場合と同様です。

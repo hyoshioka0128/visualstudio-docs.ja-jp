@@ -1,5 +1,7 @@
 ---
 title: 警告とエラー | Microsoft IntelliTest 開発者テスト ツール
+description: この記事には、IntelliTest の警告とエラーがカテゴリ別に分類されており、各警告とエラーの説明が記載されています。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c3f5fe55a4e1afb1a9551d43d0d61ae9f76b81e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d72ee803389c692233478d742dadbcf514a3a036
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77275443"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668067"
 ---
 # <a name="warnings-and-errors"></a>警告とエラー
 
@@ -46,7 +48,7 @@ ms.locfileid: "77275443"
   * [外部メソッドが呼び出されました](#external-method-called)
   * [インストルメント不能なメソッドが呼び出されました](#uninstrumentable-method-called)
   * [テストの容易性の問題](#testability-issue)
-  * [制限](#limitation)
+  * [制限事項](#limitation)
 
 * **インタープリター**
   * [観察された呼び出しが一致しません](#observed-call-mismatch)
@@ -209,7 +211,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>ソリューションを具体化できません
 
-多くの場合、このエラーは前のエラーの結果です。 IntelliTest は、[制約ソルバー](input-generation.md#constraint-solver)を使用して、新しいテスト入力を判断します。 場合によっては、[制約ソルバー](input-generation.md#constraint-solver)によって提案されたテスト入力が無効なことがあります。 これは次の場合に発生します。
+多くの場合、このエラーは前のエラーの結果です。 IntelliTest は、[制約ソルバー](input-generation.md#constraint-solver)を使用して、新しいテスト入力を判断します。 場合によっては、[制約ソルバー](input-generation.md#constraint-solver)によって提案されたテスト入力が無効なことがあります。 これは、次の場合に発生することがあります。
 
 * 特定の制約が認識されていない。
 * 値がユーザー定義の方法で作成され、そのためにユーザーコードでエラーが発生する。
@@ -344,4 +346,4 @@ IntelliTest は、単体テストが確定的である場合のみ (言い換え
 
 ## <a name="got-feedback"></a>フィードバックが欲しい場合
 
-ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。
+ご意見や機能に関するご要望を[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で投稿してください。

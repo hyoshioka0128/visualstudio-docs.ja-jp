@@ -1,5 +1,7 @@
 ---
 title: Microsoft ヘルプビューアー SDK |Microsoft Docs
+description: 記事の作成、ヘルプビューアーのコンテンツブランド化パッケージの作成、一連の記事のデプロイなど、Visual Studio ヘルプビューアーのタスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168737"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877846"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 
@@ -302,7 +304,7 @@ F1 フローダイアグラム:
 
    - 64ビットオペレーティングシステムの場合:
 
-        HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent" = dword: 00000001
 
@@ -310,13 +312,13 @@ F1 フローダイアグラム:
 
    - 32ビットオペレーティングシステムの場合:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Help\v2.3\Partner<em> \\<名前 \> 空間</em>
+      <em> \\<名前空間 \> </em>の HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Partner
 
       "場所" = "オフライン"
 
    - 64ビットオペレーティングシステムの場合:
 
-      HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner<em> \\<名前 \> 空間</em>
+      <em> \\<名前空間 \> </em>の HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Partner
 
       "場所" = "オフライン"
 
@@ -324,7 +326,7 @@ F1 フローダイアグラム:
 
 基本のネイティブ名前空間の解析を有効にするには、レジストリで、BaseNativeNamespaces の名前を指定して新しい DWORD を追加し、その値を 1 (サポートするカタログキーの下) に設定します。  たとえば、Visual Studio カタログを使用する場合は、次のようにキーをパスに追加します。
 
-HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
 形式ヘッダー/メソッドで F1 キーワードが検出されると、'/' 文字が解析され、次のような構造になります。
 
@@ -342,13 +344,13 @@ HKEY_LOCAL_MACHINE \SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStud
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\15.0\Dynamic のヘルプ**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic Help**
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\16.0\Dynamic のヘルプ**
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Dynamic Help**
 
 ::: moniker-end
 
@@ -449,12 +451,12 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | - | - |
 | 機能: | **CollapsibleArea** |
 | 次のコマンドを使用します。 | 折りたたみコンテンツコントロールのテキストを展開します |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | ExpandText | expand |
 | CollapseText | [折りたたみ] |
 | 機能: | **CodeSnippet** |
 | 次のコマンドを使用します。 | コードスニペットコントロールテキスト。  注: "非互換性" 領域があるコードスニペットコンテンツは、スペースに変更されます。 |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | CopyToClipboard | [クリップボードにコピー] |
 | ViewColorizedText | 色分け表示 |
 | 連結 Edvbtabdisplaylanguage | Visual Basic (サンプル) |
@@ -462,7 +464,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | VBUsage | 使用法 |
 | 機能: | **フィードバック、フッター、ロゴ** |
 | 次のコマンドを使用します。 | 顧客が電子メールで現在のトピックに関するフィードバックを提供するフィードバックコントロールを提供します。  コンテンツの著作権テキスト。  ロゴの定義。 |
-| **Element** | **値 (これらの文字列は、コンテンツの導入者のニーズに合わせて変更できます。)** |
+| **要素** | **値 (これらの文字列は、コンテンツの導入者のニーズに合わせて変更できます。)** |
 | 侵害 | © 2013 Microsoft Corporation. All rights reserved. |
 | SendFeedback | \<a href="{0}" {1}>\</a>このトピックに関するフィードバックを Microsoft に送信してください。 |
 | No-results-found-feedbacklink | |
@@ -471,7 +473,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | LogoFileNameHC | vs_logo_wh.gif |
 | 機能: | **免責事項** |
 | 次のコマンドを使用します。 | 機械翻訳されたコンテンツのケース固有の免責事項のセット。 |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | MT_Editable | この記事は機械翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。 |
 | MT_NonEditable | この記事は機械翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。 |
 | MT_QualityEditable | この記事は手動で翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。 |
@@ -480,14 +482,14 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | MT_BetaRecycledContents | この記事は、暫定版用に手動で翻訳されました。 インターネットに接続している場合は、[このトピックをオンラインで表示する] を選択して、このページを編集可能モードで表示し、元の英語コンテンツを同時に表示します。 |
 | 機能: | **実行** |
 | 次のコマンドを使用します。 | オンライントピックリンクのサポート |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | LinkTableTitle | リンクテーブル |
 | トピック Enulinktext | \</a>お使いのコンピューターで利用可能な英語版のトピックを表示します。 |
 | TopicOnlineLinkText | このトピックをオンラインで表示する \<a href="{0}" {1}>\</a> |
 | オンラインテキスト | オンライン |
 | 機能: | **ビデオオーディオコントロール** |
 | 次のコマンドを使用します。 | ビデオコンテンツの要素とテキストを表示する |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | MultiMediaNotSupported | コンテンツをサポートするには、Internet Explorer 9 以降がインストールされている必要があり {0} ます。 |
 | VideoText | ビデオの表示 |
 | AudioText | オーディオのストリーミング |
@@ -495,25 +497,25 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | オンラインの Audiolinktext | \<p>このトピックに関連付けられているオーディオをリッスンするには、ここをクリックして {0} \<a href="{1}"> {2} \</a> ください。\</p> |
 | 機能: | **コンテンツがインストールされていないコントロール** |
 | 次のコマンドを使用します。 | contentnotinstalled.htm の表示に使用されるテキスト要素 (文字列) |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | Contentnotのタイトル | コンピューターにコンテンツが見つかりませんでした。 |
 | Contentnotの Downloadcontenttext | \<p>コンテンツをコンピューターにダウンロードするに \<a href="{0}" {1}> は、[管理] タブをクリックし \</a> ます。\</p> |
 | Contentnotのテキスト | \<p>コンピューターにコンテンツがインストールされていません。 ローカルのヘルプコンテンツのインストールについては、管理者にお問い合わせください。\</p> |
 | 機能: | **トピックが見つかりませんコントロール** |
 | 次のコマンドを使用します。 | topicnotfound.htm の表示に使用されるテキスト要素 (文字列) |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | トピック Notfound タイトル | コンピューターに要求されたトピックが見つかりません。 |
 | トピック Notfound Viewオンラインテキスト | \<p>要求されたトピックはコンピューターに見つかりませんでしたが、 \<a href="{0}" {1}> トピックはオンラインで表示でき \</a> ます。\</p> |
 | トピック Notfound Downloadcontenttext | \<p>同様のトピックへのリンクについては、ナビゲーションウィンドウを参照してください。または \<a href="{0}" {1}> 、[管理] タブをクリックして、 \</a> コンテンツをコンピューターにダウンロードしてください。\</p> |
 | トピック Notfound Text | \<p>お客様のコンピューターに要求されたトピックが見つかりませんでした。\</p> |
 | 機能: | **トピックの破損コントロール** |
 | 次のコマンドを使用します。 | topiccorrupted.htm の表示に使用されるテキスト要素 (文字列) |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | TopicCorruptedTitle | 要求されたトピックを表示できません。 |
 | TopicCorruptedViewOnlineText | \<p>ヘルプビューアーで、要求されたトピックを表示できません。 トピックの内容または基になるシステムの依存関係にエラーがある可能性があります。\</p> |
 | 機能: | **ホームページコントロール** |
 | 次のコマンドを使用します。 | ヘルプビューアーの最上位レベルのノードコンテンツの表示をサポートするテキストです。 |
-| **Element** | **Value** |
+| **要素** | **Value** |
 | HomePageTitle | ヘルプビューアーホーム |
 | ホームページの概要 | \<p>Microsoft のツール、製品、テクノロジ、サービスを使用するすべてのユーザーにとって重要な情報源である Microsoft ヘルプビューアーへようこそ。 ヘルプビューアーを使用すると、操作方法と参照情報、サンプルコード、技術記事などにアクセスできます。 必要なコンテンツを探すには、目次を参照するか、フルテキスト検索を使用するか、キーワード index を使用してコンテンツ間を移動します。\</p> |
 | HomePageContentInstallText | \<p>\<br />[ \<a href="{0}" {1}> コンテンツの管理 \</a> ] タブを使用して、 \<ul> \<li> コンピューターにコンテンツを追加 \</li> \<li> します。ローカルコンテンツの更新プログラムを確認します。 \</li> \<li>コンピューターからコンテンツを削除します。\</li>\</ul>\</p> |
@@ -563,7 +565,7 @@ branding.js ファイルには、Visual Studio ヘルプビューアーのブラ
 
 ブランド化パッケージには、ユーザーのために重要な情報を提供するための一連の HTM ファイルが含まれています。たとえば、インストールされているコンテンツセットを示すセクションを含むホームページや、トピックのローカルセットにトピックが見つからない場合にユーザーに通知するページなどがあります。 これらの HTM ファイルは製品ごとに変更できます。  ISO シェルベンダーは、既定のブランドパッケージを取得し、これらのページの動作とコンテンツを必要に応じて変更できます。  これらのファイルは、ブランド化タグが branding.xml ファイルから対応するコンテンツを取得するために、それぞれのブランドパッケージを参照します。
 
-|**ファイル**|**用途**|**表示されるコンテンツソース**|
+|**[最近使ったファイル]**|**用途**|**表示されるコンテンツソース**|
 |-|-|-|
 |homepage.htm|これは、現在インストールされているコンテンツと、そのコンテンツについてユーザーに提示するのに適したその他のメッセージを表示するページです。  このファイルには、追加のメタデータ属性 "Microsoft.Help.Id" content = "-1" があります。これにより、このコンテンツはローカルコンテンツ TOC の先頭に配置されます。||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml、タグ \<HomePageTitle>|
@@ -597,11 +599,11 @@ Visual Studio ヘルプビューアーのブランド化パッケージには、
 
 Visual Studio のコンテンツには、Visual Studio のロゴとその他のグラフィックスが表示されます。  Visual Studio ヘルプビューアーのブランド化パッケージに含まれるグラフィックファイルの完全な一覧を次に示します。
 
-|**ファイル**|**用途**|**使用例**|
+|**[最近使ったファイル]**|**用途**|**使用例**|
 |-|-|-|
 |clear.gif|折りたたみ可能な領域を表示するために使用されます||
 |footer_slice.gif|フッタープレゼンテーション||
-|info_icon.gif|情報を表示するときに使用されます|免責事項|
+|info_icon.gif|情報を表示するときに使用されます|免責情報|
 |online_icon.gif|このアイコンはオンラインリンクに関連付けられています||
 |tabLeftBD.gif|コードスニペットコンテナーをレンダリングするために使用されます||
 |tabRightBD.gif|コードスニペットコンテナーをレンダリングするために使用されます||
@@ -688,7 +690,7 @@ Visual Studio ブランド化パッケージを入手するには、.mshc ファ
 </html>
 ```
 
-**まとめ**
+**要約**
 
 上記の手順を使用および拡張すると、Vsp は Visual Studio ヘルプビューアー用のコンテンツセットを配置できるようになります。
 
@@ -745,7 +747,7 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
 2. ソリューションエクスプローラーの ContosoHelpShellUI プロジェクトで、[リソースファイル] フォルダーの [ApplicationCommands] を開きます。 この行がコメントアウトされていることを確認します ("No_Help" を検索してください)。 `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3. F5 キーを押してコンパイルし、 **デバッグ**を実行します。 分離シェル IDE の実験用インスタンスで、[ **ヘルプ** ] メニューを選択します。 [ヘルプの **表示**]、[ヘルプ **コンテンツの追加と削除**]、および [ヘルプ設定の **設定** ] の各コマンドが表示されていることを確認します。
+3. F5 キーを押してコンパイルし、 **デバッグ** を実行します。 分離シェル IDE の実験用インスタンスで、[ **ヘルプ** ] メニューを選択します。 [ヘルプの **表示**]、[ヘルプ **コンテンツの追加と削除**]、および [ヘルプ設定の **設定** ] の各コマンドが表示されていることを確認します。
 
 4. ソリューションエクスプローラーの ContosHelpShell プロジェクトで、[シェルのカスタマイズ] フォルダーの ContosoHelpShell を開きます。 Contoso ヘルプカタログを定義するには、次の行を追加します。
 
@@ -820,7 +822,7 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
      "C:\Program Files (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe"/catalogName VisualStudio15/helpquery method = "page&id = ContosoTopic0"/launchingapp Microsoft, VisualStudio, 12.0
 
-10. (Contoso アプリのルートから) Contoso アプリケーションを起動します。 ISO シェル内で [ **ヘルプ** ] メニュー項目を選択し、[ **ヘルプ** 設定の設定] を [ **ローカルヘルプを使用**する] に変更します。
+10. (Contoso アプリのルートから) Contoso アプリケーションを起動します。 ISO シェル内で [ **ヘルプ** ] メニュー項目を選択し、[ **ヘルプ** 設定の設定] を [ **ローカルヘルプを使用** する] に変更します。
 
 11. シェル内で [ **ヘルプ** ] メニュー項目を選択し、[ **ヘルプの表示**] をクリックします。 ローカルヘルプビューアーが起動します。 [ **コンテンツの管理** ] タブを選択します。[ **インストールソース**] で、[ **ディスク** ] オプションボタンをクリックします。 [ **...** ] ボタンをクリックして、(前の手順でローカルフォルダーにコピーした) Contoso コンテンツを含むローカルフォルダーを参照します。 [HelpContentSetup. msha] を選択します。 Contoso は、選択した書籍に書籍として表示されます。 [ **追加**] を選択し、[ **更新** ] ボタン (右下隅) を選択します。
 
@@ -832,4 +834,4 @@ Visual Studio コンテンツストアを作成します。 統合シェルシ�
 
 ヘルプ API を活用する方法の詳細については、「 [ヘルプビューアーのコード例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)」を参照してください。
 
-[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で機能の提案を送信できます。
+[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で機能の提案を送信できます。

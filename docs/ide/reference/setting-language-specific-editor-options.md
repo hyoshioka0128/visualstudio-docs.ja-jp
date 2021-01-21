@@ -1,5 +1,7 @@
 ---
 title: 言語固有のフォルダー オプションの設定
+description: 特定のプログラミング言語に適用されるさまざまなテキスト エディター オプションを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1060abe1b16b9391eadb88be1499fa2231fb1859
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590840"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560747"
 ---
 # <a name="set-language-specific-editor-options"></a>言語固有のエディター オプションの設定
 
-Visual Studio には、特定のプログラミング言語に適用するためのテキスト エディター オプションが数多くあります。 オプションは、 **[オプション]** ダイアログ ボックスで構成できます。このダイアログ ボックスには **[ツール]** メニューからアクセスできます。 また、[EditorConfig ファイルを作成する](../../ide/create-portable-custom-editor-options.md)ことで、プロジェクト単位または codebase 単位でいくつかのエディター設定を構成することができます。
+Visual Studio には、特定のプログラミング言語に適用するためのテキスト エディター オプションが数多くあります。 オプションは、**[オプション]** ダイアログ ボックスで構成できます。このダイアログ ボックスには **[ツール]** メニューからアクセスできます。 また、[EditorConfig ファイルを作成する](../../ide/create-portable-custom-editor-options.md)ことで、プロジェクト単位または codebase 単位でいくつかのエディター設定を構成することができます。
 
 ## <a name="settings-available-in-the-options-dialog-box"></a>[オプション] ダイアログ ボックスで使用可能な設定
 
@@ -45,7 +47,7 @@ C# コードでの作業における IntelliSense 入力候補一覧の動作を
 [[オプション]、[テキスト エディター]、[XAML]、[書式設定]](../../ide/reference/options-text-editor-xaml-formatting.md)\
 XAML ドキュメントに含まれる要素および属性の配置設定について説明します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [エディターのカスタマイズ](../how-to-change-text-case-in-the-editor.md)
 - [EditorConfig で移植可能なカスタム エディター設定を作成する](../../ide/create-portable-custom-editor-options.md)

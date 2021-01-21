@@ -1,5 +1,7 @@
 ---
 title: Spy++ ヘルプの著作権表記 | Microsoft Docs
+description: Spy++ ヘルプの著作権に関する法的通知を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d16628dc634fe58843c71867b4795dae21a6341f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3968007be4ae4338828c5d351c08fc2307dbf186
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565499"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96559694"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ ヘルプの著作権表記
 このドキュメントの情報は予告なしに変更されることがあります。 この例で使用されている企業、名前、データは特に断りのない限り、架空のものです。 本書のいかなる部分も、書面による Microsoft Corporation の許可なしに、電子的、機械的、またはその他のいかなる形式または方法によっても、その目的を問わず、複製または伝送することを禁じます。

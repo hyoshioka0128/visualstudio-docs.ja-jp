@@ -1,5 +1,7 @@
 ---
 title: ソース管理の統合の概要 |Microsoft Docs
+description: ソース管理を Visual Studio に統合する2つの方法の違いについて説明します。ソース管理プラグインと VSPackage です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80363286f5f0cac9a5ceb2e8ac9d20345df9e6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6bbd385c7089504949d2437091b0a2ea002fafdd
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705121"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876013"
 ---
 # <a name="source-control-integration-overview"></a>ソース管理の統合の概要
 このセクションでは、Visual Studio ソース管理に統合する2つの方法を比較します。ソース管理のプラグインと、ソース管理ソリューションを提供し、新しいソース管理機能を強調する VSPackage。 Visual Studio では、ソース管理 Vspackage とソース管理プラグインを手動で切り替えることができ、ソリューションベースの自動切り替えも可能です。

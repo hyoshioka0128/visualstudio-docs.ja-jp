@@ -1,6 +1,7 @@
 ---
-title: 関数を複数回呼び出しているときにどの呼び出しが失敗したかを見つける |Microsoft Docs
-ms.custom: seodec18
+title: 関数が何回も呼び出されるとき、呼び出しエラーを見つける
+description: 関数が失敗する呼び出しでのみ中断するよう、関数にブレークポイントを設定する手法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 567450f11572cc998f952117c33992cdba33570d
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728049"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149301"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>ある関数が何回も呼び出される場合、どの呼び出しでエラーが発生するのかを調べるには
 ## <a name="problem-description"></a>問題の説明
@@ -50,5 +51,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
-- [ブレークポイントの設定](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [ブレークポイントの設定](/previous-versions/ktf38f66(v=vs.100))
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

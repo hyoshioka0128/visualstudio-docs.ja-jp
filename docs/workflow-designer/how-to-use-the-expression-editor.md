@@ -1,5 +1,7 @@
 ---
 title: 'ワークフローデザイナー-方法: 式エディターを使用する'
+description: 式エディターが、式を入力および評価するために多くのワークフローアクティビティで使用できるワークフローデザイナーコントロールであることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -10,20 +12,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04c0fdaab87c88028b8c14ca59e93fa93e74be74
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817438"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437854"
 ---
 # <a name="how-to-use-the-expression-editor"></a>式エディターを使用する方法
 
 式エディターは、式を入力および評価するために多くのワークフローアクティビティで使用されるワークフローデザイナーコントロールです。 式エディターでは、IntelliSense、色付け、ParamInfo、エラーの波線など、豊富な機能を備えた IDE 編集エクスペリエンスが提供されます。 入力した式は、コンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 エディターは、[ **式エディター** ] ダイアログボックスとして開くこともできます。
 
-式は、引数またはプロパティにバインドされたリテラル値または Visual Basic コードです。 これらには、新しい値を生成するために操作と結合される値要素 (変数、定数、リテラル、プロパティなど) が含まれています。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、1つの等号 ("= =" ではなく "=") を使用して実行されます。ブール演算子は、記号 "&&" および "| |" ではなく "and" と "or" で、 **null**ではなく、**何も**使用されません。 Visual Basic の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))」を参照してください。
+式は、引数またはプロパティにバインドされたリテラル値または Visual Basic コードです。 これらには、新しい値を生成するために操作と結合される値要素 (変数、定数、リテラル、プロパティなど) が含まれています。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、1つの等号 ("= =" ではなく "=") を使用して実行されます。ブール演算子は、記号 "&&" および "| |" ではなく "and" と "or" で、 **null** ではなく、 **何も** 使用されません。 Visual Basic の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))」を参照してください。
 
-**式エディター**は次のように動作します。
+**式エディター** は次のように動作します。
 
 - フォーカスがない場合、式エディターは通常の TextBlock コントロールと同様の外観になります。
 

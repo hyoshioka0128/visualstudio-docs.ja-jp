@@ -1,5 +1,7 @@
 ---
-title: '方法: グラフィックス診断再生マシンを変更する | Microsoft Docs'
+title: グラフィックス診断再生マシンを変更する
+description: ローカル コンピューターを使用するか、問題をより再現しやすいリモート コンピューターまたはリモート デバイスを使用して、グラフィックス ログからグラフィックス情報を再生します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b6ae19fde7397b97ebe087557d71a52303605ec
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769385"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995071"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>方法: グラフィックス診断再生マシンを変更する
 ローカル コンピューターを使用するか、リモート コンピューターまたはリモート デバイスを使用して、グラフィックス情報を再生できます。

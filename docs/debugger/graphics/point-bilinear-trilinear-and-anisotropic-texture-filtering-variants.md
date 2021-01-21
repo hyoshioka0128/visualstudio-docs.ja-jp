@@ -1,5 +1,7 @@
 ---
 title: ポイント、バイリニア、トリリニア、およびアニソトロピック テクスチャ フィルタリング バリアント
+description: ポイント、バイリニア、トリリニア、またはアニソトロピック テクスチャ フィルタリング バリアントのパフォーマンス コストが大きい場合は、その使用がコストに見合うかどうかを検討できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: c38869b4c8daa4cb4433f9f6a64afcc7398c9a9c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262930"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996085"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>ポイント、バイリニア、トリリニア、およびアニソトロピック テクスチャ フィルタリング バリアント
 適切なテクスチャのサンプラーでフィルタリング モードをオーバーライドします。
@@ -61,7 +63,7 @@ ms.locfileid: "66262930"
 ## <a name="restrictions-and-limitations"></a>制約と制限
  Direct3D では機能レベル 9.1 は、最大異方性が 2x であることを表します。 **Anisotropic Texture Filtering** バリアントは 16x の異方性のみを使おうとするため、機能レベル 9.1 のデバイス上でフレーム分析を実行すると再生は失敗します。 この制約の影響を受ける現在のデバイスには、ARM ベースの Surface RT、および Surface 2 Windows タブレットが含まれています。 コンピューターの中には古い GPU が存在している可能性があり、これらの GPU も影響を受けます。ただし、これらは一般的には使われておらず、問題にならなくなっています。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
  **ポイント テクスチャ フィルタリング** バリアントは、次のようなコードを使用して再現することができます。
 
 ```cpp
@@ -75,7 +77,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
  **バイリニア テクスチャ フィルタリング** バリアントは、次のようなコードを使用して再現することができます。
 
 ```cpp
@@ -89,7 +91,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>例
+## <a name="example-3"></a>例 3
  **トリリニア テクスチャ フィルタリング** バリアントは次のようなコードを使用して再現することができます。
 
 ```cpp
@@ -103,7 +105,7 @@ d3d_device->CreateSamplerState(&sampler_desc, &sampler);
 d3d_context->PSSetSamplers(0, 1, &sampler
 ```
 
-## <a name="example"></a>例
+## <a name="example-4"></a>例 4
  **アニソトロピック テクスチャ フィルタリング** バリアントは、次のようなコードを使用して再現することができます。
 
 ```cpp

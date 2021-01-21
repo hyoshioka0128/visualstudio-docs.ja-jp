@@ -1,5 +1,7 @@
 ---
 title: -? (devenv.exe)
+description: /? devenv コマンドライン スイッチを使用して、すべての devenv スイッチを各スイッチの簡単な説明と共に一覧表示するメッセージ ボックスを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f23765ac4ee58b20af26bd100a0d167b2873582
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5b0b3784b832c56aba97f68e57be872820991c74
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565735"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040018"
 ---
 # <a name="-devenvexe"></a>/? (devenv.exe)
 
@@ -29,6 +31,6 @@ ms.locfileid: "75565735"
 devenv /?
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Devenv コマンドライン スイッチ](../../ide/reference/devenv-command-line-switches.md)

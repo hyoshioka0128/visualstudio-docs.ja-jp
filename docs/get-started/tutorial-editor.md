@@ -1,8 +1,11 @@
 ---
 title: コード エディターでの編集の概要
+description: Visual Studio のコード エディターを使用してファイルにコードを追加する方法と、コードを記述し、コードに移動し、リファクタリングを行う方法について説明します。
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39c5fd62b67c8153da0a64dcd92142300912c25f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595268"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901779"
 ---
 # <a name="learn-to-use-the-code-editor"></a>コード エディターを使用方法について学習する
 
@@ -64,7 +67,7 @@ ms.locfileid: "75595268"
 
 ## <a name="use-code-snippets"></a>コード スニペットを使用する
 
-Visual Studio で提供されている便利な*コード スニペット*を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../ide/code-snippets.md)は、C#、Visual Basic、C++ など、さまざまなプログラミング言語で使用することができます。 C# `void Main` スニペットをファイルに追加してみましょう。
+Visual Studio で提供されている便利な *コード スニペット* を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../ide/code-snippets.md)は、C#、Visual Basic、C++ など、さまざまなプログラミング言語で使用することができます。 C# `void Main` スニペットをファイルに追加してみましょう。
 
 1. ファイル内の最後の閉じかっこ **}** のすぐ上にカーソルを置き、`svm` という文字を入力します  (`svm` は `static void Main` の略です。[Main()](/dotnet/csharp/programming-guide/main-and-command-args/) メソッドは、C# アプリケーションのエントリ ポイントです)。
 
@@ -148,7 +151,7 @@ Visual Studio エディターでは、型やメソッドなどの定義の検査
    foreach (string str in qu
    ```
 
-   IntelliSense が `query` シンボルに関する**クイック ヒント**を表示しているのがわかります。
+   IntelliSense が `query` シンボルに関する **クイック ヒント** を表示しているのがわかります。
 
    ![Visual Studio での IntelliSense の入力候補](media/tutorial-intellisense-completion-list.png)
 

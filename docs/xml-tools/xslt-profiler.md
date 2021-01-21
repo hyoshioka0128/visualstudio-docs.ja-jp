@@ -1,6 +1,8 @@
 ---
 title: XSLT のパフォーマンス
-ms.date: 03/05/2019
+description: XSLT コードのパフォーマンスの最適化に役立つ詳細な XSLT パフォーマンス レポートを作成する、Visual Studio の XSLT プロファイラーについて学習します。
+ms.custom: SEO-VS-2020
+ms.date: 11/11/2020
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
@@ -8,12 +10,13 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+monikerRange: vs-2017
+ms.openlocfilehash: f2214ab4d66dcad1ee92eda7d7acbb94b89e8eb6
+ms.sourcegitcommit: 83a39d48b00c6c351e5c1707942633b7f73aaad6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592283"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94531889"
 ---
 # <a name="the-xslt-profiler"></a>XSLT プロファイラー
 
@@ -21,14 +24,14 @@ XSLT プロファイラーは、詳細な XSLT パフォーマンス レポー�
 
 XSLT プロファイラーは Visual Studio に含まれており、 **[XML]** メニューから入手できます。
 
-![XSLT プロファイラー](../xml-tools/media/profile-xslt-menu.png)
+![XSLT プロファイラー](../xml-tools/media/profile-xslt-menu.png "Visual Studio 2017 の XML メニュー項目のスクリーンショット")
 
 > [!NOTE]
-> XSLT プロファイラーは、Visual Studio の Enterprise Edition でのみ使用できます。
+> XSLT プロファイラーは、Visual Studio 2017 の Enterprise Edition でのみ使用できます。
 
 ## <a name="create-a-performance-report"></a>パフォーマンス レポートの作成
 
-1. Visual Studio で XSLT ドキュメントを開きます。
+1. Visual Studio 2017 で XSLT ドキュメントを開きます。
 
 2. メニュー バーで、 **[XML]**  >  **[XSLT のプロファイル]** を選択します。
 

@@ -1,5 +1,7 @@
 ---
-title: 方法 - スレッドのプロパティを表示する | Microsoft Docs
+title: スレッドのプロパティを表示する | Microsoft Docs
+description: スレッド ビューには、お使いのシステム上でアクティブになっているすべてのスレッドのツリーが表示されます。 スレッド ビューに表示されるスレッドのプロパティを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab3f98b5a47c6d950f2d95e732e05e5734c783b5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 531b76511d4456f8491e1498c93a9d62ebf0b026
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349875"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903247"
 ---
 # <a name="how-to-display-thread-properties"></a>方法: スレッドのプロパティを表示する
 [スレッド ビュー](../debugger/threads-view.md)に一覧表示されるスレッドの詳細を確認するには、[[スレッド プロパティ] ダイアログ ボックス](../debugger/thread-properties-dialog-box.md)を使用します。

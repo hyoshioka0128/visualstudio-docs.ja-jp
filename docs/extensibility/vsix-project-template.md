@@ -1,5 +1,7 @@
 ---
 title: VSIX プロジェクトテンプレート |Microsoft Docs
+description: VSIX プロジェクトテンプレートを使用して VSIX プロジェクトに Visual Studio 拡張機能をラップし、Visual Studio Marketplace でパッケージを発行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74791a77ee1c720fb60876a1efa6bd58fa94f68b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76e4301843cc318b60940948fee4b618860e7bae
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697935"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863882"
 ---
 # <a name="vsix-project-template"></a>VSIX プロジェクトテンプレート
 
@@ -52,7 +54,7 @@ VSIX プロジェクトテンプレートには、主に次の2つの用途が�
 
 2. Vsix **プロジェクト** テンプレートを使用して vsix プロジェクトを作成します。
 
-    *Source.extension.vsixmanifest* が **マニフェストデザイナー**で開きます。
+    *Source.extension.vsixmanifest* が **マニフェストデザイナー** で開きます。
 
 3. [ **アセット** ] タブで、[ **新規** ] ボタンをクリックします。
 
@@ -62,7 +64,7 @@ VSIX プロジェクトテンプレートには、主に次の2つの用途が�
 
 5. 現在のソリューションに含まれる拡張機能またはコンテンツ要素 (項目テンプレートやコンパイル済みアセンブリなど) を追加するには、次の手順を実行します。
 
-   1. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
+   1. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト** を選択します。
 
    2. [ **プロジェクト** ] ボックスの一覧で、拡張機能の名前を選択します。
 
@@ -80,9 +82,9 @@ VSIX プロジェクトテンプレートには、主に次の2つの用途が�
 
 8. ソリューションをビルドします。
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX マニフェストファイル、[Content_Types]*.xml*ファイル、およびプロジェクトに追加したすべての拡張機能アセットを含む *.vsix*ファイルをビルドします。
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX マニフェストファイル、[Content_Types]*.xml* ファイル、およびプロジェクトに追加したすべての拡張機能アセットを含む *.vsix* ファイルをビルドします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [VSIX 拡張機能スキーマ2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)

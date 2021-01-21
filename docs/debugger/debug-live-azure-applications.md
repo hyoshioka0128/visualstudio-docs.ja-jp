@@ -1,6 +1,7 @@
 ---
 title: ライブ ASP.NET Azure アプリをデバッグする
-description: スナップショット デバッガーを使用してスナップポイントを設定し、スナップショットを表示する方法について説明します。
+titleSuffix: Visual Studio Enterprise
+description: ライブ ASP.NET Azure アプリケーションをデバッグするとき、Visual Studio のスナップショット デバッガーを使用し、スナップポイントを設定し、スナップショットを作成する方法について説明します。
 ms.custom: ''
 ms.date: 03/16/2018
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 07ebe8a583717689ca424bf969e7c19e87ebf08e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3393328999793a7e34fb3af9f7abea7430838f76
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350668"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846988"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure アプリをデバッグする
 
@@ -34,13 +35,13 @@ ms.locfileid: "85350668"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* スナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2017 Enterprise バージョン 15.5 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* スナップショット デバッガーは、**Azure 開発ワークロード** に対して Visual Studio 2017 Enterprise バージョン 15.5 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
    ::: moniker range=">=vs-2019"
-   まだインストールされていない場合、[Visual Studio 2019](https://visualstudio.microsoft.com/downloads) をインストールします。 以前の Visual Studio インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード**のスナップショット デバッガー コンポーネントを確認してください。
+   まだインストールされていない場合、[Visual Studio 2019](https://visualstudio.microsoft.com/downloads) をインストールします。 以前の Visual Studio インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード** のスナップショット デバッガー コンポーネントを確認してください。
    ::: moniker-end
    ::: moniker range="<=vs-2017"
-   まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード**のスナップショット デバッガー コンポーネントを確認してください。
+   まだ [Visual Studio 2017 Enterprise version 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 以降がインストールされていない場合はインストールしてください。 以前の Visual Studio 2017 インストールから更新する場合は、Visual Studio インストーラーを実行し、**ASP.NET および Web 開発ワークロード** のスナップショット デバッガー コンポーネントを確認してください。
    ::: moniker-end
 
 * Basic 以上の Azure App Service プラン。
@@ -54,7 +55,7 @@ ms.locfileid: "85350668"
 1. デバッグのスナップショットを取得するプロジェクトを開きます。
 
    > [!IMPORTANT]
-   > デバッグのスナップショットを取得するには、Azure App Service に公開されているものと*同じバージョンのソース コード*を開く必要があります。
+   > デバッグのスナップショットを取得するには、Azure App Service に公開されているものと *同じバージョンのソース コード* を開く必要があります。
 
 ::: moniker range="<=vs-2017"
 

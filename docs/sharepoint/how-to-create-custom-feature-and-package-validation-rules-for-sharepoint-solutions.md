@@ -1,5 +1,8 @@
 ---
-title: 'SharePoint ソリューション: カスタム機能の作成、パッケージの検証規則'
+title: SharePoint ソリューションの機能とパッケージの検証を作成する
+titleSuffix: ''
+description: カスタム検証規則を作成して、Visual Studio によって生成されたソリューションパッケージを検証したり、機能全体を検証したりします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,15 +16,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f76abeee6ace851025a29ce6d85b894bf479dfa
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016910"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903690"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>方法: SharePoint ソリューションの機能とパッケージのカスタム検証規則を作成する
-  カスタム検証規則を作成して、Visual Studio によって生成されたソリューションパッケージを確認できます。 機能またはパッケージ全体に対して完全な検証を実行するに**は、パッケージ**または機能のコンテキストメニューの [**検証**] を選択します。 部分検証は、新しい SharePoint プロジェクト項目またはフィーチャーをプロジェクトに追加して、パッケージまたは機能が有効な状態であるかどうかを判断するときに実行されます。
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>SharePoint ソリューションの機能とパッケージの検証を作成する
+
+  カスタム検証規則を作成して、Visual Studio によって生成されたソリューションパッケージを確認できます。 機能またはパッケージ全体に対して完全な検証を実行するに **は、パッケージ** または機能のコンテキストメニューの [**検証**] を選択します。 部分検証は、新しい SharePoint プロジェクト項目またはフィーチャーをプロジェクトに追加して、パッケージまたは機能が有効な状態であるかどうかを判断するときに実行されます。
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>カスタムパッケージ検証規則を作成するには
 

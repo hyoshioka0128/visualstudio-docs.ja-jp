@@ -1,5 +1,7 @@
 ---
 title: Threads |Microsoft Docs
+description: この記事では、Visual Studio のデバッガーアーキテクチャにおけるスレッドの定義とロールについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed5c06e0c42dac1f0539cc2c7c5886d95b23ae1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b259ffd7814b42145489ee5990cee6da891a9d10
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712479"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995955"
 ---
-# <a name="threads"></a>Threads
-デバッガーアーキテクチャでは、 *スレッド*は次のようになります。
+# <a name="threads"></a>スレッド
+デバッガーアーキテクチャでは、 *スレッド* は次のようになります。
 
 - は計算の基本単位です。 スレッドは、単一の呼び出し履歴のコンテキスト内で命令を順番に実行し、1つのコードコンテキストから次のコンテキストに移動します。
 
@@ -27,7 +29,7 @@ ms.locfileid: "80712479"
 
 - は [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) インターフェイスによって表されます。通常は、プログラムを実行した結果として、デバッグエンジン (DE) または仮想マシンによって作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Programs](../../extensibility/debugger/programs.md)
 - [スタックフレーム](../../extensibility/debugger/stack-frames.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)

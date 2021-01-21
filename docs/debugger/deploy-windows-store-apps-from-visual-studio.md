@@ -1,6 +1,7 @@
 ---
 title: UWP アプリを配置する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio からユニバーサル Windows プラットフォーム (UWP) アプリを展開します。 展開に対してローカルまたはリモートのターゲット デバイスを指定します。 展開オプションを理解します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4c58dbb32ef0a476ac7e22a840e27e389c710f97
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 70b4d862b69eeb34028fb0f782cc5c8d6acbdbce
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188282"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728201"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Visual Studio から UWP アプリを展開する
 

@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによって新しいワークシートをブックに追加する'
+description: プログラムを使用してワークシートを作成し、そのワークシートをブック内のワークシートのコレクションに追加する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fc6706879bf1d567f6a0ae7127d06a2442b98e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3397b2ad8f656a7ada82ce0be17dcf21064d0ee3
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538101"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96843985"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>方法: プログラムによって新しいワークシートをブックに追加する
   プログラムによってワークシートを作成し、そのワークシートをブック内のワークシートのコレクションに追加できます。

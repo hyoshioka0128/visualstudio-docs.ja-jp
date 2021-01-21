@@ -8,11 +8,11 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_5
 ms.openlocfilehash: 61bff492eb04a13565d6d6e136334cd397c9c659
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386311"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838286"
 ---
 ## <a name="can-i-use-my-work-account-to-sign-in"></a>職場アカウントを使用してサインインできますか?
 

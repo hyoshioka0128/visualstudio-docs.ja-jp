@@ -1,5 +1,7 @@
 ---
 title: ホストを生成されたディレクティブプロセッサに接続する
+description: ディレクティブプロセッサを呼び出すテキストテンプレートをサポートするようにカスタムホストを拡張する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 8dfca47159192c1f6fe25f703b54745b55d8e384
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88237998"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362497"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>チュートリアル: 生成済みディレクティブ プロセッサにホストを接続する
 
@@ -51,9 +53,9 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
 さらに、「 [チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md)」では、カスタムテキストテンプレート変換を作成する必要があります。
 
-## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>ドメイン固有言語ツールを使用してディレクティブプロセッサを生成する
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Domain-Specific 言語ツールを使用してディレクティブプロセッサを生成する
 
-このチュートリアルでは、ドメイン固有言語デザイナーウィザードを使用して、DSLMinimalTest ソリューション用のドメイン固有言語を作成します。
+このチュートリアルでは、Domain-Specific 言語デザイナーウィザードを使用して、DSLMinimalTest ソリューション用のドメイン固有言語を作成します。
 
 1. 次の特性を持つドメイン固有言語ソリューションを作成します。
 
@@ -65,7 +67,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
    - 会社名: Fabrikam
 
-   ドメイン固有言語ソリューションの作成の詳細については、「 [方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
+   ドメイン固有言語ソリューションの作成の詳細については、「 [方法: Domain-Specific 言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
 
 2. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
@@ -76,13 +78,13 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
     Visual Studio の2番目のインスタンスが開きます。
 
-4. 実験用ビルドで、[ **ソリューションエクスプローラー**で、ファイルのサンプル [ **最小**] をダブルクリックします。
+4. 実験用ビルドで、[ **ソリューションエクスプローラー** で、ファイルのサンプル [ **最小**] をダブルクリックします。
 
     デザイナーでファイルが開きます。 モデルには、ExampleElement1 と ExampleElement2 という2つの要素と、それらの間のリンクがあります。
 
 5. Visual Studio の2番目のインスタンスを閉じます。
 
-6. ソリューションを保存し、ドメイン固有言語デザイナーを閉じます。
+6. ソリューションを保存し、Domain-Specific 言語デザイナーを閉じます。
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>カスタムテキストテンプレートホストをディレクティブプロセッサに接続する
 
@@ -327,7 +329,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > アドレスを入力する代わりに、 **エクスプローラー**でファイル CustomHost.exe を参照し、そのファイルをコマンドプロンプトウィンドウにドラッグすることができます。
+    > アドレスを入力する代わりに、 **エクスプローラー** でファイル CustomHost.exe を参照し、そのファイルをコマンドプロンプトウィンドウにドラッグすることができます。
 
 3. 空白を入力します。
 
@@ -338,11 +340,11 @@ DSL を定義するには、以下のコンポーネントをインストール�
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    > アドレスを入力する代わりに、 **エクスプローラー**でファイル TestTemplateWithDP.txt を参照し、そのファイルをコマンドプロンプトウィンドウにドラッグすることができます。
+    > アドレスを入力する代わりに、 **エクスプローラー** でファイル TestTemplateWithDP.txt を参照し、そのファイルをコマンドプロンプトウィンドウにドラッグすることができます。
 
      カスタムホストアプリケーションが実行され、テキストテンプレート変換プロセスが開始されます。
 
-5. **Windows エクスプローラー**で、TestTemplateWithDP.txt ファイルが格納されているフォルダーに移動します。
+5. **Windows エクスプローラー** で、TestTemplateWithDP.txt ファイルが格納されているフォルダーに移動します。
 
      このフォルダーには、ファイル TestTemplateWithDP1.txt も含まれています。
 

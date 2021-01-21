@@ -1,5 +1,7 @@
 ---
 title: SharePoint オブジェクトモデルの呼び出し |Microsoft Docs
+description: SharePoint ツールの拡張機能で使用できる2つの異なるオブジェクトモデルを呼び出す方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62988406"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850053"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>SharePoint オブジェクトモデルの呼び出し
   Visual Studio で SharePoint ツールの拡張機能を作成するときに、特定のタスクを実行するために SharePoint Api を呼び出すことが必要になる場合があります。 たとえば、SharePoint プロジェクトのカスタム配置手順を作成する場合、ソリューションを配置するためのタスクの一部を実行するために、SharePoint Api を呼び出す必要がある場合があります。
@@ -52,9 +54,9 @@ ms.locfileid: "62988406"
  SharePoint コマンドを作成して使用する方法を示すチュートリアルについては、「 [チュートリアル: sharepoint プロジェクトのカスタム配置手順を作成](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md) する」および「 [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)」を参照してください。
 
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>SharePoint コマンドの実行方法について
- SharePoint コマンドを定義するアセンブリは、 *vssphost4.exe*という名前の64ビットホストプロセスに読み込まれます。 Sharepoint ツールの拡張機能で SharePoint コマンドを呼び出すと、32ビットの Visual Studio プロセス (*devenv.exe*) ではなく、 *vssphost4.exe*によってコマンドが実行されます。 レジストリで値を設定することにより、SharePoint コマンドの実行方法のいくつかの側面を制御できます。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
+ SharePoint コマンドを定義するアセンブリは、 *vssphost4.exe* という名前の64ビットホストプロセスに読み込まれます。 Sharepoint ツールの拡張機能で SharePoint コマンドを呼び出すと、32ビットの Visual Studio プロセス (*devenv.exe*) ではなく、 *vssphost4.exe* によってコマンドが実行されます。 レジストリで値を設定することにより、SharePoint コマンドの実行方法のいくつかの側面を制御できます。 詳細については、「 [Visual Studio での SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: SharePoint コマンドを作成する](../sharepoint/how-to-create-a-sharepoint-command.md)
 - [方法: SharePoint コマンドを実行する](../sharepoint/how-to-execute-a-sharepoint-command.md)
-- [SharePoint ツール拡張機能のプログラミングモデルの概要](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [SharePoint ツール拡張機能のプログラミング モデルの概要](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

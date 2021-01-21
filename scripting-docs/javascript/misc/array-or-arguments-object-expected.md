@@ -14,12 +14,12 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 266eed585f1d45e15c084e424d441220f6e671ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e4b3eaee0a244f9d14d88d1393742ab6d31a509
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815774"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862675"
 ---
 # <a name="array-or-arguments-object-expected"></a>配列または引数のオブジェクトが必要です。
 配列を引数として指定しませんでした。 このエラーは、 **関数 prototype. apply** メソッドにのみ適用されます。 指定した場合、この関数の2番目の引数は、 `Array` オブジェクトまたは **Arguments** オブジェクトである必要があります。  
@@ -29,6 +29,6 @@ ms.locfileid: "85815774"
 - `Array`2 番目の引数として、または**Arguments**オブジェクトを指定します。  
   
 ## <a name="see-also"></a>関連項目  
- [配列の使用](../../javascript/advanced/using-arrays-javascript.md)   
- [apply メソッド (Function)](../../javascript/reference/apply-method-function-javascript.md)   
- [関数](../../javascript/functions-javascript.md)
+ [配列の使用](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)   
+ [apply メソッド (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)   
+ [関数](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

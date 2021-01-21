@@ -1,5 +1,7 @@
 ---
 title: Visual Studio の [フォルダーを開く] 機能拡張の概要 | Microsoft Docs
+description: '[フォルダーを開く] 機能の拡張機能について学習します。これにより、ユーザーはプロジェクトやソリューション ファイルを使用しなくても、Visual Studio でコードベースを開くことができます。'
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: overview
 ms.assetid: 94c3f8bf-1de3-40ea-aded-7f40c4b314c7
@@ -8,12 +10,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: d213a7add358c46f7088f504d8c54352cda44a1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81ca62c834e09d542016ffce607abf3c32cf2a61
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905979"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863752"
 ---
 # <a name="open-folder-extensibility"></a>[フォルダーを開く] 機能拡張
 
@@ -51,7 +53,7 @@ ms.locfileid: "85905979"
 
 ## <a name="feedback-comments-issues"></a>フィードバック、コメント、イシュー
 
-[フォルダーを開く] と `Microsoft.VisualStudio.Workspace.*` API は、積極的に開発中です。 予期しない動作が発生した場合は、対象のリリースの既知の問題を確認してください。 [開発者コミュニティ](https://developercommunity.visualstudio.com)は、イシューに投票し、作成する場合にお勧めの場所です。 フィードバックごとに、イシューを詳しく説明することを強くお勧めします。 開発の対象とする Visual Studio バージョン、使用している API (実装したものと対話している相手の両方)、予想される結果、および実際の結果を含めます。 可能であれば、devenv.exe プロセスのダンプを含めます。 GitHub のイシュー追跡を使用して、このドキュメントおよび関連ドキュメントに関するフィードバックを提供してください。
+[フォルダーを開く] と `Microsoft.VisualStudio.Workspace.*` API は、積極的に開発中です。 予期しない動作が発生した場合は、対象のリリースの既知の問題を確認してください。 [開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)は、イシューに投票し、作成する場合にお勧めの場所です。 フィードバックごとに、イシューを詳しく説明することを強くお勧めします。 開発の対象とする Visual Studio バージョン、使用している API (実装したものと対話している相手の両方)、予想される結果、および実際の結果を含めます。 可能であれば、devenv.exe プロセスのダンプを含めます。 GitHub のイシュー追跡を使用して、このドキュメントおよび関連ドキュメントに関するフィードバックを提供してください。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -1,5 +1,7 @@
 ---
 title: レガシ言語サービスの要点 |Microsoft Docs
+description: プログラミング言語を Visual Studio に統合できる、従来の言語サービスで使用できる重要な機能について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 501bccf755293e86e8a9dc23fce125a10c882376
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707417"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205139"
 ---
 # <a name="legacy-language-service-essentials"></a>従来の言語サービスの基本情報
 プログラミング言語を Visual Studio に統合するには、言語サービスを提供する必要があります。 このトピックでは、従来の言語サービスで使用できる機能について説明します。
@@ -44,5 +46,5 @@ ms.locfileid: "80707417"
 
 | 機能 | 説明 |
 |-----------------------| - |
-| 式エバリュエーター | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ブレークポイントを検証し、[**自動変数**デバッグ] ウィンドウに表示される式の一覧を指定することにより、デバッガーをサポートします。<br /><br /> 詳細については、「 [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)」を参照してください。 |
-| シンボル参照ツール | **シンボル結果**の**オブジェクトブラウザー**、**クラスビュー**、**呼び出しブラウザー**、および検索をサポートします。 |
+| 式エバリュエーター | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ブレークポイントを検証し、[**自動変数** デバッグ] ウィンドウに表示される式の一覧を指定することにより、デバッガーをサポートします。<br /><br /> 詳細については、「 [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)」を参照してください。 |
+| シンボル参照ツール | **シンボル結果** の **オブジェクトブラウザー**、**クラスビュー**、**呼び出しブラウザー**、および検索をサポートします。 |

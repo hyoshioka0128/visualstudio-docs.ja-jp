@@ -1,6 +1,7 @@
 ---
 title: C++ のアクセス違反をデバッグする | Microsoft Docs
-ms.custom: seodec18
+description: 複数のポインターが候補である場合にアクセス違反をトラブルシューティングするためのヒントについて説明します。 最近のバージョンの Visual Studio では、間違ったポインターに名前が指定されます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 803f81d1a26438c2134349a85369d341353e17cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1786085e2f68a1d1196158ac56a62b87b80858be
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350421"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761369"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>C++ のアクセス違反をデバッグする方法
 
@@ -75,7 +76,7 @@ int main() {
 
 このコードを Visual Studio 2015 の Update 1 で実行する場合、次の例外ダイアログ ボックスが表示されます。
 
-![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")
+![Microsoft Visual Studio の例外ダイアログのスクリーンショット。"A->B が nullptr でした" の読み取りアクセス違反が示されています。 [中断] ボタンが選択されています。](../debugger/media/accessviolationcplus.png)
 
 ポインターがアクセス違反を引き起こした理由を特定できない場合、コードをトレースして、問題の原因となったポインターが正しく割り当てられているかどうかを確認します。  パラメーターとして渡される場合は、正常に渡され、誤って[簡易コピー](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy)を作成していないことを確認します。 次に、問題のポインターに対してデータ ブレークポイントを作成し、プログラム内の別の場所で変更されていないことを確認することにより、値がプログラム内のどこかで意図せずに変更されていないことを検証します。 データ ブレークポイントの詳細については、 [Using Breakpoints](../debugger/using-breakpoints.md)のデータ ブレークポイントのセクションを参照してください。
 

@@ -1,5 +1,7 @@
 ---
 title: トラブルシューティング コード カバレッジ
+description: Visual Studio でネイティブおよびマネージド アセンブリのデータが収集されることが予想される場合に、不正な空の結果メッセージを解決する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.openlocfilehash: 7e960e0729e7d13b27d0c4fbda9b3f8eca0ac57c
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80528006"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330122"
 ---
 # <a name="troubleshoot-code-coverage"></a>コード カバレッジのトラブルシューティング
 
@@ -117,7 +119,7 @@ C++ プロジェクトの場合は、生成された .pdb ファイルに完全�
 
 説明&mdash;カスタム *.runsettings* ファイルで単体テストを実行して、コード カバレッジのオプションを構成することができます。 オプションで、ファイルを含めるか、除外するかを指定できます。 詳細については、「[コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)」を参照してください。
 
-解決&mdash; *.runsettings ファイルから*すべての `Include` ノードを削除し、すべての `Exclude` ノードを削除します。 これで問題が解決する場合は、各ノードを段階的に元に戻します。
+解決&mdash; *.runsettings ファイルから* すべての `Include` ノードを削除し、すべての `Exclude` ノードを削除します。 これで問題が解決する場合は、各ノードを段階的に元に戻します。
 
 DataCollectors ノードがコード カバレッジを指定していることを確認します。 「[コード カバレッジ分析のカスタマイズ](../test/customizing-code-coverage-analysis.md)」の例と比較します。
 

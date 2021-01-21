@@ -1,5 +1,7 @@
 ---
-title: '方法: 型の間の継承を作成する (クラス デザイナー)'
+title: 型間で継承を作成する
+description: クラス デザイナーを使用してクラス ダイアグラム上の 2 つの型間の継承関係を作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,24 +15,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 064ae443c264187e7666b7aaabde27d6705388a4
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770207"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933480"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>方法: クラス デザイナーで型の間の継承を作成する
 
-**クラス デザイナー**を使用してクラス ダイアグラム上の 2 つの型間の継承関係を作成するには、基本型をその派生型 (複数可) に接続します。 継承関係は、2 つのクラス間、クラスとインターフェイス間、または 2 つのインターフェイス間で作成できます。
+**クラス デザイナー** を使用してクラス ダイアグラム上の 2 つの型間の継承関係を作成するには、基本型をその派生型 (複数可) に接続します。 継承関係は、2 つのクラス間、クラスとインターフェイス間、または 2 つのインターフェイス間で作成できます。
 
 ## <a name="to-create-an-inheritance-between-types"></a>型間で継承を作成するには
 
-1. **ソリューション エクスプローラー**のプロジェクトから、クラス ダイアグラム (.cd) ファイルを開きます。
+1. **ソリューション エクスプローラー** のプロジェクトから、クラス ダイアグラム (.cd) ファイルを開きます。
 
-     クラス ダイアグラムがない場合は、クラス ダイアグラムを作成します。 「[方法: プロジェクトにクラス ダイアグラムを追加する](how-to-add-class-diagrams-to-projects.md)」をご覧ください。
+     クラス ダイアグラムがない場合は、クラス ダイアグラムを作成します。 「[方法:プロジェクトにクラス ダイアグラムを追加する](how-to-add-class-diagrams-to-projects.md)」を参照してください。
 
-2. **[クラス デザイナー]** の **[ツールボックス]** で、 **[継承]** をクリックします。
+2. **[クラス デザイナー]** の **[ツールボックス]** で、**[継承]** をクリックします。
 
 3. クラス ダイアグラムで、必要な型間の継承線を次の間で描画します。
 
@@ -47,7 +49,7 @@ ms.locfileid: "85770207"
     >
     >  既存のジェネリック型を視覚化できますが、新しいジェネリック型は作成できません。 また、既存のジェネリック型の型パラメーターは変更できません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [継承](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [継承の基本](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)

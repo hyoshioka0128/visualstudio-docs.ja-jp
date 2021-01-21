@@ -1,5 +1,7 @@
 ---
 title: Windows インストーラー | を使用した VSPackage のアンインストールMicrosoft Docs
+description: VSPackage をアンインストールするには、インストールを逆にします。 Windows インストーラー Windows インストーラーパッケージでカスタムアクションを処理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cdf9023512f4225e2a8edcadcf589cb61547e24
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: f78f27a3b2b2607f04a61352b543774f8b59e88c
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011815"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488155"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Windows インストーラーによる VSPackage のアンインストール
 ほとんどの場合 Windows インストーラー、VSPackage をアンインストールするには、VSPackage をインストールしたことを "元に戻す" だけで済みます。 「 [インストール後に実行する必要](../../extensibility/internals/commands-that-must-be-run-after-installation.md) のあるコマンド」で説明されているカスタムアクションもアンインストール後に実行する必要があります。 devenv.exe の呼び出しは、インストールとアンインストールの両方について InstallFinalize 標準アクションの直前に発生するため、CustomAction と InstallExecuteSequence テーブルエントリは両方のケースに対応します。
@@ -38,6 +40,6 @@ ms.locfileid: "90011815"
 > [!NOTE]
 > `Installed` は、VSPackage が既にシステムにインストールされていることを検出したときに設定 Windows インストーラープロパティです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Windows インストーラー](/previous-versions/ee231230(v=vs.100))
 - [システム要件の検出](../../extensibility/internals/detecting-system-requirements.md)

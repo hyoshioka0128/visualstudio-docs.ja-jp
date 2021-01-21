@@ -7,12 +7,12 @@ ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
 ms.date: 07/30/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションでプロダクト キーを検索、要求、エクスポートする方法を説明します。
-ms.openlocfilehash: e9be61db1f72684dcff12d015ec5180607b41977
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: a246f66e429b78647f217468c7c19b703b419062
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250737"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "91004968"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでプロダクト キーを検索して要求する
 この記事では、 https://my.visualstudio.com/productkeys からプロダクト キーを検索、要求、エクスポートする方法について説明します。  キーを使用して製品をライセンス認証する方法、キーのリテール版とボリューム ライセンス版、および毎日のプロダクト キー要求の制限について詳しくは、[プロダクト キーの概要](product-keys.md)に関するページをご覧ください。
@@ -67,10 +67,10 @@ ms.locfileid: "88250737"
 キーをエクスポートするには、[プロダクト キー] ページの右端にある **[すべてのキーをエクスポート]** リンクを選択します。  KeysExport.xml をという名前の .xml ファイルが作成され、ファイルを開くか保存するオプションが表示されます。  .Xml ファイルを処理できるアプリケーションでファイルを開く必要があります。  たとえば、Excel で読み取り専用のブックとしてファイルを開くことができます。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 ソフトウェアをダウンロードしてキーを使用する準備ができたら、 https://my.visualstudio.com/downloads にアクセスします。  ソフトウェアのダウンロードについて詳しくは、[ダウンロードの概要](download-software.md)に関するページをご覧ください。

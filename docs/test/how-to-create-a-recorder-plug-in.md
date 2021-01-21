@@ -1,5 +1,7 @@
 ---
 title: Web パフォーマンス テストのレコーダー プラグインを作成する
+description: WebTestRecorderPlugin を使用して、[Web パフォーマンス テスト レコーダー] ツール バーの [停止] を選択した後に、記録された Web パフォーマンス テストを変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f75114683a4f456d0514af20c1c201c373bd4b0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce4be33e2e29ee0089184a034e56cf3a0539dc76
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288009"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440061"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>方法: レコーダー プラグインを作成する
 
@@ -35,9 +37,9 @@ ms.locfileid: "85288009"
 
 1. 作成するレコーダー プラグインの対象となる Web パフォーマンス テストの Web パフォーマンスとロード テストのプロジェクトを含むソリューションを開きます。
 
-2. 新しい**クラス ライブラリ** プロジェクトをソリューションに追加します
+2. 新しい **クラス ライブラリ** プロジェクトをソリューションに追加します
 
-3. **ソリューション エクスプローラー**の新しいクラス ライブラリ プロジェクト フォルダーで、 **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
+3. **ソリューション エクスプローラー** の新しいクラス ライブラリ プロジェクト フォルダーで、 **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
 
     > [!TIP]
     > 新しいクラス ライブラリ プロジェクト フォルダーの例は、 **[RecorderPlugins]** です。
@@ -48,7 +50,7 @@ ms.locfileid: "85288009"
 
 5. スクロール ダウンして、 **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** をクリックし、 **[OK]** をクリックします。
 
-     **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** が**ソリューション エクスプローラー**の **[参照設定]** フォルダーに追加されます。
+     **[Microsoft.VisualStudio.QualityTools.WebTestFramework]** が **ソリューション エクスプローラー** の **[参照設定]** フォルダーに追加されます。
 
 6. レコーダー プラグインのコードの記述 まず、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> クラスから派生する新しいパブリック クラスを作成します。
 

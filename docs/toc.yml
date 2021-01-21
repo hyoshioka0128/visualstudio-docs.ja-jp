@@ -127,6 +127,8 @@
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Azure 仮想マシンから Visual Studio を使用する
       href: install/using-visual-studio-vm.md
+    - name: ARM デバイスで Visual Studio を使用する
+      href: install/visual-studio-on-arm-devices.md
     - name: コンテナー
       items:
         - name: Build Tools をコンテナーにインストールする
@@ -176,13 +178,15 @@
       href: ide/index-writing-code.yml
     - name: IDE 内で移動する
       href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Visual Studio Search を使用する
+      href: ide/visual-studio-search.md
     - name: ソリューションとプロジェクト
       items:
-        - name: ソリューションとプロジェクトの使用
+        - name: ソリューションとプロジェクトについて学習する
           href: ide/solutions-and-projects-in-visual-studio.md
         - name: 新しいプロジェクトを作成する
           href: ide/create-new-project.md
-        - name: ソリューションとプロジェクトを作成する
+        - name: ソリューションとプロジェクトの使用
           href: ide/creating-solutions-and-projects.md
         - name: リポジトリからプロジェクトを開く
           href: get-started/tutorial-open-project-from-repo.md
@@ -258,9 +262,21 @@
         - name: ビルドのカスタマイズとタスクのデバッグ
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-    - name: プロジェクトまたはリポジトリへの接続
-      displayName: Azure DevOps VSTS GitHub
+    - name: Codespaces を使用した開発 (プレビュー)
+      items:
+        - name: 概要
+          href: ide/codespaces/codespaces-overview.md
+        - name: Codespace で Visual Studio を使用する
+          href: ide/codespaces/use-visual-studio-with-codespaces.md
+        - name: Codespace をカスタマイズする
+          href: ide/codespaces/customize-codespaces.md
+        - name: サポートされている Visual Studio の機能
+          href: ide/codespaces/supported-features-codespaces.md
+    - name: チーム エクスプローラーのプロジェクトに接続する
+      displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
+    - name: Visual Studio での新しい Git エクスペリエンス
+      href: ide/git-with-visual-studio.md
     - name: エディター
       items:
         - name: エディターを使用する
@@ -398,12 +414,16 @@
                   href: ide/reference/datetime-timespan-completion.md
                 - name: フィールドのカプセル化
                   href: ide/reference/encapsulate-field.md
+                - name: 基底クラスの抽出
+                  href: ide/reference/extract-base-class.md
                 - name: インターフェイスの抽出
                   href: ide/reference/extract-interface.md
                 - name: メソッドの抽出
                   href: ide/reference/extract-method.md
                 - name: ローカル関数を抽出する
                   href: ide/reference/extract-local-function.md
+                - name: メソッドのインライン化
+                  href: ide/reference/inline-method.md
                 - name: インラインの一時変数
                   href: ide/reference/inline-temporary-variable.md
                 - name: インポートされていない型と拡張メソッドに対する IntelliSense 入力候補
@@ -412,8 +432,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: if ステートメントを反転させる
                   href: ide/reference/invert-if-statement.md
-                - name: 静的ローカル関数のリファクタリング オプション
-                  href: ide/reference/static-local-function-refactor-options.md
+                - name: クラスを抽象にする
+                  href: ide/reference/make-class-abstract.md
                 - name: メンバーを静的にする
                   href: ide/reference/make-member-static.md
                 - name: 参照の近くへの宣言の移動
@@ -440,6 +460,8 @@
                   href: ide/reference/sort-usings.md
                 - name: if ステートメントの分割または結合
                   href: ide/reference/split-or-merge-if-statement.md
+                - name: 静的ローカル関数のリファクタリング オプション
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: 名前空間とフォルダー名を同期する
                   href: ide/reference/sync-namespace-and-folder-name.md
                 - name: 型とファイル名の同期
@@ -448,6 +470,10 @@
                   href: ide/reference/convert-var-to-explicit-type.md
                 - name: ラムダ式またはブロックの本体の使用
                   href: ide/reference/use-block-body-lambda.md
+                - name: new() の使用
+                  href: ide/reference/use-new.md
+                - name: パターン マッチングの使用
+                  href: ide/reference/use-pattern-matching.md
                 - name: 未使用値の割り当て、変数、およびパラメーター
                   href: ide/reference/unused-values-parameters.md
                 - name: ラップ、インデント、およびリファクタリングの整理
@@ -503,20 +529,14 @@
         - name: コード スタイル
           items:
             - name: コードのスタイル設定
-              href: /visualstudio/ide/code-styles-and-code-cleanup
+              href: ./ide/code-styles-and-code-cleanup.md
             - name: コード スタイルに関する EditorConfig ファイルの使用
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
-            - name: .NET のコーディング規則
-              items:
-                - name: 概要
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: 言語規則
-                  href: ide/editorconfig-language-conventions.md
-                - name: 書式規則
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: 名前付け規則
-                  href: ide/editorconfig-naming-conventions.md
+            - name: C++ EditorConfig の書式規則
+              href: ide/cpp-editorconfig-properties.md
+            - name: .NET のコーディング規則 >>
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: スクロール バーのカスタマイズ
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: コードへのブックマークの設定
@@ -870,7 +890,7 @@
       href: msbuild/msbuild.md
     - name: Azure Pipelines と TFS >>
       displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
-      href: /azure/devops/pipelines/index?view=vsts
+      href: /azure/devops/pipelines/index?view=vsts&preserve-view=true
     - name: ビルド イベントを指定する (Visual Basic)
       href: ide/how-to-specify-build-events-visual-basic.md
     - name: ビルド イベントを指定する (C#)
@@ -883,7 +903,7 @@
   href: debugger/index.yml
 - name: テスト >>
   displayName: Unit testing
-  href: test/improve-code-quality.md
+  href: test/index.yml
 - name: パフォーマンスの測定 >>
   displayName: Profiling
   href: profiling/index.yml
@@ -925,7 +945,7 @@
       displayName: 'marketplace, gallery, vsix'
     - name: 外部ツールの管理
       href: ide/managing-external-tools.md
-    - name: 個人アカウント
+    - name: アカウントの管理
       items:
         - name: Visual Studio にサインイン
           displayName: personalization accounts
@@ -934,6 +954,8 @@
           href: ide/work-with-multiple-user-accounts.md
         - name: 多要素認証が必要なアカウントを使って作業する
           href: ide/work-with-multi-factor-authentication.md
+        - name: Visual Studio の GitHub アカウントを使って作業する
+          href: ide/work-with-github-accounts.md
         - name: 試用版を延長する、またはライセンスを更新する
           href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio のパフォーマンスのチューニング
@@ -1482,3 +1504,8 @@
       href: ide/developer-community-guidelines.md
     - name: 開発者コミュニティのデータのプライバシー
       href: ide/developer-community-privacy.md
+- name: Visual Studio 2015
+  expanded: true
+  items:
+    - name: Visual Studio 2015 ドキュメント
+      href: vs-2015-archive.md

@@ -1,6 +1,7 @@
 ---
-title: デバッガーを使用して実行中のプロセスにアタッチする | Microsoft Docs
-ms.custom: seodec18
+title: デバッガーで実行中のプロセスにアタッチする
+description: ローカルまたはリモート コンピューターで実行中のプロセスに、Visual Studio デバッガーをアタッチする方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
+ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249207"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031043"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Visual Studio デバッガーで実行中のプロセスへのアタッチ
 
@@ -58,7 +59,7 @@ ms.locfileid: "88249207"
 
 1. **[接続先]** をローカル コンピューター名に設定します。
 
-   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process")
+   ![[プロセスにアタッチ] ダイアログ ボックスのスクリーンショット。接続ターゲットがローカル コンピューター名に設定されています。](../debugger/media/DBG_Basics_Attach_To_Process.png)
 
 1. **[使用可能なプロセス]** リストで、アタッチする 1 つまたは複数のプロセスを見つけて選択します。
 
@@ -159,85 +160,15 @@ IIS に配置されている ASP.NET アプリケーションをデバッグす�
 
 どちらの方法も実行できない場合、3 つ目の方法として、Windows コマンド ラインから `vsjitdebugger.exe -p <ProcessId>` を実行することによって、プロセスにアタッチできます。 プロセス ID は *tlist.exe* を使用して確認できます。 *tlist.exe* を入手するには、[WDK と WinDbg のダウンロード](/windows-hardware/drivers/download-the-wdk)に関するページで Windows 用のデバッグ ツールをダウンロードし、インストールします。
 
-::: moniker range=">= vs-2019"
-
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>SSH を使用して Linux 上で実行されている .NET Core プロセスにアタッチする
 
 詳細については、[Linux 上で実行されている .NET Core の SSH を使用したリモート デバッグ](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)に関するページを参照してください。
 
-## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Linux Docker コンテナー上で実行されているプロセスにアタッチする
+::: moniker range=">= vs-2019"
 
-**[プロセスにアタッチ]** ダイアログ ボックスを使用して、ローカル コンピューターまたはリモート マシン上の Linux .NET Core Docker コンテナーで実行されているプロセスに Visual Studio デバッガーをアタッチできます。
+## <a name="attach-to-a-process-running-on-a-docker-container"></a><a name="BKMK_Linux_Docker_Attach"></a> Docker コンテナー上で実行されているプロセスにアタッチする
 
-> [!IMPORTANT]
-> この機能を使用するには、.NET Core Cross-Platform Development ワークロードをインストールする必要があります。また、ソース コードへのローカル アクセス権を持っている必要があります。
-
-**Linux Docker コンテナー内の実行中のプロセスにアタッチするには:**
-
-1. Visual Studio で、 **[デバッグ] > [プロセスにアタッチ] (CTRL + ALT + P キー)** を選択して、 **[プロセスにアタッチ]** ダイアログ ボックスを開きます。
-
-![[プロセスにアタッチ] メニュー](../debugger/media/attach-process-menu.png "Attach_To_Process_Menu")
-
-2. **[接続の種類]** を **[Docker (Linux コンテナー)]** に設定します。
-3. **[Docker コンテナーの選択]** ダイアログボックスを使用して **[検索]** を選択し、 **[接続先]** を設定します。
-
-    Docker コンテナー プロセスは、ローカルでもリモートでもデバッグできます。
-    
-    **Docker コンテナー プロセスをローカルでデバッグするには:**
-    1. **[Docker CLI ホスト]** を **[ローカル コンピューター]** に設定します。
-    1. アタッチする実行中のコンテナーをリストから選択し、 **[OK]** をクリックします。
-    
-    ![[Docker コンテナーの選択] メニュー](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
- 
-    **B.Docker コンテナー プロセスをリモートでデバッグするには:**
-    
-    > [!NOTE] 
-    > Docker コンテナーで実行中のプロセスにリモート接続するには、2 つのオプションがあります。 SSH を使用するという 1 つ目のオプションは、ローカル コンピューターに Docker ツールがインストールされていない場合に最適です。  ローカルに Docker ツールをインストールしていて、リモートの要求を受け入れるように構成されている Docker デーモンがある場合は、2 つ目のオプションである Docker デーモンの使用を試してください。
-
-    1. ***SSH を使用してリモート マシンに接続するには:***
-        1. **[追加]** を選択してリモート システムに接続します。<br/>
-        ![リモート システムに接続する](../debugger/media/connect-remote-system.png "リモート システムに接続する")
-        1. SSH またはデーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、 **[OK]** をクリックします。
-
-    1. ***[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには***
-        1. **[Docker ホスト (省略可能)]** でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。
-        1. デーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、 **[OK]** をクリックします。
-
-4. Visual Studio で **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
-
-    ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete.png "入力された Linux Docker の [アタッチ] メニュー")    
-
-## <a name="attach-to-a-process-running-on-a-windows-docker-container"></a><a name="BKMK_Windows_Docker_Attach"></a> Windows Docker コンテナー上で実行されているプロセスにアタッチする
-
-**[プロセスにアタッチ]** ダイアログ ボックスを使用して、ローカル コンピューター上の Windows Docker コンテナーで実行されているプロセスに Visual Studio デバッガーをアタッチできます。
-
-> [!IMPORTANT]
-> この機能を .NET Core プロセスで使用するには、.NET Core Cross-Platform Development ワークロードをインストールする必要があります。また、ソース コードへのローカル アクセス権を持っている必要があります。
-
-**Windows Docker コンテナーで実行中のプロセスにアタッチするには:**
-
-1. Visual Studio で、 **[デバッグ] > [プロセスにアタッチ]** (**CTRL + ALT + P** キー) を選択して、 **[プロセスにアタッチ]** ダイアログ ボックスを開きます。
-
-   ![[プロセスにアタッチ] メニュー](../debugger/media/attach-process-menu-docker-windows.png "Attach_To_Process_Menu")
-
-2. **[接続の種類]** を **[Docker (Windows コンテナー)]** に設定します。
-3. **[Docker コンテナーの選択]** ダイアログボックスを使用して **[検索]** を選択し、 **[接続先]** を設定します。
-
-    > [!IMPORTANT]
-    > ターゲット プロセスは、それが実行されている Docker Windows コンテナーと同じプロセッサ アーキテクチャを持つ必要があります。
-    
-   現在、SSH 経由でターゲットをリモート コンテナーに設定することはできません。Docker デーモンを使用して実行する必要があります。
-    
-    ***[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには***
-    1. **[Docker ホスト (省略可能)]** でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。 
-
-    1. デーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、[OK] を選択します。
-    
-4. **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
-
-    ![入力された Docker の [アタッチ] メニュー](../debugger/media/docker-attach-complete-windows.png "入力された Windows Docker の [アタッチ] メニュー")
-
-5.  Visual Studio で [使用可能なプロセス] リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
+Visual Studio 2019 以降では、Docker コンテナー上で実行されているプロセスに Visual Studio デバッガーをアタッチできます。 Linux .NET Core Docker コンテナーの場合は、「[Linux Docker コンテナー上で実行されているプロセスにアタッチする](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)」を参照してください。 Windows Docker コンテナーの場合は、「[Windows Docker コンテナー上で実行されているプロセスにアタッチする](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-windows-docker-container)」を参照してください。
 
 ::: moniker-end
 
@@ -263,11 +194,12 @@ C++ で記述されたコードにデバッガーをアタッチするには、�
 |シナリオ|デバッグ方法|プロセス名|メモとリンク|
 |-|-|-|-|
 |IIS サーバー上の ASP.NET 4 または 4.5 をリモート デバッグする|リモート ツールと **[プロセスにアタッチ]** を使用する|*w3wp.exe*|[リモート IIS コンピューター上の ASP.NET のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)に関するページを参照してください|
-|IIS コンピューター上で ASP.NET Core をリモート デバッグする|リモート ツールと **[プロセスにアタッチ]** を使用する|*w3wp.exe* または *dotnet.exe*|.NET Core 3 以降では、*w3wp.exe* プロセスは、既定の[アプリ内ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1#hosting-models)に使用されます。 アプリの配置については、[IIS への発行](/aspnet/core/host-and-deploy/iis/)に関するページを参照してください。 詳細については、[リモートの IIS コンピューター上の ASP.NET Core のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)に関するページを参照してください。|
+|IIS コンピューター上で ASP.NET Core をリモート デバッグする|リモート ツールと **[プロセスにアタッチ]** を使用する|*w3wp.exe* または *dotnet.exe*|.NET Core 3 以降では、*w3wp.exe* プロセスは、既定の [アプリ内ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)に使用されます。 アプリの配置については、[IIS への発行](/aspnet/core/host-and-deploy/iis/)に関するページを参照してください。 詳細については、[リモートの IIS コンピューター上の ASP.NET Core のリモート デバッグ](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md#BKMK_attach)に関するページを参照してください。|
 |サポートされているアプリの種類について、ローカル IIS サーバー上でクライアント側スクリプトをデバッグする |**[プロセスにアタッチ]** を使用する|*chrome.exe*、*MicrosoftEdgeCP.exe*、または *iexplore.exe*|スクリプトのデバッグを有効にする必要があります。 Chrome の場合、Chrome をデバッグ モードで実行し (コマンド ラインから「`chrome.exe --remote-debugging-port=9222`」と入力します)、 **[アタッチ先]** フィールドで **[JavaScript (Chrome)]** を選択する必要もあります。|
 |ローカル コンピューター上で C#、Visual Basic、または C++ アプリをデバッグする|標準のデバッグ (**F5** キー) または **[プロセスにアタッチ]** を使用する|*\<appname>.exe*|ほとんどのシナリオでは、 **[プロセスにアタッチ]** ではなく、標準のデバッグを使用します。|
 |Windows デスクトップ アプリをリモート デバッグする|リモート ツール|N/A| [C# または Visual Basic アプリのリモート デバッグ](../debugger/remote-debugging-csharp.md)または [C++ アプリのリモート デバッグ](../debugger/remote-debugging-cpp.md)に関するページを参照してください|
-|Linux 上で .NET Core をデバッグする|**[プロセスにアタッチ]** を使用する|*dotnet.exe*|SSH を使用するには、[Linux 上で実行されている .NET Core の SSH を使用したリモート デバッグ](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)に関するページを参照してください。 コンテナー化されたアプリについては、この記事の前のセクションを参照してください。|
+|Linux 上で .NET Core をデバッグする|**[プロセスにアタッチ]** を使用する|*dotnet.exe* または一意のプロセス名|SSH を使用するには、[Linux 上で実行されている .NET Core の SSH を使用したリモート デバッグ](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)に関するページを参照してください。 コンテナー化されたアプリについては、[Docker コンテナーで実行されているプロセスへのアタッチ](../debugger/attach-to-process-running-in-docker-container.md#attach-to-a-process-running-on-a-linux-docker-container)に関連する記事を参照してください。|
+|コンテナー化されたアプリのデバッグ|**[プロセスにアタッチ]** を使用する|*dotnet.exe* または一意のプロセス名|[Docker コンテナーで実行されているプロセスへのアタッチ](../debugger/attach-to-process-running-in-docker-container.md)に関する記事を参照|
 |Linux 上で Python をリモートでデバッグする|**[プロセスにアタッチ]** を使用する|*debugpy*|「[Python Tools からリモートでアタッチする](../python/debugging-python-code-on-remote-linux-machines.md#attach-remotely-from-python-tools)」を参照してください|
 |デバッガーを使用せずにアプリを起動した後、ローカル コンピューター上で ASP.NET アプリをデバッグする|**[プロセスにアタッチ]** を使用する|*iiexpress.exe*|これは、(たとえば) プロファイリング時など、アプリの読み込みを高速化するために役立ちます。 |
 |サーバー プロセスでサポートされている他の種類のアプリをデバッグする|サーバーがリモートの場合は、リモート ツールを使用し、 **[プロセスにアタッチ]** を行います|*chrome.exe*、*iexplore.exe*、またはその他のプロセス|必要に応じて、リソース モニターを使用してプロセスを特定します。 「[Remote debugging](../debugger/remote-debugging.md)」(リモート デバッグ) を参照してください。|

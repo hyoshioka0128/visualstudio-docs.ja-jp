@@ -1,5 +1,7 @@
 ---
 title: InfoPath のリボンのカスタマイズ
+description: Microsoft Office InfoPath でリボンをカスタマイズする場合、アプリケーションでカスタムリボンを表示する場所を考慮する必要があることに注意してください。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76ec069ef71890a69fdbd41f40bd91cf75d93cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255506"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844168"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>InfoPath のリボンのカスタマイズ
   Microsoft Office InfoPath でリボンをカスタマイズする場合、アプリケーションのどこにカスタム リボンを表示するかを検討する必要があります。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] では、次の 3 種類の InfoPath アプリケーション ウィンドウにリボンを表示できます。
@@ -36,7 +38,7 @@ ms.locfileid: "71255506"
   [印刷プレビュー] ウィンドウでは、デザイナーとユーザーがフォームまたはフォーム テンプレートを印刷前にプレビューできます。
 
 > [!NOTE]
-> [印刷プレビュー] ウィンドウには **[アドイン]** タブは表示されません。 [印刷プレビュー] ウィンドウにカスタム タブを表示する場合は、タブの **OfficeId** プロパティが **TabAddIns**に設定されていないことを確認してください。
+> [印刷プレビュー] ウィンドウには **[アドイン]** タブは表示されません。 [印刷プレビュー] ウィンドウにカスタム タブを表示する場合は、タブの **OfficeId** プロパティが **TabAddIns** に設定されていないことを確認してください。
 
  リボンを表示する各ウィンドウのリボンの種類を指定する必要があります。
 
@@ -52,7 +54,7 @@ ms.locfileid: "71255506"
  1 つのプロジェクトに複数のリボンを追加することができます。 複数のリボンで 1 つのリボン ID を共有する場合は、プロジェクトの `ThisAddin` クラスの `CreateRibbonExtensibilityObject` メソッドをオーバーライドし、実行時に表示するリボンを指定します。 詳細については、「 [リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>リボン XML を使用してリボンの種類を指定する
- **リボン (XML)** 項目を使用している場合は、メソッドの*ribbonid*パラメーターの値を確認 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> し、適切なリボンを返します。
+ **リボン (XML)** 項目を使用している場合は、メソッドの *ribbonid* パラメーターの値を確認 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> し、適切なリボンを返します。
 
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> メソッドは、Visual Studio によってリボン コード ファイルに自動的に生成されます。 *ribbonID* パラメーターは、開いている InfoPath ウィンドウの種類を識別する文字列です。
 

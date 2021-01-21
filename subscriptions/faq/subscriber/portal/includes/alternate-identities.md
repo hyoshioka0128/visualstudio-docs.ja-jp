@@ -13,11 +13,11 @@ robots: ''
 ms.date: 4/3/2020
 ms.faqid: q1_5
 ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386021"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838307"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>自分のサブスクリプションに代替 ID を追加する方法と、それが Azure クレジットおよび Azure DevOps に与える影響について教えてください。
 

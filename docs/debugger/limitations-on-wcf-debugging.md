@@ -1,5 +1,7 @@
 ---
 title: WCF デバッグの制約 | Microsoft Docs
+description: WCF サービスのデバッグを開始する方法、必要な条件、デバッグの制約について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70195cdc0a6a03395744c63f556ce8c2970aa30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 30ca43483c352a4f102ab196dc5ea8e8650cdf81
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731504"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903858"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF デバッグの制約
 WCF サービスのデバッグを開始するには、次の 3 つの方法があります。
@@ -32,7 +34,7 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
 
 - **[プロセスにアタッチ]** を使用して、現在実行されているサービスにアタッチします。 サービス内部でデバッグが開始されます。
 
-  このトピックでは、これらのシナリオの制約について説明します。
+このトピックでは、これらのシナリオの制約について説明します。
 
 ## <a name="limitations-on-stepping-into-a-service"></a>サービスへのステップ インの制約
  デバッグ中のクライアント アプリケーションのサービスにステップ インするには、次の条件を満たす必要があります。
@@ -74,9 +76,8 @@ WCF サービスのデバッグを開始するには、次の 3 つの方法が�
   ```
 
 ## <a name="self-hosting"></a>セルフホスト
- *セルフホストされているサービス*とは、IIS 内部で実行されていない WCF サービス、WCF サービス ホスト、または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーです。 セルフホストされているサービスをデバッグする方法については、「[方法: セルフホストされている WCF サービスをデバッグする](../debugger/how-to-debug-a-self-hosted-wcf-service.md)」を参照してください。
+ *セルフホストされているサービス* とは、IIS 内部で実行されていない WCF サービス、WCF サービス ホスト、または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーです。 セルフホストされているサービスをデバッグする方法については、「[方法: セルフホストされている WCF サービスをデバッグする](../debugger/how-to-debug-a-self-hosted-wcf-service.md)」を参照してください。
 
-## <a name="self-hosting"></a>セルフホスト
  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 または 3.5 アプリケーションのデバッグを可能にするには、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] をインストールする前に [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 3.0 または 3.5 をインストールする必要があります。 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] が [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 または 3.5 より前にインストールされていると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 または 3.5 アプリケーションのデバッグ時にエラーが発生します。 エラー メッセージは、「サーバーに自動的にステップ インできません。」です。 この問題を解決するには、Windows の **[コントロール パネル]**  >  **[プログラムと機能]** を使用して、[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] のインストールを修復します。
 
 ## <a name="see-also"></a>関連項目

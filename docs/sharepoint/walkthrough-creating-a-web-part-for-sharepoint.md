@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: SharePoint の Web パーツの作成 |Microsoft Docs'
+description: SharePoint の web パーツを作成します。 Web パーツを使用すると、ユーザーはブラウザーを使用して SharePoint サイトページのコンテンツ、外観、および動作を直接変更できます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +16,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7fe560ae0c639ec8c400719738ea1f52b5315a9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247654"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914661"
 ---
-# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>チュートリアル: SharePoint の web パーツの作成
+# <a name="walkthrough-create-a-web-part-for-sharepoint"></a>チュートリアル: SharePoint の Web パーツの作成
 
 Web パーツを使用すると、ブラウザーから SharePoint サイト ページのコンテンツ、外観、および動作を直接変更できます。 このチュートリアルでは、Visual Studio 2010 の **Web パーツ** 項目テンプレートを使用して web パーツを作成する方法について説明します。
 
@@ -35,7 +37,7 @@ Web パーツを使用すると、ブラウザーから SharePoint サイト ペ
 
 - コントロールを Web パーツ コントロール コレクションに追加することで Web パーツにコンテンツをレンダリングする。
 
-- *動詞*と呼ばれる新しいメニュー項目を作成します。これは、表示される Web パーツの動詞メニューに表示されます。 動詞を使用すると、Web パーツに表示されるデータを変更できます。
+- *動詞* と呼ばれる新しいメニュー項目を作成します。これは、表示される Web パーツの動詞メニューに表示されます。 動詞を使用すると、Web パーツに表示されるデータを変更できます。
 
 - SharePoint の Web パーツをテストする。
 
@@ -54,13 +56,13 @@ Web パーツを使用すると、ブラウザーから SharePoint サイト ペ
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)][**管理者として実行**] オプションを使用して開始します。
 
-2. [男性] バーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project**ます。
+2. [男性] バーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
 
 3. [ **新しいプロジェクト** ] ダイアログボックスで、使用する言語の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
 4. [ **テンプレート** ] ペインで、[ **SharePoint 2010 プロジェクト**] を選択し、[ **OK** ] をクリックします。
 
-     **SharePoint カスタマイズウィザード**が表示されます。 このウィザードを使用すると、プロジェクトのデバッグに使用するサイトや、ソリューションの信頼レベルを選択できます。
+     **SharePoint カスタマイズウィザード** が表示されます。 このウィザードを使用すると、プロジェクトのデバッグに使用するサイトや、ソリューションの信頼レベルを選択できます。
 
 5. [ **ファームソリューションとして配置** する] オプションボタンをクリックし、[ **完了** ] をクリックして既定のローカル SharePoint サイトを受け入れます。
 
@@ -68,19 +70,19 @@ Web パーツを使用すると、ブラウザーから SharePoint サイト ペ
 
 プロジェクトに **Web パーツ** 項目を追加します。 Web **パーツ項目は** 、web パーツのコードファイルを追加します。 後で、Web パーツ コード ファイルにコードを追加して、Web パーツのコンテンツをレンダリングします。
 
-1. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+1. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 2. [ **新しい項目の追加** ] ダイアログボックスの [ **インストールされたテンプレート** ] ペインで、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
 3. SharePoint テンプレートの一覧で、[ **Web パーツ** ] テンプレートを選択し、[ **追加** ] をクリックします。
 
-     **Web パーツ**項目が**ソリューションエクスプローラー**に表示されます。
+     **Web パーツ** 項目が **ソリューションエクスプローラー** に表示されます。
 
 ## <a name="rendering-content-in-the-web-part"></a>Web パーツのコンテンツのレンダリング
 
 Web パーツに表示するコントロールを指定するには、Web パーツ クラスのコントロール コレクションにコントロールを追加します。
 
-1. **ソリューションエクスプローラー**で、 *WebPart1* (Visual Basic) または*WebPart1.cs* (C# の場合) を開きます。
+1. **ソリューションエクスプローラー** で、 *WebPart1* (Visual Basic) または *WebPart1.cs* (C# の場合) を開きます。
 
      コード エディターで Web パーツ コード ファイルが開きます。
 
@@ -116,7 +118,7 @@ Web パーツに表示するコントロールを指定するには、Web パー
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
-6. `WebPart1` クラスに次のメソッドを追加します。 このコードは、以下のタスクを実行します。
+6. 次のメソッドを `WebPart1` クラスに追加します。 このコードは、以下のタスクを実行します。
 
    - レンダリングされた Web パーツの Web パーツ動詞メニューに表示する動詞を作成します。
 

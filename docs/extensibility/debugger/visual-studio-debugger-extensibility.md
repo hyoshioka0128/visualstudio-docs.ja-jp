@@ -1,5 +1,7 @@
 ---
 title: Visual Studio デバッガーの機能拡張 |Microsoft Docs
+description: この記事では、Visual Studio デバッガーの機能拡張について説明し、Visual Studio のデバッグに関する記事へのリンクを示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff4222b555fab73914776725fc79581f29fa5e53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a072373ce0cf7633c595eb549455e6ecd62df887
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712506"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995994"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio デバッガーの機能拡張
 Visual Studio には、完全にインタラクティブなソースコードデバッガーが含まれており、プログラムのバグを追跡するための強力で使いやすいツールを提供します。 デバッガーは、Visual Basic、C#、C/c + +、および JavaScript を完全にサポートしています。 ただし、 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=21835)から入手できるを使用すると、他のプログラミング言語を同じ豊富な機能を備えたデバッガーでサポートできます。

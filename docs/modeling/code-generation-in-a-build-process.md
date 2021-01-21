@@ -1,5 +1,7 @@
 ---
 title: ビルド処理でのコード生成
+description: Visual Studio ソリューションのビルドプロセスの一部として、テキスト変換を呼び出す方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd7538782bff80ee12ac0aa0e66c0daa4da2d5c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546719"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363563"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>ビルド処理でのテキスト変換の呼び出し
 
@@ -51,13 +53,13 @@ Visual Studio がインストールされていないコンピューターで [�
   - Microsoft.VisualStudio.TextTemplating.Modeling.15.0.dll
 
 > [!TIP]
-> `MissingMethodException`ビルドサーバーで TextTemplating ビルドターゲットを実行しているときに、Microsoft CodeAnalysis メソッドのを取得した場合は、roslyn アセンブリが、ビルド実行可能ファイルと同じディレクトリ (たとえば、 *msbuild.exe*) にある*roslyn*という名前のディレクトリにあることを確認してください。
+> `MissingMethodException`ビルドサーバーで TextTemplating ビルドターゲットを実行しているときに、Microsoft CodeAnalysis メソッドのを取得した場合は、roslyn アセンブリが、ビルド実行可能ファイルと同じディレクトリ (たとえば、 *msbuild.exe*) にある *roslyn* という名前のディレクトリにあることを確認してください。
 
 ## <a name="edit-the-project-file"></a>プロジェクト ファイルを編集する
 
 プロジェクトファイルを編集して、MSBuild の一部の機能を構成します。たとえば、テキスト変換ターゲットをインポートします。
 
-**ソリューションエクスプローラー**で、プロジェクトの右クリックメニューから [**アンロード**] を選択します。 これにより XML エディターで .csproj または .vbproj ファイルを編集できるようになります。 編集が完了したら、[ **再読み込み**] を選択します。
+**ソリューションエクスプローラー** で、プロジェクトの右クリックメニューから [**アンロード**] を選択します。 これにより XML エディターで .csproj または .vbproj ファイルを編集できるようになります。 編集が完了したら、[ **再読み込み**] を選択します。
 
 ## <a name="import-the-text-transformation-targets"></a>テキスト変換ターゲットをインポートする
 
@@ -153,13 +155,13 @@ TransformFile ではワイルドカードを使用できます。
 <PropertyGroup>
     <BeforeTransform>CustomPreTransform</BeforeTransform>
     <AfterTransform>CustomPostTransform</AfterTransform>
-  </PropertyGroup>
-  <Target Name="CustomPreTransform">
+</PropertyGroup>
+<Target Name="CustomPreTransform">
     <Message Text="In CustomPreTransform..." Importance="High" />
-  </Target>
-  <Target Name="CustomPostTransform">
+</Target>
+<Target Name="CustomPostTransform">
     <Message Text="In CustomPostTransform..." Importance="High" />
-  </Target>
+</Target>
 ```
 
 `AfterTransform` では、ファイルのリストを参照できます。
@@ -258,7 +260,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 
 **$ (Solutiondir)** などの Visual Studio マクロは、MSBuild では動作しません。 その代わりに、プロジェクト プロパティを使用できます。
 
-*.Csproj*ファイルまたは *.vbproj*ファイルを編集して、プロジェクトのプロパティを定義します。 この例では、 **Mylibfolder**という名前のプロパティを定義します。
+*.Csproj* ファイルまたは *.vbproj* ファイルを編集して、プロジェクトのプロパティを定義します。 この例では、 **Mylibfolder** という名前のプロパティを定義します。
 
 ```xml
 <!-- Define a project property, myLibFolder: -->

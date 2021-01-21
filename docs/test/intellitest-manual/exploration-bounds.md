@@ -1,5 +1,7 @@
 ---
 title: 探索の範囲 | Microsoft IntelliTest 開発者テスト ツール
+description: PexSettingsAttributeBase は、属性としての設定範囲に対する抽象基底クラスです。 名前付きプロパティを使用して設定を変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 2a57d79fb64675f90edf50e6a0d7d50b8a3c6fd7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 075eaa4613a1afe6bdeb83a9e46e639b073a200a
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315214"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667924"
 ---
 # <a name="exploration-bounds"></a>探索の範囲
 
@@ -166,7 +168,7 @@ IntelliTest が探索中に考慮する一意のパスの最大数。
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-IntelliTest が生成する必要があるテストの種類を示します。 指定できる値は、
+IntelliTest が生成する必要があるテストの種類を示します。 次の値を指定できます。
 
 * **すべて** - 想定の違反を含む、すべての場合にテストを生成します。
 * **FailuresAndIncreasedBranchHits** (既定) - すべての固有エラーの場合、また、[TestEmissionBranchHits](#testemissionbranchhits) で制御される、テスト ケースのカバレッジが増えるたびにテストを生成します。
@@ -186,4 +188,4 @@ IntelliTest が生成する必要があるテストの種類を示します。 �
 
 ## <a name="got-feedback"></a>フィードバックが欲しい場合
 
-ご意見や機能に関するご要望を[開発者コミュニティ](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)で投稿してください。
+ご意見や機能に関するご要望を[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で投稿してください。

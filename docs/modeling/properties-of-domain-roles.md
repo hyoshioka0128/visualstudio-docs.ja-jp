@@ -1,5 +1,7 @@
 ---
 title: ドメイン ロールのプロパティ
+description: ドメインロールに関連付けられているプロパティ (コレクション型、Custome 属性など) と、参照可能なプロパティについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,15 +9,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c1c62126d65107bb25e3c4a475a794116c47193
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544145"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362341"
 ---
 # <a name="properties-of-domain-roles"></a>ドメイン ロールのプロパティ
-次の表のプロパティは、ドメインロールに関連付けられています。 ドメインロールの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
+次の表のプロパティは、ドメインロールに関連付けられています。 ドメインロールの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [Domain-Specific 言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
 
 |プロパティ|説明|Default|
 |-|-|-|
@@ -31,7 +33,7 @@ ms.locfileid: "85544145"
 |削除の伝達|`True` 関連付けられたリンクが削除されたときにこのロールを担う要素を削除する場合は。|`True` 埋め込みロールのターゲット。<br /><br /> `False` 他のロールの場合。|
 |プロパティ名|ロールプレーヤーのコードで生成されたプロパティの名前。 この名前に空白を含めることはできません。|このロールがゼロ対一または一対一の複数要素の接続性を持つ場合の、反対側のロールの名前。それ以外の場合は、反対側のロールの複数化名。|
 |ロールプレーヤー|リレーションシップでこのロールを再生できる要素のドメインクラス。 このプロパティは読み取り専用です。|このロールのロールプレーヤーのドメインクラス。|
-|Notes|ドメインロールに関連付けられている非公式のメモ。|<なし\>|
+|メモ|ドメインロールに関連付けられている非公式のメモ。|<なし\>|
 |カテゴリ|生成されたデザイナーの [ **プロパティ** ] ウィンドウに生成されたプロパティが表示されるカテゴリ。 このプロパティが空の場合、生成されたプロパティは [その **他** ] カテゴリの下に表示されます。|<なし\>|
 |説明|コードをドキュメント化するために使用される説明。生成されたデザイナーの UI で使用されます。<br /><br /> この説明は、ロールプレーヤークラスで生成されたプロパティの IntelliSense ツールヒントに表示されます。|`Description for`*ロールの完全な名前*|
 |表示名|生成されたデザイナーに表示されるドメインロールの名前。|Name プロパティの調整された値。|

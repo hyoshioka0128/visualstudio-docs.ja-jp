@@ -1,5 +1,7 @@
 ---
 title: カスタムエディターでのドキュメントデータとドキュメントビュー |Microsoft Docs
+description: ドキュメントデータオブジェクトとドキュメントビューオブジェクトであるカスタムエディターのコンポーネントについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 608396c79816606b855d49776390b0b1bf9044d7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 576b195663f379b1f2fd327ce6a8806ddb43deda
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012465"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994876"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>カスタムエディターでのドキュメントデータとドキュメントビュー
 カスタムエディターは、ドキュメントデータオブジェクトとドキュメントビューオブジェクトの2つの部分で構成されます。 名前が示すように、ドキュメントデータオブジェクトは表示されるテキストデータを表します。 同様に、ドキュメントビューオブジェクト (または "ビュー") は、ドキュメントデータオブジェクトを表示する1つまたは複数のウィンドウを表します。
@@ -34,9 +36,9 @@ ms.locfileid: "90012465"
 
  IDE は、実行中のドキュメントテーブル内の各エントリの項目識別子 (ItemID) を照合することによって、イベント (たとえば、ドキュメントを含むソリューションが閉じられたとき) をビューに通知します。 詳細については、「 [document table の実行](../extensibility/internals/running-document-table.md)」を参照してください。
 
- カスタムエディターのビューを作成するには、2つのオプションがあります。 1つは、埋め込み先アクティブ化モデルです。このモデルでは、ActiveX コントロールまたはドキュメントデータオブジェクトを使用して、ビューがウィンドウでホストされます。 2つ目は簡略化された埋め込みモデルで、ビューはでホストされ、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> ウィンドウコマンドを処理するために実装されます。 インプレースアクティブ化モデルの詳細については、「 [インプレースアクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015)」を参照してください。 簡略化された埋め込みモデルについては、「簡略化された [埋め込み](../extensibility/simplified-embedding.md)」を参照してください。
+ カスタムエディターのビューを作成するには、2つのオプションがあります。 1つは、埋め込み先アクティブ化モデルです。このモデルでは、ActiveX コントロールまたはドキュメントデータオブジェクトを使用して、ビューがウィンドウでホストされます。 2つ目は簡略化された埋め込みモデルで、ビューはでホストされ、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> ウィンドウコマンドを処理するために実装されます。 インプレースアクティブ化モデルの詳細については、「 [インプレースアクティブ化](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)」を参照してください。 簡略化された埋め込みモデルについては、「簡略化された [埋め込み](../extensibility/simplified-embedding.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)
 - [簡略化された埋め込み](../extensibility/simplified-embedding.md)

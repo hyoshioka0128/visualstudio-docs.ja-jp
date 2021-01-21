@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 03/02/2020
+ms.date: 10/21/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906068"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538138"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure へ移行するためのアプリケーションのクラウド レディネスを識別したり、移行中と移行後両方のアプリの進行状況を監視したりできます。
@@ -26,14 +26,14 @@ ms.locfileid: "85906068"
 2. [ツール] カテゴリ内で、CAST Highlight 特典タイルを見つけ、 **[コードを取得]** をクリックします。
 
    > [!div class="mx-imgBorder"]
-   > ![CAST Highlight 特典タイル](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
+   > ![CAST Highlight 特典タイル](_img/vs-cast-highlight/vs-cast-highlight-tile.png "開始するには、CAST Highlight 特典タイルの [コードの取得] をクリックします。")
 
 0. コードが正常に取得されたことを知らせるメッセージが表示されます。  **[アクティブ化]** をクリックします。 (今すぐアクティブ化しない場合は、サブスクリプション ポータルで CAST Highlight タイルにいつでも戻ることができます。  [コードを取得] リンクが [アクティブ化] に変わり、それをクリックすると、アクティブ化プロセスが再開されます。)
 
 0. CAST Highlight ページにリダイレクトされます。ここでご自分のサブスクリプションの機能を調べることができます。  アカウントを作成する準備ができたら、Web フォームにご自分の連絡先情報を入力して、 **[送信]** をクリックするだけです。
 
     > [!div class="mx-imgBorder"]
-    > ![CAST Highlight のランディング ページ](_img/vs-cast-highlight/vs-cast-highlight-landing.png)
+    > ![CAST Highlight のランディング ページ](_img/vs-cast-highlight/vs-cast-highlight-landing.png "個人情報を入力して、CAST サブスクリプションをアクティブにします。")
 
    > [!NOTE]
    > CAST Highlight 特典のアクティブ化は、1 組織につき 10 個に制限されています。  組織で 10 個のアクティブ化を既に使用している場合は、CAST Highlight 特典をアクティブ化することはできず、詳細情報を含む電子メールが届きます。
@@ -78,9 +78,9 @@ ms.locfileid: "85906068"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 1 つのアプリを 3 か月間評価する                                                             |  いいえ。  新しいサブスクライバーのみが使用できます                  |
-| Visual Studio Professional with GitHub Enterprise | VL                                       | 1 つのアプリを 3 か月間評価する                                                            |  いいえ。  新しいサブスクライバーのみが使用できます                  |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                       | 1 つのアプリを 3 か月間評価する                                                            |  いいえ。  新しいサブスクライバーのみが使用できます                  |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A           |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
@@ -102,10 +102,10 @@ ms.locfileid: "85906068"
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 サブスクリプションに付属している Azure DevTest の個人クレジット特典をまだアクティブ化していない場合は、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスして、[ツール] カテゴリで [Azure] タイルをクリックして、Azure サブスクリプションを設定し、Azure DevTest の個人クレジットを引き換えます。

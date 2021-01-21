@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって新しい Visio 図面を作成する'
+description: プログラムを使用して新しい Microsoft Visio 図面ドキュメントを作成し、開いている Visio 図面のドキュメントコレクションに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 171ad93caf6b5c13d000073a0d7f7e82282b9b4a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59c1fe0264a294692bea04b05e5e143fa28be801
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541532"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526841"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>方法: プログラムによって新しい Visio 図面を作成する
   Microsoft Office Visio 描画図面を新規に作成する場合、開いている Visio 図面の `Microsoft.Office.Interop.Visio.Documents` コレクションにその図面を追加します。 これにより、`Microsoft.Office.Interop.Visio.Documents.Add` メソッドで新しい Visio 描画図面が作成されます。 詳細については、 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) メソッドの VBA リファレンス ドキュメントを参照してください。
@@ -53,7 +55,7 @@ ms.locfileid: "85541532"
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
 
 ## <a name="create-documents-based-on-existing-templates"></a>既存のテンプレートに基づいてドキュメントを作成する
- メソッドは、 `Microsoft.Office.Interop.Visio.Documents.Add` 既存の Visio テンプレート ( *.vst*ファイル) に基づく新しいドキュメント ( *.vsd*ファイル) を作成できます。 このメソッドは、テンプレート ワークスペースの一部である、ステンシル、スタイル、および設定をコピーします。 テンプレートのファイル名と完全修飾パスを指定する必要があります。
+ メソッドは、 `Microsoft.Office.Interop.Visio.Documents.Add` 既存の Visio テンプレート ( *.vst* ファイル) に基づく新しいドキュメント ( *.vsd* ファイル) を作成できます。 このメソッドは、テンプレート ワークスペースの一部である、ステンシル、スタイル、および設定をコピーします。 テンプレートのファイル名と完全修飾パスを指定する必要があります。
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>既存のテンプレートに基づいて新しい図面を作成するには
 

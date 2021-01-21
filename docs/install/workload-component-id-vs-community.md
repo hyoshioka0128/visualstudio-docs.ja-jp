@@ -1,12 +1,12 @@
 ---
 title: Visual Studio Community のワークロード ID とコンポーネント ID
 titleSuffix: ''
-description: ワークロード ID とコンポーネント ID を使用して、コマンドラインを使用して Visual Studio をインストールするか、VSIX マニフェストで依存関係として指定します。
+description: Visual Studio Community のワークロード ID とコンポーネント ID を使用し、コマンドラインから Visual Studio をインストールするか、VSIX マニフェストで依存関係を指定します。
 keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 08/05/2020
+ms.date: 11/10/2020
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: d5c45567ce5e354f15f93740e31c8efd29eb20ee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 744364dd18a784567dad49a960da08dc48de9606
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87805821"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847026"
 ---
 # <a name="visual-studio-community-component-directory"></a>Visual Studio Community のコンポーネント ディレクトリ
 

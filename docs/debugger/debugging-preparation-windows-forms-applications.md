@@ -1,6 +1,7 @@
 ---
 title: Windows フォームアプリのデバッグを準備する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio で Windows フォーム プロジェクト テンプレートによって作成された Windows フォーム アプリケーションをデバッグするための準備手順を行います。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9e98411a009ea4345b567cbc38e6cf94c037323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ccb195d6c4a35e4ca3b89c5505ab14c45a5d555
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916388"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726814"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>デバッグの準備: Windows フォーム アプリケーション
 Windows フォーム プロジェクト テンプレートは、Windows フォーム アプリケーションを作成します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、この種類のアプリケーションを簡単にデバッグできます。 詳細については、[Windows アプリケーション プロジェクトの作成](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))に関するページを参照してください。

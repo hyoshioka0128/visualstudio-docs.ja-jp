@@ -1,5 +1,7 @@
 ---
 title: '[エディット コンティニュ] エラー メッセージ ダイアログ ボックス | Microsoft Docs'
+description: エディット コンティニュが、コード変更には対応していないと報告してくる場合があります。 この記事では、考えられる理由について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/15/2018
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df95eae689f7c3abbb0d75a7557ce749bdceee5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef34889b838e2f7eaa92420eec90db9def57e65
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188224"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862846"
 ---
 # <a name="edit-and-continue-error-message"></a>[エディット コンティニュ] エラー メッセージ
 

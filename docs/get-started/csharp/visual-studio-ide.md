@@ -1,8 +1,11 @@
 ---
 title: C# 開発者向けの概要
+description: Visual Studio 統合開発環境の概要と、C# 開発者向けに調整する方法について説明します。
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
-ms.custom: get-started
+ms.custom:
+- get-started
+- SEO-VS-2020
 ms.topic: overview
 author: TerryGLee
 ms.author: tglee
@@ -11,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ade9dbfb17aa4330b572ac96080117562498a338
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 688a4377b9e4bd6f80d65744955dc84908a18e7a
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85771131"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94904015"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Visual Studio IDE へようこそ | C\#
 
@@ -28,7 +31,7 @@ ms.locfileid: "85771131"
 
 1. メニュー バーで、 **[ツール]**  >  **[設定のインポートとエクスポート]** の順にクリックします。
 
-2. **設定のインポートとエクスポート ウィザード**の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
+2. **設定のインポートとエクスポート ウィザード** の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
 
 3. **[現在の設定の保存]** ページで、現在の設定を保存するオプションを選択するか選択せずに、 **[次へ]** を選択します (設定をカスタマイズしていない場合は、 **[No, just reset settings, overwriting my current settings]\(いいえ、設定をリセットして現在の設定を上書きするだけです\)** を選択します)。
 

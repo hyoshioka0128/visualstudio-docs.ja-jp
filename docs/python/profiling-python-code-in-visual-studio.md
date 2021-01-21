@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e6a37301477b43063169143456fc21a3c783968
+ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531782"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97917917"
 ---
 # <a name="profile-python-code"></a>Python コードのプロファイリング
 
@@ -23,7 +23,7 @@ CPython ベースのインタープリターを使っている場合、Python �
 
 ## <a name="profiling-for-cpython-based-interpreters"></a>CPython ベースのインタープリターのプロファイリング
 
-**[分析]**  >  **[Launch Python Profiling]\(Python プロファイリングの開始\)** メニュー コマンドでプロファイリングを開始すると、構成ダイアログが開きます。
+**[デバッグ]**  >  **[Launch Python Profiling]\(Python プロファイリングの開始\)** メニュー コマンドを使用してプロファイリングを開始すると、構成ダイアログが開きます。
 
 ![プロファイリング構成ダイアログ](media/profiling-start.png)
 
@@ -32,7 +32,7 @@ CPython ベースのインタープリターを使っている場合、Python �
 ![プロファイリング パフォーマンス レポート](media/profiling-results.png)
 
 > [!Note]
-> 現時点では、Visual Studio は、このレベルのフル アプリケーション プロファイリングのみをサポートしています。今後の機能に関するフィードバックをお寄せください。 このページの下部にある **[製品のフィードバック]** ボタンをお使いください。
+> Python アプリケーションをプロファイリングすると、Visual Studio によってプロセスの有効期間にわたってデータが収集されます。 現時点では、プロファイリングを一時停止することはできません。 今後の機能に関するフィードバックをお寄せください。 このページの下部にある **[製品のフィードバック]** ボタンをお使いください。
 
 ## <a name="profiling-for-ironpython"></a>IronPython のプロファイリング
 
@@ -40,4 +40,4 @@ IronPython は CPython ベースのインタープリターではないため、
 
 代わりに、ターゲット アプリケーションとして *ipy.exe* を直接起動し、適切な引数を使ってスタートアップ スクリプトを起動することにより、Visual Studio .NET のプロファイラーを使います。 すべての Python コードを確実にデバッグし、プロファイリングできるようにするには、コマンド ラインに `-X:Debug` を含めます。 この引数により、IronPython ランタイムとコードの両方で費やされた時間を含むパフォーマンス レポートが生成されます。 コードは、完全修飾名を使って識別されます。
 
-または、IronPython には独自の組み込みプロファイリングがありますが、現在は適切なビジュアライザーがありません。 利用できるものについては、「[An IronPython Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/)」(IronPython プロファイラー) (MSDN ブログ) をご覧ください。
+または、IronPython には独自の組み込みプロファイリングがありますが、現在は適切なビジュアライザーがありません。 利用できるものについては、「[An IronPython Profiler](/archive/blogs/curth/an-ironpython-profiler)」(IronPython プロファイラー) (MSDN ブログ) をご覧ください。

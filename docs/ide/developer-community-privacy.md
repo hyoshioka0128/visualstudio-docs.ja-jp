@@ -1,5 +1,7 @@
 ---
 title: 問題レポートのプライベート データ
+description: Developer Community でのレビュー用に問題のレポートを作成するときに、プライベートなデータの安全性を高める方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5b8e2d65454d75c08d3efc26af2fd93b22153b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: dccf962aef39227388f86134a9dd1f8c96440a3c
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284803"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668548"
 ---
 # <a name="developer-community-data-privacy"></a>開発者コミュニティのデータのプライバシー
 
-既定では、[開発者コミュニティ](https://developercommunity.visualstudio.com/)の問題レポートのすべての情報 (すべてのコメントと返信を含む) は、公開されます。 これには、コミュニティ全体が問題、解決策、および他のユーザーが見つけた回避策を閲覧できるという利点があります。 ただし、自分のデータや ID のプライバシーについて心配がある場合には、オプションがあります。
+既定では、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)の問題レポートのすべての情報 (すべてのコメントと返信を含む) は、公開されます。 これには、コミュニティ全体が問題、解決策、および他のユーザーが見つけた回避策を閲覧できるという利点があります。 ただし、自分のデータや ID のプライバシーについて心配がある場合には、オプションがあります。
 
 ## <a name="identity-privacy"></a>ID プライバシー
 
@@ -47,9 +49,9 @@ ms.locfileid: "85284803"
 
 ## <a name="data-we-collect"></a>収集されるデータ
 
-**問題の報告**が Visual Studio インストーラーから開始された場合、最新のセットアップ ログが収集されます。
+**問題の報告** が Visual Studio インストーラーから開始された場合、最新のセットアップ ログが収集されます。
 
-**問題の報告**が Visual Studio から開始された場合、次の 1 つ以上の種類のデータが収集されます。
+**問題の報告** が Visual Studio から開始された場合、次の 1 つ以上の種類のデータが収集されます。
 
 - イベント ログからの Watson エントリと .NET エントリ
 
@@ -68,6 +70,8 @@ ms.locfileid: "85284803"
 - Service Hub ログと MEF エラー ログ (存在する場合)
 
 - Python ログ (存在する場合)
+
+- Razor LSP エディター ログ (存在する場合)
 
 - Windows フォーム ログ (存在する場合)
 

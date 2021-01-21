@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションを開発するようにコンピューターを構成する
+description: サポートされているバージョンの Visual Studio、.NET Framework、Microsoft Office をインストールして、Microsoft Office の VSTO アドインとカスタマイズを作成できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801842"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847261"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Office ソリューションを開発するようにコンピューターを構成する
 
@@ -25,7 +27,7 @@ Microsoft Office の VSTO アドインおよびカスタマイズを作成する
 
 |ソフトウェア|サポートされているバージョン|
 |--------------|------------------------|
-|Visual Studio 2017| **Office/SharePoint 開発**ワークロードを含む任意のエディション。|
+|Visual Studio 2017| **Office/SharePoint 開発** ワークロードを含む任意のエディション。|
 |.NET Framework|-.NET Framework 4 以降。|
 |Microsoft Office|<ul><li>Enterprise 用の Microsoft 365 アプリを含む Office のスイートエディション。</li><li>次のいずれかのスタンドアロン アプリケーション:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 および Office 2010 のみ)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) は Office の一部としてインストールされている必要があります。 **重要:** Office 2010 アプリケーションの実行時のバージョンはサポートされていません。|
 

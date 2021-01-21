@@ -1,5 +1,8 @@
 ---
-title: FIPS 140-2 承認の操作モードを Visual Studio でサポート
+title: Visual Studio による FIPS のサポート
+titleSuffix: ''
+description: Federal Information Processing Standard Publication 140-2 で承認されている Windows、Azure、.NET の操作モードの Visual Studio によるサポートについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/14/2020
 ms.topic: conceptual
 author: TerryGLee
@@ -7,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d06204fd1ef6ee2deb5eadc514af1ede8ae9bb6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ddf7831df3a820c757120159d6d367b884d224a4
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84180494"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597484"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>FIPS 140-2 承認の操作モードを Visual Studio でサポート
 

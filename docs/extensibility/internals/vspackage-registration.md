@@ -1,5 +1,7 @@
 ---
 title: VSPackage Registration |Microsoft Docs
+description: VSPackage の登録について説明します。パッケージは、インストールされたことを Visual Studio に通知し、レジストリに情報を書き込むことによって読み込む必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5941a0bc5d9f9f983a616dcc22cf1260d0911fa8
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012127"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487986"
 ---
 # <a name="vspackage-registration"></a>VSPackage の登録
 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、インストールされていることを通知し、読み込む必要があります。 このプロセスは、レジストリに情報を書き込むことによって行われます。 これは、一般的なインストーラーのジョブです。
@@ -40,7 +42,7 @@ Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、イ
 > [!NOTE]
 > RegPkg ツールは再頒布可能ではなく、ユーザーのシステムに VSPackage を登録するために使用することはできません。
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>インストール時に Vspackage が自己登録できない理由
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>インストール時に Vspackage を Self-Register しない理由
  VSPackage インストーラーは自己登録に依存しないようにする必要があります。 一見すると、VSPackage のレジストリ値を VSPackage 自体に残しておくのは良いアイデアだと思います。 開発者が日常的な作業とテストに使用できるレジストリ値を必要とする場合は、インストーラーでレジストリデータのコピーを個別に保持しないようにすることをお勧めします。 インストーラーは、VSPackage 自体を使用してレジストリ値を書き込むことができます。
 
  理論的には、自己登録には VSPackage のインストールに適していない欠陥がいくつかあります。
@@ -55,6 +57,6 @@ Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、イ
 
 - コンポーネントがソースとして指定されており、SelfReg テーブルに一覧表示されている場合、自己登録コードはタイプライブラリなどのネットワークリソースへのアクセスを拒否できます。 このため、管理インストール中にコンポーネントのインストールが失敗する可能性があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)
 - [マネージドパッケージの登録](/previous-versions/bb166783(v=vs.100))

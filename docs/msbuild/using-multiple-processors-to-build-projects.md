@@ -1,5 +1,7 @@
 ---
 title: 複数のプロセッサを使用したプロジェクトのビルド | Microsoft Docs
+description: 使用可能なプロセッサごとに個別のビルド プロセスを作成することにより、複数のプロセッサまたはコアを持つシステムを MSBuild で活用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631303"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047578"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>複数のプロセッサを使用したプロジェクトのビルド
 
@@ -36,7 +38,7 @@ MSBuild では、複数のプロセッサまたはマルチコア プロセッ�
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++ のプロジェクト ファイル (.vcxproj) とソリューション ファイル (.sln)
 
- C++ のプロジェクト ファイル ( *.vcxproj*) とソリューション ファイル ( *.sln*) は、どちらも [MSBuild タスク](../msbuild/msbuild-task.md)に渡すことができます。 C++ プロジェクトでは、VCWrapperProject が呼び出された後、内部 MSBuild プロジェクトが作成されます。 C++ ソリューションについては、SolutionWrapperProject が作成された後、内部 MSBuild プロジェクトが作成されます。 いずれの場合も、生成されるプロジェクトは他の MSBuild プロジェクトと同じように扱われます。
+ C++ のプロジェクト ファイル ( *.vcxproj* ) とソリューション ファイル ( *.sln* ) は、どちらも [MSBuild タスク](../msbuild/msbuild-task.md)に渡すことができます。 C++ プロジェクトでは、VCWrapperProject が呼び出された後、内部 MSBuild プロジェクトが作成されます。 C++ ソリューションについては、SolutionWrapperProject が作成された後、内部 MSBuild プロジェクトが作成されます。 いずれの場合も、生成されるプロジェクトは他の MSBuild プロジェクトと同じように扱われます。
 
 ## <a name="multi-process-execution"></a>マルチプロセス実行
 

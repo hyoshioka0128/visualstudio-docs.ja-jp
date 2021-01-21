@@ -1,5 +1,7 @@
 ---
 title: '[コマンド] ウィンドウ'
+description: '[コマンド] ウィンドウを使用して、Visual Studio IDE でコマンドまたはエイリアスを直接実行する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +18,15 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75570350"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040899"
 ---
 # <a name="command-window"></a>[コマンド] ウィンドウ
-**[コマンド]** ウィンドウは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の統合開発環境 (IDE) でコマンドやエイリアスを実行するときに使用します。 メニュー コマンドと、メニューに表示されないコマンドの両方を実行できます。 **[コマンド]** ウィンドウを表示するには、 **[表示]** メニューの **[その他のウィンドウ]** を選択し、 **[コマンド ウィンドウ]** をクリックします。
+**[コマンド]** ウィンドウは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] の統合開発環境 (IDE) でコマンドやエイリアスを実行するときに使用します。 メニュー コマンドと、メニューに表示されないコマンドの両方を実行できます。 **[コマンド]** ウィンドウを表示するには、**[表示]** メニューの **[その他のウィンドウ]** を選択し、**[コマンド ウィンドウ]** をクリックします。
 
 ## <a name="displaying-the-values-of-variables"></a>変数の値の表示
 変数 `varA` の値を確認するには、[印刷コマンド](../../ide/reference/print-command.md)を使用します。
@@ -44,7 +46,7 @@ ms.locfileid: "75570350"
 ## <a name="entering-commands"></a>コマンドの入力
 不等号 (`>`) は改行を示す記号としてコマンド ウィンドウの左端に表示されます。 上方向キーおよび下方向キーを使用して、以前に入力したコマンドの間をスクロールします。
 
-|タスク|解決策:|例|
+|タスク|解決策|例|
 |----------|--------------|-------------|
 |式を評価する。|式の先頭に疑問符 (`?`) を付けます。|`? myvar`|
 |[イミディエイト] ウィンドウに切り替る。|不等号 (>) を付けずにウィンドウに「`immed`」と入力します。|`immed`|
@@ -69,7 +71,7 @@ ms.locfileid: "75570350"
 
 **[コマンド]** ウィンドウの場合、等号 (=) は、比較演算子と解釈されます。 **[コマンド]** ウィンドウでは、代入演算子は使用できません。 したがって、たとえば変数 `varA` と変数 `varB` の値が異なる場合、コマンド `>Debug.EvaluateStatement(varA=varB)` は `False` の値を返します。
 
-一方、 **[イミディエイト]** ウィンドウの場合、等号 (=) は、代入演算子と解釈されます。 たとえば、コマンド `>Debug.EvaluateStatement(varA=varB)` は変数 `varA` に変数 `varB` の値を代入します。
+一方、**[イミディエイト]** ウィンドウの場合、等号 (=) は、代入演算子と解釈されます。 たとえば、コマンド `>Debug.EvaluateStatement(varA=varB)` は変数 `varA` に変数 `varB` の値を代入します。
 
 ## <a name="parameters-switches-and-values"></a>パラメーター、スイッチ、および値
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] コマンドには、引数、スイッチ、値を必要とするコマンドと省略できるコマンドがあります。 このようなコマンドを処理するときは、いくつかの規則が適用されます。 リッチ コマンドの例を次に示し、用語について説明します。
@@ -78,7 +80,7 @@ ms.locfileid: "75570350"
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
-この例の用語の意味は次のとおりです。
+この例では、
 
 - `Edit.ReplaceInFiles` はコマンドです。
 
@@ -98,7 +100,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 複数の短い形式のスイッチがグループ化され、値が指定された場合、その値はすべてのスイッチに適用されます。 たとえば、`/pgm:123` は `/p:123 /g:123 /m:123` と同等です。 グループ内のいずれかのスイッチが値を受け付けない場合は、エラーになります。
 
 ## <a name="escape-characters"></a>エスケープ文字
-コマンド ラインにカレット (^) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 次に例を示します。
+コマンド ラインにカレット (^) 文字があると、その直後の文字は制御文字としてではなくリテラル文字として解釈されます。 したがって、引用符 (")、スペース、先頭のスラッシュ、カレット、その他の任意のリテラル文字をパラメーターまたはスイッチの値に直接埋め込むことができます。ただし、スイッチ名には埋め込むことができません。 たとえば、次のように入力します。
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -107,9 +109,9 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。 ここに示した例では、"^t" というパターンを検索する方法を示しています。
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>スペースを含むパス名には引用符を使用する
-たとえば、スペースを含むパスを持つファイルを開く場合は、スペースを含むパスまたはパス セグメントを二重引用符で囲む必要があります (**C:\\"Program Files"** または **"C:\Program Files"** )。
+たとえば、スペースを含むパスを持つファイルを開く場合は、スペースを含むパスまたはパス セグメントを二重引用符で囲む必要があります (**C:\\"Program Files"** または **"C:\Program Files"**)。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)

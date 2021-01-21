@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: カスタム テキスト テンプレート ホストの作成'
+description: Visual Studio の外部からテキストテンプレート変換機能を使用する場合に、カスタムホストを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3979f93de6040078a5b1e4315cadc4f7faa4728e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532224"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361054"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>チュートリアル: カスタム テキスト テンプレート ホストを作成する
 
-*テキストテンプレートホスト*は、*テキストテンプレート変換エンジン*を実行できる環境を提供します。 ホストは、エンジンとファイル システムとの対話を管理します。 ファイルまたはアセンブリを必要とするエンジンまたは *ディレクティブプロセッサ* は、ホストからリソースを要求できます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、「 [テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
+*テキストテンプレートホスト* は、*テキストテンプレート変換エンジン* を実行できる環境を提供します。 ホストは、エンジンとファイル システムとの対話を管理します。 ファイルまたはアセンブリを必要とするエンジンまたは *ディレクティブプロセッサ* は、ホストからリソースを要求できます。 ホストは、要求されたリソースをディレクトリとグローバル アセンブリ キャッシュ内で探すことができます。 詳細については、「 [テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
 
 Visual Studio の外部から *テキストテンプレート変換* 機能を使用する場合、またはその機能をカスタムツールに統合する場合は、カスタムホストを作成できます。 カスタムホストを作成するには、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))から継承するクラスを作成する必要があります。 個々の方法のドキュメントについては、「 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))」を参照してください。
 
@@ -801,7 +803,7 @@ Visual Studio の外部から *テキストテンプレート変換* 機能を�
 
      カスタム ホスト アプリケーションが実行され、テキスト テンプレート変換プロセスが完了します。
 
-5. **Windows エクスプローラー**で、TestTemplate.tt ファイルが格納されているフォルダーに移動します。
+5. **Windows エクスプローラー** で、TestTemplate.tt ファイルが格納されているフォルダーに移動します。
 
      このフォルダーには、TestTemplate1.txt ファイルも含まれています。
 

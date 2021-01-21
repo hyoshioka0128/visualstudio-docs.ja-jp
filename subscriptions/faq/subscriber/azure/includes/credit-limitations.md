@@ -8,11 +8,11 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_8
 ms.openlocfilehash: ba477ecb7e204a395cbe4b2e550beb82ec208479
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386261"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838269"
 ---
 ## <a name="are-there-any-other-limitations-i-should-be-aware-of"></a>知っておくべき制限事項は他にありますか?
 

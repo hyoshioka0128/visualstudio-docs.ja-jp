@@ -1,6 +1,6 @@
 ---
 title: NuGet を使用した TypeScript コードのコンパイルとビルド
-description: Visual Studio で TypeScript をコンパイルしてビルドする方法について説明します。
+description: NuGet パッケージを使用し、Visual Studio プロジェクトに Typescript サポートを追加する方法について説明します。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ac917248915129b8d93dc776ac7d35a2ed227069
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 929c17c9cbd2a0987bebca02c70b3b751c19fc9a
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87454623"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846821"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>TypeScript コードのコンパイル (ASP.NET Core)
 
@@ -107,6 +107,10 @@ Visual Studio がインストールされている場合は、バンドルされ
 タスク ランナーで gulp を使用してアプリをビルドする例については、[ASP.NET Core と TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html) に関するページをご覧ください。
 
 Visual Studio で、想定したバージョンとは異なるバージョンの Node.js またはサード パーティ製ツールが使用される問題が発生した場合は、Visual Studio で使用するパスの設定が必要になることがあります。 **[ツール]**  >  **[オプション]** を選択します。 **[プロジェクトとソリューション]** で、 **[Web パッケージ管理]**  >  **[外部 Web ツール]** を選択します。
+
+### <a name="run-the-application"></a>アプリケーションの実行
+
+アプリをコンパイルした後に実行する手順については、[初めての Node.js アプリの作成](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application)に関するページを参照してください。
 
 ### <a name="nuget-package-structure-details"></a>NuGet パッケージ構造の詳細
 

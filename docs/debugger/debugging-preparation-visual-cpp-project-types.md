@@ -1,6 +1,7 @@
 ---
 title: C++ プロジェクトのデバッグを準備する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio で、Visual C++ プロジェクト テンプレートによって作成された基本的な種類のプロジェクトをデバッグするための準備に関する情報をお届けします。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e399b28d3ddce07cae263550b536c21ad1db028
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916319"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728305"
 ---
 # <a name="debugging-preparation-c-project-types"></a>デバッグの準備:C++ プロジェクトの種類
 ここでは、[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] プロジェクト テンプレートで作成された基本的なプロジェクトの種類をデバッグする方法について説明します。

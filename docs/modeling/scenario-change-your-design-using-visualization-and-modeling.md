@@ -1,5 +1,6 @@
 ---
-title: 'シナリオ: 視覚化およびモデリングを使用したデザインの変更'
+title: 視覚化およびモデリングを使用して設計を変更する
+description: Visual Studio の視覚化およびモデリング ツールの概要と、これらのツールを使用してデザインを変更する方法について説明します。
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -12,15 +13,16 @@ helpviewer_keywords:
 - walkthroughs [Visual Studio ALM], modeling software
 author: JoshuaPartlow
 ms.author: joshuapa
+ms.custom: SEO-VS-2020
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db584adc01a3f0f161d451d73df6a8deab08b869
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 91b62716c87fafd965652452b6494fe255530e7b
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238895"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363862"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ: 視覚化およびモデリングを使用したデザインの変更
 
@@ -214,9 +216,9 @@ Dinner Now と Lucerne は、作業の進行に伴って、タスクに費やさ
 
 参照:
 
-- [アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts)
+- [アジャイル ツールとアジャイル プロジェクト管理の概要](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)
 
-- [グラフ、ダッシュボード、ウィジェット (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts)
+- [グラフ、ダッシュボード、ウィジェット (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
 - [Project を使用したバックログとタスクの作成](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
@@ -236,13 +238,13 @@ Dinner Now には数多くの自動テストがあり、そのほとんどを引
 
 参照:
 
-- [アプリケーションのテスト](/azure/devops/test/overview?view=vsts)
+- [アプリケーションのテスト](/azure/devops/test/overview?view=vsts&preserve-view=true)
 
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)
 
-- [バージョン コントロールの使用](/azure/devops/repos/tfvc/overview?view=azure-devops)
+- [バージョン コントロールの使用](/azure/devops/repos/tfvc/overview?view=azure-devops&preserve-view=true)
 
-- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
+- [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>視覚化とモデリングを使用してシステムを更新する
 
@@ -264,7 +266,7 @@ Lucerne と Dinner Now は、支払いシステムを統合する必要があり
 
 ### <a name="visualize-existing-code-code-maps"></a><a name="VisualizeCode"></a> 既存のコードの視覚化: コード マップ
 
-コード マップは、コード内の現在の編成やリレーションシップを示します。 マップの *ノード* によって項目が表され、 *リンク*によってリレーションシップが表されます。 コード マップは次のような作業に役立ちます。
+コード マップは、コード内の現在の編成やリレーションシップを示します。 マップの *ノード* によって項目が表され、 *リンク* によってリレーションシップが表されます。 コード マップは次のような作業に役立ちます。
 
 - よく知らないコードを調べる。
 
@@ -361,7 +363,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
   - *列挙* とは、リテラル値のリストを含む分類子です。
 
-- *属性* とは、 *分類子*の各インスタンスを記述する特定の型の値です。 分類子とは、型、コンポーネント、ユース ケース、およびアクターの総称です。
+- *属性* とは、 *分類子* の各インスタンスを記述する特定の型の値です。 分類子とは、型、コンポーネント、ユース ケース、およびアクターの総称です。
 
 - *操作* とは、分類子のインスタンスが実行できるメソッドまたは関数です。
 
@@ -377,7 +379,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - *汎化* は、特定の分類子の定義の一部が一般的な分類子から継承されていることを表します。 *実現* は、インターフェイスによって提供された操作および属性をクラスで実装することを表します。
 
-     これらの関係を生成するには、継承 **** ツールを使用します。 実現は、 *ロリポップ*として表すこともできます。
+     これらの関係を生成するには、継承  ツールを使用します。 実現は、 *ロリポップ* として表すこともできます。
 
 - *パッケージ* とは、分類子、関連、生存線、コンポーネント、および他のパッケージのグループです。 *インポート* の関係は、あるパッケージが別のパッケージのすべての定義を含むことを表します。
 
@@ -444,7 +446,7 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
   - 1 つのレイヤーに成果物にリンクされた他のレイヤーが含まれている場合は、そのコンテナー レイヤーの数字にそれらの成果物が含まれていなくても、コンテナー レイヤーはそれらの成果物にリンクされます。
 
-    レイヤーにリンクされた成果物を表示するには、依存関係を右クリックし、 **[リンクの表示]** をクリックして**レイヤー エクスプローラー**を開きます。
+    レイヤーにリンクされた成果物を表示するには、依存関係を右クリックし、 **[リンクの表示]** をクリックして **レイヤー エクスプローラー** を開きます。
 
 - *依存関係* は、あるレイヤーが別のレイヤーの機能を使用することはできても、その逆はできないことを示します。 *双方向の依存関係* は、あるレイヤーが別のレイヤーの機能を使用でき、その逆もできることを示します。
 
@@ -484,5 +486,5 @@ Dinner Now と Lucerne は協力して、2 つのシステムを統合するの�
 
 - [コードの視覚化](../modeling/visualize-code.md)
 - [開発プロセス内でのモデルの使用](../modeling/use-models-in-your-development-process.md)
-- [アジャイル開発でのモデルの使用](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [アジャイル開発でのモデルの使用](/previous-versions/ff398061(v=vs.140))
 - [開発時のシステムの検証](../modeling/validate-your-system-during-development.md)

@@ -1,5 +1,7 @@
 ---
-title: ロード テスト アナライザーのグラフ ビューでのロード テスト結果の分析
+title: ロード テスト結果の分析 - グラフ ビュー (ロード テスト アナライザー)
+description: テスト結果をグラフとして表示する方法について説明します。 各グラフがパネルに表示され、ドロップダウン リストにグラフ名が表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e30d81277ae28a3f5d6ca45a259fa66e0f4ee004
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591269"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441977"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>ロード テスト アナライザーのグラフ ビューでのテスト結果の分析
 
@@ -30,7 +32,7 @@ ms.locfileid: "75591269"
 
 テスト結果をグラフとして表示するには、**ロード テスト** ツール バーの **[グラフ]** をクリックします。 各グラフがパネルに表示され、ドロップダウン リストの先頭にグラフの名前が表示されます。 パネルに別のグラフを表示するには、一覧から別のグラフ名を選択します。
 
-一度に最高で 4 つのグラフ パネルを表示できます。 **パネル レイアウト**のツール バー ボタンを使用して、異なるパネル レイアウトに切り替えることができます。
+一度に最高で 4 つのグラフ パネルを表示できます。 **パネル レイアウト** のツール バー ボタンを使用して、異なるパネル レイアウトに切り替えることができます。
 
 複数の組み込みグラフが提供されています。 組み込みグラフをそのまま使用することも、カスタマイズすることもできます。 さらに、独自のグラフを作成することもできます。 詳細については、「[方法: グラフにカウンターを追加および削除する](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)」および[カスタム グラフを作成する方法](../test/how-to-create-custom-graphs-in-load-test-results.md)に関するページを参照してください。
 
@@ -56,7 +58,7 @@ ms.locfileid: "75591269"
 
 ## <a name="counters-displayed-in-graphs"></a>グラフに表示されるカウンター
 
-グラフには*カウンター*が表示されます。 カウンターとは、ロード テスト中に収集されるデータであり、1 秒あたりのテスト数や平均テスト時間などです。 カウンターの詳細については、[ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)に関するページを参照してください。
+グラフには *カウンター* が表示されます。 カウンターとは、ロード テスト中に収集されるデータであり、1 秒あたりのテスト数や平均テスト時間などです。 カウンターの詳細については、[ロード テストでのコンピューターのカウンター セットとしきい値規則の指定](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)に関するページを参照してください。
 
 グラフに表示されるカウンターの凡例では、ロード テストの実行に関する役に立つデータの列が示されます。 グラフ内で任意のデータの表示をオフにするには、凡例で行のチェック ボックスをオフにします。
 

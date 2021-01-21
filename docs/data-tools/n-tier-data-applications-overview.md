@@ -1,5 +1,7 @@
 ---
 title: n 層データ アプリケーションの概要
+description: n 層データ アプリケーションの概要をお読みください。 分散アプリケーションや多層アプリケーションとも呼ばれ、これらは多くの層に分けられたデータ アプリケーションです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 445826a2ada7b22201b7dd82948bc8bd5dd3d296
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426864"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436212"
 ---
 # <a name="n-tier-data-applications-overview"></a>n 層データ アプリケーションの概要
 "*n 層*" データ アプリケーションは、複数の "*層*" に分けられたデータ アプリケーションです。 n 層アプリケーションは、"分散型アプリケーション" または "多層アプリケーション" とも呼ばれ、処理を別個の層に分け、クライアントとサーバー間に分散します。 データにアクセスするアプリケーションを開発する場合は、アプリケーションを構成する各種の層を明確に分離する必要があります。
@@ -34,7 +36,7 @@ Visual Studio には、開発者が n 層アプリケーションを作成する
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) には、アプリケーションのさまざまな層から DataContext をまとめることができる <xref:System.Data.Linq.Table%601.Attach%2A> メソッドが用意されています。 詳細については、「[LINQ to SQL を使用する n 層アプリケーションとリモート アプリケーション](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)」を参照してください。
 
 ## <a name="presentation-tier"></a>プレゼンテーション層
-*プレゼンテーション層*は、ユーザーがアプリケーションとやりとりする層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。
+*プレゼンテーション層* は、ユーザーがアプリケーションとやりとりする層です。 多くの場合、追加のアプリケーション ロジックも含まれています。 一般的なプレゼンテーション層のコンポーネントには、次のようなものがあります。
 
 - データ バインディング コンポーネント (<xref:System.Windows.Forms.BindingSource> や <xref:System.Windows.Forms.BindingNavigator> など)
 
@@ -43,7 +45,7 @@ Visual Studio には、開発者が n 層アプリケーションを作成する
 通常、プレゼンテーション層は、サービス参照 (たとえば、[Visual Studio アプリケーションでの Windows Communication Foundation サービスと WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)) を使用して中間層にアクセスします。 プレゼンテーション層からデータ層に直接アクセスすることはありません。 プレゼンテーション層は、中間層のデータ アクセス コンポーネントを通してデータ層と通信します。
 
 ## <a name="middle-tier"></a>中間層
-*中間層*は、プレゼンテーション層とデータ層が互いに通信するために使用する層です。 一般的な中間層のコンポーネントには、次のようなものがあります。
+*中間層* は、プレゼンテーション層とデータ層が互いに通信するために使用する層です。 一般的な中間層のコンポーネントには、次のようなものがあります。
 
 - ビジネス ロジック (ビジネス ルールやデータ検証など)
 

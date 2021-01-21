@@ -1,5 +1,7 @@
 ---
 title: '方法: データベースのデータをワークシートに読み込む'
+description: ソリューション内のオブジェクトのデータを使用する方法、および Windows フォームコントロールを使用してワークシートにデータを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b594014b2564b5730c1895a007294ee66e07637
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4252eac32540ac2d0b6e763b5b6e9cf0e2ac7055
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520121"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846442"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>方法: データベースのデータをワークシートに読み込む
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: be0ba7b32af5247bb0dccccb68d900cb6797cc13
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 8be766e078a04d713ed69aa0b9cc464433dcb73d
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801179"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761395"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>R Tools for Visual Studio の概要
 
@@ -29,7 +29,7 @@ R Tools for Visual Studio (RTVS) をインストールすると ([インスト�
 
 1. プロジェクトを作成すると、次のウィンドウが表示されます。
 
-    - 右側には、Visual Studio ソリューション エクスプローラーがあり、ここには含まれる*ソリューション*内にプロジェクトが表示されます。 (ソリューションには、複数のさまざまな種類のプロジェクトを含めることができます。詳細については、[プロジェクト](r-projects-in-visual-studio.md)に関するページを参照してください。)
+    - 右側には、Visual Studio ソリューション エクスプローラーがあり、ここには含まれる *ソリューション* 内にプロジェクトが表示されます。 (ソリューションには、複数のさまざまな種類のプロジェクトを含めることができます。詳細については、[プロジェクト](r-projects-in-visual-studio.md)に関するページを参照してください。)
     - 左上には、新しい R ファイル (`script.R`) があり、ここでは、すべての Visual Studio の編集機能を使ってソース コードを編集することができます。
     - 左下には、 **[R インタラクティブ]** ウィンドウがあり、ここでは対話型でコードを開発およびテストすることができます。
 
@@ -62,7 +62,7 @@ R Tools for Visual Studio (RTVS) をインストールすると ([インスト�
 
 1. 一部のコマンド (`plot(1:100)` など) では、出力が対話型ウィンドウに直接表示できない場合、Visual Studio 内に新しいウィンドウが開かれます。
 
-    ![Visual Studio でのプロットの表示](media/getting-started-07-plot-window.png)
+    ![グラフ関数のプロット (1:100) の出力が表示されている Visual Studio の [R プロット] ウィンドウのスクリーンショット。](media/getting-started-07-plot-window.png)
 
 対話型ウィンドウでは、履歴の確認、ワークスペースの読み込みと保存、デバッガーへのアタッチを行ったり、コピー/貼り付けを使用せずにソース コード ファイルを操作したりすることができます。 詳細については、「[Working with the R Interactive Window](interactive-repl-for-r-in-visual-studio.md)」 (対話型ウィンドウでの作業) を参照してください。
 
@@ -72,7 +72,7 @@ R Tools for Visual Studio (RTVS) をインストールすると ([インスト�
 
 *.R* ファイルにコードを記述すると、すぐにすべてのコードが表示され、簡単に小さな変更を行い、対話型ウィンドウでコードをすばやく実行して結果を表示できます。 また、プロジェクトに必要なだけファイルを含めることもできます。 コードがファイル内にある場合は、デバッガーでステップごとに実行することもできます (この記事で後述します)。 これらの機能は、計算アルゴリズムを開発して、1 つ以上のデータセットを操作するためにコードを記述する場合、特にすべての中間結果を確認する必要がある場合に、非常に役立ちます。
 
-例のように、次のステップでは、「[Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)」 (中心極限定理) (Wikipedia) を調査する小さなコードを作成します。 (この例は、Paul Teetor による *R クックブック*から編集されています。)
+例のように、次のステップでは、「[Central Limit Theorem](https://en.wikipedia.org/wiki/Central_limit_theorem)」 (中心極限定理) (Wikipedia) を調査する小さなコードを作成します。 (この例は、Paul Teetor による *R クックブック* から編集されています。)
 
 1. `script.R` エディターで、次のコードを入力します。
 
@@ -86,7 +86,7 @@ R Tools for Visual Studio (RTVS) をインストールすると ([インスト�
 
 1. 結果をすばやく表示するには、すべてのコードを選択し (**Ctrl**+**A** キー)、**Ctrl**+**Enter** キーを押すか、右クリックして、 **[対話型で実行]** を選択します。 直接入力したかのように、選択したすべてのコードが対話型ウィンドウに入力され、結果がプロット ウィドウに表示されます。
 
-    ![Visual Studio でのプロットの表示](media/getting-started-08-plot1.png)
+    ![人口密度のグラフを表示している Visual Studio の [R プロット] ウィンドウのスクリーンショット。](media/getting-started-08-plot1.png)
 
 1. 1 行の場合は、いつでも **Ctrl**+**Enter** キーを押すだけで、対話型ウィンドウで行を実行できます。
 

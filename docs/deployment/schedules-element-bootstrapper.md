@@ -1,5 +1,7 @@
 ---
 title: '&lt;スケジュール &gt; 要素 (ブートストラップ) |Microsoft Docs'
+description: Schedule 要素には、Command 要素で定義されたコマンドを実行する特定の時刻を定義する Schedule 要素が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62927333"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349361"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;スケジュール &gt; 要素 (ブートストラップ)
 要素には、要素 `Schedules` `Schedule` によって定義されたコマンドを実行する特定の時刻を定義する要素が含まれ `Command` ます。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 <Schedules>
@@ -49,7 +51,7 @@ ms.locfileid: "62927333"
 
 |属性|説明|
 |---------------|-----------------|
-|`Name`|必須です。 スケジュール項目の名前。 これは `ScheduleName` 、要素のプロパティに対応 `Command` します。 は、指定されたスケジュールを参照するときに、 `Command` その要素によって示される時刻にのみ実行され `Schedule` ます。 スケジュールは、および要素に関連付けられている場合もあり `FailIf` `BypassIf` ます。これにより、指定したスケジュールでこれらの条件テストを実行することが制限されます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
+|`Name`|必須。 スケジュール項目の名前。 これは `ScheduleName` 、要素のプロパティに対応 `Command` します。 は、指定されたスケジュールを参照するときに、 `Command` その要素によって示される時刻にのみ実行され `Schedule` ます。 スケジュールは、および要素に関連付けられている場合もあり `FailIf` `BypassIf` ます。これにより、指定したスケジュールでこれらの条件テストを実行することが制限されます。 詳細については、[\<Commands> 要素](../deployment/commands-element-bootstrapper.md)に関するページを参照してください。|
 
  指定された `Schedule` 要素は、次の子のうち1つだけを持つことができます。
 
@@ -62,6 +64,6 @@ ms.locfileid: "62927333"
 ## <a name="afterpackage"></a>AfterPackage
  要素は、 `AfterPackage` 指定されたパッケージのインストール後にコマンドを実行するようにインストーラーに指示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [\<Product> element](../deployment/product-element-bootstrapper.md)
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

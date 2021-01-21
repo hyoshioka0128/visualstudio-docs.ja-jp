@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 網かけによるレンダリング エラーのデバッグ | Microsoft Docs'
+description: シェーダーのバグを検出する調査について説明します。 Visual Studio グラフィックス診断の使用方法 ([グラフィックス ピクセル履歴]、HLSL デバッガーなど) が示されます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42aa5638b668d90fa44335c2d532c9bcddddc2b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62849349"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995084"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>チュートリアル: 網かけによるレンダリング エラーのデバッグ
 このチュートリアルでは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断を使用して、シェーダーのバグのために正しくない色が指定されたオブジェクトを調べる方法を示します。

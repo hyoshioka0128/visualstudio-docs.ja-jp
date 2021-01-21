@@ -1,6 +1,8 @@
 ---
 title: 生成されたコードのコード分析違反を抑制する
 ms.date: 05/13/2019
+description: 生成されたコードのコード分析の警告を非表示にする方法について説明します。 「Visual Studio が生成されたコードに関する従来の分析の警告を表示しないようにする方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 175df8bb4dded4f66508ef405e031178606fd531
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371808"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435548"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>方法: 生成されたコードのコード分析の警告を非表示にする
 
@@ -26,7 +28,7 @@ ms.locfileid: "85371808"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>プロジェクトで生成されたコードの警告を抑制するには
 
-1. **ソリューションエクスプローラー**でプロジェクトを右クリックし、[**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[ **プロパティ** ] をクリックします。
 
 2. [ **コード分析** ] タブをクリックします。
 

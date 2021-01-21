@@ -1,5 +1,7 @@
 ---
 title: トレースポイントを使用して情報を記録する | Microsoft Docs
+description: コードを変更または停止することなく、出力に情報をログするようにトレースポイントを設定します。 [ブレークポイント設定] の [アクション] チェックボックスで出力文字列を指定するだけです。
+ms.custom: SEO-VS-2020
 ms.date: 10/28/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b471122318038ab66bc4f73e437209c6da2ffe
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 144f83b1be0c3a21aa5cb244f8498f61e3ef380a
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561339"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150094"
 ---
 # <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Visual Studio のトレースポイントを使用して出力ウィンドウに情報を記録する
 

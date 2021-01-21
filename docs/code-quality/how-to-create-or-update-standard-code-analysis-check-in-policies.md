@@ -1,5 +1,7 @@
 ---
-title: 標準のコード分析チェックイン ポリシーを作成または更新する
+title: 標準コード分析チェックインポリシーの作成/更新
+description: Azure DevOps プロジェクトのすべてのコードプロジェクトでコード分析が実行されるようにする方法について説明します。 「プロジェクトコード分析のチェックインポリシーを構成する方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7167368128cb5946118a7692c50c15109feb79a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85371899"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348763"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 
@@ -35,15 +37,15 @@ ms.locfileid: "85371899"
 
 ## <a name="to-open-the-check-in-policy-editor"></a>チェックインポリシーエディターを開くには
 
-1. チームエクスプローラーで、プロジェクト名を右クリックし、[ **プロジェクトの設定**] をポイントして、[ **ソース管理**] をクリックします。
+1. チームエクスプローラーで、プロジェクト名を右クリックし、[ **プロジェクトの設定** ] をポイントして、[ **ソース管理** ] をクリックします。
 
 1. [ **ソース管理** ] ダイアログボックスで、[ **チェックインポリシー** ] タブを選択します。
 
-1. 次のいずれかの操作を行います。
+1. 以下のいずれかを実行します。
 
     - [ **追加** ] をクリックして、新しいチェックインポリシーを作成します。
 
-    - [**ポリシーの種類**] ボックスの一覧の既存の**コード分析**項目をダブルクリックして、ポリシーを変更します。
+    - [ **ポリシーの種類** ] ボックスの一覧の既存の **コード分析** 項目をダブルクリックして、ポリシーを変更します。
 
 ## <a name="to-set-policy-options"></a>ポリシーオプションを設定するには
 

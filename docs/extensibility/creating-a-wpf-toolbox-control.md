@@ -1,5 +1,7 @@
 ---
 title: WPF ツールボックスコントロールの作成 |Microsoft Docs
+description: WPF ツールボックスコントロールテンプレートを使用して、他のユーザーに配布できるツールボックスコントロールを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6aa6051648e495e21f7954a737f7b572ce6a6f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903941"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973980"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックスコントロールの作成
 
@@ -31,9 +33,9 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. という名前の VSIX プロジェクトを作成 `MyToolboxControl` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、という名前の **WPF ツールボックスコントロール** 項目テンプレートを追加 `MyToolboxControl` します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [ **WPF ツールボックスコントロール**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolboxControl.cs*に変更します。
+2. プロジェクトが開いたら、という名前の **WPF ツールボックスコントロール** 項目テンプレートを追加 `MyToolboxControl` します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [ **WPF ツールボックスコントロール**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolboxControl.cs* に変更します。
 
-    このソリューションには、ユーザーコントロール、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> コントロールを **ツールボックス**に追加する、および VSIX マニフェストの **VisualStudio ToolboxControl** Asset エントリが含まれるようになりました。
+    このソリューションには、ユーザーコントロール、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> コントロールを **ツールボックス** に追加する、および VSIX マニフェストの **VisualStudio ToolboxControl** Asset エントリが含まれるようになりました。
 
 #### <a name="to-create-the-control-ui"></a>コントロール UI を作成するには
 
@@ -55,13 +57,13 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="renaming-the-control"></a>コントロールの名前を変更する
 
- 既定では、コントロールは、 **MyToolboxControl**という名前のグループの**MyToolboxControl**として**ツールボックス**に表示されます。 これらの名前は、 *MyToolboxControl.xaml.cs* ファイルで変更できます。
+ 既定では、コントロールは、 **MyToolboxControl** という名前のグループの **MyToolboxControl** として **ツールボックス** に表示されます。 これらの名前は、 *MyToolboxControl.xaml.cs* ファイルで変更できます。
 
 1. コードビューで *MyToolboxControl.xaml.cs* を開きます。
 
 2. クラスを見つけ `MyToolboxControl` て、その名前を TestControl に変更します。 (これを行う最も簡単な方法は、クラスの名前を変更し、コンテキストメニューから [ **名前の変更** ] を選択して、手順を完了することです。 ( **Rename** コマンドの詳細については、「 [名前の変更リファクタリング (C#)](../ide/reference/rename.md)」を参照してください)。
 
-3. 属性に移動し、 `ProvideToolboxControl` 最初のパラメーターの値を **Test**に変更します。 これは、 **ツールボックス**にコントロールを格納するグループの名前です。
+3. 属性に移動し、 `ProvideToolboxControl` 最初のパラメーターの値を **Test** に変更します。 これは、 **ツールボックス** にコントロールを格納するグループの名前です。
 
     結果のコードは次のようになります。
 
@@ -94,10 +96,10 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ### <a name="to-deploy-the-control"></a>コントロールを配置するには
 
-1. テストされたプロジェクトをビルドした後、プロジェクトの * \bin\debug フォルダーで *.vsix*ファイルを見つけることができます。 \*
+1. テストされたプロジェクトをビルドした後、プロジェクトの * \bin\debug フォルダーで *.vsix* ファイルを見つけることができます。 \*
 
-2. *.Vsix*ファイルをダブルクリックし、インストール手順に従って、ローカルコンピューターにインストールすることができます。 コントロールをアンインストールするには、[**ツール**] [  >  **拡張機能と更新プログラム**] にアクセスし、コントロールの拡張機能を探して、[**アンインストール**] をクリックします。
+2. *.Vsix* ファイルをダブルクリックし、インストール手順に従って、ローカルコンピューターにインストールすることができます。 コントロールをアンインストールするには、[**ツール**] [  >  **拡張機能と更新プログラム**] にアクセスし、コントロールの拡張機能を探して、[**アンインストール**] をクリックします。
 
-3. *.Vsix*ファイルをネットワークまたは Web サイトにアップロードします。
+3. *.Vsix* ファイルをネットワークまたは Web サイトにアップロードします。
 
-    ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは**Tools**  >  Visual Studio のツールの**拡張機能と更新プログラム**を使用して、コントロールをオンラインで検索し、インストールすることができます。
+    ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは **Tools**  >  Visual Studio のツールの **拡張機能と更新プログラム** を使用して、コントロールをオンラインで検索し、インストールすることができます。

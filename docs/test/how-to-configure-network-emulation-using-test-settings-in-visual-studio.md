@@ -1,5 +1,7 @@
 ---
 title: テストの設定を使用してネットワーク エミュレーションを構成する
+description: 診断データ アダプターを構成して、Visual Studio からさまざまなネットワーク環境下でアプリケーションをテストする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/03/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55daa1e16af45c153efced3736c46c3c27d748ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98ee28b51445af4b81422460ecb1450b2d383407
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288183"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440161"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>方法: Visual Studio でテストの設定を使用してネットワーク エミュレーションを構成する
 
@@ -93,4 +95,4 @@ Visual Studio は、すべてのテストの種類にソフトウェア ベー�
 ## <a name="see-also"></a>関連項目
 
 - [テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)
-- [手動テストの実行 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)
+- [手動テストの実行 (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts&preserve-view=true)

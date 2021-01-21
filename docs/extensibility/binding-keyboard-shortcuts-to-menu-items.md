@@ -1,5 +1,7 @@
 ---
 title: キーボードショートカットをメニュー項目にバインドする |Microsoft Docs
+description: 既定のエディターまたはカスタムエディターのいずれかについて、Visual Studio のキーボードショートカットをカスタムボタン、メニュー項目、またはツールバーコマンドにマップする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94feafbc614be61aaa4eef9e26669c0fbe901ed5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740026"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974623"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>メニュー項目にキーボードショートカットをバインドする
 ショートカットキーをカスタムメニューコマンドにバインドするには、パッケージの *vsct* ファイルにエントリを追加するだけです。 このトピックでは、キーボードショートカットをカスタムボタン、メニュー項目、またはツールバーコマンドにマップする方法と、キーボードマップを既定のエディターで適用する方法、またはカスタムエディターに制限する方法について説明します。
@@ -33,7 +35,7 @@ ms.locfileid: "80740026"
 
 1. [**ツール**  >  **] [オプション**]  >  **[環境**] ウィンドウで、[**キーボード**] を選択します。
 
-2. **で [新しいショートカットキーを使用**する (**グローバル**) に設定することを確認します。
+2. **で [新しいショートカットキーを使用** する (**グローバル**) に設定することを確認します。
 
 3. [ **ショートカットキー** ] ボックスに、使用するキーボードショートカットを入力します。
 
@@ -42,7 +44,7 @@ ms.locfileid: "80740026"
 4. マップされていないキーが見つかるまで、キーのさまざまな組み合わせを試してみてください。
 
    > [!NOTE]
-   > **Alt**キーを使用するキーボードショートカットでは、メニューを開き、コマンドを直接実行することはできません。 そのため、 **Alt キー**を含むショートカットを入力すると、box**で現在使用されているショートカット**が空白になることがあります。ショートカットでメニューが表示されないことを確認するには、[**オプション**] ダイアログボックスを閉じて、キーを押します。
+   > **Alt** キーを使用するキーボードショートカットでは、メニューを開き、コマンドを直接実行することはできません。 そのため、 **Alt キー** を含むショートカットを入力すると、box **で現在使用されているショートカット** が空白になることがあります。ショートカットでメニューが表示されないことを確認するには、[**オプション**] ダイアログボックスを閉じて、キーを押します。
 
    次の手順では、既存の VSPackage にメニューコマンドがあることを前提としています。 その方法については、「 [メニューコマンドを使用して拡張機能を作成する」](../extensibility/creating-an-extension-with-a-menu-command.md)を参照してください。
 
@@ -59,7 +61,7 @@ ms.locfileid: "80740026"
 
     `guid` `id` 属性と属性を、呼び出すコマンドの属性に設定します。
 
-    属性を `mod1` **Control**、 **Alt**、または **Shift**に設定します。
+    属性を `mod1` **Control**、 **Alt**、または **Shift** に設定します。
 
     キーバインドセクションは次のようになります。
 
@@ -81,8 +83,8 @@ ms.locfileid: "80740026"
 
    カスタムエディターでのみコマンドを使用できるようにするには、 `editor` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] カスタムエディターを含む VSPackage を作成したときにパッケージテンプレートによって生成されたカスタムエディターの名前に属性を設定します。 名前の値を検索するには、 `<Symbols>` `<GuidSymbol>` `name` 属性が "." で終わるノードのセクションを調べ `editorfactory` ます。これはカスタムエディターの名前です。
 
-## <a name="example"></a>例
- この例では、 **Ctrl** + **Alt** + という名前のパッケージで、という名前のコマンドにキーボードショートカットの Ctrl Alt**C**をバインド `cmdidMyCommand` `MyPackage` します。
+## <a name="example-1"></a>例 1
+ この例では、 **Ctrl** + **Alt** + という名前のパッケージで、という名前のコマンドにキーボードショートカットの Ctrl Alt **C** をバインド `cmdidMyCommand` `MyPackage` します。
 
 ```
 <CommandTable>
@@ -98,8 +100,8 @@ ms.locfileid: "80740026"
 </CommandTable>
 ```
 
-## <a name="example"></a>例
- この例では、 **Ctrl** + という名前のプロジェクト内のという名前のコマンドに、キーボードショートカット Ctrl**B**をバインド `cmdidBold` `TestEditor` します。 このコマンドは、カスタムエディターでのみ使用でき、他のエディターでは使用できません。
+## <a name="example-2"></a>例 2
+ この例では、 **Ctrl** + という名前のプロジェクト内のという名前のコマンドに、キーボードショートカット Ctrl **B** をバインド `cmdidBold` `TestEditor` します。 このコマンドは、カスタムエディターでのみ使用でき、他のエディターでは使用できません。
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />

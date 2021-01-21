@@ -1,5 +1,7 @@
 ---
 title: メニューにサブメニューを追加する |Microsoft Docs
+description: サブメニューを作成し、Visual Studio のメニューバーに追加して、サブメニューに新しいコマンドを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5887dba1ed1c583653b93792174524f8dfb84609
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972323"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598017"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>メニューにサブメニューを追加する
 このチュートリアルでは、[ **Testmenu** ] メニューにサブメニューを追加する方法を示して、「 [Visual Studio のメニューバーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)する」のデモを基にして説明します。
@@ -34,7 +36,7 @@ ms.locfileid: "86972323"
 
 1. 「 [Visual Studio のメニューバーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) する」の手順に従って、プロジェクトとメニュー項目を作成します。 このチュートリアルの手順では、VSIX プロジェクトの名前がであることを前提として `TopLevelMenu` います。
 
-2. *Testcommandpackage. vsct*を開きます。 セクションで、サブ `<Symbols>` `<IDSymbol>` メニューの要素、サブメニューグループ、および `<GuidSymbol>` "guidTopLevelMenuCmdSet" という名前のノード内のコマンドの要素を追加します。 これは、 `<IDSymbol>` トップレベルメニューの要素を含むノードと同じです。
+2. *Testcommandpackage. vsct* を開きます。 セクションで、サブ `<Symbols>` `<IDSymbol>` メニューの要素、サブメニューグループ、および `<GuidSymbol>` "guidTopLevelMenuCmdSet" という名前のノード内のコマンドの要素を追加します。 これは、 `<IDSymbol>` トップレベルメニューの要素を含むノードと同じです。
 
     ```xml
     <IDSymbol name="SubMenu" value="0x1100"/>
@@ -79,11 +81,11 @@ ms.locfileid: "86972323"
 
 6. ソリューションをビルドし、デバッグを開始します。 実験用のインスタンスが表示されます。
 
-7. [ **Testmenu** ] をクリックすると、 **サブメニュー**という名前の新しいサブメニューが表示されます。 [ **サブメニュー** ] をクリックしてサブメニューを開き、新しいコマンド [ **Test Sub command**] を表示します。 [ **テストサブコマンド]** をクリックしても何も行われないことに注意してください。
+7. [ **Testmenu** ] をクリックすると、 **サブメニュー** という名前の新しいサブメニューが表示されます。 [ **サブメニュー** ] をクリックしてサブメニューを開き、新しいコマンド [ **Test Sub command**] を表示します。 [ **テストサブコマンド]** をクリックしても何も行われないことに注意してください。
 
 ## <a name="add-a-command"></a>コマンドの追加
 
-1. *TestCommand.cs*を開き、既存のコマンド id の後に次のコマンド id を追加します。
+1. *TestCommand.cs* を開き、既存のコマンド id の後に次のコマンド id を追加します。
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;

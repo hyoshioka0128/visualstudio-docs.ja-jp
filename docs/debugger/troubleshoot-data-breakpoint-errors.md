@@ -1,5 +1,7 @@
 ---
-title: エラー - データ ブレークポイントを設定できません | Microsoft Docs
+title: データ ブレークポイントを設定できない | Microsoft Docs
+description: '[値が変更されたときに中断] の使用時に発生する "データ ブレークポイントを設定できません" エラーの説明、解決策、および回避策を紹介します。'
+ms.custom: SEO-VS-2020
 ms.date: 12/3/2019
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e3ea1cb0124e6bdfb93e023021673ca2e34602
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248747"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150458"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>データ ブレークポイント エラーのトラブルシューティング
 このページでは、[値が変更されたときに中断] の使用時に発生する一般的なエラーを解決する手順を説明します。
@@ -81,7 +83,7 @@ ms.locfileid: "88248747"
 
 ## <a name="provide-feedback"></a>フィードバックの提供
 
-この機能に関する問題や提案は、IDE の [ヘルプ] > [フィードバックの送信] > [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md)、または[開発者コミュニティ](https://developercommunity.visualstudio.com/)でお知らせください。
+この機能に関する問題や提案は、IDE の [ヘルプ] > [フィードバックの送信] > [[問題の報告]](../ide/how-to-report-a-problem-with-visual-studio.md)、または[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)でお知らせください。
 
 ## <a name="see-also"></a>関連項目
 

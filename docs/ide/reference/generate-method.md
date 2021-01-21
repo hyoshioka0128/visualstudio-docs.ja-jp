@@ -1,5 +1,7 @@
 ---
 title: メソッドを生成する
+description: '[クイック アクションとリファクタリング] メニューを使用して、クラスにメソッドをすぐに追加する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -7,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f166c31a1615c951170367223a5b19ab93811b5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 22c49085a430c7afc002fe4e11dcf1184348efdc
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595593"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617215"
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Visual Studio でメソッドを生成する
 
@@ -47,14 +49,14 @@ ms.locfileid: "75595593"
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
       - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
-      - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
 
       ![メソッド生成のプレビュー](media/method-preview-cs.png)
 
 3. ドロップダウン メニューから **[メソッドの生成]** を選択します。
 
    > [!TIP]
-   > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる[すべての変更を確認する](../../ide/preview-changes.md)ことができます。
+   > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる [すべての変更を確認する](../../ide/preview-changes.md)ことができます。
 
    メソッドと、その使用法から推論されるすべてのパラメーターが作成されます。
 
@@ -66,7 +68,7 @@ ms.locfileid: "75595593"
 
        ![VB のメソッド生成結果](media/method-result-vb.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [コード生成](../code-generation-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

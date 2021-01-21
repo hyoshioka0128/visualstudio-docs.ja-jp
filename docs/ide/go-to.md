@@ -1,5 +1,7 @@
 ---
 title: ファイルへ移動、シンボルへ移動、指定行へのジャンプ
+description: Visual Studio の [移動] コマンド、およびそれらを使用してコードのフォーカス検索を実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e3e000224fc09810e15ba3cdbdc4be729139eaaa
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593786"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597536"
 ---
 # <a name="find-code-using-go-to-commands"></a>移動コマンドを使用したコードの検索
 
@@ -27,7 +29,7 @@ Visual Studio の **[移動]** コマンドは、特定の項目をすばやく�
 
 入力 | 関数
 ------------ | ---
-**キーボード** | **Ctrl**+**T** キーまたは **Ctrl**+ **,** キーを押します。
+**[キーボード]** | **Ctrl**+**T** キーまたは **Ctrl**+ **,** キーを押します。
 **マウス** | **[編集]** 、 **[移動]** 、 **[すべてに移動]** の順に選択します。
 
 コード エディターの右上に小さいウィンドウが表示されます。
@@ -38,7 +40,7 @@ Visual Studio の **[移動]** コマンドは、特定の項目をすばやく�
 
 ![[移動] ウィンドウ](../ide/media/vside_navigatetowindow.png)
 
-疑問符 ( **?** ) を入力して詳しいヘルプ情報を表示することもできます。
+疑問符 (**?**) を入力して詳しいヘルプ情報を表示することもできます。
 
 ![[すべてにジャンプ] のヘルプ](media/go-to-all-help.png)
 
@@ -52,7 +54,7 @@ Visual Studio の **[移動]** コマンドは、特定の項目をすばやく�
 
 特定の種類のコード要素に検索を絞り込むには、[検索] ボックスでプレフィックスを指定するか、次の 5 つのフィルター アイコンのいずれかを選択します。
 
-プレフィックス | アイコン | ショートカット | 説明
+Prefix | アイコン | ショートカット | 説明
 :-: | - | - | -
 :| ![行アイコン](media/gotoall-line-icon.png) | **Ctrl**+**G** | 指定した行番号に移動します。
 f| ![ファイル アイコン](media/gotoall-files-icon.png) | **Ctrl**+**1**、**Ctrl**+**F** | 指定したファイルに移動します。
@@ -67,12 +69,12 @@ m| ![メンバー アイコン](media/gotoall-members-icon.png) | **Ctrl**+**1**
 
 アイコン | 説明
 ---- | ---
-![現在のドキュメント](media/gotoall_currentdocument.png) | 現在のドキュメントだけを検索します
+![[現在のドキュメント]](media/gotoall_currentdocument.png) | 現在のドキュメントだけを検索します
 ![外部ドキュメント](media/gotoall_external.png) | プロジェクト/ソリューションに含まれるドキュメントだけでなく外部のドキュメントも検索します
 
 ## <a name="camel-casing"></a>camel 規約に従った大文字小文字の使い分け
 
-コード内で [camel 規約に従った大文字小文字の使い分け](https://en.wikipedia.org/wiki/Camel_case)を使用している場合は、コード要素名の大文字のみを入力することにより、コードの検索が速くなります。 たとえばコードで `CredentialViewModel` という型を使用している場合は、[移動] ダイアログ ボックスで**型**フィルター (**t**) を選択し、名前に含まれる大文字 (`CVM`) だけを入力します。 この機能は、コード中に長い名前がある場合に便利です。
+コード内で [camel 規約に従った大文字小文字の使い分け](https://en.wikipedia.org/wiki/Camel_case)を使用している場合は、コード要素名の大文字のみを入力することにより、コードの検索が速くなります。 たとえばコードで `CredentialViewModel` という型を使用している場合は、[移動] ダイアログ ボックスで **型** フィルター (**t**) を選択し、名前に含まれる大文字 (`CVM`) だけを入力します。 この機能は、コード中に長い名前がある場合に便利です。
 
 ![[移動] ウィンドウ - 大文字を使用した検索](../ide/media/vside_capitalsearch.png)
 

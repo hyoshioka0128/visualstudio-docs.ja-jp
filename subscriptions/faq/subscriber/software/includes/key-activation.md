@@ -8,11 +8,11 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_2
 ms.openlocfilehash: d214130bfdc2832ad540fa6fac274e4f52cced5f
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385901"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838219"
 ---
 ## <a name="how-do-i-activate-the-software-i-just-downloaded-using-product-keys"></a>プロダクト キーを使用してダウンロードしたソフトウェアをライセンス認証するには、どうすればよいですか?
 

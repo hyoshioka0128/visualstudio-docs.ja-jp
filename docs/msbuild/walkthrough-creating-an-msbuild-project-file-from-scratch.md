@@ -1,5 +1,7 @@
 ---
-title: 'チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成 | Microsoft Docs'
+title: MSBuild プロジェクト ファイルのゼロからの作成
+description: XML の編成方法とビルドを制御するための変更方法について理解するため、MSBuild のプロジェクト ファイルを最初から作成する手順について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 3ebe3c60e4061a66bb77f41bf165fb16e0c427c2
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84184277"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046056"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>チュートリアル: MSBuild プロジェクト ファイルのゼロからの作成
 
@@ -49,7 +51,7 @@ ms.locfileid: "84184277"
 
 ## <a name="extend-the-path"></a>パスを拡張する
 
-MSBuild を使用するには、必要なすべてのツールが含まれるように PATH 環境変数を拡張する必要があります。 **Visual Studio 用開発者コマンド プロンプト**を使用できます。 これは、Windows 10 上の Windows タスク バーの検索ボックスで検索してください。 通常のコマンド プロンプトまたはスクリプト環境で環境を設定するには、Visual Studio インストールの *Common7/Tools* サブフォルダーで *VSDevCmd.bat* を実行します。
+MSBuild を使用するには、必要なすべてのツールが含まれるように PATH 環境変数を拡張する必要があります。 **Visual Studio 用開発者コマンド プロンプト** を使用できます。 これは、Windows 10 上の Windows タスク バーの検索ボックスで検索してください。 通常のコマンド プロンプトまたはスクリプト環境で環境を設定するには、Visual Studio インストールの *Common7/Tools* サブフォルダーで *VSDevCmd.bat* を実行します。
 
 ## <a name="create-a-minimal-application"></a>最低限の内容のみを含むアプリケーションを作成する
 
@@ -57,9 +59,9 @@ MSBuild を使用するには、必要なすべてのツールが含まれるよ
 
 1. コマンド プロンプトで、アプリケーションを作成するフォルダーに移動します ( *\My Documents\\* 、 *\Desktop\\* など)。
 
-2. 「**md HelloWorld**」と入力して、 *\HelloWorld\\* というサブフォルダーを作成します。
+2. 「 **md HelloWorld** 」と入力して、 *\HelloWorld\\* というサブフォルダーを作成します。
 
-3. 「**cd HelloWorld**」と入力して、その新しいフォルダーに移動します。
+3. 「 **cd HelloWorld** 」と入力して、その新しいフォルダーに移動します。
 
 4. メモ帳またはその他のテキスト エディターを起動して、次のコードを入力します。
 
@@ -81,13 +83,13 @@ MSBuild を使用するには、必要なすべてのツールが含まれるよ
 
 5. このソース コード ファイルを *Helloworld.cs* という名前で保存します。
 
-6. コマンド プロンプトで「**csc helloworld.cs**」と入力して、アプリケーションをビルドします。
+6. コマンド プロンプトで「 **csc helloworld.cs** 」と入力して、アプリケーションをビルドします。
 
-7. コマンド プロンプトで「**helloworld**」と入力して、アプリケーションをテストします。
+7. コマンド プロンプトで「 **helloworld** 」と入力して、アプリケーションをテストします。
 
-     "**Hello, world!** " というメッセージが表示されます。
+     " **Hello, world!** " というメッセージが表示されます。
 
-8. コマンド プロンプトで「**del helloworld.exe**」と入力して、アプリケーションを削除します。
+8. コマンド プロンプトで「 **del helloworld.exe** 」と入力して、アプリケーションを削除します。
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>最低限の内容のみを含む MSBuild プロジェクト ファイルを作成する
 
@@ -142,15 +144,15 @@ MSBuild を使用するには、必要なすべてのツールが含まれるよ
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
-    <Csc Sources="@(Compile)"/>  
+    <Csc Sources="@(Compile)"/>  
   </Target>
 </Project>
 ```
 
-Build ターゲットのタスクは順番に実行されます。 ここでは、Visual C# コンパイラの `Csc` タスクが唯一のタスクです。 このタスクは、コンパイルするソース ファイルのリストを受け取ります。これは、`Compile` 項目の値によって渡されます。 `Compile` 項目は、*Helloworld.cs* という 1 つのソース ファイルのみを参照しています。
+Build ターゲットのタスクは順番に実行されます。 ここでは、Visual C# コンパイラの `Csc` タスクが唯一のタスクです。 このタスクは、コンパイルするソース ファイルのリストを受け取ります。これは、`Compile` 項目の値によって渡されます。 `Compile` 項目は、 *Helloworld.cs* という 1 つのソース ファイルのみを参照しています。
 
 > [!NOTE]
 > 項目要素でワイルドカード文字のアスタリスク (\*) を使用して、拡張子 *.cs* を持つすべてのファイルを参照することもできます。次に例を示します。
@@ -163,13 +165,13 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
  次に、先ほど作成したプロジェクト ファイルを使用してアプリケーションをビルドします。
 
-1. コマンド プロンプトで、「**msbuild helloworld.csproj -t:Build**」と入力します。
+1. コマンド プロンプトで、「 **msbuild helloworld.csproj -t:Build** 」と入力します。
 
      Visual C# コンパイラが呼び出され、Helloworld プロジェクト ファイルの Build ターゲットがビルドされて、Helloworld アプリケーションが作成されます。
 
-2. 「**helloworld**」と入力してアプリケーションをテストします。
+2. 「 **helloworld** 」と入力してアプリケーションをテストします。
 
-     "**Hello, world!** " というメッセージが表示されます。
+     " **Hello, world!** " というメッセージが表示されます。
 
 > [!NOTE]
 > 詳細レベルを上げると、ビルドの詳細情報を表示できます。 詳細レベルを "detailed" に設定するには、コマンド プロンプトで次のコマンドを入力します。
@@ -186,7 +188,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 ### <a name="to-add-build-properties"></a>ビルド プロパティを追加するには
 
-1. コマンド プロンプトで「**del helloworld.exe**」と入力して、既存のアプリケーションを削除します。
+1. コマンド プロンプトで「 **del helloworld.exe** 」と入力して、既存のアプリケーションを削除します。
 
 2. プロジェクト ファイルで、次の `PropertyGroup` 要素を開始 `Project` 要素の直後に挿入します。
 
@@ -224,7 +226,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -238,27 +240,27 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)$(AssemblyName).exe" />`
 >
 > この形式が次の形式より推奨されます。
 >
 > `<OutputPath>Bin</OutputPath>`
 >
-> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>ビルド プロパティをテストする
 
  次に、ビルド プロパティで出力フォルダーとアプリケーション名を指定したプロジェクト ファイルを使用してアプリケーションをビルドします。
 
-1. コマンド プロンプトで、「**msbuild helloworld.csproj -t:Build**」と入力します。
+1. コマンド プロンプトで、「 **msbuild helloworld.csproj -t:Build** 」と入力します。
 
-     *\Bin\\* フォルダーが作成され、Visual C# コンパイラが呼び出されて、*MSBuildSample* アプリケーションが作成されて *\Bin\\* フォルダーに配置されます。
+     *\Bin\\* フォルダーが作成され、Visual C# コンパイラが呼び出されて、 *MSBuildSample* アプリケーションが作成されて *\Bin\\* フォルダーに配置されます。
 
-2. 「**dir Bin**」と入力して、 *\Bin\\* フォルダーが作成されていることと、そこに *MSBuildSample* アプリケーションが含まれていることを確認します。
+2. 「 **dir Bin** 」と入力して、 *\Bin\\* フォルダーが作成されていることと、そこに *MSBuildSample* アプリケーションが含まれていることを確認します。
 
-3. 「**Bin\MSBuildSample**」と入力してアプリケーションをテストします。
+3. 「 **Bin\MSBuildSample** 」と入力してアプリケーションをテストします。
 
-     "**Hello, world!** " というメッセージが表示されます。
+     " **Hello, world!** " というメッセージが表示されます。
 
 ## <a name="add-build-targets"></a>ビルド ターゲットを追加する
 
@@ -300,7 +302,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
     <OutputPath>Bin\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="helloworld.cs" />
+    <Compile Include="helloworld.cs" />
   </ItemGroup>
   <Target Name="Build">
     <MakeDir Directories="$(OutputPath)" Condition="!Exists('$(OutputPath)')" />
@@ -327,31 +329,31 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
 
 ### <a name="to-test-the-build-targets"></a>ビルド ターゲットをテストするには
 
-1. コマンド プロンプトで、「**msbuild helloworld.csproj -p:AssemblyName=Greetings**」と入力します。
+1. コマンド プロンプトで、「 **msbuild helloworld.csproj -p:AssemblyName=Greetings** 」と入力します。
 
-     **-t** スイッチを使用してターゲットを明示的に設定していないため、MSBuild により既定の Build ターゲットがビルドされます。 **-p** スイッチでは、`AssemblyName` プロパティをオーバーライドして新しい値 `Greetings` を割り当てています。 これにより、*Greetings.exe* という新しいアプリケーションが *\Bin\\* フォルダーに作成されます。
+     **-t** スイッチを使用してターゲットを明示的に設定していないため、MSBuild により既定の Build ターゲットがビルドされます。 **-p** スイッチでは、`AssemblyName` プロパティをオーバーライドして新しい値 `Greetings` を割り当てています。 これにより、 *Greetings.exe* という新しいアプリケーションが *\Bin\\* フォルダーに作成されます。
 
-2. *\Bin\\* フォルダーに *MSBuildSample* アプリケーションと新しい *Greetings* アプリケーションの両方が含まれていることを確認するには、「**dir Bin**」と入力します。
+2. *\Bin\\* フォルダーに *MSBuildSample* アプリケーションと新しい *Greetings* アプリケーションの両方が含まれていることを確認するには、「 **dir Bin** 」と入力します。
 
-3. 「**Bin\Greetings**」と入力して、Greetings アプリケーションをテストします。
+3. 「 **Bin\Greetings** 」と入力して、Greetings アプリケーションをテストします。
 
-     "**Hello, world!** " というメッセージが表示されます。
+     " **Hello, world!** " というメッセージが表示されます。
 
-4. 「**msbuild helloworld.csproj -t:clean**」を入力して、MSBuildSample アプリケーションを削除します。
+4. 「 **msbuild helloworld.csproj -t:clean** 」を入力して、MSBuildSample アプリケーションを削除します。
 
      Clean タスクが実行されて、`AssemblyName` プロパティの値が既定値の `MSBuildSample` になっているアプリケーションが削除されます。
 
-5. 「**msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**」を入力して、Greetings アプリケーションを削除します。
+5. 「 **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings** 」を入力して、Greetings アプリケーションを削除します。
 
-     Clean タスクが実行されて、**AssemblyName** プロパティの値が、指定した値 `Greetings` になっているアプリケーションが削除されます。
+     Clean タスクが実行されて、 **AssemblyName** プロパティの値が、指定した値 `Greetings` になっているアプリケーションが削除されます。
 
-6. *\Bin\\* フォルダーが空になったことを確認するには、「**dir Bin**」と入力します。
+6. *\Bin\\* フォルダーが空になったことを確認するには、「 **dir Bin** 」と入力します。
 
-7. 「**msbuild**」と入力します。
+7. 「 **msbuild** 」と入力します。
 
-     プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、*helloworld.csproj* ファイルがビルドされます。 その結果、 *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが作成されます。
+     プロジェクト ファイルが指定されていませんが、現在のフォルダーにはプロジェクト ファイルが 1 つしかないため、 *helloworld.csproj* ファイルがビルドされます。 その結果、 *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが作成されます。
 
-     *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが含まれていることを確認するには、「**dir Bin**」と入力します。
+     *\Bin\\* フォルダーに *MSBuildSample* アプリケーションが含まれていることを確認するには、「 **dir Bin** 」と入力します。
 
 ## <a name="build-incrementally"></a>インクリメンタル ビルド
 
@@ -376,7 +378,7 @@ Build ターゲットのタスクは順番に実行されます。 ここでは�
     </Target>
     ```
 
-2. コマンド プロンプトで「**msbuild -v:d**」と入力して、Build ターゲットをテストします。
+2. コマンド プロンプトで「 **msbuild -v:d** 」と入力して、Build ターゲットをテストします。
 
      *helloworld.csproj* が既定のプロジェクト ファイルであること、Build が既定のターゲットであることに注意してください。
 

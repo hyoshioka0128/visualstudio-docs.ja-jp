@@ -1,5 +1,7 @@
 ---
 title: ドメイン固有言語について
+description: ドメイン固有言語 (DSL) が、特定の問題領域 (ドメイン) のステートメントを表現するように設計されている方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597270"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360891"
 ---
 # <a name="about-domain-specific-languages"></a>ドメイン固有言語について
 
@@ -54,11 +56,11 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 独自のグラフィカルデザイナーと独自のダイアグラム表記を持つドメイン固有言語を作成し、その言語を使用して、プロジェクトごとに適切なソースコードを生成できます。
 
-## <a name="domain-specific-development"></a>ドメイン固有の開発
+## <a name="domain-specific-development"></a>Domain-Specific 開発
 
 ドメイン固有の開発は、ドメイン固有言語を使用してモデル化できるアプリケーションの部分を特定し、その言語を構築して、アプリケーション開発者に展開するプロセスです。 開発者は、ドメイン固有言語を使用して、アプリケーションに固有のモデルを構築し、モデルを使用してソースコードを生成した後、ソースコードを使用してアプリケーションを開発します。
 
-## <a name="aspects-of-graphical-domain-specific-development"></a>グラフィカルなドメイン固有の開発の側面
+## <a name="aspects-of-graphical-domain-specific-development"></a>グラフィカル Domain-Specific 開発の側面
 
 グラフィカルドメイン固有言語には、次の機能が含まれている必要があります。
 
@@ -94,7 +96,7 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
 また、ドメイン固有言語のモデルバスアダプターを作成することもできます。 このアダプターを使用すると、モデル内のモデルと要素を参照でき、DSL のインスタンスにアクセスして更新できるコードを記述できます。 強力なモデルバスメカニズムを使用することにより、複数のモデルで動作する Visual Studio 拡張機能を作成できます。 また、モデルを使用するスタンドアロンアプリケーションを作成することもできます。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。
 
-## <a name="benefits-of-domain-specific-development"></a>ドメイン固有の開発の利点
+## <a name="benefits-of-domain-specific-development"></a>Domain-Specific 開発の利点
 
 ドメイン固有言語には、次のような利点があります。
 
@@ -110,7 +112,7 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
      開発者は、モデルによって生成されるコードを使用して、クライアントに表示できるプロトタイプアプリケーションを作成できます。
 
-## <a name="the-process-of-domain-specific-development"></a>ドメイン固有開発のプロセス
+## <a name="the-process-of-domain-specific-development"></a>Domain-Specific 開発のプロセス
 
 ドメイン固有言語を使用するほとんどのソフトウェア開発チームは、次の手順に従って、モデルを作成して使用します。
 

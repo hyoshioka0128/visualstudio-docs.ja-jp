@@ -1,5 +1,7 @@
 ---
-title: 方法 - .NET Framework ソースをデバッグする | Microsoft Docs
+title: .NET Framework ソースをデバッグする | Microsoft Docs
+Description: .NET Framework ソースをデバッグする方法について説明します。 そのための構成を行い、デバッグ シンボルをダウンロードする必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f043aae44231608fb514e87a05717f4aeb924bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 13a575ec2e77f1b715ec5f17324a6933d8cf0805
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350096"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398624"
 ---
 # <a name="how-to-debug-net-framework-source"></a>方法: .NET Framework ソースをデバッグする
 

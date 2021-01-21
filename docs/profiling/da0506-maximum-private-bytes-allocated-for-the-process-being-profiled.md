@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 663de229aa9d7d3dee22425347a3464c200b9d53
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a5447c21e3a1049bcb2cb86e3e0419e43fc4e953
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532094"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036809"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506:プロセスに割り当てられた最大プライベート バイト数がプロファイリングされています
 
@@ -46,4 +46,4 @@ ms.locfileid: "85532094"
 ## <a name="how-to-use-rule-data"></a>規則データの使用方法
  報告された値を使用して、特定のプログラムの異なるバージョンやビルドを比較したり、さまざまなプロファイリング シナリオにおけるアプリケーションのパフォーマンスを確認したりします。
 
- プロセスのプライベート バイトの最大値が、プロセスのアドレス空間が占めることができる設計上の上限に近づくと、メモリ不足による例外が発生する可能性があります。 詳細については MSDN マガジンの「[Investigating Memory Issues](https://msdn.microsoft.com/magazine/cc163528.aspx)」 (メモリの問題を調査する) を参照してください。
+ プロセスのプライベート バイトの最大値が、プロセスのアドレス空間が占めることができる設計上の上限に近づくと、メモリ不足による例外が発生する可能性があります。 詳細については MSDN マガジンの「[Investigating Memory Issues](/archive/msdn-magazine/2006/november/clr-inside-out-investigating-memory-issues)」 (メモリの問題を調査する) を参照してください。

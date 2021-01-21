@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: ワークフローへのアプリケーションページの追加 |Microsoft Docs'
+description: このチュートリアルでは、SharePoint ワークフローソリューションにアプリケーションページを追加します。 ワークフローコードを修正します。 アプリケーションページを作成、コーディング、およびテストします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f54914e6676e0cc2400fa04ebb089fac08f58c3c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015491"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915662"
 ---
-# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>チュートリアル: ワークフローへのアプリケーションページの追加
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>チュートリアル: ワークフローへのアプリケーション ページの追加
   このチュートリアルでは、ワークフローから派生したデータを表示するアプリケーションページをワークフロープロジェクトに追加する方法について説明します。 このプロジェクトは、「 [チュートリアル: 関連付けフォームと開始フォームを使用したワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」で説明されているプロジェクトに基づいています。
 
  このチュートリアルでは、次のタスクについて説明します。
@@ -44,14 +46,14 @@ ms.locfileid: "86015491"
 
 - また、「 [チュートリアル: 関連付けフォームと開始フォームを使用](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)したワークフローの作成」でもプロジェクトを完了する必要があります。
 
-## <a name="ammend-the-workflow-code"></a>ワークフローコードの Ammend
+## <a name="amend-the-workflow-code"></a>ワークフローコードを修正する
  まず、ワークフローにコード行を追加して、結果列の値を経費報告書の金額に設定します。 この値は、経費報告書の概要計算で後で使用されます。
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>ワークフローの結果列の値を設定するには
 
 1. 「 [チュートリアル: 関連付けと開始フォームを持つワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) 」から完成したプロジェクトを読み込み [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
-2. *Workflow1.cs*または*workflow1.xaml*のコードを開きます (プログラミング言語によって異なります)。
+2. *Workflow1.cs* または *workflow1.xaml* のコードを開きます (プログラミング言語によって異なります)。
 
 3. メソッドの一番下に `createTask1_MethodInvoking` 次のコードを追加します。
 
@@ -101,7 +103,7 @@ ms.locfileid: "86015491"
 
 #### <a name="to-code-the-application-page"></a>アプリケーションページをコーディングするには
 
-1. **ApplicationPage1**ノードを選択し、メニューバーで [コードの**表示**] を選択して、  >  **Code**アプリケーションページの背後にあるコードを表示します。
+1. **ApplicationPage1** ノードを選択し、メニューバーで [コードの **表示**] を選択して、  >  **Code** アプリケーションページの背後にあるコードを表示します。
 
 2. クラスの先頭にある **using** ステートメントまたは **Import** ステートメント (プログラミング言語によって異なります) を、次のように置き換えます。
 
@@ -302,7 +304,7 @@ ms.locfileid: "86015491"
 
 #### <a name="to-test-the-application-page"></a>アプリケーション ページをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行し、SharePoint に配置します。
+1. **F5** キーを押して、プロジェクトを実行し、SharePoint に配置します。
 
 2. [ **ホーム** ] ボタンをクリックし、クイック起動バーの [ **共有ドキュメント** ] リンクをクリックして、SharePoint サイトに [共有ドキュメント] の一覧を表示します。
 
@@ -330,7 +332,7 @@ ms.locfileid: "86015491"
 
 13. [ **支出合計** ] テキストボックスに1000より大きい値を入力し、[ **ワークフローの開始** ] をクリックします。
 
-     報告された経費が割り当てられた経費額を超えると、タスクがタスク一覧に追加されます。 "**完了**" という値を持つ**ExpenseTest**という名前の列も、[共有ドキュメント] の一覧の経費報告書項目に追加されます。
+     報告された経費が割り当てられた経費額を超えると、タスクがタスク一覧に追加されます。 "**完了**" という値を持つ **ExpenseTest** という名前の列も、[共有ドキュメント] の一覧の経費報告書項目に追加されます。
 
 14. [共有ドキュメント] ボックスの一覧の他のドキュメントで、手順 11-13 を繰り返します。 (ドキュメントの正確な数は重要ではありません)。
 
@@ -349,7 +351,7 @@ ms.locfileid: "86015491"
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: 関連付けフォームと開始フォームを使用したワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
-- [方法: アプリケーションページを作成する](../sharepoint/how-to-create-an-application-page.md)
-- [SharePoint のアプリケーションページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)
+- [チュートリアル: 関連付けフォームと開始フォームを持つワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
+- [方法: アプリケーション ページを作成する](../sharepoint/how-to-create-an-application-page.md)
+- [SharePoint のアプリケーション ページの作成](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

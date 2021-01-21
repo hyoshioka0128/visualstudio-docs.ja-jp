@@ -1,5 +1,7 @@
 ---
 title: app.config ファイルをプロジェクトに追加する方法
+description: app.config ファイルを C# プロジェクトに追加して、共通言語ランタイムによるアセンブリ ファイルの検索および読み込み方法をカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe659979cadf4d9e5752f7bbe85150aae848de08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 282c66acd71d0c68ff5bc3c74db2e8a2517a00d1
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770832"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597354"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>方法: C# プロジェクトにアプリケーション構成ファイルを追加する
 
@@ -35,11 +37,11 @@ ms.locfileid: "85770832"
 
 1. **[インストール]**  >  **[Visual C# アイテム]** の順に展開し、 **[アプリケーション構成ファイル]** テンプレートを選択します。
 
-1. **[名前]** ボックスに名前を入力し、 **[追加]** ボタンをクリックします。
+1. **[名前]** ボックスに名前を入力し、**[追加]** ボタンをクリックします。
 
      *app.config* という名前のファイルがプロジェクトに追加されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [アプリケーション設定の管理 (.NET)](../ide/managing-application-settings-dotnet.md)
 - [構成ファイル スキーマ (.NET Framework )](/dotnet/framework/configure-apps/file-schema/index)

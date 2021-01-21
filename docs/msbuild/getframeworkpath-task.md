@@ -1,5 +1,7 @@
 ---
 title: GetFrameworkPath タスク | Microsoft Docs
+description: MSBuild GetFrameworkPath タスクを使用して .NET Framework アセンブリへのパスを取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b907194c4818ff6b867e9d15b795506ef3b77476
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d54a1029805066f5477cb552f5fcf3f2e09598b
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634007"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436838"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath タスク
 
@@ -43,7 +45,7 @@ ms.locfileid: "77634007"
 |`FrameworkVersion40Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 存在する場合、フレームワーク バージョン 4.0 アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 |`Path`|省略可能な `String` 型の出力パラメーターです。<br /><br /> 利用できる場合、最新のフレームワーク アセンブリのパスが含まれます。 それ以外の場合は、`null` を返します。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 .NET Framework のいくつかのバージョンがインストールされている場合、このタスクでは、MSBuild が実行されるように設計されているバージョンが返されます。
 

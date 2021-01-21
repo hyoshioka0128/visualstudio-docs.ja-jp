@@ -1,5 +1,7 @@
 ---
 title: 0x-2x-4x MSAA バリアント | Microsoft Docs
+description: 0x、2x、または 4x MSAA バリアントを使用し、すべてのレンダー ターゲットおよびスワップ チェーン上で multi-sample anti-aliasing (MSAA) の設定をオーバーライドする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1d4de52fb135e465e7adc938bb29c571bfcc1973
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816539"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726554"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA バリアント
 すべてのレンダー ターゲットおよびスワップ チェーン上で multi-sample anti-aliasing (MSAA) の設定をオーバーライドします。
@@ -54,7 +56,7 @@ ms.locfileid: "64816539"
 
  再生でこのような矛盾が見つかると、本来の正しい動作を複製するために出来る限りのことをしますが、結果を正確に適合させるのは不可能でしょう。 影響を正確に伝えていない方法で、これらのバリアントのパフォーマンスが影響を受けることは一般的ではありませんが、起こり得ることです (たとえば、あるピクセル シェーダーのフロー コントロールがテクスチャの正確なコンテンツによって決まる場合です)。複製されたテクスチャは同じコンテンツを持っていない可能性があるからです。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
  これらのバリアントは、`ID3D11Device::CreateTexture2D` を使用して作成されたレンダー ターゲットに対して、次のようなコードを使用して再生することができます。
 
 ```cpp
@@ -65,7 +67,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
  または、IDXGISwapChain::CreateSwapChain または D3D11CreateDeviceAndSwapChain を使用して作成されたスワップ チェーンに対して、次のようなコードを使用して再生することができます。
 
 ```cpp

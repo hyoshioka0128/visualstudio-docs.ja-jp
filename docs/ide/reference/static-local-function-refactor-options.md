@@ -1,5 +1,7 @@
 ---
 title: 静的ローカル関数のリファクタリング オプション
+description: '[クイック アクションとリファクタリング] メニューを使用して、ローカル関数を静的にし、関数の外部で定義された変数を関数の宣言と呼び出しに渡す方法を説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
@@ -11,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8e85fcc96542b4f3538729aeb50a4e080c902657
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77144838"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479889"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>静的ローカル関数のリファクタリングとクイック アクション
 
@@ -34,7 +36,7 @@ ms.locfileid: "77144838"
 
 **理由:** 静的ローカル関数を使用すると読みやすさが向上します。特定のコードが分離されていることを把握することで、理解、再読み取り、再利用が容易になります。 また、静的ローカル関数によってスコープも提供され、1 つのメソッド内のみで呼び出される静的関数でクラスが煩雑になるのを防ぐことができます。
 
-### <a name="how-to"></a>方法
+### <a name="how-to"></a>操作方法
 
 1. ローカル関数名にキャレットを配置します。
 
@@ -56,7 +58,7 @@ ms.locfileid: "77144838"
 
 **理由:** 静的ローカル関数を使うことで、読みやすさが向上します。その宣言や呼び出しはプログラムの特定のコンテキストでしか行えない、ということがわかるためです。 これにより、このコンテキストの外部で変数を定義できる柔軟性がもたらされますが、変数を引数として静的ローカル関数に渡すこともできます。
 
-### <a name="how-to"></a>方法
+### <a name="how-to"></a>操作方法
 
 1. 静的ローカル関数内で使用される場所で、変数にキャレットを配置します。
 

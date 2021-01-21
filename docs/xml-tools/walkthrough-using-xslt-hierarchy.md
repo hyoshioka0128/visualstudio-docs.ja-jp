@@ -1,16 +1,18 @@
 ---
 title: 'チュートリアル: XSLT 階層の使用'
+description: このチュートリアルの手順に従って Visual Studio の XSLT 階層ツールを使用し、参照されているスタイル シートでデバッグする方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 940185687544b22325d3f75751eb92e950deb685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68018c625c5e406e2ba0d7fbfb138b05c53fff9c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815033"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351324"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>チュートリアル: XSLT 階層の使用
 

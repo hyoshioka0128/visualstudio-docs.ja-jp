@@ -1,5 +1,7 @@
 ---
-title: Get メソッドをプロパティに変換する、プロパティを Get メソッドに変換する
+title: Get メソッドをプロパティに、またはプロパティから変換する
+description: '[クイック アクションとリファクタリング] メニューを使用して、Get メソッド (および必要に応じて Set メソッド) をプロパティに変換する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 ms.devlang: csharp
@@ -13,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3aa7831c56068c826c9bbecf97d7115331243251
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094210"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039824"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Get メソッドのプロパティへの変換/プロパティの Get メソッドへの変換リファクタリング
 

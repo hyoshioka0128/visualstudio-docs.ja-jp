@@ -1,5 +1,7 @@
 ---
 title: プロパティ関数 | Microsoft Docs
+description: MSBuild のプロパティ定義に含まれている .NET Framework メソッドの呼び出しであるプロパティ関数を使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 7fa104ece39e20fbd00abcc2e1616a3dd52a5d4c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183653"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437124"
 ---
 # <a name="property-functions"></a>プロパティ関数
 
@@ -248,9 +250,9 @@ MSBuild の `GetRegistryValue` プロパティ関数は、レジストリ キー
 この関数を使用する方法を次の例に示します。
 
 ```
-$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
+$([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, ``))                                  // default value
 $([MSBuild]::GetRegistryValue(`HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Debugger`, `SymbolCacheDir`))
-$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
+$([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(SampleValue)`))             // parens in name and value
 ```
 
 ## <a name="msbuild-getregistryvaluefromview"></a>MSBuild の GetRegistryValueFromView
@@ -338,6 +340,49 @@ Output:
   Value1 = a
   Value2 = b
 -->
+```
+
+## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild の TargetFramework と TargetPlatform の関数
+
+MSBuild では、[TargetFramework と TargetPlatform のプロパティ](msbuild-target-framework-and-target-platform.md)を処理するための関数がいくつか定義されています。
+
+|関数シグネチャ|説明|
+|------------------------|-----------------|
+|GetTargetFrameworkIdentifier(string targetFramework)|TargetFramework から TargetFrameworkIdentifier を解析します。|
+|GetTargetFrameworkVersion(string targetFramework)|TargetFramework から TargetFrameworkVersion を解析します。|
+|GetTargetPlatformIdentifier(string targetFramework)|TargetFramework から TargetPlatformIdentifier を解析します。|
+|GetTargetPlatformVersion(string targetFramework)|TargetFramework から TargetPlatformVersion を解析します。|
+|IsTargetFrameworkCompatible(string targetFrameworkTarget, string targetFrameworkCandidate)|ターゲット フレームワーク候補がこのターゲット フレームワークと互換性がある場合は、'True' を返します。それ以外の場合は、False を返します。|
+
+これらの関数を使用する方法を次の例に示します。 
+
+```xml
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Value1>$([MSBuild]::GetTargetFrameworkIdentifier('net5.0-windows7.0'))</Value1>
+        <Value2>$([MSBuild]::GetTargetFrameworkVersion('net5.0-windows7.0'))</Value2>
+        <Value3>$([MSBuild]::GetTargetPlatformIdentifier('net5.0-windows7.0'))</Value3>
+        <Value4>$([MSBuild]::GetTargetPlatformVersion('net5.0-windows7.0'))</Value4>
+        <Value5>$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', 'net5.0'))</Value5>
+    </PropertyGroup>
+
+    <Target Name="MyTarget">
+        <Message Text="Value1 = $(Value1)" />
+        <Message Text="Value2 = $(Value2)" />
+        <Message Text="Value3 = $(Value3)" />
+        <Message Text="Value4 = $(Value4)" />
+        <Message Text="Value5 = $(Value5)" />
+    </Target>
+</Project>
+```
+
+```output
+Value1 = .NETCoreApp
+Value2 = 5.0
+Value3 = windows
+Value4 = 7.0
+Value5 = True
 ```
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 条件関数

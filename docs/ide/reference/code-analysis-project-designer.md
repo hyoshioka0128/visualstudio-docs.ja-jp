@@ -1,5 +1,7 @@
 ---
 title: コード分析 (プロジェクト デザイナー)
+description: Code Analysis とプロジェクト デザイナーについて、およびコードに対して実行できるコード分析ツールがそれにどのように含まれているかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b9b61d25d0a08763d55dcfb5d5ddb245471effc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7a972e183047b9d8cb7adfd30638be2fd4b0de86
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76113774"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96041033"
 ---
 # <a name="code-analysis-project-designer"></a>コード分析 (プロジェクト デザイナー)
 
@@ -62,8 +64,8 @@ ms.locfileid: "76113774"
 使い方の規則\
 使い方の規則を有効または無効にします。 このエントリを展開して、個別の規則を有効または無効にすることもできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [マネージド コードの警告に対応するコードの解析](../../code-quality/code-analysis-for-managed-code-warnings.md)
+- [マネージド コードの警告に対応するコードの解析](/dotnet/fundamentals/code-analysis/quality-rules/index)
 - [マネージド コードに対するコード分析の概要](../../code-quality/code-analysis-for-managed-code-overview.md)
 - [チュートリアル: マネージド コードの分析によるコード障害の検出](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

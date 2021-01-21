@@ -1,6 +1,7 @@
 ---
 title: スナップショットのデバッグに関するトラブルシューティング | Microsoft Docs
-ms.custom: ''
+description: Visual Studio でのスナップショットのデバッグに関するトラブルシューティングと既知の問題について説明します。 実稼働サイトでダウンタイムを引き起こすことなく ICorProfiler を読み込みます。
+ms.custom: SEO-VS-2020
 ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: b5a76c1cae508acd08e5f077d466facf02e0211a
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84182873"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728645"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグに関するトラブルシューティングと既知の問題
 
-この記事で説明されている手順を実行しても問題が解決しない場合は、[開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/8/index.html)で問題を検索するか、Visual Studio で **[ヘルプ]**  >  **[フィードバックの送信]**  >  **[問題の報告]** を選択して新しい問題を報告してください。
+この記事で説明されている手順を実行しても問題が解決しない場合は、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)で問題を検索するか、Visual Studio で **[ヘルプ]**  >  **[フィードバックの送信]**  >  **[問題の報告]** を選択して新しい問題を報告してください。
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>問題:[スナップショット デバッガーのアタッチ] で HTTP 状態コード エラーが発生する
 
@@ -59,7 +60,7 @@ App Service で認証/承認 (EasyAuth) を有効にした場合、呼び出し�
 }
 ```
 
-最初の route は、 **[[ID プロバイダー] でのログイン]** と同様にアプリドメインを効果的に保護します。 2 番目の route は、認証の外部で SnapshotDebugger AgentLaunch エンドポイントを公開し、SnapshotDebugger のプレインストールされたサイト拡張機能がアプリサービスに対して有効になっている*場合にのみ*、事前定義済みの SnapshotDebugger 診断エージェント開始アクションを実行します。 authorization. json 構成の詳細については、[URL 承認規則に関する記事](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html)を参照してください。
+最初の route は、 **[[ID プロバイダー] でのログイン]** と同様にアプリドメインを効果的に保護します。 2 番目の route は、認証の外部で SnapshotDebugger AgentLaunch エンドポイントを公開し、SnapshotDebugger のプレインストールされたサイト拡張機能がアプリサービスに対して有効になっている *場合にのみ*、事前定義済みの SnapshotDebugger 診断エージェント開始アクションを実行します。 authorization. json 構成の詳細については、[URL 承認規則に関する記事](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html)を参照してください。
 
 ### <a name="403-forbidden"></a>(403) 禁止されています
 
@@ -153,7 +154,7 @@ App Service で認証/承認 (EasyAuth) を有効にした場合、呼び出し�
 
 次の手順を実行します。
 
-- スナップショット デバッガー コンポーネントがインストールされていることを確認します。 Visual Studio インストーラーを開き、Azure ワークロードの**スナップショット デバッガー** コンポーネントをオンにします。
+- スナップショット デバッガー コンポーネントがインストールされていることを確認します。 Visual Studio インストーラーを開き、Azure ワークロードの **スナップショット デバッガー** コンポーネントをオンにします。
 ::: moniker range="< vs-2019"
 - アプリがサポートされていることを確認します。 現在、Azure App Service にデプロイされている ASP.NET (4.6.1 以降) と ASP.NET Core (2.0 以降) のアプリケーションのみがサポートされています。
 ::: moniker-end

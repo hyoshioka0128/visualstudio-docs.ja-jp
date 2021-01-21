@@ -1,5 +1,7 @@
 ---
 title: 1つのファイルジェネレーターの登録 |Microsoft Docs
+description: Visual Studio でカスタムツールを登録してインスタンス化し、特定のプロジェクトの種類に関連付ける方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 7a0ce4afeddebdec8519467e1f4249095ce98f6b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012036"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875259"
 ---
 # <a name="registering-single-file-generators"></a>単一ファイル ジェネレーターの登録
 でカスタムツールを使用できるようにするには、そのツールを [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] インスタンス化して特定のプロジェクトの種類に関連付けることができるように、登録する必要があります。
@@ -36,9 +38,9 @@ ms.locfileid: "90012036"
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. [ジェネレーター guid] の下にある目的の hive でレジストリキーを作成し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \\ *GUID*ます。 *guid*は、特定の言語のプロジェクトシステムまたはサービスによって定義された guid です。 キーの名前は、カスタムツールのプログラム名になります。 カスタムツールキーの値は次のとおりです。
+2. [ジェネレーター guid] の下にある目的の hive でレジストリキーを作成し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] \\ ます。 *guid* は、特定の言語のプロジェクトシステムまたはサービスによって定義された guid です。 キーの名前は、カスタムツールのプログラム名になります。 カスタムツールキーの値は次のとおりです。
 
-   - (既定)
+   - (既定値)。
 
         省略可能。 カスタムツールについてのわかりやすい説明を提供します。 このパラメーターは省略可能ですが、推奨されます。
 

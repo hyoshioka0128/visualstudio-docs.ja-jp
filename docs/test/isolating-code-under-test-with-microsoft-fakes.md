@@ -1,5 +1,7 @@
 ---
 title: Microsoft Fakes を使用したテストでのコードの分離
+description: Microsoft Fakes を使用して、アプリケーションの他の部分をスタブまたは shim に置き換えることにより、テストするコードを分離する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -10,16 +12,16 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 49330132321c389fc5b6a4842972769896c72637
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85286961"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329537"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
-Microsoft Fakes では、アプリケーションの別の部分を*スタブ*または *shim* で置き換えることにより、テストするコードを分離できます。 これらは、テストの制御下にある小さいコードです。 テストのコードを分離することにより、テストが失敗した場合に、原因が別の場所ではなくそこにあることを確認できます。 また、アプリケーションの別の部分がまだ機能していない場合でも、スタブと shim を使用すると、コードをテストできます。
+Microsoft Fakes では、アプリケーションの別の部分を *スタブ* または *shim* で置き換えることにより、テストするコードを分離できます。 これらは、テストの制御下にある小さいコードです。 テストのコードを分離することにより、テストが失敗した場合に、原因が別の場所ではなくそこにあることを確認できます。 また、アプリケーションの別の部分がまだ機能していない場合でも、スタブと shim を使用すると、コードをテストできます。
 
 Fakes には 2 種類のフレーバーがあります。
 
@@ -33,10 +35,11 @@ Fakes には 2 種類のフレーバーがあります。
 
 - Visual Studio Enterprise
 - .NET Framework プロジェクト
-- .NET Core および SDK スタイルのプロジェクト サポートは現在プレビュー段階です。 [詳細](https://docs.microsoft.com/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)
+::: moniker range=">=vs-2019"
+- Visual Studio 2019 Update 6 でプレビューされた .NET Core と SDK スタイルのプロジェクトのサポートは、Update 8 で既定で有効になっています。 詳細については、「[.NET Core および SDK スタイルのプロジェクトのための Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)」を参照してください。
+::: moniker-end
 
 > [!NOTE]
-> - .NET Standard プロジェクトはサポートされていません。
 > - Microsoft Fakes を使用するテストでは、Visual Studio でのプロファイリングは使用できません。
 
 ## <a name="choose-between-stub-and-shim-types"></a>スタブ型と shim 型から選択する
@@ -82,11 +85,15 @@ Fakes には 2 種類のフレーバーがあります。
 
 2. **Fakes アセンブリの追加**
 
-    1. **ソリューション エクスプローラー**で、テスト プロジェクトの参照一覧を展開します。 Visual Basic で作業している場合、参照一覧を表示するには、 **[すべてのファイルを表示]** を選択する必要があります。
+   1. **ソリューション エクスプローラー** で。 
+       - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
+       ::: moniker range=">=vs-2019"
+       - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
+       ::: moniker-end
+       - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
+   2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、**System.dll** を選択します。
 
-    2. インターフェイス (たとえば IStockFeed) が定義されているアセンブリへの参照を選択します。 この参照のショートカット メニューで、 **[Fakes アセンブリに追加]** をクリックします。
-
-    3. ソリューションをリビルドします。
+   3. ショートカット メニューで、 **[Fakes アセンブリに追加]** を選択します。
 
 3. テストで、スタブのインスタンスを構築し、そのメソッドのためのコードを指定します。
 
@@ -146,7 +153,7 @@ Fakes には 2 種類のフレーバーがあります。
 
     ```
 
-    ここでの特殊なマジックは、`StubIStockFeed` クラスです。 参照アセンブリのそれぞれのインターフェイスに対して、Microsoft Fakes のメカニズムによってスタブ クラスが生成されます。 スタブ クラスの名前はインターフェイスの名前から派生します。プレフィックスとして `Fakes.Stub` が付き、パラメーターの型名が加わります。
+    ここでの特殊なマジックは、`StubIStockFeed` クラスです。 参照アセンブリのそれぞれのインターフェイスに対して、Microsoft Fakes のメカニズムによってスタブ クラスが生成されます。 スタブ クラスの名前はインターフェイスの名前から派生します。プレフィックスとして "`Fakes.Stub`" が付き、パラメーターの型名が加わります。
 
     また、イベントおよびジェネリック メソッドについて、プロパティの getter および setter に対してもスタブが生成されます。 詳細については、「[スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)」を参照してください。
 
@@ -169,7 +176,7 @@ shim を使用するためにアプリケーション コードを変更した�
 
 1. **Fakes アセンブリの追加**
 
-     **ソリューション エクスプローラー**で、単体テスト プロジェクトの参照を開き、偽装の対象となるメソッドが格納されているアセンブリへの参照を選択します。 この例では、`DateTime` クラスが *System.dll* にあります。  Visual Basic プロジェクトの参照を確認するには、 **[すべてのファイルを表示]** を選択します。
+     **ソリューション エクスプローラー** で、単体テスト プロジェクトの参照を開き、偽装の対象となるメソッドが格納されているアセンブリへの参照を選択します。 この例では、`DateTime` クラスが *System.dll* にあります。  Visual Basic プロジェクトの参照を確認するには、 **[すべてのファイルを表示]** を選択します。
 
      **[Fakes アセンブリに追加]** をクリックします。
 
@@ -244,6 +251,61 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 参照する 'System.IO.Fakes' アセンブリがありません。 名前空間は、shim の作成プロセスによって生成されます。 ただし、通常どおり、'using' または 'Import' を使用できます。
 
 また、特定のインスタンス、コンストラクター、およびプロパティに shim を作成することもできます。 詳細については、「[shim を使用して単体テストでアプリケーションを他のアセンブリから分離する](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)」を参照してください。
+
+## <a name="using-microsoft-fakes-in-the-ci"></a>CI で Microsoft Fakes を使用する
+
+### <a name="microsoft-fakes-assembly-generation"></a>Microsoft Fakes アセンブリの生成
+Microsoft Fakes では Visual Studio Enterprise が必要であるため、Fakes アセンブリを生成するには、[Visual Studio のビルド タスク](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops)を使用してプロジェクトをビルドする必要があります。
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> これに代わる方法は、Fakes アセンブリを CI にチェックインし、[MSBuild タスク](../msbuild/msbuild-task.md?view=vs-2019) を使用することです。 これを行う場合は、次のコード スニペットのような、テスト プロジェクト内に生成される Fakes アセンブリへのアセンブリ参照があることを確認する必要があります。
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Reference Include="FakesAssemblies\System.Fakes.dll">
+    </ItemGroup>
+</Project>
+```
+
+アセンブリ参照をテスト プロジェクトに暗黙的に追加するように移行したため、特に SDK スタイルのプロジェクト (.NET Core と .NET Framework) では、この参照を手動で追加する必要があります。 この方法に従う場合は、親アセンブリが変更されたときに、Fakes アセンブリが確実に更新されるようにする必要があります。
+::: moniker-end
+
+### <a name="running-microsoft-fakes-tests"></a>Microsoft Fakes テストの実行
+構成された `FakesAssemblies` ディレクトリ (既定では `$(ProjectDir)FakesAssemblies`) に Microsoft Fakes アセンブリが存在する限り、[vstest タスク](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)を使用してテストを実行できます。
+
+::: moniker range=">=vs-2019"
+Microsoft Fakes で [vstest task](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops) を使用して .NET Core プロジェクトの分散テストを実行するには、Visual Studio 2019 Update 9 Preview `20201020-06` 以降が必要です。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Microsoft Fakes を使用する .NET Framework テスト プロジェクトの SDK スタイルの .NET Framework または .NET Core プロジェクトへの移行
+最小限の変更で、Microsoft Fakes 用に設定された .NET Framework を .NET Core に移行できます。 考慮する必要があるケースは次のとおりです。
+- カスタム プロジェクト テンプレートを使用している場合は、それが SDK スタイルであり、互換性のあるターゲット フレームワーク用のビルドであることを確認する必要があります。
+- 特定の型が .NET Framework と .NET Core の異なるアセンブリに存在する (たとえば、`System.DateTime` が、.NET Framework では `System`/`mscorlib` に存在し、.NET Core では `System.Runtime` に存在する) 場合は、フェイクされるアセンブリを変更する必要があります。
+- Fakes アセンブリへのアセンブリ参照とテスト プロジェクトがある場合は、次のような参照が存在しないことに関するビルド警告が表示されることがあります。
+  ```
+  (ResolveAssemblyReferences target) ->
+  warning MSB3245: Could not resolve this reference. Could not locate the assembly "AssemblyName.Fakes". Check to make sure the assembly exists on disk.
+  If this reference is required by your code, you may get compilation errors.
+  ```
+  この警告は、Fakes の生成で必要な、無視することが可能な変更によって発生します。 アセンブリ参照はビルド時に暗黙的に追加されるようになったため、プロジェクト ファイルからそれらを削除することで、これを回避できます。
+::: moniker-end
+
+## <a name="microsoft-fakes-support"></a>Microsoft Fakes のサポート 
+### <a name="microsoft-fakes-in-older-projects-targeting-net-framework-non-sdk-style"></a>.NET Framework をターゲットとする古いプロジェクト (非 SDK スタイル) における Microsoft Fakes
+- Microsoft Fakes アセンブリの生成は、Visual Studio Enterprise 2015 以降でサポートされます。
+- Microsoft Fakes テストは、使用可能なすべての Microsoft TestPlatform NuGet パッケージで実行できます。
+- コード カバレッジは、Visual Studio Enterprise 2015 以降で Microsoft Fakes を使用するテスト プロジェクトでサポートされます。
+
+### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK スタイルの .NET Framework と .NET Core のプロジェクトにおける Microsoft Fakes
+- Visual Studio Enterprise 2019 Update 6 でプレビューされた Microsoft Fakes アセンブリの生成は、Update 8 では既定で有効になっています。
+- .NET Framework をターゲットとするプロジェクトに対する Microsoft Fakes テストは、使用可能なすべての Microsoft TestPlatform NuGet パッケージで実行できます。
+- .NET Core をターゲットとするプロジェクトに対する Microsoft Fakes テストは、[16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 以降のバージョンの Microsoft.TestPlatform NuGet パッケージで実行できます。
+- コード カバレッジは、Visual Studio Enterprise バージョン 2015 以降で Microsoft Fakes を使用する、.NET Framework をターゲットとするテスト プロジェクトに対してサポートされます。
+- Microsoft Fakes を使用する .NET Core をターゲットとするテスト プロジェクトに対するコード カバレッジは、開発中です。
+
 
 ## <a name="in-this-section"></a>このセクションの内容
 [スタブを使用して単体テストでアプリケーションの各部分を相互に分離する](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)

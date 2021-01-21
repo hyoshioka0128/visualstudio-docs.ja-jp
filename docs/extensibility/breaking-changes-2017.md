@@ -1,5 +1,7 @@
 ---
 title: Visual Studio 2017 の機能拡張における重大な変更
+description: Visual Studio 2017 の機能拡張モデルに加えられた重大な変更の技術的な詳細と、それらに対処するための方法について説明します。
+ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/09/2016
 ms.topic: conceptual
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011789"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94973747"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 の拡張機能の変更点
 
@@ -63,7 +65,7 @@ Visual studio のプロセス内で実行されているコードは、Visual St
 
 * GAC にのみインストールされたアセンブリ:
 
-  これらのアセンブリは <em>、[INSTALLDIR] \Common7\IDE \* 、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> または *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*の下にインストールされるようになりました。 これらのフォルダーは、Visual Studio プロセスのプローブパスの一部です。
+  これらのアセンブリは <em>、[INSTALLDIR] \Common7\IDE \* 、* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> または *[INSTALLDIR] \Common7\IDE\PrivateAssemblies* の下にインストールされるようになりました。 これらのフォルダーは、Visual Studio プロセスのプローブパスの一部です。
 
 * 非プローブパスと GAC にインストールされたアセンブリ:
 
@@ -98,7 +100,7 @@ Visual studio のプロセス内で実行されているコードは、Visual St
 ### <a name="global-com-registration"></a>グローバル COM 登録
 
 * 以前は、Visual Studio では、ネイティブ COM 登録をサポートするために、多くのレジストリキーが HKEY_CLASSES_ROOT および HKEY_LOCAL_MACHINE ハイブにインストールされていました。 この影響を避けるために、Visual Studio では、 [COM コンポーネントの登録を不要にしたアクティベーション](/previous-versions/dotnet/articles/ms973913(v=msdn.10))が使用されるようになりました。
-* その結果、既定では、Visual Studio によって、% ProgramFiles (x86)% \ Common .OLB v の下にあるほとんどの TLB//DLL ファイルがインストールされなくなりました。 これらのファイルは、Visual Studio ホストプロセスによって使用される、対応する登録不要の COM マニフェストと共に [INSTALLDIR] の下にインストールされるようになりました。
+* その結果、既定では、Visual Studio によって、% ProgramFiles (x86)% \ Common .OLB v の下にあるほとんどの TLB//DLL ファイルがインストールされなくなりました。 これらのファイルは、Visual Studio ホストプロセスで使用される Registration-Free COM マニフェストと共に [INSTALLDIR] の下にインストールされるようになりました。
 * その結果、Visual Studio COM インターフェイスのグローバル COM 登録に依存する外部コードは、これらの登録を見つけることができなくなります。 Visual Studio プロセス内で実行されているコードに違いはありません。
 
 ### <a name="visual-studio-registry"></a>Visual Studio レジストリ
@@ -109,13 +111,13 @@ Visual studio のプロセス内で実行されているコードは、Visual St
   * **HKCU\Software\Microsoft\VisualStudio \{Version}**: ユーザー固有の設定を格納するために Visual Studio によって作成されたレジストリキー。
   * **HKCU\Software\Microsoft\VisualStudio \{バージョン} _Config**: 上の Visual STUDIO HKLM キーのコピーに加え、拡張子によって、 *pkgdef* ファイルからマージされたレジストリキーがあります。
 
-* レジストリへの影響を軽減するために、Visual Studio では、 [Regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 関数を使用して、レジストリキーを *[vsappdata] \privateregistry.bin*の下のプライベートバイナリファイルに格納するようになりました。 システムレジストリに含まれる Visual Studio 固有のキーの数はごくわずかです。
+* レジストリへの影響を軽減するために、Visual Studio では、 [Regloadappkey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) 関数を使用して、レジストリキーを *[vsappdata] \privateregistry.bin* の下のプライベートバイナリファイルに格納するようになりました。 システムレジストリに含まれる Visual Studio 固有のキーの数はごくわずかです。
 * Visual Studio プロセス内で実行されている既存のコードは影響を受けません。 Visual Studio は、HKCU Visual Studio 固有のキーの下にあるすべてのレジストリ操作をプライベートレジストリにリダイレクトします。 他のレジストリの場所の読み取りと書き込みでは、システムレジストリが引き続き使用されます。
 * 外部コードは、Visual Studio レジストリエントリのためにこのファイルの読み込みと読み取りを行う必要があります。
 
 ### <a name="react-to-this-breaking-change"></a>この重大な変更に対処する
 
-* 外部コードは、COM コンポーネントの登録を必要としないアクティベーションを使用するように変換する必要があります。
+* 外部コードは、COM コンポーネントの Registration-Free アクティベーションを使用するように変換する必要があります。
 * 外部コンポーネントは、 [こちらのガイダンスに従って](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup)Visual Studio の場所を見つけることができます。
 * 外部コンポーネントでは、Visual Studio レジストリキーを直接読み書きするのではなく、 [外部設定マネージャー](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) を使用することをお勧めします。
 * 拡張機能が使用しているコンポーネントが、別の登録手法を実装していないかどうかを確認します。 たとえば、デバッガー拡張機能では、新しい [MSVSMON JSON ファイル COM 登録](migrate-debugger-COM-registration.md)を利用できます。

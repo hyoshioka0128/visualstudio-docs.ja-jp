@@ -1,5 +1,7 @@
 ---
 title: プロジェクトのアップグレード |Microsoft Docs
+description: プロジェクトで upgrade support を実装するために Visual Studio SDK が提供するインターフェイスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a99207fc14cf9f462bc1abc88d6fed166ea6523f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704267"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487583"
 ---
 # <a name="upgrading-projects"></a>プロジェクトのアップグレード
 
@@ -35,7 +37,7 @@ ms.locfileid: "80704267"
 
 以前のバージョンの Visual Studio で作成されたソリューションを新しいバージョンで開くと、IDE はソリューションファイルをチェックして、アップグレードが必要かどうかを判断します。 アップグレードが必要な場合は、アップグレード **ウィザード** が自動的に起動して、アップグレードプロセスをユーザーに案内します。
 
-ソリューションをアップグレードする必要がある場合は、各プロジェクトファクトリに対して、アップグレードの戦略についてクエリを行います。 この戦略では、プロジェクトファクトリがコピーバックアップと SxS バックアップのどちらをサポートするかを決定します。 この情報は **アップグレードウィザード**に送信され、バックアップに必要な情報が収集され、該当するオプションがユーザーに提示されます。
+ソリューションをアップグレードする必要がある場合は、各プロジェクトファクトリに対して、アップグレードの戦略についてクエリを行います。 この戦略では、プロジェクトファクトリがコピーバックアップと SxS バックアップのどちらをサポートするかを決定します。 この情報は **アップグレードウィザード** に送信され、バックアップに必要な情報が収集され、該当するオプションがユーザーに提示されます。
 
 ### <a name="multi-project-solutions"></a>複数のプロジェクトから成るソリューション
 
@@ -50,7 +52,7 @@ ms.locfileid: "80704267"
 > [!NOTE]
 > メソッドは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> SVsUpgradeLogger サービスを提供しません。 このサービスは、を呼び出すことによって取得でき <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> ます。
 
-## <a name="best-practices"></a>ベスト プラクティス
+## <a name="best-practices"></a>推奨する運用方法
 
 サービスを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> ファイルを編集する前に編集できるかどうかを確認し、保存する前に保存しておくことができます。 これにより、バックアップとアップグレードの実装で、ソース管理下のプロジェクトファイル、十分なアクセス許可のないファイルなどを処理できます。
 
@@ -60,7 +62,7 @@ ms.locfileid: "80704267"
 
 ## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a> カスタムプロジェクトのアップグレード
 
-プロジェクト ファイルに永続化されている情報を、ご使用の製品の異なる Visual Studio バージョン間で変更する場合、プロジェクト ファイルの旧バージョンから新しいバージョンへのアップグレードをサポートする必要があります。 **Visual Studio 変換ウィザード**に参加できるようにするためのアップグレードをサポートするには、インターフェイスを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> ます。 このインターフェイスにはコピーのアップグレードに使用できる機能しか含まれていません。 プロジェクトのアップグレードは、ソリューションを開くことの一部として行われます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスはプロジェクト ファクトリによって実装されます。あるいは、少なくともプロジェクト ファクトリから取得できる必要があります。
+プロジェクト ファイルに永続化されている情報を、ご使用の製品の異なる Visual Studio バージョン間で変更する場合、プロジェクト ファイルの旧バージョンから新しいバージョンへのアップグレードをサポートする必要があります。 **Visual Studio 変換ウィザード** に参加できるようにするためのアップグレードをサポートするには、インターフェイスを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> ます。 このインターフェイスにはコピーのアップグレードに使用できる機能しか含まれていません。 プロジェクトのアップグレードは、ソリューションを開くことの一部として行われます。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスはプロジェクト ファクトリによって実装されます。あるいは、少なくともプロジェクト ファクトリから取得できる必要があります。
 
 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスを使用する従来の機能は引き続きサポートされますが、概念上はプロジェクトを開くことの一部としてプロジェクト システムをアップグレードします。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>このインターフェイスは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスが呼び出されるか実装されている場合でも、Visual Studio 環境によって呼び出されます。 この方法なら、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> を使用してプロジェクトのコピーとアップグレードの部分だけを実装できます。そして、残りの作業を <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> インターフェイスが一括 (通常は新しい場所) で実行するよう委任できます。
 
@@ -98,7 +100,7 @@ ms.locfileid: "80704267"
 
 ### <a name="ivsprojectupgrade-implementation"></a>IVsProjectUpgrade の実装
 
-プロジェクトシステムがを実装している場合は <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 、 **Visual Studio 変換ウィザード**に参加できません。 ただし、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスを実装しても、ファイルのアップグレードを <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> の実装に委任することはできます。
+プロジェクトシステムがを実装している場合は <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 、 **Visual Studio 変換ウィザード** に参加できません。 ただし、<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> インターフェイスを実装しても、ファイルのアップグレードを <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> の実装に委任することはできます。
 
 #### <a name="to-implement-ivsprojectupgrade"></a>IVsProjectUpgrade を実装するには
 

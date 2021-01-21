@@ -1,5 +1,7 @@
 ---
 title: カスタム ホストを使用したテキスト テンプレートの処理
+description: テキストテンプレート変換プロセスで入力としてテキストテンプレートファイルを取得し、出力としてテキストファイルを生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3dbaa7cf80ba281f085590802127e3ab96776aa6
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591685"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360586"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>カスタム ホストを使用してテキスト テンプレートを処理する
 
-*テキストテンプレート変換*プロセスでは、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 テキスト変換エンジンは、Visual Studio 拡張機能から、または Visual Studio がインストールされているコンピューターで実行されているスタンドアロンアプリケーションから呼び出すことができます。 ただし、 *テキストテンプレートホスト*を指定する必要があります。 このクラスは、テンプレートを環境に接続し、アセンブリやインクルード ファイルなどのリソースの検索と、出力およびエラー メッセージの処理を行います。
+*テキストテンプレート変換* プロセスでは、*テキストテンプレート* ファイルが入力として取得され、テキストファイルが出力として生成されます。 テキスト変換エンジンは、Visual Studio 拡張機能から、または Visual Studio がインストールされているコンピューターで実行されているスタンドアロンアプリケーションから呼び出すことができます。 ただし、 *テキストテンプレートホスト* を指定する必要があります。 このクラスは、テンプレートを環境に接続し、アセンブリやインクルード ファイルなどのリソースの検索と、出力およびエラー メッセージの処理を行います。
 
 > [!TIP]
 > Visual Studio 内で実行されるパッケージまたは拡張機能を作成する場合は、独自のホストを作成するのではなく、テキストテンプレートサービスを使用することを検討してください。 詳細については、「 [VS 拡張機能でのテキスト変換の呼び出し](../modeling/invoking-text-transformation-in-a-vs-extension.md)」を参照してください。
@@ -29,7 +31,7 @@ ms.locfileid: "75591685"
 >
 > ランタイムアプリケーションの場合は、前処理されたテキストテンプレートの使用を検討してください。 [T4 テキストテンプレートを使用した実行時のテキスト生成に](../modeling/run-time-text-generation-with-t4-text-templates.md)関する説明を参照してください。
 
-コンパイル時に決定されるテンプレートのセットをアプリケーションで使用する場合は、前処理されたテキスト テンプレートを使用する方が簡単です。 また、Visual Studio がインストールされていないコンピューターでアプリケーションを実行する場合にも、この方法を使用できます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+コンパイル時に決定されるテンプレートのセットをアプリケーションで使用する場合は、前処理されたテキスト テンプレートを使用する方が簡単です。 また、Visual Studio がインストールされていないコンピューターでアプリケーションを実行する場合にも、この方法を使用できます。 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 ## <a name="execute-a-text-template-in-your-application"></a>アプリケーションでテキストテンプレートを実行する
 
@@ -48,12 +50,12 @@ string output = engine.ProcessTemplate(templateString, host);
 
  ホストは、エラーのログ記録、アセンブリとインクルード ファイルへの参照の解決、テンプレートを実行できるアプリケーション ドメインの指定、各ディレクティブの適切なプロセッサの呼び出しを実行できる必要があります。
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は ** \*.0.dllVisualStudio **で定義されており、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) は VisualStudio で定義されています。また、 ** \*.0.dll**で定義されています。
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> は **\*.0.dllVisualStudio** で定義されており、 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) は VisualStudio で定義されています。また、 **\*.0.dll** で定義されています。
 
 ## <a name="in-this-section"></a>このセクションの内容
  [チュートリアル: カスタムテキストテンプレートホストの作成](../modeling/walkthrough-creating-a-custom-text-template-host.md) Visual Studio の外部でテキストテンプレート機能を使用できるようにするカスタムテキストテンプレートホストを作成する方法について説明します。
 
-## <a name="reference"></a>関連項目
+## <a name="reference"></a>リファレンス
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>関連項目

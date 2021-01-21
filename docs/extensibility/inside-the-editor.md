@@ -1,5 +1,7 @@
 ---
 title: エディターの内部
+description: エディターのサブシステムと機能について説明します。 Visual Studio エディターの機能を拡張できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba0b5192df53b6ec837b0030c7b236bf8e08dea
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710324"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487531"
 ---
 # <a name="inside-the-editor"></a>エディター内
 
@@ -59,13 +61,13 @@ ms.locfileid: "80710324"
 
 テキストモデルサブシステムは、ユーザーインターフェイス (UI) の概念を自由に利用できます。 たとえば、テキストの書式設定やテキストレイアウトについては責任を負いません。テキストに関連付けられている視覚的な装飾についての情報はありません。
 
-テキストモデルサブシステムのパブリック型は *Microsoft.VisualStudio.Text.Data.dll* と *Microsoft.VisualStudio.CoreUtility.dll*に含まれており、.NET Framework 基本クラスライブラリと Managed Extensibility Framework (MEF) にのみ依存します。
+テキストモデルサブシステムのパブリック型は *Microsoft.VisualStudio.Text.Data.dll* と *Microsoft.VisualStudio.CoreUtility.dll* に含まれており、.NET Framework 基本クラスライブラリと Managed Extensibility Framework (MEF) にのみ依存します。
 
 ### <a name="text-view-subsystem"></a>テキストビューサブシステム
 
 テキストビューサブシステムは、テキストの書式設定と表示を行います。 このサブシステムの型は、型が Windows Presentation Foundation (WPF) に依存しているかどうかに応じて、2つの層に分割されます。 最も重要な型は <xref:Microsoft.VisualStudio.Text.Editor.ITextView> とです <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> 。これは、表示されるテキスト行のセット、および、WPF UI 要素を使用してテキストを装飾するためのカレット、選択、および機能を制御します。 また、このサブシステムでは、テキスト表示領域の周りに余白が表示されます。 これらの余白は拡張でき、さまざまな種類のコンテンツと視覚効果を含めることができます。 余白の例としては、行番号の表示とスクロールバーがあります。
 
-テキストビューサブシステムのパブリック型は、 *Microsoft.VisualStudio.Text.UI.dll* と *Microsoft.VisualStudio.Text.UI.Wpf.dll*に含まれています。 最初のアセンブリには、プラットフォームに依存しない要素が含まれ、2番目のアセンブリには WPF 固有の要素が含まれます。
+テキストビューサブシステムのパブリック型は、 *Microsoft.VisualStudio.Text.UI.dll* と *Microsoft.VisualStudio.Text.UI.Wpf.dll* に含まれています。 最初のアセンブリには、プラットフォームに依存しない要素が含まれ、2番目のアセンブリには WPF 固有の要素が含まれます。
 
 ### <a name="classification-subsystem"></a>分類サブシステム
 
@@ -206,7 +208,7 @@ abXefYj
 
 - 修飾
 
-- Projection
+- プロジェクション
 
 - アウトライン
 
@@ -264,9 +266,9 @@ C# 分類子は、スパン全体にコメントとしてラベルを付ける�
 
 ### <a name="projection"></a><a name="projection"></a> アイソメトリック
 
-射影は、実際にはテキストを格納せず、他のテキストバッファーのテキストを結合する、別の種類のテキストバッファーを構築するための手法です。 たとえば、2つのバッファーのテキストを連結し、1つのバッファーにあるかのように結果を表示したり、1つのバッファー内のテキストの一部を非表示にしたりするために、プロジェクションバッファーを使用できます。 プロジェクションバッファーは、別のプロジェクションバッファーへのソースバッファーとして機能することができます。 プロジェクションによって関連付けられた一連のバッファーを構築して、さまざまな方法でテキストを並べ替えることができます。 (このようなセットは、 *バッファーグラフ*とも呼ばれます)。Visual Studio のテキストアウトライン機能は、折りたたまれたテキストを非表示にするためのプロジェクションバッファーを使用して実装されます。また、ASP.NET ページの Visual Studio エディターでは、射影を使用して Visual Basic や C# などの埋め込み言語をサポートしています。
+射影は、実際にはテキストを格納せず、他のテキストバッファーのテキストを結合する、別の種類のテキストバッファーを構築するための手法です。 たとえば、2つのバッファーのテキストを連結し、1つのバッファーにあるかのように結果を表示したり、1つのバッファー内のテキストの一部を非表示にしたりするために、プロジェクションバッファーを使用できます。 プロジェクションバッファーは、別のプロジェクションバッファーへのソースバッファーとして機能することができます。 プロジェクションによって関連付けられた一連のバッファーを構築して、さまざまな方法でテキストを並べ替えることができます。 (このようなセットは、 *バッファーグラフ* とも呼ばれます)。Visual Studio のテキストアウトライン機能は、折りたたまれたテキストを非表示にするためのプロジェクションバッファーを使用して実装されます。また、ASP.NET ページの Visual Studio エディターでは、射影を使用して Visual Basic や C# などの埋め込み言語をサポートしています。
 
-<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>は、を使用して作成され <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> ます。 プロジェクションバッファーは、 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> *ソース範囲*と呼ばれる順序付けられたオブジェクトのシーケンスによって表されます。 これらの範囲の内容は、文字のシーケンスとして表示されます。 ソース範囲の描画元となるテキストバッファーには、" *ソースバッファー*" という名前が付けられます。 プロジェクションバッファーのクライアントは、通常のテキストバッファーとは異なることを認識している必要はありません。
+<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>は、を使用して作成され <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> ます。 プロジェクションバッファーは、 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> *ソース範囲* と呼ばれる順序付けられたオブジェクトのシーケンスによって表されます。 これらの範囲の内容は、文字のシーケンスとして表示されます。 ソース範囲の描画元となるテキストバッファーには、" *ソースバッファー*" という名前が付けられます。 プロジェクションバッファーのクライアントは、通常のテキストバッファーとは異なることを認識している必要はありません。
 
 プロジェクションバッファーは、ソースバッファーのテキスト変更イベントをリッスンします。 ソーススパン内のテキストが変化すると、プロジェクションバッファーは、変更されたテキスト座標を独自の座標にマップし、適切なテキスト変更イベントを発生させます。 たとえば、次の内容を含むソースバッファー A と B を考えてみます。
 
@@ -318,7 +320,7 @@ IntelliSense では、ステートメント入力候補、シグネチャヘル�
 
 ステートメント入力候補には、メソッド名、XML 要素、およびその他のコーディング要素やマークアップ要素に対して候補となる候補のポップアップリストが表示されます。 一般に、ユーザージェスチャは、完了セッションを呼び出します。 このセッションでは、候補となる候補の一覧が表示されます。ユーザーはこの一覧を選択するか、一覧を無視することができます。 は <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 、を作成およびトリガーする役割を担い <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> ます。 は、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> セッションの完了項目のを計算します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)
 - [エディターのインポート](../extensibility/editor-imports.md)

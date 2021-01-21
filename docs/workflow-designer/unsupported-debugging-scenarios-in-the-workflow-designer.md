@@ -1,5 +1,7 @@
 ---
-title: ワークフロー デザイナーでサポートされていないデバッグ シナリオ
+title: サポートされていないデバッグ シナリオ
+description: ワークフローデザイナーでサポートされていないデバッグシナリオについて説明します。たとえば、"コードの編集後に実行を続行することはできません。" などです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
@@ -8,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 77d1318dbdb23516902523e9c7865dad781cb06b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4e98e2a75905f4c0a4c007691a99961dbcf1477c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593038"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996267"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>ワークフロー デザイナーでサポートされていないデバッグ シナリオ
 
@@ -37,7 +39,7 @@ ms.locfileid: "75593038"
 
 - ワークフローのブレークポイントを呼び出し履歴ウィンドウに設定することはできません。
 
-- デザイナーでブレークポイントを作成するときに、[**ブレークポイントの新規**作成] ダイアログボックスの**行**と**文字**の設定は使用されません。
+- デザイナーでブレークポイントを作成するときに、[**ブレークポイントの新規** 作成] ダイアログボックスの **行** と **文字** の設定は使用されません。
 
 - [ブレークポイント] ウィンドウまたはショートカット メニューは、ワークフローのデバッグで、次の列またはオプションをサポートしていません。
 
@@ -47,10 +49,10 @@ ms.locfileid: "75593038"
 
   - [ヒット時]
 
-  - 関数
+  - 機能
 
-  - Data
+  - データ
 
-  - プロセス
+  - Process
 
   - 逆アセンブルを表示

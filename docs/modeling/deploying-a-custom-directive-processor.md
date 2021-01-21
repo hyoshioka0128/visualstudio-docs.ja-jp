@@ -1,5 +1,7 @@
 ---
 title: カスタム ディレクティブ プロセッサの配置
+description: カスタムディレクティブプロセッサを Visual Studio または任意のコンピューターに配置するために使用できるメソッドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536020"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363927"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>カスタム ディレクティブ プロセッサの配置
 
@@ -48,7 +50,7 @@ ms.locfileid: "85536020"
 
 1. 新しい **VSIX プロジェクト** プロジェクトを作成します。
 
-2. **Source.extension.vsixmanifest**で、コンテンツの種類とサポートされているエディションを設定します。
+2. **Source.extension.vsixmanifest** で、コンテンツの種類とサポートされているエディションを設定します。
 
     1. VSIX マニフェストエディターの [ **アセット** ] タブで、[ **新規作成** ] をクリックし、新しい項目のプロパティを設定します。
 
@@ -68,9 +70,9 @@ ms.locfileid: "85536020"
 
          **[ビルド アクション]**  =  **[コンテンツ]**
 
-         **出力ディレクトリ**  =  にコピー**常にコピー**
+         **出力ディレクトリ**  =  にコピー **常にコピー**
 
-         **VSIX**  =  に含める**True**
+         **VSIX**  =  に含める **True**
 
     3. VSIX の名前を設定し、ID が一意であることを確認します。
 
@@ -124,7 +126,7 @@ ms.locfileid: "85536020"
 
 - `IsDirectiveSupported` メソッドは、`true` の名前が渡されたときに `CustomDirective` を返す必要があります。
 
-- 拡張機能マネージャーに拡張機能が表示されないが、システムでその拡張機能をインストールできない場合は、 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ Extensions \\ **から拡張機能を削除します。
+- 拡張機能マネージャーに拡張機能が表示されないが、システムでその拡張機能をインストールできない場合は、 **%localappdata%\Microsoft\VisualStudio \\ \* .0 \ Extensions \\** から拡張機能を削除します。
 
 - .vsix ファイルを開き、そのコンテンツを調べます。 .vsix ファイルを開くには、ファイル名拡張子を .zip に変更します。 このファイルに .dll、.pkgdef、および extension.vsixmanifest の各ファイルが含まれていることを確認します。 extension.vsixmanifest ファイルでは、SupportedProducts ノードに適切なリストが含まれ、なおかつ Content ノードに VsPackage ノードが含まれている必要があります。
 
@@ -164,7 +166,7 @@ ms.locfileid: "85536020"
 
 2. レジストリ エディターで、次のキーに移動します。
 
-    **HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ \* .0\ texttemplating\directiveprocessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ \* 。 0 \ .0\ texttemplating\directiveprocessors**
 
     Visual Studio の実験用バージョンにディレクティブプロセッサをインストールする場合は、"11.0" の後に "Exp" を挿入します。
 
@@ -184,7 +186,7 @@ ms.locfileid: "85536020"
 
 |名前|種類|データ|
 |-|-|-|
-|(既定)|REG_SZ|(値が設定されていません)|
+|(既定値)。|REG_SZ|(値が設定されていません)|
 |クラス|REG_SZ|**\<Namespace Name>.\<Class Name>**|
 |CodeBase|REG_SZ|**\<Your Path>\\ アセンブリ名の<\>**|
 
@@ -192,7 +194,7 @@ ms.locfileid: "85536020"
 
 |名前|種類|データ|
 |-|-|-|
-|(既定)|REG_SZ|(値が設定されていません)|
+|(既定値)。|REG_SZ|(値が設定されていません)|
 |クラス|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |アセンブリ|REG_SZ|\<**Your Assembly Name in the GAC**>|
 

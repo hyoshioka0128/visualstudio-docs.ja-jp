@@ -1,5 +1,7 @@
 ---
 title: Strings 要素 |Microsoft Docs
+description: Strings 要素には、ButtonText 子要素と、その他の省略可能な子要素が含まれています。 テキスト文字列内のアンパサンドは、ショートカットキーを指定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db44db8926b523665a21c00b710dcee55749ab89
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699731"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715250"
 ---
 # <a name="strings-element"></a>文字列要素
 Strings 要素には、少なくとも **Buttontext** 子要素が含まれている必要があります。 その他のすべての子要素は省略可能です。 ' & ' や ' < ' などの無効な XML 文字は、エンティティ (' ' と ' ' など) としてコーディングする必要があり &amp; &lt; ます。
@@ -49,7 +51,7 @@ Strings 要素には、少なくとも **Buttontext** 子要素が含まれて�
 |ToolTipText|フィールドは、 `ToolTipText` メニュー項目のツールヒントに表示されるテキストを指定します。<br /><br /> `ToolTipText`フィールドが空白の場合は、 `ButtonText` フィールドが使用されます。|
 |MenuText|`MenuText`このフィールドは、コマンドがメインメニュー、ツールバー、ショートカットメニュー、またはサブメニュー上にある場合に、コマンドに対して表示されるテキストを指定します。 `MenuText`フィールドが空白の場合、統合開発環境 (IDE) はフィールドを使用し `ButtonText` ます。 `MenuText`フィールドはローカライズにも使用できます。<br /><br /> ショートカットメニューの場合、 `MenuText` フィールドはショートカットメニューのツールバーに表示される名前です。これにより、IDE のショートカットメニューをカスタマイズできます。 そのため、ショートカットメニューの名前を指定してください。たとえば、"Shortcut" ではなく "ウィジェットパッケージのショートカットメニュー" を使用します。<br /><br /> `MenuText`フィールドが指定されていない場合 `ButtonText` は、フィールドが使用されます。|
 |CommandName|このフィールドは、[ `CommandName` **ユーザー設定**] ダイアログボックスの [**コマンド**] タブの [キーボード] カテゴリに表示されるテキストを指定します ([**ツール**] メニューの [**カスタマイズ**] をクリックして利用できます)。|
-|CanonicalName|英語のフィールドは、コマンド `CanonicalName` の名前を英語のテキストで指定します。これは、メニュー項目を実行するために **コマンド** ウィンドウに入力できます。 IDE では、文字、数字、アンダースコア、または埋め込み期間以外の文字は除去されます。 次に、このテキストをフィールドに連結し `ButtonText` て、コマンドを定義します。 たとえば、[**ファイル**] メニューの [**新しいプロジェクト**] がコマンド NewProject になります。<br /><br /> 英語の `CanonicalName` フィールドが指定されていない場合、IDE はフィールドを使用 `ButtonText` し、文字、数字、アンダースコア、および埋め込み期間以外のすべてを除去します。 たとえば、ボタンテキスト "&定義コマンド..."は DefineCommands になり、アンパサンド、スペース、および省略記号が削除されます。<br /><br /> `TextChanges`フラグが指定されていて、コマンドのテキストが変更された場合、**コマンド**ウィンドウによって認識される対応するコマンドは変更されません。元のフィールドまたは英語のフィールドの正規の形式が維持され `ButtonText` `CanonicalName` ます。|
+|CanonicalName|英語のフィールドは、コマンド `CanonicalName` の名前を英語のテキストで指定します。これは、メニュー項目を実行するために **コマンド** ウィンドウに入力できます。 IDE では、文字、数字、アンダースコア、または埋め込み期間以外の文字は除去されます。 次に、このテキストをフィールドに連結し `ButtonText` て、コマンドを定義します。 たとえば、[**ファイル**] メニューの [**新しいプロジェクト**] がコマンド NewProject になります。<br /><br /> 英語の `CanonicalName` フィールドが指定されていない場合、IDE はフィールドを使用 `ButtonText` し、文字、数字、アンダースコア、および埋め込み期間以外のすべてを除去します。 たとえば、ボタンテキスト "&定義コマンド..."は DefineCommands になり、アンパサンド、スペース、および省略記号が削除されます。<br /><br /> `TextChanges`フラグが指定されていて、コマンドのテキストが変更された場合、**コマンド** ウィンドウによって認識される対応するコマンドは変更されません。元のフィールドまたは英語のフィールドの正規の形式が維持され `ButtonText` `CanonicalName` ます。|
 |LocCanonicalName|`LocCanonicalName`フィールドは、英語のフィールドと同じように動作し `CanonicalName` ますが、ローカライズされたコマンドテキストを指定できます。 両方の正規フィールドを指定できます。 IDE では、 **コマンド** ウィンドウに入力されたテキストを解析してコマンドに関連付けるだけなので、英語と英語以外のテキストの両方を同じコマンドに関連付けることができます。|
 
 ### <a name="parent-elements"></a>親要素
@@ -60,5 +62,5 @@ Strings 要素には、少なくとも **Buttontext** 子要素が含まれて�
 |[Menu 要素](../extensibility/menu-element.md)|1つのメニュー項目を定義します。|
 |[Combo 要素](../extensibility/combo-element.md)|コンボボックスに表示されるコマンドを定義します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

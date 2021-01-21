@@ -1,5 +1,7 @@
 ---
 title: データベースプロジェクトと DAC プロジェクト
+description: 詳細については、「データベースプロジェクトとデータ層アプリケーション」 (Dac) を参照してください。 DB プロジェクトを使用して、新しいデータベースを作成し、新しい Dac を作成して、既存の db と Dac を更新します。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57b889f025b06e127e8e4bb38be311f6bbe55952
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586732"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436603"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>データベースプロジェクトとデータ層アプリケーション
 
@@ -25,7 +27,7 @@ ms.locfileid: "75586732"
 
 ## <a name="common-high-level-tasks"></a>一般的な概要タスク
 
-| 高レベルタスク | 関連する参照先 |
+| High-Level タスク | 関連する参照先 |
 | - | - |
 | **データ層アプリケーションの開発を開始します。** データ層アプリケーション (DAC) の概念は、SQL Server 2008 で導入されました。 DAC には、SQL Server データベースの定義と、クライアント/サーバーまたは3層アプリケーションによって使用されるサポートインスタンスオブジェクトの定義が含まれています。 DAC には、テーブルやビューなどのデータベースオブジェクトと共に、ログインなどのインスタンスエンティティが含まれます。 Visual Studio を使用して、dac プロジェクトを作成し、DAC パッケージファイルをビルドし、SQL Server データベースエンジンのインスタンスに配置するためのデータベース管理者に DAC パッケージファイルを送信できます。 | - [データ層アプリケーション](/sql/relational-databases/data-tier-applications/data-tier-applications)<br />- [SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms) |
 | **反復的なデータベース開発の実行:** 開発者は、プロジェクトの一部をチェックアウトして、分離開発環境で更新できます。 この種類の環境を使用すると、チームの他のメンバーに影響を与えることなく、変更をテストできます。 変更が完了したら、ファイルをバージョン管理に戻します。他のチームメンバーが変更を取得して、テストサーバーにビルドして配置することができます。 | - [プロジェクト指向のオフラインデータベース開発 (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [Transact-sql デバッガー (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |

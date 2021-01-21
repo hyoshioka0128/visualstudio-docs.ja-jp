@@ -1,5 +1,8 @@
 ---
 title: 'チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする'
+description: Microsoft Excel の操作ウィンドウ上のコントロールにデータをバインドします。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253881"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524966"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする
   このチュートリアルでは Microsoft Office Excel の操作ウィンドウ上のコントロールへのデータバインドについて説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -53,22 +56,22 @@ ms.locfileid: "71253881"
 
 - SQL Server データベースに対する読み取りと書き込みの権限。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  まず、Excel ブック プロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
 1. " **My Excel Actions Pane**" という名前の excel ブックプロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。 詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     新しい Excel ブックがデザイナーで開き、 **[My Excel Actions] ウィンドウ** プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     新しい Excel ブックがデザイナーで開き、 **[My Excel Actions] ウィンドウ** プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="add-a-new-data-source-to-the-project"></a>新しいデータソースをプロジェクトに追加する
 
 ### <a name="to-add-a-new-data-source-to-the-project"></a>新しいデータソースをプロジェクトに追加するには
 
-1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [   >  **他の Windows**  >  **データソース** の表示] をクリックして表示します。
 
-2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
+2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード** を開始します。
 
 3. [ **データベース** ] を選択し、[ **次へ**] をクリックします。
 
@@ -82,11 +85,11 @@ ms.locfileid: "71253881"
 
 8. [ **仕入先** ] テーブルの横にあるチェックボックスをオンにします。
 
-9. **Products**テーブルを展開し、 **ProductName**、**仕入**先、 **QuantityPerUnit**、および**UnitPrice**を選択します。
+9. **Products** テーブルを展開し、 **ProductName**、**仕入** 先、 **QuantityPerUnit**、および **UnitPrice** を選択します。
 
 10. **[完了]** をクリックします。
 
-    ウィザードにより、[**データソース**] ウィンドウに [**仕入先**テーブルと**製品**] テーブルが追加されます。 また、 **ソリューションエクスプローラー**に表示される、型指定されたデータセットをプロジェクトに追加します。
+    ウィザードにより、[**データソース**] ウィンドウに [**仕入先** テーブルと **製品**] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
 ## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加する
  次に、 <xref:Microsoft.Office.Tools.Excel.NamedRange> 最初のワークシートにコントロールとコントロールを追加し <xref:Microsoft.Office.Tools.Excel.ListObject> ます。
@@ -99,15 +102,15 @@ ms.locfileid: "71253881"
 
 3. [ **会社名** ] ノードのドロップダウン矢印をクリックし、[ **NamedRange**] をクリックします。
 
-4. [**データソース**] ウィンドウから [**会社名**] をセル**A2**にドラッグ `Sheet1` します。
+4. [**データソース**] ウィンドウから [**会社名**] をセル **A2** にドラッグ `Sheet1` します。
 
-     と <xref:Microsoft.Office.Tools.Excel.NamedRange> いう名前のコントロール `CompanyNameNamedRange` が作成され、テキストが \<CompanyName> セル **A2**に表示されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前の、 `suppliersBindingSource` テーブルアダプター、および <xref:System.Data.DataSet> がプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
+     と <xref:Microsoft.Office.Tools.Excel.NamedRange> いう名前のコントロール `CompanyNameNamedRange` が作成され、テキストが \<CompanyName> セル **A2** に表示されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前の、 `suppliersBindingSource` テーブルアダプター、および <xref:System.Data.DataSet> がプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
 
-5. [ **データソース** ] ウィンドウで、[ **仕入先** ] テーブルの下にある列を下にスクロールします。 一覧の一番下には **Products** テーブルがあります。これは、 **仕入先** テーブルの子であるためです。 [**仕入先**] テーブルと同じレベルにある [この**製品**] テーブルを選択し、表示されるドロップダウン矢印をクリックします。
+5. [ **データソース** ] ウィンドウで、[ **仕入先** ] テーブルの下にある列を下にスクロールします。 一覧の一番下には **Products** テーブルがあります。これは、 **仕入先** テーブルの子であるためです。 [**仕入先**] テーブルと同じレベルにある [この **製品**] テーブルを選択し、表示されるドロップダウン矢印をクリックします。
 
 6. ドロップダウンリストで [ **ListObject** ] をクリックし、 **Products** テーブルをのセル **A6** にドラッグし `Sheet1` ます。
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール `ProductNameListObject` がセル**A6**に作成されます。 同時に、 <xref:System.Windows.Forms.BindingSource> という名前の `productsBindingSource` テーブルアダプターがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
+     <xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール `ProductNameListObject` がセル **A6** に作成されます。 同時に、 <xref:System.Windows.Forms.BindingSource> という名前の `productsBindingSource` テーブルアダプターがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
 
 7. C# の場合のみ、コンポーネントトレイの [ **suppliersBindingSource** ] を選択し、[**プロパティ**] ウィンドウで [**修飾子**] プロパティを [**内部**] に変更します。
 
@@ -116,7 +119,7 @@ ms.locfileid: "71253881"
 
 ### <a name="to-add-an-actions-pane-control"></a>操作ウィンドウコントロールを追加するには
 
-1. **ソリューションエクスプローラー**で **[My Excel Actions] ウィンドウ**プロジェクトを選択します。
+1. **ソリューションエクスプローラー** で **[My Excel Actions] ウィンドウ** プロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[新しい項目の追加]** をクリックします。
 
@@ -126,7 +129,7 @@ ms.locfileid: "71253881"
 
 1. [**ツールボックス**] の [**コモンコントロール**] タブから、[ <xref:System.Windows.Forms.ComboBox> 操作] ウィンドウコントロールにコントロールをドラッグします。
 
-2. **Size**プロパティを**171, 21**に変更します。
+2. **Size** プロパティを **171, 21** に変更します。
 
 3. コンボボックスに合わせてユーザーコントロールのサイズを変更します。
 
@@ -151,7 +154,7 @@ ms.locfileid: "71253881"
 
 #### <a name="to-show-the-actions-pane"></a>操作ウィンドウを表示するには
 
-1. **ソリューションエクスプローラー**で、[ *ThisWorkbook* ] または [ *ThisWorkbook.cs*] を右クリックし、[**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ *ThisWorkbook* ] または [ *ThisWorkbook.cs*] を右クリックし、[**コードの表示**] をクリックします。
 
 2. クラスにユーザーコントロールの新しいインスタンスを作成 `ThisWorkbook` します。
 
@@ -168,7 +171,7 @@ ms.locfileid: "71253881"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. 操作ウィンドウが表示されていることを確認します。
 
@@ -183,7 +186,7 @@ ms.locfileid: "71253881"
 
 - プロジェクトを配置しています。 詳細については、「 [ClickOnce を使用した Office ソリューションの配置](../vsto/deploying-an-office-solution-by-using-clickonce.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [操作ウィンドウの概要](../vsto/actions-pane-overview.md)
 - [方法: 操作ウィンドウのコントロールのレイアウトを管理する](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [Office ソリューションのコントロールにデータをバインドする](../vsto/binding-data-to-controls-in-office-solutions.md)

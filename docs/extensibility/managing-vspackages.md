@@ -1,5 +1,7 @@
 ---
 title: Vspackage の管理 |Microsoft Docs
+description: Vspackage の管理について説明します。これにより、Visual Studio によって提供される既定の VSPackage 管理と、カスタマイズする方法とタイミングを簡単に使用できるようになります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60745d07679ae53b85d169473ed37ab314b67624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702652"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615741"
 ---
 # <a name="manage-vspackages"></a>VSPackage を管理する
 ほとんどの場合、Vspackage の管理について心配する必要はありません。プロジェクトと項目テンプレートによってパッケージが登録され、自動的に読み込まれるためです。 ただし、状況によっては、パッケージを管理するためにもう少し学習が必要になる場合があります。
@@ -44,5 +46,5 @@ ms.locfileid: "80702652"
 ## <a name="troubleshoot-vspackages"></a>Vspackage のトラブルシューティング
  ロードできない、またはエラーが発生している Vspackage のトラブルシューティングの手法については、 [vspackage のトラブルシューティング](../extensibility/troubleshooting-vspackages.md)に関するものをご覧ください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackages](../extensibility/internals/vspackages.md)

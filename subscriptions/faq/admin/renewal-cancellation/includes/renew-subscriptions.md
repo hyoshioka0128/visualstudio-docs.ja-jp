@@ -1,18 +1,18 @@
 ---
 title: サブスクリプションを更新するにはどうすればよいですか?
 description: サブスクリプションを更新するプロセスは、サブスクリプションの購入方法によって異なります。 小売:Microsoft...から入手したサブスクリプションの場合
-ms.faqid: group4_1
+ms.faqid: group4_2
 ms.topic: include
 ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: f8c116084401c7166ee8d93945a27b2c55c1542c
+ms.sourcegitcommit: f915322d60182143da7036893d2941bc200cf439
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386141"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "94575432"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>サブスクリプションを更新するにはどうすればよいですか?
 

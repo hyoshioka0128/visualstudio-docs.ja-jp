@@ -1,5 +1,6 @@
 ---
 title: レジストリ設定を使用してプライベートギャラリーを管理する
+description: Visual Studio ギャラリー、サンプルギャラリー、またはプライベートギャラリーで、コントロール、テンプレート、およびツールへのアクセスを制御する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dcbacbe415eac6829dc51e95442905bba932d6a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d15d845f07310e3efcba6f05538a2207d9c416e4
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038544"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994010"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>方法: レジストリ設定を使用してプライベートギャラリーを管理する
 分離シェル拡張機能の管理者または開発者は、Visual Studio ギャラリー、サンプルギャラリー、またはプライベートギャラリーで、コントロール、テンプレート、およびツールへのアクセスを制御できます。 ギャラリーを利用できるようにする、または使用できないようにするには、変更されたレジストリキーとその値を記述する、 *pkgdef* ファイルを作成します。
@@ -27,7 +28,7 @@ ms.locfileid: "90038544"
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{UniqueGUID}]
-@={URI}  (REG_SZ)
+@={URI}  (REG_SZ)
 Disabled=0 | 1 (DWORD)
 Priority=0 (highest priority) ... MaxInt (lowest priority) (DWORD) (uint)
 Protocol=Atom Feed|Sharepoint (REG_SZ)
@@ -52,7 +53,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   `DisplayName`、、またはの両方を `DisplayNameResourceID` `DisplayNamePackageGuid` 指定する必要があります。 All を指定した場合は、 `DisplayNameResourceID` との `DisplayNamePackageGuid` ペアが使用されます。
 
 ## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Pkgdef ファイルを使用して Visual Studio ギャラリーを無効にする
- *Pkgdef*ファイルでギャラリーを無効にすることができます。 次のエントリは、Visual Studio ギャラリーを無効にします。
+ *Pkgdef* ファイルでギャラリーを無効にすることができます。 次のエントリは、Visual Studio ギャラリーを無効にします。
 
 ```
 [$RootKey$\ExtensionManager\Repositories\{0F45E408-7995-4375-9485-86B8DB553DC9}]
@@ -68,5 +69,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 - [プライベート ギャラリー](../extensibility/private-galleries.md)

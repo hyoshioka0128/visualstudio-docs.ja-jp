@@ -1,5 +1,7 @@
 ---
-title: '方法: 同じソース ファイルを異なるオプションでビルドする | Microsoft Docs'
+title: 同じソース ファイルを異なるオプションでビルドする
+description: さまざまな MSBuild ビルド構成を作成して、異なるオプションで同じソース ファイルをビルドする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c31da244e5c264bb81498c6091aefce7e6318bb2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633942"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436921"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>方法: 同じソース ファイルを異なるオプションでビルドする
 
@@ -87,7 +89,7 @@ ms.locfileid: "77633942"
 
   この動作は、プロジェクト タグの `TreatAsLocalProperty` 属性を使用して変更できます。 その属性と共に記載されたプロパティ名については、コマンド ラインで指定されたプロパティ値がプロジェクト ファイル内の値よりも優先されることはありません。 このトピックの後の部分でその例を示します。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
 以下の "Hello World" プロジェクトのコード例には、デバッグ ビルドとリリース ビルドを作成するために使用できる 2 つの新しいプロパティ グループが含まれています。
 
@@ -155,7 +157,7 @@ msbuild consolehwcs1.proj -p:flavor=retail
 </Project>
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
 次の例は、`TreatAsLocalProperty` 属性を使用する方法を示しています。 `Color` プロパティはプロジェクト ファイル内では値 `Blue` であり、コマンド ライン上では値 `Green` です。 プロジェクト タグ内に `TreatAsLocalProperty="Color"` がある場合、コマンド ライン上のプロパティ (`Green`) はプロジェクト ファイル内で定義されているプロパティ (`Blue`) をオーバーライドしません。
 

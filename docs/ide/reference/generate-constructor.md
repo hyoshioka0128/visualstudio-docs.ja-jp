@@ -1,5 +1,7 @@
 ---
 title: コンストラクターのクイック アクションを生成する
+description: '[クイックアクションとリファクタリング] メニューを使用して、クラスのコードをすぐに生成する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 07/10/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ead3242c348acdf846fb57ec06057cc50c4b1c3b
-ms.sourcegitcommit: 8b1314ceab58e0d562cdbb1367fa738fdca7bf1e
+ms.openlocfilehash: 80de8b5c8b5699f4ddbf5148e16afd2da42388f2
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86285415"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617553"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Visual Studio でコンストラクターを生成する
 
@@ -45,13 +47,13 @@ ms.locfileid: "86285415"
 
 1. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既にクラスの空の行の上にある場合に、左余白に表示される :::image type="icon" source="media/screwdriver.png"::: アイコンをクリックします。
 
-   ![コンストラクター生成のプレビュー](media/constructor1-preview-cs.png)
+   ![[生成] オプションのスクリーンショット。](media/constructor1-preview-cs.png)
 
 1. ドロップダウン メニューから **[コンストラクターを生成する]** を選択します。
 
@@ -66,7 +68,7 @@ ms.locfileid: "86285415"
 
    指定したパラメーターを含むコンストラクターが作成されます。
 
-   ![コンストラクター生成の結果](media/constructor1-result-cs.png)
+   ![指定したパラメーターで生成されたものを示すスクリーンショット。](media/constructor1-result-cs.png)
 
 ## <a name="generate-constructor-with-properties-c-only"></a><a id = "with"></a> プロパティを指定してコンストラクターを生成する (C# のみ)
 
@@ -76,7 +78,7 @@ ms.locfileid: "86285415"
 
 3. **[`<QualifiedName>` でコンストラクターを生成する (プロパティ付き)** ] を選択します。
 
-   ![コンストラクター生成のプレビュー](media/generate-constructor-with-properties.png)
+   ![[キーで生成する (プロパティ付き)] オプションのスクリーンショット。](media/generate-constructor-with-properties.png)
 
 ## <a name="generate-constructor-from-selected-fields-c-only"></a><a id="selection"></a> 選択したフィールドからコンストラクターを生成する (C# のみ)
 
@@ -86,19 +88,19 @@ ms.locfileid: "86285415"
 
 1. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - テキスト カーソルが既に選択した行の上にある場合に、左余白に表示される :::image type="icon" source="media/screwdriver.png"::: アイコンをクリックします。
 
-      ![コンストラクター生成のプレビュー](media/constructor2-preview-cs.png)
+      ![[Person string string を生成します] オプションのスクリーンショット。](media/constructor2-preview-cs.png)
 
 1. ドロップダウン メニューから **[コンストラクター 'TypeName(...)' を生成します]** を選択します。
 
    選択したパラメーターを含むコンストラクターが作成されます。
 
-   ![コンストラクター生成の結果](media/constructor2-result-cs.png)
+   ![選択したパラメーターで生成されたものを示すスクリーンショット。](media/constructor2-result-cs.png)
 
 ## <a name="generate-constructor-from-new-usage-c-and-visual-basic"></a><a id="usage"></a> 新しい使用からコンストラクターを生成する (C#、Visual Basic)
 
@@ -114,19 +116,19 @@ ms.locfileid: "86285415"
 
 2. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
-      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
+      - 赤い波線をポイントし、表示された :::image type="icon" source="media/error-bulb.png"::: アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行の上にある場合に、左余白に表示される :::image type="icon" source="media/error-bulb.png"::: アイコンをクリックします。
 
-      ![コンストラクター生成のプレビュー](media/constructor-preview-cs.png)
+      ![[Person に生成します] オプションのスクリーンショット。](media/constructor-preview-cs.png)
 
 3. ドロップダウン メニューから **['*TypeName*' にコンストラクターを生成します]** を選択します。
 
    > [!TIP]
-   > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる[すべての変更を確認する](../../ide/preview-changes.md)ことができます。
+   > プレビュー ウィンドウの下部にある **[変更のプレビュー]** リンクを使うと、選択する前に、行われる [すべての変更を確認する](../../ide/preview-changes.md)ことができます。
 
    コンストラクターと、その使用法から推論されるすべてのパラメーターが作成されます。
 
@@ -144,24 +146,24 @@ ms.locfileid: "86285415"
 
 2. まだ存在しないコンストラクターを使用したことを示す赤い波線がある行にカーソルを置きます。
 
-    ![強調表示されているコンストラクターの生成](media/constructor4-highlight-cs.png)
+    ![赤い波線が表示されている行のスクリーンショット。](media/constructor4-highlight-cs.png)
 
 3. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - 赤い波線をポイントし、表示された ![エラー電球](media/error-bulb.png) アイコンをクリックします。
-      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![エラー電球](media/error-bulb.png) アイコンをクリックします。
+      - 赤い波線をポイントし、表示された :::image type="icon" source="media/error-bulb.png"::: アイコンをクリックします。
+      - テキスト カーソルが既に赤い波線の行の上にある場合に、左余白に表示される :::image type="icon" source="media/error-bulb.png"::: アイコンをクリックします。
 
-      ![コンストラクター生成のプレビュー](media/constructor4-preview-cs.png)
+      ![[パラメーターを Person string string に追加する] オプションのスクリーンショット。](media/constructor4-preview-cs.png)
 
 4. ドロップダウン メニューから **[パラメーターを 'TypeName(...)' に追加する]** を選択します。
 
    パラメーターと、その使用法から推測される型が、コンストラクターに追加されます。
 
-   ![コンストラクター生成の結果](media/constructor4-result-cs.png)
+   ![パラメーターと、その使用法から推測される型が、コンストラクターに追加されていることを示すスクリーンショット。](media/constructor4-result-cs.png)
 
 また、既存のメソッドにパラメーターを追加することもできます。 詳細については、[メソッドにパラメーターを追加する方法](add-parameter.md)に関するページを参照してください。
 
@@ -169,25 +171,25 @@ ms.locfileid: "86285415"
 
 1. 既存のコンストラクターを探して、パラメーターを追加します。
 
-   ![強調表示されているコンストラクターの生成](media/constructor5-highlight-cs.png)
+   ![既存のコンストラクターを示すスクリーンショット。](media/constructor5-highlight-cs.png)
 
 1. 新しく追加されたパラメーター内にカーソルを置きます。
 
 1. 次に、以下のいずれかを実行します。
 
-   - **キーボード**
+   - **[キーボード]**
       - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
    - **マウス**
       - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
-      - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](media/screwdriver.png) アイコンをクリックします。
+      - パラメーターが追加された行の上に既にテキスト カーソルがある場合に、左余白に表示される :::image type="icon" source="media/screwdriver.png"::: アイコンをクリックします。
 
-   ![コンストラクター生成のプレビュー](media/constructor5-preview-cs.png)
+   ![[プロパティ 'Age' を作成して初期化する] オプションのスクリーンショット。](media/constructor5-preview-cs.png)
 
 1. ドロップダウン メニューから **[プロパティ '{0}' を作成して初期化する]** または **[フィールド '{0}' を作成して初期化する]** を選びます。
 
    フィールドまたはプロパティが宣言されて、自動的に型と一致する名前が付けられます。 また、フィールドまたはプロパティを初期化するコード行が、コンストラクターの本体に追加されます。
 
-   ![コンストラクター生成の結果](media/constructor5-result-cs.png)
+   ![フィールドまたはプロパティが宣言されて、自動的に型と一致する名前が付けられていることを示すスクリーンショット。](media/constructor5-result-cs.png)
 
 ## <a name="see-also"></a>関連項目
 

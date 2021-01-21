@@ -1,5 +1,7 @@
 ---
-title: 方法 - コード変更を停止する | Microsoft Docs
+title: コード変更を停止する | Microsoft Docs
+description: Visual Studio のデバッグ セッション中にエディット コンティニュ機能を使用しているときに、コード変更の適用を停止する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c4419349e3d83cdc02670821b213678186d933d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a63a15340c597a7b62735dfb3f6f14d3707262ac
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348952"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150705"
 ---
 # <a name="how-to-stop-code-changes"></a>方法: コード変更を停止する
 エディット コンティニュがコード変更を適用するプロセスを実行している間、その操作は中断できます。
@@ -40,4 +42,4 @@ ms.locfileid: "85348952"
 
 ## <a name="see-also"></a>関連項目
 - [エディット コンティニュ](../debugger/edit-and-continue.md)
-- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](./edit-and-continue.md)

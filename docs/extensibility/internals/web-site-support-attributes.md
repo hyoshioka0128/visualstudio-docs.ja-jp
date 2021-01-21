@@ -1,5 +1,7 @@
 ---
 title: Web サイトサポート属性 |Microsoft Docs
+description: Web サイトプロジェクトを使用して Visual Studio の機能を拡張するために必要な web サイトサポート属性について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef75f99480145475278357a552f3ac74c0289800
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703497"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487869"
 ---
 # <a name="web-site-support-attributes"></a>Web サイト サポートの属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイトプロジェクトを拡張して、Web プログラミング言語をサポートすることができます。 言語をに登録する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。これにより、言語を選択したときに [ **新しい Web サイト** ] ダイアログボックスにプロジェクトテンプレートが表示されるようになります。
@@ -33,7 +35,7 @@ public class PythonProjectPackage : ProjectPackage
  この属性は、テンプレートフォルダーを指すようにテンプレートパスを設定することもできます。 テンプレートフォルダーの場所の詳細については、「 [Web サイトサポートテンプレート](../../extensibility/internals/web-site-support-templates.md)」を参照してください。
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- この属性は言語プロジェクトに適用されます。 これにより、Web サイトプロジェクトは、 **ソリューションエクスプローラー**内の別のファイルの種類 (プライマリ) の下にあるファイルの種類 (関連) を入れ子にすることができます。
+ この属性は言語プロジェクトに適用されます。 これにより、Web サイトプロジェクトは、 **ソリューションエクスプローラー** 内の別のファイルの種類 (プライマリ) の下にあるファイルの種類 (関連) を入れ子にすることができます。
 
  たとえば、次のコードでは、IronPython codebehind ファイルが .aspx ファイルに関連付けられていることを指定しています。 IronPython Web サイトソリューションに新しい .aspx Web ページが作成されると、新しい .py ソースファイルが生成され、.aspx ページの子ノードとして表示されます。
 

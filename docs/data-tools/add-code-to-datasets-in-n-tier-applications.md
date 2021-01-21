@@ -1,5 +1,7 @@
 ---
 title: n 層アプリケーションのデータセットにコードを追加する
+description: Visual Studio で n 層アプリのデータセットにコードを追加します。 データセットの部分クラスファイルを作成し、それにコードを追加します (DatasetName ではなく)。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,20 +15,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a57a05ddb8317ea31b852ded369ad7ef69d40bd0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283087"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518688"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 
-データセットの機能を拡張するには、データセットの部分クラスファイルを作成し、そのデータセットにコードを追加します ( *DatasetName*にコードを追加するのではありません)。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) クラスまたは [部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)」を参照してください。
+データセットの機能を拡張するには、データセットの部分クラスファイルを作成し、そのデータセットにコードを追加します ( *DatasetName* にコードを追加するのではありません)。データセットデザイナーファイル)。 部分クラスを使用すると、特定のクラスのコードを複数の物理ファイルに分割できます。 詳細については、「 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) クラスまたは [部分クラスとメソッド](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)」を参照してください。
 
 データセットを定義するコードは、(型指定されたデータセット内の) データセット定義に変更が加えられるたびに生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更を加えた場合にも生成されます。 データセットの再生成時にコードが削除されないようにするには、データセットの部分クラスファイルにコードを追加します。
 
-既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む *DatasetName* (または *DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト** " プロパティで指定されているプロジェクトには、 *DatasetName* (または *DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
+既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む *DatasetName* (または *DatasetName.Designer.cs* ) という名前のファイルがあります。 " **Dataset プロジェクト** " プロパティで指定されているプロジェクトには、 *DatasetName* (または *DatasetName.DataSet.Designer.cs* ) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
 
 > [!NOTE]
 > データセットと Tableadapter を分離すると ( **DataSet プロジェクト** プロパティを設定することによって)、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
@@ -36,11 +38,11 @@ ms.locfileid: "85283087"
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>N 層アプリケーションのデータセットにコードを追加するには
 
-1. *.Xsd*ファイルが含まれているプロジェクトを見つけます。
+1. *.Xsd* ファイルが含まれているプロジェクトを見つけます。
 
-2. **.Xsd**ファイルを選択して、データセットを開きます。
+2. **.Xsd** ファイルを選択して、データセットを開きます。
 
-3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[ **コードの表示**] を選択します。
+3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[ **コードの表示** ] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 

@@ -1,5 +1,6 @@
 ---
 title: 言語サービスとエディターの拡張機能を使ってみる
+description: 任意のコンテンツタイプに言語サービス機能を追加し、Visual Studio エディターの外観と動作をカスタマイズする方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 471acaef0145b3bf1a73925b42e17a6343439ea2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037765"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994395"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>言語サービスとエディターの拡張機能を使ってみる
 
@@ -48,7 +49,7 @@ ms.locfileid: "90037765"
 
 - 余白とスクロールバー
 
-- Tags
+- タグ
 
 - 修飾
 
@@ -75,7 +76,7 @@ ms.locfileid: "90037765"
 
  ここで、 *% Localappdata%* はログオンユーザーの名前、 *company* は拡張機能を所有する会社の名前、 *EXTENSIONID* は拡張機能の id です。
 
- 実験的な場所に拡張機能をデプロイすると、デバッグモードで実行されます。 Visual Studio の2番目のインスタンスが起動され、 **Microsoft Visual Studio の実験用インスタンス**という名前が付けられます。
+ 実験的な場所に拡張機能をデプロイすると、デバッグモードで実行されます。 Visual Studio の2番目のインスタンスが起動され、 **Microsoft Visual Studio の実験用インスタンス** という名前が付けられます。
 
 ## <a name="manage-extensions"></a>拡張機能の管理
 
@@ -95,6 +96,6 @@ ms.locfileid: "90037765"
 
 - [チュートリアル: エディター拡張機能でのショートカットキーの使用](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)

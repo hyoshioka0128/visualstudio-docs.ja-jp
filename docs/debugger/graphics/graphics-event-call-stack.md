@@ -1,5 +1,7 @@
 ---
 title: グラフィックス イベント呼び出し履歴 | Microsoft Docs
+description: 問題のあるグラフィックス イベントとアプリのソース コードとの間の関係をマップする、Visual Studio Graphics Analyzer のグラフィックス イベント呼び出し履歴について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 85712f2b8971b2b5284dab89d90eecec9010e9b4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735511"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727751"
 ---
 # <a name="graphics-event-call-stack"></a>グラフィックス イベント呼び出し履歴
 Visual Studio Graphics Analyzer のグラフィックス イベント呼び出し履歴を使用すると、問題のあるグラフィックス イベントとアプリのソース コードとの間の関係をマップできます。

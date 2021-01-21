@@ -1,5 +1,7 @@
 ---
 title: WizardData 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: WizardData 要素とカスタム XML の指定方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa3f9d2e971d944b964f4b194d1324ff960fbd24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0472bfeb3a988bcb39b4daf80cea92398130f59f
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740383"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903404"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 要素 (Visual Studio テンプレート)
 
@@ -67,7 +69,7 @@ ms.locfileid: "80740383"
 
 この要素には、任意の XML を指定できます。 XML は、カスタムウィザード拡張機能にパラメーターとして渡されます。これにより、拡張機能はこの要素の内容を使用できるようになります。 このデータに対する検証は行われません。
 
-**Wizarddata**要素の内容は、メソッドのパラメーターの文字列辞書内のパラメーターとして、変更されずに渡され `IWizard.RunStarted` ます。 ディクショナリキーにはという名前が付けられ `$wizarddata$` ます。
+**Wizarddata** 要素の内容は、メソッドのパラメーターの文字列辞書内のパラメーターとして、変更されずに渡され `IWizard.RunStarted` ます。 ディクショナリキーにはという名前が付けられ `$wizarddata$` ます。
 
 ## <a name="example"></a>例
 

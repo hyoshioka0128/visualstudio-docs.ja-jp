@@ -1,5 +1,7 @@
 ---
 title: '&lt;trustInfo &gt; 要素 (ClickOnce アプリケーション) |Microsoft Docs'
+description: TrustInfo 要素は、アプリケーションをクライアントコンピューターで実行するために必要な最小限のセキュリティアクセス許可を示します。 TrustInfo 要素が必要です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5873eb18b2f803acfd5aba9444657884b1a24581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84184433"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349218"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 要素 (ClickOnce アプリケーション)
 アプリケーションをクライアント コンピューター上で実行するのに必要な最低限のセキュリティ権限について説明します。
@@ -87,7 +89,7 @@ ms.locfileid: "84184433"
      必須。 アクセス許可のバージョンを識別します。 通常、この値は `1`です。
 
 ## <a name="ipermission"></a>IPermission
- 省略可能。 この要素は `PermissionSet` 要素の子です。 要素は、 `IPermission` .NET Framework 内のアクセス許可クラスを完全に識別します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。
+ 任意。 この要素は `PermissionSet` 要素の子です。 要素は、 `IPermission` .NET Framework 内のアクセス許可クラスを完全に識別します。 `IPermission` 要素には次の属性がありますが、アクセス許可クラスのプロパティに対応する追加の属性を持つことができます。 アクセス許可の具体的な構文については、Security.config ファイル内の例を参照してください。
 
 - `class`
 
@@ -117,14 +119,14 @@ ms.locfileid: "84184433"
      この例の <xref:System.Security.Permissions.EnvironmentPermission> の宣言では、アプリケーションのアクセス許可を環境変数 USERNAME の読み取りのみに制限しています。これに対し、 <xref:System.Security.Permissions.FileDialogPermission> の宣言では、アプリケーションにすべての <xref:System.Windows.Forms.FileDialog> クラスを無制限に使用できるようにしています。
 
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
- 省略可能。 すべてのアセンブリに付与されるアクセス許可のセットを指定します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。
+ 任意。 すべてのアセンブリに付与されるアクセス許可のセットを指定します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。
 
 - `permissionSetReference`
 
      必須。 既定のアクセス許可として使用するアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。
 
 ## <a name="assemblyrequest"></a>assemblyRequest
- 省略可能。 特定のアセンブリのアクセス許可を識別します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。
+ 任意。 特定のアセンブリのアクセス許可を識別します。 この要素は `applicationRequestMinimum` 要素の子であり、以下の属性があります。
 
 - `Name`
 
@@ -135,10 +137,10 @@ ms.locfileid: "84184433"
      必須。 このアセンブリに必要なアクセス許可セットの ID を指定します。 アクセス許可セットは、 `PermissionSet` 要素で宣言します。
 
 ## <a name="requestedprivileges"></a>requestedPrivileges
- 省略可能。 この要素は `security` 要素の子であり、 `requestedExecutionLevel` 要素を含んでいます。 この要素には属性はありません。
+ 任意。 この要素は `security` 要素の子であり、 `requestedExecutionLevel` 要素を含んでいます。 この要素には属性はありません。
 
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel
- 省略可能。 アプリケーションを実行するために必要なセキュリティ レベルを指定します。 この要素には子はなく、次の属性があります。
+ 任意。 アプリケーションを実行するために必要なセキュリティ レベルを指定します。 この要素には子はなく、次の属性があります。
 
 - `Level`
 
@@ -154,16 +156,16 @@ ms.locfileid: "84184433"
 
 - `uiAccess`
 
-   省略可能。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。
+   任意。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションが、クライアント コンピューターによって既定で与えられる以上のアクセス許可を求める場合は、より高いレベルの信頼を与えるかどうかを確認するメッセージが、共通言語ランタイムの Trust Manager によって表示されます。 ユーザーが信頼を与えない場合、アプリケーションは実行されません。信頼を与えた場合は、ここで要求されたアクセス許可で実行されます。
 
  配置マニフェストに有効な信頼ライセンスがある場合には、 `defaultAssemblyRequest` や `assemblyRequest` を使用して要求されるすべてのアクセス許可は、ユーザーに確認することなく与えられます。
 
  アクセス許可の昇格の詳細については、「 [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)」を参照してください。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
  次の 3 つのコード例では、 `trustInfo` による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 要素を示しています。
 
  最初の例は、Internet セキュリティ ゾーンで使用できる既定のアクセス許可の `trustInfo` 要素を示しています。

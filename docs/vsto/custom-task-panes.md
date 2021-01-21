@@ -1,5 +1,7 @@
 ---
 title: カスタム作業ウィンドウ
+description: カスタム作業ウィンドウを使用すると、独自の作業ウィンドウを作成し、ソリューションの機能にアクセスするための使い慣れたインターフェイスをユーザーに提供することができます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -25,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254391"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844181"
 ---
 # <a name="custom-task-panes"></a>カスタム作業ウィンドウ
   作業ウィンドウは、通常、Microsoft Office アプリケーションのウィンドウの一辺にドッキングされているユーザー インターフェイス ウィンドウです。 カスタム作業ウィンドウは、独自の作業ウィンドウを作成し、ユーザーがソリューションの各機能にアクセスする際に使い慣れたインターフェイスを利用できるようにするものです。 たとえば、インターフェイスにはドキュメントを変更するコードや、データ ソースのデータを表示するコードを実行するコントロールが含まれます。
@@ -122,7 +124,7 @@ ms.locfileid: "71254391"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>作業ウィンドウで使用されるリソースをクリーンアップする
  カスタム作業ウィンドウを作成した後、<xref:Microsoft.Office.Tools.CustomTaskPane> オブジェクトは VSTO アドインが実行されている限りメモリに残ります。 ユーザーが作業ウィンドウの隅にある [ **閉じる** ] ボタン (X) をクリックしても、オブジェクトはメモリに残ります。
 
- VSTO アドインがまだ実行している間に、作業ウィンドウで使用されたリソースをクリーンアップするには、<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> または <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> メソッドを使用します。 これらのメソッドは、指定された <xref:Microsoft.Office.Tools.CustomTaskPane> オブジェクトを `CustomTaskPanes` コレクションから削除し、オブジェクトの <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> メソッドを呼び出します。
+ VSTO アドインがまだ実行している間に、作業ウィンドウで使用されたリソースをクリーンアップするには、<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> または <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> メソッドを使用します。 これらのメソッドは、指定された <xref:Microsoft.Office.Tools.CustomTaskPane> オブジェクトを `CustomTaskPanes` コレクションから削除し、オブジェクトの `Dispose` メソッドを呼び出します。
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は VSTO アドインがアンロードされるときに、カスタム作業ウィンドウで使用されたリソースを自動的にクリーンアップします。 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> プロジェクトのイベントハンドラーでメソッドまたはメソッドを呼び出さないでください `ThisAddIn_Shutdown` 。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、`ThisAddIn_Shutdown` が呼び出される前に、<xref:Microsoft.Office.Tools.CustomTaskPane> で使用されているリソースをクリーンアップするため、これらのメソッドにより <xref:System.ObjectDisposedException> がスローされます。 の詳細について `ThisAddIn_Shutdown` は、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 
@@ -203,17 +205,17 @@ ms.locfileid: "71254391"
 ### <a name="powerpoint-events"></a>PowerPoint イベント
  PowerPoint のドキュメント ウィンドウの状態を監視するために、次のイベントを処理できます。
 
-- [EApplication_Event..........](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event。 AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [EApplication_Event 開いているファイルを開きます。](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event のプレゼンテーションを開く](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [EApplication_Event. NewPresentation (Microsoft...)](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [EApplication_Event 開いているファイルを開きます。](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event。プレゼンテーションを開く](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [EApplication_Event します。.... WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event。 WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [EApplication_Event.............. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>関連項目
 - [方法: カスタム作業ウィンドウをアプリケーションに追加する](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

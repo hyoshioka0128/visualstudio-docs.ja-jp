@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6d88815a33187e209bcba248d3c363afdd91227
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817672"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862663"
 ---
 # <a name="boolean-expected"></a>ブール値が必要です。
 以外の型のオブジェクトで、Boolean. prototype **. toString**または**boolean. prototype. 値**を呼び出そうとしました。 `Boolean` この種類の呼び出しのオブジェクトは、型である必要があり `Boolean` ます。 次に例を示します。
@@ -36,7 +36,7 @@ o.f();
 
 ## <a name="see-also"></a>関連項目
 
-- [Boolean オブジェクト](../../javascript/reference/boolean-object-javascript.md)
-- [Data Types (データ型)](../../javascript/data-types-javascript.md)
-- [プログラム フローの制御](../../javascript/controlling-program-flow-javascript.md)
-- [データのコピー、受け渡し、および比較](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+- [Boolean オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+- [Data Types (データ型)](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)
+- [プログラム フローの制御](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- [データのコピー、受け渡し、および比較](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Functions)

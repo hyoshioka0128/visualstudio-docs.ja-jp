@@ -1,5 +1,7 @@
 ---
 title: SharePoint の Web パーツを作成する | Microsoft Docs
+description: SharePoint の Web パーツを作成します。 Web パーツを作成すると、SharePoint サイト ページのコンテンツ、外観、および動作をユーザーがブラウザーから変更できます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc9427d561817cb115473bddc71f2ba63475427e
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015052"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672796"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>SharePoint の Web パーツを作成する
   Web パーツを作成すると、SharePoint サイト ページのコンテンツ、外観、および動作をユーザーがブラウザーから変更できます。 Web パーツは、Web パーツ ページ内で実行されるサーバー側コントロールです。SharePoint サイトに表示されるページはこれらの Web パーツで構成されます。 「[構成要素: Web パーツ](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))」を参照してください。
@@ -36,12 +38,12 @@ ms.locfileid: "86015052"
  SharePoint サイトの Web パーツを作成およびデバッグするには、Visual Studio のテンプレートを使用します。
 
 ## <a name="create-a-web-part-in-visual-studio"></a>Visual Studio で Web パーツを作成する
- Web パーツを作成するには、SharePoint プロジェクトに **Web パーツ**項目を追加します。 サンドボックス ソリューションまたはファーム ソリューションに **Web パーツ**項目を使用できます。
+ Web パーツを作成するには、SharePoint プロジェクトに **Web パーツ** 項目を追加します。 サンドボックス ソリューションまたはファーム ソリューションに **Web パーツ** 項目を使用できます。
 
- デザイナーを使用して Web パーツを視覚的にデザインする場合は、**視覚的 Web パーツ** プロジェクトを作成するか、**視覚的 Web パーツ**項目を SharePoint プロジェクトに追加します。 **視覚的 Web パーツ**項目を使用できるのは、ファーム ソリューションのみです。
+ デザイナーを使用して Web パーツを視覚的にデザインする場合は、**視覚的 Web パーツ** プロジェクトを作成するか、**視覚的 Web パーツ** 項目を SharePoint プロジェクトに追加します。 **視覚的 Web パーツ** 項目を使用できるのは、ファーム ソリューションのみです。
 
 ### <a name="web-part-item"></a>Web パーツ項目
- **Web パーツ**項目には、SharePoint サイト用の Web パーツをデザインするためのファイルが用意されています。 **Web パーツ**項目を追加すると、プロジェクトにフォルダーが作成され、そのフォルダーにいくつかのファイルが追加されます。 各ファイルの説明を次の表に示します。
+ **Web パーツ** 項目には、SharePoint サイト用の Web パーツをデザインするためのファイルが用意されています。 **Web パーツ** 項目を追加すると、プロジェクトにフォルダーが作成され、そのフォルダーにいくつかのファイルが追加されます。 各ファイルの説明を次の表に示します。
 
 |ファイル|説明|
 |----------|-----------------|
@@ -52,15 +54,15 @@ ms.locfileid: "86015052"
  詳細については、「[方法:SharePoint Web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part.md)」を参照してください。
 
 ### <a name="visual-web-part-item"></a>視覚的 Web パーツ項目
- 視覚的 Web パーツは、Visual Studio の Visual Web Developer デザイナーを使用して作成する Web パーツです。 視覚的 Web パーツの機能は他の Web パーツと同じです。 ボタンやテキスト ボックスなどのコントロールを Web パーツに追加するときは、XML ファイルにコードを追加します。 ただし、視覚的 Web パーツにコントロールを追加するときは、Visual Studio の**ツールボックス**から Web パーツへコントロールをドラッグまたはコピーします。 その後、XML ファイルで必要なコードを生成します。 「[方法:デザイナーを使用して SharePoint Web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)」を参照してください。
+ 視覚的 Web パーツは、Visual Studio の Visual Web Developer デザイナーを使用して作成する Web パーツです。 視覚的 Web パーツの機能は他の Web パーツと同じです。 ボタンやテキスト ボックスなどのコントロールを Web パーツに追加するときは、XML ファイルにコードを追加します。 ただし、視覚的 Web パーツにコントロールを追加するときは、Visual Studio の **ツールボックス** から Web パーツへコントロールをドラッグまたはコピーします。 その後、XML ファイルで必要なコードを生成します。 「[方法:デザイナーを使用して SharePoint Web パーツを作成する](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)」を参照してください。
 
 ## <a name="sharepoint-controls"></a>SharePoint コントロール
- Visual Studio には、アプリケーションのページなど、SharePoint ページを作成するためのコントロールが用意されています。 これらのコントロールは、**ツールボックス**の **[SharePoint コントロール]** の下に表示されます。 これらのコントロールの機能は、[Microsoft.SharePoint.WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 名前空間から取得されます。ここには、SharePoint のサイトやリストのページで使用する ASP.NET サーバー コントロールが含まれています。
+ Visual Studio には、アプリケーションのページなど、SharePoint ページを作成するためのコントロールが用意されています。 これらのコントロールは、**ツールボックス** の **[SharePoint コントロール]** の下に表示されます。 これらのコントロールの機能は、[Microsoft.SharePoint.WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) 名前空間から取得されます。ここには、SharePoint のサイトやリストのページで使用する ASP.NET サーバー コントロールが含まれています。
 
 |コントロール名|説明|
 |------------------|-----------------|
 |[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|ASP メニューを挿入します。 詳細については、「[メニュー コントロールの概要](/previous-versions/ecs0x9w5(v=vs.140))」を参照してください。|
-|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|**LINK** 要素を *.aspx* ページに挿入し、**CssRegistration**で定義されている外部スタイル シートを適用します。|
+|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|**LINK** 要素を *.aspx* ページに挿入し、**CssRegistration** で定義されている外部スタイル シートを適用します。|
 |[DateTimeControl](/previous-versions/office/sharepoint-server/ms414993(v=office.15))|*.aspx* ページに DateTime コントロールを挿入します。|
 |[FormDigest](/previous-versions/office/sharepoint-server/ms416616(v=office.15))|*.aspx* ページにセキュリティ検証を挿入します|
 |[ListProperty](/previous-versions/office/sharepoint-server/ms455032(v=office.15))|指定されたリストのプロパティを返します。|
@@ -85,7 +87,7 @@ ms.locfileid: "86015052"
 
 - 視覚的 Web パーツは、$SPUrl などの SharePoint サーバー トークンを直接サポートしません。 詳細については、「[SharePoint ソリューションのトラブルシューティング](../sharepoint/troubleshooting-sharepoint-solutions.md)」トピックの「サンドボックス視覚的 Web パーツでのトークンの制約」を参照してください。
 
-- サンドボックス ソリューションの視覚的 Web パーツは、"Sandboxed Code Host Service がビジー状態で要求を処理できなかったので、セキュリティで保護されたコード実行要求が拒否されました" というエラーが発生する場合があります。 このエラーの詳細については、[SharePoint 開発者チーム ブログ](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157)の投稿を参照してください。
+- サンドボックス ソリューションの視覚的 Web パーツは、"Sandboxed Code Host Service がビジー状態で要求を処理できなかったので、セキュリティで保護されたコード実行要求が拒否されました" というエラーが発生する場合があります。 このエラーの詳細については、[SharePoint 開発者チーム ブログ](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157)の投稿を参照してください。
 
 - Visual Studio では、サーバー側 JavaScript のデバッグがサポートされていません。ただし、クライアント側 JavaScript のデバッグはサポートされています。
 

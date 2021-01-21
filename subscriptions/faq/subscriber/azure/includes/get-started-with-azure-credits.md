@@ -8,11 +8,11 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q5_3
 ms.openlocfilehash: 9bc53179d50f99d969ca63028d4b7d504abbb6c1
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386241"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838399"
 ---
 ## <a name="how-do-i-get-started"></a>開始方法
 

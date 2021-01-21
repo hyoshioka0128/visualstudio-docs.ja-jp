@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[Windows フォームデザイナー]、全般'
+description: '[全般] ページを使用して、Visual Studio の Windows フォーム デザイナーのグリッドとその他の機能に対するユーザー設定を設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d7172ca12344ab046c9bf65e7df280a9fa6dd0aa
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568062"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040083"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>[オプション] ダイアログ ボックス:Windows フォーム デザイナー
 

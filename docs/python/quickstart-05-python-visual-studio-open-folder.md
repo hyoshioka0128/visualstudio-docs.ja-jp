@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a7bf174191a6a2fb013aa3d25880b01bc2e7f070
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d11ffcb2c43d2c519d75d43afad6383e0bfaa44a
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801673"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761278"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>クイック スタート: フォルダー内の Python コードを開いて実行する
 
@@ -35,7 +35,7 @@ ms.locfileid: "88801673"
 
     ![フォルダーを開くコマンドからの [フォルダーの選択] ダイアログ](media/quickstart-open-folder/02-select-folder.png)
 
-1. Visual Studio の**ソリューション エクスプローラー**の**フォルダー ビュー**にフォルダーが表示されます。 フォルダー名の左端にある矢印を使用して、フォルダーを展開したり折りたたんだりできます。
+1. Visual Studio の **ソリューション エクスプローラー** の **フォルダー ビュー** にフォルダーが表示されます。 フォルダー名の左端にある矢印を使用して、フォルダーを展開したり折りたたんだりできます。
 
     ![ソリューション エクスプローラーでフォルダーの展開や折りたたみを行うコントロール](media/quickstart-open-folder/03-expand-collapse-folders.png)
 
@@ -68,13 +68,13 @@ ms.locfileid: "88801673"
 
 そのような場合は、作業ディレクトリを指定する行を起動構成 JSON ファイルに追加する必要もあります。
 
-1. **ソリューション エクスプローラー**で Python ( *.py*) スタートアップ ファイルを右クリックして、 **[デバッグ設定と起動設定]** を選択します。
+1. **ソリューション エクスプローラー** で Python ( *.py*) スタートアップ ファイルを右クリックして、 **[デバッグ設定と起動設定]** を選択します。
 
-    ![Python ファイルの [デバッグ設定と起動設定] コマンド](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
+    ![ソリューション エクスプローラー のフォルダー ビューのスクリーンショット。contemplate-koans.py ファイルが選択され、コンテキスト メニューで [デバッグ設定と起動設定] が選択されています。](media/quickstart-open-folder/09-debug-launch-settings-menu-command.png)
 
 1. **[デバッガーの選択]** ダイアログ ボックスが表示されたら、 **[既定]** 、 **[選択]** の順に選択します。
 
-    ![Python ファイルの [デバッグ設定と起動設定] コマンド](media/quickstart-open-folder/10-select-debugger.png)
+    ![[デバッガーの選択] ダイアログのスクリーンショット。[既定] のデバッガーが選択され、[選択] ボタンが選択されています。](media/quickstart-open-folder/10-select-debugger.png)
 
     > [!Note]
     > 選択肢として **[既定]** が表示されない場合は、 **[デバッグ設定と起動設定]** コマンドを選択するときに Python の *.py* ファイルを選択したことを確認してください。 Visual Studio では、ファイルの種類を使用して、表示するデバッガー オプションが決定されます。

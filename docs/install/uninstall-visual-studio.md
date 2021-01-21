@@ -2,7 +2,7 @@
 title: Visual Studio のアンインストール
 titleSuffix: ''
 description: Visual Studio をアンインストールする方法について、ステップ バイ ステップで説明します。
-ms.date: 05/06/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9d1412d6e015ec7d05e700370c7a379ada9a57b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419095"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007152"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio のアンインストール
 
@@ -31,7 +31,7 @@ ms.locfileid: "85419095"
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac のアンインストール](/visualstudio/mac/uninstall)に関するページを参照してください。
 
 > [!TIP]
-> Visual Studio のインスタンスで問題が発生している場合は、**修復**ツールを試してください。 詳細については、「[Visual Studio の修復](../install/repair-visual-studio.md)」を参照してください。 
+> Visual Studio のインスタンスで問題が発生している場合は、 **修復** ツールを試してください。 詳細については、「[Visual Studio の修復](../install/repair-visual-studio.md)」を参照してください。 
 >
 > 一部の Visual Studio ファイルの場所を変更する場合は、現在のインスタンスをアンインストールせずにこの操作を行うことができます。 詳細については、「[Visual Studio でインストールの場所を選択する](../install/change-installation-locations.md)」を参照してください。
 >
@@ -41,12 +41,12 @@ ms.locfileid: "85419095"
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
-     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、**Visual Studio インストーラー**として一覧表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、 **Visual Studio インストーラー** として一覧表示される **V** の文字までスクロールします。
 
      ![Visual Studio インストーラー](media/locate-the-visual-studio-installer.png "Microsoft Visual Studio インストーラーを見つける")
 
    > [!NOTE]
-   > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
+   > 一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー** として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
 1. インストーラーで、インストールした Visual Studio のエディションを探します。 次に、 **[その他]** を選択した後、 **[アンインストール]** を選択します。
 
@@ -60,21 +60,21 @@ ms.locfileid: "85419095"
 
 Visual Studio 2017 のすべてのインストールと Visual Studio インストーラーを自分のマシンから完全に削除するには、[アプリと機能] からアンインストールします。
 
-1. Windows 10 では、[検索するテキストをここに入力] ボックスに「**アプリと機能**」と入力します。
-1. **Microsoft Visual Studio 2017** (または **Visual Studio 2017**) を検索します。
+1. Windows 10 では、[検索するテキストをここに入力] ボックスに「 **アプリと機能** 」と入力します。
+1. **Microsoft Visual Studio 2017** (または **Visual Studio 2017** ) を検索します。
 1. **[アンインストール]** を選択します。
-1. 次に、**Microsoft Visual Studio インストーラー**を見つけます。
+1. 次に、 **Microsoft Visual Studio インストーラー** を見つけます。
 1. **[アンインストール]** を選択します。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-1. コンピューター上で Visual Studio インストーラーを見つけます。
+1. コンピューター上の **Visual Studio インストーラー** を見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     Windows の [スタート] メニューで "installer" を検索できます。
 
-     ![Visual Studio インストーラーを開く](media/vs-2019/vs-installer-windows-start.png "Visual Studio インストーラーを開く")
+     ![Visual Studio インストーラー](media/vs-2019/visual-studio-installer.png "Visual Studio インストーラーを検索する")
 
      > [!NOTE]
      > また、Visual Studio インストーラーは次の場所にもあります。
@@ -97,10 +97,10 @@ Visual Studio 2017 のすべてのインストールと Visual Studio インス�
 
 Visual Studio 2019 のすべてのインストールと Visual Studio インストーラーを自分のマシンから削除するには、[アプリと機能] からアンインストールします。
 
-1. Windows 10 では、[検索するテキストをここに入力] ボックスに「**アプリと機能**」と入力します。
+1. Windows 10 では、[検索するテキストをここに入力] ボックスに「 **アプリと機能** 」と入力します。
 1. **Visual Studio 2019** を見つけます。
 1. **[アンインストール]** を選択します。
-1. 次に、**Microsoft Visual Studio インストーラー**を見つけます。
+1. 次に、 **Microsoft Visual Studio インストーラー** を見つけます。
 1. **[アンインストール]** を選択します。
 
 ::: moniker-end

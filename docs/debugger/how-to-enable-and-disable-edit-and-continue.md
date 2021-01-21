@@ -1,6 +1,7 @@
 ---
-title: 方法 - エディット コンティニュを有効および無効にする | Microsoft Docs
-ms.custom: seodec18
+title: エディット コンティニュを有効および無効にする | Microsoft Docs
+description: デザイン時に Visual Studio の [オプション] で [エディット コンティニュ] を無効または有効にする方法について学習します。 エディット コンティニュはデバッグ ビルドでのみ動作します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -26,16 +27,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1907a67412a787148da7a6679e173383e2bb7423
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 02356a407acc97b60f05641359c32305323f162e
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349667"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903533"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>方法: エディット コンティニュを有効および無効にする (C#、VB、C++)
 
-**[エディット コンティニュ]** は、デザイン時に Visual Studio の **[オプション]** ダイアログ ボックスで無効または有効にすることができます。 **エディット コンティニュ**はデバッグ ビルドでのみ動作します。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。
+**[エディット コンティニュ]** は、デザイン時に Visual Studio の **[オプション]** ダイアログ ボックスで無効または有効にすることができます。 **エディット コンティニュ** はデバッグ ビルドでのみ動作します。 詳細については、「[エディット コンティニュ](../debugger/edit-and-continue.md)」を参照してください。
 
 ネイティブ C++ の場合、 **[エディット コンティニュ]** には `/INCREMENTAL` オプションを使用する必要があります。 C++ の機能要件の詳細については、この[ブログ投稿](https://devblogs.microsoft.com/cppblog/c-edit-and-continue-in-visual-studio-2015-update-3/)と「[エディット コンティニュ (C++)](../debugger/edit-and-continue-visual-cpp.md)」を参照してください。
 

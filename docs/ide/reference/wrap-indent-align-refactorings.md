@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d801f052cb02e6a5b53189eeae342b9015d30f9b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d8a98ebd1fa1e8a9ec937cf4e0965d804a8a9387
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79093878"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761226"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>ラップ、インデント、およびリファクタリングの整理
 
@@ -40,7 +40,7 @@ ms.locfileid: "79093878"
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 3. **[呼び出しチェーンのラップ]** または **[呼び出しチェーンのラップおよび配置]** を選択し、リファクタリングを受け入れます。
 
-   ![呼び出しチェーンのラップおよび配置](media/wrap-call-chain.png)
+   ![Visual Studio の [クイック アクションとリファクタリング] メニューのスクリーンショット。[呼び出しチェーンのラップ] が選択され、C# コードの変更が表示されています。](media/wrap-call-chain.png)
 
 ## <a name="wrap-indent-and-align-parameters-or-arguments"></a>ラップ、インデント、およびパラメーターまたは引数の整列
 
@@ -85,7 +85,7 @@ ms.locfileid: "79093878"
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 3. **[式を折り返す]** を選択して、リファクタリングを受け入れます。
 
-   ![呼び出しチェーンのラップおよび配置](media/wrap-binary-expression.png)
+   ![Visual Studio の [クイック アクションとリファクタリング] メニューのスクリーンショット。[式を折り返す] が選択され、C# コードの変更が表示されています。](media/wrap-binary-expression.png)
 
 ## <a name="see-also"></a>関連項目
 

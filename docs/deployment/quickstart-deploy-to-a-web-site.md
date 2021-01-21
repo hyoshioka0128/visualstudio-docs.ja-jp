@@ -1,5 +1,7 @@
 ---
 title: Web サイトに発行する
+description: '[発行] ツールを使用して、Visual Studio から Web サイトに ASP.NET、ASP.NET Core、.NET Core、Python アプリを発行する方法について学習します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 027350b6a51cae5e7be88643624adc6955de91e4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173693"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350700"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Visual Studio を使用して Web サイトに Web アプリを発行する
 
@@ -32,9 +34,9 @@ Visual Studio から Web サイトに ASP.NET、ASP.NET Core、.NET Core、お�
 
     ![ソリューション エクスプローラーのプロジェクト コンテキスト メニューにある [発行] コマンド](../deployment/media/quickstart-publish.png "[発行] を選択する")
 
-1. 以前に発行プロファイルを構成してある場合、 **[発行]** ウィンドウが表示されます。 **[新しいプロファイルの作成]** を選択します。
+1. 以前に発行プロファイルを構成してある場合、 **[発行]** ウィンドウが表示されます。 **[新規]** を選択します。
 
-1. **[発行]** ダイアログ ボックスで、 **[Web サーバー (IIS)]** を選択します。
+1. **[発行]** ウィンドウで、 **[Web サーバー (IIS)]** を選択します。
 
     ![発行先を選択する](../deployment/media/quickstart-publish-iis.png "IIS や FTP などを選択します。")
 
@@ -47,6 +49,8 @@ Visual Studio から Web サイトに ASP.NET、ASP.NET Core、.NET Core、お�
     ![Web 配置接続の詳細](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. 発行するには、概要ページで **[発行]** を選択します。 [出力] ウィンドウに配置の進行状況と結果が表示されます。
+
+   IIS で ASP.NET Core の問題にお困りの場合、「[Azure App Service および IIS での ASP.NET Core のトラブルシューティング](/aspnet/core/test/troubleshoot-azure-iis)」をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 

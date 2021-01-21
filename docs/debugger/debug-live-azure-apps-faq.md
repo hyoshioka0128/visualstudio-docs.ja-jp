@@ -1,5 +1,7 @@
 ---
 title: スナップショットのデバッグに関する FAQ | Microsoft Docs
+description: Visual Studio でスナップショット デバッガーを使用してライブ Azure アプリケーションをデバッグするときに発生する問題についてよく寄せられる質問 (FAQ) を一覧にまとめています。
+ms.custom: SEO-VS-2020
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 5276127f0d6755b9fdabdfa965b5c1b8c4d94823
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911407"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727204"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Visual Studio でのスナップショットのデバッグについてよく寄せられる質問
 
@@ -103,7 +105,7 @@ AKS の場合:
 
 2. 証明書と Azure KeyVault を削除します
 
-   仮想マシンまたは仮想マシン スケール セット用にリモート デバッガー拡張機能をインストールすると、クライアントとサーバーの両方の証明書が作成され、Azure 仮想マシンおよび仮想マシン スケール セットのリソースに対して VS クライアントが認証されます。
+   仮想マシンまたは仮想マシン スケール セット用にリモート デバッガー拡張機能をインストールすると、クライアントとサーバーの両方の証明書が作成され、Azure 仮想マシンおよび仮想マシン スケール セットのリソースに対して Visual Studio クライアントが認証されます。
 
    - クライアント証明書
 
@@ -124,7 +126,7 @@ AKS の場合:
       ```
 
    - サーバー証明書
-      - 対応するサーバー証明書の拇印は、Azure KeyVault のシークレットとしてデプロイされています。 VS では、仮想マシンまたは仮想マシン スケール セット リソースに対応するリージョン内で、MSVSAZ* というプレフィックスが付いた KeyVault の検索または作成が試みられます。 そのため、そのリージョンにデプロイされたすべての仮想マシンまたは仮想マシン スケール セットのリソースでは、同じ KeyVault が共有されます。
+      - 対応するサーバー証明書の拇印は、Azure KeyVault のシークレットとしてデプロイされています。 Visual Studio では、仮想マシンまたは仮想マシン スケール セット リソースに対応するリージョン内で、MSVSAZ* というプレフィックスが付いた KeyVault の検索または作成が試みられます。 そのため、そのリージョンにデプロイされたすべての仮想マシンまたは仮想マシン スケール セットのリソースでは、同じ KeyVault が共有されます。
       - サーバー証明書の拇印のシークレットを削除するには、Azure portal に移動し、リソースをホストしているリージョンと同じリージョン内で MSVSAZ* KeyVault を見つけます。 おそらく `remotedebugcert<<ResourceName>>` というラベルが付けられているシークレットを削除します
       - また、PowerShell を使用してリソースからサーバー シークレットを削除する必要があります。
 

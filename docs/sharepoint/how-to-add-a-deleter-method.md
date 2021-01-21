@@ -1,5 +1,7 @@
 ---
 title: '方法: 削除子メソッドを追加する |Microsoft Docs'
+description: Visual Studio の BDC デザイナーで削除子メソッドを追加して、エンドユーザーが SharePoint サイトの外部リストからデータレコードを削除できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -19,21 +21,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd97d28936e9f0cc50e9064fdc1a6a64bb20fc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017042"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915441"
 ---
 # <a name="how-to-add-a-deleter-method"></a>方法: 削除子メソッドを追加する
-  エンドユーザーが、削除子メソッドをモデルに追加することによって、SharePoint サイトの外部リストからデータレコードを削除できるようにすることができます。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  エンドユーザーが、削除子メソッドをモデルに追加することによって、SharePoint サイトの外部リストからデータレコードを削除できるようにすることができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-create-a-deleter-method"></a>削除子メソッドを作成するには
 
-1. **BDC デザイナー**で、エンティティを選択します。
+1. **BDC デザイナー** で、エンティティを選択します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細**を表示] を選択します。
+2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
     [ **BDC メソッドの詳細** ] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
@@ -41,7 +43,7 @@ ms.locfileid: "86017042"
 
     Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、[ **BDC メソッドの詳細** ] ウィンドウに表示されます。
 
-   - **Delete**という名前のメソッド。
+   - **Delete** という名前のメソッド。
 
    - メソッドの入力パラメーター。
 
@@ -49,9 +51,9 @@ ms.locfileid: "86017042"
 
    - メソッドのメソッドインスタンス。
 
-     詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+     詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
-4. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
+4. **ソリューションエクスプローラー** で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
 
     コードエディターで entity service コードファイルが開きます。 Entity service コードファイルの詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
@@ -67,7 +69,7 @@ ms.locfileid: "86017042"
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
 
 ## <a name="see-also"></a>関連項目
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)
 - [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)

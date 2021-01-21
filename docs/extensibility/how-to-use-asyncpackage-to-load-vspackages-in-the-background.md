@@ -1,5 +1,6 @@
 ---
 title: AsyncPackage を使用してバックグラウンドで Vspackage を読み込む
+description: バックグラウンドスレッドでのパッケージの読み込みを有効にする AsyncPackage クラスの使用方法について説明します。これにより、ディスク i/o からの応答性の問題を防ぐことができます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,18 +9,18 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef717ba7ec135038dcb35348eff870d9eeb3e33
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037290"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993485"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>方法: AsyncPackage を使用してバックグラウンドで Vspackage を読み込む
 VS パッケージを読み込んで初期化すると、ディスク i/o が発生する可能性があります。 このような i/o が UI スレッドで発生した場合は、応答性の問題が発生する可能性があります。 これに対処するために、Visual Studio 2015 では、バックグラウンドスレッドでのパッケージの読み込みを有効にするクラスが導入されまし  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> た。
 
 ## <a name="create-an-asyncpackage"></a>AsyncPackage を作成する
- 最初に、vsix プロジェクトを作成し ([**ファイル**]  >  [**新しい**  >  **プロジェクト**] [  >  **Visual C#**]、[  >  **Extensibility**  >  **VSIX プロジェクト**])、プロジェクトに VSPackage を追加します (プロジェクトを右クリックし、[新しい項目の追加] **Add**  >  **New Item**  >  **C# 項目**  >  **拡張**  >  **visual Studio パッケージ**を追加します)。 その後、サービスを作成し、それらのサービスをパッケージに追加できます。
+ 最初に、vsix プロジェクトを作成し ([**ファイル**]  >  [**新しい**  >  **プロジェクト**] [  >  **Visual C#**]、[  >    >  **VSIX プロジェクト**])、プロジェクトに VSPackage を追加します (プロジェクトを右クリックし、[新しい項目の追加]   >    >  **C# 項目**  >  **拡張**  >  **visual Studio パッケージ** を追加します)。 その後、サービスを作成し、それらのサービスをパッケージに追加できます。
 
 1. からパッケージを派生させ <xref:Microsoft.VisualStudio.Shell.AsyncPackage> ます。
 
@@ -39,7 +40,7 @@ VS パッケージを読み込んで初期化すると、ディスク i/o が発
 
    ```
 
-3. UI コンテキストを使用して読み込む場合は、 **PackageAutoLoadFlags.BackgroundLoad** <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> パッケージの自動読み込みエントリの値として書き込まれたフラグにまたは値 (0x2) を指定する必要があります。
+3. UI コンテキストを使用して読み込む場合は、  <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> パッケージの自動読み込みエントリの値として書き込まれたフラグにまたは値 (0x2) を指定する必要があります。
 
    ```csharp
    [ProvideAutoLoad(UIContextGuid, PackageAutoLoadFlags.BackgroundLoad)]
@@ -54,7 +55,7 @@ VS パッケージを読み込んで初期化すると、ディスク i/o が発
    await base.InitializeAsync(cancellationToken, progress);
    ```
 
-5. 非同期初期化コード ( **InitializeAsync**) から Rpc (リモートプロシージャコール) を実行しないように注意する必要があります。 これらは、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 直接または間接的にを呼び出すと発生する可能性があります。  同期読み込みが必要な場合、UI スレッドはを使用してブロックし <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> ます。 既定のブロッキングモデルは、Rpc を無効にします。 つまり、非同期タスクから RPC を使用しようとすると、UI スレッドがパッケージの読み込みを待機している場合にデッドロックが発生します。 一般的な方法としては、必要に応じてコードを UI スレッドにマーシャリングします。これは、結合可能な **タスクファクトリ** <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> や、RPC を使用しないその他のメカニズムを使用します。  **Threadhelper. Generic. Invoke**を使用しないでください。または、通常、呼び出し元のスレッドが UI スレッドへのアクセスを待機しているときにブロックします。
+5. 非同期初期化コード ( **InitializeAsync**) から Rpc (リモートプロシージャコール) を実行しないように注意する必要があります。 これらは、 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 直接または間接的にを呼び出すと発生する可能性があります。  同期読み込みが必要な場合、UI スレッドはを使用してブロックし <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> ます。 既定のブロッキングモデルは、Rpc を無効にします。 つまり、非同期タスクから RPC を使用しようとすると、UI スレッドがパッケージの読み込みを待機している場合にデッドロックが発生します。 一般的な方法としては、必要に応じてコードを UI スレッドにマーシャリングします。これは、結合可能な **タスクファクトリ** <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> や、RPC を使用しないその他のメカニズムを使用します。  **Threadhelper. Generic. Invoke** を使用しないでください。または、通常、呼び出し元のスレッドが UI スレッドへのアクセスを待機しているときにブロックします。
 
     注: メソッドでは **GetService** または **QueryService** を使用しないようにしてください `InitializeAsync` 。 これらを使用する必要がある場合は、最初に UI スレッドに切り替える必要があります。 代替手段は、 <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> (にキャストすることによって) **asyncpackage** からを使用することです <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider> 。
 
@@ -74,16 +75,16 @@ public sealed class TestPackage : AsyncPackage
 ```
 
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>既存の VSPackage を AsyncPackage に変換する
- 作業の大部分は、新しい **Asyncpackage**を作成することと同じです。 上記の手順 1. ~ 5. に従います。 また、次の推奨事項により、さらに注意する必要があります。
+ 作業の大部分は、新しい **Asyncpackage** を作成することと同じです。 上記の手順 1. ~ 5. に従います。 また、次の推奨事項により、さらに注意する必要があります。
 
 1. `Initialize`パッケージに含まれていた上書きを忘れずに削除してください。
 
-2. デッドロックを回避する: コードに非表示の Rpc が存在する可能性があります。 これがバックグラウンドスレッドで発生するようになりました。 RPC ( **GetService**など) を作成する場合は、(1) メインスレッドに切り替えるか、(2) API の非同期バージョン (たとえば、 **GetServiceAsync**) を使用する必要があることを確認します。
+2. デッドロックを回避する: コードに非表示の Rpc が存在する可能性があります。 これがバックグラウンドスレッドで発生するようになりました。 RPC ( **GetService** など) を作成する場合は、(1) メインスレッドに切り替えるか、(2) API の非同期バージョン (たとえば、 **GetServiceAsync**) を使用する必要があることを確認します。
 
 3. スレッドを頻繁に切り替えることは避けてください。 バックグラウンドスレッドで発生する可能性のある作業をローカライズして、読み込み時間を短縮します。
 
 ## <a name="querying-services-from-asyncpackage"></a>AsyncPackage からサービスを照会しています
- **Asyncpackage**は、呼び出し元に応じて非同期的に読み込まれる場合とない場合があります。 たとえば、
+ **Asyncpackage** は、呼び出し元に応じて非同期的に読み込まれる場合とない場合があります。 たとえば、
 
 - 呼び出し元が **GetService** または **QueryService** (両方の同期 api) を呼び出した場合、または
 

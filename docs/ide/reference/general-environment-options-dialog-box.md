@@ -1,5 +1,7 @@
 ---
 title: '[全般] ([オプション] ダイアログ ボックス - [環境])'
+description: '[環境] セクションの [全般] ページを使用して、IDE の配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けなどを変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
@@ -20,16 +22,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6068f63cc9c2e7abe36b6eac804beaaa6603303e
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569440"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617267"
 ---
 # <a name="options-dialog-box-environment--general"></a>[オプション] ダイアログ ボックス:[環境] \> [全般]
 
-このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、 **[ツール]** メニューを開いて、 **[オプション]** をクリックし、 **[環境]** フォルダーを開き、 **[全般]** ページをクリックします。 このページが一覧に表示されない場合は、 **[オプション]** ダイアログ ボックスの **[すべての設定を表示]** チェック ボックスをオンにします。
+このページを使用して、統合開発環境 (IDE: Integrated Development Environment) のオプションのうち特に配色テーマ、ステータス バーの設定、およびファイル拡張子の関連付けを変更します。 **[オプション]** ダイアログ ボックスを表示するには、**[ツール]** メニューを開いて、**[オプション]** をクリックし、**[環境]** フォルダーを開き、**[全般]** ページをクリックします。
 
 ## <a name="visual-experience"></a>視覚的効果
 
@@ -37,7 +39,7 @@ ms.locfileid: "75569440"
 
 IDE の配色テーマ ( **[青]** 、 **[淡色]** 、 **[濃色]** 、または **[青 (エクストラ コントラスト)]** ) を選択します。
 
-[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) から **Visual Studio 配色テーマ エディター**をダウンロードしてインストールすることで、定義済みテーマを追加でインストールしたりカスタム テーマを作成したりすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ボックスの一覧に表示されます。
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) から **Visual Studio 配色テーマ エディター** をダウンロードしてインストールすることで、定義済みテーマを追加でインストールしたりカスタム テーマを作成したりすることもできます。 このツールをインストールすると、追加の配色テーマが **[配色テーマ]** ボックスの一覧に表示されます。
 
 **タイトルの文字スタイルをメニュー バーに適用する**
 
@@ -50,7 +52,7 @@ IDE の配色テーマ ( **[青]** 、 **[淡色]** 、 **[濃色]** 、また�
 このオプションを使用して、モニターごとの 1インチあたりのドット数 (DPI) の認識 (または *PMA*) を有効または無効にします。 PMA を有効にすると、Visual Studio ユーザー インターフェイスは、表示倍率と DPI 構成に関係なく、すべてのモニターで鮮明に表示されます (複数のモニター間の表示も含まれます)。 PMA を有効にするには、Windows 10 April 2018 Update 以降および .NET Framework 4.8 以降が必要です (これら 2 つの前提条件が満たされていない場合、このオプションは灰色表示されます)。
 
 > [!TIP]
-> - Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 **[Optimize rendering for screens with different pixel densities]\(ピクセルの密度が異なる画面のレンダリングを最適化する\)** オプションがオンの場合は、この Windows 設定を**オン**にしても、効果はほとんどありません。
+> - Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 **[Optimize rendering for screens with different pixel densities]\(ピクセルの密度が異なる画面のレンダリングを最適化する\)** オプションがオンの場合は、この Windows 設定を **オン** にしても、効果はほとんどありません。
 > - Windows 10 には、 **[プログラム互換性のトラブルシューティング ツール]** という設定もあります。 Visual Studio の外観の修正を試みるときは、このトラブルシューティング ツールを使用しないことをお勧めします。
 
 ::: moniker-end
@@ -62,7 +64,7 @@ Visual Studio で視覚的効果を自動的に調整するか、ユーザーが
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を**オン**にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
+> Windows 10 には、 **[Let Windows try to fix apps so they're not blurry]\(ぼやけないように Windows でアプリの修正を試みる\)** という設定があります。 Visual Studio がモニター上でぼやけて見える場合は、この設定を **オン** にすることをお勧めします。 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) へのアップグレードを検討してください。Visual Studio 2019 は、モニターごとの DPI に対応したアプリケーションであるため、表示の明瞭度が大幅に向上しています。
 
 ::: moniker-end
 

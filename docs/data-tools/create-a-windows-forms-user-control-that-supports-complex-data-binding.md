@@ -1,5 +1,7 @@
 ---
 title: データバインディングを使用して Windows フォームユーザーコントロールを作成する
+description: ComplexBindingPropertiesAttribute クラスを実装することにより、複合データバインディングをサポートする Windows フォームユーザーコントロールを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 465636b2b5bbf1a47752b4f0917258e264172abd
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586849"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436785"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 
-Windows アプリケーションのフォームにデータを表示する場合は、[ **ツールボックス**] から既存のコントロールを選択できます。 または、アプリケーションに標準コントロールでは使用できない機能が必要な場合は、カスタムコントロールを作成できます。 このチュートリアルでは、<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールには、データにバインドできる `DataSource` プロパティと `DataMember` プロパティが含まれます。 このようなコントロールは、<xref:System.Windows.Forms.DataGridView> や <xref:System.Windows.Forms.ListBox> に似ています。
+Windows アプリケーションのフォームにデータを表示する場合は、[ **ツールボックス** ] から既存のコントロールを選択できます。 または、アプリケーションに標準コントロールでは使用できない機能が必要な場合は、カスタムコントロールを作成できます。 このチュートリアルでは、<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装するコントロールには、データにバインドできる `DataSource` プロパティと `DataMember` プロパティが含まれます。 このようなコントロールは、<xref:System.Windows.Forms.DataGridView> や <xref:System.Windows.Forms.ListBox> に似ています。
 
 コントロールの作成の詳細については、「 [デザイン時の Windows フォームコントロールの開発](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)」を参照してください。
 
@@ -39,7 +41,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルでは、次の方法について説明します。
 
-- 新しい**ユーザー コントロール**をプロジェクトに追加します。
+- 新しい **ユーザー コントロール** をプロジェクトに追加します。
 
 - ユーザー コントロールをビジュアルに設計します。
 
@@ -47,7 +49,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 - [データソース構成ウィザード](../data-tools/media/data-source-configuration-wizard.png)を使用してデータセットを作成します。
 
-- [[データソース] ウィンドウ](add-new-data-sources.md#data-sources-window)の**Customers**テーブルを、新しい複合コントロールを使用するように設定します。
+- [ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window)の **Customers** テーブルを、新しい複合コントロールを使用するように設定します。
 
 - **[データ ソース]** ウィンドウから **Form1** に新しいコントロールをドラッグして追加します。
 
@@ -55,11 +57,11 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、 **データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 1. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -75,13 +77,13 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 ## <a name="add-a-user-control-to-the-project"></a>プロジェクトにユーザー コントロールを追加する
 
-このチュートリアルでは、 **ユーザーコントロール**から複雑なデータバインド可能なコントロールを作成するため、 **ユーザーコントロール** 項目をプロジェクトに追加します。
+このチュートリアルでは、 **ユーザーコントロール** から複雑なデータバインド可能なコントロールを作成するため、 **ユーザーコントロール** 項目をプロジェクトに追加します。
 
 1. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** を選択します。
 
-1. **[ファイル名]** 領域に「**ComplexDataGridView**」と入力し、**[追加]** をクリックします。
+1. **[ファイル名]** 領域に「 **ComplexDataGridView** 」と入力し、 **[追加]** をクリックします。
 
-    **ComplexDataGridView** コントロールが**ソリューション エクスプローラー**に追加され、デザイナーが開きます。
+    **ComplexDataGridView** コントロールが **ソリューション エクスプローラー** に追加され、デザイナーが開きます。
 
 ## <a name="design-the-complexdatagridview-control"></a>ComplexDataGridView コントロールをデザインする
 
@@ -91,7 +93,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 データ バインディングをサポートする複合コントロールには、<xref:System.ComponentModel.ComplexBindingPropertiesAttribute> を実装できます。
 
-1. **ComplexDataGridView** コントロールをコード ビューに切り替えます  (**[表示]** メニューの **[コード]** を選択します)。
+1. **ComplexDataGridView** コントロールをコード ビューに切り替えます  ( **[表示]** メニューの **[コード]** を選択します)。
 
 1. `ComplexDataGridView` のコードを次のコードで置き換えます。
 
@@ -102,11 +104,11 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 ## <a name="create-a-data-source-from-your-database"></a>データベースからデータソースを作成する
 
-**データソース構成**ウィザードを使用して、Northwind サンプルデータベースのテーブルに基づいてデータソースを作成し `Customers` ます。
+**データソース構成** ウィザードを使用して、Northwind サンプルデータベースのテーブルに基づいてデータソースを作成し `Customers` ます。
 
-1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示** ] をクリックします。
 
-2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして**データ ソース構成**ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして **データ ソース構成** ウィザードを起動します。
 
 3. **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
 
@@ -116,15 +118,15 @@ Windows アプリケーションのフォームにデータを表示する場合
 
    - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、 **[次へ]** をクリックします。
 
-6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、 **[次へ]** をクリックします。
 
-7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** ノードを展開します。
 
-8. `Customers` テーブルを選択し、**[完了]** をクリックします。
+8. `Customers` テーブルを選択し、 **[完了]** をクリックします。
 
-   **NorthwindDataSet**がプロジェクトに追加され、[ `Customers` **データソース**] ウィンドウにテーブルが表示されます。
+   **NorthwindDataSet** がプロジェクトに追加され、[ `Customers` **データソース** ] ウィンドウにテーブルが表示されます。
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>ComplexDataGridView コントロールを使用するように Customers テーブルを設定する
 
@@ -134,7 +136,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 1. **[データ ソース]** ウィンドウの **[Customers]** ノードを展開します。
 
-1. **[Customers]** ノードのドロップダウン矢印をクリックし、**[カスタマイズ]** をクリックします。
+1. **[Customers]** ノードのドロップダウン矢印をクリックし、 **[カスタマイズ]** をクリックします。
 
 1. **[データ UI カスタマイズ オプション]** ダイアログ ボックスの **[関連付けられたコントロール]** の一覧の **[ComplexDataGridView]** を選択します。
 
@@ -142,13 +144,13 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 ## <a name="add-controls-to-the-form"></a>フォームへのコントロールの追加
 
-データバインドコントロールを作成するには、[ **データソース** ] ウィンドウからフォームに項目をドラッグします。 **[データ ソース]** ウィンドウからフォームにメインの **[Customers]** ノードをドラッグします。 **Complexdatagridview**コントロールがテーブルのデータを表示するために使用されていることを確認します。
+データバインドコントロールを作成するには、[ **データソース** ] ウィンドウからフォームに項目をドラッグします。 **[データ ソース]** ウィンドウからフォームにメインの **[Customers]** ノードをドラッグします。 **Complexdatagridview** コントロールがテーブルのデータを表示するために使用されていることを確認します。
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
 **F5** キーを押してアプリケーションを実行します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリケーションの要件に応じて、データ バインディングをサポートするコントロールの作成後に、追加の操作を実行できます。 次の手順として、一般的には、次のようなことを実行します。
 
@@ -156,7 +158,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 - 検索のシナリオをサポートするコントロールを作成します。 詳細については、「 [参照データバインディングをサポートする Windows フォームユーザーコントロールを作成](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

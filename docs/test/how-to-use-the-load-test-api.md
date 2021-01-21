@@ -1,5 +1,7 @@
 ---
 title: ロード テスト API
+description: ロード テスト API の使用方法について説明します。ロード テスト プラグインがサポートされていて、ロード テストの制御や拡張を行うことができます。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fc3ff1aa238249f7425c61b5b28d2a96e299fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd2064a76777390eb4b708b402578f1d89ca52c7
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287104"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328679"
 ---
 # <a name="how-to-use-the-load-test-api"></a>方法: ロード テスト API を使用する
 
@@ -26,7 +28,7 @@ Visual Studio では、ロード テストの制御や拡張を行うことが�
 > [!TIP]
 > オブジェクト ブラウザーを使用して、<xref:Microsoft.VisualStudio.TestTools.LoadTesting> 名前空間を調べます。 Visual C# エディターおよび Visual Basic エディターの両方では、この名前空間のクラスを使用したコーディングの IntelliSense サポートを提供しています。
 
-Web パフォーマンス テスト用のプラグインを作成することもできます。 詳細については、[Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)」と「[方法: 要求レベルのプラグインを作成する](../test/how-to-create-a-request-level-plug-in.md)」を参照してください。
+Web パフォーマンス テスト用のプラグインを作成することもできます。 詳細については、「[方法:Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)」と「[方法:要求レベルのプラグインを作成する](../test/how-to-create-a-request-level-plug-in.md)」を参照してください。
 
 ## <a name="to-use-the-loadtesting-namespace"></a>LoadTesting 名前空間を使用するには
 
@@ -46,7 +48,7 @@ Web パフォーマンス テスト用のプラグインを作成することも
 
 8. ロード テスト エディターを使用して新しいロード テスト プラグインを追加します。
 
-    1. ロード テストのルート ノードを右クリックし、 **[ロード テスト プラグインの追加]** を選択します。
+    1. ロード テストのルート ノードを右クリックし、**[ロード テスト プラグインの追加]** を選択します。
 
     2. **[ロード テスト プラグインの追加]** ダイアログ ボックスが表示されます。
 

@@ -1,5 +1,7 @@
 ---
 title: 依存関係図へのカスタム プロパティの追加
+description: 依存関係図の拡張コードを記述するときに、依存関係図の任意の要素と共に値を格納する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546916"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360768"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>依存関係図へのカスタム プロパティの追加
 
@@ -31,14 +33,14 @@ ms.locfileid: "85546916"
 > [!IMPORTANT]
 > プロパティを表示するには、レイヤーのプロパティを表示する各コンピューターで、次の変更を行います。
 >
-> 1. " **管理者として実行**" を使用してメモ帳を実行します。 *%ProgramFiles%\Microsoft Visual Studio [バージョン] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*を開きます。
-> 2. **Content**要素内で、次を追加します。
+> 1. " **管理者として実行**" を使用してメモ帳を実行します。 *%ProgramFiles%\Microsoft Visual Studio [バージョン] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest* を開きます。
+> 2. **Content** 要素内で、次を追加します。
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
 >
-> 3. Visual Studio アプリケーションの [スタート] メニューの [ **Visual Studio Tools** ] セクションで、 **開発者コマンドプロンプト**を開きます。 次を入力します。
+> 3. Visual Studio アプリケーションの [スタート] メニューの [ **Visual Studio Tools** ] セクションで、 **開発者コマンドプロンプト** を開きます。 次のように入力します。
 >
 >      `devenv /rootSuffix /updateConfiguration`
 >

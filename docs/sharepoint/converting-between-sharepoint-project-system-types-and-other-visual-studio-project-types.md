@@ -1,5 +1,8 @@
 ---
 title: '変換: SharePoint プロジェクトシステムの種類と他の型との間'
+titleSuffix: ''
+description: SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類を変換します。 変換できる型の詳細については、一覧を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 40ea60a8df5bc0bcd033c60a83d742ed3249cc53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835997"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850482"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換
   場合によっては、SharePoint プロジェクトシステムにオブジェクトがあり、Visual Studio オートメーションオブジェクトモデルまたは統合オブジェクトモデルで対応するオブジェクトの機能を使用する必要がある場合があります。 このような場合は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> SharePoint プロジェクトサービスのメソッドを使用して、オブジェクトを別のオブジェクトモデルに変換できます。
@@ -42,7 +45,7 @@ ms.locfileid: "66835997"
 
  この例で必要な要素は次のとおりです。
 
-- *EnvDTE.dll*アセンブリへの参照を持つ SharePoint プロジェクトシステムの拡張機能。 詳細については、「 [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)」を参照してください。
+- *EnvDTE.dll* アセンブリへの参照を持つ SharePoint プロジェクトシステムの拡張機能。 詳細については、「[SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)」を参照してください。
 
 - `projectService_ProjectAdded`オブジェクトのイベントを処理するメソッドを登録するコード <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 。 例については、「 [方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
 
@@ -50,4 +53,4 @@ ms.locfileid: "66835997"
 
 - [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)
 - [方法: SharePoint プロジェクトサービスを取得する](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
-- [SharePoint ツール拡張機能のプログラミングモデルの概要](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
+- [SharePoint ツール拡張機能のプログラミング モデルの概要](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)

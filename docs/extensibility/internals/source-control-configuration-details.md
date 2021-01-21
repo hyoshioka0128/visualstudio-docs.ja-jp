@@ -1,5 +1,7 @@
 ---
 title: ソース管理の構成の詳細 |Microsoft Docs
+description: Visual Studio でプロジェクトの種類のソース管理を実装する方法について説明します。これには、アクセス許可を要求するようにプロジェクトシステムまたはエディターを構成する作業が含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cf4a5c55e8093e5dcd6406cde1c60f642188495
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efed4592bfa0b697d66f377430cc5998d3e9e5d3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705295"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875506"
 ---
 # <a name="source-control-configuration-details"></a>ソース管理構成の詳細
 ソース管理を実装するには、次の操作を行うためにプロジェクトシステムまたはエディターを適切に構成する必要があります。

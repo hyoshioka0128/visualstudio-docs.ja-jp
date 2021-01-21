@@ -1,6 +1,7 @@
 ---
 title: 機能拡張プロジェクトを Visual Studio 2017 に移行する
 titleSuffix: ''
+description: 機能拡張プロジェクトを Visual Studio 2017 にアップグレードする方法と、拡張機能マニフェストバージョン2からバージョン3の VSIX マニフェストにアップグレードする方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 52faf3f8b736be9791f1738662aef1bd1b65939c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038557"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993966"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する
 
@@ -50,7 +51,7 @@ NuGet の参照を更新するには、次のようにします。
 * ソリューションを右クリックし、[ **ソリューションの NuGet パッケージの管理**] を選択します。
 * [ **更新** ] タブに移動します。
 * [ **Microsoft**] を選択します。
-* **Update**を押します。
+* **Update** を押します。
 
 ![VSSDK ビルドツール](media/vssdk-build-tools.png)
 
@@ -61,7 +62,7 @@ NuGet の参照を更新するには、次のようにします。
 > [!Note]
 > 少なくとも、すべての拡張機能で Visual Studio コアエディターコンポーネントを前提条件として指定する必要があります。
 
-* 拡張機能マニフェストファイル (通常は *source.extension.vsixmanifest*と呼ばれます) を編集します。
+* 拡張機能マニフェストファイル (通常は *source.extension.vsixmanifest* と呼ばれます) を編集します。
 * `InstallationTarget`15.0 が含まれていることを確認します。
 * 次の例に示すように、必要なインストールの前提条件を追加します。
   * インストールの前提条件にはコンポーネント Id のみを指定することをお勧めします。
@@ -109,21 +110,21 @@ NuGet の参照を更新するには、次のようにします。
 
 ## <a name="update-debug-settings-for-the-project"></a>プロジェクトのデバッグ設定を更新する
 
-Visual studio の実験用インスタンスで拡張機能をデバッグする場合は、[**デバッグ**開始] アクションのプロジェクト設定に、  >  **Start action** visual studio 2017 のインストールの*devenv.exe*ファイルに設定された [**外部プログラムの開始**] の値が設定されていることを確認してください。
+Visual studio の実験用インスタンスで拡張機能をデバッグする場合は、[**デバッグ** 開始] アクションのプロジェクト設定に、  >   visual studio 2017 のインストールの *devenv.exe* ファイルに設定された [**外部プログラムの開始**] の値が設定されていることを確認してください。
 
-*C:\Program files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*のようになります。
+*C:\Program files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe* のようになります。
 
 ![外部プログラムの開始](media/start-external-program.png)
 
 > [!Note]
-> デバッグの開始アクションは通常、 *.csproj* ファイルに格納されます。 通常、このファイルは、ファイルに含まれてい *ます。* そのため、ソース管理にコミットすると、通常は他のプロジェクトファイルと共に保存されません。 そのため、ソース管理からソリューションを新規にプルした場合、プロジェクトの開始アクションに値が設定されていない可能性があります。 Visual Studio 2017 で作成された新しい VSIX プロジェクトには、既定で現在の Visual Studio インストールディレクトリを指す *.csproj* ファイルが作成されます。 ただし、VSIX v2 拡張機能を移行する場合は、 *.csproj* ファイルに以前の Visual Studio バージョンのインストールディレクトリへの参照が含まれている可能性があります。 **デバッグ**開始アクションの値を設定する  >  **Start action**と、拡張機能をデバッグしようとしたときに、正しい Visual Studio の実験的なインスタンスを起動することができます。
+> デバッグの開始アクションは通常、 *.csproj* ファイルに格納されます。 通常、このファイルは、ファイルに含まれてい *ます。* そのため、ソース管理にコミットすると、通常は他のプロジェクトファイルと共に保存されません。 そのため、ソース管理からソリューションを新規にプルした場合、プロジェクトの開始アクションに値が設定されていない可能性があります。 Visual Studio 2017 で作成された新しい VSIX プロジェクトには、既定で現在の Visual Studio インストールディレクトリを指す *.csproj* ファイルが作成されます。 ただし、VSIX v2 拡張機能を移行する場合は、 *.csproj* ファイルに以前の Visual Studio バージョンのインストールディレクトリへの参照が含まれている可能性があります。 **デバッグ** 開始アクションの値を設定する  >  と、拡張機能をデバッグしようとしたときに、正しい Visual Studio の実験的なインスタンスを起動することができます。
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>拡張機能が (VSIX v3 として) 正しくビルドされることを確認します。
 
 * VSIX プロジェクトをビルドします。
 * 生成された VSIX を解凍します。
-  * 既定では、VSIX ファイルは *bin/Debug* または *bin/Release* の内部にあり、[お持ちの *customextension] .vsix*として存在します。
-  * *.Vsix*の名前を *.zip*に変更して、内容を簡単に表示します。
+  * 既定では、VSIX ファイルは *bin/Debug* または *bin/Release* の内部にあり、[お持ちの *customextension] .vsix* として存在します。
+  * *.Vsix* の名前を *.zip* に変更して、内容を簡単に表示します。
 * 次の3つのファイルが存在するかどうかを確認します。
   * *拡張子 source.extension.vsixmanifest*
   * *manifest.js*
@@ -172,7 +173,7 @@ Visual Studio が最近開いた場合は、次のようなダイアログボッ
 
 さらにガイダンスを提供するために、いくつかの一般的な拡張機能の種類と推奨される前提条件を確認しました。
 
-拡張機能の種類 | 表示名 | id
+拡張機能の種類 | 表示名 | ID
 --- | --- | ---
 エディター | Visual Studio のコア エディター | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# および Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -181,24 +182,24 @@ WPF | Managed Desktop Workload コア | Microsoft.VisualStudio.Component.Managed
 
 ## <a name="find-component-ids"></a>コンポーネント Id の検索
 
-Visual Studio 製品によって並べ替えられたコンポーネントの一覧は、 [Visual studio 2017 のワークロードとコンポーネント id](../install/workload-and-component-ids.md?view=vs-2019)にあります。 マニフェスト内の前提条件 Id には、これらのコンポーネント Id を使用します。
+Visual Studio 製品によって並べ替えられたコンポーネントの一覧は、 [Visual studio 2017 のワークロードとコンポーネント id](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true)にあります。 マニフェスト内の前提条件 Id には、これらのコンポーネント Id を使用します。
 
 特定のバイナリが含まれているコンポーネントがわからない場合は、 [コンポーネント > バイナリマッピングスプレッドシート](https://aka.ms/vs2017componentid-binaries)をダウンロードしてください。
 
 ### <a name="vs2017-componentbinarymappingxlsx"></a>vs2017-ComponentBinaryMapping.xlsx
 
-Excel シートには、 **コンポーネント名**、 **ComponentId**、 **バージョン**、 **バイナリ/ファイル名**の4つの列があります。  フィルターを使用して、特定のコンポーネントとバイナリを検索および検索することができます。
+Excel シートには、 **コンポーネント名**、 **ComponentId**、 **バージョン**、 **バイナリ/ファイル名** の4つの列があります。  フィルターを使用して、特定のコンポーネントとバイナリを検索および検索することができます。
 
 すべての参照について、まず、コアエディター (VisualStudio) コンポーネントに含まれているものを確認します。  少なくとも、すべての拡張機能の前提条件として、コアエディターコンポーネントを指定する必要があります。 コアエディターに含まれていない参照の場合は、[ **バイナリ/ファイル名** ] セクションにフィルターを追加して、これらの参照のいずれかのサブセットを持つコンポーネントを検索します。
 
-次に例を示します。
+例 :
 
-* デバッガー拡張機能があり、プロジェクトに *VSDebugEng.dll* と *VSDebug.dll*への参照が含まれていることがわかっている場合は、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをクリックします。  "VSDebugEng.dll" を検索し、[ *OK]* を選択します。  次に、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをもう一度クリックし、"VSDebug.dll" を検索します。  [現在の **選択項目をフィルターに追加する** ] チェックボックスをオンにして、[ **OK]** を選択します。  ここで、 **コンポーネント名** を調べて、拡張機能の種類に最も関係のあるコンポーネントを見つけます。 この例では、Just-in-time デバッガーを選択して、source.extension.vsixmanifest に追加します。
+* デバッガー拡張機能があり、プロジェクトに *VSDebugEng.dll* と *VSDebug.dll* への参照が含まれていることがわかっている場合は、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをクリックします。  "VSDebugEng.dll" を検索し、[ *OK]* を選択します。  次に、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをもう一度クリックし、"VSDebug.dll" を検索します。  [現在の **選択項目をフィルターに追加する** ] チェックボックスをオンにして、[ **OK]** を選択します。  ここで、 **コンポーネント名** を調べて、拡張機能の種類に最も関係のあるコンポーネントを見つけます。 この例では、Just-in-time デバッガーを選択して、source.extension.vsixmanifest に追加します。
 * プロジェクトがデバッガー要素を扱うことがわかっている場合は、フィルター検索ボックスで "デバッガー" を検索して、名前にデバッガーが含まれているコンポーネントを確認できます。
 
 ## <a name="specify-a-visual-studio-2017-release"></a>Visual Studio 2017 リリースを指定する
 
-拡張機能に特定のバージョンの Visual Studio 2017 が必要な場合、たとえば、15.3 でリリースされた機能に依存している場合は、VSIX **インストールターゲット**でビルド番号を指定する必要があります。 たとえば、リリース15.3 のビルド番号は ' 15.0.26730.3 ' です。 [ここで](../install/visual-studio-build-numbers-and-release-dates.md)は、リリースのマッピングを参照して番号を作成できます。 リリース番号 ' 15.3 ' の使用は正しく機能しません。
+拡張機能に特定のバージョンの Visual Studio 2017 が必要な場合、たとえば、15.3 でリリースされた機能に依存している場合は、VSIX **インストールターゲット** でビルド番号を指定する必要があります。 たとえば、リリース15.3 のビルド番号は ' 15.0.26730.3 ' です。 [ここで](../install/visual-studio-build-numbers-and-release-dates.md)は、リリースのマッピングを参照して番号を作成できます。 リリース番号 ' 15.3 ' の使用は正しく機能しません。
 
 拡張機能に15.3 以上が必要な場合は、 **Installationtarget バージョン** を [15.0.26730.3, 16.0) として宣言します。
 

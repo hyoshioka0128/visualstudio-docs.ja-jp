@@ -1,5 +1,7 @@
 ---
 title: 匿名型をクラスに変換する
+description: Visual Studio で [クイック アクションとリファクタリング] メニューを使用して、匿名型をクラスに変換する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,13 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: a041c077a41ce6b37d74507723ec1ce0f8c9585c
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094293"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040786"
 ---
 # <a name="convert-anonymous-type-to-class"></a>匿名型をクラスに変換する
 
@@ -31,7 +34,7 @@ ms.locfileid: "79094293"
 
 **理由:** 匿名型は、それをローカルで使用しているときのみ便利です。 コードが長くなった場合、それをクラスに昇格させる簡単な方法があると便利なためです。
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. 匿名型の上にカーソルを置きます。
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。

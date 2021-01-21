@@ -1,5 +1,7 @@
 ---
 title: TemplateData 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: TemplateData 要素とそのテンプレートを分類し、新しいプロジェクトまたは [新しい項目の追加] ダイアログボックスでどのように表示するかを定義します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3ce0226286e8cc4623b66c043eb7bd376597118
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699192"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903261"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 要素 (Visual Studio テンプレート)
 テンプレートをカテゴリに分類し、 **[新しいプロジェクト]** ダイアログ ボックス、または **[新しい項目の追加]** ダイアログ ボックスでどのように表示させるかを定義します。
@@ -47,9 +49,9 @@ ms.locfileid: "80699192"
 
 | 要素 | 説明 |
 | - | - |
-| [名前](../extensibility/name-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> **新しいプロジェクト**または [**新しい項目の追加**] ダイアログボックスに表示されるテンプレートの名前を指定します。 |
-| [説明](../extensibility/description-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> **新しいプロジェクト**または [**新しい項目の追加**] ダイアログボックスに表示されるテンプレートの説明を指定します。 |
-| [Icon](../extensibility/icon-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> アイコンとして機能するイメージファイルのパスとファイル名を指定します。このアイコンは、 **新しいプロジェクト** または [ **新しい項目の追加** ] ダイアログボックスで、テンプレートに対して表示されます。 |
+| [名前](../extensibility/name-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> **新しいプロジェクト** または [**新しい項目の追加**] ダイアログボックスに表示されるテンプレートの名前を指定します。 |
+| [説明](../extensibility/description-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> **新しいプロジェクト** または [**新しい項目の追加**] ダイアログボックスに表示されるテンプレートの説明を指定します。 |
+| [アイコン](../extensibility/icon-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> アイコンとして機能するイメージファイルのパスとファイル名を指定します。このアイコンは、 **新しいプロジェクト** または [ **新しい項目の追加** ] ダイアログボックスで、テンプレートに対して表示されます。 |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 必須の要素です。<br /><br /> [ **新しいプロジェクト** ] ダイアログボックスの指定したグループの下に表示されるように、プロジェクトテンプレートを分類します。 |
 | [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> プロジェクトテンプレートを分類して、[ **新しいプロジェクト** ] ダイアログボックスの指定したサブカテゴリの下に表示されるようにします。 |
 | [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> テンプレート ID を指定します。 |
@@ -67,7 +69,7 @@ ms.locfileid: "80699192"
 | [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> テンプレートが、.NET Framework の特定の最小バージョン、およびそれ以降のバージョンをサポートしている場合にのみ、この要素を使用します。 |
 | [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> テンプレートが web プロジェクトのマスターページをサポートするかどうかを指定します。 |
 | [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> テンプレートが web プロジェクトのコード分離または分離コードページモデルをサポートするかどうかを指定します。 |
-| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> テンプレートが複数の言語に対して同一であるかどうか、および [**新しいプロジェクト**] ダイアログボックスから**言語**オプションを使用できるかどうかを指定します。 |
+| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> テンプレートが複数の言語に対して同一であるかどうか、および [**新しいプロジェクト**] ダイアログボックスから **言語** オプションを使用できるかどうかを指定します。 |
 | [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | 省略可能な要素です。<br /><br /> プロジェクト テンプレートの対象となるプラットフォームを指定します。 この要素は、アプリを作成するためにプロジェクトテンプレートを使用することを指定し [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] ます。 |
 
 ### <a name="parent-elements"></a>親要素

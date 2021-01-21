@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 21052d59205c7ddc14247f180348fea3b8d5652a
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77580074"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833248"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>手順 2: 最初の ASP.NET Core Web アプリを作成する
 
@@ -94,15 +94,15 @@ public void OnGet()
 
 アプリケーションをもう一度実行します。 ページに現在の時刻が表示されるようになりますが、常に午前 0 時です。 それでは正しくありません。
 
-![ブラウザーでの Visual Studio 2019 ASP.NET Core プロジェクト](media/vs-2019/vs2019-app-in-browser.png)
+![ブラウザー ウィンドウのアプリケーション ホーム ページのスクリーンショット。 ページの内容は、"It's 12:00 AM right now on the server!" となっています。](media/vs-2019/vs2019-app-in-browser.png)
 
 ## <a name="debug-the-application"></a>アプリケーションのデバッグ
 
 `Time` に値を割り当てている `OnGet` メソッドにブレークポイントを追加し、今度はアプリケーションのデバッグを開始します。
 
-実行がその行で停止し、`DateTime.Today` に日付が含まれていることを確認できますが、時刻データが含まれないため、時刻は常に午前 0 時です。 
+実行がその行で停止し、`DateTime.Today` に日付が含まれていることを確認できますが、時刻データが含まれないため、時刻は常に午前 0 時です。
 
-![ブラウザーでの Visual Studio 2019 ASP.NET Core プロジェクト](media/vs-2019/vs2019-breakpoint.png)
+![Visual Studio の Index.cshtml.cs のコードを示すスクリーンショット。 ブレークポイントが "Time = DateTime.Today.ToShortTimeString();" 行に設定されています。](media/vs-2019/vs2019-breakpoint.png)
 
 `DateTime.Now` を使用するように変更し、実行を続けます。 `OnGet` の新しいコードは次のようになっているはずです。
 
@@ -118,9 +118,9 @@ public void OnGet()
 > [!NOTE]
 > ToShortDateTimeString の出力形式は、現在のカルチャ設定によって異なるため、出力がこのイメージと異なる場合があります。 以下を参照してください。<xref:System.DateTime.ToShortTimeString>
 
-![ブラウザーでの Visual Studio 2019 ASP.NET Core プロジェクト](media/vs-2019/vs2019-app-fixed-in-browser.png)
+![ブラウザー ウィンドウのアプリケーション ホーム ページのスクリーンショット。 ページの内容は、"It's 1:46 AM right now on the server!" となっています。](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のビデオでは、アプリにデータのサポートを追加する方法を学びます。
 
@@ -128,4 +128,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>関連項目
 
-- [チュートリアル: ASP.NET Core で Razor Pages Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [チュートリアル: ASP.NET Core で Razor Pages Web アプリを作成する](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

@@ -1,5 +1,7 @@
 ---
 title: EndTrackingContext | Microsoft Docs
+description: MSBuild EndTrackingContext を使用して現在の追跡コンテキストを終了するための構文、戻り値、および要件について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 apiname:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf982200b8e65e404325bdbd189ff3b0f2daebac
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da1ef921106732a7787f68a979bc88f3ac012b6d
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634241"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436663"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 
@@ -34,7 +36,7 @@ HRESULT WINAPI EndTrackingContext();
 
 ## <a name="return-value"></a>戻り値
 
-コンテキストの追跡が終了した場合、**HRESULT** に **SUCCEEDED** ビットが設定されます。
+コンテキストの追跡が終了した場合、 **HRESULT** に **SUCCEEDED** ビットが設定されます。
 
 ## <a name="requirements"></a>必要条件
 

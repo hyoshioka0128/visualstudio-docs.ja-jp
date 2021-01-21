@@ -1,5 +1,7 @@
 ---
 title: '[ワークフローデザイナー-[Correlateson の定義] ダイアログボックス'
+description: ワークフローデザイナーの [[Correlateson] ダイアログボックスを使用して、Receive アクティビティの [Correlateson プロパティを編集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2db5bbfa4f34d86d3bf20cfe6bcc42b3dc00d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2be38ba9521762c38c629c2817a7c8e8ca5a709a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876126"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94438127"
 ---
 # <a name="correlateson-definition-dialog-box"></a>[CorrelatesOn の定義] ダイアログ ボックス
 
@@ -32,7 +34,7 @@ ms.locfileid: "86876126"
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>[CorrelatesOn] ダイアログ ボックスを起動するには
 
-**Receive**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所でワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除すると、Receive という <xref:System.ServiceModel.Activities.Receive> 既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 [[Correlateson の **定義** ] ダイアログボックスを開くには、 **Receive** アクティビティデザイナーを選択し、プロパティグリッドで、 **[correlateson** プロパティのコレクションテキストの横にある省略記号ボタンを選択します。
+**Receive** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティを通常配置している任意の場所でワークフローデザイナー画面にドロップできます。 アクティビティデザイナーを削除すると、Receive という <xref:System.ServiceModel.Activities.Receive> 既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 [[Correlateson の **定義** ] ダイアログボックスを開くには、 **Receive** アクティビティデザイナーを選択し、プロパティグリッドで、 **[correlateson** プロパティのコレクションテキストの横にある省略記号ボタンを選択します。
 
 ## <a name="see-also"></a>関連項目
 

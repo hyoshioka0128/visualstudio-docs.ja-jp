@@ -1,5 +1,7 @@
 ---
 title: '[ウィンドウ プロパティ] ダイアログ ボックス | Microsoft Docs'
+description: ウィンドウ ビューに一覧表示されるウィンドウのプロパティを表示する方法について説明します。 この記事には、プロパティについて記載している他の記事へのリンクがあります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd6c8a7f3b07cdd0667ae8d2c33aeb96d6d7679
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929212"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149223"
 ---
 # <a name="window-properties-dialog-box"></a>[ウィンドウ プロパティ] ダイアログ ボックス
 このダイアログ ボックスを使用して、特定のウィンドウの詳細を確認します。 このダイアログ ボックスを表示するには、[[ウィンドウ ビュー]](../debugger/windows-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のウィンドウ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。
@@ -40,7 +42,7 @@ ms.locfileid: "62929212"
 
  [ウィンドウ ビューでのウィンドウの検索](../debugger/how-to-search-for-a-window-in-windows-view.md) ウィンドウ ビューで特定のウィンドウを検索する方法について説明します。
 
- [ウィンドウ ビュー](../debugger/windows-view.md) 使用できるウィンドウとコントロールのツリー ビューを表示します。
+ [ウィンドウ ビュー](../debugger/windows-view.md) 使用できるウィンドウとコントロールのツリー ビューが表示されます。
 
  [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 

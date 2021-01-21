@@ -1,5 +1,7 @@
 ---
 title: 複数プロジェクトのテンプレートを作成する
+description: Visual Studio で、多くのプロジェクトのコンテナーとして同時に使用できる、複数プロジェクトのテンプレートを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: efd0808342e38627d0b79b097f36f86a1881dafe
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284413"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597227"
 ---
 # <a name="how-to-create-multi-project-templates"></a>方法: 複数プロジェクトのテンプレートを作成する
 
@@ -96,7 +98,7 @@ ms.locfileid: "85284413"
 
 3. **[プロジェクト]** メニューの **[テンプレートのエクスポート]** を選択します。
 
-   **テンプレートのエクスポート ウィザード**が開きます。
+   **テンプレートのエクスポート ウィザード** が開きます。
 
 4. **[テンプレートの種類の選択]** ページで、 **[プロジェクト テンプレート]** を選択します。 テンプレートにエクスポートするプロジェクトを 1 つ選択し、 **[次へ]** を選択します。 (ソリューション内のプロジェクトごとに、この手順を繰り返します。)
 

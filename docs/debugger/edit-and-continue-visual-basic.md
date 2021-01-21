@@ -1,5 +1,7 @@
 ---
 title: エディット コンティニュ (Visual Basic) | Microsoft Docs
+description: エディット コンティニュは、Visual Basic プロジェクトで使用できます。 どのような編集がサポートされているかについて、および編集の適用の可否とタイミングを制御する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851260"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862972"
 ---
 # <a name="edit-and-continue-visual-basic"></a>エディット コンティニュ (Visual Basic)
 エディット コンティニュは、中断モードでの実行中にコードを変更できるようにするための、[!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 用デバッグ機能です。 コードの編集を適用した後で、新しい編集でコードの実行を再開して編集結果を確認できます。

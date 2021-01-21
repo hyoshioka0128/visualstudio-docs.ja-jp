@@ -1,5 +1,7 @@
 ---
 title: '方法: ワークシートにグラフコントロールを追加する'
+description: ドキュメントレベルのカスタマイズでデザイン時および実行時にグラフコントロールを Microsoft Office Excel ワークシートに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdb1f738fe6e68f7470ae65e6ce08b2f3be0ef6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546238"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845467"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>方法: ワークシートにグラフコントロールを追加する
   <xref:Microsoft.Office.Tools.Excel.Chart>ドキュメントレベルのカスタマイズでは、デザイン時および実行時にコントロールを Microsoft Office Excel ワークシートに追加できます。 VSTO アドインでは、実行時にコントロールを追加することもでき <xref:Microsoft.Office.Tools.Excel.Chart> ます。

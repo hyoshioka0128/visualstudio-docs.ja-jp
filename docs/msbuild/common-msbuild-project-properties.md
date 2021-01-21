@@ -1,5 +1,7 @@
 ---
 title: MSBuild プロジェクトの共通プロパティ | Microsoft Docs
+description: プロジェクト ファイルで定義および使用される、または MSBuild に用意されている .targets ファイルに含まれている、MSBuild プロジェクトの共通プロパティについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/18/2018
 ms.topic: reference
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c790af5504c902bf5fe37d2cddba9b9f63aa40
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.openlocfilehash: 548116fc3c9b360a866f14e32074111dfdc872d9
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87425369"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533876"
 ---
 # <a name="common-msbuild-project-properties"></a>MSBuild プロジェクトの共通プロパティ
 
@@ -139,3 +141,4 @@ ms.locfileid: "87425369"
 - [MSBuild プロジェクトの共通項目](../msbuild/common-msbuild-project-items.md)
 - [一般的な MSBuild 項目メタデータ](common-msbuild-item-metadata.md)
 - [MSBuild の予約済みおよび既知のプロパティ](msbuild-reserved-and-well-known-properties.md)
+- [.NET SDK プロジェクトの MSBuild リファレンス](/dotnet/core/project-sdk/msbuild-props)

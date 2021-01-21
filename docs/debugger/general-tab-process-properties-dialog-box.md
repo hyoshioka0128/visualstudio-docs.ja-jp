@@ -1,5 +1,7 @@
 ---
 title: '[全般] タブ ([プロセス プロパティ] ダイアログ ボックス) | Microsoft Docs'
+description: '[全般] タブでは、モジュール名、プロセス ID、基本優先度、スレッド数、CPU 時間、ユーザー時間、経過時間など、プロセスに関する情報を確認できます。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6116beb67baf072d9c9762a1e8c67408cc915f29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4980437c63348050db1a007e8f541e9af9e186cc
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849818"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862738"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>[全般] タブ ([プロセス プロパティ] ダイアログ ボックス)
 **[全般]** タブを使用して、特定のプロセスの詳細を確認します。 [[プロセス プロパティ]](../debugger/process-properties-dialog-box.md) ダイアログ ボックスを表示するには、[[プロセス ビュー]](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

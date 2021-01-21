@@ -1,5 +1,7 @@
 ---
 title: Vspackage | のリソースMicrosoft Docs
+description: Vspackage に埋め込むことができるローカライズされたリソースの種類について説明します。 また、ネイティブサテライト UI Dll またはマネージサテライト Dll にリソースを埋め込むこともできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493e9834e3d7cf6d82cebb8dd93d5369678c7be0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705602"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875727"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage のリソース
 ローカライズされたリソースは、ネイティブサテライト UI Dll、マネージサテライト Dll、またはマネージ VSPackage 自体に埋め込むことができます。
@@ -85,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]がセットアップ後に VSPackage からリソースを要求した場合、そのパッケージは既に読み込まれて初期化される可能性があるため、パフォーマンスが低下することはほとんどありません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackage の管理](../../extensibility/managing-vspackages.md)
-- [MFC アプリケーションのローカライズされたリソース: サテライト Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [MFC アプリケーションのローカライズされたリソース:サテライト DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

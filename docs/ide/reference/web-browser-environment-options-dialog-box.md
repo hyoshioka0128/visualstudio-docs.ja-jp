@@ -1,5 +1,7 @@
 ---
 title: '[Web ブラウザー] ([オプション] ダイアログ ボックス - [環境])'
+description: '[環境] セクションの [Web ブラウザー] ページを使用し、内部 Web ブラウザーと Internet Explorer の両方のオプションを設定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,16 +23,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2898984896ef96f9e7767e0c56ad58c92be42f54
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596503"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560929"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>[オプション] ダイアログ ボックス:[環境] \> [Web ブラウザー]
 
-内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、 **[ツール]** メニューの **[オプション]** をクリックし、 **[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。
+内部 Web ブラウザーと Internet Explorer のオプションを設定します。 このダイアログ ボックスにアクセスするには、**[ツール]** メニューの **[オプション]** をクリックし、**[環境]** フォルダーを展開して **[Web ブラウザー]** を選択します。
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../environment-settings.md#reset-settings)」を参照してください。
@@ -42,7 +44,7 @@ ms.locfileid: "75596503"
 
 IDE Web ブラウザーを開いたときに表示されるページを設定します。
 
-## <a name="search-page"></a>[検索] ページ
+## <a name="search-page"></a>Search page
 
 内部 Web ブラウザーの [検索] ページを指定できます。 この場所には、統合開発環境 (IDE) 以外で開始された Internet Explorer のインスタンスが使用する検索ページとは別のページを指定できます。
 
@@ -52,13 +54,13 @@ IDE Web ブラウザーを開いたときに表示されるページを設定し
 
 - **ソース エディター** 選択すると、[エディター](../../ide/writing-code-in-the-code-and-text-editor.md)にソースが表示されます。
 
-- **HTML エディター** 選択すると、[HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)にソースが表示されます。 この選択を使用し、Web ページを 2 つのビュー、デザイン ビューまたは標準のテキスト ベースのソース ビューのいずれかで編集します。
+- **HTML エディター** 選択すると、[HTML デザイナー](/previous-versions/ex0hkwbx(v=vs.140))にソースが表示されます。 この場合、デザイン ビューまたは標準のテキストベースのソース ビューで Web ページを編集します。
 
 - **外部エディター** 選択すると、別のエディターにソースが表示されます。 選択するエディター (Notepad.exe など) のパスを指定します。
 
 ## <a name="internet-explorer-options"></a>Internet Explorer オプション
 
-クリックして、 **[インターネットのプロパティ]** ダイアログ ボックスで Internet Explorer のオプションを変更します。 このダイアログ ボックスの変更内容は、内部 Web ブラウザーと、Visual Studio IDE 以外 (たとえば、[スタート] メニュー) で開始された Internet Explorer のインスタンスの両方に影響があります。
+クリックして、**[インターネットのプロパティ]** ダイアログ ボックスで Internet Explorer のオプションを変更します。 このダイアログ ボックスの変更内容は、内部 Web ブラウザーと、Visual Studio IDE 以外 (たとえば、[スタート] メニュー) で開始された Internet Explorer のインスタンスの両方に影響があります。
 
 > [!NOTE]
 > **[ブラウザーの選択]** ダイアログ ボックスを使用して、Visual Studio の内部 Web ブラウザーを任意のブラウザーに置き換えます。 [ブラウザーの選択] ダイアログ ボックスにアクセスするには、プロジェクト内の HTML ファイルなどを右クリックして、コンテキスト メニューからアクセスできます。
@@ -66,4 +68,4 @@ IDE Web ブラウザーを開いたときに表示されるページを設定し
 ## <a name="see-also"></a>関連項目
 
 - [[全般]、[環境]、[オプション] ダイアログ ボックス](../../ide/reference/general-environment-options-dialog-box.md)
-- [HTML デザイナー](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
+- [HTML デザイナー](/previous-versions/ex0hkwbx(v=vs.140))

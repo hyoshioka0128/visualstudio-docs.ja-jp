@@ -1,5 +1,7 @@
 ---
 title: MSBuild ツールセット (ToolsVersion) | Microsoft Docs
+description: MSBuild プロジェクト ファイルで ToolsVersion 属性を使用して、アプリケーションをビルドするためのタスク、ターゲット、およびツールのツールセットを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e0b27a1914d85f5fde8ef6c5c467d73197c084ce
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633123"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049029"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild ツールセット (ToolsVersion)
 
-MSBuild は、タスク、ターゲット、およびツールのツールセットを使用して、アプリケーションをビルドします。 通常、MSBuild ツールセットには、*microsoft.common.tasks* ファイル、*microsoft.common.targets* ファイル、および *csc.exe* や *vbc.exe* などのコンパイラが含まれています。 ほとんどのツールセットは、複数のバージョンの .NET Framework や複数のシステム プラットフォームを対象としてアプリケーションをコンパイルするために使用できます。 ただし、MSBuild 2.0 ツールセットは .NET Framework 2.0 のみを対象として使用できます。
+MSBuild は、タスク、ターゲット、およびツールのツールセットを使用して、アプリケーションをビルドします。 通常、MSBuild ツールセットには、 *microsoft.common.tasks* ファイル、 *microsoft.common.targets* ファイル、および *csc.exe* や *vbc.exe* などのコンパイラが含まれています。 ほとんどのツールセットは、複数のバージョンの .NET Framework や複数のシステム プラットフォームを対象としてアプリケーションをコンパイルするために使用できます。 ただし、MSBuild 2.0 ツールセットは .NET Framework 2.0 のみを対象として使用できます。
 
 ## <a name="toolsversion-attribute"></a>ToolsVersion 属性
 
@@ -45,7 +47,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 ::: moniker-end
 
 > [!NOTE]
-> 一部のプロジェクトの種類は、`ToolsVersion` の代わりに `sdk` 属性を使います。 詳細については、「[パッケージ、メタパッケージ、フレームワーク](/dotnet/core/packages)」および「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
+> 一部のプロジェクトの種類は、`ToolsVersion` の代わりに `sdk` 属性を使います。 詳細については、「[.NET Core の csproj 形式に追加されたもの](/dotnet/core/tools/csproj)」を参照してください。
 
 ## <a name="how-the-toolsversion-attribute-works"></a>ToolsVersion 属性の動作
 
@@ -63,7 +65,7 @@ MSBuild は、タスク、ターゲット、およびツールのツールセッ
 
  `MSBuildToolsPath` の値を変更するには、カスタム ツールセットを定義します。 詳細については、「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。
 
- ソリューションをコマンド ラインでビルドするとき、*msbuild.exe* に対して `ToolsVersion` を指定すると、すべてのプロジェクトとそのプロジェクト間の依存関係がその `ToolsVersion` に基づいてビルドされます。ソリューション内の各プロジェクトで固有の `ToolsVersion` が指定されていても、その値は無視されます。 プロジェクトごとに `ToolsVersion` 値を定義する場合は、「[ToolsVersion 設定のオーバーライド](../msbuild/overriding-toolsversion-settings.md)」を参照してください。
+ ソリューションをコマンド ラインでビルドするとき、 *msbuild.exe* に対して `ToolsVersion` を指定すると、すべてのプロジェクトとそのプロジェクト間の依存関係がその `ToolsVersion` に基づいてビルドされます。ソリューション内の各プロジェクトで固有の `ToolsVersion` が指定されていても、その値は無視されます。 プロジェクトごとに `ToolsVersion` 値を定義する場合は、「[ToolsVersion 設定のオーバーライド](../msbuild/overriding-toolsversion-settings.md)」を参照してください。
 
  `ToolsVersion` 属性はプロジェクトの移行でも使用されます。 たとえば、Visual Studio 2010 で Visual Studio 2008 プロジェクトを開く場合、プロジェクト ファイルは ToolsVersion="4.0" を含むように更新されます。 次に、そのプロジェクトを Visual Studio 2008 で開こうとすると、アップグレードされた `ToolsVersion` は認識されないため、プロジェクトは属性が 3.5 に設定された場合と同様にビルドされます。
 
@@ -87,7 +89,7 @@ MSBuild には、ツールセットにアクセスするための 2 つの方法
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper> メソッドの使用
 
-ツールセットのプロパティは、ツールのパスを指定します。 Visual Studio 2017 以降、MSBuild には決まった場所はなくなりました。 既定では、Visual Studio のインストール場所を基準とする *MSBuild\15.0\Bin* フォルダーに格納されます。 以前のバージョンでは、MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使って、対応するレジストリ キーを検索します。その後、レジストリ キーの情報を使って、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild ではレジストリ キー (**HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**) に従って、ツールセットのプロパティが設定されます。
+ツールセットのプロパティは、ツールのパスを指定します。 Visual Studio 2017 以降、MSBuild には決まった場所はなくなりました。 既定では、Visual Studio のインストール場所を基準とする *MSBuild\15.0\Bin* フォルダーに格納されます。 以前のバージョンでは、MSBuild はプロジェクト ファイル内にある `ToolsVersion` 属性の値を使って、対応するレジストリ キーを検索します。その後、レジストリ キーの情報を使って、ツールセットのプロパティを設定します。 たとえば、`ToolsVersion` の値が `12.0` である場合、MSBuild ではレジストリ キー ( **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0** ) に従って、ツールセットのプロパティが設定されます。
 
  ツールセットのプロパティを次に示します。
 

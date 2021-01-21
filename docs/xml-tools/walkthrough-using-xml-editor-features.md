@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: XML エディター機能の使用'
+description: XML エディターの機能について説明するこのチュートリアルの手順に従って、新しい XML ドキュメントを作成する方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8aa7daef6e427b7355eb7676db0728a4af4ca42
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817399"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351480"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>チュートリアル: XML エディター機能を使用する
 
@@ -70,7 +72,7 @@ ms.locfileid: "85817399"
 
 5. 「`>`」と入力してタグを閉じます。
 
-6. エディターによって終了タグが追加されます。 終了タグは、検証エラーを示す波下線付きで追加されます。 **ツールヒント**には、次のメッセージが表示されます:**要素 'employee' に不完全な内容が含まれています。'ID' が必要です**。
+6. エディターによって終了タグが追加されます。 終了タグは、検証エラーを示す波下線付きで追加されます。 **ツールヒント** には、次のメッセージが表示されます:**要素 'employee' に不完全な内容が含まれています。'ID' が必要です**。
 
 7. 「`<`」と入力し、メンバーの一覧から **[ID]** を選択します。 次に、「`>`」と入力します。
 
@@ -78,7 +80,7 @@ ms.locfileid: "85817399"
 
 8. 「**abc**」と入力します。
 
-     「**abc**」というテキストに波下線が表示されます。 **ツールヒント**には、次のメッセージが表示されます:**このデータ型では無効な値が 'ID' 要素に含まれています**。
+     「**abc**」というテキストに波下線が表示されます。 **ツールヒント** には、次のメッセージが表示されます:**このデータ型では無効な値が 'ID' 要素に含まれています**。
 
 9. ID 要素を右クリックし、 **[定義へ移動]** をクリックします。
 
@@ -86,7 +88,7 @@ ms.locfileid: "85817399"
 
 10. XML ファイルに戻り、**abc** というテキストを **123** で置き換えます。
 
-     ID 要素の値の下にあった波下線と**ツール ヒント**が消去されます。 employee 終了タグの**ツールヒント**に、次のメッセージが表示されています。**要素 'employee' に不完全な内容が含まれています。'hire-date' が必要です**。
+     ID 要素の値の下にあった波下線と **ツール ヒント** が消去されます。 employee 終了タグの **ツールヒント** に、次のメッセージが表示されています。**要素 'employee' に不完全な内容が含まれています。'hire-date' が必要です**。
 
 11. ID 終了タグの後にカーソルを置き、「`<`」を入力します。メンバーの一覧から **hire-date** を選択し、「`>`」と入力します。
 

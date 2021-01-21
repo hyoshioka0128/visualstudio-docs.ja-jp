@@ -1,5 +1,7 @@
 ---
 title: 配置後の問題の診断 | Microsoft Docs
+description: Visual Studio で IntelliTrace を使用し、配置後の問題を診断します。 リリースにビルド情報を含めます。 アプリをリリースし、監視し、問題を見つけます。
+ms.custom: SEO-VS-2020
 ms.date: 04/10/2018
 ms.topic: how-to
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 9be00d1ad040f6daca52417e4ab6dfa93f0f44cf
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350590"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726827"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>IntelliTrace を使って配置後に問題を診断します (C#、Visual Basic)
 
@@ -31,7 +33,7 @@ IntelliTrace を使用して、ASP.NET Web アプリの配置後に問題を診�
 
 - 診断データを確認して IntelliTrace でコードをデバッグするための Visual Studio Enterprise (ただし、Professional および Community Edition を除く)
 
-## <a name="step-1-include-build-information-with-your-release"></a><a name="SetUpBuild">手順 1:</a>リリースにビルド情報を含める
+## <a name="step-1-include-build-information-with-your-release"></a><a name="SetUpBuild"></a>手順 1:リリースにビルド情報を含める
  ビルド プロセスを設定して Web プロジェクトのビルド マニフェスト (*BuildInfo.config* ファイル) を作成し、このマニフェストをリリースに含めます。 このマニフェストには、特定のビルドを作成するために使用されたプロジェクト、ソース管理、およびビルド システムに関する情報が含まれます。 この情報は、IntelliTrace ログを開いて記録されたイベントを確認した後に、Visual Studio が対応するソースとシンボルを見つけるのに役立ちます。
 
 ### <a name="create-the-build-manifest-for-an-automated-build-using-team-foundation-server"></a><a name="AutomatedBuild"></a>Team Foundation Server を使用して自動ビルドのビルド マニフェストを作成する
@@ -49,7 +51,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 #### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013
  ビルド パイプラインを設定して、ソース、ビルド、およびシンボルの場所をビルド マニフェスト (BuildInfo.config ファイル) に追加します。 Team Foundation ビルドは自動的にこのファイルを作成し、そのファイルをプロジェクトの出力フォルダーに配置します。
 
-1. [ビルド パイプラインを編集するか、新しいビルド パイプラインを作成します。](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [ビルド パイプラインを編集するか、新しいビルド パイプラインを作成します。](/azure/devops/pipelines/get-started-designer?view=vsts&preserve-view=true)
 
      ![TFS 2013 でビルド パイプラインを表示する](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
@@ -63,7 +65,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
      ![ビルド パイプライン TFS 2013 でシンボル パスを設定する](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     シンボルの詳細については、「 [シンボル データを発行する](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)」を参照してください。
+     シンボルの詳細については、「 [シンボル データを発行する](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts&preserve-view=true)」を参照してください。
 
 4. この MSBuild 引数を追加して、TFS とシンボルの場所をビルド マニフェスト ファイルに含めます。
 
@@ -153,7 +155,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
  **/p:BuildSymbolStorePath=** \<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a>手順 2: アプリをリリースする
- アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](https://msdn.microsoft.com/library/dd394698.aspx) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。
+ アプリを配置するためのビルド プロセスにより作成された [Web.Deploy パッケージ](/previous-versions/aspnet/dd394698(v=vs.110)) を使用する場合、ビルド マニフェストの名前は "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ自動的に変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されます。
 
  他の方法を使用してアプリを配置する場合は、ビルド マニフェストの名前が "*ProjectName*.BuildInfo.config" から "BuildInfo.config" へ変更され、Web サーバー上にあるアプリの Web.config ファイルと同じフォルダーに配置されていることを確認します。
 
@@ -169,7 +171,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
 2. **[ソリューションを開く]** を選ぶと、対応するソリューションまたはプロジェクトが自動的に開きます (そのプロジェクトがソリューションの一部として組み込まれていない場合)。 [Q: 配置したアプリに関する情報が IntelliTrace ログ内にありません。なぜこのようなことが起きたのですか。どうしたらよいですか?](#InvalidConfigFile)
 
-     Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー**を確認します。
+     Visual Studio では、対応するソリューションまたはプロジェクトが開くと、保留中のすべての変更が自動的にシェルブされます。 このシェルブセットの詳細情報を取得するには、 **[出力]** ウィンドウまたは **チーム エクスプローラー** を確認します。
 
      変更する前に、適切なソースがあることを確認してください。 分岐を使用する場合、Visual Studio が対応するソースを検出した分岐 (リリース ブランチなど) とは異なる分岐で作業する可能性があります。
 
@@ -319,7 +321,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
 
    ビルド システムに関する情報 ( `"TeamBuild"` または `"MSBuild"`) と以下の必須プロパティ:
 
-  - **BuildLabel** (TeamBuild の場合):ビルド名と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](/azure/devops/pipelines/build/options?view=vsts)」をご覧ください。
+  - **BuildLabel** (TeamBuild の場合):ビルド名と番号。 このラベルは配置イベントの名前としても使用されます。 ビルド番号について詳しくは、「 [完了したビルドにわかりやすい名前を付けるためにビルド番号を使用](/azure/devops/pipelines/build/options?view=vsts&preserve-view=true)」をご覧ください。
 
   - **SymbolPath** (推奨):セミコロンで区切られたシンボル (PDB ファイル) の場所の URI の一覧。 これらの URI は、URL または UNC のいずれかです。 これにより、Visual Studio は対応するシンボルを容易に検索でき、デバッグに役立ちます。
 
@@ -379,7 +381,7 @@ Visual Studio 2017 およびそれ以降のバージョンには *BuildInfo.conf
      ![ソース管理から開く &#45; 移行済み](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 #### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> Q:ワークスペースとは何ですか。
- **A:** ご利用の[ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
+ **A:** ご利用の [ワークスペースにはソースのコピーが格納](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts&preserve-view=true)されるので、ご自分の作業をチェックインする前に、そのコピーを別に開発およびテストできます。 検出されたソリューションまたはプロジェクトに特別に割り当てられたワークスペースがまだない場合、Visual Studio では、使用可能なワークスペースを選択するか、既定のワークスペースと同じコンピューター名で新しいワークスペースを作成するように求めるメッセージが表示されます。
 
 #### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a> Q:信頼されていないシンボルに関する次のメッセージが表示されるのはなぜですか。
  ![信頼されていないシンボル パスでデバッグするか](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

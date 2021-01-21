@@ -1,5 +1,7 @@
 ---
 title: 式の評価の実装例 |Microsoft Docs
+description: Visual Studio が ParseText を呼び出して、Watch windows 式の IDebugExpression2 オブジェクトを生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf994a61ed9283463cd01aa468018f6acce5e209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba5baf52f18f638730ecc5f3b7c016889503cbbb
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713098"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847703"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>式の評価の実装例
 > [!IMPORTANT]
 > Visual Studio 2015 では、式エバリュエーターを実装するこの方法は非推奨とされます。 CLR 式エバリュエーターの実装の詳細については、「 [clr 式](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) エバリュエーターと [マネージ式エバリュエーターサンプル](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)」を参照してください。
 
- **ウォッチ**ウィンドウ式の場合、Visual Studio は[parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)を呼び出して、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトを生成します。 `IDebugExpressionContext2::ParseText` 式エバリュエーター (EE) をインスタンス化し、 [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクトを取得します。
+ **ウォッチ** ウィンドウ式の場合、Visual Studio は [parsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)を呼び出して、 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)オブジェクトを生成します。 `IDebugExpressionContext2::ParseText` 式エバリュエーター (EE) をインスタンス化し、 [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクトを取得します。
 
  は、 `IDebugExpressionEvaluator::Parse` 次のタスクを実行します。
 

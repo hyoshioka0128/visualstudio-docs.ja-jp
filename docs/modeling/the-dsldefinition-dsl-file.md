@@ -1,5 +1,7 @@
 ---
 title: DslDefinition.dsl ファイル
+description: DSL ツールソリューションの Dsl プロジェクトにおける DslDefinition. dsl ファイルの構造について説明します。これは、ドメイン固有言語を定義します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +11,20 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114922"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362783"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 
-このトピックでは、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *ドメイン固有言語*を定義するソリューションの dsl プロジェクトにおける dsldefinition. dsl ファイルの構造について説明します。 DslDefinition. dsl ファイルには、ドメイン固有言語のクラスと関係、およびダイアグラム、図形、コネクタ、シリアル化形式、ドメイン固有言語の **ツールボックス** 、およびその編集ツールが記述されています。 ドメイン固有言語ソリューションでは、これらのツールを定義するコードは DslDefinition.dsl ファイルの情報に基づいて生成されます。
+このトピックでは、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] *ドメイン固有言語* を定義するソリューションの dsl プロジェクトにおける dsldefinition. dsl ファイルの構造について説明します。 DslDefinition. dsl ファイルには、ドメイン固有言語のクラスと関係、およびダイアグラム、図形、コネクタ、シリアル化形式、ドメイン固有言語の **ツールボックス** 、およびその編集ツールが記述されています。 ドメイン固有言語ソリューションでは、これらのツールを定義するコードは DslDefinition.dsl ファイルの情報に基づいて生成されます。
 
 一般に、 *ドメイン固有言語デザイナー* を使用して、DslDefinition の dsl ファイルを編集します。 ただし DslDefinition.dsl ファイルの未加工の形式は XML であるため、DslDefinition.dsl ファイルを XML エディターで開くことができます。 ファイルに記述されている情報と、ファイルの編成を理解しておくと、デバッグおよび拡張を行う際に役立つことがあります。
 
-このトピックに記載されている例は、コンポーネント図のソリューション テンプレートのものです。 例を確認するには、コンポーネント モデルのソリューション テンプレートに基づくドメイン固有言語ソリューションを作成します。 ソリューションの作成後に、DslDefinition.dsl ファイルが Domain-Specific Language Designer に表示されます。 ファイルを閉じて **ソリューションエクスプローラー**で右クリックし、[ファイルを **開くアプリケーション**の選択] をポイントして [ **XML エディター**] をクリックし、[ **OK**] をクリックします。
+このトピックに記載されている例は、コンポーネント図のソリューション テンプレートのものです。 例を確認するには、コンポーネント モデルのソリューション テンプレートに基づくドメイン固有言語ソリューションを作成します。 ソリューションの作成後に、DslDefinition.dsl ファイルが Domain-Specific Language Designer に表示されます。 ファイルを閉じて **ソリューションエクスプローラー** で右クリックし、[ファイルを **開くアプリケーション** の選択] をポイントして [ **XML エディター**] をクリックし、[ **OK**] をクリックします。
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイルの各セクション
 
@@ -38,7 +40,7 @@ ms.locfileid: "76114922"
 
 このセクションでは、モデル内の各リレーションシップを定義します。 ソース とターゲットは、リレーションシップの両側を表します。
 
-### <a name="types"></a>種類
+### <a name="types"></a>型
 
 このセクションでは、各型とその名前空間を定義します。 ドメイン プロパティには 2 つの型があります。 `DomainEnumerations` は、モデルで定義され、型を DomainModel.cs に生成します。 `ExternalTypes` 他の場所で定義されている型 (やなど) を参照 `String` `Int32` し、何も生成しません。
 
@@ -97,7 +99,7 @@ DslDefinition.dsl ファイルでは、モニカーを使用して特定の項�
 
 それぞれの型に固有のモニカーがあります (DomainClassMoniker、DomainRelationshipMoniker など)。
 
-## <a name="types"></a>種類
+## <a name="types"></a>型
 
 Types セクションでは、DslDefinition.dsl ファイルにプロパティの型として含まれているすべての型が指定されます。 これらの型は、外部型 (System.String など) と列挙型に分類されます。
 
@@ -115,7 +117,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 外部型は、標準ライブラリの型に制限されていません。
 
-### <a name="enumerations"></a>列挙
+### <a name="enumerations"></a>列挙型
 
 標準的な列挙型の指定は次の例のようになります。
 
@@ -267,7 +269,7 @@ Types セクションでは、DslDefinition.dsl ファイルにプロパティ�
 
 ## <a name="designer-and-toolbox-tabs"></a>[デザイナー] タブと [ツールボックス] タブ
 
-DslDefinition. dsl ファイルの **デザイナー** セクションの主な部分は、 **ToolboxTab** 要素です。 1つのデザイナーは、これらの要素のいくつかを持つことができ、それぞれが生成されたデザイナーの **ツールボックス**の方向セクションを表します。 各 **ToolboxTab** 要素には、1つまたは複数の **Elementtool** 要素、 **connectiontool** 要素、またはその両方を含めることができます。
+DslDefinition. dsl ファイルの **デザイナー** セクションの主な部分は、 **ToolboxTab** 要素です。 1つのデザイナーは、これらの要素のいくつかを持つことができ、それぞれが生成されたデザイナーの **ツールボックス** の方向セクションを表します。 各 **ToolboxTab** 要素には、1つまたは複数の **Elementtool** 要素、 **connectiontool** 要素、またはその両方を含めることができます。
 
 要素ツールは、特定のドメイン クラスのインスタンスを作成できます。 ユーザーが要素ツールを図にドラッグしたときの結果は、要素マージ ディレクティブによって決定します。これについては、このトピックの要素マージ ディレクティブに関するセクションで後述します。
 
@@ -296,7 +298,7 @@ DslDefinition.dsl ファイルではパスは `<DomainPath>...</DomainPath>` タ
 このモデルに対して C# を記述する場合、リレーションシップにより関連する各クラスに生成されるプロパティを使用して、1 つのステップでリンクをジャンプできます。
 
 ```
-     InPort port; ...  Component c = port.Component;
+     InPort port; ...  Component c = port.Component;
 ```
 
 ただし、両方のホップは明示的にパス構文で行う必要があります。 この要件から、中間リンクへのアクセスが容易になります。 リンクから Component へのホップを実行するコードを次に示します。
@@ -364,9 +366,9 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 - モニカー ノード。データの適用対象クラスを参照します。
 
-- クラスで定義されている各プロパティの**Xmlpropertydata** 。
+- クラスで定義されている各プロパティの **Xmlpropertydata** 。
 
-- クラスをソースとする各リレーションシップの**Xmlrelationshipdata** 。 (リレーションシップにはそれ自体の XmlClassData ノードも含まれています。)
+- クラスをソースとする各リレーションシップの **Xmlrelationshipdata** 。 (リレーションシップにはそれ自体の XmlClassData ノードも含まれています。)
 
 - **TypeName** string 属性。生成されたコード内のシリアル化ヘルパークラスの名前を決定します。
 
@@ -376,7 +378,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
     <componentModel ...
     ```
 
-- ユーザーのシリアル化されたモデルファイル内の**MonikerElementName** 。 この属性により、このクラスを参照するモニカーが導入されます。
+- ユーザーのシリアル化されたモデルファイル内の **MonikerElementName** 。 この属性により、このクラスを参照するモニカーが導入されます。
 
 - **MonikerAttributeName**。モニカー内の XML 属性の名前を識別します。 ユーザーのシリアル化されたファイルのこのフラグメントでは、ドメイン固有言語の作成者が "inPortMoniker" として **MonikerElementName** 、 **MonikerAttributeName** を "path" として定義しています。
 
@@ -390,13 +392,13 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 ### <a name="xmlpropertydata"></a>XmlPropertyData
 
-**Domainpropertymoniker**属性は、データが参照するプロパティを識別します。 この属性は、それを囲む ClassData のクラスのプロパティでなければなりません。
+**Domainpropertymoniker** 属性は、データが参照するプロパティを識別します。 この属性は、それを囲む ClassData のクラスのプロパティでなければなりません。
 
-**Xmlname**属性は、対応する属性名を XML に表示するように指定します。 規則では、この文字列は、最初の文字が小文字であることを除きプロパティ名と同一です。
+**Xmlname** 属性は、対応する属性名を XML に表示するように指定します。 規則では、この文字列は、最初の文字が小文字であることを除きプロパティ名と同一です。
 
-既定では、" **表現** " 属性は "属性" に設定されます。 **表現**が要素に設定されている場合は、XML に子ノードが作成されます。 [ **表現** ] が [無視] に設定されている場合、プロパティはシリアル化されません。
+既定では、" **表現** " 属性は "属性" に設定されます。 **表現** が要素に設定されている場合は、XML に子ノードが作成されます。 [ **表現** ] が [無視] に設定されている場合、プロパティはシリアル化されません。
 
-**IsMonikerKey**属性と**IsMonikerQualifier**属性は、親クラスのインスタンスを識別する役割をプロパティに与えます。 クラスによって定義または継承されている1つのプロパティに対して、 **IsMonikerKey** を true に設定できます。 この属性は、親クラスの個別のインスタンスを識別します。 `IsMonikerKey` に設定するプロパティは通常、名前またはその他のキー識別子です。 たとえば `Name` 文字列プロパティは、NameElement およびその派生クラスのモニカー キーです。 ユーザーがモデルをファイルに保存する場合、この属性には、埋め込みリレーションシップ ツリーの兄弟間で固有な各インスタンスの値が含まれている必要があります。
+**IsMonikerKey** 属性と **IsMonikerQualifier** 属性は、親クラスのインスタンスを識別する役割をプロパティに与えます。 クラスによって定義または継承されている1つのプロパティに対して、 **IsMonikerKey** を true に設定できます。 この属性は、親クラスの個別のインスタンスを識別します。 `IsMonikerKey` に設定するプロパティは通常、名前またはその他のキー識別子です。 たとえば `Name` 文字列プロパティは、NameElement およびその派生クラスのモニカー キーです。 ユーザーがモデルをファイルに保存する場合、この属性には、埋め込みリレーションシップ ツリーの兄弟間で固有な各インスタンスの値が含まれている必要があります。
 
 シリアル化モデル ファイルでは、要素の完全なモニカーはモデル ルートから埋め込みリレーションシップ ツリーへのパスであり、各ポイントでモニカー キーが引用符で囲まれています。 たとえば、InPort は Component に埋め込まれており、Component はモデル ルートに埋め込まれています。 したがって有効なモニカーは次のようになります。
 
@@ -410,11 +412,11 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 シリアル化モデル ファイル内では、(埋め込みリレーションシップと参照リレーションシップの両方の) リンクは、リレーションシップのソース エンドの子ノードによって表されます。 埋め込みリレーションシップの場合、子ノードにはサブツリーが含まれています。 参照リレーションシップの場合、子ノードにはツリーの別の部分を参照するモニカーが含まれています。
 
-**Xmlrelationshipdata**属性の**xmlrelationshipdata**属性は、子ノードがソース要素内でどのように入れ子になっているかを正確に定義します。 ドメインクラスのソースであるすべてのリレーションシップには、1つの **Xmlrelationshipdata** 属性があります。
+**Xmlrelationshipdata** 属性の **xmlrelationshipdata** 属性は、子ノードがソース要素内でどのように入れ子になっているかを正確に定義します。 ドメインクラスのソースであるすべてのリレーションシップには、1つの **Xmlrelationshipdata** 属性があります。
 
-**Domainrelationshipmoniker**属性は、クラスのソースとなるリレーションシップの1つを識別します。
+**Domainrelationshipmoniker** 属性は、クラスのソースとなるリレーションシップの1つを識別します。
 
-**Roleelementname**属性は、シリアル化されたデータの子ノードを囲む XML タグ名を指定します。
+**Roleelementname** 属性は、シリアル化されたデータの子ノードを囲む XML タグ名を指定します。
 
 たとえば DslDefinition.dsl ファイルには次のコードが含まれています。
 
@@ -438,7 +440,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
    </ports> ...
 ```
 
-**Usefullform**属性が true に設定されている場合は、入れ子になったレイヤーが追加されます。 このレイヤーはリレーションシップ自体を表します。 リレーションシップにプロパティが含まれている場合、この属性を true に設定する必要があります。
+**Usefullform** 属性が true に設定されている場合は、入れ子になったレイヤーが追加されます。 このレイヤーはリレーションシップ自体を表します。 リレーションシップにプロパティが含まれている場合、この属性を true に設定する必要があります。
 
 ```xml
 <XmlClassData ElementName="outPort">
@@ -465,7 +467,7 @@ Index ノードの下のクラス モニカーは、受け入れ可能な要素�
 
 (Connection リレーションシップには、要素と属性の名前を指定する独自の XML クラス データがあります。)
 
-**Omitelement**属性が true に設定されている場合、リレーションシップロール名は省略されます。これにより、シリアル化されたファイルがでされ、2つのクラスに複数のリレーションシップがない場合は、明確になります。 次に例を示します。
+**Omitelement** 属性が true に設定されている場合、リレーションシップロール名は省略されます。これにより、シリアル化されたファイルがでされ、2つのクラスに複数のリレーションシップがない場合は、明確になります。 次に例を示します。
 
 ```xml
 <component name="Component3">
@@ -480,7 +482,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
 
 - **Dsl** は、rootclass ノードおよび図のクラスです。 DomainClass、DomainRelationship、およびその他の要素は `Dsl` の下に埋め込まれています。
 
-- **クラス** は、ドメイン固有言語と domainclass 間のリレーションシップの **roleelementname** です。
+- **クラス** は Domain-Specific 言語と domainclass の間のリレーションシップの **roleelementname** です。
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -488,7 +490,7 @@ DslDefinition.dsl ファイル自体がシリアル化ファイルであり、�
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- **Xmlserializationbehavior**属性が属性の下に埋め込まれ `Dsl` ていますが、 **omitelement**属性が埋め込みリレーションシップに対して設定されています。 したがって、その間に `RoleElementName` 属性がありません。 これに対して、 **Classdata** 属性は、 `RoleElementName` **xmlserializationbehavior** 属性と **xmlserializationbehavior** 属性の間の埋め込みリレーションシップの属性です。
+- **Xmlserializationbehavior** 属性が属性の下に埋め込まれ `Dsl` ていますが、 **omitelement** 属性が埋め込みリレーションシップに対して設定されています。 したがって、その間に `RoleElementName` 属性がありません。 これに対して、 **Classdata** 属性は、 `RoleElementName` **xmlserializationbehavior** 属性と **xmlserializationbehavior** 属性の間の埋め込みリレーションシップの属性です。
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -579,6 +581,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 ## <a name="see-also"></a>関連項目
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))
 - [方法: ドメイン固有言語を定義する](../modeling/how-to-define-a-domain-specific-language.md)
 - [モデル、クラス、およびリレーションシップについて](../modeling/understanding-models-classes-and-relationships.md)

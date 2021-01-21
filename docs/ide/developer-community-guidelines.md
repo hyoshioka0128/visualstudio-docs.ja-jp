@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 615c8f39216ee2500161fa3aa1b3fe2f3e4386fa
+ms.openlocfilehash: 3e30dcb6a9d65cb562851ed90e350530759975d2
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87972474"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668561"
 ---
 # <a name="developer-community-guidelines"></a>開発者コミュニティのガイドライン
 
@@ -21,7 +21,7 @@ ms.locfileid: "87972474"
 
 ## <a name="submitting-problems-and-suggestions"></a>問題と提案の送信
 
-[Visual Studio Developer Community](https://developercommunity.visualstudio.com/) では、Visual Studio に関するイシューと機能の提案を追跡できます。
+[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) では、Visual Studio に関するイシューと機能の提案を追跡できます。
 
 ### <a name="before-submitting-an-issue"></a>イシューを送信する前に
 
@@ -42,7 +42,7 @@ Visual Studio Developer Community でイシューを検索して、それがま�
 - 各イシューには、次の手順を含めます。
 
   - 再現可能な手順 (1... 2... 3...)、および想定したことと経験したことの比較。
-  - 画像、アニメーション、またはビデオへのリンク。 画像とアニメーションは再現手順を示していますが、それらを_置き換えないでください_。
+  - 画像、アニメーション、またはビデオへのリンク。 画像とアニメーションは再現手順を示していますが、それらを _置き換えないでください_。
   - 必要に応じて、イシュー、またはコード リポジトリへのリンクを示すコード スニペット。これを使用すると、マシンにプルして、イシューを簡単に再作成できます。
 
 - 次の手順を必ず実行してください。
@@ -57,13 +57,15 @@ Visual Studio Developer Community でイシューを検索して、それがま�
 
 イシューのトリアージは、複数の手順から成るプロセスであり、機能チーム内で共同作業によって実行されます。 トリアージには通常 1 週間かかりますが、それ以上かかる場合もあります。 トリアージの目的は、イシューのその後の状況について、明確に把握できるようにすることです。 たとえば、トリアージを行った後に、イシューに対して修正が計画されているのか、コミュニティからのフィードバックを待っているのかがわかります。
 
-問題を報告した後は、提出した問題がライフサイクルのどの段階にあるかが状態で示されます。 Visual Studio 製品チームがフィードバックを検討して、適切な状態に設定します。 [問題の状態とよくあるご質問](https://docs.microsoft.com/visualstudio/ide/report-a-problem)に関する記事を参照して、問題の報告の進行状況を追跡します。
+問題を報告した後は、提出した問題がライフサイクルのどの段階にあるかが状態で示されます。 Visual Studio 製品チームがフィードバックを検討して、適切な状態に設定します。 [問題の状態とよくあるご質問](./report-a-problem.md)に関する記事を参照して、問題の報告の進行状況を追跡します。
+
+### <a name="prioritizing-which-issues-to-fix"></a>修正する問題の優先順位付け
+
+報告された問題をすべて修正することはできません。 修正にコストがかかりすぎたり、他の機能領域でバグ再発を引き起こしたり、影響が小さすぎたりするものもあります。 イシュー レポートの送信に時間を費やしたならば、このような対応を残念に思われることは承知しています。 Microsoft のだれもが、このプロジェクトでも、携わった他のプロジェクトでも、同じ経験があります。 問題が解決されたものの、Microsoft が提示した理由に満足できない場合は、ユースケースを明確にして、別のパスでこのイシューをもう一度アクティブにするよう要求することができます。 このときに、Microsoft からさらに情報が求められることがあるかもしれません。
+
+### <a name="missing-important-information"></a>重要な情報が含まれていない
 
 Microsoft では、イシューに重要な情報が含まれていない場合、"_詳細情報が必要_" 状態を割り当てます。 必要な特定の情報と合わせてイシューについてコメントし、ユーザーは電子メール通知を受け取ります。 7 日以内に情報を受信しない場合は、ユーザーにリマインダーを送信します。 その後、14 日間の非アクティブ状態を経て、チケットを終了します。
-
-### <a name="wont-fix-bugs"></a>バグが修正されない場合
-
-負のコスト効果バランスがある場合は、一部のバグを終了します。 たとえば、修正プログラムが非常に複雑であり、多くのユーザーに回帰のリスクがある場合は、修正が適切でない可能性があります。 このようにバグを終了する場合は、その理由について説明を行います。
 
 ### <a name="other-product"></a>その他の製品
 
@@ -78,8 +80,8 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 #### <a name="additional-information"></a>追加情報
 
-- [パフォーマンスの問題が修正される可能性を高める方法](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [MSBuild に関する問題のトラブルシューティングとログ記録](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [パフォーマンスの問題が修正される可能性を高める方法](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [MSBuild に関する問題のトラブルシューティングとログ記録](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>機能の提案の管理
 
@@ -91,7 +93,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 - 一般的な製品の方向性と一致しているか?
 - ビルドと管理を許容できるか?
-- 全体的な[ロードマップ](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap)戦略に合っているか?
+- 全体的な[ロードマップ](/visualstudio/productinfo/vs-roadmap)戦略に合っているか?
 - 投票やコメントが示すとおりのコミュニティ サポートが得られるか?
 - コミュニティ サポートが低くても、Microsoft がそれを気に入るか?
 
@@ -99,7 +101,7 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 提案が製品の全体的な方向性と一致しない場合は、"*スコープ外*" として閉じます。 たとえば、Visual Studio ファミリ製品の他のメンバーに同様の投資がある場合があります。 または、提案された機能は少数の人にのみ関連しているため、拡張機能を提供する方が適していることがあります。
 
-[提案の状態とよくあるご質問](https://docs.microsoft.com/visualstudio/ide/report-a-problem)に関する記事を参照して、機能の提案の進行状況を追跡します。
+[提案の状態とよくあるご質問](./report-a-problem.md)に関する記事を参照して、機能の提案の進行状況を追跡します。
 
 ## <a name="discussion-etiquette"></a>ディスカッションのエチケット
 
@@ -111,8 +113,8 @@ Microsoft では、イシューに重要な情報が含まれていない場合�
 
 ## <a name="data-privacy"></a>データのプライバシー
 
-コメントと返信は公開されますが、添付ファイルはすべて、Microsoft とのみプライベートに共有されます。 この可視性は、他のユーザーによって発見されたイシューや解決策をコミュニティ全体で見ることができるという利点があります。 自分のデータや ID のプライバシーについて懸念がある場合は、いくつかのオプションがあります。 詳細については、「[開発者コミュニティのデータのプライバシー](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy)」を参照してください。
+コメントと返信は公開されますが、添付ファイルはすべて、Microsoft とのみプライベートに共有されます。 この可視性は、他のユーザーによって発見されたイシューや解決策をコミュニティ全体で見ることができるという利点があります。 自分のデータや ID のプライバシーについて懸念がある場合は、いくつかのオプションがあります。 詳細については、「[開発者コミュニティのデータのプライバシー](./developer-community-privacy.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-問題の報告、機能の提案、または既存のチケットを使用した閲覧を行うには、[Visual Studio Developer Community](https://developercommunity.visualstudio.com/) にアクセスしてください。 それではお楽しみください。
+問題の報告、機能の提案、または既存のチケットを使用した閲覧を行うには、[Visual Studio Developer Community](https://aka.ms/feedback/suggest?space=8) にアクセスしてください。 それではお楽しみください。

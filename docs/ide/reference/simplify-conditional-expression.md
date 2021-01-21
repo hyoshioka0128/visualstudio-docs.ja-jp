@@ -1,5 +1,7 @@
 ---
 title: 条件式を簡略化する
+description: '[クイック アクションとリファクタリング] メニューを使用して条件式を簡略化する方法を説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -9,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0571c01217441d4a39fbfe6fb58ccfe95fd0c5a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: dd7b3f29e804ec5e925c34f7994164d5a8465a50
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290956"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480214"
 ---
 # <a name="simplify-conditional-expression-refactoring"></a>条件式を簡略化するリファクタリング
 
@@ -22,7 +24,7 @@ ms.locfileid: "85290956"
 
 - C#
 
-**概要:** [条件式](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator)を簡略化できます。
+**概要:** [条件式](/dotnet/csharp/language-reference/operators/conditional-operator)を簡略化できます。
 
 **条件:** 不要なコードを削除してわかりやすくしたいとき。
 

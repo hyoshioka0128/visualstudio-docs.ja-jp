@@ -1,31 +1,31 @@
 ---
-title: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション | Microsoft Docs
+title: MPSA での Visual Studio サブスクリプション | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: conceptual
-description: マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
-ms.openlocfilehash: 90bfb27fcb80910f6add41c30d4c03ece1520ef4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+description: マイクロソフト製品とサービス契約 (MPSA) での Visual Studio サブスクリプションの管理について説明します
+ms.openlocfilehash: 388c847ce19ca7136efb7757fbc87bffdc35a673
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801465"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903799"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 MPSA プログラムを使用して Visual Studio サブスクリプションを購入した場合、Visual Studio サブスクリプション管理者になってサブスクリプションをユーザーに割り当てる前に、いくつか注意が必要な点があります。 管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)に直接進むことができます。
 
-MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム ライセンス サービス センター (VLSC) と同様の機能をサポートする[ビジネスセンター](https://businessaccount.microsoft.com/Customer)と呼ばれる新しいポータルで管理することになりました。 たとえば、ライセンスの概要、注文、ダウンロード、キー、ユーザーなどが表示されます。ただし、MPSA の Visual Studio サブスクリプションの機能は、クラウド サービスとよく似ています。 ビジネス センターでは、Microsoft アカウント (MSA) の代わりに職場アカウントを使用してサインインすることもできます。 組織で Microsoft 365 や Azure Active Directory などのクラウド サービスを使用していて、メール アドレスがこれら 2 つのサービスのいずれかの一部である場合、それは既に職場アカウントです。 そのため、既存のパスワードを使用してビジネス センターに登録することができます。 組織がクラウド サービスを使用しておらず、メール アドレスが職場アカウントではない場合でも、そのメール アドレスで問題なくビジネス センターに登録できます。
+MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム ライセンス サービス センター (VLSC) と同様の機能をサポートする[ビジネス センター](https://businessaccount.microsoft.com/Customer)と呼ばれるポータルで管理します。 たとえば、ライセンスの概要、注文、ダウンロード、キー、ユーザーなどが表示されます。ただし、MPSA の Visual Studio サブスクリプションの機能は、クラウド サービスとよく似ています。 ビジネス センターでは、Microsoft アカウント (MSA) の代わりに職場アカウントを使用してサインインすることもできます。 組織で Office 365 や Azure Active Directory などのクラウド サービスを使用していて、これら 2 つのサービスのいずれかにメール アドレスが使用されている場合、そのメール アドレスは職場アカウントです。 そのため、既存のパスワードを使用してビジネス センターに登録することができます。 組織がクラウド サービスを使用しておらず、メール アドレスが職場アカウントではない場合でも、そのメール アドレスで問題なくビジネス センターに登録できます。
 
-また、Visual Studio サブスクリプション管理者になると、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)でサブスクリプションをサブスクライバーに割り当てることができます。 MPSA では、Visual Studio サブスクリプションをそれぞれの管理ポータル (Visual Studio サブスクリプション管理ポータル) にプロビジョニングする必要があります。 この場合、購入アカウントをテナント (つまり contoso.onmicrosoft.com) に関連付ける必要があります。
+また、Visual Studio サブスクリプション管理者になると、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)でサブスクリプションを割り当てることができます。MPSA では、Visual Studio サブスクリプションをそれぞれの管理ポータル (Visual Studio サブスクリプション管理ポータル) にプロビジョニングする必要があります。 この場合、購入アカウントをテナント (つまり contoso.onmicrosoft.com) に関連付ける必要があります。
 
-2 種類のテナント (管理対象のテナントと管理対象外のテナント) がある点に注意してください。 管理対象のテナントとは、既に組織内の管理者によって管理されているテナントを指します。
+2 種類のテナント (マネージド テナントとアンマネージド テナント) があることに注意してください。 管理対象のテナントとは、既に組織内の管理者によって管理されているテナントを指します。
 
-管理対象外のテナントとは、管理者が割り当てられていないテナントであり、Microsoft 365 などのオンライン サービスには使用できません。 管理対象外のテナントは、職場アカウントではないメール アドレスを使用してビジネス センターに登録するときにも作成されます。 ビジネス センターに登録する際にパスワードを作成するように求められた場合、そのメール アドレスが職場アカウントではなく、管理対象外のテナントが作成されたことを示します。
+アンマネージド テナントとは、管理者が割り当てられていないテナントであり、Office 365 などのオンライン サービスには使用できません。 アンマネージド テナントは、職場アカウントではないメール アドレスを使用してビジネス センターに登録するときにも作成されます。 ビジネス センターに登録するときにパスワードを作成するように求められた場合、そのメール アドレスは職場アカウント内にはなく、アンマネージド テナントが作成されたことを示します。
 
-テナントの関連付けを完了する前に、Visual Studio サブスクリプション管理者になるために必要な要件と手順がいくつかあります。
+テナントの関連付けを完了する前に、Visual Studio サブスクリプション管理者になるための要件と手順がいくつかあります。
 
 ## <a name="pre-tenant-association-managed-tenant"></a>テナントの関連付け前 (管理対象のテナント)
 - ビジネス センターの登録ユーザーである必要があります。
@@ -39,14 +39,14 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 
 上記の条件を満たしたら、以下の手順に従って購入アカウントをテナントに関連付けることができます。
 1. [ビジネス センター](https://businessaccount.microsoft.com/Customer)にログインします。
-2. **[アカウント]** タブを選択し、 **[Associate Domains]\(ドメインの関連付け\)** を選択します。
+2. **[アカウント]** タブをクリックし、 **[Associate Domains]\(ドメインの関連付け\)** を選択します。
 3. (購入アカウントを複数持っている場合は) **[Purchasing Account]\(購入アカウント\)** を選択します。
 4. **テナント** (つまり contoso.onmicrosoft.com) を選択します。
-5. **[Associate Domain]\(ドメインの関連付け\)** を選択します。
+5. **[Associate Domain]\(ドメインの関連付け\)** をクリックします。
 
 関連付けが行われると、条件を満たすすべてのユーザーは、通常は数分で Visual Studio のサブスクリプション管理者としてプロビジョニングされます。 ただし、最大 24 時間かかることもあります。 テナントがプロビジョニングされると、Visual Studio サブスクリプション管理ポータルにアクセスできるようになります。 24 時間よりも長くかかる場合は、次の手順に従って MPSA サポートにお問い合わせください。
 1. <https://www.microsoft.com/licensing/mpsa/default> に接続します。
-2. ページの上部にある **[詳細]** メニューを選択します。 
+2. ページの上部にある **[詳細]** メニューをクリックします。 
 3. **[サポート]** を選択します。
 4. **[Licensing support]\(ライセンス サポート\)** を選択します。
 5. 自分のニーズに最適なサポート オプションを選択します。 
@@ -55,18 +55,18 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 > 手順 2 と 5 (関連付け後) の条件を満たした新規ユーザーがいる場合は、MPSA サポートに連絡する必要があります。 MPSA サポートは、新しい Visual Studio サブスクリプション管理者のプロビジョニングを支援します。
 
 ## <a name="tenant-association-unmanaged"></a>テナントの関連付け (管理対象外)
-前述したように、職場アカウントではない (Azure Active Directory "Azure AD" に登録されていない) メール アドレスでビジネス センターに登録した場合、テナントの関連付け方法の一部が異なります。 "ドメインの引き継ぎ" と呼ばれるプロセスを実行する必要があります。 このプロセスでは、自分をグローバル管理者にして、テナントを管理対象外から管理対象に変更します。
+前述したように、職場アカウントではない (Azure Active Directory "Azure AD" に登録されていない) メール アドレスでビジネス センターに登録した場合、テナントの関連付け方法の一部が異なります。 "ドメインの引き継ぎ" と呼ばれるプロセスを実行する必要があります。 このプロセスでは、自分をグローバル管理者にして、テナントをアンマネージドからマネージドに変更します。
 
-このプロセスの詳細については、「[クイック スタート ガイド](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)」を参照してください。 ドメインの引き継ぎ手順が説明されている「*オンライン サービスを設定し使用する*」というガイドをダウンロードしてください。 このプロセスを完了すると、購入アカウントもテナントに関連付けられます。
+このプロセスの詳細については、「[クイック スタート ガイド](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)」を参照してください。 ドメインの引き継ぎ手順が説明されている「 *オンライン サービスを設定し使用する* 」というガイドをダウンロードしてください。 このプロセスを完了すると、購入アカウントもテナントに関連付けられます。
 
 > [!NOTE]
 > ドメインの引き継ぎプロセスを完了したら、「テナントの関連付け前 (管理対象のテナント)」セクションの 5 つの手順の条件を満たす必要があります。 条件を満たした後に必要な手順は、MPSA サポートに連絡して追加の Visual Studio サブスクリプション管理者をプロビジョニングすることのみです。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。

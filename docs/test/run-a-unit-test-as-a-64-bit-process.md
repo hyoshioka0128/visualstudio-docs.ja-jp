@@ -1,5 +1,7 @@
 ---
 title: 64 ビット プロセスとして単体テストを実行する
+description: 64 ビット プロセスとして単体テストを実行し、コード カバレッジ情報を取得する方法について説明します。 64 ビットのコンピューターが必要です。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 3c5cb51232457a43200c8a71ace51cc4b8a63e02
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88507987"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329069"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>64 ビット プロセスとして単体テストを実行する
 
@@ -26,11 +28,11 @@ ms.locfileid: "88507987"
 1. コードまたはテストを 32 ビット/x86 としてコンパイルされたが、それを 64 ビット プロセスとして実行する場合、**任意の CPU** として再コンパイルします。
 
    ::: moniker range="vs-2017"
-   あるいは、Visual Studio 2017 では **64 ビット**としてプロジェクトをコンパイルすることもできます。
+   あるいは、Visual Studio 2017 では **64 ビット** としてプロジェクトをコンパイルすることもできます。
    ::: moniker-end
 
     > [!TIP]
-    > 柔軟性を最大限に高めるには、テスト プロジェクトを**任意の CPU** 構成でコンパイルします。 これにより、32 ビット エージェントと 64 ビット エージェントの両方で実行できます。 64 ビットでのみサポートされているコードを呼び出さない限り、**64 ビット**でテスト プロジェクトをコンパイルすることには利点がありません。
+    > 柔軟性を最大限に高めるには、テスト プロジェクトを **任意の CPU** 構成でコンパイルします。 これにより、32 ビット エージェントと 64 ビット エージェントの両方で実行できます。 64 ビットでのみサポートされているコードを呼び出さない限り、**64 ビット** でテスト プロジェクトをコンパイルすることには利点がありません。
 
 2. 64 ビット プロセスとして実行されるように単体テストを設定します。
 

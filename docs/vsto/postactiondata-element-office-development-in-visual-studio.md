@@ -1,5 +1,6 @@
 ---
-title: '&lt;postActionData &gt; 要素 (Visual Studio での Office 開発)'
+title: '&lt;postActionData &gt; 要素 (Office 開発)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 104af55fdc11b6afae757eff95a964dad83418a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541870"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583724"
 ---
-# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postActionData &gt; 要素 (Visual Studio での Office 開発)
+# <a name="ltpostactiondatagt-element-office-development"></a>&lt;postActionData &gt; 要素 (Office 開発)
   `postActionData` 名前空間の `vstav3` 要素は、Office ソリューションをインストールした後に実行されるすべての配置後アクションに関連付けられているデータを指定します。
 
 ## <a name="syntax"></a>構文

@@ -1,5 +1,7 @@
 ---
 title: '&lt;customErrorReporting &gt; 要素 (ClickOnce 配置) |Microsoft Docs'
+description: CustomErrorReporting 要素は、例外スタックを示すエラーダイアログボックスの代わりに、エラーが発生した場合に表示する URI を指定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d42bd1f7304d9f50b6334d9ac8ddd4f626605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
+ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900372"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94382521"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting &gt; 要素 (ClickOnce 配置)
 エラー発生時に表示する URI を指定します。
@@ -32,7 +34,7 @@ ms.locfileid: "62900372"
 />
 ```
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  この要素は省略可能です。 このプロパティを指定しないと、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 例外スタックを示すエラーダイアログボックスが表示されます。 `customErrorReporting`要素が存在する場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はパラメーターで示された URI を代わりに表示し `uri` ます。 ターゲット URI には、外部例外クラス、内部例外クラス、および内部例外メッセージがパラメーターとして含まれます。
 
  この要素を使用して、エラー報告機能をアプリケーションに追加します。 生成された URI にはエラーの種類に関する情報が含まれているため、Web サイトはその情報を解析して、適切なトラブルシューティング画面などの表示を行うことができます。
@@ -47,5 +49,5 @@ Example Generated Error:
 http://www.contoso.com/applications/error.asp? outer=System.Deployment.Application.InvalidDeploymentException&&inner=System.Deployment.Application.InvalidDeploymentException&&msg=The%20application%20manifest%20is%20signed,%20but%20the%20deployment%20manifest%20is%20unsigned.%20Both%20manifests%20must%20be%20either%20signed%20or%20unsigned.
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)

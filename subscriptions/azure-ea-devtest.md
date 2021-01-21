@@ -1,18 +1,18 @@
 ---
 title: Azure Enterprise Agreement DevTest オファー
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/23/2020
+ms.date: 10/26/2020
 ms.topic: how-to
 description: Enterprise Agreement をご利用のお客様に提供される Azure DevTest の特別価格を利用する方法について説明します。
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903138"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904459"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise Agreement DevTest オファー
 
@@ -42,10 +42,10 @@ Enterprise Agreement の一部であるこのオファーは、Microsoft Azure �
 0. **[購入]** をクリックします。  (このオファーの場合、実際には何も購入されません)。
 
 ## <a name="see-also"></a>参照
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次のステップ
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
@@ -54,6 +54,3 @@ Visual Studio サブスクリプションの管理に関する詳細情報をご
 - [サブスクリプションの編集](edit-license.md)
 - [サブスクリプションの削除](delete-license.md)
 - [最大使用量の確認](maximum-usage.md)
-
-
-

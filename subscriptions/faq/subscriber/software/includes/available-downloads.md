@@ -9,11 +9,11 @@ ms.author: cabuschl
 ms.date: 4/3/2020
 ms.faqid: q2_1
 ms.openlocfilehash: e8e7d1f5667b5acd183017ce6e17818b73cade2c
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81385891"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "91838255"
 ---
 ## <a name="what-software-downloads-are-available"></a>使用可能なソフトウェア ダウンロードにはどのようなものがありますか?
 

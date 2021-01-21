@@ -1,5 +1,7 @@
 ---
 title: 単一および複数のタブのビュー |Microsoft Docs
+description: コードエディターウィンドウやフォームデザイナーなど、複数のタブから成るビューをエディターで実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c308b4d6c7b90456255019ef57c6b9d544aefc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94081af0bfdb85793c092f76d28758f220f4628b
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699990"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715211"
 ---
 # <a name="single-and-multi-tab-views"></a>単一タブと複数タブのビュー
 エディターでは、さまざまな種類のビューを作成できます。 例として、コードエディターウィンドウがあり、もう1つはフォームデザイナーです。
@@ -45,7 +47,7 @@ ms.locfileid: "80699990"
 |`LOGVIEWID_Primary`|エディターファクトリの既定/プライマリビュー。<br /><br /> すべてのエディターファクトリは、この値をサポートする必要があります。 このビューでは、物理ビュー文字列として NULL 文字列を使用する必要があります。 少なくとも1つの論理ビューをこの値に設定する必要があります。|
 |`LOGVIEWID_Debugging`|デバッグビュー。 通常、は `LOGVIEWID_Debugging` と同じビューにマップさ `LOGVIEWID_Code` れます。|
 |`LOGVIEWID_Code`|[ **コードの表示** ] コマンドによって起動されたビュー。|
-|`LOGVIEWID_Designer`|**フォームの表示**コマンドによって起動されたビュー。|
+|`LOGVIEWID_Designer`|**フォームの表示** コマンドによって起動されたビュー。|
 |`LOGVIEWID_TextView`|テキストエディタービュー。 これは、にアクセスするためのを返すビューです <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。|
 |`LOGVIEWID_UserChooseView`|使用するビューを選択するようにユーザーに求めます。|
 |`LOGVIEWID_ProjectSpecificEditor`|[ファイルを **開くアプリケーション** の選択] ダイアログボックスで<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> ユーザーが "(プロジェクトの既定のエディター)" エントリを選択したとき。|
@@ -112,7 +114,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [複数のドキュメント ビューのサポート](../extensibility/supporting-multiple-document-views.md)
 - [方法: ビューをドキュメントデータに添付する](../extensibility/how-to-attach-views-to-document-data.md)
 - [カスタム エディターとデザイナーの作成](../extensibility/creating-custom-editors-and-designers.md)

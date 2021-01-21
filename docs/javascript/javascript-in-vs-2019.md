@@ -1,5 +1,8 @@
 ---
 title: Visual Studio 2019 の JavaScript および TypeScript
+description: JavaScript を直接使用する場合と、TypeScript プログラミング言語を使用する場合の両方について、Visual Studio 2019 が提供するさまざまな JavaScript 開発のサポートを説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 03/16/2020
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -11,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: a4cdb685a11df8e013025fd91dd8869fe5851d93
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.openlocfilehash: 5063e0fe369615af51db9da3016d2afef49789ac
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87453676"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947766"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2019"></a>Visual Studio 2019 の JavaScript および TypeScript
 

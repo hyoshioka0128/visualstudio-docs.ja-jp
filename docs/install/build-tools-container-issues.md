@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cf8473a8de1c9afa5ed73ce9dcb6b9b8462e6548
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77611130"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668400"
 ---
 # <a name="known-issues-for-containers"></a>コンテナーの既知の問題
 
@@ -50,7 +50,7 @@ Windows コンテナーに Visual Studio Build Tools をインストールする
 
 ## <a name="build-tools-container"></a>ビルド ツール コンテナー
 
-ビルド ツール コンテナーを使用すると、以下の既知の問題が発生する場合があります。 問題が修正されているどうか、その他の既知の問題があるかどうかについては、 https://developercommunity.visualstudio.com を参照してください。
+ビルド ツール コンテナーを使用すると、以下の既知の問題が発生する場合があります。 問題が修正されているどうか、その他の既知の問題があるかどうかについては、[Developer Community](https://aka.ms/feedback/suggest?space=8) を参照してください。
 
 * IntelliTrace はコンテナー内の[一部のシナリオ](https://github.com/Microsoft/vstest/issues/940)では動作しない場合があります。
 * 以前のバージョンの Docker for Windows では、コンテナー イメージの既定のサイズは 20 GB のみで、Build Tools に適合しません。 127 GB 以上に[イメージのサイズを変更する手順](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits)に従ってください。

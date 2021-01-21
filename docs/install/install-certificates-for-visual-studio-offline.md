@@ -1,8 +1,8 @@
 ---
-title: オフライン インストールに必要な証明書をインストールする
+title: オフライン インストールのための証明書をインストールする
 description: Visual Studio オフライン インストール用の証明書をインストールする方法を説明します。
 ms.date: 08/08/2019
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 525294d2cf3c33dfdb1c5796dabf1c2a7a78bf91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
+ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418809"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92750175"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -38,7 +38,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 ネットワーク レイアウトを作成するときに、必要な証明書が Certificates フォルダーにダウンロードされます。 各証明書ファイルをダブルクリックし、証明書マネージャー ウィザードをクリックすることで証明書を手動でインストールできます。 パスワードを求められたら、空のままにしてください。
 
-**更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
+**更新** : Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
+   **更新** : Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -117,9 +117,9 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
    あるいは、次のコマンドによって、certutil.exe (Windows に付属している) を使用するバッチ ファイルを作成します。
    
       ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
-   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
    ```
@@ -150,7 +150,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
   * ルート証明書: **Microsoft ルート証明機関**
     * 必須。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
-**更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
+**更新** : Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
 
 ::: moniker-end
 

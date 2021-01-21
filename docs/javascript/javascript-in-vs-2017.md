@@ -1,5 +1,7 @@
 ---
 title: JavaScript
+description: Visual Studio IDE で JavaScript コードを記述する場合に、ほとんどの標準的な編集補助機能 (コード スニペット、IntelliSense など) を使用できることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/15/2019
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -12,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d71b2b20d0723b1809ae78717b64ee43ae2b6b
+ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649629"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93414543"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 の JavaScript
 
@@ -35,7 +37,7 @@ JavaScript は Visual Studio の第一級の言語です。 Visual Studio IDE �
 JavaScript はプログラミング言語としてまだ進化しています。その更新は [TC39](https://www.ecma-international.org/memento/tc39-m.htm) という委員会で行われます。
 ECMAScript 2015 は JavaScript 言語を更新したものであり、新しい便利な構文と機能を提供します。 ES6 機能の詳細については、[こちら](http://es6-features.org/#Constants)の参照サイトで確認してください。
 
-ECMAScript 2015 のサポートに加え、Visual Studio では ECMAScript 2016 もサポートされ、今後リリースされるバージョンの ECMAScript のサポートも予定されています。 TC39 および ECMAScript の最新の変更に対応するために、[github](https://github.com/tc39) での作業をフォローしてください。
+ECMAScript 2015 のサポートに加え、Visual Studio では ECMAScript 2016 もサポートされ、今後リリースされるバージョンの ECMAScript のサポートも予定されています。 TC39 および ECMAScript の最新の変更に対応するために、[GitHub](https://github.com/tc39) での作業をフォローしてください。
 
 ### <a name="transpile-javascript"></a>JavaScript のトランスパイル
 
@@ -116,7 +118,7 @@ exports.default = Subscription_1.Subscription;
 
 ## <a name="better-intellisense"></a>IntelliSense の向上
 
-[!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] の JavaScript IntelliSense では、パラメーターおよびメンバー リストにさらに多くの情報が表示されるようになります。 この新しい情報は TypeScript 言語サービスで提供されます。この言語サービスでは、コードをよりよく理解するためにバックグラウンドで静的分析が使用されます。 新しい IntelliSense エクスペリエンスとそのしくみの詳細については、[こちら](/visualstudio/ide/javascript-intellisense/)を参照してください。
+[!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] の JavaScript IntelliSense では、パラメーターおよびメンバー リストにさらに多くの情報が表示されるようになります。 この新しい情報は TypeScript 言語サービスで提供されます。この言語サービスでは、コードをよりよく理解するためにバックグラウンドで静的分析が使用されます。 新しい IntelliSense エクスペリエンスとそのしくみの詳細については、[こちら](../ide/javascript-intellisense.md)を参照してください。
 
 ## <a name="jsx-syntax-support"></a><a name="JSX"></a> JSX 構文のサポート
 
@@ -146,7 +148,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 - `package.json` および `bower.json` では、プロジェクトで使用される依存関係がリストされ、既定で自動型取得 (ATA) に含まれます。
 - 最上位レベルの `node_modules` フォルダーにはライブラリ ソース コードが含まれ、そのコンテンツは既定でプロジェクトのコンテキストから除外されます。
-- 他のすべての `.js`、`.jsx`、`.ts`、および `.tsx` ファイルは*独自の*ソース ファイルのいずれかである可能性があり、プロジェクト コンテキストに含める必要があります。
+- 他のすべての `.js`、`.jsx`、`.ts`、および `.tsx` ファイルは *独自の* ソース ファイルのいずれかである可能性があり、プロジェクト コンテキストに含める必要があります。
 
 ほとんどの場合、プロジェクトを開くだけで、既定のプロジェクト構成で優れたエクスペリエンスが得られます。 ただし、大規模なプロジェクトまたはさまざまなフォルダー構造を持つプロジェクトでは、言語サービスをさらに構成し、独自のソース ファイルにのみ、より的確に焦点を合わせることが望ましい場合があります。
 
@@ -241,7 +243,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 
 これまでは、ある時点において IntelliSense のスコープ内にあるファイルを認識するのは非常に複雑な作業でした。 スコープ内にすべてのファイルがあることが望ましい場合もあれば、そうでない場合もあるため、構成が複雑になり、参照管理を手動で行う必要がありました。 今後は、参照管理を考慮する必要がなくなるため、トリプル スラッシュ参照コメントや `_references.js` ファイルが不要になります。
 
-IntelliSense のしくみの詳細については、「[JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense/)」ページを参照してください。
+IntelliSense のしくみの詳細については、「[JavaScript IntelliSense](../ide/javascript-intellisense.md)」ページを参照してください。
 
 ### <a name="vsdoc"></a>VSDoc
 
@@ -250,7 +252,7 @@ IntelliSense のしくみの詳細については、「[JavaScript IntelliSense]
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 拡張子
 
-これまでは、サード パーティ製ライブラリのカスタムの完了結果を追加できるようにする [IntelliSense 拡張子](https://msdn.microsoft.com/library/hh874692.aspx)を作成できました。
+これまでは、サード パーティ製ライブラリのカスタムの完了結果を追加できるようにする [IntelliSense 拡張子](/previous-versions/visualstudio/visual-studio-2015/ide/extending-javascript-intellisense)を作成できました。
 これらの拡張子は作成が非常に難しく、インストールと参照が煩雑だったため、今後は新しい言語サービスでこれらのファイルがサポートされなくなります。
 より簡単な代替手段として、TypeScript 定義ファイルを作成することで、古い `.intellisense.js` 拡張子と同じ IntelliSense の利点を得ることができます。
 宣言 (`.d.ts`) ファイルの作成の詳細については、[こちら](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)を参照してください。

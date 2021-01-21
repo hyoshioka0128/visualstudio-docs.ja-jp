@@ -1,5 +1,7 @@
 ---
 title: IntelliSenseHostFlags |Microsoft Docs
+description: IntelliSenseHostFlags 列挙体は、IntelliSense ホストフラグを指定します。 この記事では、列挙値について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0df05e7363db01bd4f16fee5d75141dc93df1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b206cc4aa7c1ff388d6868fa8a0533d15da094ff
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710269"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487505"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 IntelliSense ホストフラグを指定します。
@@ -38,7 +40,7 @@ enum IntellisenseHostFlags
 
 ### <a name="parameters"></a>パラメーター
 
-|メンバー|説明|
+|メンバー|Description|
 |-------------|-----------------|
 |`IHF_READONLYCONTEXT`|コンテキストバッファーは読み取り専用です。|
 |`IHF_NOSEPARATESUBJECT`|件名のテキストはありません。 コンテキストバッファーに IntelliSense-target (を意味します) が含まれてい `!IHF_READONLYCONTEXT` ます。|
@@ -46,7 +48,7 @@ enum IntellisenseHostFlags
 |`IHF_FORCECOMMITTOCONTEXT`|`CanCommitIntoReadOnlyBuffer` と同じ。|
 |`IHF_OVERTYPE`|編集 (件名またはコンテキスト) は、上書きモードで実行する必要があります。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  SingleFileeditor .idl
 
 ## <a name="see-also"></a>関連項目

@@ -1,5 +1,7 @@
 ---
 title: インクリメンタル ビルド | Microsoft Docs
+description: 最新の出力ファイルが実行されないように最適化された MSBuild のインクリメンタル ビルドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7283d67710a3b5b319b2d25a1c5d6535fed83b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 4beb6c676fbd66d7e0d11e4ca1fe2a3fa8188bfe
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633721"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904594"
 ---
 # <a name="incremental-builds"></a>インクリメンタル ビルド
 
@@ -24,7 +26,7 @@ ms.locfileid: "77633721"
 > [!NOTE]
 > MSBuild によって入力ファイルが評価されるときは、現在の実行のリストの内容だけが考慮されます。 前回のビルドからリストが変更されても、ターゲットが自動的に古くなることはありません。
 
-すべての出力項目が最新の状態である場合、MSBuild はターゲットをスキップします。 このターゲットの*インクリメンタル ビルド*により、ビルド速度が大幅に向上します。 一部のファイルだけが最新の状態である場合、MSBuild は最新の項目をスキップしてターゲットを実行するので、すべての項目が最新の状態になります。 このプロセスは、*部分インクリメンタル ビルド*と呼ばれます。
+すべての出力項目が最新の状態である場合、MSBuild はターゲットをスキップします。 このターゲットの *インクリメンタル ビルド* により、ビルド速度が大幅に向上します。 一部のファイルだけが最新の状態である場合、MSBuild は最新の項目をスキップしてターゲットを実行するので、すべての項目が最新の状態になります。 このプロセスは、 *部分インクリメンタル ビルド* と呼ばれます。
 
 一対一の対応関係は、通常は項目の変換によって生成されます。 詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」をご覧ください。
 
@@ -42,7 +44,7 @@ ms.locfileid: "77633721"
 
 ## <a name="output-inference"></a>出力の推論
 
-MSBuild は、ターゲットの `Inputs` 属性と `Outputs` 属性を比較して、ターゲットを実行する必要があるかどうかを判断します。 インクリメンタル ビルドが完了した後に存在するファイル セットが、関連するターゲットが実行されるかどうかにかかわらず、同じままであることが理想的です。 タスクによって作成または変更されるプロパティと項目はビルドに影響する可能性があるため、プロパティと項目に影響するターゲットがスキップされる場合でも MSBuild はそれらの値を推論する必要があります。 このプロセスは、*出力の推論*と呼ばれます。
+MSBuild は、ターゲットの `Inputs` 属性と `Outputs` 属性を比較して、ターゲットを実行する必要があるかどうかを判断します。 インクリメンタル ビルドが完了した後に存在するファイル セットが、関連するターゲットが実行されるかどうかにかかわらず、同じままであることが理想的です。 タスクによって作成または変更されるプロパティと項目はビルドに影響する可能性があるため、プロパティと項目に影響するターゲットがスキップされる場合でも MSBuild はそれらの値を推論する必要があります。 このプロセスは、 *出力の推論* と呼ばれます。
 
 次の 3 つの場合があります。
 
@@ -78,6 +80,6 @@ MSBuild 3.5 以前では、[CreateItem](../msbuild/createitem-task.md) タスク
 
 このコードにより、ターゲットが実行された場合にのみ、CompileRan プロパティが作成され、値 `true` が指定されます。 ターゲットがスキップされた場合、CompileRan は作成されません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ターゲット](../msbuild/msbuild-targets.md)

@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの LinkedIn Learning 特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 04/17/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる LinkedIn Premium サブスクリプションに含まれる LinkedIn Learning 特典について説明します。
-ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: b3c8d0b61dbde3f9e45d6000e1de409255750931
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387136"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537891"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの LinkedIn Learning 特典
 
@@ -27,7 +27,7 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 
 2. [教育] カテゴリで [LinkedIn Learning] タイルを見つけて、 **[コードの取得]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning 特典のタイル](_img/vs-linkedin/vs-linkedin-6-month-tile.png)
+   > ![LinkedIn Learning 特典のタイル](_img/vs-linkedin/vs-linkedin-6-month-tile.png "[コードの取得] をクリックしてコードを要求し、作業を開始します。")
 
 3. LinkedIn アカウントを既に持っていて、自動的にサインインされた場合は、LinkedIn Learning 特典のアクティブ化ページが表示されます。  LinkedIn アカウントを持っているが、自動的にサインインされなかった場合は、ユーザー名とパスワードを入力し、 **[サインイン]** をクリックします。  [この手順](#activate-your-offer)までスキップして、プランをアクティブにしてください。
 
@@ -57,29 +57,29 @@ LinkedIn Premium サブスクリプションと LinkedIn Learning 特典をア�
 ### <a name="activate-your-offer"></a>プランのアクティブ化
 15. これで、LinkedIn アカウントへのサインイン、または新しいアカウントの作成が完了したので、Premium サブスクリプションをアクティブ化し、LinkedIn Learning の利用を開始する準備ができました。  **[Activate your offer]\(プランのアクティブ化\)** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: アクティブ化](_img/vs-linkedin/vs-linkedin-Activate1.png)
+   > ![LinkedIn Learning: アクティブ化](_img/vs-linkedin/vs-linkedin-Activate1.png "学習を開始するには、[Activate your offer]\(プランのアクティブ化\) をクリックしてください。")
 
 16. 関心のあるスキルの探索を開始できます。  お勧め候補の一覧から選択するか、その他のスキルを検索します。あるいは **[スキップ]** をクリックしてスキルの選択は行わずに続行します。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: スキル](_img/vs-linkedin/vs-linkedin-skills.png)
+   > ![LinkedIn Learning: スキル](_img/vs-linkedin/vs-linkedin-skills.png "調べたいスキルを選択します。")
 
 17. Premium サブスクリプション オファーのアクティブ化が正常に行われたので、これで LinkedIn Learning とその他の Premium のすべての特典の使用を開始できます。
    > [!div class="mx-imgBorder"]
-   > ![LinkedIn Learning: ホーム](_img/vs-linkedin/vs-linkedin-learning-home.png)
+   > ![LinkedIn Learning: ホーム](_img/vs-linkedin/vs-linkedin-learning-home.png "LinkedIn Premium と LinkedIn Learning をご利用いただきありがとうございます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
 
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise (Standard)   | VL、Azure、リテール<sup>1</sup> | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 6 か月       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 3 か月                                                            |いいえ。  新しいサブスクライバーのみが使用できます         |
-| Visual Studio Professional with GitHub Enterprise | VL | 3 か月      | いいえ。  新しいサブスクライバーのみが使用できます         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 3 か月      | いいえ。  新しいサブスクライバーのみが使用できます         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              | N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP) が含まれます除外:Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *除外:NFR、Visual Studio Industry Partner、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)。MCT Software & Services は含まれません。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -98,10 +98,10 @@ A: いいえ、LinkedIn Learning プランは新規サブスクライバーの�
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 ご利用のサブスクリプションに含まれるその他のすばらしい特典を確認してください。 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にアクセスします。

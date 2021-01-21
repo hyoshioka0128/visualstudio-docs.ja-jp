@@ -1,5 +1,7 @@
 ---
 title: コンカレンシー例外を処理する
+description: 同時実行例外 (System.data.dbconcurrencyexception) を処理します。これは、2人のユーザーが同時にデータベース内の同じデータを変更しようとしたときに発生します。
+ms.custom: SEO-VS-2020
 ms.date: 09/11/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d1c151b7f3afe977786ef3b308eff2de1c0857f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282359"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436447"
 ---
 # <a name="handle-a-concurrency-exception"></a>コンカレンシー例外を処理する
 
@@ -39,7 +41,7 @@ ms.locfileid: "85282359"
 
 4. Northwind データベースの Customers テーブルのデータをデータセットに格納します。
 
-5. **サーバーエクスプローラー**の [**テーブルデータの表示]** 機能を使用して、Customers テーブルのデータにアクセスし、レコードを変更します。
+5. **サーバーエクスプローラー** の [ **テーブルデータの表示]** 機能を使用して、Customers テーブルのデータにアクセスし、レコードを変更します。
 
 6. 同じレコードを別の値に変更し、データセットを更新して、データベースへの変更の書き込みを試行します。これにより、同時実行エラーが発生します。
 
@@ -49,11 +51,11 @@ ms.locfileid: "85282359"
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー**を使用してインストールします。 **Visual Studio インストーラー**では、**データストレージと処理**ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、 **データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -69,42 +71,42 @@ ms.locfileid: "85282359"
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ** ] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
-4. プロジェクトに **ConcurrencyWalkthrough**という名前を入力し、[ **OK]** をクリックします。
+4. プロジェクトに **ConcurrencyWalkthrough** という名前を入力し、[ **OK]** をクリックします。
 
-     **ConcurrencyWalkthrough**プロジェクトが作成され**ソリューションエクスプローラー**に追加され、デザイナーで新しいフォームが開きます。
+     **ConcurrencyWalkthrough** プロジェクトが作成され **ソリューションエクスプローラー** に追加され、デザイナーで新しいフォームが開きます。
 
 ## <a name="create-the-northwind-dataset"></a>Northwind データセットの作成
 
-次に、 **NorthwindDataSet**という名前のデータセットを作成します。
+次に、 **NorthwindDataSet** という名前のデータセットを作成します。
 
-1. [ **データ** ] メニューの [ **新しいデータソースの追加**] をクリックします。
+1. [ **データ** ] メニューの [ **新しいデータソースの追加** ] をクリックします。
 
    データ ソース構成ウィザードが開きます。
 
-2. [ **データソースの種類を選択** ] 画面で、[ **データベース**] を選択します。
+2. [ **データソースの種類を選択** ] 画面で、[ **データベース** ] を選択します。
 
    ![Visual Studio のデータソース構成ウィザード](media/data-source-configuration-wizard.png)
 
-3. 使用可能な接続の一覧から、Northwind サンプルデータベースへの接続を選択します。 接続の一覧で接続が使用できない場合は、[ **新しい接続**] を選択します。
+3. 使用可能な接続の一覧から、Northwind サンプルデータベースへの接続を選択します。 接続の一覧で接続が使用できない場合は、[ **新しい接続** ] を選択します。
 
     > [!NOTE]
     > ローカルデータベースファイルに接続している場合は、ファイルをプロジェクトに追加するかどうかを確認するメッセージが表示されたら、[ **いいえ** ] を選択します。
 
-4. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ**] を選択します。
+4. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ** ] を選択します。
 
-5. [ **テーブル** ] ノードを展開し、[ **Customers** ] テーブルを選択します。 データセットの既定の名前は **NorthwindDataSet**である必要があります。
+5. [ **テーブル** ] ノードを展開し、[ **Customers** ] テーブルを選択します。 データセットの既定の名前は **NorthwindDataSet** である必要があります。
 
 6. [ **完了** ] を選択して、データセットをプロジェクトに追加します。
 
 ## <a name="create-a-data-bound-datagridview-control"></a>データバインド DataGridView コントロールを作成する
 
-このセクションでは、 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> [**データソース**] ウィンドウから Windows フォームに**Customers**項目をドラッグして、を作成します。
+このセクションでは、 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> [ **データソース** ] ウィンドウから Windows フォームに **Customers** 項目をドラッグして、を作成します。
 
-1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示** ] をクリックします。
 
 2. [ **データソース** ] ウィンドウで、[ **NorthwindDataSet** ] ノードを展開し、[ **Customers** ] テーブルを選択します。
 
@@ -112,13 +114,13 @@ ms.locfileid: "85282359"
 
 4. テーブルをフォームの空の領域にドラッグします。
 
-     <xref:System.Windows.Forms.DataGridView>「」と**CustomersDataGridView**いう名前のコントロールが <xref:System.Windows.Forms.BindingNavigator> 、にバインドされているフォームに追加され**CustomersBindingNavigator** <xref:System.Windows.Forms.BindingSource> ます。 次に、NorthwindDataSet の Customers テーブルにバインドされます。
+     <xref:System.Windows.Forms.DataGridView>「」と **CustomersDataGridView** いう名前のコントロールが <xref:System.Windows.Forms.BindingNavigator> 、にバインドされているフォームに追加され **CustomersBindingNavigator** <xref:System.Windows.Forms.BindingSource> ます。 次に、NorthwindDataSet の Customers テーブルにバインドされます。
 
 ## <a name="test-the-form"></a>フォームをテストする
 
 フォームをテストして、ここまでの設定が期待どおりに動作することを確認します。
 
-1. **F5 キーを押し**てアプリケーションを実行します。
+1. **F5 キーを押し** てアプリケーションを実行します。
 
      フォームには、 <xref:System.Windows.Forms.DataGridView> Customers テーブルのデータを格納したコントロールが表示されます。
 
@@ -169,42 +171,42 @@ ms.locfileid: "85282359"
 
 上のコードにより `CreateMessage` プロシージャが呼び出され、ユーザーにエラー情報が表示されます。 このチュートリアルでは、メッセージボックスを使用して、レコードのさまざまなバージョンをユーザーに表示します。 これにより、ユーザーは、レコードを変更で上書きするか、編集をキャンセルするかを選択できます。 ユーザーがメッセージ ボックスのオプションを選択する (ボタンをクリックする) と、`ProcessDialogResult` メソッドに応答が渡されます。
 
-**コード エディター**に次のコードを追加して、メッセージを作成します。 このコードは、`UpdateDatabase` メソッドの下に入力します。
+**コード エディター** に次のコードを追加して、メッセージを作成します。 このコードは、`UpdateDatabase` メソッドの下に入力します。
 
 [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
 [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]
 
 ### <a name="process-the-users-response"></a>ユーザーの応答の処理
 
-また、メッセージボックスに対するユーザーの応答を処理するコードも必要です。 オプションは、データベース内の現在のレコードを提案された変更で上書きするか、ローカルの変更を破棄し、現在データベース内にあるレコードを使用してデータテーブルを更新するかのどちらかです。 ユーザーが **[はい]** を選択すると、 <xref:System.Data.DataTable.Merge%2A> メソッドが呼び出され、 *preserveChanges* 引数が **true**に設定されます。 これにより、レコードの元のバージョンがデータベース内のレコードと一致するようになったため、更新が成功します。
+また、メッセージボックスに対するユーザーの応答を処理するコードも必要です。 オプションは、データベース内の現在のレコードを提案された変更で上書きするか、ローカルの変更を破棄し、現在データベース内にあるレコードを使用してデータテーブルを更新するかのどちらかです。 ユーザーが **[はい]** を選択すると、 <xref:System.Data.DataTable.Merge%2A> メソッドが呼び出され、 *preserveChanges* 引数が **true** に設定されます。 これにより、レコードの元のバージョンがデータベース内のレコードと一致するようになったため、更新が成功します。
 
 前のセクションで追加したコードの下に次のコードを追加します。
 
 [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
 [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]
 
-## <a name="test-the-form"></a>フォームをテストする
+## <a name="test-the-form-behavior"></a>フォームの動作をテストする
 
 フォームをテストして、期待どおりに動作することを確認します。 同時実行違反をシミュレートするには、NorthwindDataSet にデータを入力した後にデータベース内のデータを変更します。
 
-1. **F5 キーを押し**てアプリケーションを実行します。
+1. **F5 キーを押し** てアプリケーションを実行します。
 
 2. フォームが表示されたら、実行を継続したまま Visual Studio IDE に切り替えます。
 
 3. **[表示]** メニューの **[サーバー エクスプローラー]** を選択します。
 
-4. **サーバー エクスプローラー**で、アプリケーションで使用する接続を展開し、次に **[テーブル]** ノードを展開します。
+4. **サーバー エクスプローラー** で、アプリケーションで使用する接続を展開し、次に **[テーブル]** ノードを展開します。
 
-5. **Customers**テーブルを右クリックし、[**テーブルデータの表示**] をクリックします。
+5. **Customers** テーブルを右クリックし、[ **テーブルデータの表示** ] をクリックします。
 
-6. 最初のレコード (**ALFKI**) で、[ **担当の担当** ] を [ **マリア Anders2**] に変更します。
+6. 最初のレコード ( **ALFKI** ) で、[ **担当の担当** ] を [ **マリア Anders2** ] に変更します。
 
     > [!NOTE]
     > 別の行に移動し、変更をコミットします。
 
 7. ConcurrencyWalkthrough の実行フォームに切り替えます。
 
-8. フォーム (**ALFKI**) の最初のレコードで、[担当 **の担当** ] を [ **Anders1**] に変更します。
+8. フォーム ( **ALFKI** ) の最初のレコードで、[担当 **の担当** ] を [ **Anders1** ] に変更します。
 
 9. **[保存]** ボタンを選択します。
 

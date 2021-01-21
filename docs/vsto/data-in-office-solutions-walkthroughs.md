@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションのチュートリアルのデータ
+description: Microsoft Word および Microsoft Excel 用のドキュメントレベルのカスタマイズと VSTO アドインでデータを操作する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62956031"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845584"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office ソリューションのチュートリアルのデータ
   次のチュートリアルでは、ドキュメント レベルのカスタマイズと、Microsoft Office Word および Microsoft Office Excel 用の VSTO アドインで、データを操作する方法について説明します。
@@ -47,7 +49,7 @@ ms.locfileid: "62956031"
 
 - [チュートリアル: サーバー上のブックでキャッシュされたデータを変更](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) するExcel を起動せずに Microsoft Office Excel ブックにキャッシュされているデータセットを変更する方法を示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Word を使用したチュートリアル](../vsto/walkthroughs-using-word.md)
 - [Excel を使用したチュートリアル](../vsto/walkthroughs-using-excel.md)
 - [Office UI のカスタマイズのチュートリアル](../vsto/office-ui-customization-walkthroughs.md)

@@ -1,5 +1,7 @@
 ---
 title: タスクの作成 | Microsoft Docs
+description: 独自のタスクを作成して、MSBuild ビルド プロセス中に実行されるコードを提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cbcf47ec83e1b900ba94ab3842c2cfa63fdcc5d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1b614fd1705491e676bb89a9527c75cf86bdd36c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631838"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047917"
 ---
 # <a name="task-writing"></a>タスクの作成
 
@@ -25,7 +27,7 @@ ms.locfileid: "77631838"
 
 ## <a name="tasks"></a>タスク
 
- タスクの例としては、1 つまたは複数のファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、C# ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などがあります。 各タスクは、*Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装する .NET クラスとして実装されます。
+ タスクの例としては、1 つまたは複数のファイルをコピーする [Copy](../msbuild/copy-task.md)、ディレクトリを作成する [MakeDir](../msbuild/makedir-task.md)、C# ソース コード ファイルをコンパイルする [Csc](../msbuild/csc-task.md) などがあります。 各タスクは、 *Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ITask> インターフェイスを実装する .NET クラスとして実装されます。
 
  タスクを実装するには 2 つの方法があります。
 
@@ -170,7 +172,7 @@ public string RequiredProperty { get; set; }
 
 MSBuild では、`string`、`bool`、`ITaskItem`、`ITaskItem[]` 型のプロパティがネイティブに処理されます。 タスクが別の型のパラメーターを受け入れる場合、MSBuild によって <xref:System.Convert.ChangeType%2A> が呼び出され、`string` から (すべてのプロパティと項目の参照が展開された状態で) 変換先の型に変換されます。 入力パラメーターの変換に失敗した場合、MSBuild によってエラーが出力されます。タスクの `Execute()` メソッドは呼び出されません。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
 ### <a name="description"></a>説明
 
@@ -195,7 +197,7 @@ namespace SimpleTask1
 }
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
 ### <a name="description"></a>説明
 
@@ -231,7 +233,7 @@ namespace SimpleTask2
 }
 ```
 
-## <a name="example"></a>例
+## <a name="example-3"></a>例 3
 
 ### <a name="description"></a>説明
 
@@ -241,7 +243,7 @@ namespace SimpleTask2
 
 [!code-csharp[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]
 
-## <a name="example"></a>例
+## <a name="example-4"></a>例 4
 
 ### <a name="description"></a>説明
 

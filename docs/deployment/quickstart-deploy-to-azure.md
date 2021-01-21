@@ -1,5 +1,7 @@
 ---
 title: Azure App Service に発行する
+description: ASP.NET、ASP.NET Core、Node.js、.NET Core アプリを Azure App Service や Azure App Service Linux に発行する方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: deef5aeaa802d5f5b46ba81f711173dc81a32357
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: cf32e0aa1f19bb4398bc5600ae7fc9fbf151c76c
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800308"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815595"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用して Azure App Service に Web アプリを発行する
 
 ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次のいずれかの方法を使用して、Azure App Service または Azure App Service Linux (コンテナーを使用) に発行します。
 
-* アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops) で Azure DevOps を使用します。
+* アプリの継続的 (または自動的) なデプロイの場合は、[Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops&preserve-view=true) で Azure DevOps を使用します。
 
-* アプリの 1 回限り (または手動) のデプロイの場合は、Visual Studio の**発行**ツールを使用して、Azure App Service または App Service for Linux (コンテナーを使用) に ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリをデプロイします。 Python アプリの場合は、[Python - Azure App Service への発行](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページの手順に従います。
+* アプリの 1 回限り (または手動) のデプロイの場合は、Visual Studio の **発行** ツールを使用して、Azure App Service または [App Service for Linux](../deployment/quickstart-deploy-to-linux.md) (コンテナーを使用) に ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリをデプロイします。 Python アプリの場合は、[Python - Azure App Service への発行](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)に関するページの手順に従います。
 
-この記事では、1 回限りのデプロイに**発行**ツールを使用する方法について説明します。
+この記事では、1 回限りのデプロイに **発行** ツールを使用する方法について説明します。
 
 [!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
@@ -35,7 +37,9 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
     ![ソリューション エクスプローラーのプロジェクト コンテキスト メニューにある [発行] コマンド](../deployment/media/quickstart-publish.png "[発行] を選択する")
 
-1. **[発行]** ダイアログで、 **[Azure]** を選択します。
+1. 以前に発行プロファイルを構成してある場合、 **[発行]** ウィンドウが表示されます。 **[新規]** を選択します。
+
+1. **[発行]** ウィンドウで、 **[Azure]** を選択します。
 
     ![発行先を選択する](../deployment/media/quickstart-publish-azure-new.png)
 
@@ -49,11 +53,11 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 1. **[Azure App Service の作成 (Windows)]** ダイアログで、 **[アプリ名]** 、 **[リソース グループ]** 、 **[App Service プラン]** の各入力フィールドに値が設定されます。 これらの名前を保持することも、変更することもできます。 準備ができたら、 **[作成]** を選択します。
 
-    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
+    ![Azure App Service (Windows) の作成ダイアログのスクリーンショット。[名前]、[サブスクリプション]、[リソース グループ]、[ホスティング プラン] の各フィールドが設定されています。](../deployment/media/quickstart-publish-windows-create-new-dialog.png)
 
 1. **[発行]** ダイアログで、新しく作成されたインスタンスが自動的に選択されています。 準備ができたら、 **[完了]** を選択します。
 
-    ![Azure App Service を選ぶ](../deployment/media/quickstart-publish-windows-select-instance.png)
+    ![Visual Studio のソリューション エクスプローラーからアクセスした [発行] ウィンドウのスクリーンショット。 発行先として Azure が選択されています。](../deployment/media/quickstart-publish-windows-select-instance.png)
 
 1. **[発行]** を選びます。 Visual Studio によってアプリが Azure App Service にデプロイされ、ブラウザに Web アプリが読み込まれます。 プロジェクト プロパティの **[発行]** ウィンドウに、サイト URL とその他の詳細が示されます。
 
@@ -61,7 +65,7 @@ ASP.NET、ASP.NET Core、Node.js、および .NET Core アプリの場合、次�
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-上記の手順では、リソース グループに Azure リソースを作成しました。 今後、これらのリソースを必要としない場合は、リソース グループを削除することでリソースを削除できます。
+前の手順では、リソース グループ内に Azure リソースを作成しました。 今後、これらのリソースを必要としない場合は、リソース グループを削除することでリソースを削除できます。
 Azure portal の左側のメニューから、 **[リソース グループ]** 、 **[myResourceGroup]** の順に選択します。
 リソース グループ ページで、リストされたリソースが削除対象であることを確認します。
 **[削除]** を選択し、テキスト ボックスに「**myResourceGroup**」と入力してから、 **[削除]** を選びます。

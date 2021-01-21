@@ -1,5 +1,7 @@
 ---
 title: コマンド
+description: Visual Studio で利用できるさまざまなコマンドについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7928c03e52e4a72fb354bd7202e041ec2264fcd6
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596373"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560955"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio のコマンド
 
-Visual Studio のコマンドは、 **[コマンド]** ウィンドウ、 **[イミディエイト]** ウィンドウ、または **[検索/コマンド]** ボックスで入力できます。 どの場合でも、不等号 (`>`) は後続の操作が検索またはデバッグではなくコマンドであることを示します。
+Visual Studio のコマンドは、**[コマンド]** ウィンドウ、**[イミディエイト]** ウィンドウ、または **[検索/コマンド]** ボックスで入力できます。 どの場合でも、不等号 (`>`) は後続の操作が検索またはデバッグではなくコマンドであることを示します。
 
 コマンドの完全な一覧とその構文は、**[ツール]** > **[オプション]** > **[環境]** の **[キーボード]** ページで確認できます。
 
@@ -39,7 +41,7 @@ Visual Studio のコマンドのエスケープ文字は、キャレット (^) �
 
 カレットは、引用符の前後のどちらに置かれた場合でも同じ働きをします。 行の最後の文字がカレットの場合は無視されます。
 
-## <a name="commands-with-arguments"></a>引数を持つコマンド
+## <a name="commands-with-arguments"></a>引数を指定したコマンド
 
 次のコマンドは、引数またはスイッチを受け取ります。
 
@@ -48,9 +50,9 @@ Visual Studio のコマンドのエスケープ文字は、キャレット (^) �
 | [既存項目の追加](../../ide/reference/add-existing-item-command.md) | 既存のファイルを現在のソリューションに追加して、そのファイルを開きます。 |
 | [[既存プロジェクトの追加]](../../ide/reference/add-existing-project-command.md) | 既存のプロジェクトを現在のソリューションに追加します。 |
 | [新しい項目の追加](../../ide/reference/add-new-item-command.md) | 新規ソリューションのアイテム (.htm、.css、.txt、フレームセットなど) を現在のソリューションに追加して、そのソリューションを開きます。 |
-| [Alias](../../ide/reference/alias-command.md) | 完全なコマンド、完全なコマンドと引数、または他のエイリアスに対して新しいエイリアスを作成します。 |
+| [エイリアス](../../ide/reference/alias-command.md) | 完全なコマンド、完全なコマンドと引数、または他のエイリアスに対して新しいエイリアスを作成します。 |
 | [[ステートメントの評価]](../../ide/reference/evaluate-statement-command.md) | 指定したステートメントを評価し、表示します。 |
-| [[検索]](../../ide/reference/find-command.md) | **[検索と置換]** コントロールにあるオプションを使用してファイルを検索します。 |
+| [Find](../../ide/reference/find-command.md) | **[検索と置換]** コントロールにあるオプションを使用してファイルを検索します。 |
 | [フォルダーを指定して検索](../../ide/reference/find-in-files-command.md) | [[フォルダーを指定して検索]](../../ide/find-in-files.md) で使用可能なオプションのサブセットを使用してファイルを検索します。 |
 | [移動先](../../ide/reference/go-to-command.md) | 指定した行にカーソルを移動します。 |
 | [[呼び出し履歴の一覧表示]](../../ide/reference/list-call-stack-command.md) | 現在の呼び出し履歴を表示します。 |
@@ -66,14 +68,14 @@ Visual Studio のコマンドのエスケープ文字は、キャレット (^) �
 | [プロジェクトを開く](../../ide/reference/open-project-command.md) | 既存のプロジェクトを開き、現在のソリューションに追加できます。 |
 | [印刷](../../ide/reference/print-command.md) | 式を評価し、結果または指定した文字列を表示します。 |
 | [QuickWatch コマンド](../../ide/reference/quick-watch-command.md) | 選択または指定したテキストが **[クイック ウォッチ]** ダイアログ ボックスの **[式]** フィールドに表示されます。 |
-| [置換](../../ide/reference/replace-command.md) | **[検索と置換]** コントロールにあるオプションを使用してファイル内の文字列を置換します。 |
-| [[フォルダーを指定して置換]](../../ide/reference/replace-in-files-command.md) | [[フォルダーを指定して置換]](../../ide/replace-in-files.md) で使用可能なオプションのサブセットを使用してファイル内の文字列を置換します。 |
+| [Replace](../../ide/reference/replace-command.md) | **[検索と置換]** コントロールにあるオプションを使用してファイル内の文字列を置換します。 |
+| [フォルダーを指定して置換](../../ide/reference/replace-in-files-command.md) | [[フォルダーを指定して置換]](../../ide/replace-in-files.md) で使用可能なオプションのサブセットを使用してファイル内の文字列を置換します。 |
 | [[現在のスタック フレームを設定する]](../../ide/reference/set-current-stack-frame-command.md) | 特定のスタック フレームを表示できます。 |
 | [[現在のスレッドを設定する]](../../ide/reference/set-current-thread-command.md) | 特定のスレッドを表示できます。 |
 | [[基数の設定]](../../ide/reference/set-radix-command.md) | 表示するバイト数を指定します。 |
 | [Shell](../../ide/reference/shell-command.md) | コマンド プロンプトからコマンドを実行した場合と同様に、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内からプログラムを起動します。 |
 | [ShowWebBrowser コマンド](../../ide/reference/showwebbrowser-command.md) | 指定した URL を統合開発環境 (IDE: Integrated Development Environment) の内部または外部の Web ブラウザーのウィンドウに表示します。 |
-| [[開始]](../../ide/reference/start-command.md) | デバッグ プロセスが開始され、エラーの処理方法を指定できるようになります。 |
+| [Start](../../ide/reference/start-command.md) | デバッグ プロセスが開始され、エラーの処理方法を指定できるようになります。 |
 | [パス](../../ide/reference/symbol-path-command.md) | デバッガーによってシンボルが検索されるディレクトリの一覧を設定します。 |
 | [ブレークポイントの設定/解除](../../ide/reference/toggle-breakpoint-command.md) | ファイル内の現在位置で、現在の状態に基づいてブレークポイントのオン/オフを切り替えます。 |
 | [Watch コマンド](../../ide/reference/watch-command.md) | 指定したインスタンスの **[ウォッチ]** ウィンドウを作成し、開きます。 |

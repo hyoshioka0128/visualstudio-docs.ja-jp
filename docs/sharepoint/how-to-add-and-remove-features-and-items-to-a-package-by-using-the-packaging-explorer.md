@@ -1,5 +1,8 @@
 ---
 title: 'パッケージングエクスプローラー: 項目 & パッケージに追加 & 削除'
+titleSuffix: ''
+description: Visual Studio のパッケージングエクスプローラーを使用して、SharePoint パッケージに機能と項目を追加および削除します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014554"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915350"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>方法: パッケージングエクスプローラーを使用してパッケージに機能と項目を追加および削除する
   SharePoint のアイテムとフィーチャーを配置するようにパッケージを構成するには、パッケージングエクスプローラーを使用します。 SharePoint プロジェクトの項目と機能は、.wsp ファイル内で調整できます。
@@ -31,22 +34,22 @@ ms.locfileid: "86014554"
 
 #### <a name="to-open-the-packaging-explorer"></a>パッケージングエクスプローラーを開くには
 
-1. メニューバーで、[ **View**  >  **他の Windows**  >  **パッケージエクスプローラー**を表示] を選択します。
+1. メニューバーで、[ **View**  >  **他の Windows**  >  **パッケージエクスプローラー** を表示] を選択します。
 
-     **パッケージングエクスプローラー**が [**ツールボックス**] に表示されます。
+     **パッケージングエクスプローラー** が [**ツールボックス**] に表示されます。
 
 ## <a name="adding-a-feature-to-a-package"></a>パッケージへの機能の追加
  パッケージングエクスプローラーを使用して、パッケージに新規および既存の機能を追加できます。
 
 #### <a name="to-add-a-sharepoint-feature"></a>SharePoint 機能を追加するには
 
-1. **パッケージングエクスプローラー**を開き、プロジェクトのショートカットメニューを開き、[機能の**追加**] を選択します。
+1. **パッケージングエクスプローラー** を開き、プロジェクトのショートカットメニューを開き、[機能の **追加**] を選択します。
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>既存の SharePoint 機能を移動するには
 
-1. **パッケージングエクスプローラー**を開き、次のいずれかの手順を実行します。
+1. **パッケージングエクスプローラー** を開き、次のいずれかの手順を実行します。
 
-    - **フィーチャー**をあるプロジェクトから別のプロジェクトにドラッグします。
+    - **フィーチャー** をあるプロジェクトから別のプロジェクトにドラッグします。
 
     - 機能のショートカットメニューを開き、[ **切り取り**] を選択し、フィーチャーの移動先となるプロジェクトのショートカットメニューを開き、[ **貼り付け**] を選択します。
 
@@ -58,7 +61,7 @@ ms.locfileid: "86014554"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>SharePoint の機能またはパッケージを検証するには
 
-1. **パッケージングエクスプローラー**を開きます。
+1. **パッケージングエクスプローラー** を開きます。
 
 2. 機能またはパッケージのショートカットメニューを開き、[ **検証**] を選択します。
 

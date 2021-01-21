@@ -1,5 +1,7 @@
 ---
 title: T4 パラメーター ディレクティブ
+description: Visual Studio では、パラメーターディレクティブは、外部コンテキストから渡された値から初期化されるテンプレートコード内のプロパティを宣言します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df739f10764f20b415ac74ee4b4e529433c7dc96
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591802"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363628"
 ---
 # <a name="t4-parameter-directive"></a>T4 パラメーター ディレクティブ
 
@@ -82,8 +84,8 @@ string result = t4.ProcessTemplate("",
 //     Test 32 test
 ```
 
-## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>実行時 (前処理済み) テキストテンプレートに値を渡す
- 通常、ランタイム (前処理され `<#@parameter#>` た) テキストテンプレートでは、ディレクティブを使用する必要はありません。 代わりに、生成されたコードの追加のコンストラクターまたは設定可能なプロパティを定義して、パラメーター値を渡すことができます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+## <a name="passing-values-to-a-run-time-preprocessed-text-template"></a>Run-Time (前処理される) テキストテンプレートに値を渡す
+ 通常、ランタイム (前処理され `<#@parameter#>` た) テキストテンプレートでは、ディレクティブを使用する必要はありません。 代わりに、生成されたコードの追加のコンストラクターまたは設定可能なプロパティを定義して、パラメーター値を渡すことができます。 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
  ただし、をランタイムテンプレートで使用する場合は、 `<#@parameter>` セッションディクショナリを使用して値を渡すことができます。 例として、という前処理済みテンプレートとしてファイルを作成したとし `PreTextTemplate1` ます。 次のコードを使用して、プログラムでテンプレートを呼び出すことができます。
 

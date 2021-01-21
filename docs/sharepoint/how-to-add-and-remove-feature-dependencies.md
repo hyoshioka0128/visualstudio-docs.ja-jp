@@ -1,5 +1,7 @@
 ---
 title: '方法: フィーチャーの依存関係を追加および削除するMicrosoft Docs'
+description: Visual Studio のフィーチャーデザイナーを使用して、SharePoint ソリューションにフィーチャーの依存関係を追加および削除する方法を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c318a7dc4672a10e993d0149ec77e7f94679d465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014771"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915363"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>方法: フィーチャーの依存関係を追加および削除する
   SharePoint 機能は、機能またはデータの他の機能に依存している場合があります。 このような場合は、機能の依存関係として、これらの他の機能をマークできます。 これにより、SharePoint サーバーは、機能がアクティブ化される前に依存機能がアクティブになるようにします。

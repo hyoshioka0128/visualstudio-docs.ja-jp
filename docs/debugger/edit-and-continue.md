@@ -1,6 +1,7 @@
 ---
 title: コードを編集してデバッグを続行する | Microsoft Docs
-ms.custom: seodec18
+description: プログラムが中断モードにあるとき、ソース コードを変更できるよう、Visual Studio でデバッグ中、エディット コンティニュ コマンドを使用します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/31/2018
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737892"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726541"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Visual Studio でコードを編集してデバッグを続行する (C#、VB、C++)
 エディット コンティニュを使用すると、プログラムが中断モードのときにソース コードを変更できるため、時間を節約できます。 **[続行]** や **[ステップ]** などの実行コマンドを選択してプログラムの実行を再開すると、一定の制限の下で、エディット コンティニュによってコードの変更が自動的に適用されます。 このため、デバッグ セッション中にコードを変更できます。デバッグ セッションをいったん停止し、プログラム全体を再コンパイルしてからデバッグ セッションを再開する必要がありません。
@@ -47,5 +48,4 @@ ms.locfileid: "72737892"
 
 ## <a name="see-also"></a>関連項目
 - [デバッガーのセキュリティ](../debugger/debugger-security.md)
-- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

@@ -1,5 +1,6 @@
 ---
 title: IIS コンピューター上の ASP.NET のリモート デバッグ
+description: Visual Studio ASP.NET MVC 4.5.2 アプリケーションを設定して構成し、それを IIS に配置し、Visual Studio からリモート デバッガーをアタッチする方法を学習します。
 ms.custom:
 - remotedebugging
 - seodec18
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173916"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815712"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>リモートの IIS コンピューター上の ASP.NET のリモート デバッグ
 IIS に配置されている ASP.NET アプリケーションをデバッグするには、アプリを配置したコンピューターにリモート ツールをインストールして実行し、Visual Studio から実行中のアプリにアタッチします。
@@ -91,7 +92,7 @@ ASP.NET を IIS にインストールするための詳細な情報が必要な�
 
 1. Web Platform Installer (WebPI) を使用して、ASP.NET 4.5 をインストールします (Windows Server 2012 R2 のサーバー ノードから **[Get New Web Platform Components]\(新しい Web プラットフォーム コンポーネントを取得する\)** を選択し、[ASP.NET] を検索します)。
 
-    ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg_iis_aspnet_45.png "RemoteDBG_IIS_AspNet_45")
+    ![Web Platform Installer 5.0 のスクリーンショット。asp.net の検索結果が表示され、Web プラットフォーム コンポーネント IIS: ASP.NET 4.5 が赤い円で囲まれています。](../debugger/media/remotedbg_iis_aspnet_45.png)
 
     > [!NOTE]
     > Windows Server 2008 R2 を使用している場合は、次のコマンドを使用して、代わりに ASP.NET 4 をインストールしてください。
@@ -144,7 +145,7 @@ PowerShell、RoboCopy を使用してアプリを IIS にコピーする場合�
 
 1. Windows エクスプローラーを開き、新しいフォルダー **C:\Publish** を作成します。後でここに ASP.NET プロジェクトを配置します。
 
-2. **インターネット インフォメーション サービス (IIS) マネージャー**をまだ開いていない場合は開きます (サーバー マネージャーの左側のペインで、 **[IIS]** を選択します。 サーバーを右クリックして **[インターネット インフォメーション サービス (IIS) マネージャー]** を選択します。)
+2. **インターネット インフォメーション サービス (IIS) マネージャー** をまだ開いていない場合は開きます (サーバー マネージャーの左側のペインで、 **[IIS]** を選択します。 サーバーを右クリックして **[インターネット インフォメーション サービス (IIS) マネージャー]** を選択します。)
 
 3. 左側のペインの **[接続]** で、 **[サイト]** に移動します。
 

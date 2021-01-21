@@ -1,5 +1,7 @@
 ---
 title: オンライン ClickOnce アプリでクエリ文字列情報を取得する
+description: ClickOnce アプリケーションが URL のクエリ部分を読み取る方法と、Mageui.exe を使用してクエリ文字列パラメーターを受け入れるようにアプリケーションを構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc94691eda319607510619dbb37e24265bcae522
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 25a1ba70336b54ce2ce4c4df6678984db9de8bf8
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641588"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349920"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>方法: オンライン ClickOnce アプリケーションでクエリ文字列の情報を取得する
-*クエリ文字列* とは、URL のうちの疑問符 (?) で始まる部分であり、 *name=value*の形式で任意の情報を記述します。 たとえば、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] でホストされている `WindowsApp1` という `servername`アプリケーションがあり、このアプリケーションを起動するときに、 `username` という変数に値を渡すとします。 URL は次のようになります。
+*クエリ文字列* とは、URL のうちの疑問符 (?) で始まる部分であり、 *name=value* の形式で任意の情報を記述します。 たとえば、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] でホストされている `WindowsApp1` という `servername`アプリケーションがあり、このアプリケーションを起動するときに、 `username` という変数に値を渡すとします。 URL は次のようになります。
 
  `http://servername/WindowsApp1.application?username=joeuser`
 
@@ -39,7 +41,7 @@ ms.locfileid: "89641588"
 > [!NOTE]
 > この機能を有効にする前に、この後の「セキュリティ」を参照してください。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Mage.exe*または*MageUI.exe*を使用した配置の作成方法については、「[チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)する」を参照してください。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Mage.exe* または *MageUI.exe* を使用した配置の作成方法については、「 [チュートリアル: ClickOnce アプリケーションを手動で配置](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)する」を参照してください。
 
 > [!NOTE]
 > .NET Framework 3.5 SP1 以降では、オフラインの [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションにコマンド ライン引数を渡すことができます。 このアプリケーションに引数を提供する場合は、.APPREF-MS 拡張子を持つショートカット ファイルにパラメーターを渡すことができます。

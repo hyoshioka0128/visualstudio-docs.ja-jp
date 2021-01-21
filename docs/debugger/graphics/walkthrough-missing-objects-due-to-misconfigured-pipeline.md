@@ -1,5 +1,7 @@
 ---
-title: 'チュートリアル: シェーディングによるオブジェクトの不足 |Microsoft Docs'
+title: パイプラインの構成が不適切なことによるオブジェクトの不足
+description: 正しく構成されていないパイプラインを検出する調査について説明します。 [グラフィックス イベント一覧]、[グラフィックス パイプライン ステージ]、[グラフィックス イベント呼び出し履歴] の使用方法が示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e099d94479183e795a2ad3c8fc8db03fa969111c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388575"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995015"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>チュートリアル: パイプラインの構成が不適切なことによるオブジェクトの不足
 このチュートリアルでは、ピクセル シェーダーが設定されていないことが原因で表示されないオブジェクトを調査するために、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断ツールを使用する方法を示します。
@@ -65,7 +67,7 @@ ms.locfileid: "63388575"
 
 4. 表示されないオブジェクトに対応する描画呼び出しに到達したら、停止します。 このシナリオで、 **[グラフィックス パイプライン ステージ]** ウィンドウは、ジオメトリが GPU に発行されたこと ( **[入力アセンブラー]** ステージが存在することによって示される)、そして変換されたこと ( **[頂点シェーダー]** ステージが存在することによって示される) を示していますが、アクティブなピクセル シェーダーが原因でオブジェクトがレンダー ターゲットに表示されないと考えられること ( **[ピクセル シェーダー]** ステージが存在しないことによって示される) も示しています。 このシナリオでは、さらに、表示されないオブジェクトのシルエットが **[出力マージャー]** ステージに表れています。
 
-    ![DrawIndexed イベントと、パイプラインに与える影響](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")
+    ![DrawIndexed イベントとパイプラインに対するその効果](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")
 
    こうして、表示されないオブジェクトのジオメトリについてアプリが描画呼び出しを発行したことを確認し、ピクセル シェーダーのステージがアクティブでないことを検出できたので、次に、この発見を確認するためにデバイスの状態を調査することができます。 デバイス コンテキストやその他の Direct3D オブジェクト データを調べるには、 **[グラフィックス オブジェクト テーブル]** を利用できます。
 
@@ -73,9 +75,9 @@ ms.locfileid: "63388575"
 
 1. **[d3d11 デバイス コンテキスト]** を開きます。 **[グラフィックス パイプライン ステージ]** ウィンドウで、ウィンドウの上部に表示されている **呼び出しの一部である** ID3D11DeviceContext `DrawIndexed` リンクを選択します。
 
-2. **[d3d11 デバイス コンテキスト]** タブに表示されているデバイス状態を調べて、描画呼び出し中にアクティブなピクセル シェーダーがなかったことを確認します。 このシナリオでは、 **[ピクセル シェーダーの状態]** の下に表示される **[シェーダーの一般情報]** に、そのシェーダーが **NULL**であることが示されます。
+2. **[d3d11 デバイス コンテキスト]** タブに表示されているデバイス状態を調べて、描画呼び出し中にアクティブなピクセル シェーダーがなかったことを確認します。 このシナリオでは、 **[ピクセル シェーダーの状態]** の下に表示される **[シェーダーの一般情報]** に、そのシェーダーが **NULL** であることが示されます。
 
-    ![D3d11 デバイス コンテキストは、ピクセル シェーダーの状態を示しています](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4。")
+    ![D3D 11 デバイス コンテキストはピクセル シェーダーの状態を示します](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")
 
    ピクセル シェーダーがアプリによって null に設定されていることを確認した後は、次の手順として、アプリのソース コードでシェーダーが設定されている場所を探します。 **[グラフィックス イベント一覧]** を **[グラフィックス イベント呼び出し履歴]** と一緒に使うと、その場所を見つけることができます。
 
@@ -97,8 +99,8 @@ ms.locfileid: "63388575"
 
    問題を修正するには、 `ID3D11DeviceContext::PSSetShader` API 呼び出しの最初のパラメーターを使って正しいピクセル シェーダーを割り当てます。
 
-   ![修正された C&#43; &#43;ソース コード](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
+   ![修正された C&#43;&#43; ソース コード](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")
 
    コードを修正したら、アプリをリビルドし、アプリをもう一度実行してレンダリングの問題が解決されたことを確認します。
 
-   ![オブジェクトが表示されるようになりました](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![オブジェクトが現在表示されています](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

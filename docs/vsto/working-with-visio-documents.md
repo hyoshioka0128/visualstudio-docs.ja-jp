@@ -1,5 +1,7 @@
 ---
 title: Visio 図面を操作する
+description: Microsoft Visio のオブジェクトモデルを使用して Office プロジェクトのドキュメントを操作するためのステップバイステップの手順とコード例について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82dbf0858266fe2f07d4ae51c8171e0e8a900861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815051"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523329"
 ---
 # <a name="work-with-visio-documents"></a>Visio 図面を操作する
   このセクションのトピックでは、Microsoft Office Visio のオブジェクトモデルを使用して Office プロジェクトのドキュメントを操作する手順とコード例について説明します。
@@ -32,7 +34,7 @@ ms.locfileid: "62815051"
 |同じ名前または新しい名前を指定して文書を保存します。|[方法: プログラムによって Visio 図面を保存する](../vsto/how-to-programmatically-save-visio-documents.md)|
 |ドキュメント全体または指定したページを印刷します。|[方法: プログラムによって Visio 図面を印刷する](../vsto/how-to-programmatically-print-visio-documents.md)|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visio ソリューション](../vsto/visio-solutions.md)
 - [Visio オブジェクトモデルの概要](../vsto/visio-object-model-overview.md)
 - [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

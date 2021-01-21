@@ -1,5 +1,7 @@
 ---
 title: データをデータベースに保存する
+description: データセットツールを使用して、データをデータベースに保存し直します。 データセットは、変更された場合にデータベースに保存し直す必要がある、メモリ内のデータのコピーです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,12 +22,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281748"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436056"
 ---
 # <a name="save-data-back-to-the-database"></a>データをデータベースに保存する
 
@@ -72,22 +74,22 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 |DataRowVersion|ターゲット データセット|ソース データセット|
 | - | - | - |
-|元|James Wilson|James c. Wilson|
-|Current|Jim Wilson|James c. Wilson|
+|変更元|James Wilson|James c. Wilson|
+|[現在]|Jim Wilson|James c. Wilson|
 
 を使用して前のテーブルのメソッドを呼び出す <xref:System.Data.DataSet.Merge%2A> と `preserveChanges=false targetDataset.Merge(sourceDataset)` 、次のデータが返されます。
 
 |DataRowVersion|ターゲット データセット|ソース データセット|
 | - | - | - |
-|元|James c. Wilson|James c. Wilson|
-|Current|James c. Wilson|James c. Wilson|
+|変更元|James c. Wilson|James c. Wilson|
+|[現在]|James c. Wilson|James c. Wilson|
 
 <xref:System.Data.DataSet.Merge%2A>を使用してメソッドを呼び出すと `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 、次のデータが返されます。
 
 |DataRowVersion|ターゲット データセット|ソース データセット|
 | - | - | - |
-|元|James c. Wilson|James c. Wilson|
-|Current|Jim Wilson|James c. Wilson|
+|変更元|James c. Wilson|James c. Wilson|
+|[現在]|Jim Wilson|James c. Wilson|
 
 > [!CAUTION]
 > このシナリオでは、 `preserveChanges = true` <xref:System.Data.DataSet.RejectChanges%2A> ターゲットデータセット内のレコードに対してメソッドが呼び出された場合、 *ソース* データセットの元のデータに戻ります。 つまり、対象のデータセットを使用して元のデータソースを更新しようとすると、更新する元の行を見つけることができないことがあります。 データソースから更新されたレコードを別のデータセットに読み込んで、同時実行違反を防ぐためにマージを実行することで、同時実行違反を防ぐことができます。 (コンカレンシー違反は、データセットにレコードが格納された後で別のユーザーがデータ ソース内のレコードを変更すると発生します。)
@@ -125,7 +127,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 <xref:System.Data.DataRowState> 列挙定数に使用できる値の詳細を次の表に示します。
 
-|DataRowState 列挙定数の値|[説明]|
+|DataRowState 列挙定数の値|説明|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|行は項目として <xref:System.Data.DataRowCollection> に追加されました。 (この状態の行は、最後のメソッドが呼び出されたときに存在しなかったため、対応する元のバージョンがありません <xref:System.Data.DataRow.AcceptChanges%2A> )。|
 |<xref:System.Data.DataRowState.Deleted>|行は <xref:System.Data.DataRow.Delete%2A> オブジェクトの <xref:System.Data.DataRow> を使用して削除されました。|
@@ -139,7 +141,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 <xref:System.Data.DataRowVersion> 列挙定数に使用できる値の詳細を次の表に示します。
 
-|DataRowVersion 列挙定数の値|[説明]|
+|DataRowVersion 列挙定数の値|説明|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|レコードの現在のバージョンには、前回が呼び出されてからレコードに対して行われたすべての変更が含まれてい <xref:System.Data.DataRow.AcceptChanges%2A> ます。 行が削除されている場合、現在のバージョンは存在しません。|
 |<xref:System.Data.DataRowVersion.Default>|データセット スキーマまたはデータ ソースにより定義されたレコードの既定値です。|
@@ -200,7 +202,7 @@ Tableadapter を使い慣れている場合は、次のトピックのいずれ�
 
 メソッドが呼び出されたオブジェクトに基づいて、コミットされる変更を次の表に示します。
 
-|Method|結果|
+|メソッド|結果|
 |------------|------------|
 |<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|変更は特定の行にだけコミットされます。|
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|変更は特定のテーブルのすべての行にコミットされます。|
@@ -274,7 +276,7 @@ UPDATE ステートメントでは、新しい値 (レコードに書き込ま�
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
 - [Tableadapter の作成および構成](create-and-configure-tableadapters.md)
 - [TableAdapter を使用してデータを更新する](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Visual Studio でのデータへのコントロールのバインド](../data-tools/bind-controls-to-data-in-visual-studio.md)

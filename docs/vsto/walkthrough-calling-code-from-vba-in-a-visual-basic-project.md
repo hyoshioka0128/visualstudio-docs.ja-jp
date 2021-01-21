@@ -1,5 +1,8 @@
 ---
-title: 'チュートリアル: Visual Basic プロジェクトでコードを VBA から呼び出す'
+title: 'チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す'
+description: ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Word のドキュメントレベルのカスタマイズでメソッドを呼び出す方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +22,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46fa903b0025279fec3b33d3c14ce1661d076926
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438670"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527374"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>チュートリアル: Visual Basic プロジェクトでコードを VBA から呼び出す
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Office Word 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `ThisDocument` ホスト項目クラスにメソッドを追加する、VBA コードにメソッドを公開する、および、ドキュメント内の VBA コードからメソッドを呼び出す、の 3 つです。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -55,7 +58,7 @@ ms.locfileid: "63438670"
 
 - Microsoft Word
 
-## <a name="create-a-document-that-contains-vba-code"></a>VBA コードを含むドキュメントを作成します。
+## <a name="create-a-document-that-contains-vba-code"></a>VBA コードを含むドキュメントを作成する
  最初の手順では、単純な VBA マクロを含むマクロ対応のドキュメントを作成します。 そのドキュメントに基づいた Visual Studio プロジェクトを作成する前に、ドキュメントに VBA プロジェクトを含める必要があります。 含めないと、Visual Studio は VBA プロジェクトを変更して、VBA コードがカスタマイズ アセンブリを呼び出せるようにすることができません。
 
  使用する VBA コードを含むドキュメントが既にある場合は、この手順を省略できます。
@@ -64,12 +67,12 @@ ms.locfileid: "63438670"
 
 1. Word を起動します。
 
-2. アクティブなドキュメントを単語として保存**マクロ有効文書 (\*.docm)** 名前**DocumentWithVBA**します。 このドキュメントは、デスクトップなどの便利な場所に保存します。
+2. 作業中のドキュメントを、 **Documentwithvba** という名前の Word **マクロ有効ドキュメント ( \* .docm)** として保存します。 このブックは、デスクトップなどの便利な場所に保存します。
 
 3. リボンの **[開発]** タブをクリックします。
 
     > [!NOTE]
-    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「[方法 :リボンの [開発] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)します。
+    > **[開発]** タブが表示されていない場合は、最初にこれを表示する必要があります。 詳細については、「 [方法: リボンに [開発者] タブを表示する](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)」を参照してください。
 
 4. **[コード]** グループの **[Visual Basic]** をクリックします。
 
@@ -88,7 +91,7 @@ ms.locfileid: "63438670"
 
 7. ドキュメントを保存して、Word を終了します。
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  これで、先ほど作成したマクロ対応のドキュメントを使用する、Word のドキュメント レベルのプロジェクトを作成できます。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
@@ -113,10 +116,10 @@ ms.locfileid: "63438670"
 
 9. **[完了]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] はデザイナーで **DocumentWithVBA** ドキュメントを開き、 **ソリューション エクスプローラー** に **CallingCodeFromVBA**プロジェクトを追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで **Documentwithvba** ドキュメントを開き、**ソリューションエクスプローラー** に **CallingCodeFromVBA** プロジェクトを追加します。
 
-## <a name="trust-the-location-of-the-document"></a>ドキュメントの場所を信頼します。
- ソリューションのコードをドキュメント内の VBA コードに公開する前に、実行するドキュメント内の VBA を信頼する必要があります。 これにはいくつかの方法があります。 このチュートリアルでは、Word の **セキュリティ センター** で、ドキュメントの場所を信頼します。
+## <a name="trust-the-location-of-the-document"></a>ドキュメントの場所を信頼する
+ ソリューションのコードをドキュメント内の VBA コードに公開する前に、実行するドキュメント内の VBA を信頼する必要があります。 これを行うには、いくつかの方法があります。 このチュートリアルでは、Word の **セキュリティ センター** で、ドキュメントの場所を信頼します。
 
 ### <a name="to-trust-the-location-of-the-document"></a>ドキュメントの場所を信頼するには
 
@@ -146,31 +149,31 @@ ms.locfileid: "63438670"
 
 13. Word を終了します。
 
-## <a name="add-a-method-to-the-thisdocument-class"></a>ThisDocument クラスにメソッドを追加します。
+## <a name="add-a-method-to-the-thisdocument-class"></a>ThisDocument クラスにメソッドを追加する
  VBA プロジェクトのセットアップができたので、今度は VBA コードから呼び出すことのできる `ThisDocument` ホスト項目クラスにメソッドを追加します。
 
 ### <a name="to-add-a-method-to-the-thisdocument-class"></a>ThisDocument クラスにメソッドを追加するには
 
-1. **ソリューション エクスプローラー**で **ThisDocument.vb**を右クリックし、 **[コードの表示]** をクリックします。
+1. **ソリューション エクスプローラー** で **ThisDocument.vb** を右クリックし、 **[コードの表示]** をクリックします。
 
      コード エディターで **ThisDocument** ファイルが開きます。
 
-2. `ThisDocument` クラスに次のメソッドを追加します。 このメソッドは、ドキュメントの先頭に 2 行 2 列の表を作成します。 パラメーターは、最初の行に表示されるテキストを指定します。 このチュートリアルの後半では、ドキュメント内の VBA コードからこのメソッドを呼び出します。
+2. 次のメソッドを `ThisDocument` クラスに追加します。 このメソッドは、ドキュメントの先頭に 2 行 2 列の表を作成します。 パラメーターは、最初の行に表示されるテキストを指定します。 このチュートリアルの後半では、ドキュメント内の VBA コードからこのメソッドを呼び出します。
 
      [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
 
 3. プロジェクトをビルドします。
 
-## <a name="expose-the-method-to-vba-code"></a>VBA コードにメソッドを公開します。
- `CreateTable` メソッドをドキュメント内の VBA コードに公開するには、 **ホスト項目の** EnableVbaCallers `ThisDocument` プロパティを **True**に設定します。
+## <a name="expose-the-method-to-vba-code"></a>メソッドを VBA コードに公開する
+ `CreateTable` メソッドをドキュメント内の VBA コードに公開するには、 **ホスト項目の** EnableVbaCallers `ThisDocument` プロパティを **True** に設定します。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>メソッドを VBA コードに公開するには
 
-1. **ソリューション エクスプローラー**で、 **ThisDocument.vb**をダブルクリックします。
+1. **ソリューション エクスプローラー** で、 **ThisDocument.vb** をダブルクリックします。
 
      デザイナーで **DocumentWithVBA** ファイルが開きます。
 
-2. **[プロパティ]** ウィンドウで、 **EnableVbaCallers** プロパティを選択し、値を **True**に変更します。
+2. **[プロパティ]** ウィンドウで、 **EnableVbaCallers** プロパティを選択し、値を **True** に変更します。
 
 3. 表示されるメッセージで **[OK]** をクリックします。
 
@@ -180,11 +183,11 @@ ms.locfileid: "63438670"
  これで、ドキュメント内の VBA コードから `CreateTable` メソッドを呼び出せます。
 
 > [!NOTE]
-> このチュートリアルでは、プロジェクトのデバッグ中に VBA コードをドキュメントに追加します。 Visual Studio はビルド出力フォルダー内のドキュメントをメイン プロジェクト フォルダーからのドキュメントのコピーで置き換えるので、このドキュメントに追加したすべての VBA コードは次にプロジェクトをビルドすると上書きされます。 VBA コードを保存したい場合は、プロジェクト フォルダー内のドキュメントにコピーします。 詳細については、次を参照してください。[結合 VBA とドキュメント レベルのカスタマイズ](../vsto/combining-vba-and-document-level-customizations.md)します。
+> このチュートリアルでは、プロジェクトのデバッグ中に VBA コードをドキュメントに追加します。 Visual Studio はビルド出力フォルダー内のドキュメントをメイン プロジェクト フォルダーからのドキュメントのコピーで置き換えるので、このドキュメントに追加したすべての VBA コードは次にプロジェクトをビルドすると上書きされます。 VBA コードを保存したい場合は、プロジェクト フォルダー内のドキュメントにコピーします。 詳細については、「 [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)」を参照してください。
 
 ### <a name="to-call-the-method-from-vba-code"></a>VBA コードからメソッドを呼び出すには
 
-1. キーを押して**F5**プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. **[開発者]** タブで、 **[コード]** グループの、 **[Visual Basic]** をクリックします。
 
@@ -202,22 +205,22 @@ ms.locfileid: "63438670"
     End Sub
     ```
 
-5. **F5**キーを押します。
+5. **F5** キーを押します。
 
 6. 新しい表がドキュメントに追加されたことを確認します。
 
 7. 変更を保存せずに Word を終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Office ソリューションでの VBA からのコード呼び出しについて詳しくは、次のトピックを参照してください。
 
-- VBA から Visual C# カスタマイズのコードを呼び出します。 このプロセスは、Visual Basic のプロセスとは異なります。 詳細については、「[チュートリアル:コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)します。
+- VBA から Visual C# カスタマイズのコードを呼び出します。 このプロセスは、Visual Basic のプロセスとは異なります。 詳細については、「 [チュートリアル: Visual C&#35; プロジェクトの VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)」を参照してください。
 
-- VBA から VSTO アドインのコードを呼び出します。 詳細については、「[チュートリアル:VSTO アドイン内のコードを VBA から呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)します。
+- VBA から VSTO アドインのコードを呼び出します。 詳細については、「 [チュートリアル: VBA から VSTO アドインのコードを呼び出す](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [VBA とドキュメント レベルのカスタマイズを結合します。](../vsto/combining-vba-and-document-level-customizations.md)
-- [ドキュメント レベルのカスタマイズのプログラミング](../vsto/programming-document-level-customizations.md)
-- [方法: Visual Basic プロジェクトでのコードを VBA に公開します。](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [方法: Visual C での vba コードに公開&#35;プロジェクト](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [チュートリアル: コードを Visual C での VBA から呼び出す&#35;プロジェクト](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- [VBA とドキュメントレベルのカスタマイズの結合](../vsto/combining-vba-and-document-level-customizations.md)
+- [プログラムドキュメントレベルのカスタマイズ](../vsto/programming-document-level-customizations.md)
+- [方法: Visual Basic プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [方法: Visual C&#35; プロジェクトでコードを VBA に公開する](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [チュートリアル: Visual C&#35; プロジェクトで VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)

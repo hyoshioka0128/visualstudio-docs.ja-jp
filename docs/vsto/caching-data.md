@@ -1,5 +1,7 @@
 ---
 title: キャッシュ データ
+description: ドキュメントレベルのカスタマイズでデータオブジェクトをキャッシュして、Microsoft Office Word または Excel を開かずにデータにアクセスできるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db22378477daffd4562a9d60c6b30bc7b96e58e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62939416"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847872"
 ---
 # <a name="cache-data"></a>キャッシュ データ
   ドキュメントレベルのカスタマイズでデータオブジェクトをキャッシュして、データにアクセスできるようにすることも、Word や Excel Microsoft Office Microsoft Office を開かずにデータにアクセスすることもできます。 オブジェクトをキャッシュするには、オブジェクトのデータ型が特定の要件を満たしている必要があります。 .NET Framework の多くの一般的なデータ型は、、、などの要件を満たし <xref:System.String> <xref:System.Data.DataSet> て <xref:System.Data.DataTable> います。
@@ -79,11 +81,11 @@ ms.locfileid: "62939416"
  詳細については、「 [方法: パスワードで保護されたドキュメントでデータをキャッシュする](../vsto/how-to-cache-data-in-a-password-protected-document.md)」を参照してください。
 
 ## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>データキャッシュに null 値を追加するときにデータが失われないようにする
- オブジェクトをデータキャッシュに追加する場合、ドキュメントを保存して閉じる前に、キャッシュされたすべてのオブジェクトを**null** 以外の値に初期化する必要があります。 ドキュメントを保存して閉じたときに、キャッシュされたオブジェクトに **null** 値がある場合、は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] キャッシュされたすべてのオブジェクトをデータキャッシュから自動的に削除します。
+ オブジェクトをデータキャッシュに追加する場合、ドキュメントを保存して閉じる前に、キャッシュされたすべてのオブジェクトを **null** 以外の値に初期化する必要があります。 ドキュメントを保存して閉じたときに、キャッシュされたオブジェクトに **null** 値がある場合、は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] キャッシュされたすべてのオブジェクトをデータキャッシュから自動的に削除します。
 
  デザイン時に属性を使用して、 **null** 値を持つオブジェクトをデータキャッシュに追加する場合は、クラスを使用して、 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> ドキュメントを <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 開く前にキャッシュされたデータオブジェクトを初期化できます。 これは、Word または Excel がインストールされていないサーバーでキャッシュされたデータを初期化してから、ドキュメントがエンドユーザーによって開かれるようにする場合に便利です。 詳細については、「 [サーバー上のドキュメントのデータにアクセス](../vsto/accessing-data-in-documents-on-the-server.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: オフラインまたはサーバーで使用するデータをキャッシュする](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [方法: Office ドキュメント内のデータソースをプログラムによってキャッシュする](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [方法: パスワードで保護されたドキュメントでデータをキャッシュする](../vsto/how-to-cache-data-in-a-password-protected-document.md)

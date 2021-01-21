@@ -1,5 +1,8 @@
 ---
 title: コードを使用して選択したセルを含む行の書式を変更する
+description: 選択したセルを含む行全体のフォントを変更して、テキストが太字になるようにする方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 088b24a93cb82cc7807a996c26c9b2bbbabec04e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541558"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847950"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>方法: 選択したセルを含むワークシートの行の書式をプログラムによって変更する
   選択したセルを含む行全体のフォントを変更して、テキストが太字になるようにすることができます。

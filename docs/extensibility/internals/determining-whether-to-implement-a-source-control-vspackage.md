@@ -1,5 +1,6 @@
 ---
 title: ソース管理 VSPackage を実装する場合
+description: Visual Studio ソース管理ソリューションの拡張に使用できるソース管理プラグインとソース管理 Vspackage の選択肢について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f96191115a509e07b5263f1d10d53ea3b2cc9c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037043"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329823"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>ソース管理 VSPackage を実装するかどうかを判断する
 
@@ -40,6 +41,6 @@ ms.locfileid: "90037043"
 
 4. クエリの編集およびクエリの保存イベントを処理します (「 [クエリの編集クエリの保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)」を参照してください)。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ソース管理プラグインを作成する](../../extensibility/internals/creating-a-source-control-plug-in.md)

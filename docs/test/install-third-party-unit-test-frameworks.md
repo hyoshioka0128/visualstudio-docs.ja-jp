@@ -1,5 +1,7 @@
 ---
 title: サードパーティ製の単体テスト フレームワークをインストールする
+description: Visual Studio テスト エクスプローラーでは、エクスプローラーに対するアダプター インターフェイスが開発されている任意の単体テスト フレームワークからテストを実行できます。
+ms.custom: SEO-VS-2020
 ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
@@ -7,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c274f203b9bf2746716c0625c61141aaa332977a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387188"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329979"
 ---
 # <a name="install-unit-test-frameworks"></a>単体テスト フレームワークのインストール
 
@@ -29,11 +31,11 @@ Visual Studio ソリューションには異なるフレームワークを使用
 
 ## <a name="acquire-frameworks"></a>フレームワークを取得する
 
-サード パーティ製の単体テスト フレームワークをインストールするには、**NuGet パッケージ マネージャー**を使用します。
+サード パーティ製の単体テスト フレームワークをインストールするには、**NuGet パッケージ マネージャー** を使用します。
 
 1. テスト コードが含まれているプロジェクトを右クリックして、 **[NuGet パッケージの管理]** を選択します。
 
-2. **NuGet パッケージ マネージャー**で、インストールするテスト フレームワークを検索して、 **[インストール]** をクリックします。
+2. **NuGet パッケージ マネージャー** で、インストールするテスト フレームワークを検索して、 **[インストール]** をクリックします。
 
    ![Visual Studio の NuGet パッケージ マネージャー](media/vs-2019/nuget-package-manager.png)
 

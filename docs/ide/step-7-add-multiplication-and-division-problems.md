@@ -1,5 +1,7 @@
 ---
 title: '手順 7: 乗算問題と除算問題の追加'
+description: 乗算と除算の問題を追加する方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a1744b68ad043dcee21dcb5995fbd1908bd81b
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 84dc1df79392aeefe331746c52d2fbe8dbb91e8e
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579778"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479499"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>手順 7: 乗算問題と除算問題の追加
 
@@ -58,10 +60,10 @@ ms.locfileid: "77579778"
      次の図に示すように、クイズの受け手はクイズを完了するためには 4 つの問題に答える必要があります。
 
      ![4 つの問題がある計算クイズ](../ide/media/express_finishedquiz.png)<br/>
-***4 つの問題がある*** *計算クイズ*
+*4 つの問題がある **計算クイズ** _ _*
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
 - チュートリアルの次の手順に進むには、「 **[手順 8:クイズのカスタマイズ](../ide/step-8-customize-the-quiz.md)** 」をご覧ください。
 
-- チュートリアルの前の手順に戻るには、「[手順 6:減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。
+- チュートリアルの前の手順に戻るには、「[手順 6: 減算問題の追加](../ide/step-6-add-a-subtraction-problem.md)」を参照してください。

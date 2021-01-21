@@ -1,5 +1,7 @@
 ---
 title: 'ワークフローデザイナー: ワークフロープロジェクトに新しい項目を追加する'
+description: ワークフロープロジェクトを作成した後に、ワークフローアクティビティ、デザイナー、およびその他の使い慣れた Visual Studio 項目をプロジェクトに追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/25/2018
 ms.topic: how-to
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53737eb421f4194b00354899e373441ff0a97227
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: af6563d21ce41d54e66f474de126c3bd4070ff8a
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814617"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437971"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>方法: ワークフロープロジェクトに新しい項目を追加する
 
@@ -37,7 +39,7 @@ ms.locfileid: "85814617"
 1. 左側のウィンドウで、[ **ワークフロー** ] カテゴリを選択し、ワークフロー項目テンプレートを選択します。
 
    > [!NOTE]
-   > **ワークフロー**カテゴリが表示されない場合は、まず Visual Studio の**Windows Workflow Foundation**コンポーネントをインストールします。 詳細については、「 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)」を参照してください。
+   > **ワークフロー** カテゴリが表示されない場合は、まず Visual Studio の **Windows Workflow Foundation** コンポーネントをインストールします。 詳細については、「 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)」を参照してください。
 
 1. ダイアログボックスの下部にある [ **名前** ] ボックスに、項目の名前を入力します。
 

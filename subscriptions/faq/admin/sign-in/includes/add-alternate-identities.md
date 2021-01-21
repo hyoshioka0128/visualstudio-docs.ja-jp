@@ -8,11 +8,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: e31cfc372b76fa8cbc0fce4d105c11da9c453fd0
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386101"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970365"
 ---
 ## <a name="what-does-it-mean-when-my-subscribers-add-alternate-identities"></a>サブスクライバーによる代替 ID の追加とはどういう意味ですか?
 

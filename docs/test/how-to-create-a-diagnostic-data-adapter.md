@@ -1,5 +1,7 @@
 ---
 title: '方法: 診断データ アダプターを作成する'
+description: Visual Studio を使用してクラス ライブラリを作成し、診断データ アダプター API を追加することで、診断データ アダプターを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,16 +10,16 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43519a96e0718a0864065864d9dd4fbd2ac16b23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 730a3e2618bd5f424d21eaf3eb4ef3621ec1838e
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288079"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95439850"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>方法: 診断データ アダプターを作成する
 
-*診断データ アダプター*を作成するには、Visual Studio を使用してクラス ライブラリを作成し、Visual Studio Enterprise に用意されている診断データ アダプター API をクラス ライブラリに追加します。 テストの実行中に発生したイベントを処理するときに、フレームワークによって提供される <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に対し、ストリームまたはファイルとして情報を送信します。 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に送信したストリームまたはファイルは、テスト完了時点でテスト結果に対する添付ファイルとして保存されます。 テスト結果からバグを作成すると、または [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] を使用すると、ファイルはバグにもリンクされます。
+*診断データ アダプター* を作成するには、Visual Studio を使用してクラス ライブラリを作成し、Visual Studio Enterprise に用意されている診断データ アダプター API をクラス ライブラリに追加します。 テストの実行中に発生したイベントを処理するときに、フレームワークによって提供される <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に対し、ストリームまたはファイルとして情報を送信します。 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> に送信したストリームまたはファイルは、テスト完了時点でテスト結果に対する添付ファイルとして保存されます。 テスト結果からバグを作成すると、または [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] を使用すると、ファイルはバグにもリンクされます。
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -50,11 +52,11 @@ ms.locfileid: "85288079"
 
 ## <a name="create-and-install-a-diagnostic-data-adapter"></a>診断データ アダプターを作成してインストールする
 
-1. 新しい**クラス ライブラリ** プロジェクトを作成します。
+1. 新しい **クラス ライブラリ** プロジェクトを作成します。
 
 2. アセンブリ **Microsoft.VisualStudio.QualityTools.ExecutionCommon** を追加します。
 
-   1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
+   1. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
 
    2. **[.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll** を探します。
 
@@ -62,7 +64,7 @@ ms.locfileid: "85288079"
 
 3. アセンブリ **Microsoft.VisualStudio.QualityTools.Common** を追加します。
 
-   1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
+   1. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、 **[参照の追加]** コマンドを選択します。
 
    2. **[/.NET]** を選択し、**Microsoft.VisualStudio.QualityTools.Common.dll** を探します。
 
@@ -245,7 +247,7 @@ ms.locfileid: "85288079"
     >
     > インストール ディレクトリに基づく構成ファイルの他の例は、次のパス内にあります。*Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*。
 
-     テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)に関するページを参照してください。
+     テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)に関するページを参照してください。
 
      構成ファイルのインストールの詳細については、[カスタム診断データ アダプターをインストールする方法](../test/quickstart-create-a-load-test-project.md)に関するページを参照してください。
 
@@ -253,7 +255,7 @@ ms.locfileid: "85288079"
 
 13. カスタム エディターのインストールの詳細については、[カスタム診断データ アダプターをインストールする方法](../test/quickstart-create-a-load-test-project.md)に関するページを参照してください。
 
-14. テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)に関するページを参照してください。
+14. テストの実行時に環境を使用するようにテストの設定を構成する方法の詳細については、[手動テストで診断データを収集する方法 (Azure Test Plans) ](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)に関するページを参照してください。
 
 15. 診断データ アダプターを選択するには、まず既存のテスト設定を選択するか、Visual Studio から、または Microsoft Test Manager (Visual Studio 2017 では非推奨) から新しく作成する必要があります。 アダプターは、テストの設定の **[データと診断]** タブに、クラスに割り当てた表示名と共に表示されます。
 
@@ -273,6 +275,6 @@ ms.locfileid: "85288079"
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [テスト設定を使用して診断情報を収集する](../test/collect-diagnostic-information-using-test-settings.md)
-- [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
-- [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [手動テストでの診断データの収集 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
+- [テスト中の診断データの収集 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
 - [方法: 診断データ アダプター用のデータのカスタム エディターを作成する](../test/quickstart-create-a-load-test-project.md)

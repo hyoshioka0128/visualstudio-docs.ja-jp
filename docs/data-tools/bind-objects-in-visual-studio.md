@@ -1,5 +1,7 @@
 ---
 title: カスタムオブジェクトのデータバインド
+description: Visual Studio のデータソースとしてオブジェクトをバインドします。 アプリケーションのデータソースとしてカスタムオブジェクトを操作するには、デザイン時ツールを使用します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a1d72ed179324b8ab7682e485fbaaf8f34b25cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad8b5f502953912e2de7383afa4a86ff749c5724
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282931"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518595"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Visual Studio でオブジェクトをデータソースとしてバインドする
 

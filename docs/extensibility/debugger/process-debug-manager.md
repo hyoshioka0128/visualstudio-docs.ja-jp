@@ -1,5 +1,7 @@
 ---
 title: プロセスデバッグマネージャー |Microsoft Docs
+description: プロセスデバッグマネージャーについて説明します。これは、セッションデバッグマネージャーおよびデバッグエンジンでプログラムを使用できるようにする Visual Studio のコンポーネントです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e133c7b335c391208f634537e19a437c317ba26b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: febf7c6966fcf3f2ac64d62bb46f0aaf398c6bc4
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738253"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606477"
 ---
 # <a name="process-debug-manager"></a>プロセスデバッグマネージャー
 プロセスデバッグマネージャー (PDM) は、プログラムとプロセスを管理し、セッションデバッグマネージャーおよびデバッグエンジンで使用できるようにする Visual Studio のコンポーネントです。
@@ -26,6 +28,6 @@ ms.locfileid: "80738253"
 ## <a name="see-also"></a>関連項目
 - [処理](../../extensibility/debugger/processes.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)
-- [ポート](../../extensibility/debugger/ports.md)
+- [Ports](../../extensibility/debugger/ports.md)
 - [Programs](../../extensibility/debugger/programs.md)
 - [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)

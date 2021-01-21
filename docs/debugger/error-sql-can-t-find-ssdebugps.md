@@ -1,5 +1,5 @@
 ---
-title: エラー - SQL が SSDEBUGPS を見つけることができません | Microsoft Docs
+title: SQL が SSDEBUGPS を見つけることができません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a1a603aa44ceed46c160443508080072046e35
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 50c8b6c2385879e4cf41c8cc2aea57715050b5e2
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88706478"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851789"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>エラー :SQL が SSDEBUGPS を見つけることができません
 

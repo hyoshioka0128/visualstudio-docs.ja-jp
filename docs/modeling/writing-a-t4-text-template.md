@@ -1,5 +1,7 @@
 ---
 title: T4 テキスト テンプレートの作成
+description: T4 テキストテンプレートについて、およびディレクティブ、テキストブロック、およびコントロールブロックを含むテキストテンプレートを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75593487"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361223"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 テキスト テンプレートの作成
-テキスト テンプレートには、そのテンプレートから生成されるテキストが含まれます。 たとえば、web ページを作成するテンプレートには、" \<html> ..." が含まれます。HTML ページの他のすべての標準部分。 テンプレートに挿入される *コントロールブロック*は、プログラムコードのフラグメントです。 コントロール ブロックはさまざまな値を提供すると共に、テキストの一部を条件付きにしたり、繰り返したりできるようにします。
+テキスト テンプレートには、そのテンプレートから生成されるテキストが含まれます。 たとえば、web ページを作成するテンプレートには、" \<html> ..." が含まれます。HTML ページの他のすべての標準部分。 テンプレートに挿入される *コントロールブロック* は、プログラムコードのフラグメントです。 コントロール ブロックはさまざまな値を提供すると共に、テキストの一部を条件付きにしたり、繰り返したりできるようにします。
 
  この構造によって、テンプレートの作成が簡単になります。生成されるファイルのプロトタイプを最初に作成しておき、結果を変化させるコントロール ブロックは徐々に挿入するという手法を利用できるためです。
 
@@ -229,16 +231,16 @@ private void WriteSquareLine(int i)
 
  ソース ファイルを読み取る方法はいくつかあります。
 
- **テキストテンプレート内のファイルを読み取り**ます。 これは、テンプレートにデータを取り込む方法としては最も簡単です。
+ **テキストテンプレート内のファイルを読み取り** ます。 これは、テンプレートにデータを取り込む方法としては最も簡単です。
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **ナビゲート可能なモデルとしてファイルを読み込み**ます。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 また、 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) を使用して、XML データを読み取ることができる一連のクラスを作成することもできます。
+ **ナビゲート可能なモデルとしてファイルを読み込み** ます。 より効果的な方法は、テキスト テンプレート コードでナビゲートできるモデルとしてデータを読み取ることです。 たとえば、XML ファイルを読み込み、XPath 式でそのファイル内をナビゲートできます。 また、 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) を使用して、XML データを読み取ることができる一連のクラスを作成することもできます。
 
- **ダイアグラムまたはフォームでモデルファイルを編集します。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] には、モデルを図または Windows フォームとして編集できるツールが用意されています。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] また、は、モデルの構造を反映する、厳密に型指定されたクラスのセットも作成します。 詳細については、「 [ドメイン固有言語からコードを生成する](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
+ **ダイアグラムまたはフォームでモデルファイルを編集します。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] には、モデルを図または Windows フォームとして編集できるツールが用意されています。 このため、生成されたアプリケーションのユーザーと、モデルについて効率的に話し合うことができます。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] また、は、モデルの構造を反映する、厳密に型指定されたクラスのセットも作成します。 詳細については、「 [Domain-Specific 言語からのコードの生成](../modeling/generating-code-from-a-domain-specific-language.md)」を参照してください。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>デザイン時テンプレートの相対ファイル パス
  [デザイン時テキストテンプレート](../modeling/design-time-code-generation-by-using-t4-text-templates.md)で、テキストテンプレートを基準とした相対的な場所にあるファイルを参照する場合は、を使用 `this.Host.ResolvePath()` します。 また、`hostspecific="true"` ディレクティブで `template` を設定する必要もあります。

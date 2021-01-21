@@ -8,11 +8,11 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
 ms.openlocfilehash: a2d0abc6bd8e9068881f56856a8696a5658f1a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 593bdd2da62633f8d1f1eef70d0238e2682f3e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84200503"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "91838339"
 ---
 ## <a name="im-a-new-administrator-where-is-everything-i-need-to-know"></a>私は新しく管理者になりました。 知る必要があるすべてのものがあるのはどこですか?
 

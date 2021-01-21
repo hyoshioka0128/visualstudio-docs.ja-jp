@@ -1,5 +1,7 @@
 ---
 title: Spy++ リファレンス | Microsoft Docs
+description: Spy++ デバッグ ツール内の各メニュー コマンドおよびダイアログ ボックスについて説明している記事への参照リンクの一覧を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b28c737f0a1c17d302cc2924b5d2c3ddc9c1dbb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1738b073c8f271e599c1e14bd852b4ebc654dee
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902557"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98147975"
 ---
 # <a name="spy-reference"></a>Spy++ リファレンス
 Spy++ の各メニューとダイアログ ボックスの説明については、以下に一覧表示されているセクションを参照してください。
@@ -24,7 +26,7 @@ Spy++ の各メニューとダイアログ ボックスの説明については�
 ## <a name="in-this-section"></a>このセクションの内容
  [メニュー コマンド](../debugger/menu-commands.md) 各 Spy++ メニューで使用できるコマンドについて説明します。
 
- [[フォント] ダイアログボックス](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Spy++ ビュー ウィンドウで使用される文字フォントを構成するために使用されます。
+ [[フォント] ダイアログ ボックス](../debugger/font-dialog-box-microsoft-spy-increment-help.md) Spy++ ビュー ウィンドウで使用される文字フォントを構成するために使用されます。
 
  [Spy++ ビュー用の検索ツール](../debugger/search-tools-for-spy-increment-views.md) Spy++ ビュー ウィンドウで特定のノードを検索するために使用されるダイアログ ボックス。
 

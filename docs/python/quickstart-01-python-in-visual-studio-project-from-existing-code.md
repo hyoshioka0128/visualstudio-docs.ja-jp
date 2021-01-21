@@ -1,21 +1,21 @@
 ---
-title: 'クイック スタート: 既存のコードから Python プロジェクトを作成する'
+title: クイック スタート - コードから Python プロジェクトを作成する
 description: このクイック スタートでは、便利なテンプレートを利用し、既存のフォルダーから Python の Visual Studio プロジェクトを作成します。
 ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 39be066e63a04c08eecd92395757d09b88333965
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62429089"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100749"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>クイック スタート: 既存のコードから Python プロジェクトを作成する
 

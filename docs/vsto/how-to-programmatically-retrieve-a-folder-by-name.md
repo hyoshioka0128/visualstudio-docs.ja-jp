@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって名前を指定してフォルダーを取得する'
+description: Visual Studio を使用してプログラムでフォルダーを名前で取得し、フォルダーの内容を表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 901de848b22f344ded2d71b11e9859917b8382d4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4e615897fedcbfa41ad7958e93354718d9ccfbc
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547109"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528572"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>方法: プログラムによって名前を指定してフォルダーを取得する
   この例では、名前付きカスタムフォルダーへの参照を取得し、そのフォルダーの内容を表示します。

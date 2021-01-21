@@ -1,10 +1,7 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
-        "group": "vs-2015",
-        "src": "./vs-2015",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -12,13 +9,12 @@
         "exclude": [
           "**/obj/**",
           "vsdocsdocs/**",
-          "**/includes/**",
-          "missingapi.yml"
-        ]
+          "**/includes/**"
+        ],
+        "src": "./vs-2015",
+        "group": "vs-2015"
       },
       {
-        "group": "vs-2017-2019",
-        "src": "./",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -27,15 +23,14 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**",
-          "missingapi.yml",
           "vs-2015/**"
-        ]
+        ],
+        "src": "./",
+        "group": "vs-2017-2019"
       }
     ],
     "resource": [
       {
-        "group": "vs-2015",
-        "src": "./vs-2015",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -45,13 +40,12 @@
         "exclude": [
           "**/obj/**",
           "vsdocsdocs/**",
-          "**/includes/**",
-          "missingapi.yml"
-        ]
+          "**/includes/**"
+        ],
+        "src": "./vs-2015",
+        "group": "vs-2015"
       },
       {
-        "group": "vs-2017-2019",
-        "src": "./",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -62,9 +56,10 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**",
-          "missingapi.yml",
           "vs-2015/**"
-        ]
+        ],
+        "src": "./",
+        "group": "vs-2017-2019"
       }
     ],
     "overwrite": [],
@@ -72,8 +67,9 @@
     "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.ja-jp",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/",
+      "feedback_product_url": "https://developercommunity2.visualstudio.com/search?space=8",
       "breadcrumb_path": "/visualstudio/_breadcrumb/toc.json",
+      "bilingual_type": "hover over",
       "extendBreadcrumb": "true",
       "manager": "jillfra",
       "author": "jillre",
@@ -92,6 +88,7 @@
       "featureFlags": [
         "enable_uhf_ppe"
       ],
+      "archive_url": "/previous-versions/visualstudio",
       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
@@ -100,6 +97,9 @@
       ]
     },
     "fileMetadata": {
+      "open_to_public_contributors": {
+        "vs-2015/**/**.md": false
+      },
       "ms.prod": {
         "rtvs/**/**.md": "visual-studio-dev15",
         "vs-2015/**/**.md": "visual-studio-dev14"
@@ -150,21 +150,25 @@
         "vs-2015/extensibility/**/*.md": [
           "VS Extensibility"
         ]
+      },
+      "exclude_monikers": {
+        "vs-2015/**/*.md": [
+          "vs-2015"
+        ]
       }
     },
     "template": [],
-    "xref": [
-      "missingapi.yml"
-    ],
     "dest": "vsdocsdocs",
+    "markdownEngineName": "markdig",
+    "xref": [],
     "groups": {
       "vs-2015": {
-        "moniker_range": "vs-2015",
-        "dest": "vs-2015-dest"
+        "dest": "vs-2015-dest",
+        "moniker_range": "vs-2015"
       },
       "vs-2017-2019": {
-        "moniker_range": ">= vs-2017",
-        "dest": "vs-2017-2019-dest"
+        "dest": "vs-2017-2019-dest",
+        "moniker_range": ">= vs-2017"
       }
     }
   }

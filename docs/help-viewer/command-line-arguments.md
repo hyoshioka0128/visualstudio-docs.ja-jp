@@ -1,5 +1,6 @@
 ---
 title: ヘルプ コンテンツ マネージャーのコマンド ライン引数
+description: ヘルプコンテンツマネージャー (HlpCtntMgr.exe) のコマンドライン引数を使用して、ローカルヘルプコンテンツを配置および管理する方法を指定します。
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631975"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879048"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>ヘルプ コンテンツ マネージャーのコマンド ライン引数
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 次の表に、ヘルプ コンテンツ マネージャーのコマンド ライン ツールで使用できるスイッチと引数の定義を示します。
 
-|Switch|必須|引数|
+|スイッチ|必須|引数|
 |------------|---------------|---------------|
 |/operation|はい|-   **Install** -- 指定されたインストール ソースからローカル コンテンツ ストアにブックを追加します。<br />     このスイッチには、/booklist 引数、/sourceURI 引数、または両方が必要です。 /sourceURI 引数を指定しない場合、Visual Studio の既定の URI がインストール ソースとして使用されます。 /booklist 引数を指定しない場合、/sourceUri のすべてのブックがインストールされます。<br />-   **Uninstall** -- 指定するブックをローカル コンテンツ ストアから削除します。<br />     このスイッチには、/booklist 引数または /sourceURI 引数が必要です。  /sourceURI 引数を指定すると、すべてのブックが削除され、/booklist 引数は無視されます。<br />-   **Move** -- 指定するパスにローカル ストアを移動します。 既定のローカルストアパスは、 *% Programdata%* の下のディレクトリとして設定されています<br />     このスイッチには、/locationPath 引数と /catalogName 引数が必要です。 有効でないパスを指定した場合、またはドライブにコンテンツを保持するのに十分な空き領域がない場合は、エラー メッセージがイベント ログに記録されます。<br />-   **Refresh** -- インストール後または最近の更新後に変更されたトピックを更新します。<br />     このスイッチには /sourceURI 引数が必要です。|
 |/catalogName|はい|コンテンツ カタログの名前を指定します。 Visual Studio 2017 および Visual Studio 2019 の場合、これは VisualStudio15 です。|

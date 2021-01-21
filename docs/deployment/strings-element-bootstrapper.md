@@ -1,5 +1,7 @@
 ---
 title: '&lt;Strings &gt; 要素 (ブートストラップ) |Microsoft Docs'
+description: Strings 要素は、製品名、パッケージ名、およびインストールエラーメッセージのローカライズされた文字列を定義します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747407"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350479"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; 要素 (ブートストラップ)
 製品名、パッケージ名、およびインストールエラーメッセージのローカライズされた文字列を定義します。
@@ -42,7 +44,7 @@ ms.locfileid: "66747407"
 ## <a name="elements-and-attributes"></a>要素と属性
  要素は `Strings` 要素の子です `Package` 。 属性はありません。
 
-## <a name="string"></a>String
+## <a name="string"></a>文字列型
  要素は `String` 要素の子です `Strings` 。 `Strings`要素には、1つまたは複数の要素を含めることができ `String` ます。
 
  `String` には次の属性があります。

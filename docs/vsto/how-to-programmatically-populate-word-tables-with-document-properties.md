@@ -1,5 +1,8 @@
 ---
 title: プログラムによる Word の表のドキュメントプロパティの設定
+description: Visual Studio を使用して、Microsoft Word 文書のドキュメントプロパティを含むテーブルにプログラムでデータを設定する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 92d9b38c6a1e770749849966deec7f503f9eeb5d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537814"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523789"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>方法: プログラムによって document プロパティを Word の表に読み込む
   次の例ではドキュメントの先頭に Microsoft Office Word の表を作成し、ホスト ドキュメントのプロパティのデータをそこに読み込みます。

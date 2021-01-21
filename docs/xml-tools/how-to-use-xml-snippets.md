@@ -1,5 +1,7 @@
 ---
 title: XML スニペットの使用方法
+description: XML エディターでコマンドを使用して XML スニペットを挿入する方法、または選択したテキストを囲む XML スニペットをラップする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72c5ef5d5c33c46a9f09eb604d0a2e40cf9a6e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bebca3a27d11015388e45ff6839f446506e716c
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815917"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95970612"
 ---
 # <a name="how-to-use-xml-snippets"></a>方法: XML スニペットを使用する
 
@@ -52,7 +54,7 @@ XML スニペットがエディターに追加されると、スニペット内�
 
 1. XML スニペットを挿入する位置にカーソルを置きます。
 
-2. ファイルに追加する XML スニペットの名前の入力を開始します。 オートコンプリートがオンになっている場合は、IntelliSense の入力候補の一覧が表示されます。 表示されない場合は、**Ctrl**+**スペース バー**を押してアクティブにします。
+2. ファイルに追加する XML スニペットの名前の入力を開始します。 オートコンプリートがオンになっている場合は、IntelliSense の入力候補の一覧が表示されます。 表示されない場合は、**Ctrl**+**スペース バー** を押してアクティブにします。
 
 3. 入力候補の一覧から XML スニペットを選択します。
 

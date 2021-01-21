@@ -1,5 +1,7 @@
 ---
 title: 複数バージョンの Visual Studio をインストールする
+description: 以前のバージョンまたは最新バージョンの Visual Studio が既にインストールされたコンピューターに Visual Studio をインストールする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 717a9cd3f4157c276ce7d0dd5c41cac625581ba6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250254"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928633"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -28,7 +30,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 * Visual Studio 2015 で作成されたソリューションを Visual Studio 2017 を使用して開く場合、Visual Studio 2017 に固有の機能が実装されていない限り、後で以前のバージョンのソリューションを開き、再度変更することができます。
 
-* Visual Studio 2015 以前のバージョンで作成されたソリューションを Visual Studio 2017 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2017 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)に関するページを参照してください。
+* Visual Studio 2015 以前のバージョンで作成されたソリューションを Visual Studio 2017 を使用して開こうとする場合、ご利用のプロジェクトとファイルを Visual Studio 2017 に対応するように変更することが必要な場合があります。 詳細については、[Visual Studio プロジェクトの移植、移行、およびアップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -50,7 +52,7 @@ Visual Studio は、以前のバージョンまたは最新バージョンの Vi
 
 Visual Studio のあるマイナー バージョンから次のバージョンにアップグレードする場合、既定では、Visual Studio インストーラーによって、現在のインストールがそのチャネルの次のバージョンに更新されます。 たとえば、16.6.4 Preview をインストールすると、インストーラーでは現在の 16.6.3 Preview のインストールの置き換えが試行されます。これは、両方のバージョンが 16.6 Preview チャネルにあるためです。 これにより、古いバージョンの Visual Studio がマシンの領域を確実に占有しないようにすることができます。 場合によっては、複数のマイナー リリースをサイドバイサイドでインストールすると役立つ場合があります。 この例では、これは同じマシン上に 16.6.3 と 16.6.4 の両方が存在することを意味します。
 
-1. 既存のバージョンの Visual Studio と共にサイドバイサイドでインストールするマイナー バージョンの [Visual Studio ブートストラップ ファイル](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)をダウンロードします。
+1. 既存のバージョンの Visual Studio と共にサイドバイサイドでインストールするマイナー バージョンの [Visual Studio ブートストラップ ファイル](/visualstudio/releases/2019/history#installing-an-earlier-release)をダウンロードします。
 2. 管理者モードでコマンド プロンプトを開きます。 これを行うには、Windows のスタート メニューを開き、「cmd」と入力し、コマンド プロンプトの検索結果を右クリックし、 **[管理者として実行]** を選択します。 コマンド プロンプトで、Visual Studio ブートストラップ ファイルが配置されているフォルダーにディレクトリを変更します。
 3. 次のコマンドを実行して、インストール場所に新しいフォルダーのパスを指定し、.exe ファイル名を、インストールするバージョンの Visual Studio の適切なブートストラップ名に置き換えます。 .exe ファイル名は、以下のファイルと同じか、同様の名前にすることをお勧めします。
    * Visual Studio Community の場合は vs_community.exe
@@ -65,7 +67,7 @@ Visual Studio のあるマイナー バージョンから次のバージョン�
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework のバージョンと複数バージョンのインストール
 
-Visual Basic、Visual C#、および Visual F# のプロジェクトでは、**プロジェクト デザイナー** の **[ターゲット フレームワーク]** オプションを使用して、プロジェクトで使用する .NET Framework のバージョンを指定します。 C++ プロジェクトでは、.vcxproj ファイルを変更すると、ターゲット フレームワークを手動で変更できます。 詳細については、「[.NET Framework のバージョンの互換性](/dotnet/framework/migration-guide/version-compatibility)」ページを参照してください。
+Visual Basic、Visual C#、および Visual F# のプロジェクトでは、 **プロジェクト デザイナー** の **[ターゲット フレームワーク]** オプションを使用して、プロジェクトで使用する .NET Framework のバージョンを指定します。 C++ プロジェクトでは、.vcxproj ファイルを変更すると、ターゲット フレームワークを手動で変更できます。 詳細については、「[.NET Framework のバージョンの互換性](/dotnet/framework/migration-guide/version-compatibility)」ページを参照してください。
 
 プロジェクトを作成するときは、プロジェクトが対象とする .NET Framework のバージョンを **[新しいプロジェクト]** ダイアログ ボックスの **[.NET Framework]** の一覧で指定できます。
 
@@ -75,17 +77,17 @@ Visual Basic、Visual C#、および Visual F# のプロジェクトでは、**�
 
 | 言語 | トピック |
 |--------------|-----------|
-| Visual Basic | [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
-| Visual F# | [Visual Studio で Visual F# を使用して開発する](../ide/fsharp-visual-studio.md?view=vs-2017) |
+| Visual Basic | [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017&preserve-view=true) |
+| Visual C# | [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017&preserve-view=true) |
+| Visual F# | [Visual Studio で Visual F# を使用して開発する](../ide/fsharp-visual-studio.md?view=vs-2017&preserve-view=true) |
 |C++ | [方法: ターゲット フレームワークおよびプラットフォームのツールセットを変更する](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
-* [Visual Studio のインストール](install-visual-studio.md?view=vs-2017)
-* [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
+* [Visual Studio のインストール](install-visual-studio.md?view=vs-2017&preserve-view=true)
+* [Visual Studio プロジェクトのポート、移行、アップグレード](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017&preserve-view=true)
 * [C/C++ 分離アプリケーションおよび side-by-side アセンブリのビルド](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

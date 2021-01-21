@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183808"
+ms.lasthandoff: 11/01/2020
+ms.locfileid: "89599589"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Visual Studio デバッガーでシンボル (.pdb) ファイルとソース ファイルを指定します (C#、C++、Visual Basic、F#)
 
@@ -46,7 +46,7 @@ Visual Studio IDE で標準の [デバッグ] ビルド構成を使用してプ�
 
 - [Understand symbol files and Visual Studio symbol settings (シンボル ファイルと Visual Studio のシンボル設定について)](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with? (ビルドに使用したバイナリ ファイルと完全に一致させるために、Visual Studio でデバッガー シンボル ファイルが必要な理由)](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with? (ビルドに使用したバイナリ ファイルと完全に一致させるために、Visual Studio でデバッガー シンボル ファイルが必要な理由)](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>シンボル ファイルのしくみ
 
@@ -57,7 +57,7 @@ Visual Studio IDE で標準の [デバッグ] ビルド構成を使用してプ�
 
 シンボル ファイルには、ソース ファイルの場所と (必要に応じて) ソース ファイルの取得先のサーバーも示されます。
 
-デバッガーは、アプリがビルドされたときに作成された *.pdb* ファイル (つまり、元の *.pdb* ファイルまたはコピー) と完全に一致する *.pdb* ファイルのみを読み込みます。 この[正確な複製](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)が必要とされるのは、コード自体が変更されていない場合でも、アプリのレイアウトが変更される可能性があるためです。
+デバッガーは、アプリがビルドされたときに作成された *.pdb* ファイル (つまり、元の *.pdb* ファイルまたはコピー) と完全に一致する *.pdb* ファイルのみを読み込みます。 この[正確な複製](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)が必要とされるのは、コード自体が変更されていない場合でも、アプリのレイアウトが変更される可能性があるためです。
 
 > [!TIP]
 > プロジェクト ソース コードの外部にあるコード (プロジェクトから呼び出す Windows コードやサード パーティのコードなど) をデバッグするには、外部コードの *.pdb* ファイル (および必要に応じてソース ファイル) の場所を指定する必要があり、これらはアプリのビルドと完全に一致する必要があります。
@@ -123,7 +123,7 @@ Visual Studio IDE でプロジェクトをデバッグするとき、デバッ�
      1. ツールバーの ![ &#47; [オプション] &#47; [デバッグ] &#47; [シンボル] の新規サーバー アイコン](media/dbg_tools_options_foldersicon.png "[ツール] &#45; [オプション] &#45; [デバッグ] &#45; [シンボル] の新規サーバー アイコン") アイコンを選択します。
      1. **[VSTS シンボル サーバーに接続する]** ダイアログで、使用可能なシンボル サーバーのいずれかを選択し、 **[接続]** を選択します。
 
-   - シンボルの場所の読み込み順序を変更するには、**Ctrl**+**↑**/**Ctrl**+**↓**キーまたは**上**/**下**矢印アイコンを使用します。
+   - シンボルの場所の読み込み順序を変更するには、**Ctrl**+**↑**/**Ctrl**+**↓** キーまたは **上**/**下** 矢印アイコンを使用します。
    - URL またはパスを編集するには、エントリをダブルクリックするか、それを選択して **F2** キーを押します。
    - エントリを削除するには、それを選択してから **-** ボタンを選択します。
 
@@ -178,7 +178,7 @@ Visual Studio IDE で標準の **[デバッグ]** ビルド構成を使用して
 
 ### <a name="net-options"></a>.NET オプション
 
-*.pdb* ファイルを作成するには、 **/debug** でビルドします。 **/debug:full** または **/debug:pdbonly**でアプリケーションをビルドできます。 **/debug:full** でビルドすると、デバッグできるコードが生成されます。 **/debug:pdbonly** でビルドすると *.pdb* ファイルは生成されますが、JIT コンパイラにデバッグ情報が使用できることを示す `DebuggableAttribute` は生成されません。 デバッグが必要ないリリース ビルドで *.pdb* ファイルを生成する場合は、 **/debug:pdbonly** を使用します。 詳細については、「[/debug (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)」または「[/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。
+*.pdb* ファイルを作成するには、 **/debug** でビルドします。 **/debug:full** または **/debug:pdbonly** でアプリケーションをビルドできます。 **/debug:full** でビルドすると、デバッグできるコードが生成されます。 **/debug:pdbonly** でビルドすると *.pdb* ファイルは生成されますが、JIT コンパイラにデバッグ情報が使用できることを示す `DebuggableAttribute` は生成されません。 デバッグが必要ないリリース ビルドで *.pdb* ファイルを生成する場合は、 **/debug:pdbonly** を使用します。 詳細については、「[/debug (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)」または「[/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)」を参照してください。
 
 ### <a name="cc-options"></a>C/C++ オプション
 
@@ -224,7 +224,7 @@ ASP.NET アプリケーションの *web.config* ファイルをデバッグ モ
 
 |オプション|説明|
 |------------|-----------------|
-|**シンボルの読み込み**|シンボルがスキップされた、見つからない、または読み込まれていないモジュールに対して表示されます。 **[オプション]**  >  **[デバッグ]**  >  **[シンボル]** ページで指定した場所からシンボルを読み込もうとします。 シンボル ファイルが見つからないか、読み込まれない場合は、**ファイル エクスプローラー**が起動され、検索する新しい場所を指定できます。|
+|**シンボルの読み込み**|シンボルがスキップされた、見つからない、または読み込まれていないモジュールに対して表示されます。 **[オプション]**  >  **[デバッグ]**  >  **[シンボル]** ページで指定した場所からシンボルを読み込もうとします。 シンボル ファイルが見つからないか、読み込まれない場合は、**ファイル エクスプローラー** が起動され、検索する新しい場所を指定できます。|
 |**シンボルの読み込み情報**|読み込まれたシンボル ファイルの場所、またはデバッガーがファイルを見つけることができない場合は検索した場所が表示されます。|
 |**シンボルの設定**|**[オプション]**  >  **[デバッグ]**  >  **[シンボル]** ページが開き、このページでシンボルの場所を編集したり追加したりできます。|
 |**常に自動的に読み込む**|選択したシンボル ファイルが、デバッガーによって自動的に読み込まれるファイルの一覧に追加されます。|
@@ -245,7 +245,7 @@ ASP.NET アプリケーションの *web.config* ファイルをデバッグ モ
 **[シンボルが読み込まれていません] ドキュメント ページを使用して、見つからないシンボルを検索して読み込むには:**
 
 - 検索パスを変更するには、選択されていないパスを選択するか、 **[新しいパス]** または **[新しい VSTS パス]** を選択して新しいパスを入力または選択します。 **[読み込み]** を選択してパスを再び検索します。シンボル ファイルが見つかった場合は読み込まれます。
-- シンボル オプションをオーバーライドして検索パスを再び試すには、 **[\<executable-name> を参照して探す]** を選択します。 シンボル ファイルが見つかった場合は読み込まれます。そうでない場合は、**ファイル エクスプローラー**が開き、手動でシンボル ファイルを選択できます。
+- シンボル オプションをオーバーライドして検索パスを再び試すには、 **[\<executable-name> を参照して探す]** を選択します。 シンボル ファイルが見つかった場合は読み込まれます。そうでない場合は、**ファイル エクスプローラー** が開き、手動でシンボル ファイルを選択できます。
 - **[オプション]**  >  **[デバッグ]**  >  **[シンボル]** ページを開くには、 **[シンボルの設定の変更]** を選択します。
 - 新しいウィンドウに 1 回だけ逆アセンブリが表示されるようにするには、 **[逆アセンブルの表示]** を選択するか、 **[オプション] ダイアログ** を選択して、ソース ファイルまたはシンボル ファイルが見つからない場合は逆アセンブリを常に表示するオプションを設定します。
 - 検索された場所とその結果を表示するには、 **[シンボルの読み込み情報]** を展開します。
@@ -256,11 +256,11 @@ ASP.NET アプリケーションの *web.config* ファイルをデバッグ モ
 
 デバッガーがソース ファイルを検索する場所を指定したり、検索から特定のファイルを除外したりできます。
 
-1. **ソリューション エクスプローラー**でソリューションを選択してから、 **[プロパティ]** アイコンを選択するか、**Alt**+**Enter** を押すか、または右クリックして **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** でソリューションを選択してから、 **[プロパティ]** アイコンを選択するか、**Alt**+**Enter** を押すか、または右クリックして **[プロパティ]** を選択します。
 
 1. **[デバッグ ソース ファイル]** を選択します。
 
-1. **[ソース コードを含んでいるディレクトリ]** で、検索するソース コードの場所を入力または選択します。 場所を追加するには、 **[新しい行]** アイコンを使用します。場所の順序を変更するには、**上**/**下**矢印アイコンを使用します。場所を削除するには、**X** アイコンを使用します。
+1. **[ソース コードを含んでいるディレクトリ]** で、検索するソース コードの場所を入力または選択します。 場所を追加するには、 **[新しい行]** アイコンを使用します。場所の順序を変更するには、**上**/**下** 矢印アイコンを使用します。場所を削除するには、**X** アイコンを使用します。
 
    >[!NOTE]
    >デバッガーは指定されたディレクトリのみを検索します。 検索するすべてのサブディレクトリのエントリを追加する必要があります。

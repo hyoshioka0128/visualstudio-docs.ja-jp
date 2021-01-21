@@ -1,5 +1,7 @@
 ---
 title: Windows Communication Foundation と WCF Data Services
+description: 分散アプリケーションを作成できるように、Visual Studio での Windows Communication Foundation (WCF) サービスと WCF Data Services について調べます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 dev_langs:
@@ -35,12 +37,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1f24a33a482b1994d0d8667b4fc71cf968e4625
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 983ff598003a4f966b5173dc9ae78dd9aaa16580
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281046"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94997902"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio での Windows Communication Foundation サービスと WCF データ サービス
 
@@ -163,7 +165,7 @@ Visual Studio では、WCF クライアントを作成するタスクが簡素�
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>WCF サービスに使用できるエンドポイントを見つける
 
-1. **ソリューション エクスプローラー**で、サービス参照を含むプロジェクトの **app.config** ファイルを右クリックし、 **[開く]** をクリックします。 コード エディターにファイルが表示されます。
+1. **ソリューション エクスプローラー** で、サービス参照を含むプロジェクトの **app.config** ファイルを右クリックし、 **[開く]** をクリックします。 コード エディターにファイルが表示されます。
 
 2. ファイル内で `<Client>` タグを検索します。
 
@@ -186,7 +188,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ### <a name="to-call-a-service-method-asynchronously"></a>サービス メソッドを非同期に呼び出す
 
-1. **ソリューション エクスプローラー**で、サービス参照を選択します。
+1. **ソリューション エクスプローラー** で、サービス参照を選択します。
 
 2. **[プロジェクト]** メニューで、 **[サービス参照の構成]** をクリックします。
 
@@ -234,7 +236,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>単一のアセンブリで型の共有を無効にする
 
-1. **ソリューション エクスプローラー**で、サービス参照を選択します。
+1. **ソリューション エクスプローラー** で、サービス参照を選択します。
 
 2. **[プロジェクト]** メニューで、 **[サービス参照の構成]** をクリックします。
 
@@ -244,7 +246,7 @@ Windows Communication Foundation (WCF) サービスのほとんどのメソッ�
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>すべてのアセンブリで型の共有を無効にする
 
-1. **ソリューション エクスプローラー**で、サービス参照を選択します。
+1. **ソリューション エクスプローラー** で、サービス参照を選択します。
 
 2. **[プロジェクト]** メニューで、 **[サービス参照の構成]** をクリックします。
 

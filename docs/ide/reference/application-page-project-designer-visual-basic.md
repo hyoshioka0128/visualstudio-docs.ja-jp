@@ -1,5 +1,7 @@
 ---
 title: VB プロジェクトのプロパティの [アプリケーション] ページ
+description: Visual Basic プロジェクト デザイナーの [アプリケーション] ページを使用して、プロジェクトのアプリケーション設定とプロパティを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: reference
 f1_keywords:
@@ -13,18 +15,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 675c3fbaaf1a3e49648befebca4927299649b057
+ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595814"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "95871419"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 プロジェクト デザイナーの **[アプリケーション]** ページを使用して、プロジェクトのアプリケーション設定とプロパティを指定します。
 
-**[アプリケーション]** ページにアクセスするには、**ソリューション エクスプローラー**のプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]**  >  **[プロパティ]** を選択します。 **プロジェクト デザイナー**が表示されたら、 **[アプリケーション]** タブを選択します。
+**[アプリケーション]** ページにアクセスするには、**ソリューション エクスプローラー** のプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]**  >  **[プロパティ]** を選択します。 **プロジェクト デザイナー** が表示されたら、 **[アプリケーション]** タブを選択します。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -123,15 +125,15 @@ ClickOnce は `asInvoker` のレベル、または仮想化モードで機能し
 次の設定は、 **[Windows アプリケーション フレームワーク プロパティ]** セクションで使用できます。 これらのオプションは、 **[アプリケーション フレームワークを有効にする]** チェック ボックスがオンになっている場合にのみ使用できます。
 
 > [!TIP]
-> この後に続くセクションでは、Windows Presentation Foundation (WPF) アプリに固有の **Windows アプリケーション フレームワーク プロパティ**の設定について説明します。
+> この後に続くセクションでは、Windows Presentation Foundation (WPF) アプリに固有の **Windows アプリケーション フレームワーク プロパティ** の設定について説明します。
 
 ### <a name="enable-xp-visual-styles"></a>XP Visual スタイルを有効にする
 
-Windows XP Visual スタイル (*Windows XP テーマ*ともいう) を有効または無効にします。 Windows XP Visual スタイルを有効にすると、角が丸いコントロールや色が動的に切り替わるコントロールなどを使用できます。 既定値は有効です。
+Windows XP Visual スタイル (*Windows XP テーマ* ともいう) を有効または無効にします。 Windows XP Visual スタイルを有効にすると、角が丸いコントロールや色が動的に切り替わるコントロールなどを使用できます。 既定値は有効です。
 
 ### <a name="make-single-instance-application"></a>単一インスタンスのアプリケーションを作成する
 
-このチェック ボックスをオンにすると、ユーザーはアプリケーションの複数のインスタンスを実行できなくなります。 このチェック ボックスの既定の設定は*オフ*であり、これにより、アプリケーションの複数のインスタンスを実行できます。 詳細については、<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> イベントを参照してください。
+このチェック ボックスをオンにすると、ユーザーはアプリケーションの複数のインスタンスを実行できなくなります。 このチェック ボックスの既定の設定は *オフ* であり、これにより、アプリケーションの複数のインスタンスを実行できます。 詳細については、<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> イベントを参照してください。
 
 ### <a name="save-mysettings-on-shutdown"></a>シャットダウン時に My.Settings を保存する
 
@@ -161,7 +163,7 @@ Windows XP Visual スタイル (*Windows XP テーマ*ともいう) を有効ま
 
 ## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>Windows Presentation Foundation (WPF) アプリの Windows アプリ フレームワーク プロパティ
 
-プロジェクトが Windows Presentation Foundation (WPF) アプリである場合は、**Windows アプリケーション フレームワーク プロパティ**で以下の設定を使用できます。 これらのオプションは、 **[アプリケーション フレームワークを有効にする]** チェック ボックスがオンになっている場合にのみ使用できます。 次の表にリストされているオプションは、WPF または WPF ブラウザー アプリケーションのみで使用できます。 WPF ユーザー コントロールやカスタム コントロール ライブラリでは使用できません。
+プロジェクトが Windows Presentation Foundation (WPF) アプリである場合は、**Windows アプリケーション フレームワーク プロパティ** で以下の設定を使用できます。 これらのオプションは、 **[アプリケーション フレームワークを有効にする]** チェック ボックスがオンになっている場合にのみ使用できます。 次の表にリストされているオプションは、WPF または WPF ブラウザー アプリケーションのみで使用できます。 WPF ユーザー コントロールやカスタム コントロール ライブラリでは使用できません。
 
 ### <a name="shutdown-mode"></a>シャットダウン モード
 

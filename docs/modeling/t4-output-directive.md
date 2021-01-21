@@ -1,5 +1,7 @@
 ---
 title: T4 出力ディレクティブ
+description: Visual Studio テキストテンプレートでは、出力ディレクティブを使用して、変換されたファイルのファイル名拡張子とエンコーディングを定義します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591815"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363641"
 ---
 # <a name="t4-output-directive"></a>T4 出力ディレクティブ
 
@@ -22,9 +24,9 @@ Visual Studio テキストテンプレートでは、ディレクティブを使
 
  `<#@output extension=".cs"#>`
 
- 次に、Visual Studio によって**MyTemplate.cs**という名前のファイルが生成されます。
+ 次に、Visual Studio によって **MyTemplate.cs** という名前のファイルが生成されます。
 
- `output` ディレクティブは、実行時 (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+ `output` ディレクティブは、実行時 (前処理済み) のテキスト テンプレートには必要ありません。 その代わりに、アプリケーションは `TextTransform()` を呼び出して、生成済みの文字列を取得します。 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 ## <a name="using-the-output-directive"></a>出力ディレクティブの使用
 

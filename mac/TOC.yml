@@ -32,8 +32,6 @@
   items:
     - name: IDE の外観のカスタマイズ
       href: customizing-the-ide.md
-    - name: Visual Studio for Mac の拡張
-      href: extending-visual-studio-mac.md
 - name: プロジェクトおよびソリューション
   items:
     - name: 概要
@@ -171,21 +169,9 @@
         - name: Docker Compose を使用して複数コンテナーのアプリを作成する
           href: docker-multi-container.md
     - name: Unity によるゲーム開発
-      items:
-        - name: Unity によるゲーム開発
-          href: unity-tools.md
-        - name: セットアップ
-          href: setup-vsmac-tools-unity.md
-        - name: Unity の概要
-          href: unity-walkthrough.md
-        - name: Unity ツールの使用
-          href: using-vsmac-tools-unity.md
-        - name: Unity で.NET 4.x を使用する
-          href: /visualstudio/cross-platform/unity-scripting-upgrade?context=visualstudio/mac/context
-        - name: 変更ログ
-          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac?context=visualstudio/mac/context
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: Xamarin を使用したモバイル アプリ
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: ユーザー補助
   items:
     - name: 概要
@@ -216,6 +202,8 @@
       href: visual-studio-experience-improvement-program.md
     - name: 問題を報告する
       href: report-a-problem.md
+    - name: 'トラブルシューティング:既存の拡張機能の新しいバージョンをリリースする方法'
+      href: migrate-extensions.md
     - name: 'トラブルシューティング:Visual Studio for Mac は Team Foundation バージョン管理をサポートしていますか?'
       href: tf-version-control.md
     - name: 'トラブルシューティング:すべてのテンプレートが表示されない'

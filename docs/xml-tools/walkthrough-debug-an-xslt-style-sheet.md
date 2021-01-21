@@ -1,5 +1,7 @@
 ---
 title: XSLT スタイル シートをデバッグする
+description: このチュートリアルの手順に従って Visual Studio の XSLT デバッガーを使用し、XSLT スタイル シートをデバッグする方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 03/05/2019
 ms.topic: how-to
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815124"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351337"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイル シートのデバッグ
 
@@ -38,7 +40,7 @@ ms.locfileid: "85815124"
 
    これで、XSLT 変換のために使用されるソース ドキュメント ファイルが設定されます。
 
-5. *below-average.xsl* の 12 行目に[ブレークポイント](../debugger/using-breakpoints.md)を設定します。 次のいずれかの方法でできます。
+5. *below-average.xsl* の 12 行目に [ブレークポイント](../debugger/using-breakpoints.md)を設定します。 次のいずれかの方法でできます。
 
    - エディターで 12 行目の余白をクリックします。
 

@@ -1,5 +1,7 @@
 ---
 title: '[デバッグ] ([オプション] ダイアログ ボックス) | Microsoft Docs'
+description: Visual Studio の一般デバッグ、Just-In-Time デバッグ、出力ウィンドウ デバッグ、シンボル デバッグのための [オプション] ダイアログ ボックスについて説明するリンクを紹介します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 407da10e5a10ea08a75618046189a87a4ad6c5f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ae93f22249540da0121472ce07db52e3747abf85
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738147"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726905"
 ---
 # <a name="debugging-options-dialog-box"></a>[デバッグ] ([オプション] ダイアログ ボックス)
 **[ツール]** メニューの **[オプション]** ダイアログ ボックスの **[デバッグ]** フォルダーには、以下のページがあります。これらのページを使ってデバッガー ツールのオプションを指定できます。

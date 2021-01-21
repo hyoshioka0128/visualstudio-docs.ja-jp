@@ -1,5 +1,7 @@
 ---
 title: 'チェックリスト: 新しいプロジェクトの種類を作成する |Microsoft Docs'
+description: Visual Studio で新しいプロジェクトの種類を作成して表示するために完了する必要があるタスクについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f166e0b3280783dac891b3b582acd7822a3974c0
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011919"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189967"
 ---
 # <a name="checklist-create-new-project-types"></a>チェックリスト: 新しいプロジェクトの種類を作成する
 新しいプロジェクトの種類を作成するには、いくつかのタスクを完了する必要があります。 次のチェックリストに、これらのタスクのガイドを示します。
@@ -25,7 +27,7 @@ ms.locfileid: "90011919"
 
 2. コードおよびその他のプロジェクト要素に使用されるエディターを決定します。 コアエディターまたは標準エディターを使用することも、プロジェクト固有のエディターを作成して使用することもできます。 詳細については、「 [カスタムエディターとデザイナーの作成](../../extensibility/creating-custom-editors-and-designers.md) 」および「 [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)」を参照してください。
 
-3. プロジェクト項目が **クラスビュー** と **オブジェクトブラウザー**に与える参加レベルを決定します。 詳細については、「 [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。
+3. プロジェクト項目が **クラスビュー** と **オブジェクトブラウザー** に与える参加レベルを決定します。 詳細については、「 [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)」を参照してください。
 
 4. プロジェクトおよびプロジェクト項目に対して以前に行った設計上の決定に基づいて、新しいクラスを派生させます。
 
@@ -33,7 +35,7 @@ ms.locfileid: "90011919"
 
     - プロジェクトファクトリ。新しいプロジェクトの作成と、既存のプロジェクトのオープンを管理します。 詳細については、「 [プロジェクトファクトリを使用したプロジェクトインスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)」を参照してください。
 
-    - プロジェクト階層とコマンド処理。 詳細については、「 [HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](/previous-versions/bb166212(v=vs.100))」、「プロジェクト [モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)」、「 [プロジェクトモデルのコアコンポーネント](../../extensibility/internals/project-model-core-components.md)」、および「 [menucommands と OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015)」を参照してください。
+    - プロジェクト階層とコマンド処理。 詳細については、「 [HierUtil7 プロジェクトクラスを使用したプロジェクトの種類の実装 (C++)](/previous-versions/bb166212(v=vs.100))」、「プロジェクト [モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)」、「 [プロジェクトモデルのコアコンポーネント](../../extensibility/internals/project-model-core-components.md)」、および「 [menucommands と OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)」を参照してください。
 
     - プロジェクト項目の管理。 [ **新しいプロジェクト** ] ダイアログボックスへのプロジェクトの追加が含まれます。 詳細については、「 [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md) 」および「 [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)」を参照してください。
 

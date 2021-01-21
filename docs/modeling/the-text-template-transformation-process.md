@@ -1,5 +1,7 @@
 ---
 title: テキスト テンプレート変換プロセス
+description: テキストテンプレート変換プロセスで入力としてテキストテンプレートファイルを取得し、出力として新しいテキストファイルを生成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565865"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362653"
 ---
 # <a name="the-text-template-transformation-process"></a>テキスト テンプレート変換プロセス
 テキストテンプレート変換プロセスは、テキストテンプレートファイルを入力として受け取り、新しいテキストファイルを出力として生成します。 たとえば、テキストテンプレートを使用して Visual Basic または C# コードを生成したり、HTML レポートを生成したりすることができます。
@@ -27,8 +29,8 @@ ms.locfileid: "75565865"
 
 |コンポーネント|説明|カスタマイズ可能 (はい/いいえ)|
 |-|-|-|
-|エンジン|エンジンコンポーネントは、テキストテンプレート変換プロセスを制御します。|いいえ。|
-|Host|ホストは、エンジンとユーザー環境の間のインターフェイスです。 Visual Studio は、テキスト変換プロセスのホストです。|はい。 カスタムホストを作成することができます。|
+|エンジン|エンジンコンポーネントは、テキストテンプレート変換プロセスを制御します。|不正解です。|
+|ホスト|ホストは、エンジンとユーザー環境の間のインターフェイスです。 Visual Studio は、テキスト変換プロセスのホストです。|はい。 カスタムホストを作成することができます。|
 |ディレクティブプロセッサ|ディレクティブプロセッサは、テキストテンプレートのディレクティブを処理するクラスです。 ディレクティブを使用すると、入力ソースからテキストテンプレートにデータを提供できます。|はい。 カスタムディレクティブプロセッサを作成できます。|
 
 ## <a name="the-engine"></a>エンジン

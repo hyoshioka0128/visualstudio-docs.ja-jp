@@ -1,5 +1,8 @@
 ---
 title: 'チュートリアル: 既存の SharePoint サイトからのアイテムのインポート |Microsoft Docs'
+titleSuffix: ''
+description: このチュートリアルでは、既存の SharePoint サイトから Visual Studio SharePoint プロジェクトに項目をインポートします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 46bc2ceacfde599a70b4e84bba134c4a4d5f9757
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7eeff880538d98f997f48f82c49d01045e834031
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017113"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970129"
 ---
-# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>チュートリアル: 既存の SharePoint サイトからの項目のインポート
+# <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>チュートリアル: 既存の SharePoint サイトからのアイテムのインポート
   このチュートリアルでは、既存の SharePoint サイトから sharepoint プロジェクトに項目をインポートする方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
 
  このチュートリアルでは、次のタスクについて説明します。
 
-- カスタムサイト列 ( *フィールド*とも呼ばれます) を追加して SharePoint サイトをカスタマイズする。
+- カスタムサイト列 ( *フィールド* とも呼ばれます) を追加して SharePoint サイトをカスタマイズする。
 
 - SharePoint サイトを .wsp ファイルにエクスポートする。
 
@@ -65,7 +68,7 @@ ms.locfileid: "86017113"
 
 10. [ **ギャラリー** ] セクションで、[ **サイト列** ] リンクを選択します。
 
-11. **サイト列ギャラリー**ページの上部にある [**作成**] ボタンをクリックします。
+11. **サイト列ギャラリー** ページの上部にある [**作成**] ボタンをクリックします。
 
 12. [ **列名** ] ボックスに「 **Test Column**」と入力し、その他の既定値はそのままにして、[ **OK** ] をクリックします。
 
@@ -79,7 +82,7 @@ ms.locfileid: "86017113"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>既存の SharePoint サイトをエクスポートするには
 
-1. SharePoint サイトで、[サイトの**操作**] タブの [**サイトの設定**] を選択し、[サイトの設定] ページを表示します。
+1. SharePoint サイトで、[サイトの **操作**] タブの [**サイトの設定**] を選択し、[サイトの設定] ページを表示します。
 
 2. [サイトの設定] ページの [ **サイトの操作** ] セクションで、[ **サイトをテンプレートとして保存** ] リンクを選択します。
 
@@ -91,7 +94,7 @@ ms.locfileid: "86017113"
 
 5. 操作が正常に完了したら、[ **ソリューションギャラリー** ] リンクをクリックして、.wsp ファイルを表示します。
 
-     後で [ソリューションギャラリー] ページを表示するには、[サイトの**操作**] メニューを開き、[**サイトの設定**] を選択します。次に、[**サイトコレクションの管理**] セクションの [**最上位レベルのサイト設定にアクセス**] リンクを選択し、[**ギャラリー** ] セクションの [**ソリューション**] リンクを選択します。
+     後で [ソリューションギャラリー] ページを表示するには、[サイトの **操作**] メニューを開き、[**サイトの設定**] を選択します。次に、[**サイトコレクションの管理**] セクションの [**最上位レベルのサイト設定にアクセス**] リンクを選択し、[**ギャラリー** ] セクションの [**ソリューション**] リンクを選択します。
 
 6. ソリューションギャラリーで、[の例 **] リンクを** 選択します。
 
@@ -102,17 +105,17 @@ ms.locfileid: "86017113"
 
 ### <a name="to-import-a-wsp-file"></a>.Wsp ファイルをインポートするには
 
-1. の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、メニューバーで [**ファイル**] [新規作成] [プロジェクト] の順に選択し  >  **New Project**ます。
+1. の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、メニューバーで [**ファイル**] [新規作成] [プロジェクト] の順に選択し  >  **New Project** ます。
 
 2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
 3. [**テンプレート**] ペインで [ **SharePoint 2010 ソリューションパッケージのインポート**] テンプレートを選択し、プロジェクトの名前を WspImportProject1 のままにして、[ **OK** ] をクリックします。
 
-    **SharePoint カスタマイズウィザード**が表示されます。
+    **SharePoint カスタマイズウィザード** が表示されます。
 
 4. [ **デバッグのサイトとセキュリティレベルの指定** ] ページで、前に作成した [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 2 番目の SharePoint サブサイトのを入力します。 新しいカスタムフィールド項目である http://<em>system name</em>/columntest2 をそのサブサイトに追加します。
 
-5. [ **この SharePoint ソリューションの信頼レベル** を選択してください。] セクションで、[ **サンドボックスソリューションとして配置**する] を選択したままにします。
+5. [ **この SharePoint ソリューションの信頼レベル** を選択してください。] セクションで、[ **サンドボックスソリューションとして配置** する] を選択したままにします。
 
 6. [ **新しいプロジェクトソースの指定** ] ページで、 *.wsp* ファイルを保存したシステム上の場所を参照し、[ **次へ** ] をクリックします。
 
@@ -121,9 +124,9 @@ ms.locfileid: "86017113"
 
 7. [ **インポートする項目の選択** ] ボックスで、[ **テスト列**] 以外の一覧のすべてのチェックボックスをオフにし、[ **完了** ] をクリックします。
 
-    一覧には多くの項目が含まれているので、 **Ctrl** + **A**キーを押して一覧内のすべての項目を選択し、space キーを押してすべてのチェックボックスをオフにして、[**テスト] 列**項目の横のチェックボックスのみをオンにします。
+    一覧には多くの項目が含まれているので、 **Ctrl** + **A** キーを押して一覧内のすべての項目を選択し、space キーを押してすべてのチェックボックスをオフにして、[**テスト] 列** 項目の横のチェックボックスのみをオンにします。
 
-    インポート操作が完了すると、 **WspImportProject1** という名前の新しいプロジェクトが作成されます。このプロジェクトには、 **フィールド**という名前のフォルダーが含まれています。 このフォルダーには、カスタムサイト列の **テスト列** とその定義ファイル *Elements.xml*ます。
+    インポート操作が完了すると、 **WspImportProject1** という名前の新しいプロジェクトが作成されます。このプロジェクトには、 **フィールド** という名前のフォルダーが含まれています。 このフォルダーには、カスタムサイト列の **テスト列** とその定義ファイル *Elements.xml* ます。
 
 ## <a name="deploy-the-project"></a>プロジェクトをデプロイする
  最後に、[カスタムサイト] 列を表示するために、前に作成した2つ目の SharePoint サブサイトに **WspImportProject1** を配置します。
@@ -143,4 +146,4 @@ ms.locfileid: "86017113"
 ## <a name="see-also"></a>関連項目
 - [既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
-- [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

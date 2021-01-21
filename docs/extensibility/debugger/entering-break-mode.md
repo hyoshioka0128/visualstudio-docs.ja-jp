@@ -1,5 +1,7 @@
 ---
 title: 中断モードに入る |Microsoft Docs
+description: 関数で発生したブレークポイント、カーソル位置のソースコード行、またはブレークポイントまで実行されているブレークポイントに対して発生するプロセスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73c64d17aee48cdb67a110e93aa556f112a1014
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738882"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915233"
 ---
 # <a name="enter-break-mode"></a>中断モードに入る
 次の情報では、関数にステップインした後、カーソルがあるソースコード行に実行しているか、ブレークポイントまで実行されているときに発生するプロセスについて説明します。

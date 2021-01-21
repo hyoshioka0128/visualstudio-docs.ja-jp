@@ -3,15 +3,15 @@ title: プロジェクトに NuGet パッケージを含める
 description: このドキュメントでは、Visual Studio for Mac を使用してプロジェクトに NuGet パッケージを含める方法について説明します。 パッケージの検索およびダウンロードの手順を説明し、IDE 統合機能の概要を示します。
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 11/01/2019
+ms.date: 11/09/2020
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46ceb99617c6a0e9ba457fdb769c1162090d1d31
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74127208"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493492"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Visual Studio for Mac に NuGet パッケージをインストールして管理する
 
@@ -23,7 +23,7 @@ Visual Studio for Mac での NuGet の使用の概要については、「[ク�
 
 ## <a name="find-and-install-a-package"></a>パッケージを検索してインストールする
 
-1. Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** 内の **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、**[NuGet パッケージの管理]** を選択します。
+1. Visual Studio for Mac でプロジェクトを開いた状態で、 **[ソリューション] ウィンドウ** 内の **[依存関係]** フォルダー (Xamarin プロジェクトを使用する場合は **[パッケージ]** フォルダー) を右クリックし、 **[NuGet パッケージの管理]** を選択します。
 
     ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-packages-menu.png)
 
@@ -63,7 +63,7 @@ using Newtonsoft.Json;
 
 コンテキスト メニューにアクセスするには、**[依存関係]** を右クリックして、**[更新]** を選択し、すべてのパッケージを更新します。
 
-![パッケージ メニュー](media/nuget-walkthrough-packages-menu-update.png)
+![[更新] メニューが強調表示された [依存関係] コンテキスト メニュー](media/nuget-walkthrough-packages-menu-update.png)
 
 * **[NuGet パッケージの管理]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
 * **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。
@@ -71,8 +71,21 @@ using Newtonsoft.Json;
 
 更新オプションと復元オプションはソリューション レベルでも使用でき、ソリューション内のすべてのプロジェクトに影響します。
 
+### <a name="updating-to-pre-release-versions-of-packages"></a>パッケージのプレリリース版への更新
+パッケージの新しいプレリリース版に更新するには、 **[依存関係]** を右クリックしてコンテキスト メニューを開き、 **[NuGet パッケージの管理]** メニューを選択します。
+
+![[NuGet パッケージの管理] メニューが強調表示された [依存関係] コンテキスト メニュー](media/nuget-walkthrough-packages-menu-manage-nuget-packages.png)
+
+ダイアログの下部にある **[プレリリース パッケージを表示する]** チェックボックスをオンにします。
+
+![[プレリリース パッケージを表示する] オプションがオンになっている [NuGet パッケージの管理] ダイアログ](media/nuget-walkthrough-show-pre-release-packages.png)
+
+最後に、ダイアログの **[更新プログラム]** タブで、更新するパッケージを選択し、 **[新しいバージョン]** ドロップダウンから新しいプレリリース版を選択して、 **[パッケージの更新]** をクリックします。
+
+![[インストール済み] タブに [NuGet パッケージの管理] ダイアログが開きます。パッケージが選択され、[新しいバージョン] のドロップダウン リストが開きます。](media/nuget-walkthrough-packages-nuget-dialog-update-installed-package.png)
+
 ### <a name="locating-outdated-packages"></a>すべての古いパッケージの特定
-Solution Pad から、現在インストールされているパッケージのバージョンを表示し、更新するパッケージを右クリックすることができます。
+[ソリューション] ウィンドウから、現在インストールされているパッケージのバージョンを表示し、更新するパッケージを右クリックすることができます。
 
 ![[更新]、[削除]、[更新] のオプションが表示されている [パッケージ] メニュー](media/nuget-walkthrough-PackageMenu.png)
 
@@ -121,11 +134,11 @@ Visual Studio for Mac で、**[Visual Studio]、[基本設定]、[NuGet]、[ソ�
 
 **[追加]** をクリックして新しいソースをセットアップします。 パッケージ ソースのフレンドリ名と URL (またはファイル パス) を入力します。 ソースがセキュリティで保護された Web サーバーの場合は、ユーザー名とパスワードも入力します。それ以外の場合はこれらの項目を空白のままにします。
 
-![パッケージ ソースを追加する](media/nuget-walkthrough-PackageSource2.png)
+![名前、場所の URL、ユーザー名、およびパスワードを入力する [パッケージ ソースを追加する] ダイアログ。](media/nuget-walkthrough-PackageSource2.png)
 
 パッケージを検索する際に、以下のようにさまざまなソースを選択することができます。
 
-![パッケージ ソースを追加する](media/nuget-walkthrough-PackageSource3.png)
+![パッケージ ソース一覧のドロップ ダウンが表示された [パッケージ ソースを追加する] ダイアログ。](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>バージョン コントロール
 

@@ -1,6 +1,8 @@
 ---
 title: 自動機能の中断
 ms.date: 11/04/2016
+description: Visual Studio が分析スコープを減らす方法、ガベージコレクションの低待機時間モードをオフにする方法、およびシステムメモリが制限されている場合にキャッシュをフラッシュする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 976e676cda09d50e34acb88a12551b1531595888
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508380"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348542"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
 
@@ -56,7 +58,7 @@ GC 低待機時間モードを再度有効にするには、Visual Studio を再
 
 - [すべての参照の検索]
 
-- [移動]
+- 移動
 
 - Using の追加
 

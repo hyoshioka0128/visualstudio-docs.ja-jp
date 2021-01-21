@@ -1,5 +1,7 @@
 ---
-title: '方法: ClickOnce アプリケーションを使用して必須コンポーネントを含める |Microsoft Docs'
+title: 必須コンポーネントを含める (ClickOnce アプリ)
+description: 開発用コンピューターの ClickOnce アプリケーションに配布する必須コンポーネントのインストーラーパッケージを取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 957b375a3f3a00e653118b59c48b7233197c30ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9199bb720cb94bc949a04bd59d5d3b6527108ed
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382394"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351194"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントを含める
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションと共に必須コンポーネントを配布する前に、まず開発用コンピューターにそれらの必須コンポーネントのインストーラー パッケージをダウンロードする必要があります。 インストーラー パッケージが **[パッケージ]** フォルダーにない場合、アプリケーションを発行して **[アプリケーションと同じ場所から必須コンポーネントをダウンロードする]** を選択するとエラーが発生します。
@@ -23,23 +25,23 @@ ms.locfileid: "85382394"
 
 ## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Package.xml を使用してインストーラー パッケージを追加するには
 
-1. ファイル エクスプローラーで、**Packages** フォルダーを開きます。
+1. ファイル エクスプローラーで、 **Packages** フォルダーを開きます。
 
     既定のパスは `%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\` です。
 
-2. 追加する必須コンポーネントのフォルダーを開いてから、インストールされているバージョンの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の言語フォルダー (たとえば、英語の場合は **en**) を開きます。
+2. 追加する必須コンポーネントのフォルダーを開いてから、インストールされているバージョンの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] の言語フォルダー (たとえば、英語の場合は **en** ) を開きます。
 
-3. メモ帳で、*Package.xml* ファイルを開きます。
+3. メモ帳で、 *Package.xml* ファイルを開きます。
 
 4. を含む **Name** 要素を見つけ `http://go.microsoft.com/fwlink` 、URL をコピーします。 **LinkID** 部分を含めます。
 
    > [!NOTE]
-   > **Name**要素が含まれていない場合は、 `http://go.microsoft.com/fwlink` 前提条件のルートフォルダーにある**Product.xml**ファイルを開き、 **fwlink**文字列を見つけます。
+   > **Name** 要素が含まれていない場合は、 `http://go.microsoft.com/fwlink` 前提条件のルートフォルダーにある **Product.xml** ファイルを開き、 **fwlink** 文字列を見つけます。
 
    > [!IMPORTANT]
    > 一部の必須コンポーネントには、複数のインストーラー パッケージ (たとえば、32 ビット システム用または 64 ビット システム用) があります。 複数の **Name** 要素に **fwlink** が含まれている場合、各要素で残りの手順を繰り返す必要があります。
 
-5. ブラウザーのアドレス バーに URL を貼り付け、実行または保存を確認するメッセージが表示されたら、**[上書き保存]** をクリックします。
+5. ブラウザーのアドレス バーに URL を貼り付け、実行または保存を確認するメッセージが表示されたら、 **[上書き保存]** をクリックします。
 
     この手順では、コンピューターにインストーラー ファイルをダウンロードします。
 

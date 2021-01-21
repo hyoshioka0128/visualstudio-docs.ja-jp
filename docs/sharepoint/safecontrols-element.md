@@ -1,5 +1,7 @@
 ---
 title: SafeControls 要素 |Microsoft Docs
+description: SafeControls 要素に関する情報を取得します。この要素は、SharePoint サイトの ASPX ページでのアクセスのためにセキュリティで保護されているとマークされた ASPX コントロールまたは web パーツのコレクションを保持します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e840f0040cf94fea408615525358580d207f07c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547902"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440676"
 ---
 # <a name="safecontrols-element"></a>SafeControls 要素
   SharePoint サイトの任意の ASPX ページですべてのユーザーがアクセスできるようにセキュリティで保護されたものとして指定された ASPX コントロールおよび Web パーツのコレクション。
@@ -48,7 +50,7 @@ ms.locfileid: "85547902"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクトアイテムを表します。 この要素は、 *sharepointprojectitem.spdata* ファイルの必須のルート要素です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  安全なコントロールの詳細については、「 [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
 
 ## <a name="element-information"></a>要素情報
@@ -62,4 +64,4 @@ ms.locfileid: "85547902"
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [プロジェクト項目でのパッケージ化と配置の情報を提供する](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

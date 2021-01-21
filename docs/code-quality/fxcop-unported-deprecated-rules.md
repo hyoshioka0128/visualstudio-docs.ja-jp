@@ -4,23 +4,24 @@ ms.date: 05/21/2019
 ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
-- fxcop analyzers, ported rules, unported rules, deprecated rules
+- .NET analyzers, ported rules, unported rules, deprecated rules
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a79b4a3b91f087c5f238afd3627a1393c558daa
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: c73816ae31ac9283b0f9053c08b8a351511b9a76
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89511023"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040369"
 ---
 # <a name="deprecated-rules"></a>非推奨の規則
 
 次の FxCop レガシ分析ルールは非推奨とされており、アナライザーとして実装されません。 詳細については、 [roslyn-Analyzer GitHub の問題](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)に関するページで、ルール ID (たとえば、 **CA1009**) で検索することができます。
 
+- [CA1006](ca1006.md)
 - [CA1009](ca1009.md)
 - [CA1020](ca1020.md)
 - [CA1025](ca1025.md)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 管理ポータルで言語、連絡先、サブスクリプション レベルなどの基本設定を設定する方法について説明します。
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426800"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467441"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>管理ポータルで契約の基本設定を設定する
 スーパー管理者は、各契約に対してグローバルに適用される特定の基本設定を、管理ポータルで設定できます。  これらの基本設定を行うと、管理者がサブスクライバーを追加するときには、その管理者用のサブスクリプションの詳細が自動的に設定されます。また、これらの基本設定は、スーパー管理者だけがグローバルに変更できます。  
@@ -41,7 +41,7 @@ ms.locfileid: "89426800"
 サインインに使用した電子メール アドレスに契約が 1 つだけ割り当てられている場合は、それが展開された設定パネルの右側に表示され、ドロップダウンは無効になります。 
 
 ### <a name="contact-email-address"></a>[連絡先の電子メール アドレス]
-この基本設定では、サブスクライバー ポータルの[サブスクリプション ページ](https://my.visualstudio.com/subscriptions)にある **[Contact my Admin]\(管理者に問い合わせる\)** ボタンを使用することでサブスクライバーが管理者に連絡する方法が提供されます。  この基本設定を空のままにした場合、サブスクライバー メッセージは契約のすべての管理者とスーパー管理者に転送されます。  グループ電子メール エイリアスまたはセキュリティ グループを使用し、この連絡先電子メールの受信者を調整することをお勧めします。 必要に応じて、個人の電子メール アドレスを入力することもできます。
+この基本設定では、サブスクライバー ポータルの [サブスクリプション ページ](https://my.visualstudio.com/subscriptions)にある **[Contact my Admin]\(管理者に問い合わせる\)** ボタンを使用することで、サブスクライバーが管理者に連絡する方法が提供されます。  この基本設定を空のままにした場合、サブスクライバー メッセージは契約のすべての管理者とスーパー管理者に転送されます。  グループ電子メール エイリアスまたはセキュリティ グループを使用し、この連絡先電子メールの受信者を調整することをお勧めします。 必要に応じて、個人の電子メール アドレスを入力することもできます。
 
 > [!NOTE]
 > ここに記載する電子メール アドレスはサブスクライバーに表示されません。  サブスクライバーがサブスクライバー ポータルで **[Contact my Admin]\(管理者に問い合わせる\)** 要求を送信すると、メッセージはサブスクライバーに公開されることなく、別名に転送されます。 
@@ -60,7 +60,7 @@ ms.locfileid: "89426800"
 
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
-### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Q:サブスクライバーが管理者に連絡できないように **[連絡先の電子メール アドレス]** を無効にできますか。
+### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-admins"></a>Q:サブスクライバーが管理者に連絡できないように **[連絡先の電子メール アドレス]** を無効にできますか。
 A: いいえ。あなたはセキュリティ グループ、グループ電子メール エイリアス、または個々の電子メール アドレスを利用して連絡する管理者を決定できますが、この機能を無効にすることはできません。
 
 ### <a name="q-if-i-answer-a-subscribers-email-will-they-have-my-email-address"></a>Q:サブスクライバーの電子メールに返信すると、サブスクライバーに私の電子メール アドレスが表示されますか。
@@ -76,10 +76,10 @@ A: **[Contact my Admin]\(管理者に問い合わせる\)** に特定の電子�
 - [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。

@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって Visio 図面を開く'
+description: Visual Studio を使用して、Open または OpenEx メソッドを使用して Visio 図面をプログラムで開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb21d201c282461cbe82005f56bed023bb022209
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519991"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523845"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>方法: プログラムによって Visio 図面を開く
   既存の Microsoft Office Visio 図面を開くには、Open と OpenEx の2つの方法があります。 OpenEx メソッドは Open メソッドと同じですが、呼び出し元がドキュメントを開く方法を指定できる引数を提供する点が異なります。

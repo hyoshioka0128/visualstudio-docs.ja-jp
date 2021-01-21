@@ -1,5 +1,7 @@
 ---
 title: プロジェクトファクトリを使用したプロジェクトインスタンスの作成 |Microsoft Docs
+description: 'Visual Studio 統合開発環境 (IDE: integrated development environment) でプロジェクトファクトリを使用して、プロジェクトクラスのインスタンスを作成する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31ba5dd11af18f8a723b2271544eff2bd292e2e8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59ad41bda80337fd0adc65d4792adbbbb1cf38f1
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709058"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328601"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>プロジェクトファクトリを使用したプロジェクトインスタンスの作成
 のプロジェクトの種類で [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、プロジェクト *ファクトリ* を使用して、プロジェクトオブジェクトのインスタンスを作成します。 プロジェクトファクトリは、cocreatable 可能な COM オブジェクトの標準クラスファクトリに似ています。 ただし、プロジェクトオブジェクトは共同作成可能ではありません。これらは、プロジェクトファクトリを使用してのみ作成できます。
 
- IDE は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ユーザーが既存のプロジェクトを読み込むか、で新しいプロジェクトを作成するときに、VSPackage に実装されているプロジェクトファクトリを呼び出し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 新しい project オブジェクトは、 **ソリューションエクスプローラー**を設定するのに十分な情報を IDE に提供します。 新しいプロジェクトオブジェクトには、IDE によって開始された関連するすべての UI 操作をサポートするために必要なインターフェイスも用意されています。
+ IDE は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ユーザーが既存のプロジェクトを読み込むか、で新しいプロジェクトを作成するときに、VSPackage に実装されているプロジェクトファクトリを呼び出し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 新しい project オブジェクトは、 **ソリューションエクスプローラー** を設定するのに十分な情報を IDE に提供します。 新しいプロジェクトオブジェクトには、IDE によって開始された関連するすべての UI 操作をサポートするために必要なインターフェイスも用意されています。
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>プロジェクトのクラスにインターフェイスを実装できます。 通常は、独自のモジュールに存在します。
 
@@ -38,7 +40,7 @@ ms.locfileid: "80709058"
 
    プロジェクトの種類は、特定のファイル名拡張子に関連付けられています。 ユーザーが既存のプロジェクトファイルを開こうとしたとき、またはテンプレートを複製して新しいプロジェクトを作成しようとすると、IDE はファイルの拡張機能を使用して、対応するプロジェクト GUID を特定します。
 
-   IDE は、新しいプロジェクトを作成する必要があるか、特定の種類の既存のプロジェクトを開く必要があるかを判断したら、 **[HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0\projects]** の下にあるシステムレジストリの情報を使用して、必要なプロジェクトファクトリを実装している VSPackage を見つけます。 IDE はこの VSPackage を読み込みます。 メソッドでは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> VSPackage はメソッドを呼び出すことによって、プロジェクトファクトリを IDE に登録する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> ます。
+   IDE は、新しいプロジェクトを作成する必要があるか、特定の種類の既存のプロジェクトを開く必要があるかを判断したら、 **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** の下にあるシステムレジストリの情報を使用して、必要なプロジェクトファクトリを実装している VSPackage を検索します。 IDE はこの VSPackage を読み込みます。 メソッドでは、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> VSPackage はメソッドを呼び出すことによって、プロジェクトファクトリを IDE に登録する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> ます。
 
    インターフェイスの主要なメソッド `IVsProjectFactory` はです <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 。これは、既存のプロジェクトを開き、新しいプロジェクトを作成するという2つのシナリオを処理します。 ほとんどのプロジェクトは、プロジェクトの状態をプロジェクトファイルに格納します。 通常、新しいプロジェクトを作成するには、メソッドに渡されたテンプレートファイルのコピーを作成し、その `CreateProject` コピーを開きます。 既存のプロジェクトは、メソッドに渡されたプロジェクトファイルを直接開くことによってインスタンス化され `CreateProject` ます。 メソッドは、必要に応じ `CreateProject` てユーザーに追加の UI 機能を表示できます。
 

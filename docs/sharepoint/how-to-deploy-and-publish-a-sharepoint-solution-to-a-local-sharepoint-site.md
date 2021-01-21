@@ -1,5 +1,8 @@
 ---
 title: SharePoint ソリューションをローカルの SharePoint サイトに配置 & 発行する
+titleSuffix: ''
+description: 開発用コンピューターのローカル SharePoint サーバーに SharePoint ソリューションを配置または発行する方法を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,27 +16,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d4fe41565d0aaf0c52cae9434d4a576dc26baa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016815"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903586"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>方法: SharePoint ソリューションをローカルの SharePoint サイトに配置および発行する
   開発用コンピューターのローカル SharePoint サーバーに SharePoint ソリューションを配置したり、発行したりすることができます。 配置プロセスでは、SharePoint サーバーに *.wsp* ファイルがコピーされ、ソリューションがインストールされて、機能がアクティブ化されます。 発行プロセスでは、 *.wsp* ファイルを SharePoint サーバーにコピーしてインストールするだけです。 SharePoint で有効にするには、手動でアクティブ化する必要があります。
 
 ## <a name="to-deploy-a-sharepoint-solution-to-the-local-sharepoint-server"></a>SharePoint ソリューションをローカルの SharePoint サーバーに配置するには
 
-1. **ソリューションエクスプローラー**で、配置するプロジェクトを選択します。
+1. **ソリューションエクスプローラー** で、配置するプロジェクトを選択します。
 
 2. メニューバーで、[ **ビルド**]、[ **ソリューションの配置**] の順に選択します。
 
-     *.Wsp*ファイルが作成され、ローカルの SharePoint サーバーにインストールされます。 また、機能がアクティブ化されます。
+     *.Wsp* ファイルが作成され、ローカルの SharePoint サーバーにインストールされます。 また、機能がアクティブ化されます。
 
 ## <a name="to-publish-a-sharepoint-solution-to-a-local-sharepoint-server"></a>SharePoint ソリューションをローカルの SharePoint サーバーにパブリッシュするには
 
-1. **ソリューションエクスプローラー**で、パブリッシュする SharePoint プロジェクトのショートカットメニューを開き、[**発行**] を選択します。
+1. **ソリューションエクスプローラー** で、パブリッシュする SharePoint プロジェクトのショートカットメニューを開き、[**発行**] を選択します。
 
 2. [ **発行** ] ダイアログボックスで、[ **ファイルシステムに発行する** ] オプションボタンをクリックします。
 

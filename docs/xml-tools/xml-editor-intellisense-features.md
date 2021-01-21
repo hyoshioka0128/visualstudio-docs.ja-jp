@@ -1,5 +1,7 @@
 ---
 title: XML エディターの IntelliSense 機能
+description: Visual Studio の XML エディターの IntelliSense 機能についてと、XML スキーマ定義言語 (XSD) および XSLT ドキュメントでそれらを使用する方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: dc79d40c2cb363b79c2064bd71fb23dece04e143
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592387"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94350245"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML エディターの IntelliSense 機能
 
@@ -91,9 +93,9 @@ XML エディターでは、中かっこを強調表示することにより、�
 
 XML エディターは、この動作を次の項目に対して行います。
 
-- 対応する開始タグと終了タグ
+- 照合の開始タグと終了タグ。
 
-- ペアの "\<" または ">" の山かっこ
+- ペアの "\<" or ">" の山かっこ。
 
 - コメントの開始と終了
 

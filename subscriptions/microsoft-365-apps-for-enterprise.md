@@ -1,5 +1,5 @@
 ---
-title: Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise ベネフィット | Microsoft Docs
+title: Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: Microsoft 365 Apps for enterprise に関する説明を読み、インストールする
-ms.openlocfilehash: eb9f87273cbd8439f5053f60411e41fac41e4161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800815"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537826"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise
 Microsoft 365 Apps for enterprise (以前の Office 365 Pro Plus) は、一部の Visual Studio サブスクリプションで利用できます。 
@@ -28,7 +28,7 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 1. [https://my.visualstudio.com](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) で Visual Studio サブスクリプションにサインインします。
 1. [Microsoft 365 Apps for enterprise] タイルを見つけ、 **[アクティブにする]** を選択します。
    > [!div class="mx-imgBorder"]
-   > ![Microsoft 365 Apps for enterprise タイル](_img/microsoft-365-apps-for-enterprise/tile-activate.png "アクティブにする を選択し、サブスクリプションを開始します。")
+   > ![Microsoft 365 Apps for enterprise タイル](_img/microsoft-365-apps-for-enterprise/tile-activate.png "'アクティブにする' を選択し、サブスクリプションを開始します。")
 
 1. [Welcome, let's get to know you]\(ようこそ。情報を入力してください\) ダイアログで、求められた個人の連絡先情報を入力し、 **[次へ]** を選択します。
    > [!div class="mx-imgBorder"]
@@ -56,10 +56,10 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール| 使用可能       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | 使用可能       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能       |  はい          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | 使用できません       |  N/A          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                            |  N/A          |
-| Visual Studio Professional with GitHub Enterprise | VL | 使用できません         |  N/A          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL | 使用できません         |  N/A          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                             |  N/A          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
@@ -78,13 +78,13 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Azure DevTest の個人クレジット](vs-azure.md) Office 用アプリケーションを開発する予定がある場合は、[Office Developer サブスクリプション](vs-office-dev.md)をアクティブ化します。
+- [Azure DevTest の個人クレジット](vs-azure.md) Office 用アプリケーションを開発する予定がある場合は、[Office Developer サブスクリプション](./vs-m365.md)をアクティブ化します。

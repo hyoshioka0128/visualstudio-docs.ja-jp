@@ -1,5 +1,7 @@
 ---
 title: Visual Studio でのワークスペースビルド |Microsoft Docs
+description: 開いているフォルダーのシナリオをサポートするために、ワークスペースのインデックス付きおよびファイルコンテキストデータを提供するエクステンダーについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82660ee772280563b91830aaf1a18da0bc742b28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e44c2398b873bbca95c971ae1b44ac3de831b2ae
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62553329"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877105"
 ---
 # <a name="workspace-build"></a>ワークスペースビルド
 
@@ -88,7 +90,7 @@ private static void OutputBuildMessage(IWorkspace workspace)
 }
 ```
 
-`BuildMessage.Type` また、 `BuildMessage.LogMessage` ユーザーに情報が表示される場所の動作を制御します。 `BuildMessage.TaskType`以外の値を `None` 指定すると、指定した詳細を含む**エラー一覧**エントリが生成されます。 `LogMessage`は常に**出力**ツールウィンドウの [**ビルド**] ペインに出力されます。
+`BuildMessage.Type` また、 `BuildMessage.LogMessage` ユーザーに情報が表示される場所の動作を制御します。 `BuildMessage.TaskType`以外の値を `None` 指定すると、指定した詳細を含む **エラー一覧** エントリが生成されます。 `LogMessage`は常に **出力** ツールウィンドウの [**ビルド**] ペインに出力されます。
 
 また、拡張機能は、 **エラー一覧** または **ビルド** ペインと直接対話できます。 Visual Studio 2017 バージョン15.7 より前のバージョンに `pszProjectUniqueName` は、の引数が無視されるバグが存在し <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane2.OutputTaskItemStringEx2*> ます。
 

@@ -1,5 +1,7 @@
 ---
 title: ソース管理プラグイン向けのテスト ガイド | Microsoft Docs
+description: Visual Studio を使用したソース管理プラグインのテストについて説明します。 この概要には、一般的なテスト領域が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: overview
 helpviewer_keywords:
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905159"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487726"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>ソース管理プラグイン向けのテスト ガイド
 このセクションでは、[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] を使用したソース管理プラグインのテストに関するガイダンスを提供します。 特に一般的なテスト領域の大まかな概要と、問題が発生しやすい複雑な領域の一部を紹介します。 この概要は、テスト ケースの完全な一覧ではありません。

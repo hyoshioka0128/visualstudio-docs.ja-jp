@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービス Features1 |Microsoft Docs
+description: Managed package framework (MPF) 言語サービスでサポートされている Visual Studio の機能について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f2a4010529d3d9727ceb76d6a34f2cbc41b959
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238492"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205061"
 ---
 # <a name="legacy-language-service-features-1"></a>従来の言語サービス機能1
 Managed package framework (MPF) 言語サービスでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 構文の強調表示、IntelliSense、ブレークポイントの検証など、1つまたは複数の機能をサポートできます。 各機能を他の機能とは別に実装することもできますが、構文の強調表示を除き、スキャナーだけを必要とするパーサーとスキャナーが必要です。

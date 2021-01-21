@@ -1,5 +1,7 @@
 ---
 title: 保存された IntelliTrace データの使用 | Microsoft Docs
+description: IntelliTrace ファイル (.iTrace) を使用して、特定の実行ポイントでデバッグを開始します。 このファイルには、アプリの実行から IntelliTrace によって記録された情報が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb79e2f1a9ffd84f48910637deaff85329c3d91e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911322"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150939"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>保存された IntelliTrace データの使用 (C#、Visual Basic、C++)
 
@@ -97,7 +99,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 
 1. **[パフォーマンス違反]** で、記録されたパフォーマンス イベント、総実行時間、その他のイベント情報を確認します。 その後、特定のパフォーマンス イベントの発生時に呼び出されたメソッドをさらに掘り下げます。
 
-     ![パフォーマンス イベントの詳細を表示する](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![パフォーマンス イベント詳細を表示する](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      イベントをダブルクリックするだけでもかまいません。
 
@@ -107,7 +109,7 @@ IntelliTrace ログ (.iTrace) ファイルからデバッグを開始すると�
 
 3. その呼び出しを展開して、その時点で記録された、入れ子になったすべての呼び出しとパラメーター値を確認します。
 
-     (キーボード:入れ子になった呼び出しを表示または非表示にするには、**右矢印**キーまたは**左矢印**キーをそれぞれ押します。 入れ子になった呼び出しのパラメーター値を表示または非表示にするには、 **スペース** キーを押します。)
+     (キーボード:入れ子になった呼び出しを表示または非表示にするには、**右矢印** キーまたは **左矢印** キーをそれぞれ押します。 入れ子になった呼び出しのパラメーター値を表示または非表示にするには、 **スペース** キーを押します。)
 
      その呼び出しからデバッグを開始します。
 

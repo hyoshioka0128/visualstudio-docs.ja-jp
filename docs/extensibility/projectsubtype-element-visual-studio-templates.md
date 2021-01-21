@@ -1,5 +1,7 @@
 ---
 title: ProjectSubType 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: ProjectSubType 要素について、および ProjectType 要素で指定された値のサブカテゴリにテンプレートを分類する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27396ad1bcc4e181b2b8cecd6ca863db2412630d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701828"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672321"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 要素 (Visual Studio テンプレート)
 テンプレートを、要素で指定された値のサブカテゴリに分類し `ProjectType` ます。
@@ -53,7 +55,7 @@ ms.locfileid: "80701828"
 
  この値は、テンプレートのサブカテゴリを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `ProjectSubType` は、`TemplateData` の子要素で、省略可能な要素です。
 
  要素は、 `ProjectSubType` [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) 要素のサブカテゴリを提供します。 この値には次のものがあります。

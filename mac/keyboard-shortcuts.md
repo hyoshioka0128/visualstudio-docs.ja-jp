@@ -5,12 +5,12 @@ ms.date: 03/14/2019
 author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247380"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96188979"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac の既定のキーボード ショートカット
 
@@ -48,8 +48,8 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 |すべてのブレークポイントの削除|**⇧⌘F9**|
 |カーソル行の前まで実行|**⌘F10**|
 |次のステートメントの設定|**⇧⌘F10**|
-|[次のステートメントの表示]|**⌥\***|
-|[ステップ イン]|**⇧⌘I**、**⌘F11**|
+|[次のステートメントの表示]|**⌥\** _|
+|[ステップ イン]|_*⇧⌘I**、**⌘F11**|
 |[ステップ アウト]|**⇧⌘U**、**⇧⌘F11**|
 |[ステップ オーバー]|**⇧⌘O**、**F10**|
 |[ブレークポイントの設定/解除]|**⌘\\**、**F9**|
@@ -254,9 +254,9 @@ Visual Studio for Mac のさまざまなコマンドには、該当するショ�
 |次のドキュメント|**⌘}** 、**⌘F6**|
 |前のドキュメント|**⌘{**、**⇧⌘F6**|
 |次のドキュメントに切り替え|**⌃⇥**|
-|次のパッドに切り替え|**⌃⌥⇥**|
+|次のツール ウィンドウに切り替える|**⌃⌥⇥**|
 |前のドキュメントに切り替え|**⌃⇧⇥**|
-|前のパッドに切り替え|**⌃⌥⇧⇥**|
+|前のツール ウィンドウに切り替える|**⌃⌥⇧⇥**|
 
 ## <a name="macos-key-symbols-lookup"></a>macOS キー シンボル参照
 

@@ -1,5 +1,7 @@
 ---
 title: 構造体の IEquatable 演算子を生成する
+description: '[クイック アクションとリファクタリング] メニューを使用して、構造体の Equals および IEquatable 演算子を生成する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 28d70c0ea95c9373eb87e6199d53f1b43fadd508
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290832"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617202"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>構造体の Equals を生成するときに IEquatable 演算子を生成する
 
@@ -20,7 +22,7 @@ ms.locfileid: "85290832"
 
 - C#
 
-**概要:** [構造体](https://docs.microsoft.com/dotnet/csharp/language-reference/builtin-types/struct)の **Equals** および **IEquatable** 演算子を生成できます。
+**概要:** [構造体](/dotnet/csharp/language-reference/builtin-types/struct)の **Equals** および **IEquatable** 演算子を生成できます。
 
 **条件:** equals および not equals 演算子に加え、IEquatable 演算子が自動的に追加される構造体があること。
 

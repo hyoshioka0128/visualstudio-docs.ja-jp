@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.topic: how-to
-ms.openlocfilehash: 1ea23f701f251476693108b51da570fbcbaa7756
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7025798689e7541471c56988ef24414005dfe656
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950435"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860545"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity を設定する
 
@@ -45,7 +45,7 @@ Unity 5.6.1 以降は既にあるが、Visual Studio for Mac はない場合は�
 
 * Visual Studio for Mac を [visualstudio.microsoft.com](https://visualstudio.microsoft.com/) からダウンロードします。
 * Visual Studio for Mac Tools for Unity は、インストール プロセスの間に自動的にインストールされます。
-* インストールに関するその他のヘルプについては、[インストール ガイド](/visualstudio/mac/installation/?view=vsmac-2017)の手順に従ってください。
+* インストールに関するその他のヘルプについては、[インストール ガイド](./installation.md?view=vsmac-2017)の手順に従ってください。
 
 > [!NOTE]
 > Visual Studio for Mac Tools for Unity では、Unity バージョン 5.6.1 以降が必要です。 お使いの Unity のバージョンで Visual Studio Tools for Unity が有効になっていることを確認するには、Unity のメニューから **[About Unity]\(Unity について\)** を選び、ダイアログの左下に [Microsoft Visual Studio Tools for Unity enabled]\(Microsoft Visual Studio Tools for Unity は有効です\) と表示されていることを確認します。

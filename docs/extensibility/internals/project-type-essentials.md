@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの種類の要点 |Microsoft Docs
+description: プロジェクトの種類を作成する必要があるタイミングと、プロジェクトのサブタイプを使用して既存のプロジェクトの種類を拡張できるタイミングについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7634802899d72eb6abcb0aa837b8fb6a532b966
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d55a4be044c44567f65e312d013ebdb61314ea00
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012062"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877807"
 ---
 # <a name="project-type-essentials"></a>プロジェクト タイプの基本情報
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] には、やなどの言語用のプロジェクトの種類がいくつか含まれてい [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、独自のプロジェクトの種類を作成することもできます。
@@ -58,7 +60,7 @@ ms.locfileid: "90012062"
 
 - プロジェクトの種類では、ファイルを使用する必要はありません。 たとえば、プロジェクトの種類では、すべてのデータをデータベースに格納できます。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] プロジェクトの種類により、プロジェクトおよびプロジェクト項目のデータを永続化する方法を完全に制御できます。 詳細については、「 [プロジェクトの種類の設計](../../extensibility/internals/project-type-design-decisions.md)上の決定」を参照してください。
 
-- プロジェクトの種類はプロジェクト *ファクトリ*を提供する必要があります。これは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] がプロジェクトの種類に基づいてプロジェクトを開くか作成するように指示されるたびに、プロジェクトの種類のインスタンスを作成するオブジェクトです。 詳細については、「 [プロジェクトファクトリを使用したプロジェクトインスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)」を参照してください。
+- プロジェクトの種類はプロジェクト *ファクトリ* を提供する必要があります。これは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] がプロジェクトの種類に基づいてプロジェクトを開くか作成するように指示されるたびに、プロジェクトの種類のインスタンスを作成するオブジェクトです。 詳細については、「 [プロジェクトファクトリを使用したプロジェクトインスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)」を参照してください。
 
 - プロジェクトの種類では、プロジェクトおよびプロジェクト項目のテンプレートを指定する必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、ユーザーが新しいプロジェクトを作成し、既存のプロジェクトに新しい項目を追加するときに、テンプレートが使用されます。 詳細については、「 [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)」を参照してください。
 

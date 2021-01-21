@@ -1,5 +1,7 @@
 ---
 title: '方法: リソースがあるプロジェクトをビルドする | Microsoft Docs'
+description: リソースがあるプロジェクトをビルドする方法、および MSBuild を使用してリソースをコンパイルする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76246096eec8779ce331e93f01be5ab791d1cdb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633955"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436684"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>方法: リソースがあるプロジェクトをビルドする
 
@@ -38,11 +40,11 @@ MSBuild とともに提供されている一般的なタスクのライブラリ
 
 4. `Output` 要素から作成された項目を別のタスクへの入力として使用します。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
 次のコード例では、コンパイルされたリソース ファイルである *alpha.resources* と *beta.resources* を `GenerateResource` タスクの `OutputResources` 属性に含めることと、これらの 2 ファイルを `Resources` 項目一覧に含めることを、`Output` 要素によってどのように指定するかを示します。 それらの *.resources* ファイルを同名の項目の集合として識別すれば、[Csc](../msbuild/csc-task.md) タスクのような別のタスクの入力として簡単に使用することができます。
 
-このタスクは、[Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の **/compile** スイッチを使用するのと同じことです。
+このタスクは、 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の **/compile** スイッチを使用するのと同じことです。
 
 `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`
 
@@ -55,7 +57,7 @@ MSBuild とともに提供されている一般的なタスクのライブラリ
 </GenerateResource>
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
 次のプロジェクト例には、リソースをコンパイルする `GenerateResource` タスクと、ソース コード ファイルとコンパイルされたリソース ファイルの両方をコンパイルする `Csc` タスクの 2 つのタスクが含まれています。 `GenerateResource` タスクでコンパイルされたリソース ファイルは `Resources` 項目に保存され、`Csc` タスクに渡されます。
 

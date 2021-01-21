@@ -1,6 +1,8 @@
 ---
-title: デバッガーの外部でアプリを実行するときにアクセス違反をデバッグする
-ms.custom: seodec18
+title: Visual Studio の外部でアプリを実行するときにアクセス違反をデバッグする
+titleSuffix: ''
+description: Just-in-Time デバッガーを使用して、Visual Studio 環境の外部で発生するアクセス違反をデバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dde869e6e9e1551459ce1171364709baf6403e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49d1fb2b24488692031c647139aa1f1076f0dd6f
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350434"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398485"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>プログラムの実行中にデバッガーの外部で発生するアクセス違反をデバッグするには
 

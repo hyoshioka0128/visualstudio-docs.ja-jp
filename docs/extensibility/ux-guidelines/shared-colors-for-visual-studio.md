@@ -1,5 +1,6 @@
 ---
 title: Visual Studio の共有色 |Microsoft Docs
+description: 一般的な Visual Studio シェルの要素とテーマを使用して、Visual Studio 環境と一貫性のある独自のカスタム UI をデザインする方法について説明します。
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
@@ -8,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e31e5d9c3d1dc284694bd2db2a9f37d863462ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699927"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668912"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有色
 共通の Visual Studio シェル要素を使用する UI を設計する場合、またはインターフェイス要素と同様の機能を使用する場合は、パッケージ定義ファイル内の既存のトークン名を使用して、色を選択して割り当てます。 これにより、UI が Visual Studio 環境全体で一貫性を保ち、テーマが追加された場合や更新された場合に自動的に更新されるようになります。
@@ -49,7 +50,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| Button | `CommonControls.Button` |
+| ボタン | `CommonControls.Button` |
 | ボタンの境界線 | `CommonControls.ButtonBorder` |
 
 **Button: 既定の状態**
@@ -58,7 +59,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| Button | `CommonControls.ButtonDefault` |
+| ボタン | `CommonControls.ButtonDefault` |
 | ボタンの境界線 | `CommonControls.ButtonBorderDefault` |
 
 **ボタン: 無効な状態**
@@ -67,7 +68,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| Button | `CommonControls.ButtonDisabled` |
+| ボタン | `CommonControls.ButtonDisabled` |
 | ボタンの境界線 | `CommonControls.ButtonBorderDisabled` |
 
 **ボタン: ホバー状態**
@@ -76,7 +77,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| Button | `CommonControls.ButtonHover` |
+| ボタン | `CommonControls.ButtonHover` |
 | ボタンの境界線 | `CommonControls.ButtonBorderHover` |
 
 **Button: 押された状態**
@@ -85,7 +86,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| Button | `CommonControls.ButtonPressed` |
+| ボタン | `CommonControls.ButtonPressed` |
 | ボタンの境界線 | `CommonControls.ButtonBorderPressed` |
 
 **ボタン: フォーカスのある状態**
@@ -94,7 +95,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| Button | `CommonControls.ButtonFocused` |
+| ボタン | `CommonControls.ButtonFocused` |
 | ボタンの境界線 | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>チェック ボックス コントロール
@@ -110,7 +111,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.CheckBoxBackground` |
+| バックグラウンド | `CommonControls.CheckBoxBackground` |
 | 境界線 | `CommonControls.CheckBoxBorder` |
 | Text | `CommonControls.CheckBoxText` |
 | グリフ | `CommonControls.CheckBoxGlyph` |
@@ -121,7 +122,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.CheckBoxBackgroundDisabled` |
+| バックグラウンド | `CommonControls.CheckBoxBackgroundDisabled` |
 | 境界線 | `CommonControls.CheckBoxBorderDisabled` |
 | Text | `CommonControls.CheckBoxTextDisabled` |
 | グリフ | `CommonControls.CheckBoxGlyphDisabled` |
@@ -132,7 +133,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.CheckBoxBackgroundHover` |
+| バックグラウンド | `CommonControls.CheckBoxBackgroundHover` |
 | 境界線 | `CommonControls.CheckBoxBorderHover` |
 | Text | `CommonControls.CheckBoxTextHover` |
 | グリフ | `CommonControls.CheckBoxGlyphHover` |
@@ -143,7 +144,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.CheckBoxBackgroundPressed` |
+| バックグラウンド | `CommonControls.CheckBoxBackgroundPressed` |
 | 境界線 | `CommonControls.CheckBoxBorderPressed` |
 | Text | `CommonControls.CheckBoxTextPressed` |
 | グリフ | `CommonControls.CheckBoxGlyphPressed` |
@@ -154,7 +155,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.CheckBoxBackgroundFocused` |
+| バックグラウンド | `CommonControls.CheckBoxBackgroundFocused` |
 | 境界線 | `CommonControls.CheckBoxBorderFocused` |
 | Text | `CommonControls.CheckBoxTextFocused` |
 | グリフ | `CommonControls.CheckBoxGlyphFocused` |
@@ -173,7 +174,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.ComboBoxBackground` |
+| バックグラウンド | `CommonControls.ComboBoxBackground` |
 | 境界線 | `CommonControls.ComboBoxBorder` |
 | Text | `CommonControls.ComboBoxText` |
 | 区切り記号 | `CommonControls.ComboBoxSeparator` |
@@ -186,7 +187,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.ComboBoxBackgroundDisabled` |
+| バックグラウンド | `CommonControls.ComboBoxBackgroundDisabled` |
 | 境界線 | `CommonControls.ComboBoxBorderDisabled` |
 | Text | `CommonControls.ComboBoxTextDisabled` |
 | 区切り記号 | `CommonControls.ComboBoxSeparatorDisabled` |
@@ -199,7 +200,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.ComboBoxBackgroundHover` |
+| バックグラウンド | `CommonControls.ComboBoxBackgroundHover` |
 | 境界線 | `CommonControls.ComboBoxBorderHover` |
 | Text | `CommonControls.ComboBoxTextHover` |
 | 区切り記号 | `CommonControls.ComboBoxSeparatorHover` |
@@ -212,7 +213,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.ComboBoxBackgroundPressed` |
+| バックグラウンド | `CommonControls.ComboBoxBackgroundPressed` |
 | 境界線 | `CommonControls.ComboBoxBorderPressed` |
 | Text | `CommonControls.ComboBoxTextPressed` |
 | 区切り記号 | `CommonControls.ComboBoxSeparatorPressed` |
@@ -225,7 +226,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
+| バックグラウンド | `CommonControls.ComboBoxListBackground`<br />`CommonControls.ComboBoxListBackgroundHover`<br />`CommonControls.ComboBoxListItemBackgroundPressed`<br />`CommonControls.ComboBoxListItemBackgroundFocused` |
 | 境界線 | `CommonControls.ComboBoxListBorder`<br />`CommonControls.ComboBoxListBorderHover`<br />`CommonControls.ComboBoxListBorderPressed`<br />`CommonControls.ComboBoxListBorderFocused` |
 | 項目のテキスト | `CommonControls.ComboBoxListItemText`<br /> `CommonControls.ComboBoxListItemTextHover`<br />`CommonControls.ComboBoxListItemTextPressed`<br />`CommonControls.ComboBoxListItemTextFocused` |
 | 背景の影 | `CommonControls.ComboBoxListBackgroundShadow` |
@@ -236,7 +237,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.ComboBoxBackgroundFocused` |
+| バックグラウンド | `CommonControls.ComboBoxBackgroundFocused` |
 | 境界線 | `CommonControls.ComboBoxBorderFocused` |
 | Text | `CommonControls.ComboBoxTextFocused` |
 | 区切り記号 | `CommonControls.ComboBoxSeparatorFocused` |
@@ -267,7 +268,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Header.Default` |
+| バックグラウンド | `Header.Default` |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 前景 (グリフ) | `Header.Glyph` |
 | 境界線 | `Header.SeparatorLine` |
@@ -276,7 +277,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Header.MouseOver` |
+| バックグラウンド | `Header.MouseOver` |
 | 前景 (テキスト) | `Environment.CommandBarTextHover` |
 | 前景 (グリフ) | `Header.MouseOverGlyph` |
 | 境界線 | `Header.SeparatorLine` |
@@ -285,7 +286,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `CommonControls.CheckBoxBackgroundPressed` |
+| バックグラウンド | `CommonControls.CheckBoxBackgroundPressed` |
 | 前景 (テキスト) | `CommonControls.CheckBoxBorderPressed` |
 | 前景 (グリフ) | `CommonControls.CheckBoxTextPressed` |
 | 境界線 | `CommonControls.CheckBoxGlyphPressed` |
@@ -297,7 +298,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 透明 |
+| バックグラウンド | 透明 |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 境界線 | なし |
 
@@ -305,7 +306,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemActive` |
+| バックグラウンド | `TreeView.SelectedItemActive` |
 | 前景 (テキスト) | `TreeView.SelectedItemActiveText` |
 | 境界線 | なし |
 
@@ -313,7 +314,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemInactive` |
+| バックグラウンド | `TreeView.SelectedItemInactive` |
 | 前景 (テキスト) | `TreeView.SelectedItemInactiveText` |
 | 境界線 | なし |
 
@@ -355,7 +356,7 @@ ms.locfileid: "80699927"
 | 要素 | トークン名: Category.color |
 | --- | --- |
 | 前景 (テキスト) | `Environment.ControlRequiredHintText` |
-| 背景 | `Environment.ControlRequiredBackground` |
+| バックグラウンド | `Environment.ControlRequiredBackground` |
 
 **検索ボックスのコントロールテキスト**
 
@@ -423,7 +424,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.InfoBarBackground` |
+| バックグラウンド | `InfoBar.InfoBarBackground` |
 | 前景 (テキスト) | `InfoBar.InfoBar` |
 | 境界線 | `InfoBar.InfoBarBorder` |
 
@@ -433,7 +434,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.CloseButton` |
+| バックグラウンド | `InfoBar.CloseButton` |
 | 境界線 | `InfoBar.CloseButtonBorder` |
 | グリフ | `InfoBar.CloseButtonGlyph` |
 
@@ -443,7 +444,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.CloseButtonHover` |
+| バックグラウンド | `InfoBar.CloseButtonHover` |
 | 境界線 | `InfoBar.CloseButtonHoverBorder` |
 | グリフ | `InfoBar.CloseButtonHoverGlyph` |
 
@@ -453,7 +454,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.CloseButtonDown` |
+| バックグラウンド | `InfoBar.CloseButtonDown` |
 | 境界線 | `InfoBar.CloseButtonDownBorder` |
 | グリフ | `InfoBar.CloseButtonDownGlyph` |
 
@@ -511,7 +512,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.Button` |
+| バックグラウンド | `InfoBar.Button` |
 | 前景 (テキスト) | `InfoBar.Button` |
 | 境界線 | `InfoBar.ButtonBorder` |
 
@@ -521,7 +522,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.ButtonMouseOver` |
+| バックグラウンド | `InfoBar.ButtonMouseOver` |
 | 前景 (テキスト) | `InfoBar.ButtonMouseOver` |
 | 境界線 | `InfoBar.ButtonMouseOverBorder` |
 
@@ -531,7 +532,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.ButtonMouseDown` |
+| バックグラウンド | `InfoBar.ButtonMouseDown` |
 | 前景 (テキスト) | `InfoBar.ButtonMouseDown` |
 | 境界線 | `InfoBar.ButtonMouseDownBorder` |
 
@@ -541,7 +542,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.ButtonDisabled` |
+| バックグラウンド | `InfoBar.ButtonDisabled` |
 | 前景 (テキスト) | `InfoBar.ButtonDisabled` |
 | 境界線 | `InfoBar.ButtonDisabledBorder` |
 
@@ -551,7 +552,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `InfoBar.ButtonFocus` |
+| バックグラウンド | `InfoBar.ButtonFocus` |
 | 前景 (テキスト) | `InfoBar.ButtonFocus` |
 | 境界線 | `InfoBar.ButtonFocusBorder` |
 
@@ -597,7 +598,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ScrollBarArrowBackground`<br />(スクロールバーと同じ色に設定されます)。 |
+| バックグラウンド | `Environment.ScrollBarArrowBackground`<br />(スクロールバーと同じ色に設定されます)。 |
 | 前景 (グリフ) | `Environment.ScrollBarArrowGlyph` |
 
 **スクロールバーの矢印: ホバー状態**
@@ -606,7 +607,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ScrollBarArrowMouseOverBackground`<br />(スクロールバーと同じ色に設定されます)。 |
+| バックグラウンド | `Environment.ScrollBarArrowMouseOverBackground`<br />(スクロールバーと同じ色に設定されます)。 |
 | 前景 (グリフ) | `Environment.ScrollBarArrowGlyphMouseOver` |
 
 **スクロールバーの矢印: 押された状態**
@@ -615,7 +616,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ScrollBarArrowPressedBackground`<br />(スクロールバーと同じ色に設定されます)。 |
+| バックグラウンド | `Environment.ScrollBarArrowPressedBackground`<br />(スクロールバーと同じ色に設定されます)。 |
 | 前景 (グリフ) | `Environment.ScrollBarArrowGlyphPressed` |
 
 ### <a name="search-boxes"></a><a name="BKMK_SearchBoxes"></a>検索ボックス
@@ -644,7 +645,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.FocusedBackground` |
+| バックグラウンド | `SearchControl.FocusedBackground` |
 | 前景 (テキスト) | `SearchControl.FocusedBackground` |
 | 境界線 | `SearchControl.FocusedBorder` |
 | 区切り記号 | `SearchControl.FocusedDropDownSeparator` |
@@ -655,7 +656,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.SearchActiveBackground` |
+| バックグラウンド | `SearchControl.SearchActiveBackground` |
 | 前景 (テキスト) | `SearchControl.SearchActiveBackground` |
 | 境界線 | `SearchControl.UnfocusedBorder` |
 | 区切り記号 | `SearchControl.DropDownSeparator` |
@@ -666,7 +667,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.Unfocused` |
+| バックグラウンド | `SearchControl.Unfocused` |
 | 前景 (テキスト) | `SearchControl.Unfocused` |
 | 境界線 | `SearchControl.UnfocusedBorder` |
 | 区切り記号 | `SearchControl.DropDownSeparator` |
@@ -677,7 +678,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.Selection` |
+| バックグラウンド | `SearchControl.Selection` |
 | 前景 (テキスト) | `SearchControl.FocusedBackground` |
 | 境界線 | なし |
 | 区切り記号 | `SearchControl.FocusedDropDownSeparator` |
@@ -688,7 +689,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.Disabled` |
+| バックグラウンド | `SearchControl.Disabled` |
 | 前景 (テキスト) | `SearchControl.Disabled` |
 | 境界線 | `SearchControl.DisabledBorder` |
 | 区切り記号 | `SearchControl.DropDownSeparator` |
@@ -699,7 +700,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (検索グリフ) | `SearchControl.SearchGlyph` |
 | 前景 (停止グリフ) | `SearchControl.StopGlyph` |
 | 前景 (クリア グリフ) | `SearchControl.ClearGlyph` |
@@ -711,7 +712,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (検索グリフ) | `SearchControl.SearchGlyph` |
 | 前景 (停止グリフ) | `SearchControl.StopGlyph` |
 | 前景 (クリア グリフ) | `SearchControl.ClearGlyph` |
@@ -723,7 +724,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.ActionButtonMouseDown` |
+| バックグラウンド | `SearchControl.ActionButtonMouseDown` |
 | 前景 (グリフ) | `SearchControl.ActionButtonMouseDownGlyph` |
 | 境界線 | `SearchControl.ActionButtonMouseDownBorder` |
 
@@ -733,7 +734,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (グリフ) | `SearchControl.ActionButtonDisabledGlyph` |
 | 境界線 | なし |
 
@@ -743,7 +744,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.FocusedDropDownButton` |
+| バックグラウンド | `SearchControl.FocusedDropDownButton` |
 | 前景 (グリフ) | `SearchControl.FocusedDropDownButtonGlyph` |
 | 境界線 | `SearchControl.FocusedDropDownButtonBorder` |
 
@@ -753,7 +754,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.UnfocusedDropDownButton` |
+| バックグラウンド | `SearchControl.UnfocusedDropDownButton` |
 | 前景 (グリフ) | `SearchControl.UnfocusedDropDownButtonGlyph` |
 | 境界線 | `SearchControl.UnfocusedDropDownButtonBorder` |
 
@@ -763,7 +764,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.MouseDownDropDownButton` |
+| バックグラウンド | `SearchControl.MouseDownDropDownButton` |
 | 前景 (グリフ) | `SearchControl.MouseDownDropDownButtonGlyph` |
 | 境界線 | `SearchControl.MouseDownDropDownButtonBorder` |
 
@@ -773,7 +774,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (グリフ) | `SearchControl.DisabledDownButtonGlyph` |
 | 境界線 | なし |
 
@@ -801,7 +802,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `SearchControl.PopupItemText` |
 
 **提案された検索: ホバー状態**
@@ -810,7 +811,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `SearchControl.PopupMouseOverItemText` |
 | 境界線 | `SearchControl.PopupControlMouseOverBorder` |
 
@@ -822,7 +823,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `SearchControl.PopupSectionBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (チェック ボックス テキスト) | `SearchControl.PopupCheckboxText` |
 | 前景 (リンク テキスト) | `SearchControl.PopupButtonText` |
 | ヘッダーの背景 | `SearchControl.PopupSectionHeaderGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
@@ -836,7 +837,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (チェック ボックス テキスト) | `SearchControl.PopupCheckboxMouseDownText` |
 | 前景 (リンク テキスト) | `SearchControl.PopupButtonMouseDownText` |
 | 境界線 | `SearchControl.PopupControlMouseOverBorder` |
@@ -870,7 +871,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.Background` |
+| バックグラウンド | `TreeView.Background` |
 | 前景 (テキスト) | `TreeView.Background` |
 | 前景 (グリフ) | `TreeView.Glyph` |
 | 境界線 | なし |
@@ -881,7 +882,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.Background` |
+| バックグラウンド | `TreeView.Background` |
 | 前景 (テキスト) | `TreeView.Background` |
 | 前景 (グリフ) | `TreeView.GlyphMouseOver` |
 | 境界線 | なし |
@@ -892,7 +893,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.DragOverItem` |
+| バックグラウンド | `TreeView.DragOverItem` |
 | 前景 (テキスト) | `TreeView.DragOverItem` |
 | 前景 (グリフ) | `TreeView.DragOverItemGlyph` |
 | 境界線 | なし |
@@ -903,7 +904,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemActive` |
+| バックグラウンド | `TreeView.SelectedItemActive` |
 | 前景 (テキスト) | `TreeView.SelectedItemActive` |
 | 前景 (グリフ) | `TreeView.SelectedItemActiveGlyph` |
 | 境界線 | `TreeView.FocusVisualBorder` |
@@ -914,7 +915,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemInactive` |
+| バックグラウンド | `TreeView.SelectedItemInactive` |
 | 前景 (テキスト) | `TreeView.SelectedItemInactive` |
 | 前景 (グリフ) | `TreeView.SelectedItemInactiveGlyph` |
 | 境界線 | なし |
@@ -925,7 +926,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemActive` |
+| バックグラウンド | `TreeView.SelectedItemActive` |
 | 前景 (テキスト) | `TreeView.SelectedItemActive` |
 | 前景 (グリフ) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | 境界線 | `TreeView.FocusVisualBorder` |
@@ -936,14 +937,14 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemInactive` |
+| バックグラウンド | `TreeView.SelectedItemInactive` |
 | 前景 (テキスト) | `TreeView.SelectedItemInactive` |
 | 前景 (グリフ) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | 境界線 | なし |
 
 ## <a name="shell-appearance"></a>シェルの外観
 
-### <a name="background"></a>背景
+### <a name="background"></a>バックグラウンド
 環境の背景色は、2 つのレイヤーで構成されます。 下部レイヤーは、IDE 全体にわたる単色です。 上部レイヤーは、コマンド シェルフの下、および IDE の左端と右端のツール ウィンドウ自動非表示チャネルの間に収まります。 上部と下部の背景レイヤーは、ライトテーマとダークテーマで同じ色に設定されます。
 
 ![Visual Studio シェルの背景 (赤線)](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Visual Studio シェルの背景 (赤線)
@@ -957,7 +958,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.EnvironmentBackground` |
+| バックグラウンド | `Environment.EnvironmentBackground` |
 
 **上位のレイヤーシェルの外観**
 
@@ -965,7 +966,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |
+| バックグラウンド | `Environment.EnvironmentBackgroundGradientBegin`<br />`Environment.EnvironmentBackgroundGradientEnd`<br />`Environment.EnvironmentBackgroundGradientMiddle1`<br />`Environment.EnvironmentBackgroundGradientMiddle2` |
 
 ### <a name="command-shelf"></a>コマンド シェルフ
 コマンド シェルフの背景には 2 セットのトークン名が使用されます。1 セットはメニュー バーが位置する場所、もう 1 セットはコマンド バーが位置する場所に使用されます。 個々のコマンド バー グループには、独自の背景色値があります。これについては「コマンド バー」セクションで詳しく説明しています。 メニュー バーとコマンド バーのテキストについては、それぞれメニューとコマンド バーのセクションで説明しています。
@@ -983,7 +984,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
+| バックグラウンド | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
 **コマンドシェルフのコマンドバー**
 
@@ -991,7 +992,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
+| バックグラウンド | `Environment.CommandShelfBackgroundGradientBegin`<br />`Environment.CommandShelfBackgroundGradientMiddle`<br />`Environment.CommandShelfBackgroundGradientEnd` |
 
 ## <a name="manifest-designer"></a>マニフェスト デザイナー
 マニフェスト デザイナーは、Windows 8 および Windows Phone 8 プロジェクトのマニフェスト ファイルを編集しやすくするための手段として設計されています。 使用可能な共有フレームワークはありませんが、向き/ナビゲーション タブと全体的な構造のデザイン レイアウトおよび色を一致させることが適切な場合があります。 レイアウトの詳細については、「 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)」を参照してください。
@@ -1007,33 +1008,33 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `ManifestDesigner.TabActive` |
+| バックグラウンド | `ManifestDesigner.TabActive` |
 | 境界線 | なし |
 
 **マニフェストデザイナーの選択された説明ペイン: 既定の状態**
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `ManifestDesigner.DescriptionPane` |
+| バックグラウンド | `ManifestDesigner.DescriptionPane` |
 
 **マニフェストデザイナーの選択されたコンテンツページ: 既定の状態**
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `ManifestDesigner.Background` |
+| バックグラウンド | `ManifestDesigner.Background` |
 | ダイアログ ヘルパー テキスト | `ManifestDesigner.WatermarkText`<br />(このトークン名はその関数と一致しません)。 |
 
 **マニフェストデザイナータブ: 未選択状態**
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `ManifestDesigner.Tab.Inactive` |
+| バックグラウンド | `ManifestDesigner.Tab.Inactive` |
 
 **[マニフェストデザイナー] タブ: ホバー状態**
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `ManifestDesigner.Tab.Mouseover` |
+| バックグラウンド | `ManifestDesigner.Tab.Mouseover` |
 
 ## <a name="command-structures"></a>コマンドの構造
 
@@ -1065,7 +1066,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 前景 (グリフ) | `Environment.CommandBarMenuGlyph` |
 | 境界線 | なし |
@@ -1078,7 +1079,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextHover` |
 | 前景 (グリフ) | `Environment.CommandBarMenuMouseOverGlyph` |
 | 境界線 | `Environment.CommandBarBorder` |
@@ -1091,7 +1092,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMenuBackgroundGradientBegin`<br/>(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 前景 (グリフ) | `Environment.CommandBarMenuMouseDownGlyph` |
 | 境界線 | `Environment.CommandBarMenuBorder`<br />(Left、top、right のみ)。 |
@@ -1102,7 +1103,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (テキスト) | `Environment.CommandBarTextInactive` |
 | 前景 (グリフ) | `Environment.CommandBarTextInactive` |
 | 境界線 | なし |
@@ -1123,7 +1124,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMenuBackgroundGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 前景 (サブメニュー グリフ) | `Environment.CommandBarMenuSubmenuGlyph` |
 | 境界線 | `Environment.CommandBarMenuBorder` |
@@ -1154,7 +1155,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMenuItemMouseOver` |
+| バックグラウンド | `Environment.CommandBarMenuItemMouseOver` |
 | 前景 (テキスト) | `Environment.CommandBarMenuItemMouseOverText` |
 | 前景 (サブメニュー グリフ) | `Environment.CommandBarMenuMouseOverSubmenuGlyph` |
 | チェック マーク | `Environment.CommandBarCheckBoxMouseOver` |
@@ -1203,7 +1204,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 境界線 | `Environment.CommandBarToolBarBorder` |
 | ドラッグ ハンドル | `Environment.CommandBarDragHandle` |
 | 区切り記号 | `Environment.CommandBarToolBarSeparator`<br />`Environment.CommandBarToolBarSeparatorHighlight` |
@@ -1224,7 +1225,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし (コマンド バーの背景から継承) |
+| バックグラウンド | 該当なし (コマンド バーの背景から継承) |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 境界線 | 該当なし |
 
@@ -1234,7 +1235,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarSelected` |
+| バックグラウンド | `Environment.CommandBarSelected` |
 | 前景 (テキスト) | `Environment.CommandBarTextSelected` |
 | 境界線 | `Environment.CommandBarSelectedBorder` |
 
@@ -1244,7 +1245,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextHover` |
 | 境界線 | `Environment.CommandBarBorder` |
 
@@ -1254,7 +1255,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarHoverOverSelected` |
+| バックグラウンド | `Environment.CommandBarHoverOverSelected` |
 | 前景 (テキスト) | `Environment.CommandBarTextHoverOverSelected` |
 | 境界線 | `Environment.CommandBarHoverOverSelectedIconBorder` |
 
@@ -1264,7 +1265,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMouseDownBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextMouseDown` |
 | 境界線 | `Environment.CommandBarBorder` |
 
@@ -1274,7 +1275,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし (コマンド バーの背景から継承) |
+| バックグラウンド | 該当なし (コマンド バーの背景から継承) |
 | 前景 (テキスト) | `Environment.CommandBarTextInactive` |
 | 境界線 | 該当なし |
 
@@ -1296,7 +1297,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxBackground` |
+| バックグラウンド | `Environment.ComboBoxBackground` |
 | 前景 (テキスト) | `Environment.ComboBoxText` |
 | 境界線 | `Environment.ComboBoxBorder` |
 | 区切り記号 | 区切り記号なし |
@@ -1307,7 +1308,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし (コマンド バーの背景から継承) |
+| バックグラウンド | 該当なし (コマンド バーの背景から継承) |
 | 前景 (グリフ) | `Environment.ComboBoxGlyph` |
 
 **コマンドバーのドロップダウンリスト: 既定の状態**
@@ -1316,7 +1317,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxPopupBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.ComboBoxPopupBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.ComboBoxItemText` |
 | 境界線 | `Environment.ComboBoxPopupBorder` |
 
@@ -1326,23 +1327,23 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.ComboBoxMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.ComboBoxMouseOverText` |
 | 境界線 | `Environment.ComboBoxMouseOverBorder` |
 | 区切り記号 | `Environment.ComboBoxMouseOverSeparator` |
 
  **コマンドバーのドロップダウンボタン: ホバー状態**
 
-![ホバー時のコマンドバーのドロップダウンボタン](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />ホバー時のコマンドバーのドロップダウンボタン
+![ホバー時のコマンドバーコンボボックスのドロップダウンボタン](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />ホバー時のコマンドバーのドロップダウンボタン
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxButtonMouseOverBackground` |
+| バックグラウンド | `Environment.ComboBoxButtonMouseOverBackground` |
 | 前景 (グリフ) | `Environment.ComboBoxMouseOverGlyph` |
 
 **コマンドバーのドロップダウンリスト: ホバー状態**
 
- ![ホバー時のコマンドバーのドロップダウンリスト](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />ホバー時のコマンドバーのドロップダウンリスト
+ ![ホバー時のコマンドバーのコンボボックスのドロップダウンリスト](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />ホバー時のコマンドバーのドロップダウンリスト
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
@@ -1356,7 +1357,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxFocusedBackground` |
+| バックグラウンド | `Environment.ComboBoxFocusedBackground` |
 | 前景 (テキスト) | `Environment.ComboBoxFocusedText` |
 | 境界線 | `Environment.ComboBoxFocusedBorder` |
 | 区切り記号 | `Environment.ComboBoxFocusedButtonSeparator` |
@@ -1367,7 +1368,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxFocusedButtonBackground` |
+| バックグラウンド | `Environment.ComboBoxFocusedButtonBackground` |
 | 前景 (グリフ) | `Environment.ComboBoxFocusedGlyph` |
 
  **コマンドバーコンボボックスの入力フィールド: 押された状態**
@@ -1376,18 +1377,18 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxMouseDownBackground` |
+| バックグラウンド | `Environment.ComboBoxMouseDownBackground` |
 | 前景 (テキスト) | `Environment.ComboBoxMouseDownText` |
 | 境界線 | `Environment.ComboBoxMouseDownBorder` |
 | 区切り記号 | `Environment.ComboBoxMouseDownSeparator` |
 
 **コマンドバーのドロップダウンボタン: 押された状態**
 
-![押されたコマンドバーのドロップダウンボタン](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />押されたコマンドバーのドロップダウンボタン
+![押されたコマンドバーコンボボックスのドロップダウンボタン](../../extensibility/ux-guidelines/media/0303-039_comboboxdropdownbuttonpressed.png "0303-039_ComboBoxDropdownButtonPressed")<br />押されたコマンドバーのドロップダウンボタン
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxButtonMouseDownBackground` |
+| バックグラウンド | `Environment.ComboBoxButtonMouseDownBackground` |
 | 前景 (グリフ) | `Environment.ComboBoxMouseDownGlyph` |
 
 **コマンドバーコンボボックスの入力フィールド: 無効な状態**
@@ -1396,18 +1397,18 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxDisabledBackground` |
+| バックグラウンド | `Environment.ComboBoxDisabledBackground` |
 | 前景 (テキスト) | `Environment.ComboBoxDisabledText` |
 | 境界線 | `Environment.ComboBoxDisabledBorder` |
 | 区切り記号 | 区切り記号なし |
 
 **コマンドバーのドロップダウンボタン: 無効な状態**
 
-![無効なコマンドバーのドロップダウンボタン](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />無効なコマンドバーのドロップダウンボタン
+![無効なコマンドバーコンボボックスのドロップダウンボタン](../../extensibility/ux-guidelines/media/0303-040_comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br />無効なコマンドバーのドロップダウンボタン
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (グリフ) | `Environment.ComboBoxDisabledGlyph` |
 
 #### <a name="command-bar-drop-downs"></a><a name="BKMK_CommandDropDown"></a> コマンドバーのドロップダウン
@@ -1428,7 +1429,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownBackground` |
+| バックグラウンド | `Environment.DropDownBackground` |
 | 前景 (テキスト) | `DropDownText` |
 | 境界線 | `DropDownBorder` |
 | 区切り記号 | 区切り記号なし |
@@ -1439,7 +1440,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (グリフ) | `Environment.DropDownGlyph` |
 
 **コマンドバーのドロップダウンリスト: 既定の状態**
@@ -1448,7 +1449,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownPopupBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.DropDownPopupBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.ComboBoxItemText` |
 | 境界線 | `Environment.DropDownPopupBorder` |
 | シャドウ | `Environment.DropShadowBackground` |
@@ -1459,7 +1460,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.DropDownMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.DropDownMouseOverText` |
 | 境界線 | `Environment.DropDownMouseOverBorder` |
 | 区切り記号 | `Environment.DropDownButtonMouseOverSeparator` |
@@ -1470,7 +1471,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownButtonMouseOverBackground` |
+| バックグラウンド | `Environment.DropDownButtonMouseOverBackground` |
 | 前景 (グリフ) | `Environment.DropDownMouseOverGlyph` |
 
 **コマンドバーのドロップダウンリスト: ホバー状態**
@@ -1489,7 +1490,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownMouseDownBackground` |
+| バックグラウンド | `Environment.DropDownMouseDownBackground` |
 | 前景 (テキスト) | `Environment.DropDownMouseDownText` |
 | 境界線 | `Environment.DropDownMouseDownBorder` |
 | 区切り記号 | `Environment.DropDownButtonMouseDownSeparator` |
@@ -1500,7 +1501,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownButtonMouseDownBackground` |
+| バックグラウンド | `Environment.DropDownButtonMouseDownBackground` |
 | 前景 (グリフ) | `Environment.DropDownMouseDownGlyph` |
 
 **コマンドバーのドロップダウンの選択フィールド: 無効な状態**
@@ -1509,7 +1510,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DropDownDisabledBackground` |
+| バックグラウンド | `Environment.DropDownDisabledBackground` |
 | 前景 (テキスト) | `Environment.DropDownDisabledText` |
 | 境界線 | `Environment.DropDownDisabledBorder` |
 | 区切り記号 | 区切り記号なし |
@@ -1520,7 +1521,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (グリフ) | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>コマンドバーの分割ボタン
@@ -1539,7 +1540,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | なし |
+| バックグラウンド | なし |
 | 前景 (テキスト) | `Environment.CommandBarTextActive` |
 | 前景 (グリフ) | `Environment.CommandBarSplitButtonGlyph` |
 | 境界線 | 該当なし |
@@ -1551,7 +1552,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextHover` |
 | 前景 (グリフ) | `Environment.CommandBarSplitButtonMouseOverGlyph` |
 | 境界線 | `Environment.CommandBarBorder` |
@@ -1563,7 +1564,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarMouseDownBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.CommandBarTextMouseDown` |
 | 前景 (グリフ) | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | 境界線 | `Environment.CommandBarBorder` |
@@ -1575,7 +1576,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (テキスト) | `Environment.ComboBoxItemTextInactive` |
 | 前景 (グリフ) | `Environment.CommandBarTextInactive` |
 | 境界線 | 該当なし |
@@ -1598,7 +1599,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarOptionsBackground` |
+| バックグラウンド | `Environment.CommandBarOptionsBackground` |
 | 前景 (グリフ) | `Environment.CommandBarOptionsGlyph` |
 
 **コマンドバーの [その他のオプション] ボタンと [オーバーフロー] ボタン: ホバー状態**
@@ -1609,7 +1610,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (グリフ) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 **コマンドバーの [その他のオプション] ボタンと [オーバーフロー] ボタン: 押された状態**
@@ -1620,7 +1621,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (グリフ) | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 ## <a name="document-windows"></a>ドキュメント ウィンドウ
@@ -1643,7 +1644,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | ドキュメントの種類によって異なります |
+| バックグラウンド | ドキュメントの種類によって異なります |
 | 前景 (テキスト) | ドキュメントの種類によって異なります |
 | 境界線 | `Environment.ToolWindowBorder` |
 
@@ -1653,7 +1654,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowFloatingFrame` |
+| バックグラウンド | `Environment.ToolWindowFloatingFrame` |
 | 前景 (テキスト) | `Environment.ToolWindowFloatingFrame` |
 | 前景 (グリフ) | `Environment.RaftedWindowButtonActiveGlyph` |
 | 境界線 | `Environment.MainWindowActiveDefaultBorder` |
@@ -1665,7 +1666,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowFloatingFrameInactive` |
+| バックグラウンド | `Environment.ToolWindowFloatingFrameInactive` |
 | 前景 (テキスト) | `Environment.ToolWindowFloatingFrameInactive` |
 | 前景 (グリフ) | `Environment.RaftedWindowButtonInactiveGlyph` |
 | 境界線 | `Environment.MainWindowInactiveBorder` |
@@ -1730,7 +1731,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabSelectedGradientTop`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.FileTabSelectedGradientTop`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.FileTabSelectedText` |
 | 境界線 | `Environment.FileTabSelectedBorder`<br />(背景と同じ色に設定されます)。 |
 | ドキュメントの境界線 | `Environment.FileTabDocumentBorderBackground` |
@@ -1741,7 +1742,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabInactiveGradientTop`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.FileTabInactiveGradientTop`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.FileTabInactiveText` |
 | 境界線 | `Environment.FileTabInactiveBorder`<br />(背景と同じ色に設定されます)。 |
 | ドキュメントの境界線 | `Environment.FileTabInactiveDocumentBorderBackground` |
@@ -1752,7 +1753,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabBackground` |
+| バックグラウンド | `Environment.FileTabBackground` |
 | 前景 (テキスト) | `Environment.FileTabText` |
 | 境界線 | `Environment.FileTabBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -1762,7 +1763,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabHotGradientTop`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.FileTabHotGradientTop`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.FileTabHotText` |
 | 境界線 | `Environment.FileTabHotBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -1782,7 +1783,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabProvisionalSelectedActive` |
+| バックグラウンド | `Environment.FileTabProvisionalSelectedActive` |
 | 前景 (テキスト) | `Environment.FileTabProvisionalSelectedActiveForeground` |
 | 境界線 | `Environment.FileTabProvisionalSelectedActiveBorder`<br />(背景と同じ色に設定されます)。 |
 | ドキュメントの境界線 | `Environment.FileTabProvisionalSelectedActiveBorder` |
@@ -1793,7 +1794,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabProvisionalSelectedInactive` |
+| バックグラウンド | `Environment.FileTabProvisionalSelectedInactive` |
 | 前景 (テキスト) | `Environment.FileTabProvisionalSelectedInactiveForeground` |
 | 境界線 | `Environment.FileTabProvisionalSelectedInactiveBorder` |
 | ドキュメントの境界線 | `Environment.FileTabProvisionalSelectedInactiveBorder` |
@@ -1804,7 +1805,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabProvisionalInactive` |
+| バックグラウンド | `Environment.FileTabProvisionalInactive` |
 | 前景 (テキスト) | `Environment.FileTabProvisionalInactiveForeground` |
 | 境界線 | `Environment.FileTabProvisionalInactiveBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -1814,7 +1815,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabProvisionalHover` |
+| バックグラウンド | `Environment.FileTabProvisionalHover` |
 | 前景 (テキスト) | `Environment.FileTabProvisionalHoverForeground` |
 | 境界線 | `Environment.FileTabProvisionalHoverBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -1834,7 +1835,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DocWellOverflowButtonBackground` |
+| バックグラウンド | `Environment.DocWellOverflowButtonBackground` |
 | 前景 (グリフ) | `Environment.DocWellOverflowButtonGlyph` |
 | 境界線 | 該当なし |
 
@@ -1844,7 +1845,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DocWellOverflowButtonMouseOverBackground` |
+| バックグラウンド | `Environment.DocWellOverflowButtonMouseOverBackground` |
 | 前景 (グリフ) | `Environment.DocWellOverflowButtonMouseOverGlyph` |
 | 境界線 | `Environment.DocWellOverflowButtonMouseOverBorder` |
 
@@ -1854,7 +1855,7 @@ ms.locfileid: "80699927"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.DocWellOverflowButtonMouseDownBackground` |
+| バックグラウンド | `Environment.DocWellOverflowButtonMouseDownBackground` |
 | 前景 (グリフ) | `Environment.DocWellOverflowButtonMouseDownGlyph` |
 | 境界線 | `Environment.DocWellOverflowButtonMouseDownBorder` |
 
@@ -1875,7 +1876,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.Background` |
+| バックグラウンド | `Tag.Background` |
 | 前景 (テキスト) | `Tag.Background` |
 
 **タグ: ホバー状態**
@@ -1884,7 +1885,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.HoverBackground` |
+| バックグラウンド | `Tag.HoverBackground` |
 | 前景 (テキスト) | `Tag.HoverBackgroundText` |
 
 **タグ: 押された状態**
@@ -1893,7 +1894,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.PressedBackground` |
+| バックグラウンド | `Tag.PressedBackground` |
 | 前景 (テキスト) | `Tag.PressedBackgroundText` |
 
 **タグ: 選択された状態**
@@ -1902,7 +1903,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.SelectedBackground` |
+| バックグラウンド | `Tag.SelectedBackground` |
 | 前景 (テキスト) | `Tag.SelectedBackgroundText` |
 
 #### <a name="close-times-tag-glyph"></a>タググリフを閉じる ( &times; )
@@ -1913,7 +1914,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (グリフ) | `Tag.TagHoverGlyph` |
 
 **閉じる ( &times; ) タググリフ: ホバー状態**
@@ -1922,7 +1923,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.TagHoverGlyphHoverBackground` |
+| バックグラウンド | `Tag.TagHoverGlyphHoverBackground` |
 | 前景 (グリフ) | `Tag.TagHoverGlyphHover` |
 | 境界線 | `Tag.TagHoverGlyphHoverBorder` |
 
@@ -1932,7 +1933,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.TagHoverGlyphPressedBackground` |
+| バックグラウンド | `Tag.TagHoverGlyphPressedBackground` |
 | 前景 (グリフ) | `Tag.TagHoverGlyphPressed` |
 | 境界線 | `Tag.TagHoverGlyphPressedBorder` |
 
@@ -1942,7 +1943,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (グリフ) | `Tag.TagSelectedGlyph` |
 
 **選択したタグと閉じる ( &times; ) グリフ: ホバー状態**
@@ -1951,7 +1952,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.TagSelectedGlyphHoverBackground` |
+| バックグラウンド | `Tag.TagSelectedGlyphHoverBackground` |
 | 前景 (グリフ) | `Tag.TagSelectedGlyphHover` |
 | 境界線 | `Tag.TagSelectedGlyphHoverBorder` |
 
@@ -1961,7 +1962,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Tag.TagSelectedGlyphPressedBackground` |
+| バックグラウンド | `Tag.TagSelectedGlyphPressedBackground` |
 | 前景 (グリフ) | `Tag.TagSelectedGlyphPressed` |
 | 境界線 | `Tag.TagSelectedGlyphPressedBorder` |
 
@@ -1989,7 +1990,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowBackground` |
+| バックグラウンド | `Environment.ToolWindowBackground` |
 | 境界線 | `Environment.ToolWindowBorder` |
 
 **フォーカスがあるフローティングツールウィンドウ**
@@ -1998,7 +1999,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowBackground` |
+| バックグラウンド | `Environment.ToolWindowBackground` |
 | 境界線 | `Environment.MainWindowActiveDefaultBorder` |
 
 **フローティング、見るツールウィンドウ**
@@ -2007,7 +2008,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowBackground` |
+| バックグラウンド | `Environment.ToolWindowBackground` |
 | 境界線 | `Environment.MainWindowInactiveBorder` |
 
 ### <a name="toolbox-like-windows"></a>ツールボックスのようなウィンドウ
@@ -2027,8 +2028,8 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolboxContent`<br />見出し |
-| 背景 | `Environment.ToolWindowBackground`<br />(個々の項目、または使用可能なコントロールがない場合はウィンドウ全体) |
+| バックグラウンド | `Environment.ToolboxContent`<br />見出し |
+| バックグラウンド | `Environment.ToolWindowBackground`<br />(個々の項目、または使用可能なコントロールがない場合はウィンドウ全体) |
 | 境界線 | なし |
 | 前景 (グリフ) | `Environment.ToolboxContent` |
 | 前景 (テキスト) | `Environment.ToolboxContent` |
@@ -2039,7 +2040,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolboxContentMouseOver`<br />(個々の項目のみ) |
+| バックグラウンド | `Environment.ToolboxContentMouseOver`<br />(個々の項目のみ) |
 | 境界線 | なし |
 | 前景 (テキスト) | `Environment.ToolboxContentMouseOver`<br />(個々の項目のみ) |
 
@@ -2051,7 +2052,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemActive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
+| バックグラウンド | `TreeView.SelectedItemActive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
 | 境界線 | `TreeView.FocusVisualBorder`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
 | 前景 (グリフ) | `TreeView.SelectedItemActive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
 | 前景 (テキスト) | `TreeView.SelectedItemActive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
@@ -2064,7 +2065,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
+| バックグラウンド | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
 | 境界線 | なし |
 | 前景 (グリフ) | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
 | 前景 (テキスト) | `TreeView.SelectedItemInactive`<br />[Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) カテゴリから |
@@ -2084,7 +2085,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.TitleBarActiveGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.TitleBarActiveGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.TitleBarActiveText` |
 | 境界線 | `Environment.TitleBarActiveBorder`<br />(背景と同じ色に設定されます)。 |
 | ドラッグ ハンドル | `Environment.TitleBarDragHandleActive` |
@@ -2095,7 +2096,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.TitleBarInactiveGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.TitleBarInactiveGradientBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.TitleBarInactiveText` |
 | 境界線 | 該当なし |
 | ドラッグ ハンドル | `Environment.TitleBarDragHandle` |
@@ -2114,7 +2115,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (グリフ) | `Environment.ToolWindowButtonActiveGlyph` |
 | 境界線 | 該当なし |
 
@@ -2124,7 +2125,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | 該当なし |
+| バックグラウンド | 該当なし |
 | 前景 (グリフ) | `Environment.ToolWindowButtonInactiveGlyph` |
 | 境界線 | 該当なし |
 
@@ -2134,7 +2135,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowButtonHoverActive` |
+| バックグラウンド | `Environment.ToolWindowButtonHoverActive` |
 | 前景 (グリフ) | `Environment.ToolWindowButtonHoverActiveGlyph` |
 | 境界線 | `Environment.ToolWindowButtonHoverActiveBorder` |
 
@@ -2144,7 +2145,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowButtonHoverInactive` |
+| バックグラウンド | `Environment.ToolWindowButtonHoverInactive` |
 | 前景 (グリフ) | `Environment.ToolWindowButtonHoverInactiveGlyph` |
 | 境界線 | `Environment.ToolWindowButtonHoverInactiveBorder` |
 
@@ -2154,7 +2155,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowButtonDown` |
+| バックグラウンド | `Environment.ToolWindowButtonDown` |
 | 前景 (グリフ) | `Environment.ToolWindowButtonDownActiveGlyph` |
 | 境界線 | `Environment.ToolWindowButtonDownBorder` |
 
@@ -2164,7 +2165,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowButtonDown` |
+| バックグラウンド | `Environment.ToolWindowButtonDown` |
 | 前景 (グリフ) | `Environment.ToolWindowButtonDownInactiveGlyph` |
 | 境界線 | `Environment.ToolWindowButtonDownBorder` |
 
@@ -2181,7 +2182,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowTabSelectedTab` |
+| バックグラウンド | `Environment.ToolWindowTabSelectedTab` |
 | 前景 (テキスト) | `Environment.ToolWindowTabSelectedActiveText` |
 | 境界線 | `Environment.ToolWindowTabSelectedBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -2191,7 +2192,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowTabSelectedTab` |
+| バックグラウンド | `Environment.ToolWindowTabSelectedTab` |
 | 前景 (テキスト) | `Environment.ToolWindowTabSelectedText` |
 | 境界線 | `Environment.ToolWindowTabSelectedBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -2201,7 +2202,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(グラデーションは、Visual Studio 2013 で同じ色の値に設定されます)。 |
+| バックグラウンド | `Environment.ToolWindowTabGradientBegin`<br />`Environment.ToolWindowTabGradientEnd`<br />(グラデーションは、Visual Studio 2013 で同じ色の値に設定されます)。 |
 | 前景 (テキスト) | `Environment.ToolWindowTabText` |
 | 境界線 | `Environment.ToolWindowTabBorder` |
 
@@ -2211,7 +2212,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(グラデーションは、Visual Studio 2013 で同じ色の値に設定されます)。 |
+| バックグラウンド | `Environment.ToolWindowTabMouseOverBackgroundBegin`<br />`Environment.ToolWindowTabMouseOverBackgroundEnd`<br />(グラデーションは、Visual Studio 2013 で同じ色の値に設定されます)。 |
 | 前景 (テキスト) | `Environment.ToolWindowTabMouseOverText` |
 | 境界線 | `Environment.ToolWindowTabMouseOverBorder`<br />(背景と同じ色に設定されます)。 |
 
@@ -2229,7 +2230,7 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.AutoHideTabBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.AutoHideTabBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.AutoHideTabText` |
 | 境界線 | `Environment.AutoHideTabBorder` |
 
@@ -2239,6 +2240,6 @@ Visual Studio のツール ウィンドウはさまざまなタスクに使用�
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| 背景 | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
+| バックグラウンド | `Environment.AutoHideTabMouseOverBackgroundBegin`<br />(このトークンのグラデーションの分岐点は、テーマ付き UI では使用されません)。 |
 | 前景 (テキスト) | `Environment.AutoHideTabMouseOverText` |
 | 境界線 | `Environment.AutoHideTabMouseOverBorder` |

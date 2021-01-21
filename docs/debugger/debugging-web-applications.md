@@ -1,5 +1,7 @@
 ---
 title: Web アプリケーションのデバッグ | Microsoft Docs
+description: ASP.NET アプリ、JavaScript アプリ、TypeScript アプリ、AJAX スクリプト アプリなど、さまざまな種類の Web アプリのデバッグに役立つリンクを紹介します。
+ms.custom: SEO-VS-2020
 ms.date: 11/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 63c5409f14fde2805e80f35f498cb57d68b1f58b
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714448"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728136"
 ---
 # <a name="debugging-web-applications"></a>Web アプリケーションのデバッグ
 
@@ -38,11 +40,11 @@ ms.locfileid: "73714448"
 
 - スクリプト ドキュメントを表示する
 
-  **ソリューション エクスプローラー**では、閲覧できるサーバー側およびクライアント側のスクリプト ドキュメントのリストを表示できます。 **ソリューション エクスプローラー**で、任意のスクリプト ドキュメントを開くことができます。 詳細については、[スクリプト ドキュメントを表示する](../debugger/how-to-view-script-documents.md)」を参照してください。
+  **ソリューション エクスプローラー** では、閲覧できるサーバー側およびクライアント側のスクリプト ドキュメントのリストを表示できます。 **ソリューション エクスプローラー** で、任意のスクリプト ドキュメントを開くことができます。 詳細については、[スクリプト ドキュメントを表示する](../debugger/how-to-view-script-documents.md)」を参照してください。
 
 - AJAX スクリプト アプリケーションのデバッグ
 
-  AJAX 対応の Web アプリケーションではスクリプト コードを頻繁に使用するため、デバッグは困難になる可能性があります。 AJAX デバッグ手法の詳細については、「[Ajax アプリケーションのデバッグとトレースの概要](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)」を参照してください。
+  AJAX 対応の Web アプリケーションではスクリプト コードを頻繁に使用するため、デバッグは困難になる可能性があります。 AJAX デバッグ手法の詳細については、「[Ajax アプリケーションのデバッグとトレースの概要](/previous-versions/bb398817(v=vs.140))」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

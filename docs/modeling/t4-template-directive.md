@@ -1,5 +1,7 @@
 ---
 title: T4 テンプレート ディレクティブ
+description: Visual Studio T4 テキストテンプレートは、通常、テンプレートの処理方法を指定するテンプレートディレクティブで開始されることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591841"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363667"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 
@@ -68,7 +70,7 @@ debug="true"
 
 `true`
 
-`false` (既定値)
+`false` (既定)
 
 `debug` 属性が `true` の場合、デバッガーでテンプレート内の中断または例外の発生位置を正確に特定できるようにする情報が中間コード ファイルに出力されるようになります。
 
@@ -88,7 +90,7 @@ hostspecific="true"
 
 `true`
 
-`false` (既定値)
+`false` (既定)
 
 `trueFromBase`
 
@@ -128,7 +130,7 @@ Content of myFile is:
 
 有効な値:
 
-`C#` (既定値)
+`C#` (既定)
 
 `VB`
 
@@ -156,7 +158,7 @@ Squares of numbers:
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>実行時 (前処理された) テキスト テンプレートでの継承
 
-実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートは、 **カスタムツール** プロパティが **Texttemplatingfilepreprocessor プロセッサ**に設定されているテンプレートです。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、「 [T4 テキストテンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
+実行時テキスト テンプレート間で継承を使用して、複数の派生バリアントを含む基本テンプレートを作成できます。 実行時テンプレートは、 **カスタムツール** プロパティが **Texttemplatingfilepreprocessor プロセッサ** に設定されているテンプレートです。 実行時テンプレートでは、そのテンプレートに定義されているテキストを作成するために、アプリケーションで呼び出すことができるコードが生成されます。 詳細については、「[T4 テキスト テンプレートを使用した実行時テキスト生成](../modeling/run-time-text-generation-with-t4-text-templates.md)」を参照してください。
 
 `inherits` 属性を指定しない場合は、テキスト テンプレートから基底クラスと派生クラスが生成されます。 `inherits` 属性を指定すると、派生クラスだけが生成されます。 基底クラスは手動で作成できますが、派生クラスで使用するメソッドを提供する必要があります。
 
@@ -231,11 +233,11 @@ This is the common footer.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>デザイン時テキスト テンプレートでの継承
 
-デザイン時テキストテンプレートは、 **カスタムツール** が **Texttemplatingfilegenerator**に設定されているファイルです。 このテンプレートは、Visual Studio プロジェクトの一部を形成するコードまたはテキストの出力ファイルを生成します。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
+デザイン時テキストテンプレートは、 **カスタムツール** が **Texttemplatingfilegenerator** に設定されているファイルです。 このテンプレートは、Visual Studio プロジェクトの一部を形成するコードまたはテキストの出力ファイルを生成します。 出力ファイルを生成するために、テンプレートは、まず中間プログラム コード ファイルに変換されます。通常、このファイルは表示されません。 `inherits` 属性では、この中間コードの基底クラスを指定します。
 
 デザイン時テキスト テンプレートの場合、<xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> から派生した基底クラスを指定できます。 `<#@assembly#>` ディレクティブを使用して、基底クラスを含むアセンブリまたはプロジェクトを読み込みます。
 
-詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/)を参照してください。
+詳細については、 [Gareth Jones のブログの「テキストテンプレートでの継承」](/archive/blogs/garethj/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata)を参照してください。
 
 ## <a name="linepragmas-attribute"></a>linePragmas グマ属性
 
@@ -245,7 +247,7 @@ This is the common footer.
 
 有効な値:
 
-`true` (既定値)
+`true` (既定)
 
 `false`
 
@@ -261,7 +263,7 @@ This is the common footer.
 
 有効な値:
 
-`public` (既定値)
+`public` (既定)
 
 `internal`
 

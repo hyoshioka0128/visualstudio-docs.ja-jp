@@ -1,5 +1,7 @@
 ---
 title: 文字列ビジュアライザーでの文字列の表示 | Microsoft Docs
+description: Visual Studio デバッガーで文字列ビジュアライザーを使用して、テキスト文字列、XML、HTML、JSON を表示します。 DataSet、DataTable を含む、その他のオブジェクトの種類を表示できます。
+ms.custom: SEO-VS-2020
 ms.date: 04/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d13e5f5c3ee5a82a56dd8c98fa37e3e13e5169d5
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450388"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149938"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Visual Studio の文字列ビジュアライザーで文字列を表示する
 
@@ -42,9 +44,9 @@ Visual Studio でのデバッグ中に、組み込みの文字列ビジュアラ
 
 文字列ビジュアライザー ウィンドウでは、 **[式]** フィールドに、カーソルを置いている変数または式が表示され、 **[値]** フィールドに文字列値が表示されます。
 
-**[値]** が空白の場合は、選択したビジュアライザーで文字列を認識できないことを意味します。 たとえば、**XML ビジュアライザー**では、XML タグのないテキスト文字列または JSON 文字列に対して、空白の **[値]** が表示されます。
+**[値]** が空白の場合は、選択したビジュアライザーで文字列を認識できないことを意味します。 たとえば、**XML ビジュアライザー** では、XML タグのないテキスト文字列または JSON 文字列に対して、空白の **[値]** が表示されます。
 
-選択したビジュアライザーが認識できない文字列を表示するには、 **[テキスト ビジュアライザー]** を選択します。 **テキスト ビジュアライザー**にはプレーンテキストが表示されます。
+選択したビジュアライザーが認識できない文字列を表示するには、 **[テキスト ビジュアライザー]** を選択します。 **テキスト ビジュアライザー** にはプレーンテキストが表示されます。
 
 ### <a name="view-json-string-data"></a>JSON 文字列データを表示する
 

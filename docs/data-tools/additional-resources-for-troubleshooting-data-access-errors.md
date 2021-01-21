@@ -1,5 +1,7 @@
 ---
 title: データアクセスフォーラム
+description: パブリックフォーラムでのエラーと警告のトラブルシューティングに関するヘルプを参照してください。 データ関連のフォーラムの一覧を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -224,12 +226,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0383de73992b96f6a458b389573e252b39d624b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c3bfd0b322a368cd758ea1518c8c63ed668d4545
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587044"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518585"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>フォーラムでのデータアクセスエラーのトラブルシューティング
 
@@ -251,6 +253,6 @@ MSDN (Microsoft Developer Network) のパブリック フォーラムでは、�
 
 SQL Server への接続のトラブルシューティング方法の詳細については、「 [SQL Server データベースエンジンへの接続に関するトラブルシューティング](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

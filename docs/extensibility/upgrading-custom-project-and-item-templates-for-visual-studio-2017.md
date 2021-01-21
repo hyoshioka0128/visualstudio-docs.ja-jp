@@ -1,6 +1,8 @@
 ---
 title: Visual Studio 2017 のカスタムプロジェクトと項目テンプレートのアップグレード
 titleSuffix: ''
+description: Visual Studio 2017 以降のバージョンで使用するために、Visual Studio SDK の以前のバージョンからカスタムプロジェクトと項目テンプレートを更新する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -10,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5f807e142b376d05e5a44600e8f6b24ddb3593be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089baadcb60afcc8b32e287095b10ab30196ce17
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698859"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715978"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>カスタム Visual Studio のプロジェクトと項目テンプレート2017のアップグレード
 
@@ -27,7 +29,7 @@ VSIX 拡張機能の一部としてプロジェクトまたは項目テンプレ
 
 ## <a name="template-scanning"></a>テンプレートのスキャン
 
-以前のバージョンの Visual Studio では、 **devenv/setup** または **devenv/installvstemplates** はローカルディスクをスキャンして、プロジェクトと項目テンプレートを検索しました。 Visual Studio 2017 以降では、スキャンはユーザーレベルの場所に対してのみ実行されます。 既定のユーザーレベルの場所は、 **%USERPROFILE%\Documents \\<Visual Studio のバージョン \> \ テンプレート \\ **です。 この場所は、 **Project**  >  ウィザードで [**テンプレートを Visual Studio に自動的にインポート**する] オプションが選択されている場合に、[プロジェクトの**エクスポートテンプレート...** ] コマンドによって生成されるテンプレートに使用されます。
+以前のバージョンの Visual Studio では、 **devenv/setup** または **devenv/installvstemplates** はローカルディスクをスキャンして、プロジェクトと項目テンプレートを検索しました。 Visual Studio 2017 以降では、スキャンはユーザーレベルの場所に対してのみ実行されます。 既定のユーザーレベルの場所は、 **%USERPROFILE%\Documents \\<Visual Studio のバージョン \> \ テンプレート \\** です。 この場所は、   >  ウィザードで [**テンプレートを Visual Studio に自動的にインポート** する] オプションが選択されている場合に、[プロジェクトの **エクスポートテンプレート...** ] コマンドによって生成されるテンプレートに使用されます。
 
 他の (ユーザー以外の) 場所については、テンプレートの場所とその他の特性を指定するマニフェスト (vstman) ファイルを含める必要があります。 Vstman ファイルは、テンプレートに使用される .vstemplate ファイルと共に生成されます。 .Vsix を使用して拡張機能をインストールした場合は、Visual Studio 2017 で拡張機能を再コンパイルすることによってこれを実現できます。 ただし、.msi を使用する場合は、変更を手動で行う必要があります。 これらの変更を行うために必要な操作の一覧については、「」を参照してください  **。** このページの後半にある MSI。
 
@@ -49,12 +51,12 @@ VSIX 拡張機能の一部としてプロジェクトまたは項目テンプレ
 
          **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate/v Disabletemplates REG_DWORD Can/d 1/REG:32**
 
-    2. キーを追加したら、 **devenv/installvstemplates**を実行します。
+    2. キーを追加したら、 **devenv/installvstemplates** を実行します。
 
     3. Visual Studio を再度開きます。 予想される場所にテンプレートがあることを確認する必要があります。
 
     > [!NOTE]
-    > Visual Studio 機能拡張プロジェクトテンプレートは、レジストリキーが存在する場合は使用できません。 レジストリキーを使用するには、レジストリキーを削除し、 **devenv/installvstemplates**を再実行する必要があります。
+    > Visual Studio 機能拡張プロジェクトテンプレートは、レジストリキーが存在する場合は使用できません。 レジストリキーを使用するには、レジストリキーを削除し、 **devenv/installvstemplates** を再実行する必要があります。
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>プロジェクトテンプレートと項目テンプレートを配置するためのその他の推奨事項
 

@@ -1,5 +1,7 @@
 ---
 title: コピー動作のカスタマイズ
+description: Visual Studio の視覚化およびモデリング SDK を使用して作成された DSL で、ユーザーが要素をコピーして貼り付けるときの動作を変更できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
@@ -7,18 +9,18 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547343"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363108"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio の視覚化およびモデリング SDK で作成されたドメイン固有言語 (DSL) では、ユーザーが要素をコピーして貼り付けるときの動作を変更できます。
 
 ## <a name="standard-copy-and-paste-behavior"></a>コピーと貼り付けの標準動作
- コピーを有効にするには、DSL エクスプローラーの [**エディター** ] ノードの [**コピー貼り付けを有効**にする] プロパティを設定します。
+ コピーを有効にするには、DSL エクスプローラーの [**エディター** ] ノードの [**コピー貼り付けを有効** にする] プロパティを設定します。
 
  既定では、ユーザーが要素をクリップボードにコピーすると、次の要素もコピーされます。
 
@@ -43,10 +45,10 @@ Visual Studio の視覚化およびモデリング SDK で作成されたドメ�
 DSL エクスプローラーで、[**エディター** ] ノードの [**コピー貼り付けを有効にする**] プロパティを設定します。
 
  **リンクを同じターゲットにコピーします。** たとえば、コピーしたコメント ボックスを同じ件名の要素にリンクします。
-ロールの [ **コピーの伝達** "プロパティを" **リンクに反映**する "に設定します。 詳細については、「 [リンクコピー動作のカスタマイズ](#customizeLinks)」を参照してください。
+ロールの [ **コピーの伝達** "プロパティを" **リンクに反映** する "に設定します。 詳細については、「 [リンクコピー動作のカスタマイズ](#customizeLinks)」を参照してください。
 
  リンクされた要素をコピーします。 たとえば、新しい要素をコピーすると、リンクされたすべてのコメント ボックスのコピーも作成されます。
-ロールの [ **コピーの伝達** ] プロパティを設定して、 **コピーをリンクと反対のロールプレーヤーに伝達**します。 詳細については、「 [リンクコピー動作のカスタマイズ](#customizeLinks)」を参照してください。
+ロールの [ **コピーの伝達** ] プロパティを設定して、 **コピーをリンクと反対のロールプレーヤーに伝達** します。 詳細については、「 [リンクコピー動作のカスタマイズ](#customizeLinks)」を参照してください。
 
  **コピーと貼り付けにより要素をすばやく複製します。** 通常、コピーしたばかりの項目はまだ選択されており、そこに同じ種類の要素を貼り付けることはできません。
 ドメイン クラスに要素マージ ディレクティブを追加し、マージを親クラスに転送するように設定します。 これはドラッグ操作に同じ効果を持ちます。 詳細については、「 [要素の作成および移動をカスタマイズ](../modeling/customizing-element-creation-and-movement.md)する」を参照してください。
@@ -79,11 +81,11 @@ partial class MyDslClipboardCommandSet
 
  `ClipboardCommandSet.ProcessOnPasteCommand()` をオーバーライドし、基本のメソッドを呼び出した後で、追加のリンクを作成します。
 
- 外部アプリケーションに**要素をコピーできる形式をカスタマイズ**します。たとえば、ビットマップフォームに境界線を追加します。
-DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
+ 外部アプリケーションに **要素をコピーできる形式をカスタマイズ** します。たとえば、ビットマップフォームに境界線を追加します。
+DslPackage プロジェクトの *Mydsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` をオーバーライドします。
 
  **コピー コマンドにより要素がクリップボードにコピーされる動作をカスタマイズします (ドラッグ操作は対象外)。**
-DslPackage プロジェクトの*Mydsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
+DslPackage プロジェクトの *Mydsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` をオーバーライドします。
 
  **コピーと貼り付けを通して、図形レイアウトを保持します。**
 ユーザーが複数の図形をコピーする場合、それらが貼り付けられるときの相対位置を保持できます。 この手法については、 [Vmsdk: 回路図のサンプル](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)の例をご覧ください。
@@ -242,7 +244,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 1. DSL プロジェクト内の新しいファイルに、<xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> から派生するクラスを作成します。
 
-2. 図のクラス用に部分クラス定義を追加します。 このクラスの名前は、 **Dsl\GeneratedCode\Diagrams.cs**で確認できます。
+2. 図のクラス用に部分クラス定義を追加します。 このクラスの名前は、 **Dsl\GeneratedCode\Diagrams.cs** で確認できます。
 
     図のクラスで、<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> をオーバーライドし、ElementOperations サブクラスのインスタンスを返します。 呼び出しのたびに同じインスタンスを返す必要があります。
 
@@ -365,9 +367,9 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>コピーの標準動作
  このセクションのコードは、コピー動作を変更するためにオーバーライド可能なメソッドを示しています。 独自のカスタマイズを実現する方法を説明するために、このセクションでは、コピーに関するメソッドをオーバーライドしながら、標準の動作を変更しないコードを示します。
 
- ユーザーが CTRL+C キーを押すか、またはコピー メニュー コマンドを使用すると、メソッド <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> が呼び出されます。 この設定方法については、「 **」を参照**してください。 コマンドの設定方法の詳細については、「 [方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
+ ユーザーが CTRL+C キーを押すか、またはコピー メニュー コマンドを使用すると、メソッド <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> が呼び出されます。 この設定方法については、「 **」を参照** してください。 コマンドの設定方法の詳細については、「 [方法: ショートカットメニューにコマンドを追加](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)する」を参照してください。
 
- DslPackage プロジェクトに*mydsl*の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドでき `ClipboardCommandSet` ます。
+ DslPackage プロジェクトに *mydsl* の部分クラス定義を追加することにより、ProcessOnMenuCopyCommand をオーバーライドでき `ClipboardCommandSet` ます。
 
 ```csharp
 using System.Collections.Generic;

@@ -1,5 +1,7 @@
 ---
 title: '方法: オブジェクトマネージャーを使用してライブラリを登録する |Microsoft Docs'
+description: クラスビューやオブジェクトブラウザーなどの参照ツールでシンボルを表示できるように、Visual Studio オブジェクトマネージャーにライブラリを登録する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,15 +16,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7179bd87fdfd9a2c3fc36958a9d964ec4f790dbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8036a0f4fe073473891805766ea8e3bb941951f8
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905231"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761386"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>方法: オブジェクトマネージャーにライブラリを登録する
-シンボルを参照することができます。たとえば、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** **シンボルの検索結果**などがあります。これにより、プロジェクトまたは外部コンポーネントでシンボルを表示できます。 シンボルには、名前空間、クラス、インターフェイス、メソッド、およびその他の言語要素が含まれます。 これらのシンボルは、ライブラリによって追跡され、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ツールにデータを設定するオブジェクトマネージャーに公開されます。
+シンボルを参照することができます。たとえば、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** **シンボルの検索結果** などがあります。これにより、プロジェクトまたは外部コンポーネントでシンボルを表示できます。 シンボルには、名前空間、クラス、インターフェイス、メソッド、およびその他の言語要素が含まれます。 これらのシンボルは、ライブラリによって追跡され、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ツールにデータを設定するオブジェクトマネージャーに公開されます。
 
  オブジェクトマネージャーは、使用可能なすべてのライブラリを追跡します。 各ライブラリは、シンボル参照ツールのシンボルを提供する前に、オブジェクトマネージャーに登録する必要があります。
 

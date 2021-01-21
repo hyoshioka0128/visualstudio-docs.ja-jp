@@ -1,5 +1,7 @@
 ---
 title: MSBuild | Microsoft Docs
+description: Microsoft Build Engine (MSBuild) プラットフォームによって、ビルドを制御するための XML スキーマがプロジェクト ファイルに提供される方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289197"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904521"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft Build Engine は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
 
- Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj*、*vbproj*、*vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
+ Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj* 、 *vbproj* 、 *vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
 
  C++ に対する MSBuild の詳細については、「[MSBuild (C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
 
@@ -47,7 +49,7 @@ Microsoft Build Engine は、アプリケーションをビルドするための
 Visual Studio IDE でコードを作成し、MSBuild を使用してビルドを実行することもできます。 別の方法として、開発用コンピューターの IDE でコードをビルドすることもできますが、コマンド ラインから MSBuild を実行して、複数の開発者から取得して統合したコードをビルドすることもできます。 また、MSBuild を使用する [.NET Core コマンドライン インターフェイス (CLI)](/dotnet/core/tools/) を使用して、.NET Core プロジェクトをビルドすることもできます。
 
 > [!NOTE]
-> Azure Pipelines を使用して、アプリケーションを自動的にコンパイル、テスト、および配置することができます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Azure Pipelines では MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+> Azure Pipelines を使用して、アプリケーションを自動的にコンパイル、テスト、および配置することができます。 開発者がコードをチェックインしたとき (たとえば、継続的インテグレーションの手法の一環として)、またはスケジュールに従って (たとえば、夜間のビルド確認テストの一部として)、ビルド システムがビルドを自動的に実行ですることもできます。 Azure Pipelines では MSBuild を使用してコードをコンパイルします。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)」を参照してください。
 
 この記事では、MSBuild の概要について説明します。 入門チュートリアルについては、[チュートリアル: MSBuild の使用](../msbuild/walkthrough-using-msbuild.md)に関するページを参照してください。
 
@@ -168,7 +170,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 - Silverlight など、.NET Framework 以外のフレームワークを対象にできます。
 
-- ターゲット フレームワークの定義済みのサブセットである*フレームワーク プロファイル*を対象にできます。
+- ターゲット フレームワークの定義済みのサブセットである *フレームワーク プロファイル* を対象にできます。
 
 - 現在のバージョンの .NET Framework 用サービス パックがリリースされた場合、そのバージョンを対象にできます。
 

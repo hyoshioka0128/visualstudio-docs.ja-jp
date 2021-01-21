@@ -1,5 +1,8 @@
 ---
 title: Visual Studio での SharePoint ツールの拡張機能の配置 |Microsoft Docs
+description: Visual Studio の SharePoint ツールの拡張機能を配置します。 VSIX パッケージを作成するには、Visual Studio 拡張機能 (VSIX) プロジェクトを使用します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62580645"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672679"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張機能の配置
 
@@ -87,7 +90,7 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
 4. [ **ソース** ] ボックスの一覧で、次のいずれかの手順を実行します。
 
-    - 拡張機能アセンブリが、VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト**を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
+    - 拡張機能アセンブリが、VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト** を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
 
     - 拡張機能アセンブリがファイルとしてプロジェクトに含まれている場合は、[ **ファイルシステム上のファイル**] を選択します。 [ **パス** ] の一覧で、拡張機能アセンブリファイルの完全なパスを入力するか、[ **参照** ] ボタンを使用してアセンブリファイルを検索して選択します。
 
@@ -107,7 +110,7 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
 4. [ **ソース** ] ボックスの一覧で、次のいずれかの手順を実行します。
 
-    - コマンドアセンブリが VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト**を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
+    - コマンドアセンブリが VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト** を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
 
     - コマンドアセンブリがプロジェクト内のファイルとして含まれている場合は、[ **ファイルシステム上のファイル**] を選択します。 [ **パス** ] の一覧で、拡張機能アセンブリファイルの完全なパスを入力するか、[ **参照** ] ボタンを使用してアセンブリファイルを検索して選択します。
 
@@ -123,15 +126,15 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
      [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-3. [ **種類** ] ボックスの一覧で、 **VisualStudio** または **VisualStudio**を選択します。
+3. [ **種類** ] ボックスの一覧で、 **VisualStudio** または **VisualStudio** を選択します。
 
-4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト**を選択します。
+4. [ **ソース** ] ボックスの一覧で、 **現在のソリューション内のプロジェクト** を選択します。
 
 5. [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択し、[ **OK** ] をクリックします。
 
-6. **ソリューションエクスプローラー**で、プロジェクトテンプレートまたは項目テンプレートプロジェクトのショートカットメニューを開き、[**プロジェクトのアンロード**] をクリックします。
+6. **ソリューションエクスプローラー** で、プロジェクトテンプレートまたは項目テンプレートプロジェクトのショートカットメニューを開き、[**プロジェクトのアンロード**] をクリックします。
 
-7. プロジェクトノードのショートカットメニューをもう一度開き、[_テンプレート_の**編集**] を選択するか、_テンプレート projectname_**. .vbproj**を**編集****します。**
+7. プロジェクトノードのショートカットメニューをもう一度開き、[_テンプレート_ の **編集**] を選択するか、_テンプレート projectname_**. .vbproj** を **編集****します。**
 
 8. プロジェクト ファイルで次の `VSTemplate` 要素を見つけます。
 
@@ -151,7 +154,7 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
 10. ファイルを保存して閉じます。
 
-11. **ソリューションエクスプローラー**で、プロジェクトテンプレートまたは項目テンプレートプロジェクトのショートカットメニューを開き、[**プロジェクトの再読み込み**] をクリックします。
+11. **ソリューションエクスプローラー** で、プロジェクトテンプレートまたは項目テンプレートプロジェクトのショートカットメニューを開き、[**プロジェクトの再読み込み**] をクリックします。
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>手動で作成したテンプレートを含めるには
 
@@ -167,11 +170,11 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
      *ロケール ID*
 
-     自分の*templatename*.zip
+     自分の *templatename*.zip
 
-     たとえば、英語 (米国) のロケールをサポートする ContosoCustomAction.zip という名前の項目テンプレートがある場合、完全なパスは *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*可能性があります。
+     たとえば、英語 (米国) のロケールをサポートする ContosoCustomAction.zip という名前の項目テンプレートがある場合、完全なパスは *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip* 可能性があります。
 
-3. **ソリューションエクスプローラー**で、テンプレートファイル (ファイル名) を選択*します。*
+3. **ソリューションエクスプローラー** で、テンプレートファイル (ファイル名) を選択 *します。*
 
 4. [ **プロパティ** ] ウィンドウで、[ **ビルドアクション** ] プロパティを [ **コンテンツ**] に設定します。
 
@@ -183,7 +186,7 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
      [ **新しい資産の追加** ] ダイアログボックスが表示されます。
 
-7. [ **種類** ] ボックスの一覧で、 **VisualStudio** または **VisualStudio**を選択します。
+7. [ **種類** ] ボックスの一覧で、 **VisualStudio** または **VisualStudio** を選択します。
 
 8. [ **ソース** ] ボックスの一覧で、[ **ファイルシステム上のファイル**] を選択します。
 
@@ -203,7 +206,7 @@ VSIX プロジェクトの使用方法の詳細については、「 [Vsix プ�
 
 4. [ **ソース** ] ボックスの一覧で、次のいずれかの手順を実行します。
 
-    - ウィザードアセンブリが VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト**を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
+    - ウィザードアセンブリが VSIX プロジェクトと同じソリューション内のプロジェクトからビルドされている場合は、 **現在のソリューション内のプロジェクト** を選択します。 [ **プロジェクト** ] ボックスの一覧で、プロジェクトの名前を選択します。
 
     - ウィザードアセンブリがプロジェクト内のファイルとして含まれている場合は、[ **ファイルシステム上のファイル**] を選択します。 [ **パス** ] フィールドにアセンブリファイルへの完全なパスを入力するか、[ **参照** ] ボタンを使用してアセンブリを探して選択します。
 
@@ -234,11 +237,11 @@ SharePoint ツール拡張機能の VSIX パッケージを手動で作成する
 
     - 要素の `Microsoft.VisualStudio.MefComponent` 下に要素を追加 `Assets` し、新しい要素の値を、VSIX パッケージ内の拡張機能を実装するアセンブリの相対パスに設定します。 詳細については、「 [Mefcomponent 要素 (VSX Schema)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))」を参照してください。
 
-    - SharePoint のサーバーオブジェクトモデルを呼び出す SharePoint コマンドが拡張機能に含まれている場合は、要素の下に要素を追加し `Microsoft.VisualStudio.Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内の SharePoint コマンドを実装するアセンブリの相対パスに設定します。 詳細については、「 [Asset 要素 (VSX Schema)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)」を参照してください。
+    - SharePoint のサーバーオブジェクトモデルを呼び出す SharePoint コマンドが拡張機能に含まれている場合は、要素の下に要素を追加し `Microsoft.VisualStudio.Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内の SharePoint コマンドを実装するアセンブリの相対パスに設定します。 詳細については、「 [Asset 要素 (VSX Schema)](/previous-versions/dd393737(v=vs.110))」を参照してください。
 
     - 拡張機能にプロジェクトテンプレートまたは項目テンプレートが含まれている場合は、要素の下に要素 `ProjectTemplate` または要素を追加し `ItemTemplate` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のテンプレートが格納されているフォルダーの相対パスに設定します。 詳細については、「 [Projecttemplate 要素 (VSX schema)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) 」および「 [ITEMTEMPLATE 要素 (VSX schema)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\))」を参照してください。
 
-    - 拡張機能にプロジェクトテンプレートまたは項目テンプレートのカスタムウィザードが含まれている場合は、要素の下に要素を追加し `Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のアセンブリの相対パスに設定し、 `AssemblyName` 属性を完全なアセンブリ名 (バージョン、カルチャ、公開キートークンを含む) に設定します。 詳細については、「 [Dependency 要素 (VSX Schema)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37)」を参照してください。
+    - 拡張機能にプロジェクトテンプレートまたは項目テンプレートのカスタムウィザードが含まれている場合は、要素の下に要素を追加し `Assembly` `Assets` ます。 新しい要素の値を、VSIX パッケージ内のアセンブリの相対パスに設定し、 `AssemblyName` 属性を完全なアセンブリ名 (バージョン、カルチャ、公開キートークンを含む) に設定します。 詳細については、「 [Dependency 要素 (VSX Schema)](/previous-versions/dd393682(v=vs.110))」を参照してください。
 
 ### <a name="example"></a>例
 
@@ -264,9 +267,9 @@ SharePoint ツール拡張機能の VSIX パッケージを手動で作成する
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
-- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)
+- [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Visual Studio の SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [Visual Studio での SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)

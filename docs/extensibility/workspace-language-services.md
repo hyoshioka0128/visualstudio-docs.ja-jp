@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のワークスペースと言語サービス |Microsoft Docs
+description: 言語サービスが、ソリューションやプロジェクトを操作するときに使用されるものと同じ機能を備えた、オープンフォルダーのユーザーを提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -7,12 +9,12 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2893ae2bcd70ff317ba799fea6cfd2751c685731
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 815cfb9e17fed38b519719010acd997f7fdc5242
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62952705"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877040"
 ---
 # <a name="workspaces-and-language-services"></a>ワークスペースと言語サービス
 
@@ -58,6 +60,6 @@ Api は、 `Microsoft.VisualStudio.Workspace.*` 開いているフォルダー�
 
 - <xref:Microsoft.VisualStudio.Workspace.Intellisense.ILanguageServiceProvider> は、ファイルの種類が一致するファイルが開かれているか、編集のために閉じられたときに呼び出されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * [ワークスペースビルド](workspace-build.md) -オープンフォルダーは、MSBuild やメイクファイルなどのビルドシステムをサポートします。

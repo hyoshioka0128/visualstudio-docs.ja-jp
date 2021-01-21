@@ -1,5 +1,7 @@
 ---
 title: RegPkg Utility |Microsoft Docs
+description: RegPkg.exe ユーティリティを使用して VSPackage を Visual Studio に登録し、配置用に準備する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cebfd7a9782a2760eb33f7e56bfe16b126fc6251
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad66f963250dfc272506096f8932442a35d11dc7
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705638"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877327"
 ---
 # <a name="regpkg-utility"></a>RegPkg ユーティリティ
 > [!NOTE]
@@ -54,6 +56,6 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 
  with/regfile または/vrgfile または/rgsfile または/wixfile.
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [RegPkg パッケージ登録のトラブルシューティング](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

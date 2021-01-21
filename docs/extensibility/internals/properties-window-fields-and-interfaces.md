@@ -1,5 +1,7 @@
 ---
 title: プロパティウィンドウのフィールドとインターフェイス |Microsoft Docs
+description: Visual Studio IDE にフォーカスがあるウィンドウに基づいて、プロパティウィンドウに表示される情報を決定する選択について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +12,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9529708c781e7fdb04c3b4c5ee143b7605857e84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706159"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875766"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>プロパティ ウィンドウのフィールドとインターフェイス
 [ **プロパティ** ] ウィンドウに表示される情報を決定するために選択するモデルは、IDE にフォーカスがあるウィンドウに基づいています。 すべてのウィンドウおよび選択したウィンドウ内のオブジェクトは、選択コンテキストオブジェクトをグローバル選択コンテキストにプッシュできます。 環境では、ウィンドウにフォーカスがあるときに、ウィンドウフレームの値を使用してグローバル選択コンテキストを更新します。 フォーカスが変更されると、選択コンテキストが変わります。
 
 ## <a name="tracking-selection-in-the-ide"></a>IDE での選択の追跡
- IDE によって所有されているウィンドウフレームまたはサイトには、という名前のサービスがあり <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> ます。 次の手順では、[**プロパティ**] ウィンドウに表示される内容を変更するために、ユーザーが別の開いているウィンドウにフォーカスを変更したり、**ソリューションエクスプローラー**で別のプロジェクト項目を選択したりすることによって発生する、選択項目の変更について説明します。
+ IDE によって所有されているウィンドウフレームまたはサイトには、という名前のサービスがあり <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> ます。 次の手順では、[**プロパティ**] ウィンドウに表示される内容を変更するために、ユーザーが別の開いているウィンドウにフォーカスを変更したり、**ソリューションエクスプローラー** で別のプロジェクト項目を選択したりすることによって発生する、選択項目の変更について説明します。
 
 1. 選択したウィンドウに配置されている VSPackage によって作成されたオブジェクトは、 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> を呼び出すためにを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> ます。
 
@@ -31,13 +33,13 @@ ms.locfileid: "80706159"
 
 4. __VSHPROPID に対して、 [IDispatch インターフェイス](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) から派生したオブジェクトが返され [ます。](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_BrowseObject>) 要求された項目の VSHPROPID_BrowseObject し、環境がそれをにラップし <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます (次の手順を参照)。 呼び出しが失敗した場合、環境はの2回目の呼び出しを行い `IVsHierarchy::GetProperty` 、選択コンテナー __VSHPROPID を渡し [ます。](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_SelContainer>) 階層項目が提供する VSHPROPID_SelContainer ます。
 
-    プロジェクト VSPackage は、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> それを実装する環境指定のウィンドウ VSPackage ( **ソリューションエクスプローラー**など) が <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> その代わりに構築されるため、作成されません。
+    プロジェクト VSPackage は、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> それを実装する環境指定のウィンドウ VSPackage ( **ソリューションエクスプローラー** など) が <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> その代わりに構築されるため、作成されません。
 
 5. 環境では、のメソッドを呼び出して、 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> インターフェイスに基づいてオブジェクトを取得し、[ `IDispatch` **プロパティ** ] ウィンドウに入力します。
 
    [ **プロパティ** ] ウィンドウの値が変更された場合、vspackage は `IVsTrackSelectionEx::OnElementValueChangeEx` を実装し、 `IVsTrackSelectionEx::OnSelectionChangeEx` 要素の値に変更を報告します。 次に、またはを呼び出して、[ <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> **プロパティ** ] ウィンドウに表示されている情報をプロパティ値と同期させます。 詳細については、「 [プロパティウィンドウでのプロパティ値の更新](#updating-property-values-in-the-properties-window)」を参照してください。
 
-   **ソリューションエクスプローラー**で別のプロジェクトアイテムを選択してそのアイテムに関連するプロパティを表示することに加えて、[**プロパティ**] ウィンドウのドロップダウンリストを使用して、フォームまたはドキュメントウィンドウ内から別のオブジェクトを選択することもできます。 詳細については、「[ [プロパティ] ウィンドウオブジェクトリスト](../../extensibility/internals/properties-window-object-list.md)」を参照してください。
+   **ソリューションエクスプローラー** で別のプロジェクトアイテムを選択してそのアイテムに関連するプロパティを表示することに加えて、[**プロパティ**] ウィンドウのドロップダウンリストを使用して、フォームまたはドキュメントウィンドウ内から別のオブジェクトを選択することもできます。 詳細については、「[ [プロパティ] ウィンドウオブジェクトリスト](../../extensibility/internals/properties-window-object-list.md)」を参照してください。
 
    [ **プロパティ** ] ウィンドウのグリッドでの情報の表示方法をアルファベット順からカテゴリ別に変更できます。また、使用可能な場合は、[ **プロパティ** ] ウィンドウの該当するボタンをクリックして、選択したオブジェクトのプロパティページを開くこともできます。 詳細については、「 [プロパティウィンドウのボタン](../../extensibility/internals/properties-window-buttons.md) と [プロパティページ](../../extensibility/internals/property-pages.md)」を参照してください。
 
@@ -52,7 +54,7 @@ ms.locfileid: "80706159"
 
 1. VSPackage、プロジェクト、エディターがツール ウィンドウまたはドキュメント ウィンドウを作成したり列挙したりする必要が生じた時点で、<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> を (<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> サービスを通じて) 呼び出します。
 
-2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>を実装して、イベントを実装および実行せずに、プロジェクト (または [**プロパティ**] ウィンドウによって参照される他の選択されたオブジェクト) のプロパティの変更とプロパティウィンドウの同期を維持し**Properties** <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> ます。
+2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A>を実装して、イベントを実装および実行せずに、プロジェクト (または [**プロパティ**] ウィンドウによって参照される他の選択されたオブジェクト) のプロパティの変更とプロパティウィンドウの同期を維持し <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> ます。
 
 3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> のメソッド <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> および <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> を実装します。この 2 つのメソッドは、それぞれ、階層イベントのクライアント通知を設定および無効化します。これにより、階層で <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> を実装する必要がなくなります。
 
@@ -114,6 +116,6 @@ STDAPI DLLGetDocumentation
 
  別の方法でプロパティのローカライズされた名前と説明の取得には、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A> を実装します。 このメソッドの実装に関する詳細については、「 [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)

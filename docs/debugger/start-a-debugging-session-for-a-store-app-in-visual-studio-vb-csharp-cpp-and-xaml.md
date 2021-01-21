@@ -1,6 +1,7 @@
 ---
 title: UWP アプリのデバッグ セッションを開始する | Microsoft Docs
-ms.custom: seodec18
+description: ユニバーサル Windows プラットフォーム (UWP) アプリの Visual Studio デバッグ セッションを開始します。 デバッグ セッションを構成し、アプリを起動する方法を選択します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -35,12 +36,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 003eaa7eefffaab9ff2b3c8c25a5ce5c0d41d43b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536553"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150367"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>UWP アプリのデバッグ セッションを開始する
 
@@ -90,7 +91,7 @@ Visual Studio 2017 では、この記事で示されているほとんどのコ�
 
 **デバッグ プロパティを開くには:**
 
-1. **ソリューション エクスプローラー**で、プロジェクトを選択して **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で、プロジェクトを選択して **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
 
 1. **[プロパティ]** ペインの左側で、次のようにします。
 
@@ -181,7 +182,7 @@ C++ アプリの場合、Visual Studio ではネイティブ コードが既定�
 
 1. アプリをインストールするデバイスに Remote Tools for Visual Studio をインストールします。 詳細については、[リモート ツールのインストール](../debugger/remote-debugging.md)に関するページを参照してください。
 
-1. Windows の **[スタート]** 画面で、**デバッグ可能パッケージ マネージャー**を探して起動します。
+1. Windows の **[スタート]** 画面で、**デバッグ可能パッケージ マネージャー** を探して起動します。
 
    AppxDebug コマンドレット用に適切に構成された PowerShell ウィンドウが表示されます。
 

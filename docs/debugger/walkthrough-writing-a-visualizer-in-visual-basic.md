@@ -1,6 +1,7 @@
 ---
 title: Visual Basic でビジュアライザーを記述する | Microsoft Docs
-ms.custom: seodec18
+description: チュートリアルに従って、Visual Basic で簡単なビジュアライザーを作成します。 また、ビジュアライザーをテストするテスト ハーネスも作成します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 05/27/2020
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4354a226503ef11b8e596cff609912afa7fd34f0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84180533"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149627"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>チュートリアル: Visual Basic でビジュアライザーを記述する
 
@@ -52,14 +53,14 @@ ms.locfileid: "84180533"
 
 ### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>Class1.vb の名前を変更して Microsoft.VisualStudio.DebuggerVisualizers に追加するには
 
-1. **ソリューション エクスプローラー**で **Class1.vb** を右クリックし、ショートカット メニューの **[名前の変更]** をクリックします。
+1. **ソリューション エクスプローラー** で **Class1.vb** を右クリックし、ショートカット メニューの **[名前の変更]** をクリックします。
 
 2. Class1.vb の名前を、DebuggerSide.vb などのわかりやすい名前に変更します。
 
    > [!NOTE]
    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって、新しいファイル名に合わせて DebuggerSide.vb のクラス宣言が自動的に変更されます。
 
-3. **ソリューション エクスプローラー**で、 **[My First Visualizer]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+3. **ソリューション エクスプローラー** で、 **[My First Visualizer]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
 4. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで **[参照]** を選択し、Microsoft.VisualStudio.DebuggerVisualizers.DLL を探します。
 
@@ -107,7 +108,7 @@ ms.locfileid: "84180533"
 
 ### <a name="to-add-systemwindowsforms"></a>System.Windows.Forms を追加するには
 
-1. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+1. **ソリューション エクスプローラー** で、 **[参照]** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
 2. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで **[参照]** System.Windows.Forms.DLL を探します。
 
@@ -186,7 +187,7 @@ ms.locfileid: "84180533"
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>必要な参照を MyTestConsole に追加するには
 
-1. **ソリューション エクスプローラー**で、**MyTestConsole** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
+1. **ソリューション エクスプローラー** で、**MyTestConsole** を右クリックし、ショートカット メニューの **[参照の追加]** をクリックします。
 
 2. **[参照の追加]** ダイアログ ボックスの **[参照]** タブで、Microsoft.VisualStudio.DebuggerVisualizers をクリックします。
 
@@ -203,7 +204,7 @@ ms.locfileid: "84180533"
 
 ### <a name="to-add-code-to-mytestconsole"></a>コードを MyTestConsole に追加するには
 
-1. **ソリューション エクスプローラー**で **Program.vb** を右クリックし、ショートカット メニューの **[名前の変更]** をクリックします。
+1. **ソリューション エクスプローラー** で **Program.vb** を右クリックし、ショートカット メニューの **[名前の変更]** をクリックします。
 
 2. Module1.vb の名前を、**TestConsole.vb** などの適切な名前に変更します。
 
@@ -226,7 +227,7 @@ ms.locfileid: "84180533"
 
 ### <a name="to-test-the-visualizer"></a>ビジュアライザーをテストするには
 
-1. **ソリューション エクスプローラー**で **MyTestConsole** を右クリックし、ショートカット メニューの **[スタートアップ プロジェクトに設定]** をクリックします。
+1. **ソリューション エクスプローラー** で **MyTestConsole** を右クリックし、ショートカット メニューの **[スタートアップ プロジェクトに設定]** をクリックします。
 
 2. **[デバッグ]** メニューの **[開始]** をクリックします。
 

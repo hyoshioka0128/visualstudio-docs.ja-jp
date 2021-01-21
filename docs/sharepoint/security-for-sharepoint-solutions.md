@@ -1,5 +1,7 @@
 ---
 title: SharePoint ソリューションのセキュリティ |Microsoft Docs
+description: SharePoint アプリケーションのセキュリティを強化するために Visual Studio に組み込まれている機能について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,18 +17,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3290d603de124288a5b176dfe0d2e39f5c1377f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73983776"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95970453"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint ソリューションのセキュリティ
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、SharePoint アプリケーションのセキュリティを強化するために、次の機能が組み込まれています。
 
 ## <a name="safe-control-entries"></a>安全なコントロールエントリ
- で作成されるすべての SharePoint プロジェクトアイテム [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、安全なコントロールのコレクションを表す " **安全なコントロールエントリ** " プロパティがあります。 **セーフ**サブプロパティを使用すると、セキュリティで保護されていると考えられるコントロールを指定できます。 詳細については、「 [プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) する」および「 [安全な Web パーツの指定](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts)」を参照してください。
+ で作成されるすべての SharePoint プロジェクトアイテム [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] には、安全なコントロールのコレクションを表す " **安全なコントロールエントリ** " プロパティがあります。 **セーフ** サブプロパティを使用すると、セキュリティで保護されていると考えられるコントロールを指定できます。 詳細については、「 [プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) する」および「 [安全な Web パーツの指定](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts)」を参照してください。
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>AllowPartiallyTrustedCallers 属性
  既定では、ランタイムコードアクセスセキュリティ (CAS) システムによって完全に信頼されているアプリケーションのみが、共有マネージコードアセンブリにアクセスできます。 完全に信頼されたアセンブリを AllowPartiallyTrustedCallers 属性でマークすると、部分的に信頼されたアセンブリにアクセスできるようになります。
@@ -34,7 +36,7 @@ ms.locfileid: "73983776"
  AllowPartiallyTrustedCallers 属性は、システムのグローバルアセンブリキャッシュ () に配置されていない SharePoint ソリューションに追加され [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ます。 これには、SharePoint アプリケーションの Bin ディレクトリに配置されたサンドボックスソリューションまたはソリューションが含まれます。 詳細については、「 [Microsoft .NET Framework のバージョン1のセキュリティの変更](/previous-versions/msp-n-p/ff921345(v=pandp.10)) 」および「 [SharePoint Foundation での Web パーツの配置](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14))」を参照してください。
 
 ## <a name="safe-against-script-property"></a>スクリプトプロパティに対して安全
- *スクリプトインジェクション* は、悪意のある可能性のあるコードをコントロールや Web ページに挿入することです。 SharePoint 2010 サイトをスクリプトインジェクションに対して保護するために、共同作成者は既定で Web パーツまたはそのプロパティを表示または編集することはできません。 この動作は、SafeAgainstScript という名前の SafeControl 属性によって制御されます。 で [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、**スクリプトに対して**プロジェクト項目の**安全なコントロールエントリ**のサブプロパティにこの属性を設定します。 詳細については、「 [プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) する」および「 [方法: コントロールを安全なコントロールとしてマークする](../sharepoint/how-to-mark-controls-as-safe-controls.md)」を参照してください。
+ *スクリプトインジェクション* は、悪意のある可能性のあるコードをコントロールや Web ページに挿入することです。 SharePoint 2010 サイトをスクリプトインジェクションに対して保護するために、共同作成者は既定で Web パーツまたはそのプロパティを表示または編集することはできません。 この動作は、SafeAgainstScript という名前の SafeControl 属性によって制御されます。 で [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、**スクリプトに対して** プロジェクト項目の **安全なコントロールエントリ** のサブプロパティにこの属性を設定します。 詳細については、「 [プロジェクト項目にパッケージと配置情報を提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) する」および「 [方法: コントロールを安全なコントロールとしてマークする](../sharepoint/how-to-mark-controls-as-safe-controls.md)」を参照してください。
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista および Windows 7 ユーザーアカウント制御
  [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] および [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] には、ユーザーアカウント制御 (UAC) と呼ばれるセキュリティ機能が組み込まれています。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] および [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] のシステム上の [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] で SharePoint ソリューションを開発する場合は、UAC により、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] をシステム管理者として実行することが求められます。 [ **スタート** ] メニューから、のショートカットメニューを開き、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [ **管理者として実行**] を選択します。
@@ -83,6 +85,6 @@ ms.locfileid: "73983776"
 
 - [セキュリティで保護された ASP.NET アプリケーションの構築: 認証、承認、セキュリティで保護された通信](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)

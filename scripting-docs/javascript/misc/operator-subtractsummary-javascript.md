@@ -12,12 +12,12 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816788"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862080"
 ---
 # <a name="operator-summary-javascript"></a>演算子の一覧 (JavaScript)
 次の表は、 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] それぞれのカテゴリの演算子を示しています。  
@@ -26,60 +26,60 @@ ms.locfileid: "85816788"
   
 |演算子|Symbol|  
 |--------------|------------|  
-|[加わっ](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
-|[Decrement](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
-|[事業部](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Increment](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[剰余](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
-|[数学](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
-|[減算](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
-|[単項否定](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
+|[加わっ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[Decrement](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
+|[事業部](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
+|[Increment](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
+|[剰余](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|%|  
+|[数学](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
+|[減算](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
+|[単項否定](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
   
 ## <a name="logical-operators"></a>論理演算子  
   
 |演算子|Symbol|  
 |--------------|------------|  
-|[傍点](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
-|[条件 (三項)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
-|[等式](../../javascript/reference/comparison-operators-javascript.md)|==|  
-|[より大きい](../../javascript/reference/comparison-operators-javascript.md)|>|  
-|[以上](../../javascript/reference/comparison-operators-javascript.md)|>=|  
-|[ID](../../javascript/reference/comparison-operators-javascript.md)|===|  
-|[不等式](../../javascript/reference/comparison-operators-javascript.md)|!=|  
-|[より小さい](../../javascript/reference/comparison-operators-javascript.md)|<|  
-|[以下](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[論理積](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
-|[論理 NOT](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
-|[論理和](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
-|[非一致演算子](../../javascript/reference/comparison-operators-javascript.md)|!==|  
+|[コンマ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)|,|  
+|[条件 (三項)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)|?:|  
+|[等式](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|==|  
+|[より大きい](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>|  
+|[以上](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>=|  
+|[ID](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|===|  
+|[不等式](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!=|  
+|[より小さい](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<|  
+|[以下](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<=|  
+|[論理積](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&&|  
+|[論理 NOT](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!|  
+|[論理和](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&#124;&#124;|  
+|[非一致演算子](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!==|  
   
 ## <a name="bitwise-operators"></a>ビット処理演算子  
   
 |演算子|Symbol|  
 |--------------|------------|  
-|[ビット演算子 AND](../../javascript/reference/bitwise-and-operator-decrement-javascript.md)|&|  
-|[ビットごとの左シフト](../../javascript/reference/bitwise-left-shift-operator-decrement-javascript.md)|<\<|  
-|[ビットごとの NOT](../../javascript/reference/bitwise-not-operator-decrement-tilde-javascript.md)|~|  
-|[ビットごとの Or](../../javascript/reference/bitwise-or-operator-decrement-javascript.md)|&#124;|  
-|[ビットごとの右シフト](../../javascript/reference/bitwise-right-shift-operator-decrement-javascript.md)|>>|  
-|[ビットごとの XOR](../../javascript/reference/bitwise-xor-operator-decrement-hat-javascript.md)|^|  
-|[符号なしの右シフト](../../javascript/reference/unsigned-right-shift-operator-decrement-javascript.md)|>>>|  
+|[ビット演算子 AND](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_AND)|&|  
+|[ビットごとの左シフト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Left_shift)|<\<|  
+|[ビットごとの NOT](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_NOT)|~|  
+|[ビットごとの Or](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_OR)|&#124;|  
+|[ビットごとの右シフト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Right_shift)|>>|  
+|[ビットごとの XOR](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_XOR)|^|  
+|[符号なしの右シフト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Unsigned_right_shift)|>>>|  
   
 ## <a name="assignment-operators"></a>代入演算子  
- [代入演算子](../../javascript/reference/assignment-operator-decrement-equal-javascript.md)  
+ [代入演算子](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment)  
   
- [複合代入演算子](../../javascript/reference/compound-assignment-operators-javascript.md)  
+ [複合代入演算子](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Assignment_operators)  
   
 ## <a name="miscellaneous-operators"></a>その他の演算子  
- [delete](../../javascript/reference/delete-operator-decrementjavascript.md)  
+ [delete](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/delete)  
   
- [instanceof](../../javascript/reference/instanceof-operator-decrementjavascript.md)  
+ [instanceof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof)  
   
- [new](../../javascript/reference/new-operator-decrementjavascript.md)  
+ [new](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
   
- [typeof](../../javascript/reference/typeof-operator-decrementjavascript.md)  
+ [typeof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof)  
   
- [void](../../javascript/reference/void-operator-decrementjavascript.md)  
+ [void](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/void)  
   
 ## <a name="requirements"></a>必要条件  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

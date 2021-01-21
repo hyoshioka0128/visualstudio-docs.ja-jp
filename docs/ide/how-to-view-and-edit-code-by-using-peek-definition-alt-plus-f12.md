@@ -1,5 +1,7 @@
 ---
 title: '[定義をここに表示] を使用'
+description: '[定義をここに表示] コマンドを使用して、現在記述しているコードからコンテキストを切り替えることなく、コードを表示および編集する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2018
 ms.topic: how-to
 author: TerryGLee
@@ -7,18 +9,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 753d26e2c48f6263ccbc9c403f255948b5077924
-ms.sourcegitcommit: a466720759426265b18b0f8d74a970e72493d700
+ms.openlocfilehash: 0b706e730767c7c79fbeebc11291ecd11f4635b6
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86092311"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596925"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>方法: [定義をここに表示] を使用してコードを表示および編集する (Alt + F12)
 
 **[定義をここに表示]** を使うと、記述中のコードから切り替えずにコードを表示および編集できます。 **[定義をここに表示]** と **[定義へ移動]** では同じ情報が表示されますが、 **[定義をここに表示]** ではコードがポップアップ ウィンドウに表示され、 **[定義へ移動]** では別のコード ウィンドウに表示されます。 **[定義へ移動]** を実行すると、コンテキスト (アクティブなコード ウィンドウ、現在の行、およびカーソルの位置) が定義コード ウィンドウに切り替わります。 **[定義をここに表示]** を使用すると、元のコード ファイル内での位置を保ちながら、定義を表示および編集したり、定義ファイル内を移動したりできます。
 
-**[定義をここに表示]** は、C#、Visual Basic、および C++ のコードで使うことができます。 Visual Basic では **[定義をここに表示]** に、定義メタデータのないシンボル (.NET の組み込み型など) の**オブジェクト ブラウザー**へのリンクが表示されます。
+**[定義をここに表示]** は、C#、Visual Basic、および C++ のコードで使うことができます。 Visual Basic では **[定義をここに表示]** に、定義メタデータのないシンボル (.NET の組み込み型など) の **オブジェクト ブラウザー** へのリンクが表示されます。
 
 ## <a name="use-peek-definition"></a>[定義をここに表示] を使用する
 

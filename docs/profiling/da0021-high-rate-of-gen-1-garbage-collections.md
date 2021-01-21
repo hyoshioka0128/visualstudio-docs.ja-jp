@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b22341f1e4944b91f86a16af19494a85a2abd013
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 391ce629eea295f1436708b363b54fb0213914a4
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544691"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036159"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021:ジェネレーション 1 のガベージ コレクションが高率です
 
@@ -40,11 +40,11 @@ ms.locfileid: "85544691"
 
  ジェネレーション 0 のオブジェクトの収集頻度は高く、通常は非常に効率的に収集されます。 ジェネレーション 1 のオブジェクトの収集頻度はそれよりも低くなり、収集効率も下がります。 有効期間の長いジェネレーション 2 のオブジェクトの場合、収集頻度はさらに低くなります。 また、ジェネレーション 2 のコレクション (フル ガベージ コレクションの実行) は、最も負荷のかかる操作になります。
 
- この規則は、ジェネレーション 1 のガベージ コレクションの発生率が高くなりすぎた場合に適用されます。 有効期間が短いオブジェクトの多くが、ジェネレーション 0 のコレクションでは収集されずにジェネレーション 1 のコレクションで収集される場合、メモリ管理のコストが高くなる可能性があります。 詳細については、MSDN Web サイトの「Rico Mariani's Performance Tidbits」 (Rico Mariani のパフォーマンスに関する話題) の「[Mid-life crisis](https://blogs.msdn.microsoft.com/ricom/2003/12/04/mid-life-crisis/)」 (有効期間半ばでの危機) の投稿を参照してください。
+ この規則は、ジェネレーション 1 のガベージ コレクションの発生率が高くなりすぎた場合に適用されます。 有効期間が短いオブジェクトの多くが、ジェネレーション 0 のコレクションでは収集されずにジェネレーション 1 のコレクションで収集される場合、メモリ管理のコストが高くなる可能性があります。 詳細については、MSDN Web サイトの「Rico Mariani's Performance Tidbits」 (Rico Mariani のパフォーマンスに関する話題) の「[Mid-life crisis](/archive/blogs/ricom/mid-life-crisis)」 (有効期間半ばでの危機) の投稿を参照してください。
 
 ## <a name="how-to-investigate-a-warning"></a>警告の調査方法
  [エラー一覧] ウィンドウに表示されたメッセージをダブルクリックして、プロファイル データの [[マーク] ビュー](../profiling/marks-view.md)に移動します。 **.NET CLR Memory\\# of Gen 0 Collections** 列と **.NET CLR Memory\\# of Gen 1 Collections** 列を探します。 ガベージ コレクションがより高い頻度で発生している特定のプログラム実行フェーズがあるかどうかを確認します。 これらの値を **% Time in GC** 列と比較して、マネージド メモリの割り当てパターンによって過剰なメモリ管理オーバーヘッドが発生しているかどうかを調べます。
 
  アプリケーションのマネージド メモリの使用パターンを調べるには、.NET メモリの割り当てのプロファイルを使用して再度アプリケーションのプロファイリングを行い、オブジェクトの有効期間測定を要求します。
 
- ガベージ コレクションのパフォーマンスの向上の方法の詳細については、Microsoft Web サイトの「[ガベージ コレクターの基本とパフォーマンスのヒント](/previous-versions/dotnet/articles/ms973837(v=msdn.10))」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](https://msdn.microsoft.com/magazine/cc534993.aspx)」 (大きなオブジェクト ヒープの秘密) を参照してください。
+ ガベージ コレクションのパフォーマンスの向上の方法の詳細については、Microsoft Web サイトの「[ガベージ コレクターの基本とパフォーマンスのヒント](/previous-versions/dotnet/articles/ms973837(v=msdn.10))」を参照してください。 自動ガベージ コレクションのオーバーヘッドについては、「[Large Object Heap Uncovered](/archive/msdn-magazine/2008/june/clr-inside-out-large-object-heap-uncovered)」 (大きなオブジェクト ヒープの秘密) を参照してください。

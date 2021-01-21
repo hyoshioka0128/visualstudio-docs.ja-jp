@@ -1,5 +1,7 @@
 ---
 title: データセットのデータの編集
+description: データセット内のデータを編集する方法について説明します。 データセット行を編集する方法、データセットに新しい行を挿入する方法、変更された行があるかどうかを確認する方法、およびエラーのある行を特定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe59b30e9af7ee1d98c0aba65339af1d53cba8fb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282463"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435092"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 データテーブル内のデータは、任意のデータベースのテーブルのデータを編集するのと同様に編集できます。 このプロセスには、テーブル内のレコードの挿入、更新、および削除を含めることができます。 データバインドフォームでは、ユーザーが編集できるフィールドを指定できます。 このような場合、データバインディングインフラストラクチャは、変更を後でデータベースに送り返すことができるように、すべての変更の追跡を処理します。 プログラムを使用してデータを編集し、それらの変更をデータベースに返信する場合は、変更の追跡を行うオブジェクトとメソッドを使用する必要があります。
@@ -40,7 +42,7 @@ ms.locfileid: "85282463"
 [!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>データセットに新しい行を挿入するには
-データバインドコントロールを使用するアプリケーションは、通常、 [BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)の [**新規追加**] ボタンを使用して新しいレコードを追加します。
+データバインドコントロールを使用するアプリケーションは、通常、 [BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)の [ **新規追加** ] ボタンを使用して新しいレコードを追加します。
 
 新しいレコードをデータセットに手動で追加するには、DataTable に対してメソッドを呼び出して、新しいデータ行を作成します。 次に、のコレクション () に行を追加し <xref:System.Data.DataRow> <xref:System.Data.DataTable.Rows%2A> <xref:System.Data.DataTable> ます。
 
@@ -109,4 +111,4 @@ ms.locfileid: "85282463"
 
 ## <a name="see-also"></a>関連項目
 
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)

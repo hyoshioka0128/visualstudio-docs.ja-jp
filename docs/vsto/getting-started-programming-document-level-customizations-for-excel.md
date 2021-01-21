@@ -1,5 +1,8 @@
 ---
 title: 'Excel: ドキュメントレベルのカスタマイズのプログラミングを開始する'
+description: Visual Studio を使用して Microsoft Office Excel のドキュメントレベルのカスタマイズの作成を開始するために知っておく必要があることについて説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66402159"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846039"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Excel のドキュメントレベルのカスタマイズのプログラミングの概要
   Visual Studio を使用して Microsoft Office Excel のドキュメントレベルのカスタマイズの作成を開始するだけの場合は、次のことを理解しておく必要があります。

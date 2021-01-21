@@ -1,5 +1,7 @@
 ---
-title: '[設定のインポートとエクスポート] ([オプション] ダイアログ ボックス - [環境])'
+title: '[オプション] ダイアログ ボックスの [設定のインポートとエクスポート]'
+description: '[環境] セクションの [設定のインポートとエクスポート] ページを使用して、ユーザー設定ファイルの保存先を指定する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ca35d5ff9907bd9ff8907f706ade346b3010e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1e2ef878ec548baed476205cbc3dcaddce67355a
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595541"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616956"
 ---
 # <a name="options-dialog-box-environment--import-and-export-settings"></a>[オプション] ダイアログ ボックス:[環境] \> [設定のインポートとエクスポート]
 

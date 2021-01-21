@@ -1,5 +1,7 @@
 ---
 title: データセットのツール
+description: Visual Studio で使用可能なデータセットツールを確認します。 データセットワークフロー、データセット、N 層アーキテクチャ、およびデータセットと XML について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
@@ -47,12 +49,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586719"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436486"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 
@@ -69,15 +71,15 @@ ms.locfileid: "75586719"
 
 Visual Studio には、データセットの操作を簡略化するツールが用意されています。 基本的なエンドツーエンドのワークフローは次のとおりです。
 
-- [ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window) を使用すると、1つまたは複数のデータソースから新しいデータセットを作成できます。 **データセットデザイナー**を使用してデータセットを構成し、そのプロパティを設定します。 たとえば、含めるデータソースのテーブルと、各テーブルの列を指定する必要があります。 データセットに必要なメモリの量を節約するには、慎重に選択してください。 詳細については、「 [データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
+- [ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window) を使用すると、1つまたは複数のデータソースから新しいデータセットを作成できます。 **データセットデザイナー** を使用してデータセットを構成し、そのプロパティを設定します。 たとえば、含めるデータソースのテーブルと、各テーブルの列を指定する必要があります。 データセットに必要なメモリの量を節約するには、慎重に選択してください。 詳細については、「 [データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
 
 - 外部キーが正しく処理されるように、テーブル間のリレーションシップを指定します。 詳細については、「 [tableadapter を使用したデータセットの読み込み](../data-tools/fill-datasets-by-using-tableadapters.md)」を参照してください。
 
-- **TableAdapter 構成ウィザード**を使用して、データセットを設定するクエリまたはストアドプロシージャと、実装するデータベース操作 (update、delete など) を指定します。 詳細については、以下のトピックを参照してください。
+- **TableAdapter 構成ウィザード** を使用して、データセットを設定するクエリまたはストアドプロシージャと、実装するデータベース操作 (update、delete など) を指定します。 詳細については、以下のトピックを参照してください。
 
   - [TableAdapters を使用してデータセットを入力する](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-  - [データセット内のデータの編集](../data-tools/edit-data-in-datasets.md)
+  - [データセットのデータの編集](../data-tools/edit-data-in-datasets.md)
 
   - [データセットのデータの検証](../data-tools/validate-data-in-datasets.md)
 
@@ -95,6 +97,6 @@ N 層アプリケーションのデータセットの詳細については、「
 
 XML との間でデータセットを変換する方法については、「データ [セットへの xml データの読み込み](../data-tools/read-xml-data-into-a-dataset.md) 」と「 [xml としてのデータセットの保存](../data-tools/save-a-dataset-as-xml.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [.NET 用の Visual Studio データ ツール](../data-tools/visual-studio-data-tools-for-dotnet.md)

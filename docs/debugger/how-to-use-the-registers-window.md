@@ -1,6 +1,7 @@
 ---
 title: デバッガーでレジスタ値を表示する | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio の [レジスタ] ウィンドウにレジスタの値を表示します。 デバッグ中、アプリでコードが実行されるとレジスタ値が変化します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,16 +25,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed60b21d7c8e90e18b389a29c3343713ac8ece3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8422738b5c46b5482ac65cd24ccc903acdb4506e
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348575"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148040"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>[レジスタ] ウィンドウでレジスタ値を表示する (C#、C++、Visual Basic、F#)
 
-**[レジスタ]** ウィンドウには、Visual Studio デバッグ中のレジスタの内容が表示されます。 レジスタの背後にある概念について大まかな概要について、**登録**ウィンドウを参照してください[デバッグの基礎: [レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)します。
+**[レジスタ]** ウィンドウには、Visual Studio デバッグ中のレジスタの内容が表示されます。 レジスタの背後にある概念について大まかな概要について、**登録** ウィンドウを参照してください [デバッグの基礎: [レジスタ] ウィンドウ](../debugger/debugging-basics-registers-window.md)します。
 
 > [!NOTE]
 > スクリプトまたは SQL アプリのレジスタ情報は表示できません。

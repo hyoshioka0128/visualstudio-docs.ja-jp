@@ -1,5 +1,7 @@
 ---
 title: メニューコマンドのローカライズ |Microsoft Docs
+description: ローカライズされた vsct ファイルと VSPackage のローカライズされた .resx ファイルを作成することによって、メニューとツールバーのコマンドにローカライズされたテキストを提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/08/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +17,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1c158fd689cbcae18fec5d3306e6d6fadb169f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51f3692a4539eddbf35e24de8024eadd39031080
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904562"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615604"
 ---
 # <a name="localize-menu-commands"></a>メニューコマンドのローカライズ
 
@@ -32,7 +34,7 @@ ms.locfileid: "85904562"
 
 Vspackage では、メニューコマンドとツールバーボタンは、 *vsct* ファイルで定義されています。
 
-1. **ソリューションエクスプローラー**で、 *vsct*ファイルの名前を*filename. vsct*から*filename. en-us. vsct*に変更します。
+1. **ソリューションエクスプローラー** で、 *vsct* ファイルの名前を *filename. vsct* から *filename. en-us. vsct* に変更します。
 
 2. ローカライズされた言語ごとに、 *ファイル名. en-us. vsct* のコピーを作成します。
 
@@ -78,13 +80,13 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 コマンド名以外のテキストリソースは、リソース (*.resx*) ファイルで定義されています。
 
-1. *VSPackage*の名前を*VSPackage*に変更します。
+1. *VSPackage* の名前を *VSPackage* に変更します。
 
 2. ローカライズされた各言語の *VSPackage* ファイルのコピーを作成します。
 
      各コピー VSPackage に名前 *を指定します。 {Locale} .resx。* ここで、 *{Locale}* は特定のカルチャ名です。
 
-3. *リソース*の名前を *.resources. en-us. .resx*に変更します。
+3. *リソース* の名前を *.resources. en-us. .resx* に変更します。
 
 4. 各ローカライズされた言語の *リソース* のコピーを作成します。
 
@@ -112,7 +114,7 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 ローカライズされたリソースを組み込むには、 *assemblyinfo.cs* ファイルとプロジェクトファイルを変更する必要があります。
 
-1. **ソリューションエクスプローラー**の [**プロパティ**] ノードで、エディターの*assemblyinfo.cs*または*assemblyinfo*を開きます。
+1. **ソリューションエクスプローラー** の [**プロパティ**] ノードで、エディターの *assemblyinfo.cs* または *assemblyinfo* を開きます。
 
 2. 次のエントリを追加します。
 
@@ -138,7 +140,7 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 6. 要素を `ItemGroup` 含む要素を探し `EmbeddedResource` ます。
 
-7. VSPackage を `EmbeddedResource` 呼び出す要素で*VSPackage.en-US.resx*、次のように、要素をに設定され `ManifestResourceName` `LogicalName` た要素に置き換え `VSPackage.en-US.Resources` ます。
+7. VSPackage を `EmbeddedResource` 呼び出す要素で、次のように、要素をに設定され `ManifestResourceName` `LogicalName` た要素に置き換え `VSPackage.en-US.Resources` ます。
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">

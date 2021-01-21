@@ -1,6 +1,7 @@
 ---
 title: 関連サービスとインターフェイス (ソース管理 VSPackage)
 titleSuffix: ''
+description: Visual Studio SDK のソース管理 VSPackage に関連するインターフェイスについて説明します。 パッケージは、いくつかのインターフェイスを実装し、他のインターフェイスをソース管理に使用します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af08c8e0ea15751f5d8e6c0a1a01549fdb9227c3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: af5c971b804e1c288bf710f6627c0e769e790ee1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034795"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876351"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>関連サービスとインターフェイス (ソース管理 VSPackage)
 
@@ -54,7 +55,7 @@ ms.locfileid: "90034795"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | このインターフェイスは、プロジェクト内のソース管理ファイルのツールヒントを取得するために使用されます。 | ソース管理 VSPackage | オプション |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccOpenFromSourceControl> | このインターフェイスは、名前空間拡張のサポートを提供します。 | ソース管理 VSPackage | オプション |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccControlNewSolution> | VSPackage は、このインターフェイスを使用して、名前空間の拡張機能を [ **新規**]、 **[開く**]、[ **保存** ] の各ダイアログボックスに統合します。 その結果、プロジェクトは、作成時にソース管理に自動的に追加されたり、保存操作が有効になったときにソース管理に追加されたりすることができます。 | ソース管理 VSPackage | オプション |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | VSPackage は、このインターフェイスを使用して、 **ソリューションエクスプローラー**のノードのソース管理のグリフとして追加のグリフを定義します。 | ソース管理 VSPackage | オプション |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs> | VSPackage は、このインターフェイスを使用して、 **ソリューションエクスプローラー** のノードのソース管理のグリフとして追加のグリフを定義します。 | ソース管理 VSPackage | オプション |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl> | Web プロジェクトの [ **追加** ] ダイアログボックスでは、このインターフェイスを使用します。 ソース管理の場所を参照したり、その場所にあるソース管理リポジトリに以前に追加された Web プロジェクトを開いたりするためのメソッドが用意されています。 | ソース管理 VSPackage | 推奨 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> | このインターフェイスでは、ソース管理からのプロジェクトの非同期 (バックグラウンド) 読み込みがサポートされています。 | ソース管理 VSPackage | オプション |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents> | このインターフェイスにより、プロジェクトは、によって開始された非同期読み込みの進行状況を監視でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc> ます。 | Project | オプション |
@@ -65,5 +66,5 @@ ms.locfileid: "90034795"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | このインターフェイスは、ソース管理の設定をソリューションオプション (.suo) ファイルに保存するために使用されます。 これには、現在のユーザーの参加場所など、ユーザー固有のソース管理設定が含まれる場合があります。 | ソース管理 VSPackage | 推奨 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | このインターフェイスは、ソリューションを閉じる前にプロジェクトファイルのチェックイン、プロジェクトを開くときにソース管理から新しいファイルを取得するなどの操作を実行するために、イベントを監視するために使用されます。 | ソース管理 VSPackage | 推奨 |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [デザイン要素](../../extensibility/internals/source-control-vspackage-design-elements.md)

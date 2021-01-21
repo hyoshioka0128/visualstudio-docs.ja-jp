@@ -1,5 +1,7 @@
 ---
 title: ファイルのビルド ファイル
+description: Visual Studio プロジェクトのすべてのファイルにビルド アクションが含まれ、そのビルド アクションによって、プロジェクトのコンパイル時にファイルに行われる処理が制御されることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8884eaa459fa3a2a7dd8d10f0ffeca5003398afd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315110"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189720"
 ---
 # <a name="build-actions"></a>ビルド アクション
 
@@ -24,7 +26,7 @@ Visual Studio プロジェクト内のすべてのファイルに、ビルド �
 
 ## <a name="set-a-build-action"></a>ビルド アクションを設定する
 
-ファイルのビルド アクションを設定するには、**[プロパティ]** ウィンドウでファイルのプロパティを開きます。その場合、**ソリューション エクスプローラー**でファイルを選択し、**Alt**+**Enter** キーを押します。 または、**ソリューション エクスプローラー**でファイルを右クリックし、**[プロパティ]** を選択します。 **[プロパティ]** ウィンドウの **[詳細設定]** セクションで、**[ビルド アクション]** の横にあるドロップダウン リストを使用して、ファイルのビルド アクションを設定します。
+ファイルのビルド アクションを設定するには、**[プロパティ]** ウィンドウでファイルのプロパティを開きます。その場合、**ソリューション エクスプローラー** でファイルを選択し、**Alt**+**Enter** キーを押します。 または、**ソリューション エクスプローラー** でファイルを右クリックし、**[プロパティ]** を選択します。 **[プロパティ]** ウィンドウの **[詳細設定]** セクションで、**[ビルド アクション]** の横にあるドロップダウン リストを使用して、ファイルのビルド アクションを設定します。
 
 ![Visual Studio のファイルのビルド アクション](media/build-actions.png)
 
@@ -35,7 +37,7 @@ C# および Visual Basic プロジェクト ファイルの一般的なビル�
 |ビルド アクション | プロジェクトの種類 | 説明 |
 |-|-|
 | **AdditionalFiles** | C#、Visual Basic | 入力として C# または Visual Basic コンパイラに渡される、ソース以外のテキスト ファイル。 このビルド アクションは主に、コードの品質を確認するためにプロジェクトによって参照される、[アナライザー](../code-quality/roslyn-analyzers-overview.md)への入力を提供するために使用されます。 詳細については、[追加ファイルの使用](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md)に関するページを参照してください。|
-| **ApplicationDefinition** | WPF | アプリケーションが定義されているファイル。 最初にプロジェクトを作成したときは、これは *App.xaml*です。 |
+| **ApplicationDefinition** | WPF | アプリケーションが定義されているファイル。 最初にプロジェクトを作成したときは、これは *App.xaml* です。 |
 | **CodeAnalysisDictionary** | .NET | スペル チェックのためにコード分析によって使用されるカスタム単語辞書。 「[方法:コード分析辞書をカスタマイズする](../code-quality/how-to-customize-the-code-analysis-dictionary.md)」を参照してください|
 | **Compile** | any | ファイルはソース ファイルとしてコンパイラに渡されます。|
 | **コンテンツ** | .NET | **Content** としてマークされたファイルは、<xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType> を呼び出すことでストリームとして取得できます。 ASP.NET プロジェクトの場合、展開時に、これらのファイルはサイトの一部として含まれます。|

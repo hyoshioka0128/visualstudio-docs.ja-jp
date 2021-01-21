@@ -1,5 +1,7 @@
 ---
 title: VSTO アドインのプログラミングの概要
+description: VSTO アドインを使用して Microsoft Office アプリケーションを自動化し、アプリケーションの機能を拡張し、アプリケーションのユーザーインターフェイスをカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cf3e8d59a2ced26f878da979fa87fc663b5bab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253590"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845116"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO アドインのプログラミングの概要
   VSTO アドインを使用することにより、Microsoft Office アプリケーションを自動化し、アプリケーションの機能を拡張できるほか、アプリケーションのユーザー インターフェイス (UI) をカスタマイズすることもできます。 VSTO アドインを、Visual Studio を使用して作成できる他の種類の Office ソリューションと比較する方法については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -69,12 +71,12 @@ ms.locfileid: "71253590"
 
   Microsoft Office アプリケーションの UI をカスタマイズする方法の詳細については、「 [OFFICE ui のカスタマイズ](../vsto/office-ui-customization.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  VSTO アドインの作成方法については、次のチュートリアルを参照してください。
 
 - [チュートリアル: 初めての Excel 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [チュートリアル: 初めての Outlook 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [チュートリアル: 初めての Outlook 用 VSTO Add-In の作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 

@@ -1,5 +1,7 @@
 ---
 title: Web パフォーマンス テスト API
+description: コード化された Web パフォーマンス テスト、テスト プラグイン、要求プラグイン、要求、抽出と検証の規則をサポートする Web パフォーマンス テスト API について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b7320a38d474748713d687f4ee00b5b91f0208
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d4802d95c46d1187911f4bbc134cc0c50ce08b18
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287078"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96329719"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>方法: Web パフォーマンス テスト API を使用する
 
@@ -27,7 +29,7 @@ Web パフォーマンス テストのコードを記述できます。 Web パ�
 > [!TIP]
 > オブジェクト ブラウザーを使用して、<xref:Microsoft.VisualStudio.TestTools.WebTesting> 名前空間を調べます。 Visual C# エディターおよび Visual Basic エディターの両方では、この名前空間のクラスを使用したコーディングの IntelliSense サポートを提供しています。
 
-ロード テスト用のプラグインを作成することもできます。 詳細については、「[方法 : ロード テスト API を使用する](../test/how-to-use-the-load-test-api.md)」および「[方法 : ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)」を参照してください。
+ロード テスト用のプラグインを作成することもできます。 詳細については、「[方法:ロード テスト API を使用する](../test/how-to-use-the-load-test-api.md)と[方法:ロード テスト プラグインを作成する](../test/how-to-create-a-load-test-plug-in.md)。
 
 ## <a name="to-use-the-webtesting-namespace"></a>WebTesting 名前空間を使用するには
 
@@ -62,9 +64,9 @@ Web パフォーマンス テストのコードを記述できます。 Web パ�
 
 9. Web パフォーマンス テストを実行します。
 
-     <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> の実装例については、「[方法: Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)」を参照してください。
+     たとえば、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> の実装については、「[方法:Web パフォーマンス テスト プラグインを作成する](../test/how-to-create-a-web-performance-test-plug-in.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [ロード テスト用のカスタム コードおよびカスタム プラグインの作成](../test/create-custom-code-and-plug-ins-for-load-tests.md)

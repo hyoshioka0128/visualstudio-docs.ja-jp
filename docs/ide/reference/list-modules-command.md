@@ -1,5 +1,7 @@
 ---
 title: List Modules コマンド
+description: List Modules コマンドと、これにより、現在のプロセスのモジュールを一覧表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e083a0e1baeefc6807dccb2199cd0e5a9bd883d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa0c3f6445a22ee80457e8a7f9f24fb7008f77ed
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75595502"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305308"
 ---
 # <a name="list-modules-command"></a>List Modules コマンド
 現在のプロセスのモジュールが一覧表示されます。
@@ -76,8 +78,8 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
 Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolFile:no /SymbolStatus:no /Timestamp:yes /Version:no
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
-- [方法 : [モジュール] ウィンドウを使用する](../../debugger/how-to-use-the-modules-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
+- [方法: [モジュール] ウィンドウを使用する](../../debugger/how-to-use-the-modules-window.md)

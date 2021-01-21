@@ -1,5 +1,7 @@
 ---
 title: Office プロジェクトテンプレートの概要
+description: Visual Studio の Microsoft Office 開発者ツールに、さまざまな種類の Office ソリューションを作成するためのプロジェクトテンプレートが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -30,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d83b04795386cfec80a8a309a9a84da04f6df105
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3203eb4bbd7339f5e59ecffea8436b02180b8b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926602"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528079"
 ---
 # <a name="office-project-templates-overview"></a>Office プロジェクトテンプレートの概要
   Visual Studio の Microsoft Office Developer Tools には、次の種類の Office ソリューションの作成に使用できるプロジェクト テンプレートが含まれています。
@@ -152,7 +154,7 @@ ms.locfileid: "68926602"
 ## <a name="comparison"></a>比較
  文書とテンプレートの違いについて、次の表に示します。
 
-|Documents|テンプレート|
+|ドキュメント|テンプレート|
 |---------------|---------------|
 |読み取り専用に設定されていない場合、ユーザーは文書を開いて変更できます。 保存した変更はすべて、元の文書に保存されます。|ユーザーは、テンプレートを開いて、新しい文書としてローカル コピーを作成できます。 特別なアクセス許可が与えられていない限り、元のテンプレートを変更することはできません。|
 |文書を開くと、 <xref:Microsoft.Office.Tools.Word.Document.Open> イベントが呼び出されます。|テンプレートを開くと、 <xref:Microsoft.Office.Tools.Word.Document.New> イベントが呼び出されます。|
@@ -164,7 +166,7 @@ ms.locfileid: "68926602"
  Microsoft Office Word テンプレートにマネージド コード拡張機能が組み込まれていると、テンプレートがグローバル テンプレートに割り当てられている場合、または Word のスタートアップ ディレクトリから読み込まれた場合でも、プロジェクト アセンブリは呼び出されません。 また、ドキュメントは Office ソリューションの一部であるテンプレートの形式を認識しません。
 
 ## <a name="excel-add-ins-xla-files"></a>Excel アドイン (.xla ファイル)
- Excel VSTO アドイン (*.xla* ファイル) を作成するための Office プロジェクトはありません。 ブックを .xla ファイルとして保存できますが、サポートされていない操作であり、推奨できません。 マネージコード拡張機能を持つブックを **Microsoft Office Excel アドイン ( \* .xla)** ファイルとして保存した場合は、[ **アドイン** ] ダイアログボックスで選択して別のブックに適用することができます。 場合によっては、VSTO アドインの適用後に対象のブックでコードが実行されますが、このような Office ソリューションの使用はサポートされていません。
+ Excel VSTO アドイン (*.xla* ファイル) を作成するための Office プロジェクトはありません。 ブックを .xla ファイルとして保存できますが、サポートされていない操作であり、推奨できません。 マネージコード拡張機能を持つブックを **Microsoft Office Excel Add-In ( \* .xla)** ファイルとして保存した場合は、[ **アドイン** ] ダイアログボックスで選択して別のブックに適用できます。 場合によっては、VSTO アドインの適用後に対象のブックでコードが実行されますが、このような Office ソリューションの使用はサポートされていません。
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)

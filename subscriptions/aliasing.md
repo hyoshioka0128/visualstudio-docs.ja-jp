@@ -1,18 +1,18 @@
 ---
 title: 別名を使用した Visual Studio サブスクリプションへのサインインが失敗する場合がある | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 03/02/2020
+ms.date: 10/22/2020
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234641"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467610"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
@@ -33,10 +33,10 @@ ms.locfileid: "87234641"
 
 1. サブスクリプション割り当ての電子メールに記載されているサインイン アドレスを使用して、 https://my.visualstudio.com/subscriptions にサインインします。
 
-2. ページの右上に示されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  そうでない場合は、UPN が不一致になっており、サブスクリプションを表示することはできません。 
+2. ページの右上隅にある自分の名前をクリックします。  プロファイルが開きます。  プロファイルに記載されているサインイン電子メール アドレスが、サインインに使用したアドレスと一致していることを確認します。  そうでない場合は、UPN が不一致になっており、サブスクリプションを表示することはできません。 
 
 > [!div class="mx-imgBorder"]
-> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png "右上に表示されるメール アドレスをサインインに使用するアドレスに必ず一致させます。")
+> ![電子メール アドレスへのサインイン](_img//aliasing/sign-in-email.png "プロファイルに表示されるメール アドレスをサインインに使用するアドレスに必ず一致させます。")
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>UPN の不一致を修正する方法
 
@@ -64,7 +64,7 @@ Visual Studio サブスクリプション ポータルへのサインインに�
 
 Visual Studio プラットフォームでは、サブスクリプションの詳細を表示するためのプライマリ エイリアスが優先されます。 
 
-1. **Microsoft にサインインする方法の管理**に移動します。 メッセージが表示されたら Microsoft アカウントにサインインします。 
+1. **Microsoft にサインインする方法の管理** に移動します。 メッセージが表示されたら Microsoft アカウントにサインインします。 
 
 2. [アカウント エイリアス] で、サブスクリプションの割り当てに使用する電子メール アドレスの横にある **[プライマリにする]** を選択します。 
 
@@ -86,16 +86,16 @@ Visual Studio プラットフォームでは、サブスクリプションの詳
 
 0. 1 人のユーザーを変更する場合は、テーブルでそのユーザーを選択し、右クリックして編集します。 これにより、サインインの電子メール アドレスを変更できるパネルが開きます。 サインイン電子メール アドレスのフィールドで必要な更新を行います。 [保存] をクリックすると、変更が有効になります。  
 
-0. このような変更を大量のユーザーに対して行う必要がある場合は、一括編集機能を利用できます。 詳細については、「[一括編集を使用して複数のサブスクライバーを編集する](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit)」を参照してください。
+0. このような変更を大量のユーザーに対して行う必要がある場合は、一括編集機能を利用できます。 詳細については、「[一括編集を使用して複数のサブスクライバーを編集する](./edit-license.md#edit-multiple-subscribers-using-bulk-edit)」を参照してください。
 
 > [!NOTE]
 > 個別変更および一括変更のどちらの場合も、サブスクライバーは、サインイン電子メール アドレスが変更されており、更新された電子メール アドレスを使用してサインインする必要があることを示した電子メールを受け取ります。 また、サブスクライバーが以前に他のサインイン アドレス下で特典を有効にした場合は、該当の他のサインイン アドレスを引き続き使用してアクセスする必要があることにも、注意してください。  
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>次の手順
@@ -104,5 +104,3 @@ Visual Studio サブスクリプションの管理に関する詳細情報をご
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)
 - [サブスクリプションの編集](edit-license.md)
 - [最大使用量の確認](maximum-usage.md)
-
-

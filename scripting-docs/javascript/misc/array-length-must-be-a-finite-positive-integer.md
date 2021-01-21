@@ -14,12 +14,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa8b9a85c0c7457cb06d36fd3cd849ce48484b46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817087"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862212"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>配列の長さは、有限の正の整数でなければなりません。
 整数ではない引数を使用して、 **配列** コンストラクターを呼び出しています (0 と正の整数のセットで構成される整数)。  
@@ -42,4 +42,4 @@ ms.locfileid: "85817087"
      配列のサイズの上限は、最大の整数値 (約 40億) を超えています。  
   
 ## <a name="see-also"></a>関連項目  
- [配列の使用](../../javascript/advanced/using-arrays-javascript.md)
+ [配列の使用](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

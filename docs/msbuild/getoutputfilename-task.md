@@ -1,5 +1,7 @@
 ---
 title: GetOutputFileName タスク | Microsoft Docs
+description: cl.exe や他のツールの出力ファイル名オプションを指定するには、MSBuild GetOutputFileName ヘルパー タスクを使用します。
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2019
 ms.topic: reference
 f1_keywords:
@@ -17,12 +19,12 @@ author: ghogen
 ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cb4670bb84b151332951608f7b20ef5ea44e59a3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593292"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436783"
 ---
 # <a name="getoutputfilename-task"></a>GetOutputFileName タスク
 
@@ -30,15 +32,15 @@ cl や他のツールの出力ファイル名を取得するヘルパー タス�
 
 ## <a name="parameters"></a>パラメーター
 
-以下の表では、**GetOutputFileName** タスクのパラメーターについて説明します。
+以下の表では、 **GetOutputFileName** タスクのパラメーターについて説明します。
 
-|パラメーター|[説明]|
+|パラメーター|説明|
 |---------------|-----------------|
 |**OutputExtension**|必須の **String** 型のパラメーターです。|
 |**OutputFile**|省略可能な **string** 型の出力パラメーターです。|
 |**[OutputPath]**|省略可能な **string** 型のパラメーターです。|
 |**SourceFile**|必須の **String** 型のパラメーターです。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [タスク リファレンス](../msbuild/msbuild-task-reference.md)

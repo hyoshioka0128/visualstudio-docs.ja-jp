@@ -1,5 +1,7 @@
 ---
 title: '方法: フィーチャーをローカライズする |Microsoft Docs'
+description: ハードコーディングされた文字列値を、ローカライズされたリソースを参照する式に置き換えることにより、SharePoint で機能のタイトルと説明をローカライズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0d15654ba48b6c95cf2b2f7fa4f9cd665f0959a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016138"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305197"
 ---
 # <a name="how-to-localize-a-feature"></a>方法: フィーチャーをローカライズする
   既定では、機能のタイトルと説明はハードコーディングされた文字列値を使用します。 機能のタイトルと説明をローカライズするには、文字列を、ローカライズされたリソースを参照する式に置き換えます。
@@ -27,7 +29,7 @@ ms.locfileid: "86016138"
 
 #### <a name="to-localize-a-feature"></a>機能をローカライズするには
 
-1. **ソリューションエクスプローラー**で、[ **feature1.feature** ] ノードのショートカットメニューを開き、[**機能リソースの追加**] を選択します。
+1. **ソリューションエクスプローラー** で、[ **feature1.feature** ] ノードのショートカットメニューを開き、[**機能リソースの追加**] を選択します。
 
 2. [ **リソースの追加** ] ダイアログボックスで、既定の言語機能リソースファイルのカルチャとして、一覧から [ **インバリアント言語** ] を選択します。
 
@@ -37,15 +39,15 @@ ms.locfileid: "86016138"
 
 4. リソースエディターで各リソースファイルを開き、すべての文字列 Id とその値を入力します。
 
-     たとえば、既定の機能リソースファイルでは、" **My Feature title**" という値の**タイトル**の文字列 Id と、 **[機能の説明**] の値を示す**説明**の2番目の文字列 id を入力します。 ローカライズされたリソースファイルごとに、既定の機能リソースで使用されているのと同じ文字列 Id を使用しますが、値にはローカライズされた文字列を入力します。
+     たとえば、既定の機能リソースファイルでは、" **My Feature title**" という値の **タイトル** の文字列 Id と、 **[機能の説明**] の値を示す **説明** の2番目の文字列 id を入力します。 ローカライズされたリソースファイルごとに、既定の機能リソースで使用されているのと同じ文字列 Id を使用しますが、値にはローカライズされた文字列を入力します。
 
-5. すべてのリソース値を入力したら、機能のショートカットメニュー ( *feature1.feature*など) を開き、[ **デザイナーの表示** ] を選択してフィーチャーデザイナーで機能を開きます。
+5. すべてのリソース値を入力したら、機能のショートカットメニュー ( *feature1.feature* など) を開き、[ **デザイナーの表示** ] を選択してフィーチャーデザイナーで機能を開きます。
 
 6. 機能の [ **タイトル** ] フィールドと [ **説明** ] フィールドをローカライズするには、次の書式を使用してボックスに値を入力します。
 
      `$Resources:` *文字列 ID*
 
-     たとえば、[**機能タイトル**] ボックスに「$Resources:**title** 」と入力し、[**機能の説明**] ボックスに $Resources:**説明**を入力します。
+     たとえば、[**機能タイトル**] ボックスに「$Resources:**title** 」と入力し、[**機能の説明**] ボックスに $Resources:**説明** を入力します。
 
      文字列 Id は、リソースファイルで使用されているものと一致している必要があります。
 
@@ -58,7 +60,7 @@ ms.locfileid: "86016138"
      ローカライズされた機能のタイトルと説明がアプリケーションに表示されます。 ローカライズされたリソースを表示するには、リソース ファイルのカルチャに対応する Language Pack が SharePoint サーバーにインストールされている必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint ソリューションのローカライズ](../sharepoint/localizing-sharepoint-solutions.md)
-- [方法: リソースファイルを追加する](../sharepoint/how-to-add-a-resource-file.md)
+- [SharePoint ソリューションをローカライズする](../sharepoint/localizing-sharepoint-solutions.md)
+- [方法: リソース ファイルを追加する](../sharepoint/how-to-add-a-resource-file.md)
 - [方法: ASPX マークアップをローカライズする](../sharepoint/how-to-localize-aspx-markup.md)
 - [方法: コードをローカライズする](../sharepoint/how-to-localize-code.md)

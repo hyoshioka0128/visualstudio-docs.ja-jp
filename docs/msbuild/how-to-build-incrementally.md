@@ -1,5 +1,7 @@
 ---
 title: '方法: インクリメンタル ビルドを実行する | Microsoft Docs'
+description: MSBuild を使用してインクリメンタル ビルドを実行し、以前にビルドされた、まだ最新の状態であるコンポーネントがリビルドされないようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +14,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4911bb131f5c5c878b82865b3dee61fd7bedbe1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b7d54db50b4f28277a81d149b4c0c5140b002b0
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634163"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436008"
 ---
-# <a name="how-to-build-incrementally"></a>方法: インクリメンタル ビルド
+# <a name="how-to-build-incrementally"></a>方法: インクリメンタル ビルドを実行する
 
 大規模なプロジェクトをビルドする場合、今でも最新の以前にビルドされたコンポーネントが再ビルドされないことが重要です。 すべてのターゲットが毎回ビルドされると、各ビルドが完了するのに長い時間がかかります。 インクリメンタル ビルド (以前にビルドされていないターゲット、または古くなっているターゲットだけがリビルドされるビルド) を有効にするため、Microsoft Build Engine (MSBuild) では、入力ファイルのタイムスタンプと出力ファイルのタイムスタンプを比較して、ターゲットをスキップするか、ビルドするか、または部分的にリビルドするかどうかを判断できます。 ただし、入力と出力の間に一対一のマッピングが必要です。 変換を使用して、ターゲットがこの直接マッピングを識別できるようにすることができます。 変換の詳細については、「[MSBuild 変換](../msbuild/msbuild-transforms.md)」を参照してください。
 

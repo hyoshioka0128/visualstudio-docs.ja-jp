@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250800"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780962"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>手順 3: Entity Framework を使用してデータを処理する
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 また、プロジェクトの *appsettings.json* ファイルに接続文字列 `AppDbContext` が追加されていることもわかります。
 
-データベースがまだ作成されていないため、ここでアプリを実行しても失敗する可能性があります。 必要に応じて自動的にデータベースを作成するようにアプリを構成するには、[Program.cs にコードを追加](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main)します。
+データベースがまだ作成されていないため、ここでアプリを実行しても失敗する可能性があります。 必要に応じて自動的にデータベースを作成するようにアプリを構成するには、[Program.cs にコードを追加](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main)します。
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ using WebApplication1.Models;
 
 ## <a name="see-also"></a>関連項目
 
-- [ASP.NET Core での Entity Framework Core を使用した Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [ASP.NET Core Razor Pages と EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [ASP.NET Core での Entity Framework Core を使用した Razor Pages](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [ASP.NET Core Razor Pages と EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

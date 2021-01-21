@@ -1,5 +1,7 @@
 ---
-title: マネージコードに対してレガシコード分析を手動で実行する方法
+title: レガシコード分析を手動で実行する (.NET)
+description: ソースコードで発生する可能性のある欠陥を検出する方法について説明します。 「Visual Studio でマネージコードに対してレガシコード分析を手動で実行する方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8a6b52a09729cbc76f91eee76f23e652f07c934f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250520"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434741"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>方法: マネージコードに対してレガシコード分析を手動で実行する
 
@@ -29,6 +31,6 @@ ms.locfileid: "88250520"
 set EnableLegacyCodeAnalysis = true
 ```
 
-2. **ソリューションエクスプローラー**で、プロジェクトをクリックします。
+2. **ソリューションエクスプローラー** で、プロジェクトをクリックします。
 
-3. [**分析**] メニューの [*プロジェクト名***に対してコード分析を実行**] をクリックします。
+3. [ **分析** ] メニューの [ *プロジェクト名***に対してコード分析を実行** ] をクリックします。

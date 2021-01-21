@@ -1,5 +1,7 @@
 ---
 title: ProjectItem 要素 (Visual Studio プロジェクトテンプレート) |Microsoft Docs
+description: プロジェクトテンプレートの ProjectItem 要素と、テンプレートがプロジェクトと項目のどちらであるかに応じて異なる属性を受け入れる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf2d41fe83b440e2a3b4bfebd4fac6f5d06094a4
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770308"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671325"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 要素 (Visual Studio プロジェクトテンプレート)
 プロジェクトテンプレートに含まれるファイルを指定します。
@@ -53,7 +55,7 @@ ms.locfileid: "85770308"
 | 属性 | 説明 |
 |---------------------| - |
 | `TargetFileName` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されるときのプロジェクト項目の名前とパスを指定します。 この属性は、テンプレート *.zip* ファイルのディレクトリ構造とは異なるディレクトリ構造を作成したり、パラメーター置換を使用して項目名を作成したりする場合に便利です。 |
-| `ReplaceParameters` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値が項目にあるかどうかを指定するブール値。 既定値は `false`にする必要があります。 |
+| `ReplaceParameters` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに置き換える必要があるパラメーター値が項目にあるかどうかを指定するブール値。 既定値は `false` です。 |
 | `OpenInEditor` | 省略可能な属性です。<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]プロジェクトがテンプレートから作成されたときに、内のそれぞれのエディターで項目を開くかどうかを指定するブール値。<br /><br /> `OpenInWebBrowser`属性と `OpenInHelpBrowser` 属性は、値がの項目では無視され `OpenInEditor` `true` ます。<br /><br /> 既定値は `false` です。 |
 | `OpenInWebBrowser` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに、その項目を Web ブラウザーで開くかどうかを指定するブール値。<br /><br /> Web ブラウザーで開くことができるのは、プロジェクトに対してローカルな HTML ファイルとテキストファイルだけです。 この属性では外部 Url を開くことができません。<br /><br /> 既定値は `false` です。 |
 | `OpenInHelpBrowser` | 省略可能な属性です。<br /><br /> プロジェクトがテンプレートから作成されたときに、その項目をヘルプビューアーで開くかどうかを指定するブール値。<br /><br /> ヘルプブラウザーで開くことができるのは、プロジェクトに対してローカルな HTML ファイルとテキストファイルだけです。 この属性では外部 Url を開くことができません。<br /><br /> 既定値は `false` です。 |
@@ -71,9 +73,9 @@ ms.locfileid: "85770308"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
- `string`テンプレート *.zip*ファイル内のファイルの名前またはパスを表す。
+ `string`テンプレート *.zip* ファイル内のファイルの名前またはパスを表す。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `ProjectItem` は、の省略可能な子です `Project` 。
 
  属性を使用して、 `TargetFileName` テンプレートの *.zip* ファイル内のディレクトリ構造とは異なるディレクトリ構造を作成できます。 たとえば、 *myfile.txt* ファイルがテンプレート *.zip* ファイルのルートに存在するものの、テンプレートから作成されたすべてのプロジェクトの *customfiles* という名前のディレクトリにファイルを配置する場合は、次の XML を使用します。
@@ -84,11 +86,11 @@ ms.locfileid: "85770308"
 
  属性を使用して、 `TargetFileName` ファイル名に国際的な文字を含むファイルの名前を変更することもできます。 たとえば、テンプレートの *.zip* ファイルに Unicode 文字のファイル名を含めることはできません。そのため、 *.zip* ファイルに圧縮する前に、ファイルの名前を変更する必要があります。 属性を使用して、 `TargetFileName` ファイル名を元の Unicode ファイル名に戻すことができます。
 
- `TargetFileName`属性を使用して、パラメーターでファイルの名前を変更することもできます。 次の手順では、テンプレートの *.zip*ファイルのルートディレクトリに存在*するファイル名*を、プロジェクト名に基づいてファイル名に変更する方法について説明します。
+ `TargetFileName`属性を使用して、パラメーターでファイルの名前を変更することもできます。 次の手順では、テンプレートの *.zip* ファイルのルートディレクトリに存在 *するファイル名* を、プロジェクト名に基づいてファイル名に変更する方法について説明します。
 
 ### <a name="to-rename-files-with-parameters"></a>パラメーターを使用してファイル名を変更するには
 
-1. *.Vstemplate*ファイルで次の XML を使用します。
+1. *.Vstemplate* ファイルで次の XML を使用します。
 
    ```xml
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>

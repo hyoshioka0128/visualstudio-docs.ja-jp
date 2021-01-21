@@ -1,20 +1,20 @@
 ---
-title: サブスクライバー ポータル内からサブスクリプション管理者に問い合わせる
+title: サブスクライバー ポータルでサブスクリプション管理者に問い合わせる | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 03/07/2020
+ms.date: 09/08/2020
 ms.topic: how-to
-description: サブスクリプション管理者に連絡し、質問や問題で支援を求める方法について説明します。
-ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+description: サブスクリプション管理者に連絡し、質問や問題に対する支援を求める方法について説明します。
+ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
+ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247432"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "93289972"
 ---
-# <a name="get-assistance-from-your-subscriptions-administrator"></a>サブスクリプション管理者のサポートを受ける
+# <a name="get-assistance-from-your-subscriptions-admin"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。
 
 多くの組織は大規模かつ複雑であるため、管理者が誰なのか知らず、どこでサポートを得たらよいのかは簡単にはわからないことがあります。  Microsoft は、管理者に連絡するための新しい機能をサブスクライバー ポータルに追加しました。   
@@ -33,13 +33,13 @@ ms.locfileid: "88247432"
 > **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、[契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 以下のベネフィットを有効にしていない場合は、有効にし、Visual Studio サブスクリプションを最大限に活用することをお勧めします。
@@ -48,4 +48,3 @@ ms.locfileid: "88247432"
 - [Azure DevOps](vs-azure-devops.md)
 
 以上を含むベネフィットは https://my.visualstudio.com/benefits にあります。
-

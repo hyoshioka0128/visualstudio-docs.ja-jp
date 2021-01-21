@@ -1,5 +1,7 @@
 ---
 title: MaxFrameworkVersion 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: MaxFrameworkVersion 要素と、テンプレートで必要な .NET Framework の最大バージョンをどのように指定するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c3acf9c40499417fe180ce470224824cc89a113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702623"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672426"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 要素 (Visual Studio テンプレート)
 

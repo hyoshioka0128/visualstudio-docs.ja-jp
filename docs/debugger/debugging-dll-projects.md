@@ -1,5 +1,7 @@
 ---
 title: DLL プロジェクトをデバッグする | Microsoft Docs
+description: Visual Studio のダイナミックリンク ライブラリ (DLL) ファイルをデバッグします。 Visual Studio を使用し、DLL を作成、ビルド、構成、デバッグします。
+ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec78e9a04062699ea699f45671e1210fc2306631
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315071"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728500"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Visual Studio で DLL をデバッグする (C#、C++、Visual Basic、F#)
 
@@ -58,7 +60,7 @@ C++ DLL にデバッガーをアタッチするには、C++ のコードで `Deb
 
 **`DebuggableAttribute` を設定するには:**
 
-1. **ソリューション エクスプローラー**で C++ DLL プロジェクトを選択し、 **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で C++ DLL プロジェクトを選択し、 **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
 
 1. **[プロパティ]** ペインの **[リンカー]**  >  **[デバッグ]** で、 **[デバッグできるアセンブリ]** に対して **[はい (/ASSEMBLYDEBUG)]** を選択します。
 
@@ -72,7 +74,7 @@ C/C++ プロジェクトの場合は、出力フォルダーにコピーする�
 
 **C/C++ のヘッダー ファイルと LIB ファイルの場所を設定するには:**
 
-1. **ソリューション エクスプローラー**で C/C++ DLL プロジェクトを選択し、 **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
+1. **ソリューション エクスプローラー** で C/C++ DLL プロジェクトを選択し、 **[プロパティ]** アイコンを選択するか、プロジェクトを右クリックして **[プロパティ]** を選択します。
 
 1. **[プロパティ]** ペインの上部にある **[構成]** で、 **[すべての構成]** を選択します。
 

@@ -1,5 +1,7 @@
 ---
 title: グラフィックス診断を使用した計算シェーダーのデバッグ
+description: 計算シェーダーのトラブルシューティングの例について説明します。 [グラフィックス イベント一覧]、[グラフィックス イベント呼び出し履歴]、[グラフィックス パイプライン ステージ] の使用方法を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19ae8472aaafbad1a04485ff2e3a2637f345bc00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 939b1906a32c48aa1ad32f2fb03372a74afc43ec
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66262863"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398715"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>チュートリアル: 計算シェーダーをデバッグするためのグラフィックス診断の使用
 このチュートリアルでは、Visual Studio のグラフィックス診断ツールを使用して、正しくない結果を生成する計算シェーダーを調査する方法を説明します。

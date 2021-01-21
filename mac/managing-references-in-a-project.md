@@ -3,15 +3,15 @@ title: プロジェクト内の参照の管理
 description: この記事では、Visual Studio for Mac でプロジェクト内の参照を管理する方法について説明します
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 05/06/2018
+ms.date: 11/09/2020
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 28ea53826a19a9ec97349060702cf13c68342ad2
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.openlocfilehash: 41d49fe6b23818f3cb9de8dec72462d4b2029bb6
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938998"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493518"
 ---
 # <a name="managing-references-in-a-project"></a>プロジェクト内の参照の管理
 
@@ -22,7 +22,7 @@ Visual Studio for Mac には、プロジェクトに参照を追加する方法�
 これらのボタンの役割は、次のとおりです。
 
 * 関連項目
-* NuGet (パッケージ フォルダーで追加)
+* NuGet パッケージ (パッケージ フォルダーで追加)
 
 さらに、Web 参照とネイティブ参照は任意のプロジェクトに追加することもできます。
 
@@ -40,7 +40,7 @@ Xamarin 内の各フレームワークには、十数個のアセンブリが付
 
 NuGet は、.NET 開発用の最も人気のあるパッケージ マネージャーです。 Visual Studio for Mac は NuGet をサポートしているので、パッケージを検索してプロジェクトに追加することができます。
 
-追加するには、Solution Pad で **[パッケージ]** フォルダーを右クリックし、[パッケージの追加] を選択します。
+追加するには、[ソリューション] ウィンドウで **[パッケージ]** フォルダーを右クリックし、[パッケージの追加] を選択します。
 
 NuGet パッケージの使用方法については、「[Including a NuGet package in your Project](nuget-walkthrough.md)」(プロジェクトに NuGet パッケージを含める) チュートリアルを参照してください。
 

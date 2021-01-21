@@ -1,5 +1,7 @@
 ---
-title: ワークフローデザイナー-[CorrelationInitializers の追加] ダイアログボックス
+title: '[CorrelationInitializers の追加] ダイアログボックス'
+description: ワークフローデザイナーの [関連付け初期化子の追加] ダイアログボックスを使用して、Send、Receive、および SendReply アクティビティの CorrelationInitializers プロパティを構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2a0b0f7c76b392d5d2d0135c3ab6e370f8678e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e5822d1dc79835dd6fdcc3a70c3392dbd3d1aab
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114303"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996358"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックス
 
@@ -33,15 +35,15 @@ ms.locfileid: "76114303"
 |UI 要素|説明|
 |-|-----------------|
 |**初期化子の追加**|[ **初期化の追加** ] ボックスをクリックして、追加の初期化子をコレクションに追加します。|
-|**[関連付けの種類]**|関連付け初期化子の種類を指定します。 次の 4 種類から選択できます。<br /><br /> 1. を指定するコールバック関連付け初期化子 <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> 。<br />2. を指定するコンテキスト関連付け初期化子 <xref:System.ServiceModel.Activities.CorrelationInitializer> 。<br />3. を指定するための要求と応答の関連付け初期化子 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 。<br />4. を指定するためのクエリ関連付け初期化子 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 。<br /><br /> **Correlationtype**を編集するには<br /><br /> 1. [ **初期化子の追加** ] DataGrid の特定の行にタブを追加します。<br />2. **correlationtypecombobox**にフォーカスを設定するには、 **ctrl** + **tab**キーを押します。<br />3. Alt + ↓キーを押して、 **コンボボックス** をポップアップ表示して編集します。|
+|**[関連付けの種類]**|関連付け初期化子の種類を指定します。 次の 4 種類から選択できます。<br /><br /> 1. を指定するコールバック関連付け初期化子 <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> 。<br />2. を指定するコンテキスト関連付け初期化子 <xref:System.ServiceModel.Activities.CorrelationInitializer> 。<br />3. を指定するための要求と応答の関連付け初期化子 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 。<br />4. を指定するためのクエリ関連付け初期化子 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 。<br /><br /> **Correlationtype** を編集するには<br /><br /> 1. [ **初期化子の追加** ] DataGrid の特定の行にタブを追加します。<br />2. **correlationtypecombobox** にフォーカスを設定するには、 **ctrl** + **tab** キーを押します。<br />3. Alt + ↓キーを押して、 **コンボボックス** をポップアップ表示して編集します。|
 |**XPath クエリ**|送受信メッセージから相関関係データを抽出するためのクエリを含む、キーと値のペア。 このリストは、<xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 型を使用している場合にのみ有効です。|
 
 ## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックスを開くには
 
  [ **関連付け初期化子の追加** ] ダイアログボックスは、 **Send**、 **Receive**、 **Receiveandsendreply**、および **sendandreceivereply** の各デザイナーによって使用されます。 これらにアクセスすることは、それぞれのケースで似ています。ここでは、この手順を説明するために、 **受信** デザイナーに関係するケースを使用します。
 
- **Receive**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所のワークフローデザイナー画面にドロップできます。 **Receive**アクティビティデザイナーを削除すると、receive という <xref:System.ServiceModel.Activities.Receive> 既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 **Receive**アクティビティデザイナーを選択し、[**関連付け初期化子の追加**] ダイアログボックスのプロパティグリッドで、 **Correlationinitializers**プロパティの (コレクション) テキストの横にある省略記号ボタンをクリックします。
+ **Receive** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所のワークフローデザイナー画面にドロップできます。 **Receive** アクティビティデザイナーを削除すると、receive という <xref:System.ServiceModel.Activities.Receive> 既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 **Receive** アクティビティデザイナーを選択し、[**関連付け初期化子の追加**] ダイアログボックスのプロパティグリッドで、 **Correlationinitializers** プロパティの (コレクション) テキストの横にある省略記号ボタンをクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [[関連付け初期化] ダイアログ ボックス](../workflow-designer/initialize-correlation-dialog-box.md)

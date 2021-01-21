@@ -1,5 +1,7 @@
 ---
 title: 複数の UI マップで大規模アプリケーションをテストする
+description: 複数の UI マップを使用して大規模なアプリケーションをテストする際に、コード化された UI テストを使用する方法を説明します。 この機能には、Visual Studio Enterprise が必要です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99e703d10d2bc6ed8fd573f4973e73f7ad40a937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93ae6aaa77a133a0d1805554a38b2714bff5b312
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286584"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330161"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>複数の UI マップで大規模アプリケーションをテストする
 
@@ -50,11 +52,11 @@ UI マップに対して生成されるコードには、テストで操作す�
 
 ### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>コード化された UI テスト プロジェクトに UI マップを追加するには
 
-1. **ソリューション エクスプローラー**で、コード化された UI テスト プロジェクト内にすべての UI マップを格納するフォルダーを作成します。それには、コード化された UI テスト プロジェクト ファイルを右クリックし、 **[追加]** をポイントして、 **[新しいフォルダー]** を選択します。 たとえば、`UIMaps` という名前を付けます。
+1. **ソリューション エクスプローラー** で、コード化された UI テスト プロジェクト内にすべての UI マップを格納するフォルダーを作成します。それには、コード化された UI テスト プロジェクト ファイルを右クリックし、 **[追加]** をポイントして、 **[新しいフォルダー]** を選択します。 たとえば、`UIMaps` という名前を付けます。
 
     コード化された UI テスト プロジェクトの下に、新しいフォルダーが表示されます。
 
-2. `UIMaps` フォルダーを右クリックし、 **[追加]** をポイントして、 **[新しい項目]** をクリックします。
+2. `UIMaps` フォルダーを右クリックし、**[追加]** をポイントして、**[新しい項目]** をクリックします。
 
     **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
@@ -67,11 +69,11 @@ UI マップに対して生成されるコードには、テストで操作す�
 
 4. **[追加]** をクリックします。
 
-    Visual Studio ウィンドウが最小化されて、 **[コード化された UI テスト ビルダー]** ダイアログ ボックスが表示されます。
+    Visual Studio ウィンドウが最小化されて、**[コード化された UI テスト ビルダー]** ダイアログ ボックスが表示されます。
 
-5. 最初のメソッドのアクションを記録して、 **[コードの生成]** を選択します。
+5. 最初のメソッドのアクションを記録して、**[コードの生成]** を選択します。
 
-6. 最初のコンポーネントまたはページのすべてのアクションおよびアサーションを記録して、メソッド別にグループ化します。この作業が完了したら、 **[コード化された UI テスト ビルダー]** ダイアログ ボックスを閉じます。
+6. 最初のコンポーネントまたはページのすべてのアクションおよびアサーションを記録して、メソッド別にグループ化します。この作業が完了したら、**[コード化された UI テスト ビルダー]** ダイアログ ボックスを閉じます。
 
 7. UI マップの作成を続けます。 アクションとアサーションを記録し、各コンポーネントのメソッド別にグループ化した後、コードを生成します。
 
@@ -139,7 +141,7 @@ namespace ContosoProject
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>

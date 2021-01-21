@@ -1,5 +1,7 @@
 ---
 title: VSIX 言語パックスキーマ2.0 リファレンス |Microsoft Docs
+description: VSIX 言語パックのスキーマには、VSIX パッケージのローカライズされたインストール情報が含まれています。 バージョン2.0 では、追加のローカライズ要素がサポートされています。
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,15 +10,15 @@ helpviewer_keywords:
 - localize package
 - localize extension
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
-ms.author: zorio
-author: zoeyr
+author: acangialosi
+ms.author: anthc
 manager: jillfra
-ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169340"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863822"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 言語パックスキーマ2.0 リファレンス
 

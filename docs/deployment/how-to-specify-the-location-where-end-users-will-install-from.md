@@ -1,5 +1,7 @@
 ---
-title: '方法: エンドユーザーがインストールする場所を指定する |Microsoft Docs'
+title: エンドユーザーのインストール元の場所を指定します
+description: 発行された ClickOnce アプリケーションがインストールのためにホストされる場所である "インストール URL" プロパティを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,26 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e28ad8353858b35fc1c4e83f0511a58b4162dc9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3518a2eef331414e5c73c0cebb36681ad2b72d61
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381939"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349621"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>方法: エンド ユーザーがインストールを開始する場所を指定する
+
 アプリケーションを発行するときに [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、ユーザーがアプリケーションをダウンロードしてインストールする場所は、必ずしもアプリケーションを最初に発行する場所とは限りません。 たとえば、一部の組織では、開発者がアプリケーションをステージングサーバーに発行した後、管理者がアプリケーションを Web サーバーに移動する場合があります。
 
 この場合、プロパティを使用して、 `Installation URL` ユーザーがアプリケーションをダウンロードする Web サーバーを指定できます。 これは、アプリケーションマニフェストが更新プログラムを検索する場所を認識できるようにするために必要です。
 
-プロパティは、 `Installation URL` **プロジェクトデザイナー**の [**発行**] ページで設定できます。
+プロパティは、 `Installation URL` **プロジェクトデザイナー** の [ **発行** ] ページで設定できます。
 
 > [!NOTE]
-> プロパティは、 `Installation URL` **publishwizard**を使用して設定することもできます。 詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
+> プロパティは、 `Installation URL` **publishwizard** を使用して設定することもできます。 詳細については、「 [方法: 発行ウィザードを使用して ClickOnce アプリケーションを発行](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)する」を参照してください。
 
 ### <a name="to-specify-an-installation-url"></a>インストール URL を指定するには
 
-1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
 2. **[公開]** タブをクリックします。
 

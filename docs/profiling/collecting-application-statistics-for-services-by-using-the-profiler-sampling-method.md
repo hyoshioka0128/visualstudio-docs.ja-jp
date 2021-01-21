@@ -1,5 +1,7 @@
 ---
-title: プロファイラー サンプリング メソッドを使ってアプリケーションの統計情報を収集する
+title: Windows サービスの統計情報収集 - プロファイラー サンプリング メソッド
+description: コマンド ラインからプロファイリング サンプリング メソッドを使用し、Windows サービスのパフォーマンスの統計情報を収集する手順とオプションについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae175451d5cb99268f3cd89a5f8ec5142744af
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4c686de4128d655b5b8146925529e6a280bb754
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331904"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148339"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>プロファイラー サンプリング メソッドを使用したサービスのアプリケーション統計情報の収集
 このセクションでは、コマンド ラインからサンプリング メソッドを使用して、Windows サービスのパフォーマンスの統計情報を収集する手順とオプションについて説明します。

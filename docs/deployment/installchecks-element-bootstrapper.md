@@ -1,5 +1,7 @@
 ---
 title: '&lt;InstallChecks &gt; 要素 (ブートストラップ) |Microsoft Docs'
+description: InstallChecks 要素は、アプリケーションのすべての前提条件がインストールされていることを確認するために、ローカルコンピューター上でさまざまなテストを開始することをサポートしています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7ba4da072a586bdc09993b77200a769be3940ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf02fda50678d9de4eb01dc28b4825844e33063e
+ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536306"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98069501"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; 要素 (ブートストラップ)
 要素は、 `InstallChecks` ローカルコンピューターに対してさまざまなテストを開始して、アプリケーションの適切なすべての前提条件がインストールされていることを確認することをサポートしています。
@@ -78,8 +80,8 @@ ms.locfileid: "85536306"
 |`Name`|必須。 確認するアセンブリの完全修飾名。|
 |`PublicKeyToken`|必須。 この厳密な名前を持つアセンブリに関連付けられている公開キーの省略形。 GAC に格納されているすべてのアセンブリは、名前、バージョン、および公開キーを持っている必要があります。|
 |`Version`|必須。 アセンブリのバージョン。<br /><br /> バージョン番号の形式は... \<*major version*> \<*minor version*> \<*build version*> \<*revision version*> です。|
-|`Language`|省略可能。 ローカライズされたアセンブリの言語。 既定値は `neutral`です。|
-|`ProcessorArchitecture`|省略可能。 このインストールの対象となるコンピュータープロセッサ。 既定値は `msil`です。|
+|`Language`|省略可能。 ローカライズされたアセンブリの言語。 既定値は `neutral` です。|
+|`ProcessorArchitecture`|省略可能。 このインストールの対象となるコンピュータープロセッサ。 既定値は `msil` です。|
 
 ## <a name="externalcheck"></a>ExternalCheck
  この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `ExternalCheck` 指定された外部プログラムを別のプロセスで実行し、によって示されるプロパティにその終了コードを格納し `Property` ます。 `ExternalCheck` は、複雑な依存関係のチェックを実装する場合や、コンポーネントの存在を確認する唯一の方法が、インスタンスをインスタンス化する場合に便利です。
@@ -103,7 +105,7 @@ ms.locfileid: "85536306"
 | `FileName` | 必須。 検索するファイルの名前。 |
 | `SearchPath` | 必須。 ファイルを検索するディスクまたはフォルダー。 が割り当てられている場合、これは相対パスである必要があります。 `SpecialFolder` それ以外の場合は、絶対パスである必要があります。 |
 | `SpecialFolder` | 省略可能。 Windows またはのいずれかに特別な意味を持つフォルダー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 既定では、 `SearchPath` 絶対パスとして解釈されます。 有効な値は次のとおりです。<br /><br /> `AppDataFolder`. このアプリケーションのアプリケーションデータフォルダー [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。現在のユーザーに固有です。<br /><br /> `CommonAppDataFolder`. すべてのユーザーが使用するアプリケーションデータフォルダー。<br /><br /> `CommonFilesFolder`. 現在のユーザーの共通ファイルフォルダー。<br /><br /> `LocalDataAppFolder`. 非ローミングアプリケーションのデータフォルダー。<br /><br /> `ProgramFilesFolder`. 32ビットアプリケーションの標準の Program Files フォルダー。<br /><br /> `StartUpFolder`. システムの起動時に起動されるすべてのアプリケーションを含むフォルダー。<br /><br /> `SystemFolder`. 32ビットシステム Dll を格納しているフォルダー。<br /><br /> `WindowsFolder`. Windows システムのインストールが含まれているフォルダー。<br /><br /> `WindowsVolume`. Windows システムのインストールが含まれているドライブまたはパーティション。 |
-| `SearchDepth` | 省略可能。 名前付きファイルのサブフォルダーを検索する深さ。 検索は深さ優先です。 既定値は0です。これにより、と SearchPath によって指定された最上位フォルダーに検索が制限され `SpecialFolder` ます。 **SearchPath** |
+| `SearchDepth` | 省略可能。 名前付きファイルのサブフォルダーを検索する深さ。 検索は深さ優先です。 既定値は0です。これにより、と SearchPath によって指定された最上位フォルダーに検索が制限され `SpecialFolder` ます。  |
 
 ## <a name="msiproductcheck"></a>MsiProductCheck
  この要素は、の省略可能な子要素です `InstallChecks` 。 ブートストラップは、の各インスタンスについて、 `MsiProductCheck` 指定した Microsoft Windows インストーラーのインストールが完了するまで実行されているかどうかを確認します。 プロパティ値は、インストールされている製品の状態に応じて設定されます。 正の値は、製品がインストールされていることを示します。0または-1 は、インストールされていないことを示します。 (詳細については、Windows インストーラー SDK 関数 MsiQueryFeatureState を参照してください)。. コンピューターに Windows インストーラーがインストールされていない場合、 `Property` は設定されません。
@@ -175,10 +177,20 @@ ms.locfileid: "85536306"
  たとえば、Windows 95 を実行しているコンピューターでのインストールをブロックするには、次のようなコードを使用します。
 
 ```xml
-<!-- Block install on Windows 95 -->
+    <!-- Block install on Windows 95 -->
     <FailIf Property="Version9X" Compare="VersionLessThan" Value="4.10" String="InvalidPlatform"/>
 ```
 
+ FailIf または BypassIf 条件が満たされている場合に、インストールチェックの実行をスキップするには、BeforeInstallChecks チェック属性を使用します。  次に例を示します。
+
+```xml
+    <!-- Block install and do not evaluate install checks if user does not have admin privileges -->
+    <FailIf Property="AdminUser" Compare="ValueEqualTo" Value="false" String="AdminRequired" BeforeInstallChecks="true"/>
+```
+
+>[!NOTE]
+>属性は、 `BeforeInstallChecks` Visual Studio 2019 Update 9 リリース以降でサポートされています。
+
 ## <a name="see-also"></a>関連項目
-- [\<Commands> element](../deployment/commands-element-bootstrapper.md)
+- [\<Commands> 要素](../deployment/commands-element-bootstrapper.md)
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

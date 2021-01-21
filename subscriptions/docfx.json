@@ -21,7 +21,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -34,8 +35,9 @@
     "globalMetadata": {
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/visualstudio-docs.ja-jp",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/",
-      "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "feedback_product_url": "https://developercommunity2.visualstudio.com/search?space=8",
+      "breadcrumb_path": "/visualstudio/subscriptions/_breadcrumb/toc.json",
+      "bilingual_type": "hover over",
       "extendBreadcrumb": true,
       "manager": "lank",
       "ms.topic": "conceptual",

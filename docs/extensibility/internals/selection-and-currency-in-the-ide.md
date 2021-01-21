@@ -1,5 +1,7 @@
 ---
 title: IDE での選択と通貨 |Microsoft Docs
+description: Vspackage を使用して通貨追跡を行う方法について説明します。 Visual Studio IDE は、選択コンテキストを使用して、現在選択されているオブジェクトに関する情報を保持します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f580b7c8e1651dcbcd053476ae756399a0ac3482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2d745619be8bff77503bc14a1d7a87d84cc7864
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705580"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875597"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE での選択と通貨
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、選択*コンテキスト*を使用して、ユーザーの現在選択されているオブジェクトに関する情報を保持します。 選択コンテキストを使用すると、Vspackage は次の2つの方法で通貨追跡に参加できます。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、選択 *コンテキスト* を使用して、ユーザーの現在選択されているオブジェクトに関する情報を保持します。 選択コンテキストを使用すると、Vspackage は次の2つの方法で通貨追跡に参加できます。
 
 - Vspackage に関する通貨情報を IDE に伝達する。
 

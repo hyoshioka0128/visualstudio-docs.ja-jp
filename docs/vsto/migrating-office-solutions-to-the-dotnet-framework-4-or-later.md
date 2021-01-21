@@ -1,5 +1,8 @@
 ---
 title: Office ソリューションを .NET Framework 4 以降に移行する
+description: Office ソリューションを .NET Framework 4 以降に移行する方法について説明します。これにより、プロジェクトは引き続き機能します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b9531f0495bd0dc0a9f095ff71fdfd84fc8d1380
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b7780b6fccef86dfe4a671c0c468e5899adc36c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189780"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528461"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Office ソリューションを .NET Framework 4 以降に移行する
   Office プロジェクトのターゲットフレームワークを以前のバージョンの .NET Framework から以降に変更する場合は、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 開発およびエンドユーザーのコンピューターで引き続きソリューションを実行するために、いくつかの追加の手順が必要になることがあります。 詳細については、「 [.NET Framework 4 または .NET Framework 4.5 に移行する Office プロジェクトの実行に必要な変更](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)」を参照してください。
@@ -36,7 +39,7 @@ ms.locfileid: "73189780"
 
   以降を対象とする Office プロジェクトの一部の機能のプログラミングモデルが異なる理由の詳細につい [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ては、「 [.NET Framework 4 を対象とする office プロジェクトのデザインの変更」または「.NET Framework 4.5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md) と [Visual Studio Tools for Office ランタイムの概要](../vsto/visual-studio-tools-for-office-runtime-overview.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションの設計と作成](../vsto/designing-and-creating-office-solutions.md)
 - [方法: .NET Framework のバージョンをターゲットにする](../ide/visual-studio-multi-targeting-overview.md)
 - [Office ソリューションで発生したエラーのトラブルシューティング](../vsto/troubleshooting-errors-in-office-solutions.md)

@@ -1,6 +1,6 @@
 ---
 title: ライブ ASP.NET Azure Kubernetes サービスをデバッグする
-description: スナップショット デバッガーを使用してスナップポイントを設定し、スナップショットを表示する方法について説明します。
+description: ライブ ASP.NET Azure Kubernetes Services をデバッグするとき、Visual Studio のスナップショット デバッガーを使用し、スナップポイントを設定し、スナップショットを作成する方法について説明します。
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: how-to
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: e0f062108f19b38c6bf6514eda78098f493b3f78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350655"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846976"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>スナップショット デバッガーを使用してライブ ASP.NET Azure Kubernetes サービスをデバッグする
 
@@ -35,7 +35,7 @@ ms.locfileid: "85350655"
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
-* Azure Kubernetes サービス用のスナップショット デバッガーは、**Azure 開発ワークロード**に対して Visual Studio 2019 Enterprise 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
+* Azure Kubernetes サービス用のスナップショット デバッガーは、**Azure 開発ワークロード** に対して Visual Studio 2019 Enterprise 以降でのみ使用できます。 ( **[個別のコンポーネント]** タブの **[デバッグとテスト]**  >  **[スナップショット デバッガー]** にあります)。
 
     まだ [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/) がインストールされていない場合はインストールしてください。
 
@@ -52,7 +52,7 @@ ms.locfileid: "85350655"
 1. デバッグのスナップショットを取得するプロジェクトを開きます。
 
     > [!IMPORTANT]
-    > デバッグのスナップショットを取得するには、Azure Kubernetes サービスに公開されているものと*同じバージョンのソース コード*を開く必要があります。
+    > デバッグのスナップショットを取得するには、Azure Kubernetes サービスに公開されているものと *同じバージョンのソース コード* を開く必要があります。
 
 1. **[デバッグ] > [スナップショット デバッガーのアタッチ]** の順に選択します。Web アプリがデプロイされる AKS リソースと Azure ストレージ アカウントを選択し、 **[アタッチ]** をクリックします。 スナップショット デバッガーは [Azure App Service](debug-live-azure-applications.md) と [Azure Virtual Machines (VM) および Virtual Machine Scale Sets](debug-live-azure-virtual-machines.md) もサポートしています。
 

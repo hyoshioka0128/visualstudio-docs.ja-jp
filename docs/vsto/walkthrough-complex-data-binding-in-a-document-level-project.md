@@ -1,5 +1,8 @@
 ---
 title: 'チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング'
+description: Microsoft Excel ワークシートの複数のセルを Northwind SQL Server データベースのフィールドにバインドする方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692344"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527121"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでの複合データバインディングの基本について説明します。 Microsoft Office Excel ワークシートの複数のセルを、Northwind SQL Server データベースのフィールドにバインドできます。
@@ -57,16 +60,16 @@ ms.locfileid: "67692344"
 
      詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     新しい Excel ブックがデザイナーで開き、 **[My Complex Data Binding** ] プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     新しい Excel ブックがデザイナーで開き、 **[My Complex Data Binding** ] プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="create-the-data-source"></a>データソースを作成する
  **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
 
-1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [ **View**  >  **他の Windows**  >  **データソース**の表示] をクリックして表示します。
+1. [**データソース**] ウィンドウが表示されていない場合は、メニューバーの [   >  **他の Windows**  >  **データソース** の表示] をクリックして表示します。
 
-2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード**を開始します。
+2. **[新しいデータ ソースの追加]** をクリックして **データ ソース構成ウィザード** を開始します。
 
 3. [ **データベース** ] を選択し、[ **次へ**] をクリックします。
 
@@ -78,20 +81,20 @@ ms.locfileid: "67692344"
 
 7. [**データベースオブジェクト**] ウィンドウで、[**テーブル**] ノードを展開します。
 
-8. **Employees**テーブルの横にあるチェックボックスをオンにします。
+8. **Employees** テーブルの横にあるチェックボックスをオンにします。
 
 9. **[完了]** をクリックします。
 
-   [**データソース**] ウィンドウに [ **Employees** ] テーブルが追加されます。 また、 **ソリューションエクスプローラー**に表示される、型指定されたデータセットをプロジェクトに追加します。
+   [**データソース**] ウィンドウに [ **Employees** ] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
 ## <a name="add-controls-to-the-worksheet"></a>ワークシートにコントロールを追加する
  ブックを開くと、ワークシートに **Employees** テーブルが表示されます。 ユーザーは、データに変更を加えた後、ボタンをクリックすることによって、変更内容をデータベースに保存することができます。
 
- ワークシートをテーブルに自動的にバインドするには、 <xref:Microsoft.Office.Tools.Excel.ListObject> [ **データソース** ] ウィンドウからワークシートにコントロールを追加します。 変更を保存するためのオプションをユーザーに付与するには、 <xref:System.Windows.Forms.Button> **ツールボックス**からコントロールを追加します。
+ ワークシートをテーブルに自動的にバインドするには、 <xref:Microsoft.Office.Tools.Excel.ListObject> [ **データソース** ] ウィンドウからワークシートにコントロールを追加します。 変更を保存するためのオプションをユーザーに付与するには、 <xref:System.Windows.Forms.Button> **ツールボックス** からコントロールを追加します。
 
 #### <a name="to-add-a-list-object"></a>リストオブジェクトを追加するには
 
-1. **Sheet1**が表示された状態で、Visual Studio デザイナーで **[My Complex Data Binding.xlsx** ] ブックが開いていることを確認します。
+1. **Sheet1** が表示された状態で、Visual Studio デザイナーで **[My Complex Data Binding.xlsx** ] ブックが開いていることを確認します。
 
 2. [ **データソース** ] ウィンドウを開き、[ **Employees** ] ノードを選択します。
 
@@ -99,13 +102,13 @@ ms.locfileid: "67692344"
 
 4. ドロップダウンリストから [ **ListObject** ] を選択します。
 
-5. **Employees**テーブルをセル**A6**にドラッグします。
+5. **Employees** テーブルをセル **A6** にドラッグします。
 
-     <xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール `EmployeesListObject` がセル**A6**に作成されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前 `EmployeesBindingSource` のテーブルアダプターと <xref:System.Data.DataSet> インスタンスがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
+     <xref:Microsoft.Office.Tools.Excel.ListObject>という名前のコントロール `EmployeesListObject` がセル **A6** に作成されます。 同時に、と <xref:System.Windows.Forms.BindingSource> いう名前 `EmployeesBindingSource` のテーブルアダプターと <xref:System.Data.DataSet> インスタンスがプロジェクトに追加されます。 コントロールは、にバインドされ <xref:System.Windows.Forms.BindingSource> 、さらにインスタンスにバインドされ <xref:System.Data.DataSet> ます。
 
 ### <a name="to-add-a-button"></a>ボタンを追加するには
 
-1. **ツールボックス**の [**コモンコントロール**] タブから、 <xref:System.Windows.Forms.Button> ワークシートのセル**A4**にコントロールを追加します。
+1. **ツールボックス** の [**コモンコントロール**] タブから、 <xref:System.Windows.Forms.Button> ワークシートのセル **A4** にコントロールを追加します。
 
    次の手順では、ワークシートが開いたときにボタンにテキストを追加します。
 
@@ -114,7 +117,7 @@ ms.locfileid: "67692344"
 
 ### <a name="to-initialize-the-control"></a>コントロールを初期化するには
 
-1. **ソリューションエクスプローラー**で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. 次のコードをメソッドに追加して `Sheet1_Startup` 、b のテキストを設定し `utton` ます。
 
@@ -142,21 +145,21 @@ ms.locfileid: "67692344"
 
 ### <a name="to-test-the-data-binding"></a>データバインディングをテストするには
 
-- **F5**キーを押します。
+- **F5** キーを押します。
 
      ブックが開いたときに、リストオブジェクトに **Employees** テーブルのデータが格納されていることを確認します。
 
 ### <a name="to-modify-data"></a>データを変更するには
 
-1. 「**西脇**」という名前を含むセル**B7**をクリックします。
+1. 「**西脇**」という名前を含むセル **B7** をクリックします。
 
-2. 「 **Anderson**」という名前 **を入力し、enter キーを**押します。
+2. 「 **Anderson**」という名前 **を入力し、enter キーを** 押します。
 
 ### <a name="to-modify-a-column-header"></a>列ヘッダーを変更するには
 
-1. 列ヘッダー **LastName**を含むセルをクリックします。
+1. 列ヘッダー **LastName** を含むセルをクリックします。
 
-2. 2つの単語の間にスペースを含め、**姓**を入力し **、enter キーを押します。**
+2. 2つの単語の間にスペースを含め、**姓** を入力し **、enter キーを押します。**
 
 ### <a name="to-save-data"></a>データを保存するには
 
@@ -164,17 +167,17 @@ ms.locfileid: "67692344"
 
 2. Excel を終了します。 行った変更を保存するように求められたら、[ **いいえ** ] をクリックします。
 
-3. **F5**キーを押して、プロジェクトを再度実行します。
+3. **F5** キーを押して、プロジェクトを再度実行します。
 
      List オブジェクトには、 **Employees** テーブルのデータが格納されます。
 
-4. セル **B7** の名前は引き続き **Anderson**であることに注意してください。これは、これまでに加えたデータ変更であり、データベースに保存されています。 列ヘッダーがデータベースにバインドされておらず、ワークシートに加えた変更が保存されていないため、列ヘッダー **LastName** は空白を使用せずに元のフォームに戻されます。
+4. セル **B7** の名前は引き続き **Anderson** であることに注意してください。これは、これまでに加えたデータ変更であり、データベースに保存されています。 列ヘッダーがデータベースにバインドされておらず、ワークシートに加えた変更が保存されていないため、列ヘッダー **LastName** は空白を使用せずに元のフォームに戻されます。
 
 ### <a name="to-add-new-rows"></a>新しい行を追加するには
 
 1. リストオブジェクト内のセルを選択します。
 
-    新しい行が一覧の一番下に表示され、 **\*** 新しい行の最初のセルにアスタリスク () が付きます。
+    一覧の一番下に新しい行が表示され、 *\** 新しい行の最初のセルにアスタリスク (* _) が付きます。
 
 2. 空の行に次の情報を追加します。
 
@@ -184,7 +187,7 @@ ms.locfileid: "67692344"
 
 ### <a name="to-delete-rows"></a>行を削除するには
 
-- ワークシートの左端にある 16 (行 16) を右クリックし、[ **削除**] をクリックします。
+- ワークシートの左端にある 16 (行 16) を右クリックし、[_ * 削除] * * をクリックします。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>リスト内の行を並べ替えるには
 
@@ -208,7 +211,7 @@ ms.locfileid: "67692344"
 
      一覧には、 **Sales 担当者** が [ **タイトル** ] 列に表示されている行のみが表示されます。
 
-4. **Title**列ヘッダーの矢印ボタンをもう一度クリックします。
+4. **Title** 列ヘッダーの矢印ボタンをもう一度クリックします。
 
 5. [ **(すべて)**] をクリックします。
 

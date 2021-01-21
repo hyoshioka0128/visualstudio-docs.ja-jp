@@ -1,5 +1,7 @@
 ---
 title: 起動後のスタートアップイベントの送信 |Microsoft Docs
+description: デバッグエンジンがプログラムにアタッチされた後にデバッグエンジンからデバッグセッションに送信される一連のスタートアップイベントについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c71db002420a2b822bffd34f2ae05e712f6a4bb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713010"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847885"
 ---
 # <a name="send-startup-events-after-a-launch"></a>起動後にスタートアップイベントを送信する
 デバッグエンジン (DE) がプログラムにアタッチされると、一連のスタートアップイベントがデバッグセッションに返されます。

@@ -1,5 +1,7 @@
 ---
-title: 方法 - デバッガー設定を指定する | Microsoft Docs
+title: デバッガー設定を指定する | Microsoft Docs
+description: 変数の表示方法、表示する警告、ブレークポイントの設定方法など、Visual Studio でのデバッガー動作のさまざまな設定を指定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a5034fe887ba221106055a928e67e11076167286
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349108"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150770"
 ---
 # <a name="how-to-specify-debugger-settings"></a>方法: デバッガー設定を指定する
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、変数の表示方法、特定の警告を表示するかどうか、ブレークポイントの設定方法、実行中のプログラムを中断した場合の影響など、デバッガーの動作のさまざまな設定を指定できます。 デバッガーの設定は **[オプション]** ダイアログ ボックスで指定します。
@@ -43,6 +45,6 @@ ms.locfileid: "85349108"
 
 ## <a name="see-also"></a>関連項目
 - [[全般] ([オプション] ダイアログ ボックス - [デバッグ])](../debugger/general-debugging-options-dialog-box.md)
-- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [[エディット コンティニュ] ([オプション] ダイアログ ボックス - [デバッグ])](./edit-and-continue.md)
 - [デバッガーの設定と準備](../debugger/debugger-settings-and-preparation.md)
 - [ビルドのコマンドとプロパティの共通マクロ](/cpp/build/reference/common-macros-for-build-commands-and-properties)

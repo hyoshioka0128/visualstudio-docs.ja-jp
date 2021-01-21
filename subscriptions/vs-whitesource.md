@@ -1,18 +1,18 @@
 ---
-title: WhiteSource Bolt 特典 | Microsoft Docs
+title: Visual Studio サブスクリプションの WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 04/20/2020
+ms.date: 12/02/2020
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: 3bdd71615d0dff19cd1d05dfca91041ae531a6f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906007"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537683"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -24,11 +24,11 @@ ms.locfileid: "85906007"
 
 2. [ツール] セクションで、 WhiteSource Bolt のタイルを見つけて、特典タイルの下部にある **[コードを取得]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 特典タイル](_img/vs-whitesource/vs-whitesource-tile.png)
+   > ![WhiteSource 特典タイル](_img/vs-whitesource/vs-whitesource-tile.png "開始するには、WhiteSource Bolt タイルの [コードの取得] をクリックします。")
 
 3. アクティブ化コードを表示する通知を受け取ります。  **コードをクリップボードにコピーし**、 **[アクティブ化]** をクリックします。
    > [!div class="mx-imgBorder"]
-   > ![WhiteSource 特典コード](_img/vs-whitesource/vs-whitesource-code.png)
+   > ![WhiteSource 特典コード](_img/vs-whitesource/vs-whitesource-code.png "コードをクリップボードにコピーし、[アクティブ化] をクリックします。")
 
 4. **[アカウントをアクティブにする]** ページで、手順 1 の **[インストール]** リンクをクリックします。
 5. Visual Studio Marketplace から **[無料で入手]** をクリックします。
@@ -43,9 +43,9 @@ ms.locfileid: "85906007"
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  はい       |
-| Visual Studio Enterprise with GitHub Enterprise | VL | 6 か月       |  はい       |
+| Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 6 か月       |  はい       |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                           |N/A         |
-| Visual Studio Professional with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |N/A         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |N/A         |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
@@ -62,10 +62,10 @@ ms.locfileid: "85906007"
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio サブスクリプションを最大限に活用できるようにこれらの優れた特典をアクティブ化してください。

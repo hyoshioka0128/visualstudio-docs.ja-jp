@@ -1,20 +1,19 @@
 ---
 title: 複数の構成を使用したクラウドサービスの構成
 description: ServiceDefinition.csdef、ServiceConfiguration.Local.cscfg および ServiceConfiguration.Cloud.cscfg ファイルを変更して、Azure クラウド サービス プロジェクトを構成する方法について説明します。
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: a4fb79ed-384f-4183-9f74-5cac257206b9
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 76dec6a238090fac6a5094221e1a1c2bb953789d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 58d7a967c3a8cf46330c169db1b73bc048a2110c
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036549"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902364"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Visual Studio での複数のサービス構成を使用した Azure プロジェクトの構成
 
@@ -35,7 +34,7 @@ Visual Studio の Azure クラウド サービス プロジェクトには、`Se
 
 変更の影響を受ける `ServiceConfiguration.*.cscfg` ファイルを選択します。 既定では、ローカルとクラウドという種類があり、**[管理...]** コマンドを使用して構成ファイルのコピー、名前の変更、および削除ができます。 これらのファイルがクラウド サービス プロジェクトに追加され、**[ソリューション エクスプローラー]** に表示されます。 ただし、構成の名前変更や削除は、このコントロールからのみ実行できます。
 
-### <a name="instances"></a>Instances
+### <a name="instances"></a>インスタンス
 
 **[インスタンス数]** プロパティに、このロールに対してサービスが実行するインスタンスの数を設定します。
 
@@ -68,7 +67,7 @@ HTTPS エンドポイントを既に追加している場合は、既定で [HTT
 
 接続文字列を作成するには、**[設定の追加]** を選択し、**[型]** を "接続文字列" に設定します。
 
-新規または既存の接続文字列については、**[値]** フィールドの右側にある **[...]*** を選択して **[ストレージ接続文字列の作成]** ダイアログを開きます。
+新規または既存の接続文字列の場合は、[.. **.** ] を選択します。_ *Value** フィールドの右側にある _ を選択すると、[ **ストレージ接続文字列の作成** ] ダイアログボックスが開きます。
 
 1. **[接続方法]** で **[サブスクリプション]** オプションを選択して、サブスクリプションからストレージ アカウントを選択します。 そうすると Visual Studio が、`.publishsettings` ファイルからストレージ アカウントの資格情報を自動的に取得します。
 1. **[手動で入力された資格情報]** を選択すると、Azure Portal の情報を使用してアカウント名とキーを直接指定できます。 アカウント キーをコピーするには:

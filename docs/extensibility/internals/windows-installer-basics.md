@@ -1,5 +1,7 @@
 ---
 title: Windows インストーラーの基本 |Microsoft Docs
+description: VSPackage のインストールで使用する Windows インストーラーについて説明します。これには、VSPackage 機能を Windows インストーラーコンポーネントに整理することも含まれます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeea0b17a3c234bb7670642fb9ae0a442c9d60cd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703414"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487778"
 ---
 # <a name="windows-installer-basics"></a>Windows インストーラーの基本事項
 Windows インストーラーは、ユーザーのコンピューターにアプリケーションまたはソフトウェア製品をインストールしてアンインストールし、これらのタスクを Windows インストーラーコンポーネント (WICs またはコンポーネントとも呼ばれます) と呼ばれる単位で実行します。 GUID は、各 WIC を識別します。これは、インストールの基本単位であり、Windows インストーラーを使用したセットアップの参照カウントです。
@@ -55,13 +57,13 @@ Windows インストーラーは、ユーザーのコンピューターにアプ
 > [!NOTE]
 > Windows インストーラー規則の適用は、.msi ファイルの検証を実行する場合にのみ行われます。 ただし、これらのルールをベストプラクティスとして扱うのは cautioned です。 詳細については、「 [インストールデータベース](/windows/desktop/Msi/validating-an-installation-database) と [パッケージの検証](/windows/desktop/Msi/package-validation)の検証」を参照してください。
 
-#### <a name="installer-enforced-rules"></a>インストーラーで適用される規則
+#### <a name="installer-enforced-rules"></a>Installer-Enforced の規則
 
 - 特定のコンポーネント内のすべてのファイルを同じディレクトリにインストールする必要があります。 逆に、別のフォルダーにインストールされるファイルは、個別のコンポーネントに属している必要があります。
 
 - コンポーネントごとに1つのキーパスしか指定できません。 キーのパスは、単純に、コンポーネント全体を表すファイルまたはレジストリキーです。
 
-#### <a name="component-provider-responsibilities"></a>コンポーネントプロバイダーの責任
+#### <a name="component-provider-responsibilities"></a>Component-Provider の責任
 
 - 後続のバージョンで個別に出荷される可能性のある2つのリソースは、別々のコンポーネントに存在する必要があります。 リソースを同じコンポーネントにグループ化する必要があるのは、これらのリソースが個別に出荷されることがないことがわかっている場合のみです。 実際には、すべてのプライマリリソース (Dll など) は、常に個別の WICs に存在することをお勧めします。 詳細については、「 [インストーラーコンポーネントの定義](/windows/desktop/Msi/defining-installer-components)」を参照してください。
 

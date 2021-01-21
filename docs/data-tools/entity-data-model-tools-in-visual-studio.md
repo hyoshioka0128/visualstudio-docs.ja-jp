@@ -1,5 +1,7 @@
 ---
 title: Entity Framework のツール
+description: Visual Studio での Entity Framework Tools について説明します。 Entity Framework Tools は、Entity Framework (EF) アプリケーションの構築を支援するように設計されています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
@@ -8,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916734"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436642"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio での Entity Framework Tools
 
@@ -30,11 +32,11 @@ Entity Framework ツールは、Visual Studio インストーラーの **デー�
 
 これらは、Visual Studio の Entity Framework ツールを構成する特定のツールです。
 
-- [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] デザイナー** (**Entity Designer**) を使用して、エンティティ、アソシエーション、マッピング、および継承関係を視覚的に作成および変更できます。 **Entity Designer** [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] はまたは [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] オブジェクトレイヤーコードも生成します。
+- [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] デザイナー** ( **Entity Designer** ) を使用して、エンティティ、アソシエーション、マッピング、および継承関係を視覚的に作成および変更できます。 **Entity Designer** [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] はまたは [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] オブジェクトレイヤーコードも生成します。
 
-- ** [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] ウィザード**を使用して、既存のデータベースから概念モデルを生成し、データベース接続情報をアプリケーションに追加できます。
+- **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] ウィザード** を使用して、既存のデータベースから概念モデルを生成し、データベース接続情報をアプリケーションに追加できます。
 
-- **データベースの作成ウィザード**を使用すると、最初に概念モデルを作成し、そのモデルをサポートするデータベースを作成できます。
+- **データベースの作成ウィザード** を使用すると、最初に概念モデルを作成し、そのモデルをサポートするデータベースを作成できます。
 
 - 基になるデータベースに変更が加えられた場合は、 **モデルの更新ウィザード** を使用して、概念モデル、ストレージモデル、およびマッピングを更新できます。
 

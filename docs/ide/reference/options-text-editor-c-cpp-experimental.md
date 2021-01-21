@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[C/C++]、[実験用]'
+description: '[C/C++] セクションの [実験用] ページを使用して、IntelliSense に関連する実験的動作と参照データベースを変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77278704"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040304"
 ---
 # <a name="options-text-editor-cc-experimental"></a>[オプション]、[テキスト エディター]、[C/C++]、[実験用]
 
@@ -61,9 +63,9 @@ ms.locfileid: "77278704"
 
 - **オンライン ヘルプ** - エラー メッセージに関するオンライン ヘルプを検索します
 
-- その他
+- その他...
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [言語固有のエディター オプションの設定](../../ide/reference/setting-language-specific-editor-options.md)
 - [C++ でのリファクタリング (VC のブログ)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/

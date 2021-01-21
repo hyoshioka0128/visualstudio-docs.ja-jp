@@ -1,5 +1,7 @@
 ---
 title: MSBuild タスク | Microsoft Docs
+description: MSBuild でビルド プロセス中にタスクまたはアトミック ビルド操作を実行する実行可能コードのユニットを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b065ea8cdaea2e2b39aa78a666ea0348f7b254ae
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633136"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049057"
 ---
 # <a name="msbuild-tasks"></a>MSBuild タスク
 
-ビルド プラットフォームでは、ビルドの処理中に、いくつかのアクションを実行する権限が必要です。 MSBuild では、これらのアクションを実行するために "*タスク*" が使用されます。 タスクとは、分割不可能なビルド操作を実行するために MSBuild で使用される実行可能コードの単位です。
+ビルド プラットフォームでは、ビルドの処理中に、いくつかのアクションを実行する権限が必要です。 MSBuild では、これらのアクションを実行するために " *タスク* " が使用されます。 タスクとは、分割不可能なビルド操作を実行するために MSBuild で使用される実行可能コードの単位です。
 
 ## <a name="task-logic"></a>タスクのロジック
 

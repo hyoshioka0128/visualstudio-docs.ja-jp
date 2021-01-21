@@ -1,5 +1,7 @@
 ---
 title: -NoSplash (devenv.exe)
+description: devenv の NoSplash コマンド ライン スイッチを使用して、スプラッシュ スクリーンが表示されないようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 12/10/2018
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +14,12 @@ ms.author: v-dele
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86398663ea7b6c8209d4123ab3cb12651d4491e
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62950661"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96043999"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -39,7 +41,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   任意。 Visual Studio の既存インスタンスで開く 1 つ以上の追加ファイル。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 このスイッチを指定すると、スプラッシュ スクリーンが非表示になります。 このスイッチをオフのままにすると、スプラッシュ スクリーンが表示されます。 スプラッシュ スクリーンをさらに詳しく調べるには (たとえば、VSPackage 製品アイコンを確認する場合)、[/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md) スイッチを使用します。
 

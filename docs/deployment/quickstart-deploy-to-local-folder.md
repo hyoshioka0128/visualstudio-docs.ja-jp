@@ -1,5 +1,7 @@
 ---
 title: ローカル フォルダーに配置する
+description: Visual Studio からフォルダーに ASP.NET、ASP.NET Core、.NET Core、Python アプリを発行するために [発行] ツールを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
@@ -10,21 +12,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a96ea0fe4b4bbbebfc29cde7258273ea4f4b21e2
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285408"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437690"
 ---
-# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Visual Studio を使用してアプリをローカル フォルダーに配置する
+# <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Visual Studio を使用してアプリをフォルダーに配置する
 
-Visual Studio からローカル フォルダーに ASP.NET、ASP.NET Core、.NET Core、および Python アプリを発行するには、 **[発行]** ツールを使用します。 Node.js では、この手順はサポートされていますが、ユーザー インターフェイスが異なります。
+Visual Studio からフォルダーに ASP.NET、ASP.NET Core、.NET Core、および Python アプリを発行するには、 **[発行]** ツールを使用します。 Node.js では、この手順はサポートされていますが、ユーザー インターフェイスが異なります。
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
-
+::: moniker range=">=vs-2017"
 > [!NOTE]
-> ローカル フォルダーに Windows デスクトップ アプリケーションを発行する必要がある場合、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# または Visual Basic) を参照してください。 C++/CLR については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
+> フォルダーに Windows デスクトップ アプリケーションを発行する必要がある場合、[ClickOnce を使用したデスクトップ アプリの配置](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)に関するページ (C# または Visual Basic) を参照してください。 C++/CLR については、[ClickOnce を使用したネイティブ アプリの配置](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)に関するページを、C/C++ については、[セットアップ プロジェクトを使用したネイティブ アプリの配置](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)に関するページを参照してください。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> .NET Core 3.1、またはそれ以降の Windows デスクトップ アプリケーションをフォルダーに発行する必要がある場合、「[ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)」を参照してください。
+
+::: moniker-end
 
 ## <a name="deploy-to-a-local-folder"></a>ローカル フォルダーに配置する
 
@@ -32,11 +42,23 @@ Visual Studio からローカル フォルダーに ASP.NET、ASP.NET Core、.NE
 
     ![ソリューション エクスプローラーのプロジェクト コンテキスト メニューにある [発行] コマンド](../deployment/media/quickstart-publish.png "[発行] を選択する")
 
-1. **[発行]** ダイアログで、 **[フォルダー]** を選択します。
+1. 以前に発行プロファイルを構成してある場合、 **[発行]** ウィンドウが表示されます。 **[新規]** を選択します。
+
+1. **[発行]** ウィンドウで、 **[フォルダー]** を選択します。
 
     ![発行先としてフォルダーを選択する](../deployment/media/quickstart-publish-folder-new.png "フォルダーの選択")
 
-1. パスを入力するか、 **[参照]** を選択してフォルダーを指定します。
+::: moniker range=">=vs-2019"
+
+4. .NET Core 3.1 以降の Windows アプリケーションを配置するとき、場合によっては、 **[特定のターゲット]** ウィンドウで **[フォルダー]** を選択する必要があります。
+
+![特定のターゲットとしてフォルダーを選択する](../deployment/media/quickstart-publish-folder-targets.png "特定のターゲットの選択")
+
+5. ClickOnce を使用して .NET Core 3.1、またはそれ以降の Windows アプリケーションを発行する場合は、「[ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)」を参照してください。
+
+ ::: moniker-end
+
+4. パスを入力するか、 **[参照]** を選択してフォルダーを指定します。
 
     ![フォルダーのパスを指定する](../deployment/media/quickstart-publish-folder-path.png "フォルダーの選択")
 
@@ -46,7 +68,15 @@ Visual Studio からローカル フォルダーに ASP.NET、ASP.NET Core、.NE
 
 1. デプロイ設定を構成するには、発行プロファイルの概要の **[編集]** を選択し、 **[設定]** タブを選択します。
 
+   表示される設定は、アプリケーションの種類によって異なります。 次の図は、ASP.NET Core アプリの設定例を示しています。
+
     ![プロファイルの設定](../deployment/media/quickstart-profile-settings.png "プロファイルの設定")
+
+    .NET で設定を選択するための追加のヘルプを参照するには、次を参照してください。
+
+    - [フレームワーク依存と自己完結型の展開](/dotnet/core/deploying/)
+    - [ターゲット ランタイム識別子 (ポータブル RID など)](/dotnet/core/rid-catalog)
+    - [デバッグ構成とリリース構成](../ide/understanding-build-configurations.md)
 
 1. デバッグまたはリリースの構成を配置するかどうかなどのオプションを構成し、 **[保存]** を選択します。
 
@@ -56,6 +86,11 @@ Visual Studio からローカル フォルダーに ASP.NET、ASP.NET Core、.NE
 
 ## <a name="next-steps"></a>次の手順
 
-- [発行ツールを使用して .NET Core アプリケーションを配置する](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Microsoft ストアのデスクトップ アプリをパッケージ化する (デスクトップ ブリッジ)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Framework およびアプリケーションの配置](/dotnet/framework/deployment/)
+.NET アプリの場合:
+
+- [発行ツールを使用して .NET Core アプリケーションを配置する](/dotnet/core/deploying/deploy-with-vs)
+- [.NET Core アプリケーションの発光 (フレームワーク依存と自己完結型の展開)](/dotnet/core/deploying/)
+- [.NET Framework およびアプリケーションの配置](/dotnet/framework/deployment/)
+::: moniker range=">=vs-2019"
+- [ClickOnce を使用して .NET Windows アプリケーションを配置する](quickstart-deploy-using-clickonce-folder.md)。
+ ::: moniker-end

@@ -1,5 +1,7 @@
 ---
 title: コントロールのコード化された UI テストの有効化
+description: コード化された UI テスト フレームワークのサポートを実装して、コントロールをテストしやすくする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
@@ -7,35 +9,35 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d94c68a660201b0a8767b1405fcd4399cdf6d660
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76224ce191354e05c2220af23aabe010403b35cb
+ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288690"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97815764"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>コントロールのコード化された UI テストを有効化する
 
 コード化された UI テスト フレームワークのサポートを実装すると、コントロールがテストしやすくなります。 サポート レベルを徐々に上げることができます。 記録と再生およびプロパティの検証のサポートから始めます。 次に、そのサポートに基づき、コード化された UI テスト ビルダーを有効にし、コントロールのカスタム プロパティを認識します。 生成されたコードからそれらのプロパティにアクセスするためのカスタム クラスを提供します。 また、コード化された UI テスト ビルダーが、記録される操作の目的に近い方法で操作をキャプチャできるようにすることもできます。
 
-![CUIT&#95;Full](../test/media/cuit_full.png)
+!CreateAccessabilityInstance クラスから ChartControl のクラスが ChartControlExtensionPackage のクラスに拡張される方法を示す図。](../test/media/cuit_full.png)
 
-[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+[!INCLUDE[coded-ui-test-deprecation](../test/includes/coded-ui-test-deprecation.md)]
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>アクセシビリティの実装によって記録と再生およびプロパティの検証をサポートする
 
 コード化された UI テスト ビルダーは、記録時に出現したコントロールに関する情報をキャプチャし、そのセッションを再生するコードを生成します。 コントロールがアクセシビリティをサポートしていない場合、コード化された UI テスト ビルダーは画面座標を使用して操作 (マウス クリックなど) をキャプチャします。 テストの再生時、生成されたコードは同じ画面座標にアクションを表示します。 テストの再生時にコントロールが画面上の別の場所に表示される場合、生成されたコードは操作の実行に失敗します。 コントロールのアクセシビリティを実装しないとき、異なる画面構成や異なる環境でテストを再生したとき、あるいは UI レイアウトが変わったとき、テスト エラーが表示されることがあります。
 
-![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![コード化された UI テスト ビルダーの記録ウィンドウのスクリーンショット。 一時停止ボタンが強調表示され、ツール ヒントに "'ChartControl' クライアントをクリック" が表示されています。](../test/media/cuit_recordnosupport.png)
 
 アクセシビリティを実装している場合は、コード化された UI テスト ビルダーがそれを利用し、テストを記録するときにコントロールに関する情報をキャプチャします。 その後、テストを実行すると、コントロールがユーザー インターフェイスの別の場所にあっても、生成されたコードがコントロールに対してそれらのイベントを再生します。 テストの作成者は、コントロールの基本的なプロパティを使用してアサートを作成することもできます。
 
-![CUIT&#95;Record](../test/media/cuit_record.png)
+![コード化された UI テスト ビルダーの記録ウィンドウのスクリーンショット。 一時停止ボタンが強調表示され、ツール ヒントに "'A' ラベルをクリック" が表示されています。](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Windows フォーム コントロールの記録と再生、プロパティの検証、およびナビゲーションをサポートするには
 次のプロシージャに概要を示し、<xref:System.Windows.Forms.AccessibleObject> で詳しく説明しているように、コントロールのユーザー補助を実装します。
 
-![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![CreateAccessabilityInstance と ChartControl.CurveLegend クラスの関係を示す ChartControl のクラスの図。](../test/media/cuit_accessible.png)
 
 1. <xref:System.Windows.Forms.Control.ControlAccessibleObject> から派生するクラスを実装し、クラスのオブジェクトを返すように <xref:System.Windows.Forms.Control.AccessibilityObject%2A> プロパティをオーバーライドします。
 
@@ -75,11 +77,11 @@ ms.locfileid: "85288690"
 
 記録と再生およびプロパティの検証の基本的なサポートを実装したら、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> プラグインを実装して、コントロールのカスタム プロパティをコード化された UI テストから使用できるようにすることができます。 たとえば、次のプロシージャでは、コード化された UI テストがグラフ コントロールの CurveLegend 子コントロールの State プロパティにアクセスできるようにするプロパティ プロバイダーを作成します。
 
-![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![[コード化された UI テスト ビルダー] メイン ウィンドウのスクリーンショット。テキスト コントロールの状態プロパティが選択された [アサーションの追加] ウィンドウで部分的に覆われています。](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>カスタム プロパティの検証をサポートするには
 
-![CUIT&#95;Props](../test/media/cuit_props.png)
+![ChartControlExtensionPackage と ChartControlIPropertyProvider クラスが強調表示された、ChartControl と ChartControlExtension のクラスの図。](../test/media/cuit_props.png)
 
 1. 曲線の凡例のアクセス可能なオブジェクトの <xref:System.Windows.Forms.AccessibleObject.Description%2A> プロパティをオーバーライドし、説明文字列の豊富なプロパティ値を渡します。 複数の値はセミコロン (;) で区切ります。
 
@@ -134,7 +136,7 @@ ms.locfileid: "85288690"
 
 1. <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> の残りの抽象メソッドと抽象プロパティをオーバーライドします。
 
-1. バイナリをビルドし、 *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* にコピーします。
+1. バイナリをビルドし、*%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages* にコピーします。
 
 > [!NOTE]
 > この拡張パッケージは、"Text" 型であるすべてのコントロールに適用されます。 同じ種類の複数のコントロールをテストしている場合は、テストを記録するとき、配置する拡張パッケージを管理できるように別々にテストします。
@@ -147,7 +149,7 @@ ms.locfileid: "85288690"
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>特殊なクラスを追加してコントロールにアクセスするには
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
+![ChartControlExtensionPackage の CurveLegend クラスが強調表示された、ChartControl と ChartControlExtension のクラスの図。](../test/media/cuit_codegen.png)
 
 1. <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> から派生したクラスを実装し、コンストラクターの検索プロパティのコレクションにコントロールの型を追加します。
 
@@ -163,7 +165,7 @@ Visual Studio はテストを記録するとき、各マウス イベントと�
 
 ### <a name="to-support-intent-aware-actions"></a>目的に応じた操作をサポートするには
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png)
+![ChartControlExtensionPackage の ChartControlActionFilter クラスが強調表示された、ChartControl と ChartControlExtensionPackage クラスの図。](../test/media/cuit_actions.png)
 
 1. [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) から派生したアクション フィルター クラスを実装し、[ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29)、[Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110))、[Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110))、[FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110))、[Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110))、[Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)) の各プロパティをオーバーライドします。
 
@@ -196,7 +198,7 @@ Visual Studio はテストを記録するとき、各マウス イベントと�
 
 6. コード化された UI テスト ビルダーで、プロパティ プロバイダーを実行するためのアサートを作成し、操作フィルターを実行するための操作を記録します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - <xref:System.Windows.Forms.AccessibleObject>
 - [UI オートメーションを使用してコードをテストする](../test/use-ui-automation-to-test-your-code.md)

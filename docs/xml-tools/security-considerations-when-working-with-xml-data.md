@@ -1,5 +1,7 @@
 ---
 title: XML データを使用するときのセキュリティに関する考慮事項
+description: XML エディターまたは XSLT デバッガーで XML データを操作する場合のセキュリティに関する考慮事項について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e18d2c2e47c3cc1f7e1b3be0112e49e2710e45c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d9e98e18e3e01f53afa6b0a9ea3bdec94f2186f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815839"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351350"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>XML データを使用するときのセキュリティに関する考慮事項
 
@@ -23,7 +25,7 @@ ms.locfileid: "85815839"
 
 XML エディターは、Visual Studio のテキスト エディターに基づいています。 XML エディターは通常、<xref:System.Xml> クラスと <xref:System.Xml.Xsl> クラスに依存して XML プロセスを処理します。
 
-- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は*サンドボックス化*されています。つまり、コンピューターのコード アクセス セキュリティ ポリシーを使用して、XSLT スタイル シートが置かれている場所に基づいてアクセス許可制限が決定されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
+- XSLT 変換は、新しいアプリケーション ドメインで実行されます。 XSLT 変換は *サンドボックス化* されています。つまり、コンピューターのコード アクセス セキュリティ ポリシーを使用して、XSLT スタイル シートが置かれている場所に基づいてアクセス許可制限が決定されます。 たとえば、インターネット上にあるスタイル シートは最も制限されたアクセス許可を持ち、ユーザーのハード ディスクにコピーされているスタイル シートは "完全な信頼" で実行されます。
 
 - <xref:System.Xml.Xsl.XslCompiledTransform> クラスは、XSLT を Microsoft Intermediate Language (MSIL) にコンパイルし、実行時の処理速度を高めるために使用されます。
 

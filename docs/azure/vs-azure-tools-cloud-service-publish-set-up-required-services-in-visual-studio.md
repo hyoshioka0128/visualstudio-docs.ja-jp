@@ -3,18 +3,16 @@ title: クラウド サービスの発行またはデプロイの準備
 description: クラウド サービスとストレージ アカウント サービスを設定し、Azure アプリケーションを構成する手順を説明します。
 author: ghogen
 manager: jillfra
-ms.assetid: 92ee2f9e-ec49-4c7a-900d-620abe5e9d8a
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 5cd458cca0a0b387ce816f2e7f5dde8153e08410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280805"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902506"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio からのクラウド サービスの発行またはデプロイの準備
 
@@ -47,7 +45,7 @@ ms.locfileid: "85280805"
 
 ### <a name="create-a-storage-account-from-visual-studio"></a>Visual Studio からストレージ アカウントを作成する
 
-1. **ソリューション エクスプローラー**を開き、以前に作成したクラウド サービス プロジェクトで、ロール プロジェクト内の**接続済みサービス** ノードを検索し、右クリックして **[接続済みサービスの追加]** を選択します (Visual Studio 2015 では、**ストレージ** ノードを右クリックして **[ストレージ アカウントの作成]** を選択します)。
+1. **ソリューション エクスプローラー** を開き、以前に作成したクラウド サービス プロジェクトで、ロール プロジェクト内の **接続済みサービス** ノードを検索し、右クリックして **[接続済みサービスの追加]** を選択します (Visual Studio 2015 では、**ストレージ** ノードを右クリックして **[ストレージ アカウントの作成]** を選択します)。
 1. 表示された **[接続済みサービス]** 一覧で、**[Azure Storage を使用したクラウド ストレージ]** を選択します。
 1. 表示された Azure Storage ダイアログで、**[+ 新しいストレージ アカウントの作成]** を選択し、表示されたダイアログで、サブスクリプション、アカウント名、価格レベル、リソース グループ、および場所を指定します。
 1. 完了したら **[作成]** を選択します。 サブスクリプションで使用できるストレージ アカウントの一覧に、新しいストレージ アカウントが表示されます。
@@ -77,6 +75,6 @@ Azure Portal には、各 Azure Storage サービスのリソースにアクセ�
 
 セカンダリ アクセス キーは、プライマリ アクセス キーと同じようにストレージ アカウントにアクセスでき、プライマリ アクセス キーが侵害された場合の予備として生成されます。 また、定期的にアクセスのキーを再生成することをお勧めします。 プライマリ キーの再生成時にセカンダリ キーを使用するように接続文字列の設定を変更した後で、セカンダリ キーの再生成時に再生成したプライマリ キーを使用するように接続文字列の設定を変更できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 Visural Studio からの Azure へのアプリ発行の詳細については、「 [Azure Tools を使用したクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)」を参照してください。

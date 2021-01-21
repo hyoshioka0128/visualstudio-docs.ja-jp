@@ -1,5 +1,7 @@
 ---
 title: Word オブジェクトモデルの概要
+description: Word オブジェクトモデルは、word のプライマリ相互運用機能アセンブリで提供されるクラスとインターフェイスで構成されており、Word の名前空間で定義されています。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d8ca92fdebb3504331ec38937dd79786fdb8b42
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985392"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523488"
 ---
 # <a name="word-object-model-overview"></a>Word オブジェクトモデルの概要
   Visual Studio で Word ソリューションを開発するときは、Word オブジェクト モデルと対話します。 このオブジェクト モデルは、Word のプライマリ相互運用機能アセンブリで提供されるクラスとインターフェイスで構成されています。これらのクラスとインターフェイスは <xref:Microsoft.Office.Interop.Word> 名前空間に定義されています。
@@ -111,7 +113,7 @@ ms.locfileid: "72985392"
 
 - <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトは文書と共に保存されるため、コードの実行を停止したり文書を閉じたりしても、削除されません。
 
-- ブックマークは、 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> オブジェクトのプロパティを <xref:Microsoft.Office.Interop.Word.View> **false** または **true**に設定することによって、非表示にしたり表示したりできます。
+- ブックマークは、 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> オブジェクトのプロパティを <xref:Microsoft.Office.Interop.Word.View> **false** または **true** に設定することによって、非表示にしたり表示したりできます。
 
   Visual Studio は <xref:Microsoft.Office.Interop.Word.Bookmark> ホスト コントロールを提供することで <xref:Microsoft.Office.Tools.Word.Bookmark> オブジェクトを拡張します。 <xref:Microsoft.Office.Tools.Word.Bookmark> ホスト コントロールは、ネイティブな <xref:Microsoft.Office.Interop.Word.Bookmark>と同様に動作しますが、付加的なイベントやデータ バインディング機能を備えています。 Windows フォームのテキスト ボックス コントロールにデータをバインドするのと同じ方法で、文書の Bookmark コントロールにデータをバインドできます。 詳細については、「 [Bookmark コントロール](../vsto/bookmark-control.md)」を参照してください。
 

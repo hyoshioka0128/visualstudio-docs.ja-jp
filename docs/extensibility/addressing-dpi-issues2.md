@@ -1,5 +1,7 @@
 ---
 title: 対応する DPI Issues2 |Microsoft Docs
+description: コンテンツのスケールアップ、レイアウトの問題、DPI スケーリング Api の使用など、高解像度の画面のプログラミングに関連する問題について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80f16c5b17a41d1f95b9bcb70e90eb8de46ad69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 455f144a95a41ae482c1f240e1d2f87b888763a5
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740106"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95598459"
 ---
 # <a name="address-dpi-issues"></a>アドレス DPI の問題
 "高解像度" の画面で出荷されるデバイスの数が増えています。 これらの画面は、通常、200ピクセル/インチ (ppi) を超えています。 これらのコンピューターでアプリケーションを使用する場合、コンテンツを表示するための要件を満たすために、デバイスの通常の表示距離でコンテンツを拡大する必要があります。 2014のうち、高密度ディスプレイのプライマリターゲットは、モバイルコンピューティングデバイス (タブレット、clamshell ラップトップ、および携帯電話) です。
@@ -28,13 +30,13 @@ Windows 8.1 以降では、これらのマシンがディスプレイと環境�
 
 - Windows では、280 ppi (Windows 8.1 S14) を超える新しいデバイスで、最大250% のコンテンツを自動的にスケールできます。
 
-  Windows では、ピクセル数の増加を活用するために、UI のスケールアップを処理することができます。 アプリケーションは、それ自体を "システム DPI 対応" と宣言することで、このシステムを認識します。 この処理を行わないアプリケーションは、システムによってスケールアップされます。 これにより、アプリケーション全体が幅が均等に伸縮される "あいまいな" ユーザーエクスペリエンスが発生する可能性があります。 次に例を示します。
+  Windows では、ピクセル数の増加を活用するために、UI のスケールアップを処理することができます。 アプリケーションは、それ自体を "システム DPI 対応" と宣言することで、このシステムを認識します。 この処理を行わないアプリケーションは、システムによってスケールアップされます。 これにより、アプリケーション全体が幅が均等に伸縮される "あいまいな" ユーザーエクスペリエンスが発生する可能性があります。 例:
 
   ![DPI 問題 (ファジー)](../extensibility/media/dpi-issues-fuzzy.png "DPI 問題 (ファジー)")
 
   Visual Studio では、DPI スケール対応になっているため、"仮想化" されません。
 
-  Windows (および Visual Studio) は、複数の UI テクノロジを利用しています。これには、システムによって設定されたスケールファクターを処理するさまざまな方法があります。 次に例を示します。
+  Windows (および Visual Studio) は、複数の UI テクノロジを利用しています。これには、システムによって設定されたスケールファクターを処理するさまざまな方法があります。 例:
 
 - WPF は、デバイスに依存しない方法 (ピクセルではなく単位) でコントロールを測定します。 WPF UI は、現在の DPI に合わせて自動的にスケールアップします。
 
@@ -51,7 +53,7 @@ WPF は既に高 DPI 対応ですが、Win32/GDI ベースのコードの多く�
 このセクションは、主に Visual Studio 2013 を拡張する開発者を対象としています。 Visual Studio 2015 では、Visual Studio に組み込まれているイメージサービスを使用します。 また、Visual Studio の多くのバージョンをサポート/対象とする必要があるため、2015でイメージサービスを使用することは、以前のバージョンには存在しないため、選択肢ではありません。 ここでも、このセクションについて説明します。
 
 ## <a name="scaling-up-images-that-are-too-small"></a>スケールアップイメージが小さすぎる
-小さすぎる画像は、いくつかの一般的な方法を使用して、GDI および WPF でスケールアップおよびレンダリングできます。 マネージ DPI ヘルパークラスは、拡大/縮小アイコン、ビットマップ、imagestrips、および imagelists に対応するために、内部および外部の Visual Studio インテグレーターが使用できます。 Win32 ベースのネイティブ C/C + + ヘルパーは、HICON、HBITMAP、HIMAGELIST、組み込み vsui:: GdiplusImage のスケーリングに使用できます。 通常、ビットマップのスケーリングでは、ヘルパーライブラリへの参照を含めた後に1行の変更が必要になります。 次に例を示します。
+小さすぎる画像は、いくつかの一般的な方法を使用して、GDI および WPF でスケールアップおよびレンダリングできます。 マネージ DPI ヘルパークラスは、拡大/縮小アイコン、ビットマップ、imagestrips、および imagelists に対応するために、内部および外部の Visual Studio インテグレーターが使用できます。 Win32 ベースのネイティブ C/C + + ヘルパーは、HICON、HBITMAP、HIMAGELIST、組み込み vsui:: GdiplusImage のスケーリングに使用できます。 通常、ビットマップのスケーリングでは、ヘルパーライブラリへの参照を含めた後に1行の変更が必要になります。 例:
 
 ```cpp
 (Unmanaged) VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
@@ -82,7 +84,7 @@ MSDN のドキュメントを参照してください <xref:Microsoft.VisualStud
 ![DPI 問題 (スケーリング)](../extensibility/media/dpi-issues-scaling.png "DPI 問題 (スケーリング)")
 
 ## <a name="layout-issues"></a>レイアウトの問題
-一般的なレイアウトの問題を回避するには、主に絶対位置 (ピクセル単位) を使用するのではなく、UI 内のポイントをスケーリングして相対的に調整します。 次に例を示します。
+一般的なレイアウトの問題を回避するには、主に絶対位置 (ピクセル単位) を使用するのではなく、UI 内のポイントをスケーリングして相対的に調整します。 例:
 
 - レイアウト/テキストの位置を調整して、スケールアップされたイメージを考慮する必要があります。
 
@@ -103,7 +105,7 @@ MSDN のドキュメントを参照してください <xref:Microsoft.VisualStud
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>DPIHelper ライブラリ/クラスを使用したイメージとレイアウトのスケーリング
 Visual Studio DPI ヘルパーライブラリはネイティブでもマネージ形式でも使用でき、他のアプリケーションによって Visual Studio シェルの外部で使用できます。
 
-ライブラリを使用するには、 [Visual Studio の VSSDK 拡張機能のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples) にアクセスし、高 DPI_Images_Icons サンプルを複製します。
+ライブラリを使用するには、 [Visual Studio の VSSDK 拡張機能のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples) にアクセスし、High-DPI_Images_Icons サンプルを複製します。
 
 ソースファイルで、 *Vsuidpihelper .h* をインクルードし、クラスの静的関数を呼び出し `VsUI::DpiHelper` ます。
 
@@ -120,15 +122,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 Visual Studio 環境内で実行されるマネージコードから DPI ヘルパー関数にアクセスするには、次の操作を行います。
 
-- 使用中のプロジェクトは、最新バージョンの Shell MPF を参照する必要があります。 次に例を示します。
+- 使用中のプロジェクトは、最新バージョンの Shell MPF を参照する必要があります。 例:
 
     ```csharp
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />
     ```
 
-- プロジェクトに、system.string、**プレゼンテーションコア**、および**プレゼンテーション ui****への**参照があることを確認します。
+- プロジェクトに、system.string、**プレゼンテーションコア**、および **プレゼンテーション ui****への** 参照があることを確認します。
 
-- コードでは、 **VisualStudio** 名前空間を使用し、DpiHelper クラスの静的関数を呼び出します。 サポートされている型 (ポイント、サイズ、四角形など) については、拡張された新しいオブジェクトを返す拡張関数が用意されています。 次に例を示します。
+- コードでは、 **VisualStudio** 名前空間を使用し、DpiHelper クラスの静的関数を呼び出します。 サポートされている型 (ポイント、サイズ、四角形など) については、拡張された新しいオブジェクトを返す拡張関数が用意されています。 例:
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;
@@ -175,7 +177,7 @@ UI でこのダブルスケールを使用できるようにするには、各�
 
 手順 1: Prescale を使用して、イメージを200%、300% のようにします。
 
-バインドに適用されているコンバーターか、XAML マークアップ拡張機能を使用して、イメージを Prescale します。 次に例を示します。
+バインドに適用されているコンバーターか、XAML マークアップ拡張機能を使用して、イメージを Prescale します。 例:
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -213,7 +215,7 @@ WPF は、UIElement で設定された System.windows.media.bitmapscalingmode> �
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- 元のイメージのサイズが不明な場合は、LayoutTransform を使用して最終的なイメージオブジェクトをスケールダウンできます。 次に例を示します。
+- 元のイメージのサイズが不明な場合は、LayoutTransform を使用して最終的なイメージオブジェクトをスケールダウンできます。 例:
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >

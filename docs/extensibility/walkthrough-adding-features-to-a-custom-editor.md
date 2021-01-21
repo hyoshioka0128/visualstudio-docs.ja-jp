@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: カスタムエディターへの機能の追加 |Microsoft Docs'
+description: このチュートリアルを使用してエディターを作成した後に、カスタムエディターに機能を追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012088"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863201"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタムエディターへの機能の追加
 カスタムエディターを作成したら、それにさらに機能を追加できます。
@@ -34,11 +36,11 @@ ms.locfileid: "90012088"
 
 3. インターフェイスを設定して、エディターファクトリを実装し <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> ます。
 
-     詳細については、「 [エディターファクトリ](../vs-2015/extensibility/editor-factories.md?view=vs-2015)」を参照してください。
+     詳細については、「 [エディターファクトリ](/previous-versions/visualstudio/visual-studio-2015/extensibility/editor-factories?preserve-view=true&view=vs-2015)」を参照してください。
 
 4. エディターでドキュメントビューのオブジェクトウィンドウを管理するために、埋め込み先でのアクティブ化または簡略化された埋め込みを使用するかどうかを決定します。
 
-     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された [埋め込み](../extensibility/simplified-embedding.md) と [インプレースアクティブ化](../vs-2015/misc/in-place-activation.md?view=vs-2015)」を参照してください。
+     簡略化された埋め込みエディターウィンドウは標準のドキュメントビューをホストし、インプレースアクティベーションエディターウィンドウは ActiveX コントロールまたはその他のアクティブなオブジェクトをドキュメントビューとしてホストします。 詳細については、「簡略化された [埋め込み](../extensibility/simplified-embedding.md) と [インプレースアクティブ化](/previous-versions/visualstudio/visual-studio-2015/misc/in-place-activation?preserve-view=true&view=vs-2015)」を参照してください。
 
 5. <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>コマンドを処理するインターフェイスを実装します。
 
@@ -69,15 +71,15 @@ ms.locfileid: "90012088"
 
     2. `QueryService`サービスで <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> を呼び出して、へのポインターを取得 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> します。
 
-9. ユーザーがエディターと **ツールボックス**の間、または外部エディター (Microsoft Word など) と **ツールボックス**の間で項目をドラッグアンドドロップできるようにします。 次の手順に従います。
+9. ユーザーがエディターと **ツールボックス** の間、または外部エディター (Microsoft Word など) と **ツールボックス** の間で項目をドラッグアンドドロップできるようにします。 次の手順に従います。
 
     1. エディター `IDropTarget` がドロップ先であることを IDE に警告するには、エディターでを実装します。
 
-    2. エディターが <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> **ツールボックス**内の項目を有効または無効にできるように、ビューにインターフェイスを実装します。
+    2. エディターが <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> **ツールボックス** 内の項目を有効または無効にできるように、ビューにインターフェイスを実装します。
 
     3. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> およびインターフェイスへのポインターを取得するには、を実装し、サービスに対してを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> ます。
 
-         これらの手順により、VSPackage で **ツールボックス**に新しい項目を追加できるようになります。
+         これらの手順により、VSPackage で **ツールボックス** に新しい項目を追加できるようになります。
 
 10. エディターに他のオプション機能を使用するかどうかを決定します。
 
@@ -115,7 +117,7 @@ ms.locfileid: "90012088"
 
 12. 状況依存のヘルプサポートを実装します。
 
-     この手順では、エディターの項目に対して F1 ヘルプとダイナミックヘルプウィンドウのサポートを提供できます。 詳細については、「 [方法: エディターのコンテキストを指定する](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015)」を参照してください。
+     この手順では、エディターの項目に対して F1 ヘルプとダイナミックヘルプウィンドウのサポートを提供できます。 詳細については、「 [方法: エディターのコンテキストを指定する](/previous-versions/visualstudio/visual-studio-2015/extensibility/how-to-provide-context-for-editors?preserve-view=true&view=vs-2015)」を参照してください。
 
 13. インターフェイスを実装することによって、エディターからオートメーションオブジェクトモデルを公開し `IDispatch` ます。
 
@@ -138,9 +140,9 @@ ms.locfileid: "90012088"
   > [!NOTE]
   > この `IOleInPlaceComponent` インターフェイスは、OLE 2 メニューのマージを避けるために使用されます。
 
-   の `IOleCommandTarget` 実装では、 **切り取り**、 **コピー**、 **貼り付け**などのコマンドが処理されます。 を実装する場合 `IOleCommandTarget` 、エディターが独自のコマンドメニュー構造を定義するために独自の *vsct* ファイルを必要とするか、で定義された標準コマンドを実装できるかどうかを決定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] します。 通常、エディターでは、IDE のメニューを使用して拡張し、独自のツールバーを定義します。 ただし、IDE の標準コマンドセットを使用するだけでなく、エディターで独自の特定のコマンドを定義する必要がある場合もあります。 エディターは、使用する標準コマンドを宣言してから、新しいコマンド、コンテキストメニュー、トップレベルメニュー、ツールバーを *vsct* ファイルで定義する必要があります。 インプレースアクティブ化エディターを作成する場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> OLE 2 メニューのマージではなく、 *vsct* ファイルでエディターのメニューとツールバーを実装して定義します。
+   の `IOleCommandTarget` 実装では、 **切り取り**、 **コピー**、 **貼り付け** などのコマンドが処理されます。 を実装する場合 `IOleCommandTarget` 、エディターが独自のコマンドメニュー構造を定義するために独自の *vsct* ファイルを必要とするか、で定義された標準コマンドを実装できるかどうかを決定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] します。 通常、エディターでは、IDE のメニューを使用して拡張し、独自のツールバーを定義します。 ただし、IDE の標準コマンドセットを使用するだけでなく、エディターで独自の特定のコマンドを定義する必要がある場合もあります。 エディターは、使用する標準コマンドを宣言してから、新しいコマンド、コンテキストメニュー、トップレベルメニュー、ツールバーを *vsct* ファイルで定義する必要があります。 インプレースアクティブ化エディターを作成する場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> OLE 2 メニューのマージではなく、 *vsct* ファイルでエディターのメニューとツールバーを実装して定義します。
 
-- UI でメニューコマンド crowding を回避するには、新しいコマンドをにせよする前に、IDE の既存のコマンドを使用する必要があります。 共有コマンドは、 *Sharedcmddef. vsct* および *shellcmddef. vsct*で定義されています。 これらのファイルは、インストールの VisualStudioIntegration\Common\Inc サブディレクトリに既定でインストールされ [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] ます。
+- UI でメニューコマンド crowding を回避するには、新しいコマンドをにせよする前に、IDE の既存のコマンドを使用する必要があります。 共有コマンドは、 *Sharedcmddef. vsct* および *shellcmddef. vsct* で定義されています。 これらのファイルは、インストールの VisualStudioIntegration\Common\Inc サブディレクトリに既定でインストールされ [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] ます。
 
 - `ISelectionContainer` では、単一選択と複数選択の両方を表すことができます。 選択した各オブジェクトは、オブジェクトとして実装され `IDispatch` ます。
 

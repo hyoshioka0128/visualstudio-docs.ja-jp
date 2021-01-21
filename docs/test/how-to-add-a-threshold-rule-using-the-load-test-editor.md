@@ -1,5 +1,7 @@
 ---
 title: ロード テスト用のしきい値規則を追加する
+description: ロード テストのしきい値規則について説明します。これを使うと、パフォーマンス カウンターの値を定数値または別のパフォーマンス カウンターの値と比較できます。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6855088c05e03311b5724ba3a0ccf438a43b6a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efd601862de60c38991de5eb901de5b55605540a
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288482"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95440221"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>方法: ロード テスト エディターを使用してしきい値規則を追加する
 
@@ -28,9 +30,9 @@ ms.locfileid: "85288482"
 
 1. ロード テストを開きます。
 
-2. ロード テスト エディターで、 **[カウンター セット]** ノードを展開します。
+2. ロード テスト エディターで、**[カウンター セット]** ノードを展開します。
 
-3. [カウンター セット] のいずれかで、 **[カウンター カテゴリ]** のいずれかを展開します。 たとえば、 **[LoadTest:Scenario]** を選択します。 ノードを展開します。
+3. [カウンター セット] のいずれかで、**[カウンター カテゴリ]** のいずれかを展開します。 たとえば、**[LoadTest:Scenario]** を選択します。 ノードを展開します。
 
 4. カウンターのいずれか、たとえば **[LoadTest:Scenario]** の **[User Load]** を右クリックします。 **[しきい値規則の追加]** を選択します。
 

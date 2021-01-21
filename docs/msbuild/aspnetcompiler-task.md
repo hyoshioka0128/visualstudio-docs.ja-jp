@@ -1,5 +1,7 @@
 ---
-title: AspNetCompiler タスクを使って ASP.NET アプリケーションをプリコンパイルする | Microsoft Docs
+title: AspNetCompiler タスクを使用して ASP.NET をプリコンパイルする
+description: MSBuild AspNetCompiler タスクを使用して、ASP.NET アプリケーションをプリコンパイルするためのユーティリティである aspnet_compiler.exe をラップします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 072d1b94c552b3aca34a1573e5d6545628f6568e
-ms.sourcegitcommit: 93859158465eab3423a0c0435f06490f0a456a57
+ms.openlocfilehash: e77316628f2251fd44d27edaec4c91354fd81a4b
+ms.sourcegitcommit: 02445b684e69c1a665a7e06e9b46072d3fcd7ba6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167333"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96516094"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler タスク
 
@@ -74,3 +76,4 @@ ms.locfileid: "82167333"
 
 * [タスク](../msbuild/msbuild-tasks.md)
 * [タスク リファレンス](../msbuild/msbuild-task-reference.md)
+* [ASP.NET Compilation Tool (aspnet_compiler.exe)](/previous-versions/ms229863(v=vs.100))

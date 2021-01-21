@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-Persist アクティビティデザイナー
+description: Persist アクティビティについて、および persist アクティビティデザイナーを使用して Persist アクティビティを作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75236d7955cba6b8c62b9a4504f02c66cebe4062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3daa7cef76d2448cc7bcda66a967a3406bb2352c
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114772"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435574"
 ---
 # <a name="persist-activity-designer"></a>Persist アクティビティ デザイナー
 
-**Persist**アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Persist> ます。
+**Persist** アクティビティデザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.Persist> ます。
 
 ## <a name="the-persist-activity"></a>Persist アクティビティ
 
@@ -27,9 +29,9 @@ ms.locfileid: "76114772"
 
 ### <a name="using-the-persist-activity-designer"></a>Persist アクティビティ デザイナーの使用
 
-**Persist**アクティビティデザイナーは、 **[ツールボックス**] の [**ランタイム**] カテゴリにあります。このカテゴリにアクセスするには、[**ツール**ボックス] タブをクリックします (または、[**表示**] メニューの [**ツールボックス**] を選択するか、CTRL + ALT + X キーを押します)。
+**Persist** アクティビティデザイナーは、 **[ツールボックス** ] の [ **ランタイム** ] カテゴリにあります。このカテゴリにアクセスするには、[ **ツール** ボックス] タブをクリックします (または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、CTRL + ALT + X キーを押します)。
 
-**Persist**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 これ <xref:System.Activities.Statements.Persist> により、Persist という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Persist** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**Persist** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 これ <xref:System.Activities.Statements.Persist> により、Persist という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **Persist** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-persist-properties"></a>Persist のプロパティ
 

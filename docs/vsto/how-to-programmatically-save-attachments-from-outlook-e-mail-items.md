@@ -1,5 +1,8 @@
 ---
 title: プログラムによって Outlook の電子メールアイテムから添付ファイルを保存する
+description: Visual Studio を使用して、Microsoft Outlook の電子メールアイテムから添付ファイルをプログラムで保存する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9fbe6099a8928397a7d885ac72c4f34da2da6af0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d33c2c820f03d7fb40c953165f62943e44648082
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545887"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528252"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>方法: プログラムによって Outlook の電子メールアイテムから添付ファイルを保存する
 

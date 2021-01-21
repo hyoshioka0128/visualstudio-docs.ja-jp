@@ -1,5 +1,5 @@
 ---
-title: Docker のコンテナー ログ、環境変数、ファイル システム アクセス
+title: Docker のコンテナーとイメージを表示し、診断する
 description: Visual Studio でツール ウィンドウを使用してアプリをホストしているコンテナー内の状況を表示することにより、コンテナーベースのアプリをデバッグおよび診断する機能を向上させる方法について説明します。
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490301"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729224"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Visual Studio でコンテナーおよびイメージを表示および診断する方法
 
@@ -27,7 +27,7 @@ ms.locfileid: "89490301"
 
 コンテナー化された .NET プロジェクトを開始すると、 **[コンテナー]** ウィンドウが自動的に開きます。 いつでも Visual Studio でコンテナーを表示するには、**Ctrl**+**Q** キーを使用して Visual Studio の [検索] ボックスをアクティブにし、「`Containers`」と入力して最初の項目を選択します。 メイン メニューから **[コンテナー]** ウィンドウを開くこともできます。 メニュー パス **[表示]**  >  **[その他のウィンドウ]**  >  **[コンテナー]** を使用します。  
 
-![[コンテナー] ウィンドウの [環境] タブのスクリーンショット](media/view-and-diagnose-containers/container-window.png)
+![Visual Studio の [コンテナー] ウィンドウのスクリーンショット。左側のペインでコンテナーが選択され、右側のペインで [環境] タブが選択されています。](media/view-and-diagnose-containers/container-window.png)
 
 左側にはローカル コンピューター上のコンテナーの一覧が表示されます。 ソリューションに関連付けられているコンテナーは **[ソリューション コンテナー]** に表示されます。 右側には、 **[環境]** 、 **[ポート]** 、 **[ログ]** 、および **[ファイル]** のタブがあるウィンドウが表示されます。
 
@@ -38,7 +38,7 @@ ms.locfileid: "89490301"
 
 **[環境]** タブには、コンテナーの環境変数が表示されます。 アプリのコンテナーでは、これらの変数をさまざまな方法で設定できます。たとえば、Dockerfile、.env ファイル、または Docker コマンドを使用してコンテナーを起動するときに -e オプションを使用します。
 
-![[コンテナー] ウィンドウの [環境] タブのスクリーンショット](media/view-and-diagnose-containers/containers-environment-vars.png)
+![コンテナー WebApplication11 の環境変数が表示されている、Visual Studio の [コンテナー] ウィンドウのスクリーンショット。](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > 環境変数の変更は、リアルタイムでは反映されません。 また、このタブの環境変数はコンテナーのシステム環境変数であり、アプリにローカルなユーザー環境変数は反映されません。

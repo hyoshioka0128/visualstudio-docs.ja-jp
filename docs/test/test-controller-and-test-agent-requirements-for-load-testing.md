@@ -1,5 +1,7 @@
 ---
-title: ロード テストのための Test Controller および Test Agent の要件
+title: テスト コントローラーとテスト エージェントの要件 (ロード テスト)
+description: ロード テスト用のテスト コントローラーおよびテスト エージェントの要件について説明します。 Visual Studio では、いくつかの種類のテストがサポートされています。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6668e669fdc26db9d81c7176aeee16e5af42987b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75588643"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330187"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>ロード テストのためのテスト コントローラーおよびテスト エージェントの要件
 

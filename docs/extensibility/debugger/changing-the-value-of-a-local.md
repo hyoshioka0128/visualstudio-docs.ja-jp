@@ -1,5 +1,7 @@
 ---
 title: ローカル | の値を変更するMicrosoft Docs
+description: '[ローカル] ウィンドウの [値] フィールドに新しい値が入力されたときに、ローカルの値を変更するプロセスについて説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904266"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914336"
 ---
 # <a name="change-the-value-of-a-local"></a>ローカルの値を変更する
 > [!IMPORTANT]
@@ -28,7 +30,7 @@ ms.locfileid: "85904266"
 
 1. ユーザーが新しい値を入力すると、Visual Studio はローカルに関連付けられている[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトで[Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)を呼び出します。
 
-2. `IDebugProperty2::SetValueAsString` では次のタスクを実行します。
+2. `IDebugProperty2::SetValueAsString` は、以下のタスクを実行します。
 
    1. 文字列を評価して値を生成します。
 

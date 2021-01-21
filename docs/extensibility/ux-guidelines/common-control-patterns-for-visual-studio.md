@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のコモンコントロールパターン |Microsoft Docs
+description: Visual Studio の一般的なコントロールが Windows デスクトップの対話ガイドラインに従う方法と、それらのガイドラインを拡張する特殊な状況について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b5a1904c01f5688a00e45de7feed7ae326d9b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698710"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715887"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio の コモン コントロール パターン
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> コモンコントロール
@@ -185,7 +187,7 @@ ms.locfileid: "80698710"
 
 - 空のツールウィンドウまたはダイアログのウォーターマークテキスト。コンテンツが表示されない理由を説明します。
 
-- **プロパティウィンドウ**の下部にあるような説明ペイン。
+- **プロパティウィンドウ** の下部にあるような説明ペイン。
 
 - 空のエディターで透かしテキストを使用して、ユーザーが作業を開始するためにどのようなアクションを実行する必要があるかを説明します。
 
@@ -299,10 +301,10 @@ Visual Studio のほとんどのボタンはユーティリティダイアログ
 > [!NOTE]
 > ユーザーはこれらのボタン (アクセスキーがない) にタブを設定する必要があるため、適切な順序で配置します。 `name`ボタンのプロパティを、スクリーンリーダーがボタンの操作を正しく解釈するために実行するアクションにマップします。
 
-| 関数 | Button |
+| 機能 | Button |
 | --- | --- |
-| [追加] | ![グラフィカルな [追加] ボタン](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| [削除] | ![グラフィカルな [削除] ボタン](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| 追加 | ![グラフィカルな [追加] ボタン](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
+| 削除 | ![グラフィカルな [削除] ボタン](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | [すべてを追加] | ![グラフィカルな [すべて追加] ボタン](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | [すべて削除] | ![グラフィカルな [すべて削除] ボタン](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | [上へ移動] | ![グラフィカルな [上へ移動] ボタン](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |
@@ -341,7 +343,7 @@ Visual Studio のほとんどのボタンはユーティリティダイアログ
 
 ![正しくない: ツリービューノードのスタイルが正しくありません](../../extensibility/ux-guidelines/media/070705-2_treeviewincorrect1.png "070705-2_TreeViewIncorrect1")<br />正しくない: ツリービューノードのスタイルが正しくありません
 
-#### <a name="selection"></a>選択ツール
+#### <a name="selection"></a>選択
 ツリービュー内でノードを選択すると、ツリービューコントロールの幅全体に強調表示されます。 これは、ユーザーが選択した項目を明確に識別するのに役立ちます。 選択した色は、現在の Visual Studio テーマを反映している必要があります。
 
 ![[修正]: 選択したノードの強調表示は、ツリービューコントロールの幅全体に一致します。](../../extensibility/ux-guidelines/media/070705-1_treeviewcorrect.png "070705-1_TreeViewCorrect")<br />[修正]: 選択したノードの強調表示は、ツリービューコントロールの幅全体に一致します。

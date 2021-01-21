@@ -1,5 +1,7 @@
 ---
 title: テキスト テンプレートでのエスケープ シーケンスの使用
+description: テキストテンプレートでエスケープシーケンスを使用してテキストテンプレートタグを生成する方法と、C# コードでのみ制御文字と引用符をエスケープする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75594046"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361327"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>テキストテンプレートでのエスケープシーケンスの使用
 
@@ -36,6 +38,6 @@ ms.locfileid: "75594046"
 
 - エスケープ ( \\ ) 文字が、制御文字または引用符をエスケープした場所以外の任意のシーケンス内にある場合 (C# の場合のみ)、文字が直接出力されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [方法: エスケープ シーケンスを使用してテンプレートからテンプレートを生成する](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

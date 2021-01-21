@@ -1,5 +1,7 @@
 ---
 title: Office UI のカスタマイズ
+description: Visual Studio の Office developer tools を使用して Microsoft Office アプリケーションのユーザーインターフェイス (UI) をカスタマイズする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 257f87aedf5d4337e81fb6f251cc8df07f4e577c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 289b055ab84dd9c2c440b55f3d64fe1fe39b8e1b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88041065"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527591"
 ---
 # <a name="office-ui-customization"></a>Office UI のカスタマイズ
   Microsoft Office アプリケーションのユーザー インターフェイス (UI) は、Visual Studio の  Office Developer Tools を使用してカスタマイズできます。 以下のトピックでは、カスタマイズできる UI 機能について説明します。
@@ -43,7 +45,7 @@ ms.locfileid: "88041065"
 ## <a name="comparison-of-ui-features"></a><a name="Comparison"></a> UI 機能の比較
  次の表では、Microsoft Office プロジェクトでカスタマイズできる主な UI 機能を比較します。
 
-|特徴量|サポートされているプロジェクトの種類|サポートされる Microsoft Office アプリケーション|
+|機能|サポートされているプロジェクトの種類|サポートされる Microsoft Office アプリケーション|
 |-------------|-----------------------------|---------------------------------------------|
 |[操作] ウィンドウ|ドキュメント レベルのカスタマイズ|Excel<br /><br /> Word|
 |カスタム作業ウィンドウ|VSTO アドイン|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|

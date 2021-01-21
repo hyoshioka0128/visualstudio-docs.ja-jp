@@ -1,5 +1,7 @@
 ---
 title: '[オプション] ダイアログ'
+description: '[オプション] ダイアログ ボックスとそのレイアウト、および選択したオプションが Visual Studio によってプロジェクトとソリューションに適用される方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1abf435625cc9003dc569542e24e020e3801ec00
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591503"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189330"
 ---
 # <a name="options-dialog-box-visual-studio"></a>[オプション] ダイアログ ボックス (Visual Studio)
 
@@ -33,16 +35,12 @@ ms.locfileid: "75591503"
 IDE 機能のオプションは、この機能がメモリに読み込まれるまでは、ナビゲーション ウィンドウには表示されません。 したがって、前のセッションを終了したときに表示されていたオプションが、新規セッションを開始した時点では表示されない場合があります。 プロジェクトを作成するか、特定のアプリケーションを使用するコマンドを実行すると、関連するオプションのノードが [オプション] ダイアログ ボックスに追加されます。 追加されたこれらのオプションは、IDE 機能がメモリにある限り有効です。
 
 > [!NOTE]
-> 一部の設定コレクションでは、[オプション] ダイアログ ボックスのナビゲーション ウィンドウに表示されるページ数のスコープが設定されます。 **[すべての設定を表示]** を選択すると、使用可能なすべてのページを表示できます。
+> 一部の設定コレクションでは、[オプション] ダイアログ ボックスのナビゲーション ウィンドウに表示されるページ数のスコープが設定されます。
 
 ## <a name="how-options-are-applied"></a>オプションの適用方法
 
 **[オプション]** ダイアログ ボックスで [OK] をクリックすると、すべてのページのすべての設定が保存されます。 任意のページで [キャンセル] をクリックすると、他の **[オプション]** ページで行ったものを含め、すべての変更要求がキャンセルされます。 [[フォントおよび色] ([オプション] ダイアログ ボックス - [環境])](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) での変更など、オプション設定に加えた一部の変更は、Visual Studio を閉じて再度開いたときに初めて有効になります。
 
-### <a name="show-all-settings"></a>すべての設定を表示
-
-**[すべての設定を表示]** のオンまたはオフの操作は、 **[OK]** をクリックしていなくても、 **[オプション]** ダイアログ ボックスで行ったすべての変更に適用されます。
-
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [エディターのカスタマイズ](../how-to-change-text-case-in-the-editor.md)

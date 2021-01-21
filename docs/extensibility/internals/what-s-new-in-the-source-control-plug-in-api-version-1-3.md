@@ -1,5 +1,6 @@
 ---
 title: '&apos;ソース管理プラグイン API 1.3 の新機能'
+description: ソース管理プラグイン API バージョン1.3 の新機能について説明します。これにより、より高度なコントロールを提供する新しい関数が導入されます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac171a4ba33ed7941f2f5887ccf61ca589c31fd3
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 491c35a1a99af9b3271e8b2036f7d0c6f8f57908
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037609"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97487791"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>ソース管理プラグイン API バージョン1.3 の新機能&#39;
 ソース管理プラグイン API バージョン1.3 では、より高度なコントロールを提供するために次の新しい関数が導入されています。
@@ -25,7 +26,7 @@ ms.locfileid: "90037609"
 ## <a name="changes"></a>[変更点]
  ソース管理プラグイン API バージョン1.3 では、次の関数が新しく追加されています。
 
-|機能|概要|
+|関数|概要|
 |--------------|--------------|
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|追加の機能ビットを報告できるようにします|
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|バージョン管理データベースにローカルディスクよりも新しいバージョンがあるファイルを調べることができます。|

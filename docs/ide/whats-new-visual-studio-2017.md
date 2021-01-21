@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: ab0d5cc497709a690c88b16771f2c12651e5aed0
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386850"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668665"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 の新機能
 
@@ -72,7 +72,7 @@ Visual Studio をインストールするときに確認できる最も重要な
 
 ### <a name="a-focus-on-accessibility"></a>アクセシビリティに重点を置く
 
-**15.3 の新機能**として、Visual Studio と多くのユーザーが使用している支援技術との互換性を改善する、1,700 を超える変更を行いました。 スクリーン リーダーやハイ コントラスト テーマなどの支援技術との互換性を従来よりも改善するシナリオが、数多くあります。 デバッガー、エディター、シェルのすべてに重要な変更点があります。
+**15.3 の新機能** として、Visual Studio と多くのユーザーが使用している支援技術との互換性を改善する、1,700 を超える変更を行いました。 スクリーン リーダーやハイ コントラスト テーマなどの支援技術との互換性を従来よりも改善するシナリオが、数多くあります。 デバッガー、エディター、シェルのすべてに重要な変更点があります。
 
 詳細については、ブログ投稿の「[Accessibility improvements in Visual Studio 2017 version 15.3 (Visual Studio 2017 バージョン 15.3 でのアクセシビリティの機能強化)](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/)」をご覧ください。
 
@@ -104,7 +104,7 @@ Visual Studio の拡張機能の一覧を表示するには、 **[ツール]** �
 
 [拡張機能マネージャーのローミング] では、インストールするすべての拡張機能を追跡しますが、どの拡張機能をローミング リストに追加するかを選択することができます。
 
-![Visual Studio 2017 - [拡張機能と更新プログラム] ダイアログ ボックス](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017 - 拡張機能マネージャーのローミング](media/vs2017ide-RoamingExtensionManager.png)
 
 [拡張機能マネージャーのローミング] を使用する場合、リストに次の 3 つの種類のアイコンが表示されます。
 
@@ -131,7 +131,7 @@ Visual Studio Enterprise 2017 では、ライブ単体テストを実行する�
 
 自動化されたテストは、DevOps パイプラインの重要な部分です。 短い周期で、一貫性と信頼性のある方法でソリューションをテストし、公開できます。 CI/CD (Continuous Integration and Continuous Delivery/継続的インテグレーションと継続的デリバリー) フローにより、このプロセスがさらに効率的になります。
 
-自動化されたテストの詳細については、[DevOps の 自動化テストの CI/CD パイプライン](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/)に関するブログ投稿をご覧ください。
+自動化されたテストの詳細については、[DevOps の 自動化テストの CI/CD パイプライン](/archive/blogs/visualstudioalmrangers/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently)に関するブログ投稿をご覧ください。
 
 [Continuous Delivery Tools for Visual Studio (Visual Studio 用の継続的デリバリー ツール)](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs 拡張の新機能の詳細については、ブログ投稿「[Commit with confidence: Commit time code quality](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/)」 (自信を持ってコミットする: タイム コードの品質をコミットする) をご覧ください。
 
@@ -174,7 +174,7 @@ Visual Studio でプロジェクトを操作する際に、コードを迅速に
 
 より確実に混乱なく A から B に移動できるようにナビゲーション エクスペリエンスを更新しました。
 
-* **15.4 の新機能**:**定義へ移動** (**Ctrl**+**クリック**または **F12**) &ndash; マウスを使っているユーザーは、**Ctrl** キーを押しながらメンバーをクリックすることで、メンバーの定義に簡単に移動することができます。 **Ctrl** キーを押しながらコード記号の上にマウスを置くと、下線が引かれ、リンクに変わります。 詳細については、「[Go To Definition and Peek Definition](go-to-and-peek-definition.md)」([定義へ移動] および [定義をここに表示]) を参照してください。
+* **15.4 の新機能**:**定義へ移動** (**Ctrl**+**クリック** または **F12**) &ndash; マウスを使っているユーザーは、**Ctrl** キーを押しながらメンバーをクリックすることで、メンバーの定義に簡単に移動することができます。 **Ctrl** キーを押しながらコード記号の上にマウスを置くと、下線が引かれ、リンクに変わります。 詳細については、「[Go To Definition and Peek Definition](go-to-and-peek-definition.md)」([定義へ移動] および [定義をここに表示]) を参照してください。
 
 * **実装に移動** (**Ctrl**+**F12**) &ndash; 任意の基本データ型やメンバーから各種実装に移動します。
 
@@ -196,7 +196,7 @@ Visual Studio でプロジェクトを操作する際に、コードを迅速に
 
 Visual Studio には、C++ Core ガイドラインの配信、C++11 および C++ 機能の拡張サポートを追加することによるコンパイラの更新、C++ ライブラリへの機能の追加および更新など、いくつかの改善が加えられています。 また、C++ IDE やインストールのワークロードなどのパフォーマンスも改善しました。
 
-同時に 250 以上のバグを修正し、コンパイラおよびツールのイシューをレポートしてきました。その多くは [C++ の開発者コミュニティ](https://developercommunity.visualstudio.com/spaces/62/index.html "C++ の開発者コミュニティ")を通じてお客様から寄せられたものです。
+同時に 250 以上のバグを修正し、コンパイラおよびツールのイシューをレポートしてきました。その多くは [C++ の開発者コミュニティ](https://aka.ms/feedback/report?space=62 "C++ の開発者コミュニティ")を通じてお客様から寄せられたものです。
 
 詳細については、「[What's new for Visual C++ in Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)」 (Visual 2017 での Visual C++ の新機能) ページを参照してください。
 
@@ -222,7 +222,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 スナップショット間を移動して表示するには、**デバッグ** ツールバーの **[前に戻る]** ボタンと **[次へ進む]** ボタンを使用します。 これらのボタンを使用して、 **[診断ツール]** ウィンドウの **[イベント]** タブに表示されるイベント間を移動します。 あるイベントに戻るまたは進むと、選択したイベントの過去のデバッグが自動的に有効になります。
 
-![Visual Studio の新しい例外ヘルパー ダイアログ](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
+![Visual Studio での IntelliTrace ステップバックの例](../debugger/media/intellitrace-step-back-icons-description.png  "[前に戻る] ボタンと [次へ進む] ボタン")
 
 詳細については、「[IntelliTrace ステップ バックを使用してスナップショットを表示する](../debugger/view-historical-application-state.md)」のページ参照してください。
 
@@ -266,7 +266,7 @@ Visual Studio には、C++ Core ガイドラインの配信、C++11 および C+
 
 希望する開発言語を &mdash;C#、Visual Basic、C++ または JavaScript の中から&mdash;選び、Windows 10 デバイスを対象とするユニバーサル Windows プラットフォーム アプリを作成します。 Visual Studio 2017 には、各言語の UWP アプリ テンプレートが用意されており、すべてのデバイスを対象とした単一のプロジェクトを作成できます。 作業が終わったら、アプリ パッケージを生成し、Visual Studio 内から Microsoft Store に提出できます。これで、すべての Windows 10 デバイスのユーザーにアプリが公開されます。
 
-**15.5 の新機能**:Visual Studio 2017 バージョン 15.5 では、Windows 10 Fall Creators Update SDK (10.0.16299.0) の最適なサポートが提供されます。 また、Windows 10 Fall Creators Update により、UWP 開発者のための数多くの機能が強化されます。 最も大きな変更点をいくつか以下に示します。 
+**15.5 の新機能**:Visual Studio 2017 バージョン 15.5 では、Windows 10 Fall Creators Update SDK (10.0.16299.0) の最適なサポートが提供されます。 また、Windows 10 Fall Creators Update により、UWP 開発者のための数多くの機能が強化されます。 最も大きな変更点をいくつか以下に示します。 
 
 * **.NET Standard 2.0 のサポート**<br/>Windows 10 Fall Creators Update は、アプリ配置を効率化するだけでなく、.NET Standard 2.0 サポートを提供する Windows 10 の最初のリリースとなります。 実際には、[.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) は、すべての .NET プラットフォームで実装できる基本クラス ライブラリの参照実装です。 .NET Standard の目的は、.NET 開発者が作業用に選択したすべての .NET プラットフォームでコードをできるだけ簡単に共有できるようにすることです。
 * **UWP と Win32 の両方に長所**<br/>[デスクトップ ブリッジ](/windows/uwp/porting/desktop-to-uwp-root)を使用して Windows 10 プラットフォームを改善しました。これにより、現在のフォーカスが UWP、WPF、Windows Forms、または Xamarin のいずれにあるかに関係なく、すべての .NET 開発者は Windows 10 を改善することができます。 Visual Studio 2017 バージョン 15.5 の新しいアプリ パッケージング プロジェクト タイプを使用することで、UWP プロジェクトの場合と同じように、WPF または Windows Forms プロジェクトの Windows アプリケーション パッケージを作成できます。 アプリをパッケージ化すると、Windows 10 アプリ配置のすべての利点が得られ、Microsoft Store (コンシューマー アプリケーションの場合) または Microsoft Store for Business と Education を通じて配布することができます。 パッケージ化されたアプリは完全な UWP API 画面とデスクトップ上の Win32 API の両方にアクセスできるため、WPF および Windows Forms アプリケーションを UWP API および Windows 10 の機能で段階的に最新化できるようになりました。 さらに、すべての Win32 機能を使用して、デスクトップ上で点灯する UWP アプリケーションに Win32 コンポーネントを含めることができます。
@@ -350,7 +350,7 @@ Docker 対応にもなりました。
 
 "Unity のゲーム開発" ワークロードの一部として、2D ゲーム、3D ゲーム、対話型コンテンツを開発するためのクロスプラットフォーム開発に役立つツールを追加しました。 Visual Studio 2017 と Unity 5.6 を利用することで、1 回作成するだけですべてのモバイル プラットフォーム、WebGL、Mac、PC、Linux デスクトップ、Web、コンソールなど、21 のプラットフォームに発行できます。
 
-詳しくは、「[Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md)」 (Unity の Visual Studio ツール) をご覧ください。
+詳しくは、「[Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md)」 (Unity の Visual Studio ツール) をご覧ください。
 
 ## <a name="ai-development"></a>AI の開発
 

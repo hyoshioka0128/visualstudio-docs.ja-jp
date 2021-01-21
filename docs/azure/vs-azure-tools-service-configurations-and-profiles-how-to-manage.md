@@ -3,18 +3,16 @@ title: サービス構成とプロファイルを管理する方法 | Microsoft 
 description: サービス構成とプロファイルの構成ファイルを使用する方法について説明します。構成ファイルには、デプロイ環境の設定とクラウド サービスの発行設定が保存されます。
 author: ghogen
 manager: jillfra
-assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 55fc29117b1b01bd6c9b214d1db111af72127871
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911682"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902080"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>サービス構成とプロファイルを管理する方法
 ## <a name="overview"></a>概要
@@ -59,7 +57,7 @@ ms.locfileid: "72911682"
 * サービス構成を変更する場合は、Azure プロジェクトで変更するロールのショートカット メニューを開き、 **[プロパティ]** を選択します。 詳細については、「 [方法: Visual Studio を使用した Azure クラウド サービスのロールの構成](vs-azure-tools-configure-roles-for-cloud-service.md) 」を参照してください。
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>プロファイルを使用してさまざまな設定を組み合わせる
-プロファイルを使用すると、目的に応じて異なる設定の組み合わせを自動的に**発行ウィザード**に入力できます。 たとえば、デバッグ用にプロファイルを 1 つ作成し、リリース ビルド用に別のプロファイルを作成します。 その場合、**デバッグ** プロファイルでは **IntelliTrace** が有効になり、**デバッグ**構成が選択されます。**リリース** プロフィールでは **IntelliTrace** が無効になり、**リリース**構成が選択されます。 また、別のプロファイルを使用して、別のストレージ アカウントでサービスをデプロイすることもできます。
+プロファイルを使用すると、目的に応じて異なる設定の組み合わせを自動的に **発行ウィザード** に入力できます。 たとえば、デバッグ用にプロファイルを 1 つ作成し、リリース ビルド用に別のプロファイルを作成します。 その場合、**デバッグ** プロファイルでは **IntelliTrace** が有効になり、**デバッグ** 構成が選択されます。**リリース** プロフィールでは **IntelliTrace** が無効になり、**リリース** 構成が選択されます。 また、別のプロファイルを使用して、別のストレージ アカウントでサービスをデプロイすることもできます。
 
 初めてウィザードを実行すると、既定のプロファイルが作成されます。 プロファイルが格納されたファイルは、.azurePubXml という拡張子付きで Azure プロジェクトの **Profiles** フォルダーの下に追加されます。 後でウィザードを実行するときに手動で別の選択を指定すると、ファイルは自動的に更新されます。 次の手順を実行する前に、クラウド サービスを少なくとも 1 回発行する必要があります。
 

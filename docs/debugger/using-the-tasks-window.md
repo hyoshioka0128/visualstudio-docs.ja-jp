@@ -1,5 +1,7 @@
 ---
 title: '[タスク] ウィンドウの使用 | Microsoft Docs'
+description: タスクは、同時に実行できる非同期操作です。 複数のタスクを同じスレッドで実行できます。 [タスク] を使用して、タスクと WinJS.Promise オブジェクトの情報を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 03/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7df43a02dbda1fbcbe93decb58721032cd84d657
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901598"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150068"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>[タスク] ウィンドウの使用 (C#、Visual Basic、C++)
 
@@ -30,7 +32,7 @@ ms.locfileid: "62901598"
 
 マネージド コードでは、<xref:System.Threading.Tasks.Task?displayProperty=fullName> オブジェクトを操作するときや、**await** および **async** (VisualBasic では **Await** および **Async**) キーワードを操作するとき、 **[タスク]** ウィンドウを使用できます。 マネージド コードでのタスクの詳細については、[並列プログラミング](/dotnet/standard/parallel-programming/index)に関するページを参照してください。
 
-ネイティブ コードでは、[タスク グループ](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)、[並列アルゴリズム](/cpp/parallel/concrt/parallel-algorithms)、[非同期エージェント](/cpp/parallel/concrt/asynchronous-agents)、および[軽量タスク](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)を操作するときに **[タスク]** ウィンドウを使用できます。 ネイティブ コードのタスクの詳細については、「[コンカレンシー ランタイム](/cpp/parallel/concrt/concurrency-runtime)」を参照してください。
+ネイティブ コードでは、[タスク グループ](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)、[並列アルゴリズム](/cpp/parallel/concrt/parallel-algorithms)、[非同期エージェント](/cpp/parallel/concrt/asynchronous-agents)、および [軽量タスク](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)を操作するときに **[タスク]** ウィンドウを使用できます。 ネイティブ コードのタスクの詳細については、「[コンカレンシー ランタイム](/cpp/parallel/concrt/concurrency-runtime)」を参照してください。
 
 JavaScript では、promise `.then` コードを操作するときに [タスク] ウィンドウを使用できます。 詳細については、[JavaScript での非同期プログラミング (UWP アプリ)](/previous-versions/windows/apps/hh700330(v=win.10)) に関するページを参照してください。
 
@@ -50,7 +52,7 @@ JavaScript では、promise `.then` コードを操作するときに [タスク
 |**フラグ**|どのタスクにフラグが設定されているかを示します。タスクのフラグを設定または解除することができます。|
 |**アイコン**|黄色の矢印は現在のタスクを示します。 現在のタスクは、現在のスレッドの最上位のタスクです。<br /><br /> 白い矢印は中断しているタスク、つまりデバッガーを呼び出したときに現在のタスクだったタスクを示します。<br /><br /> 一時停止アイコンはユーザーによって凍結されているタスクを示します。 一覧でタスクを右クリックして、タスクを凍結したり凍結解除したりすることができます。|
 |**ID**|タスクに対してシステムで指定された番号です。 ネイティブ コードでは、タスクのアドレスになります。|
-|**状態**|タスクの現在の状態 (スケジュール、アクティブ、ブロック、デッドロック、待機中、または完了)。 スケジュール状態のタスクは、まだ実行されていないため、まだ呼び出し履歴、割り当てられたスレッド、関連情報がないタスクです。<br /><br /> アクティブなタスクは、デバッガーを中断する前にコードを実行していたタスクです。<br /><br /> 待機中またはブロック タスクは、イベントがシグナル状態になるか、ロックが解放されるか、別のタスクが終了するのを待機しているためにブロックされているものです。<br /><br /> デッドロック状態のタスクは、スレッドが別のスレッドでデッドロックされた待機中のタスクです。<br /><br /> ブロックに関する詳細情報を表示するには、デッドロックまたは待機中のタスクの **[状態]** セルの上にカーソルを置きます。 **警告:** **[タスク]** ウィンドウでは、待機チェーン トラバーサル (WCT) でサポートされる同期プリミティブを使用する、ブロックされているタスクに関してのみ、デッドロックが報告されます。 たとえば、WCT を使用する、デッドロック状態の <xref:System.Threading.Tasks.Task> オブジェクトに対して、デバッガーからは**待機中デッドロック**が報告されます。 同時実行ランタイムによって管理されるデッドロック状態のタスクに対して、デバッガーからは **待機中** が報告されます。 WCT の詳細については、「[Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal)」 (待機チェーン トラバーサル) を参照してください。|
+|**状態**|タスクの現在の状態 (スケジュール、アクティブ、ブロック、デッドロック、待機中、または完了)。 スケジュール状態のタスクは、まだ実行されていないため、まだ呼び出し履歴、割り当てられたスレッド、関連情報がないタスクです。<br /><br /> アクティブなタスクは、デバッガーを中断する前にコードを実行していたタスクです。<br /><br /> 待機中またはブロック タスクは、イベントがシグナル状態になるか、ロックが解放されるか、別のタスクが終了するのを待機しているためにブロックされているものです。<br /><br /> デッドロック状態のタスクは、スレッドが別のスレッドでデッドロックされた待機中のタスクです。<br /><br /> ブロックに関する詳細情報を表示するには、デッドロックまたは待機中のタスクの **[状態]** セルの上にカーソルを置きます。 **警告:** **[タスク]** ウィンドウでは、待機チェーン トラバーサル (WCT) でサポートされる同期プリミティブを使用する、ブロックされているタスクに関してのみ、デッドロックが報告されます。 たとえば、WCT を使用する、デッドロック状態の <xref:System.Threading.Tasks.Task> オブジェクトに対して、デバッガーからは **待機中デッドロック** が報告されます。 同時実行ランタイムによって管理されるデッドロック状態のタスクに対して、デバッガーからは **待機中** が報告されます。 WCT の詳細については、「[Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal)」 (待機チェーン トラバーサル) を参照してください。|
 |**開始時刻**|タスクがアクティブになった時間です。|
 |**期間**|タスクがアクティブになっている秒数です。|
 |**完了時間**|タスクが完了した時間です。|

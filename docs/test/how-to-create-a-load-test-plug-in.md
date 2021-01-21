@@ -1,5 +1,7 @@
 ---
 title: ロード テスト プラグインを作成する
+description: ロード テスト プラグインを作成し、ロード テストの実行中にさまざまなタイミングでコードを実行する方法について説明します。これにより、ロード テストの機能を拡張したり、変更したりできます。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6fee903c9fd2001b6c6d229e5786dd7ffb9037b9
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85288027"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441092"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>方法: ロード テスト プラグインを作成する
 
@@ -38,9 +40,9 @@ ms.locfileid: "85288027"
 
      詳細については、「[クイック スタート:ロード テスト プロジェクトを作成する](../test/quickstart-create-a-load-test-project.md)」を参照してください。
 
-3. 新しい**クラス ライブラリ** プロジェクトをソリューションに追加します (**ソリューション エクスプローラー**で、ソリューションを右クリックし、 **[追加]** を選択して、 **[新しいプロジェクト]** を選択します)。
+3. 新しい **クラス ライブラリ** プロジェクトをソリューションに追加します (**ソリューション エクスプローラー** で、ソリューションを右クリックし、 **[追加]** を選択して、 **[新しいプロジェクト]** を選択します)。
 
-4. **ソリューション エクスプローラー**で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
+4. **ソリューション エクスプローラー** で、新しいクラス ライブラリの **[参照設定]** フォルダーを右クリックし、 **[参照の追加]** を選択します。
 
    **[参照の追加]** ダイアログ ボックスが表示されます。
 
@@ -48,9 +50,9 @@ ms.locfileid: "85288027"
 
 6. **[OK]** をクリックします。
 
-   **Microsoft.VisualStudio.QualityTools.LoadTestFramework** への参照が**ソリューション エクスプローラー**の **[参照設定]** フォルダーに追加されます。
+   **Microsoft.VisualStudio.QualityTools.LoadTestFramework** への参照が **ソリューション エクスプローラー** の **[参照設定]** フォルダーに追加されます。
 
-7. **ソリューション エクスプローラー**で、ロード テスト プラグインの追加先であるロード テストを含んでいる Web パフォーマンスおよびロード テスト プロジェクトの最上位ノードを右クリックし、 **[参照の追加]** を選択します。
+7. **ソリューション エクスプローラー** で、ロード テスト プラグインの追加先であるロード テストを含んでいる Web パフォーマンスおよびロード テスト プロジェクトの最上位ノードを右クリックし、 **[参照の追加]** を選択します。
 
    **[参照の追加]** ダイアログ ボックスが表示されます。
 
@@ -58,7 +60,7 @@ ms.locfileid: "85288027"
 
 9. **[OK]** をクリックします。
 
-10. **コード エディター**で、<xref:Microsoft.VisualStudio.TestTools.LoadTesting> 名前空間について `using` ステートメントを追加します。
+10. **コード エディター** で、<xref:Microsoft.VisualStudio.TestTools.LoadTesting> 名前空間について `using` ステートメントを追加します。
 
 11. クラス ライブラリ プロジェクトで作成されたクラスに対して、<xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> インターフェイスを実装します。 実装のサンプルについては、次の例を参照してください。
 

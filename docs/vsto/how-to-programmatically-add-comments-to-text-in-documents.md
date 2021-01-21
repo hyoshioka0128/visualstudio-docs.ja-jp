@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによって文書内のテキストにコメントを追加する'
+description: プログラムによって文書内のテキストにコメントを追加します。 Document クラスの Comments プロパティは、Microsoft Word 文書内のテキストの範囲にコメントを追加します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 88350a0fb50c1d5feb0eba9706ef5b6ad56fd9df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538114"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844596"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>方法: プログラムによって文書内のテキストにコメントを追加する
   Document クラスの Comments プロパティは、Microsoft Office Word 文書内のテキストの範囲にコメントを追加します。

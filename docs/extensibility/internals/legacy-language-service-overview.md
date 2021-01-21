@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスの概要 |Microsoft Docs
+description: Visual Studio の従来の言語サービスと、Managed Package Framework (MPF) 言語サービスクラスでサポートされている機能について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aed653ec200063e72434fc758c7920e6caabafe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1ec349e38acbdb0271ecfb0c081b4f1aadadcd9
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707356"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204944"
 ---
 # <a name="legacy-language-service-overview"></a>従来の言語サービスの概要
 言語サービスでは、特定の機能を実装できるエディターのサポートが提供され [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 Managed Package Framework (MPF) 言語サービスクラスは、頻繁に使用される機能とその他の機能の部分的なサポートを完全にサポートしています。
@@ -89,6 +91,6 @@ ms.locfileid: "80707356"
 
 - [従来の言語サービスでのブレークポイントの検証](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)

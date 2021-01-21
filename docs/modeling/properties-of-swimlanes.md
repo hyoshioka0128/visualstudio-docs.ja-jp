@@ -1,5 +1,7 @@
 ---
 title: スイムレーンのプロパティ
+description: スイムレーンによってダイアグラムが縦または横の領域に分割されるしくみ、およびスイムレーン内に表示される他の図形を定義する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,15 +13,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fef3b2115be499197030a4ce7fd49b1dd849de12
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76115367"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363069"
 ---
 # <a name="properties-of-swimlanes"></a>スイムレーンのプロパティ
-スイムレーンを図に追加できます。 スイムレーンは、図を垂直方向または水平方向の領域に分割します。 スイムレーン内に表示される他の図形を定義できます。 詳細については、「 [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。 これらのプロパティの使用方法の詳細については、「 [ドメイン固有言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
+スイムレーンを図に追加できます。 スイムレーンは、図を垂直方向または水平方向の領域に分割します。 スイムレーン内に表示される他の図形を定義できます。 詳細については、「 [Domain-Specific 言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。 これらのプロパティの使用方法の詳細については、「 [Domain-Specific 言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
 
  スイムレーンには、次の表に示すプロパティがあります。
 
@@ -33,18 +35,18 @@ ms.locfileid: "76115367"
 |テキストの色|このスイムレーンに関連付けられているテキストデコレーターに使用される色です。|Black|
 |アクセス修飾子|クラス (または) のアクセスレベル `public` `internal` 。|パブリック|
 |カスタム属性|このスイムレーンから生成されたコードクラスに属性を追加するために使用します。|\<none>|
-|2つの派生を生成します|`True`の場合、基本クラスと部分クラス (オーバーライドによるカスタマイズをサポートする) の両方が生成されます。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|×|
-|カスタムコンストラクターがある|`True`の場合、カスタムコンストラクターがソースコードで提供されます。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|×|
+|2つの派生を生成します|`True`の場合、基本クラスと部分クラス (オーバーライドによるカスタマイズをサポートする) の両方が生成されます。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|いいえ|
+|カスタムコンストラクターがある|`True`の場合、カスタムコンストラクターがソースコードで提供されます。 詳細については、「 [生成されたクラスのオーバーライドと拡張](../modeling/overriding-and-extending-the-generated-classes.md)」を参照してください。|いいえ|
 |継承修飾子|スイムレーン ( `none` 、または) から生成されるソースコードクラスの継承の種類について説明し `abstract` `sealed` ます。|なし|
 |ベーススイムレーン|このスイムレーンの基本クラス。|(なし)|
 |名前|このスイムレーンの名前。|現在の名前|
 |名前空間|このスイムレーンに関連する名前空間。|現在の名前空間|
 |ツールヒントの種類|ツールヒントの定義方法 ( `fixed` 、 `variable` 、または `none` )。 の場合、 `fixed` プロパティの値 `Fixed Tooltip Text` が使用されます。の場合 `variable` 、ツールヒントはカスタムコードで定義されます。|\<none>|
-|Notes|このスイムレーンに関連付けられている非公式のメモ。|\<none>|
+|メモ|このスイムレーンに関連付けられている非公式のメモ。|\<none>|
 |Alignment|水平方向または垂直方向の配置。|Vertical|
 |初期の高さ|このスイムレーンの初期の高さ (インチ単位)。 水平スイムレーンにのみ適用されます。|0|
 |初期の幅|このスイムレーンの初期の幅 (インチ単位)。 縦方向のスイムレーンにのみ適用されます。|0|
-|テキストの色を公開します|の場合 `True` 、ユーザーは、生成されたデザイナーでスイムレーンの色を設定できます。 これを設定するには、スイムレーン図形を右クリックし、[ **公開の追加**] をクリックします。|×|
+|テキストの色を公開します|の場合 `True` 、ユーザーは、生成されたデザイナーでスイムレーンの色を設定できます。 これを設定するには、スイムレーン図形を右クリックし、[ **公開の追加**] をクリックします。|いいえ|
 |説明|生成されたデザイナーを文書化するために使用します。|\<none>|
 |表示名|このスイムレーンクラスを参照するために生成されたデザイナーに表示される名前。|\<none>|
 |固定ツールヒントのテキスト|固定のツールヒントに使用されるテキスト。|\<none>|
@@ -52,4 +54,4 @@ ms.locfileid: "76115367"
 
 ## <a name="see-also"></a>関連項目
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

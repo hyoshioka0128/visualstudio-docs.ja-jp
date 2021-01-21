@@ -1,5 +1,7 @@
 ---
 title: ソース管理プラグインを使用したはじめに |Microsoft Docs
+description: ソース管理プラグイン API で定義されている関数を実装するソース管理プラグインを作成し、ソースコードのバージョン管理に使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: efc21e07830614d9d3041b2d2d231fd82c652114
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1524e4c4f08b272fd17973597d558efdabec41af
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708344"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480500"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>ソース管理プラグインを使ってみる
 ソース管理プラグインを作成するには、ソース管理プラグイン API で定義されている関数を実装する DLL を作成し、その DLL をに登録して、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ソースコードのバージョン管理で使用できるようにする必要があります。

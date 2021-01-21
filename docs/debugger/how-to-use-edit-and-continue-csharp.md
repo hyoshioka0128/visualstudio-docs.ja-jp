@@ -1,5 +1,7 @@
 ---
-title: 方法 - エディット コンティニュを使用する (C#) | Microsoft Docs
+title: エディット コンティニュを使用する (C#) | Microsoft Docs
+description: エディット コンティニュを使用して、Visual Studio でデバッグ セッションを停止して再開することなく、デバッグ中に中断モードでコードに変更を加えます。
+ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a88cff54679ac0deae32bfeeff1dd96526f19ea7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348861"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150653"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>方法: エディット コンティニュを使用する (C#)
 C# のエディット コンティニュを使用すると、デバッグ セッションを停止して再開することなく、デバッグ中に中断モードでコードに変更を加えることができます。

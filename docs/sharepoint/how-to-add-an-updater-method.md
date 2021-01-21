@@ -1,5 +1,7 @@
 ---
 title: '方法: Updater メソッドを追加する |Microsoft Docs'
+description: ユーザーが Updater メソッドを追加して SharePoint 外部リストのビジネスデータを更新できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -17,21 +19,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c76373c710908a8ae7edc49c4e26ff7e94336a6d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014985"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915376"
 ---
 # <a name="how-to-add-an-updater-method"></a>方法: Updater メソッドを追加する
-  ユーザーが *Updater* メソッドを作成することによって、SharePoint 外部リストのビジネスデータを更新できるようにすることができます。 詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+  ユーザーが *Updater* メソッドを作成することによって、SharePoint 外部リストのビジネスデータを更新できるようにすることができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
 ### <a name="to-create-an-updater-method"></a>Updater メソッドを作成するには
 
 1. BDC デザイナーで、エンティティを選択します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細**を表示] を選択します。
+2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
     [BDC メソッドの詳細] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
@@ -39,7 +41,7 @@ ms.locfileid: "86014985"
 
     Visual Studio によって、モデルに次の要素が追加されます。 これらの要素は、[BDC メソッドの詳細] ウィンドウに表示されます。
 
-   - **Update**という名前のメソッド。
+   - **Update** という名前のメソッド。
 
    - メソッドの入力パラメーター。
 
@@ -47,14 +49,14 @@ ms.locfileid: "86014985"
 
    - メソッドのメソッドインスタンス。
 
-     詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
+     詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
 
    > [!NOTE]
    > エンティティ型の識別子が、自動的に生成されないデータベーステーブル内のフィールドを表している場合は、[ **更新前のフィールド]** プロパティを [ **True**] に設定します。
 
-4. **ソリューションエクスプローラー**で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
+4. **ソリューションエクスプローラー** で、エンティティに対して生成されたサービスコードファイルのショートカットメニューを開き、[**コードの表示**] を選択します。
 
-    **コードエディター**で entity service コードファイルが開きます。 そのファイルの詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
+    **コードエディター** で entity service コードファイルが開きます。 そのファイルの詳細については、「 [ビジネスデータ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。
 
 5. Update メソッドにデータを更新するコードを追加します。 次の例では、AdventureWorks サンプルデータベースの連絡先に関する情報を SQL Server に更新します。
 
@@ -65,7 +67,7 @@ ms.locfileid: "86014985"
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]
 
 ## <a name="see-also"></a>関連項目
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)
 - [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)

@@ -1,6 +1,7 @@
 ---
 title: デバッガーでブレークポイントを使用する | Microsoft Docs
-ms.custom: ''
+description: 最も重要なデバッグ手法の 1 つであるブレークポイントについて説明します。 この記事では、ブレークポイント アクション、トレースポイント、条件などについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/30/2020
 ms.topic: how-to
 f1_keywords:
@@ -34,19 +35,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: c8487482b1d87ba87dfc3a8b1e07be1360227a2f
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769409"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150445"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでブレークポイントを使用する
 
 ブレークポイントは、開発者が利用できる重要なデバッグ手法の 1 つです。 デバッガーの実行を一時停止したい任意の場所に、ブレークポイントを設定します。 たとえば、特定のブレークポイントで、コードの変数の状態を確認したり、呼び出し履歴を調べたりすることができます。  ブレークポイントを使用して警告または問題を解決しようとしている場合は、「[Visual Studio デバッガーでのブレークポイントのトラブルシューティング](../debugger/troubleshooting-breakpoints.md)」を参照してください。
 
 > [!NOTE]
-> 解決しようとしているタスクまたは問題はわかっていても、使用するブレークポイントの種類を知る必要がある場合は、「[デバッグ タスクの検索](../debugger/find-your-debugging-task.md#pause-running-code)」を参照してください。
+> 解決しようとしているタスクまたは問題はわかっていても、使用するブレークポイントの種類を知る必要がある場合は、[FAQ - デバッグ機能の検索](../debugger/find-your-debugging-task.md#pause-running-code)に関するページを参照してください。
 
 ## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> ソース コードにブレークポイントを設定する
 
@@ -76,7 +77,7 @@ C# を含むほとんどの言語では、ブレークポイントと現在の�
 
 ## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>ブレークポイント アクションとトレースポイント
 
-*トレースポイント*は、 **[出力]** ウィンドウにメッセージを出力するブレークポイントです。 トレースポイントはプログラミング言語の一時的なトレース ステートメントのように機能し、コードの実行が一時停止されることはありません。 トレースポイントを作成するには、 **[ブレークポイント設定]** ウィンドウで特別なアクションを設定します。 詳細な手順については、[Visual Studio デバッガーでのトレースポイントの使用](../debugger/using-tracepoints.md)に関するページを参照してください。
+*トレースポイント* は、 **[出力]** ウィンドウにメッセージを出力するブレークポイントです。 トレースポイントはプログラミング言語の一時的なトレース ステートメントのように機能し、コードの実行が一時停止されることはありません。 トレースポイントを作成するには、 **[ブレークポイント設定]** ウィンドウで特別なアクションを設定します。 詳細な手順については、[Visual Studio デバッガーでのトレースポイントの使用](../debugger/using-tracepoints.md)に関するページを参照してください。
 
 ## <a name="breakpoint-conditions"></a>ブレークポイント条件
 
@@ -112,9 +113,7 @@ C# を含むほとんどの言語では、ブレークポイントと現在の�
 無効な構文でブレークポイント条件を設定すると、警告メッセージが表示されます。 有効な構文でブレークポイント条件を指定しても、セマンティクスが無効な場合は、ブレークポイントに初めて達したときに警告メッセージが表示されます。 どちらの場合でも、デバッガーは無効なブレークポイントにヒットすると中断されます。 ブレークポイント条件が有効で、評価結果が `false`の場合にのみ、ブレークポイントはスキップされます。
 
 >[!NOTE]
->**[変更された場合]** フィールドの動作は、プログラミング言語によって異なります。
->- ネイティブ コードの場合、デバッガーでは条件の最初の評価が変更と見なされないため、最初の評価ではブレークポイントにヒットしません。
->- マネージド コードの場合、デバッガーでは、 **[変更された場合]** がオンにされた後の最初の評価で、ブレークポイントにヒットします。
+> **[変更された場合]** フィールドの場合、デバッガーでは条件の最初の評価は変更とみなされないため、最初の評価ではブレークポイントにヒットしません。
 
 <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
 ### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a>条件式で オブジェクト ID を使用する (C#、F# のみ)

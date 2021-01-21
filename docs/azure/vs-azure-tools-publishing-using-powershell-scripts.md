@@ -1,20 +1,19 @@
 ---
 title: PowerShell を使用して開発環境とテスト環境に発行する
 description: Visual Studio から Windows PowerShell スクリプトを使用して、開発環境とテスト環境に発行する方法について説明します。
-ms.custom: vs-azure
+ms.custom: SEO-VS-2020
 author: ghogen
 manager: jillfra
-assetId: 5fff1301-5469-4d97-be88-c85c30f837c1
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 68b6075ab53fac8b5ac88bc3a15e591081c010da
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037173"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902144"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行
 
@@ -24,7 +23,7 @@ Visual Studio で Web アプリケーションを作成するときに、Azure �
 
 ## <a name="prerequisites"></a>前提条件
 
-* **Azure ワークロード**がインストールされた Visual Studio 2015 以降、または Visual Studio 2013 と Azure SDK 2.3 以降。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
+* **Azure ワークロード** がインストールされた Visual Studio 2015 以降、または Visual Studio 2013 と Azure SDK 2.3 以降。 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページをご覧ください。 (Web プロジェクトのスクリプトの生成に Azure SDK は不要です。 この機能は、クラウド サービスの Web ロールではなく、Web プロジェクトを対象としています。)
 * Azure PowerShell 0.7.4 以降。 「 [Azure PowerShell のインストールと構成の方法](/powershell/azure/overview)」を参照してください。
 * [Windows PowerShell 3.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) 以降。
 
@@ -156,7 +155,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
    詳細については、「 [方法: Visual Studio で Web 配置パッケージを作成する](/previous-versions/aspnet/dd465323(v=vs.110))」をご覧ください。 「[Customizing and extending the publish scripts](#customizing-and-extending-the-publish-scripts)」 (発行スクリプトのカスタマイズと拡張) で説明するように、Web 配置パッケージの作成を自動化することもできます。
 
-1. **ソリューション エクスプローラー**でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
+1. **ソリューション エクスプローラー** でスクリプトのコンテキスト メニューを開き、**[PowerShell ISE で開く]** をクリックします。
 1. このコンピューターで Windows PowerShell スクリプトを初めて実行した場合は、管理特権でコマンド プロンプト ウィンドウを開き、次のコマンドを入力します。
 
     ```powershell
@@ -206,9 +205,9 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
 
 ## <a name="customizing-and-extending-the-publish-scripts"></a>発行スクリプトのカスタマイズと拡張
 
-発行スクリプトと JSON 構成ファイルはカスタマイズできます。 **AzureWebAppPublishModule.psm1** Windows PowerShell モジュールの関数は、変更することを想定したものではありません。 別のデータベースを指定したり、仮想マシンの一部のプロパティを変更したりする場合は、JSON 構成ファイルを編集します。 プロジェクトのビルドとテストを自動化するためにスクリプトの機能を拡張する場合は、 **Publish-WebApplication.ps1**の関数スタブを実装できます。
+発行スクリプトと JSON 構成ファイルはカスタマイズできます。 **AzureWebAppPublishModule.psm1** Windows PowerShell モジュールの関数は、変更することを想定したものではありません。 別のデータベースを指定したり、仮想マシンの一部のプロパティを変更したりする場合は、JSON 構成ファイルを編集します。 プロジェクトのビルドとテストを自動化するためにスクリプトの機能を拡張する場合は、 **Publish-WebApplication.ps1** の関数スタブを実装できます。
 
-プロジェクトのビルドを自動化するには、次のコード例に示すように、MSBuild を呼び出すコードを `New-WebDeployPackage` に追加します。 MSBuild コマンドのパスは、インストールされている Visual Studio のバージョンによって異なります。 正しいパスを取得するには、この例に示すように、 **Get-MSBuildCmd**関数を使用します。
+プロジェクトのビルドを自動化するには、次のコード例に示すように、MSBuild を呼び出すコードを `New-WebDeployPackage` に追加します。 MSBuild コマンドのパスは、インストールされている Visual Studio のバージョンによって異なります。 正しいパスを取得するには、この例に示すように、 **Get-MSBuildCmd** 関数を使用します。
 
 ### <a name="to-automate-building-your-project"></a>プロジェクトのビルドを自動化するには
 
@@ -250,7 +249,7 @@ Azure に運用サイトが 1 つだけ存在するのでなく、複数のデ�
         #Write a function to build and package your web application
     ```
 
-    Web アプリケーションをビルドするには、MsBuild.exe を使用します。 詳細については、「 [MSBuild コマンドラインリファレンス](../msbuild/msbuild-command-line-reference.md)」を参照してください。
+    Web アプリケーションをビルドするには、MsBuild.exe を使用します。 詳細については、「 [MSBuild Command-Line リファレンス](../msbuild/msbuild-command-line-reference.md)」を参照してください。
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -306,7 +305,7 @@ return $WebDeployPackage
     アプリケーションのテストを自動化するには、 `Test-WebApplication`にコードを追加します。 **Publish-WebApplication.ps1** で、これらの関数が呼び出されている行のコメントを必ず解除してください。 これを実装しない場合は、Visual Studio でプロジェクトを手動でビルドし、発行スクリプトを実行して Azure に発行できます。
 
 ## <a name="publishing-function-summary"></a>発行関数の概要
-Windows PowerShell コマンド プロンプトで使用できる関数のヘルプを取得するには、 `Get-Help function-name`コマンドを使用します。 ヘルプには、パラメーターのヘルプと例が含まれています。 同じヘルプテキストが、スクリプトソースファイル **azurewebapppublishmodule.psm1 hbase-runner.psm1** と **Publish-WebApplication.ps1**にも含まれています。 スクリプトとヘルプは、Visual Studio の言語でローカライズされています。
+Windows PowerShell コマンド プロンプトで使用できる関数のヘルプを取得するには、 `Get-Help function-name`コマンドを使用します。 ヘルプには、パラメーターのヘルプと例が含まれています。 同じヘルプテキストが、スクリプトソースファイル **azurewebapppublishmodule.psm1 hbase-runner.psm1** と **Publish-WebApplication.ps1** にも含まれています。 スクリプトとヘルプは、Visual Studio の言語でローカライズされています。
 
 **AzureWebAppPublishModule**
 

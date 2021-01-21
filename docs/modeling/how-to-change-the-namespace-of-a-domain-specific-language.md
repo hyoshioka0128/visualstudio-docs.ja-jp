@@ -1,20 +1,23 @@
 ---
 title: '方法: ドメイン固有言語の名前空間を変更する'
+description: ドメイン固有言語の名前空間を変更する方法について説明します。
 ms.date: 10/31/2018
 ms.topic: how-to
+titleSuffix: ''
 helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff7c73694cb53f7fbea21514feeaab4abce3f29
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85542676"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809441"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>方法: ドメイン固有言語の名前空間を変更する
 
@@ -52,6 +55,6 @@ ms.locfileid: "85542676"
 
 11. [ **ビルド** ] メニューの [ **ソリューションのリビルド**] をクリックします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-[ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

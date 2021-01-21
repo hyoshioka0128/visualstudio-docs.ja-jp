@@ -1,5 +1,7 @@
 ---
 title: Visual Studio でのデータの使用
+description: Visual Studio でデータを操作します。 ローカルコンピューター、Lan、またはパブリッククラウドまたはプライベートクラウドを介して、他のデータベース製品またはサービスのデータに接続するアプリを作成します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc3d3fd0b002c110e9184a6d7b15c9fa367c48
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509836"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518740"
 ---
 # <a name="work-with-data-in-visual-studio"></a>Visual Studio でのデータの使用
 
@@ -26,10 +28,10 @@ Visual Studio では、ローカルコンピューター、ローカルエリア
 JavaScript、Python、PHP、Ruby、または C++ のアプリケーションでは、ライブラリを入手してコードを記述することで、他の操作と同様にデータに接続できます。 .NET アプリケーションの場合、Visual Studio には、データソースの探索、メモリ内のデータを格納および操作するためのオブジェクトモデルの作成、およびユーザーインターフェイスへのデータのバインドに使用できるツールが用意されています。 Microsoft Azure には、.NET、Java、Node.js、PHP、Python、Ruby、モバイルアプリ用の Sdk と、Azure Storage に接続するための Visual Studio のツールが用意されています。
 
 ::: moniker range="vs-2017"
-次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。 [Visual studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)の**azure 開発**ワークロードを使用すると、Visual studio から直接 azure データストアを操作できます。
+次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。 [Visual studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)の **azure 開発** ワークロードを使用すると、Visual studio から直接 azure データストアを操作できます。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。 [Visual studio 2019](https://visualstudio.microsoft.com/downloads)の**azure 開発**ワークロードを使用すると、Visual studio から直接 azure データストアを操作できます。
+次の一覧は、Visual Studio から使用できる多くのデータベースおよびストレージシステムを示しています。 [Microsoft Azure](https://azure.microsoft.com/)オファリングは、基になるデータストアのすべてのプロビジョニングと管理を含むデータサービスです。 [Visual studio 2019](https://visualstudio.microsoft.com/downloads)の **azure 開発** ワークロードを使用すると、Visual studio から直接 azure データストアを操作できます。
 ::: moniker-end
 
 ![[Azure の開発] ワークロード](media/azure-development-workload.png)
@@ -70,13 +72,13 @@ JavaScript、Python、PHP、Ruby、または C++ のアプリケーションで�
 
 ::: moniker range="vs-2017"
 
-多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の nuget パッケージマネージャー ([**ツール**] [  >  **nuget パッケージマネージャー**] [  >  **ソリューションの nuget パッケージの管理**]) でオファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらの製品は、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、[**ツール**  >  ] [**拡張機能と更新プログラム**] に移動して、ダイアログボックスの左側のウィンドウで [**オンライン**] を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
+多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の nuget パッケージマネージャー ([ **ツール** ] [  >  **nuget パッケージマネージャー** ] [  >  **ソリューションの nuget パッケージの管理** ]) でオファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらの製品は、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、[ **ツール**  >  ] [ **拡張機能と更新プログラム** ] に移動して、ダイアログボックスの左側のウィンドウで [ **オンライン** ] を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の nuget パッケージマネージャー ([**ツール**] [  >  **nuget パッケージマネージャー**] [  >  **ソリューションの nuget パッケージの管理**]) でオファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらの製品を参照するには、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、[**拡張**機能の管理] に移動して、  >  **Manage Extensions**ダイアログボックスの左側のウィンドウで [**オンライン**] を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
+多くのデータベースベンダーとサードパーティは、NuGet パッケージによる Visual Studio の統合をサポートしています。 Nuget.org または Visual Studio の nuget パッケージマネージャー ([ **ツール** ] [  >  **nuget パッケージマネージャー** ] [  >  **ソリューションの nuget パッケージの管理** ]) でオファリングを調べることができます。 その他のデータベース製品は、拡張機能として Visual Studio と統合されます。 これらの製品を参照するには、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)で参照するか、[ **拡張** 機能の管理] に移動して、  >  **Manage Extensions** ダイアログボックスの左側のウィンドウで [ **オンライン** ] を選択します。 詳細については、「 [Visual Studio の互換性のあるデータベースシステム](../data-tools/installing-database-systems-tools-and-samples.md)」を参照してください。
 
 ::: moniker-end
 
@@ -113,7 +115,7 @@ ADO.NET で使用するデータベースには、カスタム *ADO.NET デー�
 
 ## <a name="native-c"></a>ネイティブ C++
 
-SQL Server に接続する C++ アプリケーションでは、ほとんどの場合、 [SQL Server に Microsoft® ODBC ドライバー 13.1](https://www.microsoft.com/download/details.aspx?id=53339) を使用する必要があります。 サーバーがリンクされている場合は、OLE DB が必要です。そのためには、 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。 OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。 詳細については、「 [Visual C++ でのデータアクセス](/cpp/data/data-access-in-cpp)」を参照してください。
+SQL Server に接続する C++ アプリケーションでは、ほとんどの場合、 [SQL Server に Microsoft® ODBC ドライバー 13.1](https://www.microsoft.com/download/details.aspx?id=53339) を使用する必要があります。 サーバーがリンクされている場合は、OLE DB が必要です。そのためには、 [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)を使用します。 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true)または OLE DB ドライバーを直接使用して、他のデータベースにアクセスできます。 ODBC は現在の標準データベースインターフェイスですが、ほとんどのデータベースシステムは、ODBC インターフェイスを使用してアクセスできないカスタム機能を提供しています。 OLE DB は、従来の COM データアクセステクノロジであり、新しいアプリケーションでは引き続きサポートされますが、お勧めできません。 詳細については、「[Visual C++ でのデータ アクセス](/cpp/data/data-access-in-cpp)」を参照してください。
 
 REST サービスを使用する c++ プログラムでは、 [C++ REST SDK](https://github.com/Microsoft/cpprestsdk)を使用できます。
 

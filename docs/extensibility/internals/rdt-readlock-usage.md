@@ -1,5 +1,7 @@
 ---
 title: RDT_ReadLock 使用法 |Microsoft Docs
+description: _VSRDTFLAGS について説明します。RDT_ReadLock フラグ。実行中のドキュメントテーブル内のドキュメントをロックするためのロジックを提供します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb897fab61e1e14b52863b5853748c685200d5ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c946d69cf1aded072d27e7c6ccbdf28f1122571
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705927"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875389"
 ---
 # <a name="rdt_readlock-usage"></a>RDT_ReadLock の使用法
 
@@ -36,7 +38,7 @@ ms.locfileid: "80705927"
 
 ## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock とドキュメントの変更
 
-前に説明したフラグは、ドキュメントが表示されているドキュメント `RDT_EditLock` **ウィンドウ**にユーザーがドキュメントを開いたときに、ドキュメントを開いていない状態になったときに、それを生成することを示しています。 この場合、表示されている**Documentwindow**が閉じられると、ユーザーには**保存**を求めるメッセージが表示されます。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` サービスを使用する実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> は、のみを取得した場合 `RDT_ReadLock` (つまり、ドキュメントが開いているときに情報を解析するために開かれた場合) に最初に動作します。 その後、ドキュメントを変更する必要がある場合は、ロックが脆弱な **RDT_EditLock**にアップグレードされます。 その後、ユーザーが表示されている **Documentwindow**でドキュメントを開くと、 `CodeModel` の脆弱 `RDT_EditLock` なが解放されます。
+前に説明したフラグは、ドキュメントが表示されているドキュメント `RDT_EditLock` **ウィンドウ** にユーザーがドキュメントを開いたときに、ドキュメントを開いていない状態になったときに、それを生成することを示しています。 この場合、表示されている **Documentwindow** が閉じられると、ユーザーには **保存** を求めるメッセージが表示されます。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` サービスを使用する実装 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> は、のみを取得した場合 `RDT_ReadLock` (つまり、ドキュメントが開いているときに情報を解析するために開かれた場合) に最初に動作します。 その後、ドキュメントを変更する必要がある場合は、ロックが脆弱な **RDT_EditLock** にアップグレードされます。 その後、ユーザーが表示されている **Documentwindow** でドキュメントを開くと、 `CodeModel` の脆弱 `RDT_EditLock` なが解放されます。
 
 その後、ユーザーがドキュメント **ウィンドウ** を閉じて、開いているドキュメントを保存するように求められたときに [ **いいえ** ] を選択すると、実装はドキュメント `CodeModel` 内のすべての情報を破棄し、ドキュメントの追加情報が次に必要になったときには非表示になります。 この動作のはらみは、ユーザーが表示されていない開いているドキュメントの **Documentwindow** を開き、それを変更して閉じ、ドキュメントを保存するように求められたときに [ **いいえ** ] を選択したインスタンスです。 この場合、ドキュメントにが含まれていると、ドキュメントは実際には `RDT_ReadLock` 閉じられず、ユーザーがドキュメントを保存しないことを選択した場合でも、変更されたドキュメントはメモリ内で非表示になります。
 

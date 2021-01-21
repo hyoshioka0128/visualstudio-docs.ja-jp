@@ -1,5 +1,7 @@
 ---
 title: Spy++ ヘルプ | Microsoft Docs
+description: Spy++ および Spy++ ビューの使用方法に関するリンクを表示します。 使用可能なそれぞれの Spy++ メニュー コマンドおよびダイアログ ボックスについて詳細を提供する参照リンクを参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f5e9caecb6d5ae2023bce9c1ef2ea0d73c66be3
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929788"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148027"
 ---
 # <a name="spy-help"></a>Spy++ ヘルプ
 Spy++ ユーティリティのドキュメントには、Spy++ の使用と Spy++ ビューに関する 2 つのグループの一般的なトピックが含まれています。 これらの後には Spy++ リファレンスがあり、使用可能な各メニュー コマンドおよびダイアログ ボックスの詳細が表示されます。
@@ -32,7 +34,7 @@ Spy++ ユーティリティのドキュメントには、Spy++ の使用と Spy+
 
  [Spy++ ビュー用の検索ツール](../debugger/search-tools-for-spy-increment-views.md) Spy++ ビュー ウィンドウで特定のノードを検索するために使用されるダイアログ ボックス。
 
- [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md) ウィンドウ ビューで選択されたウィンドウのプロパティを表示するために使用されます。
+ [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md) ウィンドウ ビューで選択したウィンドウのプロパティを表示するために使用します。
 
  [[メッセージ オプション] ダイアログ ボックス](../debugger/message-options-dialog-box.md) メッセージ ビューに一覧表示されるメッセージを選択するために使用されます。
 

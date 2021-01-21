@@ -1,5 +1,8 @@
 ---
 title: SharePoint 用のサイト列、コンテンツタイプ、およびリストの作成 |Microsoft Docs
+titleSuffix: ''
+description: SharePoint のサイト列、コンテンツタイプ、およびリストを作成します。 Visual Studio には、これらの種類の SharePoint アイテムのプロジェクトアイテムテンプレートが用意されています。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,15 +21,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72984513"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850521"
 ---
-# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint のサイト列、コンテンツタイプ、およびリストの作成
-  Visual Studio には、 *リスト* や *コンテンツの種類*など、さまざまな基本的な SharePoint アイテムのプロジェクトアイテムテンプレートが用意されています。このテンプレートには、サイトの列 (または *フィールド*) を組み込むことができます。 コンテンツの種類とリストの新しい設計者は、これらの項目をこれまで以上に簡単に作成できるようにします。
+# <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint のサイト列、コンテンツ タイプ、リストの作成
+  Visual Studio には、 *リスト* や *コンテンツの種類* など、さまざまな基本的な SharePoint アイテムのプロジェクトアイテムテンプレートが用意されています。このテンプレートには、サイトの列 (または *フィールド*) を組み込むことができます。 コンテンツの種類とリストの新しい設計者は、これらの項目をこれまで以上に簡単に作成できるようにします。
 
 ## <a name="site-columns"></a>サイト内の列
  サイト列は、SharePoint プロジェクトに追加できる最も基本的な要素の1つです。 サイト列は、連絡先リストに含まれる連絡先の電話番号、コメント、市区町村名などのデータの種類を表します。
@@ -46,7 +49,7 @@ ms.locfileid: "72984513"
 
 |Title|説明|
 |-----------|-----------------|
-|[チュートリアル: SharePoint のサイト列、コンテンツタイプ、およびリストの作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|カスタムコンテンツタイプで使用されるサイト列を作成する方法を示します。 コンテンツタイプは、カスタムリストで使用されます。|
+|[チュートリアル: SharePoint のサイト列、コンテンツ タイプ、リストの作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|カスタムコンテンツタイプで使用されるサイト列を作成する方法を示します。 コンテンツタイプは、カスタムリストで使用されます。|
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint 2010 で開発を開始する](/sharepoint/dev/)

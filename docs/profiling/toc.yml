@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: チュートリアル
   items:
-    - name: Visual Studio でのアプリケーション パフォーマンスのプロファイリング
+    - name: Visual Studio でのアプリケーション パフォーマンスの測定
       href: beginners-guide-to-performance-profiling.md
-    - name: Visual Studio でのメモリ使用のプロファイリング
+    - name: Visual Studio でのメモリ使用量の測定
       href: memory-usage.md
 - name: 概念
   items:
@@ -34,6 +34,8 @@
       href: perftips.md
     - name: .NET Async
       href: analyze-async.md
+    - name: .NET カウンター
+      href: dotnet-counters-tool.md
     - name: データベース
       href: analyze-database.md
     - name: イベント ビューアー

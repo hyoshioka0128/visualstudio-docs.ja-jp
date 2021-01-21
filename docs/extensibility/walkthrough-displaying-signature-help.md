@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: シグネチャのヘルプを表示する |Microsoft Docs'
+description: このチュートリアルを使用して、テキストコンテンツタイプの署名のヘルプを表示する方法について説明します。 シグネチャヘルプは、メソッドのシグネチャをツールヒントに表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b88c8555904bb31c2804579459ad3096d640b0c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904815"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876247"
 ---
 # <a name="walkthrough-display-signature-help"></a>チュートリアル: 署名のヘルプを表示する
-シグネチャヘルプ ( *パラメーターヒント*とも呼ばれます) は、ユーザーがパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、ツールヒントにメソッドの署名を表示します。 パラメーターとパラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。 シグネチャヘルプは、次の方法で定義できます。言語サービスのコンテキストでは、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類の署名のヘルプを表示します。または、既存のコンテンツの種類 (たとえば、"text") の署名のヘルプを表示します。 このチュートリアルでは、"text" コンテンツタイプのシグネチャヘルプを表示する方法について説明します。
+シグネチャヘルプ ( *パラメーターヒント* とも呼ばれます) は、ユーザーがパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、ツールヒントにメソッドの署名を表示します。 パラメーターとパラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。 シグネチャヘルプは、次の方法で定義できます。言語サービスのコンテキストでは、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類の署名のヘルプを表示します。または、既存のコンテンツの種類 (たとえば、"text") の署名のヘルプを表示します。 このチュートリアルでは、"text" コンテンツタイプのシグネチャヘルプを表示する方法について説明します。
 
  シグネチャヘルプは、通常、特定の文字 (左かっこ) を入力することによってトリガーされ、別の文字 (")" (右かっこ) を入力することによって無視されます。 文字の入力によってトリガーされる IntelliSense 機能を実装するには、キーストローク (インターフェイス) のコマンドハンドラー <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> と、インターフェイスを実装するハンドラープロバイダーを使用し <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ます。 シグネチャヘルプに参加する署名の一覧である Signature ヘルプソースを作成するには、インターフェイス <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> と、インターフェイスを実行するソースプロバイダーを実装し <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> ます。 プロバイダーは Managed Extensibility Framework (MEF) コンポーネントのパーツであり、ソースとコントローラーのクラスをエクスポートし、サービスとブローカーをインポートし <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> ます。たとえば、テキストバッファー内を移動できるようにしたり、 <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> 署名ヘルプセッションをトリガーするを使用したりします。
 

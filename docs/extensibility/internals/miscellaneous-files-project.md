@@ -1,5 +1,7 @@
 ---
 title: その他のファイルプロジェクト |Microsoft Docs
+description: Visual Studio プロジェクトでファイルを開くために使用できる2種類のエディターと、使用するエディターを決定するプロジェクトのロールについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,19 +15,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95cc1312fb7b381e1e20df834698480295fadcc8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707095"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876780"
 ---
 # <a name="miscellaneous-files-project"></a>その他のファイル プロジェクト
 ユーザーがプロジェクト項目を開くと、IDE はその他のファイルプロジェクトに、ソリューション内のプロジェクトのメンバーではないすべての項目を割り当てます。
 
  プロジェクトは、ユーザーがプロジェクト項目を開いたときにどのエディターが使用されるかを決定するうえで重要な役割を果たします。 プロジェクトは、プロジェクト固有のエディターまたは標準エディターを使用して、特定のファイルを開くように設計できます。
 
- プロジェクト固有のエディターでは、通常、ユーザーが特別な知識を持っているか、またはプロジェクトから特殊なインターフェイスを使用している必要があります。 詳細については、「 [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)」を参照してください。
+ プロジェクト固有のエディターでは、通常、ユーザーが特別な知識を持っているか、またはプロジェクトから特殊なインターフェイスを使用している必要があります。 詳細については、「 [方法: Project-Specific エディターを開く](../../extensibility/how-to-open-project-specific-editors.md)」を参照してください。
 
  標準エディターでは、任意のプロジェクトで特定の拡張機能の任意のファイルを開くことができます。 ユーザーは、プロジェクトのために、テキストエディターなどの一部の標準エディターをカスタマイズでき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ますが、パブリック文字は引き続き保持できます。 標準エディターは、メソッドを使用して作成され <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> ます。
 

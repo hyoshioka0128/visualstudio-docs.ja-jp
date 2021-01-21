@@ -1,5 +1,7 @@
 ---
 title: '&lt;PackageFiles &gt; 要素 (ブートストラップ) |Microsoft Docs'
+description: PackageFiles 要素について説明します。この要素には、コマンド要素の結果として実行されるインストールパッケージを定義する PackageFile 要素が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66747513"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349543"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 要素 (ブートストラップ)
 要素には、要素 `PackageFiles` `PackageFile` の結果として実行されるインストールパッケージを定義する要素が含まれ `Command` ます。
@@ -46,7 +48,7 @@ ms.locfileid: "66747513"
 
 |属性|説明|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|省略可能。 に設定すると、 `false` インストーラーは要素から参照されるファイルのみをダウンロードし `Command` ます。 に設定すると `true` 、すべてのファイルがダウンロードされます。<br /><br /> に設定すると、インストーラーは、 `IfNotHomesite` がに設定されている場合と同じように動作し `False` `ComponentsLocation` `HomeSite` ます。それ以外の場合は、と同じように動作し `True` ます。 この設定は、ブートストラップ自体のパッケージが HomeSite シナリオで独自の動作を実行することを許可するのに役立ちます。<br /><br /> 既定値は、`true` です。|
+|`CopyAllPackageFiles`|任意。 に設定すると、 `false` インストーラーは要素から参照されるファイルのみをダウンロードし `Command` ます。 に設定すると `true` 、すべてのファイルがダウンロードされます。<br /><br /> に設定すると、インストーラーは、 `IfNotHomesite` がに設定されている場合と同じように動作し `False` `ComponentsLocation` `HomeSite` ます。それ以外の場合は、と同じように動作し `True` ます。 この設定は、ブートストラップ自体のパッケージが HomeSite シナリオで独自の動作を実行することを許可するのに役立ちます。<br /><br /> 既定値は、`true` です。|
 
 ## <a name="packagefile"></a>PackageFile
  要素は `PackageFile` 要素の子です `PackageFiles` 。 要素には、 `PackageFiles` 少なくとも1つの要素が必要 `PackageFile` です。
@@ -56,10 +58,10 @@ ms.locfileid: "66747513"
 | 属性 | 説明 |
 |---------------| - |
 | `Name` | 必須。 パッケージ ファイルの名前。 これは、 `Command` パッケージがインストールされる条件を定義するときに要素が参照する名前です。 この値は、テーブルのキーとしても使用され `Strings` ます。この名前は、などのツールが [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] パッケージの記述に使用するローカライズされた名前を取得するために使用されます。 |
-| `HomeSite` | 省略可能。 リモートサーバー上のパッケージの場所 (インストーラーに含まれていない場合)。 |
-| `CopyOnBuild` | 省略可能。 ブートストラップがビルド時にパッケージファイルをディスクにコピーするかどうかを指定します。 既定値は true です。 |
+| `HomeSite` | 任意。 リモートサーバー上のパッケージの場所 (インストーラーに含まれていない場合)。 |
+| `CopyOnBuild` | 任意。 ブートストラップがビルド時にパッケージファイルをディスクにコピーするかどうかを指定します。 既定値は true です。 |
 | `PublicKey` | パッケージの証明書署名者の暗号化された公開キー。 を使用する場合は必須。 `HomeSite` それ以外の場合は省略可能。 |
-| `Hash` | 省略可能。 パッケージファイルの SHA1 ハッシュ。 これは、インストール時にファイルの整合性を確認するために使用されます。 パッケージファイルから同じハッシュを計算できない場合、パッケージはインストールされません。 |
+| `Hash` | 任意。 パッケージファイルの SHA1 ハッシュ。 これは、インストール時にファイルの整合性を確認するために使用されます。 パッケージファイルから同じハッシュを計算できない場合、パッケージはインストールされません。 |
 
 ## <a name="example"></a>例
  次のコード例では、.NET Framework 再頒布可能パッケージとその依存関係 (Windows インストーラーなど) のパッケージを定義します。

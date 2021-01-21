@@ -1,6 +1,7 @@
 ---
 title: 不正なパラメーター値が渡された原因を見つける | Microsoft Docs
-ms.custom: seodec18
+Description: どのコードによって関数が呼び出され、正しくないパラメーター値が渡されているかを確認できます。 条件付きブレークポイントを使用してこれを行う方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00327315b98c4b55797187c59db3a81ee351fb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: de87da994dfab59d5df618671737003beea9678b
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350343"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398312"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>引数に不正な値が渡された原因を見つけるには
 ## <a name="problem-description"></a>問題の説明
@@ -53,5 +54,5 @@ ms.locfileid: "85350343"
 
 ## <a name="see-also"></a>関連項目
 - [ネイティブ コードのデバッグに関する FAQ](../debugger/debugging-native-code-faqs.md)
-- [ブレークポイント](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)
+- [ブレークポイント](/previous-versions/ktf38f66(v=vs.100))
 - [ネイティブ コードのデバッグ](../debugger/debugging-native-code.md)

@@ -1,5 +1,7 @@
 ---
-title: '方法: ClickOnce のセキュリティ設定を有効にする |Microsoft Docs'
+title: ClickOnce セキュリティ設定を有効にする |Microsoft Docs
+description: 発行ウィザードが ClickOnce アプリケーションのコードアクセスセキュリティを自動的に有効にしてアプリケーションを公開する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,23 +18,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382433"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351168"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>方法: ClickOnce のセキュリティ設定を有効にする
 アプリケーションを発行するには、ClickOnce アプリケーションのコードアクセスセキュリティを有効にする必要があります。 これは、発行ウィザードを使用してアプリケーションを発行するときに自動的に実行されます。
 
  場合によっては、アプリケーションをビルドまたはデバッグするときに、コードアクセスセキュリティを有効にするとパフォーマンスが低下することがあります。このような場合は、セキュリティ設定を一時的に無効にすることをお勧めします。
 
- ClickOnce のセキュリティ設定は、**プロジェクトデザイナー**の [**セキュリティ**] ページで有効または無効にすることができます。
+ ClickOnce のセキュリティ設定は、 **プロジェクトデザイナー** の [ **セキュリティ** ] ページで有効または無効にすることができます。
 
 ### <a name="to-enable-clickonce-security-settings"></a>ClickOnce セキュリティ設定を有効にするには
 
-1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
 2. **[セキュリティ]** タブをクリックします。
 
@@ -45,7 +47,7 @@ ms.locfileid: "85382433"
 
 ### <a name="to-disable-clickonce-security-settings"></a>ClickOnce のセキュリティ設定を無効にするには
 
-1. **ソリューション エクスプローラー**でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
+1. **ソリューション エクスプローラー** でプロジェクトを選択し、 **[プロジェクト]** メニューの **[プロパティ]** をクリックします。
 
 2. **[セキュリティ]** タブをクリックします。
 

@@ -1,8 +1,8 @@
 ---
-title: 'Visual Studio のドキュメント:2020 年 7 月の最新情報 '
+title: 'Visual Studio のドキュメント:2021 年 12 月の新機能 '
 titleSuffix: ''
-description: 2020 年 7 月の Visual Studio ドキュメントの最新情報。
-ms.date: 08/06/2020
+description: 2021 年 12 月の Visual Studio ドキュメントの新機能。
+ms.date: 01/11/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
@@ -15,105 +15,83 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f5ac8944120d5a48ab0f199d19376423abd2eb
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.openlocfilehash: 8dfa3c6ec4655edf6313bea2e68b995ae8b3f9b0
+ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714462"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98113568"
 ---
-# <a name="visual-studio-docs-whats-new-in-the-docs-for-july-2020"></a>Visual Studio のドキュメント:2020 年 7 月のドキュメントの最新情報
+# <a name="visual-studio-docs-whats-new-for-december-2021"></a>Visual Studio のドキュメント:2021 年 12 月の新機能
 
-2020 年 7 月の Visual Studio ドキュメントの最新情報へようこそ。 この記事では、この期間中にドキュメントに加えられた大きな変更の一部を一覧で示します。
+2020 年 12 月の Visual Studio ドキュメントの新機能へようこそ。 この記事では、この期間中にドキュメントに加えられた大きな変更の一部を一覧で示します。 以前の月の新機能については、[新機能の履歴](whats-new-visual-studio-docs-history.md)に関する記事を参照してください。
+
+## <a name="azure"></a>Azure
+
+**新しい記事**
+
+- [Visual Studio 接続済みサービスを使用した Azure App Configuration の追加](../azure/vs-azure-tools-connected-services-app-configuration.md) - App Configuration 接続済みサービスのチュートリアル
 
 ## <a name="code-quality"></a>コード品質
 
-**新しい記事**
+**更新された記事**
 
-- [CA1417:P/Invoke の文字列パラメーターに `OutAttribute` を使用しない](/visualstudio/code-quality/ca1417) - CA1417 のドキュメントを追加
-- [CA1805:不必要に初期化しない。](/visualstudio/code-quality/ca1805) - CA1805 のドキュメントを追加
-- [CA1836:使用可能な場合は、Count よりも IsEmpty を優先します](/visualstudio/code-quality/ca1836) - CA1836 の記事を追加 (Count よりも IsEmpty を優先します)
-- [CA2016:CancellationToken パラメーターを 1 つのメソッドに転送する](/visualstudio/code-quality/ca2016) - ドキュメント CA2016 - CancellationToken パラメーターを 1 つのメソッドに転送する
-- [CA2350:DataTable.ReadXml() の入力が信頼されていることを確認してください](/visualstudio/code-quality/ca2350) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2351:DataSet.ReadXml() の入力が信頼されていることを確認してください](/visualstudio/code-quality/ca2351) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2352:シリアル化可能な型の安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](/visualstudio/code-quality/ca2352) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2353:シリアル化可能な型の安全でない DataSet または DataTable](/visualstudio/code-quality/ca2353) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2354:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable は、リモート コード実行攻撃に対して脆弱になる可能性があります](/visualstudio/code-quality/ca2354) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2355:逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable](/visualstudio/code-quality/ca2355) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
-- [CA2356:Web の逆シリアル化されたオブジェクト グラフの安全でない DataSet または DataTable 型](/visualstudio/code-quality/ca2356) - DataSet または DataTable の初期逆シリアル化規則に関するドキュメント
+- [概要](../code-quality/use-roslyn-analyzers.md) - editorconfig を使用したコマンド ラインからのビルド
+- [ファーストパーティの .NET アナライザーを有効またはインストールする](../code-quality/install-net-analyzers.md)
+  - FxCopAnalyzers から NetAnalyzers への移行に関するドキュメントをより明確にする
+  - .NET アナライザーの目次を再配置する
+- [FxCop アナライザーから .NET アナライザーに移行する](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) - FxCopAnalyzers から NetAnalyzers への移行に関するドキュメントをより明確にする
 
 ## <a name="containers"></a>コンテナー
 
-**新しい記事**
+**更新された記事**
 
-- [Local Process with Kubernetes を構成する](/visualstudio/containers/configure-local-process-with-kubernetes) - Local Process with Kubernetes: yaml の構成
-- [Local Process with Kubernetes (プレビュー) の使用](/visualstudio/containers/local-process-kubernetes) - 開発スペースの移行
-- [Local Process with Kubernetes のしくみ](/visualstudio/containers/overview-local-process-kubernetes)
-  - Local Process for Kubernetes:ルーティング セクションの追加
-  - 開発スペースの移行
+- [Docker を使用した Visual Studio 開発のトラブルシューティング](../containers/troubleshooting-docker-errors.md) - Docker for Visual Studio トラブルシューティング ガイドの更新
 
-## <a name="cross-platform"></a>クロス プラットフォーム
+## <a name="debugger"></a>デバッガー
 
 **更新された記事**
 
-- [変更ログ (Visual Studio Tools for Unity、Windows)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity) - Bump VSTU 変更ログ 4.7.1.0
-- [変更ログ (Visual Studio Tools for Unity、Mac)](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac) - Bump VSTUM 変更ログ 2.7.1.0
+- [FAQ - Visual Studio で必要なデバッグ機能を見つける](../debugger/find-your-debugging-task.md) - デバッグ タスクおよび概要のトピックを見つけるための検出作業
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業開始
 
-**新しい記事**
+**更新された記事**
 
-- [チュートリアル: シンプルな C# コンソール アプリを拡張する](/visualstudio/get-started/csharp/tutorial-console-part-2) - 拡張路上チュートリアルの最初のバージョンをリリース
+- [プロジェクトとソリューションの概要](../get-started/tutorial-projects-solutions.md)
+  - ソリューションおよびプロジェクトのトピックに対する更新
+  - tutorial-projects-solutions.md の更新
+  - メニュー オプションで見つからない
+- [チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する](../get-started/csharp/tutorial-console.md) - C# コンソール チュートリアル: VS 2019 にはパート 2 のみ適用されます
 
 ## <a name="ide"></a>IDE
 
-**新しい記事**
+**更新された記事**
 
-- [Developer Community のガイドライン](/visualstudio/ide/developer-community-guidelines) - DevCom ガイドラインを追加
-- [インポートされていない型と拡張メソッドに対する IntelliSense 入力候補](/visualstudio/ide/reference/intellisense-completion-unimported-types-extension-methods)
-
-## <a name="install"></a>インストール
-
-**新しい記事**
-
-- [最小限のオフライン レイアウトを使用して Visual Studio を更新する](/visualstudio/install/update-minimal-layout) - 最小限のレイアウト機能に関するドキュメント
-- [Visual Studio 企業向けガイド](/visualstudio/install/visual-studio-enterprise-guide) - 企業向けガイド
-
-## <a name="javascript"></a>JavaScript
-
-**新しい記事**
-
-- [TypeScript コードのコンパイル (Node.js)](/visualstudio/javascript/compile-typescript-code-npm) - TypeScript のコンパイルとビルド
-- [TypeScript コードのコンパイル (ASP.NET Core)](/visualstudio/javascript/compile-typescript-code-nuget) - TypeScript のコンパイルとビルド
-
-## <a name="msbuild"></a>MSBuild
-
-**新しい記事**
-
-- [一般的な MSBuild 項目メタデータ](/visualstudio/msbuild/common-msbuild-item-metadata) - MSBuild: Link と LinkBase の省略可能なメタデータに関する表を追加
-- [MSBuild でのソリューション フィルター](/visualstudio/msbuild/solution-filters) - MSBuild のソリューション フィルター
+- [Visual Studio でのソリューションとプロジェクト](./solutions-and-projects-in-visual-studio.md) - ソリューションおよびプロジェクトのトピックに対する更新
+- [Visual Studio での新しいプロジェクトの作成](./create-new-project.md)
+  - スクリーンショットおよび図用の代替テキストの調整
+  - ソリューションおよびプロジェクトのトピックに対するその他の更新
+- [IDE エラーのトラブルシューティング用のリソース](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) - 古くなったフォーラム リソース セクションの改訂
+- [ソリューションとプロジェクトの使用](./creating-solutions-and-projects.md) - ソリューションとプロジェクトのトピックに対するその他の更新
+- [Visual Studio または Visual Studio Installer に関する問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)
+  - スクリーンショットの更新
+  - 開発者コミュニティの変更
+- [Visual Studio のパフォーマンスに関するヒントとテクニック](./visual-studio-performance-tips-and-tricks.md) - 「診断ツールを無効にする」セクションの更新
 
 ## <a name="test"></a>テスト
 
-**新しい記事**
-
-- [テスト エクスプローラーを使用した単体テストのデバッグと分析](/visualstudio/test/debug-unit-tests-with-test-explorer) - テスト エクスプローラーのパフォーマンス作業
-
 **更新された記事**
 
-- [ *.runsettings* ファイルを使用して単体テストを構成する](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
-  - runsettings ファイルを使用した単体テストの構成に関する更新
-  - Blame オプションの説明が変更され、例が追加されました。
+- [単体テストの概要](../test/getting-started-with-unit-testing.md) - テスト ツールの検出作業とその他の機能強化
+- [初めて Visual Studio のテスト ツールを検討する](../test/improve-code-quality.md) - テスト ツールの検出作業とその他の機能強化
+- [Visual Studio でのテスト ツール (番号が必要)、ページ タイトルを検索結果に表示。60 文字以内でブランド名を追加。](../test/index.yml) テスト ツールの検出作業とその他の機能強化
+- [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md) - さまざまなフレームワークに合わせて動的なプレイリスト xml を追加する
 
 ## <a name="community-contributors"></a>コミュニティの共同作成者
 
-上記の期間中、Visual Studio ドキュメントへのご協力をいただいた方々です。 よろしくお願いいたします。 Visual Studio ドキュメントへの投稿を行う方法については、[共同作成者ガイド](https://docs.microsoft.com/contribute/)のガイダンスに従ってください。
+上記の期間中、Visual Studio ドキュメントへのご協力をいただいた方々です。 よろしくお願いいたします。 Visual Studio ドキュメントへの投稿を行う方法については、[共同作成者ガイド](/contribute/)のガイダンスに従ってください。
 
-- [briuk](https://github.com/briuk) - Viktor Briukhanov (2)
-- [Youssef1313](https://github.com/Youssef1313) - Youssef Victor (2)
-- [ArntWork](https://github.com/ArntWork) - Legolas (1)
-- [Asugakoisi](https://github.com/Asugakoisi) - アスガコイシ (1)
-- [Delizald](https://github.com/Delizald) - David Elizalde (1)
-- [farisachugthai](https://github.com/farisachugthai) - Faris A Chugthai (1)
-- [mycalingram](https://github.com/mycalingram) - Mycal (1)
-- [tuyen-at-work](https://github.com/tuyen-at-work) - Tuyen Pham (1)
+- [surlydev](https://github.com/surlydev) - SurlyDev (2)
+- [nschonni](https://github.com/nschonni) - Nick Schonning (1)
+- [syohex](https://github.com/syohex) - Shohei YOSHIDA (1)

@@ -1,5 +1,7 @@
 ---
 title: プロジェクトモデリング |Microsoft Docs
+description: 新しいプロジェクトの種類のオートメーションを作成するために必要な標準プロジェクトオブジェクトと、プロジェクトオートメーションが従うパスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ac89baf5bc7582d3430532938a5e5a0c35a4c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a481e731f01230139ec4342231479606c49bd11
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706554"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877417"
 ---
 # <a name="project-modeling"></a>プロジェクトのモデリング
 プロジェクトの自動化を提供する次の手順では、標準のプロジェクトオブジェクトを実装します。これは、 <xref:EnvDTE.Projects> との `ProjectItems` コレクション、 `Project` オブジェクトとオブジェクト、および <xref:EnvDTE.ProjectItem> 実装に固有の残りのオブジェクトです。 これらの標準オブジェクトは、Dteinternal .h ファイルで定義されています。 標準オブジェクトの実装は、BscPrj サンプルに用意されています。 これらのクラスをモデルとして使用して、他のプロジェクトの種類のプロジェクトオブジェクトとサイドバイサイドで実行する独自の標準プロジェクトオブジェクトを作成できます。

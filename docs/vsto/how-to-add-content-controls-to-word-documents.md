@@ -1,5 +1,7 @@
 ---
 title: '方法: Word 文書にコンテンツコントロールを追加する'
+description: ドキュメントレベルの Word プロジェクトでは、デザイン時または実行時にプロジェクト内のドキュメントにコンテンツコントロールを追加できます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -26,12 +28,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f15adeb801e33a134c681c206e3a5b38ccce70f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1528371a1466ec2886bf652ed33561b66b7028
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538386"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845558"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>方法: Word 文書にコンテンツコントロールを追加する
   ドキュメント レベルの Word プロジェクトでは、デザイン時または実行時にプロジェクトの文書にコンテンツ コントロールを追加できます。 Word VSTO アドイン プロジェクトでは、実行時に任意の開いている文書にコンテンツ コントロールを追加できます。
@@ -78,7 +80,7 @@ ms.locfileid: "85538386"
     - **[ツールボックス]** からコンテンツ コントロールを文書にドラッグします。 コンテンツ コントロールが、マウス ポインターの場所ではなく、ドキュメント内の現在の選択の場所で追加されます。
 
 > [!NOTE]
-> <xref:Microsoft.Office.Tools.Word.GroupContentControl> [ツールボックス] **を使用して**を追加することはできません。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> は Word で、または実行時にのみ追加できます。
+> <xref:Microsoft.Office.Tools.Word.GroupContentControl> [ツールボックス] **を使用して** を追加することはできません。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> は Word で、または実行時にのみ追加できます。
 
 > [!NOTE]
 > Visual Studio では、チェック ボックス コンテンツ コントロールがツールボックスで提供されていません。 文書にチェック ボックス コンテンツ コントロールを追加するには、プログラムを使用して <xref:Microsoft.Office.Tools.Word.ContentControl> オブジェクトを作成する必要があります。 詳細については、「 [コンテンツコントロール](../vsto/content-controls.md)」を参照してください。
@@ -110,7 +112,7 @@ ms.locfileid: "85538386"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>現在の選択項目でコンテンツ コントロールを追加するには
 
-1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class*は、などの追加するコンテンツコントロールのクラス名です)。このメソッドには、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 新しいコントロールの名前を表す1つのパラメーターがあります。
+1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class* は、などの追加するコンテンツコントロールのクラス名です)。このメソッドには、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 新しいコントロールの名前を表す1つのパラメーターがあります。
 
      次のコード例では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> メソッドを使用して文書の先頭に新しい <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を追加しています。 このコードを実行するには、プロジェクトの `ThisDocument` クラスにコードを追加し、 `AddRichTextControlAtSelection` イベント ハンドラーから `ThisDocument_Startup` メソッドを呼び出します。
 
@@ -119,7 +121,7 @@ ms.locfileid: "85538386"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>指定された範囲にコンテンツ コントロールを追加するには
 
-1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class*は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち <xref:Microsoft.Office.Interop.Word.Range> ます)。
+1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class* は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち <xref:Microsoft.Office.Interop.Word.Range> ます)。
 
      次のコード例では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> メソッドを使用して文書の先頭に新しい <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を追加しています。 このコードを実行するには、プロジェクトの `ThisDocument` クラスにコードを追加し、 `AddRichTextControlAtRange` イベント ハンドラーから `ThisDocument_Startup` メソッドを呼び出します。
 
@@ -128,7 +130,7 @@ ms.locfileid: "85538386"
 
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>ネイティブなコンテンツ コントロールに基づいたコンテンツ コントロールを追加するには
 
-1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class*は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち `Microsoft.Office.Interop.Word.ContentControl` ます)。
+1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class* は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち `Microsoft.Office.Interop.Word.ContentControl` ます)。
 
      次のコード例では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> メソッドを使用して、ドキュメント内にあるすべてのネイティブなリッチ テキスト コントロールについて新しい <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を作成しています。 このコードを実行するには、プロジェクトの `ThisDocument` クラスにコードを追加し、 `CreateRichTextControlsFromNativeControls` イベント ハンドラーから `ThisDocument_Startup` メソッドを呼び出します。
 
@@ -153,7 +155,7 @@ ms.locfileid: "85538386"
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>現在の選択項目でコンテンツ コントロールを追加するには
 
-1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class*は、などの追加するコンテンツコントロールのクラス名です)。このメソッドには、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 新しいコントロールの名前を表す1つのパラメーターがあります。
+1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class* は、などの追加するコンテンツコントロールのクラス名です)。このメソッドには、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 新しいコントロールの名前を表す1つのパラメーターがあります。
 
      次のコード例では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> メソッドを使用してアクティブな文書の先頭に新しい <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を追加しています。 このコードを実行するには、プロジェクトの `ThisAddIn` クラスにコードを追加し、 `AddRichTextControlAtSelection` イベント ハンドラーから `ThisAddIn_Startup` メソッドを呼び出します。
 
@@ -162,7 +164,7 @@ ms.locfileid: "85538386"
 
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>指定された範囲にコンテンツ コントロールを追加するには
 
-1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class*は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち <xref:Microsoft.Office.Interop.Word.Range> ます)。
+1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class* は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち <xref:Microsoft.Office.Interop.Word.Range> ます)。
 
      次のコード例では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> メソッドを使用してアクティブな文書の先頭に新しい <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を追加しています。 このコードを実行するには、プロジェクトの `ThisAddIn` クラスにコードを追加し、 `AddRichTextControlAtRange` イベント ハンドラーから `ThisAddIn_Startup` メソッドを呼び出します。
 
@@ -171,7 +173,7 @@ ms.locfileid: "85538386"
 
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>ネイティブなコンテンツ コントロールに基づいたコンテンツ コントロールを追加するには
 
-1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class*は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち `Microsoft.Office.Interop.Word.ContentControl` ます)。
+1. という <xref:Microsoft.Office.Tools.Word.ControlCollection> 名前のメソッドを使用し `Add` \<*control class*> ます (ここで、 *control class* は、などの追加するコンテンツコントロールクラスの名前で、は <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> パラメーターを持ち `Microsoft.Office.Interop.Word.ContentControl` ます)。
 
      次のコード例では、 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> メソッドを使用して、文書を開いた後に文書内にあるすべてのネイティブなリッチ テキスト コントロールについて、新しい <xref:Microsoft.Office.Tools.Word.RichTextContentControl> を作成しています。 このコードを実行するには、プロジェクトの `ThisAddIn` クラスに次のコードを追加します。
 

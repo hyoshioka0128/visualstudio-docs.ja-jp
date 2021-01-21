@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスの機能拡張 |Microsoft Docs
+description: Visual Studio の従来の言語サービスの構造、実装、および拡張性について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 313d1d7bb74ccb456173474f7f0e3140814755bd
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707408"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205074"
 ---
 # <a name="legacy-language-service-extensibility"></a>従来の言語サービスの機能拡張
 言語サービスは、IDE でソースコードを編集するための言語固有のサポートを提供します。

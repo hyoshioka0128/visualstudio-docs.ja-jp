@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: b9892a322c0264a1bdb68d672c7fe6c6e9b08d4f
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183601"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583932"
 ---
 # <a name="net-core-support"></a>.NET Core サポート
 
@@ -37,4 +37,4 @@ ms.locfileid: "84183601"
 * インストーラーによって、.NET Core v2.1.701 (8.1 用 v2.1.700) が既定でインストールされます。
 * .NET Core の他のバージョンをダウンロードするには、[dotnet ページ](https://dotnet.microsoft.com/download/dotnet-core)を参照してください。
 * .NET Core 3.0 を使用する場合、C# バージョン 8 が既定で使用されます。 C#7.3 は、.NET Core 2.x を使用する場合の既定です。 詳細については、「[C# 言語のバージョン管理](/dotnet/csharp/language-reference/configure-language-version)」を参照してください。
-* プレビュー バージョンの Visual Studio for Mac をインストールする方法について詳しくは、[プレビュー リリースのインストール](/visualstudio/mac/install-preview)に関するガイドをご覧ください。
+* プレビュー バージョンの Visual Studio for Mac をインストールする方法について詳しくは、[プレビュー リリースのインストール](./install-preview.md)に関するガイドをご覧ください。

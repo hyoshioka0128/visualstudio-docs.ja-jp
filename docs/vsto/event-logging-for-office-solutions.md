@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションのイベントログ
+description: Windows のイベントビューアーを使用して、Visual Studio Tools for Office ランタイムによってキャプチャされた例外メッセージを表示する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74aaf7c1c07c349fa3669332a41e4e7d06ba86f1
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62951945"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847768"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office ソリューションのイベントログ
   Windows のイベント ビューアーを使用すると、Office ソリューションのインストール時またはアンインストール時に [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] でキャプチャされる例外メッセージを表示できます。 イベント ロガーからのこれらのメッセージを使用して、インストールと配置の問題を解決できます。
@@ -34,7 +36,7 @@ ms.locfileid: "62951945"
 
 1. コントロールパネルで、[ **管理ツール**] を開きます。
 
-2. **イベントビューアー**を開始します。
+2. **イベントビューアー** を開始します。
 
 3. イベント ログの一覧で **[アプリケーション]** を選択します。
 
@@ -42,7 +44,7 @@ ms.locfileid: "62951945"
 
 5. **[イベント ソース]** 一覧で **[VSTO 4.0]** を選択します。
 
-6. インストール イベントの場合は、 **[イベント ID]** ボックスに **4096**と入力します。
+6. インストール イベントの場合は、 **[イベント ID]** ボックスに **4096** と入力します。
 
 7. **[OK]** をクリックして、フィルター処理されたビューを表示します。
 
@@ -50,7 +52,7 @@ ms.locfileid: "62951945"
 
 1. コントロールパネルで、[ **管理ツール**] を開きます。
 
-2. **イベントビューアー**を開始します。
+2. **イベントビューアー** を開始します。
 
 3. **[Windows ログ]** を展開します。
 
@@ -60,7 +62,7 @@ ms.locfileid: "62951945"
 
 6. **[イベント ソース]** 一覧で **[VSTO 4.0]** を選択します。
 
-7. インストール イベントの場合は、 **[イベント ID]** ボックスに **4096**と入力します。
+7. インストール イベントの場合は、 **[イベント ID]** ボックスに **4096** と入力します。
 
 8. **[OK]** をクリックして、フィルター処理されたビューを表示します。
 
@@ -76,7 +78,7 @@ ms.locfileid: "62951945"
 
   Office ソリューションの実行中に例外メッセージを表示またはログに記録するには、「 [office プロジェクトのデバッグ](../vsto/debugging-office-projects.md) 」および「 [Office プロジェクトのデバッグ](../vsto/debugging-office-projects.md)」を参照してください。
 
-### <a name="localization"></a>ローカリゼーション
+### <a name="localization"></a>ローカライズ
  例外メッセージの言語は、Office ランタイム言語の Visual Studio Tools によって決まります。 たとえば、エンドユーザーのコンピューターに日本語の言語パックがインストールされている場合、例外メッセージは日本語でイベントログに書き込まれます。
 
 ## <a name="disable-the-event-logger"></a>イベントロガーを無効にする
@@ -92,7 +94,7 @@ ms.locfileid: "62951945"
 
 4. **[新しいシステム変数]** ダイアログ ボックスで、 **[変数名]** ボックスに **VSTO_EVENTLOGDISABLED** と入力します。
 
-5. **[変数値]** ボックスに **1**と入力します。
+5. **[変数値]** ボックスに **1** と入力します。
 
 6. **[OK]** をクリックします。
 

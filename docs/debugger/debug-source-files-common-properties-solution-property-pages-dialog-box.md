@@ -1,5 +1,7 @@
 ---
-title: '[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] - [共通プロパティ])'
+title: '[デバッグ ソース ファイル] ([ソリューション プロパティ ページ])'
+description: Visual Studio で、ソリューション エクスプローラーでソリューションを右クリックし、[プロパティ]、[共通プロパティ] の順に選択し、[デバッグ ソース ファイル] プロパティ ページにアクセスします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,17 +24,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735432db485277e2265479e625f5e8acaa2cc2e3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: be57355c8fc38758080ebde344db0b4224bc3df8
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738394"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97728526"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])
 このプロパティ ページでは、ソリューションのデバッグ時にデバッガーによってソース ファイルが検索される場所を指定します。
 
- **[デバッグのソース ファイル]** プロパティ ページを開くには、**ソリューション エクスプローラー**でソリューションを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。 **[共通プロパティ]** フォルダーを展開し、 **[デバッグのソース ファイル]** ページをクリックします。
+ **[デバッグのソース ファイル]** プロパティ ページを開くには、**ソリューション エクスプローラー** でソリューションを右クリックし、ショートカット メニューの **[プロパティ]** をクリックします。 **[共通プロパティ]** フォルダーを展開し、 **[デバッグのソース ファイル]** ページをクリックします。
 
  **[ソース コードを含んでいるディレクトリ]** ソリューションのデバッグ時に、デバッガーでソース ファイルが検索されるディレクトリの一覧が表示されます。 指定されたディレクトリのサブディレクトリも検索されます。
 

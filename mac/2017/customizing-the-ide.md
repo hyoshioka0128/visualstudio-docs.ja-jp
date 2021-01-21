@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315006"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190253"
 ---
 # <a name="customizing-the-ide"></a>IDE のカスタマイズ
 
@@ -72,13 +72,13 @@ Visual Studio for Mac のバージョン管理からコミットが行われた�
 
 ## <a name="workspace-layout"></a>ワークスペースのレイアウト
 
-Visual Studio for Mac のワークスペースは、メインのドキュメント領域 (通常、エディター、デザイナー サーフェス、またはオプション ファイル) で構成されています。この補完的な領域は*パッド*で囲まれています。このパッドには、アプリケーション ファイルにアクセスし、管理、テスト、およびデバッグを行う際に役立つ情報が含まれています。
+Visual Studio for Mac のワークスペースは、メインのドキュメント領域 (通常、エディター、デザイナー サーフェス、またはオプション ファイル) で構成されています。この補完的な領域は *パッド* で囲まれています。このパッドには、アプリケーション ファイルにアクセスし、管理、テスト、およびデバッグを行う際に役立つ情報が含まれています。
 
  ![ワークスペースのレイアウト](media/customizing-the-ide-image1a.png)
 
 ### <a name="viewing-and-arranging-pads"></a>パッドの表示と整理
 
-Visual Studio for Mac で新しいソリューションまたはファイルを開くとき、ワークスペースに*パッド*が表示されます。これには、Solution Pad、ドキュメント アウトライン、エラーが含まれます。
+Visual Studio for Mac で新しいソリューションまたはファイルを開くとき、ワークスペースに *パッド* が表示されます。これには、Solution Pad、ドキュメント アウトライン、エラーが含まれます。
 
 ![Solution Pad](media/customizing-the-ide-image2a.png)
 
@@ -102,7 +102,7 @@ Visual Studio for Mac のパッドには追加情報、ツール、ナビゲー�
 
 常に表示されるパッドは、現在のコンテキストによって決まります。 たとえば、ビジュアル デザイナーを使用するときは、ツールボックス パッドとプロパティ パッドが最も重要になります。デバッグのときには、スタックやローカルを表示するためにデバッガー パッドを用意すると便利です。
 
-開いているパッドの状態を表現したものが*レイアウト*です。 次の図のように、レイアウトは [表示] メニューから手動で切り替えることができます。あるいは、デバッグしたり、ストーリーボードを開いたり、特定のアクションを実行すると自動的に切り替わります。
+開いているパッドの状態を表現したものが *レイアウト* です。 次の図のように、レイアウトは [表示] メニューから手動で切り替えることができます。あるいは、デバッグしたり、ストーリーボードを開いたり、特定のアクションを実行すると自動的に切り替わります。
 
 ![新しいレイアウトの選択](media/customizing-the-ide-image6b.png)
 

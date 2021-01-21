@@ -1,5 +1,6 @@
 ---
 title: サイドバイサイド Ide 用のファイル名拡張子の登録
+description: サイドバイサイド配置のためにファイル名拡張子を登録する方法について説明します。これにより、ユーザーは適切なバージョンの Visual Studio でファイルを開くことができます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5ebedd2861ca96d1ad96c74a54da06578d33960
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: c66413890f0aaa08e09a291f5bf31a44e7c24706
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036952"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863030"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>サイドバイサイド配置のためにファイル名拡張子を登録する
 サイドバイサイドの環境で展開された Vspackage では、ファイル名拡張子を登録して、ファイルを正しいバージョンのに関連付ける必要があり [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 バージョン固有のファイル名拡張子を使用しない限り、登録によって、ユーザーは適切なバージョンのでプロジェクトおよびプロジェクト項目ファイルを開くことができ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。

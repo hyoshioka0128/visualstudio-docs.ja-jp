@@ -1,5 +1,7 @@
 ---
 title: UnregisterAssembly タスク | Microsoft Docs
+description: MSBuild で UnregisterAssembly タスクを使用して、COM 相互運用のために指定されたアセンブリの登録を解除する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8cddcf9bf0632914d1a6de1cc904dbf0f173e6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 068073b2d84d95ad3d86abe582691be0dd4af895
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631498"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93046913"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly タスク
 
@@ -39,7 +41,7 @@ COM 相互運用のために、指定されたアセンブリの登録を解除�
 |`AssemblyListFile`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> `RegisterAssembly` タスクと `UnregisterAssembly` タスクの間の状態に関する情報が含まれます。 これにより、`RegisterAssembly` タスクで登録に失敗したアセンブリの登録をタスクが解除しないようにできます。<br /><br /> このパラメーターが指定されている場合、`Assemblies` と `TypeLibFiles` のパラメーターは無視されます。|
 |`TypeLibFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 指定したアセンブリから指定したタイプ アセンブリを登録解除します。 **注:** このパラメーターは、タイプ ライブラリのファイル名がアセンブリ名と異なる場合にのみ必要です。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  アセンブリが存在していなくても、このタスクは正常に終了します。 存在しないアセンブリの登録を解除しようとした場合、タスクは警告を発行して正常終了します。 これは、アセンブリ登録をレジストリから削除することが、このタスクのジョブであるためです。 アセンブリが存在しない場合、アセンブリはレジストリに登録されていないため、タスクは正常に終了します。
 
@@ -64,7 +66,7 @@ COM 相互運用のために、指定されたアセンブリの登録を解除�
 </Project>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [RegisterAssembly タスク](../msbuild/registerassembly-task.md)
 - [タスク](../msbuild/msbuild-tasks.md)

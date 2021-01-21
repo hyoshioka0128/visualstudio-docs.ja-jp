@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによって特定のフォルダー内を検索する'
+description: Visual Studio を使用して、特定の Microsoft Outlook フォルダー内でプログラムによって検索する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f5e0f098edcffce07eb2c3f243b994d1a53cdf9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa569a2c301cb495f109a612d817937159c257c6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547018"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524545"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>方法: プログラムによって特定のフォルダー内を検索する
-  このコード例では、メソッドとメソッドを使用して、 `Find` `FindNext` **受信トレイ**にある電子メールメッセージの件名フィールド内のテキストを検索します。 このメソッドでは、文字列フィルターを使用して、文字 T をテキストの開始文字として確認し `Subject` ます。
+  このコード例では、メソッドとメソッドを使用して、 `Find` `FindNext` **受信トレイ** にある電子メールメッセージの件名フィールド内のテキストを検索します。 このメソッドでは、文字列フィルターを使用して、文字 T をテキストの開始文字として確認し `Subject` ます。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

@@ -1,5 +1,7 @@
 ---
 title: Task クラス-Internal Members |Microsoft Docs
+description: カスタムデバッガーの実装に役立つ、システムの内部メンバーについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf278c0248b344cea4be7cf161ecc91581f5f2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712735"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996020"
 ---
 # <a name="task-class---internal-members"></a>タスククラス-内部メンバー
 この記事では、カスタムデバッガーの実装に役立つクラスの内部メンバーについて説明し <xref:System.Threading.Tasks.Task?displayProperty=fullName> ます。 このクラスに関する一般的な情報については、リファレンス記事を参照してください <xref:System.Threading.Tasks.Task> 。
@@ -64,7 +66,7 @@ ms.locfileid: "80712735"
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|タスクの実行が正常に完了したことを示します。|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|タスクがデリゲートの実行を完了し、アタッチされた子タスクが終了するのを暗黙的に待機していることを示します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  次の内部メソッドは、開始をコード実行にマークするため、デバッガーエンジンに役立ち <xref:System.Threading.Tasks.Task> ます。
 
 - `Execute`
@@ -79,6 +81,6 @@ ms.locfileid: "80712735"
 
 - `InternalWait`
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - [.NET Framework の並列拡張の内部構造](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

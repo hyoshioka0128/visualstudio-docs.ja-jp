@@ -1,5 +1,7 @@
 ---
-title: IComparable を実装する型の比較演算子を生成する
+title: IComparable の比較演算子を生成する
+ms.custom: SEO-VS-2020
+description: パフォーマンスを向上させるために、IComparable を実装する型の比較演算子を生成します。
 ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
@@ -7,12 +9,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
+ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85290836"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102598"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>IComparable を実装する型の比較演算子を生成する
 
@@ -20,11 +22,11 @@ ms.locfileid: "85290836"
 
 - C#
 
-**概要:** IComparable を実装する型の**比較**演算子を生成できます。
+**概要:** IComparable を実装する型の **比較** 演算子を生成できます。
 
 **条件:** 比較演算子が自動的に追加される　IComparable を実装する型があること。
 
-**理由:** 値の型を実装する場合、ValueType の Equals メソッドの既定の実装を上回るパフォーマンスを得るには、**Equals** メソッドのオーバーライドを検討する必要があります。
+**理由:** 値の型を実装する場合、ValueType の Equals メソッドの既定の実装を上回るパフォーマンスを得るには、 **Equals** メソッドのオーバーライドを検討する必要があります。
 
 ## <a name="how-to"></a>方法
 

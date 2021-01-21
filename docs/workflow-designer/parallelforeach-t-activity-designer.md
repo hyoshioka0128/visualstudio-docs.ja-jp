@@ -1,5 +1,7 @@
 ---
-title: ワークフローデザイナー-ParallelForEach &lt; T &gt; アクティビティデザイナー
+title: ParallelForEach &lt; T &gt; アクティビティデザイナー
+description: ワークフローデザイナーでは、ParallelForEach アクティビティが <T> コレクションの要素を列挙し、コレクションの各要素に対して埋め込みステートメントを並列実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,18 +12,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876048"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996176"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach アクティビティ デザイナー
 
 <xref:System.Activities.Statements.ParallelForEach%601> アクティビティでは、コレクションの要素を列挙し、コレクションの各要素に対して埋め込みステートメントを並列的に (同じスレッドで非同期的に) 実行します。 このフロー制御アクティビティは、その子アクティビティがアイドル状態になると予想される場合に、<xref:System.Activities.Statements.Sequence> アクティビティの代わりに使用します。
 
-<xref:System.Activities.Statements.ParallelForEach%601>アクティビティには、 <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> ユーザーが指定した Visual Basic 式を含むプロパティがあります。 このプロパティは、各分岐の完了後に、<xref:System.Activities.Statements.ParallelForEach%601> アクティビティによって評価されます。 **True**と評価された場合、 <xref:System.Activities.Statements.ParallelForEach%601> アクティビティは他の分岐を実行せずに完了します。 が <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> **true**と評価されない場合、 <xref:System.Activities.Statements.ParallelForEach%601> そのすべての子アクティビティが完了すると、アクティビティが完了します。
+<xref:System.Activities.Statements.ParallelForEach%601>アクティビティには、 <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> ユーザーが指定した Visual Basic 式を含むプロパティがあります。 このプロパティは、各分岐の完了後に、<xref:System.Activities.Statements.ParallelForEach%601> アクティビティによって評価されます。 **True** と評価された場合、 <xref:System.Activities.Statements.ParallelForEach%601> アクティビティは他の分岐を実行せずに完了します。 が <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> **true** と評価されない場合、 <xref:System.Activities.Statements.ParallelForEach%601> そのすべての子アクティビティが完了すると、アクティビティが完了します。
 
 ## <a name="the-parallelforeacht-activity"></a>ParallelForEach<T \> アクティビティ
 
@@ -33,25 +35,25 @@ ms.locfileid: "86876048"
 
 ### <a name="using-the-parallelforeacht-activity-designer"></a>ParallelForEach \<T> アクティビティデザイナーの使用
 
-**Parallelforeach \<T> **アクティビティデザイナーにアクセスするには、**ツールボックス**の [**制御フロー** ] カテゴリを使用します。
+**Parallelforeach \<T>** アクティビティデザイナーにアクセスするには、**ツールボックス** の [**制御フロー** ] カテゴリを使用します。
 
-**Parallelforeach \<T> **アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence**アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.ParallelForEach%601> れます。このアクティビティには、既定で <xref:System.Activities.Activity.DisplayName%2A> **Parallelforeach \><Int32**のが含まれています。
+**Parallelforeach \<T>** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence** アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.ParallelForEach%601> れます。このアクティビティには、既定で <xref:System.Activities.Activity.DisplayName%2A> **Parallelforeach \><Int32** のが含まれています。
 
 ### <a name="parallelforeacht-properties-in-the-workflow-designer"></a>ワークフローデザイナー内の ParallelForEach<T \> プロパティ
 
 次の表に、最も役に立つ <xref:System.Activities.Statements.ParallelForEach%601> アクティビティのプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は**Parallelforeach \<Int32> **です。 この値は、必要に応じて、[ **プロパティ** ] グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|×|コレクション内の各項目に対して実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された**parallelforeach \<T> **アクティビティデザイナーの [**本文**] ボックスに、[ツールボックス] からアクティビティをドロップします。|
-|**TypeArgument**|○|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>ジェネリックパラメーター *T*によって指定されたコレクション内の項目の型。既定では、 **Typeargument**は**Int32**に設定されています。 **Parallelforeach<t \> **アクティビティデザイナーで t 型を変更するには、プロパティグリッドの**typeargument**コンボボックスの値を変更します。|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|○|反復処理を行う項目のコレクション。 を設定するには、 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> ** \> ForEach<T**アクティビティデザイナーの [**値**] ボックスに、"VB の式を入力してください" または [**プロパティ**] ウィンドウの [**値**] ボックスに、Visual Basic 式を入力します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は **Parallelforeach \<Int32>** です。 この値は、必要に応じて、[ **プロパティ** ] グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|コレクション内の各項目に対して実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された **parallelforeach \<T>** アクティビティデザイナーの [**本文**] ボックスに、[ツールボックス] からアクティビティをドロップします。|
+|**TypeArgument**|True|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>ジェネリックパラメーター *T* によって指定されたコレクション内の項目の型。既定では、 **Typeargument** は **Int32** に設定されています。 **Parallelforeach<t \>** アクティビティデザイナーで t 型を変更するには、プロパティグリッドの **typeargument** コンボボックスの値を変更します。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|反復処理を行う項目のコレクション。 を設定するには、 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> **\> ForEach<T** アクティビティデザイナーの [**値**] ボックスに、"VB の式を入力してください" または [**プロパティ**] ウィンドウの [**値**] ボックスに、Visual Basic 式を入力します。|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||各イテレーションの完了後に評価されます。 true であると評価する場合、スケジュールされた保留イテレーションはキャンセルされます。 このプロパティが設定されていない場合、スケジュールされたすべてのステートメントは、完了するまで実行されます。|
 
-既定では、ループ反復子には、item という名前が付けられます。 反復子変数の名前は、 **parallelforeach \<T> **アクティビティデザイナーの [ **ForEach** ] ボックスで変更できます。 ループ反復子は、<xref:System.Activities.Statements.ParallelForEach%601> アクティビティの子の式で使用できます。
+既定では、ループ反復子には、item という名前が付けられます。 反復子変数の名前は、 **parallelforeach \<T>** アクティビティデザイナーの [ **ForEach** ] ボックスで変更できます。 ループ反復子は、<xref:System.Activities.Statements.ParallelForEach%601> アクティビティの子の式で使用できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

@@ -1,5 +1,7 @@
 ---
 title: アセンブリおよびマニフェストへの署名の管理
+description: ソフトウェア コンポーネントにグローバル一意識別子を付与する、厳密な名前の署名の利点について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 02/17/2017
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -14,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a17ce633515979ca7a3fd3ac5a7e1d8802996944
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdd2570f94b0f5577c7c09a696906338245f77a4
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770411"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351389"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>アセンブリおよびマニフェストへの署名の管理
 
@@ -38,13 +40,13 @@ C++ プロジェクトのアセンブリへの署名については、「[厳密
 
 .NET のアセンブリとアプリケーション マニフェストに署名することができます。
 
-- 実行可能ファイル ( *.exe*)
+- 実行可能ファイル (*.exe*)
 
-- アプリケーション マニフェスト ( *.exe.manifest*)
+- アプリケーション マニフェスト (*.exe.manifest*)
 
-- 配置マニフェスト ( *.application*)
+- 配置マニフェスト (*.application*)
 
-- 共有コンポーネント アセンブリ ( *.dll*)
+- 共有コンポーネント アセンブリ (*.dll*)
 
 次の種類のアセットに署名します。
 
@@ -58,7 +60,7 @@ C++ プロジェクトのアセンブリへの署名については、「[厳密
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Visual Studio 内でアセンブリに署名する方法
 
-[プロジェクトのプロパティ] ウィンドウの **[署名]** タブを使用して、アプリケーションまたはコンポーネントに署名します (**ソリューション エクスプローラー**でプロジェクト ノードを右クリックし、 **[プロパティ]** を選択します)。 **[署名]** タブを選択し、 **[アセンブリの署名]** チェック ボックスをオンにします。
+[プロジェクトのプロパティ] ウィンドウの **[署名]** タブを使用して、アプリケーションまたはコンポーネントに署名します (**ソリューション エクスプローラー** でプロジェクト ノードを右クリックし、**[プロパティ]** を選択します)。 **[署名]** タブを選択し、**[アセンブリの署名]** チェック ボックスをオンにします。
 
 キー ファイルを指定します。 新しいキー ファイルを作成する場合は、新しいキー ファイルは必ず *.pfx* 形式で作成されます。 新しいファイルの名前とパスワードが必要です。
 
@@ -69,9 +71,9 @@ C++ プロジェクトのアセンブリへの署名については、「[厳密
 
 公開キーのみにアクセスできる場合は、遅延署名を使用して、キーの割り当てを遅延させることができます。 **[遅延署名のみ]** チェック ボックスをオンにすると、遅延署名が有効になります。 遅延署名されたプロジェクトは実行されず、デバッグすることもできません。 ただし、[Sn.exe (厳密名ツール)](/dotnet/framework/tools/sn-exe-strong-name-tool) で `-Vr` オプションを指定すると、開発時に検証をスキップできます。
 
-マニフェストへの署名については、「[方法: アプリケーション マニフェストおよび配置マニフェストに署名する](../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
+マニフェストへの署名については、「[方法:アプリケーション マニフェストおよび配置マニフェストに署名する](../ide/how-to-sign-application-and-deployment-manifests.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [厳密な名前付きアセンブリ](/dotnet/framework/app-domains/strong-named-assemblies)
 - [厳密名アセンブリ (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

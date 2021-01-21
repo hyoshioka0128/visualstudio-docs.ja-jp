@@ -1,5 +1,7 @@
 ---
-title: 方法 - ウィンドウ ビューでウィンドウを検索する | Microsoft Docs
+title: ウィンドウ ビューでウィンドウを検索する | Microsoft Docs
+description: Visual Studio でハンドル、キャプション、クラス、またはキャプションとクラスの組み合わせを使用し、Spy++ ツールのウィンドウ ビューで特定のウィンドウを検索します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349238"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148508"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>方法: ウィンドウ ビューでウィンドウを検索する
 ウィンドウ ビューで特定のウィンドウを検索するには、そのウィンドウのハンドル、キャプション、クラス、またはキャプションとクラスの組み合わせを検索条件として使用します。 検索の最初の方向を指定することもできます。 ダイアログ ボックスのフィールドには、ウィンドウ ツリーで選択したウィンドウの属性が表示されます。

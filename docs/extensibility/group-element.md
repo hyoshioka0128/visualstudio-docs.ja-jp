@@ -1,5 +1,7 @@
 ---
 title: Group 要素 |Microsoft Docs
+description: Group 要素は、VSPackage コマンドグループを定義します。 この記事では、属性、子要素、および親要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26479257511d74f122dd4064330f5b6a1e8dadd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711229"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993855"
 ---
 # <a name="group-element"></a>Group 要素
 VSPackage コマンドグループを定義します。
@@ -36,8 +38,8 @@ VSPackage コマンドグループを定義します。
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須です。 GUID/ID コマンド識別子の GUID。|
-|id|必須です。 GUID/ID コマンド識別子の ID。|
+|guid|必須。 GUID/ID コマンド識別子の GUID。|
+|id|必須。 GUID/ID コマンド識別子の ID。|
 |priority|省略可能。 優先度を示す数値です。|
 |条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 

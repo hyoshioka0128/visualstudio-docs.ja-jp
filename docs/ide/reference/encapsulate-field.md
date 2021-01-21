@@ -1,5 +1,7 @@
 ---
 title: フィールドをプロパティにリファクタリングする
+description: '[クイック アクションとリファクタリング] メニューを使用して、フィールドをプロパティに変換する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -12,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e4ac28646af9d68accd18c0d40480dd22e47b023
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75569713"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305464"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>フィールドのカプセル化リファクタリング
 
@@ -54,7 +56,7 @@ ms.locfileid: "75569713"
       - **[編集] > [リファクター] > [フィールドのカプセル化]** の順に選択します。
       - コードを右クリックして **[クイック アクションとリファクタリング]** メニューを選択し、[プレビュー] ウィンドウ ポップアップからどちらかの **[フィールドのカプセル化]** エントリを選択します。
 
-   [選択] | [説明]
+   選択 | 説明
    --------- | -----------
    **フィールドのカプセル化 (およびプロパティを使用します)** | プロパティでフィールドをカプセル化し、生成されたプロパティを使用するようにフィールドのすべての使用を更新します。
    **フィールドのカプセル化 (ただし、フィールドを継続して使用します)** | プロパティでフィールドをカプセル化しますが、フィールドのすべての使用については手を加えずに残します。
@@ -62,7 +64,7 @@ ms.locfileid: "75569713"
    プロパティが作成され、選ばれている場合はフィールドへの参照が更新されます。
 
    > [!TIP]
-   > ポップアップ ウィンドウの **[変更のプレビュー]** リンクを使って、コミットする前に[結果を確認する](../../ide/preview-changes.md)ことができます。
+   > ポップアップ ウィンドウの **[変更のプレビュー]** リンクを使って、コミットする前に [結果を確認する](../../ide/preview-changes.md)ことができます。
 
    - C#:
 
@@ -72,7 +74,7 @@ ms.locfileid: "75569713"
 
       ![プロパティのカプセル化の結果 - Visual Basic](media/encapsulate-result-vb.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)
 - [変更のプレビュー](../../ide/preview-changes.md)

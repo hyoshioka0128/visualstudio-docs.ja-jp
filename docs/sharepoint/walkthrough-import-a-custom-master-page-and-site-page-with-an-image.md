@@ -1,5 +1,7 @@
 ---
 title: イメージを含むカスタムマスターページ & サイトページのインポート
+description: このチュートリアルでは、SharePoint カスタムマスターページと、イメージを含むサイトページを Visual Studio SharePoint プロジェクトにインポートします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 311124b2e0b81e70c4c2a7b40754207e6c66b749
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015690"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95970161"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>チュートリアル: イメージを使用したカスタムマスターページおよびサイトページのインポート
   このチュートリアルでは、sharepoint カスタムマスターページと、画像を含むサイトページを sharepoint プロジェクトにインポートする方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
@@ -76,7 +78,7 @@ ms.locfileid: "86015690"
     </html>
     ```
 
-6. ページを保存し、[ **マスターページ** ] タブを選択して、マスターページの名前を **mybasic1**に変更します。
+6. ページを保存し、[ **マスターページ** ] タブを選択して、マスターページの名前を **mybasic1** に変更します。
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>SharePoint Designer でコンテンツデータベースに画像を追加する
  これで、サイトページに表示するイメージを追加できるようになりました。 イメージは SharePoint コンテンツデータベースに配置されます。
@@ -85,7 +87,7 @@ ms.locfileid: "86015690"
 
 1. ナビゲーションウィンドウで、[すべての **ファイル** ] サイトオブジェクトを選択し、ツリービューで [ **イメージ** ] フォルダーを選択します。
 
-2. [ **すべてのファイル** ] リボンで、[ **ファイルのインポート**] を選択し、任意のファイルを選択して、[ **OK** ] をクリックします。 この例では、ファイルに **myimg1.png**という名前が付けられています。
+2. [ **すべてのファイル** ] リボンで、[ **ファイルのインポート**] を選択し、任意のファイルを選択して、[ **OK** ] をクリックします。 この例では、ファイルに **myimg1.png** という名前が付けられています。
 
      必要に応じて、画像を整理するためのサブフォルダーを作成することもできます。
 
@@ -98,7 +100,7 @@ ms.locfileid: "86015690"
 
 1. ナビゲーションウィンドウで、[ **サイトページ** ] オブジェクトを選択します。
 
-2. [ **ページ** ] リボンで、[ **ページ** ] ボタンを選択し、 **ASPX** ページの種類を選択して、新しいファイルに **mycontentpage1**という名前を指定します。
+2. [ **ページ** ] リボンで、[ **ページ** ] ボタンを選択し、 **ASPX** ページの種類を選択して、新しいファイルに **mycontentpage1** という名前を指定します。
 
      必要に応じて、サイトページの整理に役立つサブフォルダーを作成することもできます。
 
@@ -142,7 +144,7 @@ ms.locfileid: "86015690"
 4. 新しい *.wsp* ファイルのショートカットメニューを開き、[ **ターゲットに名前を付けて保存** ] を選択してシステムに保存します。
 
 ## <a name="import-the-items-into-visual-studio"></a>項目を Visual Studio にインポートする
- *.Wsp*ファイルをにインポートし [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 コンテンツがインポートされたら、それをカスタマイズし、さらに項目を追加して、展開することができます。
+ *.Wsp* ファイルをにインポートし [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 コンテンツがインポートされたら、それをカスタマイズし、さらに項目を追加して、展開することができます。
 
 #### <a name="to-import-items-from-the-wsp-file-into-visual-studio"></a>.Wsp ファイルから Visual Studio に項目をインポートするには
 
@@ -158,7 +160,7 @@ ms.locfileid: "86015690"
 
 3. [ **完了** ] を選択すると、選択した項目がインポートされます。
 
-4. **ソリューションエクスプローラー**で、[カタログ] ノードを選択し、[ \_ 配置の \_ 競合の**解決**] プロパティの値を [**自動**] に設定します。
+4. **ソリューションエクスプローラー** で、[カタログ] ノードを選択し、[ \_ 配置の \_ 競合の **解決**] プロパティの値を [**自動**] に設定します。
 
     これにより、配置の競合が自動的に解決されるようになります。
 
@@ -170,7 +172,7 @@ ms.locfileid: "86015690"
 
    - 既存のマスターページがカスタムマスターページとして設定されている場合は、一時的に別のマスターページをカスタムマスターページとして設定します。 ファイルを SharePoint に配置した後、新しいマスターページをカスタムマスターページとして設定します。
 
-6. メニューバーで、[**ビルド**] [ソリューションの配置] の順に選択し  >  **Deploy Solution**ます。
+6. メニューバーで、[**ビルド**] [ソリューションの配置] の順に選択し  >  **Deploy Solution** ます。
 
 7. SharePoint サイトを開いて、配置されたアイテムを表示します。
 
@@ -179,4 +181,4 @@ ms.locfileid: "86015690"
 ## <a name="see-also"></a>関連項目
 - [既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)
-- [Web パーツまたはアプリケーションページの再利用可能なコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
+- [Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

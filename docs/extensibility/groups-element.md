@@ -1,5 +1,7 @@
 ---
 title: Groups 要素 |Microsoft Docs
+description: Groups 要素には、VSPackage のコマンドグループを定義するエントリが含まれています。 この記事には例が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6383c3c7a28f9aa7778fddcbfe36b237d21323f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31b5885ad6e08bd9e22049033d6191c97fdc857b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711175"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994291"
 ---
 # <a name="groups-element"></a>Groups 要素
 VSPackage のコマンドグループを定義するエントリが含まれています。

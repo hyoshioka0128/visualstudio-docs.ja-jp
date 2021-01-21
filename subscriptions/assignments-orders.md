@@ -1,25 +1,25 @@
 ---
-title: ユーザーの割り当てを追跡し、注文を処理する | Visual Studio Marketplace
+title: Visual Studio サブスクリプションで割り当てを追跡し、注文を処理する | Visual Studio Marketplace
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: ユーザーの割り当てを追跡して注文を処理する管理者の責任について説明します。
-ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.openlocfilehash: 90de1c426a387cb27fe35990394a41d34c1172ce
+ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80232693"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "92467415"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>ユーザーの割り当てを追跡し、注文を処理する
 Visual Studio サブスクリプションの管理者は、Visual Studio の使用状況を追跡し、ボリューム ライセンス契約またはマイクロソフト製品/サービス契約に記載されているスケジュールに従って、使用率の増加に応じて注文を処理する必要があります。 新しい Visual Studio サブスクリプション管理ポータルは、使用可能なライセンスと使用済みのライセンスを示す便利なトラッカーにより、これを簡略化します。
 
 ## <a name="maximum-usage"></a>最大使用量
 **次の場合には、会社が Visual Studio サブスクリプションをすぐに購入する義務が生じます。**
-- ユーザーにライセンスが割り当てられた場合、**または**
+- ユーザーにライセンスが割り当てられた場合、 **または**
 - ユーザーが Visual Studio ソフトウェアと対話する場合
 
 完全な購入義務は、ユーザーに割り当てられたサブスクリプションの最大数によって決まります。 このサブスクリプション割り当てのレベルは、日割りユーザーあたりの割り当てまたは Visual Studio ソフトウェアと対話するユーザーの使用率のポイントが高い方になります。
@@ -38,10 +38,10 @@ Visual Studio サブスクリプションの管理者は、Visual Studio の使�
 Microsoft Enterprise Agreements (EA)、MPSA および Select Plus 契約では、長期にわたる Visual Studio ソフトウェアの使用とライセンスの柔軟性が得られます。 Visual Studio 管理者は、ソフトウェア ライセンスが契約期間中に定められた最大使用率になるように年間の調整注文を行う必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 管理者の責任について詳しくは、以下をご覧ください。
@@ -49,4 +49,3 @@ Microsoft Enterprise Agreements (EA)、MPSA および Select Plus 契約では�
 - [運用前環境のインベントリ](admin-inventory.md)
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)
 - [最大使用量](maximum-usage.md)を使用して購入コミットメントを追跡する
-

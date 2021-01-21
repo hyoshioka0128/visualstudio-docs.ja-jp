@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによって Outlook の電子メールアイテムにファイルを添付する'
+description: Outlook アイテム Microsoft Office にファイルを添付する方法について説明します。 この例では、新しいメールアイテムにファイルを添付し、それを Armando Pinto に送信します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6cde83fa59f45cbc45e56738f09ccf3099f5c02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54617bd61a6b45e3b105bce71342ea1a97f63050
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546134"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847391"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>方法: プログラムによって Outlook の電子メールアイテムにファイルを添付する
   この例では、新しいメールアイテムにファイルを添付し、それを Armando Pinto に送信します。 この例では、Armando Pinto という名前のユーザーが受信者として存在することを前提としています。

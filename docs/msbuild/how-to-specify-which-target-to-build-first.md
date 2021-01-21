@@ -1,5 +1,7 @@
 ---
 title: '方法: 最初にビルドするターゲットを指定する | Microsoft Docs'
+description: MSBuild プロジェクト ファイルで最初にビルドする初期ターゲットまたは既定のターゲットを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7656237be5cf7906293a294885cfa3e6c8bd4e36
-ms.sourcegitcommit: 0b8497b720eb06bed8ce2194731177161b65eb84
+ms.openlocfilehash: a9ce8f17e70344445f95e8b4742838e40a92fe88
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82072529"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436187"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>方法: 最初にビルドするターゲットを指定する
 

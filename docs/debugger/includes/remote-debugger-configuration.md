@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68149165"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312102"
 ---
 1. リモート コンピューター上の **[スタート]** メニューで、 **[リモート デバッガー]** を見つけて起動します。 
    
@@ -38,7 +38,7 @@ ms.locfileid: "68149165"
   
 1. 構成が完了すると、 **[リモート デバッガー]** ウィンドウが表示されます。
   
-    ![[リモート デバッガー] ウィンドウ](../media/remotedebuggerwindow.png "[リモート デバッガー] ウィンドウ")
+    ![リモート デバッガー ウィンドウ](../media/remotedebuggerwindow.png "リモート デバッガー ウィンドウ")
   
     リモート デバッガーは接続を待機しています。 表示されているサーバー名とポート番号を使用して、Visual Studio でリモート接続構成を設定します。  
   

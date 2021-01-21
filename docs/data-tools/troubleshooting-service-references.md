@@ -1,5 +1,7 @@
 ---
 title: サービス参照のトラブルシューティング
+description: Windows Communication Foundation (WCF) または WCF Data Services 参照を Visual Studio で使用しているときに発生する可能性のある一般的な問題を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d52562382f10615c7da1dfab22d4c18323b725b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586121"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998071"
 ---
 # <a name="troubleshoot-service-references"></a>サービス参照をトラブルシューティングする
 
@@ -33,7 +35,7 @@ ms.locfileid: "75586121"
 
 このエラーを修復するには:
 
-1. **ソリューションエクスプローラー**で、 *app.config*ファイルをダブルクリックして開きます。
+1. **ソリューションエクスプローラー** で、 *app.config* ファイルをダブルクリックして開きます。
 
 2. プロパティを見つけ `MaxReceivedMessageSize` て、それより大きい値に変更します。
 
@@ -43,7 +45,7 @@ ms.locfileid: "75586121"
 
 このエラーを修復するには:
 
-- **ソリューションエクスプローラー**で、[WCF サービスライブラリ] プロジェクトを右クリックし、[**ビルド**] をクリックします。
+- **ソリューションエクスプローラー** で、[WCF サービスライブラリ] プロジェクトを右クリックし、[**ビルド**] をクリックします。
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>リモートデスクトップ経由でのサービスへのアクセスエラー
 
@@ -84,7 +86,7 @@ ms.locfileid: "75586121"
 
 5. [ **Configuration Manager** ] ダイアログボックスで、 **アクティブなソリューション構成** を [ **デバッグ**] に設定します。 詳細については、[構成を作成および編集する](../ide/how-to-create-and-edit-configurations.md)」を参照してください。
 
-6. **ソリューションエクスプローラー**で、WCF サービスプロジェクトを選択します。
+6. **ソリューションエクスプローラー** で、WCF サービスプロジェクトを選択します。
 
 7. [ **ビルド** ] メニューの [ **リビルド** ] をクリックして、WCF サービスプロジェクトをリビルドします。
 

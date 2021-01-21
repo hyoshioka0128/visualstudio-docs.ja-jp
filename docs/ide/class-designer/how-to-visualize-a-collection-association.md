@@ -1,5 +1,7 @@
 ---
-title: '方法: コレクションの関連付けをビジュアル化する (クラス デザイナー)'
+title: コレクションの関連付けをビジュアル化する
+description: クラス デザイナーでコレクションの関連付けをビジュアル化する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3636b6548725ddc9af0a2e28acfdda06a8821f9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eaec7d97cd92e65671dedca14c2dbae056b1af10
+ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769893"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933584"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>方法: クラス デザイナーでコレクションの関連付けをビジュアル化する
 
@@ -32,11 +34,11 @@ ms.locfileid: "85769893"
 
 2. クラス ダイアグラムで、プロパティとフィールドが表示されるようにクラスを展開します。
 
-3. クラスで、フィールドまたはプロパティを右クリックし、 **[コレクションの関連として表示]** を選択します。
+3. クラスで、フィールドまたはプロパティを右クリックし、**[コレクションの関連として表示]** を選択します。
 
 プロパティまたはフィールドは、収集された型にリンクする関連行として表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: 型の間の関連付けを作成する](how-to-create-associations-between-types.md)
 - [クラスおよび型のデザイン](designing-and-viewing-classes-and-types.md)

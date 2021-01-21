@@ -1,5 +1,7 @@
 ---
-title: 方法 - ActiveX コントロールをデバッグする | Microsoft Docs
+title: ActiveX コントロールをデバッグする | Microsoft Docs
+Description: ActiveX コントロールをデバッグする方法について説明します。 コンテナーである実行可能ファイルを指定する必要があります。これは [プロジェクト プロパティ ページ] で、またはデバッグを開始するときに行えます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bc982db167624e567f88a1cf139b41cad9feb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a0458fb4981642d3f8386edd4c3605ae7b902a14
+ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350213"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "97398676"
 ---
 # <a name="how-to-debug-an-activex-control"></a>方法: ActiveX コントロールをデバッグする
 

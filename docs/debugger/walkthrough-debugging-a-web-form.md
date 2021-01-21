@@ -1,6 +1,7 @@
 ---
 title: Web フォームをデバッグする | Microsoft Docs
-ms.custom: seodec18
+description: チュートリアルに従い、ASP.NET Web アプリケーション (Web フォーム) をデバッグする方法について確認します。ブレークポイントの設定方法や変数の調べ方が含まれます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 007a63ea16ab044292f451d8d9c427f4358e3f13
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901633"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148235"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>チュートリアル: Web フォームのデバッグ
-このチュートリアルでは、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーション (Web フォーム) をデバッグする方法について説明します。 実行の開始と終了の方法、ブレークポイントの設定方法、および**ウォッチ** ウィンドウでの変数の確認方法についても説明します。
+このチュートリアルでは、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーション (Web フォーム) をデバッグする方法について説明します。 実行の開始と終了の方法、ブレークポイントの設定方法、および **ウォッチ** ウィンドウでの変数の確認方法についても説明します。
 
 > [!NOTE]
 > このチュートリアルを完了するには、サーバー コンピューターに対する管理者特権が必要です。 既定では、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] プロセス (aspnet_wp.exe または w3wp.exe) は、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] プロセスとして実行されます。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] をデバッグするには、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] が実行されているコンピューターに対する管理者特権が必要です。 詳細については、「 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)」をご覧ください。
@@ -62,9 +63,9 @@ ms.locfileid: "62901633"
 
     **ツールボックス** が表示されます。
 
-9. **ツールボックス**の **Button** コントロールをクリックし、主要なデザイン領域 (Default.aspx) に追加します。
+9. **ツールボックス** の **Button** コントロールをクリックし、主要なデザイン領域 (Default.aspx) に追加します。
 
-10. **ツールボックス**の **Textbox** コントロールをクリックし、主要なデザイン領域 (Default.aspx) にドラッグします。
+10. **ツールボックス** の **Textbox** コントロールをクリックし、主要なデザイン領域 (Default.aspx) にドラッグします。
 
 11. ドロップしたボタン コントロールをダブルクリックします。
 
@@ -98,7 +99,7 @@ ms.locfileid: "62901633"
    textBox1.Text = "Button was clicked!";
    ```
 
-    赤い点が表示され、その行のテキストが赤く強調表示されます。 赤い点はブレークポイントを表します。 デバッガーを起動した状態でアプリケーションを実行すると、そのコードに達したときにデバッガーが実行を中断します。 アプリケーションの状態を表示し、デバッグできます。 詳細については、[ブレークポイント](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)に関するページを参照してください。
+    赤い点が表示され、その行のテキストが赤く強調表示されます。 赤い点はブレークポイントを表します。 デバッガーを起動した状態でアプリケーションを実行すると、そのコードに達したときにデバッガーが実行を中断します。 アプリケーションの状態を表示し、デバッグできます。 詳細については、[ブレークポイント](/previous-versions/ktf38f66(v=vs.100))に関するページを参照してください。
 
 2. **[デバッグ]** メニューの **[デバッグの開始]** をクリックします。
 

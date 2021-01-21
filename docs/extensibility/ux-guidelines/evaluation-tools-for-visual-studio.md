@@ -1,5 +1,7 @@
 ---
 title: Visual Studio の評価ツール |Microsoft Docs
+description: このチェックリストを使用して、visual Studio 向けに設計された新機能について、ビジュアルと対話の詳細のユーザーエクスペリエンス品質を評価します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ae5ae2d3be49a797ff1d594aab4517efab53330
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698430"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863461"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio の評価ツール
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio の職人気質チェックリスト
@@ -39,7 +41,7 @@ ms.locfileid: "80698430"
 
 - すべてのラベルが文またはタイトルのケースであり、どのテキストも完全に小文字でないことを確認します。
 
-    ||正解です。|不正解です|
+    ||正解です。|不正解|
     |-|-------------|---------------|
     |**コマンドテキスト (すべて)**|文の場合:<br /><br /> **ディレクトリ名:**|ディレクトリ名:|
     |**ボタンテキスト (クライアント)**|タイトルケース:<br /><br /> **[既定値として設定]**|既定値として設定|
@@ -73,7 +75,7 @@ ms.locfileid: "80698430"
 
 - すべての UI 要素で環境フォントサービスが使用されていることを確認します。 ( [Visual Studio のフォントと書式設定を](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)参照してください)
 
-     サービスが使用されているかどうかを確認するには、[ **ツール] > [オプション] > [フォントおよび色] を選択**します。 [設定] ドロップダウンで、[環境フォント] を選択し、フォントフェイスを様式上誤用別 (Harrington や漫画など) に変更し、サイズを 12 pt に設定します。 次に、[OK] をクリックします。 IDE の再起動が必要になる場合がありますが、ほとんどの UI は直ちに変更されます。 再起動時にもフォントの変更を取得しない領域では、環境フォントが使用されません。
+     サービスが使用されているかどうかを確認するには、[ **ツール] > [オプション] > [フォントおよび色] を選択** します。 [設定] ドロップダウンで、[環境フォント] を選択し、フォントフェイスを様式上誤用別 (Harrington や漫画など) に変更し、サイズを 12 pt に設定します。 次に、[OK] をクリックします。 IDE の再起動が必要になる場合がありますが、ほとんどの UI は直ちに変更されます。 再起動時にもフォントの変更を取得しない領域では、環境フォントが使用されません。
 
 - サービスの派生フォント (たとえば、太字や拡大されたテキスト) が、環境のフォントサイズを変更したときに、"通常の" テキストに関連してサイズと書式設定を保持することを確認します。
 
@@ -113,7 +115,7 @@ ms.locfileid: "80698430"
 
 - 既定では、1つのボタン (通常は **OK**) にフォーカスがあることを確認します。
 
-- **Esc**によってダイアログがキャンセルされることを確認します。
+- **Esc** によってダイアログがキャンセルされることを確認します。
 
 - Enter が、Enter を処理するコントロールにフォーカスがない場合は、既定のボタン **が実行さ** れることを確認します。
 

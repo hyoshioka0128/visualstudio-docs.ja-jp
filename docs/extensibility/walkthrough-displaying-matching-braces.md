@@ -1,5 +1,7 @@
 ---
 title: 'チュートリアル: 一致する中かっこの表示 |Microsoft Docs'
+description: このチュートリアルを使用して、言語のコンテキストで中かっこを定義し、テキストコンテンツの種類にかっこの一致タグを適用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a0bc2c53d5d6e970b4aaa956170bc06c24e7c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904842"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877950"
 ---
 # <a name="walkthrough-display-matching-braces"></a>チュートリアル: 一致する中かっこの表示
 一致させるかっこを定義することによる中かっこの一致など、言語に基づく機能を実装し、カレットが中かっこのいずれかにある場合は、対応する中かっこにテキストマーカータグを追加します。 言語のコンテキストで中かっこを定義し、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類のタグだけを適用するか、既存のコンテンツの種類 ("text" など) にタグを適用することができます。 次のチュートリアルでは、かっこに一致するタグを "text" コンテンツタイプに適用する方法を示します。

@@ -1,5 +1,7 @@
 ---
 title: イメージライブラリビューアー |Microsoft Docs
+description: イメージマニフェストを読み込んで検索する Visual Studio イメージライブラリビューアーツールについて説明します。これにより、イメージの属性を表示および操作できるようになります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
@@ -8,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9714879f93af052e244134ce225b07317455921
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536345"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761272"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 Visual Studio のイメージライブラリビューアーツールでは、イメージマニフェストを読み込んで検索することができます。これにより、Visual Studio の場合と同じ方法でユーザーが操作できるようになります。 ユーザーは、背景、サイズ、DPI、ハイコントラストなどの設定を変更できます。 このツールでは、各イメージマニフェストの読み込み情報も表示され、イメージマニフェスト内の各イメージのソース情報が表示されます。 このツールは、次の場合に役立ちます。
@@ -85,7 +87,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
  一部のシンボルは、すべてのマニフェストに事前に定義されています。 これら \<Source> は、 \<Import> ローカルコンピューター上のパスを参照するために、要素または要素の Uri 属性で使用できます。
 
-|**Symbol**|**説明**|
+|**記号**|**説明**|
 |-|-|
 |CommonProgramFiles|% CommonProgramFiles% 環境変数の値|
 |LocalAppData|% LocalAppData% 環境変数の値|
@@ -95,7 +97,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |システム|Windows\System32 フォルダー|
 |WinDir|% WinDir% 環境変数の値|
 
- **Image**
+ **イメージ**
 
  要素は、 \<Image> モニカーによって参照できるイメージを定義します。 イメージモニカーを形成する GUID と ID。 イメージのモニカーは、イメージライブラリ全体で一意である必要があります。 複数のイメージに特定のモニカーが含まれている場合は、ライブラリのビルド中に最初に検出されたものが保持されます。
 
@@ -127,11 +129,11 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |**属性**|**定義**|
 |-|-|
 |Uri|必要イメージの読み込み元となる場所を定義する URI。 次のいずれかを指定できます。<br /><br /> -Application:///機関を使用する[パック URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br /><br /> -コンポーネントの絶対リソース参照<br /><br /> -ネイティブリソースを含むファイルへのパス|
-|背景|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> - *Light*: 光源はライトバックで使用できます。<br /><br /> - *ダーク*: ソースは、濃色の背景で使用できます。<br /><br /> - *Systeminformation.highcontrast*: ソースはハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> - *HighContrastLight*: ソースはハイコントラストモードのライトバックで使用できます。<br /><br /> -*HighContrastDark*: ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> **Background**属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> **Background** 、 *Dark*、 *HighContrastLight*、または*HighContrastDark**の場合*、ソースの色は反転されません。 **Background**が省略されている場合、または*systeminformation.highcontrast*に設定されている場合、ソースの色の反転は、イメージの**allowcolorinversion**属性によって制御されます。|
+|バックグラウンド|Optionalソースの使用を想定している背景の種類を示します。<br /><br /> 次のいずれかを指定できます。<br /><br /> - *Light*: 光源はライトバックで使用できます。<br /><br /> - *ダーク*: ソースは、濃色の背景で使用できます。<br /><br /> - *Systeminformation.highcontrast*: ソースはハイコントラストモードの任意のバックグラウンドで使用できます。<br /><br /> - *HighContrastLight*: ソースはハイコントラストモードのライトバックで使用できます。<br /><br /> -*HighContrastDark*: ソースはハイコントラストモードでダークバックグラウンドで使用できます。<br /><br /> **Background** 属性が省略されている場合は、任意のバックグラウンドでソースを使用できます。<br /><br /> **Background** 、 *Dark*、 *HighContrastLight*、または *HighContrastDark**の場合*、ソースの色は反転されません。 **Background** が省略されている場合、または *systeminformation.highcontrast* に設定されている場合、ソースの色の反転は、イメージの **allowcolorinversion** 属性によって制御されます。|
 
  \<Source>要素は、次の省略可能なサブ要素のうち1つだけを持つことができます。
 
-|**Element**|**属性 (すべて必須)**|**定義**|
+|**要素**|**属性 (すべて必須)**|**定義**|
 |-|-|-|
 |\<Size>|値|ソースは、指定されたサイズ (デバイス単位) のイメージに使用されます。 画像は正方形になります。|
 |\<SizeRange>|MinSize、MaxSize|ソースは、MinSize から MaxSize (デバイスユニット単位) のイメージに使用されます。 画像は正方形になります。|
@@ -146,7 +148,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
 |**属性**|**定義**|
 |-|-|
-|型|必要ネイティブリソースの型 (XAML または PNG)|
+|種類|必要ネイティブリソースの型 (XAML または PNG)|
 |ID|必要ネイティブリソースの整数の ID 部分|
 
  **リスト**
@@ -215,7 +217,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
  ![イメージ ライブラリ ビューアーのフィルター ID](../../extensibility/internals/media/image-library-viewer-filter-id.png "イメージ ライブラリ ビューアーのフィルター ID")
 
-## <a name="notes"></a>Notes
+## <a name="notes"></a>メモ
 
 - 既定では、ツールは Visual Studio のインストールディレクトリに存在する複数のイメージマニフェストを取得します。 一般公開されているモニカーを持つ唯一のものは、 **VisualStudio ImageCatalog** マニフェストです。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (カスタムマニフェストでこの GUID をオーバーライドし **ません** ) 型: knownmonikers
 

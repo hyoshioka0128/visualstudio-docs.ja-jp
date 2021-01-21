@@ -1,5 +1,7 @@
 ---
 title: レガシ言語の登録 Service2 |Microsoft Docs
+description: この記事では、Visual Studio で使用できるさまざまな言語サービスオプションのレジストリエントリの一覧を示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,39 +14,39 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a41f3f507579cbd2649e33e81d1368fb5404799
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238843"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875182"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>従来の言語サービスの登録2
 以下のセクションでは、で使用できるさまざまな言語サービスオプションのレジストリエントリの一覧を提供し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
- 次のレジストリエントリの一覧では、 *VS Reg Root*は HKEY_LOCAL_MACHINE \software\microsoft\visualstudio と同じです。ここで、 \\ *X.Y* *x.y*は [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] バージョン番号です。
+ 次のレジストリエントリの一覧では、 *VS Reg Root* は HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioの \\ *x. y* と等しくなります。ここで、 *x.y* は [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] バージョン番号です。
 
 ## <a name="registry-entries-for-language-service-options"></a>言語サービスオプションのレジストリエントリ
- *VS Reg Root*\Languages\Language Services \\ *言語名*キーには、次の値を含めることができます。
+ *VS Reg Root*\Languages\Language Services \\ *言語名* キーには、次の値を含めることができます。
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ|*\<GUID>*|言語サービスの GUID。|
+|(既定値)。|REG_SZ|*\<GUID>*|言語サービスの GUID。|
 |LangResID|REG_DWORD|0x0-0xffff|言語のローカライズされたテキスト名の文字列リソース識別子 (ResID)。|
-|Package|REG_SZ|*\<GUID>*|VSPackage の GUID。|
+|パッケージ|REG_SZ|*\<GUID>*|VSPackage の GUID。|
 |ShowCompletion|REG_DWORD|0-1|[**オプション**] ダイアログボックスの [**ステートメント入力候補**] オプションを有効にするかどうかを指定します。|
-|ShowSmartIndent|REG_DWORD|0-1|[**オプション**] ダイアログボックスで**スマート**インデントを選択するオプションを有効にするかどうかを指定します。|
+|ShowSmartIndent|REG_DWORD|0-1|[**オプション**] ダイアログボックスで **スマート** インデントを選択するオプションを有効にするかどうかを指定します。|
 |RequestStockColors|REG_DWORD|0-1|キーワードに色を設定するために、カスタム色と既定の色のどちらを使用するかを指定します。|
 |Sho, Turls|REG_DWORD|0-1|ユーザーが Url をクリックできるかどうかを指定します。|
 |非ホット Url の既定値|REG_DWORD|0-1|[**オプション**] ダイアログボックスの **[シングルクリックでの URL ナビゲーションを有効にする**] オプションの初期設定を指定します。|
 |DefaultToInsertSpaces|REG_DWORD|0-1|言語サービスの既定のタブオプションとして "スペースの挿入" があるかどうかを指定します。|
-|ShowDropdownBarOption|REG_DWORD|0-1|**ナビゲーションバー**を表示または非表示にする [**オプション**] ダイアログボックスの [**ナビゲーションバー** ] オプションを有効または無効にします。|
-|単一のコードウィンドウのみ|REG_DWORD|0-1|言語サービスの [**ウィンドウ**] メニューで選択できる**新しいウィンドウ**を有効または無効にします。|
-|Enableadvanced Membersoption|REG_DWORD|0-1|**[詳細メンバーを非表示**にする] の [**オプション**] ダイアログボックスの設定を有効または無効にします。|
+|ShowDropdownBarOption|REG_DWORD|0-1|**ナビゲーションバー** を表示または非表示にする [**オプション**] ダイアログボックスの [**ナビゲーションバー** ] オプションを有効または無効にします。|
+|単一のコードウィンドウのみ|REG_DWORD|0-1|言語サービスの [**ウィンドウ**] メニューで選択できる **新しいウィンドウ** を有効または無効にします。|
+|Enableadvanced Membersoption|REG_DWORD|0-1|**[詳細メンバーを非表示** にする] の [**オプション**] ダイアログボックスの設定を有効または無効にします。|
 |サポート CF_HTML|REG_DWORD|0-1|エディターで HTML データのコピーと貼り付けを有効にするかどうかを指定します。|
 |EnableLineNumbersOption|REG_DWORD|0-1|言語サービスで [**オプション**] ダイアログボックスの [**行番号**] オプションを有効にするかどうかを指定します。|
 |Hideadvanced Membersデフォルト|REG_DWORD|0-1|プライベートフィールドなどの高度なメンバーを入力候補一覧で非表示にするかどうかを指定します。|
-|ShowBraceCompletion|REG_DWORD|0-1|[**オプション**] ダイアログボックスの [中**かっこの完了**] オプションを有効にするかどうかを指定します。|
+|ShowBraceCompletion|REG_DWORD|0-1|[**オプション**] ダイアログボックスの [中 **かっこの完了**] オプションを有効にするかどうかを指定します。|
 
 ### <a name="example"></a>例
 
@@ -66,7 +68,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ|text|既定値を使用して、言語の名前を文書化できます。 このキーの名前は、式エバリュエーターの GUID であり、\ ad7metricor 式エバリュエーターに対応するエントリが含まれてい *\<VS Reg Root>* ます。|
+|(既定値)。|REG_SZ|text|既定値を使用して、言語の名前を文書化できます。 このキーの名前は、式エバリュエーターの GUID であり、\ ad7metricor 式エバリュエーターに対応するエントリが含まれてい *\<VS Reg Root>* ます。|
 
 ### <a name="example"></a>例
 
@@ -85,9 +87,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ|ResID|このオプションページのローカライズされた表示名。 名前には、リテラルテキストまたは # `nnn` を `nnn` 指定できます。ここで、は、指定された VSPackage のサテライト DLL 内の文字列リソース ID です。|
-|Package|REG_SZ|*GUID*|このオプションページを実装する VSPackage の GUID。|
-|Page|REG_SZ|*GUID*|メソッドを呼び出すことによって、VSPackage から要求するプロパティページの GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 。 このレジストリエントリが存在しない場合、レジストリキーはページではなくノードを記述します。|
+|(既定値)。|REG_SZ|ResID|このオプションページのローカライズされた表示名。 名前には、リテラルテキストまたは # `nnn` を `nnn` 指定できます。ここで、は、指定された VSPackage のサテライト DLL 内の文字列リソース ID です。|
+|パッケージ|REG_SZ|*GUID*|このオプションページを実装する VSPackage の GUID。|
+|ページ|REG_SZ|*GUID*|メソッドを呼び出すことによって、VSPackage から要求するプロパティページの GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 。 このレジストリエントリが存在しない場合、レジストリキーはページではなくノードを記述します。|
 
 ### <a name="example"></a>例
 
@@ -119,7 +121,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ|*GUID*|このファイル名拡張子の種類の既定の言語サービスのサービス GUID。|
+|(既定値)。|REG_SZ|*GUID*|このファイル名拡張子の種類の既定の言語サービスのサービス GUID。|
 
 ### <a name="example"></a>例
 
@@ -132,16 +134,16 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-options"></a>エディターオプションのレジストリエントリ
- *VS Reg Root*エディターキーには、次の値を含めることができます。
+ *VS Reg Root* エディターキーには、次の値を含めることができます。
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ|""|未使用ここで、ドキュメントの名前を入力できます。|
+|(既定値)。|REG_SZ|""|未使用ここで、ドキュメントの名前を入力できます。|
 |DefaultToolboxTab|REG_SZ|""|エディターがアクティブなときに既定で作成されるツールボックスタブの名前。|
 |DisplayName|REG_SZ|ResID|[ **ファイルを開くアプリケーション** の選択] ダイアログボックスに表示する名前。 名前は、文字列リソース ID または標準形式の名前です。|
 |ExcludeDefTextEditor|REG_DWORD|0-1|[ **ファイルを開くアプリケーションの表示** ] コマンドで使用します。 特定のファイルの種類で使用可能なエディターの一覧に既定のテキストエディターを表示しない場合は、この値を1に設定します。|
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|コードページをサポートするファイルを開くことができるすべての言語サービスに使用されます。 たとえば、 **Open with** コマンドを使用して .txt ファイルを開くと、エンコードなしでソースコードエディターを使用するためのオプションが用意されています。<br /><br /> サブキーの名前に指定された GUID は、コードページエディターファクトリ用です。この特定のレジストリエントリで指定されているリンクされた GUID は、通常のエディターファクトリ用です。 このエントリの目的は、IDE が既定のエディターを使用してファイルを開いていない場合、IDE が一覧の次のエディターを使用しようとすることです。 このエディターファクトリは、基本的には失敗したエディターファクトリと同じであるため、次のエディターはコードページエディターファクトリにしないでください。|
-|Package|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage GUID。|
+|パッケージ|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage GUID。|
 
 ### <a name="example"></a>例
 
@@ -161,7 +163,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ||未使用。|
+|(既定値)。|REG_SZ||未使用。|
 |*\<GUID>*|REG_SZ|""|サポートされている論理ビューのキー。 これらの数は必要な数だけ持つことができます。 レジストリエントリの名前は、値ではなく、常に空の文字列である重要なものです。|
 
 ### <a name="example"></a>例
@@ -179,14 +181,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-extension-options"></a>エディター拡張機能のオプションのレジストリエントリ
- *VS Reg Root*エディターエディターの \\ *GUID*\ Extensions キーには、次の値を含めることができます。 ファイル名の拡張子には、先頭のピリオドは含まれません。
+ *VS Reg Root* エディターエディターの \\ *GUID*\ Extensions キーには、次の値を含めることができます。 ファイル名の拡張子には、先頭のピリオドは含まれません。
 
 |名前|Type|Range|説明|
 |----------|----------|-----------|-----------------|
-|(既定)|REG_SZ||未使用。|
+|(既定値)。|REG_SZ||未使用。|
 |*\<ext>*|REG_DWORD|0-0xffffffff|拡張機能の相対的な優先順位。 複数の言語で同じ拡張機能が共有されている場合は、優先度の高い言語が選択されます。|
 
- また、エディターの現在のユーザーの既定の選択は、HKEY_Current_User \Software\Microsoft\VisualStudio の \\ *X.Y*既定のエディター \\ *ext*に格納されます。選択された言語サービスの GUID は、カスタムエントリに含まれています。 これは、現在のユーザーに対して優先されます。
+ また、エディターの現在のユーザーの既定の選択は、HKEY_Current_User \Software\Microsoft\VisualStudio の \\ 既定のエディター \\ *ext* に格納されます。選択された言語サービスの GUID は、カスタムエントリに含まれています。 これは、現在のユーザーに対して優先されます。
 
 ### <a name="example"></a>例
 
@@ -214,7 +216,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 |QuickInfo|REG_DWORD|0-1|IntelliSense のクイックヒント操作のサポート。|
 |ShowMatchingBrace|REG_DWORD|0-1|一致する言語ペアをステータスバーに表示するためのサポート。|
 |MatchBracesAtCaret|REG_DWORD|0-1|一致する言語のペアを表示するためのサポート。通常は、2つの要素を強調表示します。|
-|MaxErrorMessages|REG_DWORD|0-n|**エラー一覧**ウィンドウに表示できるエラーの最大数。|
+|MaxErrorMessages|REG_DWORD|0-n|**エラー一覧** ウィンドウに表示できるエラーの最大数。|
 |方法 Ensedelay|REG_DWORD|0-n|IntelliSense 操作のバックグラウンド解析を開始するまでの遅延時間 (ミリ秒単位)。|
 |EnableAsyncCompletion|REG_DWORD|0-1|バックグラウンド解析のサポート。|
 |EnableCommenting|REG_DWORD|0-1|選択したテキストブロックのコメント化をサポートします。また、選択したテキストのコメント解除のサポートも意味します。|

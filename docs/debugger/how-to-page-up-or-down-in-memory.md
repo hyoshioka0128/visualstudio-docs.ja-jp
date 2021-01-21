@@ -1,5 +1,7 @@
 ---
-title: 方法 - メモリ内で 1 ページずつ上下に移動する | Microsoft Docs
+title: メモリ内で 1 ページずつ上下に移動する | Microsoft Docs
+description: Visual Studio でデバッグするとき、メモリ内で 1 ページずつ上下に移動し、[メモリ] ウィンドウまたは [逆アセンブル] ウィンドウでメモリの内容を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 1fc586603caf18261654e5ec8ee437c0875616a7
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148885"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>方法: メモリ内で 1 ページずつ上下に移動する
 

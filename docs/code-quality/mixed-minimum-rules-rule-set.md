@@ -1,6 +1,8 @@
 ---
 title: "\"混合最小規則\" 規則セット"
 ms.date: 11/04/2016
+description: Visual Studio での "混合最小規則" 規則セットについて説明します。 共通言語ランタイムをサポートする C++ プロジェクトの規則の説明を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5bb87da3cc668ba946c6ee607fa3be5a2c79cc32
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599573"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94435327"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>"混合最小規則" 規則セット
 
@@ -153,7 +155,7 @@ Microsoft Mixed Minimum ルールは、共通言語ランタイムをサポー�
 |[C28305](/cpp/code-quality/c28305)|トークンの解析中にエラーが発生しました。|
 |[C28350](/cpp/code-quality/c28350)|注釈には、条件付きで適用できない状況の説明が表示されます。|
 |[C28351](/cpp/code-quality/c28351)|注釈には、動的な値 (変数) が使用できない条件が記述されています。|
-|[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
-|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
-|[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2231](../code-quality/ca2231.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|空のファイナライザーを削除します|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|破棄可能なフィールドは破棄されなければなりません|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|

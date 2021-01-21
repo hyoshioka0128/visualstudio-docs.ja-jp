@@ -1,5 +1,8 @@
 ---
 title: Information rights management & マネージコード拡張機能
+description: IRM (Information Rights Management) について説明します。これは、承認されていないユーザーが機密情報を表示または変更できないようにするための機能です。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 753f3d2da201c67cd86c697eccf7580596a40d6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68872064"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523045"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Information rights management とマネージコード拡張機能の概要
   Microsoft Office Word および Microsoft Office Excel は情報 Rights Management (IRM) を提供します。これは、承認されていないユーザーが機密情報を表示または変更できないようにするための機能です。 情報 Rights Management のしくみの詳細については、特定の Office アプリケーションのヘルプを参照してください。

@@ -1,5 +1,7 @@
 ---
 title: VSTO アドインのパフォーマンスを向上させる
+description: Office アプリケーション用に作成した VSTO アドインを最適化して、すばやく開始、終了、アイテムのオープン、およびその他のタスクを実行できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dccff7206aa9ef71596816d34a863695a10aff6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ba2e9cc2cd55b3e3f6362250ffc1e9489b1626
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416550"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524433"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>VSTO アドインのパフォーマンスを向上させる
   Office アプリケーション用に作成した VSTO アドインを最適化して、そのアドインの開始、終了、また、項目を開くなどのタスクの実行を素早く行えるようにして、ユーザー エクスペリエンスを向上させることができます。 VSTO アドインが Outlook を対象にしている場合は、不十分なパフォーマンスが原因で VSTO アドインが無効にされる可能性を低くすることができます。 次の方針を導入すると、VSTO アドインのパフォーマンスを向上させることができます。
@@ -41,7 +43,7 @@ ms.locfileid: "79416550"
 
 ### <a name="to-configure-a-clickonce-solution-to-load-vsto-add-ins-on-demand"></a>必要に応じて VSTO アドインを読み込むように ClickOnce ソリューションを構成するには
 
-1. **ソリューション エクスプローラー**で、プロジェクト ノードを選択します。
+1. **ソリューション エクスプローラー** で、プロジェクト ノードを選択します。
 
 2. メニュー バーで **[表示]**  >  **[プロパティ ページ]** の順に選びます。
 
@@ -51,13 +53,13 @@ ms.locfileid: "79416550"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>必要に応じて VSTO アドインを読み込むように Windows インストーラー ソリューションを構成するには
 
-1. レジストリで、 `LoadBehavior` ** _Root_\Software\Microsoft\Office \\ _ApplicationName_/Addins \\ _アドイン ID_ **キーのエントリを**0x10**に設定します。
+1. レジストリで、 `LoadBehavior` **_Root_\Software\Microsoft\Office \\ _ApplicationName_/Addins \\ _アドイン ID_** キーのエントリを **0x10** に設定します。
 
      詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>ソリューションのデバッグ中に必要に応じて VSTO アドインを読み込むようにソリューションを構成するには
 
-1. `LoadBehavior` **_ルート_\SOFTWARE\MICROSOFT\OFFICE \\ _ApplicationName_\ \\ _アドイン ID_ **キーのエントリを**0x10**に設定するスクリプトを作成します。
+1. `LoadBehavior` **_ルート_\SOFTWARE\MICROSOFT\OFFICE \\ _ApplicationName_\ \\ _アドイン ID_** キーのエントリを **0x10** に設定するスクリプトを作成します。
 
      このスクリプトの例を次のコードに示します。
 
@@ -115,6 +117,6 @@ ms.locfileid: "79416550"
 
 ## <a name="see-also"></a>関連項目
 
-- [VSTO アドインのオンデマンド読み込み](https://blogs.msdn.microsoft.com/andreww/2008/07/14/demand-loading-vsto-add-ins/)
-- [Office アドイン内での CLR の遅延読み込み](https://blogs.msdn.microsoft.com/andreww/2008/04/19/delay-loading-the-clr-in-office-add-ins/)
+- [VSTO アドインのオンデマンド読み込み](/archive/blogs/andreww/demand-loading-vsto-add-ins)
+- [Office アドイン内での CLR の遅延読み込み](/archive/blogs/andreww/delay-loading-the-clr-in-office-add-ins)
 - [Visual Studio を使用して Office 用 VSTO アドインを作成する](create-vsto-add-ins-for-office-by-using-visual-studio.md)

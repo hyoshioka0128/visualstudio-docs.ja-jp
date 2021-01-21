@@ -1,5 +1,7 @@
 ---
 title: メッセージ列挙子 |Microsoft Docs
+description: この列挙子のメンバーは、TEXTOUTPROC 関数に使用されます。これは、IDE が SccOpenProject を呼び出すときに提供するコールバック関数です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e09b72bd228839268cffc228dd0dc503cc82bd9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a7d4607afd9b46d35db416baed73007c67a7832
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702510"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863734"
 ---
 # <a name="message-enumerator"></a>メッセージ列挙子
 関数には次のフラグが使用されます `TEXTOUTPROC` 。これは、 [Sccopenproject](../extensibility/sccopenproject-function.md) を呼び出すときに IDE が提供するコールバック関数です (コールバック関数の詳細については、「 [lptextoutproc](../extensibility/lptextoutproc.md) 」を参照してください)。
@@ -26,16 +28,16 @@ ms.locfileid: "80702510"
 ## <a name="syntax"></a>構文
 
 ```
-enum { 
-   SCC_MSG_RTN_CANCEL = -1, 
-   SCC_MSG_RTN_OK = 0, 
-   SCC_MSG_INFO = 1 
-   SCC_MSG_WARNING, 
-   SCC_MSG_ERROR, 
-   SCC_MSG_STATUS, 
-   SCC_MSG_DOCANCEL, 
-   SCC_MSG_STARTCANCEL, 
-   SCC_MSG_STOPCANCEL 
+enum { 
+   SCC_MSG_RTN_CANCEL = -1, 
+   SCC_MSG_RTN_OK = 0, 
+   SCC_MSG_INFO = 1 
+   SCC_MSG_WARNING, 
+   SCC_MSG_ERROR, 
+   SCC_MSG_STATUS, 
+   SCC_MSG_DOCANCEL, 
+   SCC_MSG_STARTCANCEL, 
+   SCC_MSG_STOPCANCEL 
 };
 ```
 
@@ -58,6 +60,6 @@ enum { 
 
  SCC_MSG_STOPCANCEL キャンセルループを停止します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

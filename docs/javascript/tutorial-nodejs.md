@@ -1,6 +1,6 @@
 ---
 title: Node.js と Express のアプリを作成する
-description: このチュートリアルでは、Node.js Tools for Visual Studio を使用してアプリを作成します。
+description: このチュートリアルでは、Visual Studio の Express Web アプリケーション フレームワークを使用し、簡単な Node.js アプリケーションを作成する方法について説明します。
 ms.date: 04/20/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d91f20dec22379d79b5f295fccf49aae0733a24
-ms.sourcegitcommit: 5c804c42d24d35dcf2ba195aba9ce07031743f62
+ms.openlocfilehash: 7ce7b4af783149a53e0eacadaa5753d596f69563
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81744891"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846925"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>チュートリアル:Visual Studio で Node.js と Express のアプリを作成する
 
@@ -36,7 +36,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 このチュートリアルでは、以下の内容を学習します。
 > [!div class="checklist"]
-> * Node.js プロジェクトの作成
+> * Node.js プロジェクトを作成する
 > * 何らかのコードを追加する
 > * IntelliSense を使用してコードを編集する
 > * アプリを実行する
@@ -63,10 +63,10 @@ Express は Web アプリケーション フレームワークであり、Node.j
 * Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
     Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、 **[変更]** を選択します。
@@ -83,7 +83,7 @@ Express は Web アプリケーション フレームワークであり、Node.j
 
 ## <a name="create-a-new-nodejs-project"></a>Node.js プロジェクトを新規作成する
 
-Visual Studio では、*プロジェクト*の 1 つのアプリケーションに対してファイルが管理されます。 プロジェクトには、ソース コード、リソース、構成ファイルが含まれています。
+Visual Studio では、*プロジェクト* の 1 つのアプリケーションに対してファイルが管理されます。 プロジェクトには、ソース コード、リソース、構成ファイルが含まれています。
 
 このチュートリアルでは、Node.js と Express アプリのコードを含む簡単なプロジェクトから開始します。
 
@@ -97,13 +97,13 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
     ::: moniker range="vs-2017"
     上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[JavaScript]** を展開して、 **[Node.js]** を選択します。 真ん中のウィンドウで **[基本の Azure Node.js Express 4 アプリケーション]** を選択し、 **[OK]** を選択します。
     ::: moniker-end
-    **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
+    **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発** ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
     Visual Studio は新しいソリューションを作成し、右のウィンドウでプロジェクトを開きます。 *app.js* プロジェクト ファイルがエディター (左のウィンドウ) で開きます。
 
     ![プロジェクト構造](../javascript/media/tutorial-project-structure.png)
 
-    (1) **[新しいプロジェクト]** ダイアログ ボックスに指定した名前が使用され、**太字**で強調表示されているのがあなたのプロジェクトです。 ファイル システムでは、このプロジェクトは、プロジェクト フォルダーの *.njsproj* ファイルに該当します。 プロジェクトを右クリックし、 **[プロパティ]** を選択することで、プロジェクトに関連付けられたプロパティと環境変数を設定することができます。 プロジェクト ファイルでは Node.js プロジェクト ソースへのカスタム変更が行われないため、他の開発ツールを使用してラウンド トリップを行うことができます。
+    (1) **[新しいプロジェクト]** ダイアログ ボックスに指定した名前が使用され、**太字** で強調表示されているのがあなたのプロジェクトです。 ファイル システムでは、このプロジェクトは、プロジェクト フォルダーの *.njsproj* ファイルに該当します。 プロジェクトを右クリックし、 **[プロパティ]** を選択することで、プロジェクトに関連付けられたプロパティと環境変数を設定することができます。 プロジェクト ファイルでは Node.js プロジェクト ソースへのカスタム変更が行われないため、他の開発ツールを使用してラウンド トリップを行うことができます。
 
     (2) 最上位レベルにあるのは、ソリューションです。既定では、名前はプロジェクトと同じです。 ディスク上の *.sln* ファイルで表されるソリューションは、1 つ以上の関連プロジェクトのコンテナーです。
 
@@ -111,7 +111,7 @@ Visual Studio では、*プロジェクト*の 1 つのアプリケーション�
 
     (4) *package.json* は、ノーカルでインストールされているパッケージのパッケージ依存関係とパッケージ バージョンを管理する目的で npm によって使用されるファイルです。 詳細については、[npm パッケージの管理](../javascript/npm-package-management.md)に関するページを参照してください。
 
-    (5) プロジェクト ノードの下に、*app.js* などのプロジェクト ファイルが表示されます。 *app.js* はプロジェクト スタートアップ ファイルであり、そのため、**太字**で表示されます。 プロジェクトでファイルを右クリックし、 **[Node.js スタートアップ スクリプトとして設定]** を選択することで、スタートアップ ファイルを設定できます。
+    (5) プロジェクト ノードの下に、*app.js* などのプロジェクト ファイルが表示されます。 *app.js* はプロジェクト スタートアップ ファイルであり、そのため、**太字** で表示されます。 プロジェクトでファイルを右クリックし、 **[Node.js スタートアップ スクリプトとして設定]** を選択することで、スタートアップ ファイルを設定できます。
 
 1. **npm** ノードを開き、必要なすべての npm パッケージが存在するかどうかを確認します。
 
@@ -269,7 +269,7 @@ IntelliSense は、コードの記述を支援する Visual Studio ツールで�
 
 これでこのチュートリアルは完了です。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [アプリを Linux App Service にデプロイする](../javascript/publish-nodejs-app-azure.md)

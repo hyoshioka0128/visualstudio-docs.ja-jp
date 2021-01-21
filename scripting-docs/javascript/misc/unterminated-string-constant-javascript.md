@@ -14,12 +14,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815319"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862703"
 ---
 # <a name="unterminated-string-constant-javascript"></a>未終了の文字列型の定数です。(JavaScript)
 終わりの引用符で文字列定数を終了しませんでした。 文字列定数は、1組の引用符で囲む必要があります。  
@@ -32,5 +32,5 @@ ms.locfileid: "85815319"
 - 終わりの引用符を文字列の末尾に追加します。  
   
 ## <a name="see-also"></a>関連項目  
- [String オブジェクト](../../javascript/reference/string-object-javascript.md)   
- [toString メソッド (Object)](../../javascript/reference/tostring-method-object-javascript.md)
+ [String オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
+ [toString メソッド (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)

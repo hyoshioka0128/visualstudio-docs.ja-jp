@@ -1,5 +1,7 @@
 ---
 title: 型に合わせてファイル名を変更する
+description: '[クイック アクションとリファクタリング] メニューを使用して、ファイル名に合わせて型の名前を変更する、または含まれている型に合わせてファイル名を変更する方法を説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: reference
 author: TerryGLee
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 020dcedd6b0cb2117984d45548b5c1e099c67aee
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75594397"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479824"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>型からファイル名への同期またはファイル名から型への同期リファクタリング
 
@@ -65,6 +67,6 @@ ms.locfileid: "75594397"
 
        ![インラインの結果 Visual Basic](media/synctype-result-vb.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [リファクタリング](../refactoring-in-visual-studio.md)

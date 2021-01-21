@@ -1,5 +1,7 @@
 ---
 title: Visual Studio Tools for AI の概要
+description: ディープ ラーニング ソリューションをビルド、テスト、展開するために使用できる統合開発環境 (IDE) である Visual Studio Tools for AI について説明します。
+ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jillfra
@@ -8,12 +10,12 @@ ms.date: 11/13/2017
 ms.topic: overview
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f4d04e64589ca8db9c53d5c4128391974b297d0
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 7b660881b18efca4ec81b3f8f31e8dd64870d4d0
+ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485386"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "92099168"
 ---
 # <a name="overview-of-visual-studio-tools-for-ai"></a>Visual Studio Tools for AI の概要
 
@@ -23,7 +25,7 @@ Visual Studio Tools for AI は、ディープ ラーニング ソリューショ
 
 拡張機能をダウンロードし、インストールする方法については、「[Visual Studio Tools for AI のインストール](installation.md)」ページを参照してください。
 
-## <a name="5-minute-quickstart"></a>5 分間のクイック スタート 
+## <a name="5-minute-quickstart"></a>5 分間のクイック スタート
 
 [TensorFlow と Python](tensorflow-local.md) を使ったディープ ラーニング ソリューションの実行方法について説明します
 
@@ -40,4 +42,4 @@ Visual Studio Tools for AI は、ディープ ラーニング ソリューショ
 システム要件やサポート オプションなど、Visual Studio Tools for AI に関する詳細については、[Visual Studio Tools for AI](about-ai-tools.md) の概要ページを参照してください。
 
 ## <a name="see-also"></a>関連項目
-[Visual Studio 機能拡張](../extensibility/index.yml?view=vs-2017)
+[Visual Studio 機能拡張](../extensibility/index.yml?view=vs-2017&preserve-view=true)

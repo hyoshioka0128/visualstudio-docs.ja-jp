@@ -1,5 +1,7 @@
 ---
 title: ファイル名拡張子について |Microsoft Docs
+description: Vspackage のファイル名拡張子を登録して、Visual Studio の特定のバージョンに関連付ける方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e07ec233ef975441a1f10507f0db872051558f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ef0c942e88c10b4f814dc103702edc08229fb9b
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740345"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597666"
 ---
 # <a name="about-file-name-extensions"></a>ファイル名拡張子について
 VSPackage のファイル拡張子を登録すると、それをのバージョンに関連付けることに [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] なります。 これは、1台のコンピューターに複数のバージョンの [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がインストールされている場合に重要です。

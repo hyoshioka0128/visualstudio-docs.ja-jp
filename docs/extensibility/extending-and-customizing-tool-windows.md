@@ -1,5 +1,7 @@
 ---
 title: ツールウィンドウの拡張とカスタマイズ |Microsoft Docs
+description: プロパティウィンドウ、出力ウィンドウ、タスク一覧ウィンドウなど、Visual Studio に用意されているツールウィンドウの拡張とカスタマイズについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76c094ec73a69baa46a5e8313dd26febd57e5887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711815"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995864"
 ---
 # <a name="extend-and-customize-tool-windows"></a>ツールウィンドウの拡張とカスタマイズ
 Visual Studio には、ツールウィンドウ、ドキュメントウィンドウ、ダイアログウィンドウなど、いくつかの異なる種類のウィンドウが用意されています。 [ **プロパティ** ] ウィンドウ、[ **出力** ] ウィンドウ、[ **タスク一覧** ] ウィンドウなどの他のウィンドウは、ツールウィンドウの種類です。
@@ -30,7 +32,7 @@ Visual Studio には、ツールウィンドウ、ドキュメントウィンド
 
  ツール ウィンドウは、既定では単一インスタンスです、つまり、一度に開くことができるツール ウィンドウのインスタンスは 1 つのみです。 単一インスタンスのツール ウィンドウを開いた後は、IDE が閉じられるまで開いたままです。 単一インスタンスのツールウィンドウを閉じると、その可視性だけが変化します。 複数インスタンスのツール ウィンドウを作成して、ウィンドウの複数のインスタンスを同時に開くことも可能です。 詳細について [は、「複数インスタンスのツールウィンドウを作成する](../extensibility/creating-a-multi-instance-tool-window.md) 」を参照してください。
 
- ツールウィンドウは *動的*にすることができます。つまり、関連する UI コンテキストが適用されるたびに表示されます。 自動表示の使用により、IDE でのウィンドウの煩雑さが軽減されます。 詳細については、「 [動的ツールウィンドウを開く](../extensibility/opening-a-dynamic-tool-window.md)」を参照してください。
+ ツールウィンドウは *動的* にすることができます。つまり、関連する UI コンテキストが適用されるたびに表示されます。 自動表示の使用により、IDE でのウィンドウの煩雑さが軽減されます。 詳細については、「 [動的ツールウィンドウを開く](../extensibility/opening-a-dynamic-tool-window.md)」を参照してください。
 
  ツール ウィンドウは、ドッキング、フローティング、またはドキュメント フレームのタブ付けが可能です。 ツール ウィンドウの枠は IDE によって提供され、サイズ、位置、ドッキング状態と、その他の永続的なプロパティを制御するために使用します。 ツール ウィンドウのペインには、内容が表示されます。 既定のサイズと位置はツール ウィンドウを最初に開くときにのみ適用されます。その後、ツール ウィンドウの状態は保持されます。
 
@@ -46,7 +48,7 @@ Visual Studio には、ツールウィンドウ、ドキュメントウィンド
 ## <a name="modal-dialog-boxes"></a>モーダルダイアログボックス
  Visual Studio 拡張機能では、モーダルダイアログボックスをから派生させることによって作成する必要があり <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> ます。これにより、コントロールと残りの UI を制御できます。 詳細については、「 [モーダルダイアログボックスの作成と管理](../extensibility/creating-and-managing-modal-dialog-boxes.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ツールウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)
 - [プロジェクトの拡張](../extensibility/extending-projects.md)
 - [ソリューションの拡張](../extensibility/extending-solutions.md)

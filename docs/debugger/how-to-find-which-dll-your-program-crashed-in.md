@@ -1,5 +1,7 @@
 ---
-title: 方法 - プログラムのクラッシュが発生している DLL を確認する | Microsoft Docs
+title: プログラムのクラッシュが発生している DLL を確認する | Microsoft Docs
+description: '[モジュール] ウィンドウを使用して、アプリケーションがクラッシュしたときにアクティブだった外部 DLL を識別します。 これは、システム DLL、または他のユーザーのコードに対して行うことができます。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 155fd74dc6e01f88bf04fe21b77ebdae6b04437f
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6eacc8865b3f531df8651ad77d99b319278e6cd1
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349537"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903391"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>方法: プログラムのクラッシュが発生している DLL を確認する (C#、C++、Visual Basic、F#)
 

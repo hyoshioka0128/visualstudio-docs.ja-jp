@@ -1,5 +1,8 @@
 ---
 title: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
+titleSuffix: ''
+description: コマンドプロンプトで MSBuild ターゲットを使用して、Visual Studio で SharePoint ソリューションパッケージファイル (.wsp) を作成する方法をカスタマイズします。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aa0afbe685c85d9a005dc621f58f17d396c0236
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016883"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903651"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>方法: MSBuild ターゲットを使用して SharePoint ソリューションパッケージをカスタマイズする
   MSBuild ターゲットをコマンドプロンプトで使用することにより、Visual Studio が SharePoint パッケージファイル (*.wsp*) を作成する方法をカスタマイズできます。 たとえば、MSBuild のプロパティをカスタマイズして、パッケージ化された中間ディレクトリと、列挙されたファイルを指定する MSBuild 項目グループを変更できます。
@@ -43,7 +46,7 @@ ms.locfileid: "86016883"
 
 3. プロジェクトを開き、ショートカットメニューを開き、[ **プロジェクトのアンロード**] を選択します。
 
-4. **ソリューションエクスプローラー**で、プロジェクトのショートカットメニューを開き、[ * \<ProjectName> .vbproj*の**編集**] または [ * \<ProjectName> .csproj*の**編集**] を選択します。
+4. **ソリューションエクスプローラー** で、プロジェクトのショートカットメニューを開き、[ *\<ProjectName> .vbproj* の **編集**] または [ *\<ProjectName> .csproj* の **編集**] を選択します。
 
 5. `Import`プロジェクトファイルの末尾付近にある行の後に、次の行を追加します。
 
@@ -53,13 +56,13 @@ ms.locfileid: "86016883"
 
 6. プロジェクト ファイルを保存して閉じます。
 
-7. **ソリューションエクスプローラー**で、プロジェクトのショートカットメニューを開き、[プロジェクトの**再読み込み**] をクリックします。
+7. **ソリューションエクスプローラー** で、プロジェクトのショートカットメニューを開き、[プロジェクトの **再読み込み**] をクリックします。
 
    プロジェクトを発行すると、パッケージが開始される前に、メッセージが出力に表示されます。
 
 #### <a name="to-customize-the-afterlayout-target"></a>AfterLayout ターゲットをカスタマイズするには
 
-1. メニューバーで、[**ファイル**] [ファイルを開く] の順に選択し  >  **Open**  >  **File**ます。
+1. メニューバーで、[**ファイル**] [ファイルを開く] の順に選択し  >  **Open**  >  **File** ます。
 
 2. [ **ファイルを開く** ] ダイアログボックスで、プロジェクトフォルダーに移動し、customlayout. target ファイルを選択して、[ **開く** ] をクリックします。
 

@@ -1,6 +1,8 @@
 ---
 title: '[オプション]、[テキスト エディター]、[C#]、[詳細]'
-ms.date: 08/12/2020
+description: '[C#] セクションの [詳細] ページを使用して、C# のエディターの書式設定、コードのリファクタリング、および XML ドキュメントのコメントの設定を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
+ms.date: 11/13/2020
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b8e515058b17205a65bab401c7b31c7205aa55bc
-ms.sourcegitcommit: 2946d802aec1418e87bfa779d81834eeb7be5c9d
+ms.openlocfilehash: 6e8c235c62eeba394902698ecbfc412ed37b0979
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88214676"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96039893"
 ---
 # <a name="options-text-editor-c-advanced"></a>[オプション]、[テキスト エディター]、[C#]、[詳細]
 
@@ -134,6 +136,12 @@ ms.locfileid: "88214676"
     選択されると、関数呼び出しの各引数の前に、リテラル、型変換されたリテラル、オブジェクト インスタンス化のパラメーター名ヒントが挿入されます。  
     
     ![CSharp のインライン パラメーター名のヒント](media/inline-parameter-name-hints-csharp.png)
+
+- インライン型ヒント 
+    
+    選択すると、推論された型とラムダ パラメーター型を持つ変数の型ヒントが挿入されます。  
+    
+    ![CSharp のインライン型ヒント](media/inline-type-hints-csharp.png)
 ::: moniker-end
 - /// が入力されたとき、XML ドキュメントのコメントを生成する
 

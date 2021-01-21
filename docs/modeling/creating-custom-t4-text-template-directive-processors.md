@@ -1,5 +1,7 @@
 ---
 title: カスタム T4 テキスト テンプレート ディレクティブ プロセッサの作成
+description: テキストテンプレート変換プロセスと、カスタム T4 テキストテンプレートディレクティブプロセッサを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +11,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70aa1853701ef671b7057ad698a0fb63334a1ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75597179"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363428"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>カスタム T4 テキスト テンプレート ディレクティブ プロセッサを作成する
 
-*テキストテンプレート変換プロセス*では、*テキストテンプレート*ファイルが入力として取得され、テキストファイルが出力として生成されます。 *テキストテンプレート変換エンジン*はプロセスを制御し、エンジンはテキストテンプレート変換ホストと1つ以上のテキストテンプレート*ディレクティブプロセッサ*を操作してプロセスを完了します。 詳細については、「 [テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
+*テキストテンプレート変換プロセス* では、*テキストテンプレート* ファイルが入力として取得され、テキストファイルが出力として生成されます。 *テキストテンプレート変換エンジン* はプロセスを制御し、エンジンはテキストテンプレート変換ホストと1つ以上のテキストテンプレート *ディレクティブプロセッサ* を操作してプロセスを完了します。 詳細については、「 [テキストテンプレート変換プロセス](../modeling/the-text-template-transformation-process.md)」を参照してください。
 
 カスタム ディレクティブ プロセッサを作成するには、<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> または <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> を継承するクラスを作成します。
 
@@ -64,7 +66,7 @@ ProcessDirective () を呼び出すと、テンプレートエンジンは次の
 
 - 詳細については、「 [チュートリアル: カスタムディレクティブプロセッサを作成](../modeling/walkthrough-creating-a-custom-directive-processor.md)する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [カスタムディレクティブプロセッサをデプロイ](../modeling/deploying-a-custom-directive-processor.md) するカスタムディレクティブプロセッサを登録する方法について説明します。
 - [チュートリアル: カスタム](../modeling/walkthrough-creating-a-custom-directive-processor.md) ディレクティブプロセッサを作成する方法、カスタムディレクティブプロセッサを作成する方法、ディレクティブプロセッサを登録およびテストする方法、および出力ファイルを HTML として書式設定する方法について説明します。

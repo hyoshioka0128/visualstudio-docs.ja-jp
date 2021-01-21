@@ -1,5 +1,7 @@
 ---
 title: データの視覚化と表示 |Microsoft Docs
+description: 型ビジュアライザーとカスタムビューアーが開発者にデータを表示する方法について説明します。 式エバリュエーターでは、サードパーティの型ビジュアライザーがサポートされています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b5f984e6c6a3c1c8f3835dfa93a8679ae16680a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712371"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995461"
 ---
 # <a name="visualizing-and-viewing-data"></a>データの視覚化と表示
 型ビジュアライザーおよびカスタムビューアーは、開発者にとってすぐに意味のある方法でデータを表示します。 式エバリュエーター (EE) では、サードパーティの型ビジュアライザーをサポートするだけでなく、独自のカスタムビューアーを指定することもできます。
@@ -34,7 +36,7 @@ ms.locfileid: "80712371"
 ### <a name="accessing-property-data"></a>プロパティデータへのアクセス
  プロパティデータへのアクセスは、 [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md) インターフェイスを介して行われます。 このインターフェイスを取得するために、Visual Studio はプロパティオブジェクトに対して[QueryInterface](/cpp/atl/queryinterface)を呼び出し、( [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを実装する同じオブジェクトに実装されている) [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)インターフェイスを取得してから、 [getpropertyproxy](../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)メソッドを呼び出してインターフェイスを取得し `IPropertyProxyEESide` ます。
 
- インターフェイスに渡されるすべてのデータ `IPropertyProxyEESide` は、 [Ieedatastorage](../../extensibility/debugger/reference/ieedatastorage.md) インターフェイスにカプセル化されます。 このインターフェイスはバイトの配列を表し、Visual Studio と EE の両方によって実装されます。 プロパティのデータを変更すると、Visual Studio は `IEEDataStorage` 新しいデータを保持するオブジェクトを作成し、そのデータオブジェクトを使用して[CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)を呼び出します。新しいオブジェクトを取得して、 `IEEDataStorage` プロパティ[InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)のデータを更新します。 `IPropertyProxyEESide::CreateReplacementObject` インターフェイスを実装する独自のクラスを EE がインスタンス化できるようにし `IEEDataStorage` ます。
+ インターフェイスに渡されるすべてのデータ `IPropertyProxyEESide` は、 [Ieedatastorage](../../extensibility/debugger/reference/ieedatastorage.md) インターフェイスにカプセル化されます。 このインターフェイスはバイトの配列を表し、Visual Studio と EE の両方によって実装されます。 プロパティのデータを変更すると、Visual Studio は `IEEDataStorage` 新しいデータを保持するオブジェクトを作成し、そのデータオブジェクトを使用して[CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)を呼び出します。新しいオブジェクトを取得して、 `IEEDataStorage` プロパティ[](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md)のデータを更新します。 `IPropertyProxyEESide::CreateReplacementObject` インターフェイスを実装する独自のクラスを EE がインスタンス化できるようにし `IEEDataStorage` ます。
 
 ## <a name="supporting-custom-viewers"></a>カスタムビューアーのサポート
  フラグ `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` は、 `dwAttrib` オブジェクトにカスタムビューアーが関連付けられていることを示す [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 構造体 ( [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)の呼び出しによって返される) のフィールドに設定されます。 このフラグが設定されている場合、Visual Studio は[QueryInterface](/cpp/atl/queryinterface)を使用して[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスから[IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを取得します。
@@ -46,6 +48,6 @@ ms.locfileid: "80712371"
 ## <a name="supporting-both-type-visualizers-and-custom-viewers"></a>型ビジュアライザーとカスタムビューアーの両方のサポート
  EE は、 [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) メソッドと [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) メソッドで、型ビジュアライザーとカスタムビューアーの両方をサポートできます。 まず、EE は、提供しているカスタムビューアーの数を、 [GetCustomViewerCount](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) メソッドによって返される値に追加します。 次に、EE は、 `CLSID` [GetCustomViewerList](../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) メソッドによって返されるリストに、独自のカスタムビューアーのを追加します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)
 - [型ビジュアライザーとカスタムビューアー](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

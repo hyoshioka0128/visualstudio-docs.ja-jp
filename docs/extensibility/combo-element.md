@@ -1,5 +1,7 @@
 ---
 title: コンボ要素 |Microsoft Docs
+description: コンボ要素は、コンボボックスに表示されるコマンドを定義します。 DropDownCombo、DynamicCombo、IndexCombo、MRUCombo の4種類があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18ff9d9e20ec221a86f1cce5f9c43a4e47ed6dc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e5c16db298edb0e1fe526190531df4cb638f8e3d
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739823"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974317"
 ---
 # <a name="combo-element"></a>コンボ要素
 コンボボックスに表示されるコマンドを定義します。 次に示すように、DropDownCombo、DynamicCombo、IndexCombo、MRUCombo の4種類のコンボボックスがあります。
@@ -50,10 +52,10 @@ ms.locfileid: "80739823"
 
 |要素|説明|
 |-------------|-----------------|
-|Parent|省略可能。 ボタンの親要素。|
+|親|省略可能。 ボタンの親要素。|
 |CommandFlag|必須。 「 [Command flag 要素](../extensibility/command-flag-element.md)」を参照してください。 ボタンの CommandFlag の有効な値は次のとおりです。<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -Defaul/Visible<br /><br /> -DynamicVisibility<br /><br /> -フィルターフィルタ<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - StretchHorizontally|
 |文字列|必須。 「 [Strings 要素](../extensibility/strings-element.md)」を参照してください。 子の ButtonText 要素を定義する必要があります。|
-|Annotation|コメント (省略可能)。|
+|注釈|コメント (省略可能)。|
 
 ### <a name="parent-elements"></a>親要素
 

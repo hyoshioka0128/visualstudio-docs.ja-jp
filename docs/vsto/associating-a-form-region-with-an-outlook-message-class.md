@@ -1,5 +1,7 @@
 ---
 title: フォーム領域を Outlook メッセージクラスに関連付ける
+description: フォーム領域を各項目のメッセージクラスに関連付けることによって、どの Microsoft Office Outlook アイテムにフォーム領域を表示するかを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45db262b6bf7843a3893c5d60f0b6eaea5fcb70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 213b167bf7fe10c83b028fce2d97c67cd837d272
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254575"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847001"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージクラスに関連付ける
   フォーム領域を各項目のメッセージクラスに関連付けることによって、フォーム領域を表示する Outlook アイテム Microsoft Office を指定できます。 たとえば、メールアイテムの下部にフォーム領域を追加する場合は、フォーム領域を message クラスに関連付けることができ `IPM.Note` ます。
@@ -50,12 +52,12 @@ ms.locfileid: "71254575"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージクラスに関連付ける
  フォーム領域とメッセージクラスを関連付けるには、次の2つの方法があります。
 
-- **新しい Outlook フォーム領域**ウィザードを使用します。
+- **新しい Outlook フォーム領域** ウィザードを使用します。
 
 - クラス属性を適用します。
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>新しい Outlook フォーム領域ウィザードの使用
- **新しい Outlook フォーム領域**ウィザードの最後のページでは、標準のメッセージクラスを選択し、フォーム領域に関連付けるカスタムメッセージクラスの名前を入力できます。
+ **新しい Outlook フォーム領域** ウィザードの最後のページでは、標準のメッセージクラスを選択し、フォーム領域に関連付けるカスタムメッセージクラスの名前を入力できます。
 
  フォーム領域がフォーム全体またはフォームの既定のページを置き換えるように設計されている場合、標準のメッセージクラスは使用できません。 標準のメッセージクラス名は、フォームに新しいページを追加したり、フォームの下部に追加したりするフォームに対してのみ指定できます。 詳細については、「 [方法: フォーム領域を Outlook アドインプロジェクトに追加](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)する」を参照してください。
 
@@ -73,15 +75,15 @@ ms.locfileid: "71254575"
 
 - メッセージクラス名ごとに256文字を超えないようにしてください。
 
-  [**完了**] をクリックすると、**新しい Outlook フォーム領域**ウィザードによって入力の形式が検証されます。
+  [**完了**] をクリックすると、**新しい Outlook フォーム領域** ウィザードによって入力の形式が検証されます。
 
 > [!NOTE]
-> **新しい Outlook フォーム領域**ウィザードでは、指定したメッセージクラス名が正しいか有効であるかは検証されません。
+> **新しい Outlook フォーム領域** ウィザードでは、指定したメッセージクラス名が正しいか有効であるかは検証されません。
 
  ウィザードを完了すると、 **新しい Outlook フォーム領域** ウィザードによって、指定したメッセージクラス名を含むフォーム領域クラスに属性が適用されます。 これらの属性は手動で適用することもできます。
 
 ### <a name="apply-class-attributes"></a>クラス属性の適用
- **新しい Outlook フォーム領域**ウィザードを完了した後で、フォーム領域を outlook メッセージクラスに関連付けることができます。 これを行うには、フォーム領域ファクトリクラスに属性を適用します。
+ **新しい Outlook フォーム領域** ウィザードを完了した後で、フォーム領域を outlook メッセージクラスに関連付けることができます。 これを行うには、フォーム領域ファクトリクラスに属性を適用します。
 
  次の例は、 <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> という名前のフォーム領域ファクトリクラスに適用されている2つの属性を示して `myFormRegion` います。 最初の属性は、フォーム領域をメールメッセージフォームの標準のメッセージクラスに関連付けます。 2番目の属性は、フォーム領域をという名前のカスタムメッセージクラスに関連付け `IPM.Task.Contoso` ます。
 

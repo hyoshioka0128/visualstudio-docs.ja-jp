@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint コマンドを実行する |Microsoft Docs'
+description: 「SharePoint ツールの拡張機能からサーバーオブジェクトモデル API を呼び出すカスタム SharePoint コマンドを作成する方法」を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 789b77f3161b5fe566ea033060e8cab16cbaecc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2746704e30a61b0971db50a5083855b4a93560d4
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016987"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903536"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>方法: SharePoint コマンドを実行する
   SharePoint ツールの拡張機能でサーバーオブジェクトモデルを使用する場合は、API を呼び出すカスタム *SharePoint コマンド* を作成する必要があります。 コマンドを定義し、SharePoint ツールの拡張機能を使用して配置した後、コマンドを実行して、SharePoint サーバーオブジェクトモデルを呼び出すことができます。 コマンドを実行するには、オブジェクトの ExecuteCommand メソッドのいずれかを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> ます。
@@ -32,9 +34,9 @@ ms.locfileid: "86016987"
 
          プロジェクトシステムの拡張機能の詳細については、「 [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)」を参照してください。
 
-    - **サーバーエクスプローラー**の [ **SharePoint 接続**] ノードの拡張機能で、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> ます。 オブジェクトを取得するには <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> 、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> ます。
+    - **サーバーエクスプローラー** の [ **SharePoint 接続**] ノードの拡張機能で、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext.SharePointConnection%2A> ます。 オブジェクトを取得するには <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeContext> 、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.Context%2A> ます。
 
-         **サーバーエクスプローラー**拡張機能の詳細については、[サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
+         **サーバーエクスプローラー** 拡張機能の詳細については、[サーバーエクスプローラーの「SharePoint 接続ノードの拡張](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
 
     - プロジェクトテンプレートウィザードなど、SharePoint ツールの拡張機能の一部ではないコードでは、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> ます。
 
@@ -65,7 +67,7 @@ ms.locfileid: "86016987"
 
 - 2番目のパラメーターは、コマンドのカスタム2番目のパラメーターに渡す値です。 この場合、SharePoint サイトにアップグレードされる *.wsp* ファイルの完全なパスになります。
 
-- このコードは、暗黙的な <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> パラメーターをコマンドに渡しません。 このパラメーターは、SharePoint プロジェクトシステムの拡張機能からコマンドを呼び出したとき、または**サーバーエクスプローラー**の [ **sharepoint 接続**] ノードの拡張機能からコマンドを呼び出すと、コマンドに自動的に渡されます。 インターフェイスを実装するプロジェクトテンプレートウィザードなど、他の種類のソリューションで <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> は、このパラメーターは **null**になります。
+- このコードは、暗黙的な <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> パラメーターをコマンドに渡しません。 このパラメーターは、SharePoint プロジェクトシステムの拡張機能からコマンドを呼び出したとき、または **サーバーエクスプローラー** の [ **sharepoint 接続**] ノードの拡張機能からコマンドを呼び出すと、コマンドに自動的に渡されます。 インターフェイスを実装するプロジェクトテンプレートウィザードなど、他の種類のソリューションで <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> は、このパラメーターは **null** になります。
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、VisualStudio アセンブリへの参照が必要です。

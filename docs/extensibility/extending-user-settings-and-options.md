@@ -1,5 +1,7 @@
 ---
 title: ユーザー設定とオプションの拡張 |Microsoft Docs
+description: この記事のリソースを使用して、Visual Studio SDK のユーザー設定とオプションを拡張する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,15 +15,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 854928c5461d60bb39b75d2895d8d1c8d0a0e8c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adcefcfc18e64f9a7e082d0398b6609ba1877d28
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711555"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994577"
 ---
 # <a name="extend-user-settings-and-options"></a>ユーザー設定とオプションの拡張
-Visual Studio では、ユーザー設定を維持するための主な方法が2つあります。 [**ツール**  >  **] オプション**ページを使用すると、全般と言語固有のさまざまな種類の設定に対して、ユーザーが独自の値を設定できます。 ユーザー設定を使用すると、Visual Studio の全般的な構成プロパティを指定できます。 オプションページの詳細については、「 [[オプション] および [オプション] ページ](../extensibility/internals/options-and-options-pages.md)」を参照してください。 ユーザー設定の詳細については、「 [ユーザー設定のサポート](../extensibility/internals/support-for-user-settings.md)」を参照してください。
+Visual Studio では、ユーザー設定を維持するための主な方法が2つあります。 [**ツール**  >  **] オプション** ページを使用すると、全般と言語固有のさまざまな種類の設定に対して、ユーザーが独自の値を設定できます。 ユーザー設定を使用すると、Visual Studio の全般的な構成プロパティを指定できます。 オプションページの詳細については、「 [[オプション] および [オプション] ページ](../extensibility/internals/options-and-options-pages.md)」を参照してください。 ユーザー設定の詳細については、「 [ユーザー設定のサポート](../extensibility/internals/support-for-user-settings.md)」を参照してください。
 
 - [オプションページを作成](../extensibility/creating-an-options-page.md) するオプションページの作成方法について説明します。
 

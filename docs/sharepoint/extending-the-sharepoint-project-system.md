@@ -1,5 +1,7 @@
 ---
 title: SharePoint プロジェクトシステムの拡張 |Microsoft Docs
+description: SharePoint プロジェクトシステムを拡張します。 SharePoint プロジェクトシステムを拡張する方法について説明します。 一般的な開発タスクについて理解する。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62557025"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672549"
 ---
-# <a name="extend-the-sharepoint-project-system"></a>SharePoint プロジェクトシステムの拡張
+# <a name="extend-the-sharepoint-project-system"></a>SharePoint プロジェクト システムを拡張する
   SharePoint ソリューションを作成するには、Visual Studio で一連のプロジェクトテンプレートと項目テンプレートを使用します。 これらのテンプレートは、多くの開発シナリオの要件を満たしていますが、必要な機能が提供されない場合もあります。 このような場合は、SharePoint プロジェクトシステムを拡張できます。
 
 ## <a name="overview-of-the-sharepoint-project-system"></a>SharePoint プロジェクトシステムの概要
- SharePoint プロジェクトシステムは、 *sharepoint プロジェクトアイテム*の基本コンポーネントに基づいています。 SharePoint プロジェクトアイテムは、リスト定義、Web パーツ、コンテンツタイプなど、単一の SharePoint カスタマイズを表します。
+ SharePoint プロジェクトシステムは、 *sharepoint プロジェクトアイテム* の基本コンポーネントに基づいています。 SharePoint プロジェクトアイテムは、リスト定義、Web パーツ、コンテンツタイプなど、単一の SharePoint カスタマイズを表します。
 
  SharePoint プロジェクトは、1つまたは複数の SharePoint プロジェクトアイテムを含む Visual Studio プロジェクトです。 SharePoint プロジェクトには、配置のためにプロジェクト項目を機能やパッケージにグループ化する方法を定義する追加コンポーネントも含まれています。
 
@@ -48,7 +50,7 @@ ms.locfileid: "62557025"
 
 - SharePoint プロジェクトシステムのオブジェクトを、Visual Studio オートメーションオブジェクトモデルまたは統合オブジェクトモデルの対応するオブジェクトに変換します。または、その逆も可能です。 詳細については、「 [SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の間の Conver](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [SharePoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)
 - [SharePoint プロジェクトの拡張](../sharepoint/extending-sharepoint-projects.md)
@@ -56,4 +58,4 @@ ms.locfileid: "62557025"
 - [SharePoint プロジェクトシステムの拡張機能にデータを保存する](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
 - [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [SharePoint ツール拡張機能におけるプログラミングに関する概念および特徴](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
+- [SharePoint ツールの拡張機能のプログラミングの概念と機能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

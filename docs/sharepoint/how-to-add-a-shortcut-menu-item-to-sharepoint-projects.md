@@ -1,5 +1,8 @@
 ---
 title: '方法: ショートカットメニュー項目を SharePoint プロジェクトに追加する |Microsoft Docs'
+titleSuffix: ''
+description: Visual Studio で SharePoint プロジェクトにショートカットメニュー項目を追加します。 メニュー項目は、ソリューションエクスプローラーでプロジェクトノードを右クリックしたときに表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,28 +17,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e43d8d7717302eb8ab250935188bc2db3bdd66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 074f5b8a3ed31587b86b172ad2da000b7b81e9c3
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014843"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850066"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>方法: ショートカットメニュー項目を SharePoint プロジェクトに追加する
-  ショートカットメニュー項目は、任意の SharePoint プロジェクトに追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー**内のプロジェクトノードを右クリックしたときに表示されます。
+  ショートカットメニュー項目は、任意の SharePoint プロジェクトに追加できます。 メニュー項目は、ユーザーが **ソリューションエクスプローラー** 内のプロジェクトノードを右クリックしたときに表示されます。
 
  次の手順では、プロジェクトの拡張機能が既に作成されていることを前提としています。 詳細については、「 [方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
 
 ### <a name="to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>ショートカットメニュー項目を SharePoint プロジェクトに追加するには
 
-1. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> *projectservice*パラメーターのイベントを処理します。
+1. <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>実装のメソッドで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> *projectservice* パラメーターのイベントを処理します。
 
 2. イベントのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> 、 <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.ActionMenuItems%2A> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectMenuItemsRequestedEventArgs.AddMenuItems%2A> イベント引数パラメーターのコレクションまたはコレクションに新しいオブジェクトを追加します。
 
 3. <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新しいオブジェクトのイベントハンドラーで <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> 、ユーザーがショートカットメニュー項目をクリックしたときに実行するタスクを実行します。
 
 ## <a name="example"></a>例
- 次のコード例は、 **ソリューションエクスプローラー**の SharePoint プロジェクトノードにショートカットメニュー項目を追加する方法を示しています。 ユーザーがプロジェクトノードを右クリックし、[ **メッセージを出力ウィンドウに書き込む** ] メニュー項目をクリックすると、Visual Studio によって [ **出力** ] ウィンドウにメッセージが表示されます。 この例では、SharePoint プロジェクトサービスを使用してメッセージを表示します。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
+ 次のコード例は、 **ソリューションエクスプローラー** の SharePoint プロジェクトノードにショートカットメニュー項目を追加する方法を示しています。 ユーザーがプロジェクトノードを右クリックし、[ **メッセージを出力ウィンドウに書き込む** ] メニュー項目をクリックすると、Visual Studio によって [ **出力** ] ウィンドウにメッセージが表示されます。 この例では、SharePoint プロジェクトサービスを使用してメッセージを表示します。 詳細については、「 [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 
  [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
  [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]

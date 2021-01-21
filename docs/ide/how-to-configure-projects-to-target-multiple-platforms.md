@@ -1,5 +1,7 @@
 ---
-title: '方法: プロジェクトを構成して複数の対象プラットフォームを設定する'
+title: プロジェクトを構成して複数の対象プラットフォームを設定する
+description: Visual Studio で複数の異なる CPU アーキテクチャまたはプラットフォームを同時に対象とするソリューションについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0618d571258817b5e9653a38a7801c2e4d14e687
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: ce4dfbf2808071d47e1f84eef660d936181227f3
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284569"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136707"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>方法: プロジェクトを構成して複数の対象プラットフォームを設定する
 

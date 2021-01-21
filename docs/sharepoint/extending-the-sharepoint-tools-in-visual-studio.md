@@ -1,5 +1,7 @@
 ---
 title: Visual Studio での SharePoint ツールの拡張 | Microsoft Docs
+description: Visual Studio の SharePoint ツールを拡張します。 SharePoint プロジェクト システムを拡張します。 サーバー エクスプローラーで [SharePoint 接続] ノードを拡張します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -14,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016037"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672627"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張
   Visual Studio の SharePoint ツールは、多くのアプリケーション開発シナリオの要件を満たしています。 しかし、自分や他の開発者が必要とする機能が提供されていない場合もあります。 このような場合は、SharePoint ツールを拡張して、必要な機能を作成できます。

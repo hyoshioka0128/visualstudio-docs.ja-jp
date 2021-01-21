@@ -1,5 +1,8 @@
 ---
 title: '方法: ドキュメント内の見つかった項目をプログラムによってループする'
+description: Visual Studio を使用して、Microsoft Word 文書で見つかった項目をプログラムによってループ処理する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,15 +17,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e200f910e002bb9380bd5a1b556dc6f1cab08810
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 634012cae7f12f5346ec83bbd2b41c1019ef066d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544743"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525621"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>方法: ドキュメント内の見つかった項目をプログラムによってループする
-  <xref:Microsoft.Office.Interop.Word.Find>クラスには、プロパティがあります。これは、検索対象の <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 項目が見つかったときに**true**を返します。 <xref:Microsoft.Office.Interop.Word.Range> メソッドを使用して、 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 内で見つかったすべてのインスタンスをループできます。
+  <xref:Microsoft.Office.Interop.Word.Find>クラスには、プロパティがあります。これは、検索対象の <xref:Microsoft.Office.Interop.Word.Find.Found%2A> 項目が見つかったときに **true** を返します。 <xref:Microsoft.Office.Interop.Word.Range> メソッドを使用して、 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 内で見つかったすべてのインスタンスをループできます。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

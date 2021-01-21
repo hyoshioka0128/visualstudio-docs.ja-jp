@@ -1,18 +1,20 @@
 ---
 title: "\"混合推奨規則\" 規則セット"
 ms.date: 11/04/2016
+description: Visual Studio での混合推奨規則の規則セットについて説明します。 共通言語ランタイムをサポートする C++ プロジェクトの規則の説明を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c29e27160b50a53995b7542680256bfd4e2d8f2
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: bc30012dc025c5fc92f6d589c8e40740d689a86b
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600040"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437071"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>"混合推奨規則" 規則セット
 
@@ -38,20 +40,20 @@ Microsoft の混合推奨規則は、共通言語ランタイムをサポート�
 |[C6201](/cpp/code-quality/c6201)|インデックスがスタック バッファーの最大値を超過|
 |[C6214](/cpp/code-quality/c6214)|HRESULT から BOOL へのキャストが無効です|
 |[C6215](/cpp/code-quality/c6215)|BOOL から HRESULT へのキャストが無効です|
-|[C6216](/cpp/code-quality/c6216)|無効なコンパイラ挿入キャスト BOOL から HRESULT|
+|[C6216](/cpp/code-quality/c6216)|ブール値を HRESULT にキャスト Compiler-Inserted が無効です|
 |[C6217](/cpp/code-quality/c6217)|NOT での無効な HRESULT テスト|
 |[C6220](/cpp/code-quality/c6220)|-1 との無効な HRESULT 比較|
 |[C6226](/cpp/code-quality/c6226)|-1 への無効な HRESULT 割り当て|
 |[C6230](/cpp/code-quality/c6230)|ブール値としての HRESULT 使用は無効です|
-|[C6235](/cpp/code-quality/c6235)|論理 Or を使用した0でない定数|
-|[C6236](/cpp/code-quality/c6236)|論理 Or (0 以外の定数を含む)|
-|[C6237](/cpp/code-quality/c6237)|0と論理 And で失われた副作用|
+|[C6235](/cpp/code-quality/c6235)|0以外の定数 Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|0以外の定数の Logical-Or|
+|[C6237](/cpp/code-quality/c6237)|ゼロ Logical-And の副作用が失われる|
 |[C6242](/cpp/code-quality/c6242)|ローカルアンワインド強制|
 |[C6248](/cpp/code-quality/c6248)|Null DACL の作成|
 |[C6250](/cpp/code-quality/c6250)|未リリースのアドレス記述子|
 |[C6255](/cpp/code-quality/c6255)|Alloca の保護されていない使用|
 |[C6258](/cpp/code-quality/c6258)|Terminate スレッドの使用|
-|[C6259](/cpp/code-quality/c6259)|ビットごとの Or 限定スイッチでの配信不能コード|
+|[C6259](/cpp/code-quality/c6259)|Bitwise-Or 制限付きスイッチの配信不能コード|
 |[C6260](/cpp/code-quality/c6260)|バイト演算の使用|
 |[C6262](/cpp/code-quality/c6262)|過剰なスタック使用|
 |[C6263](/cpp/code-quality/c6263)|ループでの Alloca の使用|
@@ -64,18 +66,18 @@ Microsoft の混合推奨規則は、共通言語ランタイムをサポート�
 |[C6274](/cpp/code-quality/c6274)|Format 関数への文字でない引数|
 |[C6276](/cpp/code-quality/c6276)|無効な文字列のキャスト|
 |[C6277](/cpp/code-quality/c6277)|無効な CreateProcess 呼び出し|
-|[C6278](/cpp/code-quality/c6278)|配列-新しいスカラーと削除の不一致|
-|[C6279](/cpp/code-quality/c6279)|スカラーの新しい配列-Delete の不一致|
-|[C6280](/cpp/code-quality/c6280)|メモリ割り当て-解放の不一致|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete 不一致|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete 不一致|
+|[C6280](/cpp/code-quality/c6280)|メモリ Allocation-Deallocation が一致しません|
 |[C6281](/cpp/code-quality/c6281)|ビットごとの関係の優先順位|
 |[C6282](/cpp/code-quality/c6282)|割り当てがテストに置き換わる|
-|[C6283](/cpp/code-quality/c6283)|プリミティブ配列-新しいスカラー/Delete の不一致|
+|[C6283](/cpp/code-quality/c6283)|プリミティブ Array-New Scalar-Delete 不一致|
 |[C6284](/cpp/code-quality/c6284)|Format 関数への無効なオブジェクト引数|
-|[C6285](/cpp/code-quality/c6285)|定数の論理 Or|
-|[C6286](/cpp/code-quality/c6286)|0以外の論理 Or による副作用の損失|
+|[C6285](/cpp/code-quality/c6285)|定数の Logical-Or|
+|[C6286](/cpp/code-quality/c6286)|0以外の Logical-Or による副作用の損失|
 |[C6287](/cpp/code-quality/c6287)|冗長なテスト|
-|[C6288](/cpp/code-quality/c6288)|論理 And に対する相互包括は False|
-|[C6289](/cpp/code-quality/c6289)|論理 Or での相互排他は True|
+|[C6288](/cpp/code-quality/c6288)|Logical-And に対する相互包括が False|
+|[C6289](/cpp/code-quality/c6289)|Logical-Or の相互排他は True|
 |[C6290](/cpp/code-quality/c6290)|論理 Not とビットごとの And の優先順位|
 |[C6291](/cpp/code-quality/c6291)|論理 Not とビットごとの Or の優先順位|
 |[C6292](/cpp/code-quality/c6292)|ループ数が最大値を上限としています|
@@ -92,7 +94,7 @@ Microsoft の混合推奨規則は、共通言語ランタイムをサポート�
 |[C6308](/cpp/code-quality/c6308)|Realloc リーク|
 |[C6310](/cpp/code-quality/c6310)|無効な例外フィルター定数|
 |[C6312](/cpp/code-quality/c6312)|例外の実行ループの続行|
-|[C6314](/cpp/code-quality/c6314)|ビットごとの or の優先順位|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or の優先順位|
 |[C6317](/cpp/code-quality/c6317)|非補数|
 |[C6318](/cpp/code-quality/c6318)|例外の検索を続行します|
 |[C6319](/cpp/code-quality/c6319)|コンマで無視|
@@ -103,7 +105,7 @@ Microsoft の混合推奨規則は、共通言語ランタイムをサポート�
 |[C6333](/cpp/code-quality/c6333)|VirtualFree のサイズが無効です|
 |[C6335](/cpp/code-quality/c6335)|処理ハンドルのリーク|
 |[C6381](/cpp/code-quality/c6381)|シャットダウン情報がありません|
-|[C6383](/cpp/code-quality/c6383)|要素数のバイト数のバッファーオーバーラン|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count バッファーオーバーラン|
 |[C6384](/cpp/code-quality/c6384)|ポインターのサイズの除算|
 |[C6385](/cpp/code-quality/c6385)|読み取りのオーバーラン|
 |[C6386](/cpp/code-quality/c6386)|書き込みのオーバーラン|
@@ -240,29 +242,29 @@ Microsoft の混合推奨規則は、共通言語ランタイムをサポート�
 |[C28307](/cpp/code-quality/c28307)|パラメーターの注釈は obsolescent|
 |[C28350](/cpp/code-quality/c28350)|注釈には、条件付きで適用できない状況の説明が表示されます。|
 |[C28351](/cpp/code-quality/c28351)|注釈には、動的な値 (変数) が使用できない条件が記述されています。|
-|[CA1001](../code-quality/ca1001.md)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|破棄可能なフィールドを所有する型は、破棄可能でなければなりません|
 |[CA1009](../code-quality/ca1009.md)|イベント ハンドラーを正しく宣言します|
-|[CA1016](../code-quality/ca1016.md)|アセンブリに AssemblyVersionAttribute を設定します|
-|[CA1033](../code-quality/ca1033.md)|インターフェイス メソッドは、子型によって呼び出し可能でなければなりません|
+|[CA1016](/dotnet/fundamentals/code-analysis/quality-rules/ca1016)|アセンブリに AssemblyVersionAttribute を設定します|
+|[CA1033](/dotnet/fundamentals/code-analysis/quality-rules/ca1033)|インターフェイス メソッドは、子型によって呼び出し可能でなければなりません|
 |[CA1049](../code-quality/ca1049.md)|ネイティブ リソースを所有する型は、破棄可能でなければなりません|
-|[CA1060](../code-quality/ca1060.md)|P/Invoke を NativeMethods クラスに移動します|
-|[CA1061](../code-quality/ca1061.md)|基底クラス メソッドを非表示にしません|
-|[CA1063](../code-quality/ca1063.md)|IDisposable を正しく実装します|
-|[CA1065](../code-quality/ca1065.md)|予期しない場所に例外を発生させません|
+|[CA1060](/dotnet/fundamentals/code-analysis/quality-rules/ca1060)|P/Invoke を NativeMethods クラスに移動します|
+|[CA1061](/dotnet/fundamentals/code-analysis/quality-rules/ca1061)|基底クラス メソッドを非表示にしません|
+|[CA1063](/dotnet/fundamentals/code-analysis/quality-rules/ca1063)|IDisposable を正しく実装します|
+|[CA1065](/dotnet/fundamentals/code-analysis/quality-rules/ca1065)|予期しない場所に例外を発生させません|
 |[CA1301](../code-quality/ca1301.md)|重複するアクセラレータを使用しません|
 |[CA1400](../code-quality/ca1400.md)|P/Invoke エントリ ポイントは存在しなければなりません|
-|[CA1401](../code-quality/ca1401.md)|P/Invoke は参照可能であることはできません|
+|[CA1401](/dotnet/fundamentals/code-analysis/quality-rules/ca1401)|P/Invoke は参照可能であることはできません|
 |[CA1403](../code-quality/ca1403.md)|Auto 配置の型を COM 参照可能にすることはできません|
 |[CA1404](../code-quality/ca1404.md)|P/Invoke の直後に GetLastError を呼び出します|
 |[CA1405](../code-quality/ca1405.md)|COM 参照可能な型の基本型は COM 参照可能でなければなりません|
 |[CA1410](../code-quality/ca1410.md)|COM 登録メソッドは一致しなければなりません|
 |[CA1415](../code-quality/ca1415.md)|P/Invoke を正しく宣言します|
-|[CA1821](../code-quality/ca1821.md)|空のファイナライザーを削除します|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|空のファイナライザーを削除します|
 |[CA1900](../code-quality/ca1900.md)|値型フィールドはポータブルでなければなりません|
 |[CA1901](../code-quality/ca1901.md)|P/Invoke 宣言はポータブルでなければなりません|
-|[CA2002](../code-quality/ca2002.md)|弱い ID を伴うオブジェクト上でロックしません|
-|[CA2100](../code-quality/ca2100.md)|SQL クエリのセキュリティ脆弱性を確認|
-|[CA2101](../code-quality/ca2101.md)|P/Invoke 文字列引数に対してマーシャリングを指定します|
+|[CA2002](/dotnet/fundamentals/code-analysis/quality-rules/ca2002)|弱い ID を伴うオブジェクト上でロックしません|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|SQL クエリのセキュリティ脆弱性を確認|
+|[CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101)|P/Invoke 文字列引数に対してマーシャリングを指定します|
 |[CA2108](../code-quality/ca2108.md)|値型での宣言セキュリティを確認します|
 |[CA2111](../code-quality/ca2111.md)|ポインターは参照可能にすることはできません|
 |[CA2112](../code-quality/ca2112.md)|セキュリティで保護された型はフィールドを公開してはなりません|
@@ -284,21 +286,21 @@ Microsoft の混合推奨規則は、共通言語ランタイムをサポート�
 |[CA2146](../code-quality/ca2146.md)|型は、基本型およびインターフェイスと同程度以上、重要でなければならない|
 |[CA2147](../code-quality/ca2147.md)|透過コードは、セキュリティ アサートを使用してはならない|
 |[CA2149](../code-quality/ca2149.md)|透過的メソッドは、ネイティブ コード内に呼び出しを行ってはならない|
-|[CA2200](../code-quality/ca2200.md)|スタック詳細を保持するために再度スローします|
+|[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200)|スタック詳細を保持するために再度スローします|
 |[CA2202](../code-quality/ca2202.md)|オブジェクトを複数回破棄しない|
-|[CA2207](../code-quality/ca2207.md)|値型のスタティック フィールドのインラインを初期化します|
+|[CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207)|値型のスタティック フィールドのインラインを初期化します|
 |[CA2212](../code-quality/ca2212.md)|サービス コンポーネントを WebMethod に設定しません|
-|[CA2213](../code-quality/ca2213.md)|破棄可能なフィールドは破棄されなければなりません|
-|[CA2214](../code-quality/ca2214.md)|コンストラクターのオーバーライド可能なメソッドを呼び出しません|
-|[CA2216](../code-quality/ca2216.md)|破棄可能な型はファイナライザーを宣言しなければなりません|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|破棄可能なフィールドは破棄されなければなりません|
+|[CA2214](/dotnet/fundamentals/code-analysis/quality-rules/ca2214)|コンストラクターのオーバーライド可能なメソッドを呼び出しません|
+|[CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216)|破棄可能な型はファイナライザーを宣言しなければなりません|
 |[CA2220](../code-quality/ca2220.md)|ファイナライザーは基底クラスのファイナライザーを呼び出さなければなりません|
-|[CA2229](../code-quality/ca2229.md)|シリアル化コンストラクターを実装します|
-|[CA2231](../code-quality/ca2231.md)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
+|[CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229)|シリアル化コンストラクターを実装します|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|ValueType.Equals のオーバーライドで、演算子 equals をオーバーロードします|
 |[CA2232](../code-quality/ca2232.md)|Windows フォームのエントリ ポイントを STAThread に設定します|
-|[CA2235](../code-quality/ca2235.md)|すべてのシリアル化不可能なフィールドを設定します|
+|[CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235)|すべてのシリアル化不可能なフィールドを設定します|
 |[CA2236](../code-quality/ca2236.md)|ISerializable 型で基底クラス メソッドを呼び出します|
-|[CA2237](../code-quality/ca2237.md)|ISerializable 型を SerializableAttribute に設定します|
+|[CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237)|ISerializable 型を SerializableAttribute に設定します|
 |[CA2238](../code-quality/ca2238.md)|シリアル化メソッドを正しく実装します|
 |[CA2240](../code-quality/ca2240.md)|ISerializable を正しく実装します|
-|[CA2241](../code-quality/ca2241.md)|書式設定メソッドに正しい引数を提供|
-|[CA2242](../code-quality/ca2242.md)|NaN に対して正しくテストします|
+|[CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241)|書式設定メソッドに正しい引数を提供|
+|[CA2242](/dotnet/fundamentals/code-analysis/quality-rules/ca2242)|NaN に対して正しくテストします|

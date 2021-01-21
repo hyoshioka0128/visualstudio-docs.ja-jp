@@ -1,5 +1,7 @@
 ---
 title: データセットのデータの検証
+description: データセット内のデータを検証する方法について説明します。 データを検証するには、データオブジェクトに入力された値がデータセットのスキーマ内の制約に準拠していることを確認する必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -21,19 +23,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 379c5ec40a59ba044c8cce1ef7926294b763d05d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
+ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281085"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94998305"
 ---
 # <a name="validate-data-in-datasets"></a>データセットのデータの検証
 データの検証は、データオブジェクトに入力される値がデータセットのスキーマ内の制約に準拠していることを確認するプロセスです。 また、検証プロセスでは、これらの値が、アプリケーションに対して設定されている規則に従っていることも確認します。 基になるデータベースに更新を送信する前に、データを検証することをお勧めします。 これにより、エラーが減少し、アプリケーションとデータベース間で発生する可能性のあるラウンドトリップの回数も減ります。
 
 データセットに書き込まれるデータが、データセット自体に検証チェックを組み込むことによって有効であることを確認できます。 データセットは、フォーム内のコントロール、コンポーネント内、またはその他の方法で、更新の実行方法に関係なくデータを確認できます。 データセットはアプリケーションの一部であるため (データベースバックエンドとは異なります)、アプリケーション固有の検証を構築するための論理的な場所です。
 
-アプリケーションに検証を追加する最適な場所は、データセットの部分クラスファイルです。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]またはで [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] **データセットデザイナー**を開き、検証を作成する列またはテーブルをダブルクリックします。 この操作により、 <xref:System.Data.DataTable.ColumnChanging> イベントハンドラーまたはイベントハンドラーが自動的に作成さ <xref:System.Data.DataTable.RowChanging> れます。
+アプリケーションに検証を追加する最適な場所は、データセットの部分クラスファイルです。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]またはで [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] **データセットデザイナー** を開き、検証を作成する列またはテーブルをダブルクリックします。 この操作により、 <xref:System.Data.DataTable.ColumnChanging> イベントハンドラーまたはイベントハンドラーが自動的に作成さ <xref:System.Data.DataTable.RowChanging> れます。
 
 ## <a name="validate-data"></a>データの検証
 データセット内の検証は、次の方法で実現されます。
@@ -64,7 +66,7 @@ ms.locfileid: "85281085"
 
 ## <a name="data-update-events"></a>データ更新イベント
 
-|Event|説明|
+|event|説明|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|列の値が変更されています。 イベントは、提案された新しい値と共に行と列を渡します。|
 |<xref:System.Data.DataTable.ColumnChanged>|列の値が変更されました。 イベントは、提案された値と共に行と列を渡します。|
@@ -80,7 +82,7 @@ ms.locfileid: "85281085"
 ## <a name="validate-data-during-column-changes"></a>列の変更時にデータを検証する
 
 > [!NOTE]
-> **データセットデザイナー**は、検証ロジックをデータセットに追加できる部分クラスを作成します。 デザイナーで生成されたデータセットでは、部分クラスのコードは削除または変更されません。
+> **データセットデザイナー** は、検証ロジックをデータセットに追加できる部分クラスを作成します。 デザイナーで生成されたデータセットでは、部分クラスのコードは削除または変更されません。
 
 データ列の値がイベントに応答して変化したときにデータを検証でき <xref:System.Data.DataTable.ColumnChanging> ます。 このイベントが発生すると、 <xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A> 現在の列に対して提示されている値を含むイベント引数 () が渡されます。 の内容に基づいて `e.ProposedValue` 、次のことができます。
 
@@ -97,7 +99,7 @@ ms.locfileid: "85281085"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>行の変更時にデータを検証するには (Visual Basic)
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **データセット デザイナー** でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、データセットの部分クラス ファイルに <xref:System.Data.DataTable.RowChanging> の <xref:System.Data.DataTable> イベント ハンドラーが自動的に作成されます。
 
@@ -108,12 +110,12 @@ ms.locfileid: "85281085"
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>行の変更時にデータ検証するには (C#)
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **データセット デザイナー** でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. 検証するテーブルのタイトル バーをダブルクリックします。 この操作により、<xref:System.Data.DataTable> の部分クラス ファイルが作成されます。
 
     > [!NOTE]
-    > **データセット デザイナー**では、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーが自動作成されません。 イベントを処理するメソッドを作成し、コードを実行して、 <xref:System.Data.DataTable.RowChanging> テーブルの初期化メソッドでイベントをフックする必要があります。
+    > **データセット デザイナー** では、<xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーが自動作成されません。 イベントを処理するメソッドを作成し、コードを実行して、 <xref:System.Data.DataTable.RowChanging> テーブルの初期化メソッドでイベントをフックする必要があります。
 
 3. 部分クラスに次のコードをコピーします。
 
@@ -207,8 +209,8 @@ ms.locfileid: "85281085"
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [Visual Studio のデータセットツール](../data-tools/dataset-tools-in-visual-studio.md)
+- [Visual Studio のデータセット ツール](../data-tools/dataset-tools-in-visual-studio.md)
 - [方法: Windows フォーム DataGridView コントロールでデータを検証する](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
 - [方法: Windows フォーム ErrorProvider コンポーネントを使用してフォーム検証のエラーアイコンを表示する](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

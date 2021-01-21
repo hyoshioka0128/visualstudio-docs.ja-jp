@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のツールバーの Guid と Id |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) に含まれているツールバーとそれらに含まれるグループの GUID と ID の値の一覧を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe42821cdacc038d767e52373d45ddd7b8954323
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708228"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480383"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio ツールバーの Guid と Id
 このトピックでは、Visual Studio 統合開発環境 (IDE: integrated development environment) に含まれるツールバーの GUID と ID の値、およびそれらに含まれるグループについて説明します。 これらの値は、Visual Studio SDK の一部としてインストールされる、 *vsct* ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
@@ -29,19 +31,19 @@ ms.locfileid: "80708228"
 > [!NOTE]
 > Visual Studio で使用できるツールバーの多くは、Visual Studio によって定義されていません。 GUID と ID の値はパブリックではありません。 このトピックでは、Visual Studio SDK の *vsct* ファイルで定義されているツールバーのみを示します。
 
- *Vsct*ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」を参照してください。
+ *Vsct* ファイルで定義されている IDE オブジェクトを操作する方法の詳細については、「[メニューとコマンドの拡張](../../extensibility/extending-menus-and-commands.md)」を参照してください。
 
  Visual Studio IDE によって提供される既定のツールバーでは、GUID が使用 `guidSHLMainMenu` されます。ただし、構文を使用して指定しない場合は除き `GUID:ID` ます。
 
 ## <a name="ide-toolbars"></a>IDE ツール バー
- 次のツールバーは、Visual Studio IDE によって提供されます。 ツールバーを表示するには、[**ツール**] メニューの [ツール**バー** ] サブメニューからツールバーを選択します。 ツールウィンドウのツールバーは、このセクションには含まれていません。
+ 次のツールバーは、Visual Studio IDE によって提供されます。 ツールバーを表示するには、[**ツール**] メニューの [ツール **バー** ] サブメニューからツールバーを選択します。 ツールウィンドウのツールバーは、このセクションには含まれていません。
 
  グループのみが、ツールバーから直接降下できます。 グループを追加するには、その親をツールバーの GUID と ID に設定します。 ツールバーにボタンを追加するには、ツールバーの [親] を [グループ] に設定します。
 
 |ツール バー|ID|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|Build|IDM_VS_TOOL_BUILD|
+|ビルド|IDM_VS_TOOL_BUILD|
 |テキスト エディター|IDM_VS_TOOL_TEXTEDITOR|
 |デバッグ|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
 |デバッグの場所|guidVSDebugGroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -86,7 +88,7 @@ ms.locfileid: "80708228"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |インデントする|IDG_VS_EDITTOOLBAR_INDENT|
-|解説|IDG_VS_EDITTOOLBAR_COMMENT|
+|コメント|IDG_VS_EDITTOOLBAR_COMMENT|
 |ブックマーク|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>デバッグツールバーグループ
@@ -95,7 +97,7 @@ ms.locfileid: "80708228"
 |----------|--------|
 |実行|IDM_DEBUG_TOOLBAR|
 |ステップ実行|IDG_DEBUG_TOOLBAR_STEPPING|
-|Watch|IDG_DEBUG_TOOLBAR_WATCH|
+|視聴する|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>デバッグの場所のツールバーグループ
@@ -105,7 +107,7 @@ ms.locfileid: "80708228"
 |デバッグの場所|IDG_DEBUG_CONTEXT_TOOLBAR|
 
 ## <a name="tool-window-toolbars"></a>ツール ウィンドウのツール バー
- ツールバーは、IDE またはツールウィンドウ ( **ソリューションエクスプローラー**など) で直接表示できます。 ツールウィンドウは *. vsct* ファイルで定義されていないため、ツールウィンドウのツールバーには定義済みの親がありません。 代わりに、コード内に配置されます。 次の表は、IDE のツールウィンドウに表示されるツールバーと、それらに含まれるコマンドグループを示しています。
+ ツールバーは、IDE またはツールウィンドウ ( **ソリューションエクスプローラー** など) で直接表示できます。 ツールウィンドウは *. vsct* ファイルで定義されていないため、ツールウィンドウのツールバーには定義済みの親がありません。 代わりに、コード内に配置されます。 次の表は、IDE のツールウィンドウに表示されるツールバーと、それらに含まれるコマンドグループを示しています。
 
 > [!NOTE]
 > ツールバーとグループは GUID `guidSHLMainMenu` を使用します。ただし、guid: ID 構文を使用して指定した場合を除きます。 ツールバーに対して GUID が指定されている場合は、そのツールバーから下にあるグループにも適用されます。
@@ -114,7 +116,7 @@ ms.locfileid: "80708228"
 |-----------------|-------------|------------|
 |ソリューション エクスプローラー|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1..5/5|
 |[サーバー エクスプローラー]|guid_SE_MenuGroup: IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
-|Properties|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
+|プロパティ|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |クラス ビュー|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|
 |クラス ビュー|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |オブジェクト ブラウザー|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|

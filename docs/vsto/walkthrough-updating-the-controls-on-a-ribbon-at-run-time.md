@@ -1,5 +1,8 @@
 ---
 title: 'チュートリアル: 実行時にリボンのコントロールを更新する'
+description: リボンが Office アプリケーションに読み込まれた後に、リボンオブジェクトモデルを使用してリボン上のコントロールを更新する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71255346"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526049"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>チュートリアル: 実行時にリボンのコントロールを更新する
 
@@ -30,7 +33,7 @@ ms.locfileid: "71255346"
 
 [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-この例では、Northwind サンプル データベースからデータを取得し、Microsoft Office Outlook のコンボ ボックスとメニューに読み込みます。 これらのコントロールで選択した項目によっ**て、などのフィールド****が**自動的に電子メールメッセージに入力されます。
+この例では、Northwind サンプル データベースからデータを取得し、Microsoft Office Outlook のコンボ ボックスとメニューに読み込みます。 これらのコントロールで選択した項目によっ **て、などのフィールド****が** 自動的に電子メールメッセージに入力されます。
 
 このチュートリアルでは、次の作業について説明します。
 
@@ -59,7 +62,7 @@ ms.locfileid: "71255346"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>新しい Outlook VSTO アドイン プロジェクトを作成するには
 
-1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、 **Ribbon_Update_At_Runtime**という名前の Outlook VSTO アドインプロジェクトを作成します。
+1. で [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 、 **Ribbon_Update_At_Runtime** という名前の Outlook VSTO アドインプロジェクトを作成します。
 
 2. **[新しいプロジェクト]** ダイアログ ボックスの **[ソリューションのディレクトリを作成]** チェック ボックスをオンにします。
 
@@ -77,9 +80,9 @@ ms.locfileid: "71255346"
 
 2. **[新しい項目の追加]** ダイアログ ボックスで、 **[リボン (ビジュアル デザイナー)]** をクリックします。
 
-3. 新しいリボンの名前を [顧客] **リボン**に変更し、[ **追加**] をクリックします。
+3. 新しいリボンの名前を [顧客] **リボン** に変更し、[ **追加**] をクリックします。
 
-     リボンデザイナーで CustomerRibbon.cs または*CustomerRibbon.cs*ファイルが開き、既定のタブとグループが表示され*ます。*
+     リボンデザイナーで CustomerRibbon.cs またはファイルが開き、既定のタブとグループが表示され *ます。*
 
 4. リボン デザイナーをクリックして選択します。
 
@@ -91,17 +94,17 @@ ms.locfileid: "71255346"
 
 7. [ **プロパティ** ] ウィンドウで、[ **ラベル** ] を「 **Customer 購入**」に設定します。
 
-8. **ツールボックス**の [ **Office リボンコントロール**] タブから、 **ComboBox**を**Customer 購入**グループにドラッグします。
+8. **ツールボックス** の [ **Office リボンコントロール**] タブから、 **ComboBox** を **Customer 購入** グループにドラッグします。
 
 9. [ **ComboBox1** ] をクリックして選択します。
 
 10. [ **プロパティ** ] ウィンドウで、[ **ラベル** ] を「 **Customers**」に設定します。
 
-11. **ツールボックス**の [ **Office リボンコントロール**] タブから、**メニュー**を**Customer 購入**グループにドラッグします。
+11. **ツールボックス** の [ **Office リボンコントロール**] タブから、**メニュー** を **Customer 購入** グループにドラッグします。
 
 12. [ **プロパティ** ] ウィンドウで、[ **ラベル** ] を「 **製品購入**」に設定します。
 
-13. **Dynamic**を**true**に設定します。
+13. **Dynamic** を **true** に設定します。
 
      これにより、リボンが Office アプリケーションに読み込まれた後に、実行時にメニューのコントロールを追加および削除できます。
 
@@ -113,7 +116,7 @@ ms.locfileid: "71255346"
 
 1. [ **Tabaddins (組み込み)** ] タブをクリックして選択します。
 
-2. [ **プロパティ** ] ウィンドウで、[ **ControlId** ] プロパティを展開し、[ **officeid** ] を **TabNewMailMessage**に設定します。
+2. [ **プロパティ** ] ウィンドウで、[ **ControlId** ] プロパティを展開し、[ **officeid** ] を **TabNewMailMessage** に設定します。
 
      これにより、 **顧客の購入** グループが、新しいメールメッセージに表示されるリボンの [ **メッセージ** ] タブに追加されます。
 
@@ -121,9 +124,9 @@ ms.locfileid: "71255346"
 
 4. [ **プロパティ** ] ウィンドウで、 **Position** プロパティを展開し、 **positiontype** プロパティの横にあるドロップダウン矢印をクリックして、[ **beforeofficeid**] をクリックします。
 
-5. **Officeid**プロパティを**groupclipboard**に設定します。
+5. **Officeid** プロパティを **groupclipboard** に設定します。
 
-     これにより、[**メッセージ**] タブの [**クリップボード**] グループの前に**顧客の購入**グループが配置されます。
+     これにより、[**メッセージ**] タブの [**クリップボード**] グループの前に **顧客の購入** グループが配置されます。
 
 ## <a name="create-the-data-source"></a>データソースを作成する
 
@@ -133,7 +136,7 @@ ms.locfileid: "71255346"
 
 1. **[データ]** メニューの **[新しいデータ ソースの追加]** をクリックします。
 
-     **データソース構成ウィザード**が起動します。
+     **データソース構成ウィザード** が起動します。
 
 2. [ **データベース**] を選択し、[ **次へ**] をクリックします。
 
@@ -149,7 +152,7 @@ ms.locfileid: "71255346"
 
 8. 次の各テーブルの横にあるチェック ボックスをオンにします。
 
-    1. **顧客**
+    1. **企業**
 
     2. **注文の詳細**
 
@@ -177,7 +180,7 @@ ms.locfileid: "71255346"
 
     このアセンブリには、統合言語クエリ (LINQ) を使用するためのクラスが含まれています。 ここでは、LINQ を使用して Northwind データベースから取得したデータをカスタム グループのコントロールに読み込みます。
 
-3. **ソリューションエクスプローラー**で、 **CustomerRibbon.cs**または**顧客のリボン**をクリックして選択します。
+3. **ソリューションエクスプローラー** で、 **CustomerRibbon.cs** または **顧客のリボン** をクリックして選択します。
 
 4. **[表示]** メニューの **[コード]** をクリックします。
 
@@ -218,7 +221,7 @@ ms.locfileid: "71255346"
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
 
-10. **ソリューションエクスプローラー**で、リボンコードファイルをダブルクリックします。
+10. **ソリューションエクスプローラー** で、リボンコードファイルをダブルクリックします。
 
      リボン デザイナーが開きます。
 
@@ -253,11 +256,11 @@ ms.locfileid: "71255346"
 
 Outlook で新しいメールフォームを開くと、 **Customer 購入** という名前のカスタムグループがリボンの [ **メッセージ** ] タブに表示されます。
 
-顧客のフォローアップ電子メールメッセージを作成するには、顧客を選択し、顧客が購入した製品を選択します。 **顧客の購入**グループ内のコントロールは、実行時に Northwind データベースのデータと共に更新されます。
+顧客のフォローアップ電子メールメッセージを作成するには、顧客を選択し、顧客が購入した製品を選択します。 **顧客の購入** グループ内のコントロールは、実行時に Northwind データベースのデータと共に更新されます。
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>カスタム グループのコントロールをテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
      Outlook が起動します。
 
@@ -267,7 +270,7 @@ Outlook で新しいメールフォームを開くと、 **Customer 購入** と
 
     - 新しいメール メッセージのインスペクター ウィンドウが表示されます。
 
-    - リボンの [**メッセージ**] タブで、**クリップボード**グループの前に**顧客の購入**グループが表示されます。
+    - リボンの [**メッセージ**] タブで、**クリップボード** グループの前に **顧客の購入** グループが表示されます。
 
     - グループ内の **customers** コンボボックスは、Northwind データベース内の顧客の名前で更新されます。
 
@@ -301,7 +304,7 @@ Office UI をカスタマイズする方法の詳細については、次のト�
 - [リボンの概要](../vsto/ribbon-overview.md)
 - [統合言語クエリ (LINQ: Language-Integrated Query)](/dotnet/csharp/linq/index)
 - [方法: リボンのカスタマイズを開始する](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [リボンデザイナー](../vsto/ribbon-designer.md)
+- [リボン デザイナー](../vsto/ribbon-designer.md)
 - [チュートリアル: リボンデザイナーを使用したカスタムタブの作成](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [リボンオブジェクトモデルの概要](../vsto/ribbon-object-model-overview.md)
 - [Outlook のリボンのカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)

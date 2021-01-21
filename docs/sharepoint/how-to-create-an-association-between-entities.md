@@ -1,5 +1,7 @@
 ---
 title: '方法: エンティティ間の関連付けを作成する |Microsoft Docs'
+description: Visual Studio で関連付けを作成して、Business Data Connectivity (BDC) モデルのエンティティ間のリレーションシップを定義します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75d4fcc9b99c9c5e2960e152eb5dac1da1343109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016935"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94849845"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>方法: エンティティ間の関連付けを作成する
   関連付けを作成することによって、Business Data Connectivity (BDC) モデルのエンティティ間のリレーションシップを定義できます。 Visual Studio では、モデルのコンシューマーに各アソシエーションに関する情報を提供するメソッドが生成されます。 これらのメソッドは、SharePoint web パーツ、リスト、またはカスタムアプリケーションで、ユーザーインターフェイス (UI) にデータリレーションシップを表示するために使用できます。
@@ -35,15 +37,15 @@ ms.locfileid: "86016935"
 
 ### <a name="to-create-an-association-between-entities"></a>エンティティ間の関連付けを作成するには
 
-1. **ツールボックス**の [ **BusinessDataConnectivity** ] タブで、[ **Association** ] 項目を選択します。
+1. **ツールボックス** の [ **BusinessDataConnectivity** ] タブで、[ **Association** ] 項目を選択します。
 
 2. BDC デザイナーで、[ソース] エンティティを選択し、目的のエンティティを選択します。
 
-     **関連付けエディター**が表示されます。
+     **関連付けエディター** が表示されます。
 
 3. 外部キーベースの関連付けを作成する場合は、[ **外部キーの関連付け** ] チェックボックスをオンにします。
 
-    1. **識別子マッピング**テーブルの [**ソース ID** ] 列で、[**フィールド]** 列に表示される一致する各型記述子の横にある識別子を選択します。
+    1. **識別子マッピング** テーブルの [**ソース ID** ] 列で、[**フィールド]** 列に表示される一致する各型記述子の横にある識別子を選択します。
 
          たとえば、[ **ソース ID** ] 列で、 `ContactID` `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` 型記述子と型記述子の横にあるを選択し `ReadItem.salesOrder.SalesOrder.ContactID` ます。
 
@@ -63,7 +65,7 @@ ms.locfileid: "86016935"
 
 ## <a name="see-also"></a>関連項目
 - [エンティティ間の関連付けを作成する](../sharepoint/creating-an-association-between-entities.md)
-- [ビジネスデータ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
+- [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)
 - [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [方法: Creator メソッドを追加する](../sharepoint/how-to-add-a-creator-method.md)

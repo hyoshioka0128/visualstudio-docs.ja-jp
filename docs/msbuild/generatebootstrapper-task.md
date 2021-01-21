@@ -1,5 +1,7 @@
 ---
 title: GenerateBootstrapper タスク | Microsoft Docs
+description: アプリケーションとその前提条件を検出、ダウンロード、インストールするための自動化された方法として MSBuild GenerateBootstrapper タスクを使用します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 83bb6b44713ba61d14c508c0db2a51391a350015
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634085"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436471"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper タスク
 
@@ -94,11 +96,11 @@ ms.locfileid: "77634085"
 
    インストールするインストール前提条件をブートストラップが探す場所を指定します。 このパラメーターには、次の値を指定できます。
 
-  - `HomeSite`:前提条件がコンポーネント ベンダーによってホストされていることを示します。
+  - `HomeSite`: 前提条件がコンポーネント ベンダーによってホストされていることを示します。
 
-  - `Relative`:前提条件がアプリケーションと同じ場所にあることを示します。
+  - `Relative`: 前提条件がアプリケーションと同じ場所にあることを示します。
 
-  - `Absolute`:一元化された URL にすべてのコンポーネントがあることを示します。 この値は `ComponentsUrl` 入力パラメーターと共に使用する必要があります。
+  - `Absolute`: 一元化された URL にすべてのコンポーネントがあることを示します。 この値は `ComponentsUrl` 入力パラメーターと共に使用する必要があります。
 
     `ComponentsLocation` が指定されていない場合は、`HomeSite` が既定で使用されます。
 

@@ -1,5 +1,7 @@
 ---
-title: 方法 - 挿入されたコードをデバッグする | Microsoft Docs
+title: 挿入されたコードをデバッグする | Microsoft Docs
+description: Visual Studio で提供される挿入されたコードを表示するための 2 つの方法について学習します。1) [逆アセンブリ] ウィンドウ内、2) 挿入された、および元のコードの両方を含むソース ファイル内。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a63a593a907908205d6724f3faf2c06d405bf0e2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 5bce49eebf430ccaca9919c74966fb9efd00b09b
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350044"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903949"
 ---
 # <a name="how-to-debug-injected-code"></a>方法: 挿入されたコードをデバッグする
 

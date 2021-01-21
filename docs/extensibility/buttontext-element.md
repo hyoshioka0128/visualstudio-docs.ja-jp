@@ -1,5 +1,7 @@
 ---
 title: ButtonText 要素 |Microsoft Docs
+description: ButtonText 要素を使用すると、さまざまなメニューに表示されるテキストを指定できます。 他のテキストフィールドが指定されている場合でも、ButtonText 要素を空白にすることはできません。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739908"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974474"
 ---
 # <a name="buttontext-element"></a>ButtonText 要素
 このフィールドでは、さまざまなメニューに表示されるテキストを指定できます。 既定では、 `ButtonText` 要素はメニューコントローラーに表示されます。 `ButtonText`他のテキストフィールドが空白の場合も、要素が既定値になります。 `ButtonText`他のテキストフィールドが指定されている場合でも、要素を空白にすることはできません。

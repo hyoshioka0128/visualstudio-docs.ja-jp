@@ -1,5 +1,6 @@
 ---
 title: '[全般] タブ ([ウィンドウ プロパティ] ダイアログ ボックス) | Microsoft Docs'
+description: '[全般] タブでは、キャプション、ハンドル、四角形、アプリケーション インスタンス ハンドル、メニュー ハンドル、ユーザー データなど、ウィンドウに関する情報を確認できます。'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5160c79e2c8dae474927e6af7ebdc9e371e9edc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
+ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849562"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862751"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>[全般] タブ ([ウィンドウ プロパティ] ダイアログ ボックス)
 **[全般]** タブを使用して、選択したウィンドウの詳細を表示します。 [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md)を表示するには、[[ウィンドウ ビュー]](../debugger/windows-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のウィンドウ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

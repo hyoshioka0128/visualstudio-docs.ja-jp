@@ -14,12 +14,12 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d9950573e7bbeefe3594d77df2ae41c12f77ed3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 47411a6376cd843b3a12cf74ed1800775b98cd83
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816685"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861952"
 ---
 # <a name="expected-catch"></a>catch が必要です。
 例外処理 **try** ブロックを使用しましたが、関連付けられた **catch** ステートメントが書き込まれませんでした。 例外処理機構では、例外が発生した場合に実行してはならないコードと共に、失敗する可能性のあるコードが **try** ブロック内にラップされている必要があります。 例外は、 **throw**ステートメントを使用して**try**ブロック内からスローされ、 **try**ブロックの外側で1つ以上の**catch**ステートメントを使用してキャッチされます。  
@@ -31,5 +31,5 @@ ms.locfileid: "85816685"
 - **Catch**ブロックの代わりに**finally**ブロックを使用してください。  
   
 ## <a name="see-also"></a>関連項目  
- [お試しください...キャッチ...finally ステートメント](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
- [Error オブジェクト](../../javascript/reference/error-object-javascript.md)
+ [お試しください...キャッチ...finally ステートメント](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/try...catch)   
+ [Error オブジェクト](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error)

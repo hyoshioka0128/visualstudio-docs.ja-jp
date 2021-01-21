@@ -1,5 +1,7 @@
 ---
 title: DebuggerDisplay を使用してカスタム情報を表示する | Microsoft Docs
+description: DebuggerDisplayAttribute のインスタンスを使用して、デバッガー変数ウィンドウでのオブジェクト、プロパティ、フィールドの表示方法を制御します。
+ms.custom: SEO-VS-2020
 ms.date: 01/09/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 1d846fd5e423ed17f7754260f169e32dbef5486b
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418783"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150757"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>DebuggerDisplay 属性を使用して、デバッガーに何を表示するかを通知する (C#、Visual Basic、F#、C++/CLI)
 
@@ -46,8 +48,8 @@ ms.locfileid: "85418783"
 
 |パラメーター|目的|
 |----------------|-------------|
-|`Name`、`Type`|このパラメーターは、変数ウィンドウの **[名前]** 列と **[型]** 列に影響があります (コンストラクターと同じ構文で、文字列に設定できます)。このパラメーターを乱用したり、不適切に使用したりすると、出力を混乱させる可能性があります。|
-|`Target`、`TargetTypeName`|属性がアセンブリ レベルで使用される場合に、対象の型を指定します。|
+|`Name`, `Type`|このパラメーターは、変数ウィンドウの **[名前]** 列と **[型]** 列に影響があります (コンストラクターと同じ構文で、文字列に設定できます)。このパラメーターを乱用したり、不適切に使用したりすると、出力を混乱させる可能性があります。|
+|`Target`, `TargetTypeName`|属性がアセンブリ レベルで使用される場合に、対象の型を指定します。|
 
 autoexp.cs ファイルは、DebuggerDisplay 属性をアセンブリ レベルで使用します。 autoexp.cs ファイルは、Visual Studio が .NET オブジェクトに対して使用する既定の展開を指定します。 DebuggerDisplay 属性の使用方法について autoexp.cs ファイルで確認したり、autoexp.cs ファイルを変更してコンパイルすることで既定の展開を変更したりできます。 変更する場合は、その前に autoexp.cs ファイルのバックアップを作成してください。
 

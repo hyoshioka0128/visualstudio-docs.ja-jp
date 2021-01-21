@@ -1,5 +1,7 @@
 ---
 title: RoslynCodeTaskFactory を使用する MSBuild インライン タスク | Microsoft Docs
+description: クロスプラットフォームの Roslyn コンパイラを使用してインライン タスクとして使用するためのメモリ内タスク アセンブリを生成するMSBuild RoslynCodeTaskFactory について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 336c23a5e1357e8e425a74c0954d3c0e28f8a930
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289210"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049135"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>RoslynCodeTaskFactory を使用する MSBuild インライン タスク
 
@@ -92,7 +94,7 @@ ms.locfileid: "85289210"
 
 ## <a name="hello-world"></a>Hello World
 
- これは RoslynCodeTaskFactory を使用したより堅牢なインライン タスクです。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の**出力**ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。
+ これは RoslynCodeTaskFactory を使用したより堅牢なインライン タスクです。 HelloWorld タスクは、既定のエラー ログ デバイスに "Hello, world!" と表示します。通常、既定のデバイスは、システム コンソールまたは Visual Studio の **出力** ウィンドウです。 この例の `Reference` 要素は、例を示す目的でのみ含めてあります。
 
 ```xml
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

@@ -1,5 +1,7 @@
 ---
 title: プロセス |Microsoft Docs
+description: この記事では、Visual Studio のデバッガーアーキテクチャにおけるプロセスの定義とロールについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 392c59b90bb117dded0f528bc33a617370b091a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a707d62443004795824c8bd437c29802635cf41
+ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738240"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96606503"
 ---
 # <a name="processes"></a>処理
-デバッガーのアーキテクチャでは、 *プロセス*は次のようになります。
+デバッガーのアーキテクチャでは、 *プロセス* は次のようになります。
 
 - は、一連のプログラムのコンテナーです。 これは、スレッドのセットのコンテナーである Windows プロセスによく似ています。
 

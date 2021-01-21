@@ -1,5 +1,7 @@
 ---
-title: 方法 - Spy++ ツリーの展開と折りたたみを行う | Microsoft Docs
+title: Spy++ ツリーの展開と折りたたみを行う | Microsoft Docs
+description: ウィンドウ、プロセス、スレッドのビューを展開したり折りたたんだりする 2 つの方法について学習します。 ウィンドウ内のアイコンをクリックするか、[ツリー] メニューを使用することができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c4939a77fffdd5701cf1b9b4ac50995ce6995bb2
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349589"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903429"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>方法: Spy++ ツリーの展開と折りたたみを行う
 ウィンドウ ビュー、プロセス ビュー、およびスレッド ビューは、2 つの方法で展開したり折りたたんだりできます。ウィンドウ内のアイコンをクリックするか、**ツリー** メニューを使用します。 ツリーの [+] アイコンと [-] アイコンは、C++ プロジェクト ウィンドウと同様に機能します。

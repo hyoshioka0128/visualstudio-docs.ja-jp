@@ -1,5 +1,7 @@
 ---
 title: '[古いコードの警告] ダイアログ ボックス | Microsoft Docs'
+description: '[古いコードの警告] ダイアログ ボックスについてお読みください。これは、[エディット コンティニュ] ではすぐに適用されない、ネイティブ コードへの変更を行った場合に表示されます。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,16 +22,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dba38e5b5d9f7a2be710cad58d6f2297dd03a412
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bb2666b3b57c8f84c81e181355f096674543445
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729541"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150328"
 ---
 # <a name="stale-code-warning-dialog-box"></a>[古いコードの警告] ダイアログ ボックス
 
-このダイアログ ボックスは、**エディット コンティニュ**ではすぐに適用されない、ネイティブ コードへの変更を行った場合に表示されます。 結果として、現在のスタック フレーム内の一部のネイティブ コードが最新でない (陳腐化している) 場合があります。 詳細については、「[エディット コンティニュ (Visual C++)](edit-and-continue-visual-cpp.md)」を参照してください。
+このダイアログ ボックスは、**エディット コンティニュ** ではすぐに適用されない、ネイティブ コードへの変更を行った場合に表示されます。 結果として、現在のスタック フレーム内の一部のネイティブ コードが最新でない (陳腐化している) 場合があります。 詳細については、「[エディット コンティニュ (Visual C++)](edit-and-continue-visual-cpp.md)」を参照してください。
 
 **[次回からこのダイアログ ボックスを表示しない]**
 

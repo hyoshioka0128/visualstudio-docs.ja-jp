@@ -1,5 +1,7 @@
 ---
 title: 式エバリュエーターの登録 |Microsoft Docs
+description: 式エバリュエーターが、Windows COM 環境と Visual Studio の両方を備えたクラスファクトリとして自身を登録する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600f7c8a2e2957cddf23ccc82b0872617e491940
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713204"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847144"
 ---
 # <a name="register-an-expression-evaluator"></a>式エバリュエーターの登録
 > [!IMPORTANT]
@@ -25,7 +27,7 @@ ms.locfileid: "80713204"
  式エバリュエーター (EE) は、それ自体を Windows COM 環境と Visual Studio の両方を備えたクラスファクトリとして登録する必要があります。 EE は DLL として設定されるため、EE をインスタンス化するエンティティに応じて、デバッグエンジン (DE) アドレス空間または Visual Studio アドレス空間のいずれかに挿入されます。
 
 ## <a name="managed-code-expression-evaluator"></a>マネージコード式エバリュエーター
- マネージコード EE はクラスライブラリとして実装されます。これは、通常は VSIP プログラムの呼び出しによって開始される COM 環境にそれ自体を登録する DLL です。 *regpkg.exe*です。 COM 環境のレジストリキーを書き込む実際のプロセスは、自動的に処理されます。
+ マネージコード EE はクラスライブラリとして実装されます。これは、通常は VSIP プログラムの呼び出しによって開始される COM 環境にそれ自体を登録する DLL です。 *regpkg.exe* です。 COM 環境のレジストリキーを書き込む実際のプロセスは、自動的に処理されます。
 
  Main クラスのメソッドはでマークされ <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ます。これは、DLL が COM に登録されているときにメソッドが呼び出されることを示します。 この登録方法は、多く `RegisterClass` の場合、Visual Studio に DLL を登録するタスクを実行します。 対応する `UnregisterClass` (でマークされた <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> ) `RegisterClass` 。 DLL がアンインストールされたときの効果を元に戻します。
 アンマネージコードで記述された EE の場合と同じレジストリエントリが作成されます。唯一の違いは、作業を行うためのなどのヘルパー関数がないことです `SetEEMetric` 。 登録と登録解除のプロセスの例を次に示します。
@@ -101,7 +103,7 @@ namespace EEMC
  EE DLL は、 `DllRegisterServer` Visual Studio だけでなく COM 環境にも登録する関数を実装しています。
 
 > [!NOTE]
-> MyCEE コードサンプルレジストリコードは、EnVSDK\MyCPkgs\MyCEE. の下にある VSIP インストールにあるファイル*dllentry. .cpp で見つかります。*
+> MyCEE コードサンプルレジストリコードは、EnVSDK\MyCPkgs\MyCEE. の下にある VSIP インストールにあるファイル *dllentry. .cpp で見つかります。*
 
 ### <a name="dll-server-process"></a>DLL サーバープロセス
  EE を登録すると、DLL サーバーは次のようになります。
@@ -120,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > では、 `metricLanguage``GUID` 言語が名前で識別されますが、の引数によって言語が選択され `guidLang` `SetEEMetric` ます。 コンパイラは、デバッグ情報ファイルを生成するときに、 `guidLang` 使用する EE を認識しないように適切なを記述する必要があります。 通常、DE はシンボルプロバイダーにこの言語を要求します。この言語は `GUID` デバッグ情報ファイルに格納されます。
 
-3. HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio x. Y の下にキーを作成して Visual Studio に登録 \\ *X.Y*します。ここで、 *x.y*は、登録する visual Studio のバージョンです。
+3. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioの x. Y の下にキーを作成して Visual Studio に登録 \\ *X.Y* します。ここで、 *x.y* は、に登録する Visual Studio のバージョンです。
 
 ### <a name="example"></a>例
  次の関数は、アンマネージコード (C++) EE が Visual Studio でそれ自体を登録および登録解除する方法を示しています。

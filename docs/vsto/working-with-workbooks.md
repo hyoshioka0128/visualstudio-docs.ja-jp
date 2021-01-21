@@ -1,5 +1,7 @@
 ---
 title: ブックの操作
+description: ブックとブックのクラスには、ブックを使用してタスクを実行するために使用するメソッドとプロパティが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62814689"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522571"
 ---
 # <a name="work-with-workbooks"></a>ブックの操作
   <xref:Microsoft.Office.Tools.Excel.Workbook> クラスと <xref:Microsoft.Office.Interop.Excel.Workbooks> クラスには、ブック関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -38,7 +40,7 @@ ms.locfileid: "62814689"
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
 - [ワークシートを操作する](../vsto/working-with-worksheets.md)
 - [範囲の操作](../vsto/working-with-ranges.md)

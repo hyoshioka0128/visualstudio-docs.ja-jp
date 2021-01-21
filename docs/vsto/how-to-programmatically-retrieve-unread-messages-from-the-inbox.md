@@ -1,5 +1,7 @@
 ---
 title: プログラムによって受信トレイから未読メッセージを取得する
+description: Visual Studio を使用して、Microsoft Outlook の受信トレイから未読メッセージをプログラムで取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc913379546c80eef70671ea0ecbd441001e6ab5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6dae629c008c04f7ee9fb66b9dbc5f8f31e53d4
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537606"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528257"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>方法: プログラムによって受信トレイから未読メッセージを取得する
   この例では、Outlook の **受信トレイ** から未読の電子メールメッセージを取得し、アイテムの数を表示します。

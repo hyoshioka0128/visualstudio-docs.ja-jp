@@ -1,5 +1,7 @@
 ---
 title: Windows インストーラー展開の拡張機能を準備する |Microsoft Docs
+description: 既定の出力がセットアッププロジェクトに含める VSIX パッケージであるプロジェクトを準備する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: ba494af91d3d40720493b27e7381660ece3fba69
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012218"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97862901"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows インストーラー展開の拡張機能を準備する
 Windows インストーラーパッケージ (MSI) を使用して VSIX パッケージを配置することはできません。 ただし、MSI の展開用に VSIX パッケージのコンテンツを抽出することはできます。 このドキュメントでは、既定の出力がセットアッププロジェクトに含める VSIX パッケージであるプロジェクトを準備する方法について説明します。
@@ -33,7 +35,7 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
      これにより、VSIX インストーラーはコンポーネントをインストールしようとしません。
 
-4. **ソリューションエクスプローラー**でプロジェクトを右クリックし、[**プロパティ**] をクリックします。
+4. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
 5. [ **VSIX** ] タブを選択します。
 
@@ -44,9 +46,9 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
 ### <a name="to-extract-files-from-an-existing-vsix-package"></a>既存の VSIX パッケージからファイルを抽出するには
 
-1. の名前を変更*します。**ファイル名 .vsix*から*filename.zip*への拡張子を含む vsix ファイル。
+1. の名前を変更 *します。**ファイル名 .vsix* から *filename.zip* への拡張子を含む vsix ファイル。
 
-2. *.Zip*ファイルの内容をディレクトリにコピーします。
+2. *.Zip* ファイルの内容をディレクトリにコピーします。
 
 3. ディレクトリから *[Content_types] .xml* ファイルを削除します。
 

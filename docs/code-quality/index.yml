@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Visual Studio でのコード分析
+title: Visual Studio でのコードの分析
 summary: Visual Studio では、コードの品質の分析と向上のためのさまざまなツールを提供しています。
 metadata:
   title: コード アナライザー
@@ -10,50 +10,60 @@ metadata:
   author: Mikejo5000
   ms.author: mikejo
   ms.date: 10/15/2019
-  ms.openlocfilehash: c954c2bdf5b202da96cffc4dfa22e94b75a7d93a
-  ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+  ms.openlocfilehash: b660af5dbe18c54a4b1871d2e00311bf31471662
+  ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/09/2020
-  ms.locfileid: "89599608"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "91928005"
 landingContent:
-- title: C および C++ コードの分析
+- title: .NET コード分析の構成
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET コードの分析
+      url: roslyn-analyzers-overview.md
+  - linkListType: concept
+    links:
+    - text: よく寄せられる質問
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: .NET コード分析
+      url: use-roslyn-analyzers.md
+    - text: .NET コード品質分析
+      url: /dotnet/fundamentals/code-analysis/configuration-files?toc=%2fvisualstudio%2fcode-quality%2ftoc.json
+    - text: .NET コード スタイルの分析
+      url: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+- title: .NET コード分析
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: .NET ソース コード分析
+      url: /dotnet/fundamentals/code-analysis/overview
+    - text: .NET コード品質分析
+      url: /dotnet/fundamentals/productivity/code-analysis#code-quality-analysis
+    - text: .NET コード スタイルの分析
+      url: /dotnet/fundamentals/productivity/code-analysis#code-style-analysis
+  - linkListType: reference
+    links:
+    - text: .NET コード品質ルール
+      url: /dotnet/fundamentals/productivity/code-analysis/quality-rules/index
+    - text: .NET コード スタイルの規則
+      url: /dotnet/fundamentals/productivity/code-analysis/style-rules/index
+- title: C++ コードの分析
   linkLists:
   - linkListType: overview
     links:
     - text: C および C++ コードの分析
       url: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - text: EditorConfig の書式規則
+      url: ../ide/cpp-editorconfig-properties.md
   - linkListType: reference
     links:
     - text: C++ のコード分析の警告
       url: /cpp/code-quality/code-analysis-for-c-cpp-warnings
-- title: .NET コード品質分析
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: ソース解析
-      url: roslyn-analyzers-overview.md
-    - text: レガシ分析
-      url: static-code-analysis-for-managed-code-overview.md
-  - linkListType: concept
-    links:
-    - text: よくあるご質問
-      url: analyzers-faq.md
-  - linkListType: how-to-guide
-    links:
-    - text: コード品質分析の構成
-      url: install-fxcop-analyzers.md
-  - linkListType: reference
-    links:
-    - text: .NET コード品質ルール
-      url: code-analysis-for-managed-code-warnings.md
-- title: .NET コード スタイルの分析
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: コード スタイル分析の構成
-      url: ../ide/create-portable-custom-editor-options.md
-- title: コードの複雑さの測定
+- title: コードの複雑さの測定 (.NET)
   linkLists:
   - linkListType: concept
     links:

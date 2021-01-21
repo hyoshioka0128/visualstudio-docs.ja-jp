@@ -1,5 +1,7 @@
 ---
 title: 項目用の関数 | Microsoft Docs
+description: タスクとターゲットの MSBuild コードで項目の関数を呼び出し、プロジェクトの項目に関する情報を取得する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.openlocfilehash: 94b94ef7b17633ab78f7eb91f61dd67ea2c8021d
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82586886"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92904638"
 ---
 # <a name="item-functions"></a>項目用の関数
 

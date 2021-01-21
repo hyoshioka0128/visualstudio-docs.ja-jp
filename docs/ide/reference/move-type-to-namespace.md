@@ -1,5 +1,7 @@
 ---
 title: 名前空間に型を移動する
+description: '[クイック アクションとリファクタリング] メニューを使用して、型を別の名前空間またはフォルダーに移動する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 06/17/2019
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 ms.workload:
 - dotnet
 monikerRange: vs-2019
-ms.openlocfilehash: 58d2757fa8798b67c8e597f5f82bc65a279f4a90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21e13938bcb19306b897501a4aad11d6b4bd15ea
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80375565"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96616916"
 ---
 # <a name="move-type-to-namespace"></a>名前空間に型を移動する
 
@@ -29,7 +31,7 @@ ms.locfileid: "80375565"
 
 **理由:** ソリューションの部分をリファクタリングし、型を別の名前空間またはフォルダーに移動する簡単な方法が必要です。 
 
-## <a name="how-to"></a>方法
+## <a name="how-to"></a>操作方法
 
 1. クラス名にカーソルを置きます。
 2. 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。

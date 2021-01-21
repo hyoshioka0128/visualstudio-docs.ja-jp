@@ -1,5 +1,7 @@
 ---
 title: 実験用インスタンス |Microsoft Docs
+description: Visual Studio SDK が、テストされていないアプリケーションをデバッグモードで実行するための実験的な領域を提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2284767a0aa6be58c0f7e38c912783728914cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4786f450b108c8a6c1eaefc6f86f7adf57e9269e
+ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699041"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97715861"
 ---
 # <a name="the-experimental-instance"></a>実験用インスタンス
 テストされていないアプリケーションから Visual Studio 開発環境を保護するために、VSSDK には実験に使用できる実験的な領域が用意されています。 通常どおり Visual Studio を使用して新しいアプリケーションを開発しますが、この実験用インスタンスを使用して実行します。

@@ -1,5 +1,7 @@
 ---
 title: プロジェクト テンプレートと項目テンプレートのパラメーター
+description: テンプレートをインスタンス化するときに、テンプレート パラメーターを使用してテンプレートの値を置き換える方法を説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: reference
 helpviewer_keywords:
@@ -10,16 +12,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e575011f76370083b5a0f461fbb62bbbc839ea3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78169366"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96479201"
 ---
 # <a name="template-parameters"></a>Template parameters
 
-テンプレートがインスタンス化されるとき、テンプレートの値を置換できます。 この機能を設定するには、*テンプレート パラメーター*を使用します。 テンプレート パラメーターは、テンプレートのクラス名や名前空間など、値を置換するために使用できます。 ユーザーが新しい項目やプロジェクトを追加したときにバックグラウンドで実行されるテンプレート ウィザードによってこれらのパラメーターが置換されます。
+テンプレートがインスタンス化されるとき、テンプレートの値を置換できます。 この機能を設定するには、*テンプレート パラメーター* を使用します。 テンプレート パラメーターは、テンプレートのクラス名や名前空間など、値を置換するために使用できます。 ユーザーが新しい項目やプロジェクトを追加したときにバックグラウンドで実行されるテンプレート ウィザードによってこれらのパラメーターが置換されます。
 
 ## <a name="declare-and-enable-template-parameters"></a>テンプレート パラメーターを宣言して有効にする
 

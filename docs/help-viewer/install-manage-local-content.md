@@ -1,5 +1,6 @@
 ---
 title: ローカルのヘルプ ドキュメントのインストール
+description: Microsoft ヘルプビューアーを使用して、ローカルヘルプドキュメントをインストールし、管理します。 コンピューターにインストールされているヘルプコンテンツを追加、削除、更新、移動します。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bb90856fb88738bbc82434c47e375ea453fd08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284907"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879100"
 ---
 # <a name="install-and-manage-local-content"></a>ローカル コンテンツのインストールと管理
 

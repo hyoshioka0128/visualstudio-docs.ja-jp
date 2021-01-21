@@ -1,18 +1,18 @@
 ---
-title: Visual Studio サブスクリプションの Microsoft Windows Virtual Desktop 特典 | Microsoft Docs
+title: Visual Studio サブスクリプションでの Microsoft Windows Virtual Desktop | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 12/02/2020
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを使用して Microsoft Windows Virtual Desktop を活用する方法について説明します
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88800607"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96537956"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>サブスクリプション内で Windows Virtual Desktop にアクセスする 
 Visual Studio のサブスクライバーは、Microsoft Windows Virtual Desktop サービスで Azure Dev/Test の個人クレジットを使用できるようになりました。  
@@ -23,7 +23,7 @@ Azure 上の Windows Virtual Desktop でできることは次のとおりです�
 - Windows 7 仮想デスクトップに無料の延長セキュリティ更新プログラムを提供
 - 既存のリモート デスクトップ サービス (RDS) と Windows Server のデスクトップやアプリをあらゆるコンピューターで利用
 - デスクトップとアプリの両方を仮想化
-- 統合された管理エクスペリエンスで Windows 10、Windows Server、Windows 7 のデスクトップとアプリを管理 Windows Virtual Desktop でできることの詳細については、[紹介ビデオ](https://docs.microsoft.com/azure/virtual-desktop/overview)をご覧ください。
+- 統合された管理エクスペリエンスで Windows 10、Windows Server、Windows 7 のデスクトップとアプリを管理 Windows Virtual Desktop でできることの詳細については、[紹介ビデオ](/azure/virtual-desktop/overview)をご覧ください。
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Azure で Windows Virtual Desktop を使用する 
 Visual Studio のサブスクライバーは、いくつかの方法で Azure サブスクリプションを使用して Windows Virtual Desktop サービスの支払いを行えるようになりました。
@@ -35,21 +35,21 @@ Visual Studio のサブスクライバーは、いくつかの方法で Azure �
 Windows Virtual Desktop では、VM が参加する Azure Active Directory (Azure AD) が必要です。  ユーザーは、この Azure AD のメンバーである必要があります。  Azure AD を実装するには、次の 2 つのオプションがあります。
 - Azure AD ディレクトリ サービス。  ほとんどのユーザーにとっては、こちらの実装方法が簡単です。
 - ドメイン コントローラー キャンペーンを実行している仮想マシン。  このオプションでは、セットアップに多くの作業が必要ですが、ほとんどのユーザーの運用コストが低くなります。
-Windows Virtual Desktop を使用するための前提条件の完全な一覧については、Windows Virtual Desktop の [概要ページ](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)を参照してください。 
+Windows Virtual Desktop を使用するための前提条件の完全な一覧については、Windows Virtual Desktop の [概要ページ](/azure/virtual-desktop/overview#requirements)を参照してください。 
 
 ## <a name="get-started"></a>作業開始 
 すべての前提条件が満たされたら、いくつかのアクションを実行して、実装を適切な場所に配置します。  使用を開始するには、次のチュートリアルをご覧ください。
-- [Windows Virtual Desktop テナントを作成する](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- Azure portal を使用して[ホスト プールを作成する](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace)
-- Windows Virtual Desktop の[アプリ グループを管理する](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups)
+- [Windows Virtual Desktop テナントを作成する](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- Azure portal を使用して[ホスト プールを作成する](/azure/virtual-desktop/create-host-pools-azure-marketplace)
+- Windows Virtual Desktop の[アプリ グループを管理する](/azure/virtual-desktop/manage-app-groups)
 
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 使用可能|  はい          |
-| Visual Studio Enterprise with GitHub Enterprise  | VL | 使用可能|  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能|  はい          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                             |  はい             |
-| Visual Studio Professional with GitHub Enterprise | VL                                       | 使用可能                                        |  はい           |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL                                       | 使用可能                                        |  はい           |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能|  はい          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                         |  はい          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
@@ -63,11 +63,11 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="see-also"></a>関連項目
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Windows Virtual Desktop のドキュメント](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Azure ドキュメント](/azure/)
+- [Windows Virtual Desktop のドキュメント](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>次の手順
 -   Visual Studio サブスクリプションを購入する必要がある場合は、次のことを確認してください。
      - Microsoft Store での[小売価格](https://visualstudio.microsoft.com/vs/pricing/)
      - [ボリューム ライセンスのプログラム](https://www.microsoft.com/licensing/default)
--   [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) について 
+-   [Windows Virtual Desktop](/azure/virtual-desktop/overview) について

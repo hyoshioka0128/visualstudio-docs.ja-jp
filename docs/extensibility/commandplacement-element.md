@@ -1,5 +1,7 @@
 ---
 title: CommandPlacement 要素 |Microsoft Docs
+description: CommandPlacement 要素を使用すると、ボタン、グループ、およびメニューを複数のグループまたはメニューに含めることができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf9f23b5e860b895baa4c2a7a783f2ee15fcc77
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2828a32ea837e95be438aafa6ec4b31293a43a7
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739737"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974071"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 要素
 CommandPlacement 要素を使用すると、ボタン、グループ、およびメニューを複数のグループまたはメニューに含めることができます。 CommandPlacement 要素を使用すると、ユーザーインターフェイスの外観を変更するために、これらの項目を完全に再定義する必要はありません。
@@ -47,7 +49,7 @@ CommandPlacement 要素を使用すると、ボタン、グループ、および
 
 |要素|説明|
 |-------------|-----------------|
-|Parent|必須。 配置する項目をホストするメニューまたはグループ。|
+|親|必須。 配置する項目をホストするメニューまたはグループ。|
 
 ### <a name="parent-elements"></a>親要素
 

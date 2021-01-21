@@ -1,5 +1,7 @@
 ---
 title: 列挙子 |Microsoft Docs
+description: コマンドコード、メッセージ、ファイルステータスコード、ディレクトリステータスコードなど、ソース管理プラグイン API の列挙子データ型について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee48d064612e5519d5ad7e5eaf04de6c5a697837
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 55e124ce3d36e2b23ef53c376b660de05cd87043
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711855"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995812"
 ---
 # <a name="enumerators"></a>列挙子
 このセクションでは、ソース管理プラグインが認識する必要があるソース管理プラグイン API の列挙子データ型について説明します。

@@ -1,5 +1,7 @@
 ---
 title: コンポーネントの管理 |Microsoft Docs
+description: Visual Studio で VSPackage インストーラーを作成するときに Windows インストーラーコンポーネントを管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5dcac9fb14a83021b852be2c52436fcdca84bf5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 648a1c90b143a0f38f8911fcaed3ee1ed16908b6
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709335"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304916"
 ---
 # <a name="component-management"></a>コンポーネント管理
 Windows インストーラー内のタスクの単位は、Windows インストーラーコンポーネント (WICs またはコンポーネントとも呼ばれます) と呼ばれます。 GUID は、各 WIC を識別します。これは、インストールの基本単位であり、Windows インストーラーを使用するセットアップの参照カウントです。
@@ -29,7 +31,7 @@ Windows インストーラー内のタスクの単位は、Windows インスト�
 
 - バージョン間で共有されるファイルとレジストリキーを独自のコンポーネントに作成します。
 
-     これにより、次のバージョンで簡単に使用できるようになります。 たとえば、グローバル、ファイル拡張子、 **HKEY_CLASSES_ROOT**に登録されているその他の項目などに登録されているタイプライブラリなどです。
+     これにより、次のバージョンで簡単に使用できるようになります。 たとえば、グローバル、ファイル拡張子、 **HKEY_CLASSES_ROOT** に登録されているその他の項目などに登録されているタイプライブラリなどです。
 
 - 共有コンポーネントを別々のマージモジュールにグループ化します。
 

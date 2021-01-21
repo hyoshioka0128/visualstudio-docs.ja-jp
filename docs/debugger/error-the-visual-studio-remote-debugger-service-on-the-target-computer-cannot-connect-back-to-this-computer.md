@@ -1,5 +1,5 @@
 ---
-title: エラー - ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
+title: ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b372b1f6fcdab357e87ff91fa4df257e8da7d68d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536670"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851074"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>エラー :ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
 このエラーは、リモート デバッガー サービスでデバッグを開始したコンピューターに接続するときに、このサービスを実行しているユーザー アカウントを認証できないことを意味します。 このエラーは、レガシ デバッグ エンジンを使用したリモート デバッグで、リモート デバッガーがサービスとして実行されている場合に発生する可能性があります。

@@ -1,5 +1,7 @@
 ---
-title: CD インストールの自動開始を有効にする方法 |Microsoft Docs
+title: CD インストールの自動開始を有効にする |Microsoft Docs
+description: CD-ROM や DVD-ROM などのリムーバブルメディアを使用して ClickOnce アプリケーションを展開するときに自動開始を有効にする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f6ed3df72b98454c4669e7d9bcd21c0612a6fef3
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382446"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94349959"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>方法: CD インストールの自動開始を有効にする
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Cd-rom や dvd-rom などのリムーバブルメディアを使用してアプリケーションを展開する場合は、 `AutoStart` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] メディアが挿入されたときにアプリケーションが自動的に起動するように、を有効にすることができます。
 
- `AutoStart`は、**プロジェクトデザイナー**の [**発行**] ページで有効にすることができます。
+ `AutoStart`は、 **プロジェクトデザイナー** の [ **発行** ] ページで有効にすることができます。
 
 ### <a name="to-enable-autostart"></a>自動開始を有効にするには
 
-1. **ソリューションエクスプローラー**でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ **プロパティ** ] をクリックします。
 
 2. **[公開]** タブをクリックします。
 

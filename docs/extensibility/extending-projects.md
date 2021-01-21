@@ -1,5 +1,7 @@
 ---
 title: プロジェクトの拡張 |Microsoft Docs
+description: Visual Studio SDK で独自のカスタムプロジェクトの種類を作成する方法と、さまざまな種類の Visual Studio ソリューションを管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14108a304cc5f85c9a870bc66804df7daa98f3ca
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181acea9a5188ba28a4ef109b5bec0e7c040b5da
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711752"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96994616"
 ---
 # <a name="extend-projects"></a>プロジェクトの拡張
 プロジェクトとソリューションは、Visual Studio がコードとリソースファイルをコンパイルおよび配置単位に整理する方法です。 プロジェクトの詳細については、 [「プロジェクト (Visual STUDIO SDK)](../extensibility/extending-projects.md)」を参照してください。

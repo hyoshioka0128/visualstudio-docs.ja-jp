@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによってカスタムフォルダー項目を作成する'
+description: Visual Studio を使用して、Microsoft Outlook でカスタムフォルダー項目をプログラムで作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: 652768fa23902722a9b071a4ad12de4cbf774ab6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f149758665e5d7a7cdf7f4edd5d926e1de632dca
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546030"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97527788"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>方法: プログラムによってカスタムフォルダー項目を作成する
   この例では Microsoft Office Outlook で新しいフォルダーを作成します。 ログオンしたユーザーの名前は、フォルダー名として使用されます。

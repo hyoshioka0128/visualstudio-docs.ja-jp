@@ -1,5 +1,7 @@
 ---
 title: T4 テキスト テンプレートの記述に関するガイドライン
+description: Visual Studio でプログラムコードまたはその他のアプリケーションリソースを生成する場合に役立つ一般的なガイドラインについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,20 +9,20 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f7be4ce9b8beb7699844397de3e1fc206d017c
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596542"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363407"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 テキスト テンプレートの記述に関するガイドライン
 
 これらの一般的なガイドラインは、プログラムコードやその他のアプリケーションリソースを Visual Studio で生成する場合に役立ちます。 これらは固定規則ではありません。
 
-## <a name="guidelines-for-design-time-t4-templates"></a>デザイン時 T4 テンプレートのガイドライン
+## <a name="guidelines-for-design-time-t4-templates"></a>T4 テンプレートを Design-Time するためのガイドライン
 
-デザイン時 T4 テンプレートは、デザイン時に Visual Studio プロジェクト内のコードを生成するテンプレートです。 詳細については、「 [T4 テキストテンプレートを使用したデザイン時のコード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。
+デザイン時 T4 テンプレートは、デザイン時に Visual Studio プロジェクト内のコードを生成するテンプレートです。 詳細については、「[T4 テキスト テンプレートを使用したデザイン時コード生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)」を参照してください。
 
 アプリケーションの変数の側面を生成します。
 
@@ -76,7 +78,7 @@ XML などの他の生成された言語では、ディレクティブを使用�
 
 生成されたコードフォルダーを使用します。
 
-テンプレートおよび生成されたファイルを、 **生成さ**れたコードという名前のプロジェクトフォルダーに配置して、直接編集する必要があるファイルではないことを明確にします。 生成されたクラスをオーバーライドまたは追加するカスタムコードを作成する場合は、それらのクラスを **カスタムコード**という名前のフォルダーに配置します。 一般的なプロジェクトの構造は次のようになります。
+テンプレートおよび生成されたファイルを、 **生成さ** れたコードという名前のプロジェクトフォルダーに配置して、直接編集する必要があるファイルではないことを明確にします。 生成されたクラスをオーバーライドまたは追加するカスタムコードを作成する場合は、それらのクラスを **カスタムコード** という名前のフォルダーに配置します。 一般的なプロジェクトの構造は次のようになります。
 
 ```
 MyProject
@@ -91,7 +93,7 @@ MyProject
    AnotherClass.cs
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>実行時 (前処理済み) の T4 テンプレートのガイドライン
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Run-Time (前処理済み) T4 テンプレートに関するガイドライン
 
 共通素材を継承されたテンプレートに移動します。
 
@@ -105,11 +107,11 @@ MyProject
 
 これを行う利点は、IntelliSense を使用できるため、コードの記述が簡単になることです。 また、プレゼンテーションと基になるロジックをより適切に分離することもできます。
 
-たとえば、 **MyReportText.tt**の場合は次のようになります。
+たとえば、 **MyReportText.tt** の場合は次のようになります。
 
 `The total is: <#= ComputeTotal() #>`
 
-**MyReportText-Methods.cs**の場合:
+**MyReportText-Methods.cs** の場合:
 
 `private string ComputeTotal() { ... }`
 
@@ -151,7 +153,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 型指定されたモデルの使用を検討してください。
 
-モデルの XML スキーマまたはデータベーススキーマを作成することもできますが、ドメイン固有言語 (DSL) を作成すると便利な場合があります。 DSL には、スキーマ内の各ノードを表すクラスと、属性を表すプロパティが生成されるという利点があります。 これは、ビジネスモデルの観点からプログラミングできることを意味します。 たとえば、次のように入力します。
+モデルの XML スキーマまたはデータベーススキーマを作成することもできますが、ドメイン固有言語 (DSL) を作成すると便利な場合があります。 DSL には、スキーマ内の各ノードを表すクラスと、属性を表すプロパティが生成されるという利点があります。 これは、ビジネスモデルの観点からプログラミングできることを意味します。 次に例を示します。
 
 ```
 Team Members:

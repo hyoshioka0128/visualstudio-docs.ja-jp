@@ -1,6 +1,7 @@
 ---
 title: グラフィックス診断の使用を開始する | Microsoft Docs
-ms.custom: seodec18
+description: グラフィックス診断を初めて使用するための準備をしてから、Direct3D アプリケーションのフレームをキャプチャして Graphics Analyzer でそれらを診断します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/08/2020
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 88b22364c92a17c7200ddb261d154c7896cd1696
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350460"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727865"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio グラフィックス診断の使用を開始する
 このセクションでは、まずグラフィックス診断を初めて使用するための準備をしてから、Direct3D アプリケーションのフレームをキャプチャして Graphics Analyzer でそれらを確認します。
@@ -56,7 +57,7 @@ ms.locfileid: "85350460"
 独自の Direct3D アプリが既にある場合は、グラフィックス診断を試すことができます。 それ以外の場合は、次のいずれかを使用します。
 
 ::: moniker range=">=vs-2019"
-「[Direct3D ゲーム サンプル](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/)」からサンプルをダウンロードします。
+「[Direct3D ゲーム サンプル](/samples/microsoft/windows-universal-samples/simple3dgamedx/)」からサンプルをダウンロードします。
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Windows 10 用の **DirectX 11 アプリ (ユニバーサル Windows)** または **DirectX 12 アプリ (ユニバーサル Windows)** プロジェクト テンプレート。
@@ -87,7 +88,7 @@ ms.locfileid: "85350460"
   キャプチャが終了したら、アプリケーションを終了するか、[グラフィックス] ツールバーまたは診断セッション ウィンドウから **[停止]** ボタンをクリックします。
 
 ### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4 - Graphics Analyzer でキャプチャされたフレームを確認する
- これで、キャプチャしたフレームを詳しく調べる準備ができました。 フレーム分析を開始するには、診断セッション ウィンドウから確認するフレームのフレーム番号を選択します。 これで、フレームが **Graphics Analyzer** で表示され、ここでグラフィックス診断ツールを使用して、アプリがどのように Direct3D を使用しているかを調べてレンダリングの問題を追跡したり、**フレーム分析**ツールを使用して、パフォーマンスを理解したりできます。
+ これで、キャプチャしたフレームを詳しく調べる準備ができました。 フレーム分析を開始するには、診断セッション ウィンドウから確認するフレームのフレーム番号を選択します。 これで、フレームが **Graphics Analyzer** で表示され、ここでグラフィックス診断ツールを使用して、アプリがどのように Direct3D を使用しているかを調べてレンダリングの問題を追跡したり、**フレーム分析** ツールを使用して、パフォーマンスを理解したりできます。
 
  診断セッション ウィンドウで間違ったフレームを選択した場合や、別のフレームを確認する場合は、Graphics Analyzer から新しいフレームを選択できます。 グラフィックス ログ ウィンドウの **[レンダー ターゲット]** タブで、レンダー ターゲットのイメージの下にある **[フレーム一覧]** を展開し、確認する別のフレームを選択します。
 

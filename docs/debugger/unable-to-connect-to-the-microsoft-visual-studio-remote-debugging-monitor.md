@@ -1,5 +1,8 @@
 ---
-title: Microsoft Visual Studio リモート デバッグ モニターに接続できません | Microsoft Docs
+title: Microsoft Visual Studio リモート デバッグ モニターに接続できません。
+description: "\"Microsoft Visual Studio リモート デバッグ モニターに接続できません\" の意味、考えられる原因、および解決策について説明します。"
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 04/14/2020
 ms.topic: reference
 f1_keywords:
@@ -15,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6173d6b3525a1bd723bc859d34b889b3796d295
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc34a5f58f8bc3c47526cc8ba8516311e94f0631
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81397377"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150835"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Microsoft Visual Studio リモート デバッグ モニターに接続できません。
 このメッセージは、リモート デバッグ モニターがリモート マシンで正しく設定されていないか、ネットワークの問題やファイアウォールの存在が原因でリモート マシンにアクセスできないために発生することがあります。
@@ -51,14 +54,14 @@ ms.locfileid: "81397377"
     `computername:port`
 
     > [!NOTE]
-    > ポート番号は、[リモート デバッガー (ターゲット マシン上で*実行されている必要があります*) のポート番号](../debugger/remote-debugger-port-assignments.md)と一致する必要があります。
+    > ポート番号は、[リモート デバッガー (ターゲット マシン上で *実行されている必要があります*) のポート番号](../debugger/remote-debugger-port-assignments.md)と一致する必要があります。
 
 2. コンピューター名が機能しない場合は、代わりに IP アドレスとポート番号を試します。
 
 3. ターゲット マシン上で実行されているリモート デバッガーのバージョンが Visual Studio のバージョンと一致していることを確認します。 リモート デバッガーの正しいバージョンを取得するには、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。
 
     > [!TIP]
-    > プロセスにアタッチし、正常に接続しても、目的のプロセスが表示されない場合は、 **[全ユーザーのプロセスを表示する] チェック ボックス**をオンにします。 これで、別のユーザー アカウントで接続している場合にプロセスが表示されるようになります。
+    > プロセスにアタッチし、正常に接続しても、目的のプロセスが表示されない場合は、 **[全ユーザーのプロセスを表示する] チェック ボックス** をオンにします。 これで、別のユーザー アカウントで接続している場合にプロセスが表示されるようになります。
 
 4. これらの手順でこのエラーが解決しない場合は、「[リモート コンピューターに到達できません](#dns)」を参照してください。
 
@@ -66,7 +69,7 @@ ms.locfileid: "81397377"
 
 **[プロセスにアタッチ]** ダイアログ ボックスまたはプロジェクトのプロパティで、リモート コンピューター名とポート番号が、リモート デバッガー ウィンドウに表示される名前とポート番号と一致していることを確認します。 正しくない場合は、修正してもう一度やり直してください。
 
-これらの値が正しく、メッセージで **Windows 認証**モードについて触れられている場合は、リモート デバッガーが正しい認証モードであることを確認します ( **[ツール] > [オプション]** )。
+これらの値が正しく、メッセージで **Windows 認証** モードについて触れられている場合は、リモート デバッガーが正しい認証モードであることを確認します ( **[ツール] > [オプション]** )。
 
 ## <a name="connection-with-the-remote-endpoint-was-terminated"></a><a name="connection_terminated"></a> リモート エンドポイントとの接続が終了しました
 

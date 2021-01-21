@@ -1,5 +1,7 @@
 ---
 title: アプリのアーキテクチャをモデル化する &apos;
+description: ソフトウェアシステムまたはアプリケーションの全体的な構造と動作の説明の一部として、Visual Studio でモデルを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 449f528264f2101a45bc809a5002ce4e88659d05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711730"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97361028"
 ---
 # <a name="model-your-app39s-architecture"></a>アプリ&#39;s アーキテクチャのモデル化
 ソフトウェア システムまたはアプリケーションがユーザーのニーズに確実に対応するように、ソフトウェア システムまたはアプリケーションの全体的な構造および動作の記述の一部として Visual Studio でモデルを作成することができます。 モデルを使用して、設計全体で使用するパターンを記述することもできます。 これらのモデルは、既存のアーキテクチャの理解、変更についての話し合い、開発者の意図の伝達に役立ちます。

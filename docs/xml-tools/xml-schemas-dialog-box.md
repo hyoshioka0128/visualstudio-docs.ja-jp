@@ -1,5 +1,7 @@
 ---
 title: XML スキーマ
+description: XML ドキュメントに関連付ける XML スキーマ定義言語 (XSD) スキーマの選択に使用する、[XML スキーマ] ダイアログ ボックスについて学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 26703b821d2748612f461a35591a831488807dbb
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592335"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94351402"
 ---
 # <a name="xml-schemas-dialog-box"></a>[XML スキーマ] ダイアログ ボックス
 

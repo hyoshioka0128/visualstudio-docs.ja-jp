@@ -1,32 +1,34 @@
 ---
 title: コード スタイルのオプションとコードのクリーンアップ
+description: Visual Studio を構成して、コード クリーンアップ (Visual Studio 2019) およびドキュメントのフォーマット (Visual Studio 2017) コマンドを使用してコード スタイル設定を適用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9172fff2dde1528c5ea382aea996d316e0738ea0
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312588"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189746"
 ---
 # <a name="code-style-preferences"></a>コードのスタイル設定
 
-[EditorConfig ファイル](#code-styles-in-editorconfig-files)を使用し、プロジェクト別にコード スタイル設定を定義できます。あるいは、テキスト エディターの [ **[オプション]** ページ](#code-styles-in-the-options-dialog-box)で、Visual Studio で編集するすべてのコードを対象にできます。 C# コードの場合、**コードのクリーンアップ** (Visual Studio 2019) コマンドと**ドキュメントのフォーマット** (Visual Studio 2017) コマンドを使用し、これらのコード スタイル設定を適用するように Visual Studio を構成することもできます。
+[EditorConfig ファイル](#code-styles-in-editorconfig-files)を使用し、プロジェクト別にコード スタイル設定を定義できます。あるいは、テキスト エディターの [ **[オプション]** ページ](#code-styles-in-the-options-dialog-box)で、Visual Studio で編集するすべてのコードを対象にできます。 C# コードの場合、**コードのクリーンアップ** (Visual Studio 2019) コマンドと **ドキュメントのフォーマット** (Visual Studio 2017) コマンドを使用し、これらのコード スタイル設定を適用するように Visual Studio を構成することもできます。
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac でのエディターの動作](/visualstudio/mac/editor-behavior)に関するページを参照してください。
 
 ## <a name="code-styles-in-editorconfig-files"></a>EditorConfig ファイルのコード スタイル
 
-.NET に対する[コード スタイルの設定](create-portable-custom-editor-options.md)は、[EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ファイルをプロジェクトに追加することで指定できます。 EditorConfig ファイルは、Visual Studio のパーソナル化アカウントではなく、コードベースに関連付けられます。 EditorConfig ファイル内の設定は、 **[オプション]** ダイアログ ボックスで指定されているコード スタイルよりも優先されます。 リポジトリまたはプロジェクトに対するすべての共同作成者にコーディング スタイルを適用する場合は、EditorConfig ファイルを使用します。
+.NET に対する[コード スタイルの設定](create-portable-custom-editor-options.md)は、[EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) ファイルをプロジェクトに追加することで指定できます。 EditorConfig ファイルは、Visual Studio のパーソナル化アカウントではなく、コードベースに関連付けられます。 EditorConfig ファイル内の設定は、 **[オプション]** ダイアログ ボックスで指定されているコード スタイルよりも優先されます。 リポジトリまたはプロジェクトに対するすべての共同作成者にコーディング スタイルを適用する場合は、EditorConfig ファイルを使用します。
 
 ::: moniker range=">=vs-2019"
 
@@ -58,23 +60,31 @@ EditorConfig ファイルは手動で入力できます。または、Visual Stu
 
 ### <a name="preference-and-severity"></a>優先順位と重大度
 
-各行のドロップダウンを使用して、このページのコード スタイル設定ごとに **[優先順位]** と **[重大度レベル]** の値を設定できます。 重大度は、 **[リファクタリングのみ]** 、 **[提案]** 、 **[警告]** 、または **[エラー]** に設定できます。 コード スタイルの[クイック アクション](../ide/quick-actions.md)を有効にする場合、 **[重大度レベル]** の設定は確実に **[リファクタリングのみ]** 以外に設定してください。 **クイック アクション**の電球 ![電球](media/light-bulb-dropdown.png)、エラー電球 ![エラー電球](media/error-bulb.png)、ねじ回し ![ねじ回し](media/screwdriver.png) アイコンは、優先されていないスタイルが使用されていて、 **[クイック アクション]** 一覧のオプションを選ぶと優先されるスタイルにコードが自動的に再作成されると表示されます。
+各行のドロップダウンを使用して、このページのコード スタイル設定ごとに **[優先順位]** と **[重大度レベル]** の値を設定できます。 重大度は、 **[リファクタリングのみ]** 、 **[提案]** 、 **[警告]** 、または **[エラー]** に設定できます。 コード スタイルの [クイック アクション](../ide/quick-actions.md)を有効にする場合、 **[重大度レベル]** の設定は確実に **[リファクタリングのみ]** 以外に設定してください。 **クイック アクション** の電球 :::image type="icon" source="media/light-bulb-dropdown.png":::、エラーの電球 :::image type="icon" source="media/error-bulb.png":::、またはねじ回し :::image type="icon" source="media/screwdriver.png"::: のアイコンは、優先されていないスタイルが使用されている場合に表示され、 **[クイック アクション]** の一覧でオプションを選択して、優先されるスタイルに合わせてコードを自動的に再作成することができます。
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>ビルド時にコード スタイルを適用する
+
+.NET 5.0 RC2 SDK が含まれている Visual Studio 2019 バージョン 16.8 以降、すべての .NET プロジェクトに対して、[ビルド時、.NET のコーディング規則を適用](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis)できます。 ビルド時、.NET のスタイルに違反すると、"IDE" プレフィックスが付いた警告またはエラーが表示されます。 それにより、自分のコードベースで一貫性のあるコード スタイルを厳密に適用できます。
+
+::: moniker-end
 
 ## <a name="apply-code-styles"></a>コード スタイルの適用
 
 ::: moniker range="vs-2017"
 
-正規の書式設定 (字下げなど) に沿って (EditorConfig ファイルまたは **[コード スタイル]** オプションから) コード スタイル設定を適用するように**ドキュメントのフォーマット** コマンドを構成できます ( **[編集]**  >  **[詳細]**  >  **[ドキュメントのフォーマット]** )。 プロジェクトに *.editorconfig* ファイルが存在する場合、その設定が優先されます。
+正規の書式設定 (字下げなど) に沿って (EditorConfig ファイルまたは **[コード スタイル]** オプションから) コード スタイル設定を適用するように **ドキュメントのフォーマット** コマンドを構成できます ( **[編集]**  >  **[詳細]**  >  **[ドキュメントのフォーマット]** )。 プロジェクトに *.editorconfig* ファイルが存在する場合、その設定が優先されます。
 
 > [!NOTE]
 > **ドキュメントのフォーマット** コマンドでコード スタイルを適用することは、C# コード ファイルの場合にのみ可能です。 これは試験段階の機能です。
 
-[[書式設定] オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で**ドキュメントのフォーマット**に適用する設定を構成します。
+[[書式設定] オプション ページ](reference/options-text-editor-csharp-formatting.md#format-document-settings)で **ドキュメントのフォーマット** に適用する設定を構成します。
 
 ![Visual Studio 2017 のドキュメントのフォーマットのコード スタイル設定](media/format-document-settings-experiment.png)
 
 > [!TIP]
-> 重大度が**なし**で構成されているルールは、コードのクリーンアップには関係しませんが、 **[クイック アクションとリファクタリング]** メニューを使用して個別に適用できます。
+> 重大度が **なし** で構成されているルールは、コードのクリーンアップには関係しませんが、**[クイック アクションとリファクタリング]** メニューを使用して個別に適用できます。
 
 初めて **[ドキュメントのフォーマット]** コマンドをトリガーするときに、黄色の情報バーが表示され、コードのクリーンアップ設定を構成するように求められます。
 
@@ -87,13 +97,13 @@ C# コード ファイルの場合、Visual Studio 2019 では、エディター
 ![Visual Studio 2019 でコードのクリーンアップを実行する](media/execute-code-cleanup.png)
 
 > [!TIP]
-> 重大度が**なし**で構成されているルールは、コードのクリーンアップには関係しませんが、 **[クイック アクションとリファクタリング]** メニューを使用して個別に適用できます。
+> 重大度が **なし** で構成されているルールは、コードのクリーンアップには関係しませんが、**[クイック アクションとリファクタリング]** メニューを使用して個別に適用できます。
 
-まず、 **[コード クリーンアップの構成]** ダイアログ ボックスで (2 つのプロファイルのいずれかで) 適用するコード スタイルを構成します。 このダイアログ ボックスを開くには、コードのクリーンアップのほうきアイコンの横にある展開用の矢印をクリックし、 **[コード クリーンアップの構成]** を選択します。
+まず、**[コード クリーンアップの構成]** ダイアログ ボックスで (2 つのプロファイルのいずれかで) 適用するコード スタイルを構成します。 このダイアログ ボックスを開くには、コードのクリーンアップのほうきアイコンの横にある展開用の矢印をクリックし、**[コード クリーンアップの構成]** を選択します。
 
 ![Visual Studio 2019 のコード クリーンアップの構成](media/configure-code-cleanup.png)
 
-コードのクリーンアップを構成した後、ほうきアイコンをクリックするか、または **Ctrl**+**K** キー、**Ctrl**+**E** キーを順に押して、コードのクリーンアップを実行します。 プロジェクト全体またはソリューション全体に対して、コードのクリーンアップを実行することもできます。 **ソリューション エクスプローラー**でプロジェクトまたはソリューションの名前を右クリックし、 **[分析とコードのクリーンアップ]** を選択して、 **[コードのクリーンアップの実行]** を選択します。
+コードのクリーンアップを構成した後、ほうきアイコンをクリックするか、または **Ctrl**+**K** キー、**Ctrl**+**E** キーを順に押して、コードのクリーンアップを実行します。 プロジェクト全体またはソリューション全体に対して、コードのクリーンアップを実行することもできます。 **ソリューション エクスプローラー** でプロジェクトまたはソリューションの名前を右クリックし、**[分析とコードのクリーンアップ]** を選択して、**[コードのクリーンアップの実行]** を選択します。
 
 ![プロジェクト全体またはソリューション全体に対してコードのクリーンアップを実行する](media/run-code-cleanup-project-solution.png)
 
@@ -101,8 +111,8 @@ C# コード ファイルの場合、Visual Studio 2019 では、エディター
 
 ::: moniker-end
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [クイック アクション](../ide/quick-actions.md)
-- [EditorConfig の .NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig の .NET コーディング規則の設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [エディターの動作 (Visual Studio for Mac)](/visualstudio/mac/editor-behavior)

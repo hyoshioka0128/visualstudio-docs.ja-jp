@@ -1,5 +1,7 @@
 ---
 title: デバッガーコンポーネント |Microsoft Docs
+description: VSPackage として実装されている Visual Studio デバッガーによって管理されるデバッグセッションを構成する要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739017"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914102"
 ---
 # <a name="debugger-components"></a>デバッガーコンポーネント
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッガーは VSPackage として実装され、デバッグセッション全体を管理します。 デバッグセッションは、次の要素で構成されています。
@@ -56,9 +58,9 @@ ms.locfileid: "80739017"
  [型ビジュアライザーとカスタムビューアー](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 型ビジュアライザーとカスタムビューアーの概要、および式エバリュエーターが両方をサポートするために果たす役割について説明します。
 
 ## <a name="related-sections"></a>関連項目
- [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md) デバッグアーキテクチャの主要概念について説明します。
+ [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md) 主要なデバッグ アーキテクチャの概念について説明します。
 
- [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md) コード、ドキュメント、および式の評価コンテキスト内で、DE を同時に操作する方法について説明します。 3つのコンテキストのそれぞれについて、場所、位置、または評価に関連する評価について説明します。
+ [デバッガー コンテキスト](../../extensibility/debugger/debugger-contexts.md) コード、ドキュメント、式の評価コンテキスト内で DE がどのように同時操作されるかについて説明します。 場所、位置、それに関連する評価の 3 つのコンテキストそれぞれについて説明します。
 
  [デバッグタスク](../../extensibility/debugger/debugging-tasks.md) プログラムの起動や式の評価など、さまざまなデバッグタスクへのリンクが含まれています。
 

@@ -1,5 +1,7 @@
 ---
 title: ItemMetadata 要素 (MSBuild) | Microsoft Docs
+description: メタデータの値を保持するユーザー定義の項目メタデータ キーが格納される MSBuild の ItemMetadata 要素について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,18 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aba274068d8cba4f22526fdefac36d6c75f9f1e2
+ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633617"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92903590"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 要素 (MSBuild)
 
 ユーザー定義の項目メタデータのキーを格納します。項目メタデータの値が含まれます。 1 つの項目が、任意の数のメタデータ キー/値ペアを含むことができます。
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
  \<Item>
 
 ## <a name="syntax"></a>構文
@@ -42,19 +44,19 @@ ms.locfileid: "77633617"
 
 ### <a name="attributes"></a>属性
 
-|属性|[説明]|
+|属性|説明|
 |---------------|-----------------|
 |`Condition`|省略可能な属性です。<br /><br /> 評価する条件です。 詳細については、「[条件](../msbuild/msbuild-conditions.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
- ありません。
+ なし。
 
 ### <a name="parent-elements"></a>親要素
 
-|要素|[説明]|
+|要素|説明|
 |-------------|-----------------|
-|[項目](../msbuild/item-element-msbuild.md)|ビルド プロセスに対する入力を定義するユーザー定義の要素。|
+|[Item](../msbuild/item-element-msbuild.md)|ビルド プロセスに対する入力を定義するユーザー定義の要素。|
 
 ## <a name="text-value"></a>テキスト値
 
@@ -74,7 +76,7 @@ ms.locfileid: "77633617"
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [プロジェクト ファイル スキーマ リファレンス](../msbuild/msbuild-project-file-schema-reference.md)
-- [アイテム](../msbuild/msbuild-items.md)
+- [項目](../msbuild/msbuild-items.md)

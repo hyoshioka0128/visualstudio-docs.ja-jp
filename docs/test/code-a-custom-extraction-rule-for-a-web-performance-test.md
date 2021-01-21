@@ -1,5 +1,7 @@
 ---
-title: Web パフォーマンス テストのカスタム抽出規則のコーディング
+title: カスタム抽出規則のコーディング (Web パフォーマンス テスト)
+description: 抽出ルール クラス ExtractionRule から派生した独自の抽出ルールを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -13,12 +15,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 00001662667ed7020909d23cf3cfbd4b8437eabf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e03a289ee95e9aefddb49154d1199fffa31ce3ca
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288885"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442457"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Web パフォーマンス テストのカスタム抽出規則のコーディング
 
@@ -46,7 +48,7 @@ ms.locfileid: "85288885"
 
 6. (省略可能) テスト プロジェクトで、カスタム抽出規則を含むクラス ライブラリ プロジェクトへの参照を追加します。
 
-7. テスト プロジェクトで、**Web パフォーマンス テスト エディター**を使用して Web パフォーマンス テストを開きます。
+7. テスト プロジェクトで、**Web パフォーマンス テスト エディター** を使用して Web パフォーマンス テストを開きます。
 
 8. カスタム抽出規則を追加するには、Web パフォーマンス テスト要求を右クリックし、 **[抽出規則の追加]** をクリックします。
 

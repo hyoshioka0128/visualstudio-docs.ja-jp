@@ -1,5 +1,7 @@
 ---
 title: SDKReference 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: SDKReference 要素について、および項目テンプレートが SDK 参照を使用することを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f43c813e688c1e175f1d36e6f06125f92404c48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a1272a4765559fcfcde1aa60c57099b5d707f46
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700164"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94901688"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 要素 (Visual Studio テンプレート)
 項目テンプレートが SDK 参照を使用することを指定します。
@@ -42,12 +44,12 @@ ms.locfileid: "80700164"
 
 |要素|説明|
 |-------------|-----------------|
-|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
+|[参照](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このテキストは、項目テンプレートがインスタンス化されたときに、プロジェクトに追加する SDK 参照を指定します。
 
 ```xml
@@ -60,7 +62,7 @@ ms.locfileid: "80700164"
 ...
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [References 要素 (Visual Studio テンプレート)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 要素 (Visual Studio テンプレート)](../extensibility/reference-element-visual-studio-templates.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

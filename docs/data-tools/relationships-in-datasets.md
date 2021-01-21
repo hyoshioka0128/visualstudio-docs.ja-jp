@@ -1,5 +1,6 @@
 ---
 title: データセット間にリレーションシップを作成する
+description: Visual Studio のデータセット間にリレーションシップを作成します。 DataRelation オブジェクトと制約について説明します。 データセットマネージャーでデータリレーションシップを手動で作成します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,15 +17,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037687"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94436095"
 ---
 # <a name="create-relationships-between-datasets"></a>データセット間にリレーションシップを作成する
-関連するデータテーブルを含むデータセット <xref:System.Data.DataRelation> は、オブジェクトを使用して、テーブル間の親子関係を表し、相互に関連するレコードを返します。 **データソース構成ウィザード**または**データセットデザイナー**を使用して、関連テーブルをデータセットに追加すると、オブジェクトが作成および構成さ <xref:System.Data.DataRelation> れます。
+関連するデータテーブルを含むデータセット <xref:System.Data.DataRelation> は、オブジェクトを使用して、テーブル間の親子関係を表し、相互に関連するレコードを返します。 **データソース構成ウィザード** または **データセットデザイナー** を使用して、関連テーブルをデータセットに追加すると、オブジェクトが作成および構成さ <xref:System.Data.DataRelation> れます。
 
 オブジェクトは、 <xref:System.Data.DataRelation> 次の2つの関数を実行します。
 
@@ -69,17 +70,17 @@ Unique 制約を実装するには、単 <xref:System.Data.DataColumn.Unique%2A>
 オブジェクトを作成するときに、 <xref:System.Data.DataRelation> リレーションシップを適用するためにのみ使用することを指定するオプションがあります。これは、関連するレコードへのアクセスにも使用されないことを示します。 このオプションを使用すると、より効率的で、関連レコード機能を持つ1つよりも少数のメソッドを含むデータセットを生成できます。 ただし、関連するレコードにアクセスすることはできません。 たとえば、制約のみのリレーションシップでは、子レコードが残っている親レコードを削除することはできません。また、親を介して子レコードにアクセスすることもできません。
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>データセットデザイナーでのデータリレーションシップの手動作成
-Visual Studio のデータデザインツールを使用してデータテーブルを作成する場合、データのソースから情報を収集できる場合、リレーションシップは自動的に作成されます。 **ツールボックス**の [データ**セット**] タブから手動でデータテーブルを追加した場合は、リレーションシップを手動で作成することが必要になる場合があります。 プログラムによるオブジェクトの作成の詳細につい <xref:System.Data.DataRelation> ては、「 [Datarelation の追加](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)」を参照してください。
+Visual Studio のデータデザインツールを使用してデータテーブルを作成する場合、データのソースから情報を収集できる場合、リレーションシップは自動的に作成されます。 **ツールボックス** の [データ **セット** ] タブから手動でデータテーブルを追加した場合は、リレーションシップを手動で作成することが必要になる場合があります。 プログラムによるオブジェクトの作成の詳細につい <xref:System.Data.DataRelation> ては、「 [Datarelation の追加](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)」を参照してください。
 
-データテーブル間のリレーションシップは、リレーションシップの一対多の側面を表すキーと無限大のグリフを使用して、 **データセットデザイナー**内の行として表示されます。 既定では、リレーションシップの名前はデザインサーフェイスに表示されません。
+データテーブル間のリレーションシップは、リレーションシップの一対多の側面を表すキーと無限大のグリフを使用して、 **データセットデザイナー** 内の行として表示されます。 既定では、リレーションシップの名前はデザインサーフェイスに表示されません。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>2つのデータテーブル間のリレーションシップを作成するには
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **データセット デザイナー** でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
-2. **リレーションシップオブジェクトを****データセット**ツールボックスからリレーションシップの子データテーブルにドラッグします。
+2. **リレーションシップオブジェクトを****データセット** ツールボックスからリレーションシップの子データテーブルにドラッグします。
 
      [ **リレーションシップ** ] ダイアログボックスが開き、[ **子テーブル** ] ボックスに、 **リレーションシップ** オブジェクトをドラッグしたテーブルが挿入されます。
 
@@ -101,10 +102,10 @@ Visual Studio のデータデザインツールを使用してデータテーブ
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>データセットデザイナーに関係名を表示するには
 
-1. **データセット デザイナー**でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
+1. **データセット デザイナー** でご自分のデータセットを開きます。 詳細については、「 [チュートリアル: データセットデザイナーでのデータセットの作成](walkthrough-creating-a-dataset-with-the-dataset-designer.md)」を参照してください。
 
 2. [ **データ** ] メニューの [ **リレーションシップラベルの表示** ] をクリックして、リレーションシップ名を表示します。 リレーションシップ名を非表示にするには、そのコマンドをオフにします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でデータセットを作成および構成する](../data-tools/create-and-configure-datasets-in-visual-studio.md)

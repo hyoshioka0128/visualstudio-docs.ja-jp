@@ -1,5 +1,7 @@
 ---
 title: デバッグ中に .NET コードを逆コンパイルする | Microsoft Docs
+description: Visual Studio でデバッグ中、.NET アセンブリからコードを生成し、埋め込みます。 埋め込まれたソース コードを抽出して表示します。
+ms.custom: SEO-VS-2020
 ms.date: 2/2/2020
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ad919b14642dff98746c194ad8c05bbb3aea529
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350564"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726736"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>デバッグ中に .NET アセンブリからソース コードを生成する
 
@@ -27,7 +29,7 @@ ms.locfileid: "85350564"
 > [!NOTE]
 > * ソース コードの生成 (逆コンパイル) は、.NET アプリケーションでのみ使用でき、オープンソースの [ILSpy](https://github.com/icsharpcode/ILSpy) プロジェクトに基づいています。
 > * 逆コンパイルは、Visual Studio 2019 16.5 以降でのみ使用できます。
-> * アセンブリまたはモジュールに [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) 属性を適用すると、Visual Studio で逆コンパイルが試みられなくなります。
+> * アセンブリまたはモジュールに [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) 属性を適用すると、Visual Studio で逆コンパイルが試みられなくなります。
 
 ## <a name="generate-source-code"></a>ソース コードを生成する
 
@@ -35,13 +37,13 @@ ms.locfileid: "85350564"
 
 ### <a name="no-symbols-loaded"></a>シンボルが読み込まれていない
 
-次の図は、**シンボルが読み込まれていない**というメッセージです。
+次の図は、**シンボルが読み込まれていない** というメッセージです。
 
 ![シンボルが読み込まれていないドキュメントのスクリーンショット](media/decompilation-no-symbol-found.png)
 
 ### <a name="source-not-found"></a>ソースが見つからない
 
-次の図は、**ソースが見つからない**というメッセージです。
+次の図は、**ソースが見つからない** というメッセージです。
 
 ![ソースが見つからないドキュメントのスクリーンショット](media/decompilation-no-source-found.png)
 
@@ -61,7 +63,7 @@ ms.locfileid: "85350564"
 
 ![その他のファイル オプションが有効になっているツールのオプション ページのスクリーンショット。](media/decompilation-tools-options-misc-files.png)
 
-抽出されたソース ファイルは、**ソリューション エクスプローラー**の [その他のファイル] に表示されます。
+抽出されたソース ファイルは、**ソリューション エクスプローラー** の [その他のファイル] に表示されます。
 
 ![[その他のファイル] が含まれるソリューション エクスプローラーのスクリーンショット。](media/decompilation-solution-explorer.png)
 
@@ -99,9 +101,9 @@ ms.locfileid: "85350564"
 
 ### <a name="just-my-code"></a>マイ コードのみ
 
-[マイ コードのみ (JMC)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) の設定を使用すると、システム、フレームワーク、ライブラリ、その他の非ユーザーの呼び出しを、Visual Studio にステップオーバーさせることができます。 デバッグ セッション中、 **[モジュール]** ウィンドウには、デバッガーでマイ コード (ユーザー コード) として扱われているコード モジュールが表示されます。
+[マイ コードのみ (JMC)](./just-my-code.md) の設定を使用すると、システム、フレームワーク、ライブラリ、その他の非ユーザーの呼び出しを、Visual Studio にステップオーバーさせることができます。 デバッグ セッション中、 **[モジュール]** ウィンドウには、デバッガーでマイ コード (ユーザー コード) として扱われているコード モジュールが表示されます。
 
-最適化されたモジュールまたはリリース モジュールを逆コンパイルすると、非ユーザー コードが生成されます。 たとえば、逆コンパイルされた非ユーザー コードでデバッガーが中断した場合、**ソースなし**ウィンドウが表示されます。 "マイ コードのみ" を無効にするには、 **[ツール]**  >  **[オプション]** (または **[デバッグ]**  >  **[オプション]** ) > **[デバッグ]**  >  **[全般]** に移動し、 **[マイ コードのみを有効にする]** をオフにします。
+最適化されたモジュールまたはリリース モジュールを逆コンパイルすると、非ユーザー コードが生成されます。 たとえば、逆コンパイルされた非ユーザー コードでデバッガーが中断した場合、**ソースなし** ウィンドウが表示されます。 "マイ コードのみ" を無効にするには、 **[ツール]**  >  **[オプション]** (または **[デバッグ]**  >  **[オプション]** ) > **[デバッグ]**  >  **[全般]** に移動し、 **[マイ コードのみを有効にする]** をオフにします。
 
 ### <a name="extracted-sources"></a>抽出されたソース
 

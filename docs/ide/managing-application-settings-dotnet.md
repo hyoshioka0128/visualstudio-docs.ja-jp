@@ -1,5 +1,7 @@
 ---
 title: アプリケーション設定の管理 (.NET)
+description: アプリケーション コードに含まれていないが、実行時に必要になるアプリケーション設定 (旧称動的プロパティ) を管理する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f62e03210e83f434bd32d08c3fe0f7b2b539155e
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75593708"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596899"
 ---
 # <a name="manage-application-settings-net"></a>アプリケーション設定の管理 (.NET)
 
@@ -72,7 +74,7 @@ ms.locfileid: "75593708"
 
 たとえば、*SpecialSettings.settings* という名前のファイルをプロジェクトに追加できます。 `SpecialSettings` クラスは `My` 名前空間に公開されませんが、 **[コードの表示]** では、 `Partial Class SpecialSettings`が格納されているカスタムの設定ファイルを読み込むことができます。
 
-**設定デザイナー**では、プロジェクト システムによって作成される *Settings.settings* ファイルがまず検索されます。このファイルは、**プロジェクト デザイナー**によって **[設定]** タブに表示される既定のファイルです。*Settings.settings* は [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトでは *My Project* フォルダーに、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトでは *Properties* フォルダーにあります。 **プロジェクト デザイナー**は、その次にプロジェクトのルート フォルダーで他の設定ファイルを検索します。 したがって、カスタム設定ファイルはここに置いておく必要があります。 プロジェクト内の他の場所に *.settings* ファイルを追加しても、**プロジェクト デザイナー**はそのファイルを見つけることができません。
+**設定デザイナー** では、プロジェクト システムによって作成される *Settings.settings* ファイルがまず検索されます。このファイルは、**プロジェクト デザイナー** によって **[設定]** タブに表示される既定のファイルです。*Settings.settings* は [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] プロジェクトでは *My Project* フォルダーに、[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] プロジェクトでは *Properties* フォルダーにあります。 **プロジェクト デザイナー** は、その次にプロジェクトのルート フォルダーで他の設定ファイルを検索します。 したがって、カスタム設定ファイルはここに置いておく必要があります。 プロジェクト内の他の場所に *.settings* ファイルを追加しても、**プロジェクト デザイナー** はそのファイルを見つけることができません。
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>実行時におけるアプリケーション設定へのアクセスまたは変更 (Visual Basic)
 
@@ -80,9 +82,9 @@ Visual Basic プロジェクトでは、`My.Settings` オブジェクトを使�
 
 ユーザーが実行時に変更するユーザー スコープ設定の値 (フォームの位置など) は、*user.config* ファイルに保存されます。 既定値は引き続き *app.config* に保存されていることに注意してください。
 
-アプリケーションのテストなど、実行時にユーザー スコープ設定を変更した後で設定を既定値にリセットする場合は、 **[同期]** をクリックします。
+アプリケーションのテストなど、実行時にユーザー スコープ設定を変更した後で設定を既定値にリセットする場合は、**[同期]** をクリックします。
 
-設定へのアクセスには、`My.Settings` オブジェクトと既定の *.settings* ファイルを使用することを強くお勧めします。 これは、**設定デザイナー**を使用して、プロパティを設定に割り当てることができ、さらにアプリケーションのシャットダウン前にユーザー設定が自動的に保存されるためです。 ただし、Visual Basic アプリケーションから設定に直接アクセスすることもできます。 その場合は、`MySettings` クラスにアクセスし、プロジェクトのルートにあるカスタムの *.settings* ファイルを使用する必要があります。 C# アプリケーションと同様、アプリケーションを終了する前にユーザー設定を保存する必要があります。この方法については、次のセクションで説明します。
+設定へのアクセスには、`My.Settings` オブジェクトと既定の *.settings* ファイルを使用することを強くお勧めします。 これは、**設定デザイナー** を使用して、プロパティを設定に割り当てることができ、さらにアプリケーションのシャットダウン前にユーザー設定が自動的に保存されるためです。 ただし、Visual Basic アプリケーションから設定に直接アクセスすることもできます。 その場合は、`MySettings` クラスにアクセスし、プロジェクトのルートにあるカスタムの *.settings* ファイルを使用する必要があります。 C# アプリケーションと同様、アプリケーションを終了する前にユーザー設定を保存する必要があります。この方法については、次のセクションで説明します。
 
 <!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>実行時におけるアプリケーション設定へのアクセスまたは変更 (C#)

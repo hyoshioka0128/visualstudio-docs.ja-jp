@@ -1,5 +1,7 @@
 ---
 title: ソリューションの構成 |Microsoft Docs
+description: プロジェクトの種類でサポートされているソリューション構成を実装する方法について説明します。これにより、Start (F5) キーと Build コマンドの動作が指示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c96b73747ef8b136a74a7256cde7fef8d1c42de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298a44eedea0681a554add74bd67ed22cad41
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705378"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876029"
 ---
 # <a name="solution-configuration"></a>ソリューション構成
 ソリューション構成には、ソリューションレベルのプロパティが格納します。 これらは、 **Start** (F5) キーと **Build** コマンドの動作を指示します。 既定では、これらのコマンドはデバッグ構成をビルドして開始します。 どちらのコマンドも、ソリューション構成のコンテキストで実行されます。 つまり、ユーザーは F5 キーを押して、アクティブなソリューションが設定を使用して構成されていることをすべてビルドすることができます。 この環境は、ビルドと実行の際にプロジェクトではなく、ソリューション用に最適化するように設計されています。
@@ -55,7 +57,7 @@ ms.locfileid: "80705378"
 
   新しいソリューション構成が追加されると、ユーザーは [標準] ツールバーの [ソリューション構成] ボックスの一覧からその構成を選択して、その構成をビルドまたは開始できます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 - [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)
 - [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)

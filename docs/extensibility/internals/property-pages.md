@@ -1,5 +1,7 @@
 ---
 title: プロパティページ |Microsoft Docs
+description: ユーザーがプロジェクトのプロパティを表示および変更できるようにするために、Visual Studio SDK で新しいプロジェクトの種類のプロパティページを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac788f51bcdc52cd39469a272909890333c5016b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706050"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875532"
 ---
 # <a name="property-pages"></a>[プロパティ ページ]
-ユーザーは、プロパティページを使用して、プロジェクトの構成に依存し、依存しないプロパティを表示および変更できます。 選択したオブジェクトのプロパティページビューを提供するオブジェクトの**プロパティウィンドウまた**はソリューションエクスプローラーツールバーで、[**プロパティページ**] ボタンが有効になります。 プロパティページは環境によって作成され、ソリューションとプロジェクトで使用できます。 ただし、構成に依存するプロパティを使用するプロジェクトアイテムに対しても使用できます。 この機能は、プロジェクト内のファイルが、正しくビルドするために異なるコンパイラスイッチ設定を必要とする場合に使用できます。
+ユーザーは、プロパティページを使用して、プロジェクトの構成に依存し、依存しないプロパティを表示および変更できます。 選択したオブジェクトのプロパティページビューを提供するオブジェクトの **プロパティウィンドウまた** はソリューションエクスプローラーツールバーで、[**プロパティページ**] ボタンが有効になります。 プロパティページは環境によって作成され、ソリューションとプロジェクトで使用できます。 ただし、構成に依存するプロパティを使用するプロジェクトアイテムに対しても使用できます。 この機能は、プロジェクト内のファイルが、正しくビルドするために異なるコンパイラスイッチ設定を必要とする場合に使用できます。
 
 ## <a name="using-property-pages"></a>プロパティページの使用
  プロパティページが既に表示されていて、選択内容が変更された場合 (たとえば、ソリューションからプロジェクトに変更した場合)、ページに表示される情報が変更され、新しい選択項目のプロパティが表示されます。 プロパティページをサポートするプロパティがオブジェクトに存在しない場合、プロパティページは空になります。
@@ -77,7 +79,7 @@ ms.locfileid: "80706050"
 
    <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>プロジェクト階層とプロジェクト項目、または選択した項目を取得するメソッドを実装します。 DTE からは、 `SelectedItems.SelectedItem.Project` メソッドとメソッドを使用し `SelectedItems.SelectedItem.ProjectItem` ます。 コアドキュメントには、これらの見出しの下にサンプルコードがあり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 - [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)

@@ -1,5 +1,7 @@
 ---
-title: 自動テスト用のテスト コントローラーおよびテスト エージェントのロール
+title: テスト コントローラー ロールとテスト エージェント ロール
+description: Visual Studio で、テスト コントローラーとテスト エージェントを使用して、複数のコンピューターにテストを分散するテスト設定を作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c059510dc39472d5c981f93e4d7259545b809d38
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75591191"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95442444"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>ロールをテスト コントローラーとテスト エージェントに割り当てる
 
@@ -33,7 +35,7 @@ ms.locfileid: "75591191"
 
 ## <a name="to-create-and-configure-a-test-setting"></a>テスト設定を作成および構成するには
 
-1. **ソリューション エクスプローラー**で、 **[ソリューション項目]** を右クリックし、 **[追加]** をポイントして、 **[新しい項目]** を選択します。
+1. **ソリューション エクスプローラー** で、 **[ソリューション項目]** を右クリックし、 **[追加]** をポイントして、 **[新しい項目]** を選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが表示されます。
 
@@ -43,7 +45,7 @@ ms.locfileid: "75591191"
 
 4. **[追加]** をクリックします。
 
-     **ソリューション エクスプローラー**の **[ソリューション項目]** フォルダーに、*TestSettingDistributedTestWalkthrough.testsettings* という新しいテスト ファイルが表示されます。
+     **ソリューション エクスプローラー** の **[ソリューション項目]** フォルダーに、*TestSettingDistributedTestWalkthrough.testsettings* という新しいテスト ファイルが表示されます。
 
      **[テストの設定]** ダイアログ ボックスが表示されます。 **[全般]** ページが選択されています。
 
@@ -89,7 +91,7 @@ ms.locfileid: "75591191"
 5. (省略可能) コンピューターで 64 ビット バージョンの Microsoft Windows を実行しており、**Any CPU** 構成を使用してテストをコンパイルした場合は、 **[32 ビット プロセスまたは 64 ビット プロセスでテストを実行]** ドロップダウン リストの **[64 ビット コンピューター上で 64 ビット プロセスでテストを実行]** をクリックします。
 
     > [!TIP]
-    > 柔軟性を最大限に高めるには、テスト プロジェクトを**任意の CPU** 構成でコンパイルします。 これにより、32 ビット エージェントと 64 ビット エージェントの両方で実行できます。 **64 ビット**構成でテスト プロジェクトをコンパイルしても、特に利点はありません。
+    > 柔軟性を最大限に高めるには、テスト プロジェクトを **任意の CPU** 構成でコンパイルします。 これにより、32 ビット エージェントと 64 ビット エージェントの両方で実行できます。 **64 ビット** 構成でテスト プロジェクトをコンパイルしても、特に利点はありません。
 
 6. 新しいテストの設定を保存するには、 **[適用]** をクリックします。
 

@@ -1,5 +1,7 @@
 ---
 title: コマンドの実装 |Microsoft Docs
+description: Visual Studio でのコマンドの実装、VSPackage でコマンドグループを設定する方法、コマンドを追加する方法、コマンドを登録する方法、および実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +12,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7a536120c81c154cf894717a2af6a4e048d56e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76b1f564c883d1ce03748f560b595cfa44a28b37
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709576"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96304812"
 ---
 # <a name="command-implementation"></a>コマンドの実装
 VSPackage でコマンドを実装するには、次のタスクを実行する必要があります。
 
-1. *. Vsct*ファイルで、コマンドグループを設定し、コマンドを追加します。 詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
+1. *. Vsct* ファイルで、コマンドグループを設定し、コマンドを追加します。 詳細については、「 [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)」を参照してください。
 
 2. コマンドを Visual Studio に登録します。
 

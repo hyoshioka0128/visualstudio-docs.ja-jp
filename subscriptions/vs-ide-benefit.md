@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 04/17/2020
+ms.date: 12/02/2020
 ms.topic: how-to
-description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します。
-ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します
+ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
+ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904445"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538060"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典
 
@@ -26,7 +26,7 @@ IDE をダウンロードするには:
 1. [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインします。
 2. [ツール] セクションで、Visual Studio IDE のタイルを見つけて、特典タイルの下部にある **[ダウンロード]** リンクをクリックします。  [[ダウンロード]](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) ページからダウンロードすることもできます。
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise タイル](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Visual Studio Enterprise タイル](_img/vs-ide-experience/vs-ide-tile.png "Visual Studio タイルの [ダウンロード] をクリックして Visual Studio をインストールします。")
 
 3. Visual Studio のダウンロード結果ページにリダイレクトされ、そこで IDE をダウンロードして、ライセンス認証するためのプロダクト キーを入手できます。 青い **[キーを取得]** リンクをクリックして、プロダクト キーを要求することもできます。あるいは、後から [[プロダクト キー]](https://my.visualstudio.com/productkeys) ページでキーを要求できます。
 4. [ダウンロードの結果] ページの [詳細] タブで、次のようにします。
@@ -34,19 +34,19 @@ IDE をダウンロードするには:
    - 言語を選びます。
 5. 青いダウンロード ボタンをクリックします。
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise ダウンロードの詳細](_img/vs-ide-experience/vs-ide-download-details.png)
+   > ![Visual Studio Enterprise ダウンロードの詳細](_img/vs-ide-experience/vs-ide-download-details.png "[ダウンロード] ボタンをクリックして、ダウンロードを開始します。")
 6. ダウンロードしたインストーラー パッケージをクリックします。  すぐにインストールするように指示されたら、 **[実行]** をクリックします。
 7. [ユーザー アカウント制御] ダイアログで、 **[はい]** をクリックします。
 8. **[続行]** をクリックしてライセンス条項に同意します。
 9. インストーラーが開始したら、目的のワークロード、個々のコンポーネント、言語パックを、対応するタブで選びます。
    > [!div class="mx-imgBorder"]
-   > ![Visual Studio Enterprise をカスタマイズする](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
+   > ![Visual Studio Enterprise をカスタマイズする](_img/vs-ide-experience/vs-ide-customize-install-cropped.png "ワークロードやその他のコンポーネントの選択を行います。")
 
 10. **[インストール]** をクリックします。
 
 11. インストールが完了したら、インストールを変更するか、Visual Studio を起動することができます。  開始するには **[起動]** をクリックします。  複数のバージョンがインストールされている場合、それらが一覧表示されます。
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise を起動する](_img/vs-ide-experience/vs-ide-versions.png)
+    > ![Visual Studio Enterprise を起動する](_img/vs-ide-experience/vs-ide-versions.png "[起動] をクリックして Visual Studio を起動します。")
 
 12. Visual Studio サブスクリプションに関連付けられているアカウントでサインインします。
 
@@ -55,7 +55,7 @@ IDE をダウンロードするには:
 14. Visual Studio が開きます。 Visual Studio を使う準備ができました。
 
     > [!div class="mx-imgBorder"]
-    > ![Visual Studio Enterprise を使い始める](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    > ![Visual Studio Enterprise を使い始める](_img/vs-ide-experience/vs-ide-start-cropped.png "Visual Studio へようこそ。")
 
 
 ## <a name="eligibility"></a>特典を受ける条件
@@ -63,9 +63,9 @@ IDE をダウンロードするには:
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
-| Visual Studio Enterprise with GitHub Enterprise   | VL | 使用可能       |  はい          |
+| Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 使用可能       |  はい          |
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | 使用可能                                                            |  はい          |
-| Visual Studio Professional with GitHub Enterprise | VL   | 使用可能              |  はい          |
+| Visual Studio Professional Subscription with GitHub Enterprise | VL   | 使用可能              |  はい          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 
@@ -83,10 +83,10 @@ IDE をダウンロードするには:
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
-- [Visual Studio ドキュメント](https://docs.microsoft.com/visualstudio/)
-- [Azure DevOps ドキュメント](https://docs.microsoft.com/azure/devops/)
-- [Azure ドキュメント](https://docs.microsoft.com/azure/)
-- [Microsoft 365 ドキュメント](https://docs.microsoft.com/microsoft-365/)
+- [Visual Studio ドキュメント](/visualstudio/)
+- [Azure DevOps ドキュメント](/azure/devops/)
+- [Azure ドキュメント](/azure/)
+- [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次の手順
 Visual Studio をインストールしたら、次のような他の重要な特典を必ずアクティブにしてください。

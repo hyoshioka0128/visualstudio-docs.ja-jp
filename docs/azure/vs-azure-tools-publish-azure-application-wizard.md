@@ -3,22 +3,20 @@ title: Azure クラウド サービスを発行する
 description: Visual Studio の Azure アプリケーションの公開ウィザードで、さまざまな設定を構成する方法について説明します。
 author: ghogen
 manager: jillfra
-assetId: 7d8f1ac9-e439-47e0-a183-0642c4ea1920
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 477b7860c320730d6362cdb7e0fcb46ad3bc7d17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280532"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902312"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio の Azure アプリケーションの公開ウィザードの使用
 
-Visual Studio で Web アプリケーションをデプロイしたら、**Azure アプリケーションの公開**ウィザードを使用して、そのアプリケーションを Azure クラウド サービスに発行できます。
+Visual Studio で Web アプリケーションをデプロイしたら、**Azure アプリケーションの公開** ウィザードを使用して、そのアプリケーションを Azure クラウド サービスに発行できます。
 
 > [!Note]
 > この記事では Web サイトではなくクラウド サービスへのデプロイについて説明します。 Web サイトへのデプロイの詳細については、 [Azure の Web サイトのデプロイ方法](https://social.msdn.microsoft.com/Search/windowsazure?query=How%20to%20Deploy%20an%20Azure%20Web%20Site&Refinement=138&ac=4#refinementChanges=117&pageNumber=1&showMore=false)に関するページを参照してください。
@@ -31,15 +29,15 @@ Azure アプリケーションの公開ウィザードには、使用する Visu
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューの **[発行]** を選択します。
+1. **ソリューション エクスプローラー** でそのプロジェクトを右クリックし、コンテキスト メニューの **[発行]** を選択します。
 
 **Azure で有効になっていない Web アプリケーション プロジェクトを使用する場合:**
 
 1. Visual Studio で Azure クラウド サービス プロジェクトを開くか新たに作成します。
 
-1. **ソリューション エクスプローラー**でそのプロジェクトを右クリックし、コンテキスト メニューの **[変換]** > **[Microsoft Azure クラウド サービス プロジェクトに変換]** を選択します。
+1. **ソリューション エクスプローラー** でそのプロジェクトを右クリックし、コンテキスト メニューの **[変換]** > **[Microsoft Azure クラウド サービス プロジェクトに変換]** を選択します。
 
-1. **ソリューション エクスプローラー**で新しく作成された Azure プロジェクトを右クリックし、コンテキスト メニューの **[発行]** を選択します。
+1. **ソリューション エクスプローラー** で新しく作成された Azure プロジェクトを右クリックし、コンテキスト メニューの **[発行]** を選択します。
 
 ## <a name="sign-in-page"></a>サインイン ページ
 
@@ -97,7 +95,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 ## <a name="summary-page"></a>概要ページ
 
-![まとめ](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
+![概要ページ](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
 **[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、**[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、**[ターゲット プロファイル]** の一覧を開き、**[&lt;管理…&gt;]** を選択します。
 

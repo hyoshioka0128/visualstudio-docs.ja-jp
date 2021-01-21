@@ -1,5 +1,7 @@
 ---
 title: '方法 : プロジェクトの依存関係を作成および削除する'
+description: Visual Studio を使用すれば、他のプロジェクトに対する自分のプロジェクトの依存関係をコード上で作成したり、削除したりできます。そのしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b2a99e297b4ce7291c0dd94947155794cf8c3d4
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92137026"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>方法 : プロジェクトの依存関係を作成および削除する
 
@@ -31,7 +33,7 @@ ms.locfileid: "85284465"
 
 ## <a name="to-assign-dependencies-to-projects"></a>プロジェクトに依存関係を割り当てるには
 
-1. **ソリューション エクスプローラー**でプロジェクトを選択します。
+1. **ソリューション エクスプローラー** でプロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[プロジェクトの依存関係]** を選びます。
 
@@ -48,7 +50,7 @@ ms.locfileid: "85284465"
 
 ## <a name="to-remove-dependencies-from-projects"></a>プロジェクトから依存関係を削除するには
 
-1. **ソリューション エクスプローラー**でプロジェクトを選択します。
+1. **ソリューション エクスプローラー** でプロジェクトを選択します。
 
 2. **[プロジェクト]** メニューの **[プロジェクトの依存関係]** を選びます。
 
@@ -61,7 +63,7 @@ ms.locfileid: "85284465"
 
 4. **[依存先]** フィールドで、このプロジェクトの依存関係ではなくなった他のプロジェクトの横にあるチェック ボックスをオフにします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio でのプロジェクトとソリューションのビルドおよびクリーン](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [コンパイルとビルド](../ide/compiling-and-building-in-visual-studio.md)

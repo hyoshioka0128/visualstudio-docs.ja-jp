@@ -1,5 +1,7 @@
 ---
 title: カスタムパラメーター |Microsoft Docs
+description: ウィザードの開始後にウィザードの操作を制御するカスタムパラメーターを作成する方法については、.vsz ファイルを変更する方法に関するページを参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +13,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd52a49daa7d57a21d8cb0896f7108efa09e32b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708946"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96328445"
 ---
 # <a name="custom-parameters"></a>カスタムパラメーター
-カスタムパラメーターは、ウィザードが開始された後のウィザードの操作を制御します。 関連する .vsz ファイルは、統合開発環境 (IDE: integrated development environment) によってパッケージ化され、ウィザードの開始時に文字列の配列としてウィザードに渡されるユーザー定義パラメーターの配列を提供し*ます。* 次に、ウィザードは文字列の配列を解析し、情報を使用してウィザードの実際の操作を制御します。 この方法では、 *.vsz* ファイルの内容に応じて、ウィザードを使用して機能をカスタマイズできます。
+カスタムパラメーターは、ウィザードが開始された後のウィザードの操作を制御します。 関連する .vsz ファイルは、統合開発環境 (IDE: integrated development environment) によってパッケージ化され、ウィザードの開始時に文字列の配列としてウィザードに渡されるユーザー定義パラメーターの配列を提供し *ます。* 次に、ウィザードは文字列の配列を解析し、情報を使用してウィザードの実際の操作を制御します。 この方法では、 *.vsz* ファイルの内容に応じて、ウィザードを使用して機能をカスタマイズできます。
 
  一方、コンテキストパラメーターは、ウィザードを起動したときのプロジェクトの状態を定義します。 詳細については、「 [コンテキストパラメーター](../../extensibility/internals/context-parameters.md)」を参照してください。
 
@@ -35,7 +37,7 @@ Param="PREPROCESS_FUNCTION = CanAddATLSupport"
 Param="PROJECT_TYPE = CSPROJ"
 ```
 
- *.Vsz*ファイルの作成者は、パラメーターの値を追加します。 ユーザーが [**ファイル**] メニューまたは**ソリューションエクスプローラー**内のプロジェクトを右クリックして [**新しいプロジェクト**] または [**新しい項目の追加**] を選択すると、IDE によってこれらの値が文字列の配列に収集されます。 次に、IDE はフラグが設定されたプロジェクトのメソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> プロジェクトは <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> ウィザードを実行して結果を返すメソッドを呼び出します。
+ *.Vsz* ファイルの作成者は、パラメーターの値を追加します。 ユーザーが [**ファイル**] メニューまたは **ソリューションエクスプローラー** 内のプロジェクトを右クリックして [**新しいプロジェクト**] または [**新しい項目の追加**] を選択すると、IDE によってこれらの値が文字列の配列に収集されます。 次に、IDE はフラグが設定されたプロジェクトのメソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A> <xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION> プロジェクトは <xref:EnvDTE.IVsExtensibility.RunWizardFile%2A> ウィザードを実行して結果を返すメソッドを呼び出します。
 
  このウィザードでは、文字列の配列を解析し、文字列に対して適切に動作します。 このようにして、カスタムパラメーターを実装することで、さまざまな機能を実行する1つのウィザードを作成できます。 言い換えると、ウィザードの中には、3つの異なる *.vsz* ファイルが含まれていることがあります。 各ファイルは、さまざまな状況でウィザードの動作を制御するために、さまざまなカスタムパラメーターのセットを渡します。
 

@@ -1,5 +1,6 @@
 ---
-title: ドメイン固有言語ツールのユーザー インターフェイスの概要
+title: ドメイン固有言語ツールの UI の概要
+description: Visual Studio におけるドメイン固有言語ツール ソリューションのユーザー インターフェイスの概要について説明します。
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532406"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808104"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>ドメイン固有言語ツールのユーザー インターフェイスの概要
 Visual Studio でドメイン固有言語ツール (DSL ツール) ソリューションを初めて開いたとき、ユーザー インターフェイスは、次の図のようになります。
@@ -49,5 +51,5 @@ Visual Studio でドメイン固有言語ツール (DSL ツール) ソリュー�
 ## <a name="see-also"></a>関連項目
 
 - [ドメイン固有言語ツールの概要](../modeling/overview-of-domain-specific-language-tools.md)
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))
 - [ドメイン固有言語のカスタマイズおよび拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)

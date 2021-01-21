@@ -1,5 +1,7 @@
 ---
 title: プログラムのデバッグを有効にする |Microsoft Docs
+description: デバッグエンジンを起動する方法や、デバッグエンジンを既存のプログラムにアタッチしてプログラムをデバッグする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738892"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96915259"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>プログラムのデバッグを有効にする
 デバッグエンジン (DE) がプログラムをデバッグできるようにするには、まず、DE を起動するか、既存のプログラムにアタッチする必要があります。

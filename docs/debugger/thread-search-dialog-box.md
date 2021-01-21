@@ -1,5 +1,7 @@
 ---
 title: '[スレッド検索] ダイアログ ボックス | Microsoft Docs'
+description: Spy++ デバッグ ツールの [スレッド検索] ダイアログ ボックスについて説明します。 このダイアログ ボックスを使用して、スレッド ビューで特定のスレッドのノードを検索して選択します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fddbb589a6978f72dc5926a78c9eb13f21b3a4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901863"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148755"
 ---
 # <a name="thread-search-dialog-box"></a>[スレッド検索] ダイアログ ボックス
 このダイアログ ボックスを使用して、[スレッド ビュー](../debugger/threads-view.md)で特定のスレッドのノードを検索して選択します。 このダイアログボックスを表示するには、**スレッド** ビュー ウィンドウにフォーカスを移動します。 その後、 **[検索]** メニューから **[スレッドの検索]** を選択します。

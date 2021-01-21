@@ -1,5 +1,7 @@
 ---
 title: ターゲットのビルド順序 | Microsoft Docs
+description: あるターゲットへの入力が別のターゲットの出力に依存している場合に、MSBuild でターゲットが実行される順序を指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/02/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,22 +12,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 955c8c496df45bbfce28bdac1571f84649621024
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75585458"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93048062"
 ---
 # <a name="target-build-order"></a>ターゲットのビルド順序
 
 あるターゲットへの入力が別のターゲットの出力に依存する場合、ターゲットの順序を指定する必要があります。 以下の属性を使用して、ターゲットを実行する順序を指定できます。
 
-- `InitialTargets` で初期化します。 この `Project` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。
+- `InitialTargets`. この `Project` 属性は、ターゲットがコマンド ラインまたは `DefaultTargets` 属性に指定されている場合でも最初に実行されるターゲットを指定します。
 
-- `DefaultTargets` で初期化します。 この `Project` 属性を使うと、ターゲットがコマンドラインで明示的に指定されていない場合に実行されるターゲットを指定できます。
+- `DefaultTargets`. この `Project` 属性を使うと、ターゲットがコマンドラインで明示的に指定されていない場合に実行されるターゲットを指定できます。
 
-- `DependsOnTargets` で初期化します。 この `Target` 属性は、このターゲットを実行する前に実行する必要があるターゲットを指定します。
+- `DependsOnTargets`. この `Target` 属性は、このターゲットを実行する前に実行する必要があるターゲットを指定します。
 
 - `BeforeTargets` および `AfterTargets`。 これらの `Target` 属性は、このターゲットを、指定されたターゲットの前または後に実行するように指定します (MSBuild 4.0)。
 
@@ -73,7 +75,7 @@ ms.locfileid: "75585458"
 
 ## <a name="target-dependencies"></a>ターゲットの依存関係
 
-ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 次に例を示します。
+ターゲット同士は相互に依存関係を記述できます。 `DependsOnTargets` 属性は、ターゲットが他のターゲットに依存していることを示します。 たとえば、次のように入力します。
 
 ```xml
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />
@@ -130,6 +132,6 @@ MSBuild では、ターゲットのビルド順序を次のように決定しま
 
 7. ターゲットが実行されるか、スキップされると、`AfterTargets` 属性でそれをリストする他のターゲットが実行されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [ターゲット](../msbuild/msbuild-targets.md)

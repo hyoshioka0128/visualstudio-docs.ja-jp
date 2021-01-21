@@ -1,5 +1,7 @@
 ---
 title: スタックフレーム |Microsoft Docs
+description: この記事では、Visual Studio のデバッガーアーキテクチャでのスタックフレームの定義とロールについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea79ad199e20afeb5d2bf1ca6a3cf881c6d51c3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab2c891002ad90d767a4c5ca9efffd3f3d1d10ee
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712843"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845207"
 ---
 # <a name="stack-frames"></a>スタックフレーム
-デバッガーのアーキテクチャでは、 *スタックフレーム*は次のようになります。
+デバッガーのアーキテクチャでは、 *スタックフレーム* は次のようになります。
 
 - は、スレッドの実行コンテキストを提供するスタックの抽象化です。 スレッドは、常に関数内で実行されます。 スタックフレームには、関数のローカル変数とそれに対する引数が保持されます。 Visual Studio でデバッグするには、デバッグ対象の言語または環境でスタックフレームがサポートされている必要があります。
 

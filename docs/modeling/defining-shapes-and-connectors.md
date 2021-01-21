@@ -1,5 +1,7 @@
 ---
 title: シェイプとコネクタの定義
+description: ドメイン固有言語 (DSL) で図に情報を表示するために使用できる、いくつかの基本的な種類の図形について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
@@ -7,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd95c467f0cfcc997fe419abacb1811e02b468b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75589670"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363823"
 ---
 # <a name="define-shapes-and-connectors"></a>図形とコネクタの定義
 
@@ -20,7 +22,7 @@ ms.locfileid: "75589670"
 
 ## <a name="basic-types-of-shapes-and-connectors"></a><a name="shapeTypes"></a> 図形とコネクタの基本型
 
-DSL 図は、線または*コネクタ*で interlinked*図形*のコレクションを示しています。 一般的な定義 (必ずしもこの通りではありません):
+DSL 図は、線または *コネクタ* で interlinked *図形* のコレクションを示しています。 一般的な定義 (必ずしもこの通りではありません):
 
 - シェイプは、モデル要素の可視的な表現です。
 

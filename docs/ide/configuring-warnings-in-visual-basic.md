@@ -1,5 +1,7 @@
 ---
 title: Visual Basic での警告の構成
+description: Visual Basic で警告を構成する方法について説明します。これにより、バグをほとんど含まない、よりクリーンで、高速で、優れたコードを記述できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: cd5239c4fd01aefa247fc63a66af3e872dbecbb6
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76114727"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006407"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Visual Basic での警告の構成
 
@@ -28,15 +30,15 @@ ms.locfileid: "76114727"
 プロジェクトをカスタマイズして、アプリケーションに関係のない警告はオフにし、他の警告はエラーにすることができます。 このページでは、個々の警告を有効または無効にする方法について説明します。
 
 ## <a name="turning-warnings-off-and-on"></a>警告のオフとオンの切り替え
-警告を構成するには 2 つの異なる方法があります。**プロジェクト デザイナー**を使う方法と、 **/warnaserror** および **/nowarn** コンパイラ オプションを使う方法です。
+警告を構成するには 2 つの異なる方法があります。**プロジェクト デザイナー** を使う方法と、**/warnaserror** および **/nowarn** コンパイラ オプションを使う方法です。
 
-**[プロジェクト デザイナー]** ページの **[コンパイル]** タブで、警告を有効または無効にできます。 **[すべての警告を表示しない]** チェック ボックスをオンにすると、すべての警告が無効になります。 **[すべての警告をエラーとして扱う]** をオンにすると、すべての警告がエラーとして処理されます。 一部の個別警告は、表示されるテーブルで必要に応じてエラーまたは警告として切り替えることができます。
+**[プロジェクト デザイナー]** ページの **[コンパイル]** タブで、警告を有効または無効にできます。 **[すべての警告を表示しない]** チェック ボックスをオンにすると、すべての警告が無効になります。**[すべての警告をエラーとして扱う]** をオンにすると、すべての警告がエラーとして処理されます。 一部の個別警告は、表示されるテーブルで必要に応じてエラーまたは警告として切り替えることができます。
 
-**Option Strict** が**オフ**に設定されていると、**Option Strict** 関連の警告を個別に扱うことはできません。 **Option Strict** が**オン**に設定されていると、関連する警告は状態に関係なくエラーとして扱われます。 コマンド ライン コンパイラで `/optionstrict:custom` を指定することによって **Option Strict** が**カスタム**に設定されていると、**Option Strict** の警告のオン/オフを独立して切り替えることができます。
+**Option Strict** が **オフ** に設定されていると、**Option Strict** 関連の警告を個別に扱うことはできません。 **Option Strict** が **オン** に設定されていると、関連する警告は状態に関係なくエラーとして扱われます。 コマンド ライン コンパイラで `/optionstrict:custom` を指定することによって **Option Strict** が **カスタム** に設定されていると、**Option Strict** の警告のオン/オフを独立して切り替えることができます。
 
 コンパイラの **/warnaserror** コマンド ライン オプションを使って、警告をエラーとして扱うかどうかを指定することもできます。 コンマ区切りリストをこのオプションに追加し、+ または - を使ってエラーまたは警告として扱う必要がある警告を指定できます。 次の表では、使用できるオプションを詳しく説明します。
 
-|コマンド ライン オプション|指定内容|
+|コマンドライン オプション|指定内容|
 | - |---------------|
 |`/warnaserror+`|すべての警告をエラーとして扱います。|
 |`/warnsaserror`-|警告をエラーとして扱いません。 既定値です。|
@@ -50,7 +52,7 @@ ms.locfileid: "76114727"
 ## <a name="examples"></a>例
 次の表では、コマンド ライン引数の動作の例を示します。
 
-|引数|[説明]|
+|引数|説明|
 |--------------|-----------------|
 |`vbc /warnaserror`|すべての警告をエラーとして扱うよう指定しています。|
 |`vbc /warnaserror:42024`|警告 42024 をエラーとして扱うよう指定します。|
@@ -117,7 +119,7 @@ ID: 42028
 
 ID: 42029、42031
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [エラーの種類](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Try...Catch...Finally ステートメント](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

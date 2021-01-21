@@ -1,5 +1,7 @@
 ---
 title: MSBuild ターゲット | Microsoft Docs
+description: MSBuild で、ターゲットを使用してタスクをグループ化し、ビルド プロセスを小さな単位に分割する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfdbbf0f585ea02bfdb32f47728ab0cd26e9af3e
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 19d6a95ceeab9af2b6a6f874ae4f889dd2180ba6
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250669"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97524022"
 ---
 # <a name="msbuild-targets"></a>MSBuild ターゲット
 
@@ -417,7 +419,7 @@ $(TargetFileName) -          The file name of the build target.
 ===================================================
 GenerateBindingRedirectsUpdateAppConfig
 Updates the project to use the generated app.config content.  This needs to run regardless of 
-inputs/outputs so it is seperate from GenerateBindingRedirects.
+inputs/outputs so it is separate from GenerateBindingRedirects.
 ===================================================
 <Target Name="GenerateBindingRedirectsUpdateAppConfig"
         AfterTargets="GenerateBindingRedirects"

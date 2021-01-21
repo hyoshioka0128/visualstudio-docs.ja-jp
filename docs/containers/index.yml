@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 23937085e99c50475ac100fd38b8380955cd084c
-  ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+  ms.openlocfilehash: 7dd543b176ac5c95bf084658583bf34db1294c82
+  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/04/2020
-  ms.locfileid: "89490275"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "91211064"
 landingContent:
 - title: コンテナー ツール
   linkLists:
@@ -31,8 +31,6 @@ landingContent:
       url: container-tools.md
     - text: コンテナーでのビルド ツールの実行
       url: ../install/build-tools-container.md
-    - text: Visual Studio Tools for Kubernetes
-      url: tutorial-kubernetes-tools.md
 - title: コンテナー化されたアプリの開発
   linkLists:
   - linkListType: tutorial
@@ -77,15 +75,11 @@ landingContent:
       url: container-tools-configure.md
 - title: Kubernetes 開発
   linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Visual Studio Tools for Kubernetes
-      url: tutorial-kubernetes-tools.md
   - linkListType: quickstart
     links:
-    - text: Visual Studio を使用して Local Process with Kubernetes を利用する
-      url: local-process-kubernetes.md
+    - text: Visual Studio で Bridge to Kubernetes を使用する
+      url: bridge-to-kubernetes.md
   - linkListType: overview
     links:
-    - text: Local Process with Kubernetes のしくみ
-      url: overview-local-process-kubernetes.md
+    - text: Bridge to Kubernetes のしくみ
+      url: overview-bridge-to-kubernetes.md

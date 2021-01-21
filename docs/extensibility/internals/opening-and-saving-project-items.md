@@ -1,5 +1,7 @@
 ---
 title: プロジェクト項目を開いて保存する |Microsoft Docs
+description: Visual Studio IDE で、新しいプロジェクトの種類のファイルを開いたり保存したりするためのさまざまな方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb89d99e401be6bae7d8ee9be8ee33fa7574723
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 971fef7939c91bdcdea9098da530c7ecb2daf9ec
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706966"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877638"
 ---
 # <a name="opening-and-saving-project-items"></a>プロジェクト項目のオープンと保存
 新しいプロジェクトの種類を追加する場合は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) でのプロジェクトファイルのオープンと保存を管理する必要があります。 次のトピックでは、ファイルを開いたり保存したりするためのさまざまな方法について説明します。

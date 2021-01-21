@@ -1,5 +1,8 @@
 ---
 title: Silverlight web パーツを作成し、SharePoint の OData を表示する
+titleSuffix: ''
+description: SharePoint の OData を表示する Silverlight web パーツを作成します。 Silverlight アプリケーションをカスタマイズし、Silverlight web パーツを変更してテストします。
+ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75653f0357bcc605e666ee271a527b616985b641
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
+ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86017163"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96914791"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>チュートリアル: SharePoint の OData を表示する Silverlight web パーツの作成
   SharePoint 2010 では、OData によってリストデータが公開されます。 SharePoint では、OData サービスは RESTful サービス ListData .svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法について説明します。 Silverlight アプリケーションは、ListData. svc を使用して SharePoint アナウンスリストの情報を表示します。 詳細については、「 [SharePoint FOUNDATION REST インターフェイス](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 」と「 [Open Data Protocol](https://www.odata.org/)」を参照してください。
@@ -57,9 +60,9 @@ ms.locfileid: "86017163"
 
 7. [ **Silverlight 構成情報の指定**] ページの [ **silverlight Web パーツを関連付ける方法**] セクションで、[**新しい silverlight プロジェクトを作成し、それを Web パーツに関連付ける**] オプションボタンを選択します。
 
-8. **名前**を**slapplication**に変更し、[ **Language** ] を**Visual Basic**または**Visual C#** のいずれかに設定し、[ **silverlight バージョン**] を [ **silverlight 4.0**] に設定します。
+8. **名前** を **slapplication** に変更し、[ **Language** ] を **Visual Basic** または **Visual C#** のいずれかに設定し、[ **silverlight バージョン**] を [ **silverlight 4.0**] に設定します。
 
-9. **[完了]** をクリックします。 プロジェクトは **ソリューションエクスプローラー**に表示されます。
+9. **[完了]** をクリックします。 プロジェクトは **ソリューションエクスプローラー** に表示されます。
 
      このソリューションには、Silverlight アプリケーションと Silverlight web パーツという2つのプロジェクトが含まれています。 Silverlight アプリケーションは、SharePoint からリストデータを取得して表示します。 silverlight web パーツは Silverlight アプリケーションをホストし、SharePoint で表示できるようにします。
 
@@ -68,12 +71,12 @@ ms.locfileid: "86017163"
 
 #### <a name="to-customize-the-silverlight-application"></a>Silverlight アプリケーションをカスタマイズするには
 
-1. Silverlight アプリケーションの system.string にアセンブリ参照を追加します。 詳細については、「 [方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)する」を参照してください。
+1. Silverlight アプリケーションの system.string にアセンブリ参照を追加します。 詳細については、「 [方法: [参照の追加] ダイアログボックスを使用して参照を追加または削除](/previous-versions/wkze6zky(v=vs.140))する」を参照してください。
 
-2. **ソリューションエクスプローラー**で、[**参照**] のショートカットメニューを開き、[**サービス参照の追加**] を選択します。
+2. **ソリューションエクスプローラー** で、[**参照**] のショートカットメニューを開き、[**サービス参照の追加**] を選択します。
 
     > [!NOTE]
-    > Visual Basic を使用している場合は、**ソリューションエクスプローラー**の上部にある [**すべてのファイルを表示**] アイコンをクリックして [**参照**] ノードを表示する必要があります。
+    > Visual Basic を使用している場合は、**ソリューションエクスプローラー** の上部にある [**すべてのファイルを表示**] アイコンをクリックして [**参照**] ノードを表示する必要があります。
 
 3. [**サービス参照の追加**] ダイアログボックスの [アドレス] ボックスに、SharePoint サイトの URL (など) を入力し、[実行] ボタンをクリックし **http://MySPSite** ます。 **Go**
 
@@ -83,7 +86,7 @@ ms.locfileid: "86017163"
 
 5. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
-6. SharePoint サービスに基づいて新しいデータソースをプロジェクトに追加します。 これを行うには、メニューバーで [ **View**  >  **その他の Windows**  >  **データソース**の表示] を選択します。
+6. SharePoint サービスに基づいて新しいデータソースをプロジェクトに追加します。 これを行うには、メニューバーで [ **View**  >  **その他の Windows**  >  **データソース** の表示] を選択します。
 
      [ **データソース** ] ウィンドウには、タスク、お知らせ、カレンダーなど、利用可能なすべての SharePoint リストデータが表示されます。
 
@@ -93,7 +96,7 @@ ms.locfileid: "86017163"
 
 8. Silverlight ページに合わせてグリッドコントロールのサイズを変更します。
 
-9. Mainpage.xaml コードファイル (Visual C# の場合は*MainPage.xaml.cs* 、Visual Basic の場合は *mainpage.xaml* ) で、次の名前空間参照を追加します。
+9. Mainpage.xaml コードファイル (Visual C# の場合は *MainPage.xaml.cs* 、Visual Basic の場合は *mainpage.xaml* ) で、次の名前空間参照を追加します。
 
     ```vb
     ' Add the following three Imports statements.
@@ -160,7 +163,7 @@ ms.locfileid: "86017163"
     }
     ```
 
-     *ServerName*プレースホルダーは、SharePoint を実行しているサーバーの名前に置き換えてください。
+     *ServerName* プレースホルダーは、SharePoint を実行しているサーバーの名前に置き換えてください。
 
 12. 次のエラー処理プロシージャを追加します。
 
@@ -221,7 +224,7 @@ ms.locfileid: "86017163"
 
 6. [ **カテゴリ** ] ボックスで、[ **カスタム** ] フォルダーを選択します。
 
-7. **Web パーツ**の一覧で、Silverlight web パーツを選択し、[**追加**] ボタンをクリックして、Web パーツをデザイナーに追加します。
+7. **Web パーツ** の一覧で、Silverlight web パーツを選択し、[**追加**] ボタンをクリックして、Web パーツをデザイナーに追加します。
 
 8. 必要な web ページにすべての追加を行った後、[ **ページ** ] タブをクリックし、ツールバーの [ **& 閉じる** ] ボタンをクリックします。
 
@@ -231,5 +234,5 @@ ms.locfileid: "86017163"
     > Silverlight では、ドメイン間でデータにアクセスするときに、web アプリケーションの悪用に使用できるセキュリティの脆弱性を防ぐことができます。 Silverlight でリモートデータにアクセスするときに問題が発生した場合は、「 [ドメインの境界を越えてサービスを利用できるよう](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95))にする」を参照してください。
 
 ## <a name="see-also"></a>関連項目
-- [SharePoint の web パーツの作成](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [SharePoint の Web パーツを作成する](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [SharePoint ソリューションパッケージの配置、発行、およびアップグレード](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

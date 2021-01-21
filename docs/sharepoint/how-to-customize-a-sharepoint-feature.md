@@ -1,5 +1,7 @@
 ---
 title: '方法: SharePoint フィーチャーをカスタマイズする |Microsoft Docs'
+description: Visual Studio で SharePoint の機能をカスタマイズします。 ソリューションエクスプローラーまたは SharePoint パッケージエクスプローラーで新しい機能を追加すると、フィーチャーデザイナーが開きます。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a330f3c4cbe1e410ddc6a1612796c92eeda281b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016894"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903664"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>方法: SharePoint 機能をカスタマイズする
   SharePoint 機能は、Visual Studio のフィーチャーデザイナーを使用して作成およびカスタマイズできます。 たとえば、機能のスコープを設定し、その他の機能を依存関係として追加できます。 既定では、ソリューションエクスプローラーまたは SharePoint パッケージエクスプローラーに新しい機能を追加すると、フィーチャーデザイナーが開きます。
@@ -31,22 +33,22 @@ ms.locfileid: "86016894"
 
 #### <a name="to-open-the-feature-designer"></a>フィーチャーデザイナーを開くには
 
-1. **ソリューションエクスプローラー**で、[**機能**] を展開します。
+1. **ソリューションエクスプローラー** で、[**機能**] を展開します。
 
-2. *Feature1.feature*項目をダブルクリックするか、 *feature1.feature*項目のショートカットメニューを開き、[**デザイナーの表示**] をクリックします。
+2. *Feature1.feature* 項目をダブルクリックするか、 *feature1.feature* 項目のショートカットメニューを開き、[**デザイナーの表示**] をクリックします。
 
 ## <a name="view-the-packaged-manifest-file"></a>パッケージ化されたマニフェストファイルを表示する
  フィーチャーデザイナーを使用して、機能のパッケージ化されたマニフェストファイル (*feature.xml*) を変更および生成できます。 その後、Visual Studio でこのファイルの XML コードを表示できます。
 
 #### <a name="to-view-the-packaged-manifest-file"></a>パッケージ化されたマニフェストファイルを表示するには
 
-1. **フィーチャーデザイナー**で、[**マニフェスト**] タブを選択します。
+1. **フィーチャーデザイナー** で、[**マニフェスト**] タブを選択します。
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>ソリューションエクスプローラーを使用してパッケージマニフェストファイルを表示するには
 
-1. **ソリューションエクスプローラー**で、[**すべてのファイルを表示**] アイコンを選択します。
+1. **ソリューションエクスプローラー** で、[**すべてのファイルを表示**] アイコンを選択します。
 
-2. [機能] を展開し、[FeatureName]、[FeatureName] の順に展開して、 * \<FeatureName>.Template.xml*ファイルを開きます。
+2. [機能] を展開し、[FeatureName]、[FeatureName] の順に展開して、 *\<FeatureName>.Template.xml* ファイルを開きます。
 
     > [!NOTE]
     > フィーチャーテンプレートマニフェスト XML ファイルを開くと、ファイルは自動的に検証され、[エラー一覧] ウィンドウに表示される警告は無視できます。
@@ -56,13 +58,13 @@ ms.locfileid: "86016894"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>XML エディターを使用してマニフェストテンプレートを変更するには
 
-1. **フィーチャーデザイナー**で [**マニフェスト**] タブを選択し、[**編集オプション**] ノードを展開して、[ **XML エディターで開く**] リンクをクリックします。
+1. **フィーチャーデザイナー** で [**マニフェスト**] タブを選択し、[**編集オプション**] ノードを展開して、[ **XML エディターで開く**] リンクをクリックします。
 
      XML への変更は、パッケージマニフェストファイルにマージされます。
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>マニフェストテンプレートペインを使用してマニフェストテンプレートを変更するには
 
-1. **フィーチャーデザイナー**で [**マニフェスト**] タブを選択し、[**編集オプション**] ノードを展開して、[マニフェストテンプレート] ペインに表示される XML を変更します。
+1. **フィーチャーデザイナー** で [**マニフェスト**] タブを選択し、[**編集オプション**] ノードを展開して、[マニフェストテンプレート] ペインに表示される XML を変更します。
 
      XML への変更は、[ **パッケージマニフェストのプレビュー** ] ペインに表示されます。
 
@@ -74,7 +76,7 @@ ms.locfileid: "86016894"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>デザイナーを無効にしてパッケージマニフェストファイルを上書きするには
 
-1. **フィーチャーデザイナー**で、[**マニフェスト**] タブを選択します。
+1. **フィーチャーデザイナー** で、[**マニフェスト**] タブを選択します。
 
 2. [ **編集オプション** ] ノードを展開し、[ **xml エディター] リンクで [生成された xml を上書きしてマニフェストを編集** する] を選択し、[ **はい** ] をクリックします。
 
@@ -85,7 +87,7 @@ ms.locfileid: "86016894"
 
 #### <a name="to-re-enable-the-designer"></a>デザイナーを再び有効にするには
 
-1. **フィーチャーデザイナー**で、[マニフェストの**編集を破棄**] を選択し、デザイナーのリンクを再度有効にして、[**はい**] をクリックします。
+1. **フィーチャーデザイナー** で、[マニフェストの **編集を破棄**] を選択し、デザイナーのリンクを再度有効にして、[**はい**] をクリックします。
 
 2. テンプレートは元のテキストで更新され、XML に対する変更はすべて失われます。
 

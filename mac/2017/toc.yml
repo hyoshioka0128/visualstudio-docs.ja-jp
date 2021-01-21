@@ -1,150 +1,150 @@
 - name: Visual Studio for Mac
-  href: /visualstudio/mac/
+  href: ./index.yml
 - name: IDE ツアー
   href: ide-tour.md
 - name: インストール
   href: installation.md
   items:
     - name: ファイアウォールまたはプロキシの内側にインストールして使用する
-      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+      href: ./install-behind-a-firewall-or-proxy-server.md
     - name: プレビュー リリースをインストールする
-      href: /visualstudio/mac/install-preview
+      href: ./install-preview.md
     - name: 更新
-      href: /visualstudio/mac/update
+      href: ./update.md
     - name: Visual Studio 2019 for Mac の更新
-      href: /visualstudio/mac/update-vsmac-8.0
+      href: ./update-vsmac-8.0.md
     - name: '[アンインストール]'
-      href: /visualstudio/mac/uninstall
+      href: ./uninstall.md
 - name: ユーザー アカウント
-  href: /visualstudio/mac/user-accounts
+  href: ./user-accounts.md
   items:
     - name: サインイン
-      href: /visualstudio/mac/signing-in
+      href: ./signing-in.md
     - name: サブスクリプションを有効にする
-      href: /visualstudio/mac/enable-subscription
+      href: ./enable-subscription.md
 - name: IDE のカスタマイズ
-  href: /visualstudio/mac/customizing-the-ide
+  href: ./customizing-the-ide.md
   items:
     - name: Visual Studio for Mac の拡張
-      href: /visualstudio/mac/extending-visual-studio-mac
+      href: ./extending-visual-studio-mac.md
 - name: プロジェクトおよびソリューション
-  href: /visualstudio/mac/projects-and-solutions
+  href: ./projects-and-solutions.md
   items:
     - name: プロジェクトの新規作成
-      href: /visualstudio/mac/create-new-projects
+      href: ./create-new-projects.md
     - name: プロジェクト項目の追加と削除
-      href: /visualstudio/mac/add-and-remove-project-items
+      href: ./add-and-remove-project-items.md
     - name: ソリューションとプロジェクト プロパティの管理
-      href: /visualstudio/mac/managing-solutions-and-project-properties
+      href: ./managing-solutions-and-project-properties.md
     - name: プロジェクト内の参照の管理
-      href: /visualstudio/mac/managing-references-in-a-project
+      href: ./managing-references-in-a-project.md
       items:
         - name: チュートリアル - プロジェクトに NuGet パッケージを含める
-          href: /visualstudio/mac/nuget-walkthrough
+          href: ./nuget-walkthrough.md
     - name: アプリ リソースの管理
-      href: /visualstudio/mac/managing-app-resources
+      href: ./managing-app-resources.md
     - name: '方法: 複数のソリューションまたはインスタンスを開く'
-      href: /visualstudio/mac/open-multiple-solutions
+      href: ./open-multiple-solutions.md
 - name: ソース エディター
-  href: /visualstudio/mac/source-editor
+  href: ./source-editor.md
   items:
     - name: リファクタリング
-      href: /visualstudio/mac/refactoring
+      href: ./refactoring.md
     - name: コメント
-      href: /visualstudio/mac/comments
+      href: ./comments.md
     - name: エディターの動作
-      href: /visualstudio/mac/editor-behavior
+      href: ./editor-behavior.md
     - name: タスク コメント
-      href: /visualstudio/mac/task-comments
+      href: ./task-comments.md
     - name: スニペット
-      href: /visualstudio/mac/snippets
+      href: ./snippets.md
     - name: ブロック選択
-      href: /visualstudio/mac/block-selection
+      href: ./block-selection.md
     - name: エディターのテーマ
-      href: /visualstudio/mac/editor-themes
+      href: ./editor-themes.md
     - name: EditorConfig
-      href: /visualstudio/mac/editorconfig
+      href: ./editorconfig.md
     - name: 一般的なキーボード ショートカット
-      href: /visualstudio/mac/keyboard-shortcuts
+      href: ./keyboard-shortcuts.md
 - name: デバッグ
-  href: /visualstudio/mac/debugging
+  href: ./debugging.md
   items:
     - name: データの視覚化
-      href: /visualstudio/mac/data-visualizations
+      href: ./data-visualizations.md
 - name: コードのコンパイルとビルド
-  href: /visualstudio/mac/compiling-and-building
+  href: ./compiling-and-building.md
   items:
     - name: プロジェクトとソリューションのビルドおよびクリーン
-      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+      href: ./building-and-cleaning-projects-and-solutions.md
     - name: ビルド アクション
-      href: /visualstudio/mac/build-actions
+      href: ./build-actions.md
     - name: ビルド システムのカスタマイズ
-      href: /visualstudio/mac/customizing-build-system
+      href: ./customizing-build-system.md
     - name: 構成
-      href: /visualstudio/mac/configurations
+      href: ./configurations.md
       items:
         - name: 構成を作成および編集する
-          href: /visualstudio/mac/create-and-edit-configurations
+          href: ./create-and-edit-configurations.md
 - name: バージョン コントロール
-  href: /visualstudio/mac/version-control
+  href: ./version-control.md
   items:
     - name: TF バージョン管理
-      href: /visualstudio/mac/tf-version-control
+      href: ./tf-version-control.md
     - name: Git リポジトリのセットアップ
-      href: /visualstudio/mac/set-up-git-repository
+      href: ./set-up-git-repository.md
     - name: Git の使用
-      href: /visualstudio/mac/working-with-git
+      href: ./working-with-git.md
     - name: Subversion リポジトリのセットアップ
-      href: /visualstudio/mac/set-up-subversion-repository
+      href: ./set-up-subversion-repository.md
     - name: Subversion の使用
-      href: /visualstudio/mac/working-with-subversion
+      href: ./working-with-subversion.md
 - name: Web アプリのデプロイ
-  href: /visualstudio/mac/web-app-deployment
+  href: ./web-app-deployment.md
   items:
     - name: Azure App Service に発行する
-      href: /visualstudio/mac/publish-app-svc
+      href: ./publish-app-svc.md
     - name: フォルダーに発行する
-      href: /visualstudio/mac/publish-folder
+      href: ./publish-folder.md
 - name: 作業負荷
-  href: /visualstudio/mac/workloads
+  href: ./workloads.md
   items:
     - name: ASP.NET Core
-      href: /visualstudio/mac/asp-net-core
+      href: ./asp-net-core.md
       items:
         - name: Razor
-          href: /visualstudio/mac/razor
+          href: ./razor.md
         - name: JavaScript
-          href: /visualstudio/mac/javascript
+          href: ./javascript.md
     - name: Azure
-      href: /visualstudio/mac/azure-workload
+      href: ./azure-workload.md
       items:
         - name: Azure Functions の概要
-          href: /visualstudio/mac/azure-functions
+          href: ./azure-functions.md
         - name: 'チュートリアル: Azure Functions'
-          href: /visualstudio/mac/azure-functions-lab
+          href: ./azure-functions-lab.md
         - name: 接続済みサービス
-          href: /visualstudio/mac/connected-services
+          href: ./connected-services.md
     - name: Unity によるゲーム開発
-      href: /visualstudio/mac/unity-tools
+      href: ./unity-tools.md
       items:
         - name: セットアップ
-          href: /visualstudio/mac/setup-vsmac-tools-unity
+          href: ./setup-vsmac-tools-unity.md
         - name: Unity ツールの使用
-          href: /visualstudio/mac/using-vsmac-tools-unity
+          href: ./using-vsmac-tools-unity.md
         - name: Unity で.NET 4.x を使用する
           href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
         - name: 変更ログ
           href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
     - name: Xamarin を使用したモバイル アプリ
-      href: /visualstudio/mac/xamarin
+      href: ./xamarin.md
 - name: ユーザー補助
-  href: /visualstudio/mac/accessibility
+  href: ./accessibility.md
 - name: トラブルシューティング
-  href: /visualstudio/mac/troubleshooting
+  href: ./troubleshooting.md
   items:
     - name: Visual Studio カスタマー エクスペリエンス向上プログラム
-      href: /visualstudio/mac/visual-studio-experience-improvement-program
+      href: ./visual-studio-experience-improvement-program.md
     - name: 問題を報告する
-      href: /visualstudio/mac/report-a-problem
+      href: ./report-a-problem.md
     - name: 'トラブルシューティング:アップデーターが情報の取得中にエラーを表示する'
       href: updater-troubleshooting.md

@@ -1,5 +1,7 @@
 ---
 title: テスト コントローラーとテスト エージェントのトラブルシューティング
+description: Visual Studio でテスト コントローラーとテスト エージェントを使用するときに発生する可能性がある一般的な問題について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/20/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e86811739df2d59e3de7980cfa346da68cc0eb43
+ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75565956"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96330148"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>ロード テストにおけるテスト コントローラーとテスト エージェントのトラブルシューティングの方法
 
@@ -29,7 +31,7 @@ ms.locfileid: "75565956"
 ロード テストを実行するときに、テスト エージェント コンピューターに接続してパフォーマンス カウンターのデータを取得しようとすると、エラーが表示されることがあります。 パフォーマンス カウンターのデータをリモート コンピューターに提供するサービスは、リモート レジストリ サービスです。 一部のオペレーティング システムでは、リモート レジストリ サービスが自動的に起動しません。 この問題を解消するには、リモート レジストリ サービスを手動で開始します。
 
 > [!NOTE]
-> リモート レジストリ サービスには、**コントロール パネル**からアクセスできます。 **[管理ツール]** をクリックして **[サービス]** をクリックします。
+> リモート レジストリ サービスには、**コントロール パネル** からアクセスできます。 **[管理ツール]** をクリックして **[サービス]** をクリックします。
 
 これ以外の原因として、パフォーマンス カウンターを読み取るために必要なアクセス許可がない場合もあります。 ローカル テストの実行では、テストを実行するユーザーのアカウントが、Power Users グループ (以上) または Performance Monitor Users グループのメンバーである必要があります。 リモート テストの実行では、コントローラーの実行に使用するよう構成されているアカウントが、Power Users グループ (以上) または Performance Monitor Users グループのメンバーである必要があります。
 
@@ -101,7 +103,7 @@ ms.locfileid: "75565956"
 
      **[実行]** ダイアログ ボックスが表示されます。
 
-2. 「`cmd`」と入力し、 **[OK]** をクリックします。
+2. 「`cmd`」と入力し、**[OK]** をクリックします。
 
      コマンド プロンプトが開きます。
 

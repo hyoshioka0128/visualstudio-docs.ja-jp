@@ -3,18 +3,16 @@ title: Publish-WebApplicationVM | Microsoft Docs
 description: 仮想マシンに Web アプリケーションをデプロイする方法を学習します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 author: ghogen
 manager: jillfra
-assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dd7102873047ed7331547225fa0b32efd33f853f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 61055a21e3360419639494ee6dcd47f88440f94e
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508419"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902182"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell スクリプト)
 仮想マシンに Web アプリケーションをデプロイします。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
@@ -36,7 +34,7 @@ Publish-WebApplicationVM
 | エイリアス | なし |
 | --- | --- |
 | 必須 |true |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -47,7 +45,7 @@ Publish-WebApplicationVM
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |サブスクリプション ファイルで最初のサブスクリプションを使用する |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -58,7 +56,7 @@ Publish-WebApplicationVM
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -69,7 +67,7 @@ True の場合は、信頼されたルート証明機関によって署名され
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -80,7 +78,7 @@ True の場合は、信頼されたルート証明機関によって署名され
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -91,7 +89,7 @@ Azure での SQL Database の資格情報。 例: -DatabaseServerPassword @{Name
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -102,12 +100,12 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| [位置] |指定 |
+| 位置 |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 スクリプトを使用して開発とテストの環境を作成する方法の詳細については、「 [Windows PowerShell スクリプトを使用した開発環境およびテスト環境の発行](vs-azure-tools-publishing-using-powershell-scripts.md)」をご覧ください。
 
 JSON 構成ファイルではデプロイ対象の詳細が指定されます。 これには、仮想マシンの名前、アフィニティ グループ、VHD イメージ、およびサイズなど、プロジェクトを作成したときに指定した情報が含まれています。 また、仮想マシン上のエンドポイント、プロビジョニングするデータベース (該当する場合)、Web デプロイメント パラメーターも含まれています。 次のコードは JSON 構成ファイルの例を示しています。

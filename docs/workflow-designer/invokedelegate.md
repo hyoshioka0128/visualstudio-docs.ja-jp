@@ -1,5 +1,7 @@
 ---
 title: ワークフローデザイナー-InvokeDelegate
+description: Invokedelegate デザイナーについて、および invokedelegate デザイナーを使用して InvokeDelegate アクティビティを作成および構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,16 +12,16 @@ author: TerryGLee
 ms.author: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e63fb7a766b79467749cc5181a575e0d35a07b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a482f23b1df1587e9a1c7e3023bfb0d1737f1fae
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86876074"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94437750"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
-**Invokedelegate**デザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.InvokeDelegate> ます。
+**Invokedelegate** デザイナーは、アクティビティを作成および構成するために使用され <xref:System.Activities.Statements.InvokeDelegate> ます。
 
 ## <a name="the-invokedelegate-activity"></a>InvokeDelegate アクティビティ
 
@@ -27,7 +29,7 @@ ms.locfileid: "86876074"
 
 ### <a name="use-the-invokedelegate-activity-designer"></a>InvokeDelegate アクティビティデザイナーの使用
 
-**ツールボックス**の [**プリミティブ**] カテゴリで、 **invokedelegate**アクティビティデザイナーにアクセスします。 **Invokedelegate**アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが通常配置されているワークフローデザイナー画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除 <xref:System.Activities.Statements.InvokeDelegate> すると、既定の InvokeDelegate を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **invokedelegate** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**ツールボックス** の [ **プリミティブ** ] カテゴリで、 **invokedelegate** アクティビティデザイナーにアクセスします。 **Invokedelegate** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティが通常配置されているワークフローデザイナー画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除 <xref:System.Activities.Statements.InvokeDelegate> すると、既定の InvokeDelegate を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **invokedelegate** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-invokedelegate-properties"></a>InvokeDelegate プロパティ
 

@@ -1,5 +1,7 @@
 ---
 title: 転送 logger の作成 | Microsoft Docs
+description: MSBuild 転送ロガーを作成し、プロジェクトをビルドするときに監視対象のイベントを選択できるようにすることで、ログの効率を高めます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +13,24 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852b783129f130316de88580020e0139925ffb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25f8a876ddd4c5c222b608dcea51f98816679181
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634306"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796577"
 ---
 # <a name="create-forwarding-loggers"></a>転送 logger の作成
 
 転送 logger では、マルチプロセッサ システムでプロジェクトをビルドするときに監視の対象とするイベントを選択できるため、ログの効率を高めることができます。 転送 logger を有効にすることで、不要なイベントによる中心 logger の過負荷、ビルドの低速化、およびログの煩雑化を回避できます。
 
- 転送 logger を作成する場合は、<xref:Microsoft.Build.Framework.IForwardingLogger> インターフェイスを実装してそのメソッドを手動で実装するか、<xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> クラスとその定義済みメソッドを使用できます (ほとんどのアプリケーションでは、後者で十分です)。
+ 転送 logger を作成する場合は、<xref:Microsoft.Build.Framework.IForwardingLogger> インターフェイスを実装してそのメソッドを手動で実装するか、<xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> クラスとその定義済みメソッドを使用できます  (ほとんどのアプリケーションでは、後者で十分です)。
 
 ## <a name="register-events-and-respond-to-them"></a>イベントの登録とイベントへの応答
 
  転送 logger は、セカンダリ ビルド エンジン (マルチプロセッサ システムでのビルド時にメイン ビルド プロセスによって作成されるワーカー プロセス) から報告されるビルド イベントの情報を収集します。 次に、転送 logger は指定された手順に基づいて、中心 logger に転送するイベントを選択します。
 
- 監視対象のイベントを処理するには、転送 logger を登録する必要があります。 イベントのために登録するには、logger で <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> メソッドをオーバーライドする必要があります。 このメソッドには省略可能なパラメーターである `nodecount` が追加されました。このパラメーターをシステムのプロセッサ数に設定できます (既定値は 1 です)。
+ 監視対象のイベントを処理するには、転送 logger を登録する必要があります。 イベントのために登録するには、logger で <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> メソッドをオーバーライドする必要があります。 このメソッドには省略可能なパラメーターである `nodecount` が追加されました。このパラメーターをシステムのプロセッサ数に設定できます  (既定値は 1 です)。
 
  監視できるイベントの例として、<xref:Microsoft.Build.Framework.IEventSource.TargetStarted>、<xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>、および <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> などがあります。
 

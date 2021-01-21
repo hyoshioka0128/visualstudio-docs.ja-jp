@@ -1,5 +1,7 @@
 ---
 title: エディターのフォントと色を変更する
+description: コード エディターで、さまざまなテキスト表示項目に対して既定のフォント フェイスを変更したり、フォント サイズを調整したり、前景色と背景色を変更したりする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/01/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,16 +16,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa56a7ab8b3147cc3e8fbb784211d9a34536189d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ad32d814b67cae9a9a0a538d6c131aecba9c0b8
+ms.sourcegitcommit: 2cf87f79762906ccaa133a7645aa4c77a0bed7da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85770420"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "96617124"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>方法: Visual Studio でエディターのフォントと色を変更する
 
-コード エディターでは、さまざまなテキスト**表示項目**に対して既定のフォント フェイスを変更したり、フォント サイズを調整したり、前景色と背景色を変更したりできます。 フォントの設定を変更するときは、次のことにご注意ください。
+コード エディターでは、さまざまなテキスト **表示項目** に対して既定のフォント フェイスを変更したり、フォント サイズを調整したり、前景色と背景色を変更したりできます。 フォントの設定を変更するときは、次のことにご注意ください。
 
 - **[フォント]** と **[サイズ]** の設定は、すべての Visual Studio エディターのすべてのテキスト要素に対するグローバルな設定です。
 

@@ -1,21 +1,21 @@
 ---
 title: Visual Studio コンテナー ツールの起動設定
 author: ghogen
-description: コンテナー ツールのビルド プロセスの概要
+description: コンテナー化されたアプリの Visual Studio による処理方法に関連する、コンテナー ツールの起動設定について説明します。
 ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24a36bdbe0d3c6ac57b7595883301841ffa138e1
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247982"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846711"
 ---
 # <a name="container-tools-launch-settings"></a>コンテナー ツールの起動設定
 
-ASP.NET Core プロジェクト内の "*プロパティ*" フォルダーでは、開発用コンピューター上で Web アプリを起動させる方法を制御する設定が含まれる launchSettings.json ファイルを検索できます。 ASP.NET 開発でのこのファイルの使用方法についての詳細は、「[ASP.NET Core で複数の環境を使用する](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2)」を参照してください。 *launchSettings.json* では、**Docker** セクションの設定は、Visual Studio でのコンテナー化されたアプリの処理方法に関連しています。
+ASP.NET Core プロジェクト内の "*プロパティ*" フォルダーでは、開発用コンピューター上で Web アプリを起動させる方法を制御する設定が含まれる launchSettings.json ファイルを検索できます。 ASP.NET 開発でのこのファイルの使用方法についての詳細は、「[ASP.NET Core で複数の環境を使用する](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true)」を参照してください。 *launchSettings.json* では、**Docker** セクションの設定は、Visual Studio でのコンテナー化されたアプリの処理方法に関連しています。
 
 ::: moniker range="vs-2017"
 

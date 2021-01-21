@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって電子メールを送信する'
+description: Microsoft Outlook からプログラムによって電子メールを送信するには、Visual Studio を使用します。 この例では、ドメイン名が example.com の連絡先に電子メールメッセージを送信します。
+ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c56527f18857ad3c4ac82060ffd5794b72ac017c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f31fdb92a5acff16b1d6e8001ea88931a9a22ab
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543261"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525369"
 ---
 # <a name="how-to-programmatically-send-email"></a>方法: プログラムによって電子メールを送信する
   この例では、電子メールアドレスにドメイン名 **example.com** がある連絡先に電子メールメッセージを送信します。
@@ -38,7 +40,7 @@ ms.locfileid: "85543261"
 - メールアドレスにドメイン名が **example.com** されている連絡先。
 
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
- ドメイン名 **example.com**を検索するフィルターコードは削除しないでください。 フィルターを削除すると、ソリューションからすべての連絡先に電子メールメッセージが送信されます。
+ ドメイン名 **example.com** を検索するフィルターコードは削除しないでください。 フィルターを削除すると、ソリューションからすべての連絡先に電子メールメッセージが送信されます。
 
 ## <a name="see-also"></a>関連項目
 - [メールアイテムの操作](../vsto/working-with-mail-items.md)

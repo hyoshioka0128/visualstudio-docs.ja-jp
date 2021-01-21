@@ -1,5 +1,7 @@
 ---
 title: 動的ツールウィンドウを開く |Microsoft Docs
+description: 動的ツールウィンドウについて説明します。これは、UI コンテキストが適用されなくなったときに、特定の UI コンテキストが適用されるたびに開きます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,15 +12,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a06cea6d9de4271572457dc9fe6473b5c969b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12b08f676e02a9023374c709aa18edfc0e8815db
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903710"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863516"
 ---
 # <a name="open-a-dynamic-tool-window"></a>動的ツールウィンドウを開く
-ツールウィンドウは、通常、メニューのコマンドから、または同等のキーボードショートカットによって開かれます。 ただし、特定の UI コンテキストが適用されるたびに表示されるツールウィンドウが必要になる場合があり、UI コンテキストが適用されなくなると、が終了します。 これらの種類のツールウィンドウは、 *動的* または *自動で表示*されます。
+ツールウィンドウは、通常、メニューのコマンドから、または同等のキーボードショートカットによって開かれます。 ただし、特定の UI コンテキストが適用されるたびに表示されるツールウィンドウが必要になる場合があり、UI コンテキストが適用されなくなると、が終了します。 これらの種類のツールウィンドウは、 *動的* または *自動で表示* されます。
 
 > [!NOTE]
 > 定義済みの UI コンテキストの一覧については、「」を参照してください <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> 。
@@ -32,9 +34,9 @@ ms.locfileid: "85903710"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>動的ツールウィンドウを開くには
 
-1. **DynamicToolWindow**という名前の VSIX プロジェクトを作成し、 *DynamicWindowPane.cs*という名前のツールウィンドウ項目テンプレートを追加します。 詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
+1. **DynamicToolWindow** という名前の VSIX プロジェクトを作成し、 *DynamicWindowPane.cs* という名前のツールウィンドウ項目テンプレートを追加します。 詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
 
-2. *DynamicWindowPanePackage.cs*ファイルで、DynamicWindowPanePackage 宣言を見つけます。 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ツールウィンドウを登録するには、属性と属性を追加します。
+2. *DynamicWindowPanePackage.cs* ファイルで、DynamicWindowPanePackage 宣言を見つけます。 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ツールウィンドウを登録するには、属性と属性を追加します。
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]

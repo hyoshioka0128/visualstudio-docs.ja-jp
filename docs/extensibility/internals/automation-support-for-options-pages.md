@@ -1,5 +1,7 @@
 ---
 title: オプションページのオートメーションサポート |Microsoft Docs
+description: Vspackage のカスタムツールオプションページを Visual Studio オートメーションモデルで使用できるようにする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe45238948d5b4cdebbf9f002f6b242515e7622e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e15b1f8bdd27e013e1ef2060d9867a81e8ddde3
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709932"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190032"
 ---
 # <a name="automation-support-for-options-pages"></a>オプションページのオートメーションサポート
-Vspackage では、の [**ツール**] メニュー ([**ツール**] [オプション] ページ) にカスタム**オプション**のダイアログボックスを表示し、オートメーションモデルで使用できるようにすることができ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
+Vspackage では、の [**ツール**] メニュー ([**ツール**] [オプション] ページ) にカスタム **オプション** のダイアログボックスを表示し、オートメーションモデルで使用できるようにすることができ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
 ## <a name="tools-options-pages"></a>[ツール] メニューの [オプション] ページ
- **ツールオプション**ページを作成するには、VSPackage が VSPackage のメソッド実装を通じて環境に返されるユーザーコントロールの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> ます。 (または、マネージコードの場合は <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> メソッドです)。
+ **ツールオプション** ページを作成するには、VSPackage が VSPackage のメソッド実装を通じて環境に返されるユーザーコントロールの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> ます。 (または、マネージコードの場合は <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> メソッドです)。
 
  これは省略可能ですが、オートメーションモデルを通じてこの新しいページにアクセスできるようにすることを強くお勧めします。 次の手順で行うことができます。
 

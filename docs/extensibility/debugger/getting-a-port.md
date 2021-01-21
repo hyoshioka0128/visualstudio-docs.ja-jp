@@ -1,5 +1,7 @@
 ---
 title: ポートを取得する |Microsoft Docs
+description: Visual Studio がデバッグエンジンにポートを提供して、プログラムノードをポートに登録し、プロセス情報の要求を満たす方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf4948e7cb2590136774eab76fbafec91dbfa40
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738638"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560049"
 ---
 # <a name="get-a-port"></a>ポートを取得する
 ポートは、プロセスが実行されているコンピューターへの接続を表します。 このコンピューターは、ローカルコンピューターまたはリモートコンピューターである可能性があります (Windows ベース以外のオペレーティングシステムを実行している可能性があります。詳細については、「 [ポート](../../extensibility/debugger/ports.md) 」を参照してください)。
@@ -100,4 +102,4 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
 - [プログラムを登録しています](../../extensibility/debugger/registering-the-program.md)
 - [プログラムのデバッグを有効にする](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
 - [ポートサプライヤー](../../extensibility/debugger/port-suppliers.md)
-- [ポート](../../extensibility/debugger/ports.md)
+- [Ports](../../extensibility/debugger/ports.md)

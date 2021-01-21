@@ -1,6 +1,8 @@
 ---
 title: マネージコードのレガシ分析
 ms.date: 06/12/2019
+description: Visual Studio でのレガシ分析について説明します。 警告を非表示にする方法と、手動、自動、チェックインとビルド中に分析を手動で実行する方法を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -10,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6f1f12fa7fca964c857e534c1ffae50efe70b27
+ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238375"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94348659"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Visual Studio でのマネージコードのレガシ分析の概要
 
@@ -26,7 +28,7 @@ Visual Studio では、マネージコードのコード分析を2とおりの�
 分析ツールは、分析中に実行するチェック項目を警告メッセージとして表示します。 警告メッセージは、プログラミングやデザイン上の問題を識別し、可能であれば問題の解決方法を提供します。
 
 > [!NOTE]
-> レガシ分析 (静的コード分析) は、Visual Studio の .NET Core および .NET Standard プロジェクトではサポートされていません。 Msbuild の一部として .NET Core または .NET Standard プロジェクトに対してコード分析を実行すると、 **CA0055: のプラットフォーム \<your.dll> を識別**できなかったというエラーが表示されます。 .NET Core または .NET Standard プロジェクトのコードを分析するには、代わりに [コードアナライザー](../code-quality/roslyn-analyzers-overview.md) を使用します。
+> レガシ分析 (静的コード分析) は、Visual Studio の .NET Core および .NET Standard プロジェクトではサポートされていません。 Msbuild の一部として .NET Core または .NET Standard プロジェクトに対してコード分析を実行すると、 **CA0055: のプラットフォーム \<your.dll> を識別** できなかったというエラーが表示されます。 .NET Core または .NET Standard プロジェクトのコードを分析するには、代わりに [コードアナライザー](../code-quality/roslyn-analyzers-overview.md) を使用します。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE (統合開発環境) の統合
 
@@ -34,7 +36,7 @@ Visual Studio では、マネージコードのコード分析を2とおりの�
 
 プロジェクトをビルドするたびにコード分析を実行するには、プロジェクトの [ **コード分析** ] プロパティページでオプションを選択します。 詳細については、「 [方法: 自動コード分析を有効または無効](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)にする」を参照してください。
 
-プロジェクトでコード分析を手動で実行するには、メニューバーで [**分析**] [  >  **実行コード**分析]  >  **[実行コード分析 \<project> **] の順に選択します。
+プロジェクトでコード分析を手動で実行するには、メニューバーで [ **分析** ] [  >  **実行コード** 分析]  >  **[実行コード分析 \<project>** ] の順に選択します。
 
 ## <a name="rule-sets"></a>規則セット
 
@@ -54,12 +56,12 @@ Public class MyClass
 }
 ```
 
-詳細については、「 [警告の非](../code-quality/in-source-suppression-overview.md)表示」を参照してください。
+詳細については、「[警告を表示しない](../code-quality/in-source-suppression-overview.md)」を参照してください。
 
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、 **Analyze**  >  **[実行コード分析の分析] を選択し、[アクティブな問題を抑制**する] を選択して、すべての警告を抑制できます。
+> プロジェクトを Visual Studio 2017 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、 **Analyze**  >  **[実行コード分析の分析] を選択し、[アクティブな問題を抑制** する] を選択して、すべての警告を抑制できます。
 >
 > ![Visual Studio でコード分析を実行し、問題を抑制する](media/suppress-active-issues.png)
 
@@ -68,7 +70,7 @@ Public class MyClass
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ビルドの**分析**] を選択し、  >  **アクティブな問題を抑制**することによって、すべての警告を抑制できます。
+> プロジェクトを Visual Studio 2019 に移行すると、コード分析の警告が多数発生する可能性があります。 警告を修正する準備ができていない場合は、[ビルドの **分析** ] を選択し、  >  **アクティブな問題を抑制** することによって、すべての警告を抑制できます。
 
 ::: moniker-end
 
@@ -84,7 +86,7 @@ Public class MyClass
 
 ## <a name="team-build-integration"></a>チームビルドの統合
 
-ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)」を参照してください。
+ビルド システムの統合機能を使用すると、分析ツールをビルド プロセスの一環として実行できます。 詳細については、「[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

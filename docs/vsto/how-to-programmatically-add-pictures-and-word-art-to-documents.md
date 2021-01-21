@@ -1,5 +1,8 @@
 ---
 title: プログラムによってドキュメントに画像とワードアートを追加する
+description: デザイン時または実行時に、ドキュメントに画像および描画オブジェクトを追加する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 621051c827b08e66d68bc348401c2a939e279bcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0662c9324aaab8f5a368bc4db300ccff1a0ece33
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538087"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844050"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>方法: プログラムによって文書に画像とワードアートを追加する
   デザイン時または実行時に、画像および描画オブジェクトをドキュメントに追加できます。 ワードアートでは、Microsoft Office Word ドキュメントに装飾的なテキストを追加することができます。 これらの特別なテキスト効果は、ドキュメントに挿入できる、カスタマイズ可能な描画オブジェクトです。
@@ -97,7 +100,7 @@ ms.locfileid: "85538087"
 
 ## <a name="compile-the-code"></a>コードのコンパイル
 
-- *SamplePicture.jpg*という名前の画像が C ドライブに存在している必要があります。
+- *SamplePicture.jpg* という名前の画像が C ドライブに存在している必要があります。
 
 ## <a name="see-also"></a>関連項目
 - [方法: プログラムによって既存のドキュメントを開く](../vsto/how-to-programmatically-open-existing-documents.md)

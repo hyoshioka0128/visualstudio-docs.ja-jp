@@ -1,5 +1,8 @@
 ---
 title: プログラムによってワークシート間でデータと書式設定をコピーする
+description: FillAcrossSheets メソッドを使用して、あるシートの範囲からブック内の他のすべてのシートにデータをコピーする方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07baa23b6fd276e8fb8452934dc6361544d16038
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546108"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523185"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>方法: プログラムによってワークシート間でデータと書式設定をコピーする
   メソッドを使用して、あるシートの範囲のデータをブック内の他のすべてのシートにコピーでき <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> ます。 範囲を指定し、データ、書式設定、またはその両方をコピーするかどうかを指定します。

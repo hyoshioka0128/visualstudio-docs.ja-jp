@@ -86,7 +86,7 @@
         - name: Azure クラウド サービス テンプレート
           href: python-azure-cloud-service-project-template.md
     - name: Azure SDK for Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: 使い方ガイド
   items:
     - name: Python 環境を管理する

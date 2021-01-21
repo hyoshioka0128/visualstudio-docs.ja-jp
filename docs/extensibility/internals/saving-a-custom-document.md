@@ -1,5 +1,7 @@
 ---
 title: カスタムドキュメントを保存する |Microsoft Docs
+description: Visual Studio IDE に追加するプロジェクトの種類のカスタムドキュメントに対して発生するプロセスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04d588b4becfa778407269849032ea8ec56fb3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2d2aa249d6944e33ab9556000c483efdec78f20
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705609"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875680"
 ---
 # <a name="saving-a-custom-document"></a>カスタム ドキュメントの保存
-環境は、[ **保存**]、[名前を付け **て保存**]、および [ **すべてを保存** ] コマンドを処理します。 ユーザーが [**ファイル**の保存]、[名前を付け**て保存**]、**または [すべて**を保存]**をクリックする**と、すべて保存が行われるため、次のプロセスが実行されます。
+環境は、[ **保存**]、[名前を付け **て保存**]、および [ **すべてを保存** ] コマンドを処理します。 ユーザーが [**ファイル** の保存]、[名前を付け **て保存**]、**または [すべて** を保存]**をクリックする** と、すべて保存が行われるため、次のプロセスが実行されます。
 
  ![ユーザーエディターの保存](../../extensibility/internals/media/private.gif "プライベート") カスタムエディターのすべてのコマンド処理を保存、名前を付けて保存、および保存する
 

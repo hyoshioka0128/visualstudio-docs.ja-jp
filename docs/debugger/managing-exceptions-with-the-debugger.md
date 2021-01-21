@@ -1,6 +1,7 @@
 ---
 title: デバッガーでの例外の管理 | Microsoft Docs
-ms.custom: seodec18
+description: デバッガーが中断する例外を指定する方法、デバッガーを中断するポイント、中断を処理する方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -33,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff28944a36d338230a17cd533a4832452e42885b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348458"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240271"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーでの例外の管理
 
@@ -53,7 +54,7 @@ ms.locfileid: "85348458"
 - [マイ コードのみ](../debugger/just-my-code.md)を設定済みで、ユーザー コードで処理されないすべての例外でデバッガーの実行が中断されるように設定されている。
 
 > [!NOTE]
-> ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ**がオフの場合、実行は中断されません。 例については、以下の「[ユーザーが処理しない例外での続行をデバッガーに指定する](#BKMK_UserUnhandled)」をご覧ください。
+> ASP.NET は、エラー ページをブラウザーに表示する最上位の例外ハンドラーを持っています。 **マイ コードのみ** がオフの場合、実行は中断されません。 例については、以下の「[ユーザーが処理しない例外での続行をデバッガーに指定する](#BKMK_UserUnhandled)」をご覧ください。
 
 <!-- Two consecutive notes are intentional here...-->
 
@@ -145,7 +146,7 @@ ms.locfileid: "85348458"
 
 [マイ コードのみ](../debugger/just-my-code.md)を使用して .NET コードまたは JavaScript コードをデバッグする場合、ユーザー コードでは処理されない、他の場所で処理される例外では中断しないよう、デバッガーで指定できます。
 
-1. **[例外設定]** ウィンドウで、列ラベルを右クリックしてショートカット メニューを開き、 **[列の表示] > [追加のアクション]** を選択します。 (このコマンドは、**マイ コードのみ**をオフにしている場合は表示されません)。 **[追加のアクション]** という名前の 3 番目の列が表示されます。
+1. **[例外設定]** ウィンドウで、列ラベルを右クリックしてショートカット メニューを開き、 **[列の表示] > [追加のアクション]** を選択します。 (このコマンドは、**マイ コードのみ** をオフにしている場合は表示されません)。 **[追加のアクション]** という名前の 3 番目の列が表示されます。
 
    ![[追加のアクション] 列](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
 
@@ -216,14 +217,13 @@ public class GenericException<T> : Exception
 
    ![例外用の追加の条件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 条件行ごとにモジュール名を入力し、比較演算子リストを **[次の値と等しい]** または **[次の値と等しくない]** に変更します。 モジュールを複数指定したい場合は、名前にワイルドカード ( **\\\*** ) を指定することも可能です。
+3. 条件行ごとにモジュール名を入力し、比較演算子リストを **[次の値と等しい]** または **[次の値と等しくない]** に変更します。 モジュールを複数指定するには、名前にワイルドカード (* *\\\** _) を指定することもできます。
 
-4. 条件を削除する場合は、条件行の末尾の **X** を選択します。
+4. 条件を削除する場合は、条件行の末尾の _ *X** を選択します。
 
 ## <a name="see-also"></a>関連項目
 
 - [例外後の実行の継続](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [方法: 例外の後にシステム コードを調べる](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 - [方法: ネイティブ ランタイム チェックを使用する](../debugger/how-to-use-native-run-time-checks.md)<br/>
-- [C ランタイム ライブラリなしのランタイム チェックを使用する](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [デバッガーでのはじめに](../debugger/debugger-feature-tour.md)

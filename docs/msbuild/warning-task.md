@@ -1,5 +1,7 @@
 ---
 title: Warning タスク | Microsoft Docs
+description: MSBuild で Warning タスクを使用して、条件付きステートメントの評価に基づいてビルド中の警告をログに記録する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e95b59b4ccc0bd2df89e45512a5bdd05c027556
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ce7104c08ce8f18672bf4d2df93debc3c1d19983
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77631095"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047810"
 ---
 # <a name="warning-task"></a>Warning タスク
 
@@ -40,7 +42,7 @@ ms.locfileid: "77631095"
 | `HelpKeyword` | 省略可能な `String` 型のパラメーターです。<br /><br /> 警告に関連付けるヘルプ キーワード。 |
 | `Text` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Condition` パラメーターが `true` と評価された場合に MSBuild によってログに記録される警告テキストです。 |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>注釈
 
  `Warning` タスクを使用すると、MSBuild プロジェクトにおいて、必要な構成やプロパティが存在していることを確認してから次のビルド手順に進むことができます。
 

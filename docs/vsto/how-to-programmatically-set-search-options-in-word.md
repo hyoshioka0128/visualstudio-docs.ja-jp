@@ -1,5 +1,7 @@
 ---
 title: '方法: プログラムによって Word の検索オプションを設定する'
+description: Visual Studio を使用して、Microsoft Word での選択項目の検索オプションをプログラムで設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 434dfc85ed6c4e03c7c610a497bd063ce1826c62
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546992"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528554"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>方法: プログラムによって Word の検索オプションを設定する
   Microsoft Office Word 文書で選択する検索オプションを設定するには、次の2つの方法があります。
@@ -38,7 +40,7 @@ ms.locfileid: "85546992"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>検索オブジェクトを使用して検索オプションを設定するには
 
-1. オブジェクトのプロパティを設定し <xref:Microsoft.Office.Interop.Word.Find> て、[ **検索**する文字列] テキストの選択範囲を前方に検索します。
+1. オブジェクトのプロパティを設定し <xref:Microsoft.Office.Interop.Word.Find> て、[ **検索** する文字列] テキストの選択範囲を前方に検索します。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "85546992"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>Execute メソッドの引数を使用して検索オプションを設定するには
 
-1. 検索条件をメソッドのパラメーターとして渡して、検索 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> するテキストの選択**find me**範囲を前方に検索します。
+1. 検索条件をメソッドのパラメーターとして渡して、検索 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> するテキストの選択範囲を前方に検索します。
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

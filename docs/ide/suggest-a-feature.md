@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d8106463f306ddbc3fe6aefb337935cbe0d316c
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.openlocfilehash: a17f196f48b053f8b834b8fd25b8c0295e42b547
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88114213"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668899"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>Visual Studio の機能を提案する
 
-現在、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com)上では問題を報告する機能を利用できますが、これと並んで機能を提案するための新しいエクスペリエンスが導入されました。 これは、Visual Studio の開発ワークフローと直接交流することができる、新しい便利な方法です。
+現在、[Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)上では問題を報告する機能を利用できますが、これと並んで機能を提案するための新しいエクスペリエンスが導入されました。 これは、Visual Studio の開発ワークフローと直接交流することができる、新しい便利な方法です。
 
 ![開発者コミュニティの [機能を提案する] ボタン](media/suggest-a-feature/suggest-feature-button.png)
 
@@ -25,7 +25,7 @@ Visual Studio のメイン ウィンドウの右上にある **[フィードバ�
 
 ![Visual Studio の [提案の送信] メニュー](media/suggest-a-feature/provide-suggestion.png)
 
-**[提案の送信]** を選択すると、[開発者コミュニティ](https://developercommunity.visualstudio.com)に移動するので、そこで提案を入力できます。
+**[提案の送信]** を選択すると、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)に移動するので、そこで提案を入力できます。
 
 ## <a name="user-voice"></a>User Voice
 

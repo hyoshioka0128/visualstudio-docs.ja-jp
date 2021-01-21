@@ -1,5 +1,7 @@
 ---
-title: プロジェクトシステムを拡張するための IDE 定義コマンド |Microsoft Docs
+title: プロジェクトシステムを拡張するためのコマンドを IDE-Defined |Microsoft Docs
+description: プロジェクトシステムの拡張に使用される Visual Studio 統合開発環境 (IDE) で定義されているコマンドとコマンドグループについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5d5147f4e03b019b083613a77afe95b95e9e033a
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707731"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761167"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>プロジェクト システムを拡張するための IDE 定義コマンド
 プロジェクトシステムを拡張する場合は、IDE によって提供されるコマンドとコマンドグループを使用でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
@@ -28,11 +30,11 @@ ms.locfileid: "80707731"
 
 |コマンドメニュー|説明|
 |------------------|-----------------|
-|IDM_VS_MENU_PROJECT|**プロジェクト**のトップレベルメニュー。|
-|IDM_VS_TOOL_PROJWIN|**ソリューションエクスプローラー**ツールバー。|
+|IDM_VS_MENU_PROJECT|**プロジェクト** のトップレベルメニュー。|
+|IDM_VS_TOOL_PROJWIN|**ソリューションエクスプローラー** ツールバー。|
 
 ## <a name="shortcut-menus"></a>ショートカット メニュー
- 次の表は、 **ソリューションエクスプローラー**で1つのノードが選択されたとき、または選択されたすべてのノードが同じ種類である場合に、 **ソリューションエクスプローラー**に複数の同種選択があるときに適用されるショートカットメニューを示しています。
+ 次の表は、 **ソリューションエクスプローラー** で1つのノードが選択されたとき、または選択されたすべてのノードが同じ種類である場合に、 **ソリューションエクスプローラー** に複数の同種選択があるときに適用されるショートカットメニューを示しています。
 
 |ショートカットメニュー|説明|
 |-------------------|-----------------|

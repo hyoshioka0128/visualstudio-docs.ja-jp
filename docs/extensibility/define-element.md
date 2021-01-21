@@ -1,5 +1,7 @@
 ---
 title: Define Element |Microsoft Docs
+description: Define 要素は、シンボル名と値のペアを定義します。 このシンボルは、条件付き属性で評価できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712269"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996241"
 ---
 # <a name="define-element"></a>Define 要素
 シンボル名と値のペアを定義します。 このシンボルは、条件付き属性で評価できます。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。 [Symbols 要素](../extensibility/symbols-element.md)も参照してください。
@@ -34,8 +36,8 @@ ms.locfileid: "80712269"
 
 |属性|説明|
 |---------------|-----------------|
-|name|必須です。 シンボルの名前。<br /><br /> name = "Mode"|
-|value|必須です。 シンボルの値。<br /><br /> 値 = "Standard"|
+|name|必須。 シンボルの名前。<br /><br /> name = "Mode"|
+|値|必須。 シンボルの値。<br /><br /> 値 = "Standard"|
 |条件|省略可能。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素

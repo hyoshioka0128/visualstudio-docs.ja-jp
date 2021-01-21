@@ -9,19 +9,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 455ca0d2032e1f30fc5f70eaac9518b2774b03c7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772134"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038401"
 ---
 # <a name="profile-aspnet-load-tests"></a>ASP.NET ロード テストのプロファイリング
 ASP.NET Web サイト プロジェクトに対して実行する自動 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Web テストからプロファイル データを収集できます。 収集できるのは、サンプリング データと階層相互作用データです。 詳細については、次のトピックを参照してください。
 
-- [(NIB) 方法: Web パフォーマンス テスト エディターから Web アプリケーションのパフォーマンス セッションを実行する](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
+- [(NIB) 方法: Web パフォーマンス テスト エディターから Web アプリケーションのパフォーマンス セッションを実行する](/previous-versions/ff356203(v=vs.100))
 
-- [方法: Visual Studio でテストの設定を使用して、ロード テスト用の ASP.NET プロファイラーを構成する](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
+- [方法: Visual Studio でテストの設定を使用して、ロード テスト用の ASP.NET プロファイラーを構成する](/previous-versions/dd504817(v=vs.140))
 
 ## <a name="see-also"></a>参照
 - [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)

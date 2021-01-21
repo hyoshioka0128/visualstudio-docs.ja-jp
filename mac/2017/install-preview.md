@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
-ms.openlocfilehash: 6640a03523994b845d90f45ff6323126f462068a
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: aecc309cfd9bf4af59e10cda8b33e43bb5e75d7c
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950643"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862475"
 ---
 # <a name="install-a-preview-release"></a>プレビュー リリースをインストールする
 
 > [!NOTE]
-> Visual Studio 2019 for Mac プレビューを[インストール](/visualstudio/mac/installation/?view=vsmac-2019)し、テストできるようになりました。
+> Visual Studio 2019 for Mac プレビューを[インストール](./installation.md?view=vsmac-2019)し、テストできるようになりました。
 
 ## <a name="install-an-update-for-visual-studio-for-mac"></a>Visual Studio for Mac の更新プログラムをインストールする
 

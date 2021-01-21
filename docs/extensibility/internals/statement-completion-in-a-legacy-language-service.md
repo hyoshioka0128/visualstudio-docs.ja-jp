@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでのステートメント入力候補 |Microsoft Docs
+description: ステートメントの入力候補の動作と、従来の言語サービスで VSPackage に実装する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbeb360cf5bc0f74d6b2d9b93086382dd35da988
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704943"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97877768"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>従来の言語サービスでのステートメント入力補完
 ステートメント入力候補は、ユーザーがコアエディターで入力を開始した言語キーワードまたは要素をユーザーが終了するのを言語サービスが支援するプロセスです。 このトピックでは、ステートメントの入力候補の動作と、言語サービスでのその実装方法について説明します。
@@ -36,5 +38,5 @@ ms.locfileid: "80704943"
 
  エディターでトリガーを入力すると (具体的にはテキストバッファー)、言語サービスはメソッドを呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> ます。 これにより、エディターによって UI が表示され、ユーザーはステートメント入力候補の候補から選択できるようになります。 このメソッド <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> では、パラメーターとしておよびフラグを実装する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> ます。 完了項目の一覧がスクロールリストボックスに表示されます。 ユーザーが入力を続けると、リストボックス内の選択内容が更新され、最後に入力された文字に最も近い一致が反映されます。 コアエディターは、ステートメント入力候補用の UI を実装しますが、言語サービスは、その <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> ステートメントの候補となる候補項目のセットを定義するインターフェイスを実装する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [従来の言語サービスのコマンドの受信](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

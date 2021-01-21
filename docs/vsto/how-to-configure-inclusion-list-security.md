@@ -1,5 +1,7 @@
 ---
 title: '方法: 信頼のリストのセキュリティを構成する'
+description: 信頼の決定を包含リストに保存することによって、Office ソリューションをインストールするオプションをエンドユーザーに付与するかどうかを制御するには、ClickOnce の信頼プロンプトを構成します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 459cf3f33197939a916a5f11a94bbaf09e8142e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541636"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846728"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>方法: 信頼のリストのセキュリティを構成する
   管理者のアクセス許可を持っている場合は、信頼の決定を [信頼の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 決定] の一覧に保存することによって、エンドユーザーに Office ソリューションのインストールオプションを提供するかどうかを制御する信頼プロンプトを構成できます。 包含リストの詳細については、「 [信頼リストを使用した Office ソリューションの信頼](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)」を参照してください。
@@ -46,21 +48,21 @@ ms.locfileid: "85541636"
 
 2. 次のレジストリキーを探します。
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値**として追加します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値** として追加します。
 
-    |文字列値サブキー|値|
+    |文字列値サブキー|[値]|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
     |**UntrustedSites**|**Disabled**|
-    |**MyComputer**|**Enabled**|
-    |**LocalIntranet**|**Enabled**|
-    |**TrustedSites**|**Enabled**|
+    |**MyComputer**|**有効**|
+    |**LocalIntranet**|**有効**|
+    |**TrustedSites**|**有効**|
 
-     既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ**ています。
+     既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ** ています。
 
 ### <a name="to-enable-the-inclusion-list-programmatically"></a>プログラムによって信頼の一覧を有効にするには
 
@@ -105,13 +107,13 @@ ms.locfileid: "85541636"
 
 2. 次のレジストリキーを探します。
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
      キーが存在しない場合は、作成します。
 
-3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値**として追加します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値** として追加します。
 
-    |文字列値サブキー|値|
+    |文字列値サブキー|[値]|
     |-------------------------|-----------|
     |**UntrustedSites**|**Disabled**|
     |**Internet**|**AuthenticodeRequired**|
@@ -119,7 +121,7 @@ ms.locfileid: "85541636"
     |**LocalIntranet**|**AuthenticodeRequired**|
     |**TrustedSites**|**AuthenticodeRequired**|
 
-     既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ**ています。
+     既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ** ています。
 
 ### <a name="to-restrict-the-inclusion-list-programmatically"></a>プログラムによって包含一覧を制限するには
 
@@ -164,11 +166,11 @@ ms.locfileid: "85541636"
 
 2. まだ存在しない場合は、次のレジストリキーを作成します。
 
-     **\ HKEY_LOCAL_MACHINE \SOFTWARE\MICROSOFT \\ 。NETFramework\Security\TrustManager\PromptingLevel**
+     **\ HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\ 。NETFramework\Security\TrustManager\PromptingLevel**
 
-3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値**として追加します。
+3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値** として追加します。
 
-    |文字列値サブキー|値|
+    |文字列値サブキー|[値]|
     |-------------------------|-----------|
     |**UntrustedSites**|**Disabled**|
     |**Internet**|**Disabled**|

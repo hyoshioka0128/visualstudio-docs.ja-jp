@@ -1,5 +1,7 @@
 ---
 title: 共通言語ランタイム式エバリュエーター | を記述するMicrosoft Docs
+description: デバッグ対象のコード言語で式を評価する共通言語ランタイムの式エバリュエーターの記述について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e46eaef395a7c66792662b3c5d4b9fbad419dfb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712321"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996319"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>共通言語ランタイムの式エバリュエーターの記述
 > [!IMPORTANT]
@@ -44,5 +46,5 @@ ms.locfileid: "80712321"
 
  [型ビジュアライザーとカスタムビューアーを実装](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) する型ビジュアライザーおよびカスタムビューアーをサポートするコンポーネントによって実装する必要があるインターフェイスについて説明します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
  [Visual Studio デバッガーの機能拡張](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -1,5 +1,7 @@
 ---
-title: 方法 - ネイティブ コードのスレッド名を設定する | Microsoft Docs
+title: ネイティブ コードのスレッド名を設定する | Microsoft Docs
+description: Visual Studio でのマルチスレッド アプリのデバッグ中に、ネイティブ コードのスレッド名を設定します。 スレッド名の設定は、[スレッド] ウィンドウでスレッドを追跡するために使用されます。
+ms.custom: SEO-VS-2020
 ms.date: 12/17/2018
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349147"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149522"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>方法: ネイティブ コードのスレッド名を設定する
 スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 スレッドの名前付けは、実行中のプロセスをデバッグするときに、 **[スレッド]** ウィンドウで対象のスレッドを識別するために役立ちます。 スレッドにわかりやすい名前を付けると、クラッシュ ダンプ検査を介して事後デバッグを実行するときや、さまざまなツールを使用してパフォーマンス キャプチャを分析するときにも役立ちます。

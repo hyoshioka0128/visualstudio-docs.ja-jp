@@ -1,6 +1,7 @@
 ---
 title: プロパティの型が一致しません
-description: 関連付けを作成できません - プロパティの型が一致しません。
+description: 関連付けを作成できません-プロパティの型が一致しません。 この Visual Studio オブジェクトリレーショナルデザイナー (O/R デザイナー) メッセージに関する情報を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
@@ -9,18 +10,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76d61361677923afda6125db1ae819a460a567f4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 8413ffd8b5bf2af4c4d7272173a9cb4d0fbf6cbc
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743185"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518467"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>関連付け &lt;association name&gt; を作成できません - プロパティの型が一致しません。
 
 関連付けを作成できません \<association name> -プロパティの型が一致しません。 プロパティに一致する型がありません: \<property names> 。
 
-関連付けは、**[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 関連付けの両側のプロパティは、同じデータ型である必要があります。
+関連付けは、 **[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 関連付けの両側のプロパティは、同じデータ型である必要があります。
 
 メッセージに示されているプロパティが同じデータ型ではありません。
 

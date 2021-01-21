@@ -1,5 +1,7 @@
 ---
 title: プロパティウィンドウの概要 |Microsoft Docs
+description: この概要では、Visual Studio IDE のプロパティウィンドウとの対話に使用するインターフェイスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 445a43cec976f363873c89dfe9b8e05429aebaf2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 712c3c5b5c0b94932abba602a841977e0601d3b3
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706029"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875896"
 ---
 # <a name="properties-window-overview"></a>プロパティ ウィンドウの概要
 [ **プロパティ** ] ウィンドウは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) で使用できる2つの主要な種類のウィンドウで選択されたオブジェクトのプロパティを表示するために使用されます。 この2種類のウィンドウは次のとおりです。
@@ -48,6 +50,6 @@ ms.locfileid: "80706029"
 
  の詳細については `IDispatch` 、MSDN ライブラリを参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)
 - [プロパティ ウィンドウのフィールドとインターフェイス](../../extensibility/internals/properties-window-fields-and-interfaces.md)

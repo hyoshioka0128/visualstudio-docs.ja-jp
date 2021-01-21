@@ -1,5 +1,7 @@
 ---
 title: CL タスク | Microsoft Docs
+description: Microsoft C++ コンパイラ ツールである cl.exe をラップする、MSBuild CL タスクの目的とパラメーターについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,20 +23,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
+ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78865337"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92796837"
 ---
 # <a name="cl-task"></a>CL タスク
 
-Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コンパイラは、実行可能ファイル ( *.exe*)、ダイナミック リンク ライブラリ ( *.dll*) ファイル、またはコード モジュール ( *.netmodule*) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
+Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コンパイラは、実行可能ファイル ( *.exe* )、ダイナミック リンク ライブラリ ( *.dll* ) ファイル、またはコード モジュール ( *.netmodule* ) ファイルを生成します。 詳細については、「[コンパイラ オプション](/cpp/build/reference/compiler-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
 
- 次の一覧では、**CL** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
+ 次の一覧では、 **CL** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 - **AdditionalIncludeDirectories**
 
@@ -64,13 +66,13 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な String 型のパラメーター。
 
-   コマンド ラインで常に出力される文字列。 既定値は " **/c**" です。
+   コマンド ラインで常に出力される文字列。 既定値は " **/c** " です。
 
 - **AssemblerListingLocation**
 
    アセンブリ コードを含むリスティング ファイルを作成します。
 
-   詳細については、「[/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/Fa** オプションに関する記述を参照してください。
+   詳細については、「 [/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/Fa** オプションに関する記述を参照してください。
 
 - **AssemblerOutput**
 
@@ -90,7 +92,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
   - **All** -  **/FAcs**
 
-    詳細については、「[/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/FA**、 **/FAc**、 **/FAs**、および **/FAcs** の各オプションに関する記述を参照してください。
+    詳細については、「 [/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/FA** 、 **/FAc** 、 **/FAs** 、および **/FAcs** の各オプションに関する記述を参照してください。
 
 - **BasicRuntimeChecks**
 
@@ -116,7 +118,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    `true` の場合は、ブラウザー情報ファイルが作成されます。
 
-   詳細については、「[/FR、/Fr (.sbr ファイルの作成)](/cpp/build/reference/fr-fr-create-dot-sbr-file)」の **/FR** オプションに関する記述を参照してください。
+   詳細については、「 [/FR、/Fr (.sbr ファイルの作成)](/cpp/build/reference/fr-fr-create-dot-sbr-file)」の **/FR** オプションに関する記述を参照してください。
 
 - **BrowseInformationFile**
 
@@ -124,7 +126,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    ブラウザー情報ファイルのファイル名を指定します。
 
-   詳細については、この表の **BrowseInformation** パラメーターを参照してください。また、「[/FR、/Fr (.sbr ファイルの作成)](/cpp/build/reference/fr-fr-create-dot-sbr-file)」も参照してください。
+   詳細については、この表の **BrowseInformation** パラメーターを参照してください。また、「 [/FR、/Fr (.sbr ファイルの作成)](/cpp/build/reference/fr-fr-create-dot-sbr-file)」も参照してください。
 
 - **BufferSecurityCheck**
 
@@ -196,7 +198,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な Boolean 型のパラメーター。
 
-   `true` の場合は、*ホット パッチ*用のイメージを準備するようにコンパイラに指示します。 このパラメーターを使用することで、各関数の最初の命令が確実にホットパッチに必要な 2 バイトになります。
+   `true` の場合は、 *ホット パッチ* 用のイメージを準備するようにコンパイラに指示します。 このパラメーターを使用することで、各関数の最初の命令が確実にホットパッチに必要な 2 バイトになります。
 
    詳細については、「[/hotpatch (ホットパッチ可能なイメージの作成)](/cpp/build/reference/hotpatch-create-hotpatchable-image)」を参照してください。
 
@@ -204,7 +206,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な String 型のパラメーター。
 
-   プログラムに対して作成するデバッグ情報の種類を選択し、デバッグ情報をオブジェクト ( *.obj*) ファイルに保存するのかプログラム データベース (PDB) に保存するのかを選択します。
+   プログラムに対して作成するデバッグ情報の種類を選択し、デバッグ情報をオブジェクト ( *.obj* ) ファイルに保存するのかプログラム データベース (PDB) に保存するのかを選択します。
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
@@ -222,7 +224,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    **true** の場合は、ANSI C や ANSI C++ と互換性のない言語コンストラクトに対してエラーを出力するようコンパイラに指示します。
 
-   詳細については、「[/Za、/Ze (言語拡張機能の無効化)](/cpp/build/reference/za-ze-disable-language-extensions)」の **/Za** オプションに関する記述を参照してください。
+   詳細については、「 [/Za、/Ze (言語拡張機能の無効化)](/cpp/build/reference/za-ze-disable-language-extensions)」の **/Za** オプションに関する記述を参照してください。
 
 - **DisableSpecificWarnings**
 
@@ -266,7 +268,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な String 型のパラメーター。
 
-   内部コンパイル エラー (ICE) 情報を Microsoft に直接報告できます。 既定では、IDE ビルドの設定は **Prompt**、コマンド ライン ビルドの設定は **Queue** になります。
+   内部コンパイル エラー (ICE) 情報を Microsoft に直接報告できます。 既定では、IDE ビルドの設定は **Prompt** 、コマンド ライン ビルドの設定は **Queue** になります。
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
@@ -328,7 +330,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    `true` の場合は、信頼性の高い浮動小数点例外モデルが有効になります。 例外は発生直後にスローされます。
 
-   詳細については、「[/fp (浮動小数点の動作の指定)](/cpp/build/reference/fp-specify-floating-point-behavior)」の /**fp:except** オプションに関する記述を参照してください。
+   詳細については、「 [/fp (浮動小数点の動作の指定)](/cpp/build/reference/fp-specify-floating-point-behavior)」の / **fp:except** オプションに関する記述を参照してください。
 
 - **FloatingPointModel**
 
@@ -454,7 +456,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な `Boolean` 型のパラメーターです。
 
-   `true` の場合は、オブジェクト ( *.obj*) ファイルの既定の C ランタイム ライブラリ名が省略されます。 既定では、コンパイラでライブラリ名が *.obj* ファイルにプッシュされ、リンカーに適切なライブラリが示されます。
+   `true` の場合は、オブジェクト ( *.obj* ) ファイルの既定の C ランタイム ライブラリ名が省略されます。 既定では、コンパイラでライブラリ名が *.obj* ファイルにプッシュされ、リンカーに適切なライブラリが示されます。
 
    詳細については、「[/Zl (既定のライブラリ名の省略)](/cpp/build/reference/zl-omit-default-library-name)」を参照してください。
 
@@ -496,7 +498,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な **String** 型のパラメーターです。
 
-   ビルド時にプリコンパイル済みヘッダー ( *.pch*) ファイルを作成または使用します。
+   ビルド時にプリコンパイル済みヘッダー ( *.pch* ) ファイルを作成または使用します。
 
    次のいずれかの値を指定します。各値はコマンド ライン オプションに対応しています。
 
@@ -574,7 +576,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な `Integer` 型のパラメーターです。
 
-   マルチプロセッサ コンパイル時に使用するプロセッサの最大数を指定します。 このパラメーターは、**MultiProcessorCompilation** パラメーターと組み合わせて使用します。
+   マルチプロセッサ コンパイル時に使用するプロセッサの最大数を指定します。 このパラメーターは、 **MultiProcessorCompilation** パラメーターと組み合わせて使用します。
 
 - **ProgramDataBaseFileName**
 
@@ -624,7 +626,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    `true` の場合、値がより小さいデータ型に割り当てられ、データ損失が発生したときに、ランタイム エラーが報告されます。
 
-   詳細については、「[/RTC (ランタイム エラー チェック)](/cpp/build/reference/rtc-run-time-error-checks)」の **/RTCc** オプションに関する記述を参照してください。
+   詳細については、「 [/RTC (ランタイム エラー チェック)](/cpp/build/reference/rtc-run-time-error-checks)」の **/RTCc** オプションに関する記述を参照してください。
 
 - **Sources**
 
@@ -684,7 +686,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    指定したコンパイラ警告の一覧をエラーとして扱います。
 
-   詳細については、「[/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/we**`n` オプションをご覧ください。
+   詳細については、「 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/we**`n` オプションをご覧ください。
 
 - **TreatWarningAsError**
 
@@ -692,7 +694,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    `true` の場合、コンパイラが生成する警告がすべてエラーとして扱われます。
 
-   詳細については、「[/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/WX** オプションをご覧ください。
+   詳細については、「 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/WX** オプションをご覧ください。
 
 - **TreatWChar_tAsBuiltInType**
 
@@ -708,7 +710,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    `true` の場合、コンパイラで定義されている Microsoft 固有のシンボルの定義が解除されます。
 
-   詳細については、「[/U、/u (定義済みマクロ シンボルの未定義化)](/cpp/build/reference/u-u-undefine-symbols)」の **/u** オプションに関する記述を参照してください。
+   詳細については、「 [/U、/u (定義済みマクロ シンボルの未定義化)](/cpp/build/reference/u-u-undefine-symbols)」の **/u** オプションに関する記述を参照してください。
 
 - **UndefinePreprocessorDefinitions**
 
@@ -716,7 +718,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    定義を解除する 1 つ以上のプリプロセッサ シンボルの一覧を指定します。
 
-   詳細については、「[/U、/u (定義済みマクロ シンボルの未定義化)](/cpp/build/reference/u-u-undefine-symbols)」の **/U** オプションに関する記述を参照してください。
+   詳細については、「 [/U、/u (定義済みマクロ シンボルの未定義化)](/cpp/build/reference/u-u-undefine-symbols)」の **/U** オプションに関する記述を参照してください。
 
 - **UseFullPaths**
 
@@ -732,7 +734,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    `true` の場合、出力ファイルが UTF-8 形式で作成されます。
 
-   詳細については、「[/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/FAu** オプションに関する記述を参照してください。
+   詳細については、「 [/FA、/Fa (リスティング ファイル)](/cpp/build/reference/fa-fa-listing-file)」の **/FAu** オプションに関する記述を参照してください。
 
 - **WarningLevel**
 
@@ -754,7 +756,7 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
   - **EnableAllWarnings** -  **/Wall**
 
-    詳細については、「[/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/W**_n_ オプションをご覧ください。
+    詳細については、「 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)」(/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX (警告レベル)) の **/W**_n_ オプションをご覧ください。
 
 - **WholeProgramOptimization**
 
@@ -782,17 +784,17 @@ Microsoft C++ コンパイラ ツール *cl.exe* をラップします。 コン
 
    省略可能な `ITaskItem[]` 型のパラメーターです。
 
-   *ファイルの読み取り追跡ログ*を表す項目の配列を指定します。
+   *ファイルの読み取り追跡ログ* を表す項目の配列を指定します。
 
-   ファイルの読み取り追跡ログ ( *.tlog*) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される入力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
+   ファイルの読み取り追跡ログ ( *.tlog* ) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される入力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
 
 - **TLogWriteFiles**
 
    省略可能な `ITaskItem[]` 型のパラメーターです。
 
-   *ファイルの書き込み追跡ログ*を表す項目の配列を指定します。
+   *ファイルの書き込み追跡ログ* を表す項目の配列を指定します。
 
-   ファイルの書き込み追跡ログ ( *.tlog*) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される出力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
+   ファイルの書き込み追跡ログ ( *.tlog* ) には、タスクによって読み取られ、プロジェクト ビルド システムによってインクリメンタル ビルドをサポートするために使用される出力ファイルの名前が含まれています。 詳細については、この表の **TrackerLogDirectory** および **TrackFileAccess** パラメーターを参照してください。
 
 - **TrackFileAccess**
 

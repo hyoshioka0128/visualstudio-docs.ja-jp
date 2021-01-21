@@ -1,5 +1,7 @@
 ---
 title: カスタムスタートページを作成する |Microsoft Docs
+description: カスタムスタートページを作成する方法について説明します。 空白のスタートページから開始し、コントロールを空の UserControl 要素に追加して、ページをテストします。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
@@ -9,12 +11,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: ed35948158866b7d0bbb2e458c8f8bc2f7b3f844
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
+ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903669"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "94974562"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタムスタートページの作成
 
@@ -24,7 +26,7 @@ ms.locfileid: "85903669"
 
 最初に、Visual Studio が認識するタグ構造を持つ *.xaml* ファイルを作成して、空のスタートページを作成します。 次に、マークアップと分離コードを追加して、必要な外観と機能を生成します。
 
-1. **WPF アプリケーション**の種類の新しいプロジェクトを作成します (**Visual C#**  >  **Windows デスクトップ**)。
+1. **WPF アプリケーション** の種類の新しいプロジェクトを作成します (**Visual C#**  >  **Windows デスクトップ**)。
 
 2. `Microsoft.VisualStudio.Shell.14.0` への参照を追加します。
 
@@ -69,9 +71,9 @@ Visual studio のプライマリインスタンスは、Visual Studio がクラ�
 
 ### <a name="to-test-a-manually-created-custom-start-page"></a>手動で作成されたカスタムスタートページをテストするには
 
-1. XAML ファイルと、サポートするテキストファイルまたはマークアップファイルを *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\ *フォルダーにコピーします。
+1. XAML ファイルと、サポートするテキストファイルまたはマークアップファイルを *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\* フォルダーにコピーします。
 
-2. スタートページで、Visual Studio によってインストールされていないアセンブリ内のコントロールまたは型が参照されている場合は、アセンブリをコピーし、 *{Visual studio インストールフォルダー} \Common7\IDE\PrivateAssemblies \\ *に貼り付けます。
+2. スタートページで、Visual Studio によってインストールされていないアセンブリ内のコントロールまたは型が参照されている場合は、アセンブリをコピーし、 *{Visual studio インストールフォルダー} \Common7\IDE\PrivateAssemblies \\* に貼り付けます。
 
 3. Visual Studio のコマンドプロンプトで、「 **devenv/rootsuffix Exp** 」と入力して、visual studio の実験用インスタンスを開きます。
 

@@ -1,5 +1,7 @@
 ---
 title: ビルド ロガー | Microsoft Docs
+description: MSBuild ロガーを使用してビルドの出力を管理およびカスタマイズし、特定のビルド イベントへの応答としてメッセージ、エラー、または警告を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,16 +14,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: c56de103fa116cbf77ec16dc0116a2897e6ccdce
+ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634527"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92353201"
 ---
 # <a name="build-loggers"></a>ビルド ロガー
 
-ロガーを使うと、ビルドの出力をカスタマイズして、特定のビルド イベントに対する応答のメッセージ、エラー、または警告を表示できます。 各ロガーは、*Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ILogger> インターフェイスを実装する .NET クラスとして実装されます。
+ロガーを使うと、ビルドの出力をカスタマイズして、特定のビルド イベントに対する応答のメッセージ、エラー、または警告を表示できます。 各ロガーは、 *Microsoft.Build.Framework.dll* アセンブリで定義されている <xref:Microsoft.Build.Framework.ILogger> インターフェイスを実装する .NET クラスとして実装されます。
 
 ロガーを実装するには 2 つの方法があります。
 
@@ -50,9 +52,9 @@ MSBuild.exe の **-verbosity** スイッチに特定の値が含まれる場合�
 
 ## <a name="specify-a-logger"></a>ロガーを指定する
 
-ロガーがアセンブリにコンパイルされた後は、ビルド中にそのロガーを使うように MSBuild に指示する必要があります。 これは、*MSBuild.exe* で **-logger** スイッチを使って行います。 *MSBuild.exe* で使用可能なスイッチについて詳しくは、「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
+ロガーがアセンブリにコンパイルされた後は、ビルド中にそのロガーを使うように MSBuild に指示する必要があります。 これは、 *MSBuild.exe* で **-logger** スイッチを使って行います。 *MSBuild.exe* で使用可能なスイッチについて詳しくは、「 [コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
 
-次のコマンド ラインは、プロジェクト *MyProject.csproj* をビルドし、*SimpleLogger.dll* で実装されているロガー クラスを使います。 **-nologo** スイッチはバナーと著作権のメッセージを非表示にし、 **-noconsolelogger** スイッチは既定の MSBuild コンソール ロガーを無効にします。
+次のコマンド ラインは、プロジェクト *MyProject.csproj* をビルドし、 *SimpleLogger.dll* で実装されているロガー クラスを使います。 **-nologo** スイッチはバナーと著作権のメッセージを非表示にし、 **-noconsolelogger** スイッチは既定の MSBuild コンソール ロガーを無効にします。
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
@@ -64,7 +66,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
 ### <a name="description"></a>説明
 
@@ -74,7 +76,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
 ### <a name="description"></a>説明
 

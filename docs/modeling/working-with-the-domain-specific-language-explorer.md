@@ -1,5 +1,7 @@
 ---
 title: ドメイン固有言語エクスプローラーの使用
+description: DSL エクスプローラーについて説明します。このツールは、ツリービューに複数の種類の情報を表示し、ドメイン固有言語を定義するための複数のノードを含みます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +11,15 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caf7d395c08a8c1e8c21f933ba63c8943813831b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0bb08f7d6dc6ea41c64cfc9aeb6898eac4df0ae5
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532185"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97360924"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>ドメイン固有言語エクスプローラーの使用
-**DSL エクスプローラー**では、ツリービューに複数の種類の情報が表示されます。 DSL エクスプローラーのほとんどの項目の詳細については、「 [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
+**DSL エクスプローラー** では、ツリービューに複数の種類の情報が表示されます。 DSL エクスプローラーのほとんどの項目の詳細については、「 [Domain-Specific 言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
 
  以下のようなノードがあります。
 
@@ -33,7 +35,7 @@ ms.locfileid: "85532185"
 
 - **ドメインの種類**。 モデル内で使用される組み込み型および外部型の一覧。
 
-- **エディター**。 **ツールボックス**のタブとそれに含まれる項目、およびモデルの検証設定の一覧。 検証の詳細については、「 [ドメイン固有言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
+- **エディター**。 **ツールボックス** のタブとそれに含まれる項目、およびモデルの検証設定の一覧。 検証の詳細については、「 [Domain-Specific 言語での検証](../modeling/validation-in-a-domain-specific-language.md)」を参照してください。
 
 - **エクスプローラーの動作**。 生成されたデザイナー内のエクスプローラーの動作を指定する設定。 エクスプローラーをカスタマイズする方法の詳細については、「 [モデルエクスプローラーのカスタマイズ](../modeling/customizing-the-model-explorer.md)」を参照してください。
 
@@ -43,4 +45,4 @@ ms.locfileid: "85532185"
 
 ## <a name="see-also"></a>関連項目
 
-- [ドメイン固有言語ツールの用語集](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

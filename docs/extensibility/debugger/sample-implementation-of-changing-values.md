@@ -1,5 +1,7 @@
 ---
 title: 値の変更の実装例 |Microsoft Docs
+description: '[ローカル] ウィンドウに表示される各ローカルには、IDebugProperty2 オブジェクトが関連付けられています。 Visual Studio がローカルのの値をメモリ内で更新する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7b712d2a97b02bed215c4996d3309341fb8ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5193fd07c1a891f052814446815bfbc836c6a9a7
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713112"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847729"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値の変更の実装例
 > [!IMPORTANT]
@@ -25,7 +27,7 @@ ms.locfileid: "80713112"
  [ **ローカル] ウィンドウ** に表示される各ローカルには、 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) オブジェクトが関連付けられています。 この `IDebugProperty2` オブジェクトには、ローカルの名前、値、および型が含まれています。 ユーザーがローカルのの値を変更すると、Visual Studio は [Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) を呼び出して、メモリ内のローカルの値を更新します。 この例では、ローカルはインターフェイスを実装するクラスによって表され `CFieldProperty` `IDebugProperty2` ます。
 
 > [!NOTE]
-> **Watch**および**クイックウォッチ**式の場合、変更される値は、MyCEE サンプルのクラスによって表され `CValueProperty` ます。 ただし、の実装 `IDebugProperty2::SetValueAsString` は、ここで示したものと同じです。
+> **Watch** および **クイックウォッチ** 式の場合、変更される値は、MyCEE サンプルのクラスによって表され `CValueProperty` ます。 ただし、の実装 `IDebugProperty2::SetValueAsString` は、ここで示したものと同じです。
 
  の実装では `IDebugProperty2::SetValueAsString` 、次のタスクを実行します。
 

@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションで発生したエラーのトラブルシューティング
+description: Visual Studio で Microsoft Office ソリューションを開発するときに発生する可能性のあるエラーをトラブルシューティングする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
 f1_keywords:
@@ -20,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd12c3dd9cd3c90564351dd1c64cebfe5df6e99d
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234693"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523032"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Office ソリューションで発生したエラーのトラブルシューティング
   Visual Studio で Office ソリューションを開発する際、次のタスクを実行するときに問題が発生する場合があります。
@@ -113,9 +115,9 @@ ms.locfileid: "87234693"
 
  "'Microsoft.Office.Interop.Excel._Application.NewWorkbook' と 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook' の間にあいまいさがあります"
 
- このエラーは、オブジェクトの別のプロパティやメソッドと同じ名前を持つイベントにアクセスしようとしていることを意味します。 イベントにアクセスするには、オブジェクトをその *イベントインターフェイス*にキャストする必要があります。
+ このエラーは、オブジェクトの別のプロパティやメソッドと同じ名前を持つイベントにアクセスしようとしていることを意味します。 イベントにアクセスするには、オブジェクトをその *イベントインターフェイス* にキャストする必要があります。
 
- イベントを持つ Office PIA の型は、すべてのプロパティとメソッドを持つコア インターフェイスと、オブジェクトによって公開されるイベントを含むイベント インターフェイスの、2 つのインターフェイスを実装します。 これらのイベントインターフェイスは、 *objectname*Events*n*_Event (やなど) の名前付け規則を使用し <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> ます。 オブジェクト上で検出できることが予想されるイベントにアクセスできない場合は、オブジェクトをそのイベント インターフェイスにキャストします。
+ イベントを持つ Office PIA の型は、すべてのプロパティとメソッドを持つコア インターフェイスと、オブジェクトによって公開されるイベントを含むイベント インターフェイスの、2 つのインターフェイスを実装します。 これらのイベントインターフェイスは、 *objectname* Events *n* _Event (やなど) の名前付け規則を使用し <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> ます。 オブジェクト上で検出できることが予想されるイベントにアクセスできない場合は、オブジェクトをそのイベント インターフェイスにキャストします。
 
  たとえば、<xref:Microsoft.Office.Interop.Excel.Application> オブジェクトが、<xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> イベントおよび <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> プロパティを持つとします。 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> イベントを処理するには、<xref:Microsoft.Office.Interop.Excel.Application> を <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> インターフェイスにキャストします。 Excel のドキュメント レベルのプロジェクトでこれを実行する方法を、次のコード例に示します。
 
@@ -124,7 +126,7 @@ ms.locfileid: "87234693"
  Office Pia のイベントインターフェイスの詳細については、「 [office プライマリ相互運用機能アセンブリのクラスとインターフェイスの概要](/previous-versions/office/office-12//ms247299(v=office.12))」を参照してください。
 
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>またはを対象とするプロジェクトでは、Office PIA クラスを参照できません。 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とするプロジェクトでは、Office PIA で定義されているクラスを参照するコードは、既定ではコンパイルされません。 Pia のクラスは、やなどの名前付け規則 *objectname*クラスを使用し <xref:Microsoft.Office.Interop.Word.DocumentClass> <xref:Microsoft.Office.Interop.Excel.WorkbookClass> ます。 たとえば、Word の VSTO アドイン プロジェクトの次のコードはコンパイルされません。
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とするプロジェクトでは、Office PIA で定義されているクラスを参照するコードは、既定ではコンパイルされません。 Pia のクラスは、やなどの名前付け規則 *objectname* クラスを使用し <xref:Microsoft.Office.Interop.Word.DocumentClass> <xref:Microsoft.Office.Interop.Excel.WorkbookClass> ます。 たとえば、Word の VSTO アドイン プロジェクトの次のコードはコンパイルされません。
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -153,12 +155,12 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] を対象とするプロジェクトは、既定で自動的に Office PIA のすべての相互運用機能型を埋め込みます。 このコンパイル エラーは、埋め込まれた相互運用機能型の機能は、クラスでなくインターフェイスでのみ機能するために発生します。 Office Pia のインターフェイスとクラスの詳細については、「 [office プライマリ相互運用機能アセンブリのクラスとインターフェイスの概要](/previous-versions/office/office-12/ms247299(v=office.12))」を参照してください。 Office プロジェクトの [相互運用機能型の埋め込み] 機能の詳細については、「 [office ソリューションのデザインと作成](../vsto/designing-and-creating-office-solutions.md)」を参照してください。
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>Office クラスへの参照が認識されない
- たとえば、アプリケーションなどの一部のクラス名は、やなど、複数の名前空間にあり <xref:Microsoft.Office.Interop.Word> <xref:System.Windows.Forms> ます。 このため、 **Imports** / プロジェクトテンプレートの先頭にある Imports**using**ステートメントには、次のような短縮修飾定数が含まれています。
+ たとえば、アプリケーションなどの一部のクラス名は、やなど、複数の名前空間にあり <xref:Microsoft.Office.Interop.Word> <xref:System.Windows.Forms> ます。 このため、  / プロジェクトテンプレートの先頭にある Imports **using** ステートメントには、次のような短縮修飾定数が含まれています。
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
 
- **Imports** / **using**ステートメントを使用するには、Office クラスへの参照を、Word または Excel の修飾子を使用して区別する必要があります。次に例を示します。
+ **Imports** / **using** ステートメントを使用するには、Office クラスへの参照を、Word または Excel の修飾子を使用して区別する必要があります。次に例を示します。
 
  [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
@@ -197,7 +199,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  UNC ネットワークの場所で Excel または  Word のドキュメント レベルのプロジェクトを作成する場合は、Excel または Word の [信頼できる場所] リストに、そのドキュメントの場所を追加する必要があります。 そうしないと、Visual Studio でプロジェクトの実行またはデバッグを試行するときに、カスタマイズが読み込まれません。 信頼できる場所の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>デバッグ後にスレッドが正しく停止されない
- Visual Studio の Office プロジェクトは、デバッガーがプログラムを正しく終了できるように、スレッドの名前付け規則に従うようになっています。 ソリューション内にスレッドを作成する場合、デバッグの停止時にこれらのスレッドが確実に正常に処理されるよう、各スレッドに VSTA _  というプレフィックスを付ける必要があります。 たとえば、 `Name` ネットワークイベントの **VSTA_NetworkListener**を待機するスレッドのプロパティを設定できます。
+ Visual Studio の Office プロジェクトは、デバッガーがプログラムを正しく終了できるように、スレッドの名前付け規則に従うようになっています。 ソリューション内にスレッドを作成する場合、デバッグの停止時にこれらのスレッドが確実に正常に処理されるよう、各スレッドに VSTA _  というプレフィックスを付ける必要があります。 たとえば、 `Name` ネットワークイベントの **VSTA_NetworkListener** を待機するスレッドのプロパティを設定できます。
 
 ### <a name="cannot-run-or-debug-any-office-solution-on-the-development-computer"></a>開発用コンピューターで Office ソリューションを実行またはデバッグできない
  開発用コンピューターで Office プロジェクトを実行または開発できない場合に、次のエラー メッセージが表示されることがあります。
@@ -207,7 +209,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Visual Studio は、Office ソリューションを読み込む前に、.NET Framework アセンブリ ローダーである Fusion を使用してアセンブリをキャッシュします。 Visual Studio が Fusion キャッシュへ書き込めることを確認し、もう一度やり直してください。 詳細については、「 [シャドウコピーアセンブリ](/dotnet/framework/app-domains/shadow-copy-assemblies)」を参照してください。
 
 ### <a name="error-when-stopping-the-debugger-in-a-document-level-project-after-using-edit-and-continue"></a>エディットコンティニュを使用した後、ドキュメントレベルのプロジェクトでデバッガーを停止するとエラーが発生する
- プロジェクトが中断モードのときに、Excel または Word のドキュメントレベルのプロジェクトのコードに変更を加えるために**エディット****コンティニュ**を使用すると、後でデバッガーを停止したときに、次のエラーメッセージが表示されるダイアログボックスが表示される場合があります。
+ プロジェクトが中断モードのときに、Excel または Word のドキュメントレベルのプロジェクトのコードに変更を加えるために **エディット****コンティニュ** を使用すると、後でデバッガーを停止したときに、次のエラーメッセージが表示されるダイアログボックスが表示される場合があります。
 
  "このプロセスを現在の状態で終了すると、データを消失したりシステムが不安定になったりするなど、予期しない結果になる場合があります。" 
 

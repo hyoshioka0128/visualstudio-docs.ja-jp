@@ -1,5 +1,7 @@
 ---
 title: AssignProjectConfiguration タスク | Microsoft Docs
+description: MSBuild AssignProjectConfiguration タスクを使用して、構成文字列の一覧を受け入れ、それらを指定したプロジェクトに割り当てます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5159b73058c73c925cae644c2e3ddd2bc84ac41
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 496b6d538385473d50baec80e30fbc269e06c1f6
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634553"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189707"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration タスク
 
@@ -30,6 +32,7 @@ ms.locfileid: "77634553"
 
 |パラメーター|[説明]|
 |---------------|-----------------|
+|`ProjectReferences`|必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 入力パラメーター。<br /><br /> 構成するプロジェクト。|
 |`SolutionConfigurationContents`|省略可能な `string` 型の出力パラメーターです。<br /><br /> 各プロジェクトのプロジェクト構成を含む XML 文字列が含まれます。 構成は、指定したプロジェクトに割り当てられます。|
 |`DefaultToVcxPlatformMapping`|省略可能な `string` 型の出力パラメーターです。<br /><br /> ほとんどのタイプで使用されるプラットフォーム名から *.vcxproj* ファイルで使用されるプラットフォーム名へのマッピングのセミコロン (;) 区切りのリストが含まれています。<br /><br /> 次に例を示します。<br /><br /> `"AnyCPU=Win32;X86=Win32;X64=X64"`|
 |`VcxToDefaultPlatformMapping`|省略可能<br /><br /> `string` 出力パラメーターです。<br /><br /> *.vcxproj* プラットフォーム名からほとんどのタイプで使用されるプラットフォーム名へのマッピングのセミコロン区切りのリストが含まれます。<br /><br /> 次に例を示します。<br /><br /> `"Win32=AnyCPU;X64=X64"`|
@@ -42,11 +45,11 @@ ms.locfileid: "77634553"
 |`AssignedProjects`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 解決済み参照パスのリストが含まれます。|
 |`UnassignedProjects`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 出力の事前解決リストを使用して解決できなかったプロジェクト参照項目のリストが含まれます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
 
  上記のパラメーター以外に、このタスクは <xref:Microsoft.Build.Tasks.TaskExtension> クラスからパラメーターを継承します。このクラス自体は、<xref:Microsoft.Build.Utilities.Task> クラスから継承されます。 これらの追加のパラメーターの一覧とその説明については、「[TaskExtension Base Class](../msbuild/taskextension-base-class.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [タスク](../msbuild/msbuild-tasks.md)
 - [タスク リファレンス](../msbuild/msbuild-task-reference.md)

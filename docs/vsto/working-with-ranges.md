@@ -1,5 +1,7 @@
 ---
 title: 範囲の操作
+description: NamedRange クラスと Range クラスには、範囲のタスクを実行するために使用するメソッドとプロパティが含まれていることについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d64e774fe418bb7373a6e632b1e8c2cebecc2854
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62815025"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97526912"
 ---
 # <a name="work-with-ranges"></a>範囲の操作
   <xref:Microsoft.Office.Tools.Excel.NamedRange> クラスと <xref:Microsoft.Office.Interop.Excel.Range> クラスには、範囲関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
@@ -40,7 +42,7 @@ ms.locfileid: "62815025"
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [拡張オブジェクトを使用して Excel を自動化する](../vsto/automating-excel-by-using-extended-objects.md)
 - [ワークシートを操作する](../vsto/working-with-worksheets.md)
 - [ブックの操作](../vsto/working-with-workbooks.md)

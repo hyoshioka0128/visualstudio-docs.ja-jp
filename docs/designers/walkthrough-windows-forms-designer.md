@@ -1,5 +1,7 @@
 ---
 title: Windows フォーム デザイナー チュートリアル
+description: Windows フォーム デザイナーに用意されているさまざまなツールを使用してアプリをビルドする方法について説明します。 アプリは、利用可能な多くのレイアウト機能を使用するカスタム コントロールです。
+ms.custom: SEO-VS-2020
 ms.date: 08/09/2019
 ms.topic: tutorial
 helpviewer_keywords:
@@ -7,12 +9,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 831e0216bcecff2e9ac6551184ddbfda56a4b525
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
+ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801296"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94493479"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
@@ -43,7 +45,7 @@ Windows フォーム デザイナーでは、Windows フォーム アプリケ�
 
    ::: moniker-end
 
-2. ファイルの名前を変更するには、**ソリューション エクスプローラー**で **UserControl1.vb** または **UserControl1.cs** を右クリックし、 **[名前の変更]** を選択して、ファイル名を DemoCalculator.vb または DemoCalculator.cs に変更します。 コード要素 "UserControl1" へのすべての参照の名前を変更するかどうかをたずねられたら、 **[はい]** を選択します。
+2. ファイルの名前を変更するには、**ソリューション エクスプローラー** で **UserControl1.vb** または **UserControl1.cs** を右クリックし、 **[名前の変更]** を選択して、ファイル名を DemoCalculator.vb または DemoCalculator.cs に変更します。 コード要素 "UserControl1" へのすべての参照の名前を変更するかどうかをたずねられたら、 **[はい]** を選択します。
 
 Windows フォーム デザイナーに、DemoCalculator コントロールのデザイナー画面が表示されます。 このビューでは、[ツールボックス] でコントロールとコンポーネントを選択し、デザイナー画面に配置することで、コントロールの外観をグラフィカルにデザインできます。 カスタム コントロールについて詳しくは、「[さまざまなカスタム コントロール](/dotnet/framework/winforms/controls/varieties-of-custom-controls)」をご覧ください。
 
@@ -111,7 +113,7 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 コントロールのレイアウトを設定したので、DemoCalculator コントロールにボタンと表示を設定できます。
 
-1. **ツールボックス**で、`TextBox` コントロール アイコンを選択します。
+1. **ツールボックス** で、`TextBox` コントロール アイコンを選択します。
 
    `TextBox` コントロールが、`TableLayoutPanel` コントロールの最初のセルに配置されます。
 
@@ -129,11 +131,11 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
 6. `TableLayoutPanel` コントロールを選択します。
 
-7. **ツールボックス**で、`Button` アイコンを選択します。
+7. **ツールボックス** で、`Button` アイコンを選択します。
 
    `Button` コントロールが、`TableLayoutPanel` コントロールの次の空いているセルに配置されます。
 
-8. **ツールボックス**で `Button` アイコンをさらに 4 回クリックし、`TableLayoutPanel` コントロールの 2 行目を設定します。
+8. **ツールボックス** で `Button` アイコンをさらに 4 回クリックし、`TableLayoutPanel` コントロールの 2 行目を設定します。
 
 9. **Shift** キーを押しながら選択して、5 つの `Button` コントロールをすべて選択します。 **Ctrl**+**C** キーを押して、`Button` コントロールをクリップボードにコピーします。
 
@@ -219,9 +221,9 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
    - sixButton コントロールの text プロパティを「**6**」に変更します
 
-   - multiplicationButton コントロールの text プロパティを「 **\*** 」 (アスタリスク) に変更します
+   - multiplicationButton コントロールの text プロパティを * *\** _ (asterisk) (アスタリスク) に変更します
 
-   - oneButton コントロールの text プロパティを「**1**」に変更します
+   - oneButton コントロールの text プロパティを_ *1** に変更します
 
    - twoButton コントロールの text プロパティを「**2**」に変更します
 
@@ -257,7 +259,7 @@ DemoCalculator コントロールのボタンには、電卓ロジックの多�
 
 ## <a name="test-the-control"></a>コントロールをテストする
 
-DemoCalculator コントロールは <xref:System.Windows.Forms.UserControl> クラスを継承しているので、**UserControl テスト コンテナー**を使用してその動作をテストできます。 詳細については、「[方法:UserControl の実行時の動作をテストする](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)」をご覧ください。
+DemoCalculator コントロールは <xref:System.Windows.Forms.UserControl> クラスを継承しているので、**UserControl テスト コンテナー** を使用してその動作をテストできます。 詳細については、「[方法:UserControl の実行時の動作をテストする](/dotnet/framework/winforms/controls/how-to-test-the-run-time-behavior-of-a-usercontrol)」をご覧ください。
 
 1. **F5** キーを押し、**UserControl Test Container** で DemoCalculator コントロールをビルドして実行します。
 
@@ -275,11 +277,11 @@ DemoCalculator コントロールを他の複合コントロールまたはフ�
 
 1. 新しい **Windows フォーム アプリケーション** プロジェクトを作成し、**DemoCalculatorTest** という名前を付けます。
 
-2. **ソリューション エクスプローラー**で、**DemoCalculatorTest** プロジェクトを右クリックし、 **[参照の追加]** を選択して、 **[参照の追加]** ダイアログ ボックスを開きます。
+2. **ソリューション エクスプローラー** で、**DemoCalculatorTest** プロジェクトを右クリックし、 **[参照の追加]** を選択して、 **[参照の追加]** ダイアログ ボックスを開きます。
 
 3. **[プロジェクト]** タブに移動し、DemoCalculatorLib プロジェクトを選択して、テスト プロジェクトへの参照を追加します。
 
-4. **ソリューション エクスプローラー**で、**DemoCalculatorTest** を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
+4. **ソリューション エクスプローラー** で、**DemoCalculatorTest** を右クリックし、 **[スタートアップ プロジェクトに設定]** を選択します。
 
 5. Windows フォーム デザイナーで、フォームのサイズを約 **700 x 500** に増やします。
 
@@ -289,7 +291,7 @@ DemoCalculator コントロールを他の複合コントロールまたはフ�
 
 1. **[ツールボックス]** で、 **[DemoCalculatorLib コンポーネント]** ノードを展開します。
 
-2. **DemoCalculator** コントロールを **[ツールボックス]** からフォームにドラッグします。 コントロールをフォームの左上隅に移動します。 コントロールがフォームの境界線の近づくと、*スナップ線*が表示されます。 スナップ線では、フォームの `Padding` プロパティとコントロールの `Margin` プロパティの距離が示されます。 スナップ線によって示される位置にコントロールを配置します。
+2. **DemoCalculator** コントロールを **[ツールボックス]** からフォームにドラッグします。 コントロールをフォームの左上隅に移動します。 コントロールがフォームの境界線の近づくと、*スナップ線* が表示されます。 スナップ線では、フォームの `Padding` プロパティとコントロールの `Margin` プロパティの距離が示されます。 スナップ線によって示される位置にコントロールを配置します。
 
    詳細については、「[チュートリアル:スナップ線を使用した Windows フォーム上のコントロールの配置](/dotnet/framework/winforms/controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines)」をご覧ください。
 

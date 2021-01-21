@@ -1,5 +1,6 @@
 ---
 title: プロジェクトの拡張に通常使用されるオブジェクトの Catid
+description: Visual Basic、Visual C#、Visual C++ プロジェクトのプロジェクトと ProjectItem オートメーションオブジェクトを拡張するために使用されるオブジェクトの Catid について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f69a2de627a0200f7b4eb2185e68d4de5ef2cf08
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1b0b20425cd1508db29932e9687d00055e4db58c
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037121"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190019"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>プロジェクトの拡張に通常使用されるオブジェクトの Catid
-次の表に、 `Project` `ProjectItem` 、、およびの各プロジェクトのオブジェクトを拡張するために使用される catid の一覧を示し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ます。 これらの Catid は、 *VSLangProj*で定義されています。
+次の表に、 `Project` `ProjectItem` 、、およびの各プロジェクトのオブジェクトを拡張するために使用される catid の一覧を示し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ます。 これらの Catid は、 *VSLangProj* で定義されています。
 
 ## <a name="listing-of-catids"></a>Catid の一覧
 
@@ -31,7 +32,7 @@ ms.locfileid: "90037121"
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|
 
 ## <a name="visual-basic-catids"></a>Visual Basic Catid
- 次の表に、参照オブジェクトを拡張するために使用される Catid の一覧を示し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 これらはすべて、 *VSLangProj*で定義されています。
+ 次の表に、参照オブジェクトを拡張するために使用される Catid の一覧を示し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 これらはすべて、 *VSLangProj* で定義されています。
 
 |名前|GUID|
 |----------|----------|
@@ -42,7 +43,7 @@ ms.locfileid: "90037121"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|
 
 ## <a name="visual-c-catids"></a>Visual C# catid
- 次の Catid を使用して、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 参照オブジェクトを拡張できます。 これらはすべて、 *VSLangProj*で定義されています。
+ 次の Catid を使用して、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 参照オブジェクトを拡張できます。 これらはすべて、 *VSLangProj* で定義されています。
 
 |名前|GUID|
 |----------|----------|
@@ -94,6 +95,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 | [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] | {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC} |
 | [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] | {F184B08F-C81C-45F6-A57F-5ABD9991F28F} |
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)

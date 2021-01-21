@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 524eb76696414cbbdba72266cc732ccb7e089f86
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85537242"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075458"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP アプリでのエネルギー使用の分析
 
@@ -91,7 +91,7 @@ if (performance && performance.mark) {
 
 1. **[デバッグ]** メニューの **[デバッグなしで診断を開始]** をクリックします。
 
-     ![[診断ハブ] でエネルギー消費を選択](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![パフォーマンス プロファイラーで [エネルギー消費] を選択](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. **[エネルギー消費]** チェック ボックスをオンにし、 **[開始]** をクリックします。
 
@@ -113,7 +113,7 @@ if (performance && performance.mark) {
 
 2. **[インストール済みアプリ パッケージの選択]** の一覧で、ターゲットをクリックします。
 
-3. 診断ハブのページで **[エネルギー消費]** をクリックします。
+3. [パフォーマンス プロファイラー] ページで **[エネルギー消費]** を選択します。
 
 4. **[開始]** をクリックして、プロファイリングを開始します。
 

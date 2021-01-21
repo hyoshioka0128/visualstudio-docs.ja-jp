@@ -1,5 +1,7 @@
 ---
 title: '方法: トランザクションを使用してデータを保存する'
+description: Visual Studio のデータセットツールでトランザクションを使用してデータを保存する方法を確認します。 トランザクションのデータは、system.string 名前空間を使用して保存します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 40894adefb42d6de077a2e2812d26f90bc5f40dd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
+ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281696"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94434585"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>方法: トランザクションを使用してデータを保存する
 
@@ -39,9 +41,9 @@ ms.locfileid: "85281696"
 
 1. **[プロジェクト]** メニューの **[参照の追加]** を選択します。
 
-2. [ **.Net** ] タブ (SQL Server プロジェクトの [**SQL Server** ] タブ) で [ **system.string] を選択し**、[ **OK**] を選択します。
+2. [ **.Net** ] タブ (SQL Server プロジェクトの [ **SQL Server** ] タブ) で [ **system.string] を選択し** 、[ **OK** ] を選択します。
 
-     *System.Transactions.dll*への参照がプロジェクトに追加されます。
+     *System.Transactions.dll* への参照がプロジェクトに追加されます。
 
 ## <a name="to-save-data-in-a-transaction"></a>トランザクションにデータを保存するには
 

@@ -1,5 +1,7 @@
 ---
 title: デバッグを行うときの呼び出し履歴に対するメソッドのマップ
+description: デバッグ中に呼び出し履歴を視覚的にトレースするためのコードマップを作成する方法について説明します。 また、マップでメモを作成して、コードの動作を追跡できることについても説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -28,12 +30,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532705"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97362432"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio でデバッグを行うときの呼び出し履歴に対するメソッドのマップ
 
@@ -91,7 +93,7 @@ ms.locfileid: "85532705"
 
 ## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a>コードに関するコメントを追加する
 
- コメントを追加して、コードの動作を追跡します。 コメントに新しい行を追加するには、Shift キーを押し **ながら Return**キーを押します。
+ コメントを追加して、コードの動作を追跡します。 コメントに新しい行を追加するには、Shift キーを押し **ながら Return** キーを押します。
 
  ![コード マップの呼び出し履歴にコメントを追加](../debugger/media/debuggermap_addcomment.png)
 
@@ -105,7 +107,7 @@ ms.locfileid: "85532705"
 
  これでマップが作成されるようになりました。次は何ですか? C# または Visual Basic を使用している場合は、フィールド、プロパティ、およびその他のメソッドなどの項目を追加して、コードの動作を追跡します。
 
- メソッドのコード定義を表示するには、そのメソッドをダブルクリックするか、そのメソッドのショートカット メニューを使用します。 (キーボード: マップでメソッドを選択し、 **F12**キーを押します)
+ メソッドのコード定義を表示するには、そのメソッドをダブルクリックするか、そのメソッドのショートカット メニューを使用します。 (キーボード: マップでメソッドを選択し、 **F12** キーを押します)
 
  ![コード マップのメソッドのコード定義に移動](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -166,7 +168,7 @@ ms.locfileid: "85532705"
 
   - 既定のレイアウトを変更します。
 
-  - マップの自動調整を停止するには、[ **デバッグ時に自動的にレイアウト**を無効にする] をオンにします。
+  - マップの自動調整を停止するには、[ **デバッグ時に自動的にレイアウト** を無効にする] をオンにします。
 
   - 項目を追加するときにできるだけ少ない方法でマップを再配置するには、[ **インクリメンタルレイアウト**] をオフにします。
 

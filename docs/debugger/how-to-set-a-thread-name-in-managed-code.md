@@ -1,5 +1,7 @@
 ---
-title: 方法 - マネージド コードのスレッド名を設定する | Microsoft Docs
+title: マネージド コードのスレッド名を設定する | Microsoft Docs
+description: Visual Studio でのマルチスレッド アプリのデバッグ中に、マネージド コードのスレッド名を設定します。 スレッド名の設定は、[スレッド] ウィンドウでスレッドを追跡するために使用されます。
+ms.custom: SEO-VS-2020
 ms.date: 04/27/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3f95608b5b10cd206d4d59a6ccf876214ae045a
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: c52d2ae3407833594049459a489641135bba172c
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85349186"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148443"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>方法: マネージド コードのスレッド名を設定する
 スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 スレッド名を設定すると、 **[スレッド]** ウィンドウでスレッドを追跡する際に役立ちます。

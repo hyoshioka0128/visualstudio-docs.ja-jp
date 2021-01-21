@@ -1,5 +1,7 @@
 ---
-title: for ループを foreach ステートメントに変換するためのコードのリファクタリング
+title: for ループを foreach ステートメントに変換するためのリファクタリング
+description: '[クイック アクションとリファクタリング] メニューを使用して、for ループと foreach ステートメントの間で変換を行う方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 03/10/2020
 ms.topic: reference
 author: mikadumont
@@ -10,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 70c2b17f00c1f5e72ce0e913c360b4655b18df12
+ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79094598"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "96040824"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>for ループと foreach ステートメント間で変換するためのリファクタリング
 
@@ -83,7 +85,7 @@ ms.locfileid: "79094598"
 1. リファクタリングにより新しい反復回数変数が導入されるため、エディターの右上隅に **[名前を変更]** ボックスが表示されます。 変数に別の名前を選択する場合は、その名前を入力してから、**Enter** キーを押すか、 **[名前を変更]** ボックスで **[適用]** を選択します。 新しい名前を選択しない場合は、**Esc** キーを押すか、 **[適用]** を選択して、 **[名前を変更]** ボックスを閉じます。
 
 > [!NOTE]
-> C# の場合、これらのリファクタリングによって生成されるコードでは、コレクション内の項目の型には明示的な型または [var](/dotnet/csharp/language-reference/keywords/var) が使われます。 生成されるコードが明示的または暗黙的のどちらになるかは、スコープ内にのコード スタイルの設定によって決まります。 これらの特定のコード スタイルの設定は、コンピューター レベルの **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[全般]**  >  **[\'var' を優先]** で、またはソリューション レベルの [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) ファイルで構成します。 コード スタイルの設定を **[オプション]** で変更した場合、変更を有効にするにはコード ファイルを開きなおします。
+> C# の場合、これらのリファクタリングによって生成されるコードでは、コレクション内の項目の型には明示的な型または [var](/dotnet/csharp/language-reference/keywords/var) が使われます。 生成されるコードが明示的または暗黙的のどちらになるかは、スコープ内にのコード スタイルの設定によって決まります。 これらの特定のコード スタイルの設定は、コンピューター レベルの **[ツール]**  >  **[オプション]**  >  **[テキスト エディター]**  >  **[C#]**  >  **[コード スタイル]**  >  **[全般]**  >  **[\'var' を優先]** で、またはソリューション レベルの [EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules#implicit-and-explicit-types) ファイルで構成します。 コード スタイルの設定を **[オプション]** で変更した場合、変更を有効にするにはコード ファイルを開きなおします。
 
 ## <a name="see-also"></a>参照
 

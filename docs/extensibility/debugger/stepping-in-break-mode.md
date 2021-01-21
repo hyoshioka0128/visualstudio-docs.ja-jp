@@ -1,5 +1,7 @@
 ---
 title: 中断モードでステップインする |Microsoft Docs
+description: デバッガーが中断モードのときに発生するプロセスについて説明します。 次に、デバッガーはコードをステップ実行する必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 80273bf470a3ed0c342e781085de6e991508451c
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712853"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845194"
 ---
 # <a name="stepping-in-break-mode"></a>中断モードでのステップ実行
 次のセクションでは、デバッガーが中断モードであり、コードをステップ実行する必要がある場合に発生するプロセスについて説明します。

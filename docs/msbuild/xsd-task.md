@@ -1,5 +1,7 @@
 ---
 title: XSD タスク | Microsoft Docs
+description: MSBuild で XSD タスクを使用して、ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (xsd.exe) をラップする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.topic: reference
 f1_keywords:
@@ -20,19 +22,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 217e045a731efa1fe3ba1dda63e89eca685d4b75
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77630783"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93047209"
 ---
 # <a name="xsd-task"></a>XSD タスク
 
-ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール (*xsd.exe*) をラップします。
+ソースからスキーマまたはクラス ファイルを生成する XML スキーマ定義ツール ( *xsd.exe* ) をラップします。
 
 > [!NOTE]
-> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 *CppCodeProvider.dll* を手動で GAC に追加して、**Microsoft.VisualC.CppCodeProvider** API を引き続き使用することができます。
+> Visual Studio 2017 以降では、C++ プロジェクトでの *xsd.exe* のサポートは非推奨です。 *CppCodeProvider.dll* を手動で GAC に追加して、 **Microsoft.VisualC.CppCodeProvider** API を引き続き使用することができます。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -62,7 +64,7 @@ ms.locfileid: "77630783"
 
      生成されたコードに使用するプログラミング言語を指定します。
 
-     **CS** (C#、既定)、**VB** (Visual Basic)、または **JS** (JScript) のいずれかを選択します。 `System.CodeDom.Compiler.CodeDomProvider Class` を実装するクラスの完全修飾名を指定することもできます。
+     **CS** (C#、既定)、 **VB** (Visual Basic)、または **JS** (JScript) のいずれかを選択します。 `System.CodeDom.Compiler.CodeDomProvider Class` を実装するクラスの完全修飾名を指定することもできます。
 
 - **Namespace**
 

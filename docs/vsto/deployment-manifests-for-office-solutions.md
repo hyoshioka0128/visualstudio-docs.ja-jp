@@ -1,5 +1,7 @@
 ---
 title: Office ソリューションの配置マニフェスト
+description: 配置マニフェストは、Office ソリューションの配置設定を記述する XML ファイルであり、現在のアプリケーションのバージョンを識別することを説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547551"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96845506"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office ソリューションの配置マニフェスト
   配置マニフェストは、Office ソリューションの配置設定を記述する XML ファイルであり、現在のアプリケーションのバージョンを識別します。
 
  Visual Studio での Office 開発では、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md) リファレンスで定義されている配置マニフェストスキーマを使用します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  Office ソリューションの配置マニフェストファイルは、現在のバージョンとその他の配置設定を識別します。 アプリケーションマニフェストを参照し、ソリューションの現在のバージョンとソリューション内のすべてのファイルについて説明します。
 
 ## <a name="file-name-syntax"></a>ファイル名の構文

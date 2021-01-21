@@ -1,5 +1,7 @@
 ---
 title: 既存のプロジェクト項目テンプレートの更新
+description: テンプレートのエクスポート ウィザードやその他の手動プロセスを使用して、既に作成したプロジェクト項目テンプレートを更新する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d5d9726ecbf3cb7c403f682aadb197a26b0dc26b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: e3a709070d777ebaf600fc05abf0e651eaef5b1a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85283919"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95596886"
 ---
 # <a name="how-to-update-existing-templates"></a>方法: 既存のテンプレートを更新する
 
@@ -23,7 +25,7 @@ ms.locfileid: "85283919"
 
 ## <a name="use-the-export-template-wizard"></a>[テンプレートのエクスポート] ウィザードを使用する
 
-Visual Studio の**テンプレートのエクスポート ウィザード**を使って、既存のテンプレートを更新することができます。
+Visual Studio の **テンプレートのエクスポート ウィザード** を使って、既存のテンプレートを更新することができます。
 
 1. メニュー バーから **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
 
@@ -33,17 +35,17 @@ Visual Studio の**テンプレートのエクスポート ウィザード**を�
 
 1. **[プロジェクト]** メニューの **[テンプレートのエクスポート]** を選択します。
 
-    **テンプレートのエクスポート ウィザード**が開きます。
+    **テンプレートのエクスポート ウィザード** が開きます。
 
 1. ウィザードの指示に従って、テンプレートを *.zip* ファイルとしてエクスポートします。
 
-1. (省略可能) *.zip* ファイルが選択肢として表示されるようにするには、それを次のディレクトリに置きます: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*。 **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合、このステップを実行する必要があります。
+1. (省略可能) *.zip* ファイルが選択肢として表示されるようにするには、それを次のディレクトリに置きます: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates*。 **テンプレートのエクスポート ウィザード** で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合、このステップを実行する必要があります。
 
 1. 古いテンプレートの *.zip* ファイルを削除します。
 
 ## <a name="manually-update-an-existing-template"></a>既存のテンプレートを手動で更新する
 
-圧縮された *.zip* ファイル内のファイルを変更することで、**テンプレートのエクスポート ウィザード**を使わずに既存のテンプレートを更新できます。
+圧縮された *.zip* ファイル内のファイルを変更することで、**テンプレートのエクスポート ウィザード** を使わずに既存のテンプレートを更新できます。
 
 ### <a name="to-manually-update-an-existing-template"></a>既存のテンプレートを手動で更新するには
 

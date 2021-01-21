@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 4eef8e79023bdd3bde03fec33c16a1c8f6d90446
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c89f1d59405fb7475e827cac9624c6623d7041e
+ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72306260"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96189096"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -79,7 +79,7 @@ A. はい。Visual Studio に統合されている任意のソース管理シス
 
 **Q.RTVS プロジェクトで推奨される *.gitignore* の設定はどのようなものですか?**
 
-A. GitHub に、*.gitignore* の推奨ファイルのマスター リポジトリが用意されています。 [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore) をご覧ください。
+A. GitHub には、推奨される *.gitignore* ファイルのリポジトリがあります。 [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore) をご覧ください。
 
 ## <a name="remote-services"></a>リモート サービス
 

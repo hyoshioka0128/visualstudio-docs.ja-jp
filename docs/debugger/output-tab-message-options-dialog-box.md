@@ -1,5 +1,7 @@
 ---
 title: '[出力] タブ ([メッセージ オプション] ダイアログ ボックス) | Microsoft Docs'
+description: '[メッセージ ビュー] に表示されるメッセージ データを指定するには、[メッセージ オプション] の [出力] タブを使用します。 この記事では、使用可能な設定について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4d965b92a30d8d8a5b998a27bea9651f8669c8f
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905076"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975083"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>[出力] タブ ([メッセージ オプション] ダイアログ ボックス)
 **[出力]** タブを使用し、各メッセージからどのデータを [[メッセージ ビュー]](../debugger/messages-view.md) に一覧表示するか指定します。 [[メッセージ オプション]](../debugger/message-options-dialog-box.md) ダイアログ ボックスを表示するには、 **[Spy]** メニューから **[ログ メッセージ]** を選択します。

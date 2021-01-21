@@ -14,12 +14,12 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2dc3e733afdb4f3d25595e819163ff56e397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4978e272017b990501a953062df3a77750f4a837
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816944"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862617"
 ---
 # <a name="invalid-character-javascript"></a>無効な文字です。(JavaScript)
 コンパイラによって有効と認識されない文字 (または文字) を使用して識別子を構成しました [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。 有効な文字は、次の規則を使用します。  
@@ -35,6 +35,6 @@ ms.locfileid: "85816944"
 - 言語定義の一部ではない文字は使用しないで [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ください。  
   
 ## <a name="see-also"></a>関連項目  
- [環境](../../javascript/variables-javascript.md)   
- [特殊文字](../../javascript/advanced/special-characters-javascript.md)   
- [データの種類](../../javascript/data-types-javascript.md)
+ [環境](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Variables)   
+ [特殊文字](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Grammar_and_types)   
+ [データの種類](https://developer.mozilla.org/docs/Web/JavaScript/Data_structures)

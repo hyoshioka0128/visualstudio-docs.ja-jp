@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81649657"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005291"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの新機能
 
@@ -33,7 +33,7 @@ ms.locfileid: "81649657"
 Microsoft アカウント (MSA) を使用しているサブスクライバーと Azure Active Directory (Azure AD) の照合が簡単になり、2 つの ID をすばやくリンクできるようになりました。  Azure AD の ID を使用すると、セキュリティが強化され、サブスクリプションの管理が容易になります。  詳細については、[個人用サインインに関する記事](personal-email-sign-ins.md)を参照してください。 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Azure Active Directory のグループを使用したサブスクライバーの追加
-組織で Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用してサブスクリプションを管理できるようになりました。  サブスクリプションをグループに割り当てることで、同じ種類のサブスクリプションを複数のユーザーに迅速に提供することができます。  新しいユーザーが Azure AD グループに追加されると、自動的にサブスクリプションが割り当てられます。  ユーザーが Azure AD グループから削除されると、そのユーザーのサブスクリプションも削除されます。  これにより、組織はサブスクリプション管理を自動化し、管理者の時間と労力を節約できます。  詳細については、Microsoft のドキュメントで[複数のユーザーの追加](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions)に関する記事を参照してください。 
+組織で Azure Active Directory (Azure AD) を使用している場合は、Azure AD グループを使用してサブスクリプションを管理できるようになりました。  サブスクリプションをグループに割り当てることで、同じ種類のサブスクリプションを複数のユーザーに迅速に提供することができます。  新しいユーザーが Azure AD グループに追加されると、自動的にサブスクリプションが割り当てられます。  ユーザーが Azure AD グループから削除されると、そのユーザーのサブスクリプションも削除されます。  これにより、組織はサブスクリプション管理を自動化し、管理者の時間と労力を節約できます。  詳細については、Microsoft のドキュメントで[複数のユーザーの追加](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions)に関する記事を参照してください。 
 
 ### <a name="cast-highlight"></a>CAST の強調表示
 パートナーが提供する CAST Highlight の特典が拡張されたことをお知らせいたします。 

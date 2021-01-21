@@ -1,5 +1,7 @@
 ---
 title: レガシ言語の実装 Service1 |Microsoft Docs
+description: Managed package framework (MPF) を使用して、拡張言語サービス機能をサポートする従来の言語サービスを実装する方法について説明します。 第1部。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2535c527fc3d2d94609246959c5293e455b9808d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be2caf25dfef71cb267f49b6cfd732923aa0848c
+ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238752"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761180"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>従来の言語サービスの実装1
 Managed package framework (MPF) のクラスを使用して、構文の強調表示、かっこの一致、IntelliSense の入力候補など、さまざまな機能をサポートする従来の言語サービスを実装できます。

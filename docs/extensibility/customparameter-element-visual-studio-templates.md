@@ -1,5 +1,7 @@
 ---
 title: CustomParameter 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: CustomParameter 要素と、テンプレートからプロジェクトまたは項目を作成するときに使用するカスタムパラメーターの名前と値がどのように含まれているかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739431"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94671950"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 要素 (Visual Studio テンプレート)
 プロジェクトまたは項目がテンプレートから作成されるときに使用する、カスタムパラメーターの名前と値を格納します。
@@ -48,7 +50,7 @@ ms.locfileid: "80739431"
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|ウィザードがパラメーター置換を行うときに、テンプレートウィザードに渡すカスタムパラメーターをグループ化します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  テンプレートに要素が含まれている場合 `CustomParameter` 、すべてのインスタンス `Name` は、作成された `Value` プロジェクトまたは項目ファイルの属性で属性を置き換えます。
 
 ## <a name="example"></a>例

@@ -1,5 +1,7 @@
 ---
 title: コマンドのエイリアス
+description: コマンドの実行時、入力する文字を減らすコマンド エイリアスの使用方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9dda564939652a09b64fec65747ca14d1315b3f1
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75596412"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96561072"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -33,12 +35,12 @@ ms.locfileid: "75596412"
 
 次の表は、Visual Studio コマンドの定義済みエイリアスを示しています。 一部のコマンド名には、複数の定義済みのエイリアスがあります。 表のコマンド名のリンクをクリックすると、コマンドの正しい構文、引数、スイッチについて説明したトピックが表示されます。
 
-|コマンド名|Alias|完全な名前|
+|コマンド名|エイリアス|完全な名前|
 |------------------|-----------|-------------------|
 |[Print コマンド](../../ide/reference/print-command.md)|?|Debug.Print|
 |[QuickWatch コマンド](../../ide/reference/quick-watch-command.md)|??|Debug.QuickWatch|
-|新しいプロジェクトの追加|AddProj|File.AddNewProject|
-|[Alias コマンド](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
+|新しいプロジェクトを追加する|AddProj|File.AddNewProject|
+|[Alias コマンド](../../ide/reference/alias-command.md)|エイリアス|Tools.Alias|
 |[自動変数] ウィンドウ|Autos|Debug.Autos|
 |[ブレークポイント] ウィンドウ|bl|Debug.Breakpoints|
 |[ブレークポイントの設定/解除]|bp|Debug.ToggleBreakpoint|
@@ -48,8 +50,8 @@ ms.locfileid: "75596412"
 |[すべてのドキュメントを閉じる]|CloseAll|Window.CloseAllDocuments|
 |[すべてクリア]|CLS|Edit.ClearAll|
 |[コマンド ウィンドウ]|cmd|View.CommandWindow|
-|[コードの表示]|コード|View.ViewCode|
-|[メモリの一覧表示コマンド](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
+|コードの表示|code|View.ViewCode|
+|[ListMemory コマンド](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
 |[メモリの一覧表示コマンド](../../ide/reference/list-memory-command.md) (ANSI 形式)|da|Debug.ListMemory /Ansi|
 |[メモリの一覧表示コマンド](../../ide/reference/list-memory-command.md) (1 バイト形式)|db|Debug.ListMemory /Format:OneByte|
 |[メモリの一覧表示コマンド](../../ide/reference/list-memory-command.md) (4 バイトの ANSI 形式)|dc|Debug.ListMemory /Format:FourBytes /Ansi|
@@ -66,10 +68,10 @@ ms.locfileid: "75596412"
 |終了|終了|File.Exit|
 |選択範囲のフォーマット|format|Edit.FormatSelection|
 |全画面表示|FullScreen|View.FullScreen|
-|[Start コマンド](../../ide/reference/start-command.md)|G|Debug.Start|
+|[Start コマンド](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Go To コマンド](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |[かっこに移動]|GotoBrace|Edit.GotoBrace|
-|F1 ヘルプ|[Help]|Help.F1Help|
+|F1 ヘルプ|Help|Help.F1Help|
 |イミディエイト モード|immed|Tools.ImmediateMode|
 |[テキストとしてファイルを挿入]|InsertFile|Edit.InsertFileAsText|
 |[ListCallStack コマンド](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -88,8 +90,8 @@ ms.locfileid: "75596412"
 |[ShowWebBrowser コマンド](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |[次のブックマーク]|NextBook|Edit.NextBookmark|
 |[NewFile コマンド](../../ide/reference/new-file-command.md)|nf|File.NewFile|
-|新しいプロジェクト|np NewProj|File.NewProject|
-|[ファイルを開くコマンド](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
+|[新しいプロジェクト]|np NewProj|File.NewProject|
+|[OpenFile コマンド](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[OpenProject コマンド](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |[定義に縮小]/[アウトラインの中止]|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |[ステップ オーバー]|p|Debug.StepOver|
@@ -97,7 +99,7 @@ ms.locfileid: "75596412"
 |[ステップ アウト]|pr|Debug.StepOut|
 |[前のブックマーク]|PrevBook|Edit.PreviousBookmark|
 |[印刷]|print|File.Print|
-|プロパティ ウィンドウ|props|View.PropertiesWindow|
+|[プロパティ] ウィンドウ|props|View.PropertiesWindow|
 |Stop|q|Debug.StopDebugging|
 |やり直し|やり直し (redo)|Edit.Redo|
 |[レジスタ] ウィンドウ|registers|Debug.Registers|
@@ -111,22 +113,22 @@ ms.locfileid: "75596412"
 |[ステップ イン]|t|Debug.StepInto|
 |[選択範囲にタブを設定]|tabify|Edit.TabifySelection|
 |[タスク一覧] ウィンドウ|TaskList|View.TaskList|
-|[スレッド] ウィンドウ|Threads|Debug.Threads|
+|[スレッド] ウィンドウ|スレッド|Debug.Threads|
 |上下に並べて表示|TileH|Window.TileHorizontally|
 |[左右に並べて表示]|TileV|Window.TileVertically|
 |[ブックマークの設定解除]|ToggleBook|Edit.ToggleBookmark|
 |[ツールボックス] ウィンドウ|toolbox|View.Toolbox|
-|[逆アセンブリの一覧表示コマンド](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
+|[ListDisassembly コマンド](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |[大文字に変換]|Ucase|Edit.MakeUppercase|
 |元に戻す|取り消し (undo)|Edit.Undo|
 |[選択範囲のタブの設定を解除]|Untabify|Edit.UntabifySelection|
-|[ウォッチ] ウィンドウ|Watch|Debug.WatchN|
+|[ウォッチ] ウィンドウ|視聴する|Debug.WatchN|
 |[[右端で折り返す] の設定/解除]|WordWrap|Edit.ToggleWordWrap|
 |[プロセスの一覧]|&#124;|Debug.ListProcesses|
 |[ListThreads コマンド](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)

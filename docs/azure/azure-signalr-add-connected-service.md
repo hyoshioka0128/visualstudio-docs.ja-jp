@@ -3,18 +3,17 @@ title: 接続済みサービス | を使用して Azure SignalR を追加するM
 description: Azure SignalR をアプリに追加するには、Visual Studio を使用して接続済みサービスを追加します。
 author: AngelosP
 manager: jillfra
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 0e44416bd6a55796b62a7590856caab8466a6401
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4576c2eb15097860870b78fbca0faf727c3eae74
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88643171"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902884"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>Visual Studio を使用して Azure SignalR を追加する接続済みサービス
 
@@ -43,9 +42,9 @@ Visual Studio では、 **接続済みサービス** 機能を使用して、次
 
 1. Visual Studio でプロジェクトを開きます。
 
-1. **ソリューションエクスプローラー**で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
+1. **ソリューションエクスプローラー** で、[**接続済みサービス**] ノードを右クリックし、コンテキストメニューの [**接続済みサービスの追加**] を選択します。
 
-1. [ **接続済みサービス** ] タブで、 **サービスの依存関係**の [+] アイコンを選択します。
+1. [ **接続済みサービス** ] タブで、 **サービスの依存関係** の [+] アイコンを選択します。
 
     ![サービスの依存関係の追加](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 

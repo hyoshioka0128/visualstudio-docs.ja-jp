@@ -1,5 +1,7 @@
 ---
 title: LPTEXTOUTPROC |Microsoft Docs
+description: LPTEXTOUTPROC 関数ポインターについて説明します。 Visual Studio IDE では、エラーと状態を表示する関数が実装されています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c3e8263b9a30058c2de019e5e92160b716aa71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80702787"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97615728"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -140,6 +142,6 @@ LONG SendStatusMessage(
 }
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)

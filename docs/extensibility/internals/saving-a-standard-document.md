@@ -1,5 +1,7 @@
 ---
 title: 標準ドキュメントの保存 |Microsoft Docs
+description: Visual Studio IDE に追加するプロジェクトの種類の標準ドキュメントに対して発生するプロセスについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705550"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875667"
 ---
 # <a name="saving-a-standard-document"></a>標準ドキュメントの保存
-環境は、[保存]、[名前を付けて保存]、および [すべてを保存] コマンドを処理します。 ユーザーが [**ファイル**] メニューの [**保存**]、[名前を付け**て保存**]、または [**すべて**保存] を選択すると、**すべて保存**が行われるため、次のプロセスが実行されます。
+環境は、[保存]、[名前を付けて保存]、および [すべてを保存] コマンドを処理します。 ユーザーが [**ファイル**] メニューの [**保存**]、[名前を付け **て保存**]、または [**すべて** 保存] を選択すると、**すべて保存** が行われるため、次のプロセスが実行されます。
 
  ![標準エディター](../../extensibility/internals/media/public.gif "パブリック") 標準エディターのすべてのコマンド処理を保存、名前を付けて保存、および保存する
 

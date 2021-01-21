@@ -1,5 +1,7 @@
 ---
 title: '方法: コードを実行せずに Office ソリューションを開く'
+description: アセンブリコードを実行せずに、マネージコード拡張機能を含むドキュメントまたはブックを開く方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -18,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d84515c2c3159b61b96f77555b23eef0df0ae961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543482"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844921"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>方法: コードを実行せずに Office ソリューションを開く
   マネージコード拡張機能を使用して作成された Microsoft Office ソリューションは、エンドユーザーの Office アプリケーションのセキュリティ設定が [高] に設定されている場合でも実行されます。 これは、.NET アセンブリコードのセキュリティは、Microsoft Office ではなく Microsoft .NET Framework によって管理されるためです。
@@ -36,10 +38,10 @@ ms.locfileid: "85543482"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Shift キーを使用してアセンブリをバイパスするには
 
-- Word および Excel がドキュメントを開いているときに初期化イベントが発生しないように、 **shift**キーを押しながら [**ファイル**] メニューからドキュメントとブックを開きます。
+- Word および Excel がドキュメントを開いているときに初期化イベントが発生しないように、 **shift** キーを押しながら [**ファイル**] メニューからドキュメントとブックを開きます。
 
     > [!NOTE]
-    > **はじめに**作業ウィンドウからドキュメントまたはブックを開いた場合、 **shift キー**を押したままにしてもコードはバイパスされません。 また、SHIFT キーを押したままにしても、ドキュメントが開いた後にイベントが発生するのを防ぐことはできません。
+    > **はじめに** 作業ウィンドウからドキュメントまたはブックを開いた場合、 **shift キー** を押したままにしてもコードはバイパスされません。 また、SHIFT キーを押したままにしても、ドキュメントが開いた後にイベントが発生するのを防ぐことはできません。
 
      このメソッドは、コードを実行せずに変更を行うドキュメントを開き、ドキュメントを最初に変更する場合に便利です。
 

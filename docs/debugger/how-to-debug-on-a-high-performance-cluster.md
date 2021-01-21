@@ -1,5 +1,7 @@
 ---
-title: 方法 - 高パフォーマンス クラスター上でデバッグする | Microsoft Docs
+title: 高パフォーマンス クラスター上でデバッグする | Microsoft Docs
+description: 高パフォーマンス クラスター上でのマルチプロセッシング プログラムのデバッグに特有の内容について学習します。 2 つのウィンドウは特に便利であり、特別な手法があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: 6b19f1d919095f30e4408056e49847c3c9ba5671
+ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350070"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97903111"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>方法: 高パフォーマンス クラスター上でデバッグする (C#、Visual Basic、C++)
 

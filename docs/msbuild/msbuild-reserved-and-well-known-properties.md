@@ -1,5 +1,7 @@
 ---
 title: MSBuild の予約済みおよび既知のプロパティ | Microsoft Docs
+description: プロジェクト ファイルと MSBuild バイナリに関する情報を格納する定義済みプロパティである、MSBuild の予約済みの既知のプロパティについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c3d97185446560343b36b22f73e0b320b5a28d6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 0480b427b92ca43603deedf84e5fd7cb39e6e065
+ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85289223"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93049150"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild の予約済みおよび既知のプロパティ
 
@@ -51,16 +53,16 @@ MSBuild には、プロジェクト ファイルに関する情報と MSBuild �
 | `MSBuildInteractive` | 予約されています。 | MSBuild が対話形式で実行されている場合は `true` であり、ユーザー入力が許可されます。 この設定は、`-interactive` コマンドライン オプションを使用して制御できます。 | `false` |
 | `MSBuildLastTaskResult` | 予約されています。 | 前のタスクがエラーを発生することなく完了した場合は、(警告があった場合でも) `true` を返します。前のタスクでエラーが発生した場合は、`false` を返します。 通常、エラーがタスクで発生する場合、プロジェクト内ではエラーは最後に発生します。 したがって、このプロパティの値は、次のシナリオ以外では `false` にはなりません。<br /><br /> - [Task 要素 (MSBuild)](../msbuild/task-element-msbuild.md) の `ContinueOnError` 属性が `WarnAndContinue` (または `true`) あるいは `ErrorAndContinue` に設定されている場合。<br /><br /> - `Target` に、子要素として [OnError 要素 (MSBuild)](../msbuild/onerror-element-msbuild.md) がある場合。 | `true` |
 | `MSBuildNodeCount` | 予約されています。 | ビルド時に使用する同時実行プロセスの最大数。 これは、コマンド ラインで **-maxcpucount** に指定した値です。 値を使用せずに **-maxcpucount** を指定した場合、`MSBuildNodeCount` はコンピューター上のプロセッサの数を示します。 詳細については、「[コマンドライン リファレンス](../msbuild/msbuild-command-line-reference.md)」と「[複数のプロジェクトの並行ビルド](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)」を参照してください。 | 1 |
-| `MSBuildProgramFiles32` | 予約されています。 | 32 ビットのプログラム フォルダーの場所 (*C:\Program Files (x86)* など)。<br /><br /> このプロパティに最後の円記号を含めないでください。 | `C:\Program Files (x86)`|
+| `MSBuildProgramFiles32` | 予約されています。 | 32 ビットのプログラム フォルダーの場所 ( *C:\Program Files (x86)* など)。<br /><br /> このプロパティに最後の円記号を含めないでください。 | `C:\Program Files (x86)`|
 | `MSBuildProjectDefaultTargets` | 予約されています。 | `DefaultTargets` 要素の `Project` 属性で指定されるターゲットの完全な一覧。 たとえば、次の `Project` 要素の `MSBuildDefaultTargets` プロパティの値は `A;B;C` となります。<br /><br /> `<Project DefaultTargets="A;B;C" >` | `Build`|
-| `MSBuildProjectDirectory` | 予約されています。 | プロジェクト ファイルがあるディレクトリの絶対パス (*C:\MyCompany\MyProduct* など)。<br /><br /> このプロパティに最後の円記号を含めないでください。 | `C:\Source\Repos\ConsoleApp1\ConsoleApp1` |
+| `MSBuildProjectDirectory` | 予約されています。 | プロジェクト ファイルがあるディレクトリの絶対パス ( *C:\MyCompany\MyProduct* など)。<br /><br /> このプロパティに最後の円記号を含めないでください。 | `C:\Source\Repos\ConsoleApp1\ConsoleApp1` |
 | `MSBuildProjectDirectoryNoRoot` | 予約されています。 | ルート ドライブを除く `MSBuildProjectDirectory` のプロパティの値。<br /><br /> このプロパティに最後の円記号を含めないでください。 | `Source\Repos\ConsoleApp1\ConsoleApp1`|
 | `MSBuildProjectExtension` | 予約されています。 | ピリオドを含むプロジェクト ファイルの名前の拡張子 ( *.proj* など)。 | `.csproj`|
-| `MSBuildProjectFile` | 予約されています。 | ファイル名拡張子を含むプロジェクト ファイルの完全なファイル名 (*MyApp.proj* など)。 | `ConsoleApp1.csproj`|
-| `MSBuildProjectFullPath` | 予約されています。 | ファイル名拡張子を含む、プロジェクト ファイルの絶対パスと完全なファイル名 (*C:\MyCompany\MyProduct\MyApp.proj* など)。 | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
-| `MSBuildProjectName` | 予約されています。 | ファイル名拡張子のないプロジェクト ファイルの名前 (*MyApp* など)。 | `ConsoleApp1` |
+| `MSBuildProjectFile` | 予約されています。 | ファイル名拡張子を含むプロジェクト ファイルの完全なファイル名 ( *MyApp.proj* など)。 | `ConsoleApp1.csproj`|
+| `MSBuildProjectFullPath` | 予約されています。 | ファイル名拡張子を含む、プロジェクト ファイルの絶対パスと完全なファイル名 ( *C:\MyCompany\MyProduct\MyApp.proj* など)。 | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj`|
+| `MSBuildProjectName` | 予約されています。 | ファイル名拡張子のないプロジェクト ファイルの名前 ( *MyApp* など)。 | `ConsoleApp1` |
 | `MSBuildRuntimeType` | 予約されています。 | 現在実行しているランタイムの型。 MSBuild 15 で導入。 値が未定義の可能性があります (MSBuild 15 より前の場合)。`Full` はデスクトップの .NET Framework 上で MSBuild が実行されていることを示し、`Core` は .NET Core 上で MSBuild が実行されていることを示し (たとえば `dotnet build` で)、`Mono` は Mono 上で MSBuild が実行されていることを示します。 | `Full` |
-| `MSBuildStartupDirectory` | 予約されています。 | MSBuild が呼び出されるフォルダーの絶対パス。 このプロパティを使用すると、プロジェクト ツリーの特定の場所にすべての内容をビルドできます。各ディレクトリに *\<dirs>.proj* ファイルを作成する必要はありません。 代わりに、次の例に示すように、*c:\traversal.proj* という名前の 1 つのプロジェクトだけが作成されます。<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> ツリー上の任意の場所でビルドするには、次のように入力します。<br /><br /> `msbuild c:\traversal.proj`<br /><br /> このプロパティに最後の円記号を含めないでください。 | `c:\Source\Repos\ConsoleApp1` |
+| `MSBuildStartupDirectory` | 予約されています。 | MSBuild が呼び出されるフォルダーの絶対パス。 このプロパティを使用すると、プロジェクト ツリーの特定の場所にすべての内容をビルドできます。各ディレクトリに *\<dirs>.proj* ファイルを作成する必要はありません。 代わりに、次の例に示すように、 *c:\traversal.proj* という名前の 1 つのプロジェクトだけが作成されます。<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> ツリー上の任意の場所でビルドするには、次のように入力します。<br /><br /> `msbuild c:\traversal.proj`<br /><br /> このプロパティに最後の円記号を含めないでください。 | `c:\Source\Repos\ConsoleApp1` |
 | `MSBuildThisFile` | 予約されています。 | `MSBuildThisFileFullPath` のファイル名とファイル拡張子の部分。 | `ConsoleApp1.csproj` |
 | `MSBuildThisFileDirectory` | 予約されています。 | `MSBuildThisFileFullPath` のディレクトリの部分。<br /><br /> パスに最後の円記号を含めます。 | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\` |
 | `MSBuildThisFileDirectoryNoRoot` | 予約されています。 | `MSBuildThisFileFullPath` のディレクトリの部分 (ルート ドライブを除く)。<br /><br /> パスに最後の円記号を含めます。 | `Source\Repos\ConsoleApp1\ConsoleApp1\` |
@@ -68,7 +70,7 @@ MSBuild には、プロジェクト ファイルに関する情報と MSBuild �
 | `MSBuildThisFileFullPath` | 予約されています。 | 実行中のターゲットを含むプロジェクト ファイルまたはターゲット ファイルの絶対パス。<br /><br /> ヒント :ターゲット ファイルに対して相対的であり、元のプロジェクト ファイルに対しては相対的ではない位置を示す、ターゲット ファイルの相対パスを指定できます。 | `c:\Source\Repos\ConsoleApp1\ConsoleApp1\ConsoleApp1.csproj` |
 | `MSBuildThisFileName` | 予約されています。 | `MSBuildThisFileFullPath` のファイル名の部分 (ファイル名拡張子を除く)。 | `ConsoleApp1` |
 | `MSBuildToolsPath` | 予約されています。 | `MSBuildToolsVersion` の値に関連付けられている MSBuild バージョンのインストール パス。<br /><br /> パスに最後の円記号を含めません。<br /><br /> このプロパティはオーバーライドできません。 | `C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\MSBuild\Current\Bin` |
-| `MSBuildToolsVersion` | 予約されています。 | プロジェクトのビルドに使用する MSBuild ツールセットのバージョン。<br /><br /> メモ:MSBuild ツールセットは、アプリケーションのビルドに使用されるタスク、ターゲット、およびツールで構成されています。 ツールには、*csc.exe* や *vbc.exe* などのコンパイラが含まれます。 詳細については、「[ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」と「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。 | `Current` |
+| `MSBuildToolsVersion` | 予約されています。 | プロジェクトのビルドに使用する MSBuild ツールセットのバージョン。<br /><br /> メモ:MSBuild ツールセットは、アプリケーションのビルドに使用されるタスク、ターゲット、およびツールで構成されています。 ツールには、 *csc.exe* や *vbc.exe* などのコンパイラが含まれます。 詳細については、「[ツールセット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」と「[標準ツールセット構成とカスタム ツールセット構成](../msbuild/standard-and-custom-toolset-configurations.md)」を参照してください。 | `Current` |
 | `MSBuildVersion` | 予約されています。 | プロジェクトのビルドに使用される MSBuild のバージョン。 <br /><br/> このプロパティはオーバーライドできません。オーバーライドすると、エラー メッセージ `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` が返されます。 | 16.7.0 |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>MSBuild の要素と競合する名前

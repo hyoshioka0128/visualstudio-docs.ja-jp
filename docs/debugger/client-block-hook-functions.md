@@ -1,5 +1,7 @@
 ---
 title: Client ブロック用のフック関数 | Microsoft Docs
+description: _CLIENT_BLOCK ブロックに格納されているデータの内容を検証したり、レポートしたりするための Client ブロック用のフック関数を記述します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7b0ef177922f09239c8925ced1ca013e966c0e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 720087e3c109c6dec4db06d993d0357dc1eddcd4
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745712"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729016"
 ---
 # <a name="client-block-hook-functions"></a>Client ブロック用のフック関数
 `_CLIENT_BLOCK` 型のブロックに格納されているデータの内容を検証したりレポートしたりするために、専用の関数を作成できます。 作成する関数には、CRTDBG.H で定義されている次のようなプロトタイプが必要です。
@@ -49,5 +51,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
 ## <a name="see-also"></a>関連項目
 
 - [デバッグ用フック関数の作成](../debugger/debug-hook-function-writing.md)
-- [crt_dbg2 サンプル](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [crt_dbg2 サンプル](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

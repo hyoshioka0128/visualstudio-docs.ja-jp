@@ -1,5 +1,7 @@
 ---
 title: '[正規表現を使用する]'
+description: Visual Studio で使用できる正規表現の文字、演算子、コンストラクト、パターンの例について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/13/2019
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8648eb48c68e0220b1d36a851619edec2b51ceb7
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75568621"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96478992"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio での正規表現の使用
 
@@ -31,7 +33,7 @@ Visual Studio は、テキストの検索と置換をするときに、[.NET Fra
 
 次の表では、正規表現の文字、演算子、コンストラクト、およびパターンの例をいくつか示します。 詳細なリファレンスについては、[正規表現言語](/dotnet/standard/base-types/regular-expression-language-quick-reference)に関する記事をご覧ください。
 
-|目的|正規表現|例|
+|目的|Expression|例|
 |-------------|----------------|-------------|
 |(改行を除く) 任意の 1 文字に一致します。 詳細については、「[任意の文字](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-)」を参照してください。|.|`a.o` は、"around" の中の "aro" および "about" の中の "abo" とは一致しますが、"across" の中の "acro" とは一致しません|
 |直前の正規表現の 0 回以上の繰り返しに一致します (一致する文字列の長さを最大限にします)。 詳しくは、「[0 回以上の繰り返しに一致](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-)」をご覧ください。|*|`a*r` は、"rack" の中の "r"、"ark" の中の "ar"、"aardvark" の中の "aar" に一致します。|
@@ -88,7 +90,7 @@ Visual Studio は、テキストの検索と置換をするときに、[.NET Fra
 
 - **正規表現内**: `\k<name>` を使用してください。 たとえば、正規表現 `(?<repeated>\w+)\s\k<repeated>` 内の `\k<repeated>` は、名前が `repeated` で部分式が `\w+` であるキャプチャ グループを参照します。
 
-- **置換パターン内**: `${name}` を使用してください。 たとえば、`${repeated}` のようにします。
+- **置換パターン内**: `${name}` を使用してください。 たとえば、「 `${repeated}` 」のように入力します。
 
 たとえば、次の図では、正規表現 `(?<repeated>\w+)\s\k<repeated>` と置換文字列 `${repeated}` を示します。 正規表現と置換パターンの両方で、`repeated` という名前のキャプチャ グループが参照されます。 Visual Studio の **[クイック置換]** ダイアログ ボックスで **[すべて置換]** を選択すると、繰り返されている単語がテキストから削除されます。
 

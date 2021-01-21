@@ -1,5 +1,7 @@
 ---
-title: '[呼び出し履歴] ウィンドウの混合コードと不足情報 | Microsoft Docs'
+title: '[呼び出し履歴] ウィンドウの混合コードと不足情報'
+description: 混合モードのプログラム (ネイティブとマネージド) では、デバッガーで常に完全な呼び出し履歴を表示できるとは限りません。 ネイティブ コードでマネージド コードを呼び出すときに、発生する可能性のある不整合について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25fb7bc54899d8c9a079d3f2706065d690904540
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: da8d3a469b957444935150f91567636aef0fb38a
+ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187535"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975265"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>[呼び出し履歴] ウィンドウの混合コードと不足情報
 マネージド コードとネイティブ コードの呼び出し履歴には違いがあるため、コードの種類が混在する場合、呼び出し履歴にすべてを表示できるとは限りません。 ネイティブ コードがマネージド コードを呼び出すと、 **[呼び出し履歴]** ウィンドウで以下の不具合が生じます。

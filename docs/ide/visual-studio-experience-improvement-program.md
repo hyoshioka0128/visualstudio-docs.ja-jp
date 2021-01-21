@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eae7e4726f720b1c9974682525bbe2a28ee38d5f
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71693007"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97667937"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio カスタマー エクスペリエンス向上プログラム
 
@@ -74,5 +74,5 @@ VSCEIP によって収集、処理、または送信される情報について�
 * [Visual Studio によって収集される診断情報](diagnostic-data-collection.md)
 * [Visual Studio フィードバック オプション](../ide/feedback-options.md)
 * [Visual Studio 2017 で問題を報告する方法](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/)
+* [Visual Studio 開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)
 * [Microsoft プライバシーに関する声明](https://privacy.microsoft.com/privacystatement)

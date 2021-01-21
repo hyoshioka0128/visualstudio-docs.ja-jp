@@ -1,5 +1,7 @@
 ---
-title: VSCT コンパイラのコマンドラインフラグ |Microsoft Docs
+title: VSCT コンパイラ Command-Line フラグ |Microsoft Docs
+description: Visual Studio コマンドテーブルコンパイラには、vsct ファイルを正常にコンパイルするためのコマンドラインオプションが用意されています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +13,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4ee29710049453c3163c366eccf96e257b6028d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
+ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703968"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97488012"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT コンパイラのコマンドライン フラグ
 Visual Studio コマンドテーブル (VSCT) コンパイラには、vsct ファイルのコンパイルが正常に行われるようにするためのコマンドラインスイッチが用意されています。
 
 ## <a name="command-line-parameters"></a>コマンドラインパラメーター
- コマンドウィンドウから基本的な VSCT ヘルプを表示するには、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Command** *Visual Studio SDK のインストールパス*\VisualStudioIntegration\Tools\Bin\ フォルダーに移動し、次のように入力します。
+ コマンドウィンドウから基本的な VSCT ヘルプを表示するには、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]  *Visual Studio SDK のインストールパス*\VisualStudioIntegration\Tools\Bin\ フォルダーに移動し、次のように入力します。
 
 ```
 vsct /?
@@ -59,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-d|定義されている追加のシンボルを指定します。|
 |-I|ファイル参照を解決するときに使用する追加のインクルードパスを指定します。|
 |-l|カルチャ名を指定し <xref:System.Globalization.CultureInfo> ます (例: "en-us")。|
-|-E|コマンド項目に対して指定した名前空間の C# オブジェクトを出力し、その後に [C&#124;H&#124;N]:*filename*を生成します。 c = C#、H = C++ ヘッダー、N = 名前空間。 C# では名前空間が必要です。|
+|-E|コマンド項目に対して指定した名前空間の C# オブジェクトを出力し、その後に [C&#124;H&#124;N]:*filename* を生成します。 c = C#、H = C++ ヘッダー、N = 名前空間。 C# では名前空間が必要です。|
 |-v|詳細出力。|
 
  -L スイッチは、文字列のグループを選択して、指定されたカルチャ名に対応するバイナリの cto ファイルを生成するようにコンパイラに指示します。 <xref:System.Globalization.CultureInfo> 指定されたカルチャ名は、vsct ファイル内の1つ以上の [文字列要素](../../extensibility/strings-element.md) の言語属性と一致する必要があります。 Strings 要素に言語属性がない場合は、それを含んでいる [Commandtable 要素](../../extensibility/commandtable-element.md)から継承されます。
@@ -74,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  VSCT コンパイラは、以前にビルドされたバイナリファイルを逆コンパイルすることもできます。 これを行うには、のバイナリファイルを指定し \<infile> ます。   バイナリファイルが VSCT コンパイラによって生成された場合、そのシンボルは既に埋め込まれており、出力のセクションにシンボリック名を含む出力が生成され \<Symbols> ます。 バイナリが CTC コンパイラによって生成された場合、出力には実際の Guid と Id が含まれます。 現在のバージョンの Ctc.exe によって生成された * ctsym ファイルがバイナリ入力ファイルと同じフォルダーにある場合、シンボルはそのファイルから読み込まれ、出力に使用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio Command Table (.Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

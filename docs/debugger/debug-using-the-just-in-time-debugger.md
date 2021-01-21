@@ -1,5 +1,7 @@
 ---
 title: Just-In-Time デバッガーを使用してデバッグする | Microsoft Docs
+description: Visual Studio で Just-In-Time デバッガーを使用してデバッグします。 Just-In-Time デバッグを使用すると、アプリでエラーまたはクラッシュが発生したときに、Visual Studio を自動的に起動できます。
+ms.custom: SEO-VS-2020
 ms.date: 09/24/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: a03afa64d19e3ccd0efbb170b4305049f6bfee30
+ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85350577"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97761343"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Visual Studio で Just-In-Time デバッガーを使用してデバッグする
 
@@ -100,11 +102,11 @@ Windows フォーム アプリには既定で最高レベルの例外ハンド�
 
 - これらのステップを実行するには、Visual Studio をインストールする必要があります。 Visual Studio をインストールしていない場合は、無料の [Visual Studio Community エディション](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)をダウンロードできます。
 
-- **[ツール]**  >  **[オプション]**  >  **[デバッグ]**  >  **[Just-In-Time]** で、Just-In-Time デバッグが[有効](#BKMK_Enabling)になっていることを確認します。
+- **[ツール]**  >  **[オプション]**  >  **[デバッグ]**  >  **[Just-In-Time]** で、Just-In-Time デバッグが [有効](#BKMK_Enabling)になっていることを確認します。
 
 この例では、[NullReferenceException](/dotnet/api/system.nullreferenceexception) をスローする C# コンソール アプリを Visual Studio で作成します。
 
-1. Visual Studio で、*ThrowsNullException*という名前の C# コンソール アプリを作成します ( **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]**  >  **[Visual C#]**  >  **[コンソール アプリケーション]** )。 Visual Studio でのプロジェクトの作成の詳細については、[シンプルなアプリケーションを作成するチュートリアル](../get-started/csharp/tutorial-wpf.md)のページを参照してください。
+1. Visual Studio で、*ThrowsNullException* という名前の C# コンソール アプリを作成します ( **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]**  >  **[Visual C#]**  >  **[コンソール アプリケーション]** )。 Visual Studio でのプロジェクトの作成の詳細については、[シンプルなアプリケーションを作成するチュートリアル](../get-started/csharp/tutorial-wpf.md)のページを参照してください。
 
 1. プロジェクトが Visual Studio で開いたら、*Program.cs* ファイルを開きます。 Main() メソッドを次のコードで置き換えます。これは、行をコンソールに出力して、NullReferenceException をスローします。
 
@@ -128,11 +130,11 @@ Windows フォーム アプリには既定で最高レベルの例外ハンド�
 
    次のコマンド ウィンドウが表示されます。
 
-   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   ![未処理の null 参照例外 (System.NullReferenceException) をスローする ThrowsNullException.exe のコンソールのスクリーンショット。](../debugger/media/throwsnullexceptionconsole.png)
 
 1. **[Just-In-Time デバッガーを選択する]** ダイアログが開きます。
 
-   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   ![ThrowsNullException.exe コンソール ウィンドウに例外が表示された後に表示される、[Just-In-Time デバッガーを選択する] ダイアログ ボックスのスクリーンショット。](../debugger/media/justintimedialog.png)
 
    **[Available Debuggers]\(使用可能なデバッガー\)** の下で、まだ選択されていない場合は **[\<your preferred Visual Studio version/edition> の新しいインスタンス]** を選択します。
 
@@ -140,7 +142,7 @@ Windows フォーム アプリには既定で最高レベルの例外ハンド�
 
    ThrowsNullException プロジェクトが、Visual Studio の新しいインスタンスで開きます。例外をスローした行で実行が停止しています。
 
-   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
+   ![Visual Studio の ThrowsNullException プロジェクトのスクリーンショット。例外をスローしたソース コードの行が強調表示されています。](../debugger/media/nullreferencesecondinstance.png)
 
 この時点でデバッグを開始できます。 実際のアプリをデバッグしている場合は、コードが例外をスローする理由を確認する必要があります。
 

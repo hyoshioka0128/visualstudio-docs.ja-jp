@@ -1,5 +1,7 @@
 ---
 title: Visual Studio SDK リファレンス |Microsoft Docs
+description: これらの記事には、visual studio の名前空間、関連する名前空間、Visual Studio SDK を使用する開発者にとって関心のあるその他の領域に関する情報が含まれています。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c1f6eaa2019e602efc760003c960a9b62f9ebd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8f53d122138845c0b9711a78d2237972512710cb
+ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80698096"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97863858"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK リファレンス
 
@@ -208,6 +210,6 @@ ms.locfileid: "80698096"
 
 - <xref:Microsoft.Build.Utilities> MSBuild に使用されます。
 
-## <a name="related-sections"></a>関連セクション
+## <a name="related-sections"></a>関連項目
 
 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md) には、visual studio と統合する製品の開発に役立つドキュメント、サンプル、コードが含まれています。

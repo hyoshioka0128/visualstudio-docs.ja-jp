@@ -1,5 +1,7 @@
 ---
 title: 型のメンバーの作成と構成 (クラス デザイナー)
+description: メンバーをクラス ダイアグラムの型に追加して、それらのメンバーを [クラスの詳細] ウィンドウで構成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -29,12 +31,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.openlocfilehash: 504488bdd08e80c34ebeed727e7b95badf12ca37
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85771043"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903015"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>クラス デザイナーでの型メンバーの作成および構成
 
@@ -100,7 +102,7 @@ ms.locfileid: "85771043"
 
 2. **[クラスの詳細]** ウィンドウ ツール バーで、上部のアイコンをクリックし、ドロップダウン リストの **[新しい \<member>]** をクリックします。
 
-     カーソルが追加するメンバーの種類の列の**名前**フィールドに移動します。 たとえば、 **[新しいプロパティ]** をクリックすると、 **[クラスの詳細]** ウィンドウの **[プロパティ]** セクションの新しい行にカーソルが移動します。
+     カーソルが追加するメンバーの種類の列の **名前** フィールドに移動します。 たとえば、 **[新しいプロパティ]** をクリックすると、 **[クラスの詳細]** ウィンドウの **[プロパティ]** セクションの新しい行にカーソルが移動します。
 
 3. 作成するメンバーの名前を入力し、Enter キーを押します (または、Tab キーの押下などによりフォーカスを移動します)。
 

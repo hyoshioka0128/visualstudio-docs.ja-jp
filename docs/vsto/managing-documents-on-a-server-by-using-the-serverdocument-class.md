@@ -1,5 +1,8 @@
 ---
 title: ServerDocument クラスを使用してサーバー上のドキュメントを管理する
+description: Visual Studio Tools for Office ランタイムで ServerDocument クラスを使用して、ドキュメントレベルのカスタマイズのいくつかの側面を管理する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 739946fc7fc6ea7014fb93010ca85094a7fc7056
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 585ec1842daeb4e4c4c59047383e5d53b3599bcf
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71251932"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528499"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>ServerDocument クラスを使用してサーバー上のドキュメントを管理する
   でクラスを使用すると、 `ServerDocument` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Word および Microsoft Office Excel がインストールされていない場合でも、ドキュメントレベルのカスタマイズのいくつかの側面を管理できます。 実行できる管理タスクは以下のとおりです。
@@ -31,7 +34,7 @@ ms.locfileid: "71251932"
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="understand-the-serverdocument-class"></a>ServerDocument クラスについて
- `ServerDocument` クラスは Office がインストールされていないコンピューターでの使用を目的としています。 したがって、このクラスは通常、Office プロジェクトではなく、コンソール プロジェクトや Windows フォーム プロジェクトなどの Office に統合されないアプリケーションで使用します。 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*アセンブリのクラスを使用します。
+ `ServerDocument` クラスは Office がインストールされていないコンピューターでの使用を目的としています。 したがって、このクラスは通常、Office プロジェクトではなく、コンソール プロジェクトや Windows フォーム プロジェクトなどの Office に統合されないアプリケーションで使用します。 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* アセンブリのクラスを使用します。
 
  `ServerDocument` クラスは、[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] を使用して作成されたドキュメント レベルのカスタマイズの操作に使用できます。
 

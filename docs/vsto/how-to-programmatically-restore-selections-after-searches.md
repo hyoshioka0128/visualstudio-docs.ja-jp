@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによって検索後に選択を復元する'
+description: Microsoft Word 文書で検索した後、Visual Studio を使用してプログラムで選択を復元する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 30daa81c33070db3f9418b45b84b4acc6e243dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d396602a5d2bc0c3a90d32256bf226348abff3f3
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547096"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528275"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>方法: プログラムによって検索後に選択を復元する
   ドキュメント内のテキストを検索して置換する場合は、検索の完了後にユーザーの元の選択を復元することができます。

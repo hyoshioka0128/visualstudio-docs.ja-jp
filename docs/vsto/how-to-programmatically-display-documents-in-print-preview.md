@@ -1,5 +1,8 @@
 ---
 title: '方法: プログラムによって印刷プレビューで文書を表示する'
+description: Microsoft Word 文書で、ドキュメントを印刷プレビューでプログラムで表示する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69c5014958d137b534a283b0d07fa048966092be
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545913"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97525862"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>方法: プログラムによって印刷プレビューで文書を表示する
   レポートを生成するソリューションでは、印刷プレビュー モードでユーザーにレポートを表示する必要がある場合があります。
@@ -36,7 +39,7 @@ ms.locfileid: "85545913"
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>PrintPreview プロパティを設定して印刷プレビューで文書を表示するには
 
-1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>オブジェクトのプロパティ <xref:Microsoft.Office.Interop.Word.Application> を**true**に設定します。
+1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>オブジェクトのプロパティ <xref:Microsoft.Office.Interop.Word.Application> を **true** に設定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
@@ -52,7 +55,7 @@ ms.locfileid: "85545913"
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>PrintPreview プロパティを設定して印刷プレビューで文書を表示するには
 
-1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>オブジェクトのプロパティ <xref:Microsoft.Office.Interop.Word.Application> を**true**に設定します。
+1. <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A>オブジェクトのプロパティ <xref:Microsoft.Office.Interop.Word.Application> を **true** に設定します。
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]

@@ -1,5 +1,7 @@
 ---
 title: ユーザーへのフィードバック |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) の利用可能な機能に関するフィードバックをユーザーに提供する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b9190b16b9aa444384847bf209ccca50c7f768
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
+ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708411"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96480526"
 ---
 # <a name="feedback-to-the-user"></a>ユーザーへのフィードバック
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、使用可能な機能に関するビジュアルフィードバックは、ユーザーの現在の選択とグローバル選択コンテキストに基づいています。 次の表に、さまざまな選択コンテキストで使用できる機能を示します。
@@ -53,7 +55,7 @@ ms.locfileid: "80708411"
 
 - ドキュメント固有の **ツールボックス** は、アクティブなドキュメントを反映して更新されます。
 
-- **エディター**のツールバーと [**テーブル**] メニューが表示され、タイトルバーが Web フォームウィンドウを反映して更新されます。
+- **エディター** のツールバーと [**テーブル**] メニューが表示され、タイトルバーが Web フォームウィンドウを反映して更新されます。
 
 - [アクティブな階層] ウィンドウ (通常は **ソリューションエクスプローラー**) で、現在のコンテキストを反映するようにタイトルバーが更新され、コンテキスト依存の [ **プロジェクト** ] メニューコマンドがアクティブな Web アプリケーションプロジェクトに適用されるようになりました。
 

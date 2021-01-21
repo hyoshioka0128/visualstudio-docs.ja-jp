@@ -1,5 +1,7 @@
 ---
 title: 既定のキーボード ショートカット
+description: さまざまなコマンドやウィンドウにアクセスできる Visual Studio の既定のキーボード ショートカットについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 06/26/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -13,16 +15,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f9328b7e048eaf68184925fa1b7ac7a56540af
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 06bbbb0124984530e92b0066044c71bfbe80ad2b
+ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85533641"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95006368"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
-Visual Studio のさまざまな[コマンド](reference/visual-studio-commands.md)やウィンドウには、該当するキーボード ショートカットを選択することでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる**全般**プロファイルの既定のコマンド ショートカットの一覧を示します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドの[ショートカットを確認する](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
+Visual Studio のさまざまな[コマンド](reference/visual-studio-commands.md)やウィンドウには、該当するキーボード ショートカットを選択することでアクセスできます。 このページでは、Visual Studio のインストール時に選択できる **全般** プロファイルの既定のコマンド ショートカットの一覧を示します。 選択したプロファイルにかかわらず、 **[オプション]** ダイアログ ボックスを開き、 **[環境]** ノードを展開して、 **[キーボード]** を選択することで、コマンドの [ショートカットを確認する](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)ことができます。 また、別のショートカット キーを任意のコマンドに割り当てることで、ショートカット キーをカスタマイズすることもできます。
 
 一般的なキーボード ショートカットの一覧、およびその他の生産性向上情報については、以下をご覧ください。
 
@@ -35,7 +37,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 - [解析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
 - [編集](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
 - [プロジェクト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
+- [テスト](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
 - [アーキテクチャ](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
 - [エディター コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
 - [プロジェクトとソリューション コンテキスト メニュー](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
@@ -60,7 +62,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 
 ## <a name="global-shortcuts"></a>グローバル ショートカット
 
-以下のキーボード ショートカットは*グローバル*です。つまり、Visual Studio ウィンドウにフォーカスがある場合にそれらを使用できます。
+以下のキーボード ショートカットは *グローバル* です。つまり、Visual Studio ウィンドウにフォーカスがある場合にそれらを使用できます。
 
 ### <a name="analyze"></a><a name="bkmk_analyze"></a> 解析
 

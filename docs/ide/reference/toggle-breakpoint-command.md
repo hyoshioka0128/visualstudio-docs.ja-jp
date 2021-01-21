@@ -1,5 +1,7 @@
 ---
 title: ToggleBreakpoint コマンド
+description: Toggle Breakpoint コマンドを使用し、ファイル内の現在位置でブレークポイントをオンならオフに、オフならオンに切り替える方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d393890e6166b4a4ef53c9520a556e9a9edd64d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b65144271f91d518dd6649fa1e97fc627d1b0009
+ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75597322"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96560968"
 ---
 # <a name="toggle-breakpoint-command"></a>ToggleBreakpoint コマンド
 ファイル内の現在位置で、現在の状態に基づいてブレークポイントのオン/オフを切り替えます。
@@ -42,9 +44,9 @@ Debug.ToggleBreakpoint [text]
 >Debug.ToggleBreakpoint
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコマンド](../../ide/reference/visual-studio-commands.md)
-- [[コマンド] ウィンドウ](../../ide/reference/command-window.md)
+- [コマンド ウィンドウ](../../ide/reference/command-window.md)
 - [検索コマンド ボックス](../../ide/find-command-box.md)
-- [Visual Studio コマンドのエイリアス](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,7 @@
 ---
-title: 方法 - IIS のプロパティ設定を確認する | Microsoft Docs
+title: IIS のプロパティ設定を確認する | Microsoft Docs
+description: IIS 管理ツールを使用して、Web アプリケーションに対して設定した IIS プロパティ設定を確認する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.openlocfilehash: b627fbd3d4875699faa28f551d68f5a99bd63340
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "85348471"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98150549"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>方法: IIS のプロパティ設定を確認する
 
@@ -59,9 +61,9 @@ IIS 管理ツールで、Web アプリケーションのプロパティを設定
 
    3. **[OK]** をクリックして **[認証方法]** ダイアログ ボックスを閉じます。
 
-5. ATL Server アプリケーションの場合は、DEBUG の動詞が ISAPI 拡張機能に関連付けられていることを確認してください。 詳細については、「[方法:動詞 DEBUG を拡張子に関連付ける](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e)」を参照してください。
+5. ATL Server アプリケーションの場合は、DEBUG の動詞が ISAPI 拡張機能に関連付けられていることを確認してください。 詳細については、「[方法:動詞 DEBUG を拡張子に関連付ける](/previous-versions/ms165022(v=vs.100))」を参照してください。
 
-6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションの場合、アプリケーションの仮想フォルダーに、**インターネット インフォメーション サービス (IIS) マネージャー**、**インターネット サービス マネージャー**、または**インターネット インフォメーション サービス**で設定されたアプリケーション名があることを確認します。
+6. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションの場合、アプリケーションの仮想フォルダーに、**インターネット インフォメーション サービス (IIS) マネージャー**、**インターネット サービス マネージャー**、または **インターネット インフォメーション サービス** で設定されたアプリケーション名があることを確認します。
 
    1. Web アプリケーションの **[プロパティ]** ウィンドウで、 **[ディレクトリ]** タブ (アプリケーションが仮想ディレクトリにある場合) または **[ホーム ディレクトリ]** タブ (アプリケーションが Web サイトにある場合) を選択します。
 

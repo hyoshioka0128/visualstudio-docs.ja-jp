@@ -1,6 +1,7 @@
 ---
 title: デザイン時にデバッグする | Microsoft Docs
-ms.custom: ''
+description: '[イミディエイト] ウィンドウを使用し、アプリを実行せず、デザイン時にコードをデバッグします。 関数を実行し、ブレークポイントにヒットしたときの状態を調べることができます。'
+ms.custom: SEO-VS-2020
 ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f127c630cec0e0b64ab5602e81f2b314a3896b16
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183562"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98148848"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Visual Studio でデザイン時にデバッグする (C#、C++/CLI、Visual Basic、F#)
 
@@ -31,7 +32,7 @@ ms.locfileid: "84183562"
 
 ## <a name="use-the-immediate-window"></a>[イミディエイト] ウィンドウを使用する
 
-Visual Studio の **[イミディエイト]** ウィンドウを使用すると、アプリを実行しなくても、関数やサブルーチンを実行できます。 関数またはサブルーチンにブレークポイントが含まれている場合、Visual Studio はブレークポイントで中断します。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 この機能は、*デザイン時のデバッグ*と呼ばれます。
+Visual Studio の **[イミディエイト]** ウィンドウを使用すると、アプリを実行しなくても、関数やサブルーチンを実行できます。 関数またはサブルーチンにブレークポイントが含まれている場合、Visual Studio はブレークポイントで中断します。 デバッガー ウィンドウを使用して、プログラムの状態を確認できます。 この機能は、*デザイン時のデバッグ* と呼ばれます。
 
 Visual Basic での例を次に示します。 C#、F#、および C++/CLI アプリでは、デザイン時に **[イミディエイト]** ウィンドウを使用することもできます。
 

@@ -1,5 +1,7 @@
 ---
 title: テスト エージェントを構成する
+description: エージェントをサービスではなくプロセスとして実行されるように設定することで、デスクトップと対話する自動テストを実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 09/18/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +10,12 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 994d5da8af7b00ab8af55681d4a67e9681ebbde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13949465677301a336f0a4738e903657dbfe2b7f
+ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287533"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95441014"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>方法: テスト エージェントを設定して、デスクトップと対話するテストを実行する
 
@@ -28,7 +30,7 @@ ms.locfileid: "85287533"
 
 ::: moniker range="vs-2017"
 > [!WARNING]
-> Microsoft Test Manager を使用してラボ環境を設定する場合、テスト エージェントがインストールされます。 コード化された UI テストを実行できるようにロールの 1 つを構成する場合は、**環境の作成ウィザード**で指定できます。
+> Microsoft Test Manager を使用してラボ環境を設定する場合、テスト エージェントがインストールされます。 コード化された UI テストを実行できるようにロールの 1 つを構成する場合は、**環境の作成ウィザード** で指定できます。
 :::moniker-end
 
 > [!IMPORTANT]
@@ -75,7 +77,7 @@ ms.locfileid: "85287533"
 
    テスト エージェントを構成する各ステップの状態を示す **[構成の概要]** ダイアログ ボックスが表示されます。
 
-7. **[構成の概要]** ダイアログ ボックスを閉じるには、 **[閉じる]** を選択します。 **[閉じる]** をもう一度選択して、**Test Agent 構成ツール**を終了します。
+7. **[構成の概要]** ダイアログ ボックスを閉じるには、 **[閉じる]** を選択します。 **[閉じる]** をもう一度選択して、**Test Agent 構成ツール** を終了します。
 
    > [!NOTE]
    > コンピューターには、プロセスとして実行されているテスト エージェントに関する通知領域アイコンが表示されます。 このアイコンは、テスト エージェントの状態を示します。 このツールを使用してエージェントがプロセスとして実行されている場合は、エージェントを起動、停止、または再起動できます。 テスト エージェントが実行されていない場合にプロセスとして開始するには、 **[スタート]**  >  **[Visual Studio]**  >  **[Microsoft Visual Studio Test Agent]** の順に選択します。

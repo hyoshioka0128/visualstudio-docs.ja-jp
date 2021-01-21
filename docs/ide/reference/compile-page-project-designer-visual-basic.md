@@ -1,5 +1,7 @@
 ---
 title: '[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)'
+description: Visual Studio でコンパイル命令を指定する方法について説明します。 このページでは、高度なコンパイラ オプションとビルド前またはビルド後のイベントを指定することもできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -19,18 +21,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.openlocfilehash: 60172d9e308e38967f5ab5a8d882057e78f083c8
+ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89284318"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "92136629"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>[コンパイル] ページ、プロジェクト デザイナー (Visual Basic)
 
 プロジェクト デザイナーの **[コンパイル]** ページを使用して、コンパイル命令を指定します。 このページでは、高度なコンパイラ オプションとビルド前またはビルド後のイベントを指定することもできます。
 
-**[コンパイル]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノード (**[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]** 、 **[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、 **[コンパイル]** タブをクリックします。
+**[コンパイル]** ページにアクセスするには、 **ソリューション エクスプローラー** でプロジェクト ノード ( **[ソリューション]** ノードではありません) を選択します。 その後、メニュー バーで **[プロジェクト]** 、 **[プロパティ]** の順に選択します。 プロジェクト デザイナーが表示されたら、 **[コンパイル]** タブをクリックします。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "89284318"
 次の設定を使用すると、表示または変更する構成およびプラットフォームを選択できます。
 
 > [!NOTE]
-> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、**構成**リストと**プラットフォーム** リストは表示されません。
+> 簡易ビルド構成を使用した場合、デバッグ バージョンとリリース バージョンのどちらをビルドするかの決定はプロジェクト システムによって行われます。 したがって、 **構成** リストと **プラットフォーム** リストは表示されません。
 
 **構成**
 
@@ -65,9 +67,9 @@ ms.locfileid: "89284318"
 
 この設定は、[/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Explicit ステートメント](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Explicit]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Explicit ステートメント](/dotnet/visual-basic/language-reference/statements/option-explicit-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、 **[コンパイル]** ページの **[Option Explicit]** 設定をオーバーライドします。
 
-新しいプロジェクトを作成するときに、**[コンパイル]** ページの **[Option Explicit]** 設定が **[オプション]** ダイアログ ボックスの **[Option Explicit]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Explicit]** の初期の既定値は **[オン]** です。
+新しいプロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Explicit]** 設定が **[オプション]** ダイアログ ボックスの **[Option Explicit]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Explicit]** の初期の既定値は **[オン]** です。
 
 **[Option Explicit]** を `Off` に設定することは、通常はお勧めできません。 変数名のスペルを 1 か所以上間違えると、プログラムの実行時に予期しない結果を招く可能性があります。
 
@@ -87,11 +89,11 @@ ms.locfileid: "89284318"
 
 適切な型が宣言された変数を推論できない場合は暗黙的なオブジェクトの型エラーが発生するため、`Object` の型が推論されます。 これは主に、`As` 句を使用せず、`Option Infer` をオフにして、`Dim` ステートメントを使用して変数を宣言した場合に発生します。 詳細については、「[Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)」、「[Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)」、および「[Visual Basic Language Specification](/dotnet/visual-basic/reference/language-specification)」 (Visual Basic 言語仕様) を参照してください。
 
-**[Option Strict]** 設定は、[/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) コンパイラ オプションに相当します。
+**[Option Strict]** 設定は、 [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Strict]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Strict ステートメント](/dotnet/visual-basic/language-reference/statements/option-strict-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、 **[コンパイル]** ページの **[Option Strict]** 設定をオーバーライドします。
 
-プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Strict]** 設定が **[オプション]** ダイアログ ボックスの **[Option Strict]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Strict]** の初期の既定値は **[オフ]** です。
+プロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Strict]** 設定が **[オプション]** ダイアログ ボックスの **[Option Strict]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Strict]** の初期の既定値は **[オフ]** です。
 
 **Option Strict の個々の警告**
 
@@ -113,9 +115,9 @@ ms.locfileid: "89284318"
 
 この設定は、[/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Compare ステートメント](/dotnet/visual-basic/language-reference/statements/option-compare-statement)が含まれている場合、ステートメント内の `Binary` または `Text` の値が、**[コンパイル]** ページの **[Option Compare]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Compare ステートメント](/dotnet/visual-basic/language-reference/statements/option-compare-statement)が含まれている場合、ステートメント内の `Binary` または `Text` の値が、 **[コンパイル]** ページの **[Option Compare]** 設定をオーバーライドします。
 
-プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Compare]** 設定が **[オプション]** ダイアログ ボックスの **[Option Compare]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Compare]** の初期の既定値は **[バイナリ]** です。
+プロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Compare]** 設定が **[オプション]** ダイアログ ボックスの **[Option Compare]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Compare]** の初期の既定値は **[バイナリ]** です。
 
 **Option Infer**
 
@@ -123,9 +125,9 @@ ms.locfileid: "89284318"
 
 この設定は、[/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer) コンパイラ オプションに相当します。
 
-ソース コード ファイルに [Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、**[コンパイル]** ページの **[Option Infer]** 設定をオーバーライドします。
+ソース コード ファイルに [Option Infer ステートメント](/dotnet/visual-basic/language-reference/statements/option-infer-statement)が含まれている場合、ステートメント内の `On` または `Off` の値が、 **[コンパイル]** ページの **[Option Infer]** 設定をオーバーライドします。
 
-プロジェクトを作成するときに、**[コンパイル]** ページの **[Option Infer]** 設定が **[オプション]** ダイアログ ボックスの **[Option Infer]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Infer]** の初期の既定値は **[オン]** です。
+プロジェクトを作成するときに、 **[コンパイル]** ページの **[Option Infer]** 設定が **[オプション]** ダイアログ ボックスの **[Option Infer]** 設定の値に設定されます。 このダイアログ ボックスの設定を表示または変更するには、 **[ツール]** メニューで **[オプション]** をクリックします。 **[オプション]** ダイアログ ボックスの **[プロジェクトおよびソリューション]** を展開し、 **[VISUAL BASIC の既定値]** をクリックします。 **[VISUAL BASIC の既定値]** での **[Option Infer]** の初期の既定値は **[オン]** です。
 
 **対象の CPU**
 
@@ -155,11 +157,11 @@ ms.locfileid: "89284318"
 
 **すべての警告を表示しない**
 
-このドキュメントで既に説明した、**条件と通知**テーブルで指定されているとおりにコンパイラに通知の発行を許可するかどうかを指定します。 既定では、このチェック ボックスはオフに設定されます。 警告またはエラーを発行しないようにコンパイラに指示するには、このチェック ボックスを選択します。
+このドキュメントで既に説明した、 **条件と通知** テーブルで指定されているとおりにコンパイラに通知の発行を許可するかどうかを指定します。 既定では、このチェック ボックスはオフです。 警告またはエラーを発行しないようにコンパイラに指示するには、このチェック ボックスを選択します。
 
 この設定は、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) コンパイラ オプションに相当します。
 
-**すべての警告をエラーとして扱う**
+**すべての警告をエラーとして扱います。**
 
 警告の処理方法を指定します。 既定では、このチェック ボックスはオフになっているため、すべての警告通知が **[警告]** に設定されたままになっています。 すべての警告通知を **[エラー]** に変更するには、このチェック ボックスをオンにします。
 
@@ -187,8 +189,8 @@ ms.locfileid: "89284318"
 
 このボタンをクリックして、 **[コンパイラの詳細設定]** ダイアログ ボックスにアクセスします。 **[コンパイラの詳細設定]** ダイアログ ボックスを使用して、プロジェクトの詳細なビルド構成プロパティを指定します。 このダイアログ ボックスは、Visual Basic プロジェクトにのみ適用されます。 詳細については、「[[ビルドの詳細設定] ダイアログ ボックス (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法 : ビルド イベントを指定する (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Visual Basic のコマンド ライン コンパイラ](/dotnet/visual-basic/reference/command-line-compiler/index)
-- [方法 : 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)
+- [方法: 構成を作成および編集する](../../ide/how-to-create-and-edit-configurations.md)

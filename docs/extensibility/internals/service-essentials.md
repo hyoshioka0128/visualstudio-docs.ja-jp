@@ -1,5 +1,7 @@
 ---
 title: サービスの要点 |Microsoft Docs
+description: 別の VSPackage が使用するためのインターフェイスであるサービスについて説明します。 VSPackage のサービスでは、組み込みのサービスやその他のサービスをオーバーライドできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2947cb4cd6a347d8e010340f8689eb1907a28a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705502"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97875805"
 ---
 # <a name="service-essentials"></a>サービスの基本情報
 サービスは、2つの Vspackage 間のコントラクトです。 VSPackage は、別の VSPackage が使用するインターフェイスの特定のセットを提供します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、他の Vspackage にサービスを提供する Vspackage のコレクションです。

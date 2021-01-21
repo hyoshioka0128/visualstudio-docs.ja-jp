@@ -1,6 +1,7 @@
 ---
 title: Visual Studio 拡張機能のルールベースの UI コンテキストを使用する
 titleSuffix: ''
+description: ルールベースの UI コンテキストを使用する方法について説明します。これにより、拡張機能の作成者は、UI コンテキストがアクティブになって Vspackage が読み込まれたときに条件を定義できます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +10,12 @@ author: acangialosi
 ms.author: anthc
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc24fe3f5b27b3c92f0629ed378c1a97c820cd0a
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037108"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96993459"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する
 
@@ -41,7 +42,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
 
 1. 新しい UIContext GUID を定義し、VSPackage クラスとにを追加し <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute> ます。
 
-    たとえば、新しい UIContext "UIContextGuid" が追加されるとします。 作成された guid ([**ツール**] [guid の作成] をクリックして guid を作成でき  >  **Create GUID**ます) は、"8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" です。 次に、パッケージクラス内に次の宣言を追加します。
+    たとえば、新しい UIContext "UIContextGuid" が追加されるとします。 作成された guid ([**ツール**] [guid の作成] をクリックして guid を作成でき  >  ます) は、"8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B" です。 次に、パッケージクラス内に次の宣言を追加します。
 
    ```csharp
    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";
@@ -58,7 +59,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
        termValues: new[] { "HierSingleSelectionName:.config$" })]
    ```
 
-    これらのメタデータは、新しい UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) と1つの用語 "DotConfig" を参照する式を定義します。 "DotConfig" という用語は、アクティブ階層内の現在の選択範囲の名前が、正規表現パターン " \\ . .config $" ( *.config*で終わる) と一致する場合に true に評価されます。 (既定値) 値は、デバッグに便利な規則の名前を定義します (省略可能)。
+    これらのメタデータは、新しい UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) と1つの用語 "DotConfig" を参照する式を定義します。 "DotConfig" という用語は、アクティブ階層内の現在の選択範囲の名前が、正規表現パターン " \\ . .config $" ( *.config* で終わる) と一致する場合に true に評価されます。 (既定値) 値は、デバッグに便利な規則の名前を定義します (省略可能)。
 
     属性の値は、後でビルド時に生成された .pkgdef に追加されます。
 
@@ -82,7 +83,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
    <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
-    これで、 * \* .config*ファイルのコンテキストメニューコマンドは、ソリューションエクスプローラーで選択された項目が *.config*ファイルの場合にのみ表示され、これらのコマンドのいずれかが選択されるまで、パッケージは読み込まれません。
+    これで、 *\* .config* ファイルのコンテキストメニューコマンドは、ソリューションエクスプローラーで選択された項目が *.config* ファイルの場合にのみ表示され、これらのコマンドのいずれかが選択されるまで、パッケージは読み込まれません。
 
    次に、デバッガーを使用して、パッケージがであると予想される場合にのみ読み込まれることを確認します。 TestPackage をデバッグするには:
 
@@ -92,9 +93,9 @@ Visual Studio では、特定の既知のがアクティブになったときに
 
 7. プロジェクトを作成するか、プロジェクトを開きます。
 
-8. 拡張子が *.config*以外のファイルを選択します。ブレークポイントにヒットすることはできません。
+8. 拡張子が *.config* 以外のファイルを選択します。ブレークポイントにヒットすることはできません。
 
-9. *App.Config*ファイルを選択します。
+9. *App.Config* ファイルを選択します。
 
    TestPackage は、ブレークポイントで読み込みと停止を行います。
 
@@ -131,7 +132,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
 
 サポートされているさまざまな種類の用語を次に示します。
 
-|期間|説明|
+|項目|説明|
 |-|-|
 |{nnnnnnnn-nnnn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID は、UI コンテキストを参照します。 この用語は、UI コンテキストがアクティブである場合は true、それ以外の場合は false になります。|
 |HierSingleSelectionName:\<pattern>|この用語は、アクティブ階層内の選択が単一の項目であり、選択した項目の名前が "pattern" で指定された .Net 正規表現と一致する場合に true になります。|

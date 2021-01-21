@@ -1,6 +1,7 @@
 ---
 title: コンテナーの高度な例
-description: ''
+description: Docker コンテナーの高度な例について説明します。 この Dockerfile の例では、microsoft/dotnet-framework イメージの特定バージョンのタグを使用します。
+ms.custom: SEO-VS-2020
 ms.date: 03/25/2020
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
@@ -11,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 92d0e984d4ccf595af2821dff9c02d069b16404d
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.openlocfilehash: d21784169e541e2f4353fd6d16772b5315940166
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80273843"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668834"
 ---
 # <a name="advanced-example-for-containers"></a>コンテナーの高度な例
 
@@ -69,9 +70,8 @@ if "%ERRORLEVEL%"=="3010" (
 ```dockerfile
 # escape=`
 
-# Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:3eaa3ba18f45e6561f32d8dd927045413f1dd043d7d29fb581f5cb3c6f7d7481
-ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
+# Use a specific tagged image.
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/runtime:4.8
 FROM ${FROM_IMAGE}
 
 # Restore the default Windows shell for correct batch processing.
@@ -213,7 +213,7 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ::: moniker-end
 
-最終行の実行が終了したら、ご自分のコンピューター上で "%TEMP%\vslogs.zip" を開くか、[開発者コミュニティ](https://developercommunity.visualstudio.com)の Web サイトでイシューを提出します。
+最終行の実行が終了したら、ご自分のコンピューター上で "%TEMP%\vslogs.zip" を開くか、[開発者コミュニティ](https://aka.ms/feedback/suggest?space=8)の Web サイトでイシューを提出します。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,5 +1,7 @@
 ---
-title: '方法: プロジェクト ファイルの名前または場所を参照する | Microsoft Docs'
+title: プロジェクト ファイルの名前または場所を参照する
+description: MSBuild の予約済みプロパティを使用して、独自のプロパティを作成せずにプロジェクト ファイルの名前または場所を参照する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ccc356e1859f447db1ac18a437b8fc2317925b0f
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77633838"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436344"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>方法: プロジェクト ファイルの名前または場所を参照する
 
@@ -48,7 +50,7 @@ ms.locfileid: "77633838"
 > [!NOTE]
 > 予約済みのプロパティは、プロジェクト ファイルで再定義できません。
 
-## <a name="example"></a>例
+## <a name="example-1"></a>例 1
 
  次の例では、プロジェクト ファイルは出力の名前を指定する予約済みのプロパティとして、プロジェクト名を参照します。
 
@@ -77,7 +79,7 @@ ms.locfileid: "77633838"
 </Project>
 ```
 
-## <a name="example"></a>例
+## <a name="example-2"></a>例 2
 
  次のプロジェクト ファイルの例では、`MSBuildProjectDirectory` 予約済みプロパティを使用して、プロジェクト ファイルの場所にあるファイルへの完全パスを作成します。
 

@@ -1,5 +1,7 @@
 ---
 title: Visual Studio のメニューバーにメニューを追加する |Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) のメニューバーにメニューを追加する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb5afbbe688c15f429054d50210a68769173e73
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc84eb8854c0a6ff738a51c2ca883ad0527ec919
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801855"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597861"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>メニューを Visual Studio のメニューバーに追加する
 
@@ -43,13 +45,13 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ::: moniker range="vs-2017"
 
-2. プロジェクトが開いたら、 **Testcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >   **New Item**ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *TestCommand.cs*に変更します。
+2. プロジェクトが開いたら、 **Testcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >   **New Item** ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *TestCommand.cs* に変更します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. プロジェクトが開いたら、 **Testcommand**という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >   **New Item**ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *TestCommand.cs*に変更します。
+2. プロジェクトが開いたら、 **Testcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >   **New Item** ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *TestCommand.cs* に変更します。
 
 ::: moniker-end
 
@@ -57,7 +59,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ::: moniker range="vs-2017"
 
-1. **ソリューションエクスプローラー**で、 *testcommandpackage. vsct*を開きます。
+1. **ソリューションエクスプローラー** で、 *testcommandpackage. vsct* を開きます。
 
     ファイルの末尾には、複数のノードを `<Symbols>` 含むノードがあり `<GuidSymbol>` ます。 という名前のノードに、次のように `guidTestCommandPackageCmdSet` 新しいシンボルを追加します。
 
@@ -101,7 +103,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ::: moniker range=">=vs-2019"
 
-1. **ソリューションエクスプローラー**で、 *TopLevelMenuPackage*を開きます。
+1. **ソリューションエクスプローラー** で、 *TopLevelMenuPackage* を開きます。
 
     ファイルの末尾には、複数のノードを `<Symbols>` 含むノードがあり `<GuidSymbol>` ます。 という名前のノードに、次のように `guidTopLevelMenuPackageCmdSet` 新しいシンボルを追加します。
 

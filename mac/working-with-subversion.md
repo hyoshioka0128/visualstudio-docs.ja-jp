@@ -5,16 +5,16 @@ author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: d687215bc91dc01a284c49c141a6e52a16ce9e7a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 909da0bcb1ad3ca080d6bf4ba4e5184c1c2da98f
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692140"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89402640"
 ---
 # <a name="working-with-subversion"></a>Subversion の使用
 
-Subversion は、集中管理されているバージョン コントロール システムであり、集中管理されているデータの単一のマスター コピーをチェック アウトすることができます。 Git とは対照的に、Subversion リポジトリのチェックアウトではリポジトリ全体はクローンされず、その時点のスナップショットのみを取得します。
+Subversion は、集中管理されているバージョン コントロール システムであり、集中管理されているデータの単一のメイン コピーをチェックアウトすることができます。 Git とは対照的に、Subversion リポジトリのチェックアウトではリポジトリ全体は複製されず、その時点のスナップショットのみを取得します。
 
 Subversion では、コピー-変更-マージ モデルを使用して、ユーザーが同時に同じリポジトリで作業できるようにします。 つまり、各ユーザーは、集中管理されているデータのローカル (作業) コピーを作成し、独立して操作できます。 ユーザーの作業コピーへの変更は時系列的にマージされます。
 

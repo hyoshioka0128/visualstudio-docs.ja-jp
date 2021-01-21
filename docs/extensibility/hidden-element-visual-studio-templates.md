@@ -1,5 +1,7 @@
 ---
 title: Hidden 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: Hidden 要素について、また、[新しいプロジェクト] ダイアログボックスまたは [新しい項目の追加] ダイアログボックスにテンプレートを表示するかどうかを指定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711112"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672701"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 要素 (Visual Studio テンプレート)
 
@@ -98,5 +100,5 @@ ms.locfileid: "80711112"
 
 ## <a name="see-also"></a>関連項目
 
-- [テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
+- [テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,7 @@
 ---
 title: ボタンを使用してドキュメント内のテキストボックスにテキストを表示する
+description: Microsoft Word のドキュメントレベルのカスタマイズでボタンとテキストボックスを使用する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cda1fe3e7430ff30dcc3b3921eb2bcd4d31b699
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67328751"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97522743"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>チュートリアル: ボタンを使用してドキュメント内のテキストボックスにテキストを表示する
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでボタンやテキスト ボックスを使用する方法を示します。
@@ -39,16 +41,16 @@ ms.locfileid: "67328751"
 
 - Microsoft Word
 
-## <a name="create-the-project"></a>プロジェクトの作成
+## <a name="create-the-project"></a>プロジェクトを作成する
  最初に、Word 文書のプロジェクトを作成します。
 
 ### <a name="to-create-a-new-project"></a>新しいプロジェクトを作成するには
 
-1. **[マイ Word] ボタン**という名前の word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。
+1. **[マイ Word] ボタン** という名前の word 文書プロジェクトを作成します。 ウィザードで、[ **新しいドキュメントの作成**] を選択します。
 
      詳細については、「 [方法: Visual Studio で Office プロジェクトを作成する](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     Visual Studio では、デザイナーで新しい Word 文書が開き、 **[マイ Word] ボタン** プロジェクトが **ソリューションエクスプローラー**に追加されます。
+     Visual Studio では、デザイナーで新しい Word 文書が開き、 **[マイ Word] ボタン** プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
 ## <a name="add-controls-to-the-word-document"></a>Word 文書にコントロールを追加する
  ユーザー インターフェイス コントロールは、Word 文書上のボタンとテキスト ボックスで構成されます。
@@ -57,21 +59,21 @@ ms.locfileid: "67328751"
 
 1. Visual Studio デザイナーで文書が開いていることを確認します。
 
-2. **ツールボックス**の [**コモンコントロール**] タブから、 <xref:Microsoft.Office.Tools.Word.Controls.TextBox> コントロールを文書にドラッグします。
+2. **ツールボックス** の [**コモンコントロール**] タブから、 <xref:Microsoft.Office.Tools.Word.Controls.TextBox> コントロールを文書にドラッグします。
 
    > [!NOTE]
    > Word の既定では、コントロールはテキスト中にインラインでドロップされます。 Word の [**オプション**] ダイアログボックスの [**編集**] タブで既定値を変更することで、コントロールと図形オブジェクトの挿入方法を変更できます。
 
 3. **[表示]** メニューの **[プロパティ ウィンドウ]** をクリックします。
 
-4. [**プロパティ**] ウィンドウのドロップダウンボックスで**TextBox1**を検索し、テキストボックスの [**名前**] プロパティを [表示 **] に変更**します。
+4. [**プロパティ**] ウィンドウのドロップダウンボックスで **TextBox1** を検索し、テキストボックスの [**名前**] プロパティを [表示 **] に変更** します。
 
-5. **ボタン**コントロールをドキュメントにドラッグし、次のプロパティを変更します。
+5. **ボタン** コントロールをドキュメントにドラッグし、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**insertText**|
-   |**Text**|**テキストの挿入**|
+   |**テキスト**|**テキストの挿入**|
 
    これで、ボタンがクリックされたときに実行されるコードを記述できるようになりました。
 
@@ -80,7 +82,7 @@ ms.locfileid: "67328751"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>ボタンがクリックされたときにテキスト ボックスに書き込むには
 
-1. **ソリューションエクスプローラー**で、[ **ThisDocument**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **ThisDocument**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. ボタンの <xref:System.Windows.Forms.Control.Click> イベント ハンドラーに次のコードを追加します。
 
@@ -96,7 +98,7 @@ ms.locfileid: "67328751"
 
 ### <a name="to-test-your-document"></a>文書をテストするには
 
-1. **F5**キーを押して、プロジェクトを実行します。
+1. **F5** キーを押して、プロジェクトを実行します。
 
 2. ボタンをクリックします。
 

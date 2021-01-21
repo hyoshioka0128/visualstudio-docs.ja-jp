@@ -1,5 +1,7 @@
 ---
 title: Error タスク | Microsoft ドキュメント
+description: MSBuild Error タスクを使用して、ビルドを停止し、条件付きステートメントの評価に基づいてエラーをログに記録します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a2b451f9c3074af7d621576336ea3bf0e05ebea3
+ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77634228"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92436646"
 ---
 # <a name="error-task"></a>Error タスク
 
@@ -40,7 +42,7 @@ ms.locfileid: "77634228"
 | `HelpKeyword` | 省略可能な `String` 型のパラメーターです。<br /><br /> エラーに関連付けるヘルプ キーワード。 |
 | `Text` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Condition` パラメーターが `true` と評価された場合に MSBuild によってログに記録されるエラー テキストです。 |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 `Error` タスクにより、MSBuild プロジェクトはロガーに対してエラー テキストを発行し、ビルドの実行を中断することができます。
 

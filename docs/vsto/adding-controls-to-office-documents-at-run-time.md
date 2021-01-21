@@ -1,5 +1,7 @@
 ---
 title: 実行時に Office ドキュメントにコントロールを追加する
+description: 実行時に Microsoft Office Word 文書にコントロールを追加し、Excel ブックを Microsoft Office する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -22,15 +24,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 44bf1de5d550a264a63ba7293fe1bdc0c9630aee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e971556605a120b4ef475f434390c6dcf7b17938
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986319"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96844843"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>実行時に Office ドキュメントにコントロールを追加する
-  コントロールは、実行時に、Microsoft Office Word 文書と Microsoft Office Excel ブックに追加できます。 それらを実行時に削除することもできます。 実行時にドキュメントに追加したりドキュメントから削除したりするコントロールのことを、 *ダイナミック コントロール*といいます。
+  コントロールは、実行時に、Microsoft Office Word 文書と Microsoft Office Excel ブックに追加できます。 それらを実行時に削除することもできます。 実行時にドキュメントに追加したりドキュメントから削除したりするコントロールのことを、 *ダイナミック コントロール* といいます。
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -54,7 +56,7 @@ ms.locfileid: "72986319"
 - Excel または Word の VSTO アドインプロジェクトで `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> は、実行時に生成するまたはのプロパティを使用し <xref:Microsoft.Office.Tools.Word.Document> ます。 これらのオブジェクトを実行時に生成する方法の詳細については、「 [実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
 ### <a name="add-controls"></a>コントロールの追加
- <xref:Microsoft.Office.Tools.Excel.ControlCollection> 型と <xref:Microsoft.Office.Tools.Word.ControlCollection> 型には、ドキュメントとワークシートにホスト コントロールや Windows フォームのコモン コントロールを追加するために使用できるヘルパー メソッドが含まれています。 各メソッドの名前は、 `Add`*コントロール クラス*という形式になっています。ここで、 *コントロール クラス* は、追加するコントロールのクラス名です。 たとえば、ドキュメントに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> メソッドを使用します。
+ <xref:Microsoft.Office.Tools.Excel.ControlCollection> 型と <xref:Microsoft.Office.Tools.Word.ControlCollection> 型には、ドキュメントとワークシートにホスト コントロールや Windows フォームのコモン コントロールを追加するために使用できるヘルパー メソッドが含まれています。 各メソッドの名前は、 `Add`*コントロール クラス* という形式になっています。ここで、 *コントロール クラス* は、追加するコントロールのクラス名です。 たとえば、ドキュメントに <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールを追加するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> メソッドを使用します。
 
  Excel のドキュメント レベルのプロジェクトで <xref:Microsoft.Office.Tools.Excel.NamedRange> を `Sheet1` に追加する方法を次のコード例に示します。
 
@@ -62,7 +64,7 @@ ms.locfileid: "72986319"
  [!code-csharp[Trin_ExcelWorkbookDynamicControls#3](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/ThisWorkbook.cs#3)]
 
 ### <a name="access-and-delete-controls"></a>コントロールへのアクセスと削除
- <xref:Microsoft.Office.Tools.Excel.Worksheet> または <xref:Microsoft.Office.Tools.Word.Document> の `Controls` プロパティを使用すると、デザイン時に追加したコントロールを含め、ドキュメント内のすべてのコントロールを反復処理できます。 デザイン時に追加するコントロールは、 *スタティック コントロール*とも呼ばれます。
+ <xref:Microsoft.Office.Tools.Excel.Worksheet> または <xref:Microsoft.Office.Tools.Word.Document> の `Controls` プロパティを使用すると、デザイン時に追加したコントロールを含め、ドキュメント内のすべてのコントロールを反復処理できます。 デザイン時に追加するコントロールは、 *スタティック コントロール* とも呼ばれます。
 
  動的コントロールを削除するには、 `Delete` コントロールのメソッドを呼び出すか、 `Remove` 各コントロールコレクションのメソッドを呼び出します。 次のコード例では、Excel のドキュメント レベルのプロジェクトで <xref:Microsoft.Office.Tools.Excel.ControlCollection.Remove%2A> メソッドを使用して <xref:Microsoft.Office.Tools.Excel.NamedRange> を `Sheet1` から削除します。
 

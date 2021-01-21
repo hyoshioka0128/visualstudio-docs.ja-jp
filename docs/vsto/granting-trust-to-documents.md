@@ -1,5 +1,7 @@
 ---
 title: ドキュメントへの信頼の付与
+description: ドキュメントレベルのプロジェクトで、証明書を使用してマニフェストに署名したり、信頼プロンプトをクリックしたりするなど、アプリケーションレベルのプロジェクトと同じセキュリティ要件を持つ方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d245ddf00e4005b763bcd4437d3f8c18d05291e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986040"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96847742"
 ---
 # <a name="grant-trust-to-documents"></a>ドキュメントへの信頼の付与
   ドキュメント レベルのプロジェクトでは、証明書を使用したマニフェストへの署名や、信頼プロンプトのクリックなど、アプリケーション レベルのプロジェクトと同じセキュリティ要件が適用されます。 また、ドキュメントまたはブックは、信頼できる場所として指定されたディレクトリに置く必要があります。
@@ -41,9 +43,9 @@ ms.locfileid: "72986040"
 
 - ドキュメント自体は信頼できる場所を使用することによって信頼されますが、カスタマイズを信頼するためには追加のアクセス許可が必要です。 証明書を使用したマニフェストへの署名、信頼プロンプトのクリック、または *Program Files* ディレクトリへの Office ソリューションのインストールを使用して、カスタマイズに対する完全な信頼を付与することができます。
 
-- ドキュメント レベルのソリューションのドキュメントまたはブックは、アセンブリと同じディレクトリ、または別のディレクトリに保存できます。 たとえば、ドキュメントを SharePoint サーバー上に置き、アセンブリをネットワーク ファイル共有に置くことも可能です。 詳細については、「 [方法: ClickOnce を使用してドキュメントレベルの Office ソリューションを SharePoint サーバーに発行](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)する」を参照してください。
+- ドキュメント レベルのソリューションのドキュメントまたはブックは、アセンブリと同じディレクトリ、または別のディレクトリに保存できます。 たとえば、ドキュメントを SharePoint サーバー上に置き、アセンブリをネットワーク ファイル共有に置くことも可能です。 詳細については、「 [方法: ClickOnce を使用してドキュメントレベルの Office ソリューションを SharePoint サーバーに発行](/previous-versions/bb608595(v=vs.110))する」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)
 - [Office ソリューションのセキュリティに関するトラブルシューティング](../vsto/troubleshooting-office-solution-security.md)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

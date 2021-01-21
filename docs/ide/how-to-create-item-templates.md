@@ -1,5 +1,7 @@
 ---
 title: 項目テンプレートを作成する
+description: Visual Studio でテンプレートのエクスポート ウィザードを使用して項目テンプレートを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 01/02/2018
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,16 +9,16 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0a0d4122d36c0946b6c1c98ef0f1523ce35751a6
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: abf058526a6ff48a37d4c7585e7deabe1decb14a
+ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85284478"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "95597276"
 ---
 # <a name="how-to-create-item-templates"></a>方法: 項目テンプレートを作成する
 
-この記事では、**テンプレートのエクスポート ウィザード**を使って項目テンプレートを作成する方法を示します。 テンプレートを複数のファイルで構成する場合は、「[方法:複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」を参照してください。
+この記事では、**テンプレートのエクスポート ウィザード** を使って項目テンプレートを作成する方法を示します。 テンプレートを複数のファイルで構成する場合は、「[方法:複数ファイルの項目テンプレートを作成する](../ide/how-to-create-multi-file-item-templates.md)」を参照してください。
 
 ## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>項目テンプレートを [新しい項目の追加] ダイアログ ボックスに追加する
 
@@ -38,13 +40,13 @@ ms.locfileid: "85284478"
 
     テンプレートのファイルが *.zip* ファイルに追加されて、ウィザードで指定したディレクトリにコピーされます。 既定の場所は、 *%USERPROFILE%\Documents\Visual Studio \<version\>\My Exported Templates* です。
 
-1. **テンプレートのエクスポート ウィザード**で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合は、エクスポートされたテンプレートを見つけます。 次に、それをユーザー項目テンプレートのディレクトリにコピーします。 既定の場所は、 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ItemTemplates* です。
+1. **テンプレートのエクスポート ウィザード** で **[テンプレートを自動的に Visual Studio にインポート]** オプションを選ばなかった場合は、エクスポートされたテンプレートを見つけます。 次に、それをユーザー項目テンプレートのディレクトリにコピーします。 既定の場所は、 *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ItemTemplates* です。
 
 1. Visual Studio をいったん閉じて開きなおします。
 
 1. 新しいプロジェクトを作成するか、既存のプロジェクトを開き、 **[プロジェクト]**  >  **[新しい項目の追加]** の順に選ぶか、**Ctrl**+**Shift**+**A** キーを押します。
 
-   項目テンプレートが、 **[新しい項目の追加]** ダイアログ ボックスに表示されます。 **テンプレートのエクスポート ウィザード**で説明を追加した場合、ダイアログ ボックスの右側に説明が表示されます。
+   項目テンプレートが、 **[新しい項目の追加]** ダイアログ ボックスに表示されます。 **テンプレートのエクスポート ウィザード** で説明を追加した場合、ダイアログ ボックスの右側に説明が表示されます。
 
 ## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>ユニバーサル Windows アプリ プロジェクトで項目テンプレートを有効にする
 
@@ -119,7 +121,7 @@ Windows、Office、Database、Web など、特定のプロジェクト サブタ
 
 6. *.vstemplate* ファイルを保存して閉じます。
 
-7. **Windows エクスプローラー**で、テンプレートに含めるファイルを選択します。 選択したファイルを右クリックし、 **[送る]**  >  **[圧縮 (zip 形式) フォルダー]** の順に選びます。 選択したファイルは *.zip* ファイルに圧縮されます。
+7. **Windows エクスプローラー** で、テンプレートに含めるファイルを選択します。 選択したファイルを右クリックし、 **[送る]**  >  **[圧縮 (zip 形式) フォルダー]** の順に選びます。 選択したファイルは *.zip* ファイルに圧縮されます。
 
 ::: moniker range="vs-2017"
 

@@ -1,5 +1,7 @@
 ---
 title: '方法: シェイプまたはデコレーターに対するクリック操作を受け取る'
+description: 図形またはアイコンのデコレータでクリックをインターセプトする方法と、クリック、ダブルクリック、ドラッグなどのジェスチャを受け取る方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58d447526d83fec406b6fc20a08edcec37de89ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff49c1950e81098633fab92ffbbdf25020945a1e
+ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532523"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "97363901"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>方法: シェイプまたはデコレーターに対するクリック操作を受け取る
 次の手順では、図形またはアイコンデコレータのクリックをインターセプトする方法を示します。 クリック、ダブルクリック、ドラッグなどのジェスチャをインターセプトし、要素を応答させることができます。
@@ -119,13 +121,13 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>CompartmentShape リストへのクリックとドラッグのインターセプト
  次のサンプルでは、コンパートメント図形内の項目をドラッグして並べ替えることができます。 このコードを実行するには:
 
-1. **クラスダイアグラム**のソリューションテンプレートを使用して、新しい DSL ソリューションを作成します。
+1. **クラスダイアグラム** のソリューションテンプレートを使用して、新しい DSL ソリューションを作成します。
 
     コンパートメントシェイプを含む独自のソリューションを使用することもできます。 このコードは、図形によって表されるモデル要素と、コンパートメントリスト項目で表される要素の間に埋め込みリレーションシップがあることを前提としています。
 
 2. コンパートメントシェイプの **Double 派生** プロパティを生成するように設定します。
 
-3. **Dsl**プロジェクト内のファイルに次のコードを追加します。
+3. **Dsl** プロジェクト内のファイルに次のコードを追加します。
 
 4. このコード内のドメインクラスと図形名を、独自の DSL と一致するように調整します。
 
@@ -227,7 +229,7 @@ namespace Company.CompartmentDrag
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
+ /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
  /// </summary>
  public partial class ClassShape
  {

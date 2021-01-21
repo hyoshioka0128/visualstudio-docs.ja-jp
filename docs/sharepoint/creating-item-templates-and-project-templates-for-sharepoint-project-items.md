@@ -1,5 +1,8 @@
 ---
 title: SharePoint プロジェクト項目の項目テンプレート/プロジェクトテンプレート
+description: SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成します。 項目テンプレートとプロジェクトテンプレートのウィザードを作成します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65bbd58bf9b3e0b399603a083615daccc382a98f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 59710eb4651f363d669dc27b6190f8d224d9917f
+ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72981174"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94850638"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する
 
@@ -39,17 +42,17 @@ ms.locfileid: "72981174"
 
 |必要なファイル|説明|
 |-------------------|-----------------|
-|*Sharepointprojectitem.spdata*ファイル|この XML ファイルは、プロジェクト項目の内容と既定の動作を指定します。 このファイルは、項目テンプレートに含まれている必要があります。 *Sharepointprojectitem.spdata*ファイルの内容の詳細については、「 [SharePoint プロジェクト項目スキーマリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)」を参照してください。|
-|*.Vstemplate*ファイル。|このファイルには、[ **新しい項目の追加** ] ダイアログボックスにテンプレートを表示し、テンプレートからプロジェクト項目を作成するために必要な情報が Visual Studio に用意されています。 このファイルは、項目テンプレートに含まれている必要があります。 詳細については、「 [Visual Studio テンプレートメタデータファイル](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))」を参照してください。|
+|*Sharepointprojectitem.spdata* ファイル|この XML ファイルは、プロジェクト項目の内容と既定の動作を指定します。 このファイルは、項目テンプレートに含まれている必要があります。 *Sharepointprojectitem.spdata* ファイルの内容の詳細については、「 [SharePoint プロジェクト項目スキーマリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)」を参照してください。|
+|*.Vstemplate* ファイル。|このファイルには、[ **新しい項目の追加** ] ダイアログボックスにテンプレートを表示し、テンプレートからプロジェクト項目を作成するために必要な情報が Visual Studio に用意されています。 このファイルは、項目テンプレートに含まれている必要があります。 詳細については、「 [Visual Studio テンプレートメタデータファイル](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))」を参照してください。|
 |インターフェイスを実装する Visual Studio 拡張機能アセンブリ <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 。|このアセンブリは、プロジェクト項目の実行時の動作を定義します。 このアセンブリは、項目テンプレートを使用して VSIX パッケージに含める必要があります。 詳細については、「Visual Studio での sharepoint ツールの [カスタム sharepoint プロジェクト項目の種類の定義](../sharepoint/defining-custom-sharepoint-project-item-types.md) 」および「 [拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)」を参照してください。|
 
  次の表に、項目テンプレートに含めることができる最も一般的なオプションファイルを示します。 一部の種類のプロジェクト項目には、ここに記載されていない他のファイルが必要な場合があります。
 
 | オプションファイル | 説明 |
 |----------------------| - |
-| *Elements.xml* | *フィーチャー要素*ファイル。 このファイルは、プロジェクト項目によって作成されたカスタマイズの UI と動作を定義します。 リストインスタンス、コンテンツの種類、カスタムアクションなど、それぞれの種類のカスタマイズには、このファイルの内容を定義する別のスキーマがあります。 詳細については、「 [構成要素: 機能](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) と [機能スキーマ](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))」を参照してください。 |
+| *Elements.xml* | *フィーチャー要素* ファイル。 このファイルは、プロジェクト項目によって作成されたカスタマイズの UI と動作を定義します。 リストインスタンス、コンテンツの種類、カスタムアクションなど、それぞれの種類のカスタマイズには、このファイルの内容を定義する別のスキーマがあります。 詳細については、「 [構成要素: 機能](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) と [機能スキーマ](/previous-versions/office/developer/sharepoint-2010/ms414322(v=office.14))」を参照してください。 |
 | *Schema.xml* | リスト定義のスキーマファイルです。 詳細については、「 [ビルディングブロック: リストとドキュメントライブラリ](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14)) 」および「 [Schema.xml](/previous-versions/office/developer/sharepoint-2010/ms459356(v=office.14))」を参照してください。 |
-| *webpart* | *Web パーツ定義*ファイル。 このファイルには、Web パーツのプロパティ設定が含まれています。 詳細については、「 [ビルディングブロック: Web パーツ](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))」を参照してください。 |
+| *webpart* | *Web パーツ定義* ファイル。 このファイルには、Web パーツのプロパティ設定が含まれています。 詳細については、「 [ビルディングブロック: Web パーツ](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))」を参照してください。 |
 | *.ascx* | ASP.NET UserControl ファイル。 このファイルは、視覚的 Web パーツの UI を定義します。 |
 | *.aspx* | ASP.NET ページファイル。 このファイルには、アプリケーションページを定義する XML マークアップが含まれています。 |
 | *.cs* または *.vb* ファイル | これらのコードファイルは、Visual C# または Visual Basic コード (アプリケーションページ、Web パーツ、ワークフローなど) からアクセスできるプログラミングモデルを持つ SharePoint カスタマイズの動作を定義します。 |
@@ -63,9 +66,9 @@ ms.locfileid: "72981174"
 
 |必要なファイル|説明|
 |-------------------|-----------------|
-|*.Vstemplate*ファイル|このファイルには、[ **新しいプロジェクト** ] ダイアログボックスにテンプレートを表示し、テンプレートからプロジェクトを作成するために必要な情報が Visual Studio に用意されています。 詳細については、「 [Visual Studio テンプレートメタデータファイル](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))」を参照してください。|
-|*.Csproj*ファイルまたは *.vbproj*ファイル|これはプロジェクトファイルです。 これにより、プロジェクトの内容と構成設定が定義されます。|
-|*Package.package*|このファイルは、プロジェクトの配置パッケージを定義します。 パッケージデザイナーを使用してプロジェクトのソリューションパッケージをカスタマイズすると、Visual Studio はソリューションパッケージに関するデータをこのファイルに格納します。<br /><br /> カスタム SharePoint プロジェクトテンプレートを作成するときは、最低限必要なコンテンツのみを *パッケージのパッケージ* ファイルに含めることをお勧めします。また、 <xref:Microsoft.VisualStudio.SharePoint.Packages> プロジェクトテンプレートに関連付けられている拡張機能で、名前空間の api を使用してソリューションパッケージを構成することをお勧めします。 この場合、プロジェクトテンプレートは、後で *パッケージパッケージ* ファイルの構造に変更が加えられたときに保護されます。 最低限必要なコンテンツのみを含む *パッケージ* ファイルを作成する例については、「 [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md))」を参照してください。<br /><br /> *パッケージのパッケージ*ファイルを直接変更する場合は、 *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ xml、xsd*のスキーマを使用して内容を確認できます。 (& c)|
+|*.Vstemplate* ファイル|このファイルには、[ **新しいプロジェクト** ] ダイアログボックスにテンプレートを表示し、テンプレートからプロジェクトを作成するために必要な情報が Visual Studio に用意されています。 詳細については、「 [Visual Studio テンプレートメタデータファイル](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\))」を参照してください。|
+|*.Csproj* ファイルまたは *.vbproj* ファイル|これはプロジェクトファイルです。 これにより、プロジェクトの内容と構成設定が定義されます。|
+|*Package.package*|このファイルは、プロジェクトの配置パッケージを定義します。 パッケージデザイナーを使用してプロジェクトのソリューションパッケージをカスタマイズすると、Visual Studio はソリューションパッケージに関するデータをこのファイルに格納します。<br /><br /> カスタム SharePoint プロジェクトテンプレートを作成するときは、最低限必要なコンテンツのみを *パッケージのパッケージ* ファイルに含めることをお勧めします。また、 <xref:Microsoft.VisualStudio.SharePoint.Packages> プロジェクトテンプレートに関連付けられている拡張機能で、名前空間の api を使用してソリューションパッケージを構成することをお勧めします。 この場合、プロジェクトテンプレートは、後で *パッケージパッケージ* ファイルの構造に変更が加えられたときに保護されます。 最低限必要なコンテンツのみを含む *パッケージ* ファイルを作成する例については、「 [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md))」を参照してください。<br /><br /> *パッケージのパッケージ* ファイルを直接変更する場合は、 *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ xml、xsd* のスキーマを使用して内容を確認できます。 (& c)|
 |*Package.Template.xml*|このファイルは、プロジェクトから生成される SharePoint ソリューションパッケージ (*.wsp*) のソリューションマニフェストファイル (*manifest.xml*) の基礎となります。 プロジェクトの種類のユーザーによる変更を意図していない動作を指定する場合は、このファイルにコンテンツを追加できます。 詳細については、「 [構成要素: ソリューション](/previous-versions/office/developer/sharepoint-2010/ee537008(v=office.14)) と [ソリューションスキーマ](/sharepoint/dev/schema/solution-schema)」を参照してください。<br /><br /> プロジェクトからソリューションパッケージをビルドすると、Visual Studio によって *パッケージ* の内容と *Package.Template.xml* ファイルがソリューションマニフェストファイルにマージされます。 ソリューションパッケージのビルドの詳細については、「 [方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)する」を参照してください。|
 
  次の表に、プロジェクトテンプレートに含めることができるオプションのファイルを示します。
@@ -73,15 +76,15 @@ ms.locfileid: "72981174"
 |オプションファイル|説明|
 |-------------------|-----------------|
 |SharePoint プロジェクト項目|SharePoint プロジェクト項目の種類を定義する1つ以上の sharepointprojectitem.spdata ファイルを含めることができます。 各 *sharepointprojectitem.spdata* ファイルには <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> 、プロジェクトテンプレートを使用して VSIX パッケージに含まれる拡張機能アセンブリに一致する実装が必要です。 詳細については、「 [項目テンプレートを作成する](#create-item-templates)」を参照してください。<br /><br /> 通常、SharePoint プロジェクトには、SharePoint プロジェクトアイテムが少なくとも1つ含まれています。 ただし、これは必須ではありません。|
-|*\<featureName>. 機能*|このファイルは、配置のために複数のプロジェクト項目をグループ化するために使用される SharePoint 機能を定義します。 フィーチャーデザイナーを使用してプロジェクトの機能をカスタマイズすると、Visual Studio では、その機能に関するデータがこのファイルに格納されます。 プロジェクト項目を別の機能にグループ化する場合は、複数 *の機能* ファイルを含めることができます。<br /><br /> カスタム SharePoint プロジェクトテンプレートを作成する場合は、各 *機能* ファイルに最低限必要なコンテンツのみを含めることをお勧めします。また、 <xref:Microsoft.VisualStudio.SharePoint.Features> プロジェクトテンプレートに関連付けられている拡張機能で、名前空間の api を使用して機能を構成することをお勧めします。 これを行うと、プロジェクトテンプレートは、今後の *機能* ファイルの構造に変更されないように保護されます。 最低限必要なコンテンツのみを含む *機能* ファイルを作成する方法を示す例については、「 [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md))」を参照してください。<br /><br /> *機能*ファイルを直接変更する場合は、 *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ Xml\Schemas\FeatureModelSchema.xsd*のスキーマを使用して内容を確認できます。|
-|*\<featureName>.Template.xml*|このファイルは、プロジェクトから生成された各機能のフィーチャーマニフェストファイル (*Feature.xml*) の基礎となります。 プロジェクトの種類のユーザーによる変更を意図していない動作を指定する場合は、このファイルにコンテンツを追加できます。 詳細については、「 [ビルディングブロック: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) and [Feature.xml](/sharepoint/dev/schema/feature-xml-files) Files」を参照してください。<br /><br /> プロジェクトからソリューションパッケージをビルドすると、Visual Studio は、 * \<featureName> 機能*ファイルと* \<featureName>.Template.xml*ファイルの各ペアの内容をフィーチャーマニフェストファイルにマージします。 ソリューションパッケージのビルドの詳細については、「 [方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)する」を参照してください。|
+|*\<featureName>. 機能*|このファイルは、配置のために複数のプロジェクト項目をグループ化するために使用される SharePoint 機能を定義します。 フィーチャーデザイナーを使用してプロジェクトの機能をカスタマイズすると、Visual Studio では、その機能に関するデータがこのファイルに格納されます。 プロジェクト項目を別の機能にグループ化する場合は、複数 *の機能* ファイルを含めることができます。<br /><br /> カスタム SharePoint プロジェクトテンプレートを作成する場合は、各 *機能* ファイルに最低限必要なコンテンツのみを含めることをお勧めします。また、 <xref:Microsoft.VisualStudio.SharePoint.Features> プロジェクトテンプレートに関連付けられている拡張機能で、名前空間の api を使用して機能を構成することをお勧めします。 これを行うと、プロジェクトテンプレートは、今後の *機能* ファイルの構造に変更されないように保護されます。 最低限必要なコンテンツのみを含む *機能* ファイルを作成する方法を示す例については、「 [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md))」を参照してください。<br /><br /> *機能* ファイルを直接変更する場合は、 *% Program Files (x86)% \ Microsoft Visual Studio 11.0 \ Xml\Schemas\FeatureModelSchema.xsd* のスキーマを使用して内容を確認できます。|
+|*\<featureName>.Template.xml*|このファイルは、プロジェクトから生成された各機能のフィーチャーマニフェストファイル (*Feature.xml*) の基礎となります。 プロジェクトの種類のユーザーによる変更を意図していない動作を指定する場合は、このファイルにコンテンツを追加できます。 詳細については、「 [ビルディングブロック: Features](/previous-versions/office/developer/sharepoint-2010/ee537350(v=office.14)) and [Feature.xml](/sharepoint/dev/schema/feature-xml-files) Files」を参照してください。<br /><br /> プロジェクトからソリューションパッケージをビルドすると、Visual Studio は、 *\<featureName> 機能* ファイルと *\<featureName>.Template.xml* ファイルの各ペアの内容をフィーチャーマニフェストファイルにマージします。 ソリューションパッケージのビルドの詳細については、「 [方法: MSBuild タスクを使用して SharePoint ソリューションパッケージを作成](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)する」を参照してください。|
 
 ## <a name="create-wizards-for-item-templates-and-project-templates"></a>項目テンプレートとプロジェクトテンプレートのウィザードを作成する
  SharePoint プロジェクト項目の種類を定義し、項目またはプロジェクトテンプレートに関連付けると、ウィザードを作成することもできます。 開発者が項目テンプレートを使用して SharePoint プロジェクト項目をプロジェクトに追加するとき、または開発者がプロジェクトテンプレートを使用して SharePoint プロジェクト項目を含む新しいプロジェクトを作成するときに、ウィザードが表示されます。 ウィザードを使用して、開発者から情報を収集したり、新しい SharePoint プロジェクト項目を初期化したりすることができます。
 
  項目テンプレートとプロジェクトテンプレート用のウィザードを作成する方法を示すチュートリアルについては、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成」、「パート 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md) 」、「 [チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (第2部)](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [カスタム SharePoint プロジェクト項目の種類を定義する](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

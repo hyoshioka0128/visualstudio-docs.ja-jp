@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "70107847"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808995"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>ユーザー補助アプリケーションのデザイン リソース
 
@@ -48,9 +48,9 @@ ms.locfileid: "70107847"
 
 ## <a name="websites"></a>Websites
 
-- [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) この記事では、ユーザー補助コントロールをサンプル Web ページに含めるための手順を説明します。 Web 用のユーザー補助設計のヒントも示します。
+- [チュートリアル: Image コントロール、Menu コントロール、AutoPostBack を使用する際のユーザー補助のガイドライン](/previous-versions/3has1x30(v=vs.140)) この記事では、ユーザー補助コントロールをサンプル Web ページに含めるための手順を説明します。 Web 用のユーザー補助設計のヒントも示します。
 
-- **ユーザー補助機能を持つ Web ページを DHTML を使って作成** この技術情報には、ユーザー補助機能を持つ HTML 4.0 要素およびユーザー補助機能を持つ Web 設計のヒントが一覧にしてあります。 詳細については、「[Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx)」(ユーザー補助機能を持つ Web ページを DHTML で作成する) をご覧ください。
+- **ユーザー補助機能を持つ Web ページを DHTML を使って作成** この技術情報には、ユーザー補助機能を持つ HTML 4.0 要素およびユーザー補助機能を持つ Web 設計のヒントが一覧にしてあります。 詳細については、「[Create accessible web pages with DHTML](/previous-versions//ms528445(v=vs.85))」(ユーザー補助機能を持つ Web ページを DHTML で作成する) をご覧ください。
 
 ### <a name="third-party-resources"></a>サードパーティのリソース
 

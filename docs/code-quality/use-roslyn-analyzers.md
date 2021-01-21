@@ -1,6 +1,8 @@
 ---
-title: コード品質の分析
+title: アナライザーの構成
 ms.date: 09/02/2020
+description: Roslyn アナライザーの規則をカスタマイズする方法について説明します。 アナライザーの重大度を調整する方法、違反を抑制する方法、および生成されたコードとしてファイルを指定する方法を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,47 +13,45 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: fc74a556fe6baf21b6270b21951018fc246aa962
+ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036370"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97696635"
 ---
-# <a name="configure-code-quality-analysis"></a>コード品質分析の構成
+# <a name="overview"></a>概要
 
-.NET 5.0 以降では、.NET SDK にコード品質アナライザーが含まれています。 (以前は、これらのアナライザーを NuGet パッケージとしてインストールしました)。.NET 5.0 以降を対象とするプロジェクトでは、コード分析が既定で有効になっています。 以前のバージョンの .NET を対象とするプロジェクトでは、 [Enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) プロパティをに設定することにより、コード分析を有効にすることができ `true` ます。 をに設定することにより、プロジェクトのコード分析を無効にすることもでき `EnableNETAnalyzers` `false` ます。
-
-各コード品質アナライザーの *診断* または規則には、プロジェクトに対して上書きおよびカスタマイズできる既定の重大度と抑制状態があります。 この記事では、code quality analyzer の重大度を設定し、アナライザーの違反を抑制する方法について説明します。
+各 Roslyn アナライザーの *診断* または規則には、プロジェクトに対して上書きおよびカスタマイズできる既定の重大度と抑制状態があります。 この記事では、アナライザーの重大度の設定と、アナライザーの違反の抑制について説明します。
 
 ## <a name="configure-severity-levels"></a>重大度レベルの構成
 
 ::: moniker range=">=vs-2019"
 
-Visual Studio 2019 バージョン16.3 以降では、アナライザーの規則または *診断*の重大度を、 [editorconfig ファイル](#set-rule-severity-in-an-editorconfig-file)、 [電球のメニュー](#set-rule-severity-from-the-light-bulb-menu)、およびエラー一覧から構成できます。
+Visual Studio 2019 バージョン16.3 以降では、アナライザーの規則または *診断* の重大度を、 [editorconfig ファイル](#set-rule-severity-in-an-editorconfig-file)、 [電球のメニュー](#set-rule-severity-from-the-light-bulb-menu)、およびエラー一覧から構成できます。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-アナライザーを NuGet パッケージとして[インストール](../code-quality/install-roslyn-analyzers.md)した場合は、analyzer ルールまたは*診断*の重大度を構成できます。 ルールの重要度は、ソリューションエクスプローラーまたは[ルールセットファイルの中](#set-rule-severity-in-the-rule-set-file)[から](#set-rule-severity-from-solution-explorer)変更できます。
+アナライザーを NuGet パッケージとして [インストール](../code-quality/install-roslyn-analyzers.md)した場合は、analyzer ルールまたは *診断* の重大度を構成できます。 ルールの重要度は、ソリューションエクスプローラーまたは[ルールセットファイルの中](#set-rule-severity-in-the-rule-set-file)[から](#set-rule-severity-from-solution-explorer)変更できます。
 
 ::: moniker-end
 
 次の表は、さまざまな重大度オプションを示しています。
 
-| 重要度 (ソリューションエクスプローラー) | 重大度 (EditorConfig ファイル) | ビルド時の動作 | エディターの動作 |
+| 重要度 (ソリューション エクスプローラー) | 重要度 (EditorConfig ファイル) | ビルド時の動作 | エディターの動作 |
 |-|-|-|
-| エラー | `error` | エラー一覧とコマンドラインのビルド出力で、違反が *エラー* として表示され、ビルドが失敗します。| 問題のあるコードは、赤い波線で下線が引かれ、スクロールバーの小さな赤いボックスで示されます。 |
-| 警告 | `warning` | エラー一覧とコマンドラインのビルド出力では、違反は *警告* として表示されますが、ビルドが失敗することはありません。 | 問題のあるコードは、緑の波線で下線が引かれ、スクロールバーの小さな緑色のボックスで示されます。 |
-| Info | `suggestion` | 違反は、コマンドラインのビルド出力ではなく、エラー一覧に *メッセージ* として表示されます。 | 問題のあるコードは、灰色の波線で下線が引かれ、スクロールバーの小さい灰色のボックスでマークされます。 |
+| エラー | `error` | 違反は、エラー一覧とコマンドラインのビルド出力に "*エラー*" として表示され、ビルドが失敗します。| 問題を起こしているコードには赤色の波線が引かれ、スクロール バーに小さい赤色のボックスが示されます。 |
+| 警告 | `warning` | 違反は、エラー一覧とコマンドラインのビルド出力に "*警告*" として表示され、ビルドが失敗します。 | 問題を起こしているコードには緑色の波線が引かれ、スクロール バーに小さい緑色のボックスが示されます。 |
+| Info | `suggestion` | 違反は、エラー一覧とコマンドラインに "*メッセージ*" として表示され、コマンドラインのビルド出力には表示されません。 | 問題を起こしているコードには灰色の波線が引かれ、スクロール バーに小さい灰色のボックスが示されます。 |
 | [非表示] | `silent` | ユーザーに表示されません。 | ユーザーに表示されません。 ただし、診断は IDE 診断エンジンに報告されます。 |
 | なし | `none` | 完全に抑制されます。 | 完全に抑制されます。 |
-| Default | `default` | ルールの既定の重要度に対応します。 ルールの既定値を確認するには、プロパティウィンドウを調べます。 | ルールの既定の重要度に対応します。 |
+| Default | `default` | ルールの既定の重要度に対応します。 ルールの既定値を確認するには、プロパティ ウィンドウを調べます。 | ルールの既定の重要度に対応します。 |
 
 アナライザーでルール違反が見つかった場合は、コード エディター (問題のあるコードの下の "*波線*" として) および [エラー一覧] ウィンドウで報告されます。
 
-エラー一覧で報告されたアナライザーの違反は、ルールの [重大度レベルの設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) と一致します。 アナライザーの違反は、問題のあるコードの下の波線としてコードエディターにも表示されます。 次の図は、3つの違反 &mdash; 1 つのエラー (赤い波線)、1つの警告 (緑の波線)、および1つの候補 (3 つの灰色のドット) を示しています。
+エラー一覧に報告されるアナライザーの違反は、ルールの[重要度レベルの設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)と一致します。 また、アナライザーの違反は、コード エディター内の問題を起こしているコードの下に波線で示されます。 次の図は、3 つの違反 &mdash; 1 つのエラー (赤色の波線)、1 つの警告 (緑色の波線)、1 つの候補 (灰色の 3 つの点) を示しています。
 
 ![Visual Studio でのコード エディターの波線](media/diagnostics-severity-colors.png)
 
@@ -59,7 +59,7 @@ Visual Studio 2019 バージョン16.3 以降では、アナライザーの規�
 
 ![エラー一覧のエラー、警告、および情報の違反](media/diagnostics-severities-in-error-list.png)
 
-多くのアナライザー規則 ( *診断*) には、規則違反を修正するために適用できる *コード修正プログラム* が1つ以上含まれています。 コード修正は、電球アイコン メニューに、他の種類の[クイック アクション](../ide/quick-actions.md)と共に示されます。 これらのコード修正については、「[共通のクイック アクション](../ide/quick-actions.md)」を参照してください。
+多くのアナライザー ルール ("*診断*") には、1 つ以上の "*コード修正*" が関連付けられており、これを適用してルール違反を修正できます。 コード修正は、電球アイコン メニューに、他の種類の[クイック アクション](../ide/quick-actions.md)と共に示されます。 これらのコード修正については、「[共通のクイック アクション](../ide/quick-actions.md)」を参照してください。
 
 ![アナライザーの違反とクイック アクションのコード修正](../code-quality/media/built-in-analyzer-code-fix.png)
 
@@ -97,14 +97,14 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 `dotnet_analyzer_diagnostic.severity = <severity>`
 
 > [!NOTE]
-> 一度に複数のアナライザー規則を構成するエントリは、 *既定で有効になっ*ている規則にのみ適用されます。 アナライザーパッケージで既定で無効とマークされているアナライザーの規則は、明示的なエントリによって有効にする必要があり `dotnet_diagnostic.<rule ID>.severity = <severity>` ます。
+> 一度に複数のアナライザー規則を構成するエントリは、 *既定で有効になっ* ている規則にのみ適用されます。 アナライザーパッケージで既定で無効とマークされているアナライザーの規則は、明示的なエントリによって有効にする必要があり `dotnet_diagnostic.<rule ID>.severity = <severity>` ます。
 
 特定の規則 ID に適用できるエントリが複数ある場合、該当するエントリを選択するための優先順位は次のとおりです。
 
 - ID による個々のルールの重大度エントリは、カテゴリの重要度エントリよりも優先されます。
 - カテゴリの重大度エントリは、すべてのアナライザールールの重大度エントリよりも優先されます。
 
-次の EditorConfig の例を考えてみます。 [CA1822](./ca1822.md) には "Performance" というカテゴリがあります。
+次の EditorConfig の例を考えてみます。 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) には "Performance" というカテゴリがあります。
 
    ```ini
    [*.cs]
@@ -119,7 +119,7 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
 
 1. プロジェクトの EditorConfig ファイルがまだない場合は、プロジェクトを [追加](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project)します。
 
-2. 対応するファイル拡張子の下で、構成する各ルールのエントリを追加します。 たとえば、 [CA1822](ca1822.md) の重大度を C# ファイルに対して設定する場合、エントリは次のように `error` なります。
+2. 対応するファイル拡張子の下で、構成する各ルールのエントリを追加します。 たとえば、 [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) の重大度を C# ファイルに対して設定する場合、エントリは次のように `error` なります。
 
    ```ini
    [*.cs]
@@ -127,15 +127,15 @@ EditorConfig ファイルでのルールの重要度の設定は、ルールセ�
    ```
 
 > [!NOTE]
-> IDE コードスタイルのアナライザーの場合は、別の構文を使用して、EditorConfig ファイルで構成することもできます (例:) `dotnet_style_qualification_for_field = false:suggestion` 。 ただし、構文を使用して重要度を設定した場合は、 `dotnet_diagnostic` それが優先されます。 詳細については、「 [EditorConfig の言語規則](../ide/editorconfig-language-conventions.md)」を参照してください。
+> IDE コードスタイルのアナライザーの場合は、別の構文を使用して、EditorConfig ファイルで構成することもできます (例:) `dotnet_style_qualification_for_field = false:suggestion` 。 ただし、構文を使用して重要度を設定した場合は、 `dotnet_diagnostic` それが優先されます。 詳細については、「 [EditorConfig の言語規則](/dotnet/fundamentals/code-analysis/style-rules/language-rules)」を参照してください。
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>電球メニューから [ルールの重要度] を設定する
 
 Visual Studio には、 [クイックアクション](../ide/quick-actions.md) の電球メニューからルールの重要度を構成する便利な方法が用意されています。
 
-1. 違反が発生した後、エディターで違反波線をポイントし、電球メニューを開きます。 または、行にカーソルを置き、 **ctrl**キーを押し + **ます。** (ピリオド) を押します。
+1. 違反が発生した後、エディターで違反波線をポイントし、電球メニューを開きます。 または、行にカーソルを置き、 **ctrl** キーを押し + **ます。** (ピリオド) を押します。
 
-2. 電球メニューの [問題の構成] **または**[ > ** \<rule ID> 重要度の構成**] を選択します。
+2. 電球メニューの [問題の構成] **または**[ > **\<rule ID> 重要度の構成**] を選択します。
 
    ![Visual Studio の電球メニューからルールの重要度を構成する](media/configure-rule-severity.png)
 
@@ -169,22 +169,22 @@ Visual Studio には、 [クイックアクション](../ide/quick-actions.md) �
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>ルールの重要度をソリューションエクスプローラーから設定
 
-**ソリューションエクスプローラー**から、analyzer 診断のカスタマイズの多くを行うことができます。 アナライザーを NuGet パッケージとして[インストール](../code-quality/install-roslyn-analyzers.md)すると、**ソリューションエクスプローラー**の [**参照**] ノードまたは [**依存関係**] ノードの下に [**アナライザー** ] ノードが表示されます。 [アナライザー] を展開して **から、いずれ**かのアナライザーアセンブリを展開すると、アセンブリ内のすべての診断が表示されます。
+**ソリューションエクスプローラー** から、analyzer 診断のカスタマイズの多くを行うことができます。 アナライザーを NuGet パッケージとして [インストール](../code-quality/install-roslyn-analyzers.md)すると、**ソリューションエクスプローラー** の [**参照**] ノードまたは [**依存関係**] ノードの下に [**アナライザー** ] ノードが表示されます。 [アナライザー] を展開して **から、いずれ** かのアナライザーアセンブリを展開すると、アセンブリ内のすべての診断が表示されます。
 
 ![ソリューションエクスプローラーのアナライザーノード](media/analyzers-expanded-in-solution-explorer.png)
 
-[ **プロパティ** ] ウィンドウでは、診断のプロパティや既定の重要度などを表示できます。 プロパティを表示するには、ルールを右クリックして [**プロパティ**] を選択するか、ルールを選択して、 **Alt**キーを押し + **Enter**ます。
+[ **プロパティ** ] ウィンドウでは、診断のプロパティや既定の重要度などを表示できます。 プロパティを表示するには、ルールを右クリックして [**プロパティ**] を選択するか、ルールを選択して、 **Alt** キーを押し + ます。
 
 ![プロパティウィンドウの診断プロパティ](media/analyzer-diagnostic-properties.png)
 
 診断のオンラインドキュメントを表示するには、診断を右クリックし、[ **ヘルプの表示**] を選択します。
 
-**ソリューションエクスプローラー**の各診断の横にあるアイコンは、エディターで開いたときにルールセットに表示されるアイコンに対応します。
+**ソリューションエクスプローラー** の各診断の横にあるアイコンは、エディターで開いたときにルールセットに表示されるアイコンに対応します。
 
-- 円の "x" は**エラー**の[重大度](#configure-severity-levels)を示します。
-- 三角形の "!" は**警告**の[重大度](#configure-severity-levels)を示します。
-- 円の "i" は**情報**の[重大度](#configure-severity-levels)を示します。
-- 明るい色の背景にある円の "i" は、**非表示**の[重要度](#configure-severity-levels)を示します。
+- 円の "x" は **エラー** の [重大度](#configure-severity-levels)を示します。
+- 三角形の "!" は **警告** の [重大度](#configure-severity-levels)を示します。
+- 円の "i" は **情報** の [重大度](#configure-severity-levels)を示します。
+- 明るい色の背景にある円の "i" は、**非表示** の [重要度](#configure-severity-levels)を示します。
 - 円の下向き矢印は、診断が抑制されていることを示します。
 
 ![ソリューションエクスプローラーの診断アイコン](media/diagnostics-icons-solution-explorer.png)
@@ -205,7 +205,7 @@ Visual Studio 2019 バージョン16.5 以降では、マネージコードの�
 
        ![ルールセットエディターでルールセットを EditorConfig ファイルに変換する](media/convert-ruleset-to-editorconfig-file-ruleset-editor.png)
 
-    2. **情報バー**のリンクを選択します。
+    2. **情報バー** のリンクを選択します。
 
        これにより、[ **名前を付けて保存** ] ダイアログボックスが開き、editorconfig ファイルを生成するディレクトリを選択できます。
 
@@ -261,7 +261,7 @@ dotnet_diagnostic.CA2231.severity = warning
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>ルールの重要度をソリューションエクスプローラーから設定
 
-1. ソリューションエクスプローラーで、[**参照**  >  **アナライザー** ] (または .net Core プロジェクトの**依存関係**  >  **アナライザー** ) を展開します。
+1. ソリューションエクスプローラーで、[**参照**  >  **アナライザー** ] (または .net Core プロジェクトの **依存関係**  >  **アナライザー** ) を展開します。
 
 2. 重要度を設定するルールが含まれているアセンブリを展開します。
 
@@ -286,13 +286,13 @@ dotnet_diagnostic.CA2231.severity = warning
 
 1. 次のいずれかの方法で、アクティブな規則セットファイルを開きます。
 
-- **ソリューションエクスプローラー**で、ファイルをダブルクリックし、[**参照**  >  **アナライザー** ] ノードを右クリックして、[**アクティブなルールセットを開く**] を選択します。
+- **ソリューションエクスプローラー** で、ファイルをダブルクリックし、[**参照**  >  **アナライザー** ] ノードを右クリックして、[**アクティブなルールセットを開く**] を選択します。
 - プロジェクトの [ **コード分析** ] プロパティページで、[ **開く** ] を選択します。
 
-  規則セットを初めて編集する場合は、Visual Studio によって既定の規則セットファイルのコピーが作成され、ルールセット* \<projectname> という名前*が付いて、プロジェクトに追加されます。 このカスタム規則セットは、プロジェクトのアクティブな規則セットにもなります。
+  規則セットを初めて編集する場合は、Visual Studio によって既定の規則セットファイルのコピーが作成され、ルールセット *\<projectname> という名前* が付いて、プロジェクトに追加されます。 このカスタム規則セットは、プロジェクトのアクティブな規則セットにもなります。
 
    > [!NOTE]
-   > .NET Core と .NET Standard のプロジェクトでは、[**アクティブな規則セットを開く**] など、**ソリューションエクスプローラー**の規則セットのメニューコマンドはサポートされていません。 .NET Core または .NET Standard プロジェクトに対して既定以外の規則セットを指定するには、 [ **CodeAnalysisRuleSet** プロパティ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) をプロジェクトファイルに手動で追加します。 ただし、Visual Studio の規則セットエディター UI で規則セット内の規則を構成することはできます。
+   > .NET Core と .NET Standard のプロジェクトでは、[**アクティブな規則セットを開く**] など、**ソリューションエクスプローラー** の規則セットのメニューコマンドはサポートされていません。 .NET Core または .NET Standard プロジェクトに対して既定以外の規則セットを指定するには、 [ **CodeAnalysisRuleSet** プロパティ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) をプロジェクトファイルに手動で追加します。 ただし、Visual Studio の規則セットエディター UI で規則セット内の規則を構成することはできます。
 
 1. コンテナーのアセンブリを展開して、規則を参照します。
 
@@ -327,13 +327,13 @@ Visual Studio 2019 16.5 以降では、エンドユーザーは、 [Editorconfig
 
 ::: moniker range=">=vs-2019"
 
-- **Editorconfig ファイル**内
+- **Editorconfig ファイル** 内
 
   重要度をに設定し `none` ます。たとえば、のように `dotnet_diagnostic.CA1822.severity = none` します。
 
 - [ **分析** ] メニューから
 
-  **Analyze**  >  現在のすべての違反を抑制するには、メニューバーの [ビルドの分析]**と [アクティブな問題の非**表示] を選択します。 これは、"基準" と呼ばれることもあります。
+    >  現在のすべての違反を抑制するには、メニューバーの [ビルドの分析]**と [アクティブな問題の非** 表示] を選択します。 これは、"基準" と呼ばれることもあります。
 
 ::: moniker-end
 
@@ -341,29 +341,29 @@ Visual Studio 2019 16.5 以降では、エンドユーザーは、 [Editorconfig
 
 - [ **分析** ] メニューから
 
-  **Analyze**  >  現在のすべての違反を抑制するには、メニューバーの [**実行コード分析を分析し、アクティブな問題を抑制**する] を選択します。 これは、"基準" と呼ばれることもあります。
+    >  現在のすべての違反を抑制するには、メニューバーの [**実行コード分析を分析し、アクティブな問題を抑制** する] を選択します。 これは、"基準" と呼ばれることもあります。
 
 ::: moniker-end
 
-- **ソリューションエクスプローラー**から
+- **ソリューションエクスプローラー** から
 
   規則の重要度を **[なし**] に設定します。
 
-- **規則セットエディター**から
+- **規則セットエディター** から
 
   名前の横のチェックボックスをオフにするか、[ **アクション** ] を **[なし**] に設定します。
 
-- **コードエディター**から
+- **コードエディター** から
 
-  違反があるコード行にカーソルを置き、 **Ctrl** + **Period (.)** キーを押して [**クイックアクション**] メニューを開きます。 [ **Suppress CAXXXX**  >  **ソース/抑制ファイル**での caxxxx の抑制] を選択します。
+  違反があるコード行にカーソルを置き、 **Ctrl** + **Period (.)** キーを押して [**クイックアクション**] メニューを開きます。 [   >  **ソース/抑制ファイル** での caxxxx の抑制] を選択します。
 
   ![クイックアクションメニューの診断を抑制する](media/suppress-diagnostic-from-editor.png)
 
-- **エラー一覧**から
+- **エラー一覧** から
 
-  抑制するルールを選択し、右クリックして、[ **Suppress**  >  **ソース/抑制ファイルで**抑制する] を選択します。
+  抑制するルールを選択し、右クリックして、[   >  **ソース/抑制ファイルで** 抑制する] を選択します。
 
-  - **ソースで**非表示にすると、[**変更のプレビュー** ] ダイアログが開き、ソースコードに追加された C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives)ディレクティブのプレビューが表示されます。
+  - **ソースで** 非表示にすると、[**変更のプレビュー** ] ダイアログが開き、ソースコードに追加された C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)または Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives)ディレクティブのプレビューが表示されます。
 
     ![コードファイルでの #pragma 警告の追加のプレビュー](media/pragma-warning-preview.png)
 
@@ -374,7 +374,7 @@ Visual Studio 2019 16.5 以降では、エンドユーザーは、 [Editorconfig
   [ **変更のプレビュー** ] ダイアログで、[ **適用**] を選択します。
 
   > [!NOTE]
-  > **ソリューションエクスプローラー**に [**抑制**] メニューオプションが表示されない場合、違反はビルドから発生し、ライブ分析は行われない可能性があります。 **エラー一覧**には、ライブコード分析とビルドの両方からの診断または規則違反が表示されます。 ビルド診断は古くなる可能性があるため、たとえば、違反を修正するようにコードを編集してもリビルドされていない場合は、 **エラー一覧**からこれらの診断を抑制することはできません。 ライブ分析または IntelliSense からの診断は、常に最新のソースを使用して最新の状態にあり、 **エラー一覧**によって抑制できます。 選択した *ビルド* 診断を除外するには、 **エラー一覧** ソースフィルターを [ビルド] + [ **Intellisense** ] から [ **intellisense のみ**] に切り替えます。 次に、非表示にする診断を選択し、前述のように続行します。
+  > **ソリューションエクスプローラー** に [**抑制**] メニューオプションが表示されない場合、違反はビルドから発生し、ライブ分析は行われない可能性があります。 **エラー一覧** には、ライブコード分析とビルドの両方からの診断または規則違反が表示されます。 ビルド診断は古くなる可能性があるため、たとえば、違反を修正するようにコードを編集してもリビルドされていない場合は、 **エラー一覧** からこれらの診断を抑制することはできません。 ライブ分析または IntelliSense からの診断は、常に最新のソースを使用して最新の状態にあり、 **エラー一覧** によって抑制できます。 選択した *ビルド* 診断を除外するには、 **エラー一覧** ソースフィルターを [ビルド] + [ **Intellisense** ] から [ **intellisense のみ**] に切り替えます。 次に、非表示にする診断を選択し、前述のように続行します。
   >
   > ![Visual Studio でのエラー一覧ソースフィルター](media/error-list-filter.png)
 
@@ -382,16 +382,18 @@ Visual Studio 2019 16.5 以降では、エンドユーザーは、 [Editorconfig
 
 コマンドラインでプロジェクトをビルドすると、次の条件が満たされた場合に、規則違反がビルド出力に表示されます。
 
-- アナライザーは、VSIX 拡張機能としてではなく、NuGet パッケージとしてインストールされます。
+- アナライザーは、VSIX 拡張機能としてではなく、.NET SDK または NuGet パッケージとしてインストールされます。
+
+  .NET SDK を使用してインストールされたアナライザーの場合、 [アナライザーの有効化](../code-quality/install-net-analyzers.md)が必要になることがあります。 コードスタイルの場合は、MSBuild プロパティを設定して [ビルドにコードスタイルを適用](/dotnet/fundamentals/code-analysis/overview#code-style-analysis) することもできます。
 
 - プロジェクトのコードで1つ以上の規則に違反しています。
 
-- 違反しているルールの [重要度](#configure-severity-levels) は、いずれかの **警告**に設定されます。この場合、違反が発生してもビルドは失敗しません。 **エラー**の場合は、違反が発生してもビルドは失敗します。
+- 違反しているルールの [重要度](#configure-severity-levels) は、いずれかの **警告** に設定されます。この場合、違反が発生してもビルドは失敗しません。 **エラー** の場合は、違反が発生してもビルドは失敗します。
 
-ビルド出力の詳細度は、規則違反が表示されるかどうかには影響しません。 **低**レベルの詳細度でも、ルール違反はビルド出力に表示されます。
+ビルド出力の詳細度は、規則違反が表示されるかどうかには影響しません。 **低** レベルの詳細度でも、ルール違反はビルド出力に表示されます。
 
 > [!TIP]
-> *FxCopCmd.exe* 、または**runcodeanalysis**フラグを使用した msbuild を使用してコマンドラインからレガシ分析を実行することに慣れている場合は、コードアナライザーを使用してこれを行う方法を次に示します。
+> *FxCopCmd.exe* 、または **runcodeanalysis** フラグを使用した msbuild を使用してコマンドラインからレガシ分析を実行することに慣れている場合は、コードアナライザーを使用してこれを行う方法を次に示します。
 
 Msbuild を使用してプロジェクトをビルドするときに、コマンドラインでアナライザーの違反を確認するには、次のようなコマンドを実行します。
 
@@ -405,13 +407,13 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 
 ## <a name="dependent-projects"></a>依存プロジェクト
 
-.NET Core プロジェクトでは、NuGet アナライザーを含むプロジェクトへの参照を追加すると、それらのアナライザーも依存プロジェクトに自動的に追加されます。 この動作を無効にするには、たとえば、依存プロジェクトが単体テストプロジェクトの場合、 **Privateassets**属性を設定して、参照されるプロジェクトの *.csproj*ファイルまたは *.vbproj*ファイルで NuGet パッケージを private としてマークします。
+.NET Core プロジェクトでは、NuGet アナライザーを含むプロジェクトへの参照を追加すると、それらのアナライザーも依存プロジェクトに自動的に追加されます。 この動作を無効にするには、たとえば、依存プロジェクトが単体テストプロジェクトの場合、 **Privateassets** 属性を設定して、参照されるプロジェクトの *.csproj* ファイルまたは *.vbproj* ファイルで NuGet パッケージを private としてマークします。
 
 ```xml
-<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+<PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="5.0.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のコードアナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 - [コードアナライザーのバグを送信する](https://github.com/dotnet/roslyn-analyzers/issues)

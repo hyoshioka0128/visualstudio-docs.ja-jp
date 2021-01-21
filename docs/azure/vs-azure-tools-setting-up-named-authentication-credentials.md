@@ -3,18 +3,16 @@ title: 名前付き認証資格情報の設定 | Microsoft Docs
 description: Visual Studio から Azure にアプリケーションを発行したり、既存のクラウド サービスを監視したりできるように、Visual Studio が Azure への要求の認証に使用できる資格情報を指定する方法について説明します。
 author: ghogen
 manager: jillfra
-assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508393"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94902000"
 ---
 # <a name="set-up-named-authentication-credentials"></a>名前付き認証資格情報の設定
 

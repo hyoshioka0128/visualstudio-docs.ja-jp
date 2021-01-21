@@ -1,5 +1,7 @@
 ---
-title: XML スキーマ デザイナーのコンテンツ モデル ビューを使用してノードを確認する
+title: ノードのコンテンツ モデルを調べる
+description: XML スキーマ デザイナーのコンテンツ モデル ビューを使用して、XML スキーマのノードのコンテンツ モデルを調べる方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81bf6294aeac9a23168bf9cf9aaec26efbfc6c1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3ce3d1a47125c446521ceb60a851322c37209d0
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815982"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96995279"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>方法: コンテンツ モデル ビューを使用してノードのコンテンツ モデルを調べる
+# <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>方法:コンテンツ モデル ビューを使用してノードのコンテンツ モデルを調べる
 
 このトピックでは、[コンテンツ モデル ビュー](../xml-tools/content-model-view.md)を使用してノードを調べる方法について説明します。
 

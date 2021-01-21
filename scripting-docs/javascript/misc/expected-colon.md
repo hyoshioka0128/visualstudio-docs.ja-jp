@@ -14,12 +14,12 @@ ms.assetid: cbb1bb65-59e4-47e0-834d-8f514cfda0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcb5d395ac322b6fd1daed2bfd9da1fe76f57e3a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41f99831a92c257b9f8ed361b7abd522d868a430
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816671"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862421"
 ---
 # <a name="expected-"></a>':' が必要です。
 三項条件演算子を使用して式を作成しようとしましたが、2番目と3番目のオペランドの間にコロンが含まれていませんでした。 三項 (3 つのオペランド) 条件演算子では、2番目 (true) と3番目 (false) のオペランドの間にコロンが必要です。  
@@ -29,5 +29,5 @@ ms.locfileid: "85816671"
 - 2番目と3番目のオペランドの間にコロンを挿入します。  
   
 ## <a name="see-also"></a>関連項目  
- [条件 (三項) 演算子 (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
- [演算子](../../javascript/operators-javascript.md)
+ [条件 (三項) 演算子 (?:)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)   
+ [オペレーター](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)

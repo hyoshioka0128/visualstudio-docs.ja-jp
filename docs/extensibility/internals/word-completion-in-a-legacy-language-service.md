@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでの単語補完 |Microsoft Docs
+description: Visual Studio SDK の従来の言語サービスでは、単語の補完がサポートされています。 VSPackage でのレガシ言語サービスの実装方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703173"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616276"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>従来の言語サービスでの単語補完
 単語入力補完は、部分的に入力された単語の不足している文字を入力します。 候補が1つしかない場合は、入力候補文字が入力されると、その単語が完成します。 単語の一部が複数の可能性に一致する場合、候補の一覧が表示されます。 完了文字には、識別子に使用されない任意の文字を指定できます。
@@ -29,7 +31,7 @@ ms.locfileid: "80703173"
 
 ## <a name="implementation-steps"></a>実装手順
 
-1. ユーザーが**IntelliSense**メニューから [ **Complete Word** ] を選択すると、 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> コマンドが言語サービスに送信されます。
+1. ユーザーが **IntelliSense** メニューから [ **Complete Word** ] を選択すると、 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> コマンドが言語サービスに送信されます。
 
 2. クラスは、 <xref:Microsoft.VisualStudio.Package.ViewFilter> コマンドをキャッチし、 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> の解析の理由でメソッドを呼び出し <xref:Microsoft.VisualStudio.Package.ParseReason> ます。
 

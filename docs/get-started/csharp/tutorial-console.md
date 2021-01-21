@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 691e6c3b994649a9f0fa2d0e92a990f317a16208
-ms.sourcegitcommit: 8e5b0106061bb43247373df33d0850ae68457f5e
+ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88508179"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833339"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -49,13 +49,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 2. 上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
    (または、**Ctrl**+**Shift**+**N** キーを押します)。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに ***Calculator*** という名前を付けます。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに **_Calculator_* _ という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
-**コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発**ワークロードを追加して取得できます。 ここではその方法を説明します。
+_ *コンソール アプリ (.NET Core)* * プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発** ワークロードを追加して取得できます。 ここではその方法を説明します。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 
@@ -282,7 +282,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 数値を 0 で除算しようとすると、コンソール アプリがフリーズし、コード エディターに問題が表示されることがあります。
 
-   ![0 除算エラーが表示されている Visual Studio のコード エディター](./media/csharp-console-calculator-dividebyzero-error.png)
+   ![Visual Studio コード エディターのスクリーンショット。1 行が黄色で強調されています。"0 で除算しようとしました" に対してハンドルされていない例外エラーがあります。](./media/csharp-console-calculator-dividebyzero-error.png)
 
 > [!NOTE]
 > 場合によっては、アプリがフリーズせず、デバッガーに 0 除算エラーが表示されないことがあります。 代わりに、無限大記号など、予期しない数値以外の結果がアプリから返されることがあります。 この場合でも、次のコード修正を利用できます。
@@ -311,7 +311,7 @@ C# で何らかの基本的な整数計算を始めましょう。
 
 今度は、数値を 0 で割ると、別の値の入力を求められます。 さらに良い点:ゼロ以外の数値を入力するまで、入力要求は停止しません。
 
-   ![0 除算エラーが表示されている Visual Studio のコード エディター](./media/csharp-console-calculator-dividebyzero.png)
+   ![Visual Studio コード エディターのスクリーンショット。switch ステートメントのコードが表示されています。ゼロ以外の除数の入力の確認が追加されています。](./media/csharp-console-calculator-dividebyzero.png)
 
 ### <a name="fix-the-format-error"></a>"書式" エラーを修正する
 
@@ -600,10 +600,25 @@ namespace Calculator
 
 ## <a name="next-steps"></a>次の手順
 
+:::moniker range="vs-2017"
+
+さらにチュートリアルを続ける:
+
+> [!div class="nextstepaction"]
+> [C# チュートリアル](/dotnet/csharp/tutorials)
+
+> [!div class="nextstepaction"]
+> [Visual Studio IDE をツアーする](../visual-studio-ide.md)
+
+:::moniker-end
+
+:::moniker range="vs-2019"
+
 このチュートリアルの第 2 部、
 
 > [!div class="nextstepaction"]
 > 「[パート 2 に続く](tutorial-console-part-2.md)」に進んでください。
+:::moniker-end
 
 ## <a name="see-also"></a>関連項目
 

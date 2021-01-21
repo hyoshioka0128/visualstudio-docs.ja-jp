@@ -1,5 +1,7 @@
 ---
 title: データベースの画像にコントロールをバインドする
+description: '[データソース] ウィンドウを使用すると、データベース内のイメージを Visual Studio アプリケーションのコントロールにバインドできます。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -17,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e9093c2a2d7cec95e4fdd08ff4273ae8f8126a36
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10ea349186aa46bfb58f4b9ceeaab2c8ac3edd81
+ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282985"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94518571"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>データベースの画像にコントロールをバインドする
 
@@ -39,13 +41,13 @@ ms.locfileid: "85282985"
 2. **[データ ソース]** ウィンドウで、目的のテーブルまたはオブジェクトを展開して、その列またはプロパティを表示します。
 
    > [!TIP]
-   > [**データソース**] ウィンドウが開いていない場合は**View**、[  >  **他の Windows**  >  **データソース**を表示] を選択して開きます。
+   > [ **データソース** ] ウィンドウが開いていない場合は **View** 、[  >  **他の Windows**  >  **データソース** を表示] を選択して開きます。
 
 3. イメージ データを含む列またはプロパティを選択し、ドロップダウン コントロール リストから次のいずれかのコントロールを選択します。
 
-    - WPF デザイナーが開いている場合は、**[Image]** を選択します。
+    - WPF デザイナーが開いている場合は、 **[Image]** を選択します。
 
-    - Windows フォーム デザイナーが開いている場合は、**[PictureBox]** を選択します。
+    - Windows フォーム デザイナーが開いている場合は、 **[PictureBox]** を選択します。
 
     - または、データ バインディングをサポートし、かつイメージを表示できる、別のコントロールを選択することもできます。 使用するコントロールが利用できるコントロールのリストに含まれていない場合は、そのコントロールをリストに追加してから選択できます。 詳細については、「 [[データソース] ウィンドウにカスタムコントロールを追加する](../data-tools/add-custom-controls-to-the-data-sources-window.md)」を参照してください。
 

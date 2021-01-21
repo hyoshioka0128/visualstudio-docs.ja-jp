@@ -1,5 +1,7 @@
 ---
 title: 自動保存が Office ソリューションに与える影響
+description: 自動保存が Excel、PowerPoint、および Word の機能であり、編集内容を自動的に保存するしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 10/26/2018
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ceaf13e24d56060e3d962e108d43c4d87d69fb8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6108ee35c79ec475de70e874ce0dc6d872cc62c6
+ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62826684"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96846793"
 ---
 # <a name="how-autosave-impacts-office-solutions"></a>自動保存が Office ソリューションに与える影響
 
@@ -26,5 +28,5 @@ ms.locfileid: "62826684"
 > [!NOTE]
 > Windows デスクトップの Word、Excel、PowerPoint の自動保存は2017で導入され、現在は Office365 サブスクライバーで使用できます。 Office 2016 以前にライセンスを購入した場合は、現在、共同編集機能にアクセスすることはできません。 (ただし、Windows ストアの excel Online、Excel for Android、excel for iOS、および Excel Mobile は、この機能をサポートしています)。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Office ソリューションの開発](./developing-office-solutions.md)

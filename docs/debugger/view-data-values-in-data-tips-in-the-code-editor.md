@@ -1,6 +1,7 @@
 ---
 title: データヒントの変数値を表示する | Microsoft Docs
-ms.custom: seodec18
+description: データヒントを使用すると、デバッグ中に配列や構造体などの変数に関する情報を簡単に表示できます。 値を変更することもできます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 432fd50d30347972d7b1fc8222a430fc90a9e590
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75404277"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149964"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>コード エディターでデータヒントのデータ値を表示する
 
@@ -119,7 +120,7 @@ DataTips は、デバッグ中にプログラムの変数に関する情報を�
 
 変数のウォッチを継続する場合、データヒントから **ウォッチ** ウィンドウに変数を追加できます。 データヒントの変数を右クリックし、 **[ウォッチ式の追加]** を選択します。
 
-変数が **ウォッチ** ウィンドウに表示されます。 ご使用の Visual Studio エディションで複数の**ウォッチ** ウィンドウがサポートされている場合、変数は**ウォッチ 1** に表示されます。
+変数が **ウォッチ** ウィンドウに表示されます。 ご使用の Visual Studio エディションで複数の **ウォッチ** ウィンドウがサポートされている場合、変数は **ウォッチ 1** に表示されます。
 
 ## <a name="import-and-export-datatips"></a>データヒントのインポートとエクスポート
 

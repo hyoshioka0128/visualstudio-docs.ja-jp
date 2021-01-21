@@ -1,5 +1,7 @@
 ---
 title: クラス デザイナーの C++ 構造体
+description: クラス デザイナーで、キーワード struct を使用して宣言された C++ の構造体がサポートされるしくみについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,16 +12,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d22ff6be694de69f105897821aba1b587955f748
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "75590685"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903430"
 ---
 # <a name="c-structures-in-class-designer"></a>クラス デザイナーの C++ 構造体
 
-**クラス デザイナー**は、C++ の構造体をサポートしています。これは、`struct` キーワードを使用して宣言されます。 たとえば次のようになります。
+**クラス デザイナー** は、C++ の構造体をサポートしています。これは、`struct` キーワードを使用して宣言されます。 たとえば次のようになります。
 
 ```cpp
 struct MyStructure

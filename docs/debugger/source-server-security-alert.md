@@ -1,5 +1,7 @@
 ---
 title: ソース サーバーのセキュリティ警告 | Microsoft Docs
+description: Visual Studio デバッガーのソース サーバーのセキュリティ警告について説明します。 ソース サーバーを使用するときは、セキュリティ上の潜在的な脅威にご注意ください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69511c2f83570abf37ef4bea8b71c8f59431a128
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bf62abb91411048f46bfe7240074bd86c119bcd4
+ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729573"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98149119"
 ---
 # <a name="source-server-security-alert"></a>ソース サーバー のセキュリティ警告
 ソース サーバーの使用時は、認識できて信頼できる場所からのシンボル ファイルのみを使用してください。

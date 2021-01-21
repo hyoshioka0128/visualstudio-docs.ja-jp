@@ -1,5 +1,7 @@
 ---
 title: FeatureProperty 要素 |Microsoft Docs
+description: SharePoint プロジェクト項目スキーマの要素である FeatureProperty 要素に関する参照情報を表示します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e6010ac45d0b760325c73c4bd754fbb0b422a77
+ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546524"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94672757"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty 要素
   SharePoint に配置されるときにフィーチャーに含まれるカスタムプロパティを表します。 フィーチャーが配置された後、コード内のプロパティにアクセスできます。
@@ -34,10 +36,10 @@ ms.locfileid: "85546524"
 
 ### <a name="attributes"></a>属性
 
-|属性|[説明]|
+|属性|説明|
 |---------------|-----------------|
-|**キー**|**Xs: string**属性が必要です。<br /><br /> プロパティ値を格納および取得するために使用されるキー。 各プロパティには、機能内で一意のキーが必要です。|
-|**Value**|**Xs: string**属性が必要です。<br /><br /> プロパティ値。|
+|**[キー]**|**Xs: string** 属性が必要です。<br /><br /> プロパティ値を格納および取得するために使用されるキー。 各プロパティには、機能内で一意のキーが必要です。|
+|**Value**|**Xs: string** 属性が必要です。<br /><br /> プロパティ値。|
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -48,7 +50,7 @@ ms.locfileid: "85546524"
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|SharePoint に配置されるときにフィーチャーに含まれるプロパティ値のコレクションを表します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  機能のプロパティの詳細については、「 [プロジェクト項目でのパッケージと配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
 
 ## <a name="element-information"></a>要素情報
@@ -62,4 +64,4 @@ ms.locfileid: "85546524"
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト項目スキーマのリファレンス](../sharepoint/sharepoint-project-item-schema-reference.md)
-- [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
+- [プロジェクト項目でのパッケージ化と配置の情報を提供する](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

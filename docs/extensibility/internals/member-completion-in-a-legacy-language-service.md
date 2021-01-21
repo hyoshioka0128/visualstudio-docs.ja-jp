@@ -1,5 +1,7 @@
 ---
 title: 従来の言語サービスでのメンバーの完了 |Microsoft Docs
+description: 従来の言語サービスでの IntelliSense メンバーの完了ツールのヒントと、それが managed package framework (MPF) によってどのようにサポートされるかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4fbf88dab2f1ffad0b4a6e5dc6b2ad516c28afca
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707192"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205802"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>従来の言語サービスでのメンバー補完
 
@@ -34,7 +36,7 @@ Managed package framework (MPF) では、ツールヒントをサポートし、
 
 MPF クラスを使用してメンバーリストを表示するには、次の2つの方法があります。
 
-- 識別子にカレットを配置するか、メンバーの完了文字の後にカーソルを置いて、 **IntelliSense**メニューから [**メンバーの一覧表示**] を選択します。
+- 識別子にカレットを配置するか、メンバーの完了文字の後にカーソルを置いて、 **IntelliSense** メニューから [**メンバーの一覧表示**] を選択します。
 
 - スキャナーは、 <xref:Microsoft.VisualStudio.Package.IScanner> メンバーの完了文字を検出し、その文字に対して [TokenTriggers](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) のトークントリガーを設定します。
 

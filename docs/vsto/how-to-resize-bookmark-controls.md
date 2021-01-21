@@ -1,5 +1,7 @@
 ---
 title: '方法: Bookmark コントロールのサイズを変更する'
+description: Visual Studio を使用して、Microsoft Word 文書にブックマークコントロールを追加するときに、そのサイズを設定する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cc7b26bb767c233ed8699519261d4b5b708306b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545861"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528199"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>方法: Bookmark コントロールのサイズを変更する
   <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールのサイズは、Microsoft Office Word ドキュメントに追加するときに設定します。 サイズは後から変更することもできます。

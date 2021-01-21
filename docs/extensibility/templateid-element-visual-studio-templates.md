@@ -1,5 +1,7 @@
 ---
 title: TemplateID 要素 (Visual Studio テンプレート) |Microsoft Docs
+description: TemplateID 要素について、および TemplateGroupID 要素によって項目テンプレートのグループに分類される項目テンプレートの識別子をどのように指定するかについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb5abac9c837b3022354d6da743ac8f21d5e41d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
+ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699064"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94903183"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 要素 (Visual Studio テンプレート)
 [Templategroupid](../extensibility/templategroupid-element-visual-studio-templates.md)要素によって項目テンプレートのグループに分類される項目テンプレートの識別子を指定します。
@@ -56,7 +58,7 @@ ms.locfileid: "80699064"
 
  .Vstemplate ファイルで要素が省略されている場合は、 `TemplateID` [Name](../extensibility/name-element-visual-studio-templates.md) 要素がテンプレートの識別子として使用されます。
 
- 要素の値 `TemplateID` は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\11.0\projects) と共に使用して \\ 、[ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートをフィルター処理します。
+ 要素の値 `TemplateID` は、プロジェクトシステムの登録 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects) と共に使用して \\ 、[ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートをフィルター処理します。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

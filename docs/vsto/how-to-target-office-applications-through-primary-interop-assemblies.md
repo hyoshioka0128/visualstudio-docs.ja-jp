@@ -1,5 +1,7 @@
 ---
 title: プライマリ相互運用機能アセンブリを使用して Office アプリを対象にする
+description: Visual Studio を使用して、プログラムでプライマリ相互運用機能アセンブリを使用して Microsoft Office アプリケーションを対象にする方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -16,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545770"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97528100"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする
   新しい Office プロジェクトを作成すると、Visual Studio により、そのプロジェクトのビルドに必要な Microsoft Office プライマリ相互運用機能アセンブリ (PIA: Primary Interop Assembly) への参照が自動的に追加されます。 次の場合は、他の PIA への参照を追加する必要があります。
@@ -36,7 +38,7 @@ ms.locfileid: "85545770"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>プライマリ相互運用機能アセンブリに参照を追加するには
 
-1. Office プロジェクトを開き、 **ソリューションエクスプローラー**でプロジェクト名を選択します。
+1. Office プロジェクトを開き、 **ソリューションエクスプローラー** でプロジェクト名を選択します。
 
 2. **[プロジェクト]** メニューの **[参照の追加]** をクリックします。
 
@@ -49,7 +51,7 @@ ms.locfileid: "85545770"
 
 4. **[OK]** をクリックします。
 
-     アセンブリ名は、**ソリューションエクスプローラー**の [**参照**] フォルダーに表示されます。
+     アセンブリ名は、**ソリューションエクスプローラー** の [**参照**] フォルダーに表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [Office プライマリ相互運用機能アセンブリ](../vsto/office-primary-interop-assemblies.md)

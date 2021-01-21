@@ -2,8 +2,9 @@
 title: Visual Studio 2017 の変更
 titleSuffix: ''
 description: Visual Studio を変更する方法について、ステップ バイ ステップで説明します。
-ms.date: 02/10/2019
+ms.date: 10/12/2020
 ms.topic: how-to
+ms.custom: contperf-fy21q2
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2ec3ae3f253997b86c2403ce57d5e8db6e9920b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17a02fb8c05c6f1720aa1b352e30c46e04a8b69d
+ms.sourcegitcommit: c558d8a0f02ed2c932c8d6f70756d8d2cedb10b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419186"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97684093"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>ワークロードやコンポーネントを追加または削除することで Visual Studio を変更する
 
@@ -54,12 +55,12 @@ ms.locfileid: "85419186"
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー** としてリスト表示される **V** の文字までスクロールします。
 
      ![Visual Studio インストーラー](media/locate-the-visual-studio-installer.png "Microsoft Visual Studio インストーラーを見つける")
 
      >[!TIP]
-     >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー**として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
+     >一部のコンピューターでは、Visual Studio インストーラーが **Microsoft Visual Studio インストーラー** として **"M"** の項に表示される場合があります。<br/><br/> Visual Studio インストーラーは `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe` にもあります。
 
 1. インストーラーを開いて、 **[変更]** を選択します。
 
@@ -74,11 +75,11 @@ ms.locfileid: "85419186"
 
 ::: moniker range="vs-2019"
 
-1. コンピューター上で Visual Studio インストーラーを見つけます。
+1. コンピューター上の **Visual Studio インストーラー** を見つけます。
 
-     たとえば、Windows 10 を実行しているコンピューター上で、 **[スタート]** を選択し、**Visual Studio インストーラー**としてリスト表示される **V** の文字までスクロールします。
+     Windows の [スタート] メニューで "installer" を検索できます。
 
-     ![Windows から Visual Studio インストーラーを開く](media/vs-2019/vs-installer-windows-start.png "Visual Studio インストーラーを開く")
+     ![Visual Studio インストーラー](media/vs-2019/visual-studio-installer.png "Visual Studio インストーラーを検索する")
 
      > [!NOTE]
      > また、Visual Studio インストーラーは次の場所にもあります。
@@ -89,7 +90,7 @@ ms.locfileid: "85419186"
 
 1. インストーラーで、インストールした Visual Studio のエディションを探し、 **[変更]** を選択します。
 
-     ![Visual Studio の更新または変更](media/vs-2019/vs-installer-modify.png "Visual Studio 2019 の更新または変更")
+     ![Visual Studio のエディションを選択し、変更する](media/vs-2019/vs-installer-modify.png "Visual Studio 2019 エディションを選択し、変更する")
 
      > [!IMPORTANT]
      > 保留中の更新プログラムがある場合、[変更] ボタンは別の場所にあります。 この方法で、必要に応じて、更新せずに Visual Studio を変更することができます。 **[詳細]** を選択して、 **[変更]** を選択します。
@@ -148,7 +149,7 @@ ms.locfileid: "85419186"
 ワークロードを使用せずに Visual Studio のインストールをカスタマイズする場合は、Visual Studio インストーラーで **[個別のコンポーネント]** タブを選択し、必要なコンポーネントを選択して、画面の指示に従います。
 
 >[!TIP]
-> SQL Server Data Tools (SSDT) については、「[Visual Studio の SQL Server Data Tools (SSDT) をダウンロードし、インストールする](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)」を参照してください。
+> SQL Server Data Tools (SSDT) については、「[Visual Studio の SQL Server Data Tools (SSDT) をダウンロードし、インストールする](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)」を参照してください。
 
 ## <a name="modify-language-packs"></a>言語パックの変更
 

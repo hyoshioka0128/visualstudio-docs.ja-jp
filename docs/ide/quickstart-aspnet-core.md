@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7e7c6eec178d0ba3b2934e390cc02310044c4dfa
+ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "77579962"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "97833352"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する
 
@@ -122,9 +122,9 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2017"
 
-1. **ソリューション エクスプローラー**で、**Pages** フォルダーを展開し、**About.cshtml** を選択します。
+1. **ソリューション エクスプローラー** で、**Pages** フォルダーを展開し、**About.cshtml** を選択します。
 
-   ![ソリューション エクスプローラーから About.cshtml ファイルを選択する](../ide/media/csharp-aspnet-about-page-html-file.png)
+   ![Visual Studio ソリューション エクスプローラーのスクリーンショット。HelloWorld プロジェクトのファイルが表示されています。 Pages フォルダーが展開され、About.cshtml が選択されています。](../ide/media/csharp-aspnet-about-page-html-file.png)
 
    このファイルは、Web アプリの **About** という名前のページに対応します。これは Web ブラウザーで実行されます。
 
@@ -134,19 +134,19 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![Visual Studio エディターに表示された "additional information" 領域の HTML コード](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. "additional information" というテキストを「**Hello World!** 」に変更します。
+1. "additional information" というテキストを「**Hello World!**」に変更します。
 
    ![Visual Studio エディターに表示される既定の "additional information" 領域の HTML コードを変更する](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
-1. **ソリューション エクスプローラー**で、**About.cshtml** を展開し、**About.cshtml.cs** を選択します。 (このファイルも、Web ブラウザーの **About** ページに対応しています。)
+1. **ソリューション エクスプローラー** で、**About.cshtml** を展開し、**About.cshtml.cs** を選択します。 (このファイルも、Web ブラウザーの **About** ページに対応しています。)
 
-   ![ソリューション エクスプローラーから About.cshtml ファイルを選択する](../ide/media/csharp-aspnet-about-page-code-file.png)
+   ![Visual Studio ソリューション エクスプローラーのスクリーンショット。HelloWorld プロジェクトのファイルが表示されています。 About.cshtml が展開され、About.cshtml.cs が選択されています。](../ide/media/csharp-aspnet-about-page-code-file.png)
 
    エディターに、**About** ページの "application description" 領域のテキストを含む C# コードが表示されます。
 
    ![Visual Studio エディターに表示されたアプリケーション説明領域の C# コード](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. "application description" というメッセージ テキストを「**What's my message?** 」に変更します。
+1. "application description" というメッセージ テキストを「**What's my message?**」に変更します。
 
    ![Visual Studio エディターでアプリケーション説明領域の既定のメッセージ テキストを変更する](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
@@ -175,7 +175,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-1. **ソリューション エクスプローラー**で、**Pages** フォルダーを展開し、**Index.cshtml** を選択します。
+1. **ソリューション エクスプローラー** で、**Pages** フォルダーを展開し、**Index.cshtml** を選択します。
 
    ![ソリューション エクスプローラーから Index.cshtml ファイルを選択する](../ide/media/vs-2019/csharp-aspnet-index-page-cshtml-file.png)
 
@@ -187,7 +187,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![Visual Studio エディターの Home ページの Index.cshtml ファイル内の HTML コード](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page.png)
 
-1. "ようこそ" のテキストを "**Hello World!** " に変更します。
+1. "ようこそ" のテキストを "**Hello World!**" に変更します。
 
    ![Visual Studio エディターで、"ようこそ" という既定の HTML コードが "Hello World" になるように変更します](../ide/media/vs-2019/csharp-aspnet-index-cshtml-page-hello-world.png)
 

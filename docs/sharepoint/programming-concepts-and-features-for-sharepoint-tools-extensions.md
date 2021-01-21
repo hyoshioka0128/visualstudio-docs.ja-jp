@@ -1,5 +1,8 @@
 ---
 title: SharePoint ツール拡張機能 & プログラミングの概念
+titleSuffix: ''
+description: Visual Studio の SharePoint ツールに関連する重要なプログラミングの概念と機能を確認します。これにより、SharePoint ツールの拡張機能で重要な役割を果たすことがあります。
+ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +15,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2513eb99940d45d11bc2360581cbba455e864da2
+ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66401738"
+ms.lasthandoff: 11/28/2020
+ms.locfileid: "96305026"
 ---
-# <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint ツールの拡張機能のプログラミングの概念と機能
+# <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint ツール拡張機能におけるプログラミングに関する概念および特徴
   Visual Studio の SharePoint ツールに関連する、いくつかの重要なプログラミング概念と機能があります。 これらの概念と機能は、ほとんどの SharePoint ツールの拡張機能で重要な役割を果たします。
 
 ## <a name="in-this-section"></a>このセクションの内容
@@ -37,7 +40,7 @@ ms.locfileid: "66401738"
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio での SharePoint ツールの拡張](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
-- [SharePoint プロジェクトシステムの拡張](../sharepoint/extending-the-sharepoint-project-system.md)
-- [サーバーエクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Visual Studio の SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+- [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)
+- [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Visual Studio での SharePoint ツールの拡張機能のデバッグ](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 - [Visual Studio での SharePoint ツールの拡張機能の配置](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

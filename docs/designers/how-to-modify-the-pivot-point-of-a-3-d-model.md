@@ -1,5 +1,7 @@
 ---
 title: '方法: 3D モデルのピボット ポイントを変更する'
+description: モデル エディターを使用して、3D モデルの回転と拡大縮小用のオブジェクトの中心を定義するピボット ポイントを変更する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
@@ -8,16 +10,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f79f8f5a39a8721e433207f2fbb17fd85a1150
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f52bc260103c1679e6aa9875be15aeeadb7e3bcb
+ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768837"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93134793"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>方法: 3D モデルのピボット ポイントを変更する
 
-この記事では、モデル エディターを使用した 3D モデルの*ピボット ポイント*の変更方法を示します。 ピボット ポイントは、オブジェクトの回転と拡大縮小の数学的な中心を定義する空間内のポイントです。
+この記事では、モデル エディターを使用した 3D モデルの *ピボット ポイント* の変更方法を示します。 ピボット ポイントは、オブジェクトの回転と拡大縮小の数学的な中心を定義する空間内のポイントです。
 
 ## <a name="modify-the-pivot-point-of-a-3d-model"></a>3D モデルのピボット ポイントを変更する
 
@@ -25,7 +27,7 @@ ms.locfileid: "85768837"
 
 **[プロパティ]** ウィンドウと **[ツールボックス]** が表示されていることを確認します。
 
-1. 「[方法: 基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)」に記載されているものなどの既存の 3D モデルから始めます。
+1. 「[方法:基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)」に記載されているものなどの既存の 3D モデルから始めます。
 
 2. ピボット モードを開始します。 **[モデル エディターのモード]** ツール バーで、 **[ピボット モード]** をクリックしてピボット モードをアクティブにします。 **[ピボット モード]** を囲むボックスが表示されて、モデル エディターがピボット モードになっていることが示されます。 ピボット モードでは、平行移動などの操作は、ワールド空間内のオブジェクトの構造ではなくオブジェクトのピボット ポイントに影響を与えます。
 
@@ -42,7 +44,7 @@ ms.locfileid: "85768837"
 
 ![変更されたピボット ポイントを持つ家のモデル](../designers/media/digit-modified-model.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [方法: 基本 3D モデルを作成する](../designers/how-to-create-a-basic-3-d-model.md)
 - [モデル エディター](../designers/model-editor.md)

@@ -1,5 +1,7 @@
 ---
-title: 'ワークフローデザイナー-方法: ツールボックスにアクティビティを追加する'
+title: ツール ボックスにアクティビティを追加する
+description: ワークフローデザイナーでは、ソリューションのツールボックスにアクティビティを追加する方法について説明します。これには、現在のプロジェクト内からアクティビティを追加するか、別のプロジェクトからそれらを参照します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
@@ -8,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebe3f4c3daf5ee3a0f64a0197967b6da62a467b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
+ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815826"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "96996306"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>方法 : ツール ボックスにアクティビティを追加する
 
@@ -58,6 +60,6 @@ ms.locfileid: "85815826"
 
 6. カスタムアクティビティは、項目が追加される前にフォーカスがあったカテゴリの下の **ツールボックス** に表示されます。 たとえば、ツールボックス項目を追加する前に [**ツールボックス**] で **[全般**] カテゴリを選択した場合、[**全般**] カテゴリの下にアクティビティが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [ワークフロー デザイナーの使用](developing-applications-with-the-workflow-designer.md)

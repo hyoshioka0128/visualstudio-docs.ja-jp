@@ -1,5 +1,7 @@
 ---
 title: '[オプション]、[テキスト エディター]、[JavaScript]、[IntelliSense]'
+description: '[オプション] ダイアログ ボックスの [IntelliSense] ページを使用して、IntelliSense for JavaScript の動作に影響を与える設定を変更する方法について説明します。'
+ms.custom: SEO-VS-2020
 ms.date: 10/29/2018
 ms.technology: vs-javascript
 ms.topic: reference
@@ -13,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "68605984"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947727"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [JavaScript] \> [IntelliSense]
 
-JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。 **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]**  >  **[オプション]** を選択し、 **[テキスト エディター]**  >  **[JavaScript/TypeScript]**  >  **[IntelliSense]** の順に展開します。
+JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。 **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]** > **[オプション]** を選択し、 **[テキスト エディター]** > **[JavaScript/TypeScript]** > **[IntelliSense]** の順に展開します。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,9 +38,9 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 **[Tab キーと Enter キーのみをコミットに使用する]**
 
-このチェック ボックスをオンにすると、**Tab** または **Enter** キーを押した後でのみ、JavaScript コード エディターによって入力候補一覧で選択された項目を含むステートメントが追加されます。 このチェック ボックスをオフにすると、ピリオド、コンマ、コロン、左かっこ、左中かっこ ({) など、その他の文字でも選択された項目を含むステートメントを追加できます。
+このチェック ボックスをオンにすると、 **Tab** または **Enter** キーを押した後でのみ、JavaScript コード エディターによって入力候補一覧で選択された項目を含むステートメントが追加されます。 このチェック ボックスをオフにすると、ピリオド、コンマ、コロン、左かっこ、左中かっこ ({) など、その他の文字でも選択された項目を含むステートメントを追加できます。
 
-## <a name="references"></a>関連項目
+## <a name="references"></a>参考資料
 
 これらのオプションを使用して、JavaScript のさまざまなプロジェクトの種類のスコープ内にある IntelliSense (.js) ファイルの種類を指定できます。 通常、IntelliSense 参照は、グローバル オブジェクトに IntelliSense サポートを提供するために使用されます。 このページを使用して、実行時に読み込む必要があるスクリプトの読み込み順序を設定したり、IntelliSense の拡張ファイルを追加したりすることもできます。
 
@@ -50,7 +52,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 定義済みの参照グループを使用して、特定の IntelliSense (.js) ファイルがさまざまな JavaScript プロジェクトのスコープ内にあることを指定できます。 4 つの参照グループを使用できます。
 
-- 暗黙 (Windows *バージョン*)、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーション用。 このグループに含まれるファイルは、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーションのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
+- 暗黙 (Windows *バージョン* )、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーション用。 このグループに含まれるファイルは、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーションのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
 
 - 暗黙 (Web)、HTML5 プロジェクト用。 このグループに含まれるファイルは、これらのプロジェクト タイプのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
 

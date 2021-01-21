@@ -1,6 +1,8 @@
 ---
 title: EditorConfig とアナライザー
 ms.date: 03/11/2019
+description: Visual Studio での .NET Compiler Platform ベースのコード分析について説明します。 「EditorConfig ファイル、ルールセット、およびその他のトピックに関する質問への回答」を参照してください。
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, faq
@@ -9,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 48dcb2d01e53502c371595048666fd94c267b6ec
+ms.sourcegitcommit: fed8782b2fb2ca18a90746b6e7e0b33f3fde10f1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037251"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97646386"
 ---
 # <a name="code-analysis-faq"></a>コード分析に関する FAQ
 
@@ -24,7 +26,7 @@ ms.locfileid: "90037251"
 
 **Q**: コードのスタイルを確認するためにコード分析または editorconfig を使用する必要がありますか。
 
-**A**: コード分析と editorconfig ファイルは手動で機能します。 [EditorConfig ファイル](../ide/editorconfig-code-style-settings-reference.md)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用すると、アナライザーの規則を有効または無効にすることができます。また、NuGet アナライザーパッケージを構成することもできます。
+**A**: コード分析と editorconfig ファイルは手動で機能します。 [EditorConfig ファイル](/dotnet/fundamentals/code-analysis/code-style-rule-options)または [[テキストエディター] オプション](../ide/code-styles-and-code-cleanup.md)ページでコードスタイルを定義する場合、実際には Visual Studio に組み込まれているコードアナライザーを構成します。 EditorConfig ファイルを使用すると、アナライザーの規則を有効または無効にすることができます。また、NuGet アナライザーパッケージを構成することもできます。
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig とルールセット
 
@@ -34,8 +36,8 @@ ms.locfileid: "90037251"
 
 ただし、EditorConfig ファイルでは、ルールを構成するための追加の方法が提供されるようになります。
 
-- .NET コード品質アナライザーでは、EditorConfig ファイルを使用して、 [分析するコードの種類を定義](fxcop-analyzer-options.md)できます。
-- Visual Studio に組み込まれている .NET コードスタイルアナライザーの場合、EditorConfig ファイルを使用すると、コードベースに [適したコードスタイルを定義](../ide/editorconfig-code-style-settings-reference.md) できます。
+- .NET コード品質アナライザーでは、EditorConfig ファイルを使用して、 [分析するコードの種類を定義](/dotnet/fundamentals/code-analysis/code-quality-rule-options)できます。
+- Visual Studio に組み込まれている .NET コードスタイルアナライザーの場合、EditorConfig ファイルを使用すると、コードベースに [適したコードスタイルを定義](/dotnet/fundamentals/code-analysis/code-style-rule-options) できます。
 
 規則セットと EditorConfig ファイルに加えて、一部のアナライザーは、C# および VB コンパイラの [追加ファイル](../ide/build-actions.md#build-action-values) としてマークされたテキストファイルを使用して構成されます。
 
@@ -61,7 +63,13 @@ ms.locfileid: "90037251"
 
 **Q**: 従来の分析と .NET Compiler Platform ベースのコード分析の違いは何ですか。
 
-**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析とレガシ分析](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)」を参照してください。
+**A**: .NET Compiler Platform ベースのコード分析では、ソースコードがリアルタイムで分析され、コンパイル中に分析されます。一方、レガシ分析では、ビルドの完了後にバイナリファイルが分析されます。 詳細については、「 [.NET Compiler Platform ベースの分析とレガシ分析](../code-quality/net-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-net-analyzers)」を参照してください。
+
+## <a name="fxcop-analyzers-versus-net-analyzers"></a>FxCop アナライザーと .NET アナライザーの比較
+
+**Q**: FxCop アナライザーと .net アナライザーの違いは何ですか。
+
+**A**: fxcop アナライザーと .net アナライザーはどちらも、fxcop CA 規則の .NET Compiler Platform ("Roslyn") アナライザーの実装を参照します。 Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 [FxCop アナライザーから .net analyzer に移行することを](migrate-from-fxcop-analyzers-to-net-analyzers.md)検討してください。
 
 ## <a name="treat-warnings-as-errors"></a>警告をエラーとして扱う
 
@@ -79,12 +87,12 @@ ms.locfileid: "90037251"
      </Project>
      ```
 
-  2. .Csproj または .vbproj プロジェクトファイルに行を追加して、前の手順で作成した props ファイルをインポートします。 この行は、FxCop アナライザーの props ファイルをインポートする行の前に配置する必要があります。 たとえば、props ファイルの名前が codeanalysis. props:
+  2. .Csproj または .vbproj プロジェクトファイルに行を追加して、前の手順で作成した props ファイルをインポートします。 この行は、analyzer ファイルをインポートする行の前に配置する必要があります。 たとえば、props ファイルの名前が codeanalysis. props:
 
      ```xml
      ...
      <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
-     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.NetAnalyzers.5.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.NetAnalyzers.5.0.0\build\Microsoft.CodeAnalysis.NetAnalyzers.props')" />
      ...
      ```
 
@@ -92,9 +100,9 @@ ms.locfileid: "90037251"
 
 **Q**: ソリューションのコード分析プロパティページはどこにありますか。
 
-**A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、CodeAnalysisRuleSet プロパティを使用して、プロパティグループを共有 props/targets ファイルまたはディレクトリに定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、その [ようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。このディレクトリは、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされ](../msbuild/customize-your-build.md)ます。
+**A**: ソリューションレベルの [コード分析] プロパティページは、より信頼性の高い共有プロパティグループを優先するように削除されました。 プロジェクトレベルでコード分析を管理する場合、[コード分析] プロパティページは引き続き使用できます。 (マネージプロジェクトの場合は、ルールの構成に対して、ルールセットから EditorConfig への移行もお勧めします)。 ソリューションまたはリポジトリ内の複数のプロジェクト間でルールセットを共有するには、 [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) プロパティを使用して、プロパティグループを共有 props/targets ファイルまたは *ディレクトリ* に定義することをお勧めします。 すべてのプロジェクトがインポートする一般的な props やターゲットがない場合は、そのようなプロパティグループを最上位レベルのソリューションディレクトリに追加することを検討してください。この [ファイル](../msbuild/customize-your-build.md) は、ディレクトリまたはサブディレクトリで定義されているすべてのプロジェクトファイルに自動的にインポートされます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [アナライザーの概要](roslyn-analyzers-overview.md)
-- [EditorConfig の .NET コーディング規則の設定](../ide/editorconfig-code-style-settings-reference.md)
+- [EditorConfig の .NET コーディング規則の設定](/dotnet/fundamentals/code-analysis/code-style-rule-options)

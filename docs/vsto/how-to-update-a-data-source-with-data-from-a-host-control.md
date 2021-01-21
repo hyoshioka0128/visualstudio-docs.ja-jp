@@ -1,5 +1,8 @@
 ---
 title: '方法: ホストコントロールのデータを使用してデータソースを更新する'
+description: ホストコントロールをデータソースにバインドし、コントロールのデータに加えられた変更でデータソースを更新する方法について説明します。
+ms.custom: SEO-VS-2020
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f79b8ae8716631a7adc68446b0c5fe267a30a88
+ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541246"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97523613"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>方法: ホストコントロールのデータを使用してデータソースを更新する
   ホスト コントロールをデータ ソースにバインドし、コントロール内のデータに加えられた変更でデータ ソースを更新することができます。 この処理には主に 2 つの手順があります。
