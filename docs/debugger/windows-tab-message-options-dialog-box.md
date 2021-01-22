@@ -1,5 +1,7 @@
 ---
 title: '[ウィンドウ] タブ ([メッセージ オプション] ダイアログ ボックス) | Microsoft Docs'
+description: '[メッセージ オプション] の [ウィンドウ] タブを使用し、メッセージを表示するウィンドウを指定します。 設定の説明についてはこの記事を参照してください。'
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60201bacd928b4744795e644cb1d9e5de55b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 320a31afcbe4d99518ce92002e8e2733fded9164
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929178"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205412"
 ---
 # <a name="windows-tab-message-options-dialog-box"></a>[ウィンドウ] タブ ([メッセージ オプション] ダイアログ ボックス)
 **[ウィンドウ]** タブを使用して、[[メッセージ ビュー]](../debugger/messages-view.md) に表示されるメッセージのスコープを設定します。 [[メッセージ オプション] ダイアログ ボックス](../debugger/message-options-dialog-box.md)を表示するには、 **[Spy]** メニューから **[ログ メッセージ]** を選択します。
@@ -30,7 +32,7 @@ ms.locfileid: "62929178"
 
  **子ウィンドウ** 選択したウィンドウと、そのすべての子ウィンドウ (入れ子になった子ウィンドウを含む) のメッセージを表示します。
 
- **同じスレッドのウィンドウ**選択したウィンドウと、同じスレッドによって所有される他のすべてのウィンドウのメッセージを表示します。
+ **同じスレッドのウィンドウ** 選択したウィンドウと、同じスレッドによって所有される他のすべてのウィンドウのメッセージを表示します。
 
  **同じプロセスのウィンドウ** 選択したウィンドウと、同じプロセスによって所有される他のすべてのウィンドウのメッセージを表示します。
 

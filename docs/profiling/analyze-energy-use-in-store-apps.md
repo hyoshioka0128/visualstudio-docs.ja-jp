@@ -1,5 +1,7 @@
 ---
 title: UWP アプリでのエネルギー使用の分析 | Microsoft Docs
+description: Visual Studio のエネルギー消費量プロファイラーを使用して、バッテリ駆動のデバイスで実行されている UWP アプリのエネルギーと電力の需要を分析します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075458"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205789"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>UWP アプリでのエネルギー使用の分析
 
@@ -34,9 +36,9 @@ Visual Studio の **エネルギー消費** プロファイラーは、常時ま
 >
 > このモデルを使用すると、さまざまな低電力デバイスにおける適切な見積もりを生成できますが、プロファイルの対象となるデバイスの実際の値とはほとんどの場合、異なります。 見積もりの値は、使用される他のリソースと比べて比較的負荷の大きい、ディスプレイ、CPU、およびネットワーク接続のアクティビティを見つけて、最適化の候補にするために使用します。
 
-エネルギー消費量プロファイラーでは、 *電力* と *エネルギー*を次のように定義しています。
+エネルギー消費量プロファイラーでは、 *電力* と *エネルギー* を次のように定義しています。
 
-- *電力* は、一定の時間内に行われる仕事のために使用される力の割合を測定します。 電気の分野では、電力の標準単位は *ワット*です。ワットは、1 アンペアの電流が 1 ボルトの電位差で流れるときに行われる仕事の割合として定義されています。 **[消費電力]** グラフでは、単位はワットの 1,000 分の 1 であるミリワット **(mW)** で表示されます。
+- *電力* は、一定の時間内に行われる仕事のために使用される力の割合を測定します。 電気の分野では、電力の標準単位は *ワット* です。ワットは、1 アンペアの電流が 1 ボルトの電位差で流れるときに行われる仕事の割合として定義されています。 **[消費電力]** グラフでは、単位はワットの 1,000 分の 1 であるミリワット **(mW)** で表示されます。
 
    電力は割合であるため、方向 (一定時間内で仕事が増加または減少) と速度 (仕事が増加または減少する量) があることに注意してください。
 
@@ -96,7 +98,7 @@ if (performance && performance.mark) {
 2. **[エネルギー消費]** チェック ボックスをオンにし、 **[開始]** をクリックします。
 
     > [!NOTE]
-    > **エネルギー消費**プロファイラーを開始すると、*VsEtwCollector.exe* を実行するアクセス許可を要求する **[ユーザー アカウント制御]** ウィンドウが表示される場合があります。 **[はい]** をクリックします。
+    > **エネルギー消費** プロファイラーを開始すると、*VsEtwCollector.exe* を実行するアクセス許可を要求する **[ユーザー アカウント制御]** ウィンドウが表示される場合があります。 **[はい]** をクリックします。
 
 3. アプリケーションを実行して、データを収集します。
 
@@ -126,7 +128,7 @@ if (performance && performance.mark) {
 
 |Image|説明|
 |-|-|
-|![ステップ 1](../profiling/media/procguid_1.png "ProcGuid_1")|レポート ファイルの名前は、Report*YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|
+|![ステップ 1](../profiling/media/procguid_1.png "ProcGuid_1")|レポート ファイルの名前は、Report *YYYYMMDD-HHMM*.diagsession という形式になります。 レポートを保存する場合は、名前を変更できます。|
 |![ステップ 2](../profiling/media/procguid_2.png "ProcGuid_2")|タイムラインは、プロファイル セッションの長さ、アプリケーションのアクティブ化ライフサイクル イベント、ユーザー マークを示します。|
 |![ステップ 3](../profiling/media/procguid_3.png "ProcGuid_3")|青いバーをドラッグしてタイムラインの領域を選択することにより、レポートをタイムラインの一部だけに制限できます。|
 |![ステップ 4](../profiling/media/procguid_4.png "ProcGuid_4")|**[消費電力]** グラフは、プロファイル セッション中にデバイス リソースによって引き起こされる電源出力の変化を系列別に表示する折れ線グラフです。 エネルギー消費量プロファイラーは、CPU、ネットワーク アクティビティ、および画面表示によって使用された電力を追跡します。|
@@ -154,7 +156,7 @@ if (performance && performance.mark) {
 
    UWP アプリ用の Visual Studio シミュレーターでは、ネットワーク情報 API のデータ接続プロパティをシミュレートすることができます。 「[シミュレーターで UWP アプリを実行する](../debugger/run-windows-store-apps-in-the-simulator.md)」をご覧ください
 
-- **CPU 使用率**ツールは、非効率的な関数のために生じる CPU 負荷の削減に役立ちます。 「[CPU 使用率の分析](../profiling/beginners-guide-to-performance-profiling.md)」をご覧ください。
+- **CPU 使用率** ツールは、非効率的な関数のために生じる CPU 負荷の削減に役立ちます。 「[CPU 使用率の分析](../profiling/beginners-guide-to-performance-profiling.md)」をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

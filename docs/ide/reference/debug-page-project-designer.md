@@ -1,5 +1,7 @@
 ---
 title: '[デバッグ] ページ (プロジェクト デザイナー)'
+description: プロジェクト デザイナーの [デバッグ] ページを使用して、Visual Basic または C# プロジェクトのデバッグ プロパティを設定します。 設定の説明についてはこの記事を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418744"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205776"
 ---
 # <a name="debug-page-project-designer"></a>[デバッグ] ページ (プロジェクト デザイナー)
 
-Visual Basic または C# プロジェクトのデバッグ動作のプロパティを設定するには、**プロジェクト デザイナー**の **[デバッグ]** ページを使用します。
+Visual Basic または C# プロジェクトのデバッグ動作のプロパティを設定するには、**プロジェクト デザイナー** の **[デバッグ]** ページを使用します。
 
-**[デバッグ]** ページにアクセスするには、**ソリューション エクスプローラー**でプロジェクト ノードを選択します。 **[プロジェクト]** メニューの **[\<ProjectName> プロパティ]** を選択します。 **プロジェクト デザイナー**が表示されたら、 **[デバッグ]** タブをクリックします。
+**[デバッグ]** ページにアクセスするには、**ソリューション エクスプローラー** でプロジェクト ノードを選択します。 **[プロジェクト]** メニューの **[\<ProjectName> プロパティ]** を選択します。 **プロジェクト デザイナー** が表示されたら、 **[デバッグ]** タブをクリックします。
 
 > [!NOTE]
 > このトピックは UWP アプリには適用されません。 UWP アプリの[デバッグ セッションの開始 (VB、C#、C++、および XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) に関するページを参照してください。

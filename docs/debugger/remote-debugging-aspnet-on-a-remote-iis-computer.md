@@ -1,6 +1,7 @@
 ---
 title: リモートの IIS コンピューター上で ASP.NET Core をリモート デバッグする | Microsoft Docs
-ms.custom: remotedebugging
+description: Visual Studio リモート デバッガーを使用してリモート インターネット インフォメーション サービス (IIS) コンピューターに配置されている ASP.NET Core アプリケーションをデバッグします。
+ms.custom: remotedebugging, SEO-VS-2020
 ms.date: 05/06/2020
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -10,12 +11,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 389fe1491a92cacecd772244c2a0facd0d12c887
-ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
+ms.openlocfilehash: bc746d5139b897d51d4d038f077906f56aa5d552
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "92298757"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205815"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>リモートの IIS コンピューター上の Visual Studio 2017 で ASP.NET Core をリモート デバッグする
 
@@ -141,7 +142,7 @@ PowerShell、RoboCopy を使用してアプリを IIS にコピーする場合�
 
 1. エクスプローラーを開き、新しいフォルダー **C:\Publish** を作成します。後でここに ASP.NET Core プロジェクトを配置します。
 
-2. **インターネット インフォメーション サービス (IIS) マネージャー**をまだ開いていない場合は開きます (サーバー マネージャーの左側のペインで、 **[IIS]** を選択します。 サーバーを右クリックして **[インターネット インフォメーション サービス (IIS) マネージャー]** を選択します。)
+2. **インターネット インフォメーション サービス (IIS) マネージャー** をまだ開いていない場合は開きます (サーバー マネージャーの左側のペインで、 **[IIS]** を選択します。 サーバーを右クリックして **[インターネット インフォメーション サービス (IIS) マネージャー]** を選択します。)
 
 3. 左側のペインの **[接続]** で、 **[サイト]** に移動します。
 
@@ -209,7 +210,7 @@ Visual Studio のバージョンと一致するバージョンのリモート �
 
 6. プロセス名の最初の文字を入力すると、アプリをすばやく見つけることができます。
 
-    * IIS で[インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
+    * IIS で [インプロセス ホスティング モデル](/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-3.1&preserve-view=true#hosting-models)を使用している場合は、正しい **w3wp.exe** プロセスを選択します。 .NET Core 3 以降では、これが既定値です。
 
     * それ以外の場合は、**dotnet.exe** プロセスを選択します (これはアウト プロセス ホスティング モデルです)。
 

@@ -1,5 +1,7 @@
 ---
 title: 階層相互作用データの収集 | Microsoft Docs
+description: ADO.NET サービスを通じてデータベースと通信する多階層アプリケーションの階層プロファイリング情報を収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 768cb173bca578c440e3209fe7b7a1df60fab1be
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331598"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533681"
 ---
 # <a name="collect-tier-interaction-data"></a>階層相互作用データを収集する
 
@@ -32,7 +34,7 @@ ms.locfileid: "85331598"
 
 **Windows 8 と Windows Server 2012**
 
-Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで階層相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。 UWP アプリの階層相互作用データを収集することはできません。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。 階層相互作用データは、サポートされている他のバージョンの Windows で、すべてのプロファイル方法に含めることができます。
+Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで階層相互作用データを収集するには、インストルメンテーション メソッドを使用する必要があります。 UWP アプリの階層相互作用データを収集することはできません。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。 階層相互作用データは、サポートされている他のバージョンの Windows で、すべてのプロファイル方法に含めることができます。
 
 **パフォーマンス ウィザード**
 
@@ -42,10 +44,10 @@ Windows 8 デスクトップ アプリおよび Windows Server 2012 アプリで
 
 1. パフォーマンス エクスプローラーで、コンテキスト メニューの **[プロパティ]** をクリックします。
 
-2. **[階層の相互作用]** ページを選択し、 **[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。
+2. **[階層の相互作用]** ページを選択し、**[階層の相互作用のプロファイルを有効にする]** チェック ボックスをオンにします。
 
-3. パフォーマンス エクスプローラーで、 **[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。
+3. パフォーマンス エクスプローラーで、**[ターゲット]** ノードを選択し、プロファイリングするプロジェクト、実行可能ファイル、または Web サイトを指定します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [階層の相互作用ビュー](../profiling/tier-interactions-view.md)

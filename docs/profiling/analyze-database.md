@@ -1,5 +1,7 @@
 ---
 title: .NET Core プロジェクトのデータベース使用状況を分析する |Microsoft Docs
+description: データベース ツールを使用し、アプリのデータベース クエリを記録し、分析し、パフォーマンスを改善する手段を見つけます。
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a8518e3f43bec3a9d5f696a07613dee84829dbc2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352317"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205464"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>データベース ツールを使用してデータベースのパフォーマンスを分析する
 
@@ -38,7 +40,7 @@ ms.locfileid: "91352317"
 
 1. **[開始]** ボタンを選択してツールを実行します。
 
-1. ツールの実行が開始されたら、アプリ内でプロファイリングするシナリオを完了します。 次に、 **[収集の停止]** を選択するかアプリを閉じてデータを確認します。
+1. ツールの実行が開始されたら、アプリ内でプロファイリングするシナリオを検討します。 次に、 **[収集の停止]** を選択するかアプリを閉じてデータを確認します。
 
 1. 収集が停止すると、プロファイル セッション中に実行されたクエリのテーブルが表示されます。
 

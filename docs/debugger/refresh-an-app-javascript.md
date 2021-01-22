@@ -1,5 +1,7 @@
 ---
 title: UWP アプリを更新する | Microsoft Docs
+description: デバッグ中にコードを変更し、その後、Visual Studio で JavaScript を利用してユニバーサル Windows プラットフォーム (UWP) アプリを更新します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: dd38a758a69b2e19079a2bc2511e7edf5cbfb0ab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bce07008d285c6446d3fa8c79ce45c222c34bae
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348159"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204905"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Visual Studio で UWP アプリを更新する
 

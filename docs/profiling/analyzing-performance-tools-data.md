@@ -1,5 +1,7 @@
 ---
 title: パフォーマンス データを分析する | Microsoft Docs
+description: Visual Studio Profiling プロファイリング ツールのパフォーマンス レポートとパフォーマンス ビューでパフォーマンス問題を分析する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 90752fd8e34769530f1b95dd439a46c71fe985a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7f11873a3e101c0c37d327d6869ee63fe48f5f42
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779832"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205347"
 ---
 # <a name="analyze-performance-tools-data"></a>パフォーマンス ツール データの分析
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのパフォーマンス レポートを使用すると、アプリケーション パフォーマンスの問題を表示して分析することができます。 このセクションでは、パフォーマンス レポートとパフォーマンス データを確認するために使用できるビューの概要を示します。
@@ -40,7 +42,7 @@ ms.locfileid: "74779832"
 
 - [パフォーマンス ツール データの保存とエクスポート](../profiling/saving-and-exporting-performance-tools-data.md)
 
-## <a name="see-also"></a>参照
-- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>関連項目
+- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)
 - [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)
