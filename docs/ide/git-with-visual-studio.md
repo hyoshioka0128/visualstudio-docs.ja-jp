@@ -2,18 +2,18 @@
 title: Visual Studio での Git エクスペリエンス
 titleSuffix: ''
 description: Visual Studio 2019 での新しい統合 Git エクスペリエンスが、生産性の向上にどのように役立つかについて学習します。
-ms.date: 11/16/2020
+ms.date: 01/15/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524093"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597411"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio での Git エクスペリエンス
 
@@ -92,7 +92,7 @@ Git により、作業中のリポジトリ内のファイルの変更が追跡�
 
 変更をステージする準備ができたら、ステージングする各ファイルの [ **+** ] (プラス) ボタンをクリックするか、ファイルを右クリックして **[ステージ]** を選択します。 **[変更]** セクションの上部にある、すべての [ **+** ] (プラス) ボタンを使用して、変更したすべてのファイルをワンクリックでステージすることもできます。
 
-変更をステージすると、Visual Studio によって **[ステージされている変更]** セクションが作成されます。 **[ステージされている変更]** セクションの変更のみが次のコミットに追加されます。これを行うには、 **[ステージ済みをコミット]** を選択します。 **[–]** (マイナス) ボタンをクリックして、変更をステージ解除することもできます。 このアクションの同等のコマンドは、`git commit -m "Your commit message"` です。
+変更をステージすると、Visual Studio によって **[ステージされている変更]** セクションが作成されます。 **[ステージされている変更]** セクションの変更のみが次のコミットに追加されます。これを行うには、 **[ステージ済みをコミット]** を選択します。 このアクションの同等のコマンドは、`git commit -m "Your commit message"` です。 **[–]** (マイナス) ボタンをクリックして、変更をステージング解除することもできます。 このアクションの同等のコマンドは、1 つのファイルをステージ解除する `git reset <file_path>`、またはディレクトリ内のすべてのファイルをステージング解除する `git reset <directory_path>` です。
 
 ステージ領域をスキップして、変更されたファイルをステージしないように選択することもできます。 この場合、Visual Studio を使用すると、変更をステージせずに直接コミットできます。 コミット メッセージを入力し、 **[すべてコミット]** を選択します。 このアクションの同等のコマンドは、`git commit -a` です。
 

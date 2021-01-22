@@ -1,5 +1,7 @@
 ---
 title: ウィンドウ ビュー | Microsoft Docs
+description: ウィンドウ ビューには、あらゆるウィンドウとコントロールがツリー形式で表示されます。 このツリーを、関心のあるウィンドウに関する情報を取得するための出発点として利用します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900861"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205373"
 ---
 # <a name="windows-view"></a>ウィンドウ ビュー
 最初に Spy++ を開いたとき、ウィンドウ ビューには、システム内のすべてのウィンドウとコントロールのツリーが表示されます。 ウィンドウ ハンドルとクラス名が表示されます。 現在のデスクトップ ウィンドウがツリーの一番上にあります。 その他すべてのウィンドウはデスクトップの子であり、標準のウィンドウ階層に従って一覧表示されます。 兄弟ウィンドウは、その親の下でインデントされ、展開可能な一覧として表示されます。
@@ -38,7 +40,7 @@ ms.locfileid: "62900861"
  [方法: [ウィンドウ プロパティ] の表示](../debugger/how-to-display-window-properties.md) [ウィンドウ プロパティ] ダイアログ ボックスを開くためのプロシージャ。
 
 ## <a name="related-sections"></a>関連項目
- [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
  [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 

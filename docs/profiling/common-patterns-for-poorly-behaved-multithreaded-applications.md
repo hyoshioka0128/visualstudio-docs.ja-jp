@@ -1,6 +1,6 @@
 ---
 title: 適切に動作しないマルチスレッド アプリの一般的なパターン
-description: Visual Studio コンカレンシー ビジュアライザー ツールに含まれている、適切に動作しないマルチスレッド アプリケーションの一般的なパターンについて説明します。
+description: コンカレンシー ビジュアライザーには、マルチスレッド アプリケーションのグラフと、適切に動作しないアプリケーションの一般的なパターンのギャラリーが用意されています。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e14640da4d66134ca961607f66f6a355f6b9d9
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: f6d5139a0327af05f67c2a7429b1055fa80c2175
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815790"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533551"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>適切に動作しないマルチスレッド アプリケーションの一般的なパターン
 

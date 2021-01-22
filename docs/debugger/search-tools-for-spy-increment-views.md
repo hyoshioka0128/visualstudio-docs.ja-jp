@@ -1,5 +1,7 @@
 ---
 title: Spy++ ビュー用の検索ツール | Microsoft Docs
+description: Spy++ ビュー ウィンドウに表示されるデータを指定するダイアログ ボックスを参照してください。 ダイアログ ボックスには、[ウィンドウ検索]、[ウィンドウ検索]、[メッセージ検索]、[プロセス検索]、[スレッド検索] があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df3b27164eab0b78cdce72a8f938cb6e9743bcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e302e9d5e9cc90a03afa5b7f0f6cc6e800287c7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902649"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204847"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ ビュー用の検索ツール
 これらのダイアログ ボックスを使用して、Spy++ ビュー ウィンドウに表示されるデータを指定します。
@@ -33,7 +35,7 @@ ms.locfileid: "62902649"
  [[スレッド検索] ダイアログ ボックス](../debugger/thread-search-dialog-box.md) スレッド ビューで特定のスレッドのノードを検索するために使用されます。
 
 ## <a name="related-sections"></a>関連項目
- [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、スレッドの Spy++ ツリー ビューについて説明します。
+ [Spy++ ビュー](../debugger/spy-increment-views.md) ウィンドウ、メッセージ、プロセス、およびスレッドの Spy++ ツリー ビューについて説明します。
 
  [Spy++ の使用](../debugger/using-spy-increment.md) Spy++ ツールを紹介し、その使用方法について説明します。
 

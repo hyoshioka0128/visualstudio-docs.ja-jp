@@ -2,17 +2,17 @@
 title: Visual Studio サブスクリプションの CODE Magazine 特典 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 12/02/2020
+ms.date: 01/19/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる CODE Magazine 特典について説明します。
-ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538112"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597396"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに含まれる CODE Magazine 特典
 
@@ -49,15 +49,16 @@ CODE Magazine の購読を設定するプロセスは簡単です。  以下の�
 ## <a name="eligibility"></a>特典を受ける条件
 | サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  いいえ          |
+| Visual Studio Enterprise (Standard)   | VL、Azure、リテール| 使用可能       |  いいえ          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL| 使用可能       |  いいえ          |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用可能                                                            |  いいえ          |
 | Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用可能                                                            |  いいえ          |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  いいえ          |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  いいえ          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
+| Visual Studio Enterprise NFR<sup>1</sup> | NFR | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine Premium が含まれます。除外:Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services、Imagine。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

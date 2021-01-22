@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d58b745b35870d287b6e81aa0a14fcdaeac921
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 0dc266b43d9a4634fe8cfbc05a3a070ae72cdaa9
+ms.sourcegitcommit: 1ceb58e3a1afa80a3211911ada4e5adaa1b1d439
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598524"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192864"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -44,7 +44,7 @@ ms.locfileid: "95598524"
 |**/InIsolation**|分離プロセスでテストを実行します。<br />この分離により、テストでエラーが発生しても *vstest.console.exe* プロセスが停止することは少なくなりますが、テストの実行速度は低下する可能性があります。|
 |**/UseVsixExtensions**|このオプションでは、テストの実行の際に、*vstest.console.exe* プロセスでインストール済みの VSIX 拡張機能 (ある場合) を使用するかスキップするかを指定します。<br />このオプションは非推奨です。 Visual Studio の次のメジャー リリース以降、このオプションは削除される可能性があります。 NuGet パッケージとして利用可能な拡張機能の使用に移行してください。<br />例 : `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*パス*]**|*vstest.console.exe* プロセスで、テストの実行の際に指定されたパス (ある場合) からカスタム テスト アダプターを使用するように強制します。<br />例 : `/TestAdapterPath:[pathToCustomAdapters]`|
-|**/Platform:[*プラットフォームの種類*]**|テストの実行対象とするプラットフォーム アーキテクチャです。<br />有効な値は x86、x64、ARM です。|
+|**/Platform:[*プラットフォームの種類*]**|現在のランタイムから決定されたプラットフォームではなく、指定されたプラットフォームを強制的に使用します。 このオプションは Windows 上で x86 および x64 プラットフォームのみを強制できます。 ARM オプションは破損しており、結果的に大半のシステムで x64 になります。<br />ARM64 などの有効な値の一覧に含まれていないランタイムで実行する場合は、このオプションを指定しないでください。<br />有効な値は x86、x64、ARM です。<br /> 
 |**/Framework: [*フレームワークのバージョン*]**|テストの実行に使用する対象の .NET バージョンを指定します。<br />`Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1` のような値があります。<br />TargetFrameworkAttribute は、ご利用のアセンブリからこのオプションを自動的に検出するために使用されます。その属性が存在しない場合、既定値は `Framework40` になります。 ご利用の .NET Core アセンブリから [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) を削除する場合は、このオプションを明示的に指定する必要があります。<br />ターゲット フレームワークが **Framework35** として指定されている場合、テストは CLR 4.0 の "互換性モード" で実行されます。<br />例 : `/Framework:framework40`|
 |**/TestCaseFilter:[*式*]**|指定した式に一致するテストを実行します。<br /><Expression>\> は <property\>=<value\>[\|<Expression\>] の形式です。<br />例 : `/TestCaseFilter:"Priority=1"`<br />例 : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />**/TestCaseFilter** コマンドライン オプションを、 **/Tests** コマンドライン オプションと一緒に使用することはできません。 <br />式の作成と使用については、「[TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)」(TestCase フィルター) を参照してください。|
 |**/?**|使用情報を表示します。|

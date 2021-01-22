@@ -1,6 +1,7 @@
 ---
 title: リモート デバッガーのポートの割り当て | Microsoft Docs
-ms.custom: ''
+description: 32 ビット オペレーティング システム、64 ビット オペレーティング システム、Azure 上の Visual Studio リモート デバッガーのポート割り当てについて理解します。 検出ポートについて説明します。
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713504"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204827"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 Visual Studio リモート デバッガーは、アプリケーションまたはバック グラウンド サービスとして実行できます。 アプリケーションとして実行される際には、次のように既定で割り当てられているポートを使用します。

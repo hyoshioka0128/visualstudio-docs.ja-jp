@@ -1,5 +1,7 @@
 ---
 title: リモート デバッグのエラーとトラブルシューティング | Microsoft Docs
+description: Visual Studio で一般的なリモート デバッグ エラーへのリンクを表示します。 管理者としてリモート デバッガーを実行する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316138"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205659"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>リモート デバッグ エラーとトラブルシューティング
 
@@ -47,7 +49,7 @@ ms.locfileid: "89316138"
 
 リモート デバッガーをサービスとして実行するときは、いくつかの理由から管理者として実行することをお勧めします。
 
-- リモート デバッガー サービスでは管理者からの接続のみが許可されるので、管理者として実行することによって発生する新しいセキュリティ リスクは**ありません**。
+- リモート デバッガー サービスでは管理者からの接続のみが許可されるので、管理者として実行することによって発生する新しいセキュリティ リスクは **ありません**。
 
 - プロセスをデバッグするために、リモート デバッガー自体より多くの権限を Visual Studio ユーザーが持つことにより発生するエラーを防ぐことができます。
 
@@ -55,7 +57,7 @@ ms.locfileid: "89316138"
 
 リモート デバッガーを管理者として実行しなくてもデバッグはできますが、これを正しく動作させるにはいくつかの要件があり、多くの場合、より高度なサービス構成手順が必要になります。
 
-- リモート コンピューターで使用しているアカウントには、**サービスとしてログオン**特権が必要です。 [接続できない場合](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)のエラー記事の "サービスとしてログオンの追加" に関する手順を参照してください。
+- リモート コンピューターで使用しているアカウントには、**サービスとしてログオン** 特権が必要です。 [接続できない場合](error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)のエラー記事の "サービスとしてログオンの追加" に関する手順を参照してください。
 
 - アカウントには、ターゲット プロセスをデバッグするための権限が必要です。 これらの権限を取得するには、デバッグ対象のプロセスと同じアカウントでリモート デバッガーを実行する必要があります。 (代わりの簡単な方法は、管理者としてサービスを実行することです)。 
 
@@ -71,7 +73,7 @@ ms.locfileid: "89316138"
 
 - 別のプロセスを起動しようとしていて、起動するプロセスが管理者である場合。
 
-プロセスを起動し、起動するプロセスが管理者である必要が**ない**場合は、管理者として実行する必要は**ありません**。
+プロセスを起動し、起動するプロセスが管理者である必要が **ない** 場合は、管理者として実行する必要は **ありません**。
 
 ## <a name="see-also"></a>関連項目
 - [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,5 +1,6 @@
 ---
 title: .NET メモリの割り当てと有効期間データの収集
+description: .NET アプリケーションでメモリ関連のパフォーマンスの問題を検出するには、プロファイル ツールを使用してメモリ割り当てとオブジェクト有効期間データを収集します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809428"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533798"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>.NET Framework メモリの割り当てと有効期間データの収集
 
@@ -45,7 +46,7 @@ Visual Studio プロファイリング ツールは、.NET Framework メモリ�
 
 ## <a name="to-collect-net-memory-data"></a>.NET メモリ データを収集するには
 
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
+1. **パフォーマンス エクスプローラー** で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
 
 2. *[パフォーマンス セッション]* **[プロパティ ページ]** ダイアログ ボックスで **[全般]** タブをクリックし、 **[.NET オブジェクトの割り当て情報を収集]** チェック ボックスをオンにします。
 
@@ -55,11 +56,11 @@ Visual Studio プロファイリング ツールは、.NET Framework メモリ�
 
 追加のオプションを、パフォーマンス セッションの [ _パフォーマンス セッション]_ **[プロパティ ページ]** ダイアログ ボックスで指定できます。 このダイアログ ボックスを開くには:
 
-- **パフォーマンス エクスプローラー**で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックします。
+- **パフォーマンス エクスプローラー** で、パフォーマンス セッション名を右クリックして **[プロパティ]** をクリックします。
 
 次の表の各タスクでは、.NET メモリ データを収集する際に、 _[パフォーマンス セッション]_ **[プロパティ ページ]** ダイアログ ボックスで指定できるオプションについて説明しています。
 
-|タスク|関連するコンテンツ|
+|タスク|関連コンテンツ|
 |----------|---------------------|
 |**[全般]** ページで、生成されるプロファイリング データ (.vsp) ファイルの名前付けの詳細を指定します。|- [.NET メモリの割り当てと有効期間データの収集](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [方法: パフォーマンス データ ファイル名のオプションを設定する](../profiling/how-to-set-performance-data-file-name-options.md)|
 |コード ソリューション内に複数の .exe プロジェクトがある場合は、 **[起動]** ページで、開始するアプリケーションを選択します。|- [階層相互作用データを収集する](../profiling/collecting-tier-interaction-data.md)|

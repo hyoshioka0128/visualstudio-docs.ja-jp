@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: cc5a1a7b72dcbdba8b874958bbef47ac4b98e936
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756644"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240323"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>初めて Visual Studio のテスト ツールを検討する
 
 Visual Studio のテスト ツールを使用することで、チームと共に高水準の優れたコードを開発し、維持できます。
 
 > [!NOTE]
-> 単体テストは、Visual Studio のすべてのエディションで使用できます。 ライブ単体テスト、IntelliTest、コード化された UI テストなど、その他のテスト ツールは Visual Studio Enterprise エディションでのみ使用できます。 エディションの詳細については、[Visual Studio IDE の比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
+> 単体テストは、Visual Studio のすべてのエディションで使用できます。 その他のテスト ツール (Live Unit Testing や IntelliTest など) は Visual Studio Enterprise エディションでのみ使用できます。 エディションの詳細については、[Visual Studio IDE の比較](https://visualstudio.microsoft.com/vs/compare/)に関するページを参照してください。
 
 ## <a name="test-explorer"></a>テスト エクスプローラー
 

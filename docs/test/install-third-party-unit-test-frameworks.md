@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329979"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240310"
 ---
 # <a name="install-unit-test-frameworks"></a>単体テスト フレームワークのインストール
 
@@ -23,7 +23,7 @@ Visual Studio テスト エクスプローラーでは、エクスプローラ�
 Visual Studio ソリューションには異なるフレームワークを使用する単体テスト プロジェクトと、異なる言語を対象とした単体テスト プロジェクトを含めることができます。
 
 ::: moniker range=">=vs-2019"
-.NET の場合、[MSTest、NUnit、xUnit](getting-started-with-unit-testing.md) は Visual Studio で提供されているテスト フレームワークであり、既定でインストールされます。
+.NET の場合、[MSTest、NUnit、xUnit](getting-started-with-unit-testing.md) は Visual Studio で提供されているテスト フレームワークであり、既定でインストールされます。 C++ の場合、テスト フレームワークの別のセット (CTest など) が用意されています。
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) は Visual Studio で提供されているテスト フレームワークであり、既定でインストールされます。

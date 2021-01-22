@@ -1,6 +1,7 @@
 ---
 title: VB デバッグ構成のプロジェクト設定 | Microsoft Docs
-ms.custom: seodec18
+description: Visual Studio の [プロパティ ページ] ウィンドウで Visual Basic デバッグ構成のプロパティ設定を変更する方法について説明します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 277d78b225afae13d73e091c1228e181df30e532
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730611"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205594"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Visual Basic デバッグ構成のプロジェクト設定
 「[デバッグ構成とリリース構成](../debugger/how-to-set-debug-and-release-configurations.md)」で説明されているように、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] のデバッグ構成に対するプロジェクト設定は **[プロパティ ページ]** ウィンドウで変更できます。 次の表は、 **[プロパティ ページ]** ウィンドウのデバッガー関連の設定の場所を示しています。

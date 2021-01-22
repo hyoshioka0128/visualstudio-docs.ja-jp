@@ -1,5 +1,7 @@
 ---
 title: '[ウィンドウ] タブ ([ウィンドウ プロパティ] ダイアログ ボックス) | Microsoft Docs'
+description: 選択したウィンドウに関連するウィンドウに関する情報を [ウィンドウ プロパティ] の [ウィンドウ] タブを使用して表示します。 設定については、こちらの記事を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1015741b2a1e7ba1608eea7f198b726e808f7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900784"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205399"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>[ウィンドウ] タブ ([ウィンドウ プロパティ] ダイアログ ボックス)
 選択したウィンドウに関連するウィンドウに関する情報を表示するには、 **[ウィンドウ]** タブを使用します。 [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md)を表示するには、[[ウィンドウ ビュー]](../debugger/windows-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のウィンドウ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

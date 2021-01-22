@@ -1,5 +1,7 @@
 ---
 title: 擬似変数 | Microsoft Docs
+description: Visual Studio デバッガーの擬似変数について確認します。 擬似変数は、変数ウィンドウまたは [クイック ウォッチ] ダイアログ ボックスに特定のデータを表示するときに使用される用語です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776085"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205529"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio デバッガーの擬似変数
 擬似変数は、変数ウィンドウまたは **[クイック ウォッチ]** ダイアログ ボックスに特定の情報を表示するときに使用される用語です。 通常の変数を入力するときと同様に、擬似変数を入力できます。 ただし、擬似変数は変数ではなく、プログラム内の変数名に対応しません。

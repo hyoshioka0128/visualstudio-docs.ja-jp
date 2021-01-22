@@ -1,6 +1,7 @@
 ---
 title: XAML アプリでリソース消費量を分析する
-ms.custom: seodec18
+description: アプリケーション タイムライン プロファイラーを使用して、XAML アプリケーションにおけるパフォーマンスの問題を検出します。 さまざまなシナリオで、さまざまなタスクに費やした時間を分析することができます。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -9,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 8fc482e10ae1ca08230feb38eb2997d0c4dcab00
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038349"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205737"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>リソース消費量と UI スレッド アクティビティを分析する (XAML)
 
 **アプリケーション タイムライン** プロファイラーを使用すると、XAML アプリケーションにおけるアプリケーションの相互作用に関連するパフォーマンスの問題を検出および修復できます。 このツールはアプリケーションのリソース消費を詳細に表示できるので、XAML アプリケーションのパフォーマンス改善に役立ちます。 アプリケーションが UI フレームの準備 (レイアウトとレンダリング) やネットワークとディスクの要求の処理を実行することで、およびアプリケーションの起動、ページの読み込み、ウィンドウのサイズ変更などのシナリオにおいて使用した時間を分析することができます。
 
-**アプリケーション タイムライン**は、 **[デバッグ]**  >  **[パフォーマンス プロファイラー]** コマンドから開始できるツールの 1 つです。
+**アプリケーション タイムライン** は、 **[デバッグ]**  >  **[パフォーマンス プロファイラー]** コマンドから開始できるツールの 1 つです。
 
 このツールは、Visual Studio 2013 の診断ツールセットの一部であった **[XAML UI の応答性]** ツールから置き換わるものです。
 

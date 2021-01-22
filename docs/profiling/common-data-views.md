@@ -1,5 +1,7 @@
 ---
 title: 共通のデータ ビュー | Microsoft Docs
+description: すべてのプロファイル方法に共通のプロファイラー データ ファイルのビューとレポートに関するリファレンス情報については、このセクションを参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777830"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533538"
 ---
 # <a name="common-data-views"></a>共通のデータ ビュー
 ここでは、すべてのプロファイル方法に共通のプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。

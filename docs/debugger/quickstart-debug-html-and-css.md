@@ -1,5 +1,7 @@
 ---
 title: UWP アプリの HTML と CSS をデバッグする | Microsoft Docs
+description: Visual Studio でユニバーサル Windows プラットフォーム (UWP) アプリの HTML と CSS をデバッグする方法について説明します。 UWP アプリの場合、JavaScript デバッグ機能がサポートされています。
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211090"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205477"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Visual Studio で UWP アプリの HTML と CSS をデバッグする
 
@@ -149,7 +151,7 @@ DOM Explorer を使用すると次のことができます。
 
     ![デバッグ ターゲット リストを選択する](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. **[デバッグ]**  > **Start [デバッグ]ging**の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。
+8. **[デバッグ]**  > **Start [デバッグ]ging** の順にクリックするか、F5 キーを押して、デバッグ モードでアプリを実行します。
 
     これによりアプリは実行されますが、スタイリングにはいくつかバグがあるため、画面にはほとんど何も表示されません。 最初の `FlipView` のイメージが、画面の中央の小さい四角形に表示されます。
 

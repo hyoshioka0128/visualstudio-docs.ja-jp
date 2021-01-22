@@ -1,5 +1,7 @@
 ---
 title: リモート マシンの UWP アプリをデバッグする | Microsoft Docs
+description: Visual Studio を使用し、離れた場所にある別のコンピューターまたはデバイス上のユニバーサル Windows プラットフォーム (UWP) アプリを実行、デバッグ、プロファイリング、テストする方法を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 10/05/2018
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c8e8305cb454bfc9f0fb0be4b9964ac1a7e4fe96
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: a28769237f0c1b0078e9c9c117695e68e5b521ac
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "92298709"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204957"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>リモート マシンの UWP アプリを Visual Studio からデバッグする
 
@@ -36,7 +38,7 @@ Visual Studio を使用して、別のコンピューターまたはデバイス
   - Windows Mobile 10 デバイスでは、リモート ツールは必要なく、サポートされていません。
 
 ## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a> リモート デバッグ用に Visual Studio プロジェクトを構成する
-<a name="BKMK_DirectConnect"></a> プロジェクトの**プロパティ**を使用して、接続先のリモート デバイスを指定します。 設定は、プログラミング言語によって異なります。
+<a name="BKMK_DirectConnect"></a> プロジェクトの **プロパティ** を使用して、接続先のリモート デバイスを指定します。 設定は、プログラミング言語によって異なります。
 
 > [!CAUTION]
 > Windows 10 リモート接続の場合、既定では、プロパティ ページの **[認証の種類]** に **[ユニバーサル (暗号化されていないプロトコル)]** が設定されます。 リモート デバッガーに接続するには、場合によって **[認証]** を設定する必要があります。 **[ユニバーサル (暗号化されていないプロトコル)]** および **[認証なし]** プロトコルにはネットワーク セキュリティがないため、開発用コンピューターとリモート マシンの間で受け渡されるデータは脆弱です。 これらの認証の種類は、悪意のあるトラフィックや敵対的なトラフィックのリスクがないことが確実な信頼されるネットワークに対してのみ選択してください。
@@ -45,7 +47,7 @@ Visual Studio を使用して、別のコンピューターまたはデバイス
 
 ### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> リモート デバッグ用に C# または Visual Basic プロジェクトを構成する
 
-1. Visual Studio の**ソリューション エクスプローラー**で C# または Visual Basic プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** を押すか、右クリックして **[プロパティ]** を選択します。
+1. Visual Studio の **ソリューション エクスプローラー** で C# または Visual Basic プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** を押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[デバッグ]** タブを選択します。
 
@@ -57,7 +59,7 @@ Visual Studio を使用して、別のコンピューターまたはデバイス
 
 ### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> リモートデバッグ用に C++ プロジェクトを構成する
 
-1. Visual Studio の**ソリューション エクスプローラー**で C++ プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** を押すか、右クリックして **[プロパティ]** を選択します。
+1. Visual Studio の **ソリューション エクスプローラー** で C++ プロジェクトを選択し、 **[プロパティ]** アイコンを選択して、**Alt**+**Enter** を押すか、右クリックして **[プロパティ]** を選択します。
 
 1. **[デバッグ]** タブを選択します。
 
@@ -74,7 +76,7 @@ Visual Studio を使用して、別のコンピューターまたはデバイス
  ![[リモート接続] ダイアログ ボックス](../debugger/media/vsrun_selectremotedebuggerdlg.png "[リモート接続] ダイアログ")
 
 >[!TIP]
->名前を指定してリモート デバイスに接続できない場合は、IP アドレスを使用してみてください。 IP アドレスを確認するには、リモート デバイスのコマンド ウィンドウに「**ipconfig**」と入力します。 IP アドレスは **IPv4 アドレス**として表示されます。
+>名前を指定してリモート デバイスに接続できない場合は、IP アドレスを使用してみてください。 IP アドレスを確認するには、リモート デバイスのコマンド ウィンドウに「**ipconfig**」と入力します。 IP アドレスは **IPv4 アドレス** として表示されます。
 
 ## <a name="download-and-install-the-remote-tools-for-visual-studio"></a><a name="BKMK_download"></a> Remote Tools for Visual Studio をダウンロードしてインストールする
 
