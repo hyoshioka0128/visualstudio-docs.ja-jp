@@ -1,6 +1,6 @@
 ---
-title: 自分の明細を表示するにはどうすればいいですか?
-description: 自分の Visual Studio サブスクリプションの明細を表示するにはどうすればいいですか?
+title: 自分の請求書を表示する方法
+description: 自分の Visual Studio サブスクリプションに対する請求書を表示する方法について説明します。
 ms.topic: include
 ms.assetid: 576ca2d3-aba4-4191-8639-64ea9f309536
 author: caitybuschlen
@@ -10,27 +10,27 @@ user.type: subscriber
 tags: billing
 subscription.type: vl, cloud, retail, partner
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: fa95610b98d8731b486392d927452b8d42576f28
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 53630743cfdd1c81a37102f237ab15ee33df632a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147512"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723188"
 ---
-## <a name="how-do-i-view-my-bill"></a>自分の明細を表示するにはどうすればいいですか?
+## <a name="how-do-i-view-my-invoice"></a>自分の請求書を表示する方法
 
-Azure の明細には、Azure サービスといくつかの種類の Visual Studio サブスクリプションの支払いを含めることができます。
+Azure の請求書には、Azure サービスといくつかの種類の Visual Studio サブスクリプションの支払いが含まれる場合があります。
 
-## <a name="to-view-your-bill"></a>明細を表示するには
+## <a name="to-view-your-invoice"></a>請求書を表示するには
 1. [Azure portal](https://portal.azure.com) にサインインします。  
 2. メニューの [Cost Management + Billing] ブレードをクリックして、概要、サブスクリプションの一覧、および請求書を確認します。  
 
 ## <a name="visual-studio-subscriptions"></a>Visual Studio サブスクリプション 
 
-月単位 (および 2018 年 12 月より前に購入した場合は年単位) のサブスクリプションは、Azure から請求されます。その場合、同じ Azure の請求先セクションに明細が表示されます。  
+月単位 (および 2018 年 12 月より前に購入した場合は年単位) のサブスクリプションは Azure から請求され、請求書は同じ Azure の請求先セクションにあります。  
 
 ## <a name="understanding-spending-limit"></a>使用制限について 
-Azure の使用制限機能を使用すると、サービスが停止する使用制限を設定できます。 既定では、これは Azure Dev/Test の個別クレジットのベネフィットに既に適用されています。 Azure の使用制限の詳細については、 [こちら](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit)を参照してください。 
+Azure の使用制限機能を使用すると、サービスが停止する使用制限を設定できます。 既定では、これは Azure Dev/Test の個別クレジットのベネフィットに既に適用されています。  [Azure の使用制限の詳細を参照してください](https://docs.microsoft.com/azure/cost-management-billing/manage/spending-limit)。 
 
 従量課金制に切り替えられた Azure サブスクリプションの支出上限を削除した場合、Visual Studio サブスクライバーのみが利用できるエンタープライズ Dev/Test 価格を利用できます。また、月単位のクレジットでカバーされる開発およびテストで使用されていないサービスを利用する場合は、サービスに対して月額料金が請求されます。  
 
