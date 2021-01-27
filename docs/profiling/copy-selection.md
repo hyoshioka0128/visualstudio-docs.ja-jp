@@ -1,5 +1,7 @@
 ---
 title: 選択範囲のコピー | Microsoft Docs
+description: レポート タブから呼び出し履歴全体をコピーするには、[コピー] をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: da16256579f414d33434295fc355f368597d868d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553228"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720866"
 ---
 # <a name="copy-selection"></a>選択範囲のコピー
-レポート タブから呼び出し履歴全体をコピーするには、 **[コピー]** をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。
+レポート タブから呼び出し履歴全体をコピーするには、**[コピー]** をクリックします。 その後、貼り付けをサポートする任意のプログラムに呼び出し履歴を貼り付けることができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
