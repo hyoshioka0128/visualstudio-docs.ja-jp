@@ -2,7 +2,7 @@
 title: Visual Studio Tools for Unity の使用を開始する | Microsoft Docs
 description: Visual Studio for Unity の開発をインストールしてセットアップする方法について説明します。
 ms.custom: ''
-ms.date: 07/13/2020
+ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: how-to
@@ -13,17 +13,17 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
+ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903754"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912569"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio と Unity を使ってみる
 
 > [!NOTE]
-> このガイドでは、unity Hub プログラムを使用して Unity が既にインストールされていることを前提としています。 Unity を初めて使用する場合は、unity の学習と、 [unity でのはじめにに関するチュートリアル](https://learn.unity.com/course/getting-started-with-unity) を最初に実行することをお勧めします。
+> このガイドでは、unity Hub プログラムを使用して Unity が既にインストールされていることを前提としています。 Unity [を初めて](https://learn.unity.com/pathway/unity-essentials) 使用する場合は、Unity の学習方法をお勧めします。
 
 ## <a name="install-unity-support-for-visual-studio"></a>Unity support for Visual Studio のインストール
 
