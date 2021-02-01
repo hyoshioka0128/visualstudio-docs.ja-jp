@@ -1,5 +1,7 @@
 ---
 title: パフォーマンス データ ファイルを比較する | Microsoft Docs
+description: 2 つの異なるプロファイラー データ ファイル (.vsp または .vsps) の結果を比較し、相違点、パフォーマンスの低下、およびパフォーマンスの向上を確認する方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f42ceaa251b59eae426bfbe52c29b21ae5075077
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851243"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800455"
 ---
 # <a name="how-to-compare-performance-data-files"></a>方法: パフォーマンス データ ファイルを比較する
 比較 ("Diff") のレポートまたはビューを作成して、2 つの異なるプロファイラー データ ファイル (.*vsp* または .*vsps*) の結果を比較することができます。 この比較では、相違点、パフォーマンスの低下、および、1 つのプロファイリング セッションから他のプロファイリング セッションのあいだに起きた改善点を示します。
@@ -32,7 +34,7 @@ ms.locfileid: "90851243"
 
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>パフォーマンス エクスプローラーで、プロジェクトの比較ファイル ビューを作成するには
 
-1. **パフォーマンス エクスプローラー**の **[レポート]** で、比較の初期値として使用する .*vsp* または .*vsps* レポート ファイルを選択します。
+1. **パフォーマンス エクスプローラー** の **[レポート]** で、比較の初期値として使用する .*vsp* または .*vsps* レポート ファイルを選択します。
 
 2. 比較する .*vsp* または .*vsps* レポート ファイルを選択します。
 

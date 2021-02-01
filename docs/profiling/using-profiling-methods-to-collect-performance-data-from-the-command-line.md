@@ -1,5 +1,6 @@
 ---
 title: コマンド ラインのプロファイル方法を使ってパフォーマンス データを取得する
+description: プロファイル対象のアプリケーションの種類などの要因によって、選択する Visual Studio プロファイル ツールのコマンド ライン ツールやオプションがどのように変わるかについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779975"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723245"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>各種のプロファイル方法を使用したコマンド ラインからのパフォーマンス データの収集
 使用する [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールおよびオプションは、プロファイル対象のアプリケーションの種類、使用するプロファイル方法、ターゲット アプリケーションが、ネイティブ コードと .NET Framework コードのどちらで記述されているかなどの要因によって決まります。
@@ -74,7 +75,7 @@ ms.locfileid: "74779975"
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>プロファイリングの実行に階層の相互作用データを追加する
  プロファイリングの実行に階層の相互作用データを追加するには、コマンド ライン プロファイリング ツールによる特定の手順が必要です。 「[階層相互作用データの収集](../profiling/adding-tier-interaction-data-from-the-command-line.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [サービスのプロファイリング](../profiling/command-line-profiling-of-services.md)

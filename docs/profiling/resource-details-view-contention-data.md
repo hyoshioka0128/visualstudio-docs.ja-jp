@@ -1,5 +1,6 @@
 ---
 title: リソースの詳細ビュー - 競合データ | Microsoft Docs
+description: リソースの詳細ビューを使用して、選択したリソースに対する競合によって発生したブロック イベントのタイムライン グラフを表示する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 45babe50e794e0831fd0e93048b32feaf18be87a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771604"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720359"
 ---
 # <a name="resource-details-view---contention-data"></a>リソースの詳細ビュー - 競合データ
 リソースの詳細ビューには、選択したリソースに対する競合によって発生したブロック イベントが、タイムライン グラフで表示されます。 ブロック イベントは、リソースに対するアクセスを別のスレッドがロックしているためにスレッドが実行を中断されたときに発生します。
@@ -37,9 +38,9 @@ ms.locfileid: "74771604"
 
 - 次のいずれかの操作を実行します。
 
-  - 前のズーム レベルに戻るには、 **[縮小]** をクリックします。
+  - 前のズーム レベルに戻るには、**[縮小]** をクリックします。
 
-  - タイムライン全体をビューに表示するには、 **[ズームのリセット]** をクリックします。
+  - タイムライン全体をビューに表示するには、**[ズームのリセット]** をクリックします。
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには
 
@@ -53,7 +54,7 @@ ms.locfileid: "74771604"
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>リソースの競合イベントの呼び出しツリーを表示するには
 
-- タイムライン グラフで、 **[合計]** をクリックします。
+- タイムライン グラフで、**[合計]** をクリックします。
 
      リソースの競合ビューが表示されます。 詳細については、「[リソースの競合ビュー](../profiling/resource-contentions-view-contention-data.md)」をご覧ください。
 

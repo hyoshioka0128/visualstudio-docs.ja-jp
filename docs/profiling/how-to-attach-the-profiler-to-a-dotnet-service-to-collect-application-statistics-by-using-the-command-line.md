@@ -1,6 +1,7 @@
 ---
 title: プロファイラーを .NET サービスにアタッチし、アプリの統計情報を収集する
-ms.custom: seodec18
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、プロファイラーを .NET Framework サービスにアタッチし、サンプリング メソッドを使用してパフォーマンス統計情報を取得します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac59e0e08894ca143df6a68c49e5f5f8b24ebc50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c91fef6cc98ae270420354a1287c05e78b38ac3e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328710"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801113"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを .NET サービスにアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、プロファイラーを .NET Framework サービスにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。
@@ -94,7 +95,7 @@ ms.locfileid: "85328710"
 ## <a name="control-data-collection"></a>データ収集の制御
  サービスの実行中は、*VSPerfCmd.exe* オプションを使用して、プロファイラー データ ファイルへのデータ書き込みを開始および停止できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
+#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
 - 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 
@@ -102,7 +103,7 @@ ms.locfileid: "85328710"
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|すべてのプロセスのデータ収集を開始 ( **/globalon**) または停止 ( **/globaloff**) します。|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|プロセス ID (`PID`) で指定されたプロセスのデータ コレクションを開始 ( **/processon**) または停止 ( **/processoff**) します。|
-    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** は、プロセス ID またはプロセス名で指定したプロセスのデータ収集を開始します。 **/detach** は、指定されたプロセスのデータ収集を停止します。特定のプロセスが指定されていない場合は、すべてのプロセスのデータ収集を停止します。|
+    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** は、プロセス ID またはプロセス名で指定したプロセスのデータ収集を開始します。 **/detach** は、指定されたプロセスのデータ コレクションを停止します。特定のプロセスが指定されていない場合は、すべてのプロセスのデータ コレクションを停止します。|
 
 ## <a name="end-the-profiling-session"></a>プロファイル セッションの終了
  プロファイル セッションを終了するには、プロファイラーをプロファイリング対象のすべてのプロセスからデタッチし、プロファイラーを明示的に終了する必要があります。 サンプリング メソッドでプロファイルを実行したアプリケーションからプロファイラーをデタッチするには、アプリケーションを終了するか、**VSPerfCmd /detach** オプションを呼び出します。 次に、**VSPerfCmd /shutdown** オプションを呼び出して、プロファイラーをオフにし、プロファイル データ ファイルを閉じます。

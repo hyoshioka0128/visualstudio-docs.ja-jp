@@ -1,6 +1,7 @@
 ---
 title: VSInstr の警告 | Microsoft Docs
 ms.date: 11/04/2016
+description: VSInstr.exe ツールによって発行される警告と、NOWARN オプションに警告番号を指定することで、警告を非表示にする方法について学習します。
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330542"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723128"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr の警告
 次の表に、*VSInstr.exe* ツールで発行される警告をリストします。 NOWARN オプションに警告番号を指定することで、警告を非表示にできます。

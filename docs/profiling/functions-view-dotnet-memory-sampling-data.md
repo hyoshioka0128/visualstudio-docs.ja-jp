@@ -1,5 +1,7 @@
 ---
 title: 関数ビュー - .NET メモリ サンプリング データ | Microsoft Docs
+description: サンプリング メソッドを使用して収集された .NET メモリの割り当てプロファイル データの関数ビューに関する情報を取得します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +13,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2fe4f011a88ab4cf293626fe01f708b3cf5bc68f
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780040"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801525"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>関数ビュー - .NET メモリ サンプリング データ
 サンプリング メソッドを使用して収集された .NET メモリの割り当てプロファイル データの関数ビューには、プロファイル実行中にメモリを割り当てた関数が一覧表示され、割り当てのサイズと数が報告されます。
 
-|Column|[説明]|
+|列|説明|
 |------------|-----------------|
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|
 |**プロセス名**|プロセスの名前です。|
@@ -40,7 +42,7 @@ ms.locfileid: "74780040"
 |**割り当てバイト数 (関数のみ)**|この関数によって割り当てられたメモリのバイト数。その子関数によるものは含まれません。|
 |**割り当てバイト数 % (関数のみ)**|プロファイル実行で割り当てられたすべてのメモリのバイト数に対する、この関数の排他バイトであったバイト数の割合。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [関数 ビュー](../profiling/functions-view-sampling-data.md)
 - [関数 ビュー](../profiling/functions-view-instrumentation-data.md)

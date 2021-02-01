@@ -1,5 +1,7 @@
 ---
 title: ディスク操作レポート (スレッド ビュー) | Microsoft Docs
+description: ディスク操作レポートには、ディスク チャネルにおけるディスク I/O 操作が表示されます。 各ディスク アクセスについて報告される情報を確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970071"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686533"
 ---
 # <a name="disk-operations-report-threads-view"></a>ディスク操作レポート (スレッド ビュー)
 ディスク操作レポートには、ディスク チャネルにおけるディスク I/O 操作が表示されます。
@@ -42,5 +44,5 @@ ms.locfileid: "62970071"
 
 - 書き込み待機時間 (ミリ秒)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

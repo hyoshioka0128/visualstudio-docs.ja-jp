@@ -1,5 +1,6 @@
 ---
 title: プロファイラー サンプリング メソッドのデータ ビュー | Microsoft Docs
+description: サンプリング メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772163"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719436"
 ---
 # <a name="profiler-sampling-method-data-views"></a>プロファイラー サンプリング メソッドのデータ ビュー
 ここでは、サンプリング メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。
 
 > [!NOTE]
-> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 
 ## <a name="in-this-section"></a>このセクションの内容
 - [概要 ビュー](../profiling/summary-view-sampling-data.md)
@@ -76,5 +77,5 @@ ms.locfileid: "74772163"
 
  .NET メモリ データを含むプロファイラー データ ファイルのビューとレポートに関するリファレンス情報。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [サンプリング データ値について](../profiling/understanding-sampling-data-values.md)

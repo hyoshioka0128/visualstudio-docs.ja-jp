@@ -1,5 +1,6 @@
 ---
 title: PF | Microsoft Docs
+description: VSPerfCmd.exe の PF オプションを使用して、サンプリングするプロファイル イベントをページ フォールトに設定し、サンプリング間隔のページ フォールト数を変更する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778415"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719553"
 ---
 # <a name="pf"></a>PF
-*VSPerfCmd.exe* の **PF** オプションは、サンプリングするプロファイル イベントをページ フォールトに設定し、必要に応じて、サンプリング間隔のページ フォールト数を既定の 10 から変更します。
+*VSPerfCmd.exe の* **PF** オプションは、サンプリングするプロファイル イベントをページ フォールトに設定し、必要に応じて、サンプリング間隔のページ フォールト数を既定の 10 から変更します。
 
 > [!NOTE]
 > **PF** を 64 ビット システムで使用することはできません。
@@ -53,7 +54,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] サンプリング イベントを、`Name` で指定された CPU パフォーマンス カウンターに設定し、サプリング間隔を `Reload` に設定します。
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}] .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
 
 ## <a name="example"></a>例
  この例では、プロファイリング サンプル イベントをページ フォールトに設定し、サンプリング間隔を 20 のページ フォールトに設定する方法を示します。

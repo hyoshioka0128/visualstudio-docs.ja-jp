@@ -1,5 +1,6 @@
 ---
 title: コンカレンシー ビジュアライザーのコマンドライン ユーティリティ
+description: コマンドライン ユーティリティ CVCollectionCmd.exe を使用し、コンカレンシー ビジュアライザーで表示できるトレースを収集します。 Visual Studio をインストールする必要はありません。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 6970c582b6f3ac254f5bbb60f0324128dac63cfe
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808904"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721048"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)
 コンカレンシー ビジュアライザーのコマンド ライン ユーティリティ (*CVCollectionCmd.exe*) を使用して、コマンド ラインからトレースを収集することで、Visual Studio 用のコンカレンシー ビジュアライザーでトレースを表示できます。 これらのツールは、Visual Studio がインストールされていないコンピューターで使用できます。

@@ -1,5 +1,6 @@
 ---
 title: Launch | Microsoft Docs
+description: Launch オプションを指定すると、サンプリング メソッドを使用するプロファイラーが起動し、指定されたアプリケーションも起動します。そのしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bec7ebd26cc0522852276627d2c59161b51c809b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778610"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721425"
 ---
 # <a name="launch"></a>Launch
 **Launch** オプションは、サンプリング メソッドを使用するプロファイラーを起動し、指定されたアプリケーションも起動します。

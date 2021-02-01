@@ -1,5 +1,7 @@
 ---
 title: コンカレンシー ビジュアライザー | Microsoft Docs
+description: マルチスレッド アプリのスレッドのタイミングを示すグラフを見る目的でコンカレンシー ビジュアライザーを使用します。パフォーマンス問題の解決に役立ちます。
+ms.custom: SEO-VS-2020
 ms.date: 07/11/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 5e6f36568568a59980316f3070f902027898e39e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037342"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720957"
 ---
 # <a name="concurrency-visualizer"></a>コンカレンシー ビジュアライザー
 
@@ -43,7 +45,7 @@ ms.locfileid: "90037342"
 
 ## <a name="related-topics"></a>関連トピック
 
-|タイトル|[説明]|
+|Title|説明|
 |-----------|-----------------|
 |[使用状況ビュー](../profiling/utilization-view.md)|すべてのプロセッサのシステム アクティビティを表示して分析する方法について説明します。|
 |[スレッド ビュー](../profiling/threads-view-parallel-performance.md)|プログラム内のスレッド間の対話を分析する方法について説明します。|
@@ -54,7 +56,7 @@ ms.locfileid: "90037342"
 |[コンカレンシー ビジュアライザー SDK](../profiling/concurrency-visualizer-sdk.md)|ソース コードをインストルメント化してコンカレンシー ビジュアライザーに追加情報を表示する方法について説明します。|
 |[コンカレンシー ビジュアライザー コマンドライン ユーティリティ (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|コンカレンシー ビジュアライザーのコマンド ライン ユーティリティ (CVCollectionCmd.exe) を使用して、Visual Studio がインストールされていないコンピューター上でトレースを収集および処理する方法について説明します。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio のプロファイル](../profiling/index.yml)
 - [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

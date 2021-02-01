@@ -1,5 +1,6 @@
 ---
 title: リソース競合データ値について | Microsoft Docs
+description: あるアプリケーションで競合するスレッドに対して、共有リソースにアクセスするときに待機を強制するとき、リソース競合プロファイルによって詳細情報が収集されるしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a724c360641926bcb64552f6f26e92d3c524011
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779988"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722205"
 ---
 # <a name="understand-resource-contention-data-values"></a>リソース競合データ値について
 
@@ -28,7 +29,7 @@ ms.locfileid: "74779988"
 
 - 排他値は、関数を待機状態にした競合の数、および関数の本体のコードによって発生した競合の数のみを示します。 子関数によって発生した競合は含まれません。 関数の排他時間には、関数本体のステートメントによって発生した待機時間のみが含まれます。
 
-リソース競合レポート ビューには、一定期間内の個々の競合イベントを表示するタイムライン グラフも含まれ、特定のイベントを発生させたコール スタックも表示します。 詳細については、次のいずれかのトピックを参照してください。
+リソース競合レポート ビューには、一定期間内の個々の競合イベントを表示するタイムライン グラフも含まれ、特定のイベントを発生させたコール スタックも表示します。 詳細については、次のトピックを参照してください。
 
 - [スレッドの詳細ビュー](../profiling/thread-details-view-contention-data.md)
 

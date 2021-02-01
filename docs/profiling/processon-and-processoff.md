@@ -1,5 +1,6 @@
 ---
 title: ProcessOn と ProcessOff | Microsoft Docs
+description: VSPerfCmd.exe の ProcessOff サブコマンドと ProcessOn サブコマンドでは、コマンド ライン プロファイル セッションの指定されたプロセスのプロファイリングを一時停止および再開する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778389"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719449"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn と ProcessOff
 VSPerfCmd.exe の **ProcessOff** サブコマンドと **ProcessOn** サブコマンドでは、コマンド ライン プロファイル セッションの指定されたプロセスのプロファイリングを一時停止および再開します。 **ProcessOff** がプロセスのプロファイリングを停止し、**ProcessOn** がプロセスのプロファイリングを開始します。
@@ -42,7 +43,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` 開始または停止するプロセスの整数の ID。 プロセス ID は、Windows タスク マネージャーの **[プロセス]** タブにリストされます。
 
 ## <a name="required-subcommands"></a>必須のサブコマンド
- None
+ なし
 
 ## <a name="valid-subcommands"></a>有効なサブコマンド
  **ProcessOn** と **ProcessOff** は、次のサブコマンドも含むコマンド ラインで指定できます。

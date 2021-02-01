@@ -1,5 +1,6 @@
 ---
 title: User (VSPerfCmd) | Microsoft Docs
+description: プロファイリングされるプロセスを所有するアカウントのドメインとユーザー名を、User オプションによって指定する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbb5490ff9281a7379d74209da15a3a39595bc09
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779962"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721165"
 ---
 # <a name="user-vsperfcmd"></a>User (VSPerfCmd)
 **User** オプションは、プロファイリングされるプロセスを所有するアカウントのドメインとユーザー名を指定します。 このオプションは、ログオンしているユーザーとは別のユーザーがプロセスを実行している場合にのみ指定する必要があります。 プロセスの所有者は、Windows タスク マネージャーの **[プロセス]** タブの [ユーザー名] 列に表示されます。

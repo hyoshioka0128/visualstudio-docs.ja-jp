@@ -1,5 +1,7 @@
 ---
 title: CrossSession | Microsoft Docs
+description: VSPerfCmd.exe CrossSession オプションを使用して、プロファイラーで任意のコンソール セッションからデータを収集できるようにする方法について学習します。 Start オプションも指定する必要があります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 019a7b74deb70176f214aefdcec4db86cec86829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a20ada8a7ca8d0ca8c34c2c6d730c37cdca09b7
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331165"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686212"
 ---
 # <a name="crosssession"></a>CrossSession
 *VSPerfCmd.exe* **CrossSession** オプションを使用すると、プロファイラーはあらゆるコンソール セッションからデータを収集できます。 **CrossSession** オプションは、**Start** オプションと共に使用する必要があります。
@@ -28,7 +30,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>パラメーター
- None
+ なし
 
 ## <a name="valid-options"></a>有効なオプション
  別のセッションでプロファイリングを有効にするには、**CrossSession** オプションは **Start** オプションと共に指定する必要があります。 **CrossSession** は、後続の **VSPerfCmd Attach** コマンドと **Detach** コマンドでも指定する必要があります。
@@ -37,7 +39,7 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 
  **Attach:** _PID_[ **,** _PID_] 指定されたプロセスのプロファイリングを開始します。
 
- **Detach**[ **:** _PID_[,_PID_]] 指定されたプロセスのプロファイリングを停止します。
+ **Detach**[**:**_PID_[,_PID_]] 指定されたプロセスのプロファイリングを停止します。
 
 ## <a name="example"></a>例
  この例では、別のコンソール セッションで開始されたアプリケーションにアタッチするために **CrossSession** オプションが使用されます。

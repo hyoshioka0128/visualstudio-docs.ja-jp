@@ -1,5 +1,7 @@
 ---
 title: CvCreateMarkerSeriesWithCodePageA 関数 | Microsoft Docs
+description: コンカレンシー ビジュアライザー SDK 関数 CvCreateMarkerSeriesWithCodePageA (C ライブラリ) のリファレンス情報を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e17083c48db1ba1aa6b7ff45ee467ac97900e101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69f4f19df03c4c2f6bb21a5e2262a4a1495adab8
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332434"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686156"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 関数
 指定されたプロバイダーとコード ページに対してマーカー系列を作成します。 この関数を利用し、マーカー API ANSI 関数で書き出されたテキストに対してコード ページを明示的に指定できます。 コード ページを設定することは、ロケールや言語が異なる別のコンピューターでトレースを記録し、解析するときに役立ちます。 既定では、GetACP() 関数により返されるコード ページが使用されます。

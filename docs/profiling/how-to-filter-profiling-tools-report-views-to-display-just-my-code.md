@@ -1,5 +1,6 @@
 ---
 title: プロファイルのレポート ビューをフィルター処理してマイ コードのみを表示する
+description: Visual Studio の [マイ コードのみ] オプションを使用して、実装したコードのみを表示するようにパフォーマンス レポートを制限します ([デバッグ] メニューから [オプション] を選択します)。
 ms.custom: SEO-VS-2020
 ms.date: 02/15/2018
 ms.topic: how-to
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ae4f0c6ce0d357d21e4e3acce0559b27e6c7161
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 983bba2f5b802addc1706b7e7d293173e3aaca31
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809376"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801226"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>方法: プロファイル ツールのレポート ビューをフィルター処理してマイ コードのみを表示する
 

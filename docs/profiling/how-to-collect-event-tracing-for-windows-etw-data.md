@@ -1,5 +1,7 @@
 ---
 title: ETW (Event Tracing for Windows) データを収集する | Microsoft Docs
+description: Event Trace for Windows (ETW) を使用して、アプリケーションでパフォーマンスの問題が発生している場所を特定する方法について学習します。 VSPerfReport.exe を使用してデータを表示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 853e27c51b626ef63a7e0924d4c0164a6386cda2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851269"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801551"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>方法: ETW (Event Tracing for Windows) データを収集する
 
@@ -30,7 +32,7 @@ Event Tracing for Windows (ETW) は、プロファイラー ログ カーネル�
 
 ## <a name="to-enable-event-trace-providers"></a>イベント トレース プロバイダーを有効にするには
 
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
+1. **パフォーマンス エクスプローラー** で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
 
 2. **[プロパティ ページ]** で、 **[Windows イベント]** プロパティをクリックします。
 

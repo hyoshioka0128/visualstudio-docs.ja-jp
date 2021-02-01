@@ -1,5 +1,6 @@
 ---
 title: スレッドの詳細ビュー - 競合データ | Microsoft Docs
+description: スレッドの詳細ビューには、どのようにして、選択したプロファイリング実行スレッド内のブロック イベントがタイムライン グラフで表示されるかについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 679fd9fd039fa903f5df5a479fa4f0e119bb7a9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d1cf1d9d7afeef8962026739116f75d4289d6283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778168"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718799"
 ---
 # <a name="thread-details-view---contention-data"></a>スレッドの詳細ビュー - 競合データ
 スレッドの詳細ビューには、リソースに対する競合によって発生した、選択したプロファイリング実行スレッド内のブロック イベントがタイムライン グラフで表示されます。 ブロック イベントは、あるリソースに対するアクセスを別のスレッドがロックしているために、スレッドが実行を中断されたときに発生します。
@@ -35,9 +36,9 @@ ms.locfileid: "74778168"
 
 #### <a name="to-zoom-out-on-a-timeline"></a>タイムラインを縮小するには
 
-- 前のズーム レベルに戻るには、 **[縮小]** をクリックします。
+- 前のズーム レベルに戻るには、**[縮小]** をクリックします。
 
-- タイムライン全体をビューに表示するには、 **[ズーム リセット]** をクリックします。
+- タイムライン全体をビューに表示するには、**[ズーム リセット]** をクリックします。
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>イベントの呼び出し履歴を表示するには
 
@@ -57,6 +58,6 @@ ms.locfileid: "74778168"
 
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>プロセス ウィンドウにスレッド競合データを表示するには
 
-- タイムライン グラフで、 **[合計]** をクリックします。
+- タイムライン グラフで、**[合計]** をクリックします。
 
      選択したスレッドを表示する[プロセス ビュー](../profiling/process-view-contention-data.md)が表示されます。

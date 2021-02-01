@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス規則リファレンス | Microsoft Docs
+description: プロファイル ツールのパフォーマンス規則を使用して、アプリケーションのパフォーマンスに関する追加の警告や情報を提供する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280226aaba40de42052d72e58928a53af53f631
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: ca20a6a1ad687fde432d0b748aa8b87c823a1da2
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85543638"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723284"
 ---
 # <a name="performance-rules-reference"></a>パフォーマンス規則リファレンス
 プロファイリング ツールのパフォーマンス規則は、アプリケーションのパフォーマンスに関する追加の警告や情報を提供します。 パフォーマンス規則は、Windows やプロセッサのパフォーマンス カウンターなどのソースから収集されたプロファイリング実行のデータを分析します。 規則のメッセージは、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 統合開発環境のエラー出力ウィンドウに表示されます。 メッセージは、次のいずれかの規則レベルとして一覧表示されます。

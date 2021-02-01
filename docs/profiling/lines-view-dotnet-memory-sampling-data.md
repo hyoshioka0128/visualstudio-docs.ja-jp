@@ -1,5 +1,6 @@
 ---
 title: 行ビュー - .NET メモリ サンプリング データ | Microsoft Docs
+description: .NET メモリの割り当てプロファイル データ用の行ビューには、プロファイリングの実行中にメモリを割り当てたステートメントが一覧表示されます。そのしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0033b3d50531bebe087f43930324db0431dee03f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774081"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721334"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>行ビュー - .NET メモリ サンプリング データ
 サンプリング メソッドを使用する .NET メモリの割り当てプロファイル データ用の行ビューには、プロファイリングの実行中にメモリを割り当てたステートメントが一覧表示されます。 列には、割り当てのサイズと数も含まれています。
@@ -25,7 +26,7 @@ ms.locfileid: "74774081"
 
  ステートメントは、次の項目によって識別されます。
 
-- 関数のステートメントを含むソース ファイル。
+- function ステートメントを含むソース ファイル。
 
 - ステートメントを含む関数。
 
@@ -41,7 +42,7 @@ ms.locfileid: "74774081"
 
   定義上、ステートメントは他の関数を呼び出しません。 そのため、排他的な値のみが一覧表示されます。
 
-|Column|[説明]|
+|列|説明|
 |------------|-----------------|
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|
 |**プロセス名**|プロセスの名前です。|
@@ -61,5 +62,5 @@ ms.locfileid: "74774081"
 |**割り当てバイト数 (関数のみ)**|この行で割り当てられた、プロファイリング実行で割り当てられたすべてのメモリ バイト数の割合。|
 |**割り当てバイト数 % (関数のみ)**|この行で割り当てられた、プロファイリング実行で割り当てられたすべてのメモリ バイト数の割合。|
 
-## <a name="see-also"></a>参照
-- [行ビュー](../profiling/lines-view-sampling-data.md)
+## <a name="see-also"></a>関連項目
+- [行 ビュー](../profiling/lines-view-sampling-data.md)

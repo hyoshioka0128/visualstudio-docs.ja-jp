@@ -1,5 +1,7 @@
 ---
 title: レポート ビューでノイズ除去を設定する | Microsoft Docs
+description: いずれも既定で有効になっているトリミングおよび折りたたみを使用し、ノイズを除去し、ご自分のレポートでパフォーマンスの問題がより目立つようにできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851230"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800427"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>方法: レポート ビューでノイズ除去を設定する
 パフォーマンス レポートは、コール ツリー ビューや 割り当て ビューに表示されるデータの数を制限して、ノイズを除去するように構成できます。 ノイズ除去を行うことで、パフォーマンスの問題を発見しやすくなります。 これは、パフォーマンス レポートの分析に役立ちます。

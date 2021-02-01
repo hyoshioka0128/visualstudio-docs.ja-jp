@@ -1,5 +1,6 @@
 ---
 title: チャネルの管理 | Microsoft Docs
+description: コンカレンシー ビジュアライザーのスレッド ビューで特定のパターンを調べることができるよう、プロセスのチャネルを整理する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,25 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64779243"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721269"
 ---
 # <a name="manage-channels"></a>チャネルの管理
-コンカレンシー ビジュアライザーの**スレッド ビュー**では、プロセスのチャネルを整理して、特定のパターンを調べることができます。 チャネルを並べ替えしたり、上下に移動したり、非表示/表示を切り替えることができます。
+コンカレンシー ビジュアライザーの **スレッド ビュー** では、プロセスのチャネルを整理して、特定のパターンを調べることができます。 チャネルを並べ替えしたり、上下に移動したり、非表示/表示を切り替えることができます。
 
-## <a name="sort-by"></a>並べ替え
+## <a name="sort-by"></a>並べ替え条件
  [並べ替え] コントロールを使用して、現在のズーム レベルに基づいて、異なる基準でスレッドを並べ替えることができます。 これは、特定のパターンを探しているときに特に便利です。 次のような条件で並べ替えることができます。
 
 |条件|定義|
 |--------------|----------------|
-|Start Time|開始時刻でスレッドを並べ替えます。 これが既定の並べ替え順序です。|
-|終了時刻|終了時刻でスレッドを並べ替えます。|
+|開始時刻|開始時刻でスレッドを並べ替えます。 これが既定の並べ替え順序です。|
+|[終了時刻]|終了時刻でスレッドを並べ替えます。|
 |実行|実行に費やした時間の割合でスレッドを並べ替えます。|
-|Synchronization|同期に費やした時間の割合でスレッドを並べ替えます。|
+|同期|同期に費やした時間の割合でスレッドを並べ替えます。|
 |I/O|入出力 (データの読み取りと書き込み) に費やした時間の割合でスレッドを並べ替えます。|
 |Sleep|スリープに費やした時間の割合でスレッドを並べ替えます。|
 |Paging|ページングに費やした時間の割合でスレッドを並べ替えます。|
@@ -58,7 +59,7 @@ ms.locfileid: "64779243"
 ## <a name="group-markers-by-thread"></a>スレッド別にマーカーをグループ化
  トレースにマーカー イベントが含まれている場合は、このコマンドを使用して、それらのマーカー イベントを生成したスレッドの下にマーカーのチャネルをグループ化することができます。  ディスクのチャネルはチャネルの一覧の先頭に移動し、GPU チャネルは、一番下に移動します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)
 - [測定モード オン/オフ](../profiling/measure-mode-on-off.md)
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

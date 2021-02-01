@@ -1,5 +1,7 @@
 ---
 title: コンカレンシー ビジュアライザー SDK | Microsoft Docs
+description: コンカレンシー ビジュアライザー SDK を使用し、コードをインストルメント化してマーカーを表示する方法について学習します。 マーカーとは、イベントに印を付けるためにコンカレンシー ビジュアライザーに表示されるアイコンです。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1732d62fa20e170825cba5e133a9a44f11a59a34
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037355"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720983"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK
-コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを*マーカー*と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
+コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを *マーカー* と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。
 
-## <a name="properties"></a>プロパティ
+## <a name="properties"></a>Properties
  フラグ、スパン、およびメッセージにはそれぞれ、カテゴリおよび重要度という 2 つのプロパティがあります。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、これらのプロパティを使用して、表示されるマーカーのセットをフィルター処理することができます。 また、これらのプロパティはマーカーの視覚表示に影響します。 たとえば、フラグのサイズを使用して重要度を表します。 また、色を使用してカテゴリを示します。
 
 ## <a name="basic-usage"></a>基本的な使用方法
@@ -31,9 +33,9 @@ ms.locfileid: "90037355"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>C# または Visual Basic のプロジェクトに SDK のサポートを追加するには
 
-1. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[プロジェクトへの SDK の追加]** の順に選択します。
+1. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。
 
-2. SDK にアクセスするプロジェクトを選択し、 **[選択したプロジェクトに SDK を追加]** ボタンを選択します。
+2. SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。
 
 3. imports ステートメントまたは using ステートメントをコードに追加します。
 
@@ -50,9 +52,9 @@ ms.locfileid: "90037355"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>C++ または C のプロジェクトに SDK のサポートを追加するには
 
-1. メニュー バーで、 **[分析]** 、 **[コンカレンシー ビジュアライザー]** 、 **[プロジェクトへの SDK の追加]** の順に選択します。
+1. メニュー バーで、**[分析]**、**[コンカレンシー ビジュアライザー]**、**[プロジェクトへの SDK の追加]** の順に選択します。
 
-2. SDK にアクセスするプロジェクトを選択し、 **[選択したプロジェクトに SDK を追加]** ボタンを選択します。
+2. SDK にアクセスするプロジェクトを選択し、**[選択したプロジェクトに SDK を追加]** ボタンを選択します。
 
 3. C++ の場合は、`cvmarkersobj.h` を含めます。 C の場合は、`cvmarkers.h` を含めます。
 
@@ -78,13 +80,13 @@ ms.locfileid: "90037355"
 
 1. [MarkerWriter](/previous-versions/hh694138(v=vs.140)) オブジェクトを作成します。  コンストラクターは GUID を受け取ります。
 
-2. プロバイダーを登録するには、コンカレンシー ビジュアライザーの [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、 **[新しいプロバイダーを追加します]** ボタンを選択します。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
+2. プロバイダーを登録するには、コンカレンシー ビジュアライザーの [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 [[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスで、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>C# または C プロジェクトで新しいマーカー プロバイダーを使用するには
 
 1. `CvInitProvider` 関数を使用して、PCV_PROVIDER を初期化します。  コンストラクターは GUID* と PCV_PROVIDER\* を受け取ります。
 
-2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、 **[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
+2. プロバイダーを登録するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを開きます。  **[マーカー]** タブを選択してから、**[新しいプロバイダーを追加します]** ボタンを選択します。 ダイアログ ボックスに、プロバイダーの作成に使用された GUID と、プロバイダーの説明を入力します。
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>C# または Visual Basic プロジェクトでマーカー シリーズを使用するには
 

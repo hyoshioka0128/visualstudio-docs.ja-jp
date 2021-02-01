@@ -1,5 +1,6 @@
 ---
 title: 開始するバイナリを指定する | Microsoft Docs
+description: DLL などのバイナリをプロファイルする目的で、[<Target> プロパティ ページ] ダイアログ ボックスに情報を入力する必要がある場合の方法について学習します。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,18 +15,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3aec9448c6493350683dc9f0bec0cc2d60fa82
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 715c92a26ae33a4e909ec737c866be1cdc15251e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851334"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721841"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>方法: 開始するバイナリを指定する
 
 DLL などのバイナリをプロファイルするには、 **[\<Target> プロパティ ページ]** ダイアログ ボックスに情報を入力する必要があります。 この情報は、DLL プロジェクトの呼び出し元アプリケーションの場所を示します。
 
-1. **パフォーマンス エクスプローラー**で、対象のバイナリを右クリックし、 **[プロパティ]** をクリックします。
+1. **パフォーマンス エクスプローラー** で、対象のバイナリを右クリックし、 **[プロパティ]** をクリックします。
 
 2. **[プロパティ ページ]** ダイアログ ボックスで、 **[起動]** プロパティをクリックします。
 

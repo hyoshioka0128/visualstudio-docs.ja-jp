@@ -1,5 +1,7 @@
 ---
 title: GPU アクティビティ グラフ | Microsoft Docs
+description: コンカレンシー ビジュアライザーで、システム上の DirectX アクティビティのレベルを表示する、GPU アクティビティ グラフについて理解します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5734b9eb1b4307f7c32dcb8a170f7c6c571f46ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: bccf4869a1197306017b443b00670cc123300a48
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969567"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801328"
 ---
 # <a name="gpu-activity-graph"></a>GPU アクティビティ グラフ
 コンカレンシー ビジュアライザーの GPU アクティビティ グラフには、一定期間使用した DirectX エンジン数によってシステム上の DirectX アクティビティのレベルが測定され、表示されます。  グラフには、具体的にどのエンジンが使用されたかは表示されません。  GPU の作業を処理しているエンジンは使用中と見なされます。
@@ -27,5 +29,5 @@ ms.locfileid: "62969567"
 
  白はシステム上で利用可能な未使用の DirectX エンジンを示します。 さらに用途が見つかればプロセスで使用できるエンジンです。 一部のエンジンは、特定のタスクにしか使用できません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [使用状況ビュー](../profiling/utilization-view.md)

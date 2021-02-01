@@ -1,5 +1,6 @@
 ---
 title: プロファイルのコマンド ライン - 基本的なレポートの作成
+description: .vsp または .vsps プロファイル データ ファイルから .csv (コンマ区切り値) レポートを作成する、VSPerfReport.exe の Summary および CallTrace オプションについて学習します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808852"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718942"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>コマンド ラインから基本的なプロファイリング レポートを作成する
 この記事では、.*vsp* プロファイル データ ファイルまたは .*vsps* プロファイル データ ファイルからコンマ区切り値 (.*csv*) レポートを生成する基本的な VSPerfReport コマンドについて説明します。 すべてのレポート オプションの詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。

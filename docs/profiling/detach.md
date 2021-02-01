@@ -1,5 +1,7 @@
 ---
 title: Detach | Microsoft Docs
+description: VSPerfCmd.exe の Detach オプションを使用すると、指定したプロセスから、または何も指定しない場合はすべてのプロセスから、プロファイラーが切断されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3251836959f41a4349851716f58f917943f10b09
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45225e4478b0a1a3cddc7f74ae223c437bf4226e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330248"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686598"
 ---
 # <a name="detach"></a>Detach
 VSPerfCmd.exe **Detach** オプションは、何も指定されていない場合、プロファイラーを指定のプロセスまたはすべてのプロセスから切断します。 サンプリング方法を利用し、プロファイリングを初期化しておく必要があります。
 
- **Launch** オプションまたは **Attach** オプションを指定して開始したプロファイリングは、**Detach** で切断できます。 後続の **Attach** コマンドでプロファイラーを再接続できます。
+ **Launch** オプションまたは **Attach** オプションを指定して開始したプロファイリングは、**Detach** で切断できます。 その後、**Attach** コマンドを使用すればプロファイラーを再接続できます。
 
  **Detach** では、プロファイリング データ ファイルは閉じられません。 プロファイリングを終了し、データ ファイルを閉じるには、**Shutdown** オプションを使用します。
 

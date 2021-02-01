@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス レポート ビュー | Microsoft Docs
+description: Visual Studio 統合開発環境 (IDE) でプロファイル データ ファイルのビューがどのように表示されるかについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 611c31027bd725d8a1a98e6cb2e76d544743c811
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772289"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722751"
 ---
 # <a name="performance-report-views"></a>パフォーマンス レポートのビュー
 このセクションでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのレポートおよびビューに関するリファレンス情報を提供します。 プロファイリング データ ファイルのビューは、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 統合開発環境 (IDE) で表示されます。 レポートは、[VSPerfReport](../profiling/vsperfreport.md) コマンド ライン ツールによって生成されます。
@@ -52,5 +53,5 @@ ms.locfileid: "74772289"
 
  階層相互作用データを含むプロファイリング データ ファイルの相互作用のビューとレポートに関するリファレンス情報。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [パフォーマンス ツール データの分析](../profiling/analyzing-performance-tools-data.md)

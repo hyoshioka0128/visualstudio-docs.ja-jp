@@ -1,5 +1,6 @@
 ---
 title: UWP アプリでの JavaScript のメモリ使用量を分析する | Microsoft Docs
+description: JavaScript メモリ アナライザーは、メモリの使用状況を理解し、JavaScript を使用して Windows 用に開発された UWP アプリのメモリ リークを検出するのに役立ちます。そのしくみについて学習します。
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -20,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a1b857639d8a58ffc7686569ad8e103674f136
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: a29d12a4ca2e6a7a620c5197f76c0ad35ac33a40
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037485"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721685"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>UWP アプリでの JavaScript のメモリ使用量を分析する
 Visual Studio に用意されている JavaScript メモリ アナライザーは、メモリ使用量を把握し、JavaScript を使用して Windows 用に開発された UWP アプリのメモリ リークを検出するのに役立ちます。 サポートされるアプリには、ユニバーサル Windows アプリのアプリが含まれます。
@@ -302,7 +303,7 @@ Visual Studio に用意されている JavaScript メモリ アナライザー�
  これらのオブジェクトを表示するには、ペインの右上隅にある設定リスト ![メモリ アナライザーの [設定] ドロップダウン リスト](../profiling/media/js_mem_settings.png "JS_Mem_Settings") の **[組み込み要素の表示]** をクリックします。
 
 ## <a name="save-diagnostic-session-files"></a>診断セッション ファイルの保存
- 診断スナップショットの概要とそれに関連する詳細ビューは、.*diagsession* ファイルとして保存されます。 **ソリューション エクスプローラー** では、前の診断のセッションが診断セッション フォルダーに表示されます。 **ソリューション エクスプローラー**で、前のセッションを開く操作、ファイルの削除、またはファイル名の変更を行うことができます。
+ 診断スナップショットの概要とそれに関連する詳細ビューは、.*diagsession* ファイルとして保存されます。 **ソリューション エクスプローラー** では、前の診断のセッションが診断セッション フォルダーに表示されます。 **ソリューション エクスプローラー** で、前のセッションを開く操作、ファイルの削除、またはファイル名の変更を行うことができます。
 
 ## <a name="associate-source-code-with-memory-usage-data"></a>ソース コードとメモリ使用量データの関連付け
  メモリの問題があるコードのセクションを特定するには、次の方法に従います。

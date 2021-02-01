@@ -1,5 +1,7 @@
 ---
 title: Event Tracing for Windows (ETW) レポート | Microsoft Docs
+description: Event Trace for Windows (ETW) レポートについて説明します。これには、Visual Studio プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: e7167f2fb5c78a6fa8c3d83fb56c2c2eba217516
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779299"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801424"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>ETW (Event Tracing for Windows) レポート
 Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。 ETW データはバイナリ (.*etl*) ファイルで収集されます。
@@ -25,17 +27,17 @@ Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsp
 > [!NOTE]
 > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] インターフェイスでは ETW レポートを表示できません。
 
-- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法: ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)」を参照してください。
+- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] インターフェイスのプロファイル ツールを利用して ETW データを収集する方法については、「[方法:ETW (Event Tracing for Windows) データを収集する](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)」を参照してください。
 
 - [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールを利用して ETW データを収集する方法については、「[Events](../profiling/events-vsperfcmd.md)」を参照してください。
 
 - ETW レポートは **VSReport/Summary:ETW** コマンドを利用して生成します。 詳細については、「[VSPerfReport](../profiling/vsperfreport.md)」を参照してください。
 
-|Column|[説明]|
+|列|説明|
 |------------|-----------------|
 |**Timestamp**|イベントが発生した日時を識別します。|
 |**プロセス ID**|イベントを生成したプロセスを識別します。|
 |**スレッド ID**|イベントを生成したスレッドを識別します。|
 |**説明**|イベント プロバイダーを識別します。|
 |**Type**|イベントの種類を識別します。|
-|**プロパティ**|イベントのプロパティ。 各イベントは角かっこで囲まれた名前と値のペアになり、コンマで区切られます。|
+|**Properties**|イベントのプロパティ。 各イベントは角かっこで囲まれた名前と値のペアになり、コンマで区切られます。|

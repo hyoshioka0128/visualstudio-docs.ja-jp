@@ -1,5 +1,6 @@
 ---
 title: ThreadOn と ThreadOff | Microsoft Docs
+description: どのようにすれば、インストルメンテーション メソッドを使用するコマンド ライン プロファイリング セッションでのみ VSPerfCmd.exe の ThreadOff および ThreadOn サブコマンドが使用できるようになるかについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778155"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718773"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn と ThreadOff
-*VSPerfCmd.exe* の **ThreadOff** および **ThreadOn** サブコマンドは、インストルメンテーション メソッドを使用するコマンド ライン プロファイリング セッションでのみ使用できます。 **ThreadOff** および **ThreadOn** は、指定されたスレッドのプロファイリングを一時停止および再開します。 **ThreadOff** がスレッドのプロファイリングを停止し、**ThreadOn** がスレッドのプロファイリングを開始します。
+*VSPerfCmd.exe の* **ThreadOff** および **ThreadOn** サブコマンドは、インストルメンテーション メソッドを使用するコマンド ライン プロファイリング セッションでのみ使用できます。 **ThreadOff** および **ThreadOn** は、指定されたスレッドのプロファイリングを一時停止および再開します。 **ThreadOff** がスレッドのプロファイリングを停止し、**ThreadOn** がスレッドのプロファイリングを開始します。
 
  多くの場合、**ThreadOn** または **ThreadOff** を *VSPerfCmd.exe* コマンド ラインの唯一のオプションとして指定しますが、**GlobalOn**、**GlobalOff**、**ProcessOn**、**ProcessOff** の各サブコマンドと組み合わせて使用することもできます。
 

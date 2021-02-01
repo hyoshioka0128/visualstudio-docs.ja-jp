@@ -1,5 +1,6 @@
 ---
 title: ID 別のパフォーマンス規則 | Microsoft Docs
+description: ID 別のパフォーマンス規則について学習します。これには、"DA0001:連結には StringBuilder を使用してください" や "DA0011:CompareTo の負荷が高くなっています" が含まれます。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
@@ -9,40 +10,40 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1762f12d791f220161867af73a823f88b9f86ec0
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 4cbfde146586d8ab10b8ad44ee1294e36221493a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037329"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722101"
 ---
 # <a name="performance-rules-by-id"></a>ID 別のパフォーマンス規則
 
-| 警告 | [説明] |
+| 警告 | 説明 |
 | - | - |
-| [DA0001: StringBuilder を使用して連結してください](../profiling/da0001-use-stringbuilder-for-concatenations.md) | System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。 |
-| [DA0002: VSPerfCorProf.dll がありません](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | プロファイラーは、プロファイル実行中、VSPerfCorProf.dll を見つけることができませんでした。 プロファイラー データを集めるためのコマンドライン ツールが VSPerfCLREnv.cmd ツールで必要な環境変数を初期化することなく使用されたとき、この警告が発生します。 |
-| [DA0003: カーネル サンプルが多数存在します](../profiling/da0003-many-kernel-samples.md) | アプリケーションに対して集められた呼び出し履歴の大部分がカーネル モードで実行されています。 別のプロファイリング方法でアプリケーションをプロファイリングすることを検討してください。 |
-| [DA0004: プロセッサ使用率が高くなっています](../profiling/da0004-high-processor-usage.md) | インストルメンテーション メソッドを使用して収集されたデータをプロファイリングしていたとき、プロセッサ (CPU) 使用率が非常に高くなりました。 CPU 主体のアプリケーションをプロファイリングするときは、サンプリング プロファイリング方式の使用を検討してください。 |
+| [DA0001: 連結には StringBuilder を使用してください](../profiling/da0001-use-stringbuilder-for-concatenations.md) | System.String.Concat の呼び出しがプロファイル データの大きな割合を占めています。 <xref:System.Text.StringBuilder> クラスを使用して、複数のセグメントからの文字列を連結することを検討してください。 |
+| [DA0002:VSPerfCorProf.dll がありません](../profiling/da0002-vsperfcorprof-dll-is-missing.md) | プロファイラーは、プロファイル実行中、VSPerfCorProf.dll を見つけることができませんでした。 プロファイラー データを集めるためのコマンドライン ツールが VSPerfCLREnv.cmd ツールで必要な環境変数を初期化することなく使用されたとき、この警告が発生します。 |
+| [DA0003:カーネル サンプルが多数存在します](../profiling/da0003-many-kernel-samples.md) | アプリケーションに対して集められた呼び出し履歴の大部分がカーネル モードで実行されています。 別のプロファイリング方法でアプリケーションをプロファイリングすることを検討してください。 |
+| [DA0004:プロセッサ使用率が高くなっています](../profiling/da0004-high-processor-usage.md) | インストルメンテーション メソッドを使用して収集されたデータをプロファイリングしていたとき、プロセッサ (CPU) 使用率が非常に高くなりました。 CPU 主体のアプリケーションをプロファイリングするときは、サンプリング プロファイリング方式の使用を検討してください。 |
 | [DA0005: 頻繁な GC2 のコレクションです](../profiling/da0005-frequent-gc2-collections.md) | 多数の .NET メモリ オブジェクトが、ジェネレーション 2 のガベージ コレクションで回収されています。 |
 | [DA0006: 値の型で Equals() をオーバーライドしてください](../profiling/da0006-override-equals-parens-for-value-types.md) | パブリック値型の Equals メソッドまたは等値演算子の呼び出しが、プロファイリング データの大きな割合を占めています。 さらに効率的な方法を実装することを検討してください。 |
 | [DA0007: 制御フローでの例外の使用を避けてください](../profiling/da0007-avoid-using-exceptions-for-control-flow.md) | .NET Framework 例外ハンドラーの多くの部分が、プロファイリング データで呼び出されました。 他の制御フロー ロジックを使用して、スローされる例外の数を減らすことを検討してください。 |
-| [DA0008: 少数のサンプルしか収集されていません](../profiling/da0008-few-samples-collected.md) | プロファイリング実行で少数のサンプルしか収集されませんでした。 収集されるサンプル数を増やすには、実行時間を長くするか、サンプリング速度を上げてください。 |
+| [DA0008:少数のサンプルしか収集されていません](../profiling/da0008-few-samples-collected.md) | プロファイリング実行で少数のサンプルしか収集されませんでした。 収集されるサンプル数を増やすには、実行時間を長くするか、サンプリング速度を上げてください。 |
 | [DA0009: JIT に費やされる時間の割合が高くなっています](/previous-versions/dd264972(v=vs.100)) | アプリケーションの実行時間のかなりの割合が、Just-In-Time (JIT) コンパイラで使用されました。 |
 | [DA0010: GetHashCode の負荷が高くなっています](../profiling/da0010-expensive-gethashcode.md) | 型の GetHashCode メソッドの呼び出しがプロファイリング データの大きな割合を占めているか、またはそのメソッドがメモリを割り当てています。 |
 | [DA0011: CompareTo の負荷が高くなっています](../profiling/da0011-expensive-compareto.md) | 型の CompareTo メソッドが高コストであるか、またはメモリを割り当てています。 |
 | [DA0012: リフレクションが頻繁に実行されています](../profiling/da0012-significant-amount-of-reflection.md) | InvokeMember および GetMember などの System.Reflection メソッドまたは MemberInvoke などの Type メソッドへの呼び出しが、プロファイリング データの大きな割合を占めています。 可能な場合は、事前バインディングを使用するこれらのメソッドを、依存アセンブリのメソッドに置き換えることを検討してください。 |
 | [DA0013: String.Split/String.Substring が頻繁に使用されています](../profiling/da0013-high-usage-of-string-split-or-string-substring.md) | System.String.Split メソッドまたは System.String.Substring メソッドの呼び出しがプロファイル データの大きな割合を占めています。 文字列内にサブ文字列が存在することをテストする場合は、System.String.IndexOf または System.String.IndexOfAny を使用することを検討してください。 |
 | [DA0014: ディスクへのアクティブなメモリのページングが非常に高率で発生しています](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) | プロファイリングの実行中に収集されたシステム パフォーマンス データが、ディスクへのアクティブなメモリのページングがプロファイリング実行全体において非常に高い率で発生していることを示しています。 通常、このレベルのページング率は、アプリケーションのパフォーマンスと応答速度に影響します。 アルゴリズムを修正してメモリの割り当てを減らすことを検討してください。 場合によっては、アプリケーションのメモリ要件を検討したり、メモリの多いコンピューターでプロファイリングをもう一度実行してみたりする必要もあります。 |
-| [DA0017: ディスクへのアクティブなメモリのページングが高率で発生しています。](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) | プロファイリングの実行中に収集されたシステム パフォーマンス データが、ディスクへのアクティブなメモリのページングがプロファイリング実行全体において高い率で発生していることを示しています。 通常、このレベルのページング率は、アプリケーションのパフォーマンスと応答速度に影響します。 アルゴリズムを修正してメモリの割り当てを減らすことを検討してください。 場合によっては、アプリケーションのメモリ要件を検討したり、メモリの多いコンピューターでプロファイリングをもう一度実行してみたりする必要もあります。 |
+| [DA0017: ディスクへのアクティブなメモリのページングが高率で発生しています](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) | プロファイリングの実行中に収集されたシステム パフォーマンス データが、ディスクへのアクティブなメモリのページングがプロファイリング実行全体において高い率で発生していることを示しています。 通常、このレベルのページング率は、アプリケーションのパフォーマンスと応答速度に影響します。 アルゴリズムを修正してメモリの割り当てを減らすことを検討してください。 場合によっては、アプリケーションのメモリ要件を検討したり、メモリの多いコンピューターでプロファイリングをもう一度実行してみたりする必要もあります。 |
 | [DA0018: 32 ビット アプリケーションがプロセスのマネージド メモリ制限で実行されています](../profiling/da0018-32-bit-application-running-at-process-managed-memory-limits.md) | プロファイリングの実行中に収集されたシステム データで、.NET Framework のメモリ ヒープが、32 ビット プロセスでマネージド ヒープが到達可能な最高サイズに近づいたことが示されています。 報告される値は、プロファイリング中のプロセスがアクティブな状態にあったときに測定されたヒープの最高値です。 アプリケーションでマネージド リソースの使用を最適化することを検討してください。 |
 | [DA0021: ジェネレーション 1 のガベージ コレクションが高率です](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md) | プロファイリングの実行中に収集されたシステム パフォーマンス データは、ジェネレーション 1 のガベージ コレクションで解放された .NET Framework オブジェクト用のメモリが、ジェネレーション 0 のデータ コレクションと比較して高率であることを示しています。 |
 | [DA0022: ジェネレーション 2 のガベージ コレクションが高率です](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md) | プロファイリングの実行中に収集されたシステム パフォーマンス データが、ジェネレーション 2 のガベージ コレクションで解放された .NET Framework オブジェクト用のメモリが、ジェネレーション 0 とジェネレーション 1 のガベージ コレクションと比較して高い率であることを示しています。 |
 | [DA0023: 高い GC CPU 時間](../profiling/da0023-high-gc-cpu-time.md) | プロファイリングの間に収集されたシステム パフォーマンス データで、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大きいことが示されています。 |
-| [DA0024: 過剰な GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md) | プロファイリングの間に収集されたシステム パフォーマンス データで、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大き過ぎることが示されています。 |
-| [DA0026: 過剰なカーネル CPU 処理時間。](../profiling/da0026-excessive-kernel-cpu-time-processing.md) | カーネル モードで実行された CPU 時間の割合が、ユーザー モードで費やされた時間数を超えました。 カーネル モードの実行時間が長い原因を判断するために、プロファイリングを再度実行し、システム コール (syscalls) の数をサンプリングすることを検討してください。 |
-| [DA0029: サポートされていない CLR バージョンです。](../profiling/da0029-unsupported-clr-version.md) | アプリケーションのプロファイリングを、プロファイル ツールでサポートされていない .NET Framework バージョン 1.1 を使用して実行しようとしています。 |
-| [DA0030: データベース プロジェクトの階層の相互作用の測定を収集します。](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md) | <xref:System.Data> メソッドの呼び出しがプロファイル データの大きな割合を占めているため、プロファイリングの実行中に階層の相互作用データが収集されませんでした。 プロファイリングを再度実行し、階層の相互作用データを追加することを検討してください。 |
+| [DA0024:過剰な GC CPU 時間](../profiling/da0024-excessive-gc-cpu-time.md) | プロファイリングの間に収集されたシステム パフォーマンス データで、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大き過ぎることが示されています。 |
+| [DA0026: 過剰なカーネル CPU 処理時間](../profiling/da0026-excessive-kernel-cpu-time-processing.md) | カーネル モードで実行された CPU 時間の割合が、ユーザー モードで費やされた時間数を超えました。 カーネル モードの実行時間が長い原因を判断するために、プロファイリングを再度実行し、システム コール (syscalls) の数をサンプリングすることを検討してください。 |
+| [DA0029: サポートされていない CLR バージョンです](../profiling/da0029-unsupported-clr-version.md) | アプリケーションのプロファイリングを、プロファイル ツールでサポートされていない .NET Framework バージョン 1.1 を使用して実行しようとしています。 |
+| [DA0030: データベース プロジェクトの階層の相互作用の測定を収集します](../profiling/da0030-gather-tier-interaction-measurements-for-database-projects.md) | <xref:System.Data> メソッドの呼び出しがプロファイル データの大きな割合を占めているため、プロファイリングの実行中に階層の相互作用データが収集されませんでした。 プロファイリングを再度実行し、階層の相互作用データを追加することを検討してください。 |
 | [DA0038: 高率のロック競合](../profiling/da0038-high-rate-of-lock-contentions.md) | プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に非常に高い率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイル方法を使用して、プロファイリングを再度実行することを検討してください。 |
 | [DA0039: 非常に高率のロック競合](../profiling/da0039-very-high-rate-of-lock-contentions.md) | プロファイリング データで収集されたシステム パフォーマンス データが、アプリケーションの実行中に極端に高い率のロック競合が発生したことを示しています。 競合の原因を見つけるために、コンカレンシー プロファイルの方法を使用して、プロファイリングを再度実行することを検討してください。 |
 | [DA0501: プロセスによる平均 CPU 使用量をプロファイリングしています。](../profiling/da0501-average-cpu-consumption-by-the-process-being-profiled.md) | このメッセージにより、アプリケーションの命令の実行中にプロセッサがビジー状態になった時間がパーセントで報告されます。 プロファイリング中のプロセスがアクティブな状態にあるすべての測定間隔を通じて取得された値の平均値が、このメッセージによって報告されます。 複数のプロセッサが搭載されたコンピューターの場合、100% を超える値になる可能性があります。 |

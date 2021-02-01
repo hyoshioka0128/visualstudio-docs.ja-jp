@@ -1,5 +1,6 @@
 ---
 title: SuspendProfile | Microsoft Docs
+description: SuspendProfile メソッドで、指定されたプロファイル レベルの保留/再開カウンターをインクリメントする方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 728aa7c858f8321e3289f2d17e612284f8739f17
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778194"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719267"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` メソッドは、指定されたプロファイル レベルの保留/再開カウンターをインクリメントします。
@@ -34,7 +35,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 
  パフォーマンス データ収集を適用できるプロファイル レベルを示します。 次の **PROFILE_CONTROL_LEVEL** 列挙子を使用して、パフォーマンス データ収集を適用できる 3 つのレベルのいずれかを示すことができます。
 
-|列挙子|[説明]|
+|列挙子|説明|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|グローバル レベル設定は、プロファイル実行のすべてのプロセスとスレッドに影響します。|
 |PROFILE_PROCESSLEVEL|プロセス レベル設定は、指定されたプロセスの一部であるスレッドすべてに影響します。|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
 
-|列挙子|[説明]|
+|列挙子|説明|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|プロファイル要素 ID が存在しません。|
 |PROFILE_ERROR_LEVEL_NOEXIST|指定されたプロファイル レベルが存在しません。|
@@ -105,5 +106,5 @@ void ExerciseSuspendProfile()
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,5 +1,6 @@
 ---
 title: プロファイルと Windows Vista のセキュリティ | Microsoft Docs
+description: 使用可能であるユーザー アクセス許可の設定に応じて、個々のユーザーは、コンピューター上でプロセスをプロファイリングするためのセキュリティ アクセス許可を持っている場合があります。
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778376"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719410"
 ---
 # <a name="profiling-and-windows-vista-security"></a>プロファイルと Windows Vista のセキュリティ
 
@@ -33,9 +34,9 @@ ms.locfileid: "74778376"
 
 ## <a name="cross-session-profiling"></a>セッション間プロファイリング
 
-*セッション間プロファイリング*は、別のユーザー セッションで実行しているプロセスをプロファイリングする機能です。 たとえば、サービスのほとんどはセッション 0 で実行され、ユーザーはセッション 0 で直接実行できません。 パフォーマンス エクスプローラーのツールバーで **[プロセスにアタッチ]** ボタン、または VSPerfCmd コマンドライン ツールの `/attach` オプションを使用して、さまざまなユーザー セッションでのほとんどのプロセスをプロファイリングすることができます。
+*セッション間プロファイリング* は、別のユーザー セッションで実行しているプロセスをプロファイリングする機能です。 たとえば、サービスのほとんどはセッション 0 で実行され、ユーザーはセッション 0 で直接実行できません。 パフォーマンス エクスプローラーのツールバーで **[プロセスにアタッチ]** ボタン、または VSPerfCmd コマンドライン ツールの `/attach` オプションを使用して、さまざまなユーザー セッションでのほとんどのプロセスをプロファイリングすることができます。
 
-プロセス間のプロファイルの表示オプションを設定すると、使用できるプロセスの一覧が表示できます。 これらのオプションは、 **[プロセスにアタッチ]** を選択すると表示される **[プロセスにアタッチ]** ウィンドウで利用できます。
+プロセス間のプロファイルの表示オプションを設定すると、使用できるプロセスの一覧が表示できます。 これらのオプションは、**[プロセスにアタッチ]** を選択すると表示される **[プロセスにアタッチ]** ウィンドウで利用できます。
 
 - **全ユーザーのプロセスを表示する**
 
@@ -45,7 +46,7 @@ ms.locfileid: "74778376"
 
   このオプションを選択していない場合、一覧には、現在のセッションのプロセスが表示されます。 選択している場合、すべてのセッションのプロセスが一覧表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [概要](../profiling/overviews-performance-tools.md)
 - [VSPerfCmd](../profiling/vsperfcmd.md)

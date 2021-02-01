@@ -1,5 +1,7 @@
 ---
 title: 関数ビュー - 競合データ | Microsoft Docs
+description: 競合データの関数レポート ビューの詳細を取得します。これには、プロファイルの実行で、プロファイルの実行中にブロックされた関数が一覧表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +13,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780053"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801665"
 ---
 # <a name="functions-view---contention-data"></a>関数ビュー - 競合データ
 競合データの関数レポート ビューには、プロファイリング実行中に実行がブロックされた関数が一覧表示されます。
 
  コンカレンシー メソッドで収集されたプロファイリング データ ファイルの関数ビューに表示される値について、次の表で説明します。
 
-|Column|説明|
+|列|説明|
 |------------|-----------------|
 |**排他ブロック時間**|この関数の関数本体でのコードの実行がブロックされていた時間。 この関数によって呼び出された関数のブロック時間は含まれません。|
 |**排他ブロック時間 %**|プロファイリング実行のすべてのブロック時間に対する、この関数の排他的なブロック時間の割合。|
@@ -40,12 +42,12 @@ ms.locfileid: "74780053"
 |**モジュール パス**|関数を含むモジュールのパスです。|
 |**プロセス ID**|関数を実行したプロセスのプロセス ID (PID)。|
 |**プロセス名**|プロセスの名前です。|
-|**ソース ファイル**|この関数の定義を含むソース ファイルです。|
+|**[転送元ファイル]**|この関数の定義を含むソース ファイルです。|
 
 ## <a name="see-also"></a>関連項目
 - [方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)
-- [関数ビュー](../profiling/functions-view.md)
+- [関数 ビュー](../profiling/functions-view.md)
 - [関数ビュー - インストルメンテーション](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [関数ビュー - サンプリング](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [関数ビュー](../profiling/functions-view-instrumentation-data.md)
-- [関数ビュー](../profiling/functions-view-sampling-data.md)
+- [関数 ビュー](../profiling/functions-view-sampling-data.md)

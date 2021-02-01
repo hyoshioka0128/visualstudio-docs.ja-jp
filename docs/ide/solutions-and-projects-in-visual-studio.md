@@ -22,12 +22,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34d96f49370a71a63e986a79584caffbc00adf
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: a2a64b613ca19632a7827686ab0552e6e23620c1
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847046"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773328"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio のソリューションおよびプロジェクト
 
@@ -102,10 +102,13 @@ Visual Studio では、ソリューションの設定を格納するために、
 
 多くのメニュー コマンドは、**ソリューション エクスプローラー** で各種項目の右クリックのコンテキスト メニューから使用できます。 これらのコマンドには、プロジェクトのビルド、NuGet パッケージの管理、参照の追加、ファイル名の変更、テストの実行などが含まれます。
 
-> [!TIP]
-> ソリューション エクスプローラーを閉じて、もう一度開く場合は、メニュー バーから **[ウィンドウ]**  >  **[ウィンドウ レイアウトのリセット]** を選択します。
-
 ASP.NET Core プロジェクトでは、**ソリューション エクスプローラー** でファイルを入れ子にする方法をカスタマイズできます。 詳細については、[ソリューション エクスプローラーでのファイルの入れ子のカスタマイズ](file-nesting-solution-explorer.md)に関するページを参照してください。
+
+> [!TIP]
+> 閉じたソリューション エクスプローラーをもう一度開くには、メニュー バーから **[ビュー]**  >  **[ソリューション エクスプローラー]** を選択するか、**Ctrl**+**Alt**+**L** を押します。 また閉じたサイド タブをそれらの既定の場所に復元するには、メニュー バーの **[ウィンドウ]**  >  **[ウィンドウ レイアウトのリセット]** を選択します。
+
+> [!NOTE]
+> Visual Studio に表示されるアプリケーションのイメージおよびアイコンを参照するには、[**Visual Studio Image Library**](https://www.microsoft.com/download/details.aspx?id=35825) を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

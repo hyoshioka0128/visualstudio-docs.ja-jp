@@ -1,5 +1,7 @@
 ---
 title: サンプリング イベントを選択する | Microsoft Docs
+description: ニーズに合わせてサンプル イベントを設定する方法と、サンプル間のサイクル数を設定する方法について学習します。 使用可能なイベントには、クロック サイクルやページ フォールトなどがあります。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +21,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f28859b1c17c735be405c6c56ebabcbe43903170
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ed97fd205ffc0c969d0cad39d962cd8cdeb4e2eb
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851295"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801579"
 ---
 # <a name="how-to-choose-sampling-events"></a>方法: サンプリング イベントを選択する
 既定では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールは、プロファイリングされるプロセスによって使用されるプロセッサ サイクルの数として指定された間隔でパフォーマンス データを収集します。 既定の間隔のサイクル数は 10,000,000 です。これは、1 GHz のコンピューターで約 0.01 秒に相当します。 間隔のサイクル数とサンプル イベントは変更できます。 次のサンプル イベントを使用できます。
@@ -42,7 +44,7 @@ ms.locfileid: "90851295"
 
 ### <a name="to-select-a-sample-event"></a>サンプル イベントを選択するには
 
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
+1. **パフォーマンス エクスプローラー** で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
 
 2. **[プロパティ ページ]** で、 **[サンプリング]** プロパティをクリックします。
 

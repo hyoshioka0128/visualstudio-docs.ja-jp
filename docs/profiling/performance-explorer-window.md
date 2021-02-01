@@ -1,5 +1,6 @@
 ---
 title: '[パフォーマンス エクスプローラー] ウィンドウ | Microsoft Docs'
+description: Visual Studio IDE の [パフォーマンス エクスプローラー] ウィンドウで、Visual Studio のプロファイル ツールを使用してパフォーマンス セッションを構成する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 06d2b7e2ad5d5df4022dc78aa06315545d56c0ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772440"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722816"
 ---
 # <a name="performance-explorer-window"></a>[パフォーマンス エクスプローラー] ウィンドウ
 
@@ -26,7 +27,7 @@ Visual Studio IDE の **[パフォーマンス エクスプローラー]** ウ�
 
 ## <a name="performance-explorer-toolbar"></a>パフォーマンス エクスプローラーのツール バー
 
-**パフォーマンス エクスプローラー**のツール バーでは以下のオプションを使用できます。
+**パフォーマンス エクスプローラー** のツール バーでは以下のオプションを使用できます。
 
 - **パフォーマンス ウィザードの起動** - パフォーマンス ウィザードを表示し、[パフォーマンス エクスプローラー] ウィンドウに新しいパフォーマンス セッションを追加します。
 
@@ -50,7 +51,7 @@ Visual Studio IDE の **[パフォーマンス エクスプローラー]** ウ�
 
 - **レポート** - セッションに対して生成されるプロファイラー データ ファイルの名前を表示します。 **[レポート]** を右クリックし、既存のレポートの追加、または 2 つのプロファイラー データ ファイルの比較を行います。 レポート名を右クリックし、プロファイラー データ ファイルを開くか、削除するか、エクスポートします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [概要](../profiling/overviews-performance-tools.md)
 [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)

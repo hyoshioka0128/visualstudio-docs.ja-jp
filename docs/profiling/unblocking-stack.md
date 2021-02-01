@@ -1,5 +1,6 @@
 ---
 title: ブロック解除スタック | Microsoft Docs
+description: ブロックを解除したスレッドの呼び出し履歴は、現在のプロセスの別のスレッドによってブロック解除された後にタブに表示されます。そのしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e790f37ba88498d5ac0ae03dd9ce7ae074f451
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 30b4da23ef89f8bdde61bbf1eebb63bb4d239b7b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63004405"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722361"
 ---
 # <a name="unblock-stack"></a>ブロック解除スタック
 現在選択されているスレッドの要素が、現在のプロセスの別のスレッドによってブロック解除された後に実行を開始するブロック セグメントを表している場合、ブロック解除を行ったスレッドの呼び出し履歴がこのタブに表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

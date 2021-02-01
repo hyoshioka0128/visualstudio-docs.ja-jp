@@ -1,5 +1,6 @@
 ---
 title: 同期時間 | Microsoft Docs
+description: タイムライン内のセグメントを、同期として分類されたブロック時間に関連付けする方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0e8c2243d01a5801b6846445995bbdfdcff78c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62965311"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719826"
 ---
 # <a name="synchronization-time"></a>同期時間
 タイムライン内のこれらのセグメントは、同期として分類されたブロック時間に関連付けられています。 同期でスレッドにブロックされたマークが付いている場合、次のいずれかを示しています。
@@ -28,5 +29,5 @@ ms.locfileid: "62965311"
 
   スレッド ブロック イベントの根本的な原因を理解するために、ブロック呼び出し履歴とプロファイル レポートをよく調べてください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

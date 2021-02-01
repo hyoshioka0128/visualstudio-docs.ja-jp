@@ -1,5 +1,6 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
+description: VSPerfCmd.exe の Sys オプションを使用して、サンプリングされるプロファイリング イベントをシステム呼び出しイベントに設定する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778181"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719761"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-*VSPerfCmd.exe* の **Sys** オプションは、システム呼び出しイベント (プロファイリングされたアプリケーションからオペレーティング システムへの関数呼び出し) にサンプリングされるプロファイリング イベントを設定し、必要に応じて、サンプリング間隔のシステム呼び出し数を既定値の 10 から変更します。
+*VSPerfCmd.exe の* **Sys** オプションは、システム呼び出しイベント (プロファイリングされたアプリケーションからオペレーティング システムへの関数呼び出し) にサンプリングされるプロファイリング イベントを設定し、必要に応じて、サンプリング間隔のシステム呼び出し数を既定値の 10 から変更します。
 
  **Sys** は、**Launch** オプションまたは **Attach** オプションも含むコマンド ラインでのみ使用できます。
 
@@ -50,7 +51,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] サンプリング イベントを、`Name` で指定された CPU パフォーマンス カウンターに設定し、サプリング間隔を `Reload` に設定します。
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}] .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] .NET メモリ データを収集します。 既定 (**Allocation**) では、データはメモリの割り当てイベントごとに収集されます。 **Lifetime** パラメーターが指定されている場合、ガベージ コレクション イベントごとのデータも収集されます。
 
 ## <a name="example"></a>例
  この例では、プロファイラーのサンプリング イベントをシステム呼び出しに設定し、サンプリング間隔をサンプルごとに 20 の呼び出しに設定する方法を示します。

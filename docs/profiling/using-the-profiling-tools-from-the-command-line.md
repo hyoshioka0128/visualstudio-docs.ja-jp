@@ -1,5 +1,6 @@
 ---
 title: コマンド ラインからのプロファイリング ツールの使用 | Microsoft Docs
+description: Visual Studio プロファイル ツールのコマンド ライン ツールを使用して、アプリケーションのプロファイルを行ったり、バッチ ファイルやスクリプトによってプロファイルを自動化したりします。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dea893340c038909057dd652472c10c8264786a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328348"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723232"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>コマンド ラインからのプロファイリング ツールの使用
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、コマンド プロンプトでアプリケーションをプロファイリングしたり、バッチ ファイルやスクリプトでプロファイリングを自動化したりできます。 コマンド プロンプトでレポート ファイルを生成することもできます。 スタンドアロンの簡易プロファイラーを使用すると、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] がインストールされていないコンピューター上のデータを収集できます。
@@ -40,5 +41,5 @@ ms.locfileid: "85328348"
 ## <a name="reference"></a>リファレンス
 - [コマンド ライン プロファイリング ツール リファレンス](../profiling/command-line-profiling-tools-reference.md)
 
-## <a name="see-also"></a>参照
-- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>関連項目
+- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

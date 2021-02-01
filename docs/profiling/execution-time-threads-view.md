@@ -1,5 +1,7 @@
 ---
 title: 実行時間 (スレッド ビュー) | Microsoft ドキュメント
+description: コンカレンシー ビジュアライザーのスレッド ビューの実行時間を確認します。 実行時間は、スレッドが論理コア上で動作している時間を示すセグメントで表されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac0cf2a60fd194176b7cd9091f4e7dc7a758006f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f26df8f724d4a17f55ea54c3e7c61e5e1630e635
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969915"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801485"
 ---
 # <a name="execution-time-threads-view"></a>実行時間 (スレッド ビュー)
 スレッド ビュー タイムラインのこれらのセグメントは、スレッドがシステムの論理コア上で動作中である場合、実行時間を表します。
@@ -28,6 +30,6 @@ ms.locfileid: "62969915"
 
  現在のビューのすべての実行セグメントについて、従来のサンプリング プロファイルを参照するには、表示されているタイムライン プロファイルで **[実行]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [実行プロファイル レポート](../profiling/execution-profile-report.md)
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

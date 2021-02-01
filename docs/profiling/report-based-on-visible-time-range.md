@@ -1,5 +1,6 @@
 ---
 title: 表示された時間範囲に基づいたレポート | Microsoft Docs
+description: プロファイル ビューを使用して、現在表示されている時間範囲およびチャンネルに基づいたレポートを表示する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02dc0e009702b25c2204f0a1302931fe941b5f59
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "63002339"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720372"
 ---
 # <a name="report-based-on-visible-time-range"></a>表示された時間範囲に基づいたレポート
 プロファイル ビューには、現在表示されている時間範囲およびチャンネルに基づいたレポートが表示されます。 データのさまざまなサブセットの詳細を表示するには、凡例内の項目をクリックします。
 
  データに関するその他の情報については、次の表を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [表示するスレッド アクティビティがありません](../profiling/no-thread-activity-to-show-threads-view.md)
 - [実行プロファイル レポート](../profiling/execution-profile-report.md)
 - [同期時間](../profiling/synchronization-time.md)
