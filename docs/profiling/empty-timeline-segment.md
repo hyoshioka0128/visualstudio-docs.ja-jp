@@ -1,5 +1,7 @@
 ---
 title: 空のタイムライン セグメント | Microsoft Docs
+description: Visual Studio コンカレンシー ビジュアライザーで、ある種類のチャネルに対してタイムラインのセクションが空になる (白の背景を持つ) 理由について理解します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970110"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801431"
 ---
 # <a name="empty-timeline-segment"></a>空のタイムライン セグメント
 コンカレンシー ビジュアライザーでは、タイムラインのセクションが空になる (白の背景を持つ) の理由は、チャネルの種類によって異なります。
@@ -30,6 +32,6 @@ ms.locfileid: "62970110"
 
 - マーカー チャネルの場合は、マーカーが生成されなかったことを意味します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)
 - [ズーム コントロール (スレッド ビュー)](../profiling/zoom-control-threads-view.md)

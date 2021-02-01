@@ -1,5 +1,7 @@
 ---
 title: .NET Framework の使用に関するパフォーマンス規則 | Microsoft Docs
+description: .NET Framework の使用カテゴリのパフォーマンス規則を理解します。 最適化できる具体的なメソッドを特定し、より一般的な使用パターンを特定します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85532003"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801297"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework の使用に関するパフォーマンス規則
 .NET Framework の使用カテゴリのパフォーマンス規則では、最適化できる具体的なメソッド、およびパフォーマンスに問題があるときに調査できる一般的な使用パターン (ガベージ コレクションやロックの競合など) が示されています。

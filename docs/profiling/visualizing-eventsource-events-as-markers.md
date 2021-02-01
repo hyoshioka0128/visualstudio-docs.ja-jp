@@ -1,5 +1,6 @@
 ---
 title: マーカーとしての EventSource イベントの視覚化 | Microsoft Docs
+description: コンカレンシー ビジュアライザーでは、マーカーとして EventSource イベントを表示したり、マーカーの表示方法を制御したりすることができることについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 6f8fadf9ef97717983c96226d81d43efada65e89
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64811545"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723141"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>マーカーとしての EventSource イベントの視覚化
 コンカレンシー ビジュアライザーは、マーカーとして EventSource イベントを表示でき、マーカーの表示方法を制御できます。 EventSource マーカーを表示するには、[[詳細設定]](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) ダイアログ ボックスを使用して ETW プロバイダー GUID を登録します。 コンカレンシー ビジュアライザーには、[フラグ マーカー](../profiling/flag-markers.md)、[スパン マーカー](../profiling/span-markers.md)、[メッセージ マーカー](../profiling/message-markers.md)として EventSource イベントを表す既定の規約があります。 イベントにカスタム フィールドを追加することで、EventSource イベントの表示方法をカスタマイズできます。 マーカーに関する詳細については、「[コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)」を参照してください。 EventSource イベントの詳細については、「<xref:System.Diagnostics.Tracing>」を参照してください。
@@ -34,11 +35,11 @@ ms.locfileid: "64811545"
 
 |ETW レベル|コンカレンシー ビジュアライザーの重要度|
 |---------------|---------------------------------------|
-|win:LogAlways|Normal|
+|win:LogAlways|標準|
 |win:Critical|Critical|
 |win:Error|Critical|
 |win:Warning|高|
-|win:Informational|Normal|
+|win:Informational|標準|
 |win:Verbose|低|
 |win:verbose より大きい|低|
 
@@ -59,22 +60,22 @@ ms.locfileid: "64811545"
 
 |cvType 値|結果として得られるマーカーの種類|
 |------------------|---------------------------|
-|0|[メッセージ]|
+|0|Message|
 |1|スパンの開始|
 |2|スパンの終了|
 |3|フラグ|
-|その他のすべての値|[メッセージ]|
+|その他のすべての値|Message|
 
 ### <a name="importance"></a>重要度
  `cvImportance` フィールド (バイト) を使用して、EventSource イベントの重要度の設定を制御できます。 しかし、表示されるイベントの重要度はレベルを使用して制御することをお勧めします。
 
 |cvImportance 値|コンカレンシー ビジュアライザーの重要度|
 |------------------------|---------------------------------------|
-|0|Normal|
+|0|標準|
 |1|Critical|
 |2|高|
 |3|高|
-|4|Normal|
+|4|標準|
 |5|低|
 |その他のすべての値|低|
 
@@ -93,5 +94,5 @@ ms.locfileid: "64811545"
 > [!NOTE]
 > SpanID を使用してスパンを入れ子にすること、同じスレッドで部分的に重複させること、または開始と終了のスレッドを別にすることはサポートされていません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [コンカレンシー ビジュアライザー マーカー](../profiling/concurrency-visualizer-markers.md)

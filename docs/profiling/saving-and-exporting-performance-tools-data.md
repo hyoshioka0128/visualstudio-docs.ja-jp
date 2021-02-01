@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス ツール データの保存とエクスポート | Microsoft Docs
+description: プロファイル データ (.vsp) ファイルのフィルター処理済みビューまたはフィルター処理なしビューを、分析されたレポート (.vsps) ファイルとして保存する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773900"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720153"
 ---
 # <a name="save-and-export-performance-tools-data"></a>パフォーマンス ツール データの保存とエクスポート
 この記事では、パフォーマンス データ ファイルを保存およびエクスポートする方法について説明します。

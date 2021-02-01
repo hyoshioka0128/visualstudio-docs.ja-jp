@@ -1,5 +1,6 @@
 ---
 title: アクセス許可を設定する | Microsoft Docs
+description: コンピューターの管理者が、プロファイリングに必要なセキュリティ アクセス許可を、そのコンピューター上で管理者アクセス許可を持たないユーザーまたはグループに付与する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a55e5e18829856b913ad01df6f831a2df42863
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2ab51b317164b8f2e828e0327021fb595574583c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851828"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721997"
 ---
 # <a name="how-to-set-permissions"></a>方法: アクセス許可を設定する
 

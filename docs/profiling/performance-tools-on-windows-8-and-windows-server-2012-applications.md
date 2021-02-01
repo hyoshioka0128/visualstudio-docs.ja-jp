@@ -1,5 +1,6 @@
 ---
 title: Windows 8 & WS 2012 アプリのパフォーマンス ツール
+description: Windows 8 および Windows Server 2012 の強化されたセキュリティ機能により、Visual Studio パフォーマンス ツールを使用したデータの収集方法に大幅な変更が必要になった点について学習します。
 ms.custom: SEO-VS-2020
 ms.date: 06/19/2017
 ms.topic: conceptual
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc44eddc2af2e2d85f7c4bb9c876d336ccd1b546
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ce83684b77d4546915cdcf5980e68be0b6c6a125
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807834"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719592"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 と Windows Server 2012 アプリケーションのパフォーマンス ツール
 

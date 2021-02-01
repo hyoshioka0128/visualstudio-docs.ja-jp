@@ -1,5 +1,7 @@
 ---
 title: GC (VSPerfCmd) | Microsoft Docs
+description: VSPerfCmd.exe ツールの GC オプションについて確認します。 GC オプションは、.NET Framework メモリ割り当てとオブジェクト有効期間データを収集できます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7245e75ac38d650bb40f9c21dc0a0ab642e0c721
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776980"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801352"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 **GC** オプションは、.NET Framework メモリ割り当てとオブジェクト有効期間データを収集できます。 **GC** オプションはサンプリング プロファイリング方法でのみ、かつ、**Launch** オプションとの併用でのみ利用できます。

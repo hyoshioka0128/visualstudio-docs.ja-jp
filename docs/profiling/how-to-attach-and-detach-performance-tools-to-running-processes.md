@@ -1,6 +1,7 @@
 ---
 title: 実行中のプロセスに対するパフォーマンス ツールのアタッチ
-ms.custom: seodec18
+description: Visual Studio プロファイラーを使用して、実行中のプロセスに対してアタッチまたはデタッチを行い、パフォーマンス データのサンプリングと収集を簡単にする方法について学習します。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 58bbf5fa291d71b26cd303a7d43719fde8605c0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331144"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801156"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>方法: 実行中のプロセスに対するパフォーマンス ツールのアタッチとデタッチ
 実行中のプロセスに対してプロファイラーのアタッチまたはデタッチを行うことで、パフォーマンス データのサンプリングや収集を容易にすることができます。 この方法は、アプリケーションの読み込み時間に関するデータの収集を行わない場合や、プロセスが特定の状態に達した後にそのパフォーマンスを監視する場合に、プロセスのプロファイリングを行うために使用します。
@@ -43,7 +44,7 @@ ms.locfileid: "85331144"
 
 ### <a name="to-attach-to-a-running-process"></a>実行中のプロセスにアタッチするには
 
-1. **[デバッグ]** メニューで、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順にポイントし、 **[アタッチ]** をクリックします。
+1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[アタッチ]** をクリックします。
 
      **[プロファイラーをプロセスにアタッチします]** ダイアログ ボックスが表示されます。
 
@@ -53,7 +54,7 @@ ms.locfileid: "85331144"
 
 ### <a name="to-detach-from-a-running-process"></a>実行中のプロセスからデタッチするには
 
-1. **[デバッグ]** メニューで、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順にポイントし、 **[デタッチ]** をクリックします。
+1. **[デバッグ]** メニューで、**[プロファイラー]**、**[パフォーマンス エクスプローラー]** の順にポイントし、**[デタッチ]** をクリックします。
 
      **[プロファイラーをプロセスにアタッチします]** ダイアログ ボックスが表示されます。
 
@@ -61,7 +62,7 @@ ms.locfileid: "85331144"
 
 3. **[デタッチ]** をクリックします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [データ収集の制御](../profiling/controlling-data-collection.md)
 - [パフォーマンス セッションの概要](../profiling/performance-session-overview.md)
 - [方法: パフォーマンス データの収集の開始と終了](../profiling/how-to-start-and-end-performance-data-collection.md)

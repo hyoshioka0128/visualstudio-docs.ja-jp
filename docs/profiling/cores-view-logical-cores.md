@@ -1,5 +1,7 @@
 ---
 title: コア ビューの論理コア | Microsoft Docs
+description: コア ビューでは、タイムラインの各行が論理コアを表し、行には論理コア 0、論理コア 1 のように名前が付けられます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3544ca6c5f9dfe5326f51bb565ff012b654dc263
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7a9b5d6da7793cc5f472a124cdecde434c35fd62
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553137"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720788"
 ---
 # <a name="cores-view-logical-cores"></a>コア ビューの論理コア
 各チャンネル名は、プロファイリング対象システムに存在するいずれかの論理コアを表します。 名前付けのカウントは、0 から論理コアの合計数までです。 たとえば、4 コア システムの場合、論理コア 0 から論理コア 3 までカウントされます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [コア ビュー](../profiling/cores-view.md)

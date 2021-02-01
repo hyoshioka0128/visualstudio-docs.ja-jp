@@ -1,5 +1,7 @@
 ---
 title: コア ビューの凡例 | Microsoft Docs
+description: コア ビューの凡例について学習します。この凡例からは、表形式のコンテキスト スイッチ データとスレッド選択が提供されます。 コンテキスト スイッチとパフォーマンスについても説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553164"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720827"
 ---
 # <a name="cores-view-legend"></a>コア ビューの凡例
 コア ビューの凡例では、各スレッドが色と名前で示されます。 クロスコアのコンテキスト スイッチの回数、コンテキスト スイッチの合計回数、クロスコアのコンテキスト スイッチの割合を示す列が含まれます。 凡例の行は、クロスコアのコンテキスト スイッチの回数が多い順に並べられています。
@@ -35,5 +37,5 @@ ms.locfileid: "62553164"
 |合計コンテキスト スイッチ数|サンプリング期間中に特定のスレッドでのコンテキスト スイッチの合計回数。 スレッドのコンテキストが変わるたびに (たとえば、実行から同期に)、コンテキスト スイッチが 1 回カウントされます。|
 |クロス コアのコンテキスト スイッチの割合|クロスコア コンテキスト スイッチの回数をコンテキスト スイッチの合計回数で割った割合として計算されます。 この割合が高いほど、この特定のスレッドのパフォーマンスに対するクロスコア コンテキスト スイッチのオーバーヘッドの全体的な影響が大きくなります。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [コア ビュー](../profiling/cores-view.md)

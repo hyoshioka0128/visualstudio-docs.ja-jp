@@ -1,5 +1,6 @@
 ---
 title: スパン マーカー | Microsoft Docs
+description: スパン マーカーを使用してアプリケーションの意味のあるフェーズを表す方法について学習します。また、コンカレンシー ビジュアライザーでスパンを表示する例を紹介します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69b48a5b1b551e2e29b9aa10e7f68ff0df0e379
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62980973"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720112"
 ---
 # <a name="span-markers"></a>スパン マーカー
 スパン マーカーは、アプリケーションの意味のあるフェーズを表します。 たとえば、スパンを使用して、特定の作業項目を処理する時間間隔を表すことができます。 その長さは、対応するアプリケーション フェーズの期間を表します。 この図は、コンカレンシー ビジュアライザーのスパンを示しています。
@@ -28,7 +29,7 @@ ms.locfileid: "62980973"
  ![異なるカテゴリの 5 つの範囲](../profiling/media/cvmarkerspancategory.png "CVMarkerSpanCategory") 最初の 5 つのスパン カテゴリの色
 
 ## <a name="span-aggregation-markers"></a>スパンの集約マーカー
- コンカレンシー ビジュアライザーで、複数のスパン マーカーが相互に近接しすぎて、個別に描画できないことがあります。 そのような場合には、基になるスパンを表現する灰色の*スパン集約マーカー*が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるスパンの数がツールヒントに表示されます。 スパンを表示するには、ズーム インします。 限界までズームインしてもなおスパン集約マーカーが表示される場合には、基になるスパン マーカーを[マーカー レポート](../profiling/markers-report.md)で確認できます。 次の図は、スパン集約マーカーを示しています。
+ コンカレンシー ビジュアライザーで、複数のスパン マーカーが相互に近接しすぎて、個別に描画できないことがあります。 そのような場合には、基になるスパンを表現する灰色の *スパン集約マーカー* が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるスパンの数がツールヒントに表示されます。 スパンを表示するには、ズーム インします。 限界までズームインしてもなおスパン集約マーカーが表示される場合には、基になるスパン マーカーを[マーカー レポート](../profiling/markers-report.md)で確認できます。 次の図は、スパン集約マーカーを示しています。
 
  ![コンカレンシー ビジュアライザーの集約スパン マーカー](../profiling/media/cvmarkerspanaggregate.png "CVMarkerSpanAggregate") スパン集約マーカー
 

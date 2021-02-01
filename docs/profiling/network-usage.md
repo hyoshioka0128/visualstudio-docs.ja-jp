@@ -1,5 +1,6 @@
 ---
 title: UWP アプリのネットワーク使用量を分析する
+description: Visual Studio のネットワーク診断ツールによって、Windows.Web.Http API を使用して実行されたネットワーク操作に関するデータを収集する方法について学習します。
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 00fd0c03bf460cd8b72a10d15501994d7a2aa10a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 429bc6c8c2d82e3c18c75132f71e60231b10f10d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541714"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722907"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>UWP アプリのネットワーク使用量を分析する
-Visual Studio の **ネットワーク**診断ツールは、[Windows.Web.Http API](/uwp/api/windows.web.http) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。
+Visual Studio の **ネットワーク** 診断ツールは、[Windows.Web.Http API](/uwp/api/windows.web.http) を使用して実行されたネットワーク操作についてのデータを収集します。 そのデータを分析すると、アクセスや認証の問題、不適切なキャッシュの使用、表示やダウンロードの低パフォーマンスなどの問題を解決するのに役立ちます。
 
  ネットワーク ツールは、UWP アプリのみをサポートします。 その他のプラットフォームは現時点ではサポートされていません。
 

@@ -1,5 +1,6 @@
 ---
 title: span クラス | Microsoft Docs
+description: span クラスと、それを使用してアプリケーションのフェーズを定義する方法について学習します。 また、span クラスのパブリック コンストラクターと継承階層についても説明します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0ca1e674b13877ff8a8864c3b7447f15fd0307d7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62979758"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720047"
 ---
 # <a name="span-class"></a>span クラス
 アプリケーションのフェーズを定義します。

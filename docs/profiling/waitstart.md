@@ -1,5 +1,6 @@
 ---
 title: WaitStart | Microsoft Docs
+description: WaitStart オプションを指定すると、プロファイラーの初期化が完了したか、または指定した秒数が経過したときにのみ、VSPerfCmd.exe Start サブコマンドから制御が返されることについて学習します。
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6c737177-2dfb-4150-963e-a49ac9aaa591
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b42936d9d87ad80b48b7fdc71cdf0fd3fa965af2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8218b04b0c67f2b3b2ebf7ae2fe1209d76461aa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329889"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718760"
 ---
 # <a name="waitstart"></a>WaitStart
 WaitStart オプションを指定すると、プロファイラーの初期化が完了したか、または指定した秒数が経過したときにのみ、*VSPerfCmd.exe* Start サブコマンドは制御を返します。 既定では、Start コマンドはすぐに制御を返します。 Start サブコマンドがプロファイラーを初期化せずに制御を返した場合、エラーが返されます。 秒数が指定されていない場合、Start コマンドは無期限に待機します。
@@ -35,7 +36,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /WaitStart[:Seconds]
 
  **出力:** `filename` 出力ファイル名を指定します。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 ## <a name="example"></a>例
  このバッチ ファイルの例では、Start コマンドは、プロファイラーが初期化されるまで 5 秒間待機します。

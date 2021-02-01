@@ -1,5 +1,7 @@
 ---
 title: データ コレクションの制御 | Microsoft Docs
+description: プロファイリング ツールのデータ収集を開始および停止する方法と、プロファイリング データを収集するオブジェクトを制限する方法について学習します。 この記事は概要です。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +14,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48c7047bdd321943074221c9f09193970d42a247
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b846db263c95f20c6ea4cb6a418973830a5dd8ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777804"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720931"
 ---
-# <a name="control-data-collection"></a>データ コレクションの制御
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールを使用すると、パフォーマンス セッション中のプロファイリング データを収集するタイミングを制御し、プロファイリングする関数を指定することができます。 ここでは、 **[パフォーマンス エクスプローラー]** ウィンドウおよび **[データ収集コントロール]** ウィンドウからデータ収集を開始および停止する方法と、プロファイリング データを収集するオブジェクトを制限する方法について説明します。
+# <a name="control-data-collection"></a>データ収集の制御
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールを使用すると、パフォーマンス セッション中のプロファイリング データを収集するタイミングを制御し、プロファイリングする関数を指定することができます。 ここでは、**[パフォーマンス エクスプローラー]** ウィンドウおよび **[データ収集コントロール]** ウィンドウからデータ収集を開始および停止する方法と、プロファイリング データを収集するオブジェクトを制限する方法について説明します。
 
 ## <a name="common-tasks"></a>一般的なタスク
 
@@ -32,5 +34,5 @@ ms.locfileid: "74777804"
 ## <a name="related-sections"></a>関連項目
 - [パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)
 
-## <a name="see-also"></a>参照
-- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
+## <a name="see-also"></a>関連項目
+- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

@@ -1,5 +1,6 @@
 ---
 title: 行ビュー | Microsoft Docs
+description: 行ビューは、サンプリング メソッドを使用して収集したプロファイラー データに対してのみ使用できます。そのしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ac0d7785071e5f2928e7eabb4a29b1655b42c5ad
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74773982"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721295"
 ---
 # <a name="lines-view"></a>行ビュー
 行ビューは、サンプリング メソッドを使用して収集したプロファイラー データに対してのみ使用できます。 このビューは、インストルメンテーションを使用して収集したデータに対しては使用できません。
@@ -31,7 +32,7 @@ ms.locfileid: "74773982"
 
  ステートメントは、次の項目によって識別されます。
 
-- 関数のステートメントを含むソース ファイル。
+- function ステートメントを含むソース ファイル。
 
 - ステートメントを含む関数。
 
@@ -43,7 +44,7 @@ ms.locfileid: "74773982"
 
 - ステートメントが終了するソース行の文字。
 
-## <a name="see-also"></a>参照
-- [行ビュー](../profiling/lines-view-sampling-data.md)
+## <a name="see-also"></a>関連項目
+- [行 ビュー](../profiling/lines-view-sampling-data.md)
 - [行ビュー - サンプリング](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [行ビュー](../profiling/lines-view-contention-data.md)
+- [行 ビュー](../profiling/lines-view-contention-data.md)

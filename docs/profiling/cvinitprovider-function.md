@@ -1,5 +1,7 @@
 ---
 title: CvInitProvider 関数 | Microsoft Docs
+description: コンカレンシー ビジュアライザー SDK 関数 CvInitProvider (C ライブラリ) のリファレンス情報を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d1b41d9d62bbf5a159ec3a9d60f4e2edf5cc115
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329567"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686507"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 関数
 マーカー プロバイダーを初期化します。 他のコンカレンシー ビジュアライザー SDK 関数の前に呼び出す必要があります。

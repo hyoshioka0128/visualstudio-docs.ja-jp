@@ -1,5 +1,7 @@
 ---
 title: .NET メモリのデータ ビュー | Microsoft Docs
+description: .NET メモリ プロファイル データが格納されるプロファイラー データ ファイルのビューとレポートに関するリファレンス情報へのリンクを示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779273"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801278"
 ---
 # <a name="net-memory-data-views"></a>.NET メモリのデータ ビュー
 ここでは、.NET メモリ プロファイル データが格納されるプロファイラー データ ファイルのビューとレポートに関するリファレンス情報を示します。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [概要ビュー](../profiling/summary-view-dotnet-memory-data.md)
+- [概要 ビュー](../profiling/summary-view-dotnet-memory-data.md)
 
  最も多くのメモリを割り当てた関数と型が一覧で示されます。
 
@@ -31,7 +33,7 @@ ms.locfileid: "74779273"
 
  プロファイリング実行で割り当てられた型、および型の割り当ての結果として生成されたコール ツリー (実行パス) が一覧で表示されます。
 
-- [オブジェクトの有効期間ビュー](../profiling/object-lifetime-view.md)
+- [オブジェクトの有効期間 ビュー](../profiling/object-lifetime-view.md)
 
  プロファイリング実行で割り当てられた型、およびその型のインスタンスの数、バイト単位のサイズ、ガベージ コレクション ジェネレーションが一覧で表示されます。
 
@@ -76,7 +78,7 @@ ms.locfileid: "74779273"
  プロファイリング実行でのインストルメント化された関数に対するメモリ割り当てデータが一覧で表示されます。
 
 ## <a name="reference"></a>リファレンス
-- [[関数の詳細] ビュー](../profiling/function-details-view.md)
+- [関数の詳細ビュー](../profiling/function-details-view.md)
 
  選択した関数と、選択した関数を呼び出した関数および選択した関数によって呼び出された関数の関係がグラフィカルな図で表示されます。
 
@@ -89,7 +91,7 @@ ms.locfileid: "74779273"
  プロファイル データ ファイルに挿入された ETW およびサンプリング イベントが一覧表示されます。
 
 ## <a name="related-sections"></a>関連項目
-- [プロファイラー サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)
+- [サンプリング メソッドのデータ ビュー](../profiling/profiler-sampling-method-data-views.md)
 
  サンプリング メソッドを使用して生成されたプロファイラー データ ファイルのビューとレポートに関するリファレンス情報。
 

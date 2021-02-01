@@ -1,5 +1,7 @@
 ---
 title: 収集方法を選択する | Microsoft Docs
+description: Visual Studio プロファイル ツールでは、3 種類のパフォーマンス データ収集方法がサポートされています。 アプリケーションに必要なものを選択する方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b66df2f302790f579891c337b217e76202e79ac
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3fe102c7ebd8ed551a0da4e92c66dfac8acb78ec
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851308"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801586"
 ---
 # <a name="how-to-choose-collection-methods"></a>方法: 収集方法を選択する
 
@@ -42,7 +44,7 @@ Visual Studio プロファイリング ツールでは、サンプリング、�
 
 ### <a name="to-select-a-collection-method-using-performance-explorer"></a>パフォーマンス エクスプローラーを使用して収集方法を選択するには
 
-1. **パフォーマンス エクスプローラー**のツール バーで、 **[メソッド]** ドロップダウン リストの横の矢印をクリックします。
+1. **パフォーマンス エクスプローラー** のツール バーで、 **[メソッド]** ドロップダウン リストの横の矢印をクリックします。
 
 2. 必要な収集方法をクリックします。
 
@@ -50,7 +52,7 @@ Visual Studio プロファイリング ツールでは、サンプリング、�
 
 ### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>パフォーマンス セッションのプロパティを使用して、サンプリング方式またはインストルメンテーション方式を選択するには
 
-1. **パフォーマンス エクスプローラー**でパフォーマンス セッションを選択します。
+1. **パフォーマンス エクスプローラー** でパフォーマンス セッションを選択します。
 
      パフォーマンス セッション ファイル名の拡張子は .*psess* です。
 
@@ -66,7 +68,7 @@ Visual Studio プロファイリング ツールでは、サンプリング、�
 
 ### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>パフォーマンス セッションのプロパティを使用して .NET メモリ データの収集を選択するには
 
-1. **パフォーマンス エクスプローラー**でパフォーマンス セッションを選択します。
+1. **パフォーマンス エクスプローラー** でパフォーマンス セッションを選択します。
 
      パフォーマンス セッション ファイル名の拡張子は .psess です。
 
@@ -84,7 +86,7 @@ Visual Studio プロファイリング ツールでは、サンプリング、�
 
 ### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>パフォーマンス セッションのプロパティを使用してコンカレンシー データの収集を選択するには
 
-1. **パフォーマンス エクスプローラー**で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
+1. **パフォーマンス エクスプローラー** で、パフォーマンス セッションを右クリックして、 **[プロパティ]** をクリックします。
 
 2. **[プロパティ ページ]** で **[全般]** をクリックします。
 

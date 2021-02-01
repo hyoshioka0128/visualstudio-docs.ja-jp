@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス データ ファイルを使ったシンボル情報の保存 | Microsoft Docs
+description: パフォーマンス プロジェクトの設定を指定し、レポート ファイルにシンボルを保存またはシリアル化する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 74137752900d082c545dd5e5271b7700ec81fa01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 142e73a65fa9ffd2210719d84f18a25068762acb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778298"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720216"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>パフォーマンス データ ファイルを使ったシンボル情報の保存
 
-Visual Studio IDE を使用してファイルを分析している場合、VSP ファイルを別のコンピューターに移動するには、シンボルをレポート ファイルに保存するか*シリアル化*するようにパフォーマンス プロジェクトの設定を行う必要があります。 この結果、レポート ファイルのサイズが大きくなります。 シンボルのシリアル化は次の 2 つの理由で必要になります。
+Visual Studio IDE を使用してファイルを分析している場合、VSP ファイルを別のコンピューターに移動するには、シンボルをレポート ファイルに保存するか *シリアル化* するようにパフォーマンス プロジェクトの設定を行う必要があります。 この結果、レポート ファイルのサイズが大きくなります。 シンボルのシリアル化は次の 2 つの理由で必要になります。
 
 - ターゲット アセンブリが一時的なストレージから失われる前に、コード シンボルをパフォーマンス レポートに埋め込むため。
 
@@ -28,7 +29,7 @@ Visual Studio IDE を使用してファイルを分析している場合、VSP �
 
 シンボルは、次の方法で Visual Studio IDE やコマンド ラインからシリアル化できます。
 
-- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE でシンボルをシリアル化するには、メニュー バーの **[ツール]** をポイントし、 **[オプション]** をクリックします。 **[オプション]** ウィンドウで、 **[パフォーマンス ツール]** を選択し、 **[シンボル情報を自動的にシリアル化]** チェック ボックスをオンにします。
+- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE でシンボルをシリアル化するには、メニュー バーの **[ツール]** をポイントし、**[オプション]** をクリックします。 **[オプション]** ウィンドウで、**[パフォーマンス ツール]** を選択し、**[シンボル情報を自動的にシリアル化]** チェック ボックスをオンにします。
 
 - PACKSYMBOLS は、これに相当するレポート ファイル保存時のコマンド ライン オプションです。 シンボルをシリアル化するには、「**vsperfreport /summary:all /packsymbols filename.vsp**」と入力します。
 

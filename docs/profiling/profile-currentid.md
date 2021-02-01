@@ -1,5 +1,6 @@
 ---
 title: PROFILE_CURRENTID | Microsoft Docs
+description: PROFILE_CURRENTID を使用して、明示的に指定されたものではなく、現在のスレッドまたはプロセスに対して関数を機能させる方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5639726762359bb8ba2fb374ee8ddc5c78e2f4da
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 5171753ff8ea6722cf1d97e155352e3899fb5562
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407576"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719488"
 ---
 # <a name="profile_currentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID は、NameProfile、StartProfile、StopProfile、SuspendProfile、および ResumeProfile の各関数呼び出しで、スレッド ID またはプロセス ID の疑似トークンを返します。 指定されたスレッドやプロセスではなく、現在のスレッドまたはプロセスで関数を実行する場合に使用します。
@@ -58,7 +59,7 @@ void ExerciseProfileCurrentID()
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [NameProfile](../profiling/nameprofile.md)
 - [ResumeProfile](../profiling/resumeprofile.md)

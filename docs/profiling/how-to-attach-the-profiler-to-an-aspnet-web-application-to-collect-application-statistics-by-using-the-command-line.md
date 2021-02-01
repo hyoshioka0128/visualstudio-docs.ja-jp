@@ -1,5 +1,6 @@
 ---
 title: ASP.NET にプロファイラーをアタッチし、アプリの統計情報を取得する
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、プロファイラーを ASP.NET Web アプリにアタッチし、サンプリング メソッドを使用してパフォーマンス統計情報を取得します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 753213060ea3aaf1269509e65de8c70a71aec3a2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f79591c58865631b20aecb3554e9502a22f6c7b9
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807860"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801631"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンドライン ツールを使用してプロファイラーを ASP.NET Web アプリケーションにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。
@@ -89,7 +90,7 @@ ms.locfileid: "90807860"
 ## <a name="control-data-collection"></a>データ収集の制御
  アプリケーションの実行中は、*VSPerfCmd.exe* のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
+#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
 - 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 

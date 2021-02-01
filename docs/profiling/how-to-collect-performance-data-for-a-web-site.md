@@ -1,5 +1,7 @@
 ---
-title: Web サイトのパフォーマンス データを収集する | Microsoft Docs
+title: Web サイトのパフォーマンス データを収集する | Microsoft
+description: パフォーマンス ウィザードを使用して、ASP.NET Web アプリのパフォーマンス データを収集する方法について学習します。 アプリはローカル コンピューター上で実行され、Visual Studio で開くことができます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851477"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801052"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>方法: Web サイトのパフォーマンス データを収集する
 
@@ -80,7 +82,7 @@ ms.locfileid: "90851477"
 
    - サーバー (IIS) ベースの Web サイトの場合は、 **<`http://localhost/MySite/default.aspx`>** などの URL を入力します。 これにより、ローカル コンピューターの MySite のアプリケーション ルートで [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションがプロファイリングされ、そのサイトの default.aspx ページが Internet Explorer で起動されて、セッションが開始されます。
 
-   - ファイル ベースの Web サイトの場合は、file///**c:\WebSites\MySite\default.aspx**のようなパスを入力します。 これにより、c:\webSites\MySite に置かれている [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションがプロファイリングされ、`http://localhost:nnnn/MySite/default.aspx` ページが Internet Explorer で起動されて、セッションが開始されます。
+   - ファイル ベースの Web サイトの場合は、file///**c:\WebSites\MySite\default.aspx** のようなパスを入力します。 これにより、c:\webSites\MySite に置かれている [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションがプロファイリングされ、`http://localhost:nnnn/MySite/default.aspx` ページが Internet Explorer で起動されて、セッションが開始されます。
 
    - 外部サイトで JavaScript データを収集する場合は、`http://www.contoso.com` のような URL を入力します。
 

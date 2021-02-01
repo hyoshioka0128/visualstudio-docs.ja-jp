@@ -1,6 +1,7 @@
 ---
 title: プロファイラーを .NET にアタッチし、コンカレンシー データを収集する - コマンド ライン
 titleSuffix: ''
+description: Visual Studio プロファイル ツールを使用して、プロファイラーを .NET Framework サービスにアタッチすると、サンプリング メソッドを使用してプロセスおよびスレッド競合データを取得できます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7b9b2e9a90df1b9dcfaaa2fd7b77410e24e32a9a
-ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
+ms.openlocfilehash: c3b7a8e255094cb03cac8708dbaa4cb4a938db24
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91421808"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800372"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを .NET サービスにアタッチし、コンカレンシー データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、プロファイラーを .NET Framework サービスにアタッチし、サンプリング メソッドによってプロセス データとスレッド コンカレンシー データを収集する方法について説明します。
@@ -53,7 +54,7 @@ ms.locfileid: "91421808"
 
      **/start** を使用するには、[/output](../profiling/output.md) **:** `OutputFile` オプションを指定する必要があります。 `OutputFile` には、プロファイル データ (.vsp) ファイルの名前と場所を指定します。
 
-     **/start**では、次のうちいずれかのオプションを指定できます。
+     **/start** では、次のうちいずれかのオプションを指定できます。
 
     > [!NOTE]
     > **/user** オプションと **/crosssession** オプションは、通常、サービスで必要です。

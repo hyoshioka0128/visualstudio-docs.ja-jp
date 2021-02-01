@@ -1,5 +1,6 @@
 ---
 title: プロファイラーを .NET にアタッチし、コンカレンシー データを収集する
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、実行中の .NET Framework アプリにプロファイラーをアタッチすることによって、プロセスとスレッドのコンカレンシー データを取得する方法について学習します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4e071df829d01d638fb268f4f52df2ce731f75c1
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4d584d9d6cecc4d5df0f3c32172d4aeec9c02c97
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808039"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801129"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーをスタンドアロンの .NET Framework アプリケーションにアタッチし、コンカレンシー データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、実行中の .NET Framework のスタンドアロン (クライアント) アプリケーションにプロファイラーをアタッチし、プロセスとスレッドのコンカレンシー データを収集する方法について説明します。

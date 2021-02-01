@@ -1,5 +1,7 @@
 ---
 title: CvReleaseProvider 関数 | Microsoft Docs
+description: コンカレンシー ビジュアライザー SDK 関数 CvReleaseProvider (C ライブラリ) のリファレンス情報を参照してください。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5175f7f649dad3feed9f93a6e34ae5986ecda11b
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332182"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686416"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 関数
 マーカー プロバイダーをリリースします。 マーカー プロバイダーをリリースしても、このプロバイダーの以前に作成したマーカー系列には影響がありません。 マーカー系列は、CvReleaseMarkerSeries を呼び出すことで個別にリリースする必要があります。 プロバイダーのリリースに失敗すると、メモリ漏れが発生します。

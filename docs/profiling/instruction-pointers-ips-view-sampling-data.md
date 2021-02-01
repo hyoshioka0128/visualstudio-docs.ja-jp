@@ -1,5 +1,6 @@
 ---
 title: 命令ポインター (IP) ビュー - サンプリング データ | Microsoft Docs
+description: サンプリング データの IP ビューには、プロファイルを実行してサンプルを収集したときに直接実行したアセンブリ命令のパフォーマンス データが一覧表示されます。そのしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +12,27 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 42398e044bfc06e41249b15ac9baeebcaebd19f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f08821516ca25ed4e1746e13e506b9c0094b0227
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774257"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721555"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>命令ポインター (IP) ビュー - サンプリング データ
 サンプリング データの IP ビューには、プロファイルを実行してサンプルを収集したときに直接実行したアセンブリ命令のパフォーマンス データが一覧表示されます。
 
 > [!NOTE]
-> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 ｢[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
+> Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
 
-|Column|[説明]|
+|列|説明|
 |------------|-----------------|
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|
 |**プロセス名**|プロセスの名前です。|
 |**モジュール名**|命令を含むモジュールの名前。|
 |**モジュール パス**|命令を含むモジュールのパスです。|
 |**[転送元ファイル]**|命令を含むソース ファイル。|
-|**関数名**|命令を含む関数の名前です。|
+|**関数名**|命令を含む関数の名前。|
 |**関数行番号**|ソース ファイルでのこの関数の開始行番号です。|
 |**関数アドレス**|読み込まれたバイナリ内の関数の開始メモリ アドレス。|
 |**ソース開始行**|このサンプルが収集されたソース ファイル内の開始行番号です。|
@@ -39,8 +40,8 @@ ms.locfileid: "74774257"
 |**ソース開始文字番号**|このサンプルが収集されたソース ファイル行内の開始文字のオフセットです。|
 |**ソース終了文字番号**|このサンプルが収集されたソース ファイル行内の終了文字のオフセットです。|
 |**命令ポインター アドレス**|読み込まれたバイナリ内の命令のアドレスです。|
-|**排他サンプル数**|命令を実行していたときに収集されたサンプルの合計数です。|
-|**排他サンプル %**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|
+|**排他サンプル**|命令を実行していたときに収集されたサンプルの合計数です。|
+|**サンプル % (関数のみ)**|命令を実行していたときに収集された、プロファイル実行内のすべてのサンプルの割合です。|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [命令ポインター (IP) ビュー - サンプリング](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

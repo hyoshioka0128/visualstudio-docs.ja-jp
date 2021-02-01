@@ -1,5 +1,7 @@
 ---
 title: Events (VSPerfCmd) | Microsoft Docs
+description: VSPerfCmd.exe コマンドライン ツールの Events オプションを使用して、Event Trace for Windows (ETW) のログを制御します。 構文パラメーターを確認します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b47f9b615c824d25e931cd3d05f5d2a04257ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 614ac24e38966c1d09df91d6771cab2b3914454d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777322"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801389"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 *VSPerfCmd.exe* **Events** オプションは、Windows イベント トレーシング (ETW) のログ記録を制御します。 ETW データは、プロファイラー データ ファイルとは別の .etl ファイルに保存されます。 このデータは、[VSPerfReport](../profiling/vsperfreport.md) /summary:etw コマンドを利用し、レポートで表示できます。
@@ -60,7 +62,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 
  カーネル プロバイダーのみを有効にできます。 モニターがシャットダウンするまで、無効にできません。そのフラグを変更することもできません。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
 
 > [!NOTE]
 > CLR ETW イベントが有効になっていると、追加のスタートアップ データがトレース ビュー レポートでも集められます。 スタートアップ イベントがレポートに表示されないようにするには、次のコマンドを使用します。
@@ -70,7 +72,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```
 
 > [!IMPORTANT]
-> スタートアップ イベントを除外しない場合、スタートアップ イベントはマネージド オブジェクト フォーマット (MOF) ファイルに一覧表示されないため、レポートに GUID として表示されます。 詳細については、Microsoft Web サイトの「[Sample Managed Object Format (MOF) File](https://msdn.microsoft.com/library/default.aspx)」 (マネージド オブジェクト フォーマット (MOF) ファイルのサンプル) を参照してください。
+> スタートアップ イベントを除外しない場合、スタートアップ イベントはマネージド オブジェクト フォーマット (MOF) ファイルに一覧表示されないため、レポートに GUID として表示されます。 詳細については、Microsoft Web サイトの「[MOF (Managed Object Format) ファイルのサンプル](https://msdn.microsoft.com/library/default.aspx)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [VSPerfCmd](../profiling/vsperfcmd.md)

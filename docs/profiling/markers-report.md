@@ -1,5 +1,6 @@
 ---
 title: マーカー レポート | Microsoft Docs
+description: 表示されたタイム フレームでのマーカーがマーカー レポートに一覧表示されるしくみと、パンやズームでマーカーが現れたり、消えたりする現象について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64808262"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722114"
 ---
 # <a name="markers-report"></a>マーカー レポート
 マーカー レポートには、表示されているタイム フレーム内のマーカーが一覧表示されます。  レーンをパン、ズーム、または非表示にすると、マーカーの表示/非表示が切り替わる場合があります。 レポートには、各マーカーに関する次の情報が含まれています。
@@ -38,7 +39,7 @@ ms.locfileid: "64808262"
 
 - それが表すものについての概要
 
-  マーカー レポートを CSV ファイルとして保存するには、 **[エクスポート]** ボタンを選択します。 CSV ファイル内のデータは、他のアプリやツールで使用することができます。
+  マーカー レポートを CSV ファイルとして保存するには、**[エクスポート]** ボタンを選択します。 CSV ファイル内のデータは、他のアプリやツールで使用することができます。
 
 > [!NOTE]
 > マーカー レポートでは 1,000 個のマーカーを表示できます。 すべてのマーカーを表示するには、レポート全体を CSV ファイルにエクスポートします。

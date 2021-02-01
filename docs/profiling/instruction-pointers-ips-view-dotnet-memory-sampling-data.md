@@ -1,5 +1,6 @@
 ---
 title: 命令ポインター (IP) ビュー - .NET メモリ サンプリング データ
+description: サンプリング メソッドを使用して収集された .NET メモリの割り当てプロファイル データの IP ビューには、メモリを割り当てたアセンブリ命令が一覧表示されます。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +12,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6f02c2cea714b6c9688efff217ed546490f61764
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d89ede5d7b58bf2605413d8e0621d81983549f34
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809951"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721581"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>命令ポインター (IP) ビュー - .NET メモリ サンプリング データ
 サンプリング メソッドを使用して収集された .NET メモリの割り当てプロファイル データの IP ビューには、プロファイル実行中にメモリを割り当てたアセンブリ命令が一覧表示されます。 ビューの列には、割り当てのサイズと数も一覧表示されます。
 
  排他的な値のみが一覧表示されます。
 
-|Column|[説明]|
+|Column|説明|
 |------------|-----------------|
 |**プロセス ID**|プロファイリング実行のプロセス ID (PID) です。|
 |**プロセス名**|プロセスの名前です。|

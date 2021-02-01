@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: VSPerfCmd.exe ツールを使用してパフォーマンス データの収集を開始および停止する方法について学習します。 また、VSPerfCmd ツールのさまざまなオプションについても説明します。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330009"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719189"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 *VSPerfCmd.exe* ツールはパフォーマンス データ収集の開始と停止に使用されます。 このツールでは、次の構文が使用されます。

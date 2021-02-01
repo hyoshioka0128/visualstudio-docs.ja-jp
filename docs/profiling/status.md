@@ -1,5 +1,6 @@
 ---
 title: Status | Microsoft Docs
+description: VSPerfCmd.exe の Status オプションを使用すると、プロファイラーの状態や現在プロファイルを実行中の任意のプロセスに関する情報がどのように表示されるかについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778246"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722712"
 ---
 # <a name="status"></a>Status
-*VSPerfCmd.exe の * **Status** オプションでは、プロファイラーの状態、および現在プロファイルを実行中の任意のプロセスに関する情報が表示されます。
+*VSPerfCmd.exe の* **Status** オプションでは、プロファイラーの状態、および現在プロファイルを実行中の任意のプロセスに関する情報が表示されます。
 
- コマンド ラインで指定するオプションは **Status** オプションのみにする必要があります。 状態を表示するには、*VSPerfCmd.exe の * **Start** オプションを使用してプロファイラーを初期化しておく必要があります。
+ コマンド ラインで指定するオプションは **Status** オプションのみにする必要があります。 状態を表示するには、*VSPerfCmd.exe の* **Start** オプションを使用してプロファイラーを初期化しておく必要があります。
 
 ## <a name="syntax"></a>構文
 
@@ -33,7 +34,7 @@ VSPerfCmd.exe /Status
 ## <a name="remarks"></a>解説
  **Status** オプションでは、プロファイラーに関して、次の状態情報を表示します。
 
- **出力ファイル名**現在のプロファイラー データ ファイルのパスとファイル名。
+ **出力ファイル名** 現在のプロファイラー データ ファイルのパスとファイル名。
 
  **コレクション モード** SAMPLE または TRACE
 
@@ -55,7 +56,7 @@ VSPerfCmd.exe /Status
 
  **開始/停止数** このプロセスに対するデータ収集を制御するプライマリ内部プロファイラー カウント。 データを収集するには、このカウントが 1 である必要があります。 開始/停止数は、プロファイラー API、および VSPerfCmd オプションである **GlobalOn**、**GlobalOff**、**ProcessOn**、**ProcessOff**、**ThreadOn**、および **ThreadOff** によって操作できます。
 
- **保留/再開数** このプロセスに対するデータ収集を制御するセカンダリ内部プロファイラー カウント。 データを収集するには、このカウントが 0 以下である必要があります。 **保留/再開**数は、プロファイラー API によってのみ操作できます。
+ **保留/再開数** このプロセスに対するデータ収集を制御するセカンダリ内部プロファイラー カウント。 データを収集するには、このカウントが 0 以下である必要があります。 **保留/再開** 数は、プロファイラー API によってのみ操作できます。
 
  **監視するアクセス権を伴うユーザー** プロファイラーにアクセスできるユーザーの名前を一覧表示します。 VSPerfCmd.exe の **Admin** オプションを使用して、追加ユーザーにアクセスを許可できます。
 

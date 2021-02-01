@@ -1,5 +1,7 @@
 ---
 title: CPU 使用状況グラフ | Microsoft Docs
+description: 時間経過に対するアプリの使用状況のレベルを示す CPU 使用状況グラフについて学習します。 使用状況は、使用中の論理コアの数として表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +14,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e09526930bf98141ae4f9d4d204b20383763c208
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b310510a87e450c0d6b83a457cd117267ce0c9b8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552877"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719020"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用状況グラフ
-CPU 使用状況グラフは、時間経過に対するアプリの使用状況のレベルを示します。 X 軸はトレースの期間を表し、Y 軸はシステム上の論理コアの数を表します。 任意の時点にどのコアがアクティブかは表示されません。 たとえば、2 つのコアが特定の期間それぞれ最大利用可能時間の 50% 実行されている場合、このビューには使用されている 1 つの論理コアが表示されます。
+CPU 使用状況グラフは、時間経過に対するアプリの使用状況のレベルを示します。 X 軸はトレースの期間を表し、Y 軸はシステム上の論理コアの数を表します。 任意の時点にどのコアがアクティブかは表示されません。 たとえば、特定の期間、2 つのコアがそれぞれキャパシティの 50% で動作している場合、このビューには 1 つの論理コアが使用されているものとして表示されます。
 
 ## <a name="cpu-utilization-graph-colors"></a>CPU 使用状況グラフの色
 
@@ -32,6 +34,6 @@ CPU 使用状況グラフは、時間経過に対するアプリの使用状況�
 
 - 白は、システム上の未使用の論理コアを使用できるかどうかを示します。 これらのコアは、並列処理の機会があれば、プロセスで使用できます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [使用状況ビュー](../profiling/utilization-view.md)
 - [平均 CPU 使用状況](../profiling/average-cpu-utilization.md)
