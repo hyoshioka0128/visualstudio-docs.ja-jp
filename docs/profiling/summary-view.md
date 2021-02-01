@@ -1,5 +1,6 @@
 ---
 title: 概要ビュー | Microsoft Docs
+description: プロファイル実行で最もパフォーマンスに負荷のかかる関数またはオブジェクトに関する情報が、概要ビューにどのように表示されるかを学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a12989004b5bed8601bdda1ec0719eda789ff822
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 154f168044e5395a534b4a79ea44d9eafe6293f6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85546888"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719280"
 ---
 # <a name="summary-view"></a>概要ビュー
 概要ビューには、プロファイル実行で最もパフォーマンスに負荷のかかる関数またはオブジェクトに関する情報が表示されます。 このビューには、タイムライン グラフと、プロファイル方法のパフォーマンス メトリックスに基づいて最も負荷のかかる関数またはオブジェクトの 2 つ以上の一覧が表示されます。 このビュー内のデータは、使用されたプロファイル方法 (サンプリング、インストルメンテーション、またはコンカレンシー) および .NET メモリ割り当てを収集対象としたかどうかによって異なります。

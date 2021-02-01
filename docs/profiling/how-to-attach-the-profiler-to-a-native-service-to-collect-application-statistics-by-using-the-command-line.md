@@ -1,5 +1,6 @@
 ---
 title: プロファイラーをネイティブ サービスにアタッチしてアプリの統計を取得する
+description: コマンド ラインから Visual Studio プロファイル ツールを使用して、ネイティブ サービスからパフォーマンス統計情報を収集します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb36988c17ecf55a5a53d14da03dc993b4d59250
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0fa6b1733d7c3d31d32294c3e08b29a072d37730
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808016"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801095"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line-vsperfcmd"></a>方法: コマンド ライン (VSPerfCmd) を使用してプロファイラーをネイティブ サービスにアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、プロファイラーをネイティブ サービスにアタッチし、サンプリング メソッドによってパフォーマンスに関する統計情報を収集する方法について説明します。
@@ -77,7 +78,7 @@ ms.locfileid: "90808016"
 ## <a name="control-data-collection"></a>データ収集の制御
  対象アプリケーションの実行中に、*VSPerfCmd.exe* のオプションを使用して、プロファイラー データ ファイルへのデータの書き込みを開始および停止できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
+#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
 - 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 

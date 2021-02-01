@@ -1,5 +1,6 @@
 ---
 title: LineOff | Microsoft Docs
+description: VSPerfCmd LineOff オプションを指定すると、VSPerfCmd を使用してアプリケーションを起動するときに、行番号データの収集が無効になります。そのしくみについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 45ec3592049e00d6a492c489e8fb60254003ac6d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774127"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721412"
 ---
 # <a name="lineoff"></a>LineOff
 既定では、サンプリング プロファイル方法を使用するときに、プロファイラーがソース コードの行番号と行番号オフセットのデータを収集します。 VSPerfCmd **LineOff** オプションを指定すると、VSPerfCmd を使用してアプリケーションを起動するときに、行番号データの収集が無効になります。 **LineOff** が指定されている場合、プロファイル データは関数レベルで収集されます。

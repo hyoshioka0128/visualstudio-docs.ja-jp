@@ -1,5 +1,6 @@
 ---
 title: 表示するスレッド アクティビティがありません (スレッド ビュー) | Microsoft Docs
+description: 現在表示されている時間範囲で表示するアクティビティがないスレッド ビューについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62794469"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722881"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>表示するスレッド アクティビティがありません (スレッド ビュー)
 この領域には、現在表示されている時間範囲で非表示になっていないスレッドに関するデータが表示されます。
@@ -32,5 +33,5 @@ ms.locfileid: "62794469"
 
 - 不要項目の非表示が低いしきい値に設定されていることを確認してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

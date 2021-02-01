@@ -1,5 +1,6 @@
 ---
 title: QueryCounters | Microsoft Docs
+description: QueryCounters オプションを使用して、コンピューターに対して使用できる CPU (ハードウェア) パフォーマンス カウンターを一覧表示する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8059d4b2-af61-4a47-a6c2-8da5c0741c74
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24379a720ccaa3405cbe5c127f3b8abaf12e49aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d33b6fe42f786218bf78825a356a25edff2b31ae
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771910"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720437"
 ---
 # <a name="querycounters"></a>QueryCounters
 **QueryCounters** オプションは、コンピューターで使用可能な CPU (ハードウェア) パフォーマンス カウンターをリストします。
@@ -35,7 +36,7 @@ VSPerfCmd.exe /QueryCounters
 
  プロセッサごとに異なる CPU パフォーマンス カウンターが公開されます。 プロファイラーは、ほぼすべてのプロセッサで使用できる一連の汎用カウンターを定義します。 **QueryCounters** オプションでは、汎用カウンター名と、プロセッサに固有のカウンター名の両方をリストします。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [VSPerfCmd](../profiling/vsperfcmd.md)
 - [スタンドアロン アプリケーションのプロファイリング](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [ASP.NET Web アプリケーションのプロファイリング](../profiling/command-line-profiling-of-aspnet-web-applications.md)

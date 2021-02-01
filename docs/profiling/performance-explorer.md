@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス エクスプローラー | Microsoft Docs
+description: Visual Studio のプロファイリング ツールを使用すると、コード内のパフォーマンス関連の問題を開発者がどのように計測、評価、特定できるかについて学習します。
 ms.date: 06/19/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +14,14 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89399d49909e1c9067723e75a1adbaa123865758
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7a796ee0791fd96edf1e54954df47f2983df3ee4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778480"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722777"
 ---
-# <a name="performance-explorer"></a>パフォーマンス エクスプ ローラー
+# <a name="performance-explorer"></a>パフォーマンス エクスプローラー
 
 Visual Studio のプロファイリング ツールを使用すると、開発者は、コード内のパフォーマンス関連の問題を計測、評価、および特定することができます。 これらのツールは IDE に完全に統合されており、シームレスでわかりやすいユーザー エクスペリエンスを提供します。
 
@@ -46,6 +47,6 @@ Visual Studio のプロファイリング ツールを使用すると、開発�
 |**プロファイリングをプログラムで制御する:** プロファイリング ツールのマネージド API とネイティブ API を使用して、ソース コードから直接データ コレクションを制御する方法について説明します。|[プロファイリング ツールの API](../profiling/profiling-tools-apis.md)|
 |**プロファイリングに関する問題のトラブルシューティング**|[パフォーマンス ツールに関する問題のトラブルシューティング](../profiling/troubleshooting-performance-tools-issues.md)|
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 [プロファイル ツールの概要](../profiling/profiling-feature-tour.md)

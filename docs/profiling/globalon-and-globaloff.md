@@ -1,5 +1,7 @@
 ---
 title: GlobalOn と GlobalOff | Microsoft Docs
+description: VSPerfCmd.exe の GlobalOn と GlobalOff のオプションを確認します。 これらのオプションは、コマンド ライン プロファイル セッションのプロセスとスレッドのプロファイルを一時停止および再開するために使用されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
@@ -9,15 +11,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: eaeac096c6bdff77368508bd34276d66530fa739
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74776967"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801345"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn と GlobalOff
-*VSPerfCmd.exe* の **GlobalOff** オプションと **GlobalOn** オプションは、コマンド ライン プロファイル セッションのすべてのプロセスとスレッドのプロファイリングを一時停止および再開するために使用されます。
+*VSPerfCmd.exe の* **GlobalOff** オプションと **GlobalOn** オプションは、コマンド ライン プロファイル セッションのすべてのプロセスとスレッドのプロファイリングを一時停止および再開するために使用されます。
 
  **GlobalOn** および **GlobalOff** は、*VSPerfCmd.exe* コマンド ラインの唯一のオプションとして指定することも、**Start** オプション、**Launch** オプション、または **Attach** オプションを含んでいるコマンド ラインに含めることもできます。
 
@@ -44,7 +46,7 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```
 
 #### <a name="parameters"></a>パラメーター
- None
+ なし
 
 ## <a name="valid-options"></a>有効なオプション
  **GlobalOn** と **GlobalOff** は、次のオプションを含んでいるコマンド ラインで指定できます。

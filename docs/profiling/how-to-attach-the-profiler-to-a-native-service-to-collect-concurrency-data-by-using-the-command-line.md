@@ -1,5 +1,6 @@
 ---
 title: プロファイラーをネイティブ サービスにアタッチしてコンカレンシー データを取得する
+description: コマンド ラインから Visual Studio プロファイル ツールを使用して、ネイティブ (C/C++) サービスからプロセスおよびスレッドのコンカレンシー データを収集します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55398d2ab914ea03b431557775e1bd1064969590
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 233d6d77fad3997fead9126065b2f867ac8ffd2e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808003"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801080"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line-vsperfcmd"></a>方法: コマンド ライン (VSPerfCmd) を使用してプロファイラーをネイティブ サービスにアタッチし、コンカレンシー データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、プロファイラーをネイティブ (C/C++) サービスにアタッチし、サンプリング メソッドによってプロセスおよびスレッド コンカレンシー データを収集する方法について説明します。

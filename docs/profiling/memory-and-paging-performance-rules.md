@@ -1,5 +1,6 @@
 ---
 title: メモリとページングのパフォーマンス規則 | Microsoft Docs
+description: メモリとページングのカテゴリのパフォーマンス規則を使用して、アプリケーションのパフォーマンスと応答性に影響を与える可能性があるページング アクティビティをプロファイル実行で特定する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f37972b2-efe4-4a1c-a5d1-a246ccd76817
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 716bc771310b73c8a0b11a97080184d9868fe91b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e1cddda12fbb67f9b604186e754146558cdd62ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535136"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720606"
 ---
 # <a name="memory-and-paging-performance-rules"></a>メモリとページングのパフォーマンス規則
 メモリとページングのカテゴリのパフォーマンス規則は、アプリケーションのパフォーマンスと応答性に影響を与える可能性があるページング アクティビティをプロファイル実行で特定します。

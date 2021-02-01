@@ -1,5 +1,7 @@
 ---
 title: プロファイル ツールの ETW レポートを作成する | Microsoft Docs
+description: Event Trace for Windows (ETW) レポートの作成方法について学習します。 ここには、Visual Studio プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13de203a6a9082b33f5d68f8b4e2fbdc6f0e14b3
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c35a3e2d7da9472167c2ac20400fe3b3992b4883
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851191"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800488"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>方法: プロファイリング ツールの ETW レポートを作成する
 Windows イベント トレーシング (ETW) レポートには、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのパフォーマンス セッションで記録された ETW イベントが一覧表示されます。 ETW データはバイナリ (.*etl*) ファイルで収集されます。 このレポートの詳細については、「[ETW (Event Tracing for Windows) レポート](../profiling/event-tracing-for-windows-etw-report.md)」を参照してください。

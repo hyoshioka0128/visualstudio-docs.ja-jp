@@ -1,5 +1,7 @@
 ---
 title: CPU カウンター データを収集する | Microsoft Docs
+description: CPU (ハードウェア) イベント カウンターを使用してハードウェア固有のパフォーマンス データを収集する方法について学習します。 この記事では、さまざまな種類のイベントを示します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851282"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801561"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>方法: CPU カウンター データを収集する
 
@@ -30,9 +32,9 @@ CPU イベント カウンターはハードウェア固有のパフォーマン
 
 - プラットフォーム イベント - 特定の CPU に関連付けられた CPU イベントです。
 
-  ポータブル イベントには、Instructions Retired や Non Halted Cycles などの一般的なイベント、CPU バッファー イベント、分岐イベント、L2 キャッシュ イベントなどがあります。 使用できるプラットフォーム イベント カウンターはプロセッサの製造元によって決まります。
+ポータブル イベントには、Instructions Retired や Non Halted Cycles などの一般的なイベント、CPU バッファー イベント、分岐イベント、L2 キャッシュ イベントなどがあります。 使用できるプラットフォーム イベント カウンターはプロセッサの製造元によって決まります。
 
-  イベントのカテゴリは、ポータブル カウンターとプラットフォーム カウンターの間で共有できます。 たとえば、次のデータのカテゴリは、両方のタイプで一般的に共通するものです。
+イベントのカテゴリは、ポータブル カウンターとプラットフォーム カウンターの間で共有できます。 たとえば、次のデータのカテゴリは、両方のタイプで一般的に共通するものです。
 
 - メモリ イベント。
 
@@ -40,7 +42,7 @@ CPU イベント カウンターはハードウェア固有のパフォーマン
 
 - 分岐イベント。
 
-  プロファイラーでは、次の 2 つの方法でパフォーマンス カウンター データを収集できます。
+プロファイラーでは、次の 2 つの方法でパフォーマンス カウンター データを収集できます。
 
 - インストルメンテーションによってプロファイリングする場合は、1 つ以上のカウンターからデータを収集します。
 

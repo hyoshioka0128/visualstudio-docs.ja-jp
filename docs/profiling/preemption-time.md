@@ -1,5 +1,6 @@
 ---
 title: 優先時間 | Microsoft Docs
+description: 優先時間と、タイムライン内のこれらのセグメントが優先として分類されるブロック時間と関連付けられていることについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62935894"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719514"
 ---
 # <a name="preemption-time"></a>優先時間
 タイムライン内のこれらのセグメントは、優先として分類されるブロック時間と関連付けられています。 このカテゴリは、次のいずれかの理由によってスレッドが切り替えられたことを意味します。
@@ -30,5 +31,5 @@ ms.locfileid: "62935894"
 
   優先セグメントのツールヒントには、優先の原因となったプロセスまたはスレッドの名前が表示されます。 ただし、優先されたプロセスまたはスレッドが優先期間を通じて実際に実行されることを意味するものではありません。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,6 @@
 ---
 title: プロファイラーを .NET のスタンドアロン アプリにアタッチし、アプリの統計を取得する
+description: Visual Studio プロファイル ツールのコマンド ライン ツールを使用して、実行中の .NET Framework のスタンドアロン (クライアント) アプリケーションにプロファイラーをアタッチし、統計情報を取得する方法について学習します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89c7f4141459f612f55a2253e37a6e56349fcb6a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 899a74894e34b43f87a7f45b4c4c90fff60088a1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808052"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801148"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>方法: コマンド ラインを使用して .NET Framework のスタンドアロン アプリケーションにプロファイラーをアタッチし、アプリケーションの統計情報を収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、実行中の .NET Framework スタンドアロン (クライアント) アプリケーションにプロファイラーをアタッチし、サンプリング メソッドを使用してパフォーマンスに関する統計情報を収集する方法について説明します。

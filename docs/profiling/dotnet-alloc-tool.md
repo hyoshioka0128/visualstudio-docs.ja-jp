@@ -1,5 +1,7 @@
 ---
 title: .NET オブジェクトのメモリ使用量の分析 | Microsoft Docs
+description: .NET オブジェクト割り当てツールを使用して、アプリで使用されているメモリの量と、最も多くのメモリを割り当てるコード パスを示します。
+ms.custom: SEO-VS-2020
 ms.date: 12/9/2019
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 4c0d8b02f867797317ff762e7a23bec042f93318
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95970229"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801492"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>.NET オブジェクト割り当てツールを使用してメモリ使用量を分析する
 
@@ -32,7 +34,7 @@ ms.locfileid: "95970229"
 
 1. **[開始]** ボタンを選択してツールを実行します。
 
-1. ツールの実行が開始されたら、アプリ内でプロファイリングするシナリオを検討します。 次に、**コレクションの停止** を選択するか、アプリを閉じてデータを確認します。
+1. ツールの実行が開始されたら、アプリ内でプロファイリングするシナリオを検討します。 次に、 **[収集の停止]** を選択するかアプリを閉じてデータを確認します。
 
    ![コレクションの停止を表示しているウィンドウ](../profiling/media/stopcollectionlighttheme.png "コレクションの停止を表示しているウィンドウ")
 

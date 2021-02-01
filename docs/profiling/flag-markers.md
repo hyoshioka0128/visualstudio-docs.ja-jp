@@ -1,5 +1,7 @@
 ---
 title: フラグ マーカー | Microsoft Docs
+description: Visual Studio コンカレンシー ビジュアライザーでのフラグ マーカーの機能について学習します。 フラグ マーカーは、ある時点にアプリで何かが発生したことを表します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccc0c7aa3386e906ad13331a596953db70240701
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc7b128915b7fc961b44aa7d70a24a813d432ddf
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969960"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801475"
 ---
 # <a name="flag-markers"></a>フラグ マーカー
 フラグ マーカーは、ある時点にアプリで何かが発生したことを表します。 フラグは、多様なアプリケーション イベントを表現することができます。 たとえば、特定の作業項目がスケジュールされていた時間や、例外がスローされた時間をフラグで示すことができます。 タスク並列ライブラリなどのランタイムでフラグを生成することもできます。
@@ -30,13 +32,13 @@ ms.locfileid: "62969960"
 
  ![5 色のカテゴリ マーカー](../profiling/media/cvmarkercategory.png "CVMarkerCategory") カテゴリを示すマーカー
 
-## <a name="alerts"></a>アラート
+## <a name="alerts"></a>警告
  アラートは、例外などの致命的なアプリケーション イベントを表す赤色のフラグです。  アラートは次のように表示されます。
 
  ![コンカレンシー ビジュアライザーの警告マーカー](../profiling/media/cvmarkeralert.png "CVMarkerAlert") 警告マーカー
 
 ## <a name="aggregation-flags"></a>集約フラグ
- コンカレンシー ビジュアライザーで、複数のフラグが相互に近接しすぎて、個別に描画できないことがあります。 このような場合、基になるフラグを示す灰色の*集約フラグ*が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるフラグの数がツールヒントに表示されます。 フラグを表示するには、ズームインします。 限界までズームインしてもなお集約フラグが表示される場合には、基になるフラグを[マーカー レポート](../profiling/markers-report.md)で確認できます。
+ コンカレンシー ビジュアライザーで、複数のフラグが相互に近接しすぎて、個別に描画できないことがあります。 このような場合、基になるフラグを示す灰色の *集約フラグ* が表示されます。 それらのアイコンのいずれかにポインターを置くと、表現されている、基になるフラグの数がツールヒントに表示されます。 フラグを表示するには、ズームインします。 限界までズームインしてもなお集約フラグが表示される場合には、基になるフラグを[マーカー レポート](../profiling/markers-report.md)で確認できます。
 
  集約フラグはさまざまなサイズで描画されます。 サイズは、集約の最も高い重要度フラグの重要度レベルによって変わります。 次の図は、集約フラグを重要度の昇順で示します。
 

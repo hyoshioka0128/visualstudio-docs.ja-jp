@@ -1,5 +1,6 @@
 ---
 title: Windows シンボル情報を参照する | Microsoft Docs
+description: Visual Studio プロファイル ツールでシンボル (.pdb) ファイルを使用して、プログラム バイナリの関数名などのシンボル名を解決する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1527a9fde739ed72af5861a4863dce8e39cbaf
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: af194a324840bc3e8b8e67199c7e213d7dca96c9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851360"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720684"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>方法: Windows シンボル情報を参照する
 Visual Studio プロファイリング ツールは、シンボル (.*pdb*) ファイルを使用して、プログラム バイナリの関数名などのシンボル名を解決します。 次の手順を使って、ローカル コンピューター上の Windows のバージョンに適切な .*pdb* ファイルを自動的にダウンロードし、更新することができます。
