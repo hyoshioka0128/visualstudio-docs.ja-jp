@@ -1,5 +1,7 @@
 ---
 title: '[エクスポート] ボタン (コンカレンシー ビジュアライザー) | Microsoft Docs'
+description: コンカレンシー ビジュアライザーの [エクスポート] ボタンについて確認します。 [エクスポート] ボタンを使用すると、呼び出し履歴を独自のレコードの .csv ファイルとしてエクスポートできます。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ec5395dccaf3d97d7b2b517cbecfec12826594e2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969902"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801460"
 ---
 # <a name="export-button-concurrency-visualizer"></a>[エクスポート] ボタン (コンカレンシー ビジュアライザー)
 **[エクスポート]** ボタンでは、独自のレコードのためや、Microsoft Excel など、別のツールで使用するために、.*csv* ファイルとして呼び出し履歴をエクスポートできます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [コンカレンシー ビジュアライザー](../profiling/concurrency-visualizer.md)
 - [スレッド ビュー](../profiling/threads-view-parallel-performance.md)

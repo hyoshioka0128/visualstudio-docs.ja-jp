@@ -1,5 +1,6 @@
 ---
 title: Start | Microsoft Docs
+description: VSPerfCmd.exe のオプションである Start オプションを使用して、指定されたプロファイリング方法にプロファイラーを初期化する方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778272"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719995"
 ---
 # <a name="start"></a>[開始]
 **Start** オプションは、指定されたプロファイリング方法にプロファイラーを初期化する *VSPerfCmd.exe* オプションです。
@@ -58,7 +59,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **Shutdown**[ **:** `Timeout`] プロファイラーをオフにします。
 
 ## <a name="example"></a>例
- 次の例では、*VSPerfCmd.exe* の **Start** オプションを使用してプロファイラーを初期化する方法を示します。
+ 次の例では、*VSPerfCmd.exe の* **Start** オプションを使用してプロファイラーを初期化する方法を示します。
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

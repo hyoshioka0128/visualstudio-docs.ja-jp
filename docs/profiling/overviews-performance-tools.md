@@ -1,5 +1,6 @@
 ---
 title: 概要 (パフォーマンス ツール) | Microsoft Docs
+description: Visual Studio のプロファイル ツールの概念と用語について学習します。 この情報を使って、開発中のアプリケーションのパフォーマンス特性を測定します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772668"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722829"
 ---
 # <a name="overviews-performance-tools"></a>概要 (パフォーマンス ツール)
 このセクションでは、開発中のアプリケーションのパフォーマンス特性を測定するのに使用できる [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールの概念と用語の概要について説明します。
@@ -56,7 +57,7 @@ ms.locfileid: "74772668"
 
  [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] でのサンプリング データの収集およびセッション間のアプリケーションのプロファイリングをするのに必要な問題や手順について説明します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-- [作業の開始](../profiling/getting-started-with-performance-tools.md)
-- [パフォーマンス エクスプ ローラー](../profiling/performance-explorer.md)
+- [はじめに](../profiling/getting-started-with-performance-tools.md)
+- [パフォーマンス エクスプローラー](../profiling/performance-explorer.md)

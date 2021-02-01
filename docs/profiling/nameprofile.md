@@ -1,5 +1,6 @@
 ---
 title: NameProfile | Microsoft Docs
+description: NameProfile 関数を使用して、指定したプロセスまたはスレッドに文字列を割り当てる方法について学習します。 また、NameProfile API は、インストルメンテーション プロファイルでのみ使用できます。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cc887c6bcef9f8b7307d9d6aa570d6458d87f377
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 3bd210f1d92245889be8d18156c43e0cad7ee3db
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85541701"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722920"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 関数は、指定したプロセスまたはスレッドに文字列を割り当てます。

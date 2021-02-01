@@ -1,5 +1,7 @@
 ---
 title: 行レベルのサンプリング データを収集する | Microsoft Docs
+description: プロファイラーの行レベルのサンプリングで、大量のプロセッサ時間を使用するコードを明らかにする方法について学習します。 これはマネージドとネイティブの両方のコードで機能します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4653cf4b8c921a0c464dcb148963d3ab33506c25
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 3a760980b16fab17fed7180b0bc74e0271c61e1d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851256"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801072"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>方法: 行レベルのサンプリング データを収集する
 行レベルのサンプリングとは、排他サンプル数が高い関数など、プロセッサ集中型の関数のコードで、プロセッサが大部分の時間を費やす必要のある場所を特定するためのプロファイラーの機能です。

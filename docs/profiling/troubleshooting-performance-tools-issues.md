@@ -1,5 +1,6 @@
 ---
 title: パフォーマンス ツールに関する問題のトラブルシューティング | Microsoft Docs
+description: プロファイル ツールによってデータが収集されない場合など、パフォーマンス ツールの問題のトラブルシューティングを行うときに発生する可能性があるさまざまなことについて学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 514b910f2c19822dc821b8c9a52ae96b8aac80f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d079c2fbd41f6a3eff881a544e8b88c50938e3bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778103"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722413"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>パフォーマンス ツールに関する問題のトラブルシューティング
 プロファイリング ツールを使用するときに、次の問題のいずれかが発生する場合があります。
@@ -24,7 +25,7 @@ ms.locfileid: "74778103"
 - [パフォーマンス ビューとレポートに関数名ではなく番号が表示される](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>プロファイリング ツールでデータが収集されない
- アプリケーションをプロファイルした後に、プロファイリング データ (.*vsp*) ファイルが作成されず、 **[出力]** ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。
+ アプリケーションをプロファイルした後に、プロファイリング データ (.*vsp*) ファイルが作成されず、**[出力]** ウィンドウまたはコマンド ウィンドウに次の警告が表示されます。
 
  PRF0025: データは収集されませんでした。
 

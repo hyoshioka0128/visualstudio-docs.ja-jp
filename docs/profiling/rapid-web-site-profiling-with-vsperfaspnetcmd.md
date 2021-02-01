@@ -1,5 +1,6 @@
 ---
 title: VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング | Microsoft Docs
+description: VSPerfASPNETCmd コマンド ライン ツールを使用して、ASP.NET Web アプリケーションを簡単にプロファイルする方法について学習します。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a08604b95f49f55a5fea254447046d305d8feff9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771693"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720424"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>VSPerfASPNETCmd を使用した迅速な Web サイト プロファイリング
 
-**VSPerfASPNETCmd** コマンド ライン ツールを使用すると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを簡単にプロファイルできます。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、オプションが減り、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 スタンドアロン プロファイラーでプロファイリングを行う場合は、**VSPerfASPNETCmd** の使用をお勧めします。 詳細については、[スタンドアロンのプロファイラーをインストールする](../profiling/how-to-install-the-stand-alone-profiler.md)」をご覧ください。
+**VSPerfASPNETCmd** コマンド ライン ツールを使用すると、[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションを簡単にプロファイルできます。 [VSPerfCmd](../profiling/vsperfcmd.md) コマンド ライン ツールと比較すると、オプションが減り、環境変数を設定する必要がなく、コンピューターを再起動する必要がありません。 スタンドアロン プロファイラーでプロファイリングを行う場合は、**VSPerfASPNETCmd** の使用をお勧めします。 詳細については、「[方法:スタンドアロンのプロファイラーをインストールする](../profiling/how-to-install-the-stand-alone-profiler.md)」をご覧ください。
 
 > [!NOTE]
 > Windows 8 および Windows Server 2012 の強化されたセキュリティ機能によって、Visual Studio プロファイラーがこれらのプラットフォームでデータを収集する方法に大幅な変更が必要になりました。 UWP アプリにも新しい収集手法が必要です。 「[Windows 8 および Windows Server 2012 アプリケーションのパフォーマンス ツール](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)」を参照してください。
@@ -42,7 +43,7 @@ ms.locfileid: "74771693"
 
  **vsperfaspnetcmd**  *websiteUrl*
 
- ローカル サーバーでホストされる *websiteUrl* の例として、 *http://localhost/MySite/default.aspx* が考えられます。 外部サイトの例は、 *http://www.contoso.com* になります。 詳細については、「[Visual Studio でプロジェクトを開かずに Web サイトをプロファイリングする](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)」の URL の例を参照してください。
+ ローカル サーバーでホストされる *websiteUrl* の例として、*http://localhost/MySite/default.aspx* が考えられます。 外部サイトの例は、 *http://www.contoso.com* になります。 詳細については、「[Visual Studio でプロジェクトを開かずに Web サイトをプロファイリングする](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio)」の URL の例を参照してください。
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>インストルメンテーション メソッドを使用して詳細なタイミング データを収集するには
 
@@ -62,16 +63,16 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
  **vsperfaspnetcmd /memory:lifetime** *websiteUrl*
 
- また、 **/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。
+ また、**/Trace** オプションを使用して .NET メモリ データと共に詳細なタイミング情報を収集することもできます。
 
- **vsperfaspnetcmd /memory** **[:lifetime]** **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory** [**:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>階層相互作用データを収集するには
 
 > [!WARNING]
 > 階層相互作用プロファイル (TIP) データは、Visual Studio の任意のエディションを使用して収集できます。 ただし、階層相互作用プロファイル データを表示できるのは、Visual Studio Enterprise のみです。
 >
-> Windows 8 や Windows Server 2012 の TIP データを収集するには、インストルメンテーション ( **/trace**) オプションを使用する必要があります。
+> Windows 8 や Windows Server 2012 の TIP データを収集するには、インストルメンテーション (**/trace**) オプションを使用する必要があります。
 
 サンプリング データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。
 
@@ -83,7 +84,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
 .NET メモリ データと共に階層相互作用データを収集するには、コマンド ラインに次のように入力します。
 
-**vsperfaspnetcmd /memory** **[:lifetime]** **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>/NoWait オプションの使用
 
@@ -91,7 +92,7 @@ Web アプリケーション内の静的にコンパイルされた .*dll* フ�
 
 プロファイリングを開始するには、次のように入力します。
 
-**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
 
 プロファイリングを終了するには、次のように入力します。
 

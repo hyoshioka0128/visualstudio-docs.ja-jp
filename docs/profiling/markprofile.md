@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: MarkProfile メソッドを使用すると、.vsp ファイルにプロファイル マークが挿入されます。 MarkProfile 関数を含むスレッドのプロファイル実行は、挿入されるマークについてオンにしておく必要があります。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778571"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718864"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` メソッドは、.*vsp* ファイルにプロファイル マークを挿入します。 `MarkProfile` 関数を含むスレッドのプロファイル実行は、挿入されるマークについてオンにしておく必要があります。
@@ -35,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  関数の成功または失敗は、**PROFILE_COMMAND_STATUS** 列挙型を使って表されます。 戻り値は次のいずれかになります。
 
-|列挙子|[説明]|
+|列挙子|説明|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|パラメーターは 0 以下です。 これらの値は予約済みです。 マークとコメントは記録されません。|
 |MARK_ERROR_MODE_NEVER|関数が呼び出されたときに、プロファイル モードが NEVER に設定されました。 マークとコメントは記録されません。|
@@ -45,7 +46,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|文字列の長さが最大値の 256 文字を超えています。 コメント文字列は切り詰められ、マークとコメントが記録されます。|
 |MARK_OK|成功した場合は MARK_OK が返されます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>Remarks
  MarkProfile 関数を含むスレッドにプロファイルが実行される場合、コードが実行されるたびに .*vsp* ファイルにマーク値が挿入されます。 MarkProfile は複数回呼び出すことができます。
 
  プロファイル マークは、スコープ内でグローバルです。 たとえば、あるスレッドに挿入したプロファイルマークを、.*vsp* ファイル内の任意のスレッドで使用し、データ セグメントの開始または終了をマークできます。
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [Visual Studio プロファイラー API リファレンス (ネイティブ)](../profiling/visual-studio-profiler-api-reference-native.md)

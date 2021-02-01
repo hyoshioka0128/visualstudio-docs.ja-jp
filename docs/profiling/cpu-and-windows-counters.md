@@ -1,5 +1,7 @@
 ---
 title: CPU カウンターと Windows カウンター | Microsoft Docs
+description: CPU (ハードウェア) および Windows (ソフトウェア) カウンターから、パフォーマンス データが提供されます。 それらを表示する方法と、それらからデータを収集する方法について学習します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779551"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719163"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU カウンターと Windows カウンター
 
@@ -130,7 +132,7 @@ Visual Studio IDE でコンピューターの使用可能なカウンターを�
 
 ## <a name="see-also"></a>関連項目
 
-[概要](../profiling/overviews-performance-tools.md)
-[方法: サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)
-[方法: CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)
-[方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)
+- [概要](../profiling/overviews-performance-tools.md)
+- [方法: サンプリング イベントを選択する](../profiling/how-to-choose-sampling-events.md)
+- [方法: CPU カウンター データを収集する](../profiling/how-to-collect-cpu-counter-data.md)
+- [方法: Windows カウンター データを収集する](../profiling/how-to-collect-windows-counter-data.md)
