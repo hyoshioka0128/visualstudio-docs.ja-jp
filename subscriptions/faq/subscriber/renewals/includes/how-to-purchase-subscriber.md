@@ -1,20 +1,21 @@
 ---
 title: Visual Studio サブスクリプションを購入するにはどうすればよいですか?
-description: Visual Studio サブスクリプションを購入するためのさまざまな方法について説明します
-ms.faqid: group4_1
+description: Visual Studio サブスクリプションを購入するためのさまざまな方法について学習する
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104438"
+ms.locfileid: "99104558"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>Visual Studio サブスクリプションを購入するにはどうすればよいですか?
+
 Visual Studio サブスクリプションは、 [ボリューム ライセンス](https://www.microsoft.com/licensing/default)、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)、[Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) など、さまざまなチャネルを通じて購入できます。  
 
 [サブスクリプションのベネフィットと価格を比較](https://visualstudio.microsoft.com/vs/pricing/) して、各 Visual Studio サブスクリプションのベネフィットを理解してください。 [サブスクリプションのベネフィットのページ](https://visualstudio.microsoft.com/vs/benefits/)は、適切なサブスクリプションを決定するために役立ちます。   
@@ -35,4 +36,4 @@ Microsoft Store を介して入手できる小売版の Visual Studio サブス�
 月単位の Visual Studio サブスクリプションの請求の詳細を[確認してください](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)。 
 
 ### <a name="volume-licensing"></a>ボリューム ライセンス 
-ボリューム ライセンスのサブスクリプションは、組織で多数のサブスクリプションを購入する必要があるときのために用意されています。 ボリューム ライセンスの購入に関する詳細については、[こちら](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)を参照してください。  
+ボリューム ライセンスのサブスクリプションは、組織で多数のサブスクリプションを購入する必要があるときのために用意されています。 ボリューム ライセンスの購入に関する詳細については、[こちら](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)を参照してください。
