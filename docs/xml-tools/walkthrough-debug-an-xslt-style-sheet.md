@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351337"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925880"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>チュートリアル: XSLT スタイル シートのデバッグ
 
@@ -24,7 +24,7 @@ ms.locfileid: "94351337"
 このチュートリアルを準備するには、まず、2 つの [サンプル ファイル](#sample-files)をローカル コンピューターにコピーします。 1 つはスタイル シートで、もう 1 つはスタイル シートへの入力として使用する XML ファイルです。 このチュートリアルで使用するスタイル シートでは、コストが平均書籍価格を下回るすべての書籍が検索されます。
 
 > [!NOTE]
-> XSLT デバッガーは、Visual Studio の Enterprise Edition でのみ使用できます。
+> XSLT デバッガーは、Visual Studio の Professional および Enterprise エディションでのみ使用できます。
 
 ## <a name="start-debugging"></a>[デバッグ開始]
 
