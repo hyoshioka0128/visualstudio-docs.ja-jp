@@ -338,8 +338,6 @@
       items:
         - name: デバッガーで実行中のプロセスにアタッチする
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: Linux 上で .NET Core をデバッグする
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: Docker コンテナー上で実行されているプロセスにアタッチする
           href: attach-to-process-running-in-docker-container.md
     - name: マルチスレッド アプリケーションのデバッグ
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: ライブ Azure 仮想マシン アプリの Time Travel Debugging
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Linux デバッグ
+      items:
+        - name: WSL 2 で .NET Core アプリをデバッグする
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: SSH を使用して Linix で .NET Core をデバッグする
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: コンテナー ツールを使用したデバッグ >>
+          href: ../containers/edit-and-refresh.md
     - name: アプリケーションの種類
       items:
         - name: 特定のアプリケーションの種類をデバッグする
