@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204892"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224354"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>プロセスにアタッチして SSH を使用して Linux 上で .NET Core をデバッグする
 
-Visual Studio 2017 以降では、ローカルまたはリモートの Linux 配置で実行されている .NET Core プロセスに SSH 経由でアタッチできます。 この記事では、デバッグのセットアップ方法とデバッグ方法について説明します。 Docker コンテナーを使用したデバッグ シナリオについては、「[Docker コンテナー上で実行されているプロセスにアタッチする](../debugger/attach-to-process-running-in-docker-container.md)」を参照してください。
+Visual Studio 2017 以降では、ローカルまたはリモートの Linux 配置で実行されている .NET Core プロセスに SSH 経由でアタッチできます。 この記事では、デバッグのセットアップ方法とデバッグ方法について説明します。 Docker コンテナーを使用したデバッグ シナリオについては、代わりに「[Docker コンテナー上で実行されているプロセスにアタッチする](../debugger/attach-to-process-running-in-docker-container.md)」と[コンテナー ツール](../containers/edit-and-refresh.md)に関する記事を参照してください。 WSL 2 で Linux を Visual Studio からデバッグするには (プロセスにアタッチしない)、「[Visual Studio を使用して WSL 2 で .NET Core アプリをデバッグする](../debugger/debug-dotnet-core-in-wsl-2.md)」を参照してください。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 

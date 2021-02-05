@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696544"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251441"
 ---
 # <a name="supported-visual-studio-features-preview"></a>サポートされている Visual Studio の機能 (プレビュー)
 
@@ -73,6 +73,7 @@ IntelliSense、コードのナビゲーション、診断、提案などのス�
 まだ使用不可能:
 
 * UI デザイナー - WinForms、WPF、およびリソース デザイナー
+* WinForms および WPF プロジェクト アプリのキャストは、機能フラグの下でのみ使用できる
 * Visual Basic および F# のプロジェクト
 * .NET Framework をターゲットとするプロジェクト
 * Docker Compose プロジェクト
@@ -108,7 +109,7 @@ IntelliSense、コードのナビゲーション、診断、提案などのス�
 
 codespace に接続されている Visual Studio を使用する場合、ローカルで作業する場合と同じユーザー補助機能を利用できます。
 
-* ソース管理 - 新しい[統合 Git 体験](../git-with-visual-studio.md)では、Git が完全にサポートされています。
+* ソース管理 - 新しい[統合 Git 体験](../git-with-visual-studio.md)では、Git が完全にサポートされています。 Git サブモジュールを codespace でクローンするには、ターミナルから `git submodule update` を実行することが必要になる場合があります。
 * アクセシビリティ - デバッグ対象のアプリの appcasting にアクセスできない支援技術の既知のイシューが 1 つあります。 この制限に加えて、ローカルの Visual Studio エクスペリエンスにまだ存在しない他の互換性のイシューがあるとは考えていません。 バグを見つけた場合は、[Developer Community](https://aka.ms/feedback/report?space=8) にイシューを提出してお知らせください。
 * 発行 - GitHub Actions では [Azure に発行する] がサポートされています。
 * 接続済みサービス - App Insights、KeyVault、Storage、SQL、Redis、Cosmos、OpenAPI、gRPC は部分的にサポートされています。

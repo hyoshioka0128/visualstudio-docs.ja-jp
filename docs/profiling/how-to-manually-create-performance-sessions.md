@@ -1,5 +1,7 @@
 ---
 title: パフォーマンス セッションを手動で作成する | Microsoft Docs
+description: Visual Studio でプロジェクトを開かずに、手動でパフォーマンス セッションを作成する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b918c201509829ad4194da415441ddd9506638a1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1a368da7a69d921c7e7a55922fb89774ce192b08
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851009"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883471"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>方法: パフォーマンス セッションを手動で作成する
 パフォーマンス セッションは手動でも作成できます。 この場合、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] でプロジェクトを開く必要はありません。 詳細については、[パフォーマンス セッションの構成](../profiling/configuring-performance-sessions.md)に関する記事を参照してください。
@@ -29,7 +31,7 @@ ms.locfileid: "90851009"
 
 1. **[デバッグ]** メニューで、 **[プロファイラー]** 、 **[パフォーマンス エクスプローラー]** の順にポイントし、 **[新しいパフォーマンス セッション]** をクリックします。
 
-     空のパフォーマンス セッションが**パフォーマンス エクスプ ローラー**に追加されます。
+     空のパフォーマンス セッションが **パフォーマンス エクスプ ローラー** に追加されます。
 
 2. **[ターゲット]** を右クリックして **[ターゲット バイナリの追加]** をクリックします。
 
