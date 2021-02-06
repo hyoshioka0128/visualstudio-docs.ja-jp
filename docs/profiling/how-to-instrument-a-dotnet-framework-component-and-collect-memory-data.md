@@ -1,5 +1,7 @@
 ---
 title: プロファイラーのコマンド ライン - スタンドアロンの .NET コンポーネントのインストルメント化、メモリ データの取得
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、スタンドアロン アプリケーションの .NET Framework コンポーネントのメモリ データを収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57ee3a8d3c94fcd5f3c4b77bddc2fab9710a3caa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c82f6306dbcfd462862c4d68b9a6fa142ff069a0
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809623"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883684"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>方法: プロファイラーのコマンド ラインを使用してスタンドアロンの .NET Framework コンポーネントをインストルメントし、メモリ データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、スタンドアロン アプリケーションの .NET Framework コンポーネント (.exe ファイル、.dll ファイルなど) をインストルメント化し、プロファイラーを使用してメモリ情報を収集する方法について説明します。
@@ -72,7 +74,7 @@ ms.locfileid: "90809623"
 ## <a name="control-data-collection"></a>データ収集の制御
  対象アプリケーションの実行中は、*VSPerfCmd.exe* のオプションを使用してファイルへのデータ書き込みを開始および停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
+#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
 - 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 

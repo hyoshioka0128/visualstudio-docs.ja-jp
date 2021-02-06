@@ -1,5 +1,7 @@
 ---
 title: プロファイラーのコマンド ライン - クライアントの .NET Framework アプリを開く、メモリ データの取得
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、.NET Framework スタンドアロン アプリを起動し、メモリ アクティビティ データを収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: a0df21a4d34d3d3f889442046b594ff63f01bcb6
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327690"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883474"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーによってスタンドアロンの .NET Framework アプリケーションを起動し、メモリ データを収集する
 ここでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、.NET Framework のスタンドアロン (クライアント) アプリケーションを起動し、メモリ データを収集する方法について説明します。

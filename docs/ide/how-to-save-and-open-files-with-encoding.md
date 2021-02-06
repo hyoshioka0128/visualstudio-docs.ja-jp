@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597094"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104280"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>方法 : エンコーディングを使用してファイルを保存および開く
 
@@ -39,6 +39,9 @@ ms.locfileid: "95597094"
      このオプションは、異なるオペレーティング システムのユーザーとファイルを交換する場合に便利です。
 
      特定の方法でエンコードされていることがわかっているファイルを使用する場合は、ファイルを開くときに、そのエンコーディングを使用するように指定できます。 その方法は、ファイルがプロジェクトの一部であるかどうかによって異なります。
+
+> [!NOTE]
+> エンコードしてプロジェクト ファイルを保存する場合、 **[ファイル名を付けて保存]** オプションは、プロジェクトをアンロードするまで有効になりません。
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>プロジェクトの一部であるエンコードされたファイルを開くには
 

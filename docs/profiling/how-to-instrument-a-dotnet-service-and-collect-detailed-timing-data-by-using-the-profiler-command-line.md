@@ -1,5 +1,7 @@
 ---
 title: プロファイラーのコマンド ライン - .NET サービスのインストルメント化、タイミングの詳細の取得
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、.NET Framework サービスの詳細なタイミング データを収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331484"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883606"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して .NET サービスをインストルメントし、詳細なタイミング データを収集する
 

@@ -1,5 +1,6 @@
 ---
 title: Web.Config ファイル - 動的 ASP.NET アプリのインストルメント化とプロファイリング
+description: Visual Studio プロファイル ツールを使用して、動的にコンパイルされた ASP.NET Web アプリケーションのタイミングとメモリ アクティビティ データを収集する方法について説明します。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809597"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883475"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>方法: Web.config ファイルを変更して、動的にコンパイルされた ASP.NET Web アプリケーションをインストルメント化およびプロファイルする
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのインストルメンテーション方式を使用すると、動的にコンパイルされた [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web アプリケーションから、詳しいタイミング データ、.NET のメモリの割り当てデータ、.NET オブジェクトの有効期間に関するデータを収集できます。

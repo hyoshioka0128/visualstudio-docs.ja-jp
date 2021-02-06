@@ -1,5 +1,7 @@
 ---
 title: プロファイラーのコマンド ライン - ネイティブ コンポーネントのインストルメント化、タイミング データの取得
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、C++ .exe や .dll ファイルなどのネイティブ コンポーネントの詳細なタイミング データを収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9436487655e04649228a1bdb60c5d48138f13842
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 0f9deae5372b6fdc22728fbf7df0c678ffb39c45
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327825"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883580"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>方法: コマンド ラインからプロファイラーを使用してスタンドアロンのネイティブ コンポーネントをインストルメントし、タイミング データを収集する
 ここでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、C++ .*exe* や .*dll* ファイルなどのネイティブ コンポーネントをインストルメント化し、詳細なタイミング データを収集する方法について説明します。

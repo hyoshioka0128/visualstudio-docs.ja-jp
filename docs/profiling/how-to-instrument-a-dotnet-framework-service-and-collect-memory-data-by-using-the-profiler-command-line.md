@@ -1,5 +1,7 @@
 ---
 title: プロファイラーのコマンド ライン - .NET サービスのインストルメント化、メモリデータの取得
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、.NET Framework サービスのメモリ割り当てとオブジェクトの有効期間データを収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809610"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883658"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>方法: プロファイラーのコマンド ラインを使用して .NET Framework サービスをインストルメントし、メモリ データを収集する
 
@@ -95,7 +97,7 @@ ms.locfileid: "90809610"
 ## <a name="control-data-collection"></a>データ収集の制御
  サービスの実行中は、*VSPerfCmd.exe* のオプションを使用してファイルへのデータ書き込みを開始または停止することにより、データ収集を制御できます。 データ コレクションを制御することにより、アプリケーションの起動や終了など、プログラム実行の特定の部分についてのデータ コレクションを行うことができます。
 
-#### <a name="to-start-and-stop-data-collection"></a>データ コレクションを開始および停止するには
+#### <a name="to-start-and-stop-data-collection"></a>データ収集を開始および停止するには
 
 - 次に示す **VSPerfCmd** のオプションの組み合わせにより、データ収集を開始および停止します。 個別のコマンド ラインで各オプションを指定します。 データ収集のオンとオフは複数回切り替えることができます。
 

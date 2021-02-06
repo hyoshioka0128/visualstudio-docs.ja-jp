@@ -1,5 +1,7 @@
 ---
 title: プロファイラーのコマンド ライン - クライアントの .NET アプリを開き、コンカレンシー データを取得する
+description: Visual Studio プロファイル ツールのコマンドライン ツールを使用して、.NET のスタンドアロン アプリを起動し、プロセスおよびスレッドのコンカレンシー データを収集する方法について説明します。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2c1b0a52429e74ad35cf0cad3acc44d064c9672
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 01356e2fe8693e39ef06fc1620cabbb2cb608a43
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327903"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883472"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーによってスタンドアロンの .NET Framework アプリケーションを起動し、コンカレンシー データを収集する
 ここでは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのコマンド ライン ツールを使用して、.NET Framework のスタンドアロン (クライアント) アプリケーションを起動し、プロセスおよびスレッドのコンカレンシー データを収集する方法について説明します
