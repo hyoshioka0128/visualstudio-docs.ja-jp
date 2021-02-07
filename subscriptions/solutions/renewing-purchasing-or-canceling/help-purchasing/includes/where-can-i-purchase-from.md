@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916179"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541173"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>サブスクリプションの購入場所 
 
@@ -42,8 +42,8 @@ Microsoft Store を介して入手できる小売版の Visual Studio サブス�
 * [Visual Studio Professional - 月額サブスクリプション](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise - 月額サブスクリプション](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-月単位の Visual Studio サブスクリプションの請求の詳細を[確認してください](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)。 
+詳細については、[月単位の Visual Studio サブスクリプションの請求](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)に関する記事をご覧ください。 
 
 ## <a name="volume-licensing"></a>ボリューム ライセンス 
 
-ボリューム ライセンスのサブスクリプションは、組織で多数のサブスクリプションを購入する必要があるときのために用意されています。 ボリューム ライセンスの購入に関する詳細については、[こちら](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)を参照してください。
+ボリューム ライセンスのサブスクリプションは、組織で多数のサブスクリプションを購入する必要があるときのために用意されています。 詳細については、[ボリューム ライセンスを通じた購入](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)に関する記事をご覧ください。

@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147422"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541131"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>月単位の Azure Dev/Test 個人クレジットをアクティブにする方法 
 
@@ -33,6 +33,6 @@ Azure Dev/Test 個人クレジットを使用するのにコストはかから�
 Visual Studio サブスクリプション特典を通じて作成された Azure サブスクリプションは、有料のサブスクリプションでは課せられない制限の影響を受ける場合があります。 VM や Azure サービスの作成に特定の地域が使用できない場合や、特定のサービスの種類が使用できない場合があります。 有料サブスクリプションよりも既定のクォータが低い場合があります。  
 
 ## <a name="more-information-about-azure-credits"></a>Azure クレジットに関する詳細情報
-アクティブ化、資格、その他のサポート リソースの[詳細をご確認ください](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)。  
+詳細については、[アクティブ化、資格、その他のサポート リソース](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)に関する記事をご覧ください。  
 
-Visual Studio サブスクリプションに含まれる Azure クレジットを使用する[方法をご確認ください](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)。  
+Visual Studio サブスクリプションに含まれる [Azure クレジットを使用する方法をご確認ください](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)。  
