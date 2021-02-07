@@ -1,5 +1,5 @@
 ---
-title: Azure portal に Azure の月単位のクレジットが表示されない
+title: Azure portal に Azure の月単位のクレジットを表示できません
 description: Azure portal に Azure の月単位のクレジットが表示されません
 ms.topic: include
 ms.assetid: 48420a4c-11b4-4bbd-a509-2c939d24e81a
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 48f52f1381bb890942e6f5ed3f1772c0735b1fb8
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 5a5322563be438c734b03c9d834ffd545cb6da43
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147676"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541064"
 ---
 ## <a name="im-unable-to-see-my-azure-monthly-credit-in-the-azure-portal"></a>Azure portal に Azure の月単位のクレジットが表示されない
 
@@ -46,6 +46,6 @@ Visual Studio サブスクリプション特典を通じて作成された Azure
 
 ## <a name="more-information-about-azure-monthly-credits"></a>Azure の月単位のクレジットに関する詳細情報
 
-アクティブ化、資格、その他のサポート リソースの[詳細をご確認ください](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)。  
+詳細については、[アクティブ化、資格、その他のサポート リソース](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)に関する記事をご覧ください。  
 
-Visual Studio サブスクリプションに含まれる Azure クレジットを使用する[方法をご確認ください](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)。 
+Visual Studio サブスクリプションに含まれる [Azure クレジットを使用する方法をご確認ください](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)。 
