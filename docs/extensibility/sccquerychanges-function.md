@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec335d808c287decb75bf759d5a3795d98962579
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836723"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 関数
 この関数は、指定されたファイルのリストを列挙し、コールバック関数を介して各ファイルの名前変更に関する情報を提供します。
@@ -25,7 +25,7 @@ ms.locfileid: "80700498"
 ## <a name="syntax"></a>構文
 
 ```cpp
-SCCRTN SccQueryChanges(
+SCCRTN SccQueryChanges(
    LPVOID           pContext,
    LONG             nFiles,
    LPCSTR*          lpFileNames,
@@ -65,10 +65,10 @@ SCCRTN SccQueryChanges(
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。|
 |SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  に対して照会される変更は、名前空間に対して行われます。具体的には、ファイルの名前変更、追加、および削除です。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [エラー コード](../extensibility/error-codes.md)

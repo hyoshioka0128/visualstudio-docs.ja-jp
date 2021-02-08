@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839600"
 ---
 # <a name="legacy-language-service-interfaces"></a>従来の言語サービスのインターフェイス
 特定のプログラミング言語では、言語サービスのインスタンスは一度に1つしか存在できません。 ただし、1つの言語サービスで複数のエディターを使用できます。
@@ -52,6 +52,6 @@ ms.locfileid: "98205030"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|コマンドハンドラーを使用してテキストビューを変更できるようにします。 インターフェイスを実装するクラスは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> インターフェイスも実装する必要があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 テキストビューでは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> メソッドに渡されたオブジェクトをクエリすることによって、オブジェクトを取得し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。 ビューごとに1つのオブジェクトが存在する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> ます。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|ユーザーがコードウィンドウに入力するコマンドをインターセプトします。 実装からの出力を監視して、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> カスタムの完了情報とビューの変更を提供する<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>オブジェクトをテキストビューに渡すには、を呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [チェックリスト: 従来の言語サービスの作成](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

@@ -4,18 +4,18 @@ description: Visual Studio Code を使用して Docker を操作する方法の�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 9961810ad408a384db46439235b0b7acab325062
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 554badf01122b6c41d89c00b740574d28185e35e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837971"
 ---
 # <a name="tutorial-get-started-with-docker"></a>チュートリアル: Docker の概要
 
@@ -62,7 +62,7 @@ docker run -d -p 80:80 docker/getting-started
 
 ## <a name="what-is-a-container-image"></a>コンテナー イメージとは
 
-コンテナーを実行すると、分離されたファイル システムが使用されます。 このカスタム ファイル システムは、**コンテナー イメージ**によって提供されます。 イメージにはコンテナーのファイル システムが含まれているため、それにはアプリケーションを実行するのに必要なすべてのもの (すべての依存関係、構成、スクリプト、バイナリなど) が含まれる必要があります。 イメージには、環境変数、既定で実行されるコマンド、その他のメタデータなど、コンテナー用のその他の構成も含まれます。
+コンテナーを実行すると、分離されたファイル システムが使用されます。 このカスタム ファイル システムは、**コンテナー イメージ** によって提供されます。 イメージにはコンテナーのファイル システムが含まれているため、それにはアプリケーションを実行するのに必要なすべてのもの (すべての依存関係、構成、スクリプト、バイナリなど) が含まれる必要があります。 イメージには、環境変数、既定で実行されるコマンド、その他のメタデータなど、コンテナー用のその他の構成も含まれます。
 
 イメージについては後で詳しく説明し、レイヤー、ベストプラクティスなどのトピックを取り上げます。
 

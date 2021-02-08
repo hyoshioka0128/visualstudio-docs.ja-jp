@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c93994b233990e2362c62445909adb66a0eeeb9b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 258ea4529a558c91eb115b82b35def4ca4ab6561
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838244"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Visual Studio 内での Office 機能の使用
   ドキュメントレベルのプロジェクトを作成すると、ドキュメントと関連付けられているアプリケーションが Visual Studio 内でホストされるため、ドキュメントを直接デザインして操作できます。 Visual Studio で Microsoft Office アプリケーションを開いている場合は、通常、想定どおりに動作します。 ただし、アプリケーションの機能の中には、異なるものやアクセスできないものがあります。

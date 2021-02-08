@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b8e3362a-f821-4696-b98d-571d4bbfe431
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dde3bdb5fc0e9c6ea256aaa4368623a8e8af18d6
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b7838e0a212bbc1e743783255106bb44561fbe62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837763"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly &gt; 要素 (ClickOnce 配置)
 配置マニフェストの最上位要素。
@@ -66,4 +66,4 @@ ms.locfileid: "94383236"
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
-- [\<assembly> element](../deployment/assembly-element-clickonce-application.md)
+- [\<assembly> 要素](../deployment/assembly-element-clickonce-application.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840159"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 では、コアサーバーを選択して操作するためのポートサプライヤーがサポートされています。
@@ -30,13 +30,13 @@ IDebugPortSupplierEx2 : IUnknown
  カスタムポート供給業者は、このインターフェイスを実装して、使用するコアサーバーを選択できるようにします。
 
 ## <a name="methods"></a>メソッド
- 次の表は、 **IDebugPortSupplierEx2**のメソッドを示しています。
+ 次の表は、 **IDebugPortSupplierEx2** のメソッドを示しています。
 
 |Method|説明|
 |------------|-----------------|
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|ポートサプライヤーのコアサーバーを設定します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Portpriv. h
 
  名前空間: VisualStudio。
@@ -44,6 +44,6 @@ IDebugPortSupplierEx2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

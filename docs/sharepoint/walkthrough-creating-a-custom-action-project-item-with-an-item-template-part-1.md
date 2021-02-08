@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839124"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)
   Visual Studio の SharePoint プロジェクト システムは、プロジェクト項目の種類を独自に作成することによって拡張することができます。 このチュートリアルでは、SharePoint プロジェクトに追加できるプロジェクト項目を作成します。これは SharePoint サイトにカスタム動作を作成するためのプロジェクト項目です。 カスタムアクションは、SharePoint サイトの [ **サイトの操作** ] メニューにメニュー項目を追加します。
@@ -334,7 +334,7 @@ ms.locfileid: "96915272"
 
 13. **[OK]** を選択します。
 
-14. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** プロジェクトがエラーなしでコンパイルされることを確認します。
+14. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  プロジェクトがエラーなしでコンパイルされることを確認します。
 
 15. CustomActionProjectItem プロジェクトのビルド出力フォルダーに CustomActionProjectItem.vsix ファイルが格納されていることを確認します。
 
@@ -355,7 +355,7 @@ ms.locfileid: "96915272"
 
 #### <a name="to-test-the-project-item-in-visual-studio"></a>Visual Studio でプロジェクト項目をテストするには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 2. (項目テンプレートでサポートされている言語に応じて) [ **Visual C#** ] または [ **Visual Basic** ] を展開し、[ **SharePoint**] を展開して、[ **2010** ] ノードを選択します。
 
@@ -385,7 +385,7 @@ ms.locfileid: "96915272"
 
      このショートカット メニューを使用して、追加のオプションやコマンド (カスタム動作のデザイナーを表示するなど) を開発者に提供することができます。
 
-13. メニューバーで [出力の **表示**] を選択し  >  **Output** ます。
+13. メニューバーで [出力の **表示**] を選択し  >  ます。
 
      [ **出力** ] ウィンドウが開きます。
 
@@ -449,7 +449,7 @@ ms.locfileid: "96915272"
 
 5. Visual Studio の実験用インスタンスと、CustomActionProjectItem ソリューションが開いているインスタンスの両方を閉じます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルを完了すると、項目テンプレートにウィザードを追加できるようになります。 ユーザーがカスタムアクションプロジェクト項目を SharePoint プロジェクトに追加すると、ウィザードによって、アクション (操作が選択されたときの移動先の場所や URL など) に関する情報が収集され、この情報が新しいプロジェクト項目の *Elements.xml* ファイルに追加されます。 詳細については、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 2)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 334bb95e-c7e0-4008-9f06-8c3999e47ee8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f822f20cf4fb7a6fd5aa71b9cc1ec26bcd90e234
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837711"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 ローカル変数など、スタックフレームに関連付けられたプロパティの列挙子を作成します。
@@ -28,7 +28,7 @@ ms.locfileid: "80719902"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT EnumProperties ( 
+HRESULT EnumProperties ( 
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,
    UINT                      nRadix,
    REFIID                    refiid,
@@ -39,7 +39,7 @@ HRESULT EnumProperties ( 
 ```
 
 ```csharp
-int EnumProperties ( 
+int EnumProperties ( 
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,
    uint                        nRadix,
    ref Guid                    refiid,
@@ -71,7 +71,7 @@ int EnumProperties ( 
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドでは、選択したすべてのプロパティを1回の呼び出しで取得できるため、 [Getdebugproperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) メソッドと [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) メソッドを順番に呼び出すよりも高速です。
 
 ## <a name="see-also"></a>関連項目

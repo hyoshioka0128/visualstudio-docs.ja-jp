@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf566e593bb1ddbc31c70de1570d746a14fbdcf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836944"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 関数
 この関数は、既存のソース管理プロジェクトを開くか、新しいプロジェクトを作成します。
@@ -91,7 +91,7 @@ SCCRTN SccOpenProject (
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムが初期化されませんでした。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  IDE はユーザー名 () を渡すことができ `lpUser` ます。または、単に空の文字列へのポインターを渡すこともできます。 ユーザー名がある場合は、ソース管理プラグインで既定値として使用する必要があります。 ただし、名前が渡されなかった場合、またはログインが指定された名前で失敗した場合、プラグインはユーザーにログインを求めるプロンプトを表示し、有効なログインを受け取ったときにの有効な名前を返します。これは、プラグインによっ `lpUser` `.` てユーザー名の SCC_USER_SIZE 文字列が変更される可能性があるためです `SCC_USER_LEN` 。
 
 > [!NOTE]
@@ -114,7 +114,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 > この `SCC_CAP_REENTRANT` ビットは、ソース管理プラグイン API のバージョン1.1 で導入されました。 バージョン1.0 では設定されていないか、または無視され、すべてのバージョン1.0 ソース管理プラグインは再入可能でないと見なされます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

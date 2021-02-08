@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839834"
 ---
 # <a name="important-commands-for-language-service-filters"></a>言語サービス フィルターの重要なコマンド
 完全に機能する言語サービスフィルターを作成する場合は、次のコマンドを処理することを検討してください。 コマンド識別子の完全な一覧は、マネージ <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> コードの列挙と、アンマネージコードの Stdidcmd ヘッダーファイルで定義されてい [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ます。 Stdidcmd ファイルは、 *Visual STUDIO SDK のインストールパス*\VisualStudioIntegration\Common\Inc. にあります。
@@ -40,5 +40,5 @@ ms.locfileid: "98204619"
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常、ユーザーが CTRL + SPACE キーを押したときに送信されます。 このコマンドは、でメソッドを呼び出すように言語サービスに指示し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> ます。|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|メニューから送信されます。通常は、[**編集**] メニューの **[詳細設定**] を **選択** するか、選択 **項目** をコメント解除します。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ユーザーが選択したテキストをコメントアウトすることを示します。 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> ユーザーが選択したテキストのコメントを解除することを示します。 これらのコマンドは、言語サービスによってのみ実装できます。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)

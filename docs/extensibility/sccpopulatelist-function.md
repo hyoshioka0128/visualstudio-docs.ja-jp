@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f518413adba1546bcff4f7cf2e62b4563cf1bcc7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836931"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 関数
 この関数は、特定のソース管理コマンドのファイルの一覧を更新し、指定されたすべてのファイルに対してソース管理の状態を提供します。
@@ -78,7 +78,7 @@ SCCRTN SccPopulateList (
 |SCC_OK|正常終了しました。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、現在の状態についてファイルの一覧を調べます。 また、コールバック関数を使用して `pfnPopulate` 、ファイルがの条件に一致しない場合に呼び出し元に通知し `nCommand` ます。 たとえば、コマンドがで、 `SCC_COMMAND_CHECKIN` リスト内のファイルがチェックアウトされていない場合は、コールバックを使用して呼び出し元に通知します。 場合によっては、ソース管理プラグインがコマンドの一部として他のファイルを検出して追加することがあります。 これにより、たとえば Visual Basic ユーザーは自分のプロジェクトで使用されている .bmp ファイルをチェックアウトできますが、Visual Basic プロジェクトファイルには表示されません。 ユーザーが IDE で **Get** コマンドを選択します。 IDE には、ユーザーが取得できると思われるすべてのファイルの一覧が表示されますが、リストが表示される前に、 `SccPopulateList` 表示されるリストが最新の状態であることを確認するために関数が呼び出されます。
 
 ## <a name="example"></a>例
@@ -89,7 +89,7 @@ SCCRTN SccPopulateList (
 > [!NOTE]
 > ソース管理プラグインには、常にこの関数からすぐに制御を戻すオプションがあり、そのままにしておきます。 プラグインがこの関数を実装する場合、 `SCC_CAP_POPULATELIST` [Sccinitialize](../extensibility/sccinitialize-function.md)の最初の呼び出しで機能ビットフラグを設定することによって、この関数を示すことができます。 既定では、プラグインは、渡されるすべての項目がファイルであると常に想定する必要があります。 ただし、IDE でパラメーターにフラグを設定した場合は、 `SCC_PL_DIR` `fOptions` 渡されるすべての項目がディレクトリと見なされます。 プラグインは、ディレクトリに属するすべてのファイルを追加する必要があります。 IDE では、ファイルとディレクトリが混在することはありません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a917e43729b3049e488264c260f8455ab08fe4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836749"
 ---
 # <a name="sccrename-function"></a>SccRename 関数
 この関数は、ソース管理システム内のファイルの名前を変更します。
@@ -64,8 +64,8 @@ SCCRTN SccRename(
 |SCC_E_OPNOTPERFORMED|操作は実行されませんでした。|
 |SCC_E_NONSPECIFICERROR|指定されていないか、一般的なエラーが発生しました。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数を使用すると、ファイルの名前を変更したり、ソース管理システム内のある場所から別の場所にファイルを移動したりすることができます。 ソース管理プラグインがディスク上のファイルにアクセスしようとすることはできません。 ローカルファイルの名前を変更するのは IDE の役割です。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

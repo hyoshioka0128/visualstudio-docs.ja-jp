@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09b1fabaeb5bf887eedaa53d57bdeb3604bf2257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840328"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 このメソッドは、永続化されたポートの一覧を列挙できるオブジェクトを取得します。
@@ -28,16 +28,16 @@ ms.locfileid: "80724454"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT EnumPersistedPorts(
-   BSTR_ARRAY         PortNames,
-   IEnumDebugPorts2** ppEnum
+HRESULT EnumPersistedPorts(
+   BSTR_ARRAY         PortNames,
+   IEnumDebugPorts2** ppEnum
 );
 ```
 
 ```csharp
-int EnumPersistedPorts(
-   BSTR_ARRAY           PortNames,
-   out IEnumDebugPorts2 ppEnum
+int EnumPersistedPorts(
+   BSTR_ARRAY           PortNames,
+   out IEnumDebugPorts2 ppEnum
 );
 ```
 
@@ -51,7 +51,7 @@ int EnumPersistedPorts(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  永続化されたポートは、ポート供給元がインスタンス化されるときに読み込まれ、ポート供給元が破壊されると保存されます。
 
 ## <a name="see-also"></a>関連項目

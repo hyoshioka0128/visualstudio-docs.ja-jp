@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 373536844e3572e2e61b56c1b86f3e00ed47845d
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: e353101c7932e06042b451360b7ca040adcb303f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839951"
 ---
 # <a name="implementing-single-file-generators"></a>単一ファイル ジェネレーターの実装
 カスタムツール (単一ファイルジェネレーターと呼ばれることもあります) を使用して、 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] のおよびプロジェクトシステムを拡張でき [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 カスタムツールは、インターフェイスを実装する COM コンポーネントです <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 。 このインターフェイスを使用すると、カスタムツールによって1つの入力ファイルが1つの出力ファイルに変換されます。 変換の結果は、ソースコード、またはその他の有用な出力である可能性があります。 カスタムツールによって生成されるコードファイルの2つの例は、ビジュアルデザイナーの変更と、Web サービス記述言語 (WSDL) を使用して生成されたファイルに応答して生成されるコードです。

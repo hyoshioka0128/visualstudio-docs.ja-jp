@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9447d32f17283e7123e2f99490acc49c1613360d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837997"
 ---
 # <a name="while-activity-designer"></a>While アクティビティ デザイナー
 
@@ -27,11 +27,11 @@ ms.locfileid: "94433701"
 
 次の表に、最も役に立つ <xref:System.Activities.Statements.While> アクティビティのプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|ヘッダーの <xref:System.Activities.Statements.While> アクティビティ デザイナーの表示名を指定します。 既定値は While です。 この値は、[ **プロパティ** ] ウィンドウで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
-|<xref:System.Activities.Statements.While.Body%2A>|×|が true と評価されたときに実行するアクティビティを格納し <xref:System.Activities.Statements.While.Condition%2A> ます。 **true**|
-|<xref:System.Activities.Statements.While.Condition%2A>|○|内のアクティビティを実行するかどうかを判断するために評価される Visual Basic 式を格納し <xref:System.Activities.Statements.While.Body%2A> ます。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|ヘッダーの <xref:System.Activities.Statements.While> アクティビティ デザイナーの表示名を指定します。 既定値は While です。 この値は、[ **プロパティ** ] ウィンドウで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。<br /><br /> <xref:System.Activities.Activity.DisplayName%2A> は必須ではありませんが、使用することをお勧めします。|
+|<xref:System.Activities.Statements.While.Body%2A>|False|が true と評価されたときに実行するアクティビティを格納し <xref:System.Activities.Statements.While.Condition%2A> ます。 |
+|<xref:System.Activities.Statements.While.Condition%2A>|True|内のアクティビティを実行するかどうかを判断するために評価される Visual Basic 式を格納し <xref:System.Activities.Statements.While.Body%2A> ます。|
 
 ## <a name="see-also"></a>関連項目
 
