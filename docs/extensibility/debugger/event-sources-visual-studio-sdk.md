@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ab0bc2bb61069e20276c471d1245d167715cc7a
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 268c22060d22bc69385cf07d1d5151e7dfe3ccb9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840510"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>イベントソース (Visual Studio SDK)
 イベントには、デバッグエンジン (DE) とセッションデバッグマネージャー (SDM) の2つのソースがあります。 DE から送信されるイベントには NULL 以外のエンジンがありますが、SDM から送信されるイベントには NULL のエンジンがあります。

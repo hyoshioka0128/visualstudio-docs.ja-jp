@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b45fe06722b190569e067dccd325ba4acac4fb0f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 67c01aa9ecb3661235670866d92b29d7d8eef543
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837282"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>相互運用機能アセンブリ コマンド ハンドラーの登録
 VSPackage は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE) によってコマンドが適切にルーティングされるように、に登録する必要があります。

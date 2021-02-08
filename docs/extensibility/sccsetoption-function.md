@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836697"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 関数
 この関数は、ソース管理プラグインの動作を制御するオプションを設定します。
@@ -54,12 +54,12 @@ SCCRTN SccSetOption(
 |SCC_I_SHARESUBPROJOK|がの場合に返され `nOption` `SCC_OPT_SHARESUBPROJ` ます。ソース管理プラグインでは、IDE でターゲットフォルダーを設定できます。|
 |SCC_E_OPNOTSUPPORTED|オプションが設定されていないため、依存しないようにする必要があります。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  IDE は、この関数を呼び出して、ソース管理プラグインの動作を制御します。 最初のパラメーターは、 `nOption` 設定される値を示します。2番目のパラメーターは、 `dwVal` その値の処理方法を示します。 プラグインは、に関連付けられたこの情報を格納するので、 `pvContext``,` IDE は [Sccinitialize](../extensibility/sccinitialize-function.md) を呼び出した後にこの関数を呼び出す必要があります (ただし、 [sccopenproject](../extensibility/sccopenproject-function.md)の各呼び出しの後では必ずしも必要ではありません)。
 
  オプションとその値の概要:
 
-|`nOption`|`dwValue`|説明|
+|`nOption`|`dwValue`|Description|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|バックグラウンドイベントキューを有効または無効にします。|
 |`SCC_OPT_USERDATA`|任意の値|[Optnamechangepfn](../extensibility/optnamechangepfn.md)コールバック関数に渡されるユーザー値を指定します。|
@@ -83,7 +83,7 @@ SCCRTN SccSetOption(
 ## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ
  `nOption`がに設定されている場合 `SCC_OPT_SHARESUBPROJ` 、IDE はソース管理プラグインがソース管理からファイルを追加するときに、指定したローカルフォルダーを使用できるかどうかをテストします。 この場合、パラメーターの値は `dwVal` 問題になりません。 プラグインで、 [Sccaddfromscc](../extensibility/sccaddfromscc-function.md) が呼び出されたときにソース管理からファイルが追加されるローカルの保存先フォルダーを IDE で指定できる場合、プラグインは `SCC_I_SHARESUBPROJOK` 関数が呼び出されたときにを返す必要があり `SccSetOption` ます。 次に、IDE は関数のパラメーターを使用して、 `lplpFileNames` `SccAddFromScc` 出力先フォルダーを渡します。 プラグインは、このコピー先フォルダーを使用して、ソース管理から追加されたファイルを配置します。 オプションを設定したときにプラグインが戻らない場合、IDE では、 `SCC_I_SHARESUBPROJOK` `SCC_OPT_SHARESUBPROJ` プラグインが現在のローカルフォルダーにのみファイルを追加できることを前提としています。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

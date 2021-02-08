@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839561"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 パーサーは言語サービスの中核です。 Managed Package Framework (MPF) 言語クラスでは、表示されているコードに関する情報を選択する言語パーサーが必要です。 パーサーはテキストを字句トークンに分割し、型と機能によってそれらのトークンを識別します。
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  オブジェクトは <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトの一部としてパーサーに渡され、新しいオブジェクトが作成されるたびに <xref:Microsoft.VisualStudio.Package.ParseRequest> 新しい <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトが作成され <xref:Microsoft.VisualStudio.Package.ParseRequest> ます。 また、メソッドは、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> さまざまな IntelliSense 操作を処理するために使用されるオブジェクトを返す必要があります。 オブジェクトは、 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 解析の理由に応じて、宣言のリストとメソッドのリストを保持します。これらのメソッドのいずれかに設定されます。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスを実装する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [従来の言語サービスの概要](../../extensibility/internals/legacy-language-service-overview.md)
 - [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

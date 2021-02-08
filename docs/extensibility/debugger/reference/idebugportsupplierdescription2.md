@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3db59d4938911d0c47f0122a8727be8f1c8acd67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724354"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840198"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)][**プロセスにアタッチ**] ダイアログボックスの [**トランスポート情報**] セクション内のテキストを UI で表示できるようにします。
@@ -36,7 +36,7 @@ IDebugPortSupplierDescription2 : IUnknown
 |------------|-----------------|
 |[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|ポートサプライヤーの説明と説明のメタデータを取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

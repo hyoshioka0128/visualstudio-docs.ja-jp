@@ -1,24 +1,24 @@
 ---
-title: Cloud Services の使用 (拡張サポート) (プレビュー)
+title: Cloud Services の使用 (延長サポート) (プレビュー)
 description: Azure Resource Manager を Visual Studio と共に使用して Cloud Services (拡張サポート) を作成およびデプロイする方法について説明します
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750233"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841134"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>Visual Studio で Cloud Services (拡張サポート) を作成してデプロイする (プレビュー)
 
-[Visual Studio 2019 バージョン 16.9](https://visualstudio.microsoft.com/vs/preview) (現在プレビュー段階) 以降では、Azure Resource Manager を使用してクラウドサービスを操作できます。これにより、Azure リソースのメンテナンスと管理が大幅に簡素化され、港湾ます。 これは、 *Cloud Services (拡張サポート)* と呼ばれる新しい Azure サービスによって有効になります。 既存のクラウドサービスを発行して Cloud Services (拡張サポート) することができます。 この Azure サービスの詳細については、 [Cloud Services (拡張サポート) のドキュメント](/azure/cloud-services-extended-support/overview)を参照してください。
+[Visual Studio 2019 バージョン 16.9](https://visualstudio.microsoft.com/vs/preview) (現在プレビュー段階) 以降では、Azure Resource Manager を使用してクラウドサービスを操作できます。これにより、Azure リソースのメンテナンスと管理が大幅に簡素化され、港湾ます。 これは、 *Cloud Services (拡張サポート)* と呼ばれる新しい Azure サービスによって有効になります。 既存のクラウド サービスを Cloud Services (延長サポート) に発行することができます。 この Azure サービスの詳細については、[Cloud Services (延長サポート) に関するドキュメント](/azure/cloud-services-extended-support/overview)を参照してください。
 
 ## <a name="publish-to-cloud-services-extended-support"></a>Cloud Services に発行 (拡張サポート)
 
@@ -30,7 +30,7 @@ Cloud Services (拡張サポート) に発行する場合、いくつかの違�
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>クラシック Azure Cloud Service プロジェクトを Cloud Services に発行するには (拡張サポート)
 
-1. Cloud Services (拡張サポート) は現在プレビューの段階です。 次のようにして、サブスクリプションに機能を登録します。
+1. Cloud Services (延長サポート) は現在、プレビュー段階です。 次のようにして、サブスクリプションに機能を登録します。
 
    ```azurepowershell-interactive
    Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
@@ -48,7 +48,7 @@ Cloud Services (拡張サポート) に発行する場合、いくつかの違�
 
 1. **[サブスクリプションの選択]** - デプロイに使用するサブスクリプションを選択します。
 
-1. [ **次へ** ] をクリックして、[ **設定** ] ページに移動します。
+1. **[次へ]** を選択して、 **[設定]** ページに移動します。
 
    ![[共通設定]](./media/cloud-services-extended-support/publish-settings.png)
 
@@ -62,7 +62,7 @@ Cloud Services (拡張サポート) に発行する場合、いくつかの違�
 
 1. **[サービス構成]** - **[クラウド]** または **[ローカル]** を選択します。
 
-1. [**ストレージアカウント**]-このデプロイに使用するストレージアカウントを選択するか、[**新規作成**] をクリックしてストレージアカウントを作成します。 ストレージアカウントごとに、領域がかっこで囲まれて表示されます。 ストレージ アカウントのデータ センターの場所は、クラウド サービスのデータ センターの場所 ([共通設定]) と同じであることが推奨されます。
+1. **[ストレージ アカウント]** - このデプロイに使用するストレージ アカウントを選択するか、 **[新規作成]** を選択してストレージ アカウントを作成します。 ストレージ アカウントごとに、リージョンがかっこ内に表示されます。 ストレージ アカウントのデータ センターの場所は、クラウド サービスのデータ センターの場所 ([共通設定]) と同じであることが推奨されます。
 
    Azure ストレージ アカウントには、アプリケーション デプロイのパッケージが格納されます。
 
@@ -70,15 +70,15 @@ Cloud Services (拡張サポート) に発行する場合、いくつかの違�
 
 1. **[すべてのロールのリモート デスクトップを有効にする]** - サービスにリモート接続できるようにする場合は、このオプションを選択します。 資格情報を指定するように求められます。
 
-   ![リモートデスクトップの設定](./media/cloud-services-extended-support/remote-desktop-configuration.png)
+   ![リモート デスクトップの設定](./media/cloud-services-extended-support/remote-desktop-configuration.png)
 
-1. [ **次へ** ] をクリックして、[ **診断設定** ] ページに移動します。
+1. **[次へ]** を選択して、 **[診断設定]** ページに移動します。
 
    ![診断設定](./media/cloud-services-extended-support/diagnostics-settings.png)
 
    診断を使用すると、Azure クラウドサービス (拡張サポート) のトラブルシューティングを行うことができます。 診断については、「[Azure クラウド サービスおよび仮想マシン用の診断の構成](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)」をご覧ください。 Application Insights については、「[Application Insights とは何か?](/azure/application-insights/app-insights-overview)」をご覧ください。
 
-1. [ **次へ** ] をクリックして [ **概要** ] ページに移動します。
+1. **[次へ]** を選択して **[概要]** ページに移動します。
 
    ![まとめ](./media/cloud-services-extended-support/publish-summary.png)
 
@@ -87,14 +87,14 @@ Cloud Services (拡張サポート) に発行する場合、いくつかの違�
    > [!Note]
    > 発行プロファイルが Visual Studio のソリューションエクスプローラーに表示され、プロファイル設定が *azurepubxml* 拡張機能を持つファイルに書き込まれます。 設定は、XML タグの属性として保存されます。
 
-1. プロジェクトのデプロイのすべての設定を構成したら、ダイアログの下部にある **[発行]** をクリックします。 プロセスの状態は、Visual Studio の [ **Azure のアクティビティログ** の出力] ウィンドウで監視できます。 [ **ポータルで開く** ] リンクを選択します。 
+1. プロジェクトのデプロイのすべての設定を構成したら、ダイアログの下部にある **[発行]** をクリックします。 Visual Studio の **[Azure アクティビティ ログ]** 出力ウィンドウでプロセスの状態を監視できます。 [ **ポータルで開く** ] リンクを選択します。 
 
-おめでとうございます! クラウドサービス (拡張サポート) プロジェクトを Azure に発行しました。 同じ設定を使用して再度発行するには、発行プロファイルを再利用するか、これらの手順を繰り返して新しいものを作成します。 配置に使用される Azure Resource Manager (ARM) テンプレートとパラメーターは、 *bin// \<configuration\> Publish* フォルダーに保存されます。
+お疲れさまでした。 クラウドサービス (拡張サポート) プロジェクトを Azure に発行しました。 同じ設定を使用して再度発行する場合は、発行プロファイルを再利用するか、この手順を繰り返して新しいプロファイルを作成します。 配置に使用される Azure Resource Manager (ARM) テンプレートとパラメーターは、 *bin// \<configuration\> Publish* フォルダーに保存されます。
 
 ## <a name="clean-up-azure-resources"></a>Azure リソースをクリーンアップする
 
 このチュートリアルに従って作成した Azure リソースをクリーンアップするには、 [Azure portal](https://portal.azure.com)にアクセスし、[ **リソースグループ**] を選択して、クラウドサービスの作成に使用したリソースグループ (拡張サポート) を探して開き、[ **リソースグループの削除**] を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[**発行**] 画面の [**構成**] ボタンを使用して、継続的インテグレーション (CI) を設定します。 詳細については、 [Azure Pipelines のドキュメント](/azure/devops/pipelines/?view=azure-devops&preserve-view=true)を参照してください。
+**[発行]** 画面の **[構成]** ボタンを使用して、継続的インテグレーション (CI) を設定します。 詳細については、「[Azure Pipelines のドキュメント](/azure/devops/pipelines/?view=azure-devops&preserve-view=true)」を参照してください。

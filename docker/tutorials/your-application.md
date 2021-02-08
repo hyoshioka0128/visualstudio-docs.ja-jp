@@ -4,17 +4,17 @@ description: Node.js で実行される ToDo リスト サンプル アプリの
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: a66b747eda633d666518bf2d8a48328a25e038d2
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841667"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>ToDo サンプル アプリをビルドして実行する
 
@@ -99,7 +99,7 @@ VS Code 拡張機能を簡単に見てみると、現在ご自分の 2 つのコ
 
 次に、アプリに変更を加え、実行中のアプリケーションを新しいイメージで更新する方法について学習します。 その過程で、他のいくつかの便利なコマンドについても学習します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 チュートリアルを続行します。
 

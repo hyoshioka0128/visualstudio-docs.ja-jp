@@ -4,17 +4,17 @@ description: Cloud Native Computing Foundation プロジェクトを使用して
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f93185641a0814797b66eae90714e04cac83f7e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ca68b2eba710037535b4bd76c744e7c029a53e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841654"
 ---
 # <a name="whats-next"></a>次の内容
 
@@ -25,7 +25,7 @@ ms.locfileid: "89176723"
 
 運用環境でコンテナーを実行することは困難です。 コンピューターへのログインは行いたくなく、単に `docker run` または `docker-compose up` を実行しています。 なぜでしょうか。 コンテナーが機能しなくなった場合はどうなるのでしょうか。 複数のコンピューター間でどのようにスケーリングしますか。 コンテナー オーケストレーションを使用すれば、この問題を解決できます。 Kubernetes、Swarm、Nomad、AKS などのツールはすべて、少しずつ異なる方法でこの問題の解決に役立ちます。
 
-一般的な考え方は、**期待された状態**を受け取る "マネージャー" がいるということです。 この状態が "私は自分の Web アプリの 2 つのインスタンスを実行し、ポート 80 を公開することを望んでいます" といったものであるとします。 次にマネージャーは、クラスター内のすべてのコンピューターを確認し、作業を "ワーカー" ノードに委任します。 マネージャーは変更 (コンテナーの終了など) を監視して、**実際の状態**に期待された状態を反映するための作業を行います。
+一般的な考え方は、**期待された状態** を受け取る "マネージャー" がいるということです。 この状態が "私は自分の Web アプリの 2 つのインスタンスを実行し、ポート 80 を公開することを望んでいます" といったものであるとします。 次にマネージャーは、クラスター内のすべてのコンピューターを確認し、作業を "ワーカー" ノードに委任します。 マネージャーは変更 (コンテナーの終了など) を監視して、**実際の状態** に期待された状態を反映するための作業を行います。
 
 ## <a name="cloud-native-computing-foundation-projects"></a>Cloud Native Computing Foundation プロジェクト
 

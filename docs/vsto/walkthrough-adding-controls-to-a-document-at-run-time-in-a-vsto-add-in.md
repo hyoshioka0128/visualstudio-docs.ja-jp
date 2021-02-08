@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838088"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>チュートリアル: 実行時に VSTO アドインでドキュメントにコントロールを追加する
   VSTO アドインを使用して、開いている Microsoft Office Word 文書にコントロールを追加できます。 このチュートリアルでは、リボンを使用して、ユーザーがドキュメントにまたはを追加できるようにする方法について説明し <xref:Microsoft.Office.Tools.Word.Controls.Button> <xref:Microsoft.Office.Tools.Word.RichTextContentControl> ます。
@@ -177,7 +177,7 @@ ms.locfileid: "97526285"
 
      ボタンがドキュメントから削除されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  VSTO アドインのコントロールについて詳しくは、次の各トピックをご覧ください。
 
 - 実行時にドキュメントに他のさまざまな種類のコントロールを追加し、ドキュメントを再び開くときにコントロールを再作成する方法を示すサンプルについては、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「Word Add-In ダイナミックコントロールのサンプル」を参照してください。

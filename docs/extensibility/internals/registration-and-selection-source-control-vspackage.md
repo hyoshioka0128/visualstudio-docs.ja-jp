@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837204"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>登録と選択 (ソース管理 VSPackage)
 に公開するには、ソース管理 VSPackage を登録する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 複数のソース管理 VSPackage が登録されている場合、ユーザーは適切なタイミングで読み込む VSPackage を選択できます。 Vspackage とその登録方法の詳細については、「 [vspackage](../../extensibility/internals/vspackages.md) 」を参照してください。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - migrating Office solutions in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b18b61ad6854be654582fe8a8a76da185ec9d89e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 61961420167d30247ba3dc33122d6c0e7cad8d45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838322"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Office ソリューションのアップグレードと移行
   旧バージョンの Visual Studio で作成された Microsoft Office プロジェクトがある場合、現在のバーションの Visual Studio で使用するには、そのプロジェクトをアップグレードする必要があります。 Microsoft Office プロジェクトをアップグレードするには、Microsoft Office 開発ツールが含まれているバージョンの Visual Studio でそれを開きます。 Microsoft Office 開発者ツールを含む Visual Studio のバージョンの詳細については、「 [Office ソリューションを開発するためのコンピューターの構成](../vsto/configuring-a-computer-to-develop-office-solutions.md)」を参照してください。

@@ -8,15 +8,15 @@ ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811cf013c7337e032f9ee5a37f9bc38329dff240
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d182d308f852dda05f20f4ea30d3536850e20e90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837022"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 要素 (Visual Studio テンプレート)
 
@@ -36,7 +36,7 @@ ms.locfileid: "90037739"
 
 ## <a name="attributes-and-elements"></a>属性と要素
 
- なし。
+ [なし] :
 
 ### <a name="attributes"></a>属性
 
@@ -56,7 +56,7 @@ ms.locfileid: "90037739"
 
  テキスト値が必要です。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
  このテキストは、テンプレートで必要なオペレーティング システムの最小バージョンを指定します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "90037739"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [TargetPlatformName 要素 (Visual Studio テンプレート)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

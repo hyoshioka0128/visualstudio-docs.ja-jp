@@ -4,17 +4,17 @@ description: ボリュームをマウントして、データベース内のデ�
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 9ee4109c888888d2dee36804a178f7db8d41753f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841771"
 ---
 # <a name="persist-your-data"></a> データを保持する
 
@@ -70,7 +70,7 @@ ms.locfileid: "89485587"
 
 [[ボリューム]](https://docs.docker.com/storage/volumes/) には、コンテナーの特定のファイル システム パスをホスト マシンに接続する機能があります。 コンテナー内のディレクトリがマウントされている場合、そのディレクトリの変更はホスト マシンでも表示されます。 コンテナーの再起動時にこれと同じディレクトリをマウントすると、同じファイルが表示されます。
 
-ボリュームには、大きく分けて 2 つの種類があります。 最終的には両方を使用しますが、**名前付きボリューム**から始めます。
+ボリュームには、大きく分けて 2 つの種類があります。 最終的には両方を使用しますが、**名前付きボリューム** から始めます。
 
 ## <a name="persist-your-todo-data"></a>Todo データを保持する
 
@@ -78,7 +78,7 @@ todo アプリの既定では、そのデータが [SQLite Database](https://www
 
 データベースは 1 つのファイルであるため、そのファイルをホスト上に保持しして次のコンテナーで使用できるようにすると、最後に中断したところから再開できます。 ボリュームを作成し、データが格納されているディレクトリにアタッチすることで (多くの場合、"マウント" と呼ばれます)、データを保持できます。 コンテナーによって `todo.db` ファイルに書き込まれると、ボリューム内のホストに保持されます。
 
-前述のように、**名前付きボリューム**を使用します。 名前付きボリュームは単なるデータのバケットと考えてください。 Docker では、ディスク上の物理的な場所が維持されます。必要なことは、ボリュームの名前が記憶することのみです。 ボリュームを使用するたびに、Docker で正しいデータが表示されることを確認します。
+前述のように、**名前付きボリューム** を使用します。 名前付きボリュームは単なるデータのバケットと考えてください。 Docker では、ディスク上の物理的な場所が維持されます。必要なことは、ボリュームの名前が記憶することのみです。 ボリュームを使用するたびに、Docker で正しいデータが表示されることを確認します。
 
 1. `docker volume create` コマンドを使用してボリュームを作成します。
 

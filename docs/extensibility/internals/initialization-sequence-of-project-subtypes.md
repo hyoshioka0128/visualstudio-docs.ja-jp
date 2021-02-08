@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea784eae808cbab3a5991651961d3b150b641c04
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 86173253c947be5de8600e15b68a6f08504803a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839847"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>プロジェクト サブタイプの初期化シーケンス
 環境では、の基本プロジェクトファクトリの実装を呼び出すことによって、プロジェクトを構築し <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> ます。 プロジェクトのサブタイプの構造は、プロジェクトファイルの拡張子に対するプロジェクトの種類の GUID リストが空でないと判断したときに開始されます。 プロジェクトファイルの拡張子とプロジェクト GUID は、プロジェクトがプロジェクトの種類であるか、またはプロジェクトであるかを指定し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ます。 たとえば、.vbproj 拡張子と {F184B08F-C81C-45F6-A57F-5ABD9991F28F} はプロジェクトを識別します [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。
@@ -133,7 +133,7 @@ HRESULT HrCreateInnerProj
 }
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.Shell.Flavor>
 - [プロジェクト サブタイプ](../../extensibility/internals/project-subtypes.md)

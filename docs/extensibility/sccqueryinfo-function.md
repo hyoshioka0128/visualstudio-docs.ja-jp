@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1efae18f15588f4dacf3409ea95e30af05397c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836736"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 関数
 この関数は、ソース管理下で選択された一連のファイルのステータス情報を取得します。
@@ -60,7 +60,7 @@ SCCRTN SccQueryInfo(
 |SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていません。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `lpFileName`が空の文字列の場合、現在更新する状態情報はありません。 それ以外の場合は、ステータス情報が変更された可能性があるファイルの完全なパス名です。
 
  戻り値の配列には、ビットのビットマスクを指定でき `SCC_STATUS_xxxx` ます。 詳細については、「 [ファイルのステータスコード](../extensibility/file-status-code-enumerator.md)」を参照してください。 ソース管理システムは、すべてのビット型をサポートしていない場合があります。 たとえば、が提供されていない場合、 `SCC_STATUS_OUTOFDATE` ビットは設定されません。
@@ -75,6 +75,6 @@ SCCRTN SccQueryInfo(
 
 - ファイルが現在のユーザーによって作業ディレクトリ以外のディレクトリにチェックアウトされている場合、は設定されますが、 `SCC_STATUS_OUTBYUSER` は設定され `SCC_STATUS_CHECKEDOUT` ません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eceb0776fd1cb5e850dab2b97ab6e7e56a684ebd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838023"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope アクティビティ デザイナー
 
@@ -43,11 +43,11 @@ ms.locfileid: "96996293"
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|アクティビティ <xref:System.ServiceModel.Activities.Receive> デザイナー画面の **要求** ブロックにアクティビティをドロップします。|
 |<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|を <xref:System.Activities.Activity> アクティビティデザイナー画面の **Body** ブロックにドロップします。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [受信](../workflow-designer/receive-activity-designer.md)
+- [受け取れ](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

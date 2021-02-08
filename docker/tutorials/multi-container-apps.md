@@ -4,17 +4,17 @@ description: コンテナー間のネットワークを設定する方法と、M
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c8c9fb4072da071ba06d5dc371e85db8291353a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89176727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841784"
 ---
 # <a name="multi-container-apps"></a>複数コンテナー アプリ
 
@@ -31,7 +31,7 @@ ms.locfileid: "89176727"
 
 ## <a name="container-networking"></a>コンテナー ネットワーク
 
-既定では、コンテナーは分離して実行され、同じコンピューター上の他のプロセスまたはコンテナーについては何も認識していないことに注意してください。 では、あるコンテナーが別のコンテナーと通信できるようにするにはどうすればよいでしょうか。 答えは**ネットワーク**です。 この場合、ネットワーク エンジニアである必要はありません。 このルールに従うだけで済みます。
+既定では、コンテナーは分離して実行され、同じコンピューター上の他のプロセスまたはコンテナーについては何も認識していないことに注意してください。 では、あるコンテナーが別のコンテナーと通信できるようにするにはどうすればよいでしょうか。 答えは **ネットワーク** です。 この場合、ネットワーク エンジニアである必要はありません。 このルールに従うだけで済みます。
 
 > [!NOTE]
 > 2 つのコンテナーが同じネットワーク上にある場合は、互いに通信できます。 そうでない場合は、互いに通信できません。
@@ -95,7 +95,7 @@ ms.locfileid: "89176727"
 
 MySQL が稼働していることを確認できたので、使用してみましょう。 しかし、どのようにして使用するのでしょうか。 同じネットワーク上で別のコンテナーを実行する場合、コンテナーを検索するにはどうすればよいでしょうか (各コンテナーには独自の IP アドレスがあることを思い出してください)。
 
-これを理解するために、[nicolaka/netshoot](https://github.com/nicolaka/netshoot) コンテナーを使用します。このコンテナーには、ネットワークの問題のトラブルシューティングやデバッグに役立つ*多数の*ツールが付属しています。
+これを理解するために、[nicolaka/netshoot](https://github.com/nicolaka/netshoot) コンテナーを使用します。このコンテナーには、ネットワークの問題のトラブルシューティングやデバッグに役立つ *多数の* ツールが付属しています。
 
 1. `nicolaka/netshoot` イメージを使用して新しいコンテナーを起動します。 これを必ず同じネットワークに接続してください。
 

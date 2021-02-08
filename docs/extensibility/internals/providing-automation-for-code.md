@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21cb3e63-f25c-404b-bc1d-a32ad0fdd4d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd8d0745ae971f4039ffccf3431614325236e63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 41dca5d7a3d2a95ae9b89feb73fb7655b8923eb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875857"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837217"
 ---
 # <a name="providing-automation-for-code"></a>コードのオートメーションの提供
 コードのオートメーションモデルを作成する必要はありません。 環境 SDK には、そのためのサンプルが用意されていません。 コードモデルの詳細については、オブジェクトを参照してください <xref:EnvDTE.CodeModel> 。

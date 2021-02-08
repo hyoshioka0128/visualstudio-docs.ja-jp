@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf2dd87efbb50346093144db6e069eea30138e37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68694388f49d59c7e8e872f0fc70994130e2990
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836775"
 ---
 # <a name="sccproperties-function"></a>SccProperties 関数
 この関数は、ファイルまたはプロジェクトのソース管理プロパティを表示します。
@@ -57,10 +57,10 @@ SCCRTN SccProperties (
 |SCC_E_FILENOTCONTROLLED|指定されたファイルまたはプロジェクトは、ソース管理下にありません。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不明または一般的なエラーが発生しました。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  ソース管理プラグインによって、独自のダイアログボックスにプロパティが表示されます。
 
  プロパティはソース管理プラグインによって定義され、プラグインにプラグインとは異なる場合があります。 プラグインでファイルのソース管理プロパティを変更できる場合、 `SCC_I_RELOAD` このファイルまたはプロジェクトを再読み込みする必要があることを IDE に通知するために、が返されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

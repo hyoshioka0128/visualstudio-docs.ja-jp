@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837249"
 ---
 # <a name="registering-project-and-item-templates"></a>プロジェクトと項目テンプレートの登録
 プロジェクトの種類では、プロジェクトテンプレートとプロジェクト項目テンプレートが配置されているディレクトリを登録する必要があります。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] では、プロジェクトの種類に関連付けられている登録情報を使用して、[ **新しいプロジェクトの追加** ] および [ **新しい項目の追加** ] ダイアログボックスに表示する内容を決定します。
@@ -39,11 +39,11 @@ ms.locfileid: "97875272"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|名前|Type|説明|
+|名前|Type|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|この種類のプロジェクトの既定の名前。|
 |DisplayName|REG_SZ|パッケージに登録されているサテライト DLL から取得する名前のリソース ID。|
-|パッケージ|REG_SZ|パッケージに登録されているパッケージのクラス ID。|
+|Package|REG_SZ|パッケージに登録されているパッケージのクラス ID。|
 |Projecttemplates ディレクトリ|REG_SZ|プロジェクトテンプレートファイルの既定のパス。 プロジェクトテンプレートファイルは、 **新しいプロジェクト** テンプレートによって表示されます。|
 
 ### <a name="registering-item-templates"></a>登録 (項目テンプレートを)
@@ -57,7 +57,7 @@ ms.locfileid: "97875272"
 "SortPriority"=dword:00000064
 ```
 
-| 名前 | Type | 説明 |
+| 名前 | Type | Description |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 項目テンプレートの追加用のリソース ID。 |
 | Templates ディレクトリ | REG_SZ | **新しい項目の追加** ウィザードのダイアログボックスに表示されるプロジェクト項目のパス。 |
@@ -84,7 +84,7 @@ ms.locfileid: "97875272"
 "SortPriority"=dword:00000064
 ```
 
-|名前|Type|説明|
+|名前|Type|Description|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|[ **フォルダーを** 選択して検索] ダイアログボックスで、フィルターを共通のフィルターの1つにします。 共通フィルターが [共通] としてマークされていない場合、[フィルター] ボックスの一覧に一般的なフィルターが表示されます|
 |CommonOpenFilesFilter|REG_DWORD|[ **ファイルを開く** ] ダイアログボックスで、フィルターを共通のフィルターの1つにします。 共通フィルターが [共通] としてマークされていない場合、[フィルター] ボックスの一覧に一般的なフィルターが表示されます|

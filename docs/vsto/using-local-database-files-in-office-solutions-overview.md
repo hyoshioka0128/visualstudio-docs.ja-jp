@@ -13,15 +13,15 @@ helpviewer_keywords:
 - local data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 857038700a29f423250f006e743152bceea43c14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838233"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>Office ソリューションのローカルデータベースファイルの使用の概要
   Office ソリューションには、SQL Server Express (*.mdf*) ファイルや Microsoft Office Access (*.mdb*) ファイルなどのデータベースファイルを含めることができます。 これにより、エンドユーザーは、1台のコンピューターでのみ使用されるローカルインベントリソリューションなど、集中管理されたデータベースを保持する必要がない場合に、ローカルデータベースを管理できます。
