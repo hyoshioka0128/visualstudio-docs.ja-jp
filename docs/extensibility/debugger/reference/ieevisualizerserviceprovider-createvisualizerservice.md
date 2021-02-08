@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e05677122b7d4e4eb025a9382ede1509374de894
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1f1149e9522803a199034395697e5c88bd988840
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842193"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 このメソッドは、ビジュアライザーサービスを作成します。
@@ -28,22 +28,22 @@ ms.locfileid: "80717910"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT CreateVisualizerService(
-   IDebugBinder*              binder,
-   IDebugSymbolProvider*      pSymProv,
-   IDebugAddress*             pAddress,
-   IEEVisualizerDataProvider* dataProvider,
-   IEEVisualizerService**     ppService
+HRESULT CreateVisualizerService(
+   IDebugBinder*              binder,
+   IDebugSymbolProvider*      pSymProv,
+   IDebugAddress*             pAddress,
+   IEEVisualizerDataProvider* dataProvider,
+   IEEVisualizerService**     ppService
 );
 ```
 
 ```csharp
-int CreateVisualizerService(
-   IDebugBinder binder,
-   IDebugSymbolProvider      pSymProv,
-   IDebugAddress             pAddress,
-   IEEVisualizerDataProvider dataProvider,
-   out IEEVisualizerService  ppService
+int CreateVisualizerService(
+   IDebugBinder binder,
+   IDebugSymbolProvider      pSymProv,
+   IDebugAddress             pAddress,
+   IEEVisualizerDataProvider dataProvider,
+   out IEEVisualizerService  ppService
 );
 ```
 
@@ -66,7 +66,7 @@ int CreateVisualizerService(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  、、およびの各パラメーターは、 `binder` `pSymProv` `pAddress` すべてメソッドに渡されました `IDebugParsedExpression::EvaluateSync` 。 `CreateVisualizerService` は `IDebugParsedExpression::EvaluateSync` 、式エバリュエーターによる型ビジュアライザーのサポートの一部として、からのみ呼び出されます。
 
 ## <a name="see-also"></a>関連項目

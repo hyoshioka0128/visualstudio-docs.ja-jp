@@ -2,17 +2,17 @@
 title: サービス構成とプロファイルを管理する方法 | Microsoft Docs
 description: サービス構成とプロファイルの構成ファイルを使用する方法について説明します。構成ファイルには、デプロイ環境の設定とクラウド サービスの発行設定が保存されます。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843814"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>サービス構成とプロファイルを管理する方法
 ## <a name="overview"></a>概要
@@ -93,5 +93,5 @@ ms.locfileid: "94902080"
 4. 設定の変更が完了したら、**[次へ]** を選択して **[設定]** ページに戻ります。
 5. (省略可能) **[発行]** を選択し、新しい設定を使用してクラウド サービスを発行します。 この時点でクラウド サービスを発行せずに発行ウィザードを閉じると、変更をプロファイルに保存するかどうかをたずねるメッセージが表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 Visual Studio から Azure プロジェクトのその他の部分を構成する方法については、 [Azure プロジェクトの構成](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)に関するページを参照してください。

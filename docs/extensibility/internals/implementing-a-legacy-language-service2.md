@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839964"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>従来の言語サービスの実装2
 Managed package framework (MPF) を使用して言語サービスを実装するには、クラスからクラスを派生させ、 <xref:Microsoft.VisualStudio.Package.LanguageService> 次の抽象メソッドとプロパティを実装する必要があります。
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>LanguageService クラス内
 
-|メソッド|返されるクラス|説明|
+|Method|返されるクラス|Description|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|テキストビューへのカスタム追加をサポートします。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|カスタムドキュメントプロパティをサポートします。|
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>ソースクラス内
 
-|メソッド|返されるクラス|説明|
+|Method|返されるクラス|Description|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|IntelliSense 入力候補一覧の表示をカスタマイズする場合 (通常はオーバーライドされません)。|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|エラー一覧タスク一覧のマーカーをサポートするには、具体的には、ファイルを開いてエラーの原因となった行にジャンプする以外にも機能がサポートされます。|
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>AuthoringScope クラス内
 
-|メソッド|返されるクラス|説明|
+|Method|返されるクラス|Description|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|メンバーや型などの宣言の一覧を提供します。 このメソッドは実装する必要がありますが、null 値を返すことができます。 このメソッドが有効なオブジェクトを返す場合、オブジェクトはクラスのインスタンスである必要があり <xref:Microsoft.VisualStudio.Package.Declarations> ます。|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|指定されたコンテキストのメソッドシグネチャの一覧を提供します。 このメソッドは実装する必要がありますが、null 値を返すことができます。 このメソッドが有効なオブジェクトを返す場合、オブジェクトはクラスのインスタンスである必要があり <xref:Microsoft.VisualStudio.Package.Methods> ます。|

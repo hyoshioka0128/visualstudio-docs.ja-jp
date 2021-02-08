@@ -2,18 +2,18 @@
 title: Azure クラウド サービスまたは仮想マシンのデバッグ
 description: Visual Studio でのクラウド サービスまたは仮想マシンのデバッグ
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c6e03bb4048b077bb4e1faa8b0382a3f4dbaf856
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844334"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
 
@@ -27,7 +27,7 @@ Azure コンピューティング エミュレーターを使用してローカ�
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>ローカル コンピューターでクラウド サービスをデバッグするには
 
-1. メニューバーで、[**デバッグ**] [デバッグの開始] を選択し  >  **Start Debugging** て、Azure クラウドサービスプロジェクトを実行します。 または、F5 キーを押します。 コンピューティング エミュレーターが起動することを示すメッセージが表示されます。 エミュレーターが起動すると、システム トレイ アイコンでそのことを確認できます。
+1. メニューバーで、[**デバッグ**] [デバッグの開始] を選択し  >  て、Azure クラウドサービスプロジェクトを実行します。 または、F5 キーを押します。 コンピューティング エミュレーターが起動することを示すメッセージが表示されます。 エミュレーターが起動すると、システム トレイ アイコンでそのことを確認できます。
 
     ![Azure emulator in the system tray](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -77,7 +77,7 @@ Azure コンピューティング エミュレーターを使用してローカ�
 
     ![Select code type dialog box](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. デバッガーがアタッチされているプロセスを特定するには、メニューバーで [Windows プロセスの **デバッグ**] を選択し、[  >  **Windows**  >  **Processes****プロセス**] ダイアログボックスを開きます。 (キーボード: Ctrl+Alt+Z) 特定のプロセスをデタッチするには、ショートカット メニューを開き、**[プロセスのデタッチ]** を選択します。 または、サーバー エクスプローラーでインスタンス ノードを特定し、プロセスを検索し、ショートカット メニューを開き、 **[プロセスのデタッチ]** を選択します。
+4. デバッガーがアタッチされているプロセスを特定するには、メニューバーで [Windows プロセスの **デバッグ**] を選択し、[  >    >  **プロセス**] ダイアログボックスを開きます。 (キーボード: Ctrl+Alt+Z) 特定のプロセスをデタッチするには、ショートカット メニューを開き、**[プロセスのデタッチ]** を選択します。 または、サーバー エクスプローラーでインスタンス ノードを特定し、プロセスを検索し、ショートカット メニューを開き、 **[プロセスのデタッチ]** を選択します。
 
     ![Debug Processes](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
 10. 仮想マシンでデバッグするプロセスを選択し、[ **アタッチ**] を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「 [Visual Studio での 1 つ以上のプロセスのデバッグ](../debugger/debug-multiple-processes.md) 」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 * リリースサーバーからの呼び出しとイベントのログを収集するには、 **IntelliTrace** を使用します。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)に関するページを参照してください。
 

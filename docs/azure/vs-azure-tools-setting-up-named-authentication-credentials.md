@@ -2,17 +2,17 @@
 title: 名前付き認証資格情報の設定 | Microsoft Docs
 description: Visual Studio から Azure にアプリケーションを発行したり、既存のクラウド サービスを監視したりできるように、Visual Studio が Azure への要求の認証に使用できる資格情報を指定する方法について説明します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 059ac654f13ed833e80464e74e18a6cb8b0f8132
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: bd4c1864539d915e34b286debb3f6b2f739049d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843801"
 ---
 # <a name="set-up-named-authentication-credentials"></a>名前付き認証資格情報の設定
 
@@ -33,7 +33,7 @@ Visual Studio から Azure にアプリケーションを発行したり、既�
 
 証明書を自分で作成する場合は、[Azure の管理証明書の作成とアップロード](/azure/cloud-services/cloud-services-certs-create)に関する記事に記載された手順を参照し、[Azure Portal](https://portal.azure.com/) に証明書を手動でアップロードします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Web Apps の概要](/azure/app-service/)
 - [Azure App Service へのアプリのデプロイ](/azure/app-service/app-service-deploy-local-git)

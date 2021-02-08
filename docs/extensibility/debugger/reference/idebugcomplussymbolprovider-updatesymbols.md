@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: d530f6f1-4af2-454b-bab0-02478a8fe81e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20a4fa6f6ec52ee556bd62fe303d0e21e4c56d6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2421ff73ed94b275288d9a1aed6ff4a382f45048
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842499"
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
 メモリ内のデバッグシンボルを、指定されたデータストリームのデバッグシンボルで更新します。
@@ -53,7 +53,7 @@ int UpdateSymbols (
 から更新されたデバッグシンボルを格納するデータストリーム。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する **Cdebugシンボルプロバイダー** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::UpdateSymbols(

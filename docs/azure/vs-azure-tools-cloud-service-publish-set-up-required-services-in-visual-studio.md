@@ -2,17 +2,17 @@
 title: クラウド サービスの発行またはデプロイの準備
 description: クラウド サービスとストレージ アカウント サービスを設定し、Azure アプリケーションを構成する手順を説明します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c048968ca97484812b7423a16e4a1834e1c8a66b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 06157f1476762af5bfe24ce950e29e80ac60e6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844425"
 ---
 # <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Visual Studio からのクラウド サービスの発行またはデプロイの準備
 
@@ -75,6 +75,6 @@ Azure Portal には、各 Azure Storage サービスのリソースにアクセ�
 
 セカンダリ アクセス キーは、プライマリ アクセス キーと同じようにストレージ アカウントにアクセスでき、プライマリ アクセス キーが侵害された場合の予備として生成されます。 また、定期的にアクセスのキーを再生成することをお勧めします。 プライマリ キーの再生成時にセカンダリ キーを使用するように接続文字列の設定を変更した後で、セカンダリ キーの再生成時に再生成したプライマリ キーを使用するように接続文字列の設定を変更できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Visural Studio からの Azure へのアプリ発行の詳細については、「 [Azure Tools を使用したクラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)」を参照してください。

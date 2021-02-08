@@ -2,17 +2,17 @@
 title: クラウド エクスプローラーを使用した Azure リソースの管理 | Microsoft Docs
 description: クラウド エクスプローラーを使用し、Visual Studio 内で Azure リソースを参照および管理する方法について説明します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: c9c2ce60b2096b6c3a4f06fad7360b1d5ea0c753
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 532195bad81fc9162b854493d5aca9bb2fa7f600
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843944"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Visual Studio Cloud Explorer で Azure アカウントに関連付けられているリソースを管理する
 
@@ -26,7 +26,7 @@ Cloud Explorer を使用すると、Azure リソースやリソース グルー�
 * Microsoft Azure アカウント - アカウントがない場合は、[無料試用版にサインアップ](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)するか、[Visual Studio サブスクライバー特典を有効](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)にします。
 
 > [!NOTE]
-> Cloud Explorer を表示するには、 **Ctrl** Q キーを押して検索ボックスをアクティブにし、 + **Q** 「 **Cloud Explorer**」と入力します。
+> Cloud Explorer を表示するには、 **Ctrl** Q キーを押して検索ボックスをアクティブにし、 +  「 **Cloud Explorer**」と入力します。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Cloud Explorer に Azure アカウントを追加する
 

@@ -3,17 +3,17 @@ title: ストレージリソースの参照と管理
 description: サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: ae45fafb562387720b652e0921624bc859ea5920
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 70656b71df09f5635ebfb5d4532256e8f0d3dd35
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843853"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>サーバー エクスプローラーを使用したストレージ リソースの参照と管理
 
@@ -23,7 +23,7 @@ ms.locfileid: "94902221"
 
 Azure Tools for Microsoft Visual Studio をインストール済みである場合、Azure のストレージ アカウントから、BLOB、キュー、テーブルのデータを表示できます。 サーバーエクスプローラーの [Azure **storage** ] ノードには、ローカルストレージエミュレーターアカウントとその他の azure ストレージアカウント内のデータが表示されます。
 
-Visual Studio でサーバーエクスプローラーを表示するには、メニューバーで [サーバーエクスプローラーの **表示**] を選択し  >  **Server Explorer** ます。 **[ストレージ]** ノードには、接続先の各 Azure サブスクリプションまたは証明書に存在するすべてのストレージ アカウントが表示されます。 ストレージ アカウントが表示されない場合は、 [この記事の最後](#add-storage-accounts-by-using-server-explorer)に記載した手順で追加できます。
+Visual Studio でサーバーエクスプローラーを表示するには、メニューバーで [サーバーエクスプローラーの **表示**] を選択し  >  ます。 **[ストレージ]** ノードには、接続先の各 Azure サブスクリプションまたは証明書に存在するすべてのストレージ アカウントが表示されます。 ストレージ アカウントが表示されない場合は、 [この記事の最後](#add-storage-accounts-by-using-server-explorer)に記載した手順で追加できます。
 
 Azure SDK 2.7 以降では、Cloud Explorer を使用して Azure リソースを表示および管理することもできます。 詳細については、「 [Cloud Explorer を使用した Azure リソースの管理](vs-azure-tools-resources-managing-with-cloud-explorer.md)」を参照してください。
 
@@ -259,9 +259,9 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
    * リージョンまたはアフィニティ グループ (米国西部や東アジアなど)。
    * ローカル冗長など、ストレージ アカウントで使用するレプリケーションの種類。
 
-   ![Azure のストレージ アカウントの作成](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
+   ![Azure ストレージ アカウントの作成](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. **［作成］** を選択します
+1. **[作成]** を選択します。
 
 新しいストレージ アカウントがソリューション エクスプローラーの **[Storage]** ボックスの一覧に表示されます。
 
@@ -290,6 +290,6 @@ Azure Table Storage は、大量の構造化データを格納します。 こ�
 
 サーバー エクスプローラーからストレージ アカウントを削除しても、ストレージ アカウントやアカウントに含まれているデータには影響しません。 サーバー エクスプローラーからの参照が削除されるだけです。 ストレージ アカウントを完全に削除するには、[Azure Portal](https://portal.azure.com/) を使用します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Azure Storage サービスの使用方法の詳細については、[Azure Storage サービスへのアクセス](/azure/storage/common/storage-introduction)に関するページをご覧ください。

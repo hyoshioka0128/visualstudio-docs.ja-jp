@@ -2,17 +2,17 @@
 title: Azure コードの最適化
 description: Visual Studio の Azure コード最適化ツールにより、コードの堅牢性とパフォーマンスを向上させる方法について説明します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 5ae141c4ecdf5cfe1819ba2f47aac45f1763fa34
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: b7a20b4ae57ee5cf1127441bc43dea021c170188
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844035"
 ---
 # <a name="optimizing-your-azure-code"></a>Azure コードの最適化
 Microsoft Azure を使用するアプリケーションをプログラミングする場合、クラウド環境でのアプリケーションのスケーラビリティ、動作、パフォーマンスに関する問題の回避に役立つコーディングの手法がいくつかあります。 Microsoft では、このような一般的に発生する問題の一部を認識および特定し、その解決を支援する Azure コード分析ツールを提供しています。 このツールは、NuGet を使用して Visual Studio でダウンロードできます。
@@ -24,7 +24,7 @@ Azure コード分析ツールでは、パフォーマンスに影響する既�
 ### <a name="id"></a>id
 AP0000
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 クラウド アプリケーションの既定 (インプロセス) のセッション状態モードを使用すると、セッション状態が失われる可能性があります。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -41,7 +41,7 @@ ASP.NET セッション状態では、セッション状態データのさまざ
 ### <a name="id"></a>id
 AP1000
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 非同期メソッド ([await](/dotnet/csharp/language-reference/operators/await) など) を [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) メソッドの外に作成し、[Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) から非同期メソッドを呼び出します。 [[Run()](/previous-versions/azure/reference/ee772746(v=azure.100))](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) メソッドを非同期として宣言すると、worker ロールが再起動ループに入ります。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -86,7 +86,7 @@ public async Task RunAsync()
 ### <a name="id"></a>id
 AP2000
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 認証に Shared Access Signature (SAS) を使用します。 Service Bus の認証に、Access Control Service (ACS) は非推奨となっています。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -112,7 +112,7 @@ BrokeredMessage receivedMessage = sc.Receive();
 ### <a name="id"></a>id
 AP2002
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 "受信ループ" に入らないようにするには、メッセージを受信するために **Receive** メソッドを呼び出すよりも、**OnMessage** メソッドを呼び出す方がソリューションとして優れています。 ただし、 **Receive** メソッドを使用する必要があり、既定値以外のサーバー待機時間を指定した場合は、サーバー待機時間が 1 分を超えていることを確認します。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -216,7 +216,7 @@ while (true)
 ### <a name="id"></a>id
 AP2003
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 仲介型メッセージングでパフォーマンスを向上させるには、Service Bus の非同期メソッドを使用します。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -233,7 +233,7 @@ Azure メッセージング インフラストラクチャのパフォーマン�
 ### <a name="id"></a>id
 AP2004
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 Service Bus メッセージングでパフォーマンスを向上させるには、Service Bus のキューとトピックをパーティション分割します。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -258,7 +258,7 @@ ns.CreateTopic(td);
 ### <a name="id"></a>id
 AP3001
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 共有アクセス ポリシーを即座に開始するために、現在の時刻に設定された SharedAccessStartTime を使用しないようにします。 このプロパティを設定する必要があるのは、共有アクセス ポリシーを後で開始する場合だけです。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -290,7 +290,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ### <a name="id"></a>id
 AP3002
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 "時刻のずれ" と呼ばれる状態により、さまざまな場所にあるデータセンター間でクロックの時間差が 5 分になる場合があります。 SAS ポリシー トークンが予定よりも早く期限切れになるのを防ぐには、5 分より長い有効期限を設定します。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -340,7 +340,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ### <a name="id"></a>id
 AP4000
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 Azure Web サイトや Azure Mobile Services などのプロジェクトで [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) クラスを使用すると、実行時の問題が発生しなくなります。 ただし、すべての Azure クラウド アプリケーションの構成管理の統一された方法として、Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) を使用することをお勧めします。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -377,7 +377,7 @@ App.config ファイルまたは Web.config ファイルに構成設定を保存
 ### <a name="id"></a>id
 AP4001
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 ハードコーディングされた接続文字列を使用しており、それらを後で更新する必要がある場合、ソース コードを変更し、アプリケーションを再コンパイルする必要があります。 ただし、構成ファイルに接続文字列を保存すると、構成ファイルを更新するだけで、接続文字列を後で変更できます。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -398,7 +398,7 @@ web.config や app.config などの構成ファイルの使用方法について
 ### <a name="id"></a>id
 AP5000
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 Microsoft.WindowsAzure.Diagnostics プログラミング API を使用するなどして、コードで診断設定を構成するのではなく、diagnostics.wadcfg ファイル  (Azure SDK 2.5 を使用する場合は diagnostics.wadcfgx) で診断設定を構成します。 これにより、コードを再コンパイルしなくても診断設定を変更できます。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -423,7 +423,7 @@ WAD 1.3 (Azure SDK 2.5 に付属) 以降では、コードを使用して診断�
 ### <a name="id"></a>id
 AP6000
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
 メモリを節約するために、DBContext オブジェクトを静的として宣言しないようにします。
 
 [Azure コード分析のフィードバック](https://social.msdn.microsoft.com/Forums/en-US/home)のページでアイデアやフィードバックを共有してください。
@@ -458,5 +458,5 @@ public class BlogsController : Controller
     }
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 Azure アプリケーションの最適化とトラブルシューティングの詳細については、「[Visual Studio を使用した Azure App Service のトラブルシューティング](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio)」をご覧ください。

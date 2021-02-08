@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d22b10085baefeb3a0286c1b4edcb5876c0dac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3080d5beb111fffa0725fba3278cc0fb93f25381
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842538"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 このインターフェイスは、コードの場所にバインドされているブレークポイントを表します。
@@ -49,7 +49,7 @@ IDebugBoundBreakpoint2 : IUnknown
 |[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|このバインドされたブレークポイントに関連付けられているパスカウントを設定または変更します。|
 |[削除](../../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|ブレークポイントを削除します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -59,4 +59,4 @@ IDebugBoundBreakpoint2 : IUnknown
 ## <a name="see-also"></a>関連項目
 - [GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)
 - [次へ](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)
-- [Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
+- [束縛](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

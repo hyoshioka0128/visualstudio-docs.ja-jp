@@ -2,17 +2,17 @@
 title: Publish-WebApplicationVM | Microsoft Docs
 description: 仮想マシンに Web アプリケーションをデプロイする方法を学習します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 61055a21e3360419639494ee6dcd47f88440f94e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6bd9659adec2d1d88a7a02c7985fc0f823c5d811
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844009"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (Windows PowerShell スクリプト)
 仮想マシンに Web アプリケーションをデプロイします。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
@@ -34,7 +34,7 @@ Publish-WebApplicationVM
 | エイリアス | なし |
 | --- | --- |
 | 必須 |true |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -45,7 +45,7 @@ Publish-WebApplicationVM
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |サブスクリプション ファイルで最初のサブスクリプションを使用する |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -56,7 +56,7 @@ Publish-WebApplicationVM
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -67,7 +67,7 @@ True の場合は、信頼されたルート証明機関によって署名され
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -78,7 +78,7 @@ True の場合は、信頼されたルート証明機関によって署名され
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -89,7 +89,7 @@ Azure での SQL Database の資格情報。 例: -DatabaseServerPassword @{Name
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -100,7 +100,7 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | エイリアス | なし |
 | --- | --- |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |

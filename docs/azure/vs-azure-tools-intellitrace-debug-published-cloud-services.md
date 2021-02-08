@@ -3,17 +3,17 @@ title: IntelliTrace を使用して発行済みの Azure クラウドサービ�
 ms.custom: SEO-VS-2020
 description: Visual Studio と IntelliTrace を使用して、クラウド サービスをデバッグする方法について説明します。
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: how-to
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: abfe3de9bad150fbfb187646592218e62c1cce20
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d419f80dc0319fbcebe053cd063cf668fc278a38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844204"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Visual Studio と IntelliTrace を使用した発行済みの Azure クラウド サービスのデバッグ
 IntelliTrace を使用すると、ロール インスタンスを Azure で実行する際に広範なデバッグ情報を記録できます。 問題の原因を調べる必要がある場合は、IntelliTrace ログを使用して、コードが Azure で実行されているかのように Visual Studio から調査することができます。 実際には、IntelliTrace は Azure アプリケーションが Azure のクラウド サービスとして実行されている際にキー コードの実行および環境データを記録し、その記録されたデータを Visual Studio で再生できるようにします。
@@ -73,6 +73,6 @@ IntelliTrace ログのダウンロード中も、Visual Studio での作業を�
 >
 >
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 - [Azure クラウド サービスのデバッグのオプション](vs-azure-tools-debugging-cloud-services-overview.md)
 - [Visual Studio を使用した Azure クラウド サービスの発行](vs-azure-tools-publishing-a-cloud-service.md)

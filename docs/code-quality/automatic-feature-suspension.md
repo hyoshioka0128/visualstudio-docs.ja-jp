@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12b15ed8aa02e53841b85245350735258e7ec11d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: efd053a846a7bf70f475db44788b14152498dc0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843723"
 ---
 # <a name="automatic-feature-suspension"></a>自動機能の中断
 
@@ -46,7 +46,7 @@ Visual Studio はメモリ不足の状態を検出すると、安定した状態
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>ライブコード分析が最小スコープに縮小される
 
-既定では、開いているドキュメントとプロジェクトに対してライブコード分析が実行されます。 この分析スコープをカスタマイズして、現在のドキュメントに縮小することも、ソリューション全体に拡張することもできます。 詳細については、[方法: マネージド コードのライブ コード分析スコープを構成する](./configure-live-code-analysis-scope-managed-code.md)」を参照してください。 メモリ不足の状態では、Visual Studio によってライブ分析のスコープが現在のドキュメントに強制的に縮小されます。 ただし、必要な分析スコープを再び有効にするには、情報バーの表示時に [ **再有効化** ] ボタンを選択するか、Visual Studio を再起動します。 [オプション] ダイアログボックスには、常に現在のライブコード分析のスコープ設定が表示されます。
+既定では、開いているドキュメントとプロジェクトに対してライブコード分析が実行されます。 この分析スコープをカスタマイズして、現在のドキュメントに縮小することも、ソリューション全体に拡張することもできます。 詳細については、「[方法:方法: マネージド コードのライブ コード分析スコープを構成する](./configure-live-code-analysis-scope-managed-code.md)」を参照してください。 メモリ不足の状態では、Visual Studio によってライブ分析のスコープが現在のドキュメントに強制的に縮小されます。 ただし、必要な分析スコープを再び有効にするには、情報バーの表示時に [ **再有効化** ] ボタンを選択するか、Visual Studio を再起動します。 [オプション] ダイアログボックスには、常に現在のライブコード分析のスコープ設定が表示されます。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低待機時間の無効化
 
@@ -58,7 +58,7 @@ GC 低待機時間モードを再度有効にするには、Visual Studio を再
 
 - [すべての参照の検索]
 
-- 移動
+- [移動]
 
 - Using の追加
 

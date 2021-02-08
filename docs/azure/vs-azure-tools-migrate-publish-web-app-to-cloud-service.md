@@ -3,17 +3,17 @@ title: クラウドサービスへの web アプリケーションの移行と�
 description: Visual Studio を使用して、Azure クラウド サービスに Web アプリケーションを移行および発行する方法について説明します。
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: c9d689ddca7b6f1b0c02f89c7afb82392e8a58af
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3154ffd50043ecc824ca44fcae86e54e511ab5bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844087"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>方法: Visual Studio から Azure クラウドサービスに web アプリケーションを移行および発行する
 
@@ -120,7 +120,7 @@ Azure のホスティング サービスとスケーラビリティを利用す�
 | WCF | WCF ワークフロー サービス アプリケーション |
 | ワークフロー | WCF ワークフロー サービス アプリケーション |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Visual Studio からの Azure アプリケーションの発行またはデプロイの準備](vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md)
 - [名前付き認証資格情報を設定](vs-azure-tools-setting-up-named-authentication-credentials.md)しています。
