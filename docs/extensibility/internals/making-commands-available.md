@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204541"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839546"
 ---
 # <a name="making-commands-available"></a>コマンドを使用できるようにする
 
@@ -57,7 +57,7 @@ VSPackage データの現在の状態または現在の関連するアクショ�
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] プロジェクトの読み込み、編集、ビルドなどのユーザー操作によって発生した変更を監視します。 変更が発生すると、IDE の外観が自動的に変更されます。 次の表は、が監視する IDE 変更の主な4つのコンテキストを示して [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] います。
 
-| コンテキストの種類 | 説明 |
+| コンテキストの種類 | Description |
 |-------------------------| - |
 | アクティブなプロジェクトの種類 | ほとんどの種類のプロジェクトで `GUID` は、この値は、プロジェクトを実装する VSPackage の GUID と同じになります。 ただし、プロジェクトでは、 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] プロジェクトの種類を `GUID` 値として使用します。 |
 | アクティブウィンドウ | 通常、これは、キーバインドの現在の UI コンテキストを確立する最後のアクティブなドキュメントウィンドウです。 ただし、内部の Web ブラウザーに似たキーバインドテーブルを持つツールウィンドウである場合もあります。 HTML エディターなどの複数タブのドキュメントウィンドウでは、すべてのタブに異なるコマンドコンテキストがあり `GUID` ます。 |
@@ -149,7 +149,7 @@ VSPackage データの現在の状態または現在の関連するアクショ�
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ソリューションエクスプローラーツールバーにコマンドを追加する](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
