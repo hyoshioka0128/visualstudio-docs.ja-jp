@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852623"
 ---
 # <a name="context-parameters"></a>コンテキスト パラメーター
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、[**新しいプロジェクト**]、[**新しい項目の追加**]、または [**サブプロジェクトの追加**] ダイアログボックスにウィザードを追加できます。 追加したウィザードは、[ **ファイル** ] メニューまたは **ソリューションエクスプローラー** でプロジェクトを右クリックして表示できます。 IDE は、ウィザードの実装にコンテキストパラメーターを渡します。 IDE がウィザードを呼び出すと、コンテキストパラメーターによってプロジェクトの状態が定義されます。
@@ -27,7 +27,7 @@ ms.locfileid: "96304719"
 
 ## <a name="context-parameters-for-new-project"></a>新しいプロジェクトのコンテキストパラメーター
 
-| パラメーター | 説明 |
+| パラメーター | Description |
 |-------------------------| - |
 | `WizardType` | 登録されたウィザードの種類 ( <xref:EnvDTE.Constants.vsWizardNewProject> )、またはウィザードの種類を示す GUID。 実装で [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] は、ウィザードの GUID は {0F90E1D0-4999-11D1-B6D1-00A0C90F2744} です。 |
 | `ProjectName` | 一意のプロジェクト名を表す文字列 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
@@ -39,7 +39,7 @@ ms.locfileid: "96304719"
 
 ## <a name="context-parameters-for-add-new-item"></a>[新しい項目の追加] のコンテキストパラメーター
 
-| パラメーター | 説明 |
+| パラメーター | Description |
 |-------------------------| - |
 | `WizardType` | 登録されたウィザードの種類 ( <xref:EnvDTE.Constants.vsWizardAddItem> )、またはウィザードの種類を示す GUID。 実装で [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] は、ウィザードの GUID は {0F90E1D1-4999-11D1-B6D1-00A0C90F2744} です。 |
 | `ProjectName` | 一意のプロジェクト名を表す文字列 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
@@ -50,7 +50,7 @@ ms.locfileid: "96304719"
 
 ## <a name="context-parameters-for-add-sub-project"></a>サブプロジェクトの追加のコンテキストパラメーター
 
-| パラメーター | 説明 |
+| パラメーター | Description |
 |-------------------------| - |
 | `WizardType` | 登録されたウィザードの種類 ( <xref:EnvDTE.Constants.vsWizardAddSubProject> )、またはウィザードの種類を示す GUID。 実装で [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] は、ウィザードの GUID は {0F90E1D2-4999-11D1-B6D1-00A0C90F2744} です。 |
 | `ProjectName` | 一意のプロジェクト名を表す文字列 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |

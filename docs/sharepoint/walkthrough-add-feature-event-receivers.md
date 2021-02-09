@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature event receivers
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851531"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>チュートリアル: フィーチャーイベントレシーバーの追加
 フィーチャーイベントレシーバーは、SharePoint で次の機能に関連するイベントのいずれかが発生したときに実行されるメソッドです。
@@ -58,7 +58,7 @@ ms.locfileid: "96915597"
 
 #### <a name="to-create-a-project-with-a-feature-event-receiver"></a>フィーチャーイベントレシーバーを使用してプロジェクトを作成するには
 
-1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
+1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >   、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
 2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 

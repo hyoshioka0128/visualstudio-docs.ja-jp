@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35571b28287ecdea48a2ff089cb25cf3ed742d60
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b62b613950f9fd6c8ce18969c126a6e74a154b58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851297"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>Notifycompletion の Waitcompletion メソッド
 デバッガーによってブレークポイントターゲットとして使用されるプレースホルダーメソッド。 このメソッドは、インライン化または最適化することはできません。
@@ -32,10 +32,10 @@ ms.locfileid: "96606633"
 private void NotifyDebuggerOfWaitCompletion()
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  デバッガーの通知ビットが設定されている場合、タスクを使用するすべての結合操作は、このメソッドを呼び出す必要があります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ## <a name="see-also"></a>関連項目
 - [Task クラス](../../extensibility/debugger/task-class-internal-members.md)
