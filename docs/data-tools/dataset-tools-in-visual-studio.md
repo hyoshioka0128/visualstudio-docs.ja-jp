@@ -46,15 +46,15 @@ helpviewer_keywords:
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0ccb15d65f021099bb48c26dbdb7c03122049a7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e711d60010117f3a5081470ab8e6e656a7e6e90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866997"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio のデータセット ツール
 
@@ -71,7 +71,7 @@ ms.locfileid: "94436486"
 
 Visual Studio には、データセットの操作を簡略化するツールが用意されています。 基本的なエンドツーエンドのワークフローは次のとおりです。
 
-- [ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window) を使用すると、1つまたは複数のデータソースから新しいデータセットを作成できます。 **データセットデザイナー** を使用してデータセットを構成し、そのプロパティを設定します。 たとえば、含めるデータソースのテーブルと、各テーブルの列を指定する必要があります。 データセットに必要なメモリの量を節約するには、慎重に選択してください。 詳細については、「 [データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)」を参照してください。
+- [ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window) を使用すると、1つまたは複数のデータソースから新しいデータセットを作成できます。 **データセットデザイナー** を使用してデータセットを構成し、そのプロパティを設定します。 たとえば、含めるデータソースのテーブルと、各テーブルの列を指定する必要があります。 データセットに必要なメモリの量を節約するには、慎重に選択してください。 詳細については、[データセットの作成と構成](../data-tools/create-and-configure-datasets-in-visual-studio.md)に関するページを参照してください。
 
 - 外部キーが正しく処理されるように、テーブル間のリレーションシップを指定します。 詳細については、「 [tableadapter を使用したデータセットの読み込み](../data-tools/fill-datasets-by-using-tableadapters.md)」を参照してください。
 

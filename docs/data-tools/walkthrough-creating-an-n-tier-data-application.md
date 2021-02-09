@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998084"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866152"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>チュートリアル: n 層データアプリケーションの作成
 *n 層* データ アプリケーションとは、データにアクセスするアプリケーションの中でも、複数の論理レイヤー、つまり *層* に分離されるアプリケーションです。 アプリケーション コンポーネントをこのように別個の層に分離すると、アプリケーションの保守容易性とスケーラビリティが向上します。 これは、ソリューション全体を再設計しなくても 1 つの層に適用できる、新しい技術を簡単に導入できるようにすることで実現されます。 n 層アーキテクチャには、プレゼンテーション層、中間層、およびデータ層が存在します。 通常、中間層には、データ アクセス層、ビジネス ロジック層、および認証や検証などの共有コンポーネントが含まれます。 データ層には、リレーショナル データベースが含まれます。 通常、n 層アプリケーションでは、機密情報が中間層のデータ アクセス層に格納され、プレゼンテーション層にアクセスするエンド ユーザーから分離されます。 詳細については、「 [N 層データアプリケーションの概要](../data-tools/n-tier-data-applications-overview.md)」を参照してください。
@@ -124,7 +124,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
      Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-     - または -
+     \- または -
 
      [ **新しい接続** ] を選択して [ **接続の追加** ] ダイアログボックスを開きます。
 
@@ -191,7 +191,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
 6. **[生成するメソッドの選択]** ページで、**[DataTable を返す]** セクションの **[メソッド名]** に「**GetCustomers**」と入力します。
 
-7. **[完了]** をクリックします。
+7. **[Finish]** をクリックします。
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Orders テーブルを返すメソッドをデータ アクセス層に作成するには
 
@@ -205,7 +205,7 @@ DataEntityTier プロジェクトを作成したら、次に、クラス ライ�
 
 5. **[生成するメソッドの選択]** ページで、**[DataTable を返す]** セクションの **[メソッド名]** に「**GetOrders**」と入力します。
 
-6. **[完了]** をクリックします。
+6. **[Finish]** をクリックします。
 
 7. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
@@ -381,7 +381,7 @@ Windows ベース アプリケーションに関連データを保存した後�
 
 - サービスへの、データを更新してデータベースに戻す追加メソッドの追加。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [n 層アプリケーションでのデータセットの操作](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [階層更新](../data-tools/hierarchical-update.md)

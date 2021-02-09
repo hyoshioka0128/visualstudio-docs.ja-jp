@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ee06ef21be4076a1a0dee6319155144c468bafd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52bd4f95160165ee67c0a35816d094238786bc38
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866568"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>オブジェクトからデータベースにデータを保存する
 
@@ -35,7 +35,7 @@ ms.locfileid: "94436020"
 > [!NOTE]
 > TableAdapter を構成する場合、メインクエリでは、メソッドを作成するための十分な情報を提供する必要があり `DBDirect` ます。 たとえば、主キー列が定義されていないテーブルのデータをクエリするように TableAdapter が構成されている場合、メソッドは生成されません `DBDirect` 。
 
-|TableAdapter DBDirect メソッド|説明|
+|TableAdapter DBDirect メソッド|Description|
 | - |-----------------|
 |`TableAdapter.Insert`|データベースに新しいレコードを追加し、個々の列の値をメソッドのパラメーターとして渡すことができるようにします。|
 |`TableAdapter.Update`|データベース内の既存のレコードを更新します。 メソッドは、 `Update` 元の列と新しい列の値をメソッドのパラメーターとして受け取ります。 元の値は元のレコードを検索するために使用され、新しい値はそのレコードを更新するために使用されます。<br /><br /> `TableAdapter.Update`メソッドは、 <xref:System.Data.DataSet> <xref:System.Data.DataTable> <xref:System.Data.DataRow> <xref:System.Data.DataRow> メソッドパラメーターとして、、、またはの配列を取得することによって、データセットの変更をデータベースに戻すためにも使用されます。|

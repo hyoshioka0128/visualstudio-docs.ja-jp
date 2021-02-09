@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a9ab54b358125e45cfb0d6a4df30989cf679ab2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867140"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tableadapter の作成および構成
 
@@ -51,7 +51,7 @@ Tableadapter とそれに関連する Datatable を作成または編集する�
 
 - データベースに対する適切な権限を持っている場合は、基になるデータベースに新しいストアドプロシージャを作成することもできます。 これらのアクセス許可がない場合、これはオプションではありません。
 
-- また、TableAdapter の **SELECT** 、 **INSERT** 、 **UPDATE** 、および **DELETE** の各コマンドに対して、既存のストアドプロシージャを実行することもできます。 たとえば、 **Update** コマンドに割り当てられているストアドプロシージャは、メソッドが呼び出されたときに実行され `TableAdapter.Update()` ます。
+- また、TableAdapter の **SELECT**、 **INSERT**、 **UPDATE**、および **DELETE** の各コマンドに対して、既存のストアドプロシージャを実行することもできます。 たとえば、 **Update** コマンドに割り当てられているストアドプロシージャは、メソッドが呼び出されたときに実行され `TableAdapter.Update()` ます。
 
 選択したストアド プロシージャのパラメーターを、データ テーブルの対応する列に割り当てます。 たとえば、ストアドプロシージャがという名前のパラメーターを受け取り、 `@CompanyName` テーブルの列に渡す場合は、 `CompanyName` パラメーターの **Source 列** を `@CompanyName` に設定 `CompanyName` します。
 
@@ -84,7 +84,7 @@ Tableadapter クエリの構成ウィザードを使用すると、TableAdapter 
 
 1. **データセット デザイナー** でご自分のデータセットを開きます。
 
-2. 新しいクエリを作成する場合は、[ **ツールボックス** ] の [ **データセット** ] タブから **クエリ** オブジェクトをにドラッグする <xref:System.Data.DataTable> か、TableAdapter のショートカットメニューから [ **クエリの追加** ] を選択します。 **クエリ** オブジェクトを **データセットデザイナー** の空の領域にドラッグして、関連付けられていない TableAdapter を作成することもでき <xref:System.Data.DataTable> ます。 これらのクエリは、単一の (スカラー) 値を返すことも、データベースに対して UPDATE、INSERT、または DELETE コマンドを実行することもできます。
+2. 新しいクエリを作成する場合は、[**ツールボックス**] の [**データセット**] タブから **クエリ** オブジェクトをにドラッグする <xref:System.Data.DataTable> か、TableAdapter のショートカットメニューから [**クエリの追加**] を選択します。 **クエリ** オブジェクトを **データセットデザイナー** の空の領域にドラッグして、関連付けられていない TableAdapter を作成することもでき <xref:System.Data.DataTable> ます。 これらのクエリは、単一の (スカラー) 値を返すことも、データベースに対して UPDATE、INSERT、または DELETE コマンドを実行することもできます。
 
 3. [ **データ接続の選択** ] 画面で、クエリが使用する接続を選択または作成します。
 
@@ -110,7 +110,7 @@ Tableadapter クエリの構成ウィザードを使用すると、TableAdapter 
 
 - グローバルクエリは、単一の (スカラー) 値または値を返さない SQL クエリです。 通常、グローバル関数は、挿入、更新、削除などのデータベース操作を実行します。 また、テーブル内の顧客の数や特定の注文のすべての品目の合計料金などの情報も集計されます。
 
-     グローバルクエリを追加するには、[ **ツールボックス** ] の [ **データセット** ] タブから **データセットデザイナー** の空の領域に **クエリ** オブジェクトをドラッグします。
+     グローバルクエリを追加するには、[**ツールボックス**] の [**データセット**] タブから **データセットデザイナー** の空の領域に **クエリ** オブジェクトをドラッグします。
 
 - たとえば、必要なタスクを実行するクエリを指定 `SELECT COUNT(*) AS CustomerCount FROM Customers` します。
 

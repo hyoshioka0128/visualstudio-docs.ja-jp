@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 389873cc-92dd-48da-bfca-0f6c8e0ae3c2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a0d39fa3d7740996be3fc9da75224739f1e55539
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 99115a3c04aec71e7d000dfa4e707eacb0e28cf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866399"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>プロパティ &lt;プロパティ名&gt; は関連付け &lt;関連付けの名前&gt; に関与しているため、削除できません
 
@@ -33,6 +33,6 @@ ms.locfileid: "94998374"
 
 4. プロパティの削除を再試行します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

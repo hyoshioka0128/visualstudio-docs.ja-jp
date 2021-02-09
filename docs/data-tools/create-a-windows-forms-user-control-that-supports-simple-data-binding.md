@@ -13,19 +13,19 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867114"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>単純なデータ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 
-Windows アプリケーションのフォームにデータを表示する場合は、 **[ツールボックス]** から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.DefaultBindingPropertyAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> を実装するコントロールには、データにバインドできるプロパティを 1 つ含めることができます。 このようなコントロールは、<xref:System.Windows.Forms.TextBox> や <xref:System.Windows.Forms.CheckBox> に似ています。
+Windows アプリケーションのフォームにデータを表示する場合は、**[ツールボックス]** から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.DefaultBindingPropertyAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.DefaultBindingPropertyAttribute> を実装するコントロールには、データにバインドできるプロパティを 1 つ含めることができます。 このようなコントロールは、<xref:System.Windows.Forms.TextBox> や <xref:System.Windows.Forms.CheckBox> に似ています。
 
 コントロールの作成の詳細については、「 [デザイン時の Windows フォームコントロールの開発](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)」を参照してください。
 
@@ -59,11 +59,11 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、 **データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、**データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、 **Visual Studio インストーラー** の **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、 **Visual Studio インストーラー** の **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -79,7 +79,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ** ] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
@@ -93,7 +93,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 1. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** を選択します。
 
-2. [ファイル名] 領域に「 **PhoneNumberBox** 」と入力し、 **[追加]** をクリックします。
+2. [ファイル名] 領域に「**PhoneNumberBox**」と入力し、**[追加]** をクリックします。
 
      **PhoneNumberBox** コントロールが **ソリューション エクスプローラー** に追加され、デザイナーが開きます。
 
@@ -103,15 +103,15 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 1. **ツールボックス** からユーザー コントロールのデザイン サーフェイスに <xref:System.Windows.Forms.MaskedTextBox> をドラッグします。
 
-2. ドラッグした <xref:System.Windows.Forms.MaskedTextBox> のスマート タグを選択し、 **[マスクの設定]** を選択します。
+2. ドラッグした <xref:System.Windows.Forms.MaskedTextBox> のスマート タグを選択し、**[マスクの設定]** を選択します。
 
-3. **[定型入力]** ダイアログ ボックスで **[電話番号]** を選択し、 **[OK]** をクリックしてマスクを設定します。
+3. **[定型入力]** ダイアログ ボックスで **[電話番号]** を選択し、**[OK]** をクリックしてマスクを設定します。
 
 ## <a name="add-the-required-data-binding-attribute"></a>必要なデータバインディング属性を追加する
 
 データ バインディングをサポートする簡単なコントロールに対しては <xref:System.ComponentModel.DefaultBindingPropertyAttribute> を実装します。
 
-1. **PhoneNumberBox** コントロールをコードビューに切り替えます。 ( **[表示]** メニューの **[コード]** を選択します。)
+1. **PhoneNumberBox** コントロールをコードビューに切り替えます。 (**[表示]** メニューの **[コード]** を選択します。)
 
 2. **PhoneNumberBox** のコードを次のコードに置き換えます。
 
@@ -124,11 +124,11 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 この手順では、 **データソース構成** ウィザードを使用して、Northwind サンプルデータベースのテーブルに基づいてデータソースを作成し `Customers` ます。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースの設定の詳細については、「 [方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
 
-1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示** ] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
-2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして **データ ソース構成** ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして **データ ソース構成** ウィザードを起動します。
 
-3. **[データソースの種類を選択]** ページで、 **[データベース]** を選択し、 **[次へ]** をクリックします。
+3. **[データソースの種類を選択]** ページで、**[データベース]** を選択し、**[次へ]** をクリックします。
 
 4. [ **データ接続の選択** ] ページで、次のいずれかの操作を行います。
 
@@ -136,15 +136,15 @@ Windows アプリケーションのフォームにデータを表示する場合
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、 **[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
 
-6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、 **[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
 
-7. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
 
-8. `Customers` テーブルを選択し、 **[完了]** をクリックします。
+8. `Customers` テーブルを選択し、**[完了]** をクリックします。
 
-     **NorthwindDataSet** がプロジェクトに追加され、[ `Customers` **データソース** ] ウィンドウにテーブルが表示されます。
+     **NorthwindDataSet** がプロジェクトに追加され、[ `Customers` **データソース**] ウィンドウにテーブルが表示されます。
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>PhoneNumberBox コントロールを使用するように phone 列を設定する
 
@@ -156,17 +156,17 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 3. **[Customers]** ノードのドロップダウン矢印をクリックし、コントロール リストの **[Details]** を選択します。
 
-4. **[Phone]** 列のドロップダウン矢印をクリックし、 **[Customize]** をクリックします。
+4. **[Phone]** 列のドロップダウン矢印をクリックし、**[Customize]** をクリックします。
 
 5. **[データ UI カスタマイズ オプション]** ダイアログ ボックスの **[関連付けられたコントロール]** の一覧の **[PhoneNumberBox]** を選択します。
 
-6. **[Phone]** 列のドロップダウン矢印をクリックし、 **[PhoneNumberBox]** をクリックします。
+6. **[Phone]** 列のドロップダウン矢印をクリックし、**[PhoneNumberBox]** をクリックします。
 
-## <a name="add-controls-to-the-form"></a>フォームへのコントロールの追加
+## <a name="add-controls-to-the-form"></a>コントロールをフォームに追加する
 
 **[データ ソース]** ウィンドウからフォームに項目をドラッグして、データ バインド コントロールを作成します。
 
-フォームにデータバインドコントロールを作成するには、[ **データソース** ] ウィンドウから [メインの **Customers** ] ノードをフォームにドラッグし、 **PhoneNumberBox** コントロールを使用して [ **電話** ] 列にデータを表示することを確認します。
+フォームにデータバインドコントロールを作成するには、[**データソース**] ウィンドウから [メインの **Customers** ] ノードをフォームにドラッグし、 **PhoneNumberBox** コントロールを使用して [**電話**] 列にデータを表示することを確認します。
 
 説明のラベルが付いたデータ バインド コントロールとレコード間を移動するためのツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。
 
@@ -174,7 +174,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 **F5** キーを押してアプリケーションを実行します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリケーションの要件に応じて、データ バインディングをサポートするコントロールの作成後に、追加の操作を実行できます。 次の手順として、一般的には、次のようなことを実行します。
 

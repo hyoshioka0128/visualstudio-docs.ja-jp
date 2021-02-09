@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1aba3b1f00ce65b90f61077673a0b88a3bab0f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866139"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>チュートリアル: エンティティクラスの挿入、更新、および削除の動作のカスタマイズ
 
@@ -271,7 +271,7 @@ LINQ to SQL クラスを使用して Windows フォームにデータを表示�
 
 - LINQ クエリを追加してデータをフィルター処理します。 詳細については、「 [LINQ クエリの概要 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext メソッド](../data-tools/datacontext-methods-o-r-designer.md)

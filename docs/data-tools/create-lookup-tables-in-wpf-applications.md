@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 293f04ca111fe88c905a288885f7e4763ec1cdc3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cc390642155d33f75bf5c4a69236945658845639
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867101"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF アプリケーションでルックアップ テーブルを作成する
 
@@ -44,7 +44,7 @@ ms.locfileid: "94436694"
     > [!NOTE]
     > ルックアップテーブルを作成するには、2つの関連するテーブルまたはオブジェクトがプロジェクトのデータソースとして存在している必要があります。
 
-2. **WPF デザイナー** を開き、[ **データソース** ] ウィンドウ内の項目の有効なドロップ先であるコンテナーがデザイナーに含まれていることを確認します。
+2. **WPF デザイナー** を開き、[**データソース**] ウィンドウ内の項目の有効なドロップ先であるコンテナーがデザイナーに含まれていることを確認します。
 
      有効なドロップターゲットの詳細については、「 [Visual Studio でのデータへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)」を参照してください。
 
@@ -55,7 +55,7 @@ ms.locfileid: "94436694"
     > [!NOTE]
     > 関連する子テーブルまたはオブジェクトは、親テーブルまたはオブジェクトの下に展開可能な子ノードとして表示されるノードです。
 
-5. 子ノードのドロップダウンメニューをクリックし、[ **詳細** ] をクリックします。
+5. 子ノードのドロップダウンメニューをクリックし、[ **詳細**] をクリックします。
 
 6. 子ノードを展開します。
 

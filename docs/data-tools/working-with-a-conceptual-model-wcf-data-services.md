@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866113"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>概念モデルを使用する (WCF Data Services)
 
@@ -47,7 +47,7 @@ ms.locfileid: "94997876"
 |[方法: エンティティを追加、変更、および削除する](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|データ サービスでエンティティ データを作成、更新、および削除する方法について説明します。|
 |[方法: エンティティリレーションシップを定義する](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|データ サービスでリレーションシップを作成または変更する方法について説明します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのサービスと WCF Data Services の Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio での Windows Communication Foundation サービスと WCF データ サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [データ サービスに対するクエリ](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

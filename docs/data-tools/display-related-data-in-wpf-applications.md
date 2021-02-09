@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3467b2a3c4f49b22ab36b44ff0d3ea47d143e971
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866958"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF アプリケーションで関連データを表示する
 
@@ -35,7 +35,7 @@ ms.locfileid: "94436499"
 
 1. **[データ]** メニューの **[データ ソースの表示]** をクリックして **[データ ソース]** ウィンドウを開きます。
 
-2. **[新しいデータ ソースの追加]** をクリックして、 **データ ソース構成ウィザード** の操作を完了します。
+2. **[新しいデータ ソースの追加]** をクリックして、**データ ソース構成ウィザード** の操作を完了します。
 
 3. WPF デザイナーを開き、[ **データソース** ] ウィンドウ内の項目の有効なドロップ先であるコンテナーがデザイナーに含まれていることを確認します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "94436499"
 
      Visual Studio では、ドラッグする各項目に対して新しいデータバインドコントロールを作成する XAML が生成されます。 また、XAML は、 <xref:System.Windows.Data.CollectionViewSource> 子テーブルまたはオブジェクトの新しいをドロップ先のリソースに追加します。 この新しい <xref:System.Windows.Data.CollectionViewSource> は、デザイナーにドラッグした親テーブルまたはオブジェクトのプロパティにバインドされています。 一部のデータソースでは、Visual Studio によって、子テーブルまたはオブジェクトにデータを読み込むためのコードも生成されます。
 
-     次の図は、[ **データソース** ] ウィンドウのデータセットにある **Customers** テーブルの関連する **Orders** テーブルを示しています。
+     次の図は、[**データソース**] ウィンドウのデータセットにある **Customers** テーブルの関連する **Orders** テーブルを示しています。
 
      ![関係を示すデータ ソース ウィンドウ](../data-tools/media/datasources2.gif)
 
