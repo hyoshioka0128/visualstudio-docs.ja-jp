@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7435a4e4973ee0a000555e9508328a76f7aa59a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889149"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation &gt; 要素 (ClickOnce アプリケーション)
 アプリケーションに関連付けるファイル拡張子を識別します。
@@ -49,7 +49,7 @@ ms.locfileid: "94382729"
 |`progid`|必須。 ファイルの種類を一意に識別する名前。|
 |`defaultIcon`|必須。 この拡張子を持つファイルに使用するアイコンを指定します。 アイコンファイルは、この要素を含む[ \<assembly> 要素](../deployment/assembly-element-clickonce-application.md)内の[ \<file> 要素](../deployment/file-element-clickonce-application.md)を使用して指定する必要があります。|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  この要素には、"urn: schema-microsoft-com: clickonce. v1" への XML 名前空間参照が含まれている必要があります。 要素を使用する場合は `<fileAssociation>` 、親要素の要素の後に指定する必要があり `<application>` [ \<assembly> ](../deployment/assembly-element-clickonce-application.md)ます。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 既存のファイルの関連付けは上書きされません。 ただし、ClickOnce アプリケーションでは、現在のユーザーのみのファイル拡張子をオーバーライドできます。 ClickOnce アプリケーションがアンインストールされると、ClickOnce によってユーザーのファイルの関連付けが削除され、コンピューターごとの関連付けが再びアクティブになります。

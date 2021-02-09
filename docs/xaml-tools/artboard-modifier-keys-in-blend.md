@@ -7,23 +7,23 @@ ms.topic: reference
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b801713e6fdccf65bb580b017f011e65e0b84e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 655a291cec967663422011ca620a15d7cb080ce2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889227"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend のアートボードの修飾キー
 キーボード ショートカットの中には、対応するメニュー項目がないものがあります。このようなショートカットは、[!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] のユーザー インターフェイスに表示されません。 次の表に、オブジェクトのサイズを変更する場合などに、行う操作を変更するショートカットを示します。
 
 |行う操作|方法|
 | - |-------------|
-|別のツールが選択された状態のまま、一時的に [ **選択内容** ] ツールを選択する ([ **ツール** ] パネルで [ **選択内容** ] と別のツールを切り替えるためにクリックする回数が減ります)|**Ctrl キー** を押しながら|
-|[ **選択内容** ] ツールを選択した状態で、選択したオブジェクトを少しずつ移動する|矢印キーを押す|
+|別のツールが選択された状態のまま、一時的に [**選択内容**] ツールを選択する ([**ツール**] パネルで [**選択内容**] と別のツールを切り替えるためにクリックする回数が減ります)|**Ctrl キー** を押しながら|
+|[**選択内容**] ツールを選択した状態で、選択したオブジェクトを少しずつ移動する|矢印キーを押す|
 |アートボードの位置変更|**Space キー** を押しながらアートボードをドラッグする|
 |アートボードに対してズーム インとズーム アウトを行う|マウス ホイールを回す|
 |アートボードをズーム インする|**Ctrl** + **space** キーを押しながらアートボード上の任意の場所をクリックする|
@@ -39,10 +39,10 @@ ms.locfileid: "92796281"
 |マーキーをドラッグして選択する|**Shift キー** を押しながらドラッグする|
 |別のオブジェクトの下にあるオブジェクトを選択する|**Alt キー** を押しながらオブジェクトのレイヤーごとに1回クリックします。|
 |開いているドキュメントを切り替える|**Ctrl** + **tab** キーを押す|
-|[ **アセット** ] パネルを開く|**Ctrl** の + **期間** を押す|
+|[**アセット**] パネルを開く|**Ctrl** の + **期間** を押す|
 
 ## <a name="see-also"></a>関連項目
 
-- [キーボード ショートカット](../xaml-tools/keyboard-shortcuts-in-blend.md)
+- [ショートカット キー](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [ペン ツールの修飾キー](../xaml-tools/pen-tool-modifier-keys-in-blend.md)
 - [[個別選択] ツールの修飾キー](../xaml-tools/direct-selection-tool-modifier-keys-in-blend.md)
