@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b9e88440fcb7b488e479e4188279d82a526e4c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d08552683ce61892b0ee233173466a79326e4c6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875182"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894856"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>従来の言語サービスの登録2
 以下のセクションでは、で使用できるさまざまな言語サービスオプションのレジストリエントリの一覧を提供し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
@@ -29,11 +29,11 @@ ms.locfileid: "97875182"
 ## <a name="registry-entries-for-language-service-options"></a>言語サービスオプションのレジストリエントリ
  *VS Reg Root*\Languages\Language Services \\ *言語名* キーには、次の値を含めることができます。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |(既定値)。|REG_SZ|*\<GUID>*|言語サービスの GUID。|
 |LangResID|REG_DWORD|0x0-0xffff|言語のローカライズされたテキスト名の文字列リソース識別子 (ResID)。|
-|パッケージ|REG_SZ|*\<GUID>*|VSPackage の GUID。|
+|Package|REG_SZ|*\<GUID>*|VSPackage の GUID。|
 |ShowCompletion|REG_DWORD|0-1|[**オプション**] ダイアログボックスの [**ステートメント入力候補**] オプションを有効にするかどうかを指定します。|
 |ShowSmartIndent|REG_DWORD|0-1|[**オプション**] ダイアログボックスで **スマート** インデントを選択するオプションを有効にするかどうかを指定します。|
 |RequestStockColors|REG_DWORD|0-1|キーワードに色を設定するために、カスタム色と既定の色のどちらを使用するかを指定します。|
@@ -66,9 +66,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>デバッガー言語オプションのレジストリエントリ
  *VS Reg Root*\Languages\Language Services の \\ *言語名*\ デバッガー言語 \\ *GUID*\ キーには、次の値を含めることができます。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
-|(既定値)。|REG_SZ|text|既定値を使用して、言語の名前を文書化できます。 このキーの名前は、式エバリュエーターの GUID であり、\ ad7metricor 式エバリュエーターに対応するエントリが含まれてい *\<VS Reg Root>* ます。|
+|(既定値)。|REG_SZ|テキスト|既定値を使用して、言語の名前を文書化できます。 このキーの名前は、式エバリュエーターの GUID であり、\ ad7metricor 式エバリュエーターに対応するエントリが含まれてい *\<VS Reg Root>* ます。|
 
 ### <a name="example"></a>例
 
@@ -85,10 +85,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>エディターツールオプションのレジストリエントリ
  レジストリキーは、プロパティページとプロパティノードの EditorToolsOptions キーの下に追加できます。 これらのキーとその値は、言語サービスを構成するために使用される [ **オプション** ] ダイアログボックス ([ **ツール** ] メニュー) のプロパティページを識別します。 次の例では、 *Page name* はプロパティページの名前、 *node Name* は [ **オプション** ] ダイアログボックスのツリー内のノードの名前です。 ページエントリとノードエントリを別々に指定する必要があります。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |(既定値)。|REG_SZ|ResID|このオプションページのローカライズされた表示名。 名前には、リテラルテキストまたは # `nnn` を `nnn` 指定できます。ここで、は、指定された VSPackage のサテライト DLL 内の文字列リソース ID です。|
-|パッケージ|REG_SZ|*GUID*|このオプションページを実装する VSPackage の GUID。|
+|Package|REG_SZ|*GUID*|このオプションページを実装する VSPackage の GUID。|
 |ページ|REG_SZ|*GUID*|メソッドを呼び出すことによって、VSPackage から要求するプロパティページの GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> 。 このレジストリエントリが存在しない場合、レジストリキーはページではなくノードを記述します。|
 
 ### <a name="example"></a>例
@@ -119,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>ファイル名拡張子オプションのレジストリエントリ
  ファイル拡張子のエントリには、先頭のピリオド ("myext" など) を含める必要があります。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |(既定値)。|REG_SZ|*GUID*|このファイル名拡張子の種類の既定の言語サービスのサービス GUID。|
 
@@ -136,14 +136,14 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>エディターオプションのレジストリエントリ
  *VS Reg Root* エディターキーには、次の値を含めることができます。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |(既定値)。|REG_SZ|""|未使用ここで、ドキュメントの名前を入力できます。|
 |DefaultToolboxTab|REG_SZ|""|エディターがアクティブなときに既定で作成されるツールボックスタブの名前。|
 |DisplayName|REG_SZ|ResID|[ **ファイルを開くアプリケーション** の選択] ダイアログボックスに表示する名前。 名前は、文字列リソース ID または標準形式の名前です。|
 |ExcludeDefTextEditor|REG_DWORD|0-1|[ **ファイルを開くアプリケーションの表示** ] コマンドで使用します。 特定のファイルの種類で使用可能なエディターの一覧に既定のテキストエディターを表示しない場合は、この値を1に設定します。|
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|コードページをサポートするファイルを開くことができるすべての言語サービスに使用されます。 たとえば、 **Open with** コマンドを使用して .txt ファイルを開くと、エンコードなしでソースコードエディターを使用するためのオプションが用意されています。<br /><br /> サブキーの名前に指定された GUID は、コードページエディターファクトリ用です。この特定のレジストリエントリで指定されているリンクされた GUID は、通常のエディターファクトリ用です。 このエントリの目的は、IDE が既定のエディターを使用してファイルを開いていない場合、IDE が一覧の次のエディターを使用しようとすることです。 このエディターファクトリは、基本的には失敗したエディターファクトリと同じであるため、次のエディターはコードページエディターファクトリにしないでください。|
-|パッケージ|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage GUID。|
+|Package|REG_SZ|*\<GUID>*|表示名の ResID の VSPackage GUID。|
 
 ### <a name="example"></a>例
 
@@ -161,7 +161,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>論理ビューオプションのレジストリエントリ
  *VS Reg Root* \\ *エディターエディターの GUI>* \ logicalviews キーには、次の値を含めることができます。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |(既定値)。|REG_SZ||未使用。|
 |*\<GUID>*|REG_SZ|""|サポートされている論理ビューのキー。 これらの数は必要な数だけ持つことができます。 レジストリエントリの名前は、値ではなく、常に空の文字列である重要なものです。|
@@ -183,7 +183,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>エディター拡張機能のオプションのレジストリエントリ
  *VS Reg Root* エディターエディターの \\ *GUID*\ Extensions キーには、次の値を含めることができます。 ファイル名の拡張子には、先頭のピリオドは含まれません。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |(既定値)。|REG_SZ||未使用。|
 |*\<ext>*|REG_DWORD|0-0xffffffff|拡張機能の相対的な優先順位。 複数の言語で同じ拡張機能が共有されている場合は、優先度の高い言語が選択されます。|
@@ -209,7 +209,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  これらのレジストリエントリには、クラスを使用してアクセス <xref:Microsoft.VisualStudio.Package.LanguagePreferences> します。
 
-|名前|Type|Range|説明|
+|名前|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|IntelliSense 操作のサポート。|
 |MatchBraces|REG_DWORD|0-1|かっこ、かっこ、および角かっこなどの一致する言語のペアのサポート。|

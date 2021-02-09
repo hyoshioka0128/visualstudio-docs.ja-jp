@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e77d06900a17aca4c2630587a45a9b144accde2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895753"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 
@@ -362,7 +362,7 @@ IDE の [ヘルプ] メニュー項目で、[ **ヘルプコンテキストの�
 
 次の表では、角かっこで囲まれた文字列は、認識された値に置き換える必要があるプレースホルダーです。 たとえば、では \<meta name="Microsoft.Help.Locale" content="[language code]" /> 、"[言語コード]" を "en-us" などの値に置き換える必要があります。
 
-| Property (HTML 表現) | 説明 |
+| Property (HTML 表現) | Description |
 | - | - |
 | \< meta name="Microsoft.Help.Locale" content="[language-code]" /> | このトピックのロケールを設定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があり、その他の Microsoft ヘルプタグの上に挿入する必要があります。 このタグが使用されていない場合、指定されている場合、製品のロケールに関連付けられているワードブレーカーを使用して、トピックの本文のインデックスが作成されます。それ以外の場合は、en-us ワードブレーカーが使用されます。 このタグは ISOC RFC 4646 に準拠しています。 Microsoft ヘルプが正しく動作するようにするには、一般言語属性ではなく、このプロパティを使用します。 |
 | \< meta name="Microsoft.Help.TopicLocale" content="[language-code]" /> | 他のロケールも使用されている場合に、このトピックのロケールを設定します。 このタグがトピックで使用されている場合は、1回だけ使用する必要があります。 このタグは、カタログに複数の言語のコンテンツが含まれている場合に使用します。 カタログ内の複数のトピックは同じ ID を持つことができますが、それぞれが一意のトピックのロケールを指定する必要があります。 カタログのロケールに一致するトピックのロケールを指定するトピックは、目次に表示されるトピックです。 ただし、検索結果には、トピックのすべての言語バージョンが表示されます。 |
@@ -461,7 +461,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | ViewColorizedText | 色分け表示 |
 | 連結 Edvbtabdisplaylanguage | Visual Basic (サンプル) |
 | VBDeclaration | 宣言 |
-| VBUsage | 使用法 |
+| VBUsage | 使用 |
 | 機能: | **フィードバック、フッター、ロゴ** |
 | 次のコマンドを使用します。 | 顧客が電子メールで現在のトピックに関するフィードバックを提供するフィードバックコントロールを提供します。  コンテンツの著作権テキスト。  ロゴの定義。 |
 | **要素** | **値 (これらの文字列は、コンテンツの導入者のニーズに合わせて変更できます。)** |
@@ -565,7 +565,7 @@ branding.js ファイルには、Visual Studio ヘルプビューアーのブラ
 
 ブランド化パッケージには、ユーザーのために重要な情報を提供するための一連の HTM ファイルが含まれています。たとえば、インストールされているコンテンツセットを示すセクションを含むホームページや、トピックのローカルセットにトピックが見つからない場合にユーザーに通知するページなどがあります。 これらの HTM ファイルは製品ごとに変更できます。  ISO シェルベンダーは、既定のブランドパッケージを取得し、これらのページの動作とコンテンツを必要に応じて変更できます。  これらのファイルは、ブランド化タグが branding.xml ファイルから対応するコンテンツを取得するために、それぞれのブランドパッケージを参照します。
 
-|**[最近使ったファイル]**|**用途**|**表示されるコンテンツソース**|
+|**ファイル**|**用途**|**表示されるコンテンツソース**|
 |-|-|-|
 |homepage.htm|これは、現在インストールされているコンテンツと、そのコンテンツについてユーザーに提示するのに適したその他のメッセージを表示するページです。  このファイルには、追加のメタデータ属性 "Microsoft.Help.Id" content = "-1" があります。これにより、このコンテンツはローカルコンテンツ TOC の先頭に配置されます。||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml、タグ \<HomePageTitle>|
@@ -599,7 +599,7 @@ Visual Studio ヘルプビューアーのブランド化パッケージには、
 
 Visual Studio のコンテンツには、Visual Studio のロゴとその他のグラフィックスが表示されます。  Visual Studio ヘルプビューアーのブランド化パッケージに含まれるグラフィックファイルの完全な一覧を次に示します。
 
-|**[最近使ったファイル]**|**用途**|**使用例**|
+|**ファイル**|**用途**|**使用例**|
 |-|-|-|
 |clear.gif|折りたたみ可能な領域を表示するために使用されます||
 |footer_slice.gif|フッタープレゼンテーション||

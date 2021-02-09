@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 38348661946be3894332d49177f972410563b716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715224"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895208"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types] .xml ファイルの構造
 VSIX パッケージ内のコンテンツの種類に関する情報を格納します。 Visual Studio では、[Content_Types] .xml ファイルを使用してパッケージをインストールしますが、ファイル自体はインストールしません。

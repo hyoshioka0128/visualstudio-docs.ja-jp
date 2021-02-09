@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4eb4d60-8816-4d52-bc8d-dffd4f066499
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e72922b348c8744f10037e199e93f735ff4be8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896013"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 ビューアーをインスタンス化するために、このプロパティ型のビューアーに関する情報を取得します。
@@ -28,18 +28,18 @@ ms.locfileid: "80714960"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetManagedViewerCreationData(
-   BSTR*                  assemName,
-   IEEDataStorage**       assemBytes,
-   IEEDataStorage**       assemPdb,
-   BSTR*                  className,
-   ASSEMBLYLOCRESOLUTION* alr,
-   BOOL*                  replacementOk
+HRESULT GetManagedViewerCreationData(
+   BSTR*                  assemName,
+   IEEDataStorage**       assemBytes,
+   IEEDataStorage**       assemPdb,
+   BSTR*                  className,
+   ASSEMBLYLOCRESOLUTION* alr,
+   BOOL*                  replacementOk
 );
 ```
 
 ```csharp
-int GetManagedViewerCreationData(
+int GetManagedViewerCreationData(
    out string                     assemName,
    out IEEDataStorage             assemBytes,
    out IEEDataStorage             assemPdb,
@@ -71,7 +71,7 @@ int GetManagedViewerCreationData(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドは、マネージビューアーをインスタンス化するために型ビジュアライザーによって使用されます。
 
 ## <a name="see-also"></a>関連項目

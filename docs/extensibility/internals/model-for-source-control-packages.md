@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895662"
 ---
 # <a name="model-for-source-control-packages"></a>ソース管理パッケージのモデル
 次のモデルは、ソース管理の実装例を表しています。 モデルには、実装する必要があるインターフェイスと、呼び出す必要がある環境サービスが表示されます。 すべてのサービスと同様に、実際には、サービスを通じて取得する特定のインターフェイスのメソッドを呼び出します。 クラスの名前は、ソース管理がどのように実行されているかを簡単に確認できるように識別されます。
@@ -27,7 +27,7 @@ ms.locfileid: "97876690"
 ## <a name="interfaces"></a>インターフェイス
  次の表に示すインターフェイスの一覧を使用して、Visual Studio で新しいプロジェクトの種類のソース管理を実装できます。
 
-|インターフェイス|使用|
+|インターフェイス|用途|
 |---------------|---------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|プロジェクトおよびエディターによって呼び出され、ファイルを保存または変更 (ダーティ) します。 このインターフェイスには、サービスを使用してアクセスし <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> ます。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|ファイルまたはディレクトリの追加、削除、または名前変更を行うためのアクセス許可を要求するために、プロジェクトによって呼び出されます。 このインターフェイスは、承認された add、remove、または rename アクションが完了したことを環境に通知するために、プロジェクトによっても呼び出されます。 サービスを使用してアクセスし <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> ます。|

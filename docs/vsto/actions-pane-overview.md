@@ -14,15 +14,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896772"
 ---
 # <a name="actions-pane-overview"></a>操作ウィンドウの概要
   操作ウィンドウは、特定の Microsoft Office Word 文書または Microsoft Office Excel ブックに添付された、カスタマイズ可能な **ドキュメントアクション** 作業ウィンドウです。 操作ウィンドウは、Office 作業ウィンドウ内で、Excel の [ **XML ソース** ] 作業ウィンドウや Word の [ **スタイルと書式設定** ] 作業ウィンドウなどの他の組み込み作業ウィンドウと共にホストされます。 操作ウィンドウのユーザー インターフェイスは、Windows フォーム コントロールまたは WPF コントロールを使用してデザインできます。
@@ -80,7 +80,7 @@ ms.locfileid: "96844830"
  操作ウィンドウが表示されているときにユーザーがドキュメントを保存すると、[操作] ウィンドウにコントロールが表示されているかどうかにかかわらず、ドキュメントが開かれるたびに操作ウィンドウが表示されます。 それをいつ表示するかを制御するには、`ThisDocument` または `ThisWorkbook` の `Startup` イベント ハンドラーで `ActionsPane` フィールドの <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> メソッドを呼び出し、ドキュメントを開いた時点で操作ウィンドウが表示されないようにします。
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>操作ウィンドウが閉じられたことを確認する
- 操作ウィンドウが閉じられたときに発生するイベントはありません。 <xref:Microsoft.Office.Tools.ActionsPane> クラスには <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> イベントがありますが、このイベントは、エンド ユーザーによって操作ウィンドウが閉じられたときには発生しません。 代わりに、このイベントは、操作ウィンドウのコントロールがメソッドを呼び出す <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> か、プロパティを false に設定することによって非表示にされたときに発生し <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> ます。 **false**
+ 操作ウィンドウが閉じられたときに発生するイベントはありません。 <xref:Microsoft.Office.Tools.ActionsPane> クラスには <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> イベントがありますが、このイベントは、エンド ユーザーによって操作ウィンドウが閉じられたときには発生しません。 代わりに、このイベントは、操作ウィンドウのコントロールがメソッドを呼び出す <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> か、プロパティを false に設定することによって非表示にされたときに発生し <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> ます。 
 
  ユーザーは、操作ウィンドウを閉じたときに、アプリケーションのユーザーインターフェイス (UI) で次のいずれかの手順を実行することによって、もう一度表示できます。
 
