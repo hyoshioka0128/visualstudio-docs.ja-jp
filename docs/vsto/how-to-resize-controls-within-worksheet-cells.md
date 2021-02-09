@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Windows Forms controls [Office development in Visual Studio], resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ba2a77dc44618c0415e645718aff3ead542b4b48
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927822"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>方法: ワークシートのセル内のコントロールのサイズを変更する
   ワークシート上の列または行のサイズを変更すると、セル内のホストコントロールは、サイズ変更されたセルの高さまたは幅に自動的にサイズ変更されます。 Windows フォームコントロールは、既定では自動的にサイズ変更されません。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928692"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 このインターフェイスは、コード命令の開始位置を表します。 現在、ほとんどのランタイムアーキテクチャでは、コードコンテキストはプログラムの実行ストリームのアドレスと考えることができます。
@@ -25,7 +25,7 @@ ms.locfileid: "80734217"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugCodeContext2 : IDebugMemoryContext2
+IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -45,7 +45,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="remarks"></a>解説
  `IDebugCodeContext2`インターフェイスと[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)インターフェイスの主な違いは、が `IDebugCodeContext2` 常に命令でアラインされることです。 これは、が `IDebugCodeContext2` 常に命令の先頭を指しているのに対し、は `IDebugMemoryContext2` ランタイムアーキテクチャのメモリの任意のバイトを指す場合があることを意味します。 `IDebugCodeContext2` は、基本ストレージサイズ (通常はバイト) ではなく、命令によってインクリメントされます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

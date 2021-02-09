@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715991"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927939"
 ---
 # <a name="source-control-plug-in-api-functions"></a>ソース管理プラグインの API 関数
 ソース管理プラグイン API には、次の関数が用意されています。これらの関数は、この API に従ってソース管理プラグインによって実装される必要があります。 各関数のシグネチャと、ビットフラグとその他のパラメーターに関連付けられているセマンティクスについては、このリファレンスで詳しく説明します。
 
 ## <a name="initialization-and-housekeeping-functions"></a>初期化関数とハウスキーピング関数
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|プロジェクトを閉じます。|
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|指定されたコマンドの詳細オプションをユーザーに表示します。|
@@ -36,7 +36,7 @@ ms.locfileid: "97715991"
 
 ## <a name="core-source-control-functions"></a>コアソース管理関数
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |[SccAdd](../extensibility/sccadd-function.md)|完全修飾パス名によって指定されたファイルの配列をソース管理システムに追加します。|
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|ソース管理システムに既に存在するファイルをユーザーが参照し、そのファイルを現在のプロジェクトの一部として使用できるようにします。|
@@ -58,7 +58,7 @@ ms.locfileid: "97715991"
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>追加機能をサポートする関数 (バージョン1.2 のソース管理プラグイン API)
  この関数のグループは、ソース管理プラグイン API のバージョン1.2 に含まれる追加機能を定義します。 これらは、より高度なソース管理機能へのアクセスを提供します。
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|バッチ操作を開始します。|
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|指定された名前のサブプロジェクトを既存の親プロジェクトの下に作成します。|
@@ -72,7 +72,7 @@ ms.locfileid: "97715991"
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>高度な機能をサポートする関数 (バージョン1.3 のソース管理プラグイン API)
  この関数のグループは、ソース管理プラグイン API のバージョン1.3 に含まれる追加機能を定義します。 これらは、より高度なソース管理機能へのアクセスを提供します。
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|ソース管理から現在のプロジェクトにファイルの一覧を追加します。|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|ユーザーインターフェイスを使用せずに、ソース管理からファイルのリストを取得します。|
@@ -82,7 +82,7 @@ ms.locfileid: "97715991"
 |[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|ソース管理下にあるプロジェクトまたはプロジェクト内のディレクトリとファイルの一覧を調べます。 見つかった各ディレクトリとファイル名は、コールバック関数に渡されます。|
 |[SccQueryChanges](../extensibility/sccquerychanges-function.md)|ファイルの一覧に対して行われた名前の変更を調べます。 各ファイル名は、変更状態のコールバック関数に渡されます。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: scc
 
  (環境 SDK 共通インクルードフォルダーで提供されます。既定では、 *[drive]* Files\VSIP 8.0 \ EnvSDK\common\inc; は、MSSCCI sample, *[DRIVE]*/MSSCCI) と共に VSIP フォルダーに指定されています。

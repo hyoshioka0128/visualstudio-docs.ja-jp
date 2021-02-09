@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d110e66e937249fdee34f424d4f68a9b914113d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928471"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 このインターフェイスは、プロセスが実行されているサーバーに関する情報へのアクセスを提供します。
@@ -51,7 +51,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="remarks"></a>解説
  カスタムポートサプライヤーは、[イベント](../../../extensibility/debugger/reference/idebugportevents2-event.md)の呼び出しで[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)インターフェイスを受け取ります。 インターフェイスは、 `IDebugCoreServer3` そのインターフェイスから取得できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

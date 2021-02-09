@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Bookmark control, resizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0d577f825337862de4ef967bb4f92f61ebbb0b45
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 55fe398b277586404c91ef7cb172f7ce3a9c98ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927848"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>方法: Bookmark コントロールのサイズを変更する
   <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールのサイズは、Microsoft Office Word ドキュメントに追加するときに設定します。 サイズは後から変更することもできます。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11b0e4cd7c851e65edf299f45ec97273804c25d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e8e9ea277ee5e383c6d61528183f43dd01a0040
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928862"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 このインターフェイスは、クラスを型として表します。
@@ -25,7 +25,7 @@ ms.locfileid: "80734287"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugClassField : IDebugContainerField
+IDebugClassField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -48,7 +48,7 @@ IDebugClassField : IDebugContainerField
 |[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|既定のインデクサーの名前を取得します。|
 |[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|このクラスの入れ子になった列挙子の列挙子を作成します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
