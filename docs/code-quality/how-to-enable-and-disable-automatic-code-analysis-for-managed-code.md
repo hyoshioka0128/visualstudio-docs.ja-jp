@@ -6,13 +6,13 @@ ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: c10aa602c2c9af3c51812073d62d5bd9bff06664
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860075"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>方法: マネージコードのバイナリコード分析を有効または無効にする
 
@@ -23,11 +23,11 @@ ms.locfileid: "94348750"
 
 レガシコード分析を有効または無効にするには:
 
-1. **ソリューションエクスプローラー** で、プロジェクトを選択して保持 (または右クリック) し、[ **プロパティ** ] を選択します。
+1. **ソリューションエクスプローラー** で、プロジェクトを選択して保持 (または右クリック) し、[**プロパティ**] を選択します。
 
 2. プロジェクトの [プロパティ] ダイアログボックスで、[ **コード分析** ] タブにアクセスします。
 
-3. [ **構成** ] でビルドの種類を指定し、[ **プラットフォーム** ] でターゲットプラットフォームを指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
+3. [ **構成** ] でビルドの種類を指定し、[ **プラットフォーム**] でターゲットプラットフォームを指定します。 (Non-.NET Core/.NET Standard プロジェクトのみ。)
 
 ::: moniker range="vs-2017"
 
@@ -37,7 +37,7 @@ ms.locfileid: "94348750"
 
 ::: moniker range=">=vs-2019"
 
-4. 自動コード分析を有効または無効にするには、[ **バイナリアナライザー** ] セクションの [ **ビルド時に実行** ] チェックボックスをオンまたはオフにします。
+4. 自動コード分析を有効または無効にするには、[**バイナリアナライザー** ] セクションの [**ビルド時に実行**] チェックボックスをオンまたはオフにします。
 
    ![Visual Studio でのビルドオプションでのバイナリコード分析の実行](media/run-on-build-binary-analyzers.png)
 

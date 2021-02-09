@@ -9,15 +9,15 @@ helpviewer_keywords:
 - .NET analyzers, ported rules
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: dde5a3d8ccf5557905395ee03d108e995ecffe7e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: de23f3529cfcd321b0a7c3f9844ac69d96fed9c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96039576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860322"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 規則のポートの状態
 
@@ -29,7 +29,7 @@ Roslyn アナライザーリポジトリの自動生成された [ドキュメ�
 
 このページの日付のとき、 [.net アナライザー](install-net-analyzers.md) に移植された FxCop 規則の一覧には次のものが含まれます。
 
-ルールの ID | タイトル
+ルールの ID | Title
 --------|---------
 [CA1000](/dotnet/fundamentals/code-analysis/quality-rules/ca1000) | ジェネリック型の静的メンバーを宣言しません
 [CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001) | 破棄可能なフィールドを所有する型は、破棄可能でなければなりません

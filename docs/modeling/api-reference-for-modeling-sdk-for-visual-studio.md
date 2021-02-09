@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 721527b71e12b2c6143fa952d663cccc2786b34f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b9393c8e01cb304b6a89ac9b400f3efc29d8c056
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861914"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Modeling SDK for Visual Studio の API リファレンス
 
@@ -22,7 +22,7 @@ Visual Studio の視覚化およびモデリング SDK には、ドメイン固�
 
 このセクションには、名前が "VisualStudio" で始まる名前空間の参照資料が含まれています。
 
-|名前空間|Content|
+|名前空間|コンテンツ|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|ModelElement などのクラス。 DSL で定義するすべてのドメインクラスの基本クラスです。|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|DSL 定義の一部を形成するクラス。|

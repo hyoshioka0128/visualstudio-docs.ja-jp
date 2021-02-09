@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349101"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860556"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -31,7 +31,7 @@ ms.locfileid: "94349101"
 
 - ソリューション内のすべてのプロジェクトで、ビルドに対してコード分析が有効になっていない。
 
-- Visual studio でのプロジェクトのローカル規則セットには、プロジェクト規則セットよりも制限の緩い **アクション** 設定があります。たとえば、サーバーで **[アクション** エラー] に設定されているルールのアクションは、 = **Error** visual studio で実行されているルールセットでは [ **警告** ] または **[なし** ] に設定されています。 **Action**
+- Visual studio でのプロジェクトのローカル規則セットには、プロジェクト規則セットよりも制限の緩い **アクション** 設定があります。たとえば、サーバーで **[アクション** エラー] に設定されているルールのアクションは、 =  visual studio で実行されているルールセットでは [**警告**] または **[なし**] に設定されています。 
 
 - Visual Studio で指定された規則セットには、プロジェクトのコード分析チェックインポリシーで指定された規則セットに指定されているすべての規則が含まれていません。
 

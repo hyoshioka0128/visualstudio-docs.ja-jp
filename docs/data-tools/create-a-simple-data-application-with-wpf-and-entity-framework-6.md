@@ -8,19 +8,19 @@ dev_langs:
 - CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435494"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859191"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 を使用して単純なデータ アプリケーションを作成する
 
-このチュートリアルでは、Visual Studio で基本的な "フォームオーバーデータ" アプリケーションを作成する方法について説明します。 アプリは SQL Server LocalDB、Northwind データベース、Entity Framework 6 (Entity Framework Core ではありません)、Windows Presentation Foundation および (.NET Core ではなく) .NET Framework を使用します。 ここでは、マスター/詳細ビューで基本的なデータバインドを実行する方法について説明します。また、 **[次** に移動]、[ **前** に移動]、[ **先頭に** 移動]、[ **最後に移動** ]、[ **更新** ]、および [ **削除** ] のボタンがあるカスタムバインドナビゲーターもあります。
+このチュートリアルでは、Visual Studio で基本的な "フォームオーバーデータ" アプリケーションを作成する方法について説明します。 アプリは SQL Server LocalDB、Northwind データベース、Entity Framework 6 (Entity Framework Core ではありません)、Windows Presentation Foundation および (.NET Core ではなく) .NET Framework を使用します。 ここでは、マスター/詳細ビューで基本的なデータバインドを実行する方法について説明します。また、 **[次** に移動]、[ **前** に移動]、[ **先頭に** 移動]、[ **最後に移動**]、[ **更新** ]、および [ **削除**] のボタンがあるカスタムバインドナビゲーターもあります。
 
 この記事では、Visual Studio でのデータツールの使用に焦点を当てていますが、基になるテクノロジの詳細については説明しません。 XAML、Entity Framework、および SQL に関する基本的な知識があることを前提としています。 また、この例では、WPF アプリケーションの標準であるモデルビュービューモデル (MVVM) アーキテクチャについても説明しません。 ただし、いくつかの変更を加えて、このコードを独自の MVVM アプリケーションにコピーできます。
 
@@ -28,11 +28,11 @@ ms.locfileid: "94435494"
 
 この例では SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。 その製品の ADO.NET data provider が Entity Framework をサポートしている場合は、他の SQL database 製品とも同様に機能します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** で、 **.NET デスクトップ開発** ワークロードの一部として、または個別のコンポーネントとして、SQL Server Express LocalDB をインストールできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** で、**.NET デスクトップ開発** ワークロードの一部として、または個別のコンポーネントとして、SQL Server Express LocalDB をインストールできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 ( **SQL Server オブジェクトエクスプローラー** は、 **Visual Studio インストーラー** の **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (**SQL Server オブジェクトエクスプローラー** は、 **Visual Studio インストーラー** の **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -48,11 +48,11 @@ ms.locfileid: "94435494"
 
 1. Visual Studio で、新しい C# **WPF アプリ** プロジェクトを作成します。
 
-2. Entity Framework 6 の NuGet パッケージを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを選択します。 メインメニューで、[ **プロジェクト** ] [  >  **NuGet パッケージの管理** ] の順に選択します。
+2. Entity Framework 6 の NuGet パッケージを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを選択します。 メインメニューで、[**プロジェクト**] [  >  **NuGet パッケージの管理**] の順に選択します。
 
      ![[NuGet パッケージの管理] メニュー項目](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3. **NuGet パッケージマネージャー** で、[ **参照** ] リンクをクリックします。 Entity Framework は、一覧の最上位のパッケージであると思います。 右側のウィンドウで [ **インストール** ] をクリックし、画面の指示に従います。 インストールが完了すると、[出力] ウィンドウに通知されます。
+3. **NuGet パッケージマネージャー** で、[**参照**] リンクをクリックします。 Entity Framework は、一覧の最上位のパッケージであると思います。 右側のウィンドウで [ **インストール** ] をクリックし、画面の指示に従います。 インストールが完了すると、[出力] ウィンドウに通知されます。
 
      ![NuGet パッケージの Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
@@ -60,17 +60,17 @@ ms.locfileid: "94435494"
 
 ## <a name="create-the-model"></a>モデルを作成する
 
-1. **ソリューションエクスプローラー** のプロジェクトノードを右クリックし、[新しい項目の **追加** ] を選択し  >  **New Item** ます。 左側のウィンドウの [C#] ノードで、[ **データ** ] を選択し、中央のペインで [ **ADO.NET Entity Data Model** ] を選択します。
+1. **ソリューションエクスプローラー** のプロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 左側のウィンドウの [C#] ノードで、[ **データ** ] を選択し、中央のペインで [ **ADO.NET Entity Data Model**] を選択します。
 
    ![Entity Framework モデルの新しい項目](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. モデルを呼び出し `Northwind_model` 、 **[OK]** を選択します。 **Entity Data Model ウィザード** が開きます。 [ **データベースから EF Designer** ] を選択し、[ **次へ** ] をクリックします。
+2. モデルを呼び出し `Northwind_model` 、 **[OK]** を選択します。 **Entity Data Model ウィザード** が開きます。 [ **データベースから EF Designer** ] を選択し、[ **次へ**] をクリックします。
 
    ![データベースからの EF モデル](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. 次の画面で、LocalDB Northwind 接続 (たとえば、(localdb) \MSSQLLocalDB) を入力または選択し、Northwind データベースを指定して、[ **次へ** ] をクリックします。
+3. 次の画面で、LocalDB Northwind 接続 (たとえば、(localdb) \MSSQLLocalDB) を入力または選択し、Northwind データベースを指定して、[ **次へ**] をクリックします。
 
-4. ウィザードの次のページで、Entity Framework モデルに含めるテーブル、ストアドプロシージャ、およびその他のデータベースオブジェクトを選択します。 ツリービューで [dbo] ノードを展開し、[ **Customers** ]、[ **Orders** ]、[ **Order Details** ] を選択します。 既定値をオンのままにして、[ **完了** ] をクリックします。
+4. ウィザードの次のページで、Entity Framework モデルに含めるテーブル、ストアドプロシージャ、およびその他のデータベースオブジェクトを選択します。 ツリービューで [dbo] ノードを展開し、[ **Customers**]、[ **Orders**]、[ **Order Details**] を選択します。 既定値をオンのままにして、[ **完了**] をクリックします。
 
     ![モデルのデータベースオブジェクトを選択する](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -96,15 +96,15 @@ ms.locfileid: "94435494"
 
 独自のデータバインドコードを記述することもできますが、Visual Studio により簡単に実行できます。
 
-1. メインメニューから、[ **プロジェクト** ] [新しいデータソースの追加] の順に選択し、  >  **Add new data source** **データソース構成ウィザード** を起動します。 データベースではなくモデルクラスにバインドするので、[ **オブジェクト** ] を選択します。
+1. メインメニューから、[**プロジェクト**] [新しいデータソースの追加] の順に選択し、  >   **データソース構成ウィザード** を起動します。 データベースではなくモデルクラスにバインドするので、[ **オブジェクト** ] を選択します。
 
      ![オブジェクトソースを含むデータソース構成ウィザード](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2. プロジェクトのノードを展開し、[ **Customer** ] を選択します。 (注文のソースは、Customer の Orders ナビゲーションプロパティから自動的に生成されます)。
+2. プロジェクトのノードを展開し、[ **Customer**] を選択します。 (注文のソースは、Customer の Orders ナビゲーションプロパティから自動的に生成されます)。
 
      ![エンティティクラスをデータソースとして追加する](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. **[完了]** をクリックします。
+3. **[Finish]** をクリックします。
 
 4. コードビューで *mainwindow.xaml* に移動します。 この例では、XAML を単純なものにしています。 Mainwindow.xaml のタイトルをわかりやすいものに変更し、高さと幅を 600 x 800 に増やします。 後でいつでも変更できます。 ここで、次の3つの行定義をメイングリッドに追加します。1行はナビゲーションボタン用、もう1つは顧客の詳細用、もう1つは注文を表示するグリッド用です。
 
@@ -116,7 +116,7 @@ ms.locfileid: "94435494"
         </Grid.RowDefinitions>
     ```
 
-5. ここで、デザイナーで表示するように *mainwindow.xaml* を開きます。 これにより、[ **データソース** ] ウィンドウが、 **ツールボックス** の横にある Visual Studio ウィンドウの余白にオプションとして表示されます。 タブをクリックしてウィンドウを開くか、 **Shift** + **Alt** + **D** キーを押すか **View** 、[  >  **他の Windows**  >  **データソース** を表示] を選択します。 個々のテキストボックスに Customers クラスの各プロパティを表示します。 まず、[ **Customers** ] コンボボックスの矢印をクリックし、[ **詳細** ] を選択します。 次に、デザインサーフェイスの中央部分にノードをドラッグして、デザイナーが中央の行に移動することを認識できるようにします。 置き忘れしている場合は、後で XAML で行を手動で指定できます。 既定では、コントロールはグリッド要素に垂直方向に配置されますが、この時点では、フォーム上に配置することができます。 たとえば、アドレスの上に [ **名前** ] テキストボックスを配置した方がよい場合があります。 この記事のサンプルアプリケーションでは、フィールドを並べ替え、2つの列に並べ替えます。
+5. ここで、デザイナーで表示するように *mainwindow.xaml* を開きます。 これにより、[ **データソース** ] ウィンドウが、 **ツールボックス** の横にある Visual Studio ウィンドウの余白にオプションとして表示されます。 タブをクリックしてウィンドウを開くか、 **Shift** + **Alt** + **D** キーを押すか、[  >  **他の Windows**  >  **データソース** を表示] を選択します。 個々のテキストボックスに Customers クラスの各プロパティを表示します。 まず、[ **Customers** ] コンボボックスの矢印をクリックし、[ **詳細**] を選択します。 次に、デザインサーフェイスの中央部分にノードをドラッグして、デザイナーが中央の行に移動することを認識できるようにします。 置き忘れしている場合は、後で XAML で行を手動で指定できます。 既定では、コントロールはグリッド要素に垂直方向に配置されますが、この時点では、フォーム上に配置することができます。 たとえば、アドレスの上に [ **名前** ] テキストボックスを配置した方がよい場合があります。 この記事のサンプルアプリケーションでは、フィールドを並べ替え、2つの列に並べ替えます。
 
      ![個々のコントロールに対するデータソースのバインド](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -427,7 +427,7 @@ Windows フォームアプリケーションでは、データベース内の行
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 
-デバッグを開始するには、 **F5** キーを押します。 顧客データと注文データがグリッドに表示され、ナビゲーションボタンが期待どおりに動作するはずです。 [ **コミット** ] をクリックして、データの入力後に新しい顧客または注文をモデルに追加します。 [ **キャンセル** ] をクリックすると、データを保存せずに、新しい顧客または新しい注文フォームから戻ることができます。 既存の顧客や注文をテキストボックスに直接編集することができ、それらの変更は自動的にモデルに書き込まれます。
+デバッグを開始するには、**F5** キーを押します。 顧客データと注文データがグリッドに表示され、ナビゲーションボタンが期待どおりに動作するはずです。 [ **コミット** ] をクリックして、データの入力後に新しい顧客または注文をモデルに追加します。 [ **キャンセル** ] をクリックすると、データを保存せずに、新しい顧客または新しい注文フォームから戻ることができます。 既存の顧客や注文をテキストボックスに直接編集することができ、それらの変更は自動的にモデルに書き込まれます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839098"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 2)
   SharePoint プロジェクト項目のカスタムの種類を定義し、Visual Studio の項目テンプレートに関連付けると、テンプレートのウィザードを指定することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクトにプロジェクト項目の新しいインスタンスを追加するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -105,7 +105,7 @@ ms.locfileid: "96915210"
 9. [ **プロパティ** ] ウィンドウで、[ **相互運用機能型の埋め込み** ] プロパティの値を **False** に変更します。
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>カスタムアクションの既定の場所と ID 文字列を定義する
- すべてのカスタムアクションには、 `GroupID` `Location`Elements.xmlファイル内の要素の属性と属性に指定された場所と ID があり `CustomAction` ます。 *Elements.xml* この手順では、ItemTemplateWizard プロジェクトでこれらの属性の有効な文字列をいくつか定義します。 このチュートリアルを完了すると、ユーザーがウィザードで場所と ID を指定したときに、これらの文字列がカスタム動作プロジェクト項目の *Elements.xml* ファイルに書き込まれます。
+ すべてのカスタムアクションには、 `GroupID` `Location`Elements.xmlファイル内の要素の属性と属性に指定された場所と ID があり `CustomAction` ます。  この手順では、ItemTemplateWizard プロジェクトでこれらの属性の有効な文字列をいくつか定義します。 このチュートリアルを完了すると、ユーザーがウィザードで場所と ID を指定したときに、これらの文字列がカスタム動作プロジェクト項目の *Elements.xml* ファイルに書き込まれます。
 
  わかりやすくするために、このサンプルでは、使用可能な既定の場所と Id のサブセットのみをサポートしています。 完全な一覧については、「 [既定のカスタムアクションの場所と id](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))」を参照してください。
 
@@ -257,7 +257,7 @@ ms.locfileid: "96915210"
 
 5. [ **プロジェクト** ] ボックスの一覧で [ **itemtemplatewizard**] を選択し、[ **OK** ] をクリックします。
 
-6. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** ソリューションがエラーなしでコンパイルされることを確認します。
+6. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  ソリューションがエラーなしでコンパイルされることを確認します。
 
 ## <a name="test-the-wizard"></a>ウィザードをテストする
  これで、ウィザードをテストする準備ができました。 まず、Visual Studio の実験用インスタンスで CustomActionProjectItem ソリューションのデバッグを開始します。 次に、Visual Studio の実験用インスタンスで、SharePoint プロジェクトのカスタムアクションプロジェクト項目のウィザードをテストします。 最後に、SharePoint プロジェクトをビルドして実行し、カスタム動作が正常に機能することを確認します。
@@ -268,17 +268,17 @@ ms.locfileid: "96915210"
 
 2. ItemTemplateWizard プロジェクトで、CustomActionWizard コードファイルを開き、メソッドの最初のコード行にブレークポイントを追加し `RunStarted` ます。
 
-3. メニューバーで、[例外の **デバッグ**] を選択し  >  **Exceptions** ます。
+3. メニューバーで、[例外の **デバッグ**] を選択し  >  ます。
 
 4. [**例外**] ダイアログボックスで、**共通言語ランタイムの例外** の **スロー** されたチェックボックスと **ユーザーが処理しない** チェックボックスがオフになっていることを確認し、[ **OK** ] をクリックします。
 
-5. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  **Start Debugging** します。
+5. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  します。
 
      Visual Studio によって%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Action プロジェクト Item/1.0 に拡張機能がインストールされ、Visual Studio の実験用インスタンスが開始されます。 このインスタンスの Visual Studio でプロジェクト項目をテストします。
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Visual Studio でウィザードをテストするには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 2. [ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開します (項目テンプレートでサポートされている言語によって異なります)。次に、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -294,7 +294,7 @@ ms.locfileid: "96915210"
 
 8. Visual Studio のもう一方のインスタンスで、先ほど `RunStarted` メソッドに設定したブレークポイントで、コードが停止していることを確認します。
 
-9. F5 キーを **押す** か、メニューバーで [**デバッグ**] [続行] の順に選択して、プロジェクトのデバッグを続け  >  **Continue** ます。
+9. F5 キーを **押す** か、メニューバーで [**デバッグ**] [続行] の順に選択して、プロジェクトのデバッグを続け  >  ます。
 
      SharePoint カスタマイズ ウィザードが表示されます。
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea8e6a09c512ed5edb6098183c66361e96537f54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839137"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順の作成
   SharePoint プロジェクトを配置すると、Visual Studio は一連の配置手順を特定の順序で実行します。 Visual Studio には多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
@@ -226,7 +226,7 @@ ms.locfileid: "96914934"
 
 12. [ **プロジェクト** ] ボックスの一覧で [ **sharepointcommands**] を選択し、[ **OK** ] をクリックします。
 
-13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** ソリューションがエラーなしでコンパイルされることを確認します。
+13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  ソリューションがエラーなしでコンパイルされることを確認します。
 
 14. UpgradeDeploymentStep プロジェクトのビルド出力フォルダーに、UpgradeDeploymentStep .vsix ファイルが含まれていることを確認します。
 
@@ -243,13 +243,13 @@ ms.locfileid: "96914934"
 
 2. DeploymentStepExtension プロジェクトで、UpgradeStep コードファイルを開き、メソッドとメソッドの最初のコード行にブレークポイントを追加し `CanExecute` `Execute` ます。
 
-3. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  **Start Debugging** します。
+3. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  します。
 
 4. Visual Studio では、SharePoint プロジェクト/1.0 の%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 配置手順の拡張機能がインストールされ、Visual Studio の実験用インスタンスが開始されます。 この Visual Studio のインスタンスで、アップグレードのデプロイ手順をテストします。
 
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>リスト定義とリストインスタンスを使用して SharePoint プロジェクトを作成するには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 2. [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノードを展開し、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
@@ -379,7 +379,7 @@ ms.locfileid: "96914934"
 
      この操作により、SharePoint サイトの **従業員** リストの既定のビューからこれらのフィールドが削除されます。
 
-8. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  **Start Debugging** します。
+8. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  します。
 
 9. [展開の **競合** ] ダイアログボックスが表示されていることを確認します。
 
@@ -434,15 +434,15 @@ ms.locfileid: "96914934"
 
     この操作により、SharePoint サイトの **従業員** リストの既定のビューからこれらのフィールドが削除されます。
 
-5. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  **Start Debugging** します。
+5. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  します。
 
 6. Visual Studio のもう一方のインスタンスで、先ほど `CanExecute` メソッドに設定したブレークポイントで、コードが停止していることを確認します。
 
-7. F5 キーをもう一度 **押す** か、メニューバーで [**デバッグ**] [続行] を選択し  >  **Continue** ます。
+7. F5 キーをもう一度 **押す** か、メニューバーで [**デバッグ**] [続行] を選択し  >  ます。
 
 8. メソッドで前に設定したブレークポイントでコードが停止していることを確認し `Execute` ます。
 
-9. F5 キーを **押す** か、メニューバーで [**デバッグ**] [最終時間] の順に選択し  >  **Continue** ます。
+9. F5 キーを **押す** か、メニューバーで [**デバッグ**] [最終時間] の順に選択し  >  ます。
 
      Web ブラウザーで SharePoint サイトが開きます。
 
@@ -469,7 +469,7 @@ ms.locfileid: "96914934"
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>SharePoint サイトからリスト定義を削除するには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ビルド** の取り消し] を選択し  >  **Retract** ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ビルド** の取り消し] を選択し  >  ます。
 
      Visual Studio では、SharePoint サイトからリスト定義が取り消されます。
 

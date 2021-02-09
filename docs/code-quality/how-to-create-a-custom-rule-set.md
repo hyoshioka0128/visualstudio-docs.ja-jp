@@ -10,15 +10,15 @@ helpviewer_keywords:
 - rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: dda89e9822e361438346300a2f60c05bcfd64d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860153"
 ---
 # <a name="customize-a-rule-set"></a>規則セットをカスタマイズする
 
@@ -63,7 +63,7 @@ ms.locfileid: "97667885"
 
 2. [ **新しいファイル** ] ダイアログボックスで、左側の [ **全般** ] カテゴリを選択し、[ **コード分析ルールセット**] を選択します。
 
-3. **[Open]** を選択します。
+3. **[開く]** を選択します。
 
    ルールセットエディターに新しい *ルール* セットファイルが開きます。
 
@@ -140,7 +140,7 @@ ms.locfileid: "97667885"
 
 エディターで開いている規則セットの表示名を変更するには、メニューバー の  >  [**プロパティウィンドウ** の表示] をクリックして、[プロパティ] ウィンドウを開きます。 [ **名前** ] ボックスに表示名を入力します。 また、規則セットの説明を入力することもできます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ルールセットが完成したので、次の手順では、ルールを追加または削除したり、ルール違反の重大度を変更したりして、ルールをカスタマイズします。
 
