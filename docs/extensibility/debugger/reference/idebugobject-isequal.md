@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4b76e663-ef2e-41ff-9be1-bf26d666a34a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 406e93456f1bd6d92a42f1584d19aeb52dd5ff93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846778"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
 オブジェクトとこのオブジェクトを比較します。
@@ -28,7 +28,7 @@ ms.locfileid: "80726502"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT IsEqual( 
+HRESULT IsEqual( 
    IDebugObject* pObject,
    BOOL*         pfIsEqual
 );
@@ -52,7 +52,7 @@ int IsEqual(
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
 ## <a name="remarks"></a>解説
- 通常、このメソッドは、パラメーターとこの IDebugObject オブジェクトによって表される値のアドレスを比較できます `pObject` 。アドレスが等しい場合は、それらのオブジェクトが等しいと見なされます。 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
+ 通常、このメソッドは、パラメーターとこの IDebugObject オブジェクトによって表される値のアドレスを比較できます `pObject` 。アドレスが等しい場合は、それらのオブジェクトが等しいと見なされます。 [](../../../extensibility/debugger/reference/idebugobject.md)
 
 ## <a name="see-also"></a>関連項目
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

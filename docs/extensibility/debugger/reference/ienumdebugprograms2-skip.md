@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b283858b-b375-4760-bfec-ab37de89958d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7459e6dae6487fbb9cec3e82a9d8ba01fbfef2a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60ecbef6ed8644176effb3946bbfe72267526053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846609"
 ---
 # <a name="ienumdebugprograms2skip"></a>IEnumDebugPrograms2::Skip
 指定した数の要素をスキップします。
@@ -46,7 +46,7 @@ int Skip(
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 `S_FALSE` `celt` が残りの要素の数より大きい場合はを返します。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  が、 `celt` 残りの要素の数よりも大きい値を指定した場合、列挙は終了に設定され、 `S_FALSE` が返されます。
 
 ## <a name="see-also"></a>関連項目

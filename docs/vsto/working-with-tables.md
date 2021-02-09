@@ -14,20 +14,20 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], tables
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 27fdc776589879af6757967b18a7cac47f9f66df
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 143b537c0d921d70206ce6f9128338e30351d080
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847454"
 ---
 # <a name="work-with-tables"></a>テーブルを操作する
   このセクションのトピックでは、Microsoft Office Word のオブジェクト モデルを使用して Office プロジェクト内のテーブルを操作する手順とコード例を示します。 以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |テーブルを作成し、スタイルを適用して、コード内のテーブルにアクセスします。|[方法: プログラムによって Word の表を作成する](../vsto/how-to-programmatically-create-word-tables.md)|
 |テーブルを作成し、書式設定して、セルにデータを挿入します。|[方法: プログラムによって document プロパティを Word の表に読み込む](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)|

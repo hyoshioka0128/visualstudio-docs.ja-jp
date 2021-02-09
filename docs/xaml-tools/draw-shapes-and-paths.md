@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c29e2a4718a10193a4c86d1485549ded6ae2c0e
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847350"
 ---
 # <a name="draw-shapes-and-paths"></a>図形とパスの描画
 
-XAML デザイナーでは、" *図形* " とはその名の示すとおりのものです。 たとえば、四角形、円、楕円などです。 *パス* は、より柔軟なバージョンの図形です。 図形の形状を変更したり、図形を結合して新しい図形を形成するといった操作ができます。
+XAML デザイナーでは、"*図形*" とはその名の示すとおりのものです。 たとえば、四角形、円、楕円などです。 *パス* は、より柔軟なバージョンの図形です。 図形の形状を変更したり、図形を結合して新しい図形を形成するといった操作ができます。
 
 図形とパスではベクター グラフィックスを使用するため、高解像度表示に対応して拡大縮小できます。
 
@@ -36,7 +36,7 @@ XAML デザイナーでは、" *図形* " とはその名の示すとおりの�
 
 ## <a name="draw-a-path"></a>パスの描画
 
-パスは、直線と曲線が連結して一続きになったものです。 パスを使用し、 **[アセット]** ウィンドウでは使用できない面白い図形を作成します。
+パスは、直線と曲線が連結して一続きになったものです。 パスを使用し、**[アセット]** ウィンドウでは使用できない面白い図形を作成します。
 
 パスの描画には直線、ペン、または鉛筆を使用します。 これらのツールは **[ツール]** ウィンドウにあります。
 
@@ -80,7 +80,7 @@ XAML デザイナーでは、" *図形* " とはその名の示すとおりの�
 
 ### <a name="remove-a-point-in-a-path"></a>パス内のポイントの削除
 
-**[選択]** ツールを使用してパスを選択します。 次に、 **[ペン]** ツールを使用し、削除するポイントをクリックします。
+**[選択]** ツールを使用してパスを選択します。 次に、**[ペン]** ツールを使用し、削除するポイントをクリックします。
 
 ### <a name="add-a-point-to-a-path"></a>パスへのポイントの追加
 
@@ -88,7 +88,7 @@ XAML デザイナーでは、" *図形* " とはその名の示すとおりの�
 
 ## <a name="convert-a-shape-to-a-path"></a>図形のパスへの変換
 
-パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。 図形を選択し、[ **フォーマット**  >  **パス** パスに変換] を選択し  >  **Convert to Path** ます。
+パスを変更するのと同じ方法で図形を変更するには、図形をパスに変換します。 図形を選択し、[**フォーマット**  >  **パス** パスに変換] を選択し  >  ます。
 
 **短いビデオを見る:** ![インストール済みフィーチャーの構成](../designers/media/bldadminconsoleinitialconfigicon.png) [パスの作業: 図形をパスに変換する](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
@@ -101,7 +101,7 @@ XAML デザイナーでは、" *図形* " とはその名の示すとおりの�
 
 ![パスの結合](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|アクション|
+|数値|操作|
 |-|-|
 |![結合前の 2 つの図形](../designers/media/b1_1.png)|結合前の 2 つの図形|
 |![合算](../designers/media/b1_2.png)|合算|

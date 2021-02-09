@@ -12,15 +12,15 @@ helpviewer_keywords:
 - postActionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85e1a02dbb85094cf84e1bba05e900d0e3f2c641
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 505b55b7513446a158adac66e7e0e38f401f0808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847688"
 ---
 # <a name="ltpostactiondatagt-element-office-development"></a>&lt;postActionData &gt; 要素 (Office 開発)
   `postActionData` 名前空間の `vstav3` 要素は、Office ソリューションをインストールした後に実行されるすべての配置後アクションに関連付けられているデータを指定します。
@@ -41,7 +41,7 @@ ms.locfileid: "91583724"
 
 ## <a name="post-deployment-action-example"></a>配置後アクションの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、 `postAction` を使用して配置する Office ソリューションに対するアプリケーション マニフェストの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

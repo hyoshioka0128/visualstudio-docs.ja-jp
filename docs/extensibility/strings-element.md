@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f517d350f3383dcaeb99d651872ffb8ed09814fe
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848013"
 ---
 # <a name="strings-element"></a>文字列要素
 Strings 要素には、少なくとも **Buttontext** 子要素が含まれている必要があります。 その他のすべての子要素は省略可能です。 ' & ' や ' < ' などの無効な XML 文字は、エンティティ (' ' と ' ' など) としてコーディングする必要があり &amp; &lt; ます。
@@ -41,7 +41,7 @@ Strings 要素には、少なくとも **Buttontext** 子要素が含まれて�
 
 |属性|説明|
 |---------------|-----------------|
-|language|省略可能。 Language = "."。|
+|language|任意。 Language = "."。|
 
 ### <a name="child-elements"></a>子要素
 

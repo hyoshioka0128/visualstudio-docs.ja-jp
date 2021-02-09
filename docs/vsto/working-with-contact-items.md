@@ -14,20 +14,20 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b84d91f2a89a5cf648aaa13f18e404dab2ec138c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b336d00e2cd3a9d9eb6484564c3b3bd0a9b011dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847571"
 ---
 # <a name="work-with-contact-items"></a>連絡先アイテムの操作
   <xref:Microsoft.Office.Interop.Outlook.ContactItem> クラスには、連絡先関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |指定した文字列が姓に含まれている連絡先をすべて取得します。|[方法: プログラムによって Outlook の連絡先にアクセスする](../vsto/how-to-programmatically-access-outlook-contacts.md)|
 |姓および名で連絡先を検索します。|[方法: プログラムによって特定の連絡先を検索する](../vsto/how-to-programmatically-search-for-a-specific-contact.md)|
