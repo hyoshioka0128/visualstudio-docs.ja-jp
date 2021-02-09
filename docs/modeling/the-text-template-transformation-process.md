@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, transformation process
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f0caadfe9abf38b2d83995da7efa32d618b4bfe0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882948"
 ---
 # <a name="the-text-template-transformation-process"></a>テキスト テンプレート変換プロセス
 テキストテンプレート変換プロセスは、テキストテンプレートファイルを入力として受け取り、新しいテキストファイルを出力として生成します。 たとえば、テキストテンプレートを使用して Visual Basic または C# コードを生成したり、HTML レポートを生成したりすることができます。
@@ -25,12 +25,12 @@ ms.locfileid: "97362653"
 
  テキストテンプレート変換プロセスは2つの手順で実行されます。 まず、エンジンは、生成された変換クラスと呼ばれる一時クラスを作成します。 このクラスには、ディレクティブとコントロールブロックによって生成されるコードが含まれています。 その後、生成された変換クラスをコンパイルして実行し、出力ファイルを生成します。
 
-## <a name="components"></a>コンポーネント
+## <a name="components"></a>Components
 
 |コンポーネント|説明|カスタマイズ可能 (はい/いいえ)|
 |-|-|-|
-|エンジン|エンジンコンポーネントは、テキストテンプレート変換プロセスを制御します。|不正解です。|
-|ホスト|ホストは、エンジンとユーザー環境の間のインターフェイスです。 Visual Studio は、テキスト変換プロセスのホストです。|はい。 カスタムホストを作成することができます。|
+|エンジン|エンジンコンポーネントは、テキストテンプレート変換プロセスを制御します。|いいえ。|
+|Host|ホストは、エンジンとユーザー環境の間のインターフェイスです。 Visual Studio は、テキスト変換プロセスのホストです。|はい。 カスタムホストを作成することができます。|
 |ディレクティブプロセッサ|ディレクティブプロセッサは、テキストテンプレートのディレクティブを処理するクラスです。 ディレクティブを使用すると、入力ソースからテキストテンプレートにデータを提供できます。|はい。 カスタムディレクティブプロセッサを作成できます。|
 
 ## <a name="the-engine"></a>エンジン

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d07b5272a31a0c649e12f353aefaa7c63c335eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882662"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>チュートリアル: ワークフローへのアプリケーション ページの追加
   このチュートリアルでは、ワークフローから派生したデータを表示するアプリケーションページをワークフロープロジェクトに追加する方法について説明します。 このプロジェクトは、「 [チュートリアル: 関連付けフォームと開始フォームを使用したワークフローの作成](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)」で説明されているプロジェクトに基づいています。
@@ -103,7 +103,7 @@ ms.locfileid: "96915662"
 
 #### <a name="to-code-the-application-page"></a>アプリケーションページをコーディングするには
 
-1. **ApplicationPage1** ノードを選択し、メニューバーで [コードの **表示**] を選択して、  >  **Code** アプリケーションページの背後にあるコードを表示します。
+1. **ApplicationPage1** ノードを選択し、メニューバーで [コードの **表示**] を選択して、  >  アプリケーションページの背後にあるコードを表示します。
 
 2. クラスの先頭にある **using** ステートメントまたは **Import** ステートメント (プログラミング言語によって異なります) を、次のように置き換えます。
 
@@ -133,7 +133,7 @@ ms.locfileid: "96915662"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3. `Page_Load` メソッドに次のコードを追加します。
+3. 次のコードを `Page_Load` メソッドに追加します。
 
     ```vb
     Try
@@ -340,7 +340,7 @@ ms.locfileid: "96915662"
 
      経費報告書の概要ページには、割り当てられた金額を超過した経費報告書がすべて表示されます。また、超過分の金額と、すべてのレポートの合計金額が一覧表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  SharePoint アプリケーションページの詳細については、「 [sharepoint のアプリケーションページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)する」を参照してください。
 
  SharePoint ページのコンテンツをデザインする方法の詳細については、Visual Studio の Visual Web デザイナーを使用して次のトピックを参照してください。
