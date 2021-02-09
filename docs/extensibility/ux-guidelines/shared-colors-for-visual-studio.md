@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 939a327100b1fcf0908c56a4fc67540e646eac7e
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927224"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有色
 共通の Visual Studio シェル要素を使用する UI を設計する場合、またはインターフェイス要素と同様の機能を使用する場合は、パッケージ定義ファイル内の既存のトークン名を使用して、色を選択して割り当てます。 これにより、UI が Visual Studio 環境全体で一貫性を保ち、テーマが追加された場合や更新された場合に自動的に更新されるようになります。
@@ -50,7 +50,7 @@ ms.locfileid: "97668912"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| ボタン | `CommonControls.Button` |
+| Button | `CommonControls.Button` |
 | ボタンの境界線 | `CommonControls.ButtonBorder` |
 
 **Button: 既定の状態**
@@ -59,7 +59,7 @@ ms.locfileid: "97668912"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| ボタン | `CommonControls.ButtonDefault` |
+| Button | `CommonControls.ButtonDefault` |
 | ボタンの境界線 | `CommonControls.ButtonBorderDefault` |
 
 **ボタン: 無効な状態**
@@ -68,7 +68,7 @@ ms.locfileid: "97668912"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| ボタン | `CommonControls.ButtonDisabled` |
+| Button | `CommonControls.ButtonDisabled` |
 | ボタンの境界線 | `CommonControls.ButtonBorderDisabled` |
 
 **ボタン: ホバー状態**
@@ -77,7 +77,7 @@ ms.locfileid: "97668912"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| ボタン | `CommonControls.ButtonHover` |
+| Button | `CommonControls.ButtonHover` |
 | ボタンの境界線 | `CommonControls.ButtonBorderHover` |
 
 **Button: 押された状態**
@@ -86,7 +86,7 @@ ms.locfileid: "97668912"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| ボタン | `CommonControls.ButtonPressed` |
+| Button | `CommonControls.ButtonPressed` |
 | ボタンの境界線 | `CommonControls.ButtonBorderPressed` |
 
 **ボタン: フォーカスのある状態**
@@ -95,7 +95,7 @@ ms.locfileid: "97668912"
 
 | 要素 | トークン名: Category.color |
 | --- | --- |
-| ボタン | `CommonControls.ButtonFocused` |
+| Button | `CommonControls.ButtonFocused` |
 | ボタンの境界線 | `CommonControls.ButtonBorderFocused` |
 
 ### <a name="check-box-controls"></a>チェック ボックス コントロール
@@ -1868,7 +1868,7 @@ Visual Studio は、タグ付けをサポートしています。タグ付けに
 | --- | --- |
 | ...タグ付けをサポートする UI。 | ...その他の種類の UI。 |
 
-#### <a name="tags"></a>Tags
+#### <a name="tags"></a>タグ
 
 **タグ: 既定の状態**
 

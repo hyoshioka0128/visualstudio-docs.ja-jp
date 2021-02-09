@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a6226b0d3cc2441a509c16b2e4672a766f3329
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926860"
 ---
 # <a name="sccadd-function"></a>SccAdd 関数
 この関数は、ソース管理システムに新しいファイルを追加します。
@@ -81,7 +81,7 @@ SCCRTN SccAdd(
 |SCC_I_RELOADFILE|ファイルまたはプロジェクトを再度読み込む必要があります。|
 |SCC_E_FILENOTEXIST|ローカルファイルが見つかりませんでした。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  通常は、 `fOptions` ここでは配列で置き換えられ、 `pfOptions` ファイルごとに1つのオプションが指定され `LONG` ます。 これは、ファイルの種類がファイルによって異なる場合があるためです。
 
 > [!NOTE]
@@ -89,7 +89,7 @@ SCCRTN SccAdd(
 
  配列で使用されるフラグの一覧を次に示し `pfOptions` ます。
 
-|オプション|値|説明|
+|オプション|値|意味|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|ソース管理プラグインは、ファイルの種類を検出する必要があります。|
 |SCC_FILETYPE_TEXT|0x01|ASCII テキストファイルを示します。|
@@ -100,5 +100,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|ファイルを、UTF16 リトルエンディアン形式で Unicode テキストとして扱います。|
 |SCC_FILETYPE_UTF16BE|0x40|は、ファイルを UTF16 ビッグエンディアン形式の Unicode テキストとして扱います。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

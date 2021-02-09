@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925758"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML スキーマの条件付き属性
 条件付き属性は、すべてのリストおよび項目に適用できます。 論理演算子と記号の展開式は、true または false に評価されます。 True の場合、関連付けられているリストまたは項目が結果の出力に含まれます。
@@ -38,7 +38,7 @@ ms.locfileid: "97863715"
 |!|論理 NOT|
 |\<, >, \<=, >=, ==, !=|関係と比較|
 |および|Boolean|
-|または|Boolean|
+|or|Boolean|
 
 ## <a name="examples"></a>例
 

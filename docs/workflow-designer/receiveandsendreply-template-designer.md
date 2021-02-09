@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f11caa831ca3de0684dd49e46a37620eaa6e435
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6bc86aed1e135f369d771a9ac47513c4eb28ce25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926533"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply テンプレート デザイナー
 
@@ -53,11 +53,11 @@ ms.locfileid: "96996215"
 | <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | メッセージのアクション ヘッダーを指定します。 明示的に設定されていない場合、その値の既定値は次のようになります。<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` |
 | <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | False | 応答メッセージを送信する前にワークフロー サービス インスタンスを永続化するかどうかを指定します。 既定値は **false** です。 |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [受信](../workflow-designer/receive-activity-designer.md)
+- [受け取れ](../workflow-designer/receive-activity-designer.md)
 - [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

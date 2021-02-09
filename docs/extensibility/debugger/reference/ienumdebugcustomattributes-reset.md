@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e0db6518-5a71-4adb-a407-4d2ac7a3e369
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 061d67e628974b001f74d81675d8dcba45968678
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8879b910de378ae4358ca092ee2c4b3ab6204bfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929250"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 列挙のシーケンスを最初にリセットします。
@@ -38,7 +38,7 @@ int Reset();
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドが呼び出された後 [、次のメソッドを](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md) 呼び出すと、列挙体の最初の要素が返されます。
 
 ## <a name="see-also"></a>関連項目

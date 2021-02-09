@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b423ee2cb95ad55296c452cfdc4b891ee4cd26a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926120"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 このインターフェイスは、実行中のプロセスとそのプログラムを表します。 このインターフェイスは、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスのいくつかのメソッドに代わるものとして存在します。 プロセス内のすべてのプログラムを制御できます。
@@ -54,7 +54,7 @@ IDebugProcess3 : IDebugProcess2
 |[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|このプロセスの ENC 状態を取得します。<br /><br /> カスタムポート供給業者がこのメソッドを実装していません (常にを返す必要があり `E_NOTIMPL` ます)。|
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|使用可能なデバッグエンジンの一意の識別子の配列を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
@@ -62,6 +62,6 @@ IDebugProcess3 : IDebugProcess2
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

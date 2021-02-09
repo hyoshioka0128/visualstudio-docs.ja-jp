@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ea4874effcba4ee948f921ae9bf91f145b661f4f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1e21a876fd2af04523ae205882463b0f8e0e3f3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928888"
 ---
 # <a name="debug-office-projects"></a>Office プロジェクトのデバッグ
   Office プロジェクトのデバッグは、他の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] プロジェクトに使用するのと同じ Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tools を使用して実行できます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ブレークポイントの挿入や [ **ローカル** ] ウィンドウでの変数の表示など、デバッガーの機能は、Office プロジェクトをデバッグするときにも使用できます。 デバッグツールの詳細について [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] は、「 [Visual Studio でのデバッグ](../debugger/debugger-feature-tour.md)」を参照してください。

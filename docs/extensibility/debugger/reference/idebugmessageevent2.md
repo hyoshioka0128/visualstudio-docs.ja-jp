@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180162988cbb09f98b7fc2e8f33f6b5d0ed322ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928264"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 このインターフェイスは、ユーザーからの応答を必要とするメッセージを Visual Studio に送信するために、デバッグエンジン (DE) によって使用されます。
@@ -51,7 +51,7 @@ IDebugMessageEvent2 : IUnknown
 
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)インターフェイスを使用して、ユーザーからの応答を必要としないメッセージを Visual Studio に送信します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -59,7 +59,7 @@ IDebugMessageEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)

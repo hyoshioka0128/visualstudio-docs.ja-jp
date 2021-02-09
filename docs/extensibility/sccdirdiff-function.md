@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929213"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 関数
 この関数は、クライアントディスク上の現在のローカルディレクトリと、ソース管理下にある対応するプロジェクトの相違点を表示します。
@@ -69,7 +69,7 @@ SCCRTN SccDirDiff(
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 |SCC_E_FILENOTEXIST|ローカルディレクトリが見つかりませんでした。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、指定されたディレクトリに対する変更の一覧をユーザーに表示するようにソース管理プラグインに指示するために使用されます。 プラグインによって、独自のウィンドウが選択された形式で開き、ディスク上のユーザーのディレクトリとバージョン管理下の対応するプロジェクトの違いが表示されます。
 
  プラグインがディレクトリの比較をサポートしている場合は、[クイック差分] オプションがサポートされていない場合でも、ファイル名に基づいたディレクトリの比較をサポートする必要があります。
@@ -85,5 +85,5 @@ SCCRTN SccDirDiff(
 > [!NOTE]
 > この関数では、 [Sccdiff](../extensibility/sccdiff-function.md)と同じコマンドフラグが使用されます。 ただし、ソース管理プラグインは、ディレクトリの "クイック差分" 操作をサポートしないことを選択する場合があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

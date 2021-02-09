@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926047"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio ユーザー エクスペリエンス ガイドライン
 Visual Studio の新機能を設計する場合は、Visual Studio のユーザーエクスペリエンスガイドラインに従ってください。 これらのガイドラインには、新しいユーザーインターフェイス (UI) の設計者が開発環境内でシームレスかつ一貫したユーザーエクスペリエンスを作成できるように、一般的なユーザーモデルと相互作用パターンに関する情報が含まれています。

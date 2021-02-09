@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resizing in Excel
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 043def019d30ee629e672a081cd5aea73bca4304
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1e3ba042f5adda5b41e434e37e0cc7ea25725fa6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927692"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>方法: NamedRange コントロールのサイズを変更する
   <xref:Microsoft.Office.Tools.Excel.NamedRange> コントロールのサイズは Microsoft Office Excel ドキュメントにコントロールを追加するときに設定できますが、後でサイズの変更が必要になる場合があります。

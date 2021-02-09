@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927406"
 ---
 # <a name="trusted-application-deployment-overview"></a>信頼されたアプリケーションの配置の概要
 このトピックでは、信頼されたアプリケーションの配置テクノロジを使用して、昇格されたアクセス許可を持つ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを配置する方法の概要を示します。
@@ -36,7 +36,7 @@ ms.locfileid: "94350492"
 ## <a name="trusted-application-deployment-basics"></a>信頼されたアプリケーションの配置の基本
  次の表は、信頼されたアプリケーションの配置に関連するオブジェクトおよびロールを示しています。
 
-|オブジェクトまたはロール|説明|
+|オブジェクトまたはロール|Description|
 |--------------------|-----------------|
 |administrator|クライアント コンピューターの更新と保守を担当する組織エンティティです。|
 |信頼マネージャー|クライアント アプリケーションに対するセキュリティ処理を実施する、共通言語ランタイム (CLR) 内のサブシステムです。|
@@ -79,7 +79,7 @@ ms.locfileid: "94350492"
 
 - <xref:System.Security.Cryptography?displayProperty=fullName> 名前空間。
 
-- *CertMgr.exe* 。これは、Internet Explorer のコンポーネントであるため、Windows 98 以降の全バージョンに含まれています。 詳細については、「 [Certmgr.exe (証明書マネージャーツール)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)」を参照してください。
+- *CertMgr.exe*。これは、Internet Explorer のコンポーネントであるため、Windows 98 以降の全バージョンに含まれています。 詳細については、「 [Certmgr.exe (証明書マネージャーツール)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool)」を参照してください。
 
 ### <a name="create-a-clickonce-application"></a>ClickOnce アプリケーションを作成する
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションとは、アプリケーションを記述し、インストールパラメーターを提供するマニフェストファイルと組み合わされた .NET Framework クライアントアプリケーションのことです。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の **[発行]** コマンドを使用すると、開発したプログラムを [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]アプリケーションに変換できます。 または、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] に含まれているツールを使用して、 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]配置に必要なすべてのファイルを生成することもできます。 配置の詳細な手順につい [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ては、「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。

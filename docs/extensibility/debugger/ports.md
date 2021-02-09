@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606561"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927185"
 ---
-# <a name="ports"></a>Port
+# <a name="ports"></a>ポート
 デバッガーアーキテクチャでは、 *ポート* は次のようになります。
 
 - は、サーバーで実行されている一連のプロセスのコンテナーです。 たとえば、ポートは、シリアルケーブルまたはネットワークに接続されていない非 DCOM マシンへの、Windows CE ベースのデバイスへの接続を表します。 ローカルポートと呼ばれる1つの特殊なポートには、ローカルコンピューター上で実行されているすべてのプロセスが含まれます。
@@ -35,7 +35,7 @@ ms.locfileid: "96606561"
 
 ## <a name="see-also"></a>関連項目
 - [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)
-- [処理](../../extensibility/debugger/processes.md)
+- [プロセス](../../extensibility/debugger/processes.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)

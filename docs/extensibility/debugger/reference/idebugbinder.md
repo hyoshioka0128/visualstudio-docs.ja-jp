@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcdec19c4667356edaf9e057c86ddc24baf747b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735970"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925121"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IDebugBinder : IUnknown
 
 |Method|説明|
 |------------|-----------------|
-|[Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)|シンボルの現在の値を格納しているメモリコンテキストまたはオブジェクトを取得します。|
+|[束縛](../../../extensibility/debugger/reference/idebugbinder-bind.md)|シンボルの現在の値を格納しているメモリコンテキストまたはオブジェクトを取得します。|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|オブジェクトの実行時の型を決定します。|
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|オブジェクトの場所またはメモリアドレスをメモリコンテキストに変換します。|
 |[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|関数パラメーターの作成に使用される [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) オブジェクトを取得します。|
@@ -51,7 +51,7 @@ IDebugBinder : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、解析ツリーの式エバリュエーターによって使用されるオブジェクトを返します。 式エバリュエーターは、シンボルプロバイダーを使用して式を解析し、式のシンボルを [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)のインスタンスに変換します。これにより、ソースコード内の型と場所について、各シンボルが記述されます。 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)メソッドは、 `IDebugField` オブジェクトを[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトに変換します。このオブジェクトは、シンボル型をメモリ内の実際の値に接続またはバインドします。 これらの `IDebugObject` オブジェクトは、後で評価できるように解析ツリーに格納されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

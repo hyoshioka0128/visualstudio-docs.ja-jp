@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25086724f1fde63737275aa7995f532f119bbf82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93b2d9176af4fe3a5a91e76e7f8890b8a4e3d79f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929246"
 ---
 # <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
 列挙シーケンス内の指定された数のカスタム属性をスキップします。
@@ -28,7 +28,7 @@ ms.locfileid: "80717142"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT Skip ( 
+HRESULT Skip ( 
    ULONG celt
 );
 ```
@@ -46,7 +46,7 @@ int Skip(
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 `S_FALSE` `celt` が残りの要素の数より大きい場合はを返します。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  が、 `celt` 残りの要素の数よりも大きい値を指定した場合、列挙は終了に設定され、 `S_FALSE` が返されます。
 
 ## <a name="see-also"></a>関連項目

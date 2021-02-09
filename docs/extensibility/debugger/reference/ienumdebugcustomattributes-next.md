@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 08228fe4a630eac37c38f4eb247dc91678d8e2e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2eefa444d1832e4f66aac161636177994bd4a51f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717237"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929263"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 列挙シーケンス内の指定された数のカスタム属性を取得します。
@@ -28,7 +28,7 @@ ms.locfileid: "80717237"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT Next ( 
+HRESULT Next ( 
    ULONG      celt,
    CODE_PATH* rgelt,
    ULONG*     pceltFetched

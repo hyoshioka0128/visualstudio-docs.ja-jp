@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c06ddf3d87c88003ad227edfbe3437a342667b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1323af9d9d673e3d452882adff95b74213d7ad57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929277"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 列挙子内のカスタム属性の数を取得します。
@@ -28,7 +28,7 @@ ms.locfileid: "80717243"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetCount( 
+HRESULT GetCount( 
    ULONG* pcelt
 );
 ```
@@ -46,7 +46,7 @@ int GetCount(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドは `Next` 、、、、およびのみを実装する必要があることを指定する、慣例的な COM 列挙インターフェイスの一部ではありません `Clone` `Skip` `Reset` 。
 
 ## <a name="see-also"></a>関連項目

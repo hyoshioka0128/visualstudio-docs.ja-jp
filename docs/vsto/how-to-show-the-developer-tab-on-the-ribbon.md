@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4dc38b941d27cab0653b923ddd03ba8b78eeab58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 081d6740aa31a31173b12e467b1b8e32a074604a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927718"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>方法: リボンに [開発] タブを表示する
   Office アプリケーションのリボンにある [ **開発者** ] タブにアクセスするには、既定では表示されないため、このタブを表示するように構成する必要があります。 たとえば、Word のドキュメント レベルのカスタマイズに <xref:Microsoft.Office.Tools.Word.GroupContentControl> を追加しようとする場合、このタブを表示する必要があります。

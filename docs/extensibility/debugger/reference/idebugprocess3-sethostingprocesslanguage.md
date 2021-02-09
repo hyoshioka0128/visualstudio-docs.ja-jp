@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926261"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 このメソッドは、プロセスがホストされる言語を設定します。 この言語は、適切な式エバリュエーターを読み込むために、デバッグエンジン (DE) によって使用されます。
@@ -28,8 +28,8 @@ ms.locfileid: "80723568"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetHostingProcessLanguage(
-   REFGUID guidLang
+HRESULT SetHostingProcessLanguage(
+   REFGUID guidLang
 );
 ```
 

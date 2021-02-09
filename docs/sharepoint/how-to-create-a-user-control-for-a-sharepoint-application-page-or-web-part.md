@@ -13,17 +13,17 @@ helpviewer_keywords:
 - user controls [SharePoint development in Visual Studio], adding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbaeaff14d365f41bff73c29e678a08130b03dc0
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 43386f3ba450058d6aaf8ab180e331d2f303a235
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925585"
 ---
-# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>方法: SharePoint アプリケーション ページまたは Web パーツのユーザー コントロールを作成する
+# <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>方法: SharePoint アプリケーションページまたは web パーツのユーザーコントロールを作成する
   SharePoint ソリューション向けの独自の機能を備えたカスタム ユーザー コントロールを作成し、その機能をプロジェクト内で再利用することができます。 ユーザー コントロールは、Web パーツまたはアプリケーション ページに含めることができます。他の ASP.NET コントロールや SharePoint コントロールを追加し、コントロールのプロパティとメソッドを定義することもできます。 ユーザーコントロールの詳細については、「SharePoint で web パーツまたはアプリケーションページと[ユーザーコントロールおよびサーバーコントロール](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)[の再利用可能なコントロールを作成](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)する」を参照してください。
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>SharePoint のユーザー コントロールを作成するには
@@ -34,7 +34,7 @@ ms.locfileid: "94903677"
 
 2. **ソリューション エクスプローラー** で、プロジェクト ノードを選択します。
 
-3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+3. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
      **[新しい項目の追加]** ダイアログ ボックスが開きます。
 

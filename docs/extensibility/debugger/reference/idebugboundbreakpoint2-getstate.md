@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: a40a8382-295e-4916-aae6-ffe3a9cd3f2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3a8717dd840836a093325bae40e9dec89e5d0bb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927120"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 このバインドされたブレークポイントの状態を取得します。
@@ -29,13 +29,13 @@ ms.locfileid: "80735477"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetState( 
+HRESULT GetState( 
     BP_STATE* pState
 );
 ```
 
 ```csharp
-int GetState( 
+int GetState( 
     out enum_BP_STATE pState
 );
 ```
@@ -48,7 +48,7 @@ int GetState( 
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)

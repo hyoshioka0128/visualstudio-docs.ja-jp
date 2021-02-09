@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 431f1d5f81827b47b57a53dbe411a2a7e8a57941
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 201f6e7845f1294892836de4cca24195fb0f1596
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672334"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928238"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 要素 (Visual Studio 項目テンプレート)
 項目テンプレートに含まれるファイルを指定します。
@@ -72,7 +72,7 @@ ms.locfileid: "94672334"
 
  `string`テンプレート *.zip* ファイル内のファイルの名前を表す。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `ProjectItem` は、の省略可能な子です `TemplateContent` 。
 
  `TargetFileName`属性を使用すると、パラメーターを使用してファイルの名前を変更できます。 たとえば、 *myfile.txt* ファイルがテンプレート *.zip* ファイルのルートディレクトリに存在するが、[ **新しい項目の追加** ] ダイアログボックスでユーザーが指定したファイル名に基づいてファイル名を指定する場合は、次の XML を使用します。
