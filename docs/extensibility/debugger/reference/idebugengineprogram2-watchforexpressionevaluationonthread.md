@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae9e10da02ab0bbef6be0fed5b9d505bf1b3e268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892672"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 プログラムが停止している場合でも、指定したスレッドで式の評価を実行できるようにします (または禁止します)。
@@ -30,7 +30,7 @@ ms.locfileid: "90036120"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT WatchForExpressionEvaluationOnThread( 
+HRESULT WatchForExpressionEvaluationOnThread( 
    IDebugProgram2*       pOriginatingProgram,
    DWORD                 dwTid,
    DWORD                 dwEvalFlags,
@@ -40,7 +40,7 @@ HRESULT WatchForExpressionEvaluationOnThread( 
 ```
 
 ```csharp
-int WatchForExpressionEvaluationOnThread( 
+int WatchForExpressionEvaluationOnThread( 
    IDebugProgram2       pOriginatingProgram,
    uint                  dwTid,
    uint                  dwEvalFlags,
@@ -68,12 +68,12 @@ int WatchForExpressionEvaluationOnThread( 
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  セッションデバッグマネージャー (SDM) が、パラメーターで識別されるプログラムに対して、式を評価するように要求すると `pOriginatingProgram` 、このメソッドを呼び出すことによって、添付されている他のすべてのプログラムに通知します。
 
  1つのプログラムでの式の評価では、関数の評価やプロパティの評価により、コードが別のプログラムで実行される場合があり `IDispatch` ます。 このため、このメソッドでは、このプログラムでスレッドが停止していても、式の評価を実行して完了することができます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

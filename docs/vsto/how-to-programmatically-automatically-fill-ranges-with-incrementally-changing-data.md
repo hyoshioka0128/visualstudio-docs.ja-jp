@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892074"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>オブジェクトのメソッドを使用すると、 <xref:Microsoft.Office.Interop.Excel.Range> ワークシートの範囲に値を自動的に入力できます。 多くの場合、メソッドを使用して、 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 範囲内の値を段階的に増加または減少させることができます。 列挙から省略可能な定数を指定することにより、動作を指定でき <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> ます。
