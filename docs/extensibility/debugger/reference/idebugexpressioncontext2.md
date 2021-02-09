@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 577fdaae-4b2d-4112-9839-ab899535fa6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344ae287b3784ceca87fbbab09ad2b2e0a304205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92e2561d28c3d4c7133208c78b9a492bc2614fd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901657"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 このインターフェイスは、式の評価のコンテキストを表します。
@@ -47,7 +47,7 @@ IDebugExpressionContext2 : IUnknown
 
  プログラムが停止されると、セッションデバッグマネージャー (SDM) は、 [enumframe info](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)を呼び出すことで、DE からスタックフレームを取得します。 次に、SDM は [Get式コンテキスト](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) を呼び出して、インターフェイスを取得し `IDebugExpressionContext2` ます。 この後に [Parsetext](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) を呼び出して、評価の準備ができている解析済みの式を表す [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスを作成します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -55,6 +55,6 @@ IDebugExpressionContext2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
