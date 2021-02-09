@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c7a25246f42d288020481330fe60e312849862d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728756"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869766"
 ---
 # <a name="idebugfield"></a>IDebugField
 このインターフェイスは、フィールド、つまりシンボルまたは型の説明を表します。
@@ -62,7 +62,7 @@ weather stormy;
 
  フィールドがシンボルまたは型を表すかどうかを判断するには、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) を呼び出し、 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) の結果を調べます。 ビットが設定されている場合、 `FIELD_KIND_TYPE` フィールドは型であり、ビットが設定されている場合 `FIELD_KIND_SYMBOL` は記号になります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

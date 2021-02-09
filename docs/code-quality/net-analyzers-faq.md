@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis FAQ
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d581ef60ebfe9ff5aeceae4c16ee4294eae5d850
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 951e9b951f1d90077fe29506e9c288fb19f2d5ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867764"
 ---
 # <a name="frequently-asked-questions-about-legacy-fxcop-and-net-analyzers"></a>レガシ FxCop と .NET アナライザーに関してよく寄せられる質問
 
@@ -30,11 +30,11 @@ ms.locfileid: "96112178"
 
 ## <a name="whats-the-difference-between-fxcop-analyzers-and-net-analyzers"></a>FxCop アナライザーと .NET アナライザーの違いは何ですか。
 
-FxCop アナライザーと .NET アナライザーはどちらも、FxCop CA 規則の .NET Compiler Platform ("Roslyn") アナライザーの実装を参照します。 Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 [FxCop アナライザーから .net analyzer に移行することを](migrate-from-fxcop-analyzers-to-net-analyzers.md)検討してください。
+FxCop アナライザーと .NET アナライザーはどちらも、FxCop CA 規則の .NET Compiler Platform ("Roslyn") アナライザーの実装を参照します。 Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 [FxCop アナライザーから .net analyzer に移行することを](migrate-from-fxcop-analyzers-to-net-analyzers.md)検討してください。
 
 ## <a name="does-the-run-code-analysis-command-run-net-analyzers"></a>[コード分析の実行] コマンドで .NET アナライザーを実行しますか?
 
-Visual Studio 2019 16.5 リリースより前のバージョンでは、[実行コード分析の **分析**] を選択すると  >  **Run Code Analysis**、従来の分析が実行されます。 Visual Studio 2019 16.5 を起動し、[ **コード分析の実行** ] メニューオプションを選択すると、選択したプロジェクトまたはソリューションに対して Roslyn ベースのアナライザーが実行されます。 .NET アナライザーがインストールされている場合は、それらも実行されます。 詳細については、「 [方法: マネージコードのコード分析を手動で実行する](how-to-run-code-analysis-manually-for-managed-code.md)」を参照してください。
+Visual Studio 2019 16.5 リリースより前のバージョンでは、[実行コード分析の **分析**] を選択すると  >  、従来の分析が実行されます。 Visual Studio 2019 16.5 を起動し、[ **コード分析の実行** ] メニューオプションを選択すると、選択したプロジェクトまたはソリューションに対して Roslyn ベースのアナライザーが実行されます。 .NET アナライザーがインストールされている場合は、それらも実行されます。 詳細については、「 [方法: マネージコードのコード分析を手動で実行する](how-to-run-code-analysis-manually-for-managed-code.md)」を参照してください。
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild プロジェクト プロパティはアナライザーを実行しますか?
 

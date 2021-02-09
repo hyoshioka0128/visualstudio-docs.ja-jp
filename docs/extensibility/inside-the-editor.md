@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869545"
 ---
 # <a name="inside-the-editor"></a>エディター内
 
@@ -320,7 +320,7 @@ IntelliSense では、ステートメント入力候補、シグネチャヘル�
 
 ステートメント入力候補には、メソッド名、XML 要素、およびその他のコーディング要素やマークアップ要素に対して候補となる候補のポップアップリストが表示されます。 一般に、ユーザージェスチャは、完了セッションを呼び出します。 このセッションでは、候補となる候補の一覧が表示されます。ユーザーはこの一覧を選択するか、一覧を無視することができます。 は <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> 、を作成およびトリガーする役割を担い <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> ます。 は、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> セッションの完了項目のを計算します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)
 - [エディターのインポート](../extensibility/editor-imports.md)

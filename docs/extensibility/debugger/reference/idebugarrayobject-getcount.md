@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7931f3f7-033c-4bf8-8abd-95183952ebb0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d5e322b7bcd5238335c74caa21989f1f1962ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9750b2982ad0b2d70375fe0519a9fd888bcac8a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870221"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 配列内の要素の数を取得します。
@@ -28,7 +28,7 @@ ms.locfileid: "80736201"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetCount( 
+HRESULT GetCount( 
    DWORD* pdwElements
 );
 ```
