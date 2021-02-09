@@ -9,18 +9,18 @@ helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger_V7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0593a2ee8c519169bd8cb2eb23a83c4f5f3506a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898620"
 ---
 # <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -31,7 +31,7 @@ ms.locfileid: "80722114"
 
 ```cpp
 HRESULT DetachDebugger_V7 (
-   void 
+   void 
 );
 ```
 
@@ -43,7 +43,7 @@ int DetachDebugger_V7 ();
 
 実装は常にを返す必要があり `E_NOTIMPL` ます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 > [!WARNING]
 > Visual Studio 2005 の時点では、このメソッドは使用されなくなり、常にを返す必要があり `E_NOTIMPL` ます。

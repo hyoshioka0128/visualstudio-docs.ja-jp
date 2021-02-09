@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 16aad1ff-ad34-4394-a2e4-5621374a7729
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 028ee16e7b9c5a30effc683494f68b2bd4eb604f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbf8149b0689921c80ed148e11ad61524d3b57b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898589"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 プログラムをホストしているプロセスの名前を取得します。
@@ -52,7 +52,7 @@ int GetHostName (
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例は、IDebugProgramNode2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) この例では、パラメーターを無視して、 `dwHostNameType` モジュールのファイルパスの基本名から取得したプログラムの名前のみを返します。
+次の例は、IDebugProgramNode2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [](../../../extensibility/debugger/reference/idebugprogramnode2.md) この例では、パラメーターを無視して、 `dwHostNameType` モジュールのファイルパスの基本名から取得したプログラムの名前のみを返します。
 
 ```cpp
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {

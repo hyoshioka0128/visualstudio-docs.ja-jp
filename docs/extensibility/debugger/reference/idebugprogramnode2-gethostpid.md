@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1257bda23bcdfaceb58d1d087ae2848be8f969b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5dc11dbbe8845bac125942bc3825ecdf5dacdb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898603"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
 プログラムをホストしているプロセスのシステムプロセス識別子を取得します。
@@ -28,13 +28,13 @@ ms.locfileid: "80722038"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetHostPid ( 
+HRESULT GetHostPid ( 
    AD_PROCESS_ID * pdwHostPid
 );
 ```
 
 ```csharp
-int GetHostPid ( 
+int GetHostPid ( 
    out AD_PROCESS_ID pdwHostPid
 );
 ```
@@ -47,7 +47,7 @@ int GetHostPid ( 
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
- 次の例は、IDebugProgramNode2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+ 次の例は、IDebugProgramNode2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {

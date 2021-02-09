@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 289609c93cf0e58eb44500bff135282d01212bbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897227"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 このインターフェイスは、デバッグ対象のプログラムがステップイン、ステップオーバー、またはソースコードまたはステートメントまたは命令の行からのステップアウトを完了すると、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -34,10 +34,10 @@ IDebugStepCompleteEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
  DE は、このイベントオブジェクトを作成して送信し、ステップ操作の完了を報告します。 イベントは、デバッグ対象のプログラムにアタッチされているときに、SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  手順が完了すると、デバッグ中のプログラムが1回だけ一時停止し、IDE によってすべてのウィンドウが更新されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -45,6 +45,6 @@ IDebugStepCompleteEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cf7599cf0fc37c16467c29c2b432f1f58b172fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a7b3f9096bbbef1c4de2161c6bb3b6a4c59e4d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897195"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 このメソッドは、ドキュメントコンテキストをデバッグアドレスの配列にマップします。
@@ -28,7 +28,7 @@ ms.locfileid: "80719436"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetAddressesFromContext( 
+HRESULT GetAddressesFromContext( 
    IDebugDocumentContext2* pDocContext,
    BOOL                    fStatmentOnly,
    IEnumDebugAddresses**   ppEnumBegAddresses,
@@ -61,7 +61,7 @@ int GetAddressesFromContext(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  ドキュメントコンテキストは、通常、ソース行の範囲を示します。 このメソッドは、これらの行に関連付けられているデバッグの開始アドレスと終了アドレスを提供します。 一部の言語では、複数の行にまたがるステートメントや、複数のステートメントを含む行が許可されます。 このメソッドには、デバッグアドレスを1つのステートメントに制限するフラグが用意されています。
 
  テンプレートの場合のように、1つのステートメントに複数のデバッグアドレスを含めることができます。
