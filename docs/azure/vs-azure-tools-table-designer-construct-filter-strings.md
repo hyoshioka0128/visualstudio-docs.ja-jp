@@ -2,17 +2,17 @@
 title: テーブル デザイナーのフィルター文字列の作成 | Microsoft Docs
 description: テーブル デザイナー用のフィルター文字列の作成
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846206"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>テーブル デザイナー用のフィルター文字列の作成
 ## <a name="overview"></a>概要
@@ -23,7 +23,7 @@ WCF Data Services は、 [Open Data Protocol](https://www.odata.org/) (OData) �
 ## <a name="comparison-operators"></a>比較演算子
 次の論理演算子は、全種類のプロパティでサポートされます。
 
-| 論理演算子 | 説明 | フィルター文字列の例 |
+| 論理演算子 | Description | フィルター文字列の例 |
 | --- | --- | --- |
 | eq |等しい |City eq 'Redmond' |
 | gt |より大きい |Price gt 20 |

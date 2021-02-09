@@ -17,20 +17,20 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], calendars
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 38bf1aa02d72621bc1bcc7376a15ea975feb0860
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0651b392563ff90cb349a3a8e737717bf375bea6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847584"
 ---
 # <a name="work-with-calendar-items"></a>予定表アイテムの操作
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> クラスには、予定表アイテム関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |予定を作成して受信者を追加します。|[方法: プログラムによって予定を作成する](../vsto/how-to-programmatically-create-appointments.md)|
 |定期的な予定のインスタンスを削除します。|[方法: プログラムによって予定を削除する](../vsto/how-to-programmatically-delete-appointments.md)|

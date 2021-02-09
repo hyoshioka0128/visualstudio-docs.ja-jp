@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b31c43187d1136f7a194c42749c430de6cd064a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3efe97518b0952c1207eac97fe9151f36c686f43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713396"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846557"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 スレッドに関する情報を取得するかどうかを指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80713396"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_THREADPROPERTY_FIELDS { 
+enum enum_THREADPROPERTY_FIELDS { 
    TPF_ID           = 0x0001,
    TPF_SUSPENDCOUNT = 0x0002,
    TPF_STATE        = 0x0004,
@@ -41,7 +41,7 @@ typedef DWORD THREADPROPERTY_FIELDS;
 ```
 
 ```csharp
-public enum enum_THREADPROPERTY_FIELDS { 
+public enum enum_THREADPROPERTY_FIELDS { 
    TPF_ID           = 0x0001,
    TPF_SUSPENDCOUNT = 0x0002,
    TPF_STATE        = 0x0004,
@@ -81,7 +81,7 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
  これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

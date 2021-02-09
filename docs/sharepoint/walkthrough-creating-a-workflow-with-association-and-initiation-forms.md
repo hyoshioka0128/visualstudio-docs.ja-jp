@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847740"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>チュートリアル: 関連付けフォームと開始フォームを持つワークフローの作成
   このチュートリアルでは、アソシエーションフォームと開始フォームの使用を組み込む基本的なシーケンシャルワークフローを作成する方法について説明します。 これらの ASPX フォームは、ワークフローが SharePoint 管理者 (関連付けフォーム) によって最初に関連付けられたとき、およびワークフローがユーザー (開始フォーム) によって開始されたときにワークフローに追加されるようにします。
@@ -68,7 +68,7 @@ ms.locfileid: "95970439"
 
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>SharePoint シーケンシャルワークフロープロジェクトを作成するには
 
-1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
+1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >   、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
 2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -84,7 +84,7 @@ ms.locfileid: "95970439"
 
 6. **ソリューション エクスプローラー** で、プロジェクト ノードを選択します。
 
-7. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+7. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 8. [ **Visual C#** ] または [ **Visual Basic** で、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -168,7 +168,7 @@ ms.locfileid: "95970439"
 
 1. **ソリューションエクスプローラー** で [ **workflow1.xaml** ] ノードを選択します。
 
-2. メニューバーで、[**プロジェクト**] [新しい項目の追加] の順に選択し  >  **Add New Item** 、[**新しい項目の追加**] ダイアログボックスを表示します。
+2. メニューバーで、[**プロジェクト**] [新しい項目の追加] の順に選択し  >   、[**新しい項目の追加**] ダイアログボックスを表示します。
 
 3. ダイアログボックスのツリービューで、(プロジェクトの言語に応じて) [ **Visual C#** ] または [ **Visual Basic**  ] を展開し、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
@@ -442,7 +442,7 @@ ms.locfileid: "95970439"
 
      このエラーが発生すると、タスクではなく履歴リストのエントリが作成されます。 [ワークフローの状態] ページの [ **ワークフローの履歴** ] セクションにエントリが表示されます。 History イベントの [ **結果** 」列にメッセージが記録されていることを確認します。 これには、 `logToHistoryListActivity1.MethodInvoking` 自動承認された金額を含む、イベントに入力されたテキストが含まれます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  ワークフローテンプレートを作成する方法の詳細については、次のトピックを参照してください。
 
 - SharePoint ワークフローの詳細については、「 [Windows Sharepoint Services のワークフロー](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))」を参照してください。

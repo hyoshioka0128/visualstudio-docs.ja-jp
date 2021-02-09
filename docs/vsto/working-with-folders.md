@@ -15,20 +15,20 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], folders
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1ca2d6c690e094884313bc128291dd7295103d54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6e2e3dcb6978225b5af493f3649e4b2fac47f3c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847506"
 ---
 # <a name="work-with-folders"></a>フォルダーの操作
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> クラスには、フォルダーへのアクセス、フォルダーの作成およびカスタマイズに使用するメソッドとプロパティが含まれています。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |**[受信トレイ]** 内のメッセージの件名に含まれる文字列を検索します。|[方法: プログラムによって特定のフォルダー内を検索する](../vsto/how-to-programmatically-search-within-a-specific-folder.md)|
 |フォルダーへの参照を取得し、内容を表示します。|[方法: プログラムによって名前を指定してフォルダーを取得する](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|

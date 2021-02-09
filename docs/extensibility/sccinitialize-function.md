@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e0a24fa1d222079fd5ee728c5f42a5386c75b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846362"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 関数
 この関数は、ソース管理プラグインを初期化し、統合開発環境 (IDE: integrated development environment) に機能と制限を提供します。
@@ -80,7 +80,7 @@ SCCRTN SccInitialize (
 |SCC_E_NOTAUTHORIZED|ユーザーは、指定された操作を実行できません。|
 |SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムが初期化されませんでした。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  IDE は、ソース管理プラグインを最初に読み込むときに、この関数を呼び出します。 これにより、IDE が呼び出し元の名前などの特定の情報をプラグインに渡すことができます。 また、IDE は、コメントの最大許容長やプラグインの機能など、特定の情報を取得します。
 
  は `ppvContext` ポインターをポイントし `NULL` ます。 ソース管理プラグインは、独自に使用する構造体を割り当て、にその構造体へのポインターを格納でき `ppvContext` ます。 IDE は、このポインターを他のすべての VSSCI API 関数に渡します。これにより、プラグインは、グローバルストレージに頼らずに、プラグインの複数のインスタンスをサポートすることなく、コンテキスト情報を使用できるようになります。 [Sccuninitialize](../extensibility/sccuninitialize-function.md)の解除が呼び出されたときに、この構造体の割り当てを解除する必要があります。
@@ -91,7 +91,7 @@ SCCRTN SccInitialize (
 
  パラメーターを指定すると、 `lpSccCaps` プラグインの機能を示す bitflags を格納する場所がソース管理プラグインに与えられます。 (機能のビットフラグの完全な一覧については、「 [機能フラグ](../extensibility/capability-flags.md)」を参照してください)。 たとえば、プラグインが呼び出し元から提供されるコールバック関数に結果を書き込むことを計画している場合、プラグインは機能ビット SCC_CAP_TEXTOUT を設定します。 これにより、IDE がバージョン管理の結果のウィンドウを作成するように通知されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

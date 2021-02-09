@@ -13,20 +13,20 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], common tasks in Visio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8835e3ef668e060798c515a89868d800ca737f34
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 49809b1d67ae8427ae1230987cb4ceb05e08fa44
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847467"
 ---
 # <a name="work-with-visio-documents"></a>Visio 図面を操作する
   このセクションのトピックでは、Microsoft Office Visio のオブジェクトモデルを使用して Office プロジェクトのドキュメントを操作する手順とコード例について説明します。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |空の Visio 図面、または既存の Visio テンプレート、ステンシル、またはドキュメントに基づく新しいドキュメントを作成します。|[方法: プログラムによって新しい Visio 図面を作成する](../vsto/how-to-programmatically-create-new-visio-documents.md)|
 |既存の Visio 図面を開き、読み取り/書き込み、読み取り専用、およびドッキングのオプションを指定します。|[方法: プログラムによって Visio 図面を開く](../vsto/how-to-programmatically-open-visio-documents.md)|

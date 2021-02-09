@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f933baed55216054ecfec3b3b4c29f15da652ba4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ddcab108891526b64a101a471aaff2370d072f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730056"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846856"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 ブレークポイントの種類を取得します。
@@ -50,7 +50,7 @@ int GetBreakpointType(
 このメソッドは、バインドに失敗したブレークポイントの型を返します。これにより、エラーのブレークポイントイベントが必要になります。
 
 ## <a name="example"></a>例
-次の例は、IDebugErrorBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugErrorBreakpointResolution` います。 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
+次の例は、IDebugErrorBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugErrorBreakpointResolution` います。 [](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

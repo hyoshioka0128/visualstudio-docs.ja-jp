@@ -14,20 +14,20 @@ helpviewer_keywords:
 - workbooks, ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 168774f031e992db62b4173bd8d27652aa21b82f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ce099c7cf531e4fa9acfe725959023e579577c8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847441"
 ---
 # <a name="work-with-ranges"></a>範囲の操作
   <xref:Microsoft.Office.Tools.Excel.NamedRange> クラスと <xref:Microsoft.Office.Interop.Excel.Range> クラスには、範囲関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |範囲にアクセスし、値を設定します。|[方法: プログラムによってコード内でワークシートの範囲を参照する](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)|
 |初期値に基づいて範囲に値を設定します。|[方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する](../vsto/how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md)|

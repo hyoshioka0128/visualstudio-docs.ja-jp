@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914791"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847831"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>チュートリアル: SharePoint の OData を表示する Silverlight web パーツの作成
   SharePoint 2010 では、OData によってリストデータが公開されます。 SharePoint では、OData サービスは RESTful サービス ListData .svc によって実装されます。 このチュートリアルでは、Silverlight アプリケーションをホストする SharePoint web パーツを作成する方法について説明します。 Silverlight アプリケーションは、ListData. svc を使用して SharePoint アナウンスリストの情報を表示します。 詳細については、「 [SharePoint FOUNDATION REST インターフェイス](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 」と「 [Open Data Protocol](https://www.odata.org/)」を参照してください。
@@ -42,7 +42,7 @@ ms.locfileid: "96914791"
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Silverlight アプリケーションと Silverlight web パーツを作成するには
 
-1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
+1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >   、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
 2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "96914791"
     > [!NOTE]
     > Visual Basic を使用している場合は、**ソリューションエクスプローラー** の上部にある [**すべてのファイルを表示**] アイコンをクリックして [**参照**] ノードを表示する必要があります。
 
-3. [**サービス参照の追加**] ダイアログボックスの [アドレス] ボックスに、SharePoint サイトの URL (など) を入力し、[実行] ボタンをクリックし **http://MySPSite** ます。 **Go**
+3. [**サービス参照の追加**] ダイアログボックスの [アドレス] ボックスに、SharePoint サイトの URL (など) を入力し、[実行] ボタンをクリックし **http://MySPSite** ます。 
 
      Silverlight が SharePoint OData サービス ListData .svc を検索すると、アドレスが完全なサービス URL に置き換えられます。 この例では、はに http://myserver なり http://myserver/_vti_bin/ListData.svc ます。
 
@@ -86,7 +86,7 @@ ms.locfileid: "96914791"
 
 5. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
-6. SharePoint サービスに基づいて新しいデータソースをプロジェクトに追加します。 これを行うには、メニューバーで [ **View**  >  **その他の Windows**  >  **データソース** の表示] を選択します。
+6. SharePoint サービスに基づいて新しいデータソースをプロジェクトに追加します。 これを行うには、メニューバーで [   >  **その他の Windows**  >  **データソース** の表示] を選択します。
 
      [ **データソース** ] ウィンドウには、タスク、お知らせ、カレンダーなど、利用可能なすべての SharePoint リストデータが表示されます。
 
