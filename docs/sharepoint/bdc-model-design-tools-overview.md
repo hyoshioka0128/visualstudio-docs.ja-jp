@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851687"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC モデルのデザインツールの概要
   Bdc デザイナー、[ **Bdc メソッドの詳細** ] ウィンドウ、および **bdc エクスプローラー** を使用して、ビジネスデータ接続 (bdc) モデルを設計できます。
@@ -53,14 +53,14 @@ ms.locfileid: "94850314"
 
  [ **BDC メソッドの詳細** ] ウィンドウで、Finder、特定の Finder、Creator、Updater、および削除子の各メソッドをすばやく生成できます。 これらのメソッドを生成すると、Visual Studio によって、パラメーター、インスタンス、型記述子などのメタデータがメソッドに追加されます。 このメタデータは、特定のシナリオを満たすように変更できます。
 
- [ **Bdc メソッドの詳細**] ウィンドウを開くには、メニューバーで [ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
+ [ **Bdc メソッドの詳細**] ウィンドウを開くには、メニューバーで [   >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
  [ **Bdc メソッドの詳細** ] ウィンドウでメソッドを表示するには、bdc デザイナーでエンティティを選択します。 選択したエンティティのメソッドが [ **BDC メソッドの詳細** ] ウィンドウに表示されます。 BDC デザイナーでエンティティを選択しない場合、[ **Bdc メソッドの詳細** ] ウィンドウに情報は表示されません。
 
  [ **BDC メソッドの詳細** ] ウィンドウでノードを展開するか折りたたんで、パラメーター、インスタンス、およびフィルター記述子を定義します。 **BDC エクスプローラー** を使用して、型記述子を定義します。
 
 ## <a name="bdc-explorer"></a>BDC エクスプローラー
- **BDC エクスプローラー** には、モデルを構成する要素が表示されます。 **Bdc エクスプローラー** を開くには、メニューバーで [ **View**  >  **その他の Windows**  >  **BDC エクスプローラー** の表示] を選択します。 モデルを参照するには、 **BDC エクスプローラー** で [ノード] を展開します。 各ノードは、モデルファイルの XML 内の要素を表します。
+ **BDC エクスプローラー** には、モデルを構成する要素が表示されます。 **Bdc エクスプローラー** を開くには、メニューバーで [   >  **その他の Windows**  >  **BDC エクスプローラー** の表示] を選択します。 モデルを参照するには、 **BDC エクスプローラー** で [ノード] を展開します。 各ノードは、モデルファイルの XML 内の要素を表します。
 
  **BDC エクスプローラー** でノードを選択すると、選択した各ノードのプロパティが [**プロパティ**] ウィンドウに表示されます。 これらのプロパティの多くは、モデルファイルの属性に対応しています。 **BDC エクスプローラー** の上部にある [検索] ボックスを使用して、モデルを検索できます。
 

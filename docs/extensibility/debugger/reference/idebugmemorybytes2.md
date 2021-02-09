@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56cb234e2295c5c9c08c2a2e9271e1c173524875
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9d4ee145d900a79a48db44f95a125e87bd10f67
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851245"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 このインターフェイスは、メモリのバイト数を表します。
@@ -48,7 +48,7 @@ IDebugMemoryBytes2 : IUnknown
 
  Visual Studio の **メモリビュー** は、 [getmemorybytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md) を呼び出し `IDebugMemoryBytes2` て、システムメモリにアクセスするためのインターフェイスを取得します。 アクセスするアドレスを取得するには、アドレスとして入力された式をメモリビューに解析し、 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) を使用して解析された式を評価して、インターフェイスを取得し `IDebugProperty2` ます。 [Getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)を呼び出すと、メモリアドレスを説明する[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)が返されます。 このメモリコンテキストは、 [readat](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) および [writeat](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)に渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -56,7 +56,7 @@ IDebugMemoryBytes2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)
 - [GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)
 - [GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)

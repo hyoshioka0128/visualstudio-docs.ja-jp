@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 5ce41bdf53ee55bfcbcec0cc2a2271ba9914aed8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850430"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851739"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint のエラーに関する追加情報
   トラブルシューティングの [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] トピックとパブリックフォーラムで、SharePoint ツールのエラーと警告のトラブルシューティングについて確認できます。
@@ -40,7 +40,7 @@ ms.locfileid: "94850430"
 ## <a name="other-resources"></a>その他のリソース
  次の表に、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint ツールのフォーラムと使用可能なその他のリソースを示します。
 
-|期間|定義|
+|用語|定義|
 |----------|----------------|
 |[SharePoint 開発](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|での SharePoint 開発に関する質問のためのフォーラムを提供 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] します。|
 |[Visual Studio フォーラム](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|に関する質問のためのフォーラムを提供 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] します。|

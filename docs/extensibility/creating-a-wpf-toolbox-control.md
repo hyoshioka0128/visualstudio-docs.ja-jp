@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851440"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>WPF ツールボックスコントロールの作成
 
@@ -33,7 +33,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. という名前の VSIX プロジェクトを作成 `MyToolboxControl` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、という名前の **WPF ツールボックスコントロール** 項目テンプレートを追加 `MyToolboxControl` します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [ **WPF ツールボックスコントロール**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolboxControl.cs* に変更します。
+2. プロジェクトが開いたら、という名前の **WPF ツールボックスコントロール** 項目テンプレートを追加 `MyToolboxControl` します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >   [ **WPF ツールボックスコントロール**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolboxControl.cs* に変更します。
 
     このソリューションには、ユーザーコントロール、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> コントロールを **ツールボックス** に追加する、および VSIX マニフェストの **VisualStudio ToolboxControl** Asset エントリが含まれるようになりました。
 
@@ -102,4 +102,4 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 3. *.Vsix* ファイルをネットワークまたは Web サイトにアップロードします。
 
-    ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは **Tools**  >  Visual Studio のツールの **拡張機能と更新プログラム** を使用して、コントロールをオンラインで検索し、インストールすることができます。
+    ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web サイトにアップロードした場合、他のユーザーは  >  Visual Studio のツールの **拡張機能と更新プログラム** を使用して、コントロールをオンラインで検索し、インストールすることができます。

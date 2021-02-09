@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 79e8d3dbc1dab865b2ab9048cea8d13c478f2a12
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b188d95e6478e488fc896b0622fb8d145ef2a741
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851609"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>サーバー エクスプローラーを使用して SharePoint 接続を参照する
   **サーバー エクスプローラー** でローカルの SharePoint 接続を参照できるようになりました。 この手法を使用すると、システム上の SharePoint サイトのコンポーネント間を移動できます。 リスト定義やコンテンツの種類などの SharePoint サイト コンポーネントは、**サーバー エクスプローラー** のツリー ビューで **[SharePoint 接続]** という名前のノードに表示されます。 **サーバー エクスプローラー** を表示するには、メニューバーで **[表示]**  >  **[サーバー エクスプローラー]** の順に選択します。 ショートカット メニューのコマンドを使用すると、SharePoint サイト コンポーネントの表示だけでなく、項目の削除、プロパティの表示、またはツリー ビューの更新を行うことができます。
