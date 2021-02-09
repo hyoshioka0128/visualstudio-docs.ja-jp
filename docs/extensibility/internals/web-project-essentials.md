@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf16582cdc9bba6529d237d74d56ebded299fb9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886874"
 ---
 # <a name="web-project-essentials"></a>Web プロジェクトの基本情報
 Web プロジェクトでは、Web アプリケーションを作成します。 Web プロジェクトを使用して、スマート Web ページを含む Web アプリケーションを作成できます。 スマート Web ページには、Web ページをオンデマンドでレンダリングするサーバー側コードがあります。
@@ -59,5 +59,5 @@ Web プロジェクトでは、Web アプリケーションを作成します。
 
   - エラーマーカー (赤の squigglies) は、常にコードエディターのプライマリバッファーに作成する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Web プロジェクト](../../extensibility/internals/web-projects.md)

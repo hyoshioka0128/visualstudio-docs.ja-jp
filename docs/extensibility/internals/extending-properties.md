@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887082"
 ---
 # <a name="extend-properties"></a>プロパティの拡張
 [ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **プロパティ** ] ウィンドウは、com コンポーネントと com + コンポーネントのユニバーサルプロパティブラウザーであり、すべての製品をサポートし [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 [ **プロパティ** ] ウィンドウでは、 `ITypeInfo` 型情報と com + メタデータを使用して、統合開発環境 (IDE) の他のウィンドウで現在選択されているオブジェクトのデザイン時プロパティを一覧表示します。

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888135"
 ---
 # <a name="test-area-7-share"></a>テスト領域 7: 共有
 このテスト領域では、 **共有** コマンドを使用して、場所間で項目を共有します。
@@ -60,5 +60,5 @@ ms.locfileid: "97487609"
 |読み込まれたプロジェクトにフォルダーを共有する— Recursive|1. 新しいプロジェクトを作成します。<br />2. ソース管理にソリューションを追加します。<br />3. プロジェクトを選択します。<br />4. [**共有**] ダイアログボックス (**ファイル**  ->  **ソース管理**  ->  **共有**) を開きます。<br />5. フォルダーを選択します。<br />6. フォルダーを再帰的にプロジェクトに共有します。|予期される動作は一般的です。|
 |あるプロジェクトから別のプロジェクトに複数のファイルを共有する|1. 複数のファイルを含む新しいプロジェクトを作成します。<br />2. ソース管理にソリューションを追加します。<br />3. ソリューションを閉じます。<br />4. 新しいソリューションに新しいプロジェクトを作成します。<br />5. ソリューションをソース管理に追加します。<br />6. プロジェクトを選択します。<br />7. [**共有**] ダイアログボックス (**ファイル**  ->  **ソース管理**  ->  **共有**) を開きます。<br />8. 以前に作成したプロジェクトの複数のファイルを現在開いているプロジェクトに共有します。|予期される動作は一般的です。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

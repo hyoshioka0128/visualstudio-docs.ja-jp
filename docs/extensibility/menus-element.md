@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc5621784579c295393d77c792013dd0c737871
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: e45fa38b5c5709de34b70dc311421acf76ca92d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886783"
 ---
 # <a name="menus-element"></a>Menus 要素
 VSPackage が実装するすべてのメニューとツールバーを定義します。
@@ -39,7 +39,7 @@ VSPackage が実装するすべてのメニューとツールバーを定義し�
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 

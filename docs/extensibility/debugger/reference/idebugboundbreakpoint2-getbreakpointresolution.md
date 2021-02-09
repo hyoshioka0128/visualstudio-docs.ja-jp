@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887342"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 このブレークポイントを説明するブレークポイントの解決を取得します。
@@ -29,13 +29,13 @@ ms.locfileid: "80735575"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetBreakpointResolution( 
+HRESULT GetBreakpointResolution( 
     IDebugBreakpointResolution2** ppBPResolution
 );
 ```
 
 ```csharp
-int GetBreakpointResolution( 
+int GetBreakpointResolution( 
     out IDebugBreakpointResolution2 ppBPResolution
 );
 ```
@@ -55,7 +55,7 @@ int GetBreakpointResolution( 
 [Getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)メソッドを呼び出して、ブレークポイントの解決がコードとデータのどちらであるかを判断します。
 
 ## <a name="example"></a>例
-次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

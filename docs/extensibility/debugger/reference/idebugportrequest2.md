@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44e0bc66d9f385a41f0f43af7217738e40e69126
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887121"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 このインターフェイスは、ポートを表します。 この説明は、ポートをポート供給業者に追加するために使用されます。
@@ -44,7 +44,7 @@ IDebugPortRequest2 : IUnknown
 ## <a name="remarks"></a>解説
  通常、デバッグエンジンは、ポート供給元とは通信せず、このインターフェイスを使用しません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -52,6 +52,6 @@ IDebugPortRequest2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)
 - [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md)

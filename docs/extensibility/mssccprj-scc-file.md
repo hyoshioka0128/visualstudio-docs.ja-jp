@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253482f840350ae1d3cf7ee83e03a88ace15a6cd
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f55e99d9df10ef2f96761a9436597d227cf0cd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863471"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886692"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC.SCC ファイル
 IDE を使用して Visual Studio ソリューションまたはプロジェクトをソース管理下に配置すると、IDE は2つの重要な情報を受け取ります。 この情報は、ソース管理プラグインから文字列の形式で取得されます。 これらの文字列 "/" は IDE に対して不透明ですが、プラグインによって使用され、バージョン管理でソリューションまたはプロジェクトを検索します。 通常、IDE では [Sccgetprojpath](../extensibility/sccgetprojpath-function.md)を呼び出してこれらの文字列を最初に取得し、次に [Sccopenproject](../extensibility/sccopenproject-function.md)への後続の呼び出しのためにソリューションまたはプロジェクトファイルに保存します。 ソリューションファイルとプロジェクトファイルに埋め込まれている場合、ユーザーがバージョン管理されているソリューションやプロジェクトファイルを分岐、分岐、またはコピーしても、"" 更新 "と" ProjName "の文字列は自動的に更新されません。 ソリューションファイルとプロジェクトファイルがバージョンコントロールの正しい位置を指していることを確認するには、ユーザーが文字列を手動で更新する必要があります。 文字列は不透明であるため、常に更新方法が明確であるとは限りません。

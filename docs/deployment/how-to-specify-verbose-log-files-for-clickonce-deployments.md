@@ -14,18 +14,18 @@ helpviewer_keywords:
 ms.assetid: 0807a28d-2e40-4a51-ab10-308d808ded6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da285cfef49bd495fbecf39131e49cacd0476a5
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 7adb711c77f4bb2dead3190d40065e148760b034
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887472"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>方法: ClickOnce 配置用の詳細ログ ファイルを指定する
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] すべての展開のアクティビティログファイルを保持します。 これらのログには、展開のインストール、初期化、更新、およびアンインストールに関する詳細が記録さ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] れます。 これらのログファイルへの書き込みの詳細を増やすには [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、レジストリエディター ( *regedit.exe* ) を使用して詳細レベルを指定します。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] すべての展開のアクティビティログファイルを保持します。 これらのログには、展開のインストール、初期化、更新、およびアンインストールに関する詳細が記録さ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] れます。 これらのログファイルへの書き込みの詳細を増やすには [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、レジストリエディター (*regedit.exe*) を使用して詳細レベルを指定します。
 
 > [!CAUTION]
 > レジストリエディターを誤って使用すると、重大な問題が発生し、オペレーティングシステムの再インストールが必要になることがあります。 問題が発生する可能性のあることを十分に認識したうえで利用してください。

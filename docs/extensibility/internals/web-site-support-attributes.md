@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9beee39ca6968b0922bc134fa21e0cde3d6dd3b6
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 452760974207c4ad30e18dd0c4917bcf7b7aa55d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886835"
 ---
 # <a name="web-site-support-attributes"></a>Web サイト サポートの属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイトプロジェクトを拡張して、Web プログラミング言語をサポートすることができます。 言語をに登録する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。これにより、言語を選択したときに [ **新しい Web サイト** ] ダイアログボックスにプロジェクトテンプレートが表示されるようになります。
@@ -56,5 +56,5 @@ public class PythonPackage : Package, IOleComponent
 
  IVsIntellisenseProject 実装は、コードを含む Web ページが要求されているがキャッシュされていない場合に、参照を処理し、言語コンパイラを呼び出します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Web サイト サポート](../../extensibility/internals/web-site-support.md)

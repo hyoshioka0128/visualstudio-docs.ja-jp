@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888447"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>方法: ClickOnce 配置 API を使用してアプリケーションの更新プログラムをプログラムで確認する
 ClickOnce には、アプリケーションを配置した後に更新する2つの方法が用意されています。 最初の方法では、特定の間隔で更新プログラムが自動的にチェックされるように ClickOnce 配置を構成できます。 2番目のメソッドでは、クラスを使用して、 <xref:System.Deployment.Application.ApplicationDeployment> ユーザー要求などのイベントに基づいて更新プログラムをチェックするコードを記述できます。
@@ -58,7 +58,7 @@ ClickOnce には、アプリケーションを配置した後に更新する2つ
 
 - 「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」で説明されているように Mage.exe を使用してアプリケーションを配置する手順に従います。 [ **配置オプション** ] タブで、[ **開始場所** ] フィールドをアプリケーションマニフェスト ClickOnce が更新プログラムをチェックするように設定します。 [ **更新オプション** ] タブで、[ **このアプリケーションは更新プログラムを確認する** ] チェックボックスをオフにします。
 
-## <a name="net-framework-security"></a>.NET Framework セキュリティ
+## <a name="net-framework-security"></a>.NET Framework のセキュリティ
  プログラムによる更新を使用するには、アプリケーションに完全信頼のアクセス許可が必要です。
 
 ## <a name="see-also"></a>関連項目

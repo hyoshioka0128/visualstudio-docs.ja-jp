@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 59ab4d0bb2a7aaa4b08f616ea0a99be85b521bb0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888174"
 ---
 # <a name="module_info"></a>MODULE_INFO
 特定のモジュール (DLL、EXE、またはアセンブリ) を記述します。
@@ -28,7 +28,7 @@ ms.locfileid: "80714311"
 ## <a name="syntax"></a>構文
 
 ```cpp
-typedef struct tagMODULE_INFO { 
+typedef struct tagMODULE_INFO { 
    MODULE_INFO_FIELDS dwValidFields;
    BSTR               m_bstrName;
    BSTR               m_bstrUrl;
@@ -45,7 +45,7 @@ typedef struct tagMODULE_INFO { 
 ```
 
 ```csharp
-public struct MODULE_INFO { 
+public struct MODULE_INFO { 
    public uint     dwValidFields;
    public string   m_bstrName;
    public string   m_bstrUrl;
@@ -103,7 +103,7 @@ public struct MODULE_INFO { 
 
  この構造は、[ **モジュール** ] ウィンドウに一覧表示されている各モジュールに対応しています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
