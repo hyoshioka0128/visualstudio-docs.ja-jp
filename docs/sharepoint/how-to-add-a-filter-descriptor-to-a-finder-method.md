@@ -14,15 +14,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], filter descriptors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4fe2da1bc6aefefb92fbd6f7d11613372b8b7742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879697"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>方法: Finder メソッドにフィルター記述子を追加する
   フィルター記述子を使用すると、モデルのコンシューマーは、実行前に値をメソッドに渡すことができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "96915428"
 
 2. [ **メソッドの詳細** ] ウィンドウで、パラメーターの型記述子を選択します。
 
-3. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
+3. メニューバーで、[   >  **プロパティウィンドウ** の表示] を選択します。
 
 4. [ **プロパティ** ] ウィンドウで、[ **型名** ] プロパティをフィルターに適したデータ型に設定します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "96915428"
 
      新しいフィルター記述子が [ **フィルター記述子** ノードの下に表示されます。
 
-7. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
+7. メニューバーで、[   >  **プロパティウィンドウ** の表示] を選択します。
 
 8. [ **プロパティ** ] ウィンドウで、[ **型** ] プロパティを選択します。
 
