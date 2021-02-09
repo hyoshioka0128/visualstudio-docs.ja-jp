@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], searching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fa569a2c301cb495f109a612d817937159c257c6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a9c7861698e678ca6d8332e3940c3ae49ff423f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877877"
 ---
 # <a name="how-to-programmatically-search-within-a-specific-folder"></a>方法: プログラムによって特定のフォルダー内を検索する
   このコード例では、メソッドとメソッドを使用して、 `Find` `FindNext` **受信トレイ** にある電子メールメッセージの件名フィールド内のテキストを検索します。 このメソッドでは、文字列フィルターを使用して、文字 T をテキストの開始文字として確認し `Subject` ます。

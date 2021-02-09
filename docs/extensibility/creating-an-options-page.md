@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877487"
 ---
 # <a name="create-an-options-page"></a>オプションページを作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "94973709"
 
 1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `MyToolsOptionsExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. という名前の Visual Studio パッケージ項目テンプレートを追加して、VSPackage を追加し `MyToolsOptionsPackage` ます。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加] ダイアログ** で、[ **visual C# 項目** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名をに変更 `MyToolsOptionsPackage.cs` します。 VSPackage を作成する方法の詳細については、「 [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)」を参照してください。
+2. という名前の Visual Studio パッケージ項目テンプレートを追加して、VSPackage を追加し `MyToolsOptionsPackage` ます。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加] ダイアログ** で、[ **visual C# 項目** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名をに変更 `MyToolsOptionsPackage.cs` します。 VSPackage を作成する方法の詳細については、「 [VSPackage を使用した拡張機能の作成](../extensibility/creating-an-extension-with-a-vspackage.md)」を参照してください。
 
 ### <a name="to-create-the-tools-options-property-grid"></a>ツールオプションのプロパティグリッドを作成するには
 
@@ -192,7 +192,7 @@ ms.locfileid: "94973709"
     }
     ```
 
-     フィールドは、 `optionsPage` 親インスタンスへの参照を保持し `OptionPageCustom` ます。 `Initialize`メソッドが `OptionString` **テキストボックス** に表示されます。 イベントハンドラーは、フォーカスが Textbox の外に出たときに、**テキストボックス** の現在の値をに書き込み `OptionString` ます。 **TextBox**
+     フィールドは、 `optionsPage` 親インスタンスへの参照を保持し `OptionPageCustom` ます。 `Initialize`メソッドが `OptionString` **テキストボックス** に表示されます。 イベントハンドラーは、フォーカスが Textbox の外に出たときに、**テキストボックス** の現在の値をに書き込み `OptionString` ます。 
 
 9. パッケージコードファイルで、プロパティのオーバーライドをクラスに追加して、 `OptionPageCustom.Window` `OptionPageCustom` のインスタンスを作成、初期化、および返すようにし `MyUserControl` ます。 クラスは次のようになります。
 
@@ -223,7 +223,7 @@ ms.locfileid: "94973709"
 
 10. プロジェクトをビルドして実行します。
 
-11. 実験用インスタンスで、[**ツール**] [オプション] の順にクリックし  >  **Options** ます。
+11. 実験用インスタンスで、[**ツール**] [オプション] の順にクリックし  >  ます。
 
 12. [ **マイカテゴリ]** 、[ **マイカスタム] ページ** の順に検索します。
 

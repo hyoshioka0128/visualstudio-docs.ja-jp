@@ -21,15 +21,15 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb13f8720bced2baa118dda1e55da3f52f1b9ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 55758f67c845cbf753d51ebfb94b87af6cf55cde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877630"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 配置でのセキュリティ、バージョン管理、およびマニフェストの問題
 
@@ -69,7 +69,7 @@ ms.locfileid: "94349374"
 
 マニフェストファイルで問題が発生する原因としては、単一引用符や二重引用符などの特殊文字を含むアプリケーションの名前を選択することが挙げられます。 アプリケーションの名前は id の一部です [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] では、特殊文字を含む id は現在解析されません。 アプリケーションのアクティブ化に失敗した場合は、名前にアルファベットと数字のみを使用していることを確認し、もう一度展開してみてください。
 
-配置マニフェストまたはアプリケーションマニフェストを手動で編集した場合は、意図せず破損している可能性があります。 マニフェストが破損していると、正しいインストールができなくなり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 実行時にこのようなエラーをデバッグするには、[ **ClickOnce エラー** ] ダイアログボックスの [ **詳細** ] をクリックし、ログのエラーメッセージを参照します。 ログには、次のいずれかのメッセージが表示されます。
+配置マニフェストまたはアプリケーションマニフェストを手動で編集した場合は、意図せず破損している可能性があります。 マニフェストが破損していると、正しいインストールができなくなり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 実行時にこのようなエラーをデバッグするには、[ **ClickOnce エラー** ] ダイアログボックスの [**詳細**] をクリックし、ログのエラーメッセージを参照します。 ログには、次のいずれかのメッセージが表示されます。
 
 - 構文エラーの説明、およびエラーが発生した行番号と文字位置。
 
