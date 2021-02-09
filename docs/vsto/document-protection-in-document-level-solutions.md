@@ -15,15 +15,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2898781a3603e7cb9582d246e4fa7edaaf6bddb9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddfe9d70cafc6acf7526c8819cb9ae3f46ea8022
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910550"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>ドキュメントレベルのソリューションにおけるドキュメントの保護
   ドキュメントレベルのプロジェクトで Microsoft Office Word および Excel Microsoft Office の保護機能を使用できます。 これらの機能は、承認されていないユーザーがドキュメントの保護された部分を変更できないようにします。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 92b5c1d323634bbb242cdccb54890908d5668803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911371"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; 要素 (ClickOnce アプリケーション)
 デプロイにデプロイされたアプリケーションを識別 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] します。
@@ -48,7 +48,7 @@ ms.locfileid: "94383210"
 |---------------|-----------------|
 |`Name`|必須。 アプリケーションの名前を識別します。<br /><br /> に `Name` 1 つまたは二重引用符などの特殊文字が含まれている場合、アプリケーションのアクティブ化に失敗する可能性があります。|
 |`Version`|必須。 アプリケーションのバージョン番号を次の形式で指定します。 `major.minor.build.revision`|
-|`publicKeyToken`|省略可能。 `SHA-1`アプリケーションまたはアセンブリに署名するときに使用する公開キーのハッシュ値の最後の8バイトを表す16文字の16進数文字列を指定します。 カタログの署名に使用される公開キーは、2048ビット以上である必要があります。<br /><br /> アセンブリに署名することをお勧めしますが、省略可能ですが、この属性は必須です。 アセンブリが署名されていない場合は、自己署名アセンブリから値をコピーするか、すべてゼロの "ダミー" 値を使用する必要があります。|
+|`publicKeyToken`|任意。 `SHA-1`アプリケーションまたはアセンブリに署名するときに使用する公開キーのハッシュ値の最後の8バイトを表す16文字の16進数文字列を指定します。 カタログの署名に使用される公開キーは、2048ビット以上である必要があります。<br /><br /> アセンブリに署名することをお勧めしますが、省略可能ですが、この属性は必須です。 アセンブリが署名されていない場合は、自己署名アセンブリから値をコピーするか、すべてゼロの "ダミー" 値を使用する必要があります。|
 |`processorArchitecture`|必須。 プロセッサを指定します。 有効な値は、 `msil` 32 ビット windows の場合はすべてのプロセッサ、64ビット windows の場合は、 `x86` `IA64` `Itanium` Intel 64 ビット Itanium プロセッサの場合はです。|
 |`language`|必須。 アセンブリの2つの部分言語コード (たとえば、) を識別し `en-US` ます。 この要素は `asmv2` 名前空間にあります。 指定されていない場合、既定値は `neutral` です。|
 
@@ -71,4 +71,4 @@ ms.locfileid: "94383210"
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md)
-- [\<assemblyIdentity> element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [\<assemblyIdentity> 要素](../deployment/assemblyidentity-element-clickonce-deployment.md)

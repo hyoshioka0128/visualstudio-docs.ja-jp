@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4d5d7244f70852dee29813834fc427c888df9c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912155"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>テストサーバーおよび運用サーバー用の ClickOnce アプリケーションを、署名せずに配置する
 この記事では、.NET Framework バージョン3.5 で導入された ClickOnce の機能について説明します。 clickonce マニフェストを再署名または変更することなく、複数のネットワークの場所から ClickOnce アプリケーションを配置できます。
@@ -45,7 +45,7 @@ ms.locfileid: "94382937"
 
  .NET Framework 3.5 で ClickOnce に加えられた変更により、サードパーティが ClickOnce アプリケーションを別の組織に提供し、それによってアプリケーションを独自のネットワークにデプロイできるようになります。
 
- この機能を利用するために、ClickOnce アプリケーションの開発者は、配置マニフェストからを除外する必要があり `deploymentProvider` ます。 この要件は、 `-providerUrl` Mage.exe で配置マニフェストを作成するときに引数を除外する必要があることを意味します。 または、MageUI.exe で配置マニフェストを生成している場合は、[ **アプリケーションマニフェスト** ] タブの [ **起動場所** ] テキストボックスが空白のままになっていることを確認する必要があります。
+ この機能を利用するために、ClickOnce アプリケーションの開発者は、配置マニフェストからを除外する必要があり `deploymentProvider` ます。 この要件は、 `-providerUrl` Mage.exe で配置マニフェストを作成するときに引数を除外する必要があることを意味します。 または、MageUI.exe で配置マニフェストを生成している場合は、[**アプリケーションマニフェスト**] タブの [**起動場所**] テキストボックスが空白のままになっていることを確認する必要があります。
 
 ## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider とアプリケーションの更新プログラム
  .NET Framework 3.5 以降では、 `deploymentProvider` オンラインとオフラインの両方の使用のために ClickOnce アプリケーションを配置するために、配置マニフェストでを指定する必要がなくなりました。 この変更により、展開を自分でパッケージ化して署名する必要がありますが、他の企業がネットワーク経由でアプリケーションを展開できるようになります。

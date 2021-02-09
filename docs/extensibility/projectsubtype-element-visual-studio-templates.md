@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ceecbf1bfb750244a13c641906f7a8712d01d69
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2ee2e267461d37456c9a2e64c43ae104d19ee615
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911760"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 要素 (Visual Studio テンプレート)
 テンプレートを、要素で指定された値のサブカテゴリに分類し `ProjectType` ます。
@@ -55,7 +55,7 @@ ms.locfileid: "94672321"
 
  この値は、テンプレートのサブカテゴリを指定します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `ProjectSubType` は、`TemplateData` の子要素で、省略可能な要素です。
 
  要素は、 `ProjectSubType` [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) 要素のサブカテゴリを提供します。 この値には次のものがあります。

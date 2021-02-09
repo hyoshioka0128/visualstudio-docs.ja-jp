@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911225"
 ---
 # <a name="change-the-appearance-of-a-command"></a>コマンドの外観を変更する
 コマンドの外観を変更することで、ユーザーにフィードバックを提供できます。 たとえば、使用できなくなったときに、コマンドの外観を変更することができます。 コマンドを使用できるようにするか、使用できないようにするか、メニューの表示と非表示を切り替えることができます。

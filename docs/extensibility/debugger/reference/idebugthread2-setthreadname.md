@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f49a15486551a91538bebe8fa900d165fdbb78b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911881"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 スレッドの名前を設定します。
@@ -28,13 +28,13 @@ ms.locfileid: "80718662"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetThreadName ( 
+HRESULT SetThreadName ( 
    LPCOLESTR pszName
 );
 ```
 
 ```csharp
-int SetThreadName ( 
+int SetThreadName ( 
    string pszName
 );
 ```
@@ -46,7 +46,7 @@ int SetThreadName ( 
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  スレッド名を取得するには、 [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) メソッドを呼び出します。
 
 ## <a name="see-also"></a>関連項目

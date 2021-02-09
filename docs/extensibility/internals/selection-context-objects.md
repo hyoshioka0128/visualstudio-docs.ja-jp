@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911103"
 ---
 # <a name="selection-context-objects"></a>コンテキスト オブジェクトの選択
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (ide: integrated development environment) は、グローバル選択コンテキストオブジェクトを使用して、ide に表示する内容を決定します。 IDE の各ウィンドウは、グローバル選択コンテキストにプッシュされた独自の選択コンテキストオブジェクトを持つことができます。 IDE は、ウィンドウにフォーカスがあるときに、グローバル選択コンテキストをウィンドウの値で更新します。 詳細については、「 [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)」を参照してください。

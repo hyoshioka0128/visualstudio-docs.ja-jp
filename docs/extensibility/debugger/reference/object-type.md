@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad51e8db72cba874d35f66c9759fb970ffff2716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911707"
 ---
 # <a name="object_type"></a>OBJECT_TYPE
 式エバリュエーターからオブジェクトの型を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80714126"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_OBJECT_TYPE { 
+enum enum_OBJECT_TYPE { 
    OBJECT_TYPE_BOOLEAN = 0x0,
    OBJECT_TYPE_CHAR    = 0x1,
    OBJECT_TYPE_I1      = 0x2,
@@ -49,7 +49,7 @@ typedef DWORD OBJECT_TYPE;
 ```
 
 ```csharp
-public enum enum_OBJECT_TYPE { 
+public enum enum_OBJECT_TYPE { 
    OBJECT_TYPE_BOOLEAN = 0x0,
    OBJECT_TYPE_CHAR    = 0x1,
    OBJECT_TYPE_I1      = 0x2,
@@ -114,10 +114,10 @@ public enum enum_OBJECT_TYPE { 
  `OBJECT_TYPE_CLASS`\
  オブジェクトがクラスであることを示します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)メソッドおよび[createarrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

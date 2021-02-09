@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a97ed69d37330132196f0334f5684c0704c5fd2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 515422266ce3d719319c4ba9717106af16e84f9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911002"
 ---
 # <a name="services-provided-source-control-vspackage"></a>提供されるサービス (ソース管理 VSPackage)
 サービスは、Vspackage 間、および Visual Studio 統合開発環境 (IDE) とインストールされている Vspackage の間で機能を共有するための主要なメカニズムです。 Visual Studio IDE におけるサービスとその重要度の詳細については、「[サービスの使用と提供](../../extensibility/using-and-providing-services.md)」を参照してください。
