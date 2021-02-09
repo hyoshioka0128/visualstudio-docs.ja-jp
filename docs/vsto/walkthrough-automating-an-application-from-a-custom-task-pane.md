@@ -17,15 +17,15 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], automating applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bb53d56a83c74a0ab1719f62377e2da426a83fd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ed0d2ae6bf66e8f7375bde72aaec085463b9ca18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906612"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>チュートリアル: カスタム作業ウィンドウからのアプリケーションの自動化
   このチュートリアルでは、PowerPoint を自動化するカスタム作業ウィンドウの作成方法を示します。 このカスタム作業ウィンドウでは、カスタム作業ウィンドウに配置された <xref:System.Windows.Forms.MonthCalendar> コントロールをユーザーがクリックしたときに、日付をスライドに挿入します。
@@ -134,7 +134,7 @@ ms.locfileid: "97522801"
 
      アクティブなプレゼンテーションの最初のスライドに日付が挿入されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  カスタム作業ウィンドウの作成方法の詳細については、次のトピックを参照してください。
 
 - 別のアプリケーション用の VSTO アドインにカスタム作業ウィンドウを作成します。 カスタム作業ウィンドウをサポートするアプリケーションの詳細については、「 [カスタム作業ウィンドウ](../vsto/custom-task-panes.md)」を参照してください。

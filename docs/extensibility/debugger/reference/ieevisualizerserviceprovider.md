@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 859d1a51-1c65-4c8b-ae74-3b74b181ebcd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d8a73589a4248736ac6c4d73814166056a1f90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 40e811d33d23b35553ffb23338bed19dc207e1e9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907791"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -39,16 +39,16 @@ IEEVisualizerServiceProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|ビジュアライザーサービスを作成します|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `IEEVisualizerServiceProvider`インターフェイスは、 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)の実装中に取得されます。 このインターフェイスによって作成されるビジュアライザーサービスは、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) インターフェイスに機能を提供するために使用されます。このインターフェイスは、EE が実装する役割を担います。 EE は、型ビジュアライザーがプロパティの値を表示および変更できるようにする [Ieevisualizerdataprovider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) インターフェイスを実装する役割も担います。
 
  これらのインターフェイスの相互作用の詳細については [、「データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md) 」を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906565"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする
   このチュートリアルでは Microsoft Office Excel の操作ウィンドウ上のコントロールへのデータバインドについて説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -87,7 +87,7 @@ ms.locfileid: "97524966"
 
 9. **Products** テーブルを展開し、 **ProductName**、**仕入** 先、 **QuantityPerUnit**、および **UnitPrice** を選択します。
 
-10. **[完了]** をクリックします。
+10. **[Finish]** をクリックします。
 
     ウィザードにより、[**データソース**] ウィンドウに [**仕入先** テーブルと **製品**] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 

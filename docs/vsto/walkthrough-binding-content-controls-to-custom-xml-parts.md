@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906623"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>チュートリアル: カスタム XML 部分へのコンテンツコントロールのバインド
   このチュートリアルでは、Word のドキュメント レベルのカスタマイズで、コンテンツ コントロールを同じ文書内の XML データにバインドする方法を説明します。
@@ -275,7 +275,7 @@ ms.locfileid: "97527961"
 
 2. 文書内に次のようなテーブルが表示されることを確認します。 2 つ目の列の文字列は、文書内のカスタム XML 部分の要素から取得されます。
 
-    |列|値|
+    |列|[値]|
     |-|-|
     |**Employee Name**|**Karina Leal**|
     |**Hire Date**|**April 1, 1999**|
@@ -309,7 +309,7 @@ ms.locfileid: "97527961"
 
 14. **item2.xml** ファイルを閉じます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  コンテンツ コントロールの使用方法の詳細については、次の各トピックを参照してください。
 
 - 用意されているすべてのコンテンツ コントロールを使用してテンプレートを作成できます。 詳細については、「 [チュートリアル: コンテンツコントロールを使用してテンプレートを作成する](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)」を参照してください。

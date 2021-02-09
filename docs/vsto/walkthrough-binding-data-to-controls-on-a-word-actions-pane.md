@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906586"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>チュートリアル: Word の操作ウィンドウでコントロールにデータをバインドする
   このチュートリアルでは、Word の操作ウィンドウ上のコントロールへのデータバインディングについて説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -97,7 +97,7 @@ ms.locfileid: "97526203"
 
 8. **仕入先** テーブルと **Products** テーブルの横にあるチェックボックスをオンにします。
 
-9. **[完了]** をクリックします。
+9. **[Finish]** をクリックします。
 
    ウィザードにより、[**データソース**] ウィンドウに [**仕入先** テーブルと **製品**] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
@@ -134,8 +134,8 @@ ms.locfileid: "97526203"
 
     |プロパティ|値|
     |--------------|-----------|
-    |**名前**|**[挿入]**|
-    |**テキスト**|**[挿入]**|
+    |**名前**|**挿入**|
+    |**Text**|**挿入**|
 
 12. コントロールに合わせてユーザーコントロールのサイズを変更します。
 
@@ -231,7 +231,7 @@ ms.locfileid: "97526203"
 
 5. さまざまな企業から追加の製品を挿入します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルでは、Word の操作ウィンドウ上のコントロールにデータをバインドする方法の基本について説明します。 ここでは、次の作業を行います。
 
 - Excel のコントロールにデータをバインドする。 詳細については、「 [チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)」を参照してください。

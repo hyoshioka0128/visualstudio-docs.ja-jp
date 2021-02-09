@@ -19,15 +19,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906555"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>チュートリアル: Visual Basic プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ドキュメント内の Visual Basic for Applications (VBA) コードから Microsoft Office Word 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `ThisDocument` ホスト項目クラスにメソッドを追加する、VBA コードにメソッドを公開する、および、ドキュメント内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -114,7 +114,7 @@ ms.locfileid: "97527374"
 
 8. **[既存のドキュメントをコピーする]** を選択し、 **[既存のドキュメントの完全なパス]** ボックスで、先ほど作成した **DocumentWithVBA** ドキュメントの場所を指定します。 独自のマクロ対応ドキュメントを使用している場合は、代わりにそのドキュメントの場所を指定します。
 
-9. **[完了]** をクリックします。
+9. **[Finish]** をクリックします。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで **Documentwithvba** ドキュメントを開き、**ソリューションエクスプローラー** に **CallingCodeFromVBA** プロジェクトを追加します。
 
@@ -211,7 +211,7 @@ ms.locfileid: "97527374"
 
 7. 変更を保存せずに Word を終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Office ソリューションでの VBA からのコード呼び出しについて詳しくは、次のトピックを参照してください。
 
 - VBA から Visual C# カスタマイズのコードを呼び出します。 このプロセスは、Visual Basic のプロセスとは異なります。 詳細については、「 [チュートリアル: Visual C&#35; プロジェクトの VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)」を参照してください。

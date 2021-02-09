@@ -18,15 +18,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527300"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906479"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>チュートリアル: Visual C# プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ブック内の Visual Basic for Applications (VBA) コードから Microsoft Office Excel 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `Sheet1` ホスト項目クラスにメソッドを追加する、ブックの VBA コードにメソッドを公開する、および、ブック内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -115,7 +115,7 @@ ms.locfileid: "97527300"
 
 8. **[既存のドキュメントをコピーする]** を選択し、 **[既存のドキュメントの完全なパス]** ボックスで、先ほど作成した **WorkbookWithVBA** ブックの場所を指定します。 独自のマクロ対応ブックを使用している場合は、代わりにそのブックの場所を指定します。
 
-9. **[完了]** をクリックします。
+9. **[Finish]** をクリックします。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで **WorkbookWithVBA** ブックを開き、**ソリューションエクスプローラー** に **CallingCodeFromVBA** プロジェクトを追加します。
 
@@ -241,7 +241,7 @@ ms.locfileid: "97527300"
 
 7. 変更を保存せずに Excel を終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Office ソリューションでの VBA からのコード呼び出しについて詳しくは、次のトピックを参照してください。
 
 - VBA から Visual Basic カスタマイズのホスト項目のコードを呼び出します。 このプロセスは、Visual C# のプロセスとは異なります。 詳細については、「 [チュートリアル: Visual Basic プロジェクトの VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)」を参照してください。
