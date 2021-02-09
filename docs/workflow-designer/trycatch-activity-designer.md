@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889305"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch アクティビティ デザイナー
 
@@ -29,11 +29,11 @@ ms.locfileid: "94433571"
 
 ### <a name="using-the-trycatch-activity-designer"></a>TryCatch アクティビティ デザイナーの使用
 
-[ **ツールボックス** ] の [ **エラー処理** ] カテゴリで、 **TryCatch** アクティビティデザイナーにアクセスします。
+[**ツールボックス**] の [**エラー処理**] カテゴリで、 **TryCatch** アクティビティデザイナーにアクセスします。
 
-**TryCatch** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 この操作により、TryCatch の既定の <xref:System.Activities.Statements.TryCatch> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 値は、 <xref:System.Activities.Activity.DisplayName%2A> **TryCatch** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。 その他のプロパティは、 **TryCatch** アクティビティデザイナーの画面で編集する必要があります。
+**TryCatch** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 この操作により、TryCatch の既定の <xref:System.Activities.Statements.TryCatch> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 値は、 <xref:System.Activities.Activity.DisplayName%2A> **TryCatch** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。 その他のプロパティは、 **TryCatch** アクティビティデザイナーの画面で編集する必要があります。
 
-**TryCatch** デザイナーの右上隅にある展開ボタンをクリックすると、展開ビューの [ **Try** ]、[ **Catch** ]、および [ **Finally** ] の各ボックスが表示されます。 キャッチを追加するには、 **TryCatch** デザイナーの [ **新しい catch の追加** ] ボタンをクリックします。 このボタンが、型のコンボ ボックスに変化します。 例外の型を選択し、Enter キーを押して catch を追加します。 キャッチを追加する **と、catch** 領域が展開され、catch にアクティビティをドロップして catch の実行ロジックを定義できます。 展開された catch 領域の右側にはテキスト ボックスが表示されます。 このテキスト ボックスを使用して、例外変数に名前を付けることができます。 例外変数は、同じ **Catch** 内のアクティビティに対してのみ使用できます。
+**TryCatch** デザイナーの右上隅にある展開ボタンをクリックすると、展開ビューの [ **Try**]、[ **Catch**]、および [ **Finally** ] の各ボックスが表示されます。 キャッチを追加するには、 **TryCatch** デザイナーの [**新しい catch の追加**] ボタンをクリックします。 このボタンが、型のコンボ ボックスに変化します。 例外の型を選択し、Enter キーを押して catch を追加します。 キャッチを追加する **と、catch** 領域が展開され、catch にアクティビティをドロップして catch の実行ロジックを定義できます。 展開された catch 領域の右側にはテキスト ボックスが表示されます。 このテキスト ボックスを使用して、例外変数に名前を付けることができます。 例外変数は、同じ **Catch** 内のアクティビティに対してのみ使用できます。
 
 **TryCatch** デザイナーは、 **Catch** の編集をサポートしていません。 例外の種類を変更する場合は、 **キャッチ** を削除して新しいものを追加する必要があります。 キャッチを削除するには、 **キャッチ** を選択して削除するか、右クリックによってアクセスされるコンテキストメニューの [ **削除** ] を選択します。
 
@@ -41,12 +41,12 @@ ms.locfileid: "94433571"
 
 次の表は、 <xref:System.Activities.Statements.TryCatch> プロパティと、デザイナーでのそれらの使用方法を示しています。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.TryCatch> アクティビティの表示名を指定します (省略可能)。 既定値は TryCatch です。|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|×|<xref:System.Activities.Statements.TryCatch> を実行すると、このアクティビティが最初に実行されます。|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|×|アクティビティが例外をスローしたときにチェックされる **Catch** 要素のコレクション <xref:System.Activities.Statements.TryCatch.Try%2A> 。<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A> にアクティビティを少なくとも 1 つ追加するか、または、<xref:System.Activities.Statements.TryCatch.Finally%2A> ブロックにアクティビティを追加する必要があります。|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|×|<xref:System.Activities.Statements.TryCatch.Try%2A> および <xref:System.Activities.Statements.TryCatch.Catches%2A> コレクション内の必要なアクティビティがすべて完了した段階で実行されるアクティビティ。<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A> にアクティビティを少なくとも 1 つ追加するか、または、<xref:System.Activities.Statements.TryCatch.Finally%2A> ブロックにアクティビティを追加する必要があります。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TryCatch> アクティビティの表示名を指定します (省略可能)。 既定値は TryCatch です。|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|False|<xref:System.Activities.Statements.TryCatch> を実行すると、このアクティビティが最初に実行されます。|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|アクティビティが例外をスローしたときにチェックされる **Catch** 要素のコレクション <xref:System.Activities.Statements.TryCatch.Try%2A> 。<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A> にアクティビティを少なくとも 1 つ追加するか、または、<xref:System.Activities.Statements.TryCatch.Finally%2A> ブロックにアクティビティを追加する必要があります。|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|<xref:System.Activities.Statements.TryCatch.Try%2A> および <xref:System.Activities.Statements.TryCatch.Catches%2A> コレクション内の必要なアクティビティがすべて完了した段階で実行されるアクティビティ。<br /><br /> <xref:System.Activities.Statements.TryCatch.Catches%2A> にアクティビティを少なくとも 1 つ追加するか、または、<xref:System.Activities.Statements.TryCatch.Finally%2A> ブロックにアクティビティを追加する必要があります。|
 
 ## <a name="see-also"></a>関連項目
 

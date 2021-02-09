@@ -9,21 +9,21 @@ f1_keywords:
 - Blend.Start.Dev12
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: affef27dae9fe569c0cacbbd3725b9bf76edb94c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889266"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概要
 
 Blend for Visual Studio を使用すると、XAML ベースの Windows および Web アプリケーションを設計できます。 Visual Studio と同じ基本的な XAML デザイン環境を提供しているほか、アニメーションやビヘイビアーなどの高度なタスクを視覚的にデザインする機能が追加されています。 Blend と Visual Studio の比較については、[Visual Studio と Blend for Visual Studio で XAML をデザインする](../xaml-tools/designing-xaml-in-visual-studio.md)方法に関するページを参照してください。
 
-Blend for Visual Studio は、Visual Studio のコンポーネントです。 Blend をインストールするには、 **Visual Studio インストーラー** で、 **[ユニバーサル Windows プラットフォーム開発]** または **[.NET デスクトップ開発]** のいずれかのワークロードを選択します。 これらの両方のワークロードに、Blend for Visual Studio コンポーネントが含まれます。
+Blend for Visual Studio は、Visual Studio のコンポーネントです。 Blend をインストールするには、**Visual Studio インストーラー** で、**[ユニバーサル Windows プラットフォーム開発]** または **[.NET デスクトップ開発]** のいずれかのワークロードを選択します。 これらの両方のワークロードに、Blend for Visual Studio コンポーネントが含まれます。
 
 ![UWP のワークロード コンポーネント](media/installer-uwp.png)&nbsp;&nbsp;&nbsp;&nbsp;![.NET デスクトップ開発のワークロード コンポーネント](media/installer-dotnet-desktop.png)
 
@@ -64,7 +64,7 @@ Blend for Visual Studio の **[ツール]** パネルは、アプリケーショ
 
 ## <a name="assets-window"></a>[アセット] ウィンドウ
 
-**[アセット]** ウィンドウには、使用できるすべてのコントロールが表示されます (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** ウィンドウに用意されています。 **[アセット]** ウィンドウを開くには、 **[表示]** > **[アセット] ウィンドウ** を選択するか、 **Ctrl**+**Alt**+**X** キーを押します。
+**[アセット]** ウィンドウには、使用できるすべてのコントロールが表示されます (Visual Studio の **[ツールボックス]** に似ています)。 また、コントロールのほかに、スタイル、メディア、ビヘイビアー、効果など、アートボードに追加できるすべてのものが **[アセット]** ウィンドウに用意されています。 **[アセット]** ウィンドウを開くには、**[表示]** > **[アセット] ウィンドウ** を選択するか、**Ctrl**+**Alt**+**X** キーを押します。
 
 ![Blend for Visual Studio の [アセット] ウィンドウ](media/blend-assets-window.png)
 
