@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892308"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint のパッケージ化と配置のトラブルシューティング
   このトピックでは、SharePoint ソリューションをパッケージ化および配置するときに発生する可能性があるさまざまな問題について説明します。
@@ -70,9 +70,9 @@ ms.locfileid: "95969940"
  [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)]、[!INCLUDE[win7](../sharepoint/includes/win7-md.md)]、または [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] の Bin フォルダーに可視 Web パーツを配置するときに、SharePoint ページの表示に時間がかかります。 これは、Bin ディレクトリなどの最上位の [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ディレクトリのファイルを変更すると Web アプリケーション全体が再コンパイルされるためです。 結果として、SharePoint ページの表示に最大で 25 秒の遅延が生じます。
 
 ### <a name="error-message"></a>エラー メッセージ
- なし。
+ [なし] :
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解像度
  この問題を回避するには、次の手順を実行します。
 
 1. Microsoft サポートの記事で説明されているように、update KB967535 をインストールします [。 Windows Vista および Windows Server 2008 の IIS 7.0 で、ASP.NET の2つの問題を修正する修正プログラムを利用でき](https://support.microsoft.com/help/967535)ます。
@@ -89,7 +89,7 @@ ms.locfileid: "95969940"
 ### <a name="error-message"></a>エラー メッセージ
  配置手順 'ソリューションの追加' でエラーが発生しました: ソリューションで cab ファイルを抽出できませんでした
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解像度
  この問題を回避するには、SharePoint プロジェクト項目の名前に含まれるかっこを削除してください。
 
 ## <a name="error-appears-when-deploying-a-visual-web-part-to-a-site-on-a-different-web-application"></a>別の web アプリケーションのサイトに視覚的 web パーツを配置するときにエラーが表示される
@@ -98,7 +98,7 @@ ms.locfileid: "95969940"
 ### <a name="error-message"></a>エラー メッセージ
  配置手順 'ソリューションの追加' でエラーが発生しました: ID [#] の機能は既にこのファームにインストールされています。 機能を明示的に再インストールするには、force 属性を使用してください。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解像度
  このエラーは、可視 Web パーツ フィーチャーが SharePoint で取り消される方法によって発生します。 視覚的 Web パーツを正常に配置するには、F5 キーを **押し** てソリューションを再度配置します。
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>入れ子になったユーザーコントロールを配置するときに警告が表示される
@@ -107,7 +107,7 @@ ms.locfileid: "95969940"
 ### <a name="error-message"></a>エラー メッセージ
  警告1要素 ' [*コントロール名*] ' は既知の要素ではありません。 Web サイトにコンパイル エラーがあるか、web.config ファイルが存在しない可能性があります。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解像度
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]入れ子になったユーザーコントロールがプロジェクトシステムで認識されない場合、IntelliSense を提供できず、警告が出力されます。 プロジェクト システムは、プロジェクトがビルドされずにデザイナーが閉じられ、再度開かれた場合、または、デバッグ後に SharePoint ハイブからユーザー コントロールを取り消す自動取り消しオプションが有効な場合は、入れ子になったユーザー コントロールを認識しません。
 
  この警告を除去するには、プロジェクトをビルドしてからデザイナーを閉じて再度開くか、プロジェクトに対する自動取り消しオプションを無効にします。 これを行うには、[プロジェクトのプロパティ] ダイアログボックスの [ **SharePoint** ] タブで、[**デバッグ後に自動取り消し**] チェックボックスをオフにします。

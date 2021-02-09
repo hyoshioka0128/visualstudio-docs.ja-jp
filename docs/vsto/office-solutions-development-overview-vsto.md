@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891957"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office ソリューションの開発の概要 (VSTO)
   ソリューションのフロント エンドとして Microsoft Office を使用すると、Word のワープロ機能、Excel のデータの分析機能、および Outlook の電子メール管理機能などの使い慣れた Microsoft Office のユーザー インターフェイスとツールを活用することができます。 Office アプリケーションのカスタマイズおよびビジネス プロセスに必要な特定の機能の追加を行うために、Visual Studio でソリューションを開発することができます。 たとえば、Word を既存のパーツからコントラクトを組み合わせるコントラクト ジェネレーターにすることができます。既存のパーツは編集可能または編集可能でない場合があります。 Excel では、さまざまなプロジェクト用にカスタマイズされた自動予算のワークシートを作成できます。 ユーザーはオフラインで Office ソリューションを取得することもできます。これは、Web ベースのアーキテクチャを使用する場合に、複雑なソリューションをより実用的なものにします。
@@ -81,7 +81,7 @@ ms.locfileid: "97527717"
 ### <a name="deployment-options"></a>デプロイ オプション
  ClickOnce または Windows インストーラーを使用して、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]の Office 開発者ツールを使用して作成したソリューションを配置します。 ClickOnce の配置では、インストールできる自己更新ソリューションを作成し、最小限のユーザー操作で実行することができます。 Windows インストーラー (*.msi*) ファイルは、エンドユーザーのコンピューターに簡単に配布することも、Systems Management SERVER (SMS) を使用して配布することもできます。 VSTO Office ソリューションの配置の詳細については、「 [office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。
 
-### <a name="install-prerequisites"></a>必須コンポーネントをインストールする
+### <a name="install-prerequisites"></a>必須コンポーネントのインストール
  エンド ユーザーが [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]の Office 開発者ツールを使用して作成したソリューションを実行できるようにするには、ユーザーのコンピューターに特定の必須コンポーネントがインストールされている必要があります。 ClickOnce を使用するか、Windows インストーラー ファイルを作成して、ソリューションを配置する場合は、ソリューションと共にこれらの必須コンポーネントをインストールできます。 詳細については、「 [office ソリューションの配置の前提条件](/previous-versions/bb608617(v=vs.110)) 」および「 [方法: office ソリューションを実行するためにエンドユーザーのコンピューターに必須コンポーネントをインストール](/previous-versions/bb608608(v=vs.110))する」を参照してください。
 
 ### <a name="security"></a>セキュリティ

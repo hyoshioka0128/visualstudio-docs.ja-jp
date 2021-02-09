@@ -13,15 +13,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa0d6fe1855a1d60a0e1293e8422791f8148bd04
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 86aea9800d0eaad4c36d5598e52dd7a35f3a7534
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892178"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>モジュールを使用してソリューションにファイルを含める
   ファイルの種類 (新しいマスター ページなど) に関係なく、SharePoint サーバーへのファイルの配置が必要になる場合があります。 その場合は、"*モジュール*" ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] コード モジュールと混同しないでください) を使用できます。 モジュールは、SharePoint ソリューション内のファイルのコンテナーです。 ソリューションが配置されると、モジュール内のファイルが SharePoint サーバー上の指定されたフォルダーにコピーされます。

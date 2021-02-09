@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, walkthroughs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d1700958d155801a436cbd00a8a88f7599292a0
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: b12aaade85964eb1c331bd96f2fbea522670bcc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892321"
 ---
 # <a name="sharepoint-development-walkthroughs"></a>SharePoint 開発のチュートリアル
   以下のチュートリアルでは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] を使用して SharePoint ソリューションを開発および配置する方法について説明します。
@@ -47,7 +47,7 @@ ms.locfileid: "95970320"
 |[チュートリアル: SharePoint の Web パーツの作成](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Visual Studio で **Web パーツ** 項目テンプレートを使用して web パーツを作成する方法について説明します。|
 |[チュートリアル: デザイナーを使用した SharePoint の Web パーツの作成](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Visual Studio の SharePoint **Visual Web パーツ** プロジェクトテンプレートを使用して、Web パーツを視覚的に作成する方法について説明します。|
 
-## <a name="workflows"></a>ワークフロー
+## <a name="workflows"></a>Workflows
 
 |トピック|説明|
 |-----------|-----------------|
@@ -70,7 +70,7 @@ ms.locfileid: "95970320"
 |-----------|-----------------|
 |[チュートリアル: ビジネスデータを使用した SharePoint での外部リストの作成](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|サンプル データベースに含まれる連絡先に関する情報を返すという、BDC サービスのモデルを作成する方法について説明します。|
 
-## <a name="packaging-and-deployment"></a>パッケージとデプロイ
+## <a name="packaging-and-deployment"></a>パッケージ化と配置
 
 |トピック|説明|
 |-----------|-----------------|

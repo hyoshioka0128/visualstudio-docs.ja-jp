@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892334"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint プロジェクトとプロジェクト項目テンプレート
   以下のセクションでは、SharePoint プロジェクトとプロジェクト項目の使用可能なテンプレート、およびそれらの使用方法について説明します。
@@ -78,7 +78,7 @@ ms.locfileid: "95970366"
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>ビジネスデータ接続モデル (ファームソリューションのみ)
  **ビジネスデータ接続モデル (ファームソリューションのみ)** 項目を使用すると、ビジネスデータを SharePoint に統合できます。 [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)]、Siebel、Service Advertising Protocol (SAP) などのバック エンドのサーバー アプリケーションからのデータを使用できます。 ビジネス データ接続モデル (ファーム ソリューションのみ) は、ファーム ソリューションでのみ使用できます。 このプロジェクト項目はファーム ソリューションにしか追加できません。 詳細については、「 [方法: BDC モデルを作成](../sharepoint/how-to-create-a-bdc-model.md)する」、「 [方法: リソースファイルを使用してローカライズされた名前、プロパティ、およびアクセス許可を指定する](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)」、および「 [新機能: Business Connectivity Services](/previous-versions/office/developer/sharepoint-2010/ee534979(v=office.14))」を参照してください。
 
-### <a name="content-type"></a>コンテンツ タイプ
+### <a name="content-type"></a>Content type
  *コンテンツタイプ* 項目を使用すると、ドキュメント、アナウンス、タスクなどの既存の (基本) コンテンツタイプに基づいて、カスタムコンテンツタイプを作成できます。 カスタム コンテンツ タイプでは、独自に定義したサイト列 (フィールド) に加えて、ベース コンテンツ タイプと同じ属性およびフィールドを使用できます。 たとえば、SharePoint に付属している基本の Contact コンテンツ タイプを基にしてカスタムの Contact コンテンツ タイプを作成できます。 コンテンツ タイプのカスタマイズでは、基本コンテンツ タイプの既存のサイト列を変更したり、別のサイト列を追加したりできます。
 
 > [!NOTE]

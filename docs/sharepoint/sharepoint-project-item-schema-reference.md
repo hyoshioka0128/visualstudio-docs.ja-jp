@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892282"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint プロジェクト項目スキーマのリファレンス
   Visual Studio では、SharePoint プロジェクト項目スキーマを使用して、 *sharepointprojectitem.spdata* ファイルの内容を検証します。 *Sharepointprojectitem.spdata* ファイルは、SharePoint プロジェクトアイテムの内容と動作を指定します。 SharePoint プロジェクト項目の内容の詳細については、「 [sharepoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)する」を参照してください。

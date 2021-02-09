@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892451"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>チュートリアル: ビューの表示要素、コマンド、および設定の作成 (列ガイド)
 コマンドと表示効果を使用して、Visual Studio のテキストエディターまたはコードエディターを拡張できます。 この記事では、一般的な拡張機能のコラムガイドを使ってみる方法について説明します。 列ガイドは、特定の列の幅に合わせてコードを管理するために、テキストエディターのビューに視覚的に表示される線です。 具体的には、ドキュメント、ブログの投稿、またはバグレポートに含めるサンプルでは、書式設定されたコードが重要になります。
@@ -33,7 +33,7 @@ ms.locfileid: "97863067"
   > [!NOTE]
   > このチュートリアルでは、Visual Studio 拡張機能テンプレートによって生成されるいくつかのファイルに、大量のコードを貼り付けます。 しかし、すぐにこのチュートリアルでは、他の拡張機能の例と共に、GitHub で完成したソリューションを参照します。 完成したコードは、generictemplate アイコンを使用するのではなく、実際のコマンドアイコンがあると若干異なります。
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業の開始
 Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="set-up-the-solution"></a>ソリューションのセットアップ
