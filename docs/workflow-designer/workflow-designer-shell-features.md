@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 239a879fbffe67bf54149ba29e98edcd3428410d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 04de797b991b2c660b61ae401fb928561343b812
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875147"
 ---
 # <a name="workflow-designer-shell-features"></a>ワークフロー デザイナーのシェルの機能
 
@@ -35,7 +35,7 @@ ms.locfileid: "94433649"
 ## <a name="copying-or-saving-workflows-as-images"></a>ワークフローをイメージとしてコピーまたは保存
  ワークフローは、ビットマップ形式でのコピーや、ビットマップまたはベクター形式での保存が可能です。 イメージをコピーまたは保存すると、現在の階層リンク ルートにおけるアクティビティ全体 (すべての子およびそれらの展開された子のすべてを含む) のビューを別のプログラムにエクスポートできます。
 
- イメージとしてコピーするには、デザイナー内の任意の場所を右クリックし、[ **イメージとしてコピー** ] を選択します。 イメージとして保存するには、デザイナー内の任意の場所を右クリックし、[ **イメージとして保存** ] を選択します。 ワークフローは、JPG、PNG、GIF、および XPS の各形式のいずれかで保存できます。 この形式は、ウィンドウの下部にある [ **名前を付けて保存** ] ボックスの一覧にある [ **名前** を付けて保存] ダイアログボックスで選択します。
+ イメージとしてコピーするには、デザイナー内の任意の場所を右クリックし、[ **イメージとしてコピー**] を選択します。 イメージとして保存するには、デザイナー内の任意の場所を右クリックし、[ **イメージとして保存**] を選択します。 ワークフローは、JPG、PNG、GIF、および XPS の各形式のいずれかで保存できます。 この形式は、ウィンドウの下部にある [**名前を付けて保存**] ボックスの一覧にある [**名前** を付けて保存] ダイアログボックスで選択します。
 
 ## <a name="fonts-and-colors"></a>フォントおよび色
 
