@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09cb93f0f16420e56104f371d9caab262873390f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 033c997f3bd1038c2103a6c0ef3ad9ddbd74c249
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901861"
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 このインターフェイスは、警告またはエラーのために、読み込まれたプログラムに保留中のブレークポイントをバインドできなかったことをセッションデバッグマネージャー (SDM) に通知します。
@@ -46,7 +46,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 
  たとえば、保留中のブレークポイントに関連付けられている条件が解析または評価に失敗した場合、この時点では、保留中のブレークポイントをバインドできないという警告が送信されます。 これは、ブレークポイントのコードがまだ読み込まれていない場合に発生する可能性があります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

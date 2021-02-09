@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e0b9000-6a84-47b9-b07a-367a75764389
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93a78f84c10af047e596459b68211b885d3c3085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25756c00ba493dba866ab70693e69971333ae9ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901924"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 データブレークポイントのバインドの結果について説明します。
@@ -61,7 +61,7 @@ public struct BP_RESOLUTION_DATA {
 ## <a name="remarks"></a>解説
 この構造体は[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)構造体のメンバーであり、 [get解決情報](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッドによって返される[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のメンバーになります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
