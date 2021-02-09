@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea493170c7b422129485fcea4248981a2b506001
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c19109215a9e8824f1648860c39ccb33836ca93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713252"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879996"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 この構造体は、ポインターに対して相対的なアドレス `this` ( `Me` Visual Basic) を表します。
@@ -53,10 +53,10 @@ public struct UNMANAGED_THIS_RELATIVE {
  `dwBitLength`\
  アドレスを表すビット数 (ビットフィールドを参照している場合を除き、常に0です)。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

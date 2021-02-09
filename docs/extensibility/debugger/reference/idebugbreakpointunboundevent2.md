@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e1d15936316d08a712e3d6f3fdc7a3a73be613d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f7b463b2da9c1e2c93568435b73020550802f98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881010"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 このインターフェイスは、バインドされたブレークポイントが読み込まれたプログラムからバインド解除されたことをセッションデバッグマネージャー (SDM) に通知します。
@@ -45,7 +45,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 ## <a name="remarks"></a>解説
  デバッグエンジンの DLL またはクラスがアンロードされると、そのモジュール内のコードにバインドされていたすべてのブレークポイントは、デバッグ中のプログラムからバインド解除される必要があります。 バインドされていない `IDebugBreakpointUnboundEvent2` 各ブレークポイントに対してが送信されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

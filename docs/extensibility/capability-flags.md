@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b80672b00bec95c740824ef7e29f1faba0e63cf4
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882285"
 ---
 # <a name="capability-flags"></a>機能フラグ
 SCC_CAP_ *xxx* フラグは、ソース管理プラグインの機能を示すために使用されるビットフラグです。 SCC_EXCAP_ *xxx* フラグは、拡張機能を示し、整数値に解決される増分フラグです。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf3578dc16c5c771233e1b5a9f348e375f21aad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a259f813d2bfbcb8ec92b039d44af74e431752ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880217"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 このメソッドは、デバッグアドレスに関連付けられた名前空間の列挙子を作成します。
@@ -28,7 +28,7 @@ ms.locfileid: "80719216"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetNamespacesUsedAtAddress( 
+HRESULT GetNamespacesUsedAtAddress( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppEnum
 );

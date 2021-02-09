@@ -7,13 +7,13 @@ ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: aed3ed43afcad9cfb38dc427a441512106d9749b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+manager: jmartens
+ms.openlocfilehash: 0e0bdc7b10eb20b149493c8d9e05a6711eb71bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881335"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>XAML デザイナーのキーボード ショートカット
 
@@ -31,7 +31,7 @@ XAML デザイナーでキーボード ショートカットを使うと、マ�
 |1 つの要素を選択する|**Tab** キーを押して、ドキュメントに表示される順序で要素を選択します  (方向キーを使用しても要素を選択できます)。|
 |複数の要素を選択する|**Shift** キーを押しながら各要素を選択します。|
 |複数の連続していない要素を選択する|**Ctrl** キーを押しながら最初と最後の要素を選択します。|
-|選択した要素を移動する|方向キーを押します。 ( **Shift** キーを押したままにすると、キーを押すごとに移動する距離を長くすることができます。)|
+|選択した要素を移動する|方向キーを押します。 (**Shift** キーを押したままにすると、キーを押すごとに移動する距離を長くすることができます。)|
 |要素を 15° 刻みで回転させる|**Shift** キーを押しながら要素を回転します。|
 |すべての要素を選択する|**Ctrl** + **A** キーを押す|
 |すべての要素の選択をクリアする|**Ctrl** + **Shift** + **A** キーを押す|

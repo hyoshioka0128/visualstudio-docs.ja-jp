@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a2c8cac705f4e6ae8d72f3a2e9bd5ec4c8ed68bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877474"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; 要素 (ブートストラップ)
 製品名、パッケージ名、およびインストールエラーメッセージのローカライズされた文字列を定義します。
@@ -44,7 +44,7 @@ ms.locfileid: "94350479"
 ## <a name="elements-and-attributes"></a>要素と属性
  要素は `Strings` 要素の子です `Package` 。 属性はありません。
 
-## <a name="string"></a>文字列型
+## <a name="string"></a>String
  要素は `String` 要素の子です `Strings` 。 `Strings`要素には、1つまたは複数の要素を含めることができ `String` ます。
 
  `String` には次の属性があります。
@@ -76,4 +76,4 @@ ms.locfileid: "94350479"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<Package> element](../deployment/package-element-bootstrapper.md)
+- [\<Package> 要素](../deployment/package-element-bootstrapper.md)

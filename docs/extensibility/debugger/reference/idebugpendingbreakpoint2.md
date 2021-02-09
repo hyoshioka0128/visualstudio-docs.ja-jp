@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6f2c1df37e953a5d8c66bad9d0a3574a463fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725644"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877409"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 このインターフェイスは、コードの場所にバインドする準備ができているブレークポイントを表します。
@@ -40,7 +40,7 @@ IDebugPendingBreakpoint2 : IUnknown
 |Method|説明|
 |------------|-----------------|
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|この保留中のブレークポイントをコードの場所にバインドできるかどうかを判断します。|
-|[Bind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|この保留中のブレークポイントを1つまたは複数のコードの場所にバインドします。|
+|[束縛](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|この保留中のブレークポイントを1つまたは複数のコードの場所にバインドします。|
 |[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)|この保留中のブレークポイントの状態を取得します。|
 |[GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)|この保留中のブレークポイントを作成するために使用されたブレークポイント要求を取得します。|
 |[Virtualize](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md)|この保留中のブレークポイントの仮想化された状態を切り替えます。|
@@ -56,7 +56,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  保留中のブレークポイントによって、複数のバインドされたブレークポイントが生成される可能性があります。 たとえば、C++ スタイルのテンプレート内のブレークポイントによって、そのテンプレートの一意のインスタンスごとにバインドされたブレークポイントが生成される場合があります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

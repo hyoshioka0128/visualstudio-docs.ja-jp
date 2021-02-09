@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09e5973b39bae2fbf923cf97ac1bd9cf15e10874
-ms.sourcegitcommit: 023f52f10fb91850824558478cbfd2ec965054f0
+ms.openlocfilehash: 172f3ea546565554c5f0701b81a88b9ca99b4100
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94407680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881101"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dependency &gt; 要素 (ClickOnce 配置)
 インストールするアプリケーションのバージョンと、アプリケーションマニフェストの場所を指定します。
@@ -82,11 +82,11 @@ ms.locfileid: "94407680"
 
 | 属性 | 説明 |
 |------------------| - |
-| `preRequisite` | 省略可能。 このアセンブリが既に GAC に存在する必要があることを指定します。 有効な値は `true` と `false` です。 `true`、および指定されたアセンブリが GAC に存在しない場合、アプリケーションの実行は失敗します。 |
-| `visible` | 省略可能。 最上位レベルのアプリケーション id (依存関係を含む) を識別します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションのストレージとアクティブ化を管理するために、によって内部的に使用されます。 |
+| `preRequisite` | 任意。 このアセンブリが既に GAC に存在する必要があることを指定します。 有効な値は `true` と `false` です。 `true`、および指定されたアセンブリが GAC に存在しない場合、アプリケーションの実行は失敗します。 |
+| `visible` | 任意。 最上位レベルのアプリケーション id (依存関係を含む) を識別します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションのストレージとアクティブ化を管理するために、によって内部的に使用されます。 |
 | `dependencyType` | 必須。 この依存関係とアプリケーションの関係。 有効な値は次のとおりです。<br /><br /> -   `install`. コンポーネントは、現在のアプリケーションとは別のインストールを表します。<br />-   `preRequisite`. 現在のアプリケーションではコンポーネントが必要です。 |
-| `codebase` | 省略可能。 アプリケーションマニフェストへの完全パス。 |
-| `size` | 省略可能。 アプリケーションマニフェストのサイズ (バイト単位)。 |
+| `codebase` | 任意。 アプリケーションマニフェストへの完全パス。 |
+| `size` | 任意。 アプリケーションマニフェストのサイズ (バイト単位)。 |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
  必須。 この要素は `dependentAssembly` 要素の子です。 の内容は、 `assemblyIdentity` アプリケーションマニフェストに記述されているものと同じである必要があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 要素の属性を次の表に示し `assemblyIdentity` ます。
@@ -97,8 +97,8 @@ ms.locfileid: "94407680"
 |`Version`|必須。 アプリケーションのバージョン番号を次の形式で指定します。 `major.minor.build.revision`|
 |`publicKeyToken`|必須。 アプリケーションまたはアセンブリに署名するときに使用する公開キーの SHA-1 ハッシュの最後の8バイトを表す16文字の16進数文字列を指定します。 署名に使用する公開キーは、2048ビット以上である必要があります。|
 |`processorArchitecture`|必須。 マイクロプロセッサを指定します。 有効な値は、 `x86` 32 ビット windows の場合は、 `IA64` 64 ビット版の場合はです。|
-|`Language`|省略可能。 アセンブリの2つの部分言語コードを識別します。 たとえば、EN-US は英語 (U.S.) を表します。 既定値は、`neutral` です。 この要素は `asmv2` 名前空間にあります。|
-|`type`|省略可能。 Windows サイドバイサイドインストールテクノロジとの下位互換性のために使用します。 使用できる値はのみ `win32` です。|
+|`Language`|任意。 アセンブリの2つの部分言語コードを識別します。 たとえば、EN-US は英語 (U.S.) を表します。 既定値は、`neutral` です。 この要素は `asmv2` 名前空間にあります。|
+|`type`|任意。 Windows サイドバイサイドインストールテクノロジとの下位互換性のために使用します。 使用できる値はのみ `win32` です。|
 
 ## <a name="hash"></a>hash
  要素は、 `hash` 要素の省略可能な子です `file` 。 `hash` 要素に属性はありません。
@@ -111,21 +111,21 @@ ms.locfileid: "94407680"
 ## <a name="dsigtransform"></a>dsig:Transform
  要素は、 `dsig:Transform` 要素の必須の子です `dsig:Transforms` 。 要素の属性を次の表に示し `dsig:Transform` ます。
 
-| 属性 | [説明] |
+| 属性 | 説明 |
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストの計算に使用されるアルゴリズム。 現在、で使用されている値 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はのみ `urn:schemas-microsoft-com:HashTransforms.Identity` です。 |
 
 ## <a name="dsigdigestmethod"></a>dsig: DigestMethod
  要素は、 `dsig:DigestMethod` 要素の必須の子です `hash` 。 要素の属性を次の表に示し `dsig:DigestMethod` ます。
 
-| 属性 | [説明] |
+| 属性 | 説明 |
 |-------------| - |
 | `Algorithm` | このファイルのダイジェストの計算に使用されるアルゴリズム。 現在、で使用されている値 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はのみ `http://www.w3.org/2000/09/xmldsig#sha1` です。 |
 
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  要素は、 `dsig:DigestValue` 要素の必須の子です `hash` 。 `dsig:DigestValue` 要素に属性はありません。 テキスト値は、指定されたファイルの計算済みハッシュです。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  配置マニフェストには、通常、 `assemblyIdentity` アプリケーションマニフェストの名前とバージョンを識別する1つの要素があります。
 
 ## <a name="example-1"></a>例 1
@@ -184,4 +184,4 @@ ms.locfileid: "94407680"
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md)
-- [\<dependency> element](../deployment/dependency-element-clickonce-application.md)
+- [\<dependency> 要素](../deployment/dependency-element-clickonce-application.md)

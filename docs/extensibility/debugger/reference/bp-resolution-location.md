@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b11d80e90daec19a14ca509e5a4b9bdb2d1ced4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c2032c15430fb4038ecdeab2050b47a59c932c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881075"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 ブレークポイントの解決場所の構造を指定します。
@@ -50,7 +50,7 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="members"></a>メンバー
 `bpType`\
-[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) `bpResLocation` 共用体またはメンバーを解釈する方法を指定する BP_TYPE 列挙の値 `unionmemberX` 。
+[](../../../extensibility/debugger/reference/bp-type.md) `bpResLocation` 共用体またはメンバーを解釈する方法を指定する BP_TYPE 列挙の値 `unionmemberX` 。
 
 `bpResLocation.bpresCode`\
 [C++ のみ]の場合、 [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)構造体が含まれ `bpType`  =  `BPT_CODE` ます。
@@ -113,7 +113,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

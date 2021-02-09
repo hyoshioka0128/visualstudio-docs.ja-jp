@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47d38e68494f29947131bcc8ce3a2a59b2e8d48b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879983"
 ---
 # <a name="how-to-create-a-vsct-file"></a>方法: vsct ファイルを作成する
 
@@ -104,7 +104,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
     ```
 
-     ここで \<ctofilename\> 、は、 *cto* ファイルの名前です。は、 \<vsctfilename\> 作成する *vsct* ファイルの名前です。は、このファイル \<symfilename\> の *.ctsym* 名前です。
+     ここで \<ctofilename\> 、は、 *cto* ファイルの名前です。は、 \<vsctfilename\> 作成する *vsct* ファイルの名前です。は、このファイル \<symfilename\> の名前です。
 
      このプロセスでは、新しい *vsct* XML コマンドテーブルコンパイラファイルが作成されます。 他の *.vsct* ファイルと同様に、.vsct コンパイラの *vsct.exe* を使用して、ファイルを編集およびコンパイルできます。
 

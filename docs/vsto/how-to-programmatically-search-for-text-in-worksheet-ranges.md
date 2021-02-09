@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text searches, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ce01e76aa56a834f4f63cd2bd0f6f16c4ab03a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cf3894a2fb6d34678786686fe3c229d2e16a9a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877890"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>方法: プログラムによってワークシートの範囲内のテキストを検索する
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>オブジェクトのメソッドを <xref:Microsoft.Office.Interop.Excel.Range> 使用すると、範囲内のテキストを検索できます。 このテキストは、やなどのワークシートのセルに表示されるエラー文字列のいずれかにすることもでき `#NULL!` `#VALUE!` ます。 エラー文字列の詳細については、「 [セルエラー値](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)」を参照してください。

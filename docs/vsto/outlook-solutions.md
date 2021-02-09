@@ -17,15 +17,15 @@ helpviewer_keywords:
 - e-mail [Office development in Visual Studio], Outlook solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ded4652704a47252f0839aed151f0557ae5e6766
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 86fa849641894576f141ce9bc76eccaf72424d47
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882441"
 ---
 # <a name="outlook-solutions"></a>Outlook ソリューション
   Visual Studio には、Microsoft Office Outlook の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用して、Outlook の自動化、Outlook の機能の拡張、または Outlook のユーザー インターフェイス (UI) のカスタマイズが可能です。 VSTO アドインについて詳しくは、「 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)」をご覧ください。

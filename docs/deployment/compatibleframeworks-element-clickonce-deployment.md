@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383067"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881179"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;互換フレームワーク &gt; 要素 (ClickOnce 配置)
 このアプリケーションをインストールして実行できる .NET Framework のバージョンを指定します。
 
 > [!NOTE]
-> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)を使用して証明書で既に署名されているアプリケーションマニフェストを保存する場合、MageUI.exeは要素をサポートしません。 代わりに、 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)を使用する必要があります。
+> [](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)を使用して証明書で既に署名されているアプリケーションマニフェストを保存する場合、MageUI.exeは要素をサポートしません。 代わりに、 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)を使用する必要があります。
 
 ## <a name="syntax"></a>構文
 
@@ -49,7 +49,7 @@ ms.locfileid: "94383067"
 
 |属性|説明|
 |---------------|-----------------|
-|`S` `upportUrl`|省略可能。 互換性のある適切な .NET Framework バージョンをダウンロードできる URL を指定します。|
+|`S` `upportUrl`|任意。 互換性のある適切な .NET Framework バージョンをダウンロードできる URL を指定します。|
 
 ## <a name="framework"></a>フレームワーク
  必須。 次の表に、要素がサポートする属性を示し `framework` ます。

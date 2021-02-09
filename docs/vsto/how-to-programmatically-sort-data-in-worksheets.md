@@ -14,15 +14,15 @@ helpviewer_keywords:
 - sorting data, in worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f09fed7f1caff68a485d9d0d98789555ec30889c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c01dfb8af04d94453065a79c8f183bee355d8ab4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523690"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877760"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>方法: プログラムによってワークシート内のデータを並べ替える
   実行時にワークシートの範囲およびリストに含まれているデータを並べ替えることができます。 次のコードは、複数の列で構成される `Fruits` という名前の範囲を、最初の列のデータを基に並べ替え、次に 2 番目の列のデータを基に並べ替えます。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ad73a207-b778-4dc5-b645-5ec668a63333
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6db69becfb16ebabbab782485e170bc761fd4577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cfc913ed80244c0f6cb323dc37a5b0faa8716b1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881023"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 バインド解除されたブレークポイントを取得します。
@@ -47,7 +47,7 @@ int GetBreakpoint(
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)インターフェイスを公開する**Cbreakpointunbounddebugeventbase**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)インターフェイスを公開する **Cbreakpointunbounddebugeventbase** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetBreakpoint(

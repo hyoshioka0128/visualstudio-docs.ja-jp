@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5cebadb35ae5d4cddcd0d4bfb4763979937318
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 469749c28acdb90e835082dd05010102ab50e52b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877617"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 配置でのサーバーおよびクライアント構成の問題
 Windows Server でインターネットインフォメーションサービス (IIS) を使用していて、Windows で認識されないファイルの種類 (Microsoft Word ファイルなど) が配置に含まれている場合、IIS はそのファイルの送信を拒否し、配置は成功しません。
@@ -33,7 +33,7 @@ Windows Server でインターネットインフォメーションサービス (
 
  この制限によってマニフェストやアセンブリなどのコアファイルのダウンロードに問題が発生することはありませんが [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、この制限によって、アプリケーションの一部として含まれているデータファイルをダウンロードできない場合があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 では、このエラーを解決するには、 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IIS 構成マネージャーからのそのようなファイルのダウンロードを禁止するハンドラーを削除します。 詳細については、IIS サーバーのドキュメントを参照してください。
 
- 一部の Web サーバーでは、 *.dll* 、 *.config* 、 *.mdf* などの拡張子を持つファイルがブロックされる場合があります。 Windows ベースのアプリケーションには、通常、これらの拡張機能を含むファイルが含まれます。 Web サーバー上のブロックされたファイルにアクセスするアプリケーションをユーザーが実行しようとすると [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、エラーが発生します。 では、すべてのファイル拡張子のブロックを解除するのではなく、既定では、すべての [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションファイルが *.deploy* ファイル拡張子で発行されます。 そのため、管理者は Web サーバーを構成して、次の3つのファイル拡張子をブロック解除する必要があります。
+ 一部の Web サーバーでは、 *.dll*、 *.config*、 *.mdf* などの拡張子を持つファイルがブロックされる場合があります。 Windows ベースのアプリケーションには、通常、これらの拡張機能を含むファイルが含まれます。 Web サーバー上のブロックされたファイルにアクセスするアプリケーションをユーザーが実行しようとすると [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、エラーが発生します。 では、すべてのファイル拡張子のブロックを解除するのではなく、既定では、すべての [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションファイルが *.deploy* ファイル拡張子で発行されます。 そのため、管理者は Web サーバーを構成して、次の3つのファイル拡張子をブロック解除する必要があります。
 
 - *. アプリケーション*
 
@@ -41,9 +41,9 @@ Windows Server でインターネットインフォメーションサービス (
 
 - *。配置*
 
-  ただし、このオプションを無効にするには、[ [発行オプション] ダイアログボックス](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))で [ **. .deploy ファイル拡張子を使用** する] オプションをオフにします。この場合、アプリケーションで使用されているすべてのファイル拡張子のブロックを解除するように Web サーバーを構成する必要があります。
+  ただし、このオプションを無効にするには、[[発行オプション] ダイアログボックス](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))で [ **. .deploy ファイル拡張子を使用** する] オプションをオフにします。この場合、アプリケーションで使用されているすべてのファイル拡張子のブロックを解除するように Web サーバーを構成する必要があります。
 
-  たとえば、.NET Framework をインストールしていない IIS を使用している場合や、別の Web サーバー (Apache など) を使用している場合は、 *.manifest* 、 *アプリケーション* 、および *. deploy* を構成する必要があります。
+  たとえば、.NET Framework をインストールしていない IIS を使用している場合や、別の Web サーバー (Apache など) を使用している場合は、 *.manifest*、 *アプリケーション*、および *. deploy* を構成する必要があります。
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce と Secure Sockets Layer (SSL)
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションは ssl 経由で動作しますが、Internet Explorer で ssl 証明書に関するプロンプトが表示される場合を除きます。 このプロンプトは、サイト名が一致しない場合や証明書の有効期限が切れている場合など、証明書に何らかの問題がある場合に発生する可能性があります。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]SSL 接続を使用して作業を行うには、証明書が最新であること、および証明書のデータがサイトデータと一致していることを確認してください。
@@ -62,7 +62,7 @@ Windows Server でインターネットインフォメーションサービス (
 > 展開プロバイダーが空白でない場合、または Microsoft .NET Framework Assistant 拡張機能がインストールされている場合は、Mozilla Firefox がサポートされます。 この拡張機能は .NET Framework 3.5 SP1 でパッケージ化されています。 XBAP のサポートの場合、NPWPF プラグインは必要に応じてアクティブ化されます。
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>ブラウザースクリプトを使用した ClickOnce アプリケーションのアクティブ化
- アクティブスクリプティングを使用してアプリケーションを起動するカスタム Web ページを開発した場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 一部のコンピューターでアプリケーションが起動しないことがあります。 Internet Explorer には、この動作に影響する [ **ファイルのダウンロードを自動的に** 確認する] という設定が含まれています。 この設定は、[ **オプション** ] メニューの [ **セキュリティ** ] タブにあり、この動作に影響します。 **ファイルのダウンロードを自動的に確認する** ように求められ、[ **ダウンロード** ] カテゴリの下に一覧表示されます。 既定では、プロパティはイントラネット Web ページに対して [ **有効** ] に設定されており、インターネット web ページでは既定で **無効** になっています。 この設定が [ **無効** ] に設定されている場合、プログラムによってアプリケーションをアクティブ化しようとすると [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (たとえば、その URL をプロパティに割り当てることによって `document.location` )、ブロックされます。 この場合、ユーザーは、アプリケーションの URL に設定されているハイパーリンクをクリックするなどして、ユーザーが開始したダウンロードを使用してのみアプリケーションを起動できます。
+ アクティブスクリプティングを使用してアプリケーションを起動するカスタム Web ページを開発した場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 一部のコンピューターでアプリケーションが起動しないことがあります。 Internet Explorer には、この動作に影響する [ **ファイルのダウンロードを自動的に** 確認する] という設定が含まれています。 この設定は、[**オプション**] メニューの [**セキュリティ**] タブにあり、この動作に影響します。 **ファイルのダウンロードを自動的に確認する** ように求められ、[**ダウンロード**] カテゴリの下に一覧表示されます。 既定では、プロパティはイントラネット Web ページに対して [ **有効** ] に設定されており、インターネット web ページでは既定で **無効** になっています。 この設定が [ **無効**] に設定されている場合、プログラムによってアプリケーションをアクティブ化しようとすると [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (たとえば、その URL をプロパティに割り当てることによって `document.location` )、ブロックされます。 この場合、ユーザーは、アプリケーションの URL に設定されているハイパーリンクをクリックするなどして、ユーザーが開始したダウンロードを使用してのみアプリケーションを起動できます。
 
 ## <a name="additional-server-configuration-issues"></a>サーバー構成に関するその他の問題
 
@@ -82,7 +82,7 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="use-third-party-web-servers"></a>サードパーティの Web サーバーを使用する
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]IIS 以外の Web サーバーからアプリケーションを配置する場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置マニフェストやアプリケーションマニフェストなど、キーファイルの不適切なコンテンツの種類をサーバーが返すと、問題が発生することがあります。 この問題を解決するには、新しいコンテンツタイプをサーバーに追加する方法に関する Web サーバーのヘルプドキュメントを参照し、次の表に記載されているすべてのファイル名拡張子のマッピングを確認してください。
 
-|ファイル名の拡張子|コンテンツ タイプ|
+|ファイル名の拡張子|Content type|
 |-------------------------|------------------|
 |`.application`|`application/x-ms-application`|
 |`.manifest`|`application/x-ms-manifest`|
@@ -96,7 +96,7 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>アプリケーションのインストールで FTP プロトコルがサポートされていない
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は、任意の HTTP 1.1 Web サーバーまたはファイルサーバーからのアプリケーションのインストールをサポートしています。 ファイル転送プロトコルの FTP は、アプリケーションのインストールではサポートされていません。 FTP を使用してアプリケーションのみを発行できます。 次の表は、これらの違いをまとめたものです。
 
-| URL の種類 | 説明 |
+| URL の種類 | Description |
 |----------| - |
 | ftp:// | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーションを公開できます。 |
 | http:// | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]このプロトコルを使用してアプリケーションをインストールできます。 |
@@ -112,7 +112,7 @@ Windows Server でインターネットインフォメーションサービス (
  既定では、Windows Server には FrontPage Server Extensions がインストールされていません。 を使用し [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] て FrontPage Server Extensions で HTTP を使用する Windows Server Web サーバーに発行する場合は、まず FrontPage Server Extensions をインストールする必要があります。 インストールを実行するには、Windows Server のサーバー管理ツールの管理ツールを使用します。
 
 ## <a name="windows-server-locked-down-content-types"></a>Windows Server: ロックダウンされたコンテンツの種類
- の IIS では、 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 特定の既知のコンテンツの種類 ( *.htm* 、 *.html* 、 *.txt* など) を除くすべてのファイルの種類がロックダウンされます。 このサーバーを使用してアプリケーションの展開を有効にするには、アプリケーションで [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用されるアプリケーション、 *マニフェスト* 、およびその他のカスタムファイルの種類のファイルをダウンロードできるように、IIS の設定を変更する必要があり *ます。*
+ の IIS では、 [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] 特定の既知のコンテンツの種類 ( *.htm*、 *.html*、 *.txt* など) を除くすべてのファイルの種類がロックダウンされます。 このサーバーを使用してアプリケーションの展開を有効にするには、アプリケーションで [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用されるアプリケーション、*マニフェスト*、およびその他のカスタムファイルの種類のファイルをダウンロードできるように、IIS の設定を変更する必要があり *ます。*
 
  IIS サーバーを使用してを展開する場合は、 *inetmgr.exe* を実行し、既定の Web ページの新しいファイルの種類を追加します。
 
@@ -130,7 +130,7 @@ Windows Server でインターネットインフォメーションサービス (
 ## <a name="http-compression-issues"></a>HTTP 圧縮に関する問題
  では [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、HTTP 圧縮を使用するダウンロードを実行できます。これは、クライアントにストリームを送信する前に、GZIP アルゴリズムを使用してデータストリームを圧縮する Web サーバーテクノロジです。 クライアント (この場合は) では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ファイルを読み取る前にストリームが圧縮解除されます。
 
- IIS を使用している場合は、HTTP 圧縮を簡単に有効にすることができます。 ただし、HTTP 圧縮を有効にすると、特定のファイルの種類 (つまり、HTML ファイルとテキストファイル) に対してのみ有効になります。 アセンブリ ( *.dll* )、xml ( *.xml* )、配置マニフェスト ( *. application* )、およびアプリケーションマニフェスト ( *.manifest* ) の圧縮を有効にするには、これらのファイルの種類を、IIS で圧縮する型のリストに追加する必要があります。 ファイルの種類を配置に追加するまでは、テキストファイルと HTML ファイルのみが圧縮されます。
+ IIS を使用している場合は、HTTP 圧縮を簡単に有効にすることができます。 ただし、HTTP 圧縮を有効にすると、特定のファイルの種類 (つまり、HTML ファイルとテキストファイル) に対してのみ有効になります。 アセンブリ (*.dll*)、xml (*.xml*)、配置マニフェスト (*. application*)、およびアプリケーションマニフェスト (*.manifest*) の圧縮を有効にするには、これらのファイルの種類を、IIS で圧縮する型のリストに追加する必要があります。 ファイルの種類を配置に追加するまでは、テキストファイルと HTML ファイルのみが圧縮されます。
 
  IIS の詳細な手順については、「 [HTTP 圧縮用に追加のドキュメントの種類を指定する方法](https://support.microsoft.com/help/234497)」を参照してください。
 

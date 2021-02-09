@@ -17,15 +17,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cbf03ef234ea6cf4eab790d96082d23b7ed5199
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882389"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>チュートリアル: VSTO アドインのコードを VBA から呼び出す
   このチュートリアルでは、VSTO アドインのオブジェクトを Visual Basic for Applications (VBA) アドインや COM VSTO アドインなど、他の Microsoft Office ソリューションに公開する方法について説明します。
@@ -143,7 +143,7 @@ ms.locfileid: "97527286"
 
 9. Excel を終了します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  VSTO アドインのプログラミングの詳細については、次の各トピックを参照してください。
 
 - `ThisAddIn` クラスを使用して、ホスト アプリケーションを自動化し、VSTO アドイン プロジェクトの他のタスクを実行する。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。

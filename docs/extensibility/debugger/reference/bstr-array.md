@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882213"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 文字列の配列を記述する構造体。
@@ -53,7 +53,7 @@ struct BSTR_ARRAY {
 
  [C++ のみ]個々の文字列は、を使用して解放する必要があり、 `SysFreeString` `Members` 配列はで解放する必要があり `CoTaskMemFree` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0138fcd73ddf07202a9111ec2b3d17dcc0fb7a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879424"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office Word のキーボードの設定、[オプション] ダイアログボックス
   Microsoft Office Word と Visual Studio の両方で、ショートカットキーが処理されます。 Word と Visual Studio では、同じショートカットキーの組み合わせを使用して、さまざまなコマンドを実行できます。 Word が Visual Studio のドキュメントレベルのプロジェクトで開かれている場合、一度に1つのアプリケーションだけがショートカットキーコマンドを受け取ります。 既定では、Visual Studio はすべてのショートカットキーコマンドを受け取りますが、[ **動的キーボードスキーム**] を選択して、ドキュメントにフォーカスがあるときに Word を受け取るようにすることができます。

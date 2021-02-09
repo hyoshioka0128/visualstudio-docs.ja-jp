@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <postActions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583711"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879437"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions &gt; 要素 (Office 開発)
   `postActions` 名前空間の `vstav3` の要素には、Office ソリューションのインストール後に実行する配置後アクションを説明する `postAction` 要素がすべて含まれています。
@@ -50,7 +50,7 @@ ms.locfileid: "91583711"
 
 ## <a name="post-deployment-action-example"></a>配置後アクションの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、 `postActions` を使用して配置する Office ソリューションに対するアプリケーション マニフェストの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

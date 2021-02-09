@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d808348528a64cc184c7a6c50359c057b2325a75
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: da527da4504d4c2d9375aee0209b0e261fe5fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877934"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>ClickOnce を使用して Office ソリューションを配置する
   ClickOnce を使用する場合は、少しの手順で Office ソリューションを配置できます。 更新プログラムを発行する場合は、ソリューションはそれらを自動的に検出してインストールします。 ただし、ClickOnce を使用する場合は、コンピューターのユーザーごとに、ソリューションを個別にインストールする必要があります。 そのため、複数のユーザーが同じコンピューターでソリューションを実行する場合は、Windows インストーラー (*.msi*) の使用を検討する必要があります。
@@ -157,7 +157,7 @@ ms.locfileid: "96845649"
 
 2. 構成しているコンピューター名、 **Web サイト** フォルダー、または web サイトを選択します。
 
-3. メニューバーで [**アクション** のプロパティ] を選択し  >  **Properties** ます。
+3. メニューバーで [**アクション** のプロパティ] を選択し  >  ます。
 
 4. [ **HTTP ヘッダー** ] タブで、[ **MIME の種類** ] ボタンをクリックします。
 
@@ -170,7 +170,7 @@ ms.locfileid: "96845649"
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>IIS 7.0 に MIME の種類 (.vsto) を追加するには
 
-1. IIS 7.0 を実行しているサーバーで、[**スタート**] [すべてのプログラム] [アクセサリ] の順に選択し  >  **All Programs**  >  **Accessories** ます。
+1. IIS 7.0 を実行しているサーバーで、[**スタート**] [すべてのプログラム] [アクセサリ] の順に選択し  >    >  ます。
 
 2. [**コマンドプロンプト**] のショートカットメニューを開き、[**管理者として実行**] を選択します。
 
@@ -196,7 +196,7 @@ ms.locfileid: "96845649"
 
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>配置後アクションを定義するクラスを作成します。
 
-1. メニューバーで、[**ファイル**] [  >  **Add**  >  **新しいプロジェクト** の追加] の順に選択します。
+1. メニューバーで、[**ファイル**] [  >    >  **新しいプロジェクト** の追加] の順に選択します。
 
 2. [ **新しいプロジェクトの追加** ] ダイアログボックスの [ **インストールされたテンプレート** ] ペインで、[ **Windows** ] フォルダーを選択します。
 
@@ -233,13 +233,13 @@ ms.locfileid: "96845649"
 
 5. **ソリューションエクスプローラー** で、 **excelworkbook** プロジェクトを選択します。
 
-6. メニューバーで、[**プロジェクト**] [新しいフォルダー] の順に選択し  >  **New Folder** ます。
+6. メニューバーで、[**プロジェクト**] [新しいフォルダー] の順に選択し  >  ます。
 
 7. **データ** を入力し、 **enter** キーを押します。
 
 8. **ソリューションエクスプローラー** で、[**データ**] フォルダーを選択します。
 
-9. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  **Add Existing Item** ます。
+9. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し  >  ます。
 
 10. [ **既存項目の追加** ] ダイアログボックスで、 **excelworkbook** プロジェクトの出力ディレクトリを参照し、 **ExcelWorkbook.xlsx** ファイルを選択して、[ **追加** ] ボタンをクリックします。
 

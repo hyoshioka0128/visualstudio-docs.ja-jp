@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6e8cf468-5fd1-4655-93ed-88828d6068b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 544bb2ed8a5526c04c46c6609c6bca3b6bf57bdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f4e3a99e35bd16f9986d1c4e9c59578a39cda1f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733779"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880854"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
 指定されたメタデータオブジェクトを使用して、指定したトークンに関連付けられている名前を返します。
@@ -56,7 +56,7 @@ int GetNameFromToken (
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する **Cdebugシンボルプロバイダー** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetNameFromToken(

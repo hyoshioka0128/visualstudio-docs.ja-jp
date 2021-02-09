@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3422cb53fb454b3585e0b8ba936ce692dfc68a4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 914b86e6e2b27d18e2089d44ce97810f82294c5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880347"
 ---
 # <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel キーボード、[設定]、[オプション] ダイアログボックス
   Microsoft Office Excel と Visual Studio の両方で、ショートカットキーが処理されます。 同じショートカットキーの組み合わせは、Excel や Visual Studio のさまざまなコマンドに使用できます。 Excel が Visual Studio のドキュメントレベルのプロジェクトで開かれている場合、一度に1つのアプリケーションだけがショートカットキーコマンドを受け取ります。 既定では、Visual Studio はすべてのショートカットキーコマンドを受け取りますが、[ **動的キーボードスキーム**] を選択して、ドキュメントにフォーカスがあるときに Excel を受け取るようにすることができます。

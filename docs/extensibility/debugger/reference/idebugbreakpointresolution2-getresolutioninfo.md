@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82aad1f435e152ce237fa1f2d2552d921f80621d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e31bdd47297a532a2eba69513aef01554791690e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881049"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 このブレークポイントを説明するブレークポイントの解決情報を取得します。
@@ -28,14 +28,14 @@ ms.locfileid: "80734772"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetResolutionInfo( 
+HRESULT GetResolutionInfo( 
    BPRESI_FIELDS       dwFields,
    BP_RESOLUTION_INFO* pBPResolutionInfo
 );
 ```
 
 ```csharp
-int GetResolutionInfo( 
+int GetResolutionInfo( 
    enum BPRESI_FIELDS   dwFields,
    BP_RESOLUTION_INFO[] pBPResolutionInfo
 );
@@ -52,7 +52,7 @@ int GetResolutionInfo( 
  成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。
 
 ## <a name="example"></a>例
- 次の例では、IDebugBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対して、このメソッドを実装して `CDebugBreakpointResolution` います。 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+ 次の例では、IDebugBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対して、このメソッドを実装して `CDebugBreakpointResolution` います。 [](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 
 ```
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(
