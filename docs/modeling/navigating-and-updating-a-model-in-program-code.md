@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897853"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>プログラム コードのモデル内を移動し、モデルを更新する
 
@@ -325,7 +325,7 @@ using (Transaction t = targetDiagram.Store.
 
  DSL 定義では、指定した各要素によって、次のいずれかの標準クラスから派生したクラスが作成されます。
 
-|要素の種類|基底クラス|
+|要素の種類|基本クラス|
 |-|-|
 |ドメインクラス|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |ドメインリレーションシップ|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|

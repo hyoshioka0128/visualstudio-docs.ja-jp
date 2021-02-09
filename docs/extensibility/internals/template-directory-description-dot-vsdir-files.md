@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edc4b4bcfe1ac1a85524517ba467e207a792e3cd
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898237"
 ---
 # <a name="template-directory-description-vsdir-files"></a>テンプレート ディレクトリの説明 (.Vsdir) ファイル
 テンプレートディレクトリ記述ファイル (.vsdir) は、統合開発環境 (IDE: integrated development environment) が、プロジェクトに関連付けられているフォルダー、ウィザード .vsz ファイル、およびテンプレートファイルをダイアログボックスに表示できるようにするテキストファイルです。 コンテンツには、ファイルまたはフォルダーごとに1つのレコードが含まれます。 参照先の場所にあるすべての .vsdir ファイルはマージされますが、複数のフォルダー、ウィザード、またはテンプレートファイルを記述するために通常提供されるのは1つの .vsdir ファイルだけです。

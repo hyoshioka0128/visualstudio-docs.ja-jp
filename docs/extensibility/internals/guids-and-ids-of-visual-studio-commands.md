@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898281"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio コマンドの Guid と Id
 Visual Studio 統合開発環境 (IDE) に含まれるコマンドの GUID と ID の値は、Visual Studio SDK の一部としてインストールされる、vsct ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
@@ -45,7 +45,7 @@ Visual Studio 統合開発環境 (IDE) に含まれるコマンドの GUID と I
 
 5. すべての **開い** ているドキュメントが [ **検索対象** ] ボックスに表示されていることを確認します。
 
-6. ボタン要素のセクションでテキストが選択されるまで、[**次を検索**] ボタンをクリックし `<Strings>` ます。 [Button element](../../extensibility/button-element.md)
+6. ボタン要素のセクションでテキストが選択されるまで、[**次を検索**] ボタンをクリックし `<Strings>` ます。 [](../../extensibility/button-element.md)
 
     `<Button>`コマンドが表示される要素は、コマンド定義です。
 
@@ -58,7 +58,7 @@ Visual Studio 統合開発環境 (IDE) に含まれるコマンドの GUID と I
 
      メニュー項目名のアンパサンド (&) 文字の前にある文字は、下線付きで表示されます。 ただし、 *vsct* ファイルは XML で記述されます。この XML では、アンパサンド (&) 文字を使用して特殊文字を指定し、表示するアンパサンドを *&amp; amp;* として指定する必要があります。 したがって、 *vsct* ファイルでは、 **Print** コマンドは *&amp; amp; として表示されます。印刷*。
 
-- [**保存**] などの動的なテキストと、[最近使ったファイル] の一覧にある項目などの動的に \<Current Filename\> 生成された **Recent Files** メニュー項目を含むコマンド。
+- [**保存**] などの動的なテキストと、[最近使ったファイル] の一覧にある項目などの動的に \<Current Filename\> 生成されたメニュー項目を含むコマンド。
 
      動的テキストを検索するための信頼性の高い方法はありません。 代わりに、visual [studio のメニューの guid と id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) 、または [visual studio のツールバーの guid と](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)id を参照して、目的のコマンドをホストするグループを検索し、そのグループの ID を検索します。 コマンド定義にグループが [親要素](../../extensibility/parent-element.md)として含まれていない場合は、コマンドの親を設定する要素に対して、 *sharedcmdplace. Vsct* および *shellcmdplace* (デバッガーコマンドの場合は *vsdbgcmdplace* ) を検索します。 `<CommandPlacement>` *Sharedcmdplace vsct*、 *shellcmdplace vsct*、および *vsdbgcmdplace* は *\<Visual Studio SDK installation path\> \VisualStudioIntegration\Common\Inc \\* フォルダーにあります。
 

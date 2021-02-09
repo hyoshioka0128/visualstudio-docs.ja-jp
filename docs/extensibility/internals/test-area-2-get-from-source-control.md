@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ed765f78a9e7330e5e1d3864c8a91b63239a3f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877703"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898222"
 ---
 # <a name="test-area-2-get-from-source-control"></a>テスト領域 2: ソース管理から取得
 このテスト領域は、Get コマンドを使用してバージョンストアから項目を取得するためのテストケースを対象とします。 これらのテストケースは、ローカルプロジェクトと Web プロジェクトの両方に適用できます。
@@ -46,7 +46,7 @@ ms.locfileid: "97877703"
 
 ## <a name="test-cases"></a>テスト ケース
 
-|アクション|テストステップ|確認が必要な結果|
+|操作|テストステップ|確認が必要な結果|
 |------------|----------------|--------------------------------|
 |ローカルに存在しないファイルの最新バージョンを取得する|1. プロジェクトを作成します。<br />2. プロジェクトに項目を追加します。<br />3. プロジェクトをソース管理下に配置します。<br />4. 項目のローカルコピーを削除します。<br />5. 項目の最新バージョンを取得します (ショートカットメニュー、 **最新バージョンの取得**)。|項目ファイルはローカルに取得されます。|
 |ローカルに存在しないファイルを取得する|1. プロジェクトを作成します。<br />2. プロジェクトに項目を追加します。<br />3. プロジェクトをソース管理下に配置します。<br />4. 項目のローカルコピーを削除します。<br />5. 項目 (**ファイル**、 **ソース管理**、 **取得** \<item> ) を取得します。|項目ファイルはローカルに取得されます。|

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - IDebugStopCompleteEvent2 interface
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da3eb33d76f55310e6428a34dd09cabbc271aa68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bee46a1f097d1bee98354acb792f75ea9431f301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719446"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897205"
 ---
 # <a name="idebugstopcompleteevent2"></a>IDebugStopCompleteEvent2
 
@@ -32,9 +32,9 @@ IDebugStopCompleteEvent2 : IUnknown
 
 - [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) は、マルチプロセスまたは複数プログラムのシナリオで SDM によって呼び出されます。 あるプログラムが SDM に停止イベントを送信すると、SDM は他のプログラムも停止するように要求します。
 
-Stop は、プログラムが停止したことを SDM に非同期に通知するために使用されます。 SDM の通知はインタープリターデバッグエンジンに役立ちます。これは、デバッグ対象のプログラム内でコードが実行されていない場合があります。そのため、 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) を同期的に完了することはできません。 デバッグエンジンがこの非同期通知を使用する場合は、Stop から戻る必要があり `S_ASYNC_STOP` ます。 [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)
+Stop は、プログラムが停止したことを SDM に非同期に通知するために使用されます。 SDM の通知はインタープリターデバッグエンジンに役立ちます。これは、デバッグ対象のプログラム内でコードが実行されていない場合があります。そのため、 [停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) を同期的に完了することはできません。 デバッグエンジンがこの非同期通知を使用する場合は、Stop から戻る必要があり `S_ASYNC_STOP` ます。 [](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ヘッダー: msdbg. h
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898504"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 プログラムの名前を取得します。
@@ -50,7 +50,7 @@ int GetProgramName (
 プログラムの名前は、プログラムのパスと同じではありませんが、プログラムの名前はそのようなパスの一部である場合があります。
 
 ## <a name="example"></a>例
-次の例は、IDebugProgramNode2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 関数は、 `MakeBstr` 指定された文字列のコピーを BSTR として割り当てます。
+次の例は、IDebugProgramNode2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [](../../../extensibility/debugger/reference/idebugprogramnode2.md) 関数は、 `MakeBstr` 指定された文字列のコピーを BSTR として割り当てます。
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {

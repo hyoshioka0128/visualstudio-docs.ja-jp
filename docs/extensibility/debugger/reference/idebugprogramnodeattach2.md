@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d527dfcfcd09e4d70adca86436aa56e1852bee70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898490"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 関連付けられているプログラムにアタッチしようとしたことをプログラムノードに通知します。
@@ -48,7 +48,7 @@ IDebugProgramNodeAttach2 : IUnknown
 
  メソッドの以前の実装で `IDebugProgramNode2::Attach_V7` 、指定されたコールバックインターフェイスが使用されていた場合、その機能を [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドの実装に移動し、インターフェイスを実装する必要はあり `IDebugProgramNodeAttach2` ません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
@@ -56,7 +56,7 @@ IDebugProgramNodeAttach2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)
 - [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

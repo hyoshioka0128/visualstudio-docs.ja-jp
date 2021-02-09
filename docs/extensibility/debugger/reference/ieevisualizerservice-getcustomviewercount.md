@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90f040c4ca0736a0312829d196d0991788357edc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d4aa1f082351e84348854457506b5428935a903
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897158"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 このメソッドは、このサービスから使用できる型ビジュアライザーの数を取得します。
@@ -28,14 +28,14 @@ ms.locfileid: "80718041"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetCustomViewerCount(
-   ULONG* pcelt
+HRESULT GetCustomViewerCount(
+   ULONG* pcelt
 );
 ```
 
 ```csharp
-int GetCustomViewerCount(
-   out uint pcelt
+int GetCustomViewerCount(
+   out uint pcelt
 );
 ```
 
@@ -46,7 +46,7 @@ int GetCustomViewerCount(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 - [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) は、型ビジュアライザーのサポートで、このメソッドに要求を渡します。
 
 ## <a name="see-also"></a>関連項目

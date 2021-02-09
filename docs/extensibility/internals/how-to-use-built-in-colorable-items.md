@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898317"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>方法: 組み込みの装飾項目を使用する
 組み込みの装飾項目を使用する前に、まず、独自のカスタム装飾項目 (この場合はオブジェクト) を提供しないことを統合開発環境 (IDE) に通知する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> ます。 これを行うには、言語サービスのレジストリエントリを設定します。
