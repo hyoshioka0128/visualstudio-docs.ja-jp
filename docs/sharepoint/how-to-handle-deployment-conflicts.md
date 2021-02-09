@@ -8,15 +8,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 975fa69a503f5e2acd3e90defd9fa9895c70db00
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903508"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885613"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>方法: 配置の競合を処理する
   SharePoint プロジェクト項目の配置の競合を処理する独自のコードを指定できます。 たとえば、現在のプロジェクト項目のファイルが配置場所に既に存在するかどうかを判断し、現在のプロジェクト項目が配置される前に配置済みのファイルを削除することができます。 配置の競合の詳細については、「 [SharePoint のパッケージ化と配置の拡張](../sharepoint/extending-sharepoint-packaging-and-deployment.md)」を参照してください。

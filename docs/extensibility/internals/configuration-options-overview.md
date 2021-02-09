@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8931066aef5f7163018fba540dd46dcfe5dcc0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884690"
 ---
 # <a name="configuration-options-overview"></a>構成オプションの概要
 のプロジェクトでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビルド、デバッグ、実行、および配置が可能な複数の構成をサポートできます。 構成は、プロパティの名前付きセット (通常はコンパイラスイッチとファイルの場所) で記述されたビルドの種類です。 既定では、新しいソリューションには、 *デバッグ* と *リリース* の2つの構成が含まれています。 これらの構成は、既定の設定を使用して適用することも、特定のソリューションやプロジェクトの要件に合わせて変更することもできます。 一部のパッケージは、ActiveX エディターとして、またはインプレースコンポーネントとして、2つの方法で構築できます。 ただし、プロジェクトでは複数の構成をサポートする必要はありません。 使用できる構成が1つだけの場合、その構成はすべてのソリューション構成にマップされます。
@@ -33,7 +33,7 @@ ms.locfileid: "96304740"
 
 |構成名|プラットフォーム: Win32|プラットフォーム: Win64|
 |------------------------|----------------------|----------------------|
-|*Debug*|\<Debug Win32 settings>|\<Debug Win64 settings>|
+|*デバッグ*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*リリース*|\<Release Win32 settings>|\<Release Win64 settings>|
 |*Myconfig.xml」*|該当なし|\<MyConfig Win64 settings>|
 

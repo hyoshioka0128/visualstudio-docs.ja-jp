@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52f655afd35ed316080a3a85ccfae047aa50d87f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883806"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 このインターフェイスは、スタックフレームプロパティまたはその他のプロパティへの参照を表します。
@@ -40,7 +40,7 @@ IDebugReference2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugReference2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|この参照を記述する [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 構造体を取得します。|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|文字列からこの参照の値を設定します。|
@@ -54,7 +54,7 @@ IDebugReference2 : IUnknown
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|この参照型を設定します。|
 |[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)|この参照と別の参照を比較します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 > [!NOTE]
 > この "property" の使用は、クラスのメンバー変数と混同しないようにしてください。ただし、は、この `IDebugReference2` ようなエンティティを表すことができます。
@@ -65,7 +65,7 @@ IDebugReference2 : IUnknown
 
  インターフェイスは、 `IDebugProperty2` 名前、型、およびアドレスを持つ値と考えることができます。 一方、は、 `IDebugReference2` 型とアドレスとして考えることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -73,7 +73,7 @@ IDebugReference2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)

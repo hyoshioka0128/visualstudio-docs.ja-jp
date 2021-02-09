@@ -16,17 +16,17 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849884"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885704"
 ---
-# <a name="how-to-create-an-event-receiver"></a>方法: イベントレシーバーを作成する
+# <a name="how-to-create-an-event-receiver"></a>方法: イベント レシーバーを作成する
   *イベントレシーバー* を作成することにより、ユーザーがリストやリストアイテムなどの SharePoint アイテムを操作するときに応答できます。 たとえば、ユーザーがカレンダーを変更したり、連絡先リストから名前を削除したりすると、イベントレシーバーのコードがトリガーされます。 このトピックでは、イベントレシーバーをリストインスタンスに追加する方法について説明します。
 
  これらの手順を完了するには、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Windows および SharePoint のエディションがインストールされ、サポートされている必要があります。 この例では SharePoint プロジェクトが必要であるため、「 [チュートリアル: サイト列、コンテンツタイプ、および sharepoint の一覧の作成](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)」の手順を完了している必要もあります。
@@ -40,7 +40,7 @@ ms.locfileid: "94849884"
 
 2. **ソリューションエクスプローラー** で、[**クリニック**] という名前の SharePoint プロジェクトノードを選択します。
 
-3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+3. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 4. [ **Visual C#** ] または [ **Visual Basic** で、[ **SharePoint** ] ノードを展開し、[ **2010** ] 項目を選択します。
 
