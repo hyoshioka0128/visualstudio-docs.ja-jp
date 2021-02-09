@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916060"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 プロパティの拡張情報を取得します。
@@ -28,14 +28,14 @@ ms.locfileid: "80721485"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );
@@ -51,7 +51,7 @@ int GetExtendedInfo ( 
 ## <a name="return-value"></a>戻り値
  成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 `S_GETEXTENDEDINFO_NO_EXTENDEDINFO`取得する拡張情報がない場合は、を返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドは、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) メソッドを呼び出すことによって取得されない情報を取得する目的で存在します。
 
  通常、次の Guid はこのメソッドによって認識されます (アセンブリでは名前が使用できないため、GUID 値は C# に対して指定されています)。 内部使用のために、追加の Guid を作成できます。

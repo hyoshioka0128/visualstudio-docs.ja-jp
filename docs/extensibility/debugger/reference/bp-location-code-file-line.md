@@ -9,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: e338c3b24ade2cf7663b77abea64f58425d3a068
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738004"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916281"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 コードソースファイル内の特定の行にあるブレークポイントの場所のデータを格納します。
@@ -43,7 +43,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 ## <a name="remarks"></a>解説
 この構造体は、共用体の一部として [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 構造体のメンバーになります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
