@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eeb5deffd0d6dbfb39da22db993bdb201bac5e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913480"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>方法: Office ソリューションを開発するようにコンピューターを構成する
   Visual Studio の Microsoft Office Developer Tools を使用できるように開発コンピューターを構成するには、次のトピックの手順を実行します。 これらの手順を実行するには、開発コンピューターの管理特権を保持している必要があります。

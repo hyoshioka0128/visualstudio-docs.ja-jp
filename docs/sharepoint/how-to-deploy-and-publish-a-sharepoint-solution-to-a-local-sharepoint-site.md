@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 65683544f345a2378fdec559f582985ffec7bc43
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 22fe46e2876b14551637dd97712e1728816b020e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913696"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>方法: SharePoint ソリューションをローカルの SharePoint サイトに配置および発行する
   開発用コンピューターのローカル SharePoint サーバーに SharePoint ソリューションを配置したり、発行したりすることができます。 配置プロセスでは、SharePoint サーバーに *.wsp* ファイルがコピーされ、ソリューションがインストールされて、機能がアクティブ化されます。 発行プロセスでは、 *.wsp* ファイルを SharePoint サーバーにコピーしてインストールするだけです。 SharePoint で有効にするには、手動でアクティブ化する必要があります。

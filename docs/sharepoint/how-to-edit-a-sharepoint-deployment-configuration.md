@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e64f805496d03b42ca70489bab1302ecf58b33bc
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 59354537f0c1f22534395da1e0ed3db3929a14a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913643"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>方法: SharePoint の配置構成を編集する
   展開構成を作成するか、既存の展開構成を変更することができます。 たとえば、1つの手順を実行したり、配置プロセスのステップの順序を変更したりできます。 組み込みの構成およびプログラムによって追加された構成は変更できないため、配置構成を作成または変更することができます。
@@ -30,7 +30,7 @@ ms.locfileid: "94903560"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>SharePoint の配置構成を作成するには
 
-1. **ソリューションエクスプローラー** で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**]、[ProjectName の _ProjectName_**プロパティ**] の順に選択します。
+1. **ソリューションエクスプローラー** で、SharePoint プロジェクトを選択し、メニューバーで [**プロジェクト**]、[ProjectName の **プロパティ**] の順に選択します。
 
 2. [ **SharePoint** ] タブで、[ **新規作成** ] をクリックします。
 
