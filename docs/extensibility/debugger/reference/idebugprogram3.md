@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9da63d54f64a4ef7592fdbc4d36e2b31220f82df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d22a58021a744cc71b8df3acb8e577d853aa2829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889994"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 このインターフェイスは、プロセスで実行されているプログラムを表し、スレッド情報を提供することによって [実行](../../../extensibility/debugger/reference/idebugprogram2-execute.md) を拡張します。
@@ -35,22 +35,22 @@ IDebugProgram3 : IDebugProgram3
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugProgram3` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|プログラムを実行します。 スレッドは、実行時にユーザーが表示しているスレッドにデバッガー情報を提供するために返されます。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  プログラムは、特定の実行時アーキテクチャで実行されるスレッドコンテナーであり、プロセスは1つ以上のプログラムで構成されます。
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [次へ](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)

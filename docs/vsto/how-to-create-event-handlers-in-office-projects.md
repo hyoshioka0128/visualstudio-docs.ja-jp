@@ -14,15 +14,15 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f87889c13021a7c0a43b58564210db34301abdf4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b2aed6102b6aed5938ecfab826363e62dcfac48a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846702"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889422"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>方法: Office プロジェクトでイベントハンドラーを作成する
   Visual Basic と C# でイベントハンドラーを作成するには、いくつかの方法があります。 デザインビューでコントロールの既定のイベントハンドラーを作成するには、コントロールをダブルクリックするか、[ **プロパティ** ] ウィンドウの [イベント] ペインを使用して、コントロール上の任意のイベントのハンドラーを作成します。 ただし、コードビューでは、デザインビューに切り替えてイベントハンドラーを作成する必要がない場合があります。

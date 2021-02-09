@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891190"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 このインターフェイスは、特定のポートでのプロセスとプログラムの作成と破棄をリスナーに通知します (通常、セッションデバッグマネージャー (SDM) またはデバッグエンジン)。 この情報は、ポートで実行されているプロセスとプログラムのリアルタイムビューを表示するために使用できます。
@@ -46,7 +46,7 @@ IDebugPortEvents2 : IUnknown
 
  ポートイベントは、このインターフェイスによって SDM に渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -54,5 +54,5 @@ IDebugPortEvents2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

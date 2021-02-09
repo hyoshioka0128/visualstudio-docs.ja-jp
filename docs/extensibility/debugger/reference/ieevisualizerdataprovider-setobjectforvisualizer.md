@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab63f1e74e0cd3ac64a4d7e7687a9136075b41a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50d68b5cdb7399dc391ef90150f0b6a156783301
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718081"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890839"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 このメソッドは、ビジュアライザーが表すオブジェクトを変更します。
@@ -28,18 +28,18 @@ ms.locfileid: "80718081"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetObjectForVisualizer(
-   IDebugObject*  pNewObject,
-   BSTR*          error,
-   IDebugObject** pException
+HRESULT SetObjectForVisualizer(
+   IDebugObject*  pNewObject,
+   BSTR*          error,
+   IDebugObject** pException
 );
 ```
 
 ```csharp
-int SetObjectForVisualizer(
-   IDebugObject     pNewObject,
-   out string       error,
-   out IDebugObject pException
+int SetObjectForVisualizer(
+   IDebugObject     pNewObject,
+   out string       error,
+   out IDebugObject pException
 );
 ```
 
@@ -56,7 +56,7 @@ int SetObjectForVisualizer(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  エラー情報が返される方法は、実装者が決定します。 ただし、一部の呼び出し元では、エラーが発生したことを認識するために例外オブジェクトが返されたかどうかのみを調べることができます。したがって、エラーが発生した場合、このメソッドは常に例外オブジェクトを返します。 エラー文字列は、呼び出し元が使用しようとしている場合にも指定する必要があります。
 
 ## <a name="see-also"></a>関連項目

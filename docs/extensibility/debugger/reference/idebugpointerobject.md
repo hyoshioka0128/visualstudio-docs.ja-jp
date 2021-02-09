@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 257fa167-b46e-4ffb-9a12-272efbf26702
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b28189b3f0a07a27f5e4478f64963a63d634db5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 134c1edabb7df7a5cb7f26ce1b7b7487daa78e37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890202"
 ---
 # <a name="idebugpointerobject"></a>IDebugPointerObject
 > [!IMPORTANT]
@@ -28,7 +28,7 @@ ms.locfileid: "80725492"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugPointerObject : IDebugObject
+IDebugPointerObject : IDebugObject
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -40,7 +40,7 @@ IDebugPointerObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスは、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)から継承されたメソッドに加えて、 `IDebugPointerObject` 次のメソッドを公開します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[Dereference](../../../extensibility/debugger/reference/idebugpointerobject-dereference.md)|インターフェイスが指すオブジェクトを取得します。|
 |[GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)|インターフェイスが連続する一連のバイトとして指す値を取得します。|
@@ -49,7 +49,7 @@ IDebugPointerObject : IDebugObject
 ## <a name="remarks"></a>解説
  式エバリュエーターは、このインターフェイスを使用して、解析ツリー内のポインターを表します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

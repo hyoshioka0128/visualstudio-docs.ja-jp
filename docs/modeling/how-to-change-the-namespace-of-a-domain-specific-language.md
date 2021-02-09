@@ -8,16 +8,16 @@ helpviewer_keywords:
 - Domain-Specific Language, namespace
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: a7b0de26fdc1a7982347a12c283a6aa73e9aad12
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29835e993d287c981ad1c4014af3dc276891af5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890501"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>方法: ドメイン固有言語の名前空間を変更する
 
@@ -25,7 +25,7 @@ ms.locfileid: "90809441"
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>ドメイン固有言語の名前空間を変更するには
 
-1. **Dsl エクスプローラー**で**dsl**ノードを選択します。
+1. **Dsl エクスプローラー** で **dsl** ノードを選択します。
 
 2. [ **プロパティ** ] ウィンドウで、" **名前空間** " プロパティを変更します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "90809441"
 
 6. " **既定の名前空間** " プロパティを新しい名前空間の名前に変更します。
 
-7. アセンブリの名前も変更する場合は、[**アセンブリ名] プロパティ**を変更します。
+7. アセンブリの名前も変更する場合は、[**アセンブリ名] プロパティ** を変更します。
 
 8. アセンブリ名を変更した場合は、この行を開き、次の行を更新します。
 
@@ -49,12 +49,12 @@ ms.locfileid: "90809441"
 
 10. Visual Studio の実験的なインスタンスをリセットします。
 
-    1. Delete **\ Users \\ **_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**。
+    1. Delete **\ Users \\**_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**。
 
-    2. Windows の [**スタート**] メニューで、[**すべてのプログラム**] を選択し  >  ます。**2010 SDK**  >  **Tools**Microsoft Visual Studio  >  **実験用インスタンスをリセット**します。
+    2. Windows の [**スタート**] メニューで、[**すべてのプログラム**] を選択し  >  ます。**2010 SDK**  >  **Tools** Microsoft Visual Studio  >  **実験用インスタンスをリセット** します。
 
 11. [ **ビルド** ] メニューの [ **ソリューションのリビルド**] をクリックします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 [ドメイン固有言語ツールの用語集](/previous-versions/bb126564(v=vs.100))

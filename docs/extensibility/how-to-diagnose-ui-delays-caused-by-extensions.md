@@ -6,14 +6,14 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: jillfra
+manager: jmartens
 ms.workload: multiple
-ms.openlocfilehash: 965e96a7881e20eca035b61ed7fd6f29398e71c6
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 508fdd44a1c73f66d88317b7ec304e810f5f12e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890800"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>方法: 拡張機能による診断 UI の遅延
 
@@ -114,7 +114,7 @@ PerfView がトレースを処理して開くには、数分かかることが�
 
 1. トレースの下にあるノードを選択 `Events` し、右クリックまたはコンテキストメニューから [**開く**] を選択して、イベントビューを開きます。
 2. 左側のウィンドウで [] を選択し `Microsoft-VisualStudio/ExtensionUIUnresponsiveness` ます。
-3. Enter キーを押します
+3. Enter キーを押す
 
 選択内容が適用され、すべての `ExtensionUIUnresponsiveness` イベントが右ペインに表示されます。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1717397d9ff073642c7b6bc25ad85babe76d684c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890748"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 このインターフェイスは、現在のデバッグセッションで実行されているプログラムを列挙します。
@@ -37,7 +37,7 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugPrograms2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|列挙シーケンス内の指定された数のプログラムを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|列挙シーケンス内の指定された数のプログラムをスキップします。|
@@ -45,18 +45,18 @@ IEnumDebugPrograms2 : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|列挙子内のプログラムの数を取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  Visual Studio では、このインターフェイスを使用して次のことを行います。
 
 - [ **モジュール** ] ウィンドウを設定します ( [enumprograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) を呼び出して、各プログラムで [enumprograms](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) を呼び出します)。
 
-- [**プロセスにアタッチ**] の一覧を作成し `IDebugProcess2::EnumPrograms` ます (を呼び出し、各[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出して[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)インターフェイスを取得します)。
+- [**プロセスにアタッチ**] の一覧を作成し `IDebugProcess2::EnumPrograms` ます (を呼び出し、各 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)インターフェイスで [QueryInterface](/cpp/atl/queryinterface)を呼び出して [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)インターフェイスを取得します)。
 
 - プロセス内の各プログラムをデバッグできる DEs の一覧を生成します ( [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)を使用)。
 
 - エディットコンティニュ (ENC) の更新プログラムを各プログラムに適用します (IDebugProcess2:: EnumPrograms を呼び出し、次に [Getencupdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)を呼び出します)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -64,6 +64,6 @@ IEnumDebugPrograms2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)
