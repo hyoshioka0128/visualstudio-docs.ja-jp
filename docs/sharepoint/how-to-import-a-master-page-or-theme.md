@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913672"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>方法: マスターページまたはテーマをインポートする
   マスターページとテーマを作成して使用することで、SharePoint サイトのページに一貫した外観を与えることができます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] では、これらの要素のテンプレートは提供されませんが、SharePoint デザイナーで作成してにインポートすることができ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 詳細については、Microsoft web サイトの「 [ビルディングブロック: Pages And User Interface](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 」を参照してください。
@@ -31,7 +31,7 @@ ms.locfileid: "94903495"
 
      SharePoint プロジェクトを作成する方法の詳細については、「 [sharepoint プロジェクトとプロジェクト項目テンプレート](../sharepoint/sharepoint-project-and-project-item-templates.md)」を参照してください。
 
-2. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+2. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 3. [ **新しい項目の追加** ] ダイアログボックスで、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "94903495"
 
 6. モジュールノードを選択します。
 
-7. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し、  >  **Add Existing Item** マスターページまたはテーマファイルを選択します。
+7. メニューバーで、[**プロジェクト**] [既存の項目の追加] の順に選択し、  >  マスターページまたはテーマファイルを選択します。
 
      マスターページファイルの拡張子は .master で、テーマファイルの拡張子は thmx です。
 
@@ -85,14 +85,14 @@ ms.locfileid: "94903495"
     > [!NOTE]
     > テーマはサイトコレクションレベルにのみ適用されるため、テーマのスコープを [ **サイト**] 以外に設定しないことをお勧めします。 テーマがサブサイトで使用されている場合、エラーが発生することがあります。
 
-12. メニューバーで、[**ビルド**] [ソリューションの配置] の順に選択し  >  **Deploy Solution** ます。
+12. メニューバーで、[**ビルド**] [ソリューションの配置] の順に選択し  >  ます。
 
 13. ファイルが正しく配置されているかどうかを確認するには、SharePoint サイトを開き、[ **サイトの操作** ] メニューを選択し、[ **サイトの設定** ] コマンドを選択して、[ **マスターページ** ] リンクまたは [ **テーマ** ] リンクを選択します。
 
      マスターページまたはテーマの一覧が表示され、インポートしたマスターページまたはテーマのいずれかが含まれます。
 
 ## <a name="see-also"></a>関連項目
-- [マスターページ](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
+- [マスター ページ](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
 - [既存の SharePoint サイトからのアイテムのインポート](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [SharePoint のページを作成する](../sharepoint/creating-pages-for-sharepoint.md)
 - [モジュールを使用してソリューションにファイルを含める](../sharepoint/using-modules-to-include-files-in-the-solution.md)

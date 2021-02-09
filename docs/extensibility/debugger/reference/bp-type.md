@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 02550141fb1857214d5bfd80d5dd86969bec9fba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d01485a6044122baf460eede90470c5cc1478323
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912994"
 ---
 # <a name="bp_type"></a>BP_TYPE
 ブレークポイントがコードの場所にあるか、データの場所であるか、または別の種類のブレークポイントであるかを指定します。
@@ -62,7 +62,7 @@ public enum enum_BP_TYPE {
 ## <a name="remarks"></a>解説
 [Getbreakpointtype](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)メソッドおよび[getbreakpointtype](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)メソッドにパラメーターとして渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

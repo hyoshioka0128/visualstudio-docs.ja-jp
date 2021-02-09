@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c88b50644d1adda2dd0eaa3b74a828f9739d70b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f273bbab4a85f03a7da0d155d8b9e081693987c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912977"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 2つのメモリコンテキストを比較するための条件を指定します。
@@ -89,7 +89,7 @@ public enum enum_CONTEXT_COMPARE {
 
 これらの値は、指定された比較条件を満たすリスト内の最初のメモリコンテキストを検索するために使用されます。 メモリコンテキストには、メソッドを通じて比較するメモリコンテキストのリストが与えられ `IDebugMemoryContext2::Compare` ます。 次に、比較演算子があるリスト内の最初のメモリコンテキスト `true` が返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

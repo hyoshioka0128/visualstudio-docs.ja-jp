@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b398e7ee549026750cbdff7b7fede8522116f346
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c0d67afa2b20e239180848ef1e68d0f0a0c3079
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912960"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 メモリコンテキストについて取得する情報を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80737589"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_CONTEXT_INFO_FIELDS {
+enum enum_CONTEXT_INFO_FIELDS {
     CIF_MODULEURL =       0x00000001,
     CIF_FUNCTION =        0x00000002,
     CIF_FUNCTIONOFFSET =  0x00000004,
@@ -78,7 +78,7 @@ public enum enum_CONTEXT_INFO_FIELDS {
 
 これらの値は、ビットごとの OR と組み合わせることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

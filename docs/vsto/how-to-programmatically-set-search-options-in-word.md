@@ -14,15 +14,15 @@ helpviewer_keywords:
 - searching, Word options
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 45af6a801a146838919402c31be502cf4825e718
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e583b7deb9fbe37f40e582d2c8a946332dd00ffa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913466"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>方法: プログラムによって Word の検索オプションを設定する
   Microsoft Office Word 文書で選択する検索オプションを設定するには、次の2つの方法があります。

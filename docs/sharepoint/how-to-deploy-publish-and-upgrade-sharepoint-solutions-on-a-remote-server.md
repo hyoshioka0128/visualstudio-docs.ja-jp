@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: db476af4a9d3be9cab2109fb3489d0767765075f
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: ab301f11ffdae03564f05388dfbba55a90d12391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913688"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>方法: リモートサーバー上で SharePoint ソリューションを配置、発行、およびアップグレードする
   SharePoint ソリューションをローカルシステムに配置するだけでなく、リモートサイトまたはローカル SharePoint サイトに対して、サンドボックス化された SharePoint ソリューションを発行できます。 リモート発行プロセスでは、SharePoint サーバーに *.wsp* ファイルがコピーされ、ソリューションがインストールされて、ソリューションのアクティブ化が可能になります。 リモート SharePoint ソリューションを変更した後に、そのインストールをアップグレードすることもできます。

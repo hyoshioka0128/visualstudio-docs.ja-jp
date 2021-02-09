@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f9e123399ed2378eaf63944f9a1527ef024c0cd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fe47e53b1b95f69c80fd248f59de4cf23bf9c88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913006"
 ---
 # <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 さまざまな種類のコンストラクターを選択します。
@@ -56,7 +56,7 @@ public enum ConstructorMatchOptions {
 ## <a name="remarks"></a>解説
 [Enumconstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

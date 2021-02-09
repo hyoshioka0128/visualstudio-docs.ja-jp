@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761232"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912751"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>方法: ソース管理プラグインをインストールする
 ソース管理プラグインの作成には、次の3つのステップが含まれます。
@@ -37,7 +37,7 @@ ms.locfileid: "96761232"
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>ソース管理プラグイン DLL を登録するには
 
-1. Company name サブキーの後に product name サブキーを指定して、 **SOFTWARE** サブキーの **HKEY_LOCAL_MACHINE** キーの下に2つのエントリを追加します。 パターンは **\\ \<company name> \\HKEY_LOCAL_MACHINE\SOFTWARE\<product name> \\ 値 \<entry>**  =  *value* です。 2つのエントリは、常に **Sccservername** および **Sccserverpath** と呼ばれます。 各は通常の文字列です。
+1. Company name サブキーの後に product name サブキーを指定して、 **SOFTWARE** サブキーの **HKEY_LOCAL_MACHINE** キーの下に2つのエントリを追加します。 パターンは **\\ \<company name> \\HKEY_LOCAL_MACHINE\SOFTWARE\<product name> \\ 値 \<entry>**  =  です。 2つのエントリは、常に **Sccservername** および **Sccserverpath** と呼ばれます。 各は通常の文字列です。
 
     たとえば、会社名が Microsoft で、ソース管理製品に SourceSafe という名前が付いている場合、このレジストリパスは **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe** になります。 このサブキーでは、最初のエントリ **Sccservername** は、ユーザーが判読できる、製品の名前付きの文字列です。 2番目のエントリである **Sccserverpath** は、IDE が接続するソース管理プラグイン DLL への完全パスです。 レジストリエントリの例を次に示します。
 
@@ -55,7 +55,7 @@ ms.locfileid: "96761232"
 
       **HideInVisualStudio** は DWORD 値で、プラグインを非表示にするには *1* に、プラグインを表示するには *0* に設定されています。 レジストリエントリが表示されない場合、既定の動作ではプラグインが表示されます。
 
-   - **Disablesccmanager** レジストリエントリを使用して、通常は [**ファイル** ソース管理] サブメニューに表示される [**起動 \<Source Control Server>** ] メニューオプションを無効または非表示にすることができ  >  **Source Control** ます。 このメニューオプションを選択すると、 [SccRunScc](../../extensibility/sccrunscc-function.md) 関数が呼び出されます。 ソース管理プラグインが外部プログラムをサポートしていない可能性があるため、[ **起動** ] メニューオプションを無効にしたり、非表示にしたりすることもできます。
+   - **Disablesccmanager** レジストリエントリを使用して、通常は [**ファイル** ソース管理] サブメニューに表示される [**起動 \<Source Control Server>** ] メニューオプションを無効または非表示にすることができ  >  ます。 このメニューオプションを選択すると、 [SccRunScc](../../extensibility/sccrunscc-function.md) 関数が呼び出されます。 ソース管理プラグインが外部プログラムをサポートしていない可能性があるため、[ **起動** ] メニューオプションを無効にしたり、非表示にしたりすることもできます。
 
       **Disablesccmanager** は DWORD 値です。 *0* に設定すると、[**起動 \<Source Control Server>** ] メニューオプションが有効になります。また、メニューオプションを無効にするには *1* に設定し、メニューオプションを非表示にするには [ *2* ] に設定します。 このレジストリエントリが表示されない場合、既定の動作ではメニューオプションが表示されます。
 
@@ -81,7 +81,7 @@ ms.locfileid: "96761232"
 
     このエントリの名前は、ユーザーが判読できるプロバイダーの名前 (SCCServerName エントリに指定された値と同じ) で、値は、手順 1. で作成したサブキーと同じになります。 パターンは、 **\\ 表示 \> 名**  =  *ソフトウェア \\<会社名 \> \\<製品名 \>*<HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProvidersます。
 
-    例:
+    次に例を示します。
 
    |レジストリエントリのサンプル|値の例|
    |---------------------------|------------------|

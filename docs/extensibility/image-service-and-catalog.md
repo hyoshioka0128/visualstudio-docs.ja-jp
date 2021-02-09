@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912736"
 ---
 # <a name="image-service-and-catalog"></a>イメージサービスとカタログ
 このクックブックには、visual studio イメージサービスと Visual Studio 2015 で導入されたイメージカタログを採用するためのガイダンスとベストプラクティスが含まれています。
@@ -106,8 +106,8 @@ ms.locfileid: "96993537"
 |**サブ要素**|**定義**|
 |-|-|
 |[インポート]|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
-|GUID|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|
-|ID|シンボルは ID を表し、負でない整数である必要があります|
+|Guid|シンボルは GUID を表し、GUID の書式設定と一致する必要があります|
+|id|シンボルは ID を表し、負でない整数である必要があります|
 |String|シンボルは任意の文字列値を表します。|
 
  シンボルは大文字と小文字が区別され、$ (symbol-name) 構文を使用して参照されます。
@@ -127,7 +127,7 @@ ms.locfileid: "96993537"
 |ManifestFolder|マニフェストファイルを含むフォルダー|
 |マイドキュメント]|現在のユーザーの [マイドキュメント] フォルダーの完全なパス|
 |ProgramFiles|% ProgramFiles% 環境変数の値|
-|システム|*Windows\System32* フォルダー|
+|System (システム)|*Windows\System32* フォルダー|
 |WinDir|% WinDir% 環境変数の値|
 
  **イメージ**
@@ -145,8 +145,8 @@ ms.locfileid: "96993537"
 
 |**属性**|**定義**|
 |-|-|
-|GUID|必要イメージモニカーの GUID 部分|
-|ID|必要イメージモニカーの ID 部分|
+|Guid|必要イメージモニカーの GUID 部分|
+|id|必要イメージモニカーの ID 部分|
 |AllowColorInversion|[省略可能、既定値は true]画像の色を、濃色の背景で使用するときにプログラムによって反転するかどうかを示します。|
 
  **ソース**
@@ -181,10 +181,10 @@ ms.locfileid: "96993537"
 
 |**属性**|**定義**|
 |-|-|
-|型|必要ネイティブリソースの型 (XAML または PNG)|
-|ID|必要ネイティブリソースの整数の ID 部分|
+|Type|必要ネイティブリソースの型 (XAML または PNG)|
+|id|必要ネイティブリソースの整数の ID 部分|
 
- **リスト**
+ **ImageList**
 
  要素は、 \<ImageList> 1 つのストリップで返すことができるイメージのコレクションを定義します。 ストリップは必要に応じて構築されます。
 
@@ -197,8 +197,8 @@ ms.locfileid: "96993537"
 
 |**属性**|**定義**|
 |-|-|
-|GUID|必要イメージモニカーの GUID 部分|
-|ID|必要イメージモニカーの ID 部分|
+|Guid|必要イメージモニカーの GUID 部分|
+|id|必要イメージモニカーの ID 部分|
 |外部|[省略可能、既定値は false]イメージモニカーが現在のマニフェスト内のイメージを参照しているかどうかを示します。|
 
  含まれているイメージのモニカーは、現在のマニフェストで定義されているイメージを参照する必要がありません。 含まれているイメージがイメージライブラリに見つからない場合は、空白のプレースホルダーイメージが代わりに使用されます。
@@ -738,7 +738,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  イメージライブラリビューアーツールでは、イメージマニフェストを読み込んで、Visual Studio がマニフェストを正しく作成するのと同じ方法でユーザーが操作できるようにすることができます。 ユーザーは、背景、サイズ、DPI 設定、ハイコントラストなどの設定を変更できます。 また、マニフェスト内のエラーを検出するための読み込み情報が表示され、マニフェスト内の各イメージのソース情報が表示されます。
 
-## <a name="faq"></a>よく寄せられる質問
+## <a name="faq"></a>FAQ
 
 - 読み込み時に含める必要がある依存関係はあり \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ますか。
 
@@ -1028,7 +1028,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphRecursion||再帰|
     |GlyphXmlItem||タグ|
     |GlyphJSharpProject||DocumentCollection|
-    |GlyphJSharpDocument||ドキュメント|
+    |GlyphJSharpDocument||マニュアル名の正式名称|
     |GlyphForwardType||GoToNext|
     |GlyphCallersGraph||CallTo|
     |GlyphCallGraph||CallFrom|
