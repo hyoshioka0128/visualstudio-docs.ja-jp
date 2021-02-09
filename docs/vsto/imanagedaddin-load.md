@@ -8,15 +8,15 @@ dev_langs:
 helpviewer_keywords: ''
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920338"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   管理対象の VSTO アドインが読み込まれるときに呼び出されます。
@@ -30,7 +30,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |*bstrManifestURL*|VSTO アドインのマニフェストの完全なパス。|
 |*pdispApplication*|VSTO アドインを読み込んでいるホストアプリケーションを表す IDispatch へのポインター。|
@@ -41,10 +41,10 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>解説
  マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。 たとえば、マニフェストには、VSTO アドイン アセンブリの場所や、VSTO アドインが読み込まれるときにインスタンス化するエントリ ポイント クラスを指定できます。
 
- *Bstrmanifesturl*パラメーターには、 `Manifest` VSTO アドインの**HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \ Addins \\ _\<add-in ID>_ **レジストリキーの下にあるエントリの値が含まれます。 詳細については、「 [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)」を参照してください。
+ *Bstrmanifesturl* パラメーターには、 `Manifest` VSTO アドインの **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \ Addins \\ _\<add-in ID>_** レジストリキーのエントリの値が含まれています。 詳細については、「 [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)」を参照してください。
 
  読み込まれる VSTO アドインのアプリケーション ドメインやセキュリティ ポリシーの構成などのタスクを実行するように、 [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) メソッドを実装します。
 
 ## <a name="see-also"></a>関連項目
-- [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)
+- [IManagedAddin インターフェイス](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

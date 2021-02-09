@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e9987e9427c0fe982cf3ddcb88ce8071caab04b0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921783"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>チュートリアル: 実行時における VSTO アドインプロジェクトのワークシートへのコントロールの追加
   Excel VSTO アドインを使用して、任意の開いているワークシートにコントロールを追加できます。 このチュートリアルでは、リボンを使用してユーザーがワークシートに <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange>、および <xref:Microsoft.Office.Tools.Excel.ListObject> を追加できるようにする方法を説明します。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
@@ -184,7 +184,7 @@ ms.locfileid: "97522775"
 
      Sheet1 に追加したコントロールは表示されなくなります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Excel VSTO アドイン プロジェクトのコントロールの詳細については、以下のトピックをご覧ください。
 
 - コントロールをワークシートに保存する方法の詳細については、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の「Excel VSTO アドイン動的コントロールのサンプル」を参照してください。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e81d20dc179df76b759223c1460ca13bfceb5706
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 569a3bea98095afebb243c521db02410879b0b59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920363"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>チュートリアル: リボン XML を使用したカスタムタブの作成
   このチュートリアルでは、 **リボン (XML)** 項目を使用してカスタムリボンタブを作成する方法について説明します。
@@ -145,7 +145,7 @@ ms.locfileid: "97524887"
 
      ドキュメント内のカーソルの現在位置に表が追加されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  Office UI をカスタマイズする方法の詳細については、次のトピックで説明します。
 
 - 別の Office アプリケーションのリボンをカスタマイズします。 リボンのカスタマイズをサポートするアプリケーションの詳細については、「 [リボンの概要](../vsto/ribbon-overview.md)」を参照してください。

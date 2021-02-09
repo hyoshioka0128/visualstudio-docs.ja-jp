@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920217"
 ---
 # <a name="work-with-documents"></a>ドキュメントを操作する
   このセクションのトピックでは、Microsoft Office Word のオブジェクト モデルを使用して Office プロジェクト内の文書を操作する手順とコード例を示します。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |Normal テンプレートまたは別のテンプレートに基づいて文書を作成します。|[方法: プログラムによって新しいドキュメントを作成する](../vsto/how-to-programmatically-create-new-documents.md)|
 |指定された文書を読み取り/書き込みまたは読み取り専用として開きます。|[方法: プログラムによって既存のドキュメントを開く](../vsto/how-to-programmatically-open-existing-documents.md)|

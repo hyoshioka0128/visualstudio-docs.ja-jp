@@ -12,20 +12,20 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d58576c999d11441122bb0b2115d2367b7ce04ce
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 294ff749f338df12cc2ca9edeab28d07786c7018
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920172"
 ---
 # <a name="work-with-worksheets"></a>ワークシートを操作する
   <xref:Microsoft.Office.Tools.Excel.Worksheet> クラスと <xref:Microsoft.Office.Interop.Excel.Worksheet> クラスには、ワークシート関連のタスクを実行するときに使用するメソッドとプロパティが含まれています。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |新しいワークシートをブックに追加する。|[方法: プログラムによって新しいワークシートをブックに追加する](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|
 |ブック内の指定した場所にワークシートのコピーを作成する。|[方法: プログラムによってワークシートをコピーする](../vsto/how-to-programmatically-copy-worksheets.md)|

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846767"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921914"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>方法: リボンのタブの位置を変更する
   リボンのカスタムタブの順序は、 **タブコレクションエディター** を使用して変更できます。 リボンの組み込みタブの前または後にカスタムタブを配置できます。 組み込みタブは、Microsoft Office アプリケーションのリボンに用意されているタブです。 たとえば、[ **データ** ] タブは Excel の組み込みタブです。

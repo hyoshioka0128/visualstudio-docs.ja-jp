@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], collecting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920366"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>チュートリアル: Windows フォームを使用したデータの収集
   このチュートリアルでは、Microsoft Office Excel のドキュメント レベルのカスタマイズから Windows フォームを開き、ユーザーから情報を収集し、その情報をワークシートのセルに書き込む方法について説明します。
@@ -131,7 +131,7 @@ ms.locfileid: "97527175"
 
 4. ワークシートのセル **A1** に **Hello World** と表示されることを確認します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルでは、Windows フォームを表示しワークシートにデータを渡すための基本操作を説明しました。 これ以外にも、次の操作が可能です。
 
 - Excel ブックまたは Word 文書で Windows フォーム コントロールを使用する。 詳細については、「 [Office ドキュメントのコントロールの Windows フォームの概要](../vsto/windows-forms-controls-on-office-documents-overview.md)」を参照してください。
