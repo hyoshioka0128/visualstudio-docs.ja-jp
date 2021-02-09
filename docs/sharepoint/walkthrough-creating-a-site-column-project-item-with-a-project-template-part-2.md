@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915142"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918718"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>チュートリアル: プロジェクトテンプレートを使用してサイト列プロジェクト項目を作成する (第2部)
   SharePoint プロジェクト項目のカスタム種類を定義し、Visual Studio でその種類をプロジェクト テンプレートと関連付けてから、テンプレート用のウィザードを用意することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクト項目を含む新しいプロジェクトを作成するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -179,7 +179,7 @@ ms.locfileid: "96915142"
 
 5. **Sharepointcommands** プロジェクトで、Commands という名前の別のコードファイルを追加します。
 
-6. Sharepointcommands プロジェクトを選択し、メニューバーで [**プロジェクト**] [参照の追加] の順に選択し  >  **Add Reference** ます。
+6. Sharepointcommands プロジェクトを選択し、メニューバーで [**プロジェクト**] [参照の追加] の順に選択し  >  ます。
 
 7. [ **アセンブリ** ] ノードを展開し、[ **拡張機能** ] ノードを選択して、次のアセンブリの横にあるチェックボックスをオンにします。
 
@@ -464,7 +464,7 @@ ms.locfileid: "96915142"
 
 9. [ **プロジェクト** ] ボックスの一覧で [ **sharepointcommands** ] プロジェクトを選択し、[ **OK** ] をクリックします。
 
-10. メニューバーで [ビルド] [ソリューションのビルド] の順 **に選択し**、  >  **Build Solution** ソリューションがエラーなしでビルドされることを確認します。
+10. メニューバーで [ビルド] [ソリューションのビルド] の順 **に選択し**、  >  ソリューションがエラーなしでビルドされることを確認します。
 
 ## <a name="test-the-wizard"></a>ウィザードをテストする
  これで、ウィザードをテストする準備ができました。 まず、Visual Studio の実験用インスタンスで SiteColumnProjectItem ソリューションのデバッグを開始します。 次に、Visual Studio の実験用インスタンスで、Site Column プロジェクトのウィザードをテストします。 最後に、プロジェクトをビルドして実行し、サイト内の列が正常に機能することを確認します。
@@ -475,17 +475,17 @@ ms.locfileid: "96915142"
 
 2. ProjectTemplateWizard プロジェクトで、SiteColumnProjectWizard コード ファイルを開き、`RunStarted` メソッド内のコードの 1 行目にブレークポイントを追加します。
 
-3. メニューバーで、[例外の **デバッグ**] を選択し  >  **Exceptions** ます。
+3. メニューバーで、[例外の **デバッグ**] を選択し  >  ます。
 
 4. [**例外**] ダイアログボックスで、**共通言語ランタイムの例外** の **スロー** されたチェックボックスと **ユーザーが処理しない** チェックボックスがオフになっていることを確認し、[ **OK** ] をクリックします。
 
-5. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  **Start Debugging** します。
+5. **F5** キーを押すか、メニューバーで [**デバッグ**] [デバッグ開始] の順に選択して、デバッグを開始  >  します。
 
      Visual Studio によって、拡張機能が %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 にインストールされ、Visual Studio の実験用インスタンスが開始されます。 このインスタンスの Visual Studio でプロジェクト項目をテストします。
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Visual Studio でウィザードをテストするには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 2. [ **Visual C#** ] ノードまたは **[Visual Basic** ] ノードを展開します (プロジェクトテンプレートでサポートされている言語によって異なります)。次に、[ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -493,7 +493,7 @@ ms.locfileid: "96915142"
 
 4. Visual Studio のもう一方のインスタンスで、先ほど `RunStarted` メソッドに設定したブレークポイントで、コードが停止していることを確認します。
 
-5. F5 キーを **押す** か、メニューバーで [**デバッグ**] [続行] の順に選択して、プロジェクトのデバッグを続け  >  **Continue** ます。
+5. F5 キーを **押す** か、メニューバーで [**デバッグ**] [続行] の順に選択して、プロジェクトのデバッグを続け  >  ます。
 
 6. **SharePoint カスタマイズウィザード** で、デバッグに使用するサイトの URL を入力し、[**次へ**] をクリックします。
 

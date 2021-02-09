@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding comments
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a39c02cfb7b170fd923e8e7409a0f4215d67583
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5f0fba5169be71718993fbc271faf64fdac9fb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918480"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>方法: プログラムによって文書内のテキストにコメントを追加する
   Document クラスの Comments プロパティは、Microsoft Office Word 文書内のテキストの範囲にコメントを追加します。

@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 927779e6d58de9eeaacd43b6b03f837dbc3281e2
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 7b8025f7212d28d2cfce482f67ef672a472993bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920110"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Blend for Visual Studio でデータを表示する
 
@@ -27,13 +27,13 @@ ms.locfileid: "92796681"
 
 ## <a name="generate-sample-data"></a>サンプル データを作成する
 
-サンプル データを生成するには、XAML ドキュメントを開きます。 **[データ]** パネルで、 **[サンプル データの作成]** ![[サンプル データの作成] アイコン](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ボタンを選択し、 **[新しいサンプル データ]** を選びます。
+サンプル データを生成するには、XAML ドキュメントを開きます。 **[データ]** パネルで、**[サンプル データの作成]** ![[サンプル データの作成] アイコン](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ボタンを選択し、**[新しいサンプル データ]** を選びます。
 
 **[データ]** パネルでデータ構造を定義してから、いずれかのページの UI 要素にバインドします。
 
 ![データ パネル](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png)
 
-アプリの実行時にページにサンプル データを表示する場合は、 **[データ ソース オプション]** ![[データ ソース オプション] アイコン](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png) を選択し、 **[アプリケーション実行中に有効にする]** を選択します。
+アプリの実行時にページにサンプル データを表示する場合は、**[データ ソース オプション]** ![[データ ソース オプション] アイコン](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png) を選択し、**[アプリケーション実行中に有効にする]** を選択します。
 
 ![[アプリケーション実行中に有効にする] メニュー項目](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "92796681"
 
 データの構造を記述するクラスを既に作成した場合は、そこからサンプル データを生成できます。
 
-クラスからサンプル データを生成するには、XAML ドキュメントを開いてから、 **[データ]** パネルで **[サンプル データの作成]** ![[サンプル データの作成] アイコン](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ボタンをクリックし、 **[クラスからのサンプル データの作成]** の順に選択します。
+クラスからサンプル データを生成するには、XAML ドキュメントを開いてから、**[データ]** パネルで **[サンプル データの作成]** ![[サンプル データの作成] アイコン](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) ボタンをクリックし、**[クラスからのサンプル データの作成]** の順に選択します。
 
 **短いビデオを見る:** ![[再生] アイコン](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Blend を使用していくつかのデータ バインドを組み合わせる](https://www.youtube.com/watch?v=LSwPB6CAvjg)
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918629"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>チュートリアル: SharePoint の Web パーツの作成
 
@@ -56,7 +56,7 @@ Web パーツを使用すると、ブラウザーから SharePoint サイト ペ
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)][**管理者として実行**] オプションを使用して開始します。
 
-2. [男性] バーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+2. [男性] バーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 3. [ **新しいプロジェクト** ] ダイアログボックスで、使用する言語の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 

@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350713"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918372"
 ---
 # <a name="product-and-package-schema-reference"></a>製品およびパッケージ スキーマ リファレンス
 *製品ファイル* は、アプリケーションに必要なすべての外部依存関係を記述する XML マニフェストです [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部依存関係の例としては、.NET Framework や Microsoft Data Access Components (MDAC) などがあります。 パッケージファイルは製品ファイルに似ていますが、ローカライズされたアセンブリ、ライセンス契約、ドキュメントなど、依存関係のカルチャに依存するコンポーネントのインストールに使用されます。

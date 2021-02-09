@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918758"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能の作成
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクト拡張機能を使用して、プロジェクトが追加、削除、または名前変更されたときなどのプロジェクトレベルのイベントに応答できます。 また、カスタムプロパティを追加したり、プロパティ値が変更したときに応答したりすることもできます。 プロジェクト項目の拡張機能とは異なり、プロジェクトの拡張機能を特定の SharePoint プロジェクトの種類に関連付けることはできません。 プロジェクト拡張機能を作成すると、で任意の種類の SharePoint プロジェクトが開かれたときに、拡張機能が読み込まれ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
@@ -155,9 +155,9 @@ ms.locfileid: "96914869"
 
 9. [ **OK]** を選択して [ **新しい資産の追加** ] ダイアログボックスを閉じます。
 
-10. メニューバーで、[**ファイル**] [すべてを保存] の順に選択し、完了したら  >  **Save All** マニフェストデザイナーを閉じます。
+10. メニューバーで、[**ファイル**] [すべてを保存] の順に選択し、完了したら  >  マニフェストデザイナーを閉じます。
 
-11. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** プロジェクトがエラーなしでコンパイルされることを確認します。
+11. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  プロジェクトがエラーなしでコンパイルされることを確認します。
 
 12. **ソリューションエクスプローラー** で、 **projectextensionpackage** プロジェクトのショートカットメニューを開き、[**エクスプローラーでフォルダーを開く**] ボタンをクリックします。
 
