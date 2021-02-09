@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: c1a6e424fe76b94321ca79ab08496cd160969890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867530"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>n 層アプリケーションのデータセットにコードを追加する
 
@@ -28,7 +28,7 @@ ms.locfileid: "94518688"
 
 データセットを定義するコードは、(型指定されたデータセット内の) データセット定義に変更が加えられるたびに生成されます。 このコードは、データセットの構成を変更するウィザードの実行中に変更を加えた場合にも生成されます。 データセットの再生成時にコードが削除されないようにするには、データセットの部分クラスファイルにコードを追加します。
 
-既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む *DatasetName* (または *DatasetName.Designer.cs* ) という名前のファイルがあります。 " **Dataset プロジェクト** " プロパティで指定されているプロジェクトには、 *DatasetName* (または *DatasetName.DataSet.Designer.cs* ) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
+既定では、データセットと TableAdapter コードを分離した後、結果は各プロジェクトの不連続クラスファイルになります。 元のプロジェクトには、TableAdapter コードを含む *DatasetName* (または *DatasetName.Designer.cs*) という名前のファイルがあります。 " **Dataset プロジェクト** " プロパティで指定されているプロジェクトには、 *DatasetName* (または *DatasetName.DataSet.Designer.cs*) という名前のファイルがあります。このファイルには、データセットコードが含まれています。
 
 > [!NOTE]
 > データセットと Tableadapter を分離すると ( **DataSet プロジェクト** プロパティを設定することによって)、プロジェクト内の既存の部分データセットクラスは自動的には移動されません。 既存のデータセット部分クラスは、手動でデータセット プロジェクトに移動する必要があります。
@@ -42,7 +42,7 @@ ms.locfileid: "94518688"
 
 2. **.Xsd** ファイルを選択して、データセットを開きます。
 
-3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[ **コードの表示** ] を選択します。
+3. コード (タイトルバーのテーブル名) を追加するデータテーブルを右クリックし、[ **コードの表示**] を選択します。
 
      部分クラスが作成され、コードエディターで開きます。
 
