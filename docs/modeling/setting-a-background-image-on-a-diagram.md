@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f99ce329d4b88037901db2336076bb1d12d411f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ca83bd9f6ac88e26247f6c9beea9c242a505887c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873776"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>ダイアグラムへの背景イメージの設定
 Visual Studio の視覚化およびモデリング SDK では、カスタムコードを使用して、生成されたデザイナーの背景イメージを設定できます。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0093e3a79a5a9caf9846c4b418226568e37828f0
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874049"
 ---
 # <a name="file-status-code-enumerator"></a>ファイル状態コード列挙子
 列挙子には、 `SccStatus` ソース管理システム内のファイルの状態を指定する名前付き定数値が含まれます。 この列挙体は、 [Sccqueryinfo](../extensibility/sccqueryinfo-function.md) およびコールバック関数によって使用され `POPLISTFUNC` ます (詳細については、 [POPLISTFUNC](../extensibility/poplistfunc.md) を参照してください)。
@@ -87,7 +87,7 @@ enum SccStatus {
 
  SCC_STATUS_RESERVED_2 内部使用のために予約されています。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 885f17b0841a39672c87be5bc7c947b2e0d9c7e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35ae5661127c0e19e87c96a47a2985161beae7c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874383"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。
@@ -56,7 +56,7 @@ public struct BUILT_TYPE {
 ## <a name="remarks"></a>解説
 この構造体は、構造体のフィールドがに設定されている場合に、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体の共用体の一部として表示され `dwKind` `TYPE_INFO` `TYPE_KIND_BUILT` ます ( [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

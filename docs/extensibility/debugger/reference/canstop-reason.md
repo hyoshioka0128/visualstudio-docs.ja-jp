@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7be361d4468584c109db52f487b3de3c1fdff0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6756d574c36d6381b606be597ca0e54e7945763
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874357"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
 プログラムの実行を特定の時点に達した後に実行を停止できるかどうかを判断するために使用されます。
@@ -52,7 +52,7 @@ public enum enum_CANSTOP_REASON {
 ## <a name="remarks"></a>解説
 プログラムのエントリポイントに到達した後、または関数またはメソッドにステップインした後に、セッションデバッグマネージャー (SDM) で確認するために、 [Getreason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

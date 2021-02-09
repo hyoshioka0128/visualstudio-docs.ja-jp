@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98444ca60937d40262c92d89b8a6c48ed1a0b7ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d59f46bdde06addf5454700eb45e64c3b452d78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874284"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 ポートサプライヤーのロケールサポートを提供します。
@@ -30,13 +30,13 @@ IDebugPortSupplierLocale2 : IUnknown
  カスタムポート供給業者は、このインターフェイスを実装してロケールを設定します。
 
 ## <a name="methods"></a>メソッド
- 次の表は、 **IDebugPortSupplierLocale2**のメソッドを示しています。
+ 次の表は、 **IDebugPortSupplierLocale2** のメソッドを示しています。
 
 |Method|説明|
 |------------|-----------------|
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|ポートサプライヤーのロケールを設定します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Portpriv. h
 
  名前空間: VisualStudio。
@@ -44,6 +44,6 @@ IDebugPortSupplierLocale2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

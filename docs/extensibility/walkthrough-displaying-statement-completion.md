@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95c797de1e68b275fa1a36ec8fa1f97f665cfd18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873919"
 ---
 # <a name="walkthrough-display-statement-completion"></a>チュートリアル: 入力候補の表示
 入力候補を提供する識別子を定義し、完了セッションをトリガーすることによって、言語ベースのステートメント入力候補を実装できます。 言語サービスのコンテキストでステートメント入力候補を定義し、独自のファイル名の拡張子とコンテンツの種類を定義して、その型の入力候補だけを表示することができます。 または、既存のコンテンツの種類 ("プレーンテキスト" など) の完了をトリガーすることもできます。 このチュートリアルでは、テキストファイルのコンテンツタイプである "プレーンテキスト" コンテンツタイプに対してステートメント入力候補をトリガーする方法について説明します。 "Text" コンテンツタイプは、コードファイルや XML ファイルなど、他のすべてのコンテンツタイプの先祖です。

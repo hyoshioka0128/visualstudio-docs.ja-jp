@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef863d0d3dab394c2ca427a27d039c19e5921a51
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e29dcda43fdbb7b60567ff0aa0627b41ca3ca299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873789"
 ---
 # <a name="properties-of-decorators"></a>デコレーターのプロパティ
 デコレーターは、図の図形またはコネクタに表示されるアイコン、テキスト、または展開/折りたたみの山かっこです。 次の表は、3種類のデコレータのプロパティを示しています。 一部のプロパティは、図形デコレーターまたはコネクタデコレーターにのみ表示されます。
@@ -29,7 +29,7 @@ ms.locfileid: "97360834"
 |-|-|-|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|折りたたみデコレータの展開|
 |名前|デコレータの名前。|ExpandCollapseDecorator|
-|メモ|このデコレータに関連付けられている非公式のメモ。|\<none>|
+|ノート|このデコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
@@ -43,7 +43,7 @@ ms.locfileid: "97360834"
 |DefaultIcon|表示するアイコンまたはイメージファイルのパス。|\<none>|
 |DisplayName|生成されたデザイナーに表示されるデコレータの名前。|アイコンデコレータ|
 |名前|デコレータの名前。|IconDecorator|
-|メモ|デコレータに関連付けられている非公式のメモ。|\<none>|
+|ノート|デコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|
@@ -54,12 +54,12 @@ ms.locfileid: "97360834"
 
 |プロパティ|説明|Default|
 |-|-|-|
-|DefaultText|表示される既定のテキスト。|Label|
-|DisplayName|生成されたデザイナーに表示されるデコレータの名前。|Label|
+|DefaultText|表示される既定のテキスト。|ラベル|
+|DisplayName|生成されたデザイナーに表示されるデコレータの名前。|ラベル|
 |FontSize|デコレータに表示されるテキストのフォントサイズ。|8|
 |FontStyle|デコレータに表示されるテキストのフォントスタイル。|通常|
-|名前|デコレータの名前。|Label|
-|メモ|デコレータに関連付けられている非公式のメモ。|\<none>|
+|名前|デコレータの名前。|ラベル|
+|ノート|デコレータに関連付けられている非公式のメモ。|\<none>|
 |System.windows.controls.primitives.iscrollinfo.horizontaloffset|デコレータの既定の位置を基準とする水平方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |System.windows.controls.primitives.popup.verticaloffset|デコレータの既定の位置を基準とする垂直方向のオフセット (インチ単位)。 (図形のみ)。|0|
 |OffsetFromLine|既定の位置を基準とした、線からのデコレータのオフセット (インチ単位)。 (コネクタの場合のみ)。|0|

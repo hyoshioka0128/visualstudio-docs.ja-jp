@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6ad0befdfc656233373e8c79d14495aa3f7fa21e
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873607"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能を作成する
   Visual Studio に既にインストールされている SharePoint プロジェクト項目に機能を追加する場合は、プロジェクト項目の拡張機能を作成します。 詳細については、「 [SharePoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)」を参照してください。
