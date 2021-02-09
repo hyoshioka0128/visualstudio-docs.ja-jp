@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a149511b447f1f21d180eaf526ebc3d991c95997
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859945"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>方法: 生成されたコードのコード分析の警告を非表示にする
 
@@ -28,7 +28,7 @@ ms.locfileid: "94435548"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>プロジェクトで生成されたコードの警告を抑制するには
 
-1. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[ **プロパティ** ] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[**プロパティ**] をクリックします。
 
 2. [ **コード分析** ] タブをクリックします。
 

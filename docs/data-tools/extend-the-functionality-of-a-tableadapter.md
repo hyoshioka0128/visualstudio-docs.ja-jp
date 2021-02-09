@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e1c594ab1f74cddb962cc2a6d4030ede1e53c8f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bfc0f68f38f801d63367b1ee9150c723767ec667
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435079"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858879"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>TableAdapter の機能を拡張する
 
@@ -40,7 +40,7 @@ Tableadapter は **データセットデザイナー** で設計されていま�
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>TableAdapter の部分クラスを作成するには
 
-1. [ **プロジェクト** ] メニューの [ **クラスの追加** ] をクリックして、新しいクラスをプロジェクトに追加します。
+1. [ **プロジェクト** ] メニューの [ **クラスの追加**] をクリックして、新しいクラスをプロジェクトに追加します。
 
 2. クラスに `CustomersTableAdapterExtended` という名前を付けます。
 

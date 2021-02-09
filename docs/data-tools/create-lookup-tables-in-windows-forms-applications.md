@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d6ec8860d2c163d16e29d229203bb77abcdf65f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 57190afba118468b4533ef1ecd30957eb25b08e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859049"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows フォーム アプリケーションでルックアップ テーブルを作成する
 
@@ -26,11 +26,11 @@ ms.locfileid: "94435196"
 
 参照テーブルを作成するには、([ [データソース] ウィンドウ](add-new-data-sources.md#data-sources-window)から) 親テーブルのメインノードを、関連付けられている子テーブルの列に既にバインドされているフォーム上のコントロールにドラッグします。
 
-たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 `Orders` テーブルの各レコードには、注文した顧客を表す `CustomerID` が含まれます。 `CustomerID` は、`Customers` テーブルの顧客レコードを指す外部キーです。 このシナリオでは、[ `Orders` **データソース** ] ウィンドウでテーブルを展開し、メインノードを [ **詳細** ] に設定します。 次に、 `CustomerID` <xref:System.Windows.Forms.ComboBox> (または参照バインドをサポートするその他のコントロール) を使用するように列を設定し、ノードをフォームにドラッグし `Orders` ます。 最後に、 `Customers` 関連する列にバインドされているコントロール (この場合は列にバインドされている) にノードをドラッグし <xref:System.Windows.Forms.ComboBox> `CustomerID` ます。
+たとえば、販売データベースの `Orders` テーブルであれば、次のように使用されます。 `Orders` テーブルの各レコードには、注文した顧客を表す `CustomerID` が含まれます。 `CustomerID` は、`Customers` テーブルの顧客レコードを指す外部キーです。 このシナリオでは、[ `Orders` **データソース** ] ウィンドウでテーブルを展開し、メインノードを [ **詳細**] に設定します。 次に、 `CustomerID` <xref:System.Windows.Forms.ComboBox> (または参照バインドをサポートするその他のコントロール) を使用するように列を設定し、ノードをフォームにドラッグし `Orders` ます。 最後に、 `Customers` 関連する列にバインドされているコントロール (この場合は列にバインドされている) にノードをドラッグし <xref:System.Windows.Forms.ComboBox> `CustomerID` ます。
 
 ## <a name="to-databind-a-lookup-control"></a>検索コントロールをデータバインドするには
 
-1. プロジェクトを開いた状態で、[ **View** 他の Windows データソースの表示] を選択して [ **データソース** ] ウィンドウを開き  >  **Other Windows**  >  **Data Sources** ます。
+1. プロジェクトを開いた状態で、[ 他の Windows データソースの表示] を選択して [**データソース**] ウィンドウを開き  >    >  ます。
 
     > [!NOTE]
     > 検索テーブルを作成するには、関連付けられた 2 つのテーブルまたはオブジェクトが **[データ ソース]** ウィンドウで使用可能になっている必要があります。 詳細については、「 [データセット内のリレーションシップ](relationships-in-datasets.md)」を参照してください。
@@ -48,7 +48,7 @@ ms.locfileid: "94435196"
 
      説明のラベルが付いたデータ バインド コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/create-and-configure-tableadapters.md)、<xref:System.Windows.Forms.BindingSource>、<xref:System.Windows.Forms.BindingNavigator> がコンポーネント トレイに表示されます。
 
-6. 次に、 **[データ ソース]** ウィンドウからメインの親テーブルのノードを検索コントロール (<xref:System.Windows.Forms.ComboBox>) に直接ドラッグします。
+6. 次に、**[データ ソース]** ウィンドウからメインの親テーブルのノードを検索コントロール (<xref:System.Windows.Forms.ComboBox>) に直接ドラッグします。
 
      これで検索バインドが確立されます。 コントロールに設定されている特定のプロパティについては、次の表を参照してください。
 

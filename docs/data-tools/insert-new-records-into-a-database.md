@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858671"
 ---
 # <a name="insert-new-records-into-a-database"></a>データベースに新しいレコードを挿入する
 
@@ -36,7 +36,7 @@ ms.locfileid: "94436277"
 
 アプリケーションでオブジェクトを使用してデータを格納する場合、またはデータベースで新しいレコードの作成をより細かく制御する必要がある場合は、メソッドを使用し `TableAdapter.Insert` ます。
 
-TableAdapter にメソッドがない場合 `Insert` は、tableadapter がストアドプロシージャを使用するように構成されているか、その `GenerateDBDirectMethods` プロパティがに設定されていることを意味し `false` ます。 `GenerateDBDirectMethods`データセットデザイナー内から TableAdapter のプロパティをに設定し、 `true` データセットを保存し **Dataset Designer** ます。 これにより、TableAdapter が再生成されます。 TableAdapter にメソッドがまだない場合 `Insert` 、テーブルには、個別の行を区別するための十分なスキーマ情報がない可能性があります (たとえば、テーブルに主キーが設定されていない可能性があります)。
+TableAdapter にメソッドがない場合 `Insert` は、tableadapter がストアドプロシージャを使用するように構成されているか、その `GenerateDBDirectMethods` プロパティがに設定されていることを意味し `false` ます。 `GenerateDBDirectMethods`データセットデザイナー内から TableAdapter のプロパティをに設定し、 `true` データセットを保存します。 これにより、TableAdapter が再生成されます。 TableAdapter にメソッドがまだない場合 `Insert` 、テーブルには、個別の行を区別するための十分なスキーマ情報がない可能性があります (たとえば、テーブルに主キーが設定されていない可能性があります)。
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>Tableadapter を使用して新しいレコードを挿入する
 

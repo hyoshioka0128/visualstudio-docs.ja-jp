@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853086"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタムスタートページの作成
 
@@ -77,7 +77,7 @@ Visual studio のプライマリインスタンスは、Visual Studio がクラ�
 
 3. Visual Studio のコマンドプロンプトで、「 **devenv/rootsuffix Exp** 」と入力して、visual studio の実験用インスタンスを開きます。
 
-4. 実験用インスタンスで、[**ツール**  >  **] [オプション]**[環境] [  >  **Environment**  >  **スタートアップ**] ページにアクセスし、[**スタートページのカスタマイズ**] ドロップダウンから XAML ファイルを選択します。
+4. 実験用インスタンスで、[**ツール**  >  **] [オプション]**[環境] [  >    >  **スタートアップ**] ページにアクセスし、[**スタートページのカスタマイズ**] ドロップダウンから XAML ファイルを選択します。
 
 5. **[表示]** メニューの **[スタート ページ]** をクリックします。
 

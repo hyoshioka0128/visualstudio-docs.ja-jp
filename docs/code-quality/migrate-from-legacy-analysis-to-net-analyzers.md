@@ -12,13 +12,13 @@ helpviewer_keywords:
 - source code analysis, migration
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 84acec58ed78884f0b037950fa25ce40f6adcbfc
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+manager: jmartens
+ms.openlocfilehash: 96a0c0b7fa1f2c703cefde31070ed98c5edddcb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859763"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>レガシ分析 (FxCop) からソース分析への移行 (.NET アナライザー)
 
@@ -37,7 +37,7 @@ ms.locfileid: "96112170"
 ソース分析に移行するに [は、.net アナライザーを有効にするかインストール](install-net-analyzers.md)します。 従来の分析のルール違反と同様に、ソース コード分析の違反は Visual Studio の [エラー一覧] ウィンドウに表示されます。 さらに、ソース コード分析の違反は、コード エディターで問題のあるコードの下に "*波線*" としても示されます。 波線の色は、ルールの[重要度設定](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)によって異なります。 新しい .NET アナライザーに移植された規則の状態を確認するには、「移植された [規則およびアン移植](../code-quality/fxcop-rule-port-status.md)された規則」を参照してください。
 
 > [!NOTE]
-> Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 詳細については、「 [FxCop アナライザーから .net アナライザーへの移行」を](migrate-from-fxcop-analyzers-to-net-analyzers.md)参照してください。
+> Visual Studio 2019 16.8 と .NET 5.0 より前のリリースでは、これらのアナライザーは NuGet パッケージとして出荷さ `Microsoft.CodeAnalysis.FxCopAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)れています。 Visual Studio 2019 16.8 と .NET 5.0 以降、これらのアナライザーは [.NET SDK に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 また、NuGet パッケージとして入手することもでき `Microsoft.CodeAnalysis.NetAnalyzers` [](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)ます。 詳細については、「 [FxCop アナライザーから .net アナライザーへの移行」を](migrate-from-fxcop-analyzers-to-net-analyzers.md)参照してください。
 
 ## <a name="configuration"></a>構成
 

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858840"
 ---
 # <a name="hierarchical-update"></a>階層更新
 
@@ -46,7 +46,7 @@ ms.locfileid: "94435157"
 
 ## <a name="create-a-new-relation-between-tables"></a>テーブル間に新しいリレーションシップを作成する
 
-2つのテーブル間の新しいリレーションシップを作成するには、データセットデザイナーで各テーブルのタイトルバーを選択し、右クリックして [ **リレーションシップの追加** ] を選択します。
+2つのテーブル間の新しいリレーションシップを作成するには、データセットデザイナーで各テーブルのタイトルバーを選択し、右クリックして [ **リレーションシップの追加**] を選択します。
 
 ![階層更新の [リレーションシップの追加] メニュー](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "94435157"
 
 1. `OrdersBindingSource.AddingNew` イベントのイベント ハンドラーを作成します。
 
-    - デザインビューで **Form1** を開き、コンポーネントトレイで [ **OrdersBindingSource** ] を選択します。次に、[ **プロパティ** ] ウィンドウで [ **イベント** ] を選択し、[ **追加** ] イベントをダブルクリックします。
+    - デザインビューで **Form1** を開き、コンポーネントトレイで [ **OrdersBindingSource** ] を選択します。次に、[**プロパティ**] ウィンドウで [**イベント**] を選択し、[**追加**] イベントをダブルクリックします。
 
 2. メソッドを呼び出すイベントハンドラーにコード行を追加 `CustomersBindingSource.EndEdit` します。 `OrdersBindingSource_AddingNew` イベント ハンドラー内のコードは、次のようになります。
 

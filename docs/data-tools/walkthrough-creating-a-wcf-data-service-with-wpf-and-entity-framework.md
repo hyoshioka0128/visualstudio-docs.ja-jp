@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858190"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>チュートリアル: WPF と Entity Framework を使用した WCF データ サービスの作成
 このチュートリアルでは、[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] Web アプリケーションでホストされる簡単な [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] を作成して、Windows フォーム アプリケーションからアクセスする方法について説明します。
@@ -80,7 +80,7 @@ ms.locfileid: "94998266"
 
 ### <a name="to-create-the-entity-data-model"></a>Entity Data Model を作成するには
 
-1. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+1. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 2. **[新しい項目の追加]** ダイアログ ボックスで **[データ]** ノードを選択し、**[ADO.NET エンティティ データ モデル]** 項目を選択します。
 
@@ -94,7 +94,7 @@ ms.locfileid: "94998266"
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-         - または -
+         \- または -
 
     - **[新しい接続]** を選択して、新しいデータ接続を構成します。 詳細については、「 [新しい接続の追加](../data-tools/add-new-connections.md)」を参照してください。
 
@@ -116,7 +116,7 @@ ms.locfileid: "94998266"
 
 ### <a name="to-create-the-data-service"></a>データ サービスを作成するには
 
-1. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+1. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 2. **[新しい項目の追加]** ダイアログ ボックスで **[Web]** ノードを選択し、**[WCF Data Service 5.6]** 項目を選択します。
 
@@ -154,7 +154,7 @@ ms.locfileid: "94998266"
 
 ### <a name="to-create-the-client-application"></a>クライアント アプリケーションを作成するには
 
-1. メニューバーで、[ファイル]、 **Add**[  >  **新しいプロジェクト** の追加] の順に選択します。
+1. メニューバーで、[ファイル]、 [  >  **新しいプロジェクト** の追加] の順に選択します。
 
 2. [ **新しいプロジェクト** ] ダイアログボックスで、[ **Visual Basic** ] または [ **Visual C#** ] ノードを展開し、[ **Windows** ] ノードを選択し、[ **Windows フォームアプリケーション**] を選択します。
 
@@ -168,7 +168,7 @@ ms.locfileid: "94998266"
 
 ### <a name="to-add-a-service-reference"></a>サービス参照を追加するには
 
-1. メニューバーで、[**プロジェクト** サービス参照の追加] を選択し  >  **Add Service Reference** ます。
+1. メニューバーで、[**プロジェクト** サービス参照の追加] を選択し  >  ます。
 
 2. **[サービス参照の追加]** ダイアログ ボックスで、**[探索]** をクリックします。
 
@@ -180,7 +180,7 @@ ms.locfileid: "94998266"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>サービスへのデータ バインディングを有効にするには
 
-1. メニューバーで、[ **View**  >  **他の Windows**  >  **データソース** の表示] を選択します。
+1. メニューバーで、[   >  **他の Windows**  >  **データソース** の表示] を選択します。
 
    **[データ ソース]** ウィンドウが開きます。
 
@@ -238,7 +238,7 @@ ms.locfileid: "94998266"
 
 8. 手順 4. で追加したコードの「`http://localhost:53161/NorthwindCustomers.svc/`」を選択し、コピーした URL に置き換えます。
 
-9. メニューバーで、[**デバッグ**] [デバッグ開始] の順に選択し、  >  **Start Debugging** アプリケーションを実行します。 顧客情報が表示されます。
+9. メニューバーで、[**デバッグ**] [デバッグ開始] の順に選択し、  >  アプリケーションを実行します。 顧客情報が表示されます。
 
    この時点で、NorthwindCustomers サービスから取得した顧客の一覧を表示するアプリケーションが作成されました。 このサービスを使用して他のデータも公開する場合は、[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]を変更して、Northwind データベースの他のテーブルを含めます。
 
@@ -284,11 +284,11 @@ ms.locfileid: "94998266"
 
 4. このコードの `http://localhost:53161/NorthwindCustomers.svc` を `Form1_Load` イベント ハンドラーの URL に置き換えます。
 
-5. メニューバーで、[**デバッグ**] [デバッグ開始] の順に選択し、  >  **Start Debugging** アプリケーションを実行します。
+5. メニューバーで、[**デバッグ**] [デバッグ開始] の順に選択し、  >  アプリケーションを実行します。
 
 6. テキスト ボックスに「**London**」と入力し、ボタンをクリックします。 ロンドンの顧客だけが表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
-- [Visual Studio でのサービスと WCF Data Services の Windows Communication Foundation](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio での Windows Communication Foundation サービスと WCF データ サービス](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [方法: WCF データ サービス参照を追加、更新、または削除する](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

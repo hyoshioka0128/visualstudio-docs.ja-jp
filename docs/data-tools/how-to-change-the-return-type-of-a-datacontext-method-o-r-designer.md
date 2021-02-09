@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20ff0e4764acf4f2f0f8dea77ed815a9aa430abe
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4226be60f91fb1b9d55e279be2a697861c3f9566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858801"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>方法: DataContext メソッドの戻り値の型を変更する (O/R デザイナー)
-ストアドプロシージャまたは関数に基づいて作成されたメソッドの戻り値の型は、 <xref:System.Data.Linq.DataContext> **O/R デザイナー** でストアドプロシージャまたは関数を削除した場所によって異なります。 既存のエンティティ クラスに項目を直接ドロップすると、そのエンティティ クラスを戻り値の型とする <xref:System.Data.Linq.DataContext> メソッドが作成されます (ストアド プロシージャまたは関数によって返されるデータのスキーマがエンティティ クラスの形状と一致する場合)。 **O/R デザイナー** の空の領域に項目をドロップすると、 <xref:System.Data.Linq.DataContext> 自動的に生成された型を返すメソッドが作成されます。 <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、 **[プロパティ]** ウィンドウでそのメソッドを選択し、 **[Return Type]** プロパティをクリックします。
+ストアドプロシージャまたは関数に基づいて作成されたメソッドの戻り値の型は、 <xref:System.Data.Linq.DataContext> **O/R デザイナー** でストアドプロシージャまたは関数を削除した場所によって異なります。 既存のエンティティ クラスに項目を直接ドロップすると、そのエンティティ クラスを戻り値の型とする <xref:System.Data.Linq.DataContext> メソッドが作成されます (ストアド プロシージャまたは関数によって返されるデータのスキーマがエンティティ クラスの形状と一致する場合)。 **O/R デザイナー** の空の領域に項目をドロップすると、 <xref:System.Data.Linq.DataContext> 自動的に生成された型を返すメソッドが作成されます。 <xref:System.Data.Linq.DataContext> メソッドをメソッド ペインに追加した後に、その戻り値の型を変更できます。 <xref:System.Data.Linq.DataContext> メソッドの戻り値の型を確認または変更するには、**[プロパティ]** ウィンドウでそのメソッドを選択し、**[Return Type]** プロパティをクリックします。
 
 > [!NOTE]
 > **[プロパティ]** ウィンドウを使用しても、戻り値の型がエンティティ クラスに設定されている <xref:System.Data.Linq.DataContext> メソッドは、自動生成型を返すようには変更できません。 <xref:System.Data.Linq.DataContext>自動生成型を返すようにメソッドを戻すには、元のデータベースオブジェクトを **O/R デザイナー** にもう一度ドラッグする必要があります。
@@ -29,13 +29,13 @@ ms.locfileid: "94435053"
 
 1. メソッド ペインで <xref:System.Data.Linq.DataContext> メソッドを選択します。
 
-2. **[プロパティ]** ウィンドウの **[戻り値の型]** を選択し、 **[戻り値の型]** リストで使用可能なエンティティ クラスを選択します。 目的のエンティティクラスが一覧にない場合は、それをに追加するか、 **O/R デザイナー** で作成して一覧に追加します。
+2. **[プロパティ]** ウィンドウの **[戻り値の型]** を選択し、**[戻り値の型]** リストで使用可能なエンティティ クラスを選択します。 目的のエンティティクラスが一覧にない場合は、それをに追加するか、 **O/R デザイナー** で作成して一覧に追加します。
 
 3. *.Dbml* ファイルを保存します。
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>DataContext メソッドの戻り値の型を、エンティティ クラスから自動生成型に変更するには
 
-1. メソッド <xref:System.Data.Linq.DataContext> ペインでメソッドを **Methods** 選択し、削除します。
+1. メソッド <xref:System.Data.Linq.DataContext> ペインでメソッドを選択し、削除します。
 
 2. **サーバーエクスプローラー** または **データベースエクスプローラー** から、 **O/R デザイナー** の空の領域にデータベースオブジェクトをドラッグします。
 

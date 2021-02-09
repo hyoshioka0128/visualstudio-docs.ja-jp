@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 3794e88b-4d3d-4e7a-ade6-8208eabe3eae
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 941cbd78ef94fa186b28391bfd3a888f66c91274
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: f16d4bc03d2f2562321caa0e57e61dd0b597cfdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858593"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>1 つ以上の選択されたデータベース オブジェクトがターゲット データ クラスのスキーマに一致しないスキーマを返しました
 
@@ -27,8 +27,8 @@ ms.locfileid: "90034092"
 
 1. **[OK]** をクリックしてダイアログ ボックスを閉じます。
 
-2. ターゲットクラス ( **O/R デザイナー**でデータベースオブジェクトがドロップされているクラス) のスキーマに一致するデータを返すデータベースオブジェクトを選択します。
+2. ターゲットクラス ( **O/R デザイナー** でデータベースオブジェクトがドロップされているクラス) のスキーマに一致するデータを返すデータベースオブジェクトを選択します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

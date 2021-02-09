@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858476"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>チュートリアル: トランザクションにデータを保存する
 
@@ -38,7 +38,7 @@ ms.locfileid: "94434546"
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "94434546"
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ** ] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
@@ -66,31 +66,31 @@ ms.locfileid: "94434546"
 
 この手順では、 **データソース構成ウィザード** を使用して、 `Customers` Northwind サンプルデータベースのテーブルとテーブルに基づいてデータソースを作成し `Orders` ます。
 
-1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示** ] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
 2. [ **データソース** ] ウィンドウで [ **新しいデータソースの追加** ] を選択して、 **データソース構成ウィザード** を開始します。
 
-3. [ **データソースの種類を選択** ] 画面で、[ **データベース** ] を選択し、[ **次へ** ] を選択します。
+3. [ **データソースの種類を選択** ] 画面で、[ **データベース**] を選択し、[ **次へ**] を選択します。
 
 4. [ **データ接続の選択** ] 画面で、次のいずれかの操作を行います。
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-         - または -
+         \- または -
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示し、Northwind データベースへの接続を作成します。
 
-5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ** ] を選択します。
+5. データベースにパスワードが必要な場合は、機密データを含めるオプションを選択し、[ **次へ**] を選択します。
 
-6. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ** ] を選択します。
+6. [ **アプリケーション構成ファイルへの接続文字列の保存** ] 画面で、[ **次へ**] を選択します。
 
 7. [ **データベースオブジェクトの選択** ] 画面で、[ **テーブル** ] ノードを展開します。
 
-8. `Customers`テーブルとテーブルを選択し、[ `Orders` **完了** ] を選択します。
+8. `Customers`テーブルとテーブルを選択し、[ `Orders` **完了**] を選択します。
 
-     **NorthwindDataSet** がプロジェクトに追加され、 `Customers` テーブルとテーブルが [ `Orders` **データソース** ] ウィンドウに表示されます。
+     **NorthwindDataSet** がプロジェクトに追加され、 `Customers` テーブルとテーブルが [ `Orders` **データソース**] ウィンドウに表示されます。
 
-## <a name="add-controls-to-the-form"></a>フォームへのコントロールの追加
+## <a name="add-controls-to-the-form"></a>コントロールをフォームに追加する
 
 データバインドコントロールを作成するには、[ **データソース** ] ウィンドウからフォームに項目をドラッグします。
 
@@ -100,7 +100,7 @@ ms.locfileid: "94434546"
 
    レコード間をナビゲートするための <xref:System.Windows.Forms.DataGridView> コントロールとツール ストリップ (<xref:System.Windows.Forms.BindingNavigator>) がフォームに表示されます。 コンポーネントトレイには、 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `CustomersTableAdapter` <xref:System.Windows.Forms.BindingSource> 、およびが <xref:System.Windows.Forms.BindingNavigator> 表示されます。
 
-3. 関連する [ **orders** ] ノード (メインの [ **orders** ] ノードではなく、[ **Fax** ] 列の下にある [関連する子テーブル] ノード) を、[顧客] の [ **datagridview** ] の下のフォームにドラッグします。
+3. 関連する [ **orders** ] ノード (メインの [ **orders** ] ノードではなく、[ **Fax** ] 列の下にある [関連する子テーブル] ノード) を、[顧客] の [ **datagridview**] の下のフォームにドラッグします。
 
    <xref:System.Windows.Forms.DataGridView> がフォームに表示されます。 `OrdersTableAdapter`とが <xref:System.Windows.Forms.BindingSource> コンポーネントトレイに表示されます。
 
@@ -112,7 +112,7 @@ ms.locfileid: "94434546"
 
 1. **[プロジェクト]** メニューの **[参照の追加]** を選択します。
 
-2. [ **.Net** ] タブで [ **system.string] を選択し** 、[ **OK]** を選択します。
+2. [ **.Net** ] タブで [ **system.string] を選択し**、[ **OK]** を選択します。
 
      **System.Transactions** への参照がプロジェクトに追加されます。
 
@@ -122,7 +122,7 @@ ms.locfileid: "94434546"
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>自動生成された保存コードを変更するには
 
-1. **顧客 Sbindingnavigator** の [ **保存** ] ボタン (フロッピーディスクのアイコンが付いたボタン) を選択します。
+1. **顧客 Sbindingnavigator** の [**保存**] ボタン (フロッピーディスクのアイコンが付いたボタン) を選択します。
 
 2. `CustomersBindingNavigatorSaveItem_Click` メソッドを次のコードに置き換えます。
 
