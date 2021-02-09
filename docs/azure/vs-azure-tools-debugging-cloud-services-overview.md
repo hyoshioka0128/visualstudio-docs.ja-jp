@@ -2,18 +2,18 @@
 title: Azure Cloud Services のデバッグのオプション | Microsoft Docs
 description: Azure Cloud Services のデバッグ
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/18/2017
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c32ab209f612c9e818f5e4ef1ab85a341e2027eb
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2471b79c7401d63b9655586fc4745d3977d37275
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844230"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Azure クラウド サービスをデバッグするためのさまざまな方法を理解する
 この記事では、Azure クラウド サービスをデバッグするさまざまな方法へのリンクを提供します。
@@ -27,5 +27,5 @@ Visual Studio Enterprise を使用して .NET Framework 4.5 を対象とする�
 ## <a name="remote-debugging"></a>リモート デバッグ
 Visual Studio からクラウド サービスをデプロイするときに、そのリモート デバッグを有効にできます。 デプロイメントのリモート デバッグを有効にすると、各ロール インスタンスを実行する仮想マシンにリモート デバッグ サービスがインストールされます。 `msvsmon.exe` をはじめとするこれらのサービスは、パフォーマンスに影響せず、追加コストも発生しません。 詳細については、「 [Azure でクラウド サービスをデバッグする](vs-azure-tools-debug-cloud-services-virtual-machines.md#debug-a-cloud-service-in-azure)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 - [Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ](./vs-azure-tools-debug-cloud-services-virtual-machines.md) - Azure クラウド サービスをデバッグする方法の詳細を説明します。

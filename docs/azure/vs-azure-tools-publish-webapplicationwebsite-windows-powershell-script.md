@@ -3,17 +3,17 @@ title: PowerShell スクリプトを使用した web アプリの発行
 description: Web プロジェクトを Azure Web サイトに発行する方法について説明します。 このスクリプトは、必要なリソースが Azure サブスクリプションに存在しない場合にそれらを作成します。
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 0a6657f8a6da751614d7d7da3f526aeebd817d5c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 858ed37d6530900e7474748e1443badc1843e199
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843970"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (Windows PowerShell スクリプト)
 ## <a name="syntax"></a>構文
@@ -36,7 +36,7 @@ Publish-WebApplicationWebSite
 | --- | --- |
 | エイリアス |なし |
 | 必須 |true |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -48,7 +48,7 @@ Web サイトを作成する Azure サブスクリプションの名前。
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -60,7 +60,7 @@ Web サイトに発行する Web デプロイ パッケージへのパス。 Vis
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -72,7 +72,7 @@ Azure の SQL データベースのユーザー名およびパスワード。
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |なし |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -84,7 +84,7 @@ true の場合、スクリプトからのメッセージは出力ストリーム
 | --- | --- |
 | エイリアス |なし |
 | 必須 |false |
-| 位置 |指定 |
+| [位置] |指定 |
 | 既定値 |false |
 | パイプライン入力の受け入れ |false |
 | ワイルドカード文字の受け入れ |false |
@@ -120,5 +120,5 @@ JSON 構成ファイルではデプロイ対象の詳細が指定されます。
 
 JSON 構成ファイルは、デプロイ対象を変更するように編集できます。 webSite のセクションは必須ですが、データベースのセクションは省略可能です。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 詳細については、「 [Publish-WebApplicationVM (Windows PowerShell スクリプト)](vs-azure-tools-publish-webapplicationvm.md)」を参照してください。

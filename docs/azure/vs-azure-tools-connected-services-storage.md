@@ -2,18 +2,18 @@
 title: 接続済みサービスを使用して Azure Storage を追加する | Microsoft Docs
 description: Visual Studio を使用して、アプリに Azure Storage サービスの依存関係を追加接続済みサービス
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: d169940d6deffdf67bcbcb94e9f647631d0f606a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844347"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Visual Studio 接続済みサービスを使用した Azure ストレージの追加
 

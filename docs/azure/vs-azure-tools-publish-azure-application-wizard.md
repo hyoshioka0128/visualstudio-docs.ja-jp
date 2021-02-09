@@ -2,17 +2,17 @@
 title: Azure クラウド サービスを発行する
 description: Visual Studio の Azure アプリケーションの公開ウィザードで、さまざまな設定を構成する方法について説明します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844061"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>Visual Studio の Azure アプリケーションの公開ウィザードの使用
 
@@ -51,7 +51,7 @@ Azure アプリケーションの公開ウィザードには、使用する Visu
 
 ![[共通設定]](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**[クラウド サービス]** - ドロップダウンを使用して、既存のクラウド サービスを選択するか、**[&lt;新規作成>]** を選択してクラウド サービスを作成します。 クラウド サービスごとに、データ センターがかっこ内に表示されます。 クラウド サービスのデータ センターの場所は、ストレージ アカウントのデータ センターの場所 ([詳細設定]) と同じであることが推奨されます。
+**クラウドサービス**-ドロップダウンリストを使用して、既存のクラウドサービスを選択するか、[ **&lt; 新しい>の作成**] を選択してクラウドサービスを作成します。 クラウド サービスごとに、データ センターがかっこ内に表示されます。 クラウド サービスのデータ センターの場所は、ストレージ アカウントのデータ センターの場所 ([詳細設定]) と同じであることが推奨されます。
 
 **[環境]** - **[運用]** または **[ステージング]** を選択します。 アプリケーションをテスト環境にデプロイする場合は、ステージング環境を選択します。
 
@@ -97,7 +97,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 ![概要ページ](./media/vs-azure-tools-publish-azure-application-wizard/summary.png)
 
-**[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、**[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、**[ターゲット プロファイル]** の一覧を開き、**[&lt;管理…&gt;]** を選択します。
+**[ターゲット プロファイル]** - 選択した設定から発行プロファイルを作成できます。 たとえば、テスト環境用と運用環境用に 1 つずつプロファイルを作成できます。 このプロファイルを保存するには、**[保存]** アイコンをクリックします。 ウィザードでプロファイルが作成され、Visual Studio プロジェクトに保存されます。 プロファイル名を変更するには、[**ターゲットプロファイル**] の一覧を開き、[ **&lt; 管理 &gt;**] を選択します。
 
    > [!Note]
    > 発行プロファイルが Visual Studio のソリューション エクスプローラーに表示され、プロファイル設定が .azurePubxml という拡張子を持つファイルに書き込まれます。 設定は、XML タグの属性として保存されます。
@@ -106,7 +106,7 @@ Azure ストレージ アカウントには、アプリケーション デプロ
 
 プロジェクトのデプロイのすべての設定を構成したら、ダイアログの下部にある **[発行]** をクリックします。 Visual Studio の **[出力]** ウィンドウでプロセスの状態を監視できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Visual Studio から Azure クラウド サービスに Web アプリケーションを移行および発行する](./vs-azure-tools-migrate-publish-web-app-to-cloud-service.md)
 

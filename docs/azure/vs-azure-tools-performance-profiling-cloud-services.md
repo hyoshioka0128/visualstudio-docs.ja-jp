@@ -2,17 +2,17 @@
 title: クラウド サービスのパフォーマンスのテスト | Microsoft Docs
 description: Visual Studio プロファイラーを使用した、クラウド サービスのパフォーマンスのテスト
 author: mikejo5000
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 119f781e972b38c04763f7a069e3835f42e21941
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 83d7372fd6942f8f29e7244b1f57d40c2b64009b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844022"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>クラウド サービスのパフォーマンスのテスト
 ## <a name="overview"></a>概要
@@ -103,7 +103,7 @@ Visual Studio でのパフォーマンスのプロファイルの詳細につい
     レポートの .vsp ファイルが Azure からダウンロードされ、ダウンロードの状態が Azure のアクティビティ ログに表示されます。 ダウンロードが完了すると、<Role name\>*<Instance Number\>*<identifier\>.vsp という名前のプロファイル レポートが Visual Studio のエディターのタブに表示されます。 レポートの概要データが表示されます。
 4. [現在のビュー] の一覧にレポートの異なるビューを表示するには、表示するビューの種類を選択します。 詳細については、「 [プロファイル ツールのレポート ビュー](../profiling/performance-report-views.md)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Cloud Services のデバッグ](vs-azure-tools-debug-cloud-services-virtual-machines.md)
 
 [Visual Studio から Azure クラウド サービスへの発行](vs-azure-tools-publishing-a-cloud-service.md)

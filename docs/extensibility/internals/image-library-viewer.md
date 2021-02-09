@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761272"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840120"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 Visual Studio のイメージライブラリビューアーツールでは、イメージマニフェストを読み込んで検索することができます。これにより、Visual Studio の場合と同じ方法でユーザーが操作できるようになります。 ユーザーは、背景、サイズ、DPI、ハイコントラストなどの設定を変更できます。 このツールでは、各イメージマニフェストの読み込み情報も表示され、イメージマニフェスト内の各イメージのソース情報が表示されます。 このツールは、次の場合に役立ちます。
@@ -74,7 +74,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |-|-|
 |[インポート]|現在のマニフェストで使用するために、指定されたマニフェストファイルのシンボルをインポートします。|
 |Guid|シンボルは GUID を表し、GUID の書式設定と一致する必要があります。|
-|ID|シンボルは ID を表し、負でない整数である必要があります。|
+|id|シンボルは ID を表し、負でない整数である必要があります。|
 |String|シンボルは、任意の文字列値を表します。|
 
  シンボルは大文字と小文字が区別され、$ (symbol-name) 構文を使用して参照されます。
@@ -94,7 +94,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |ManifestFolder|マニフェストファイルを含むフォルダー|
 |マイドキュメント]|現在のユーザーの [マイドキュメント] フォルダーの完全なパス|
 |ProgramFiles|% ProgramFiles% 環境変数の値|
-|システム|Windows\System32 フォルダー|
+|System (システム)|Windows\System32 フォルダー|
 |WinDir|% WinDir% 環境変数の値|
 
  **イメージ**
@@ -113,7 +113,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |**属性**|**定義**|
 |-|-|
 |Guid|必要イメージモニカーの GUID 部分|
-|ID|必要イメージモニカーの ID 部分|
+|id|必要イメージモニカーの ID 部分|
 |AllowColorInversion|[省略可能、既定値は true]画像の色を、濃色の背景で使用するときにプログラムによって反転するかどうかを示します。|
 
  **ソース**
@@ -148,10 +148,10 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
 |**属性**|**定義**|
 |-|-|
-|種類|必要ネイティブリソースの型 (XAML または PNG)|
-|ID|必要ネイティブリソースの整数の ID 部分|
+|Type|必要ネイティブリソースの型 (XAML または PNG)|
+|id|必要ネイティブリソースの整数の ID 部分|
 
- **リスト**
+ **ImageList**
 
  要素は、 \<ImageList> 1 つのストリップで返すことができるイメージのコレクションを定義します。 ストリップは必要に応じて構築されます。
 
@@ -165,7 +165,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |**属性**|**定義**|
 |-|-|
 |Guid|必要イメージモニカーの GUID 部分|
-|ID|必要イメージモニカーの ID 部分|
+|id|必要イメージモニカーの ID 部分|
 |外部|[省略可能、既定値は false]イメージモニカーが現在のマニフェスト内のイメージを参照しているかどうかを示します。|
 
  含まれているイメージのモニカーは、現在のマニフェストで定義されているイメージを参照する必要がありません。 含まれているイメージがイメージライブラリに見つからない場合は、空白のプレースホルダーイメージが代わりに使用されます。
@@ -217,7 +217,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
  ![イメージ ライブラリ ビューアーのフィルター ID](../../extensibility/internals/media/image-library-viewer-filter-id.png "イメージ ライブラリ ビューアーのフィルター ID")
 
-## <a name="notes"></a>メモ
+## <a name="notes"></a>ノート
 
 - 既定では、ツールは Visual Studio のインストールディレクトリに存在する複数のイメージマニフェストを取得します。 一般公開されているモニカーを持つ唯一のものは、 **VisualStudio ImageCatalog** マニフェストです。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (カスタムマニフェストでこの GUID をオーバーライドし **ません** ) 型: knownmonikers
 

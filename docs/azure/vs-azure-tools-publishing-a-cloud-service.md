@@ -2,17 +2,17 @@
 title: Azure Tools を使用したクラウド サービスの発行 | Microsoft Docs
 description: Visual Studio を使用して Azure クラウド サービス プロジェクトを発行する方法について説明します。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f4aebb023aa764b0f2d7cc1c5426a63e7df81200
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 3a6bc08d3c293f67e10d79996968eeb483203095
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902130"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843983"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Visual Studio を使用したクラウド サービスの発行
 
@@ -151,6 +151,6 @@ Azure アプリケーションを発行するときは、次のいずれかの�
 
 1. ワーカー ロール プロジェクトに追加済みのサービス パッケージにファイルを含めるには、ファイルのショートカット メニューを開き、[**プロパティ**] をクリックします。 [**プロパティ**] ウィンドウで、[**出力ディレクトリにコピー**] ボックスの [**新しい場合はコピーする**] をクリックします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Visual Studio から Azure への発行の詳細については、「 [Azure アプリケーションの発行ウィザード](vs-azure-tools-publish-azure-application-wizard.md)」をご覧ください。

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 11d26af4-1079-435e-96fa-d5269cbea8eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8605f1cdd50b6e98d6e30a7b550cce1d22543ff9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f4a87f9cf0bf64378e6dd5acba504d2da7b5d92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844802"
 ---
 # <a name="idebugpointerobject3"></a>IDebugPointerObject3
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ IDebugPointerObject3 : IDebugPointerObject
 |------------|-----------------|
 |[GetPointerAddress](../../../extensibility/debugger/reference/idebugpointerobject3-getpointeraddress.md)|ポインターのアドレスを取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

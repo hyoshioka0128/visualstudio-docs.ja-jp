@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af4650b5523595350543ac549ac162247563e418
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386746"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844737"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 このプログラムの実行を停止状態から続行します。 前の実行状態 (ステップなど) がすべてクリアされ、プログラムの実行が再度開始されます。
@@ -52,4 +52,4 @@ int Execute();
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [[再開]](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [再開](../../../extensibility/debugger/reference/idebugthread2-resume.md)
