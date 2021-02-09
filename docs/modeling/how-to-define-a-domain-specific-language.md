@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903929"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>方法: ドメイン固有言語を定義する
 ドメイン固有言語 (DSL) を定義するには、テンプレートから Visual Studio ソリューションを作成します。 ソリューションの主要な機能は DSL 定義図です。これは DslDefinition.dsl に保存されています。 DSL 定義は、DSL のクラスとシェイプを定義します。 これらの要素を変更および追加した後で、プログラム コードを追加して DSL を詳細にカスタマイズできます。
@@ -82,7 +82,7 @@ DSL を定義するには、以下のコンポーネントをインストール�
 
 4. 他のページの設定を調整するか、または既定値のままにしておくことができます。
 
-5. **[完了]** をクリックします。
+5. **[Finish]** をクリックします。
 
     ウィザードにより、2 つまたは 3 つのプロジェクトを含むソリューションが作成され、DSL 定義からコードが生成されます。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd5b7af98470c1d9a82eb0504c333e74de8c004f
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 14b466112e3939756142a43568ddc3107e55d659
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906089"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>複数のプロジェクト接続での設定の適用
 ソース管理プラグイン API バージョン1.2 を使用して構築されたソース管理プラグインは、バッチ操作を使用して、複数のプロジェクトまたは複数の接続コンテキストで同じソース管理操作を実行できます。 バッチを使用すると、ユーザーエクスペリエンスから、プロジェクトごとの冗長なダイアログボックスを削除できます。

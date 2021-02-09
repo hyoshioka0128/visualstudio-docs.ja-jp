@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8751c15e40658e7a901550eef3d86050da842cc7
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3997b72105c22f10500559370d8a23faaa2f24eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905168"
 ---
 # <a name="parallel-activity-designer"></a>Parallel アクティビティ デザイナー
 
@@ -31,9 +31,9 @@ ms.locfileid: "94435600"
 
 ### <a name="using-the-parallel-activity-designer"></a>Parallel アクティビティ デザイナーの使用
 
-[ **ツールボックス** ] の [ **制御フロー** ] カテゴリにある **並列** アクティビティデザイナーにアクセスします。
+[**ツールボックス**] の [**制御フロー** ] カテゴリにある **並列** アクティビティデザイナーにアクセスします。
 
-**Parallel** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence** アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.Parallel> れます。このアクティビティには、既定で <xref:System.Activities.Activity.DisplayName%2A> **並列** のが含まれます。
+**Parallel** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティデザイナーを通常配置している任意の場所 ( **Sequence** アクティビティデザイナー内など) にワークフローデザイナー画面にドロップできます。 ワークフローデザイナーにドロップすると、アクティビティが作成さ <xref:System.Activities.Statements.Parallel> れます。このアクティビティには、既定で <xref:System.Activities.Activity.DisplayName%2A> **並列** のが含まれます。
 
 アクティビティを parallel アクティビティのコレクションに追加するには <xref:System.Activities.Statements.Parallel.Branches%2A> 、他のアクティビティデザイナーを [ **ツールボックス** ] からドラッグし、 **parallel** アクティビティデザイナー内の三角形にドロップします。 分岐に含まれるアクティビティのそばに三角形が配置されます。 この手順を繰り返すことによって、さらにアクティビティを追加できます。 アクティビティは、 **並列** アクティビティデザイナー内でドラッグアンドドロップすることで並べ替えることができます。
 
@@ -41,11 +41,11 @@ ms.locfileid: "94435600"
 
 次の表に、Parallel アクティビティのプロパティと、デザイナーでのその使用方法を示します。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は **Parallel** です。 この値は、必要に応じて、[ **プロパティ** ] グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|○|実行される子アクティビティのコレクションが格納されます。|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|×|分岐の完了後に評価されます。 **True** と評価された場合、スケジュールされた保留中の分岐は取り消されます。 このプロパティが設定されていない場合、または **False** に評価された場合、そのすべての子アクティビティが完了すると、アクティビティが完了します。 既定値は **null** です。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|ヘッダーのアクティビティ デザイナーの表示名を指定します。 既定値は **Parallel** です。 この値は、必要に応じて、[ **プロパティ** ] グリッドで編集することも、アクティビティデザイナーのヘッダーで直接編集することもできます。|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|実行される子アクティビティのコレクションが格納されます。|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|分岐の完了後に評価されます。 **True** と評価された場合、スケジュールされた保留中の分岐は取り消されます。 このプロパティが設定されていない場合、または **False** に評価された場合、そのすべての子アクティビティが完了すると、アクティビティが完了します。 既定値は **null** です。|
 
 ## <a name="see-also"></a>関連項目
 

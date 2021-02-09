@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905742"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX マニフェスト デザイナー
 VSIX パッケージマニフェストファイルを変更します。これにより、Visual Studio 拡張機能のインストールの動作が設定されます。
@@ -36,7 +36,7 @@ VSIX パッケージマニフェストファイルを変更します。これに
 ## <a name="uielement-list"></a>UIElement の一覧
  **VSIX マニフェストデザイナー** には、スキーマの最上位レベルの要素に対応する4つのセクションがあります。
 
-- Metadata
+- メタデータ
 
 - ターゲットのインストール
 

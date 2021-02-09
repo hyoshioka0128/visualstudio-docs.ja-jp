@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3510726400623c5ddf3e7a4d58a4903763b91245
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904783"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 スタックフレームオブジェクトについて取得する情報を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80736803"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_FRAMEINFO_FLAGS {
+enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -65,7 +65,7 @@ typedef DWORD FRAMEINFO_FLAGS;
 ```
 
 ```csharp
-public enum enum_FRAMEINFO_FLAGS {
+public enum enum_FRAMEINFO_FLAGS {
     FIF_FUNCNAME              = 0x00000001,
     FIF_RETURNTYPE            = 0x00000002,
     FIF_ARGS                  = 0x00000004,
@@ -199,7 +199,7 @@ public enum enum_FRAMEINFO_FLAGS {
 
 これらのフラグは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造のどのフィールドが使用され、構造体が返されたときに有効であるかを示すためにも使用されます。 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

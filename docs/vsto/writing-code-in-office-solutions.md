@@ -32,15 +32,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b0f72e859e0847b5035e99146ef6c0435ef299d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526024"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904455"
 ---
 # <a name="write-code-in-office-solutions"></a>Office ソリューションでコードを記述する
   Office プロジェクトのコードの記述には、Visual Studio の他のプロジェクトの種類とは異なる点があります。 相違点の多くは、Office オブジェクト モデルがマネージド コードに公開される方法に関連しています。 Office プロジェクトのデザインに関連する相違点もあります。
@@ -107,7 +107,7 @@ ms.locfileid: "97526024"
 
 次の表は、Office 開発で Visual Basic を使用する場合と Visual C# を使用する場合の主な相違点を示しています。
 
-|機能|説明|Visual Basic のサポート|Visual C# のサポート|
+|機能|Description|Visual Basic のサポート|Visual C# のサポート|
 |-------------|-----------------|--------------------------|------------------------|
 |省略可能なパラメーター|Microsoft Office のメソッドには、呼び出すときに指定する必要のないパラメーターを持つメソッドが多数あります。 パラメーターの値を渡さない場合は、既定の値が使用されます。|Visual Basic では、省略可能なパラメーターをサポートしています。|Visual C# では、ほとんどの場合に省略可能なパラメーターをサポートしています。 詳細については、「 [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)」を参照してください。|
 |パラメーターの参照渡し|大部分の Microsoft Office プライマリ相互運用機能アセンブリにある省略可能なパラメーターは、値によって引き渡すこと (値渡し) ができます。 ただし、一部のプライマリ相互運用機能アセンブリでは、参照型を受け取る省略可能なパラメーターに対して参照渡しを行わなくてはなりません。<br /><br /> 値と参照型のパラメーターの詳細については、「 [引数を値で渡す」と「参照渡し &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic の場合)」と「 [&#40;パラメーターを渡す ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)」を参照してください。|参照渡しでパラメーターを渡すのに、特別な処理は必要ありません。 Visual Basic コンパイラでは、必要に応じて自動的にパラメーターが参照渡しされます。|ほとんどの場合、Visual C# コンパイラでは、必要に応じて自動的にパラメーターが参照渡しされます。 詳細については、「 [Office ソリューションの省略可能なパラメーター](../vsto/optional-parameters-in-office-solutions.md)」を参照してください。|
@@ -117,7 +117,7 @@ ms.locfileid: "97526024"
 ## <a name="key-differences-between-office-development-and-managed-code"></a>Office 開発とマネージコードの主な違い
  次の表は、Office 開発と Visual Basic または Visual C# で作成されたマネージド コードの主な相違点を示しています。
 
-|機能|説明|Visual Basic および Visual C# のサポート|
+|機能|Description|Visual Basic および Visual C# のサポート|
 |-------------|-----------------|-----------------------------------------|
 |配列のインデックス|Microsoft Office アプリケーションでは、コレクションの配列の下限のインデックスは 1 から始まります。 Visual Basic や Visual C# では、インデックス番号が 0 から始まる配列が使用されます。 詳細については、 [Visual Basic の](/dotnet/visual-basic/programming-guide/language-features/arrays/index)「[配列 &#40;C&#35; プログラミングガイド&#41;](/dotnet/csharp/programming-guide/arrays/index)および配列」を参照してください。|Microsoft Office アプリケーションのオブジェクト モデルのコレクションの 1 番目のアイテムにアクセスするには、インデックス 0 ではなく 1 を使用します。|
 

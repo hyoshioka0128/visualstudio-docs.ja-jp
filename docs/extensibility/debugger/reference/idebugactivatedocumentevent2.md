@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f601027ce9e71dff6687bcd6aa1b08f13f5ce0cf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ec3168a7e104e20bbb53607b4bd7a6acd8e79e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904653"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 デバッグエンジン (DE) は、このインターフェイスを使用してドキュメントの読み込みを要求します。
@@ -45,7 +45,7 @@ IDebugActivateDocumentEvent2 : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスが使用される一般的なシナリオは、HTML ページのスクリプトコードで解析エラーが発生した場合に、解析エラーのあるドキュメントを表示できるように、スクリプトがこのインターフェイスを SDM に送信することです。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

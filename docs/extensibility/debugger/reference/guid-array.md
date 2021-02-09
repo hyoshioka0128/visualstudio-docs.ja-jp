@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ad4d1ba6a0aa0489b7f2c80e0ffe59cd35b2e58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736646"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904741"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
 使用可能なデバッグエンジンの一意の識別子の配列を記述します。
@@ -51,7 +51,7 @@ public struct GUID_ARRAY
 ## <a name="remarks"></a>解説
 この構造体は、 [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) メソッドによって返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: Msdbg. h
 
 名前空間: VisualStudio。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a1736890ac78e7aaf20b4a639b1794fc63b5ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc5683e39da2da190468b2cafd0d3accae9b7479
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904005"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 このインターフェイスは、デバッグエンジンによって提供されるソースドキュメントへの変更について Visual Studio に通知するために使用されます。
@@ -49,7 +49,7 @@ IDebugDocumentTextEvents2 : IUnknown
 ## <a name="remarks"></a>解説
  独自のドキュメントを提供するデバッグエンジンのみがインターフェイスを利用 `IDebugDocumentTextEvent2` できます。 この例として、スクリプトデバッグエンジンが挙げられます。 スクリプトを解釈するプロセスでは、新しいソースコードを生成できます。これは、ディスクファイルには存在せず、DE にのみ知られています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
