@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e5b42e8bb89a84b5274669173c93db3e287755a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 577ad48603c1378e8d34390f9780620ddbecb573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733697"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892854"
 ---
 # <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
 指定されたデバッグアドレスにある関数が古いものと見なされるかどうかを判断します。
@@ -45,7 +45,7 @@ int IsFunctionStale(
 関数が古いと見なされた場合、はを返し `S_OK` ます。 関数が古くない場合、はを返し `S_FALSE` ます。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)インターフェイスを公開する **Cdebugシンボルプロバイダー** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionStale(

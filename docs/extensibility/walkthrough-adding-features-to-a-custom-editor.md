@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c08af63eaf68701f1a6703ac41fec20368d78931
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893413"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>チュートリアル: カスタムエディターへの機能の追加
 カスタムエディターを作成したら、それにさらに機能を追加できます。
@@ -53,7 +53,7 @@ ms.locfileid: "97863201"
         > [!NOTE]
         > へ `QueryService` の <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> ポインターを取得するには、を呼び出し `IVsFileChangeEx` ます。
 
-7. ドキュメントの編集イベントをソースコード管理で調整します。 次の手順に従います。
+7. ドキュメントの編集イベントをソースコード管理で調整します。 次の手順のようにします。
 
     1. でを呼び出して、へのポインターを取得 `IVsQueryEditQuerySave2` `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> します。
 
@@ -65,13 +65,13 @@ ms.locfileid: "97863201"
 
          このメソッドは、ファイルが保存されていない場合、または最後の保存以降に変更された場合に、ファイルを保存するようにユーザーに要求します。
 
-8. [ **プロパティ** ] ウィンドウを有効にすると、エディターで選択したテキストのプロパティを表示できます。 次の手順に従います。
+8. [ **プロパティ** ] ウィンドウを有効にすると、エディターで選択したテキストのプロパティを表示できます。 次の手順のようにします。
 
     1. テキスト選択が変更されるたびに <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> を呼び出し、の実装を渡し <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> ます。
 
     2. `QueryService`サービスで <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> を呼び出して、へのポインターを取得 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> します。
 
-9. ユーザーがエディターと **ツールボックス** の間、または外部エディター (Microsoft Word など) と **ツールボックス** の間で項目をドラッグアンドドロップできるようにします。 次の手順に従います。
+9. ユーザーがエディターと **ツールボックス** の間、または外部エディター (Microsoft Word など) と **ツールボックス** の間で項目をドラッグアンドドロップできるようにします。 次の手順のようにします。
 
     1. エディター `IDropTarget` がドロップ先であることを IDE に警告するには、エディターでを実装します。
 

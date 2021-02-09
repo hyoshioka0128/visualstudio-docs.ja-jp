@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734afefd97e61867076d487acbcf67f10f54e672
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893569"
 ---
 # <a name="scchistory-function"></a>SccHistory 関数
 この関数は、指定されたファイルの履歴を表示します。
@@ -74,7 +74,7 @@ SCCRTN SccHistory(
 |SCC_E_PROJNOTOPEN|プロジェクトが開かれていません。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。 ファイル履歴を取得できませんでした。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  ソース管理プラグインは、親ウィンドウとしてを使用して、各ファイルの履歴を表示する独自のダイアログボックスを表示でき `hWnd` ます。 または、 [Sccopenproject](../extensibility/sccopenproject-function.md) に提供されている省略可能なテキスト出力コールバック関数を使用することもできます (サポートされている場合)。
 
  特定の状況では、この呼び出しの実行中に検査対象のファイルが変更される可能性があることに注意してください。 たとえば、history コマンドを使用すると、 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] ユーザーは古いバージョンのファイルを取得できます。 このような場合、ソース管理プラグインは、ファイルを `SCC_I_RELOAD` 再読み込みする必要があることを IDE に警告するためにを返します。
@@ -82,6 +82,6 @@ SCCRTN SccHistory(
 > [!NOTE]
 > ソース管理プラグインがファイルの配列に対してこの機能をサポートしていない場合は、最初のファイルのファイル履歴のみを表示できます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

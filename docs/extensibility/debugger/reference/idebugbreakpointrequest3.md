@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 505b0c0b05fa0f14578d770abec6c43ed6b80b01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893062"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 このインターフェイスは、任意の種類のブレークポイントを作成およびバインドするために必要な情報を表します。 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)の拡張機能です。
@@ -44,7 +44,7 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 ## <a name="remarks"></a>解説
  このインターフェイスは、 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 構造体に追加情報を提供するために使用されます。 この追加情報には、DE のベンダー ID (GUID の形式)、トレースポイントの名前、およびブレークポイント制約の名前が含まれます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

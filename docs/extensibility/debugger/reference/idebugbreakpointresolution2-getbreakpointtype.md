@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5410cbf6147e0c8c6f4cba97b0214c4503f9790b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892997"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 この解像度によって表されるブレークポイントの型を取得します。
@@ -28,13 +28,13 @@ ms.locfileid: "80734811"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetBreakpointType( 
+HRESULT GetBreakpointType( 
     BP_TYPE* pBPType
 );
 ```
 
 ```csharp
-int GetBreakpointType( 
+int GetBreakpointType( 
     out enum_ BP_TYPE pBPType
 );
 ```
@@ -50,7 +50,7 @@ int GetBreakpointType( 
 ブレークポイントには、コードまたはデータのブレークポイントを指定できます。たとえば、のようになります。
 
 ## <a name="example"></a>例
-次の例は、IDebugBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointResolution` います。 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+次の例は、IDebugBreakpointResolution2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointResolution` います。 [](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

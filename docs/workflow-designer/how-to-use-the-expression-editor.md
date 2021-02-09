@@ -9,21 +9,21 @@ f1_keywords:
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855326085a51ec6590bd1b3f0e1e5565c53396cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 192418439bc25e6ac1b969483c0c48a030caa024
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894076"
 ---
 # <a name="how-to-use-the-expression-editor"></a>式エディターを使用する方法
 
 式エディターは、式を入力および評価するために多くのワークフローアクティビティで使用されるワークフローデザイナーコントロールです。 式エディターでは、IntelliSense、色付け、ParamInfo、エラーの波線など、豊富な機能を備えた IDE 編集エクスペリエンスが提供されます。 入力した式は、コンパイラによって検証されます。 式が無効な場合は、エラー アイコンが表示されます。 エディターは、[ **式エディター** ] ダイアログボックスとして開くこともできます。
 
-式は、引数またはプロパティにバインドされたリテラル値または Visual Basic コードです。 これらには、新しい値を生成するために操作と結合される値要素 (変数、定数、リテラル、プロパティなど) が含まれています。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、1つの等号 ("= =" ではなく "=") を使用して実行されます。ブール演算子は、記号 "&&" および "| |" ではなく "and" と "or" で、 **null** ではなく、 **何も** 使用されません。 Visual Basic の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))」を参照してください。
+式は、引数またはプロパティにバインドされたリテラル値または Visual Basic コードです。 これらには、新しい値を生成するために操作と結合される値要素 (変数、定数、リテラル、プロパティなど) が含まれています。 アプリケーションが C# を使用したプログラムに含まれている場合でも、式の記述には VB.NET 構文が使用されます。 つまり、大文字小文字は区別されません。比較は、1つの等号 ("= =" ではなく "=") を使用して実行されます。ブール演算子は、記号 "&&" および "| |" ではなく "and" と "or" で、 **null** ではなく、**何も** 使用されません。 Visual Basic の式と演算子の詳細およびいくつかのサンプルについては、「 [Visual Basic の演算子と式](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100))」を参照してください。
 
 **式エディター** は次のように動作します。
 

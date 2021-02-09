@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f509ade0103e390ea9cf53cbd5907116b99ddd39
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: d5c35d94001ae1e883e2bd76650f248d7e0364d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893894"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;entryPoint &gt; 要素 (ClickOnce アプリケーション)
 この [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションがクライアントコンピューターで実行されるときに実行する必要があるアセンブリを識別します。
@@ -58,7 +58,7 @@ ms.locfileid: "94382807"
 
 |属性|説明|
 |---------------|-----------------|
-|`name`|省略可能。 この値は .NET Framework では使用されません。|
+|`name`|任意。 この値は .NET Framework では使用されません。|
 
  `entryPoint` には、次の要素があります。
 
@@ -76,14 +76,14 @@ ms.locfileid: "94382807"
 | `parameters` | 必須。 エントリポイントで実行するアクションについて説明します。 有効な値はのみです。 `run` 空の文字列を指定すると、 `run` が想定されます。 |
 
 ## <a name="customhostrequired"></a>customHostRequired
- 省略可能。 含まれている場合、この展開には、カスタムホスト内に展開され、スタンドアロンアプリケーションではないコンポーネントが含まれていることを指定します。
+ 任意。 含まれている場合、この展開には、カスタムホスト内に展開され、スタンドアロンアプリケーションではないコンポーネントが含まれていることを指定します。
 
  この要素が存在する場合は `assemblyIdentity` 、 `commandLine` 要素と要素も存在していなければなりません。 存在する場合は、の [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] インストール中に検証エラーが発生します。
 
  この要素には属性がなく、子もありません。
 
 ## <a name="customux"></a>customUX
- 省略可能。 アプリケーションがカスタムインストーラーによってインストールおよび管理され、[スタート] メニューのエントリ、ショートカット、または [プログラムの追加と削除] エントリが作成されないことを指定します。
+ 任意。 アプリケーションがカスタムインストーラーによってインストールおよび管理され、[スタート] メニューのエントリ、ショートカット、または [プログラムの追加と削除] エントリが作成されないことを指定します。
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
@@ -91,7 +91,7 @@ ms.locfileid: "94382807"
 
  CustomUX 要素を含むアプリケーションは、 <xref:System.Deployment.Application.InPlaceHostingManager> インストール操作を実行するためにクラスを使用するカスタムインストーラーを提供する必要があります。 この要素を含むアプリケーションは、マニフェストをダブルクリックするか、前提条件のブートストラップを setup.exe してインストールすることはできません。 カスタムインストーラーでは、[スタート] メニューのエントリ、ショートカット、および [プログラムの追加と削除] エントリを作成できます。 カスタムインストーラーで [プログラムの追加と削除] エントリが作成されない場合は、プロパティによって提供されるサブスクリプション識別子を格納 <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> し、ユーザーがメソッドを呼び出して後でアプリケーションをアンインストールできるようにする必要があり <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> ます。 詳細については、「 [チュートリアル: ClickOnce アプリケーションのカスタムインストーラーを作成](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)する」を参照してください。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  この要素は、アプリケーションのアセンブリとエントリポイントを識別し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
  を使用し `commandLine` て、実行時にアプリケーションにパラメーターを渡すことはできません。 アプリケーションのからデプロイのクエリ文字列パラメーターにアクセスでき [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] <xref:System.AppDomain> ます。 詳細については、「 [方法: オンライン ClickOnce アプリケーションでクエリ文字列情報を取得する](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)」を参照してください。

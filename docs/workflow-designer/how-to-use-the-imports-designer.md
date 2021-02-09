@@ -9,21 +9,21 @@ f1_keywords:
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bdf33227263e8158f956fa8c6509d93e8116e9b
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fd736c01843d746ee43a82e6bb6f5239da1c660e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894050"
 ---
 # <a name="how-to-use-the-imports-designer"></a>インポート デザイナーを使用する方法
 
 インポート デザイナーを使用すると、式で使用する型の名前空間を入力できます。 Visual Basic と C# の **imports** または **using** キーワードと同じように、imports デザイナーで名前空間を指定すると、完全修飾バージョンの型名ではなく、式に型名を入力するだけで済みます。
 
-インポート デザイナーでは、UI での変更とワークフローの保存時に行われる変更の両方に応じて処理を行います。 ワークフローの保存時に、インポート デザイナーに名前空間を自動的に追加できます。 次に例を示します。
+インポート デザイナーでは、UI での変更とワークフローの保存時に行われる変更の両方に応じて処理を行います。 ワークフローの保存時に、インポート デザイナーに名前空間を自動的に追加できます。 デモには次のものが含まれます。
 
 - 変数および引数の宣言で使用されている型の名前空間。
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7f81f4b60dfda21ce59ad73076785a37b767873
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c547ad049fa36231ce108a6cfc406233b972ff2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893777"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 このスレッドを記述するプロパティを取得します。
@@ -51,11 +51,11 @@ int GetThreadProperties (
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 このメソッドから返される情報は、通常、[ **スレッド** デバッグ] ウィンドウに表示されます。
 
 ## <a name="example"></a>例
-次の例は、IDebugThread2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+次の例は、IDebugThread2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CProgram` います。 [](../../../extensibility/debugger/reference/idebugthread2.md)
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
