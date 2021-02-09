@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5a16d0f438d06cbfa48538bb3e370ed9b334ad16
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b3fbea6df2b66a108a048332e28a623bdaa95786
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847924"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839029"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office ソリューション用アプリケーションマニフェスト
   アプリケーション マニフェストは、Microsoft Office ソリューションに読み込まれるアセンブリについて記述した XML ファイルです。 Visual Studio の Microsoft Office 開発ツールでは、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce アプリケーションマニフェスト](../deployment/clickonce-application-manifest.md) リファレンスで定義されているアプリケーションマニフェストスキーマを使用します。
@@ -77,21 +77,21 @@ ms.locfileid: "96847924"
 |[&#60;entryPoints&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|必須。 Office ソリューションを実行するためのすべてのアセンブリをグループ化します。|なし|
 |[&#60;entryPoint&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|必須。 Office ソリューションで実行するためのアセンブリを識別します。|**class**<br /><br /> **決め**|
 |[&#60;update&#62; 要素 &#40;Visual Studio での Office 開発の&#41;](../vsto/update-element-office-development-in-visual-studio.md)|必須。 ソリューションの更新を構成します。|**有効**<br /><br /> **expiration**|
-|[&#60;postActions&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|省略可能。 Office ソリューションのインストール後に実行される、すべての配置後アクションをグループ化します。|なし|
-|[&#60;postAction&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|省略可能。 配置後アクションを識別します。|なし|
-|[&#60;postActionData&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|省略可能。 配置後アクション用にデータを構成します。|なし|
+|[&#60;postActions&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|任意。 Office ソリューションのインストール後に実行される、すべての配置後アクションをグループ化します。|なし|
+|[&#60;postAction&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|任意。 配置後アクションを識別します。|なし|
+|[&#60;postActionData&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|任意。 配置後アクション用にデータを構成します。|なし|
 |[&#60;application&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/application-element-office-development-in-visual-studio.md)|必須。 アプリケーション固有の情報を単一のノードにラップします。|なし|
 |[&#60;カスタマイズ&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|必須。 アプリケーション ホスト固有のすべての情報を別個の名前空間に格納します。|なし|
 |[&#60;カスタマイズ&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|必須。 アプリケーション ホスト固有の情報を別個の名前空間に格納します。|**xmlns**|
 |[&#60;document&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/document-element-office-development-in-visual-studio.md)|ドキュメント レベルのソリューションにのみ必須。 カスタマイズ固有の情報を格納します。|**solutionId**|
 |[&#60;appAddin&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|アプリケーション レベルのソリューションにのみ必須。 カスタマイズ固有の情報を格納します。|**application**<br /><br /> **loadBehavior**<br /><br /> **keyName**|
-|[&#60;friendlyName&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|省略可能。 インストールされている VSTO アドインの一覧に表示される VSTO アドインの名前を格納します。|なし|
+|[&#60;friendlyName&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|任意。 インストールされている VSTO アドインの一覧に表示される VSTO アドインの名前を格納します。|なし|
 |[&#60;description&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/description-element-office-development-in-visual-studio.md)|VSTO アドインにのみ必要です。インストールされているプログラムの一覧に表示される説明を格納します。|なし|
 |[&#60;formRegions&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|フォーム領域を含んでいる Outlook VSTO アドインでのみ必須です。|なし|
 |[&#60;formRegion&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|フォーム領域を含んでいる Outlook VSTO アドインでのみ必須です。|**名前**|
 |[&#60;vstoRuntime&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|必須。 Office ソリューションでサポートされる、Visual Studio Tools for Office ランタイムの特定のバージョンを記述します。|**解除**<br /><br /> **version**<br /><br /> **supportUrl**|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  Office ソリューションのアプリケーション マニフェストと配置マニフェストは、手動で編集できます。 その後、マニフェスト生成および編集ツール (*mage.exe* と *mageui.exe*) を使用して、アプリケーションマニフェストと配置マニフェストに再署名する必要があります。 詳細については、「 [方法: アプリケーションマニフェストおよび配置マニフェストに再署名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)する」を参照してください。
 
 ## <a name="file-location"></a>ファイルの場所

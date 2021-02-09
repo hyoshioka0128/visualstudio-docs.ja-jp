@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e547d3a6a07a7881c34462138ffbe708b8d74080
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858918"
 ---
 # <a name="edit-data-in-datasets"></a>データセットのデータの編集
 データテーブル内のデータは、任意のデータベースのテーブルのデータを編集するのと同様に編集できます。 このプロセスには、テーブル内のレコードの挿入、更新、および削除を含めることができます。 データバインドフォームでは、ユーザーが編集できるフィールドを指定できます。 このような場合、データバインディングインフラストラクチャは、変更を後でデータベースに送り返すことができるように、すべての変更の追跡を処理します。 プログラムを使用してデータを編集し、それらの変更をデータベースに返信する場合は、変更の追跡を行うオブジェクトとメソッドを使用する必要があります。
@@ -42,7 +42,7 @@ ms.locfileid: "94435092"
 [!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>データセットに新しい行を挿入するには
-データバインドコントロールを使用するアプリケーションは、通常、 [BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)の [ **新規追加** ] ボタンを使用して新しいレコードを追加します。
+データバインドコントロールを使用するアプリケーションは、通常、 [BindingNavigator コントロール](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)の [**新規追加**] ボタンを使用して新しいレコードを追加します。
 
 新しいレコードをデータセットに手動で追加するには、DataTable に対してメソッドを呼び出して、新しいデータ行を作成します。 次に、のコレクション () に行を追加し <xref:System.Data.DataRow> <xref:System.Data.DataTable.Rows%2A> <xref:System.Data.DataTable> ます。
 

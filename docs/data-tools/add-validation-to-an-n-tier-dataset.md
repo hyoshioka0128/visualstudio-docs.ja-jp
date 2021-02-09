@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 4911cc5ced991389d2c7b03a405c4fe9e28c5cc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859360"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>n 層データセットに検証を追加する
 n 層ソリューションに分離されたデータセットへの検証の追加は、単一ファイルのデータセット (1 つのプロジェクト内のデータセット) に検証を追加するのと基本的には同じです。 データで検証を実行する位置として推奨されるのは、データ テーブルの <xref:System.Data.DataTable.ColumnChanging> イベントや <xref:System.Data.DataTable.RowChanging> イベントの発生時です。
@@ -36,7 +36,7 @@ n 層ソリューションに分離されたデータセットへの検証の追
 > C# では、<xref:System.Data.DataTable.ColumnChanging> イベントおよび <xref:System.Data.DataTable.RowChanging> イベントのイベント ハンドラーはデータセット デザイナーにより自動作成されません。 イベントハンドラーを手動で作成し、基になるイベントにイベントハンドラーをフックする必要があります。 次の手順では、Visual Basic と C# の両方で必要なイベントハンドラーを作成する方法について説明します。
 
 ## <a name="validate-changes-to-individual-columns"></a>個々の列に対する変更を検証する
-個々の列の値は、<xref:System.Data.DataTable.ColumnChanging> イベントを処理することにより検証します。 イベントは、 <xref:System.Data.DataTable.ColumnChanging> 列の値が変更されたときに発生します。 データセットデザイナーの目的の列をダブルクリックして、イベントのイベントハンドラーを作成 <xref:System.Data.DataTable.ColumnChanging> します。 **Dataset Designer**
+個々の列の値は、<xref:System.Data.DataTable.ColumnChanging> イベントを処理することにより検証します。 イベントは、 <xref:System.Data.DataTable.ColumnChanging> 列の値が変更されたときに発生します。 データセットデザイナーの目的の列をダブルクリックして、イベントのイベントハンドラーを作成 <xref:System.Data.DataTable.ColumnChanging> します。 
 
 最初に列をダブルクリックすると、デザイナーにより <xref:System.Data.DataTable.ColumnChanging> イベントのイベント ハンドラーが生成されます。 `If...Then`特定の列をテストするステートメントも作成されます。 たとえば、Northwind Orders テーブルの [ **締切日** ] 列をダブルクリックすると、次のコードが生成されます。
 

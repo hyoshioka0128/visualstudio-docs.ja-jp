@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7f93c4277f1922ae2d78e32d3ed940f9d7215c96
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: a56a567fc3b75fa64aac6890b953b99304cc1f6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858099"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告: [動作の構成] ダイアログ ボックスで行った変更が適用されていません
 
@@ -29,6 +29,6 @@ ms.locfileid: "94998214"
 
 - 以前の変更を取り消して続行するには、[ **いいえ**] をクリックします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Visual Studio の LINQ to SQL ツール](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

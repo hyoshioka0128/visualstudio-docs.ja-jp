@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436811"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859568"
 ---
 # <a name="use-the-code-metrics-results-window"></a>[コードメトリックスの結果] ウィンドウを使用する
 
@@ -32,9 +32,9 @@ ms.locfileid: "94436811"
 
 コードメトリックスの結果ウィンドウは、次のいずれかのメニューシーケンスを使用して表示できます。
 
-- [ **分析** ] メニューの [ **Windows**  >  **コードメトリックスの結果** ] をクリックします。
+- [**分析**] メニューの [ **Windows**  >  **コードメトリックスの結果**] をクリックします。
 
-- [ **表示** ] メニューの [ **その他の Windows**  >  **コードメトリックスの結果** ] をクリックします。
+- [**表示**] メニューの [**その他の Windows**  >  **コードメトリックスの結果**] をクリックします。
 
 結果が含まれていない場合でも、[ **コードメトリックスの結果** ] ウィンドウが開きます。
 
@@ -52,9 +52,9 @@ ms.locfileid: "94436811"
 
 1. [ **フィルター** ] ボックスの一覧から列名を選択します。
 
-2. [ **最小** ] で、表示する最小値を入力します。
+2. [ **最小**] で、表示する最小値を入力します。
 
-3. [ **最大** ] で、表示される最大値を入力します。
+3. [ **最大**] で、表示される最大値を入力します。
 
 4. [ **フィルターの適用** ] ボタンをクリックします。
 
@@ -66,7 +66,7 @@ ms.locfileid: "94436811"
 
 ### <a name="add-or-remove-a-column"></a>列を追加または削除する
 
-1. [ **列の追加と削除** ] ボタンをクリックするか、任意の列見出しを右クリックして、[ **列の追加と削除** ] をクリックします。
+1. [ **列の追加と削除** ] ボタンをクリックするか、任意の列見出しを右クリックして、[ **列の追加と削除**] をクリックします。
 
 1. [ **列の追加と削除** ] ダイアログボックスで、追加または削除する列のチェックボックスをオンまたはオフにし、[ **OK]** をクリックします。
 
@@ -84,7 +84,7 @@ ms.locfileid: "94436811"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>コードメトリックスの結果に基づいて作業項目を作成する
 
-[ **コードメトリックスの結果** ] ウィンドウの結果に基づいて、 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)作業項目を作成できます。 作業項目が作成されると、Visual Studio によって [ **タイトル** ] フィールドにタイトルとコードメトリックスデータが自動的に [ **履歴** ] タブに入力されます。
+[**コードメトリックスの結果**] ウィンドウの結果に基づいて、 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)作業項目を作成できます。 作業項目が作成されると、Visual Studio によって [ **タイトル** ] フィールドにタイトルとコードメトリックスデータが自動的に [ **履歴** ] タブに入力されます。
 
 作業項目の Azure Boards の詳細については、「 [作業項目](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)」を参照してください。
 
@@ -92,7 +92,7 @@ ms.locfileid: "94436811"
 
 1. 結果を右クリックします。
 
-2. [ **作業項目の作成** ] をポイントし、作成する作業項目の種類 ( **バグ** 、 **タスク** など) をクリックします。
+2. [ **作業項目の作成**] をポイントし、作成する作業項目の種類 (**バグ**、 **タスク** など) をクリックします。
 
 3. すべての必須フィールドに入力して、作業項目フォームを完成させます。
 

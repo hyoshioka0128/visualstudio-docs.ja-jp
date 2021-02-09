@@ -6,19 +6,19 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 32fbd3462f6a496d681f76480c3eb4451f325b35
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: ddcc5dd06a4e71d445c94c860b2a3ab92429ab2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518714"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859386"
 ---
 # <a name="add-new-connections"></a>新しい接続を追加する
 
-データベースまたはサービスへの接続をテストし、 **サーバーエクスプローラー** 、 **Cloud Explorer** 、または **SQL Server オブジェクトエクスプローラー** を使用して、データベースの内容とスキーマを調べることができます。 これらのウィンドウの機能は、いくつかの範囲に重なっています。 基本的な違いは次のとおりです。
+データベースまたはサービスへの接続をテストし、 **サーバーエクスプローラー**、 **Cloud Explorer**、または **SQL Server オブジェクトエクスプローラー** を使用して、データベースの内容とスキーマを調べることができます。 これらのウィンドウの機能は、いくつかの範囲に重なっています。 基本的な違いは次のとおりです。
 
 - [サーバー エクスプローラー]
 
@@ -34,7 +34,7 @@ ms.locfileid: "94518714"
 
 ## <a name="add-a-connection-in-server-explorer"></a>サーバーエクスプローラーに接続を追加する
 
-データベースへの接続を作成するには、 **サーバーエクスプローラー** の [ **接続の追加** ] アイコンをクリックするか、[ **データ接続** ] ノードで **サーバーエクスプローラー** を右クリックして [ **接続の追加** ] を選択します。 ここでは、別のサーバー、SharePoint サービス、または Azure サービスのデータベースに接続することもできます。
+データベースへの接続を作成するには、**サーバーエクスプローラー** の [**接続の追加**] アイコンをクリックするか、[**データ接続**] ノードで **サーバーエクスプローラー** を右クリックして [**接続の追加**] を選択します。 ここでは、別のサーバー、SharePoint サービス、または Azure サービスのデータベースに接続することもできます。
 
 ![サーバーエクスプローラー新しい接続] アイコン](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
@@ -50,7 +50,7 @@ ms.locfileid: "94518714"
 
 ## <a name="test-the-connection"></a>接続をテストする
 
-データソースを選択したら、[ **接続テスト** ] をクリックします。 成功しない場合は、ベンダーのドキュメントに基づいてトラブルシューティングを行う必要があります。
+データソースを選択したら、[ **接続テスト**] をクリックします。 成功しない場合は、ベンダーのドキュメントに基づいてトラブルシューティングを行う必要があります。
 
 ![接続をテスト](../data-tools/media/raddata-test-connection.png)
 

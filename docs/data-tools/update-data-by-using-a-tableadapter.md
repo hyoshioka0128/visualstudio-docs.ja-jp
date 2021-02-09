@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 049137d85429d720024fa9ce075f6a102f8d7c91
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 5d03a6dbe728d77fb9158ec02e1f59016e7c4a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858281"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>TableAdapter を使用してデータを更新する
 
-データセット内のデータを変更および検証した後は、TableAdapter のメソッドを呼び出すことによって、更新されたデータをデータベースに戻すことができ `Update` ます。 [TableAdapter](../data-tools/create-and-configure-tableadapters.md) メソッドは、 `Update` 1 つのデータテーブルを更新し、 <xref:System.Data.DataRow.RowState%2A> テーブル内の各データ行のに基づいて、適切なコマンド (INSERT、UPDATE、または DELETE) を実行します。 データセットに関連テーブルがある場合、Visual Studio によって、更新を実行するために使用する TableAdapterManager クラスが生成されます。 TableAdapterManager クラスは、データベースで定義されている外部キー制約に基づいて、更新が正しい順序で行われることを保証します。 データバインドコントロールを使用すると、データバインディングアーキテクチャによって tableAdapterManager という TableAdapterManager クラスのメンバー変数が作成されます。
+データセット内のデータを変更および検証した後は、TableAdapter のメソッドを呼び出すことによって、更新されたデータをデータベースに戻すことができ `Update` ます。 [](../data-tools/create-and-configure-tableadapters.md) メソッドは、 `Update` 1 つのデータテーブルを更新し、 <xref:System.Data.DataRow.RowState%2A> テーブル内の各データ行のに基づいて、適切なコマンド (INSERT、UPDATE、または DELETE) を実行します。 データセットに関連テーブルがある場合、Visual Studio によって、更新を実行するために使用する TableAdapterManager クラスが生成されます。 TableAdapterManager クラスは、データベースで定義されている外部キー制約に基づいて、更新が正しい順序で行われることを保証します。 データバインドコントロールを使用すると、データバインディングアーキテクチャによって tableAdapterManager という TableAdapterManager クラスのメンバー変数が作成されます。
 
 > [!NOTE]
 > データセットの内容を使用してデータソースを更新しようとすると、エラーが発生することがあります。 エラーを回避するには、アダプターのメソッドを呼び出すコードをブロック内に配置することをお勧めし `Update` `try` / `catch` ます。
@@ -53,6 +53,6 @@ ms.locfileid: "94998292"
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [データをデータベースに保存する](../data-tools/save-data-back-to-the-database.md)

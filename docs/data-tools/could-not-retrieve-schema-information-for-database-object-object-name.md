@@ -7,19 +7,19 @@ ms.topic: error-reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d704982810b511356c5800b1b7bccdedb6d9665
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b4b285c98eba118a6e87513cf71bed6ce9b35d11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859152"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>データベース オブジェクト  のスキーマ情報を取得できませんでした\<object name>
 
-このメッセージは、通常、 **サーバー エクスプローラー** または **データベース エクスプローラー** でオブジェクトをクリップボードにコピーし、そのオブジェクトをデータベースから削除した後、デザイナーに貼り付けた場合に表示されます。 データベース オブジェクトはもう存在しないので、このメッセージが表示されます。
+このメッセージは、通常、**サーバー エクスプローラー** または **データベース エクスプローラー** でオブジェクトをクリップボードにコピーし、そのオブジェクトをデータベースから削除した後、デザイナーに貼り付けた場合に表示されます。 データベース オブジェクトはもう存在しないので、このメッセージが表示されます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e35171a116272700de676cb03d116210753c599f
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 137d8970ebfc70dcf102fa70d7bcf18d81677535
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859269"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Visual Studio でデータに WPF コントロールをバインドする
 
@@ -33,9 +33,9 @@ Visual Studio でデータバインドコントロールを作成する方法に
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>データへの WPF コントロールのバインドに関連するタスク
 
-次の表に、 **[データ ソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグすることで実行できるタスクを示します。
+次の表に、**[データ ソース]** ウィンドウから [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] に項目をドラッグすることで実行できるタスクを示します。
 
-|タスク|詳細情報|
+|タスク|説明|
 |----------| - |
 |データ バインド コントロールを作成する。<br /><br /> 既存のコントロールをデータにバインドする。|[データセットへの WPF コントロールのバインド](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |親子のリレーションシップを持つ関連データを表示するコントロールを作成する。あるコントロールの親データ レコードを選択すると、その選択レコードに関連する子データが別のコントロールに表示されるようにします。|[WPF アプリケーションで関連データを表示する](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -52,7 +52,7 @@ Visual Studio でデータバインドコントロールを作成する方法に
 
 次の表に、 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] [ **データソース** ] ウィンドウで、Visual Studio がデータソースの種類ごとに生成するコードとコードを示します。
 
-| データ ソース | コントロールをデータ ソースにバインドする XAML の生成 | データ ソースにデータを読み込むコードの生成 |
+| データ ソースの | コントロールをデータ ソースにバインドする XAML の生成 | データ ソースにデータを読み込むコードの生成 |
 | - | - | - |
 | データセット | はい | はい |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | はい | はい |

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: be9a6840c3b41b442e5019e08c4d2f4d2fa5c3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858996"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Visual Studio がデータ バインド コントロールのキャプションを作成する方法をカスタマイズする
 
@@ -28,13 +28,13 @@ ms.locfileid: "94436629"
 
 ::: moniker range="vs-2017"
 
-**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** レジストリキーの **SmartCaptionExpression** 、 **SmartCaptionReplacement** 、および **SmartCaptionSuffix** の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** レジストリキーの **SmartCaptionExpression**、 **SmartCaptionReplacement**、および **SmartCaptionSuffix** の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** レジストリキーの **SmartCaptionExpression** 、 **SmartCaptionReplacement** 、および **SmartCaptionSuffix** の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
+**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** レジストリキーの **SmartCaptionExpression**、 **SmartCaptionReplacement**、および **SmartCaptionSuffix** の値を設定することによって、これらのラベルの作成方法をカスタマイズできます。
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ ms.locfileid: "94436629"
 
 1. [ **開始** ] をクリックしてコマンドウィンドウを開き、を **実行** します。
 
-2. `regedit`[ **実行** ] ダイアログボックスに「」と入力し、[ **OK** ] をクリックします。
+2. `regedit`[**実行**] ダイアログボックスに「」と入力し、[ **OK**] をクリックします。
 
 3. [ **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** ] ノードを展開します。
 
@@ -90,15 +90,15 @@ ms.locfileid: "94436629"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **SmartCaptionExpression** 値を右クリックし、[ **変更** ] を選択します。
+6. **SmartCaptionExpression** 値を右クリックし、[**変更**] を選択します。
 
 7. [ **データソース** ] ウィンドウで使用する正規表現を入力します。
 
-8. **SmartCaptionReplacement** 値を右クリックし、[ **変更** ] を選択します。
+8. **SmartCaptionReplacement** 値を右クリックし、[**変更**] を選択します。
 
 9. 正規表現で一致したパターンを表示する方法で書式設定された置換文字列を入力します。
 
-10. **SmartCaptionSuffix** 値を右クリックし、[ **変更** ] を選択します。
+10. **SmartCaptionSuffix** 値を右クリックし、[**変更**] を選択します。
 
 11. キャプションの末尾に表示する任意の文字を入力します。
 
@@ -108,7 +108,7 @@ ms.locfileid: "94436629"
 
 1. [ **開始** ] をクリックしてコマンドウィンドウを開き、を **実行** します。
 
-2. `regedit`[ **実行** ] ダイアログボックスに「」と入力し、[ **OK** ] をクリックします。
+2. `regedit`[**実行**] ダイアログボックスに「」と入力し、[ **OK**] をクリックします。
 
 3. [ **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** ] ノードを展開します。
 
@@ -130,11 +130,11 @@ ms.locfileid: "94436629"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. **SmartCaptionExpression** アイテムを右クリックし、[ **変更** ] を選択します。
+6. **SmartCaptionExpression** アイテムを右クリックし、[**変更**] を選択します。
 
 7. 値として「」と入力し `(.*)` ます。 これは、文字列全体に一致します。
 
-8. **SmartCaptionReplacement** アイテムを右クリックし、[ **変更** ] を選択します。
+8. **SmartCaptionReplacement** アイテムを右クリックし、[**変更**] を選択します。
 
 9. 値として「」と入力し `$1` ます。 これにより、文字列が一致した値に置き換えられます。文字列全体が変更されずに保持されます。
 

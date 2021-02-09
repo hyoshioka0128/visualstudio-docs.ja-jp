@@ -7,21 +7,21 @@ ms.topic: error-reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8413ffd8b5bf2af4c4d7272173a9cb4d0fbf6cbc
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 0a75d16d79359db7fa2db2e68db23d693d7f2721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859230"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>関連付け &lt;association name&gt; を作成できません - プロパティの型が一致しません。
 
 関連付けを作成できません \<association name> -プロパティの型が一致しません。 プロパティに一致する型がありません: \<property names> 。
 
-関連付けは、 **[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 関連付けの両側のプロパティは、同じデータ型である必要があります。
+関連付けは、**[関連付けエディター]** ダイアログ ボックスで選択された **[関連付けのプロパティ]** によって定義されます。 関連付けの両側のプロパティは、同じデータ型である必要があります。
 
 メッセージに示されているプロパティが同じデータ型ではありません。
 
