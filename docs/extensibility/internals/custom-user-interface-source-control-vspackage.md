@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1426b271ea8db4d486043c9fbe885a0f428b514
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 97c82254516c78a3aff9884e91e44adc45b95981
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902983"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>カスタムユーザーインターフェイス (ソース管理 VSPackage)
 VSPackage は、Visual Studio のコマンドテーブル (*vsct*) ファイルを使用して、そのメニュー項目とその既定の状態を宣言します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE: integrated development environment) では、VSPackage が読み込まれるまで、既定の状態でメニュー項目が表示されます。 その後、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> メソッドを呼び出して、メニュー項目を有効または無効にします。
@@ -51,7 +51,7 @@ VSPackage は、Visual Studio のコマンドテーブル (*vsct*) ファイル�
 
   次の表は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE がさまざまな UI 項目を非表示にする方法についての詳細を示しています。
 
-| UI 項目 | 説明 |
+| UI 項目 | Description |
 | - | - |
 | メニューとツールバー | ソース管理パッケージでは、最初のメニューとツールバーの表示状態を、 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)ファイルの [ソース管理パッケージ ID] に設定する必要があり *ます。* これにより、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage を読み込まずに、メソッドの実装を呼び出さなくても、IDE でメニュー項目の状態を適切に設定でき <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> ます。 |
 | ツール ウィンドウ | ソース管理 VSPackage は、非アクティブになったときに所有しているすべてのツールウィンドウを非表示にします。 |

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902189"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows フォームツールボックスコントロールを作成する
 
@@ -30,15 +30,15 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="create-the-toolbox-control"></a>ツールボックスコントロールを作成する
 
-Windows フォームツールボックスコントロールテンプレートは、未定義のユーザーコントロールを作成し、コントロールを **ツールボックス**に追加するために必要なすべての機能を提供します。
+Windows フォームツールボックスコントロールテンプレートは、未定義のユーザーコントロールを作成し、コントロールを **ツールボックス** に追加するために必要なすべての機能を提供します。
 
 ### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Windows フォームツールボックスコントロールを使用して拡張機能を作成する
 
 1. という名前の VSIX プロジェクトを作成 `MyWinFormsControl` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、という名前の **Windows フォームツールボックスコントロール** 項目テンプレートを追加 `Counter` します。 **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[ **Windows フォームツールボックスコントロール**] を選択します。
+2. プロジェクトが開いたら、という名前の **Windows フォームツールボックスコントロール** 項目テンプレートを追加 `Counter` します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[ **Windows フォームツールボックスコントロール**] を選択します。
 
-3. これにより、ユーザーコントロールが追加され、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **ツールボックス**にコントロールが配置されます。また、展開用の VSIX マニフェストに **VisualStudio** アセットエントリが追加されます。
+3. これにより、ユーザーコントロールが追加され、 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **ツールボックス** にコントロールが配置されます。また、展開用の VSIX マニフェストに **VisualStudio** アセットエントリが追加されます。
 
 ### <a name="build-a-user-interface-for-the-control"></a>コントロールのユーザーインターフェイスを作成する
 
@@ -46,7 +46,7 @@ Windows フォームツールボックスコントロールテンプレートは
 
 #### <a name="to-build-the-user-interface"></a>ユーザー インターフェイスを作成するには
 
-1. **ソリューションエクスプローラー**で、 *Counter.cs*をダブルクリックしてデザイナーで開きます。
+1. **ソリューションエクスプローラー** で、 *Counter.cs* をダブルクリックしてデザイナーで開きます。
 
 2. ここを **クリックしてください。** Windows フォームツールボックスコントロール項目テンプレートを追加するときに既定で含まれるボタン。
 
@@ -80,16 +80,16 @@ Windows フォームツールボックスコントロールテンプレートは
 3. 次のパブリックプロパティ宣言を作成します。
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ Windows フォームツールボックスコントロールテンプレートは
 4. コントロールのイベントに次のコードを追加 `Load` します。
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -109,12 +109,12 @@ Windows フォームツールボックスコントロールテンプレートは
 
     ```
 
-    イベントの **ラベル** テキストを設定する <xref:System.Windows.Forms.UserControl.Load> と、対象のプロパティの値が適用される前に読み込むことができます。 コンストラクターで **ラベル** のテキストを設定すると、空の **ラベル**が生成されます。
+    イベントの **ラベル** テキストを設定する <xref:System.Windows.Forms.UserControl.Load> と、対象のプロパティの値が適用される前に読み込むことができます。 コンストラクターで **ラベル** のテキストを設定すると、空の **ラベル** が生成されます。
 
 5. 次のパブリックメソッドを作成して、カウンターをインクリメントします。
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ Windows フォームツールボックスコントロールテンプレートは
 6. イベントの宣言を `Incremented` コントロールクラスに追加します。
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     呼び出し元は、このイベントにハンドラーを追加して、カウンターの値の変更に応答することができます。
@@ -134,7 +134,7 @@ Windows フォームツールボックスコントロールテンプレートは
 7. デザインビューに戻り、[ **リセット** ] ボタンをダブルクリックして `btnReset_Click` イベントハンドラーを生成します。 次に、次の例に示すように入力します。
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -148,24 +148,24 @@ Windows フォームツールボックスコントロールテンプレートは
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>コントロールをテストする
 
- **ツールボックス**コントロールをテストするには、まず開発環境でテストしてから、コンパイル済みアプリケーションでテストします。
+ **ツールボックス** コントロールをテストするには、まず開発環境でテストしてから、コンパイル済みアプリケーションでテストします。
 
 #### <a name="to-test-the-control"></a>コントロールをテストするには
 
-1. **F5**キーを押して**デバッグを開始**します。
+1. **F5** キーを押して **デバッグを開始** します。
 
     このコマンドは、プロジェクトをビルドし、コントロールがインストールされている Visual Studio の2番目の実験用インスタンスを開きます。
 
 2. Visual Studio の実験用インスタンスで、 **Windows フォームアプリケーション** プロジェクトを作成します。
 
-3. **ソリューションエクスプローラー**で、 *Form1.cs*をダブルクリックしてデザイナーで開きます (まだ開いていない場合)。
+3. **ソリューションエクスプローラー** で、 *Form1.cs* をダブルクリックしてデザイナーで開きます (まだ開いていない場合)。
 
-4. **ツールボックス**では、 `Counter` コントロールが **[全般**] セクションに表示されます。
+4. **ツールボックス** では、 `Counter` コントロールが **[全般**] セクションに表示されます。
 
 5. コントロールを `Counter` フォームにドラッグし、選択します。 、、およびの各プロパティは、 `Value` `Message` `ShowReset` から継承されたプロパティと共に [ **プロパティ** ] ウィンドウに表示され <xref:System.Windows.Forms.UserControl> ます。
 
@@ -190,7 +190,7 @@ Windows フォームツールボックスコントロールテンプレートは
     else counter1.ShowReset = true;
     ```
 
-13. **F5**キーを押します。
+13. **F5** キーを押します。
 
     フォームが開きます。 コントロールには `Counter` 、次のテキストが表示されます。
 
@@ -210,11 +210,11 @@ Windows フォームツールボックスコントロールテンプレートは
 
 17. **[リセット]** を選択します。
 
-    カウンターが **0**にリセットされます。
+    カウンターが **0** にリセットされます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-**ツールボックス**コントロールをビルドすると、Visual Studio によってプロジェクトの \bin\debug\ フォルダーに*ProjectName*という名前のファイルが作成されます。 コントロールを配置するには、 *.vsix* ファイルをネットワークまたは Web サイトにアップロードします。 ユーザーが *.vsix* ファイルを開くと、コントロールがインストールされ、ユーザーのコンピューターの Visual Studio **ツールボックス** に追加されます。 または、 *.vsix*ファイルを[Visual Studio Marketplace](https://marketplace.visualstudio.com/)にアップロードして、ユーザーが [**ツール**  >  ] [**拡張機能と更新プログラム**] ダイアログで参照して検索できるようにすることもできます。
+**ツールボックス** コントロールをビルドすると、Visual Studio によってプロジェクトの \bin\debug\ フォルダーに *ProjectName* という名前のファイルが作成されます。 コントロールを配置するには、 *.vsix* ファイルをネットワークまたは Web サイトにアップロードします。 ユーザーが *.vsix* ファイルを開くと、コントロールがインストールされ、ユーザーのコンピューターの Visual Studio **ツールボックス** に追加されます。 または、 *.vsix* ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/)にアップロードして、ユーザーが [**ツール**  >  ] [**拡張機能と更新プログラム**] ダイアログで参照して検索できるようにすることもできます。
 
 ## <a name="see-also"></a>関連項目
 

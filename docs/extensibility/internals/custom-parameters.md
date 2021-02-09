@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902965"
 ---
 # <a name="custom-parameters"></a>カスタムパラメーター
 カスタムパラメーターは、ウィザードが開始された後のウィザードの操作を制御します。 関連する .vsz ファイルは、統合開発環境 (IDE: integrated development environment) によってパッケージ化され、ウィザードの開始時に文字列の配列としてウィザードに渡されるユーザー定義パラメーターの配列を提供し *ます。* 次に、ウィザードは文字列の配列を解析し、情報を使用してウィザードの実際の操作を制御します。 この方法では、 *.vsz* ファイルの内容に応じて、ウィザードを使用して機能をカスタマイズできます。
@@ -45,6 +45,6 @@ Param="PROJECT_TYPE = CSPROJ"
 
 ## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
-- [コンテキストパラメーター](../../extensibility/internals/context-parameters.md)
+- [コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)
 - [ウィザード](../../extensibility/internals/wizards.md)
 - [ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)

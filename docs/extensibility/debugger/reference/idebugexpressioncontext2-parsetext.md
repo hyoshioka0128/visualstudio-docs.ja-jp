@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a8494c9c90c4cb6e94115c542a25e12e948f7064
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc55cceb8db392d590ff414ac3df5b807d1e52e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901638"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 後で評価するために、テキスト形式の式を解析します。
@@ -77,7 +77,7 @@ int ParseText(
 式は評価されず、解析のみが行われることに注意してください。 後で [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) または [evaluateasync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) メソッドを呼び出すと、解析された式が評価されます。
 
 ## <a name="example"></a>例
-次の例は、IDebugExpressionContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CEnvBlock` います。 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) この例では、式を環境変数の名前として解析し、その変数から値を取得します。
+次の例は、IDebugExpressionContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CEnvBlock` います。 [](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) この例では、式を環境変数の名前として解析し、その変数から値を取得します。
 
 ```cpp
 HRESULT CEnvBlock::ParseText(

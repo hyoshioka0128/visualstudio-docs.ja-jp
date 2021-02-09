@@ -12,15 +12,15 @@ helpviewer_keywords:
 - contacts [Office development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 981fcbbb6398a6b21cebf598c46cf7a738d2020e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 58f7981cddaec747382097222be378d3197023b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903761"
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>方法: プログラムによって Outlook の連絡先にエントリを追加する
   この例では、新しい連絡先を作成し、新しい連絡先にデータを入力します。
