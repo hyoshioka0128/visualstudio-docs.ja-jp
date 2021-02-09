@@ -19,20 +19,20 @@ helpviewer_keywords:
 ms.assetid: eb6dfe79-f54c-4331-8e36-073688e70973
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 737e1092d88c48227183a32072502cb833ebcd37
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: fa9e94bf124888d05b6393a4821b5db61181871c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927575"
 ---
 # <a name="publish-clickonce-applications"></a>ClickOnce アプリケーションの発行
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを最初に発行するときに、発行ウィザードを使用して発行プロパティを設定できます。 このウィザードで設定できるのはプロパティの一部のみです。その他のプロパティはすべて、既定値に設定されます。
 
- それ以降に発行プロパティを変更するには、 **プロジェクト デザイナー** の **[発行]** ページを使用します。
+ それ以降に発行プロパティを変更するには、**プロジェクト デザイナー** の **[発行]** ページを使用します。
 
 ## <a name="publish-wizard"></a>発行ウィザード
  発行ウィザードを使用して、アプリケーションを発行するときの基本的な設定を指定できます。 たとえば、次の発行プロパティが含まれます。
@@ -50,13 +50,13 @@ ms.locfileid: "94349491"
 ## <a name="publish-page"></a>ページの発行
  **プロジェクト デザイナー** の **[発行]** ページは、ClickOnce 配置用のプロパティを構成する場合に使用します。 次の表にトピックを示します。
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |[方法: Visual Studio がファイルをコピーする場所を指定する](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Visual Studio がアプリケーション ファイルとマニフェストを配置する場所を設定する方法について説明します。|
-|[方法: エンド ユーザーがインストールを開始する場所を指定する](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|ユーザーがアプリケーションをダウンロードし、インストールするためにアクセスする場所を設定する方法について説明します。|
-|[方法: ClickOnce のオフラインまたはオンラインのインストール モードを指定する](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|アプリケーションをオフラインまたはオンラインで使用できるかどうかを設定する方法について説明します。|
+|[方法: エンドユーザーがインストールを開始する場所を指定する](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|ユーザーがアプリケーションをダウンロードし、インストールするためにアクセスする場所を設定する方法について説明します。|
+|[方法: ClickOnce のオフラインまたはオンラインのインストールモードを指定する](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|アプリケーションをオフラインまたはオンラインで使用できるかどうかを設定する方法について説明します。|
 |[方法: ClickOnce の発行バージョンを設定する](../deployment/how-to-set-the-clickonce-publish-version.md)|発行するアプリケーションを更新プログラムとして扱うかどうかを指定する、ClickOnce の **[発行するバージョン]** プロパティの設定方法について説明します。|
-|[方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|アプリケーションを発行するたびに、 **PublishVersion** のリビジョン番号を自動的にインクリメントする方法について説明します。|
+|[方法: ClickOnce の発行バージョンを自動的にインクリメントする](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|アプリケーションを発行するたびに、**PublishVersion** のリビジョン番号を自動的にインクリメントする方法について説明します。|
 
  詳細については、「 [[発行] ページ (プロジェクトデザイナー)](../ide/reference/publish-page-project-designer.md) 」を参照してください。
 
@@ -74,11 +74,11 @@ ms.locfileid: "94349491"
 ### <a name="publish-options-dialog-box"></a>[発行オプション] ダイアログ ボックス
  [発行オプション] ダイアログ ボックスでは、アプリケーションの配置オプションを指定します。
 
-|タイトル|説明|
+|Title|説明|
 |-|-|
 |[方法: ClickOnce アプリケーションの発行言語を変更する](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|言語およびカルチャを指定してローカライズ版と対応付ける方法について説明します。|
-|[方法: ClickOnce アプリケーションのスタート メニューの名前を指定する](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|ClickOnce アプリケーションの表示名を変更する方法について説明します。|
-|[方法: テクニカル サポートのリンクを指定する](../deployment/how-to-specify-a-link-for-technical-support.md)|**[サポート URL]** プロパティを設定する方法について説明します。このプロパティには、ユーザーがアプリケーションに関する情報を取得するためにアクセスする Web ページまたはファイル共有を指定します。|
+|[方法: ClickOnce アプリケーションの [スタート] メニューの名前を指定する](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|ClickOnce アプリケーションの表示名を変更する方法について説明します。|
+|[方法: テクニカルサポートのリンクを指定する](../deployment/how-to-specify-a-link-for-technical-support.md)|**[サポート URL]** プロパティを設定する方法について説明します。このプロパティには、ユーザーがアプリケーションに関する情報を取得するためにアクセスする Web ページまたはファイル共有を指定します。|
 |[方法: ClickOnce 配置で個々の必要条件にサポート URL を指定する](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|各必要条件の個別のサポート URL が含まれるようにアプリケーション マニフェストを手動で変更する方法を説明します。|
 |[方法: ClickOnce アプリケーションの発行ページを指定する](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|既定の Web ページ (publish.htm) とアプリケーションを生成および発行する方法について説明します。|
 |[方法: ClickOnce の既定の Web ページをカスタマイズする](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|アプリケーションと共に自動的に生成および発行された Web ページをカスタマイズする方法について説明します。|
@@ -104,4 +104,4 @@ ms.locfileid: "94349491"
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
-- [ClickOnce リファレンス](../deployment/clickonce-reference.md)
+- [ClickOnce に関するリファレンス](../deployment/clickonce-reference.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527121"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927666"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでの複合データバインディングの基本について説明します。 Microsoft Office Excel ワークシートの複数のセルを、Northwind SQL Server データベースのフィールドにバインドできます。
@@ -83,7 +83,7 @@ ms.locfileid: "97527121"
 
 8. **Employees** テーブルの横にあるチェックボックスをオンにします。
 
-9. **[完了]** をクリックします。
+9. **[Finish]** をクリックします。
 
    [**データソース**] ウィンドウに [ **Employees** ] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
@@ -177,17 +177,17 @@ ms.locfileid: "97527121"
 
 1. リストオブジェクト内のセルを選択します。
 
-    一覧の一番下に新しい行が表示され、 *\** 新しい行の最初のセルにアスタリスク (* _) が付きます。
+    新しい行が一覧の一番下に表示され、 **\*** 新しい行の最初のセルにアスタリスク () が付きます。
 
 2. 空の行に次の情報を追加します。
 
-   |EmployeeID|LastName|FirstName|タイトル|
+   |EmployeeID|LastName|FirstName|Title|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|営業マネージャー|
 
 ### <a name="to-delete-rows"></a>行を削除するには
 
-- ワークシートの左端にある 16 (行 16) を右クリックし、[_ * 削除] * * をクリックします。
+- ワークシートの左端にある 16 (行 16) を右クリックし、[ **削除**] をクリックします。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>リスト内の行を並べ替えるには
 
@@ -217,7 +217,7 @@ ms.locfileid: "97527121"
 
      フィルター処理が削除され、すべての行が表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルでは、データベース内のテーブルをリストオブジェクトにバインドする方法の基本について説明します。 ここでは、次の作業を行います。
 
 - データをキャッシュして、オフラインで使用できるようにします。 詳細については、「 [方法: オフラインまたはサーバー上で使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)する」を参照してください。

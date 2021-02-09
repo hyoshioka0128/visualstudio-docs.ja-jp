@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], user interface errors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e74d60fe6386575417114fe1ad4823704cf09d46
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 29e07e49d901b44b534d9d274e5535be663e97ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927679"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>方法: アドインのユーザーインターフェイスエラーを表示する
   既定では、VSTO アドインが Microsoft Office ユーザーインターフェイス (UI) を操作しようとして失敗した場合、エラーメッセージは表示されません。 しかし、UI に関連するエラー メッセージを表示するように Microsoft Office アプリケーションを構成できます。 これらのメッセージを使用すると、カスタムリボンが表示されない理由や、リボンが表示されるのにコントロールが表示されない理由を判断するのに役立ちます。

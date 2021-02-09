@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927653"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office ソリューションの遅延バインディング
   Office アプリケーションのオブジェクトモデルの一部の型は、遅延バインディング機能を通じて使用できる機能を提供します。 たとえば、一部のメソッドとプロパティは、Office アプリケーションのコンテキストに応じて異なる種類のオブジェクトを返すことがあり、一部の型は異なるコンテキストで異なるメソッドまたはプロパティを公開できます。

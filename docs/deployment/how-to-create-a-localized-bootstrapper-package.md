@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927588"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>方法: ローカライズされたブートストラップ パッケージを作成する
-ブートストラップパッケージを作成した後、ロケールごとに2つのファイルを作成して、ブートストラップパッケージのローカライズバージョンを作成できます。これには、ソフトウェアライセンス条項ファイル ( *eula .rtf* など) とパッケージマニフェスト ( *package.xml* ) があります。
+ブートストラップパッケージを作成した後、ロケールごとに2つのファイルを作成して、ブートストラップパッケージのローカライズバージョンを作成できます。これには、ソフトウェアライセンス条項ファイル ( *eula .rtf* など) とパッケージマニフェスト (*package.xml*) があります。
 
  既定では、Visual Studio 2010 には .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0、および F# Runtime 4.0 用のローカライズ版のブートストラップ パッケージのみが用意されています。 3 つのステップを実行することにより、その他のブートストラップのローカライズ版パッケージを作成できます。
 
@@ -33,7 +33,7 @@ ms.locfileid: "94351246"
 3. *package.xml* という名前のパッケージマニフェストを作成し、文字列とカルチャを更新して、そのファイルを新しいフォルダーに配置します。 ターゲット言語で Visual Studio のブートストラップを既に作成している場合は、Visual Studio *package.xml* ファイルをコピーして、この手順で変更することができます。
 
 > [!NOTE]
-> セットアップ プロジェクトを使用してアプリケーションを配置する場合は、 **Localization** プロパティを変更してアプリケーションをローカライズできます。
+> セットアップ プロジェクトを使用してアプリケーションを配置する場合は、**Localization** プロパティを変更してアプリケーションをローカライズできます。
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "94351246"
 
      次の表は、ロケールに合わせるために使用できるフォルダー名を示します。
 
-    |Locale|フォルダー名|
+    |Locale|[フォルダー名]|
     |------------|-----------------|
     |簡体中国語|zh-Hans|
     |繁体中国語|zh-Hant|
