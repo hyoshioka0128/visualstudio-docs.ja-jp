@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a778cde66bc85a6f3cd8a13b5f2bb6fdb41844de
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 6b324c0b572f025b3733233d70cf36485f90524c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925856"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow オブジェクト
 コードウィンドウは、1つまたは複数のテキストビュー (通常はオブジェクト) を含むことができる特殊なドキュメントウィンドウです <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 。
@@ -29,7 +29,7 @@ ms.locfileid: "97864011"
 
  次の表は、オブジェクト内のインターフェイスを示してい <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|グローバル一意識別子 (GUID) によって識別されるサービスを検索するための汎用アクセス機構を提供します。|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|1つ以上のコードビューを含むマルチドキュメントインターフェイス (MDI) 子を表します。|

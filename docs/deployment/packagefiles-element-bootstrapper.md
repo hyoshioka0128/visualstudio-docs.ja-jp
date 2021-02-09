@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925364"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 要素 (ブートストラップ)
 要素には、要素 `PackageFiles` `PackageFile` の結果として実行されるインストールパッケージを定義する要素が含まれ `Command` ます。
@@ -76,6 +76,6 @@ ms.locfileid: "94349543"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<Product> element](../deployment/product-element-bootstrapper.md)
-- [\<Package> element](../deployment/package-element-bootstrapper.md)
+- [\<Product> 要素](../deployment/product-element-bootstrapper.md)
+- [\<Package> 要素](../deployment/package-element-bootstrapper.md)
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

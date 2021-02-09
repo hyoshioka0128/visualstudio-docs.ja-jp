@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b87780ec-36a3-4e9a-9ee2-7abdc26db739
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5d69c54117f6e88ef57fc57f7588b2f9b6c72e3
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 519366fabed855c7ef3cb7c62d39a4743d890f1e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926040"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>実行時にプロジェクトのサブタイプを確認する
 カスタムプロジェクトのサブタイプに依存する VSPackage には、サブタイプが存在しない場合に適切に失敗するように、そのサブタイプを検索するロジックを含める必要があります。 次の手順は、指定されたサブタイプの存在を確認する方法を示しています。

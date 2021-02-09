@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df52ca75ef99fe98158cb5f874e59fe4ee0c47b4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 74e7aab4cbc012afbf045672dbf4af248ada4c61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849858"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925619"
 ---
 # <a name="how-to-create-an-application-page"></a>方法: アプリケーション ページを作成する
   1つ以上の SharePoint サイトに対して ASP.NET web ページを作成できます。 SharePoint では、これらのページはアプリケーションページと呼ばれます。 サイトページとは異なり、アプリケーションページには、ページの背後で実行されるコードが含まれています。 詳細については、「 [SharePoint のアプリケーションページを作成](../sharepoint/creating-application-pages-for-sharepoint.md)する」を参照してください。
@@ -33,7 +33,7 @@ ms.locfileid: "94849858"
 
 2. **ソリューション エクスプローラー** で、プロジェクト ノードを選択します。
 
-3. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+3. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 4. [ **新しい項目の追加** ] ダイアログボックスで、[ **SharePoint** ] ノードを展開し、[ **2010** ] 項目を選択します。
 

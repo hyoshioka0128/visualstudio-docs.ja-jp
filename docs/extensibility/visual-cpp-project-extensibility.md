@@ -7,15 +7,15 @@ dev_langs:
 - C++
 author: corob-msft
 ms.author: corob
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ba78ff7d38d993394072aa9dd18a7a8fa8cbb9d
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926022"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ プロジェクトシステムの拡張性とツールセットの統合
 
@@ -556,7 +556,7 @@ Visual Studio のデバッグサービスは、デバッグエンジンの機能
 
 デバッグセッションのデバッグエンジンとその他のプロパティを指定するには、 [デバッグランチャー](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) MEF コンポーネントを実装し、ルールを追加する必要があり `debugger` ます。 例については、 `$(VCTargetsPath)` \\ 1033 \\ デバッガー \_ ローカル \_windows.xml ファイルを参照してください。
 
-### <a name="deploy"></a>デプロイ
+### <a name="deploy"></a>配置
 
 .vcxproj プロジェクトは、Visual Studio のプロジェクトシステムの拡張機能を使用して、 [プロバイダーを配置](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md)します。
 
