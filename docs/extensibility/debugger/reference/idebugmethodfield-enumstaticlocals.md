@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e0a89b4c1ac4318b6dd070dc086b86b45ad24fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3af65c60654fd23f88892522142548bf5db87a70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727155"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929798"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 メソッドの静的ローカル変数の列挙子を作成します。
@@ -28,7 +28,7 @@ ms.locfileid: "80727155"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT EnumStaticLocals( 
+HRESULT EnumStaticLocals( 
    IEnumDebugFields** ppLocals
 );
 ```
