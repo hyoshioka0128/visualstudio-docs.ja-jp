@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541129"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920432"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin インターフェイス
   マネージ VSTO アドインを読み込むコンポーネントを作成するには、IManagedAddin インターフェイスを実装します。このインターフェイスは、2007 Microsoft Office システムに追加されました。
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. アプリケーションによって、次のレジストリ キーにあるエントリが検索され、VSTO アドインが検出されます。
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>*\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \ Addins\\**
 
     このレジストリ キーにある各エントリは、VSTO アドインの一意な ID です。 通常、これは VSTO アドイン アセンブリの名前です。
 
 2. アプリケーションによって、各 VSTO アドイン エントリにある `Manifest` エントリが検索されます。
 
-    マネージ VSTO アドインは `Manifest` ** \\ _\<application name>_ \\ _\<add-in ID>_ HKEY_CURRENT_USER \software\microsoft\office**の下のエントリにマニフェストの完全なパスを格納できます。 マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。
+    マネージ VSTO アドインでは、マニフェストの完全なパスを `Manifest` **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \\ _\<add-in ID>_** の下のエントリに格納できます。 マニフェストは、VSTO アドインの読み込みに使用される情報を提供するファイル (通常は XML ファイル) です。
 
 3. アプリケーションによって `Manifest` エントリが検出されると、そのアプリケーションはマネージド VSTO アドイン ローダー コンポーネントの読み込みを試みます。 このアプリケーションでは、IManagedAddin インターフェイスを実装する COM オブジェクトを作成しようとします。
 

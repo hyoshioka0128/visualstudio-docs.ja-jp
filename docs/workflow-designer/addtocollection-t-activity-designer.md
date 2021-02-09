@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1592eab528f2312a9ad90dec02354814d6a81c3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 18811199cce88c5d57332ced99763b4f6233da8d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993251"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920193"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T> アクティビティ デザイナー
 
@@ -44,7 +44,7 @@ ms.locfileid: "96993251"
 |<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|項目の追加先のコレクション。 このコレクションの型は **ICollection<TypeArgument \>** です。 コレクションを指定するには、プロパティ グリッドで Visual Basic の式を入力します。|
 |*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型。 既定では、この *Typeargument* 型は **Int32** に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの *Typeargument* の値を変更します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コレクション](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection \<T> アクティビティデザイナー](../workflow-designer/addtocollection-t-activity-designer.md)

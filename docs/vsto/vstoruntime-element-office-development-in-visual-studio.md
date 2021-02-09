@@ -12,15 +12,15 @@ helpviewer_keywords:
 - vstoRuntime element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921744"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;vstoRuntime &gt; 要素 (Visual Studio での Office 開発)
   `vstoRuntime` 名前空間の `vstav3` 要素は、特定の Office ソリューション用の、Visual Studio Tools for Office ランタイムのサポートされるバージョンを格納します。
@@ -41,8 +41,8 @@ ms.locfileid: "91584361"
 
 |属性|説明|
 |---------------|-----------------|
-|`release`|必須です。 Visual Studio Tools for Office ランタイムのリリース バージョン。|
-|`version`|必須です。 Visual Studio Tools for Office ランタイムのバージョン番号。|
+|`release`|必須。 Visual Studio Tools for Office ランタイムのリリース バージョン。|
+|`version`|必須。 Visual Studio Tools for Office ランタイムのバージョン番号。|
 |`supportUrl`|任意。 Visual Studio Tools for Office ランタイムのインストール場所へのリンク。|
 
  `vstoRuntime` には要素がありません。

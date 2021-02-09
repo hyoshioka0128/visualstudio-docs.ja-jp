@@ -14,22 +14,22 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920230"
 ---
 # <a name="work-with-text-in-documents"></a>ドキュメント内のテキストの操作
   このセクションのトピックでは、Microsoft Office Word のオブジェクト モデルを使用して Office プロジェクト内のテキストを操作する手順とコード例を示します。
 
  以下のタスクは、VSTO アドインとドキュメント レベルのカスタマイズとで実行方法が異なる場合があります。
 
-|タスク|手順|
+|タスク|プロシージャ|
 |----------|---------------|
 |さまざまな条件に基づいて範囲を定義し、それらを選択します。|[方法: プログラムによって文書内の範囲を定義および選択する](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)|
 |範囲の開始文字と終了文字を取得します。|[方法: プログラムによって範囲内の開始文字と終了文字を取得する](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)|

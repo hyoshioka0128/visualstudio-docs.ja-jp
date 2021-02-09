@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c398d9eb79a6b5fcd1a6851596ab8913faf32fa
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 772d38b328eca1e0afb6ff48a5ad580d01939527
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921473"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>式の評価 (Visual Studio デバッグ SDK)
 中断モードでは、IDE は複数のプログラム変数を含む単純な式を評価する必要があります。 この評価を行うには、デバッグエンジン (DE) が IDE のウィンドウのいずれかに入力された式を解析して評価する必要があります。
@@ -32,7 +32,7 @@ ms.locfileid: "96560890"
 ## <a name="using-expression-evaluation"></a>式の評価の使用
  式の評価を使用するには、次の表に示すように、 [IDebugExpressionContext2::P arseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) メソッドと [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスのすべてのメソッドを実装する必要があります。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|式を非同期的に評価します。|
 |[中止](../../extensibility/debugger/reference/idebugexpression2-abort.md)|非同期式の評価を終了します。|

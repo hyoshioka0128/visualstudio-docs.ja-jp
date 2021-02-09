@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1f588feb-522e-488d-be92-7bc19b9e3688
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f208c52bd45953aaad9efab9b6b65b15b3b759c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e548f6c51372608b661ec85b80afeb535263cc6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921149"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 このイベントにバインドされたブレークポイントの列挙子を作成します。
@@ -28,13 +28,13 @@ ms.locfileid: "80735360"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT EnumBoundBreakpoints( 
+HRESULT EnumBoundBreakpoints( 
     IEnumDebugBoundBreakpoints2** ppEnum
 );
 ```
 
 ```csharp
-int EnumBoundBreakpoints( 
+int EnumBoundBreakpoints( 
     out IEnumDebugBoundBreakpoints2 ppEnum
 );
 ```
@@ -50,7 +50,7 @@ int EnumBoundBreakpoints( 
 バインドされたブレークポイントの一覧は、このイベントにバインドされているブレークポイントの一覧であり、保留中のブレークポイントからバインドされたブレークポイントのリスト全体ではない可能性があります。 保留中のブレークポイントにバインドされているすべてのブレークポイントの一覧を取得するには、 [Getpendingbreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) ポイントメソッドを呼び出して、関連付けられている [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) オブジェクトを取得し、 [enumboundbreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ポイントメソッドを呼び出して、保留中のブレークポイントのすべてのバインドされたブレークポイントを含む [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) オブジェクトを取得します。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)インターフェイスを公開する**Cbreakpointsetdebugeventbase**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)インターフェイスを公開する **Cbreakpointsetdebugeventbase** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(
