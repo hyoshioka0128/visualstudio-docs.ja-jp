@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848098"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>ファイル名拡張子のファイル ハンドラーを指定する
 特定のファイル拡張子を持つファイルを処理するアプリケーションを特定するには、いくつかの方法があります。 OpenWithList と Openwithlist 動詞は、ファイル拡張子のレジストリエントリの下にファイルハンドラーを指定する2つの方法があります。
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- ファイル拡張子の既定値として指定された ProgID が既定のファイルハンドラーです。 以前のバージョンのまたは他のアプリケーションで使用できるファイル拡張子の ProgID を変更する場合は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、 `OpenWithProgids` ファイル拡張子のキーを登録し、サポートする古い progid と共に一覧で新しい progid を指定する必要があります。 例:
+ ファイル拡張子の既定値として指定された ProgID が既定のファイルハンドラーです。 以前のバージョンのまたは他のアプリケーションで使用できるファイル拡張子の ProgID を変更する場合は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、 `OpenWithProgids` ファイル拡張子のキーを登録し、サポートする古い progid と共に一覧で新しい progid を指定する必要があります。 次に例を示します。
 
 ```
 HKEY_CLASSES_ROOT\

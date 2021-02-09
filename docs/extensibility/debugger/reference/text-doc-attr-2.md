@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afbb7d7f4525050e73dafaed906dbc504cc8b52e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e7113cfead52348a1d1a85973b90014ca53226ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850727"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 ドキュメントの属性について説明します。
@@ -47,7 +47,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 
  [Onupdatedocumentattributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

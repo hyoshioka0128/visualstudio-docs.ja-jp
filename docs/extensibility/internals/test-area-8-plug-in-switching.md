@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c3a25aa9312073d3ce4a60752d41585fcee7b3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848209"
 ---
 # <a name="test-area-8-plug-in-switching"></a>テスト領域 8: プラグインの切り替え
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE: integrated development environment) には、現在のソース管理プラグインを変更するためのユーザーインターフェイス (UI) が用意されています。 このテスト領域には、ソリューションのソース管理に使用するプラグインを選択するプロセスのテストケースが表示されます。
@@ -54,5 +54,5 @@ ms.locfileid: "97487648"
 |----------------------------------| - | - |
 | ソリューションのプラグインの変更 | 1. [現在のものとして **テスト] の**[プラグイン] を選択  ->  します。  ->    ->  <br />2. 新しいプロジェクトとソリューションを作成します。<br />3. ソリューションをソース管理に追加します。<br />4. ソース管理からソリューションのバインドを解除します ([ **ソース管理の変更** ] ダイアログボックスを使用します)。<br />5. 別のプラグインを選択します (例: [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] )。<br />6. アンロードされた場合は、ディスクからソリューションを再読み込みします。<br />7. ソリューションをソース管理に追加します。<br />8. ソース管理からソリューションのバインドを解除します ([ **ソース管理の変更** ] ダイアログボックスを使用します)。<br />9. テストの [プラグイン] をもう一度選択します。<br />10. アンロードされた場合は、ディスクからソリューションを再読み込みします。<br />11. [ **ソース管理の変更** ] ダイアログボックスを使用して、ソリューションを元の場所にバインドします。 | ソリューションは、選択したプラグインを使用してソース管理に追加されます。 |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

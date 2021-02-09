@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbba1f4d6cf0a2a5a45dd2999afa5bbf3443fca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 719460b36f926df19e76db1aab4e90b4d959fdc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850495"
 ---
 # <a name="how-to-open-project-specific-editors"></a>方法: プロジェクト固有のエディターを開く
 プロジェクトによって開かれている項目ファイルが、そのプロジェクトの特定のエディターに本質的にバインドされている場合、プロジェクトはプロジェクト固有のエディターを使用してファイルを開く必要があります。 エディターを選択するための IDE のメカニズムにファイルを委任することはできません。 たとえば、標準のビットマップエディターを使用する代わりに、このプロジェクト固有のエディターオプションを使用して、プロジェクトに固有のファイル内の情報を認識する特定のビットマップエディターを指定できます。
@@ -53,7 +53,7 @@ ms.locfileid: "96993784"
 
 6. ビューを <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> 表示して開くには、メソッドを呼び出します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)
 - [方法: 開いているドキュメントのエディターを開く](../extensibility/how-to-open-editors-for-open-documents.md)

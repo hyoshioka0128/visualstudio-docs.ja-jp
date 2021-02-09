@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: d384ff71-dc71-40b9-a871-801f8b6a3418
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd43b93f8a74e0e1fcb12ac9be4da47142a79519
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848222"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 デバッグセッションを終了するときに、デバッグエンジンが UI の既定の動作をオーバーライドできるようにし [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。
@@ -32,14 +32,14 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ## <a name="methods"></a>メソッド
  次の表に、のメソッドを示し `IDebugProgramDestroyEventFlags2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|プログラムの破棄フラグを取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  UI の既定の動作で [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] は、すべてのプログラムがプログラム破棄イベントを送信した後にデザインモードに戻ります。 このインターフェイスを使用すると、デバッグエンジンでその動作を変更できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

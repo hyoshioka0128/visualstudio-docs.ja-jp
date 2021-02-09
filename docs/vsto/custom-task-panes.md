@@ -24,15 +24,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b08e0e3bbc9f45b33ecd0248179011113db7a779
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844181"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850036"
 ---
 # <a name="custom-task-panes"></a>カスタム作業ウィンドウ
   作業ウィンドウは、通常、Microsoft Office アプリケーションのウィンドウの一辺にドッキングされているユーザー インターフェイス ウィンドウです。 カスタム作業ウィンドウは、独自の作業ウィンドウを作成し、ユーザーがソリューションの各機能にアクセスする際に使い慣れたインターフェイスを利用できるようにするものです。 たとえば、インターフェイスにはドキュメントを変更するコードや、データ ソースのデータを表示するコードを実行するコントロールが含まれます。
@@ -91,7 +91,7 @@ ms.locfileid: "96844181"
  作業ウィンドウを作成した後に、<xref:Microsoft.Office.Tools.CustomTaskPane> オブジェクトのプロパティとイベントを使用して、作業ウィンドウのユーザー インターフェイスを制御したり、ユーザーが作業ウィンドウを変更したときに対応したりすることができます。
 
 ### <a name="make-the-custom-task-pane-visible"></a>カスタム作業ウィンドウを表示する
- 既定では、作業ウィンドウは表示されません。 作業ウィンドウが表示されるようにするには、プロパティを true に設定する必要があり <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> ます。 **true**
+ 既定では、作業ウィンドウは表示されません。 作業ウィンドウが表示されるようにするには、プロパティを true に設定する必要があり <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> ます。 
 
  ユーザーは、作業ウィンドウの隅にある [ **閉じる** ] ボタン (X) をクリックすることで、いつでも作業ウィンドウを閉じることができます。 ただし、ユーザーがもう一度、カスタム作業ウィンドウを開くための既定の方法はありません。 ユーザーがカスタム作業ウィンドウを閉じた場合、それを表示する方法を提供しない限り、そのユーザーはカスタム作業ウィンドウを再度表示することはできません。
 
@@ -116,7 +116,7 @@ ms.locfileid: "96844181"
 
  次の表に、ユーザーがカスタム作業ウィンドウに加える変更に応答するために利用できるイベントを示します。
 
-|タスク|Event|
+|タスク|イベント|
 |----------|-----------|
 |ユーザーが作業ウィンドウの場所を変更したときに応答するには|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |ユーザーが作業ウィンドウを非表示にしたり、表示させた場合に応答するには|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|

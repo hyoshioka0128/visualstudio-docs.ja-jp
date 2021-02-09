@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d329ce7b4f4b74b8ff77357393ffe9383a3977e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 45cd616a58f51a532883eeba37f06c4eb73bd72d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850675"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>方法: 開いているドキュメントのエディターを開く
 プロジェクトでドキュメントウィンドウを開く前に、まず、そのファイルが別のエディターのドキュメントウィンドウで既に開いているかどうかを確認する必要があります。 このファイルは、プロジェクト固有のエディターで開くか、に登録されている標準エディターのいずれかで開くことができ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
@@ -54,7 +54,7 @@ ms.locfileid: "96993862"
 
 2. ドキュメントが開いていない場合は、 [「方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)」の手順を完了します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)
 - [方法: 標準エディターを開く](../extensibility/how-to-open-standard-editors.md)
