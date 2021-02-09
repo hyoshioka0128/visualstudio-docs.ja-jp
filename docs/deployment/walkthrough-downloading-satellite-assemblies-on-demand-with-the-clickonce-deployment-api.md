@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349296"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917313"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>チュートリアル: ClickOnce 配置 API を使用して必要に応じてサテライトアセンブリをダウンロードする
 サテライト アセンブリを使用すると、複数のカルチャに対して Windows フォーム アプリケーションを構成できます。 *サテライト アセンブリ* とは、アプリケーションの既定のカルチャ以外のカルチャ用アプリケーション リソースを含むアセンブリのことです。
@@ -56,7 +56,7 @@ ms.locfileid: "94349296"
 
 4. **[Files]** タブをクリックします。
 
-5. **省略記号** ( **...** ) ボタンをクリックして、アプリケーションのすべてのアセンブリとファイル ( *Resgen.exe* を使用して生成したサテライト アセンブリを含む) を格納しているディレクトリを選択します (サテライトアセンブリの名前は *\<isoCode>\ApplicationName.resources.dll* の形式になります。ここで、 \<isoCode> は RFC 1766 形式の言語識別子です)。
+5. **省略記号** (**...**) ボタンをクリックして、アプリケーションのすべてのアセンブリとファイル (*Resgen.exe* を使用して生成したサテライト アセンブリを含む) を格納しているディレクトリを選択します (サテライトアセンブリの名前は *\<isoCode>\ApplicationName.resources.dll* の形式になります。ここで、 \<isoCode> は RFC 1766 形式の言語識別子です)。
 
 6. **[作成]** をクリックして、配置にファイルを追加します。
 

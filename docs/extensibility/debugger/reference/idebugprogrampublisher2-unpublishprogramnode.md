@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 57c7e6e1-b84e-4e14-ad83-cbbb64e2f526
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae2c3d9f3c9f6c500b10f580035312b2d045689a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69afe6dba5db73b2b2af80031612ada5b18ae0a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916178"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 指定されたプログラムノードを可用性からデバッグエンジン (DEs) およびセッションデバッグマネージャー (SDM) に削除します。
@@ -28,13 +28,13 @@ ms.locfileid: "80721581"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT UnpublishProgramNode(
-   IDebugProgramNode2* pProgramNode
+HRESULT UnpublishProgramNode(
+   IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int UnpublishProgramNode(
+int UnpublishProgramNode(
    IDebugProgramNode2 pProgramNode
 );
 ```
@@ -46,7 +46,7 @@ int UnpublishProgramNode(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  削除されると、プログラムの情報を照会するためのプログラムノードを使用できなくなります。
 
  プログラムノードを使用できるようにするには、 [Publishprogramnode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) メソッドを呼び出します。

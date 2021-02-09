@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a2798f54bc89b9dddea3e3727084bae0086fab0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915246"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>従来の言語サービスのクイック ヒント
 IntelliSense のクイックヒントは、ユーザーが識別子にカレットを置き、 **intellisense** メニューから [**クイックヒント**] を選択するか、識別子の上にマウスカーソルを置いたときに、ソースの識別子に関する情報を表示します。 これにより、ツールヒントが識別子に関する情報と共に表示されます。 通常、この情報は識別子の種類で構成されます。 デバッグエンジンがアクティブになっている場合は、この情報に現在の値が含まれている可能性があります。 デバッグエンジンは式の値を提供しますが、言語サービスは識別子のみを処理します。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5adb5d6fc38a06054d6273f5b0493bae5bed77df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729674"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916213"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 このメソッドは、式を同期的に評価します。
@@ -70,7 +70,7 @@ int EvaluateSync(
 同期評価の場合、評価の完了時にイベントを Visual Studio に返信する必要はありません。
 
 ## <a name="example"></a>例
-次の例は、IDebugExpression2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CExpression` います。 [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
+次の例は、IDebugExpression2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CExpression` います。 [](../../../extensibility/debugger/reference/idebugexpression2.md)
 
 ```cpp
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,

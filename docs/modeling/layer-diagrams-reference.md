@@ -19,15 +19,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f173e27588538c806d075e0a6b010fbd848f2690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917005"
 ---
 # <a name="dependency-diagrams-reference"></a>依存関係図: リファレンス
 
@@ -63,7 +63,7 @@ Visual Studio では、 *依存関係図* を使用して、システムの高�
 |1|**レイヤー**|システム内の物理的な成果物の論理グループ。 このような成果物には、名前空間、プロジェクト、クラス、メソッドなどがあります。<br /><br /> レイヤーにリンクされている成果物を表示するには、レイヤーのショートカットメニューを開き、[ **リンクの表示** ] をクリックして **レイヤーエクスプローラー** を開きます。<br /><br /> 詳細については、「 [レイヤーエクスプローラー](#Explorer)」を参照してください。<br /><br /> -   禁止されている **名前空間の依存関係**-このレイヤーに関連付けられている成果物が、指定した名前空間に依存しないように指定<br />-   禁止された **名前空間**-このレイヤーに関連付けられている成果物が、指定した名前空間に属していないことを指定します。<br />-   **必須の名前空間** -このレイヤーに関連付けられた成果物が、指定した名前空間のいずれかに属している必要があることを指定します。|
 |2|**依存関係**|あるレイヤーが別のレイヤーの機能を使用することはできても、その逆はできないことを示します。<br /><br /> -   **Direction** -依存関係の方向を指定します。|
 |3|**双方向の依存関係**|あるレイヤーが別のレイヤーの機能を使用でき、その逆もできることを示します。<br /><br /> -   **Direction** -依存関係の方向を指定します。|
-|4|**解説**|全般的なノートを図または図の要素に追加するために使用します。|
+|4|**コメント**|全般的なノートを図または図の要素に追加するために使用します。|
 |5|**コメント リンク**|コメントを図の要素にリンクするために使用します。|
 
 ## <a name="layer-explorer"></a><a name="Explorer"></a> レイヤーエクスプローラー

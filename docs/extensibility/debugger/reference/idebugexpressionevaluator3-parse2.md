@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a82e729f3811f63a11aa8476ad23b566521c8cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729131"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915527"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 シンボルプロバイダーおよび評価フレームのアドレスを指定して、式文字列を解析済みの式に変換します。
@@ -83,7 +83,7 @@ HRESULT Parse2 (
 このメソッドは、実際の値ではなく、解析された式を生成します。 解析された式を評価する準備ができました。つまり、値に変換されます。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)インターフェイスを公開する**CEE**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)インターフェイスを公開する **CEE** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

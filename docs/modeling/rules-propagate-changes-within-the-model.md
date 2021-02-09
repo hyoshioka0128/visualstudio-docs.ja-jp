@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, rules
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4ff2273c8c71582c3ef634eeb398b12e29401d0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7062feddf00194e4633435655b5e11f5fefd38ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363953"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916952"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>規則によって変更内容がモデル内に反映される
 ストアルールを作成して、視覚化およびモデリング SDK (VMSDK) で、ある要素から別の要素に変更を反映させることができます。 ストア内のいずれかの要素に変更が加えられると、通常、最も外側のトランザクションがコミットされるときに、規則が実行されるようにスケジュールされます。 要素の追加や削除など、さまざまな種類のイベントに対して異なる種類のルールがあります。 ルールは、特定の種類の要素、図形、または図に適用できます。 多くの組み込み機能がルールによって定義されています。たとえば、ルールによって、モデルが変更されたときにダイアグラムが更新されます。 独自の規則を追加することで、ドメイン固有言語をカスタマイズできます。
@@ -130,7 +130,7 @@ namespace ExampleNamespace
 
 - 次のいずれかの基底クラスから rule クラスを派生させます。
 
-  | 基底クラス | トリガー |
+  | 基本クラス | トリガー |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 要素、リンク、または図形が追加されます。<br /><br /> 新しい要素に加えて新しいリレーションシップを検出する場合に使用します。 |
   | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | ドメインプロパティの値が変更されます。 メソッドの引数は、古い値と新しい値を提供します。<br /><br /> 図形の場合、このルールは、図形が移動された場合に、組み込みプロパティが変更されたときにトリガーされ `AbsoluteBounds` ます。<br /><br /> 多くの場合、 `OnValueChanged` プロパティハンドラーでまたはをオーバーライドする方が便利です `OnValueChanging` 。 これらのメソッドは、変更の直前と直後に呼び出されます。 これに対し、ルールは通常、トランザクションの最後に実行されます。 詳細については、「 [ドメインプロパティ値の変更ハンドラー](../modeling/domain-property-value-change-handlers.md)」を参照してください。 **注:**  このルールは、リンクが作成または削除されたときにはトリガーされません。 代わりに、 `AddRule` ドメインリレーションシップに対してとを記述し `DeleteRule` ます。 |

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad10050aa157b4481fa2041ec5f322451983149f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1287af4b1afb328e3b843bae0ae93284fe8386c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915512"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 マネージコードジェネリックをサポートするために使用できるフィールドの型を拡張します。
@@ -34,7 +34,7 @@ IDebugExtendedField : IDebugField
 |[GetExtendedKind](../../../extensibility/debugger/reference/idebugextendedfield-getextendedkind.md)|指定した拡張フィールドの種類を取得します。|
 |[IsClosedType](../../../extensibility/debugger/reference/idebugextendedfield-isclosedtype.md)|フィールドが閉じられた型を表すかどうかを判断します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。
