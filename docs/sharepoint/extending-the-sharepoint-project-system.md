@@ -1,6 +1,6 @@
 ---
 title: SharePoint プロジェクトシステムの拡張 |Microsoft Docs
-description: SharePoint プロジェクトシステムを拡張します。 SharePoint プロジェクトシステムを拡張する方法について説明します。 一般的な開発タスクについて理解する。
+description: SharePoint プロジェクト システムを拡張します。 SharePoint プロジェクトシステムを拡張する方法について説明します。 一般的な開発タスクについて理解する。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c017217f66e38eed6248b90efaeabce0efaa9c70
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 5a81fef67cc6816f16a074494005a61d647abeab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889682"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>SharePoint プロジェクト システムを拡張する
   SharePoint ソリューションを作成するには、Visual Studio で一連のプロジェクトテンプレートと項目テンプレートを使用します。 これらのテンプレートは、多くの開発シナリオの要件を満たしていますが、必要な機能が提供されない場合もあります。 このような場合は、SharePoint プロジェクトシステムを拡張できます。

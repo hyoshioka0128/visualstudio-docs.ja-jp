@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889565"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>フィーチャーマニフェストとパッケージマニフェストの XML のマージ
   フィーチャーとパッケージは、マニフェストファイルによって定義され [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 これらのパッケージマニフェストは、デザイナーから生成されたデータと、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ユーザーによってマニフェストテンプレートに入力されたカスタムデータの組み合わせです。 パッケージ化時に、は、 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] パッケージ化された [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] マニフェストファイルを形成するために用意されているカスタムステートメントとデザイナーをマージし [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。 同様の要素は、後の「マージ例外」で説明されている例外を使用してマージされ、 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] SharePoint にファイルを配置した後に検証エラーが発生しないようにし、マニフェストファイルを小さく、効率的にします。
@@ -37,7 +37,7 @@ ms.locfileid: "96304231"
 
  フィーチャーマニフェストファイルとパッケージマニフェストファイルのマージ例外の一覧を次に示し [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ます。
 
-|デザイナー|XML 要素|
+|Designer|XML 要素|
 |--------------|-----------------|
 |フィーチャーデザイナー|ActivationDependency|
 |フィーチャーデザイナー|UpgradeAction|

@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970261"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889500"
 ---
 # <a name="replaceable-parameters"></a>置き換え可能パラメーター
   置換可能なパラメーター ( *トークン*) をプロジェクトファイル内で使用すると、デザイン時に実際の値がわからない SharePoint ソリューション項目の値を指定できます。 これらの関数は、標準テンプレートトークンに似てい [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 詳細については、「 [テンプレートパラメーター](../ide/template-parameters.md)」を参照してください。
@@ -50,7 +50,7 @@ ms.locfileid: "95970261"
 ## <a name="tokens-list"></a>トークンの一覧
  次の表に、使用可能なトークンを示します。
 
-|名前|説明|
+|名前|Description|
 |----------|-----------------|
 |$SharePoint. Project. FileName $|格納しているプロジェクトファイルの *名前 (など)。*|
 |$SharePoint FileNameWithoutExtension $|ファイル名拡張子を含まない、含んでいるプロジェクトファイルの名前。 たとえば、"NewProj" のようになります。|

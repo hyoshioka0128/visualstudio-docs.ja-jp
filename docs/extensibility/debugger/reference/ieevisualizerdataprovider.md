@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a10f306b6c507f6db7add17931b8a38d926a37d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718053"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890826"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IEEVisualizerDataProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|このビジュアライザーが表すオブジェクト (およびその後の値) を更新できるかどうかを判断します。|
 |[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|このビジュアライザーのオブジェクトを強制的に再評価します。|
@@ -52,7 +52,7 @@ IEEVisualizerDataProvider : IUnknown
 ## <a name="remarks"></a>解説
  ビジュアライザーサービス ( [Ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md) インターフェイスによって表され、 [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)によって返される) は、インターフェイスを実装するオブジェクトへの参照を保持し `IEEVisualizerDataProvider` ます。 その結果、 `IEEVisualizerDataProvider` そのオブジェクトがオブジェクトへの参照を保持している場合、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) を実装するオブジェクトにインターフェイスを実装することはできません `IEEVisualizerService` 。循環参照の結果と、オブジェクトが破棄されるとデッドロックが発生します。 を `IEEVisualizerDataProvider` 呼び出さずにオブジェクトがデリゲートする別のオブジェクトにを実装する方法をお勧めし `IDebugProperty2` `IUnknown::AddRef` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

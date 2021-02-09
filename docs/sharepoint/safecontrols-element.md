@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControls element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23e31e3df59d6d580ac94ffcb83f7a17e186a267
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440676"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889448"
 ---
 # <a name="safecontrols-element"></a>SafeControls 要素
   SharePoint サイトの任意の ASPX ページですべてのユーザーがアクセスできるようにセキュリティで保護されたものとして指定された ASPX コントロールおよび Web パーツのコレクション。
@@ -50,7 +50,7 @@ ms.locfileid: "95440676"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクトアイテムを表します。 この要素は、 *sharepointprojectitem.spdata* ファイルの必須のルート要素です。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  安全なコントロールの詳細については、「 [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。
 
 ## <a name="element-information"></a>要素情報

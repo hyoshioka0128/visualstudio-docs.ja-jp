@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f2668f8410b6e5f18b23c82202c1d33f8c67b4d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994694"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890761"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>プロパティをプロパティウィンドウに公開する
 
 このチュートリアルでは、オブジェクトのパブリックプロパティを [ **プロパティ** ] ウィンドウに公開します。 これらのプロパティに加えた変更は、[ **プロパティ** ] ウィンドウに反映されます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
@@ -274,6 +274,6 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 Visual Studio のツールウィンドウは、Visual Studio セッション間で保持します。 ツールウィンドウの状態の保持の詳細については、「」を参照してください <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [プロパティとプロパティウィンドウの拡張](../extensibility/extending-properties-and-the-property-window.md)

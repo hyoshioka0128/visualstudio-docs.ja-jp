@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26022098eb4233186a1442bde38fe4325accfdd1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2fd9e9f5e6cdb8f56e16622cc05debf69c8c7f3d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889968"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -46,11 +46,11 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 `PSDFLAG_SHOW_WARNING_ICON`\
 この設定を選択すると、UI に警告アイコンが表示されます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この列挙体は、 [Getdescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) メソッドによって返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ヘッダー: Msdbg. h
 

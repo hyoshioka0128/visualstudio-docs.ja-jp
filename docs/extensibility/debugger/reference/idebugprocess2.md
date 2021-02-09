@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c72659491ec6718397a4fbb494175eea0896c7f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891073"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 このインターフェイスは、ポートで実行されているプロセスを表します。 ポートがローカルポートの場合、 `IDebugProcess2` 通常はローカルコンピューター上の物理プロセスを表します。
@@ -41,7 +41,7 @@ IDebugProcess2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugProcess2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|プロセスの説明を取得します。|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|このプロセスに含まれているプログラムを列挙します。|
@@ -61,7 +61,7 @@ IDebugProcess2 : IUnknown
 ## <a name="remarks"></a>解説
  に `IDebugProcess2` は、1つ以上の [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスが含まれています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
@@ -69,7 +69,7 @@ IDebugProcess2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)

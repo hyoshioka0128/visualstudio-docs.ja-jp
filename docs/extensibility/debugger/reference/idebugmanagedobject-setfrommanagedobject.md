@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4056befa0b5b053d480983901b24feb6b25cf538
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f18fbfa70faf1d3da8ae785768419765dc94b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727699"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890228"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 パラメーターとして指定された値クラスのインスタンスから、値クラスオブジェクトのインスタンスの値を設定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80727699"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetFromManagedObject( 
+HRESULT SetFromManagedObject( 
    IUnknown* pManagedObject
 );
 ```
