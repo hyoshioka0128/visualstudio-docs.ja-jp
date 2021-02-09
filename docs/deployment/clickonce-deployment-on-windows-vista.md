@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccac1cd234a0f83810ff2596e1763209d95a8325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918453"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista の ClickOnce 配置
 
@@ -54,6 +54,6 @@ Visual Studio には、マニフェスト生成のための次のオプション
 
 ## <a name="see-also"></a>関連項目
 - [ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)
-- [ユーザーアクセス許可と Visual Studio](/previous-versions/ms165100(v=vs.100))
+- [ユーザー アクセス許可と Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [[アプリケーション] ページ (プロジェクト デザイナー) (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [[アプリケーション] ページ (プロジェクト デザイナー)](../ide/reference/application-page-project-designer-visual-basic.md)

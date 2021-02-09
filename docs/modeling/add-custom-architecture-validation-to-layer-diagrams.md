@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100527"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919320"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>カスタム アーキテクチャ検証を依存関係図に追加する
 
@@ -62,13 +62,13 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 ::: moniker range="vs-2017"
 
-4. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin*ディレクトリで *.vsix*ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**ツール**] メニューの [**拡張機能と更新プログラム**] をクリックします。
+4. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin* ディレクトリで *.vsix* ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**ツール**] メニューの [**拡張機能と更新プログラム**] をクリックします。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin*ディレクトリで *.vsix*ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**拡張**機能] メニューの [**拡張機能の管理**] を選択します。
+4. Visual Studio のメインインスタンスまたは別のコンピューターに拡張機能をインストールするには、 *bin* ディレクトリで *.vsix* ファイルを見つけます。 このファイルをインストール先のコンピューターにコピーして、ダブルクリックします。 アンインストールするには、[**拡張** 機能] メニューの [**拡張機能の管理**] を選択します。
 
 ::: moniker-end
 
@@ -78,13 +78,13 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>レイヤー検証を別の VSIX に追加するには
 
-1. 新しい**クラス ライブラリ** プロジェクトを作成します。 このプロジェクトには、レイヤー検証クラスが含められます。
+1. 新しい **クラス ライブラリ** プロジェクトを作成します。 このプロジェクトには、レイヤー検証クラスが含められます。
 
-2. ソリューションで **VSIX プロジェクト** を検索または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest**という名前のファイルが含まれます。
+2. ソリューションで **VSIX プロジェクト** を検索または作成します。 VSIX プロジェクトには、 **source.extension.vsixmanifest** という名前のファイルが含まれます。
 
-3. **ソリューションエクスプローラー**の VSIX プロジェクトの右クリックメニューで、[**スタートアッププロジェクトに設定**] を選択します。
+3. **ソリューションエクスプローラー** の VSIX プロジェクトの右クリックメニューで、[**スタートアッププロジェクトに設定**] を選択します。
 
-4. **source.extension.vsixmanifest**の **[アセット]** で、レイヤー検証プロジェクトを MEF コンポーネントとして追加します。
+4. **source.extension.vsixmanifest** の **[アセット]** で、レイヤー検証プロジェクトを MEF コンポーネントとして追加します。
 
     1. **[新規]** を選択します。
 
@@ -126,7 +126,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
     > [!NOTE]
     > メソッドは特定の状況においてのみ呼び出され、ブレークポイントは自動的には動作しません。 詳細については、「 [レイヤー検証のデバッグ](#debugging)」を参照してください。
 
-9. VSIX を Visual Studio のメインインスタンスまたは別のコンピューターにインストールするには、vsix プロジェクトの**bin**ディレクトリで **.vsix ファイルを見つけます。** このファイルを、VSIX をインストールするコンピューターにコピーします。 Windows エクスプローラーで、VSIX ファイルをダブルクリックします。
+9. VSIX を Visual Studio のメインインスタンスまたは別のコンピューターにインストールするには、vsix プロジェクトの **bin** ディレクトリで **.vsix ファイルを見つけます。** このファイルを、VSIX をインストールするコンピューターにコピーします。 Windows エクスプローラーで、VSIX ファイルをダブルクリックします。
 
 ## <a name="programming-validation"></a><a name="programming"></a> 検証のプログラミング
 
@@ -221,7 +221,7 @@ Visual Studio では、ユーザーはプロジェクト内のソースコード
 
 デバッガーを検証プロセスにアタッチするには、検証メソッドの先頭に `System.Diagnostics.Debugger.Launch()` の呼び出しを挿入します。 [デバッグ] ダイアログボックスが表示されたら、Visual Studio のメインインスタンスを選択します。
 
-または、 `System.Windows.Forms.MessageBox.Show()`の呼び出しを挿入してもかまいません。 メッセージボックスが表示されたら、Visual Studio のメインインスタンスにアクセスし、[ **デバッグ** ] メニューの [ **プロセスにアタッチ**] をクリックします。 **Graphcmd.exe**という名前のプロセスを選択します。
+または、 `System.Windows.Forms.MessageBox.Show()`の呼び出しを挿入してもかまいません。 メッセージボックスが表示されたら、Visual Studio のメインインスタンスにアクセスし、[ **デバッグ** ] メニューの [ **プロセスにアタッチ**] をクリックします。 **Graphcmd.exe** という名前のプロセスを選択します。
 
 常に、Ctrl キーを押しながら F5 キーを押して (**[デバッグなしで開始]**) 実験用インスタンスを起動します。
 

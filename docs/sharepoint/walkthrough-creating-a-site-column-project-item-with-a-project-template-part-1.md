@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 32f56f282dc5755b8162c4f19a9c036dc2e9cc5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918733"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -676,7 +676,7 @@ ms.locfileid: "96915220"
 
 12. [ **プロジェクト** ] ボックスの一覧で [ **ProjectItemTypeDefinition**] を選択し、[ **OK** ] をクリックします。
 
-13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** プロジェクトがエラーなしでコンパイルされることを確認します。
+13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  プロジェクトがエラーなしでコンパイルされることを確認します。
 
 ## <a name="test-the-project-template"></a>プロジェクト テンプレートをテストする
  これで、プロジェクト テンプレートをテストする準備ができました。 まず、Visual Studio の実験用インスタンスで SiteColumnProjectItem ソリューションのデバッグを開始します。 次に、Visual Studio の実験用インスタンスで **サイト列** プロジェクトをテストします。 最後に、SharePoint プロジェクトをビルドして実行し、サイト内の列が正常に機能することを確認します。
@@ -691,7 +691,7 @@ ms.locfileid: "96915220"
 
 #### <a name="to-test-the-project-in-visual-studio"></a>Visual Studio でプロジェクトをテストするには
 
-1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+1. Visual Studio の実験用インスタンスのメニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 2. [ **Visual C#** ] ノードまたは [ **Visual Basic** ] ノード (プロジェクトテンプレートでサポートされている言語によって異なります) を展開し、[ **SharePoint** ] ノードを展開して、[ **2010** ] ノードを選択します。
 
