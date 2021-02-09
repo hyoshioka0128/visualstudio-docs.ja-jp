@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99e250dab652ff0d63033f8b40423e76975eeee5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737904"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902092"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 条件付きブレークポイントが発生する回数と条件について説明します。
@@ -53,7 +53,7 @@ public struct BP_PASSCOUNT {
 
 この構造体は、パラメーターとして[Setpass count](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) および[setpass count](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) メソッドにも渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

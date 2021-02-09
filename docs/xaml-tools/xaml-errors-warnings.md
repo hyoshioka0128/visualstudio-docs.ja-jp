@@ -7,15 +7,15 @@ ms.topic: error-reference
 ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b0c785bef80f59c165f251b2986f0db1eb8bc63
-ms.sourcegitcommit: ba966327498a0f67d2df2291c60b62312f40d1d3
+ms.openlocfilehash: e33cdc11eb5531fd2325bd90912dc22a105711c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93414478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903647"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML のエラーと警告
 
@@ -39,7 +39,7 @@ Xaml のブランド変更の編集 & の詳細については、XAML のホッ�
 
 ## <a name="suppress-xaml-designer-errors"></a>XAML デザイナー エラー
 
-**[ツール]、[オプション]** の順に選択して **[オプション]** ダイアログを開き、 **[テキスト エディター]、[XAML]、[その他]** の順に選択します。
+**[ツール]、[オプション]** の順に選択して **[オプション]** ダイアログを開き、**[テキスト エディター]、[XAML]、[その他]** の順に選択します。
 
 **[Show errors detected by the XAML designer]\(XAML デザイナーによって検出されたエラーを表示する\)** チェック ボックスの選択を解除します。
 

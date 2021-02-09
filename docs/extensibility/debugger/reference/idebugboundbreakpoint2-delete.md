@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 7088dc66-f24a-446f-a52a-397d02457a41
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a480a97c14b568565fee9b1b82d672db11f4ebab
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 035ff9fc40a952319efe85c8d42a8f6544afff13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901881"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
 ブレークポイントを削除します。
@@ -29,8 +29,8 @@ ms.locfileid: "80735660"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT Delete( 
-    void 
+HRESULT Delete( 
+    void 
 );
 ```
 
@@ -42,7 +42,7 @@ int Delete();
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_BP_DELETED`バインドされたブレークポイントオブジェクトの状態が `BPS_DELETED` ( [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列挙体の一部) に設定されている場合は、を返します。
 
 ## <a name="example"></a>例
-次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+次の例は、IDebugBoundBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CBoundBreakpoint` います。 [](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 
 ```
 HRESULT CBoundBreakpoint::Delete(void)

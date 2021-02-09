@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1633c5e9aa6ff251fedce83a0243664cd9e0e0a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0148a92ee37a4f9885c9c12a5076ff966051d20b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902116"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
 ブレークポイントが発生する原因となる、ブレークポイントのパス数に関連付けられた条件を指定します。
@@ -62,7 +62,7 @@ public enum enum_BP_PASSCOUNT_STYLE {
 ## <a name="remarks"></a>解説
 `stylePassCount` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)と[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバーである[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)構造体のメンバーに使用されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

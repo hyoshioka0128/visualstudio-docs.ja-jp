@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847846"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903799"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>他の Office ソリューションから VSTO アドインのコードを呼び出す
   VSTO アドイン内のオブジェクトは、他の Microsoft Office ソリューションを含む、他のソリューションに公開できます。 このことは、VSTO アドインが他のソリューションで使用可能なサービスを含む場合に便利です。 たとえば、Web サービスからの財務データに対して計算を実行する Microsoft Office Excel 用の VSTO アドインがある場合、他のソリューションは、実行時に Excel VSTO アドインを呼び出すことによって、これらの計算を実行できます。
@@ -84,7 +84,7 @@ ms.locfileid: "96847846"
 ### <a name="expose-classes-to-vba"></a>クラスを VBA に公開する
  上記の手順を実行すると、VBA コードはインターフェイス内で宣言するメソッドのみを呼び出すことができます。 VBA コードは、 <xref:System.Object>など、クラスが基本クラスから取得するメソッドを含め、クラス内の他のメソッドを呼び出すことはできません。
 
- また、属性を[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 列挙体の autodispatch 値または autodispatch value に設定することによって、IDispatch インターフェイスを公開することもでき <xref:System.Runtime.InteropServices.ClassInterfaceType> ます。 インターフェイスを公開する場合は、メソッドを別のインターフェイスで宣言する必要はありません。 ただし、VBA コードは、 <xref:System.Object>など、基本クラスから取得されるメソッドを含め、クラス内の任意のパブリックおよび非静的メソッドを呼び出すことができます。 さらに、事前バインディングを使用するアウト プロセス クライアントはクラスを呼び出すことができません。
+ また、属性を[](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 列挙体の autodispatch 値または autodispatch value に設定することによって、IDispatch インターフェイスを公開することもでき <xref:System.Runtime.InteropServices.ClassInterfaceType> ます。 インターフェイスを公開する場合は、メソッドを別のインターフェイスで宣言する必要はありません。 ただし、VBA コードは、 <xref:System.Object>など、基本クラスから取得されるメソッドを含め、クラス内の任意のパブリックおよび非静的メソッドを呼び出すことができます。 さらに、事前バインディングを使用するアウト プロセス クライアントはクラスを呼び出すことができません。
 
 ### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> アウトプロセスクライアントにクラスを公開する
  VSTO アドイン内のクラスをアウト プロセス クライアントに公開する場合、 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> からクラスを派生させ、アウト プロセス クライアントが公開された VSTO アドイン オブジェクトを呼び出せるようにする必要があります。 そうしないと、アウト プロセス クライアントで公開されたオブジェクトのインスタンスを取得しようとしたとき、予期せずに失敗する可能性があります。

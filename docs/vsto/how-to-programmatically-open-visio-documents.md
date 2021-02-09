@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903657"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>方法: プログラムによって Visio 図面を開く
   既存の Microsoft Office Visio 図面を開くには、Open と OpenEx の2つの方法があります。 OpenEx メソッドは Open メソッドと同じですが、呼び出し元がドキュメントを開く方法を指定できる引数を提供する点が異なります。
