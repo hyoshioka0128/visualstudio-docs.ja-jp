@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f2ca8ff8-539f-457c-83f8-9bbf97618065
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4610613b6fef5e80ae0fd36c3548b4dfdcbc8591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b4a2d6fab85b392a517cc8275462bd8a01bb4316
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717680"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923072"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 このメソッドは、列挙体の要素の数を返します。
@@ -46,7 +46,7 @@ int GetCount(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドは、次、複製、スキップ、およびリセットのみを実装する必要があることを指定する、慣例的な COM 列挙インターフェイスの一部ではありません。
 
 ## <a name="see-also"></a>関連項目

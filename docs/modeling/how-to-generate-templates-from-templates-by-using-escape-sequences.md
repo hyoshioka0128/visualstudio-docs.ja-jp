@@ -7,16 +7,16 @@ helpviewer_keywords:
 - text templates, generating templates from templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: d7ef983525842023247433e7a3c2b51e206a1cee
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: e3debeeafa55e483e9625c67534694debff6acfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922792"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>方法: エスケープ シーケンスを使用してテンプレートからテンプレートを生成する
 生成されたテキストの出力として別のテキストテンプレートを作成するテキストテンプレートを作成できます。 そのためには、エスケープシーケンスを使用してテキストテンプレートタグを記述する必要があります。 エスケープシーケンスを使用しない場合、生成されたテキストテンプレートには定義済みの意味があります。 テキストテンプレートでのエスケープシーケンスの使用の詳細については、「 [テキストテンプレートでのエスケープシーケンスの使用](../modeling/using-escape-sequences-in-text-templates.md)」を参照してください。
