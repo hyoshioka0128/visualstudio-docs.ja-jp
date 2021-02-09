@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c959c018dd4da0ff088c4fb52c0420de83b4eac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884872"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 このインターフェイスは、ソースドキュメントを表します。
@@ -45,7 +45,7 @@ IDebugDocument2 : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、DE がソースコードを提供する場合にのみ実装されます。 たとえば、HTML ページでスクリプトをデバッグする場合、ソースは動的にダウンロードまたは生成され、ディスクファイルとして存在しないため、DE によってソースコードが提供されます。 C++ などの従来の言語をデバッグする場合は、このインターフェイスを実装する必要はありません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

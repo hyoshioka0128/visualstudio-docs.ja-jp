@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 316ead76be1f84fccc6f675b204587008e8a194a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885301"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook オブジェクトモデルの概要
   Microsoft Office Outlook 用の VSTO アドインを開発するには、Outlook オブジェクト モデルによって提供されるオブジェクトとのやり取りが可能です。 Outlook オブジェクト モデルは、ユーザー インターフェイスで項目を表すクラスとインターフェイスを提供します。 たとえば、 <xref:Microsoft.Office.Interop.Outlook.Application> オブジェクトは、アプリケーション全体を表し、 <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは、電子メール メッセージや他のアイテムを含むフォルダーを表します。 <xref:Microsoft.Office.Interop.Outlook.MailItem> オブジェクトは、電子メール メッセージを表します。
@@ -92,7 +92,7 @@ ms.locfileid: "97528047"
 ### <a name="folder-object"></a>Folder オブジェクト
  <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは、電子メール メッセージ、連絡先、タスク、およびその他の項目が含まれているフォルダーを表します。 Outlook には 16 の既定の <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトが用意されています。
 
- 既定の <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 列挙値により、定義されます。 たとえば、
+ 既定の <xref:Microsoft.Office.Interop.Outlook.Folder> オブジェクトは <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 列挙値により、定義されます。 たとえば、次のように入力します。
 
  Microsoft. Interop. Oldefaultfolders は、Outlook の **受信トレイ** フォルダーに対応します。
 

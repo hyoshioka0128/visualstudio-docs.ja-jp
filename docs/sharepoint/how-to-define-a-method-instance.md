@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], method
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 751683873d98e6c7aedc7228e0a91fb59117993b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 055193123f99825027238166d762ce54b288d716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885665"
 ---
 # <a name="how-to-define-a-method-instance"></a>方法: メソッドインスタンスを定義する
   モデル内のすべてのメソッドに対して、少なくとも1つのメソッドインスタンスを定義する必要があります。
@@ -37,7 +37,7 @@ ms.locfileid: "94903625"
 
      **インスタンス** ノードの下に新しいメソッドインスタンスが表示されます。
 
-3. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
+3. メニューバーで、[   >  **プロパティウィンドウ** の表示] を選択します。
 
 4. [ **プロパティ** ] ウィンドウで、メソッドインスタンスのプロパティを設定します。 各プロパティの詳細については、「 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))」を参照してください。
 

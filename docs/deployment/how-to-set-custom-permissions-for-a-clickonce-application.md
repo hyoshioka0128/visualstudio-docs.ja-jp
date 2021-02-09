@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5d0348b882a3327c02fca6db0628822c0deffeb
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2050f3534caba8aba12fa8550eb6e573a3d0db08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885041"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>方法: ClickOnce アプリケーションのカスタム アクセス許可を設定する
 インターネット ゾーンまたはローカル イントラネット ゾーンの既定のアクセス許可を使用する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを配置できます。 または、アプリケーションに必要な特定のアクセス許可用にカスタム ゾーンを作成することもできます。 そのためには、 **プロジェクト デザイナー** の **[セキュリティ]** ページでセキュリティのアクセス許可をカスタマイズします。

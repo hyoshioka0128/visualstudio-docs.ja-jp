@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884482"
 ---
 # <a name="test-area-6-delete"></a>テスト領域 6: 削除
 このソース管理プラグインのテスト領域は、削除アクションを対象とします。
@@ -27,7 +27,7 @@ ms.locfileid: "97487557"
 
  削除できる項目の一覧を次に示します。
 
-- Files
+- ファイル
 
 - フォルダー
 
@@ -54,5 +54,5 @@ ms.locfileid: "97487557"
 |ファイルシステム Web プロジェクトの削除|1. ファイルシステム Web プロジェクトを作成します (UNC パスを指定するには、[参照] ボタンを使用します)。<br />2. ソース管理にソリューションを追加します。<br />3. ソリューションからプロジェクト全体を削除します。<br />4. ローカル Web プロジェクトに対して手順 1. ~ 3. を繰り返します (コードを使用してさまざまなパスを実行しますが、外部のインターフェイスと動作は同じです)。|予期される動作は一般的です。|
 |ファイルシステム Web プロジェクトからのファイルの削除|1. ファイルシステム Web プロジェクトを作成します。<br />2. ソース管理にソリューションを追加します。<br />3. プロジェクトからファイルを削除します。<br />4. ローカル Web プロジェクトに対して手順 1. ~ 3. を繰り返します (コードを使用してさまざまなパスを実行しますが、外部のインターフェイスと動作は同じです)。|予期される動作は一般的です。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

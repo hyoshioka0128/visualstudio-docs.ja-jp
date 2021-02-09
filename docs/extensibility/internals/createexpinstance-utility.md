@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884586"
 ---
 # <a name="createexpinstance-utility"></a>Createのインスタンスユーティリティ
 **Createのインスタンス** ユーティリティを使用して、Visual Studio の実験用インスタンスを作成、リセット、または削除します。 実験用インスタンスを使用して、基になる製品を変更せずに Visual Studio 拡張機能のデバッグとテストを行うことができます。
@@ -43,7 +43,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/Rootsuffix** 実験用インスタンスディレクトリの名前に追加するサフィックス。
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  Visual Studio 拡張機能を使用しているときに、F5 キーを押して既定の実験用インスタンスを開き、現在の拡張機能をインストールできます。 実験用インスタンスが使用できない場合は、既定の設定を持つものが Visual Studio によって作成されます。
 
  実験用インスタンスの既定の場所は、Visual Studio のバージョン番号によって異なります。 たとえば、Visual Studio 2015 の場合、場所は *%localappdata%\Microsoft\VisualStudio\14.0Exp \\* です。 ディレクトリの場所にあるすべてのファイルは、そのインスタンスの一部と見なされます。 ディレクトリ名が既定の場所に変更されていない限り、追加の実験用インスタンスは Visual Studio によって読み込まれません。

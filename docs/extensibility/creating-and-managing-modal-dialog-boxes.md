@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95f03ee71a827380539404a90cd79d50232e488
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884976"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>モーダルダイアログボックスの作成と管理
 Visual Studio 内でモーダルダイアログボックスを作成する場合は、ダイアログボックスが表示されている間、ダイアログボックスの親ウィンドウが無効になっていることを確認し、ダイアログボックスを閉じた後で親ウィンドウを再び有効にする必要があります。 そうしないと、 *モーダルダイアログボックスがアクティブになっているため Microsoft Visual Studio をシャットダウンできないことがあります。アクティブなダイアログを閉じて、もう一度やり直してください。*

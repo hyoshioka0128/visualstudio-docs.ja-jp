@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 019633b62d46f6a8ac68e6f5f4abc888e6986ab1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ff7c28a30ccab43629636f7dcd9391a669a376ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884794"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 マネージコードのジェネリック型のフィールドの定義を表します。
@@ -35,7 +35,7 @@ IDebugGenericFieldDefinition : IUnknown
 |[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|パラメーターの数を指定して、型パラメーターを取得します。|
 |[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|ジェネリックフィールドに関連付けられている型パラメーターの数を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。
