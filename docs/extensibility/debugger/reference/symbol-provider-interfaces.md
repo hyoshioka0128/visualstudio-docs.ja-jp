@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850822"
 ---
 # <a name="symbol-provider-interfaces"></a>シンボル プロバイダーのインターフェイス
 のシンボル処理インターフェイスを次に示し [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] ます。
@@ -27,7 +27,7 @@ ms.locfileid: "96845792"
 ## <a name="discussion"></a>ディスカッション
  これらのインターフェイスは、中断モード中に呼び出し履歴の変数を評価するために使用されます。 これらは、共通言語ランタイムシンボルプロバイダー (SP) に対してのみ実装されます。
 
-|インターフェイス|実装|説明|
+|インターフェイス|実装|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|項目のアドレスを表します。|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|プロセス ID へのアクセスを提供する、項目のアドレスを表します。|

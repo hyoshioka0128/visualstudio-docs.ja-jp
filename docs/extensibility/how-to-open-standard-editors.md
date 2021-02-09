@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 163d042ffb08a60d5673e64cf6bab94f7a2f1d63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850456"
 ---
 # <a name="how-to-open-standard-editors"></a>方法: 標準エディターを開く
 標準エディターを開くと、ファイルのプロジェクト固有のエディターを指定するのではなく、指定したファイルの種類の標準エディターが IDE によって決定されます。
@@ -51,7 +51,7 @@ ms.locfileid: "96993771"
 
      ドキュメントビューまたはドキュメントビューオブジェクトがウィンドウフレームに正常に配置されている場合は、を呼び出すことによって、オブジェクトがそのデータで初期化され <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> ます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [プロジェクト項目を開いて保存する](../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: プロジェクト固有のエディターを開く](../extensibility/how-to-open-project-specific-editors.md)

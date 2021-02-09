@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customizations> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc1f33101346d334d08d2bd2d7795961ea33011e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 27b20a13d96b8fc23fcde2dbb8f14d1f1f27ceea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849932"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;カスタマイズ &gt; 要素 (Visual Studio での Office 開発)
   `customizations` 名前空間の `vstov4` 要素には、各 Office ソリューションのインストールおよび読み込みに関するすべての情報が含まれています。
@@ -69,7 +69,7 @@ ms.locfileid: "96844037"
 
 ## <a name="example-of-a-document-level-customization"></a>ドキュメントレベルのカスタマイズの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、ドキュメント レベルのカスタマイズの `customizations` 要素を示しています。
 
 > [!NOTE]
@@ -89,7 +89,7 @@ ms.locfileid: "96844037"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO アドインの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、 `customizations` VSTO アドインの要素を示しています。 この例は、フォーム領域が含まれた Outlook VSTO アドインです。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

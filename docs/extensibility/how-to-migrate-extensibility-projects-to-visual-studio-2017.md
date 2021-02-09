@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 58d802ad97018a3d84e2b6a9f5e759db3a7cb2e3
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 39efb082f8a551ea016e856ba45c9dbb4e8eed0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993966"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850701"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する
 
@@ -106,7 +106,7 @@ NuGet の参照を更新するには、次のようにします。
 
    ![roslyn の前提条件の追加](media/add-roslyn-prerequisite.png)
 
-* **[OK]** を押します。
+* **[OK]** をクリックします。
 
 ## <a name="update-debug-settings-for-the-project"></a>プロジェクトのデバッグ設定を更新する
 
@@ -173,7 +173,7 @@ Visual Studio が最近開いた場合は、次のようなダイアログボッ
 
 さらにガイダンスを提供するために、いくつかの一般的な拡張機能の種類と推奨される前提条件を確認しました。
 
-拡張機能の種類 | 表示名 | ID
+拡張機能の種類 | 表示名 | id
 --- | --- | ---
 エディター | Visual Studio のコア エディター | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# および Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices
@@ -192,7 +192,7 @@ Excel シートには、 **コンポーネント名**、 **ComponentId**、 **�
 
 すべての参照について、まず、コアエディター (VisualStudio) コンポーネントに含まれているものを確認します。  少なくとも、すべての拡張機能の前提条件として、コアエディターコンポーネントを指定する必要があります。 コアエディターに含まれていない参照の場合は、[ **バイナリ/ファイル名** ] セクションにフィルターを追加して、これらの参照のいずれかのサブセットを持つコンポーネントを検索します。
 
-例 :
+次に例を示します。
 
 * デバッガー拡張機能があり、プロジェクトに *VSDebugEng.dll* と *VSDebug.dll* への参照が含まれていることがわかっている場合は、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをクリックします。  "VSDebugEng.dll" を検索し、[ *OK]* を選択します。  次に、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをもう一度クリックし、"VSDebug.dll" を検索します。  [現在の **選択項目をフィルターに追加する** ] チェックボックスをオンにして、[ **OK]** を選択します。  ここで、 **コンポーネント名** を調べて、拡張機能の種類に最も関係のあるコンポーネントを見つけます。 この例では、Just-in-time デバッガーを選択して、source.extension.vsixmanifest に追加します。
 * プロジェクトがデバッガー要素を扱うことがわかっている場合は、フィルター検索ボックスで "デバッガー" を検索して、名前にデバッガーが含まれているコンポーネントを確認できます。

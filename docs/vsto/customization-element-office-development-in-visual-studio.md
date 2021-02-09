@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e63b93728f41dcff360da8ee9d14e2830d216be5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849945"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;customization &gt; 要素 (Visual Studio での Office 開発)
   `customization` 名前空間の `vstov4` 要素では、特定の Office ソリューションについて記述します。 ドキュメント レベルのカスタマイズと VSTO アドインでは、子要素が異なります。
@@ -76,7 +76,7 @@ ms.locfileid: "96844115"
 
 ## <a name="example-of-a-document-level-customization"></a>ドキュメントレベルのカスタマイズの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、ドキュメント レベルのカスタマイズの `customization` 要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
@@ -90,7 +90,7 @@ ms.locfileid: "96844115"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO アドインの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、 `customization` VSTO アドインの要素を示しています。 この例は、フォーム領域が含まれた Outlook VSTO アドインです。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
