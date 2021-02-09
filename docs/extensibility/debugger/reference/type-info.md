@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eeb4a306e7b357c59f8d75a91e2c21c50f1ed16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880087"
 ---
 # <a name="type_info"></a>TYPE_INFO
 この構造体は、フィールドの型に関するさまざまな種類の情報を指定します。
@@ -68,7 +68,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [C# のみ]このをに基づいて適切な構造体型にマーシャリングし `dwKind` ます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この構造体は、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) メソッドに渡され、そこに格納されます。 構造体の内容がどのように解釈されるかは、フィールドに基づいて決まり `dwKind` ます。
 
 > [!NOTE]
@@ -106,7 +106,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

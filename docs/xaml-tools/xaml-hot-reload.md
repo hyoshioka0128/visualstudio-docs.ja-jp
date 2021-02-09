@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 25819d8d691836c12c73d9d76e334e36d50b83b4
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 11257561deecdbce4606207c3d59012a6d7c3d09
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880321"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Visual Studio での XAML ホットリロードを使用した実行中の XAML コードの作成とデバッグ
 
@@ -47,7 +47,7 @@ XAML ホットリロードは、次のような場合に特に役立ちます。
 
 XAML ホットリロードの既知の制限事項を次に示します。 に実行するすべての制限を回避するには、デバッガーを停止し、操作を完了します。
 
-|制限事項|WPF|UWP|Notes|
+|制限事項|WPF|UWP|ノート|
 |-|-|-|-|
 |アプリの実行中にイベントをコントロールに接続する|サポートされていません|サポートされていません|「エラー: *イベントを確認できませんでした*」を参照してください。 WPF では、既存のイベントハンドラーを参照できます。 UWP アプリでは、既存のイベントハンドラーの参照はサポートされていません。|
 |リソースディクショナリ内のリソースオブジェクト (アプリのページ/ウィンドウや *app.xaml* など) の作成|Visual Studio 2019 Update 2 以降でサポートされる|サポートされています|例: を `SolidColorBrush` として使用するために、をリソースディクショナリに追加 `StaticResource` します。</br>注: 静的リソース、スタイルコンバーター、およびリソースディクショナリに記述されたその他の要素は、XAML ホットリロードの使用中に適用または使用できます。 リソースの作成のみがサポートされていません。</br> リソースディクショナリのプロパティを変更 `Source` しています。|

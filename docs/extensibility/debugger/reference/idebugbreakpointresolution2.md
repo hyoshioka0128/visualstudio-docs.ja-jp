@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb5e4f9e32017cfb493aae00a24f9f8184605d1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c6ebb698fc839a93547d15828b250bd436260e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881036"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 このインターフェイスは、バインドされたブレークポイントを説明する情報を表します。
@@ -42,7 +42,7 @@ IDebugBreakpointResolution2 : IUnknown
 |[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|この解像度によって表されるブレークポイントの型を取得します。|
 |[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|このブレークポイントを説明するブレークポイントの解決情報を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

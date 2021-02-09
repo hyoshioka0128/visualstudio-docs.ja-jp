@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c63d52290962d8c9878edf025bbc05487103da
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 0f53ca683e40be8e3cc428d013d2b8d3c8c5773e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383054"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881231"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commands &gt; 要素 (ブートストラップ)
 要素は、要素の下にある `Commands` 要素によって記述されたテストを実装 `InstallChecks` し、テストが [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 失敗した場合にブートストラップがインストールする必要があるパッケージを宣言します。
@@ -72,19 +72,19 @@ ms.locfileid: "94383054"
 
 |属性|説明|
 |---------------|-----------------|
-|`Reboot`|省略可能。 いずれかのパッケージが再起動終了コードを返す場合に、システムを再起動するかどうかを指定します。 有効な値を次の一覧に示します。<br /><br /> `Defer`. 再起動は、将来の時刻まで延期されます。<br /><br /> `Immediate`. いずれかのパッケージが再起動終了コードを返した場合、直ちに再起動します。<br /><br /> `None`. 再起動要求を無視します。<br /><br /> 既定値は、`Immediate` です。|
+|`Reboot`|任意。 いずれかのパッケージが再起動終了コードを返す場合に、システムを再起動するかどうかを指定します。 有効な値を次の一覧に示します。<br /><br /> `Defer`. 再起動は、将来の時刻まで延期されます。<br /><br /> `Immediate`. いずれかのパッケージが再起動終了コードを返した場合、直ちに再起動します。<br /><br /> `None`. 再起動要求を無視します。<br /><br /> 既定値は、`Immediate` です。|
 
-## <a name="command"></a>command
+## <a name="command"></a>コマンド
  `Command` 要素は、`Commands` 要素の子要素です。 要素には `Commands` 1 つ以上の要素を含めることができ `Command` ます。 要素には、次の属性があります。
 
 |属性|説明|
 |---------------|-----------------|
 |`PackageFile`|必須。 によって指定された1つ以上の条件が false を返す場合は、インストールするパッケージの名前を指定し `InstallConditions` ます。 パッケージは、要素を使用して同じファイル内に定義されている必要があり `PackageFile` ます。|
-|`Arguments`|省略可能。 パッケージファイルに渡すコマンドライン引数のセット。|
-|`EstimatedInstallSeconds`|省略可能。 パッケージのインストールにかかる推定時間 (秒単位)。 この値は、ブートストラップによってユーザーに表示される進行状況バーのサイズを決定します。 既定値は0です。この場合、推定時間は指定されません。|
-|`EstimatedDiskBytes`|省略可能。 インストールの完了後にパッケージが占有するディスク領域の推定サイズ (バイト単位)。 この値は、ブートストラップによってユーザーに表示されるハードディスク領域の要件で使用されます。 既定値は0です。この場合、ブートストラップはハードディスク領域の要件を表示しません。|
-|`EstimatedTempBytes`|省略可能。 パッケージが必要とする一時ディスク領域の推定サイズ (バイト単位)。|
-|`Log`|省略可能。 パッケージのルートディレクトリを基準とした、パッケージによって生成されるログファイルへのパスです。|
+|`Arguments`|任意。 パッケージファイルに渡すコマンドライン引数のセット。|
+|`EstimatedInstallSeconds`|任意。 パッケージのインストールにかかる推定時間 (秒単位)。 この値は、ブートストラップによってユーザーに表示される進行状況バーのサイズを決定します。 既定値は0です。この場合、推定時間は指定されません。|
+|`EstimatedDiskBytes`|任意。 インストールの完了後にパッケージが占有するディスク領域の推定サイズ (バイト単位)。 この値は、ブートストラップによってユーザーに表示されるハードディスク領域の要件で使用されます。 既定値は0です。この場合、ブートストラップはハードディスク領域の要件を表示しません。|
+|`EstimatedTempBytes`|任意。 パッケージが必要とする一時ディスク領域の推定サイズ (バイト単位)。|
+|`Log`|任意。 パッケージのルートディレクトリを基準とした、パッケージによって生成されるログファイルへのパスです。|
 
 ## <a name="installconditions"></a>InstallConditions
  要素は `InstallConditions` 要素の子です `Command` 。 各 `Command` 要素は、最大で1つの要素を持つことができ `InstallConditions` ます。 要素が存在しない場合 `InstallConditions` 、によって指定されたパッケージ `Condition` は常に実行されます。
@@ -99,7 +99,7 @@ ms.locfileid: "94383054"
 |`Property`|必須。 テストするプロパティの名前。 プロパティは、要素の子によって既に定義されている必要があり `InstallChecks` ます。 詳細については、[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)に関するページを参照してください。|
 |`Compare`|必須。 実行する比較の種類。 有効な値を次の一覧に示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
 |`Value`|必須。 プロパティと比較する値。|
-|`Schedule`|省略可能。 `Schedule`この規則を評価するタイミングを定義するタグの名前。|
+|`Schedule`|任意。 `Schedule`この規則を評価するタイミングを定義するタグの名前。|
 
 ## <a name="failif"></a>FailIf
  `FailIf`要素は要素の子であり、インストールを停止するための `InstallConditions` 肯定条件を記述します。 各 `InstallConditions` 要素には、0個以上の要素を含めることができ `FailIf` ます。
@@ -111,8 +111,8 @@ ms.locfileid: "94383054"
 |`Property`|必須。 テストするプロパティの名前。 プロパティは、要素の子によって既に定義されている必要があり `InstallChecks` ます。 詳細については、[\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)に関するページを参照してください。|
 |`Compare`|必須。 実行する比較の種類。 有効な値を次の一覧に示します。<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
 |`Value`|必須。 プロパティと比較する値。|
-|`String`|省略可能。 失敗したときにユーザーに表示するテキスト。|
-|`Schedule`|省略可能。 `Schedule`この規則を評価するタイミングを定義するタグの名前。|
+|`String`|任意。 失敗したときにユーザーに表示するテキスト。|
+|`Schedule`|任意。 `Schedule`この規則を評価するタイミングを定義するタグの名前。|
 
 ## <a name="exitcodes"></a>ExitCodes
  要素は `ExitCodes` 要素の子です `Command` 。 `ExitCodes`要素には1つ以上の要素が含まれて `ExitCode` おり、パッケージからの終了コードに応じてインストールで実行する処理を決定します。 要素の下には、省略可能な要素を1つ指定でき `ExitCode` `Command` ます。 `ExitCodes` に属性はありません。
@@ -124,8 +124,8 @@ ms.locfileid: "94383054"
 |---------------|-----------------|
 |`Value`|必須。 この要素が適用される終了コード値 `ExitCode` 。|
 |`Result`|必須。 インストールがこの終了コードにどのように反応するか。 有効な値を次の一覧に示します。<br /><br /> `Success`. パッケージに正常にインストールされたことを示すフラグを付けます。<br /><br /> `SuccessReboot`. パッケージに正常にインストールされたというフラグを付け、再起動するようにシステムに指示します。<br /><br /> `Fail`. パッケージに失敗としてフラグを付けます。<br /><br /> `FailReboot`. パッケージに失敗のフラグを付け、再起動するようにシステムに指示します。|
-|`String`|省略可能。 この終了コードへの応答としてユーザーに表示される値。|
-|`FormatMessageFromSystem`|省略可能。 終了コードに対応するシステム指定のエラーメッセージを使用するか、に指定された値を使用するかを決定し `String` ます。 有効な値は `true` 、システムによって提供されるエラーとを使用することを意味し `false` ます。これは、によって提供される文字列を使用することを意味し `String` ます。 既定値は、`false` です。 このプロパティが `false` で、が設定されていない場合は、システムによって指定されたエラーが使用され `String` ます。|
+|`String`|任意。 この終了コードへの応答としてユーザーに表示される値。|
+|`FormatMessageFromSystem`|任意。 終了コードに対応するシステム指定のエラーメッセージを使用するか、に指定された値を使用するかを決定し `String` ます。 有効な値は `true` 、システムによって提供されるエラーとを使用することを意味し `false` ます。これは、によって提供される文字列を使用することを意味し `String` ます。 既定値は、`false` です。 このプロパティが `false` で、が設定されていない場合は、システムによって指定されたエラーが使用され `String` ます。|
 
 ## <a name="example"></a>例
  次のコード例では、.NET Framework 2.0 をインストールするコマンドを定義します。
@@ -207,4 +207,4 @@ ms.locfileid: "94383054"
 
 ## <a name="see-also"></a>関連項目
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)
-- [\<InstallChecks> element](../deployment/installchecks-element-bootstrapper.md)
+- [\<InstallChecks> 要素](../deployment/installchecks-element-bootstrapper.md)

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a5e41fbb4f70bd3f5ae2db72b630ae6e524d3def
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 33ca8abf7a35bafd04c38fbb4a681245f2701f8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879723"
 ---
 # <a name="how-to-add-a-deleter-method"></a>方法: 削除子メソッドを追加する
   エンドユーザーが、削除子メソッドをモデルに追加することによって、SharePoint サイトの外部リストからデータレコードを削除できるようにすることができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "96915441"
 
 1. **BDC デザイナー** で、エンティティを選択します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
+2. メニューバーで、[   >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
     [ **BDC メソッドの詳細** ] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
