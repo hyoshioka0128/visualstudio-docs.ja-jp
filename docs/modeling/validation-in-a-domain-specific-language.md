@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924258"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>ドメイン固有言語における検証
 ドメイン固有言語 (DSL) の作成者は、検証制約を定義して、ユーザーが作成したモデルが意味を持つことを確認できます。 たとえば、DSL でユーザーが人々とその先祖の家系図を描くことができる場合、子の誕生日が親の誕生日よりも後であることを確認する制約を作成できます。
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  ドメイン リレーションシップのロールの多重度を 1..* または 1..1 に設定し、ユーザーがこのリレーションシップのリンクを作成しない場合、検証エラー メッセージが表示されます。
 
- たとえば、DSL にクラス Person と町村があり、リレーションシップが PersonLivesInTown で **\\** あるとします。_、町のロールでは、町を持たない人物ごとにエラーメッセージが表示されます。
+ たとえば、DSL にクラス Person と町村があり、リレーションシップが PersonLivesInTown で **\\** あるとします。* 町の役割では、町を持たない人物ごとにエラーメッセージが表示されます。
 
 ## <a name="running-validation-from-program-code"></a>プログラム コードからの検証の実行
  ValidationController をアクセスまたは作成することにより検証を実行できます。 エラーウィンドウでユーザーにエラーを表示する場合は、ダイアグラムの DocData にアタッチされている ValidationController を使用します。 たとえば、メニュー コマンドを作成する場合、コマンド セット クラスで `CurrentDocData.ValidationController` を使用できます。
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>変更発生時の検証実行
  モデルが無効になった直後にユーザーへの警告を表示する場合、検証を実行するストア イベントを定義できます。 ストアイベントの詳細については、「 [イベントハンドラーによって変更がモデル外に反映される](../modeling/event-handlers-propagate-changes-outside-the-model.md)」を参照してください。
 
- 検証コードに加えて、次の例のようなコンテンツを使用して、_ *Dslpackage** プロジェクトにカスタムコードファイルを追加します。 このコードはドキュメントにアタッチされる `ValidationController` を使用します。 このコントローラーでは、Visual Studio の [エラー一覧] に検証エラーが表示されます。
+ 検証コードに加えて、次の例のようなコンテンツを含むカスタムコードファイルを **Dslpackage** プロジェクトに追加します。 このコードはドキュメントにアタッチされる `ValidationController` を使用します。 このコントローラーでは、Visual Studio の [エラー一覧] に検証エラーが表示されます。
 
 ```csharp
 using System;

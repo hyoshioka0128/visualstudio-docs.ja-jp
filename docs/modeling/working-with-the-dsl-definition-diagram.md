@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 705134b5dfa31bb317360073e336abebcefdb13d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923978"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>DSL 定義図の使用
 定義の図は、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ドメイン固有言語を定義するための重要なツールです。 ドメイン モデルに要素を追加し、図で関係を定義し、図のレイアウトを読みやすいように変更できます。

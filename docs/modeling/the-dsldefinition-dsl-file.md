@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924498"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl ファイル
 
@@ -40,7 +40,7 @@ ms.locfileid: "97362783"
 
 このセクションでは、モデル内の各リレーションシップを定義します。 ソース とターゲットは、リレーションシップの両側を表します。
 
-### <a name="types"></a>型
+### <a name="types"></a>種類
 
 このセクションでは、各型とその名前空間を定義します。 ドメイン プロパティには 2 つの型があります。 `DomainEnumerations` は、モデルで定義され、型を DomainModel.cs に生成します。 `ExternalTypes` 他の場所で定義されている型 (やなど) を参照 `String` `Int32` し、何も生成しません。
 
@@ -99,7 +99,7 @@ DslDefinition.dsl ファイルでは、モニカーを使用して特定の項�
 
 それぞれの型に固有のモニカーがあります (DomainClassMoniker、DomainRelationshipMoniker など)。
 
-## <a name="types"></a>型
+## <a name="types"></a>種類
 
 Types セクションでは、DslDefinition.dsl ファイルにプロパティの型として含まれているすべての型が指定されます。 これらの型は、外部型 (System.String など) と列挙型に分類されます。
 

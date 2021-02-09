@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924111"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>チュートリアル: モデルにアクセスするテキスト テンプレートのデバッグ
 ドメイン固有言語ソリューションでテキストテンプレートを変更または追加すると、エンジンがテンプレートをソースコードに変換したとき、または生成されたコードをコンパイルしたときに、エラーが発生することがあります。 次のチュートリアルでは、テキストテンプレートをデバッグするために実行できるいくつかの操作について説明します。
@@ -22,7 +22,7 @@ ms.locfileid: "90100788"
 > [!NOTE]
 > 一般的なテキストテンプレートの詳細については、「 [コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)」を参照してください。 テキストテンプレートのデバッグの詳細については、「 [チュートリアル: テキストテンプレートのデバッグ](debugging-a-t4-text-template.md)」を参照してください。
 
-## <a name="creating-a-domain-specific-language-solution"></a>ドメイン固有言語ソリューションの作成
+## <a name="creating-a-domain-specific-language-solution"></a>Domain-Specific 言語ソリューションの作成
  この手順では、次の特性を持つドメイン固有言語ソリューションを作成します。
 
 - 名前: デバッグ Testlanguage
@@ -33,7 +33,7 @@ ms.locfileid: "90100788"
 
 - 会社名: Fabrikam
 
-  ドメイン固有言語ソリューションの作成の詳細については、「 [方法: ドメイン固有言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
+  ドメイン固有言語ソリューションの作成の詳細については、「 [方法: Domain-Specific 言語ソリューションを作成](../modeling/how-to-create-a-domain-specific-language-solution.md)する」を参照してください。
 
 ## <a name="creating-a-text-template"></a>テキストテンプレートの作成
  ソリューションにテキストテンプレートを追加します。
@@ -89,7 +89,7 @@ ms.locfileid: "90100788"
     #>
     ```
 
-2. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
+2. **ソリューションエクスプローラー** で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
      [ **エラー一覧** ] ウィンドウに次のエラーが表示されます。
 
@@ -111,7 +111,7 @@ ms.locfileid: "90100788"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
+5. **ソリューションエクスプローラー** で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
      これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 [ **エラー一覧** ] ウィンドウにエラーは表示されません。
 
@@ -153,7 +153,7 @@ ms.locfileid: "90100788"
     #>
     ```
 
-2. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
+2. **ソリューションエクスプローラー** で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
      [ **エラー一覧** ] ウィンドウが表示され、次のいずれかのエラーが表示されます。
 
@@ -175,7 +175,7 @@ ms.locfileid: "90100788"
 
 4. コードを修正するには、テキストテンプレートコードでプロパティ名をに変更し `LibraryModel` ます。
 
-     変更が強調表示されます。
+     変更が強調表示されています。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -208,6 +208,6 @@ ms.locfileid: "90100788"
     #>
     ```
 
-5. **ソリューションエクスプローラー**で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
+5. **ソリューションエクスプローラー** で、[DebugTest.tt] を右クリックし、[**カスタムツールの実行**] をクリックします。
 
      これで、システムはテキストテンプレートを変換し、対応する出力ファイルを生成します。 [ **エラー一覧** ] ウィンドウにエラーは表示されません。

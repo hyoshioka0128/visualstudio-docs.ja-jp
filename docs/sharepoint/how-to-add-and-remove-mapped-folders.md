@@ -14,15 +14,15 @@ helpviewer_keywords:
 - mapped folders [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4d29be9b008bfaa9ad6694725b03e25bf6847df
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e6771482925a935d1b6424412d4176db5e9ad6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923475"
 ---
 # <a name="how-to-add-and-remove-mapped-folders"></a>方法: マップされたフォルダーを追加および削除する
   画像やレイアウトなど、SharePoint でよく使用されるフォルダーの中には、ファイル階層に深く埋め込まれているものがあります。 これらのフォルダーを SharePoint プロジェクトにマップして、より簡単にアクセスすることができます。 マップされたフォルダーは、sharepoint サーバーのインストールにおけるファイルの物理的な場所に対応する SharePoint プロジェクト内のフォルダーです。
@@ -49,7 +49,7 @@ ms.locfileid: "96914808"
 
      名前付き **画像** のフォルダーがプロジェクト内に表示され、TestProject1 という名前のサブフォルダーが含まれます。 このマップされたフォルダーには、視覚的 web パーツプロジェクトのイメージが含まれます。
 
-7. **ソリューションエクスプローラー** で、プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [マップされたフォルダーの追加] の順に選択し  >  **Add SharePoint Mapped Folder** 、[sharepoint のマップされたフォルダーの **追加**] ダイアログボックスを表示します。
+7. **ソリューションエクスプローラー** で、プロジェクトノードを選択し、メニューバーで [**プロジェクト**] [マップされたフォルダーの追加] の順に選択し  >   、[sharepoint のマップされたフォルダーの **追加**] ダイアログボックスを表示します。
 
 8. マッピングに使用できるフォルダーのツリービューで、[ **リソース** ] フォルダーを選択し、[ **OK** ] をクリックします。
 
