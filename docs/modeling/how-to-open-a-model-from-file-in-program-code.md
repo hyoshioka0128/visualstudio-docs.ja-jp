@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922672"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>方法: プログラム コード内のファイルからモデルを開く
 
@@ -22,7 +22,7 @@ DSL モデルは任意のアプリケーションで開くことができます�
 
 この目的には、Visual Studio 拡張機能から ModelBus を使用できます。 ModelBus には、モデル内のモデルまたは要素を参照したり、モデルが移動された場合にそのモデルを検索したりするための標準的なメカニズムが用意されています。 詳細については、「 [Visual Studio Modelbus を使用](../modeling/integrating-models-by-using-visual-studio-modelbus.md)したモデルの統合」を参照してください。
 
-## <a name="target-framework"></a>ターゲット フレーム
+## <a name="target-framework"></a>[対象とする Framework]
 
 アプリケーションプロジェクトの **ターゲットフレームワーク** を .NET Framework 4 以降に設定します。
 
@@ -35,7 +35,7 @@ DSL モデルは任意のアプリケーションで開くことができます�
 > [!NOTE]
 > ターゲットフレームワークを **.NET Framework 4 クライアントプロファイル** にすることはできません。
 
-## <a name="references"></a>References
+## <a name="references"></a>リファレンス
 
 次の参照を Visual Studio アプリケーションプロジェクトに追加します。
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 086e7ecf568d043142cdc80f020897ed1793b86c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361223"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923991"
 ---
 # <a name="writing-a-t4-text-template"></a>T4 テキスト テンプレートの作成
 テキスト テンプレートには、そのテンプレートから生成されるテキストが含まれます。 たとえば、web ページを作成するテンプレートには、" \<html> ..." が含まれます。HTML ページの他のすべての標準部分。 テンプレートに挿入される *コントロールブロック* は、プログラムコードのフラグメントです。 コントロール ブロックはさまざまな値を提供すると共に、テキストの一部を条件付きにしたり、繰り返したりできるようにします。

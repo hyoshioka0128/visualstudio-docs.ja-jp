@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a50ebdc7fff425224a454a491f05846105159d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: fe892269d0e02d1f8e0aca2e943993ebb03cea41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363836"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922576"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>方法: トランザクションを使用してモデルを更新する
 トランザクションでは、ストアに加えられた変更がグループとして扱われるようにします。 グループ化された変更は、1つの単位としてコミットまたはロールバックできます。

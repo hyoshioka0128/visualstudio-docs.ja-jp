@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ccb5a216aa9a43581327b04d4b6b56f49f9b2bae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924648"
 ---
 # <a name="t4-template-directive"></a>T4 テンプレート ディレクティブ
 
@@ -70,7 +70,7 @@ debug="true"
 
 `true`
 
-`false` (既定)
+`false` (既定値)
 
 `debug` 属性が `true` の場合、デバッガーでテンプレート内の中断または例外の発生位置を正確に特定できるようにする情報が中間コード ファイルに出力されるようになります。
 
@@ -90,7 +90,7 @@ hostspecific="true"
 
 `true`
 
-`false` (既定)
+`false` (既定値)
 
 `trueFromBase`
 
@@ -130,7 +130,7 @@ Content of myFile is:
 
 有効な値:
 
-`C#` (既定)
+`C#` (既定値)
 
 `VB`
 
@@ -247,7 +247,7 @@ This is the common footer.
 
 有効な値:
 
-`true` (既定)
+`true` (既定値)
 
 `false`
 
@@ -263,7 +263,7 @@ This is the common footer.
 
 有効な値:
 
-`public` (既定)
+`public` (既定値)
 
 `internal`
 

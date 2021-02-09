@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 477afbd5bc4586d8c46db11b036364f8058133b0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616345"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924850"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Side-by-side ファイルの関連付けの管理
 
@@ -61,7 +61,7 @@ VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vs
 
   **Visual Studio の最新バージョンを決定する InstallExecuteSequence テーブル行**
 
-  |アクション|条件|Sequence|
+  |操作|条件|Sequence|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 と NOT (DEVENV_EXE_2003 または DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 であり DEVENV_EXE_2005 ではありません|420|

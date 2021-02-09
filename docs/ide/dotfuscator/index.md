@@ -16,13 +16,13 @@ description: Visual Studio に含まれる Dotfuscator Community の無料コピ
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 7a8602dc99ba63e6cba5035636af0fbd47263e58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+manager: jmartens
+ms.openlocfilehash: ce0f7cb1b5f970da7b6e47797dd4c59012a46892
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924777"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -34,13 +34,13 @@ Dotfuscator はコンパイル済みのアセンブリで動作し、追加の�
 
 ## <a name="why-protection-matters"></a>保護が必要な理由
 
-**知的財産 (IP) を保護**することは重要です。
+**知的財産 (IP) を保護** することは重要です。
 アプリケーションのコードに含まれる設計と実装の詳細は、IP であるとみなすことができます。
 ただし、.NET Framework で構築されたアプリケーションには[重要なメタデータと高度な中間コードが含まれており][assemblies]、多数存在する無料の自動化ツールのいずれかを使用するだけで、簡単にリバース エンジニアリングを実行できます。
 リバース エンジニアリングを中断および停止させることで、許可されていない IP の漏えいを防止できるだけでなく、コードに企業秘密が含まれていることを示すことができます。
 Dotfuscator は、元のアプリケーションの動作を維持しながら、.NET アセンブリを[難読化][obfuscation]し、リバース エンジニアリングを防止します。
 
-**アプリケーションの整合性を保護**することも重要です。
+**アプリケーションの整合性を保護** することも重要です。
 リバース エンジニアリングだけでなく、犯罪者がアプリケーションの違法コピーを作成したり、実行時のアプリケーションの動作を変更したり、データを操作したりしようとすることもあります。
 Dotfuscator は、改ざん、サード パーティによるデバッグ、ルート化されたデバイスを含め、[許可のない使用を検出し、それに対応する][checks]機能をアプリケーションに注入します。
 
@@ -72,8 +72,8 @@ Dotfuscator の拡張方法については、[アップグレードに関する�
 
 Visual Studio から Dotfuscator Community の使用を開始するには、**検索ボックス** (Ctrl + Q) に `dotfuscator` と入力します。
 
-* Dotfuscator Community が既にインストールされている場合、**検索ボックス**の *[メニュー]* 見出しの下に Dotfuscator Community を開始するオプションが表示されます。 詳細については、[Dotfuscator Community の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
-* Dotfuscator Community がまだインストールされていない場合、**検索ボックス**の *[個別のコンポーネント]* 見出しに、代わりに **[Install PreEmptive Protection - Dotfuscator]\(PreEmptive Protection - Dotfuscator のインストール\)** が表示されます。 詳細については、[インストールに関するページ][install]を参照してください。
+* Dotfuscator Community が既にインストールされている場合、**検索ボックス** の *[メニュー]* 見出しの下に Dotfuscator Community を開始するオプションが表示されます。 詳細については、[Dotfuscator Community の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
+* Dotfuscator Community がまだインストールされていない場合、**検索ボックス** の *[個別のコンポーネント]* 見出しに、代わりに **[Install PreEmptive Protection - Dotfuscator]\(PreEmptive Protection - Dotfuscator のインストール\)** が表示されます。 詳細については、[インストールに関するページ][install]を参照してください。
 
 ::: moniker-end
 
@@ -81,12 +81,12 @@ Visual Studio から Dotfuscator Community の使用を開始するには、**�
 
 Visual Studio から Dotfuscator Community の使用を開始するには、**クイック起動** (Ctrl + Q) 検索バーに `dotfuscator` と入力します。
 
-* Dotfuscator Community が既にインストールされている場合は、**クイック起動**によって、Dotfuscator Community ユーザー インターフェイスを起動する *[メニュー]* オプションが表示されます。 詳細については、[Dotfuscator Community の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
-* Dotfuscator Community がまだインストールされていない場合は、**クイック起動**によって、関連する *[インストール]* オプションが表示されます。 詳細については、[インストールに関するページ][install]を参照してください。
+* Dotfuscator Community が既にインストールされている場合は、**クイック起動** によって、Dotfuscator Community ユーザー インターフェイスを起動する *[メニュー]* オプションが表示されます。 詳細については、[Dotfuscator Community の完全なユーザー ガイドの概要ページ][get-started]を参照してください。
+* Dotfuscator Community がまだインストールされていない場合は、**クイック起動** によって、関連する *[インストール]* オプションが表示されます。 詳細については、[インストールに関するページ][install]を参照してください。
 
 ::: moniker-end
 
-**最新バージョン**の Dotfuscator Community も、[preemptive.com の Dotfuscator Downloads ページ][download]からダウンロードできます。
+**最新バージョン** の Dotfuscator Community も、[preemptive.com の Dotfuscator Downloads ページ][download]からダウンロードできます。
 
 ## <a name="full-documentation"></a>すべてのドキュメント
 

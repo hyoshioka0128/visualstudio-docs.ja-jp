@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 480b42c13d13cdbdb299b629fd777e3346fcd67c
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 5486d5faa4f994883d2a32d152ceec59c65629ab
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616332"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924956"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>方法: マネージコード内の複数のスレッドを管理する
 非同期メソッドを呼び出すマネージ VSPackage 拡張機能がある場合、または Visual Studio UI スレッド以外のスレッドで実行される操作がある場合は、次のガイドラインに従う必要があります。 別のスレッドでの作業が完了するまで待機する必要がないため、UI スレッドの応答性を維持できます。 スタック領域を占有する余分なスレッドがないため、コードの効率を向上させることができます。また、デッドロックや応答のないコードを避けることができるため、より信頼性が高く、デバッグが容易になります。

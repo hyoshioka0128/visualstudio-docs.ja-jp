@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 77ffd8b6cd913b79249862a875b6267848a131af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923361"
 ---
 # <a name="how-to-create-a-bdc-model"></a>方法: BDC モデルを作成する
   ビジネス データ接続 (BDC: Business Data Connectivity) モデルを作成するには、アイテムの種類に対応するテンプレートを使用し、モデルを任意の SharePoint プロジェクトに追加します。 詳細については、「[ビジネス データ接続モデルを作成する](../sharepoint/creating-a-business-data-connectivity-model.md)」を参照してください。 モデルのデザイン方法の詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -30,7 +30,7 @@ ms.locfileid: "94850677"
 1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。
 
     > [!NOTE]
-    > IDE が Visual Basic 開発設定を使用するように設定されている場合は、[**ファイル**] [新規作成] [プロジェクト] を選択し  >  **New Project** ます。
+    > IDE が Visual Basic 開発設定を使用するように設定されている場合は、[**ファイル**] [新規作成] [プロジェクト] を選択し  >  ます。
 
      **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "94850677"
 
      空の SharePoint プロジェクトが作成されます。
 
-5. メニューバーで、[**プロジェクト**] [  >  **新しい項目の追加**] の順に選択します。
+5. メニュー バーで **[プロジェクト]**  >  **[新しい項目の追加]** の順に選択します。
 
 6. [ **新しい項目の追加** ] ダイアログボックスで、[ **Office/SharePoint** ] ノードを選択します。
 

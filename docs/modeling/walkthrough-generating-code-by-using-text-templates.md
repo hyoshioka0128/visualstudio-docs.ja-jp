@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360989"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924063"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>チュートリアル: テキスト テンプレートを使用してコードを生成する
 
@@ -410,7 +410,7 @@ XML スキーマが変更された場合は、新しいクラスを簡単に生�
 
 サンプルの XML ファイルが変更されたときにクラスを再生成するには、[**ソリューションエクスプローラー** ] ツールバーの [**すべてのテンプレートの変換**] をクリックします。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 
 このチュートリアルでは、コード生成に関して、いくつかの手法と利点を紹介しました。
 

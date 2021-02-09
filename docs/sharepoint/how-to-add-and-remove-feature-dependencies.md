@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5011db32123e77e9bf60c99459125302b2bf8264
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ebec7f6b1f6d777ce7b3b914ac5c1d5629190fcc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923581"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>方法: フィーチャーの依存関係を追加および削除する
   SharePoint 機能は、機能またはデータの他の機能に依存している場合があります。 このような場合は、機能の依存関係として、これらの他の機能をマークできます。 これにより、SharePoint サーバーは、機能がアクティブ化される前に依存機能がアクティブになるようにします。
