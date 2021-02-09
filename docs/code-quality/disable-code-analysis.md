@@ -9,13 +9,13 @@ helpviewer_keywords:
 - disable code analysis
 author: mikadumont
 ms.author: midumont
-manager: jillfra
-ms.openlocfilehash: e808cb623fa47c9971e1cdceb15a02b5bf46e901
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: 6a1f1466caa921d46ce4701f5074b98f3d5ba051
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860387"
 ---
 # <a name="disable-source-code-analysis-for-net"></a>.NET のソースコード分析を無効にする
 
@@ -37,7 +37,7 @@ Visual Studio 2019 バージョン16.3 以降では、[コード分析] プロ�
 
 ![Visual Studio でライブコード分析またはビルドを有効または無効にする](media/run-on-build-run-live-analysis.png)
 
-このページを開くには、 **ソリューションエクスプローラー** でプロジェクトノードを右クリックし、[ **プロパティ** ] を選択します。 [ **コード分析** ] タブを選択します。
+このページを開くには、 **ソリューションエクスプローラー** でプロジェクトノードを右クリックし、[ **プロパティ**] を選択します。 [ **コード分析** ] タブを選択します。
 
 - ビルド時にソース分析を無効にするには、 **[ビルド時に実行** ] オプションをオフにします。
 - ライブソース分析を無効にするには、 **[ライブ分析で実行** する] オプションをオフにします。
@@ -55,7 +55,7 @@ Visual Studio 2019 バージョン16.3 以降では、[コード分析] プロ�
 | `RunAnalyzersDuringLiveAnalysis` | アナライザーがデザイン時にコードをライブで分析するかどうかを制御します。 | `true` |
 | `RunAnalyzers` | ビルド時とデザイン時の両方でアナライザーを無効にします。 このプロパティは、およびよりも優先さ `RunAnalyzersDuringBuild` `RunAnalyzersDuringLiveAnalysis` れます。 | `true` |
 
-例 :
+次に例を示します。
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -69,7 +69,7 @@ Visual Studio 2019 バージョン16.3 以降では、[コード分析] プロ�
 
 ## <a name="source-analysis"></a>ソース解析
 
-Visual Studio 2017 では、 [ソース分析](roslyn-analyzers-overview.md) を無効にすることはできません。 **エラー一覧** からアナライザーのエラーをクリアする場合は、 **Analyze**  >  メニューバーの [ **実行コード分析を分析し、アクティブな問題を抑制** する] を選択して、現在のすべての違反を抑制できます。 詳細については、「 [違反の抑制](use-roslyn-analyzers.md#suppress-violations)」を参照してください。
+Visual Studio 2017 では、 [ソース分析](roslyn-analyzers-overview.md) を無効にすることはできません。 **エラー一覧** からアナライザーのエラーをクリアする場合は、   >  メニューバーの [**実行コード分析を分析し、アクティブな問題を抑制** する] を選択して、現在のすべての違反を抑制できます。 詳細については、「 [違反の抑制](use-roslyn-analyzers.md#suppress-violations)」を参照してください。
 
 Visual Studio 2019 バージョン16.3 以降では、ソースコード分析を無効にしたり、オンデマンドで実行したりすることができます。 Visual Studio 2019 へのアップグレードを検討してください。
 

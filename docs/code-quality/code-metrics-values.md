@@ -14,15 +14,15 @@ helpviewer_keywords:
 - code metrics [Visual Studio]
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f843df01059adef3a94bb46501e4e75bd67d5a7
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: 6e77667feae806b66092195f30b028ccca653b2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860452"
 ---
 # <a name="code-metrics-values"></a>コードメトリックスの値
 
@@ -68,7 +68,7 @@ Visual Studio でコードメトリックスデータを生成する方法の詳
 
 Windows フォーム用に生成されたコードは、開発者が表示および変更できるコードであるため、無視されません。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [方法: コードメトリックスデータを生成する](../code-quality/how-to-generate-code-metrics-data.md)
 - [[コードメトリックスの結果] ウィンドウを使用する](../code-quality/working-with-code-metrics-data.md)

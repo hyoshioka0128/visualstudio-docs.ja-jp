@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860101"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>方法 : コード分析辞書をカスタマイズする
 
@@ -268,12 +268,12 @@ ms.locfileid: "94348737"
 
 1. **ソリューションエクスプローラー** で、次のいずれかの手順を実行します。
 
-    - 1つのプロジェクトに辞書を追加するには、プロジェクト名を右クリックし、[ **既存項目の追加** ] をクリックします。 [ **既存項目の追加** ] ダイアログボックスでファイルを指定します。
+    - 1つのプロジェクトに辞書を追加するには、プロジェクト名を右クリックし、[ **既存項目の追加**] をクリックします。 [ **既存項目の追加** ] ダイアログボックスでファイルを指定します。
   
-    - 複数のプロジェクト間で共有される辞書を追加するには、[ **既存項目の追加** ] ダイアログボックスで共有するファイルを探し、[ **追加** ] ボタンの下矢印をクリックして、[ **リンクとして追加** ] をクリックします。
+    - 複数のプロジェクト間で共有される辞書を追加するには、[ **既存項目の追加** ] ダイアログボックスで共有するファイルを探し、[ **追加** ] ボタンの下矢印をクリックして、[ **リンクとして追加**] をクリックします。
 
-2. **ソリューションエクスプローラー** で、 **CustomDictionary.xml** ファイル名を右クリックし、[ **プロパティ** ] をクリックします。
+2. **ソリューションエクスプローラー** で、 **CustomDictionary.xml** ファイル名を右クリックし、[**プロパティ**] をクリックします。
 
-3. [ **ビルドアクション** ] ボックスの一覧で、[ **CodeAnalysisDictionary** ] を選択します。
+3. [ **ビルドアクション** ] ボックスの一覧で、[ **CodeAnalysisDictionary**] を選択します。
 
 4. [ **出力ディレクトリにコピー** ] ボックスの一覧の [ **コピー** しない] を選択します。

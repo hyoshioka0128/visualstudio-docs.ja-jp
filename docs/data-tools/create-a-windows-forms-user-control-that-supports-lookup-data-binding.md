@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435275"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859074"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>ルックアップ データ バインディングをサポートする Windows フォーム ユーザー コントロールを作成する
 
-フォームにデータを表示する場合は、 **ツールボックス** から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装するコントロールには、データにバインドできるプロパティを 3 つ含めることができます。 このようなコントロールは、<xref:System.Windows.Forms.ComboBox> に似ています。
+フォームにデータを表示する場合は、**ツールボックス** から既存のコントロールを選択するか、またはアプリケーションが標準コントロールでは提供できない機能を必要とする場合は、カスタム コントロールを記述できます。 このチュートリアルでは、<xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装するコントロールを作成する方法を示します。 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装するコントロールには、データにバインドできるプロパティを 3 つ含めることができます。 このようなコントロールは、<xref:System.Windows.Forms.ComboBox> に似ています。
 
 コントロールの作成の詳細については、「 [デザイン時の Windows フォームコントロールの開発](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)」を参照してください。
 
@@ -60,11 +60,11 @@ ms.locfileid: "94435275"
 
 このチュートリアルでは SQL Server Express LocalDB と Northwind サンプルデータベースを使用します。
 
-1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、 **データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
+1. LocalDB SQL Server Express ない場合は、 [SQL Server Express ダウンロードページ](https://www.microsoft.com/sql-server/sql-server-editions-express)からインストールするか、 **Visual Studio インストーラー** を使用してインストールします。 **Visual Studio インストーラー** では、**データストレージと処理** ワークロードの一部として SQL Server Express LocalDB をインストールすることも、個々のコンポーネントとしてインストールすることもできます。
 
 2. 次の手順に従って、Northwind サンプルデータベースをインストールします。
 
-    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ** ] をクリックします。
+    1. Visual Studio で、[ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 (SQL Server オブジェクトエクスプローラーは、Visual Studio インストーラーの **データストレージと処理** ワークロードの一部としてインストールされます)。[ **SQL Server** ] ノードを展開します。 LocalDB インスタンスを右クリックし、[ **新しいクエリ**] をクリックします。
 
        クエリエディターウィンドウが開きます。
 
@@ -80,7 +80,7 @@ ms.locfileid: "94435275"
 
 1. Visual Studio の **[ファイル]** メニューで､ **[新規作成]**  >  **[プロジェクト]** を選択します。
 
-2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ** ] を選択します。
+2. 左側のペインで [ **Visual C#** ] または [ **Visual Basic** を展開し、[ **Windows デスクトップ**] を選択します。
 
 3. 中央のウィンドウで、[ **Windows フォーム App** ] プロジェクトの種類を選択します。
 
@@ -90,11 +90,11 @@ ms.locfileid: "94435275"
 
 ## <a name="add-a-user-control-to-the-project"></a>プロジェクトにユーザー コントロールを追加する
 
-このチュートリアルでは **ユーザー コントロール** から検索コントロールを作成するので、 **ユーザー コントロール** の項目を **LookupControlWalkthrough** プロジェクトに追加します。
+このチュートリアルでは **ユーザー コントロール** から検索コントロールを作成するので、**ユーザー コントロール** の項目を **LookupControlWalkthrough** プロジェクトに追加します。
 
 1. **[プロジェクト]** メニューの **[ユーザー コントロールの追加]** をクリックします。
 
-2. [ `LookupBox` **名前** ] 領域に「」と入力し、[ **追加** ] をクリックします。
+2. [ `LookupBox` **名前** ] 領域に「」と入力し、[ **追加**] をクリックします。
 
      **LookupBox** コントロールが **ソリューション エクスプローラー** に追加され、デザイナーが開きます。
 
@@ -106,7 +106,7 @@ LookupBox コントロールをデザインするには、 <xref:System.Windows.
 
 データ バインディングをサポートする検索コントロールには、<xref:System.ComponentModel.LookupBindingPropertiesAttribute> を実装できます。
 
-1. **LookupBox** コントロールをコード ビューに切り替えます。 ( **[表示]** メニューの **[コード]** を選択します。)
+1. **LookupBox** コントロールをコード ビューに切り替えます。 (**[表示]** メニューの **[コード]** を選択します。)
 
 2. `LookupBox` のコードを次のコードで置き換えます。
 
@@ -117,11 +117,11 @@ LookupBox コントロールをデザインするには、 <xref:System.Windows.
 
 ## <a name="create-a-data-source-from-your-database"></a>データベースからデータソースを作成する
 
-この手順では、 **データ ソース構成** ウィザードを使用して、Northwind サンプル データベースの `Customers` テーブルと `Orders` テーブルに基づいてデータ ソースを作成します。
+この手順では、**データ ソース構成** ウィザードを使用して、Northwind サンプル データベースの `Customers` テーブルと `Orders` テーブルに基づいてデータ ソースを作成します。
 
-1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示** ] をクリックします。
+1. [データ **ソース** ] ウィンドウを開くには、[ **データ** ] メニューの [ **データソースの表示**] をクリックします。
 
-2. **[データ ソース]** ウィンドウで、 **[新しいデータ ソースの追加]** をクリックして **データ ソース構成** ウィザードを起動します。
+2. **[データ ソース]** ウィンドウで、**[新しいデータ ソースの追加]** をクリックして **データ ソース構成** ウィザードを起動します。
 
 3. **[データソースの種類を選択]** ページで、 **[データベース]** をクリックし、 **[次へ]** をクリックします。
 
@@ -131,15 +131,15 @@ LookupBox コントロールをデザインするには、 <xref:System.Windows.
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを表示します。
 
-5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、 **[次へ]** をクリックします。
+5. データベースにパスワードが必要な場合は、該当するオプションを選択して重要情報を含め、**[次へ]** をクリックします。
 
-6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、 **[次へ]** をクリックします。
+6. **[アプリケーション構成ファイルに接続文字列を保存]** ページで、**[次へ]** をクリックします。
 
-7. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** ノードを展開します。
+7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** ノードを展開します。
 
-8. `Customers` テーブルと `Orders` テーブルを選択し、 **[完了]** をクリックします。
+8. `Customers` テーブルと `Orders` テーブルを選択し、**[完了]** をクリックします。
 
-     プロジェクトに **NorthwindDataSet** が追加され、 **[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
+     プロジェクトに **NorthwindDataSet** が追加され、**[データ ソース]** ウィンドウに `Customers` テーブルと `Orders` テーブルが表示されます。
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>LookupBox コントロールを使用するように Orders テーブルの CustomerID 列を設定します。
 
@@ -153,23 +153,23 @@ LookupBox コントロールをデザインするには、 <xref:System.Windows.
 
 4. **[Orders]** ノードのドロップダウン矢印をクリックし、コントロール一覧の **[Details]** を選択します。
 
-5. **[Orders]** ノードの **[CustomerID]** 列のドロップダウン矢印をクリックし、 **[Customize]** をクリックします。
+5. **[Orders]** ノードの **[CustomerID]** 列のドロップダウン矢印をクリックし、**[Customize]** をクリックします。
 
 6. **[データ UI カスタマイズ オプション]** ダイアログ ボックスの **[関連付けられたコントロール]** の一覧の **[LookupBox]** を選択します。
 
 7. **[OK]** をクリックします。
 
-8. **[CustomerID]** 列のドロップダウン矢印をクリックし、 **[LookupBox]** をクリックします。
+8. **[CustomerID]** 列のドロップダウン矢印をクリックし、**[LookupBox]** をクリックします。
 
-## <a name="add-controls-to-the-form"></a>フォームへのコントロールの追加
+## <a name="add-controls-to-the-form"></a>コントロールをフォームに追加する
 
 **[データ ソース]** ウィンドウから **Form1** に項目をドラッグして、データ バインディング コントロールを作成します。
 
-Windows フォームにデータバインドコントロールを作成するには、[ **データソース** ] ウィンドウから windows フォームに [ **Orders** ] ノードをドラッグし、 **LookupBox** コントロールを使用して列のデータを表示することを確認し `CustomerID` ます。
+Windows フォームにデータバインドコントロールを作成するには、[**データソース**] ウィンドウから windows フォームに [ **Orders** ] ノードをドラッグし、 **LookupBox** コントロールを使用して列のデータを表示することを確認し `CustomerID` ます。
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Customers テーブルから CompanyName を参照するようにコントロールをバインドする
 
-参照バインドを設定するには、[ **データソース** ] ウィンドウで [メインの **Customers** ] ノードを選択し、 **Form1** の **CustomerIDLookupBox** のコンボボックスにドラッグします。
+参照バインドを設定するには、[**データソース**] ウィンドウで [メインの **Customers** ] ノードを選択し、 **Form1** の **CustomerIDLookupBox** のコンボボックスにドラッグします。
 
 これによって、`Orders` テーブルの `CustomerID` 値を維持しながら、`Customers` テーブルの `CompanyName` を表示するためのデータ バインディングがセットアップされます。
 

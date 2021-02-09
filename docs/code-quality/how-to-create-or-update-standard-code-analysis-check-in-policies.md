@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860114"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>方法: 標準のコード分析チェックイン ポリシーを作成または更新する
 
@@ -37,7 +37,7 @@ ms.locfileid: "94348763"
 
 ## <a name="to-open-the-check-in-policy-editor"></a>チェックインポリシーエディターを開くには
 
-1. チームエクスプローラーで、プロジェクト名を右クリックし、[ **プロジェクトの設定** ] をポイントして、[ **ソース管理** ] をクリックします。
+1. チームエクスプローラーで、プロジェクト名を右クリックし、[ **プロジェクトの設定**] をポイントして、[ **ソース管理**] をクリックします。
 
 1. [ **ソース管理** ] ダイアログボックスで、[ **チェックインポリシー** ] タブを選択します。
 
@@ -45,7 +45,7 @@ ms.locfileid: "94348763"
 
     - [ **追加** ] をクリックして、新しいチェックインポリシーを作成します。
 
-    - [ **ポリシーの種類** ] ボックスの一覧の既存の **コード分析** 項目をダブルクリックして、ポリシーを変更します。
+    - [**ポリシーの種類**] ボックスの一覧の既存の **コード分析** 項目をダブルクリックして、ポリシーを変更します。
 
 ## <a name="to-set-policy-options"></a>ポリシーオプションを設定するには
 

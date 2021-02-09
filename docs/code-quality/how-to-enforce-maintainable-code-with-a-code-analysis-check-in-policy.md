@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9f061d9d10d66857a0b2506d13d6d6671f7df401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860044"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>方法: コード分析チェックインポリシーを使用して保守が容易なコードを適用する
 
@@ -29,11 +29,11 @@ Team Foundation のバージョン管理の管理者は、コード分析の保�
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>コード分析ポリシーエディターを開くには
 
-1. **チームエクスプローラー** で、プロジェクトを右クリックし、[ **プロジェクトの設定** ] をクリックして、[ **ソース管理** ] をクリックします。
+1. **チームエクスプローラー** で、プロジェクトを右クリックし、[**プロジェクトの設定**] をクリックして、[**ソース管理**] をクリックします。
 
      [ **ソース管理** ] ダイアログボックスが表示されます。
 
-2. [ **チェックインポリシー** ] タブで、[ **追加** ] をクリックします。
+2. [ **チェックインポリシー** ] タブで、[ **追加**] をクリックします。
 
      [ **チェックインポリシーの追加** ] ダイアログボックスが表示されます。
 
@@ -43,7 +43,7 @@ Team Foundation のバージョン管理の管理者は、コード分析の保�
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>コード分析の保守容易性の規則を有効にするには
 
-1. [ **コード分析ポリシーエディター** ] ダイアログボックスの [ **ルールの設定** ] で、[ **メンテナンスルール** ] ノードを展開します。
+1. [ **コード分析ポリシーエディター** ] ダイアログボックスの [ **ルールの設定**] で、[ **メンテナンスルール** ] ノードを展開します。
 
 2. 次の規則のチェックボックスをオンにします。
 

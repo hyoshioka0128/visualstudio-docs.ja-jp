@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96f536b3ab8e28b87a59a637fcf6dbaadeb21bf7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b089f954c59219461c8e267ee6e88e47015fc794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860621"
 ---
 # <a name="getvalidcompatibleframework-function"></a>Getvalid互換フレームワーク関数
   この API は Office インフラストラクチャをサポートします。独自に作成したコードから直接使用するためのものではありません。
@@ -33,7 +33,7 @@ HRESULT WINAPI GetValidCompatibleFramework(
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |*lpwszCompatibleFrameworksXML*|使用しないでください。|
 |*pbstrValidFrameworkTag*|使用しないでください。|

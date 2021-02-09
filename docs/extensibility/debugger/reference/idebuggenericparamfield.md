@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b04b0805aec5ecee818fa42e1d76a76cce12b66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad01730f7f1d1e8e155cd1df44f75fbf88c73a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727845"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838644"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 マネージコードのジェネリック型のパラメーターを表します。
@@ -41,7 +41,7 @@ IDebugGenericParamField : IDebugField
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|このジェネリックパラメーターの名前を取得します。|
 |[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|このジェネリックパラメーターの型またはメソッドの所有者を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。
