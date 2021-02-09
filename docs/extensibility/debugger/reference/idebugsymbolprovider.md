@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e180288a9312d9af5a3d3b1bd63d8f2266f581
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909566"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 このインターフェイスは、シンボルと型を提供し、それらをフィールドとして返すシンボルプロバイダーを表します。
@@ -37,7 +37,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表に、のメソッドを示し `IDebugSymbolProvider` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |`Initialize`|非推奨。 使用しないでください。|
 |`Uninitialize`|使用は推奨されていません。 使用しないでください。|
@@ -54,10 +54,10 @@ IDebugSymbolProvider : IUnknown
 |[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|シンボル名をシンボルの種類にマップします。|
 |[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|メソッド内の指定されたデバッグアドレスの後に続くデバッグアドレスを取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 このインターフェイスは、ドキュメントの位置をデバッグアドレスに、またはその逆にマップします。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

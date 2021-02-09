@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9b946d55-ff85-44eb-b40a-efbf8282eafd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbe99422e506fb86b0a7e1d9d3242783f3258e6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ad5fa763be8929a9122a6fd7517b401f5a874e04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909343"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 このインターフェイスは、デバッグエンジン (DE) によって送信され、デバッグされているモジュールのデバッグシンボルが読み込まれたことを示します。
@@ -37,16 +37,16 @@ IDebugSymbolSearchEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスは、 `IDebugSymbolSearchEvent2` 次のメソッドを公開します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|シンボル検索の結果に関する情報を取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このイベントは、シンボルの読み込みに失敗した場合でも送信されます。 を呼び出すと、 `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` このイベントのハンドラーは、モジュールに実際にシンボルがあるかどうかを判断できます。
 
  通常、Visual Studio はこのイベントを使用して、[ **モジュール** ] ウィンドウで読み込まれたシンボルの状態を更新します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -54,6 +54,6 @@ IDebugSymbolSearchEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

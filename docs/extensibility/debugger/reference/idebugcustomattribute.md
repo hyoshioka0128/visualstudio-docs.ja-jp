@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c5ae41e9-00b9-4cca-871d-b8de9ef390d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a31133139d0104cd29f5d0d0e760bd78ec5783fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907957"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 このインターフェイスはカスタム属性を表し、属性の名前、親、およびクラスの型を提供できます。
@@ -25,7 +25,7 @@ ms.locfileid: "80732683"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugCustomAttribute : IUnknown
+IDebugCustomAttribute : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 ## <a name="remarks"></a>解説
  カスタム属性は、特定のクラスまたはメソッドに関連付けられたカスタムメタデータを提供する C# の構造体です。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

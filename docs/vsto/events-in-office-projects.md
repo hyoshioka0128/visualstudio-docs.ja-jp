@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 381d6ffad2afadd90278577ad0e247a2f20ec375
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910317"
 ---
 # <a name="events-in-office-projects"></a>Office プロジェクトのイベント
   各 Office プロジェクト テンプレートは、自動的に複数のイベント ハンドラーを生成します。 ドキュメント レベルのカスタマイズに使用するイベント ハンドラーは、VSTO アドイン用のイベント ハンドラーとは若干異なります。

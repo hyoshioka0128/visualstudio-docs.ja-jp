@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9d790f12d3fc21bbae7373470746af2ebfe6dc9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e13d02cb08f957636a81bf4a985f1d7006b6c2ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908097"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトの型を解釈する方法を指定します。
@@ -58,7 +58,7 @@ public enum enum_dwTYPE_KIND {
 ## <a name="remarks"></a>解説
 この列挙体の値は `dwKind` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体のフィールドに表示され、共用体メンバーを解釈する方法を決定するために使用され `type` ます。 `TYPE_INFO`構造体は、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)メソッドの呼び出しによって返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

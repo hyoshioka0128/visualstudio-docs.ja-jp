@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a3f3c2dca16cd2c28c9d1727e4ac145c91c482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909849"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 このインターフェイスには、プロパティの取得と設定を可能にする関数が用意されています。
@@ -25,7 +25,7 @@ ms.locfileid: "80720698"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugPropertyField : IDebugContainerField
+IDebugPropertyField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -37,7 +37,7 @@ IDebugPropertyField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  このインターフェイスは、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイスと [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|プロパティを取得するメソッドを取得します。|
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|プロパティを設定するメソッドを取得します。|
@@ -45,7 +45,7 @@ IDebugPropertyField : IDebugContainerField
 ## <a name="remarks"></a>解説
  プロパティはマネージコードの概念であり、変数として扱われるメソッドを表します。 プロパティがアンマネージ C++ に存在しません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

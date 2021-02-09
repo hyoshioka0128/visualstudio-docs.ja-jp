@@ -12,15 +12,15 @@ helpviewer_keywords:
 - worksheets, hiding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9a5ba61c7db0a62cf3e97fb8e4df5cb655e9f2dd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5763e040e0206272b6b50b039f1260bcbc99db49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908590"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>方法: プログラムによってワークシートを非表示にする
   ブック内の任意のワークシートの表示と非表示を切り替えることができます。 ワークシートを非表示にするには、Worksheet ホスト項目を使用するか、ブックの Sheets コレクションを使用してワークシートにアクセスします。
