@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 89ee46ef-bc8c-4ab0-a2ac-1220f9da06fc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9e346022871a3aa25363aa717f1bf15a3d42a6
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 4f4b5e8fe9d17a6de9abac2681074dcfc162e9b7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900599"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>方法: ClickOnce アプリケーションにデータ ファイルを含める
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]インストールする各アプリケーションには、対象のコンピューターのローカルディスクにデータディレクトリが割り当てられます。このディレクトリには、アプリケーションが独自のデータを管理できます。 データファイルには、任意の種類のファイル (テキストファイル、XML ファイル、または Microsoft Access データベース ( *.mdb* ) ファイルなど) を含めることができます。 次の手順では、任意の種類のデータファイルをアプリケーションに追加する方法について説明し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]インストールする各アプリケーションには、対象のコンピューターのローカルディスクにデータディレクトリが割り当てられます。このディレクトリには、アプリケーションが独自のデータを管理できます。 データファイルには、任意の種類のファイル (テキストファイル、XML ファイル、または Microsoft Access データベース (*.mdb*) ファイルなど) を含めることができます。 次の手順では、任意の種類のデータファイルをアプリケーションに追加する方法について説明し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Mage.exe を使用してデータファイルを含めるには
 
@@ -70,7 +70,7 @@ ms.locfileid: "94349946"
 
 4. [ **ファイル** ] タブを選択します。
 
-5. タブの上部にあるテキストボックスに、アプリケーションのファイルが格納されているディレクトリを入力し、[ **設定** ] をクリックします。
+5. タブの上部にあるテキストボックスに、アプリケーションのファイルが格納されているディレクトリを入力し、[ **設定**] をクリックします。
 
      データファイルがグリッドに表示されます。
 

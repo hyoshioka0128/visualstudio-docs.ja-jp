@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e1685fe4fc7db6728ebc1ca6a12e27bb6f42589b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 61e4785ab99ecccc61a097dd27140e250f103de2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899813"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>DSL ライブラリによる DSL 間でのクラスの共有
 Visual Studio の視覚化およびモデリング SDK では、別の DSL にインポートできる不完全な DSL 定義を作成できます。 これにより、類似するモデルの一般的な部分を考慮することができます。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899907"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>チュートリアル: 従来の言語サービスの作成
 Managed package framework (MPF) 言語クラスを使用して、言語サービスをに実装するの [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] は簡単です。 言語サービス、言語サービス自体、および言語のパーサーをホストするための VSPackage が必要です。
@@ -52,7 +52,7 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
     コードスニペットをサポートしない場合は、[完了] をクリックするだけで、次の手順は無視できます。
 
-6. **コマンド名** として「 **Insert スニペット**」と入力し、 `cmdidInsertSnippet` **コマンド ID** に「」と入力します。 **[完了]** をクリックします。
+6. **コマンド名** として「 **Insert スニペット**」と入力し、 `cmdidInsertSnippet` **コマンド ID** に「」と入力します。 **[Finish]** をクリックします。
 
     **コマンド名** と **コマンド ID** は任意のものにすることができます。これらは例にすぎません。
 
@@ -132,5 +132,5 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
      たとえば、「」と入力すると、 `public override` そのクラスでオーバーライド可能なすべてのメソッドの一覧が表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)

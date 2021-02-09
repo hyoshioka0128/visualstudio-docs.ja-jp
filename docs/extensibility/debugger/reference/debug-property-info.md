@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34fc1b5103949a767a3ee448618cbb708ea6a48b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737449"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899100"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 デバッグプロパティに関する情報を格納します。
@@ -78,7 +78,7 @@ public struct DEBUG_PROPERTY_INFO {
 
 この構造体は、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) メソッドに渡され、そこに格納されます。 この構造体は、 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) インターフェイスからこの構造体のリストの一部としても返されます。このインターフェイスは、 [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) メソッドおよび [enumchildren](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) メソッドの呼び出しから返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

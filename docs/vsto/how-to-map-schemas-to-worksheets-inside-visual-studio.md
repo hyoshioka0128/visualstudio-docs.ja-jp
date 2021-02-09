@@ -15,15 +15,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], XML schemas
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7a7e1a06e644536ce9ce881d9b9f1dc23aae03f1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0e6d868655e3f697a7f659064026929568f2e400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900853"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>方法: Visual Studio 内のワークシートにスキーマをマップする
   ワークシートが Visual Studio で開かれているときに、XML スキーマをワークシートにマップできます。 Visual Studio の外部でブックを開いたときに使用するのと同じ Microsoft Office Excel ツールを使用します。 Office プロジェクトでは、Excel ソリューションを作成する前または後に、ワークシートにスキーマをマップするかどうかにかかわらず、同じオブジェクトが作成されます。
