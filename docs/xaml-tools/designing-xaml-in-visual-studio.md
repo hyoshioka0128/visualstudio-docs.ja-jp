@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 5be85715efa3086a5a225da45501697440053cc5
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876421"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Visual Studio および Blend for Visual Studio での XAML の設計
 
 Visual Studio と Blend for Visual Studio の両方には、さまざまなアプリの種類に合わせて XAML を使用して魅力的なユーザー インターフェイスとリッチ メディア体験を構築するための視覚的なツールが用意されています。 両方の統合開発環境 (IDE) は、Visual XAML エディター (デザイナー) などの共通の機能セットを共有しています。 WPF プラットフォームと UWP プラットフォームをサポートする Blend for Visual Studio には、ビジュアルの状態をデザインし、アニメーションを作成するための追加ツールがあります。
 
-Visual Studio と Blend for Visual Studio を自在に切り替えることができるだけでなく、両方の IDE で同時に同じプロジェクトを開くこともできます。 ある IDE で XAML ファイルに保存した変更は、他の IDE に切り替える際に、自動再読み込みを使用して適用できます。 再読み込みの動作を制御するには **Tools** 、  >  **Options**  >  **Environment**  >  いずれかの IDE で [ツール] [オプション] [環境 **ドキュメント** ] の順に移動します。
+Visual Studio と Blend for Visual Studio を自在に切り替えることができるだけでなく、両方の IDE で同時に同じプロジェクトを開くこともできます。 ある IDE で XAML ファイルに保存した変更は、他の IDE に切り替える際に、自動再読み込みを使用して適用できます。 再読み込みの動作を制御するには、  >    >    >  いずれかの IDE で [ツール] [オプション] [環境 **ドキュメント**] の順に移動します。
 
 ## <a name="installation"></a>インストール
 
@@ -32,7 +32,7 @@ Visual Studio と Blend for Visual Studio を自在に切り替えることが�
 
      ![Visual Studio インストーラーからのユニバーサル Windows プラットフォーム開発ワークロードのスクリーンショット](../xaml-tools/media/uwp-workload.png)
 
-- Xamarin.Forms アプリを作成するには、Visual Studio に **.NET によるモバイル開発** ワークロードをインストールするには Blend for Visual Studio はインストールされて *いません* 。Blend では、Xamarin.Forms アプリがサポートされません。
+- Xamarin.Forms アプリを作成するには、Visual Studio に **.NET によるモバイル開発** ワークロードをインストールするには Blend for Visual Studio はインストールされて *いません*。Blend では、Xamarin.Forms アプリがサポートされません。
 
      ![Visual Studio インストーラーからの .NET ワークロードを使用したモバイル開発のスクリーンショット](../xaml-tools/media/mobile-dev-dotnet-workload.png)
 
@@ -44,7 +44,7 @@ Visual Studio と Blend for Visual Studio を自在に切り替えることが�
 
 - **デバッグ:**[Visual Studio](inspect-xaml-properties-while-debugging.md)および [Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md)でデバッグできます。これには、実行中のアプリをデバッグするコード内のブレークポイントの設定や、アプリの実行中に XAML コードを変更するための [ホットリロード](../xaml-tools/xaml-hot-reload.md)の使用が含まれます。 Visual Studio とデバッグ機能の一貫性を保つため、Blend for Visual Studio には Visual Studio の大半のデバッグ ウィンドウとツールバーが含まれています。
 
-- **ファイルの再読み込み:** XAML ファイルは、Visual Studio または Blend for Visual Studio で編集できます。 編集後に保存されたファイルは、IDE を切り替えると自動的に再読み込みされます。 再読み込みの動作を制御するには **Tools** 、  >  **Options**  >  **Environment**  >  いずれかの IDE で [ツール] [オプション] [環境 **ドキュメント** ] の順に移動します。
+- **ファイルの再読み込み:** XAML ファイルは、Visual Studio または Blend for Visual Studio で編集できます。 編集後に保存されたファイルは、IDE を切り替えると自動的に再読み込みされます。 再読み込みの動作を制御するには、  >    >    >  いずれかの IDE で [ツール] [オプション] [環境 **ドキュメント**] の順に移動します。
 
 - 同期された **レイアウトと設定:** 同じ個人アカウントでサインインした場合、Visual Studio または Blend for Visual Studio のデザインカスタマイズツールウィンドウのレイアウトと設定の設定は、デバイスとバージョンの両方で同期されます。 [複数のコンピューター間での設定の同期](../ide/synchronized-settings-in-visual-studio.md)に関するページを参照してください。
 
@@ -52,7 +52,7 @@ Visual Studio と Blend for Visual Studio を自在に切り替えることが�
 
 生産性を高めるため、次のようなタスクには Blend for Visual Studio の使用をご検討ください。 Blend for Visual Studio が Visual Studio デザイナーまたはコード単独より多くの機能を提供する領域は以下のとおりです。
 
-| タスク | Visual Studio | Blend for Visual Studio | 詳細情報 |
+| タスク | Visual Studio | Blend for Visual Studio | 説明 |
 | - | - | - | - |
 | **ビジュアルの状態をデザインする** | ビジュアルの状態のデザインに便利なツールはありません。プログラミングで作成する必要があります。 | デザイン ツールを使用し、コントロールの状態に基づき、コントロールの外観を変更します。 | [表示状態](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **アニメーションを作成する** |アニメーション用のデザイン ツールはないため、プログラムで作成する必要があります。 これを行うには、WPF におけるアニメーションおよびタイミング システムを理解し、広範なコーディングの専門知識を持っている必要があります。|アニメーションを視覚的に作成し、Blend for Visual Studio でプレビューできます。 これは、コーディングでアニメーションを構築するよりもすばやく正確です。 ユーザーとの対話を処理するトリガーを追加できるほか、コードに切り替えてイベント ハンドラーとその他の機能を追加することができます。|[オブジェクトのアニメーション化](../xaml-tools/animate-objects-in-xaml-designer.md)|

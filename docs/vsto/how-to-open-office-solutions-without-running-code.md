@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 99f1a01a745544e7e11e724db9c6eafacf0ca201
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876590"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>方法: コードを実行せずに Office ソリューションを開く
   マネージコード拡張機能を使用して作成された Microsoft Office ソリューションは、エンドユーザーの Office アプリケーションのセキュリティ設定が [高] に設定されている場合でも実行されます。 これは、.NET アセンブリコードのセキュリティは、Microsoft Office ではなく Microsoft .NET Framework によって管理されるためです。

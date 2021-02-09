@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c85b54f92970dca5d712b827019300f850b03cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 696f5eb00781c8f46ef099db1000b36a972a95dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875810"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 デバッグエンジンがメトリック設定をリモートで読み取ることができるようにします。
@@ -32,7 +32,7 @@ IDebugSettingsCallback2D : IUnknown
 ## <a name="methods"></a>メソッド
 次の表に、のメソッドを示し `IDebugSettingsCallback2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|言語およびベンダー識別子を指定して、使用可能な式エバリュエーターを列挙します。|
 |[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|メトリックを指定して、式エバリュエーターローカルオブジェクトを取得します。|
@@ -44,7 +44,7 @@ IDebugSettingsCallback2D : IUnknown
 |[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|名前を指定して、メトリックの一意の識別子を取得します。|
 |[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|名前を指定して、メトリックの値の文字列を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: Msdbg. h
 
 名前空間: VisualStudio。

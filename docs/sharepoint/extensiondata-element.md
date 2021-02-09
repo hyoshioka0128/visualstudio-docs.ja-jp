@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd82aaec96eff3cf3d20fd9d0607ac5aae6b3472
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876837"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 要素
   SharePoint プロジェクトアイテムに関連付けられているカスタムデータアイテムのコレクションを表します。
@@ -50,7 +50,7 @@ ms.locfileid: "94672536"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|SharePoint プロジェクトアイテムを表します。 この要素は、ファイルの必須のルート要素です `.spdata` 。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  オブジェクトのプロパティを使用してカスタムデータを SharePoint プロジェクトアイテムに関連付けると、Visual Studio によって、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> プロジェクトアイテムのファイルの **extensiondata** 要素にデータが保存され `.spdata` ます。 詳細については、「 [SharePoint プロジェクトシステムの拡張機能にデータを保存](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)する」を参照してください。
 
 ## <a name="element-information"></a>要素情報

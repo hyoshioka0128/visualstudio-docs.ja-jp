@@ -14,22 +14,22 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876317"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>方法: ClickOnce 配置で個々の必要条件にサポート URL を指定する
 展開では、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションを実行するためにクライアントコンピューターで使用できる必要があるいくつかの前提条件をテストでき [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 これらの依存関係には、必要な最小バージョンの .NET Framework、オペレーティングシステムのバージョン、およびグローバルアセンブリキャッシュ (GAC) にプレインストールする必要があるすべてのアセンブリが含まれます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]ただし、これらの必須コンポーネントをインストールすることはできません。前提条件が見つからない場合は、インストールを停止するだけで、インストールが失敗した原因を説明するダイアログボックスが表示されます。
 
  必須コンポーネントをインストールする方法は2つあります。 ブートストラップアプリケーションを使用してインストールできます。 または、前提条件が見つからない場合に、ダイアログボックスでユーザーに表示される個々の必須コンポーネントのサポート URL を指定することもできます。 この URL によって参照されるページには、必要な前提条件をインストールするための手順へのリンクを含めることができます。 アプリケーションで個々の前提条件のサポート URL が指定されていない場合は、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションが定義されていれば、そのアプリケーション全体の配置マニフェストで指定されているサポート url がに表示されます。
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 *Mage.exe* 、 *MageUI.exe* すべてを使用して展開を生成できますが [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、これらのツールでは、個々の前提条件のサポート URL を直接指定することはできません。 このドキュメントでは、配置のアプリケーションマニフェストと配置マニフェストを変更して、これらのサポート Url を含める方法について説明します。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]、 *Mage.exe*、 *MageUI.exe* すべてを使用して展開を生成できますが [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、これらのツールでは、個々の前提条件のサポート URL を直接指定することはできません。 このドキュメントでは、配置のアプリケーションマニフェストと配置マニフェストを変更して、これらのサポート Url を含める方法について説明します。
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>個々の前提条件のサポート URL を指定する
 
@@ -86,6 +86,6 @@ ms.locfileid: "94350947"
 ## <a name="see-also"></a>関連項目
 - [Mage.exe (マニフェストの生成および編集ツール)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks> element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> 要素](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce と Authenticode](../deployment/clickonce-and-authenticode.md)
 - [アプリケーション配置の必要条件](../deployment/application-deployment-prerequisites.md)
