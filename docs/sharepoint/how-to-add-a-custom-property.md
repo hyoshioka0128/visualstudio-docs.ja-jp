@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], custom properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b12124d874c58ce17f1fa24d2bd9283af64f1c92
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d335cc809a8415a2b41f3de63138c113c2a78706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915480"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876603"
 ---
 # <a name="how-to-add-a-custom-property"></a>方法: カスタムプロパティを追加する
   **プロパティエディター** を使用して、モデルにカスタムプロパティを追加できます。 コードでこれらのプロパティにアクセスして、実行時に接続文字列やその他のデータなどの情報を取得できます。
@@ -33,7 +33,7 @@ ms.locfileid: "96915480"
 
 1. **BDC エクスプローラー** で、カスタムプロパティを適用するモデル要素を表すノードを選択します。
 
-2. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
+2. メニューバーで、[   >  **プロパティウィンドウ** の表示] を選択します。
 
 3. [ **プロパティ** ] ウィンドウで、[ **カスタムプロパティ** ] プロパティを選択し、省略記号ボタン (![ASP.NET Mobile Designer 楕円](../sharepoint/media/mwellipsis.gif "ASP.NET モバイル デザイナー楕円")) をクリックします。
 

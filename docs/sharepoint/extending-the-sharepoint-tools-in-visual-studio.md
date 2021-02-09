@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a921f45ea151ce7ee3313dba47e81a5acc86063d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: c074e62b47b926351948e94d78621a8a41c9c3e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672627"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876850"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張
   Visual Studio の SharePoint ツールは、多くのアプリケーション開発シナリオの要件を満たしています。 しかし、自分や他の開発者が必要とする機能が提供されていない場合もあります。 このような場合は、SharePoint ツールを拡張して、必要な機能を作成できます。

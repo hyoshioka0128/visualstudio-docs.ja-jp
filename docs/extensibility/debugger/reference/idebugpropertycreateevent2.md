@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8fcb4375f29820b51752ac3fdebbd04f06f80
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08ef46275d9c7365cfcc837b8e4dfc73f0b48b41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876057"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 このインターフェイスは、特定のドキュメントに関連付けられているプロパティを作成するときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,14 +37,14 @@ IDebugPropertyCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表は、インターフェイスのメソッドを示して `IDebugPropertyCreateEvent2` います。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|新しいプロパティを取得します。|
 
-## <a name="remarks"></a>注釈
- プロパティに特定のドキュメントまたはスクリプトが関連付けられている場合、DE はこのイベントを SDM に送信して、 **スクリプトドキュメント** ウィンドウをドキュメントの名前で更新することができます。 SDM は、引数を指定して [Getextendedinfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) を呼び出し、 `guidDocument` `VARIANT` [IUnknown](/cpp/atl/iunknown) ポインターを含むを取得します。 SDM は、このポインターの[QueryInterface](/cpp/atl/queryinterface)を呼び出して、[**スクリプトドキュメント**] ウィンドウの更新に使用される[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイスを取得します。
+## <a name="remarks"></a>解説
+ プロパティに特定のドキュメントまたはスクリプトが関連付けられている場合、DE はこのイベントを SDM に送信して、 **スクリプトドキュメント** ウィンドウをドキュメントの名前で更新することができます。 SDM は、引数を指定して [Getextendedinfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) を呼び出し、 `guidDocument` `VARIANT` [IUnknown](/cpp/atl/iunknown) ポインターを含むを取得します。 SDM は、このポインターの [QueryInterface](/cpp/atl/queryinterface)を呼び出して、[**スクリプトドキュメント**] ウィンドウの更新に使用される [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイスを取得します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -52,7 +52,7 @@ IDebugPropertyCreateEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

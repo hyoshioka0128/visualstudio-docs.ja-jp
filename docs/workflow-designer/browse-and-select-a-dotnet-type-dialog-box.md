@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875303"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>[.NET 型の参照と選択] ダイアログ ボックス
 
@@ -41,7 +41,7 @@ ms.locfileid: "96995487"
 
 1. [ **型名** ] ボックスに、使用する型の名前を入力します。
 
-2. 次のいずれかの操作を行います。
+2. 以下のいずれかを実行します。
 
     - 使用する型の名前が [ **型名** ] ボックスのツリーに表示されたら、その型をダブルクリックして選択します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "96995487"
 
 [ **型名** ] ボックスの型の一覧は、一致を検索するためにさらに文字を入力すると短くなります。 入力した文字列で始まる fullyqualified 名を持つ型、または入力した文字列で短い名前を持つ型のみが、フィルター処理されたリストに表示されます。
 
-例:
+次に例を示します。
 
 1. 入力 **操作** はと一致 <xref:System.OperationCanceledException> しますが、は一致しません <xref:System.InvalidOperationException> 。 <xref:System.InvalidOperationException> と一致するためには、「System.I」または「Invalid」と入力します。
 
@@ -75,6 +75,6 @@ ms.locfileid: "96995487"
 
 サービス コントラクト型を選択すると、型ブラウザーは <xref:System.ServiceModel.ServiceContractAttribute> 属性を持つ型だけを表示します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [アクティビティ デザイナーの使用](control-flow-activity-designers.md)

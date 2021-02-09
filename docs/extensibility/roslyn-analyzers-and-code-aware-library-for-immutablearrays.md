@@ -8,21 +8,21 @@ ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04b65ae8c81f381ee996da5f20ec15588b9180de
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715770"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875524"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays 用の roslyn アナライザーとコード対応ライブラリ
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") を使用すると、コード対応のライブラリをビルドできます。 コード対応ライブラリは、ツール (Roslyn アナライザー) を使用して、最適な方法でライブラリを使用したり、エラーを回避したりするための機能を提供します。 このトピックでは、 [システムコレクション](https://www.nuget.org/packages/System.Collections.Immutable) の NuGet パッケージを使用するときに、一般的なエラーをキャッチするために、実際の Roslyn アナライザーを構築する方法について説明します。 また、この例では、アナライザーによって検出されたコードの問題に対してコード修正を行う方法も示しています。 ユーザーは、Visual Studio 電球 UI にコード修正プログラムを表示し、コードの修正を自動的に適用できます。
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業の開始
 
 この例をビルドするには、次のものが必要です。
 

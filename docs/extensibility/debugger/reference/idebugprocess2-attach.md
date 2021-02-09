@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724192"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874179"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 セッションデバッグマネージャー (SDM) をプロセスにアタッチします。
@@ -28,20 +28,20 @@ ms.locfileid: "80724192"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT Attach( 
-   IDebugEventCallback2* pCallback,
-   GUID*                 rgguidSpecificEngines,
-   DWORD                 celtSpecificEngines,
-   HRESULT*              rghrEngineAttach
+HRESULT Attach( 
+   IDebugEventCallback2* pCallback,
+   GUID*                 rgguidSpecificEngines,
+   DWORD                 celtSpecificEngines,
+   HRESULT*              rghrEngineAttach
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugEventCallback2 pCallback,
-   Guid[]               rgguidSpecificEngines,
-   uint                 celtSpecificEngines,
-   int[]                rghrEngineAttach
+int Attach( 
+   IDebugEventCallback2 pCallback,
+   Guid[]               rgguidSpecificEngines,
+   uint                 celtSpecificEngines,
+   int[]                rghrEngineAttach
 );
 ```
 
@@ -67,7 +67,7 @@ int Attach( 
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Attach プロシージャの実行中にセキュリティ違反が発生しました。|
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|デスクトッププロセスをデバッガーにアタッチすることはできません。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  プロセスにアタッチすると、そのプロセスで実行されているすべてのプログラムに SDM がアタッチされます。このプロセスは、配列で指定されたデバッグエンジン (DE) によってデバッグでき `rgguidSpecificEngines` ます。 パラメーターを `rgguidSpecificEngines` null 値に設定するか、または `GUID_NULL` プロセス内のすべてのプログラムにアタッチする配列に含めます。
 
  プロセスで発生するすべてのデバッグイベントは、指定された [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) オブジェクトに送信されます。 この `IDebugEventCallback2` オブジェクトは、SDM がこのメソッドを呼び出したときに提供されます。
