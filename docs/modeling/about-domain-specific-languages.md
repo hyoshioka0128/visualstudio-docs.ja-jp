@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 144e8f965a456c4763a74daa2cedeb8c571e518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908967"
 ---
 # <a name="about-domain-specific-languages"></a>ドメイン固有言語について
 
@@ -64,7 +64,7 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
 グラフィカルドメイン固有言語には、次の機能が含まれている必要があります。
 
-- 表記
+- Notation
 
 - ドメイン モデル
 
@@ -74,7 +74,7 @@ DSL を定義したら、それを自分のコンピューターにインスト�
 
 - Visual Studio との統合
 
-### <a name="notation"></a>表記
+### <a name="notation"></a>Notation
 
 ドメイン固有言語には、ドメイン固有の構造を表すために簡単に定義および拡張できる要素の小さなセットが必要です。 表記は、要素を表す図形と、要素間の関係を表すコネクタ (グラフィカルな図サーフェイス) で構成されます。 では、 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ドメイン固有言語の要素を表すように図形を拡張および調整できます。
 
