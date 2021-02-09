@@ -8,22 +8,22 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e0c96c93e3583a7d2877a5f4f7bd70561b650b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861856"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>ドメイン固有言語ソリューション テンプレートの選択
 ドメイン固有言語ソリューションを作成するには、Domain-Specific 言語デザイナーウィザードで使用できるソリューションテンプレートのいずれかを選択します。 作成する言語に最も近いテンプレートを選択することにより、開始ソリューションに加える必要がある変更を最小限に抑えることができます。
 
  次のソリューションテンプレートは、Domain-Specific 言語デザイナーウィザードで使用できます。
 
-|テンプレート|特徴|説明|
+|Template|特徴|説明|
 |-|-|-|
 |クラス ダイアグラム|-コンパートメントシェイプ<br />-クラスの継承<br />-リレーションシップの継承<br />-シェイプの継承<br />-リレーションシップのプロパティ|ドメイン固有言語にプロパティを持つエンティティおよびリレーションシップが含まれている場合は、このソリューションテンプレートを使用します。 このテンプレートは、UML クラス図に似たドメイン固有言語を作成します。 メインエンティティは、関連付け、汎化、および実装関係と共に、クラスおよびインターフェイスです。 クラスまたはインターフェイスは、属性の一覧を含むボックスとして表示されます。|
 |コンポーネント図|-ポート|ドメイン固有言語にコンポーネント (つまり、ソフトウェアシステムの一部) が含まれる場合は、このソリューションテンプレートを使用します。 このテンプレートは、UML コンポーネント図に似たドメイン固有言語を作成します。 メインエンティティはコンポーネントとポートで、コンポーネントの外部に小さい図形として表示されます。|

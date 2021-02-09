@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585ff354cef9686097325ea4dea25cd08c4cbb1b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83243899bdc11c58e76c35b6d9eb7b9555794374
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838657"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IDebugIDECallback : IUnknown
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|指定したメッセージ文字列をデバッガーの出力ウィンドウに送信します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

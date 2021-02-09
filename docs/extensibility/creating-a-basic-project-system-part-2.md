@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853153"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>基本的なプロジェクトシステムを作成する (第2部)
 このシリーズの最初のチュートリアルである「 [基本的なプロジェクトシステムを作成する (第1部](../extensibility/creating-a-basic-project-system-part-1.md))」では、基本的なプロジェクトシステムを作成する方法を示します。 このチュートリアルは、Visual Studio テンプレート、プロパティページ、およびその他の機能を追加することによって、基本的なプロジェクトシステム上に構築されています。 このチュートリアルを開始する前に、最初のチュートリアルを完了する必要があります。
@@ -48,7 +48,7 @@ ms.locfileid: "94974607"
 
 1. で、「 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [基本的なプロジェクトシステムの作成 (パート 1)](../extensibility/creating-a-basic-project-system-part-1.md)」に従って作成した simpleproject ソリューションを開きます。
 
-2. SimpleProjectPackage.cs ファイルで、[ *SimpleProjectPackage.cs* ] 属性を見つけます。 2番目のパラメーター (プロジェクト名) を null に、4番目のパラメーター (プロジェクトのテンプレートフォルダーへのパス) を "で置き換えます。 \\次のように \N ullpath。
+2. SimpleProjectPackage.cs ファイルで、[  ] 属性を見つけます。 2番目のパラメーター (プロジェクト名) を null に、4番目のパラメーター (プロジェクトのテンプレートフォルダーへのパス) を "で置き換えます。 \\次のように \N ullpath。
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,

@@ -6,15 +6,15 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b33e9400926dd7d1f7a2dc5a66a33ec2fb244b1b
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 9c2aa1e49c0465fcf75917f0d9bd134962794c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861752"
 ---
 # <a name="code-maps-for-c-projects"></a>C++ プロジェクト用のコードマップ
 
@@ -22,7 +22,7 @@ C++ プロジェクトのより完全なマップを作成する場合は、そ�
 
 Visual C++ のプロジェクトを含むソリューションを開くときは、IntelliSense データベースの更新に時間がかかる場合があります。 この間、IntelliSense データベースの更新が終了するまで、ヘッダー (*.h* または) ファイルのコードマップを作成できない場合があり `#include` ます。 更新の進行状況は、Visual Studio のステータス バーで監視できます。
 
-- ソリューション内のすべてのソースファイルとヘッダーファイルの間の依存関係を表示するには **、[**  >  **インクルードファイルのグラフを生成**する] を選択します。
+- ソリューション内のすべてのソースファイルとヘッダーファイルの間の依存関係を表示するには **、[**  >  **インクルードファイルのグラフを生成** する] を選択します。
 
    ![ネイティブ コードの依存関係グラフ](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -40,7 +40,7 @@ Visual C++ のプロジェクトを含むソリューションを開くときは
 
 これらの問題は、C および C++ コードのコードマップを作成するときに発生する可能性があります。
 
-|**問題点**|**考えられる原因**|**解決方法**|
+|**問題点**|**考えられる原因**|**解像度**|
 |-|-|-|
 |コード マップを生成できませんでした。|ソリューション内のプロジェクトが正常にビルドされませんでした。|発生したビルド エラーを修正してから、マップを再生成します。|
 |[ **アーキテクチャ** ] メニューからコードマップを生成しようとすると、Visual Studio が応答しなくなります。|プログラム データベース (.pdb) ファイルが壊れている可能性があります。<br /><br /> .pdb ファイルには、型、メソッド、ソース ファイル情報などのデバッグ情報が格納されます。|ソリューションをリビルドしてから、もう一度実行します。|

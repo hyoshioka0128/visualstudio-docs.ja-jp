@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e975c3f721d65b64fc7994824406b0c9af13022
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862097"
 ---
 # <a name="extern-element"></a>Extern 要素
 Extern 要素は、コンパイル時に、 *vsct* ファイルとマージする外部ヘッダー (*.h*) ファイルを参照します。 マージするファイルは、VSCT コンパイラに指定されたインクルードパスに存在するか、 [include 要素](../extensibility/include-element.md)によって参照されている必要があります。 ファイルは、他の *vsct* ファイルまたは C++ ヘッダーファイルにすることができます。
@@ -43,8 +43,8 @@ Extern 要素は、コンパイル時に、 *vsct* ファイルとマージす�
 |属性|説明|
 |---------------|-----------------|
 |href|必須。 ヘッダーファイルのパス:<br /><br /> href = "stdidcmd"|
-|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
-|language|省略可能。 コマンドテーブル内のすべての要素の既定の言語 [\<Strings>](../extensibility/strings-element.md) :<br /><br /> language = "en-us"|
+|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|language|任意。 コマンドテーブル内のすべての要素の既定の言語 [\<Strings>](../extensibility/strings-element.md) :<br /><br /> language = "en-us"|
 
 ### <a name="child-elements"></a>子要素
 
