@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: faf6b2dd-2afd-4852-b21c-7e8d3130e141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d938b2081081f0fd3821ebea2e12d39a9ef6a185
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 873fd4236b627d93bce4029ef36861a720c19828
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930435"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
 元の式を取得します。
@@ -30,13 +30,13 @@ ms.locfileid: "90038531"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetExpression( 
+HRESULT GetExpression( 
    IDebugExpression2** ppExpr
 );
 ```
 
 ```csharp
-int GetExpression( 
+int GetExpression( 
    out IDebugExpression2 ppExpr
 );
 ```
@@ -48,10 +48,10 @@ int GetExpression( 
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドは、 [Parsetext](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) メソッドの呼び出しで作成されたオブジェクトを返します。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

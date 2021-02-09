@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aafb28715f58eaba4499b47a2e1dee15b82ed14
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63803b84e3d00bddef2238a627300522a4e7c294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726890"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929785"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 シンボルを検索するパスの一覧と、各パスを検索した結果を取得します。
@@ -86,7 +86,7 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 
 **c:\symbols\user32.pdb...ファイルが見つかりません。** 
 **c:\winnt\symbols\user32.pdb...バージョンが一致しません。** 
-** \\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb...シンボルが読み込まれ**ました。
+**\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb...シンボルが読み込まれ** ました。
 
 ## <a name="see-also"></a>関連項目
 

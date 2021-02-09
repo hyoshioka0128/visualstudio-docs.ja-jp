@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e57e361b59e76e187617b5e528b219e8e47897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74e31339b48e49869ce76ce9a3b20a14dcb0acf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930461"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 このインターフェイスは、非同期式の評価が完了したときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -47,7 +47,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 
  評価が成功しなかった場合、 `DEBUG_PROPINFO_VALUE` `DEBUG_PROPINFO_ATTRIB` [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)によって返される[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造では、フラグとフラグは設定されません ( [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトは DE によって作成され、評価が失敗した場合はイベントに返され `IDebugExpressionEvaluationCompleteEvent2` ます)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

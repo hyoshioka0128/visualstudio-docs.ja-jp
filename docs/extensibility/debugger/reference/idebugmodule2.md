@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbbea1b52133de41dd26f437aeba31a0eff5a50a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a43c7e7ed24da7d73784e20e9e998bdfe69cbd65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929749"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 このインターフェイスは、モジュール (つまり、DLL などのプログラムの実行可能単位) を表します。
@@ -49,7 +49,7 @@ IDebugModule2 : IUnknown
 ## <a name="remarks"></a>解説
  モジュール情報は、IDE の [ **モジュール** ] ウィンドウに表示できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -57,7 +57,7 @@ IDebugModule2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
 - [GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 304269ba2a4f556cfe931157c445d7b4fc86f489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929941"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
  このインターフェイスのメソッドは、次の方法で **IDebugFunctionObject** のメソッドを遅延させます。
 
-- **IDebugEvaluate**メソッドはフラグを受け取ります。
+- **IDebugEvaluate** メソッドはフラグを受け取ります。
 
-- **CreateObject**メソッドは、フラグとタイムアウトを受け取ります。
+- **CreateObject** メソッドは、フラグとタイムアウトを受け取ります。
 
-- **Createstringobjectwithlength**メソッドは長さを取ります。
+- **Createstringobjectwithlength** メソッドは長さを取ります。
 
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
@@ -50,7 +50,7 @@ IDebugFunctionObject2 : IUnknown
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|指定された長さの文字列オブジェクトを作成します。|
 |[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|関数を呼び出し、結果の値をオブジェクトとして返します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Ee
 
  名前空間: VisualStudio。
