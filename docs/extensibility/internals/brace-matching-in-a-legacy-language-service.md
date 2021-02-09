@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905925"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>従来の言語サービスでの中かっこの照合
 かっこの照合により、開発者は、かっこや中かっこなど、一緒に出現する必要がある言語要素を追跡できます。 開発者が右中かっこを入力すると、左中かっこが強調表示されます。
@@ -42,7 +42,7 @@ ms.locfileid: "96190006"
 ## <a name="enable-support-for-brace-matching"></a>中かっこの照合のサポートを有効にする
  属性では、 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> クラスの対応するプロパティを設定する **matchbraces**、 **MatchBracesAtCaret**、および **ShowMatchingBrace** レジストリエントリを設定でき <xref:Microsoft.VisualStudio.Package.LanguagePreferences> ます。 言語設定のプロパティは、ユーザーが設定することもできます。
 
-|レジストリ エントリ|プロパティ|説明|
+|レジストリ エントリ|プロパティ|Description|
 |--------------------|--------------|-----------------|
 |MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|中かっこの照合を有効にします。|
 |MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|キャレットの移動に合わせて中かっこの照合を有効にします。|

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Bookmark control
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 53f68bfd9abd26d9dfcb9e253c412a1ddf3c0e28
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1da30943eff228aad3c5413c5d8faea337634e9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905265"
 ---
 # <a name="bookmark-control"></a>Bookmark コントロール
   <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、一意の名前を持ち、イベントを公開し、データにバインドできるブックマークです。 ブックマークは、Microsoft Office Word 文書内の項目または位置をマークするためのプレースホルダーとして使用できます。 <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールは、 <xref:Microsoft.Office.Interop.Word.Bookmark> オブジェクトと <xref:Microsoft.Office.Interop.Word.Range> オブジェクトを組み合わせたものです。
@@ -48,7 +48,7 @@ ms.locfileid: "96848366"
 
  <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> コントロールには <xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType> プロパティもあります。 このプロパティは、 <xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType> <xref:Microsoft.Office.Tools.Word.Bookmark.Range?displayProperty=nameWithType> コントロールのプロパティ <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> または <xref:Microsoft.Office.Interop.Word.Bookmark.Range?displayProperty=nameWithType> オブジェクトのプロパティで使用できるプロパティとは異なり <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> ます。
 
-|Text プロパティ|説明|
+|Text プロパティ|Description|
 |-------------------|-----------------|
 |<xref:Microsoft.Office.Tools.Word.Bookmark.Text?displayProperty=nameWithType>|このプロパティは、ブックマーク内にテキストを表示し、そのブックマークを文書上に維持する場合に使用します。 ブックマークにテキストを割り当てると、ブックマークの範囲が拡張され、そのブックマークは削除されません。<br /><br /> たとえば、 `Bookmark1.Text = "Hello world"` の場合、テキストがブックマークに挿入され、ブックマークが失われることはありません。|
 |<xref:Microsoft.Office.Interop.Word.Range.Text?displayProperty=nameWithType>|このプロパティは、ブックマークの位置にテキストを表示し、そのブックマークを自動的に削除する場合に使用します。 たとえば、 `Bookmark1.Range.Text = "Hello world"` の場合、テキストがブックマークに挿入され、そのブックマークは削除されます。|
@@ -61,7 +61,7 @@ ms.locfileid: "96848366"
 
  次の表では、「This is sample text.」という文が 次の2つの重複するブックマークによって共有されています:
 
-|ブックマーク|テキスト|
+|ブックマーク|Text|
 |--------------|----------|
 |重複するブックマーク|[this is {sample] text.}|
 |Bookmark1|This is sample|
@@ -69,7 +69,7 @@ ms.locfileid: "96848366"
 
  Bookmark1 に新しいテキスト「This is replacement.」を割り当てると Bookmark1 の場合、ブックマークは重複せず、Bookmark2 はもともと Bookmark1 の一部ではないテキストのみを保持します。
 
-|ブックマーク|テキスト|
+|ブックマーク|Text|
 |--------------|----------|
 |2 つの別個のブックマーク|[this is replacement]{ text.}|
 |Bookmark1|This is replacement|
@@ -79,7 +79,7 @@ ms.locfileid: "96848366"
 
 次の表では、「This is sample text.」という文が は、別のブックマーク内に含まれるブックマークによって共有されます。
 
-|ブックマーク|テキスト|
+|ブックマーク|Text|
 |--------------|----------|
 |重複するブックマーク|[this is {sample} text.]|
 |Bookmark1|This is sample text.|
@@ -87,7 +87,7 @@ ms.locfileid: "96848366"
 
  Bookmark1 に新しいテキスト「This is replacement.」を割り当てると 、これらの 2 つのブックマークは重複しなくなり、Bookmark2 は Bookmark1 の末尾にある空のブックマークになります。
 
-|ブックマーク|テキスト|
+|ブックマーク|Text|
 |--------------|----------|
 |2 つの別個のブックマーク|[これは代替です。]{}|
 |Bookmark1|This is replacement.|

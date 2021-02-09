@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c40361a9739bf468de2038df4325fa1ac98337c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1d52989d5687e922e0cb0ab306efc5321ffecef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736783"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904759"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 スタックフレームについて説明します。
@@ -106,7 +106,7 @@ public struct FRAMEINFO {
 ## <a name="remarks"></a>解説
 この構造体は、入力する [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) メソッドに渡されます。 この構造体は、 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) インターフェイスに含まれるリストにも含まれています。この一覧は、 [enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) メソッドの呼び出しから返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
