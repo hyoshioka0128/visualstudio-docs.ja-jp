@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59afdda5a9af3a779b65063c3c764ef4f284a265
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974511"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887433"
 ---
 # <a name="commands-element"></a>Commands 要素
 VSPackage ツールバーのコマンドのコレクションを表します。 コレクションには、メニュー、グループ、ボタン、combos、ビットマップなど、次の5つのサブセクションを含めることができます。
@@ -46,7 +46,7 @@ VSPackage ツールバーのコマンドのコレクションを表します。 
 
 |属性|説明|
 |---------------|-----------------|
-|package|コマンドを提供する VSPackage を識別する GUID。<br /><br /> たとえば、package = "guidVsPackage1Pkg" のようになります。|
+|パッケージ|コマンドを提供する VSPackage を識別する GUID。<br /><br /> たとえば、package = "guidVsPackage1Pkg" のようになります。|
 
 ### <a name="child-elements"></a>子要素
 

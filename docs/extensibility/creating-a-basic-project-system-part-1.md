@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887368"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>基本プロジェクトシステムを作成する (第1部)
 Visual Studio では、プロジェクトは、ソースコードファイルやその他のアセットを整理するために開発者が使用するコンテナーです。 プロジェクトは、 **ソリューションエクスプローラー** のソリューションの子として表示されます。 プロジェクトを使用すると、ソースコードを整理、ビルド、デバッグ、および配置したり、Web サービス、データベース、その他のリソースへの参照を作成したりすることができます。
@@ -638,4 +638,4 @@ Templates
 
     ![単純なプロジェクト コマンド](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   おめでとうございます。 基本的なマネージプロジェクトシステムを実装しました。
+   お疲れさまでした。 基本的なマネージプロジェクトシステムを実装しました。

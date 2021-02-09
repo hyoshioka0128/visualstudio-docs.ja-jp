@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd32e31330cdce958e463a40a4d92f88b09afb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886614"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 関数
 この関数を使用すると、ユーザーは既にソース管理システムにあるファイルを参照し、そのファイルを現在のプロジェクトの一部にすることができます。 たとえば、この関数では、ファイルをコピーせずに、現在のプロジェクトに共通のヘッダーファイルを取得できます。 ファイルの戻り値の配列には、 `lplpFileNames` ユーザーが IDE プロジェクトに追加するファイルの一覧が含まれています。
@@ -59,7 +59,7 @@ SCCRTN SccAddFromScc (
 |SCC_I_OPERATIONCANCELED|操作はキャンセルされましたが、無効です。|
 |SCC_I_RELOADFILE|ファイルまたはプロジェクトを再度読み込む必要があります。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  IDE はこの関数を呼び出します。 ソース管理プラグインがローカルの出力先フォルダーの指定をサポートしている場合、IDE は `lpnFiles` = 1 を渡し、ローカルフォルダー名をに渡し `lplpFileNames` ます。
 
  関数の呼び出しによってが返された場合 `SccAddFromScc` 、プラグインはとに値を割り当て `lpnFiles` `lplpFileNames` 、必要に応じてファイル名配列のメモリを割り当てます (この割り当てはのポインターに置き換わることに注意して `lplpFileNames` ください)。 ソース管理プラグインは、すべてのファイルをユーザーのディレクトリまたは指定されたフォルダーに配置する役割を担います。 IDE は、IDE プロジェクトにファイルを追加します。
@@ -71,6 +71,6 @@ SCCRTN SccAddFromScc (
 > [!NOTE]
 > VSSCI API の初期バージョンでは、追加されたファイルのターゲットプロジェクトを示す方法が提供されていませんでした。 これに対応するために、パラメーターのセマンティクス `lplpFIleNames` が拡張され、出力パラメーターではなく in/out パラメーターになるようになりました。 1つのファイルのみが指定されている場合 (つまり、が = 1 である値)、 `lpnFiles` の最初の要素には `lplpFileNames` ターゲットフォルダーが含まれます。 これらの新しいセマンティクスを使用するために、IDE は `SccSetOption` `nOption` パラメーターをに設定して関数を呼び出し `SCC_OPT_SHARESUBPROJ` ます。 ソース管理プラグインがセマンティクスをサポートしていない場合は、を返し `SCC_E_OPTNOTSUPPORTED` ます。 これにより、 **ソース管理からの追加** 機能の使用が無効になります。 プラグインが **ソース管理からの追加** 機能 () をサポートしている場合は、 `SCC_CAP_ADDFROMSCC` 新しいセマンティクスをサポートし、を返す必要があり `SCC_I_SHARESUBPROJOK` ます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

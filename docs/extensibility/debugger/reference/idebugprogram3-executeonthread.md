@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df69c02fb7e78dbb107db906de59d8b7e5881b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887069"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 デバッガープログラムを実行します。 スレッドは、プログラムの実行時にユーザーが表示しているスレッドについてデバッガー情報を提供するために返されます。
@@ -43,7 +43,7 @@ int ExecuteOnThread(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  デバッガーが停止した後に実行を再開するには、次の3つの方法があります。
 
 - Execute: 前の手順をキャンセルし、次のブレークポイントまで実行します。

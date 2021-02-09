@@ -14,22 +14,22 @@ helpviewer_keywords:
 - Office development in Visual Studio, deployment manifests
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 31909d2a6765c357635cd0a8c039132f14b5967d
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887602"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Office ソリューションの配置マニフェスト
   配置マニフェストは、Office ソリューションの配置設定を記述する XML ファイルであり、現在のアプリケーションのバージョンを識別します。
 
  Visual Studio での Office 開発では、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 配置マニフェスト](../deployment/clickonce-deployment-manifest.md) リファレンスで定義されている配置マニフェストスキーマを使用します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  Office ソリューションの配置マニフェストファイルは、現在のバージョンとその他の配置設定を識別します。 アプリケーションマニフェストを参照し、ソリューションの現在のバージョンとソリューション内のすべてのファイルについて説明します。
 
 ## <a name="file-name-syntax"></a>ファイル名の構文

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43d1e1dca1860faa44d6bb5bc256bb8f0465e8b2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887095"
 ---
 # <a name="expose-types-to-visual-designers"></a>ビジュアルデザイナーに型を公開する
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビジュアルデザイナーを表示するには、デザイン時にクラスと型の定義にアクセスできる必要があります。 クラスは、現在のプロジェクト (参照とその依存関係) の完全な依存関係セットを含む、定義済みのアセンブリセットから読み込まれます。 また、カスタムツールによって生成されるファイルで定義されているクラスや型にビジュアルデザイナーがアクセスする場合にも必要になることがあります。

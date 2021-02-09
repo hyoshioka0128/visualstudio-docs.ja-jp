@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7d31816e-c692-46b5-9cc9-753284b3bcda
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576912fb428e15a6f8164e52d558e255e184fe3
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b168b3bcb90ae758609698de306928eb7e13d909
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888486"
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting &gt; 要素 (ClickOnce 配置)
 エラー発生時に表示する URI を指定します。
@@ -34,7 +34,7 @@ ms.locfileid: "94382521"
 />
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  この要素は省略可能です。 このプロパティを指定しないと、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 例外スタックを示すエラーダイアログボックスが表示されます。 `customErrorReporting`要素が存在する場合、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] はパラメーターで示された URI を代わりに表示し `uri` ます。 ターゲット URI には、外部例外クラス、内部例外クラス、および内部例外メッセージがパラメーターとして含まれます。
 
  この要素を使用して、エラー報告機能をアプリケーションに追加します。 生成された URI にはエラーの種類に関する情報が含まれているため、Web サイトはその情報を解析して、適切なトラブルシューティング画面などの表示を行うことができます。

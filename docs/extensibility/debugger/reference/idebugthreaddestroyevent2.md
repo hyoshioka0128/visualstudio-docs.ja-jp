@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc250f485e5507a9b50bc5a8e1c5b4c3bea37ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718474"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888187"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 このインターフェイスは、スレッドの実行が完了すると、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,14 +37,14 @@ IDebugThreadDestroyEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugThreadDestroyEvent2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|スレッドの終了コードを取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  Visual Studio では、このイベントを使用して [ **スレッド** ] ウィンドウを更新します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -52,7 +52,7 @@ IDebugThreadDestroyEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

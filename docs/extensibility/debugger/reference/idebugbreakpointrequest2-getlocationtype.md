@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 06bb64190d6821b05ebd638c753bd2b6d3decf71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 076a5e70f94594f7b526c0893be51eb2cfa08cdf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887316"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 このブレークポイント要求のブレークポイントの位置の種類を取得します。
@@ -47,7 +47,7 @@ int GetLocationType(
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_FAIL` `bpLocation` 関連付けられている[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)構造内のフィールドが有効でない場合は、を返します。
 
 ## <a name="example"></a>例
-次の例は、IDebugBreakpointRequest2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointRequest` います。[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
+次の例は、IDebugBreakpointRequest2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugBreakpointRequest` います。[](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)
