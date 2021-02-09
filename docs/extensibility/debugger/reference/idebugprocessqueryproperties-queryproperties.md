@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4daac369485febe38e3366d413985bda90b30f05
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900166"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 このメソッドは、デバッグプロセスの指定されたプロパティ値を照会します。
@@ -44,7 +44,7 @@ int QueryProperties(
 からプロパティ定義とプロパティ値を含む配列のサイズ。
 
 `dwPropType`\
-からクエリ対象のプロパティの定義を格納している配列。 指定できる値は、
+からクエリ対象のプロパティの定義を格納している配列。 次の値を指定できます。
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -58,7 +58,7 @@ int QueryProperties(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドはほとんど使用されません。
 
 ## <a name="see-also"></a>関連項目

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900218"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 ブレークポイントがバインド解除された理由を取得します。
@@ -50,7 +50,7 @@ int GetReason(
 理由として、エディットコンティニュ操作の後にブレークポイントが別の場所に再バインドされているか、ブレークポイントがバインドされたことを示すエラーがあります。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)インターフェイスを公開する**Cbreakpointunbounddebugeventbase**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)インターフェイスを公開する **Cbreakpointunbounddebugeventbase** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

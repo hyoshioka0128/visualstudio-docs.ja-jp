@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a2f2b951881208d3995aeb1f5f1f655b80674f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 09337ee164c8b740e9aa8a044c4a9df385f01016
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900565"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする
 すべてのアプリケーションでは、実行する前に、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 正しいバージョンの .NET Framework がコンピューターにインストールされている必要があります。多くのアプリケーションには、その他の前提条件もあります。 アプリケーションを発行するときに [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 、アプリケーションと共にパッケージ化する前提条件コンポーネントのセットを選択できます。 インストール時に、前提条件ごとにチェックが行われ、既に存在するかどうかが確認されます。インストールされていない場合は、アプリケーションをインストールする前にインストールされ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。
@@ -33,14 +33,14 @@ ms.locfileid: "94349933"
 > [!IMPORTANT]
 > 最初のアプリケーションを発行する前に、開発用コンピューターに前提条件インストーラーパッケージを追加する必要があり [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 詳細については、「 [方法: ClickOnce アプリケーションに必須コンポーネントを含める](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md)」を参照してください。
 
- 必須コンポーネントは、 **プロジェクトデザイナー** の [ **発行** ] ペインからアクセスできる [ **必須コンポーネント** ] ダイアログボックスで管理されます。
+ 必須コンポーネントは、**プロジェクトデザイナー** の [**発行**] ペインからアクセスできる [**必須コンポーネント**] ダイアログボックスで管理されます。
 
 > [!NOTE]
 > 事前に定義された前提条件の一覧に加えて、独自のコンポーネントを一覧に追加することができます。 詳細については、「 [ブートストラップパッケージの作成](../deployment/creating-bootstrapper-packages.md)」を参照してください。
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>ClickOnce アプリケーションと共にインストールするための前提条件を指定するには
 
-1. **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ **プロパティ** ] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
 
 2. [ **発行** ] ペインを選択します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "94349933"
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>前提条件として別のダウンロード場所を指定するには
 
-1. **ソリューションエクスプローラー** でプロジェクトを選択し、[ **プロジェクト** ] メニューの [ **プロパティ** ] をクリックします。
+1. **ソリューションエクスプローラー** でプロジェクトを選択し、[**プロジェクト**] メニューの [**プロパティ**] をクリックします。
 
 2. [ **発行** ] ペインを選択します。
 

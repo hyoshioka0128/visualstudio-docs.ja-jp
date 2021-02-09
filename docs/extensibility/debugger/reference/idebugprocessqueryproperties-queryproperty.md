@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b190d7ed1d3690be898334270bbd1d16584b81a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 78a5f578d2fdd8e388ba832c3025cb9518658ddb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900151"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 このメソッドは、デバッグプロセスの指定されたプロパティ値を照会します。
@@ -53,7 +53,7 @@ int QueryProperty(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドはほとんど使用されません。
 
 ## <a name="see-also"></a>関連項目

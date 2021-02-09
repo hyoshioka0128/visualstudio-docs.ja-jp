@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900039"
 ---
 # <a name="vspackage-registration"></a>VSPackage の登録
 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、インストールされていることを通知し、読み込む必要があります。 このプロセスは、レジストリに情報を書き込むことによって行われます。 これは、一般的なインストーラーのジョブです。
@@ -57,6 +57,6 @@ Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、イ
 
 - コンポーネントがソースとして指定されており、SelfReg テーブルに一覧表示されている場合、自己登録コードはタイプライブラリなどのネットワークリソースへのアクセスを拒否できます。 このため、管理インストール中にコンポーネントのインストールが失敗する可能性があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Windows インストーラー](/windows/desktop/Msi/windows-installer-portal)
 - [マネージドパッケージの登録](/previous-versions/bb166783(v=vs.100))

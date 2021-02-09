@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 895a695f1de56c3041ad1723f1b6b30356c839df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900915"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;application &gt; 要素 (Visual Studio での Office 開発)
   `application` 名前空間の `vstav3` 要素は、Office ソリューションの説明をラップします。 ドキュメント レベルのカスタマイズと VSTO アドインでは、子要素が異なります。
@@ -67,7 +67,7 @@ ms.locfileid: "96847040"
 
 ## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は `application` を使用して配置されるドキュメント レベルの Office ソリューションの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、「 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)」に記載されている例の一部を抜粋したものです。
 
 ### <a name="code"></a>コード
@@ -86,7 +86,7 @@ ms.locfileid: "96847040"
 
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は `application` を使用して配置されるアプリケーション レベルの Office ソリューションの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、「 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)」に記載されている例の一部を抜粋したものです。
 
 ### <a name="code"></a>コード

@@ -7,13 +7,13 @@ ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 1dbde9c270e0b83a5d85ef3b95c8fb438e43e1b1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+manager: jmartens
+ms.openlocfilehash: d42a7509ceef03d2e74f470d7d4ab0efb5913e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900844"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>XAML デザイナーでレイアウト コンテナーにオブジェクトを編成する
 
@@ -81,7 +81,7 @@ ms.locfileid: "96995526"
 
 次のレイアウト コントロールは最もよく利用されますが、他にもレイアウト コントロールがあります。 Visual Studio の **ツールボックス** または Blend for Visual Studio の **[資産]** パネルでこれらすべてを見つけることができます。
 
-### <a name="border"></a>罫線
+### <a name="border"></a>境界線
 
 罫線、背景、またはその両方をオブジェクトの周りに作成します。 **境界線** に対して追加できるオブジェクトは 1 つのみです。 複数のオブジェクトに境界線や背景を適用する場合は、レイアウト パネルを **境界線** に追加します。 次に、オブジェクトをそのパネルまたはコントロールに追加します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "96995526"
 
 ![ViewBox レイアウト コントロール](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [XAML デザイナーで要素を操作する](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [XAML デザイナーを使用して UI を作成する](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
