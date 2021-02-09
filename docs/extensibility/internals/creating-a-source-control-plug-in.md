@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: c7e69fa4-150e-469a-a6fc-fa1260bdbb07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ae887e8752e1603af173ed569d19a6602ac84f0
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 489aea2ba5b12dafa161ce70a49f81f60b38ba5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305362"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878761"
 ---
 # <a name="create-a-source-control-plug-in"></a>ソース管理プラグインを作成する
 Visual Studio SDK には、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) にソース管理機能を追加できるリソースが用意されています。 このドキュメントに記載されているソース管理プラグイン API に準拠している任意のプラグイン DLL を使用できます。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [開始するには](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+- [作業開始](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 
  ソース管理プラグインをインストールする方法について説明し、現在使用可能なソース管理プラグイン API バージョンについて説明します。
 

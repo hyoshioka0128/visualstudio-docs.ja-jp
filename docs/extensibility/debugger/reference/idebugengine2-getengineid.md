@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4071e8279c2c4ab615ff625c1bbedebfd8e64ad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ec0c294c0d1a1e19942ac86847cad1226041b24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878969"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
 デバッグエンジン (DE) の GUID を取得します。
@@ -50,7 +50,7 @@ int GetEngineID(
 一般的な Guid の例として `guidScriptEng` 、、、などがあり `guidNativeEng` `guidSQLEng` ます。 新しいデバッグエンジンでは、識別用に独自の GUID が作成されます。
 
 ## <a name="example"></a>例
-次の例は、IDebugEngine2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CEngine` います。 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+次の例は、IDebugEngine2 インターフェイスを実装する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CEngine` います。 [](../../../extensibility/debugger/reference/idebugengine2.md)
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {

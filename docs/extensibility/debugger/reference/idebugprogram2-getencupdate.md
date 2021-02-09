@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e90ff9f8a7a80913aec72b9fe2bb6fe470013d51
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b7e3dbb0fdc7ea7ca7560f62bc7da45e57b24383
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722842"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878904"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 このメソッドは、このプログラムのエディットコンティニュ (ENC) 更新プログラムを取得します。 カスタムデバッグエンジンは常にを返し `E_NOTIMPL` ます。
@@ -28,7 +28,7 @@ ms.locfileid: "80722842"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetENCUpdate( 
+HRESULT GetENCUpdate( 
    IUnknown** ppUpdate
 );
 ```

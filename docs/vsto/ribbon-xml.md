@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879294"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   リボン (XML) 項目を使用すると、XML を使用してリボンをカスタマイズできます。 リボン (ビジュアルデザイナー) 項目でサポートされていない方法でリボンをカスタマイズする場合は、リボン (XML) 項目を使用します。 各項目で実行できる操作の比較については、「 [リボンの概要](../vsto/Ribbon-overview.md)」を参照してください。
@@ -139,7 +139,7 @@ ms.locfileid: "97528412"
 
  次の表はこのクラスの既定のメソッドについて説明しています。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |`GetCustomUI`|リボン XML ファイルの内容を返します。 Microsoft Office アプリケーションはこのメソッドを呼び出して、カスタムリボンのユーザーインターフェイスを定義する XML 文字列を取得します。 このメソッドは、 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> メソッドを実装します。 **注:** `GetCustomUI`は、リボン XML ファイルの内容を返すためにのみ実装する必要があります。VSTO アドインの初期化には使用しないでください。   具体的には、 `GetCustomUI` の実装で、ダイアログ ボックスや他のウィンドウを表示しようとしてはいけません。 それ以外の場合は、カスタムリボンが正しく動作しない可能性があります。 VSTO アドインを初期化するコードを実行する必要がある場合は、そのコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。|
 |`OnLoad`|<xref:Microsoft.Office.Core.IRibbonControl> パラメーターを `Ribbon` フィールドに割り当てます。 Microsoft Office アプリケーションは、カスタムリボンを読み込むときにこのメソッドを呼び出します。 このフィールドを使用すると、カスタムリボンを動的に更新できます。 詳細については、技術記事「 [開発者向けの Office (2007) リボンユーザーインターフェイスのカスタマイズ (パート 1/3)](/previous-versions/office/developer/office-2007/aa338202(v=office.12))」を参照してください。|
