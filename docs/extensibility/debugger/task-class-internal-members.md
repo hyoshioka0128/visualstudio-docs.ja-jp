@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 10fbc46ad66ec6265bac0a3f2fc7c9b2994915d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996020"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883624"
 ---
 # <a name="task-class---internal-members"></a>タスククラス-内部メンバー
 この記事では、カスタムデバッガーの実装に役立つクラスの内部メンバーについて説明し <xref:System.Threading.Tasks.Task?displayProperty=fullName> ます。 このクラスに関する一般的な情報については、リファレンス記事を参照してください <xref:System.Threading.Tasks.Task> 。
@@ -44,14 +44,14 @@ ms.locfileid: "96996020"
 
 ### <a name="methods"></a>メソッド
 
-|名前|説明|
+|名前|Description|
 |----------|-----------------|
 |[SetNotificationForWaitCompletion メソッド](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|TASK_STATE_WAIT_COMPLETION_NOTIFICATION 状態ビットを設定またはクリアします。|
 |[NotifyDebuggerOfWaitCompletion メソッド](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|デバッガーによってブレークポイントターゲットとして使用されるプレースホルダーメソッド。|
 
 ### <a name="fields"></a>フィールド
 
-|名前|説明|
+|名前|Description|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|オブジェクトで実行するコードを表すデリゲート <xref:System.Threading.Tasks.Task> 。|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|オブジェクトの追加のプロパティを格納 <xref:System.Threading.Tasks.Task> します。|
@@ -66,7 +66,7 @@ ms.locfileid: "96996020"
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|タスクの実行が正常に完了したことを示します。|
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|タスクがデリゲートの実行を完了し、アタッチされた子タスクが終了するのを暗黙的に待機していることを示します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  次の内部メソッドは、開始をコード実行にマークするため、デバッガーエンジンに役立ち <xref:System.Threading.Tasks.Task> ます。
 
 - `Execute`
@@ -81,6 +81,6 @@ ms.locfileid: "96996020"
 
 - `InternalWait`
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - [.NET Framework の並列拡張の内部構造](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

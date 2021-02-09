@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], get an entity
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a02e88b0168a6aa4b1a69af3ee14150a71e76037
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849729"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882688"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>方法: 特定の Finder メソッドを追加する
   *特定の Finder* メソッドを作成することによって、1つのエンティティインスタンスを返すことができます。 Business data Connectivity (BDC) サービスは、ユーザーがビジネスデータ web パーツまたは外部リストでエンティティを選択したときに、特定の Finder メソッドを実行します。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "94849729"
 
     Visual Studio で **BDC デザイナー** にエンティティを追加する方法の詳細については、「 [方法: モデルにエンティティを追加](../sharepoint/how-to-add-an-entity-to-a-model.md)する」を参照してください。
 
-2. メニューバーで、[ **View**  >  **他のウィンドウ** を表示]、[ **BDC メソッドの詳細**] の順に選択します。
+2. メニューバーで、[   >  **他のウィンドウ** を表示]、[ **BDC メソッドの詳細**] の順に選択します。
 
     [ **BDC メソッドの詳細** ] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d446e731c08b85c2c903c2414528ac2a7370c26
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875532"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883169"
 ---
 # <a name="property-pages"></a>[プロパティ ページ]
 ユーザーは、プロパティページを使用して、プロジェクトの構成に依存し、依存しないプロパティを表示および変更できます。 選択したオブジェクトのプロパティページビューを提供するオブジェクトの **プロパティウィンドウまた** はソリューションエクスプローラーツールバーで、[**プロパティページ**] ボタンが有効になります。 プロパティページは環境によって作成され、ソリューションとプロジェクトで使用できます。 ただし、構成に依存するプロパティを使用するプロジェクトアイテムに対しても使用できます。 この機能は、プロジェクト内のファイルが、正しくビルドするために異なるコンパイラスイッチ設定を必要とする場合に使用できます。

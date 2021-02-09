@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a79a24225fe2abbb27611e041295711e6e3b38
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 76aa9f7d922e206225080b8f8793239f77764133
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883221"
 ---
 # <a name="ide-guids"></a>IDE GUIDs
 
@@ -127,7 +127,7 @@ ms.locfileid: "96993472"
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [マネージコードの COM 定数](../extensibility/com-constants-in-managed-code.md)
 - [IDE 定数](../extensibility/ide-constants.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46af48bf8bf9f128103767be1aa5fa64968e68f5
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 59eee84503ed2017c12dfcca3b7acd12c54e59db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883442"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 要素 (Visual Studio テンプレート)
 ユーザーが [場所] フィールドを編集できるかどうかを指定します。
@@ -53,7 +53,7 @@ ms.locfileid: "94671299"
 
  テキストはまたはである必要があります。これは、ユーザーが [ `true` `false` **新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスを編集できるかどうかを示します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `EnableEditOfLocationField` は省略可能な要素です。 既定値は `true` で、ユーザーは [**新しいプロジェクト**] ダイアログボックスの [**場所**] テキストボックスで値を編集できます。
 
  [ **新しいプロジェクト** ] ダイアログボックスの [ **場所** ] テキストボックスで、新しいプロジェクトを保存するディレクトリを指定します。
