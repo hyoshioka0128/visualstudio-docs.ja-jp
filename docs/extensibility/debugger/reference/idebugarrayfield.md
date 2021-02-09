@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dab01c1e956ced7e6894b951ab16f4ce68eb778b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 64717948f6406d1c6e9a5c1fabfec4b3a16bf116
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736294"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870260"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 このインターフェイスは、配列のシンボルまたは型を表します。
@@ -25,7 +25,7 @@ ms.locfileid: "80736294"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugArrayField : IDebugContainerField
+IDebugArrayField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -43,7 +43,7 @@ IDebugArrayField : IDebugContainerField
 |[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|配列内の要素の型を取得します。|
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|配列のランクを取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
