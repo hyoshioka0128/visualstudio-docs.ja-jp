@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8935af62b16ed6dd6d0d5d61412f347a95f32f23
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893595"
 ---
 # <a name="locate-visual-studio"></a>Visual Studio を探す
 
@@ -24,10 +24,10 @@ Visual Studio 2017 以降では、同じバージョンまたはエディショ�
 
 これは、ネイティブコードとマネージコードで使用できる NuGet パッケージを含む高速で読み取り専用の API です。
 
-| コード | パッケージ |
+| コード | Package |
 | ---- | --- |
 | ネイティブ | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| マネージド | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| 管理対象 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 パスまたは現在のプロセスを指定して単一のインスタンスを検索することも、すべてのインスタンスを列挙することもできます。 Visual Studio を検索する方法の完全な例については [、サンプル](https://github.com/Microsoft/vs-setup-samples) を参照してください。
 

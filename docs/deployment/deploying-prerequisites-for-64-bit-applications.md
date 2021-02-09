@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c051e57bb6af707e7bd5c096e230966e98498bd2
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: abc44c679e65cc49f6a491e9435fdaeffed5e9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893946"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>64 ビット アプリケーションの配置のための必要条件
-ClickOnce の配置では、 64 ビット プラットフォームのアプリケーションのインストールをサポートします。 対象プラットフォームは、32 ビット プラットフォームの場合は **x86** 、AMD64 命令セットと EM64T 命令セットをサポートするコンピューターの場合は **x64** 、64 ビットの Itanium プロセッサの場合は **Itanium** です。
+ClickOnce の配置では、 64 ビット プラットフォームのアプリケーションのインストールをサポートします。 対象プラットフォームは、32 ビット プラットフォームの場合は **x86**、AMD64 命令セットと EM64T 命令セットをサポートするコンピューターの場合は **x64**、64 ビットの Itanium プロセッサの場合は **Itanium** です。
 
 ## <a name="prerequisites"></a>前提条件
  64 ビット アプリケーションのインストール時の必須コンポーネントとして使用できる再頒布可能パッケージを次の表に示します。
@@ -45,5 +45,5 @@ ClickOnce の配置では、 64 ビット プラットフォームのアプリ�
 
 ## <a name="see-also"></a>関連項目
 - [アプリケーション、サービス、およびコンポーネントの配置](../deployment/deploying-applications-services-and-components.md)
-- [方法: ClickOnce アプリケーションと共に必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [方法: ClickOnce アプリケーションを使用して必須コンポーネントをインストールする](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [64 ビット アプリケーション](/dotnet/framework/64-bit-apps)

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8385fe376f56738d76e066dc172e7b6b516f9a08
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6e117fcbea0488c4b6a42125971984b86cf78251
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438062"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894258"
 ---
 # <a name="dowhile-activity-designer"></a>DoWhile アクティビティ デザイナー
 
@@ -27,10 +27,10 @@ ms.locfileid: "94438062"
 
 次の表に、最も役に立つ <xref:System.Activities.Statements.DoWhile> アクティビティのプロパティと、デザイナーでのそれらの使用方法について説明します。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|×|条件が **true** のときに実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.DoWhile.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された **dowhile** アクティビティデザイナーの [ **Body** ] ボックスに、[ツールボックス] からアクティビティをドロップします。|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|○|ループの各繰り返しの後に評価する条件。 を設定するには <xref:System.Activities.Statements.DoWhile.Condition%2A> 、 **dowhile** アクティビティデザイナーまたはプロパティグリッドの [ **条件** ] ボックスに Visual Basic 式を入力します。|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|条件が **true** のときに実行するアクティビティ。 アクティビティを追加するには <xref:System.Activities.Statements.DoWhile.Body%2A> 、"ここにアクティビティをドロップします" というヒントテキストが表示された **dowhile** アクティビティデザイナーの [ **Body** ] ボックスに、[ツールボックス] からアクティビティをドロップします。|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|ループの各繰り返しの後に評価する条件。 を設定するには <xref:System.Activities.Statements.DoWhile.Condition%2A> 、 **dowhile** アクティビティデザイナーまたはプロパティグリッドの [**条件**] ボックスに Visual Basic 式を入力します。|
 
 ## <a name="see-also"></a>関連項目
 

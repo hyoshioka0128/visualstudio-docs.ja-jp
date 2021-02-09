@@ -13,15 +13,15 @@ helpviewer_keywords:
 - XMLMappedRange control, events
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3b3fd140787d44cdd8364ce77d5292dfcd83f54
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2849b815c38555be6b149544bb9d9953fe85ec4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525894"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894401"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange コントロール
   コントロールは、 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 非繰り返しスキーマ要素が Microsoft Office Excel のセルにマップされている場合にのみ作成される範囲です。 たとえば、 `maxOccurs` スキーマ要素の属性が1と等しい場合です。 XML にマップされた範囲が Visual Studio によって作成された後は、Excel オブジェクトモデルを走査する必要なく、直接プログラミングできます。 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>要素のマッピングが削除された場合にのみ、Excel 内のコントロールを削除できます。

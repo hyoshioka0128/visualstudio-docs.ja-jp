@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4b390e5c021fa069ae3fb09eef1978caaf9cc8ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8a7aff8c6e902b20c5569e2553aececae835ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893712"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 現在の命令ポインターを指定されたコードコンテキストに設定します。
@@ -28,14 +28,14 @@ ms.locfileid: "80718653"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetNextStatement ( 
+HRESULT SetNextStatement ( 
    IDebugStackFrame2*  pStackFrame,
    IDebugCodeContext2* pCodeContext
 );
 ```
 
 ```csharp
-int SetNextStatement ( 
+int SetNextStatement ( 
    IDebugStackFrame2  pStackFrame,
    IDebugCodeContext2 pCodeContext
 );
@@ -57,7 +57,7 @@ int SetNextStatement ( 
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|次のステートメントは、スタック内のどのフレームにも関連付けられていません。|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|一部のデバッグエンジンでは、例外の後に次のステートメントを設定することはできません。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  命令ポインターは、次に実行する命令またはステートメントを示します。 このメソッドは、ソースコードの行を再試行したり、別の関数で実行を強制するために使用されます。たとえば、のようになります。
 
 ## <a name="see-also"></a>関連項目
