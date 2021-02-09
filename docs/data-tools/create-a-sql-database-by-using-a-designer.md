@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867205"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Visual Studio でデータベースを作成し、テーブルを追加する
 
@@ -26,7 +26,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
 ## <a name="prerequisites"></a>前提条件
 
-このチュートリアルを完了するには、Visual Studio に **.net デスクトップ開発** と **データストレージおよび処理** ワークロードがインストールされている必要があります。 これらをインストールするには、 **Visual Studio インストーラー**を開き、変更する Visual Studio のバージョンの横にある [**変更**(または**その他**の  >  **変更**)] を選択します。
+このチュートリアルを完了するには、Visual Studio に **.net デスクトップ開発** と **データストレージおよび処理** ワークロードがインストールされている必要があります。 これらをインストールするには、 **Visual Studio インストーラー** を開き、変更する Visual Studio のバージョンの横にある [**変更**(または **その他** の  >  **変更**)] を選択します。
 
 > [!NOTE]
 > この記事の手順は、.NET Core Windows フォームプロジェクトではなく、.NET Framework Windows フォームプロジェクトにのみ適用されます。
@@ -45,13 +45,13 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
 ### <a name="add-a-data-source"></a>データ ソースの追加
 
-1. [**データソース**] ウィンドウが開いていない場合は、 **Shift** + **Alt** + **D**キーを押すか**View**  >  、メニューバーの [**他の Windows**  >  **データソース**の表示] をクリックして開きます。
+1. [**データソース**] ウィンドウが開いていない場合は、 **Shift** + **Alt** + **D** キーを押すか  >  、メニューバーの [**他の Windows**  >  **データソース** の表示] をクリックして開きます。
 
 1. [ **データソース** ] ウィンドウで、[ **新しいデータソースの追加**] を選択します。
 
    ![Visual Studio での新しいデータソースの追加](media/add-new-data-source.png)
 
-   **データソース構成ウィザード**が開きます。
+   **データソース構成ウィザード** が開きます。
 
 1. [ **データソースの種類を選択** ] ページで、[ **データベース** ] を選択し、[ **次へ**] をクリックします。
 
@@ -67,12 +67,12 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
 データ接続のプロパティウィンドウを開くと、 *Sampledatabase .mdf* ファイルの接続文字列を表示できます。
 
-- [SQL Server オブジェクトエクスプローラーの**表示**] を選択し  >  **SQL Server Object Explorer**て [ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 **(Localdb) \MSSQLLocalDB**データベースを展開し、[  >  **sampledatabase**] *SampleDatabase.mdf*を右クリックして、[**プロパティ**] を選択します。
+- [SQL Server オブジェクトエクスプローラーの **表示**] を選択し  >  て [ **SQL Server オブジェクトエクスプローラー** ] ウィンドウを開きます。 **(Localdb) \MSSQLLocalDB** データベースを展開し、[  >  **sampledatabase**] を右クリックして、[**プロパティ**] を選択します。
 
-- または、[サーバーエクスプローラーの**表示**] を選択することもでき  >  **Server Explorer**ます (そのウィンドウがまだ開いていない場合)。 [ **データ接続** ] ノードを展開して [ *sampledatabase. .mdf*] を右クリックし、[ **プロパティ**] を選択して、プロパティウィンドウを開きます。
+- または、[サーバーエクスプローラーの **表示**] を選択することもでき  >  ます (そのウィンドウがまだ開いていない場合)。 [ **データ接続** ] ノードを展開して [ *sampledatabase. .mdf*] を右クリックし、[ **プロパティ**] を選択して、プロパティウィンドウを開きます。
 
   > [!TIP]
-  > [データ接続] ノードを展開できない場合、または [SampleDatabase. .mdf] 接続が表示されていない場合は、サーバーエクスプローラーツールバーの [ **データベースへの接続** ] をクリックします。 [**接続の追加**] ダイアログボックスで、[**データソース**] の下の**Microsoft SQL Server データベースファイル**が選択されていることを確認し、sampledatabase .mdf ファイルを参照して選択します。 **[OK]** を選択して、接続の追加を完了します。
+  > [データ接続] ノードを展開できない場合、または [SampleDatabase. .mdf] 接続が表示されていない場合は、サーバーエクスプローラーツールバーの [ **データベースへの接続** ] をクリックします。 [**接続の追加**] ダイアログボックスで、[**データソース**] の下の **Microsoft SQL Server データベースファイル** が選択されていることを確認し、sampledatabase .mdf ファイルを参照して選択します。 **[OK]** を選択して、接続の追加を完了します。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>テーブルデザイナーを使用したテーブルとキーの作成
 
@@ -80,9 +80,9 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
 ### <a name="create-the-customers-table"></a>Customers テーブルを作成する
 
-1. **サーバーエクスプローラー**で、[**データ接続**] ノードを展開し、[ **sampledatabase. .mdf** ] ノードを展開します。
+1. **サーバーエクスプローラー** で、[**データ接続**] ノードを展開し、[ **sampledatabase. .mdf** ] ノードを展開します。
 
-   [データ接続] ノードを展開できない場合、または [SampleDatabase. .mdf] 接続が表示されていない場合は、サーバーエクスプローラーツールバーの [ **データベースへの接続** ] をクリックします。 [**接続の追加**] ダイアログボックスで、[**データソース**] の下の**Microsoft SQL Server データベースファイル**が選択されていることを確認し、sampledatabase .mdf ファイルを参照して選択します。 **[OK]** を選択して、接続の追加を完了します。
+   [データ接続] ノードを展開できない場合、または [SampleDatabase. .mdf] 接続が表示されていない場合は、サーバーエクスプローラーツールバーの [ **データベースへの接続** ] をクリックします。 [**接続の追加**] ダイアログボックスで、[**データソース**] の下の **Microsoft SQL Server データベースファイル** が選択されていることを確認し、sampledatabase .mdf ファイルを参照して選択します。 **[OK]** を選択して、接続の追加を完了します。
 
 2. [ **テーブル** ] を右クリックし、[ **新しいテーブルの追加**] をクリックします。
 
@@ -111,7 +111,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
    ![テーブル デザイナー (Table Designer)](../data-tools/media/table-designer.png)
 
-7. **テーブルデザイナー**の左上隅にある [**更新**] を選択します。
+7. **テーブルデザイナー** の左上隅にある [**更新**] を選択します。
 
 8. [ **データベースの更新のプレビュー** ] ダイアログボックスで、[データベースの **更新**] を選択します。
 
@@ -128,7 +128,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
    |`OrderDate`|`datetime`|true (オン)|
    |`OrderQuantity`|`int`|true (オン)|
 
-2. **OrderID**を主キーとして設定し、既定の行を削除します。
+2. **OrderID** を主キーとして設定し、既定の行を削除します。
 
 3. スクリプト ペインの最初の行の次のサンプルのように更新して、Orders (注文) をテーブルと名前を付けます:
 
@@ -136,7 +136,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. **テーブルデザイナー**の左上隅にある [**更新**] を選択します。
+4. **テーブルデザイナー** の左上隅にある [**更新**] を選択します。
 
 5. [ **データベースの更新のプレビュー** ] ダイアログボックスで、[データベースの **更新**] を選択します。
 
@@ -158,7 +158,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
    ```
 
-4. **テーブルデザイナー**の左上隅にある [**更新**] を選択します。
+4. **テーブルデザイナー** の左上隅にある [**更新**] を選択します。
 
 5. [ **データベースの更新のプレビュー** ] ダイアログボックスで、[データベースの **更新**] を選択します。
 
@@ -166,7 +166,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
 
 ## <a name="populate-the-tables-with-data"></a>テーブルにデータを読み込む
 
-1. **サーバーエクスプローラー**または**SQL Server オブジェクトエクスプローラー**で、サンプルデータベースのノードを展開します。
+1. **サーバーエクスプローラー** または **SQL Server オブジェクトエクスプローラー** で、サンプルデータベースのノードを展開します。
 
 2. [ **テーブル** ] ノードのショートカットメニューを開き、[ **更新**] を選択し、[ **テーブル** ] ノードを展開します。
 
@@ -183,7 +183,7 @@ Visual Studio を使用して SQL Server Express LocalDB でローカルデー�
     > [!IMPORTANT]
     > すべての注文 Id と注文数量が整数であり、各顧客 ID が Customers テーブルの **CustomerID** 列で指定した値と一致していることを確認します。
 
-7. メニューバーで、[**ファイル**] [すべてを保存] を選択し  >  **Save All**ます。
+7. メニューバーで、[**ファイル**] [すべてを保存] を選択し  >  ます。
 
 ## <a name="see-also"></a>関連項目
 

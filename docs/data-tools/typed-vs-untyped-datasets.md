@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b2dc8d78f42d210741c904e3e475be33f2443e74
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866334"
 ---
 # <a name="typed-vs-untyped-datasets"></a>型指定されたデータセットと型指定されていないデータセットの比較
 型指定されたデータセットは、最初に基本クラスから派生したデータセットで <xref:System.Data.DataSet> あり、 **データセットデザイナー** の情報を使用して .xsd ファイルに格納され、新しい厳密に型指定された dataset クラスを生成します。 スキーマ (テーブル、列など) からの情報が生成され、この新しいデータセットクラスとして、ファーストクラスのオブジェクトとプロパティのセットとしてコンパイルされます。 型指定されたデータセットは基本クラスから継承するため、 <xref:System.Data.DataSet> 型指定されたクラスはクラスのすべての機能を前提 <xref:System.Data.DataSet> としており、クラスのインスタンスをパラメーターとして受け取るメソッドで使用でき <xref:System.Data.DataSet> ます。
@@ -42,6 +42,6 @@ ms.locfileid: "94998058"
 
 一般に、スキーマを使用しなくても、データセットを動的に作成する場合が多くあります。 その場合、データをリレーショナルな方法で表現できる限り、データセットは単に便利な構造になり、情報を保持することができます。 同時に、データセットの機能を利用して、別のプロセスに渡す情報をシリアル化したり、XML ファイルを書き出したりすることができます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [データセットツール](../data-tools/dataset-tools-in-visual-studio.md)

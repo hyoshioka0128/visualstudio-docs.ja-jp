@@ -13,15 +13,15 @@ helpviewer_keywords:
 - upgrading to LocalDB
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: babc82469d32540f1a003b629c9d83887ca91595
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: cbea7761ed5f36265464f2afe9a64550ddc5e62a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866308"
 ---
 # <a name="upgrade-mdf-files"></a>.mdf ファイルのアップグレード
 
@@ -75,7 +75,7 @@ Visual Studio を使用して、古いバージョンの SQL Server Express ま�
 
     - 論理名(&L):ファイルで使用する名前です。
 
-3. **[OK]** ボタンを選択します。
+3. **[OK]**  ボタンを選択します。
 
 4. メッセージが表示されたら、[ **はい** ] をクリックしてファイルをアップグレードします。
 
@@ -109,7 +109,7 @@ Visual Studio を使用して、古いバージョンの SQL Server Express ま�
 
 3. [ **SQL Server インスタンス名** ] テキストボックスに、使用する SQL Server Express または LocalDB のインスタンスの名前を指定します。 インスタンスに名前が付けられていない場合は、を指定し `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` ます。
 
-4. **[OK]** ボタンを選択します。
+4. **[OK]**  ボタンを選択します。
 
     SQL Server Express は、アプリケーションの既定のデータベースエンジンになります。
 

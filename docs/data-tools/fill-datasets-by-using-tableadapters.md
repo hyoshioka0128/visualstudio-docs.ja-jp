@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436460"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866906"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>TableAdapters を使用してデータセットを入力する
 
@@ -87,7 +87,7 @@ Tableadapter は、構成されたクラスをカプセル化することによ�
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter のメソッドとプロパティ
 
-TableAdapter クラスは .NET 型ではありません。 つまり、ドキュメントや **オブジェクトブラウザー** では検索できません。 前に説明したウィザードのいずれかを使用すると、デザイン時に作成されます。 作成時に TableAdapter に割り当てられる名前は、使用しているテーブルの名前に基づいています。 たとえば、という名前のデータベース内のテーブルに基づいて TableAdapter を作成する場合、 `Orders` tableadapter にはという名前が付けられ `OrdersTableAdapter` ます。 TableAdapter のクラス名は、 **データセット デザイナー** の **Name** プロパティを使用して変更できます。
+TableAdapter クラスは .NET 型ではありません。 つまり、ドキュメントや **オブジェクトブラウザー** では検索できません。 前に説明したウィザードのいずれかを使用すると、デザイン時に作成されます。 作成時に TableAdapter に割り当てられる名前は、使用しているテーブルの名前に基づいています。 たとえば、という名前のデータベース内のテーブルに基づいて TableAdapter を作成する場合、 `Orders` tableadapter にはという名前が付けられ `OrdersTableAdapter` ます。 TableAdapter のクラス名は、**データセット デザイナー** の **Name** プロパティを使用して変更できます。
 
 Tableadapter の一般的に使用されるメソッドとプロパティを次に示します。
 

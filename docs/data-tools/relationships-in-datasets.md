@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a07ca2d30e27cdcbc06e8f90a810982d4410931
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 92e1a03a9a72b550c77aa734c4a9ff2d0b184839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866607"
 ---
 # <a name="create-relationships-between-datasets"></a>データセット間にリレーションシップを作成する
 関連するデータテーブルを含むデータセット <xref:System.Data.DataRelation> は、オブジェクトを使用して、テーブル間の親子関係を表し、相互に関連するレコードを返します。 **データソース構成ウィザード** または **データセットデザイナー** を使用して、関連テーブルをデータセットに追加すると、オブジェクトが作成および構成さ <xref:System.Data.DataRelation> れます。
@@ -57,7 +57,7 @@ Unique 制約を実装するには、単 <xref:System.Data.DataColumn.Unique%2A>
 
 作成できる規則は列挙体で指定され、 <xref:System.Data.Rule> 次の表に示します。
 
-|外部キー制約規則|アクション|
+|外部キー制約規則|操作|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|親レコードに対して行われた変更 (update または delete) は、子テーブルの関連レコードでも行われます。|
 |<xref:System.Data.Rule.SetNull>|子レコードは削除されませんが、子レコードの外部キーはに設定され <xref:System.DBNull> ます。 この設定では、子レコードを "孤立" として残すことができます。つまり、親レコードとの関係はありません。 **注:** このルールを使用すると、子テーブルに無効なデータが生成される可能性があります。|
@@ -70,7 +70,7 @@ Unique 制約を実装するには、単 <xref:System.Data.DataColumn.Unique%2A>
 オブジェクトを作成するときに、 <xref:System.Data.DataRelation> リレーションシップを適用するためにのみ使用することを指定するオプションがあります。これは、関連するレコードへのアクセスにも使用されないことを示します。 このオプションを使用すると、より効率的で、関連レコード機能を持つ1つよりも少数のメソッドを含むデータセットを生成できます。 ただし、関連するレコードにアクセスすることはできません。 たとえば、制約のみのリレーションシップでは、子レコードが残っている親レコードを削除することはできません。また、親を介して子レコードにアクセスすることもできません。
 
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>データセットデザイナーでのデータリレーションシップの手動作成
-Visual Studio のデータデザインツールを使用してデータテーブルを作成する場合、データのソースから情報を収集できる場合、リレーションシップは自動的に作成されます。 **ツールボックス** の [データ **セット** ] タブから手動でデータテーブルを追加した場合は、リレーションシップを手動で作成することが必要になる場合があります。 プログラムによるオブジェクトの作成の詳細につい <xref:System.Data.DataRelation> ては、「 [Datarelation の追加](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)」を参照してください。
+Visual Studio のデータデザインツールを使用してデータテーブルを作成する場合、データのソースから情報を収集できる場合、リレーションシップは自動的に作成されます。 **ツールボックス** の [データ **セット**] タブから手動でデータテーブルを追加した場合は、リレーションシップを手動で作成することが必要になる場合があります。 プログラムによるオブジェクトの作成の詳細につい <xref:System.Data.DataRelation> ては、「 [Datarelation の追加](/dotnet/framework/data/adonet/dataset-datatable-dataview/adding-datarelations)」を参照してください。
 
 データテーブル間のリレーションシップは、リレーションシップの一対多の側面を表すキーと無限大のグリフを使用して、 **データセットデザイナー** 内の行として表示されます。 既定では、リレーションシップの名前はデザインサーフェイスに表示されません。
 
