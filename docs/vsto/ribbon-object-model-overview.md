@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888694"
 ---
 # <a name="ribbon-object-model-overview"></a>リボンオブジェクトモデルの概要
   は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 実行時にリボンコントロールのプロパティを取得および設定するために使用できる、厳密に型指定されたオブジェクトモデルを公開します。 たとえば、メニュー コントロールを動的に設定したり、コントロールの表示/非表示をコンテキストに応じて切り替えたりすることができます。 Office アプリケーションがリボンを読み込む前であれば、タブ、グループ、およびコントロールをリボンに追加することもできます。 詳細については、「読み取り専用に [なるプロパティの設定](#SettingReadOnlyProperties)」を参照してください。
@@ -36,7 +36,7 @@ ms.locfileid: "97527990"
 ## <a name="ribbon-events"></a><a name="RibbonEvents"></a> リボンイベント
  **リボン** クラスには、次の3つのイベントが含まれています。
 
-|event|説明|
+|Event|説明|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|Office アプリケーションがリボンのカスタマイズを読み込むときに発生します。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>イベントハンドラーがリボンコードファイルに自動的に追加されます。 このイベント ハンドラーを使用して、リボンが読み込まれるときにカスタム コードを実行します。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|リボンが読み込まれるときに、リボンのカスタマイズでイメージをキャッシュできます。 このイベントハンドラーにリボンイメージをキャッシュするコードを記述すると、パフォーマンスがわずかに向上します。 詳細については、「<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>」を参照してください。|
@@ -54,9 +54,9 @@ ms.locfileid: "97527990"
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
-|**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
+|**リスト**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**[ギャラリー]**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**デザイン**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**グループ**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
@@ -170,9 +170,9 @@ ms.locfileid: "97527990"
 ## <a name="ribbon-control-events"></a>リボンコントロールイベント
  各コントロール クラスに 1 つ以上のイベントが含まれています。 次の表は、それらのイベントについての説明です。
 
-|event|説明|
+|Event|説明|
 |-----------|-----------------|
-|クリック|コントロールがクリックされたときに発生します。|
+|ここを|コントロールがクリックされたときに発生します。|
 |TextChanged|編集ボックスまたはコンボ ボックス内のテキストが変更されたときに発生します。|
 |ItemsLoading|Office によってコントロールの項目コレクションが要求されたときに発生します。 Office では、コードによってコントロールのプロパティが変更されるか、メソッドが呼び出されるまで、項目コレクションがキャッシュされ <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> ます。|
 |System.windows.forms.toolbar.buttonclick>|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> または <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 内のボタンがクリックされたときに発生します。|
@@ -181,7 +181,7 @@ ms.locfileid: "97527990"
 
  これらのイベントのイベント ハンドラーには、次の 2 つのパラメーターがあります。
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |*センダー*|イベントを発生させたコントロールを表す <xref:System.Object>。|
 |*e*|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> を格納している <xref:Microsoft.Office.Core.IRibbonControl>。 このコントロールを使用すると、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] によって提供されるリボン オブジェクト モデルには用意されていないプロパティにアクセスできます。|
