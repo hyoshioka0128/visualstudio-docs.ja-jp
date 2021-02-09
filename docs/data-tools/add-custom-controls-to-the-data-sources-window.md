@@ -15,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: 004004a420374f3b0ce9504098ac5836cb307f1d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+manager: jmartens
+ms.openlocfilehash: 5591dc9c3422918fa8f9c605105ea10c8fbc447d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382066"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867426"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>[データ ソース] ウィンドウにカスタム コントロールを追加する
 
@@ -40,13 +40,13 @@ ms.locfileid: "94382066"
 2. [ **データソース** ] ウィンドウで、ウィンドウに追加したデータソースの一部であるアイテムをクリックし、アイテムのドロップダウンメニューをクリックします。
 
    > [!TIP]
-   > [データソース] ウィンドウが開いていない場合は **View** 、[  >  **他の Windows**  >  **データソース** を表示] を選択して開きます。
+   > [データソース] ウィンドウが開いていない場合は、[  >  **他の Windows**  >  **データソース** を表示] を選択して開きます。
 
-3. ドロップダウンメニューで、[ **カスタマイズ** ] をクリックします。 次のいずれかのダイアログボックスが表示されます。
+3. ドロップダウンメニューで、[ **カスタマイズ**] をクリックします。 次のいずれかのダイアログボックスが表示されます。
 
-    - **Windows フォームデザイナー** が開いている場合は、[ **オプション** ] ダイアログボックスの [ **データ UI のカスタマイズ** ] ページが表示されます。 詳細については、「[ [データ UI のカスタマイズオプション] ダイアログボックス](../ide/reference/options-windows-forms-designer-data-ui-customization.md)」を参照してください。
+    - **Windows フォームデザイナー** が開いている場合は、[**オプション**] ダイアログボックスの [**データ UI のカスタマイズ**] ページが表示されます。 詳細については、「[ [データ UI のカスタマイズオプション] ダイアログボックス](../ide/reference/options-windows-forms-designer-data-ui-customization.md)」を参照してください。
 
-    - **WPF デザイナー** が開いている場合は、[ **コントロールのバインドのカスタマイズ** ] ダイアログボックスが表示されます。
+    - **WPF デザイナー** が開いている場合は、[**コントロールのバインドのカスタマイズ**] ダイアログボックスが表示されます。
 
 4. ダイアログボックスで、[ **データ型** ] ドロップダウンリストからデータ型を選択します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "94382066"
 
      コントロールには、次のいずれかの属性が必要です。
 
-    |属性|[説明]|
+    |属性|説明|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|などのデータの単一の列またはプロパティを表示する単純なコントロールに対して、この属性を実装 <xref:System.Windows.Forms.TextBox> します。|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|などのデータのリスト (またはテーブル) を表示するコントロールに対して、この属性を実装 <xref:System.Windows.Forms.DataGridView> します。|

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518649"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867413"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Visual Studio でのデータへの Windows フォーム コントロールのバインド
 
@@ -33,7 +33,7 @@ ms.locfileid: "94518649"
 ![データソースのドラッグ操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> [ **データソース** ] ウィンドウが表示されていない場合は、 **View** [  >  **他の Windows** データソースを表示する] を選択する  >  **Data Sources** か、 **Shift** + **Alt** + **D** キーを押して開くことができます。 [ **データソース** ] ウィンドウを表示するには、Visual Studio でプロジェクトを開いておく必要があります。
+> [**データソース**] ウィンドウが表示されていない場合は、 [  >  **他の Windows** データソースを表示する] を選択する  >  か、 **Shift** + **Alt** + **D** キーを押して開くことができます。 [ **データソース** ] ウィンドウを表示するには、Visual Studio でプロジェクトを開いておく必要があります。
 
 項目をドラッグする前に、バインド先のコントロールの種類を設定できます。 テーブル自体を選択するか、個々の列を選択するかによって、異なる値が表示されます。  また、カスタム値を設定することもできます。 テーブルの場合、 **Details** は各列が個別のコントロールにバインドされていることを意味します。
 
@@ -76,7 +76,7 @@ ms.locfileid: "94518649"
 > [!IMPORTANT]
 > 前の図では、Orders テーブルからではなく、Customers テーブルの Orders プロパティからドラッグすることに注意してください。 プロパティにバインドすると `Customer.Orders` 、 **DataGridView** で行われたナビゲーションコマンドが、詳細コントロールにすぐに反映されます。 Orders テーブルからドラッグした場合でも、コントロールはデータセットにバインドされますが、 **DataGridView** と同期されることはありません。
 
-次の図は、Customers テーブルの Orders プロパティが [ **データソース** ] ウィンドウの **詳細** にバインドされた後にフォームに追加される既定のデータバインドコントロールを示しています。
+次の図は、Customers テーブルの Orders プロパティが [**データソース**] ウィンドウの **詳細** にバインドされた後にフォームに追加される既定のデータバインドコントロールを示しています。
 
 ![Orders テーブルが詳細にバインドされました](../data-tools/media/raddata-orders-table-bound-to-details.png)
 
