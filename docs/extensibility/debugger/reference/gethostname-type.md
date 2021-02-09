@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a7da1486f0edf52f3f0d96db699f60f24e36827
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13fdcea11aa579109f74f4404d0985aed4d0aa99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894934"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 ホスト名の種類を指定します。
@@ -52,7 +52,7 @@ public enum enum_GETHOSTNAME_TYPE {
 ## <a name="remarks"></a>解説
 これらの値は、異なる形式でホスト名を取得するために、引数として [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) メソッドに渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

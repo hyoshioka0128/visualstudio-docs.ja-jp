@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: de9bc6e4b742326e979c2701bb5792127539274a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895467"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>従来の言語サービスでのアウトラインと隠し文字
 アウトラインを使用すると、一連のテキスト行を1行に折りたたむことができます。 たとえば、C++ では、すべてのメソッドを1つの行に折りたたんで、メソッドのシグネチャのみを表示することができます。 Hidden text は、表示または非表示にできるテキスト行のシーケンスです。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895155"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>ClickOnce アプリケーションのコマンド ラインからのビルド
 
@@ -55,7 +55,7 @@ ms.locfileid: "94437724"
 
     発行ウィザードが表示されます。
 
-1. 発行ウィザードで、[ **完了** ] をクリックします。
+1. 発行ウィザードで、[ **完了**] をクリックします。
 
     Visual Studio によって、 *Publish.htm* と呼ばれる既定の Web ページが生成されて表示されます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "94437724"
 
 1. [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] を終了します。
 
-2. Windows の [ **スタート** ] メニューから、[ **すべてのプログラム** ]、[ **Microsoft Visual Studio** ]、[ **Visual Studio Tools** ]、[ **Visual Studio コマンドプロンプト** ] の順にクリックします。 これにより、現在のユーザーのルートフォルダーでコマンドプロンプトが開きます。
+2. Windows の [ **スタート** ] メニューから、[ **すべてのプログラム**]、[ **Microsoft Visual Studio**]、[ **Visual Studio Tools**]、[ **Visual Studio コマンドプロンプト**] の順にクリックします。 これにより、現在のユーザーのルートフォルダーでコマンドプロンプトが開きます。
 
 3. **Visual Studio のコマンドプロンプト** で、現在のディレクトリを、先ほど作成したプロジェクトの場所に変更します。 たとえば、「 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`」と入力します。
 
@@ -75,7 +75,7 @@ ms.locfileid: "94437724"
 
     この手順は省略可能ですが、新しいファイルがすべてコマンドラインビルドによって生成されるようになります。
 
-5. 「`msbuild /target:publish`」と入力します。
+5. 「`msbuild /target:publish`.
 
    上記の手順を実行すると、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publish** という名前のプロジェクトのサブフォルダーにアプリケーションの完全配置が生成されます。 *Cmdlinedemo. アプリケーション* は [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 配置マニフェストです。 *0.0.0 CmdLineDemo_1* フォルダーには、 *CmdLineDemo.exe* ファイルと *CmdLineDemo.exe* アプリケーションマニフェストのファイルが含まれています。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] *Setup.exe* はブートストラップで、既定で .NET Framework をインストールするように構成されています。 Dotnetfx.exe フォルダーには、.NET Framework の再頒布可能ファイルが含まれています。 これは、Web 経由で、または UNC または CD/DVD 経由でアプリケーションをデプロイするために必要なファイルのセット全体です。
 
@@ -99,7 +99,7 @@ ms.locfileid: "94437724"
 
  上記の手順でアプリケーションを発行すると、発行ウィザード、または .NET Core 3.1 またはそれ以降のプロジェクトの発行プロファイルファイルによって、プロジェクトファイルに次のプロパティが挿入されます。 これらのプロパティは、アプリケーションの生成方法に直接影響 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] します。
 
- *Cmdlinedemo. .vbproj* で、次のようにします。  /  *CmdLineDemo.csproj*
+ *Cmdlinedemo. .vbproj* で、次のようにします。  /  
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,13 +130,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 .NET Core 3.1 以降では、これらの設定は pubxml ファイルに含まれています。
 
- 発行プロパティは [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、 **プロジェクトデザイナー** の [ **発行** ]、[ **セキュリティ** ]、[ **署名** ] の各プロパティページからで制御されます。 次に示すのは、発行プロパティの説明と、アプリケーションデザイナーのさまざまなプロパティページでそれぞれがどのように設定されているかを示しています。
+ 発行プロパティは [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、**プロジェクトデザイナー** の [**発行**]、[**セキュリティ**]、[**署名**] の各プロパティページからで制御されます。 次に示すのは、発行プロパティの説明と、アプリケーションデザイナーのさまざまなプロパティページでそれぞれがどのように設定されているかを示しています。
 
 > [!NOTE]
 > .NET Windows デスクトッププロジェクトの場合、これらの設定は発行ウィザードに含まれるようになりました
 ::: moniker-end
 
-- `AssemblyOriginatorKeyFile` アプリケーションマニフェストに署名するために使用するキーファイルを指定し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 この同じキーを使用して、アセンブリに厳密な名前を割り当てることもできます。 このプロパティは、 **プロジェクトデザイナー** の [ **署名** ] ページで設定します。
+- `AssemblyOriginatorKeyFile` アプリケーションマニフェストに署名するために使用するキーファイルを指定し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 この同じキーを使用して、アセンブリに厳密な名前を割り当てることもできます。 このプロパティは、**プロジェクトデザイナー** の [**署名**] ページで設定します。
 ::: moniker range=">=vs-2019"
 .NET windows アプリケーションの場合、この設定はプロジェクトファイルに残ります
 ::: moniker-end
@@ -162,7 +162,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 
 - `Install` アプリケーションがインストールされているアプリケーションであるか、Web アプリケーションから実行されているかを判断します。
 
-- `InstallUrl` (表示されません) は、ユーザーがアプリケーションをインストールする場所です。 この値が指定されている場合 *setup.exe* は、 `IsWebBootstrapper` プロパティが有効になっている場合にsetup.exeブートストラップに書き込まれます。 が指定されていない場合は、アプリケーションマニフェストにも挿入され `UpdateUrl` ます。
+- `InstallUrl` (表示されません) は、ユーザーがアプリケーションをインストールする場所です。 この値が指定されている場合は、 `IsWebBootstrapper` プロパティが有効になっている場合にsetup.exeブートストラップに書き込まれます。 が指定されていない場合は、アプリケーションマニフェストにも挿入され `UpdateUrl` ます。
 
 - `SupportUrl` (表示されません) は、インストールされているアプリケーションの [ **プログラムの追加と削除** ] ダイアログボックスにリンクされている場所です。
 
@@ -202,7 +202,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 
  次の表は、ClickOnce 配置の4つの URL オプションを示しています。
 
-|URL オプション|説明|
+|URL オプション|Description|
 |----------------|-----------------|
 |`PublishURL`|ClickOnce アプリケーションを Web サイトに発行する場合に必要です。|
 |`InstallURL`|任意。 インストールサイトがと異なる場合は、この URL オプションを設定し `PublishURL` ます。 たとえば、を `PublishURL` FTP パスに設定し、を `InstallURL` Web URL に設定できます。|

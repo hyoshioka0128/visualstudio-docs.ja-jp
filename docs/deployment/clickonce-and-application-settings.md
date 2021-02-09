@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 891caba6-faef-4a3c-8f71-60e6fadb60eb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e51b850fa10ac660fbc3bd3a06428ddb92a060c4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 96491dc192b6578abd725d5d69b7c9093e92b20c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383132"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896391"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce とアプリケーション設定
 Windows フォームのアプリケーション設定を使用すると、クライアントでカスタムアプリケーションとユーザー設定を簡単に作成、保存、および保守できます。 次のドキュメントでは、ClickOnce アプリケーションでのアプリケーション設定ファイルの動作と、ユーザーが次のバージョンにアップグレードしたときに ClickOnce が設定を移行する方法について説明します。
@@ -33,7 +33,7 @@ Windows フォームのアプリケーション設定を使用すると、クラ
 
  ClickOnce を使用して配置されていない Windows フォームアプリケーションでは、アプリケーションの *\<app>.exe.config* ファイルはアプリケーションディレクトリに格納され、 *user.config* ファイルはユーザーの **Documents and Settings** フォルダーに格納されます。 ClickOnce アプリケーションでは、 *\<app>.exe.config* は clickonce アプリケーションキャッシュ内のアプリケーションディレクトリに存在し、 *user.config* はそのアプリケーションの clickonce データディレクトリに存在します。
 
- アプリケーションの配置方法に関係なく、アプリケーション設定を使用すると、 *\<app>.exe.config* 、および *user.config* への安全な読み取り/書き込みアクセスに安全にアクセスできます。
+ アプリケーションの配置方法に関係なく、アプリケーション設定を使用すると、 *\<app>.exe.config*、および *user.config* への安全な読み取り/書き込みアクセスに安全にアクセスできます。
 
  ClickOnce アプリケーションでは、アプリケーション設定で使用される構成ファイルのサイズは、ClickOnce キャッシュのサイズによって制限されます。 詳細については、「 [ClickOnce キャッシュの概要](../deployment/clickonce-cache-overview.md)」を参照してください。
 
@@ -47,7 +47,7 @@ Windows フォームのアプリケーション設定を使用すると、クラ
 |設定が *\<app>.exe.config* に追加されました|新しい設定は、現在のバージョンの *\<app>.exe.config* にマージされます。|
 |設定が *\<app>.exe.config* から削除されました|古い設定が現在のバージョンの *\<app>.exe.config* から削除されています|
 |設定の既定値が変更されました。ローカル設定は依然として [元の既定値] に設定さ *user.config*|設定は現在のバージョンの *user.config* にマージされ、新しい既定値が値として使用されます。|
-|設定の既定値が変更されました。 *user.config* の既定値以外に設定|設定は、既定値以外の値を保持した状態で現在のバージョンの *user.config* にマージされます。|
+|設定の既定値が変更されました。*user.config* の既定値以外に設定|設定は、既定値以外の値を保持した状態で現在のバージョンの *user.config* にマージされます。|
 
 独自のアプリケーション設定ラッパークラスを作成し、更新ロジックをカスタマイズしたい場合は、メソッドをオーバーライドでき <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> ます。
 

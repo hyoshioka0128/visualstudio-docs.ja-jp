@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895779"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 独自のプロジェクトの種類を作成するにはどうすればよいでしょうか。 新しいプロジェクトを作成すると、実際にはどうなるのでしょうか。 では、実際の状況を見てみましょう。
@@ -89,13 +89,13 @@ devenv /installvstemplates
  優先順位の値が小さいほど、ツリー内の位置が大きくなります。
 
 ##### <a name="developeractivity"></a>DeveloperActivity
- このサブキーが存在する場合、ルートノードの位置は [開発者の設定] ダイアログボックスによって制御されます。 たとえば、
+ このサブキーが存在する場合、ルートノードの位置は [開発者の設定] ダイアログボックスによって制御されます。 たとえば、次のように入力します。
 
  DeveloperActivity REG_SZ VC#
 
  Visual Studio が開発用に設定されている場合に、Visual C# がルートノードになることを示し [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ます。 それ以外の場合は、 **他の言語** の子ノードになります。
 
-##### <a name="folder"></a>フォルダー
+##### <a name="folder"></a>Folder
  このサブキーが存在する場合、ルートノードは、指定されたフォルダーの子ノードになります。 使用可能なフォルダーの一覧がキーの下に表示されます。
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders

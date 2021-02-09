@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896261"
 ---
 # <a name="create-a-settings-category"></a>設定カテゴリの作成
 
@@ -116,7 +116,7 @@ ms.locfileid: "94974544"
 
      [ **設定ファイルの名前** ] ページが表示されます。
 
-9. 新しい設定ファイルに「 *Mysettings. .vssettings* 」という名前を付け、適切なディレクトリに保存します。 **[完了]** をクリックします。
+9. 新しい設定ファイルに「 *Mysettings. .vssettings* 」という名前を付け、適切なディレクトリに保存します。 **[Finish]** をクリックします。
 
      [ **エクスポートの完了** ] ページには、設定が正常にエクスポートされたことが表示されます。
 
