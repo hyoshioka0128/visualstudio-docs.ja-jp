@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b0be4f8afdfe5320bdf871586f8c0e8f648ae84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9e27c17f4acc27c170d5e1d5ae83e93ffd76e22
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907910"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 指定されたカスタム属性が定義されているかどうかを判断します。
@@ -46,7 +46,7 @@ int IsCustomAttributeDefined(
 カスタム属性が定義されている場合、はを返します `S_OK` 。それ以外の場合はを返し `S_FALSE` ます。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)インターフェイスを公開する**Cdebugclassfieldsymbol**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)インターフェイスを公開する **Cdebugclassfieldsymbol** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(

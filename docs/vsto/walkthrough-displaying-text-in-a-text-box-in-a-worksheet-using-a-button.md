@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906472"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>チュートリアル: ボタンを使用してワークシートのテキストボックスにテキストを表示する
   このチュートリアルでは Microsoft Office Excel ワークシートでボタンとテキストボックスを使用する方法、および Visual Studio の Office 開発ツールを使用して Excel プロジェクトを作成する方法の基本について説明します。 完成したサンプルとして結果を表示するには、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の Excel コントロールのサンプルを参照してください。
@@ -74,7 +74,7 @@ ms.locfileid: "97522648"
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**insertText**|
-   |**テキスト**|**テキストの挿入**|
+   |**Text**|**テキストの挿入**|
 
    ここで、ボタンがクリックされたときに実行するコードを記述します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "97522648"
 
 3. Hello World していることを確認し **ます。** がテキストボックスに表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
  このチュートリアルでは、Excel ワークシートでボタンとテキストボックスを使用する方法の基本について説明します。 ここでは、次の作業を行います。
 
 - プロジェクトを配置しています。 詳細については、「 [Office ソリューションの配置](../vsto/deploying-an-office-solution.md)」を参照してください。

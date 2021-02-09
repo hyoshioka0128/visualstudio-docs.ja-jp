@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], security
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b47a18aa3e791d446abc2a57b6aad1f139924ebf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906744"
 ---
 # <a name="secure-deployment"></a>セキュリティで保護されたデプロイ
   Office ソリューションを作成すると、開発用コンピューターが自動的に更新され、プロジェクト内のコードが実行できるようになります。 ただし、ソリューションを配置するときは、証明書を使用してソリューションに署名するか、信頼プロンプトキーを使用することによって、信頼の決定の基礎となる証拠を提供する必要があり [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 詳細については、「 [Office ソリューションへの信頼の付与](../vsto/granting-trust-to-office-solutions.md)」を参照してください。
