@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f6c51276bea76fe77455d13e011aa85efa8f6fd
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 85b2c2bab29316846620c7dbec935b41eec1d9df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99845075"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>方法: プロセス ビューでプロセスを検索する
 プロセス ID またはモジュール文字列を検索条件として使用することで、プロセス ビューで特定のプロセスを検索できます。 検索の最初の方向を指定することもできます。 ダイアログ ボックスのフィールドには、プロセス ツリー内の選択されたプロセスの属性が表示されます。

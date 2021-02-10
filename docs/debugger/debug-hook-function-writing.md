@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 5510635f-cf69-4907-b72d-ae27af1f19af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e2f05005d0b43d526936bfbc8018739cb1ed88
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 76727da1ed057902d8f757594f5ed2e07bcf3cea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728938"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857546"
 ---
 # <a name="debug-hook-function-writing"></a>デバッグ用フック関数の作成
 ここでは、カスタムで作成できるさまざまなデバッグ用フック関数について説明します。デバッグ用フック関数を使用すると、デバッガーが通常行う処理内部の定義済みの位置にコードを挿入できます。

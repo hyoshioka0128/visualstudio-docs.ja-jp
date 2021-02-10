@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5f70557338a48931a3d109f345714d219f428f50
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 51b430a18a3d0934c16de19cbde82177a5f21f12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136850"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836463"
 ---
 # <a name="build-events-page-project-designer-c"></a>[ビルド イベント] ページ (プロジェクト デザイナー) (C#)
 
@@ -41,7 +41,7 @@ ms.locfileid: "92136850"
 
 **ビルド前に実行するコマンド ライン**
 
-ビルド開始前に実行する任意のコマンドを指定します。 長いコマンドを入力するには、 **[ビルド前の編集]** をクリックして [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)を表示します。
+ビルド開始前に実行する任意のコマンドを指定します。 長いコマンドを入力するには、**[ビルド前の編集]** をクリックして [[ビルド前に実行するコマンド ライン] / [ビルド後に実行するコマンド ライン] ダイアログ ボックス](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)を表示します。
 
 > [!NOTE]
 > プロジェクトが最新の状態で、ビルドがトリガーされない場合、ビルド前イベントは実行されません。
@@ -79,7 +79,7 @@ ms.locfileid: "92136850"
 </PropertyGroup>
 ```
 
-.NET Core プロジェクトでは、Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、 **PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 これらのターゲットは、MSBuild によって認識される、 **BeforeTargets** と **AfterTargets** の属性を使用します。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
+.NET Core プロジェクトでは、Visual Studio 2019 (および最近の更新プログラムでの Visual Studio 2017) では、**PreBuildEvent** および **PostBuildEvent** の設定に対して、`PreBuild` または `PostBuild` という名前の MSBuild ターゲットが追加されます。 これらのターゲットは、MSBuild によって認識される、**BeforeTargets** と **AfterTargets** の属性を使用します。 たとえば、前の例では、Visual Studio によって次のコードが生成されるようになりました。
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">

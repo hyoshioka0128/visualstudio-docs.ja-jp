@@ -8,16 +8,16 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287247"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572994"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Visual Studio で C++ 用の Google Test を使用する方法
 
-Visual Studio 2017 以降では、Google Test は、**C++ によるデスクトップ開発**ワークロードの既定のコンポーネントとして Visual Studio IDE に統合されています。 お使いのコンピューターにインストールされていることを確認するには、Visual Studio インストーラーを起動し、ワークロード コンポーネントの一覧で Google Test を探します。
+Visual Studio 2017 以降では、Google Test は、**C++ によるデスクトップ開発** ワークロードの既定のコンポーネントとして Visual Studio IDE に統合されています。 お使いのコンピューターにインストールされていることを確認するには、Visual Studio インストーラーを起動し、ワークロード コンポーネントの一覧で Google Test を探します。
 
 ![Google Test をインストールする](media/cpp-google-component.png)
 
@@ -25,7 +25,7 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="add-a-google-test-project-in-visual-studio-2019"></a>Visual Studio 2019 に Google Test プロジェクトを追加する
 
-1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックして、 **[追加]** > **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー** で、ソリューション ノードを右クリックして、 **[追加]** > **[新しいプロジェクト]** の順に選択します。
 2. **[言語]** を **C++** に設定し、検索ボックスに「**test**」と入力します。 結果の一覧から、 **[Google テスト プロジェクト]** を選択します。
 3. テスト プロジェクトの名前を設定し、 **[OK]** をクリックします。
 
@@ -37,7 +37,7 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="add-a-google-test-project-in-visual-studio-2017"></a>Visual Studio 2017 に Google Test プロジェクトを追加する
 
-1. **ソリューション エクスプローラー**で、ソリューション ノードを右クリックして、 **[追加]** > **[新しいプロジェクト]** の順に選択します。
+1. **ソリューション エクスプローラー** で、ソリューション ノードを右クリックして、 **[追加]** > **[新しいプロジェクト]** の順に選択します。
 2. 左側のペインで **[Visual C++]** > **[テスト]** の順に選択し、中央のペインで **[Google Test プロジェクト]** を選択します。
 3. テスト プロジェクトの名前を設定し、 **[OK]** をクリックします。
 
@@ -65,7 +65,7 @@ Visual Studio 2017 以降では、Google Test は、**C++ によるデスクト�
 
 ## <a name="write-and-run-tests"></a>テストを作成して実行する
 
-Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)に関するページをご覧ください。 **テスト エクスプローラー**を使ってテストを検出、実行、グループ化する方法については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
+Google Test のテストを作成して実行する準備が整いました。 テスト マクロについては、[Google Test の入門](https://github.com/google/googletest/blob/master/docs/primer.md)に関するページをご覧ください。 **テスト エクスプローラー** を使ってテストを検出、実行、グループ化する方法については、「[テスト エクスプローラーを使用して単体テストを実行する](run-unit-tests-with-test-explorer.md)」をご覧ください。
 
 ## <a name="see-also"></a>参照
 

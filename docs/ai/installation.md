@@ -4,18 +4,18 @@ description: AI Tools for Visual Studio をインストールする方法を説�
 keywords: AI, Visual Studio
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841446"
 ---
 # <a name="installation"></a>インストール
 
@@ -73,7 +73,7 @@ cuDNN をインストールするには:
 
 ### <a name="python"></a>Python
 
-Python は、ディープ ラーニング アプリケーションの主要なプログラミング言語になっています。 **64 ビット**の Python ディストリビューションが必要であり、最善の互換性のためには [Python 3.5.4](https://www.python.org/downloads/release/python-354/) をお勧めします。
+Python は、ディープ ラーニング アプリケーションの主要なプログラミング言語になっています。 **64 ビット** の Python ディストリビューションが必要であり、最善の互換性のためには [Python 3.5.4](https://www.python.org/downloads/release/python-354/) をお勧めします。
 
 ### <a name="to-install-python-on-windows"></a>Windows に Python をインストールするには
 
@@ -156,7 +156,7 @@ CNTK Python パッケージのインストールについては、[CNTK のイ�
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) は、効率性と柔軟性の両方を想定して設計されたディープ ラーニング フレームワークです。 [シンボリック プログラミングと命令型プログラミング](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)を**併用**して、効率性と生産性を最大にできます。
+[Apache MXNet (incubating)](https://mxnet.incubator.apache.org/) は、効率性と柔軟性の両方を想定して設計されたディープ ラーニング フレームワークです。 [シンボリック プログラミングと命令型プログラミング](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)を **併用** して、効率性と生産性を最大にできます。
 
 MXNet をインストールするには、端末で次のコマンドを実行します。
 

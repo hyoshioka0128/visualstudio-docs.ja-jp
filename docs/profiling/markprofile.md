@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b4e66049ec5547913dad8df7256f2db3d2395fa0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718864"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851960"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` メソッドは、.*vsp* ファイルにプロファイル マークを挿入します。 `MarkProfile` 関数を含むスレッドのプロファイル実行は、挿入されるマークについてオンにしておく必要があります。

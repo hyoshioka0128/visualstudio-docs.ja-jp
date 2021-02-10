@@ -5,18 +5,18 @@ ms.date: 12/06/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3c756f3d9a89294ecce054650037be3f7b26c291
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 40411f47e7deda48b04ac4efb9bb9bc18688989a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839111"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>IIS 用に Python Web アプリを構築する
 
@@ -145,4 +145,4 @@ FastCGI は、要求レベルで動作するインターフェイスです。 II
 
 ## <a name="deploy-to-iis-or-a-windows-vm"></a>IIS または Windows VM にデプロイする
 
-プロジェクトに正しい *web.config* ファイルがある場合、**ソリューション エクスプローラー**のプロジェクトのコンテキスト メニューで **[発行]** コマンドを使用し、 **[IIS, FTP, etc.]** \(IIS、FTP など\) オプションを選択して、IIS を実行しているコンピューターに発行することができます。 この場合、Visual Studio は単純にプロジェクト ファイルをサーバーにコピーします。サーバー側の構成はご自分で行ってください。
+プロジェクトに正しい *web.config* ファイルがある場合、**ソリューション エクスプローラー** のプロジェクトのコンテキスト メニューで **[発行]** コマンドを使用し、 **[IIS, FTP, etc.]** \(IIS、FTP など\) オプションを選択して、IIS を実行しているコンピューターに発行することができます。 この場合、Visual Studio は単純にプロジェクト ファイルをサーバーにコピーします。サーバー側の構成はご自分で行ってください。

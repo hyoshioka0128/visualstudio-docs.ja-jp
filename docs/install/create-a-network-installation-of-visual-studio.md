@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b48f35a9467e1f69a0055ac0859083078f9cf3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88992356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850174"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
-通常、企業の管理者はクライアント ワークステーションに展開するためのネットワーク インストール ポイントを作成します。 Visual Studio は、初期インストールのファイルとすべての製品の更新プログラムが単一のファイルにキャッシュされるように設計されています。 (このプロセスは_レイアウトの作成_とも呼ばれています。)
+通常、企業の管理者はクライアント ワークステーションに展開するためのネットワーク インストール ポイントを作成します。 Visual Studio は、初期インストールのファイルとすべての製品の更新プログラムが単一のファイルにキャッシュされるように設計されています。 (このプロセスは _レイアウトの作成_ とも呼ばれています。)
 
 これは、最新のサービスの更新プログラムに更新されていない場合でも、クライアント ワークステーションが同じネットワークの場所を使用してインストールを管理できるようにするためです。
 
@@ -260,9 +260,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) で入手可能な Visual Studio ブートストラップを使用すると、それを実行したときに利用できる最新の Visual Studio リリースをダウンロードしてインストールできます。
 >
-> そのため、Visual Studio *ブートストラップ*を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
+> そのため、Visual Studio *ブートストラップ* を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
 >
-> しかし、*レイアウト*を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
+> しかし、*レイアウト* を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
 
 ::: moniker-end
 
@@ -271,9 +271,9 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > [!NOTE]
 > [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) で入手可能な Visual Studio ブートストラップを使用すると、それを実行したときに利用できる最新の Visual Studio リリースをダウンロードしてインストールできます。
 >
-> そのため、Visual Studio *ブートストラップ*を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
+> そのため、Visual Studio *ブートストラップ* を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
 >
-> しかし、*レイアウト*を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
+> しかし、*レイアウト* を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
 
 ::: moniker-end
 

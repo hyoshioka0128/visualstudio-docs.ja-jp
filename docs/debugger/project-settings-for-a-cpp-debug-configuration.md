@@ -110,15 +110,15 @@ helpviewer_keywords:
 ms.assetid: 860c7f13-a108-4fe5-8fca-d235cd3ca1cb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6130b49beecb3411c275fc5d2005b7aabee262fd
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842722"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ デバッグ構成のプロジェクト設定
 C または C++ のデバッグ構成のプロジェクト設定は **[プロパティ ページ]** ダイアログ ボックスで変更できます。「[方法: デバッグ構成とリリース構成を設定する](../debugger/how-to-set-debug-and-release-configurations.md)」を参照してください。 次の表は、 **[プロパティ ページ]** ダイアログ ボックスのデバッガー関連の設定の場所を示しています。

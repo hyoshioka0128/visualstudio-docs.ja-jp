@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761265"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857930"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>Docker コンテナー上で実行されているプロセスにアタッチする 
 
@@ -52,13 +52,13 @@ Visual Studio を使用して、Windows Docker コンテナーまたは Linux .N
     > [!NOTE]
     > Docker コンテナーで実行中のプロセスにリモート接続するには、2 つのオプションがあります。 SSH を使用するという 1 つ目のオプションは、ローカル コンピューターに Docker ツールがインストールされていない場合に最適です。  ローカルに Docker ツールをインストールしていて、リモートの要求を受け入れるように構成されている Docker デーモンがある場合は、2 つ目のオプションである Docker デーモンの使用を試してください。
 
-    1. "**_SSH を使用してリモート マシンに接続するには:_* _"
-        1. _ *[追加]* * を選択してリモート システムに接続します。<br/>
+    1. ***SSH を使用してリモート マシンに接続するには:***
+        1. **[追加]** を選択してリモート システムに接続します。<br/>
         ![リモート システムに接続する](../debugger/media/connect-remote-system.png "リモート システムに接続する")
         1. SSH またはデーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、 **[OK]** をクリックします。
 
-    1. "**_[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには_* _"
-        1. _ *[Docker ホスト (省略可能)]* * でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。
+    1. ***[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには***
+        1. **[Docker ホスト (省略可能)]** でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。
         1. デーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、 **[OK]** をクリックします。
 
 4. Visual Studio で **[使用可能なプロセス]** リストから対応するコンテナー プロセスを選択し、 **[アタッチ]** を選択して C# のデバッグを開始します。
@@ -86,8 +86,8 @@ Visual Studio を使用して、Windows Docker コンテナーまたは Linux .N
 
    現在、SSH 経由でターゲットをリモート コンテナーに設定することはできません。Docker デーモンを使用して実行する必要があります。
 
-    "**_[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには_* _"
-    1. _ *[Docker ホスト (省略可能)]* * でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。
+    ***[Docker デーモン](https://docs.docker.com/engine/reference/commandline/dockerd/)を介してプロセスを実行しているリモート コンテナーにターゲットを設定するには***
+    1. **[Docker ホスト (省略可能)]** でデーモンのアドレス (つまり、TCP、IP など) を指定し、更新リンクをクリックします。
 
     1. デーモンに正常に接続した後にアタッチする実行中のコンテナーを選択し、[OK] を選択します。
 

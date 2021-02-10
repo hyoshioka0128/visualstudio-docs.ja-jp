@@ -4,18 +4,18 @@ description: Visual Studio Tools for AI を使用してさまざまなテンプ�
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 28eccd9c564b7d368e823288311a823fdff86fb3
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: dbef3f71678f899a41e7b4db7e1d8123952d4f75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841485"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Visual Studio のテンプレートから AI プロジェクトを作成する
 
