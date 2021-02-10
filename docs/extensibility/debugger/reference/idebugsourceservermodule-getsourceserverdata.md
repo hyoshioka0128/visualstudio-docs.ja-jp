@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719932"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956517"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 転送元サーバー情報の配列を取得します。
@@ -50,7 +50,7 @@ public int GetSourceServerData(
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)インターフェイスを公開する**cmodule**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)インターフェイスを公開する **cmodule** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)

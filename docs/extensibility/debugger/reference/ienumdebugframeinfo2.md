@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aa67792ced94afd9c4439cbc6ea577e6b85f28b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956290"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 このインターフェイスは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体を列挙します。
@@ -37,7 +37,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugFrameInfo2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|列挙シーケンス内の指定された数の [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体を取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|列挙シーケンス内の指定された数の [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体をスキップします。|
@@ -45,10 +45,10 @@ IEnumDebugFrameInfo2 : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|列挙子内の [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体の数を取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このインターフェイスは、デバッグ中のプログラムでブレークポイント、例外、またはユーザーによって生成される一時停止を処理する最初の手順として、Visual Studio によって取得されます。 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)構造体の一覧は現在の呼び出し履歴を表し、現在の関数呼び出しはリストの先頭に、最も古い関数呼び出しはリストの末尾にあります。 各は `FRAMEINFO` スタックフレームを表します。これは、式を評価し、ローカル変数を調べることができるコンテキストです。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -56,6 +56,6 @@ IEnumDebugFrameInfo2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

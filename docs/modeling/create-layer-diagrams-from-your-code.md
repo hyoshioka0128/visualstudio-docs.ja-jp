@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea19089fe8660b1169d790e25ed7ccf845404238
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 38e357ca4aa715861839f7f5ca168eafdc66f5ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957440"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>コードからの依存関係図の作成
 
@@ -53,7 +53,7 @@ ms.locfileid: "97363524"
 
 4. [ **モデリングプロジェクトへの追加**] で、ソリューション内の既存のモデリングプロジェクトを参照して選択します。
 
-     または
+     \- または -
 
      新しいモデリングプロジェクトをソリューションに追加するには、[ **新しいモデリングプロジェクトの作成** ] を選択します。
 
