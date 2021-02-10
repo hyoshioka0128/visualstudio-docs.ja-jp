@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5f01d2b9fbff4864c8e3fa4d96dccdda54da7e0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 376475d2a392b86b14a73ba45c5669eaaf338898
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886406"
 ---
 # <a name="callercallee-view---sampling-data"></a>呼び出し元/呼び出し先ビュー - サンプリング データ
 呼び出し元/呼び出し先ビューには、選択した関数およびその親関数と子関数のプロファイル データが表示されます。 [呼び出し元/呼び出し先] ビューは、3 つのグリッドで構成されます。

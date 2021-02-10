@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 4ccec541-3c49-42bd-972a-686eb3a88fbc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 65f643d0f03f9754d580de8be95fb5c1f65a940d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9d9a51df36a21d0f5234f78f6ac23ebf65f0c414
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889240"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL シェーダーのデバッガー
 Visual Studio Graphics Analyzer で HLSL デバッガーを使用すると、アプリの実際の条件下で、HLSL シェーダー コードの動作方法を理解できます。

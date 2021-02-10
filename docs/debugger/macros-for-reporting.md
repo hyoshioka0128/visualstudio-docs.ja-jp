@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1920b4eddcbffa5cd51d548ade9af3a3a2f208d0
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903793"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893127"
 ---
 # <a name="macros-for-reporting"></a>レポート用マクロの使用
 デバッグでは、CRTDBG.H に定義されている **_RPTn** マクロと **_RPTFn** マクロで使用される `printf` ステートメントを置き換えることができます。 **_DEBUG** が定義されていないリリース ビルドでは自動的に消滅するため、これらのマクロを **#ifdef** で囲む必要はありません。

@@ -5,33 +5,33 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73024719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888057"
 ---
 # <a name="edit-python-code"></a>Python コードの編集
 
 開発者は、開発時間の多くをコード エディターで費やすため、[Visual Studio での Python のサポート](installing-python-support-in-visual-studio.md)は、生産性を向上させる機能を提供しています。 機能には、IntelliSense 構文の強調表示、オートコンプリート、署名ヘルプ、メソッドのオーバーライド、検索、ナビゲーションが含まれます。
 
-また、エディターは Visual Studio の**対話型**ウィンドウと統合され、この 2 つの間で簡単にコードを交換することができます。 詳細については、[「チュートリアル」の「手順 3:対話型 REPL ウィンドウを使用する」](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)と、[対話型ウィンドウの使用 - 対話型コマンドにコードを送信する](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)に関するページを参照してください。
+また、エディターは Visual Studio の **対話型** ウィンドウと統合され、この 2 つの間で簡単にコードを交換することができます。 詳細については、[「チュートリアル」の「手順 3:対話型 REPL ウィンドウを使用する」](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)と、[対話型ウィンドウの使用 - 対話型コマンドにコードを送信する](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)に関するページを参照してください。
 
 Visual Studio でのコードの編集に関する全般的な説明については、「[コード エディターの機能](../ide/writing-code-in-the-code-and-text-editor.md)」をご覧ください。 また、コードの特定のセクションに注意を集中するのに役立つ、[アウトライン](../ide/outlining.md)についての記事もご覧ください。
 
-また、各モジュールで定義されている Python クラスとそれらのクラスで定義されている関数を調べるために、Visual Studio **オブジェクト ブラウザー**を使うことができます ( **[表示]**  >  **[その他のウィンドウ]**  >  **[オブジェクト ブラウザー]** の順に選択するか、**Ctrl**+**W** > **J** キーを押す)。
+また、各モジュールで定義されている Python クラスとそれらのクラスで定義されている関数を調べるために、Visual Studio **オブジェクト ブラウザー** を使うことができます ( **[表示]**  >  **[その他のウィンドウ]**  >  **[オブジェクト ブラウザー]** の順に選択するか、**Ctrl**+**W** > **J** キーを押す)。
 
 ## <a name="intellisense"></a>IntelliSense
 
 IntelliSense により、[入力候補](#completions)、[シグネチャ ヘルプ](#signature-help)、[クイック ヒント](#quick-info)、[コードの色分け表示](#code-coloring)が提供されます。 Visual Studio 2017 バージョン 15.7 以降では、[型ヒント](#type-hints)もサポートされています。
 
-パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、**[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー**の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md)」を参照)。
+パフォーマンスを向上するために、Visual Studio 2017 バージョン 15.5 以前の IntelliSense は、プロジェクト内の各 Python 環境用に生成される入力候補データベースに依存しています。 パッケージを追加、削除、更新した場合はデータベースの更新が必要になる可能性があります。 データベースの状態は、**[IntelliSense]** タブの **[Python 環境]** ウィンドウ (**ソリューション エクスプローラー** の兄弟ウィンドウ) に表示されます (「[環境ウィンドウ リファレンス](python-environments-window-tab-reference.md)」を参照)。
 
 Visual Studio 2017 バージョン 15.6 以降では、別の手段を使用して、データベースに依存しない IntelliSense 入力候補が提供されています。
 
@@ -88,7 +88,7 @@ Python 3.5 以降の "型ヒント" ([PEP 484](https://www.python.org/dev/peps/p
 
 ![型ヒントを示す IntelliSense の入力候補](media/code-editing-type-hints2.png)
 
-エラーは通常実行時まで表示されないため、プロジェクト全体の型ヒントを検証すると役立ちます。 このために、Visual Studio では、**ソリューション エクスプローラー**の **[Python]** > **[Mypy の実行]** のコンテキスト メニュー コマンドを通じて、業界標準の MyPy ツールが統合されています。
+エラーは通常実行時まで表示されないため、プロジェクト全体の型ヒントを検証すると役立ちます。 このために、Visual Studio では、**ソリューション エクスプローラー** の **[Python]** > **[Mypy の実行]** のコンテキスト メニュー コマンドを通じて、業界標準の MyPy ツールが統合されています。
 
 ![ソリューション エクスプローラーで MyPy コンテキスト メニュー コマンドを実行する](media/code-editing-type-hints-run-mypy.png)
 
@@ -184,7 +184,7 @@ for x in range(1, 100):
 
 ### <a name="examine-available-snippets"></a>利用可能なスニペットを調べる
 
-利用可能なコード スニペットは、**コード スニペット マネージャー**で確認できます。これを開くには、 **[ツール]**  >  **[コード スニペット マネージャー]** メニュー コマンドを使用し、言語として **[Python]** を選択します。
+利用可能なコード スニペットは、**コード スニペット マネージャー** で確認できます。これを開くには、 **[ツール]**  >  **[コード スニペット マネージャー]** メニュー コマンドを使用し、言語として **[Python]** を選択します。
 
 ![Visual Studio のコード スニペット マネージャー](media/code-editing-code-snippets-manager.png)
 
@@ -194,7 +194,7 @@ for x in range(1, 100):
 
 ## <a name="navigate-your-code"></a>コードの移動
 
-Visual Studio の Python のサポートとして、ソース コードが提供されているライブラリを含め、[ナビゲーション バー](#navigation-bar)、[ **[定義へ移動]** ](#go-to-definition)、[ **[移動]** ](#navigate-to)、[ **[すべての参照の検索]** ](#find-all-references) など、コード内をすばやく移動するためのいくつかの手段が用意されています。 また、Visual Studio の [**オブジェクト ブラウザー**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser)も使用できます。
+Visual Studio の Python のサポートとして、ソース コードが提供されているライブラリを含め、[ナビゲーション バー](#navigation-bar)、[ **[定義へ移動]**](#go-to-definition)、[ **[移動]**](#navigate-to)、[ **[すべての参照の検索]**](#find-all-references) など、コード内をすばやく移動するためのいくつかの手段が用意されています。 また、Visual Studio の [**オブジェクト ブラウザー**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser)も使用できます。
 
 ### <a name="navigation-bar"></a>[ナビゲーション バー]
 

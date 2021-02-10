@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 47512bc9-a8e9-4628-883a-d9888edab786
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ed42588f7135b4664b7f65dfcd8c0d979a523aeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890488"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr の警告
 次の表に、*VSInstr.exe* ツールで発行される警告をリストします。 NOWARN オプションに警告番号を指定することで、警告を非表示にできます。
