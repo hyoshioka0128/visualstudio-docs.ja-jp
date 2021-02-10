@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d6ffff0a-afb4-4f38-86d8-476c881c4e4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 632150101b966e128e8a34636b01a369a1db5c64
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 7e7b834dc41fb019e70aa40bca995770985d4c05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847612"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960924"
 ---
 # <a name="security-issues"></a>セキュリティの問題
 Visual Studio を使用してプログラムをデバッグするために必要なアクセス許可は、開発者がプログラムを実行するために必要とするものと同じです。 これには、ほとんどの状況でのリモートデバッグが含まれます。 インターネットインフォメーションサービスなど、他のサービスを含む状況によっては、より高いレベルの権限が必要になる場合があります。

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700834"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965201"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 関数
 この関数は、指定されたコマンドの詳細オプションをユーザーに要求します。
@@ -63,7 +63,7 @@ SCCRTN SccGetCommandOptions(
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  IDE は、を使用してこの関数を初めて呼び出し、 `ppvOptions` = `NULL` ソース管理プラグインが指定されたコマンドの詳細オプション機能をサポートしているかどうかを判断します。 プラグインがそのコマンドの機能をサポートしている場合、IDE は、ユーザーが詳細オプション (通常はダイアログボックスの **[詳細設定** ] ボタンとして実装されている) を要求し、ポインターをポイントするための NULL 以外のポインターを提供すると、この関数を再度呼び出し `ppvOptions` `NULL` ます。 プラグインには、ユーザーが指定した詳細設定オプションがプライベート構造で格納され、その構造体へのポインターが返され `ppvOptions` ます。 その後、この構造体は、その後の関数の呼び出しを含め、そのことを把握しておく必要がある他のすべてのソース管理プラグイン API 関数に渡され `SccGetCommandOptions` ます。
 
  例を使用すると、この状況を明確にすることができます。
@@ -74,11 +74,11 @@ SCCRTN SccGetCommandOptions(
 
  同じダイアログボックスでユーザーが **[詳細** ] をもう一度クリックすると、IDE は `SccGetCommandOptions` 変更せずに関数を再度呼び出し、 `ppvOptions` 構造体がプラグインに戻されるようにします。 これにより、プラグインは、ダイアログボックスをユーザーが以前に設定した値に再初期化できるようになります。 プラグインは、を返す前に、その場所にある構造を変更します。
 
- 最後に、ユーザーが IDE の [**取得**] ダイアログボックスで **[OK]** をクリックすると、Ide は[sccget](../extensibility/sccget-function.md)を呼び出し、詳細オプションを含むで返された構造体を渡し `ppvOptions` ます。
+ 最後に、ユーザーが IDE の [**取得**] ダイアログボックスで **[OK]** をクリックすると、Ide は [sccget](../extensibility/sccget-function.md)を呼び出し、詳細オプションを含むで返された構造体を渡し `ppvOptions` ます。
 
 > [!NOTE]
 > コマンドは、 `SCC_COMMAND_OPTIONS` IDE に [ **オプション** ] ダイアログボックスが表示され、ユーザーが統合の動作を制御するための設定を設定できるようにするときに使用されます。 ソース管理プラグインが独自の設定ダイアログボックスを提供する必要がある場合は、IDE の [基本設定] ダイアログボックスの **[詳細設定** ] ボタンから表示できます。 このプラグインは、この情報を取得して保持するだけの役割を担います。IDE では、このファイルを使用したり、変更したりすることはありません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [コマンドコード](../extensibility/command-code-enumerator.md)

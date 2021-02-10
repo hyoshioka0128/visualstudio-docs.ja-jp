@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91b3debf0e686ceece3048cf3d92b629e3359edd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965162"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 関数
 この関数は、キューに置かれた状態イベントを取得します。
@@ -59,11 +59,11 @@ SCCRTN SccGetEvents (
 |SCC_E_OPNOTSUPPORTED|この関数はサポートされません。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、アイドル処理中に呼び出され、ソース管理下にあるファイルのステータスの更新があるかどうかを確認します。 ソース管理プラグインは、認識しているすべてのファイルの状態を保持し、プラグインによって状態の変更が通知されるたびに、状態と関連付けられたファイルがキューに格納されます。 `SccGetEvents`が呼び出されると、キューの最上位要素が取得され、返されます。 この関数は、以前にキャッシュされた情報のみを返すように制限されており、非常に迅速なターンアラウンドが必要です (つまり、ディスクの読み取りや、ソース管理システムの状態の確認を行う必要はありません)。そうしないと、IDE のパフォーマンスが低下することがあります。
 
  レポートするステータスの更新がない場合、ソース管理プラグインはが指すバッファーに空の文字列を格納し `lpFileName` ます。 それ以外の場合、プラグインは、ステータス情報が変更されたファイルの完全なパス名を格納し、適切な状態コード ([ [ファイルステータスコード](../extensibility/file-status-code-enumerator.md)] で詳細に説明されている値の1つ) を返します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)

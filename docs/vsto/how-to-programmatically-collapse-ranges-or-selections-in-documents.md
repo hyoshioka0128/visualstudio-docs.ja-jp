@@ -16,15 +16,15 @@ helpviewer_keywords:
 - collapsing ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cba19d8cb6c26defcbb7cf39f461a45bf217b5a5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9b063244c8ac611d3a864b9cc3753b5cd8460474
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964291"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>方法: プログラムによって文書内の範囲または選択項目を折りたたむ
   <xref:Microsoft.Office.Interop.Word.Range> または <xref:Microsoft.Office.Interop.Word.Selection> オブジェクトを使用する場合、既存のテキストが上書きされないように、テキストを挿入する前に、選択範囲を挿入ポイントに変更できます。 <xref:Microsoft.Office.Interop.Word.Range>オブジェクトとオブジェクトの両方に <xref:Microsoft.Office.Interop.Word.Selection> Collapse メソッドがあり、列挙値を使用し <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> ます。

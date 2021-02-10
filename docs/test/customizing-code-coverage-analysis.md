@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964408"
 ---
 # <a name="customize-code-coverage-analysis"></a>コード カバレッジ分析のカスタマイズ
 
@@ -120,9 +120,9 @@ ms.locfileid: "95441829"
 
 Include ノードと Exclude ノードでは、ワイルドカードとは異なる正規表現が使用されます。 すべての一致で、大文字と小文字が区別されます。 次に、例を示します。
 
-- * *.\** _ は任意の文字の文字列と一致します
+- **.\*** は任意の文字の文字列と一致します
 
-- _ *\\.* * はピリオド "." と一致します
+- **\\.** はピリオド "." と一致します
 
 - **\\(   \\)** は "(  )" と一致します
 
