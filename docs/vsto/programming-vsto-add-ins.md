@@ -31,15 +31,15 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c3a4b14a1935d1d276f0884234fcd121b838f39
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971831"
 ---
 # <a name="program-vsto-add-ins"></a>プログラム VSTO アドイン
   VSTO アドインを作成して Microsoft Office アプリケーションを拡張するときは、プロジェクトの `ThisAddIn` クラスに対して直接コードを記述します。 このクラスを使用し、Microsoft Office ホスト アプリケーションのオブジェクト モデルにアクセスする、アプリケーションのユーザー インターフェイス (UI) をカスタマイズする、その他の Office ソリューションに VSTO アドインのオブジェクトを公開するなどの作業を実行できます。
@@ -66,7 +66,7 @@ ms.locfileid: "97525111"
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|
 |Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|
-|Microsoft Office PowerPoint|[アプリケーション](/previous-versions/office/developer/office-2010/ff764034(v=office.14))。|
+|Microsoft Office PowerPoint|[Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
 |Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|
 |Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|
 |Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|
