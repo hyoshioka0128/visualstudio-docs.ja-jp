@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da230a2da87b2dd3e3a85ce3ec6c914e829ccc61
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736945"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936939"
 ---
 # <a name="expression-evaluation-interfaces"></a>式の評価のインターフェイス
 > [!IMPORTANT]
@@ -23,7 +23,7 @@ ms.locfileid: "80736945"
 
  デバッグ SDK の式評価インターフェイスを次に示し [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。
 
-## <a name="discussion"></a>考察 (Discussion)
+## <a name="discussion"></a>ディスカッション
  これらのインターフェイスは、中断モード中に呼び出し履歴で式を評価するために使用されます。 共通言語ランタイム式エバリュエーター (EE) に対してのみ実装されます。
 
  表の各インターフェイスには、次の一覧から実装できるコンポーネントが示されています。
@@ -34,7 +34,7 @@ ms.locfileid: "80736945"
 
 - Visual Studio (VS)
 
-|インターフェイス|実装|説明|
+|インターフェイス|実装|Description|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|変数の数値の別名を表します。|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|変数の数値の別名を表し、式エバリュエーター (EE) がエイリアスのアプリケーションドメインを取得できるようにします。|

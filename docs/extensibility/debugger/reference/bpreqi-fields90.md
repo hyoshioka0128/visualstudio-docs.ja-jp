@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea46939118ec48490280d6a85cc84e144d320d4e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7be8d52700315dfea5619a5d4e6ca875ada0139c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938246"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 ブレークポイント要求について取得する情報を指定する有効な値を列挙します。 この列挙体は [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列挙体を拡張します。
@@ -122,7 +122,7 @@ public enum enum_BPREQI_FIELDS90
 `BPREQI90_ALLFIELDS`\
 構造体のすべてのフィールドを指定し `BP_REQUEST_INFO2` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: Msdbg90
 
 名前空間: VisualStudio。

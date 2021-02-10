@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 837bb7d25ab8dea2b146a98cc65d320b58162685
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d82650fabf467d44b1bd5eba01599c5cb5e40bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938264"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 ブレークポイントが正常に解決されたかどうかを取得するための情報を指定します。
@@ -66,7 +66,7 @@ public enum enum_BPRESI_FIELDS {
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

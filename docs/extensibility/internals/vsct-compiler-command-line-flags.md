@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 53e50e408166eb2d2e1545549cdd6c72018c9553
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938786"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT コンパイラのコマンドライン フラグ
 Visual Studio コマンドテーブル (VSCT) コンパイラには、vsct ファイルのコンパイルが正常に行われるようにするためのコマンドラインスイッチが用意されています。
@@ -76,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  VSCT コンパイラは、以前にビルドされたバイナリファイルを逆コンパイルすることもできます。 これを行うには、のバイナリファイルを指定し \<infile> ます。   バイナリファイルが VSCT コンパイラによって生成された場合、そのシンボルは既に埋め込まれており、出力のセクションにシンボリック名を含む出力が生成され \<Symbols> ます。 バイナリが CTC コンパイラによって生成された場合、出力には実際の Guid と Id が含まれます。 現在のバージョンの Ctc.exe によって生成された * ctsym ファイルがバイナリ入力ファイルと同じフォルダーにある場合、シンボルはそのファイルから読み込まれ、出力に使用されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Visual Studio Command Table (.Vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML スキーマ リファレンス](../../extensibility/vsct-xml-schema-reference.md)
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

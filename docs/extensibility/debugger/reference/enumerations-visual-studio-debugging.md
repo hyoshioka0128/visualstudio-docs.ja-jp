@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80ad4db1090857d87e28d90d8478fbdea0905e86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45b26a6d5bc2a9bdb32d5a8412458e6a126486d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737137"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937128"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>列挙 (Visual Studio のデバッグ)
 次に示すのは、デバッグ SDK の列挙です [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
@@ -169,7 +169,7 @@ ms.locfileid: "80737137"
 
 - [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) スレッドの状態を指定します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg .h、sh. h、または ee
 
  名前空間: VisualStudio。

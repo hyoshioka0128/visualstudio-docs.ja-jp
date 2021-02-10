@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be324ab48d42e859678ccf01d8c75faae6cea381
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8933822ee5bb63b341ff51296ba2884fef2aeb75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935912"
 ---
 # <a name="walkthrough-display-signature-help"></a>チュートリアル: 署名のヘルプを表示する
 シグネチャヘルプ ( *パラメーターヒント* とも呼ばれます) は、ユーザーがパラメーターリストの開始文字 (通常は始めかっこ) を入力したときに、ツールヒントにメソッドの署名を表示します。 パラメーターとパラメーターの区切り記号 (通常はコンマ) が入力されると、ツールヒントが更新され、次のパラメーターが太字で表示されます。 シグネチャヘルプは、次の方法で定義できます。言語サービスのコンテキストでは、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類の署名のヘルプを表示します。または、既存のコンテンツの種類 (たとえば、"text") の署名のヘルプを表示します。 このチュートリアルでは、"text" コンテンツタイプのシグネチャヘルプを表示する方法について説明します。

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937694"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>チュートリアル: SharePoint のサイト列、コンテンツ タイプ、リストの作成
   次の手順では、カスタム SharePoint サイトの列 (または *フィールド*) と、サイト列を使用するコンテンツの種類を作成する方法について説明します。 また、新しいコンテンツタイプを使用するリストを作成する方法も示します。
@@ -64,7 +64,7 @@ ms.locfileid: "96914011"
 
 4. プロジェクトの名前を「 **クリニック**」に変更し、[ **OK** ] をクリックします。
 
-5. [**デバッグ用のサイトとセキュリティレベルの指定**] ダイアログボックスで、新しいカスタムフィールド項目を追加するローカル SharePoint サイトの URL を入力するか、既定の場所 (SystemName) を使用し `http://<` *SystemName* `>/)` ます。
+5. [**デバッグ用のサイトとセキュリティレベルの指定**] ダイアログボックスで、新しいカスタムフィールド項目を追加するローカル SharePoint サイトの URL を入力するか、既定の場所 (SystemName) を使用し `http://<`  `>/)` ます。
 
 6. [ **この SharePoint ソリューションの信頼レベル** を指定してください] セクションで、既定値の [ **サンドボックスソリューションとして配置**] を使用します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "96914011"
 
 3. プロジェクトの名前を「 **クリニック**」に変更し、[ **作成** ] ボタンを選択します。
 
-4. [**デバッグ用のサイトとセキュリティレベルの指定**] ダイアログボックスで、新しいカスタムフィールド項目を追加するローカル SharePoint サイトの URL を入力するか、既定の場所 (SystemName) を使用し `http://<` *SystemName* `>/)` ます。
+4. [**デバッグ用のサイトとセキュリティレベルの指定**] ダイアログボックスで、新しいカスタムフィールド項目を追加するローカル SharePoint サイトの URL を入力するか、既定の場所 (SystemName) を使用し `http://<`  `>/)` ます。
 
 5. [ **この SharePoint ソリューションの信頼レベル** を指定してください] セクションで、既定値の [ **サンドボックスソリューションとして配置**] を使用します。
 
@@ -89,7 +89,7 @@ ms.locfileid: "96914011"
 
 #### <a name="to-add-site-columns"></a>サイト列を追加するには
 
-1. 新しいサイト列を追加します。 これを行うには、**ソリューションエクスプローラー** で、[**クリニック**] プロジェクトを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。
+1. 新しいサイト列を追加します。 これを行うには、**ソリューションエクスプローラー** で、[**クリニック**] プロジェクトを右クリックし、[新しい項目の **追加**] を選択し  >  ます。
 
 2. [ **新しい項目の追加** ] ダイアログボックスで [ **サイト列**] を選択し、名前を **PatientName** に変更して、[ **追加** ] ボタンをクリックします。
 
@@ -144,7 +144,7 @@ ms.locfileid: "96914011"
 
 10. **グループ名** を「**クリニックコンテンツタイプ**」に変更し、その他の設定は既定値のままにします。
 
-11. メニューバーで、[**ファイル**] [すべて保存] の順に選択し、  >  **Save All** コンテンツタイプデザイナーを閉じます。
+11. メニューバーで、[**ファイル**] [すべて保存] の順に選択し、  >  コンテンツタイプデザイナーを閉じます。
 
 ## <a name="create-a-list"></a>リストを作成する
  ここで、新しいコンテンツの種類とサイト列を使用するリストを作成します。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0411f027b105622d806e123bd80f38c4b05281ca
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937707"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>チュートリアル: 基本的なサイト定義プロジェクトの作成
   このチュートリアルでは、いくつかのコントロールを含む視覚的 Web パーツを含む基本的なサイト定義を作成する方法について説明します。 わかりやすくするために、作成する視覚的 Web パーツにはいくつかのコントロールしかありません。 ただし、より高度な SharePoint サイト定義を作成して、より多くの機能を含めることができます。
@@ -49,7 +49,7 @@ ms.locfileid: "96913855"
 
 #### <a name="to-create-a-site-definition-project"></a>サイト定義プロジェクトを作成するには
 
-1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、メニューバーで [**ファイル**] [新規作成] [プロジェクト] の順に選択し  >  **New Project** ます。
+1. メニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** を選択します。 IDE が Visual Basic 開発設定を使用するように設定されている場合は、メニューバーで [**ファイル**] [新規作成] [プロジェクト] の順に選択し  >  ます。
 
     **[新しいプロジェクト]** ダイアログ ボックスが表示されます。
 

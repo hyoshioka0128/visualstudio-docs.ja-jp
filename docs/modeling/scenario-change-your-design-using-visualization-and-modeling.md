@@ -14,15 +14,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 ms.custom: SEO-VS-2020
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b62716c87fafd965652452b6494fe255530e7b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 79f131276172a9df91dd8408149fae66a2f28ca9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938045"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>シナリオ: 視覚化およびモデリングを使用したデザインの変更
 

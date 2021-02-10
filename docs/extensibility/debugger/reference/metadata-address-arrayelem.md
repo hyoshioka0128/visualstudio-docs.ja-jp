@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67e39eb8b03dd6f75ac39155bd744e03084beb0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eef5b203c65ca85cfd9b20e613f53128803e088b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938748"
 ---
 # <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -52,10 +52,10 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 `dwIndex`\
 配列内のこの要素のインデックス。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_ARRAYELEM` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

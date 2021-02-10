@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937446"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックからキャッシュされたデータを取得する
   このチュートリアルでは、クラスを使用して Excel を起動することなく、Microsoft Office Excel ブックにキャッシュされているデータセットからデータを取得する方法について説明 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> します。
@@ -109,7 +109,7 @@ ms.locfileid: "97524843"
 
 7. [ **データベースオブジェクトの選択** ] ページで、[ **テーブル** ] を展開し、[ **Product (saleslt)**] を選択します。
 
-8. **[完了]** をクリックします。
+8. **[Finish]** をクリックします。
 
     *Adventureworksltdataset.xsd* ファイルが **AdventureWorksDataSet** プロジェクトに追加されます。 このファイルでは、次の項目を定義します。
 

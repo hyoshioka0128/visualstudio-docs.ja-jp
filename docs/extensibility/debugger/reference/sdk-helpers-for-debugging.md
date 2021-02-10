@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936003"
 ---
 # <a name="sdk-helpers-for-debugging"></a>デバッグ用の SDK ヘルパー
 これらの関数と宣言は、C++ でデバッグエンジン、式エバリュエーター、およびシンボルプロバイダーを実装するためのグローバルヘルパー関数です。
@@ -123,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>式エバリュエーター関数
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |GetEEMetric|レジストリからメトリック値を取得します。|
 |SetEEMetric|指定されたメトリック値をレジストリに設定します。|
@@ -132,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>例外関数
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |GetExceptionMetric|レジストリからメトリック値を取得します。|
 |SetExceptionMetric|指定されたメトリック値をレジストリに設定します。|
@@ -141,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>シンボルプロバイダー関数
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |GetSPMetric|レジストリからメトリック値を取得します。|
 |SetSPMetric|指定されたメトリック値をレジストリに設定します。|
@@ -149,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>列挙関数
 
-|機能|説明|
+|Function|説明|
 |--------------|-----------------|
 |EnumMetricSections|指定したメトリックの種類のすべてのメトリックを列挙します。|
 |EnumDebugEngine|登録されているデバッグエンジンを列挙します。|
@@ -419,7 +419,7 @@ HRESULT EnumMetricSections(
 |*[例外の種類]*|処理できる例外のクラスを識別するサブキーの一般的なタイトル。 一般的な名前は、 **C++ 例外**、 **Win32 例外**、 **共通言語ランタイム例外**、および **ネイティブ Run-Time チェック** です。 これらの名前は、ユーザーに対して特定のクラスの例外を識別するためにも使用されます。|
 |*例外的*|例外の名前。たとえば、 **_com_error** や **制御を解除** します。 これらの名前は、ユーザーに対する特定の例外を識別するためにも使用されます。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  これらのファイルは、 [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK のインストールディレクトリにあります (既定では *[drive]*、VISUAL Studio 2010 sdk \\ )。
 
  ヘッダー: すべての/dbgmetrich

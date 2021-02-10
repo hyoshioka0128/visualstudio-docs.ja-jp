@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 175ca46645d55106f18c163c54135316d73ea3ec
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ef415763a67232f79b269650abecfe6bcabe6bd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993238"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937200"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope アクティビティ デザイナー
 
@@ -43,7 +43,7 @@ ms.locfileid: "96993238"
 |<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|取り消しロジックの対象となるアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.CancellationScope.Body%2A> 、 **CancellationScope** アクティビティデザイナーの [ **Body** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
 |<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|取り消しが発生した場合に実行されるアクティビティを指定します。 アクティビティを追加するには <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 、 **CancellationScope** アクティビティデザイナーの [ **CancellationHandler** ] ボックスに、[**ツールボックス**] からアクティビティをドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [トランザクション](../workflow-designer/transaction-activity-designers.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)

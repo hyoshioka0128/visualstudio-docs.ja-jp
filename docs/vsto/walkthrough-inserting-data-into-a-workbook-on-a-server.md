@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 23acfc79514d034faa6fce5c2c27a8edcaa4c58d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937437"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックにデータを挿入する
   このチュートリアルでは、クラスを使用して Excel を起動することなく、Microsoft Office Excel ブックにキャッシュされているデータセットにデータを挿入する方法について説明 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> します。
@@ -108,7 +108,7 @@ ms.locfileid: "97526215"
 
 7. [ **データベースオブジェクトの選択** ] ページで、[ **テーブル** ] を展開し、[ **Product (saleslt)**] を選択します。
 
-8. **[完了]** をクリックします。
+8. **[Finish]** をクリックします。
 
     *Adventureworksltdataset.xsd* ファイルが **AdventureWorksDataSet** プロジェクトに追加されます。 このファイルでは、次の項目を定義します。
 

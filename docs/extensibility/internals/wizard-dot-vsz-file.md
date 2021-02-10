@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe32028f271d02dd518509bb86906197e6acb4e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935860"
 ---
 # <a name="wizard-vsz-file"></a>ウィザード (.Vsz) ファイル
 
@@ -48,7 +48,7 @@ Param="WIZARDUI = FALSE"
 
 既定のロケール ID を .vsz ファイルに追加するには、= xxxx を指定します。ここで、 `FALLBACK_LCID` xxxx はロケール id (たとえば、英語の場合は 1033) を指定します。 `FALLBACK_LCID`パラメーターが定義されている場合、現在の ID が見つからない場合、ウィザードは指定されたフォールバックロケール ID を使用します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [カスタム パラメーター](../../extensibility/internals/custom-parameters.md)
 - [ウィザード](../../extensibility/internals/wizards.md)
