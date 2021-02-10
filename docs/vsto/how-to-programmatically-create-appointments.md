@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Outlook calendars [Office development in Visual Studio], creating appointments
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 35d52ffa360d2cf348842319705a237049db4435
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2d9e9ccd2d69c1f0956a3160589ab2204059d83e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523968"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964096"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>方法: プログラムによって予定を作成する
   この例では、予定を作成し、会議出席依頼に受信者を追加します。

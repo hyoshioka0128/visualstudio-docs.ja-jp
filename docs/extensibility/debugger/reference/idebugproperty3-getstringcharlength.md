@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721128"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963121"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 関連付けられたプロパティの文字列内の文字数を返します。
@@ -48,11 +48,11 @@ int GetStringCharLength(
 ## <a name="return-value"></a>戻り値
 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 通常、このメソッドは、 [Getstringchars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) メソッドの呼び出し用のバッファーを割り当てる準備として使用されます。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを公開する**cproperty**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを公開する **cproperty** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)

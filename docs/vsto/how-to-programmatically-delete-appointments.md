@@ -13,15 +13,15 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56bd9876fa24610412d66e71800a24b413dac576
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0520014edc97f7517338652fa89e4c8269ba552c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526803"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963927"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>方法: プログラムによって予定を削除する
   この例では、定期的な予定の 1 つのインスタンスを削除します。 定期的な予定のインスタンスが 2006 年 6 月 28 日 8:00 に発生することを想定しています。

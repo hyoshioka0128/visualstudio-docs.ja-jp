@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc3dd7a34e4f9a3e1b933781aeaf4e18cad7ec17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26de14b4c5e23334da85d49d5192ec332e418af8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961925"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 この構造体は、クラスのメソッドのアドレスを表します。
@@ -55,10 +55,10 @@ public struct METADATA_ADDRESS_METHOD {
  `dwVersion`\
  メソッドのバージョン (この値はシンボルプロバイダーに固有です)。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_METHOD` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

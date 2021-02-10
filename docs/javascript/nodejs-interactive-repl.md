@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962692"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>Node.js の対話型ウィンドウを使用する
 
-Node.js Tools for Visual Studio には、インストールされている Node.js ランタイム用の対話型ウィンドウが含まれます。 このウィンドウを使用すると、JavaScript コードを入力して結果をすぐに見たり、npm コマンドを実行して現在のプロジェクトと対話したりできます。 対話型ウィンドウは、REPL (**R**ead/**E**valuate/**P**rint **L**oop) とも呼ばれます。
+Node.js Tools for Visual Studio には、インストールされている Node.js ランタイム用の対話型ウィンドウが含まれます。 このウィンドウを使用すると、JavaScript コードを入力して結果をすぐに見たり、npm コマンドを実行して現在のプロジェクトと対話したりできます。 対話型ウィンドウは、REPL (**R** ead/**E** valuate/**P** rint **L** oop) とも呼ばれます。
 
 ## <a name="open-the-interactive-window"></a>対話型ウィンドウを開く
 

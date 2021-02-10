@@ -14,22 +14,22 @@ helpviewer_keywords:
 - ListObject control, validating data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e60f19da0d36c5a57f0151318d6d76b43a80de37
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: dbb6582f6211f851b4734f4e9a074ce5c0bd8d8a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961379"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>方法: ListObject コントロールに新しい行が追加されたときにデータを検証する
   ユーザーはデータにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> コントロールに新しい行を追加できます。 変更をデータ ソースにコミットする前に、ユーザーのデータを検証できます。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
-## <a name="data-validation"></a>データ検証
+## <a name="data-validation"></a>データの検証
  データにバインドされている <xref:Microsoft.Office.Tools.Excel.ListObject> に行が追加されるたびに、 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> イベントが発生します。 このイベントを処理することで、データの検証を実行できます。 たとえば、アプリケーションで、18と65の間の従業員のみをデータソースに追加できるようにする必要がある場合は、行が追加される前に、入力された年齢がその範囲内であることを確認します。
 
 > [!NOTE]

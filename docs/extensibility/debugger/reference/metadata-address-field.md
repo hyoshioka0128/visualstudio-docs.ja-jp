@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 15ab45fe-6b3b-4e09-880b-31b34f523607
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe9901ac9dab4a1ec4b5e8467f3063845dfb74f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 686eeff2012c02442d166966fff32abc0b1cdf32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961977"
 ---
 # <a name="metadata_address_field"></a>METADATA_ADDRESS_FIELD
 
@@ -47,11 +47,11 @@ public struct METADATA_ADDRESS_FIELD {
 
 [C++] `_mdToken` は、 `typedef` 32 ビットのです `int` 。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_FIELD` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ヘッダー: sh. h
 

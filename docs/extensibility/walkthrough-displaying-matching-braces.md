@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce40f5673a8aba4ab3f7714a3aafdc3de4697cc4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877950"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961730"
 ---
 # <a name="walkthrough-display-matching-braces"></a>チュートリアル: 一致する中かっこの表示
 一致させるかっこを定義することによる中かっこの一致など、言語に基づく機能を実装し、カレットが中かっこのいずれかにある場合は、対応する中かっこにテキストマーカータグを追加します。 言語のコンテキストで中かっこを定義し、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類のタグだけを適用するか、既存のコンテンツの種類 ("text" など) にタグを適用することができます。 次のチュートリアルでは、かっこに一致するタグを "text" コンテンツタイプに適用する方法を示します。

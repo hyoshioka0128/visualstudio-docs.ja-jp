@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e5822d1dc79835dd6fdcc3a70c3392dbd3d1aab
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: ca78cea409f559583507fd4b5b7c9fc43f9a5ffc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963732"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>[関連付け初期化子の追加] ダイアログ ボックス
 
@@ -44,6 +44,6 @@ ms.locfileid: "96996358"
 
  **Receive** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所のワークフローデザイナー画面にドロップできます。 **Receive** アクティビティデザイナーを削除すると、receive という <xref:System.ServiceModel.Activities.Receive> 既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 **Receive** アクティビティデザイナーを選択し、[**関連付け初期化子の追加**] ダイアログボックスのプロパティグリッドで、 **Correlationinitializers** プロパティの (コレクション) テキストの横にある省略記号ボタンをクリックします。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [[関連付け初期化] ダイアログ ボックス](../workflow-designer/initialize-correlation-dialog-box.md)

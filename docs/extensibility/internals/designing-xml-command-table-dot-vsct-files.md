@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963498"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML コマンドテーブル (vsct) ファイルのデザイン
 XML コマンドテーブル (*vsct*) ファイルには、VSPackage のコマンド項目のレイアウトと外観が記述されています。 コマンド項目には、ボタン、コンボボックス、メニュー、ツールバー、およびコマンド項目のグループが含まれます。 この記事では、XML コマンドテーブルファイル、コマンド項目とメニューに対する影響、およびそれらの作成方法について説明します。
@@ -91,7 +91,7 @@ XML コマンドテーブル (*vsct*) ファイルには、VSPackage のコマ�
 
 - [VisibilityConstraints 要素](../../extensibility/visibilityconstraints-element.md): コマンドを常に表示するかどうか、または特定のダイアログボックスまたはウィンドウが表示されるときなど、特定のコンテキストでのみ表示するかどうかを指定します。 この要素の値を持つメニューとコマンドは、指定されたコンテキストがアクティブな場合にのみ表示されます。 既定の動作では、コマンドは常に表示されます。
 
-- [KeyBindings 要素](../../extensibility/keybindings-element.md): コマンドのキーバインドを指定します。 つまり、 **Ctrl** S などのコマンドを実行するために押す必要がある1つまたは複数のキーの組み合わせです + **S**。
+- [KeyBindings 要素](../../extensibility/keybindings-element.md): コマンドのキーバインドを指定します。 つまり、 **Ctrl** S などのコマンドを実行するために押す必要がある1つまたは複数のキーの組み合わせです + 。
 
 - [Used commands 要素](../../extensibility/usedcommands-element.md): [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 指定されたコマンドが他のコードによって実装されているが、現在の VSPackage がアクティブのときにコマンドの実装を提供することを環境に通知します。
 
