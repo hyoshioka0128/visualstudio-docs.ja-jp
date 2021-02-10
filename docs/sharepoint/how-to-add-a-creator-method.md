@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934885"
 ---
 # <a name="how-to-add-a-creator-method"></a>方法: Creator メソッドを追加する
   Creator メソッドは、エンティティのデータソースに新しいデータを追加します。 ユーザーがモデルに基づくリストの **リボン** で [**新しい項目**] ボタンを選択すると、BUSINESS Data Connectivity (BDC) サービスはこのメソッドを呼び出します。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -33,7 +33,7 @@ ms.locfileid: "96915454"
 
 1. **BDC デザイナー** で、エンティティを選択します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  > **BDC メソッドの詳細** を表示] を選択します。
+2. メニューバーで、[   >  **その他の Windows**  > **BDC メソッドの詳細** を表示] を選択します。
 
     [ **BDC メソッドの詳細** ] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 

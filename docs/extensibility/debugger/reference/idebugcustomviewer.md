@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c44d2289180ece35725b9258e9d20abeb3a4cac3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ca1bb92f5db821b1d581f1a573032fea004fb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934319"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 このインターフェイスにより、式エバリュエーター (EE) は、必要な形式でプロパティの値を表示できます。
@@ -50,7 +50,7 @@ COM の関数を呼び出すと、 `CoCreateInstance` このインターフェ�
 
 通常、カスタムビューアーには、データの読み取り専用ビューが用意されています。 [Displayvalue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)に渡される[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスには、文字列以外のプロパティ値を変更するためのメソッドがないためです。 データの任意のブロックの変更をサポートするために、EE は、インターフェイスを実装するのと同じオブジェクトにカスタムインターフェイスを実装し `IDebugProperty3` ます。 このカスタムインターフェイスは、任意のデータブロックを変更するために必要なメソッドを提供します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
@@ -105,7 +105,7 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 ```
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

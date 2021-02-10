@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 93a32ed2bb4f375e8938c9a3b9ff34c7af47e0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363108"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935600"
 ---
 # <a name="customizing-copy-behavior"></a>コピー動作のカスタマイズ
 Visual Studio の視覚化およびモデリング SDK で作成されたドメイン固有言語 (DSL) では、ユーザーが要素をコピーして貼り付けるときの動作を変更できます。

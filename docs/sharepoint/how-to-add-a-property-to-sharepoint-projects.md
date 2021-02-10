@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: cde9235ffb7c692240c8f16ea0e93f49c79f002e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850157"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934872"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加する
   プロジェクトの拡張機能を使用して、任意の SharePoint プロジェクトにプロパティを追加できます。 **ソリューションエクスプローラー** でプロジェクトを選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。

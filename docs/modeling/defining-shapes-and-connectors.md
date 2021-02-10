@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 898bb0f3a923cfeac863b365e4746a63ccbc4c91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935327"
 ---
 # <a name="define-shapes-and-connectors"></a>図形とコネクタの定義
 
@@ -36,7 +36,7 @@ DSL 図は、線または *コネクタ* で interlinked *図形* のコレク�
 
 シェイプには次のような種類があります。
 
-|シェイプの種類|説明|
+|シェイプの種類|Description|
 |-|-|
 |ジオメトリ シェイプ|汎用の四角形または楕円のシェイプ。 シェイプの境界を基準とする特定の位置にテキストやアイコン デコレータを表示できます。 また、geometry 図形内に図形を入れ子にすることもできます。|
 |コンパートメント シェイプ|UML クラスのようなヘッダーやコンパートメント含む四角形。 各コンパートメントにはテキスト行のリストが含まれます。<br /><br /> 通常、行は、シェイプによって表される要素の下に埋め込まれた要素を表します。 たとえば、Class Diagrams ソリューション テンプレートから DSL を作成します。|

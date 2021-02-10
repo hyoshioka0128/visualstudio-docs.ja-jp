@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9723c146ecb5096ea6f3635a3d5cae5c48e573e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06711f7112aaa528b7274867bc133368075d19ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934378"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 マネージコードのジェネリック型のフィールドのインスタンスを表します。
@@ -34,7 +34,7 @@ IDebugGenericFieldInstance : IUnknown
 |[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|このインスタンスの型パラメーターの引数を取得します。|
 |[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|このインスタンスの型パラメーター引数の数を返します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。
