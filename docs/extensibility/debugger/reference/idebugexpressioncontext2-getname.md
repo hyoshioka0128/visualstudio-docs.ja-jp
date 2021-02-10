@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c2b70d22-17af-4986-a7e3-930910367216
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 500d5c1788e837a27b4affada50ecc59db122e8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8529e83de0f5de3d5d202885cf37b29d21fa3e59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949533"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 評価コンテキストの名前を取得します。
@@ -28,13 +28,13 @@ ms.locfileid: "80729663"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName( 
+int GetName( 
    out string pbstrName
 );
 ```

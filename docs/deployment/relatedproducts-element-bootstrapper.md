@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949689"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;"関連性のある製品" &gt; 要素 (ブートストラップ)
 要素は、 `RelatedProducts` または現在の製品に含まれている他の製品を定義します。
@@ -85,4 +85,4 @@ ms.locfileid: "94350570"
 ```
 
 ## <a name="see-also"></a>関連項目
-- [\<Product> element](../deployment/product-element-bootstrapper.md)
+- [\<Product> 要素](../deployment/product-element-bootstrapper.md)

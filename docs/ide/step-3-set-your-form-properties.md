@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b858ed302c7fe89049585edb7cc5c4391a4789b
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 10f021e8f8151216cd2728e1e9723b0edb9b3e1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950732"
 ---
 # <a name="step-3-set-your-form-properties"></a>手順 3: フォームのプロパティの設定
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480617"
 1. フォームを選択したら、**[プロパティ]** ウィンドウで **Text** プロパティを探します。 一覧の並べ替え方法によっては、下へのスクロールが必要になる場合があります。 **[Text]** をクリックし、「**Picture Viewer**」と入力して **Enter** キーを押します。  フォームのタイトル バーに「**Picture Viewer**」というテキストが表示され、**[プロパティ]** ウィンドウが次のスクリーンショットのようになります。
 
     ![プロパティ ウィンドウ](../ide/media/express_edittextproperty.png)<br>
-   **_[プロパティ]_* _ _ウィンドウ*
+   ***[プロパティ]** _ _ウィンドウ*
 
    > [!NOTE]
    > プロパティは、**項目別** または **アルファベット順** に並べ替えることができます。 これらの 2 つの表示を切り替えるには、**[プロパティ]** ウィンドウのボタンを使用します。 このチュートリアルでは、**アルファベット順** で表示した方がプロパティを探しやすくなります。
@@ -58,7 +58,7 @@ ms.locfileid: "96480617"
    - ツール バーで、 **[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
       ![[デバッグの開始] ツール バー ボタン](../ide/media/express_icondebug.png)<br>
-     **_[デバッグの開始]_* _ _ツール バー ボタン*
+     ***[デバッグの開始]** _ _ツール バー ボタン*
 
      前の手順のときと同様に、IDE でアプリがビルドおよび実行され、ウィンドウが表示されます。
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0154816985076373c3ced4981aa714971a9ded29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349361"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949650"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;スケジュール &gt; 要素 (ブートストラップ)
 要素には、要素 `Schedules` `Schedule` によって定義されたコマンドを実行する特定の時刻を定義する要素が含まれ `Command` ます。
@@ -65,5 +65,5 @@ ms.locfileid: "94349361"
  要素は、 `AfterPackage` 指定されたパッケージのインストール後にコマンドを実行するようにインストーラーに指示します。
 
 ## <a name="see-also"></a>関連項目
-- [\<Product> element](../deployment/product-element-bootstrapper.md)
+- [\<Product> 要素](../deployment/product-element-bootstrapper.md)
 - [製品およびパッケージスキーマリファレンス](../deployment/product-and-package-schema-reference.md)

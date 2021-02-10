@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2b94b44bfa442805c4c785a48c9f60f56eb8e002
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950589"
 ---
 # <a name="projectitem-element"></a>ProjectItem 要素
   SharePoint プロジェクトアイテムを表します。 この要素は、 *sharepointprojectitem.spdata* ファイルの必須のルート要素です。
@@ -53,7 +53,7 @@ ms.locfileid: "96305052"
 |**FeatureReceiverAssembly**|**Xs: string** 属性 (省略可能)。<br /><br /> この SharePoint プロジェクトアイテムのフィーチャーレシーバーを定義するアセンブリの完全修飾名を指定します。 フィーチャーレシーバーの詳細については、「 [プロジェクト項目でのパッケージ化と配置の情報の提供](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)」を参照してください。 完全修飾アセンブリ名の詳細については、「 [アセンブリ名](/dotnet/framework/app-domains/assembly-names)」を参照してください。|
 |**SupportedTrustLevels**|**Xs: string** 属性 (省略可能)。<br /><br /> この SharePoint プロジェクト項目でサポートされる信頼レベルを指定します。 この値には、次の文字列のいずれかを指定できます: サンドボックス、FullTrust、またはすべて。 値 All は、サンドボックスと FullTrust の両方を指定します。<br /><br /> カスタム SharePoint プロジェクト項目の種類では、この属性の値は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> メソッドの実装でプロパティに割り当てる値に対応し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> ます。 この属性に別の値を指定すると、Visual Studio は、プロパティで指定したのと同じ信頼レベルを指定するように値を上書きし <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedTrustLevels%2A> ます。|
 |**SupportedDeploymentScopes**|**Xs: string** 属性 (省略可能)。<br /><br /> この SharePoint プロジェクトアイテムがサポートする配置スコープを指定します。 この値は、ファーム、サイト、Web、WebApplication、またはパッケージの1つ以上の文字列で構成されるコンマ区切りの文字列です。 例: `Web, Site`<br /><br /> カスタム SharePoint プロジェクト項目の種類では、この属性の値は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> メソッドの実装でプロパティに割り当てる値に対応し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> ます。 この属性に別の値を指定すると、Visual Studio は、プロパティで指定したのと同じ信頼レベルを指定するように値を上書きし <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.SupportedDeploymentScopes%2A> ます。|
-|**Type**|**Xs: string** 属性が必要です。<br /><br /> SharePoint プロジェクトアイテムの識別子。 カスタム SharePoint プロジェクト項目の種類では、識別子はに渡す文字列です <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 。 詳細については、「 [方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。<br /><br /> Visual Studio に含まれる組み込みの SharePoint プロジェクト項目の識別子の一覧については、「 [sharepoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)」を参照してください。|
+|**種類**|**Xs: string** 属性が必要です。<br /><br /> SharePoint プロジェクトアイテムの識別子。 カスタム SharePoint プロジェクト項目の種類では、識別子はに渡す文字列です <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 。 詳細については、「 [方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。<br /><br /> Visual Studio に含まれる組み込みの SharePoint プロジェクト項目の識別子の一覧については、「 [sharepoint プロジェクト項目の拡張](../sharepoint/extending-sharepoint-project-items.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
