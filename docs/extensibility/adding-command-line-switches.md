@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939228"
 ---
 # <a name="add-command-line-switches"></a>コマンドラインスイッチの追加
 *devenv.exe* の実行時に、VSPackage に適用するコマンドラインスイッチを追加できます。 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>スイッチとそのプロパティの名前を宣言するには、を使用します。 この例では、 **Addcommandswitchpackage** という名前の VSPackage のサブクラスの MySwitch スイッチが追加され、引数と VSPackage が自動的に読み込まれます。
@@ -69,9 +69,9 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 
  パッケージが読み込まれるたびに、コマンドラインスイッチを確認する必要があります。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv コマンドライン スイッチ](../ide/reference/devenv-command-line-switches.md)
 - [CreatePkgDef ユーティリティ](../extensibility/internals/createpkgdef-utility.md)
-- [Pkgdef ファイル](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [.Pkgdef ファイル](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

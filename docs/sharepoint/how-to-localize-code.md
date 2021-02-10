@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e76b8cfb2e9fcb513905918bd4ae87524078f6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931644"
 ---
 # <a name="how-to-localize-code"></a>方法: コードをローカライズする
   ローカライズされていないコードでは、ハードコーディングされた文字列値が使用されています。 コードの文字列をローカライズするには、それらを <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> の呼び出しに置き換えます。このメソッドは、ローカライズされたリソースを参照します。
@@ -29,7 +29,7 @@ ms.locfileid: "96304580"
 
 #### <a name="to-localize-code"></a>コードをローカライズするには
 
-1. **ソリューションエクスプローラー** で、プロジェクト項目のショートカットメニューを開き、[モジュールの **追加**] を選択し  >  **Module** ます。
+1. **ソリューションエクスプローラー** で、プロジェクト項目のショートカットメニューを開き、[モジュールの **追加**] を選択し  >  ます。
 
      [ **リソースファイル** ] テンプレートを選択します。
 

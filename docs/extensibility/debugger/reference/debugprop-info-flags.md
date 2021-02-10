@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa7e4a498188dc91f2a47b3ccf27f367f15ec77b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 745ecf4efa661c31e230a25d23cfd66cb5d5bb51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737395"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939124"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 デバッグプロパティオブジェクトについて取得する情報を指定します。
@@ -87,7 +87,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 フィールドを初期化/使用 `dwAttrib` します。
 
 `DEBUGPROP_INFO_PROP`\
-IDebugProperty2 インターフェイスを含むフィールドを初期化/使用し `pProperty` ます。 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+IDebugProperty2 インターフェイスを含むフィールドを初期化/使用し `pProperty` ます。 [](../../../extensibility/debugger/reference/idebugproperty2.md)
 
 `DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
 値フィールドに、この型のオブジェクトの自動展開値 (使用可能な場合) が含まれていることを指定します。
@@ -117,7 +117,7 @@ Beautified 値またはメンバーを返さないでください (つまり、�
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

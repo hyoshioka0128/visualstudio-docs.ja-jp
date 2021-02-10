@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9e311a567d32ee083bcc13f417c248f5f3d3ee5a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937395"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>チュートリアル: NamedRange コントロールのイベントに対するプログラミング
   このチュートリアルでは、 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio の Office 開発ツールを使用して、Microsoft Office Excel ワークシートにコントロールを追加し、そのイベントに対してプログラムを作成する方法について説明します。

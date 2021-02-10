@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d7891687a76d0023b54be2c44c3b5fc09c97f010
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932796"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 要素 (Visual Studio テンプレート)
 アセンブリに関する情報を指定します。このアセンブリは、プロジェクトにアセンブリの参照を追加するためにテンプレートで使用されます。
@@ -72,7 +72,7 @@ ms.locfileid: "94671647"
     <Assembly> System </Assembly>
     ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  `Assembly` は `Reference` に必須の子要素です。
 
  、、およびの各要素は、 `Reference` `References,` `Assembly` 属性値がである *.vstemplate* ファイルでのみ使用できます `Type` `Item` 。

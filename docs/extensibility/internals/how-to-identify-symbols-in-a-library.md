@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b1dab9dc6bee4ed987141057194d8b00ff35f99
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: b4e4c551c516b78ababb2400f7cfbd699ab06627
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932593"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリ内のシンボルを識別する
 シンボル参照ツールは、シンボルの階層ビューを表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスメンバー、およびその他の言語要素を表します。

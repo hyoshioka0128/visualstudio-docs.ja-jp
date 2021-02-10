@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933610"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Outlook フォーム領域を作成するためのガイドライン
   次に示す情報は、フォーム領域の最適化と、潜在的な問題の回避に役立ちます。
@@ -42,7 +42,7 @@ ms.locfileid: "96848093"
 ## <a name="use-form-region-names"></a><a name="UsingFormRegions"></a> フォーム領域名を使用する
  フォーム領域は、いくつかの名前を使用して記述されます。 これらの名前の違いと、その名前がフォーム領域に与える影響を理解することが大切です。 次の表は、それぞれの名前の説明です。
 
-|フォーム領域の名前|説明|
+|フォーム領域の名前|Description|
 |----------------------|-----------------|
 |フォーム領域の項目名|**[新しい項目の追加]** ダイアログ ボックスで **Outlook フォーム領域** のアイテムに指定した名前です。 これはフォーム領域コード ファイルの名前で、 **ソリューション エクスプローラー** に表示されます。|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> プロパティ|この名前は、 **新しい Outlook フォーム領域** ウィザードの **[説明用のテキストを指定し、表示設定を選択します]** ページで指定します。 この名前は、 **[プロパティ]** ウィンドウに **FormRegionName** プロパティとして表示されます。<br /><br /> <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> プロパティを使用して、Outlook ユーザー インターフェイス (UI) のフォーム領域を識別するラベルを指定します。 分離フォーム領域の場合、この名前は Outlook アイテムのリボンにボタンとして表示されます。<br /><br /> 隣接フォーム領域の場合、この名前は、フォーム領域上のヘッダー テキストとして表示されます。|
@@ -86,7 +86,7 @@ ms.locfileid: "96848093"
 
   **ページ** アイコンは、分離、置換、またはすべて置換のフォーム領域を含むアイテムについて、インスペクターのリボンに表示されます。
 
-  **ウィンドウ** アイコンは、 **Alt** + 置換フォーム領域またはすべて置換フォーム領域を表示する開いているアイテムについて、通知領域および Alt **Tab** ダイアログボックスに表示されます。
+  **ウィンドウ** アイコンは、  + 置換フォーム領域またはすべて置換フォーム領域を表示する開いているアイテムについて、通知領域および Alt **Tab** ダイアログボックスに表示されます。
 
 ## <a name="see-also"></a>関連項目
 - [実行時のフォーム領域へのアクセス](../vsto/accessing-a-form-region-at-run-time.md)

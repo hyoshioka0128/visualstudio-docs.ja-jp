@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d117ab18022285e5cd52f18a1de01adeafbc5df3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597640"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937102"
 ---
 # <a name="add-search-to-a-tool-window"></a>ツールウィンドウへの検索の追加
 拡張機能でツールウィンドウを作成または更新するときに、Visual Studio の他の場所に表示されるのと同じ検索機能を追加できます。 この機能には、次の機能があります。
@@ -84,7 +84,7 @@ ms.locfileid: "95597640"
 
 5. プロジェクトをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されます。
 
-6. メニューバーで、[ **View**  >  **その他の Windows**  >  **testsearch** の表示] を選択します。
+6. メニューバーで、[   >  **その他の Windows**  >  **testsearch** の表示] を選択します。
 
      ツールウィンドウが表示されますが、検索コントロールはまだ表示されていません。
 

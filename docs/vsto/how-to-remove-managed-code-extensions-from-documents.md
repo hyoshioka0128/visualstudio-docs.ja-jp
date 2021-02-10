@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be32109e2a34df8605c0dbe5ba9f1df4e32cfc55
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: fea8a8f73155875f9a10e9d8138ee4b345d531d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942153"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>方法: マネージコード拡張をドキュメントから削除する
   Microsoft Office Word または Microsoft Office Excel のドキュメントレベルのカスタマイズの一部であるドキュメントまたはブックから、プログラムによってカスタマイズアセンブリを削除できます。 その後、ユーザーはドキュメントを開いて内容を表示できますが、ドキュメントに追加したカスタムユーザーインターフェイス (UI) は表示されず、コードは実行されません。

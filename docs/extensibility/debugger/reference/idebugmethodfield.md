@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7dc9030-fc98-4cf1-b943-37a4003300b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 061035933e57ea4ca8e7857f68ac3d6311bae32c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 95f79062c4ca2452d6ed271660841fccb8adfca3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941815"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 このインターフェイスは、メソッドを記述します。
@@ -25,7 +25,7 @@ ms.locfileid: "80727064"
 ## <a name="syntax"></a>構文
 
 ```
-IDebugMethodField : IDebugContainerField
+IDebugMethodField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>実装側の注意
@@ -51,7 +51,7 @@ IDebugMethodField : IDebugContainerField
 ## <a name="remarks"></a>解説
  メソッドには、ローカル変数だけでなく、パラメーターを含めることもできます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

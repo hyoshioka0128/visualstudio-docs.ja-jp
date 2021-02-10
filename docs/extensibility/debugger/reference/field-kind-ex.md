@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3742e60c1bc8a0e490ca83ba14eadc4b879d3e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936900"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに格納できるその他の種類のフィールドを列挙します。 この列挙体は [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 列挙体を拡張します。
@@ -54,7 +54,7 @@ public enum enum_FIELD_KIND_EX
 `FIELD_TYPE_EX_CLASSVAR`\
 フィールドにクラス変数が含まれています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: Sh. h
 
 名前空間: VisualStudio。

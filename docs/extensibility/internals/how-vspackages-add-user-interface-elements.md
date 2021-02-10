@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761089"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934125"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage のユーザーインターフェイス要素の追加方法
 VSPackage を使用すると、ユーザーインターフェイス (UI) 要素 (メニュー、ツールバー、ツールウィンドウなど) を、 *vsct* ファイルを使用して Visual Studio に追加できます。
@@ -83,7 +83,7 @@ UI 要素のデザインガイドラインについては、「 [Visual Studio �
 
 - `priority`親メニューまたはグループ内の UI 要素の配置を決定する属性。
 
-- [Parent element](../../extensibility/parent-element.md) `guid` `id` 親のメニューまたはグループのシグネチャを指定する属性と属性を持つ親要素。
+- [](../../extensibility/parent-element.md) `guid` `id` 親のメニューまたはグループのシグネチャを指定する属性と属性を持つ親要素。
 
 #### <a name="menus"></a>メニュー
 各メニューは、セクションの [menu 要素](../../extensibility/menu-element.md) として定義され `Menus` ます。 メニューには `guid` 、、、の各 `id` `priority` 属性、および要素と、 `Parent` 次の追加の属性と子が必要です。
@@ -187,7 +187,7 @@ Combos は、セクションで定義されてい `Combos` ます。 各 `Combo`
 
 |要素|コマンドテーブルのこのセクションで定義されています。|(親またはセクション内の配置によって、 `CommandPlacements` またはその両方) が含まれている可能性があります。|含めることができます (親と呼ばれます)|
 |-------------| - | - | - |
-|グループ|[Groups 要素](../../extensibility/groups-element.md)、IDE、other vspackage|メニュー、グループ、項目自体|メニュー、グループ、およびコマンド|
+|Group|[Groups 要素](../../extensibility/groups-element.md)、IDE、other vspackage|メニュー、グループ、項目自体|メニュー、グループ、およびコマンド|
 |メニュー|[Menus 要素](../../extensibility/menus-element.md)、IDE、other vspackage|1 ~ *n 個* のグループ|0 ~ *n 個* のグループ|
 |ツール バー|[Menus 要素](../../extensibility/menus-element.md)、IDE、other vspackage|項目自体|0 ~ *n 個* のグループ|
 |メニュー項目|[Buttons 要素](../../extensibility/buttons-element.md)、IDE、other vspackage|1 ~ *n* 個のグループ、項目自体|-0 ~ *n 個* のグループ|

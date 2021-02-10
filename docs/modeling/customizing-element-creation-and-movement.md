@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b84f638876270658be2f08a7e375540f0329a1d6
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 01867bf4c5d3e9c60ad4a2ba0ed76c45eca055c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935587"
 ---
 # <a name="customizing-element-creation-and-movement"></a>要素作成処理および要素移動処理のカスタマイズ
 
@@ -232,7 +232,7 @@ Merge ディレクティブには、次の2種類があります。
 
 5. **DslFiles\DomainClasses.cs** の内容を検査します。 という名前のメソッドを検索 `MergeRelate` し、その内容を確認します。 これは、独自のバージョンを記述するのに役立ちます。
 
-6. 新しいコードファイルで、受信側クラスの部分クラスを記述し、メソッドをオーバーライドし `MergeRelate` ます。 基本メソッドを必ず呼び出してください。 例:
+6. 新しいコードファイルで、受信側クラスの部分クラスを記述し、メソッドをオーバーライドし `MergeRelate` ます。 基本メソッドを必ず呼び出してください。 次に例を示します。
 
     ```csharp
     partial class ExampleModel

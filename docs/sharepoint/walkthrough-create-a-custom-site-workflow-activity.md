@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913957"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937720"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>チュートリアル: サイトのカスタム ワークフロー アクティビティの作成
   このチュートリアルでは、を使用してサイトレベルワークフローのカスタムアクティビティを作成する方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 (サイトレベルのワークフローは、サイトのリストだけでなく、サイト全体に適用されます)。カスタムアクティビティでは、バックアップのアナウンスリストを作成し、お知らせリストの内容をそこにコピーします。
@@ -54,7 +54,7 @@ ms.locfileid: "96913957"
 
 #### <a name="to-create-a-site-workflow-custom-activity-project"></a>サイトワークフローカスタムアクティビティプロジェクトを作成するには
 
-1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
+1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >   、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
 2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -94,7 +94,7 @@ ms.locfileid: "96913957"
      [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
      [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
 
-4. プロジェクトを保存し、メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し  >  **Build Solution** ます。
+4. プロジェクトを保存し、メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し  >  ます。
 
      Class1 は、[**発表**] タブの [**ツールボックス**] にカスタムアクションとして表示されます。
 

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363173"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935067"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>MEF による DSL の拡張
 
@@ -131,7 +131,7 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
    - このアセンブリには、通常、".Dsl.dll" で終わる名前が付いています。
 
-   - DSL プロジェクトへのアクセス権を持っている場合は、アセンブリファイルをディレクトリ **dsl \\ bin \\ \** _ で見つけることができます。
+   - DSL プロジェクトにアクセスできる場合は、ディレクトリ **dsl \\ ビン \\ \*** にあるアセンブリファイルを見つけることができます。
 
    - DSL VSIX ファイルにアクセスできる場合は、VSIX ファイルのファイル名拡張子を ".zip" に変更することで、アセンブリを見つけることができます。 .Zip ファイルを圧縮解除します。
 
@@ -147,7 +147,7 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
    - System.Windows.Forms.dll
 
-4. 新しい _ *VSIX プロジェクト** プロジェクトを作成します。
+4. 新しい **VSIX プロジェクト** プロジェクトを作成します。
 
 5. **ソリューションエクスプローラー** で、VSIX プロジェクトを右クリックし、[**スタートアッププロジェクトに設定**] を選択します。
 
@@ -159,11 +159,11 @@ DSL が MEF 対応になりました。 メニューコマンド、ジェスチ�
 
    1. Source.extension.vsixmanifest で、[**参照の追加**] をクリックし **ます**。
 
-   2. ダイアログボックスで、[ **ペイロードの追加** ] をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、DSL ソリューション (**Dslpackage \\ bin \\ \** _) に組み込まれています。
+   2. ダイアログボックスで、[ **ペイロードの追加** ] をクリックし、DSL の VSIX ファイルを見つけます。 VSIX ファイルは、 **Dslpackage \\ BIN \\ \*** の DSL ソリューションに組み込まれています。
 
        これにより、ユーザーは DSL と拡張機能を同時にインストールできるようになります。 ユーザーが既に DSL をインストールしている場合は、拡張機能のみがインストールされます。
 
-9. _ * Source.extension.vsixmanifest * * の他のフィールドを確認し、更新します。 [ **エディションの選択** ] をクリックし、正しい Visual Studio のエディションが設定されていることを確認します。
+9. **Source.extension.vsixmanifest** の他のフィールドを確認し、更新します。 [ **エディションの選択** ] をクリックし、正しい Visual Studio のエディションが設定されていることを確認します。
 
 10. クラスライブラリプロジェクトにコードを追加します。 次のセクションの例をガイドとして使用します。
 

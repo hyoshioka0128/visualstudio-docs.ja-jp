@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528387"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937330"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>チュートリアル: オプションボタンを使用してドキュメントのグラフを更新する
   このチュートリアルでは、Microsoft Office Word のドキュメント レベルのカスタマイズでオプション ボタンを使用して、文書上でグラフのスタイルを選択するオプションをユーザーに提供する方法を示します。
@@ -96,28 +96,28 @@ ms.locfileid: "97528387"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**columnChart**|
-    |**テキスト**|**縦棒グラフ**|
+    |**Text**|**縦棒グラフ**|
 
 3. 2番目の **オプションボタン** をユーザーコントロールに追加し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**barChart**|
-    |**テキスト**|**横棒グラフ**|
+    |**Text**|**横棒グラフ**|
 
 4. 3番目の **オプションボタン** をユーザーコントロールに追加し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**lineChart**|
-    |**テキスト**|**折れ線グラフ**|
+    |**Text**|**折れ線グラフ**|
 
 5. 4番目の **オプションボタン** をユーザーコントロールに追加し、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**areaBlockChart**|
-    |**テキスト**|**Area Block Chart**|
+    |**Text**|**Area Block Chart**|
 
 ## <a name="add-references"></a>参照の追加
  ドキュメントのユーザーコントロールからグラフにアクセスするには、プロジェクト内のアセンブリへの参照が必要 `Microsoft.Office.Interop.Graph` です。

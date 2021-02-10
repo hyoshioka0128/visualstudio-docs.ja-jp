@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afe5ea128775c7be0e48035ab4c7e7d370c9d233
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714281"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938733"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。
@@ -60,7 +60,7 @@ public struct METADATA_TYPE {
 
  `tokClass`値は、型を一意に識別するメタデータトークンです。 メタデータトークン ID の上位ビットを解釈する方法の詳細については、 `CorTokenType` .NET FRAMEWORK SDK の corhdr .h ファイルの列挙体を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

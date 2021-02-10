@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c86b033986511100415989e76f4f1e6ef7702f10
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: a7e8ea6514f29b99975b9e291d6a09ed2a0ad54e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934013"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio のアニメーション
 ## <a name="animation-fundamentals"></a>アニメーションの基礎
@@ -93,7 +93,7 @@ Visual Studio UI では、アニメーションは通信ツールとしてのみ
 
 [視覚化] カテゴリには、データ、リレーションシップ、状態、構造、シーケンス、および時間の側面が含まれます。
 
-##### <a name="data"></a>Data
+##### <a name="data"></a>データ
 複雑な情報と変数の情報を示します。
 
 - グラフやグラフなどの情報の視覚エフェクトの移動
@@ -130,7 +130,7 @@ Visual Studio UI では、アニメーションは通信ツールとしてのみ
 
 - エラー
 
-##### <a name="structure"></a>構造体
+##### <a name="structure"></a>構造
 
 - 1つのノードでの構造のピボット
 
@@ -144,7 +144,7 @@ Visual Studio UI では、アニメーションは通信ツールとしてのみ
 
 - 反転 (画像を)
 
-##### <a name="time"></a>時刻
+##### <a name="time"></a>Time
 
 - 時間の経過に伴う変更、時間の短縮、スクリーンキャストの表示
 

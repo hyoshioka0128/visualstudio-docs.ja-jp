@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941360"
 ---
 # <a name="properties-of-domain-properties"></a>ドメイン プロパティのプロパティ
 *ドメインプロパティ* は、値を保持できるモデル要素の機能です。 たとえば、`Person` ドメイン クラスに `Name` プロパティと `BirthDate` プロパティを指定することができます。 DSL 定義で、ドメイン プロパティは図のドメイン クラス ボックスと DSL エクスプローラーのドメイン クラスの下に一覧表示されます。 詳細については、「 [Domain-Specific 言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)」を参照してください。
@@ -46,9 +46,9 @@ ms.locfileid: "97361522"
 |**読み取り専用**|`True` の場合、ドメイン プロパティの値は UI を使用して変更できません。 ただし、プログラムにより設定可能で、[プロパティ] ウィンドウに表示されます。<br /><br /> ドメインプロパティをユーザーから非表示にする場合は、set **が** 参照可能になります。 プログラムによるアクセスを制御する場合は、 **Setter アクセス修飾子** を設定します。|`False`|
 |**種類**|ドメイン プロパティの種類 (`Normal`、`Calculated`、または `CustomStorage`)。 詳細については、「 [計算済みおよびカスタムストレージのプロパティ](../modeling/calculated-and-custom-storage-properties.md)」を参照してください。|`Normal`|
 |**名前**|このドメイン プロパティの名前。 **SongTitle** などの有効な識別子である必要があります。|\<none>|
-|**ノート**|このドメイン プロパティに関連付けられる非公式な注釈。|\<none>|
+|**メモ**|このドメイン プロパティに関連付けられる非公式な注釈。|\<none>|
 |**Setter アクセス修飾子**|Setter 用のアクセス修飾子。 これはプログラム コードがプロパティを設定できる範囲を制御します。|`public`|
-|**Type**|プロパティの種類。 使用可能な種類の一覧に追加するには、DSL エクスプローラーで DSL のルートを右クリックし、[ **外部型の追加**] をクリックします。|`String`|
+|**種類**|プロパティの種類。 使用可能な種類の一覧に追加するには、DSL エクスプローラーで DSL のルートを右クリックし、[ **外部型の追加**] をクリックします。|`String`|
 
 ## <a name="see-also"></a>関連項目
 

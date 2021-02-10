@@ -17,15 +17,15 @@ helpviewer_keywords:
 - custom Ribbon, multiple Ribbons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ca7f7757cddf89b97f7a374385ea834728f0e975
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940866"
 ---
 # <a name="ribbon-overview"></a>リボンの概要
   リボンは、関連するコマンドを簡単に見つけられるように整理する方法です。 コマンドは、リボン上のコントロールとして表示されます。 コントロールは、アプリケーションウィンドウの上端にある水平ストリップに沿って *グループ化* されます。 関連するグループは、タブに整理されます。

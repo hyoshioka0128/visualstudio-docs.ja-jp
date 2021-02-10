@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01a26b6e10fae095bcf7284a6b5dbc12394d2541
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938994"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 デバッグ参照オブジェクトについて取得する情報を指定します。
@@ -91,7 +91,7 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

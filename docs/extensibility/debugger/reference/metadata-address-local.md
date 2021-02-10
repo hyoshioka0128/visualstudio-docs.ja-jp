@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5d4e9ee9808c25bb0df570ac451c061067904c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938759"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -57,7 +57,7 @@ public struct METADATA_ADDRESS_LOCAL {
 `dwIndex`\
 には、メソッドまたは関数内のこのローカル変数のインデックス、またはその他の値 (言語固有) を指定できます。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_LOCAL` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
@@ -71,7 +71,7 @@ public struct METADATA_ADDRESS_LOCAL {
 > }
 > ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ヘッダー: sh. h
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e6162c8cc508c1eaada6c2be90bd28d430779cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526149"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937369"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>チュートリアル: VSTO アドインプロジェクトでの単純データバインディング
 
@@ -88,7 +88,7 @@ VSTO アドイン プロジェクトでは、ホスト コントロールと Win
 
 6. **[データベース オブジェクトの選択]** ページで、 **[テーブル]** を展開し、 **[Customer (SalesLT)]** を選びます。
 
-7. **[完了]** をクリックします。
+7. **[Finish]** をクリックします。
 
     *Adventureworksltdataset.xsd* ファイルが **ソリューションエクスプローラー** に追加されます。 このファイルでは、次の項目を定義します。
 

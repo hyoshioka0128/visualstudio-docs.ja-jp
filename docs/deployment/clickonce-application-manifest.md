@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 29570cec-4e53-4660-a850-abc4fa150243
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13b84a256bfc9d13f8c17b92385df2106dc0a47d
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccd8389859de3ffce7b04e2da648b2ac2e807a79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383119"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936185"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce アプリケーション マニフェスト
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションマニフェストは、を使用して配置されるアプリケーションを記述する XML ファイルです [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
@@ -36,10 +36,10 @@ ms.locfileid: "94383119"
 | [\<trustInfo> 要素](../deployment/trustinfo-element-clickonce-application.md) | アプリケーションのセキュリティ要件を識別します。 | なし |
 | [\<entryPoint> 要素](../deployment/entrypoint-element-clickonce-application.md) | 必須。 アプリケーションコードのエントリポイントを識別します。 | `name` |
 | [\<dependency> 要素](../deployment/dependency-element-clickonce-application.md) | 必須。 アプリケーションを実行するために必要な依存関係をそれぞれ識別します。 任意で、プレインストールする必要のあるアセンブリを識別します。 | なし |
-| [\<file> 要素](../deployment/file-element-clickonce-application.md) | 省略可能。 アプリケーションによって使用されるアセンブリ以外の各ファイルを識別します。 ファイルに関連付けられているコンポーネント オブジェクト モデル (COM) 分離データを含めることができます。 | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation> 要素](../deployment/fileassociation-element-clickonce-application.md) | 省略可能。 アプリケーションに関連付けるファイル拡張子を識別します。 | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<file> 要素](../deployment/file-element-clickonce-application.md) | 任意。 アプリケーションによって使用されるアセンブリ以外の各ファイルを識別します。 ファイルに関連付けられているコンポーネント オブジェクト モデル (COM) 分離データを含めることができます。 | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
+| [\<fileAssociation> 要素](../deployment/fileassociation-element-clickonce-application.md) | 任意。 アプリケーションに関連付けるファイル拡張子を識別します。 | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>解説
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]アプリケーションマニフェストファイルは、を使用して展開されたアプリケーションを識別し [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ます。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] の詳細については、「[ClickOnce のセキュリティと配置](../deployment/clickonce-security-and-deployment.md)」を参照してください。
 
 ## <a name="file-location"></a>ファイルの場所
@@ -48,7 +48,7 @@ ms.locfileid: "94383119"
  アプリケーションマニフェストは、展開する前に常に署名されている必要があります。 アプリケーションマニフェストを手動で変更した場合は、 *mage.exe* を使用してアプリケーションマニフェストに再署名し、配置マニフェストを更新してから、配置マニフェストに再署名する必要があります。 詳細については、「 [チュートリアル: ClickOnce アプリケーションを手動で配置する](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)」を参照してください。
 
 ## <a name="file-name-syntax"></a>ファイル名の構文
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェスト ファイルの名前は、`assemblyIdentity` 要素に指定されたアプリケーションの完全名と拡張子に、 *.manifest* という拡張子を付けたものにします。 たとえば、 *Example.exe* アプリケーションを参照するアプリケーションマニフェストでは、次のファイル名構文を使用します。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション マニフェスト ファイルの名前は、`assemblyIdentity` 要素に指定されたアプリケーションの完全名と拡張子に、*.manifest* という拡張子を付けたものにします。 たとえば、 *Example.exe* アプリケーションを参照するアプリケーションマニフェストでは、次のファイル名構文を使用します。
 
  `example.exe.manifest`
 

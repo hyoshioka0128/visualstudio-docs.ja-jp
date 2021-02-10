@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf7f59384d9317e4be173c93b6165d754a35ad8f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0fc7f8ba4d3939424e634f37ede78e92496c9eac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930500"
 ---
 # <a name="control-events"></a>コントロールイベント
 プログラムの制御された実行中にイベントを送信する必要があります。 すべてのイベントは、 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) インターフェイスを使用して送信され、 [IDebugEvent2:: getattributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) メソッドの実装を必要とする属性を持っています。
 
-## <a name="additional-methods"></a>その他のメソッド
+## <a name="additional-methods"></a>他の方法
  一部のイベントでは、次のように、追加のメソッドを実装する必要があります。
 
 - デバッグエンジン (DE) の初期化時に [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) インターフェイスを送信するには、 [IDebugEngineCreateEvent2:: getengine](../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md) メソッドを実装する必要があります。

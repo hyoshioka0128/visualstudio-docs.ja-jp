@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 089122a4a4d7ff3d6a8828ba0c251efd3729c101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933545"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 このドキュメントコンテキストに関連付けられているすべてのコードコンテキストのリストを取得します。
@@ -49,7 +49,7 @@ int EnumCodeContexts(
 ドキュメントがテンプレートまたはインクルードファイルを使用している場合、1つのドキュメントコンテキストで複数のコードコンテキストを生成できます。
 
 ## <a name="example"></a>例
-次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)

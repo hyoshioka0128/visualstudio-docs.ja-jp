@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f477b46083b5abd5b8e93593cc728b660b58d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 6b055446e6bdf147c99cf96b48c03bfcfdd2eda2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938695"
 ---
 # <a name="structures-and-unions"></a>構造体と共用体
 次に示すのは、Visual Studio デバッグ SDK の構造と共用体です。
@@ -134,7 +134,7 @@ ms.locfileid: "96845766"
 
 - [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) ポインターに対する相対アドレス `this` (Visual Basic) を記述し `Me` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg .h、sh. h、または ee
 
  名前空間: VisualStudio。

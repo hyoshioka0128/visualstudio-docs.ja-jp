@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941841"
 ---
 # <a name="field_info"></a>FIELD_INFO
 この構造体は、ローカル変数、パラメーター、またはその他のフィールドを記述します。
@@ -66,7 +66,7 @@ public struct FIELD_INFO {
 ## <a name="remarks"></a>解説
 この構造体は、入力されている [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) メソッドに渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

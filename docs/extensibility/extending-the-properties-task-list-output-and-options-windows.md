@@ -14,20 +14,20 @@ helpviewer_keywords:
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b78197be71dca9fbabbfded90c4e07660a74db
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938136"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>[プロパティ]、[タスク一覧]、[出力]、[オプション] の各ウィンドウを拡張する
 Visual Studio では、任意のツールウィンドウにアクセスできます。 このチュートリアルでは、ツールウィンドウに関する情報を新しいオプションページに統合する方法と、[**プロパティ**] ページに新しい設定を統合する方法について説明します。また、[**タスク一覧** と **出力** **]** ウィンドウに書き込む方法についても説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
  Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 
 ## <a name="create-an-extension-with-a-tool-window"></a>ツールウィンドウで拡張機能を作成する

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], method parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 179109ff4c0def002dac45887fe9491196a70d3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d568d5ca2025f1467fa96387493b1e8b4ed1ec6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915402"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931696"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>方法: メソッドにパラメーターを追加する
   パラメーターを使用して、メソッドに情報を渡すか、メソッドから情報を返します。 すべてのメソッドには、少なくとも1つのパラメーターが必要です。 作成するメソッドの種類をサポートするパラメーターをデザインする方法の詳細については、「 [ビジネスデータ接続モデルの設計](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -35,7 +35,7 @@ ms.locfileid: "96915402"
 
 1. メソッドをエンティティに追加します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
+2. メニューバーで、[   >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
      [ **BDC メソッドの詳細** ] ウィンドウが開きます。 詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
@@ -45,7 +45,7 @@ ms.locfileid: "96915402"
 
      [ **パラメーター** ノードの下に新しいパラメーターが表示されます。
 
-5. メニューバーで、[ **View**  >  **プロパティウィンドウ** の表示] を選択します。
+5. メニューバーで、[   >  **プロパティウィンドウ** の表示] を選択します。
 
 6. [ **プロパティ** ] ウィンドウで、[ **名前** ] プロパティを意味のある任意の名前に設定します。 たとえば、メソッドが顧客を返す場合は、メソッドに **Getcustomers** という名前を指定できます。
 

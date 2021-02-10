@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934365"
 ---
 # <a name="add-icons-to-menu-commands"></a>メニューコマンドにアイコンを追加する
 コマンドは、メニューとツールバーの両方に表示できます。 ツールバーでは、コマンドがアイコンだけで表示されるのが一般的です (領域を節約するため)。メニュー上では、通常、コマンドにはアイコンとテキストの両方が表示されます。
@@ -39,7 +39,7 @@ ms.locfileid: "95597653"
 
 3. エディターで、 *vsct* ファイルを開きます。
 
-4. `GuidSymbol` **Testicon** という名前の要素を追加します。 Guid を作成し **Tools**  >  ます ([ツール] [**guid の作成**] を選択し、[**レジストリ形式**] を選択して [**コピー**] をクリックします)。次に、属性に貼り付け `value` ます。 結果は次のようになります。
+4. `GuidSymbol` **Testicon** という名前の要素を追加します。 Guid を作成し  >  ます ([ツール] [**guid の作成**] を選択し、[**レジストリ形式**] を選択して [**コピー**] をクリックします)。次に、属性に貼り付け `value` ます。 結果は次のようになります。
 
     ```xml
     <!-- Create your own GUID -->

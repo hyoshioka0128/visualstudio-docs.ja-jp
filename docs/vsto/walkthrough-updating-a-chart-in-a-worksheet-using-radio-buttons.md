@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937317"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル : オプション ボタンを使用してワークシートのグラフを更新する方法
   このチュートリアルでは、Microsoft Office の Excel ワークシートでオプションボタンを使用して、オプションをすばやく切り替える方法をユーザーに提供する方法の基本について説明します。 この場合、オプションによってグラフのスタイルが変更されます。
@@ -137,28 +137,28 @@ ms.locfileid: "97526069"
    | プロパティ | 値 |
    |----------|------------------|
    | **名前** | **columnChart** |
-   | **テキスト** | **縦棒グラフ** |
+   | **Text** | **縦棒グラフ** |
 
 3. 2番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|---------------|
    | **名前** | **barChart** |
-   | **テキスト** | **横棒グラフ** |
+   | **Text** | **横棒グラフ** |
 
 4. 3番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|----------------|
    | **名前** | **lineChart** |
-   | **テキスト** | **折れ線グラフ** |
+   | **Text** | **折れ線グラフ** |
 
 5. 4番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**areaBlockChart**|
-   |**テキスト**|**Area Block Chart**|
+   |**Text**|**Area Block Chart**|
 
    次に、オプションボタンがクリックされたときにグラフを更新するコードを記述します。
 

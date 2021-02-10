@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11caf8c2af92a14e001d7403f2457f0fc66ff3ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 34336c51d51c50f6dee7239a38588f36c935edbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725851"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934352"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 この保留中のブレークポイントが原因で発生したすべてのエラーブレークポイントの一覧を取得します。
@@ -29,14 +29,14 @@ ms.locfileid: "80725851"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT EnumErrorBreakpoints( 
+HRESULT EnumErrorBreakpoints( 
    BP_ERROR_TYPE                 bpErrorType,
    IEnumDebugErrorBreakpoints2** ppEnum
 );
 ```
 
 ```csharp
-int EnumErrorBreakpoints( 
+int EnumErrorBreakpoints( 
    enum_BP_ERROR_TYPE              bpErrorType,
    out IEnumDebugErrorBreakpoints2 ppEnum
 );
@@ -53,7 +53,7 @@ int EnumErrorBreakpoints( 
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 `E_BP_DELETED`ブレークポイントが削除されている場合は、を返します。
 
 ## <a name="example"></a>例
- 次の例は、IDebugPendingBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CPendingBreakpoint` います。 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+ 次の例は、IDebugPendingBreakpoint2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CPendingBreakpoint` います。 [](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumErrorBreakpoints(

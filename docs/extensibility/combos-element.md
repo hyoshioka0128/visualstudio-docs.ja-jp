@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 38383882005e3a19b1a31709fb5656caf2a7d788
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938370"
 ---
 # <a name="combos-element"></a>Combos 要素
 グループの [コンボ要素](../extensibility/combo-element.md) 要素。
@@ -39,7 +39,7 @@ ms.locfileid: "94974247"
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 

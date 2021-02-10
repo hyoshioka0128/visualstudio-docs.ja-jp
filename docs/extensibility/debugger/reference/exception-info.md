@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a305d34123d02b1fdbd545a438db4461643ed185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f6ecbd791297f4c186d22d9ed14c627cf7be43f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941854"
 ---
 # <a name="exception_info"></a>EXCEPTION_INFO
 デバッグ中のプログラムによってスローされた例外または実行時エラーを記述します。
@@ -71,7 +71,7 @@ GUID 言語識別子 `guidLang` 。またはのいずれか `guidEng` です。
 ## <a name="remarks"></a>解説
 この構造体は、パラメーターとして [setexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md) および [removesetexception](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) メソッドに渡されます。 この構造体は、入力される [Getexception](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) メソッドにも渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

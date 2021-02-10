@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937954"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>T4 テキスト テンプレートを使用した実行時テキスト生成
 
@@ -64,7 +64,7 @@ This report is Company Confidential.
     > [!NOTE]
     > テンプレートファイル名は、生成されたコードでクラス名として使用されます。 したがって、スペースや句読点を指定することはできません。
 
-4. **[追加]** を選びます。
+4. **[追加]** をクリックします。
 
     拡張子が **.tt** の新しいファイルが作成されます。 その **カスタムツール** プロパティは、 **Texttemplatingfilepreprocessor プロセッサ** に設定されています。 次の行が含まれています。
 
@@ -437,6 +437,6 @@ End material for DerivedTemplate1.
 
 ## <a name="see-also"></a>関連項目
 
-- [コード生成と T4 テキストテンプレート](../modeling/code-generation-and-t4-text-templates.md)
+- [コード生成と T4 テキスト テンプレート](../modeling/code-generation-and-t4-text-templates.md)
 - [T4 テキスト テンプレートの作成](../modeling/writing-a-t4-text-template.md)
 - [T4 ツールボックス](http://olegsych.com/T4Toolbox/)

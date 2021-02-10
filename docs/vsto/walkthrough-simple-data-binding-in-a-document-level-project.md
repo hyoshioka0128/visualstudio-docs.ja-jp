@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524106"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937411"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの単純データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでのデータバインディングの基本について説明します。 SQL Server データベースの単一のデータフィールドは、Microsoft Office Excel の名前付き範囲にバインドされます。 このチュートリアルでは、テーブル内のすべてのレコードをスクロールできるようにするコントロールを追加する方法についても説明します。
@@ -82,7 +82,7 @@ ms.locfileid: "97524106"
 
 8. **Customers** テーブルの横にあるチェックボックスをオンにします。
 
-9. **[完了]** をクリックします。
+9. **[Finish]** をクリックします。
 
    [**データソース**] ウィンドウに **Customers** テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 

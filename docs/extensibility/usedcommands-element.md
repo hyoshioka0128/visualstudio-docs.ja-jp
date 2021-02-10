@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc48d305e287fcb77407fbbf5ba52888b25dca6
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 89ecd1d0f7697a38ef7318ddf93a91a4397b5d72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934065"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 要素
 Used Commands 要素は、実行されたコマンド要素とその他の実行されたコマンドグループをグループ化します。
@@ -42,7 +42,7 @@ Used Commands 要素は、実行されたコマンド要素とその他の実行
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 

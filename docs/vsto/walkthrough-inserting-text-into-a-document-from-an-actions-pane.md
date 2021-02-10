@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937382"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する
   このチュートリアルでは、Microsoft Office Word 文書に操作ウィンドウを作成する方法について説明します。 操作ウィンドウには、入力を収集し、そのテキストをドキュメントに送信する2つのコントロールが含まれています。
@@ -133,7 +133,7 @@ ms.locfileid: "97524160"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**addText**|
-    |**テキスト**|**[挿入]**|
+    |**Text**|**挿入**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>ドキュメントにテキストを挿入するコードを追加する
  [操作] ウィンドウで、テキストボックスのテキストをドキュメント内の適切なコントロールに挿入するコードを記述し <xref:Microsoft.Office.Tools.Word.Bookmark> ます。 クラスを使用して、 `Globals` 操作ウィンドウのコントロールからドキュメントのコントロールにアクセスできます。 詳細については、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。

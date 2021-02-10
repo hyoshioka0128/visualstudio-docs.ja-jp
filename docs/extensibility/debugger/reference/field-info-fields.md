@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a3d2e796d37606c51918d8e49db920161d63f55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8cec892d65dc4e5d081063fa6b31def06fb7f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936913"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトについて取得する情報を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80736911"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_FIELD_INFO_FIELDS { 
+enum enum_FIELD_INFO_FIELDS { 
     FIF_FULLNAME  = 0x0001,
     FIF_NAME      = 0x0002,
     FIF_TYPE      = 0x0004,
@@ -52,7 +52,7 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>フィールド
 `FIF_FULLNAME`\
-FIELD_INFO 構造体のフィールドを初期化/使用し `bstrFullName` ます。 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
+FIELD_INFO 構造体のフィールドを初期化/使用し `bstrFullName` ます。 [](../../../extensibility/debugger/reference/field-info.md)
 
 `FIF_NAME`\
 構造体のフィールドを初期化/使用し `bstrName` `FIELD_INFO` ます。
@@ -70,7 +70,7 @@ FIELD_INFO 構造体のフィールドを初期化/使用し `bstrFullName` ま�
 
 これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

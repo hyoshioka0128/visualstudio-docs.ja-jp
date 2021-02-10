@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 325789c3b7210c87d5c1b0414434af27c266c31c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876546"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932580"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>従来の言語サービスでのナビゲーション バーのサポート
 エディタービューの上部にあるナビゲーションバーには、ファイル内の型とメンバーが表示されます。 型は左のドロップダウンリストに表示され、メンバーは右のドロップダウンリストに表示されます。 ユーザーが型を選択すると、カレットが型の最初の行に配置されます。 ユーザーがメンバーを選択すると、そのメンバーの定義にカレットが配置されます。 ドロップダウンボックスは、カレットの現在位置を反映して更新されます。
