@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954034"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>方法: パスワードで保護されたドキュメントでデータをキャッシュする
   パスワードで保護されているドキュメントまたはブックのデータキャッシュにデータを追加した場合、キャッシュされたデータへの変更は自動的には保存されません。 キャッシュされたデータへの変更を保存するには、プロジェクト内の2つのメソッドをオーバーライドします。
@@ -56,7 +56,7 @@ ms.locfileid: "96846000"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>パスワードで保護されている Excel ブックにデータをキャッシュするには
 
-1. `ThisWorkbook`クラスまたは n クラスのいずれかで `Sheet` *n* 、パブリックフィールドまたはキャッシュされるプロパティをマークします。 詳細については、「 [データのキャッシュ](../vsto/caching-data.md)」を参照してください。
+1. `ThisWorkbook`クラスまたは n クラスのいずれかで `Sheet`  、パブリックフィールドまたはキャッシュされるプロパティをマークします。 詳細については、「 [データのキャッシュ](../vsto/caching-data.md)」を参照してください。
 
 2. クラスの <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> メソッドをオーバーライド `ThisWorkbook` し、ブックから保護を削除します。
 

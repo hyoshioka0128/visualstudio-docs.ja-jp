@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e7b85fb8d5b0e3256e172ff78bc3a5f660b69b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3e2b5c5f96c2c40105f54ba8d775c7ad1cc1c46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955022"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 名前を指定して型を取得します。
@@ -59,7 +59,7 @@ int GetTypesByName(
 ジェネリック型の場合、' list ' または ' List ' に対して検索する名前は \<int> \<int,int> ' list ' になります。 同じ名前の型が複数のモジュールに出現する場合、パラメーターには `ppEnum` すべてのコピーが含まれます。 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)を使用して、パラメーターに基づいて区別する必要があり `guidModule` ます。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイスを公開する**Cdebugシンボルプロバイダー**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)インターフェイスを公開する **Cdebugシンボルプロバイダー** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c31d095a3e340bf7e8f7a61a8db5bcbed53f0d5f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955165"
 ---
 # <a name="debug-engine"></a>デバッグエンジン
 デバッグエンジン (DE) はインタープリターやオペレーティングシステムと連携して、実行制御、ブレークポイント、式の評価などのデバッグサービスを提供します。 DE は、デバッグ中のプログラムの状態を監視する役割を担います。 これを実現するために、DE は、サポートされているランタイムで使用可能な任意のメソッド (CPU から、またはランタイムによって提供される Api) を使用します。

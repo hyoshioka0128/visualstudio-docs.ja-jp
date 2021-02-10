@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62ca404442d6bf6080972f03c3e2fd0da2621e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723357"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954892"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 このメソッドは、セッションがプロセスのデバッグを終了したことをプロセスに通知します。
@@ -28,7 +28,7 @@ ms.locfileid: "80723357"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT Detach( 
+HRESULT Detach( 
    IDebugSession2* pSession
 );
 ```
@@ -46,7 +46,7 @@ int Detach(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  渡されるインターフェイス `pSession` は、クッキーとしてのみ扱われます。これは、最初にこのプロセスにアタッチされたセッションデバッグマネージャーを一意に識別する値です。指定されたインターフェイスのメソッドは機能しません。
 
 ## <a name="see-also"></a>関連項目

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9f0fa33318e2407b01178971c6965b8ea035dd42
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 830ecea036ee972321d98994ab36924e0c61a09b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954268"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>方法: Backstage ビューにコントロールを追加する
   リボンデザイナーを使用すると、[ **ファイル** ] タブをクリックしたときに表示されるメニューにコントロールを追加できます。アプリケーションを実行すると、[ **ファイル** ] タブに追加したコントロールに、 **アドイン** という名前のグループが表示されます。

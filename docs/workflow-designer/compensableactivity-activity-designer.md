@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d05809b1e370fee2505470be1c06366f76bf9ca
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9612e1b8e808437122df88ad0bbef3a4cce74c0c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955113"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity アクティビティ デザイナー
 
@@ -43,7 +43,7 @@ ms.locfileid: "96996228"
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> アクティビティの補正を行うときに実行されるアクティビティを指定します。 このハンドラーは、<xref:System.Activities.Statements.Compensate> アクティビティを使用して明示的に呼び出すことができます。<br /><br /> アクティビティを追加するには、アクティビティデザイナーを [**ツールボックス**] から **CompensableActivity** アクティビティデザイナーの [ **CompensationHandler** ] ボックスにドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|<xref:System.Activities.Statements.CompensableActivity.Body%2A> アクティビティを確認するときに実行されるアクティビティを指定します。 このハンドラーは、<xref:System.Activities.Statements.Confirm> アクティビティを使用して明示的に呼び出すことができます。<br /><br /> アクティビティを追加するには、アクティビティデザイナーを [**ツールボックス**] から **CompensableActivity** アクティビティデザイナーの [ **confirmationhandler]** ] ボックスにドロップします。 "ここにアクティビティをドロップします" というヒントテキストを追加します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [トランザクション](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)

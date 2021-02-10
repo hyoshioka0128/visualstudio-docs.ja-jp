@@ -17,15 +17,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], data model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4229c179ec6c5640ab612d28991fe476363a53
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f1c383b5367b2966b9fd082b2d47570264b4d191
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955776"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>ドキュメントレベルのカスタマイズでのキャッシュされたデータ
   ドキュメントレベルのカスタマイズの主な目的は、Office ドキュメントのビューからデータを分離することです。 データとは、数字やテキストを含む、ドキュメントに格納されている情報を指します。 ビューは、ユーザーインターフェイスと Microsoft Office Word および Microsoft Office Excel のオブジェクトモデルを参照します。

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, modeling architecture
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c284532a1e7f6407ebea987873665edb4e940019
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e78e88884801b7aa7fcbcfe1147afd6fad653fd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954372"
 ---
 # <a name="model-your-app39s-architecture"></a>アプリ&#39;s アーキテクチャのモデル化
 ソフトウェア システムまたはアプリケーションがユーザーのニーズに確実に対応するように、ソフトウェア システムまたはアプリケーションの全体的な構造および動作の記述の一部として Visual Studio でモデルを作成することができます。 モデルを使用して、設計全体で使用するパターンを記述することもできます。 これらのモデルは、既存のアーキテクチャの理解、変更についての話し合い、開発者の意図の伝達に役立ちます。

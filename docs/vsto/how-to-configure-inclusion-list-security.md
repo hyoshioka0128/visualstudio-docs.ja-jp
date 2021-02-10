@@ -12,15 +12,15 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1f9eca5150e019906805adf40e5c9b6af8a3c14e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ddbc74c00c1e1f74ce078586d624e2da4dbd8163
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954021"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>方法: 信頼のリストのセキュリティを構成する
   管理者のアクセス許可を持っている場合は、信頼の決定を [信頼の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 決定] の一覧に保存することによって、エンドユーザーに Office ソリューションのインストールオプションを提供するかどうかを制御する信頼プロンプトを構成できます。 包含リストの詳細については、「 [信頼リストを使用した Office ソリューションの信頼](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)」を参照してください。
@@ -54,13 +54,13 @@ ms.locfileid: "96846728"
 
 3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値** として追加します。
 
-    |文字列値サブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
     |**Internet**|**AuthenticodeRequired**|
-    |**UntrustedSites**|**Disabled**|
-    |**MyComputer**|**有効**|
-    |**LocalIntranet**|**有効**|
-    |**TrustedSites**|**有効**|
+    |**UntrustedSites**|**[無効]**|
+    |**MyComputer**|**Enabled**|
+    |**LocalIntranet**|**Enabled**|
+    |**TrustedSites**|**Enabled**|
 
      既定では、 **インターネット** の値は **AuthenticodeRequired** 、 **Untrustedsites** の値は **無効になっ** ています。
 
@@ -113,9 +113,9 @@ ms.locfileid: "96846728"
 
 3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値** として追加します。
 
-    |文字列値サブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disabled**|
+    |**UntrustedSites**|**[無効]**|
     |**Internet**|**AuthenticodeRequired**|
     |**MyComputer**|**AuthenticodeRequired**|
     |**LocalIntranet**|**AuthenticodeRequired**|
@@ -170,13 +170,13 @@ ms.locfileid: "96846728"
 
 3. 次のサブキーが存在しない場合は、それに関連付けられた値を使用して、 **文字列値** として追加します。
 
-    |文字列値サブキー|[値]|
+    |文字列値サブキー|値|
     |-------------------------|-----------|
-    |**UntrustedSites**|**Disabled**|
-    |**Internet**|**Disabled**|
-    |**MyComputer**|**Disabled**|
-    |**LocalIntranet**|**Disabled**|
-    |**TrustedSites**|**Disabled**|
+    |**UntrustedSites**|**[無効]**|
+    |**Internet**|**[無効]**|
+    |**MyComputer**|**[無効]**|
+    |**LocalIntranet**|**[無効]**|
+    |**TrustedSites**|**[無効]**|
 
 ### <a name="to-disable-the-inclusion-list-programmatically"></a>プログラムによって信頼の一覧を無効にするには
 
@@ -209,6 +209,6 @@ ms.locfileid: "96846728"
 
 3. アプリケーションをビルドして実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [信頼リストを使用して Office ソリューションを信頼する](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [セキュリティで保護された Office ソリューション](../vsto/securing-office-solutions.md)

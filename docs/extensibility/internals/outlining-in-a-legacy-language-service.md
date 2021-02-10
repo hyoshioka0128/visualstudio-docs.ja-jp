@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca457c32751fb1f9179a9c09b624c444efab627d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954635"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>従来の言語サービスのアウトライン
 アウトラインを使用すると、複雑なプログラムを概要やアウトラインに折りたたむことができます。 たとえば、C# では、メソッドのシグネチャのみを表示して、すべてのメソッドを1つの行に折りたたむことができます。 また、構造体とクラスを折りたたんで、構造体とクラスの名前のみを表示することもできます。 1つのメソッド内で、、、などのステートメントの最初の行のみを表示することにより、複雑なロジックを折りたたんでフロー全体を表示することができ `foreach` `if` `while` ます。

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc85dbb5c774f6afa956f51852ef15d4c7ccebc0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955523"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope アクティビティ デザイナー
 
@@ -29,23 +29,23 @@ ms.locfileid: "94438114"
 
 ### <a name="use-the-correlationscope-activity-designer"></a>CorrelationScope アクティビティデザイナーの使用
 
-**Correlationscope** アクティビティデザイナーは、[ **ツールボックス** ] の [ **メッセージング** ] カテゴリにあります。これにアクセスするには、ワークフローデザイナーの左側にある [ **ツールボックス** ] タブをクリックします。 または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
+**Correlationscope** アクティビティデザイナーは、[**ツールボックス**] の [**メッセージング**] カテゴリにあります。これにアクセスするには、ワークフローデザイナーの左側にある [**ツールボックス**] タブをクリックします。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
 
-**Correlationscope** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、ワークフローデザイナー画面にドロップできます。 これ <xref:System.ServiceModel.Activities.CorrelationScope> により、CorrelationScope という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **correlationscope** アクティビティデザイナーのヘッダー、または [ **プロパティ** ] ウィンドウの [ **DisplayName** ] ボックスで編集できます。
+**Correlationscope** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、ワークフローデザイナー画面にドロップできます。 これ <xref:System.ServiceModel.Activities.CorrelationScope> により、CorrelationScope という既定の **DisplayName** を持つアクティビティが作成されます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **correlationscope** アクティビティデザイナーのヘッダー、または [**プロパティ**] ウィンドウの [ **DisplayName** ] ボックスで編集できます。
 
-<xref:System.ServiceModel.Activities.CorrelationHandle>子メッセージングアクティビティによって使用されるを指定するには、[ **プロパティ** ] ウィンドウの [ **CorrelatesWith** ] フィールドの横にある省略記号ボタンをクリックして、[ **式エディター** ] ダイアログボックスを表示します。 このプロパティは、アクティビティ デザイナー画面で設定することもできます。
+<xref:System.ServiceModel.Activities.CorrelationHandle>子メッセージングアクティビティによって使用されるを指定するには、[**プロパティ**] ウィンドウの [ **CorrelatesWith** ] フィールドの横にある省略記号ボタンをクリックして、[**式エディター** ] ダイアログボックスを表示します。 このプロパティは、アクティビティ デザイナー画面で設定することもできます。
 
-関連付けに含まれるアクティビティは、 **Correlationscope** デザイナー内の [ **本文** ] ボックス内のデザイナーを削除することによって指定します。
+関連付けに含まれるアクティビティは、 **Correlationscope** デザイナー内の [**本文**] ボックス内のデザイナーを削除することによって指定します。
 
 ### <a name="the-correlationscope-properties"></a>CorrelationScope プロパティ
 
 次の表に、<xref:System.ServiceModel.Activities.CorrelationScope> のプロパティと、デザイナーでのその使用方法を示します。 これらのプロパティは、[ **プロパティ** ] ウィンドウまたはワークフローデザイナー画面で編集できます。また、多くの場合、両方で編集できます。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.ServiceModel.Activities.InitializeCorrelation> アクティビティの省略可能な表示名。|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|×|子メッセージング アクティビティの管理に使用する <xref:System.ServiceModel.Activities.CorrelationHandle> を指定します。 このプロパティを設定しない場合は、<xref:System.ServiceModel.Activities.CorrelationScope> に、暗黙の <xref:System.ServiceModel.Activities.CorrelationHandle> が自動的に作成されます。|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|×|相関関係のスコープ内のアクティビティを指定します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> アクティビティの省略可能な表示名。|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|子メッセージング アクティビティの管理に使用する <xref:System.ServiceModel.Activities.CorrelationHandle> を指定します。 このプロパティを設定しない場合は、<xref:System.ServiceModel.Activities.CorrelationScope> に、暗黙の <xref:System.ServiceModel.Activities.CorrelationHandle> が自動的に作成されます。|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|相関関係のスコープ内のアクティビティを指定します。|
 
 ## <a name="see-also"></a>関連項目
 
