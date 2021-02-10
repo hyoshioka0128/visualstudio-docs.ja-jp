@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d52701b916650bc142038ffd96dcab8b05ec6da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 127028e7de34198b2d4cb141e4fc3c73f3a3931b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726120"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953449"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 このオブジェクトに関連付けられている値を表すマネージコードオブジェクトを取得します。
@@ -28,14 +28,14 @@ ms.locfileid: "80726120"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT GetICorDebugValue(
-   IUnknown** ppUnk
+HRESULT GetICorDebugValue(
+   IUnknown** ppUnk
 );
 ```
 
 ```csharp
-int GetICorDebugValue(
-   out object ppUnk
+int GetICorDebugValue(
+   out object ppUnk
 );
 ```
 

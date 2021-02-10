@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 503ffc733a408787e7ecf188d893039759819c6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952578"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>チュートリアル: イメージを使用したカスタムマスターページおよびサイトページのインポート
   このチュートリアルでは、sharepoint カスタムマスターページと、画像を含むサイトページを sharepoint プロジェクトにインポートする方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
@@ -172,7 +172,7 @@ ms.locfileid: "95970161"
 
    - 既存のマスターページがカスタムマスターページとして設定されている場合は、一時的に別のマスターページをカスタムマスターページとして設定します。 ファイルを SharePoint に配置した後、新しいマスターページをカスタムマスターページとして設定します。
 
-6. メニューバーで、[**ビルド**] [ソリューションの配置] の順に選択し  >  **Deploy Solution** ます。
+6. メニューバーで、[**ビルド**] [ソリューションの配置] の順に選択し  >  ます。
 
 7. SharePoint サイトを開いて、配置されたアイテムを表示します。
 

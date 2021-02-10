@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952591"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>チュートリアル: SharePoint Designer の再利用可能なワークフローのインポート
 
@@ -41,7 +41,7 @@ ms.locfileid: "95970187"
 
 - SharePoint Designer の再利用可能なワークフローを *.wsp* ファイルと sharepoint にエクスポートします。
 
-- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 再利用可能なワークフロープロジェクトのインポートを使用して、.wsp ファイルをにインポートします。
+-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 再利用可能なワークフロープロジェクトのインポートを使用して、.wsp ファイルをにインポートします。
 
 - コードを追加してワークフローを変更する。
 
@@ -153,11 +153,11 @@ ms.locfileid: "95970187"
 9. [ **ファイルのダウンロード** ] ダイアログボックスで、[ **保存** ] をクリックして、 *.wsp* ファイルをローカルシステムに保存します。
 
 ## <a name="import-the-wsp-file-into-visual-studio"></a>.Wsp ファイルを Visual Studio にインポートする
- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 再利用可能なワークフロープロジェクトのインポートを使用して、.wsp ファイルをにインポートします。 このプロジェクトは、再利用可能な宣言型ワークフローからコードワークフローにワークフローを変換します。 ワークフローが変換された後、コードを使用してその動作を変更します。
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 再利用可能なワークフロープロジェクトのインポートを使用して、.wsp ファイルをにインポートします。 このプロジェクトは、再利用可能な宣言型ワークフローからコードワークフローにワークフローを変換します。 ワークフローが変換された後、コードを使用してその動作を変更します。
 
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>.Wsp ファイルからワークフローをインポートして変更するには
 
-1. の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** ます。
+1. の [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。
 
 2. [**新しいプロジェクト**] ダイアログボックスで、[ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -198,7 +198,7 @@ ms.locfileid: "95970187"
 
     3. SharePoint カスタマイズウィザードで欠損値を入力し、[ **完了** ] をクリックします。
 
-12. Xoml ファイルを選択し、メニューバーで [デザイナーの **表示**] を選択して、  >  **Designer** ワークフローデザイナーでインポートしたワークフローを表示します。
+12. Xoml ファイルを選択し、メニューバーで [デザイナーの **表示**] を選択して、  >  ワークフローデザイナーでインポートしたワークフローを表示します。
 
 13. **ツールボックス** の [ **Windows Workflow** v1.0] ノードで、次のいずれかの手順を実行します。
 

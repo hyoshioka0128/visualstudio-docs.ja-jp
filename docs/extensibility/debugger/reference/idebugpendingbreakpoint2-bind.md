@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 83d48e8df847620716b0f581be65ded48e2e5a13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6385765c8062040da2f42ba56fcc6e8a16ca02e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953215"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 この保留中のブレークポイントを1つまたは複数のコードの場所にバインドします。
@@ -29,8 +29,8 @@ ms.locfileid: "80725988"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT Bind( 
-   void 
+HRESULT Bind( 
+   void 
 );
 ```
 

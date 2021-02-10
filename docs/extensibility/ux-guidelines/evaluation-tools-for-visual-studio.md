@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c8ef3033d1c9f897f891310c4ddea89ab0074e
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f6f20074b3609bce8e661baed5fded1d0d367c53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952019"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Visual Studio の評価ツール
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Visual Studio の職人気質チェックリスト
@@ -41,7 +41,7 @@ ms.locfileid: "97863461"
 
 - すべてのラベルが文またはタイトルのケースであり、どのテキストも完全に小文字でないことを確認します。
 
-    ||正解です。|不正解|
+    ||正しい|正しくない|
     |-|-------------|---------------|
     |**コマンドテキスト (すべて)**|文の場合:<br /><br /> **ディレクトリ名:**|ディレクトリ名:|
     |**ボタンテキスト (クライアント)**|タイトルケース:<br /><br /> **[既定値として設定]**|既定値として設定|
@@ -51,7 +51,7 @@ ms.locfileid: "97863461"
 
 - ユーザー入力をキャプチャするための UI を起動するボタン、コマンド、およびコマンドリンクが、省略記号 **[...]** で検証されていることを確認します。
 
-  例 :
+  次に例を示します。
 
   - ダイアログの **[Advanced...]** ボタン。
 

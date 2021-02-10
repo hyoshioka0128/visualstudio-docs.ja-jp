@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96a834725f1cf5b14f12a4c1554e67477768ef23
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303c05b241347922a4253ef3654e06bed8e824ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952422"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 プロセス ID を指定します。これは、システム ID または GUID のいずれかになります。
@@ -31,9 +31,9 @@ ms.locfileid: "80738169"
 typedef struct _AD_PROCESS_ID {
     AD_PROCESS_ID_TYPE ProcessIdType;
     union {
-        DWORD dwProcessId; 
-        GUID  guidProcessId; 
-        DWORD dwUnused; 
+        DWORD dwProcessId; 
+        GUID  guidProcessId; 
+        DWORD dwUnused; 
     } ProcessId;
 } AD_PROCESS_ID;
 ```
@@ -41,15 +41,15 @@ typedef struct _AD_PROCESS_ID {
 ```csharp
 public struct AD_PROCESS_ID {
     AD_PROCESS_ID_TYPE ProcessIdType;
-    DWORD              dwProcessId; 
-    GUID               guidProcessId; 
-    DWORD              dwUnused; 
+    DWORD              dwProcessId; 
+    GUID               guidProcessId; 
+    DWORD              dwUnused; 
 };
 ```
 
 ## <a name="members"></a>メンバー
 `ProcessIdType`\
-[AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) `ProcessId` 共用体 (または、マネージコードの場合は、アクセスする構造体のメンバー) を解釈する方法を指定する AD_PROCESS_ID_TYPE 列挙の値。
+[](../../../extensibility/debugger/reference/ad-process-id-type.md) `ProcessId` 共用体 (または、マネージコードの場合は、アクセスする構造体のメンバー) を解釈する方法を指定する AD_PROCESS_ID_TYPE 列挙の値。
 
 `dwProcessId`\
 システムからの値としてのプロセス ID。
@@ -76,7 +76,7 @@ dwUnused の埋め込み。
 
 - [GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
