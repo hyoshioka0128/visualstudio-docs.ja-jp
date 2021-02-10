@@ -15,15 +15,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e02da3484ce7c2beb35e643d3d90d8e37225e11
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524852"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966540"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成
   このチュートリアルでは Microsoft Office PowerPoint 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのプレゼンテーションが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。

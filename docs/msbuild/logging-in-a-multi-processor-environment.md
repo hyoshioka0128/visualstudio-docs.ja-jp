@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe90440e9e9e40312eafef0bda951937ea27ad9
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966267"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>マルチプロセッサ環境でのログ
 
@@ -32,7 +32,7 @@ MSBuild では複数のプロセッサを使用できるため、プロジェク
 
 ### <a name="central-logging-model"></a>中央ログ モデル
 
-マルチプロセッサ ビルドの場合、MSBuild では "中央ログ モデル" が使用されます。 中央ログ モデルでは、 *MSBuild.exe* のインスタンスがプライマリ ビルド プロセスの役割を果たします。これを "中央ノード" といいます。 中央ノードには、 *MSBuild.exe* のセカンダリ インスタンスがアタッチされます。これを "セカンダリ ノード" といいます。 中央ノードにアタッチされる ILogger ベースの logger を "中央 logger" と呼び、セカンダリ ノードにアタッチされる logger を "セカンダリ logger" と呼びます。
+マルチプロセッサ ビルドの場合、MSBuild では "中央ログ モデル" が使用されます。 中央ログ モデルでは、*MSBuild.exe* のインスタンスがプライマリ ビルド プロセスの役割を果たします。これを "中央ノード" といいます。 中央ノードには、*MSBuild.exe* のセカンダリ インスタンスがアタッチされます。これを "セカンダリ ノード" といいます。 中央ノードにアタッチされる ILogger ベースの logger を "中央 logger" と呼び、セカンダリ ノードにアタッチされる logger を "セカンダリ logger" と呼びます。
 
 ビルドを開始すると、セカンダリ logger がイベント トラフィックを中央 logger にルーティングします。 イベントは複数のセカンダリ ノードで発生するため、イベント データは同時に中央ノードに到着しますが、インタリーブされます。 イベントとプロジェクト間の参照やイベントとターゲット間の参照を解決するために、イベント引数には追加のビルド イベント コンテキスト情報が含まれています。
 

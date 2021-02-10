@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967112"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 企業向けガイド
 お客様の会社で Visual Studio の利用を開始するときに時間を節約したい場合は、ここから開始してください。 この企業向けガイドには、一般的な企業シナリオにおいて Visual Studio をインストールおよび更新したり、問題が発生した場合にブロックを解除したり、さらにヘルプが必要な場合に問題を報告する方法を把握したりするためのヒントが含まれています。 

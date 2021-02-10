@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, advanced packaging tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 03980eea9d16cde2b6f079e0b33973958fed7a7f
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c79c3d19dbd4b72bab9facdd81542fdc0620e1a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965864"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>方法: プロジェクト出力参照を追加する
   SharePoint 以外のプロジェクトアセンブリ (または Silverlight プロジェクト内の .xap ファイル) を SharePoint に配置するには、プロジェクト出力参照として追加します。

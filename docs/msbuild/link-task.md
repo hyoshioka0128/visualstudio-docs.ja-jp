@@ -29,23 +29,23 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 99e545cc4ae6a037816fd727d63fce16d3626484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904059"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966319"
 ---
 # <a name="link-task"></a>Link タスク
 
-Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe* ) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
+Microsoft C++ リンカー ツール *link.exe* をラップします。 リンカー ツールは、COFF (Common Object File Format) オブジェクト ファイルとライブラリをリンクし、実行可能ファイル ( *.exe*) やダイナミック リンク ライブラリ (DLL) を生成します。 詳細については、「[リンカー オプション](/cpp/build/reference/linker-options)」、「[コマンド ラインから MSBuild を使用する](/cpp/build/msbuild-visual-cpp)」、「[コマンド ラインから Microsoft C++ ツールセットを使用する](/cpp/build/building-on-the-command-line)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
 
- 次には、 **Link** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
+ 次には、**Link** タスクのパラメーターを説明します。 タスク パラメーターの大部分とパラメーターのいくつかのセットは、コマンド ライン オプションに対応します。
 
 - **AdditionalDependencies**
 
@@ -99,7 +99,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **Boolean** 型のパラメーターです。
 
-  `true` の場合は、 **DebuggableAttribute** 属性をデバッグ情報追跡と一緒に出力し、JIT 最適化を無効にします。 `false` の場合は、 **DebuggableAttribute** 属性を出力しますが、デバッグ情報追跡を無効にし、JIT 最適化を有効にします。
+  `true` の場合は、**DebuggableAttribute** 属性をデバッグ情報追跡と一緒に出力し、JIT 最適化を無効にします。 `false` の場合は、**DebuggableAttribute** 属性を出力しますが、デバッグ情報追跡を無効にし、JIT 最適化を有効にします。
 
   詳細については、「[/ASSEMBLYDEBUG (DebuggableAttribute の追加)](/cpp/build/reference/assemblydebug-add-debuggableattribute)」を参照してください。
 
@@ -187,7 +187,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **Boolean** 型のパラメーターです。
 
-  マネージド コードからネイティブ DLL への、リンカーによって生成された P/Invoke 呼び出しに対して、 **SuppressUnmanagedCodeSecurityAttribute** を適用するかどうかを指定します。
+  マネージド コードからネイティブ DLL への、リンカーによって生成された P/Invoke 呼び出しに対して、**SuppressUnmanagedCodeSecurityAttribute** を適用するかどうかを指定します。
 
   詳細については、「[/CLRUNMANAGEDCODECHECK (SuppressUnmanagedCodeSecurityAttribute の追加)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)」を参照してください。
 
@@ -343,7 +343,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **Boolean** 型のパラメーターです。
 
-  `true` の場合は、 *マップ ファイル* を作成します。 マップ ファイルのファイル名拡張子は、 *.map* です。
+  `true` の場合は、*マップ ファイル* を作成します。 マップ ファイルのファイル名拡張子は、 *.map* です。
 
   詳細については、「[/MAP (マップ ファイルの生成)](/cpp/build/reference/map-generate-mapfile)」を参照してください。
 
@@ -607,7 +607,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **Boolean** 型のパラメーターです。
 
-  `true` の場合、出力の登録が有効になっていれば、 **HKEY_CLASSES_ROOT** へのレジストリ書き込みは強制的に **HKEY_CURRENT_USER** にリダイレクトされます。
+  `true` の場合、出力の登録が有効になっていれば、**HKEY_CLASSES_ROOT** へのレジストリ書き込みは強制的に **HKEY_CURRENT_USER** にリダイレクトされます。
 
 - **PreprocessOutput**
 
@@ -627,7 +627,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **ブール値** のパラメーターです。
 
-  `true` の場合は、 **パフォーマンス ツール** プロファイラーで使用できる出力ファイルを生成します。
+  `true` の場合は、**パフォーマンス ツール** プロファイラーで使用できる出力ファイルを生成します。
 
   詳細については、「[/PROFILE (パフォーマンス ツール プロファイラー)](/cpp/build/reference/profile-performance-tools-profiler)」を参照してください。
 
@@ -651,7 +651,7 @@ Microsoft C++ リンカー ツール *link.exe* をラップします。 リン�
 
   省略可能な **Boolean** 型のパラメーターです。
 
-  `true` の場合は、Windows の ASLR ( *Address Space Layout Randomization* ) 機能を使用してロード時にランダムに再ベースできる実行可能イメージを生成します。
+  `true` の場合は、Windows の ASLR (*Address Space Layout Randomization*) 機能を使用してロード時にランダムに再ベースできる実行可能イメージを生成します。
 
   詳細については、「[/DYNAMICBASE (ASLR (Address Space Layout Randomization) の使用)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization)」を参照してください。
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968763"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 要素 (Visual Studio での Office 開発)
   要素は、 `update` ソリューションが更新プログラムをチェックする間隔を指定します。
@@ -43,7 +43,7 @@ ms.locfileid: "85537385"
 
 |属性|説明|
 |---------------|-----------------|
-|`enabled`|必須。 Enabled は、次のいずれかの値に設定します。<br /><br /> -   更新プログラムを確認する**場合は true** 。<br />-   更新プログラムがチェックされないようにする場合は**false** 。|
+|`enabled`|必須。 Enabled は、次のいずれかの値に設定します。<br /><br /> -   更新プログラムを確認する **場合は true** 。<br />-   更新プログラムがチェックされないようにする場合は **false** 。|
 
  `update` 要素には、次の子要素があります。
 
