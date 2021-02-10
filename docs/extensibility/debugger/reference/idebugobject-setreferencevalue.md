@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc0db8ee7f0581a4c336111d3876c24f0e5c12d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1df408e11803c7cd3508d1939ca6e12f046153fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953605"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 このオブジェクトの参照値を設定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80726378"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetReferenceValue( 
+HRESULT SetReferenceValue( 
    IDebugObject* pObject
 );
 ```
