@@ -13,15 +13,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6f98c74c2df998f0e79f5b95a316a7917304e029
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1a718c6a247528788d91e9c1f30ad636acb7ab9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85538360"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970336"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions &gt; 要素 (Visual Studio での Office 開発)
   `formRegions`名前空間の要素には `vstov4` 、VSTO アドインに関連付けられている Microsoft Office Outlook フォーム領域が含まれます。
@@ -49,7 +49,7 @@ ms.locfileid: "85538360"
 
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
-### <a name="description"></a>説明
+### <a name="description"></a>Description
  次のコード例は、 `formRegions` を使用して展開したアプリケーション レベルの Office ソリューションに対するアプリケーション マニフェストの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

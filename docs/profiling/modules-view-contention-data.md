@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: b3a73cec5f05072f0a99940b82a362ccb8e1edde
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969270"
 ---
 # <a name="modules-view---contention-data"></a>モジュール ビュー - 競合データ
 競合データのモジュール ビューは、プロファイル データでサンプリングされたコンカレンシー データを、モジュールごとにグループ化して表示します。 各モジュールが、階層ツリーのルートです。 競合イベントが発生したモジュールの関数が、モジュール ノードの下に一覧表示されます。

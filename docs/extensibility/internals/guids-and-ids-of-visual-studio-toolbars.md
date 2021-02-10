@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480383"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970219"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio ツールバーの Guid と Id
 このトピックでは、Visual Studio 統合開発環境 (IDE: integrated development environment) に含まれるツールバーの GUID と ID の値、およびそれらに含まれるグループについて説明します。 これらの値は、Visual Studio SDK の一部としてインストールされる、 *vsct* ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
@@ -40,7 +40,7 @@ ms.locfileid: "96480383"
 
  グループのみが、ツールバーから直接降下できます。 グループを追加するには、その親をツールバーの GUID と ID に設定します。 ツールバーにボタンを追加するには、ツールバーの [親] を [グループ] に設定します。
 
-|ツール バー|ID|
+|ツール バー|id|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
 |ビルド|IDM_VS_TOOL_BUILD|
@@ -51,7 +51,7 @@ ms.locfileid: "96480383"
 ### <a name="special-toolbars"></a>特殊なツールバー
  これらのツールバーは、Visual Studio IDE によって定義されていますが、特化された機能を提供し、コマンドグループをホストしません。
 
-|ツール バー|ID|
+|ツール バー|id|
 |-------------|--------|
 |Add コマンド|IDM_VS_TOOL_ADDCOMMAND|
 |未定義。|IDM_VS_TOOL_UNDEFINED|
@@ -88,7 +88,7 @@ ms.locfileid: "96480383"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |インデントする|IDG_VS_EDITTOOLBAR_INDENT|
-|コメント|IDG_VS_EDITTOOLBAR_COMMENT|
+|解説|IDG_VS_EDITTOOLBAR_COMMENT|
 |ブックマーク|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>デバッグツールバーグループ
@@ -97,7 +97,7 @@ ms.locfileid: "96480383"
 |----------|--------|
 |実行|IDM_DEBUG_TOOLBAR|
 |ステップ実行|IDG_DEBUG_TOOLBAR_STEPPING|
-|視聴する|IDG_DEBUG_TOOLBAR_WATCH|
+|Watch|IDG_DEBUG_TOOLBAR_WATCH|
 |Windows|IDG_DEBUG_TOOLBAR_WINDOWS|
 
 ### <a name="debug-location-toolbar-groups"></a>デバッグの場所のツールバーグループ
@@ -116,7 +116,7 @@ ms.locfileid: "96480383"
 |-----------------|-------------|------------|
 |ソリューション エクスプローラー|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1..5/5|
 |[サーバー エクスプローラー]|guid_SE_MenuGroup: IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
-|プロパティ|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
+|Properties|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |クラス ビュー|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|
 |クラス ビュー|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |オブジェクト ブラウザー|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
@@ -134,7 +134,7 @@ ms.locfileid: "96480383"
 |ブレークポイント|guidVSDebugGroup: IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
 |逆アセンブリ|guidVSDebugGroup: IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
 |メモリ1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1...4/4|IDG_MEMORY_EXPRESSION1..4/4<br /><br /> IDG_MEMORY_COLUMNS1..4/4|
-|処理|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
+|プロセス|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
 ## <a name="see-also"></a>関連項目
 - [ツールバーにメニューコントローラーを追加する](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
