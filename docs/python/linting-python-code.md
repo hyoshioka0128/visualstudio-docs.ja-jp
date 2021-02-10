@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d410fd7575b6f71f272f6924d15249f89aa6ebcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97336bf028a02c6c1f90262754dc0c89aa81e1cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882805"
 ---
 # <a name="use-pylint-to-check-python-code"></a>PyLint を使用した Python コードのチェック
 
@@ -23,7 +23,7 @@ Visual Studio for Python プロジェクトには [PyLint](https://www.pylint.or
 
 ## <a name="run-pylint"></a>PyLint の実行
 
-**ソリューション エクスプローラー**で Python プロジェクトを右クリックし、 **[Python]**  >  **[PyLint の実行]** の順に選択するだけです。
+**ソリューション エクスプローラー** で Python プロジェクトを右クリックし、 **[Python]**  >  **[PyLint の実行]** の順に選択するだけです。
 
 ![Python プロジェクトのコンテキスト メニューに表示された PyLint コマンド](media/code-pylint-command.png)
 
@@ -40,7 +40,7 @@ PyLint の警告とエラーが **[エラー一覧]** ウィンドウに表示�
 
 ## <a name="set-pylint-command-line-options"></a>PyLint コマンド ライン オプションの設定
 
-PyLint ドキュメントの[コマンド ライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)のセクションでは、 *.pylintrc* 構成ファイルを使用して PyLint の動作を制御する方法が説明されています。 このようなファイルは Visual Studio 内の Python プロジェクトのルートに配置するか、設定を適用したい範囲に応じて他の場所に配置します (詳しくは、[コマンドライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)に関するページをご覧ください)。
+PyLint ドキュメントの [コマンド ライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)のセクションでは、 *.pylintrc* 構成ファイルを使用して PyLint の動作を制御する方法が説明されています。 このようなファイルは Visual Studio 内の Python プロジェクトのルートに配置するか、設定を適用したい範囲に応じて他の場所に配置します (詳しくは、[コマンドライン オプション](https://pylint.readthedocs.io/en/latest/user_guide/run.html#command-line-options)に関するページをご覧ください)。
 
 たとえば、前の画像に表示されている "docstring が見つかりません" という警告がプロジェクト内の *.pylintrc* ファイルに対して表示されないようにするには、次の手順を実行します。
 

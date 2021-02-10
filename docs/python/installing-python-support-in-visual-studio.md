@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85540648"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881647"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Windows に Visual Studio の Python サポートをインストールする方法
 
@@ -25,7 +25,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 以前](#visual-studio-2013-and-earlier)
 
-インストール手順に従った後、Python サポートを簡単にテストするには、**Python の対話型**ウィンドウを開きます。その場合、**Alt**+**I** キーを押して「`2+2`」と入力します。 `4` という出力が表示されない場合は、手順を再確認してください。
+インストール手順に従った後、Python サポートを簡単にテストするには、**Python の対話型** ウィンドウを開きます。その場合、**Alt**+**I** キーを押して「`2+2`」と入力します。 `4` という出力が表示されない場合は、手順を再確認してください。
 
 > [!Tip]
 > Python ワークロードには、テンプレートの検出、テンプレート オプションの入力、およびプロジェクトとファイルの作成を行うためのグラフィカル ユーザー インターフェイスを提供する、有用な Cookiecutter 拡張機能が含まれています。 詳細については、「[Cookiecutter 拡張機能の使用](using-python-cookiecutter-templates.md)」を参照してください。
@@ -77,7 +77,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
     | **Cookiecutter テンプレートのサポート** | テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うための Cookiecutter グラフィカル UI をインストールできます。 「[Cookiecutter 拡張機能の使用](using-python-cookiecutter-templates.md)」を参照してください。 |
     | **Python Web サポート** | HTML、CSS、および JavaScript の編集をサポートする Web 開発用ツールを、Bottle、Flask、および Django フレームワークを使用するプロジェクトのテンプレートと共にインストールします。 「[Python Web プロジェクト テンプレート](python-web-application-project-templates.md)」を参照してください。 |
     | **Python IoT サポート** | Python を使用した、Windows IoT Core 開発がサポートされます。 |
-    | **Python ネイティブ開発ツール** | Python のネイティブ拡張機能の開発するために必要な C++ コンパイラおよびその他のコンポーネントがインストールされます。 「[Python 用 C++ 拡張機能の作成](working-with-c-cpp-python-in-visual-studio.md)」を参照してください。 C++ を完全にサポートするには、**C++ によるデスクトップ開発**ワークロードもインストールします。 |
+    | **Python ネイティブ開発ツール** | Python のネイティブ拡張機能の開発するために必要な C++ コンパイラおよびその他のコンポーネントがインストールされます。 「[Python 用 C++ 拡張機能の作成](working-with-c-cpp-python-in-visual-studio.md)」を参照してください。 C++ を完全にサポートするには、**C++ によるデスクトップ開発** ワークロードもインストールします。 |
     | **Azure Cloud Services コア ツール** | Python での Azure Cloud Services で開発者に追加のサポートを提供します。 「[Azure クラウド サービス プロジェクト](python-azure-cloud-service-project-template.md)」を参照してください。 |
     ::: moniker-end
 
@@ -87,7 +87,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
     | Python ディストリビューション | 使用する予定の Python 2、Python 3、Miniconda、Anaconda2、Anaconda3 ディストリビューションの 32 ビットおよび 64 ビットのバリアントなど、使用可能なオプションの任意の組み合わせを選択します。 それぞれには、ディストリビューションのインタープリター、ランタイム、およびライブラリが含まれます。 Anaconda とは、具体的には、さまざまな事前インストール パッケージを含むオープンなデータ サイエンス プラットフォームです。 (ディストリビューションを追加または削除する場合には、Visual Studio インストーラーへはいつでも戻ることができます。)**注**:Visual Studio インストーラー以外で配布をインストールした場合、ここで対応するオプションを確認する必要はありません。 Visual Studio は、既存の Python インストールを自動的に検出します。 「[[Python 環境] ウィンドウ](managing-python-environments-in-visual-studio.md#the-python-environments-window)」を参照してください。 また、インストーラーに表示されているものよりも新しいバージョンの Python を利用できる場合は、そのバージョンを個別にインストールすれば Visual Studio によって検出されます。 |
     | **Cookiecutter テンプレートのサポート** | テンプレートの検出、テンプレート オプションの入力、プロジェクトとファイルの作成を行うための Cookiecutter グラフィカル UI をインストールできます。 「[Cookiecutter 拡張機能の使用](using-python-cookiecutter-templates.md)」を参照してください。 |
     | **Python Web サポート** | HTML、CSS、および JavaScript の編集をサポートする Web 開発用ツールを、Bottle、Flask、および Django フレームワークを使用するプロジェクトのテンプレートと共にインストールします。 「[Python Web プロジェクト テンプレート](python-web-application-project-templates.md)」を参照してください。 |
-    | **Python ネイティブ開発ツール** | Python のネイティブ拡張機能の開発するために必要な C++ コンパイラおよびその他のコンポーネントがインストールされます。 「[Python 用 C++ 拡張機能の作成](working-with-c-cpp-python-in-visual-studio.md)」を参照してください。 C++ を完全にサポートするには、**C++ によるデスクトップ開発**ワークロードもインストールします。 |
+    | **Python ネイティブ開発ツール** | Python のネイティブ拡張機能の開発するために必要な C++ コンパイラおよびその他のコンポーネントがインストールされます。 「[Python 用 C++ 拡張機能の作成](working-with-c-cpp-python-in-visual-studio.md)」を参照してください。 C++ を完全にサポートするには、**C++ によるデスクトップ開発** ワークロードもインストールします。 |
     | **Azure Cloud Services コア ツール** | Python での Azure Cloud Services で開発者に追加のサポートを提供します。 「[Azure クラウド サービス プロジェクト](python-azure-cloud-service-project-template.md)」を参照してください。 |
     ::: moniker-end
 
@@ -100,7 +100,7 @@ Visual Studio 用の Python サポート (Python Tools for Visual Studio (PTVS) 
 Visual Studio で Python をインストールしたか、実行したときに問題が発生した場合、次をお試しください。
 
 - Python CLI を利用し、つまり、コマンド プロンプトから *python.exe* を実行し、同じエラーが発生するかどうかを判断します。
-- Visual Studio インストーラーの [ **[修復]** ](../install/repair-visual-studio.md) オプションを使用します。
+- Visual Studio インストーラーの [ **[修復]**](../install/repair-visual-studio.md) オプションを使用します。
 - Windows で **[設定]**  >  **[アプリと機能]** の順に選択し、Python を修復するか、再インストールします。
 
 **エラー例**:対話型プロセスを開始できなかった:System.ComponentModel.Win32Exception (0x80004005):Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() で原因不明のエラー (0xc0000135)。

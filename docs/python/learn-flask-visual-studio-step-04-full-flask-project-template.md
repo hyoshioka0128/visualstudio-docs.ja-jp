@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa59197e584c6c8062c13354178f883b60b36442
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88250565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882870"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>手順 4: 完全な Flask Web プロジェクト テンプレートを使用する
 
@@ -35,13 +35,13 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>手順 4-1: テンプレートからプロジェクトを作成する
 
-1. Visual Studio で、**ソリューション エクスプローラー**に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]** > **[新規]** > **[プロジェクト]** の順に選択します)。
+1. Visual Studio で、**ソリューション エクスプローラー** に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、**[追加]** > **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]** > **[新規]** > **[プロジェクト]** の順に選択します)。
 
 1. [新しいプロジェクト] ダイアログで **Flask Web プロジェクト** テンプレートを探して選択し、プロジェクト "FlaskWeb" を呼び出して、**[OK]** を選択します。
 
-1. ここでも、テンプレートに *requirements.txt* ファイルが含まれているので、Visual Studio からそれらの依存関係をインストールする場所をたずねられます。 オプションを選択し、**仮想環境にインストール**して、**[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。
+1. ここでも、テンプレートに *requirements.txt* ファイルが含まれているので、Visual Studio からそれらの依存関係をインストールする場所をたずねられます。 オプションを選択し、**仮想環境にインストール** して、**[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。
 
-1. Visual Studio で仮想環境の設定が完了したら、**ソリューション エクスプローラー**でプロジェクトを右クリックし、**[スタートアップ プロジェクトに設定]** を選択する方法で **FlaskWeb** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
+1. Visual Studio で仮想環境の設定が完了したら、**ソリューション エクスプローラー** でプロジェクトを右クリックし、**[スタートアップ プロジェクトに設定]** を選択する方法で **FlaskWeb** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
 
     ![ソリューション エクスプローラーでスタートアップ プロジェクトとして FlaskWeb プロジェクトが表示されます](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -59,7 +59,7 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
 
 1. 以降のセクションのために、アプリを実行したままにすることができます。
 
-    アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
+    アプリを停止して [ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に **チーム エクスプローラー** で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
 
 ### <a name="examine-what-the-template-creates"></a>テンプレートによって作成されたものを確認する
 
@@ -81,7 +81,7 @@ Visual Studio の "空の Flask App プロジェクト" テンプレート上に
 それでもやはり、既存の仮想環境を使用するには、次の手順を実行します。
 
 1. Visual Studio に依存関係をインストールするようメッセージが表示されたら、**[I will install them myself]\(自分でインストールします\)** オプションを選択します。
-1. **ソリューション エクスプローラー**で、**[Python 環境]** ノードを右クリックして、**[既存の仮想環境を追加する]** を選択します。
+1. **ソリューション エクスプローラー** で、**[Python 環境]** ノードを右クリックして、**[既存の仮想環境を追加する]** を選択します。
 1. 仮想環境を含むフォルダーに移動して選択し、 **[OK]** をクリックします。
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>手順 4 2: プロジェクト テンプレートによって作成されたビューとページ テンプレートを理解する
