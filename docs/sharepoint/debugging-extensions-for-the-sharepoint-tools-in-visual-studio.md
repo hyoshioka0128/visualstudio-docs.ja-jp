@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948909"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Visual Studio での SharePoint ツールの拡張機能のデバッグ
   Visual Studio の実験用インスタンスまたは通常のインスタンスで、SharePoint ツールの拡張機能をデバッグできます。 拡張機能の動作をトラブルシューティングする必要がある場合は、レジストリ値を変更して、追加のエラー情報を表示し、Visual Studio での SharePoint コマンドの実行方法を構成することもできます。
@@ -124,7 +124,7 @@ ms.locfileid: "94671221"
 
 |値|説明|
 |-----------|-----------------|
-|AttachDebuggerToHostProcess|起動時にデバッガーを *vssphost4.exe* にアタッチできるダイアログボックスを表示するかどうかを指定する REG_DWORD ます。 これは、デバッグするコマンドが vssphost.exe の開始直後にそのプロセスによって実行され、コマンドが実行される前に手動でデバッガーをアタッチする時間がない場合に役立ちます。 ダイアログボックスを表示するに *vssphost4.exe* は、vssphost4.exe<xref:System.Diagnostics.Debugger.Break%2A> 起動時にメソッドを呼び出します。<br /><br /> この動作を有効にするには、この値を 1 に設定します。 この動作を無効にするには、この値を 0 に設定するか、または削除します。<br /><br /> この値を1に設定した場合は、ホストが正常に開始されたことを Visual Studio が要求する前に、HostProcessStartupTimeout 値を増やして、デバッガーをアタッチするのに十分な時間を与えるようにすることもでき *vssphost4.exe* ます。|
+|AttachDebuggerToHostProcess|起動時にデバッガーを *vssphost4.exe* にアタッチできるダイアログボックスを表示するかどうかを指定する REG_DWORD ます。 これは、デバッグするコマンドが vssphost.exe の開始直後にそのプロセスによって実行され、コマンドが実行される前に手動でデバッガーをアタッチする時間がない場合に役立ちます。 ダイアログボックスを表示するには、vssphost4.exe<xref:System.Diagnostics.Debugger.Break%2A> 起動時にメソッドを呼び出します。<br /><br /> この動作を有効にするには、この値を 1 に設定します。 この動作を無効にするには、この値を 0 に設定するか、または削除します。<br /><br /> この値を1に設定した場合は、ホストが正常に開始されたことを Visual Studio が要求する前に、HostProcessStartupTimeout 値を増やして、デバッガーをアタッチするのに十分な時間を与えるようにすることもでき *vssphost4.exe* ます。|
 |ChannelOperationTimeout|SharePoint コマンドの実行を待機する時間 (秒単位) を指定する REG_DWORD です。 時間内にコマンドが実行されない場合、<xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> がスローされます。<br /><br /> 既定値は 120 秒です。|
 |HostProcessStartupTimeout|*vssphost4.exe* が正常に開始されたことを Visual Studio が通知するまでの時間を秒単位で指定する REG_DWORD。 *vssphost4.exe* が正常に開始されたことを通知しない場合は、 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> がスローされます。<br /><br /> 既定値は 60 秒です。|
 |MaxReceivedMessageSize|Visual Studio と *vssphost4.exe* 間で渡される WCF メッセージの最大許容サイズ (バイト単位) を指定する REG_DWORD。<br /><br /> 既定値は 1,048,576 バイト (1 MB) です。|

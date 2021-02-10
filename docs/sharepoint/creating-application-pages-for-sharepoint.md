@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949182"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>SharePoint のアプリケーション ページの作成
   *アプリケーションページ* は、SharePoint web サイトで使用できるように設計された ASP.NET web ページです。 アプリケーションページは特殊な種類の ASP.NET ページです。 アプリケーションページと標準 ASP.NET ページの主な違いは、アプリケーションページに SharePoint マスターページとマージされたコンテンツが含まれていることです。 マスターページを使用すると、アプリケーションページは、サイト上の他のページと同じ外観と動作を共有できます。
@@ -45,7 +45,7 @@ ms.locfileid: "94850443"
 
 |Folder|説明|
 |------------|-----------------|
-|Layouts|SharePoint ファイルシステムの _layouts 仮想ディレクトリにマップされます。|
+|レイアウト|SharePoint ファイルシステムの _layouts 仮想ディレクトリにマップされます。|
 |レイアウトサブフォルダー|アプリケーションページを構成するファイルが含まれます。 既定では、このフォルダーの名前はプロジェクトと同じです。 このフォルダーの名前はいつでも変更できます。 プロジェクトを実行すると、Visual Studio によってこのフォルダーが SharePoint ファイルシステムの _layouts 仮想ディレクトリに配置されます。|
 
  Visual Studio によって、次のファイルがプロジェクトに追加されます。

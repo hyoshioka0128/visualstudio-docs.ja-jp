@@ -12,15 +12,15 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 06a8fdef9c194e9b0f81768f93b675ade77d39ef
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8fc572f6fc5c0444fda619af5af49c6c2e52ac5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850586"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949117"
 ---
 # <a name="create-sharepoint-features"></a>SharePoint 機能の作成
   SharePoint 機能を使用すると、関連する SharePoint プロジェクト項目をグループ化して、配置を簡単にすることができます。 SharePoint フィーチャーデザイナーを使用して、機能を作成し、スコープを設定し、他の機能を依存関係としてマークできます。 また、デザイナーはマニフェストも生成します。マニフェストは、各機能を記述する XML ファイルです。
@@ -42,8 +42,8 @@ ms.locfileid: "94850586"
 
 |プロパティ|説明|
 |--------------|-----------------|
-|タイトル|省略可能。 この機能の既定のタイトルは、 *SolutionName* *FeatureName* に設定されています。|
-|説明|省略可能。 SharePoint 機能の説明です。|
+|Title|任意。 この機能の既定のタイトルは、 *SolutionName* *FeatureName* に設定されています。|
+|説明|任意。 SharePoint 機能の説明です。|
 |Scope|必須。 **ソリューションエクスプローラー** を使用して機能を作成した場合、既定ではスコープは Web に設定されます。<br /><br /> -ファーム: サーバーファーム全体に対して機能をアクティブ化します。<br /><br /> -サイト: サイトコレクション内のすべての web サイトの機能をアクティブ化します。<br /><br /> -Web: 特定の web サイトの機能をアクティブ化します。<br /><br /> -WebApplication: web アプリケーション内のすべての web サイトの機能をアクティブにします。|
 |[ソリューション内の項目]|フィーチャーに追加できるすべての SharePoint アイテム。|
 |機能の項目|フィーチャーに追加された SharePoint プロジェクトアイテム。|

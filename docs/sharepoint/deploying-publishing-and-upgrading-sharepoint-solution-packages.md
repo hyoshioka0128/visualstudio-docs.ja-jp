@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab97efc82575c31c8e05b73063c2b53a09691d2d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd0dfa3a12c675463c46e93aa0d5b25e8b4bd4b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948857"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>SharePoint ソリューションパッケージの配置、発行、およびアップグレード
   Visual Studio で SharePoint ソリューションを開発した後、パッケージ (.wsp) ファイルをローカルの SharePoint サーバーに配置するか、リモートまたはローカルの SharePoint サーバーにパブリッシュすることができます。 ファイルを展開する場合は、パッケージファイル (.wsp) の展開方法をカスタマイズできます。
