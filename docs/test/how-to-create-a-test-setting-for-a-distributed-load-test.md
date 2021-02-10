@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: b52fad24cf0772099e619b08ad877bae891365c3
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+manager: jmartens
+ms.openlocfilehash: 4ca0058d1f06e00941766ed1ecf6f81d73939a8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95439967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877994"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>方法:分散ロード テスト用のテスト設定ファイルの作成
 

@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873906"
 ---
 # <a name="use-visual-studio-search"></a>Visual Studio の検索を使用する
 
@@ -41,26 +41,30 @@ Visual Studio 統合開発環境 (IDE) には、多くのメニュー、オプ�
 
 ## <a name="search-menus-options-and-windows"></a>メニュー、オプション、ウィンドウの検索
 
-Visual Studio の検索ボックスを使用して、設定、オプション、および同様の構成項目を見つけることができます。 たとえば Visual Studio の配色テーマを変更できるダイアログをすばやく見つけて開くには、次のスクリーンショットに示されているように、" *テーマの変更* " を検索します。
+Visual Studio の検索ボックスを使用して、設定、オプション、および同様の構成項目を見つけることができます。 たとえば Visual Studio の配色テーマを変更できるダイアログをすばやく見つけて開くには、次のスクリーンショットに示されているように、"*テーマの変更*" を検索します。
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Visual Studio の検索ボックス":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="Visual Studio の設定とオプションの検索":::
 
 > [!TIP]
 > Visual Studio の検索を使用すると、ほとんどの場合、メニュー、ショートカット キー、結果内の各項目の場所も通知されます。
 
-Visual Studio の検索ボックスを使用して、メニュー項目とコマンドを検索できます。 たとえば、 *clean sol* を検索して、Clean Solution (ソリューションのクリーン) コマンドをすばやく見つけて実行します。 次のスクリーンショットに示されているように、検索結果には、このコマンドがメニューのどこにあるかも示されます。
+Visual Studio の検索ボックスを使用して、メニュー項目とコマンドを検索できます。 たとえば、*clean sol* を検索して、Clean Solution (ソリューションのクリーン) コマンドをすばやく見つけて実行します。 次のスクリーンショットに示されているように、検索結果には、このコマンドがメニューのどこにあるかも示されます。
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Visual Studio の検索ボックス" を検索します。
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Visual Studio のメニュー項目とコマンドの検索":::
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Visual Studio の検索ボックス":::
+最後に、誤って閉じたおそれがあるウィンドウやパネルを検索できます。 たとえば、[テスト エクスプローラー] ウィンドウを開くには、次のように "*テスト*" を検索します。
+
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="Visual Studio のウィンドウとパネルの検索":::
 
 ## <a name="search-files-and-code"></a>ファイルとコードの検索
 
-また、Visual Studio の検索を使用すると、ファイル名、コード、メソッド、およびその他の一致するソリューション項目も検索されます。 次のスクリーンショットは、 *markdown* の検索によって、MarkdownMetaExtractor.cs ファイル、`MarkdownMetaExtractor` クラス、および 2 つのメソッドがソリューション内で見つったことを示しています。
+また、Visual Studio の検索を使用すると、ファイル名、コード、メソッド、およびその他の一致するソリューション項目も検索されます。 次のスクリーンショットは、*markdown* の検索によって、MarkdownMetaExtractor.cs ファイル、`MarkdownMetaExtractor` クラス、および 2 つのメソッドがソリューション内で見つったことを示しています。
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Visual Studio の検索ボックス" 検索を実行することもできます。 次のスクリーンショットは、 *FSS* の検索で、 **F** older **S** ize **S** canner のファイル、クラス、メソッドが見つかったことを示しています。
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="Visual Studio の検索を使用したファイルの検索":::
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Visual Studio の検索ボックス":::
+"キャメル ケース" 検索を実行することもできます。 次のスクリーンショットは、*FSS* の検索で、**F** older **S** ize **S** canner のファイル、クラス、メソッドが見つかったことを示しています。
+
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Visual Studio の検索を使用したキャメル ケースの検索":::
 
 ## <a name="see-also"></a>関連項目
 

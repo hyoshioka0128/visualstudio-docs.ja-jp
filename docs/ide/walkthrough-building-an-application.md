@@ -7,15 +7,15 @@ ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a281b90b3dabe2b1d91c43a27ee5f9c858f96c
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: f7fe40f78b8a8447c1ae784e33a25e905e368118
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873828"
 ---
 # <a name="walkthrough-build-an-application"></a>チュートリアル: アプリケーションを構築する
 
@@ -67,7 +67,7 @@ ms.locfileid: "92136616"
 
 ### <a name="build-the-solution"></a>ソリューションをビルドする
 
-- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、 **Ctrl**+**Shift**+**B** キーを押します。
+- メニュー バーで **[ビルド]**  >  **[ソリューションのビルド]** の順に選択するか、**Ctrl**+**Shift**+**B** キーを押します。
 
     **[出力]** ウィンドウに、ビルドの結果が表示されます。 ビルドに成功しました。
 
@@ -75,11 +75,11 @@ ms.locfileid: "92136616"
 
 次に、コンパイラに警告を生成させるコードを紹介します。
 
-1. C# プロジェクトで、 *ExpenseReportPage.xaml.cs* ファイルを開きます。 **ExpenseReportPage** メソッドにコード `int i;` を追加します。
+1. C# プロジェクトで、*ExpenseReportPage.xaml.cs* ファイルを開きます。 **ExpenseReportPage** メソッドにコード `int i;` を追加します。
 
     OR
 
-    Visual Basic プロジェクトで、 *ExpenseReportPage.xaml.vb* ファイルを開きます。 カスタム コンストラクターの **Public Sub New...** にコード `Dim i` を追加します。
+    Visual Basic プロジェクトで、*ExpenseReportPage.xaml.vb* ファイルを開きます。 カスタム コンストラクターの **Public Sub New...** にコード `Dim i` を追加します。
 
 1. ソリューションをビルドします。
 
@@ -135,7 +135,7 @@ ms.locfileid: "92136616"
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>出力ウィンドウに追加のビルド詳細を表示する
 
-**[出力]** ウィンドウに表示されるビルド プロセスに関する情報量を変更できます。 ビルドの詳細度は、通常、 **最小** に設定されています。これは、優先度の高い警告またはエラーと共にビルド プロセスの概要のみが **[出力]** ウィンドウに表示されることを意味します。 ビルドに関する詳細情報を表示するには、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」を参照してください。
+**[出力]** ウィンドウに表示されるビルド プロセスに関する情報量を変更できます。 ビルドの詳細度は、通常、**最小** に設定されています。これは、優先度の高い警告またはエラーと共にビルド プロセスの概要のみが **[出力]** ウィンドウに表示されることを意味します。 ビルドに関する詳細情報を表示するには、「[[オプション] ダイアログ ボックス、[プロジェクトおよびソリューション]、[ビルド/実行]](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)」を参照してください。
 
 > [!IMPORTANT]
 > 詳細情報を表示する場合は、ビルドの完了までにかかる時間が長くなります。
@@ -156,12 +156,12 @@ ms.locfileid: "92136616"
 
      ビルド情報には、ビルドの開始時刻 (出力の先頭にあります) とファイルが処理された順序が含まれています。 この情報には、ビルド時に Visual Studio で実行される実際のコンパイラ構文も含まれています。
 
-     たとえば、C# のビルドの場合、 [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) オプションには、このトピックで指定した警告コード **0168** が、他の 3 つの警告と共に示されます。
+     たとえば、C# のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) オプションには、このトピックで指定した警告コード **0168** が、他の 3 つの警告と共に示されます。
 
      Visual Basic のビルドの場合、[/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) には除外する特定の警告が含まれていないため、警告は表示されません。
 
     > [!TIP]
-    > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、 **[出力]** ウィンドウの内容を検索できます。
+    > **Ctrl**+**F** キーを押して **[検索]** ダイアログ ボックスを表示すると、**[出力]** ウィンドウの内容を検索できます。
 
 詳細については、[ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 

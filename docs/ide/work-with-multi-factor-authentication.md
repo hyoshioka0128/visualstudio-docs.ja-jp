@@ -6,20 +6,20 @@ ms.topic: conceptual
 description: 多要素認証が必要なアカウントで Visual Studio を使用する方法を説明します。
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 6b85d64d3f84bce34f2a9b30d9caf01127149abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90093350"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878488"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>多要素認証が必要なアカウントで Visual Studio を使用する方法
 
-外部のゲスト ユーザーとコラボレーションするときは、**多要素認証 (MFA)** などの**条件付きアクセス (CA)** ポリシーを使用して貴社のアプリとデータを保護することをお勧めします。  
+外部のゲスト ユーザーとコラボレーションするときは、**多要素認証 (MFA)** などの **条件付きアクセス (CA)** ポリシーを使用して貴社のアプリとデータを保護することをお勧めします。  
 
 有効にすると、ゲスト ユーザーはリソースにアクセスするためにユーザー名とパスワードだけでなく、追加のセキュリティ要件を満たす必要があります。 MFA ポリシーは、組織のメンバーに対して有効にするのと同じ方法で、テナント レベル、アプリ レベル、または個々のゲスト ユーザー レベルで適用できます。 
 

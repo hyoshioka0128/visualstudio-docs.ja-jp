@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: f7f08402-610e-47f0-ba10-575dd395a0f0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe7bb45d2979a62d07e34b2ee44076394ff936c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6833a5f8421670456c427e0bf19625b56467162a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872821"
 ---
 # <a name="debugging-applications"></a>アプリケーションのデバッグ
 次のセクションでは、特定の種類のアプリケーションのデバッグを処理します。 さまざまなアプリケーションの種類とさまざまな言語には、異なる設定と手法が必要であり、デバッグする必要がある問題もさまざまに発生します。

@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 0af11464-eeb1-4d0b-87a6-0cc96779afb1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: be57355c8fc38758080ebde344db0b4224bc3df8
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 10818f473dec392364832cdc2f5215197ef4627f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873172"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>[デバッグ ソース ファイル] ([ソリューション プロパティ ページ] ダイアログ ボックス - [共通プロパティ])
 このプロパティ ページでは、ソリューションのデバッグ時にデバッガーによってソース ファイルが検索される場所を指定します。

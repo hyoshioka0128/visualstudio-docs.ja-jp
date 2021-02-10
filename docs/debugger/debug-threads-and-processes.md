@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 7d3b2bc8a0a9011c04642070125c247a8dceed66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873185"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Visual Studio でスレッドとプロセスをデバッグするためのツール
 *スレッド* と *プロセス* は、コンピューター科学における関連概念です。 いずれも特定の順序で実行する必要がある命令のシーケンスを表します。 ただし、別個のスレッドやプロセスの命令は並列実行できます。

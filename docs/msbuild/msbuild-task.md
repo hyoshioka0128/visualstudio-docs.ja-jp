@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a4d1f9fe79ae5092992ff66ddaf5e10729e8b19a
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f8241188b484447f94c60aa0e0c9bf05e477dd39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878280"
 ---
 # <a name="msbuild-task"></a>MSBuild タスク
 
@@ -39,7 +39,7 @@ ms.locfileid: "93049061"
 |-----------------------------------| - |
 | `BuildInParallel` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、`Projects` パラメーターに指定されたプロジェクトが同時にビルドされます (可能な場合)。 既定値は `false` です。 |
 | `Projects` | 必須の <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> ビルドするプロジェクト ファイルを指定します。 |
-| `Properties` | 省略可能な `String` 型のパラメーターです。<br /><br /> 子プロジェクトに対してグローバル プロパティとして適用するプロパティの名前/値ペアのセミコロンで区切られたリスト。 このパラメーターを指定することは、 [*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) でビルドするときに **-property** スイッチを持つプロパティを設定することと同じ意味になります。 次に例を示します。<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> `Properties` パラメーター経由でプロジェクトにプロパティを渡すと、プロジェクト ファイルが既に読み込まれている場合でも、MSBuild によってプロジェクトの新しいインスタンスが作成される可能性があります。 MSBuild では、指定されたプロジェクト パスに対して 1 つのプロジェクト インスタンスとグローバル プロパティの一意のセットが作成されます。 たとえば、この動作を使用すると、Configuration=Release で *myproject.proj* を呼び出す複数の MSBuild タスクを作成し、 *myproject.proj* の 1 つのインスタンスを取得することができます (一意のプロパティがタスクで指定されていない場合)。 MSBuild によってまだ把握されていないプロパティを指定した場合、MSBuild によってプロジェクトの新しいインスタンスが作成されます。これは、プロジェクトの他のインスタンスと並列にビルドできます。 たとえば、リリース構成をデバッグ構成と同時にビルドできます。|
+| `Properties` | 省略可能な `String` 型のパラメーターです。<br /><br /> 子プロジェクトに対してグローバル プロパティとして適用するプロパティの名前/値ペアのセミコロンで区切られたリスト。 このパラメーターを指定することは、[*MSBuild.exe*](../msbuild/msbuild-command-line-reference.md) でビルドするときに **-property** スイッチを持つプロパティを設定することと同じ意味になります。 次に例を示します。<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> `Properties` パラメーター経由でプロジェクトにプロパティを渡すと、プロジェクト ファイルが既に読み込まれている場合でも、MSBuild によってプロジェクトの新しいインスタンスが作成される可能性があります。 MSBuild では、指定されたプロジェクト パスに対して 1 つのプロジェクト インスタンスとグローバル プロパティの一意のセットが作成されます。 たとえば、この動作を使用すると、Configuration=Release で *myproject.proj* を呼び出す複数の MSBuild タスクを作成し、*myproject.proj* の 1 つのインスタンスを取得することができます (一意のプロパティがタスクで指定されていない場合)。 MSBuild によってまだ把握されていないプロパティを指定した場合、MSBuild によってプロジェクトの新しいインスタンスが作成されます。これは、プロジェクトの他のインスタンスと並列にビルドできます。 たとえば、リリース構成をデバッグ構成と同時にビルドできます。|
 | `RebaseOutputs` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、ビルド プロジェクトからのターゲットの出力項目の相対パスを、呼び出し元プロジェクトからの相対パスに合わせます。 既定値は `false` です。 |
 | `RemoveProperties` | 省略可能な `String` 型のパラメーターです。<br /><br /> 削除するグローバル プロパティのセットを指定します。 |
 | `RunEachTargetSeparately` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、MSBuild タスクによって、MSBuild に渡されたリスト内の各ターゲットが、同時にではなく一度に 1 つずつ呼び出されます。 このパラメーターを `true` に設定すると、前に呼び出したターゲットが失敗しても、後に続くターゲットは呼び出されることが保証されます。 それ以外の場合は、ビルド エラーが発生すると、以降のすべてのターゲットの呼び出しは停止されます。 既定値は `false` です。 |

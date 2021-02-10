@@ -5,15 +5,15 @@ ms.date: 06/28/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0355f1017bb661b4f72325fb74f60653f69cd182
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62815005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878181"
 ---
 # <a name="work-with-the-r-interactive-window"></a>R 対話型ウィンドウの使用
 
@@ -67,7 +67,7 @@ REPL での以前の入力と出力はすべて読み取り専用となり、変
 
 ## <a name="workspaces-and-sessions"></a>ワークスペースとセッション
 
-対話型ウィンドウでコードを実行すると、現在のセッションでコンテキストが作成されます。 コンテキストはグローバル変数、関数定義、ライブラリの読み込みなどで構成されます。 このコンテキストはまとめて*ワークスペース*と呼ばれます。ワークスペースはいつでも保存して読み込むことができます。
+対話型ウィンドウでコードを実行すると、現在のセッションでコンテキストが作成されます。 コンテキストはグローバル変数、関数定義、ライブラリの読み込みなどで構成されます。 このコンテキストはまとめて *ワークスペース* と呼ばれます。ワークスペースはいつでも保存して読み込むことができます。
 
 **[作業状態の保存]** ボタンを選択するか、 **[R Tools]** 、 **[セッション]** 、 **[作業状態の保存]** コマンドの順に選択すると、場所とファイル名 (既定の拡張子は *.RData*) の入力が求められます。
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99475ac316112f29a73a85b8ff92249a13867852
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436728"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877162"
 ---
 # <a name="exec-task"></a>Exec タスク
 
@@ -37,7 +37,7 @@ ms.locfileid: "92436728"
 
 |パラメーター|説明|
 |---------------|-----------------|
-|`Command`|必須の `String` 型のパラメーターです。<br /><br /> 実行するコマンドです。 attrib などのシステム コマンド、または *program.exe* 、 *runprogram.bat* 、 *setup.msi* などの実行可能ファイルを指定できます。<br /><br /> このパラメーターで複数のコマンド行を指定できます。 または、複数のコマンドをバッチ ファイルに入れ、このパラメーターを使ってそれを実行することもできます。|
+|`Command`|必須の `String` 型のパラメーターです。<br /><br /> 実行するコマンドです。 attrib などのシステム コマンド、または *program.exe*、*runprogram.bat*、*setup.msi* などの実行可能ファイルを指定できます。<br /><br /> このパラメーターで複数のコマンド行を指定できます。 または、複数のコマンドをバッチ ファイルに入れ、このパラメーターを使ってそれを実行することもできます。|
 |`ConsoleOutput`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型の出力パラメーターです。<br /><br /> 各項目出力は、ツールによって生成される標準出力または標準エラー ストリームの行です。 これは、`ConsoleToMsBuild` が `true` に設定されている場合にのみキャプチャされます。|
 |`ConsoleToMsBuild`|省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、タスクは、ツールの標準エラーと標準出力をキャプチャして、`ConsoleOutput` 出力パラメーターで利用できるようにします。<br /><br />既定値:`false`。|
 |`CustomErrorRegularExpression`|省略可能な `String` 型のパラメーターです。<br /><br /> ツールの出力でエラー行を示すために使う正規表現を指定します。 これは、普通とは異なる書式設定の出力を生成するツールに便利です。<br /><br />既定値: `null` (カスタム処理はありません)。|
