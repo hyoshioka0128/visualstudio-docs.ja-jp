@@ -6,16 +6,16 @@ ms.topic: conceptual
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c77c78258b5ddef486dc35ed6a620003864254cc
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 894afcbf8827fe0b5d5662a4c20e302f8224263f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960040"
 ---
 # <a name="status"></a>Status
 *VSPerfCmd.exe の* **Status** オプションでは、プロファイラーの状態、および現在プロファイルを実行中の任意のプロセスに関する情報が表示されます。

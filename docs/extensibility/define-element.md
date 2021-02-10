@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968451"
 ---
 # <a name="define-element"></a>Define 要素
 シンボル名と値のペアを定義します。 このシンボルは、条件付き属性で評価できます。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。 [Symbols 要素](../extensibility/symbols-element.md)も参照してください。
@@ -37,8 +37,8 @@ ms.locfileid: "96996241"
 |属性|説明|
 |---------------|-----------------|
 |name|必須。 シンボルの名前。<br /><br /> name = "Mode"|
-|値|必須。 シンボルの値。<br /><br /> 値 = "Standard"|
-|条件|省略可能。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|value|必須。 シンボルの値。<br /><br /> 値 = "Standard"|
+|条件|任意。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし。

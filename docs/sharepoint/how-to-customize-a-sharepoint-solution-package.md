@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7055be0b089a0b7c582ef0b66d84951d01685870
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 149e99a3ba86f1eec22d90618abfd8972ed68e97
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903638"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959897"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>方法: SharePoint ソリューションパッケージをカスタマイズする
   パッケージデザイナーを使用して、パッケージ (*.wsp*) を作成およびカスタマイズできます。 たとえば、SharePoint プロジェクトのアイテムと機能を追加したり、ソリューションの配置時に Web サーバーをリセットするかどうかを指定したり、配置サーバーの種類を設定したりできます。

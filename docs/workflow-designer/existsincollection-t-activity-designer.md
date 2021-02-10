@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9012bb936c2a9a8944639458d4165e08f5e7081e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 971d6bd028315ae4a8b6f3a88164c97c6f95712b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995409"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961327"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T> アクティビティ デザイナー
 
@@ -45,7 +45,7 @@ Exists **Sincollection \<T>** アクティビティデザイナーは、[**ツ�
 |*TypeArgument*|True|<xref:System.Collections.Generic.ICollection%601> に格納される項目の T 型。 既定では、この *Typeargument* 型は **Int32** に設定されています。 型を変更するには、プロパティグリッドで、コンボボックスの *Typeargument* の値を変更します。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|指定した項目がコレクション内に存在するかどうかを示す値。 結果にバインドする変数を指定するには、プロパティ グリッドで Visual Basic 変数を入力します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コレクション](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
