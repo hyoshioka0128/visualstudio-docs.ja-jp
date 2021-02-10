@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941932"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>メニュー項目にキーボードショートカットをバインドする
 ショートカットキーをカスタムメニューコマンドにバインドするには、パッケージの *vsct* ファイルにエントリを追加するだけです。 このトピックでは、キーボードショートカットをカスタムボタン、メニュー項目、またはツールバーコマンドにマップする方法と、キーボードマップを既定のエディターで適用する方法、またはカスタムエディターに制限する方法について説明します。
@@ -84,7 +84,7 @@ ms.locfileid: "94974623"
    カスタムエディターでのみコマンドを使用できるようにするには、 `editor` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] カスタムエディターを含む VSPackage を作成したときにパッケージテンプレートによって生成されたカスタムエディターの名前に属性を設定します。 名前の値を検索するには、 `<Symbols>` `<GuidSymbol>` `name` 属性が "." で終わるノードのセクションを調べ `editorfactory` ます。これはカスタムエディターの名前です。
 
 ## <a name="example-1"></a>例 1
- この例では、 **Ctrl** + **Alt** + という名前のパッケージで、という名前のコマンドにキーボードショートカットの Ctrl Alt **C** をバインド `cmdidMyCommand` `MyPackage` します。
+ この例では、  +  + という名前のパッケージで、という名前のコマンドにキーボードショートカットの Ctrl Alt **C** をバインド `cmdidMyCommand` `MyPackage` します。
 
 ```
 <CommandTable>
@@ -101,7 +101,7 @@ ms.locfileid: "94974623"
 ```
 
 ## <a name="example-2"></a>例 2
- この例では、 **Ctrl** + という名前のプロジェクト内のという名前のコマンドに、キーボードショートカット Ctrl **B** をバインド `cmdidBold` `TestEditor` します。 このコマンドは、カスタムエディターでのみ使用でき、他のエディターでは使用できません。
+ この例では、  + という名前のプロジェクト内のという名前のコマンドに、キーボードショートカット Ctrl **B** をバインド `cmdidBold` `TestEditor` します。 このコマンドは、カスタムエディターでのみ使用でき、他のエディターでは使用できません。
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
