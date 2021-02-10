@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 402d8c8bcb50c570ff680b8fe1cf8d26f037ba17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b31efd42d4d51384a09d6f0468484561e32f4397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944818"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 このインターフェイスは、アドレスがこのインターフェイスによって表されるオブジェクトを所有するプロセスの ID へのアクセスを提供します。
@@ -41,7 +41,7 @@ IDebugAddress2 : IDebugAddress
 |------------|-----------------|
 |[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|このインターフェイスによって表されるオブジェクトを所有するプロセスの ID を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

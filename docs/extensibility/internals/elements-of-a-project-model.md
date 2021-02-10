@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e366b2923d5903f00241db0a6b71017dc25f3dee
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946762"
 ---
 # <a name="elements-of-a-project-model"></a>プロジェクトモデルの要素
 のすべてのプロジェクトのインターフェイスと実装は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 基本構造を共有します。プロジェクトの種類のプロジェクトモデルです。 開発中の VSPackage であるプロジェクトモデルでは、設計上の決定に準拠したオブジェクトを作成し、IDE によって提供されるグローバル機能と連携します。 たとえば、プロジェクト項目を永続化する方法を制御しますが、ファイルを永続化する必要があるという通知は制御しません。 開いているプロジェクト項目にフォーカスを移動し、メニューバーの [**ファイル**] メニューの [**保存**] を選択した場合 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、プロジェクトの種類のコードは ide からコマンドをインターセプトし、ファイルを永続化して、ファイルが変更されていないことを ide に通知を送信する必要があります。

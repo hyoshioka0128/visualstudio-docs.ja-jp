@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6779471edc25435f14511cc2ebcc34e6247225ee
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945020"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 要素 (ClickOnce アプリケーション)
 アプリケーションをクライアント コンピューター上で実行するのに必要な最低限のセキュリティ権限について説明します。
@@ -158,14 +158,14 @@ ms.locfileid: "94349218"
 
    任意。 アプリケーションが、保護されたユーザー インターフェイス要素へのアクセスを必要とするかどうかを指定します。 指定できる値は、 `true` または `false`です。既定値は false です。 署名付きのアプリケーションのみ、true の値を設定する必要があります。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーションが、クライアント コンピューターによって既定で与えられる以上のアクセス許可を求める場合は、より高いレベルの信頼を与えるかどうかを確認するメッセージが、共通言語ランタイムの Trust Manager によって表示されます。 ユーザーが信頼を与えない場合、アプリケーションは実行されません。信頼を与えた場合は、ここで要求されたアクセス許可で実行されます。
 
  配置マニフェストに有効な信頼ライセンスがある場合には、 `defaultAssemblyRequest` や `assemblyRequest` を使用して要求されるすべてのアクセス許可は、ユーザーに確認することなく与えられます。
 
  アクセス許可の昇格の詳細については、「 [ClickOnce アプリケーションのセキュリティ保護](../deployment/securing-clickonce-applications.md)」を参照してください。 ポリシー配置の詳細については、「 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)」を参照してください。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
  次の 3 つのコード例では、 `trustInfo` による配置のアプリケーション マニフェストで使用する、既定の名前付きセキュリティ ゾーン (Internet、LocalIntranet、および FullTrust) に対応する [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 要素を示しています。
 
  最初の例は、Internet セキュリティ ゾーンで使用できる既定のアクセス許可の `trustInfo` 要素を示しています。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50e521d98f10477d56dfece30e20fd000b87b632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a0b37014433b670b24d466374682ee9a3654638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946997"
 ---
 # <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 ドキュメントコンテキストのファイルステートメントの範囲を取得します。
@@ -57,7 +57,7 @@ int GetStatementRange(
 このドキュメントコンテキスト内のソースコードの範囲 (コメントを含む) を取得するには、 [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md) メソッドを呼び出します。
 
 ## <a name="example"></a>例
-次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) この例では、開始位置が null 値でない場合にのみ終了位置を入力します。
+次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) この例では、開始位置が null 値でない場合にのみ終了位置を入力します。
 
 ```cpp
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5eec842f989497fda618482916154aabdcdd406
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946645"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK でイベントを公開する
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] オートメーションを使用してイベントのソースを作成できます。 プロジェクトとプロジェクトアイテムのイベントをソースにすることをお勧めします。
@@ -70,7 +70,7 @@ ms.locfileid: "96480539"
 
  *AutomationEvents* と *AutomationEvents* には、次の表に示すクラスの宣言と実装が含まれています。
 
-|クラス|説明|
+|インスタンス|説明|
 |-----------|-----------------|
 |`CAutomationEvents`|オブジェクトから取得されたイベントルートオブジェクトを実装し `DTE.Events` ます。|
 |`CProjectsEventsContainer` および `CProjectItemsEventsContainer`|対応するイベントを発生させるイベントソースオブジェクトを実装します。|

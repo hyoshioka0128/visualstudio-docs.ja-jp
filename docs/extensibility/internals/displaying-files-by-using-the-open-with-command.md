@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946723"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>[ファイルを開くアプリケーションの表示] コマンドを使用してファイルを表示する
 プロジェクトでは、[ **ファイルを開くアプリケーション** の選択] ダイアログボックスを表示するよう IDE に要求できます。 この要求は、標準エディターを選択したファイルを開くようにユーザーに求めます。 次の手順では、このプロセスについて説明します。
