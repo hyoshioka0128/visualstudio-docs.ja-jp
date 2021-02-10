@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 22ba5acb995466e695c0e25b5b7540f3677b1264
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e8486120b0f08077bc30c2a5177a8aba915c37f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948675"
 ---
 # <a name="extend-sharepoint-project-items"></a>SharePoint プロジェクト項目の拡張
   Visual Studio に既にインストールされている SharePoint プロジェクト項目の種類に機能を追加する場合は、プロジェクト項目の拡張機能を作成します。 たとえば、Visual Studio で組み込み **イベントレシーバー** または **リスト定義** プロジェクト項目の拡張機能を作成したり、カスタムプロジェクト項目の種類の拡張機能を作成したりすることができます。 また、すべての種類の SharePoint プロジェクト項目の拡張機能を作成することもできます。

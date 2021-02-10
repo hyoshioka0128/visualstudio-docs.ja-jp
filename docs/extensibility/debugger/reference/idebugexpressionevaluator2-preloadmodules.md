@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: bcf9b968-ee14-4a92-88ad-926268a44e03
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: db345fb2936ef7278675407549798ae669487f06
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6998b847d400c9eb5e999a7299f5bedec0982253
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729322"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948297"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 指定したシンボルプロバイダーによって指定されたモジュールをプリロードします。
@@ -49,7 +49,7 @@ int PreloadModules (
 この省略可能なメソッドは、ホストプロセスのアタッチを行うときに使用されます。 これにより、接続の一部として "ウォームアップ" する機会が得られます。
 
 ## <a name="example"></a>例
-次の例は、 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)インターフェイスを公開する**式 evaluatorpackage**オブジェクトに対してこのメソッドを実装する方法を示しています。
+次の例は、 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)インターフェイスを公開する **式 evaluatorpackage** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules

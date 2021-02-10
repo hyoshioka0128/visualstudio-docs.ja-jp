@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948440"
 ---
 # <a name="program-nodes"></a>プログラムノード
 デバッガーアーキテクチャでは、 *プログラムノード* は次のようになります。
@@ -37,7 +37,7 @@ ms.locfileid: "96606490"
 
 ## <a name="see-also"></a>関連項目
 - [Programs](../../extensibility/debugger/programs.md)
-- [処理](../../extensibility/debugger/processes.md)
+- [プロセス](../../extensibility/debugger/processes.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)

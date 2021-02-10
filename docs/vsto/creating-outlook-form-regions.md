@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f3273c02416cac54dfd244ba4f163fb5d726413c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba2c4412b344a37e1b1db74cdddea8c5b60b69d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847963"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947894"
 ---
 # <a name="create-outlook-form-regions"></a>Outlook フォーム領域の作成
   フォーム領域を使用して、Microsoft Office Outlook フォームをカスタマイズできます。 Visual Studio には、フォーム領域のデザイン、開発、およびデバッグを簡単に行うことができる高度なツールが用意されています。
@@ -71,7 +71,7 @@ ms.locfileid: "96847963"
 
  このウィザードでは、作成するフォーム領域の種類を指定します。 フォーム領域の種類について、次の表で説明します。
 
-|リージョンの種類|説明|
+|リージョンの種類|Description|
 |-----------------|-----------------|
 |分離|フォーム領域を Outlook フォームの新しいページとして追加します。|
 |隣接|フォーム領域を Outlook フォームの既定のページの下部に追加します。|
