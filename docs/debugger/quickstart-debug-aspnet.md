@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 882a192a96764356e90d78498ef5ed5ccd29ce25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75847871"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908350"
 ---
 # <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>クイック スタート: Visual Studio デバッガーを使用して ASP.NET Core をデバッグする
 
@@ -76,7 +76,7 @@ Visual Studio デバッガーでは、アプリのデバッグに役立つ多く
 
 ## <a name="set-a-breakpoint"></a>ブレークポイントの設定
 
-*ブレークポイント*は、Visual Studio で実行コードが中断される場所を示すマーカーです。これにより、変数の値またはメモリの動作を確認したり、コードの分岐が実行されるかどうかを確認したりすることができます。 これが、デバッグの最も基本的な機能です。
+*ブレークポイント* は、Visual Studio で実行コードが中断される場所を示すマーカーです。これにより、変数の値またはメモリの動作を確認したり、コードの分岐が実行されるかどうかを確認したりすることができます。 これが、デバッグの最も基本的な機能です。
 
 1. ブレークポイントを設定するには、`doWork` 関数の左側の余白をクリックします (またはコード行を選択して、**F9** キーを押します)。
 

@@ -7,15 +7,15 @@ ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: d7552ab67b70b3af8cfd1603462089e4fe2a209e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908215"
 ---
 # <a name="remote-debugger-port-assignments"></a>リモート デバッガーのポートの割り当て
 Visual Studio リモート デバッガーは、アプリケーションまたはバック グラウンド サービスとして実行できます。 アプリケーションとして実行される際には、次のように既定で割り当てられているポートを使用します。

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2d72745aebedb5dad5efc86d33804a51e36b762
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7f8a4e39d38f81684b5d090152ec720d45438b3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046629"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907461"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>チュートリアル: インライン タスクの作成
 
@@ -48,7 +48,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
 #### <a name="to-create-and-modify-a-project-file"></a>プロジェクト ファイルを作成および変更するには
 
-1. Visual Studio で、C# **Windows フォーム アプリケーション** テンプレートを使用して新しいプロジェクトを作成します。 **[名前]** ボックスに「 `InlineTasks`」と入力します。 ソリューションの **場所** を入力します ( *D:\\* など)。 **[ソリューションのディレクトリを作成]** がオンになっていることと、 **[ソース管理に追加]** がオフになっていること、さらに **[ソリューション名]** が **InlineTasks** になっていることを確認します。
+1. Visual Studio で、C# **Windows フォーム アプリケーション** テンプレートを使用して新しいプロジェクトを作成します。 **[名前]** ボックスに「 `InlineTasks`」と入力します。 ソリューションの **場所** を入力します (*D:\\* など)。 **[ソリューションのディレクトリを作成]** がオンになっていることと、 **[ソース管理に追加]** がオフになっていること、さらに **[ソリューション名]** が **InlineTasks** になっていることを確認します。
 
 3. **[OK]** をクリックして、プロジェクト ファイルを作成します。
 
@@ -100,7 +100,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
 
 2. **コマンド プロンプト ウィンドウ** で、プロジェクト ファイルが格納されているフォルダー (この場合は *D:\InlineTasks\InlineTasks\\* ) を見つけます。
 
-3. コマンド スイッチを指定せずに「 **msbuild** 」と入力し、 **Enter** キーを押します。 既定では、これによって *InlineTasks.csproj* ファイルがビルドされ、Hello タスクを呼び出す既定のターゲット TestBuild が処理されます。
+3. コマンド スイッチを指定せずに「**msbuild**」と入力し、**Enter** キーを押します。 既定では、これによって *InlineTasks.csproj* ファイルがビルドされ、Hello タスクを呼び出す既定のターゲット TestBuild が処理されます。
 
 4. **コマンド プロンプト ウィンドウ** で出力を確認します。 次の行が表示されます。
 
@@ -135,7 +135,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
    </Target>
    ```
 
-2. **コマンド プロンプト ウィンドウ** で、コマンド スイッチを指定せずに「 **msbuild** 」と入力し、 **Enter** キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。
+2. **コマンド プロンプト ウィンドウ** で、コマンド スイッチを指定せずに「**msbuild**」と入力し、**Enter** キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。
 
 3. **コマンド プロンプト ウィンドウ** で出力を確認します。 次の行が表示されます。
 
@@ -172,7 +172,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
    </Target>
    ```
 
-2. **コマンド プロンプト ウィンドウ** で、コマンド スイッチを指定せずに「 **msbuild** 」と入力し、 **Enter** キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。
+2. **コマンド プロンプト ウィンドウ** で、コマンド スイッチを指定せずに「**msbuild**」と入力し、**Enter** キーを押します。 既定では、これによって Echo タスクを呼び出す既定のターゲット TestBuild が処理されます。
 
 3. **コマンド プロンプト ウィンドウ** で出力を確認します。 次の行が表示されます。
 
@@ -228,7 +228,7 @@ MSBuild タスクは通常、<xref:Microsoft.Build.Framework.ITask> インター
    </Target>
    ```
 
-2. **コマンド プロンプト ウィンドウ** で、コマンド スイッチを指定せずに「 **msbuild** 」と入力し、 **Enter** キーを押します。 既定では、これによって RegX タスクを呼び出す既定のターゲット TestBuild が処理されます。
+2. **コマンド プロンプト ウィンドウ** で、コマンド スイッチを指定せずに「**msbuild**」と入力し、**Enter** キーを押します。 既定では、これによって RegX タスクを呼び出す既定のターゲット TestBuild が処理されます。
 
 3. **コマンド プロンプト ウィンドウ** で出力を確認します。 次の行が表示されます。
 

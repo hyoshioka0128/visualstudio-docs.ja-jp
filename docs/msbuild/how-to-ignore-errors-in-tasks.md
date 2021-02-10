@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: ghogen
 ms.author: ghogen
-manager: jillfra
-ms.openlocfilehash: 97a2666b32ad7e6bc93865fa36529377652b6453
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+manager: jmartens
+ms.openlocfilehash: f2c0b070868b8dc9fc10c4f493fbb75948485a5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914253"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>方法: タスクで発生したエラーを無視する
 
@@ -28,9 +28,9 @@ ms.locfileid: "92436250"
 
 `ContinueOnError` 属性には、次の値のいずれかを含めることができます。
 
-- **WarnAndContinue** または **true** 。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。
+- **WarnAndContinue** または **true**。 タスクが失敗すると、[Target](../msbuild/target-element-msbuild.md) 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーが警告として扱われます。
 
-- **ErrorAndContinue** 。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。
+- **ErrorAndContinue**。 タスクが失敗すると、`Target` 要素の後続のタスクとビルドの実行が継続し、タスクのすべてのエラーがエラーとして扱われます。
 
 - **ErrorAndStop** または **false** (既定値)。 タスクが失敗すると、`Target` 要素の残りのタスクとビルドは実行されず、`Target` 要素全体とビルドは失敗したと見なされます。
 

@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: af3e7c2d74a9d7b3a95ae24bba37981822247728
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801309"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912563"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>Windows 上の Azure App Service への発行
 
@@ -79,7 +79,7 @@ Azure への発行には、ターゲット App Service が必要です。 この
 
 Visual Studio 2017 以降から Azure App Service に発行すると、プロジェクト内のファイルのみがサーバーにコピーされます。 したがって、必要なファイルを作成して、サーバー環境を構成する必要があります。
 
-1. Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、 **[追加]、[新しい項目]** の順に選択します。表示されるダイアログ ボックスで、[Azure web.config (Fast CGI)] テンプレートを選択し、[OK] を選択します。 これによりプロジェクト ルートに `web.config` ファイルが作成されます。
+1. Visual Studio の **ソリューション エクスプローラー** で、プロジェクトを右クリックし、 **[追加]、[新しい項目]** の順に選択します。表示されるダイアログ ボックスで、[Azure web.config (Fast CGI)] テンプレートを選択し、[OK] を選択します。 これによりプロジェクト ルートに `web.config` ファイルが作成されます。
 
 1. `web.config` の `PythonHandler` エントリを変更して、パスがサーバー上の Python インストールと一致するようにします (詳細については、[IIS 構成リファレンス](https://www.iis.net/configreference) (iis.net) に関するページを参照してください)。 たとえば、Python 3.6.1 x64 の場合、エントリは次のように表示されます。
 
@@ -133,9 +133,9 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 
     配列が空の場合、Django は自動的に 'localhost' を許可しますが、実稼働環境の URL を追加するとその機能は削除されます。 このため、`settings.py` の開発用のコピーと実稼働環境用のコピーを別々に管理するか、環境変数を使用して実行時の値を制御することをお勧めします。
 
-1. **ソリューション エクスプローラー**で、プロジェクトと同じ名前が付いたフォルダーを展開し、`static` フォルダーを右クリックし、 **[追加] > [新しい項目]** を選択し、"Azure 静的ファイルの web.config" テンプレートを選択し、 **[OK]** を選択します。 この操作により `static` フォルダー内に別の `web.config` が作成され、そのフォルダーの Python 処理を無効にします。 この構成は、Python アプリケーションを使用せずに、静的ファイルの要求を既定の Web サーバーに送信します。
+1. **ソリューション エクスプローラー** で、プロジェクトと同じ名前が付いたフォルダーを展開し、`static` フォルダーを右クリックし、 **[追加] > [新しい項目]** を選択し、"Azure 静的ファイルの web.config" テンプレートを選択し、 **[OK]** を選択します。 この操作により `static` フォルダー内に別の `web.config` が作成され、そのフォルダーの Python 処理を無効にします。 この構成は、Python アプリケーションを使用せずに、静的ファイルの要求を既定の Web サーバーに送信します。
 
-1. プロジェクトを保存し、Visual Studio の**ソリューション エクスプローラー**で、プロジェクトを右クリックし、 **[発行]** を選択します。
+1. プロジェクトを保存し、Visual Studio の **ソリューション エクスプローラー** で、プロジェクトを右クリックし、 **[発行]** を選択します。
 
     ![プロジェクトのコンテキスト メニューの [発行] コマンド](media/template-web-publish-command.png)
 
@@ -163,7 +163,7 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
-    このコマンドの実行時にアクセス許可エラーが発生する場合は、コマンドを App Service の既定の Python インストールのいずれかのフォルダー*ではなく*、サイト拡張機能のフォルダーで実行していることを再確認します。 これらの既定の環境を変更することはできないため、パッケージをインストールしようとすると確実に失敗します。
+    このコマンドの実行時にアクセス許可エラーが発生する場合は、コマンドを App Service の既定の Python インストールのいずれかのフォルダー *ではなく*、サイト拡張機能のフォルダーで実行していることを再確認します。 これらの既定の環境を変更することはできないため、パッケージをインストールしようとすると確実に失敗します。
 
     d. より詳細なエラー出力を得るため、次の行を `<system.webServer>` ノード内の `web.config` に追加します。
 
@@ -185,7 +185,7 @@ Visual Studio 2017 以降から Azure App Service に発行すると、プロジ
 > [!Note]
 > このプロセスの短いビデオについては、「[Visual Studio Python tutorial: Building a website](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6)」 (Visual Studio Python チュートリアル: Web サイトの構築) (youtube.com、3 分 10 秒) をご覧ください。
 
-1. **ソリューション エクスプローラー**で、プロジェクトを右クリックし、 **[発行]** を選択します。
+1. **ソリューション エクスプローラー** で、プロジェクトを右クリックし、 **[発行]** を選択します。
 
 1. **[発行]** ダイアログで、 **[Microsoft Azure App Service]** を選びます。
 

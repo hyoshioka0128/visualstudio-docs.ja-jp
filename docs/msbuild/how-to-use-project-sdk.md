@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6303efce016a9e678e4c9e8aa62c91aa116e44f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436122"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914221"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>方法: MSBuild プロジェクト SDK の使用
 
@@ -125,7 +125,7 @@ NuGet ベースの SDK リゾルバーでは、[global.json](/dotnet/core/tools/
 
 ビルド中には、各プロジェクト SDK の 1 つのバージョンのみを使用できます。 同じプロジェクト SDK の 2 つの異なるバージョンを参照すると、MSBuild から警告が生成されます。 *global.json* ファイルでバージョンが指定されている場合は、プロジェクトでバージョンを指定 **しない** ことをお勧めします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [MSBuild の概念](../msbuild/msbuild-concepts.md)
 - [ビルドのカスタマイズ](../msbuild/customize-your-build.md)

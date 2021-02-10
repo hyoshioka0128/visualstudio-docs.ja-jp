@@ -5,24 +5,24 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d205ee2bbc0a6e9c44c34f3b0487abb4f22283e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a40745b19bde57f7f0ca52e04a11a89ad1ca69ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "72983660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912423"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 用 Azure クラウド サービス プロジェクト
 
 Visual Studio は、Python を使用して Azure Cloud Services の作成に使用できるテンプレートを提供しています。
 
-[クラウド サービス](/azure/cloud-services/)は、任意の数の *worker ロール*と *Web ロール*から構成され、それぞれが概念的に独立したタスクを実行しますが、規模拡張の必要に応じて仮想マシン間で個別にレプリケートできます。 Web ロールでは、フロントエンド Web アプリケーションのホスティングが提供されます。 Python が接続されている場合、WSGI をサポートする任意の Web フレームワークを使用して、このようなアプリケーションを作成できます ([Web プロジェクト テンプレート](python-web-application-project-templates.md)でサポート)。 worker ロールは、ユーザーと直接対話しない長時間実行されるプロセスを意図しています。 通常は、[`pip install azure`](https://pypi.org/project/azure) でインストールされる "azure" パッケージ内のパッケージを利用します。
+[クラウド サービス](/azure/cloud-services/)は、任意の数の *worker ロール* と *Web ロール* から構成され、それぞれが概念的に独立したタスクを実行しますが、規模拡張の必要に応じて仮想マシン間で個別にレプリケートできます。 Web ロールでは、フロントエンド Web アプリケーションのホスティングが提供されます。 Python が接続されている場合、WSGI をサポートする任意の Web フレームワークを使用して、このようなアプリケーションを作成できます ([Web プロジェクト テンプレート](python-web-application-project-templates.md)でサポート)。 worker ロールは、ユーザーと直接対話しない長時間実行されるプロセスを意図しています。 通常は、[`pip install azure`](https://pypi.org/project/azure) でインストールされる "azure" パッケージ内のパッケージを利用します。
 
 この記事では、Visual Studio 2017 以降のプロジェクト テンプレートとその他のサポートについて詳しく説明します (以前のバージョンとよく似ていますが、いくつかの違いがあります)。 Python からの Azure の操作について詳しくは、[Azure Python デベロッパー センター](/azure/python/)をご覧ください。
 
@@ -33,7 +33,7 @@ Visual Studio は、Python を使用して Azure Cloud Services の作成に使�
 
     ![Python 用 Azure クラウド プロジェクト テンプレート](media/template-azure-cloud-project.png)
 
-1. 含める 1 つ以上のロールを選びます。 クラウド プロジェクトは、異なる言語で記述されたロールを結合できるため、アプリケーションの各部分を最も適した言語で簡単に記述できます。 このダイアログの完了後に新しいロールをプロジェクトに追加するには、**ソリューション エクスプローラー**で **[ロール]** を右クリックし、**[追加]** の下で項目の 1 つを選びます。
+1. 含める 1 つ以上のロールを選びます。 クラウド プロジェクトは、異なる言語で記述されたロールを結合できるため、アプリケーションの各部分を最も適した言語で簡単に記述できます。 このダイアログの完了後に新しいロールをプロジェクトに追加するには、**ソリューション エクスプローラー** で **[ロール]** を右クリックし、**[追加]** の下で項目の 1 つを選びます。
 
     ![Azure クラウド プロジェクト テンプレートでのロールの追加](media/template-azure-cloud-service-project-wizard.png)
 
@@ -73,7 +73,7 @@ Visual Studio は、Python を使用して Azure Cloud Services の作成に使�
 
 ## <a name="deploy-a-role"></a>ロールのデプロイ
 
-**発行**ウィザードを開くには、**ソリューション エクスプローラー**でロール プロジェクトを選び、メイン メニューから **[ビルド]**  >  **[発行]** の順に選択するか、プロジェクトを右クリックして **[発行]** を選択します。
+**発行** ウィザードを開くには、**ソリューション エクスプローラー** でロール プロジェクトを選び、メイン メニューから **[ビルド]**  >  **[発行]** の順に選択するか、プロジェクトを右クリックして **[発行]** を選択します。
 
 発行プロセスには 2 つのフェーズが含まれます。 まず、Visual Studio で、クラウド サービスのすべてのロールを含む 1 つのパッケージを作成します。 このパッケージは Azure にデプロイされるもので、ロールごとに 1 台以上の仮想マシンを初期化し、ソースをデプロイします。
 

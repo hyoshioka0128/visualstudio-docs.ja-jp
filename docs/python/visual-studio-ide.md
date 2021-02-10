@@ -5,18 +5,18 @@ ms.date: 03/13/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d744e7495323c6e0ce565f33e2cfca95feb0a51
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+ms.openlocfilehash: d90ee69b8ee7f264a48d6ae01f77ea65e5d1c1b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908783"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Visual Studio IDE へようこそ | Python
 
@@ -26,8 +26,8 @@ Visual Studio *統合開発環境* は、コードの編集、デバッグ、テ
 
 これは Python プロジェクトを開いている状態の Visual Studio の画像です。使用頻度の高い主なツール ウィンドウがいくつか開かれています。
 
-- [**ソリューション エクスプローラー**](../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー**では、ファイルを[ソリューションやプロジェクト](../get-started/tutorial-projects-solutions.md)にまとめ、コードを整理できます。
-  - **ソリューション エクスプローラー**と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
+- [**ソリューション エクスプローラー**](../ide/solutions-and-projects-in-visual-studio.md) (右上) では、コード ファイルを表示、移動、および管理できます。 **ソリューション エクスプローラー** では、ファイルを [ソリューションやプロジェクト](../get-started/tutorial-projects-solutions.md)にまとめ、コードを整理できます。
+  - **ソリューション エクスプローラー** と共に [**Python 環境**](managing-python-environments-in-visual-studio.md)を使用することで、コンピューター上にインストールされているさまざまな Python インタープリターを管理することができます。
 
   ::: moniker range=">=vs-2019"
   - Visual Studio のプロジェクト ファイルとソリューション ファイルを作成することなく、フォルダー内の Python コードを開いて実行することもできます。 詳細については、[クイック スタート:フォルダー内の Python コードを開いて実行する](quickstart-05-python-visual-studio-open-folder.md)」をご覧ください。
@@ -100,13 +100,13 @@ Windows 向けには、Community、Professional、Enterprise という 3 つの�
 
 - [Python 対話型 REPL](python-interactive-repl-in-visual-studio.md)
 
-    Visual Studio では、各 Python 環境に向けて対話型の read-evaluate-print loop (REPL) ウィンドウが用意されています。これにより、コマンド ライン上の *python.exe* で得られる REPL が改善されます。 **対話型**ウィンドウで、任意の Python コードを入力し、結果をすぐに確認することができます。
+    Visual Studio では、各 Python 環境に向けて対話型の read-evaluate-print loop (REPL) ウィンドウが用意されています。これにより、コマンド ライン上の *python.exe* で得られる REPL が改善されます。 **対話型** ウィンドウで、任意の Python コードを入力し、結果をすぐに確認することができます。
 
     ![Python Interactive ウィンドウ](media/interactive-window.png)
 
 - [デバッグ](debugging-python-in-visual-studio.md)
 
-    Visual Studio は、実行中のプロセスへのアタッチ、**ウォッチ** ウィンドウや**イミディエイト** ウィンドウでの式の評価、ローカル変数の調査、ブレークポイントの設定、ステートメントのステップ イン/ステップ アウト/ステップ オーバー、**次のステートメントの設定**など、Python 向けの総合的なデバッグ機能を提供します。 Linux コンピューターで実行されているリモートの Python コードをデバッグすることもできます。
+    Visual Studio は、実行中のプロセスへのアタッチ、**ウォッチ** ウィンドウや **イミディエイト** ウィンドウでの式の評価、ローカル変数の調査、ブレークポイントの設定、ステートメントのステップ イン/ステップ アウト/ステップ オーバー、**次のステートメントの設定** など、Python 向けの総合的なデバッグ機能を提供します。 Linux コンピューターで実行されているリモートの Python コードをデバッグすることもできます。
 
     ![Visual Studio での Python のデバッグ](media/remote-debugging-breakpoint-hit.png)
 

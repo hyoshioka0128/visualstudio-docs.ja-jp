@@ -5,17 +5,17 @@ ms.date: 11/12/2018
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 136c03ef11071e5d548e36e45a6a541cffce1469
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0193256edb4a55285e8017a56fe7249ef5d60362
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912401"
 ---
 # <a name="django-web-project-template"></a>Django Web プロジェクト テンプレート
 
@@ -45,13 +45,13 @@ Django プロジェクトは *manage.py* ファイルで管理するのが一般
 
 ## <a name="django-management-console"></a>Django 管理コンソール
 
-Django 管理コンソールには、 **[プロジェクト]** メニューのさまざまなコマンドを使用するか、**ソリューション エクスプローラー**でプロジェクトを右クリックしてアクセスします。
+Django 管理コンソールには、 **[プロジェクト]** メニューのさまざまなコマンドを使用するか、**ソリューション エクスプローラー** でプロジェクトを右クリックしてアクセスします。
 
 - **[Django シェルを開く]** : モデルを操作できるアプリケーション コンテキストでシェルを起動します。
 
     ![[Django シェルを開く] コマンドの結果](media/template-django-console-shell.png)
 
-- **[Django Sync DB]** : `manage.py syncdb` を**対話型**ウィンドウで実行します。
+- **[Django Sync DB]** : `manage.py syncdb` を **対話型** ウィンドウで実行します。
 
     ![[Django Sync DB] コマンドの結果](media/template-django-console-sync-db.png)
 

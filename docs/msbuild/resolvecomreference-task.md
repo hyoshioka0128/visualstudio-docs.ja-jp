@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e98d0d64a8df1dac29127ffcf76fe8b6cc39a43
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048618"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912531"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference タスク
 
@@ -50,7 +50,7 @@ ms.locfileid: "93048618"
 |`SdkToolsPath`|省略可能な <xref:System.String?displayProperty=fullName> 型のパラメーターです。<br /><br /> `ExecuteAsTool` が `true` の場合、このパラメーターを、対象となっているフレームワークのバージョンの SDK ツール パスに設定する必要があります。|
 |`StateFile`|省略可能な `String` 型のパラメーターです。<br /><br /> COM コンポーネントのタイムスタンプのキャッシュ ファイルを指定します。 存在しない場合は、実行するたびにすべてのラッパーが再生成されます。|
 |`TargetFrameworkVersion`|省略可能な `String` 型のパラメーターです。<br /><br /> プロジェクトのターゲット フレームワークのバージョンを指定します。<br /><br /> 既定値は、`String.Empty` です。 その場合、ターゲット フレームワークに基づく参照のフィルター処理はありません。|
-|`TargetProcessorArchitecture`|省略可能な `String` 型のパラメーターです。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャを指定します。 変換後、 *tlbimp.exe* /machine フラグに渡されます。<br /><br /> パラメーター値は <xref:Microsoft.Build.Utilities.ProcessorArchitecture> のメンバーである必要があります。|
+|`TargetProcessorArchitecture`|省略可能な `String` 型のパラメーターです。<br /><br /> 優先されるターゲットのプロセッサ アーキテクチャを指定します。 変換後、*tlbimp.exe*/machine フラグに渡されます。<br /><br /> パラメーター値は <xref:Microsoft.Build.Utilities.ProcessorArchitecture> のメンバーである必要があります。|
 |`TypeLibFiles`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> COM 参照へのタイプ ライブラリ ファイル パスを指定します。 このパラメーターに含まれる項目には、項目のメタデータが含まれます。 詳細については、後述する「[TypeLibFiles 項目メタデータ](#typelibfiles-item-metadata)」を参照してください。|
 |`TypeLibNames`|省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 解決するタイプ ライブラリ名を指定します。 このパラメーターに含まれる項目には、項目メタデータをいくつか含める必要があります。 詳細については、後述する「[TypeLibNames 項目メタデータ](#typelibnames-item-metadata)」を参照してください。|
 |`WrapperOutputDirectory`|省略可能な `String` 型のパラメーターです。<br /><br /> 生成された相互運用機能アセンブリが配置されるディスク上の場所。 この項目メタデータが指定されていない場合、タスクはプロジェクト ファイルがあるディレクトリの絶対パスを使用します。|

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c8947243545b57e0b8c4352784869f54efe565
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 754080defd50bc10af501fdbaf509bafe549dcbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913972"
 ---
 # <a name="item-definitions"></a>項目定義
 
@@ -76,7 +76,7 @@ ItemDefinitionGroup に定義されたメタデータには、以下のさまざ
 
 - 環境変数
 
-- グローバル プロパティ ( *MSBuild.exe* コマンド ラインで指定)
+- グローバル プロパティ (*MSBuild.exe* コマンド ラインで指定)
 
 - 予約済みのプロパティ
 

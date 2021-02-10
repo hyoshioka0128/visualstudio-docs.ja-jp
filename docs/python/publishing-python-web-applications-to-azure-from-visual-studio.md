@@ -5,25 +5,25 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: c3c8d6c16f2f7e432b6b5e988bf63521f3dfc8c0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b2848a54ddbce41b538bf58f82db42ede76026d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62784116"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912417"
 ---
 # <a name="publish-to-azure-app-service"></a>Azure App Service に発行する
 
 現時点では、Python は Linux 用の Azure App Service でサポートされており、この記事で説明しているとおり、アプリの発行は、[Git デプロイ](#publish-to-app-service-on-linux-using-git-deploy)と[コンテナー](#publish-to-app-service-on-linux-using-containers)を使用して行います。
 
 > [!Note]
-> Windows 用の Azure App Service での Python のサポートは正式に非推奨になっています。 結果として、Visual Studio の**発行**コマンドは、[IIS ターゲット](#publish-to-iis)のみのために正式にサポートされ、Azure App Service のリモート デバッグでは正式にサポートされなくなりました。
+> Windows 用の Azure App Service での Python のサポートは正式に非推奨になっています。 結果として、Visual Studio の **発行** コマンドは、[IIS ターゲット](#publish-to-iis)のみのために正式にサポートされ、Azure App Service のリモート デバッグでは正式にサポートされなくなりました。
 >
 > ただし、Windows 上の App Service 用の Python 拡張機能は、サービスの提供や更新はありませんが、まだ利用可能です。そのため、[Windows の App Service への発行](publish-to-app-service-windows.md) 機能はしばらくは機能します。
 
@@ -48,4 +48,4 @@ Linux の App Service のあらかじめ構築されているコンテナーを�
 
 ## <a name="publish-to-iis"></a>IIS に公開する
 
-Visual Studio で**発行**コマンドを使用して、Windows 仮想マシンまたはその他の IIS 対応のコンピューターに発行をすることができます。 IIS を使用する場合、Python インタープリターを探す場所を IIS に教える *web.config* ファイルを必ず作成または変更してください。 詳細については、「[Configure web apps for IIS](configure-web-apps-for-iis-windows.md)」 (IIS 用に Web アプリを構成する) を参照してください。
+Visual Studio で **発行** コマンドを使用して、Windows 仮想マシンまたはその他の IIS 対応のコンピューターに発行をすることができます。 IIS を使用する場合、Python インタープリターを探す場所を IIS に教える *web.config* ファイルを必ず作成または変更してください。 詳細については、「[Configure web apps for IIS](configure-web-apps-for-iis-windows.md)」 (IIS 用に Web アプリを構成する) を参照してください。

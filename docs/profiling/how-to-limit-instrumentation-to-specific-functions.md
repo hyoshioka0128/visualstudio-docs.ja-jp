@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2b1ce5af864a87691fab5b4026e797dc6eb970bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883333"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907259"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>方法: インストルメンテーションを特定の関数に制限する
 インストルメンテーションとデータ収集は、1 つ以上の関数に制限することができます。これを行うには、 **[パフォーマンス セッション]** のプロパティ ページまたはターゲット バイナリのプロパティ ページの **[詳細]** ページでオプションを設定します。
@@ -44,10 +44,10 @@ ms.locfileid: "98883333"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` は、名前空間と関数の名前です。 その形式は `Namespace` **::** `FunctionName` です。 複数の関数は、セミコロン (;) を使用して区切ります。 1 つまたは複数の文字にワイルドカードを指定する場合は、アスタリスク (\*) を使います。 たとえば、 **/include:MyNS::\\** _ を使用して、MyNS 名前空間のすべての関数を指定します。
+    `FuncSpec` は、名前空間と関数の名前です。 その形式は `Namespace` **::** `FunctionName` です。 複数の関数は、セミコロン (;) を使用して区切ります。 1 つまたは複数の文字にワイルドカードを指定する場合は、アスタリスク (\*) を使います。 たとえば、 **/include:MyNS::\\** * は、MyNS 名前空間のすべての関数を指定します。
 
    > [!NOTE]
-   > バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、_ *vsinstr /DumpFuncs** と入力します
+   > バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>インストルメンテーションをバイナリ内の特定の関数に制限するには
 
@@ -63,10 +63,10 @@ ms.locfileid: "98883333"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` は、名前空間と関数の名前です。 その形式は `Namespace` **::** `FunctionName` です。 複数の関数は、セミコロン (;) を使用して区切ります。 1 つまたは複数の文字にワイルドカードを指定する場合は、アスタリスク (\*) を使います。 たとえば、 **/include:MyNS::\\** _ を使用して、MyNS 名前空間のすべての関数を指定します。
+    `FuncSpec` は、名前空間と関数の名前です。 その形式は `Namespace` **::** `FunctionName` です。 複数の関数は、セミコロン (;) を使用して区切ります。 1 つまたは複数の文字にワイルドカードを指定する場合は、アスタリスク (\*) を使います。 たとえば、 **/include:MyNS::\\** * は、MyNS 名前空間のすべての関数を指定します。
 
    > [!NOTE]
-   > バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、_ *vsinstr /DumpFuncs** と入力します
+   > バイナリ内の関数を一覧表示するには、プロファイル ツールのインストール ディレクトリ ([コマンド ライン ツールへのパスの指定](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)に関する記事を参照) でコマンド プロンプト ウィンドウを開き、**vsinstr /DumpFuncs** と入力します。
 
 ## <a name="see-also"></a>関連項目
 - [データ収集の制御](../profiling/controlling-data-collection.md)
