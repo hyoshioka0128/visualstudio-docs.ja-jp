@@ -5,21 +5,21 @@ ms.date: 06/29/2017
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42cdc6e964d23b5aafdfe225c04d5d35b151cc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936406"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Visual Studio で R プロジェクトを作成する
 
 R プロジェクト ( *.rxproj* ファイル) は、プロジェクトに関連付けられているすべてのソースとコンテンツ ファイルを識別します。 R プロジェクトは、各ファイルのビルド情報の格納、ソース管理システムと統合するための情報の保持、論理コンポーネントへのアプリケーションの整理の補助なども行います。 ただし、インストールされているパッケージの一覧など、ワークスペース関連の情報は、ワークスペース自体とは別に保持されます。
 
-プロジェクトは常に Visual Studio の*ソリューション*内で管理され、ソリューションは相互に参照する可能性のある任意の数のプロジェクトを含むことができます。 「[Visual Studio で複数種類のプロジェクトを使用する](#use-multiple-project-types-in-visual-studio)」を参照してください。
+プロジェクトは常に Visual Studio の *ソリューション* 内で管理され、ソリューションは相互に参照する可能性のある任意の数のプロジェクトを含むことができます。 「[Visual Studio で複数種類のプロジェクトを使用する](#use-multiple-project-types-in-visual-studio)」を参照してください。
 
 ## <a name="creating-a-new-r-project"></a>新規 R プロジェクトを作成する
 
@@ -29,7 +29,7 @@ R プロジェクト ( *.rxproj* ファイル) は、プロジェクトに関連
 
     ![Visual Studio 内の R (VS2017 の RTVS) の [新しいプロジェクト] ダイアログ ボックス](media/getting-started-01-new-project.png)
 
-このコマンドにより、エディターに空の *script.R* ファイルが開き、プロジェクトが作成されます。 また、**ソリューション エクスプローラー**では、プロジェクト内に他の 2 つのファイルが表示されます。
+このコマンドにより、エディターに空の *script.R* ファイルが開き、プロジェクトが作成されます。 また、**ソリューション エクスプローラー** では、プロジェクト内に他の 2 つのファイルが表示されます。
 
 ![テンプレートから作成される R プロジェクトの内容](media/projects-template-results.png)
 
@@ -61,7 +61,7 @@ R プロジェクト ( *.rxproj* ファイル) は、プロジェクトに関連
 
 ## <a name="project-properties"></a>プロジェクト プロパティ
 
-プロジェクトのプロパティ ページを開くには、**ソリューション エクスプローラー**でプロジェクトを右クリックし、 **[プロパティ]** を選択するか、 **[プロジェクト]、[<プロジェクト名> のプロパティ]** メニュー項目の順に選択します。 開いているウィンドウには、次のようなプロジェクトのプロパティが表示されます。
+プロジェクトのプロパティ ページを開くには、**ソリューション エクスプローラー** でプロジェクトを右クリックし、 **[プロパティ]** を選択するか、 **[プロジェクト]、[<プロジェクト名> のプロパティ]** メニュー項目の順に選択します。 開いているウィンドウには、次のようなプロジェクトのプロパティが表示されます。
 
 | タブ | プロパティ | 説明 |
 | --- | --- | --- |

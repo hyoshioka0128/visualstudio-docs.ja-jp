@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b3758184a10161d64add37fe1dc231326b90cb53
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 783f8935b5d9eee25d6569dea9ba48b0eaeae8bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930936"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>方法: ミップマップを含むテクスチャをエクスポートする
 
@@ -35,7 +35,7 @@ MIPMAP には、3D ゲームやアプリのテクスチャ サーフェス用に
 
 1. 基本的なテクスチャを作成します。 既存のイメージ ファイルを読み込むか、「[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の手順に従ってイメージ ファイルを作成します。 MIPMAP をサポートするには、テクスチャの幅と高さを 2 の累乗の同じサイズ (64x64、256x256、512x512 など) に指定します。
 
-2. イメージ コンテンツ パイプラインによって処理されるように、前の手順で作成したテクスチャ ファイルを構成します。 **ソリューション エクスプローラー** で、作成したテクスチャ ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[構成プロパティ]**  >  **[全般]** ページの順に進み、 **[項目の種類]** を **[Image Content Pipeline]\(イメージ コンテンツ パイプライン\)** に設定します。 **[コンテンツ]** プロパティが **[はい]** に、 **[ビルドから除外]** が **[いいえ]** に設定されていることを確認します。 **[適用]** を選択します。
+2. イメージ コンテンツ パイプラインによって処理されるように、前の手順で作成したテクスチャ ファイルを構成します。 **ソリューション エクスプローラー** で、作成したテクスチャ ファイルのショートカット メニューを開き、**[プロパティ]** をクリックします。 **[構成プロパティ]**  >  **[全般]** ページの順に進み、 **[項目の種類]** を **[Image Content Pipeline]\(イメージ コンテンツ パイプライン\)** に設定します。 **[コンテンツ]** プロパティが **[はい]** に、**[ビルドから除外]** が **[いいえ]** に設定されていることを確認します。 **[適用]** を選択します。
 
    **[イメージ コンテンツ パイプライン]** の構成プロパティ ページが表示されます。
 

@@ -12,15 +12,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Project
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 86ee8f59a91cc772d6a86a9e29268b4465b2c639
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0b30aaec3087cece63e392cf7170ac85f6be0ad7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932333"
 ---
 # <a name="options-text-editor-javascript-project"></a>[オプション]、[テキスト エディター]、[JavaScript]、[プロジェクト]
 
@@ -42,7 +42,7 @@ ms.locfileid: "91947701"
 
 ## <a name="compile-on-save"></a>保存時にコンパイル
 
-これらのオプションは、プロジェクトの一部ではない TypeScript ファイルが自動的にコンパイルされるかどうかを決定します。 Visual Studio では、 *C:\Program Files (x86)\Microsoft SDKs\TypeScript* にインストールされている最新バージョンの TypeScript を使用してコンパイルが実行されます。
+これらのオプションは、プロジェクトの一部ではない TypeScript ファイルが自動的にコンパイルされるかどうかを決定します。 Visual Studio では、*C:\Program Files (x86)\Microsoft SDKs\TypeScript* にインストールされている最新バージョンの TypeScript を使用してコンパイルが実行されます。
 
 チェック ボックスをオンにした後、使用するコード生成の種類を選択します。
 

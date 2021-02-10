@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67825522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933103"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Visual Studio の IntelliTrace のステップ バックを使用して以前のアプリケーション状態を調べる (Visual Studio Enterprise)
 
@@ -95,9 +95,9 @@ IntelliTrace のステップ バックは、Visual Studio Enterprise 2017 バー
 
 IntelliTrace のイベント限定モードでは、デバッガーのステップ実行とブレークポイントでデバッグ履歴を有効にできます。 ただし、IntelliTrace はウィンドウが開いている場合の **[ローカル]** および **[自動変数]** ウィンドウのデータしかキャプチャしません。そしてキャプチャされるのは、展開されて表示されているもののみです。 イベント限定モードでは、多くの場合、変数の完全なビューと複合オブジェクトがありません。 また、 **[ウォッチ]** ウィンドウでの式の評価とデータの参照はサポートされていません。
 
-イベントおよびスナップショット モードでは、IntelliTrace は複合オブジェクトを含むアプリケーションのプロセスのスナップショット全体をキャプチャします。 コード行では、ブレークポイントで停止したのと同じ状態で同じ情報が表示されます (これは以前情報を開いたかどうかには関係しません)。 スナップショットを参照するとき、式の評価もサポートされます。  
+イベントおよびスナップショット モードでは、IntelliTrace は複合オブジェクトを含むアプリケーションのプロセスのスナップショット全体をキャプチャします。 コード行では、ブレークポイントで停止したのと同じ状態で同じ情報が表示されます (これは以前情報を開いたかどうかには関係しません)。 スナップショットを参照するとき、式の評価もサポートされます。  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>この機能はパフォーマンスにどのような影響を与えますか? 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>この機能はパフォーマンスにどのような影響を与えますか? 
 
 ステップ実行がパフォーマンス全体に与える影響は、アプリケーションによって異なります。 スナップショットの作成にかかるオーバーヘッドは、約 30 ミリ秒です。 スナップショットが作成されると、アプリのプロセスがフォークされ、フォークされたコピーが中断されます。 スナップショットを参照するとき、Visual Studio はプロセスのフォークされたコピーにアタッチされています。 Visual Studio は各スナップショットで、ページ テーブルのみをコピーし、ページをコピー オン ライトとして設定します。 関連付けられているスナップショットがあるデバッガーのステップ間でヒープのオブジェクトが変わる場合、該当するページ テーブルがコピーされるので、メモリのコストはわずかになります。 Visual Studio がスナップショットを作成するのに十分なメモリがないと判断した場合、作成されません。
 

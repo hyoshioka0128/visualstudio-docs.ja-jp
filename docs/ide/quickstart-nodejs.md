@@ -9,17 +9,17 @@ ms.devlang: javascript
 ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 69ddd658eb8ca7015ae2c6868b55d7081da0917c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c342018a2331b27a411b5efc23af1438fa18518d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809021"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932619"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>クイック スタート: Visual Studio を使用して初めての Node.js アプリを作成する
 
@@ -30,10 +30,10 @@ ms.locfileid: "90809021"
 * Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
     Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、 **[変更]** を選択します。
@@ -64,13 +64,13 @@ ms.locfileid: "90809021"
     ::: moniker range="vs-2017"
     上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[JavaScript]** を展開して、 **[Node.js]** を選択します。 中央のウィンドウで、**[空白の Node.js Web アプリケーション]** を選択してから **[OK]** を選択します。
     ::: moniker-end
-    **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
+    **[空白の Node.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発** ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
     Visual Studio は新しいソリューションを作成し、プロジェクトを開きます。 *server.js* が左側のウィンドウのエディターで開きます。
 
 ## <a name="explore-the-ide"></a>IDE を探索する
 
-1. 右ウィンドウの**ソリューション エクスプローラー**を見てください。
+1. 右ウィンドウの **ソリューション エクスプローラー** を見てください。
 
    ![ソリューション エクスプローラー](../ide/media/quickstart-nodejs-solution-explorer.png)
 
@@ -84,7 +84,7 @@ ms.locfileid: "90809021"
 
    ![Node.js コマンド プロンプト](../ide/media/quickstart-nodejs-command-prompt.png)
 
-1. エディター (左ウィンドウ) の *server.js* で、`http.createServer` を選択してから **F12 キー**を押すか、コンテキスト (右クリック) メニューから **[定義に移動]** を選択します。 このコマンドで *index.d.ts* の `createServer` 関数の定義が示されます。
+1. エディター (左ウィンドウ) の *server.js* で、`http.createServer` を選択してから **F12 キー** を押すか、コンテキスト (右クリック) メニューから **[定義に移動]** を選択します。 このコマンドで *index.d.ts* の `createServer` 関数の定義が示されます。
 
    ![[定義に移動] コンテキスト メニュー](../ide/media/quickstart-nodejs-gotodefinition.png)
 
@@ -108,7 +108,7 @@ ms.locfileid: "90809021"
 
 1. Web ブラウザーを閉じます。
 
-Visual Studio IDE と Node.js の入門となるこのクイック スタートは以上で完了です。 機能についてさらに深く理解したい場合は、目次の**チュートリアル** セクションに示されているチュートリアルを続行してください。
+Visual Studio IDE と Node.js の入門となるこのクイック スタートは以上で完了です。 機能についてさらに深く理解したい場合は、目次の **チュートリアル** セクションに示されているチュートリアルを続行してください。
 
 ## <a name="next-steps"></a>次のステップ
 

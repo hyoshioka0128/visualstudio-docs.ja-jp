@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b97b57adb6fd87fa539e9dae7c37d6c5c8f2ddd6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: be95611d7d1c931e1b349e7a8c6dc0be75c7c832
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930981"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>方法: MIP レベルを作成および変更する
-このドキュメントでは、 **イメージ エディター** を使用して、テクスチャ空間詳細レベル (LoD) の *MIPMAP レベル* を作成および変更する方法を示します。
+このドキュメントでは、**イメージ エディター** を使用して、テクスチャ空間詳細レベル (LoD) の *MIPMAP レベル* を作成および変更する方法を示します。
 
 ## <a name="generating-mip-levels"></a>MIPMAP レベルの生成
 *MIPMAP* は、さまざまなサイズのテクスチャの複数のコピーを事前計算して格納することでレンダリングを高速化し、テクスチャ オブジェクトに対するエイリアシング効果を減らすために使用される手法です。 これらの各コピーは MIPMAP レベルと呼ばれ、それぞれの幅と高さは前のコピーの半分になっています。 テクスチャがオブジェクトの表面に表示されると、テクスチャのサーフェイスの画面スペース領域にほぼ一致する MIPMAP レベルが自動的に選択されます。 これは、一貫した表示画質を保持するために、グラフィックス ハードウェアが特大テクスチャをフィルター処理する必要がないことを意味します。 MIPMAP レベルを格納するためのメモリ消費は、元のテクスチャのみ格納するときよりも約 33% 増えますが、パフォーマンスとイメージの品質は向上します。
@@ -36,9 +36,9 @@ ms.locfileid: "93134447"
 
 #### <a name="to-modify-an-individual-mip-level"></a>MIPMAP レベルを個別に変更するには
 
-1. 変更する MIPMAP レベルを選択します。 **[イメージ エディターのモード]** ツール バーで、 **[Go to Next MIP Level]** (次の MIPMAP レベルに移動) および **[Go to Previous MIP Level]** (前の MIPMAP レベルに移動) を使用し、MIPMAP レベルの間で移動します。
+1. 変更する MIPMAP レベルを選択します。 **[イメージ エディターのモード]** ツール バーで、**[Go to Next MIP Level]** (次の MIPMAP レベルに移動) および **[Go to Previous MIP Level]** (前の MIPMAP レベルに移動) を使用し、MIPMAP レベルの間で移動します。
 
-2. 変更する MIPMAP レベルを選択した後、描画ツールを使用して、他の MIPMAP レベルの内容を変更せずに、その MIPMAP レベルの内容のみ変更できます。 描画ツールは **イメージ エディター** のツール バーで使用できます。 ツールを選択した後は、 **[プロパティ]** ウィンドウでそのツールのプロパティを変更できます。 描画ツールとそれらのプロパティの詳細については、「[イメージ エディター](../designers/image-editor.md)」を参照してください。
+2. 変更する MIPMAP レベルを選択した後、描画ツールを使用して、他の MIPMAP レベルの内容を変更せずに、その MIPMAP レベルの内容のみ変更できます。 描画ツールは **イメージ エディター** のツール バーで使用できます。 ツールを選択した後は、**[プロパティ]** ウィンドウでそのツールのプロパティを変更できます。 描画ツールとそれらのプロパティの詳細については、「[イメージ エディター](../designers/image-editor.md)」を参照してください。
 
 > [!NOTE]
 > 各 MIPMAP レベルの内容を変更する必要がない場合 (特定の効果を得るためになど)、ビルド時にソース テクスチャから MIPMAP を生成することをお勧めします。 これは、MIPMAP レベルがソース テクスチャと確実に同期するために役立ちます。1 つの MIPMAP レベルに対する変更がその他の MIPMAP レベルに自動的に反映されないためです。 ビルド時に mipmap を生成する方法については、「[方法:ミップマップを含むテクスチャをエクスポートする](../designers/how-to-export-a-texture-that-contains-mipmaps.md)」を参照してください。

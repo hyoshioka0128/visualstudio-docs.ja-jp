@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f5bdf15b220560562ccc2ae5c99100b5285b025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204580"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925617"
 ---
 # <a name="blocking-time-profile-report"></a>ブロック時間のプロファイル レポート
 プロファイル レポートは、ブロック カテゴリ別 ("I/O" や "Synchronization" など) の呼び出し履歴を対象に、ブロック時間の集計データを提供します。 優先レポートには、現在のプロセスに取って代わったプロセスと優先インスタンスの数が一覧表示されます。 ブロック プロファイル レポートを作成するために、このツールはブロック API 呼び出しを収集し、呼び出し履歴のツリーを作成します。 これらのレポートに表示されるデータは、現在の時間の範囲、非表示のスレッド、適用される場合がある次の 2 つのフィルターによって変わります。
