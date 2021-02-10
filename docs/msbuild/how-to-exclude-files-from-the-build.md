@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48578edd6c7911e858f32b1961b4ef361748788d
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e838460f1e42f34e92a99198b9d4a0e34ce71dcd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914374"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>方法: ビルドからファイルを除外する
 
@@ -38,7 +38,7 @@ ms.locfileid: "92436363"
 
  ビルドの入力として 1 つのディレクトリのすべてのファイルまたは入れ子にされたディレクトリのセットを含めるためにワイルドカードを使用した場合に、ディレクトリ内の 1 つ以上のファイル、または入れ子にされたディレクトリのセット内の 1 つのディレクトリを含めたくないと思う可能性があります。 項目リストから項目を除外するには、`Exclude` 属性を使用します。
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>*Form2* を除くすべての *.cs* ファイルまたは . *vb* ファイルを含める場合
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>*Form2* を除くすべての *.cs* ファイルまたは .*vb* ファイルを含める場合
 
 - 次の `Include` および `Exclude` 属性のうち、いずれかを使用します。
 
@@ -66,7 +66,7 @@ ms.locfileid: "92436363"
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>*Images* ディレクトリのサブディレクトリにあるすべての *.jpg* ファイルを含めるものの、 *Version2* ディレクトリのファイルは除外する場合
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>*Images* ディレクトリのサブディレクトリにあるすべての *.jpg* ファイルを含めるものの、*Version2* ディレクトリのファイルは除外する場合
 
 - 次の `Include` 属性と `Exclude` 属性を使用します。
 
@@ -95,7 +95,7 @@ ms.locfileid: "92436363"
 
 ## <a name="example"></a>例
 
- 次のコードの例では、 *Form2.cs* を除くディレクトリ内のすべての *.cs* ファイルを使用してプロジェクトをビルドします。
+ 次のコードの例では、*Form2.cs* を除くディレクトリ内のすべての *.cs* ファイルを使用してプロジェクトをビルドします。
 
 ```xml
 <Project DefaultTargets="Compile"

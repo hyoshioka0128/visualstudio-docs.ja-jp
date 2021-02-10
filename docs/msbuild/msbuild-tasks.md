@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 76b359eebe0f4a22bef3ff6c6742a5134aa4520c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 6b3bb4c1a17cd5d1481be2fa942686bce3861bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918920"
 ---
 # <a name="msbuild-tasks"></a>MSBuild タスク
 
-ビルド プラットフォームでは、ビルドの処理中に、いくつかのアクションを実行する権限が必要です。 MSBuild では、これらのアクションを実行するために " *タスク* " が使用されます。 タスクとは、分割不可能なビルド操作を実行するために MSBuild で使用される実行可能コードの単位です。
+ビルド プラットフォームでは、ビルドの処理中に、いくつかのアクションを実行する権限が必要です。 MSBuild では、これらのアクションを実行するために "*タスク*" が使用されます。 タスクとは、分割不可能なビルド操作を実行するために MSBuild で使用される実行可能コードの単位です。
 
 ## <a name="task-logic"></a>タスクのロジック
 

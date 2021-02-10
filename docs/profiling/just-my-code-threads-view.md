@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3924211d5ec42660357cef45714f672b0bef063
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: f09b3e0837adf9490e9c10c81f18ff9fc9c5573e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721477"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918049"
 ---
 # <a name="just-my-code-threads-view"></a>[マイ コードのみ]\(スレッド ビュー)
 このオプションを選択すると、呼び出し履歴がフィルター処理され、自分のコードに加え、呼び出された関数が 1 レベルだけ表示されます。

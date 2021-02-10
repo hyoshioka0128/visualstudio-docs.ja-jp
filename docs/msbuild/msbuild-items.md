@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a28823a1a492cb1e8d5f434f98248fecc5d84e47
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919074"
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 
@@ -89,7 +89,7 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
 
 ## <a name="use-the-exclude-attribute"></a>Exclude 属性を使用する
 
- 項目の要素には `Exclude` 属性を含めることができます。この属性は、アイテムの種類から特定の項目 (ファイル) を除外します。 `Exclude` 属性は通常、ワイルドカード文字と一緒に使用されます。 たとえば、次の XML は、 *DoNotBuild.cs* ファイルを除き、ディレクトリのすべての *.cs* ファイルをアイテムの種類 CSFile に追加します。
+ 項目の要素には `Exclude` 属性を含めることができます。この属性は、アイテムの種類から特定の項目 (ファイル) を除外します。 `Exclude` 属性は通常、ワイルドカード文字と一緒に使用されます。 たとえば、次の XML は、*DoNotBuild.cs* ファイルを除き、ディレクトリのすべての *.cs* ファイルをアイテムの種類 CSFile に追加します。
 
 ```xml
 <ItemGroup>
@@ -97,7 +97,7 @@ MSBuild 項目はビルド システムへの入力であり、通常はファ�
 </ItemGroup>
 ```
 
- `Exclude` 属性は、同一の項目要素内にある `Include` 属性によって追加された項目のみに作用します。 次の例では、 *Form1.cs* ファイルは前の項目要素で追加されているため、除外されません。
+ `Exclude` 属性は、同一の項目要素内にある `Include` 属性によって追加された項目のみに作用します。 次の例では、*Form1.cs* ファイルは前の項目要素で追加されているため、除外されません。
 
 ```xml
 <Compile Include="*.cs" />
@@ -340,7 +340,7 @@ Output:
 
 ## <a name="updating-metadata-on-items-in-an-itemgroup-outside-of-a-target"></a>ターゲットの外部にある ItemGroup の項目のメタデータを更新する
 
-ターゲットの外部にある項目は、`Update` 属性を使用して既存のメタデータを更新できます。 この属性は、ターゲットにある項目には使用でき **ません** 。
+ターゲットの外部にある項目は、`Update` 属性を使用して既存のメタデータを更新できます。 この属性は、ターゲットにある項目には使用でき **ません**。
 
 ```xml
 <Project>

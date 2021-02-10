@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 522a981a-37ef-4cdd-a04c-f1e7525a2aab
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f209098200333e91f0e5baf9c7a2b73b4a3202f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 3d92747bb90cae18a79e81e49689ce8c01b8a9b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723219"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917576"
 ---
 # <a name="utilization-navigator"></a>使用状況ナビゲーター
 コンカレンシー ビジュアライザーの使用状況ナビゲーターを使用して、トレースでの時間間隔を選択できます。 コンカレンシー ビジュアライザーは、一定期間内におけるターゲット プロセスによる CPU コアの使用率を表示します。 これにより、CPU 使用率パターンの調査が容易になり、使用状況データとその他のビュー内のデータを比較することもできます。 使用状況ナビゲーターは、コンカレンシー ビジュアライザーのすべてのビューの上部に表示されます。 次の図は、使用状況ナビゲーターを示しています。

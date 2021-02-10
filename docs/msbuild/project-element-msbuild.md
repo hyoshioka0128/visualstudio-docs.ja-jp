@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c4aa00df0a1a0b622040a3f808515b9a62fc8f66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918835"
 ---
 # <a name="project-element-msbuild"></a>Project 要素 (MSBuild)
 
@@ -64,7 +64,7 @@ MSBuild プロジェクト ファイルの必須のルート要素です。
 | `InitialTargets` | 省略可能な属性です。<br /><br /> `DefaultTargets` 属性またはコマンド ラインで指定されたターゲットの前に実行される 1 つまたは複数の初期ターゲット。 複数のターゲットはセミコロン (`;`) で区切られます。 複数のインポートされたファイルで `InitialTargets` が定義されている場合は、記載されているすべてのターゲットが、インポートが発生する順序で実行されます。 |
 | `Sdk` | 省略可能な属性です。 <br /><br /> .proj ファイルに追加される暗黙的なインポート ステートメントの作成に使用する SDK 名と省略可能なバージョン。 バージョンが指定されていない場合、MSBuild は、既定のバージョンを解決しようとします。  たとえば、`<Project Sdk="Microsoft.NET.Sdk" />` または `<Project Sdk="My.Custom.Sdk/1.0.0" />` です。 |
 | `ToolsVersion` | 省略可能な属性です。<br /><br /> MSBuild が $(MSBuildBinPath) と $(MSBuildToolsPath) の値を決定するために使用するツールセットのバージョン。 |
-| `TreatAsLocalProperty` | 省略可能な属性です。<br /><br /> グローバルとは見なされないプロパティ名。 この属性は、プロジェクトまたはターゲット ファイル、および後続のすべてのインポートに設定されているプロパティ値が特定のコマンド ライン プロパティによってオーバーライドされることを防ぎます。 複数のプロパティはセミコロン (;) で区切られます。<br /><br /> 通常、グローバル プロパティは、プロジェクト ファイルまたはターゲット ファイルで設定されたプロパティ値をオーバーライドします。 プロパティが `TreatAsLocalProperty` 値に一覧表示されている場合、グローバル プロパティ値は、そのファイルと後続のインポートに設定されているプロパティ値をオーバーライドしません。 詳細については、「[方法:同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。 **注:**  グローバル プロパティは、コマンド プロンプトで **-property** (または **-p** ) スイッチを使用して設定します。 また、複数プロジェクト ビルドの子プロジェクトのグローバル プロパティは、MSBuild タスクの `Properties` 属性を使用して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。 |
+| `TreatAsLocalProperty` | 省略可能な属性です。<br /><br /> グローバルとは見なされないプロパティ名。 この属性は、プロジェクトまたはターゲット ファイル、および後続のすべてのインポートに設定されているプロパティ値が特定のコマンド ライン プロパティによってオーバーライドされることを防ぎます。 複数のプロパティはセミコロン (;) で区切られます。<br /><br /> 通常、グローバル プロパティは、プロジェクト ファイルまたはターゲット ファイルで設定されたプロパティ値をオーバーライドします。 プロパティが `TreatAsLocalProperty` 値に一覧表示されている場合、グローバル プロパティ値は、そのファイルと後続のインポートに設定されているプロパティ値をオーバーライドしません。 詳細については、「[方法:同じソース ファイルを異なるオプションでビルドする](../msbuild/how-to-build-the-same-source-files-with-different-options.md)」を参照してください。 **注:**  グローバル プロパティは、コマンド プロンプトで **-property** (または **-p**) スイッチを使用して設定します。 また、複数プロジェクト ビルドの子プロジェクトのグローバル プロパティは、MSBuild タスクの `Properties` 属性を使用して設定または変更することもできます。 詳細については、「[MSBuild タスク](../msbuild/msbuild-task.md)」を参照してください。 |
 | `xmlns` | 省略可能な属性です。<br /><br /> `xmlns` 属性には、"`http://schemas.microsoft.com/developer/msbuild/2003`" の値を指定する必要があります。 |
 
 ### <a name="child-elements"></a>子要素

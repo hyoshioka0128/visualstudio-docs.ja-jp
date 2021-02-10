@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a71a34b4ce208b093f7982ba3516b0229c8644
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 195ef17e4770d7050bc3b10f11ca5530e5ca49cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914482"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>方法: リソースがあるプロジェクトをビルドする
 
@@ -44,7 +44,7 @@ MSBuild とともに提供されている一般的なタスクのライブラリ
 
 次のコード例では、コンパイルされたリソース ファイルである *alpha.resources* と *beta.resources* を `GenerateResource` タスクの `OutputResources` 属性に含めることと、これらの 2 ファイルを `Resources` 項目一覧に含めることを、`Output` 要素によってどのように指定するかを示します。 それらの *.resources* ファイルを同名の項目の集合として識別すれば、[Csc](../msbuild/csc-task.md) タスクのような別のタスクの入力として簡単に使用することができます。
 
-このタスクは、 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の **/compile** スイッチを使用するのと同じことです。
+このタスクは、[Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) の **/compile** スイッチを使用するのと同じことです。
 
 `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`
 

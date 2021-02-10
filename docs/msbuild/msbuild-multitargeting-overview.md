@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918993"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild のマルチ ターゲットの概要
 
@@ -38,11 +38,11 @@ MSBuild を使用すると、.NET Framework のいずれかのバージョンや
 
 ## <a name="target-framework-and-platform"></a>ターゲット フレームワークとターゲット プラットフォーム
 
- *ターゲット フレームワーク* は、ビルドされるプロジェクトの実行対象となる .NET Framework のバージョンを表します。また、 *ターゲット プラットフォーム* は、ビルドされるプロジェクトの実行対象となるシステム プラットフォームを表します。  たとえば、80x86 プロセッサ ファミリ (x86) と互換性のある 32 ビット プラットフォームで動作する .NET Framework 2.0 アプリケーションを対象とする場合があります。 ターゲット フレームワークとターゲット プラットフォームの組み合わせは *ターゲット コンテキスト* と呼ばれます。 詳細については、「[ターゲット フレームワークおよびターゲット プラットフォーム](../msbuild/msbuild-target-framework-and-target-platform.md)」を参照してください。
+ *ターゲット フレームワーク* は、ビルドされるプロジェクトの実行対象となる .NET Framework のバージョンを表します。また、*ターゲット プラットフォーム* は、ビルドされるプロジェクトの実行対象となるシステム プラットフォームを表します。  たとえば、80x86 プロセッサ ファミリ (x86) と互換性のある 32 ビット プラットフォームで動作する .NET Framework 2.0 アプリケーションを対象とする場合があります。 ターゲット フレームワークとターゲット プラットフォームの組み合わせは *ターゲット コンテキスト* と呼ばれます。 詳細については、「[ターゲット フレームワークおよびターゲット プラットフォーム](../msbuild/msbuild-target-framework-and-target-platform.md)」を参照してください。
 
 ## <a name="toolset-toolsversion"></a>ツール セット (ToolsVersion)
 
- ツール セットには、アプリケーションの作成に使用されるツール、タスク、ターゲットがまとめられています。 ツールセットには、 *csc.exe* や *vbc.exe* などのコンパイラ、共通 targets ファイル ( *microsoft.common.targets* )、および共通 tasks ファイル ( *microsoft.common.tasks* ) が含まれています。 4\.5 ツールセットを使用すると、バージョン 2.0、3.0、3.5、4、4.5 の .NET Framework を対象とすることができます。 ただし、2.0 ツールセットは .NET Framework バージョン 2.0 のみを対象として使用できます。 詳細については、「[ツール セット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」を参照してください。
+ ツール セットには、アプリケーションの作成に使用されるツール、タスク、ターゲットがまとめられています。 ツールセットには、*csc.exe* や *vbc.exe* などのコンパイラ、共通 targets ファイル (*microsoft.common.targets*)、および共通 tasks ファイル (*microsoft.common.tasks*) が含まれています。 4\.5 ツールセットを使用すると、バージョン 2.0、3.0、3.5、4、4.5 の .NET Framework を対象とすることができます。 ただし、2.0 ツールセットは .NET Framework バージョン 2.0 のみを対象として使用できます。 詳細については、「[ツール セット (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)」を参照してください。
 
 ## <a name="reference-assemblies"></a>参照アセンブリ
 
