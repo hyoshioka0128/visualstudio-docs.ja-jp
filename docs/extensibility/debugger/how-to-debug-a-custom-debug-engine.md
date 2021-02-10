@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e79ceea58fc78922cd07bb6635ed2f399e97dd1c
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560812"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947698"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタムデバッグエンジンをデバッグする
 プロジェクトの種類は、メソッドからデバッグエンジン (DE) を起動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> ます。 これは、プロジェクトの種類を制御するインスタンスの制御下で DE が起動されることを意味 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。 ただし、のインスタンスでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、DE をデバッグできません。 カスタム DE をデバッグするための手順を次に示します。

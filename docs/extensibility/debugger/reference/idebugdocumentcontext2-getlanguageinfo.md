@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d139029bf65149ae59fb037434f6e7d6298f1d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ce260e172e8f09ffac38fa8c267c286af15c32f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947074"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 このドキュメントコンテキストに関連付けられている言語を取得します。
@@ -46,13 +46,13 @@ int GetLanguageInfo(
 入出力このドキュメントコンテキストでコードを実装する言語の名前を返します。
 
 `pguidLanguage`\
-入出力このドキュメントコンテキストでコードを実装する言語の GUID を返します。  たとえば、`guidVBScriptLang` または `guidCPPLang` です。 この GUID は、によって提供される言語に限定されません [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
+入出力このドキュメントコンテキストでコードを実装する言語の GUID を返します。 たとえば、`guidVBScriptLang` または `guidCPPLang` です。 この GUID は、によって提供される言語に限定されません [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="example"></a>例
-次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+次の例は、IDebugDocumentContext2 インターフェイスを公開する単純なオブジェクトに対してこのメソッドを実装する方法を示して `CDebugContext` います。 [](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 
 ```cpp
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
