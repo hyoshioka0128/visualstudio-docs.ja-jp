@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ddc016df63a7bb6ffbe3923de72c4f23cb32739c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4939e7a307e39f0548a72feeed7537efdcbd7f2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950849"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>手順 2: Picture Viewer アプリを実行する
 
@@ -34,12 +34,12 @@ Windows フォーム アプリ プロジェクトを作成するとき、実際�
     - ツールバーで、**[デバッグ開始]** ボタンを選択します (次の図を参照)。
 
       ![[デバッグの開始] ツール バー ボタン](../ide/media/express_icondebug.png)<br>
-      **_[デバッグの開始]_* _ _ツール バー ボタン*
+      ***[デバッグの開始]** _ _ツール バー ボタン*
 
 1. Visual Studio でアプリが実行され、**Form1** というウィンドウが表示されます。 次のスクリーンショットは、先ほど作成したアプリを示しています。 アプリが実行されているので、すぐにそれに追加します。
 
      ![実行中の Windows フォーム アプリ](../ide/media/express_firstrun.png)<br>
-**_Windows フォーム アプリ_* _、_実行中*
+***Windows フォーム アプリ** _、_実行中*
 
 1. Visual Studio 統合開発環境 (IDE) に戻り、新しいツール バーを参照します。 アプリケーションを実行すると、追加ボタンがツール バーに表示されます。 これらのボタンを使用するとアプリの停止や開始などの操作ができ、発生する可能性のあるエラー (バグ) の追跡に役立ちます。 この例では、アプリを開始および停止するために使用しています。
 
