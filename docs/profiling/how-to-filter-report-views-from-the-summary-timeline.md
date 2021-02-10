@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3719153794cb0439b226b8ba6dc2796d5af0d330
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 1b01f77a530f42b7834af8f16ddbbdda170467a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897728"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>方法: 概要ビューのタイムラインからレポート ビューをフィルター処理する
 パフォーマンス レポートに表示するデータをフィルター処理できます。概要ビューのタイムライン グラフで時間セグメントを指定します。 レポートをフィルター処理すると、プロファイル データ ファイルが再解析され、指定した時間セグメントのみが選択されます。

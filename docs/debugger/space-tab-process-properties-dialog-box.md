@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c4de1866-7447-48f7-aa88-28ad92c0b930
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe168f34baf65b00eab59e94afb30e07dfe89b50
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: cb1a33b1456e44b745b3b8992c0233634368952b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903507"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>[スペース] タブ ([プロセス プロパティ] ダイアログ ボックス)
 **[スペース]** タブを使用すると、プロセスのアドレス空間を調べることができます。 [[プロセス プロパティ] ダイアログ ボックス](../debugger/process-properties-dialog-box.md)を表示するには、[プロセス ビュー](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

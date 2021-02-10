@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98c3ba64454ca25b62dc5dbe0964db64b010a7ec
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7b4e6f14eb5ba771ff83b0aa5fedc8ae261ca69d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046978"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902638"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework を対象とするエラーのトラブルシューティング
 
@@ -38,9 +38,9 @@ ms.locfileid: "93046978"
 
  アプリケーションの .NET Framework のターゲット バージョンを変更する場合、Visual Studio で変更される参照もあれば、手動による更新が必要な参照もあります。 たとえば、.NET Framework 3.5 Service Pack 1 を対象とするようにアプリケーションを変更する際に、そのアプリケーションのリソースまたは設定が .NET Framework 4 のクライアント プロファイルに依存している場合は、前述のエラーのいずれかが発生する可能性があります。
 
- このようなアプリケーションの設定に対処するには、 **ソリューション エクスプローラー** を開き、 **[すべてのファイルを表示]** を選択してから、Visual Studio の XML エディターで *app.config* ファイルを編集します。 .NET Framework の適切なバージョンと一致するように、設定されているバージョンを変更します。 たとえば、バージョンの設定を 4.0.0.0 から 2.0.0.0 に変更できます。 同様に、リソースを追加したアプリケーションでは、 **ソリューション エクスプローラー** を開き、 **[すべてのファイルを表示]** ボタンを選択し、 **[マイ プロジェクト]** (Visual Basic の場合) または **[プロパティ]** (C# の場合) を展開してから Visual Studio の XML エディターで *Resources.resx* ファイルを編集します。 バージョンの設定を 4.0.0.0 から 2.0.0.0 に変更します。
+ このようなアプリケーションの設定に対処するには、**ソリューション エクスプローラー** を開き、**[すべてのファイルを表示]** を選択してから、Visual Studio の XML エディターで *app.config* ファイルを編集します。 .NET Framework の適切なバージョンと一致するように、設定されているバージョンを変更します。 たとえば、バージョンの設定を 4.0.0.0 から 2.0.0.0 に変更できます。 同様に、リソースを追加したアプリケーションでは、**ソリューション エクスプローラー** を開き、**[すべてのファイルを表示]** ボタンを選択し、**[マイ プロジェクト]** (Visual Basic の場合) または **[プロパティ]** (C# の場合) を展開してから Visual Studio の XML エディターで *Resources.resx* ファイルを編集します。 バージョンの設定を 4.0.0.0 から 2.0.0.0 に変更します。
 
- アプリケーションにアイコンやビットマップなどのリソースまたはデータ接続文字列などの設定が含まれている場合は、 **プロジェクト デザイナー** の **[設定]** ページですべての項目を削除してから、必要な設定を再度追加することで、エラーを解決することもできます。
+ アプリケーションにアイコンやビットマップなどのリソースまたはデータ接続文字列などの設定が含まれている場合は、**プロジェクト デザイナー** の **[設定]** ページですべての項目を削除してから、必要な設定を再度追加することで、エラーを解決することもできます。
 
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework-and-references-do-not-resolve"></a>異なるバージョンの .NET Framework にプロジェクトの対象を再設定したが、参照が解決されない
 

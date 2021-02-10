@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf13e23d69dfeba967e8e971ad2463cef4546567
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7ecfa11122b76bcfef3473ff5d06083c64157a2c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048964"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905434"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>MSBuild でのビルド ログの取得
 
@@ -37,7 +37,7 @@ MSBuild でスイッチを使用することで、確認するビルド デー�
 
 - ビルドの概要。
 
-**-verbosity** ( **-v** ) スイッチを使用して、出力ログに表示するデータ量を制御できます。 トラブルシューティングを行う場合は、`detailed` (`d`) または `diagnostic` (`diag`) のいずれかの詳細レベルを使用します。後者は情報が最も多くなります。
+**-verbosity** ( **-v**) スイッチを使用して、出力ログに表示するデータ量を制御できます。 トラブルシューティングを行う場合は、`detailed` (`d`) または `diagnostic` (`diag`) のいずれかの詳細レベルを使用します。後者は情報が最も多くなります。
 
 **-verbosity** を `detailed` に設定すると、ビルド処理は遅くなることがあります。また、 **-verbosity** を `diagnostic` に設定するとさらに遅くなる可能性があります。
 
@@ -60,7 +60,7 @@ msbuild MyProject.proj -t:go -v:diag
 
 ## <a name="save-the-build-log-to-a-file"></a>ビルド ログをファイルに保存する
 
-**-fileLogger** ( **fl** ) スイッチを使用して、ビルド データをファイルに保存することができます。 次の例では、ビルド データを *msbuild.log* という名前のファイルに保存します。
+**-fileLogger** (**fl**) スイッチを使用して、ビルド データをファイルに保存することができます。 次の例では、ビルド データを *msbuild.log* という名前のファイルに保存します。
 
 ```cmd
 msbuild MyProject.proj -t:go -fileLogger
@@ -88,7 +88,7 @@ msbuild MyProject.proj -t:go -fl1 -fl2 -fl3 -flp2:logfile=JustErrors.log;errorso
 
 ## <a name="save-a-binary-log"></a>バイナリ ログを保存する
 
-**-binaryLogger** ( **bl** ) スイッチを利用すれば、ログを圧縮されたバイナリ形式で保存できます。 このログには、ビルド プロセスの詳しい説明が含まれ、特定のログ分析ツールで読み取ることができます。
+**-binaryLogger** (**bl**) スイッチを利用すれば、ログを圧縮されたバイナリ形式で保存できます。 このログには、ビルド プロセスの詳しい説明が含まれ、特定のログ分析ツールで読み取ることができます。
 
 次の例では、バイナリ ログ ファイルが *binarylogfilename* という名前で作成されます。
 
