@@ -8,16 +8,16 @@ ms.topic: how-to
 ms.assetid: ffbdfe37-8325-44be-bd36-2c8aab2dec7b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3b7a8e255094cb03cac8708dbaa4cb4a938db24
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 4c12db2be72e1435c840bf9d85e681536a5e2202
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800372"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958844"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>方法: コマンド ラインを使用してプロファイラーを .NET サービスにアタッチし、コンカレンシー データを収集する
 この記事では、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイル ツールのコマンド ライン ツールを使用して、プロファイラーを .NET Framework サービスにアタッチし、サンプリング メソッドによってプロセス データとスレッド コンカレンシー データを収集する方法について説明します。

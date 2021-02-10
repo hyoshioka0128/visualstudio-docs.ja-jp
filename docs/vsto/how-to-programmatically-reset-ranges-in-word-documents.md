@@ -13,15 +13,15 @@ helpviewer_keywords:
 - ranges, resetting in documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87d157344f1302d4b1ee910ee2dda449bbea5a1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 562b4dab6c26af12760190b01ff460c7080a3bb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958779"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>方法: プログラムによって Word 文書の範囲をリセットする
   <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> メソッドを使用して、Microsoft Office の Word 文書で既存の範囲のサイズを変更します。

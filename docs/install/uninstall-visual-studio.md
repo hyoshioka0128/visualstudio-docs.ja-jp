@@ -11,17 +11,17 @@ f1_keywords:
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e924ead1b8796089242ef20c7f5a3070833b68ba
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 7d7c4400d553d8244d3b9239f0b0a984d382c99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007152"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959169"
 ---
 # <a name="uninstall-visual-studio"></a>Visual Studio のアンインストール
 
@@ -31,7 +31,7 @@ ms.locfileid: "92007152"
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac のアンインストール](/visualstudio/mac/uninstall)に関するページを参照してください。
 
 > [!TIP]
-> Visual Studio のインスタンスで問題が発生している場合は、 **修復** ツールを試してください。 詳細については、「[Visual Studio の修復](../install/repair-visual-studio.md)」を参照してください。 
+> Visual Studio のインスタンスで問題が発生している場合は、**修復** ツールを試してください。 詳細については、「[Visual Studio の修復](../install/repair-visual-studio.md)」を参照してください。 
 >
 > 一部の Visual Studio ファイルの場所を変更する場合は、現在のインスタンスをアンインストールせずにこの操作を行うことができます。 詳細については、「[Visual Studio でインストールの場所を選択する](../install/change-installation-locations.md)」を参照してください。
 >
@@ -41,7 +41,7 @@ ms.locfileid: "92007152"
 
 1. コンピューター上で Visual Studio インストーラーを見つけます。
 
-     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、 **Visual Studio インストーラー** として一覧表示される **V** の文字までスクロールします。
+     たとえば、Windows 10 Anniversary Update 以降を実行しているコンピューター上では、 **[スタート]** を選択し、**Visual Studio インストーラー** として一覧表示される **V** の文字までスクロールします。
 
      ![Visual Studio インストーラー](media/locate-the-visual-studio-installer.png "Microsoft Visual Studio インストーラーを見つける")
 
@@ -60,10 +60,10 @@ ms.locfileid: "92007152"
 
 Visual Studio 2017 のすべてのインストールと Visual Studio インストーラーを自分のマシンから完全に削除するには、[アプリと機能] からアンインストールします。
 
-1. Windows 10 では、[検索するテキストをここに入力] ボックスに「 **アプリと機能** 」と入力します。
-1. **Microsoft Visual Studio 2017** (または **Visual Studio 2017** ) を検索します。
+1. Windows 10 では、[検索するテキストをここに入力] ボックスに「**アプリと機能**」と入力します。
+1. **Microsoft Visual Studio 2017** (または **Visual Studio 2017**) を検索します。
 1. **[アンインストール]** を選択します。
-1. 次に、 **Microsoft Visual Studio インストーラー** を見つけます。
+1. 次に、**Microsoft Visual Studio インストーラー** を見つけます。
 1. **[アンインストール]** を選択します。
 
 ::: moniker-end
@@ -97,10 +97,10 @@ Visual Studio 2017 のすべてのインストールと Visual Studio インス�
 
 Visual Studio 2019 のすべてのインストールと Visual Studio インストーラーを自分のマシンから削除するには、[アプリと機能] からアンインストールします。
 
-1. Windows 10 では、[検索するテキストをここに入力] ボックスに「 **アプリと機能** 」と入力します。
+1. Windows 10 では、[検索するテキストをここに入力] ボックスに「**アプリと機能**」と入力します。
 1. **Visual Studio 2019** を見つけます。
 1. **[アンインストール]** を選択します。
-1. 次に、 **Microsoft Visual Studio インストーラー** を見つけます。
+1. 次に、**Microsoft Visual Studio インストーラー** を見つけます。
 1. **[アンインストール]** を選択します。
 
 ::: moniker-end

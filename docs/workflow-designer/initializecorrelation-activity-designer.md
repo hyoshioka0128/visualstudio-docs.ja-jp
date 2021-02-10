@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ef70cb452c01917f65619d400c21ed18ed11721
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959793"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation アクティビティ デザイナー
 
@@ -47,10 +47,10 @@ ms.locfileid: "96993199"
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|関連付け内のワークフロー アクティビティを関連付けるために使用される <xref:System.ServiceModel.Activities.CorrelationHandle>。|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|メッセージをワークフロー インスタンスに関連付ける、関連付けデータのディクショナリ。<br /><br /> を構成するには、[ **関連付けの初期化** ] ダイアログボックスを使用し <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> ます。 このダイアログボックスを使用する方法の詳細については、「[ [型コレクションエディター] ダイアログボックス](../workflow-designer/type-collection-editor-dialog-box.md) 」を参照してください。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [受信](../workflow-designer/receive-activity-designer.md)
+- [受け取れ](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

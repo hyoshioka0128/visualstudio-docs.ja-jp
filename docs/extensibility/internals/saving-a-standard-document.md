@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81c79ece83bc8aaaf7ca4dd28642de5973ad94c1
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958454"
 ---
 # <a name="saving-a-standard-document"></a>標準ドキュメントの保存
 環境は、[保存]、[名前を付けて保存]、および [すべてを保存] コマンドを処理します。 ユーザーが [**ファイル**] メニューの [**保存**]、[名前を付け **て保存**]、または [**すべて** 保存] を選択すると、**すべて保存** が行われるため、次のプロセスが実行されます。

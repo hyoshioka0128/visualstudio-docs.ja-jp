@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 56a99c39-e7f6-4f48-ae56-04ab8e022bf7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cccad7f47a26396612264280926b7b26e431879
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 13323a768b9f42e70df9e8be6e64c9dd98438865
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958961"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>方法: 実行中のプロセスに対するパフォーマンス ツールのアタッチとデタッチ
 実行中のプロセスに対してプロファイラーのアタッチまたはデタッチを行うことで、パフォーマンス データのサンプリングや収集を容易にすることができます。 この方法は、アプリケーションの読み込み時間に関するデータの収集を行わない場合や、プロセスが特定の状態に達した後にそのパフォーマンスを監視する場合に、プロセスのプロファイリングを行うために使用します。

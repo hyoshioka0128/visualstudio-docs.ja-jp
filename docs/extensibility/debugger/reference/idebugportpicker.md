@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 554ac24d7148f0d5de07779f35376b28b7ff7b07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8dd4f85bfdfb58baff3301c2d858f52933f16d1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724837"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958597"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 ポートを選択するためのカスタマイズされた UI を表します。
@@ -37,7 +37,7 @@ IDebugPortPicker : IUnknown
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|指定されたダイアログボックスを表示し、ユーザーがポートを選択できるようにします。|
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|サービスプロバイダーを設定します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

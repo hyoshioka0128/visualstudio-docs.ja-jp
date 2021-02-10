@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc83e15372a15cefccc47ea60db5ba451546ecba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 784a7a291fe596161d87dd3112bf08d332d4c47c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959741"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 このインターフェイスは、プログラムの実行が完了すると、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,11 +37,11 @@ IDebugProgramDestroyEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表は、のメソッドを示して `IDebugProgramDestroyEvent2` います。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md)|プログラムの終了コードを取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -49,7 +49,7 @@ IDebugProgramDestroyEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

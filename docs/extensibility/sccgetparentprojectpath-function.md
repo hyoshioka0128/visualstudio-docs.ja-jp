@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f258558207f86ff76746d18aa432fe4c5850290
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958402"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 関数
 この関数は、指定されたプロジェクトの親プロジェクトパスを決定します。 この関数は、ユーザーが Visual Studio プロジェクトをソース管理に追加しているときに呼び出されます。
@@ -76,7 +76,7 @@ SCCRTN SccGetParentProjectPath(
 |SCC_E_CONNECTIONFAILURE|ストア接続の問題です。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は成功または失敗のコードを返し、成功した場合は、 `lpParentProjPath` 指定されたプロジェクトの完全なプロジェクトパスを変数に入力します。
 
  この関数は、既存のプロジェクトの親プロジェクトパスを返します。 ルートプロジェクトの場合、関数は、渡されたプロジェクトパス (つまり、同じルートプロジェクトパス) を返します。 プロジェクトパスは、ソース管理プラグインに対してのみ意味のある文字列であることに注意してください。
@@ -92,13 +92,13 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject と SccGetParentProjectPath のテクニカルノート
  Visual Studio では、ソース管理システムでの場所の選択を求めるメッセージが表示される回数を最小限に抑えるために、Visual Studio でソリューションとプロジェクトを簡単に追加できました。 これらの変更は、ソース管理プラグインが新しい関数 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) と関数の両方をサポートしている場合、Visual Studio によってアクティブ化され `SccGetParentProjectPath` ます。 ただし、次のレジストリエントリを使用すると、これらの変更を無効にして、以前の Visual Studio (ソース管理プラグイン API バージョン 1.1) の動作に戻すことができます。
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
 
  このレジストリエントリが存在しない場合、または dword: 00000000 に設定されている場合、Visual Studio は、新しい関数、およびを使用しようとし `SccCreateSubProject` `SccGetParentProjectPath` ます。
 
  レジストリエントリが dword: 00000001 に設定されている場合、Visual Studio はこれらの新しい関数を使用しません。また、ソース管理に追加する操作は、以前のバージョンの Visual Studio の場合と同様に動作します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

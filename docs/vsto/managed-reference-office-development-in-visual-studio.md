@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 044ba7e4858a87dea1894f647f110d62b840aa42
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9364b191886408e509aa09a83bde70ce8240707e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958753"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>マネージ参照 (Visual Studio での Office 開発)
   このセクションには、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] または [!INCLUDE[net_v45](includes/net-v45-md.md)]を対象とする Office プロジェクトで使用される名前空間と型についての API リファレンス ドキュメントが含まれています。 .NET Framework 3.5 を対象とする Office プロジェクトで使用される名前空間と型に関する API リファレンスドキュメントについては、Visual Studio ドキュメントの「 [マネージリファレンス (Visual studio での Office 開発)](managed-reference-office-development-in-visual-studio.md)」の参照セクションを参照してください。
