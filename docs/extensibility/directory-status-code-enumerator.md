@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af72b9e14695cb954084abebc3a3c336c90af73d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c6d5eb64cf4883c2e977b41e77fc2243aca2ee34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968256"
 ---
 # <a name="directory-status-code-enumerator"></a>ディレクトリステータスコード列挙子
 列挙子には、 `SccDirStatus` ソース管理システム内のディレクトリの状態を指定する名前付き定数値が含まれます。 この列挙体は、 [Sccdirqueryinfo](../extensibility/sccdirqueryinfo-function.md)によって使用されます。 これは、ソース管理プラグイン API のバージョン1.2 で導入されました。
@@ -43,6 +43,6 @@ enum SccDirStatus {
 
  このディレクトリに対応する SCC_DIRSTATUS_EMPTYPROJ プロジェクトは空です。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

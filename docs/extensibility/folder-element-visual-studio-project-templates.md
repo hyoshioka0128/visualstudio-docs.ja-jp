@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba3f357f6c48280d12e4ddab6135245e699d0a44
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 9b655308760d64f97c168e8000972142f159ec3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968230"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 要素 (Visual Studio プロジェクトテンプレート)
 プロジェクトに追加されるフォルダーを指定します。
@@ -61,7 +61,7 @@ ms.locfileid: "94672718"
 |-------------|-----------------|
 |[プロジェクト](../extensibility/project-element-visual-studio-templates.md)|[Templatecontent](../extensibility/templatecontent-element-visual-studio-templates.md)子要素 (省略可能)。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `Folder` は、の省略可能な子です `Project` 。
 
  次のいずれかの方法を使用して、プロジェクト項目をテンプレート内のフォルダーに整理できます。

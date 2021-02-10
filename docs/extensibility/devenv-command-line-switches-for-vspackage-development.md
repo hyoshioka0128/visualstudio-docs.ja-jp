@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6e2784066c98f8fac696306e455e7cf26b65907
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2c6b6260bad412127afe4dd9135ccf66d48e9e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968308"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 開発の Devenv コマンド ライン スイッチ
 
@@ -51,7 +51,7 @@ Visual Studio のドキュメントでは、ユーザーレベルのコマンド
 | `/Setup` | すべての使用可能な Vspackage から、メニュー、ツールバー、およびコマンドグループを記述するリソースメタデータを Visual Studio に強制的にマージします。 このコマンドは、管理者としてのみ実行できます。 <br /><br /> このスイッチは引数を取りません。 `devenv /Setup` コマンドは、一般的にインストール処理の最後の手順として提示されます。 スイッチを使用し `/Setup` ても、IDE は起動しません。|
 | `/Splash` | 通常どおり Visual Studio のスプラッシュスクリーンが表示され、メイン IDE が表示される前にメッセージボックスが表示されます。 メッセージボックスを使用すると、スプラッシュスクリーンを調べることができます (たとえば、VSPackage 製品アイコンを確認する場合など)。<br /><br /> このスイッチは引数を取りません。 |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [コマンドラインスイッチの追加](../extensibility/adding-command-line-switches.md)
 - [Devenv コマンドライン スイッチ](../ide/reference/devenv-command-line-switches.md)

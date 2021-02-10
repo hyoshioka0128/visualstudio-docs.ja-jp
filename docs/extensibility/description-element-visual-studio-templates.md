@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968334"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description 要素 (Visual Studio テンプレート)
 [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるテンプレートの説明を指定します。
@@ -62,7 +62,7 @@ ms.locfileid: "94671286"
 
  テキストは、テンプレートの説明を提供します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `Description` は、要素の必須の子要素です `TemplateData` 。
 
 ## <a name="example"></a>例

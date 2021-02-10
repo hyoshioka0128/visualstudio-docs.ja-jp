@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9907298cf730d6e51c108dc92f633d0b50451f12
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 57e335839905e828d3587ce82b1e23b0d62ddf65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968321"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>デザイナーの初期化とメタデータの構成
 
@@ -99,7 +99,7 @@ Global フラグがに設定されている場合、 `false` メタデータの�
 > [!NOTE]
 > デザインサーフェイスはコンポーネントの作成のみをサポートするため、ローカルメタデータを持つことができるのはコンポーネントのみです。 上の例では、オブジェクトのプロパティなどのプロパティを変更しようとしてい `Color` ます。 `false`がグローバルフラグに渡された場合、 `CustomBrowser` デザイナーは実際にのインスタンスを作成することはないため、は表示されません `Color` 。 グローバルフラグをに設定すると、 `false` コントロール、タイマー、ダイアログボックスなどのコンポーネントに役立ちます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>

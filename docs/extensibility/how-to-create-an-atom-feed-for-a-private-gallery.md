@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 833d75d7dfd18e863664e6d3d17d65a4e08b4d77
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967450"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>方法: プライベートギャラリーの Atom フィードを作成する
-拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、そのフィードをプライベートギャラリーとして **拡張機能と更新プログラム** に追加することができます。 詳細については、「 [プライベートギャラリー](../extensibility/private-galleries.md)」を参照してください。
+拡張機能を含むイントラネットの場所に Atom (RSS) フィードを作成し、そのフィードをプライベートギャラリーとして **拡張機能と更新プログラム** に追加することができます。 詳細については、「[プライベート ギャラリー](../extensibility/private-galleries.md)」を参照してください。
 
 ## <a name="create-an-atom-feed"></a>Atom フィードを作成する
  Atom フィードをプライベートギャラリーとして作成するには、まず、拡張機能 (*.vsix* ファイル) をフォルダーに集めます。 必要に応じて、サブフォルダーに整理することができます。 また、次のリソースも必要になります。
@@ -74,5 +74,5 @@ ms.locfileid: "96994148"
 
  2つのリンクタグが、生成されるイメージのフォルダー内のスクリーンショットを参照していることに注意してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プライベート ギャラリー](../extensibility/private-galleries.md)

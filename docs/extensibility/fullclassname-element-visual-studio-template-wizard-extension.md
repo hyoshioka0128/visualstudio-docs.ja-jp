@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 987a97a34c846f93ef52765375c1512dd8968fb1
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d23bb194dfadd202cf2899b1834f3b6ceeaa2b3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968204"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 要素 (Visual Studio テンプレートウィザード拡張)
 インターフェイスを実装するクラスの完全修飾名 `IWizard` 。
@@ -54,7 +54,7 @@ ms.locfileid: "94672744"
 
  このテキストは、インターフェイスを実装するクラスを指定し `IWizard` ます。 指定されたクラスは、 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 要素によって指定されたアセンブリ内に存在する必要があります。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `FullClassName` は `WizardExtension` に必須の子要素です。
 
 ## <a name="example"></a>例

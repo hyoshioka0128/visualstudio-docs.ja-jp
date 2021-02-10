@@ -16,15 +16,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], updating entity instances
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d06737de7df40efa2bc6259cc0ea53bdda17b8c
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967502"
 ---
 # <a name="how-to-add-an-updater-method"></a>方法: Updater メソッドを追加する
   ユーザーが *Updater* メソッドを作成することによって、SharePoint 外部リストのビジネスデータを更新できるようにすることができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -33,7 +33,7 @@ ms.locfileid: "96915376"
 
 1. BDC デザイナーで、エンティティを選択します。
 
-2. メニューバーで、[ **View**  >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
+2. メニューバーで、[   >  **その他の Windows**  >  **BDC メソッドの詳細** を表示] を選択します。
 
     [BDC メソッドの詳細] ウィンドウが開きます。 このウィンドウの詳細については、「 [BDC モデルデザインツールの概要](../sharepoint/bdc-model-design-tools-overview.md)」を参照してください。
 
