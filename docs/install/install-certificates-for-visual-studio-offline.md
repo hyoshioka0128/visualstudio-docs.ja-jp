@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941555"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Visual Studio オフライン インストールに必要な証明書をインストールする
 
@@ -38,7 +38,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
 
 ネットワーク レイアウトを作成するときに、必要な証明書が Certificates フォルダーにダウンロードされます。 各証明書ファイルをダブルクリックし、証明書マネージャー ウィザードをクリックすることで証明書を手動でインストールできます。 パスワードを求められたら、空のままにしてください。
 
-**更新** : Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
+**更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、各証明書ファイルを右クリックして [証明書のインストール] を選択した後、証明書マネージャー ウィザードの指示に従って操作することで、手動で証明書をインストールできます。
 
 ::: moniker-end
 
@@ -76,7 +76,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
 
-   **更新** : Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
+   **更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合は、次のコマンドでバッチ ファイルを作成します。
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
@@ -150,7 +150,7 @@ Visual Studio セットアップ エンジンでは、信頼されているコ�
   * ルート証明書: **Microsoft ルート証明機関**
     * 必須。 この証明書は、Windows 7 以降を実行するシステムに付属しています。
 
-**更新** : Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
+**更新**: Visual Studio 2017 バージョン 15.8 プレビュー 2 以降の場合、Visual Studio インストーラーによって求められるのは、システム上にルート証明書がインストールされることのみです。 これらの証明書は、.p12 ではなく .cer ファイルに格納されます。
 
 ::: moniker-end
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3d7ed601-2222-4be9-a557-f217db008753
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f4f19df03c4c2f6bb21a5e2262a4a1495adab8
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 18e3367199154626703b671820d8d19d303630be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941022"
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA 関数
 指定されたプロバイダーとコード ページに対してマーカー系列を作成します。 この関数を利用し、マーカー API ANSI 関数で書き出されたテキストに対してコード ページを明示的に指定できます。 コード ページを設定することは、ロケールや言語が異なる別のコンピューターでトレースを記録し、解析するときに役立ちます。 既定では、GetACP() 関数により返されるコード ページが使用されます。

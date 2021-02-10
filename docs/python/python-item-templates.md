@@ -5,25 +5,25 @@ ms.date: 12/06/2018
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528606356c2d976de71ab2c0317a1a0236d2e63f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23a79d0842592ff3ad68f63c2739a2af9847aaeb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945163"
 ---
 # <a name="python-item-templates"></a>Python 項目テンプレート
 
-項目テンプレートは、**ソリューション エクスプローラー**のコンテキスト メニューにある **[プロジェクト]** > **[新しい項目の追加]** メニュー コマンドから、または **[追加]** > **[新しい項目]** コマンドから、Python プロジェクト内で利用できます。
+項目テンプレートは、**ソリューション エクスプローラー** のコンテキスト メニューにある **[プロジェクト]** > **[新しい項目の追加]** メニュー コマンドから、または **[追加]** > **[新しい項目]** コマンドから、Python プロジェクト内で利用できます。
 
 ![[新しい項目の追加] ダイアログ ボックス](media/project-item-templates.png)
 
-項目に指定した名前を使用して、テンプレートは通常、プロジェクトで現在選択されているフォルダー内に 1 つ以上のファイルとフォルダーを作成します (フォルダーを右クリックしてコンテキスト メニューを開くと、自動的に該当のフォルダーが選択されます)。 項目を追加すると、Visual Studio プロジェクトに組み入れられ、項目が**ソリューション エクスプローラー**に表示されます。
+項目に指定した名前を使用して、テンプレートは通常、プロジェクトで現在選択されているフォルダー内に 1 つ以上のファイルとフォルダーを作成します (フォルダーを右クリックしてコンテキスト メニューを開くと、自動的に該当のフォルダーが選択されます)。 項目を追加すると、Visual Studio プロジェクトに組み入れられ、項目が **ソリューション エクスプローラー** に表示されます。
 
 次の表では、Python プロジェクト内の各項目テンプレートの効果を簡単に説明しています。
 

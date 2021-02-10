@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939540"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web アプリケーション プロジェクト テンプレート
 
@@ -75,9 +75,9 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 
 ソース管理を使用している場合、仮想環境は *requirements.txt* でしか再作成できないので、仮想環境フォルダーは通常は省略されます。 そのフォルダーを除外する最善の方法としては、上に示したプロンプト内で **[I will install them myself]\(自分でインストールする\)**  を選択して、仮想環境を作成する前に自動コミットを無効にします。 詳細については、[Django のチュートリアル - 手順 1-2 および手順 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) に関するページと [Flask のチュートリアル - 手順 1-2 および手順 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) に関するページを参照してください。
 
-Microsoft Azure App Service にデプロイする場合は、Python のバージョンとして[サイト拡張機能](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)を選び、パッケージを手動でインストールします。 また、Azure App Service は、Visual Studio からデプロイされるときに *requirements.txt* ファイルからパッケージを自動的にインストール**しない**ため、[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) の構成の詳細に従ってください。
+Microsoft Azure App Service にデプロイする場合は、Python のバージョンとして[サイト拡張機能](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)を選び、パッケージを手動でインストールします。 また、Azure App Service は、Visual Studio からデプロイされるときに *requirements.txt* ファイルからパッケージを自動的にインストール **しない** ため、[aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) の構成の詳細に従ってください。
 
-Microsoft Azure Cloud Services は *requirements.txt* ファイルをサポート*します*。 詳細については、[Azure クラウド サービス プロジェクト](python-azure-cloud-service-project-template.md)に関する記事をご覧ください。
+Microsoft Azure Cloud Services は *requirements.txt* ファイルをサポート *します*。 詳細については、[Azure クラウド サービス プロジェクト](python-azure-cloud-service-project-template.md)に関する記事をご覧ください。
 
 ## <a name="debugging"></a>デバッグ
 
@@ -119,7 +119,7 @@ MSBuild 構文を使用して任意のプロジェクト プロパティまた�
 
 ### <a name="sample-pyramid-configuration"></a>サンプルの Pyramid 構成
 
-Pyramid アプリは、現在、`pcreate` コマンドライン ツールを使用して作成するのが最適です。 アプリが作成されたら、[ **[既存の Python コードから]** ](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) テンプレートを使用してインポートできます。 その後、 **[汎用 Web プロジェクト]** カスタマイズを選択してオプションを構成します。 これらの設定は、Pyramid が `..\env` にある仮想環境にインストールされていることを想定しています。
+Pyramid アプリは、現在、`pcreate` コマンドライン ツールを使用して作成するのが最適です。 アプリが作成されたら、[ **[既存の Python コードから]**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files) テンプレートを使用してインポートできます。 その後、 **[汎用 Web プロジェクト]** カスタマイズを選択してオプションを構成します。 これらの設定は、Pyramid が `..\env` にある仮想環境にインストールされていることを想定しています。
 
 - **[デバッグ]** グループ:
   - **[サーバー ポート]** : 6543 (または *.ini* ファイルで構成されているポート)

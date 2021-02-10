@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 4b22cdf9-59b1-4c88-a6d8-1644a4a11e08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f07dbfb0ca193f7bacbf2408fc26e622ffb037e1
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 7b7cf8883e1a0c94756f7dcd9cc3a0a99744c9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941100"
 ---
 # <a name="concurrency-visualizer-sdk"></a>コンカレンシー ビジュアライザー SDK
 コンカレンシー ビジュアライザー SDK を使用してソース コードをインストルメント化し、コンカレンシー ビジュアライザーに追加情報を表示することができます。 コードでフェーズとイベントに追加データを関連付けることができます。 このような追加の視覚化機能のことを *マーカー* と呼びます。  入門用のチュートリアルについては、「[Introducing the Concurrency Visualizer SDK](/archive/blogs/visualizeparallel/introducing-the-concurrency-visualizer-sdk)」(コンカレンシー ビジュアライザー SDK の概要) を参照してください。

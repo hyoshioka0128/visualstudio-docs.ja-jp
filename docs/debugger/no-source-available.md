@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ed0732bc-4b8c-490f-adb1-af06869a2a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf7bf067602586d90271eab1f9289a3b6b884ce
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: e9993c4482d20393a3ca46d9afcd0a8ec1b13f65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942036"
 ---
 # <a name="no-source-available"></a>使用できるソースはありません
 表示しようとしているコードのソース コードがプロジェクトに含まれていません。 原因として、 **[呼び出し履歴]** ウィンドウまたは **[スレッド]** ウィンドウで、ソース コードのないモジュールをダブルクリックしたことが考えられます。 デバッグは継続できますが、ソース ウィンドウを使ってブレークポイントを設定したり、この場所で他のアクションを実行したりすることはできません。 ブレークポイントを設定する必要があるときは、代わりに **[逆アセンブリ]** ウィンドウを使用します。

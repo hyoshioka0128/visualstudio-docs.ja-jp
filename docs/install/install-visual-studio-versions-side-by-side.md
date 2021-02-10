@@ -12,13 +12,13 @@ helpviewer_keywords:
 - install multiple versions of Visual Studio
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
-ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
-ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
+manager: jmartens
+ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91928633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941529"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>複数バージョンの Visual Studio をインストールする
 
@@ -67,7 +67,7 @@ Visual Studio のあるマイナー バージョンから次のバージョン�
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework のバージョンと複数バージョンのインストール
 
-Visual Basic、Visual C#、および Visual F# のプロジェクトでは、 **プロジェクト デザイナー** の **[ターゲット フレームワーク]** オプションを使用して、プロジェクトで使用する .NET Framework のバージョンを指定します。 C++ プロジェクトでは、.vcxproj ファイルを変更すると、ターゲット フレームワークを手動で変更できます。 詳細については、「[.NET Framework のバージョンの互換性](/dotnet/framework/migration-guide/version-compatibility)」ページを参照してください。
+Visual Basic、Visual C#、および Visual F# のプロジェクトでは、**プロジェクト デザイナー** の **[ターゲット フレームワーク]** オプションを使用して、プロジェクトで使用する .NET Framework のバージョンを指定します。 C++ プロジェクトでは、.vcxproj ファイルを変更すると、ターゲット フレームワークを手動で変更できます。 詳細については、「[.NET Framework のバージョンの互換性](/dotnet/framework/migration-guide/version-compatibility)」ページを参照してください。
 
 プロジェクトを作成するときは、プロジェクトが対象とする .NET Framework のバージョンを **[新しいプロジェクト]** ダイアログ ボックスの **[.NET Framework]** の一覧で指定できます。
 

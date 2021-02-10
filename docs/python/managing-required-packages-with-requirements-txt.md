@@ -5,17 +5,17 @@ ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b65072e7a9ffa5d3767a5ff66fda25b231c622ef
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: f535f9d6ad4aa917cde493dfcfe089896634d706
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948115"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>requirements.txt での必須パッケージの管理
 
@@ -23,13 +23,13 @@ ms.locfileid: "90100540"
 
 技術的には、任意のファイル名を使って要件を追跡できますが (パッケージをインストールするときに `-r <full path to file>` を使用する)、Visual Studio では *requirements.txt* に対する固有のサポートが用意されています。
 
-- *requirements.txt* を含むプロジェクトを読み込み、そのファイルにリストされているすべてのパッケージをインストールする場合は、**ソリューション エクスプローラー**で **[Python 環境]** ノードを展開し、環境ノードを右クリックして **[requirements.txt からインストール]** を選択します。
+- *requirements.txt* を含むプロジェクトを読み込み、そのファイルにリストされているすべてのパッケージをインストールする場合は、**ソリューション エクスプローラー** で **[Python 環境]** ノードを展開し、環境ノードを右クリックして **[requirements.txt からインストール]** を選択します。
 
     ![requirements.txt からインストールする](media/environments/environments-requirements-txt-install.png)
 
 - 仮想環境に依存関係をインストールする場合は、最初にその環境を作成してアクティブ化した後、 **[requirements.txt からインストール]** コマンドを使用します。 仮想環境の作成について詳しくは、「[仮想環境を使用する](selecting-a-python-environment-for-a-project.md#use-virtual-environments)」をご覧ください。
 
-- 既に必要なすべてのパッケージを環境にインストールしている場合は、**ソリューション エクスプローラー**で環境を右クリックし、 **[requirements.txt を生成]** を選択することで、必要なファイルを作成できます。 ファイルが既に存在する場合、更新方法の指定を求められます。
+- 既に必要なすべてのパッケージを環境にインストールしている場合は、**ソリューション エクスプローラー** で環境を右クリックし、 **[requirements.txt を生成]** を選択することで、必要なファイルを作成できます。 ファイルが既に存在する場合、更新方法の指定を求められます。
 
     ![requirements.txt の更新オプション](media/environments/environments-requirements-txt-replace.png)
 

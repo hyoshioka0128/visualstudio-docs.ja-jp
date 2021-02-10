@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b21268b488eb0061c5c329e0afcb57ef1ec6e3a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942661"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>チュートリアル: Visual Studio での Django Web フレームワークの概要
 
@@ -65,7 +65,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
     - **ソリューション**: このコントロールは既定の **[新しいソリューションの作成]** オプションに設定したままにします。
     - **ソリューション名**: このチュートリアルでは複数プロジェクトのコンテナーとしてのソリューションに適した **LearningDjango** に設定します。
     - **ソリューションのディレクトリを作成**: オンのままにします (既定)。
-    - **新しい Git リポジトリの作成**: ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能**を追加します。
+    - **新しい Git リポジトリの作成**: ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能** を追加します。
 
 1. しばらくすると、Visual Studio に (次に示すように) "**このプロジェクトには外部パッケージが必要です**" というダイアログが表示されます。 テンプレートには、最新の Django 1.x パッケージを参照する *requirements.txt* ファイルが含まれているため、このダイアログが表示されます (正確な依存関係を確認するには **[必要なパッケージを表示]** を選択します)。
 
@@ -121,7 +121,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 プロジェクトのソース管理を構成したら、プロジェクトに必要な Django パッケージを含む仮想環境を作成できることに注意してください。 その後、 **[チーム エクスプローラー]** を使用して、環境のフォルダーをソース管理から除外できます。
 
-1. **ソリューション エクスプローラー**で **[Python 環境]** ノードを右クリックし、 **[仮想環境を追加]** を選択します。
+1. **ソリューション エクスプローラー** で **[Python 環境]** ノードを右クリックし、 **[仮想環境を追加]** を選択します。
 
     ![ソリューション エクスプローラーの [仮想環境の追加] コマンド](media/django/step01-add-virtual-environment-command.png)
 
@@ -151,7 +151,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>質問: ソース管理に既にコミットされている仮想環境を削除するにはどうすればよいですか?
 
-回答: 最初に、 *.gitignore* ファイルを編集してフォルダーを除外します。末尾にコメント `# Python Tools for Visual Studio (PTVS)` があるセクションを探し、`/BasicProject/env` などの仮想環境のフォルダー用の新しい行を追加します (Visual Studio ではファイルが**ソリューション エクスプローラー**に表示されないので、 **[ファイル]**  >  **[開く]**  >  **[ファイル]** メニュー コマンドを使用して直接開きます。 **[チーム エクスプローラー]** からファイルを開くこともできます。**[設定]** ページで、**[リポジトリ設定]** を選択し、**[無視および属性ファイル]** セクションに移動し、**.gitignore** の横の **[編集]** リンクを選択します)。
+回答: 最初に、 *.gitignore* ファイルを編集してフォルダーを除外します。末尾にコメント `# Python Tools for Visual Studio (PTVS)` があるセクションを探し、`/BasicProject/env` などの仮想環境のフォルダー用の新しい行を追加します (Visual Studio ではファイルが **ソリューション エクスプローラー** に表示されないので、 **[ファイル]**  >  **[開く]**  >  **[ファイル]** メニュー コマンドを使用して直接開きます。 **[チーム エクスプローラー]** からファイルを開くこともできます。**[設定]** ページで、**[リポジトリ設定]** を選択し、**[無視および属性ファイル]** セクションに移動し、**.gitignore** の横の **[編集]** リンクを選択します)。
 
 次に、コマンド ウィンドウを開き、*env* などの仮想環境のフォルダーを含む *BasicProject* のようなフォルダーに移動し、`git rm -r env` を実行します。 さらに、コマンドラインからこれらの変更をコミットするか (`git commit -m 'Remove venv'`)、**[チーム エクスプローラー]** の **[変更]** ページからコミットします。
 
@@ -159,7 +159,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 プロジェクトの作成が完了したら、定型 Django プロジェクト コードを確認します (これは CLI コマンド `django-admin startproject <project_name>` によって生成されるコードと同じです)。
 
-1. プロジェクトのルートには *manage.py* があります。これは、Visual Studio によってプロジェクトのスタートアップ ファイルとして自動的に設定される Django コマンドライン管理ユーティリティです。 コマンドラインで `python manage.py <command> [options]` を使用してユーティリティを実行します。 Django の一般的なタスクの場合、Visual Studio は便利なメニュー コマンドを提供します。 **ソリューション エクスプローラー**でプロジェクトを右クリックし、 **[Python]** を選択して一覧を表示します。 このチュートリアルの過程では、これらのコマンドの一部が見られます。
+1. プロジェクトのルートには *manage.py* があります。これは、Visual Studio によってプロジェクトのスタートアップ ファイルとして自動的に設定される Django コマンドライン管理ユーティリティです。 コマンドラインで `python manage.py <command> [options]` を使用してユーティリティを実行します。 Django の一般的なタスクの場合、Visual Studio は便利なメニュー コマンドを提供します。 **ソリューション エクスプローラー** でプロジェクトを右クリックし、 **[Python]** を選択して一覧を表示します。 このチュートリアルの過程では、これらのコマンドの一部が見られます。
 
     ![Python プロジェクトのコンテキスト メニューの Django コマンド](media/django/step01-django-commands-menu.png)
 
@@ -184,7 +184,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
     ![Visual Studio の [Web サーバー] ツールバー ボタンを実行する](media/django/run-web-server-toolbar-button.png)
 
-1. サーバーの実行は、Django の組み込み開発サーバーを起動するコマンド`manage.py runserver <port>` の実行を意味します。 Visual Studio に、スタートアップ ファイルがないことに関するメッセージと共に "**デバッガーを開始できませんでした**" と表示される場合は、**ソリューション エクスプローラー**で **manage.py** を右クリックし、**[スタートアップ ファイルとして設定]** を選択します。
+1. サーバーの実行は、Django の組み込み開発サーバーを起動するコマンド`manage.py runserver <port>` の実行を意味します。 Visual Studio に、スタートアップ ファイルがないことに関するメッセージと共に "**デバッガーを開始できませんでした**" と表示される場合は、**ソリューション エクスプローラー** で **manage.py** を右クリックし、**[スタートアップ ファイルとして設定]** を選択します。
 
 1. サーバーを起動すると、サーバー ログも表示するコンソール ウィンドウが開きます。 Visual Studio では、ブラウザーで自動的に `http://localhost:<port>` が開きます。 ただし、Django プロジェクトにはアプリがないので、Django には、これまで正常に動作していることを確認する既定のページのみが表示されます。
 

@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947849"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>チュートリアル: Windows フォーム デザイナーを使ってみる
 
@@ -221,9 +221,9 @@ DemoCalculator コントロールには、いくつかの Windows フォーム �
 
    - sixButton コントロールの text プロパティを「**6**」に変更します
 
-   - multiplicationButton コントロールの text プロパティを * *\** _ (asterisk) (アスタリスク) に変更します
+   - multiplicationButton コントロールの text プロパティを「 **\*** 」 (アスタリスク) に変更します
 
-   - oneButton コントロールの text プロパティを_ *1** に変更します
+   - oneButton コントロールの text プロパティを「**1**」に変更します
 
    - twoButton コントロールの text プロパティを「**2**」に変更します
 

@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62957866"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942491"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>手順 5: Django でユーザーを認証する
 
@@ -154,7 +154,7 @@ ms.locfileid: "62957866"
 
 1. 特に、ス―パー ユーザーまたは管理者は、相対 URL "/admin/" および "/admin/doc/" を使用して、組み込みの Django 管理者インターフェイスにアクセスします。 これらのインターフェイスを有効にするには、次の手順を実行します。
 
-    1. 環境に docutils Python パッケージをインストールします。 そのためには、*requirements.txt* ファイルに "docutils" を追加し、**ソリューション エクスプローラー**でプロジェクトを展開し、 **[Python 環境]** ノードを選択してから、使用している環境を右クリックして **[requirements.txt からインストール]** を選択することをお勧めします。
+    1. 環境に docutils Python パッケージをインストールします。 そのためには、*requirements.txt* ファイルに "docutils" を追加し、**ソリューション エクスプローラー** でプロジェクトを展開し、 **[Python 環境]** ノードを選択してから、使用している環境を右クリックして **[requirements.txt からインストール]** を選択することをお勧めします。
 
     1. Django プロジェクトの *urls.py* を開き、次のエントリから既定のコメントを削除します。
 

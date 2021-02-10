@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 018b9a6707ea46a9b1c46f820faf7bd47dac1ff9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942517"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>チュートリアル: Visual Studio での Flask Web フレームワークの概要
 
@@ -60,7 +60,7 @@ Flask プロジェクト テンプレートは Python Tools for Visual Studio �
     - **場所**: Visual Studio ソリューションとプロジェクトを作成する場所を指定します。
     - **ソリューション名**: このチュートリアルでは複数プロジェクトのコンテナーとしてのソリューションに適した「**LearningFlask**」に設定します。
     - **ソリューションのディレクトリを作成**: オンのままにします (既定)。
-    - **新しい Git リポジトリの作成**: ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能**を追加します。
+    - **新しい Git リポジトリの作成**: ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能** を追加します。
 
 1. しばらくすると、Visual Studio に (次に示すように) "**このプロジェクトには外部パッケージが必要です**" というダイアログが表示されます。 テンプレートには、最新の Flask 1.x パッケージを参照する *requirements.txt* ファイルが含まれているため、このダイアログが表示されます (正確な依存関係を確認するには **[必要なパッケージを表示]** を選択します)。
 
@@ -116,7 +116,7 @@ Flask プロジェクト テンプレートは Python Tools for Visual Studio �
 
 プロジェクトのソース管理を構成したら、プロジェクトに必要な Flask パッケージの仮想環境を作成できます。 その後、 **[チーム エクスプローラー]** を使用して、環境のフォルダーをソース管理から除外できます。
 
-1. **ソリューション エクスプローラー**で **[Python 環境]** ノードを右クリックし、 **[仮想環境を追加]** を選択します。
+1. **ソリューション エクスプローラー** で **[Python 環境]** ノードを右クリックし、 **[仮想環境を追加]** を選択します。
 
     ![ソリューション エクスプローラーの [仮想環境の追加] コマンド](media/flask/step01-add-virtual-environment-command.png)
 
@@ -146,13 +146,13 @@ Flask プロジェクト テンプレートは Python Tools for Visual Studio �
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>質問: ソース管理に既にコミットされている仮想環境を削除するにはどうすればよいですか?
 
-回答: 最初に、 *.gitignore* ファイルを編集してフォルダーを除外します。末尾にコメント `# Python Tools for Visual Studio (PTVS)` があるセクションを探し、`/BasicProject/env` などの仮想環境のフォルダー用の新しい行を追加します (Visual Studio ではファイルが**ソリューション エクスプローラー**に表示されないので、 **[ファイル]**  >  **[開く]**  >  **[ファイル]** メニュー コマンドを使用して直接開きます。 **[チーム エクスプローラー]** からファイルを開くこともできます。**[設定]** ページで、**[リポジトリ設定]** を選択し、**[無視および属性ファイル]** セクションに移動し、**.gitignore** の横の **[編集]** リンクを選択します)。
+回答: 最初に、 *.gitignore* ファイルを編集してフォルダーを除外します。末尾にコメント `# Python Tools for Visual Studio (PTVS)` があるセクションを探し、`/BasicProject/env` などの仮想環境のフォルダー用の新しい行を追加します (Visual Studio ではファイルが **ソリューション エクスプローラー** に表示されないので、 **[ファイル]**  >  **[開く]**  >  **[ファイル]** メニュー コマンドを使用して直接開きます。 **[チーム エクスプローラー]** からファイルを開くこともできます。**[設定]** ページで、**[リポジトリ設定]** を選択し、**[無視および属性ファイル]** セクションに移動し、**.gitignore** の横の **[編集]** リンクを選択します)。
 
 次に、コマンド ウィンドウを開き、*env* などの仮想環境のフォルダーを含む *BasicProject* のようなフォルダーに移動し、`git rm -r env` を実行します。 さらに、コマンドラインからこれらの変更をコミットするか (`git commit -m 'Remove venv'`)、**[チーム エクスプローラー]** の **[変更]** ページからコミットします。
 
 ## <a name="step-1-4-examine-the-boilerplate-code"></a>手順 1-4: 定型コードを確認する
 
-1. プロジェクトの作成が完了すると、**ソリューション エクスプローラー**にソリューションとプロジェクトが表示されますが、プロジェクトに含まれるファイルは *app.py* と *requirements.txt* の 2 つだけです。
+1. プロジェクトの作成が完了すると、**ソリューション エクスプローラー** にソリューションとプロジェクトが表示されますが、プロジェクトに含まれるファイルは *app.py* と *requirements.txt* の 2 つだけです。
 
     ![ソリューション エクスプローラーでの Blank Flask プロジェクト ファイル](media/flask/step01-blank-flask-project-in-solution-explorer.png)
 
@@ -232,7 +232,7 @@ def hello(name, msg):
 
     ![Visual Studio の [Web サーバー] ツールバー ボタンを実行する](media/tutorials-common/run-web-server-toolbar-button.png)
 
-1. いずれのコマンドも、PORT 環境変数にランダムなポート番号を割り当ててから、`python app.py` を実行します。 コードは、Flask の開発サーバー内でそのポートを使用してアプリを起動します。 Visual Studio に、スタートアップ ファイルがないことに関するメッセージと共に "**デバッガーを開始できませんでした**" と表示される場合は、**ソリューション エクスプローラー**で **app.py** を右クリックし、**[スタートアップ ファイルとして設定]** を選択します。
+1. いずれのコマンドも、PORT 環境変数にランダムなポート番号を割り当ててから、`python app.py` を実行します。 コードは、Flask の開発サーバー内でそのポートを使用してアプリを起動します。 Visual Studio に、スタートアップ ファイルがないことに関するメッセージと共に "**デバッガーを開始できませんでした**" と表示される場合は、**ソリューション エクスプローラー** で **app.py** を右クリックし、**[スタートアップ ファイルとして設定]** を選択します。
 
 1. サーバーが起動すると、コンソール ウィンドウが開いてサーバー ログが表示されます。 Visual Studio によってブラウザーで `http://localhost:<port>` が自動的に開かれ、`hello` 関数でレンダリングされたメッセージが表示されます。
 

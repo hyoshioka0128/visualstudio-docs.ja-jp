@@ -9,16 +9,16 @@ f1_keywords:
 ms.assetid: a148b468-b849-4858-880a-808a6b47e596
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 788cc8d8a0988740ae78e5b2b21368eb5658ec7a
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 0a9e28b0e1c3e82cb9416a376603e8f4a560f02c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800337"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948141"
 ---
 # <a name="how-to-configure-performance-rules"></a>方法: パフォーマンス規則を構成する
 Visual Studio プロファイル ツールのパフォーマンスの警告には、プログラムの実行速度を低下させる可能性があるプロファイリング対象のアプリケーションの問題が示されます。 警告は、有用なデータを収集するために、収集メソッドを変更する必要があることを示している場合もあります。 パフォーマンスの警告は、プロファイル セッションで自動的に生成され、[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] でプロファイル データ ファイルを開いたときに、 **[エラー一覧]** ウィンドウに表示されます。 ただし、警告によっては、目的のシナリオに当てはまらないものや、誤って生成されるものもあります。 このため、特定の警告を表示または非表示にするよう、パフォーマンスの警告を構成できます。

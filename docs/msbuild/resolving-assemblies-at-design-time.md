@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 515c99a4d73abcb3a287f3f4026723bd8050b360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937928"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>デザイン時のアセンブリの解決
 
@@ -29,7 +29,7 @@ ms.locfileid: "93048490"
 
 ## <a name="how-type-resolution-works"></a>型解決のしくみ
 
- CLR は、実行時に GAC、 *bin* ディレクトリ、およびすべてのプローブ パスを調べることで、アセンブリ内の型を解決します。 これは、フュージョン ローダーによって処理されます。 では、フュージョン ローダーはどうやって調査対象を認識するのでしょうか。 これは、デザイン時、アプリケーションのビルド中に行われた解決によって異なります。
+ CLR は、実行時に GAC、*bin* ディレクトリ、およびすべてのプローブ パスを調べることで、アセンブリ内の型を解決します。 これは、フュージョン ローダーによって処理されます。 では、フュージョン ローダーはどうやって調査対象を認識するのでしょうか。 これは、デザイン時、アプリケーションのビルド中に行われた解決によって異なります。
 
  ビルド中、コンパイラは参照アセンブリを使用してアプリケーションの型を解決します。 .NET Framework Version 2.0、3.0、3.5、4、4.5、4.5.1 では、参照アセンブリは .NET Framework のインストール時にインストールされます。
 
