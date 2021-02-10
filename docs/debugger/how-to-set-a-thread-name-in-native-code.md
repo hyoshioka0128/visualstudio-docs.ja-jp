@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a713b6db074586898ff72cd8595c4cc0d20d99cf
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 024926123e8a9967947d11635558eb6ea06077cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149522"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921673"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>方法: ネイティブ コードのスレッド名を設定する
 スレッド名の設定は、Visual Studio のどのエディションでも実行できます。 スレッドの名前付けは、実行中のプロセスをデバッグするときに、 **[スレッド]** ウィンドウで対象のスレッドを識別するために役立ちます。 スレッドにわかりやすい名前を付けると、クラッシュ ダンプ検査を介して事後デバッグを実行するときや、さまざまなツールを使用してパフォーマンス キャプチャを分析するときにも役立ちます。
