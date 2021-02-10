@@ -7,19 +7,19 @@ ms.technology: vs-ide-compile
 ms.topic: how-to
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a59f3706e2d33e87e760d2b88c4c7ba78eca4ef2
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ab79521cfd4cc122fa398f88b56ca37e2f2673a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136368"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869181"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>方法: コンパイラ警告の非表示
 
-1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを **標準** 、 **詳細** 、または **診断** に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
+1 つまたは複数の種類のコンパイラの警告を除外して、ビルド ログをまとめることができます。 たとえば、ビルド ログの詳細さを **標準**、**詳細**、または **診断** に設定したときに生成される出力の一部だけを確認できます。 詳細さについて詳しくは、「[方法:ビルド ログ ファイルを表示、保存、および構成する](../ide/how-to-view-save-and-configure-build-log-files.md)」をご覧ください。
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Visual C# または F\# の特定の警告を非表示にする
 
@@ -55,7 +55,7 @@ C++ プロジェクトの特定の警告を非表示にするには、 **[構成
 
 ## <a name="suppress-warnings-for-visual-basic"></a>Visual Basic の警告を非表示にする
 
-プロジェクトの *.vbproj* ファイルを編集することで、Visual Basic の特定のコンパイラの警告を非表示にできます。 *カテゴリ* で警告を非表示にするには、 [コンパイル プロパティ ページ](../ide/reference/compile-page-project-designer-visual-basic.md)を使用できます。 詳細については、「[Visual Basic での警告の構成](../ide/configuring-warnings-in-visual-basic.md)」を参照してください。
+プロジェクトの *.vbproj* ファイルを編集することで、Visual Basic の特定のコンパイラの警告を非表示にできます。 *カテゴリ* で警告を非表示にするには、[コンパイル プロパティ ページ](../ide/reference/compile-page-project-designer-visual-basic.md)を使用できます。 詳細については、「[Visual Basic での警告の構成](../ide/configuring-warnings-in-visual-basic.md)」を参照してください。
 
 ### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Visual Basic の特定の警告を抑制するには
 

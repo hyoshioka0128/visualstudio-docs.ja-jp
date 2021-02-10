@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870520"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>マルチスレッド アプリケーションのデバッグを始める (C#、Visual Basic、C++)
 
@@ -242,7 +242,7 @@ Visual Studio には、マルチスレッド アプリケーションのデバ�
 
 3. ソース コード エディターで、ブレークポイントが含まれている行を探します。
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>スレッド マーカーを見つける  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>スレッド マーカーを見つける  
 
 1. [デバッグ] ツール バーで、 **[ソースのスレッドを表示]** ボタン ![ソースのスレッドを表示](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") を選択します。
 
@@ -309,7 +309,7 @@ Visual Studio には、マルチスレッド アプリケーションのデバ�
     > [!TIP]
     > いくつかのスレッドにフラグを設定したら、コード エディターでコード行を右クリックし、 **[フラグが設定されたスレッドをカーソル行の前まで実行]** を選択できます。 フラグが設定されたすべてのスレッドが到達するコードを選択してください。 Visual Studio により選択したコード行でスレッドが一時停止されるので、[スレッドを凍結および凍結解除](#bkmk_freeze)することにより、実行の順序を簡単に制御できます。
 
-4. **すべてのスレッドを表示**モードに戻すには、 **[フラグが設定されたスレッドのみを表示]** ボタンをもう一度選択します。
+4. **すべてのスレッドを表示** モードに戻すには、 **[フラグが設定されたスレッドのみを表示]** ボタンをもう一度選択します。
 
 5. スレッドのフラグを解除するには、 **[並列ウォッチ]** ウィンドウでフラグが設定されたスレッドを 1 つ以上右クリックして、 **[フラグ解除]** を選択します。
 

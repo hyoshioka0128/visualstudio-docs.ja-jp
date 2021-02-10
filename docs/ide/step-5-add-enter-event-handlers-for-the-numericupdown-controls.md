@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 19dc77469a08821f5fb9775450bf080c0d49181b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 876cdb3639c93e9a67316f5aaea4139f061efb17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869012"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>手順 5: NumericUpDown コントロールの Enter イベント ハンドラーの追加
 
@@ -68,7 +68,7 @@ ms.locfileid: "90036965"
 
      次の行では、answerBox がオブジェクトから NumericUpDown コントロールに正常に変換 (キャスト) されたかどうかを確認しています。 変換が成功しなかったときは、変数は `null` (C#) または `Nothing` (Visual Basic) の値になります。 3 行目は NumericUpDown コントロールに表示される解答の長さを取得し、4 行目はこの長さに基づいてコントロールの現在の値を選択します。 これで、クイズの受け手がコントロールを選択すると、Visual Studio がこのイベントを発生させ、現在の解答が選択されます。 クイズの受け手が別の解答の入力を開始するとすぐに、前の解答がクリアされて新しい解答に置き換えられます。
 
-4. **Windows フォーム デザイナー**で、difference **NumericUpDown** コントロールを選択します。
+4. **Windows フォーム デザイナー** で、difference **NumericUpDown** コントロールを選択します。
 
 5. **[プロパティ]** ダイアログ ボックスの **[イベント]** ページで、**Enter** イベントまでスクロールし、行の末尾にあるドロップダウン矢印をクリックし、追加した `answer_Enter` イベント ハンドラーを選択します。
 

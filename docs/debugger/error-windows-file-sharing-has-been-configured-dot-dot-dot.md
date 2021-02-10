@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dbb1f3493ead985ac946331fdbff7933b6d604
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: d1cc81c8ef39aeeb716a26209a4aded0c69dcf95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870871"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>エラー :Windows ファイル共有が構成されました...
 別のユーザー名を使用してリモート コンピューターに接続できるように Windows ファイル共有が構成されました。 この設定はリモート デバッグと互換性がありません。

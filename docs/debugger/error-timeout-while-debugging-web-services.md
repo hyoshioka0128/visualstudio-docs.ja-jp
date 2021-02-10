@@ -12,15 +12,15 @@ helpviewer_keywords:
 - XML Web services, timeout while debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3522b61c8d7d78a182036d3a1f66c0495f5081
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 87a2d79fc24bdb433fbb5eb1480dbf5d15520a8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871105"
 ---
 # <a name="error-timeout-while-debugging-web-services"></a>エラー :Web サービスのデバッグ中にタイムアウトになりました
 呼び出し元のコードから XML Web サービスにステップ インしている場合は、呼び出しがタイムアウトになってデバッグを継続できなくなることがあります。 この場合は、次のエラー メッセージが表示されます。

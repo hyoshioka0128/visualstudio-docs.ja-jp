@@ -14,15 +14,15 @@ helpviewer_keywords:
 - debugger, Web application errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c602b2754e4361b4e41e2b4d4d5cdcc09381c5
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4d1bbdc3e06dee87e7d8930bc5c4e60c6d25ee2f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871742"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>エラー :Windows 統合認証が無効になっているため、デバッグに失敗しました
 デバッグを要求したユーザーの認証が認証エラーで失敗しました。 このエラーは、Web アプリケーションまたは XML Web サービスにステップ インしようとするときに発生することがあります。 このエラーの原因の 1 つとして、統合 Windows 認証が有効ではないことが挙げられます。 その機能を有効にする場合は、「統合 Windows 認証を有効にするには」の手順を実行します。
@@ -67,7 +67,7 @@ ms.locfileid: "90852785"
 
 2. Windows 認証と II6 管理互換の機能を有効にするために、以下の手順をまだ実行していなければ、この手順を実行します。
 
-    1. クリックして**開始**、をクリックして **コントロール パネルの** 順にクリックします**プログラム**します。
+    1. クリックして **開始**、をクリックして **コントロール パネルの** 順にクリックします **プログラム** します。
 
     2. **[プログラムと機能]** で **[Windows の機能を有効化または無効化]** をクリックします。
 

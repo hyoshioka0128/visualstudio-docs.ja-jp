@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871638"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>エラー :ターゲット プロセスがコード &#39;code&#39 で終了しました (関数 &#39;function&#39; の評価中)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "90852733"
 
 この問題には、次の 2 つの対応策があります。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>対応策 #1:デバッガーで getter プロパティまたは ToString メソッドが呼び出されないようにする 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>対応策 #1:デバッガーで getter プロパティまたは ToString メソッドが呼び出されないようにする 
 
 エラー メッセージには、デバッガーが呼び出そうとした関数名が表示されます。 この関数名を使用し、**イミディエイト** ウィンドウからその関数を再評価し、評価をデバッグします。 **イミディエイト** ウィンドウから評価する場合は、 **[自動変数]、[ローカル]、[ウォッチ]** のウィンドウからの暗黙的に評価する場合とは異なり、ハンドルされない例外でデバッガーが中断されるため、デバッグを行うことが可能です。
 

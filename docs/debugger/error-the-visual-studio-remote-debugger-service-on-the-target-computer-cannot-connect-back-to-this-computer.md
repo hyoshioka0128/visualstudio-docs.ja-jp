@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e879fdc1be2eba309258dd64b3c9d83639eb05f7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871261"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>エラー :ターゲット コンピューター上の Visual Studio リモート デバッガーが、このコンピューターに接続できません
 このエラーは、リモート デバッガー サービスでデバッグを開始したコンピューターに接続するときに、このサービスを実行しているユーザー アカウントを認証できないことを意味します。 このエラーは、レガシ デバッグ エンジンを使用したリモート デバッグで、リモート デバッガーがサービスとして実行されている場合に発生する可能性があります。
@@ -39,7 +39,7 @@ ms.locfileid: "90851074"
 
 - Visual Studio リモート デバッガー サービスを実行するアカウントは、すべてのプロセスをデバッグできるように、リモート コンピューターの管理者アカウントであることが必要です。
 
-- このアカウントには、**ローカル セキュリティ ポリシー**管理ツールを使用して、リモート コンピューターに対する `Log on as a service` 特権が与えられている必要もあります。
+- このアカウントには、**ローカル セキュリティ ポリシー** 管理ツールを使用して、リモート コンピューターに対する `Log on as a service` 特権が与えられている必要もあります。
 
 - ローカル アカウントを使用してコンピューターにアクセスしている場合は、ローカル アカウントで Visual Studio リモート デバッガー サービスを実行する必要があります。
 

@@ -9,13 +9,13 @@ keywords: Bridge to Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
-manager: jillfra
-ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+manager: jmartens
+ms.openlocfilehash: 23d060489a13aa8e02316e253d9367e9e3372bbe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860447"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859633"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Bridge to Kubernetes を使用する
 
@@ -29,7 +29,7 @@ Bridge to Kubernetes を使用すると、Kubernetes クラスターと、開発
 
 * Azure サブスクリプション。 Azure サブスクリプションをお持ちでない場合は、[無料のアカウント](https://azure.microsoft.com/free)を作成できます。
 * [Azure CLI がインストールされていること][azure-cli]。
-* *Azure の開発*ワークロードがインストールされている Windows 10 で、[Visual Studio 2019][visual-studio] バージョン 16.7 Preview 4 以降が実行されていること。
+* *Azure の開発* ワークロードがインストールされている Windows 10 で、[Visual Studio 2019][visual-studio] バージョン 16.7 Preview 4 以降が実行されていること。
 * [Bridge to Kubernetes 拡張機能がインストールされていること][btk-extension]。
 
 また、.NET コンソール アプリケーションの場合は、*Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets* NuGet パッケージをインストールします。

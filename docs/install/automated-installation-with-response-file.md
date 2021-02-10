@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command-line
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868733"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>応答ファイルの設定を定義する方法
 
@@ -41,7 +41,7 @@ vs_enterprise.exe --in customInstall.json
 
 レイアウトを作成する管理者はレイアウトの `response.json` ファイルを変更することで、ユーザーがレイアウトから Visual Studio をインストールするときに表示される既定の設定を制御できます。  たとえば、管理者が特定のワークロードとコンポーネントを既定でインストールする場合、それらを追加するように `response.json` ファイルを構成できます。
 
-Visual Studio セットアップをレイアウト フォルダーから実行すると、レイアウト フォルダーの応答ファイルが_自動的に_使用されます。  `--in` オプションを使用する必要はありません。
+Visual Studio セットアップをレイアウト フォルダーから実行すると、レイアウト フォルダーの応答ファイルが _自動的に_ 使用されます。  `--in` オプションを使用する必要はありません。
 
 オフライン レイアウト フォルダーで作成された `response.json` ファイルを更新することで、このレイアウトからインストールするユーザーの既定設定を定義できます。
 

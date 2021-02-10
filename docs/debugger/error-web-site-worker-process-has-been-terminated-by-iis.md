@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870897"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
 デバッガーが Web サイト上のコードの実行を停止しました。 このため、インターネット インフォメーション サービス (IIS: Internet Information Services) はワーカー プロセスが応答を停止したと見なしました。 したがって、IIS がワーカー プロセスを終了しました。
@@ -32,7 +32,7 @@ ms.locfileid: "90852414"
 
    1. **[スタート]** ボタンをクリックし、 **[コントロール パネル]** をクリックします。
 
-   2. **コントロール パネル**で必要に応じて **[クラシック表示に切り替える]** を選択し、 **[管理ツール]** をダブルクリックします。
+   2. **コントロール パネル** で必要に応じて **[クラシック表示に切り替える]** を選択し、 **[管理ツール]** をダブルクリックします。
 
 2. **[管理ツール]** ウィンドウで、 **[インターネット インフォメーション サービス (IIS) マネージャー]** をダブルクリックします。
 

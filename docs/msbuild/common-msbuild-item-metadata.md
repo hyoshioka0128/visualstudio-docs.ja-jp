@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 152967fb99442b58d96016e10d8899b57ef35bf6
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 8dda627f748773bc4cb5598b133ac05597ffe1d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839310"
 ---
 # <a name="common-msbuild-item-metadata"></a>一般的な MSBuild 項目メタデータ
 
@@ -30,7 +30,7 @@ ms.locfileid: "92796591"
 
 | 項目メタデータ | SDK | 説明 |
 |---------------| ------- | -------------|
-|%(Link)| すべて |Visual Studio プロジェクト システムでは、`Link` メタデータ (存在する場合) を使用して、プロジェクト ツリーに表示される内容を変更します。 **ソリューション エクスプローラー** で、別の論理フォルダー構造にファイルを置くことができます。<br />さらに、それがコピーされる項目の 1 つである場合、`AssignTargetPath` タスクでは、出力ディレクトリ内のどこにファイルをコピーするか決定するために `Link` が参照されます。|
+|%(Link)| すべて |Visual Studio プロジェクト システムでは、`Link` メタデータ (存在する場合) を使用して、プロジェクト ツリーに表示される内容を変更します。**ソリューション エクスプローラー** で、別の論理フォルダー構造にファイルを置くことができます。<br />さらに、それがコピーされる項目の 1 つである場合、`AssignTargetPath` タスクでは、出力ディレクトリ内のどこにファイルをコピーするか決定するために `Link` が参照されます。|
 |%(LinkBase)| .NET Core SDK | 項目のグループに対する `Link` メタデータ用に使うフォルダーを設定するために使用されます。 |
 
 ## <a name="see-also"></a>関連項目

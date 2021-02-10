@@ -3,18 +3,18 @@ title: Azure App Service に ASP.NET Core コンテナーをデプロイする
 description: Visual Studio コンテナー ツールを使用し、Docker コンテナーの ASP.NET Core Web アプリを Azure App Service にデプロイする方法について説明します
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: c0f45f14bc8b363a0c7c4e298effa67c5fccde18
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859646"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用した Azure App Service への ASP.NET Core コンテナーのデプロイ
 
@@ -30,7 +30,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 - "ASP.NET および Web 開発" ワークロードと共に、最新バージョンの [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) をインストールする
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) と *ASP.NET と Web 開発*ワークロード。
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) と *ASP.NET と Web 開発* ワークロード。
 ::: moniker-end
 - [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) のインストール
 
@@ -61,7 +61,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 
 ::: moniker range="vs-2017"
 
-1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
+1. **ソリューション エクスプローラー** で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
 1. 発行先ダイアログで、 **[App Service Linux]** または **[App Service]** を選択します。 これは、Web サーバーをホストするオペレーティング システムです。
 1. App Service にのみ発行するか、App Service と Azure Container Registry (ACR) の両方に発行できます。 Azure Container Registry (ACR) でコンテナーを発行するには、 **[Create new App Service for containers]\(コンテナー用に新しい App Service を作成する\)** を選択し、 **[発行]** をクリックします。
 
@@ -83,10 +83,10 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 
 1. リソース グループやコンテナー レジストリなど、選択したすべての詳細が含まれる発行プロファイルが保存されます。
 
-1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー**でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
+1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー** でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
 :::moniker-end
 :::moniker range=">=vs-2019"
-1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
+1. **ソリューション エクスプローラー** で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
 1. **[発行]** ダイアログで、**Azure** をターゲットとして選択します。
 
    ![発行ウィザードのスクリーンショット](media/deploy-app-service/publish-choices.png)
@@ -121,7 +121,7 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 
 1. リソース グループやアプリ サービスなど、選択したすべての詳細が含まれる発行プロファイルが保存されます。
 
-1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー**でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
+1. 同じ発行プロファイルでもう一度デプロイするには、 **[発行]** ボタンか **[Web 発行アクティビティ]** ウィンドウの **[発行]** ボタンを使用するか、**ソリューション エクスプローラー** でプロジェクトを右クリックし、コンテキストメニューで **[発行]** 項目を選択します。
 :::moniker-end
 
 ## <a name="view-container-settings"></a>コンテナー設定を表示する

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 49739a0c07426329dc20f7fd459febcc70866ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729172"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866061"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>割り当てフック関数と C ランタイムのメモリ割り当て
 割り当てフック関数に課せられている非常に重大な制限は、`_CRT_BLOCK` ブロックを明示的に無視する必要があることです。 これらのブロックは、内部メモリを割り当てる C ランタイム ライブラリ関数を呼び出した場合に、C ランタイム ライブラリ関数によって内部的に行われるメモリ割り当てです。 割り当てフック関数の先頭に次のコードを追加することで、`_CRT_BLOCK` ブロックを無視できます。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f6c236d306d952785e4d1974b5a31e8040e74b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870845"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>エラー :ワークグループ リモート ログオン エラー
 このエラーには、次のメッセージが表示されます。

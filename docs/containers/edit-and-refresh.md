@@ -3,18 +3,18 @@ title: ローカルの Docker コンテナーでアプリをデバッグする |
 description: 編集と更新を使用して、ローカルの Docker コンテナーで実行されているアプリに変更を加え、デバッグのブレークポイントを設定する方法について説明します。
 ms.author: ghogen
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: de7065ebdf5426077418e50d2c03118de9f9d68f
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729302"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867634"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>ローカルの Docker コンテナーでのアプリのデバッグ
 

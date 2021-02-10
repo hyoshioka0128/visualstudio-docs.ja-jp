@@ -13,15 +13,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe0fc33c142c1bc70655817f833ae7c80fc628e7
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8ecb8a0a3c725403d57769090229f690281026a1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871508"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>エラー :Microsoft Visual Studio リモート デバッグ モニター (MSVSMON.EXE) は、リモート コンピューター上では実行されていません。
 このエラー メッセージは、Visual Studio がリモート コンピューター上で Visual Studio リモート デバッグ モニターの適切なインスタンスを見つけることができなかったことを示します。 リモート デバッグを行うには、Visual Studio リモート デバッグ モニターをインストールする必要があります。 リモート デバッガーのダウンロードと設定については、「[リモート デバッグ](../debugger/remote-debugging.md)」を参照してください。
@@ -70,7 +70,7 @@ ms.locfileid: "90852577"
  リモート デバッグを別の時点で実行するか、ネットワークでの作業を別の時点にスケジュールし直す必要がある場合があります。
 
 ## <a name="more-help"></a>その他のヘルプ
- コマンド ライン スイッチなど、その他のリモート デバッガーのヘルプを表示するには、リモート デバッガー ウィンドウで **[ヘルプ] > [使用法]** をクリックします。 開いていない場合は、次の行を**エクスプローラー** ウィンドウにコピーして、Web ページを表示できます。 (\<Visual Studio installation directory> を Visual Studio のインストールの場所に置き換える必要があります)。
+ コマンド ライン スイッチなど、その他のリモート デバッガーのヘルプを表示するには、リモート デバッガー ウィンドウで **[ヘルプ] > [使用法]** をクリックします。 開いていない場合は、次の行を **エクスプローラー** ウィンドウにコピーして、Web ページを表示できます。 (\<Visual Studio installation directory> を Visual Studio のインストールの場所に置き換える必要があります)。
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
 

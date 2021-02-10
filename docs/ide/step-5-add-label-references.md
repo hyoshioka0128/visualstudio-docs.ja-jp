@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a4286feb778e17b345f964b1b7ccca5343e461
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a009f5667f2eb01b22c45c9439a582d2319e6df9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868973"
 ---
 # <a name="step-5-add-label-references"></a>手順 5: ラベルの参照の追加
 プログラムでは、プレーヤーがどのラベル コントロールをクリックしたかを追跡する必要があります。 現在のところ、プレーヤーが選択したすべてのラベルが表示されます。 しかし、次のように変更します。 1 つ目のラベルがクリックされると、プログラムではラベルのアイコンを表示します。 2 つ目のラベルがクリックされると、一時的に両方のアイコンを表示した後に、再びアイコンを非表示にします。 *参照変数* を使用して、1 回目および 2 回目にどのラベル コントロールがクリックされたかを追跡します。
