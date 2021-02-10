@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940918"
 ---
 # <a name="ribbon-designer"></a>リボン デザイナー
   リボン デザイナーは、ビジュアルなデザイン キャンバスです。 リボンデザイナーを使用して、Microsoft Office アプリケーションのリボンにカスタムタブ、グループ、およびコントロールを追加します。
@@ -145,9 +145,9 @@ ms.locfileid: "97527998"
 |**ButtonGroup**|1 つ以上のボタン、トグル ボタン、メニュー、分割ボタン、ギャラリを含むグループ。 ボタン グループは、グループまたはメニューに追加できます。|
 |**CheckBox**|オンまたはオフにしてオプションの有効/無効を切り換えるボックス。|
 |**ComboBox**|リスト ボックスが付属したエディット ボックス。 ユーザーは、選択内容を入力したり、選択したりできます。 ボックスには、現在の選択項目が表示されます。 プロパティを使用して、 <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> リボンが Office アプリケーションに読み込まれる前または後に、実行時に項目を追加および削除します。|
-|**DropDown**|ユーザーが選択できる項目の一覧。 ユーザーがドロップダウン リストに新しい項目を入力することはできません。<br /><br /> 一覧に項目を追加するには、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> プロパティを使用します。 項目の追加や削除は、実行時に行うことができます。<br /><br /> 一覧にボタンを追加するには、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> プロパティを使用します。 ただし、リボンが Office アプリケーションに読み込まれた後は、実行時にボタンを追加したり削除したりすることはできません。|
+|**リスト**|ユーザーが選択できる項目の一覧。 ユーザーがドロップダウン リストに新しい項目を入力することはできません。<br /><br /> 一覧に項目を追加するには、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> プロパティを使用します。 項目の追加や削除は、実行時に行うことができます。<br /><br /> 一覧にボタンを追加するには、<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> プロパティを使用します。 ただし、リボンが Office アプリケーションに読み込まれた後は、実行時にボタンを追加したり削除したりすることはできません。|
 |**EditBox**|ユーザーがテキストを入力できるボックス。|
-|**[ギャラリー]**|ユーザーが選択できる項目を配列やグリッドで視覚的に示すメニュー。 メニューの選択項目のレイアウトを調整できます。 ギャラリの項目やボタンを表示する行や列の数を指定するには、<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> プロパティと <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> プロパティを使用します。|
+|**デザイン**|ユーザーが選択できる項目を配列やグリッドで視覚的に示すメニュー。 メニューの選択項目のレイアウトを調整できます。 ギャラリの項目やボタンを表示する行や列の数を指定するには、<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> プロパティと <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> プロパティを使用します。|
 |**Label**|リボン上のコントロールを識別するために使用できるテキストです。|
 |**Menu**|ドロップダウン リスト。次のいずれかのコントロールを含めることができます。<br /><br /> -ボタン<br />-チェックボックス<br />-ギャラリー<br />-メニュー<br />-分割ボタン<br />-トグルボタン<br />-Separator<br /><br /> リボン デザイナーのメニューにコントロールを追加するには、メニューの下向き矢印をクリックし、メニューのデザイン サーフェイスを開きます。 次に、[ **ツールボックス** ] からリボンコントロールをメニューにドラッグします。 コントロールを並べ替えるには、コントロールを目的の位置にドラッグします。<br /><br /> リボンが Office アプリケーションに読み込まれた後にコントロールを追加するには、 <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> リボンが読み込まれる前に、プロパティを **true** に設定する必要があります。 この方法の詳細については、「 [リボンオブジェクトモデルの概要](../vsto/ribbon-object-model-overview.md)」を参照してください。|
 |**Separator**|一覧内の項目を分割するために使用する細いバー。 グループに追加すると、バーは垂直に表示されます。 メニュー追加すると、バーは水平に表示されます。|
@@ -177,7 +177,7 @@ ms.locfileid: "97527998"
 
  すべてのコントロールに適用されるキーボード ショートカットを、次の表に示します。
 
-|アクション|キーボード ショートカット|
+|操作|ショートカット キー|
 |------------|-----------------------|
 |一覧内の直前のコントロールの前に、コントロールを移動します。|**Ctrl** +**上**<br /><br /> **Ctrl** +**左**|
 |一覧内の次のコントロールの後ろに、コントロールを移動します。|**Ctrl** +**ダウン**<br /><br /> **Ctrl** +**右**|
@@ -193,7 +193,7 @@ ms.locfileid: "97527998"
 
  Microsoft Office メニュー、<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>、および <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> にのみ適用されるキーボード ショートカットを、次の表に示します。
 
-|アクション|キーボード ショートカット|
+|操作|ショートカット キー|
 |------------|-----------------------|
 |ドロップダウン パネルが開いていて、パネル上で選択されているコントロールがある場合は、その親コントロールを選択します。|**Left**|
 |ドロップダウン パネルが開いていて、親コントロールが選択されている場合は、ドロップダウン パネルを閉じます。|**Left**|

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dda8e7c5538b0517c181a451072c4f8a9544965
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9edee5f8128933b2ecb36434a64d39c40d3d799f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941308"
 ---
 # <a name="properties-of-domain-roles"></a>ドメイン ロールのプロパティ
 次の表のプロパティは、ドメインロールに関連付けられています。 ドメインロールの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [Domain-Specific 言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -33,9 +33,9 @@ ms.locfileid: "97362341"
 |削除の伝達|`True` 関連付けられたリンクが削除されたときにこのロールを担う要素を削除する場合は。|`True` 埋め込みロールのターゲット。<br /><br /> `False` 他のロールの場合。|
 |プロパティ名|ロールプレーヤーのコードで生成されたプロパティの名前。 この名前に空白を含めることはできません。|このロールがゼロ対一または一対一の複数要素の接続性を持つ場合の、反対側のロールの名前。それ以外の場合は、反対側のロールの複数化名。|
 |ロールプレーヤー|リレーションシップでこのロールを再生できる要素のドメインクラス。 このプロパティは読み取り専用です。|このロールのロールプレーヤーのドメインクラス。|
-|メモ|ドメインロールに関連付けられている非公式のメモ。|<なし\>|
+|ノート|ドメインロールに関連付けられている非公式のメモ。|<なし\>|
 |カテゴリ|生成されたデザイナーの [ **プロパティ** ] ウィンドウに生成されたプロパティが表示されるカテゴリ。 このプロパティが空の場合、生成されたプロパティは [その **他** ] カテゴリの下に表示されます。|<なし\>|
-|説明|コードをドキュメント化するために使用される説明。生成されたデザイナーの UI で使用されます。<br /><br /> この説明は、ロールプレーヤークラスで生成されたプロパティの IntelliSense ツールヒントに表示されます。|`Description for`*ロールの完全な名前*|
+|Description|コードをドキュメント化するために使用される説明。生成されたデザイナーの UI で使用されます。<br /><br /> この説明は、ロールプレーヤークラスで生成されたプロパティの IntelliSense ツールヒントに表示されます。|`Description for`*ロールの完全な名前*|
 |表示名|生成されたデザイナーに表示されるドメインロールの名前。|Name プロパティの調整された値。|
 |ヘルプ キーワード|ドメインロールの F1 ヘルプのインデックス作成に使用される省略可能なキーワードです。|\<none>|
 |プロパティの表示名|生成されたデザイナーに表示される、生成されたロールプロパティの名前。|プロパティ名プロパティの調整された値。|

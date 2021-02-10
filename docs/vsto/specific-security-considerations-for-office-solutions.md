@@ -17,15 +17,15 @@ helpviewer_keywords:
 - security [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0da77067931d35ee63a9ccc9b0de85752157772b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940827"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office ソリューションに関する特定のセキュリティの考慮事項
   Microsoft .NET Framework および Microsoft Office には、Office ソリューションをセキュリティ上の脅威から保護するためのセキュリティ機能が備わっています。 このトピックでは、このような脅威のいくつかについて説明し、脅威対策に関する推奨事項を示します。 また、Microsoft Office のセキュリティ設定が Office ソリューションに及ぼす影響についても説明します。
@@ -39,7 +39,7 @@ ms.locfileid: "97524291"
 
  このような攻撃を可能にするには、コード自体が、信頼できない可能性のあるデータに基づいて決定を下すように作成されていなければなりません。 たとえば、非表示のセルにデータベース サーバーの名前を含むワークシートを作成するとします。 ユーザーがこのワークシートを ASPX ページに送信すると、SQL 認証およびハードコーディングされた SA パスワードを使用してそのサーバーに接続しようとします。 攻撃者は、非表示のセルの内容を別のコンピューター名に置き換え、SA パスワードを取得する可能性があります。 このような問題を回避するために、絶対にパスワードはハードコーディングしないでください。また、サーバーにアクセスする前に、必ず、既知の信頼できるサーバーを示す内部リストでそのサーバー ID を確認してください。
 
-### <a name="recommendations"></a>推奨事項
+### <a name="recommendations"></a>Recommendations
 
 - 入力内容およびデータのソースが、ユーザー、ドキュメント、データベース、Web サービス、その他のソースのどれであるかを常に確認してください。
 

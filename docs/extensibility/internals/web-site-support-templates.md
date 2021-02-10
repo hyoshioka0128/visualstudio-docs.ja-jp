@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7bb3d669dadf7c33fa81231adf26ae30e999c51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487856"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940034"
 ---
 # <a name="web-site-support-templates"></a>Web サイト サポートのテンプレート
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Web サイトプロジェクトと項目テンプレートでは、再利用可能でカスタマイズ可能な Web サイトプロジェクトと項目スタブが提供されます。これにより、新しい Web サイトプロジェクトと項目を最初から作成する必要がなくなり、開発プロセスが高速化されます。 テンプレートの詳細につい [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ては、「 [プロジェクトと項目テンプレートの作成](../../ide/creating-project-and-item-templates.md)」を参照してください。
@@ -186,5 +186,5 @@ ms.locfileid: "97487856"
 
      新しいマスターページの内容とその依存ファイル (存在する場合) を決定するテンプレートファイル。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [Web サイト サポート](../../extensibility/internals/web-site-support.md)

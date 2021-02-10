@@ -14,15 +14,15 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], threading support
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524198"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940801"
 ---
 # <a name="threading-support-in-office"></a>Office でのスレッドのサポート
   この記事では、Microsoft Office オブジェクトモデルでのスレッド処理のサポートについて説明します。 Office オブジェクトモデルはスレッドセーフではありませんが、Office ソリューションで複数のスレッドを使用することができます。 Office アプリケーションは、コンポーネントオブジェクトモデル (COM) サーバーです。 COM を使用すると、クライアントは任意のスレッドで COM サーバーを呼び出すことができます。 スレッドセーフでない COM サーバーの場合、COM は同時呼び出しをシリアル化して、サーバー上で一度に1つの論理スレッドだけが実行されるようにするメカニズムを提供します。 このメカニズムは、シングルスレッドアパートメント (STA) モデルと呼ばれています。 呼び出しはシリアル化されるため、サーバーがビジー状態であるかバックグラウンドスレッドで他の呼び出しを処理しているときに、呼び出し元が一定期間ブロックされることがあります。
@@ -38,7 +38,7 @@ ms.locfileid: "97524198"
 
 - コンカレンシー
 
-- Synchronization
+- 同期
 
 - マーシャリング
 

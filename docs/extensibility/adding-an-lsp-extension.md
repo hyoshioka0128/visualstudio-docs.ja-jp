@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598147"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939293"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能の追加
 
@@ -47,48 +47,48 @@ Visual Studio での LSP とそのサポートの目的は、Visual Studio 製�
 
 Message | Visual Studio でのサポートがある
 --- | ---
-initialize | はい
-初期化済み | はい
-shutdown | はい
-exit | はい
-$/cancelrequest | はい
-window/showMessage | はい
-window/showMessageRequest | はい
-window/logMessage | はい
+initialize | yes
+初期化済み | yes
+shutdown | yes
+exit | yes
+$/cancelrequest | yes
+window/showMessage | yes
+window/showMessageRequest | yes
+window/logMessage | yes
 テレメトリ/イベント |
 クライアント/registerCapability |
 クライアント/unregisterCapability |
-ワークスペース/didChangeConfiguration | はい
-ワークスペース/didChangeWatchedFiles | はい
-ワークスペース/シンボル | はい
-ワークスペース/executeCommand | はい
-ワークスペース/applyEdit | はい
-textDocument/publishDiagnostics | はい
-textDocument/didOpen | はい
-textDocument/didChange | はい
+ワークスペース/didChangeConfiguration | yes
+ワークスペース/didChangeWatchedFiles | yes
+ワークスペース/シンボル | yes
+ワークスペース/executeCommand | yes
+ワークスペース/applyEdit | yes
+textDocument/publishDiagnostics | yes
+textDocument/didOpen | yes
+textDocument/didChange | yes
 textDocument/保存 |
 textDocument/は、 |
-textDocument/didSave | はい
-textDocument/didClose | はい
-textDocument/補完機能 | はい
-完了/解決 | はい
-textDocument/ホバー | はい
-textDocument/signatureHelp | はい
-textDocument/references | はい
-textDocument/documentHighlight | はい
-textDocument/documentSymbol | はい
-textDocument/書式設定 | はい
-textDocument/rangeFormatting 設定 | はい
+textDocument/didSave | yes
+textDocument/didClose | yes
+textDocument/補完機能 | yes
+完了/解決 | yes
+textDocument/ホバー | yes
+textDocument/signatureHelp | yes
+textDocument/references | yes
+textDocument/documentHighlight | yes
+textDocument/documentSymbol | yes
+textDocument/書式設定 | yes
+textDocument/rangeFormatting 設定 | yes
 textDocument/onTypeFormatting 設定 |
-textDocument/定義 | はい
-textDocument/codeAction | はい
+textDocument/定義 | yes
+textDocument/codeAction | yes
 textDocument/codeLens |
 codeLens/解決 |
 textDocument/documentLink |
 documentLink/解決 |
-textDocument/名前の変更 | はい
+textDocument/名前の変更 | yes
 
-## <a name="get-started"></a>はじめに
+## <a name="get-started"></a>作業の開始
 
 > [!NOTE]
 > Visual Studio 2017 バージョン15.8 以降では、共通言語サーバープロトコルのサポートが Visual Studio に組み込まれています。 プレビュー [言語サーバークライアントの VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) バージョンを使用して LSP 拡張機能をビルドした場合、バージョン15.8 以降にアップグレードすると、その拡張機能が動作しなくなります。 LSP 拡張機能を再び動作させるには、次の手順を実行する必要があります。
@@ -109,7 +109,7 @@ textDocument/名前の変更 | はい
 
 LSP ベースの言語サーバーを使用して言語サービス拡張機能を作成するには、まず、VS のインスタンス用に **Visual Studio 拡張機能の開発** ワークロードがインストールされていることを確認します。
 
-次に、[ファイル] [新規] [ **File**  >  **プロジェクト**] [  >  **Visual C#**] [拡張性] [  >  **Extensibility**  >  **vsix プロジェクト**] の順に移動して、新しい VSIX プロジェクトを作成します。
+次に、[ファイル] [新規] [   >  **プロジェクト**] [  >  **Visual C#**] [拡張性] [  >    >  **vsix プロジェクト**] の順に移動して、新しい VSIX プロジェクトを作成します。
 
 ![vsix プロジェクトの作成](media/lsp-vsix-project.png)
 
@@ -221,7 +221,7 @@ namespace MockLanguageExtension
 
 "[アクティブな非同期](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true)" は、 [startasync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true)デリゲートを呼び出すことによって、最終的に呼び出されるメソッドです。 言語サーバーを起動して接続を確立するロジックが含まれています。 サーバーへの書き込みとサーバーからの読み取りのためのストリームを含む接続オブジェクトを返す必要があります。 ここでスローされた例外は、Visual Studio の情報バーメッセージを使用してキャッチされ、ユーザーに表示されます。
 
-### <a name="activation"></a>アクティベーション
+### <a name="activation"></a>ライセンス認証
 
 言語クライアントクラスが実装されたら、それに対して2つの属性を定義して、Visual Studio への読み込み方法とアクティブ化方法を定義する必要があります。
 
@@ -294,7 +294,7 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 
 次の手順に従って、LSP 言語サービス拡張機能に設定のサポートを追加します。
 
-1. 設定とその既定値を含む JSON ファイル (たとえば、 *MockLanguageExtensionSettings.js*) をプロジェクトに追加します。 例:
+1. 設定とその既定値を含む JSON ファイル (たとえば、 *MockLanguageExtensionSettings.js*) をプロジェクトに追加します。 次に例を示します。
 
     ```json
     {
@@ -344,7 +344,7 @@ LSP 言語サーバーのサポートを追加する場合、Visual Studio で�
 
 1. ユーザーは、サーバーが所有しているファイルが含まれているワークスペースを開きます。
 2. ユーザーは、 *VSWorkspaceSettings.js* と呼ばれる *vs* フォルダーにファイルを追加します。
-3. ユーザーは、サーバーが提供する設定について、ファイルの *VSWorkspaceSettings.js* に行を追加します。 例:
+3. ユーザーは、サーバーが提供する設定について、ファイルの *VSWorkspaceSettings.js* に行を追加します。 次に例を示します。
 
     ```json
     {
@@ -482,7 +482,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 Visual Studio で LSP クライアント API を使用してサンプル拡張機能のソースコードを表示するには、「VSSDK-拡張性-サンプル [LSP サンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol)」を参照してください。
 
-## <a name="faq"></a>よく寄せられる質問
+## <a name="faq"></a>FAQ
 
 **LSP 言語サーバーを補完して Visual Studio で豊富な機能サポートを提供するカスタムプロジェクトシステムを構築したいと思います。**
 

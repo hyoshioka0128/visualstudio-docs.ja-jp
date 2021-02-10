@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940346"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package &gt; 要素 (ブートストラップ)
 要素は、 `Package` パッケージファイル内の最上位レベルの XML 要素です。
@@ -149,7 +149,7 @@ ms.locfileid: "94350739"
 |--------------------| - |
 | `Culture` | 必須。 使用する言語を決定する、このパッケージのカルチャを定義します。 この属性は要素のキーであり `Strings` 、インストール時に製品名とエラーメッセージのカルチャ固有の文字列を一覧表示します。 |
 | `Name` | 必須。 などのツール内で開発者に表示されるパッケージの名前 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 この属性は、要素に対するキーです。この要素には、のプロパティおよび `Strings` `String` プロパティと `Name` `Culture` 一致するように、プロパティとプロパティが設定された要素が含まれている必要があり `Name` `Culture` `Package` ます。 |
-| `LicenseAgreement` | 任意。 End-User 使用許諾契約書 (EULA) を含む配布パッケージ内のファイルの名前を指定します。  このファイルには、プレーンテキスト ( *.txt* ) またはリッチテキスト形式を使用できます。 ( *.rtf* ) |
+| `LicenseAgreement` | 任意。 End-User 使用許諾契約書 (EULA) を含む配布パッケージ内のファイルの名前を指定します。  このファイルには、プレーンテキスト (*.txt*) またはリッチテキスト形式を使用できます。 (*.rtf*) |
 
 ## <a name="example"></a>例
  .NET Framework 2.0 を再配布するための完全なパッケージファイルのコード例を次に示します。

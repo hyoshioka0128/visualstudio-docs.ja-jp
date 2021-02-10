@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 546a76d1533efaef28ddafb14b04514f64e9d4f9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 9ebc01c76c17319ebcfe2b61c06a6f2365a68122
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941620"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]シェルは、の統合の主要なエージェントです [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 シェルには、Vspackage が共通のサービスを共有できるようにするために必要な機能が用意されています。 のアーキテクチャ目標 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は vspackage の主要機能を提供することであるため、シェルは基本的な機能を提供し、コンポーネント vspackage 間の相互通信をサポートするフレームワークです。
@@ -80,7 +80,7 @@ ms.locfileid: "97488051"
 
 - **ツールボックス**
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

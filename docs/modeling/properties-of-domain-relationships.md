@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c5db50432947b99a2667280fe7861e7acd95ac
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 6fb50018dccbe03512c8ab6e5f07c17dbcee307d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941334"
 ---
 # <a name="properties-of-domain-relationships"></a>ドメイン リレーションシップのプロパティ
 次の表のプロパティは、ドメインリレーションシップに関連付けられています。 ドメインリレーションシップの詳細については、「 [モデル、クラス、およびリレーションシップ](../modeling/understanding-models-classes-and-relationships.md)について」を参照してください。 これらのプロパティの使用方法の詳細については、「 [Domain-Specific 言語のカスタマイズと拡張](../modeling/customizing-and-extending-a-domain-specific-language.md)」を参照してください。
@@ -33,8 +33,8 @@ ms.locfileid: "97362458"
 |埋め込み|の場合 `True` 、ドメインリレーションシップは埋め込みリレーションシップです。 の場合 `False` 、リレーションシップは参照リレーションシップです。|\<both>|
 |名前|ドメインリレーションシップの名前。|現在の名前|
 |名前空間|ドメインリレーションシップに関連付けられている名前空間。|現在の名前空間|
-|メモ|ドメインリレーションシップに関連付けられている非公式のメモ。|\<none>|
-|説明|コードをドキュメント化するために使用される説明。生成されたデザイナーの UI で使用されます。|\<none>|
+|ノート|ドメインリレーションシップに関連付けられている非公式のメモ。|\<none>|
+|Description|コードをドキュメント化するために使用される説明。生成されたデザイナーの UI で使用されます。|\<none>|
 |表示名|ドメインリレーションシップの生成されたデザイナーに表示される名前。|\<none>|
 |ヘルプ キーワード|ドメインリレーションシップの F1 ヘルプのインデックスを作成するために使用される省略可能なキーワードです。|\<none>|
 
