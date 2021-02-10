@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69c8dbe1022ee0b1b2ff034d2b83b947c8fb3df6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12a1dfd610c86966aa22444924098051c4b50d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934091"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
 保留中のブレークポイント (まだバインドされていないブレークポイント) の状態を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80713996"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_PENDING_BP_STATE { 
+enum enum_PENDING_BP_STATE { 
    PBPS_NONE     = 0x0000,
    PBPS_DELETED  = 0x0001,
    PBPS_DISABLED = 0x0002,
@@ -38,7 +38,7 @@ typedef DWORD PENDING_BP_STATE;
 ```
 
 ```csharp
-public enum enum_PENDING_BP_STATE { 
+public enum enum_PENDING_BP_STATE { 
    PBPS_NONE     = 0x0000,
    PBPS_DELETED  = 0x0001,
    PBPS_DISABLED = 0x0002,
@@ -59,10 +59,10 @@ public enum enum_PENDING_BP_STATE { 
  `PBPS_ENABLED`\
  保留中のブレークポイントが有効であることを示します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `state` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体のメンバーとして使用します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

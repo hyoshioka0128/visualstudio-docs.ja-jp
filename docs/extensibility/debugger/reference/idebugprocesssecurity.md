@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6807ff64d8acf44551fa12fcb79199d3817373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933025"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` は、プロセスへのアタッチが安全でないことをユーザーに警告するために、ポート供給業者によって実装されます。
@@ -37,7 +37,7 @@ IDebugProcessSecurity : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスを実装して警告を表示し、アタッチしているプロセスが安全でないと見なされた場合にユーザーがキャンセルできるようにします。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -47,5 +47,5 @@ IDebugProcessSecurity : IUnknown
 ## <a name="see-also"></a>関連項目
 - [ポート](../../../extensibility/debugger/ports.md)
 - [ポート サプライヤー](../../../extensibility/debugger/port-suppliers.md)
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

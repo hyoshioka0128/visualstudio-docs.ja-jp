@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933337"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 このインターフェイスは、ブレークポイントでの停止などの重要なデバッグ情報と、デバッグメッセージなどの重要でない情報の両方を通知するために使用されます。
@@ -44,7 +44,7 @@ IDebugEvent2 : IUnknown
 ## <a name="remarks"></a>解説
  [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)など、より具体的なイベントインターフェイスは IDebugEvent2 インターフェイスから派生していませんが、代わりにと同じオブジェクトに個別のインターフェイスとして実装され `IDebugEvent2` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -52,6 +52,6 @@ IDebugEvent2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

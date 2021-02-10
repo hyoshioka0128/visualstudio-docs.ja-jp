@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 1876e06348d60f8a960b352525fd72ad06795101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931735"
 ---
 # <a name="how-to-localize-aspx-markup"></a>方法: ASPX マークアップをローカライズする
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) ページは通常、ハードコーディングされた文字列値を使用します。 これらの文字列をローカライズするには、ローカライズされたリソースを参照する式で置き換えます。
@@ -33,9 +33,9 @@ ms.locfileid: "96304663"
 
      コードではなくマークアップのみをローカライズする場合は、グローバルリソースファイルプロジェクト項目を追加します。 コードとマークアップをローカライズする場合は、[リソースファイル] プロジェクト項目を追加します。
 
-    1. グローバルリソースファイルを追加するには、**ソリューションエクスプローラー** で、SharePoint プロジェクトアイテムのショートカットメニューを開き、[ **Add**  >  **新しいアイテム** の追加] を選択します。 [SharePoint **2010** ] ノードで、[ **グローバルリソースファイル** ] テンプレートを選択します。
+    1. グローバルリソースファイルを追加するには、**ソリューションエクスプローラー** で、SharePoint プロジェクトアイテムのショートカットメニューを開き、[   >  **新しいアイテム** の追加] を選択します。 [SharePoint **2010** ] ノードで、[ **グローバルリソースファイル** ] テンプレートを選択します。
 
-    2. リソースファイルを追加するには、**ソリューションエクスプローラー** で、SharePoint プロジェクトアイテムのショートカットメニューを開き、[ **Add**  >  **新しいアイテム** の追加] を選択します。 **Visual Basic** または **Visual C#** のいずれかのノードで、[**リソースファイル**] テンプレートを選択します。
+    2. リソースファイルを追加するには、**ソリューションエクスプローラー** で、SharePoint プロジェクトアイテムのショートカットメニューを開き、[   >  **新しいアイテム** の追加] を選択します。 **Visual Basic** または **Visual C#** のいずれかのノードで、[**リソースファイル**] テンプレートを選択します。
 
     > [!NOTE]
     > [配置の種類] プロパティを有効にするには、SharePoint プロジェクト項目にリソースファイルを追加してください。 このプロパティは、後で必要になります。 ソリューションに SharePoint プロジェクトアイテムがない場合は、空の SharePoint プロジェクトを追加して、既定の *Elements.xml* ファイルを削除できます。
@@ -62,7 +62,7 @@ ms.locfileid: "96304663"
     </asp:Content>
     ```
 
-     から
+     を
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

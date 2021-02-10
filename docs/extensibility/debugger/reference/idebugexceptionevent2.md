@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbd53d56b21886e972b33c219367edd603cbf0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933116"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 デバッグエンジン (DE) は、現在実行中のプログラムで例外がスローされた場合に、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
@@ -44,7 +44,7 @@ IDebugExceptionEvent2 : IUnknown
 |[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|デバッグエンジン (DE) が、実行の再開時にデバッグ対象のプログラムにこの例外を渡すオプションをサポートするかどうかを決定します。|
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|例外を、実行の再開時にデバッグされるプログラムに渡すか、または例外を破棄する必要があるかを指定します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -55,7 +55,7 @@ IDebugExceptionEvent2 : IUnknown
  イベントを送信する前に、DE は、前に [setexception](../../../extensibility/debugger/reference/idebugengine2-setexception.md)を呼び出したことによって、この例外イベントが最初の機会または第2回の例外として指定されているかどうかを確認します。 初回例外として指定されている場合、 `IDebugExceptionEvent2` イベントは SDM に送信されます。 そうでない場合、DE は例外を処理する機会をアプリケーションに提供します。 例外ハンドラーが指定されておらず、例外が第2の例外として指定されている場合、 `IDebugExceptionEvent2` イベントは SDM に送信されます。 それ以外の場合、DE はプログラムの実行を再開し、オペレーティングシステムまたはランタイムは例外を処理します。
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

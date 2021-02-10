@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55162def18d2295e0767a3999ffde75d71e1233d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 2ba7234ee0c5a4ab8096c020cb44345f17830540
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437737"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931215"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod アクティビティ デザイナー
 
@@ -29,21 +29,21 @@ ms.locfileid: "94437737"
 
 ### <a name="use-the-invokemethod-activity-designer"></a>InvokeMethod アクティビティデザイナーの使用
 
-**ツールボックス** の [ **プリミティブ** ] カテゴリで、 **InvokeMethod** アクティビティデザイナーにアクセスします。 **InvokeMethod** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティが通常配置されているワークフローデザイナー画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除 <xref:System.Activities.Statements.InvokeMethod> すると、既定値の InvokeMethod を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **InvokeMethod** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**ツールボックス** の [**プリミティブ**] カテゴリで、 **InvokeMethod** アクティビティデザイナーにアクセスします。 **InvokeMethod** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが通常配置されているワークフローデザイナー画面 (内など) にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除 <xref:System.Activities.Statements.InvokeMethod> すると、既定値の InvokeMethod を持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 は、 <xref:System.Activities.Activity.DisplayName%2A> **InvokeMethod** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-invokemethod-properties"></a>InvokeMethod プロパティ
 
 次の表は、 <xref:System.Activities.Statements.InvokeMethod> プロパティと、デザイナーでのそれらの使用方法を示しています。 これらのプロパティは、プロパティグリッドで編集できます。また、ワークフローデザイナーサーフェイスで編集することもできます。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.InvokeMethod> アクティビティの表示名。 既定値は InvokeMethod です。<br /><br /> は <xref:System.Activities.Activity.DisplayName%2A> 厳密には必須ではありませんが、1つを使用することをお勧めします。|
-|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|○|アクティビティの実行時に呼び出すメソッドの名前。 呼び出されたメソッドは **パブリック** として宣言されなければなりません。 このプロパティは、デザイナー画面で編集でき、必須です。|
-|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|×|呼び出されたメソッドのパラメーター コレクション。 パラメーターは、メソッド シグネチャ内で出現する順序でコレクションに追加する必要があります。 このプロパティを設定できる [ **パラメーター** ] ダイアログボックスを表示するには、プロパティグリッドの [ **パラメーター** ] フィールドで、省略記号ボタンをクリックします。 [ **引数の作成** ] ボタンをクリックして、パラメーターを追加します。|
-|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|×|メソッド呼び出しの戻り値。|
-|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|○|メソッドが非同期で呼び出されるかどうかを指定します。 既定値は **False** です。|
-|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|×|呼び出すメソッドを格納するオブジェクト。 このプロパティは、デザイナー画面で設定することもできます。<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> および <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> のいずれかを設定する必要があります。|
-|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|×|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> の型。 このプロパティは、デザイナー画面で編集できます。 このプロパティは、メソッド呼び出しが静的である場合にのみ設定する必要があります。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> アクティビティの表示名。 既定値は InvokeMethod です。<br /><br /> は <xref:System.Activities.Activity.DisplayName%2A> 厳密には必須ではありませんが、1つを使用することをお勧めします。|
+|<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|アクティビティの実行時に呼び出すメソッドの名前。 呼び出されたメソッドは **パブリック** として宣言されなければなりません。 このプロパティは、デザイナー画面で編集でき、必須です。|
+|<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|呼び出されたメソッドのパラメーター コレクション。 パラメーターは、メソッド シグネチャ内で出現する順序でコレクションに追加する必要があります。 このプロパティを設定できる [ **パラメーター** ] ダイアログボックスを表示するには、プロパティグリッドの [ **パラメーター** ] フィールドで、省略記号ボタンをクリックします。 [ **引数の作成** ] ボタンをクリックして、パラメーターを追加します。|
+|<xref:System.Activities.Statements.InvokeMethod.Result%2A>|False|メソッド呼び出しの戻り値。|
+|<xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>|True|メソッドが非同期で呼び出されるかどうかを指定します。 既定値は **False** です。|
+|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|呼び出すメソッドを格納するオブジェクト。 このプロパティは、デザイナー画面で設定することもできます。<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> および <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> のいずれかを設定する必要があります。|
+|<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> の型。 このプロパティは、デザイナー画面で編集できます。 このプロパティは、メソッド呼び出しが静的である場合にのみ設定する必要があります。|
 
 パラメーターを C# の **out** パラメーターとして渡すには (たとえば、 `Method1(out myParam))` **InOutArgument** の代わりに **outargument<int>** を使用します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "94437737"
 
 ## <a name="see-also"></a>関連項目
 
-- [プリミティブ](../workflow-designer/primitives-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [[遅延]](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b00e0529c1d2ac7224881067628618251ba03898
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930513"
 ---
 # <a name="control-of-execution"></a>実行の制御
 デバッグエンジン (DE) は、通常、次のいずれかのイベントを最後のスタートアップイベントとして送信します。
@@ -41,11 +41,11 @@ ms.locfileid: "96913881"
 
 5. 関数のステップイン、ステップオーバー、またはその一部を実行することをユーザーが決めた場合、IDE はデバッグセッションに対してプログラムのメソッドの呼び出しを求め `Step` ます。 次に、IDE はステップの単位 (命令、ステートメント、または行) とステップの種類 (関数のステップイン、ステップオーバー、またはアウトするかどうか) を渡します。 ステップが完了すると、DE はデバッグセッションにステップ完了イベントを送信します。これは停止イベントです。
 
-    または
+    \- または -
 
     ユーザーが現在の命令ポインターからの実行を続行することにした場合、IDE はプログラムの **Execute** メソッドを呼び出すようにデバッグセッションに要求します。 プログラムは、次の停止条件に到達するまで実行を再開します。
 
-    または
+    \- または -
 
     デバッグセッションが特定の停止イベントを無視するようになっている場合、デバッグセッションはプログラムの **Continue** メソッドを呼び出します。 プログラムが停止条件を検出したときに関数のステップイン、ステップオーバー、またはログアウトを行っていた場合は、手順を続行します。
 
@@ -59,7 +59,7 @@ ms.locfileid: "96913881"
 
    デバッグパッケージが特定の停止イベントを無視する場合、デバッグパッケージは SDM を呼び出します。これは [IDebugProgram2:: Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)を呼び出します。 停止条件が発生したときに、プログラムが関数にステップイン、ステップオーバー、またはアウトした場合は、手順を続行します。 これは、プログラムがステップ実行状態を維持し、続行する方法がわかっていることを意味します。
 
-   SDM による呼び出しが非同期に行われます `Step` 。これは、sdm が呼び出しを迅速に返すことを期待することを意味します。 **Execute** **Continue** DE が、実行前、または続行する前に、同じスレッド上で SDM を停止イベントを送信すると、 `Step` sdm は応答を停止します。 **Execute** **Continue**
+   SDM による呼び出しが非同期に行われます `Step` 。これは、sdm が呼び出しを迅速に返すことを期待することを意味します。   DE が、実行前、または続行する前に、同じスレッド上で SDM を停止イベントを送信すると、 `Step` sdm は応答を停止します。  
 
 ## <a name="see-also"></a>関連項目
 - [タスクをデバッグする](../../extensibility/debugger/debugging-tasks.md)

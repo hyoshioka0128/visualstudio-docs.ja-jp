@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9472f1ff4105790951ddd687d7e71c3e57fa39da
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c20a92e847f120850d7cbd424cc073018903911d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930825"
 ---
 # <a name="breakpoint-related-methods"></a>ブレークポイントに関連するメソッド
 デバッグエンジン (DE) は、ブレークポイントの設定をサポートしている必要があります。 Visual Studio のデバッグでは、次の種類のブレークポイントをサポートしています。
@@ -38,7 +38,7 @@ ms.locfileid: "96914466"
 
  保留中のブレークポイントを作成および使用するには、 [IDebugEngine2:: CreatePendingBreakpoint ポイント](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) メソッドと [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) インターフェイスの次のメソッドの実装が必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|指定した保留中のブレークポイントをコードの場所にバインドできるかどうかを判断します。|
 |[束縛](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|指定された保留中のブレークポイントを1つまたは複数のコードの場所にバインドします。|
@@ -53,7 +53,7 @@ ms.locfileid: "96914466"
 
  コードの場所にバインドする保留中のブレークポイントには、次の [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) メソッドの実装が必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|ブレークポイントを含む保留中のブレークポイントを取得します。|
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|バインドされたブレークポイントの状態を取得します。|
@@ -63,21 +63,21 @@ ms.locfileid: "96914466"
 
  解決と要求情報には、次の [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) メソッドの実装が必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|解決によって表されるブレークポイントの型を取得します。|
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|ブレークポイントを説明するブレークポイントの解決情報を取得します。|
 
  バインディング中に発生する可能性のあるエラーの解決には、次の [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) メソッドの実装が必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|エラーブレークポイントを含む保留中のブレークポイントを取得します。|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|エラーブレークポイントを説明するブレークポイントエラーの解決方法を取得します。|
 
  また、バインド中に発生する可能性のあるエラーを解決するには、次の [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)メソッドも必要です。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|ブレークポイントの種類を取得します。|
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|ブレークポイントの解決情報を取得します。|

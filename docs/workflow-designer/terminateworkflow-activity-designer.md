@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fc52153ca71320ebe2ebc1e1a12780e37cac08e
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3f37c862768dd0d72ba66d435478faed9bee8ef3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995452"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931488"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow アクティビティ デザイナー
 
@@ -43,7 +43,7 @@ ms.locfileid: "96995452"
 |<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|ワークフローが停止されたときにスローする例外。 このプロパティは、プロパティ グリッドで設定します。|
 |<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|ワークフローが停止された理由。 このプロパティは、プロパティ グリッドで設定します。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Runtime](../workflow-designer/runtime-activity-designers.md)
 - [保持](../workflow-designer/persist-activity-designer.md)

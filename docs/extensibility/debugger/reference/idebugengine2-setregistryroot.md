@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d0d81202-8a4a-4bc3-b297-30a047c5ec60
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: beba304e846126b262c23c0fc8232f79de5fd794
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75e5b66f19e017becc0ee307179e7e9798d357a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933584"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 デバッグエンジン (DE) のレジストリルートを設定します。
@@ -28,13 +28,13 @@ ms.locfileid: "80730875"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT SetRegistryRoot( 
+HRESULT SetRegistryRoot( 
    LPCOLESTR pszRegistryRoot
 );
 ```
 
 ```csharp
-int SetRegistryRoot( 
+int SetRegistryRoot( 
    string pszRegistryRoot
 );
 ```
@@ -47,7 +47,7 @@ int SetRegistryRoot( 
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
 ## <a name="remarks"></a>解説
- このメソッドでは、が [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] レジストリ設定を取得するために使用する代替レジストリルートを指定できます (例: "HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp")。
+ このメソッドでは、が [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] レジストリ設定を取得するために使用する代替レジストリルートを指定できます (例: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp")。
 
 ## <a name="see-also"></a>関連項目
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b87d61586fb4acc360b5f5202b1219199c6a24b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e544e4cebaa4e2e1691f6c175dfa750a1f951abc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930695"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>デバッグエンジンの実装方法を選択する
 実行時アーキテクチャを使用して、デバッグエンジン (DE) 実装戦略を決定します。 デバッグ中のプログラムにデバッグエンジンをインプロセスで作成できます。 Visual Studio セッションデバッグマネージャー (SDM) にデバッグエンジンをインプロセスで作成します。 または、その両方に対してデバッグエンジンをアウトプロセスで作成します。 次のガイドラインは、これら3つの方法のいずれかを選択するのに役立ちます。

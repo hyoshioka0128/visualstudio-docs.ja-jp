@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14cac9d3f761e95b821179137f2efc23ef61b91b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c812117e59ca50e64fa6e987ebbe1d30d8d552c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730274"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933532"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 このメソッドは、列挙体の名前を表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。
@@ -52,4 +52,4 @@ int GetUnderlyingSymbol(
 ## <a name="see-also"></a>関連項目
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
-- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [束縛](../../../extensibility/debugger/reference/idebugbinder-bind.md)
