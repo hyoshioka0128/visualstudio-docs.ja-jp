@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944083"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>検索式の論理演算子と高度な演算子
 
-論理演算子と高度な検索演算子を使用すると、 **ヘルプビューアー**でヘルプコンテンツの検索を絞り込むことができます。
+論理演算子と高度な検索演算子を使用すると、 **ヘルプビューアー** でヘルプコンテンツの検索を絞り込むことができます。
 
 ## <a name="logical-operators"></a>論理演算子
 
@@ -31,7 +31,7 @@ ms.locfileid: "91878931"
 |検索対象|vmmblue_2|例|結果|
 |-------------------|---------|-------------|------------|
 |同じアーティクル内の両方の用語|AND|dib AND palette|"dib" と "palette" の両方を含むトピック。|
-|アーティクル内のいずれかの用語|OR|raster OR vector|"raster" または "vector" を含むトピック。|
+|アーティクル内のいずれかの用語|または|raster OR vector|"raster" または "vector" を含むトピック。|
 |同じアーティクル内の最初の用語 (2 番目の用語を含まない)|NOT|"operating system" NOT DOS|"operating system" を含むが、"DOS" を含まないトピック。|
 |アーティクル内で近接する両方の用語|NEAR|user NEAR kernel|"kernel" にきわめて近い "user" を含むトピック。|
 

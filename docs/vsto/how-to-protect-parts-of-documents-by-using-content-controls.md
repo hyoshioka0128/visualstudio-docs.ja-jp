@@ -18,15 +18,15 @@ helpviewer_keywords:
 - GroupContentControl
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83052ca3c61fe931c3360a1092ca23740ddcff3f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1dc962e372f4406fffb5cf8a6357f3826f0c8845
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942257"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>方法: コンテンツコントロールを使用して文書の一部を保護する
   ドキュメントの一部を保護することにより、ユーザーがドキュメントのその部分を変更したり削除したりできないようにします。 コンテンツ コントロールを使用して Microsoft Office Word ドキュメントの一部を保護する方法は、いくつかあります。

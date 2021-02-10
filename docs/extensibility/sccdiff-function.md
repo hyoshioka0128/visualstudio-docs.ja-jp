@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b68df68ce7fa4ad5cbc98db256204ddf8623d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943115"
 ---
 # <a name="sccdiff-function"></a>SccDiff 関数
 この関数は、ソース管理システムで現在のファイル (ローカルディスク上) と最後にチェックインされたバージョンとの相違点を表示します (または、必要に応じて確認するだけです)。
@@ -69,7 +69,7 @@ SCCRTN SccDiff(
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。ファイルの差は取得されませんでした。|
 |SCC_E_FILENOTEXIST|ローカルファイルが見つかりませんでした。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、2つの異なる目的で機能します。 既定では、ファイルに対する変更の一覧が表示されます。 ソース管理プラグインは、選択した形式で独自のウィンドウを開き、ユーザーのディスク上のファイルと、ソース管理下の最新バージョンのファイルとの違いを表示します。
 
  また、IDE では、ファイルが変更されたかどうかを判断するだけで済む場合もあります。 たとえば、IDE では、ユーザーに通知することなくファイルをチェックアウトしても安全かどうかを判断する必要がある場合があります。 その場合は、IDE によってフラグが渡され `SCC_DIFF_CONTENTS` ます。 ソース管理プラグインは、ソース管理されたファイルに対して、ディスク上のファイルをバイト単位でチェックし、ユーザーに何も表示しないで2つのファイルが異なっているかどうかを示す値を返す必要があります。
@@ -79,7 +79,7 @@ SCCRTN SccDiff(
 > [!NOTE]
 > クイック差分フラグは相互に排他的です。 フラグを渡すことは有効ですが、複数のを同時に渡すことはできません。 `SCC_DIFF_QUICK_DIFF`は、すべてのフラグを組み合わせたマスクであり、テストに使用できますが、パラメーターとして渡すことはできません。
 
-|`fOption`|説明|
+|`fOption`|意味|
 |---------------|-------------|
 |SCC_DIFF_IGNORECASE|大文字と小文字を区別しない比較 (クイックまたはビジュアルの違いに使用できます)。|
 |SCC_DIFF_IGNORESPACE|空白は無視されます (クイックまたはビジュアルの違いに使用される場合があります)。|
@@ -87,5 +87,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|サポートされている場合は、チェックサムを使用してファイルをサイレントに比較します。 サポートされていない場合は、内容の比較にフォールバックします。|
 |SCC_DIFF_QD_TIME|サポートされている場合は、タイムスタンプを使用してファイルを自動的に比較します。 サポートされていない場合は、内容の比較にフォールバックします。|
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

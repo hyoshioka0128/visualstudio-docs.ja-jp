@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74354e05b16830f599dd706fbe48aadd75b11a18
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943128"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 関数
 この関数は、引数で指定された既存の親プロジェクトの下に、指定された名前のサブプロジェクトを作成し `lpParentProjPath` ます。
@@ -82,7 +82,7 @@ SCCRTN SccCreateSubProject(
 |SCC_E_CONNECTIONFAILURE|ソース管理プラグイン接続の問題が発生しました。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  同じ名前のサブプロジェクトが既に存在する場合、関数は、既定の名前を変更して一意の名前を作成できます。たとえば、"_ \<number> " を追加します。 、、およびへの変更を受け入れるには、呼び出し元が準備されている必要があり `lpUser` `lpSubProjPath` `lpAuxProjPath` ます。 次に、 `lpSubProjPath` `lpAuxProjPath` 引数と引数を [Sccopenproject](../extensibility/sccopenproject-function.md)の呼び出しで使用します。 返されるときに、呼び出し元によって変更されないようにする必要があります。 これらの文字列は、ソース管理プラグインがプロジェクトに関連付けるために必要な情報を追跡するための手段を提供します。 呼び出し元 IDE では、これらの2つのパラメーターは返されません。これは、プラグインが表示に適さない可能性のある書式設定された文字列を使用できるためです。 関数は成功または失敗のコードを返し、成功した場合は、 `lpSubProjPath` 新しいプロジェクトへの完全なプロジェクトパスを変数に入力します。
 
  この関数は [Sccgetprojpath](../extensibility/sccgetprojpath-function.md)に似ていますが、ユーザーに選択を求めるのではなく、プロジェクトが自動的に作成される点が異なります。 `SccCreateSubProject`関数が呼び出されると、 `lpParentProjName` と `lpAuxProjPath` は空にならず、有効なプロジェクトに対応します。 これらの文字列は、通常、以前の `SccGetProjPath` 関数または [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)の呼び出しから IDE によって受信されます。
@@ -92,13 +92,13 @@ SCCRTN SccCreateSubProject(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject と SccGetParentProjectPath のテクニカルノート
  Visual Studio では、ソース管理システムでの場所の選択を求めるメッセージが表示される回数を最小限に抑えるために、Visual Studio でソリューションとプロジェクトを簡単に追加できました。 ソース管理プラグインが新しい関数との両方をサポートしている場合、これらの変更は Visual Studio によってアクティブ化され `SccCreateSubProject` `SccGetParentProjectPath` ます。 ただし、次のレジストリエントリを使用すると、これらの変更を無効にして、以前の Visual Studio (ソース管理プラグイン API バージョン 1.1) の動作に戻すことができます。
 
- **[HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword: 00000001**
 
  このレジストリエントリが存在しない場合、または dword: 00000000 に設定されている場合、Visual Studio は、新しい関数、およびを使用しようとし `SccCreateSubProject` `SccGetParentProjectPath` ます。
 
  レジストリエントリが dword: 00000001 に設定されている場合、Visual Studio はこれらの新しい関数を使用しません。また、ソース管理に追加する操作は、以前のバージョンの Visual Studio の場合と同様に動作します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

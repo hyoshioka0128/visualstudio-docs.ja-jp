@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bad90701d19f97036ecba55bb2901739ad30b200
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 4983930a7c16edef826a5912abf0870598b1f906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903547"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943797"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>方法: サーバーエクスプローラーで SharePoint ノードを拡張する
   **サーバーエクスプローラー** の [ **SharePoint 接続**] ノードの下でノードを拡張できます。 これは、新しい子ノード、ショートカットメニュー項目、またはプロパティを既存のノードに追加する場合に便利です。 詳細については、「[サーバー エクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。

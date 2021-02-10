@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 91885371f72c5756ddc026111404f091a2cccf08
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 02bcc4a812a541ea792a190dc21dfbeb3119c008
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993264"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943693"
 ---
 # <a name="sendandreceivereply-template-designer"></a>SendAndReceiveReply テンプレート デザイナー
 
@@ -52,11 +52,11 @@ ms.locfileid: "96993264"
 | <xref:System.ServiceModel.Activities.ReceiveReply.CorrelationInitializers%2A> | False | ワークフロー内のこの <xref:System.ServiceModel.Activities.CorrelationInitializer> アクティビティを構成する複数の <xref:System.ServiceModel.Activities.CorrelationHandle> オブジェクトを初期化する <xref:System.ServiceModel.Activities.Receive> オブジェクトのコレクションを指定します。 プロパティグリッドでプロパティの横にある省略記号ボタンをクリックして <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> 、[ **関連付け初期化子の追加** ] ダイアログボックスを開きます。 このボックスの使用方法の詳細については、「 [CorrelationInitializers の追加」ダイアログボックス](../workflow-designer/add-correlationinitializers-dialog-box.md)を参照してください。 |
 | <xref:System.ServiceModel.Activities.ReceiveReply.Action%2A> | False | メッセージのアクション ヘッダーを指定します。 明示的に設定されていない場合、その値の既定値は次のようになります。<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [受信](../workflow-designer/receive-activity-designer.md)
+- [受け取れ](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Send](../workflow-designer/send-activity-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

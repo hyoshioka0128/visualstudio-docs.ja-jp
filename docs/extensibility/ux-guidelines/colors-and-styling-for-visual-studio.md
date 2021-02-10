@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942907"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -46,7 +46,7 @@ Visual Studio の UI 要素に色を割り当てるには、いくつかのオ�
 
 UI 要素に最適な方法を選択します。
 
-| UI | メソッド | それらは何ですか? |
+| UI | Method | それらは何ですか? |
 | --- | --- | --- |
 | ダイアログボックスが埋め込まれています。 | **システムカラー** | オペレーティングシステムが UI 要素の色と外観を定義できるシステム名 (コモンダイアログコントロールなど)。 |
 | VS 環境全体と一貫性を持たせ、共有トークンのカテゴリとセマンティックの意味に一致する UI 要素があるカスタム UI があること。 | **共通の共有色** | 特定の UI 要素の既存の定義済みの色のトークン名 |
@@ -309,7 +309,7 @@ Windows では、テキスト、背景、およびイメージの色のコント
 
 多くの一般的な UI 要素にはハイコントラストの色が既に定義されています。 独自のシステムカラー名を選択するときに、これらの使用パターンを参照して、UI 要素と同様のコンポーネントとの一貫性を保つことができます。
 
-| システムカラー | 使用法 |
+| システムカラー | 使用 |
 | --- | --- |
 | ActiveCaption | -ホバー時のアクティブな IDE と rafted のウィンドウボタンのグリフ<br />-IDE および rafted ウィンドウのタイトルバーの背景<br />-既定のステータスバーの背景 |
 | ActiveCaptionText | -アクティブな IDE および rafted ウィンドウ (タイトルバーの前景) (テキストとグリフ)<br />-ホバー時と押したときのアクティブなウィンドウボタンの背景と境界線 |
@@ -360,10 +360,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | Data | 説明 |
+| 名前 | 種類 | データ | 説明 |
 | --- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
  レジストリに指定されたサービスは、対応するカテゴリの [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) の実装を提供する必要があります。
 
@@ -373,10 +373,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | Data | 説明 |
+| 名前 | 種類 | データ | 説明 |
 |--- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
 レジストリに指定されたサービスは、対応するグループのの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> ます。
 

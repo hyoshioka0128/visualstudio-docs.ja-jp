@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616276"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943369"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>従来の言語サービスでの単語補完
 単語入力補完は、部分的に入力された単語の不足している文字を入力します。 候補が1つしかない場合は、入力候補文字が入力されると、その単語が完成します。 単語の一部が複数の可能性に一致する場合、候補の一覧が表示されます。 完了文字には、識別子に使用されない任意の文字を指定できます。

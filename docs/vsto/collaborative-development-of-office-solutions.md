@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942309"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>Office ソリューションの共同開発
   複数の開発者は、他の Visual Studio プロジェクトで共同作業するのと同じ方法で Office プロジェクトを操作できます。 Office が異なる場所にインストールされている場合でも、Visual Studio は各コンピューターに Microsoft Office のインストールを正しく検索します。 ただし、注意すべき重要な考慮事項がいくつかあります。
@@ -40,7 +40,7 @@ ms.locfileid: "96845805"
  変更が完了したら、すべてのファイルを再度確認します。 プロジェクト内の非表示コードファイルの詳細については、「 [Visual Studio 環境の Office プロジェクト](../vsto/office-projects-in-the-visual-studio-environment.md)」を参照してください。
 
 ## <a name="security-for-informal-collaboration-on-a-network"></a>ネットワークで非公式に共同作業を行うためのセキュリティ
- ネットワークの場所にあるすべてのドキュメントレベルのソリューション (Servername Sharename など) については、使用している \\ \\ *Servername* \\ *Sharename* Microsoft Office アプリケーションの信頼されたフォルダーの一覧に、完全修飾された場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、またはデバッグフォルダーとビルドフォルダーを信頼されたフォルダーの一覧に追加するオプションを選択します。 これを行う方法の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
+ ネットワークの場所にあるすべてのドキュメントレベルのソリューション (Servername Sharename など) については、使用している \\ \\  \\ Microsoft Office アプリケーションの信頼されたフォルダーの一覧に、完全修飾された場所を追加する必要があります。 メインフォルダーの下にサブディレクトリを含めるか、またはデバッグフォルダーとビルドフォルダーを信頼されたフォルダーの一覧に追加するオプションを選択します。 これを行う方法の詳細については、「 [ドキュメントへの信頼の付与](../vsto/granting-trust-to-documents.md)」を参照してください。
 
  ビルド時に自動的に生成される一時的な証明書は、パスワードによって保護されません。 証明書には、開発者のログイン名とその他の個人情報が含まれています。 一時的な証明書によって署名されたカスタマイズを展開する場合、他のユーザーがこの情報にアクセスできる可能性があります。
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a040777671a5d6a4378e9b2ad68b2ffa2fabaeb
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 2b0e3b95ee3c715eb21028b6c156b7a62ea82d41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615741"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943219"
 ---
 # <a name="manage-vspackages"></a>VSPackage を管理する
 ほとんどの場合、Vspackage の管理について心配する必要はありません。プロジェクトと項目テンプレートによってパッケージが登録され、自動的に読み込まれるためです。 ただし、状況によっては、パッケージを管理するためにもう少し学習が必要になる場合があります。

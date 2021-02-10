@@ -7,21 +7,21 @@ ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86edd33e7719dc326aa2c5d252d11322509de64
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943245"
 ---
 # <a name="manage-universal-windows-projects"></a>ユニバーサル Windows プロジェクトを管理する
 
 ユニバーサル Windows アプリは、Windows 8.1 と Windows Phone 8.1 の両方を対象とするアプリで、開発者は両方のプラットフォームでコードとその他の資産を使用できます。 共有コードとリソースは共有プロジェクトに保持されます。一方、プラットフォーム固有のコードとリソースは、Windows 用と Windows Phone 用の別々のプロジェクトに保持されます。 ユニバーサル Windows アプリの詳細については、「 [ユニバーサル windows アプリ](/windows/uwp/get-started/create-uwp-apps)」を参照してください。 プロジェクトを管理する Visual Studio 拡張機能では、ユニバーサル Windows アプリプロジェクトの構造が1つのプラットフォームアプリとは異なることに注意してください。 このチュートリアルでは、共有プロジェクト内を移動し、共有項目を管理する方法について説明します。
 
-## <a name="prerequisites"></a>[前提条件]
+## <a name="prerequisites"></a>前提条件
 
 Visual Studio 2015 以降では、ダウンロードセンターから Visual Studio SDK をインストールしません。 これは、Visual Studio セットアップでオプション機能として含まれています。 VS SDK は、後でインストールすることもできます。 詳細については、「 [Visual STUDIO SDK のインストール](../extensibility/installing-the-visual-studio-sdk.md)」を参照してください。
 

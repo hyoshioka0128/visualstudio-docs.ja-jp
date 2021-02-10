@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943089"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 関数
 この関数は、現在の状態の完全修飾ディレクトリの一覧を調べます。
@@ -60,7 +60,7 @@ LPLONG  lpStatus
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  関数は、返される配列にファミリのビットのビットマスク `SCC_DIRSTATUS` ( [ディレクトリステータスコード](../extensibility/directory-status-code-enumerator.md)を参照) を入力します。これは、指定されたディレクトリごとに1つのエントリです。 状態配列は、呼び出し元によって割り当てられます。
 
  IDE では、ディレクトリの名前を変更する前に、この関数を使用して、ディレクトリがソース管理下にあるかどうかを、対応するプロジェクトがあるかどうかを照会することによって確認します。 ディレクトリがソース管理下にない場合、IDE はユーザーに適切な警告を提供できます。
@@ -68,6 +68,6 @@ LPLONG  lpStatus
 > [!NOTE]
 > ソース管理プラグインが1つ以上の状態値を実装しないことを選択した場合は、実装されていないビットを0に設定する必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)
