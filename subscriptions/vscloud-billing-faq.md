@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353422"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572877"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 必ず[クラウド サブスクリプションの特典と価格を比較](https://visualstudio.microsoft.com/vs/pricing/)して、各 Visual Studio サブスクリプションの特典、クラウドと標準の Visual Studio サブスクリプションの比較、サブスクライバー特典の詳細などを理解してください。
@@ -29,6 +29,9 @@ A: ほとんどの Azure サブスクリプションを使うことができま�
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>Q:他の Azure サービスを購入する必要はありますか。
 A: まったくありません。 Azure で Visual Studio クラウド サブスクリプションだけを購入したい場合は、そうすることができます。
 
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>Q:課金情報と使用状況データはどこで確認できますか。
+A: 請求書と使用状況の表示に関する情報は、[こちら](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date)から取得できます。
+
 ## <a name="enterprise-agreement-ea-customers"></a>Enterprise Agreement (EA) のお客様
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q:Enterprise Agreement を使って、Visual Studio クラウド サブスクリプションを購入できますか。
 A: はい、できます。 お使いの EA 用に作成された Azure サブスクリプションに対して共同作成者以上のロールが与えられている必要があります。 Visual Studio クラウド サブスクリプションの購入は、Visual Studio Marketplace 内で直接行うようにしてください。 発注書を使って Visual Studio クラウド サブスクリプションを購入することはできません。
@@ -44,13 +47,13 @@ Azure サブスクリプションの名前として既定で表示される種�
 A: いいえ、これらの前払い資金では、Visual Studio クラウド サブスクリプションを購入することはできません。 EA 用に作成された Azure サブスクリプションを選んで Visual Studio クラウド サブスクリプションを購入すると、料金は次の "超過分" 請求書に表示されます。 通常これは毎月発生しますが、一部の EA 顧客については、過去のルールにより、超過分請求書が数か月間発行されない可能性があります。 超過分請求書が発生しないで追加購入 (Azure 年額コミットメントの資金の対象ではない購入) できる量を知る必要がある場合は、EA のライセンス スペシャリストに問い合わせてください。
 
 ## <a name="how-charges-are-processed"></a>料金の処理方法
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Q: **月間プラン** のクラウド サブスクリプション料金はどのように処理されますか。
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Q:**月間プラン** のクラウド サブスクリプション料金はどのように処理されますか。
 A: 最初の購入時は、現在の月の残りの日数をカバーする日割り計算された数量を請求します。 たとえば、10 個の Visual Studio Professional クラウド サブスクリプション月間プランを 4 月 15 日に購入した場合、月の 50% (30 日の月の 15 日) が残っているため、5 ユニット分を請求します。
 5 月 1 日およびそれ以降は毎月、ユーザーがキャンセルするまで、10 ユニット分が請求されます。
 
 後で支払い数量を増やした場合も、現在の月の残りの日数について、増加ユニット分が日割りで請求されます。 したがって、1 個の Visual Studio Professional クラウド サブスクリプション月間プランを 5 月 10 日に追加購入した場合は、約 0.677 ユニット (5 月の 31 日間の残り 21 日分) が請求されます。
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q: **年間プラン** のクラウド サブスクリプション料金はどのように処理されますか。
+### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q:**年間プラン** のクラウド サブスクリプション料金はどのように処理されますか。
 A: 購入ごとに、購入された全数量が直ちに請求されます。 料金は 1 年間に分散されず、日割り計算は行われません。 同じ年の異なる時期にクラウド サブスクリプション年間プランを購入した場合、サブスクリプションは異なる月に更新されます。 Microsoft ボリューム ライセンス契約の購入で一般に行われている方法とは異なり、お客様のすべてのクラウド サブスクリプション年間プランを同じ期間にすることはありません。
 
 ### <a name="q-how-do-cancelations-work"></a>Q:キャンセルはどのように行われますか。

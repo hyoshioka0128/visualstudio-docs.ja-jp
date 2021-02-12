@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: how-to
 description: 一括追加機能または Microsoft Azure Active Directory グループのどちらかを使って、管理者が複数のサブスクライバーにライセンスを割り当てる方法について説明します
-ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696618"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511372"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>複数のユーザーにサブスクリプションを割り当てる
 サブスクリプション管理ポータルでは、ユーザーを一度に 1 人ずつ追加することも、大きなグループ単位で追加することもできます。  ユーザーを個別に追加するには、[1 人のユーザーの追加](assign-license.md)に関する記事を参照してください。
@@ -137,7 +137,7 @@ A: この機能は現在、契約が信頼されている組織のみ利用で�
    > ![[詳細] ボタンをクリックします](_img/assign-license-bulk/bulk-add-agreement.png "[詳細] ボタンをクリックすると、どのような種類の契約を持っているか確認できます。")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q:Azure AD セキュリティ グループにユーザーを追加しましたが、そのユーザーが追加されたことがサブスクリプション管理ポータル上に表示されず、サブスクリプションもありません。 なぜでしょうか。  
-A: 組織で Azure AD がどのように構成されているかに応じて、ユーザーが追加されるまでに最大 24 時間の遅延が発生することがあります。 24 時間以上経過している場合は、[サポートにお問い合わせください](https://visualstudio.microsoft.com/support/support-overview-vs)。  
+A: 組織で Azure AD がどのように構成されているかに応じて、ユーザーが追加されるまでに最大 24 時間の遅延が発生することがあります。 24 時間を超えている場合は、[Visual Studio の管理とサブスクリプションのサポート](https://my.visualstudio.com/gethelp)にアクセスしてください。  
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

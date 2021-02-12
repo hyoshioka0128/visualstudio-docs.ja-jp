@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ac5967d13aa6572b36989150561363555a9705
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a4488c212cabe95d73f75246fb297c17ce073b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950901"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>手順 11: ピクチャ ビューアー アプリを実行して他の機能を試す
 
@@ -30,7 +30,7 @@ ms.locfileid: "90809199"
 1. ピクチャを開く前に、**[Set the background color]** ボタンをクリックします。 **[色]** ダイアログ ボックスが表示されます。
 
      ![[色] ダイアログ ボックス](../ide/media/express_colordialog.png)<br/>
-***[色]*** *ダイアログ ボックス*
+* **[色]** ダイアログ ボックス*
 
 1. 色を選択して PictureBox の背景色を設定します。 `backgroundButton_Click()` (または、`BackgroundButton_Click()`) メソッドを詳しく調べて動作を確認します。
 

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868882"
 ---
 # <a name="step-6-name-your-button-controls"></a>手順 6: ボタン コントロールの名前を設定する
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480318"
 
 1. フォームで **[閉じる]** ボタンをクリックします (すべてのボタンが選択されたままになっている場合は、**Esc** キーを押して選択を取り消します)。 **[プロパティ]** ウィンドウで、 **(Name)** プロパティが表示されるまでスクロールします (プロパティがアルファベット順になっている場合は、 **(Name)** プロパティは上の方にあります)。次のスクリーンショットに示すように、名前を **closeButton** に変更します。
 
-    ![closeButton という名前が表示された [プロパティ] ウィンドウ](../ide/media/express_setnameproperty.png)<br>\* ****closeButton**  __という名前が表示された *_[プロパティ]_* ウィンドウ_*
+    ![closeButton という名前が表示された [プロパティ] ウィンドウ](../ide/media/express_setnameproperty.png)<br>** ***closeButton**_という名前が表示された **[プロパティ]** __ ウィンドウ*
 
     > [!NOTE]
     > ボタンの名前を、"close" と "Button" の間に空白文字を含む「**close Button**」という名前に変更してみます。 これを行うと、IDE ではエラー メッセージが表示されます。IDE で "プロパティの値が無効です" というエラー メッセージが表示されます。 空白文字 (およびその他のいくつかの文字) は、コントロール名に使用できません。
@@ -48,7 +48,7 @@ ms.locfileid: "96480318"
    このタブは、次のスクリーンショットに示すように、フォームの背後にあるコード ファイルを示します。
 
     ![Visual C&#35; コードが表示された [Form1.cs] タブ](../ide/media/express_showbuttoncode.png)<br>
-**C# コードが表示された _[Form1.cs]_ _ _タブ**
+*C# コードが表示された **[Form1.cs]** _ _タブ*
 
     > [!NOTE]
     > [Form1.cs] または [Form1.vb] タブには、**ShowButton** ではなく、**showButton** と表示されることがあります。

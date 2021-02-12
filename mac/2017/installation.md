@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862435"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719917"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Visual Studio 2017 for Mac をインストールする
 
 > [!NOTE]
-> Visual Studio 2019 for Mac が[利用できるように](installation.md?view=vsmac-2019)なりました。 以前のバージョンの Visual Studio for Mac については、Visual Studio の[ダウンロード ページ](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)を参照してください。
+> Visual Studio 2019 for Mac が[利用できるように](installation.md?view=vsmac-2019&preserve-view=true)なりました。 以前のバージョンの Visual Studio for Mac については、Visual Studio の[ダウンロード ページ](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)を参照してください。
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac からダウンロードするには
 
@@ -65,7 +65,7 @@ Visual Studio で iOS を使用するには、以下が必要です。
       - iOS のみ – **iOS** プラットフォームを選択します ([**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
       - Android のみ – **Android** プラットフォームを選択します (関連する依存関係も選択する必要があります)。
       - Mac のみ – **macOS** プラットフォームを選択します ([**Xcode**](https://developer.apple.com/xcode/) をインストールする必要があります)。
-      - 完全なクロスプラットフォームの Xamarin アプリ – **Android**、**iOS**、および**macOS** プラットフォームを選択します。
+      - 完全なクロスプラットフォームの Xamarin アプリ – **Android**、**iOS**、および **macOS** プラットフォームを選択します。
    * **.NET Core アプリケーション** – **.NET Core** プラットフォームを選択します。
    * **ASP.NET Core Web アプリケーション** – **.NET Core** プラットフォームを選択します。
    * **クロスプラットフォームの Unity ゲーム開発** – Visual Studio for Mac 以外の追加のプラットフォームをインストールする必要はありません。 Unity 拡張機能のインストールの詳細については、[Unity セットアップ ガイド](./setup-vsmac-tools-unity.md)に関するページをご覧ください。

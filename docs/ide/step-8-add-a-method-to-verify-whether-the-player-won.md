@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c53afebfd8c39e9c43f82916095d8eeef2ec8b11
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 68a4848f00153206b87dd3e5893bbaaeccf3b358
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868752"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>手順 8: プレーヤーが勝利したかどうかを確認するメソッドの追加
 楽しいゲームが作成されましたが、完成させるには追加の項目が必要です。 ゲームは、プレーヤーが勝利した時点で終了する必要があるため、プレーヤーが勝利したかどうかを確認する `CheckForWinner()` メソッドを追加する必要があります。
@@ -45,10 +45,10 @@ ms.locfileid: "96479291"
 3. プログラムを保存し、実行します。 ゲームを実行し、すべてのアイコンを一致させます。 勝利すると、プログラムでは、次の図に示すように **MessageBox** が表示され、その後にボックスが閉じられます。
 
      ![MessageBox が表示された絵合わせゲーム](../ide/media/express_tut4step8.png)<br/>
-** ***MessageBox** _が表示された *_絵合わせゲーム_ _*_
+****MessageBox*** が表示された **絵合わせゲーム**
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 
-- チュートリアルの次の手順に進むには、「[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)」を参照してください。
+- チュートリアルの次の手順に進むには、「 **[手順 9: その他の機能を試す](../ide/step-9-try-other-features.md)** 」をご覧ください。
 
 - 前のチュートリアルの手順に戻る場合は、「[手順 7: ペアの表示の維持](../ide/step-7-keep-pairs-visible.md)」を参照してください。

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948011"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>チュートリアル: マネージド コードの単体テストを作成し、実行する
 
@@ -138,7 +138,7 @@ ms.locfileid: "95598550"
 
 6. **ソリューション エクスプローラー** で右クリックして **[名前の変更]** を選択し、ファイルの名前を *BankAccount.cs* に変更します。
 
-7. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+7. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします (または **Ctrl** + **SHIFT** + **B** キーを押します)。
 
 これでテストできるプロジェクトとメソッドが用意されました。 この記事のテストは `Debit` メソッドに焦点を当てています。 `Debit` メソッドは、口座から現金が引き出されるときに呼び出されます。
 
@@ -187,7 +187,7 @@ ms.locfileid: "95598550"
 
 ### <a name="rename-a-file-and-class"></a>ファイルとクラスの名前を変更する
 
-1. ファイルの名前を変更するには、**ソリューション エクスプローラー** で、BankTests プロジェクトの *UnitTest1.cs* ファイルを選択します。 右クリック メニューの **[名前の変更]** をクリックし、ファイルの名前を *BankAccountTests.cs* に変更します。
+1. ファイルの名前を変更するには、**ソリューション エクスプローラー** で、BankTests プロジェクトの *UnitTest1.cs* ファイルを選択します。 右クリック メニューの **[名前の変更]** を選択し (または **F2** キーを押し)、ファイルの名前を *BankAccountTests.cs* に変更します。
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ ms.locfileid: "95598550"
 
 ::: moniker range=">=vs-2019"
 
-2. クラスの名前を変更するには、コード エディター内で `UnitTest1` にカーソルを合わせ、右クリックして、 **[名前の変更]** を選択します。 「**BankAccountTests**」と入力し、**Enter** を押します。
+2. クラスの名前を変更するには、コード エディター内で `UnitTest1` にカーソルを合わせ、右クリックして、 **[名前の変更]** を選択します (または **F2** キーを押します)。 「**BankAccountTests**」と入力し、**Enter** を押します。
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ## <a name="build-and-run-the-test"></a>テストをビルドして実行する
 
-1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
+1. **[ビルド]** メニューの **[ソリューションのビルド]** を選択します (または **Ctrl** + **Shift** + **B** キーを押します)。
 
-2. **テスト エクスプローラー** が開いていない場合、上部のメニュー バーで **[テスト]** 、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
+2. **テスト エクスプローラー** が開いていない場合、上部のメニュー バーで **[テスト]**  >  **[Windows]**  >  **[テスト エクスプローラー]** の順に選択します (または **Ctrl** + **E**、**T** キーを押します)。
 
-3. **[すべて実行]** をクリックしてテストを実行します。
+3. **[すべて実行]** を選択してテストを実行します (または **Ctrl** + **R**、**V** キーを押します)。
 
    テストの実行中は、 **[テスト エクスプローラー]** ウィンドウの上部にあるステータス バーがアニメーション化されます。 テストの実行の終了時に、すべてのテスト メソッドが成功した場合はステータス バーが緑色に変わり、いずれかのテストが失敗した場合は赤色に変わります。
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>テストを再実行する
 
-**テスト エクスプローラー** で、 **[すべて実行]** を選択してテストを再実行します。 赤/緑のバーが緑に変わり、テストに合格したことを示します。
+**テスト エクスプローラー** で、 **[すべて実行]** を選択してテストを再実行します (または **Ctrl** + **R**、**V** キーを押します)。 赤/緑のバーが緑に変わり、テストに合格したことを示します。
 
 ![テストに合格したことを示す Visual Studio 2019 のテスト エクスプローラー](media/test-explorer-banktests-passed.png)
 

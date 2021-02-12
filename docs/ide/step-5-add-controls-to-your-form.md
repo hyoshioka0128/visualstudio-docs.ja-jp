@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950667"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>手順 5: フォームへのコントロールの追加
 
@@ -45,7 +45,7 @@ ms.locfileid: "96480578"
 
 1. フォームで **TableLayoutPanel** を選択し、フォームに CheckBox コントロールを追加します。 **ツールボックス** の **CheckBox** 項目をダブルクリックすると、新しい CheckBox コントロールがテーブル内の次の空いているセルに追加されます。 PictureBox が TableLayoutPanel の最初の 2 つのセルを使用しているため、CheckBox コントロールは左下のセルに追加されます。 **Text** プロパティを選択し、次の図に示すように、「**Stretch**」と入力します。
 
-    ![Stretch プロパティのある TextBox コントロール](../ide/media/express_pictureviewercheckbox.png)<br/>* ** ***Stretch** _プロパティのある _TextBox_* _ _コントロール_*
+    ![Stretch プロパティのある TextBox コントロール](../ide/media/express_pictureviewercheckbox.png)<br/>****Stretch** プロパティのある **TextBox** _ _コントロール_
 
 1. フォームの **TableLayoutPanel** を選択し、**ツールボックス** の **[コンテナー]** グループ (TableLayoutPanel コントロールを取得したグループ) に移動し、**FlowLayoutPanel** 項目をダブルクリックして、新しいコントロールを最後のセル (右下) に追加します。 次に、FlowLayoutPanel を TableLayoutPanel にドッキングします。 それには、FlowLayoutPanel の黒い三角形のタスク一覧で **[親コンテナーにドッキングする]** を選択するか、または FlowLayoutPanel の **Dock** プロパティを **Fill** に設定します。
 
@@ -76,7 +76,7 @@ ms.locfileid: "96480578"
 
    これで、ボタンのサイズと順序が適切に設定されました  (4 つすべてのボタンを選択していれば、4 つすべての **AutoSize** プロパティを同時に変更することができます)。4 つのボタンは次の図のようになります。
 
-    ![4 つのボタンがある Picture Viewer](../ide/media/express_autosize.png)<br/>**4 つのボタンがある _画像ビューアー_* _ _*
+    ![4 つのボタンがある Picture Viewer](../ide/media/express_autosize.png)<br/>*4 つのボタンがある **画像ビューアー** _ _*
 
 1. 次に、プログラムを再度実行して、変更を確認します。
 

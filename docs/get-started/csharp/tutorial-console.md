@@ -9,18 +9,18 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 484cb82a3659e306bd4c6bd14a3133c4677160db
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909362"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -49,13 +49,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 2. 上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。
    (または、**Ctrl**+**Shift**+**N** キーを押します)。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに **_Calculator_* _ という名前を付けます。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、ファイルに **_Calculator_** という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](./media/new-project-csharp-calculator-console-app.png)
 
 ### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
-_ *コンソール アプリ (.NET Core)* * プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発** ワークロードを追加して取得できます。 ここではその方法を説明します。
+**コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発** ワークロードを追加して取得できます。 ここではその方法を説明します。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 

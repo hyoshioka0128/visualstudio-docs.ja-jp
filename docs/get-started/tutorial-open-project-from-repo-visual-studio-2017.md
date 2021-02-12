@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99181997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951928"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>チュートリアル: Visual Studio 2017 でリポジトリからプロジェクトを開く
 
@@ -43,7 +43,7 @@ ms.locfileid: "99181997"
 
     ![[ローカル Git リポジトリ] セクションから [複製] を選択する](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. "**_複製する Git リポジトリの URL を入力してください_ *" と表示されているボックスに、リポジトリの URL を入力または貼り付けてから、* Enter** キーを押します。 (GitHub にサインインするよう求められた場合は、サインインします。)
+1. "**複製する Git リポジトリの URL を入力してください**" と表示されているボックスに、リポジトリの URL を入力または貼り付けてから、_*Enter** キーを押します。 (GitHub にサインインするよう求められた場合は、サインインします。)
 
    Visual Studio でリポジトリが複製されると、チーム エクスプローラーが閉じてソリューション エクスプローラーが開きます。 "*ソリューションの一覧を表示するには、上記のソリューションおよびフォルダーをクリックします*" というメッセージが表示されます。 **[ソリューションおよびフォルダー]** を選択します。
 

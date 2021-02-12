@@ -6,20 +6,20 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
-ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c104e4d819e58630f894405b3b56a8a442576816
+ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691225"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97668717"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Visual Studio for Mac に関する問題を報告する方法
 
-Visual Studio for Mac に問題が発生した場合は、Microsoft にお知らせください。 診断および修正を行うには、問題を以下のようにして [Developer Community](https://developercommunity.visualstudio.com/spaces/41/index.html) に報告してください。
+Visual Studio for Mac に問題が発生した場合は、Microsoft にお知らせください。 診断および修正を行うには、問題を以下のようにして [Developer Community](https://aka.ms/feedback/report?space=41) に報告してください。
 
 ## <a name="how-to-report-a-problem"></a>問題を報告する方法
 
-Visual Studio for Mac に関する問題を報告する最良の方法は、Visual Studio for Mac からレポートを開始することです。 Visual Studio for Mac を使用して報告する場合、レポートに自動的に診断情報を含めることができます。 (クラッシュなどの理由により) Visual Studio for Mac を使用できない場合、[開発者コミュニティ](https://developercommunity.visualstudio.com/content/problem/post.html?space=41) サイトで直接、問題を報告できます。
+Visual Studio for Mac に関する問題を報告する最良の方法は、Visual Studio for Mac からレポートを開始することです。 Visual Studio for Mac を使用して報告する場合、レポートに自動的に診断情報を含めることができます。 (クラッシュなどの理由により) Visual Studio for Mac を使用できない場合、[開発者コミュニティ](https://aka.ms/feedback/report?space=41) サイトで直接、問題を報告できます。
 
 Visual Studio for Mac での問題を報告するには、メニュー バーから **[ヘルプ] > [問題を報告する]** を選択します。
 
@@ -59,9 +59,9 @@ Visual Studio for Mac での問題を報告するには、メニュー バーか
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>解決策を検索するかフィードバックを提供する
 
-Visual Studio for Mac を使って問題を報告することが望ましくない場合、またはできない場合は、[Visual Studio 開発者コミュニティ](https://developercommunity.visualstudio.com/) ページで既に問題が報告され、解決策が投稿されている可能性があります。
+Visual Studio for Mac を使って問題を報告することが望ましくない場合、またはできない場合は、[Visual Studio 開発者コミュニティ](https://aka.ms/feedback/report?space=41/) ページで既に問題が報告され、解決策が投稿されている可能性があります。
 
-レポートする問題はないが、機能を提案したい場合は、そのための場所も用意されています。 詳細については、「[Suggest a feature](https://developercommunity.visualstudio.com/content/idea/post.html?space=41)」(機能を提案する) ページをご覧ください。
+レポートする問題はないが、機能を提案したい場合は、そのための場所も用意されています。 詳細については、「[Suggest a feature](https://aka.ms/feedback/suggest?space=41)」(機能を提案する) ページをご覧ください。
 
 ## <a name="see-also"></a>関連項目
 

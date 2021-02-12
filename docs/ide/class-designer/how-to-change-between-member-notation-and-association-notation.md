@@ -12,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f96fe04ee84be50bd241db6bf9f73280c40dec02
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 8bc2e6c51903c46636d8de72bd6c1ac5b63aa876
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96933571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880555"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>方法: クラス デザイナーでメンバー表記と関連付け表記の間で変更する
 
 **クラス デザイナー** では、クラス ダイアグラムで 2 つの型の間の関連付けの関係が表される方法を、メンバー表記から関連付け表記に、またはその逆に、変更できます。 関連行として表示されるメンバーは、多くの場合、型の関連をわかりやすく視覚化します。
 
 > [!NOTE]
-> 関連付けの関係は、メンバー プロパティまたはフィールドとして表すことができます。 メンバー表記を関連付け表記に変更するには、一方の型に別の型のメンバーが含まれている必要があります。 関連付け表記をメンバー表記に変更するには、2 つの型が関連行によって接続されている必要があります。 詳しくは、[型の間の関連付けを作成する方法](how-to-create-associations-between-types.md)に関するページをご覧ください。 プロジェクトに複数のクラス ダイアグラムが含まれている場合、ダイアグラムでの関連付けの関係の表示方法に対する変更は、そのダイアグラムだけに適用されます。 別のダイアグラムでの関連付けの関係の表示方法を変更するには、そのダイアグラムを開くか表示して、次の手順を実行します。
+> 関連付けの関係は、メンバー プロパティまたはフィールドとして表すことができます。 メンバー表記を関連付け表記に変更するには、一方の型に別の型のメンバーが含まれている必要があります。 関連付け表記をメンバー表記に変更するには、2 つの型が関連行によって接続されている必要があります。 詳細については、「[方法:型の間の関連付けを作成する](how-to-create-associations-between-types.md)」を参照してください。 プロジェクトに複数のクラス ダイアグラムが含まれている場合、ダイアグラムでの関連付けの関係の表示方法に対する変更は、そのダイアグラムだけに適用されます。 別のダイアグラムでの関連付けの関係の表示方法を変更するには、そのダイアグラムを開くか表示して、次の手順を実行します。
 
 ## <a name="to-change-member-notation-to-association-notation"></a>メンバー表記を関連付け表記に変更するには
 
