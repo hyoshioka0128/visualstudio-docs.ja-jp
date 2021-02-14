@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860043"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496263"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>方法: コードメトリックスデータを生成する
 
@@ -279,7 +279,7 @@ NuGet パッケージをインストールしない場合は、 *Metrics.exe* �
 1. [Dotnet](https://github.com/dotnet/roslyn-analyzers)リポジトリを複製します。
 2. 管理者として Visual Studio の開発者コマンドプロンプトを開きます。
 3. **Roslyn-アナライザー** リポジトリのルートから、次のコマンドを実行します。`Restore.cmd`
-4. ディレクトリを *Src\ Tools* に変更します。
+4. ディレクトリを *srcmetrics* に変更します。
 5. 次のコマンドを実行して、 **メトリック .csproj** プロジェクトをビルドします。
 
    ```shell
