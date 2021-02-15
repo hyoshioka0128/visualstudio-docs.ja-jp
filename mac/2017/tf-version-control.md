@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860559"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729380"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Team Foundation バージョン管理に接続する
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860559"
 >
 > 以前に Visual Studio for Mac の TFVC 拡張機能のプレビュー リリースをご使用だった場合、これは Visual Studio 2019 for Mac にアップグレードするとサポートされなくなります。
 
-Azure Repos では、バージョン管理の 2 つのモデルを提供しています。分散バージョン管理システムの [Git](/azure/devops/repos/git/?view=azure-devops) と、集中バージョン管理システムの [Team Foundation バージョン管理](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC) です。
+Azure Repos では、バージョン管理の 2 つのモデルを提供しています。分散バージョン管理システムの [Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true) と、集中バージョン管理システムの [Team Foundation バージョン管理](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC) です。
 
 Visual Studio for Mac では、Git リポジトリに対して完全なサポートを提供していますが、TFVC を利用するにはいくつかの回避策が必要になります。 現在、バージョン管理に TFVC を使用している場合は、TFVC にホストされているソース コードにアクセスするために、いくつかのソリューションを使用できます。
 
@@ -54,7 +54,7 @@ TEE CLC のセットアップを行うには、2 つの方法があります。
 * Homebrew を使用してクライアントをインストールする
 * クライアントをダウンロードして手動でインストールする
 
-最も簡単なソリューションは、macOS 用のパッケージ マネージャーである **HomeBrew を使用する**ことです。 この方法を使用してインストールするには、次の手順を実行します。
+最も簡単なソリューションは、macOS 用のパッケージ マネージャーである **HomeBrew を使用する** ことです。 この方法を使用してインストールするには、次の手順を実行します。
 
 1. macOS ターミナルのアプリケーションを起動します。
 1. ターミナルと [Homebrew ホーム ページ](https://brew.sh/)上の手順を使用して、Homebrew をインストールします。
@@ -69,7 +69,7 @@ TEE CLC のセットアップを行うには、2 つの方法があります。
 
 TEE-CLC がインストールされたら、コマンド `tf eula` を実行して、クライアント用のライセンス契約を表示して同意します。
 
-最後に、お使いの TFS/Azure DevOps 環境による認証を行うために、サーバー上に個人用アクセス トークンを作成する必要があります。 詳しくは、「[Authenticating with personal access tokens (個人用アクセス トークンによる認証)](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)」をご覧ください。 TFVC によって使用される個人用アクセス トークンを作成する場合は、トークンの構成時に必ずフル アクセスを指定してください。
+最後に、お使いの TFS/Azure DevOps 環境による認証を行うために、サーバー上に個人用アクセス トークンを作成する必要があります。 詳しくは、「[Authenticating with personal access tokens (個人用アクセス トークンによる認証)](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)」をご覧ください。 TFVC によって使用される個人用アクセス トークンを作成する場合は、トークンの構成時に必ずフル アクセスを指定してください。
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>TEE CLC を使用してリポジトリに接続する
 
@@ -176,7 +176,7 @@ TFS に接続するには、サーバーの詳細とアカウントの資格情�
 
 ### <a name="creating-a-new-workspace"></a>新しいワークスペースの作成。
 
-プロジェクトの操作を開始するには、_ワークスペース_が必要です。 まだワークスペースがない場合は、**[Open from Source Control]\(ソース管理から開く\)** ダイアログ内の **[ワークスペース]** コンボ ボックスからワークスペースを作成できます。
+プロジェクトの操作を開始するには、_ワークスペース_ が必要です。 まだワークスペースがない場合は、**[Open from Source Control]\(ソース管理から開く\)** ダイアログ内の **[ワークスペース]** コンボ ボックスからワークスペースを作成できます。
 
 ![新しいワークスペースの作成コンボ ボックスのオプション](media/tfvc-create-new-workspace.png)
 
@@ -186,7 +186,7 @@ TFS に接続するには、サーバーの詳細とアカウントの資格情�
 
 ### <a name="using-the-source-code-explorer"></a>ソース コード エクスプローラーの使用
 
-ワークスペースを作成してプロジェクトをマップしたら、_ソース コード エクスプローラー_の操作を開始できます。
+ワークスペースを作成してプロジェクトをマップしたら、_ソース コード エクスプローラー_ の操作を開始できます。
 
 ソース コード エクスプローラーを開くには、**[バージョン コントロール] > [TFS/Azure DevOps] > [ソース管理エクスプローラー]** の順にメニュー項目を選択します。
 
@@ -212,7 +212,7 @@ TFS に接続するには、サーバーの詳細とアカウントの資格情�
 
 ローカル ワークスペースを使ってリモート プロジェクトを設定するには、次の手順を使用します。
 
-1. コンボ ボックスから**サーバー**を選択します。
+1. コンボ ボックスから **サーバー** を選択します。
 1. "ワークスペースがありません" とローカル パスが "対応付けされていません" が示されていることに注意してください。 **[対応付けされていません]** リンクを選択して、**[新しいワークスペースの作成]** ダイアログを表示します。
 1. ワークスペースの名前を入力し、**[Add Working Folder]\(作業フォルダーの追加\)** をクリックし、コンピューター上のローカル フォルダーにプロジェクトをマッピングします。
 
@@ -241,21 +241,21 @@ TFS に接続するには、サーバーの詳細とアカウントの資格情�
 - Basic
 - Ntlm
 
-基本認証を使用するには、以下の手順に従って、Azure DevOps Services で**代替認証資格情報**を有効にする必要があります。
+基本認証を使用するには、以下の手順に従って、Azure DevOps Services で **代替認証資格情報** を有効にする必要があります。
 
 1. 所有者として、Azure DevOps 組織にサインインします (https:\//dev.azure.com/{organization}/{project})。
 
 2. 組織のツール バーの歯車アイコンを選択し、**[ポリシー]** を選択します。
 
-    ![選択されたポリシー設定オプション](media/tfvc-auth2.png)
+    ![歯車アイコンと、ドロップダウン メニューの [ポリシー] が選択されている Azure DevOps 組織ツールバーのスクリーンショット。](media/tfvc-auth2.png)
 
 3. アプリケーションの接続設定を確認します。 セキュリティ ポリシーに基づいてこれらの設定を変更します。
 
-    ![選択されたポリシー設定オプション](media/tfvc-auth.png)
+    ![Azure DevOps Services の [ポリシー] 画面のスクリーンショット。アプリケーション接続ポリシーの設定が表示されています。](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>TFVC に何も表示されない
 
-開発用コンピューターに Team Foundation バージョン管理 (TFVC) を設定するには、「[ワークスペースの管理](#managing-workspaces)」セクションの説明に従って、ワークスペースを作成する**必要があります**。
+開発用コンピューターに Team Foundation バージョン管理 (TFVC) を設定するには、「[ワークスペースの管理](#managing-workspaces)」セクションの説明に従って、ワークスペースを作成する **必要があります**。
 
 ソース管理エクスプローラーで、**[ワークスペースの管理]** ボタンをクリックします。 手順に従って、開発用コンピューター上にあるフォルダーに、プロジェクトをマップします。
 

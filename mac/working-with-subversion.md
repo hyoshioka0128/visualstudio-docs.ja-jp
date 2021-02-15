@@ -1,16 +1,16 @@
 ---
 title: Subversion の使用
-description: Visual Studio for Mac の Subversion を使用します。
+description: Visual Studio for Mac の一元化されたバージョン コントロール システムとして Subversion を使用する方法について説明します。
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 2400ED9C-6236-4C0A-A3AB-9D7CBE1F0CF4
-ms.openlocfilehash: 909da0bcb1ad3ca080d6bf4ba4e5184c1c2da98f
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 512432a7210999e1d432494ec67bb2bf7a0e6a11
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402640"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97846847"
 ---
 # <a name="working-with-subversion"></a>Subversion の使用
 
@@ -30,7 +30,7 @@ Subversion では、コピー-変更-マージ モデルを使用して、ユー
 
 リモートの Subversion リポジトリの使用を始める前に、リポジトリをチェックアウトして、ローカル コンピューターにそのディレクトリの作業コピーを作成します。
 
-Visual Studio for Mac の**チェックアウト**機能の使用方法については、「[Setting up a Subversion repository](set-up-subversion-repository.md)」(Subversion リポジトリのセットアップ) の手順に従ってください。
+Visual Studio for Mac の **チェックアウト** 機能の使用方法については、「[Setting up a Subversion repository](set-up-subversion-repository.md)」(Subversion リポジトリのセットアップ) の手順に従ってください。
 
 ## <a name="update-solution"></a>ソリューションの更新
 
