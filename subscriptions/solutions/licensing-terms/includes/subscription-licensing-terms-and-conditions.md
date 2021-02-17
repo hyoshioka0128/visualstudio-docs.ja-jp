@@ -10,15 +10,19 @@ user.type: subscriber
 tags: licensing-terms
 subscription.type: vl, cloud, retail, partner
 sap.id: 95b201e2-f079-cb93-1693-3d40ee05b552
-ms.openlocfilehash: 3027b40b8cd6a08dd805a5b552918e2a462814b7
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 018dff626318aec711c1f60f8301f8335cbf8e09
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96916092"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496290"
 ---
 ## <a name="what-are-the-subscription-licensing-terms-and-conditions"></a>サブスクリプション ライセンスの契約条件はどのような内容ですか? 
 
 すべての Visual Studio サブスクリプションはユーザーごとにライセンスが付与されます。 ライセンス付与された各ユーザーは、任意の数のデバイスにプログラムをインストールして、ソフトウェアの設計、開発、テスト、デモに使用できます。 また、Visual Studio サブスクリプションのライセンスを付与されたユーザーは、自分のプログラムに関係する問題を診断するために、ソフトウェアを評価したり、顧客の環境をシミュレートしたりすることもできます。 この方法でソフトウェアを使用するその他の各ユーザーには、ライセンスも必要です。 
 
 詳細については、[Microsoft Visual Studio のライセンスに関するホワイトペーパーを参照してください](https://visualstudio.microsoft.com/wp-content/uploads/2020/03/Visual-Studio-Licensing-Whitepaper-Mar-2020.pdf)。 
+
+使用可能なサブスクリプションを表示するには、[サブスクリプション ポータルの特典ページ](https://my.visualstudio.com/benefits)のドロップダウンを確認します。 
+
+Visual Studio サブスクリプションに含まれる[特典の詳細を確認する](https://visualstudio.microsoft.com/vs/benefits/)か、[価格と機能を比較](https://visualstudio.microsoft.com/vs/pricing/)してください。

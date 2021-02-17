@@ -486,6 +486,12 @@
                   href: updatemanifestforbrowserapplication-task.md
         - name: エスケープする特殊文字
           href: special-characters-to-escape.md
+        - name: エラー メッセージ
+          items:
+            - name: MSB3644
+              href: errors/msb3644.md
+            - name: MSB8036
+              href: errors/msb8036.md
     - name: MSBuild のプログラムでの使用
       items:
         - name: 概要
