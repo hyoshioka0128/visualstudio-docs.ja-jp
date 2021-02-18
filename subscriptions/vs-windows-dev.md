@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537722"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089594"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
 
 ## <a name="activation-steps"></a>アクティブ化の手順
 Windows 開発者アカウントを使うには、アカウントを設定するか、既存のアカウントを使ってサインインする必要があります。
+
+> [!IMPORTANT]
+> Windows 開発者アカウントを作成するには、Microsoft アカウント (MSA) を使用する必要があります。  Azure Active Directory アカウントの使用はサポートされていません。  
 
 このプロセスの "プライベート" ブラウザー ウィンドウを作成することをお勧めします。  たとえば、Google Chrome では、新しい "シークレット" ウィンドウを作成します。  Internet Explorer では、新しい "InPrivate" ウィンドウを作成します。
 
@@ -41,15 +44,15 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 12. **[ダッシュボードへ移動]** をクリックして、Windows 開発者アカウントの使用を開始します。
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | Included       |  はい|
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL  | Included       |  はい|
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい|
 | Visual Studio Professional Subscription with GitHub Enterprise | VL                                        | Included                                                            |はい|
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  N/A|
-| MSDN Platforms (標準)                                          | VL、リテール                                              |  使用できません                                            |  N/A|
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用不可                                            |  NA|
+| MSDN Platforms (標準)                                          | VL、リテール                                              |  使用不可                                            |  NA|
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用不可                                                           |N/A|
 ||
 
 <sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、Most Valuable Professional (MVP)、Regional Director (RD)。除外:Microsoft Partner Network (MPN)、Imagine、MCT Software & Services。*

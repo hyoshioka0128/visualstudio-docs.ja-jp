@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537982"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542991"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -95,6 +95,9 @@ Pluralsight サブスクリプションの有効期限が切れると、状態�
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>Q:Visual Studio Enterprise サブスクリプションを持っていますが、特典ページに Pluralsight タイルが表示されません。 理由
 A: すべての Visual Studio Enterprise サブスクリプションに Pluralsight 特典が含まれるわけではありません。  [特典を受ける条件についての表](#eligibility)で、サブスクリプションが対象であるかどうかを参照してください。
+
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>Q:Pluralsight 特典を複数回使用することはできますか?  
+A: 選択した Visual Studio サブスクリプションの Pluralsight 特典は、ご利用のサブスクリプションが更新されると、更新されます。 たとえば、毎年更新する年間サブスクリプションをお持ちの場合、毎年更新すると特典を利用できるようになります。 複数年のサブスクリプションをお持ちの場合、Pluralsight 特典はサブスクリプションの有効期間中に 1 回使用できます。  複数年のサブスクリプションを更新した場合、更新後に特典が再度利用できるようになります。  更新日を確認するには、<https://my.visualstudio.com/subscriptions> にアクセスし、[*サポート情報*] をクリックして、"有効期間:" の日付を見つけます。 
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>Q:任意のカスタマイズされた学習のプレイリストやチャネルへのアクセス権はありますか。
 A: はい。 Visual Studio サブスクライバーは、このサービスの呼び物であるロール、ラーニング パス、カスタム チャネル (プレイリスト) を Pluralsight トレーニング特典として利用できます。 このサービスの呼び物であるコンテンツは Microsoft と Pluralsight が特別に編集しており、重要な関心領域が学習できるように調整されています。 Pluralsight ホーム ページで Pluralsight 特典やその他のコンテンツを利用するには、Visual Studio サブスクリプション ポータル <https://my.visualstudio.com/benefits> でそれをアクティベートします。
