@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0694fd6b4ba82faf8b05354765fc5734efe2ef4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50ef18e44579525df136bd770cda96124cb30c87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700211"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956868"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 関数
 この関数は、ソース管理プラグインが MSSCCPRJ.SCC の作成をサポートしているかどうかを判断します。指定された各ファイルの SCC ファイル。
@@ -59,9 +59,9 @@ SCCRTN SccWillCreateSccFile(
 |SCC_E_INVALIDFILEPATH|配列内のパスの1つが無効です。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、ソース管理プラグインが MSSCCPRJ.SCC でサポートを提供するかどうかを判断するために、ファイルのリストを使用して呼び出されます。指定された各ファイルの SCC ファイル (MSSCCPRJ.SCC の詳細については、「」を参照してください)。SCC ファイル、「Mssccprj.scc」を参照してください [。SCC ファイル](../extensibility/mssccprj-scc-file.md))。 ソース管理プラグインでは、MSSCCPRJ.SCC を作成する機能があるかどうかを宣言できます。初期化中に宣言することによる SCC ファイル `SCC_CAP_SCCFILE` 。 このプラグインは、 `TRUE` `FALSE` 指定された `pbSccFiles` ファイルのどれが mssccprj.scc しているかを示すために、配列内のファイルごとにまたはを返します。SCC サポート。 プラグインが関数から成功コードを返す場合、返される配列の値は受け入れられます。 失敗した場合、配列は無視されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [MSSCCPRJ.SCC File](../extensibility/mssccprj-scc-file.md)

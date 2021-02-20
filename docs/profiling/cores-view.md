@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e47af672-9785-4899-bd45-4d9dda3c396f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b124cc2f609ab7a113fd28f7086172169138d5f
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c4f04fd5021e0ac11cd04e2e04df96da19af1c77
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951668"
 ---
 # <a name="cores-view"></a>コア ビュー
 **コア ビュー** には、スレッド実行が論理プロセッサのコアにどのようにマッピングされたかを示します (**[分析]** > **[コンカレンシー ビジュアライザー]** を選択して、コンカレンシー ビジュアライザーを開始します)。 サーバー アプリケーションを開発している場合、このビューは、スレッド アフィニティまたはスレッド プール管理を使ってキャッシュのパフォーマンスを最適化するのに役立ちます。 また、スレッド アフィニティを使うことでコア間の移行の問題が悪化した可能性がある場合の調査にも役立ちます。 コア ビューには、グラフと凡例の 2 つの部分があります。

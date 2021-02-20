@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: 管理ポータルで言語、連絡先、サブスクリプション レベルなどの基本設定を設定する方法について説明します。
-ms.openlocfilehash: e044db92a318114cd2f159b859843db354fac6c7
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467441"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511346"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>管理ポータルで契約の基本設定を設定する
 スーパー管理者は、各契約に対してグローバルに適用される特定の基本設定を、管理ポータルで設定できます。  これらの基本設定を行うと、管理者がサブスクライバーを追加するときには、その管理者用のサブスクリプションの詳細が自動的に設定されます。また、これらの基本設定は、スーパー管理者だけがグローバルに変更できます。  
@@ -73,7 +73,7 @@ A: 管理者に連絡する方法に関する記事が[こちら](contact-my-adm
 A: **[Contact my Admin]\(管理者に問い合わせる\)** に特定の電子メール アドレスが設定されていない場合、契約のすべての管理者が要求を受け取ります。 
 
 ## <a name="resources"></a>リソース
-- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio の管理とサブスクリプションのサポート](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

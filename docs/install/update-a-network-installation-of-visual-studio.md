@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959156"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
@@ -67,7 +67,7 @@ ms.locfileid: "85545432"
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* 次に、追加のワークロードとローカライズされた言語を追加する方法を示します。  (このコマンドでは、*Azure の開発*ワークロードを追加しています。)これで、Managed Desktop と Azure の両方がこのレイアウトに含まれるようになります。  英語とドイツ語の言語リソースもすべてのワークロードに含まれます。  さらに、レイアウトが利用可能な最新バージョンに更新されます。
+* 次に、追加のワークロードとローカライズされた言語を追加する方法を示します。  (このコマンドでは、*Azure の開発* ワークロードを追加しています。)これで、Managed Desktop と Azure の両方がこのレイアウトに含まれるようになります。  英語とドイツ語の言語リソースもすべてのワークロードに含まれます。  さらに、レイアウトが利用可能な最新バージョンに更新されます。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
@@ -78,7 +78,7 @@ ms.locfileid: "85545432"
     >
     > **対応策**: 更新の後で個別に変更操作を実行することで、不足しているコンポーネントをインストールします。
 
-* 最後に、バージョンを更新せずに追加のワークロードとローカライズされた言語を追加する方法を示します。 (このコマンドでは、*ASP.NET および Web の開発*ワークロードを追加しています。)これで、マネージド デスクトップ、Azure、ASP.NET、Web の開発ワークロードがこのレイアウトに含まれるようになりました。 英語、ドイツ語、フランス語の言語リソースもすべてのワークロードに含まれます。  ただし、このコマンドが実行されたときにレイアウトが利用可能な最新バージョンに更新されませんでした。 そのため、既存のバージョンのままになります。
+* 最後に、バージョンを更新せずに追加のワークロードとローカライズされた言語を追加する方法を示します。 (このコマンドでは、*ASP.NET および Web の開発* ワークロードを追加しています。)これで、マネージド デスクトップ、Azure、ASP.NET、Web の開発ワークロードがこのレイアウトに含まれるようになりました。 英語、ドイツ語、フランス語の言語リソースもすべてのワークロードに含まれます。  ただし、このコマンドが実行されたときにレイアウトが利用可能な最新バージョンに更新されませんでした。 そのため、既存のバージョンのままになります。
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2ceb87277460f65e52c35f02e7fbbd01da1101a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736515"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944720"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -50,7 +50,7 @@ IDebugAlias : IUnknown
 ## <a name="remarks"></a>解説
  エイリアスは、文字列形式の10進数の後に # 文字が続きます (たとえば、1001 #)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

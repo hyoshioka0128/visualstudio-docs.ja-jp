@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81532e2616eefb9cb584eae1a70371fd2f963be1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67a94f3f88d85d1e74ce7b1d67e1ef3d44546132
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718389"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965695"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 型を表すフィールドを作成する機能を表します。
@@ -32,12 +32,12 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|プリミティブ型を表すオブジェクトを作成します。|
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|指定した型へのポインターを作成します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

@@ -5,15 +5,15 @@ ms.date: 06/25/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: c0aedbccdb82bd91fe201a23b6201a3cdd7db283
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908687"
 ---
 # <a name="work-with-sql-server-and-r"></a>SQL Server と R の使用
 
@@ -119,7 +119,7 @@ SQL コードに問題がないことを確認したら、そのコードを R �
 
 このように、このシンプルなステップによって R コードが自動的に生成されて *.sql* ファイルが開きます。このファイルの内容を文字列に読み込み、その文字列を RODBC パッケージに渡して SQL Server に送信します。
 
-`InputDataSet` データフレームを必要に応じて処理する R コードを対話形式で記述できます。 エディター内で R コードを選択し、**Ctrl**+**Enter** キーを押すだけで、そのコードを[対話型ウィンドウ](interactive-repl-for-r-in-visual-studio.md)に送信できます。
+`InputDataSet` データフレームを必要に応じて処理する R コードを対話形式で記述できます。 エディター内で R コードを選択し、**Ctrl**+**Enter** キーを押すだけで、そのコードを [対話型ウィンドウ](interactive-repl-for-r-in-visual-studio.md)に送信できます。
 
 *.Template.sql* ファイル (この例では *StoredProcedure.Template.sql*) には、最終的に、SQL ストアド プロシージャを生成するためのテンプレートが含まれます。
 

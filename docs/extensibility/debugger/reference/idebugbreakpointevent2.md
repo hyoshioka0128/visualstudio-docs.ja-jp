@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59bdef49f5c7b9c4dc345ba1862f3f08042428e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952305"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 デバッグエンジン (DE) は、プログラムがブレークポイントで停止したときに、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
@@ -41,7 +41,7 @@ IDebugBreakpointEvent2 : IUnknown
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|現在のコードの場所で発生したすべてのブレークポイントの列挙子を作成します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

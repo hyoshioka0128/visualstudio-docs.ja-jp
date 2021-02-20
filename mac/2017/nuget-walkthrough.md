@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950410"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729432"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>プロジェクトに NuGet パッケージを含める
 
@@ -32,11 +32,11 @@ NuGet パッケージの機能を示すため、まず、新しいアプリケ�
 
 ## <a name="adding-a-package"></a>パッケージの追加
 
-Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、 **[パッケージを追加]** を選択します。
+Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pad** の **[パッケージ]** フォルダーを右クリックし、**[パッケージを追加]** を選択します。
 
 ![新しい NuGet パッケージのコンテキスト アクションを追加する](media/nuget-walkthrough-PackagesMenu.png)
 
-これで、 **[パッケージを追加]** ウィンドウが起動します。 ソース ドロップダウンが次のように `nuget.org` に設定されていることを確認します。
+これで、**[パッケージを追加]** ウィンドウが起動します。 ソース ドロップダウンが次のように `nuget.org` に設定されていることを確認します。
 
 ![ソース リスト ドロップダウン](media/nuget-walkthrough-Source.png)
 
@@ -44,7 +44,7 @@ Visual Studio for Mac でプロジェクトを開いた状態で、**Solution Pa
 
 ![Nuget パッケージのリスト](media/nuget-walkthrough-AddPackages1.png)
 
-`azure` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、 **[パッケージを追加]** ボタンをクリックしてインストールを開始します。
+`azure` などの特定のパッケージを検索するには、右上隅の検索ボックスを使用します。 使用するパッケージが見つかったら、それを選択し、**[パッケージを追加]** ボタンをクリックしてインストールを開始します。
 
 [Azure の NuGet パッケージを追加する](media/nuget-walkthrough-AddPackages2.png)
 
@@ -72,11 +72,11 @@ using Newtonsoft.Json;
 
 ## <a name="package-updates"></a>パッケージの更新
 
-パッケージの更新は、すべて一度に行う ( **[パッケージ]** ノードを右クリックする) ことも、コンポーネントごとに個別に行うこともできます。
+パッケージの更新は、すべて一度に行う (**[パッケージ]** ノードを右クリックする) ことも、コンポーネントごとに個別に行うこともできます。
 
 コンテキスト メニューにアクセスするには、次のように **[パッケージ]** を右クリックします。
 
-![パッケージ メニュー](media/nuget-walkthrough-PackagesMenu.png)
+![選択されている [パッケージ] ノードと、[パッケージを追加]、[更新]、[復元]、[最新の情報に更新] の各コマンドで開く右クリック コンテキスト メニューを示すスクリーンショット。](media/nuget-walkthrough-PackagesMenu.png)
 
 * **[パッケージを追加]** - プロジェクトにさらにパッケージを追加するためのウィンドウが開きます。
 * **[更新]** - 各パッケージのソース サーバーを確認し、新しいバージョンをダウンロードします。
@@ -86,7 +86,7 @@ using Newtonsoft.Json;
 
 次のように、個々のパッケージを右クリックして、コンテキスト メニューにアクセスすることもできます。
 
-![パッケージ メニュー](media/nuget-walkthrough-PackageMenu.png)
+![選択されている個々のパッケージと、[更新]、[削除]、[最新の情報に更新] の各コマンドで開く右クリック コンテキスト メニューを示すスクリーンショット。](media/nuget-walkthrough-PackageMenu.png)
 
 * **[バージョン番号]** - バージョン番号は無効になっているメニュー項目です。情報提供のみを目的としています。
 * **[更新]** - ソース サーバーを確認し、新しいバージョン (存在する場合) をダウンロードします。
@@ -96,17 +96,17 @@ using Newtonsoft.Json;
 
 インストール可能なパッケージが最初に nuget.org から取得されます。ただし、Visual Studio for Mac に他のパッケージの場所を追加することができます。 これは、開発中の独自の NuGet パッケージをテストする場合や、会社または組織内でプライベートの NuGet サーバーを使用する場合に便利です。
 
-Visual Studio for Mac で、 **[Visual Studio]、[基本設定]、[NuGet]、[ソース]** の順に移動し、パッケージ ソースのリストを表示して編集します。 ソースはリモート サーバー (URL で指定) またはローカル ディレクトリである場合があります。
+Visual Studio for Mac で、**[Visual Studio]、[基本設定]、[NuGet]、[ソース]** の順に移動し、パッケージ ソースのリストを表示して編集します。 ソースはリモート サーバー (URL で指定) またはローカル ディレクトリである場合があります。
 
 ![パッケージ ソース](media/nuget-walkthrough-PackageSource.png)
 
 **[追加]** をクリックして新しいソースをセットアップします。 パッケージ ソースのフレンドリ名と URL (またはファイル パス) を入力します。 ソースがセキュリティで保護された Web サーバーの場合は、ユーザー名とパスワードも入力します。それ以外の場合はこれらの項目を空白のままにします。
 
-![パッケージ ソースを追加する](media/nuget-walkthrough-PackageSource2.png)
+![[パッケージ ソースの追加] ダイアログのスクリーンショット。[名前]、[場所]、[ユーザー名]、[パスワード] のフィールドが含まれています。](media/nuget-walkthrough-PackageSource2.png)
 
 パッケージを検索する際に、以下のようにさまざまなソースを選択することができます。
 
-![パッケージ ソースを追加する](media/nuget-walkthrough-PackageSource3.png)
+![[パッケージを追加] 画面のスクリーンショット。パッケージの検索時に選択できるソースのドロップダウン リストが表示されています。](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>バージョン コントロール
 

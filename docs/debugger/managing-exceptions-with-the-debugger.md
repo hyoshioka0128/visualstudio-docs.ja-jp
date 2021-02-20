@@ -31,15 +31,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58a701e6297cb81ce84c164b3b6791a6e73c76f8
-ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
+ms.openlocfilehash: b594857b00ee233c186008efc9d0fba7d968a9bc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98240271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893166"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Visual Studio のデバッガーでの例外の管理
 
@@ -217,9 +217,9 @@ public class GenericException<T> : Exception
 
    ![例外用の追加の条件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 条件行ごとにモジュール名を入力し、比較演算子リストを **[次の値と等しい]** または **[次の値と等しくない]** に変更します。 モジュールを複数指定するには、名前にワイルドカード (* *\\\** _) を指定することもできます。
+3. 条件行ごとにモジュール名を入力し、比較演算子リストを **[次の値と等しい]** または **[次の値と等しくない]** に変更します。 モジュールを複数指定したい場合は、名前にワイルドカード ( **\\\*** ) を指定することも可能です。
 
-4. 条件を削除する場合は、条件行の末尾の _ *X** を選択します。
+4. 条件を削除する場合は、条件行の末尾の **X** を選択します。
 
 ## <a name="see-also"></a>関連項目
 

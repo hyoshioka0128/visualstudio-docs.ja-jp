@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: サブスクリプション管理者の責任について説明します。
-ms.openlocfilehash: 183209e5e1fa873ae9af6ff2d9b32caf94c5461e
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 9d2c724fafb41ee44e531a1eec41d76d7e888686
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467467"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511294"
 ---
 # <a name="overview-of-admin-responsibilities"></a>管理者責任の概要
 管理者は組織のサブスクリプションを管理できます。  管理者ロールには、ライセンス条項に基づいてサブスクリプションが管理されていることを保証するという責任も伴います。 この記事では、管理者ロールに伴う責任、特典、制限について説明します。
@@ -41,8 +41,9 @@ Visual Studio サブスクリプションでは、開発者はソフトウェア
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
+- [Visual Studio の管理とサブスクリプションのサポート](https://my.visualstudio.com/gethelp)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [運用前環境のインベントリ](admin-inventory.md)
 - [大規模なチームと外部請負業者を管理する](manage-teams.md)

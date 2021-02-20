@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, Business Data Connectivity service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0486ce6ac53850b1b607f9e7f859806cdc3ef8fe
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 8232847ce336ca559134aa1211a70057a1306faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949260"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>ビジネス データ接続モデルを作成する
   Business Data Connectivity (BDC) モデルを作成することも、Visual Studio を使用して既存の BDC モデルをカスタマイズすることもできます。 各 SharePoint プロジェクトに含めることができるモデルは1つだけです。 詳細については、「 [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)」を参照してください。

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891606"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>[メッセージ] タブ ([メッセージ オプション] ダイアログ ボックス)
 **[メッセージ]** タブを使用し、[[メッセージ ビュー]](../debugger/messages-view.md) に一覧表示するメッセージの種類を選択し、メッセージ検索条件を指定します。 [[メッセージ オプション]](../debugger/message-options-dialog-box.md) ダイアログ ボックスを表示するには、 **[Spy]** メニューから **[ログ メッセージ]** を選択します。
@@ -34,7 +34,7 @@ ms.locfileid: "62905533"
 
 - Unknown: 0 から (WM_USER - 1) までの範囲内の未知のメッセージ
 
-  これらの**メッセージ グループ**は、 **[表示するメッセージ]** で特定のエントリにマッピングされないことにご注意ください。 グループを選択すると、選択内容はメッセージ ストリームに直接適用されます。
+  これらの **メッセージ グループ** は、 **[表示するメッセージ]** で特定のエントリにマッピングされないことにご注意ください。 グループを選択すると、選択内容はメッセージ ストリームに直接適用されます。
 
   **[メッセージ グループ]** 内の灰色チェック ボックスは、そのグループで **[表示するメッセージ]** リスト ボックスが変更されていることを示します。そのグループのメッセージの種類については、一部が選択されていません。
 

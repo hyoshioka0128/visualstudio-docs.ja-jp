@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37acb9f2984c36130de494108ef4b76a59cc74e7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7241c697baf7810d961f4cc3aba71d469bad4582
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963563"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 このインターフェイスは、特定のスレッドのコールスタック内の1つのスタックフレームを表します。
@@ -37,7 +37,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugStackFrame2` ます。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|このスタックフレームのコードコンテキストを取得します。|
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|このスタックフレームのドキュメントコンテキストを取得します。|
@@ -50,10 +50,10 @@ IDebugStackFrame2 : IUnknown
 |[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|スタックフレームのプロパティの列挙子を作成します。|
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|スタックフレームに関連付けられているスレッドを取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このインターフェイスは、デバッグ中のプログラムがブレークポイントで停止された場合にのみ取得されます (ユーザー設定のブレークポイントまたは例外によって発生します)。 このインターフェイスから式のコンテキストを取得して、式を評価したり、レジスタの一覧を返したり、呼び出し履歴を取得して検査したりすることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -61,4 +61,4 @@ IDebugStackFrame2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

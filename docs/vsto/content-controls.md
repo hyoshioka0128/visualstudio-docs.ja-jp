@@ -37,15 +37,15 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a34211c7fb1fa001719219b7d08baab65340bde5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ce692bf10c5473c648fd6587b6b6568d369ed496
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947998"
 ---
 # <a name="content-controls"></a>コンテンツ コントロール
   コンテンツ コントロールは、次のような機能を備える文書やテンプレートをデザインするときに使用します。
@@ -96,7 +96,7 @@ ms.locfileid: "96848041"
 ### <a name="drop-down-list"></a>ドロップダウン リスト
  ドロップダウン リストには、ユーザーが選択できるアイテムの一覧が表示されます。 コンボ ボックスとは異なり、ドロップダウン リストではユーザーがアイテムの追加や編集を行うことはできません。 詳細については、<xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 型を参照してください。
 
-### <a name="group"></a>グループ
+### <a name="group"></a>Group
  グループ コントロールは、文書の中にユーザーが編集や削除を行うことができない (保護された) 領域を定義します。 グループ コントロールには、任意のドキュメント アイテム (テキスト、表、グラフィックス、およびその他のコンテンツ コントロール) を含めることができます。 詳細については、<xref:Microsoft.Office.Tools.Word.GroupContentControl> 型を参照してください。
 
 ### <a name="picture"></a>Picture
@@ -206,7 +206,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="data-bind-events-for-content-controls"></a>コンテンツコントロールのデータバインドイベント
  すべてのコンテンツ コントロールは、データ関連のタスク (データ ソースを更新する前にコントロール内のテキストが特定の条件を満たしているかどうかの検証など) を実行するために処理できる一連のイベントを提供します。 データ バインディングに関連するコンテンツ コントロール イベントの一覧を、次の表に示します。
 
-|タスク|Event|
+|タスク|イベント|
 |----------|-----------|
 |カスタム XML 部分にバインドされているコンテンツ コントロール内のテキストが Word で自動的に更新される直前に、コードを実行します。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |コンテンツ コントロールにバインドされているカスタム XML 部分内のデータが Word で自動的に更新される直前 (コンテンツ コントロール内のテキストが変更された後) に、コードを実行します。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|

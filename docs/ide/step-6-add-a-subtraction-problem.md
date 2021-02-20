@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8157335e47ec13c66da471f77ddbd2877bcac12d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 64d28df03c18207a3f0ded58caa48d4b41800824
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868934"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>手順 6: 減算問題を追加する
 このチュートリアルの第 6 部では、減算問題を追加し、次のタスクを実行する方法を説明します。
@@ -62,12 +62,12 @@ ms.locfileid: "96480669"
      複数の方法で、このチュートリアルで前に randomizer と名付けた、Random クラスの `Next()` メソッドを呼び出すことができます。 複数の方法で呼び出すことができるメソッドをオーバーロード メソッドと呼び、IntelliSense を使用して確認することができます。 `Next()` メソッドについての IntelliSense ウィンドウのツールヒントをもう一度見てください。
 
      ![IntelliSense ウィンドウのツール ヒント](../ide/media/express_overloads.png)<br/>
-**_IntelliSense_* _ _ウィンドウのツール ヒント*
+***IntelliSense** _ _ウィンドウのツール ヒント*
 
      ツールヒントには "**(+ 2 オーバーロード)**" と表示され、これは他の 2 つの方法で `Next()` メソッドを呼び出せることを意味します。 オーバーロードには、異なる数または型の引数が含まれていて、互いに動作が若干異なります。 たとえば、メソッドは単一の整数引数を受け取ることがあり、さらにオーバーロードの 1 つは整数と文字列を受け取ることがありますが、 目的に基づいて適切なオーバーロードを選択します。 `StartTheQuiz()` メソッドにコードを追加すると、`randomizer.Next(` を入力するとすぐに、詳細情報が IntelliSense ウィンドウに表示されます。 別のオーバーロードに切り替えるには、次の図に示すように、**上矢印** キーおよび **下矢印** キーを押します。
 
      ![IntelliSense 内での Next&#40;&#41; メソッドのオーバーライド](../ide/media/express_nextoverload.png)<br/>
-** ***IntelliSense** 内での*  ***Next()** _ _メソッドのオーバーロード_
+** ***IntelliSense*** 内での*  ***Next()** メソッドのオーバーロード
 
      この場合、最小値と最大値を指定できるため、最後のオーバーロードを選択する必要があります。
 
@@ -88,7 +88,7 @@ ms.locfileid: "96480669"
      プログラムには、次の図に示すように減算問題が含まれます。
 
      ![減算の問題のある計算クイズ](../ide/media/express_addsubtract.png)<br/>
-_*減算の問題のある _計算クイズ_*_ _*
+*減算の問題のある **計算クイズ***
 
 ## <a name="to-continue-or-review"></a>続行または確認するには
 

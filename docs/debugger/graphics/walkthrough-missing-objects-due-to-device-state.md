@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c29e240d4be2f66fb0684bf5372d59fe5d4d825a
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a8eff8a088823bc46363d2e5ea7b40b3e2b8478e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890436"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>チュートリアル: デバイス状態によるオブジェクトの不足
 このチュートリアルでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] のグラフィックス診断を使用して、デバイスの構成が正しくないために表示されないオブジェクトを調査する方法を示します。

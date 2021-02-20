@@ -10,15 +10,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881959"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>チュートリアル: 複数のコンピューターを使用するビルド環境の作成
 
@@ -65,7 +65,7 @@ ms.locfileid: "92136954"
 - x86 コンピューターの既定の場所は *C:\Program Files\Microsoft Visual Studio* です
 - x64 コンピューターの既定の場所は *C:\Program Files (x86)\Microsoft Visual Studio* です
 
-*Program Files* フォルダーの名前が、インストールされているオペレーティング システムによって異なる点に注意してください。 x86 コンピューターでは *Program Files* 、x64 コンピューターでは *Program Files (x86)* です。 システムのアーキテクチャに関係なく、このチュートリアルでは、 *Program Files* フォルダーを *%ProgramFiles%* と示します。
+*Program Files* フォルダーの名前が、インストールされているオペレーティング システムによって異なる点に注意してください。 x86 コンピューターでは *Program Files*、x64 コンピューターでは *Program Files (x86)* です。 システムのアーキテクチャに関係なく、このチュートリアルでは、*Program Files* フォルダーを *%ProgramFiles%* と示します。
 
 > [!NOTE]
 > ビルド コンピューターでは、関連するファイルをすべて同じドライブに配置する必要があります。 ただし、そのドライブのドライブ文字は、Visual Studio がホスト コンピューターにインストールされているドライブのドライブ文字と異なってもかまいません。 いずれにしても、後でこのドキュメント内で説明するように、レジストリ エントリの作成時にファイルの場所の情報が必要になります。
@@ -172,7 +172,7 @@ ms.locfileid: "92136954"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 「 [デバッグの実行可能ファイルを実行するテスト用コンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)」の説明に従って、 *Debug_NonRedist\x86* フォルダーまたは *Debug_NonRedist\x64* フォルダーから次のファイルのみをビルド コンピューターにコピーします。 他のファイルはコピーしないでください。
+5. 「[デバッグの実行可能ファイルを実行するテスト用コンピューターの準備](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)」の説明に従って、*Debug_NonRedist\x86* フォルダーまたは *Debug_NonRedist\x64* フォルダーから次のファイルのみをビルド コンピューターにコピーします。 他のファイルはコピーしないでください。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -259,7 +259,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 
 ビルド コンピューターで **コマンド プロンプト** ウィンドウを開き、 *%Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat* を実行します。 使用するツールセット (x86、ネイティブ x64、x64 クロス コンパイラ) を指定するには、コマンド ライン引数を使用します。 コマンド ライン引数を指定しなかった場合は、x86 のツールセットが使用されます。
 
-次の表では、 *vcvarsall.bat* でサポートされている引数を説明しています。
+次の表では、*vcvarsall.bat* でサポートされている引数を説明しています。
 
 |vcvarsall.bat 引数|コンパイラ|ビルド コンピューターのアーキテクチャ|ビルド出力のアーキテクチャ|
 | - |--------------| - | - |
@@ -267,7 +267,7 @@ MSBuild 用の設定を構成するには、レジストリ エントリを作�
 |x86_amd64|x64 クロス|x86、x64|X64|
 |amd64|x64 ネイティブ|X64|X64|
 
-*vcvarsall.bat* が正常に実行された (エラー メッセージが表示されない) 場合は、次の手順をスキップして、このドキュメントの「 [ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする](#install-msbuild-to-gac)」に進むことができます。
+*vcvarsall.bat* が正常に実行された (エラー メッセージが表示されない) 場合は、次の手順をスキップして、このドキュメントの「[ビルド コンピューターのグローバル アセンブリ キャッシュ (GAC) に MSBuild アセンブリをインストールする](#install-msbuild-to-gac)」に進むことができます。
 
 ### <a name="manually-set-environment-variables"></a>手動で環境変数を設定する
 
@@ -314,7 +314,7 @@ MSBuild を使用するには、ビルド コンピューターの GAC にいく
 
 Azure Pipelines を使用して Visual Studio プロジェクトとソリューションをビルドできます。または、コマンド ライン上でビルドすることもできます。 Azure Pipelines を使用してプロジェクトをビルドすると、システムのアーキテクチャに対応する MSBuild 実行可能ファイルが起動されます。 コマンド ラインでは、32 ビット MSBuild または 64 ビット MSBuild を使用できます。MSBuild のアーキテクチャは、PATH 環境変数を設定するか、アーキテクチャ固有の MSBuild 実行可能ファイルを直接呼び出すことによって選択できます。
 
-コマンド プロンプトで *msbuild.exe* を使用するには、次のコマンドを実行します ( *solution.sln* は、ソリューションの名前のプレースホルダーです)。
+コマンド プロンプトで *msbuild.exe* を使用するには、次のコマンドを実行します (*solution.sln* は、ソリューションの名前のプレースホルダーです)。
 
 **msbuild** *solution.sln*
 
@@ -333,7 +333,7 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
      ここに示す手順では、このディレクトリを %Depot% と示します。
 
-2. このチュートリアルの「 [ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)」の説明に従って、ディレクトリとファイルをコピーします。ただし、コピー先は、先ほど作成した *%Depot%* ディレクトリ内とします。 たとえば、 *%ProgramFiles%\Windows Kits\8.0\bin* からのコピー先は *%Depot%\Windows Kits\8.0\bin* になります。
+2. このチュートリアルの「[ホスト コンピューターからビルド コンピューターにファイルをコピーする](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)」の説明に従って、ディレクトリとファイルをコピーします。ただし、コピー先は、先ほど作成した *%Depot%* ディレクトリ内とします。 たとえば、 *%ProgramFiles%\Windows Kits\8.0\bin* からのコピー先は *%Depot%\Windows Kits\8.0\bin* になります。
 
 3. *%Depot%* にファイルを貼り付けたら、次の変更を行います。
 
@@ -355,7 +355,7 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
-4. *.props* ファイル (例: *Partner.AutoImports.props* ) を作成し、プロジェクトが含まれるフォルダーのルートに配置します。 このファイルは、さまざまなリソースを検索するために MSBuild によって使用される変数の設定用に使用されます。 このファイルで設定されていない変数は、レジストリ値に依存する他の *.props* ファイルおよび *.targets* ファイルによって設定されます。 ここではレジストリ値を設定しないため、これらの変数が空になり、ビルドは失敗します。 代わりに、 *Partner.AutoImports.props* に次のコードを追加します。
+4. *.props* ファイル (例: *Partner.AutoImports.props*) を作成し、プロジェクトが含まれるフォルダーのルートに配置します。 このファイルは、さまざまなリソースを検索するために MSBuild によって使用される変数の設定用に使用されます。 このファイルで設定されていない変数は、レジストリ値に依存する他の *.props* ファイルおよび *.targets* ファイルによって設定されます。 ここではレジストリ値を設定しないため、これらの変数が空になり、ビルドは失敗します。 代わりに、*Partner.AutoImports.props* に次のコードを追加します。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -388,9 +388,9 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
 6. コマンド ライン環境を次のように変更します。
 
-    - Set Depot= *location of the Depot directory that you created in step 1*
+    - Set Depot=*location of the Depot directory that you created in step 1*
 
-    - Set path=%path%; *location of MSBuild on the computer* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - Set path=%path%;*location of MSBuild on the computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
        ネイティブ 64 ビットのビルドの場合は、64 ビット版の MSBuild が指定されるように調整します。
 
@@ -400,9 +400,9 @@ Azure Pipelines を使用して Visual Studio プロジェクトとソリュー�
 
 6. コマンド ライン環境を次のように変更します。
 
-    - Set Depot= *location of the Depot directory that you created in step 1*
+    - Set Depot=*location of the Depot directory that you created in step 1*
 
-    - Set path=%path%; *location of MSBuild on the computer* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+    - Set path=%path%;*location of MSBuild on the computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 
        ネイティブ 64 ビットのビルドの場合は、64 ビット版の MSBuild が指定されるように調整します。
 

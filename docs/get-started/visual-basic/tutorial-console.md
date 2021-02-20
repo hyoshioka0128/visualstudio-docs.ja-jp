@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579937"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915023"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
@@ -53,7 +53,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ### <a name="add-a-workload-optional"></a>ワークロードを追加する (省略可能)
 
-**コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発**ワークロードを追加して取得できます。 コンピューターにインストールされている Visual Studio 2017 の更新プログラムに応じて、次の 2 つの方法のうちのいずれかでこのワークロードを追加することができます。
+**コンソール アプリ (.NET Core)** プロジェクト テンプレートが表示されない場合は、 **.NET Core クロスプラットフォームの開発** ワークロードを追加して取得できます。 コンピューターにインストールされている Visual Studio 2017 の更新プログラムに応じて、次の 2 つの方法のうちのいずれかでこのワークロードを追加することができます。
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>オプション 1:[新しいプロジェクト] ダイアログ ボックスを使用する
 

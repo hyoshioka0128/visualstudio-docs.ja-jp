@@ -4,19 +4,19 @@ description: Azure ディープ ラーニング VM で TensorFlow モデルを�
 keywords: AI, Visual Studio, ディープ ラーニング仮想マシン
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.openlocfilehash: 8f6aef2d0cf8fe727036dda91256ac0330e15d37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "80638762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841316"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>クラウドで TensorFlow モデルをトレーニングする
 
@@ -61,7 +61,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 ![新しいリモート マシンを追加する](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>ジョブを Azure VM に送信する
-**ソリューション エクスプローラー**で MNIST プロジェクトを右クリックし、 **[ジョブの送信]** を選びます。
+**ソリューション エクスプローラー** で MNIST プロジェクトを右クリックし、 **[ジョブの送信]** を選びます。
 
 ![リモート マシンへのジョブの送信](media/tensorflow-vm/job-submission.png)
 
@@ -74,7 +74,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 - **[送信]** をクリックします。
 
 ## <a name="check-status-of-job"></a>ジョブの状態を確認する
-ジョブの状態と詳細を見るには、ジョブを送信した仮想マシンを**サーバー エクスプローラー**で展開します。 **[ジョブ]** をダブルクリックします。
+ジョブの状態と詳細を見るには、ジョブを送信した仮想マシンを **サーバー エクスプローラー** で展開します。 **[ジョブ]** をダブルクリックします。
 
 ![ジョブ ブラウザー](media/tensorflow-vm/job-browser.png)
 

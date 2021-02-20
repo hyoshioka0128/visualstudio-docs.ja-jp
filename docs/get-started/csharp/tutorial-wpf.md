@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26beadbe6963a685f10aef1db7bd8779434927d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924882"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
@@ -44,7 +44,7 @@ Visual Studio を初めて開くときには、サインインが求められま
 
 ![設定の選択ダイアログ ボックス](../media/exploreide-settings.png)
 
-Visual Studio を起動すると、ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **スタート ページ**が表示されます。 ソリューションかプロジェクトが読み込まれると、 **[スタート ページ]** がある領域にエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
+Visual Studio を起動すると、ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **スタート ページ** が表示されます。 ソリューションかプロジェクトが読み込まれると、 **[スタート ページ]** がある領域にエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 
 ![全般設定が適用された Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png "[全般設定] が適用された Visual Studio 2017 IDE のスクリーンショット")
 
@@ -93,7 +93,7 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
 ::: moniker-end
 
-Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、**ソリューション エクスプローラー**は各種ファイルを表示します。 **WPF デザイナー**には、*MainWindow.xaml* のデザイン ビューと XAML ビューが分割ビューで表示されます。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。 ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。
+Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、**ソリューション エクスプローラー** は各種ファイルを表示します。 **WPF デザイナー** には、*MainWindow.xaml* のデザイン ビューと XAML ビューが分割ビューで表示されます。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。 ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。
 
 ![IDE の WPF プロジェクトとソリューション](media/exploreide-wpfproject-cs.png "IDE の WPF プロジェクトとソリューションのスクリーンショット")
 
@@ -106,7 +106,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml の名前を変更する
 
-それでは、MainWindow に具体的な名前を付けましょう。 **ソリューション エクスプローラー**で、*MainWindow.xaml* を右クリックし、 **[名前の変更]** を選択します。 ファイルの名前を *Greetings.xaml* に変更します。
+それでは、MainWindow に具体的な名前を付けましょう。 **ソリューション エクスプローラー** で、*MainWindow.xaml* を右クリックし、 **[名前の変更]** を選択します。 ファイルの名前を *Greetings.xaml* に変更します。
 
 ## <a name="design-the-user-interface-ui"></a>ユーザー インターフェイス (UI) のデザイン
 
@@ -227,7 +227,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="add-code-to-the-display-button"></a>Display ボタンにコードを追加する
 
-このアプリケーションを実行すると、ユーザーがラジオ ボタンを選択した後で **[Display]** ボタンを選択したときに、メッセージ ボックスが表示されます。 1 つのメッセージ ボックスには "Hello" と表示され、もう 1 つメッセージ ボックスには "Goodbye" と表示されます。 この動作を作成するために、*Greetings.xaml.cs*の `Button_Click` イベントにコードを追加します。
+このアプリケーションを実行すると、ユーザーがラジオ ボタンを選択した後で **[Display]** ボタンを選択したときに、メッセージ ボックスが表示されます。 1 つのメッセージ ボックスには "Hello" と表示され、もう 1 つメッセージ ボックスには "Goodbye" と表示されます。 この動作を作成するために、*Greetings.xaml.cs* の `Button_Click` イベントにコードを追加します。
 
 1. デザイン サーフェイスで、 **[Display]** ボタンをダブルクリックします。
 
@@ -277,7 +277,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>スタートアップ URI として Greetings.xaml を指定する
 
-1. **ソリューション エクスプローラー**で、*App.xaml* ファイルを開きます。
+1. **ソリューション エクスプローラー** で、*App.xaml* ファイルを開きます。
 
 1. `StartupUri="MainWindow.xaml"` を `StartupUri="Greetings.xaml"` に変更し、変更を保存します。
 

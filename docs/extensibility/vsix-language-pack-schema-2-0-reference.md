@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
-manager: jillfra
-ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+manager: jmartens
+ms.openlocfilehash: 5a12fe1be4030332e804f38cee1e0eb646356d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971870"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 言語パックスキーマ2.0 リファレンス
 
@@ -32,7 +32,7 @@ VSIX 言語パックのスキーマには、VSIX パッケージのローカラ�
 
 要素内に `<PackageLanguagePackManifest>` は、次の要素が存在している必要があります。
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |`<Metadata>`| ローカライズされたすべてのパッケージメタデータのコンテナー要素
 
@@ -40,7 +40,7 @@ VSIX 言語パックのスキーマには、VSIX パッケージのローカラ�
 
 要素内には `<Metadata>` 、次の要素を含めることができます。
 
-|タイトル|説明|
+|Title|説明|
 |-----------|-----------------|
 |`<DisplayName>`|インストールする拡張機能のローカライズされた名前|
 |`<Description>`|インストールする拡張機能のローカライズされた説明|

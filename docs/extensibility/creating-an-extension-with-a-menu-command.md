@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00afdc31e72e4b0336db19939955a0b2360a00a1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974273"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944909"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>メニューコマンドを使用して拡張機能を作成する
 
@@ -36,13 +36,13 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ::: moniker range="vs-2017"
 
-2. プロジェクトが開いたら、 **Firstcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstCommand.cs* に変更します。
+2. プロジェクトが開いたら、 **Firstcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstCommand.cs* に変更します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. プロジェクトが開いたら、 **Firstcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >  **Extensibility** [**コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstCommand.cs* に変更します。
+2. プロジェクトが開いたら、 **Firstcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >   [**コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstCommand.cs* に変更します。
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     }
     ```
 
-4. では、試してみましょう。プロジェクトのデバッグを開始し、[**ツール**] [firstcommand] の順にクリックすると  >  **Invoke FirstCommand**、メモ帳のインスタンスが表示されます。
+4. では、試してみましょう。プロジェクトのデバッグを開始し、[**ツール**] [firstcommand] の順にクリックすると  >  、メモ帳のインスタンスが表示されます。
 
     クラスのインスタンスを使用して <xref:System.Diagnostics.Process> 、メモ帳だけでなく、任意の実行可能ファイルを実行できます。 たとえば、を使用して試してみてください `calc.exe` 。
 
@@ -133,7 +133,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 友人が Visual Studio を再度起動すると、[**ツール**] [  >  **拡張機能と更新プログラム**] に firstmenucommand 拡張機能が表示されます。 拡張機能 **と更新プログラム** にアクセスして、拡張機能をアンインストールまたは無効にすることができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このチュートリアルでは、Visual Studio 拡張機能で実行できることのほんの一部のみを示しました。 Visual Studio 拡張機能で実行できるその他の (非常に簡単な) 項目を次に示します。
 

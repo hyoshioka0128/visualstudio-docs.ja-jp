@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 164f9f91eda1d81db00d25bb4e18a6cbb352e41e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914625"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath タスク
 
@@ -41,11 +41,11 @@ ms.locfileid: "92436777"
 
 ## <a name="remarks"></a>解説
 
- <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> タスクが 64 ビット プロセッサで実行されている場合、 **WinFXPath** パラメーターは **WinFXWowPath** パラメーターに保存されているパスに設定されます。それ以外の場合、 **WinFXPath** パラメーターは **WinFXNativePath** パラメーターに保存されているパスに設定されます。
+ <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> タスクが 64 ビット プロセッサで実行されている場合、**WinFXPath** パラメーターは **WinFXWowPath** パラメーターに保存されているパスに設定されます。それ以外の場合、**WinFXPath** パラメーターは **WinFXNativePath** パラメーターに保存されているパスに設定されます。
 
 ## <a name="example"></a>例
 
- 次の例では、 **GetWinFXPath** タスクを使用して、.NET ランタイムへのネイティブ パスを検出する方法を示します。
+ 次の例では、**GetWinFXPath** タスクを使用して、.NET ランタイムへのネイティブ パスを検出する方法を示します。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

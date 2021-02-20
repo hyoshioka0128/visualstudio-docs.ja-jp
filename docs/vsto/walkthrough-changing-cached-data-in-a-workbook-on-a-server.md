@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01ae4894d76e22f619bf498b4ac6a53f1232b5d5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 57c33dc89bdec39b62dbec6a74a152ba816dda88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961353"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックでキャッシュされたデータを変更する
   このチュートリアルでは、クラスを使用して Excel を起動せずに Microsoft Office Excel ブックにキャッシュされているデータセットを変更する方法について説明 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> します。
@@ -111,7 +111,7 @@ ms.locfileid: "97527270"
 
 7. [ **データベースオブジェクトの選択** ] ページで、[ **テーブル** ] を展開し、[ **Product (saleslt)**] を選択します。
 
-8. **[完了]** をクリックします。
+8. **[Finish]** をクリックします。
 
     *Adventureworksltdataset.xsd* ファイルが **AdventureWorksDataSet** プロジェクトに追加されます。 このファイルでは、次の項目を定義します。
 

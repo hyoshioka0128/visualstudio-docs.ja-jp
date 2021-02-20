@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6801176964a47646f03091131e1be89cf63c97f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953579"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -56,7 +56,7 @@ IDebugObject : IUnknown
 ## <a name="remarks"></a>解説
  式エバリュエーターは、このインターフェイスを基底クラスとして使用して、解析ツリー内のオブジェクトを表します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
@@ -66,4 +66,4 @@ IDebugObject : IUnknown
 ## <a name="see-also"></a>関連項目
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)
-- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+- [束縛](../../../extensibility/debugger/reference/idebugbinder-bind.md)

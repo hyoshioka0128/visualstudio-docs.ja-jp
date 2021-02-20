@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b04abdac135143ccbbd1b8e5632bf85c974f29d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962198"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 このインターフェイスは、スタックフレームプロパティ、プログラムドキュメントプロパティ、またはその他のプロパティを表します。 通常、プロパティは、式の評価の結果です。
@@ -69,7 +69,7 @@ IDebugProperty2 : IUnknown
 
  IDE では、インターフェイスを使用して、 `IDebugProperty2` ユーザーが実行時にプロパティを参照および変更できるようにすることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -77,6 +77,6 @@ IDebugProperty2 : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

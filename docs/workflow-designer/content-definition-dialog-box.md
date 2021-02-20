@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2858c179d05645b3e47e6be27e386168392fcb48
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a25d049b17381c49bfa1b4a5544972b6dc5fe499
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955646"
 ---
 # <a name="content-definition-dialog-box"></a>[コンテンツ定義] ダイアログ ボックス
 
@@ -30,9 +30,9 @@ ms.locfileid: "94438166"
 |**メッセージ**|[メッセージの **データ** 式] テキストボックスと、[ **メッセージの種類** ] ドロップダウンリストボックスを使用して、メッセージの内容を指定します。 既定では、 **コンテンツ定義** は、 <xref:System.ServiceModel.Activities.ReceiveMessageContent> <xref:System.ServiceModel.Channels.Message> ワークフローサービス定義内でまたはメッセージコントラクト型を要求するを使用します。|
 |**パラメーター**|[ **パラメーター** ] オプションボタンをクリックして <xref:System.ServiceModel.Activities.ReceiveParametersContent> 、データコントラクトを期待するを使用します。 <xref:System.Activities.OutArgument> キーおよび値のペアのジェネリック コレクションを設定するには、データ グリッドを使用します。これらの値は、現在のワークフローの変数パラメーターに割り当てられます。|
 
-[ **コンテンツ定義** ] ダイアログボックスは、 **Send** 、 **Receive** 、 **Receiveandsendreply** 、および **sendandreceivereply** の各デザイナーによって使用されます。 デザイナーへのアクセス方法は、どの場合も同様です。ここでは、Receive デザイナーを使用する例で手順を説明します。
+[ **コンテンツ定義** ] ダイアログボックスは、 **Send**、 **Receive**、 **Receiveandsendreply**、および **sendandreceivereply** の各デザイナーによって使用されます。 デザイナーへのアクセス方法は、どの場合も同様です。ここでは、Receive デザイナーを使用する例で手順を説明します。
 
-**Receive** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティを通常配置している任意の場所のワークフローデザイナー画面にドロップできます。 この操作により、Receive という既定の <xref:System.ServiceModel.Activities.Receive> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 **Receive** アクティビティデザイナーを選択し、[コンテンツ **定義** ] ダイアログボックスが表示されるプロパティグリッドで、 **コンテンツ** プロパティの (コンテンツ) テキストの横にある省略記号ボタンをクリックします。
+**Receive** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティを通常配置している任意の場所のワークフローデザイナー画面にドロップできます。 この操作により、Receive という既定の <xref:System.ServiceModel.Activities.Receive> を持つ <xref:System.Activities.Activity.DisplayName%2A> アクティビティが作成されます。 **Receive** アクティビティデザイナーを選択し、[コンテンツ **定義**] ダイアログボックスが表示されるプロパティグリッドで、**コンテンツ** プロパティの (コンテンツ) テキストの横にある省略記号ボタンをクリックします。
 
 コンテンツは、アクティビティの **Message** セクション内で指定することも、 <xref:System.ServiceModel.Activities.ReceiveMessageContent> アクティビティの **Parameter** セクション内で指定することもでき <xref:System.ServiceModel.Activities.ReceiveParametersContent> ます。
 

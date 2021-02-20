@@ -5,16 +5,16 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4a735c374216b1810b3abd99ffab89000cec8b8f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85540921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933090"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python インタープリターのデバッグ シンボルをインストールする
 
@@ -40,7 +40,7 @@ Visual Studio でシンボルが必要なとき、通常は混合モードのデ
 - Python 3.4.x 以前: シンボルは、[公式のディストリビューション](#official-distributions)または [Enthought Canopy](#enthought-canopy) から、ダウンロード可能な *.zip* ファイルとして入手できます。 ダウンロード後は、Python フォルダー内の *Symbols* などのローカル フォルダーにファイルを展開して続行します。
 
     > [!Important]
-    > Python のマイナー ビルド間や 32 ビット ビルドと 64 ビット ビルド間でもシンボルは異なるため、バージョンを完全に一致させることをお勧めします。 使用するインタープリターを確認するには、**ソリューション エクスプローラー**でプロジェクトの **[Python 環境]** *ノード*を展開し、環境名をメモします。 次に **[Python 環境]** *ウィンドウ*に切り替え、インストール場所をメモします。 次に、その場所でコマンド ウィンドウを開き、*python.exe* を起動します。正確なバージョンと 32 ビットか 64 ビットかが表示されます。
+    > Python のマイナー ビルド間や 32 ビット ビルドと 64 ビット ビルド間でもシンボルは異なるため、バージョンを完全に一致させることをお勧めします。 使用するインタープリターを確認するには、**ソリューション エクスプローラー** でプロジェクトの **[Python 環境]** *ノード* を展開し、環境名をメモします。 次に **[Python 環境]** *ウィンドウ* に切り替え、インストール場所をメモします。 次に、その場所でコマンド ウィンドウを開き、*python.exe* を起動します。正確なバージョンと 32 ビットか 64 ビットかが表示されます。
 
 - ActiveState Python などのサードパーティの Python ディストリビューションを使用している場合は、そのディストリビューションの作成者に連絡して、シンボルの提供を依頼する必要があります。 WinPython には、標準の Python インタープリターが変更なしで組み込まれているため、対応するバージョン番号用の公式ディストリビューションのシンボルを使用できます。
 

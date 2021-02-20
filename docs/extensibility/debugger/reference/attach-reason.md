@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca871d9dac2b6f37018af925eece5c1a6f3d1585
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4baf13945b85cff334aa6392a50f6a80fdf50961
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80738127"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950439"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
 デバッグエンジン (DE) がプログラムノードにアタッチされる理由を指定します。
@@ -57,7 +57,7 @@ public enum enum_ATTACH_REASON {
 ## <a name="remarks"></a>解説
 これらの値は、 [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドと [attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) メソッドのパラメーターとして使用されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

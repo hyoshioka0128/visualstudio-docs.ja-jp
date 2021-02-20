@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c47a920e99ece3fb0853e4e6a26dba3c8d0c45c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726019"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953306"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 このインターフェイスは、文字列を出力するために、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -48,7 +48,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)を使用して、応答を必要としないエラーメッセージを送信します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

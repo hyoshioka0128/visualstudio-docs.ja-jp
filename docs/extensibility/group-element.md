@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0d39d4e4f795ddecab21765db43ba1a2f629dd7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0a5520a8a47b4b356a79832b619395f86e8231d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945787"
 ---
 # <a name="group-element"></a>Group 要素
 VSPackage コマンドグループを定義します。
@@ -40,15 +40,15 @@ VSPackage コマンドグループを定義します。
 |---------------|-----------------|
 |guid|必須。 GUID/ID コマンド識別子の GUID。|
 |id|必須。 GUID/ID コマンド識別子の ID。|
-|priority|省略可能。 優先度を示す数値です。|
-|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|priority|任意。 優先度を示す数値です。|
+|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
 |要素|説明|
 |-------------|-----------------|
-|Parent|省略可能。 ボタンの親要素。|
-|Annotation|コメント (省略可能)。|
+|Parent|任意。 ボタンの親要素。|
+|注釈|コメント (省略可能)。|
 
 ### <a name="parent-elements"></a>親要素
 

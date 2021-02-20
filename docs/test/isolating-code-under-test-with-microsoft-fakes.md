@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719657"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006416"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Microsoft Fakes を使用したテストでコードを分離する
 
@@ -36,7 +36,7 @@ Fakes には 2 種類のフレーバーがあります。
 - Visual Studio Enterprise
 - .NET Framework プロジェクト
 ::: moniker range=">=vs-2019"
-- Visual Studio 2019 Update 6 でプレビューされた .NET Core と SDK スタイルのプロジェクトのサポートは、Update 8 で既定で有効になっています。 詳細については、「[.NET Core および SDK スタイルのプロジェクトのための Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)」を参照してください。
+- Visual Studio 2019 Update 6 でプレビューされた .NET Core、.NET 5.0、および SDK スタイルのプロジェクトのサポートは、Update 8 で既定で有効になっています。 詳細については、「[.NET Core および SDK スタイルのプロジェクトのための Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)」を参照してください。
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Fakes には 2 種類のフレーバーがあります。
    1. **ソリューション エクスプローラー** で。 
        - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
        ::: moniker range=">=vs-2019"
-       - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
+       - .NET Framework、.NET Core、または .NET 5.0 がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、または **[パッケージ]** でフェイク化するアセンブリを見つけます。
        ::: moniker-end
        - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
    2. 作成する shim に対応するクラス定義が含まれているアセンブリを選択します。 たとえば、shim が **DateTime** の場合は、**System.dll** を選択します。
@@ -269,21 +269,21 @@ Microsoft Fakes では Visual Studio Enterprise が必要であるため、Fakes
 </Project>
 ```
 
-アセンブリ参照をテスト プロジェクトに暗黙的に追加するように移行したため、特に SDK スタイルのプロジェクト (.NET Core と .NET Framework) では、この参照を手動で追加する必要があります。 この方法に従う場合は、親アセンブリが変更されたときに、Fakes アセンブリが確実に更新されるようにする必要があります。
+アセンブリ参照をテスト プロジェクトに暗黙的に追加するように移行したため、特に SDK スタイルのプロジェクト (.NET Core、.NET 5.0、および .NET Framework) では、この参照を手動で追加する必要があります。 この方法に従う場合は、親アセンブリが変更されたときに、Fakes アセンブリが確実に更新されるようにする必要があります。
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>Microsoft Fakes テストの実行
 構成された `FakesAssemblies` ディレクトリ (既定では `$(ProjectDir)FakesAssemblies`) に Microsoft Fakes アセンブリが存在する限り、[vstest タスク](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)を使用してテストを実行できます。
 
 ::: moniker range=">=vs-2019"
-Microsoft Fakes で [vstest task](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true) を使用して .NET Core プロジェクトの分散テストを実行するには、Visual Studio 2019 Update 9 Preview `20201020-06` 以降が必要です。
+Microsoft Fakes で [vstest タスク](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)を使用して .NET Core および .NET 5.0 プロジェクトの分散テストを実行するには、Visual Studio 2019 Update 9 Preview `20201020-06` 以降が必要です。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>Microsoft Fakes を使用する .NET Framework テスト プロジェクトの SDK スタイルの .NET Framework または .NET Core プロジェクトへの移行
-最小限の変更で、Microsoft Fakes 用に設定された .NET Framework を .NET Core に移行できます。 考慮する必要があるケースは次のとおりです。
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>Microsoft Fakes を使用する .NET Framework テスト プロジェクトの SDK スタイルの .NET Framework、.NET Core、または .NET 5.0 プロジェクトへの移行
+Microsoft Fakes 用に設定された .NET Framework を .NET Core または .NET 5.0 に移行するには、最小限の変更が必要になります。 考慮する必要があるケースは次のとおりです。
 - カスタム プロジェクト テンプレートを使用している場合は、それが SDK スタイルであり、互換性のあるターゲット フレームワーク用のビルドであることを確認する必要があります。
-- 特定の型が .NET Framework と .NET Core の異なるアセンブリに存在する (たとえば、`System.DateTime` が、.NET Framework では `System`/`mscorlib` に存在し、.NET Core では `System.Runtime` に存在する) 場合は、フェイクされるアセンブリを変更する必要があります。
+- 特定の型が .NET Framework と .NET Core または .NET 5.0 の異なるアセンブリに存在する (たとえば、.NET Framework では `System.DateTime` が `System`/`mscorlib` に、.NET Core や .NET 5.0 では `System.Runtime` に存在する) 場合は、フェイクされるアセンブリを変更する必要があります。
 - Fakes アセンブリへのアセンブリ参照とテスト プロジェクトがある場合は、次のような参照が存在しないことに関するビルド警告が表示されることがあります。
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ Microsoft Fakes で [vstest task](/azure/devops/pipelines/tasks/test/vstest?view
 - Microsoft Fakes テストは、使用可能なすべての Microsoft TestPlatform NuGet パッケージで実行できます。
 - コード カバレッジは、Visual Studio Enterprise 2015 以降で Microsoft Fakes を使用するテスト プロジェクトでサポートされます。
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK スタイルの .NET Framework と .NET Core のプロジェクトにおける Microsoft Fakes
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>SDK スタイルの .NET Framework、.NET Core、および .NET 5.0 プロジェクトにおける Microsoft Fakes
 - Visual Studio Enterprise 2019 Update 6 でプレビューされた Microsoft Fakes アセンブリの生成は、Update 8 では既定で有効になっています。
 - .NET Framework をターゲットとするプロジェクトに対する Microsoft Fakes テストは、使用可能なすべての Microsoft TestPlatform NuGet パッケージで実行できます。
-- .NET Core をターゲットとするプロジェクトに対する Microsoft Fakes テストは、[16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 以降のバージョンの Microsoft.TestPlatform NuGet パッケージで実行できます。
+- .NET Core と .NET 5.0 をターゲットとするプロジェクトに対する Microsoft Fakes テストは、[16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) 以降のバージョンの Microsoft.TestPlatform NuGet パッケージで実行できます。
 - コード カバレッジは、Visual Studio Enterprise バージョン 2015 以降で Microsoft Fakes を使用する、.NET Framework をターゲットとするテスト プロジェクトに対してサポートされます。
-- Microsoft Fakes を使用する .NET Core をターゲットとするテスト プロジェクトに対するコード カバレッジは、開発中です。
+- Microsoft Fakes を使用する .NET Core と .NET 5.0 をターゲットとするテスト プロジェクトに対するコード カバレッジ サポートは、Visual Studio 2019 Update 9 以降で利用できます。
 
 
 ## <a name="in-this-section"></a>このセクションの内容

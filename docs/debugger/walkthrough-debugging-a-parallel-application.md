@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d43ede5fcca1ae76d155cb8799a61900926d7b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.openlocfilehash: f46efe377cb01b7b78a9df2de2d1e6fc89826014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84183848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884287"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>チュートリアル: Visual Studio での並列アプリケーションのデバッグ (C#、Visual Basic、C++)
 
@@ -209,7 +209,7 @@ ms.locfileid: "84183848"
 
      ビューが適切な位置まで自動的にスクロールすることに注目してください。 **[スレッド]** ウィンドウでスレッドを切り替えたり、 **[呼び出し履歴]** ウィンドウでスタック フレームを切り替えたりして、ビューが常に適切なフレームまで自動的にスクロールすることを確認します。 さらに、 **[現在のツール フレームに自動スクロール]** オプションをオフにして違いを確認します。
 
-     **[並列スタック]** ウィンドウに大きな図がある場合は、**バード アイ ビュー**も便利です。 既定では、**バード アイ ビュー**がオンになっています。 ただし、次の図に示すように、ウィンドウの右下のスクロール バーの間にあるボタンをクリックすることで、切り替えることができます。
+     **[並列スタック]** ウィンドウに大きな図がある場合は、**バード アイ ビュー** も便利です。 既定では、**バード アイ ビュー** がオンになっています。 ただし、次の図に示すように、ウィンドウの右下のスクロール バーの間にあるボタンをクリックすることで、切り替えることができます。
 
      ![[並列スタック] ウィンドウのバード アイ ビュー](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")
 

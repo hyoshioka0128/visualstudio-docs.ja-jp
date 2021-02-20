@@ -7,19 +7,19 @@ ms.topic: how-to
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: baa4d32d14a85e27bb0bb453c8c81f0bab486379
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: f895d29e46556bff8543563841939640c501f84d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93045726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879268"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>方法: XML スキーマ エクスプローラーからワークスペースにノードを追加する
 
-このトピックでは、 **XML スキーマ エクスプローラー** から [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)にノードを追加する方法について説明します。 これは、 **XML スキーマ エクスプローラー** から XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、 **XML スキーマ エクスプローラー** のコンテキスト メニューを使用することによって行うことができます。 さらに、 **XML スキーマ エクスプローラー** の検索結果で強調表示されたノードを追加することもできます。 詳細については、「[方法:スキーマ セットの検索結果のノードをワークスペースに追加する](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)」を参照してください。
+このトピックでは、**XML スキーマ エクスプローラー** から [XML スキーマ デザイナーのワークスペース](../xml-tools/xml-schema-designer-workspace.md)にノードを追加する方法について説明します。 これは、**XML スキーマ エクスプローラー** から XSD デザイナーのビューにノードをドラッグ アンド ドロップするか、**XML スキーマ エクスプローラー** のコンテキスト メニューを使用することによって行うことができます。 さらに、**XML スキーマ エクスプローラー** の検索結果で強調表示されたノードを追加することもできます。 詳細については、「[方法:スキーマ セットの検索結果のノードをワークスペースに追加する](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)」を参照してください。
 
 > [!NOTE]
 > [XML スキーマ デザイナー ワークスペース](../xml-tools/xml-schema-designer-workspace.md)に追加できるのは、グローバル ノードだけです。
@@ -38,7 +38,7 @@ ms.locfileid: "93045726"
 
      **XML スキーマ エクスプローラー** にノードが強調表示されます。
 
-2. **XML スキーマ エクスプローラー** で `PurchaseOrderType` ノードを右クリックし、 **[すべての参照の表示]** をクリックします。
+2. **XML スキーマ エクスプローラー** で `PurchaseOrderType` ノードを右クリックし、**[すべての参照の表示]** をクリックします。
 
      `purchaseOrder` ノードが強調表示されます。
 

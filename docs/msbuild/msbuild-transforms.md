@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb35554c61c532e0d004e5c974345564e17d4ae
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ba6a71373026a5a41905efc7c91520a9f6b7c5c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878208"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 変換
 
@@ -34,7 +34,7 @@ ms.locfileid: "93048994"
 @(RESXFile->'%(filename).resources')
 ```
 
-たとえば、@(RESXFile) 項目リスト内の項目が *Form1.resx* 、 *Form2.resx* 、 *Form3.resx* である場合、変換後の一覧の出力は *Form1.resources* 、 *Form2.resources* 、 *Form3.resources* になります。
+たとえば、@(RESXFile) 項目リスト内の項目が *Form1.resx*、*Form2.resx*、*Form3.resx* である場合、変換後の一覧の出力は *Form1.resources*、 *Form2.resources*、*Form3.resources* になります。
 
 > [!NOTE]
 > 標準の項目一覧に区切りを指定するのと同じ方法で、変換後の項目一覧にカスタムの区切りを指定できます。 たとえば、変換後の項目一覧を既定のセミコロン (;) ではなくコンマ (,) で区切るには、次の XML を使用します: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
@@ -47,7 +47,7 @@ ms.locfileid: "93048994"
 @(RESXFile->'Toolset\%(filename)%(extension)')
 ```
 
- たとえば、`RESXFile` 項目一覧に含まれる項目が *Project1\Form1.resx* 、 *Project1\Form2.resx* 、 *Project1\Form3.text* である場合、変換後の一覧の出力は *Toolset\Form1.resx* 、 *Toolset\Form2.resx* 、 *Toolset\Form3.text* になります。
+ たとえば、`RESXFile` 項目一覧に含まれる項目が *Project1\Form1.resx*、*Project1\Form2.resx*、*Project1\Form3.text* である場合、変換後の一覧の出力は *Toolset\Form1.resx*、*Toolset\Form2.resx*、*Toolset\Form3.text* になります。
 
 ## <a name="dependency-analysis"></a>依存関係の分析
 
@@ -71,7 +71,7 @@ ms.locfileid: "93048994"
 
 ### <a name="description"></a>説明
 
- 次の例は、変換を使用する MSBuild プロジェクト ファイルを示しています。 この例では、 *c:\sub0\sub1\sub2\sub3* ディレクトリに *.xsd* ファイルが 1 つだけ存在し、作業ディレクトリが *c:\sub0* であると想定されています。
+ 次の例は、変換を使用する MSBuild プロジェクト ファイルを示しています。 この例では、*c:\sub0\sub1\sub2\sub3* ディレクトリに *.xsd* ファイルが 1 つだけ存在し、作業ディレクトリが *c:\sub0* であると想定されています。
 
 ### <a name="code"></a>コード
 

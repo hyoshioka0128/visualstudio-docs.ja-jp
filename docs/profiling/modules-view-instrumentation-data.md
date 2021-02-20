@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7012f2deffa2e01057fd79f52ec2fcac3674f7eb
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 031068d159b7004b7cfe7fcf1c747c2eb582afc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879775"
 ---
 # <a name="modules-view---instrumentation-data"></a>モジュール ビュー - インストルメンテーション データ
 モジュール ビューには、パフォーマンス データがプロファイル データ内のモジュールごとにグループ化されて表示されます。 モジュールの関数が、モジュール ノードの下に一覧表示されます。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], retrieving ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 485945f235a9161b6dc0584f7018c6f03c6024f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ff79b916aa0638a03ad51a749856246451eac41
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953891"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>方法: プログラムによって範囲内の開始文字と終了文字を取得する
   この例では、範囲の開始位置と終了位置の文字位置を取得する方法を示します。

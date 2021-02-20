@@ -7,12 +7,12 @@ ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 0808f86f8571210a9048faf2e825b483120e73ca
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 11b0788317cd0a20dd27159aa241db32e3818daf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584205"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722127"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio for Mac は Team Foundation バージョン管理をサポートしていますか?
 
@@ -53,7 +53,7 @@ TEE CLC のセットアップを行うには、2 つの方法があります。
 * Homebrew を使用してクライアントをインストールする
 * クライアントをダウンロードして手動でインストールする
 
-最も簡単なソリューションは、macOS 用のパッケージ マネージャーである **HomeBrew を使用する**ことです。 この方法を使用してインストールするには、次の手順を実行します。
+最も簡単なソリューションは、macOS 用のパッケージ マネージャーである **HomeBrew を使用する** ことです。 この方法を使用してインストールするには、次の手順を実行します。
 
 1. macOS ターミナルのアプリケーションを起動します。
 1. ターミナルと [Homebrew ホーム ページ](https://brew.sh/)上の手順を使用して、Homebrew をインストールします。
@@ -68,7 +68,7 @@ TEE CLC のセットアップを行うには、2 つの方法があります。
 
 TEE-CLC がインストールされたら、コマンド `tf eula` を実行して、クライアント用のライセンス契約を表示して同意します。
 
-最後に、お使いの TFS/Azure DevOps 環境による認証を行うために、サーバー上に個人用アクセス トークンを作成する必要があります。 詳しくは、「[Authenticating with personal access tokens (個人用アクセス トークンによる認証)](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)」をご覧ください。 TFVC によって使用される個人用アクセス トークンを作成する場合は、トークンの構成時に必ずフル アクセスを指定してください。
+最後に、お使いの TFS/Azure DevOps 環境による認証を行うために、サーバー上に個人用アクセス トークンを作成する必要があります。 詳しくは、「[Authenticating with personal access tokens (個人用アクセス トークンによる認証)](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)」をご覧ください。 TFVC によって使用される個人用アクセス トークンを作成する場合は、トークンの構成時に必ずフル アクセスを指定してください。
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>TEE CLC を使用してリポジトリに接続する
 

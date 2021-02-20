@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4560973cd6ccd2bbfee48028494731935945a4c
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: f5df9910d779a4c360a0c1f3b6482b5c51256d29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871924"
 ---
 # <a name="edit-and-continue-visual-basic"></a>エディット コンティニュ (Visual Basic)
 エディット コンティニュは、中断モードでの実行中にコードを変更できるようにするための、[!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 用デバッグ機能です。 コードの編集を適用した後で、新しい編集でコードの実行を再開して編集結果を確認できます。

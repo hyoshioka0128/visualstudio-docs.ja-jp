@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 ms.devlang: vb
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c7c3e34778a1bad3eb833c073c530db72b7a36
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809060"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970921"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する
 
@@ -51,7 +51,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]** を展開し、 **[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 ファイルに `HelloWorld` という名前を付けます。
 
-     **[Windows フォーム アプリケーション (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーで **[ツール]**  >  **[ツールと機能を取得]** を選択します。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発**ワークロードを選択し、 **[変更]** を選択します。
+     **[Windows フォーム アプリケーション (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーで **[ツール]**  >  **[ツールと機能を取得]** を選択します。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発** ワークロードを選択し、 **[変更]** を選択します。
 
      ![Visual Studio インストーラーの .NET Core ワークロード](../ide/media/install-dot-net-desktop-env.png)
 
@@ -100,7 +100,7 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
      ![[ツールボックス] をクリックして [ツールボックス] ウィンドウを開く](../ide/media/vb-toolbox-toolwindow.png)
 
-     (**ツールボックス**のスライド アウト オプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[表示]**  >  **[ツールボックス]** を選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
+     (**ツールボックス** のスライド アウト オプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[表示]**  >  **[ツールボックス]** を選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
 
 1. **[ピン設定]** アイコンをクリックして、 **[ツールボックス]** ウィンドウをドッキングします。
 

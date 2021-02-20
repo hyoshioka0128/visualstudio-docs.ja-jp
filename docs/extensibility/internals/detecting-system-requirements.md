@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4befcf3950c41beba2440e6f023983269137b1f
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329810"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963472"
 ---
 # <a name="detect-system-requirements"></a>システム要件の検出
 VSPackage は、Visual Studio がインストールされていない場合は機能しません。 Microsoft Windows インストーラーを使用して VSPackage のインストールを管理する場合、Visual Studio がインストールされているかどうかを検出するようにインストーラーを構成できます。 また、特定のバージョンの Windows や特定の RAM 容量など、システムに他の要件がないかどうかを確認するように構成することもできます。

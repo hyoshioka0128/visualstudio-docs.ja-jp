@@ -5,16 +5,16 @@ ms.date: 02/28/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: de86c2021a2abf3cd5346c684199e8f59e2d314e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70154881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839189"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Visual Studio でのデータ サイエンス サポートのインストール
 
@@ -90,7 +90,7 @@ SQL Server では、SQL Server 内で直接高度な分析を行うことが可�
 
 - **追加コストなしで広範に利用可能**:言語統合は、Express Edition を含む SQL Server 2017 以降のすべてのエディションで利用できます。
 
-SQL Server への統合のメリットを最大限に得るには、Visual Studio インストーラーで **[SQL Server Data Tools]** オプションを使用して**データ ストレージと処理**ワークロードをインストールします。 後者のオプションにより、SQL IntelliSense、構文の強調表示および展開が可能になります。
+SQL Server への統合のメリットを最大限に得るには、Visual Studio インストーラーで **[SQL Server Data Tools]** オプションを使用して **データ ストレージと処理** ワークロードをインストールします。 後者のオプションにより、SQL IntelliSense、構文の強調表示および展開が可能になります。
 
 ![データの保存と処理ワークロード](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![データの保存と処理ワークロード オプション](media/workload/data-storage-workload-options.png)
 

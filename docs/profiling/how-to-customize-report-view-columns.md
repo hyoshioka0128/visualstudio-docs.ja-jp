@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: deb377c37675071e3c35006e07ee7a795185f838
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886133"
 ---
 # <a name="how-to-customize-report-view-columns"></a>方法: レポート ビューの列をカスタマイズする
 Visual Studio Team System Development Edition のパフォーマンス ツールは、統合開発環境 (IDE) に完全に統合されており、シームレスなユーザー エクスペリエンスを提供します。 次のリストは、列を追加、削除、再配置してカスタマイズできる代表的なビューです。

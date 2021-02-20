@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 73cc9afe-f4a4-474e-bb89-5a33fb5e570c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bc238cc56e1b815e79ba381a7cd4866085d3bef
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 619162bc4237c71c44f960f7ca1e4337a54f3dd5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559759"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857715"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio デバッガーでのコンテキスト演算子 (C++)
 C++ のコンテキスト演算子を使用して、ブレークポイントの場所、変数名、または式を修飾できます。 コンテキスト演算子は、ローカル名で隠されていてほかにアクセス方法がない外部スコープから名前を指定するために利用できます。

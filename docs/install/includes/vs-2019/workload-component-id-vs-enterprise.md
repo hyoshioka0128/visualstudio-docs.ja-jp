@@ -5,17 +5,17 @@ description: ワークロード ID とコンポーネント ID を使用して�
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: eb817e15ebffbe75f9b003abe1fe0560a5236293
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cecadf43e7f54f5ad0954acfc725f5e48a2a69cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437466"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881845"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio のコア エディター (Visual Studio Enterprise 2019 に付属)
 
@@ -767,7 +767,7 @@ Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 Targeting Pack | 
 Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 Targeting Pack | 16.8.30509.167 | Optional
 Microsoft.Net.Component.4.8.SDK | .NET Framework 4.8 SDK | 16.4.29313.120 | Optional
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.7.2 開発ツール | 16.3.29207.166 | Optional
-Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 ランタイム (LTS) | 16.8.30703.189 | Optional
+Microsoft.NetCore.Component.Runtime.3.1 | .NET Core 3.1 ランタイム (LTS) | 16.8.30703.189 | 省略可能
 Microsoft.NetCore.Component.Runtime.5.0 | .NET 5.0 ランタイム | 16.8.30703.189 | Optional
 Microsoft.NetCore.Component.SDK | .NET SDK | 16.8.30703.189 | Optional
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure Authoring Tools | 16.0.28625.61 | Optional

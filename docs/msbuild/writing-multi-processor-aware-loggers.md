@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd90cb92dd56d3e7ff9eb43bad1086e8a8fb548f
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 1e7cf5998645230f038c6de12c79b53b44c09dfc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847987"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>マルチプロセッサ対応のロガーの記述
 
@@ -37,7 +37,7 @@ MSBuild では複数のプロセッサを使用できるため、プロジェク
 
 ### <a name="central-logging-model"></a>中央ログ モデル
 
- 中央ログ モデルでは、 *MSBuild.exe* の 1 つのインスタンスが "中央ノード" となり、中央ノードの子インスタンス ("セカンダリ ノード") が中央ノードにアタッチされ、それによってビルド タスクの実行が可能になります。
+ 中央ログ モデルでは、*MSBuild.exe* の 1 つのインスタンスが "中央ノード" となり、中央ノードの子インスタンス ("セカンダリ ノード") が中央ノードにアタッチされ、それによってビルド タスクの実行が可能になります。
 
  ![中心ロガー モデル](../msbuild/media/centralnode.png "CentralNode")
 
@@ -80,7 +80,7 @@ ConfigurableForwardingLogger を実際の要件に合わせて変更できます
 
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>ConfigurableForwardingLogger を使用した簡単な分散ログ
 
- ConfigurableForwardingLogger またはカスタム転送ロガーをアタッチするには、 *MSBuild.exe* を使用したコマンド ライン ビルドに `-distributedlogger` スイッチ (短縮形は `-dl`) を指定します。 logger の型名およびクラス名の形式は、`-logger` スイッチの場合と同じです。ただし、分散 logger は常に転送 logger と中央 logger という 2 つのログ記録クラスから成ります。 XMLForwardingLogger というカスタム転送 logger をアタッチするコードの例を次に示します。
+ ConfigurableForwardingLogger またはカスタム転送ロガーをアタッチするには、*MSBuild.exe* を使用したコマンド ライン ビルドに `-distributedlogger` スイッチ (短縮形は `-dl`) を指定します。 logger の型名およびクラス名の形式は、`-logger` スイッチの場合と同じです。ただし、分散 logger は常に転送 logger と中央 logger という 2 つのログ記録クラスから成ります。 XMLForwardingLogger というカスタム転送 logger をアタッチするコードの例を次に示します。
 
 ```cmd
 msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral

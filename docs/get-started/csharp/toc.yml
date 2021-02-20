@@ -28,18 +28,6 @@
       href: tutorial-wpf.md
     - name: Windows フォーム アプリを作成する
       href: ../../ide/create-csharp-winform-visual-studio.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
-    - name: ビデオ チュートリアル - ASP.NET Core Web アプリを作成する
-      items:
-        - name: 1 - Visual Studio をインストールする
-          href: tutorial-aspnet-core-ef-step-01.md
-        - name: 2 - 初めての ASP.NET Core Web アプリを作成する
-          href: tutorial-aspnet-core-ef-step-02.md
-        - name: 3 - データを操作する
-          href: tutorial-aspnet-core-ef-step-03.md
-        - name: 4 - Web API を公開する
-          href: tutorial-aspnet-core-ef-step-04.md
-        - name: 5 - ASP.NET Core アプリを Azure にデプロイする
-          href: tutorial-aspnet-core-ef-step-05.md
 - name: Visual Studio を学ぶ
   expanded: true
   items:

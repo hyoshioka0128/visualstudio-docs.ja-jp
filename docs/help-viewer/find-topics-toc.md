@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7a6b8bbce5e25bd1de68aa8b8eafd02f741408f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944213"
 ---
 # 方法 : 目次でトピックを検索する
 
@@ -47,7 +47,7 @@ ms.locfileid: "91879009"
 
 1. トピックを表示します。
 
-2. ツールバーの [**目次のトピックを表示**] ボタンをクリックするか、 **ctrl** + **S**キーを押します。
+2. ツールバーの [**目次のトピックを表示**] ボタンをクリックするか、 **ctrl** + **S** キーを押します。
 
      **[目次]** タブが開き、TOC 内のトピックの場所が表示されます。
 

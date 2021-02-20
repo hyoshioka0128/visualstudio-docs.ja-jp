@@ -12,19 +12,19 @@ f1_keywords:
 ms.assetid: b4a9816d-cf87-4dc6-a8d4-1591d6a48103
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 41256882433bc95db7af380d27cc8dc63fbcd387
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 051711a9d6dfe861f37e741ae9ecabfbf741012e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932359"
 ---
 # <a name="options-dialog-box-text-editor--javascript--intellisense"></a>[オプション] ダイアログ ボックス:[テキスト エディター] \> [JavaScript] \> [IntelliSense]
 
-JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。 **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]** > **[オプション]** を選択し、 **[テキスト エディター]** > **[JavaScript/TypeScript]** > **[IntelliSense]** の順に展開します。
+JavaScript での IntelliSense の動作設定を変更するには、 **[オプション]** ダイアログ ボックスの **[IntelliSense]** ページを使用します。 **[IntelliSense]** ページにアクセスするには、メニュー バーの **[ツール]** > **[オプション]** を選択し、**[テキスト エディター]** > **[JavaScript/TypeScript]** > **[IntelliSense]** の順に展開します。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,7 +38,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 **[Tab キーと Enter キーのみをコミットに使用する]**
 
-このチェック ボックスをオンにすると、 **Tab** または **Enter** キーを押した後でのみ、JavaScript コード エディターによって入力候補一覧で選択された項目を含むステートメントが追加されます。 このチェック ボックスをオフにすると、ピリオド、コンマ、コロン、左かっこ、左中かっこ ({) など、その他の文字でも選択された項目を含むステートメントを追加できます。
+このチェック ボックスをオンにすると、**Tab** または **Enter** キーを押した後でのみ、JavaScript コード エディターによって入力候補一覧で選択された項目を含むステートメントが追加されます。 このチェック ボックスをオフにすると、ピリオド、コンマ、コロン、左かっこ、左中かっこ ({) など、その他の文字でも選択された項目を含むステートメントを追加できます。
 
 ## <a name="references"></a>参考資料
 
@@ -52,7 +52,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 定義済みの参照グループを使用して、特定の IntelliSense (.js) ファイルがさまざまな JavaScript プロジェクトのスコープ内にあることを指定できます。 4 つの参照グループを使用できます。
 
-- 暗黙 (Windows *バージョン* )、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーション用。 このグループに含まれるファイルは、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーションのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
+- 暗黙 (Windows *バージョン*)、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーション用。 このグループに含まれるファイルは、JavaScript を使用する [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] アプリケーションのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
 
 - 暗黙 (Web)、HTML5 プロジェクト用。 このグループに含まれるファイルは、これらのプロジェクト タイプのコード エディターで開かれる、すべての .js ファイルのスコープ内にあります。
 
@@ -62,7 +62,7 @@ JavaScript での IntelliSense の動作設定を変更するには、 **[オプ
 
 **[インクルード ファイル]**
 
-このオプションで、ファイルが言語サービスのコンテキストに読み込まれる順序を指定します。 **[削除]** 、 **[上へ移動]** 、および **[下へ移動]** ボタンを使用して順序を構成できます。 IntelliSense が正しく動作するためには、別のファイルに依存しているファイルはその別のファイルの後に読み込む必要があります。
+このオプションで、ファイルが言語サービスのコンテキストに読み込まれる順序を指定します。 **[削除]**、 **[上へ移動]**、および **[下へ移動]** ボタンを使用して順序を構成できます。 IntelliSense が正しく動作するためには、別のファイルに依存しているファイルはその別のファイルの後に読み込む必要があります。
 
 > [!CAUTION]
 > オブジェクトが複数の暗黙的な参照で無条件で定義されている場合、その一覧内の最後の参照を使用してオブジェクトが定義されます。

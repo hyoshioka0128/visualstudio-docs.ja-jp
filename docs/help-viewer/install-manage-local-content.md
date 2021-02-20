@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3401c12e35308b07a3c1bb1884af5acda221e71d
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 14091ecd5adc76762901c02c582c845aa0dbd513
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879100"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944122"
 ---
 # <a name="install-and-manage-local-content"></a>ローカル コンテンツのインストールと管理
 
@@ -105,7 +105,7 @@ Microsoft ヘルプ ビューアーを使用すると、ソフトウェア開発
 ステータス バーは、インストールされたコンテンツへの更新が使用可能なことが示されます。
 
 > [!IMPORTANT]
-> **ヘルプ ビューアー**で自動的にオンライン更新を確認する場合、**[ビューアーのオプション]** ダイアログ ボックスを開き、**[オンラインでコンテンツを取得し、コンテンツの更新をチェックする]** チェック ボックスをオンにする必要があります。
+> **ヘルプ ビューアー** で自動的にオンライン更新を確認する場合、**[ビューアーのオプション]** ダイアログ ボックスを開き、**[オンラインでコンテンツを取得し、コンテンツの更新をチェックする]** チェック ボックスをオンにする必要があります。
 
 ### <a name="to-update-local-content"></a>ローカル コンテンツを更新するには
 

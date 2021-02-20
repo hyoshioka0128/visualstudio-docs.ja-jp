@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, protecting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6b4fe6d314763c7b0d6a8b4c1ed9e8e7198e508c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 92ded3d8320f58bdd200f3892dc40c7a915c502e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963823"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>方法: プログラムによってワークシートを保護する
   Microsoft Office Excel の保護機能を使用すると、ユーザーやコードがワークシート内のオブジェクトを編集できないようにすることができます。 既定では、保護を有効にすると、すべてのセルがロックされます。

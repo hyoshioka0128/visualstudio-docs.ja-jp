@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 5bfa190f3bbc2a4f8b34d42d62b0ccc9b293674a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761434"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873133"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>最初に Visual Studio デバッガーを見る
 
@@ -93,7 +93,7 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 
 ## <a name="run-to-cursor"></a>[カーソル行の前まで実行]
 
-(デバッガーの一時停止中ではなく) コードの編集時に、アプリ内のコード行を右クリックし、 **[カーソル行の前まで実行]** を選択します。 このコマンドによってデバッグが開始され、現在のコード行に一時的なブレークポイントが設定されます。
+(デバッガーの一時停止中ではなく) コードの編集時に、アプリ内のコード行を右クリックし、 **[カーソル行の前まで実行]** を選択します (または **Ctrl** キーを押しながら **F10** キーを押します)。 このコマンドによってデバッグが開始され、現在のコード行に一時的なブレークポイントが設定されます。
 
 ![カーソル行の前まで実行](../debugger/media/dbg-tour-run-to-cursor.png "[カーソル行の前まで実行]")
 
@@ -108,7 +108,7 @@ F10 キーを押すと、アプリ コード内の関数またはメソッドに
 
 ## <a name="restart-your-app-quickly"></a>アプリを簡単に再起動する
 
-[デバッグ] ツール バーの **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "アプリの再起動") ボタンをクリックします (**Ctrl + Shift +F5**)。
+[デバッグ] ツール バーの **[再起動]** ![アプリの再起動](../debugger/media/dbg-tour-restart.png "アプリの再起動") ボタンをクリックします (または **Ctrl + Shift + F5** キーを押します)。
 
 **[再起動]** を押すと、アプリを停止してからデバッガーを再起動する場合と比較して時間の節約になります。 デバッガーは、コードを実行すると最初にヒットするブレークポイントで一時停止します。
 

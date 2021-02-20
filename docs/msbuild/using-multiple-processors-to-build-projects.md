@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c523d21a194626805168d6fee3054e77586b19
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946372"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>複数のプロセッサを使用したプロジェクトのビルド
 
@@ -38,7 +38,7 @@ MSBuild では、複数のプロセッサまたはマルチコア プロセッ�
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++ のプロジェクト ファイル (.vcxproj) とソリューション ファイル (.sln)
 
- C++ のプロジェクト ファイル ( *.vcxproj* ) とソリューション ファイル ( *.sln* ) は、どちらも [MSBuild タスク](../msbuild/msbuild-task.md)に渡すことができます。 C++ プロジェクトでは、VCWrapperProject が呼び出された後、内部 MSBuild プロジェクトが作成されます。 C++ ソリューションについては、SolutionWrapperProject が作成された後、内部 MSBuild プロジェクトが作成されます。 いずれの場合も、生成されるプロジェクトは他の MSBuild プロジェクトと同じように扱われます。
+ C++ のプロジェクト ファイル ( *.vcxproj*) とソリューション ファイル ( *.sln*) は、どちらも [MSBuild タスク](../msbuild/msbuild-task.md)に渡すことができます。 C++ プロジェクトでは、VCWrapperProject が呼び出された後、内部 MSBuild プロジェクトが作成されます。 C++ ソリューションについては、SolutionWrapperProject が作成された後、内部 MSBuild プロジェクトが作成されます。 いずれの場合も、生成されるプロジェクトは他の MSBuild プロジェクトと同じように扱われます。
 
 ## <a name="multi-process-execution"></a>マルチプロセス実行
 

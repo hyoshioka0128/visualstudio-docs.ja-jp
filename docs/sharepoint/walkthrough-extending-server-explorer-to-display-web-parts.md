@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 55950d8498b436d38d2145c2692556330718883e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952669"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する
   Visual Studio では、**サーバーエクスプローラー** の [ **sharepoint 接続**] ノードを使用して、sharepoint サイトのコンポーネントを表示できます。 ただし、一部のコンポーネントは既定では **サーバーエクスプローラー** 表示されません。 このチュートリアルでは、接続されている各 SharePoint サイトに Web パーツギャラリーを表示するように **サーバーエクスプローラー** を拡張します。
@@ -312,7 +312,7 @@ ms.locfileid: "95970214"
 
 12. [ **プロジェクト** ] ボックスの一覧で [ **webpartcommands**] を選択し、[ **OK** ] をクリックします。
 
-13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  **Build Solution** ソリューションがエラーなしでコンパイルされることを確認します。
+13. メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し、  >  ソリューションがエラーなしでコンパイルされることを確認します。
 
 14. WebPartNode プロジェクトのビルド出力フォルダーに、WebPartNode .vsix ファイルが含まれていることを確認します。
 
@@ -333,7 +333,7 @@ ms.locfileid: "95970214"
 
 #### <a name="to-test-the-extension"></a>拡張機能をテストするには
 
-1. の実験用インスタンスの [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで、[サーバーエクスプローラーの **表示**] を選択し  >  **Server Explorer** ます。
+1. の実験用インスタンスの [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] メニューバーで、[サーバーエクスプローラーの **表示**] を選択し  >  ます。
 
 2. テストに使用する SharePoint サイトが **サーバーエクスプローラー** の [ **sharepoint 接続**] ノードに表示されない場合は、次の手順を実行します。
 

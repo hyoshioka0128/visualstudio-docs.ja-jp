@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721764"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959650"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 プロセスにポートイベントの通知を許可します。
@@ -28,24 +28,24 @@ ms.locfileid: "80721764"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT WatchForProviderEvents(
-   PROVIDER_FLAGS       Flags,
-   IDebugDefaultPort2*  pPort,
-   AD_PROCESS_ID        processId,
-   CONST_GUID_ARRAY     EngineFilter,
-   REFGUID              guidLaunchingEngine,
-   IDebugPortNotify2*   pEventCallback
+HRESULT WatchForProviderEvents(
+   PROVIDER_FLAGS       Flags,
+   IDebugDefaultPort2*  pPort,
+   AD_PROCESS_ID        processId,
+   CONST_GUID_ARRAY     EngineFilter,
+   REFGUID              guidLaunchingEngine,
+   IDebugPortNotify2*   pEventCallback
 );
 ```
 
 ```csharp
-int WatchForProviderEvents(
-   enum_PROVIDER_FLAGS   Flags,
-   IDebugDefaultPort2    pPort,
-   AD_PROCESS_ID         ProcessId,
-   CONST_GUID_ARRAY      EngineFilter,
-   ref Guid              guidLaunchingEngine,
-   IDebugPortNotify2     pEventCallback
+int WatchForProviderEvents(
+   enum_PROVIDER_FLAGS   Flags,
+   IDebugDefaultPort2    pPort,
+   AD_PROCESS_ID         ProcessId,
+   CONST_GUID_ARRAY      EngineFilter,
+   ref Guid              guidLaunchingEngine,
+   IDebugPortNotify2     pEventCallback
 );
 ```
 
@@ -78,11 +78,11 @@ int WatchForProviderEvents(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  呼び出し元が、このメソッドの以前の呼び出しで確立されたイベントハンドラーを削除しようとしている場合、呼び出し元は、初めて実行したときと同じパラメーターを渡しますが、フラグはオフのままに `PFLAG_REASON_WATCH` なります。
 
 ## <a name="example"></a>例
- 次の例は、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイスを公開する**CDebugEngine**オブジェクトに対してこのメソッドを実装する方法を示しています。
+ 次の例は、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)インターフェイスを公開する **CDebugEngine** オブジェクトに対してこのメソッドを実装する方法を示しています。
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

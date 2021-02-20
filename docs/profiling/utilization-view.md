@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 52dd5611e5a05de4bdb2d765bbdd2860e54f767e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885899"
 ---
 # <a name="utilization-view"></a>使用状況ビュー
 **使用状況ビュー** には、現在のプロセスによって使用されている CPU、GPU、その他のシステム リソースに関する情報が表示されます ( **[分析]**  >  **[コンカレンシー ビジュアライザー]** の順に選択して、コンカレンシー ビジュアライザーを開始します)。 このビューには、分析対象のプロセス、アイドル プロセス、システム プロセス、一定期間システム上で実行中のその他のプロセスによる平均コア使用状況が表示されます。 任意の時点でどのコアがアクティブなのかは表示されません。 たとえば、特定の期間、2 つのコアがそれぞれキャパシティの 50% で動作している場合、このビューには 1 つの論理コアが使用されているものとして表示されます。 このビューは、プロファイル時間を短い時間セグメントに分割して生成されます。 セグメントごとに、その期間中、論理コアで実行されているプロセス スレッドの平均数がグラフに示されます。

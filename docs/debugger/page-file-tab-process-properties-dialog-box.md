@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: daf41a06-8a55-48f6-95f5-49a8416bd308
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47f4a2e9215cb2e98fdfefecdf978cb4a442ad84
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: b762fc95d510d5b99a2d4f8f939ef1801b5e70cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891567"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>[ページ ファイル] タブ ([プロセス プロパティ] ダイアログ ボックス)
 **[ページ ファイル]** タブを使用し、プロセスのページング ファイルを調べます。 [[プロセス プロパティ]](../debugger/process-properties-dialog-box.md) ダイアログ ボックスを表示するには、[[プロセス ビュー]](../debugger/processes-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のプロセス ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

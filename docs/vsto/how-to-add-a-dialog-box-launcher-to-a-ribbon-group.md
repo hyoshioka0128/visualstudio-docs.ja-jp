@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d8e04b7549d1b6a458f0993804946502f55f0165
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942283"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>方法: リボングループにダイアログボックスランチャーを追加する
   ダイアログボックスランチャーは、リボン上の任意のグループに追加できます。 ダイアログボックスランチャーは、グループに表示される小さいアイコンです。 ユーザーはこのアイコンをクリックして、関連するダイアログボックスや、グループに関連するその他のオプションを提供する作業ウィンドウを開くことができます。

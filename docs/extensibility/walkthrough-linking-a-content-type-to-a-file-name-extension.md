@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 478ecc6c2238703d1cacc8e649072d669a41c590
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877911"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955503"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>チュートリアル: コンテンツの種類をファイル名拡張子にリンクする
 エディター Managed Extensibility Framework (MEF) 拡張機能を使用して、独自のコンテンツの種類を定義し、ファイル名拡張子をリンクすることができます。 場合によっては、言語サービスによってファイル名の拡張子が既に定義されていることがあります。 ただし、MEF で使用するには、コンテンツの種類にリンクする必要があります。

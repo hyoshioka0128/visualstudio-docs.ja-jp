@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958662"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したドキュメント書式の変更
   このチュートリアルでは、Microsoft Office Word のドキュメントレベルのカスタマイズで Windows フォームコントロールを使用して、テキストの書式設定を変更する方法について説明します。
@@ -72,7 +72,7 @@ ms.locfileid: "97527241"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**テキスト**|**太字**|
+    |**Text**|**太字**|
 
 4. **Enter** キーを押して、最初のチェックボックスの下に挿入ポイントを移動します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "97527241"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**テキスト**|**斜体**|
+    |**Text**|**斜体**|
 
 6. **Enter** キーを押して、2番目のチェックボックスの下に挿入ポイントを移動します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "97527241"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**applyUnderlineFont**|
-    |**テキスト**|**Underline**|
+    |**Text**|**Underline**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>テキストとブックマークコントロールを追加する
 

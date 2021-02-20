@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: ea0f16deee17e2cd249c0ee1de0861a936abc75c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: aa66d3b32f6992cb3a5db13bc2b7ee4d5cd9294c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877898"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951187"
 ---
 # <a name="walkthrough-outlining"></a>チュートリアル: アウトライン
 展開または折りたたむテキスト領域の種類を定義することで、アウトラインなどの言語ベースの機能を設定します。 言語サービスのコンテキストでリージョンを定義することも、独自のファイル名の拡張子とコンテンツの種類を定義して、その型にのみ領域の定義を適用することもできます。また、既存のコンテンツの種類 ("text" など) に領域の定義を適用することもできます。 このチュートリアルでは、アウトライン領域を定義および表示する方法について説明します。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0604b6497920e1e6df0a792ce758519f425ac155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959949"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>方法: SharePoint 機能をカスタマイズする
   SharePoint 機能は、Visual Studio のフィーチャーデザイナーを使用して作成およびカスタマイズできます。 たとえば、機能のスコープを設定し、その他の機能を依存関係として追加できます。 既定では、ソリューションエクスプローラーまたは SharePoint パッケージエクスプローラーに新しい機能を追加すると、フィーチャーデザイナーが開きます。

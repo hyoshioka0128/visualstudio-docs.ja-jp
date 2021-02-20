@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f69cbacf-da9d-4b22-b8a2-abd9b8c131f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d7d5a376a8478fc2254e354085a4b25349317f84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8bcf4575282e845e96085b23b283e99c22a81039
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954749"
 ---
 # <a name="ienumdebugportsuppliers2reset"></a>IEnumDebugPortSuppliers2::Reset
 列挙体を最初の要素にリセットします。
@@ -40,7 +40,7 @@ int Reset();
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドが呼び出された後 [、次のメソッドを](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md) 呼び出すと、列挙体の最初の要素が返されます。
 
 ## <a name="see-also"></a>関連項目

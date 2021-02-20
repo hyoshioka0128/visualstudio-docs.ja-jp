@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6801f6b60d2ef522385ecdf290d0a1913bd6df2
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c16414e6a49d727cf6b2113184c507feb7a73569
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955791"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>SharePoint ソリューションのビルドとデバッグ
   一般に、SharePoint ソリューションをビルドおよびデバッグするのは、[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] でその他の種類のプロジェクトをビルドおよびデバッグするのと同じです。 このセクションのトピックでは、いくつかある相違点について説明します。

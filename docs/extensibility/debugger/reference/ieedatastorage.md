@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad7da71d31e1093d87d68bb39958a71a117f5d5f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966436"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 このインターフェイスは、バイトの配列を表します。
@@ -37,17 +37,17 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  インターフェイスには `IEEDataStorage` 、次のメソッドが実装されています。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|指定したバッファーに、指定したデータバイト数を取得します。|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|使用可能なデータバイト数を取得します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このインターフェイスは、特定のオブジェクトによって保持されているデータにアクセスするために、型ビジュアライザーによって使用されます。 データはバイト配列として扱われます。これにより、型ビジュアライザーは、このデータをユーザーに提示するために必要な任意の方法で操作できます。
 
  カスタムビューアーでは、必要に応じてこのインターフェイスを使用することもできますが、通常はカスタムビューアーでカスタムインターフェイス、 [Getmemorybytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) 、または [getmemorybytes](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (文字列指向データ用) を使用します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -55,6 +55,6 @@ IEEDataStorage : IUnknown
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [型のビジュアライザーとカスタム ビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

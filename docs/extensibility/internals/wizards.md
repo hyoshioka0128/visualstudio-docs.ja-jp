@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f367723a3c819635f2d7cf20ed812a36cda12830
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 828a08cfe2841595e0ed3a9f1e3d79973a6e6756
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943382"
 ---
 # <a name="wizards"></a>ウィザード
 ウィザードを作成した後は、通常、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 他のユーザーが使用できるように統合開発環境 (IDE) に追加します。 追加したウィザードは、[ **新しいプロジェクトの追加** ] または [ **新しい項目の追加** ] ダイアログボックスに表示されます。 [ **新しいプロジェクトの追加** ] または [ **新しい項目の追加** ] ダイアログボックスを表示するには、 **ソリューションエクスプローラー** で開いているソリューションを右クリックし、[ **追加**] をポイントして、[ **新しいプロジェクト** ] または [ **新しい項目**] をクリックします。
@@ -43,7 +43,7 @@ ms.locfileid: "97487752"
 
  `IDTWizard`IDE で動作するためにウィザードが実装する必要のあるインターフェイスについて説明します。
 
-- [コンテキスト パラメーター](../../extensibility/internals/context-parameters.md)
+- [コンテキストパラメーター](../../extensibility/internals/context-parameters.md)
 
  ウィザードの実装方法と、IDE がコンテキストパラメーターを実装に渡すときの動作について説明します。
 

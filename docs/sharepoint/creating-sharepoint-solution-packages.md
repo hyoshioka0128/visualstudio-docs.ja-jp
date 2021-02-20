@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850560"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949091"
 ---
 # <a name="create-sharepoint-solution-packages"></a>SharePoint ソリューションパッケージの作成
   配置パッケージを作成したりカスタマイズしたりするには、パッケージ デザイナーを使用します。 たとえば、SharePoint のプロジェクト項目およびフィーチャーの追加、IIS サーバーのリセット、フィーチャーのアクティブ化スコープの設定、フィーチャーの依存関係の特定などを行うことができます。 このデザイナーでは、マニフェスト (個々のパッケージを記述した XML ファイル) を生成することもできます。
@@ -38,10 +38,10 @@ ms.locfileid: "94850560"
 |パッケージ デザイナーのプロパティ|既定の設定に関する説明|
 |-------------------------------|------------------------------------|
 |名前|必須。 パッケージの既定の名前は *ProjectName* に設定されています。|
-|[Web サーバーのリセット]|省略可能。 SharePoint サーバーに *.wsp* ファイルがインストールされた後に Web サーバーを再起動する場合に選択します。|
-|配置サーバーの種類|省略可能。 パッケージをホストしているサーバーの種類を表します。 設定されていない場合、既定では WebFrontEnd エンドになります。<br /><br /> ApplicationServer: サービスをホストするサーバーを表します。<br /><br /> WebFrontEnd エンド: Web サイトをホストするサーバーについて説明します。|
+|[Web サーバーのリセット]|任意。 SharePoint サーバーに *.wsp* ファイルがインストールされた後に Web サーバーを再起動する場合に選択します。|
+|配置サーバーの種類|任意。 パッケージをホストしているサーバーの種類を表します。 設定されていない場合、既定では WebFrontEnd エンドになります。<br /><br /> ApplicationServer: サービスをホストするサーバーを表します。<br /><br /> WebFrontEnd エンド: Web サイトをホストするサーバーについて説明します。|
 |[ソリューション内の項目]|パッケージに追加できるすべての SharePoint プロジェクト項目およびフィーチャーを表します。|
-|[パッケージ内の項目]|省略可能。 パッケージ内の配置対象の SharePoint プロジェクト項目およびフィーチャーを表します。|
+|[パッケージ内の項目]|任意。 パッケージ内の配置対象の SharePoint プロジェクト項目およびフィーチャーを表します。|
 
 ## <a name="configure-the-packaging-process"></a>パッケージ化プロセスを構成する
  Visual Studio で SharePoint ソリューションを開発した後に、プロジェクトをパッケージ化する方法をカスタマイズすることができます。

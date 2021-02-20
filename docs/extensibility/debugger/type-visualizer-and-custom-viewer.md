@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac759dd245da8d803cb943dd6398d9ae642aaf23
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 3fe647d8a5a4bf3485b1d7b9f7b9699997bf3da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965435"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>型ビジュアライザーとカスタムビューアー
 型ビジュアライザーは、特定の形式でデータを表示するコンポーネントです。 この形式は、ビジュアライザーを実装しているユーザーに対してのみ、エンドユーザーまたはビジュアライザーのサードパーティのサプライヤーです。
@@ -31,7 +31,7 @@ ms.locfileid: "96995942"
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>式エバリュエーターでのカスタムビューアーのサポート
  EE は、データ型を表示するためのコードを提供するカスタムビューアーをサポートすることもできます。 カスタムビューアーは、必要な形式でデータを表示するすべての作業を処理する [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) インターフェイスを実装します。ビューアーには、表示を完全に制御できます。また、データを変更することもできます。 EE によって提供されるカスタムビューアーには、製品の出荷時に EE が付属しています。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)
 - [式エバリュエーター](../../extensibility/debugger/expression-evaluator.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)

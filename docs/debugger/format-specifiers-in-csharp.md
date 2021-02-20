@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a832bcee3f722cabaedcb3ac0672dbe09a4e77c4
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: abc824cf5d0413f01ad5f3f4423b974aeca40b03
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870585"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C#)
 書式指定子を使用して、**ウォッチ** ウィンドウに表示される値の書式を変更することができます。 また、**イミディエイト** ウィンドウ、**コマンド** ウィンドウ、[トレースポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)、ソースのウィンドウでも、書式指定子を使用できます。 これらのウィンドウで式の上にカーソルを合わせると、結果が指定した書式で[データヒント](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)に表示されます。

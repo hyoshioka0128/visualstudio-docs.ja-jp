@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527226"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956595"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したワークシートの書式設定の変更
   このチュートリアルでは、Microsoft Office Excel ワークシートでチェックボックスを使用して書式を変更する方法の基本について説明します。 プロジェクトにコードを作成して追加するには、Visual Studio の Office 開発ツールを使用します。 完成したサンプルとして結果を表示するには、「 [Office 開発のサンプルとチュートリアル](../vsto/office-development-samples-and-walkthroughs.md)」の Excel コントロールのサンプルを参照してください。
@@ -71,21 +71,21 @@ ms.locfileid: "97527226"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**テキスト**|**太字**|
+    |**Text**|**太字**|
 
 5. セル **B4** の横にある2つ目のチェックボックスをドラッグし、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**テキスト**|**斜体**|
+    |**Text**|**斜体**|
 
 6. セル **B6** の横にある3番目のチェックボックスをドラッグし、次のプロパティを変更します。
 
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**applyUnderlineFont**|
-    |**テキスト**|**Underline**|
+    |**Text**|**Underline**|
 
 7. **Ctrl** キーを押しながら、3つのチェックボックスコントロールをすべて選択します。
 

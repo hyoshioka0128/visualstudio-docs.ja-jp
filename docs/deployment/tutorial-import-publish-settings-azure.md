@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d2c52d6db6ca3001712a692a1de059834c975ae
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 50a65d681693bd9c1421767d2cac47f65b685e6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945046"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを Azure App Service に発行する
 
@@ -39,16 +39,16 @@ ms.locfileid: "88801712"
 
 ::: moniker range=">=vs-2019"
 
-* Visual Studio 2019 をインストールし、**ASP.NET と Web 開発**ワークロードを用意する必要があります。
+* Visual Studio 2019 をインストールし、**ASP.NET と Web 開発** ワークロードを用意する必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-* Visual Studio 2017 をインストールし、ASP.NET と **Web 開発**のワークロードを用意する必要があります。
+* Visual Studio 2017 をインストールし、ASP.NET と **Web 開発** のワークロードを用意する必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 
 * Azure App Service を作成します。 詳細な手順については、「[Visual Studio を使用して Azure に ASP.NET Core アプリを発行する](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)」を参照してください。
@@ -59,7 +59,7 @@ ms.locfileid: "88801712"
 
     適切なテンプレートを選択します。 この例では、 **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、 **[OK]** を選択します。
 
-    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクに進みます。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
+    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクに進みます。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発** ワークロードをインストールします。
 
     選択したプロジェクト テンプレート (ASP.NET または ASP.NET Core) は、Web サーバーにインストールされている ASP.NET のバージョンと対応している必要があります。
 

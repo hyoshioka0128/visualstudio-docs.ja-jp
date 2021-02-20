@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 623cbdcfaae6acd1889e265fecafec805e5a9440
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bf6082ec8860f7f50e758eb65a8471ece94103aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950412"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL の MSI および VSIX 配置
 ドメイン固有言語は、自分のコンピューターまたは他のコンピューターにインストールできます。 Visual Studio は、ターゲットコンピューターに既にインストールされている必要があります。
@@ -22,7 +22,7 @@ ms.locfileid: "97363134"
 ## <a name="choosing-between-vsix-and-msi-deployment"></a><a name="which"></a> VSIX と MSI の展開の選択
  ドメイン固有言語を展開するには、次の2つの方法があります。
 
-|Method|利点|
+|Method|メリット|
 |-|-|
 |VSX (Visual Studio 拡張機能)|デプロイが非常に簡単: DslPackage プロジェクトから **.vsix** ファイルをコピーして実行します。<br /><br /> 詳細について [は、「VSX を使用した DSL のインストールとアンインストール](#Installing)」を参照してください。|
 |MSI (インストーラーファイル)|-ユーザーが DSL ファイルをダブルクリックして Visual Studio を開くことを許可します。<br />-ターゲットコンピューターの DSL ファイルの種類にアイコンを関連付けます。<br />-XSD (XML スキーマ) を DSL ファイルの種類に関連付けます。 これにより、ファイルが Visual Studio に読み込まれるときに警告が回避されます。<br /><br /> MSI を作成するには、ソリューションにセットアッププロジェクトを追加する必要があります。<br /><br /> 詳細については、「 [MSI ファイルを使用した DSL の展開](#msi)」を参照してください。|

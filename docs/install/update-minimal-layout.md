@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935704"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>最小限のオフライン レイアウトを使用して Visual Studio を更新する
 
@@ -67,6 +67,8 @@ ms.locfileid: "88168750"
 * **Verify**: このコマンドを使用すると、レイアウト フォルダーが破損しているかどうかを確認できます。
 * **解決策**:このコマンドを使用すると、レイアウト フォルダーで欠落しているパッケージを置き換えるなど、破損したレイアウト フォルダーを修正できます。
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>オプション 
 
 |オプション    |説明    |必須/省略可能 |例 |
@@ -81,6 +83,26 @@ ms.locfileid: "88168750"
 |--includeRecommended    |インストールされているワークロードの推奨されるコンポーネントを含めますが、オプションのコンポーネントは含めません。    |Optional    |特定のワークロードの場合: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> すべてのワークロードに適用するには: --includeRecommended |
 |--includeOptional |インストールされているワークロードのオプションのコンポーネントを含めます (推奨されるコンポーネントを含む)。    |Optional    |特定のワークロードの場合: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> すべてのワークロードに適用するには: --includeOptional |
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>オプション 
+
+|オプション    |説明    |必須/省略可能 |例 |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt;dir&gt; |最小限のオフライン レイアウトを作成するディレクトリを指定します。       |必須        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt;version&gt;|このバージョン以降で、最小限のオフライン レイアウトが生成されます。   |必須|--baseVersion 15.0.0 |
+|--targetVersion &lt;version&gt;|このバージョンまで (このバージョンを含む)、最小限のオフラインレ イアウトが生成されます。|必須|--targetVersion 15.9.31|
+|--languages    |最小限のオフライン レイアウトに含める言語を指定します。 複数の値を指定するには、スペースで区切ります。    |必須    |--languages en-US fr-FR |
+|--productId &lt;id&gt;    |最小限のオフライン レイアウトの生成元となる製品の ID。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|必須|--productId Microsoft.VisualStudio.Product.Enterprise |
+|--filePath    |既に作成されているレイアウトからの MinimalLayout.json ファイルのファイル パス。 このオプションは、Regenerate コマンドでのみ使用されます。     |Regenerate コマンドで必須    |--filePath C:\VSLayout\minimalLayout.json <br><br> **Regenerate コマンドは、オプションとして --filePath のみを受け取ることに注意してください。** |
+|--add &lt;1 つまたは複数のワークロード ID またはコンポーネント ID&gt;    |追加する 1 つまたは複数のワークロード ID またはコンポーネント ID を指定します。 その他のコンポーネントをグローバルに追加するには、--includeRecommended または <br> –-includeOptional を使用します。 複数のワークロード ID またはコンポーネント ID を指定するには、スペースで区切ります。    |Optional    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
+|--includeRecommended    |インストールされているワークロードの推奨されるコンポーネントを含めますが、オプションのコンポーネントは含めません。    |Optional    |特定のワークロードの場合: <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> すべてのワークロードに適用するには: --includeRecommended |
+|--includeOptional |インストールされているワークロードのオプションのコンポーネントを含めます (推奨されるコンポーネントを含む)。    |Optional    |特定のワークロードの場合: <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> すべてのワークロードに適用するには: --includeOptional |
+
+::: moniker-end
+
 ### <a name="generating-a-minimal-layout"></a>最小限のレイアウトの生成
 
 > [!IMPORTANT]
@@ -91,6 +113,8 @@ ms.locfileid: "88168750"
 レイアウトを作成する前に、**preview** コマンドを使用して、ダウンロードの合計サイズと、含まれるパッケージの数を確認できます。 このコマンドは、**generate** コマンドと同じオプションを受け取ります。詳細はコンソールに書き込まれます。
 
 最小限のレイアウトをプレビュー、生成、および再生成する方法の例をいくつか見てみましょう。
+
+::: moniker range="vs-2019"
 
 - 最初に、英語のみの Visual Studio Enterprise バージョン 16.4.0 から 16.4.4 までについてレイアウトをプレビューする方法の例を次に示します。
 
@@ -123,6 +147,44 @@ ms.locfileid: "88168750"
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- 最初に、英語のみの Visual Studio Enterprise バージョン 15.0.0 から 15.9.31 までについてレイアウトをプレビューする方法の例を次に示します。
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- 1 つのワークロードで同じレイアウトを生成する方法を次に示します。
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- 既存の応答ファイルを使用して最小限のオフライン レイアウトを再生成する方法を次に示します。 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+**generate** コマンドを使用したその他の例をいくつか示します。
+
+- その他のワークロード (推奨されるパッケージのみを含む) を追加する方法を次に示します。 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- 最後に、最小限のレイアウトに複数の言語を含める方法を次に示します。 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>最小限のレイアウトを維持する方法
 

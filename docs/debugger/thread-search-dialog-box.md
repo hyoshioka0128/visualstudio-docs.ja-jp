@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 895241a99131c31e2fab73b9799f6203db7259e0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: afcbbcb1990f27a09ec74814b67dbdd77bc28ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148755"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940619"
 ---
 # <a name="thread-search-dialog-box"></a>[スレッド検索] ダイアログ ボックス
 このダイアログ ボックスを使用して、[スレッド ビュー](../debugger/threads-view.md)で特定のスレッドのノードを検索して選択します。 このダイアログボックスを表示するには、**スレッド** ビュー ウィンドウにフォーカスを移動します。 その後、 **[検索]** メニューから **[スレッドの検索]** を選択します。

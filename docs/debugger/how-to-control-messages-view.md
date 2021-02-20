@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 32685ab2-6c5b-41fc-b429-29260caef585
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c99f0db1686a9f1dd8dcb13949eb6fe47f3fdc
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: 674498ff86f3ea3d44d5d9b49ec97789fa5a1205
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398637"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837776"
 ---
 # <a name="how-to-control-messages-view"></a>方法: メッセージ ビューを制御する
 Spy++ を使用すると、[[メッセージ ビュー]](../debugger/messages-view.md) ウィンドウの内容をかなり細かく制御できます。 メッセージの表示はいつでも[開始および停止](../debugger/how-to-start-and-stop-the-message-log-display.md)することができ、次を指定することもできます。

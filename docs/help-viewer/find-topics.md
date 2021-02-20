@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944135"
 ---
 # <a name="how-to-search-for-topics"></a>方法: トピックを検索する
 
 フルテキスト検索機能を使用すると、特定のワードを含むすべてのトピックを検索できます。 ワイルドカード式、論理演算子、および高度な検索演算子を使用して、検索の絞り込みおよびカスタマイズもできます。
 
-[**検索**] タブを開くには、[**ヘルプビューアー** ] ウィンドウで [**検索**] タブを選択するか、キーボードユーザーの場合は**Ctrl E キーを押し** + **E**ます。
+[**検索**] タブを開くには、[**ヘルプビューアー** ] ウィンドウで [**検索**] タブを選択するか、キーボードユーザーの場合は **Ctrl E キーを押し** + ます。
 
 ## <a name="to-perform-a-full-text-search"></a>フルテキスト検索を実行するには
 

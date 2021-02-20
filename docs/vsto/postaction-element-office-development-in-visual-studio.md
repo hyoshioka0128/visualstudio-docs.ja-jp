@@ -11,15 +11,15 @@ helpviewer_keywords:
 - postAction element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0490e9423cb747782029eb0fd7254407adb3a607
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955763"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction &gt; 要素 (Visual Studio での Office 開発)
   `postAction` 名前空間の `vstav3` 要素には、配置後アクションに関連付ける `entrypoint` 要素とすべての `postActionData` 要素を格納します。これらの要素は、Office ソリューションのインストール後に実行されます。
@@ -43,10 +43,10 @@ ms.locfileid: "85546940"
  `postAction` には、次の要素があります。
 
 ### <a name="entrypoint"></a>entryPoint
- 省略可能。 `entryPoint`名前空間の要素の役割 `vstav3` は、 [Visual Studio&#41;での Office 開発 &#40;&#60;entryPoints&#62; 要素](../vsto/entrypoints-element-office-development-in-visual-studio.md)で定義されています。
+ 任意。 `entryPoint`名前空間の要素の役割 `vstav3` は、 [Visual Studio&#41;での Office 開発 &#40;&#60;entryPoints&#62; 要素](../vsto/entrypoints-element-office-development-in-visual-studio.md)で定義されています。
 
 ### <a name="postactiondata"></a>postActionData
- 省略可能。 `postActionData`名前空間の要素のロールは `vstav3` [&#60;postactiondata&#62; 要素で定義され、Visual Studio&#41;での Office 開発 &#40;](../vsto/postactiondata-element-office-development-in-visual-studio.md)ます。
+ 任意。 `postActionData`名前空間の要素のロールは `vstav3` [&#60;postactiondata&#62; 要素で定義され、Visual Studio&#41;での Office 開発 &#40;](../vsto/postactiondata-element-office-development-in-visual-studio.md)ます。
 
 ## <a name="post-deployment-action-example"></a>配置後アクションの例
 

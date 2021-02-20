@@ -7,12 +7,12 @@ robots: noindex, nofollow
 author: evanwindom
 ms.author: v-evwin
 ms.date: 12/07/2020
-ms.openlocfilehash: 381561e324184fc07ed322d0348404d1de0d898e
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 9168e857d07c7843bd1576185598f5911263528e
+ms.sourcegitcommit: 5c146b2dfaefc4f44802600c2cd252a7a0e4b846
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883705"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525546"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio サブスクリプション サポート ウィジェット コンテンツのインクルード ファイル
 
@@ -72,7 +72,12 @@ ms.locfileid: "98883705"
 
 ### <a name="use-product-features"></a>製品機能の使用
 [!INCLUDE [Cannot find IDE feature](downloading-activating-or-using-software/using-product-features/includes/cannot-find-ide-feature.md)]
+
 [!INCLUDE [Visual Studio IDE technical support](downloading-activating-or-using-software/using-product-features/includes/visual-studio-ide-technical-support.md)]
+
+[!INCLUDE [Azure DevOps technical support](downloading-activating-or-using-software/using-product-features/includes/azure-devops-technical-support.md)]
+
+[!INCLUDE [Windows developer technical support](downloading-activating-or-using-software/using-product-features/includes/windows-developer-technical-support.md)]
 
 ## <a name="license-terms"></a>ライセンス条項
 

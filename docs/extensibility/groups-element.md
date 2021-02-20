@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 740ca4ec-79fa-4b98-8f9a-2a137f9f7f98
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31b5885ad6e08bd9e22049033d6191c97fdc857b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 43b16287027826eeacaadca747aff4a1f9cad17a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943408"
 ---
 # <a name="groups-element"></a>Groups 要素
 VSPackage のコマンドグループを定義するエントリが含まれています。
@@ -39,7 +39,7 @@ VSPackage のコマンドグループを定義するエントリが含まれて�
 
 |属性|説明|
 |---------------|-----------------|
-|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03cbcee265855c0e3ee26f75d5937315d64661a2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ffc7f8a80e86779f2cc419f841a3b80280f39c9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896404"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>[ウィンドウ] タブ ([ウィンドウ プロパティ] ダイアログ ボックス)
 選択したウィンドウに関連するウィンドウに関する情報を表示するには、 **[ウィンドウ]** タブを使用します。 [[ウィンドウ プロパティ] ダイアログ ボックス](../debugger/window-properties-dialog-box.md)を表示するには、[[ウィンドウ ビュー]](../debugger/windows-view.md) ウィンドウにフォーカスを移動します。 ツリーで任意のウィンドウ ノードを選択し、 **[ビュー]** メニューから **[プロパティ]** を選択します。

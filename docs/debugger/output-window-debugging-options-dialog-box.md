@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 3c92bada0777c01cd8999b30597999e55f113a2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975018"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891554"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>出力ウィンドウ ([オプション] ダイアログ ボックス - [デバッグ])
 **[出力]** ウィンドウに表示されるデバッグ情報の種類を指定できます。 これらのオプションを表示するには、 **[ツール]** メニューを開き、 **[オプション]** をクリックし、 **[デバッグ]** ノードを展開し、 **[出力ウィンドウ]** をクリックします。

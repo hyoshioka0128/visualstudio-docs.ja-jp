@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 81f337cf3feca517f46632e7fe08a9f5a62cd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62429763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902455"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>クイック スタート: Visual Studio のテンプレートから Python プロジェクトを作成する
 
@@ -36,7 +36,7 @@ ms.locfileid: "62429763"
     > [!Tip]
     > プロジェクトを開始するとき、すぐに仮想環境を作成することを強くお勧めします。ほとんどの Visual Studio テンプレートでそのように勧められます。 仮想環境では、時間の経過と共にライブラリを追加したり、削除したりしても、プロジェクトの厳密な要件が維持されます。 そのため、*requirements.txt* ファイルを簡単に生成できます。このファイルを利用し、(ソース管理を利用するとき) 他の開発コンピューターにそれらの依存関係を再インストールします。また、運用サーバーにプロジェクトを展開するときに再インストールします。 仮想環境とその長所については、「[仮想環境を使用する](../python/selecting-a-python-environment-for-a-project.md#use-virtual-environments)」と「[requirements.txt での必須パッケージの管理](../python/managing-required-packages-with-requirements-txt.md)」をご覧ください。
 
-1. Visual Studio によってその環境が作成されたら、**ソリューション エクスプローラー**を調べて、*requirements.txt* と共に *app.py* ファイルが指定されていることを確認します。 *app.py* を開き、「[クイック スタート - Flask での Web アプリの作成](../ide/quickstart-python.md)」のものと似たコードがテンプレートによって指定されており、セクションがいくつか追加されていることを確認します。 以下に示すコードはすべてテンプレートで作成されるため、ユーザーが自分で *app.py* に貼り付ける必要はありません。
+1. Visual Studio によってその環境が作成されたら、**ソリューション エクスプローラー** を調べて、*requirements.txt* と共に *app.py* ファイルが指定されていることを確認します。 *app.py* を開き、「[クイック スタート - Flask での Web アプリの作成](../ide/quickstart-python.md)」のものと似たコードがテンプレートによって指定されており、セクションがいくつか追加されていることを確認します。 以下に示すコードはすべてテンプレートで作成されるため、ユーザーが自分で *app.py* に貼り付ける必要はありません。
 
     コードは次のように必要なインポートで始まります。
 

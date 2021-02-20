@@ -7,17 +7,17 @@ ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f182351cbb0351256ebe32b4ab70543022ed92c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88114246"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868531"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio のインストールに使用するコマンド ライン パラメーターの例
 
@@ -160,7 +160,7 @@ ms.locfileid: "88114246"
 
 ::: moniker range="vs-2017"
 
-これらのコマンドライン パラメーターは **15.7 の新機能**です。 詳細については、[コマンドライン パラメーターを使用した Visual Studio のインストール](use-command-line-parameters-to-install-visual-studio.md)に関するページをご覧ください。
+これらのコマンドライン パラメーターは **15.7 の新機能** です。 詳細については、[コマンドライン パラメーターを使用した Visual Studio のインストール](use-command-line-parameters-to-install-visual-studio.md)に関するページをご覧ください。
 
 ::: moniker-end
 
@@ -184,7 +184,7 @@ ms.locfileid: "88114246"
 
 ::: moniker range="vs-2017"
 
-このコマンド ライン コマンドは、**15.9 の新機能**です。 詳細については、[コマンド ライン パラメーターを使用した Visual Studio のインストール](use-command-line-parameters-to-install-visual-studio.md)に関するページを参照してください。
+このコマンド ライン コマンドは、**15.9 の新機能** です。 詳細については、[コマンド ライン パラメーターを使用した Visual Studio のインストール](use-command-line-parameters-to-install-visual-studio.md)に関するページを参照してください。
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ ms.locfileid: "88114246"
 
 ::: moniker range="vs-2017"
 
-このコマンド ライン パラメーターは、**15.9 の新機能**です。 詳細については、[コマンド ライン パラメーターを使用した Visual Studio のインストール](use-command-line-parameters-to-install-visual-studio.md)に関するページを参照してください。
+このコマンド ライン パラメーターは、**15.9 の新機能** です。 詳細については、[コマンド ライン パラメーターを使用した Visual Studio のインストール](use-command-line-parameters-to-install-visual-studio.md)に関するページを参照してください。
 
 ::: moniker-end
 

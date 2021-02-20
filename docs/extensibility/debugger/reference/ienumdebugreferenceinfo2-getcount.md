@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e62706e0-d2cd-48fb-8fdf-444463c651ab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1d2105344ba937e419260b8367ecc084c8825c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e087992cd5b2d5ac29b4f987d2c29dbf0e9006e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967723"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
 列挙体の要素の数を返します。
@@ -46,7 +46,7 @@ int GetCount(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  このメソッドは `Next` 、、、 `Clone` `Skip` 、およびメソッドのみを `Reset` 実装する必要があることを指定する、慣例的な COM 列挙インターフェイスの一部ではありません。
 
 ## <a name="see-also"></a>関連項目

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40e136d8-a08c-43bd-b313-fb821c55eb3c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0f8126689c0874c984a679da9b6debcb66a3075
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ed538c49aeb1257b165d7cfecab0352dd0deb488
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889175"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>方法: エディット コンティニュを使用する (C#)
 C# のエディット コンティニュを使用すると、デバッグ セッションを停止して再開することなく、デバッグ中に中断モードでコードに変更を加えることができます。

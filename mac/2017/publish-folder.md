@@ -9,12 +9,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: a1855b272a774f7c4bd36866555f463525075e2d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 98831768dac9f7e57c1bd5f19f0dc088951a6af4
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862008"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719787"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Visual Studio for Mac を使用してフォルダーに Web アプリを発行する
 
@@ -23,7 +23,7 @@ ms.locfileid: "91862008"
 ## <a name="prerequisites"></a>必須コンポーネント
 
 - ASP.NET Core を有効にしてインストールされた [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017)。
-- ASP.NET Core プロジェクト。 プロジェクトをまだ用意していない場合は、[新しいプロジェクトを作成](./create-new-projects.md?view=vsmac-2017)することができます。
+- ASP.NET Core プロジェクト。 プロジェクトをまだ用意していない場合は、[新しいプロジェクトを作成](./create-new-projects.md?view=vsmac-2017&preserve-view=true)することができます。
 
 ## <a name="publish-to-folder"></a>フォルダーに発行する
 

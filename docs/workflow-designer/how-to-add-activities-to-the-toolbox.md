@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f2ffdb25bfdb359352d62913c984cad07c18aed
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6def442b6500ac1265f83aef49db8c79c8e05ae7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971675"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>方法 : ツール ボックスにアクティビティを追加する
 
@@ -60,6 +60,6 @@ ms.locfileid: "96996306"
 
 6. カスタムアクティビティは、項目が追加される前にフォーカスがあったカテゴリの下の **ツールボックス** に表示されます。 たとえば、ツールボックス項目を追加する前に [**ツールボックス**] で **[全般**] カテゴリを選択した場合、[**全般**] カテゴリの下にアクティビティが表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [ワークフロー デザイナーの使用](developing-applications-with-the-workflow-designer.md)

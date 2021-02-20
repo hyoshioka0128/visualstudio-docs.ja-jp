@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88248290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909234"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>C でコード エディターを使用する方法を学習する\#
 
@@ -68,7 +68,7 @@ ms.locfileid: "88248290"
 
 ## <a name="use-code-snippets"></a>コード スニペットを使用する
 
-Visual Studio で提供されている便利な*コード スニペット*を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../../ide/code-snippets.md)は、C#、Visual Basic、C++ など、さまざまなプログラミング言語で使用することができます。 C# `void Main` スニペットをファイルに追加してみましょう。
+Visual Studio で提供されている便利な *コード スニペット* を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../../ide/code-snippets.md)は、C#、Visual Basic、C++ など、さまざまなプログラミング言語で使用することができます。 C# `void Main` スニペットをファイルに追加してみましょう。
 
 1. ファイル内の最後の閉じかっこ **}** のちょうど上にカーソルを置き、文字 `svm` を入力します (これは、`static void Main`&mdash; の略ですが、その意味が分からなくても、あまり心配しないでください)。
 
@@ -152,7 +152,7 @@ Visual Studio エディターでは、型やメソッドなどの定義の検査
    foreach (string str in qu
    ```
 
-   IntelliSense が `query` シンボルに関する**クイック ヒント**を表示しているのがわかります。
+   IntelliSense が `query` シンボルに関する **クイック ヒント** を表示しているのがわかります。
 
    ![Visual Studio での IntelliSense の入力候補](../media/tutorial-intellisense-completion-list.png)
 

@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: f43b3e529d7e56af7639df1118baa64f0d594e6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+manager: jmartens
+ms.openlocfilehash: 768c19f78102bf19346867beda967a069c1d182e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844958"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows フォーム デザイナーの概要
 
@@ -35,7 +35,7 @@ Visual Studio の Windows フォーム デザイナーでは、Windows フォー
 - **Shift** キーまたは **Ctrl** キーを押しながらクリックして、複数のコントロールを選択します。 **Shift** キーを押しながらクリックすると、最初に選択したコントロールが、サイズを調整または操作するときに最も優先されるコントロールになります。 **Ctrl** キーを押しながらクリックすると、最後に選択したコントロールが優先されるので、新しいコントロールを追加するたびに優先されるコントロールが変わります。 または、選択するコントロールを囲むように選択領域をドラッグして、複数のコントロールを選択することもできます。
 
 > [!NOTE]
-> フォームのリソース ( *.resx* ) ファイルを変更するには、リソース エディターではなく Windows フォーム デザイナーを使用します。 フォーム ベースの .resx ファイルを編集すると、リソース エディターで行った変更が失われる可能性があることを示す警告が表示されます。 これは、Windows フォーム デザイナーによって .resx ファイルが生成されるためです。
+> フォームのリソース (*.resx*) ファイルを変更するには、リソース エディターではなく Windows フォーム デザイナーを使用します。 フォーム ベースの .resx ファイルを編集すると、リソース エディターで行った変更が失われる可能性があることを示す警告が表示されます。 これは、Windows フォーム デザイナーによって .resx ファイルが生成されるためです。
 
 ## <a name="see-also"></a>関連項目
 

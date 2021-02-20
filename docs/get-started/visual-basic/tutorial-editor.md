@@ -7,17 +7,17 @@ ms.technology: vs-ide-general
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c46120c369fa130e83620549ca0bc084a5075f7f
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87235148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944538"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>Visual Basic でコード エディターを使用する方法を学習する
 
@@ -68,7 +68,7 @@ ms.locfileid: "87235148"
 
 ## <a name="use-code-snippets"></a>コード スニペットを使用する
 
-Visual Studio で提供されている便利な*コード スニペット*を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../../ide/code-snippets.md)は、Visual Basic、C#、C++ など、さまざまなプログラミング言語で使用することができます。 Visual Basic の **Sub** スニペットをファイルに追加してみましょう。
+Visual Studio で提供されている便利な *コード スニペット* を使用すると、一般的に使用されるコード ブロックを迅速かつ簡単に生成することができます。 [コード スニペット](../../ide/code-snippets.md)は、Visual Basic、C#、C++ など、さまざまなプログラミング言語で使用することができます。 Visual Basic の **Sub** スニペットをファイルに追加してみましょう。
 
 1. `End Class` と示されている行の上にカーソルを置き、「**sub**」と入力します。
 
@@ -152,7 +152,7 @@ Visual Studio エディターでは、型やメソッドなどの定義の検査
    For Each str In qu
    ```
 
-   IntelliSense が `query` シンボルに関する**クイック ヒント**を表示しているのがわかります。
+   IntelliSense が `query` シンボルに関する **クイック ヒント** を表示しているのがわかります。
 
    ![Visual Studio での IntelliSense の入力候補](media/tutorial-intellisense-completion-list.png)
 

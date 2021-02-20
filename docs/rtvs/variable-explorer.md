@@ -5,19 +5,19 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f69e5b61e80d3a00522307dd7481f74418407d99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62809878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851804"
 ---
 # <a name="variable-explorer"></a>変数エクスプローラー
 
-**変数エクスプローラー** ウィンドウは、**[R Tools]** > **[ウィンドウ]** > **[変数エクスプローラー]** (または、**[R Tools]** > **[データ サイエンスの設定]** を使用した場合は **Ctrl**+**8** キー) を使用して開きます。このウィンドウには、現在の R セッションでの特定のスコープにあるすべての変数が表示されます。 たとえば、**変数エクスプローラー**を開いて[対話型ウィンドウ](interactive-repl-for-r-in-visual-studio.md)に以下の行を入力したとします。
+**変数エクスプローラー** ウィンドウは、**[R Tools]** > **[ウィンドウ]** > **[変数エクスプローラー]** (または、**[R Tools]** > **[データ サイエンスの設定]** を使用した場合は **Ctrl**+**8** キー) を使用して開きます。このウィンドウには、現在の R セッションでの特定のスコープにあるすべての変数が表示されます。 たとえば、**変数エクスプローラー** を開いて [対話型ウィンドウ](interactive-repl-for-r-in-visual-studio.md)に以下の行を入力したとします。
 
 ```R
 x <- 42
@@ -29,7 +29,7 @@ n <- c(1,2,3,5,8,13)
 
 ![Visual Studio の変数エクスプローラー ウィンドウ](media/variable-explorer-window.png)
 
-より複雑な R データ フレームが定義されているセッションでは、データに移動できます。 たとえば、`cars <- mtcars` の実行後、**変数エクスプローラー**でさまざまなノードを展開して、データセット内を移動することができます。
+より複雑な R データ フレームが定義されているセッションでは、データに移動できます。 たとえば、`cars <- mtcars` の実行後、**変数エクスプローラー** でさまざまなノードを展開して、データセット内を移動することができます。
 
 ![変数エクスプローラーの展開ビュー](media/variable-explorer-expanded-results.png)
 
@@ -49,23 +49,23 @@ n <- c(1,2,3,5,8,13)
 
 ![2 つの列を基準にしたデータの並べ替えを示すテーブル ビュー。](media/variable-explorer-table-view-sorting.png)
 
-**変数エクスプローラー**とテーブル ビューは、別の Visual Studio ウィンドウに表示されるため、作業しやすい配置になるように並べて表示できます。 一般的な操作手順については、「[Visual Studio のウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)」を参照してください。
+**変数エクスプローラー** とテーブル ビューは、別の Visual Studio ウィンドウに表示されるため、作業しやすい配置になるように並べて表示できます。 一般的な操作手順については、「[Visual Studio のウィンドウ レイアウトをカスタマイズする](../ide/customizing-window-layouts-in-visual-studio.md)」を参照してください。
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Excel (またはその他の CSV に対応したアプリケーション) で開く
 
-さらに処理したり分析したりするには、セッション変数を CSV にエクスポートすると便利なことがよくあります。 エクスポートは、**変数エクスプローラー**の各ノードの横にある小さい Excel のアイコン (![Excel エクスポート アイコン](media/variable-explorer-excel-icon.png)) を使うか、項目を右クリックして **[CSV アプリで開く]** を選びます。 このアイコンを選択すると、 *%userprofile%\Documents\RTVS_CSV_Exports* フォルダーの新規 CSV ファイルにデータが書き込まれ、そのファイルが起動されて、 *.csv* の拡張子に関連付けられているアプリケーションで開きます。
+さらに処理したり分析したりするには、セッション変数を CSV にエクスポートすると便利なことがよくあります。 エクスポートは、**変数エクスプローラー** の各ノードの横にある小さい Excel のアイコン (![Excel エクスポート アイコン](media/variable-explorer-excel-icon.png)) を使うか、項目を右クリックして **[CSV アプリで開く]** を選びます。 このアイコンを選択すると、 *%userprofile%\Documents\RTVS_CSV_Exports* フォルダーの新規 CSV ファイルにデータが書き込まれ、そのファイルが起動されて、 *.csv* の拡張子に関連付けられているアプリケーションで開きます。
 
 ## <a name="scopes"></a>スコープ
 
-既定では、**変数エクスプローラー**はグローバル スコープで開かれます。 ウィンドウ上部のドロップダウンからパッケージを選択することで、パッケージ スコープに切り替えることができます。
+既定では、**変数エクスプローラー** はグローバル スコープで開かれます。 ウィンドウ上部のドロップダウンからパッケージを選択することで、パッケージ スコープに切り替えることができます。
 
 ![パッケージ スコープが表示された変数エクスプローラー](media/variable-explorer-package-scopes.png)
 
-また、デバッガーのブレークポイントで停止したとき、関数スコープに切り替えることもできます (**変数エクスプローラー**がデバッグ中のコードの関数スコープに自動的に切り替わることはありません)。
+また、デバッガーのブレークポイントで停止したとき、関数スコープに切り替えることもできます (**変数エクスプローラー** がデバッグ中のコードの関数スコープに自動的に切り替わることはありません)。
 
 ![デバッグ中のデータ フレームが表示された変数エクスプローラー](media/variable-explorer-as-locals-window.png)
 
-デバッガーでコードをステップ実行するときには、**変数エクスプローラー**が自動的に関数スコープに切り替わり、関数のローカル変数などが表示されます。
+デバッガーでコードをステップ実行するときには、**変数エクスプローラー** が自動的に関数スコープに切り替わり、関数のローカル変数などが表示されます。
 
 ## <a name="import-data-into-variable-explorer"></a>変数エクスプローラーへのデータのインポート
 

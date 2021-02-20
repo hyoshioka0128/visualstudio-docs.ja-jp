@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ed9e315bc4373fc2de9e31f0cbdd98ea274b404
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969673"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>手順 8: [Show a Picture] ボタンのイベント ハンドラーのコードの記述
 
@@ -36,7 +36,7 @@ IntelliSense では、ユーザーの次の操作を予測し、ユーザーが�
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>[Show a picture] ボタンのイベント ハンドラーのコードを記述するには
 
-1. **Windows フォーム デザイナー**に移動し、**[Show a picture]** ボタンをダブルクリックします。 IDE がすぐにコード デザイナーに切り替わり、前に追加した `showButton_Click()` (または、`ShowButton_Click()`) メソッド内にカーソルが移動します。
+1. **Windows フォーム デザイナー** に移動し、**[Show a picture]** ボタンをダブルクリックします。 IDE がすぐにコード デザイナーに切り替わり、前に追加した `showButton_Click()` (または、`ShowButton_Click()`) メソッド内にカーソルが移動します。
 
 1. 2 つの中かっこ `{ }` の間の空の行に「`i`」と入力します  (Visual Basic の場合は、`Private Sub...` と `End Sub` の間の空の行に入力します)。次の画像に示すように、**IntelliSense** ウィンドウが開きます。
 
@@ -59,7 +59,7 @@ IntelliSense では、ユーザーの次の操作を予測し、ユーザーが�
 
      `OpenFileDialog` の詳細については、「[OpenFileDialog クラス](<xref:System.Windows.Forms.OpenFileDialog>)」を参照してください。
 
- 1. ピリオド (`.`) を入力します (多くのプログラマはこれをドットと呼んでいます)。**openFileDialog1** のすぐ後にドットを入力したため、**IntelliSense** ウィンドウが開き、**OpenFileDialog** コンポーネントのプロパティとメソッドがすべて表示されます。 これらは、**Windows フォーム デザイナー**でクリックした場合に **[プロパティ]** ウィンドウに表示されるプロパティと同じです。 また、コンポーネントで実行する処理 (ダイアログ ボックスを開くなど) を指定するメソッドも選択できます。
+ 1. ピリオド (`.`) を入力します (多くのプログラマはこれをドットと呼んでいます)。**openFileDialog1** のすぐ後にドットを入力したため、**IntelliSense** ウィンドウが開き、**OpenFileDialog** コンポーネントのプロパティとメソッドがすべて表示されます。 これらは、**Windows フォーム デザイナー** でクリックした場合に **[プロパティ]** ウィンドウに表示されるプロパティと同じです。 また、コンポーネントで実行する処理 (ダイアログ ボックスを開くなど) を指定するメソッドも選択できます。
 
     > [!NOTE]
     > **IntelliSense** ウィンドウには、プロパティとメソッドの両方が表示されます。 表示される内容を判断するには、**[IntelliSense]** ウィンドウの各項目の左側のアイコンを参照してください。 各メソッドの横にはブロックの画像が表示され、各プロパティの横にはレンチ (スパナ) の画像が表示されます。 また、各イベントの横には稲妻のアイコンが表示されます。 <br><br>表示されるアイコンは次のとおりです。<br><br>![[メソッド] アイコン](../ide/media/express_iconmethod.png)<br>![プロパティ アイコン](../ide/media/express_iconproperty.png)<br>![[イベント] アイコン](../ide/media/express_iconevent.png)

@@ -7,16 +7,16 @@ ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: 3ab22ac92cdf995c56d8244225a45fc350e9d360
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a7bbf46a1677a31726bdd7f2749f5ef3006e34f5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047809"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933844"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 の新機能
 
@@ -24,7 +24,7 @@ MSBuild は現在 [.NET Core SDK](https://www.microsoft.com/net/download/core) �
 
 ## <a name="changed-path"></a>変更されたパス
 
- MSBuild は Visual Studio の各バージョンのフォルダーにインストールされます。 例: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild* 。 次の PowerShell モジュールを使用して MSBuild を検索することもできます: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
+ MSBuild は Visual Studio の各バージョンのフォルダーにインストールされます。 例: *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*。 次の PowerShell モジュールを使用して MSBuild を検索することもできます: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
 
  MSBuild は、グローバル アセンブリ キャッシュにインストールされなくなりました。 MSBuild をプログラムで参照するには、NuGet パッケージを使用します。 詳細については、[MSBuild 15.0 に向けた既存のアプリケーションの更新](../msbuild/updating-an-existing-application.md)に関するページをご覧ください。
 

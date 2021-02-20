@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5f0e3613dc9b122a6fac915f4683d9f7b859ee3
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 58236bbacfaa262c23400506cb32331719000b81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967528"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼び出し元/呼び出し先ビュー - .NET メモリ サンプリング データ
 呼び出し元/呼び出し先ビューには、選択した関数およびその親関数と子関数の .NET メモリ プロファイル データが表示されます。 [呼び出し元/呼び出し先] ビューは、3 つのグリッドで構成されます。

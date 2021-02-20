@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ba4307cc2941f0d978674eb224b717fdd8aaba
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952032"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio のフォントと書式設定
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 環境フォント
@@ -416,7 +416,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="375-environment-font--light"></a>375% 環境フォント + ライト
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:** 珍しい. 一意のブランド化 UI のみ。<br /><br /> **ください**<br /><br /> -文の大文字小文字を使用する<br />-常にライトウェイトを使用する<br /><br /> **できません：**<br /><br /> -スタートページなどの署名 UI 以外の UI に使用します<br />-太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-ツールウィンドウで使用する|**次のように表示されます:** 34 Pt Segoe UI ライト<br /><br /> **ビジュアルの例:**<br /><br /> *現在使用されていません。は、Visual Studio 2017 のスタートページで使用できます。*|
 
@@ -424,7 +424,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ::: moniker range="vs-2017"
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -署名ダイアログの大きな見出し<br />-メインレポートの見出し<br /><br /> **ください**<br /><br /> -文の大文字小文字を使用する<br />-常にライトウェイトを使用する<br /><br /> **できません：**<br /><br /> -スタートページなどの署名 UI 以外の UI に使用します<br />-太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-ツールウィンドウで使用する|**表示形式:** 28 Pt Segoe UI ライト<br /><br /> **ビジュアルの例:**<br /><br /> ![&#43; 明るい見出しの310% 環境フォントの例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
@@ -432,7 +432,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ::: moniker range=">=vs-2019"
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -署名ダイアログの大きな見出し<br />-メインレポートの見出し<br /><br /> **ください**<br /><br /> -文の大文字小文字を使用する<br />-常にライトウェイトを使用する<br /><br /> **できません：**<br /><br /> -署名 UI 以外の UI に使用します<br />-太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-ツールウィンドウで使用する|**表示形式:** 28 Pt Segoe UI ライト<br /><br /> **ビジュアルの例:**<br /><br /> ![&#43; 明るい見出しの310% 環境フォントの例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
@@ -440,37 +440,37 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="200-environment-font--semilight"></a>200% 環境フォント + Semilight
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -小見出し<br />-小規模および中規模のダイアログのタイトル<br /><br /> **ください**<br /><br /> -文の大文字小文字を使用する<br />-常に Semilight weight を使用する<br /><br /> **できません：**<br /><br /> -太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-ツールウィンドウで使用する|**次のように表示:** 18 Pt Segoe UI Semillight<br /><br /> **ビジュアルの例:**<br /><br /> ![200% 環境フォント &#43; Semilight の例](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% 環境フォント
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -ドキュメントウェル UI のセクション見出し<br />-レポート<br /><br /> **操作:** 文の大文字と小文字を区別する<br /><br /> **できません：**<br /><br /> -太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-標準の Visual Studio コントロールで使用する<br />-ツールウィンドウで使用する|**次のように表示:** 14 pt Segoe UI<br /><br /> **ビジュアルの例:**<br /><br /> ![155% 環境フォントの見出しの例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% 環境フォント
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -署名ダイアログの小さいサブ見出し<br />-ドキュメントウェル UI の下位のサブ見出し<br /><br /> **操作:** 文の大文字と小文字を区別する<br /><br /> **できません：**<br /><br /> -太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-標準の Visual Studio コントロールで使用する<br />-ツールウィンドウで使用する|**次のように表示:** 12 pt Segoe UI<br /><br /> **ビジュアルの例:**<br /><br /> ![133% 環境フォントの見出しの例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% 環境フォント
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -署名ダイアログのセクション見出し<br />-ツリービューの最上位ノード<br />-垂直タブナビゲーション<br /><br /> **操作:** 文の大文字と小文字を区別する<br /><br /> **できません：**<br /><br /> -太字、斜体、または太字の斜体<br />-本文のテキストに使用<br />-標準の Visual Studio コントロールで使用する<br />-ツールウィンドウで使用する|**次のように表示:** 11 pt Segoe UI<br /><br /> **ビジュアルの例:**<br /><br /> ![122% 環境フォントの見出しの例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>環境フォント + 太字
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:**<br /><br /> -署名ダイアログのラベルと小見出し<br />-レポートのラベルと小見出し<br />-ドキュメントウェル UI のラベルと小見出し<br /><br /> **ください**<br /><br /> -文の大文字小文字を使用する<br />-太字の太さを使用します<br /><br /> **できません：**<br /><br /> -斜体または太字斜体<br />-本文のテキストに使用<br />-標準の Visual Studio コントロールで使用する<br />-ツールウィンドウで使用する|太字で **表示:** 9 pt Segoe UI<br /><br /> **ビジュアルの例:**<br /><br /> ![環境フォント &#43; 太字の見出しの例](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>環境フォント
 
-|使用法|外観|
+|使用|外観|
 |-|-|
 |**使用法:** その他のすべてのテキスト<br /><br /> **操作:** 文の大文字と小文字を区別する<br /><br /> **ありません。** 斜体または太字斜体|**次のように表示:** 9 pt Segoe UI<br /><br /> **ビジュアルの例:**<br /><br /> ![環境フォントの例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
 

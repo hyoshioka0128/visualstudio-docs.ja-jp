@@ -16,15 +16,15 @@ helpviewer_keywords:
 - worksheets, populating with data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8ce2ef20b56a1803af5356137b798d83a5f1457f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cabaf58f9e13033edee320277abcc14b55b81a13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953969"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>方法: ListObject コントロールにデータを読み込む
   データ バインディングを使用すると、ドキュメントにデータをすばやく追加できます。 リスト オブジェクトにデータをバインドした後、リスト オブジェクトを切断すると、データは表示されますが、データ ソースとのバインドは解除されます。

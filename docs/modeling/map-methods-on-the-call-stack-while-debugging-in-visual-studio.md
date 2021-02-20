@@ -27,15 +27,15 @@ helpviewer_keywords:
 - debugging [Visual Studio], visualizing the call stack
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b3d5c531400ddd88cea17b9172f19bf9711105d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7196cf06e7d6bcde33bc1e4a6c5d0ebfac486576
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362432"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946489"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Visual Studio でデバッグを行うときの呼び出し履歴に対するメソッドのマップ
 
@@ -59,7 +59,7 @@ ms.locfileid: "97362432"
 
 - デバッグできるコード (Visual C#、Visual Basic、C++、JavaScript、X + + など)
 
-  参照:
+  参照トピック
 
 - [ビデオ: コードマップデバッガーの統合を使用して視覚的にデバッグする (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
@@ -190,7 +190,7 @@ ms.locfileid: "97362432"
 
    ![呼び出し履歴コード マップのアイコンの意味](../debugger/media/debuggermap_showlegend.png)
 
-  参照:
+  参照トピック
 
 - [呼び出し履歴をマップする](#MapStack)
 

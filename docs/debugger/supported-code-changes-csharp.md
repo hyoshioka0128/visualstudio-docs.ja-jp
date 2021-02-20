@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 267d9097ebe53b4074bed6c5caf4077006c946eb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 4fc3f49038a44b2b2bd5b467d6e1874f8a9a9803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149210"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940762"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>サポートされているコード変更 (C# および Visual Basic)
 エディット コンティニュでは、メソッドの本体内で行ったほとんどの種類のコード変更を処理できます。 しかし、メソッドの本体外で行った変更の大部分やメソッドの本体内で行った一部の変更は、デバッグ時に適用できません。 このようなサポートされていない変更を適用するには、デバッグを停止し、新しいバージョンのコードを再起動する必要があります。

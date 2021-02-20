@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847144"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961106"
 ---
 # <a name="register-an-expression-evaluator"></a>式エバリュエーターの登録
 > [!IMPORTANT]
@@ -122,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > では、 `metricLanguage``GUID` 言語が名前で識別されますが、の引数によって言語が選択され `guidLang` `SetEEMetric` ます。 コンパイラは、デバッグ情報ファイルを生成するときに、 `guidLang` 使用する EE を認識しないように適切なを記述する必要があります。 通常、DE はシンボルプロバイダーにこの言語を要求します。この言語は `GUID` デバッグ情報ファイルに格納されます。
 
-3. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioの x. Y の下にキーを作成して Visual Studio に登録 \\ *X.Y* します。ここで、 *x.y* は、に登録する Visual Studio のバージョンです。
+3. HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioの x. Y の下にキーを作成して Visual Studio に登録 \\ します。ここで、 *x.y* は、に登録する Visual Studio のバージョンです。
 
 ### <a name="example"></a>例
  次の関数は、アンマネージコード (C++) EE が Visual Studio でそれ自体を登録および登録解除する方法を示しています。

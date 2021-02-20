@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 5e26e0fd-383b-4fb6-a29d-a458d8232828
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d00742b1832aebcfff0e008455da98e744a485f7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: dcacfc121d450da956e45d6ae608dd2a0474183f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721568"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906768"
 ---
 # <a name="instruction-pointers-ips-view"></a>命令ポインター (IP) ビュー
 命令ポインター ビューでは、サンプリング プロファイリング中に実行される特定の命令を確認できます。

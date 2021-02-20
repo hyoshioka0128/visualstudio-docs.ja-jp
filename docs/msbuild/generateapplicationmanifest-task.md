@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2af490f27ab1cdecfe57da9253aff6c4247c7223
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436553"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914883"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest タスク
 
@@ -57,8 +57,8 @@ ClickOnce アプリケーション マニフェストまたはネイティブ �
 | `OSVersion` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションで必要なオペレーティング システム (OS) の最低限のバージョンを指定します。 たとえば、"5.1.2600.0" という値は、オペレーティング システムが Windows XP であることを示しています。 このパラメーターを指定しなかった場合には、.NET Framework. でサポートされている最低限の OS である Windows 98 Second Edition を示す "4.10.0.0" が使用されます。 タスクがネイティブ マニフェストを生成する場合には、この入力は無視されます。 |
 | `OutputManifest` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型の出力パラメーターです。<br /><br /> 生成される出力マニフェスト ファイルの名前を指定します。 このパラメーターが指定されていない場合、出力ファイルの名前は、生成されるマニフェストの ID から推測されます。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの対象プラットフォームを指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> このパラメーターが指定されていない場合は、既定の `AnyCPU` が使用されます。 |
-| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの名前を指定します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示する名前として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
-| `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示するフォルダー名として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの名前を指定します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、**[スタート]** メニューに表示する名前として使用され、**[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、**[スタート]** メニューに表示するフォルダー名として使用され、**[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
 | `RequiresMinimumFramework35SP1` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> true の場合、アプリケーションでは .NET Framework 3.5 SP1 またはそれ以降のバージョンが必要です。 |
 | `TargetCulture` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションのカルチャを示し、生成されるマニフェストのアセンブリ ID の `Language` フィールドを指定します。 このパラメーターを指定しなかった場合、アプリケーションは、カルチャに依存しないと仮定されます。 |
 | `TargetFrameworkMoniker` | 省略可能な `String` 型のパラメーターです。<br /><br /> ターゲット フレームワーク モニカーを指定します。 |
@@ -322,7 +322,7 @@ ClickOnce アプリケーション マニフェストまたはネイティブ �
 
 ## <a name="example-4"></a>例 4
 
-次の例では、`GenerateApplicationManifest` タスクを使用して、 *Test.exe* アプリケーション用のネイティブ マニフェストを作成しています。Test.exe は、ネイティブ コンポーネント *Alpha.dll* および分離 COM コンポーネント *Bravo.dll* を参照しています。
+次の例では、`GenerateApplicationManifest` タスクを使用して、*Test.exe* アプリケーション用のネイティブ マニフェストを作成しています。Test.exe は、ネイティブ コンポーネント *Alpha.dll* および分離 COM コンポーネント *Bravo.dll* を参照しています。
 
 この例では *Test.exe.manifest* を作成し、アプリケーションを XCOPY で配置できるようにして、Registration Free COM を利用します。
 

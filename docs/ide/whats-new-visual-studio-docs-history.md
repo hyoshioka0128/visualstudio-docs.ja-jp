@@ -2,29 +2,93 @@
 title: 'Visual Studio のドキュメント:新機能の履歴 '
 titleSuffix: ''
 description: Visual Studio ドキュメントの新機能に関する履歴
-ms.date: 01/11/2021
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
 ms.assetid: 511DAFC7-896E-449A-BFF7-0E8F7BBA8A78
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c8d18a35cbe4a64585efa9bc16fd8afd250404
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113581"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960534"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio ドキュメントの新機能に関する履歴
 
-Visual Studio ドキュメントの新機能に関する履歴へようこそ。この記事には、2020 年 12 月より前 (2020 年 7 月以降) のドキュメントに対する主な変更点が含まれます。 最新の新機能については、[Visual Studio の最新情報](whats-new-visual-studio-docs.md)に関するドキュメントを参照してください。
+Visual Studio ドキュメントの新機能に関する履歴へようこそ。この記事には、2021 年 1 月より前 (2020 年 7 月以降) のドキュメントに対する主な変更点が含まれます。 最新の新機能については、[Visual Studio の最新情報](whats-new-visual-studio-docs.md)に関するドキュメントを参照してください。
+
+## <a name="december-2020"></a>2020 年 12 月
+### <a name="azure"></a>Azure
+
+**新しい記事**
+
+- [Visual Studio 接続済みサービスを使用した Azure App Configuration の追加](../azure/vs-azure-tools-connected-services-app-configuration.md) - App Configuration 接続済みサービスのチュートリアル
+
+### <a name="code-quality"></a>コード品質
+
+**更新された記事**
+
+- [概要](../code-quality/use-roslyn-analyzers.md) - editorconfig を使用したコマンド ラインからのビルド
+- [ファーストパーティの .NET アナライザーを有効またはインストールする](../code-quality/install-net-analyzers.md)
+  - FxCopAnalyzers から NetAnalyzers への移行に関するドキュメントをより明確にする
+  - .NET アナライザーの目次を再配置する
+- [FxCop アナライザーから .NET アナライザーに移行する](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) - FxCopAnalyzers から NetAnalyzers への移行に関するドキュメントをより明確にする
+
+### <a name="containers"></a>コンテナー
+
+**更新された記事**
+
+- [Docker を使用した Visual Studio 開発のトラブルシューティング](../containers/troubleshooting-docker-errors.md) - Docker for Visual Studio トラブルシューティング ガイドの更新
+
+### <a name="debugger"></a>デバッガー
+
+**更新された記事**
+
+- [FAQ - Visual Studio で必要なデバッグ機能を見つける](../debugger/find-your-debugging-task.md) - デバッグ タスクおよび概要のトピックを見つけるための検出作業
+
+### <a name="get-started"></a>作業開始
+
+**更新された記事**
+
+- [チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する](../get-started/csharp/tutorial-console.md) - C# コンソール チュートリアル: VS 2019 にはパート 2 のみ適用されます
+
+### <a name="ide"></a>IDE
+
+**更新された記事**
+
+- [Visual Studio でのソリューションとプロジェクト](./solutions-and-projects-in-visual-studio.md) - ソリューションおよびプロジェクトのトピックに対する更新
+- [Visual Studio での新しいプロジェクトの作成](./create-new-project.md)
+  - スクリーンショットおよび図用の代替テキストの調整
+  - ソリューションおよびプロジェクトのトピックに対するその他の更新
+- [IDE エラーのトラブルシューティング用のリソース](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) - 古くなったフォーラム リソース セクションの改訂
+- [ソリューションとプロジェクトの使用](./creating-solutions-and-projects.md) - ソリューションとプロジェクトのトピックに対するその他の更新
+- [Visual Studio または Visual Studio Installer に関する問題を報告する方法](./how-to-report-a-problem-with-visual-studio.md)
+  - スクリーンショットの更新
+  - 開発者コミュニティの変更
+- [Visual Studio のパフォーマンスに関するヒントとテクニック](./visual-studio-performance-tips-and-tricks.md) - 「診断ツールを無効にする」セクションの更新
+- [プロジェクトとソリューションの概要](../get-started/tutorial-projects-solutions.md)
+  - ソリューションおよびプロジェクトのトピックに対する更新
+  - tutorial-projects-solutions.md の更新
+  - メニュー オプションで見つからない
+
+### <a name="test"></a>テスト
+
+**更新された記事**
+
+- [単体テストの概要](../test/getting-started-with-unit-testing.md) - テスト ツールの検出作業とその他の機能強化
+- [初めて Visual Studio のテスト ツールを検討する](../test/improve-code-quality.md) - テスト ツールの検出作業とその他の機能強化
+- [Visual Studio でのテスト ツール (番号が必要)、ページ タイトルを検索結果に表示。60 文字以内でブランド名を追加。](../test/index.yml) テスト ツールの検出作業とその他の機能強化
+- [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md) - さまざまなフレームワークに合わせて動的なプレイリスト xml を追加する
+
 ## <a name="november-2020"></a>2020 年 11 月
 ### <a name="code-quality"></a>コード品質
 

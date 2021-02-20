@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac89984539b0870d3921918a5a96b821297c009f
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 7f16e05ecbd211652dbf5fb511211627a09137df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952266"
 ---
 # <a name="how-to-provide-a-service"></a>方法: サービスを提供する
 VSPackage は、他の Vspackage が使用できるサービスを提供できます。 サービスを提供するには、VSPackage がサービスを Visual Studio に登録し、サービスを追加する必要があります。
@@ -140,7 +140,7 @@ VSPackage は、他の Vspackage が使用できるサービスを提供でき�
 
      の値は `helloString` "Hello" にする必要があります。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [方法: サービスを取得する](../extensibility/how-to-get-a-service.md)
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)
 - [サービスの基本事項](../extensibility/internals/service-essentials.md)

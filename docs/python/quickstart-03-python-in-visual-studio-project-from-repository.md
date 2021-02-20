@@ -5,17 +5,17 @@ ms.date: 12/06/2018
 ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5d0363626748588b6f4058e197f0d6796ece51ee
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 55db74b2b2882aac12ac1587c4e972e31f7dfe10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "64543143"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902402"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>クイック スタート: Visual Studio で Python コードのリポジトリをクローンする
 
@@ -48,7 +48,7 @@ ms.locfileid: "64543143"
 
 1. メニューから **[表示]**  >  **[ソリューション エクスプローラー]** を選択します。
 
-1. **ソリューション エクスプローラー**で **python3** ノードを展開し、**contemplate_koans.py** を右クリックし、 **[スタートアップ ファイルとして設定]** を選択します。 この手順により、プロジェクトの実行時に使用されるファイルが Visual Studio に指示されます。
+1. **ソリューション エクスプローラー** で **python3** ノードを展開し、**contemplate_koans.py** を右クリックし、 **[スタートアップ ファイルとして設定]** を選択します。 この手順により、プロジェクトの実行時に使用されるファイルが Visual Studio に指示されます。
 
 1. メニューで **[プロジェクト]**  >  **[Koans プロパティ]** の順に選択し、 **[全般]** タブを選択し、 **[作業ディレクトリ]** を "python3" に設定します。 この手順が必要なのは、Visual Studio は既定では作業ディレクトリをスタートアップ ファイルの場所ではなく、プロジェクトのルートに設定するためです (*python3\contemplate_koans.py*。これはプロジェクトのプロパティでも確認できます)。 プログラム コードは、ファイル *koans.txt* を作業フォルダーから探すので、この値を変更しなくてもランタイム エラーは発生します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "64543143"
 
     ![Python Koans プログラムからの最初の出力](media/koans-output.png)
 
-1. **ソリューション エクスプローラー**で *python3/koans/about_asserts.py* に移動してこれを開き、ファイルをダブルクリックします。 エディターには既定で行番号が表示されないことに注意してください。 これを変更するには、 **[ツール]**  >  **[オプション]** を選択し、ダイアログの下部の **[すべての設定を表示]** を選択し、 **[テキスト エディター]**  >  **[Python]**  >  **[全般]** に移動し、 **[行番号]** を選択します。
+1. **ソリューション エクスプローラー** で *python3/koans/about_asserts.py* に移動してこれを開き、ファイルをダブルクリックします。 エディターには既定で行番号が表示されないことに注意してください。 これを変更するには、 **[ツール]**  >  **[オプション]** を選択し、ダイアログの下部の **[すべての設定を表示]** を選択し、 **[テキスト エディター]**  >  **[Python]**  >  **[全般]** に移動し、 **[行番号]** を選択します。
 
     ![Python ファイルの行番号の有効化](media/options-general-line-numbers.png)
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4d91e95d080b93c8bcdc4486593b4c94bcb501
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d14a979a166f7378c288453530b46b8ec6c98828
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047698"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919200"
 ---
 # <a name="msbuild-batching"></a>MSBuild バッチ
 
@@ -124,7 +124,7 @@ Target DemoIndependentBatches:
 
 ターゲットの `ItemGroup` は暗黙的にタスクであり、`Condition` 属性で `%(Color)` が使用されているので、タスクのバッチ処理が実行されます。 2 つのバッチがあります (red に対して 1 つと、blue に対して 1 つ)。 プロパティ `%(NeededColorChange)` は `%(Color)` メタデータが blue の場合にのみ設定され、その設定は、blue のバッチが実行されたときに条件が一致した個々の項目にのみ影響します。 `%(ItemMetadataName)` 構文が指定されていても、`Message` タスクの `Text` 属性ではバッチ処理はトリガーされません。これは、それが項目変換の内側で使用されているためです。
 
-バッチは個別に実行されますが、並列では実行されません。 それにより、バッチ実行で変更されるメタデータ値にアクセスするときに違いがあります。 バッチ実行の一部のメタデータに基づいてプロパティを設定する場合、プロパティは " *最後* " に設定された値になります。
+バッチは個別に実行されますが、並列では実行されません。 それにより、バッチ実行で変更されるメタデータ値にアクセスするときに違いがあります。 バッチ実行の一部のメタデータに基づいてプロパティを設定する場合、プロパティは "*最後*" に設定された値になります。
 
 ```xml
    <PropertyGroup>

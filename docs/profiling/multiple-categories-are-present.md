@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b120d4433bafb5f248a268b140d940b3c6e2da
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 440a7e48414e2eddcbb0911ba3e8a6605deea22d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964785"
 ---
 # <a name="multiple-categories-are-present"></a>複数のカテゴリが存在します
 指定された時間範囲について複数の種類のアクティビティを含むセクションが選択されています。 2 色表示されており、これらの色は上下に重なっています。 これらの色は、指定された時間範囲で最も頻繁に発生した上位 2 つのアクティビティのみを表しています。 これらの 2 つのアクティビティの頻度は、他方との相関関係を示すように、縦棒の 3 分の 1 または 2 分の 1 として表示されます。 詳細を表示する場合は、スレッド ビューのこのセクションを拡大してみてください。

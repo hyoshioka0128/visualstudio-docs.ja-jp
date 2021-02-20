@@ -6,21 +6,21 @@ ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 312b886ee0becc794f657ecaaba7fb028d4b3cf1
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878892"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944304"
 ---
 # <a name="help-viewer-administrator-guide"></a>ヘルプ ビューアーの管理者ガイド
 
 ヘルプ ビューアーを使用すると、インターネット アクセスの有無に関係なく、ネットワーク環境のローカル ヘルプのインストールを管理できます。 ローカル ヘルプ コンテンツは、コンピューターごとに構成されます。 既定では、ユーザーがローカル ヘルプのインストールを更新するには、そのユーザーに管理者権限が必要です。
 
-ネットワーク環境でクライアントがインターネットにアクセスできるようにする場合は、 **ヘルプコンテンツマネージャー** の実行可能ファイルを使用して、インターネットからローカルヘルプコンテンツを展開できます。 *HlpCtntMgr.exe*のコマンドライン構文の詳細については、「[ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
+ネットワーク環境でクライアントがインターネットにアクセスできるようにする場合は、 **ヘルプコンテンツマネージャー** の実行可能ファイルを使用して、インターネットからローカルヘルプコンテンツを展開できます。 *HlpCtntMgr.exe* のコマンドライン構文の詳細については、「[ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
 
 コンテンツの作成、イントラネット サービスのエンドポイントの作成、類似した種類のアクティビティの詳細については、[ヘルプ ビューアー SDK](../extensibility/internals/microsoft-help-viewer-sdk.md) を参照してください。
 
@@ -36,13 +36,13 @@ ms.locfileid: "91878892"
 
 ## <a name="deploy-local-help-content-from-the-internet"></a>インターネットからローカル ヘルプ コンテンツを配置する
 
-**ヘルプ コンテンツ マネージャー** (*HlpCtntMgr.exe*) を利用し、インターネットからクライアント コンピューターにローカル ヘルプ コンテンツを配置できます。 使用する構文は以下のとおりです。
+**ヘルプ コンテンツ マネージャー** (*HlpCtntMgr.exe*) を利用し、インターネットからクライアント コンピューターにローカル ヘルプ コンテンツを配置できます。 次の構文を使用します。
 
 ```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-*HlpCtntMgr.exe*のコマンドライン構文の詳細については、「[ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
+*HlpCtntMgr.exe* のコマンドライン構文の詳細については、「[ヘルプコンテンツマネージャーのコマンドライン引数](../help-viewer/command-line-arguments.md)」を参照してください。
 
 要件:
 
@@ -60,7 +60,7 @@ ms.locfileid: "91878892"
 
 #### <a name="to-install-english-content-from-the-internet"></a>インターネットから英語のコンテンツをインストールするには
 
-1. **[スタート]** を選択し、**[ファイル名を指定して実行]** を選択します。
+1. [ **スタート** ] をクリックし、[ **実行**] を選択します。
 
 2. 次のように入力します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "91878892"
 
 4. **[更新]** を選択し、アンインストールします。
 
-5. *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15*を参照し、フォルダーにファイル*catalogType.xml*のみが含まれていることを確認します。
+5. *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* を参照し、フォルダーにファイル *catalogType.xml* のみが含まれていることを確認します。
 
    前にインストールされた Visual Studio のローカル ヘルプ コンテンツをすべて削除したら、基本コンテンツ セットをダウンロードする準備が整いました。
 
@@ -131,7 +131,7 @@ ms.locfileid: "91878892"
 
 1. ネットワーク共有を作成し、その場所にヘルプ コンテンツをコピーします。
 
-     たとえば、 *\myserver\vshelp*の内容を* \\ \myserver\VSHelp*にコピーします。
+     たとえば、 *\myserver\vshelp* の内容を *\\ \myserver\VSHelp* にコピーします。
 
 2. ヘルプ コンテンツの配置スクリプトを含める *.bat* ファイルを作成します。 クライアントがプッシュの一部として、削除されるファイルのいずれかに読み取りロックを設定している可能性があるため、更新をプッシュする前にクライアントをシャットダウンする必要があります。 次に例を示します。
 

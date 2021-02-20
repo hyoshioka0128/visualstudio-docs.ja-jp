@@ -1,16 +1,18 @@
 ---
 title: Visual Studio for Mac チュートリアルの拡張
+description: Visual Studio for Mac 用の簡単な拡張パッケージを構築する方法について説明します。これにより、[編集] メニューに新しいコマンドが作成されます。
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985028"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876195"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Visual Studio for Mac チュートリアルの拡張
 
@@ -22,7 +24,7 @@ ms.locfileid: "74985028"
 
    ![Visual Studio for Mac のスクリーンショット](media/extending-visual-studio-mac-addin3.png)
 
-2. 拡張機能マネージャーを使用して _Add-in Maker 拡張機能パッケージ_をインストールします。 Visual Studio のメニューから **[拡張機能]** を選択します。
+2. 拡張機能マネージャーを使用して _Add-in Maker 拡張機能パッケージ_ をインストールします。 Visual Studio のメニューから **[拡張機能]** を選択します。
 
    ![アドイン マネージャー タブ](media/extending-visual-studio-mac-addin4.png)
 
@@ -32,7 +34,7 @@ ms.locfileid: "74985028"
 
 4. Addin Maker がインストールされたら、拡張機能パッケージの構築を始めることができます。 まず新しいソリューションを作成します。
 
-5. **[新しいソリューション]** ダイアログから、 **[その他] > [その他] > [全般] > [Xamarin Studio Addin] を選択し、C#** テンプレートを選択して、次の画面で新しいソリューションに `DateInserter` と名前を付けます。
+5. **[新しいソリューション]** ダイアログから、**[その他] > [その他] > [全般] > [Xamarin Studio Addin] を選択し、C#** テンプレートを選択して、次の画面で新しいソリューションに `DateInserter` と名前を付けます。
 
    ![新しいソリューションの作成](media/extending-visual-studio-mac-addin7New.png)
 
@@ -88,7 +90,7 @@ ms.locfileid: "74985028"
 
    これら 2 つのプレースホルダー メソッドは後で拡張します。
 
-10. **DateInserter** プロジェクトを右クリックし、 **[追加] > [新しいファイル]** を選択します。 **[全般] > [空の列挙型]** を選択し、新しいファイルに *DateInserterCommands* と名前を付けます。
+10. **DateInserter** プロジェクトを右クリックし、**[追加] > [新しいファイル]** を選択します。 **[全般] > [空の列挙型]** を選択し、新しいファイルに *DateInserterCommands* と名前を付けます。
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
@@ -106,13 +108,13 @@ ms.locfileid: "74985028"
     }
     ```
 
-12. この時点で、動作する拡張機能パッケージができあがっています。 作業内容を保存し、アプリケーションを実行してテストすることができます。 IDE で、新しい拡張機能パッケージがインストールされた新しいインスタンスの Visual Studio for Mac が起動します。 **[編集] メニュー**を開くと、Visual Studio for Mac に次のスクリーンショットのように **[Insert Date]\(日付の挿入\)** という新しいオプションが表示されます。
+12. この時点で、動作する拡張機能パッケージができあがっています。 作業内容を保存し、アプリケーションを実行してテストすることができます。 IDE で、新しい拡張機能パッケージがインストールされた新しいインスタンスの Visual Studio for Mac が起動します。 **[編集] メニュー** を開くと、Visual Studio for Mac に次のスクリーンショットのように **[Insert Date]\(日付の挿入\)** という新しいオプションが表示されます。
 
     ![[Insert Date]\(日付の挿入\) コマンド](media/extending-visual-studio-mac-addin11.png)
 
     現在の実装にはプレースホルダー メソッドしかないため、メニューから [Insert Date]\(日付の挿入\) を選択しても何も実行されません。
 
-13. 拡張機能パッケージのフレームワークはあるので、日付の挿入を動かすコードを記述しましょう。 まず、`InsertDateHandler.cs` の `Update` メソッドを次のコードで置き換えて、ユーザーがテキスト ファイルを開いたときに **[Insert Date]\(日付の挿入\) コマンド**のみが有効になることを確認します。
+13. 拡張機能パッケージのフレームワークはあるので、日付の挿入を動かすコードを記述しましょう。 まず、`InsertDateHandler.cs` の `Update` メソッドを次のコードで置き換えて、ユーザーがテキスト ファイルを開いたときに **[Insert Date]\(日付の挿入\) コマンド** のみが有効になることを確認します。
 
     ```cs
     protected override void Update(CommandInfo info)
@@ -132,10 +134,10 @@ ms.locfileid: "74985028"
     }
     ```
 
-15. 最後に、拡張機能パッケージを実行してテストします。 新しいインスタンスの Visual Studio for Mac で、 **[編集] > [Insert Date]\(日付の挿入\)** を選択します。 次のスクリーンショットのように、現在の日時がカレットに挿入されます。
+15. 最後に、拡張機能パッケージを実行してテストします。 新しいインスタンスの Visual Studio for Mac で、**[編集] > [Insert Date]\(日付の挿入\)** を選択します。 次のスクリーンショットのように、現在の日時がカレットに挿入されます。
 
     ![[Insert Date]\(日付の挿入\) のスクリーンショット](media/extending-visual-studio-mac-addin12.png)
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [初めての拡張機能の作成 (Windows の Visual Studio)](/visualstudio/extensibility/extensibility-hello-world)

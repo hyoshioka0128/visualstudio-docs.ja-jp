@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15696d81be92f0549069bad354e65356f7b2e7c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 5c80c2969676de25575ec75c6976224f1cd0160e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995903"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968243"
 ---
 # <a name="document-lock-holder-management"></a>ドキュメントロック所有者の管理
 
@@ -45,7 +45,7 @@ ms.locfileid: "96995903"
 
 コードファイルをプログラムによって変更する UI デザイナーは、多くの場合、複数のファイルに変更を加えます。 このような場合、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell2.SaveItemsViaDlg%2A> メソッドは、[ **次の項目に変更を保存しますか?** ] ダイアログボックスを使用して、1つまたは複数のドキュメントの保存を処理します。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [実行 (ドキュメントテーブルを)](../extensibility/internals/running-document-table.md)
 - [永続化と実行中のドキュメントテーブル](../extensibility/internals/persistence-and-the-running-document-table.md)

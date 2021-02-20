@@ -19,15 +19,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 47613a2f74ce1c89a6b032e46fa18b978c1c5f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945293"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>DGML ファイルを編集してコード マップをカスタマイズする
 
@@ -86,7 +86,7 @@ ms.locfileid: "97363427"
 
 2. `<DirectedGraph>` 要素に次の任意の属性を追加して、グラフのスタイルを変更します。
 
-     背景色
+     背景の色
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
@@ -127,7 +127,7 @@ ms.locfileid: "97363427"
 
 2. コード要素の `<Node/>` 要素を見つけます。 次の属性のいずれかを追加して、そのスタイルをカスタマイズします。
 
-     背景色
+     背景の色
 
     ```xml
     Background="ColorNameOrHexadecimalValue"
@@ -373,7 +373,7 @@ ms.locfileid: "97363427"
 
  `Coverage` プロパティに基づいて、コード要素の背景色を設定する。 スタイルは、`if-else` ステートメントと同様に、出現する順番で評価されます。
 
- この例では、次のように記述されています。
+ 次の点に注意してください。
 
 1. `Coverage`が 80 > 場合は、プロパティを `Background` 緑色に設定します。
 

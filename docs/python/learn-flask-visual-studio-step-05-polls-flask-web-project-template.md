@@ -6,17 +6,17 @@ ms.date: 01/07/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c9adda5eb9edba5e1ba62097d55c033be6c85d2e
-ms.sourcegitcommit: 9c57730000d5ced37d3887f3928b17076f49d0f7
+ms.openlocfilehash: 611bad608d3619e020994ad7325ad7a678fe1e24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92099363"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882831"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>手順 5: ポーリング Flask Web プロジェクト テンプレートを使用する
 
@@ -36,13 +36,13 @@ Visual Studio は、同じアプリを生成しますが、Jinja テンプレー
 
 ## <a name="step-5-1-create-the-project"></a>手順 5-1: プロジェクトの作成
 
-1. Visual Studio で、**ソリューション エクスプローラー**に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します)。
+1. Visual Studio で、**ソリューション エクスプローラー** に移動し、本チュートリアルの前述の手順で作成した **LearningFlask** ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** の順に選択します。 (または、新しいソリューションを使用する場合は、代わりに **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します)。
 
 1. [新しいプロジェクト] ダイアログで **Polls Flask Web プロジェクト** テンプレートを探して選択し、プロジェクト "FlaskPolls" を呼び出して、 **[OK]** を選択します。
 
-1. Visual Studio の他のプロジェクト テンプレートと同様に、"Polls Flask Web プロジェクト" テンプレートには *requirements.txt* ファイルが含まれており、Visual Studio ではこれらの依存関係のインストール先を確認するメッセージが表示されます。 オプションを選択し、**仮想環境にインストール**して、 **[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。 (このテンプレートには、Flask の他に、azure-storage と pymongo のパッケージも必要です。"Polls Flask/Jade Web プロジェクト" には pyjade も必要でした。)
+1. Visual Studio の他のプロジェクト テンプレートと同様に、"Polls Flask Web プロジェクト" テンプレートには *requirements.txt* ファイルが含まれており、Visual Studio ではこれらの依存関係のインストール先を確認するメッセージが表示されます。 オプションを選択し、**仮想環境にインストール** して、 **[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。 (このテンプレートには、Flask の他に、azure-storage と pymongo のパッケージも必要です。"Polls Flask/Jade Web プロジェクト" には pyjade も必要でした。)
 
-1. **ソリューション エクスプローラー**を右クリックし、**[スタートアップ プロジェクトに設定]** を選択して、**FlaskPolls** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
+1. **ソリューション エクスプローラー** を右クリックし、**[スタートアップ プロジェクトに設定]** を選択して、**FlaskPolls** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
 
 1. **[デバッグ]**  >  **[デバッグの開始]** (**F5** キー) を選択するか、またはツールバーの **[Web サーバー]** ボタンを使用して、サーバーを実行します。
 
@@ -68,7 +68,7 @@ Visual Studio は、同じアプリを生成しますが、Jinja テンプレー
 
 1. 以降のセクションのために、アプリを実行したままにすることができます。
 
-    アプリを停止して[ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
+    アプリを停止して [ソース コントロールへの変更をコミットする](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)場合、最初に **チーム エクスプローラー** で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
 
 ### <a name="examine-the-project-contents"></a>プロジェクトの内容を確認する
 

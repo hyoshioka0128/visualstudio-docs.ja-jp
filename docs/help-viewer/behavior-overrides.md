@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: f9c9a950156f29bda68a134af2eb299b3431445f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944291"
 ---
 # <a name="help-content-manager-overrides"></a>ヘルプ コンテンツ マネージャーのオーバーライド
 
@@ -26,13 +26,13 @@ Visual Studio IDE のヘルプ ビューアーとヘルプ関連の機能の既�
 
 2. 次の表で説明するレジストリ キー値のいずれかまたはすべてを別の行に追加します。例: `"UseOnlineHelp"=dword:00000001`
 
-3. ファイルを *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017 \\<edition \> \Common7\IDE\CommonExtensions*にコピーします。
+3. ファイルを *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017 \\<edition \> \Common7\IDE\CommonExtensions* にコピーします。
 
 4. 開発者コマンド プロンプトで `devenv /updateconfiguration` を実行します。
 
 ### <a name="registry-key-values"></a>レジストリ キー値
 
-|レジストリ キー値|種類|Data|説明|
+|レジストリ キー値|種類|データ|説明|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|string|\<http URL for service endpoint\>|一意のサービス エンドポイントを定義する|
 |UseOnlineHelp|dword|ローカルのヘルプを指定するには `0`、オンライン ヘルプを指定するには `1`|オンライン ヘルプまたはオフライン ヘルプの既定を定義する|
@@ -57,7 +57,7 @@ Visual Studio IDE のヘルプ ビューアーとヘルプ関連の機能の既�
 
 レジストリ エディターでレジストリ キー値を設定することで、次の 2 つの動作を制御できます。
 
-|タスク|レジストリ キー|値|Data|
+|タスク|レジストリ キー|値|データ|
 |----------|-----|------|----|
 |Override BITS ジョブの優先順位をオーバーライドする|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (64-bit コンピューターの場合)\Microsoft\Help\v2.3|BITSPriority|**foreground**、**high**、**normal**、または **low**|
 |ネットワーク共有上のローカル コンテンツ ストアを指定する|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|

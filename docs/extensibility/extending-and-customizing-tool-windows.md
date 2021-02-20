@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca7f6aa0c029cd3d85ba569aa93d6ae2087afd52
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f9f17c16d051bdb42750d91971d2be0d3c09b47f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995864"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953085"
 ---
 # <a name="extend-and-customize-tool-windows"></a>ツールウィンドウの拡張とカスタマイズ
 Visual Studio には、ツールウィンドウ、ドキュメントウィンドウ、ダイアログウィンドウなど、いくつかの異なる種類のウィンドウが用意されています。 [ **プロパティ** ] ウィンドウ、[ **出力** ] ウィンドウ、[ **タスク一覧** ] ウィンドウなどの他のウィンドウは、ツールウィンドウの種類です。
@@ -48,7 +48,7 @@ Visual Studio には、ツールウィンドウ、ドキュメントウィンド
 ## <a name="modal-dialog-boxes"></a>モーダルダイアログボックス
  Visual Studio 拡張機能では、モーダルダイアログボックスをから派生させることによって作成する必要があり <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> ます。これにより、コントロールと残りの UI を制御できます。 詳細については、「 [モーダルダイアログボックスの作成と管理](../extensibility/creating-and-managing-modal-dialog-boxes.md)」を参照してください。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ツールウィンドウで拡張機能を作成する](../extensibility/creating-an-extension-with-a-tool-window.md)
 - [プロジェクトの拡張](../extensibility/extending-projects.md)
 - [ソリューションの拡張](../extensibility/extending-solutions.md)

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8dd554ed8f3b1664f889909d5d5ae7a30e9889a
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 56e8d198e55b521b761f8f3a7b54f6c2c0ee2c33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134819"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930938"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>方法: 前乗算されたアルファを持つテクスチャをエクスポートする
 
@@ -42,7 +42,7 @@ ms.locfileid: "93134819"
 
 1. 基本的なテクスチャを作成します。 既存のイメージ ファイルを読み込むか、「[方法: 基本テクスチャを作成する](../designers/how-to-create-a-basic-texture.md)」の手順に従ってイメージ ファイルを作成します。
 
-2. イメージ コンテンツ パイプラインによって処理されるようにテクスチャ ファイルを構成します。 **ソリューション エクスプローラー** でテクスチャ ファイルのショートカット メニューを開き、 **[プロパティ]** をクリックします。 **[構成プロパティ]**  >  **[全般]** ページの順に進み、 **[項目の種類]** を **[Image Content Pipeline]\(イメージ コンテンツ パイプライン\)** に設定します。 **[コンテンツ]** が **[はい]** に、 **[ビルドから除外]** が **[いいえ]** に設定されていることを確認し、 **[適用]** ボタンをクリックします。 **[イメージ コンテンツ パイプライン]** の構成プロパティ ページが表示されます。
+2. イメージ コンテンツ パイプラインによって処理されるようにテクスチャ ファイルを構成します。 **ソリューション エクスプローラー** でテクスチャ ファイルのショートカット メニューを開き、**[プロパティ]** をクリックします。 **[構成プロパティ]**  >  **[全般]** ページの順に進み、 **[項目の種類]** を **[Image Content Pipeline]\(イメージ コンテンツ パイプライン\)** に設定します。 **[コンテンツ]** が **[はい]** に、**[ビルドから除外]** が **[いいえ]** に設定されていることを確認し、**[適用]** ボタンをクリックします。 **[イメージ コンテンツ パイプライン]** の構成プロパティ ページが表示されます。
 
 3. 前乗算されたアルファを生成するようにイメージ コンテンツ パイプラインを構成します。 **[構成プロパティ]** 、 **[イメージ コンテンツ パイプライン]** 、 **[全般]** の順にクリックし、 **[Convert to pre-multiplied alpha format]\(前乗算されたアルファ形式に変換\)** プロパティを **[はい (/generatepremultipliedalpha)]** に設定します。
 

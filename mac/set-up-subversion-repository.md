@@ -1,21 +1,21 @@
 ---
 title: Subversion リポジトリのセットアップ
-description: Visual Studio for Mac の Subversion を使用します。
+description: Visual Studio for Mac の一元化されたバージョン コントロール システムとして Subversion をインストールしてセットアップする方法について説明します。
 author: jmatthiesen
 ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
 ms.topic: how-to
-ms.openlocfilehash: 78a5dd2abbef177e2eb949d25d779a46ecc65bda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5230958fa1624acf7609d6cad7d885e43c013d0
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950695"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847068"
 ---
 # <a name="set-up-a-subversion-repository"></a>Subversion リポジトリの設定
 
-Subversion は集中管理されている*バージョン管理システム*です。つまり、すべてのファイルとリビジョンが格納された単一のサーバーが存在し、ユーザーはそこから任意のファイルの任意のバージョンをチェック アウトできます。 ファイルがリモート Subversion リポジトリからチェックアウトされると、ユーザーはその時点のリポジトリのスナップショットを取得します。
+Subversion は集中管理されている _バージョン管理システム_ です。つまり、すべてのファイルとリビジョンが格納された単一のサーバーが存在し、ユーザーはそこから任意のファイルの任意のバージョンをチェック アウトできます。 ファイルがリモート Subversion リポジトリからチェックアウトされると、ユーザーはその時点のリポジトリのスナップショットを取得します。
 
 Subversion をバージョン管理に使用するには、これをコンピューターにインストールする必要があります。Subversion がコンピューターにインストールされているかどうかを確認するには、ターミナルで次のコマンドを使用します。
 
@@ -25,7 +25,7 @@ svn --version
 
 このコマンドはバージョン番号を返します。
 
-Subversion がまだインストールされていない場合にこれを取得する最も簡単な方法は、*Xcode コマンド ライン ツール*をインストールする方法です。 Xcode コマンド ライン ツールと Subversion をインストールするには、次のコマンドを使用します。
+Subversion がまだインストールされていない場合にこれを取得する最も簡単な方法は、_Xcode コマンド ライン ツール_ をインストールする方法です。 Xcode コマンド ライン ツールと Subversion をインストールするには、次のコマンドを使用します。
 
 ```bash
 xcode-select --install

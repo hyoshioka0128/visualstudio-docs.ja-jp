@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f52a30eef50c783ea96d403c25837f9bf2515a52
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 47ab3cfd9ae57e48e7a5884729efce8413b543be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964798"
 ---
 # <a name="net-memory-allocations-view"></a>.NET メモリの割り当てビュー
 割り当てビューには、プロファイリング実行中に作成された型が一覧表示されます。 それぞれの型が、型の割り当てが発生する原因となった関数の実行パスを表示するコール ツリーのルート ノードに該当します。

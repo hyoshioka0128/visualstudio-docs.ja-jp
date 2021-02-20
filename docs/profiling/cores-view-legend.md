@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e160384c-fcfe-49b3-86b7-229adb736c51
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e4486bc20caf580c9a2c1038002693bd92fe616a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882922"
 ---
 # <a name="cores-view-legend"></a>コア ビューの凡例
 コア ビューの凡例では、各スレッドが色と名前で示されます。 クロスコアのコンテキスト スイッチの回数、コンテキスト スイッチの合計回数、クロスコアのコンテキスト スイッチの割合を示す列が含まれます。 凡例の行は、クロスコアのコンテキスト スイッチの回数が多い順に並べられています。

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e6c90831c39f0e378dd9060397c68592ec73384
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16a4178231c575f590a13b8205cd872668f46143
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951941"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio のレイアウト
 Visual Studio ダイアログの大部分は [ユーティリティダイアログレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)です。これは、標準の [Windows デスクトップダイアログレイアウトの原則](/windows/desktop/uxguide/win-dialog-box)に従う、テーマが適用されていないダイアログです。 Visual Studio が UI を更新するために移動すると、より目立つようなダイアログの中には、製品定義のエクスペリエンスとして機能する新しいデザインが追加されています。 これらの [テーマ付きダイアログのレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) には、テーマが設定されています。

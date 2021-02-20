@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 905284d69d23971771eecd9da6cef5c5051f36ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944278"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>ヘルプ コンテンツ マネージャーのコマンド ライン引数
 
@@ -47,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 次の表に、ヘルプ コンテンツ マネージャーのコマンド ライン ツールで使用できるスイッチと引数の定義を示します。
 
-|スイッチ|必須|引数|
+|Switch|必須|引数|
 |------------|---------------|---------------|
 |/operation|はい|-   **Install** -- 指定されたインストール ソースからローカル コンテンツ ストアにブックを追加します。<br />     このスイッチには、/booklist 引数、/sourceURI 引数、または両方が必要です。 /sourceURI 引数を指定しない場合、Visual Studio の既定の URI がインストール ソースとして使用されます。 /booklist 引数を指定しない場合、/sourceUri のすべてのブックがインストールされます。<br />-   **Uninstall** -- 指定するブックをローカル コンテンツ ストアから削除します。<br />     このスイッチには、/booklist 引数または /sourceURI 引数が必要です。  /sourceURI 引数を指定すると、すべてのブックが削除され、/booklist 引数は無視されます。<br />-   **Move** -- 指定するパスにローカル ストアを移動します。 既定のローカルストアパスは、 *% Programdata%* の下のディレクトリとして設定されています<br />     このスイッチには、/locationPath 引数と /catalogName 引数が必要です。 有効でないパスを指定した場合、またはドライブにコンテンツを保持するのに十分な空き領域がない場合は、エラー メッセージがイベント ログに記録されます。<br />-   **Refresh** -- インストール後または最近の更新後に変更されたトピックを更新します。<br />     このスイッチには /sourceURI 引数が必要です。|
 |/catalogName|はい|コンテンツ カタログの名前を指定します。 Visual Studio 2017 および Visual Studio 2019 の場合、これは VisualStudio15 です。|
@@ -60,7 +60,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |/skuId|いいえ|インストール ソースから製品の在庫管理単位 (SKU) を指定し、/SourceURI スイッチで識別されるブックにフィルターを適用します。|
 |/membership|いいえ|-   **Minimum** -- /skuId スイッチで指定する SKU に基づいて、最小限のヘルプ コンテンツ セットをインストールします。 SKU とコンテンツ セットの間のマッピングは、サービス API で公開されます。<br />-   **Recommended** -- /skuId 引数で指定する SKU の推奨ブック セットをインストールします。 インストールソースは、サービス API または *です。MSHA*。<br />-   **Full** -- /skuId 引数で指定する SKU のすべてのブック セットをインストールします。 インストールソースは、サービス API または *です。MSHA*。|
 |/locationpath|いいえ|ローカル ヘルプ コンテンツの既定のフォルダーを指定します。 このスイッチは、コンテンツをインストールまたは移動する場合にのみ使用する必要があります。 このスイッチを指定する場合は、/silent スイッチも指定する必要があります。|
-|/silent|いいえ|ユーザーに確認せずに、または状態通知領域のアイコンなどの UI を表示せずに、ヘルプ コンテンツをインストールまたは削除します。 出力は *% Temp%* ディレクトリ内のファイルに記録されます。 **重要:** コンテンツをサイレントインストールするには、 *.mshc*ファイルではなく、デジタル署名された *.cab*ファイルを使用する必要があります。|
+|/silent|いいえ|ユーザーに確認せずに、または状態通知領域のアイコンなどの UI を表示せずに、ヘルプ コンテンツをインストールまたは削除します。 出力は *% Temp%* ディレクトリ内のファイルに記録されます。 **重要:** コンテンツをサイレントインストールするには、 *.mshc* ファイルではなく、デジタル署名された *.cab* ファイルを使用する必要があります。|
 |/launchingApp|いいえ|ヘルプ ビューアーが親アプリケーションなしで起動されるときのアプリケーションおよびカタログ コンテキストを定義します。 このスイッチの引数は、*CompanyName*、*ProductName*、および *VersionNumber* です (例: `/launchingApp Microsoft,VisualStudio,16.0`)。<br /><br /> これは、/silent パラメーター付きでコンテンツをインストールするために必要です。|
 |/wait *秒数*|いいえ|インストール、アンインストール、および更新操作を一時停止します。 操作が既にカタログに対して進行中の場合、プロセスは特定の秒数が経過するまで続行を待機します。 無期限に待機するには、0 を使用します。|
 |/?|いいえ|ヘルプ コンテンツ マネージャーのコマンド ライン ツールのスイッチとその説明を一覧表示します。|

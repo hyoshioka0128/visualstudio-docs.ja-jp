@@ -16,15 +16,15 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], Project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c44e1208daaef11cb7fd9bd22e3e3ae574ca610d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b17ff0312574a4e41b283bd3c631977a834c64c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971818"
 ---
 # <a name="project-solutions"></a>プロジェクトソリューション
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] には、Microsoft Office Project の VSTO アドインを作成するために使用できるプロジェクト テンプレートが用意されています。 VSTO アドインを使用すると、Project の自動化、Project 機能の拡張、Project ユーザー インターフェイス (UI) のカスタマイズが可能です。

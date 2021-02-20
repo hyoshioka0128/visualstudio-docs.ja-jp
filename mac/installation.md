@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583958"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727568"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
@@ -49,7 +49,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 
 6. 使用可能なワークロードの一覧が表示されます。 使用するコンポーネントを選択します。
 
-    [![インストールしたいオプションのワークロード機能を選択する](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Visual Studio Mac インストーラーの [何をインストールしますか?] 画面のスクリーンショット。インストール可能なコンポーネントの一覧が表示されます。](media/install-selection.png)](media/install-selection.png#lightbox)
 
    すべてのプラットフォームをインストールすることを希望されない場合には、以下のガイドを使用してインストールするプラットフォームを決めることがきます。
 
@@ -67,7 +67,7 @@ iOS または macOS 向けに Xamarin アプリをビルドするには、以下
 7. 選択を行ったら、 **[インストール]** ボタンを押します。
 8. インストーラーではダウンロードの進行状況が表示され、Visual Studio for Mac と選択したワークロードがインストールされます。 インストールに必要な権限を付与するため、パスワードの入力が求められます。
 
-    [![インストールしたいオプションのワークロード機能を選択する](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Visual Studio Mac インストーラーのスクリーンショット。Mac 用 .NET 開発者ツールキットのインストール進行状況画面が表示されています。](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. インストールが完了すると、サインインして使用するキー バインドを選択することで、インストールをカスタマイズするように求めるメッセージが Visual Studio for Mac に表示されます。
 

@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 736b7765-9c71-44d7-85e5-79787d13d91c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28fb9da2e838a17f5b014c3b1af4fc9ee5ab46d7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 526d82194a4ed1463c802296cb97c95e0eb41d33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960144"
 ---
 # <a name="span-markers"></a>スパン マーカー
 スパン マーカーは、アプリケーションの意味のあるフェーズを表します。 たとえば、スパンを使用して、特定の作業項目を処理する時間間隔を表すことができます。 その長さは、対応するアプリケーション フェーズの期間を表します。 この図は、コンカレンシー ビジュアライザーのスパンを示しています。

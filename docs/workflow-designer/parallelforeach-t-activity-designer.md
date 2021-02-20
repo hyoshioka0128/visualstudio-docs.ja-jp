@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968750"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach アクティビティ デザイナー
 
@@ -53,7 +53,7 @@ ms.locfileid: "96996176"
 
 既定では、ループ反復子には、item という名前が付けられます。 反復子変数の名前は、 **parallelforeach \<T>** アクティビティデザイナーの [ **ForEach** ] ボックスで変更できます。 ループ反復子は、<xref:System.Activities.Statements.ParallelForEach%601> アクティビティの子の式で使用できます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

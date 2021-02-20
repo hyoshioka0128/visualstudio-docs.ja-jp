@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b91bca1fb1e8866e4f0c9b5a68140f7a7ae892f2
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c8e90a649a11933e4281140299bf9ee1b564a212
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939631"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>MSBuild で複数のプロジェクトを並行ビルドする
 
@@ -30,7 +30,7 @@ MSBuild では、複数のプロジェクトを並列に実行することによ
 - <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> タスク パラメーターを MSBuild タスクで使用します。
 
 > [!NOTE]
-> コマンド ラインで **-verbosity** ( **-v** ) スイッチを使うと、ビルドのパフォーマンスが影響を受ける場合があります。 ビルド ログ情報の詳細レベルが、トラブルシューティングで使用するために "詳細" または "診断" に設定されている場合、ビルドのパフォーマンスが低下する可能性があります。 詳しくは、「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」と「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
+> コマンド ラインで **-verbosity** (**-v**) スイッチを使うと、ビルドのパフォーマンスが影響を受ける場合があります。 ビルド ログ情報の詳細レベルが、トラブルシューティングで使用するために "詳細" または "診断" に設定されている場合、ビルドのパフォーマンスが低下する可能性があります。 詳しくは、「[ビルド ログの取得](../msbuild/obtaining-build-logs-with-msbuild.md)」と「[コマンド ライン リファレンス](../msbuild/msbuild-command-line-reference.md)」をご覧ください。
 
 ## <a name="-maxcpucount-switch"></a>-maxcpucount スイッチ
 
@@ -50,7 +50,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 `BuildInParallel` は、MSBuild タスクに対する省略可能なブール値パラメーターです。 `BuildInParallel` を `true` (既定値は `true`) に設定すると、複数のワーカー プロセスが生成され、それと同じ数のプロジェクトを同時にビルドすることができます。 このようなビルドを行うためには、`-maxcpucount` スイッチが 1 より大きい値に設定され、システムが最低でもデュアルコアであるか 2 つ以上のプロセッサを搭載している必要があります。
 
-次の例で、 *microsoft.common.targets`BuildInParallel` の一部であり、* パラメーターの設定方法を示しています。
+次の例で、*microsoft.common.targets`BuildInParallel` の一部であり、* パラメーターの設定方法を示しています。
 
 ```xml
 <PropertyGroup>

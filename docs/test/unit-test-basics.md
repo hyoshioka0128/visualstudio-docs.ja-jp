@@ -8,15 +8,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962731"
 ---
 # <a name="unit-test-basics"></a>単体テストの基本
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>テスト エクスプローラーでテストを実行する
 
-テスト プロジェクトをビルドすると、テストは **テスト エクスプローラー** に表示されます。 **テスト エクスプローラー** が表示されない場合は、Visual Studio メニューの **[テスト]** をクリックし、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します。
+テスト プロジェクトをビルドすると、テストは **テスト エクスプローラー** に表示されます。 **テスト エクスプローラー** が表示されない場合は、Visual Studio メニューの **[テスト]** を選び、 **[Windows]** 、 **[テスト エクスプローラー]** の順に選択します (または **Ctrl**  +  **E**、**T** キーを押します)。
 
 ::: moniker range="vs-2017"
 ![単体テスト エクスプローラー](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ public void My_Test ()
 ![テスト エクスプローラー ツールバーからテストを実行](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-**[すべて実行]** を選択してテストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます。 テストを選択すると、そのテストの詳細がテスト詳細ペインに表示されます。 右クリック メニューから **[テストを開く]** を選択し (キーボード:**F12** キー)、選択したテストのソース コードを表示します。
+**[すべて実行]** を選択して (または **Ctrl**  +  **R**、**V** キーを押して) テストをすべて実行することも、 **[実行]** を選択してテストのサブセットを実行することもできます (**Ctrl**  +  **R**、**T** キー)。 テストを選択すると、そのテストの詳細がテスト詳細ペインに表示されます。 右クリック メニューから **[テストを開く]** を選択し (キーボード:**F12** キー)、選択したテストのソース コードを表示します。
 
 ::: moniker range="vs-2017"
 

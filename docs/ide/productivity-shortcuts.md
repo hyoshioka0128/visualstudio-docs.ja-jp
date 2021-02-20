@@ -5,15 +5,15 @@ ms.date: 11/02/2018
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951109"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio のショートカットに関するヒント
 
@@ -28,9 +28,9 @@ Visual Studio では、この記事のショートカットを使って、より
 
 |タスク|ショートカット|
 |-|-|
-|フローティング ウィンドウの最大化|タイトル バーを**ダブルクリック**|
+|フローティング ウィンドウの最大化|タイトル バーを **ダブルクリック**|
 |ウィンドウの最大化/最小化|**Win**+**↑** / **Win**+**↓**|
-|フローティング ウィンドウの再ドッキング|**Ctrl** キーを押しながらタイトル バーを**ダブルクリック**|
+|フローティング ウィンドウの再ドッキング|**Ctrl** キーを押しながらタイトル バーを **ダブルクリック**|
 |フローティング ウィンドウの移動/ドッキング|**Win**+**←** / **Win**+**→**|
 |アクティブなドキュメントを閉じる|**Ctrl**+**F4**|
 |開いているファイル リストを表示|**Ctrl**+**Alt**+**↓**|

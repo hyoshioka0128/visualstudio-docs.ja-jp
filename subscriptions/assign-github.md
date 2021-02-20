@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 12/02/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: Visual Studio Subscription with GitHub Enterprise でのサブスクリプションの管理
-ms.openlocfilehash: eed2f0636b0751c996da79c54d1a439532bce097
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: ca71e696081e304cdbb8cc58576e0ae4c536f911
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538125"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511320"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise を使用して Visual Studio サブスクリプションを管理する
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
@@ -51,7 +51,7 @@ GitHub は、クラウド ベースの GitHub.com、またはオンプレミス�
 - GitHub の割り当ての詳細については、[GitHub ドキュメント](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)を参照してください。
 - GitHub のさまざまなトピックに関する質問への回答については、[GitHub ヘルプ](https://help.github.com/en)で検索できます。
 - [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio の管理とサブスクリプションのサポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 

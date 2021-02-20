@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 163734bd-1bfd-4093-a730-7741fc21742d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d81328ecf17117500a5f686a45f934e451bb5809
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 5c351b7f676dec678bd4f070a1f8fb9af97c5d28
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914120"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>方法: 複数のプロジェクト ファイルで同じターゲットを使用する
 
@@ -56,7 +56,7 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 </Project>
 ```
 
- 次の XML では、 *MyCommon.targets* をインポートする、 *MyApp.proj* が定義されます。
+ 次の XML では、*MyCommon.targets* をインポートする、*MyApp.proj* が定義されます。
 
 ```xml
 <Project
@@ -73,7 +73,7 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 
  `Name="MyCommon"`
 
- プロジェクトはプロパティ `Name` が *MyApp.proj* で定義された後にインポートされるため、 *MyCommon.targets* の `Name` の定義により *MyApp.proj* の定義がオーバーライドされます。 プロパティ Name が定義される前にプロジェクトがインポートされた場合、ビルドは次のメッセージを表示します。
+ プロジェクトはプロパティ `Name` が *MyApp.proj* で定義された後にインポートされるため、*MyCommon.targets* の `Name` の定義により *MyApp.proj* の定義がオーバーライドされます。 プロパティ Name が定義される前にプロジェクトがインポートされた場合、ビルドは次のメッセージを表示します。
 
  `Name="MyApp"`
 
@@ -106,7 +106,7 @@ MSBuild プロジェクト ファイルをいくつか作成した経験があ�
 
 ## <a name="example-2"></a>例 2
 
- 次のコード例では、 *MyCommon.targets* ファイルをインポートします。
+ 次のコード例では、*MyCommon.targets* ファイルをインポートします。
 
 ```xml
 <Project DefaultTargets="Build"

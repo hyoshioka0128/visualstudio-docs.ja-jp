@@ -17,24 +17,24 @@ f1_keywords:
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 751f87075d4e9dcbb7daa94f39a2f38c5083fb3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878449"
 ---
 # <a name="remove-visual-studio"></a>Visual Studio の削除
 
 致命的なエラーが発生して Visual Studio の修復またはアンインストールができない場合は、`InstallCleanup.exe` ツールを実行して Visual Studio 2017 または Visual Studio 2019 のすべてのインストール済みインスタンスのインストール ファイルと製品情報を削除することができます。
 
 > [!WARNING]
-> InstallCleanup ツールは、修復またはアンインストールが失敗した場合の**最終手段としてのみ**使用してください。 このツールを使うと、他の Visual Studio インストールまたは他の製品の機能がアンインストールされ、場合によっては修復や再インストールが必要になる可能性があります。
+> InstallCleanup ツールは、修復またはアンインストールが失敗した場合の **最終手段としてのみ** 使用してください。 このツールを使うと、他の Visual Studio インストールまたは他の製品の機能がアンインストールされ、場合によっては修復や再インストールが必要になる可能性があります。
 
 ## <a name="run-installcleanupexe"></a>InstallCleanup.exe を実行する
 

@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 748f941d5a8f257b3765b06651ff3244793e0123
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 7aabfa91f7f6c6204919c4a06d2d3080b5174c5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942582"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>手順 3: Django アプリで静的ファイルを提供し、ページを追加し、テンプレート継承を使用する
 
@@ -34,9 +34,9 @@ ms.locfileid: "88238531"
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>手順 3-1:項目テンプレートを理解する
 
-Django アプリを開発する場合、通常、より多くの Python、HTML、CSS、および JavaScript ファイルを追加します。 Visual Studio では、(デプロイに必要になる可能性がある *web.config* のような他のファイルだけでなく) ファイルの種類ごとに、すぐに使用できる便利な[項目テンプレート](python-item-templates.md)を提供しています。
+Django アプリを開発する場合、通常、より多くの Python、HTML、CSS、および JavaScript ファイルを追加します。 Visual Studio では、(デプロイに必要になる可能性がある *web.config* のような他のファイルだけでなく) ファイルの種類ごとに、すぐに使用できる便利な [項目テンプレート](python-item-templates.md)を提供しています。
 
-使用可能なテンプレートを確認するには、**ソリューション エクスプローラー**に移動して、項目を作成するフォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** の順に選択します。
+使用可能なテンプレートを確認するには、**ソリューション エクスプローラー** に移動して、項目を作成するフォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** の順に選択します。
 
 ![Visual Studio の新しい項目の追加ダイアログ](media/django/step03-add-new-item-dialog.png)
 
@@ -63,7 +63,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 任意のフォルダー構造を使用して目的の *static* 内にファイルを編成し、そのフォルダー内で相対パスを使用してファイルを参照できます。 このプロセスを示すために、次の手順では CSS ファイルをアプリに追加して、*index.html* テンプレートに該当のスタイルシートを使用しています。
 
-1. **ソリューション エクスプローラー**で、Visual Studio プロジェクトの **HelloDjangoApp** フォルダーを右クリックして、 **[追加]**  >  **[新しいフォルダー]** を選択して、フォルダーに `static` という名前を付けます。
+1. **ソリューション エクスプローラー** で、Visual Studio プロジェクトの **HelloDjangoApp** フォルダーを右クリックして、 **[追加]**  >  **[新しいフォルダー]** を選択して、フォルダーに `static` という名前を付けます。
 
 1. **static** フォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** を選択します。 表示されたダイアログ ボックスで、**Stylesheet** テンプレートを選択して、ファイルに `site.css` という名前を付けて、 **[OK]** をクリックします。 **site.css** ファイルがプロジェクトに表示され、エディターで開かれます。 次の画像のようなフォルダー構成が表示されます。
 
@@ -78,7 +78,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
     }
     ```
 
-1. アプリの *templates/HelloDjangoApp/index.html* ファイルの内容を次のコードに置き換えます。これにより、手順 2 で使用した `<strong>` 要素が `message` スタイル クラスを参照する `<span>` に置き換えられます。 この方法でスタイル クラスを使用すると、要素のスタイル設定をこれまで以上に柔軟に行えます (VS 2017 15.7 以前の使用時、*index.html* を *templates* 内のサブフォルダーに移動済みの場合、手順 2-4 の[テンプレートの名前空間の設定](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)に関する記述を参照してください)。
+1. アプリの *templates/HelloDjangoApp/index.html* ファイルの内容を次のコードに置き換えます。これにより、手順 2 で使用した `<strong>` 要素が `message` スタイル クラスを参照する `<span>` に置き換えられます。 この方法でスタイル クラスを使用すると、要素のスタイル設定をこれまで以上に柔軟に行えます (VS 2017 15.7 以前の使用時、*index.html* を *templates* 内のサブフォルダーに移動済みの場合、手順 2-4 の [テンプレートの名前空間の設定](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing)に関する記述を参照してください)。
 
     ```html
     <html>
@@ -129,7 +129,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 次の手順では、"HelloDjangoApp" プロジェクトに "About"\(詳細\) ページと、ホーム ページからこのページへのリンクを追加します。
 
-1. **ソリューション エクスプローラー**で、**templates/HelloDjangoApp** フォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** を選択し、 **[HTML ページ]** 項目テンプレートを選択して、ファイルに `about.html` という名前を付けて、 **[OK]** をクリックします。
+1. **ソリューション エクスプローラー** で、**templates/HelloDjangoApp** フォルダーを右クリックし、 **[追加]**  >  **[新しい項目]** を選択し、 **[HTML ページ]** 項目テンプレートを選択して、ファイルに `about.html` という名前を付けて、 **[OK]** をクリックします。
 
     > [!Tip]
     > **[新しい項目]** コマンドが **[追加]** メニューに表示されない場合、Visual Studio がデバッグ モードを終了できるようにサーバーを停止済みであることを確認してください。
@@ -184,7 +184,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 回答:*views.py* のビュー関数が `index` という名前であっても、Django プロジェクトの *urls.py* ファイルにある URL ルーティング パターンは、文字列 "index" と一致する正規表現を含みません。 この文字列と一致させるには、パターン `^index$` に対応する別のエントリを追加する必要があります。
 
-次のセクションで示すように、ページ テンプレートで `{% url '<pattern_name>' %}` タグを使用して、パターンの*名前*を参照する方が優れた方法です。この場合、Django は状況に見合った URL を作成します。 たとえば、*about.html* の `<div><a href="home">Home</a></div>` を `<div><a href="{% url 'index' %}">Home</a></div>` に置き換えます。 *urls.py* にある最初の URL パターンは実際、(`name='index'` 引数の特性により) 'index' という名前になるため、ここでは 'index' の使用が有効です。 また、2 番目のパターンを参照するには、'home' を使用することもできます。
+次のセクションで示すように、ページ テンプレートで `{% url '<pattern_name>' %}` タグを使用して、パターンの *名前* を参照する方が優れた方法です。この場合、Django は状況に見合った URL を作成します。 たとえば、*about.html* の `<div><a href="home">Home</a></div>` を `<div><a href="{% url 'index' %}">Home</a></div>` に置き換えます。 *urls.py* にある最初の URL パターンは実際、(`name='index'` 引数の特性により) 'index' という名前になるため、ここでは 'index' の使用が有効です。 また、2 番目のパターンを参照するには、'home' を使用することもできます。
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>手順 3-4:テンプレートの継承を使ってヘッダーとナビゲーション バーを作成する
 
@@ -192,9 +192,9 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 Django のテンプレート システムでは、複数のテンプレート間で特定の要素を再利用するために、インクルードと継承という 2 つの方法を提供しています。
 
-- *インクルード*とは、構文 `{% include <template_path> %}` を使用して参照元テンプレートの特定の場所に挿入する他のページ テンプレートのことです。 また、コード内で動的にパスを変更する場合、変数を使用することもできます。 インクルードは通常、ページ上の特定の場所に共有テンプレートを組み入れるために、ページの本文で使用されます。
+- *インクルード* とは、構文 `{% include <template_path> %}` を使用して参照元テンプレートの特定の場所に挿入する他のページ テンプレートのことです。 また、コード内で動的にパスを変更する場合、変数を使用することもできます。 インクルードは通常、ページ上の特定の場所に共有テンプレートを組み入れるために、ページの本文で使用されます。
 
-- *継承*は、ページ テンプレートの冒頭で `{% extends <template_path> %}` を使用して、参照元テンプレートが構築される共有の基本テンプレートを指定します。 継承は一般的に、アプリのページの共有レイアウト、ナビゲーション バー、およびその他の構造を定義するために使用されます。これにより、参照元テンプレートで必要になるのは、*ブロック*と呼ばれる基本テンプレートの特定の領域を追加または修正することだけです。
+- *継承* は、ページ テンプレートの冒頭で `{% extends <template_path> %}` を使用して、参照元テンプレートが構築される共有の基本テンプレートを指定します。 継承は一般的に、アプリのページの共有レイアウト、ナビゲーション バー、およびその他の構造を定義するために使用されます。これにより、参照元テンプレートで必要になるのは、*ブロック* と呼ばれる基本テンプレートの特定の領域を追加または修正することだけです。
 
 どちらの場合も、`<template_path>` はアプリの *templates* フォルダーへの相対です (`../` または `./` も許可されます)。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f281ceb1f305c5774fedbf725f2e6a9481d073d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e069a822cc2394769d256c93a1decf01b451b643
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944857"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 このインターフェイスは、項目のアドレスを表します。 シンボルハンドラーによって返されます。
@@ -44,7 +44,7 @@ IDebugAddress : IUnknown
 ## <a name="remarks"></a>解説
  シンボルプロバイダーは、特定のスコープ (関数、メソッド、クラスなど) 内のオブジェクトとその位置を表すために、このインターフェイスを返します。 このインターフェイスは、シンボルプロバイダーおよび式エバリュエーターのさまざまなメソッドに返され、そのメソッドに渡されます。 通常、シンボルプロバイダーは、このインターフェイスの内容を解釈する必要がある唯一のエンティティです。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

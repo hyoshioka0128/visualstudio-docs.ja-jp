@@ -11,20 +11,20 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955139"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 要素
   SharePoint に配置されるときにプロジェクト項目に含める、フィーチャー要素ファイルなどの SharePoint ファイルを表します。
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>構文
 
 ```xml
 <ProjectItemFile Source = "Name of the file"
@@ -44,7 +44,7 @@ ms.locfileid: "95440806"
 |---------------|-----------------|
 |**ソース**|**Xs: string** 属性が必要です。<br /><br /> プロジェクト項目と共に配置するファイルの名前。|
 |**移行先**|**Xs: string** 属性 (省略可能)。<br /><br /> 配置ルートフォルダーを基準とした、SharePoint 上でのファイルの配置先のパス。 展開ルートフォルダーは、 **type** 属性によって指定された展開の種類によって決定されます。 **ターゲット** 属性が指定されていない場合、ファイルは、 **Source** 属性で指定された名前のフォルダーに配置されます。<br /><br /> 詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の sharepoint プロジェクト項目の **配置パス** と **配置ルート** プロパティの説明を参照してください。|
-|**Type**|**Xs: string** 属性が必要です。<br /><br /> ファイルの配置の種類。 使用可能な値の詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の「sharepoint プロジェクト項目の **配置の種類**」プロパティの説明を参照してください。|
+|**種類**|**Xs: string** 属性が必要です。<br /><br /> ファイルの配置の種類。 使用可能な値の詳細については、「 [sharepoint ソリューションの開発](../sharepoint/developing-sharepoint-solutions.md)」の「sharepoint プロジェクト項目の **配置の種類**」プロパティの説明を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし。
@@ -55,7 +55,7 @@ ms.locfileid: "95440806"
 |-------------|-----------------|
 |[[ファイル]](../sharepoint/files-element.md)|Sharepoint に配置されるときに SharePoint プロジェクト項目に含めるファイルを指定します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  通常、 **ProjectItemFile** 要素で参照される SharePoint ファイルには、フィーチャー要素ファイル (*Elements.xml*)、リスト定義のスキーマファイル (*Schema.xml*)、Web パーツ (*webpart*) の Web パーツ定義ファイルなどがあります。
 
 ## <a name="element-information"></a>要素情報

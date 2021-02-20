@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ee69f934a9962d2beefb83b1ada08b920ce53d
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994668"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961769"
 ---
 # <a name="extend-the-output-window"></a>出力ウィンドウを拡張する
 [ **出力** ] ウィンドウは、一連の読み取り/書き込みテキストペインです。 Visual Studio には、 **Build** という組み込みのペインがあります。これらのウィンドウでは、プロジェクトはビルドに関するメッセージを伝達し、は **一般** に [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE に関するメッセージを伝達します。 プロジェクトは、インターフェイスメソッドを使用して **ビルド** ウィンドウへの参照を自動的に取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> します。また、Visual Studio は、サービスを使用して、 **[全般** ] ペインに直接アクセス <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> できます。 組み込みのペインに加えて、独自のカスタムペインを作成して管理することもできます。

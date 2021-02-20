@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17cb665d1b5ae399647868652f2b1e73fcd4543e
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: ff8f195b6d77aeab9a01a6f3f6262f4024de1153
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951655"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio の統合 (MSBuild)
 
@@ -60,7 +60,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="additional-build-actions"></a>その他のビルド アクション
 
- Visual Studio では、 **[ファイルのプロパティ]** ウィンドウの **[ビルド アクション]** プロパティを使って、プロジェクト内のファイルのアイテムの種類名を変更できます。 **Compile** 、 **EmbeddedResource** 、 **Content** 、 **None** の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 **JScript** が追加されます。
+ Visual Studio では、 **[ファイルのプロパティ]** ウィンドウの **[ビルド アクション]** プロパティを使って、プロジェクト内のファイルのアイテムの種類名を変更できます。 **Compile**、**EmbeddedResource**、**Content**、**None** の各項目の種類名は、プロジェクト内に既に存在する他の項目の種類名と共に、常にこのメニューに表示されます。 このメニューにカスタムの項目の種類名すべてが常に表示されるようにするには、 `AvailableItemName`という項目の種類に名前を追加します。 たとえば、プロジェクト ファイルに次の内容を追加すると、このファイルをインポートするすべてのプロジェクトの当該メニューに、カスタム型 **JScript** が追加されます。
 
 ```xml
 <ItemGroup>
@@ -93,7 +93,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 ## <a name="build-solutions"></a>ソリューションをビルドする
 
- Visual Studio 内では、ソリューション ファイルおよびプロジェクトのビルドの順序は Visual Studio 自体によって制御されます。 コマンド ラインで *msbuild.exe* を使用してソリューションをビルドすると、MSBuild によってソリューション ファイルが解析され、プロジェクトのビルドの順序が決定されます。 どちらの場合も、プロジェクトは依存関係の順序で個別にビルドされ、プロジェクト間参照は走査されません。 逆に、 *msbuild.exe* を使用して個々のプロジェクトをビルドする場合は、プロジェクト間参照が走査されます。
+ Visual Studio 内では、ソリューション ファイルおよびプロジェクトのビルドの順序は Visual Studio 自体によって制御されます。 コマンド ラインで *msbuild.exe* を使用してソリューションをビルドすると、MSBuild によってソリューション ファイルが解析され、プロジェクトのビルドの順序が決定されます。 どちらの場合も、プロジェクトは依存関係の順序で個別にビルドされ、プロジェクト間参照は走査されません。 逆に、*msbuild.exe* を使用して個々のプロジェクトをビルドする場合は、プロジェクト間参照が走査されます。
 
  Visual Studio の内部でビルドする場合は、`$(BuildingInsideVisualStudio)` プロパティを `true` に設定します。 これをプロジェクトまたは *.targets* ファイル内で使用することにより、ビルドの動作を変更できます。
 
@@ -111,7 +111,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  恣意的な名前のプロパティは Visual Studio には表示されません。 Visual Studio で恣意的なプロパティを変更するには、XML エディターでプロジェクト ファイルを開き、それらを手動で編集する必要があります。 詳細については、このトピックで後述する「[Visual Studio でプロジェクト ファイルを編集する](#edit-project-files-in-visual-studio)」を参照してください。
 
- 任意の項目の種類名を使用してプロジェクト内で定義された項目は、既定では、 **ソリューション エクスプローラー** のプロジェクト ノードの下に表示されます。 項目が表示されないようにするには、 `Visible` メタデータを `false`に設定します。 たとえば、次の項目はビルド処理に参加しますが、 **ソリューション エクスプローラー** には表示されません。
+ 任意の項目の種類名を使用してプロジェクト内で定義された項目は、既定では、**ソリューション エクスプローラー** のプロジェクト ノードの下に表示されます。 項目が表示されないようにするには、 `Visible` メタデータを `false`に設定します。 たとえば、次の項目はビルド処理に参加しますが、**ソリューション エクスプローラー** には表示されません。
 
 ```xml
 <ItemGroup>
@@ -164,7 +164,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  XML エディターを使用してプロジェクト ファイルを編集する際、MSBuild のスキーマ ファイルによって IntelliSense と検証が実行されます。 これらは、 *\<Visual Studio installation directory>\Xml\Schemas\1033\MSBuild* にあるスキーマ キャッシュにインストールされます。
 
- MSBuild の中心となる型は *Microsoft.Build.Core.xsd* で定義され、Visual Studio によって使用される共通の型は *Microsoft.Build.CommonTypes.xsd* で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、 *Microsoft.Build.xsd* を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。
+ MSBuild の中心となる型は *Microsoft.Build.Core.xsd* で定義され、Visual Studio によって使用される共通の型は *Microsoft.Build.CommonTypes.xsd* で定義されます。 カスタムの項目の種類名、プロパティ、およびタスク用に IntelliSense と検証を使用できるようにスキーマをカスタマイズするには、*Microsoft.Build.xsd* を編集するか、CommonTypes スキーマまたは Core スキーマを含む独自のスキーマを作成します。 独自のスキーマを作成する場合は、 **[プロパティ]** ウィンドウを使用してこのスキーマを見つけるように XML エディターに指示する必要があります。
 
 ## <a name="edit-loaded-project-files"></a>読み込んだプロジェクト ファイルの編集
 

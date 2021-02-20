@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b1ffba10-eb9d-48ba-bf48-6d8b71d6f270
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3bb60c8d09bd40de569ad003277b8f542fe3b7f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954723"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
 参照の種類を指定します。
@@ -28,7 +28,7 @@ ms.locfileid: "80713656"
 ## <a name="syntax"></a>構文
 
 ```cpp
-enum enum_REFERENCE_TYPE { 
+enum enum_REFERENCE_TYPE { 
    REF_TYPE_WEAK   = 0x0001,
    REF_TYPE_STRONG = 0x0002
 };
@@ -36,7 +36,7 @@ typedef DWORD REFERENCE_TYPE;
 ```
 
 ```csharp
-public enum enum_REFERENCE_TYPE { 
+public enum enum_REFERENCE_TYPE { 
    REF_TYPE_WEAK   = 0x0001,
    REF_TYPE_STRONG = 0x0002
 };
@@ -49,12 +49,12 @@ public enum enum_REFERENCE_TYPE { 
  `REF_TYPE_STRONG`\
  強い参照を指定します。 をと組み合わせることはできません `REF_TYPE_WEAK` 。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `dwRefType` [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のメンバーとして使用されます。
 
  [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)メソッドにパラメーターとして渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

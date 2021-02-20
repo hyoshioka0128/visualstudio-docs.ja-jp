@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 6bfbdb65-8cb1-4c21-8c45-7194a2b77c1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b0bea73a044dabce5270c06f68658f85c612574c
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 3c032ca57e5a046a9f2dd2295226263ffe20f99e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729185"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858008"
 ---
 # <a name="allocation-hook-functions"></a>割り当てフック関数
 [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) を使用して組み込まれたメモリ割り当て用のフック関数は、メモリの割り当て、再割り当て、および解放のたびに呼び出されます。 この種類のフックは、さまざまな目的で使用できます。 メモリ不足の状況がアプリケーションでどのように処理されるかをテストする場合、たとえば、割り当てパターンを調査する場合や、後から分析するために割り当て情報をログに記録する場合に使用します。

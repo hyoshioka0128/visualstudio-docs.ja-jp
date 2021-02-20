@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7abb0249efc1a8da5d7e65572777e192e72c25e7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d28242b70c0c9808cc7eb066341cd2973d2372a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971584"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Visual Studio のメニューとコマンド
 ## <a name="command-usage"></a>コマンドの使用法
@@ -93,7 +93,7 @@ ms.locfileid: "97863533"
 
 - Project
 
-- Build
+- ビルド
 
 - デバッグ
 
@@ -101,13 +101,13 @@ ms.locfileid: "97863533"
 
 - チーム
 
-- Data
+- データ
 
 - テスト
 
-- Architecture
+- アーキテクチャ
 
-- 分析
+- 解析
 
 ##### <a name="document-specific-menus"></a>ドキュメント固有のメニュー
 

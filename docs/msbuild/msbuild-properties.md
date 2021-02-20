@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cff0bfa1db43b196d7f6403b5140f9af2947ba
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a8f53613c71a51ab2e5bd8441cb4605da795e8a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046134"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897751"
 ---
 # <a name="msbuild-properties"></a>MSBuild プロパティ
 
@@ -66,7 +66,7 @@ ms.locfileid: "93046134"
 
 ## <a name="registry-properties"></a>レジストリのプロパティ
 
- システム レジストリ値を読み取るには、次の構文を使用します。ここで、`Hive` はレジストリ ハイブ (たとえば、 **HKEY_LOCAL_MACHINE** )、`MyKey` はキー名、`MySubKey` はサブキー名、`Value` はサブキーの値をそれぞれ表します。
+ システム レジストリ値を読み取るには、次の構文を使用します。ここで、`Hive` はレジストリ ハイブ (たとえば、**HKEY_LOCAL_MACHINE**)、`MyKey` はキー名、`MySubKey` はサブキー名、`Value` はサブキーの値をそれぞれ表します。
 
 ```xml
 $(registry:Hive\MyKey\MySubKey@Value)
@@ -90,7 +90,7 @@ $(registry:Hive\MyKey\MySubKey)
 
 ## <a name="global-properties"></a>グローバル プロパティ
 
- MSBuild では、 **-property** (または **-p** ) スイッチを使用してコマンド ラインからプロパティを設定できます。 これらのグローバル プロパティ値は、プロジェクト ファイルで設定されたプロパティ値をオーバーライドします。 これには環境プロパティは含まれますが、予約済みのプロパティは含まれません。予約済みのプロパティは変更できません。
+ MSBuild では、 **-property** (または **-p**) スイッチを使用してコマンド ラインからプロパティを設定できます。 これらのグローバル プロパティ値は、プロジェクト ファイルで設定されたプロパティ値をオーバーライドします。 これには環境プロパティは含まれますが、予約済みのプロパティは含まれません。予約済みのプロパティは変更できません。
 
  グローバルな `Configuration` プロパティを `DEBUG` に設定する例を次に示します。
 

@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: d9a68146-1f43-4621-ac78-2c8c3f400936
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 549e78309ef5fc5e9baf4237f9eca8c7484bc198
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b3451101d6ab2483960731281763167c0cd1629c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918980"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild プロジェクト ファイル スキーマ リファレンス
 
 MSBuild XML スキーマのすべての要素と、使用可能な属性および子要素をまとめた表を提供します。
 
- MSBuild ではプロジェクト ファイルを使用して、ビルド エンジンに何をどのようにビルドするかを指示します。 MSBuild プロジェクト ファイルは、MSBuild XML スキーマに準拠した XML ファイルです。 このセクションでは、MSBuild の XML スキーマ定義 ( *.xsd* ) ファイルについて説明します。
+ MSBuild ではプロジェクト ファイルを使用して、ビルド エンジンに何をどのようにビルドするかを指示します。 MSBuild プロジェクト ファイルは、MSBuild XML スキーマに準拠した XML ファイルです。 このセクションでは、MSBuild の XML スキーマ定義 ( *.xsd*) ファイルについて説明します。
 
 MSBuild プロジェクト ファイルのスキーマ リンクは、Visual Studio 2017 以降では必要ありません。 存在する場合は、Visual Studio のバージョンに関係なく ` http://schemas.microsoft.com/developer/msbuild/2003` である必要があります。
 
@@ -50,7 +50,7 @@ MSBuild プロジェクト ファイルのスキーマ リンクは、Visual Stu
 |[Output 要素 (MSBuild)](../msbuild/output-element-msbuild.md)|--|条件<br /><br /> ItemName<br /><br /> PropertyName<br /><br /> TaskParameter|
 |[Parameter 要素](../msbuild/parameter-element.md)|--|出力<br /><br /> ParameterType<br /><br /> 必須|
 |[ParameterGroup 要素](../msbuild/parametergroup-element.md)|*パラメーター*|--|
-|[Project 要素 (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> [インポート]<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
+|[Project 要素 (MSBuild)](../msbuild/project-element-msbuild.md)|Choose<br /><br /> [インポート]<br /><br /> ItemGroup<br /><br /> ProjectExtensions<br /><br /> PropertyGroup<br /><br /> Target<br /><br /> UsingTask|DefaultTargets<br /><br /> InitialTargets<br /><br /> Sdk<br /><br /> ToolsVersion<br /><br /> TreatAsLocalProperty<br /><br /> xmlns|
 |[ProjectExtensions 要素 (MSBuild)](../msbuild/projectextensions-element-msbuild.md)|--|--|
 |[Property 要素 (MSBuild)](../msbuild/property-element-msbuild.md)|--|条件|
 |[PropertyGroup 要素 (MSBuild)](../msbuild/propertygroup-element-msbuild.md)|*プロパティ*|条件|

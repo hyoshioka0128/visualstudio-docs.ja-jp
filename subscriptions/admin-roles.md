@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: スーパー管理者と管理者ロールについて、および管理者を割り当てる方法について説明します。
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467376"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511333"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio サブスクリプション契約のスーパー管理者と管理者
 
@@ -42,13 +42,14 @@ ms.locfileid: "92467376"
 5. **[追加]** をクリックすると、新規に割り当てられた管理者は、ポータルにサインインする招待メールを受信します。  
 
 ## <a name="resources"></a>リソース
-- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio の管理とサブスクリプションのサポート](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>次の手順

@@ -5,21 +5,21 @@ ms.date: 11/12/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86386986"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887927"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Python プロジェクトのカスタム コマンドを定義する
 
-Python プロジェクトで作業していると、特定のスクリプトやモジュール、pip コマンド、または他の任意のツールを実行するために、コマンド ウィンドウに切り替えると便利なことに気付く場合があります。 ワークフローを改良するため、Python プロジェクトのコンテキスト メニューの **[Python]** サブメニューに、カスタム コマンドを追加することができます。 これらのコマンドは、コンソール ウィンドウまたは Visual Studio の**出力**ウィンドウで実行できます。 また、正規表現を使って、コマンドの出力からエラーと警告を解析する方法を Visual Studio に指示することもできます。
+Python プロジェクトで作業していると、特定のスクリプトやモジュール、pip コマンド、または他の任意のツールを実行するために、コマンド ウィンドウに切り替えると便利なことに気付く場合があります。 ワークフローを改良するため、Python プロジェクトのコンテキスト メニューの **[Python]** サブメニューに、カスタム コマンドを追加することができます。 これらのコマンドは、コンソール ウィンドウまたは Visual Studio の **出力** ウィンドウで実行できます。 また、正規表現を使って、コマンドの出力からエラーと警告を解析する方法を Visual Studio に指示することもできます。
 
 既定では、そのメニューに含まれる **[PyLint を実行]** コマンドは 1 つのみです。
 
@@ -48,7 +48,7 @@ Visual Studio の特定の Python プロジェクト テンプレートでは、
 
 1. *Python_CustomCommands.py*、コードを追加`print("Hello custom commands")`します。
 
-1. **ソリューション エクスプローラー**でプロジェクトを右クリックして **[Python]** を選び、サブメニューに表示されるコマンドが **[PyLint を実行]** だけであることを確認します。 カスタム コマンドはこの同じサブメニューに表示されます。
+1. **ソリューション エクスプローラー** でプロジェクトを右クリックして **[Python]** を選び、サブメニューに表示されるコマンドが **[PyLint を実行]** だけであることを確認します。 カスタム コマンドはこの同じサブメニューに表示されます。
 
 1. 概要で指摘したように、*Python-CustomCommands.pyproj* を別のテキスト エディターで開きます。 次の行を、ファイル末尾の終わりの `</Project>` のすぐ内側に追加して、ファイルを保存します。
 
@@ -146,7 +146,7 @@ Visual Studio の特定の Python プロジェクト テンプレートでは、
 | TargetType | はい | 含まれる Target 属性と、Arguments 属性でのその使い方を指定します。<ul><li>**executable**:Target で指定されている実行可能ファイルを実行します。コマンド ラインで直接入力された場合と同じように、Arguments の値を追加します。 値には、引数なしのプログラム名のみが含まれる必要があります。</li><li>**script**:Target のファイル名とそれに続く Arguments の値で、*python.exe* を実行します。</li><li>**module**:`python -m` の後に Target のモジュール名と Arguments の値を指定して実行します。</li><li>**code**:Target に含まれるインライン コードを実行します。 Arguments の値は無視されます。</li><li>**pip**:Target のコマンドと Arguments の値で `pip` を実行します。ただし、ExecuteIn は "output" に設定され、pip は `install` コマンドを想定し、Target をパッケージ名として使います。</li></ul> |
 | Target | はい | TargetType に応じて、使うファイル名、モジュール名、コード、または pip コマンドです。 |
 | 引数 | Optional | ターゲットに渡す引数の文字列を指定します (存在する場合)。 TargetType が `script` の場合は、引数は *python.exe* ではなく Python プログラムに渡されることに注意してください。 TargetType が `code` のときは無視されます。 |
-| ExecuteIn | はい | コマンドを実行する環境を指定します。<ul><li>**console**:(既定値) Target と引数を、コマンド ラインで直接入力された場合と同じように実行します。 Target の実行中はコマンド ウィンドウが表示された後、自動的に閉じられます。</li><li>**consolepause**:console と同じですが、キー押下を待ってからウィンドウを閉じます。</li><li>**output**:Target を実行し、Visual Studio の**出力**ウィンドウに結果を表示します。 TargetType が "pip" の場合、Visual Studio は Target をパッケージ名として使い、Arguments を付加します。</li><li>**repl**:Target を [Python Interactive ウィンドウ](python-interactive-repl-in-visual-studio.md)で実行します。ウィンドウのタイトルには、省略可能な表示名が使われます。</li><li>**none**: 動作は console と同じです。</li></ul>|
+| ExecuteIn | はい | コマンドを実行する環境を指定します。<ul><li>**console**:(既定値) Target と引数を、コマンド ラインで直接入力された場合と同じように実行します。 Target の実行中はコマンド ウィンドウが表示された後、自動的に閉じられます。</li><li>**consolepause**:console と同じですが、キー押下を待ってからウィンドウを閉じます。</li><li>**output**:Target を実行し、Visual Studio の **出力** ウィンドウに結果を表示します。 TargetType が "pip" の場合、Visual Studio は Target をパッケージ名として使い、Arguments を付加します。</li><li>**repl**:Target を [Python Interactive ウィンドウ](python-interactive-repl-in-visual-studio.md)で実行します。ウィンドウのタイトルには、省略可能な表示名が使われます。</li><li>**none**: 動作は console と同じです。</li></ul>|
 | WorkingDirectory | Optional | コマンドを実行するフォルダーです。 |
 | ErrorRegex<br>WarningRegEx | Optional | ExecuteIn が `output` の場合にのみ使われます。 どちらの値も、Visual Studio が **[エラー一覧]** ウィンドウにエラーと警告を表示するためにコマンド出力を解析するときに使う正規表現を指定します。 指定しないと、コマンドは **[エラー一覧]** ウィンドウに反映されません。 Visual Studio が想定する値の詳細については、「[正規表現の名前付きキャプチャ グループ](#named-capture-groups-for-regular-expressions)」を参照してください。 |
 | RequiredPackages | Optional | コマンドのパッケージ要件の一覧です。[*requirements.txt*](https://pip.pypa.io/en/stable/user_guide/#requirements-files) (pip.readthedocs.io) と同じ形式を使います。 たとえば、 **[PyLint の実行]** コマンドでは、`pylint>=1.0.0` と指定されています。 コマンドを実行する前に、Visual Studio は一覧内のすべてのパッケージがインストールされていることを確認します。 Visual Studio は、pip を使ってすべての足りないパッケージをインストールします。 |
@@ -390,4 +390,4 @@ Web プロジェクトの **[サーバーの起動]** および **[デバッグ 
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>"<実行可能ファイル コマンド> は、内部コマンドまたは外部コマンド、操作可能なプログラムまたはバッチ ファイルとして認識されていません"
 
-`TargetType="executable"` を使うとき、`Target` の値には、引数を含まないプログラム名 *のみ* を指定する必要があります (例: *python*や *python.exe* のみ)。 引数はすべて `Arguments` 属性に移動します。
+`TargetType="executable"` を使うとき、`Target` の値には、引数を含まないプログラム名 *のみ* を指定する必要があります (例: *python* や *python.exe* のみ)。 引数はすべて `Arguments` 属性に移動します。

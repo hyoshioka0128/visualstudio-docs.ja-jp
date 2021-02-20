@@ -14,15 +14,15 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 66e19f7744a56d147fb0760c6f20254ea4308603
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 796c41ae50a33f00f72e0286d5e9680f9016cf58
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952565"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>チュートリアル: SharePoint アプリケーションのプロファイリング
   このチュートリアルでは、Visual Studio のプロファイル ツールを使用し、SharePoint アプリケーションのパフォーマンスを最適化する方法について説明します。 アプリケーション例は SharePoint フィーチャー イベント レシーバーで、これにはフィーチャー イベント レシーバーのパフォーマンスを低下させるアイドル ループが含まれています。 Visual Studio プロファイラーを使用すると、プロジェクトの最も負荷の高い (実行速度が遅い) 部分を特定し、除去することができます。これは、 *ホットパス* とも呼ばれます。
@@ -51,7 +51,7 @@ ms.locfileid: "95970093"
 
 ### <a name="to-create-a-sharepoint-project"></a>SharePoint プロジェクトを作成するには
 
-1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
+1. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >   、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
 2. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 

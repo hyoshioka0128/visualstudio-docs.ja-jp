@@ -12,15 +12,15 @@ helpviewer_keywords:
 - site definitions [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7585a4b80322afb37e816758fc7074806a443676
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: c802832a9881cf3bf247c8e48b8ecdc2d784b1c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949006"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>SharePoint のサイト定義を作成する
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] の SharePoint サイト定義プロジェクトを使用すると、新しい SharePoint サイトの基盤として機能する "*サイト定義*" を作成できます。 これらの定義によって、SharePoint サイトの外観と動作だけでなく、その既定のコンテンツと機能も決まります。 定義には、事前に構成された一覧、コンテンツ タイプ、イベント レシーバー、イメージ、およびその他の項目を含めることができます。 SharePoint には、たとえば、ブログなどのいくつかのサイト定義が含まれています。 ブログ サイト定義に基づいてサイトを作成する場合、そのサイトには、ブログ サイトに必要なリスト、Web パーツ、およびその他の項目が含まれます。

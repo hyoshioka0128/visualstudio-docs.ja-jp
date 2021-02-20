@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 482ea1b2fb2eb7ddad46bd99694e4599e9fd9bbe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0e168066cc01a9e557bc0b4f301ae6218664552
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955035"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 マネージコードに固有のメソッドを持つ COM + シンボルプロバイダーを表します。
@@ -57,7 +57,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|指定したモジュールのデバッグシンボルをメモリからアンロードします。|
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|指定されたデータストリームを使用して、メモリ内のデバッグシンボルを更新します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

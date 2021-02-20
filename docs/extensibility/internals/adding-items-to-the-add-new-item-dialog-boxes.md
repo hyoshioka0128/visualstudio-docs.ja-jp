@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969010"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログボックスへの項目の追加
 [ **新しい項目の追加** ] ダイアログボックスに項目を追加するプロセスは、レジストリキーから開始されます。 次のレジストリエントリに示すように、[ **Additemtemplates** ] セクションには、[ **新しい項目の追加** ] ダイアログボックスで使用できる項目が配置されているディレクトリのパスと名前が含まれています。

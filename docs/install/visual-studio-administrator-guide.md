@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190209"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935613"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
@@ -40,11 +40,11 @@ ms.locfileid: "96190209"
 
 * サービス ニーズについて決定します。
 
-  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)」のページの「**Enterprise および Professional のお客様向けのサポート オプショ**」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」のページをご覧ください。
+  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)」ページの「***Enterprise および Professional のお客様向けのサポート オプショ***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
 
   累積された機能更新と共にサービス更新を適用する予定の場合、最新の更新プログラムを選択できます。
 
-更新モデルについて決定します。
+* 更新モデルについて決定します。
 
   個々のクライアント コンピューターはどこから更新プログラムを入手しますか? 具体的には、更新プログラムをインターネットから取得するか、全社的なローカル共有から取得するかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。
 
@@ -66,11 +66,11 @@ ms.locfileid: "96190209"
 
 * サービス ニーズについて決定します。
 
-  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)」のページの「**旧バージョンの Visual Studio のサポート**」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」のページをご覧ください。
+  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)」ページの「***旧バージョンの Visual Studio のサポート***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
 
   累積された機能更新と共にサービス更新を適用する予定の場合、最新の更新プログラムを選択できます。
 
-更新モデルについて決定します。
+* 更新モデルについて決定します。
 
   個々のクライアント コンピューターはどこから更新プログラムを入手しますか? 具体的には、更新プログラムをインターネットから取得するか、全社的なローカル共有から取得するかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。
 

@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945410"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows フォームベースのドメイン固有言語を作成する
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Windows フォームベースの Domain-Specific 言語を作成する
 
 Windows フォームを使用すると、DSL 図を使用する代わりに、ドメイン固有言語 (DSL) モデルの状態を表示できます。 このトピックでは、Visual Studio の視覚化およびモデリング SDK を使用して Windows フォームを DSL にバインドする手順について説明します。
 
@@ -28,7 +28,7 @@ Windows フォームを使用すると、DSL 図を使用する代わりに、�
 
 **最小限の WinForm デザイナー** DSL テンプレートでは、独自の要件に合わせて変更できる最小限の dsl が作成されます。
 
-1. **最小の WinForm デザイナー**テンプレートから DSL を作成します。
+1. **最小の WinForm デザイナー** テンプレートから DSL を作成します。
 
     このチュートリアルでは、次の名前を前提としています。
 
@@ -39,7 +39,7 @@ Windows フォームを使用すると、DSL 図を使用する代わりに、�
 
    1. すべてのテンプレートを変換します。
 
-   2. サンプルをビルドして実行します (**Ctrl F5 キーを押し** + **F5**ます)。
+   2. サンプルをビルドして実行します (**Ctrl F5 キーを押し** + ます)。
 
    3. Visual Studio の実験用インスタンスで、 `Sample` デバッグプロジェクトでファイルを開きます。
 
@@ -53,7 +53,7 @@ Windows フォームを使用すると、DSL 図を使用する代わりに、�
 
 - `DslDefinition.dsl` には、図の要素が含まれていません。 これは、dsl の図を使用して DSL のインスタンスモデルを表示しないためです。 代わりに、Windows フォームをモデルにバインドすると、フォーム上の要素にモデルが表示されます。
 
-- およびプロジェクトに加えて、 `Dsl` `DslPackage` ソリューションには、UI プロジェクトという名前の3番目のプロジェクトが含まれています。このプロジェクトには、 `UI.` **UI** Windows フォームコントロールの定義が含まれています。 `DslPackage` はに依存 `UI` し、 `UI` に依存し `Dsl` ます。
+- およびプロジェクトに加えて、 `Dsl` `DslPackage` ソリューションには、UI プロジェクトという名前の3番目のプロジェクトが含まれています。このプロジェクトには、 `UI.`  Windows フォームコントロールの定義が含まれています。 `DslPackage` はに依存 `UI` し、 `UI` に依存し `Dsl` ます。
 
 - プロジェクトには `DslPackage` 、 `UI\DocView.cs` プロジェクトで定義されている Windows フォームコントロールを表示するコードが含まれてい `UI` ます。
 
@@ -61,7 +61,7 @@ Windows フォームを使用すると、DSL 図を使用する代わりに、�
 
   - という名前の Windows フォームクラス `ModelViewControl` 。
 
-  - `DataBinding.cs`の追加の部分定義を含むという名前のファイル `ModelViewControl` 。 コンテンツを表示するには、 **ソリューションエクスプローラー**で、ファイルのショートカットメニューを開き、[ **コードの表示**] をクリックします。
+  - `DataBinding.cs`の追加の部分定義を含むという名前のファイル `ModelViewControl` 。 コンテンツを表示するには、 **ソリューションエクスプローラー** で、ファイルのショートカットメニューを開き、[ **コードの表示**] をクリックします。
 
 ### <a name="about-the-ui-project"></a>UI プロジェクトについて
 
@@ -75,43 +75,43 @@ Dsl 定義ファイルを更新して独自の DSL を定義する場合は、DS
 
 1. DSL デザイナーで DslDefinition. dsl を開きます。
 
-2. **要素**の削除
+2. **要素** の削除
 
-3. **Examplemodel.store**ドメインクラスの名前をに変更 `Farm` します。
+3. **Examplemodel.store** ドメインクラスの名前をに変更 `Farm` します。
 
-     `Size` **Int32**型で、Boolean 型の追加のドメインプロパティを指定し `IsOrganic` ます。 **Boolean**
+     `Size` **Int32** 型で、Boolean 型の追加のドメインプロパティを指定し `IsOrganic` ます。 
 
     > [!NOTE]
-    > ルートドメインクラスを削除してから新しいルートを作成する場合は、エディターのルートクラスのプロパティをリセットする必要があります。 **DSL エクスプローラー**で、[**エディター**] を選択します。 次に、[プロパティウィンドウで、[ **ルートクラス** ] をに設定し `Farm` ます。
+    > ルートドメインクラスを削除してから新しいルートを作成する場合は、エディターのルートクラスのプロパティをリセットする必要があります。 **DSL エクスプローラー** で、[**エディター**] を選択します。 次に、[プロパティウィンドウで、[ **ルートクラス** ] をに設定し `Farm` ます。
 
-4. **名前付きドメインクラス**ツールを使用して、次のドメインクラスを作成します。
+4. **名前付きドメインクラス** ツールを使用して、次のドメインクラスを作成します。
 
     - `Field` -これにという名前の追加のドメインプロパティを指定 `Size` します。
 
-    - `Animal` -プロパティウィンドウで、 **継承修飾子** を **Abstract**に設定します。
+    - `Animal` -プロパティウィンドウで、 **継承修飾子** を **Abstract** に設定します。
 
-5. **ドメインクラス**ツールを使用して、次のクラスを作成します。
+5. **ドメインクラス** ツールを使用して、次のクラスを作成します。
 
     - `Sheep`
 
     - `Goat`
 
-6. **継承**ツールを使用して、を作成 `Goat` して `Sheep` から継承し `Animal` ます。
+6. **継承** ツールを使用して、を作成 `Goat` して `Sheep` から継承し `Animal` ます。
 
-7. **埋め込みツールを**使用し `Field` て、との下に埋め込み `Animal` `Farm` ます。
+7. **埋め込みツールを** 使用し `Field` て、との下に埋め込み `Animal` `Farm` ます。
 
 8. 図を整理することもできます。 重複する要素の数を減らすには、リーフ要素のショートカットメニューの [ **サブツリーをここに移動** ] を使用します。
 
-9. ソリューションエクスプローラーのツールバーにある**すべてのテンプレートを変換**します。
+9. ソリューションエクスプローラーのツールバーにある **すべてのテンプレートを変換** します。
 
-10. **Dsl**プロジェクトをビルドします。
+10. **Dsl** プロジェクトをビルドします。
 
     > [!NOTE]
     > この段階では、他のプロジェクトはエラーなしでビルドされません。 ただし、データソースウィザードでそのアセンブリを使用できるように、Dsl プロジェクトをビルドする必要があります。
 
 ## <a name="update-the-ui-project"></a>UI プロジェクトを更新する
 
-DSL モデルに格納されている情報を表示する新しいユーザーコントロールを作成できるようになりました。 ユーザーコントロールをモデルに接続する最も簡単な方法は、データバインディングを使用することです。 **Modevdc bindingsource**という名前のデータバインディングアダプターの種類は、dsl を非 VMSDK インターフェイスに接続するように設計されています。
+DSL モデルに格納されている情報を表示する新しいユーザーコントロールを作成できるようになりました。 ユーザーコントロールをモデルに接続する最も簡単な方法は、データバインディングを使用することです。 **Modevdc bindingsource** という名前のデータバインディングアダプターの種類は、dsl を非 VMSDK インターフェイスに接続するように設計されています。
 
 ### <a name="define-your-dsl-model-as-a-data-source"></a>DSL モデルをデータソースとして定義する
 
@@ -119,13 +119,13 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
 
      **[データ ソース]** ウィンドウが開きます。
 
-     [ **新しいデータソースの追加**] を選択します。 **データソース構成ウィザード**が開きます。
+     [ **新しいデータソースの追加**] を選択します。 **データソース構成ウィザード** が開きます。
 
 2. [ **オブジェクト**]、[ **次へ**] の順に選択します。
 
      [ **Dsl**]、[ **FarmApp**] の順に展開し、モデルのルートクラスである [ **ファーム**] を選択します。 **[完了]** を選択します。
 
-     ソリューションエクスプローラーでは、 **UI**プロジェクトに**Properties\DataSources\Farm.datasource**が含まれるようになりました。
+     ソリューションエクスプローラーでは、 **UI** プロジェクトに **Properties\DataSources\Farm.datasource** が含まれるようになりました。
 
      [データソース] ウィンドウに、モデルクラスのプロパティとリレーションシップが表示されます。
 
@@ -133,7 +133,7 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
 
 ### <a name="connect-your-model-to-a-form"></a>モデルをフォームに接続する
 
-1. **UI**プロジェクトで、既存の .cs ファイルをすべて削除します。
+1. **UI** プロジェクトで、既存の .cs ファイルをすべて削除します。
 
 2. という名前の新しい **ユーザーコントロール** ファイルを `FarmControl` **UI** プロジェクトに追加します。
 
@@ -147,26 +147,26 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
 
     各プロパティに1つずつ、一連のコントロールが表示されます。 リレーションシップのプロパティでは、コントロールは生成されません。
 
-5. **FarmBindingNavigator**を削除します。 これはデザイナーでも自動的に生成され `FarmControl` ますが、このアプリケーションには役立ちません。
+5. **FarmBindingNavigator** を削除します。 これはデザイナーでも自動的に生成され `FarmControl` ますが、このアプリケーションには役立ちません。
 
-6. ツールボックスを使用して、 **DataGridView**の2つのインスタンスを作成し、とという名前を指定し `AnimalGridView` `FieldGridView` ます。
+6. ツールボックスを使用して、 **DataGridView** の2つのインスタンスを作成し、とという名前を指定し `AnimalGridView` `FieldGridView` ます。
 
    > [!NOTE]
    > 別の手順として、[データソース] ウィンドウからコントロールに [動物とフィールド] の項目をドラッグします。 この操作により、グリッドビューとデータソースの間にデータグリッドとバインドが自動的に作成されます。 ただし、このバインドは Dsl では正しく機能しません。 そのため、データグリッドとバインドを手動で作成することをお勧めします。
 
 7. ツールボックスに **Modeの bindingsource** ツールが含まれていない場合は、ツールボックスを追加します。 [ **データ** ] タブのショートカットメニューで、[ **項目の選択**] を選択します。 [**ツールボックスアイテムの選択**] ダイアログで、[ **.NET Framework** ] タブの [ **modeて bindingsource** ] を選択します。
 
-8. ツールボックスを使用して、 **modeの**2 つのインスタンスを作成し、とという名前を指定し `AnimalBinding` `FieldBinding` ます。
+8. ツールボックスを使用して、 **modeの** 2 つのインスタンスを作成し、とという名前を指定し `AnimalBinding` `FieldBinding` ます。
 
-9. 各**Modeの** **DataSource**プロパティを**farmBindingSource**に設定します。
+9. 各 **Modeの** **DataSource** プロパティを **farmBindingSource** に設定します。
 
-     **DataMember**プロパティを [**動物**または**フィールド**に設定します。
+     **DataMember** プロパティを [**動物** または **フィールド** に設定します。
 
 10. の **DataSource** プロパティをに `AnimalGridView` 、のをに設定し `AnimalBinding`  `FieldGridView` `FieldBinding` ます。
 
 11. ファームコントロールのレイアウトを好みに合わせて調整します。
 
-    **Modeare bindingsource**は、dsl に固有のいくつかの機能を実行するアダプターです。
+    **Modeare bindingsource** は、dsl に固有のいくつかの機能を実行するアダプターです。
 
 - VMSDK ストアトランザクションで更新をラップします。
 
@@ -180,7 +180,7 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>DSL へのバインドを完了します。
 
-1. **UI**プロジェクトの別のコードファイルに次のコードを追加します。
+1. **UI** プロジェクトの別のコードファイルに次のコードを追加します。
 
     ```csharp
     using System.ComponentModel;
@@ -206,7 +206,7 @@ DSL モデルに格納されている情報を表示する新しいユーザー�
     }
     ```
 
-2. **Dslpackage**プロジェクトで、次の変数定義を更新して、 **Dslpackage\ docview.tt**を編集します。
+2. **Dslpackage** プロジェクトで、次の変数定義を更新して、 **Dslpackage\ docview.tt** を編集します。
 
     ```csharp
     string viewControlTypeName = "FarmControl";
@@ -220,14 +220,14 @@ DSL ソリューションを構築して実行できるようになりました�
 
 2. Visual Studio の実験用インスタンスで、 **サンプル** ファイルを開きます。
 
-3. **FarmApp エクスプローラー**で、**ファーム**のルートノードのショートカットメニューを開き、[**新しい Goat の追加**] を選択します。
+3. **FarmApp エクスプローラー** で、**ファーム** のルートノードのショートカットメニューを開き、[**新しい Goat の追加**] を選択します。
 
      `Goat1` [ **動物** ] ビューに表示されます。
 
     > [!WARNING]
     > [**動物**] ノードではなく、[**ファーム**] ノードのショートカットメニューを使用する必要があります。
 
-4. **ファーム**のルートノードを選択し、そのプロパティを表示します。
+4. **ファーム** のルートノードを選択し、そのプロパティを表示します。
 
      フォームビューで、ファームの **名前** または **サイズ** を変更します。
 
@@ -325,6 +325,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>関連項目
 
-- [ドメイン固有言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)
-- [ドメイン固有言語をカスタマイズするコードを記述する](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Domain-Specific 言語を定義する方法](../modeling/how-to-define-a-domain-specific-language.md)
+- [Domain-Specific 言語をカスタマイズするコードを記述する](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Modeling SDK for Visual Studio - ドメイン固有言語](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

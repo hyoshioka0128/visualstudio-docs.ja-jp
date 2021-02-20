@@ -6,17 +6,17 @@ ms.date: 11/19/2018
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62961692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942556"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>手順 4: Django Web プロジェクト テンプレートを使用する
 
@@ -35,15 +35,15 @@ Visual Studio の "空の Django Web プロジェクト" テンプレート上�
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>手順 4-1: テンプレートからプロジェクトを作成する
 
-1. Visual Studio で、**ソリューション エクスプローラー**に移動して、このチュートリアルで以前に作成した **LearningDjango** ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** を選択します (または、新しいソリューションを使用する場合は、代わりに **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します)。
+1. Visual Studio で、**ソリューション エクスプローラー** に移動して、このチュートリアルで以前に作成した **LearningDjango** ソリューションを右クリックし、 **[追加]**  >  **[新しいプロジェクト]** を選択します (または、新しいソリューションを使用する場合は、代わりに **[ファイル]**  >  **[新規]**  >  **[プロジェクト]** の順に選択します)。
 
 1. 新しいプロジェクトのダイアログで、**Django Web プロジェクト** テンプレートを検索して選択し、プロジェクトに "DjangoWeb" という名前を付けて、 **[OK]** をクリックします。
 
-1. ここでも、テンプレートに *requirements.txt* ファイルが含まれているので、Visual Studio からそれらの依存関係をインストールする場所をたずねられます。 オプションを選択し、**仮想環境にインストール**して、 **[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。
+1. ここでも、テンプレートに *requirements.txt* ファイルが含まれているので、Visual Studio からそれらの依存関係をインストールする場所をたずねられます。 オプションを選択し、**仮想環境にインストール** して、 **[仮想環境の追加]** ダイアログで **[作成]** を選択して、既定値を受け入れます。
 
 1. Visual Studio による仮想環境の設定が終了したら、*readme.html* に表示された指示に従って、Django スーパー ユーザー (つまり、管理者) を作成します。 Visual Studio プロジェクトを右クリックして、 **[Python]**  >  **[Django でスーパー ユーザーを作成する]** コマンドを選択して、プロンプトの指示に従います。 アプリの認証機能を利用するときに使うので、必ずユーザー名とパスワードを記録してください。
 
-1. **ソリューション エクスプローラー**を右クリックし、**[スタートアップ プロジェクトとして設定]** を選択して、**DjangoWeb** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
+1. **ソリューション エクスプローラー** を右クリックし、**[スタートアップ プロジェクトとして設定]** を選択して、**DjangoWeb** プロジェクトを Visual Studio ソリューションの既定に設定します。 デバッガーを起動すると、太字で表示されているスタートアップ プロジェクトが実行されます。
 
     ![スタートアップ プロジェクトとして DjangoWeb プロジェクトを表示したソリューション エクスプローラー](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -61,7 +61,7 @@ Visual Studio の "空の Django Web プロジェクト" テンプレート上�
 
 1. 以降のセクションのために、アプリを実行したままにすることができます。
 
-    アプリを停止して[ソース コントロールへの変更をコミットする](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)場合、最初に**チーム エクスプローラー**で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
+    アプリを停止して [ソース コントロールへの変更をコミットする](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)場合、最初に **チーム エクスプローラー** で **[変更]** を開き、仮想環境のフォルダー (通常は **env**) を右クリックして、**[これらのローカル項目を無視]** を選択します。
 
 ### <a name="examine-what-the-template-creates"></a>テンプレートによって作成されたものを確認する
 
@@ -82,7 +82,7 @@ Visual Studio の "空の Django Web プロジェクト" テンプレート上�
 それでもやはり、既存の仮想環境を使用するには、次の手順を実行します。
 
 1. Visual Studio に依存関係をインストールするようメッセージが表示されたら、 **[I will install them myself]\(自分でインストールします\)** オプションを選択します。
-1. **ソリューション エクスプローラー**で、 **[Python 環境]** ノードを右クリックして、 **[既存の仮想環境を追加する]** を選択します。
+1. **ソリューション エクスプローラー** で、 **[Python 環境]** ノードを右クリックして、 **[既存の仮想環境を追加する]** を選択します。
 1. 仮想環境を含むフォルダーに移動して選択し、 **[OK]** をクリックします。
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>手順 4 2: プロジェクト テンプレートによって作成されたビューとページ テンプレートを理解する

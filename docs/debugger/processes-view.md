@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a52da28d01eac4f04081497888fbbfccaf4495e2
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: d48be382e222c9ca494237ae6b72bae54bb90d62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891450"
 ---
 # <a name="processes-view"></a>プロセス ビュー
 [プロセス] ビューには、お使いのシステム上でアクティブになっている全プロセスがツリー形式で表示されます。 プロセス ID とモジュール名が表示されます。 通常は実行中のプログラムに一致する特定のシステム プロセスを調べる場合、[プロセス] ビューを使用します。 プロセスはモジュール名で識別されます。あるいは、指名された "システム プロセス" となります。

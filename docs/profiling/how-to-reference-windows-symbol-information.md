@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: af194a324840bc3e8b8e67199c7e213d7dca96c9
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: c788be648b77a36b8da7027c89a7d9cb047b57d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907098"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>方法: Windows シンボル情報を参照する
 Visual Studio プロファイリング ツールは、シンボル (.*pdb*) ファイルを使用して、プログラム バイナリの関数名などのシンボル名を解決します。 次の手順を使って、ローカル コンピューター上の Windows のバージョンに適切な .*pdb* ファイルを自動的にダウンロードし、更新することができます。

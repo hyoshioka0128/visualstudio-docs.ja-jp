@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876330"
 ---
 # <a name="messages-view"></a>メッセージ ビュー
 各ウィンドウには、メッセージ ストリームが関連付けられています。 メッセージ ビュー ウィンドウには、このメッセージ ストリームが表示されます。 ウィンドウ ハンドル、メッセージ コード、およびメッセージが表示されます。 スレッドまたはプロセスのメッセージ ビューも作成できます。 これにより、特定のプロセスまたはスレッドが所有するすべてのウィンドウに送信されたメッセージを表示できます。これは、ウィンドウ初期化メッセージをキャプチャする場合に特に便利です。

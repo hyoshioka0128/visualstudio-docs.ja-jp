@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <appAddin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a22015fe6183dfd74fff54c34bc6896e1d33d217
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 427d7bc0ec59b98394b292745985be7fdf69b904
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844752"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950511"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin &gt; 要素 (Visual Studio での Office 開発)
   名前空間の **Appaddin** 要素には、 `vstov4` VSTO アドインのカスタマイズ固有の情報が格納されます。
@@ -46,16 +46,16 @@ ms.locfileid: "96844752"
 |属性|説明|
 |---------------|-----------------|
 |**application**|必須。 Microsoft Office アプリケーションを指定します。 この値は、Excel、InfoPath、Outlook、PowerPoint、Project、Visio、Word のいずれか 1 つになります。|
-|**loadBehavior**|省略可能。 既定では、 **loadBehavior** は、この値をに設定することによって有効になります。 デバッグする場合は、この値を 2 に設定して VSTO アドインを無効にできます。 詳細については、「LoadBehavior Values in the [VSTO アドイン](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。|
+|**loadBehavior**|任意。 既定では、 **loadBehavior** は、この値をに設定することによって有効になります。 デバッグする場合は、この値を 2 に設定して VSTO アドインを無効にできます。 詳細については、「LoadBehavior Values in the [VSTO アドイン](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。|
 |**keyName**|必須。 この値は、アプリケーションが VSTO アドインを読み込むのに使用するレジストリ キーの名前です。 詳細については、「 [VSTO アドインのレジストリエントリ](../vsto/registry-entries-for-vsto-add-ins.md)」を参照してください。|
 
  **Appaddin** 要素には、次の子要素があります。
 
 ### <a name="friendlyname"></a>friendlyName
- 省略可能。 **Friendlyname** 要素については [&#60;friendlyname&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)で説明されています。
+ 任意。 **Friendlyname** 要素については [&#60;friendlyname&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)で説明されています。
 
 ### <a name="description"></a>description
- 省略可能。 **Description** 要素については [&#60;description&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/description-element-office-development-in-visual-studio.md)」を説明しています。
+ 任意。 **Description** 要素については [&#60;description&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/description-element-office-development-in-visual-studio.md)」を説明しています。
 
 ### <a name="formregions"></a>formRegions
  フォーム領域を含んでいる Outlook VSTO アドインでのみ必須です。 **Formregions** 要素は [&#60;formregions&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/formregions-element-office-development-in-visual-studio.md)について説明しています。

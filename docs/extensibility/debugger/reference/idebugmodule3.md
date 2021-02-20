@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44f8e96e-9c59-4ffc-9a08-9c908a0e4de7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84db1b672a9460ef3809162a2a1433f269796046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955524"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 このインターフェイスは、シンボルの別の場所と Mycode の状態をサポートするモジュールを表します。
@@ -47,7 +47,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="remarks"></a>解説
  Visual Studio は、このインターフェイスの一般的なコンシューマーです。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
@@ -55,7 +55,7 @@ IDebugModule3 : IDebugModule2
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)
 - [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)
 - [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

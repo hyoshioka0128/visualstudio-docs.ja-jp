@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fe538a7efd884ef87ba815a6300dfa80a94dc3b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f6e29f2c65ec7503f06baca4af4c6772090d5eb8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952292"
 ---
 # <a name="how-to-troubleshoot-services"></a>方法: サービスのトラブルシューティング
 サービスを取得しようとすると、いくつかの一般的な問題が発生する可能性があります。
@@ -68,7 +68,7 @@ if (log == null) return;
 
     ツールウィンドウがユーザーコントロールまたはその他のコントロールコンテナーをホストしている場合、コンテナーは Windows コンポーネントモデルによって配置され、どのサービスにもアクセスできません [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 を呼び出して、 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> コントロールコンテナー内から VSPackage service プロバイダーを取得できます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [利用可能なサービスの一覧](../extensibility/internals/list-of-available-services.md)
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)
 - [サービスの基本事項](../extensibility/internals/service-essentials.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ca17eae2b4f21e9705788faa1a2371a066be6475
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952162"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>ソリューションでのプロジェクトの読み込みの管理
 Visual Studio ソリューションには、多数のプロジェクトを含めることができます。 Visual Studio の既定の動作では、ソリューションを開いたときにソリューション内のすべてのプロジェクトが読み込まれます。また、すべてのプロジェクトの読み込みが完了するまで、ユーザーはどのプロジェクトにもアクセスできません。 プロジェクトの読み込みプロセスが2分以上経過すると、読み込まれたプロジェクトの数とプロジェクトの合計数を示す進行状況バーが表示されます。 ユーザーは、複数のプロジェクトを含むソリューションで作業しているときにプロジェクトをアンロードできますが、この手順にはいくつかの欠点があります。アンロードされたプロジェクトは、リビルドソリューションコマンドの一部としてビルドされず、閉じられたプロジェクトの型とメンバーの IntelliSense 記述は表示されません。

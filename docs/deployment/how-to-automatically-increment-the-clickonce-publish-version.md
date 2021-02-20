@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: 686ab88a-6305-4914-a05b-fe269cc0ae1e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d39654134177f3936bd2fbe72b6786ca9cf03c
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: b84b0a8932bb9d8fd4738c2cd4924b61bb6faeb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947776"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>方法: ClickOnce の発行するバージョンを自動的にインクリメントする
 
 アプリケーションを公開するときに、プロパティを変更すると、 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` アプリケーションが更新プログラムとして発行されます。 既定では、アプリケーションを発行するたびに、Visual Studio によっての数が自動的に増加し `Revision` `Publish Version` ます。
 
-この動作は、 **プロジェクトデザイナー** の [ **発行** ] ページで無効にすることができます。
+この動作は、**プロジェクトデザイナー** の [**発行**] ページで無効にすることができます。
 
 > [!NOTE]
 > 実際に画面に表示されるダイアログ ボックスとメニュー コマンドは、アクティブな設定またはエディションによっては、ヘルプの説明と異なる場合があります。 設定を変更するには、 **[ツール]** メニューの **[設定のインポートとエクスポート]** をクリックします。 詳細については、「[リセット設定](../ide/environment-settings.md#reset-settings)」を参照してください。

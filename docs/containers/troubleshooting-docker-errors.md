@@ -3,7 +3,7 @@ title: Windows での Docker クライアント エラーのトラブルシュ�
 description: Visual Studio を使用して、Windows 上で Web アプリを作成し、Docker にデプロイする際に発生する問題のトラブルシューティングを行います。
 ms.technology: vs-azure
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9535a7d88cb375d97867092eddf969095c327329
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859529"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Docker を使用した Visual Studio 開発のトラブルシューティング
 

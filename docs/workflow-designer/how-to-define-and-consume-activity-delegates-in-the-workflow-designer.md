@@ -6,16 +6,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 48cab69de11ce006792e0fda72245048c6897acf
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0ce9e59eec2cc9229a5f1104d79337b26115c92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971623"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>ワークフロー デザイナーでアクティビティ デリゲートを定義および使用する方法
 
@@ -28,7 +28,7 @@ ms.locfileid: "96993277"
    > [!NOTE]
    > **ワークフロー** プロジェクトテンプレートが表示されない場合は、まず Visual Studio の **Windows Workflow Foundation** コンポーネントをインストールします。 詳細については、「 [Install Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)」を参照してください。
 
-3. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[新しい項目の **追加**] を選択し  >  **New Item** ます。 [ **ワークフロー** ] カテゴリを選択し、[ **アクティビティ** 項目] テンプレートを選択します。 新しいアクティビティに「 **Myforeach** 」という名前を指定し、[ **OK]** を選択します。
+3. **ソリューションエクスプローラー** でプロジェクトを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [ **ワークフロー** ] カテゴリを選択し、[ **アクティビティ** 項目] テンプレートを選択します。 新しいアクティビティに「 **Myforeach** 」という名前を指定し、[ **OK]** を選択します。
 
    アクティビティがワークフローデザイナーで開きます。
 

@@ -6,23 +6,23 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 7ca28446377c2e04766f70c9146e09dc47b8f089
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430069"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882779"
 ---
 # <a name="step-2-write-and-run-code"></a>手順 2: コードを記述して実行する
 
 **前の手順: [新しい Python プロジェクトを作成する](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-**ソリューション エクスプローラー**がプロジェクト ファイルを管理する場所であるのに対し、"*エディター*" ウィンドウは通常、ファイルの "*コンテンツ*" (ソース コードなど) を操作する場所です。 エディターは編集中のファイルの種類 を、プログラミング言語 (ファイル拡張子に基づく) などの状況から認識し、構文の色分け表示やオートコンプリートなど、その言語に適した機能を IntelliSense を使用して提供します。
+**ソリューション エクスプローラー** がプロジェクト ファイルを管理する場所であるのに対し、"*エディター*" ウィンドウは通常、ファイルの "*コンテンツ*" (ソース コードなど) を操作する場所です。 エディターは編集中のファイルの種類 を、プログラミング言語 (ファイル拡張子に基づく) などの状況から認識し、構文の色分け表示やオートコンプリートなど、その言語に適した機能を IntelliSense を使用して提供します。
 
 1. 新しい "Python Application" プロジェクトを作成すると、Visual Studio エディターで既定の *PythonApplication1.py* という名前の空のファイルが開きます。
 

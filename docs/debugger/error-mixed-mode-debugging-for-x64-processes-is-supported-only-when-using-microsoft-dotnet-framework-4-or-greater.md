@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8cfc3ac5cb606637fe5c2818750168a239a46fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871495"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>エラー :x64 プロセスの混合モード デバッグは、Microsoft .NET Framework 4 以上を使用している場合にのみサポートされます
 ネイティブ コードとマネージド コードの混合を 64 プロセスでデバッグするには、.NET Framework バージョン 4 が必要です。 .NET Framework のバージョン 4 より前のバージョンを使用した 64 ビット プロセスの混合モード デバッグはサポートされません。

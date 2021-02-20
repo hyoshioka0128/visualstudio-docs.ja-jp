@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f4fadb932078358b550e1d2c72bea292684a1954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891697"
 ---
 # <a name="message-search-dialog-box"></a>[メッセージ検索] ダイアログ ボックス
 このダイアログ ボックスを使用して、[メッセージ ビュー](../debugger/messages-view.md)で特定のメッセージのノードを検索して選択します。 このダイアログ ボックスを表示するには、メッセージ ビュー ウィンドウにフォーカスを移動します。 その後、 **[検索]** メニューから、 **[メッセージの検索]** を選択します。

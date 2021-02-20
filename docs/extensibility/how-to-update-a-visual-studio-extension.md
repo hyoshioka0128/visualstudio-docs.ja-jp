@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be22ca13fd5af8df88501835c8a030cc6469e179
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a79944fbb558e3e7a5debcfc6a64fe4b75aeb0c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946840"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>方法: Visual Studio 拡張機能を更新する
 **拡張機能と更新プログラム** を使用して、更新されたバージョンをインストールすることにより、システムの Visual Studio 拡張機能を更新できます。 更新されたバージョンの拡張機能を作成した場合は、VSIX マニフェストのバージョン番号をインクリメントして、更新されたバージョンを示すことができます。
@@ -62,6 +62,6 @@ ms.locfileid: "96995605"
     > [!NOTE]
     > Visual Studio 2015 Update 2 以降では、   >    >    >  ユーザー単位の拡張機能、すべてのユーザー拡張機能、またはその両方 (既定の設定) に対して自動更新を実行するかどうかを指定できます ([ツールオプション] [環境 **拡張機能と更新プログラム**])。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)
 - [Visual Studio 拡張機能の検索と使用](../ide/finding-and-using-visual-studio-extensions.md)

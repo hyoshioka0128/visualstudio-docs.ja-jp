@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b82eaf6ca52b04d39e9f776feca74f5bb223a0d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956101"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>標準ツールセット構成とカスタム ツールセット構成
 
@@ -78,7 +78,7 @@ Visual Studio 2017 以降のバージョンでは、MSBuild のパスにレジ�
 
  標準ツールセットがビルド要件に適合しない場合は、カスタム ツールセットを作成できます。 たとえば、ビルド ラボ シナリオで、C++ プロジェクトをビルドするために個別のシステムが必要になる場合があります。 カスタム ツールセットを使用することにより、プロジェクトの作成時や *MSBuild.exe* の実行時に `ToolsVersion` 属性にカスタム値を割り当てることができます。 これを行うことで、`$(MSBuildToolsPath)` プロパティを使用して、該当のディレクトリから *.targets* ファイルをインポートできます。また、カスタム ツールセットを使用するすべてのプロジェクトで利用できる独自のカスタム ツールセット プロパティを定義することもできます。
 
- カスタム ツールセットは、 *MSBuild.exe* の構成ファイルに指定します。ただし、MSBuild エンジンをホストするカスタム ツールを使用している場合は、そのカスタム ツールの構成ファイルに指定します。 たとえば、 *MyCustomToolset* という名前のツールセットを定義する場合は、 *MSBuild.exe* の構成ファイルに次のようなツールセット定義を含めることができます。
+ カスタム ツールセットは、*MSBuild.exe* の構成ファイルに指定します。ただし、MSBuild エンジンをホストするカスタム ツールを使用している場合は、そのカスタム ツールの構成ファイルに指定します。 たとえば、*MyCustomToolset* という名前のツールセットを定義する場合は、*MSBuild.exe* の構成ファイルに次のようなツールセット定義を含めることができます。
 
 ```xml
 <msbuildToolsets default="MyCustomToolset">

@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901346"
 ---
 # <a name="csc-task"></a>Csc タスク
 
-*csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「 [C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
+*csc.exe* をラップし、実行可能ファイル ( *.exe* ファイル)、ダイナミック リンク ライブラリ ( *.dll* ファイル)、またはコード モジュール ( *.netmodule* ファイル) を生成します。 *csc.exe* の詳細については、「[C# コンパイラ オプション](/dotnet/csharp/language-reference/compiler-options/index)」を参照してください。
 
 ## <a name="parameters"></a>パラメーター
 
@@ -60,7 +60,7 @@ ms.locfileid: "92796564"
 | `LinkResources` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem>`[]` 型のパラメーターです。<br /><br /> 出力ファイル内で .NET Framework リソースへのリンクを作成します。リソース ファイルは出力ファイル内に置かれません。<br /><br /> このパラメーターに渡される項目には、「`LogicalName`」や「`Access`」という名前のメタデータ エントリを任意で指定できます。 `LogicalName` は `/linkresource` スイッチの `identifier` パラメーターに対応し、`Access` は `accessibility-modifier` パラメーターに対応します。 詳しくは、「[-linkresource (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option)」をご覧ください。 |
 | `MainEntryPoint` | 省略可能な `String` 型のパラメーターです。<br /><br /> `Main` メソッドの場所を指定します。 詳細については、「[-main (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)」を参照してください。 |
 | `ModuleAssemblyName` | 省略可能な `String` 型のパラメーターです。<br /><br /> このモジュールが一部となるアセンブリの名前を指定します。 |
-| `NoConfig` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、 *csc.rsp* ファイルを使用してコンパイルしないようにコンパイラに指示します。 詳しくは、「[-noconfig (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)」をご覧ください。 |
+| `NoConfig` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、*csc.rsp* ファイルを使用してコンパイルしないようにコンパイラに指示します。 詳しくは、「[-noconfig (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)」をご覧ください。 |
 | `NoLogo` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、コンパイラの著作権情報が表示されません。 詳しくは、「[-nologo (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option)」をご覧ください。 |
 | `NoStandardLib` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、System 名前空間の全体を定義する *mscorlib.dll* がインポートされません。 独自の System 名前空間およびオブジェクトを定義または作成する場合は、このパラメーターを使用します。 詳しくは、「[-nostdlib (C# コンパイラ オプション)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)」をご覧ください。 |
 | `NoWin32Manifest` | 省略可能な `Boolean` 型のパラメーターです。<br /><br /> `true` の場合、既定の Win32 マニフェストを含めないでください。 |

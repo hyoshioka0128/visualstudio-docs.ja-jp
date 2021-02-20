@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598212"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006398"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>shim を使用して単体テストのためにアプリを分離する
 
@@ -30,7 +30,7 @@ ms.locfileid: "95598212"
 - Visual Studio Enterprise
 - .NET Framework プロジェクト
 ::: moniker range=">=vs-2019"
-- Visual Studio 2019 Update 6 でプレビューされた .NET Core と SDK スタイルのプロジェクトのサポートは、Update 8 で既定で有効になっています。 詳細については、「[.NET Core および SDK スタイルのプロジェクトのための Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)」を参照してください。
+- Visual Studio 2019 Update 6 でプレビューされた .NET Core、.NET 5.0、および SDK スタイルのプロジェクトのサポートは、Update 8 で既定で有効になっています。 詳細については、「[.NET Core および SDK スタイルのプロジェクトのための Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)」を参照してください。
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>例: Y2K バグ
@@ -71,7 +71,7 @@ using (ShimsContext.Create()) {
 1. **ソリューション エクスプローラー** で。 
     - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
     ::: moniker range=">=vs-2019"
-    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
+    - .NET Framework、.NET Core、または .NET 5.0 がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、または **[パッケージ]** でフェイク化するアセンブリを見つけます。
     ::: moniker-end
     - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>制限事項
 
-.NET 基底クラス ライブラリ **mscorlib**、.NET Framework の **System**、および .NET Core の **System.Runtime** のすべての型で shim を使用できるわけではありません。
+.NET 基底クラス ライブラリ **mscorlib**、.NET Framework の **System**、および .NET Core または .NET 5.0 の **System.Runtime** のすべての型で shim を使用できるわけではありません。
 
 ## <a name="see-also"></a>参照
 

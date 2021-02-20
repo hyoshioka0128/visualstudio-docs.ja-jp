@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7b6c0e786f13ff526a1b71861c040cb165bc9e4
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963433"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>ソース管理 VSPackage を実装するかどうかを判断する
 
@@ -31,7 +31,7 @@ ms.locfileid: "96329823"
 
  ソース管理プラグイン API を使用して適切にキャプチャされていない、豊富なソース管理モデルを提供するソース管理ソリューションを実装する場合は、統合パスとしてソース管理パッケージを使用することを検討してください。 これは特に、ソース管理アダプターパッケージ (ソース管理プラグインと通信する) を独自のものに置き換えて、ソース管理イベントをカスタムで処理できるようにする場合に特に適用されます。 必要なソース管理 UI が既にあり、そのエクスペリエンスをで保持する場合は、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ソース管理パッケージ] オプションを使用すると、その操作を行うことができます。 ソース管理パッケージは汎用ではなく、IDE で使用するためだけに設計されてい [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
- ソース管理のロジックと UI を柔軟かつ高度に制御できるソース管理ソリューションを実装する場合は、ソース管理パッケージの統合ルートを使用することをお勧めします。 次のようにすることができます。
+ ソース管理のロジックと UI を柔軟かつ高度に制御できるソース管理ソリューションを実装する場合は、ソース管理パッケージの統合ルートを使用することをお勧めします。 次の操作を実行できます。
 
 1. 独自のソース管理 VSPackage を登録します (「 [登録と選択」を](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)参照してください)。
 

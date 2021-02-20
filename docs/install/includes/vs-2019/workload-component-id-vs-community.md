@@ -5,17 +5,17 @@ description: ワークロード ID とコンポーネント ID を使用して�
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: dd5930911c44ac0f0ffa15d164a5d7a90b15a5fa
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0af20eab0c2124cb25e935598d8b3f16cd64121e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881897"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2019"></a>Visual Studio のコア エディター (Visual Studio Community 2019 に付属)
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1af6ce13de529fef5e16b3bc1be7053f0e1347b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 61fb53c1fc83f06c200b50b5fcf55f950a00ead6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943435"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 このインターフェイスは、非同期中断が正常に完了したことをセッションデバッグマネージャー (SDM) に通知します。
@@ -37,7 +37,7 @@ IDebugBreakEvent2 : IUnknown
 ## <a name="remarks"></a>解説
  たとえば、ユーザーは、[**デバッグ**] メニューの [**すべて中断**] を選択して、無限ループを実行しているプログラムを中断できます。 SDM は、 [Causebreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)を呼び出すことにより、プログラムを停止するように指示します。 `IDebugBreakEvent2`プログラムが最後に停止したときに、DE によって送信されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

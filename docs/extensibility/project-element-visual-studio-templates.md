@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959455"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 要素 (Visual Studio テンプレート)
 プロジェクトに追加するファイルまたはディレクトリを指定します。
@@ -66,7 +66,7 @@ ms.locfileid: "94672386"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必須の要素です。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  `Project` は、`TemplateContent` の子要素で、省略可能な要素です。
 
  要素はプロジェクトを指定 `Project` するために使用されます。したがって、はプロジェクトテンプレートでのみ有効です。

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969621"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>手順 9: レビュー、コメントの追加、およびコードのテスト
 
@@ -74,17 +74,17 @@ ms.locfileid: "96479304"
 1. アプリケーションを実行する前に、**[すべてを保存]** ツール バーのボタンを選択してアプリを保存します。これは次のスクリーンショットのようになります。
 
      ![[すべてを保存] ツール バー ボタン](../ide/media/express_iconsaveall.png)<br>
-**_[すべてを保存]_* _ _ボタン*
+***[すべてを保存]** _ _ボタン*
 
      また、アプリを保存するには、メニュー バーから **[ファイル]**  >  **[すべてを保存]** を選択します (または、**Ctrl**+**Shift**+**S** キーを押します)。 早めに、かつ頻繁に保存することをお勧めします。
 
      実行中のプログラムは次の図のようになります。
 
-     ![Picture Viewer](../ide/media/express_pictureviewerdonerun.png)<br>**_画像ビューアー_* _
+     ![Picture Viewer](../ide/media/express_pictureviewerdonerun.png)<br>***Picture Viewer***
 
 ## <a name="to-test-your-app"></a>アプリをテストするには
 
-1. _ *F5** キーを押すか、ツール バーの **[デバッグ開始]** ボタンをクリックします。
+1. **F5** キーを押すか、ツール バーの **[デバッグ開始]** をクリックします。
 
 1. **[Show a picture]** をクリックして、記述したコードを実行します。 まず、アプリで **[ファイルを開く]** ダイアログ ボックスを開きます。 ダイアログ ボックスの下部にある **[ファイルの種類]** ボックスにフィルターが表示されることを確認します。 次に、ピクチャがある場所に移動して、そのピクチャを開きます。 通常、Windows オペレーティング システムに付属しているサンプルのピクチャが *My Documents* フォルダーの *My Pictures\Sample Pictures* フォルダーにあります。
 

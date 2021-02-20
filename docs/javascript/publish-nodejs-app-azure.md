@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: c83516891a33a026399a6e5fcfc2458b5e03a0bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81445013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945436"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Node.js アプリケーションを Azure (Linux App Service) に発行する
 
@@ -41,10 +41,10 @@ Linux App Service は、Node.js アプリケーションを実行するために
 * Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
     Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、 **[変更]** を選択します。
@@ -69,7 +69,7 @@ Linux App Service は、Node.js アプリケーションを実行するために
 
     ![新しい TypeScript Express アプリを作成する](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
-    **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
+    **[基本の Azure Node.js Express 4 アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発** ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
     Visual Studio によってプロジェクトが作成され、それがソリューション エクスプローラー (右側のウィンドウ) で開かれます。
 
@@ -144,7 +144,7 @@ Visual Studio 用に GitHub を設定するには:
 
     ![Linux App Service に発行する](../javascript/media/azure-repo-and-branch.png)
 
-    同期中に**デプロイ オプション** ページが表示されます。
+    同期中に **デプロイ オプション** ページが表示されます。
 
     ![GitHub でのデプロイと同期](../javascript/media/azure-deployment-options-sync.png)
 

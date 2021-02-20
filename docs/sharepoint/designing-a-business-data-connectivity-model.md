@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b574c52b9081cc6640c5611e0759b5559e7a4f6d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8fb1aa194688533855b7c5bd1d58a4e3b97ac749
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948843"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>ビジネス データ接続モデルを設計する
   エンティティとメソッドをモデルファイルに追加することによって、Business Data Connectivity (BDC) サービスのモデルを開発できます。 エンティティは、データフィールドのコレクションを記述します。 たとえば、エンティティはデータベース内のテーブルを表すことができます。 メソッドは、エンティティによって表されるデータの追加、削除、更新などのタスクを実行します。 詳細については、「 [SharePoint へのビジネスデータの統合](../sharepoint/integrating-business-data-into-sharepoint.md)」を参照してください。
@@ -33,7 +33,7 @@ ms.locfileid: "94672653"
 ## <a name="add-methods"></a>メソッドの追加
  ユーザーがモデルに基づくリストまたは Web パーツの情報を表示、追加、更新、または削除すると、BDC サービスはモデル内のメソッドを呼び出します。 ユーザーが実行できるタスクごとに、モデルにメソッドを追加する必要があります。 [ **BDC メソッドの詳細** ] ウィンドウで、5つの基本メソッドの種類のいずれかを選択して、メソッドを作成します。 次の表では、BDC モデルの5つの基本的な方法について説明します。
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |周り|エンティティインスタンスのコレクションを返します。 ユーザーがリストまたは Web パーツを開いたときに呼び出されます。 詳細については、「 [方法: Finder メソッドを追加する](../sharepoint/how-to-add-a-finder-method.md)」を参照してください。|
 |SpecificFinder|特定のエンティティインスタンスを返します。 ユーザーがリスト内の特定の項目の詳細を表示するときに呼び出されます。 詳細については、「 [方法: 特定の Finder メソッドを追加する](../sharepoint/how-to-add-a-specific-finder-method.md)」を参照してください。|
@@ -73,7 +73,7 @@ ms.locfileid: "94672653"
 ## <a name="validate-the-model"></a>モデルを検証する
  開発中にモデルを検証することができます。 Visual Studio は、モデルが想定どおりに動作しない原因となる可能性がある問題を特定します。 これらの問題は、Visual Studio **エラー一覧** に表示されます。
 
- モデルを検証するには、BDC デザイナーのショートカットメニューを開き、[ **検証**] をクリックします。 モデルにエラーが含まれている場合は、 **エラー一覧** に表示されます。 エラーが含まれているコードにカーソルをすばやく移動するには、一覧のエラーをダブルクリックします。 別の方法として、 **f8** キーまたは **Shift** f8 キーを繰り返しクリックして、一覧のエラーを順 + **F8** 方向または逆方向に移動することもできます。
+ モデルを検証するには、BDC デザイナーのショートカットメニューを開き、[ **検証**] をクリックします。 モデルにエラーが含まれている場合は、 **エラー一覧** に表示されます。 エラーが含まれているコードにカーソルをすばやく移動するには、一覧のエラーをダブルクリックします。 別の方法として、 **f8** キーまたは **Shift** f8 キーを繰り返しクリックして、一覧のエラーを順 + 方向または逆方向に移動することもできます。
 
  検証エラーは、何らかの方法でモデルのルールに違反した場合に発生する可能性があります。 たとえば、型記述子の **IsCollection** プロパティが **true** に設定されていても、子の型記述子が存在しない場合、検証エラーが表示されます。 場合によっては、Visual Studio **エラー一覧** に表示されるいくつかのエラーを理解するために、BDC モデルの規則を参照する必要があります。 BDC モデルのルールの詳細については、「 [BDCMetadata Schema](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))」を参照してください。
 
@@ -89,7 +89,7 @@ ms.locfileid: "94672653"
 
 |タスク|オプション|
 |----------|------------|
-|モデルを BDC サービスにデプロイするには|編集|
+|モデルを BDC サービスにデプロイするには|[編集]|
 |モデルで外部コンテンツタイプ (エンティティ) を使用してリストを作成し、Web パーツします。|選択可能なクライアント|
 |エンティティデータの作成、読み取り、更新、および削除を行います。|実行|
 

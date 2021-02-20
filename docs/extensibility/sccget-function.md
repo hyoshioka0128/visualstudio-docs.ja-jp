@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700899"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965214"
 ---
 # <a name="sccget-function"></a>SccGet 関数
 この関数は、表示とコンパイルのために1つ以上のファイルのコピーを取得しますが、編集することはできません。 ほとんどのシステムでは、ファイルは読み取り専用としてタグ付けされています。
@@ -75,7 +75,7 @@ SCCRTN SccGet(
 |SCC_I_OPERATIONCANCELED|操作は完了前に取り消されました。|
 |SCC_E_NOTAUTHORIZED|ユーザーにはこの操作を実行する権限がありません。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、カウントと、取得するファイルの名前の配列を使用して呼び出されます。 IDE がフラグを渡す `SCC_GET_ALL` と、内の項目はファイルでは `lpFileNames` なくディレクトリであり、特定のディレクトリ内のソース管理下にあるすべてのファイルが取得されることを意味します。
 
  `SCC_GET_ALL`フラグをフラグと組み合わせて、 `SCC_GET_RECURSIVE` 指定したディレクトリとすべてのサブディレクトリ内のすべてのファイルを取得することもできます。
@@ -86,7 +86,7 @@ SCCRTN SccGet(
  最後に、ソース管理プラグインで初期化時にフラグが指定されていても、 `SCC_CAP_GET_NOUI` Get コマンドのユーザーインターフェイスがないことを示す場合でも、ファイルを取得するために IDE によってこの関数が呼び出されることがあります。 フラグは、IDE に [取得] メニュー項目が表示されず、プラグインが UI を提供しないことを意味します。
 
 ## <a name="rename-files-and-sccget"></a>ファイル名の変更と SccGet
- 状況: ユーザーがファイル ( *a.txt*など) をチェックアウトし、変更します。 *a.txt*をチェックインする前に、2番目のユーザーが*a.txt*の名前をソース管理データベースの*b.txt*に変更し、 *b.txt*をチェックアウトして、ファイルに何らかの変更を加え、ファイルをチェックインします。 最初のユーザーは、2番目のユーザーによって行われた変更を必要とします。そのため、最初のユーザーが *a.txt* ファイルのローカルバージョンの名前を *b.txt* に変更し、ファイルに対して get を実行します。 ただし、バージョン番号を追跡するローカルキャッシュでは、 *a.txt* の最初のバージョンがローカルに格納されていると判断されるため、ソース管理では相違点を解決できません。
+ 状況: ユーザーがファイル ( *a.txt* など) をチェックアウトし、変更します。 *a.txt* をチェックインする前に、2番目のユーザーが *a.txt* の名前をソース管理データベースの *b.txt* に変更し、 *b.txt* をチェックアウトして、ファイルに何らかの変更を加え、ファイルをチェックインします。 最初のユーザーは、2番目のユーザーによって行われた変更を必要とします。そのため、最初のユーザーが *a.txt* ファイルのローカルバージョンの名前を *b.txt* に変更し、ファイルに対して get を実行します。 ただし、バージョン番号を追跡するローカルキャッシュでは、 *a.txt* の最初のバージョンがローカルに格納されていると判断されるため、ソース管理では相違点を解決できません。
 
  ソース管理のバージョンのローカルキャッシュがソース管理データベースと同期しなくなる状況を解決するには、次の2つの方法があります。
 
@@ -94,11 +94,11 @@ SCCRTN SccGet(
 
 2. "古いものを削除" の後に "add new" を続けて実行します。 次のアルゴリズムは、これを実現するための1つの方法です。
 
-    1. [Sccquerychanges](../extensibility/sccquerychanges-function.md)関数を呼び出して、ソース管理データベース内で*b.txt*する*a.txt*の名前変更について学習します。
+    1. [Sccquerychanges](../extensibility/sccquerychanges-function.md)関数を呼び出して、ソース管理データベース内で *b.txt* する *a.txt* の名前変更について学習します。
 
-    2. ローカル *a.txt* の名前を *b.txt*に変更します。
+    2. ローカル *a.txt* の名前を *b.txt* に変更します。
 
-    3. `SccGet` *a.txt*と*b.txt*の両方に対して関数を呼び出します。
+    3. `SccGet` *a.txt* と *b.txt* の両方に対して関数を呼び出します。
 
     4. ソース管理データベースには *a.txt* が存在しないため、ローカルバージョンのキャッシュは、不足している *a.txt* バージョン情報を削除します。
 
@@ -106,6 +106,6 @@ SCCRTN SccGet(
 
     6. 更新された *b.txt* ファイルをチェックインできるようになりました。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)

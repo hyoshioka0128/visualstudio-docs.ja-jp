@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 903ffb5d3187da3bda961caca42cf7436a816b6d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e4940c6aa1d775389ab29eeb92fc29523ef115bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97728370"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872652"
 ---
 # <a name="debugging-linq"></a>LINQ のデバッグ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、統合言語クエリ (LINQ) コードのデバッグがサポートされていますが、いくつかの制約事項があります。 ステップ実行、ブレークポイントの設定、デバッガー ウィンドウでの結果の表示など、ほとんどのデバッグ機能を、LINQ ステートメントと組み合わせて使用することができます。 このトピックでは、LINQ のデバッグに伴う主要な制限事項について説明します。

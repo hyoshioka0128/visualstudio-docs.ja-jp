@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 48771a61577c5c7ca910cc3b4f8496db37ada281
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ef8f49e46c554efca89862c787fbfbe97c48c8f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959117"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定義のプロパティ
 DslDefinition プロパティは、バージョン番号付けなど *、ドメイン固有言語* 定義のプロパティを定義します。 DslDefinition プロパティは、*ドメイン固有言語デザイナー* でダイアグラムの空いている領域をクリックすると、[**プロパティ**] ウィンドウに表示されます。
@@ -35,11 +35,11 @@ DslDefinition プロパティは、バージョン番号付けなど *、ドメ�
 |パッケージ Guid|この DSL 用に生成された Visual Studio パッケージの guid。|\<none>|
 |パッケージ名前空間|この DSL 用に生成された Visual Studio パッケージの名前空間。|\<none>|
 |製品名|この DSL 用に生成された Visual Studio パッケージに登録される製品の名前。|\<none>|
-|メモ|このドメインクラスに関連付けられているメモ。|\<none>|
+|ノート|このドメインクラスに関連付けられているメモ。|\<none>|
 |説明|このドメインクラスの説明です。|\<none>|
 |表示名|このドメインクラスの生成されたデザイナーに表示される名前。|\<none>|
 |ヘルプ キーワード|このドメインクラスに関連付けられているヘルプキーワード。|\<none>|
-|Build|このドメイン固有言語定義のインクリメンタルビルド番号。|0|
+|ビルド|このドメイン固有言語定義のインクリメンタルビルド番号。|0|
 |メジャー バージョン|このドメイン固有言語定義の増分メジャービルド番号。|1|
 |マイナー バージョン|このドメイン固有言語定義の増分マイナービルド番号。|0|
 |リビジョン|このドメイン固有言語定義の増分リビジョンビルド番号。|0|

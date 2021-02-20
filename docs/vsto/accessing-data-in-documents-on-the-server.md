@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847625"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965799"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>サーバー上のドキュメントのデータにアクセスする
   Microsoft Office Word または Microsoft Office Excel のオブジェクトモデルを使用しなくても、ドキュメントレベルのカスタマイズでデータに対してプログラミングを行うことができます。 これは、Word または Excel がインストールされていないサーバー上のドキュメントに含まれているデータにアクセスできることを意味します。 たとえば、サーバー上のコード (たとえば、ページ内) では、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ドキュメント内のデータをカスタマイズし、カスタマイズされたドキュメントをエンドユーザーに送信できます。 エンドユーザーがドキュメントを開くと、ソリューションアセンブリのデータバインドコードによって、カスタマイズされたデータがドキュメントにバインドされます。 これが可能なのは、ドキュメント内のデータがユーザーインターフェイスから分離されているためです。 詳細については、「 [ドキュメントレベルのカスタマイズでのキャッシュ](../vsto/cached-data-in-document-level-customizations.md)されたデータ」を参照してください。
@@ -57,9 +57,9 @@ ms.locfileid: "96847625"
 
 3. 次のいずれかのオプションを使用して、変更されたオブジェクトをデータキャッシュにシリアル化して戻します。
 
-    - 変更を自動的にシリアル化する場合は、メソッドを使用し <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> ます。 このメソッドは **DiffGram** <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> データキャッシュ内の、、および型指定された dataset オブジェクトをシリアル化するために DiffGram 形式を使用します。 **DiffGram** 形式を指定すると、オフラインドキュメントのデータキャッシュに対する変更がサーバーに正しく送信されます。
+    - 変更を自動的にシリアル化する場合は、メソッドを使用し <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> ます。 このメソッドは <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> データキャッシュ内の、、および型指定された dataset オブジェクトをシリアル化するために DiffGram 形式を使用します。 **DiffGram** 形式を指定すると、オフラインドキュメントのデータキャッシュに対する変更がサーバーに正しく送信されます。
 
-    - キャッシュされたデータを変更するために独自のシリアル化を実行する場合は、プロパティに直接書き込むことができ <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> ます。 、 **DiffGram** <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、または型指定されたデータセットのデータに加えられた変更を使用してデータベースを更新する場合は、DiffGram 形式を指定します。 それ以外の場合、は <xref:System.Data.Common.DataAdapter> 既存の行を変更するのではなく、新しい行を追加してデータベースを更新します。
+    - キャッシュされたデータを変更するために独自のシリアル化を実行する場合は、プロパティに直接書き込むことができ <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> ます。 、  <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> <xref:System.Data.DataTable> 、または型指定されたデータセットのデータに加えられた変更を使用してデータベースを更新する場合は、DiffGram 形式を指定します。 それ以外の場合、は <xref:System.Data.Common.DataAdapter> 既存の行を変更するのではなく、新しい行を追加してデータベースを更新します。
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>現在の値を逆シリアル化せずにデータを変更する
  場合によっては、最初に現在の値を逆シリアル化せずに、キャッシュされたオブジェクトの値を変更することが必要になることがあります。 たとえば、文字列や整数などの単純型を持つオブジェクトの値を変更する場合や、 <xref:System.Data.DataSet> サーバー上のドキュメントにキャッシュされたを初期化する場合に、この操作を行うことができます。 このような場合は、最初にキャッシュされた <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> オブジェクトの現在の値を逆シリアル化せずに、メソッドを使用できます。

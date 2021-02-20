@@ -18,15 +18,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 29d0ebc33bf3df198f3ee9b3f9d80a747087341c
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: dfdf94f58c0fa7ba40d7c08309f8ea57949310df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949026"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>SharePoint のサイト列、コンテンツ タイプ、リストの作成
   Visual Studio には、 *リスト* や *コンテンツの種類* など、さまざまな基本的な SharePoint アイテムのプロジェクトアイテムテンプレートが用意されています。このテンプレートには、サイトの列 (または *フィールド*) を組み込むことができます。 コンテンツの種類とリストの新しい設計者は、これらの項目をこれまで以上に簡単に作成できるようにします。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931085"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT の最適化とデバッグ
 コードをデバッグしようとする場合、コードが最適化されて **いない** 方が簡単です。 コードを最適化すると、コンパイラとランタイムにより、出力された CPU コードをより高速に実行できるように変更が行われますが、元のソース コードへのマッピングはあまり直接的ではありません。 マッピングがあまり直接的でないと、多くの場合に、デバッガーはローカル変数の値を示すことができず、コードのステップ実行やブレークポイントが期待どおりに機能しない可能性があります。

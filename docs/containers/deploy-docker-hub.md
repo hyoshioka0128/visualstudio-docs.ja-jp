@@ -2,19 +2,19 @@
 title: ASP.NET Core Docker コンテナーを Docker Hub にデプロイする | Microsoft Docs
 description: Visual Studio コンテナー ツールを使用して、ASP.NET Core Web アプリを Docker Hub にデプロイする方法を説明します
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
-ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
+ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91829891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867660"
 ---
 # <a name="deploy-to-docker-hub"></a>Docker Hub に配置する
 
@@ -42,7 +42,7 @@ Docker Hub リポジトリを持っていない場合は、[Docker Hub](https://
 
 1. 自分のリポジトリ (組織の一部ではない) に接続する場合は、 **[個人のレポジトリに発行する]** チェックボックスをオンのままにします。 リポジトリが組織によって所有されている場合は、チェックボックスをオフにして、組織名を入力します。 接続しているリポジトリへのアクセス許可を持つ Docker アカウントの Docker ユーザー名とパスワードを入力して、 **[保存]** を選択します。
 
-   Visual Studio では、Docker Hub へのイメージのデプロイが試行されます。  成功した場合、 **[発行]** 画面に、リポジトリ イメージの URL、イメージ タグ、リポジトリ、ビルド構成 (**リリース**など) が表示されます。
+   Visual Studio では、Docker Hub へのイメージのデプロイが試行されます。  成功した場合、 **[発行]** 画面に、リポジトリ イメージの URL、イメージ タグ、リポジトリ、ビルド構成 (**リリース** など) が表示されます。
 
    ![[発行] 画面のスクリーンショット](media/deploy-docker-hub/container-tools-docker-hub-finished.png)
 

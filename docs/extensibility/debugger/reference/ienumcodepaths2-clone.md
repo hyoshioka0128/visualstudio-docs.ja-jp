@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ae54e34f316fb404a1ec125c3922584d7218bc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b31a5c0ef8a5aee53d34b110f0568d30980a2db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717873"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967489"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 現在の列挙体のコピーを別のオブジェクトとして返します。
@@ -46,7 +46,7 @@ int Clone(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  列挙体のコピーは、このメソッドが呼び出されたときの元の状態と同じ状態になります。 ただし、コピーと元の状態は別々であり、個別に変更できます。
 
 ## <a name="see-also"></a>関連項目

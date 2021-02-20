@@ -16,26 +16,26 @@ helpviewer_keywords:
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a26c8bfc29ca985a725deea6c75b14d68abb9eb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937889"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator タスク
 
-<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> タスクによって、1 つ以上のリソース ( *.jpg* 、 *.ico* 、 *.bmp* 、バイナリ形式の XAML、その他の種類の拡張子) が *.resources* ファイルに埋め込まれます。
+<xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> タスクによって、1 つ以上のリソース ( *.jpg*、 *.ico*、 *.bmp*、バイナリ形式の XAML、その他の種類の拡張子) が *.resources* ファイルに埋め込まれます。
 
 ## <a name="task-parameters"></a>タスク パラメーター
 
 |パラメーター|説明|
 |---------------|-----------------|
 |`OutputPath`|必須の **String** 型のパラメーターです。<br /><br /> 出力ディレクトリのパスを指定します。 パスが絶対パスではない場合は、プロジェクトのルート ディレクトリに対する相対パスとして扱われます。|
-|`OutputResourcesFile`|必須の **ITaskItem[]** 型の出力パラメーターです。<br /><br /> 生成される *.resources* ファイルのパスと名前を指定します。 パスが絶対パスではない場合、 *.resources* ファイルはプロジェクトのルート ディレクトリに対する相対パスに作成されます。|
+|`OutputResourcesFile`|必須の **ITaskItem[]** 型の出力パラメーターです。<br /><br /> 生成される *.resources* ファイルのパスと名前を指定します。 パスが絶対パスではない場合、*.resources* ファイルはプロジェクトのルート ディレクトリに対する相対パスに作成されます。|
 |`ResourcesFiles`|必須の **ITaskItem[]** 型のパラメーターです。<br /><br /> 生成される *.resources* ファイルに埋め込まれる 1 つ以上のリソースを指定します。|
 
 ## <a name="example"></a>例

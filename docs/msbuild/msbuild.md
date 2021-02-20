@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e42452d8ee59142c4f906d928378d1fb44bf67
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: dbf938e61cc1567beb682847821595f5ca6cc026
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905474"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft Build Engine は、アプリケーションをビルドするためのプラットフォームです。 MSBuild とも呼ばれるこのエンジンには、ビルド プラットフォームでソフトウェアを処理およびビルドする方法を制御する、プロジェクト ファイル用の XML スキーマが用意されています。 Visual Studio は MSBuild を使用しますが、MSBuild は Visual Studio に依存しません。 プロジェクト ファイルまたはソリューション ファイルに対して *msbuild.exe* を実行すると、Visual Studio がインストールされていない環境で、製品の統合とビルドを実行できます。
 
- Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj* 、 *vbproj* 、 *vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
+ Visual Studio は、マネージド プロジェクトの読み込みとビルドを行う MSBuild をホストしています。 Visual Studio のプロジェクト ファイル ( *.csproj*、*vbproj*、*vcxproj* など) には、IDE を使用してプロジェクトをビルドするときに実行される MSBuild XML コードが含まれています。 Visual Studio プロジェクトには、一般的な開発作業を行う必要なすべての設定とビルド プロセスがインポートされますが、Visual Studio 内のエディターや任意の XML エディターを使用してそれらを拡張または変更することもできます。
 
  C++ に対する MSBuild の詳細については、「[MSBuild (C++)](/cpp/build/msbuild-visual-cpp)」をご覧ください。
 

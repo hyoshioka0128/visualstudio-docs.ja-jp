@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c20c98ef423ca9bc94b7a1e0e175280d77a7b9b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956244"
 ---
 # <a name="name_match"></a>NAME_MATCH
 一致する名前の case オプションを選択します。
@@ -28,7 +28,7 @@ ms.locfileid: "80714295"
 ## <a name="syntax"></a>構文
 
 ```cpp
-typedef enum { 
+typedef enum { 
    nmNone            = 0,
    nmCaseSensitive   = 1,
    nmCaseInsensitive = 2
@@ -36,7 +36,7 @@ typedef enum { 
 ```
 
 ```csharp
-public enum NameMatchOptions { 
+public enum NameMatchOptions { 
    nmNone            = 0,
    nmCaseSensitive   = 1,
    nmCaseInsensitive = 2
@@ -53,7 +53,7 @@ public enum NameMatchOptions { 
  `nmCaseInsensitive`\
  照合する名前が大文字と小文字を区別しないことを示します。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  次のメソッドに引数として渡されます。
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
@@ -64,7 +64,7 @@ public enum NameMatchOptions { 
 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

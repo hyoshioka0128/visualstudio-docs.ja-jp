@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868856"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>手順 7: フォームへのダイアログ コンポーネントの追加
 
@@ -34,7 +34,7 @@ ms.locfileid: "96479473"
 
 1. **openFileDialog1** というコンポーネントをフォームに追加するには、**[OpenFileDialog]** をダブルクリックします。 **colorDialog1** というコンポーネントをフォームに追加するには、**ツールボックス** の **[ColorDialog]** をダブルクリックします  (このコンポーネントはチュートリアルの次の手順で使用します)。**Windows フォーム デザイナー** の下部の領域 (**Picture Viewer** フォームの下) に、次の図に示すように、追加した 2 つのダイアログ コンポーネントのそれぞれに対応するアイコンが表示されます。
 
-     ![ダイアログ コンポーネント](../ide/media/express_dialogsadded.png)<br>**_ダイアログ_* _ _コンポーネント*
+     ![ダイアログ コンポーネント](../ide/media/express_dialogsadded.png)<br>***ダイアログ** _ _コンポーネント*
 
 1. **Windows フォーム デザイナー** の下部にある領域で **[openFileDialog1]** アイコンを選択します。 2 つのプロパティを次のように設定します。
 

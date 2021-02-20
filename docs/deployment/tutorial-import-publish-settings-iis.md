@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945033"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Visual Studio で発行設定をインポートしてアプリケーションを IIS に発行する
 
@@ -40,16 +40,16 @@ ms.locfileid: "88247559"
 
 ::: moniker range=">=vs-2019"
 
-* Visual Studio 2019 をインストールし、**ASP.NET と Web 開発**ワークロードを用意する必要があります。
+* Visual Studio 2019 をインストールし、**ASP.NET と Web 開発** ワークロードを用意する必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-* Visual Studio 2017 をインストールし、ASP.NET と **Web 開発**のワークロードを用意する必要があります。
+* Visual Studio 2017 をインストールし、ASP.NET と **Web 開発** のワークロードを用意する必要があります。
 
-    Visual Studio をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
 ::: moniker-end
 
 * サーバーでは Windows Server 2012、Windows Server 2016、または Windows Server 2019 を実行している必要があります。また、発行設定ファイル ( *\*.publishsettings*) を生成するには [IIS Web Server ロール](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)を正しく設定している必要があります。 ASP.NET 4.5 または ASP.NET Core もサーバーにインストールする必要があります。 ASP.NET 4.5 を設定する方法については、「[IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)」 (ASP.NET 3.5 および ASP.NET 4.5 を使用する IIS 8.0) を参照してください。 ASP.NET Core を設定する方法については、「[IIS を使用した Windows での ASP.NET Core のホスト](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)」を参照してください。 ASP.NET Core については、記事で説明されているように、 **[マネージ コードなし]** を使用しするようにアプリケーション プールを構成してください。
@@ -60,7 +60,7 @@ ms.locfileid: "88247559"
 
     適切なテンプレートを選択します。 この例では、 **[ASP.NET Web アプリケーション (.NET Framework)]** または (C# の場合のみ) **[ASP.NET Core Web アプリケーション]** を選択し、 **[OK]** を選択します。
 
-    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクに進みます。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発**ワークロードをインストールします。
+    指定したプロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクに進みます。 Visual Studio インストーラーが起動します。 **ASP.NET と Web 開発** ワークロードをインストールします。
 
     選択したプロジェクト テンプレート (ASP.NET または ASP.NET Core) は、Web サーバーにインストールされている ASP.NET のバージョンと対応している必要があります。
 

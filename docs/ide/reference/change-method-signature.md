@@ -5,7 +5,7 @@ ms.date: 07/20/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.openlocfilehash: 01acbab7725effff5b2edbf8a80ab4f115fd2eff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86869569"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935847"
 ---
 # <a name="change-a-method-signature-refactoring"></a>メソッド シグネチャの変更リファクタリング
 
@@ -69,7 +69,7 @@ ms.locfileid: "86869569"
    | **復元** | 選択した、取り消したパラメーターを一覧に復元します
 
    > [!TIP]
-   > コミットする前に[結果を確認する](../../ide/preview-changes.md)には、 **[参照の変更のプレビュー]** チェック ボックスを使います。
+   > コミットする前に [結果を確認する](../../ide/preview-changes.md)には、 **[参照の変更のプレビュー]** チェック ボックスを使います。
 
 4. **[シグネチャの変更]** ダイアログで **[追加]** を選択すると、 **[パラメーターの追加]** ダイアログが開きます。 **[パラメーターの追加]** ダイアログでは、型名とパラメーター名を追加できます。 既定値を使用してパラメーターを必須または省略可能にすることを選択できます。 その後、呼び出しサイトで値を追加し、その値の名前付き引数を選択するか、TODO 変数を導入できます。 TODO 変数では TODO がコードに挿入されるので、各エラーにアクセスし、それぞれの呼び出しサイトを個別に確認して、何を渡すかを決定することができます。 省略可能なパラメーターについては、呼び出しサイトを完全に省略するオプションがあります。
 

@@ -6,17 +6,17 @@ ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e11d77a94c7c1d3d7b038ecea1a6c61646e371f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 3dd2a688ef70064f44caccfd7c64150b7c649769
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77027579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869129"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>試用版を延長する、またはライセンスを更新する
 
@@ -31,7 +31,7 @@ ms.locfileid: "77027579"
 1. Microsoft アカウントか、職場または学校のアカウントの資格情報を入力します。 Visual Studio は、アカウントに関連付けられている Visual Studio サブスクリプションまたは Azure DevOps 組織を検索します。
 
 > [!IMPORTANT]
-> **チーム エクスプローラー**のツール ウィンドウから Azure DevOps 組織に接続すると、Visual Studio は関連付けられているオンライン サブスクリプションを自動的に検索します。 Azure DevOps 組織に接続した場合は、Microsoft アカウントと、職場または学校アカウントの両方を使用してサインインできます。 そのユーザー アカウントのオンライン サブスクリプションが存在する場合は、Visual Studio は自動的に IDE のロックを解除します。
+> **チーム エクスプローラー** のツール ウィンドウから Azure DevOps 組織に接続すると、Visual Studio は関連付けられているオンライン サブスクリプションを自動的に検索します。 Azure DevOps 組織に接続した場合は、Microsoft アカウントと、職場または学校アカウントの両方を使用してサインインできます。 そのユーザー アカウントのオンライン サブスクリプションが存在する場合は、Visual Studio は自動的に IDE のロックを解除します。
 
 Visual Studio サブスクリプションとそのしくみの詳細については、[サブスクリプション サポートに関する FAQ](https://visualstudio.microsoft.com/subscriptions/support/) ページを参照してください。
 

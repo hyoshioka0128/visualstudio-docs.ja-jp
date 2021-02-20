@@ -9,17 +9,17 @@ ms.topic: tutorial
 ms.devlang: CSharp
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 342fb2ba0d094299b41707b93b52f3b28a3afdce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037277"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909255"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>チュートリアル: Visual Studio で XAML と C# を使用して最初のユニバーサル Windows プラットフォーム アプリを作成する
 
@@ -85,7 +85,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ### <a name="add-a-button-to-the-design-canvas"></a>デザイン キャンバスにボタンを追加する
 
-1. **ソリューション エクスプローラー**で、*MainPage.xaml* をダブルクリックして分割ビューを開きます。
+1. **ソリューション エクスプローラー** で、*MainPage.xaml* をダブルクリックして分割ビューを開きます。
 
    ::: moniker range="vs-2017"
    ![ソリューション エクスプローラーで MainPage.xaml を開く ](media/uwp-solution-explorer-MainPage-xaml.png)
@@ -94,7 +94,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    ![ソリューション エクスプローラーで MainPage.xaml を開く](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   デザイン キャンバスを含む **XAML デザイナー**と、コードを追加または変更できる **XAML エディター**の 2 つのウィンドウがあります。
+   デザイン キャンバスを含む **XAML デザイナー** と、コードを追加または変更できる **XAML エディター** の 2 つのウィンドウがあります。
 
    ![XAML エディターの XAML デザイナー ウィンドウ](media/uwp-xaml-editor.png)
 
@@ -102,7 +102,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[ツールボックス] をクリックしてツールボックスのスライド アウト ウィンドウを開く](media/uwp-toolbox.png)
 
-   (**ツールボックス**のオプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[ビュー]**  >  **[ツールバー]** の順に選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
+   (**ツールボックス** のオプションが表示されない場合は、メニュー バーから開くことができます。 これを行うには、 **[ビュー]**  >  **[ツールバー]** の順に選択します。 または、**Ctrl**+**Alt**+**X** キーを押します)。
 
 1. **[ピン設定]** アイコンをクリックして、[ツールボックス] ウィンドウをドッキングします。
 
@@ -112,17 +112,17 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[ボタン] コントロールをクリックしデザイン キャンバスまでドラッグする](media/uwp-toolbox-add-button-control.png)
 
-   **XAML エディター**でコードを参照すると、そこにもボタンが追加されていることを確認できます。
+   **XAML エディター** でコードを参照すると、そこにもボタンが追加されていることを確認できます。
 
    ![XAML エディターでボタンを表示する](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>ボタンにラベルを追加する
 
-1. **XAML エディター**で、ボタンのコンテンツ値を "Button" から "Hello World!" に変更します。
+1. **XAML エディター** で、ボタンのコンテンツ値を "Button" から "Hello World!" に変更します。
 
    ![ボタンのコンテンツ値を Hello World に変更する](media/uwp-change-button-text-in-xaml-code-window.png)
 
-1. **XAML デザイナー**のボタンも変更されることに注目してください。
+1. **XAML デザイナー** のボタンも変更されることに注目してください。
 
    ![デザイン キャンバスでボタンが Hello World に変更する](media/uwp-button-text-change-in-design-canvas.png)
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943206"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 要素 (Visual Studio テンプレート)
 
@@ -57,7 +57,7 @@ ms.locfileid: "94672426"
 
  このテキストは、テンプレートで許可されている .NET Framework の最大バージョン番号である必要があります。
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 
 `MaxFrameworkVersion` は省略可能な要素です。 `MaxFrameworkVersion`テンプレートに対してサポートされている .NET Framework バージョンの範囲を誤って制限しないように、必要な場合を除き、要素を省略する必要があります。 .NET Framework がテンプレートに適用されない場合は、省略する必要もあります。
 

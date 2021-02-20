@@ -16,15 +16,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68a35804a1523b3387061b4666cd483a9c3b0476
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 436aeb1b318aaa98d8a8cc9d8dac6baf4dd3c6c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436458"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914771"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest タスク
 
@@ -51,8 +51,8 @@ ClickOnce 配置マニフェストを生成します。 ClickOnce 配置マニ�
 | `MinimumRequiredVersion` | 省略可能な `String` 型のパラメーターです。<br /><br /> ユーザーが更新をスキップできるかどうかを指定します。 最低限必要なバージョンよりも前のバージョンをユーザーが所有している場合、ユーザーは更新をスキップできません。 この入力は、`Install` パラメーターの値が `true` である場合のみ適用されます。 |
 | `OutputManifest` | 省略可能な <xref:Microsoft.Build.Framework.ITaskItem> 型のパラメーターです。<br /><br /> 生成される出力マニフェスト ファイルの名前を指定します。 このパラメーターが指定されていない場合、出力ファイルの名前は、生成されるマニフェストの ID から推測されます。 |
 | `Platform` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの対象プラットフォームを指定します。 このパラメーターには、次の値を指定できます。<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 既定値は `AnyCPU` です。 |
-| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの名前を指定します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示する名前として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
-| `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、 **[スタート]** メニューに表示するフォルダー名として使用され、 **[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Product` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの名前を指定します。 このパラメーターが指定されていない場合、名前は、生成されるマニフェストの ID から推測されます。 この名前は、**[スタート]** メニューに表示する名前として使用され、**[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
+| `Publisher` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションの発行者を指定します。 このパラメーターが指定されていない場合、名前は、登録されているユーザー名または生成されるマニフェストの ID から推測されます。 この名前は、**[スタート]** メニューに表示するフォルダー名として使用され、**[プログラムの追加と削除]** ダイアログ ボックスに表示される名前の一部としても使用されます。 |
 | `SuiteNamel` | 省略可能な `String` 型のパラメーターです。<br /><br /> ClickOnce の配置後にアプリケーションが存在する、 **[スタート]** メニューのフォルダーの名前を指定します。 |
 | `SupportUrl` | 省略可能な `String` 型のパラメーターです。<br /><br /> **[プログラムの追加と削除]** ダイアログ ボックスで、このアプリケーションのエントリに表示されるリンクを指定します。 値には、完全修飾 URL または UNC パスを指定します。 |
 | `TargetCulture` | 省略可能な `String` 型のパラメーターです。<br /><br /> アプリケーションのカルチャを指定し、生成されるマニフェストのアセンブリ ID の `Language` フィールドを指定します。 このパラメーターを指定しなかった場合、アプリケーションは、カルチャに依存しないと仮定されます。 |

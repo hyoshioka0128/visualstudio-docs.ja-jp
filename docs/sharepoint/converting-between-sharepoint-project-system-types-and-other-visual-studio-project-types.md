@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint project service
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75f8a2072e81936c4c1c691261e301aae37b0191
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: cc0eca8005c4eee6e1eb89c410b50be5d0228ec6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946333"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換
   場合によっては、SharePoint プロジェクトシステムにオブジェクトがあり、Visual Studio オートメーションオブジェクトモデルまたは統合オブジェクトモデルで対応するオブジェクトの機能を使用する必要がある場合があります。 このような場合は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> SharePoint プロジェクトサービスのメソッドを使用して、オブジェクトを別のオブジェクトモデルに変換できます。

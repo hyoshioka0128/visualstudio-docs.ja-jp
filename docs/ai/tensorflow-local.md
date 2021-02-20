@@ -4,19 +4,19 @@ description: AI Tools for Visual Studio でローカルに TensorFlow モデル�
 keywords: AI, Visual Studio, TensorFlow, ローカル
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: eca02b74154eab5468adeabdb84efdf2839fc92e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0ceb21701958630c8b783d5b6850c5e0a0ab229a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80638743"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841381"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>TensorFlow モデルをローカルにトレーニングする
 
@@ -52,7 +52,7 @@ TensorFlow、CNTK、Theano などでディープ ラーニングを始めるた�
 
    ![ソリューションを開く](media/tensorflow-local/open-solution.png)
 
-- **ソリューション エクスプローラー**で MNIST プロジェクトを探して右クリックし、**[スタートアップ プロジェクトに設定]** を選びます。
+- **ソリューション エクスプローラー** で MNIST プロジェクトを探して右クリックし、**[スタートアップ プロジェクトに設定]** を選びます。
 
 - **[開始]** をクリックします。
 

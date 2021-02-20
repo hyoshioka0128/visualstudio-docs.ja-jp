@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947881"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook フォーム領域のカスタムアクション
   アクションには、ユーザーが Microsoft Office Outlook アイテムに応答できるようにするボタンが表示されます。 たとえば、メールアイテムに応答するには、[ **返信**]、[ **全員に返信**]、または [ **転送** ] アクションボタンをクリックします。 これらの各アクションは、新しいメールアイテムを作成し、元のアイテムの情報を使用してアイテムのフィールドを設定します。
@@ -42,7 +42,7 @@ ms.locfileid: "96848197"
 |--------------|-----------------|
 |**AddressLike**|ターゲットフォームのアドレス指定方法を指定します。|
 |**本文**|元の項目の本文をターゲットフォームに追加する方法を指定します。|
-|**有効**|カスタム動作が有効かどうかを示します。 このプロパティが **false** に設定されている場合、カスタム動作は無効になります。|
+|**Enabled**|カスタム動作が有効かどうかを示します。 このプロパティが **false** に設定されている場合、カスタム動作は無効になります。|
 |**方法**|カスタムアクションの実行時に使用可能な応答の種類を指定します。 カスタムアクションでは、フォームを送信したり、フォームを開いたりすることができます。また、フォームを送信するか開くかをユーザーに確認することもできます。|
 |**名前**|コード内でこのカスタム動作を参照するために使用できる内部名を指定します。|
 |**ShowOnRibbon**|元の項目のリボンにカスタム動作を表示するかどうかを示します。|

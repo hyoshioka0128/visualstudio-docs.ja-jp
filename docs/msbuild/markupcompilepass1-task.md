@@ -16,15 +16,15 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 775884692963da226947a8fac524a8bd440d6c8d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 89d67c083c9e40710e79568c12684ab54653a5be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904262"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966202"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 タスク
 
@@ -38,7 +38,7 @@ ms.locfileid: "92904262"
 | `AlwaysCompileMarkupFilesInSeparateDomain` | 省略可能な **Boolean** 型のパラメーターです。<br /><br /> 別の <xref:System.AppDomain> でタスクを実行するかどうかを指定します。 このパラメーターが **false** を返す場合、タスクは MSBuild と同じ <xref:System.AppDomain> 内で、より高速に実行されます。 このパラメーターが **true** を返す場合、タスクは MSBuild から分離された 2 番目の <xref:System.AppDomain> 内で実行され、動作はより低速になります。 |
 | `ApplicationMarkup` | 省略可能な **ITaskItem[]** パラメーターです。<br /><br /> アプリケーション定義 XAML ファイルの名前を指定します。 |
 | `AssembliesGeneratedDuringBuild` | 省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されるアセンブリへの参照を指定します。 たとえば、Visual Studio ソリューションには、別のプロジェクトのコンパイル済み出力を参照するプロジェクトが含まれていることがあります。 この場合、別のプロジェクトのコンパイル済み出力を **AssembliesGeneratedDuringBuild** パラメーターに追加できます。<br /><br /> 注: **AssembliesGeneratedDuringBuild** パラメーターは、ビルド ソリューションによって生成されるアセンブリの完全なセットへの参照を含んでいる必要があります。 |
-| `AssemblyName` | 必須の **String** 型のパラメーターです。<br /><br /> プロジェクトのために生成されるアセンブリの短い名前を指定します。 たとえば、プロジェクトが *WinExeAssembly.exe* という名前の Windows 実行可能ファイルを生成する場合、 **AssemblyName** パラメーターの値は **WinExeAssembly** になります。 |
+| `AssemblyName` | 必須の **String** 型のパラメーターです。<br /><br /> プロジェクトのために生成されるアセンブリの短い名前を指定します。 たとえば、プロジェクトが *WinExeAssembly.exe* という名前の Windows 実行可能ファイルを生成する場合、**AssemblyName** パラメーターの値は **WinExeAssembly** になります。 |
 | `AssemblyPublicKeyToken` | 省略可能な **String** 型のパラメーターです。<br /><br /> アセンブリの公開キー トークンを指定します。 |
 | `AssemblyVersion` | 省略可能な **String** 型のパラメーターです。<br /><br /> アセンブリのバージョン番号を指定します。 |
 | `ContentFiles` | 省略可能な **ITaskItem[]** パラメーターです。<br /><br /> 圧縮しないコンテンツ ファイルの一覧を指定します。 |
@@ -47,13 +47,13 @@ ms.locfileid: "92904262"
 | `GeneratedBamlFiles` | 省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> XAML バイナリ形式で生成されたファイルの一覧を含みます。 |
 | `GeneratedCodeFiles` | 省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> 生成されるマネージド コード ファイルの一覧を含みます。 |
 | `GeneratedLocalizationFiles` | 省略可能な **ITaskItem[]** 型の出力パラメーターです。<br /><br /> ローカライズ可能な各 XAML ファイルに対して生成されたローカリゼーション ファイルの一覧を含みます。 |
-| `HostInBrowser` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるアセンブリが XAML ブラウザー アプリケーション (XBAP) であるかどうかを指定します。 有効なオプションは、 **true** および **false** です。 **true** の場合は、ブラウザーのホスト処理をサポートするコードが生成されます。 |
+| `HostInBrowser` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるアセンブリが XAML ブラウザー アプリケーション (XBAP) であるかどうかを指定します。 有効なオプションは、**true** および **false** です。 **true** の場合は、ブラウザーのホスト処理をサポートするコードが生成されます。 |
 | `KnownReferencePaths` | 省略可能な **String[]** 型のパラメーターです。<br /><br /> ビルド処理時に変更されないアセンブリへの参照を指定します。 グローバル アセンブリ キャッシュ (GAC)、.NET インストール ディレクトリなどにあるアセンブリが含まれます。 |
-| `Language` | 必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#** 、 **VB** 、 **JScript** 、 **C++** です。 |
-| `LanguageSourceExtension` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルの拡張子に追加される拡張子を指定します。<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** パラメーターに特定の値が設定されていない場合、言語に応じた既定のソース ファイル名拡張子が使用されます。つまり、Visual Basic の場合は *.vb* 、C# の場合は *.csharp* になります。 |
-| `LocalizationDirectivesToLocFile` | 省略可能な **String** 型のパラメーターです。<br /><br /> 各ソース XAML ファイルのローカリゼーション情報を生成する方法を指定します。 有効なオプションは、 **None** 、 **CommentsOnly** 、および **All** です。 |
+| `Language` | 必須の **String** 型のパラメーターです。<br /><br /> コンパイラがサポートするマネージド言語を指定します。 有効なオプションは **C#**、**VB**、**JScript**、**C++** です。 |
+| `LanguageSourceExtension` | 省略可能な **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルの拡張子に追加される拡張子を指定します。<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> **LanguageSourceExtension** パラメーターに特定の値が設定されていない場合、言語に応じた既定のソース ファイル名拡張子が使用されます。つまり、Visual Basic の場合は *.vb*、C# の場合は *.csharp* になります。 |
+| `LocalizationDirectivesToLocFile` | 省略可能な **String** 型のパラメーターです。<br /><br /> 各ソース XAML ファイルのローカリゼーション情報を生成する方法を指定します。 有効なオプションは、**None**、**CommentsOnly**、および **All** です。 |
 | `OutputPath` | 必須の **String** 型のパラメーターです。<br /><br /> 生成されるマネージド コード ファイルおよび XAML バイナリ形式ファイルの出力先ディレクトリを指定します。 |
-| `OutputType` | 必須の **String** 型のパラメーターです。<br /><br /> プロジェクトで生成されるアセンブリの型を指定します。 有効なオプションは、 **winexe** 、 **exe** 、 **library** 、および **netmodule** です。 |
+| `OutputType` | 必須の **String** 型のパラメーターです。<br /><br /> プロジェクトで生成されるアセンブリの型を指定します。 有効なオプションは、**winexe**、**exe**、**library**、および **netmodule** です。 |
 | `PageMarkup` | 省略可能な **ITaskItem[]** パラメーターです。<br /><br /> 処理する XAML ファイルの一覧を指定します。 |
 | `References` | 省略可能な **ITaskItem[]** パラメーターです。<br /><br /> XAML ファイル内で使用される型を含む、ファイルからアセンブリへの参照の一覧を指定します。 |
 | `RequirePass2ForMainAssembly` | 省略可能な **Boolean** 型の出力パラメーターです。<br /><br /> メイン アセンブリに埋め込まれるローカル型を参照する、ローカライズできない XAML ファイルがプロジェクトに含まれているかどうかを示します。 |
@@ -65,7 +65,7 @@ ms.locfileid: "92904262"
 
 ## <a name="remarks"></a>注釈
 
-<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> タスクは通常、XAML をバイナリ形式にコンパイルしてコード ファイルを生成します。 同じプロジェクト内で定義される型への参照が XAML ファイルに含まれている場合、 **MarkupCompilePass1** は、そのバイナリ形式へのコンパイルを 2 番目のマークアップ コンパイル パス ( **MarkupCompilePass2** ) まで延期します。 このようなファイルでは、参照しているローカル定義の型がコンパイルされるまで待つ必要があるため、コンパイルを延期する必要があります。 ただし、XAML ファイルに `x:Class` 属性がある場合、<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> によってこのファイルの言語固有のコード ファイルが生成されます。
+<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> タスクは通常、XAML をバイナリ形式にコンパイルしてコード ファイルを生成します。 同じプロジェクト内で定義される型への参照が XAML ファイルに含まれている場合、**MarkupCompilePass1** は、そのバイナリ形式へのコンパイルを 2 番目のマークアップ コンパイル パス (**MarkupCompilePass2**) まで延期します。 このようなファイルでは、参照しているローカル定義の型がコンパイルされるまで待つ必要があるため、コンパイルを延期する必要があります。 ただし、XAML ファイルに `x:Class` 属性がある場合、<xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> によってこのファイルの言語固有のコード ファイルが生成されます。
 
 XAML ファイルに `x:Uid` 属性を使用する要素が含まれている場合、そのファイルはローカライズ可能です。
 
@@ -100,7 +100,7 @@ XAML ファイルは、`clr-namespace` 値を使用して現在のプロジェ�
 
 ## <a name="example"></a>例
 
-3 つの " *ページ* " XAML ファイルをバイナリ形式ファイルに変換する方法を次の例に示します。 " *ページ 1* " には、`Class1` という型への参照が含まれます。この型はプロジェクトのルート名前空間内にあるため、このマークアップ コンパイル パスではバイナリ形式ファイルに変換されません。 代わりに、[GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) が実行され、次に [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md) が実行されます。
+3 つの "*ページ*" XAML ファイルをバイナリ形式ファイルに変換する方法を次の例に示します。 "*ページ 1*" には、`Class1` という型への参照が含まれます。この型はプロジェクトのルート名前空間内にあるため、このマークアップ コンパイル パスではバイナリ形式ファイルに変換されません。 代わりに、[GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md) が実行され、次に [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md) が実行されます。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

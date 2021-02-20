@@ -19,15 +19,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 05a17b373f409e91f9360cbd3ba92f88bd3f48e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847807"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970401"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Office アプリケーションおよびプロジェクトの種類別の使用可能な機能
   Visual Studio には、次のように、Microsoft Office アプリケーションのさまざまなビジネス シナリオをサポートするプロジェクト テンプレートがいくつか用意されています。
@@ -52,7 +52,7 @@ ms.locfileid: "96847807"
 ## <a name="features-available-in-different-project-types"></a>さまざまな種類のプロジェクトで使用できる機能
  プロジェクトの種類ごとに異なる機能を次の表に示します。
 
-|機能|機能を提供するプロジェクトの種類|参考資料|
+|機能|機能を提供するプロジェクトの種類|関連項目|
 |-------------|--------------------------------------------|---------------------|
 |[操作] ウィンドウ。|ドキュメントレベルのプロジェクト。|[操作ウィンドウの概要](../vsto/actions-pane-overview.md)|
 |ClickOnce 配置。|VS およびドキュメントレベルのプロジェクト。|[Office ソリューションの配置](../vsto/deploying-an-office-solution.md)|

@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801582"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920620"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Cookiecutter 拡張機能の使用
 
@@ -69,7 +69,7 @@ Cookiecutter のホーム ページにはテンプレートの一覧が次のグ
 
 オプションを設定したら、 **[作成]** を選択してコードを生成します (出力フォルダーが空ではない場合は警告が表示されます)。 テンプレートの出力に慣れていてファイルを上書きしても問題ない場合は、警告を無視してかまいません。 それ以外の場合は、 **[キャンセル]** を選択し、空のフォルダーを指定して、作成したファイルを空でない出力フォルダーに手動でコピーします。
 
-ファイルが正常に作成されると、ファイルを**ソリューション エクスプローラー**で開くためのオプションが Cookiecutter に表示されます。
+ファイルが正常に作成されると、ファイルを **ソリューション エクスプローラー** で開くためのオプションが Cookiecutter に表示されます。
 
 ![ソリューション エクスプローラーのコマンドが表示された Cookiecutter](media/cookiecutter-files-created.png)
 
@@ -135,7 +135,7 @@ Cookiecutter には、ファイルの生成後に任意の Python コードを�
 
 たとえば、Visual Studio のエディターまたは Web ブラウザーでファイルを開くか、ユーザーに仮想環境を作成してパッケージの要件をインストールするように求める Visual Studio UI をトリガーする必要があるとします。
 
-これらのシナリオを可能にするために、Visual Studio は、生成されたファイルをユーザーが**ソリューション エクスプローラー**で開いた後または既存のプロジェクトにファイルが追加された後に実行するコマンドについて説明した拡張メタデータを *cookiecutter.json* 内で探します。 (前述したように、ユーザーはテンプレート オプションの **[Run additional tasks on completion (完了時に追加タスクを実行)]** をオフにすることでタスクを実行しないよう選択できます)。
+これらのシナリオを可能にするために、Visual Studio は、生成されたファイルをユーザーが **ソリューション エクスプローラー** で開いた後または既存のプロジェクトにファイルが追加された後に実行するコマンドについて説明した拡張メタデータを *cookiecutter.json* 内で探します。 (前述したように、ユーザーはテンプレート オプションの **[Run additional tasks on completion (完了時に追加タスクを実行)]** をオフにすることでタスクを実行しないよう選択できます)。
 
 例:
 
@@ -156,7 +156,7 @@ Cookiecutter には、ファイルの生成後に任意の Python コードを�
 ]
 ```
 
-コマンドは名前で指定し、Visual Studio のローカライズされたインストールで動作するように、ローカライズされていない (英語の) 名前を使用する必要があります。 Visual Studio の**コマンド** ウィンドウで、コマンド名のテストと検索を行うことができます。
+コマンドは名前で指定し、Visual Studio のローカライズされたインストールで動作するように、ローカライズされていない (英語の) 名前を使用する必要があります。 Visual Studio の **コマンド** ウィンドウで、コマンド名のテストと検索を行うことができます。
 
 1 つの引数を渡す場合は、前の例のように文字列として指定します。
 
@@ -187,7 +187,7 @@ Cookiecutter には、ファイルの生成後に任意の Python コードを�
 
 引数は他の Cookiecutter 変数を参照できます。 上の例では、生成されたファイルへの絶対パスを作成するために内部の `_output_folder_path` 変数が使用されています。
 
-`Python.InstallProjectRequirements` コマンドは、既存のプロジェクトにファイルを追加する場合にのみ機能します。 **ソリューション エクスプローラー**の Python プロジェクトによって処理されますが、**ソリューション エクスプローラー** - **フォルダー ビュー**の表示中はメッセージを受け取るプロジェクトがないため、この制限が存在します。 今後のリリースでこの制限が解消され、**フォルダー ビュー**のサポート全般が改善される可能性があります。
+`Python.InstallProjectRequirements` コマンドは、既存のプロジェクトにファイルを追加する場合にのみ機能します。 **ソリューション エクスプローラー** の Python プロジェクトによって処理されますが、**ソリューション エクスプローラー** - **フォルダー ビュー** の表示中はメッセージを受け取るプロジェクトがないため、この制限が存在します。 今後のリリースでこの制限が解消され、**フォルダー ビュー** のサポート全般が改善される可能性があります。
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 

@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ae76bac3f6163e8b4434878017df07f1341828
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 36ab20854adb952d098f71904cdd3cb092e27ac9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434325"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955685"
 ---
 # <a name="compensate-activity-designer"></a>Compensate アクティビティ デザイナー
 
@@ -31,18 +31,18 @@ ms.locfileid: "94434325"
 
 ### <a name="using-the-compensate-activity-designer"></a>Compensate アクティビティ デザイナーの使用
 
-**Compensate** アクティビティデザイナーは、 **ツールボックス** の [ **トランザクション** ] カテゴリにあります。 **ツールボックス** を開くには、ワークフローデザイナーの左側にある [ **ツールボックス** ] タブを選択します。 または、[ **表示** ] メニューの [ **ツールボックス** ] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
+**Compensate** アクティビティデザイナーは、**ツールボックス** の [**トランザクション**] カテゴリにあります。 **ツールボックス** を開くには、ワークフローデザイナーの左側にある [**ツールボックス**] タブを選択します。 または、[**表示**] メニューの [**ツールボックス**] を選択するか、 **Ctrl** + **Alt** + **X** キーを押します。
 
-**Compensate** アクティビティデザイナーは、[ **ツールボックス** ] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Compensate> と、補正の既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 この <xref:System.Activities.Activity.DisplayName%2A> 値は、 **補正** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
+**Compensate** アクティビティデザイナーは、[**ツールボックス**] からドラッグして、アクティビティが配置されている任意の場所 (内など) にワークフローデザイナー画面にドロップできます <xref:System.Activities.Statements.Sequence> 。 アクティビティデザイナーを削除する <xref:System.Activities.Statements.Compensate> と、補正の既定のを持つアクティビティが作成さ <xref:System.Activities.Activity.DisplayName%2A> れます。 この <xref:System.Activities.Activity.DisplayName%2A> 値は、 **補正** アクティビティデザイナーのヘッダー、またはプロパティグリッドの [ **DisplayName** ] ボックスで編集できます。
 
 ### <a name="the-compensate-properties"></a>Compensate のプロパティ
 
 次の表に、<xref:System.Activities.Statements.CancellationScope> のプロパティと、デザイナーでのその使用方法を示します。 プロパティは、 <xref:System.Activities.Activity.DisplayName%2A> プロパティグリッドまたはワークフローデザイナー画面で編集できます。 <xref:System.Activities.Statements.Compensate.Target%2A>プロパティグリッドでプロパティを編集します。
 
-|プロパティ名|必須|使用法|
+|プロパティ名|必須|使用|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|×|<xref:System.Activities.Statements.Compensate> アクティビティの表示名を指定します (省略可能)。 既定値は Compensate です。|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|○|この <xref:System.Activities.InArgument%601> アクティビティの <xref:System.Activities.Statements.CompensationToken> を含む <xref:System.Activities.Statements.Compensate> を指定します。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Compensate> アクティビティの表示名を指定します (省略可能)。 既定値は Compensate です。|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|True|この <xref:System.Activities.InArgument%601> アクティビティの <xref:System.Activities.Statements.CompensationToken> を含む <xref:System.Activities.Statements.Compensate> を指定します。|
 
 ## <a name="see-also"></a>関連項目
 

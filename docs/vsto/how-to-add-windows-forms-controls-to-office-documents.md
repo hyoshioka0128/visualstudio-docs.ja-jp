@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846780"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954151"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>方法: Office ドキュメントに Windows フォームコントロールを追加する
   Windows フォーム コントロールは、デザイン時にドキュメント レベルのプロジェクトの Microsoft Office Excel および Microsoft Office Word のドキュメントに追加できます。 実行時には、ドキュメントレベルのカスタマイズと VSTO アドインにコントロールを追加できます。たとえば、 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> ユーザーがオプションの一覧から選択できるように、ワークシートにコントロールを追加できます。
@@ -100,7 +100,7 @@ ms.locfileid: "96846780"
     > Excel 内でコントロールを選択すると、 **数式バー** に  " **=EMBED("WinForms.Control.Host","")**" と表示されます。 このテキストは必要なので、削除しないでください。
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> 実行時にドキュメントレベルのプロジェクトにコントロールを追加する
- Windows フォーム コントロールは、実行時にプログラムを使用してドキュメントに追加できます。 Word では、`ThisDocument` クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> プロパティのメソッドを使用します。 Excel では、 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n クラスのプロパティのメソッドを使用し `Sheet` *n* ます。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
+ Windows フォーム コントロールは、実行時にプログラムを使用してドキュメントに追加できます。 Word では、`ThisDocument` クラスの <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> プロパティのメソッドを使用します。 Excel では、 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n クラスのプロパティのメソッドを使用し `Sheet` ます。 各メソッドにはいくつかのオーバーロードがあり、それらを使用してさまざまな方法でコントロールの場所を指定できます。
 
  実行時にドキュメントに Windows フォーム コントロールを追加した場合、ドキュメントが閉じられると、コントロールはドキュメント内に保持されません。 次にドキュメントを開くときに、コントロールを再作成できます。 詳細については、「 [実行時に Office ドキュメントにコントロールを追加する](../vsto/adding-controls-to-office-documents-at-run-time.md)」を参照してください。
 

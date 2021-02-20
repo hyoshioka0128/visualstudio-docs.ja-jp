@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 34a66e9c2728798330b52f87afe8ecdea8733508
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205373"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906334"
 ---
 # <a name="windows-view"></a>ウィンドウ ビュー
 最初に Spy++ を開いたとき、ウィンドウ ビューには、システム内のすべてのウィンドウとコントロールのツリーが表示されます。 ウィンドウ ハンドルとクラス名が表示されます。 現在のデスクトップ ウィンドウがツリーの一番上にあります。 その他すべてのウィンドウはデスクトップの子であり、標準のウィンドウ階層に従って一覧表示されます。 兄弟ウィンドウは、その親の下でインデントされ、展開可能な一覧として表示されます。

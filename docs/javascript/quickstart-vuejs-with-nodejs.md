@@ -7,17 +7,17 @@ ms.topic: quickstart
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 882c3a148164ab88412a817abd72d0608fadf9b2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee855700502469783a8eab60bb24a28c2e30a9c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950641"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート:Visual Studio を使用して初めての Vue.js アプリを作成する
 
@@ -31,10 +31,10 @@ ms.locfileid: "81744983"
 * Visual Studio および Node.js 開発ワークロードをインストールしている必要があります。
 
     ::: moniker range=">=vs-2019"
-    Visual Studio 2019 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2019 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Visual Studio 2017 をまだインストールしていない場合は、 [Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/)  ページに移動し、無料試用版をインストールしてください。
+    Visual Studio 2017 をまだインストールしていない場合は、[Visual Studio のダウンロード](https://visualstudio.microsoft.com/downloads/) ページに移動し、無料試用版をインストールしてください。
     ::: moniker-end
 
     Visual Studio は既にあり、ワークロードだけをインストールする必要がある場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動すると、Visual Studio インストーラーが開きます。 **[Node.js 開発]** ワークロードを選択し、 **[変更]** を選択します。
@@ -69,7 +69,7 @@ ms.locfileid: "81744983"
 
     ![Vue.js テンプレート](../javascript/media/vuejs-template.png)
     ::: moniker-end
-    **[基本的な Vue.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発**ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
+    **[基本的な Vue.js Web アプリケーション]** プロジェクト テンプレートが表示されない場合は、**Node.js 開発** ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
 
     Visual Studio によって新しいプロジェクトが作成されます。 ソリューション エクスプローラーで新しいプロジェクトが開きます (右ウィンドウ)。
 
@@ -81,7 +81,7 @@ ms.locfileid: "81744983"
 
 ## <a name="explore-the-ide"></a>IDE を探索する
 
-1. 右ウィンドウの**ソリューション エクスプローラー**を見てください。
+1. 右ウィンドウの **ソリューション エクスプローラー** を見てください。
 
      ![Vue.js ソリューション](../javascript/media/vuejs-solution.png)
 
@@ -136,7 +136,7 @@ JavaScript Vue.js プロジェクト テンプレート (および TypeScript �
 
 1. Web ブラウザーを閉じます。
 
-このクイック スタートは完了しました。 Visual Studio IDE と Vue.js について少しはご理解いただけたかと思います。 機能についてさらに深く理解したい場合は、目次の**チュートリアル** セクションに示されているチュートリアルを続行してください。
+このクイック スタートは完了しました。 Visual Studio IDE と Vue.js について少しはご理解いただけたかと思います。 機能についてさらに深く理解したい場合は、目次の **チュートリアル** セクションに示されているチュートリアルを続行してください。
 
 ## <a name="next-steps"></a>次のステップ
 

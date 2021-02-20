@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed3ba5453976e3f3976aba43bc296c040a86b7a5
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911503"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport コマンド ライン ツールは、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] プロファイリング ツールのプロファイル データ ファイルを使用してレポートを作成するために使用されます。 既定のレポート形式は .*csv* ファイルです。

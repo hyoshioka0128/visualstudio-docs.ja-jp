@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598563"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006439"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>スタブを使用して単体テストでアプリケーションの各部分を相互に分離する
 
@@ -152,7 +152,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. **ソリューション エクスプローラー** で。 
     - 古い .NET Framework プロジェクト (非 SDK スタイル) の場合は、単体テスト プロジェクトの **[参照]** ノードを展開します。
     ::: moniker range=">=vs-2019"
-    - .NET Framework または .NET Core がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、 **[パッケージ]** からフェイク化するアセンブリを見つけます。
+    - .NET Framework、.NET Core、または .NET 5.0 がターゲットである SDK スタイルのプロジェクトの場合は、 **[依存関係]** ノードを展開し、 **[アセンブリ]** 、 **[プロジェクト]** 、または **[パッケージ]** でフェイク化するアセンブリを見つけます。
     ::: moniker-end
     - Visual Basic で作業している場合、 **[参照]** ノードを表示するには、**ソリューション エクスプローラー** ツールバーの **[すべてのファイルを表示]** を選択します。
 

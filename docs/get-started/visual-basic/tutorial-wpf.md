@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85419212"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944369"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>チュートリアル: Visual Basic で単純なアプリケーションを作成する
 
@@ -45,7 +45,7 @@ Visual Studio を初めて開くときには、サインインが求められま
 
 ![設定の選択ダイアログ ボックス](../media/exploreide-settings.png)
 
-Visual Studio を起動すると、ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **スタート ページ**が表示されます。 ソリューションかプロジェクトが読み込まれると、 **[スタート ページ]** がある領域にエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
+Visual Studio を起動すると、ツール ウィンドウ、メニューとツール バー、メイン ウィンドウ領域が表示されます。 ツール ウィンドウは、アプリケーション ウィンドウの左側および右側にドッキングされており、上部には **クイック起動**、メニュー バー、および標準ツール バーがあります。 アプリケーション ウィンドウの中央には、 **スタート ページ** が表示されます。 ソリューションかプロジェクトが読み込まれると、 **[スタート ページ]** がある領域にエディターとデザイナーが表示されます。 アプリケーションを開発する場合は、ほとんどの時間をこの中央の領域での作業に費やします。
 
 ![全般設定が適用された Visual Studio 2017 IDE](../media/exploreide-idewithgeneralsettings.png)
 
@@ -71,7 +71,7 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
      ![Visual Studio の [新しいプロジェクト] ダイアログの WPF アプリ テンプレート](media/exploreide-newproject-vb.png)
 
-Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、**ソリューション エクスプローラー**は各種ファイルを表示します。 **WPF デザイナー**には、*MainWindow.xaml* のデザイン ビューと XAML ビューが分割ビューで表示されます。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。 ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 次の項目が **ソリューション エクスプローラー**に表示されます。
+Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、**ソリューション エクスプローラー** は各種ファイルを表示します。 **WPF デザイナー** には、*MainWindow.xaml* のデザイン ビューと XAML ビューが分割ビューで表示されます。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。 ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 次の項目が **ソリューション エクスプローラー** に表示されます。
 
 ![HelloWPFApp ファイルを読み込んだソリューション エクスプローラー](../media/exploreide-hellowpfappfiles.png)
 
@@ -87,7 +87,7 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 3. 次の画面で、プロジェクトに **HelloWPFApp** という名前を付けて、 **[作成]** を選択します。
 
-Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、**ソリューション エクスプローラー**は各種ファイルを表示します。 **WPF デザイナー**には、*MainWindow.xaml* のデザイン ビューと XAML ビューが分割ビューで表示されます。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。 ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 次の項目が **ソリューション エクスプローラー**に表示されます。
+Visual Studio は HelloWPFApp というプロジェクトとソリューションを作成し、**ソリューション エクスプローラー** は各種ファイルを表示します。 **WPF デザイナー** には、*MainWindow.xaml* のデザイン ビューと XAML ビューが分割ビューで表示されます。 分割線をスライドして、それぞれのビューの表示範囲を増減できます。 ビジュアル ビューか XAML ビューの一方のみを表示することも選択できます。 次の項目が **ソリューション エクスプローラー** に表示されます。
 
 ![HelloWPFApp ファイルを読み込んだソリューション エクスプローラー](../media/vs-2019/exploreide-hellowpfappfiles.png)
 
@@ -100,11 +100,11 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>MainWindow.xaml の名前を変更する
 
-それでは、MainWindow に具体的な名前を付けましょう。 **ソリューション エクスプローラー**で、*MainWindow.xaml* を右クリックし、 **[名前の変更]** を選択します。 ファイルの名前を *Greetings.xaml* に変更します。
+それでは、MainWindow に具体的な名前を付けましょう。 **ソリューション エクスプローラー** で、*MainWindow.xaml* を右クリックし、 **[名前の変更]** を選択します。 ファイルの名前を *Greetings.xaml* に変更します。
 
 ## <a name="design-the-user-interface-ui"></a>ユーザー インターフェイス (UI) のデザイン
 
-デザイナーを開いていない場合は、**ソリューション エクスプローラー**で *Greetings.xaml* を選択し、**Shift**+**F7** キーを押してデザイナーを開きます。
+デザイナーを開いていない場合は、**ソリューション エクスプローラー** で *Greetings.xaml* を選択し、**Shift**+**F7** キーを押してデザイナーを開きます。
 
 このアプリケーションに 3 種類のコントロール (<xref:System.Windows.Controls.TextBlock> コントロール、2 つの <xref:System.Windows.Controls.RadioButton> コントロール、および <xref:System.Windows.Controls.Button> コントロール) を追加します。
 
@@ -244,7 +244,7 @@ IsChecked="True"
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>スタートアップ URI として Greetings.xaml を指定する
 
-1. **ソリューション エクスプローラー**で、*Application.xaml* ファイルを開きます。
+1. **ソリューション エクスプローラー** で、*Application.xaml* ファイルを開きます。
 
 2. `StartupUri="MainWindow.xaml"` を `StartupUri="Greetings.xaml"` に変更し、変更を保存します。
 

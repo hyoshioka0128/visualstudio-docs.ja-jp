@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc0c8642-1a76-4fda-a309-7018a34883c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba732b698f7372772142fda73e71d9e22aa443a6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b7116b9e675605863805fb413340ea8b45ec608
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734498"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947113"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 クラスで特定のインターフェイスが定義されているかどうかを判断します。
@@ -28,7 +28,7 @@ ms.locfileid: "80734498"
 ## <a name="syntax"></a>構文
 
 ```cpp
-HRESULT DoesInterfaceExist( 
+HRESULT DoesInterfaceExist( 
    LPCOLESTR pszInterfaceName
 );
 ```

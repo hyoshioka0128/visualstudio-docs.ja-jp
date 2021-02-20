@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07d1c52e2b1dd8fe452d4c24f8dc6db6b32334a5
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: a542150b1f06fd0571fc55d85785cfea870cb406
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903391"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971558"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 要素 (Visual Studio テンプレート)
 テンプレートウィザードをカスタマイズするための登録要素が含まれています。
@@ -47,7 +47,7 @@ ms.locfileid: "94903391"
 
 |要素|説明|
 |-------------|-----------------|
-|[アセンブリ](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> グローバルアセンブリキャッシュに表示されるアセンブリの名前または厳密な名前を指定します。 要素には、少なくとも1つの要素が必要 `Assembly` `WizardExtension` です。|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> グローバルアセンブリキャッシュに表示されるアセンブリの名前または厳密な名前を指定します。 要素には、少なくとも1つの要素が必要 `Assembly` `WizardExtension` です。|
 |[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|必須の要素です。<br /><br /> インターフェイスを実装するクラスの完全修飾名 `IWizard` 。 要素には、少なくとも1つの要素が必要 `FullClassName` `WizardExtension` です。|
 
 ### <a name="parent-elements"></a>親要素

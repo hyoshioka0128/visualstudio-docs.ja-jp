@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43557e5d81e5140967a1189e57a350595d0f7220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721697"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959624"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 この登録済みインターフェイスにより、セッションデバッグマネージャー (SDM) は、 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) インターフェイスを通じて "公開" されたプログラムに関する情報を取得できます。
@@ -36,17 +36,17 @@ IDebugProgramProvider2 : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|メソッド|説明|
+|Method|説明|
 |------------|-----------------|
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|さまざまな方法でフィルター処理された、実行中のプログラムに関する情報を取得します。|
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|特定のプロセス ID を指定して、プログラムノードを取得します。|
 |[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|特定の種類のプロセスに関連付けられているプロバイダーイベントを監視するためのコールバックを確立します。|
 |[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|DE によって必要とされる言語固有のリソースのロケールを設定します。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
 通常、プロセスでは、このインターフェイスを使用して、そのプロセスで実行されているプログラムに関する情報を確認します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
@@ -83,6 +83,6 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 ```
 
 ## <a name="see-also"></a>関連項目
-- [コア インターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
+- [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

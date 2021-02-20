@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3c8d5ca5b941a7ae6e6ebada21f1eafaef2b6f43
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 637d46eaa9ac9306d63befed1c011c278b46af24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915311"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952721"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>チュートリアル: SharePoint ワークフロー ソリューションの作成とデバッグ
   このチュートリアルでは、基本的なシーケンシャルワークフローテンプレートを作成する方法について説明します。 ワークフローは、共有ドキュメントライブラリのプロパティをチェックして、ドキュメントがレビューされているかどうかを確認します。 ドキュメントがレビューされている場合は、ワークフローが終了します。
@@ -91,7 +91,7 @@ ms.locfileid: "96915311"
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]を起動します。
 
-2. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  **Project** 、[**新しいプロジェクト**] ダイアログボックスを表示します。
+2. メニューバーで [**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >   、[**新しいプロジェクト**] ダイアログボックスを表示します。
 
 3. [ **Visual C#** ] または [ **Visual Basic**] の下にある [ **SharePoint** ] ノードを展開し、[ **2010** ] ノードを選択します。
 
@@ -184,7 +184,7 @@ ms.locfileid: "96915311"
     Boolean workflowPending = true;
     ```
 
-2. 次のメソッドを `Workflow1` クラスに追加します。 このメソッドは、ドキュメント `Document Status` リストのプロパティの値をチェックして、ドキュメントが確認されているかどうかを確認します。 `Document Status`プロパティがに設定されている場合、 `Review Complete` `checkStatus` メソッドはフィールドを false に設定して、 `workflowPending` ワークフローが完了する準備ができていることを示します。 **false**
+2. 次のメソッドを `Workflow1` クラスに追加します。 このメソッドは、ドキュメント `Document Status` リストのプロパティの値をチェックして、ドキュメントが確認されているかどうかを確認します。 `Document Status`プロパティがに設定されている場合、 `Review Complete` `checkStatus` メソッドはフィールドを false に設定して、 `workflowPending` ワークフローが完了する準備ができていることを示します。 
 
     ```vb
     Private Sub checkStatus()

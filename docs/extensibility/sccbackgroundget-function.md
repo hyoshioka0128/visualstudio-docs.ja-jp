@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952123"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 関数
 この関数は、指定された各ファイルを、ユーザー操作なしでソース管理から取得します。
@@ -67,11 +67,11 @@ SCCRTN SccBackgroundGet(
 |SCC_E_BACKGROUNDGETINPROGRESS|バックグラウンドでの取得が既に進行中である (ソース管理プラグインは、同時バッチ操作をサポートしていない場合にのみ、これを返す必要があります)。|
 |SCC_I_OPERATIONCANCELED|操作が完了する前に取り消されました。|
 
-## <a name="remarks"></a>注釈
+## <a name="remarks"></a>解説
  この関数は、ソース管理プラグインが読み込まれたスレッドとは異なるスレッド上で常に呼び出されます。 この関数は、完了するまでを返すことは想定されていません。ただし、ファイルの複数のリストを使用して複数回呼び出すことができます。
 
  引数の使用 `dwFlags` は [Sccget](../extensibility/sccget-function.md)と同じです。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)
