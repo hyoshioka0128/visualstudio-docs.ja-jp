@@ -22,7 +22,7 @@ ms.locfileid: "99920747"
 
 **前の手順: [パッケージのインストールと、Python 環境の管理](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
-Visual Studio には、ローカルの Git リポジトリと、GitHub や Azure Repos などのサービス上のリモート リポジトリを直接統合できます。 この統合には、リポジトリの複製、変更のコミット、分岐の管理が含まれます。
+Visual Studio には、ローカルの Git リポジトリと、GitHub や Azure Repos などのサービス上のリモート リポジトリを直接統合できます。 この統合には、リポジトリのクローン、変更のコミット、分岐の管理が含まれます。
 
 この記事では、既存のプロジェクト向けのローカルの Git リポジトリを作成することの概要について説明し、Visual Studio の Git に関連するいくつかの機能を理解できるようにします。
 
