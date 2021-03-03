@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844334"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683232"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Visual Studio での Azure クラウド サービスまたは仮想マシンのデバッグ
 
@@ -21,7 +21,7 @@ Visual Studio には、Azure クラウド サービスと仮想マシンのデ�
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>ローカル コンピューターでクラウド サービスをデバッグする
 
-Azure コンピューティング エミュレーターを使用してローカル コンピューターでクラウド サービスをデバッグすれば、時間とコストの節約になります。 サービスをデプロイする前にローカルでデバッグすると、コンピューティング時間の料金を支払うことなく、信頼性とパフォーマンスを改善できます。 ただし、一部には Azure でクラウド サービスを実行した場合にのみ発生するエラーもあります。 サービスを発行し、デバッガーをロール インスタンスにアタッチするときに、リモート デバッグを有効にすると、このようなエラーをデバッグできます。
+Azure コンピューティングエミュレーターを使用してローカルコンピューターでクラウドサービスをデバッグすると、時間とコストを節約できます。 サービスをデプロイする前にローカルでデバッグすると、コンピューティング時間の料金を支払うことなく、信頼性とパフォーマンスを改善できます。 ただし、一部には Azure でクラウド サービスを実行した場合にのみ発生するエラーもあります。 サービスを発行し、デバッガーをロール インスタンスにアタッチするときに、リモート デバッグを有効にすると、このようなエラーをデバッグできます。
 
 エミュレーターは、Azure コンピューティング サービスをシミュレートし、ローカル環境で動作するので、クラウド サービスのテストとデバッグを行ってからデプロイすることができます。 エミュレーターでは、ロール インスタンスのライフサイクルが処理され、ローカル ストレージなどのシミュレートされるリソースにアクセスできます。 Visual Studio でサービスをデバッグまたは実行すると、エミュレーターがバックグラウンド アプリケーションとして自動的に起動され、サービスがエミュレーターにデプロイされます。 エミュレーターを使用すると、ローカル環境で実行されているサービスを表示できます。 完全バージョンまたは Express バージョンのエミュレーターを実行できます (Azure 2.3 以降では、emulator の express バージョンが既定値です)。「 [Emulator Express を使用したローカルでのクラウドサービスの実行とデバッグ」を](vs-azure-tools-emulator-express-debug-run.md)参照してください。
 
@@ -183,7 +183,7 @@ Visual Studio ASP.NET プロジェクトでは、アプリケーションのテ�
 
 10. 仮想マシンでデバッグするプロセスを選択し、[ **アタッチ**] を選択します。 たとえば、仮想マシンで Web アプリをデバッグする場合は、w3wp.exe プロセスを選択できます。 詳細については、「 [Visual Studio での 1 つ以上のプロセスのデバッグ](../debugger/debug-multiple-processes.md) 」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 * リリースサーバーからの呼び出しとイベントのログを収集するには、 **IntelliTrace** を使用します。 [IntelliTrace および Visual Studio を使用した発行済みのクラウド サービスのデバッグ](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)に関するページを参照してください。
 

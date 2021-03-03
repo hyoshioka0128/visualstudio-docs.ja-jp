@@ -2,7 +2,7 @@
 title: 変更ログ (Visual Studio Tools for Unity、Mac) | Microsoft Docs
 description: Visual Studio Tools for Unity、Mac の変更ログを確認します。 バージョン 1.0.0.0 から 2.7.0.0 以降にかけて行われた変更を確認します。
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917911"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683372"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>変更ログ (Visual Studio Tools for Unity、Mac)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="2920"></a>2.9.2.0
+リリース日2021年3月2日
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity メッセージダイアログでの検索の強調表示を修正します。
+
+  - Unity プロジェクトの treeview による安定性の問題を修正した。
+
+- **デバッグ:**
+
+  - 条件付きブレークポイントの処理を修正した。
+
+## <a name="2910"></a>2.9.1.0
+2021年2月9日のリリース
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - IDE から Unity テストを実行およびデバッグするためのサポートを追加しました
+
+- **評価:**
+
+  - `Active Scene`ルートゲームオブジェクトを示す [ローカル] に追加されました。
+
+  - `this.gameObject`Unity プロジェクトで広く使用されている場合は、ローカルに追加されます。
+
+  - すべて `Children` のインスタンスにとグループを追加して、 `Components` `GameObject` すべてのオブジェクト階層を簡単に表示できるようにしました。
+
+  - `Scene Path` `GameObject` シーン内の場所を表示するために、すべてのインスタンスに追加されます。
+
+  - `JobEntityBatch`ソースジェネレーターでエンティティを使用するときに、/ラムダのサポートが追加されました。
+
+  - 大きな配列を表示するためのサポートの強化 (インデックスバケットを使用)。
+
+  - 2019.4 API の不足している Unity メッセージを追加しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - Unity メッセージダイアログの安定性に関する問題を修正した
+
+  - ENU 以外の言語のさまざまな UI の問題を修正した。
+
+  - 診断に関する安定性の問題を修正 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) した。
+
+- **デバッグ:**
+
+  - メソッドを使用するときの VM の切断に関する問題を修正 `Trace` します。
+
+- **評価:**
+
+  - 例外をスローする古いプロパティのフィルター処理を修正しました。
+
+## <a name="2900"></a>2.9.0.0
+2021年1月20日にリリース
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - 、、およびの各ファイルのサポートを追加しました `raytrace shaders` `UXML` `USS` 。
+
+  - Unity messages API (コルーチンとして使用されるすべてのメソッド) が更新されました。
+
+  - Android SDK 検出を更新しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)診断を修正し、コルーチンおよびに対して間違った警告を出し `AssetPostprocessor.OnAssignMaterialModel` ます。
 
 ## <a name="2840"></a>2.8.4.0
 リリース日は2020年12月15日

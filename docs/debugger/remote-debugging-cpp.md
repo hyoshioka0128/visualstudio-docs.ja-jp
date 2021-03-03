@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934651"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335261"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Visual Studio での C++ プロジェクトのリモート デバッグ
 別のコンピューター上の Visual Studio アプリケーションをデバッグするには、アプリを配置したコンピューターにリモート ツールをインストールして実行し、Visual Studio からリモート コンピューターに接続するようにプロジェクトを構成してから、アプリを配置して実行します。
@@ -99,7 +99,7 @@ ms.locfileid: "99934651"
     > [!TIP]
     > また、これらのファイルは別の手順でも配置できます。 **ソリューション エクスプローラー** で、 **[mymfc]** ノードを右クリックして **[配置]** を選択します。
 
-    アプリケーションで必要なコード以外のファイルがある場合は、 **[リモート Windows デバッガー]** ページの **[追加の配置ファイル]** で指定できます。
+    アプリケーションで必要なコード以外のファイルがある場合は、 **[リモート Windows デバッガー]** ページの **[追加の配置ファイル]** にあるセミコロン区切りのリストで指定できます。
 
     または、ファイルをプロジェクトに追加し、各ファイルの **[プロパティ]** ページで **[コンテンツ]** プロパティを **[はい]** に設定します。 これらのファイルは、 **[リモート Windows デバッガー]** ページで指定した **[配置ディレクトリ]** にコピーされます。 また、 **[配置ディレクトリ]** のサブフォルダーにファイルをコピーする必要がある場合は、 **[項目の種類]** を **[ファイルのコピー]** に変更し、そこで追加のプロパティを指定できます。
 

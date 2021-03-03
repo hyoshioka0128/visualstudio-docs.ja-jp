@@ -9,16 +9,18 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a0db2f2e4993fcc3c986686322b8915615758e13
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727295"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683283"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>Visual Studio を使用した Azure アプリ構成の追加接続済みサービス
 
-このチュートリアルでは、ASP.NET Core または任意の種類の ASP.NET プロジェクトを使用しているかどうかにかかわらず、Azure アプリ構成を使用して、Visual Studio で web プロジェクトの構成と機能フラグを管理するために必要なすべてのものを簡単に追加する方法について説明します。 Visual Studio の接続済みサービス機能を使用すると、Azure のアプリ構成リソースに接続するために必要なすべてのコード、NuGet パッケージ、および構成設定を Visual Studio で自動的に追加することができます。 この機能を使用するには、Visual Studio 2019 バージョン16.9 以降を使用している必要があります。
+このチュートリアルでは、Azure アプリ構成を使用して、Visual Studio で web プロジェクトの構成と機能フラグを管理するために必要なすべてのものを簡単に追加する方法について説明します。 Visual Studio の接続済みサービス機能を使用すると、Azure のアプリ構成リソースに接続するために必要なすべてのコード、NuGet パッケージ、および構成設定を Visual Studio で自動的に追加することができます。 この機能を使用するには、Visual Studio 2019 バージョン16.9 以降を使用している必要があります。
+
+ASP.NET Core、.NET Core コンソール、.NET Framework プロジェクトのアプリ構成接続済みサービス機能を使用できます。
 
 > [!NOTE]
 > このトピックは、Windows 上の Visual Studio に適用されます。 Visual Studio for Mac については、[Visual Studio for Mac での接続済みサービス](/visualstudio/mac/connected-services)に関するページを参照してください。
