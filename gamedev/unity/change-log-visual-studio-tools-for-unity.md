@@ -2,7 +2,7 @@
 title: 変更ログ (Visual Studio Tools for Unity、Windows) | Microsoft Docs
 description: Visual Studio Tools for Unity、Windows の変更ログを確認します。 バージョン 1.0.0.0 から 4.7.0.0 以降にかけて行われた変更を確認します。
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,76 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671247"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683481"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
 Visual Studio Tools for Unity の変更ログです。
+
+## <a name="4910"></a>4.9.1.0
+リリース日2021年3月2日
+
+### <a name="new-features"></a>新機能
+
+- **評価:**
+
+  - `Active Scene`ルートゲームオブジェクトを示す [ローカル] に追加されました。
+
+  - `this.gameObject`Unity プロジェクトで広く使用されている場合は、ローカルに追加されます。
+
+  - すべて `Children` のインスタンスにとグループを追加して、 `Components` `GameObject` すべてのオブジェクト階層を簡単に表示できるようにしました。
+
+  - `Scene Path` `GameObject` シーン内の場所を表示するために、すべてのインスタンスに追加されます。
+
+  - `JobEntityBatch`ソースジェネレーターでエンティティを使用するときに、/ラムダのサポートが追加されました。
+
+  - 大きな配列を表示するためのサポートの強化 (インデックスバケットを使用)。
+  
+  - 2019.4 API の不足している Unity メッセージを追加しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - ENU 以外の言語のさまざまな UI の問題を修正した。
+
+  - 診断に関する安定性の問題を修正 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) した。
+  
+- **デバッグ:**
+
+  - メソッドを使用するときの VM の切断に関する問題を修正 `Trace` します。
+
+- **評価:**
+
+  - 例外をスローする古いプロパティのフィルター処理を修正しました。
+
+## <a name="4900"></a>4.9.0.0
+2021年1月20日にリリース
+
+### <a name="new-features"></a>新機能
+
+- **統合:**
+
+  - 、、およびの各ファイルのサポートを追加しました `raytrace shaders` `UXML` `USS` 。
+
+  - `.vsconfig`生成サポートを追加しました。 Visual Studio では、不足しているコンポーネントを検出し、Unity プロジェクトを使用するときにインストールするように求めるメッセージが表示されます。
+
+  - Unity messages API (コルーチンとして使用されるすべてのメソッド) が更新されました。
+
+  - Android SDK 検出を更新しました。
+
+### <a name="bug-fixes"></a>バグ修正
+
+- **統合:**
+
+  - インスタンス選択ダイアログを使用するときのプロセスの更新を修正します。
+
+  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)診断を修正し、コルーチンおよびに対して間違った警告を出し `AssetPostprocessor.OnAssignMaterialModel` ます。
 
 ## <a name="4820"></a>4.8.2.0
 リリース日2020年11月10日

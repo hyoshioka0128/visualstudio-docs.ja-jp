@@ -2,7 +2,7 @@
 title: デバッグ中に XAML のプロパティを調べる |Microsoft Docs
 description: デバッグ中にライブビジュアルツリーとライブプロパティエクスプローラーツールを使用して、XAML プロパティを検査し、UI 要素のツリービューを取得する方法について説明します。
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881374"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683456"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>デバッグ中に XAML のプロパティを調べます。
 
@@ -34,7 +34,17 @@ ms.locfileid: "99881374"
 
 ### <a name="create-the-project"></a>プロジェクトを作成する
 
-1. 新しい C# WPF アプリケーションを作成し ([**ファイル]**  >  [**新しい**  >  **プロジェクト**] の順に選択し、「C# wpf」と入力して、[ **wpf アプリ (.net Core)** ] または [ **wpf アプリ (.NET Framework)**)] を選択します。 名前を **TestXAML** とします。
+::: moniker range="vs-2019"
+
+1. 新しい C# WPF アプリケーションを作成し ([**ファイル**] [ > **新しい** > **プロジェクト**] を選択し、「C# WPF」と入力します)、[ **WPF アプリケーション**] プロジェクトテンプレートを選択し、プロジェクトに **testxaml** という名前を指定して、[**ターゲットフレームワーク**] ドロップダウンに **.net Core 3.1** が表示されていることを確認します。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1. 新しい C# WPF アプリケーションを作成し ([**ファイル**]  >  [**新しい**  >  **プロジェクト**] の順に選択し、「c# wpf」と入力して、[ **wpf アプリ (.NET Framework)**)] を選択します。 名前を **TestXAML** とします。
+
+::: moniker-end
 
 1. MainWindow.xaml を次のように変更します。
 
