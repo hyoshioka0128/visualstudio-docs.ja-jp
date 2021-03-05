@@ -1,4 +1,5 @@
 ---
+description: このメソッドは、プロセスがホストされる言語を設定します。
 title: 'IDebugProcess3:: SetHostingProcessLanguage |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d2a95a5f8181b7b58198a8a56b7fb0037ef0bc1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926261"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150121"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 このメソッドは、プロセスがホストされる言語を設定します。 この言語は、適切な式エバリュエーターを読み込むために、デバッグエンジン (DE) によって使用されます。

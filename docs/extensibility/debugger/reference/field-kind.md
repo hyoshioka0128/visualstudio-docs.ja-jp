@@ -1,4 +1,5 @@
 ---
+description: IDebugField オブジェクトに含まれるフィールドの種類を指定します。
 title: FIELD_KIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a18739ebe30a41e9dca837287d58db57795f878b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874370"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150862"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに含まれるフィールドの種類を指定します。
@@ -229,7 +230,7 @@ public enum enum_FIELD_KIND {
 
 フィールドの種類に応じて、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出して、より具体的な形式のインターフェイスを作成できます。 たとえば、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) がを返す場合は、 `FIELD_TYPE_METHOD` `QueryInterface` I でを呼び出して `DebugField` [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) インターフェイスを取得できます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

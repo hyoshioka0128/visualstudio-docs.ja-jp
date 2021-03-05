@@ -1,4 +1,5 @@
 ---
+description: ダンプするプログラムの状態 (スレッドの実行、スタックフレーム、現在の命令アドレスなど) の量を指定します。
 title: DUMPTYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953735"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150979"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 ダンプするプログラムの状態 (スレッドの実行、スタックフレーム、現在の命令アドレスなど) の量を指定します。
@@ -52,7 +53,7 @@ public enum enum_DUMPTYPE {
 ## <a name="remarks"></a>解説
 [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

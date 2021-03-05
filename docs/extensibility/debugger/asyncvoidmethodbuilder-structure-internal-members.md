@@ -1,4 +1,5 @@
 ---
+description: このトピックでは、AsyncVoidMethodBuilder クラスの内部メンバーについて説明します。
 title: AsyncVoidMethodBuilder 構造体の内部メンバー |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edb0e11f80743289f8318c9fe7d331e6528f8107
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad209fb94a9857fe0596f1e25b0dec844d03ca8f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921619"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151145"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 構造体の内部メンバー
 このトピックでは、クラスの内部メンバーについて説明し <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> ます。 このクラスに関する一般的な情報については、リファレンストピックを参照してください <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 。
@@ -37,7 +38,7 @@ ms.locfileid: "99921619"
 
 ## <a name="internal-members"></a>内部メンバー
 
-|名前|Description|
+|名前|説明|
 |----------|-----------------|
 |[ObjectIdForDebugger プロパティ](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|デバッガーに対してこのビルダーを一意に識別するために使用できるオブジェクトを取得します。|
 |[m_objectIdForDebugger フィールド](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|このビルダーを一意に識別するためにデバッガーによって使用される、遅延初期化されたオブジェクトを表します。|

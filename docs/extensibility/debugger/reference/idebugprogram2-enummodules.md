@@ -1,4 +1,5 @@
 ---
+description: このプログラムによって読み込まれ、実行されているモジュールの一覧を取得します。
 title: 'IDebugProgram2:: EnumModules |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da3f3dcd150d35199458e9952074f76931969175
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26016510856de44c07ca9a123553e82d0d2a79f4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958584"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149627"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 このプログラムによって読み込まれ、実行されているモジュールの一覧を取得します。

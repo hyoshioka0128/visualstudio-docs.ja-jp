@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) は、プロセスにアタッチするプロセスまたはプロセスからデタッチするプロセスを通知できます。
 title: IDebugProcessEx2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e8966be5c30bf2061fc1e03be6798279afbe8ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e91e61c2fc125829d3c9dacf942635021b8e3886
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900175"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149718"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) は、プロセスにアタッチするプロセスまたはプロセスからデタッチするプロセスを通知できます。
@@ -44,7 +45,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugProcessEx2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[[アタッチ]](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|セッションがプロセスをデバッグ中であることをプロセスに通知します。|
 |[[デタッチ]](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|セッションがプロセスのデバッグを終了したことをプロセスに通知します。|
@@ -53,7 +54,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、SDM とプロセスとの間でプライベートです。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Portpriv. h
 
  名前空間: VisualStudio。

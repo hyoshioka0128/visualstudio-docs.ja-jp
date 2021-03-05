@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、シンボルの別の場所と Mycode の状態をサポートするモジュールを表します。
 title: IDebugModule3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ced8edcc97ad4ab8ff4db430cea57a2533cb30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955524"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149882"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 このインターフェイスは、シンボルの別の場所と Mycode の状態をサポートするモジュールを表します。
@@ -37,7 +38,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  このインターフェイスは、 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)|シンボルの検索対象となるパスと、各パスを検索した結果の一覧を返します。|
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugmodule3-loadsymbols.md)|現在のモジュールのシンボルを読み込んで初期化します。|
@@ -47,7 +48,7 @@ IDebugModule3 : IDebugModule2
 ## <a name="remarks"></a>解説
  Visual Studio は、このインターフェイスの一般的なコンシューマーです。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

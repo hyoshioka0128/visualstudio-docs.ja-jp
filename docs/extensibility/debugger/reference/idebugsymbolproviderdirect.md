@@ -1,4 +1,5 @@
 ---
+description: メタデータおよびコアシンボルインターフェイスに直接アクセスできるシンボルプロバイダーを表します。
 title: IDebugSymbolProviderDirect |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29f0e7e3d2fefe0f47dc971ebff273bf2745a5ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d60af5be925341e5421badb4c3e6e3dae97903b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909426"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149315"
 ---
 # <a name="idebugsymbolproviderdirect"></a>IDebugSymbolProviderDirect
 メタデータおよびコアシンボルインターフェイスに直接アクセスできるシンボルプロバイダーを表します。
@@ -29,7 +30,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetAppIDFromAddress](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getappidfromaddress.md)|デバッグアドレスに指定されたアプリケーションドメイン識別子を取得します。|
 |[GetCurrentModulesInfo](../../../extensibility/debugger/reference/idebugsymbolproviderdirect-getcurrentmodulesinfo.md)|シンボルグループ内のモジュールに関する情報を取得します。|
@@ -41,7 +42,7 @@ IDebugSymbolProviderDirect: IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、他のほとんどのシンボルプロバイダーインターフェイスの代わりに使用できます。 メタデータとインターフェイスへの直接アクセスを提供し `CorSym` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

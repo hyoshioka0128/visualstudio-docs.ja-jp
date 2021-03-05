@@ -1,4 +1,5 @@
 ---
+description: ブレークポイント要求について取得する情報を指定する有効な値を列挙します。
 title: BPREQI_FIELDS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7be8d52700315dfea5619a5d4e6ca875ada0139c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5405f728cf979738de5a830421c4306c5e398bb2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938246"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151085"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 ブレークポイント要求について取得する情報を指定する有効な値を列挙します。 この列挙体は [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列挙体を拡張します。
@@ -122,7 +123,7 @@ public enum enum_BPREQI_FIELDS90
 `BPREQI90_ALLFIELDS`\
 構造体のすべてのフィールドを指定し `BP_REQUEST_INFO2` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: Msdbg90
 
 名前空間: VisualStudio。

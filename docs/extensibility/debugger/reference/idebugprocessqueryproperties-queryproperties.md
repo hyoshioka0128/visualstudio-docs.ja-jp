@@ -1,4 +1,5 @@
 ---
+description: このメソッドは、デバッグプロセスの指定されたプロパティ値を照会します。
 title: 'IDebugProcessQueryProperties:: QueryProperties |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 215606f12eb14c4a4b8db8313356a363dea5247e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900166"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149614"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 このメソッドは、デバッグプロセスの指定されたプロパティ値を照会します。
@@ -44,7 +45,7 @@ int QueryProperties(
 からプロパティ定義とプロパティ値を含む配列のサイズ。
 
 `dwPropType`\
-からクエリ対象のプロパティの定義を格納している配列。 次の値を指定できます。
+からクエリ対象のプロパティの定義を格納している配列。 指定できる値は、
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
