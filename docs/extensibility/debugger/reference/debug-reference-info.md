@@ -1,4 +1,5 @@
 ---
+description: 参照を記述します。
 title: DEBUG_REFERENCE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e491054ffbdfa9e19cb8bed995b2f369ac1a885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e210875f88a7c8246eff3bfcf0721d6866602b7e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939176"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170537"
 ---
 # <a name="debug_reference_info"></a>DEBUG_REFERENCE_INFO
 参照を記述します。
@@ -76,7 +77,7 @@ public struct DEBUG_REFERENCE_INFO {
 ## <a name="remarks"></a>解説
 この構造体は、入力される [Getreferenceinfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) メソッドの呼び出しに渡されます。 この構造体は、 [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) インターフェイスからのリストの一部としても返されます。このインターフェイスは、 [enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) メソッドの呼び出しから返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

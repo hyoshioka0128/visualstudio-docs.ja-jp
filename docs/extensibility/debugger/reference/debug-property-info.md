@@ -1,4 +1,5 @@
 ---
+description: デバッグプロパティに関する情報を格納します。
 title: DEBUG_PROPERTY_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98cd4292692fe9d9b965790ce9a0a30d55423454
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0b02ca1f8c85f81096954fb416cc73ee400b9ba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899100"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170589"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 デバッグプロパティに関する情報を格納します。
@@ -78,7 +79,7 @@ public struct DEBUG_PROPERTY_INFO {
 
 この構造体は、 [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) メソッドに渡され、そこに格納されます。 この構造体は、 [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) インターフェイスからこの構造体のリストの一部としても返されます。このインターフェイスは、 [enumchildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) メソッドおよび [enumchildren](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) メソッドの呼び出しから返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

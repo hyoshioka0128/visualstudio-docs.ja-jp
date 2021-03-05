@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、シンボルと式の値をカプセル化するためにバインダーによって作成されるオブジェクトを表します。
 title: IDebugObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6fc188537799a8a3eeab66dd4af1d92ffb67db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14c405c9dbe3d1cbfdf61c606b995a686e063661
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953579"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170198"
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugObject : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugObject` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|オブジェクトのサイズを取得します。|
 |[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|オブジェクトの値を連続する一連のバイトとして取得します。|
@@ -56,7 +57,7 @@ IDebugObject : IUnknown
 ## <a name="remarks"></a>解説
  式エバリュエーターは、このインターフェイスを基底クラスとして使用して、解析ツリー内のオブジェクトを表します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

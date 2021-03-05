@@ -1,4 +1,5 @@
 ---
+description: デバッグのためにプロセスが起動された理由を指定します。
 title: DEBUG_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d2ce7eeb28627f7cb0a1dfbe399bd55f04ff7be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9404e4b5cfdd1f1690b0fe76d0cd5e98cc90d2a4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921229"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170550"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
 デバッグのためにプロセスが起動された理由を指定します。
@@ -67,7 +68,7 @@ public enum enum_DEBUG_REASON {
 ## <a name="remarks"></a>解説
 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)メソッドから返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
