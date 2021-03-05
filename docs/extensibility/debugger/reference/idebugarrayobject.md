@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、配列オブジェクトを表します。
 title: IDebugArrayObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d6a37a5b83cd71123521db70920fd3d454e059
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16162cee8a02bf02b192336425101ec4bb579106
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870065"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158528"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugArrayObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスのメソッドに加えて `IDebugObject` 、次のメソッドがインターフェイスに実装され `IDebugArrayObject` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|配列内の要素の数を取得します。|
 |[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|配列の要素を取得します。|
@@ -51,7 +52,7 @@ IDebugArrayObject : IDebugObject
 ## <a name="remarks"></a>解説
  式エバリュエーターは、このインターフェイスを使用して、解析ツリー内の配列を表します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。
