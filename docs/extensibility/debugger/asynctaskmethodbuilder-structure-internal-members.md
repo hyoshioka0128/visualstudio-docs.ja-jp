@@ -1,4 +1,5 @@
 ---
+description: この記事では、AsyncTaskMethodBuilder クラスの内部メンバーについて説明します。
 title: AsyncTaskMethodBuilder 構造体の内部メンバー
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604f86311e2689d4301fec8a186e2a102d633062
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 241b4f3aae50ac70afc8320b637535035ee427e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888434"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145691"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 構造体の内部メンバー
 このトピックでは、クラスの内部メンバーについて説明し <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> ます。 このクラスに関する一般的な情報については、リファレンストピックを参照してください <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 。
@@ -39,7 +40,7 @@ ms.locfileid: "99888434"
 
 ## <a name="internal-members"></a>内部メンバー
 
-|名前|Description|
+|名前|説明|
 |----------|-----------------|
 |[ObjectIdForDebugger プロパティ](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|デバッガーに対してこのビルダーを一意に識別するために使用できるオブジェクトを取得します。|
 |[m_builder フィールド](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|この非ジェネリックインスタンスがデリゲートするジェネリックビルダーオブジェクトを表します。|

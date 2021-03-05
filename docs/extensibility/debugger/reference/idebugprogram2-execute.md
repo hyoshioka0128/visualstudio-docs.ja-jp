@@ -1,4 +1,5 @@
 ---
+description: 'IDebugProgram2:: Execute は、停止状態からこのプログラムの実行を続行します。 前の実行状態 (ステップなど) がすべてクリアされ、プログラムの実行が再度開始されます。'
 title: 'IDebugProgram2:: Execute |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72b59066e8b7125216077dbf4f6ed83adfa0ad2c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844737"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146042"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 このプログラムの実行を停止状態から続行します。 前の実行状態 (ステップなど) がすべてクリアされ、プログラムの実行が再度開始されます。
@@ -52,4 +53,4 @@ int Execute();
 ## <a name="see-also"></a>関連項目
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
-- [再開](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

@@ -1,4 +1,5 @@
 ---
+description: このトピックでは、AsyncTaskMethodBuilder クラスの内部メンバーについて説明します。
 title: AsyncTaskMethodBuilder &lt; TResult &gt; 構造体内部メンバー |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb409495b28b7dc2bc796859da413a32b90d85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1ca4d19727383bdd7c957bc59fd6b6568c9f5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921637"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145652"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder &lt; TResult &gt; 構造体の内部メンバー
 このトピックでは、クラスの内部メンバーについて説明し <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> ます。 このクラスに関する一般的な情報については、リファレンストピックを参照してください <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 。
@@ -37,7 +38,7 @@ ms.locfileid: "99921637"
 
 ## <a name="internal-members"></a>内部メンバー
 
-|名前|Description|
+|名前|説明|
 |----------|-----------------|
 |[ObjectIdForDebugger プロパティ](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|デバッガーに対してこのビルダーを一意に識別するために使用できるオブジェクトを取得します。|
 |[m_task フィールド](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|遅延初期化されたビルドタスクを表します。|
