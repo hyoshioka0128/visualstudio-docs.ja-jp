@@ -1,4 +1,5 @@
 ---
+description: アドレスの種類を指定します。
 title: ADDRESS_KIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d909694afcec033401b730011633a9da0fafbc18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12a47edf2b9eca9cd99a5b11531f78e080572d54
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912145"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144651"
 ---
 # <a name="address_kind"></a>ADDRESS_KIND
 アドレスの種類を指定します。
@@ -87,7 +88,7 @@ public enum enum_ADDRESS_KIND {
 ## <a name="remarks"></a>解説
 [Getaddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)メソッドは、使用可能な構造体、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体の和集合を含む[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)構造体を返します。 `dwKind`構造体のフィールドには `DEBUG_ADDRESS_UNION` 値が保持され、 `ADDRESS_KIND` 共用体フィールドを解釈する方法について説明します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

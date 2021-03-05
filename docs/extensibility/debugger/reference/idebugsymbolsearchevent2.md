@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグエンジン (DE) によって送信され、デバッグされているモジュールのデバッグシンボルが読み込まれたことを示します。
 title: IDebugSymbolSearchEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad5fa763be8929a9122a6fd7517b401f5a874e04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ef2d315568b78e567d682728c4cbc989c5a4ed2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909343"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145743"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 このインターフェイスは、デバッグエンジン (DE) によって送信され、デバッグされているモジュールのデバッグシンボルが読み込まれたことを示します。
@@ -37,7 +38,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスは、 `IDebugSymbolSearchEvent2` 次のメソッドを公開します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)|シンボル検索の結果に関する情報を取得します。|
 
@@ -46,7 +47,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 
  通常、Visual Studio はこのイベントを使用して、[ **モジュール** ] ウィンドウで読み込まれたシンボルの状態を更新します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 368fd5bc9c8b7e2659c86b6e3dc69a609da37617
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867894"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144664"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>ファーストパーティの .NET アナライザーを有効またはインストールする
 
@@ -26,7 +26,7 @@ ms.locfileid: "99867894"
 
 ファーストパーティの .NET analyzer は、次のいずれかの方法で有効にしたりインストールしたりできます。
 
-- **.NET sdk からの有効化**: Visual Studio 2019 16.8 と .Net 5.0 以降では、これらのアナライザーは [.net sdk に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 .NET 5.0 以降を対象とするプロジェクトでは、既定で分析が有効になっています。 以前のバージョンの .NET を対象とするプロジェクトでコード分析を有効にするには、 `EnableNETAnalyzers` プロパティをに設定し `true` ます。 をに設定することにより、プロジェクトのコード分析を無効にすることもでき `EnableNETAnalyzers` `false` ます。
+- **.NET sdk からの有効化**: Visual Studio 2019 16.8 と .Net 5.0 以降では、これらのアナライザーは [.net sdk に含まれて](/dotnet/fundamentals/code-analysis/overview)います。 .NET 5.0 以降を対象とするプロジェクトでは、既定で分析が有効になっています。 MSBUILD [Enablenetanalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) プロパティをに設定することによって、以前のバージョンの .net を対象とするプロジェクトでコード分析を有効にすることができ `true` ます。 をに設定することにより、プロジェクトのコード分析を無効にすることもでき `EnableNETAnalyzers` `false` ます。
 
 - **Nuget パッケージとしてインストール** する: .net 5 + SDK に移行しない場合、または nuget パッケージベースのモデルを希望する場合は、 `Microsoft.CodeAnalysis.NetAnalyzers` Visual Studio 2019 の [nuget パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) でアナライザーを使用することもできます。  オンデマンドバージョン更新には、パッケージベースのモデルを使用することをお勧めします。 Visual Studio 2017 を使用している場合は、 `2.9.x` 代わりに最新バージョンの `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet パッケージ](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) をインストールしてください。
 
