@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグ中のプログラムを実行しているコンピューターのアドレス空間内の位置を表します。
 title: IDebugMemoryContext2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20750397eafa392ee7ad8bd742b0126b1fb9deeb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166347"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 このインターフェイスは、デバッグ中のプログラムを実行しているコンピューターのアドレス空間内の位置を表します。
@@ -37,7 +38,7 @@ IDebugMemoryContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugMemoryContext2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|このコンテキストのユーザーが指定可能な名前を取得します。|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|このコンテキストを説明する情報を取得します。|
@@ -48,7 +49,7 @@ IDebugMemoryContext2 : IUnknown
 ## <a name="remarks"></a>解説
  Visual Studio の **メモリ** ウィンドウは、 [getmemorycontext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md) を呼び出して、 `IDebugMemoryContext2` メモリアドレスに使用される評価済みの式を含むインターフェイスを取得します。 次に、このコンテキストを [readat](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) と [writeat](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) に渡して、読み取りまたは書き込みを行うアドレスを指定します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

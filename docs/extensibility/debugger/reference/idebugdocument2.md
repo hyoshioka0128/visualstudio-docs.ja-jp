@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ソースドキュメントを表します。
 title: IDebugDocument2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e611f6a4daf878042640697dca862015285078d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96bf5821cb463b8a99f7376cb99b81ab8cae2206
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884872"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167348"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 このインターフェイスは、ソースドキュメントを表します。
@@ -37,7 +38,7 @@ IDebugDocument2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugDocument2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)|複数の形式のいずれかで文書の名前を取得します。|
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|ドキュメントのクラス識別子を取得します。|
@@ -45,7 +46,7 @@ IDebugDocument2 : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、DE がソースコードを提供する場合にのみ実装されます。 たとえば、HTML ページでスクリプトをデバッグする場合、ソースは動的にダウンロードまたは生成され、ディスクファイルとして存在しないため、DE によってソースコードが提供されます。 C++ などの従来の言語をデバッグする場合は、このインターフェイスを実装する必要はありません。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
