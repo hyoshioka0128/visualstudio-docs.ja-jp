@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、式エバリュエーターを表します。
 title: IDebugExpressionEvaluator |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c12dc405f08851e55040c3097e5d7f409030f61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2e1fb465155bac2aa4be2b0d0a041715bf63bfa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934332"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152352"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugExpressionEvaluator : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表に、のメソッドを示し `IDebugExpressionEvaluator` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|式文字列を解析された式に変換します。|
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|メソッドのローカル変数、引数、およびその他のプロパティを取得します。|
@@ -53,7 +54,7 @@ IDebugExpressionEvaluator : IUnknown
 
 EE がインスタンス化されると、DE は [解析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して式を解析し、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクトに格納します。 後で [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) を呼び出すと、式が評価されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: ee
 
 名前空間: VisualStudio。

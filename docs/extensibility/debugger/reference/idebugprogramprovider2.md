@@ -1,4 +1,5 @@
 ---
+description: この登録済みインターフェイスにより、セッションデバッグマネージャー (SDM) は、IDebugProgramPublisher2 インターフェイスを通じて公開されたプログラムに関する情報を取得できます。
 title: IDebugProgramProvider2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 788c4add42b70107ea2960ae5682a2e2cc815d59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0102aa650d9739ae862f1357a1560842ae2fa59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959624"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151442"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 この登録済みインターフェイスにより、セッションデバッグマネージャー (SDM) は、 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) インターフェイスを通じて "公開" されたプログラムに関する情報を取得できます。
@@ -36,7 +37,7 @@ IDebugProgramProvider2 : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|さまざまな方法でフィルター処理された、実行中のプログラムに関する情報を取得します。|
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|特定のプロセス ID を指定して、プログラムノードを取得します。|
@@ -46,7 +47,7 @@ IDebugProgramProvider2 : IUnknown
 ## <a name="remarks"></a>解説
 通常、プロセスでは、このインターフェイスを使用して、そのプロセスで実行されているプログラムに関する情報を確認します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

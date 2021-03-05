@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、プログラムがにアタッチされている場合に、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 title: IDebugProgramCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b73deab28f08ed9268033e941b64b753f64adf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 535d54e0c7cdd4b175cd76c9d1fbe9ce240b5ccf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891021"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151624"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 このインターフェイスは、プログラムがにアタッチされている場合に、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,7 +38,7 @@ IDebugProgramCreateEvent2 : IUnknown
 ## <a name="remarks"></a>解説
  DE またはカスタムポートサプライヤーは、 [Publishprogramnode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)を呼び出して新しい[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)インターフェイスを公開します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: デバッグエンジン (DE) は、現在実行中のプログラムで例外がスローされた場合に、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
 title: IDebugExceptionEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e171154d933ac533f6a63469321b5a0d22e8651b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933116"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152768"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 デバッグエンジン (DE) は、現在実行中のプログラムで例外がスローされた場合に、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
@@ -37,14 +38,14 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugExceptionEvent2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)|このイベントを発生させた例外に関する詳細情報を取得します。|
 |[GetExceptionDescription](../../../extensibility/debugger/reference/idebugexceptionevent2-getexceptiondescription.md)|このイベントを発生させた例外の、人間が判読できる説明を取得します。|
 |[CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)|デバッグエンジン (DE) が、実行の再開時にデバッグ対象のプログラムにこの例外を渡すオプションをサポートするかどうかを決定します。|
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|例外を、実行の再開時にデバッグされるプログラムに渡すか、または例外を破棄する必要があるかを指定します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
