@@ -1,4 +1,5 @@
 ---
+description: 逆アセンブリフィールドについて取得する情報を指定します。
 title: DISASSEMBLY_STREAM_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34836447af8277141c401302c5a838d5cbe351b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8bb45f492a58bd079a1b73212fc9473041d10589
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938955"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170472"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
 逆アセンブリフィールドについて取得する情報を指定します。
@@ -111,7 +112,7 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
