@@ -1,4 +1,5 @@
 ---
+description: この関数は、キューに置かれた状態イベントを取得します。
 title: SccGetEvents 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965162"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220795"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 関数
 この関数は、キューに置かれた状態イベントを取得します。
@@ -53,7 +54,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|イベントの取得に成功しました。|
 |SCC_E_OPNOTSUPPORTED|この関数はサポートされません。|

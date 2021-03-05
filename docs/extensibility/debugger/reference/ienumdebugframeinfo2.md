@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、フレーム情報構造体を列挙します。
 title: IEnumDebugFrameInfo2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c347b7cebd9b1417cd0a8e772cd8a247e975ea97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956290"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226385"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 このインターフェイスは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体を列挙します。
@@ -37,7 +38,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugFrameInfo2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|列挙シーケンス内の指定された数の [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体を取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|列挙シーケンス内の指定された数の [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造体をスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、デバッグ中のプログラムでブレークポイント、例外、またはユーザーによって生成される一時停止を処理する最初の手順として、Visual Studio によって取得されます。 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)構造体の一覧は現在の呼び出し履歴を表し、現在の関数呼び出しはリストの先頭に、最も古い関数呼び出しはリストの末尾にあります。 各は `FRAMEINFO` スタックフレームを表します。これは、式を評価し、ローカル変数を調べることができるコンテキストです。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

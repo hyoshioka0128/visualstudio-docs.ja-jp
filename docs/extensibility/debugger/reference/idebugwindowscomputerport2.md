@@ -1,4 +1,5 @@
 ---
+description: 対象のコンピュータに関する情報のクエリを実行できるようにします。
 title: IDebugWindowsComputerPort2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90e63e8ea7b00ff7d342ef6b1a0e624779e13d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9c7e940c2284b5b39097226f9a5b0c3b34a0d18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965604"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222953"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 対象のコンピュータに関する情報のクエリを実行できるようにします。
@@ -32,11 +33,11 @@ IDebugWindowsComputerPort2 : IUnknown
 ## <a name="methods"></a>メソッド
  次の表に、のメソッドを示し `IDebugWindowsComputerPort2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|デバッガーが実行されているコンピューターに関する情報を取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

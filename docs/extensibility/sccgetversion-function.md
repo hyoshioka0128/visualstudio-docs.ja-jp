@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理プラグインによってサポートされているソース管理プラグイン API のバージョン番号を取得します。
 title: SccGetVersion 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91daeca1df76f6b624d0eddf9d28222369b2cc4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a71d3374ffd65e0e7b9a7b2e654885d84e370a9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844542"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220600"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 関数
 この関数は、ソース管理プラグインによってサポートされているソース管理プラグイン API のバージョン番号を取得します。
@@ -34,7 +35,7 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>戻り値
  `LONG`サポートされているソース管理プラグイン API のバージョン番号を含むデータ型。
 
-|WORD|Description|
+|WORD|説明|
 |----------|-----------------|
 |HIWORD|メジャー バージョン|
 |LOWORD|マイナー バージョン|

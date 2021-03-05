@@ -1,4 +1,5 @@
 ---
+description: 保留中のブレークポイントの状態フラグを指定します。
 title: PENDING_BP_STATE_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f603b7a1660f9913ce10b2ecf07adb53f9279d48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a6da9349a033478ab024d719ef796e7bf71c72a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225462"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 保留中のブレークポイントの状態フラグを指定します。
@@ -50,7 +51,7 @@ public enum enum_PENDING_BP_STATE_FLAGS {
 ## <a name="remarks"></a>解説
  `flags` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体のメンバーに使用されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

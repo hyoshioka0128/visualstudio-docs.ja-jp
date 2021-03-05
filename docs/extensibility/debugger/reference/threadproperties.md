@@ -1,4 +1,5 @@
 ---
+description: スレッドのプロパティについて説明します。
 title: THREADPROPERTIES |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 186d9b0cd4f9ee3a822a528ab16788902d9ff1af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850662"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225263"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 スレッドのプロパティについて説明します。
@@ -76,7 +77,7 @@ public struct THREADPROPERTIES {
 ## <a name="remarks"></a>解説
  この構造体は、 [Getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) メソッドの呼び出しによって格納されます。 返される情報は、通常、[ **スレッド** ] ウィンドウの設定に使用されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

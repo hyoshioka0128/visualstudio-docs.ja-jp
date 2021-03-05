@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグセッション、または特定のプログラムまたはドキュメントに関連付けられたコードコンテキストを列挙します。
 title: IEnumDebugCodeContexts2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dee04516d8bc8d72859509a9f721455d858a433
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82e3583333c784fffa55abf2e86f5a7335aeb7c1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929395"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226931"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 このインターフェイスは、デバッグセッション、または特定のプログラムまたはドキュメントに関連付けられたコードコンテキストを列挙します。
@@ -39,7 +40,7 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugCodeContexts2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md)|列挙シーケンス内の指定された数のコードコンテキストを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-skip.md)|列挙シーケンス内の指定された数のコードコンテキストをスキップします。|
@@ -50,7 +51,7 @@ IEnumDebugCodeContexts2 : IUnknown
 ## <a name="remarks"></a>解説
  Visual Studio は、 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md) を呼び出して、次のステートメントを設定するとき、またはソースファイルの逆アセンブリを表示するときに、ユーザーが選択できるコードコンテキストの一覧を設定します。 複数のコードコンテキストが発生する可能性があります。たとえば、C++ スタイルのテンプレートの複数のインスタンスがある場合です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

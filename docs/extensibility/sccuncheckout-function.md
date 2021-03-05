@@ -1,4 +1,5 @@
 ---
+description: この関数は、前のチェックアウト操作を元に戻します。これにより、選択したファイルの内容がチェックアウト前の状態に復元されます。
 title: SccUncheckout 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdcd8cd94914763d103a6232c4f87c3ec93f216
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836671"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221354"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 関数
 この関数は、前のチェックアウト操作を元に戻します。これにより、選択したファイルの内容がチェックアウト前の状態に復元されます。 チェックアウト後にファイルに加えられたすべての変更は失われます。
@@ -63,7 +64,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|チェックアウトが正常に取り消されました。|
 |SCC_E_FILENOTCONTROLLED|選択したファイルはソースコード管理されていません。|

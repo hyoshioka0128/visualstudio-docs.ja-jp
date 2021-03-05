@@ -1,4 +1,5 @@
 ---
+description: 対象のプログラムを記述するオブジェクトの配列が含まれています。
 title: PROGRAM_NODE_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4803698aba910bc910fa36bf5c4f7e23ab82d247
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 282d96a221c0422da14427b71f1727c65b826fd7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912712"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222056"
 ---
 # <a name="program_node_array"></a>PROGRAM_NODE_ARRAY
 対象のプログラムを記述するオブジェクトの配列が含まれています。
@@ -51,7 +52,7 @@ public struct tagPROGRAM_NODE_ARRAY {
 ## <a name="remarks"></a>解説
  この構造体は、 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)メソッドの呼び出しによって入力される[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)構造の一部です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

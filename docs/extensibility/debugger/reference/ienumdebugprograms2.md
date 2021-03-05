@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、現在のデバッグセッションで実行されているプログラムを列挙します。
 title: IEnumDebugPrograms2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890748"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224227"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 このインターフェイスは、現在のデバッグセッションで実行されているプログラムを列挙します。
@@ -37,7 +38,7 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugPrograms2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|列挙シーケンス内の指定された数のプログラムを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|列挙シーケンス内の指定された数のプログラムをスキップします。|
@@ -56,7 +57,7 @@ IEnumDebugPrograms2 : IUnknown
 
 - エディットコンティニュ (ENC) の更新プログラムを各プログラムに適用します (IDebugProcess2:: EnumPrograms を呼び出し、次に [Getencupdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)を呼び出します)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: コードの場所にバインドする準備ができているブレークポイントの状態に関する情報を格納します。
 title: PENDING_BP_STATE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7c1e2b8b537607f6dc57d807d276c5b72ccb144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edd4bbdde1c241d90329343be1fd5570129c675a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968568"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223928"
 ---
 # <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 コードの場所にバインドする準備ができているブレークポイントの状態に関する情報を格納します。
@@ -51,7 +52,7 @@ public struct PENDING_BP_STATE_INFO {
 ## <a name="remarks"></a>解説
  この構造体は、 [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) メソッドに渡され、そこに格納されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

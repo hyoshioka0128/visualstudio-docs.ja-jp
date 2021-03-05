@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、IDebugProperty3 インターフェイスと IPropertyProxyEESide インターフェイスに機能を提供するキーメソッドを実装します。
 title: IEEVisualizerService |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b10a09aeab6012981fd464694c641aaf6bba4951
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5054041ab09898943d300393d36205581231b06d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842239"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227217"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -39,7 +40,7 @@ IEEVisualizerService : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|このサービスが認識しているカスタムビューアーの数を取得します。|
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|カスタムビューアーの一覧を取得します。|
@@ -53,7 +54,7 @@ IEEVisualizerService : IUnknown
 
  ビジュアライザーとビューアーの違いについては、「 [型ビジュアライザーとカスタムビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

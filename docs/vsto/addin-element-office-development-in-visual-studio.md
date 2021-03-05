@@ -1,4 +1,5 @@
 ---
+description: Vstav3 名前空間の addin 要素には、Visual Studio で開発された Microsoft Office VSTO アドインおよびドキュメントレベルのカスタマイズに固有の情報が含まれています。
 title: '&lt;addin &gt; 要素 (Visual Studio での Office 開発)'
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cfc59475b01fbf42c387b4a7a5ca533b313a322
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896733"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227386"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;addin &gt; 要素 (Visual Studio での Office 開発)
   名前空間の **addin** 要素に `vstav3` は、Visual Studio で開発された Microsoft Office VSTO アドインおよびドキュメントレベルのカスタマイズに固有の情報が含まれています。
@@ -57,20 +58,20 @@ ms.locfileid: "99896733"
  `addin` 要素には、次の子要素があります。
 
 ### <a name="entrypoints"></a>entryPoints
- 必須。 **EntryPoints** 要素については [&#60;entryPoints&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/entrypoints-element-office-development-in-visual-studio.md)」を参照してください。
+ 必須です。 **EntryPoints** 要素については [&#60;entryPoints&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/entrypoints-element-office-development-in-visual-studio.md)」を参照してください。
 
 ### <a name="update"></a>update
- 必須。 **Update** 要素は [&#60;update&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/update-element-office-development-in-visual-studio.md)に記述されています。
+ 必須です。 **Update** 要素は [&#60;update&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/update-element-office-development-in-visual-studio.md)に記述されています。
 
 ### <a name="postactions"></a>postActions
- 任意。 **Postactions** 要素については [&#60;postactions&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/postactions-element-office-development-in-visual-studio.md)」を参照してください。
+ 省略可能。 **Postactions** 要素については [&#60;postactions&#62; 要素 &#40;Visual Studio&#41;での Office 開発](../vsto/postactions-element-office-development-in-visual-studio.md)」を参照してください。
 
 ### <a name="application"></a>application
- 必須。 **Application** 要素は [&#60;application&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/application-element-office-development-in-visual-studio.md)に記述されています。
+ 必須です。 **Application** 要素は [&#60;application&#62; 要素 &#40;Visual Studio での Office 開発&#41;](../vsto/application-element-office-development-in-visual-studio.md)に記述されています。
 
 ## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
  次のコード例は、を使用して配置されるドキュメントレベルの Office ソリューションの **addin** 要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード
@@ -134,7 +135,7 @@ ms.locfileid: "99896733"
 
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
  次のコード例は、を使用して配置されるアプリケーションレベルの Office ソリューションの **addin** 要素を示してい [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] ます。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

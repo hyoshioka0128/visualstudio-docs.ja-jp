@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、バイトの配列を表します。
 title: IEEDataStorage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966436"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227334"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 このインターフェイスは、バイトの配列を表します。
@@ -37,7 +38,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  インターフェイスには `IEEDataStorage` 、次のメソッドが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|指定したバッファーに、指定したデータバイト数を取得します。|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|使用可能なデータバイト数を取得します。|
@@ -47,7 +48,7 @@ IEEDataStorage : IUnknown
 
  カスタムビューアーでは、必要に応じてこのインターフェイスを使用することもできますが、通常はカスタムビューアーでカスタムインターフェイス、 [Getmemorybytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md) 、または [getmemorybytes](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) (文字列指向データ用) を使用します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

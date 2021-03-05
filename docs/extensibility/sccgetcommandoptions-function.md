@@ -1,4 +1,5 @@
 ---
+description: この関数は、指定されたコマンドの詳細オプションをユーザーに要求します。
 title: SccGetCommandOptions 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965201"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220808"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 関数
 この関数は、指定されたコマンドの詳細オプションをユーザーに要求します。
@@ -53,7 +54,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|正常終了しました。|
 |SCC_I_ADV_SUPPORT|ソース管理プラグインは、コマンドの高度なオプションをサポートしています。|

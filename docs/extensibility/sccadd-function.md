@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理システムに新しいファイルを追加します。
 title: SccAdd 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926860"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221726"
 ---
 # <a name="sccadd-function"></a>SccAdd 関数
 この関数は、ソース管理システムに新しいファイルを追加します。
@@ -68,7 +69,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|追加操作が正常に完了しました。|
 |SCC_E_FILEALREADYEXISTS|選択されたファイルは既にソース管理下にあります。|
@@ -89,7 +90,7 @@ SCCRTN SccAdd(
 
  配列で使用されるフラグの一覧を次に示し `pfOptions` ます。
 
-|オプション|値|意味|
+|オプション|値|説明|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|ソース管理プラグインは、ファイルの種類を検出する必要があります。|
 |SCC_FILETYPE_TEXT|0x01|ASCII テキストファイルを示します。|

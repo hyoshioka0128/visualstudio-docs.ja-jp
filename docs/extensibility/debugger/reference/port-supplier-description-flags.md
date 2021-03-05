@@ -1,4 +1,5 @@
 ---
+description: ポートサプライヤーに関する取得可能なメタデータを定義します。
 title: PORT_SUPPLIER_DESCRIPTION_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2fd9e9f5e6cdb8f56e16622cc05debf69c8c7f3d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f1806e75a8481fddef5118f594452393a1cef77
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225449"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -50,7 +51,7 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 
 この列挙体は、 [Getdescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) メソッドによって返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 ヘッダー: Msdbg. h
 

@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理操作のバッチシーケンスを開始します。
 title: SccBeginBatch 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52b82919b10e58772343aee42cb8723b10d6ca3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952136"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221653"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 関数
 この関数は、ソース管理操作のバッチシーケンスを開始します。 バッチを終了するために [Sccendbatch](../extensibility/sccendbatch-function.md) が呼び出されます。 これらのバッチを入れ子にすることはできません。
@@ -34,7 +35,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|操作のバッチが正常に開始しました。|
 |SCC_E_UNKNOWNERROR|不特定のエラーです。|

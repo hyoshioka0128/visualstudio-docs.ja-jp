@@ -1,4 +1,5 @@
 ---
+description: この関数を使用すると、ユーザーは既にソース管理システムにあるファイルを参照し、そのファイルを現在のプロジェクトの一部にすることができます。
 title: SccAddFromScc 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e35ae460d6ceb505bc7ad64a0e522bf2841260f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bbc321d7ff7e335b28f6bc7430fb0f8dce3d57c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886614"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221705"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 関数
 この関数を使用すると、ユーザーは既にソース管理システムにあるファイルを参照し、そのファイルを現在のプロジェクトの一部にすることができます。 たとえば、この関数では、ファイルをコピーせずに、現在のプロジェクトに共通のヘッダーファイルを取得できます。 ファイルの戻り値の配列には、 `lplpFileNames` ユーザーが IDE プロジェクトに追加するファイルの一覧が含まれています。
@@ -53,7 +54,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|ファイルが正常に配置され、プロジェクトに追加されました。|
 |SCC_I_OPERATIONCANCELED|操作はキャンセルされましたが、無効です。|

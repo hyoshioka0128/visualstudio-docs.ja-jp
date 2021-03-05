@@ -1,4 +1,5 @@
 ---
+description: この関数は、以前にチェックアウトされたファイルをソース管理システムにチェックインし、変更を保存し、新しいバージョンを作成します。
 title: SccCheckin 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a835ead5fb0404b78d9e9c9ecc92ee0c73eaf252
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952110"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220860"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 関数
 この関数は、以前にチェックアウトされたファイルをソース管理システムにチェックインし、変更を保存し、新しいバージョンを作成します。 この関数は、カウントと、チェックインするファイルの名前の配列を使用して呼び出されます。
@@ -68,14 +69,14 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|ファイルは正常にチェックインされました。|
 |SCC_E_FILENOTCONTROLLED|選択したファイルはソースコード管理されていません。|
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。 ファイルがチェックインされませんでした。|
 |SCC_E_NOTCHECKEDOUT|ユーザーはファイルをチェックアウトしていないので、チェックインできません。|
-|SCC_E_CHECKINCONFLICT|次の理由により、チェックインを実行できませんでした:<br /><br /> -別のユーザーが事前にチェックインし、 `bAutoReconcile` が false でした。<br /><br /> \- または -<br /><br /> -自動マージは実行できません (たとえば、ファイルがバイナリの場合)。|
+|SCC_E_CHECKINCONFLICT|次の理由により、チェックインを実行できませんでした:<br /><br /> -別のユーザーが事前にチェックインし、 `bAutoReconcile` が false でした。<br /><br /> - または -<br /><br /> -自動マージは実行できません (たとえば、ファイルがバイナリの場合)。|
 |SCC_E_VERIFYMERGE|ファイルは自動マージされていますが、保留中のユーザーの検証がチェックインされていません。|
 |SCC_E_FIXMERGE|ファイルは自動マージされていますが、マージの競合が原因でチェックインされていないため、手動で解決する必要があります。|
 |SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|

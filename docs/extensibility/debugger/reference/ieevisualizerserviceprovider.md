@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ビジュアライザーサービスを作成できるメソッドへのアクセスを提供します。このメソッドは、IDE の型ビジュアライザータスクを処理するために使用されます。
 title: IEEVisualizerServiceProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40e811d33d23b35553ffb23338bed19dc207e1e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4fc53ae13588a0e285e4a62691da4d88a94d5f5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907791"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227178"
 ---
 # <a name="ieevisualizerserviceprovider"></a>IEEVisualizerServiceProvider
 > [!IMPORTANT]
@@ -39,7 +40,7 @@ IEEVisualizerServiceProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)|ビジュアライザーサービスを作成します|
 
@@ -48,7 +49,7 @@ IEEVisualizerServiceProvider : IUnknown
 
  これらのインターフェイスの相互作用の詳細については [、「データの視覚化と表示](../../../extensibility/debugger/visualizing-and-viewing-data.md) 」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。
