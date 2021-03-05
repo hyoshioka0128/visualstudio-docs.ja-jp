@@ -1,4 +1,5 @@
 ---
+description: パーサーツリーが拡張された式エバリュエーター (EE) を表します。
 title: IDebugExpressionEvaluator3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d37d1afb33642d352a86c197cdcb72afef5330
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3732e1262424fbe54de835848642f7ab1c78d7e9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915539"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152157"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
@@ -35,11 +36,11 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 ## <a name="methods"></a>メソッド
  このインターフェイスは、 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|シンボルプロバイダーおよび評価フレームのアドレスを指定して、式文字列を解析済みの式に変換します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

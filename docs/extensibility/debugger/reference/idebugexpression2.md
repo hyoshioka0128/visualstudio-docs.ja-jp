@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、バインドおよび評価の準備ができている解析済みの式を表します。
 title: IDebugExpression2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fe6a6955f5d8d4ae42d51e3623b0c4f966dc416
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949585"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152664"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 このインターフェイスは、バインドおよび評価の準備ができている解析済みの式を表します。
@@ -37,7 +38,7 @@ IDebugExpression2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugExpression2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|この式を非同期的に評価します。|
 |[中止](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|非同期式の評価を終了します。|
@@ -50,7 +51,7 @@ IDebugExpression2 : IUnknown
 
  の実装では `IDebugExpressionContext2::ParseText` 、DE は COM の `CoCreateInstance` 関数を使用して式エバリュエーターをインスタンス化し、 [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) インターフェイスを取得します (インターフェイスの例を参照してください `IDebugExpressionEvaluator` )。 次に、DE は [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) インターフェイスを取得します。 このインターフェイスは、およびの実装で `IDebugExpression2::EvaluateSync` `IDebugExpression2::EvaluateAsync` 評価を実行するために使用されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

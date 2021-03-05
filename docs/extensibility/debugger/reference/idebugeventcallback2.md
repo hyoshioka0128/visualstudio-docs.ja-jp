@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグエンジン (DE) がデバッグイベントをセッションデバッグマネージャー (SDM) に送信するために使用されます。
 title: IDebugEventCallback2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe81a7d8a07a80f38e771e2cfbac3ec23da54b62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb33bcbdff14b0f95aab5d8f300473c13d4c342f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933363"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152911"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 このインターフェイスは、デバッグエンジン (DE) がデバッグイベントをセッションデバッグマネージャー (SDM) に送信するために使用されます。
@@ -37,7 +38,7 @@ IDebugEventCallback2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugEventCallback2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)|SDM にデバッグイベントの通知を送信します。|
 
@@ -46,7 +47,7 @@ IDebugEventCallback2 : IUnknown
 
  パッケージがマネージコードで [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) を実装している場合は、 <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)に渡されるさまざまなインターフェイスで呼び出されることを強くお勧めします。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

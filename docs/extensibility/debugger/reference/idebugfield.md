@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、フィールド、つまりシンボルまたは型の説明を表します。
 title: IDebugField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a5bfe92547738a672cb6881234ae80f76aeda8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869766"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151845"
 ---
 # <a name="idebugfield"></a>IDebugField
 このインターフェイスは、フィールド、つまりシンボルまたは型の説明を表します。
@@ -37,7 +38,7 @@ IDebugField : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugField` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|記号または型に関する参照可能情報を取得します。|
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|フィールドの種類を取得します。|
@@ -62,7 +63,7 @@ weather stormy;
 
  フィールドがシンボルまたは型を表すかどうかを判断するには、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) を呼び出し、 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) の結果を調べます。 ビットが設定されている場合、 `FIELD_KIND_TYPE` フィールドは型であり、ビットが設定されている場合 `FIELD_KIND_SYMBOL` は記号になります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
