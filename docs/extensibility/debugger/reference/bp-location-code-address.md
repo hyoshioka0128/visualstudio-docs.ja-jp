@@ -1,4 +1,5 @@
 ---
+description: コード内のアドレスのブレークポイントの位置を記述します。
 title: BP_LOCATION_CODE_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a438e3e30d541b641b0f9ae74160ee4e22b131b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 961a62284b841d56ae73a29df0e83810ff9d7d20
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948401"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144443"
 ---
 # <a name="bp_location_code_address"></a>BP_LOCATION_CODE_ADDRESS
 コード内のアドレスのブレークポイントの位置を記述します。
@@ -51,7 +52,7 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ## <a name="remarks"></a>解説
 この構造体は、共用体の一部として [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 構造体のメンバーになります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

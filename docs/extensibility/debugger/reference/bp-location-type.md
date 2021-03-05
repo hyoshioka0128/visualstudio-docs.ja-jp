@@ -1,4 +1,5 @@
 ---
+description: ブレークポイント要求のブレークポイントの場所の種類を指定します。
 title: BP_LOCATION_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 735acca4d4b2e2881c49a236dadae44aaa3cc1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1ccf81393e42cc79b0ef93703b4a2327207baf6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144196"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 ブレークポイント要求のブレークポイントの場所の種類を指定します。
@@ -121,7 +122,7 @@ public enum enum_BP_LOCATION_TYPE {
 
 `BPT_CODE` および `BPT_DATA` は [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 列挙型のメンバーです。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

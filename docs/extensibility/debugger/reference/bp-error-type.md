@@ -1,4 +1,5 @@
 ---
+description: ブレークポイントのエラーの種類を指定します。
 title: BP_ERROR_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b67b28c61624b73787dabe9fd24c4c39ff9b3c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853053"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144430"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 ブレークポイントのエラーの種類を指定します。
@@ -99,7 +100,7 @@ public enum enum_BP_ERROR_TYPE {
 
 ブレークポイントのエラーの種類は、型と重大度で構成されています。 つまり、ブレークポイントのエラーの種類は、単独では型 (たとえば、 `BPET_TYPE_ERROR` ) または重大度 (など) にすぎません `BPET_SEV_GENERAL` 。 `BPET_GENERAL_WARNING` と `BPET_GENERAL_ERROR` には、一般的な警告とエラーのブレークポイントの定義済みの値が用意されています。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

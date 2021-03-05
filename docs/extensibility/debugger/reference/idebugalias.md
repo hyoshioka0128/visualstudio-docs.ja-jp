@@ -1,4 +1,5 @@
 ---
+description: 変数の数値の別名を表します。
 title: IDebugAlias |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad298d83efd16112a0cf1be3171601b93342a55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fd5639c510ba5a4a346c7a6f2630e7f14ddf036
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944720"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143884"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugAlias : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスでは、次のメソッドが定義されてい `IDebugAlias` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|このエイリアスが参照するオブジェクトを取得します。|
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|エイリアス名を取得します。|
@@ -50,7 +51,7 @@ IDebugAlias : IUnknown
 ## <a name="remarks"></a>解説
  エイリアスは、文字列形式の10進数の後に # 文字が続きます (たとえば、1001 #)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

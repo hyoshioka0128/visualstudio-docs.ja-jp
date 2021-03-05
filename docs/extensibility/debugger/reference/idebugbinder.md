@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、通常、シンボルプロバイダーによって返されるシンボルフィールドを、シンボルの現在の値を含むメモリコンテキストまたはオブジェクトにバインドします。
 title: IDebugBinder |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: febe22338ddeaf275b37ae09c76921c91ec509da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925121"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143624"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugBinder : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugBinder` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[束縛](../../../extensibility/debugger/reference/idebugbinder-bind.md)|シンボルの現在の値を格納しているメモリコンテキストまたはオブジェクトを取得します。|
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|オブジェクトの実行時の型を決定します。|
@@ -51,7 +52,7 @@ IDebugBinder : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、解析ツリーの式エバリュエーターによって使用されるオブジェクトを返します。 式エバリュエーターは、シンボルプロバイダーを使用して式を解析し、式のシンボルを [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)のインスタンスに変換します。これにより、ソースコード内の型と場所について、各シンボルが記述されます。 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)メソッドは、 `IDebugField` オブジェクトを[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトに変換します。このオブジェクトは、シンボル型をメモリ内の実際の値に接続またはバインドします。 これらの `IDebugObject` オブジェクトは、後で評価できるように解析ツリーに格納されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

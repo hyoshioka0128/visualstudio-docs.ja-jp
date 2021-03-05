@@ -1,4 +1,5 @@
 ---
+description: ポートを選択するためのカスタマイズされた UI を表します。
 title: IDebugPortPicker |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd4f85bfdfb58baff3301c2d858f52933f16d1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 335a954603505d064f32e8f901ce428d6cb8dfa1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958597"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142637"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 ポートを選択するためのカスタマイズされた UI を表します。
@@ -32,12 +33,12 @@ IDebugPortPicker : IUnknown
 ## <a name="methods"></a>メソッド
  次の表に、のメソッドを示し `IDebugPortPicker` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|指定されたダイアログボックスを表示し、ユーザーがポートを選択できるようにします。|
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|サービスプロバイダーを設定します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

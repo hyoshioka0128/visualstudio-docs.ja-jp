@@ -1,4 +1,5 @@
 ---
+description: 変数の数値の別名を表し、式エバリュエーター (EE) がエイリアスのアプリケーションドメインを取得できるようにします。
 title: IDebugAlias2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 171e9da3b25aa33ad3921f4ec5f841429490be72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f383e31f43e1e6422892547d66af533c2f4ab87f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944616"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143858"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
@@ -35,14 +36,14 @@ IDebugAlias2 : IDebugAlias
 ## <a name="methods"></a>メソッド
  このインターフェイスは、 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetAppDomainId](../../../extensibility/debugger/reference/idebugalias2-getappdomainid.md)|アプリケーションドメインの識別子を取得します。|
 
 ## <a name="remarks"></a>解説
  エイリアスは、文字列形式の10進数の後に # 文字が続きます (たとえば、1001 #)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

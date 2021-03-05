@@ -1,4 +1,5 @@
 ---
+description: 次に示すのは、Visual Studio デバッグ SDK の列挙です。
 title: 列挙型 (Visual Studio のデバッグ) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45b26a6d5bc2a9bdb32d5a8412458e6a126486d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21813818436e62eb7e9fc16a393af69a613d6d58
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937128"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144144"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>列挙 (Visual Studio のデバッグ)
 次に示すのは、デバッグ SDK の列挙です [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
@@ -169,7 +170,7 @@ ms.locfileid: "99937128"
 
 - [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) スレッドの状態を指定します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg .h、sh. h、または ee
 
  名前空間: VisualStudio。
