@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ソースファイルドキュメント内の位置を表します。
 title: IDebugDocumentContext2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64db2446496d2083d34eefc92afabc3ca541442e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa46f2c8becc7359bb08046369c9349861c63314
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946970"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162811"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 このインターフェイスは、ソースファイルドキュメント内の位置を表します。
@@ -37,7 +38,7 @@ IDebugDocumentContext2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugDocumentContext2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetDocument](../../../extensibility/debugger/reference/idebugdocumentcontext2-getdocument.md)|このドキュメントコンテキストを含むドキュメントを取得します。|
 |[GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)|このドキュメントコンテキストを含むドキュメントの表示可能な名前を取得します。|
@@ -48,7 +49,7 @@ IDebugDocumentContext2 : IUnknown
 |[比較](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|このドキュメントコンテキストと、指定されたドキュメントコンテキストの配列を比較します。|
 |[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|指定された数のステートメントまたは行によってドキュメントコンテキストを移動します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: IDebugBreakPointRequest2 インターフェイスは、任意の種類のブレークポイントを作成およびバインドするために必要な情報を表します。
 title: IDebugBreakpointRequest2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31b7cfe2480fa3b16a4d3c8c08185194fec6b79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e7d13c945de1358265a5eb92769192ce736be49
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951200"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162356"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 このインターフェイスは、任意の種類のブレークポイントを作成およびバインドするために必要な情報を表します。
@@ -37,7 +38,7 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugBreakpointRequest2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)|このブレークポイント要求のブレークポイントの位置の種類を取得します。|
 |[GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)|このブレークポイント要求を説明するブレークポイント要求情報を取得します。|
@@ -45,7 +46,7 @@ IDebugBreakpointRequest2 : IUnknown
 ## <a name="remarks"></a>解説
  デバッグ中のプログラムが読み込まれると、 [バインド](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) を呼び出すと、保留中のブレークポイントがプログラム内の要求された場所にバインドされます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

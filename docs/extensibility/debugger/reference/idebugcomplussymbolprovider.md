@@ -1,4 +1,5 @@
 ---
+description: マネージコードに固有のメソッドを持つ COM + シンボルプロバイダーを表します。
 title: IDebugComPlusSymbolProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e168066cc01a9e557bc0b4f301ae6218664552
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 20ede060901a9aeec591fb17d1f632cb5d228963
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955035"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163474"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 マネージコードに固有のメソッドを持つ COM + シンボルプロバイダーを表します。
@@ -32,7 +33,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ## <a name="methods"></a>メソッド
  このインターフェイスは、 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|アプリケーションドメイン識別子を指定して、指定したモジュールのデバッグシンボルを読み込むかどうかを決定します。|
 |[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|指定したプリミティブ型から型を作成します。|
@@ -57,7 +58,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |[UnloadSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-unloadsymbols.md)|指定したモジュールのデバッグシンボルをメモリからアンロードします。|
 |[UpdateSymbols](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-updatesymbols.md)|指定されたデータストリームを使用して、メモリ内のデバッグシンボルを更新します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: この構造体は、ローカル変数、パラメーター、またはその他のフィールドを記述します。
 title: FIELD_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f358c6c9a192ddd4d71f26a0f2f795ae012bc2c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47b7c7cb3a77d0ad925b044130901dd481b99943
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941841"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162434"
 ---
 # <a name="field_info"></a>FIELD_INFO
 この構造体は、ローカル変数、パラメーター、またはその他のフィールドを記述します。
@@ -66,7 +67,7 @@ public struct FIELD_INFO {
 ## <a name="remarks"></a>解説
 この構造体は、入力されている [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) メソッドに渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

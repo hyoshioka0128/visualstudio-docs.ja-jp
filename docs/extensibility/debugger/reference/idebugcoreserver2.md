@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ネットワーク上のコンピューター上のサーバーから情報を表示して取得するために使用されます。
 title: IDebugCoreServer2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba05cb5a933c5b3caaf080c9098c83451a20e484
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 871f7ea5671fa4f3c615d84e0591bd331f945ccc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163136"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 このインターフェイスは、ネットワーク上のコンピューター上のサーバーから情報を表示して取得するために使用されます。
@@ -39,7 +40,7 @@ IDebugCoreServer2 : IUknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugCoreServer2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)|コンピューターの名前と属性を取得します。|
 |[GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)|コンピューターの名前を取得します。|
@@ -52,7 +53,7 @@ IDebugCoreServer2 : IUknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、ネットワーク上のコンピューター上で実行されているプロセスを参照するために Visual Studio によっても使用されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
