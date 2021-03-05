@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、プロセスが実行されているサーバーに関する情報へのアクセスを提供します。
 title: IDebugCoreServer3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6faa47bc107c8d00864307bdb6802908e085652
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928471"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154614"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 このインターフェイスは、プロセスが実行されているサーバーに関する情報へのアクセスを提供します。
@@ -37,7 +38,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  このインターフェイスは、 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)|サーバーの名前を取得します。|
 |[GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md)|サーバー名のフレンドリバージョンを取得します。|
@@ -51,7 +52,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="remarks"></a>解説
  カスタムポートサプライヤーは、[イベント](../../../extensibility/debugger/reference/idebugportevents2-event.md)の呼び出しで[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)インターフェイスを受け取ります。 インターフェイスは、 `IDebugCoreServer3` そのインターフェイスから取得できます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

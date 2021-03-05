@@ -1,4 +1,5 @@
 ---
+description: デバッグエンジン (DE) がプログラムを起動して終了するために使用します。
 title: IDebugEngineLaunch2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4485001341399d3830864a30b64fec24a77c5a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f03b4754d1648dc8a184d59e5e8b0f038a000bf2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892724"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153470"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 デバッグエンジン (DE) がプログラムを起動して終了するために使用します。
@@ -37,14 +38,14 @@ IDebugEngineLaunch2 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugEngineLaunch2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)|DE を通じてプロセスを起動します。|
 |[ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)|プロセスの実行を再開します。|
 |[CanTerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-canterminateprocess.md)|プロセスを終了できるかどうかを決定します。|
 |[TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md)|プロセスを終了します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

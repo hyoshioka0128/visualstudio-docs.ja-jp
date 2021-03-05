@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、マルチスレッドデバッグをサポートします。
 title: IDebugEngineProgram2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892607"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153379"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 このインターフェイスは、マルチスレッドデバッグをサポートします。
@@ -37,7 +38,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugEngineProgram2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|このプログラムで実行されているすべてのスレッドを停止します。|
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|指定されたスレッドで実行を監視します (または実行の監視を停止します)。|
@@ -46,7 +47,7 @@ IDebugEngineProgram2 : IUnknown
 ## <a name="remarks"></a>解説
  Visual Studio は、 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) イベントに応答してこのインターフェイスを呼び出し、"スレッドのウォッチ" ステップと "スレッドでの式の評価を監視する" というプログラムの状態を設定します。 [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) は、プログラムが停止されるたびに呼び出されます。このメソッドは、プログラムがすべてのスレッドを終了する機会を提供します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

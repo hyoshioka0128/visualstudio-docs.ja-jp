@@ -1,4 +1,5 @@
 ---
+description: 1つ以上のモジュールのデバッグを制御する1つのデバッグエンジン (DE) を表します。
 title: IDebugEngine3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a985acc5a949ead841239d56c8b067967531fb1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d91098a1f0a7f2df579a347fccb01239fdfeebe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927055"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153672"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 1つ以上のモジュールのデバッグを制御する1つのデバッグエンジン (DE) を表します。
@@ -37,7 +38,7 @@ IDebugEngine3 : IDebugEngine2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスは、 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)から継承されたメソッドに加えて、 `IDebugEngine3` 次のメソッドを公開します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|デバッグシンボルの検索に DE が使用するパスまたはパスを設定します。|
 |[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|シンボルが読み込まれていないすべてのモジュールのシンボルを読み込みます。|
@@ -45,7 +46,7 @@ IDebugEngine3 : IDebugEngine2
 |[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|メトリックから DE の GUID を設定します。|
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|現在未解決のすべての例外を指定された状態に設定します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
