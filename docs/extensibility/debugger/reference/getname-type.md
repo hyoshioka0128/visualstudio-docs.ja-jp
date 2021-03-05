@@ -1,4 +1,5 @@
 ---
+description: 取得するファイルの名前の種類を指定します。
 title: GETNAME_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 541f8b51d4ce56b167abd3ecdb28d08bec0c02c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9811312188e63017e074d12be6dfa67ab6929aa6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891268"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162447"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 取得するファイルの名前の種類を指定します。
@@ -77,7 +78,7 @@ public enum enum_GETNAME_TYPE {
 ## <a name="remarks"></a>解説
 これらの値は、返される名前の種類を指定するために、 [getname](../../../extensibility/debugger/reference/idebugdocument2-getname.md)、 [Getname](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)、および [getname](../../../extensibility/debugger/reference/idebugprocess2-getname.md) メソッドにパラメーターとして渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
