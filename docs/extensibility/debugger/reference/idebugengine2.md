@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグエンジン (DE) を表します。
 title: IDebugEngine2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce76ccdc444dafc4b6b8ee6afb3c9ded8adcf3d0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919927"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153834"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 このインターフェイスは、デバッグエンジン (DE) を表します。 ブレークポイントの作成から例外の設定および消去まで、デバッグセッションのさまざまな側面を管理するために使用されます。
@@ -37,7 +38,7 @@ IDebugEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugEngine2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)|DE によってデバッグされているすべてのプログラムの列挙子を作成します。|
 |[[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)|プログラムに DE をアタッチします。|
@@ -53,7 +54,7 @@ IDebugEngine2 : IUnknown
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|メトリックを設定します。|
 |[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|この DE によってデバッグされているすべてのプログラムは、そのスレッドの1つが次に実行を試みたときに実行を停止するよう要求します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: このメソッドは、ジャスト Mycode 状態情報についてデバッグエンジンに通知します。
 title: 'IDebugEngine3:: Setジャスト Mycodestate |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a81fa4bda506cf1be27f658b071910e7c8ccd8a7
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887186"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153704"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 このメソッドは、ジャスト Mycode 状態情報についてデバッグエンジンに通知します。

@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスはカスタム属性を表し、属性の名前、親、およびクラスの型を提供できます。
 title: IDebugCustomAttribute |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1baa46cd9be53134d42c71e8c2bd88e3e2c38d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 724aedb41a11607f89193b51f41e403a6da7dd45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907957"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154497"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 このインターフェイスはカスタム属性を表し、属性の名前、親、およびクラスの型を提供できます。
@@ -37,7 +38,7 @@ IDebugCustomAttribute : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugCustomAttribute` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetParentField](../../../extensibility/debugger/reference/idebugcustomattribute-getparentfield.md)|現在の属性がアタッチされているフィールドを取得します。|
 |[GetAttributeTypeField](../../../extensibility/debugger/reference/idebugcustomattribute-getattributetypefield.md)|カスタム属性クラスの型を取得します。|
@@ -47,7 +48,7 @@ IDebugCustomAttribute : IUnknown
 ## <a name="remarks"></a>解説
  カスタム属性は、特定のクラスまたはメソッドに関連付けられたカスタムメタデータを提供する C# の構造体です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

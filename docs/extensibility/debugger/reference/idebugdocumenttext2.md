@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、テキストドキュメントを表します。
 title: IDebugDocumentText2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af72993a4a02ce7d25858bf3bd4f0690e0d30f5a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb1c5928362616466985a6f88102ffcbf4377444
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923105"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154211"
 ---
 # <a name="idebugdocumenttext2"></a>IDebugDocumentText2
 このインターフェイスは、テキストドキュメントを表します。
@@ -37,7 +38,7 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  このインターフェイスには、インターフェイスのメソッドに加えて、 `IDebugDocument2` 次のメソッドが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|ドキュメント内のこの位置にあるテキストのサイズを取得します。|
 |[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|ドキュメント内の指定した位置からテキストを取得します。|
@@ -45,7 +46,7 @@ IDebugDocumentText2 : IDebugDocument2
 ## <a name="remarks"></a>解説
  このインターフェイスを実装するオブジェクトは、 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md) オブジェクトのインターフェイスを提供するインターフェイスも実装する必要があります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
