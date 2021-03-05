@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグできるプログラムを表します。
 title: IDebugProgramNode2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e6460653795720f10dca7f304035c49e4d8e035
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d697ce389a7672f4f97efc17547e79173da3e2dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898526"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151572"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 このインターフェイスは、デバッグできるプログラムを表します。
@@ -37,7 +38,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugProgramNode2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetProgramName](../../../extensibility/debugger/reference/idebugprogramnode2-getprogramname.md)|プログラムの名前を取得します。|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)|プログラムをホストしているプロセスの名前を取得します。|
@@ -50,7 +51,7 @@ IDebugProgramNode2 : IUnknown
 ## <a name="remarks"></a>解説
  セッションデバッグマネージャー (SDM) は、通常、このインターフェイスを取得するために [Getproviderprogramnode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) を呼び出します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

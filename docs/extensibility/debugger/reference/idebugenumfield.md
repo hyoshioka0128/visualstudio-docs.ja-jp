@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、列挙型を表します。
 title: IDebugEnumField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a67c660ec8457191e688fdd430c3f7a07b5d75c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f78e8d2560224ad22a58b74823530b6be4b1efb8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933324"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153210"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 このインターフェイスは、列挙型を表します。
@@ -37,7 +38,7 @@ IDebugEnumField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>VTable の順序でのメソッド
  インターフェイスおよびインターフェイスのメソッドに加え `IDebugField` て `IDebugContainerField` 、このインターフェイスは次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|この列挙型の名前を記述する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。|
 |[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|指定された値に関連付けられている列挙定数の名前を返します。|
@@ -47,7 +48,7 @@ IDebugEnumField : IDebugContainerField
 ## <a name="remarks"></a>解説
  これは、 [バインド](../../../extensibility/debugger/reference/idebugbinder-bind.md)がある場所に実際にバインドされている、基になるシンボルです。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

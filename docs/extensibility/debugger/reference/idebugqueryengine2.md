@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) は、デバッグエンジン (DE) を表すインターフェイスを取得できます。
 title: IDebugQueryEngine2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b555ac218ceee1d376c9f7cf3c9df87f7c2e2da0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8e4cd9358cf63188ec88f4ec4a613aebf9d4f79
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909781"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151403"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) は、デバッグエンジン (DE) を表すインターフェイスを取得できます。
@@ -37,14 +38,14 @@ IDebugQueryEngine2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugQueryEngine2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|カスタムデバッグエンジン (DE) インターフェイスを取得します。|
 
 ## <a name="remarks"></a>解説
  このインターフェイスは、通常、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスを実装するオブジェクトに実装されます。これは、関数を使用した因果関係のステップ実行をサポートするためです。つまり、デバッガーが関数からステップアウトすると、次に実行される関数がスタック上の前の関数ではなく、別のスレッドの関数が完全になることがあります。 "因果関係" の定義については、「 [Visual Studio デバッガー用語集](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
