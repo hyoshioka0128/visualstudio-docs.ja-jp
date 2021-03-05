@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、セッションデバッグマネージャー (SDM) にポートを提供します。
 title: IDebugPortSupplier2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840367"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172040"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 このインターフェイスは、セッションデバッグマネージャー (SDM) にポートを提供します。
@@ -60,7 +61,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表に、のメソッドを示し `IDebugPortSupplier2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|ポートのサプライヤー名を取得します。|
 |[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|ポートサプライヤー識別子を取得します。|
@@ -73,7 +74,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 ## <a name="remarks"></a>解説
 ポートサプライヤーは、名前と ID で自身を識別したり、ポートを追加および削除したり、ポート供給元が提供するすべてのポートを列挙したりできます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

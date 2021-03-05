@@ -1,4 +1,5 @@
 ---
+description: マネージ配列オブジェクトを表し、式エバリュエーター (EE) が配列のベースインデックス (下限) を決定できるようにします。
 title: IDebugArrayObject2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 418ec9bdef9621f7623e254856ae33dec501a9c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6bb73834f53e22df63682663539b5f01685b30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870026"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174125"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
@@ -35,7 +36,7 @@ IDebugArrayObject2 : IDebugArrayObject
 ## <a name="methods"></a>メソッド
  このインターフェイスは、 [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-getbaseindices.md)|配列内の次元数を指定して、各インデックスのベースインデックス (下限) を取得します。|
 |[HasBaseIndices](../../../extensibility/debugger/reference/idebugarrayobject2-hasbaseindices.md)|配列にベースインデックス (下限) が定義されているかどうかを判断します。|
@@ -43,7 +44,7 @@ IDebugArrayObject2 : IDebugArrayObject
 ## <a name="remarks"></a>解説
  式エバリュエーターは、このインターフェイスを使用して、解析ツリー内のマネージ配列を表します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

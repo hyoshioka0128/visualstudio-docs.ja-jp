@@ -1,4 +1,5 @@
 ---
+description: 次のインターフェイスは、VS SDK を使用してデバッガーを拡張するためのコアインターフェイスです。
 title: コアインターフェイス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f24dd16656144fa155d0473d7f722487c0edd03
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899172"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170758"
 ---
 # <a name="core-interfaces"></a>コア インターフェイス
 次のインターフェイスは、を使用してデバッガーを拡張するためのコアインターフェイスです [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
@@ -43,11 +44,11 @@ ms.locfileid: "99899172"
 
 - [ポート](#Ports)
 
-- [プロセス](#Processes)
+- [処理](#Processes)
 
 - [Programs](#Programs)
 
-- [プロパティ](#Properties)
+- [Properties](#Properties)
 
 - [スタック フレーム](#StackFrames)
 
@@ -68,7 +69,7 @@ ms.locfileid: "99899172"
 ## <a name="breakpoints"></a><a name="Breakpoints"></a> 区切り
  これらのインターフェイスは、ブレークポイントの実装と追跡に関連しています。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)|DE|メモリ位置にバインドされたブレークポイントを表します。|
 |[IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)|DE|ブレークポイントがメモリ位置にバインドされたときに、DE によって送信されます。|
@@ -89,7 +90,7 @@ ms.locfileid: "99899172"
 ## <a name="contexts"></a><a name="Contexts"></a> 状況
  これらのインターフェイスは、デバッグ中のプログラム内のさまざまな種類のコンテキストを表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|DE|コード命令の開始位置を表します。|
 |[IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)|DE|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)インターフェイスを拡張して、モジュールインターフェイスとプロセスインターフェイスを取得できるようにします。|
@@ -103,7 +104,7 @@ ms.locfileid: "99899172"
 ## <a name="core-server"></a><a name="CoreServer"></a> コアサーバー
  これらのインターフェイスは、プログラムがデバッグされているコンピューターを表します。 これらはによって実装され [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ますが、デバッグエンジンによって呼び出すことができます。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|コンピューターに関する情報だけでなく、ポートとポートの供給元へのアクセスを提供します。|
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|リモートデバッグをサポートする [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) を表します。|
@@ -111,7 +112,7 @@ ms.locfileid: "99899172"
 ## <a name="debug-engines"></a><a name="DebugEngines"></a> デバッグエンジン
  これらのインターフェイスは、デバッグエンジンとそれに関連付けられたイベントを表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)|DE|カスタムデバッグエンジンを表します。|
 |[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|シンボル、Mycode、および例外の読み込みをサポートするカスタムデバッグエンジンを表します。|
@@ -123,7 +124,7 @@ ms.locfileid: "99899172"
 ## <a name="documents"></a><a name="Documents"></a> ドキュメント
  これらのインターフェイスは、ドキュメント (ソースファイル) とそれに関連付けられている要素を表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|ドキュメントを開くように要求するために、DE によって送信されます。|
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|ドキュメントからの逆アセンブル命令のストリームを表します。|
@@ -138,7 +139,7 @@ ms.locfileid: "99899172"
 ## <a name="events"></a><a name="Events"></a> 記録
  これらのインターフェイスは、DE とセッションデバッグマネージャー (SDM) の間で送信されるすべてのイベントを表します。
 
-| インターフェイス | 実装 | Description |
+| Interface | 実装 | 説明 |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | ドキュメントを開くように要求するために、DE によって送信されます。 |
 | [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) | DE | デバッグエンジン (DE) は、シンボルの読み込み中にステータスバーメッセージを設定するために、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。 |
@@ -183,7 +184,7 @@ ms.locfileid: "99899172"
 ## <a name="expressions"></a><a name="Expressions"></a> 式
  これらのインターフェイスは、特定のコンテキストで評価される式を表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)|DE|評価される式を表します。 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイスから取得されます。|
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|式が評価されるコンテキストを表します。 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)インターフェイスから取得されます。|
@@ -192,7 +193,7 @@ ms.locfileid: "99899172"
 ## <a name="memory"></a><a name="Memory"></a> 量
  これらのインターフェイスは、メモリ内のバイトシーケンスを表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|読み取りまたは書き込みが可能なメモリ内のバイトシーケンスを表します。|
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|バイトシーケンスのメモリ内の場所を表します。|
@@ -200,7 +201,7 @@ ms.locfileid: "99899172"
 ## <a name="modules"></a><a name="Modules"></a> モジュール
  これらのインターフェイスは、実行可能ファイルまたはに対応するモジュールを表します。DLL ファイル。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)|DE|1つの実行可能ファイルまたは DLL を表します。|
 |[IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)|DE|シンボルをサポートする [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) を表します。|
@@ -211,7 +212,7 @@ ms.locfileid: "99899172"
 ## <a name="ports"></a><a name="Ports"></a> シリアル
  これらのインターフェイスは、ポートとポートサプライヤーを表します。
 
-| インターフェイス | 実装 | Description |
+| Interface | 実装 | 説明 |
 | - |----------------| - |
 | [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md) | VS、PS | ローカルコンピューターの既定のポートを表します。 |
 | [IDebugFirewallConfigurationCallback2](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2.md) | VS | DCOM を使用して、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ファイアウォールがリモートデバッグをブロックしないように UI に要求するデバッグエンジンを有効にします。 |
@@ -231,7 +232,7 @@ ms.locfileid: "99899172"
 ## <a name="processes"></a><a name="Processes"></a> プロセス
  これらのインターフェイスは、1つまたは複数のプログラムを含む1つの実行可能ファイルであるプロセスを表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS、DE|コンピューター上で実行されているプロセスを表します。|
 |[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS、DE|デバッグをアクティブにサポートするプロセスを表します (ステップの置換、続行、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスのメソッドの実行に使用されます)。|
@@ -243,7 +244,7 @@ ms.locfileid: "99899172"
 ## <a name="programs"></a><a name="Programs"></a> プログラム
  これらのインターフェイスは、物理的な実行可能ファイルまたはモジュールに対応しているとは限りません。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|同時にデバッグされている他のプログラムと連携して作業する必要がある [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) を表します。|
 |[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE、PS|実行の論理単位を表します。|
@@ -262,7 +263,7 @@ ms.locfileid: "99899172"
 ## <a name="properties"></a><a name="Properties"></a> プロパティ
  これらのインターフェイスは、特定のコンテキストに関連付けられた値 (通常は式の評価の結果) を表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)|EE|カスタムの方法で値を表示できる [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) を表します。|
 |[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)|DE|スタックフレーム、ドキュメント、または式の評価結果の値を表します。|
@@ -276,7 +277,7 @@ ms.locfileid: "99899172"
 ## <a name="stack-frames"></a><a name="StackFrames"></a> スタックフレーム
  これらのインターフェイスは、ブレークポイントまたは例外が発生したコンテキストであるスタックフレームを表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)|DE|ブレークポイントまたは例外が発生したコンテキストを表します。|
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|インターセプトした例外を処理できる [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) を表します。|
@@ -286,7 +287,7 @@ ms.locfileid: "99899172"
 ## <a name="threads"></a><a name="Threads"></a>スレッド
  これらのインターフェイスは、スレッドとそれに関連付けられたイベントを表します。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)|DE|実行のスレッドを表します。|
 |[IDebugThreadCreateEvent2](../../../extensibility/debugger/reference/idebugthreadcreateevent2.md)|DE|スレッドが作成されたときに、DE によって送信されます。|
@@ -297,7 +298,7 @@ ms.locfileid: "99899172"
 ## <a name="type-visualizers"></a><a name="TypeVisualizers"></a> 型ビジュアライザー
  これらのインターフェイスは、型ビジュアライザーのサポートを提供します。 これらのインターフェイスは、通常、式エバリュエーターによって実装されます。
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)|EE|型ビジュアライザーに提示されるバイト配列を表します。|
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|型ビジュアライザーに渡されるデータへのアクセスを取得するためのメソッドを提供します。|

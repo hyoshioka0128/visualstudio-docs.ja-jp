@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ユーザーからの応答を必要とするメッセージを Visual Studio に送信するために、デバッグエンジン (DE) によって使用されます。
 title: IDebugMessageEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6796e2d4f3a7fa20e4bcab4088b6687866edf570
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c84bf93a50ce9a5e530ebb7143d7b1c69f50360
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928264"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172274"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 このインターフェイスは、ユーザーからの応答を必要とするメッセージを Visual Studio に送信するために、デバッグエンジン (DE) によって使用されます。
@@ -39,7 +40,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugMessageEvent2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|表示されるメッセージを取得します。|
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|メッセージボックスから応答 (存在する場合) を設定します。|
@@ -51,7 +52,7 @@ IDebugMessageEvent2 : IUnknown
 
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)インターフェイスを使用して、ユーザーからの応答を必要としないメッセージを Visual Studio に送信します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

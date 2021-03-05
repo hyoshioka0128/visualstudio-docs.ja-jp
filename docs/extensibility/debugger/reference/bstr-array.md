@@ -1,4 +1,5 @@
 ---
+description: 文字列の配列を記述する構造体。
 title: BSTR_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d16eb78cdb6c6b9e665dda8410f46d4cf61ee69a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5fb882bb31f6fd525d00dc134e042e9bce9398f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882213"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170973"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 文字列の配列を記述する構造体。
@@ -53,7 +54,7 @@ struct BSTR_ARRAY {
 
  [C++ のみ]個々の文字列は、を使用して解放する必要があり、 `SysFreeString` `Members` 配列はで解放する必要があり `CoTaskMemFree` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

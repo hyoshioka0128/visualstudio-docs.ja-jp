@@ -1,4 +1,5 @@
 ---
+description: IDebugProperty2 または IDebugReference2 インターフェイスのさまざまな属性について説明します。
 title: DBG_ATTRIB_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1093ab5252aa14418bebf4129d0c7d050d0e11d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f467c9ac66bc249974f919a48a1527bebb26f361
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170719"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)または[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)インターフェイスのさまざまな属性について説明します。 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)構造体のメンバー。
@@ -307,7 +308,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 
  `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`フラグは、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)インターフェイスから[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)インターフェイスを取得し、 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)を呼び出してカスタムビューアーの一覧を取得することを示しています。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

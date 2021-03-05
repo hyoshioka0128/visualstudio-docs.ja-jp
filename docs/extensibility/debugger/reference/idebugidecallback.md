@@ -1,4 +1,5 @@
 ---
+description: デバッガーの出力ウィンドウにメッセージを表示する式エバリュエーター (EE) を有効にします。
 title: IDebugIDECallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83243899bdc11c58e76c35b6d9eb7b9555794374
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0ef2072967aad5f2cd012283b0c6f4ac7b9b3be
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838657"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172559"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -38,11 +39,11 @@ IDebugIDECallback : IUnknown
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|指定したメッセージ文字列をデバッガーの出力ウィンドウに送信します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: GUID のリストを保持する構造体。
 title: CONST_GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2893b6a1e977b84fba3161a33a5342f94ccc030
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3caa4518872abbb2164e523b30679621d2bf319c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900295"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170810"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
 のリストを保持する構造体 `GUID` 。
@@ -53,7 +54,7 @@ public struct CONST_GUID_ARRAY {
 
 この構造体のインスタンスの所有者は、割り当てられたメモリを解放します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

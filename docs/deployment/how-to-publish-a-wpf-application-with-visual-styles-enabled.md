@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f090729cdd0d08d39cf97cab9c3899f0b77c80eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 285d624debed6dc498e3d274af2839137b5094d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900480"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171280"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>方法: Visual スタイルが有効になっている WPF アプリケーションを公開する
 
@@ -110,9 +110,9 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>マニフェスト ファイルを発行済みソリューションの実行可能ファイルに埋め込むには
 
-1. **Visual Studio コマンド プロンプト** を開きます。
+1. **Visual Studio の開発者コマンドプロンプトを** 開きます。
 
-    **Visual Studio コマンドプロンプト** を開く方法の詳細については、「[コマンドプロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)」を参照してください。
+    Visual Studio の開発者コマンドプロンプトを開く方法の詳細については、「 [開発者コマンドプロンプトと開発者向け PowerShell](../ide/reference/command-prompt-powershell.md)」を参照してください。
 
    > [!NOTE]
    > 残りの手順は、ソリューションに関して以下を前提とします。
@@ -179,7 +179,7 @@ visual スタイルを使用すると、ユーザーが選択したテーマに�
 
 ## <a name="see-also"></a>関連項目
 
--[ClickOnce 配置における特定のエラーのトラブルシューティング](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+- [ClickOnce 配置の固有のエラーのトラブルシューティング](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [視覚スタイルの概要](/windows/desktop/Controls/visual-styles-overview)
 - [視覚スタイルを有効にする](/windows/desktop/Controls/cookbook-overview)
-- [Visual Studio 用開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)
+- [開発者コマンドプロンプトと開発者向け PowerShell](../ide/reference/command-prompt-powershell.md)
