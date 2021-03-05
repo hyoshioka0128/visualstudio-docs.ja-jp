@@ -1,4 +1,5 @@
 ---
+description: コードソースファイル内の特定の行にあるブレークポイントの場所のデータを格納します。
 title: BP_LOCATION_CODE_FILE_LINE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 1a94425c86e59e360814df2053f003948af6e674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ad3452e0fce6ec7339fe2d8e67a2aee4585828c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916281"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144391"
 ---
 # <a name="bp_location_code_file_line"></a>BP_LOCATION_CODE_FILE_LINE
 コードソースファイル内の特定の行にあるブレークポイントの場所のデータを格納します。
@@ -43,7 +44,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE {
 ## <a name="remarks"></a>解説
 この構造体は、共用体の一部として [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 構造体のメンバーになります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

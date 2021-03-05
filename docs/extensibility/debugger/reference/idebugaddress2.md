@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、アドレスがこのインターフェイスによって表されるオブジェクトを所有するプロセスの ID へのアクセスを提供します。
 title: IDebugAddress2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b31efd42d4d51384a09d6f0468484561e32f4397
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58a3f01472f60996b7094334de8cb2dbd79acac0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944818"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143962"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 このインターフェイスは、アドレスがこのインターフェイスによって表されるオブジェクトを所有するプロセスの ID へのアクセスを提供します。
@@ -37,11 +38,11 @@ IDebugAddress2 : IDebugAddress
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスから継承されたメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|このインターフェイスによって表されるオブジェクトを所有するプロセスの ID を取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

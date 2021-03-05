@@ -1,4 +1,5 @@
 ---
+description: デバッグエンジン (DE) は、プログラムがブレークポイントで停止したときに、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
 title: IDebugBreakpointEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3ff9d1f83baeec275f285caa4aaca692e20958d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952305"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143338"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 デバッグエンジン (DE) は、プログラムがブレークポイントで停止したときに、このインターフェイスをセッションデバッグマネージャー (SDM) に送信します。
@@ -37,11 +38,11 @@ IDebugBreakpointEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugBreakpointEvent2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|現在のコードの場所で発生したすべてのブレークポイントの列挙子を作成します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

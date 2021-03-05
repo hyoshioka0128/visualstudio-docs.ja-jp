@@ -1,4 +1,5 @@
 ---
+description: プロセスで実行されているすべてのスレッドの一覧を取得します。
 title: 'IDebugProcess2:: EnumThreads |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c766ab8f12d9cda4348b9916d41b6182ccf67e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13d348376429bafaf113e6fb7dbd181bed4dab8f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890189"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142610"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 プロセスで実行されているすべてのスレッドの一覧を取得します。

@@ -1,4 +1,5 @@
 ---
+description: デバッグ対象のプログラム内のアドレスに直接バインドされているブレークポイントの位置を記述します。
 title: BP_LOCATION_CODE_CONTEXT |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: a51665a22a01c17256c41d45d2970bea0f617140
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b84e71c3102071dcdd0bcb5be9b539144c19047
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948388"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144404"
 ---
 # <a name="bp_location_code_context"></a>BP_LOCATION_CODE_CONTEXT
 デバッグ対象のプログラム内のアドレスに直接バインドされているブレークポイントの位置を記述します。
@@ -39,7 +40,7 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 ## <a name="remarks"></a>解説
 この構造体は、共用体の一部として [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 構造体のメンバーになります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

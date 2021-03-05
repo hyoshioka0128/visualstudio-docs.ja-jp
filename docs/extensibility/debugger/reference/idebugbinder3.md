@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、型、エイリアス、およびカスタムビジュアライザーサービスへのアクセスを提供します。
 title: IDebugBinder3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673e4a4f18488b973984319310c139e104524a47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f6be3b149450ec84158acc533230102fce5a67e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901891"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143611"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugBinder3 : IDebugBinder
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) インターフェイスによって提供されるメソッドに加えて、次のものを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|このオブジェクトのバインド先のメモリを表すメモリオブジェクトを取得します。|
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|このオブジェクトに関連付けられている例外 (存在する場合) を取得します。|
@@ -51,7 +52,7 @@ IDebugBinder3 : IDebugBinder
 |[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|ビジュアライザーサービスへのインターフェイスを取得します。|
 |[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|オブジェクトの場所または64ビットのメモリアドレスをメモリコンテキストに変換します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

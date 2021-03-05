@@ -1,4 +1,5 @@
 ---
+description: '統合開発環境 (IDE: integrated development environment) からユーザーが入力できる文字列に基づいてコードのブレークポイントを設定するために使用されます。'
 title: BP_LOCATION_CODE_STRING |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 98b85a1b27255902f4cfba9923beda4305ca03d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9508a4a83894757fb47e35d8db7334bfb144ff59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923221"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144378"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 統合開発環境 (IDE: integrated development environment) からユーザーが入力できる文字列に基づいてコードのブレークポイントを設定するために使用されます。
@@ -43,7 +44,7 @@ typedef struct _BP_LOCATION_CODE_STRING {
 ## <a name="remarks"></a>解説
 この構造体は、共用体の一部として [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 構造体のメンバーになります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

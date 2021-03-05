@@ -1,4 +1,5 @@
 ---
+description: ベンダー GUID、制約、およびトレースポイントを含む、ブレークポイントを実装するために必要な情報が含まれています。
 title: BP_REQUEST_INFO2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ad3c5492143f97559770c57d528971ac84f22fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1efeceb42d45822f232e5a2e5e2fbe33f9996e34
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903270"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144118"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
 ベンダー GUID、制約、およびトレースポイントを含む、ブレークポイントを実装するために必要な情報が含まれています。
@@ -106,7 +107,7 @@ public struct BP_REQUEST_INFO2 {
 ## <a name="remarks"></a>解説
 この構造体は、 [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) メソッドによって返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

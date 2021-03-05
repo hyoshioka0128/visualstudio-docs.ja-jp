@@ -1,4 +1,5 @@
 ---
+description: コード内の関数のブレークポイントのオフセット位置を記述します。
 title: BP_LOCATION_CODE_FUNC_OFFSET |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 93296770597e8809c5b739b46d8eaefdc8fe5daf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83a5a27601ab6d7498394d6723b86ad3e66aceb5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870286"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144365"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 コード内の関数のブレークポイントのオフセット位置を記述します。
@@ -45,7 +46,7 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 メンバーは、 `pFuncPos` 関数のブレークポイントを設定する場所を示します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
