@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、インターセプトされた例外を処理するために IDebugStackFrame2 を拡張します。
 title: IDebugStackFrame3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5511624fb69015351d8cc37d6b27ad142a5956d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961184"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159771"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 このインターフェイスは、インターセプトされた例外を処理するために [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) を拡張します。
@@ -37,7 +38,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)から継承されたメソッドに加えて、は `IDebugStackFrame3` 次のメソッドを公開します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|通常の例外処理の前に、現在のスタックフレームの例外を処理します。|
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|スタックアンワインドが発生した場合は、コードコンテキストを返します。|
@@ -54,7 +55,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  デバッグエンジンは、関数を使用して、実行時に "metricExceptions" を1の値に設定することによって、例外のインターセプトをサポートしていることを示してい `SetMetric` ます。 詳細については、「 [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
