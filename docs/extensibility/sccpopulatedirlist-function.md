@@ -1,4 +1,5 @@
 ---
+description: この関数は、確認するディレクトリのリストを指定して、ソース管理に格納するディレクトリと (必要に応じて) ファイルを決定します。
 title: SccPopulateDirList 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 991803511e48e72012c868eaa4b0afbd889b2380
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836918"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221510"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 関数
 この関数は、確認するディレクトリのリストを指定して、ソース管理に格納するディレクトリと (必要に応じて) ファイルを決定します。
@@ -63,7 +64,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|操作は正常に完了しました。|
 |SCC_E_UNKNOWNERROR|エラーが発生しました。|

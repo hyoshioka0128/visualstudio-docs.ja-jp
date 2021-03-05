@@ -1,4 +1,5 @@
 ---
+description: この関数は、現在の状態の完全修飾ディレクトリの一覧を調べます。
 title: SccDirQueryInfo 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943089"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220821"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 関数
 この関数は、現在の状態の完全修飾ディレクトリの一覧を調べます。
@@ -53,7 +54,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|クエリが正常に実行されました。|
 |SCC_E_OPNOTSUPPORTED|ソースコード管理システムでは、この操作はサポートされていません。|

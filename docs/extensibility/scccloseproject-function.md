@@ -1,4 +1,5 @@
 ---
+description: この関数は、プロジェクトを閉じて、特定のセッションの終了をマークします。
 title: SccCloseProject 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4a54193b23015135b6112655fe48d79d3de74e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3fb9208619639a8f1c767cbf12a2de0ed24768f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943154"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220873"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 関数
 この関数は、プロジェクトを閉じて、特定のセッションの終了をマークします。
@@ -36,7 +37,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|プロジェクトは正常に終了しました。|
 |SCC_E_PROJNOTOPEN|現在開いているプロジェクトはありません。|

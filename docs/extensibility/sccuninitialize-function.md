@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理プラグインをシャットダウンする準備として、SccInitialize の前回の呼び出しで作成された割り当てまたは開いている接続をクリーンアップします。
 title: SccUninitialize 解除関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7de3572b17bf47859a64451149a269988c91e5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 187451aba5151c95d8947bd4f5a1419894cc65e7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836684"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221328"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 関数
 この関数は、ソース管理プラグインをシャットダウンする準備として、 [Sccinitialize](../extensibility/sccinitialize-function.md) の前回の呼び出しで作成された割り当てまたは開いている接続をクリーンアップします。
@@ -38,7 +39,7 @@ SCCRTN SccUninitialize (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|クリーンアップが正常に完了しました。|
 

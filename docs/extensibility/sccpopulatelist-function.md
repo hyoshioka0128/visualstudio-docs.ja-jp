@@ -1,4 +1,5 @@
 ---
+description: この関数は、特定のソース管理コマンドのファイルの一覧を更新し、指定されたすべてのファイルに対してソース管理の状態を提供します。
 title: SccPopulateList 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2deb30b606de686269e095fffe369a7d56adb453
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24ed033d05711e4c6815945796595897e926ba74
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836931"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220548"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 関数
 この関数は、特定のソース管理コマンドのファイルの一覧を更新し、指定されたすべてのファイルに対してソース管理の状態を提供します。
@@ -73,7 +74,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|正常終了しました。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|

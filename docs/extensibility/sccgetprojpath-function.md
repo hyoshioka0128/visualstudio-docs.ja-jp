@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理プラグインにのみ意味のある文字列であるプロジェクトパスをユーザーに要求します。
 title: SccGetProjPath 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bad1cae248c0fe3babd920e0773825d9d36b7042
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844568"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220704"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 関数
 この関数は、ソース管理プラグインにのみ意味のある文字列であるプロジェクトパスをユーザーに要求します。 これは、ユーザーが次の場合に呼び出されます。
@@ -78,18 +79,18 @@ SCCRTN SccGetProjPath (
 
 |着信|解釈|
 |--------------|--------------------|
-|true|ユーザーは、新しいプロジェクトを作成できます。|
+|TRUE|ユーザーは、新しいプロジェクトを作成できます。|
 |false|ユーザーは、新しいプロジェクトを作成することはできません。|
 
 |送信|解釈|
 |--------------|--------------------|
-|true|新しいプロジェクトが作成されました。|
+|TRUE|新しいプロジェクトが作成されました。|
 |false|既存のプロジェクトが選択されました。|
 
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|プロジェクトが正常に作成または取得されました。|
 |SCC_I_OPERATIONCANCELED|操作は取り消されました。|

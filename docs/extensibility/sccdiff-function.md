@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理システムで現在のファイル (ローカルディスク上) と最後にチェックインされたバージョンとの相違点を表示します (または、必要に応じて確認するだけです)。
 title: SccDiff 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943115"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220847"
 ---
 # <a name="sccdiff-function"></a>SccDiff 関数
 この関数は、ソース管理システムで現在のファイル (ローカルディスク上) と最後にチェックインされたバージョンとの相違点を表示します (または、必要に応じて確認するだけです)。
@@ -58,7 +59,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|作業コピーとサーバーのバージョンが同じです。|
 |SCC_I_FILESDIFFERS|作業コピーは、ソース管理下のバージョンとは異なります。|
@@ -79,7 +80,7 @@ SCCRTN SccDiff(
 > [!NOTE]
 > クイック差分フラグは相互に排他的です。 フラグを渡すことは有効ですが、複数のを同時に渡すことはできません。 `SCC_DIFF_QUICK_DIFF`は、すべてのフラグを組み合わせたマスクであり、テストに使用できますが、パラメーターとして渡すことはできません。
 
-|`fOption`|意味|
+|`fOption`|説明|
 |---------------|-------------|
 |SCC_DIFF_IGNORECASE|大文字と小文字を区別しない比較 (クイックまたはビジュアルの違いに使用できます)。|
 |SCC_DIFF_IGNORESPACE|空白は無視されます (クイックまたはビジュアルの違いに使用される場合があります)。|

@@ -1,4 +1,5 @@
 ---
+description: 'この関数は、ソース管理プラグインを初期化し、統合開発環境 (IDE: integrated development environment) に機能と制限を提供します。'
 title: SccInitialize 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9fb944cb672249ecb823f48048d12c1b61d9e99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846362"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220587"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 関数
 この関数は、ソース管理プラグインを初期化し、統合開発環境 (IDE: integrated development environment) に機能と制限を提供します。
@@ -73,7 +74,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|ソース管理の初期化に成功しました。|
 |SCC_E_INITIALIZEFAILED|システムを初期化できませんでした。|

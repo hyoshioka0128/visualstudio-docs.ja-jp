@@ -1,4 +1,5 @@
 ---
+description: プロセスに関する情報を格納します。
 title: PROCESS_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76b8e36b6a6792b51552cb4203adebdc101cd808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5557e4171bdeb51ae1ac954870a85227a8c4c92
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963017"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222095"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 プロセスに関する情報を格納します。
@@ -86,7 +87,7 @@ public struct PROCESS_INFO {
 ## <a name="remarks"></a>解説
  この構造体は、入力されている [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) メソッドに渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

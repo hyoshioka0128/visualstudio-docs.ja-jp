@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fa4c2910a1f694a822d2a31b5ad537c8104f99c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926017"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221302"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 要素
 要素は、 `VisibilityItem` コマンドおよびツールバーの静的表示を決定します。 すべてのエントリは、コマンドまたはメニュー、および関連付けられたコマンド UI コンテキストを識別します。 Visual Studio では、コマンド、メニュー、ツールバー、およびそれらを定義する Vspackage が読み込まれていないかどうかが検出されます。 IDE では、メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> コマンド UI コンテキストがアクティブかどうかを判断します。
@@ -33,8 +33,8 @@ ms.locfileid: "99926017"
 
 ```xml
 <VisibilityItem
-  guid ="="cmdGuidMyProductCommands"
-  id=="cmdidAddWidget"
+  guid="cmdGuidMyProductCommands"
+  id="cmdidAddWidget"
   context="guidNotViewSourceMode"/>
 ```
 
@@ -45,10 +45,10 @@ ms.locfileid: "99926017"
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須。 GUID/ID コマンド識別子の GUID。|
-|id|必須。 GUID/ID コマンド識別子の ID。|
-|context|必須。 コマンドが表示される UI コンテキスト。|
-|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|guid|必須です。 GUID/ID コマンド識別子の GUID。|
+|id|必須です。 GUID/ID コマンド識別子の ID。|
+|context|必須です。 コマンドが表示される UI コンテキスト。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし

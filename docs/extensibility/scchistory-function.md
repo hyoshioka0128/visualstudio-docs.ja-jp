@@ -1,4 +1,5 @@
 ---
+description: この関数は、指定されたファイルの履歴を表示します。
 title: SccHistory 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61ca9071373cd25a4a8bd0d367a97654dfdefb3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893569"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220574"
 ---
 # <a name="scchistory-function"></a>SccHistory 関数
 この関数は、指定されたファイルの履歴を表示します。
@@ -63,7 +64,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|バージョン履歴が正常に取得されました。|
 |SCC_I_RELOADFILE|ソース管理システムは、履歴のフェッチ中に (たとえば、古いバージョンのバージョンを取得することによって) ディスク上のファイルを実際に変更したので、IDE がこのファイルを再読み込みする必要があります。|

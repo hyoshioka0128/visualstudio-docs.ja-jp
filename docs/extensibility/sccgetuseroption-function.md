@@ -1,4 +1,5 @@
 ---
+description: この関数は、さまざまなユーザー固有のオプションを取得します。
 title: SccGetUserOption 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e4bc3e4bf6acef8ff8de1cdcecb2596dcf6d86e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c137630e4a29fc534e9bfced16cffe862e07a046
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844555"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220626"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 関数
 この関数は、さまざまなユーザー固有のオプションを取得します。
@@ -48,7 +49,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|オプションが正常に取得されました。|
 |SCC_E_OPNOTSUPPORTED|オプションはサポートされていません。|
@@ -57,7 +58,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>解説
  このコマンドでは、次のオプションがサポートされています。
 
-|ユーザーオプション|Description|
+|ユーザーオプション|説明|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|ユーザーがローカルバージョンのファイルをチェックアウトするかどうかを指定します。 `lpVal` が割り当てられている `SCC_USEROPT_COLV_YES` (ユーザーがローカルファイルをチェックアウトする) か、または `SCC_USEROPT_COLV_NO` 。|
 

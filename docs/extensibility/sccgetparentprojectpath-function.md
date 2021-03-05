@@ -1,4 +1,5 @@
 ---
+description: この関数は、指定されたプロジェクトの親プロジェクトパスを決定します。
 title: SccGetParentProjectPath 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958402"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220613"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 関数
 この関数は、指定されたプロジェクトの親プロジェクトパスを決定します。 この関数は、ユーザーが Visual Studio プロジェクトをソース管理に追加しているときに呼び出されます。
@@ -63,7 +64,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|親プロジェクトのパスが正常に取得されました。|
 |SCC_E_INITIALIZEFAILED|プロジェクトを初期化できませんでした。|

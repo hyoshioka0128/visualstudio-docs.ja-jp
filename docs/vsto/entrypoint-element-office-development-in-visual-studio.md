@@ -1,4 +1,5 @@
 ---
+description: Vstav3 名前空間の各 entryPoint 要素は、この ClickOnce アプリケーションのインストール時に実行する必要があるカスタマイズアセンブリを識別します。
 title: '&lt;entryPoint &gt; 要素 (Visual Studio での Office 開発)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 581274ea58dafa8021cb456a0c7cb1e6bf98da32
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910458"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223720"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint &gt; 要素 (Visual Studio での Office 開発)
   `entryPoint` 名前空間の各 `vstav3` 要素によって、この [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] アプリケーションのインストール時に実行する必要のあるカスタマイズ アセンブリを指定します。
@@ -43,12 +44,12 @@ ms.locfileid: "99910458"
 
 |属性|説明|
 |---------------|-----------------|
-|`class`|必須。 実行するカスタマイズ アセンブリを指定します。 この属性の構文は、 *NamespaceName.ClassName* です。|
+|`class`|必須です。 実行するカスタマイズ アセンブリを指定します。 この属性の構文は、 *NamespaceName.ClassName* です。|
 
  `entryPoint` には、次の要素があります。
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
- 必須。 `assemblyIdentity` 名前空間の `vstav3` 要素は、 `assemblyIdentity` アプリケーション マニフェストで定義された既存の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 要素を参照します。
+ 必須です。 `assemblyIdentity` 名前空間の `vstav3` 要素は、 `assemblyIdentity` アプリケーション マニフェストで定義された既存の [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 要素を参照します。
 
  `assemblyIdentity`とその属性の役割は、 [ClickOnce アプリケーション&#41;&#40;&#60;assemblyIdentity&#62; 要素](../deployment/assemblyidentity-element-clickonce-application.md)で定義されています。
 

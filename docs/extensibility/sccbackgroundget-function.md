@@ -1,4 +1,5 @@
 ---
+description: この関数は、指定された各ファイルを、ユーザー操作なしでソース管理から取得します。
 title: SccBackgroundGet 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df0866458f04081c82796767808194b292866a1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952123"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220925"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 関数
 この関数は、指定された各ファイルを、ユーザー操作なしでソース管理から取得します。
@@ -61,7 +62,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|操作は正常に完了しました。|
 |SCC_E_BACKGROUNDGETINPROGRESS|バックグラウンドでの取得が既に進行中である (ソース管理プラグインは、同時バッチ操作をサポートしていない場合にのみ、これを返す必要があります)。|
