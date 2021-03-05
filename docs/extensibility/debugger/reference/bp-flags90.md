@@ -1,4 +1,5 @@
 ---
+description: オプションフラグの有効な値を列挙します。
 title: BP_FLAGS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95992d32df6b05c182b5b0ca505bc288294e282c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2203a6fa2a5f84f422eafd28706c54065f752e2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923229"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165619"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
 オプションフラグの有効な値を列挙します。 ブレークポイントを設定するときに、省略可能なフラグを使用して追加情報を指定できます。 この列挙体は [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 列挙体を拡張します。
@@ -65,7 +66,7 @@ public enum enum_BP_FLAGS90
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
 ステップ実行状態をクリアする必要があるかどうかを判断するために、ネイティブデバッグエンジンによって使用されます。 トレースポイントがマクロを実行する場合は BP90_FLAG_DONT_STOP が設定されないため、BP90_FLAG_DONT_STOP とは異なります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: Msdbg90
 
 名前空間: VisualStudio。

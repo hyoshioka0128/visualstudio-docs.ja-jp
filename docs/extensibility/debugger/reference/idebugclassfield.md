@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、クラスを型として表します。
 title: IDebugClassField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e9ea277ee5e383c6d61528183f43dd01a0040
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c8f566d7decc344dda17700da6712ff78120a1c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928862"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164176"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 このインターフェイスは、クラスを型として表します。
@@ -37,7 +38,7 @@ IDebugClassField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  このインターフェイスは、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイスと [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) インターフェイスのメソッドに加えて、次のものを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[EnumBaseClasses](../../../extensibility/debugger/reference/idebugclassfield-enumbaseclasses.md)|このクラスの基本クラスの列挙子を作成します。|
 |[DoesInterfaceExist](../../../extensibility/debugger/reference/idebugclassfield-doesinterfaceexist.md)|クラスで特定のインターフェイスが定義されているかどうかを判断します。|
@@ -48,7 +49,7 @@ IDebugClassField : IDebugContainerField
 |[GetDefaultIndexer](../../../extensibility/debugger/reference/idebugclassfield-getdefaultindexer.md)|既定のインデクサーの名前を取得します。|
 |[EnumNestedEnums](../../../extensibility/debugger/reference/idebugclassfield-enumnestedenums.md)|このクラスの入れ子になった列挙子の列挙子を作成します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

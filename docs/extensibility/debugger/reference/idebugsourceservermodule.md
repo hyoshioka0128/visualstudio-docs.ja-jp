@@ -1,4 +1,5 @@
 ---
+description: PDB ファイルに格納されているソースサーバー情報を表します。
 title: IDebugSourceServerModule |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dfc4b3defc0b74c1e22c45670209682692a4807
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74fa5f3aafea5f709777bbead81743c7c5aef358
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837698"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164644"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 PDB ファイルに格納されているソースサーバー情報を表します。
@@ -32,11 +33,11 @@ IDebugSourceServerModule : IUnknown
 ## <a name="methods"></a>メソッド
  次の表に、のメソッドを示し `IDebugSourceServerModule` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetSourceServerData](../../../extensibility/debugger/reference/idebugsourceservermodule-getsourceserverdata.md)|転送元サーバー情報の配列を取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

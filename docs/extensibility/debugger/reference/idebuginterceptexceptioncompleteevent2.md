@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、DE がインターセプトしたイベントの処理を完了したときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 title: IDebugInterceptExceptionCompleteEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98f8653d851eb338a96f969d73a2514b555f400
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93440facf13a230cd746400832afcb48971cd557
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890280"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165294"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 このインターフェイスは、DE がインターセプトしたイベントの処理を完了したときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,14 +38,14 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  インターフェイスには `IDebugInterceptExceptionCompleteEvent2` 、次のメソッドが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetInterceptCookie](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2-getinterceptcookie.md)|処理された例外に関連付けられている一意の値を返します。|
 
 ## <a name="remarks"></a>解説
  このイベントは、そのメソッドがインターセプトした例外の処理を正常に完了したときに [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) によって送信されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ソースドキュメント内の関数の抽象的な位置を表します。
 title: IDebugFunctionPosition2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e05cc09d2c252ddeaadc3cfa1b40e1a5797b6d79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a5717023eea18060834d1beade25199d5b0c3f3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920909"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165528"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 このインターフェイスは、ソースドキュメント内の関数の抽象的な位置を表します。
@@ -37,7 +38,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugFunctionPosition2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetFunctionName](../../../extensibility/debugger/reference/idebugfunctionposition2-getfunctionname.md)|この位置が基準とする関数の名前を取得します。|
 |[GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)|関数の先頭からのオフセットを取得します。|
@@ -45,7 +46,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスで表される位置は、テキストベースで、特に [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 構造体です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

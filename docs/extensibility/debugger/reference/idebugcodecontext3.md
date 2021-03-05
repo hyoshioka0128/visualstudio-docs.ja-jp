@@ -1,4 +1,5 @@
 ---
+description: IDebugCodeContext2 インターフェイスを拡張して、モジュールインターフェイスとプロセスインターフェイスを取得できるようにします。
 title: IDebugCodeContext3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14bcfb7498ad22156ae18998ebe5958aad1b9026
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db806a4b45e855533e4ded1419f2d2117fb4f912
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928758"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164020"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)インターフェイスを拡張して、モジュールインターフェイスとプロセスインターフェイスを取得できるようにします。
@@ -35,7 +36,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 ## <a name="methods"></a>メソッド
  このインターフェイスには、インターフェイスのメソッドに加えて、 `IDebugCodeContext2` 次のメソッドが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|デバッグモジュールのインターフェイスへの参照を取得します。|
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|デバッグプロセスのインターフェイスへの参照を取得します。|
@@ -43,7 +44,7 @@ IDebugCodeContext3 : IDebugCodeContext2
 ## <a name="remarks"></a>解説
  これは省略可能なインターフェイスであり、通常は実装する必要はありません。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
