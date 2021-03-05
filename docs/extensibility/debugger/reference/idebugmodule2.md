@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、モジュール (つまり、DLL などのプログラムの実行可能単位) を表します。
 title: IDebugModule2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a43c7e7ed24da7d73784e20e9e998bdfe69cbd65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7cc14d4f33924a04b25344c4c624a633b97ff7b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929749"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150485"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 このインターフェイスは、モジュール (つまり、DLL などのプログラムの実行可能単位) を表します。
@@ -41,7 +42,7 @@ IDebugModule2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugModule2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)|このモジュールを説明する [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) を取得します。|
 |[ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)|互換性のために残されています。 使用しないでください。 このモジュールのシンボルを再読み込みします。|
@@ -49,7 +50,7 @@ IDebugModule2 : IUnknown
 ## <a name="remarks"></a>解説
  モジュール情報は、IDE の [ **モジュール** ] ウィンドウに表示できます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

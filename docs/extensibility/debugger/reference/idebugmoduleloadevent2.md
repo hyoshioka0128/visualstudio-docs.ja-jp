@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、モジュールが読み込まれたとき、またはアンロードされたときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 title: IDebugModuleLoadEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929642"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149848"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 このインターフェイスは、モジュールが読み込まれたとき、またはアンロードされたときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,14 +38,14 @@ IDebugModuleLoadEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表は、のメソッドを示して `IDebugModuleLoadEvent2` います。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetModule](../../../extensibility/debugger/reference/idebugmoduleloadevent2-getmodule.md)|読み込まれている、またはアンロードされているモジュールを取得します。|
 
 ## <a name="remarks"></a>解説
  Visual Studio では、 **モジュール** ウィンドウを最新の状態に保つために、このイベントを使用します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

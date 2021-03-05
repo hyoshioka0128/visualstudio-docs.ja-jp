@@ -1,4 +1,5 @@
 ---
+description: このプロセスの実行を停止状態から続行します。 前の実行状態 (ステップなど) がすべてクリアされ、プロセスが再度実行を開始します。
 title: 'IDebugProcess3:: Execute |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4a697a4677b6bedef376e602c4327dff66ead53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 149497bcee5c37813e9d1134237ddb991d5893da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150251"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 このプロセスの実行を停止状態から続行します。 前の実行状態 (ステップなど) がすべてクリアされ、プロセスが再度実行を開始します。
@@ -58,5 +59,5 @@ int Execute(
 ## <a name="see-also"></a>関連項目
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
-- [再開](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+- [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

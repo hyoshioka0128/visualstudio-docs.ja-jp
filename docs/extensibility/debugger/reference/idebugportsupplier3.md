@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスを使用すると、呼び出し元は、ポートの供給者がデバッガーの呼び出しの間にポートを (ディスクに書き込むことによって) 保持できるかどうかを判断し、保存されたポートの一覧を取得できます。
 title: IDebugPortSupplier3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8db7c2321d5a309f66b85a3f177e20cb3f9b1244
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840237"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150394"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 このインターフェイスを使用すると、呼び出し元は、ポートの供給者がデバッガーの呼び出しの間にポートを (ディスクに書き込むことによって) 保持できるかどうかを判断し、保存されたポートの一覧を取得できます。
@@ -37,7 +38,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、 [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) インターフェイスから継承されたメソッドに加えて、次の機能をサポートしています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|ポートサプライヤーがデバッガーの呼び出し間でポートを (ディスクに書き込むことによって) 永続化できるかどうかを示す値を返します。|
 |[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|このポートサプライヤーによってディスクに書き込まれたすべてのポートを列挙するために使用できるオブジェクトを返します。|
@@ -47,7 +48,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  通常、デバッグエンジンは、ポート供給元とは通信せず、このインターフェイスを使用しません。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

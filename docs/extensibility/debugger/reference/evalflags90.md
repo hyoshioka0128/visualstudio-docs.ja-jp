@@ -1,4 +1,5 @@
 ---
+description: 式の評価を制御するフラグの有効な値を列挙します。
 title: EVALFLAGS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a67f68f8b2e6cf32e2c34702afaabbe476ff1e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2080eba4b8319045dcd4d3603d1e6441fafed97d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936957"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150927"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 式の評価を制御するフラグの有効な値を列挙します。 この列挙体は、 [Evalflags](../../../extensibility/debugger/reference/evalflags.md) 列挙体を拡張します。
@@ -95,7 +96,7 @@ public enum enum_EVALFLAGS90
 `EVAL90_FORCE_EVALUATION_NOW`\
 強制的に評価を直ちに実行します。 これは、ユーザー要求などの要求を処理する場合に便利です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: Msdbg90
 
 名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: スタックフレームオブジェクトについて取得する情報を指定します。
 title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcdb555e4355d6f22c8218f98899c01b3b3e2e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904783"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150823"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 スタックフレームオブジェクトについて取得する情報を指定します。
@@ -199,7 +200,7 @@ public enum enum_FRAMEINFO_FLAGS {
 
 これらのフラグは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造のどのフィールドが使用され、構造体が返されたときに有効であるかを示すためにも使用されます。 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

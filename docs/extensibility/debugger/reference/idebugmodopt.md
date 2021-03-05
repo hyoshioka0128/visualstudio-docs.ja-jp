@@ -1,4 +1,5 @@
 ---
+description: デバッグオプションの修飾子を表します。
 title: IDebugModOpt |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0aff72199b6b79f2cca30e99533311ac617816b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 047c01f78931e1b13110640952c67c11a68bc8a2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941776"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149861"
 ---
 # <a name="idebugmodopt"></a>IDebugModOpt
 デバッグオプションの修飾子を表します。
@@ -32,11 +33,11 @@ IDebugModOpt : IUnknown
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetModOpts](../../../extensibility/debugger/reference/idebugmodopt-getmodopts.md)|省略可能な修飾子のリストを取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

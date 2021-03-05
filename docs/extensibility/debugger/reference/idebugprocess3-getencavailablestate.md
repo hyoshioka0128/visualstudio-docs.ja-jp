@@ -1,4 +1,5 @@
 ---
+description: このメソッドは、プロセスの現在のエディットコンティニュの状態を取得します。
 title: 'IDebugProcess3:: Getenc State |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dce751223c4513733c5cd9ce815155b7f659b54a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13ad3bc88ab1e9f10dc87db7d7124adc993b168c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149778"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 このメソッドは、プロセスの現在のエディットコンティニュの状態を取得します。 カスタムポート供給業者は常にを返す必要があり `E_NOTIMPL` ます。
