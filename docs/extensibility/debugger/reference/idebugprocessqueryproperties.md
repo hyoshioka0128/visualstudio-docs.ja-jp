@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、IDebugProcess2 実装者によって実装される拡張インターフェイスです。
 title: IDebugProcessQueryProperties |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae588724f19f9722244ce69f77b64fad07552f9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8205b96723a1b48da46e6e19162c50139c9fe71d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938175"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166217"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 このインターフェイスは、 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 実装者によって実装される拡張インターフェイスです。 これにより、実装者はデバッグプロセス環境に関する情報を取得できます。
@@ -35,7 +36,7 @@ IDebugProcessQueryProperties: IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugProcessQueryProperties` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[QueryProperty](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty.md)|プロパティ値に対するクエリを行います。|
 |[QueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties-queryproperties.md)|プロパティ値に対するクエリを行います。|
@@ -43,7 +44,7 @@ IDebugProcessQueryProperties: IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスはほとんど実装されていません。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Portpriv. h
 
  名前空間: VisualStudio。

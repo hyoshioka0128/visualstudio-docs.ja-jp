@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、変数の型を表します。
 title: IDebugDynamicField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd81f393b81adb37059106e2d56fd4a3bf2c461
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcf148294a7c18c2b717bb4de63dac7e656e25d6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921160"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167231"
 ---
 # <a name="idebugdynamicfield"></a>IDebugDynamicField
 このインターフェイスは、変数の型を表します。
@@ -37,7 +38,7 @@ IDebugDynamicField : IDebugField
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、から継承されたメソッド以外のメソッドを提供しません `IDebugField` 。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

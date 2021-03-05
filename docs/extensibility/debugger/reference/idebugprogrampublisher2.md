@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスにより、デバッグエンジン (DE) またはカスタムポート供給者は、デバッグ用のプログラムを登録できます。
 title: IDebugProgramPublisher2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 430cd05c66311971ad3cdbf60e170478810899ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: deac68ba693bd9e4f827fef5610e3c9d2c3c26f6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916199"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166971"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 このインターフェイスにより、デバッグエンジン (DE) またはカスタムポート供給者は、デバッグ用のプログラムを登録できます。
@@ -37,7 +38,7 @@ Visual Studio では、デバッグ中のプログラムを複数のプロセス
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|プログラムノードを DEs およびセッションデバッグマネージャー (SDM) で使用できるようにします。|
 |[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|プログラムノードが使用できなくなるように削除します。|
@@ -48,7 +49,7 @@ Visual Studio では、デバッグ中のプログラムを複数のプロセス
 ## <a name="remarks"></a>解説
 このインターフェイスにより、プログラムとプログラムノードが使用できるようになります (つまり "発行")。 DEs およびセッションデバッグマネージャー (SDM) によって使用されます。 公開されているプログラムとプログラムノードにアクセスするには、 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) インターフェイスを使用します。 これは、プログラムがデバッグ中であることを Visual Studio が認識する唯一の方法です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

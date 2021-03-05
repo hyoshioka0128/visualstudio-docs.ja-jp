@@ -1,4 +1,5 @@
 ---
+description: では、コアサーバーを選択して操作するためのポートサプライヤーがサポートされています。
 title: IDebugPortSupplierEx2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd166280ab75b6cb560d6936342d8c3905b87ade
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840159"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167114"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 では、コアサーバーを選択して操作するためのポートサプライヤーがサポートされています。
@@ -32,11 +33,11 @@ IDebugPortSupplierEx2 : IUnknown
 ## <a name="methods"></a>メソッド
  次の表は、 **IDebugPortSupplierEx2** のメソッドを示しています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[SetServer](../../../extensibility/debugger/reference/idebugportsupplierex2-setserver.md)|ポートサプライヤーのコアサーバーを設定します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Portpriv. h
 
  名前空間: VisualStudio。

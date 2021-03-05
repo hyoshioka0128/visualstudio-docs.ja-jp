@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、命令のストリームを表します。
 title: IDebugDisassemblyStream2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d561c8eaa9f7b4fc08f71c241fd052fd366ca80d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 760d77ced3cc07da2dd02c21cf3ed0200df14231
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944647"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166568"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 このインターフェイスは、命令のストリームを表します。
@@ -37,7 +38,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugDisassemblyStream2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)|逆アセンブリストリームの現在位置から指示を読み取ります。|
 |[Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)|指定された位置を基準として、逆アセンブルストリーム内の読み取りポインターを指定された数だけ移動します。|
@@ -51,7 +52,7 @@ IDebugDisassemblyStream2 : IUnknown
 ## <a name="remarks"></a>解説
  逆アセンブリストリームは、アドレス空間全体を表すために作成することも、スペース内の関数またはモジュールだけを表すように作成することもできます。 各命令は、 [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)メソッドの呼び出しによって返される[disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md)構造体によって表されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

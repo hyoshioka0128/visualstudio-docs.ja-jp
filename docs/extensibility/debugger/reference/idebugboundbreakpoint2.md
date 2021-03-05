@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、コードの場所にバインドされているブレークポイントを表します。
 title: IDebugBoundBreakpoint2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3080d5beb111fffa0725fba3278cc0fb93f25381
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2726a2422c49335d9c95e7d500381ad1fdc0108
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842538"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167478"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 このインターフェイスは、コードの場所にバインドされているブレークポイントを表します。
@@ -37,7 +38,7 @@ IDebugBoundBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugBoundBreakpoint2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|指定したバインドされたブレークポイントが作成された、保留中のブレークポイントを取得します。|
 |[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|このバインドされたブレークポイントの状態を取得します。|
@@ -49,7 +50,7 @@ IDebugBoundBreakpoint2 : IUnknown
 |[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|このバインドされたブレークポイントに関連付けられているパスカウントを設定または変更します。|
 |[削除](../../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)|ブレークポイントを削除します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
