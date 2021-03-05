@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ポインター型を表します。
 title: IDebugPointerField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9904f02183da73df496e858fa8a81e5290a8950c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86b2b1902532a3ab827d8e8d65ebc285973ff0bd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877396"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169718"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 このインターフェイスは、ポインター型を表します。
@@ -37,14 +38,14 @@ IDebugPointerField : IDebugContainerField
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  インターフェイスとインターフェイスのメソッドに加え `IDebugField` て `IDebugContainerField` 、このインターフェイスは次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetDereferencedField](../../../extensibility/debugger/reference/idebugpointerfield-getdereferencedfield.md)|ポインターのターゲットを記述する [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) を返します。|
 
 ## <a name="remarks"></a>解説
  C/c + + では、配列が配列表記で使用されている場合、ポインターをコンテナーにすることができます。 たとえば、指定されたは `char *pString` 、 `pString` へのポインターの型を持ってい `char` ます。 `pString[3]` は、 `char` そのコンテナーの4番目の要素を参照するへのポインターであるコンテナーの型を持ちます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

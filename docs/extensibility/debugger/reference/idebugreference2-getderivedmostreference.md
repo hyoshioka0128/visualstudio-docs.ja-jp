@@ -1,4 +1,5 @@
 ---
+description: 参照の最も派生した参照を取得します。
 title: 'IDebugReference2:: GetDerivedMostReference |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac8321bc571264d050f5f3559e840c3d169096d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1517b1be34b62defcd5f19792baa2ac6c343b85b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909684"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168977"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 参照の最も派生した参照を取得します。 将来使用するために予約されています。

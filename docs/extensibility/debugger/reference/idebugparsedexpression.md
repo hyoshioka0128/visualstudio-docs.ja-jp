@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、評価の準備ができている解析済みの式を表します。
 title: IDebugParsedExpression |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 573c1528d37bd41d364430d610a31f4dfe89e4f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf978f6d2775c720cfff528ceb8a557fd96ae00a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953228"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169939"
 ---
 # <a name="idebugparsedexpression"></a>IDebugParsedExpression
 > [!IMPORTANT]
@@ -40,14 +41,14 @@ IDebugParsedExpression : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表は、のメソッドを示して `IDebugParsedExpression` います。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)|解析された式を評価します。|
 
 ## <a name="remarks"></a>解説
  呼び出し元が式を評価する準備ができたら、 [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) を呼び出して、評価の結果を含む [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) を返します。 この2つの部分から評価されるアプローチ、解析、評価を行うことで、解析された式を複数回評価できるようになり、式を解析するための時間のかかるプロセスを回避できます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

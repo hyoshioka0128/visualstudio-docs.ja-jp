@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、文字列を出力するために、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 title: IDebugOutputStringEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa51311bb7548889cccdd2eb91e70a4679fb5de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 604eace2f5f4be7a35b6f4b736722b435cf06928
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169952"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 このインターフェイスは、文字列を出力するために、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -37,7 +38,7 @@ IDebugOutputStringEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表は、のメソッドを示して `IDebugOutputStringEvent2` います。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|表示可能メッセージを取得します。|
 
@@ -48,7 +49,7 @@ IDebugOutputStringEvent2 : IUnknown
 
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)を使用して、応答を必要としないエラーメッセージを送信します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

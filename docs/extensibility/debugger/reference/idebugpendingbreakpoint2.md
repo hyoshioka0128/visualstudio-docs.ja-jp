@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、コードの場所にバインドする準備ができているブレークポイントを表します。
 title: IDebugPendingBreakpoint2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6798d940bb186e6d685f22282e641eb2e690e48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877409"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169731"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 このインターフェイスは、コードの場所にバインドする準備ができているブレークポイントを表します。
@@ -37,7 +38,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugPendingBreakpoint2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|この保留中のブレークポイントをコードの場所にバインドできるかどうかを判断します。|
 |[束縛](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|この保留中のブレークポイントを1つまたは複数のコードの場所にバインドします。|
@@ -56,7 +57,7 @@ IDebugPendingBreakpoint2 : IUnknown
 
  保留中のブレークポイントによって、複数のバインドされたブレークポイントが生成される可能性があります。 たとえば、C++ スタイルのテンプレート内のブレークポイントによって、そのテンプレートの一意のインスタンスごとにバインドされたブレークポイントが生成される場合があります。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
