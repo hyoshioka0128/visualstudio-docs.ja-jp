@@ -1,4 +1,5 @@
 ---
+description: ソースファイル内の指定された位置のコードパスの一覧を取得します。
 title: 'IDebugProgram2:: EnumCodePaths |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8e71085da547b87389a8d787f24580a7610fd33f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c647379d0b72832a4068d720846f8a9331f9b939
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844750"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159966"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 ソースファイル内の指定された位置のコードパスの一覧を取得します。

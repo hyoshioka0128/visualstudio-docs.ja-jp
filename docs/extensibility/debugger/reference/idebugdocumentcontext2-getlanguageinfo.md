@@ -1,4 +1,5 @@
 ---
+description: このドキュメントコンテキストに関連付けられている言語を取得します。
 title: 'IDebugDocumentContext2:: Get言語 Info |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4ce260e172e8f09ffac38fa8c267c286af15c32f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd7bc00a0be242f66ff47ac5318753d81237c63a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947074"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160213"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 このドキュメントコンテキストに関連付けられている言語を取得します。
@@ -46,7 +47,7 @@ int GetLanguageInfo(
 入出力このドキュメントコンテキストでコードを実装する言語の名前を返します。
 
 `pguidLanguage`\
-入出力このドキュメントコンテキストでコードを実装する言語の GUID を返します。 たとえば、`guidVBScriptLang` または `guidCPPLang` です。 この GUID は、によって提供される言語に限定されません [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
+入出力このドキュメントコンテキストでコードを実装する言語の GUID を返します。  たとえば、`guidVBScriptLang` または `guidCPPLang` です。 この GUID は、によって提供される言語に限定されません [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
