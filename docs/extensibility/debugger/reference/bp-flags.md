@@ -1,4 +1,5 @@
 ---
+description: には、ブレークポイントを設定するときに追加情報を指定するために使用できるオプションのフラグが用意されています。
 title: BP_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff3730d3903b71db78c8ecbc025bfe44d6e37f7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0a3ccb96aecf00943bc637b78fb5219c3273281
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853033"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165671"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 には、ブレークポイントを設定するときに追加情報を指定するために使用できるオプションのフラグが用意されています。
@@ -59,7 +60,7 @@ public enum enum_BP_FLAGS {
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグ対象のプログラムでスレッドが作成されるときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 title: IDebugThreadCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d39b7f1120f2ee4d0548e2c8a0b9a75f2fe0bd56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e6c792c3a3eff151bdbc035c8dbbaf6eaacb7bcf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901601"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164384"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 このインターフェイスは、デバッグ対象のプログラムでスレッドが作成されるときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
@@ -34,7 +35,7 @@ IDebugThreadCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
  DE は、スレッドが作成されたことを報告するために、このイベントオブジェクトを作成して送信します。 イベントは、デバッグ対象のプログラムにアタッチされているときに、SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

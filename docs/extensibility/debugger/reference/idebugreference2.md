@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、スタックフレームプロパティまたはその他のプロパティへの参照を表します。
 title: IDebugReference2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ae87cc9d0926d7afc22d819dddf672a89afd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883806"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165853"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 このインターフェイスは、スタックフレームプロパティまたはその他のプロパティへの参照を表します。
@@ -40,7 +41,7 @@ IDebugReference2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugReference2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)|この参照を記述する [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 構造体を取得します。|
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|文字列からこの参照の値を設定します。|
@@ -65,7 +66,7 @@ IDebugReference2 : IUnknown
 
  インターフェイスは、 `IDebugProperty2` 名前、型、およびアドレスを持つ値と考えることができます。 一方、は、 `IDebugReference2` 型とアドレスとして考えることができます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
