@@ -1,4 +1,5 @@
 ---
+description: 次に示すのは、Visual Studio デバッグ SDK の式評価インターフェイスです。
 title: 式の評価インターフェイス |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936939"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158736"
 ---
 # <a name="expression-evaluation-interfaces"></a>式の評価のインターフェイス
 > [!IMPORTANT]
@@ -34,7 +35,7 @@ ms.locfileid: "99936939"
 
 - Visual Studio (VS)
 
-|インターフェイス|実装|Description|
+|Interface|実装|説明|
 |---------------|--------------------|-----------------|
 |[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)|EE|変数の数値の別名を表します。|
 |[IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)|EE|変数の数値の別名を表し、式エバリュエーター (EE) がエイリアスのアプリケーションドメインを取得できるようにします。|
