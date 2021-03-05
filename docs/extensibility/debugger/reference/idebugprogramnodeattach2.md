@@ -1,4 +1,5 @@
 ---
+description: 関連付けられているプログラムにアタッチしようとしたことをプログラムノードに通知します。
 title: IDebugProgramNodeAttach2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74a25e4eefe260dd61dc951118cdb6390a61b52d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa623097224afc4f3a6b93d6b98ece0e14149ca5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898490"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171735"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 関連付けられているプログラムにアタッチしようとしたことをプログラムノードに通知します。
@@ -37,7 +38,7 @@ IDebugProgramNodeAttach2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|関連付けられているプログラムにアタッチするか、アタッチプロセスを [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドに従います。|
 
@@ -48,7 +49,7 @@ IDebugProgramNodeAttach2 : IUnknown
 
  メソッドの以前の実装で `IDebugProgramNode2::Attach_V7` 、指定されたコールバックインターフェイスが使用されていた場合、その機能を [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドの実装に移動し、インターフェイスを実装する必要はあり `IDebugProgramNodeAttach2` ません。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

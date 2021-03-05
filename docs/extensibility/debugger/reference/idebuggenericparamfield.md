@@ -1,4 +1,5 @@
 ---
+description: マネージコードのジェネリック型のパラメーターを表します。
 title: IDebugGenericParamField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ad01730f7f1d1e8e155cd1df44f75fbf88c73a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4ab1cd79826e2f9f07a4f325d701be4e9eb9c9d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838644"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172572"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 マネージコードのジェネリック型のパラメーターを表します。
@@ -32,7 +33,7 @@ IDebugGenericParamField : IDebugField
 ## <a name="methods"></a>メソッド
  このインターフェイスは、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイスのメソッドに加えて、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|このジェネリックパラメーターに関連付けられている制約の数を返します。|
 |[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|このジェネリックパラメーターに関連付けられている制約を取得します。|
@@ -41,7 +42,7 @@ IDebugGenericParamField : IDebugField
 |[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|このジェネリックパラメーターの名前を取得します。|
 |[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|このジェネリックパラメーターの型またはメソッドの所有者を取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

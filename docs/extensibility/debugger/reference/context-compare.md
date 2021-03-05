@@ -1,4 +1,5 @@
 ---
+description: 2つのメモリコンテキストを比較するための条件を指定します。
 title: CONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f273bbab4a85f03a7da0d155d8b9e081693987c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70f4621eaad5e494684e6c227959e13566a22eba
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912977"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170784"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 2つのメモリコンテキストを比較するための条件を指定します。
@@ -89,7 +90,7 @@ public enum enum_CONTEXT_COMPARE {
 
 これらの値は、指定された比較条件を満たすリスト内の最初のメモリコンテキストを検索するために使用されます。 メモリコンテキストには、メソッドを通じて比較するメモリコンテキストのリストが与えられ `IDebugMemoryContext2::Compare` ます。 次に、比較演算子があるリスト内の最初のメモリコンテキスト `true` が返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

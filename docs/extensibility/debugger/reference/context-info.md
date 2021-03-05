@@ -1,4 +1,5 @@
 ---
+description: この構造体は、メモリコンテキストまたはコードコンテキストを記述します。
 title: CONTEXT_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a95808383d4d75810f17b4da121a11025b6f894
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170732"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 この構造体は、メモリコンテキストまたはコードコンテキストを記述します。
@@ -78,7 +79,7 @@ public struct CONTEXT_INFO {
 
 この構造体の一般的な用途は、 **メモリ** デバッグウィンドウをサポートすることです。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

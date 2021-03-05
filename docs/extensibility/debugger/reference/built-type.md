@@ -1,4 +1,5 @@
 ---
+description: この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。
 title: BUILT_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35ae5661127c0e19e87c96a47a2985161beae7c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dd9f5984861b0f56e4a46b4f793a38bbb3bafa60
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874383"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170986"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。
@@ -56,7 +57,7 @@ public struct BUILT_TYPE {
 ## <a name="remarks"></a>解説
 この構造体は、構造体のフィールドがに設定されている場合に、 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体の共用体の一部として表示され `dwKind` `TYPE_INFO` `TYPE_KIND_BUILT` ます ( [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。
