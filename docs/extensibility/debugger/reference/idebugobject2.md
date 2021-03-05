@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、オブジェクトに関する追加情報を提供します。
 title: IDebugObject2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be1ef047e01baaffe66e38503f0f7979fea74829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eaa31be631de64339ece62f392f3d0b795b9d46
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953371"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170004"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IDebugObject2 : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  インターフェイスには、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) インターフェイスのメソッドに加えて、 `IDebugObject2` 次のものが実装されています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetBackingFieldForProperty](../../../extensibility/debugger/reference/idebugobject2-getbackingfieldforproperty.md)|このオブジェクトによって表されるプロパティをバッキングしている可能性のあるフィールドまたは変数 (存在する場合) を取得します。|
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugobject2-geticordebugvalue.md)|このオブジェクトの値を表すマネージコードオブジェクトを取得します。|
@@ -53,7 +54,7 @@ IDebugObject2 : IDebugObject
 ## <a name="remarks"></a>解説
  エイリアスの詳細については、「 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) 」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

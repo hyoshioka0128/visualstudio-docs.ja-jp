@@ -1,4 +1,5 @@
 ---
+description: このプログラムを実行しているデバッグエンジン (DE) の名前と GUID を取得します。
 title: 'IDebugProgram2:: GetEngineInfo |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b26d6dcde31d3599c8aa8f8223c1f3cf00a59437
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d59d621097e57336b67535d29a11d05ab4e686b4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169172"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 このプログラムを実行しているデバッグエンジン (DE) の名前と GUID を取得します。

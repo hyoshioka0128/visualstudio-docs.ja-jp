@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、コンピューター上のデバッグポートを表します。
 title: IDebugPort2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d50266e792d58be3824e5c14e4936f3af381f0fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f78db8ba9a29b40d111dc5a82827395b100302b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861141"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169484"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 このインターフェイスは、コンピューター上のデバッグポートを表します。
@@ -39,7 +40,7 @@ IDebugPort2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugPort2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugport2-getportname.md)|ポート名を返します。|
 |[GetPortId](../../../extensibility/debugger/reference/idebugport2-getportid.md)|ポート識別子を返します。|
@@ -51,7 +52,7 @@ IDebugPort2 : IUnknown
 ## <a name="remarks"></a>解説
  ローカルポートは、ローカルコンピューター上で実行されているすべてのプロセスとプログラムへのアクセスを提供します。 その他のポートは、Windows CE ベースのデバイスへのシリアルケーブル接続、または非 DCOM コンピューターへのネットワーク接続を表す場合があります。 インターフェイスは、ポート `IDebugPort2` の名前と識別子を検索し、ポートで実行されているすべてのプロセスを列挙するために使用されます。 ポートでプロセスを起動して終了するための機能は、インターフェイスに実装されてい `IDebugPortEx2` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

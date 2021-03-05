@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、シンボルと型を提供し、それらをフィールドとして返すシンボルプロバイダーを表します。
 title: IDebugSymbolProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8485497f9a5f0c6a04090755e6848bf8ed916ab3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0488520f8bde0ccd2638636810cb0055a7f3f4b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909566"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168427"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 このインターフェイスは、シンボルと型を提供し、それらをフィールドとして返すシンボルプロバイダーを表します。
@@ -37,7 +38,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
 次の表に、のメソッドを示し `IDebugSymbolProvider` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |`Initialize`|非推奨。 使用しないでください。|
 |`Uninitialize`|使用は推奨されていません。 使用しないでください。|
@@ -57,7 +58,7 @@ IDebugSymbolProvider : IUnknown
 ## <a name="remarks"></a>解説
 このインターフェイスは、ドキュメントの位置をデバッグアドレスに、またはその逆にマップします。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

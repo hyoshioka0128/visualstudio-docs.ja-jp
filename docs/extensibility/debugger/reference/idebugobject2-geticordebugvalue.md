@@ -1,4 +1,5 @@
 ---
+description: このオブジェクトに関連付けられている値を表すマネージコードオブジェクトを取得します。
 title: 'IDebugObject2:: Ge Ordebugvalue |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 127028e7de34198b2d4cb141e4fc3c73f3a3931b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd37073990a5a91f7eaa04d88e4aa7a73efb74ff
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953449"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170030"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 このオブジェクトに関連付けられている値を表すマネージコードオブジェクトを取得します。

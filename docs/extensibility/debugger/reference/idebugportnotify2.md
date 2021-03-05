@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、実行されているポートでデバッグできるプログラムを登録または登録解除します。
 title: IDebugPortNotify2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b9e62b2e442bbab01942f155647f16eae29b09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 759be0ff57da7c6bb65ed6ca8191720f835b894a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941659"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169341"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 このインターフェイスは、実行されているポートでデバッグできるプログラムを登録または登録解除します。
@@ -37,7 +38,7 @@ IDebugPortNotify2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugPortNotify2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)|デバッグ可能なプログラムを、それが実行されているポートで登録します。|
 |[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)|デバッグ可能なプログラムを、実行中のポートから登録解除します。|
@@ -45,7 +46,7 @@ IDebugPortNotify2 : IUnknown
 ## <a name="remarks"></a>解説
  デバッグポートでプログラムが読み込まれるかアンロードされるかを知る方法がない限り、カスタムポート供給業者はこのインターフェイスを実装する必要があります。 特定のポートでデバッグするために読み込まれるすべてのプログラムは、このインターフェイスを使用して追跡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

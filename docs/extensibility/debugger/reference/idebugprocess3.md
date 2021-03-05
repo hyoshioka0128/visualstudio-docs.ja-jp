@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、実行中のプロセスとそのプログラムを表します。
 title: IDebugProcess3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6199c959a7186a1c10d6efdc30bb0763941c347a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a2303dfef18a1abccc728d80def0de25b4e7eadd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926120"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169185"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 このインターフェイスは、実行中のプロセスとそのプログラムを表します。 このインターフェイスは、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスのいくつかのメソッドに代わるものとして存在します。 プロセス内のすべてのプログラムを制御できます。
@@ -42,7 +43,7 @@ IDebugProcess3 : IDebugProcess2
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)から継承されたメソッドに加えて、は `IDebugProcess3` 次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)|プロセスの実行またはステップ実行を続行します。|
 |[実行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)|プロセスの実行を開始します。|
@@ -54,7 +55,7 @@ IDebugProcess3 : IDebugProcess2
 |[GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)|このプロセスの ENC 状態を取得します。<br /><br /> カスタムポート供給業者がこのメソッドを実装していません (常にを返す必要があり `E_NOTIMPL` ます)。|
 |[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)|使用可能なデバッグエンジンの一意の識別子の配列を取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、プログラムに関するホスト (プロセス) 情報を提供します。
 title: IDebugProgramHost2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0680e0a174716dc79a9819386901d8687422906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 109cca0cc3d12d8bf14da848774042fe346f0f1e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898769"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168115"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 このインターフェイスは、プログラムに関するホスト (プロセス) 情報を提供します。
@@ -37,13 +38,13 @@ IDebugProgramHost2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IDebugProgramHost2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|このプログラムのホストプロセスのタイトル、フレンドリ名、またはファイル名を取得します。|
 |[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|このプログラムのホストプロセスのプロセス識別子を取得します。|
 |[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|このプログラムのホストプロセスが実行されているコンピューターの名前を取得します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
