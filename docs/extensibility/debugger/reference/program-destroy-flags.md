@@ -1,4 +1,5 @@
 ---
+description: プログラム破棄フラグの有効な値を列挙します。
 title: PROGRAM_DESTROY_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b7d144658065c32fd15b4b2b21ed0f53fe02a08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a695ae921bb9fb0e6b137e258cd8bd70d278eba7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962952"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225319"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 プログラム破棄フラグの有効な値を列挙します。
@@ -47,7 +48,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 ## <a name="remarks"></a>解説
  列挙体は、 [Getflags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) メソッドによって返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

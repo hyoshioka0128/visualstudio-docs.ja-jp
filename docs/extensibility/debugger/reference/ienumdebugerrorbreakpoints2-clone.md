@@ -1,4 +1,5 @@
 ---
+description: 現在のエラーのブレークポイント列挙体のコピーを別のオブジェクトとして返します。
 title: 'IEnumDebugErrorBreakpoints2:: Clone |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29a4aabcefe37e9a8776b1bca0dd38fd8204bf25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f0f42ff6c6faef0ebe05f5f98445b6c51aa5152
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897035"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226814"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 現在の列挙体のコピーを別のオブジェクトとして返します。
