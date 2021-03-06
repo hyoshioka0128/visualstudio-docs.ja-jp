@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、現在のデバッグセッションで実行されているスレッドを列挙します。
 title: IEnumDebugThreads2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852779"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225735"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 このインターフェイスは、現在のデバッグセッションで実行されているスレッドを列挙します。
@@ -37,7 +38,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugThreads2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|列挙シーケンス内の指定された数のスレッドを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|列挙シーケンス内の指定された数のスレッドをスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="remarks"></a>解説
  通常、Visual Studio は、[ **スレッド** ] ウィンドウを更新するためにこのインターフェイスを取得し、 [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、 [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)、および [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)を呼び出すために、リストの最初のスレッドを取得します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

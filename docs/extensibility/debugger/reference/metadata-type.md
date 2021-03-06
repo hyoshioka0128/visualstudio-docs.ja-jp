@@ -1,4 +1,5 @@
 ---
+description: この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。
 title: METADATA_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d41716dcbc1aefba52f6507bb624973f36025af0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938733"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225488"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 この構造体は、メタデータから取得されたフィールド型に関する情報を指定します。
@@ -60,7 +61,7 @@ public struct METADATA_TYPE {
 
  `tokClass`値は、型を一意に識別するメタデータトークンです。 メタデータトークン ID の上位ビットを解釈する方法の詳細については、 `CorTokenType` .NET FRAMEWORK SDK の corhdr .h ファイルの列挙体を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

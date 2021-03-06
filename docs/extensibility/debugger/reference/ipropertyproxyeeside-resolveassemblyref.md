@@ -1,4 +1,5 @@
 ---
+description: 指定したマネージアセンブリ参照の場所を決定します。
 title: 'IPropertyProxyEESide:: ResolveAssemblyRef |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc14d3aff5116f7bfb18244f39d14ec2dbbd37f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687ca5922cc59322c37b7b391a9b5f40d52c14ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895961"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225579"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 指定したマネージアセンブリ参照の場所を決定します。

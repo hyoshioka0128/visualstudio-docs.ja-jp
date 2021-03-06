@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、モジュールの一覧を列挙します。
 title: IEnumDebugModules2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33853804078d5f32aba6fda6dac409cf2a24de0a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957154"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224760"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 このインターフェイスは、モジュールの一覧を列挙します。
@@ -37,7 +38,7 @@ IEnumDebugModules2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugModules2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|列挙シーケンス内の指定された数のモジュールを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|列挙シーケンス内の指定された数のモジュールをスキップします。|
@@ -50,7 +51,7 @@ IEnumDebugModules2 : IUnknown
 
  Visual Studio でのデバッグのために、プログラムはモジュールの境界を越えることができるコード命令の論理的なシーケンスです。そのため、単一の [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスのモジュールの一覧が必要になります。 リスト内の最初のモジュールには、通常、関連付けられているプログラムの最初のエントリポイントが含まれています。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
