@@ -1,4 +1,5 @@
 ---
+description: Vstov4 名前空間の friendlyName 要素は、インストールされているプログラムの一覧に表示される名前を格納します。
 title: '&lt;friendlyName &gt; 要素 (Visual Studio での Office 開発)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c04a7a90f32051cc211fece4f27f1f46f8fb92f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: adcf46a2c232176026181283549c0c59fc713603
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939267"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223447"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName &gt; 要素 (Visual Studio での Office 開発)
   `friendlyName` 名前空間の `vstov4` 要素には、インストールしたプロフラムの一覧に表示される名前を格納します。
@@ -38,7 +39,7 @@ ms.locfileid: "99939267"
 
 ## <a name="vsto-add-in-example"></a>VSTO アドインの例
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
  次のコード例は、 `friendlyName` を使用して配置されるアプリケーションレベルのソリューションの [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]要素を示しています。 このコード例は、 [Office ソリューションのアプリケーションマニフェスト](../vsto/application-manifests-for-office-solutions.md)に用意されている大規模な例の一部です。
 
 ### <a name="code"></a>コード

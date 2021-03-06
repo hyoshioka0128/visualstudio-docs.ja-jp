@@ -1,4 +1,5 @@
 ---
+description: この関数は、ソース管理プラグインがファイルに対して複数のチェックアウトを許可しているかどうかを確認します。
 title: SccIsMultiCheckoutEnabled 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 009bc5ba0bb307d0aaee78076266260aa5bb20ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 648b68f1575e31e81b6f12ca09abcb8e7305a985
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924823"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220561"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 関数
 この関数は、ソース管理プラグインがファイルに対して複数のチェックアウトを許可しているかどうかを確認します。
@@ -43,7 +44,7 @@ SCCRTN SccIsMultiCheckoutEnabled(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|チェックに成功しました。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|

@@ -1,4 +1,5 @@
 ---
+description: Vstav3 名前空間の entryPoints 要素には、Office ソリューションに関連付けられているすべての entryPoint 要素が含まれています。
 title: '&lt;entryPoints &gt; 要素 (Visual Studio での Office 開発)'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481c67302c84ce08f60c571eb17084b96c0322bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910463"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223174"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;entryPoints &gt; 要素 (Visual Studio での Office 開発)
   `entryPoints` 名前空間の `vstav3` の要素には、Office ソリューションに関連付けるすべての `entryPoint` 要素を格納します。
@@ -49,7 +50,7 @@ ms.locfileid: "99910463"
  `entryPoints` には、次の要素があります。
 
 ### <a name="entrypoint"></a>entryPoint
- 必須。 名前空間の要素のロールは、 `entryPoint` `vstav3` [ Visual Studio&#41;で &#40;Office 開発の&#60;entryPoint&#62; 要素 ](../vsto/entrypoint-element-office-development-in-visual-studio.md)で定義されています。
+ 必須です。 名前空間の要素のロールは、 `entryPoint` `vstav3` [ Visual Studio&#41;で &#40;Office 開発の&#60;entryPoint&#62; 要素 ](../vsto/entrypoint-element-office-development-in-visual-studio.md)で定義されています。
 
 ## <a name="document-level-customization-example"></a>ドキュメントレベルのカスタマイズの例
 

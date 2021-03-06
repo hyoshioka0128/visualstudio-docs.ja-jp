@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、IDebugAddress インターフェイスを実装するオブジェクトのコレクションを表します。
 title: IEnumDebugAddresses |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875797"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222641"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 このインターフェイスは、 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) インターフェイスを実装するオブジェクトのコレクションを表します。
@@ -37,7 +38,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|列挙体から次の [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) オブジェクトのセットを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|指定された数のエントリをスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスは、通常、式エバリュエーターに渡す適切なアドレスを決定するために、デバッグエンジンによって使用されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

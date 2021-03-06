@@ -1,4 +1,5 @@
 ---
+description: ポート列挙体を最初の要素にリセットします。
 title: 'IEnumDebugPorts2:: Reset |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f257ae62f08f7afdfae91a56570cb8a12a3d8fff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e19f16ff5cba901141e93ee67816bfaf96596f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956920"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224513"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
 列挙体を最初の要素にリセットします。

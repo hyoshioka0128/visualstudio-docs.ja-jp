@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、ポートサプライヤーを列挙します。
 title: IEnumDebugPortSuppliers2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: edff2cad101a6a6f0f19a4b384b8f2398b98b2e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 893135291be3126055fa139dacaf3cc12141d8f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883741"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224487"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 このインターフェイスは、ポートサプライヤーを列挙します。
@@ -37,7 +38,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugPortSuppliers2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|列挙シーケンス内の指定された数のポート供給元を取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|列挙シーケンス内の指定された数のポートサプライヤーをスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 ## <a name="remarks"></a>解説
  通常、デバッグエンジンでは、このインターフェイスを取得する必要はありません。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは DEBUG_REFERENCE_INFO 構造体を列挙します。
 title: IEnumDebugReferenceInfo2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b5bdc8a8be5734da765f0396fb96830042969f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89dd664d7b54ce451c2d3a303b3da1c7ad2b13e8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842226"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224175"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 このインターフェイスは [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 構造体を列挙します。
@@ -37,7 +38,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugReferenceInfo2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|列挙シーケンス内の指定された数の [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 構造体を取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|列挙シーケンス内の指定された数の [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 構造体をスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 ## <a name="remarks"></a>解説
  参照は基本的には型とアドレスであり、プロパティは名前、型、およびアドレスです。 参照は、参照されるオブジェクトがメモリ内に存在する限り保持されます。 詳細については、「 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

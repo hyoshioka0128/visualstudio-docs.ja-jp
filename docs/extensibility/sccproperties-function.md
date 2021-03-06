@@ -1,4 +1,5 @@
 ---
+description: この関数は、ファイルまたはプロジェクトのソース管理プロパティを表示します。
 title: SccProperties 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68694388f49d59c7e8e872f0fc70994130e2990
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836775"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220535"
 ---
 # <a name="sccproperties-function"></a>SccProperties 関数
 この関数は、ファイルまたはプロジェクトのソース管理プロパティを表示します。
@@ -48,7 +49,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|プロパティが正常に表示されました。|
 |SCC_I_RELOADFILE|バージョンコントロールシステムによってファイルのプロパティが変更されたため、IDE がこのファイルを再読み込みする必要があります。|

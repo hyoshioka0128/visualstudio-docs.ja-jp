@@ -1,4 +1,5 @@
 ---
+description: 式エバリュエーターからオブジェクトの型を指定します。
 title: OBJECT_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad51e8db72cba874d35f66c9759fb970ffff2716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3add4d46a258eb7e6c107f8d2eb16f7cd84ba919
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911707"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222160"
 ---
 # <a name="object_type"></a>OBJECT_TYPE
 式エバリュエーターからオブジェクトの型を指定します。
@@ -117,7 +118,7 @@ public enum enum_OBJECT_TYPE {
 ## <a name="remarks"></a>解説
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)メソッドおよび[createarrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

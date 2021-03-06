@@ -1,4 +1,5 @@
 ---
+description: 逆アセンブリストリームでシークを開始する位置を指定します。
 title: SEEK_START |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 833a1e1b18e28070d50882fcfb485d0b6797ad20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bb097c6015b5457a0ad4808674321c410a559d2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965487"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221900"
 ---
 # <a name="seek_start"></a>SEEK_START
 逆アセンブリストリームでシークを開始する位置を指定します。
@@ -67,7 +68,7 @@ public enum enum_SEEK_START {
 ## <a name="remarks"></a>解説
  [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

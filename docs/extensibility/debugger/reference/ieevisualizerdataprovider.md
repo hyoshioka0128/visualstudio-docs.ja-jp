@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、型ビジュアライザーを使用してオブジェクトの値を変更する機能を提供します。
 title: IEEVisualizerDataProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890826"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222888"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -42,7 +43,7 @@ IEEVisualizerDataProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|このビジュアライザーが表すオブジェクト (およびその後の値) を更新できるかどうかを判断します。|
 |[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|このビジュアライザーのオブジェクトを強制的に再評価します。|
@@ -52,7 +53,7 @@ IEEVisualizerDataProvider : IUnknown
 ## <a name="remarks"></a>解説
  ビジュアライザーサービス ( [Ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md) インターフェイスによって表され、 [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)によって返される) は、インターフェイスを実装するオブジェクトへの参照を保持し `IEEVisualizerDataProvider` ます。 その結果、 `IEEVisualizerDataProvider` そのオブジェクトがオブジェクトへの参照を保持している場合、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) を実装するオブジェクトにインターフェイスを実装することはできません `IEEVisualizerService` 。循環参照の結果と、オブジェクトが破棄されるとデッドロックが発生します。 を `IEEVisualizerDataProvider` 呼び出さずにオブジェクトがデリゲートする別のオブジェクトにを実装する方法をお勧めし `IDebugProperty2` `IUnknown::AddRef` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

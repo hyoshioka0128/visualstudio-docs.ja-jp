@@ -1,4 +1,5 @@
 ---
+description: 特定のモジュール (DLL、EXE、またはアセンブリ) を記述します。
 title: MODULE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d3fd390ca5491aa9dd3e97a0d820c8e02fd0147
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888174"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222355"
 ---
 # <a name="module_info"></a>MODULE_INFO
 特定のモジュール (DLL、EXE、またはアセンブリ) を記述します。
@@ -103,7 +104,7 @@ public struct MODULE_INFO {
 
  この構造は、[ **モジュール** ] ウィンドウに一覧表示されている各モジュールに対応しています。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
