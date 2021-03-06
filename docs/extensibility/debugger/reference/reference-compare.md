@@ -1,4 +1,5 @@
 ---
+description: 参照の比較の種類を指定します。
 title: REFERENCE_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd36ad090a0b354744becf7140ff0d0785588eb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65b38d342dc84e680e202b73976550fcca5809cf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922871"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221952"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 参照の比較の種類を指定します。
@@ -57,7 +58,7 @@ public enum enum_REFERENCE_COMPARE {
 ## <a name="remarks"></a>解説
  [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

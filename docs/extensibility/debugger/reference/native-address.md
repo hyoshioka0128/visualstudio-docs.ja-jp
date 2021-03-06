@@ -1,4 +1,5 @@
 ---
+description: この構造体は、ネイティブアドレスを表します。
 title: NATIVE_ADDRESS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3f655bf3def231790cf77f007575301f794dc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e243982eefbfbb8aab5797bf40031aa5d8aca4c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911740"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222186"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
@@ -49,7 +50,7 @@ public struct NATIVE_ADDRESS {
 
 この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_NATIVE` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 
 ヘッダー: sh. h
 

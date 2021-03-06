@@ -1,4 +1,5 @@
 ---
+description: 型を表すフィールドを作成する機能を表します。
 title: IDebugTypeFieldBuilder |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a94f3f88d85d1e74ce7b1d67e1ef3d44546132
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1bc4f58470792cac8bdb68ede4ddf37567bac208
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965695"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223109"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 型を表すフィールドを作成する機能を表します。
@@ -32,12 +33,12 @@ IDebugTypeFieldBuilder : IUnknown
 ## <a name="methods"></a>メソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[CreatePrimitive](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createprimitive.md)|プリミティブ型を表すオブジェクトを作成します。|
 |[CreatePointerToType](../../../extensibility/debugger/reference/idebugtypefieldbuilder-createpointertotype.md)|指定した型へのポインターを作成します。|
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

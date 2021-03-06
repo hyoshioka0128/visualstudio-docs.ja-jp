@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、IDebugObject インターフェイスを実装するオブジェクトのコレクションを表します。
 title: IEnumDebugObjects |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b86d632d35063aa31e6be9e11adb266e5e36fa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eece06d64a4eeefefe4e132295f20e40a032434b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957076"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224630"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|列挙体から次の [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトのセットを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|指定された数のエントリをスキップします。|
@@ -51,7 +52,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="remarks"></a>解説
  このインターフェイスを使用すると、デバッグエンジンは配列内のオブジェクトのセットを列挙できます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: ee
 
  名前空間: VisualStudio。

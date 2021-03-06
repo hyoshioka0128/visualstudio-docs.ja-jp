@@ -1,4 +1,5 @@
 ---
+description: 特定のコンピューターについて説明します。
 title: MACHINE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c37819234d794226a41625f3c2e9eccd1b69066c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 796b6c95016708d3c179a8428b7f32aff9ccfe88
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938812"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224084"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
 特定のコンピューターについて説明します。
@@ -56,7 +57,7 @@ public struct MACHINE_INFO {
 ## <a name="remarks"></a>解説
  この構造体は、 [Getmachineinfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) メソッドの呼び出しによって返されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

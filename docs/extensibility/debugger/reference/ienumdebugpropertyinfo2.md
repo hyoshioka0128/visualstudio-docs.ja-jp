@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは DEBUG_PROPERTY_INFO 構造体を列挙します。
 title: IEnumDebugPropertyInfo2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecbb7db381261e1c836b48994eb0f208b619b3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fea2dc5cf958f87463af9dfca9f29bec5d01a82b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842213"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224188"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 このインターフェイスは [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 構造体を列挙します。
@@ -37,7 +38,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugPropertyInfo2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)|列挙シーケンス内の指定された数の [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 構造体を取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-skip.md)|列挙シーケンス内の指定された数の [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 構造体をスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugPropertyInfo2 : IUnknown
 ## <a name="remarks"></a>解説
  一般に、プロパティは、名前、値、アドレス、型、および関連付けられているプロパティオブジェクトまたはスタックフレームに適したその他の情報を含めることができる情報の階層です。 詳細については、「 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 」を参照してください。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

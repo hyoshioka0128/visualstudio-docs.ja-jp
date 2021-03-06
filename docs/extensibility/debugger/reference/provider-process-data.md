@@ -1,4 +1,5 @@
 ---
+description: この構造体は、コンピューター上で実行されているプロセスに関する情報を提供します。
 title: PROVIDER_PROCESS_DATA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5845ce7f512a24d341f73afa9f9905339dda87cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f49ef1c2990fe578738356cbe5db19cbc1c159ab
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922974"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221991"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 この構造体は、コンピューター上で実行されているプロセスに関する情報を提供します。
@@ -56,7 +57,7 @@ public struct PROVIDER_PROCESS_DATA {
 ## <a name="remarks"></a>解説
  この構造体は、 [Getproviderprocessdata](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) メソッドに渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

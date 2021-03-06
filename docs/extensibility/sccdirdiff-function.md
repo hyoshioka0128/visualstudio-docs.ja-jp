@@ -1,4 +1,5 @@
 ---
+description: この関数は、クライアントディスク上の現在のローカルディレクトリと、ソース管理下にある対応するプロジェクトの相違点を表示します。
 title: SccDirDiff 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929213"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221601"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 関数
 この関数は、クライアントディスク上の現在のローカルディレクトリと、ソース管理下にある対応するプロジェクトの相違点を表示します。
@@ -58,7 +59,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|ディスク上のディレクトリは、ソースコード管理のプロジェクトと同じです。|
 |SCC_I_FILESDIFFER|ディスク上のディレクトリが、ソースコード管理のプロジェクトと異なります。|

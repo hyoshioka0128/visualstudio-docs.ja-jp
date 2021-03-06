@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、デバッグポートで実行されているプロセスを列挙します。
 title: IEnumDebugProcesses2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75778ea0f02c0e7dcca1f7d2eb0ea8ace82c9b9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846661"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224383"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 このインターフェイスは、デバッグポートで実行されているプロセスを列挙します。
@@ -37,7 +38,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 順序のメソッド
  次の表に、のメソッドを示し `IEnumDebugProcesses2` ます。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|列挙シーケンス内の指定された数のプロセスを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|列挙シーケンス内の指定された数のプロセスをスキップします。|
@@ -48,7 +49,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="remarks"></a>解説
  Visual Studio では、このインターフェイスを使用して [ **プロセス** ] ウィンドウを設定します。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

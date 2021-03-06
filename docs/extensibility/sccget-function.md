@@ -1,4 +1,5 @@
 ---
+description: この関数は、表示とコンパイルのために1つ以上のファイルのコピーを取得しますが、編集することはできません。
 title: SccGet 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 799d51c607ce720502c269cf82fe5a857ec7a826
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965214"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220834"
 ---
 # <a name="sccget-function"></a>SccGet 関数
 この関数は、表示とコンパイルのために1つ以上のファイルのコピーを取得しますが、編集することはできません。 ほとんどのシステムでは、ファイルは読み取り専用としてタグ付けされています。
@@ -63,7 +64,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|Get 操作が成功しました。|
 |SCC_E_FILENOTCONTROLLED|ファイルがソース管理下にありません。|

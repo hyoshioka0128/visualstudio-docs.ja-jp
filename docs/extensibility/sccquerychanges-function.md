@@ -1,4 +1,5 @@
 ---
+description: この関数は、指定されたファイルのリストを列挙し、コールバック関数を介して各ファイルの名前変更に関する情報を提供します。
 title: SccQueryChanges 関数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e34c37ca999b05e7148d910032fe90c33470ce50
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836723"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220522"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 関数
 この関数は、指定されたファイルのリストを列挙し、コールバック関数を介して各ファイルの名前変更に関する情報を提供します。
@@ -58,7 +59,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|値|説明|
+|[値]|説明|
 |-----------|-----------------|
 |SCC_OK|クエリ処理が正常に完了しました。|
 |SCC_E_PROJNOTOPEN|プロジェクトがソース管理で開かれていません。|
