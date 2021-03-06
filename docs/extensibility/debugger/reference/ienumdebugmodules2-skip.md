@@ -1,4 +1,5 @@
 ---
+description: Modules 列挙体の指定した数の要素をスキップします。
 title: 'IEnumDebugModules2:: Skip |Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a198cf442e1674f2ed378c78e1adff03cbe082fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 57fd2c395915f584c3625fc9752f15fd62bae0c0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932770"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224747"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
 指定した数の要素をスキップします。

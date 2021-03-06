@@ -1,4 +1,5 @@
 ---
+description: モジュールを記述するために使用されます。
 title: MODULE_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41201194ee76f92b4faa101c4811c35b44a0d890
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e671b3e578a78665a6a816582e0290119f77ea58
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961886"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225475"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 モジュールを記述するために使用されます。
@@ -74,7 +75,7 @@ public enum enum_MODULE_FLAGS {
 
  これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

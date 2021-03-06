@@ -1,4 +1,5 @@
 ---
+description: このインターフェイスは、IDebugField インターフェイスを実装するオブジェクトのコレクションを表します。
 title: IEnumDebugFields |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad912c7225cb1a8c3d6ca294a4031c19bcd47e9a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956400"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226554"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 このインターフェイスは、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) インターフェイスを実装するオブジェクトのコレクションを表します。
@@ -37,7 +38,7 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable の順序でのメソッド
  このインターフェイスは、次のメソッドを実装します。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[次へ](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|列挙体から次の [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトのセットを取得します。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|指定された数のエントリをスキップします。|

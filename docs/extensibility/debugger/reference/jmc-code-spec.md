@@ -1,4 +1,5 @@
 ---
+description: この構造体は、モジュールのジャスト Mycode 情報を設定するために使用されます。
 title: JMC_CODE_SPEC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0ca5fd553d94fdf866424b4cd0dc2b2a5fdb094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c862a2897b45d89f95963ce7adfe2da8d4d350f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962107"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225566"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 この構造体は、モジュールのジャスト Mycode 情報を設定するために使用されます。
@@ -51,7 +52,7 @@ public struct JMC_CODE_SPEC {
 ## <a name="remarks"></a>解説
 この構造体は、 [Setジャスト Mycodestate](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) メソッドにそのような構造体のリストとして渡されます。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
