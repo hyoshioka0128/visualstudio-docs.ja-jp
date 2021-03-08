@@ -1070,6 +1070,8 @@
       items:
         - name: 呼び出し階層
           href: ide/reference/call-hierarchy.md
+        - name: 開発者コマンド プロンプトと開発者用 PowerShell
+          href: ide/reference/command-prompt-powershell.md
         - name: 変更のプレビュー
           href: ide/preview-changes.md
         - name: ツールボックス アイテムの選択、WPF コンポーネント
