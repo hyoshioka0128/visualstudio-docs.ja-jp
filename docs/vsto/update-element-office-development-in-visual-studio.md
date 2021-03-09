@@ -1,5 +1,6 @@
 ---
 title: '&lt;update &gt; 要素 (Visual Studio での Office 開発)'
+description: Update 要素は、ソリューションが更新プログラムをチェックする間隔を指定します。
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59e7b21902c486bd78548cd79f2e79a5056042a5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968763"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468508"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;update &gt; 要素 (Visual Studio での Office 開発)
   要素は、 `update` ソリューションが更新プログラムをチェックする間隔を指定します。
