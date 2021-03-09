@@ -3,7 +3,7 @@ title: 'チュートリアル: C# と ASP.NET Core の概要'
 titleSuffix: ''
 description: Visual Studio を使用して C# で ASP.NET Core Web アプリを作成する方法について段階的に説明します。
 ms.custom: seodec18, get-started
-ms.date: 05/29/2019
+ms.date: 02/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 63db3f62f4e7c763bf02fbfec2dd2f52c32d3264
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956361"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683112"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -106,16 +106,16 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-   ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="[新しいプロジェクトの作成] ウィンドウを表示する":::
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*ASP.NET*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
+1. **[新しいプロジェクトの作成]** ウィンドウで、言語の一覧から **[C#]** を選択します。 次に、プラットフォームの一覧から **[Windows]** を選択し、プロジェクトの種類の一覧から **[Web]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、 **[ASP.NET Core Web アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
+      言語、プラットフォーム、およびプロジェクトの種類のフィルターを適用してから、 **[ASP.NET Core Web アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![ASP.NET Core Web アプリケーション用の C# テンプレートを選択する](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="ASP.NET Core Web アプリ用の C# テンプレートを選択する":::
 
    > [!NOTE]
-   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[ASP.NET Core Web アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -125,15 +125,21 @@ Visual Studio を既にインストールしている場合は、最新のリリ
    >
    > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められたら、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyCoreApp*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyCoreApp*」とタイプまたは入力します。 その後、 **[次へ]** を選択します。
 
-   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'MyCoreApp' という名前を付けます。](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'MyCoreApp' という名前を付けます。":::
 
-1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 3.0** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
+1. **[追加情報]** ウィンドウで、上部のドロップダウン メニューに **[.NET Core 3.1]** が表示されていることを確認します。 チェック ボックスをオンにすると、Docker サポートを有効にすることができます。 [認証の変更] ボタンをクリックして、認証サポートを追加することもできます。 ここでは、以下のオプションから選択できます。
+    - [なし]: 認証は行われません。
+    - [個別のアカウント]: ローカルまたは Azure ベースのデータベースに保管されます。
+    - [Microsoft ID プラットフォーム]: このオプションでは、認証用に Active Directory、Azure AD、または Microsoft 365 が使用されます。
+    - [Windows]: イントラネット アプリケーションに適しています。
+    
+    **[Enable Docker]\(Docker を有効にする\)** チェック ボックスはオフのままにし、[認証の種類] に **[なし]** を選択します。 そのうえで **[Create]\(作成\)** を選択します。
 
-   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](./media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="[追加情報] ウィンドウで、[.NET Core 3.1] が選択されていることを確認し、すべて既定値のままにします":::
 
-   Visual Studio によってその新しいプロジェクトが開かれます。
+   Visual Studio で新しいプロジェクトが開かれます。
 
 ::: moniker-end
 

@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f9f442757b60b7dc9dc0e2dd0b8eba0c4928976b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68ccba785643b8f4f29143e5e72dc65cfedcd512
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959520"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684072"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>クイック スタート: Visual Studio を使用して初めての ASP.NET Core Web アプリを作成する
 
@@ -83,38 +83,42 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 ::: moniker range="vs-2019"
 
-1. Visual Studio を開きます。
-
 1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-   ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   :::image type="content" source="../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="[新しいプロジェクトの作成] ウィンドウを表示する":::
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*ASP.NET*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
+1. **[新しいプロジェクトの作成]** ウィンドウで、言語の一覧から **[C#]** を選択します。 次に、プラットフォームの一覧から **[Windows]** を選択し、プロジェクトの種類の一覧から **[Web]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、 **[ASP.NET Core Web アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
+      言語、プラットフォーム、およびプロジェクトの種類のフィルターを適用してから、 **[ASP.NET Core Web アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![ASP.NET Core Web アプリケーション用の C# テンプレートを選択する](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="ASP.NET Core Web アプリ用の C# テンプレートを選択する":::
 
    > [!NOTE]
-   > **[ASP.NET Core Web アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[ASP.NET Core Web アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 次に、Visual Studio インストーラーで、 **[ASP.NET と Web 開発]** ワークロードを選択します。
    >
-   > ![Visual Studio インストーラーの ASP.NET Core Web アプリケーション ワークロード](../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![Visual Studio インストーラーの [.NET Core クロスプラットフォームの開発] ワークロード](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
+   > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められたら、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*HelloWorld*」とタイプまたは入力します。 その後、 **[次へ]** を選択します。
 
-   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'HelloWorld' という名前を付けます。](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+    :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png" alt-text="[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'MyCoreApp' という名前を付けます。":::
 
-1. **[新しい ASP.NET Core Web アプリケーションの作成]** ウィンドウで、上部のドロップダウン メニューに **ASP.NET Core 3.0** が表示されていることを確認します。 次に、Razor Pages の例が含まれている **Web アプリケーション** を選択します。 次に、 **[作成]** を選択します。
+1. **[追加情報]** ウィンドウで、上部のドロップダウン メニューに **[.NET Core 3.1]** が表示されていることを確認します。 チェック ボックスをオンにすると、Docker サポートを有効にすることができます。 [認証の変更] ボタンをクリックして、認証サポートを追加することもできます。 ここでは、以下のオプションから選択できます。
+    - [なし]: 認証は行われません。
+    - [個別のアカウント]: ローカルまたは Azure ベースのデータベースに保管されます。
+    - [Microsoft ID プラットフォーム]: このオプションでは、認証用に Active Directory、Azure AD、または Microsoft 365 が使用されます。
+    - [Windows]: イントラネット アプリケーションに適しています。
+    
+    **[Enable Docker]\(Docker を有効にする\)** チェック ボックスはオフのままにし、[認証の種類] に **[なし]** を選択します。 そのうえで **[Create]\(作成\)** を選択します。
 
-   ![[新しい ASP.NET Core Web アプリケーションの作成] ウィンドウ](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="../get-started/csharp/media/vs-2019/aspnet-core-additional-information.png" alt-text="[追加情報] ウィンドウで、[.NET Core 3.1] が選択されていることを確認し、すべて既定値のままにします":::
 
-   Visual Studio によってその新しいプロジェクトが開かれます。
+   Visual Studio で新しいプロジェクトが開かれます。
 
 ::: moniker-end
 
