@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729289"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684271"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>チュートリアル: Docker Compose を使用して複数コンテナーのアプリを作成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "97729289"
 
 ## <a name="create-a-web-application-project"></a>Web アプリケーション プロジェクトを作成する
 
-Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェクトを `WebFrontEnd` という名前で作成します。 **[Web アプリケーション]** を選択し、Razor Pages を使用して Web アプリケーションを作成します。 
+Visual Studio で、`WebFrontEnd` という名前の **[ASP.NET Core Web アプリ]** プロジェクトを作成し、Razor Pages を使用した Web アプリケーションを作成します。
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
 
 ::: moniker range="vs-2019"
 
-![ASP.NET Core Web アプリケーションの [新しいプロジェクトの構成] 画面のスクリーンショット。[プロジェクト名] と [ソリューション名] のフィールドが "WebFrontEnd" に設定されています。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![ASP.NET Core Web アプリ プロジェクトを作成する](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 **[Docker サポートを有効にする]** を選択しないでください。 Docker サポートは、後で追加します。
 
-![[新しい ASP.NET Core Web アプリケーションを作成する] 画面のスクリーンショット。Web アプリケーションが選択されています。 [Enable Docker Support]\(Docker サポートを有効にする\) オプションは選択されていません。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![Web プロジェクトを作成するときの [追加情報] 画面のスクリーンショット。 [Enable Docker Support]\(Docker サポートを有効にする\) オプションは選択されていません。](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Visual Studio で、**ASP.NET Core Web アプリケーション** プロジェ�
    ![Web API プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![Web API プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![Web API プロジェクト作成のスクリーンショット](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>コードを追加して Web API を呼び出す

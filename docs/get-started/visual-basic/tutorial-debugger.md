@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cb6cbdaee7e5bed6cb80cea1f431a6db4d286e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915046"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682677"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した Visual Basic コードのデバッグについて理解する
 
@@ -71,7 +71,7 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. Visual Studio 2017 を開きます。
 
-2. 上部のメニュー バーから **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
+2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
 3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 次に、プロジェクトに *get-started-debugging* という名前を指定します。
 
@@ -91,14 +91,16 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
 
-   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   言語およびプラットフォームのフィルターを適用してから、.NET Core 用の **[コンソール アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![コンソール アプリ (.NET Core) 用の Visual Basic テンプレートを選択します。](../visual-basic/media/vs-2019/get-started-create-console-project.png)
+   ![コンソール アプリ用の Visual Basic テンプレートを選択します](../visual-basic/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+   > **[コンソール アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*get-started-debugging*」と入力します。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*get-started-debugging*」と入力します。 その後、 **[次へ]** を選択します。
+
+1. 推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
 
    Visual Studio によってその新しいプロジェクトが開かれます。
    

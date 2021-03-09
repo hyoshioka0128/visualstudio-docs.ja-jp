@@ -2,7 +2,7 @@
 title: 'チュートリアル: シンプルな C# コンソール アプリを作成する'
 description: Visual Studio で C# コンソール アプリを作成する方法について、ステップ バイ ステップで説明します。
 ms.custom: seodec18, get-started
-ms.date: 02/18/2020
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ff5e23a92409a3169add19c8810bec44fa4db9ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40e3d82c21e88b2d2144abf5902858eda1b1c293
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909362"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682813"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>チュートリアル: Visual Studio でシンプルな C# コンソール アプリを作成する
 
@@ -83,14 +83,14 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+1. **[新しいプロジェクトの作成]** ウィンドウで、言語の一覧から **[C#]** を選択します。 次に、プラットフォームの一覧から **[Windows]** を選択し、プロジェクトの種類の一覧から **[コンソール]** を選択します。 
 
-   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   言語、プラットフォーム、およびプロジェクトの種類のフィルターを適用してから、 **[コンソール アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![コンソール アプリ (.NET Framework) 用の C# テンプレートを選択する](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+    :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="コンソール アプリ (.NET Framework) 用の C# テンプレートを選択する":::
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[コンソール アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -100,12 +100,16 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    >
    > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*電卓*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*電卓*」とタイプまたは入力します。 その後、 **[次へ]** を選択します。
 
-   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに '電卓' という名前を付けます。](./media/vs-2019/csharp-name-your-calculator-project.png)
+    :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに '電卓' という名前を付けます。":::
+   
+1. **[追加情報]** ウィンドウでは、ターゲット フレームワークとして **[.NET Core 3.1]** が既に選択されているはずです。 そうでない場合は **[.NET Core 3.1]** を選択します。 次に、 **[作成]** を選択します。
+
+    :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="[追加情報] ウィンドウ内で、[.NET Core 3.1] が選択されていることを確認します":::
 
    Visual Studio によってその新しいプロジェクトが開かれます。プロジェクトには既定で "Hello World" コードが含まれます。
-   
+
 ::: moniker-end
 
 ## <a name="create-the-app"></a>アプリを作成する

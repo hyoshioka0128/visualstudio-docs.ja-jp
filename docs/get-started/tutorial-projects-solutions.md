@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838735"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682593"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>プロジェクトとソリューションの概要
 
@@ -189,9 +189,14 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 2. **[新しいプロジェクトの追加]** ダイアログ ボックスで、上部にある検索ボックスに「**単体テスト**」というテキストを入力し、**[言語]** で **[C#]** を選択します。
 
-3. **[MSTest テスト プロジェクト (.NET Core)]** プロジェクト テンプレートを選択して、 **[次へ]** を選択します。
+3. .NET Core 用の **[単体テスト プロジェクト]** プロジェクト テンプレートを選択して、 **[次へ]** を選択します。
 
-4. プロジェクトに「**QuickTest**」という名前を付けて、 **[作成]** を選択します。
+   > [!NOTE]
+   > Visual Studio 2019 バージョン 16.9 以降では、MSTest プロジェクト テンプレートの名前が **MSTest 単体テスト プロジェクト (.NET Core)** から **[単体テスト プロジェクト]** に変更されました。 この更新では、プロジェクト作成のいくつかの手順が変更されました。
+
+4. プロジェクトに「**QuickTest**」という名前を付けて、 **[次へ]** を選択します。
+
+5. 推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
 
    2 つ目のプロジェクトが **ソリューション エクスプローラー** に追加され、*UnitTest1.cs* という名前のファイルがエディターで開きます。
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: ea87135b1f60c7ae65a8bc25399604151ab2fcee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d411465869cc960631063d09752d38536af94119
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887810"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683606"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing の概要
 
@@ -113,20 +113,26 @@ Live Unit Testing を使用すると、.NET Framework または .NET Core のい
 
 4. **[OK]** をクリックして、プロジェクトを作成します。
 
+   > [!NOTE]
+   > このはじめに (チュートリアル) では、Live Unit Testing を MSTest テスト フレームワークと一緒に使用します。 また、xUnit および NUnit のテスト フレームワークを使用することもできます。
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. テンプレートの検索ボックスに「**単体テスト**」と入力して、 **[MSTest テスト プロジェクト (.NET Core)]** テンプレートを選択します。 **[次へ]** をクリックします。
+2. テンプレート検索ボックスに「**単体テスト**」と入力し、言語として **C#** を選択してから、.Net Core テンプレートの **[単体テスト プロジェクト]** を選択します。 **[次へ]** をクリックします。
 
-3. プロジェクトに **StringLibraryTests** という名前を付けます。
+   > [!NOTE]
+   > Visual Studio 2019 バージョン 16.9 以降では、MSTest プロジェクト テンプレートの名前が **MSTest 単体テスト プロジェクト (.NET Core)** から **[単体テスト プロジェクト]** に変更されました。
 
-4. **[作成]** をクリックして、プロジェクトを作成します。
+3. プロジェクトに「**StringLibraryTests**」という名前を指定し、 **[次へ]** をクリックします。
 
-::: moniker-end
+4. 推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
 
    > [!NOTE]
    > このはじめに (チュートリアル) では、Live Unit Testing を MSTest テスト フレームワークと一緒に使用します。 また、xUnit および NUnit のテスト フレームワークを使用することもできます。
+
+::: moniker-end
 
 5. 単体テスト プロジェクトは、テスト対象のクラス ライブラリに自動的にアクセスすることはできません。 テスト ライブラリへのアクセス権を付与するには、クラス ライブラリ プロジェクトへの参照を追加します。 これを行うには、`StringLibraryTests` プロジェクトを右クリックし、 **[追加]**  >  **[参照]** の順にクリックします。 次の図に示すように、 **[参照マネージャー]** ダイアログで、 **[ソリューション]** タブが選択されていることを確認し、StringLibrary プロジェクトを選択します。
 

@@ -2,7 +2,7 @@
 title: 'チュートリアル: Visual Basic 入門'
 description: Visual Studio で Visual Basic コンソール アプリを作成する方法の詳細な手順を説明します。
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915023"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682645"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>チュートリアル: Visual Studio の Visual Basic の概要
 
@@ -84,14 +84,14 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+1. **[新しいプロジェクトの作成]** ウィンドウで、言語の一覧から **[Visual Basic]** を選択します。 次に、プラットフォームの一覧から **[Windows]** を選択し、プロジェクトの種類の一覧から **[コンソール]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   言語、プラットフォーム、およびプロジェクトの種類のフィルターを適用してから、 **[コンソール アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![コンソール アプリ (.NET Framework) 用の Visual Basic テンプレートを選択します。](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="コンソール アプリケーション用の Visual Basic テンプレートを選択します":::
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[コンソール アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -101,9 +101,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    >
    > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*WhatIsYourName*」と入力またはタイプします。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*WhatIsYourName*」と入力またはタイプします。 その後、 **[次へ]** を選択します。
 
-   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'WhatIsYourName' という名前を付けます。](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'WhatIsYourName' という名前を付けます。":::
+
+1. **[追加情報]** ウィンドウでは、ターゲット フレームワークとして **[.NET Core 3.1]** が既に選択されているはずです。 そうでない場合は **[.NET Core 3.1]** を選択します。 次に、 **[作成]** を選択します。
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="[追加情報] ウィンドウで、[.NET Core 3.1] が選択されていることを確認します":::
 
    Visual Studio によってその新しいプロジェクトが開かれます。
 
@@ -208,11 +212,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。 
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+1. **[新しいプロジェクトの作成]** ウィンドウで、言語の一覧から **[Visual Basic]** を選択します。 次に、プラットフォームの一覧から **[Windows]** を選択し、プロジェクトの種類の一覧から **[コンソール]** を選択します。
 
-1. 言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+1. 言語、プラットフォーム、およびプロジェクトの種類のフィルターを適用してから、 **[コンソール アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   次に、**[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*CalculateThis*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+   次に、**[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*CalculateThis*」とタイプまたは入力します。 その後、 **[次へ]** を選択します。
+
+1. **[追加情報]** ウィンドウでは、ターゲット フレームワークとして **[.NET Core 3.1]** が既に選択されているはずです。 そうでない場合は **[.NET Core 3.1]** を選択します。 次に、 **[作成]** を選択します。
 
 1. `Module Program` 行と `End Module` 行の間に次のコードを入力します。
 
@@ -255,7 +261,7 @@ Visual Studio は、開発者向け生産性向上ツールの統合開発スイ
 
 ### <a name="what-is-a-console-app"></a>コンソール アプリとは何ですか?
 
-コンソール アプリは、コマンドライン ウィンドウ (コンソールともいう) で入力を取得して、 出力を表示します。
+コンソール アプリは、コマンドライン ウィンドウ (別名コンソール) で入力を取得し、出力を表示します。
 
 ### <a name="what-is-net-core"></a>.NET Core とは何ですか?
 

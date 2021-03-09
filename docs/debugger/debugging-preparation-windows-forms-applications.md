@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872405"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684143"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>デバッグの準備: Windows フォーム アプリケーション
-Windows フォーム プロジェクト テンプレートは、Windows フォーム アプリケーションを作成します。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、この種類のアプリケーションを簡単にデバッグできます。 詳細については、[Windows アプリケーション プロジェクトの作成](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))に関するページを参照してください。
+
+Windows フォーム アプリ プロジェクト テンプレートを使用すると、Windows フォーム アプリケーションが作成されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] では、この種類のアプリケーションを簡単にデバッグできます。 この種類のプロジェクトを作成する方法については、[Windows フォーム アプリの作成](../ide/create-csharp-winform-visual-studio.md)に関する記事を参照してください。
 
  プロジェクト テンプレートを使用して Windows フォーム プロジェクトを作成する場合、デバッグ構成とリリース構成に必要な設定は [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] によって自動的に作成されます。 この設定は必要に応じて変更できます。 設定の変更は、 **[\<project name> プロパティ ページ]** ダイアログ ボックス (Visual Basic の場合は **[マイ プロジェクト]** ) で行います。
 

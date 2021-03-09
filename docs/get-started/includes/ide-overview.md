@@ -1,17 +1,17 @@
 ---
-ms.date: 09/22/2020
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: afc0466e93b8bf2a71db42c08cd2e043107e3bc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924982"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750363"
 ---
 Visual Studio *統合開発環境* は、コードの編集、デバッグ、ビルドを行ってから、アプリを発行するために使用できるクリエイティブなランチパッドです。 統合開発環境 (IDE) は、ソフトウェア開発の多くの側面で使用できる機能を豊富に備えたプログラムです。 大部分の IDE が備える標準的なエディターおよびデバッガーに加えて、Visual Studio ではコンパイラ、コード補完ツール、グラフィック デザイナーなど、ソフトウェア開発プロセスを容易にする多くの機能を用意しています。
 
@@ -217,7 +217,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. **[デバッグ]** > **[デバッグなしで開始]** の順に選択するか、**Ctrl**+**F5** キーを押してアプリを再び実行します。
+1. **[デバッグ]** > **[デバッグなしで開始]** の順に選択するか、**Ctrl** + **F5** キーを押してアプリを再び実行します。
 
    Visual Studio によってアプリが再度ビルドされ、コンソール ウィンドウが開き、名前を入力するように求められます。
 
@@ -237,17 +237,23 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 1. **[新しいプロジェクトの作成]** を選択します。
 
-   ![Visual Studio スタート ウィンドウで新しいプロジェクトを作成する](../media/vs-2019/start-window-create-new-project.png)
+    :::image type="content" source="../media/vs-2019/start-window-create-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの作成] ウィンドウのスクリーンショット。":::
 
-   **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。
+   **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクトの種類に必要な基本的なファイルと設定が含まれています。
 
-1. 必要なテンプレートを検索するには、検索ボックスに「**.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[言語]** ドロップダウン リストから **[C#]** を選択して、テンプレートの結果をさらにフィルター処理できます。 **[コンソール アプリ (.NET Core)]** テンプレートを選択し、**[次へ]** を選択します。
+1. 必要なテンプレートを検索するには、検索ボックスに「**.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[すべての言語]** ドロップダウン リストから **[C#]** を選択し、 **[すべてのプラットフォーム]** リストから **[Windows]** を選択し、 **[すべてのプロジェクトの種類]** リストから **[コンソール]** を選択することで、テンプレートの結果をさらにフィルター処理できます。
 
-    ![Visual Studio での新しいプロジェクトの作成](../media/vs-2019/create-new-project.png)
+    **[コンソール アプリケーション]** テンプレートを選択し、 **[次へ]** をクリックします。
 
-1. **[新しいプロジェクトの構成]** ウィンドウで、**[プロジェクト名]** ボックスに「**HelloWorld**」と入力し、必要に応じてプロジェクト ファイルのディレクトリの場所を変更した後、**[作成]** を選択します。
+    :::image type="content" source="../media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの作成] ウィンドウのスクリーンショット。ここで必要なテンプレートを選択します。":::
 
-   ![Visual Studio で新しいプロジェクトを構成する](../media/vs-2019/configure-new-project.png)
+1. **[新しいプロジェクトの構成]** ウィンドウで、 **[プロジェクト名]** ボックスに「**HelloWorld**」と入力し、必要に応じてプロジェクト ファイルのディレクトリの場所 (既定の場所は `C:\Users\<name>\source\repos`) を変更した後、 **[次へ]** をクリックします。
+
+    :::image type="content" source="../media/vs-2019/configure-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの構成] ウィンドウのスクリーンショット。ここでプロジェクトの名前を入力します。":::
+
+1. **[追加情報]** ウィンドウで、 **[ターゲット フレームワーク]** ドロップダウン メニューに **[.NET Core 3.1]** が表示されていることを確認し、 **[作成]** をクリックします。
+
+    :::image type="content" source="../media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 の [追加情報] ウィンドウのスクリーンショット。ここで必要な .NET Core フレームワークのバージョンを選択します。":::
 
    Visual Studio によってプロジェクトが作成されます。 これは、リテラル文字列 "Hello World!" を表示する <xref:System.Console.WriteLine?displayProperty=nameWithType> メソッドを呼び出す単純な "Hello World" アプリケーションです。 コンソール (プログラムの出力) ウィンドウでに表示されます。
 

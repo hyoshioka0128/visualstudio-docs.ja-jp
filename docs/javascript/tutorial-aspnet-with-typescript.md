@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c28355e4097dc014f4757788f175ea80850a3f63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960430"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683641"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
@@ -69,18 +69,18 @@ Visual Studio では、*プロジェクト* の 1 つのアプリケーション
 1. 新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    スタート ウィンドウが開いていない場合は、 **[ファイル]**  >  **[スタート ウィンドウ]** を選択します。 スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。 言語ドロップダウン リストで、 **[C#]** を選択します。 検索ボックスに「**ASP.NET**」と入力してから、 **[ASP.NET Core Web アプリケーション]** を選択します。 **[次へ]** をクリックします。
+    Visual Studio 2019 で、スタート ウィンドウの **[新しいプロジェクトの作成]** を選択します。 スタート ウィンドウが開いていない場合は、 **[ファイル]**  >  **[スタート ウィンドウ]** を選択します。 「**Web アプリ**」と入力し、言語として **C#** を選択します。次に、 **[ASP.NET Core Web Application (Model-View-Controller)]\(ASP.NET Core Web アプリケーション (Model-View-Controller)\)** を選択し、 **[次へ]** を選択します。 次の画面で、プロジェクトの名前を指定し、 **[次へ]** を選択します。
 
-    プロジェクトの名前を入力し、 **[作成]** を選択します。
+    推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション - C#]** を選択してから **[OK]** を選択します。
+
+    表示されたダイアログ ボックスで **[Web アプリケーション (モデル ビュー コントローラー)]** を選択し、 **[作成]** (または **[OK]** ) を選択します。
+
+    ![MVC テンプレートを選択する](../javascript/media/aspnet-core-ts-mvc-template.png)
     ::: moniker-end
     **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発** ワークロードを追加する必要があります。 手順について詳しくは、「[必須コンポーネント](#prerequisites)」をご覧ください。
-
-1. 表示されたダイアログ ボックスで **[Web アプリケーション (モデル ビュー コントローラー)]** を選択し、 **[作成]** (または **[OK]** ) を選択します。
-
-   ![MVC テンプレートを選択する](../javascript/media/aspnet-core-ts-mvc-template.png)
 
     Visual Studio は新しいソリューションを作成し、右のウィンドウでプロジェクトを開きます。
 

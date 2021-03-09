@@ -2,19 +2,19 @@
 title: 複数のユーザー アカウントを使って作業する
 description: すべての Microsoft アカウントを Visual Studio に追加して、個別にサインインしなくても任意のアカウントからリソースにアクセスできるようにする方法を説明します。
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960456"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683789"
 ---
 # <a name="work-with-multiple-user-accounts"></a>複数のユーザー アカウントを使って作業する
 
@@ -65,7 +65,7 @@ Azure Active Directory (AAD) では、ASP.NET MVC の Web アプリでのエン�
 
 ::: moniker range=">=vs-2019"
 
-アクション内でこれを表示するには、新しい **ASP.NET Core Web アプリケーション** プロジェクトを作成します。 **[新しい ASP.NET Core Web アプリケーションの作成]** ダイアログ ボックスで、**[Web アプリケーション]** テンプレートを選択してから、**[認証]** の下にある **[変更]** を選択します。
+この動作を確認するには、新しい **ASP.NET Core Web アプリ** プロジェクトを作成します。 **[新しい ASP.NET Core Web アプリケーションの作成]** ページで、ドロップダウンから **[ASP.NET Core 3.1]** を選択し、 **[Web アプリケーション]** テンプレートを選択した後、 **[認証]** の下にある **[変更]** を選択します。
 
 ::: moniker-end
 

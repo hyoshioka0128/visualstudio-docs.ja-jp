@@ -14,14 +14,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e34bbd72810932f385d53a25ca1670fa059c1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34b412d254d0775b57f2c9befaae71ce25c6ae75
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939930"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683862"
 ---
-# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>クイック スタート: Visual Studio で Visual Basic を使用して初めてのコンソール アプリを作成する
+# <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>クイックスタート: Visual Studio で Visual Basic を使用して初めてコンソール アプリを作成する
 
 ここでは 5 分から 10 分で Visual Studio 統合開発環境 (IDE) の概要を示し、コンソールで実行される簡単な Visual Basic アプリケーションを作成します。
 
@@ -47,11 +47,11 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 2. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual Basic]** を展開し、 **[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *HelloWorld* という名前を付けます。
+3. **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、**[Visual Basic]** を展開し、**[.NET Core]** を選択します。 中央のウィンドウで、 **[Console App (.NET Core)]** を選択します。 プロジェクトに *HelloWorld* という名前を付けます。
 
    ![Visual Studio IDE の [新しいプロジェクト] ダイアログ ボックスに示されているコンソール アプリ (.NET Core) プロジェクト テンプレート](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
-     **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。
+     **[Console App (.NET Core)]** プロジェクト テンプレートが表示されない場合は、**[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウにある **[Visual Studio インストーラーを開く]** リンクをクリックします。
 
    ![[新しいプロジェクト] ダイアログ ボックスで [Visual Studio インストーラーを開く] リンクをクリックする](../ide/media/vb-open-visual-studio-installer-hello-world.png)
 
@@ -72,14 +72,14 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
+1. **[新しいプロジェクトの作成]** ウィンドウで、言語の一覧から **[Visual Basic]** を選択します。 次に、プラットフォームの一覧から **[Windows]** を選択し、プロジェクトの種類の一覧から **[コンソール]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   言語、プラットフォーム、およびプロジェクトの種類のフィルターを適用してから、 **[コンソール アプリケーション]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![コンソール アプリ (.NET Framework) 用の Visual Basic テンプレートを選択します。](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="コンソール アプリケーション用の Visual Basic テンプレートを選択します":::
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
+   > **[コンソール アプリケーション]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。
    >
    > ![[新しいプロジェクトの作成] ウィンドウに表示された [お探しの情報が見つかりませんでしたか?] での [さらにツールと機能をインストールする] リンク](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -89,9 +89,13 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
    >
    > その後、Visual Studio インストーラー内の **[変更]** ボタンをクリックします。 作業内容を保存するよう求められることがあります。その場合は、そのようにします。 次に、 **[続行]** を選択してワークロードをインストールします。 その後、この「[プロジェクトを作成する](#create-a-project)」プロシージャの手順 2 に戻ります。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*WhatIsYourName*」と入力またはタイプします。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*WhatIsYourName*」と入力またはタイプします。 その後、 **[次へ]** を選択します。
 
-   ![[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'WhatIsYourName' という名前を付けます。](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png" alt-text="[新しいプロジェクトの構成] ウィンドウで、ご自分のプロジェクトに 'WhatIsYourName' という名前を付けます。":::
+
+1. **[追加情報]** ウィンドウでは、ターゲット フレームワークとして **[.NET Core 3.1]** が既に選択されているはずです。 そうでない場合は **[.NET Core 3.1]** を選択します。 次に、 **[作成]** を選択します。
+
+   :::image type="content" source="../get-started/visual-basic/media/vs-2019/vb-target-framework.png" alt-text="[追加情報] ウィンドウで、[.NET Core 3.1] が選択されていることを確認します":::
 
    Visual Studio によってその新しいプロジェクトが開かれます。
 
@@ -136,7 +140,7 @@ IDE で **[Hello World]** ボタンをクリックした場合、デバッグ �
 
    !["Hello World! Press any key to continue" と表示されているコンソール ウィンドウ](../ide/media/vb-console-hello-world-press-any-key.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートは完了しました。 Visual Basic と Visual Studio IDE について少しはご理解いただけたかと思います。 詳細については、引き続き以下のチュートリアルをご覧ください。
 
