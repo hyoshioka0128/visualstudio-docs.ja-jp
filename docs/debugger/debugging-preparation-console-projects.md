@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872522"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683038"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>デバッグの準備:コンソール プロジェクト (C#、C++、Visual Basic、F#)
 
-コンソール プロジェクトのデバッグの準備は Windows プロジェクトのデバッグの準備に似ていますが、コマンド ライン引数の設定や、デバッグ用にアプリを一時停止する方法など、追加の考慮事項がいくつかあります。 詳細については、「[Windows フォーム アプリケーション](../debugger/debugging-preparation-windows-forms-applications.md)」および「[デバッグの準備: Windows フォーム アプリケーション (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))」を参照してください。 コンソール アプリケーションはどれも類似しているため、このトピックでは次のプロジェクトの種類について説明します。
+コンソール プロジェクトのデバッグの準備は Windows プロジェクトのデバッグの準備に似ていますが、コマンド ライン引数の設定や、デバッグ用にアプリを一時停止する方法など、追加の考慮事項がいくつかあります。 詳細については、[Windows フォーム アプリのデバッグの準備](../debugger/debugging-preparation-windows-forms-applications.md)に関する記事を参照してください。 コンソール アプリケーションはどれも類似しているため、このトピックでは次のプロジェクトの種類について説明します。
 
 - C#、Visual Basic、F# コンソール アプリケーション
 

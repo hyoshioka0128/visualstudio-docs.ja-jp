@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 11/10/2020
+ms.date: 03/02/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ccdd8ef7285ba0e5fa211b6b9f76fead5a2f3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960573"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684024"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
-**[16.8 リリース](/visualstudio/releases/2019/release-notes/)の更新**
+**[16.9 リリース](/visualstudio/releases/2019/release-notes/)の更新**
 
 >[!div class="button"]
 >[Visual Studio 2019 のダウンロード](https://visualstudio.microsoft.com/downloads)
@@ -245,8 +245,8 @@ Visual Studio チームにフィードバックを送ることにどんな意味
 * [Visual Studio 2019 for Mac リリース ノート](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK の新機能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio での C++ の新機能](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
-* [C# 8.0 の新機能](/dotnet/csharp/whats-new/csharp-8/)
-* [.NET Core 3.1 の新機能](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [C# 9.0 の新機能](/dotnet/csharp/whats-new/csharp-9)
+* [.NET 5 の新機能](/dotnet/core/dotnet-five)
 * [.NET Framework の新機能](/dotnet/framework/whats-new/)
 * [Microsoft Build カンファレンス](https://www.microsoft.com/build)
 * [Microsoft Ignite カンファレンス](https://www.microsoft.com/ignite)

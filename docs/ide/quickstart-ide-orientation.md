@@ -3,19 +3,19 @@ title: 'クイック スタート: Visual Studio IDE のツアー'
 description: Visual Studio 統合開発環境 (IDE) のウィンドウ、メニュー、その他の UI 機能の一部について説明します。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945501"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683978"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>クイック スタート: Visual Studio IDE の表示の紹介
 
@@ -83,15 +83,25 @@ Visual Studio の機能を引き続き確認するために、新しいプロジ
 
 1. スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
 
-   **[新しいプロジェクトの作成]** ダイアログ ボックスが開きます。 ここでは、プロジェクト テンプレートの検索、フィルター処理、選択を行うことができます。 また、ご自分で最近使ったプロジェクト テンプレートの一覧も表示されます。
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの作成] ウィンドウのスクリーンショット。":::
 
-1. 上部にある検索ボックスに「**コンソール**」と入力し、プロジェクトの種類の一覧をフィルターして、名前に "コンソール" が含まれるものに絞り込みます。 **[言語]** ピッカーで **[C#]** (または他の適切な言語) を選択して、さらに検索の結果を絞り込みます。
+   **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクトの種類に必要な基本的なファイルと設定が含まれています。
 
-   ![Visual Studio 2019 の新しいプロジェクト ダイアログ](media/vs-2019/create-a-new-project.png)
+   ここでは、プロジェクト テンプレートの検索、フィルター処理、選択を行うことができます。 また、ご自分で最近使ったプロジェクト テンプレートの一覧も表示されます。
 
-1. 言語として C#、Visual Basic、または F# を選択した場合は、 **[コンソール アプリ (.NET Core)]** テンプレートを選択し、 **[次へ]** を選択します。 (別の言語を選択した場合は、任意のテンプレートを選択します。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
+1. 上部にある検索ボックスに「**コンソール**」と入力し、プロジェクトの種類の一覧をフィルターして、名前に "コンソール" が含まれるものに絞り込みます。 **[すべての言語]** ドロップダウン リストから **[C#]** (または他の適切な言語) を選択して、さらに検索の結果を絞り込みます。
 
-1. **[新しいプロジェクトの構成]** ページで、既定のプロジェクト名と場所をそのまま使用し、 **[作成]** を選択します。
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの作成] ウィンドウのスクリーンショット。ここで必要なテンプレートを選択します。":::
+
+1. 言語として C#、Visual Basic、または F# を選択した場合は、 **[コンソール アプリケーション]** テンプレートを選択し、 **[次へ]** を選択します。 (別の言語を選択した場合は、任意のテンプレートを選択します。 表示される UI はすべてのプログラミング言語でほぼ同じです)。
+
+1. **[新しいプロジェクトの構成]** ウィンドウで、既定のプロジェクト名と場所をそのまま使用し、 **[次へ]** を選択します。
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの構成] ウィンドウのスクリーンショット。ここでプロジェクトの名前を入力します。":::
+
+1. **[追加情報]** ウィンドウで、 **[ターゲット フレームワーク]** ドロップダウン メニューに **[.NET Core 3.1]** が表示されていることを確認し、 **[作成]** をクリックします。
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 の [追加情報] ウィンドウのスクリーンショット。ここで必要な .NET Core フレームワークのバージョンを選択します。":::
 
 ::: moniker-end
 

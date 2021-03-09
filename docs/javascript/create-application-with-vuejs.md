@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 52281c403ceb0f2708aa546cbd73559593c419be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 338e53d576e9f4d73b32c3f432223480d9e708c3
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942829"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683931"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Node.js Tools for Visual Studio を使用して Vue.js アプリケーションを作成する
 
@@ -68,20 +68,22 @@ Vue.js では、迅速にスキャフォールディングするプロジェク�
 
 #### <a name="create-an-empty-project"></a>空のプロジェクトを作成する
 
-1. Visual Studio を起動し、新しいプロジェクトを作成します。
+* Visual Studio を起動し、新しいプロジェクトを作成します。
 
     ::: moniker range=">=vs-2019"
-    **Esc** キーを押してスタート ウィンドウを閉じます。 **Ctrl + Q** キーを押して検索ボックスを開き、「**asp.net**」と入力してから、 **[新しい ASP.NET Core Web アプリケーションを作成する]** を選択します。 ダイアログ ボックスが表示されたら、**client-app** という名前を入力し、 **[作成]** を選択します。
+    Visual Studio 2019 で、スタート ウィンドウの **[新しいプロジェクトの作成]** を選択します。 スタート ウィンドウが開いていない場合は、 **[ファイル]**  >  **[スタート ウィンドウ]** を選択します。 「**Web アプリ**」と入力し、言語として **C#** を選択した後、 **[ASP.NET Core Empty]\(ASP.NET Core (空)\)** を選択し、 **[次へ]** を選択します。 次の画面で、プロジェクトに「**client-app**」という名前を指定し、 **[次へ]** を選択します。
+
+    推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
     上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで **[Visual C#]** を展開した後、 **[Web]** を選択します。 中央のウィンドウで、 **[ASP.NET Core Web アプリケーション]** を選択し、**client-app** という名前を入力してから **[OK]** を選択します。
+
+    **[空]** を選択して、 **[OK]** をクリックします。
+
+    Visual Studio によってプロジェクトが作成され、ソリューション エクスプローラー (右側のウィンドウ) で開かれます。
     ::: moniker-end
 
     **ASP.NET Core Web アプリケーション** プロジェクト テンプレートが表示されない場合は、**ASP.NET と Web 開発** ワークロードと **.NET Core 開発** ワークロードを最初にインストールする必要があります。 ワークロードをインストールするには、 **[新しいプロジェクト]** ダイアログ ボックス ( **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択) の左側のウィンドウで **[Visual Studio インストーラーを開く]** リンクをクリックします。 Visual Studio インストーラーが起動します。 必要なワークロードを選択します。
-
-1. **[空]** を選択して、 **[OK]** をクリックします。
-
-    Visual Studio によってプロジェクトが作成され、ソリューション エクスプローラー (右側のウィンドウ) で開かれます。
 
 #### <a name="configure-the-project-startup-file"></a>プロジェクトのスタートアップ ファイルを構成する
 

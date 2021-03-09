@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943732"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683952"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>チュートリアル: テスト エクスプローラーを使用したテスト駆動開発
 
@@ -26,7 +26,11 @@ ms.locfileid: "99943732"
 
 1. C# の **[クラス ライブラリ (.NET Standard)]** プロジェクトを作成します。 このプロジェクトには、テストするコードを含めます。 プロジェクトには「**MyMath**」という名前を付けます。
 
-2. 同じソリューションで、新しいプロジェクト **[MSTest テスト プロジェクト (.Net Core)]** を追加します。 このテスト プロジェクトには「**MathTests**」という名前を付けます。
+2. 同じソリューションに、新しい MSTest テスト プロジェクトを追加します。
+
+   Visual Studio 2019 バージョン 16.9 以降では、MSTest プロジェクト テンプレートの名前が **[MSTest テスト プロジェクト (.NET Core)]** から **[単体テスト プロジェクト]** に変更されました。
+
+   このテスト プロジェクトには「**MathTests**」という名前を付けます。
 
    ![新しいコードとテスト プロジェクト](../test/media/test-driven-development-ide.png)
 

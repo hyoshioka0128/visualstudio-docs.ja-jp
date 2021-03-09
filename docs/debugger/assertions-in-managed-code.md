@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49560ac3293c416719b9addc1cbadf1b0c04f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 626f86c2a1d370a7f31e47f86d8adafc3f905672
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866087"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684231"
 ---
 # <a name="assertions-in-managed-code"></a>マネージド コードのアサーション
 アサーション、つまり `Assert` ステートメントは、条件をテストします。この条件は、`Assert` ステートメントへの引数として指定します。 条件が true と評価された場合、アクションは発生しません。 条件が false と評価された場合、アサーションは失敗です。 また、デバッグ ビルドを実行している場合、プログラムは中断モードになります。
@@ -173,7 +173,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );
 ```
 
- 2 番目と 3 番目の引数は文字列にする必要があります (存在する場合)。 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> または <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> を 2 つまたは 3 つの引数を使用して呼び出すと、1 番目の引数は条件として処理されます。 メソッドはこの条件をチェックし、結果が false の場合は 2 番目と 3 番目の文字列を出力します。 2 つの引数を使用した <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> と <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> の例を次に示します。
+  2 番目と 3 番目の引数は文字列にする必要があります (存在する場合)。 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> または <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> を 2 つまたは 3 つの引数を使用して呼び出すと、1 番目の引数は条件として処理されます。 メソッドはこの条件をチェックし、結果が false の場合は 2 番目と 3 番目の文字列を出力します。 2 つの引数を使用した <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> と <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName> の例を次に示します。
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space")
@@ -185,7 +185,7 @@ Debug.Assert ( stacksize > 0, "Out of stack space" );
 Trace.Assert ( stacksize > 0, "Out of stack space" );
 ```
 
- <xref:System.Diagnostics.Debug.Assert%2A> および <xref:System.Diagnostics.Trace.Assert%2A> の使用例は、次のようになります。
+  3 つの引数を使用した <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> と <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String,System.String)?displayProperty=fullName> の例を次に示します。
 
 ```VB
 Debug.Assert(stacksize > 0, "Out of stack space. Bytes left:" , Format(size, "G"))

@@ -7,14 +7,14 @@ manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 01/27/2020
+ms.date: 02/21/2021
 ms.author: ghogen
-ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9a4f26227d2cd3bd065fab88ba294f7341ea4ed
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859646"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684313"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Visual Studio を使用した Azure App Service への ASP.NET Core コンテナーのデプロイ
 
@@ -22,7 +22,7 @@ ms.locfileid: "99859646"
 
 Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) を作成してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 このチュートリアルを完了するには、次のものが必要です。
 
@@ -49,9 +49,9 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. Visual Studio の [スタート] ウィンドウから **[新しいプロジェクトの作成]** を選択します。
-1. **[ASP.NET Core Web アプリケーション]** を選択し、 **[次へ]** を選択します。
-1. 新しいアプリケーションに名前を設定 (または、既定の名前をそのまま使用) し、 **[作成]** を選択します。
-1. **[Web アプリケーション]** を選択します。
+1. **[ASP.NET Core Web アプリ]** を選択し、 **[次へ]** を選択します。
+1. 新しいアプリケーションに名前を設定 (または、既定の名前をそのまま使用) し、 **[次へ]** を選択します。
+1. 対象にする .NET バージョンを選択します。 よくわからない場合は、長期サポート (LTS) バージョンを選択してください。
 1. **[HTTPS 用の構成]** チェックボックスを使用し、SSL サポートを使用するかどうかを選択します。
 1. **[Docker サポートを有効にする]** チェック ボックスをオンにします。
 1. コンテナーの種類を選択し、 **[作成]** をクリックします。
@@ -65,13 +65,13 @@ Azure サブスクリプションをお持ちでない場合は、開始する�
 1. 発行先ダイアログで、 **[App Service Linux]** または **[App Service]** を選択します。 これは、Web サーバーをホストするオペレーティング システムです。
 1. App Service にのみ発行するか、App Service と Azure Container Registry (ACR) の両方に発行できます。 Azure Container Registry (ACR) でコンテナーを発行するには、 **[Create new App Service for containers]\(コンテナー用に新しい App Service を作成する\)** を選択し、 **[発行]** をクリックします。
 
-   ![発行ダイアログのスクリーンショット](media/deploy-app-service/publish-app-service-linux.PNG)
+   ![発行ダイアログのスクリーンショット](media/deploy-app-service/publish-app-service-linux-1.png)
 
    Azure Container Registry を使用せずに Azure App Service にのみ発行するには、 **[新規作成]** を選択し、 **[発行]** をクリックします。
 
 1. Azure サブスクリプションに関連付けられているアカウントでサインインしていることを確認し、一意の名前、サブスクリプション、リソース グループ、ホスティング プラン、コンテナー レジストリ (該当する場合) を選択するか、既定値をそのまま選択します。
 
-   ![発行設定のスクリーンショット](media/deploy-app-service/publish-app-service-linux2.png)
+   ![発行設定のスクリーンショット](media/deploy-app-service/publish-app-service-linux-2.png)
 
 1. **[作成]** を選択します。 選択したリソース グループとコンテナー レジストリでコンテナーが Azure にデプロイされます。 このプロセスには時間が少しばかりかかります。 完了すると、 **[発行]** タブにサイトの URL など、発行したものに関する情報が表示されます。
 

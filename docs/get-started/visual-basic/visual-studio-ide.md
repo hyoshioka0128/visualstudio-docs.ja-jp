@@ -1,7 +1,7 @@
 ---
 title: Visual Basic 開発者向けの概要
 description: Visual Basic 開発者として、Visual Studio を使用してコードの編集、デバッグ、およびビルドを行い、アプリを発行する方法について説明します。
-ms.date: 11/15/2018
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
 - get-started
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944395"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682917"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Visual Studio IDE へようこそ | Visual Basic
 
@@ -232,7 +232,8 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 1. Visual Studio を開きます。 スタート ウィンドウで、 **[コードなしで続行]** を選択します。
 
-   ![Visual Studio 2019 のスタート ウィンドウ](media/vs-2019/continue-without-code.png)
+
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="[コードなしで続行] リンクが強調表示されている Visual Studio 2019 のスタート ウィンドウのスクリーンショット。":::
 
    IDE が開きます。
 
@@ -240,7 +241,7 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 2. メニュー バーから **[ツール]**  >  **[オプション]** の順に選択して、 **[オプション]** ダイアログを開きます。
 
-3. **[環境]**  >  **[全般]** オプションのページで、 **[配色テーマ]** の選択内容を **[濃色]** に変更して **[OK]** を選択します。
+3. **[環境]**  >  **[全般]** オプションのページで、 **[配色テーマ]** の選択内容を **[濃色]** に変更して **[OK]** をクリックします。
 
    ![Visual Studio で配色テーマを濃色に変更する](media/change-color-theme.png)
 
@@ -264,13 +265,13 @@ Visual Studio を初めて開くときは、Microsoft アカウントや、職�
 
 1. メニュー バーで、 **[ツール]**  >  **[設定のインポートとエクスポート]** の順にクリックします。
 
-2. **設定のインポートとエクスポート ウィザード** の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** を選択します。
+2. **設定のインポートとエクスポート ウィザード** の最初のページで **[すべての設定をリセット]** を選択し、 **[次へ]** をクリックします。
 
-3. **[現在の設定の保存]** ページで、現在の設定を保存するオプションを選択するか選択せずに、 **[次へ]** を選択します (設定をカスタマイズしていない場合は、 **[No, just reset settings, overwriting my current settings]\(いいえ、設定をリセットして現在の設定を上書きするだけです\)** を選択します)。
+3. **[現在の設定の保存]** ページで、現在の設定を保存する、または保存しないオプションを選択し、 **[次へ]** をクリックします (設定をカスタマイズしていない場合は、 **[No, just reset settings, overwriting my current settings]\(いいえ、設定をリセットして現在の設定を上書きするだけです\)** を選択します)。
 
-4. **[設定の既定のコレクションの選択]** ページで、**[Visual Basic]** を選択し、**[完了]** を選択します。
+4. **[設定の既定のコレクションの選択]** ページで、 **[Visual Basic]** を選択し、 **[完了]** をクリックします。
 
-5. **[リセットの完了]** ページで **[閉じる]** を選択します。
+5. **[リセットの完了]** ページで **[閉じる]** をクリックします。
 
 IDE の他のカスタマイズ方法については、「[Visual Studio IDE のカスタマイズ](../../ide/personalizing-the-visual-studio-ide.md)」をご覧ください。
 
@@ -344,21 +345,25 @@ IDE の他のカスタマイズ方法については、「[Visual Studio IDE の
 
 ::: moniker range=">=vs-2019"
 
-1. Visual Studio メニュー バーで、**[ファイル]** > **[新しいプロジェクト]** を選択します。
+1. Visual Studio のメニュー バーで、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選びます。 (または、**Ctrl** + **Shift** + **N** キーを押します。)
 
-   ![メニュー バーで [ファイル]、[新しいプロジェクト] の順に選択します。](media/vs-2019/file-new-project.png)
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Visual Studio 2019 メニュー バーから [ファイル] > [新規作成] > [プロジェクト] の順に選択するスクリーンショット。":::
 
-   **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクト タイプに必要な基本的なファイルと設定が含まれています。
+   **[新しいプロジェクトの作成]** ウィンドウが開き、いくつかのプロジェクト "*テンプレート*" が表示されます。 テンプレートには、特定のプロジェクトの種類に必要な基本的なファイルと設定が含まれています。
 
-1. 必要なテンプレートを検索するには、検索ボックスに「**.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[言語]** ドロップダウン リストから **[Visual Basic]** を選択して、テンプレートの結果をさらにフィルター処理できます。
+1. 必要なテンプレートを検索するには、検索ボックスに「**.net core コンソール**」と入力します。 使用可能なテンプレートの一覧が、入力したキーワードに基づいて自動的にフィルター処理されます。 **[すべての言語]** ドロップダウン リストから **[Visual Basic]** を選択し、 **[すべてのプラットフォーム]** リストから **[Windows]** を選択し、 **[すべてのプロジェクトの種類]** リストから **[コンソール]** を選択することで、テンプレートの結果をさらにフィルター処理できます。
 
-1. **[コンソール アプリ (.NET Core)]** テンプレートを選択し、**[次へ]** を選択します。
+   **[コンソール アプリケーション]** テンプレートを選択し、 **[次へ]** をクリックします。
 
-   ![Visual Studio での新しいプロジェクトの作成](media/vs-2019/create-new-project.png)
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの作成] ウィンドウのスクリーンショット。ここで必要なテンプレートを選択します。":::
 
-1. **[新しいプロジェクトの構成]** ウィンドウで、**[プロジェクト名]** ボックスに「**HelloWorld**」と入力し、必要に応じてプロジェクト ファイルのディレクトリの場所を変更した後、**[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウで、 **[プロジェクト名]** ボックスに「**HelloWorld**」と入力し、必要に応じてプロジェクト ファイルのディレクトリの場所 (既定の場所は `C:\Users\<name>\source\repos`) を変更した後、 **[次へ]** をクリックします。
 
-   ![Visual Studio で新しいプロジェクトを構成する](media/vs-2019/configure-new-project.png)
+    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Visual Studio 2019 の [新しいプロジェクトの構成] ウィンドウのスクリーンショット。ここでプロジェクトの名前を入力します。":::
+
+1. **[追加情報]** ウィンドウで、 **[ターゲット フレームワーク]** ドロップダウン メニューに **[.NET Core 3.1]** が表示されていることを確認し、 **[作成]** をクリックします。
+
+    :::image type="content" source="media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 の [追加情報] ウィンドウのスクリーンショット。ここで必要な .NET Core フレームワークのバージョンを選択します。":::
 
    Visual Studio によってプロジェクトが作成されます。 これは、リテラル文字列 "Hello World!" を表示する <xref:System.Console.WriteLine?displayProperty=nameWithType> メソッドを呼び出す単純な "Hello World" アプリケーションです。 コンソール (プログラムの出力) ウィンドウでに表示されます。
 

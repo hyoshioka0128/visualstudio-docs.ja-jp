@@ -1,7 +1,7 @@
 ---
 title: プロジェクトの移植、移行、およびアップグレード
 description: 現在および以前のバージョンの Visual Studio で作成されたプロジェクトのサポートに関するリファレンス。
-ms.date: 11/26/2019
+ms.date: 03/02/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85d85b378de527f1ddbfab52f4a66ae475ee766a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901314"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683396"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio のプロジェクトの移行とアップグレードのリファレンス
 
@@ -132,7 +132,7 @@ Microsoft では、以前のバージョン (Visual Studio 2017、Visual Studio 
 | プロジェクトの種類 | サポート |
 | --- | --- |
 | .NET Core プロジェクト (xproj) | Visual Studio 2015 で作成したプロジェクトでは、.xproj プロジェクト ファイルが含まれるプレビュー ツールが使用されていました。<br/><br/>Visual Studio 2017:xproj 形式は、csproj 形式への移行以外ではサポートされていません。 xproj ファイルを開くと、SDK スタイルの csproj 形式にファイルを移行するように求められます。 (xproj ファイルのバックアップが作成されます。)SDK スタイルの csproj プロジェクトは、Visual Studio 2015 以前ではサポートされません。 <br/><br/>Visual Studio 2019:バージョン 16.3 以降では、xproj プロジェクトの読み込みまたは移行を実行できません。 詳細については、「[.NET Core プロジェクトから .csproj 形式への移行](/dotnet/core/migration/#visual-studio)」をご覧ください。|
-| ASP.NET Web アプリケーションと ASP.NET Core Web アプリケーション (Application Insights が有効) | Visual Studio のユーザーごとのリソース情報がユーザー インスタンス別にレジストリに保存されます。 この情報は、プロジェクトを開いていない状態で Azure Application Insights データを検索するときに利用されます。 Visual Studio 2015 では、Visual Studio 2017 および Visual Studio 2019 とは異なるレジストリの場所が使用され、競合しません。<br/><br/>ユーザーが ASP.NET Web アプリケーションまたは ASP.NET Core Web アプリケーションを作成すると、リソースは .suo ファイルに保存されます。 ユーザーは Visual Studio 2015、Visual Studio 2017、または Visual Studio 2019 でプロジェクトを開くことができます。両方のバージョンで使用されているプロジェクトとソリューションが Visual Studio でサポートされている限り、それぞれでリソース情報が使用されます。 ユーザーは製品ごとに 1 回認証する必要があります。 たとえば、Visual Studio 2017 で作成されたプロジェクトを Visual Studio 2019 で開く場合、Visual Studio 2019 で認証が要求されます。 |
+| ASP.NET Core Web アプリと Application Insights を使用した ASP.NET Core Web アプリが有効になっている | Visual Studio のユーザーごとのリソース情報がユーザー インスタンス別にレジストリに保存されます。 この情報は、プロジェクトを開いていない状態で Azure Application Insights データを検索するときに利用されます。 Visual Studio 2015 では、Visual Studio 2017 および Visual Studio 2019 とは異なるレジストリの場所が使用され、競合しません。<br/><br/>ユーザーが ASP.NET Web アプリケーション、ASP.NET Core Web アプリ、または ASP.NET Core Web アプリケーションを作成すると、リソースは .suo ファイルに保存されます。 ユーザーは Visual Studio 2015、Visual Studio 2017、または Visual Studio 2019 でプロジェクトを開くことができます。両方のバージョンで使用されているプロジェクトとソリューションが Visual Studio でサポートされている限り、それぞれでリソース情報が使用されます。 ユーザーは製品ごとに 1 回認証する必要があります。 たとえば、Visual Studio 2017 で作成されたプロジェクトを Visual Studio 2019 で開く場合、Visual Studio 2019 で認証が要求されます。 |
 | C#/Visual Basic Webform または Windows フォーム | プロジェクトは、Visual Studio 2019、Visual Studio 2017、Visual Studio 2015 で開くことができます。 |
 | コード化された UI テスト | UI 駆動型機能テストの自動化のためにコード化された UI テストは、Visual Studio 2019 では非推奨になりました。 <br/><br/>Visual Studio 2019 は、コード化された UI テストの最後のリリースとなります。 Web アプリのテストには Selenium を使用し、デスクトップと UWP アプリのテストには Appium と WinAppDriver を一緒に使用することをお勧めします。 |
 | データベース単体テスト プロジェクト (csproj、.vbproj) | 古いデータ単体テスト プロジェクトは Visual Studio 2019 で読み込まれますが、依存関係は GAC に保存されているものが使用されます。 単体テスト プロジェクトをアップグレードし、最新の依存関係を使用するには、ソリューション エクスプローラーでプロジェクトを右クリックし、 **[SQL Server 単体テスト プロジェクトに変換する]** を選択します。 |

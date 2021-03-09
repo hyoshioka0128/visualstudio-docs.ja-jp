@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7170983732ff1350061629e1e8aa4ec88fad3fa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952838"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683630"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>クイック スタート: Visual Studio での CPU 使用率データの分析 (ASP.NET Core)
 
@@ -42,24 +42,17 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
    ダイアログ ボックスが表示されたら、真ん中のウィンドウで **[MVC]** を選択し、 **[OK]** をクリックします。
    ::: moniker-end
    ::: moniker range="vs-2019"
-   スタート ウィンドウが開いていない場合は、 **[ファイル]** 、 **[スタート ウィンドウ]** の順に選択します。
+   Visual Studio 2019 で、スタート ウィンドウの **[新しいプロジェクトの作成]** を選択します。 スタート ウィンドウが開いていない場合は、 **[ファイル]**  >  **[スタート ウィンドウ]** の順に選択してから、 **[新しいプロジェクトの作成]** を選択します。
 
-   スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。
+   検索ボックスに「**Web アプリ**」と入力し、言語として **C#** を選択して、 **[ASP.NET Core Web Application (Model-View-Controller)]\(ASP.NET Core Web アプリケーション (Model-View-Controller)\)** を選択した後、 **[次へ]** を選択します。 次の画面で、プロジェクトに「*MyProfilingApp_MVC*」という名前を指定し、 **[次へ]** を選択します。
 
-   **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*asp.net*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
-
-   言語およびプラットフォームのフィルターを適用してから、 **[ASP.NET Web アプリケーション (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
 
    > [!NOTE]
    > **[ASP.NET Web アプリケーション (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[ASP.NET と Web 開発]** ワークロードを選択します。
-
-   **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyProfilingApp_MVC*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
-
-   表示されたウィンドウで、 **[Web アプリケーション (モデル ビュー コントローラー)]** を選択し、 **[作成]** を選択します。
-
    ::: moniker-end
 
-   Visual Studio によってその新しいプロジェクトが開かれます。
+   Visual Studio によって新しいプロジェクトが作成され、開かれます。
 
 1. ソリューション エクスプローラーで、[Models] フォルダーを右クリックし、 **[追加]** 、 >  **[クラス]** の順に選択します。
 

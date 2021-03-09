@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861648"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683546"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>クイック スタート: Visual Studio での CPU 使用率データの分析 (C#、Visual Basic)
 
@@ -45,12 +45,14 @@ Windows 8 以降では、デバッガーを使用してプロファイル ツー
 
    **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[C#]** または **[Visual Basic]** を選択して、プラットフォームのリストから **[Windows]** を選択します。
 
-   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   言語およびプラットフォームのフィルターを適用してから、.NET Core 用の **[コンソール アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+   > **[コンソール アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
 
-   **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyProfilerApp*」とタイプまたは入力します。 次に、 **[作成]** を選択します。
+   **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*MyProfilerApp*」とタイプまたは入力します。 その後、 **[次へ]** を選択します。
+
+   推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
 
    ::: moniker-end
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741c22e8116d47a51a75369b5b114725c1f64bf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eac51637b3f3b732f1293337080ef851f34c459
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909274"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682745"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>チュートリアル: Visual Studio を使用した C# のデバッグについて理解する
 
@@ -91,17 +91,19 @@ Visual Studio は既にあり、ワークロードだけをインストールす
 
 1. **[新しいプロジェクトの作成]** ウィンドウで、検索ボックスに「*コンソール*」と入力またはタイプします。 次に、言語のリストから **[C#]** を選択して、プラットフォームのリストから **[Windows]** を選択します。 
 
-   言語およびプラットフォームのフィルターを適用してから、 **[コンソール アプリ (.NET Core)]** テンプレートを選択して、 **[次へ]** を選択します。
+   言語およびプラットフォームのフィルターを適用してから、.NET Core 用の **[コンソール アプリ]** テンプレートを選択して、 **[次へ]** を選択します。
 
-   ![コンソール アプリ (.NET Core) 用の C# テンプレートを選択する](../csharp/media/vs-2019/get-started-create-console-project.png)
+   ![コンソール アプリ用の C# テンプレートを選択します](../csharp/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > **[コンソール アプリ (.NET Core)]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
+   > **[コンソール アプリ]** テンプレートが表示されない場合は、 **[新しいプロジェクトの作成]** ウィンドウからそれをインストールすることができます。 **[お探しの情報が見つかりませんでしたか?]** メッセージで、 **[さらにツールと機能をインストールする]** リンクを選択します。 次に、Visual Studio インストーラーで、 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択します。
 
-1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*GetStartedDebugging*」と入力します。 次に、 **[作成]** を選択します。
+1. **[新しいプロジェクトの構成]** ウィンドウの **[プロジェクト名]** ボックスに「*GetStartedDebugging*」と入力します。 その後、 **[次へ]** を選択します。
+
+1. 推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
 
    Visual Studio によってその新しいプロジェクトが開かれます。
-   
+
 ::: moniker-end
 
 ## <a name="create-the-application"></a>アプリケーションを作成する

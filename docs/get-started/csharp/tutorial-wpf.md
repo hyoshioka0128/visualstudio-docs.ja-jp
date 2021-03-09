@@ -2,7 +2,7 @@
 title: C# で WPF を使った Hello World アプリ
 description: Windows Presentation Foundation (WPF) UI フレームワークを使って、Visual Studio で 単純な Windows デスクトップ .NET アプリを C# で作成します。
 ms.custom: seodec18, get-started
-ms.date: 08/09/2019
+ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924882"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682867"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
@@ -80,16 +80,17 @@ Visual Studio でアプリケーションを作成するには、最初にプロ
 
    ![[新しいプロジェクトの作成] ウィンドウを表示する](../../get-started/media/vs-2019/start-window-create-new-project.png "[新しいプロジェクトの作成] ウィンドウのスクリーンショット")
 
-1. **[新しいプロジェクトの作成]** 画面で、"WPF" を検索し、**[WPF アプリ (.NET Core)]** を選択してから、**[次へ]** を選択します。
+1. **[新しいプロジェクトの作成]** 画面で、「WPF」を検索し、 **[WPF アプリケーション]** を選択してから、 **[次へ]** を選択します。
 
-   ![[新しいプロジェクトの作成] ダイアログの WPF アプリ テンプレート](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "[新しいプロジェクトの作成] ダイアログの WPF アプリ テンプレートのスクリーンショット")
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="[新しいプロジェクトの作成] ダイアログの WPF アプリケーション テンプレート":::
 
-   > [!NOTE]
-   > .NET Framework 用と .NET Core 用の 2 つの WPF デスクトップ テンプレートが見つかることがあります。 .NET Core テンプレートは、Visual Studio 2019 バージョン 16.3 以降で使用できます。 このチュートリアルではどちらでも使用できますが、新しい開発には .NET Core をお勧めします。
+1. 次の画面で、プロジェクトに「**HelloWPFApp**」という名前を付けて、 **[次へ]** を選択します。
 
-1. 次の画面で、プロジェクトに **HelloWPFApp** という名前を付けて、 **[作成]** を選択します。
+   :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="プロジェクトに 'HelloWPFApp' と名前を付ける":::
 
-   ![プロジェクトに 'HelloWPFApp' と名前を付ける](./media/vs-2019/exploreide-nameproject.png "プロジェクトに名前を付けるウィンドウのスクリーンショット")
+1. **[追加情報]** ウィンドウでは、ターゲット フレームワークとして **[.NET Core 3.1]** が既に選択されているはずです。 そうでない場合は **[.NET Core 3.1]** を選択します。 次に、 **[作成]** を選択します。
+
+   :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="[追加情報] ウィンドウで、[.NET Core 3.1] が選択されていることを確認します":::
 
 ::: moniker-end
 

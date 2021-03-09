@@ -3,23 +3,23 @@ title: Visual Studio Tools for Docker と ASP.NET
 author: ghogen
 description: Visual Studio 2019 ツールと Docker for Windows を使用する方法について説明します
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186322"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101749977"
 ---
 Visual Studio を使用すると、コンテナー化された .NET、ASP.NET、および ASP.NET Core アプリを簡単にビルド、デバッグ、および実行して、Azure Container Registry (ACR)、Docker Hub、Azure App Service、または独自のコンテナー レジストリに発行することができます。 この記事では、ASP.NET Core アプリを ACR に発行します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発**ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+* **Web 開発**、**Azure Tools** ワークロード、および/または **.NET Core クロスプラットフォーム開発** ワークロードがインストールされた [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 * .NET Core を使って開発するための [.NET Core 開発ツール](https://dotnet.microsoft.com/download/dotnet-core/)
 * Azure Container Registry に発行する場合、Azure サブスクリプション。 [無料試用版にサインアップします](https://azure.microsoft.com/free/dotnet/)。
 
@@ -29,10 +29,10 @@ Docker をインストールするには、まず、「[Docker Desktop for Windo
 
 ## <a name="add-a-project-to-a-docker-container"></a>Docker コンテナーにプロジェクトを追加する
 
-1. **[ASP.NET Core Web アプリケーション]** テンプレートを使用して新しいプロジェクトを作成します。または、.NET Core ではなく .NET Framework を使用する場合は、 **[ASP.NET Web アプリケーション (.NET Framework)]** を選択します。
-1. **[Web アプリケーション]** を選択し、 **[Enable Docker Support]\(Docker サポートを有効にする\)** チェックボックスがオンになっていることを確認します。
+1. **[ASP.NET Core Web アプリ]** テンプレートを使用して新しいプロジェクトを作成します。または、.NET Core ではなく .NET Framework を使用する場合は、 **[ASP.NET Web アプリケーション (.NET Framework)]** を選択します。
+1. **[追加情報]** 画面で、 **[Docker サポートを有効にする]** チェック ボックスがオンになっていることを確認します。
 
-   ![[Enable Docker Support]\(Docker サポートを有効にする\) チェック ボックス](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+   ![[Enable Docker Support]\(Docker サポートを有効にする\) チェック ボックス](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
    このスクリーンショットには .NET Core が表示されています。 .NET Framework を使用している場合は、少し異なります。
 
@@ -97,7 +97,7 @@ IDE の [検索] ボックスを使用して (**Ctrl**+**Q** を押して使用)
 アプリの開発とデバッグのサイクルが完了すると、アプリの実稼働イメージを作成できます。
 
 1. 構成ドロップダウンを **[リリース]** に変更し、アプリを構築します。
-1. **ソリューション エクスプローラー**で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
+1. **ソリューション エクスプローラー** で対象のプロジェクトを右クリックし、 **[発行]** を選択します。
 1. **[発行]** ダイアログで **[Docker コンテナー レジストリ]** タブを選択します。
 
    ![発行ダイアログのスクリーンショット - [Docker コンテナー レジストリ] を選択する](../../media/container-tools/vs-2019/docker-container-registry.png)

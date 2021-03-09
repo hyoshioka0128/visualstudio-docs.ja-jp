@@ -2,19 +2,19 @@
 title: パフォーマンスを向上させるためのヒント
 description: パフォーマンスを向上させるために、使用していない可能性のある特定の Visual Studio 機能を最適化する方法を説明します。
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873867"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683767"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio のパフォーマンスのヒントとテクニック
 
@@ -142,6 +142,10 @@ Visual Studio では、自動ドキュメント復元により、ソリューシ
 - **ワークロードを削除する**
 
     Visual Studio インストーラーを使って、使われなくなったワークロードを削除できます。 このようにすると、不要になったパッケージとアセンブリをスキップして、起動時および実行時のコストを合理化できます。
+
+- **追跡対象でないファイルをローカルの .gitignore に追加する**
+
+    Visual Studio では、リポジトリに新しいファイルを追加する際にシームレスなエクスペリエンスを提供するために、追跡対象でないファイルを使用して Git コマンド `git status` が実行されます。 追跡対象でないファイルが多数ある場合は、`git status` によって追加のメモリが消費される可能性があります。 これらのファイルを無視して `git status` のパフォーマンスを向上させるには、これらのファイルまたはフォルダーをローカルの .gitignore ファイルに追加します。 このファイルにアクセスするには、 **[Git]**  >  **[設定]**  >  **[Git リポジトリ設定]** に移動します。 次に、 **[Git files]\(Git ファイル\)** セクションで、 **[追加]** をクリックして .gitignore ファイルを作成します。既にある場合は **[編集]** をクリックします。
 
 ## <a name="force-a-garbage-collection"></a>ガベージ コレクションを強制する
 
