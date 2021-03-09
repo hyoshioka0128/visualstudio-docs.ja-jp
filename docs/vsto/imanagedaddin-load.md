@@ -1,5 +1,6 @@
 ---
 title: IManagedAddin::Load
+description: 管理対象の VSTO アドインが読み込まれるときに呼び出されます。
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -11,12 +12,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 605c1dc7a7b0d24ba082767930fd53148cccbd95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc89ba13e9fc0f62b264cdb926e1a8392c0b41bd
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920338"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469763"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   管理対象の VSTO アドインが読み込まれるときに呼び出されます。
@@ -30,7 +31,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 
 ### <a name="parameters"></a>パラメーター
 
-|パラメーター|Description|
+|パラメーター|説明|
 |---------------|-----------------|
 |*bstrManifestURL*|VSTO アドインのマニフェストの完全なパス。|
 |*pdispApplication*|VSTO アドインを読み込んでいるホストアプリケーションを表す IDispatch へのポインター。|

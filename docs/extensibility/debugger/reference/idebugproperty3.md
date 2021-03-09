@@ -1,5 +1,6 @@
 ---
 title: IDebugProperty3 |Microsoft Docs
+description: このインターフェイスは、プロパティに関連付けられた任意の長い文字列を取得するためのサポートを提供し、プロパティに一意の ID を関連付けます。プロパティのカスタムビューアーの一覧を取得し、結果として発生したエラーを報告する機能をプロパティの値に設定します。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f24e7ec1842866011bb4d3735104a043bc77e01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65da477c47e88699cc479f632843f839b3d02f9d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897257"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469776"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 このインターフェイスは、次の機能をサポートします。
@@ -58,7 +59,7 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="remarks"></a>解説
 - [Setvalueasstringwitherror](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) は、セッションデバッグマネージャー (SDM) がプロパティの値を設定するために推奨される方法です。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>必要条件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
