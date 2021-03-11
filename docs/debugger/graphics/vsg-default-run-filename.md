@@ -1,4 +1,5 @@
 ---
+description: グラフィックス ログ ファイルの既定のファイル名を定義します。
 title: VSG_DEFAULT_RUN_FILENAME | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8aff9836570b3af882e5863cc85834f5423f890e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f6bd07e54fc90bcc99f7462cc087ba01866727c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861427"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160481"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 グラフィックス ログ ファイルの既定のファイル名を定義します。

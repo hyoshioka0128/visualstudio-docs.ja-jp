@@ -1,5 +1,6 @@
 ---
 title: ターゲット コンピューターで DNS が正しく構成されていることを確認してください | Microsoft Docs
+description: このエラーは、ターゲット コンピューターが Visual Studio デバッガー ホスト コンピューターの名前を解決できない場合に発生します。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc16217b20d08e9ad2d3b43d3b074652fdffec95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf61e50cc1a6a831625d9cb7c0b12a286e20239f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871683"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466252"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>エラー :ターゲット コンピューターで DNS が正しく構成されていることを確認してください
 リモート デバッグを行おうとすると、次のエラー メッセージが表示される場合があります。

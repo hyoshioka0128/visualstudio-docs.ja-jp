@@ -1,4 +1,5 @@
 ---
+description: ネイティブ コードとマネージド コードの混合を 64 プロセスでデバッグするには、.NET Framework バージョン 4 が必要です。
 title: x64 プロセスの混合モード デバッグは Microsoft.NET Framework 4 以降を使用している場合にのみサポートされます | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31ae6b1c4a80f7d28cdbbdd2c4d944cddf15227d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871495"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146952"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>エラー :x64 プロセスの混合モード デバッグは、Microsoft .NET Framework 4 以上を使用している場合にのみサポートされます
 ネイティブ コードとマネージド コードの混合を 64 プロセスでデバッグするには、.NET Framework バージョン 4 が必要です。 .NET Framework のバージョン 4 より前のバージョンを使用した 64 ビット プロセスの混合モード デバッグはサポートされません。

@@ -1,6 +1,6 @@
 ---
 title: エディット コンティニュの中断モード時に編集を適用する | Microsoft Docs
-Description: エディット コンティニュを使用して、中断モード時に Visual Basic コードを編集する方法について説明します。 中断モードに入るには、さまざまな方法があります。
+description: エディット コンティニュを使用して、中断モード時に Visual Basic コードを編集する方法について説明します。 中断モードに入るには、さまざまな方法があります。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cc695461d7575c7093987c175836896732dce6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9074d992c06c1b7d49f59481bee35345c5199f8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913404"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155043"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>方法: エディット コンティニュの中断モード時に編集を適用する (Visual Basic)
 エディット コンティニュを使用すると、中断モードでコードを編集した後、コードを停止したり再起動したりせずにデバッグを継続できます。

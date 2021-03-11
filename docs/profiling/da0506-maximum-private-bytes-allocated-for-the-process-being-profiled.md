@@ -1,4 +1,5 @@
 ---
+description: このメッセージにより、プロセスによって割り当てられた現在の仮想メモリの最大容量がバイト単位で報告されます (プライベート バイト)。
 title: DA0506 - プロセスに割り当てられた最大プライベート バイト数がプロファイリングされています | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 48671c7e8552626deed814f06f21be38527545bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a796dd962485e5569ec09b07b881a8bb183b6e9d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918065"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223642"
 ---
 # <a name="da0506-maximum-private-bytes-allocated-for-the-process-being-profiled"></a>DA0506:プロセスに割り当てられた最大プライベート バイト数がプロファイリングされています
 

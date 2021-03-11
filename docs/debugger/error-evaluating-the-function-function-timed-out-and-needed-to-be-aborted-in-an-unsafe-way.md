@@ -1,4 +1,5 @@
 ---
+description: メッセージ テキスト全文:関数 'function' の評価がタイムアウトし、安全でない方法で中止される必要がありました。
 title: 関数 &apos;function&apos; の評価がタイムアウトし、安全でない方法で中止される必要がありました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6cae3ffb692161deb0b162a6432efe90f12bf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a540f6f80029039644b22a24a31510042236de2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871651"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147017"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>エラー :関数 &#39;function&#39; の評価がタイムアウトし、安全でない方法で中止される必要がありました
 

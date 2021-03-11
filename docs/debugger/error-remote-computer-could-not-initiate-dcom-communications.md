@@ -1,4 +1,5 @@
 ---
+description: リモート コンピューターがローカル コンピューターと通信しようとしたときに DCOM エラーが発生しました。
 title: リモート コンピューターで DCOM 通信を初期化できませんでした | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc23af6335aa29adcad6dbe9e7869ab26cc0bc6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86d6c46f338d789d6b113551ac9d99c681290526
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871482"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146783"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>エラー :リモート コンピューターは DCOM 通信を初期化できませんでした
 リモート コンピューターがローカル コンピューターと通信しようとしたときに DCOM エラーが発生しました。 ローカル コンピューターは、

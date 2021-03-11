@@ -1,4 +1,5 @@
 ---
+description: このエラーは、Transact-SQL プロシージャまたは SQLCLR プロシージャをデバッグしようとしたときに、デバッガーが SQL Server からデバッグ メッセージを受信しなかった場合に発生します。
 title: Transact-SQL の実行は、デバッグされないで終了しました | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 660b6c8b1f8d09baf35d3d019fe80d428e9d7525
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b0b89474b24e53c69df14894e50ee502c6eb9b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871131"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146497"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>エラー :Transact-SQL の実行は、デバッグされないで終了しました
 

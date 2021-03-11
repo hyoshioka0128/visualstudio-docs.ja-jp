@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: サブスクリプション管理者に連絡し、質問や問題に対する支援を求める方法について説明します。
-ms.openlocfilehash: 363fc84d0607e511d259153dc3e39d4b4063ff42
-ms.sourcegitcommit: fb2a60cfdf78964fa0cb6783a5d947deae04b6bc
+ms.openlocfilehash: 4eb17f5480b3839248d0968b6c20434c149bb756
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93289972"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250044"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>サブスクリプション管理者のサポートを受ける
 職場または学校から Visual Studio サブスクリプションが与えられる場合、おそらく、サブスクリプション管理者 ("admin") からそれを割り当てられています。  管理者はサブスクリプションを割り当てたり、削除したり、サインイン電子メールのアドレスを変更したり、ソフトウェアのダウンロードを許可するかどうかを決定したり、サブスクリプションに関連するその他の機能を実行したりできます。
@@ -33,7 +33,7 @@ ms.locfileid: "93289972"
 > **スーパー管理者:** "管理者に問い合わせる" 要求の送信先のメール アドレスを設定するには、[契約の基本設定](admin-prefs.md#contact-email-address)でそのアドレスを指定します。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/subscriptions/support/#talktous)
+- [Visual Studio サブスクリプションのサポート](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
