@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Azure コミュニティ サポート特典について学習します。
-ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538021"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473336"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Azure コミュニティ サポート特典
 Azure コミュニティを通じて、選ばれたサポート フォーラム内で Azure チームから直接ヘルプを受けます。  Azure コミュニティ特典は、Azure 関連のトピックに重点を置いたフォーラムのコレクションへのアクセスを提供します。
@@ -68,7 +68,7 @@ Azure コミュニティの開始は簡単です。
 ## <a name="eligibility"></a>特典を受ける条件
 Azure コミュニティ特典を利用できるかどうかは、以下のようにサブスクリプション レベルによって変わります。
 
-|                                          サブスクリプション レベル                                           |     チャネル      |    特長    | 更新可能かどうか |
+|                                          サブスクリプション レベル                                           |     チャンネル      |    特長    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)、NFR<sup>1</sup>                            | VL、Azure、リテール |   使用可能    |    はい     |
 |                           Visual Studio Enterprise Subscription with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
@@ -88,7 +88,7 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 ## <a name="support-resources"></a>サポート リソース
 - その他の Azure コミュニティのリソースは、Azure コミュニティの[サポート ページ](https://azure.microsoft.com/support/forums/)をご覧ください。
 - [Azure ドキュメント](/azure/)。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

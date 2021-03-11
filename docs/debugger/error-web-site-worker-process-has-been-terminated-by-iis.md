@@ -1,4 +1,5 @@
 ---
+description: デバッガーが Web サイト上のコードの実行を停止しました。
 title: Web サイトのワーカー プロセスが IIS によって停止されました | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca2b873a4d4b04362298d2d96b9d037cc80addd4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146276"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>エラー :Web サイトのワーカー プロセスが IIS によって停止されました
 デバッガーが Web サイト上のコードの実行を停止しました。 このため、インターネット インフォメーション サービス (IIS: Internet Information Services) はワーカー プロセスが応答を停止したと見なしました。 したがって、IIS がワーカー プロセスを終了しました。

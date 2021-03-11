@@ -1,6 +1,6 @@
 ---
 title: 自分のアプリをステップ実行しているときにフォーカスを保持する | Microsoft Docs
-Description: リモート デバッグを使用して、ウィンドウのアクティブ化に関する問題をデバッグするときに、プログラムがフォーカスを失わないようにします。
+description: リモート デバッグを使用して、ウィンドウのアクティブ化に関する問題をデバッグするときに、プログラムがフォーカスを失わないようにします。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b821c374a87983ab8cb2667b434b1509e8449f31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9700b5f62637cb70900845185578fbb272f5a22b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911442"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155168"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>自分のアプリをステップ実行しているときにフォーカスを保持するにはどうすればよいですか。
 ## <a name="description"></a>説明

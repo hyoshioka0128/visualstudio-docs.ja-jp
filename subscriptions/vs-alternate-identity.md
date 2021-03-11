@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 02/02/2021
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Azure DevOps と Azure で使用するために Visual Studio サブスクリプションに代替 ID を追加する方法
-ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
-ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
+ms.openlocfilehash: 4d00e6808a71522f95d8580056556f5a502ecbde
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99488666"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473310"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio サブスクライバー向けの ID
 Visual Studio サブスクリプションをアクティブ化すると、アクティベーション中に使用した ID (またはログイン) が Visual Studio サブスクリプションとリンクされます。 これにより、Microsoft は [Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps、および Azure でユーザーを認識することができます。
@@ -57,6 +57,9 @@ A: プライマリ ID または代替 ID を使用してサインインすると
 * Azure DevOps にサインインする前に、少なくとも 1 回は [Visual Studio サブスクライバー ポータル](https://my.visualstudio.com?wt.mc_id=o~msft~docs)にアクセスします。
 
 それでもまだ Azure DevOps でサブスクリプションが認識されない場合は、[Azure DevOps のサポート](https://azure.microsoft.com/support/devops/)にお問い合わせください。
+
+## <a name="resources"></a>リソース
+[Visual Studio サブスクリプションのサポート](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

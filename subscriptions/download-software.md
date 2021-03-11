@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで Microsoft のソフトウェア タイトルを見つけてダウンロードする方法を説明します
-ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c53429f7fe7d88c1c75642d9f820c8a6fa444eb9
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903625"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249277"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでソフトウェア タイトルをダウンロードする
 お持ちの Visual Studio サブスクリプションに応じて、さまざまな Microsoft ソフトウェア タイトルを利用できます。  この記事では、サブスクリプションを最大限に活用するために必要なソフトウェアを検索してダウンロードする方法を説明します。 
@@ -51,6 +51,9 @@ ms.locfileid: "92903625"
 ダウンロード用プロダクト キーを取得する場合は、 **[キーを入手]** というラベルの付いた青いキーを選択するか、詳細ウィンドウが既に表示されている場合は、 **[キー]** タブの **[キーの要求]** を選択します。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 のプロダクト キーの要求](_img/subscriber-downloads/vs2019-claim-keys.png "[キーの要求] を選択して、残りのキーを要求します。")
+
+## <a name="resources"></a>リソース
+- [Visual Studio サブスクリプションのサポート](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

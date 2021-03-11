@@ -1,4 +1,5 @@
 ---
+description: Visual Studio の設定をインポート、エクスポート、またはリセットします。
 title: '[設定のインポートとエクスポート] コマンド'
 ms.date: 11/21/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852454"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223675"
 ---
 # <a name="import-and-export-settings-command"></a>[設定のインポートとエクスポート] コマンド
 
@@ -44,9 +45,9 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 任意。 現在の設定をリセットします。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
-スイッチを指定しないでこのコマンドを実行すると、 **[設定のインポートとエクスポート]** ウィザードが開きます。 詳細については、[設定の同期](../synchronized-settings-in-visual-studio.md)と[環境設定](../environment-settings.md)に関するページを参照してください。
+スイッチを指定しないでこのコマンドを実行すると、**[設定のインポートとエクスポート]** ウィザードが開きます。 詳細については、[設定の同期](../synchronized-settings-in-visual-studio.md)と[環境設定](../environment-settings.md)に関するページを参照してください。
 
 ## <a name="example"></a>例
 
@@ -56,7 +57,7 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 ```
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 - [環境設定](../../ide/environment-settings.md)
 - [設定を同期する](../../ide/synchronized-settings-in-visual-studio.md)

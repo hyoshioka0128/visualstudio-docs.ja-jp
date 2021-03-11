@@ -1,4 +1,5 @@
 ---
+description: Visual Studio 2019 バージョン 16.8 以降では、 [発行] ツールを使用し、Visual Studio から ClickOnce を使って .NET Core 3.1、またはそれ以降の Windows デスクトップ アプリケーションを発行することができます。
 title: ClickOnce を使用して .NET Windows デスクトップ アプリケーションを配置する
 ms.date: 10/15/2020
 ms.topic: quickstart
@@ -11,12 +12,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3977408f191aabc734226fd6b637fcfaaf5e9de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934508"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165710"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>ClickOnce を使用して .NET Windows デスクトップ アプリケーションを配置する
 

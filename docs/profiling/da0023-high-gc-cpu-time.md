@@ -1,5 +1,6 @@
 ---
 title: DA0023 - 高い GC CPU 時間 | Microsoft Docs
+description: プロファイリングの間に収集されたシステム パフォーマンス データで、ガベージ コレクションに費やされた時間がアプリケーション処理時間全体と比較して大きいことが示されています。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f719cf2e416e3cb1a58a279d6327810c71e41d0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eccf44528b18d43a97a5a9c202c72b59abbdf431
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966982"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466078"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023:高い GC CPU 時間
 

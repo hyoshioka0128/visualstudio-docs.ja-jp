@@ -1,4 +1,5 @@
 ---
+description: コンカレンシー ビジュアライザー マーカーの重要度レベルを表します。
 title: marker_importance 列挙型 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1559dc6c5aa24c54465aee6d29f0745be6c897c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c2e7560c91882afe1ee2608bb2ae2fc105738dc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917819"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223941"
 ---
 # <a name="marker_importance-enumeration"></a>marker_importance 列挙型
 コンカレンシー ビジュアライザー マーカーの重要度レベルを表します。
@@ -32,7 +33,7 @@ enum marker_importance;
 
 ### <a name="values"></a>値
 
-|名前|説明|
+|Name|説明|
 |----------|-----------------|
 |`critical_importance`|マーカーの重要度がきわめて高いことを指定します。|
 |`high_importance`|マーカーの重要度が高いことを指定します。|

@@ -1,4 +1,5 @@
 ---
+description: marker_series オブジェクトを破棄し、すべての割り当て済みリソースを開放します。
 title: marker_series::~marker_series デストラクター | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe38fa222157818a65bb2b6d58cb417d7ad346d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481ca4967e43dc1af6a994d6298f8173b96ddbf8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917640"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223954"
 ---
 # <a name="marker_seriesmarker_series-destructor"></a>marker_series::~marker_series デストラクター
-marker_series オブジェクトを破棄し、割り当てられているすべてのリソースを解放します。
+marker_series オブジェクトを破棄し、すべての割り当て済みリソースを開放します。
 
 ## <a name="syntax"></a>構文
 

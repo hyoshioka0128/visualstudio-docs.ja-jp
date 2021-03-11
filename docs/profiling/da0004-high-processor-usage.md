@@ -1,5 +1,6 @@
 ---
 title: DA0004 - プロセッサ使用率が高くなっています | Microsoft Docs
+description: プロセッサ (CPU) 使用率は、インストルメンテーション メソッドを使用して収集されたプロファイル データで高くなっていました。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 33acb2f21228a86b481e9d76ee26baa9bf3a77d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e80f9161e435a3b2b615aed700714a0c3cd0efa4
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937642"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469976"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004:プロセッサ使用率が高くなっています
 

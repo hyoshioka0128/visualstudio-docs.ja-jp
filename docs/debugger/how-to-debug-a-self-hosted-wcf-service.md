@@ -1,6 +1,6 @@
 ---
 title: セルフホステッド WCF サービスをデバッグする | Microsoft Docs
-Description: セルフホストされている WCF サービスをデバッグする方法について説明します。 最も簡単な方法は、クライアントとサーバーの両方を起動するように Visual Studio を構成することです (ただし、常に可能であるとは限りません)。
+description: セルフホストされている WCF サービスをデバッグする方法について説明します。 最も簡単な方法は、クライアントとサーバーの両方を起動するように Visual Studio を構成することです (ただし、常に可能であるとは限りません)。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edcf359bd54774647ff1a5957d741fec25b60a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cd11966347cd90576eb78a59f6c7eb96cc697ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915801"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155082"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>方法: セルフホストされている WCF サービスをデバッグする
 *セルフホストされているサービス* とは、IIS 内部で実行されていない WCF サービス、WCF サービス ホスト、または [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 開発サーバーです。 セルフホストされている WCF をデバッグする最も簡単な方法は、 **[デバッグ]** メニューの **[デバッグ開始]** をクリックしたときにクライアントとサーバーの両方を起動するよう、[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] を構成することです。

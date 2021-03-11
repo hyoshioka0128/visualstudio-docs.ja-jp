@@ -1,5 +1,6 @@
 ---
 title: DA0003 - カーネル サンプルが多数存在します | Microsoft Docs
+description: アプリケーションに対して集められた呼び出し履歴の大部分がカーネル モードで実行されています。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a72cb56209176e968f9198808f25c20edee96d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b93bbbcb2026ad6f7ef0d25dc359eb211a6c85f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923834"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469951"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003:カーネル サンプルが多数存在します
 

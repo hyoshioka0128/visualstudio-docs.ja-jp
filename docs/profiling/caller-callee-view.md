@@ -1,4 +1,5 @@
 ---
+description: 呼び出し元/呼び出し先ビューには、選択した関数およびその親関数と子関数のプロファイル データが表示されます。
 title: 呼び出し元/呼び出し先ビュー | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a994f5ff564860ac753787eebd293a8e2fa9c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 375c0f366fb32fcbe8187c2c4b5d1d3d632f7260
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889734"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223707"
 ---
 # <a name="callercallee-view"></a>[呼び出し元/呼び出し先] ビュー
 呼び出し元/呼び出し先ビューには、選択した関数およびその親関数と子関数のプロファイル データが表示されます。 [呼び出し元/呼び出し先] ビューは、3 つのグリッドで構成されます。
@@ -36,9 +37,9 @@ ms.locfileid: "99889734"
 
  レポート ビューの中央部分にある [現在の関数] で別の関数を選択するには、ビューの他の 2 つの部分に一覧表示されている関数のどれか 1 つをダブルクリックします。 レポート ビューはこの変更を反映して自動的に更新されます。
 
- データを並べ替えるには、列名をクリックします。 呼び出し元/呼び出し先ビューには、列を追加できます。 詳細については、「[方法: レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。
+ データを並べ替えるには、列名をクリックします。 呼び出し元/呼び出し先ビューには、列を追加できます。 詳細については、「[方法:レポート ビューの列をカスタマイズする](../profiling/how-to-customize-report-view-columns.md)」を参照してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>こちらもご覧ください
 - [呼び出し元/呼び出し先ビュー - サンプリング データ](../profiling/caller-callee-view-sampling-data.md)
 - [呼び出し元/呼び出し先ビュー - インストルメンテーション データ](../profiling/caller-callee-view-instrumentation-data.md)
 - [呼び出し元/呼び出し先ビュー - .NET メモリ インストルメンテーション データ](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

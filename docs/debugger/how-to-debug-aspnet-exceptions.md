@@ -1,6 +1,6 @@
 ---
 title: ASP.NET の例外をデバッグする | Microsoft Docs
-Description: ASP.NET アプリケーションのハンドルされない例外でデバッガーが停止するように構成する方法について説明します。 システム コード以外のコードで確実に中断を発生させることができます。
+description: ASP.NET アプリケーションのハンドルされない例外でデバッガーが停止するように構成する方法について説明します。 システム コード以外のコードで確実に中断を発生させることができます。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00823fd1a5029cb45b91a6beb4168f8a9cbd999a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebf53569e2c104b49acdadba36203f9d6409e215
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913257"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160422"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>方法: ASP.NET の例外をデバッグする
 例外のデバッグは、堅牢な [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] アプリケーションの開発において重要な部分です。 例外をデバッグする方法に関する一般的な情報については、「[デバッガーでの例外の管理](../debugger/managing-exceptions-with-the-debugger.md)」を参照してください。
