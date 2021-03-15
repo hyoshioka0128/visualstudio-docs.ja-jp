@@ -119,6 +119,10 @@
           href: customizing-code-coverage-analysis.md
         - name: コード カバレッジのトラブルシューティング
           href: troubleshooting-code-coverage.md
+    - name: 移行
+      items:
+        - name: MSTestV1 から MSTestV2 へのアップグレード
+          href: mstest-update-to-mstestv2.md
 - name: Live Unit Testing
   items:
     - name: はじめに
