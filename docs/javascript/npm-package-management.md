@@ -2,7 +2,7 @@
 title: npm パッケージを管理する
 description: Visual Studio では、Node.js パッケージ マネージャー (npm) を利用してパッケージを管理できます。
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962718"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165814"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Visual Studio で npm パッケージを管理する
 
@@ -179,5 +179,7 @@ npm が含まれているプロジェクトでは、`package.json` を使用し�
 * Node.js プロジェクトの場合は、npm サポート用に **Node.js 開発** ワークロードがインストールされている必要があります。
 
 * シナリオによっては、[こちら](https://github.com/aspnet/Tooling/issues/479)に説明されている既知の問題が原因で、インストールされている npm パッケージの正しい状態がソリューション エクスプローラーに表示されないことがあります。 たとえば、パッケージのインストール時に、それがインストールされていないと表示される場合があります。 ほとんどの場合、この記事で先に説明したように、*package.json* を削除し、Visual Studio を再起動して、*package.json* ファイルを再度追加することで、ソリューション エクスプローラーを更新できます。 または、パッケージをインストールするとき、npm 出力ウィンドウを使用してインストールの状態を確認できます。
+
+* 一部の ASP.NET Core シナリオでは、ソリューション エクスプローラーの npm ノードはプロジェクトのビルド後に表示されないことがあります。 ノードを再び表示するには、プロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** を選択します。 次に、プロジェクト ノードを右クリックし、 **[プロジェクトの再読み込み]** を選択します。
 
 * アプリのビルド時または TypeScript コードのトランスパイル時にエラーが表示される場合は、エラーの原因として npm パッケージの非互換性が考えられるので確認してください。 エラー特定するには、この記事で前述したように、パッケージをインストールするときに npm 出力ウィンドウを確認してください。 たとえば、1 つまたは複数の npm パッケージ バージョンが非推奨となっていて、これが原因でエラーが発生する場合、エラーを修正するにはより新しいバージョンをインストールする必要があります。 *package.json* を使用した npm パッケージのバージョン管理に関する詳細は、「[package.json configuration](../javascript/configure-packages-with-package-json.md)」 (package.json の構成) を参照してください。

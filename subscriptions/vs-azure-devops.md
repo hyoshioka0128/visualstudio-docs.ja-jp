@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 07/22/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Visual Studio サブスクライバーとして Azure DevOps を使用する方法について説明します。
-ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d644842eb5bdf8673a86ab0fbb5ebc579c1a0af5
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537696"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473284"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio サブスクリプションの Azure DevOps 特典
 アクティブな Visual Studio サブスクライバーは、特典としてサブスクリプションに含まれる、Azure DevOps のさまざまな機能を使用することができます。 自分で組織を作成したか、他のユーザーによって追加されたかにかかわらず、メンバーである各 Azure DevOps Services 組織でこれらの同じ機能を使用できます。
@@ -28,7 +28,7 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 [無料の Azure DevOps 組織にサインアップする](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup>  | Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ |  はい          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL| Azure Boards & Repos (Basic<sup>2</sup>)、Azure Test Plans、セルフホステッド並列ジョブ |  はい          |
@@ -53,7 +53,7 @@ Visual Studio サブスクリプションのアクティブ化に使用した ID
 A: はい。 Visual Studio Enterprise サブスクライバーには、Team Foundation Server 2017 以降で並列ジョブが 1 つ、メンバーになっている Azure DevOps Services 組織ごとにセルフホステッド並列ジョブが 1 つ与えられます。
 
 ## <a name="support-resources"></a>サポート リソース
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - [Azure DevOps ドキュメント](/azure/devops/)。
 

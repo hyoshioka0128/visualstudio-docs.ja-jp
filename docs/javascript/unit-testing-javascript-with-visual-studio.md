@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957479"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171319"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Visual Studio で JavaScript と TypeScript の単体テストを実行する
 
@@ -97,7 +97,7 @@ TypeScript の場合、生成された JavaScript コードに対して単体テ
 
 ### <a name="run-tests-from-the-command-line"></a>コマンド ラインからテストを実行する
 
-次のコマンドを使って、Visual Studio の[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs) からテストを実行できます。
+次のコマンドを使用し、Visual Studio の[開発者コマンド プロンプト](../ide/reference/command-prompt-powershell.md)からテストを実行できます。
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ JavaScript を使って検出と実行のロジックを実装することで、
 使用可能なテスト フレームワークの検出は、Visual Studio の開始時に行われます。 Visual Studio の実行中にフレームワークを追加する場合は、Visual Studio を再起動してフレームワークが検出されるようにします。 ただし、実装を変更するときは再起動する必要はありません。
 
 ## <a name="unit-tests-in-other-project-types"></a>他のプロジェクト タイプでの単体テスト
+
 単体テストは、Node.js プロジェクトで記述することだけに限定されません。 TestFramework プロパティと TestRoot プロパティを任意の C# プロジェクトまたは Visual Basic プロジェクトに追加すると、これらのテストが列挙され、[テスト エクスプローラー] ウィンドウを使用してこれらを実行することができます。
 
 これを有効にするには、ソリューション エクスプローラーでプロジェクト ノードを右クリックし、 **[プロジェクトのアンロード]** 、 **[プロジェクトの編集]** の順に選択します。 次に、プロジェクト ファイルで、次の 2 つの要素をプロパティ グループに追加します。
 
-> [!NOTE]
+> [!IMPORTANT]
 > 要素を追加するプロパティ グループに、指定された条件がないことを確認します。
 > これにより、予期しない動作が発生する可能性があります。
 
@@ -170,6 +171,7 @@ JavaScript を使って検出と実行のロジックを実装することで、
 次に、指定したテスト ルート フォルダーにテストを追加すると、これらのテストがテスト エクスプローラー ウィンドウで実行できるようになります。 これらが最初に表示されない場合は、プロジェクトをリビルドする必要があります。
 
 ### <a name="unit-test-net-core-and-net-standard"></a>.NET Core と .NET Standard の単体テスト
+
 上記のプロパティに加えて、NuGet パッケージ [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) をインストールし、プロパティを設定する必要もあります。
 
 ```xml

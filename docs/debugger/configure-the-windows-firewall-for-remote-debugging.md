@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865827"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149328"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>リモート デバッグ用の Windows ファイアウォールを構成する
 
@@ -49,6 +49,16 @@ Visual Studio とリモート デバッガーは、インストール中また�
 1. 規則の名前 (たとえば、**msvsmon**、**IIS**、**Web Deploy** など) を追加し、 **[完了]** を選択します。
 
    新しい規則が表示され、 **[受信規則]** または **[送信規則]** の一覧で選択されます。
+
+**PowerShell を使用してポートを開くには:**
+
+Windows Firewall の場合、[New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps) など、PowerShell コマンドを使用できます。
+
+次の例では、リモート コンピューター上のリモート デバッガーのためにポート 4024 が開きます。 使用する必要があるパスは異なる場合があります。
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>リモート デバッグを有効にするリモート コンピューター上のポート
 

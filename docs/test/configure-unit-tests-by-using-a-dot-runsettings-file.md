@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964564"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221159"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -82,6 +82,9 @@ Visual Studio 2019 バージョン 16.4 以降で実行設定ファイルを指�
 
 #### <a name="autodetect-the-run-settings-file"></a>実行設定ファイルを自動検出する
 
+> [!NOTE]
+> これは `.runsettings` という名前のファイルでのみ機能します。
+
 実行設定ファイルを自動検出するには、それをソリューションのルートに配置します。
 
 実行設定ファイルの自動検出が有効になっている場合、このファイル内の設定は実行されるすべてのテストに適用されます。 runsettings ファイルの自動検出は、次の 2 つの方法で有効にすることができます。
@@ -135,7 +138,7 @@ IDE で実行設定ファイルを指定するには、 **[テスト]**  >  **[�
 
 コマンド ラインからテストを実行するには、*vstest.console.exe* を使い、 **/Settings** パラメーターを使って設定ファイルを指定します。
 
-1. Visual Studio の[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)を開きます。
+1. [Visual Studio 用開発者コマンド プロンプト](../ide/reference/command-prompt-powershell.md)を開きます。
 
 2. 次のようなコマンドを入力します。
 

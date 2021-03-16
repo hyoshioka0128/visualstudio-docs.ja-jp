@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 12/02/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: GitHub アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537995"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249729"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub アカウントで Visual Studio サブスクリプションにサインインする 
 
@@ -59,7 +59,7 @@ A: セキュリティ上の制約により、Microsoft は GitHub によるサ�
 A: アカウント エイリアス (メール アドレス、電話番号、Skype 名) でサインインするときは常に、アカウントに対するあらゆるサインイン方法が提示されます。 そこに GitHub が表示されない場合、それがまだ設定されていません。
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>Q:Microsoft アカウントと GitHub アカウントの関連付けを解除する方法はありますか? 
-A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.com/security) タブに移動し、 **[More security options]\(その他のセキュリティ オプション\)** をクリックして GitHub アカウントの関連付けを解除します。 GitHub アカウントの関連付けを解除すると、サインイン方法としてそのアカウントが削除され、Visual Studio のあらゆる GitHub リポジトリへのアクセスが取り消されます。 他の Microsoft 製品で GitHub アカウントへのアクセスが別途要求されていることがあります。そのため、ここでアクセスを取り消しても全製品においてアクセスが取り消されることはありません。 GitHub プロファイルの [[アプリケーションのアクセス許可]](https://github.com/settings/applications) ページに進み、そこに一覧表示されているアプリから同意を取り消します。
+A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.com/security) タブに移動し、 **[Advanced security options]\(高度なセキュリティ オプション\)** をクリックして GitHub アカウントの関連付けを解除します。 GitHub アカウントの関連付けを解除すると、サインイン方法としてそのアカウントが削除され、Visual Studio のあらゆる GitHub リポジトリへのアクセスが取り消されます。 他の Microsoft 製品で GitHub アカウントへのアクセスが別途要求されていることがあります。そのため、ここでアクセスを取り消しても全製品においてアクセスが取り消されることはありません。 GitHub プロファイルの [[アプリケーションのアクセス許可]](https://github.com/settings/applications) ページに進み、そこに一覧表示されているアプリから同意を取り消します。
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:GitHub アカウントでサインインを試していますが、Microsoft ID が既に登録されているので代わりにそれを使用するように促されます。  どうしてでしょうか。
 A: GitHub アカウントに Azure Active Directory のメール アドレスを登録している場合、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID が既に与えられています。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、 **[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。

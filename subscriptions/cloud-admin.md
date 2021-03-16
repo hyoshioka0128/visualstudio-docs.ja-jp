@@ -1,18 +1,18 @@
 ---
-title: 月次サブスクリプションの管理者を設定する | Microsoft Docs
+title: 月次 Visual Studio サブスクリプションの管理者を設定する | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 03/03/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 月次サブスクリプションの管理者の設定
-ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904242"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249535"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>Visual Studio 月次サブスクリプションの管理者を設定する
 
@@ -32,7 +32,7 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 
 管理者を追加するには:
 
-1. Azure Portal ([portal.azure.com](https://portal.azure.com)) にアクセスします。
+1. Azure portal ([portal.azure.com](https://portal.azure.com)) にアクセスします。
 2. Visual Studio 月次サブスクリプションの購入に使用したアカウントを使ってサインインします。
 3. **[Azure サービス]** で **[コストの管理と請求]** を選択します。
    > [!div class="mx-imgBorder"]
@@ -59,13 +59,17 @@ Visual Studio 月次サブスクリプションを購入すると、その購入
 
 Visual Studio 月次サブスクリプションについては、サブスクリプションの購入に関するページの[概要](vscloud-overview.md)を参照してください。 Visual Studio 月次サブスクリプションを購入するには、Visual Studio Marketplace ([https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)) にアクセスしてください。
 
+## <a name="resources"></a>リソース
+- [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)
+
+
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
 - [個別のサブスクリプションの割り当て](assign-license.md)
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)

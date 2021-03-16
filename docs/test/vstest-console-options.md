@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6256343efbc9b81c14b03753fab2fa478df1e4f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86544ad36874ec2a99fac0f8505b24548e83c7c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946190"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168362"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe のコマンド ライン オプション
 
@@ -28,7 +28,7 @@ ms.locfileid: "99946190"
 >
 > ARM アーキテクチャ ベースのコンピューターで自動テストを実行するには、*VSTest.Console.exe* を使用する必要があります。
 
-[開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)を開いてコマンドライン ツールを使用します。ツールは *%Program Files(x86)%\Microsoft Visual Studio\\<バージョン\>\\<エディション\>\common7\ide\CommonExtensions\\<プラットフォーム | Microsoft>* にもあります。
+[開発者コマンド プロンプト](../ide/reference/command-prompt-powershell.md)を開いてコマンドライン ツールを使用します。ツールは " *%Program Files(x86)%\Microsoft Visual Studio\\<バージョン\>\\<エディション\>\common7\ide\CommonExtensions\\<プラットフォーム | Microsoft>* " にもあります。
 
 ## <a name="general-command-line-options"></a>一般的なコマンドライン オプション
 

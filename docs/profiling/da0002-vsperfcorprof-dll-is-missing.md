@@ -1,5 +1,6 @@
 ---
 title: DA0002 - VSPerfCorProf.dll がありません | Microsoft Docs
+description: この警告は、プロファイラー データを収集するコマンドライン ツールが、VSPerfCLREnv.cmd ツールを使用して必要な環境変数を初期化せずに使用される場合や、プロファイリング ツールの起動時に別のプロファイラーが実行されている場合に発生します。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6437daa245343f5a7fc40e5564ee6f2f885e14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 763a28dcb2200549b13b3562ffe3ab9fa629cdc5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868303"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466181"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002:VSPerfCorProf.dll がありません
 

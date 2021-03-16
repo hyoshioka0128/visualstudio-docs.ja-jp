@@ -2,7 +2,7 @@
 title: プロファイリング ツールの使用を開始する
 description: Visual Studio で利用可能な各種診断ツールについて簡単に説明します。
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929109"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145379"
 ---
 # <a name="first-look-at-profiling-tools"></a>プロファイリング ツールの概要
 
@@ -162,6 +162,14 @@ ADO.NET または Entity Framework Core を使用する .NET Core アプリの�
 
 ![Allocation](./media/db-gotosource.png "割り当て")
 
+## <a name="visualize-net-counters-net-core"></a>.NET カウンターの視覚化 (.NET Core)
+
+Visual Studio 2019 バージョン 16.7 より、Visual Studio の [.NET Counters ツール](../profiling/dotnet-counters-tool.md)を使用し、パフォーマンス カウンターを視覚化できます。 [dotnet カウンター](/dotnet/core/diagnostics/dotnet-counters)を使用して作成されたカウンターを視覚化できます。 dotnet カウンターでは、CPU 使用状況やガベージ コレクターのヒープ サイズなど、さまざまなカウンターがサポートされています。
+
+このツールでは、リスト ビューに含まれるカウンターごとにライブ値が表示されます。
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text=".NET カウンター ツールによって収集が行われている。":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>UI のパフォーマンスとアクセシビリティのイベントを調べる (UWP)
@@ -227,14 +235,15 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 ::: moniker range=">=vs-2019"
 |パフォーマンス ツール|Windows デスクトップ|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[パフォーマンスのヒント](../profiling/perftips.md)|はい|可|可|
-|[CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)|はい|可|可|
-|[メモリ使用量](../profiling/memory-usage.md)|可|可|可|
+|[パフォーマンスのヒント](../profiling/perftips.md)|はい|はい|可|
+|[CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)|はい|はい|可|
+|[メモリ使用量](../profiling/memory-usage.md)|はい|はい|可|
 |[.NET オブジェクトの割り当て](../profiling/dotnet-alloc-tool.md)|はい (.NET のみ)|可|はい|
 |[GPU 使用率](./gpu-usage.md)|はい|はい|no|
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可 (XAML)|可|no|
-|[イベント ビューアー](../profiling/events-viewer.md)|可|可|可|
-|[.NET Async](../profiling/analyze-async.md)|はい (.NET のみ)|可|可|
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可 (XAML)|はい|no|
+|[イベント ビューアー](../profiling/events-viewer.md)|可|はい|可|
+|[.NET Async](../profiling/analyze-async.md)|はい (.NET のみ)|可|はい|
+|[.NET カウンター](../profiling/dotnet-counters-tool.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
 |[データベース](../profiling/analyze-database.md)|可 (.NET Core のみ)|Ｘ|可 (ASP.NET Core のみ)|
 |[パフォーマンス エクスプローラー](#analyze-performance-legacy-tools)|Ｘ|no|Ｘ|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|
@@ -246,7 +255,7 @@ Visual Studio 2019 では、従来のパフォーマンス エクスプローラ
 |[CPU 使用率](../profiling/beginners-guide-to-performance-profiling.md)|はい|はい|可|
 |[メモリ使用量](../profiling/memory-usage.md)|はい|はい|はい|
 |[GPU 使用率](./gpu-usage.md)|はい|はい|no|
-|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可 (XAML)|可|no|
+|[アプリケーションのタイムライン](../profiling/application-timeline.md)|可 (XAML)|はい|no|
 |[パフォーマンスのヒント](../profiling/perftips.md)|可|XAML の場合は可、HTML の場合は不可|可|
 |[パフォーマンス エクスプローラー](../profiling/performance-explorer.md)|はい|no|可|
 |[IntelliTrace](../debugger/intellitrace.md)|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|Visual Studio Enterprise を使用した .NET のみ|

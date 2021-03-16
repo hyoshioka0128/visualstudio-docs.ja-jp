@@ -1,4 +1,5 @@
 ---
+description: marker_series クラスの新しいインスタンスを初期化します。
 title: marker_series::marker_series コンストラクター | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: afb15ceed45389d1c442c18cf14e8eaf4150631f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d82c78bc6126f6b3d96b77b39c729c4f452a28
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917649"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223980"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series コンストラクター
 `marker_series` クラスの新しいインスタンスを初期化します。

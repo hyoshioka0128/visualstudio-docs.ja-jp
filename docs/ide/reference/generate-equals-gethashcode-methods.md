@@ -2,19 +2,19 @@
 title: C# の Equals および GetHashCode メソッドのオーバーライドを生成する
 description: '[クイックアクションとリファクタリング] メニューを使用して、Equals メソッドと GetHashCode メソッドを生成する方法について説明します。'
 ms.custom: SEO-VS-2020
-ms.date: 01/26/2018
+ms.date: 03/08/2021
 ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04c054dd73e437907c0943e3e6f0af5003dee37e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a9d0ea6f6cb0aedc4fa13a8014b1a8bd66ccca0
+ms.sourcegitcommit: 6ed6ae5a1693607dce57923a78d01eea3d88b29a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962783"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514956"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Visual Studio で Equals および GetHashCode メソッドのオーバーライドを生成する
 
@@ -28,9 +28,9 @@ ms.locfileid: "99962783"
 
 **理由:**
 
-- 値の型を実装する場合、ValueType の Equals メソッドの既定の実装を上回るパフォーマンスを得るには、**Equals** メソッドのオーバーライドを検討する必要があります。
+- 値の型を実装する場合、**Equals** メソッドのオーバーライドを検討してください。 オーバーライドにした場合、ValueType では、Equals メソッドの既定の実装に比べ、パフォーマンスが上がります。
 
-- 参照型を実装する場合、型が Point、String、BigNumber などの基本データ型に似ているときは、**Equals** メソッドのオーバーライドを検討する必要があります。
+- 参照型を実装する場合、**Equals** メソッドのオーバーライドは、型がポイント、文字列、BigNumber などの基本データ型に似ている場合に検討してください。
 
 - ハッシュ テーブルで型を正しく機能させるには、**GetHashCode** メソッドをオーバーライドします。 詳細については[等値演算子](/dotnet/standard/design-guidelines/equality-operators)のガイドラインをご覧ください。
 
@@ -38,22 +38,32 @@ ms.locfileid: "99962783"
 
 1. 型宣言の行のどこかにカーソルを置きます。
 
-   ![強調表示されたコード](media/overrides-highlight-cs.png)
+    ```csharp
+    public class ImaginaryNumber
+    {
+        public double RealNumber { get; set; }
+        public double ImaginaryUnit { get; set; }
+    }
+    ```
+
+   コードは次のスクリーンショットのようになります。
+
+   ![コードのスクリーンショット。強調表示されているコードに、生成されたメソッドが適用されます](media/overrides-highlight-cs.png)
 
    > [!TIP]
    > 型名をダブルクリックして選択しないでください。ダブルクリックすると、メニュー オプションが利用できなくなります。 行のどこかにカーソルを置くだけです。
 
-1. 次に、以下のいずれかを実行します。
+1. 次に、次の操作のいずれかを選択します。
 
    - 行の任意の場所で **Ctrl**+ **.** キーを押すと、 **[クイック アクションとリファクタリング]** メニューをトリガーします。
 
    - 右クリックして **[クイック アクションとリファクタリング]** メニューを選択します。
 
-   - テキスト カーソルが既に赤い波線の行にある場合は、左余白に表示されている ![ねじ回し](../media/screwdriver-icon.png) アイコンをクリックします。
-
-   ![オーバーライド生成のプレビュー](media/overrides-preview-cs.png)
+   - テキスト カーソルが既にクラスの空の行にある場合は、左余白に表示されている ![Visual Studio のスクリーンショット。ねじ回しのアイコンはクイック アクションを示します](../media/screwdriver-icon.png) アイコンをクリックします。
 
 1. ドロップダウン メニューから **[Equals(object) を生成する]** または **[Equals および GetHashCode を生成する]** を選択します。
+
+   ![[オーバーライドを生成する] ドロップダウン メニューのスクリーンショット](media/overrides-preview-cs.png)
 
 1. **[メンバーの選択]** ダイアログ ボックスで、メソッドを生成するメンバーを選択します。
 
@@ -62,9 +72,36 @@ ms.locfileid: "99962783"
     > [!TIP]
     > ダイアログの下部の近くにあるチェックボックスを使って、このダイアログから演算子を生成することもできます。
 
-   `Equals` メソッドと `GetHashCode` メソッドは、既定の実装で生成されます。
+   `Equals` メソッドと `GetHashCode` メソッドは、次のコードに示されているように、既定の実装で生成されます。
 
-   ![メソッド生成の結果](media/overrides-result-cs.png)
+    ```csharp
+   public class ImaginaryNumber : IEquatable<ImaginaryNumber>
+    {
+        public double RealNumber { get; set; }
+        public double ImaginaryUnit { get; set; }
+
+        public override bool Equals(object obj)
+        {
+            return Equals(obj as ImaginaryNumber);
+        }
+
+        public bool Equals(ImaginaryNumber other)
+        {
+            return other != null &&
+                   RealNumber == other.RealNumber &&
+                   ImaginaryUnit == other.ImaginaryUnit;
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(RealNumber, ImaginaryUnit);
+        }
+    }
+    ```
+
+   コードは次のスクリーンショットのようになります。
+
+   ![生成されたメソッドの結果のスクリーンショット](media/overrides-result-cs.png)
 
 ## <a name="see-also"></a>関連項目
 
