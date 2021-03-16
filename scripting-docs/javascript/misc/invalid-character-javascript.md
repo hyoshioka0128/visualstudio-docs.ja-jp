@@ -1,4 +1,5 @@
 ---
+description: JavaScript コンパイラによって有効と認識されない文字 (または文字) を使用して識別子を構成しました。
 title: 無効な文字です。 (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4978e272017b990501a953062df3a77750f4a837
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: f936500ab80059081af47cdd937633985bce9d50
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862617"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571221"
 ---
 # <a name="invalid-character-javascript"></a>無効な文字です。(JavaScript)
 コンパイラによって有効と認識されない文字 (または文字) を使用して識別子を構成しました [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。 有効な文字は、次の規則を使用します。  

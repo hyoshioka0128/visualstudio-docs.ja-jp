@@ -1,4 +1,5 @@
 ---
+description: 次の表は、それぞれのカテゴリの JavaScript 演算子を示しています。
 title: 演算子の概要 (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -12,12 +13,12 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 47f14b0d8ee87877dc8f4305eb19679ea19fb9e3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862080"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571689"
 ---
 # <a name="operator-summary-javascript"></a>演算子の一覧 (JavaScript)
 次の表は、 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] それぞれのカテゴリの演算子を示しています。  
@@ -26,12 +27,12 @@ ms.locfileid: "91862080"
   
 |演算子|Symbol|  
 |--------------|------------|  
-|[加わっ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[加算](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
 |[Decrement](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
-|[事業部](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
+|[除算](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
 |[Increment](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
 |[剰余](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|%|  
-|[数学](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
+|[乗算](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
 |[減算](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
 |[単項否定](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
   
@@ -41,13 +42,13 @@ ms.locfileid: "91862080"
 |--------------|------------|  
 |[コンマ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)|,|  
 |[条件 (三項)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)|?:|  
-|[等式](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|==|  
+|[等](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|==|  
 |[より大きい](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>|  
-|[以上](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>=|  
+|[次の値以上](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>=|  
 |[ID](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|===|  
-|[不等式](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!=|  
-|[より小さい](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<|  
-|[以下](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<=|  
+|[等しく](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!=|  
+|[次の値より小さい](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<|  
+|[次の値以下](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<=|  
 |[論理積](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&&|  
 |[論理 NOT](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!|  
 |[論理和](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&#124;&#124;|  
@@ -75,7 +76,7 @@ ms.locfileid: "91862080"
   
  [instanceof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/instanceof)  
   
- [new](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
+ [新規](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/new)  
   
  [typeof](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/typeof)  
   
