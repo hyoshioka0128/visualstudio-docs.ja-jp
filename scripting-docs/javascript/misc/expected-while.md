@@ -1,4 +1,5 @@
 ---
+description: While 条件は do... に含まれませんでした。while ループ。
 title: "' While ' | が必要ですMicrosoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,15 +15,15 @@ ms.assetid: 867c10d0-7df6-4ba3-bbe6-7d5b3900cb22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f2dfdaecc0e41e1c4d267a466f47ff26b76a720
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 79145a1fe63031fc1fa5eb9c6d831657f81d0a75
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862181"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570402"
 ---
 # <a name="expected-while"></a>'while' が必要です
-条件をループに含めませんでした `while` `do...while` 。 **Do**ステートメントには、 `while` コードブロックの末尾に対応するテストが必要です。  
+条件をループに含めませんでした `while` `do...while` 。 **Do** ステートメントには、 `while` コードブロックの末尾に対応するテストが必要です。  
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   

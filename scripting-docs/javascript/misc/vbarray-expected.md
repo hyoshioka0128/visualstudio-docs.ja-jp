@@ -1,4 +1,5 @@
 ---
+description: Visual Basic safeArray ではなかったオブジェクトが必要なときに指定しました。
 title: VBArray が必要です |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b4e6521e5d363c21311b19e2ecc1679981acac3
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: e344e24b3fbef7b7f119a36513c222e085328072
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862695"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572079"
 ---
 # <a name="vbarray-expected"></a>VBArray が必要です。
 Visual Basic safeArray ではなかったオブジェクトが必要なときに指定しました。  
@@ -32,7 +33,7 @@ new VBArray(safeArray);
   
 ### <a name="to-correct-this-error"></a>このエラーを解決するには  
   
-- **Vbarray コンストラクターに** **vbarray**オブジェクトのみを渡していることを確認します。  
+- **Vbarray コンストラクターに** **vbarray** オブジェクトのみを渡していることを確認します。  
   
 ## <a name="see-also"></a>関連項目  
  [VBArray オブジェクト](https://developer.mozilla.org/docs/Archive/Web/JavaScript/Microsoft_Extensions/VBArray)   

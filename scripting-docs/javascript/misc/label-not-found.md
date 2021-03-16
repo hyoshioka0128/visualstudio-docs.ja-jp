@@ -1,4 +1,5 @@
 ---
+description: 存在しないラベルへの参照を作成しました。
 title: ラベルが見つかりません |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f43181affb8048bc9c39c0ee3e844193cd2247c8
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6b135a8a95ddf0f3b05f5bfd9f92274dc5638246
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862536"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571208"
 ---
 # <a name="label-not-found"></a>このラベルが定義されていません。
 存在しないラベルへの参照を作成しました。 ラベルは、コードのブロックをマークするために使用できますが、指定されたスコープ内では一意である必要があります。  
