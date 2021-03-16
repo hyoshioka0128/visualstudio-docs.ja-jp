@@ -1,5 +1,6 @@
 ---
 title: DA0030 - データベース プロジェクトの階層の相互作用の測定を収集します | Microsoft Docs
+description: System.Data メソッドの呼び出しがプロファイル データの大きな割合を占めているため、プロファイリングの実行中に階層の相互作用データが収集されませんでした。 プロファイリングを再度実行し、階層の相互作用データを追加することを検討してください。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44720e086fa0c9201fba319e445a44835faa9c2e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908748"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465882"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: データベース プロジェクトの階層の相互作用の測定を収集します
 

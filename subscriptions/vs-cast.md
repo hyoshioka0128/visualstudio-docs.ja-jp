@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 10/21/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: fbc7b6278d29d96ed8d97933c295468c7d3e2754
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 0acc7b62dbac66d25e61dcddfeee0c9124d66694
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538138"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473323"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure へ移行するためのアプリケーションのクラウド レディネスを識別したり、移行中と移行後両方のアプリの進行状況を監視したりできます。
@@ -75,7 +75,7 @@ ms.locfileid: "96538138"
    > 受信した電子メールにあるアクティブ化リンクを必ずクリックしてください。  クリックしないと、CAST Highlight サブスクリプションにアクセスすることはできません。 受信トレイにメールが表示されない場合は、迷惑メール フォルダーを確認してください。
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
@@ -98,7 +98,7 @@ ms.locfileid: "96538138"
   - [サポート要求を送信する](https://casthighlight.com/support/)
   - [概要ガイド (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

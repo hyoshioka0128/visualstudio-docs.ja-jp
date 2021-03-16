@@ -4,21 +4,21 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5dc7f57e-883a-4cc1-a914-06245a8cb1ff
-ms.date: 10/21/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: Azure の従量課金アカウントを設定する方法を説明します。
-ms.openlocfilehash: cb9d89cc704c8d072e0807189f88ba757d9aad78
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3668302778532f1413f240308faa503c9c58837a
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904562"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473271"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure DevTest の従量課金制のサブスクリプション
 クラウドでチームとコラボレーションしましょう。  開発テスト用の従量課金制サブスクリプションを複数作成し、チームと環境の間を分離しながら、他のサブスクライバーとのコラボレーションを可能にします。  Azure におけるサブスクリプション ソフトウェアの開発/テストおよびクラウドの使用権を、サブスクライバーだけの割引価格 (時間当たり) で利用できます。
 
 ## <a name="set-up-a-subscription"></a>サブスクリプションを設定する
-1. Azure の従量課金サブスクリプションの特典を使用するには、 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインし、特典タイルの下部にある **[アクティブ化]** リンクをクリックします。
+1. Azure の従量課金サブスクリプションの特典を使用するには、[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) にサインインし、特典タイルの下部にある **[アクティブ化]** リンクをクリックします。
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG タイル](_img/vs-azure-payg/vs-azure-payg-tile.png "使用を開始するには、DevTest の従量課金制サブスクリプションのタイルで [アクティブ化] をクリックします。")
 
@@ -43,6 +43,9 @@ A: Azure サブスクリプションを変更するには、次のようにし�
 2. 左側のウィンドウのリストにある **[コストの管理と請求]** を選択します。
 3. **[個人用サブスクリプション]** にご利用のサブスクリプションの一覧が表示されます。 目的のサブスクリプションをクリックします。
 4. サブスクリプションの管理またはキャンセル、名前の変更、ディレクトリの変更、または課金所有権の譲渡を行うためのオプションがあります。
+
+## <a name="resources"></a>リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

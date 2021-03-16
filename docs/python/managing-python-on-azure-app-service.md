@@ -11,12 +11,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b76bc008c30efdee0185e6f122abaff8457acef6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7c874a5cd2742f795c6d8b04db88b98b19a556d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882792"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102470015"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Azure App Service で Python 環境を設定する方法 (Windows)
 
@@ -33,7 +33,7 @@ Azure App Service でのカスタマイズ可能な Python のサポートは、
 ## <a name="choose-a-python-version-through-the-azure-portal"></a>Azure Portal から Python のバージョンを選択する
 
 1. Azure ポータルで Web アプリの App Service を作成します。
-1. App Service のページで、 **[開発ツール]** セクションまでスクロールし、 **[拡張機能]** を選択してから、 **[+ 追加]** を選択します。
+1. App Service のページで、**[開発ツール]** セクションまでスクロールし、**[拡張機能]** を選択してから、**[+ 追加]** を選択します。
 1. 必要な Python のバージョンを含む拡張機能まで、一覧を下にスクロールします。
 
     ![Python の拡張機能を示す Azure Portal](media/python-on-azure-extensions.png)
@@ -41,12 +41,12 @@ Azure App Service でのカスタマイズ可能な Python のサポートは、
     > [!Tip]
     > Python の古いバージョンが必要で、サイト拡張機能の一覧にそれが表示されない場合、次のセクションの説明に従って、Azure Resource Manager を介してインストールすることが可能です。
 
-1. 拡張機能を選択し、法的条項に同意して、 **[OK]** を選択します。
+1. 拡張機能を選択し、法的条項に同意して、**[OK]** を選択します。
 1. インストールが完了すると、ポータルに通知が表示されます。
 
 ## <a name="choose-a-python-version-through-the-azure-resource-manager"></a>Azure Resource Manager から Python のバージョンを選択する
 
-Azure Resource Manager テンプレートを使用して App Service をデプロイしている場合は、サイト拡張機能をリソースとして追加します。 具体的には、拡張機能は、入れ子になったリソース (`resources` の下の `resources` オブジェクト) として、型 `siteextensions` および [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) からの名前で表示されます。
+Azure Resource Manager テンプレートを使用して App Service をデプロイしている場合は、サイト拡張機能をリソースとして追加します。 具体的には、拡張機能は、入れ子になったリソース (`resources` の下の `resources` オブジェクト) として、型 `siteextensions` で表示されます。
 
 たとえば、`python361x64` (Python 3.6.1 x 64) への参照を追加すると、テンプレートは、次のようになります (いくつかのプロパティは省略しています)。
 
@@ -162,7 +162,7 @@ Bottle、Flask、および Django Web アプリ用の *web.config* コンテン�
 
 サーバー環境にパッケージを直接インストールするには、次のいずれかの方法を使用します。
 
-| メソッド | 使用方法 |
+| メソッド | 使用 |
 | --- | --- |
 | [Azure App Service Kudu コンソール](#azure-app-service-kudu-console) | パッケージを対話形式でインストールします。 パッケージは、純粋な Python であるか、ホイールを発行する必要があります。 |
 | [Kudu REST API](#kudu-rest-api) | パッケージのインストールを自動化するために使用できます。  パッケージは、純粋な Python であるか、ホイールを発行する必要があります。 |

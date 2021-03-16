@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
-ms.openlocfilehash: 505e4caad5ee6d9b70fc50769c8a008469aa1345
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 4d9b7bea4b2165b8efc9f57396b078c42a5fc8eb
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538151"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473362"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 いくつかの簡単な手順で、アプリを Microsoft Azure に移行します。 数分で、Containers、VM、App Services、SQL Azure、SQL MI への正常な移行のためにコード変更が必要なすべてのコード行が識別されます。 次に、ASR、DMA、および DMS を活用するウィザードを使用して、アプリを Azure に移行します。
@@ -57,7 +57,7 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
@@ -81,7 +81,7 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
   - [CloudPilot ユーザー マニュアル](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
   - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
 
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

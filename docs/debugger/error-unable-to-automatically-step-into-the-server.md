@@ -1,5 +1,6 @@
 ---
 title: サーバーに自動的にステップ インできません | Microsoft Docs
+description: サーバーに自動的にステップ インできません。 デバッガーは、リモート プロシージャが実行される前に通知されませんでした。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d72b06ccad641afa2c83db88ce04f16b0e009c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a374afef2dea92fbad72c45e35ca06904d75cbbe
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146484"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>エラー :サーバーに自動的にステップ インできません
 このエラーは次のように表示されます。

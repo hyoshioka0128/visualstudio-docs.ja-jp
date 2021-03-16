@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684024"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221185"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -47,11 +47,19 @@ Visual Studio 2019 では、あらゆる開発者、アプリ、プラットフ�
 
 ### <a name="improved-search"></a>検索機能の向上
 
-新しい検索エクスペリエンス (以前のクイック起動) は、より高速でより効果的になりました。 入力すると、検索結果が動的に表示されるようになりました。 また、将来使用するためにコマンドをより簡単に記憶できるように、検索結果にコマンドのキーボード ショートカットが含まれるようになりました。
+新しい検索エクスペリエンス (以前のクイック起動) は、より高速でより効果的になりました。 入力すると、検索結果が動的に表示されるようになりました。 また、将来使用するためにコマンドを記憶できるように、多くの場合、コマンドのキーボード ショートカットを検索結果に含めることができます。
 
    ![Visual Studio 2019 の新しい検索エクスペリエンスのアニメーション](media/vs-2019/new-search-feature.gif "Visual Studio 2019 の新しい検索エクスペリエンス。")
 
 新しいあいまい検索ロジックでは、入力ミスがあっても、目的の内容を検索できます。 新しい検索機能は、探しているものがコマンド、設定、ドキュメント、またはその他の便利な機能であるかに関わらず、検索対象を見つけやすくします。
+
+詳細については、「[Visual Studio の検索を使用する](visual-studio-search.md)」を参照してください。
+
+#### <a name="intelligent-search-service"></a>インテリジェント検索サービス
+
+**16.9 の新機能**: クラウドを利用するテクノロジ、人工知能、機械学習により、検索結果が改善されました。 Visual Studio の検索で今までより関連性の高い結果が得られるようになっただけでなく、製品の特徴がずっと簡単に見つかるようになりました。
+
+詳細については、[Visual Studio のインテリジェントな検索サービス](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/)に関するブログ投稿をご覧ください。
 
 ### <a name="refactorings"></a>リファクタリング
 

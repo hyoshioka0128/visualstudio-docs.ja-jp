@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161301"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>"フォルダーを開く" の開発のためにビルド タスクとデバッグ タスクをカスタマイズする
 
@@ -217,7 +217,7 @@ bin:
 
 |マクロ|説明|
 |-|-|
-|`${env.<VARIABLE>}`| 開発者コマンド プロンプトに設定されている環境変数 (たとえば、${env.PATH}、${env.COMSPEC} など) を指定します。 詳細については、「[Visual Studio 用開発者コマンド プロンプト](/dotnet/framework/tools/developer-command-prompt-for-vs)」を参照してください。|
+|`${env.<VARIABLE>}`| 開発者コマンド プロンプトに設定されている環境変数 (たとえば、${env.PATH}、${env.COMSPEC} など) を指定します。 詳細については、「[開発者コマンド プロンプトと開発者 PowerShell](../ide/reference/command-prompt-powershell.md)」を参照してください。|
 |`${workspaceRoot}`| ワークスペース フォルダーの完全なパス (例: *C:\sources\hello*)|
 |`${file}`| このタスクの実行対象として選択されたファイルまたはフォルダーの完全なパス (例: *C:\sources\hello\src\hello.js*)|
 |`${relativeFile}`| ファイルまたはフォルダーの相対パス (例: *src\hello.js*)|

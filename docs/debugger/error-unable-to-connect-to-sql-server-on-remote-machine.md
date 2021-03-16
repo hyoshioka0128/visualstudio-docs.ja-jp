@@ -1,4 +1,5 @@
 ---
+description: リモート コンピューター <名前> 上の SQL Server に接続できません。
 title: リモート コンピューター上の SQL Server に接続できません | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a0fccfd97024a7e37cea772a820033786e662ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b42519b2d33a7322a7f704643fbad4fd22f70d00
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871079"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146458"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>エラー :リモート コンピューター上の SQL Server に接続できません。
 リモート コンピューター *name* 上の SQL Server に接続できません。 アクセスが拒否されました。 リモート コンピューターにリモート デバッガーをインストールしてあることを確認してください。 リモート コンピューターがドメイン上にない場合、または Visual Studio がローカル アカウントとして動作している場合は、ローカル アカウントと同一のユーザー名とパスワードをリモート コンピューターに指定しなければなりません。

@@ -3,15 +3,15 @@ title: 特定の GUID を Visual Studio サブスクライバーに割り当て�
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 10/22/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: 管理者が特定のサブスクリプション GUID をサブスクライバーに割り当てる方法について説明します
-ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467480"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249683"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルで特定のサブスクリプションを割り当てる
 
@@ -40,14 +40,14 @@ ms.locfileid: "92467480"
 
 エクスポート ツールを以前に使用したことがある場合は、生成されたスプレッドシートに新しいフィールドが追加されていることがわかります。  これらは、各サブスクリプションの状態を特定し、ユーザーに割り当てるものを決定するのに役立ちます。  
 
-- **サブスクリプションの状態** : このフィールドには、"割り当て済み" または "未割り当て" が示されます。  サブスクリプションの状態が "割り当て済み" の場合、それには名前や電子メールなどのユーザー情報が関連付けられています。 
-- **使用状態** : 使用状態は、"新規" (ユーザーに割り当てられたことがないことを示す) か、"使用済み" (ある時点でユーザーに割り当てられたことを示す) のいずれかとなります。  
+- **サブスクリプションの状態**: このフィールドには、"割り当て済み" または "未割り当て" が示されます。  サブスクリプションの状態が "割り当て済み" の場合、それには名前や電子メールなどのユーザー情報が関連付けられています。 
+- **使用状態**: 使用状態は、"新規" (ユーザーに割り当てられたことがないことを示す) か、"使用済み" (ある時点でユーザーに割り当てられたことを示す) のいずれかとなります。  
 
 これらのフィールド内の値をスプレッドシート内の他の情報と共に使用することで、個々のユーザーに割り当てるサブスクリプションを決定することができます。 Excel でフィルターを適用すれば、状態、サブスクリプション レベル、有効期限などによって、一覧を容易に絞り込むことができます。 
 
 ### <a name="upload-your-new-assignments"></a>新しい割り当てをアップロードする
 
-最後の手順は、 **一括追加** テンプレートをダウンロードし、割り当てたいサブスクリプションに対して必要な情報を入力して、テンプレートをアップロードするというものです。  このプロセスの詳細については、[複数のユーザーへの割り当て](assign-license-bulk.md)に関する記事を参照してください。  
+最後の手順は、**一括追加** テンプレートをダウンロードし、割り当てたいサブスクリプションに対して必要な情報を入力して、テンプレートをアップロードするというものです。  このプロセスの詳細については、[複数のユーザーへの割り当て](assign-license-bulk.md)に関する記事を参照してください。  
 
 > [!IMPORTANT]
 > アップロードを確実に行うには、次のことを確認してください。
@@ -61,6 +61,9 @@ ms.locfileid: "92467480"
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q:個々のユーザーへのサブスクリプションの現在の割り当てを変更するにはどうすればよいですか。
 A: ユーザーへの GUID の割り当てを変更する場合は、まずそのユーザーのサブスクリプションを削除する必要があります。  詳細については、[サブスクリプションの削除](delete-license.md)に関するページを参照してください。  そのユーザーのサブスクリプションを削除したら、上記のプロセスを使用してリストをエクスポートし、新しいサブスクリプション情報をアップロードします。  
+
+## <a name="resources"></a>リソース
+- [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

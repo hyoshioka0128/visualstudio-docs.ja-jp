@@ -1,4 +1,5 @@
 ---
+description: '[メッセージ] タブを使用し、[メッセージ ビュー] に一覧表示するメッセージの種類を選択し、メッセージ検索条件を指定します。'
 title: '[メッセージ] タブ ([メッセージ オプション] ダイアログ ボックス) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66c1abcedbf48e8cd80aeafe0c4a5def1ddbb9eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891606"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160369"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>[メッセージ] タブ ([メッセージ オプション] ダイアログ ボックス)
 **[メッセージ]** タブを使用し、[[メッセージ ビュー]](../debugger/messages-view.md) に一覧表示するメッセージの種類を選択し、メッセージ検索条件を指定します。 [[メッセージ オプション]](../debugger/message-options-dialog-box.md) ダイアログ ボックスを表示するには、 **[Spy]** メニューから **[ログ メッセージ]** を選択します。

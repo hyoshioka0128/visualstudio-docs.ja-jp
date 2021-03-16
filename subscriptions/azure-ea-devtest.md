@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: Enterprise Agreement をご利用のお客様に提供される Azure DevTest の特別価格を利用する方法について説明します。
-ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904459"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249477"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure Enterprise Agreement DevTest オファー
 
@@ -41,7 +41,10 @@ Enterprise Agreement の一部であるこのオファーは、Microsoft Azure �
 0. チェック ボックスをクリックして、Enterprise Agreement によって管理されているサブスクリプションであることを確認します。 
 0. **[購入]** をクリックします。  (このオファーの場合、実際には何も購入されません)。
 
-## <a name="see-also"></a>参照
+## <a name="resources"></a>リソース
+- ヘルプが必要ですか?  [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+
+## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)

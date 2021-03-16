@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: クラウド サブスクリプションの請求に関する質問。
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572877"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473414"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問
 必ず[クラウド サブスクリプションの特典と価格を比較](https://visualstudio.microsoft.com/vs/pricing/)して、各 Visual Studio サブスクリプションの特典、クラウドと標準の Visual Studio サブスクリプションの比較、サブスクライバー特典の詳細などを理解してください。
@@ -56,7 +56,7 @@ A: 最初の購入時は、現在の月の残りの日数をカバーする日�
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q:**年間プラン** のクラウド サブスクリプション料金はどのように処理されますか。
 A: 購入ごとに、購入された全数量が直ちに請求されます。 料金は 1 年間に分散されず、日割り計算は行われません。 同じ年の異なる時期にクラウド サブスクリプション年間プランを購入した場合、サブスクリプションは異なる月に更新されます。 Microsoft ボリューム ライセンス契約の購入で一般に行われている方法とは異なり、お客様のすべてのクラウド サブスクリプション年間プランを同じ期間にすることはありません。
 
-### <a name="q-how-do-cancelations-work"></a>Q:キャンセルはどのように行われますか。
+### <a name="q-how-do-cancellations-work"></a>Q:キャンセルはどのように行われますか。
 A: Visual Studio クラウド サブスクリプションをキャンセルすると、自動更新がキャンセルされます。 サブスクリプションは通常の更新日まで継続した後、単に期限切れになります。
 期限が切れると、Visual Studio サブスクライバーは、Visual Studio またはサブスクリプションからの他のすべての特典を使用できなくなります。
 
@@ -94,10 +94,13 @@ A: はい。 新しいバージョンがリリースされたら、ダウンロ�
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>Q:ソフトウェア リセラーから Visual Studio クラウド サブスクリプションを購入することはできますか。
 A: はい、リセラーがクラウド ソリューション プロバイダー (CSP) プログラムに加入している場合はできます。 リセラーにお問い合わせください。
 
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>Q: Azure 請求書に関する情報はどこで見つかりますか。
+A: [Azure ドキュメント](/azure/)の [Azure 請求書](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice)に関するこちらの記事をご覧ください。
+
 ## <a name="related-resources"></a>関連資料
 - [Visual Studio サブスクリプションの管理ポータル](https://manage.visualstudio.com/)
-- [Visual Studio サブスクリプションのサポート](https://visualstudio.microsoft.com/vs/support/)
 - [CSP 向けの Visual Studio クラウド サブスクリプションの購入](vscloud-csp.md)
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
