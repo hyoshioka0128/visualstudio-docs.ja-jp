@@ -1,4 +1,5 @@
 ---
+description: 関数オブジェクトではないオブジェクトに対して関数プロトタイプメソッドのいずれかを呼び出そうとしたか、または関数呼び出しコンテキストでオブジェクトを使用しました。
 title: 関数が必要です |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2028d8923c2f81d1d99fec752d7ac0ce2fb32f65
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 99e354118844d7e57f708cf3f2d5653ee1c0fc65
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862173"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622609"
 ---
 # <a name="function-expected"></a>関数が必要です。
 オブジェクトではなかったオブジェクトに対して **関数プロトタイプ** メソッドのいずれかを呼び出そうとしたか `Function` 、または関数呼び出しコンテキストでオブジェクトを使用しました。 たとえば、次のコードでは、 **例** が関数ではないため、このエラーが生成されます。  

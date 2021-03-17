@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: 職場または学校アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903390"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607263"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>職場または学校アカウントを使用して Visual Studio サブスクリプションにサインインする 
 
@@ -69,7 +69,8 @@ A: 多くのユーザーが、複数のサブスクリプションを持って�
 1. 異なる Microsoft アカウントでログインしています。  複数のサブスクリプションをお持ちで (Professional または Enterprise サブスクリプションと、Visual Studio Dev Essentials メンバーシップなど)、それらが異なるメール アドレスに関連付けられている可能性があります。 他のサブスクリプションを表示するには、いったんサインアウトし、他の MSA を使ってもう一度サインインしてください。
 2. 同じメール アドレスに複数のサブスクリプションが関連付けられています。  メール アドレスに関連付けられているすべてのサブスクリプションを表示するには、 https://my.visualstudio.com/subscriptions にアクセスして、使用するサブスクリプションを選択します。 
 
-それでも問題が解消しない場合は、[サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/) チームまでお問い合わせください。  
+## <a name="resources"></a>リソース 
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

@@ -2,7 +2,7 @@
 title: MSBuild に関する問題のトラブルシューティングとログ記録
 description: Visual Studio プロジェクトのビルドに関する問題を診断し、必要に応じて、調査のために Microsoft に送信するログを作成する方法について説明します。
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880490"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225210"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>MSBuild に関する問題のトラブルシューティングとログ記録
 
@@ -99,22 +99,41 @@ Visual Studio IDE 内で (詳細な出力ウィンドウを使って) ビルド�
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>msbuild のバイナリ ログを作成する
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>コマンド プロンプトでバイナリ MSBuild ログを作成する
 
 1. ご自分のバージョンの Visual Studio の [開発者コマンド プロンプト] を開きます。
+
 1. コマンド プロンプトから、次のコマンドのいずれかを実行します。 (実際のプロジェクトと構成値を使うことを忘れないでください。):
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    or
+   or
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-MSBuild を実行したディレクトリに、Msbuild.binlog ファイルが作成されます。 [Msbuild Structured Log Viewer](http://www.msbuildlog.com/) を使って、これを表示および検索できます。
+MSBuild を実行したディレクトリに、*msbuild.binlog* ファイルが作成されます。
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>Project System Tools 拡張機能を使用し、バイナリ MSBuild ログを作成する
+
+1. [Project System Tools 拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)をダウンロードし、インストールします。
+
+1. 拡張機能がインストールされたら、 **[表示]** の **[その他のウィンドウ]** メニューに新しい項目がいくつか表示されます。
+
+   ![[その他のウィンドウ] メニュー](../ide/media/view-menu.png)
+
+1. Visual Studio で **[表示]** 、 **[その他のウィンドウ]** 、 **[ビルドのログ]** の順に選択し、 **[ビルドのログ]** ウィンドウを表示します。 プロジェクト システムで通常のビルドとデザイン時ビルドの両方のレコーディングを開始するには、最初のツール バー アイコンを選択します。
+
+   ![[ビルドのログ] ウィンドウ](../ide/media/build-logging-click-to-record.png)
+
+1. ビルドが記録されると、そのビルドが [ビルドのログ] ウィンドウに表示されます。 項目を右クリックし、コンテキスト メニューの **[ログの保存]** を選択して *.binlog* ファイルを保存します。
+
+   ![[ビルドのログ] コンテキスト メニュー](../ide/media/build-logging-context-menu.png)
+
+[MSBuild Structured Log Viewer](http://www.msbuildlog.com/) を使用し、 *.binlog* ファイルを表示したり、検索したりできます。
 
 ## <a name="create-a-detailed-log"></a>詳細なログを作成する
 

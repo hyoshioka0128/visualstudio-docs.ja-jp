@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 026f6f2902b537312c0714b7eeb61d10e0fb980d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: b9c7f41fd2977ca00294eabd941bc371d8a3220e
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683112"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295799"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>チュートリアル: Visual Studio での C# および ASP.NET Core の概要
 
@@ -357,7 +357,7 @@ Visual Studio を既にインストールしている場合は、最新のリリ
 
 ### <a name="what-is-c"></a>C# とは何ですか?
 
-[C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) は、堅牢でありながら習得しやすいように設計されたタイプ セーフなオブジェクト指向のプログラミング言語です。
+[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) は、堅牢でありながら習得しやすいように設計されたタイプ セーフなオブジェクト指向のプログラミング言語です。
 
 ### <a name="what-is-aspnet-core"></a>ASP.NET Core とは何ですか?
 

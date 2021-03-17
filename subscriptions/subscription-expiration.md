@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションの有効期限が切れたときに何が起きるかについて説明します
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245005"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607134"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>サブスクリプションの有効期限が切れたときに起こること
 Visual Studio サブスクリプションには特定の期間があり、更新されない限り、期限切れになります。  サブスクリプションの有効期限が切れると、サブスクリプションによって提供される特典にさまざまな方法で影響が出ます。  この記事では、Visual Studio サブスクリプションのさまざまな側面に与える有効期限の影響について説明します。 
@@ -29,7 +29,7 @@ Visual Studio サブスクリプションには特定の期間があり、更新
 サブスクリプションの有効期限が切れても、すべての特典が同じように影響を受けるわけではありません。  サブスクリプションの有効期限が切れた後、特典をアクティブ化することはできません。  アクティブ化済みの特典は引き続き利用できます。  
 
 ### <a name="visual-studio-ide"></a>Visual Studio IDE
-ほとんどのサブスクリプションでは、Visual Studio IDE の永続ライセンスが提供されます。 ご利用のサブスクリプションが永続的な使用権に適合しているかどうかを確認するには、Visual Studio の[ライセンスに関するホワイトペーパー](https://aka.ms/vslicensing)をダウンロードしてください。  サブスクリプションが永続的な使用権の対象である場合は、引き続き現在のバージョンの IDE にアクセスできますが、今後のバージョンの更新プログラムを受信することはありません。 有効期限が切れた後も IDE を引き続き使用するには、 [[プロダクト キー]](https://my.visualstudio.com/productkeys) ページにアクセスし、 **サブスクリプションの有効期限が切れる前に** プロダクト キーをダウンロードする必要があります。
+ほとんどのサブスクリプションでは、Visual Studio IDE の永続ライセンスが提供されます。 ご利用のサブスクリプションが永続的な使用権に適合しているかどうかを確認するには、Visual Studio の[ライセンスに関するホワイトペーパー](https://aka.ms/vslicensing)をダウンロードしてください。  サブスクリプションが永続的な使用権の対象である場合は、引き続き現在のバージョンの IDE にアクセスできますが、今後のバージョンの更新プログラムを受信することはありません。 有効期限が切れた後も IDE を引き続き使用するには、[[プロダクト キー]](https://my.visualstudio.com/productkeys) ページにアクセスし、**サブスクリプションの有効期限が切れる前に** プロダクト キーをダウンロードする必要があります。
 
 ### <a name="azure-devops"></a>Azure DevOps
 Visual Studio サブスクリプションを通じて取得された Azure DevOps は使用できなくなります。  
@@ -39,6 +39,9 @@ Visual Studio サブスクリプションを通じて取得された Azure DevOp
 
 ### <a name="other-benefits"></a>その他の利点 
 Visual Studio サブスクリプションに含まれる多くの特典には、固有の期間があります。  Pluralsight、DataCamp、WhiteSource などの Microsoft のパートナーによって提供される特典は、アクティブ化されると開始される時間制限があります。  アクティブ化済みの特典は、残りの期間、引き続き利用できます。  たとえば、6 か月の LinkedIn Learning サブスクリプションをアクティブ化していて、Visual Studio サブスクリプションの有効期限が切れた時点で 4 か月分残っている場合、LinkedIn Learning サブスクリプションに引き続き 4 か月アクセスできます。  
+
+## <a name="resources"></a>リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

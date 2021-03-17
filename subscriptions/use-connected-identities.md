@@ -4,16 +4,16 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 接続済み Microsoft アカウントと Azure Active Directory ID を使用する方法について説明します
-ms.openlocfilehash: a4c7b72c91c4c1180a5fd888e3afd0a33fa2d81b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9625774cbf5338750034f1f288bd2ada0aa9fc33
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904038"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607120"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで接続済み ID を使用する方法
 職場または学校を介して Visual Studio サブスクリプションを受け取り、Microsoft アカウント (MSA) を使用してサインインする場合は、サブスクリプション管理者が組織の Azure Active Directory (Azure AD) の ID に MSA を接続できます。  これにより、サブスクリプションに含まれる特典の一部にアクセスする方法が変わります。 
@@ -41,6 +41,9 @@ A: 管理者に問い合わせる方法の詳細については、[サブスク�
 
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>Q:私は管理者です。どのようにこれを使用するのですか?
 A: 接続された ID の実装は簡単です。  詳しくは、[この記事](personal-email-sign-ins.md)をご覧ください。 
+
+## <a name="resources"></a>リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

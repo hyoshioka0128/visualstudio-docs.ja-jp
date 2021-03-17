@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925761"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295751"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Visual Studio での正規表現の使用
 
@@ -60,7 +60,7 @@ Visual Studio は、テキストの検索と置換をするときに、[.NET Fra
 |任意の[空白文字](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)と一致します|\s|`Public\sInterface` は、語句 "Public Interface" と一致します|
 |任意の [10 進数字](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)と一致します|\d|`\d` は、"wd40" の中の "4" と "0" に一致します|
 
-`\b0[xX]([0-9a-fA-F]+\)\b` は、16 進数に一致するように、演算子と構造体の一部を組み合わせた正規表現の例です。 この式は "0xc67f" とは一致しますが、"0xc67g" とは一致しません。
+`\b0[xX]([0-9a-fA-F]+)\b` は、16 進数に一致するように、演算子と構造体の一部を組み合わせた正規表現の例です。 この式は "0xc67f" とは一致しますが、"0xc67g" とは一致しません。
 
 > [!TIP]
 > Windows オペレーティング システムでは、ほとんどの行は、"\r\n" (キャリッジ リターンと、それに続く新しい行) で終わります。 これらの文字は表示されませんが、エディターの中に存在し、.NET の正規表現のサービスに渡されます。
