@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ff92d7c53b2b7e5f5c89fbc37226135d5331acbb
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221159"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295775"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>*.runsettings ファイルを使用して単体テストを構成する*
 
@@ -306,7 +306,7 @@ public void HomePageTest()
     <DeleteDeploymentDirectoryAfterTestRunIsComplete>False</DeleteDeploymentDirectoryAfterTestRunIsComplete>
     <DeploymentEnabled>False</DeploymentEnabled>
     <AssemblyResolution>
-      <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
+      <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
 </MSTest>
 ```
@@ -322,7 +322,7 @@ public void HomePageTest()
 |**DeleteDeploymentDirectoryAfterTestRunIsComplete**|true|テストの実行後に配置ディレクトリを保持するには、この値を **false** に設定します。|
 |**MapInconclusiveToFailed**|False|テストが結果不確定の状態で完了した場合は、**テスト エクスプローラー** でスキップ状態にマップされます。 結果不確定のテストを失敗として表示する場合は、この値を **true** に設定します。|
 |**InProcMode**|False|テストを MSTest アダプターと同じプロセスで実行する場合は、この値を **true** に設定します。 この設定で、わずかにパフォーマンスが向上します。 ただし、あるテストが例外で終了した場合、残りのテストは続行されません。|
-|**AssemblyResolution**|False|単体テストを検索して実行する場合、追加のアセンブリへのパスを指定できます。 たとえば、テスト アセンブリと同じディレクトリにない依存関係アセンブリにこれらのパスを使用します。 パスを指定するには、**Directory Path** 要素を使用します。 パスには環境変数を含めることができます。<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
+|**AssemblyResolution**|False|単体テストを検索して実行する場合、追加のアセンブリへのパスを指定できます。 たとえば、テスト アセンブリと同じディレクトリにない依存関係アセンブリにこれらのパスを使用します。 パスを指定するには、**Directory Path** 要素を使用します。 パスには環境変数を含めることができます。<br /><br />`<AssemblyResolution>  <Directory path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
 ## <a name="example-runsettings-file"></a>*.runsettings* ファイルの例
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964421"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622635"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>コードから単体テスト メソッド スタブを作成する
 
@@ -52,7 +52,7 @@ NUnit または xUnit のテスト フレームワーク オプションが表�
 NUnit または xUnit 用の単体テストを自動的に生成するには、Visual Studio Marketplace からこれらのテスト フレームワーク拡張機能のいずれかをインストールします。
 
 * [テスト ジェネレーター用 NUnit 拡張機能](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [テスト ジェネレーター用 xUnit.net 拡張機能](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [テスト ジェネレーター用 xUnit.net 拡張機能](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)
 
 ## <a name="when-should-i-use-this-feature"></a>この機能を使用するタイミング
 

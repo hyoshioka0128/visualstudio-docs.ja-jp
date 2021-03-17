@@ -1,18 +1,18 @@
 ---
 title: Visual Studio サブスクリプションへのサインインに関する問題 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションにサインインするときに発生する可能性のある問題について説明します
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903450"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607198"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Visual Studio サブスクリプションへのサインインに関する問題
 Visual Studio サブスクリプションを使用するには、最初にサインインする必要があります。  サブスクリプションによっては、Microsoft アカウント (MSA) または Azure Active Directory (AAD) ID を使用してセットアップされている場合があります。  この記事では、サブスクリプションにサインインするときに発生する可能性がある問題について説明します。
@@ -61,9 +61,12 @@ Visual Studio サブスクリプションを使用するには、最初にサイ
 別名定義は、JohnD@contoso.com のように、会社が自社のディレクトリのサインイン用に Microsoft オンライン サービスを持っているが、ユーザーは John.Doe@contoso.com などの別名や表示名を使用して自分の電子メール アカウントにアクセスしている場合に発生する場合があります。 ボリューム ライセンス サービス センター (VLSC) を介してサブスクリプションを管理している多くのユーザーにとって、これがサインインが失敗する原因となる場合があります。指定したメール アドレス (John.Doe@contoso.com) が、"職場または学校アカウント" オプションを通じて正常に認証するために必要なディレクトリ アドレス (JohnD@contoso.com) と一致していないからです。
 
 ### <a name="what-options-do-i-have"></a>どのようなオプションがありますか
-サブスクライバーの観点からは、まず、管理者に問い合わせて、会社の ID の構成を理解することが重要です。 必要に応じて、管理者が管理ポータルから、サブスクライバーのアカウント設定を更新する必要がある場合や、サブスクライバーが自分の会社のメール アドレスを使用して Microsoft アカウント (MSA) を作成する必要がある場合があります。 MSA を作成する手順を実行する前に、この実行に関するポリシーまたは問題について管理者と話します。 
+サブスクライバーの観点からは、まず、管理者に問い合わせて、会社の ID の構成を理解することが重要です。 必要に応じて、管理者が管理ポータルから、サブスクライバーのアカウント設定を更新する必要がある場合や、サブスクライバーが自分の会社のメール アドレスを使用して Microsoft アカウント (MSA) を作成する必要がある場合があります。 MSA を作成する手順を実行する前に、この実行に関するポリシーまたは問題について管理者と話します。
 
-## <a name="see-also"></a>参照
+## <a name="resources"></a>リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。 
+
+## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)

@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: d44dc484da904d2692b90e23d10db6edc6f6e7b8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223161"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571546"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes のしくみ
 
@@ -142,10 +142,8 @@ kubectl -n <namespace> apply -f <yaml file name>
 
 Bridge to Kubernetes には次の制限があります。
 
-* あるサービスに接続するには、そのサービスを 1 つのポッドでサポートする必要があります。 レプリカが含まれるサービスなど、1 つのサービスに複数のポッドで接続することはできません。
-* Bridge to Kubernetes を正常に接続するために、1 つのポッドには、そのポッドで実行されているコンテナーが 1 つだけ与えられます。 Bridge to Kubernetes では、サービス メッシュによって挿入されたサイドカー コンテナーなど、追加のコンテナーが与えられたポッドを利用してサービスに接続できません。
+* Bridge to Kubernetes を正常に接続するために、1 つのポッドには、そのポッドで実行されているコンテナーが 1 つだけ与えられます。
 * 現時点では、Bridge to Kubernetes ポッドは、Linux コンテナーである必要があります。 Windows コンテナーはサポートされていません。
-* Visual Studio で Bridge to Kubernetes を使用するとき、HTTPS で分離を使用することはできません。 HTTPS は、Visual Studio Code の使用時にのみ、分離で使用できます。
 * ホスト ファイルを編集する目的で開発コンピューターで実行するには、管理者特権が Bridge to Kubernetes に必要になります。
 * Azure Dev Spaces が有効なクラスターでは、Bridge to Kubernetes を使用できません。
 

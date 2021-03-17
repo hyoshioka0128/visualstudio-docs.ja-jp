@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: Visual Studio サブスクリプション ポータルを使用するさまざまな利点について
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904578"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607145"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>サブスクライバー ポータルの使用 - my.visualstudio.com
 
@@ -47,7 +47,7 @@ Azure についてわからないことがあったら、  Azure コミュニテ
 
 ## <a name="support"></a>サポート
 
-[サポート] ページには、[特典] ページの [サポート] カテゴリにある個々の利点に加え、Visual Studio サブスクリプションを最大限に活用するためのリソースにアクセスできるという利点があります。 [サポート リソース](https://visualstudio.microsoft.com/subscriptions/support/)にアクセスして、サブスクリプションの販売、アカウント、課金に関連する技術的な問題や疑問を解決できます。
+[サポート] ページには、[特典] ページの [サポート] カテゴリにある個々の利点に加え、Visual Studio サブスクリプションを最大限に活用するためのリソースにアクセスできるという利点があります。 [サポート リソース](https://aka.ms/vssubscriberhelp)にアクセスして、サブスクリプションの販売、アカウント、課金に関連する技術的な問題や疑問を解決できます。
 
 ## <a name="marketplace"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
