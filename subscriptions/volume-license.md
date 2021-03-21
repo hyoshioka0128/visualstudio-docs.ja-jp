@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: ボリューム ライセンス契約の管理者が、Visual Studio サブスクリプションの管理ポータルにアクセスする方法について説明します
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904218"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607289"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>ボリューム ライセンス契約で管理者として管理ポータルにアクセスする
 
@@ -23,10 +23,10 @@ ms.locfileid: "92904218"
 
 サインインすると、自動的にスーパー管理者としてセットアップされ、サブスクリプションと他の管理者の管理を開始できます。 スーパー管理者と管理者の違いについては、[管理者ロール](admin-roles.md)に関する記事を参照してください。
 
-これに該当するのは、次の種類のボリューム ライセンス契約です (ただし、これらには限定されません)。エンタープライズ契約、エンタープライズ サブスクリプション、セレクト、セレクト プラス、オープン、オープン ライセンス、政府機関向け契約および教育機関向け契約。 
+これが適用されるのは、次の種類のボリューム ライセンス契約です (ただし、これらには限定されません)。エンタープライズ契約、エンタープライズ サブスクリプション、セレクト、セレクト プラス、オープン、オープン ライセンス、政府機関向け および教育機関向け契約。 
 
 ## <a name="resources"></a>リソース
-- [Visual Studio の管理者とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

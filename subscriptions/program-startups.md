@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: Microsoft for Startups プログラムから提供されるサブスクリプションの詳細について説明します。
-ms.openlocfilehash: b1476faec2ea001423ebec139c9ccf4d4dbfa9b4
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4b8d3e92f55df660dd8990c95ba72b872e3cded7
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903412"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607315"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>スタートアップ企業に提供される Visual Studio サブスクリプション
 Microsoft for Startups のプログラムに参加する対象のスタートアップ企業は、Visual Studio Enterprise の[月間クラウド サブスクリプション](https://visualstudio.microsoft.com/vs/pricing/)を 5 つ取得できます。 
@@ -33,12 +33,15 @@ A: 最初の購入時は、現在の月の残りの日数をカバーする日�
 
 後で支払い数量を増やした場合も、現在の月の残りの日数について、増加ユニット分が日割りで請求されます。 したがって、1 個の Visual Studio Professional クラウド サブスクリプション月間プランを 5 月 10 日に追加購入した場合は、約 0.677 ユニット (5 月の 31 日間の残り 21 日分) が請求されます。
 
-### <a name="q-how-do-cancelations-work"></a>Q:キャンセルはどのように行われますか。
+### <a name="q-how-do-cancellations-work"></a>Q:キャンセルはどのように行われますか。
 A: Visual Studio クラウド サブスクリプションをキャンセルすると、自動更新がキャンセルされます。 サブスクリプションは通常の更新日まで継続した後、単に期限切れになります。 期限が切れると、Visual Studio サブスクライバーは、Visual Studio またはサブスクリプションからの他のすべての特典を使用できなくなります。
 
 クラウド サブスクリプション月間プランでは、キャンセルは次の月の最初の日に有効になります。 クラウド サブスクリプション月間プランの一部だけをキャンセルする場合は、次の月の最初の日にユーザーを削除し、適切なユーザーが引き続きアクティブなサブスクリプションを割り当てられるようにしてください。
 
 クラウド サブスクリプション年間プランの場合は、元の購入または最後の年間更新請求から 12 か月が経過した後の月の最初の日に有効になります。 たとえば、2018 年 1 月 3 日に Visual Studio Professional クラウド サブスクリプション年間プランを購入した場合、2019 年 2 月 1 日に次の年に自動的に更新されるまで、サブスクリプションはアクティブです。 2019 年 2 月 1 日から 2020 年 2 月 1 日までの間にキャンセルした場合、サブスクリプションは 2020 年 2 月 1 日に期限切れになります。 クラウド サブスクリプション年間プランのサブスクリプション年の途中でキャンセルした場合の払い戻しはありません。
+
+## <a name="resources"></a>リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

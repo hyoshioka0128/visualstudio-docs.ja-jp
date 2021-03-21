@@ -1,7 +1,7 @@
 ---
 title: 管理者として実行
 description: Visual Studio を管理者として実行する方法について説明します。
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971298"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607250"
 ---
 # <a name="user-permissions-and-visual-studio"></a>ユーザー アクセス許可と Visual Studio
 
@@ -73,6 +73,16 @@ Visual Studio を管理者として実行する必要がある場合は、次の
 ::: moniker-end
 
 アプリケーションのショートカットを変更して、常に管理者アクセス許可で実行することもできます。
+
+1. **[スタート]** メニューを開き、使用している Visual Studio のバージョンまでスクロールし、 **[詳細情報]**  >  **[ファイルの場所を開く]** を選択します。
+
+1. **エクスプローラー** で、使用しているバージョンの **Visual Studio** のショートカットを見つけます。 次に、ショートカットを右クリックし、 **[送る]**  >  **[デスクトップ (ショートカットを作成)]** を選択します。
+
+1. **Windows** デスクトップで、 **[Visual Studio]** のショートカットを右クリックし、 **[プロパティ]** を選択します。
+
+1. **[詳細設定]** ボタンをクリックし、 **[管理者として実行]** チェック ボックスをオンにします。
+
+1. **[OK]** を選択してから、もう一度 **[OK]** を選択します。
 
 ## <a name="see-also"></a>関連項目
 

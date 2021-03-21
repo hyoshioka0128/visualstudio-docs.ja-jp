@@ -2,7 +2,7 @@
 title: 既定のキーボード ショートカット
 description: さまざまなコマンドやウィンドウにアクセスできる Visual Studio の既定のキーボード ショートカットについて説明します。
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2017
+ms.date: 03/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73bb5e48c37cb24d434e57356a90f2bc3907a696
+ms.sourcegitcommit: 6f18481e4f84d86a837ec5d0e8f12fff1a1a8b65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894739"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102782825"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio の既定のキーボード ショートカット
 
@@ -240,6 +240,7 @@ Visual Studio でのアクセシビリティについて詳しくは、「[ア�
 
 |コマンド|キーボード ショートカット|
 |--------------| - |
+|EditorContextMenus.CodeWindow.Breakpoint.BreakpointConditions|**Alt + F9、C**|
 |EditorContextMenus.CodeWindow.Breakpoint.BreakpointEditlabels|**Alt + F9、L**|
 |EditorContextMenus.CodeWindow.CodeMap.ShowItem|**Ctrl + `**|
 |EditorContextMenus.CodeWindow.Execute|**Ctrl + Alt + F5**|
