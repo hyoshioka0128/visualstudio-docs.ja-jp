@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b3626d09d790ca6f15ded3745801eae1ca426bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970660"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295705"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure Services をインストールして使用する
 
@@ -141,6 +141,7 @@ Visual Studio インストーラーによって、さまざまなドメインや
 | デバッガー | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Unix/macOS での .NET Core デバッグ用のデバッガー ビットを SSH 経由でダウンロードするために使用されます <br><br>2. <br>リモート Windows Docker コンテナー デバッグ用のデバッガー ビットをダウンロードするために使用されます<br><br> 3. .NET Framework ソースのステッピングを有効にするために使用されます <br><br> 4. <br>(ユーザーがオプトインする場合) nuget.org シンボル サーバーに発行されたシンボルをダウンロードするために使用されます。<br><br> 5. (ユーザーがオプトインする場合) MS シンボルとバイナリをダウンロードするために使用されます。ダンプでマネージド コードをデバッグするために必要になることもあります |
 | GitHub Codespaces| \*.online.visualstudio.com | https/443 | GitHub Codespaces API を呼び出すために使用されます |
 | Xamarin Android アプリの発行 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Google Play ストア サービスとやりとりして、Visual Studio から Xamarin Android アプリケーションを直接発行またはアップロードするために使用されます。 |
+| Visual Studio の検索サービス | data-ai.microsoft.com/search | https/443 | `Ctrl+Q` 検索ボックスに AI 対応の Visual Studio Search Service を提供するために使用されます |
 | Azure Container Registry | *.azurecr.io | https/443 | CICD パイプラインの構成のために、Azure でホストされているコンテナー レジストリにアクセスします |
 | | | | |
 

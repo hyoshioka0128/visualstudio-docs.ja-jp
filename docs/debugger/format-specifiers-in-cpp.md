@@ -26,14 +26,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870637"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483194"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio デバッガーでの書式指定子 (C++)
+
 書式指定子を使用して、 **[ウォッチ]** 、 **[自動変数]** 、 **[ローカル]** の各ウィンドウに表示される値の書式を変更することができます。
 
 また、 **[イミディエイト]** ウィンドウ、 **[コマンド]** ウィンドウ、[トレースポイント](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)、ソースのウィンドウでも、書式指定子を使用できます。 これらのウィンドウで式の上にカーソルを合わせると、結果が [[データヒント]](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) に表示されます。 [データヒント] の表示には、書式指定子が反映されます。
@@ -42,6 +43,7 @@ ms.locfileid: "99870637"
 > Visual Studio のネイティブ デバッガーが新しいデバッグ エンジンに変更されたときに、新しい書式指定子がいくつか追加され、古いものがいくつか削除されました。 C++/CLI で相互運用 (ネイティブ コードとマネージド コードの混合) をデバッグする場合は、以前のデバッガーが引き続き使用されます。
 
 ## <a name="set-format-specifiers"></a>書式指定子の設定
+
 次のコード例を使用します。
 
 ```C++
@@ -64,6 +66,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 書式指定子
+
 次の表で、Visual Studio で使用できる書式指定子を説明します。 太字で示されている指定子は、新しいデバッガーでのみサポートされており、C++/CLI を使用した相互運用機能デバッグではサポートされていません。
 
 ::: moniker range=">= vs-2019" 
@@ -138,6 +141,7 @@ int main() {
 > **hv** 書式指定子が存在する場合、デバッガーはバッファーの長さを判断してその要素の数を表示しようと試みます。 デバッガーは配列の正確なバッファー サイズを常に判断できるとは限らないため、可能な場合には必ずサイズ指定子 `(pBuffer,[bufferSize])` を使用してください。 **hv** 書式指定子は、バッファー サイズをすぐに利用できない場合に役立ちます。
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 配列としてのポインターのサイズ指定子
+
 オブジェクトに対するポインターを配列として表示する場合、整数または式で配列要素数を指定できます。
 
 |指定子|形式|元の [ウォッチ] の値|表示される値|
@@ -147,7 +151,8 @@ int main() {
 |**expand(n)**|整数に評価される有効な C++ 式|pBuffer, expand(2)|`pBuffer` の 3 番目の要素を表示します。|
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグ用の書式指定子
-**太字** で示されている指定子は、ネイティブおよび C++/CLI コードをデバッグする場合にのみサポートされます。
+
+**太字** で示されている指定子は、ネイティブおよび C++/CLI コードをデバッグする場合にのみサポートされます。 これには、[マネージド互換モード](../debugger/general-debugging-options-dialog-box.md)を使用して指定されたレガシ デバッガーが必要です。
 
 |指定子|形式|元の [ウォッチ] の値|表示される値|
 |---------------|------------|--------------------------|---------------------|
@@ -170,7 +175,10 @@ int main() {
 |!|データ型の表示カスタマイズをすべて無視した、未処理の書式|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでのメモリ位置の書式指定子
+
 メモリ位置を表すために使われる書式シンボルを次の表に示します。 メモリ位置指定子は、任意の値、または位置を評価する式に使用できます。
+
+**太字** で示されている指定子は、ネイティブおよび C++/CLI コードをデバッグする場合にのみサポートされます。 これには、[マネージド互換モード](../debugger/general-debugging-options-dialog-box.md)を使用して指定されたレガシ デバッガーが必要です。
 
 |シンボル|形式|元の [ウォッチ] の値|表示される値|
 |------------|------------|--------------------------|---------------------|
@@ -183,6 +191,7 @@ int main() {
 |**mu**|2 バイト文字 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> C++/CLI での相互運用機能デバッグでの配列としてのポインターのサイズ指定子
+
 オブジェクトに対するポインターを配列として表示する場合、整数で配列要素数を指定できます。
 
 |指定子|形式|正規表現|表示される値|

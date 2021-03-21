@@ -14,12 +14,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1c8c20d350561eec520038dec521ab7bc5f5311
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936549"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570687"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>コマンド ラインからアプリケーションのパフォーマンスを測定する
 
@@ -79,7 +79,7 @@ Visual Studio Diagnostics CLI ツールを使用したプロファイリング�
 
 収集エージェントは、測定対象が何かに応じて、さまざまな種類のデータを収集する交換可能なコンポーネントです。
 
-便宜上、その情報をエージェント構成ファイルに保管することができます。 構成ファイルは、少なくとも *.dll* の名前とその COM CLSID を含む *.json* ファイルです。 以下は、次のフォルダー内にある構成ファイルの例です。
+便宜上、その情報をエージェント構成ファイルに保管することをお勧めします。 構成ファイルは、少なくとも *.dll* の名前とその COM CLSID を含む *.json* ファイルです。 以下は、次のフォルダー内にある構成ファイルの例です。
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
@@ -99,11 +99,7 @@ Visual Studio Diagnostics CLI ツールを使用したプロファイリング�
 
 Base/Low/High 構成はサンプリング レートを表します。 たとえば、Low は 100 サンプル/秒、High は 4,000 サンプル/秒です。
 
-*VSDiagnostics.exe* ツールを収集エージェントと連携させるには、適切なエージェントの DLL と COM CLSID の両方が必要です。また、エージェントに追加の構成オプションが存在する場合があります。 構成ファイルなしでエージェントを使用する場合は、次のコマンドでこの形式を使用してください。
-
-```cmd
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+*VSDiagnostics.exe* ツールを収集エージェントで使用するには、適切なエージェントの DLL と COM CLSID の両方が必要です。 エージェントには追加の構成オプションがある場合もあります。これは、適切にエスケープされた JSON として書式設定された、構成ファイルで指定されているオプションです。
 
 ## <a name="permissions"></a>アクセス許可
 

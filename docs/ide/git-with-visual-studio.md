@@ -2,18 +2,18 @@
 title: Visual Studio での Git エクスペリエンス
 titleSuffix: ''
 description: Visual Studio 2019 での新しい統合 Git エクスペリエンスが、生産性の向上にどのように役立つかについて学習します。
-ms.date: 01/15/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597411"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622648"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio での Git エクスペリエンス
 
@@ -48,7 +48,7 @@ Visual Studio 2019 で新しい Git エクスペリエンスを使用する方�
 > [!TIP]
 > リポジトリがパブリックかプライベートかに関係なく、チームで作業していない場合でも、コードのリモート バックアップを GitHub に安全に保存することをお勧めします。 これにより、使用しているコンピューターに関係なく、コードを使用できるようになります。
 
-ローカル専用の Git リポジトリを作成するには、 **[ローカルのみ]** オプションを使用します。 または、 **[既存のリモート]** オプションを使用して、他の Git プロバイダー上の既存の空のリモート リポジトリに自分のリポジトリをリンクすることもできます。
+ローカル専用の Git リポジトリを作成するには、 **[ローカルのみ]** オプションを使用します。 または、 **[既存のリモート]** オプションを使用して、Azure DevOps または他の Git プロバイダー上の既存の空のリモート リポジトリに自分のローカル プロジェクトをリンクすることもできます。
 
 ## <a name="clone-an-existing-git-repository"></a>既存の Git リポジトリをクローンする
 
@@ -117,7 +117,7 @@ Visual Studio の **[Git Changes]\(Git 変更\)** ウィンドウの上部にあ
 
 ### <a name="create-a-new-branch"></a>新しいブランチを作成する
 
-新しいブランチを作成することもできます。 このアクションの同等のコマンドは、`git checkout <branchname>` です。
+新しいブランチを作成することもできます。 このアクションの同等のコマンドは、`git checkout -b <branchname>` です。
 
 新しいブランチの作成は、ブランチ名を入力して既存のブランチを基にするだけの簡単なものです。
 
@@ -202,6 +202,7 @@ Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-no
 
 ## <a name="see-also"></a>関連項目
 
+- YouTube の [Visual Studio での Git の概要](https://www.youtube.com/watch?v=GCZ9x3yqkyc)のビデオ
 - 「[Visual Studio での Git エクスペリエンスのリリースの発表](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)」ブログ記事
 - YouTube の[新しい Git エクスペリエンスの起動](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio のツールボックス シリーズでは、以下が示されます: 新しい Git エクスペリエンス](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)の動画 (Channel 9)。[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be) でもご覧いただけます

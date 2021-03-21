@@ -4,18 +4,17 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/05/2021
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: GitHub アカウントを使用して Visual Studio サブスクリプションにサインインする方法について説明します。
-ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 99352f4f25d4dd6da42dc0a8d51a093c7c4c216e
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249729"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607185"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>GitHub アカウントで Visual Studio サブスクリプションにサインインする 
-
 Visual Studio サブスクリプションにサインインする手順は、ご使用のアカウントの種類に応じて変わります。 たとえば、Microsoft アカウント (MSA) または勤務先または学校で指定された電子メール アドレスを使用する場合があります。 2019 年 1 月から GitHub アカウントでも一部のサブスクリプションにサインインできるようになりました。 
 
 この記事では、GitHub アカウントを使用してサインインするための手順について説明します。
@@ -26,7 +25,7 @@ GitHub ID のサポートにより GitHub アカウントと Microsoft アカウ
 
 GitHub でサインインすると、Microsoft は GitHub アカウントに関連付けられているメール アドレスが既存の個人または企業 Microsoft アカウントに一致するかどうかを確認します。 アドレスが企業アカウントに一致した場合、代わりにそのアカウントにサインインするように求められます。 アドレスが個人アカウントに一致した場合、その個人アカウントに GitHub アカウントがサインイン方法として追加されます。
 
-GitHub と Microsoft アカウントの資格情報が関連付けられると、Azure サイト、Office アプリ、Xbox など、個人 Microsoft アカウントが使用できるあらゆる場所でそのシングル サインインを使用できます。 これらのアカウントは、メール アドレスが招待状のものと一致する場合、Microsoft アカウントとして Microsoft Azure Active Directory ゲスト サインインに使用することもできます。
+GitHub と Microsoft アカウントの資格情報をリンクすると、Azure サイト、Office アプリ、Xbox など、個人 Microsoft アカウントが使用できるあらゆる場所でそのシングル サインインを使用できます。 これらのアカウントは、メール アドレスが招待状のものと一致する場合、Microsoft アカウントとして Microsoft Azure Active Directory ゲスト サインインに使用することもできます。
 
 > [!NOTE]
 > GitHub ID と Microsoft アカウントを関連付けても Microsoft にコード アクセスが与えられることはありません。 Azure DevOps や Visual Studio のようなアプリでコード リポジトリへのアクセスが必要になるとき、このアクセスに対する特定の同意を与えるように求められます。 
@@ -38,7 +37,7 @@ GitHub と Microsoft アカウントの資格情報が関連付けられると�
 A: [[パスワードのリセット]](https://github.com/password_reset) に進むと、GitHub アカウントを回復できます。 あるいは、[[アカウントの回復]](https://account.live.com/password/reset) で GitHub アカウントのメール アドレスを入力すると、GitHub にリンクされている Microsoft アカウントを回復できます。
 
 #### <a name="q-i-deleted-my-github-account--how-can-i-access-my-microsoft-account-msa-now"></a>Q:GitHub アカウントを削除しました。  どうすれば今、自分の Microsoft アカウント (MSA) にアクセスできますか?
-A: MSA に他の資格情報 (パスワード、認証アプリ、セキュリティ キーなど) がない場合、Microsoft アカウントに関連付けられているメール アドレスを使用して Microsoft アカウントを回復できます。 開始するには、[[アカウントの回復]](https://account.live.com/password/reset) に移動します。 Microsoft が後であなたをサインインする方法を知るために、アカウントにパスワードを追加する必要があります。 
+A: ご自分の MSA に他の資格情報 (パスワード、認証アプリ、セキュリティ キーなど) がない場合は、Microsoft アカウントに関連付けられているメール アドレスを使用して Microsoft アカウントを回復できます。 開始するには、[[アカウントの回復]](https://account.live.com/password/reset) に移動します。 Microsoft が後であなたをサインインする方法を知るために、アカウントにパスワードを追加する必要があります。 
 
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>Q:サインイン ページに "GitHub アカウントでサインイン" オプションがありません。  GitHub 資格情報を使用してサインインするにはどうすればよいですか?
 A: GitHub とリンクする Microsoft アカウントの作成時に選択した GitHub アカウントのメール アドレスを入力します。 アドレスが確認されると、サインインのために GitHub に移動します。 あるいは、サインイン ページに [サインイン] オプション リンクがある場合、そのリンクのクリック後に表示される **[GitHub アカウントでサインイン]** ボタンを使用します。 
@@ -62,7 +61,10 @@ A: アカウント エイリアス (メール アドレス、電話番号、Skyp
 A: account.microsoft.com の [[セキュリティ]](https://account.microsoft.com/security) タブに移動し、 **[Advanced security options]\(高度なセキュリティ オプション\)** をクリックして GitHub アカウントの関連付けを解除します。 GitHub アカウントの関連付けを解除すると、サインイン方法としてそのアカウントが削除され、Visual Studio のあらゆる GitHub リポジトリへのアクセスが取り消されます。 他の Microsoft 製品で GitHub アカウントへのアクセスが別途要求されていることがあります。そのため、ここでアクセスを取り消しても全製品においてアクセスが取り消されることはありません。 GitHub プロファイルの [[アプリケーションのアクセス許可]](https://github.com/settings/applications) ページに進み、そこに一覧表示されているアプリから同意を取り消します。
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>Q:GitHub アカウントでサインインを試していますが、Microsoft ID が既に登録されているので代わりにそれを使用するように促されます。  どうしてでしょうか。
-A: GitHub アカウントに Azure Active Directory のメール アドレスを登録している場合、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID が既に与えられています。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、 **[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。
+A: GitHub アカウントに Azure Active Directory のメール アドレスを登録されている場合は、Azure にアクセスし、GitHub コードで CI パイプラインを実行できる Microsoft ID を既にお持ちです。 そのアカウントを使用することで、Azure のリソースとビルド パイプラインが組織の境界内に留まります。 しかしながら、個人的な作業をしている場合、常にそれにアクセスできるよう、GitHub アカウントに個人のメール アドレスを登録することをお勧めしています。 登録後、もう一度サインインを試し、職場または学校のアカウントにサインインするように求められたら、 **[別のメール アドレスを使用]** を選択します。 これで、その個人メール アドレスを使用して新しい Microsoft アカウントを作成できます。
+
+## <a name="resources"></a>リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

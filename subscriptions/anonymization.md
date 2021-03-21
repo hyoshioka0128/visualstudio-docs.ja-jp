@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
-ms.date: 02/20/2020
+ms.date: 03/11/2021
 ms.topic: conceptual
 description: サブスクリプションへのアクセスを喪失したときに、サブスクライバー データがどのように匿名化されるかについて説明します。
-ms.openlocfilehash: 34059c20a65c41f7998efe344e2d8d4ac63cf7af
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467493"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225964"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio サブスクライバー情報の匿名化
 サブスクライバーのサブスクリプションの使用をブロックするイベント (サブスクリプションの有効期限切れやサブスクライバーのサインイン アカウントの削除など) が発生すると、名前やサインイン アカウントなどのユーザーの個人情報は、基本的にスクランブルされ、使用できなくなります。  これは、サブスクライバーの個人情報を保護するために実行されます。
@@ -35,7 +35,9 @@ ms.locfileid: "92467493"
 A: いいえ。  匿名化は、サブスクリプションへのアクセス権の喪失を引き起こすイベントへの応答で、アクセス権の不足を引き起こすことはありません。
 
 ### <a name="q--im-an-admin-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q:私は組織のサブスクリプションの管理者です。  組織内のサブスクライバーのうちの 1 人の情報が匿名化された場合、そのサブスクリプションを別のユーザーに再割り当てすることはできますか。
-A: はい。サブスクリプションの有効期限が切れていない限り、別のサブスクライバーに再割り当てすることができます。
+A: はい。  これらの条件が満たされた場合は、サブスクリプションを再割り当てできます。
+- サブスクリプションの有効期限が切れていない
+- サブスクリプションがサブスクライバーに最後に割り当てられてから、少なくとも 90 日が経過した。  たとえば、サブスクリプションが 6 月 1 日にサブスクライバーに割り当てられた場合、少なくとも 8 月 30 日までは、サブスクリプションを再割り当てすることはできません。
 
 ### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q:サインイン電子メール アドレスを削除することによって、匿名化の原因を防ぐ方法はありますか?
 A: この問題を回避するには、次の 2 つの方法があります。
