@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935301"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884149"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>T4 テキスト テンプレートを使用したデザイン時コード生成
 
@@ -352,7 +352,7 @@ Warning("A warning message");
 
 4. **.Tt** ファイルの次のプロパティを確認します。
 
-   | | |
+   |プロパティ |設定 |
    |-|-|
    | **カスタム ツール =** | **TextTemplatingFileGenerator** |
    | **ビルド アクション =** | **なし** |
@@ -380,7 +380,7 @@ Warning("A warning message");
 
 [T4 テキストテンプレートの作成に関するガイドラインを](../modeling/guidelines-for-writing-t4-text-templates.md)参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 |次のステップ|トピック|
 |-|-|
