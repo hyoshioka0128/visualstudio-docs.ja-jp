@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService interface
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5054041ab09898943d300393d36205581231b06d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: cc712d0c86613d0ee6b30d754b759c17e3ab9bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227217"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086769"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102227217"
 
  このインターフェイスは、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) インターフェイスと [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) インターフェイスに機能を提供するキーメソッドを実装します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEEVisualizerService : IUnknown
@@ -47,21 +47,21 @@ IEEVisualizerService : IUnknown
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)|プロパティのプロキシオブジェクトを返します。|
 |[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|指定したプロパティまたはフィールドに表示する値文字列の数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  IDE では、 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) インターフェイスを使用して、プロパティのカスタムビューアーまたは型ビジュアライザーがあるかどうかを判断します。 ビジュアライザーサービス ( [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)を使用) を作成することにより、EE は `IDebugProperty3` および [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) (プロパティの値の表示と変更をサポートします) に機能を提供し、型ビジュアライザーをサポートできます。
 
  EE が自身を実装するカスタムビューアーを持っている場合、EE は、 `CLSID` [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)によって返されたリストの末尾に、これらのカスタムビューアーのを追加できます。 これにより、EE は型ビジュアライザーと独自のカスタムビューアーの両方をサポートできます。 [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)にカスタムビューアーの追加が反映されていることを確認してください。
 
  ビジュアライザーとビューアーの違いについては、「 [型ビジュアライザーとカスタムビューアー](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 」を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

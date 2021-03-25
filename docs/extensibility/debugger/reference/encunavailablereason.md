@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1f80dc1454cb1c15feddd099411bcb339dbc58c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e63ad7994d485bb39f8ec789d8906cd7d5946840
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151005"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095989"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!`**エディットコンティニュ** が使用できない理由を表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum tagEncUnavailableReason {
@@ -75,10 +75,10 @@ public enum EncUnavailableReason {
 `ENCUN_WIN64`\
 64ビットの Windows コードの処理中は、エディットコンティニュを使用できません。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この列挙体は、によってのみ内部で使用され [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ます。 カスタムポート供給業者によって実装される [Getencの状態](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) および [disableenc](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) メソッドは、常にを返す必要があり `E_NOTIMPL` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg .idl
 
 名前空間: VisualStudio。

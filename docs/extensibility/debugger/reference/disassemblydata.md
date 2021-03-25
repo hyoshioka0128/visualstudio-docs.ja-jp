@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6053647d43563e7369793982c72683002ae0df5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 71d52c4f48f23368d83d81f88fba4bf0ba36f197
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170459"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096123"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 統合開発環境 (IDE: integrated development environment) で表示する逆アセンブリ命令の1つについて説明します。
@@ -105,7 +105,7 @@ public struct DisassemblyData {
 `dwFlags`\
 アクティブなフラグを指定する [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) 定数。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 各 `DisassemblyData` 構造体は、逆アセンブリの1つの命令を記述します。 これらの構造体の配列は、 [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) メソッドから返されます。
 
 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)構造体は、テキストベースのドキュメントでのみ使用されます。 この命令のソースコードの範囲は、などのステートメントまたは行から生成された最初の命令に対してのみ入力され `dwByteOffset == 0` ます。
@@ -227,7 +227,7 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [読み取り](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
