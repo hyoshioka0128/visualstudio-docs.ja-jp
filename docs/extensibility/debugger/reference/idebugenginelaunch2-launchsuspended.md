@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineLaunch2::LaunchSuspended
 ms.assetid: 5dd2643e-c20a-470e-9024-2a423eb39856
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9fd8b610f99161a9716b9bffc235196165306711
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2db2ce2a35cd8be6599fca3e01bc69a6680012b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066023"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 このメソッドは、デバッグエンジン (DE) を介してプロセスを起動します。
@@ -107,12 +107,12 @@ int LaunchSuspended(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  通常、は、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] [launchsuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) メソッドを使用してプログラムを起動し、中断されたプログラムにデバッガーをアタッチします。 ただし、デバッグエンジンでプログラムの起動が必要になる状況があります (たとえば、デバッグエンジンがインタープリターの一部であり、デバッグ中のプログラムが解釈された言語である場合など)。この場合は、 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] メソッドを使用し `IDebugEngineLaunch2::LaunchSuspended` ます。
 
  [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)メソッドは、プロセスが中断状態で正常に起動された後にプロセスを開始するために呼び出されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)

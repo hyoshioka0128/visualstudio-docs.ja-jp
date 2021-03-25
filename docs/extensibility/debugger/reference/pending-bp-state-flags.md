@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - PENDING_BP_STATE_FLAGS enumeration
 ms.assetid: 85522449-3fd8-4da5-b0fe-a43160e0c33b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a6da9349a033478ab024d719ef796e7bf71c72a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c5e462c460b5ae41f0a1a33db62a058b1da6fa15
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225462"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086457"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 保留中のブレークポイントの状態フラグを指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PENDING_BP_STATE_FLAGS { 
@@ -48,10 +48,10 @@ public enum enum_PENDING_BP_STATE_FLAGS {
 
  `PBPSF_VIRTUALIZED` 新しいコードが読み込まれるたびにバインドされる、仮想化された保留中のブレークポイントを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `flags` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)構造体のメンバーに使用されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

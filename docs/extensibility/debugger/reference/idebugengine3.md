@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3 interface
 ms.assetid: 8bdf4bb7-3b5d-4991-8981-772d4f6bb656
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d91098a1f0a7f2df579a347fccb01239fdfeebe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3a10f439ba344b71cd31fd990928b7804b6c11d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153672"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066191"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 1つ以上のモジュールのデバッグを制御する1つのデバッグエンジン (DE) を表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine3 : IDebugEngine2
@@ -46,12 +46,12 @@ IDebugEngine3 : IDebugEngine2
 |[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|メトリックから DE の GUID を設定します。|
 |[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|現在未解決のすべての例外を指定された状態に設定します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

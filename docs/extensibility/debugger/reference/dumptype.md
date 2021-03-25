@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bc27474b0012e60cccadda44665dc368178a02da
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150979"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095967"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 ダンプするプログラムの状態 (スレッドの実行、スタックフレーム、現在の命令アドレスなど) の量を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DUMPTYPE {
@@ -50,10 +50,10 @@ public enum enum_DUMPTYPE {
 `DUMP_FULLDUMP`\
 大きな完全なダンプを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

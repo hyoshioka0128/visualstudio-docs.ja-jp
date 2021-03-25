@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc27420fc598d174b8e71c5ed3edd879a4a30d9d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 4c530caa530a230dc0fc0344a31e0ab7793f336f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222368"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079775"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 デバッグモジュール情報のフラグを指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_MODULE_INFO_FIELDS { 
@@ -105,14 +105,14 @@ public enum enum_MODULE_INFO_FIELDS {
  `MIF_ALLFIELDS`\
  構造体のすべてのフィールドを初期化/使用し `MODULE_INFO` ます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  これらの値は、 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体のどのフィールドを初期化するかを示すために、引数として[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)メソッドに渡されます。
 
  これらの値は、使用される `MODULE_INFO` フィールドと有効なフィールドを示すために構造体でも使用されます。
 
  これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
