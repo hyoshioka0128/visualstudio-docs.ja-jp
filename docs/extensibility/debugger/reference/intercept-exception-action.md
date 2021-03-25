@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5e1038ac2515198d5eb20b66f346f7a6798c25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c5a3d0d946e05ce249fa4b74dd31e7fef891e7a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852793"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082622"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
 例外をインターセプトするときに実行するアクションを指定します。
@@ -49,7 +49,7 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 `IEA_INTERCEPT`\
 現在の例外のインターセプトを有効にします。 これは現在サポートされている唯一の値であり、指定する必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これらの値は、 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) メソッドに渡されます。
 
 ## <a name="requirements"></a>要件

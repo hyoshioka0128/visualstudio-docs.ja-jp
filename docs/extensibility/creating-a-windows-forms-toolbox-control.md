@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42dcf30e7c31880357bb95e3858a2c70aa59f174
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902189"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089330"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Windows フォームツールボックスコントロールを作成する
 
@@ -46,7 +46,7 @@ Windows フォームツールボックスコントロールテンプレートは
 
 #### <a name="to-build-the-user-interface"></a>ユーザー インターフェイスを作成するには
 
-1. **ソリューションエクスプローラー** で、 *Counter.cs* をダブルクリックしてデザイナーで開きます。
+1. **ソリューションエクスプローラー** で、[ *Counter. .cs* ] をダブルクリックしてデザイナーで開きます。
 
 2. ここを **クリックしてください。** Windows フォームツールボックスコントロール項目テンプレートを追加するときに既定で含まれるボタン。
 
@@ -58,9 +58,9 @@ Windows フォームツールボックスコントロールテンプレートは
 
     |コントロール|プロパティ|値|
     |-------------|--------------|-----------|
-    |`Label1`|**Text**|""|
+    |`Label1`|**[Text]**|""|
     |`Button1`|**名前**|btnReset|
-    |`Button1`|**Text**|Reset|
+    |`Button1`|**[Text]**|Reset|
 
 ### <a name="code-the-user-control"></a>ユーザーコントロールのコーディング
 
@@ -163,7 +163,7 @@ Windows フォームツールボックスコントロールテンプレートは
 
 2. Visual Studio の実験用インスタンスで、 **Windows フォームアプリケーション** プロジェクトを作成します。
 
-3. **ソリューションエクスプローラー** で、 *Form1.cs* をダブルクリックしてデザイナーで開きます (まだ開いていない場合)。
+3. **ソリューションエクスプローラー** で、 *Form1* をダブルクリックしてデザイナーで開きます (まだ開いていない場合)。
 
 4. **ツールボックス** では、 `Counter` コントロールが **[全般**] セクションに表示されます。
 
@@ -173,7 +173,7 @@ Windows フォームツールボックスコントロールテンプレートは
 
 7. コントロールを <xref:System.Windows.Forms.Button> フォームにドラッグし、ボタンの name プロパティと text プロパティをに設定し `Test` ます。
 
-8. ボタンをダブルクリックして、コードビューで *Form1.cs* を開き、クリックハンドラーを作成します。
+8. ボタンをダブルクリックしてコードビューで *Form1* を開き、クリックハンドラーを作成します。
 
 9. クリックハンドラーで、を呼び出し `counter1.Increment()` ます。
 
@@ -212,11 +212,11 @@ Windows フォームツールボックスコントロールテンプレートは
 
     カウンターが **0** にリセットされます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 **ツールボックス** コントロールをビルドすると、Visual Studio によってプロジェクトの \bin\debug\ フォルダーに *ProjectName* という名前のファイルが作成されます。 コントロールを配置するには、 *.vsix* ファイルをネットワークまたは Web サイトにアップロードします。 ユーザーが *.vsix* ファイルを開くと、コントロールがインストールされ、ユーザーのコンピューターの Visual Studio **ツールボックス** に追加されます。 または、 *.vsix* ファイルを [Visual Studio Marketplace](https://marketplace.visualstudio.com/)にアップロードして、ユーザーが [**ツール**  >  ] [**拡張機能と更新プログラム**] ダイアログで参照して検索できるようにすることもできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio の他の部分を拡張する](../extensibility/extending-other-parts-of-visual-studio.md)
 - [WPF ツールボックスコントロールの作成](../extensibility/creating-a-wpf-toolbox-control.md)

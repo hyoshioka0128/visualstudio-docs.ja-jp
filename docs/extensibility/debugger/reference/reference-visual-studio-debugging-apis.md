@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], reference
 - Debugging SDK, reference
 ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5043da1d30a9066278455e9c4653f9a636a07926
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d5b1cb9f7492ca19ca892f1d2e745bf6160d182
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898296"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075420"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>参照 (Visual Studio のデバッグ API)
 
@@ -37,6 +37,6 @@ Visual Studio デバッグ API のインターフェイス、列挙子、およ�
 
 デバッグに関連する用語とその定義の一覧を示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio デバッガーの拡張性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

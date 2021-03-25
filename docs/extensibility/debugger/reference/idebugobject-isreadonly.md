@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::IsReadOnly method
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99cf51ba5415631b2e8e66c36b459297a8fcb6e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0b3cf66d8d540a92b937de996368ed24b18ae0b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161479"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054063"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 このオブジェクトが読み取り専用かどうかを判断します。
@@ -47,8 +47,8 @@ int IsReadOnly(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  読み取り専用オブジェクトの値は、作成後に変更することはできません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

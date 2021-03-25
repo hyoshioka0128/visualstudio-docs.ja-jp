@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 97cb6f4d0425fb75ebaa9375e53e3ba6d5075e00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225735"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082648"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 このインターフェイスは、現在のデバッグセッションで実行されているスレッドを列挙します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugThreads2 : IUnknown
@@ -46,17 +46,17 @@ IEnumDebugThreads2 : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|現在の列挙状態と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|列挙子内のスレッドの数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  通常、Visual Studio は、[ **スレッド** ] ウィンドウを更新するためにこのインターフェイスを取得し、 [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)、 [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)、および [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)を呼び出すために、リストの最初のスレッドを取得します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)

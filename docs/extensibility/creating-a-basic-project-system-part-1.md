@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15d28ff154629d07c643430b210d6106ac99978c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887368"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089434"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>基本プロジェクトシステムを作成する (第1部)
 Visual Studio では、プロジェクトは、ソースコードファイルやその他のアセットを整理するために開発者が使用するコンテナーです。 プロジェクトは、 **ソリューションエクスプローラー** のソリューションの子として表示されます。 プロジェクトを使用すると、ソースコードを整理、ビルド、デバッグ、および配置したり、Web サービス、データベース、その他のリソースへの参照を作成したりすることができます。
@@ -80,7 +80,7 @@ Visual Studio では、プロジェクトは、ソースコードファイルや
 
 4. アイコンを保存し、アイコンエディターを閉じます。
 
-5. *Templates\Projects\SimpleProject* フォルダーに、 *Program.cs* という名前の **クラス** 項目を追加します。
+5. *Templates\Projects\SimpleProject* フォルダーに、 *Program .cs* という名前の **クラス** 項目を追加します。
 
 6. 既存のコードを次の行に置き換えます。
 
@@ -103,11 +103,11 @@ Visual Studio では、プロジェクトは、ソースコードファイルや
    ```
 
    > [!IMPORTANT]
-   > これは、 *Program.cs* コードの最終的な形式ではありません。置換パラメーターについては、後の手順で扱います。 コンパイルエラーが発生する場合がありますが、ファイルの **BuildAction** が **コンテンツ** である限り、通常どおりにプロジェクトをビルドして実行できます。
+   > これは、最後の形式の *プログラム .cs* コードではありません。置換パラメーターについては、後の手順で扱います。 コンパイルエラーが発生する場合がありますが、ファイルの **BuildAction** が **コンテンツ** である限り、通常どおりにプロジェクトをビルドして実行できます。
 
 7. ファイルを保存します。
 
-8. *AssemblyInfo.cs* ファイルを *Properties* フォルダーから、[プロジェクト]、[ *simpleproject* ] フォルダーにコピーします。
+8. *AssemblyInfo* ファイルを *Properties* フォルダーから、[プロジェクト]、[ *simpleproject* ] フォルダーにコピーします。
 
 9. [プロジェクト]、[ *simpleproject* ] フォルダーで、 *simpleproject. myproj* という名前の XML ファイルを追加します。
 
@@ -156,9 +156,9 @@ Visual Studio では、プロジェクトは、ソースコードファイルや
 
 11. ファイルを保存します。
 
-12. [**プロパティ**] ウィンドウで、 *AssemblyInfo.cs*、 *Program.cs*、 *Simpleproject* の **ビルドアクション** を [**コンテンツ** *] に設定* し、[ **VSIX に含める**] プロパティを [ **True**] に設定します。
+12. [**プロパティ**] ウィンドウで、 *AssemblyInfo*、*プログラム .cs*、 *simpleproject .ico*、 *Simpleproject. myproj* の **ビルドアクション** を **コンテンツ** に設定し、[ **VSIX に含める**] プロパティを [ **True**] に設定します。
 
-    このプロジェクトテンプレートには、デバッグ構成とリリース構成の両方を含む基本的な Visual C# プロジェクトが記述されています。 プロジェクトには、 *AssemblyInfo.cs* と *Program.cs* の2つのソースファイルと、いくつかのアセンブリ参照が含まれています。 プロジェクトがテンプレートから作成されると、ProjectGuid 値は自動的に新しい GUID に置き換えられます。
+    このプロジェクトテンプレートには、デバッグ構成とリリース構成の両方を含む基本的な Visual C# プロジェクトが記述されています。 プロジェクトには、 *AssemblyInfo* と *.cs* という2つのソースファイルと、いくつかのアセンブリ参照が含まれています。 プロジェクトがテンプレートから作成されると、ProjectGuid 値は自動的に新しい GUID に置き換えられます。
 
     **ソリューションエクスプローラー** では、展開された **テンプレート** フォルダーは次のようになります。
 
@@ -190,7 +190,7 @@ Templates
        }
    ```
 
-2. *SimpleProjectFactory.cs* という名前の最上位の *simpleproject* フォルダーにクラスを追加します。
+2. クラスを *Simpleprojectfactory* という名前の最上位の *simpleproject* フォルダーに追加します。
 
 3. ディレクティブを使用して以下を追加します。
 
@@ -212,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>プロジェクトテンプレートを登録するには
 
-1. *SimpleProjectPackage.cs* で、次のように、 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> クラスに属性を追加し `SimpleProjectPackage` ます。
+1. *Simpleprojectpackage .cs* で、次のように <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 属性をクラスに追加します。 `SimpleProjectPackage`
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -271,7 +271,7 @@ Templates
 
 ### <a name="to-initialize-the-project-factory"></a>プロジェクトファクトリを初期化するには
 
-1. *SimpleProjectPackage.cs* ファイルで、次のディレクティブを追加し `using` ます。
+1. *Simpleprojectpackage .cs* ファイルで、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -299,7 +299,7 @@ Templates
     }
     ```
 
-5. *SimpleProjectFactory.cs* で、既存のディレクティブの後に次のディレクティブを追加し `using` `using` ます。
+5. *Simpleprojectfactory .cs* で、既存のディレクティブの後に次のディレクティブを追加し `using` `using` ます。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -339,7 +339,7 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>プロジェクトファクトリの実装をテストするには
 
-1. *SimpleProjectFactory.cs* ファイルで、コンストラクターの次の行にブレークポイントを設定し `SimpleProjectFactory` ます。
+1. *Simpleprojectfactory .cs* ファイルで、コンストラクターの次の行にブレークポイントを設定し `SimpleProjectFactory` ます。
 
     ```csharp
     this.package = package;
@@ -418,7 +418,7 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>プロジェクトファクトリクラスと node クラスを接続するには
 
-1. *SimpleProjectFactory.cs* ファイルで、次のディレクティブを追加し `using` ます。
+1. *Simpleprojectfactory .cs* ファイルで、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
@@ -462,7 +462,7 @@ Templates
 
 3. [ **プロパティ** ] ウィンドウで、ビットマップの [ **ビルド] アクション** を [ **埋め込みリソース**] に変更します。
 
-4. *SimpleProjectNode.cs* で、次のディレクティブを追加し `using` ます。
+4. *Simpleprojectnode* で、次のディレクティブを追加し `using` ます。
 
    ```csharp
    using System.Drawing;
@@ -564,7 +564,7 @@ Templates
 
 ### <a name="to-substitute-template-parameters"></a>テンプレートパラメーターを置き換えるには
 
-1. *SimpleProjectNode.cs* ファイルで、次のディレクティブを追加し `using` ます。
+1. *Simpleprojectnode .cs* ファイルで、次のディレクティブを追加し `using` ます。
 
    ```csharp
    using System.IO;
@@ -605,7 +605,7 @@ Templates
 
    - `nameSpace` には、 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* プロジェクトテンプレートファイル内の要素の値が指定されます。 この場合、値は `MyRootNamespace` です。
 
-   - `className` には、ファイル名拡張子のないクラスソースファイル名の値が指定されています。 この場合、コピー先のフォルダーにコピーされる最初のファイルは *AssemblyInfo.cs* です。このため、className の値はに `AssemblyInfo` なります。
+   - `className` には、ファイル名拡張子のないクラスソースファイル名の値が指定されています。 この場合、コピー先のフォルダーにコピーされる最初のファイルは *AssemblyInfo* です。このため、className の値はに `AssemblyInfo` なります。
 
 4. ブレークポイントを削除し、 **F5** キーを押して実行を続行します。
 
@@ -638,4 +638,4 @@ Templates
 
     ![単純なプロジェクト コマンド](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   お疲れさまでした。 基本的なマネージプロジェクトシステムを実装しました。
+   おめでとうございます。 基本的なマネージプロジェクトシステムを実装しました。

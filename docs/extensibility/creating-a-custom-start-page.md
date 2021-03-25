@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f76451ca2a650283125cc7659d0053ef984115fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853086"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089382"
 ---
 # <a name="creating-a-custom-start-page"></a>カスタムスタートページの作成
 
@@ -87,7 +87,7 @@ Visual studio のプライマリインスタンスは、Visual Studio がクラ�
 
 - スタートページをテストし、安定していることがわかったら、[**オプション**] ダイアログボックスの [**スタートページのカスタマイズ**] オプションを使用して、Visual Studio のプライマリインスタンスのスタートページとして選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [チュートリアル: スタートページへのカスタム XAML の追加](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [スタートページにユーザーコントロールを追加する](../extensibility/adding-user-control-to-the-start-page.md)

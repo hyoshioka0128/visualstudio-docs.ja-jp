@@ -10,17 +10,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 5e000ee0-a919-46e9-9277-2a0659f1eb78
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ecd1d0f7697a38ef7318ddf93a91a4397b5d72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b05c9571c0ca8252789f0e07ebfce66926fb19ff
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934065"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060212"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 要素
 Used Commands 要素は、実行されたコマンド要素とその他の実行されたコマンドグループをグループ化します。
@@ -42,7 +42,7 @@ Used Commands 要素は、実行されたコマンド要素とその他の実行
 
 |属性|説明|
 |---------------|-----------------|
-|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
