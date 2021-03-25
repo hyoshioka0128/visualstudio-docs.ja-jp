@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest3
 ms.assetid: 8a042beb-b319-48e3-b3c8-9c8336ab371b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 628a68cf6712e6863550d85a5f876afbe1b6bdb5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6803b62975822f1b5219caa43844c8983303a998
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150745"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054414"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 このインターフェイスは、任意の種類のブレークポイントを作成およびバインドするために必要な情報を表します。 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)の拡張機能です。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBreakpointRequest3 : IDebugBreakpointRequest2
@@ -42,16 +42,16 @@ IDebugBreakpointRequest3 : IDebugBreakpointRequest2
 |------------|-----------------|
 |[GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)|このブレークポイント要求を説明するブレークポイント要求情報を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 構造体に追加情報を提供するために使用されます。 この追加情報には、DE のベンダー ID (GUID の形式)、トレースポイントの名前、およびブレークポイント制約の名前が含まれます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

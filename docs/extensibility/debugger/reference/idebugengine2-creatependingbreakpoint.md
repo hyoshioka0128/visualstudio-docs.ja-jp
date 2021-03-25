@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c364778fa857049139c058f144651edc28bb4692
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fa06a4c88afecfebbd0b1258d7f1830dfdaad5ac
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160162"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093874"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 デバッグエンジン (DE) に保留中のブレークポイントを作成します。
@@ -52,7 +52,7 @@ int CreatePendingBreakpoint(
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 パラメーター `E_FAIL` `pBPRequest` `pBPRequest` が無効または不完全である場合、パラメーターがの DE でサポートされているどの言語とも一致しない場合、は通常、を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 保留中のブレークポイントは、基本的に、ブレークポイントをコードにバインドするために必要なすべての情報のコレクションです。 このメソッドから返された保留中のブレークポイントは、 [バインド](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) メソッドが呼び出されるまでコードにバインドされません。
 
 ユーザーが設定した保留中のブレークポイントごとに、セッションデバッグマネージャー (SDM) は、アタッチされた各 DE 内でこのメソッドを呼び出します。 その DE で実行されているプログラムに対してブレークポイントが有効であることを確認するのは、DE です。
@@ -73,7 +73,7 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [束縛](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)

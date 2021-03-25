@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetSize method
 ms.assetid: 73329924-3751-4f44-af54-5986b7943374
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1c588914f93d732dc1b8e6ddc4edc41713e97fd1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 471b6dce3c4795f8059e64aff5e7522b3ba91842
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151897"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077032"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 このメソッドは、フィールドのサイズ (バイト単位) を取得します。
@@ -47,8 +47,8 @@ int GetSize(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  すべてのフィールドには型があり、すべての型にサイズが設定されています。 たとえば、byte 型のフィールドのサイズは1バイトです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

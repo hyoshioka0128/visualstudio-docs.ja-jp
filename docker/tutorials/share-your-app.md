@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841706"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061785"
 ---
 # <a name="share-your-app"></a>アプリを共有する
 
@@ -24,7 +24,7 @@ ms.locfileid: "99841706"
 
 イメージをプッシュするには、まず、Docker Hub 上でリポジトリを作成する必要があります。
 
-1. [Docker Hub](https://hub.docker.com) にアクセスし、必要に応じてログインします。
+1. [Docker Hub](https://hub.docker.com/signup/msftedge?utm_source=msftedge) にアクセスし、必要に応じてログインします。
 
 1. **[リポジトリの作成]** ボタンをクリックします。
 
@@ -94,7 +94,7 @@ ms.locfileid: "99841706"
 
 理解できたところで、すぐ前のセクションの終わりで、アプリを再起動したところ、すべての ToDo リスト項目が失われたことを思い出してください。 これが優れたユーザー エクスペリエンスではないのは明らかなので、次に、再起動後もデータを保持できる方法を学習します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 チュートリアルを続行します。
 

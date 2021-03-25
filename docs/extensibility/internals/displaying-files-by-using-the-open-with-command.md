@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Open With command
 - persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e45e2c601873641b5ac79c54fd6709eb3f45f95d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946723"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069817"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>[ファイルを開くアプリケーションの表示] コマンドを使用してファイルを表示する
 プロジェクトでは、[ **ファイルを開くアプリケーション** の選択] ダイアログボックスを表示するよう IDE に要求できます。 この要求は、標準エディターを選択したファイルを開くようにユーザーに求めます。 次の手順では、このプロセスについて説明します。
@@ -33,7 +33,7 @@ ms.locfileid: "99946723"
 
 3. ユーザーが [ **ファイルを開くアプリケーション** の選択] ダイアログボックスから項目を選択するとすぐに、IDE はメソッドを呼び出してドキュメントを開き <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> ます。 詳細については、「 [方法: 標準エディターを開く](../../extensibility/how-to-open-standard-editors.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクト項目を開いて保存する](../../extensibility/internals/opening-and-saving-project-items.md)
 - [[ファイルを開く] コマンドを使用してファイルを表示する](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 - [方法: 標準エディターを開く](../../extensibility/how-to-open-standard-editors.md)

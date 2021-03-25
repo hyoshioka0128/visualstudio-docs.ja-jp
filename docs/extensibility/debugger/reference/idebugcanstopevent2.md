@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46f4aacdc886e455771f5a30ba82b941b29c957
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e73d881b1aef09d13d7b7138348d5198c8322694
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154848"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085014"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 このインターフェイスは、現在のコードの場所で停止するかどうかをセッションデバッグマネージャー (SDM) に要求するために使用されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCanStopEvent2 : IUknown
@@ -47,16 +47,16 @@ IDebugCanStopEvent2 : IUknown
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)|このイベントの場所を記述するドキュメントコンテキストを取得します。|
 |[GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md)|このイベントの場所を記述するコードコンテキストを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ユーザーが関数にステップインし、逆にデバッグ情報がない場合やデバッグ情報が存在するが、その場所にソースコードを表示できるかどうかが不明である場合、de はこのインターフェイスを送信します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

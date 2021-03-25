@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6e52ae6477b49325d4b8a4d81192fe2ecf736163
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153379"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092658"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 このインターフェイスは、マルチスレッドデバッグをサポートします。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngineProgram2 : IUnknown
@@ -44,15 +44,15 @@ IDebugEngineProgram2 : IUnknown
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|指定されたスレッドで実行を監視します (または実行の監視を停止します)。|
 |[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|プログラムが停止している場合でも、指定したスレッドで式の評価を実行できるようにします (または禁止します)。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  Visual Studio は、 [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) イベントに応答してこのインターフェイスを呼び出し、"スレッドのウォッチ" ステップと "スレッドでの式の評価を監視する" というプログラムの状態を設定します。 [Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md) は、プログラムが停止されるたびに呼び出されます。このメソッドは、プログラムがすべてのスレッドを終了する機会を提供します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

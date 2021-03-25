@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 39efb082f8a551ea016e856ba45c9dbb4e8eed0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d50624dc4c0d96c20323afb3c7d065121a4baacb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850701"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069973"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>方法: 機能拡張プロジェクトを Visual Studio 2017 に移行する
 
@@ -106,7 +106,7 @@ NuGet の参照を更新するには、次のようにします。
 
    ![roslyn の前提条件の追加](media/add-roslyn-prerequisite.png)
 
-* **[OK]** をクリックします。
+* **[OK]** を押します。
 
 ## <a name="update-debug-settings-for-the-project"></a>プロジェクトのデバッグ設定を更新する
 
@@ -192,7 +192,7 @@ Excel シートには、 **コンポーネント名**、 **ComponentId**、 **�
 
 すべての参照について、まず、コアエディター (VisualStudio) コンポーネントに含まれているものを確認します。  少なくとも、すべての拡張機能の前提条件として、コアエディターコンポーネントを指定する必要があります。 コアエディターに含まれていない参照の場合は、[ **バイナリ/ファイル名** ] セクションにフィルターを追加して、これらの参照のいずれかのサブセットを持つコンポーネントを検索します。
 
-次に例を示します。
+例 :
 
 * デバッガー拡張機能があり、プロジェクトに *VSDebugEng.dll* と *VSDebug.dll* への参照が含まれていることがわかっている場合は、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをクリックします。  "VSDebugEng.dll" を検索し、[ *OK]* を選択します。  次に、[ **バイナリ/ファイル名** ] ヘッダーの [フィルター] ボタンをもう一度クリックし、"VSDebug.dll" を検索します。  [現在の **選択項目をフィルターに追加する** ] チェックボックスをオンにして、[ **OK]** を選択します。  ここで、 **コンポーネント名** を調べて、拡張機能の種類に最も関係のあるコンポーネントを見つけます。 この例では、Just-in-time デバッガーを選択して、source.extension.vsixmanifest に追加します。
 * プロジェクトがデバッガー要素を扱うことがわかっている場合は、フィルター検索ボックスで "デバッガー" を検索して、名前にデバッガーが含まれているコンポーネントを確認できます。
