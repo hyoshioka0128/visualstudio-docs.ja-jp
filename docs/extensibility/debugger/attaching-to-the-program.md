@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b1f411b6ca79fec85f4557ce379c341942e0b84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d880edbea79f56cbd2c90905b0bc2f712dba59b1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943475"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055272"
 ---
 # <a name="attach-to-the-program"></a>プログラムにアタッチする
 プログラムを適切なポートに登録したら、デバッグ対象のプログラムにデバッガーをアタッチする必要があります。
@@ -59,7 +59,7 @@ ms.locfileid: "99943475"
     > [!NOTE]
     > これは `IDebugProgram2` 、メソッドに渡されたオブジェクトと同じではありません `IDebugEngine2::Attach` 。 以前に渡されたオブジェクトは、 `IDebugProgram2` ポートでのみ認識され、独立したオブジェクトです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [起動ベースの添付ファイル](../../extensibility/debugger/launch-based-attachment.md)
 - [イベントの送信](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

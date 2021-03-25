@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d28242b70c0c9808cc7eb066341cd2973d2372a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1061de343ae24dce163dd0a7665d58ec7aac3a3a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971584"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068389"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Visual Studio のメニューとコマンド
 ## <a name="command-usage"></a>コマンドの使用法
@@ -93,7 +93,7 @@ ms.locfileid: "99971584"
 
 - Project
 
-- ビルド
+- Build
 
 - デバッグ
 
@@ -101,13 +101,13 @@ ms.locfileid: "99971584"
 
 - チーム
 
-- データ
+- Data
 
 - テスト
 
 - アーキテクチャ
 
-- 解析
+- 分析
 
 ##### <a name="document-specific-menus"></a>ドキュメント固有のメニュー
 

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2 interface
 ms.assetid: ef640967-8adb-4793-994d-ae1736510891
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6eaa31be631de64339ece62f392f3d0b795b9d46
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2c5e3b3f05ae205e30cff7085b71c1690d02c73e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170004"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084689"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102170004"
 
  このインターフェイスは、オブジェクトに関する追加情報を提供します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugObject2 : IDebugObject
@@ -51,17 +51,17 @@ IDebugObject2 : IDebugObject
 |[IsUserData](../../../extensibility/debugger/reference/idebugobject2-isuserdata.md)|このオブジェクトがユーザーデータを表すかどうかを判断します。|
 |[IsEncOutdated](../../../extensibility/debugger/reference/idebugobject2-isencoutdated.md)|エディットコンティニュの状態が無効になっているかどうかを判断します。<br /><br /> カスタム式エバリュエーターは、このメソッドを実装していません (常にを返す必要があり `E_NOTIMPL` ます)。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  エイリアスの詳細については、「 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) 」を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

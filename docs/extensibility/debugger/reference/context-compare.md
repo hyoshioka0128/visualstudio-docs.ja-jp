@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 70f4621eaad5e494684e6c227959e13566a22eba
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fd74516c3f687f05b2d5fb33dc2b94455114bbc6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170784"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094446"
 ---
 # <a name="context_compare"></a>CONTEXT_COMPARE
 2つのメモリコンテキストを比較するための条件を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_CONTEXT_COMPARE {
@@ -85,12 +85,12 @@ public enum enum_CONTEXT_COMPARE {
 `CONTEXT_SAME_PROCESS`\
 ターゲットメモリコンテキストと同じプロセスにある、一覧内の最初のメモリコンテキストを検索します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)メソッドに引数として渡されます。
 
 これらの値は、指定された比較条件を満たすリスト内の最初のメモリコンテキストを検索するために使用されます。 メモリコンテキストには、メソッドを通じて比較するメモリコンテキストのリストが与えられ `IDebugMemoryContext2::Compare` ます。 次に、比較演算子があるリスト内の最初のメモリコンテキスト `true` が返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

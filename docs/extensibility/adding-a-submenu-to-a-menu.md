@@ -10,17 +10,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc6d521e699beb2345ba76e2e617ff749886eee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951512"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094901"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>メニューにサブメニューを追加する
 このチュートリアルでは、[ **Testmenu** ] メニューにサブメニューを追加する方法を示して、「 [Visual Studio のメニューバーにメニューを追加](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)する」のデモを基にして説明します。
@@ -85,7 +85,7 @@ ms.locfileid: "99951512"
 
 ## <a name="add-a-command"></a>コマンドの追加
 
-1. *TestCommand.cs* を開き、既存のコマンド id の後に次のコマンド id を追加します。
+1. *Testcommand .cs* を開き、次のコマンド id を既存のコマンド id の後に追加します。
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
@@ -155,7 +155,7 @@ ms.locfileid: "99951512"
 
 5. [ **Testmenu** ] メニューの [ **sub menu** ] をクリックし、[ **Test sub Command**] をクリックします。 メッセージボックスが表示され、"Test Command in TestCommand. SubItemCallback ()" というテキストが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [メニューを Visual Studio のメニューバーに追加する](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)
 - [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, attaching to programs
 - debug engines, detaching from programs
 ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41f9e3f88f28dbbb83e9c7e00fe8b8afd434c26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb51cb3e6c16916e3778dde06fb2ac274608ed70
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837750"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055311"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>プログラムへのアタッチとデタッチ
 デバッガーをアタッチするには、適切な属性を持つメソッドとイベントの正しいシーケンスを送信する必要があります。
@@ -51,5 +51,5 @@ ms.locfileid: "99837750"
 
 6. DE は [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)を送信します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 216bfaf9400847c265820e4bb5967fd3c992caa7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954645"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063223"
 ---
 # <a name="model-of-a-legacy-language-service"></a>従来の言語サービスのモデル
 言語サービスは、特定の言語の要素と機能を定義し、その言語に固有の情報をエディターに提供するために使用されます。 たとえば、構文の色分けをサポートするために、エディターは言語の要素とキーワードを認識している必要があります。
@@ -41,7 +41,7 @@ ms.locfileid: "99954645"
 
   次の表に、モデル内のオブジェクトの概要を示します。
 
-| コンポーネント | Object | Function |
+| コンポーネント | Object | 機能 |
 |------------------| - | - |
 | テキストバッファー | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Unicode の読み取り/書き込みテキストストリーム。 テキストで他のエンコーディングを使用することもできます。 |
 | [コード ウィンドウ] | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | 1つまたは複数のテキストビューを含むドキュメントウィンドウ。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]がマルチドキュメントインターフェイス (mdi) モードの場合、コードウィンドウは mdi 子になります。 |
@@ -49,5 +49,5 @@ ms.locfileid: "99954645"
 | テキストマネージャー | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>ポインターを取得するサービスによって管理されます。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> | 前に説明したすべてのコンポーネントによって共有される共通情報を保持するコンポーネント。 |
 | 言語サービス | 実装に依存します。実装 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | エディターに、構文の強調表示、ステートメント入力候補、中かっこの照合などの言語固有の情報を提供するオブジェクト。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [カスタム エディターでのドキュメント データとドキュメント ビュー](../../extensibility/document-data-and-document-view-in-custom-editors.md)

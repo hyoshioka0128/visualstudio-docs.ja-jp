@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_STATE enumeration
 ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ff9edf1ef12d219b865815585035151e664e67a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 297c5de3afd2b5f81444dd29278fc294cd71aa6a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158749"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059445"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 例外の状態を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_EXCEPTION_STATE {
@@ -123,14 +123,14 @@ public enum enum_EXCEPTION_STATE {
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
 使用しないでください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 `dwState`例外の状態とそれに対して実行できることを示すために、 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)構造体のメンバーとして使用されます。
 
 これらの値は、すべての例外の状態を設定するために [Setallexceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) メソッドにも渡されます。
 
 これらのフラグは、ビットごとの OR と組み合わせることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

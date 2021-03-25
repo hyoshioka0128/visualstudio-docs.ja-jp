@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField interface
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752eb7d77035a25ad1d0ddc8aec45afe95d898c7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bb3a50db80dc2acb075d1c6ec1fe585000468285
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154783"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077903"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 このインターフェイスは、他のシンボルまたは型のコンテナーであるシンボルまたは型を表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugContainerField : IDebugField
@@ -42,16 +42,16 @@ IDebugContainerField : IDebugField
 |------------|-----------------|
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|コンテナーのフィールドの列挙子を作成します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  配列 (変数のコンテナー)、クラス (メソッドと変数のコンテナー)、およびメソッド (パラメーターとローカル変数のコンテナー) はすべて、コンテナーの例です。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [シンボル プロバイダーのインターフェイス](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

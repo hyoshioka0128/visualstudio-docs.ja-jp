@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ef1aad17caae12b046ac483808f847a6e186792
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b0c3169039115432758cfdcd3f0612c3578b74c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930708"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055051"
 ---
 # <a name="call-debugger-events"></a>デバッガーイベントの呼び出し
 デバッグセッションのイベントは、特定の順序で発生します。
@@ -49,5 +49,5 @@ ms.locfileid: "99930708"
 
 12. [例外処理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [カスタムデバッグエンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)

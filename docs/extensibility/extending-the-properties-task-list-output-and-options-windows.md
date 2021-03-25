@@ -12,17 +12,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2586618b16afa8f8bfd6b7aa529486adf1d9ce41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 970ab167434da4ba9c28eb6bbf9a8ea5f6cc6af0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938136"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070142"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>[プロパティ]、[タスク一覧]、[出力]、[オプション] の各ウィンドウを拡張する
 Visual Studio では、任意のツールウィンドウにアクセスできます。 このチュートリアルでは、ツールウィンドウに関する情報を新しいオプションページに統合する方法と、[**プロパティ**] ページに新しい設定を統合する方法について説明します。また、[**タスク一覧** と **出力** **]** ウィンドウに書き込む方法についても説明します。
@@ -63,7 +63,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
 
 ### <a name="customize-the-constructor"></a>コンストラクターをカスタマイズする
 
-1. *TodoWindowControl.xaml.cs* ファイルで、次の using ディレクティブを追加します。
+1. *TodoWindowControl* ファイルで、次の using ディレクティブを追加します。
 
     ```csharp
     using System;
@@ -81,7 +81,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
     }
     ```
 
-3. *TodoWindow.cs* で、TodoWindowControl コンストラクターを変更して TodoWindow パラメーターを含めます。 コードは、次のようになります。
+3. *TodoWindow* で、TodoWindow パラメーターを含めるように TodoWindowControl コンストラクターを変更します。 コードは、次のようになります。
 
     ```csharp
     public TodoWindow() : base(null)
@@ -95,7 +95,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
     ```
 
 ## <a name="create-an-options-page"></a>オプションページを作成する
- [ **オプション** ] ダイアログボックスのページを使用して、ユーザーがツールウィンドウの設定を変更できるようにすることができます。 オプションページを作成するには、オプションを記述するクラスと *TodoListPackage.cs* ファイルまたは *TodoListPackage* ファイル内のエントリの両方が必要です。
+ [ **オプション** ] ダイアログボックスのページを使用して、ユーザーがツールウィンドウの設定を変更できるようにすることができます。 オプションページを作成するには、オプションを記述するクラスと *TodoListPackage* ファイルまたは *TodoListPackage* ファイル内のエントリの両方が必要です。
 
 1. `ToolsOptions.cs`という名前のクラスを追加します。 クラスがから継承されるように `ToolsOptions` <xref:Microsoft.VisualStudio.Shell.DialogPage> します。
 
@@ -127,7 +127,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
 
 ### <a name="make-the-options-page-available-to-users"></a>[オプション] ページをユーザーが使用できるようにする
 
-1. *TodoWindowPackage.cs* で、クラスにを追加し <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> `TodoWindowPackage` ます。
+1. *TodoWindowPackage* で、クラスにを追加します <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> `TodoWindowPackage` 。
 
     ```csharp
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]
@@ -152,7 +152,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
 
      ![[プロパティ] ウィンドウ](../extensibility/media/t5properties.png "T5Properties")
 
-2. *TodoItem.cs* ファイルに次の using ディレクティブを追加します。
+2. *TodoItem* ファイルに次の using ディレクティブを追加します。
 
     ```csharp
     using System.ComponentModel;
@@ -232,7 +232,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
     }
     ```
 
-5. クラスのインスタンス `TodoItem` はリストボックスに格納され、listbox は関数を呼び出すため、 `ToString` 関数をオーバーロードする必要があり `ToString` ます。 コンストラクターの後、クラスの末尾の前に、 *TodoItem.cs* に次のコードを追加します。
+5. クラスのインスタンス `TodoItem` はリストボックスに格納され、listbox は関数を呼び出すため、 `ToString` 関数をオーバーロードする必要があり `ToString` ます。 コンストラクターの後、クラスの末尾の前に、 *TodoItem* に次のコードを追加します。
 
     ```csharp
     public override string ToString()
@@ -241,7 +241,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
     }
     ```
 
-6. *TodoWindowControl.xaml.cs* で、 `TodoWindowControl` メソッドとメソッドのクラスにスタブメソッドを追加し `CheckForError` `UpdateList` ます。 これらの文字列は、Processの文字の後、ファイルの末尾の前に配置します。
+6. *TodoWindowControl* で、 `TodoWindowControl` `CheckForError` メソッドとメソッドのクラス `UpdateList` にスタブメソッドを追加します。 これらの文字列は、Processの文字の後、ファイルの末尾の前に配置します。
 
     ```csharp
     public void CheckForErrors()
@@ -285,7 +285,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
     }
     ```
 
-4. 次の using ディレクティブを *TodoWindowControl.xaml.cs* に追加します。
+4. 次の using ディレクティブを *TodoWindowControl* に追加します。
 
     ```csharp
     using System.Runtime.InteropServices;
@@ -353,7 +353,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
 
      これで、[ **プロパティ** ] ウィンドウで使用できるクラスが作成されたので、[ **プロパティ** ] ウィンドウをツールウィンドウと統合できます。 ユーザーがツールウィンドウのリストボックス内の項目をクリックすると、それに応じて [ **プロパティ** ] ウィンドウが更新されます。 同様に、ユーザーが [ **プロパティ** ] ウィンドウで ToDo 項目を変更した場合は、関連付けられている項目を更新する必要があります。
 
-7. 次に、 *TodoWindowControl.xaml.cs* で updatelist 関数の残りのコードを追加します。 リストボックスから変更された TodoItem を削除し、再追加する必要があります。
+7. 次に、 *TodoWindowControl* の残りの updatelist 関数コードを追加します。 リストボックスから変更された TodoItem を削除し、再追加する必要があります。
 
     ```csharp
     public void UpdateList(TodoItem item)
@@ -378,7 +378,7 @@ Visual Studio では、任意のツールウィンドウにアクセスできま
 ## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>[出力] ウィンドウにテキストを追加し、項目をタスク一覧に追加します。
  **タスク一覧** には、task 型の新しいオブジェクトを作成し、そのメソッドを呼び出してそのタスクオブジェクトを **タスク一覧** に追加し `Add` ます。 **出力** ウィンドウに書き込むには、そのメソッドを呼び出し `GetPane` てペインオブジェクトを取得し、次に `OutputString` pane オブジェクトのメソッドを呼び出します。
 
-1. *TodoWindowControl.xaml.cs* のメソッドで、 `button1_Click` [**出力**] ウィンドウの **[全般**] ウィンドウ (既定) を取得するコードを追加し、それに書き込みます。 メソッドは次のようになります。
+1. *TodoWindowControl* のメソッドで、 `button1_Click` [**出力**] ウィンドウの **[全般**] ウィンドウ (既定) を取得するコードを追加し、それに書き込みます。 メソッドは次のようになります。
 
     ```csharp
     private void button1_Click(object sender, EventArgs e)

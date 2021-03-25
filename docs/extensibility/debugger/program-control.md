@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9378dd2aa1ed52408e3aa4d0e9027a34d833dab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2d869094eff3713a3c9e7ec63a8003bb12a018c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948453"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094680"
 ---
 # <a name="program-control"></a>プログラムの制御
 Visual Studio のデバッグでは、次のステップ実行ルーチンと続行ルーチンがすべてプログラムレベルで実行されます。
@@ -40,7 +40,7 @@ Visual Studio のデバッグでは、次のステップ実行ルーチンと続
 ## <a name="methods-of-program-control"></a>プログラムコントロールのメソッド
  次の表は、最小限の機能デバッグエンジン (DE) と実行制御のために実装する必要がある [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) のメソッドを示しています。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|プログラムに含まれるすべてのスレッドの実行を停止状態から続行します。 実行コントロールに必要です。|
 |[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|プログラムに含まれるすべてのスレッドの実行を停止状態から続行します。 実行コントロールに必要です。|
@@ -48,5 +48,5 @@ Visual Studio のデバッグでは、次のステップ実行ルーチンと続
 
  マルチスレッドプログラムの場合は、 [IDebugProgram2:: EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) メソッドと [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) インターフェイスのすべてのメソッドを実装する必要もあります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [実行制御と状態の評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)

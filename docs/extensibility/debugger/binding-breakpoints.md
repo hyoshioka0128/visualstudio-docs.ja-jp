@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622d61c6083288f7293258feb3743ef7cfdd0b8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895012"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055285"
 ---
 # <a name="bind-breakpoints"></a>ブレークポイントのバインド
 ユーザーが **F9** キーを押してブレークポイントを設定した場合、IDE は要求を使用しし、ブレークポイントを作成するようにデバッグセッションに指示します。
@@ -55,5 +55,5 @@ ms.locfileid: "99895012"
 
  DE がブレークポイントを処理する場合、バインドできませんが、他の DE によってバインドされる場合は、警告が返されます。 IDE は、ブレークポイントのグリフの内側に、ソースコード行の左側に疑問符を配置することで応答します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4addc7b1f62c7528e845b34842c0fd85ba66148a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6876bea4174df7f5ac293ea0d470f5922d7492d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921401"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055025"
 ---
 # <a name="expression-evaluator"></a>式エバリュエーター
 式エバリュエーター (EE) は、言語の構文を調べて、実行時に変数と式を解析および評価します。これにより、IDE が中断モードのときにユーザーが表示できるようになります。
@@ -42,5 +42,5 @@ ms.locfileid: "99921401"
 ## <a name="implementation-notes"></a>実装に関するメモ
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]デバッグエンジンは、共通言語ランタイム (CLR) インターフェイスを使用して式エバリュエーターと通信することを想定しています。 その結果、デバッグエンジンで動作する式エバリュエーターは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] clr をサポートする必要があります (すべての clr デバッグインターフェイスの完全な一覧は、の一部である debugref.doc で参照でき [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] ます)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)

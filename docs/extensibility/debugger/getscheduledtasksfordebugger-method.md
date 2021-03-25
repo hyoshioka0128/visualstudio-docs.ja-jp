@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - GetScheduledTasksForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 7c9b4cde-6e4a-4cef-929f-7d02b1da5762
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd70db6f6fd9eb1558a21e50f3d2f63137fe8e1d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 953230ed3c29f110e8b6e69b0fb09fb59cb9cd55
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167816"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054947"
 ---
 # <a name="getscheduledtasksfordebugger-method"></a>GetScheduledTasksForDebugger メソッド
 すべてのスケジュールされたタスクの配列を取得します。
@@ -36,8 +36,8 @@ ms.locfileid: "102167816"
 ## <a name="return-value"></a>戻り値
  すべてのスケジュールされたタスクの配列。 各タスクが実行中であるか、実行が完了しています。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドはスレッドセーフではなく、の他のインスタンスと同時に使用することはできません <xref:System.Threading.Tasks.TaskScheduler> 。 デバッガーが他のすべてのスレッドを中断した場合にのみ、このメソッドをデバッガーから呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [TaskScheduler クラス](../../extensibility/debugger/taskscheduler-class-internal-members.md)

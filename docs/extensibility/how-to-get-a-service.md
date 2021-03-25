@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911754"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070090"
 ---
 # <a name="how-to-get-a-service"></a>方法: サービスを取得する
 
@@ -31,9 +31,9 @@ Visual Studio は、を読み込むと <xref:Microsoft.VisualStudio.Shell.Packag
 
 1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `GetServiceExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. 次に、 **Getservicecommand** という名前のカスタムコマンド項目テンプレートを追加します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *GetServiceCommand.cs* に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
+2. 次に、 **Getservicecommand** という名前のカスタムコマンド項目テンプレートを追加します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を「 *getservicecommand .cs*」に変更します。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-3. *GetServiceCommand.cs* で、メソッドの本体を削除 `MenuItemCommand` し、次のコードを追加します。
+3. *Getservicecommand .cs* で、メソッドの本体を削除 `MenuItemCommand` し、次のコードを追加します。
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -87,7 +87,7 @@ if (sp != null)
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [方法: サービスを提供する](../extensibility/how-to-provide-a-service.md)
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)

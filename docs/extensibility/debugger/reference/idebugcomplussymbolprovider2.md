@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2 interface
 ms.assetid: fa2f9b49-03ad-43c7-92d6-6dcb9c3d0531
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a29fcc5cca12698919f0bc4af02bc3db1fe3fa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 975dc6df875866a16fffc5d044ae82c996b84e35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163318"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077968"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 マネージコードに固有のメソッドを持ち、 **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)を拡張する com + シンボルプロバイダーを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
@@ -40,7 +40,7 @@ IDebugComPlusSymbolProvider2 : IDebugComPlusSymbolProvider
 |[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)|コードオブジェクトを指定し **て、データ** ストリームからデバッグシンボルを読み込みます。|
 |[LoadSymbolsWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolswithcormodule.md)|は、コードオブジェクトを **指定して** デバッグシンボルを読み込みます。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Sh. h
 
  名前空間: VisualStudio。

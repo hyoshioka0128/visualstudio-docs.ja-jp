@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO2 structure
 ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1efeceb42d45822f232e5a2e5e2fbe33f9996e34
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 54ab1ec2ad37517a7a7fbfd7059022e1c5a26f82
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144118"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078202"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
 ベンダー GUID、制約、およびトレースポイントを含む、ブレークポイントを実装するために必要な情報が含まれています。
@@ -104,17 +104,17 @@ public struct BP_REQUEST_INFO2 {
 `bstrTracepoint`\
 トレースポイントの名前。 Null 値を指定できます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この構造体は、 [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md) メソッドによって返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

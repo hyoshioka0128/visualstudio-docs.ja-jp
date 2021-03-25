@@ -7,17 +7,17 @@ ms.topic: overview
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69cc1d40b2a0e61c0cf7ad32cb8187d0dad16994
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904772"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094771"
 ---
 # <a name="debug-tasks"></a>タスクをデバッグする
 プログラムをデバッグするには、起動してデバッグ エンジン (DE) をアタッチする必要があります。もしくは、以前に起動されたプログラムに DE をアタッチする必要があります。 アタッチが完了すると、DE で特定のスタートアップ イベントを生成する必要があります。 応答として、デバッグ パッケージは IDE で設定されているブレークポイントをバインドしようとします。 プログラムがバインドされたブレークポイントにヒットすると停止し、ユーザー入力を待機します。

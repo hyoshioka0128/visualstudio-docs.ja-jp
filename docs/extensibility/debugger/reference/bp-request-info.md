@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 941c8302fa52d579c2fbefc62ccd962d26e2cf13
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 40c88d1c07d3610ff6d098fbbf8517476cc07103
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144132"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059653"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 ブレークポイントを実装するために必要な情報が含まれています。
@@ -89,19 +89,19 @@ public struct BP_REQUEST_INFO {
 `dwFlags`\
 要求されたブレークポイントのフラグを指定する、 [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) 列挙のフラグの組み合わせ。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この構造体は、 [Getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) メソッドによって返されます。
 
 デバッグエンジンのベンダ GUID、ブレークポイントの制約、またはトレースポイントを取得する必要がある場合は、 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 構造を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

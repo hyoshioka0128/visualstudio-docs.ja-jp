@@ -8,17 +8,17 @@ helpviewer_keywords:
 - events [Visual Studio], exposing
 - automation [Visual Studio SDK], exposing events
 ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00dd13898204fe322ec0ddd33db10e7ca19db167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 019efb11d7a31af875425888a1f70423bca76ca9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946645"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069804"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Visual Studio SDK でイベントを公開する
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] オートメーションを使用してイベントのソースを作成できます。 プロジェクトとプロジェクトアイテムのイベントをソースにすることをお勧めします。
@@ -54,7 +54,7 @@ ms.locfileid: "99946645"
 
  **AutomationProjectItemEvents** = オブジェクトを返し `AutomationProjectItemsEvents` ます。
 
-|名前|Type|Range|説明|
+|Name|Type|Range|Description|
 |----------|----------|-----------|-----------------|
 |既定値 (@)|REG_SZ|未使用|未使用。 データフィールドはドキュメントに使用できます。|
 |*AutomationProjectsEvents*|REG_SZ|イベントオブジェクトの名前。|キー名のみが関連しています。 データフィールドはドキュメントに使用できます。<br /><br /> この例は、基本的なプロジェクトサンプルから取得したものです。|
@@ -70,7 +70,7 @@ ms.locfileid: "99946645"
 
  *AutomationEvents* と *AutomationEvents* には、次の表に示すクラスの宣言と実装が含まれています。
 
-|インスタンス|説明|
+|クラス|説明|
 |-----------|-----------------|
 |`CAutomationEvents`|オブジェクトから取得されたイベントルートオブジェクトを実装し `DTE.Events` ます。|
 |`CProjectsEventsContainer` および `CProjectItemsEventsContainer`|対応するイベントを発生させるイベントソースオブジェクトを実装します。|
@@ -110,5 +110,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  イベントオブジェクトは、同じ中央の場所 (オブジェクト) から取得され `DTE.Events` ます。 これにより、すべてのイベントオブジェクトがグループ化され、エンドユーザーが特定のイベントを検索するためにオブジェクトモデル全体を参照する必要がなくなります。 これにより、システム全体のイベント用に独自のコードを実装する必要がなく、特定の VSPackage オブジェクトを提供することもできます。 ただし、エンドユーザーがインターフェイスのイベントを検索する必要がある場合、その `ProjectItem` イベントオブジェクトの取得元からはすぐにはわかりません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

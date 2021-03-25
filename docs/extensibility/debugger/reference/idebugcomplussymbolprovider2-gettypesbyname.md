@@ -7,20 +7,20 @@ helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18d94daf830b852d8a3d13cbda7f9eb494889ff3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ec177db735c8562798e7fde19e9da2c8fc670d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163396"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067167"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 名前を指定して型を取得します。
@@ -56,7 +56,7 @@ int GetTypesByName(
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 ジェネリック型の場合、' list ' または ' List ' に対して検索する名前は \<int> \<int,int> ' list ' になります。 同じ名前の型が複数のモジュールに出現する場合、パラメーターには `ppEnum` すべてのコピーが含まれます。 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)を使用して、パラメーターに基づいて区別する必要があり `guidModule` ます。
 
 ## <a name="example"></a>例
@@ -125,5 +125,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1799e2fd0fb992a2b60f57e668937a927a14e7bc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 02277bf84bdc12e904b2651ef5ba9fc2356d9090
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170212"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066933"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 指定された位置を基準として、逆アセンブルストリーム内の読み取りポインターを指定された数だけ移動します。
@@ -62,10 +62,10 @@ int Seek(
 ## <a name="return-value"></a>戻り値
  正常に終了した場合は、`S_OK` を返します。 `S_FALSE`シーク位置が、使用可能な命令のリストを超えたポイントになった場合は、を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  シークがリストの先頭より前の位置にある場合、読み取り位置はリスト内の最初の命令に設定されます。 がリストの末尾の後の位置にある場合、読み取り位置はリストの最後の命令に設定されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

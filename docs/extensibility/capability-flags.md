@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d626f2390138c7e4e6e2471d285bcda940d7f30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 12acefb99de787d55bc0f932757dde5ea928c6cb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882285"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094927"
 ---
 # <a name="capability-flags"></a>機能フラグ
 SCC_CAP_ *xxx* フラグは、ソース管理プラグインの機能を示すために使用されるビットフラグです。 SCC_EXCAP_ *xxx* フラグは、拡張機能を示し、整数値に解決される増分フラグです。
@@ -79,5 +79,5 @@ SCC_CAP_ *xxx* フラグは、ソース管理プラグインの機能を示す�
 |`SCC_EXCAP_DELETE_CHECKEDOUT`|10|チェックアウトされたファイルを削除できます。|
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|チェックアウトされたファイルの名前を変更できます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)

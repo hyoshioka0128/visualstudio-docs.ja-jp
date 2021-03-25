@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3 interface
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f6be3b149450ec84158acc533230102fce5a67e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 29d8b642a66a75dd561b0a87cd5fa083e841139c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143611"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085157"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102143611"
 
  このインターフェイスは、型、エイリアス、およびカスタムビジュアライザーサービスへのアクセスを提供します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBinder3 : IDebugBinder
@@ -52,13 +52,13 @@ IDebugBinder3 : IDebugBinder
 |[GetEEService](../../../extensibility/debugger/reference/idebugbinder3-geteeservice.md)|ビジュアライザーサービスへのインターフェイスを取得します。|
 |[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|オブジェクトの場所または64ビットのメモリアドレスをメモリコンテキストに変換します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

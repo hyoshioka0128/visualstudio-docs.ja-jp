@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluation, implementation strategy
 - debug engines, implementation strategies
 ms.assetid: 1bccaeb3-8109-4128-ae79-16fd8fbbaaa2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7527c361a889d5aa1f19ec7a211f8aeb8dcbd15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d10ce818e9df370b4484a0250525dbe9482b8b2c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921383"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054986"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>式エバリュエーターの実装方法
 > [!IMPORTANT]
@@ -31,6 +31,6 @@ ms.locfileid: "99921383"
 
  次に、 [Enumchildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) メソッドを実装する必要があります。 デバッグエンジン (DE) は、このメソッドを呼び出して、の引数を渡してローカル変数と引数のリストを取得し `IDebugProperty2::EnumChildren` `guidFilter` `guidFilterLocalsPlusArgs` ます。 `IDebugProperty2::EnumChildren`[Enumarguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)と[enumarguments](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)を呼び出して、結果を単一の列挙に結合します。 詳細については、「 [ローカルの表示](../../extensibility/debugger/displaying-locals.md) 」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式エバリュエーターを実装する](../../extensibility/debugger/implementing-an-expression-evaluator.md)
 - [ローカルの表示](../../extensibility/debugger/displaying-locals.md)

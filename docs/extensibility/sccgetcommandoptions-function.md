@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b6fc53f806989062a306260840a8f324a26d4669
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220808"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068376"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 関数
 この関数は、指定されたコマンドの詳細オプションをユーザーに要求します。
@@ -54,7 +54,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|正常終了しました。|
 |SCC_I_ADV_SUPPORT|ソース管理プラグインは、コマンドの高度なオプションをサポートしています。|
@@ -64,7 +64,7 @@ SCCRTN SccGetCommandOptions(
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  IDE は、を使用してこの関数を初めて呼び出し、 `ppvOptions` = `NULL` ソース管理プラグインが指定されたコマンドの詳細オプション機能をサポートしているかどうかを判断します。 プラグインがそのコマンドの機能をサポートしている場合、IDE は、ユーザーが詳細オプション (通常はダイアログボックスの **[詳細設定** ] ボタンとして実装されている) を要求し、ポインターをポイントするための NULL 以外のポインターを提供すると、この関数を再度呼び出し `ppvOptions` `NULL` ます。 プラグインには、ユーザーが指定した詳細設定オプションがプライベート構造で格納され、その構造体へのポインターが返され `ppvOptions` ます。 その後、この構造体は、その後の関数の呼び出しを含め、そのことを把握しておく必要がある他のすべてのソース管理プラグイン API 関数に渡され `SccGetCommandOptions` ます。
 
  例を使用すると、この状況を明確にすることができます。
@@ -80,6 +80,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 > コマンドは、 `SCC_COMMAND_OPTIONS` IDE に [ **オプション** ] ダイアログボックスが表示され、ユーザーが統合の動作を制御するための設定を設定できるようにするときに使用されます。 ソース管理プラグインが独自の設定ダイアログボックスを提供する必要がある場合は、IDE の [基本設定] ダイアログボックスの **[詳細設定** ] ボタンから表示できます。 このプラグインは、この情報を取得して保持するだけの役割を担います。IDE では、このファイルを使用したり、変更したりすることはありません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [コマンドコード](../extensibility/command-code-enumerator.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cddf09eac5f887e0c5615af76e6956b590576786
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35ddc218d0e9499253269a12687fa89122cfe007
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930669"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055012"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>共通言語ランタイムおよび式の評価
 > [!IMPORTANT]
@@ -37,5 +37,5 @@ ms.locfileid: "99930669"
 
  CLR DE が式を評価するために独自の EE を呼び出すと、DE は、インターフェイスを持つ EE を SP とバインダーオブジェクトに提供します。 したがって、CLR ベースのデバッグエンジンを作成するには、適切な式エバリュエーターインターフェイスを実装するだけで済みます。CLR はバインドとシンボルの処理を自動的に行います。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [CLR 式エバリュエーターを記述する](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

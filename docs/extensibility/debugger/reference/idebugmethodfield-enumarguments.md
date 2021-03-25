@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumArguments method
 ms.assetid: 3ab55488-2437-4ff6-a9ae-78ea6d7b23a8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04815bb1fc148893c5b594223f6b92bfb7e0d97f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3ba48eb4d98c1ab331ee898a219584b7a4b6cf1c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058418"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 メソッドを呼び出すために必要な各引数の型の列挙子を作成します。
@@ -47,12 +47,12 @@ int EnumArguments(
 ## <a name="return-value"></a>戻り値
  成功した場合、は S_OK を返します。引数がない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  各要素は、各パラメーターの型を表す [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) オブジェクトです。 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドを呼び出して、各パラメーターの型に関する情報を取得します。
 
  型と共にパラメーターの名前が必要な場合は、 [Enumparameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) メソッドを呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

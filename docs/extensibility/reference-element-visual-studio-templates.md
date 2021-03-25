@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Reference element [Visual Studio templates]
 - <Reference> element [Visual Studio templates]
 ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c000a8d11f958daa1c7c8717dc4f18365e0a147
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fc23edf0897ca71f1b59f126987e42f9d3cb1a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914990"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068519"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference 要素 (Visual Studio テンプレート)
 項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。
@@ -56,7 +56,7 @@ ms.locfileid: "99914990"
 |-------------|-----------------|
 |[参照](../extensibility/references-element-visual-studio-templates.md)|テンプレートによってプロジェクトに追加されるアセンブリ参照をグループ化します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `Reference` は `References` に必須の子要素です。
 
  `Reference`要素と `References` 要素は、属性値がである *.vstemplate* ファイルでのみ使用できます `Type` `Item` 。

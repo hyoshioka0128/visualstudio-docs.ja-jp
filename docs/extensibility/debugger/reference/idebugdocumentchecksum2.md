@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentChecksum2 interface
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b39f381817cd98fd94b1c746cbdccde31e0b1f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 518e5b089d0d34e2492297b27dd0829e5f00ef2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165567"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066738"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 デバッグドキュメントのチェックサムを表し、コンポーネント間でチェックサムを渡すことができるようにします。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugDocumentChecksum2 : IUnknown
@@ -37,7 +37,7 @@ IDebugDocumentChecksum2 : IUnknown
 |------------|-----------------|
 |[GetChecksumAndAlgorithmId](../../../extensibility/debugger/reference/idebugdocumentchecksum2-getchecksumandalgorithmid.md)|使用する最大バイト数を指定して、ドキュメントのチェックサムとアルゴリズム識別子を取得します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

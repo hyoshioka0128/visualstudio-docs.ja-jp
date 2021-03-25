@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - ports, notification
 ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fdf09859c8b943eb71a403f49b29dc8b315503
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7793dddb1a6bdd448b2b5a912f59b625bdca733e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884911"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054752"
 ---
 # <a name="notify-the-port"></a>ポートに通知する
 プログラムを起動した後、次のようにポートに通知する必要があります。
@@ -46,7 +46,7 @@ ms.locfileid: "99884911"
 
  DE の id がわかったら、SDM はプログラムにアタッチする準備ができています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プログラムの起動](../../extensibility/debugger/launching-a-program.md)
 - [起動後のアタッチ](../../extensibility/debugger/attaching-after-a-launch.md)
 - [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

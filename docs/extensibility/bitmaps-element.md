@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e71e16f5104423c5cd7301055c9c471b5bf51262
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc17162c8d66df99eefe721589863ee4221c8602
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927393"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068207"
 ---
 # <a name="bitmaps-element"></a>ビットマップ要素
 [ビットマップ要素](../extensibility/bitmap-element.md)の要素をグループ化します。
@@ -39,7 +39,7 @@ ms.locfileid: "99927393"
 
 |属性|説明|
 |---------------|-----------------|
-|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
