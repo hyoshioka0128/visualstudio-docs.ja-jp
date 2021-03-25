@@ -8,17 +8,17 @@ helpviewer_keywords:
 - automation [Visual Studio SDK], implementing project objects
 - project models, automation
 ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e167a974dde1b98d43f7515581658f1ea549df9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 506606291996c94ff10514c6c57f83c6e1133862
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896832"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062825"
 ---
 # <a name="project-modeling"></a>プロジェクトのモデリング
 プロジェクトの自動化を提供する次の手順では、標準のプロジェクトオブジェクトを実装します。これは、 <xref:EnvDTE.Projects> との `ProjectItems` コレクション、 `Project` オブジェクトとオブジェクト、および <xref:EnvDTE.ProjectItem> 実装に固有の残りのオブジェクトです。 これらの標準オブジェクトは、Dteinternal .h ファイルで定義されています。 標準オブジェクトの実装は、BscPrj サンプルに用意されています。 これらのクラスをモデルとして使用して、他のプロジェクトの種類のプロジェクトオブジェクトとサイドバイサイドで実行する独自の標準プロジェクトオブジェクトを作成できます。
@@ -54,7 +54,7 @@ Projects
 
  オブジェクトを実装しない場合 `Project` でも、プロジェクトの名前のみを含む汎用オブジェクトが環境によって返され `Project` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:EnvDTE.Projects>
 - <xref:EnvDTE.ProjectItem>
 - <xref:EnvDTE.ProjectItems>

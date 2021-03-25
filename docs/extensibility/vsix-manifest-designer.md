@@ -11,17 +11,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfa6e402bfa6b0ef1949a967c37773557b79b0a3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905742"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062227"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX マニフェスト デザイナー
 VSIX パッケージマニフェストファイルを変更します。これにより、Visual Studio 拡張機能のインストールの動作が設定されます。
@@ -36,7 +36,7 @@ VSIX パッケージマニフェストファイルを変更します。これに
 ## <a name="uielement-list"></a>UIElement の一覧
  **VSIX マニフェストデザイナー** には、スキーマの最上位レベルの要素に対応する4つのセクションがあります。
 
-- メタデータ
+- Metadata
 
 - ターゲットのインストール
 
@@ -130,6 +130,6 @@ VSIX パッケージマニフェストファイルを変更します。これに
 
   識別子は、 `ID` 依存関係パッケージのメタデータの属性と一致している必要があります。 ソースには、現在のソリューション内のプロジェクト、現在インストールされている拡張機能、またはファイルを指定できます。 [ **依存関係の解決方法** ] の設定は、入れ子になったパッケージの相対パス、または依存関係のダウンロード場所の URL になります。 依存関係パッケージの ID、バージョン、および解決策は、 `Id` `Version` `Location` 関連付けられている要素の、、およびの各属性に対応し `Dependency` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSIX 拡張機能スキーマ2.0 リファレンス](../extensibility/vsix-extension-schema-2-0-reference.md)
 - [VSIX パッケージの構造](../extensibility/anatomy-of-a-vsix-package.md)

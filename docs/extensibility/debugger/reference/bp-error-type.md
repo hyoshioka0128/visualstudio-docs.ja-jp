@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ced08f5bf4cd51a1f89f139fd19971e21e2225e6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ddff439aba67248bd2eb706a85c5f91b4bf1628d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144430"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085287"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 ブレークポイントのエラーの種類を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_ERROR_TYPE {
@@ -95,12 +95,12 @@ public enum enum_BP_ERROR_TYPE {
 `BPET_ALL`\
 すべてのブレークポイントエラーの種類を指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これらの値は、ビットごとの `OR` and で結合し、 `dwType` [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 構造体のメンバーに使用することができます。 [Enumerrorbreakpoints ブレークポイント](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)メソッドにパラメーターとして渡されます。
 
 ブレークポイントのエラーの種類は、型と重大度で構成されています。 つまり、ブレークポイントのエラーの種類は、単独では型 (たとえば、 `BPET_TYPE_ERROR` ) または重大度 (など) にすぎません `BPET_SEV_GENERAL` 。 `BPET_GENERAL_WARNING` と `BPET_GENERAL_ERROR` には、一般的な警告とエラーのブレークポイントの定義済みの値が用意されています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 519b18f9e4b0329ded9b17ec0152f36e37377df0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2476b819d940b5fb6014d00e1bdf920f02a46696
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150862"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085209"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトに含まれるフィールドの種類を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_KIND {
@@ -225,12 +225,12 @@ public enum enum_FIELD_KIND {
 `FIELD_SYM_MASK`\
 シンボル情報のマスクを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md)メソッドの呼び出しから返されます。
 
 フィールドの種類に応じて、 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)インターフェイスで[QueryInterface](/cpp/atl/queryinterface)を呼び出して、より具体的な形式のインターフェイスを作成できます。 たとえば、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) がを返す場合は、 `FIELD_TYPE_METHOD` `QueryInterface` I でを呼び出して `DebugField` [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) インターフェイスを取得できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

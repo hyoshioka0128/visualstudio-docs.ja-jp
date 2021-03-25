@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fca977aba3657592088879cdad884f6e6325ffd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f81af5686cfc2b99dc3bf5d95e2ec283933297e2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152859"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084767"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 例外を、実行の再開時にデバッグされるプログラムに渡すか、または例外を破棄する必要があるかを指定します。
@@ -47,12 +47,12 @@ int PassToDebuggee(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドを呼び出すと、実際には、デバッグ中のプログラムでコードが実行されることはありません。 呼び出しは、次のコード実行の状態を設定するだけです。 たとえば、 [canパスワード](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)を使用するメソッドを呼び出すと、EXCEPTION_INFO が返される場合があり `S_OK` ます。 [](../../../extensibility/debugger/reference/exception-info.md)`dwState` フィールドをに設定 `EXCEPTION_STOP_SECOND_CHANCE` します。
 
  IDE は、 [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md) イベントを受け取り、 [Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md) メソッドを呼び出すことができます。 デバッグエンジン (DE) には、メソッドが呼び出されない場合にそのケースを処理するための既定の動作が必要です `PassToDebuggee` 。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)
 - [CanPassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)
 - [続行](../../../extensibility/debugger/reference/idebugprogram2-continue.md)

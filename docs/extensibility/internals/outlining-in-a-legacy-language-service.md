@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a2f00cc4e968551983a8b943d256b49e33d7d6d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a56d755341aa611f0e2762f6bae8940778fe0864
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954635"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062955"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>従来の言語サービスのアウトライン
 アウトラインを使用すると、複雑なプログラムを概要やアウトラインに折りたたむことができます。 たとえば、C# では、メソッドのシグネチャのみを表示して、すべてのメソッドを1つの行に折りたたむことができます。 また、構造体とクラスを折りたたんで、構造体とクラスの名前のみを表示することもできます。 1つのメソッド内で、、、などのステートメントの最初の行のみを表示することにより、複雑なロジックを折りたたんでフロー全体を表示することができ `foreach` `if` `while` ます。
@@ -119,6 +119,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの特徴](../../extensibility/internals/legacy-language-service-features1.md)
 - [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)

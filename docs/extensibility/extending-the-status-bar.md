@@ -8,17 +8,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7776c7fa35cd7ac06dec60ced3604cb67c96da4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ab87f9c8b54d9c31466068668eb8dd5a1857a06
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903194"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070103"
 ---
 # <a name="extend-the-status-bar"></a>ステータスバーを拡張する
 IDE の下部にある Visual Studio のステータスバーを使用して、情報を表示できます。
@@ -36,7 +36,7 @@ IDE の下部にある Visual Studio のステータスバーを使用して、�
 
 1. **TestStatusBarExtension** という名前の VSIX プロジェクトを作成し、 **TestStatusBarCommand** という名前のメニューコマンドを追加します。
 
-2. *TestStatusBarCommand.cs* で、コマンドハンドラーのメソッドコード () を次のコードに置き換え `MenuItemCallback` ます。
+2. *TestStatusBarCommand* で、コマンドハンドラーのメソッドコード () を次のコードに置き換え `MenuItemCallback` ます。
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -80,7 +80,7 @@ IDE の下部にある Visual Studio のステータスバーを使用して、�
 
 1. この手順では、進行状況バーを初期化して更新する方法について説明します。
 
-2. *TestStatusBarCommand.cs* ファイルを開き、メソッドを `MenuItemCallback` 次のコードに置き換えます。
+2. *TestStatusBarCommand* ファイルを開き、 `MenuItemCallback` メソッドを次のコードに置き換えます。
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -118,7 +118,7 @@ IDE の下部にある Visual Studio のステータスバーを使用して、�
 
      この手順では、プロジェクトまたはソリューションのビルドを表す標準の Visual Studio アニメーションを表示します。
 
-2. *TestStatusBarCommand.cs* ファイルを開き、メソッドを `MenuItemCallback` 次のコードに置き換えます。
+2. *TestStatusBarCommand* ファイルを開き、 `MenuItemCallback` メソッドを次のコードに置き換えます。
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
