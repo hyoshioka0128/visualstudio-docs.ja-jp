@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c560cf75fad8887dabdaab38004b10ae0ffc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce44b9234465af6bf52ce8baa0e60e641e845d3c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926127"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052672"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials for Visual Studio
 
@@ -66,7 +66,7 @@ ms.locfileid: "99926127"
 ### <a name="high-density-displays"></a>高密度ディスプレイ
  Visual Studio の UI は、Windows が既定でサポートしているすべての DPI スケールファクター (150%、200%、250%) で適切に動作する必要があります。
 
-## <a name="anti-patterns"></a>アンチパターン
+## <a name="anti-patterns"></a>アンチ パターン
  Visual Studio には、ガイドラインとベストプラクティスに従う UI の例が多数含まれています。 一貫性を保つために、開発者は多くの場合、ビルドしているものと同様の製品 UI デザインパターンを借用します。 これはユーザーの操作や視覚設計の一貫性を向上させるのに役立ちますが、スケジュールの制約や欠陥の優先順位付けのためのガイドラインに合わない詳細情報を含む機能を提供します。 このような場合、チームはこれらの "アンチパターン" のいずれかをコピーしないようにする必要があります。これは、Visual Studio 環境内の不適切な UI または一貫性のない UI が急増するためです。
 
 ### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>既定でエラー状態に表示される必須フィールド/設定
