@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951551"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060017"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>最近使用した一覧をサブメニューに追加する
 このチュートリアルは、「 [メニューにサブ](../extensibility/adding-a-submenu-to-a-menu.md)メニューを追加する」のデモを基にしており、サブメニューに動的リストを追加する方法を示しています。 動的リストは、最近使用した (MRU) リストを作成するための基礎となります。
@@ -83,14 +83,14 @@ ms.locfileid: "99951551"
 
 ## <a name="filling-the-mru-list"></a>MRU リストの入力
 
-1. *TestCommandPackageGuids.cs* で、クラス定義の既存のコマンド id の後に次の行を追加し `TestCommandPackageGuids` ます。
+1. *Testcommandpackageguids .cs* で、クラス定義の既存のコマンド id の後に次の行を追加します `TestCommandPackageGuids` 。
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. *TestCommand.cs* で、次の using ステートメントを追加します。
+2. *Testcommand .cs* で、次の using ステートメントを追加します。
 
     ```csharp
     using System.Collections;
@@ -201,5 +201,5 @@ ms.locfileid: "99951551"
 
 4. もう一度サブメニューを開きます。 **項目 3** がリストの一番上にあり、他の項目が1つ下に移動されていることを確認します。 もう一度 **項目 3** をクリックすると、メッセージボックスにはまだ **選択された項目 3** が表示されます。これは、テキストがコマンドラベルと共に新しい位置に正しく移動したことを示しています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [動的にメニュー項目を追加する](../extensibility/dynamically-adding-menu-items.md)

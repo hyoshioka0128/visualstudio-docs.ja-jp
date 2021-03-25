@@ -9,17 +9,17 @@ helpviewer_keywords:
 - properties [Visual Studio SDK]
 - Property Browser, exposing properties
 ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd9f2eb66bd2e1b8edcffd9e1053e4f644ba5e77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9de86e956fe6a4d7841d519d7252b75ae216229
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890761"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075251"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>プロパティをプロパティウィンドウに公開する
 
@@ -37,9 +37,9 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. すべての Visual Studio 拡張機能は、拡張機能アセットを含む VSIX デプロイプロジェクトから開始されます。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]という名前の VSIX プロジェクトを作成 `MyObjectPropertiesExtension` します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. という名前のカスタムツールウィンドウ項目テンプレートを追加して、ツールウィンドウを追加し `MyToolWindow` ます。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加] ダイアログ** で、[ **Visual C# 項目** の機能拡張] にアクセスし、  >   [**カスタムツールウィンドウ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名を *MyToolWindow.cs* に変更します。 カスタムツールウィンドウを作成する方法の詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
+2. という名前のカスタムツールウィンドウ項目テンプレートを追加して、ツールウィンドウを追加し `MyToolWindow` ます。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加] ダイアログ** で、[ **Visual C# 項目** の機能拡張] にアクセスし、  >   [**カスタムツールウィンドウ**] を選択します。 ダイアログの下部にある [ **名前** ] フィールドで、ファイル名を *MyToolWindow* に変更します。 カスタムツールウィンドウを作成する方法の詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
 
-3. *MyToolWindow.cs* を開き、次の using ステートメントを追加します。
+3. *MyToolWindow* を開き、次の using ステートメントを追加します。
 
    ```csharp
    using System.Collections;
@@ -112,7 +112,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ### <a name="to-expose-tool-window-properties"></a>ツールウィンドウのプロパティを公開するには
 
-1. *MyToolWindow.cs* を開き、パブリックブール型プロパティ ischecked をクラスに追加し `MyToolWindow` ます。
+1. *MyToolWindow* を開き、パブリックブール型プロパティ ischecked をクラスに追加します `MyToolWindow` 。
 
     ```csharp
     [Category("My Properties")]
@@ -131,7 +131,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
      このプロパティは、後で作成する WPF チェックボックスから状態を取得します。
 
-2. *MyToolWindowControl.xaml.cs* を開き、MyToolWindowControl コンストラクターを次のコードに置き換えます。
+2. *Mytoolwindowcontrol .xaml* を開き、mytoolwindowcontrol コンストラクターを次のコードに置き換えます。
 
     ```vb
     private MyToolWindow pane;
@@ -145,7 +145,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
      これ `MyToolWindowControl` により、ペインにアクセスできるように `MyToolWindow` なります。
 
-3. *MyToolWindow.cs* で、次の `MyToolWindow` ようにコンストラクターを変更します。
+3. *MyToolWindow* で、次のように `MyToolWindow` コンストラクターを変更します。
 
     ```csharp
     base.Content = new MyToolWindowControl(this);
@@ -189,7 +189,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ### <a name="to-change-selection-lists"></a>選択リストを変更するには
 
-1. *MyToolWindow.cs* を開き、という名前のパブリッククラスを追加し `Simple` ます。
+1. *MyToolWindow* を開き、という名前のパブリッククラスを追加し `Simple` ます。
 
     ```csharp
     public class Simple
@@ -242,7 +242,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     }
     ```
 
-3. *MyToolWindowControl.cs* で、チェックボックスハンドラーを次のコード行に置き換えます。
+3. *Mytoolwindowcontrol .cs* で、チェックボックスハンドラーを次のコード行に置き換えます。
 
     ```csharp
     private void checkbox_Checked(object sender, RoutedEventArgs e)
@@ -274,6 +274,6 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 Visual Studio のツールウィンドウは、Visual Studio セッション間で保持します。 ツールウィンドウの状態の保持の詳細については、「」を参照してください <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [プロパティとプロパティウィンドウの拡張](../extensibility/extending-properties-and-the-property-window.md)

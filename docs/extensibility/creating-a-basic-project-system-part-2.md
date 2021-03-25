@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a60bdc7a6cbd73e85248f6ea5897ad3e56337113
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853153"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089421"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>基本的なプロジェクトシステムを作成する (第2部)
 このシリーズの最初のチュートリアルである「 [基本的なプロジェクトシステムを作成する (第1部](../extensibility/creating-a-basic-project-system-part-1.md))」では、基本的なプロジェクトシステムを作成する方法を示します。 このチュートリアルは、Visual Studio テンプレート、プロパティページ、およびその他の機能を追加することによって、基本的なプロジェクトシステム上に構築されています。 このチュートリアルを開始する前に、最初のチュートリアルを完了する必要があります。
@@ -48,7 +48,7 @@ ms.locfileid: "99853153"
 
 1. で、「 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [基本的なプロジェクトシステムの作成 (パート 1)](../extensibility/creating-a-basic-project-system-part-1.md)」に従って作成した simpleproject ソリューションを開きます。
 
-2. SimpleProjectPackage.cs ファイルで、[  ] 属性を見つけます。 2番目のパラメーター (プロジェクト名) を null に、4番目のパラメーター (プロジェクトのテンプレートフォルダーへのパス) を "で置き換えます。 \\次のように \N ullpath。
+2. *Simpleprojectpackage .cs* ファイルで、"パッケージ" 属性を見つけます。 2番目のパラメーター (プロジェクト名) を null に、4番目のパラメーター (プロジェクトのテンプレートフォルダーへのパス) を "で置き換えます。 \\次のように \N ullpath。
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -100,7 +100,7 @@ ms.locfileid: "99853153"
 - \<ProjectType>要素は、[**新しいプロジェクト**] ダイアログボックスでプロジェクトの種類の名前を入力します。 この名前は、指定されたプロジェクト名のパラメーターを置き換えます。
 
   > [!NOTE]
-  > 要素は、 \<ProjectType> `LanguageVsTemplate` SimpleProjectPackage.cs ファイルの属性の引数と一致する必要があり `ProvideProjectFactory` ます。
+  > 要素は、 \<ProjectType> `LanguageVsTemplate` SimpleProjectPackage .cs ファイルの属性の引数と一致する必要があり `ProvideProjectFactory` ます。
 
   このセクションでは、 \<TemplateContent> 新しいプロジェクトの作成時に生成されるこれらのファイルについて説明します。
 
@@ -110,7 +110,7 @@ ms.locfileid: "99853153"
 
 - *AssemblyInfo.cs*
 
-  3つのファイルすべてが `ReplaceParameters` true に設定されています。これにより、パラメーターの置換が有効になります。 *Program.cs* ファイルは `OpenInEditor` true に設定されています。これにより、プロジェクトの作成時にファイルがコードエディターで開かれます。
+  3つのファイルすべてが `ReplaceParameters` true に設定されています。これにより、パラメーターの置換が有効になります。 *プログラム .cs* ファイルは `OpenInEditor` true に設定されています。これにより、プロジェクトの作成時にファイルがコードエディターで開かれます。
 
   Visual Studio テンプレートスキーマの要素の詳細については、「 [Visual studio テンプレートスキーマ参照](../extensibility/visual-studio-template-schema-reference.md)」を参照してください。
 
@@ -285,7 +285,7 @@ Visual Studio テンプレートにパス情報が含まれていません。 �
 
 ### <a name="to-substitute-project-template-parameters"></a>プロジェクトテンプレートパラメーターを置き換えるには
 
-1. *SimpleProjectNode.cs* ファイルで、メソッドを削除し `AddFileFromTemplate` ます。
+1. *Simpleprojectnode .cs* ファイルで、メソッドを削除し `AddFileFromTemplate` ます。
 
 2. *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* ファイルで、プロパティを探し、 \<RootNamespace> その値を $safeprojectname $ に変更します。
 
@@ -319,7 +319,7 @@ Visual Studio テンプレートにパス情報が含まれていません。 �
 
 5. 新しい SimpleProject コンソールアプリケーションを作成します。 ([ **プロジェクトの種類** ] ペインで、[ **simpleproject**] を選択します。 [ **Visual Studio にインストールされたテンプレート**] で、[ **コンソールアプリケーション**] を選択します。)
 
-6. 新しく作成したプロジェクトで、 *Program.cs* を開きます。 次のようになります (ファイル内の GUID 値は異なります)。
+6. 新しく作成したプロジェクトで、 *Program .cs* を開きます。 次のようになります (ファイル内の GUID 値は異なります)。
 
     ```csharp
     using System;
@@ -354,7 +354,7 @@ Visual Studio テンプレートにパス情報が含まれていません。 �
 
 - RootNamespace.
 
-1. *SimpleProjectPackage.cs* ファイルで、次の `ProvideObject` 属性をクラスに追加し `SimpleProjectPackage` ます。
+1. *Simpleprojectpackage .cs* ファイルで、次の `ProvideObject` 属性をクラスに追加し `SimpleProjectPackage` ます。
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
@@ -363,7 +363,7 @@ Visual Studio テンプレートにパス情報が含まれていません。 �
 
     これにより、プロパティページクラスが COM に登録され `GeneralPropertyPage` ます。
 
-2. *SimpleProjectNode.cs* ファイルで、次の2つのオーバーライドされたメソッドをクラスに追加し `SimpleProjectNode` ます。
+2. *Simpleprojectnode .cs* ファイルで、次の2つのオーバーライドされたメソッドをクラスに追加し `SimpleProjectNode` ます。
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -382,7 +382,7 @@ Visual Studio テンプレートにパス情報が含まれていません。 �
 
     これらのメソッドはどちらも、プロパティページ Guid の配列を返します。 全般の Propertypage GUID は配列内の唯一の要素であるため、[ **プロパティページ** ] ダイアログボックスには1ページしか表示されません。
 
-3. *GeneralPropertyPage.cs* という名前のクラスファイルを simpleproject プロジェクトに追加します。
+3. " *全般* " という名前のクラスファイルを simpleproject プロジェクトに追加します。
 
 4. 次のコードを使用して、このファイルの内容を置き換えます。
 
@@ -462,7 +462,7 @@ Visual Studio テンプレートにパス情報が含まれていません。 �
 
 6. 実験用インスタンスで、新しい SimpleProject アプリケーションを作成します。
 
-7. Visual Studio は、Visual Studio テンプレートを使用してプロジェクトを作成するために、プロジェクトファクトリを呼び出します。 新しい *Program.cs* ファイルがコードエディターで開きます。
+7. Visual Studio は、Visual Studio テンプレートを使用してプロジェクトを作成するために、プロジェクトファクトリを呼び出します。 新しい *プログラムの .cs* ファイルがコードエディターで開かれます。
 
 8. **ソリューションエクスプローラー** でプロジェクトノードを右クリックし、[**プロパティ**] をクリックします。 **[プロパティ ページ]** ダイアログ ボックスが表示されます。
 

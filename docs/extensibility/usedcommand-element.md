@@ -8,17 +8,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3f4a5f39e7cb999d9b3a86aa791464fca25645
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30ff89cba5dbc1e54afaf51fb659e07c29e53009
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934104"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060225"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 要素
 VSPackage が別の vsct ファイルで定義されているコマンドにアクセスできるようにします。 たとえば、VSPackage がシェルによって定義されている標準の **コピー** コマンドを使用する場合、 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] コマンドを再実装せずにメニューまたはツールバーに追加できます。
@@ -38,7 +38,7 @@ VSPackage が別の vsct ファイルで定義されているコマンドにア�
 |---------------|-----------------|
 |guid|必須。 コマンドを識別する GUID ID ペアの GUID。|
 |id|必須。 コマンドを識別する GUID ID ペアの ID。|
-|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 
@@ -52,7 +52,7 @@ VSPackage が別の vsct ファイルで定義されているコマンドにア�
 |-------------|-----------------|
 |[UsedCommands 要素](../extensibility/usedcommands-element.md)|グループ化されたコマンド要素とその他の実行コマンドグループ。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  VSPackage は、要素にコマンドを追加することにより、 `<UsedCommands>` [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSPackage がコマンドを必要とすることを環境に通知します。 `<UsedCommand>`パッケージが必要とするすべてのバージョンおよび構成に含まれていない可能性があるすべてのコマンドに対して、要素を追加する必要があります。 たとえば、パッケージが Visual C++ に固有のコマンドを呼び出すと、コマンドに要素を含めない限り、Visual Web Developer のユーザーはこのコマンドを使用できません `<UsedCommand>` 。
 
 ## <a name="example"></a>例

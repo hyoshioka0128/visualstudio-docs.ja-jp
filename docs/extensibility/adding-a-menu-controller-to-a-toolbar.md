@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 304f4ea11abc332c01603f96b6b67c0bd22e38c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951525"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060069"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>ツールバーにメニューコントローラーを追加する
 このチュートリアルは、「ツール [ウィンドウにツールウィンドウを追加する」](../extensibility/adding-a-toolbar-to-a-tool-window.md) チュートリアルに基づいており、ツールウィンドウのツールバーにメニューコントローラーを追加する方法を示しています。 ここに示す手順は、「 [ツールバーの追加](../extensibility/adding-a-toolbar.md) 」チュートリアルで作成したツールバーにも適用できます。
@@ -112,7 +112,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ## <a name="implement-the-menu-controller-commands"></a>メニューコントローラーのコマンドを実装する
 
-1. *TWTestCommandPackageGuids.cs* で、既存のコマンド id の後に3つのメニュー項目のコマンド id を追加します。
+1. *Twtestcommandpackageguids .cs* で、既存のコマンド id の後に3つのメニュー項目のコマンド id を追加します。
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -120,7 +120,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. *TWTestCommand.cs* で、クラスの先頭に次のコードを追加し `TWTestCommand` ます。
+2. *Twtestcommand .cs* で、クラスの先頭に次のコードを追加します `TWTestCommand` 。
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command
@@ -224,6 +224,6 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
     ダイアログボックスが開き、 **[メニューコントローラー項目 3]** というメッセージが表示されます。 メッセージがメニューコントローラーボタンのテキストに対応することに注意してください。 メニューコントローラーボタンに **MC 項目 3** が表示されるようになりました。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ツールウィンドウへのツールバーの追加](../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [ツールバーの追加](../extensibility/adding-a-toolbar.md)

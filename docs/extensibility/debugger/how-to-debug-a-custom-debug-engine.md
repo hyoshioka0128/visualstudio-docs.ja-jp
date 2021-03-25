@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e9b18f7bb34433ff86fe6a5bede436228d3ff1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffd21fb08e920209d47ff66feb436f8a83aab53e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947698"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059926"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>方法: カスタムデバッグエンジンをデバッグする
 プロジェクトの種類は、メソッドからデバッグエンジン (DE) を起動し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> ます。 これは、プロジェクトの種類を制御するインスタンスの制御下で DE が起動されることを意味 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] します。 ただし、のインスタンスでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、DE をデバッグできません。 カスタム DE をデバッグするための手順を次に示します。
@@ -75,5 +75,5 @@ ms.locfileid: "99947698"
 
 9. DE を起動するプロセスをデバッグする場合は、「カスタムデバッグエンジンのデバッグ」の手順を実行して、起動後に DE にアタッチすることができます。 これにより、2つのインスタンスが [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 実行されます。1つはプロジェクトの種類のソース、もう1つはインスタンス化されたプロジェクトの種類、もう1つは DE にアタッチされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [カスタムデバッグエンジンの作成](../../extensibility/debugger/creating-a-custom-debug-engine.md)

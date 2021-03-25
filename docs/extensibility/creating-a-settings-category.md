@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896261"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089343"
 ---
 # <a name="create-a-settings-category"></a>設定カテゴリの作成
 
@@ -39,7 +39,7 @@ ms.locfileid: "99896261"
 
 2. *VSPackage* ファイルを開き、次の3つの文字列リソースを追加します。
 
-    |名前|値|
+    |Name|値|
     |----------|-----------|
     |106|マイカテゴリ|
     |107|[個人の設定]|
@@ -50,7 +50,7 @@ ms.locfileid: "99896261"
     > [!NOTE]
     > これら3つのうち、カテゴリ名だけが、設定の **インポートおよびエクスポート** ウィザードに表示されません。
 
-3. *MyToolsOptionsPackage.cs* で、次の `float` `OptionFloat` 例に示すように、という名前のプロパティをクラスに追加し `OptionPageGrid` ます。
+3. *MyToolsOptionsPackage* で、 `float` 次の `OptionFloat` `OptionPageGrid` 例に示すように、という名前のプロパティをクラスに追加します。
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -116,7 +116,7 @@ ms.locfileid: "99896261"
 
      [ **設定ファイルの名前** ] ページが表示されます。
 
-9. 新しい設定ファイルに「 *Mysettings. .vssettings* 」という名前を付け、適切なディレクトリに保存します。 **[Finish]** をクリックします。
+9. 新しい設定ファイルに「 *Mysettings. .vssettings* 」という名前を付け、適切なディレクトリに保存します。 **[完了]** をクリックします。
 
      [ **エクスポートの完了** ] ページには、設定が正常にエクスポートされたことが表示されます。
 

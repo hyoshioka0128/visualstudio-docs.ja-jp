@@ -9,17 +9,17 @@ helpviewer_keywords:
 - error handling
 - return values
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 530430852d621ea4aaf62bf2c86365609f26cf8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac9c027623b34afa532f62b4b4c9443f219343e9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883373"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075264"
 ---
 # <a name="error-handling-and-return-values"></a>エラー処理と戻り値
 Vspackage と COM は、同じアーキテクチャを使用してエラーを発生させることができます。 `SetErrorInfo`関数と `GetErrorInfo` 関数は、Win32 アプリケーションプログラミングインターフェイス (API) の一部です。 統合開発環境 (IDE: integrated development environment) のすべての VSPackage は、これらのグローバル Win32 Api を呼び出して、エラー通知を受け取ったときに豊富なエラー情報を記録できます。 は、 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] エラー情報を管理する相互運用機能アセンブリを提供します。
@@ -55,7 +55,7 @@ Vspackage と COM は、同じアーキテクチャを使用してエラーを�
 
 - 別の呼び出しによって発生したエラーを返すすべての関数は、 `HRESULT` オブジェクトを変更せずに、内の失敗した呼び出しから受け取った情報を渡す必要があり `ErrorInfo` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [SetErrorInfo (コンポーネントオートメーション)](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
 - [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)

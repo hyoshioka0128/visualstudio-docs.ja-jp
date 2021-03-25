@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341ca3d00a433c4bb36bc22ab2d598d7b454842a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 460052ceb9f2f90a5123f4cc646682919f96dc94
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225709"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082583"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 式エバリュエーター (EE) に固有のデータオブジェクトのコピーを作成します。
@@ -52,11 +52,11 @@ int CreateReplacementObject(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドには、バイト配列を表す [Ieedatastorage](../../../extensibility/debugger/reference/ieedatastorage.md) オブジェクトが指定されています。 この受信データオブジェクトは、通常、EE によって実装されていません。 ただし、このメソッドによって返されるオブジェクトは常に EE によって実装されます。これにより、EE は `IEEDataStorage` 任意のクラスで必要なインターフェイスを実装できます。
 
  受信オブジェクトによって提供されるデータは、 `IEEDataStorage` 送信オブジェクトのデータと同じである必要があることに注意してください `IEEDataStorage` 。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

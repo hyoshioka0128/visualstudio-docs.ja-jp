@@ -8,17 +8,17 @@ helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1d332e3c41a55de8f405f028070fa95f97f6717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923272"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089356"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>複数インスタンスのツールウィンドウを作成する
 ツールウィンドウをプログラミングして、複数のインスタンスを同時に開くことができるようにすることができます。 既定では、ツールウィンドウで開くことができるインスタンスは1つだけです。
@@ -34,7 +34,7 @@ ms.locfileid: "99923272"
 
 ## <a name="make-a-tool-window-multi-instance"></a>ツールウィンドウを複数インスタンスにする
 
-1. *MIToolWindowPackage.cs* ファイルを開き、属性を見つけ `ProvideToolWindow` ます。 次の `MultiInstances=true` 例に示すように、パラメーターとパラメーターを指定します。
+1. *MIToolWindowPackage* ファイルを開き、属性を見つけ `ProvideToolWindow` ます。 次の `MultiInstances=true` 例に示すように、パラメーターとパラメーターを指定します。
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -46,7 +46,7 @@ ms.locfileid: "99923272"
     {. . .}
     ```
 
-2. *MIToolWindowCommand.cs* ファイルで、メソッドを見つけ `ShowToolWindos()` ます。 このメソッドでは、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> その `create` フラグをに設定し `false` ます。これにより、使用可能なが見つかるまで、既存のツールウィンドウインスタンスが反復処理されるようになり `id` ます。
+2. *MIToolWindowCommand* ファイルで、メソッドを見つけ `ShowToolWindos()` ます。 このメソッドでは、メソッドを呼び出し、 <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> その `create` フラグをに設定し `false` ます。これにより、使用可能なが見つかるまで、既存のツールウィンドウインスタンスが反復処理されるようになり `id` ます。
 
 3. ツールウィンドウのインスタンスを作成するには、メソッドを呼び出し <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> て、 `id` を使用可能な値に設定し、 `create` フラグをに設定し `true` ます。
 

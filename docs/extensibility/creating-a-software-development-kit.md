@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74e31cb8fddb00e8a6771a6ad3065bce57cc8bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc762912abdc58b33e49406dd46cadd152f732b6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902240"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089369"
 ---
 # <a name="create-a-software-development-kit"></a>ソフトウェア開発キットを作成する
 
@@ -52,7 +52,7 @@ Sdk には、次の2種類があります。
                         \[arch]
 ```
 
-| ノード | Description |
+| Node | Description |
 |------------------------| - |
 | *参照* フォルダー | コーディング可能な Api を含むバイナリが含まれています。 これには、Windows メタデータ (WinMD) ファイルまたはアセンブリを含めることができます。 |
 | *デザイン時* フォルダー | 実行前またはデバッグ時にのみ必要なファイルが含まれています。 これには、XML ドキュメント、ライブラリ、ヘッダー、ツールボックスのデザイン時バイナリ、MSBuild 成果物などが含まれます。<br /><br /> XML ドキュメントは *\designtime どちら* フォルダーに配置するのが理想的ですが、参照用の xml ドキュメントは引き続き Visual Studio の参照ファイルと共に配置されます。 たとえば、参照用の XML ドキュメントである [config] [arch]<em> \\ \\ \sample.dll</em> は、 *\\ [config \\*] [arch] \sample.xmlと参照され、そのドキュメントのローカライズ版は [ *\\ config] \\ [arch] \\ [locale] \sample.xml* になります。 |
@@ -137,7 +137,7 @@ Sdk には、次の2種類があります。
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-*SDKManifest.xml* ファイルでは、Visual STUDIO が SDK をどのように使用するかを説明します。 以下に例を示します。
+*SDKManifest.xml* ファイルでは、Visual STUDIO が SDK をどのように使用するかを説明します。 次に例を示します。
 
 ```
 <FileList>
@@ -269,7 +269,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [チュートリアル: C++ を使用して SDK を作成する](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [チュートリアル: C# または Visual Basic を使用した SDK の作成](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
