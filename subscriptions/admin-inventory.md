@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 01/14/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 運用前環境のインベントリを実施する管理者の責任について説明します
-ms.openlocfilehash: da8146b9f7d2b758ac2d249534d43bd98beae385
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: f6b1e1ebc02a986be86fb48578a4be47ccc3dfaa
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511307"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757673"
 ---
 # <a name="inventory-of-pre-production-environment"></a>運用前環境のインベントリ
 Visual Studio サブスクリプションは、デバイスではなくユーザーをカウントすることで、資産管理を簡略化します。
@@ -30,7 +30,7 @@ Visual Studio の管理者は、Visual Studio サブスクリプションを **�
 
 ## <a name="resources"></a>リソース
 - [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Visual Studio サブスクリプションのサポート](https://my.visualstudio.com/gethelp)
+- [Visual Studio サブスクリプションのサポート](https://aka.ms/vsadminhelp)
 - [ボリューム ライセンスの契約条件](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>関連項目

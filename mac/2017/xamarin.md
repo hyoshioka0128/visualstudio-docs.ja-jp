@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
-ms.openlocfilehash: 89d724a9ddf4c8f3dc7fe941e5e4d999d30da1e8
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: e5d03c27ef1e6fefc2fa29d60727851be0954d8b
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950633"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999603"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin のモバイル アプリ開発
 
@@ -58,4 +58,4 @@ Xamarin Inspector は、対話型 C# コンソールをユーザー ツールで
 
 多様なプログラミング プラットフォーム (Android、iOS、Mac、および Windows) を対象にすることができ、お使いの IDE のデバッグ ワークフローに統合できる高機能な C# コンソールを提供するスタンドアロン アプリケーションから構成されます。
 
-詳細については、「[Xamarin Inspector](/xamarin/tools/inspector/)」のガイドを参照してください。
+詳細については、「[Xamarin Inspector](/xamarin/tools/inspector/release-notes/1.5)」のガイドを参照してください。

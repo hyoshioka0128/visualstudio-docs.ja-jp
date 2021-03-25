@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 86d701e50b4d9f5b8e4c9af0c736c117cd2e91be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b4c3aa608969d9f62e2d5ab3bd3d98ef79236d9
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950540"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999629"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Visual Studio for Mac にサインインする
 
@@ -19,9 +19,9 @@ Visual Studio for Mac にサインインすると、[サブスクリプション
 
 * **Visual Studio Dev Essentials プログラムにアクセスする** – このプログラムには、無料のソフトウェア提供サービス、トレーニング、サポートなどが含まれます。 詳細については、「 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 」をご覧ください。
 
-* IDE で **Azure に自動的に接続される**ようになり、同じアカウントの資格情報を再度要求されることはなくなります。
+* IDE で **Azure に自動的に接続される** ようになり、同じアカウントの資格情報を再度要求されることはなくなります。
 
-初めて Visual Studio for Mac を起動すると、Microsoft アカウントを使ってログインするように求められます。 使用するライセンスに接続されている Microsoft アカウントを使用します。 Microsoft アカウントがない場合は、「[Microsoft アカウントを新規登録する](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)」をご覧ください。
+初めて Visual Studio for Mac を起動すると、Microsoft アカウントを使ってログインするように求められます。 使用するライセンスに接続されている Microsoft アカウントを使用します。 Microsoft アカウントがない場合は、「[Microsoft アカウントを新規登録する](https://support.microsoft.com/account-billing/how-to-create-a-new-microsoft-account-a84675c3-3e9e-17cf-2911-3d56b15c0aaf)」をご覧ください。
 
 すぐにログインしない場合は、評価版コピーを 30 日間使うことができます。 30 日が経過した後で Visual Studio for Mac のご利用のコピーを使い続けるには、ログインする必要があります。
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: ユーザーの割り当てを追跡して注文を処理する管理者の責任について説明します。
-ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249483"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776988"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>ユーザーの割り当てを追跡し、注文を処理する
 Visual Studio サブスクリプションの管理者は、Visual Studio の使用状況を追跡し、ボリューム ライセンス契約またはマイクロソフト製品/サービス契約に記載されているスケジュールに従って、使用率の増加に応じて注文を処理する必要があります。 新しい Visual Studio サブスクリプション管理ポータルは、使用可能なライセンスと使用済みのライセンスを示す便利なトラッカーにより、これを簡略化します。
@@ -38,7 +38,7 @@ Visual Studio サブスクリプションの管理者は、Visual Studio の使�
 Microsoft Enterprise Agreements (EA)、MPSA および Select Plus 契約では、長期にわたる Visual Studio ソフトウェアの使用とライセンスの柔軟性が得られます。 Visual Studio 管理者は、ソフトウェア ライセンスが契約期間中に定められた最大使用率になるように年間の調整注文を行う必要があります。
 
 ## <a name="resources"></a>リソース
-- ヘルプが必要ですか?  [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- ヘルプが必要ですか?  [サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939540"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805992"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web アプリケーション プロジェクト テンプレート
 
@@ -56,6 +56,7 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 | **Flask Web プロジェクト** | 静的ファイルが *static* フォルダーに含まれていているアプリを生成します。 *views.py* 内のコードによってルーティングが処理され、Jinja エンジンを使用するページ テンプレートが *templates* に含まれています。 *runserver.py* ファイルはスタートアップ コードを提供します。 [Flask の詳細情報の手順 4](learn-flask-visual-studio-step-04-full-flask-project-template.md) に関するページを参照してください。 |
 | **Flask/Jade Web プロジェクト** | **Flask Web プロジェクト** テンプレートの場合と同じアプリを、Jinja テンプレート エンジン用の Jade 拡張を使用して生成します。 |
 
+::: moniker range="vs-2017"
 ### <a name="polls-group"></a>ポーリング グループ
 
 **ポーリング \<framework> Web プロジェクト** テンプレートは、さまざまなポーリングの質問に対してユーザーが投票するために使用するスターター Web アプリを作成します。 各アプリは、**Web** プロジェクト テンプレートの構造に基づいてビルドされ、データベースを使用してポーリングとユーザー応答を管理します。 アプリには適切なデータ モデルと、*samples.json* ファイルからポーリングを読み込む特殊なアプリ ページ ("/seed") とが含まれています。
@@ -66,6 +67,7 @@ Python Web アプリを Azure にデプロイする方法については、「[A
 | **ポーリング Django Web プロジェクト** | 3 つのページと SQLite データベースを使用して Django プロジェクトと Django アプリを生成します。 認証された管理者がポーリングを作成および管理できるように、Django 管理インターフェイスにカスタマイズを含めます。 詳細については、[Django テンプレート](python-django-web-application-project-template.md)に関する記事と [Django 手順 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) に関する記事を参照してください。 |
 | **Polls Flask Web プロジェクト** | `REPOSITORY_NAME` 環境変数を使用して構成されるメモリ内データベース、MongoDB、または Azure テーブル ストレージに対して実行できるアプリを生成します。 データ モデルとデータ ストア コードは *models* フォルダーに含まれ、*settings.py* ファイルには、どのデータ ストアを使用するかを決定するコードが含まれます。 アプリでは、ページ テンプレートに対して Jinja エンジンが使用されます。 [Flask の詳細情報の手順 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) に関するページを参照してください。 |
 | **Polls Flask/Jade Web プロジェクト** | **Polls Flask Web プロジェクト** テンプレートの場合と同じアプリを、Jinja テンプレート エンジン用の Jade 拡張を使用して生成します。 |
+::: moniker-end
 
 ## <a name="install-project-requirements"></a>プロジェクト要件をインストールする
 

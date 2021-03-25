@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 12/02/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: サブスクリプションの割り当て超過を管理者が解決する方法について説明します
-ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537748"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776559"
 ---
 # <a name="over-allocated-subscriptions"></a>サブスクリプションの割り当て超過
 サブスクライバーを追加した後に、注文が変更される場合があります。これにより会社が所有するライセンス数よりも割り当てられたサブスクリプションが多くなる場合があります。 これは "割り当て超過" と呼ばれます。  
@@ -45,4 +45,4 @@ ms.locfileid: "96537748"
 
 ## <a name="next-steps"></a>次のステップ
 - [Visual Studio Subscription with GitHub Enterprise](assign-github.md) の管理に関する詳細情報をご覧ください。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。

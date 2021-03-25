@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションでプロダクト キーを検索、要求、エクスポートする方法を説明します。
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249265"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776572"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでプロダクト キーを検索して要求する
 この記事では、 https://my.visualstudio.com/productkeys からプロダクト キーを検索、要求、エクスポートする方法について説明します。  キーを使用して製品をライセンス認証する方法、キーのリテール版とボリューム ライセンス版、および毎日のプロダクト キー要求の制限について詳しくは、[プロダクト キーの概要](product-keys.md)に関するページをご覧ください。
@@ -67,7 +67,7 @@ ms.locfileid: "102249265"
 キーをエクスポートするには、[プロダクト キー] ページの右端にある **[すべてのキーをエクスポート]** リンクを選択します。  KeysExport.xml という名前の .xml ファイルが作成されます。ファイルを開くか、保存することを選択できます。  .Xml ファイルを処理できるアプリケーションでファイルを開く必要があります。  たとえば、Excel で読み取り専用のブックとしてファイルを開くことができます。
 
 ## <a name="resources"></a>リソース
-- [Visual Studio サブスクリプションのサポート](https://my.visualstudio.com/gethelp)
+- [Visual Studio サブスクリプションのサポート](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

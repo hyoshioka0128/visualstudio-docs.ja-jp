@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 10/28/2020
 ms.topic: overview
 description: サブスクリプション管理ポータルを使用して、組織の Visual Studio サブスクリプションの管理を開始する方法について説明します。
-ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3ac02dcd49af1c3277be0c3a15a2e3bf9c735f04
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904550"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673074"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio サブスクリプション管理者ポータルの概要
 
@@ -25,8 +25,8 @@ Visual Studio サブスクリプション管理ポータルには、組織のサ
 ## <a name="important-considerations"></a>重要な考慮事項
 Visual Studio サブスクリプション管理ポータルを使用するときには、次の点に留意してください。
 - **Visual Studio サブスクリプションはユーザーごとにライセンスが付与されます。** 各サブスクリプション会員は開発およびテストを目的として、ソフトウェアを必要な数のコンピューターで使用できます。
-- 組織で購入した Visual Studio サブスクリプションに応じて、 **サブスクライバーごとに 1 つのサブスクリプション レベルのみを割り当ててください** 。 複数のサブスクリプション レベルが割り当てられているサブスクリプション会員がいる場合は、1 つのレベルだけが割り当てられるように会員の設定を編集してください。
-- ステップアップ ライセンスの購入によってサブスクリプションをアップグレードするか、低いレベルのサブスクリプションに更新した場合は、 **サブスクリプション会員のサブスクリプション レベルを更新する必要があります** 。
+- 組織で購入した Visual Studio サブスクリプションに応じて、**サブスクライバーごとに 1 つのサブスクリプション レベルのみを割り当ててください**。 複数のサブスクリプション レベルが割り当てられているサブスクリプション会員がいる場合は、1 つのレベルだけが割り当てられるように会員の設定を編集してください。
+- ステップアップ ライセンスの購入によってサブスクリプションをアップグレードするか、低いレベルのサブスクリプションに更新した場合は、**サブスクリプション会員のサブスクリプション レベルを更新する必要があります**。
 - **サブスクリプション会員間でサブスクリプションを共有しないでください。** サブスクリプションは、指定した個人に割り当てる必要があります。  チームに対するサブスクリプションの割り当ては許可されていません。  サブスクリプション特典 (開発およびテスト用ソフトウェア、Microsoft Azure、e ラーニングなど) のすべてまたは一部使用するユーザーにサブスクリプションを割り当てる必要があります。
 
 ## <a name="the-subscribers-page"></a>[サブスクライバー] ページ
@@ -57,7 +57,7 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - [Visual Studio ライセンスのホワイト ペーパー](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [サブスクリプション オプションと価格を比較する](https://visualstudio.microsoft.com/vs/pricing)
 - [Visual Studio IDE 機能を比較する](https://visualstudio.microsoft.com/vs/compare)
-- [Visual Studio の管理者とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
@@ -65,7 +65,7 @@ Visual Studio サブスクリプション管理ポータルを使用するとき
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 管理者の責任について詳しくは、以下をご覧ください。
 - [管理者責任の概要](admin-responsibilities.md)
 - [運用前環境のインベントリ](admin-inventory.md)

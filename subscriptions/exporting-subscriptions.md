@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: サブスクライバーの一覧とサブスクリプションの割り当ての詳細をエクスポートする方法について説明します。
-ms.openlocfilehash: afd30470b5d9171f803c14b0d604eca626b70342
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 991128fc0f45b0caa0727c8ab418ba632d90e60c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250028"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776819"
 ---
 # <a name="export-subscription-information"></a>サブスクリプション情報のエクスポート
 Visual Studio サブスクリプションの[管理ポータル](https://manage.visualstudio.com)では、サブスクライバーの一覧とその割り当てに関する詳細情報をエクスポートできます。 この情報には、名前、メール アドレス、連絡用メール アドレス、サブスクリプション レベル、割り当て日、ライセンス認証の状態、有効期限、参照フィールド、ダウンロードが有効であるかどうか、国、言語、サブスクリプションの状態、サブスクリプション GUID が含まれます。  一覧は CSV ファイルとしてエクスポートされ、Microsoft Excel で簡単に開いて、グラフ、ピボット、およびその他の成果物を作成することができます。
@@ -33,7 +33,7 @@ Visual Studio サブスクリプションの[管理ポータル](https://manage.
 > ![サブスクライバーのエクスポート](_img/exporting-subscriptions/exporting-subscriptions.png "[エクスポート] をクリックして、割り当てられているサブスクリプションの完全な一覧をダウンロードします。")
 
 ## <a name="resources"></a>リソース
-- [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)
+- [サブスクリプション サポート](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
