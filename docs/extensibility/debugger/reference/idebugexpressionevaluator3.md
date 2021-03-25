@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugExpressionEvaluator3 interface
 ms.assetid: c27c2a14-300b-4535-be22-767c83602f69
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3732e1262424fbe54de835848642f7ab1c78d7e9
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ab5264b888de6763d54f561bea5c9a7d34002b0a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152157"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077292"
 ---
 # <a name="idebugexpressionevaluator3"></a>IDebugExpressionEvaluator3
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ ms.locfileid: "102152157"
 
  パーサーツリーが拡張された式エバリュエーター (EE) を表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
@@ -40,7 +40,7 @@ IDebugExpressionEvaluator3 : IDebugExpressionEvaluator2
 |------------|-----------------|
 |[Parse2](../../../extensibility/debugger/reference/idebugexpressionevaluator3-parse2.md)|シンボルプロバイダーおよび評価フレームのアドレスを指定して、式文字列を解析済みの式に変換します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Ee
 
  名前空間: VisualStudio。

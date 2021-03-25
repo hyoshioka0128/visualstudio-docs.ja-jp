@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d6409b5e624cd8596e669f191b2644aaf27a88c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963498"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090929"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>XML コマンドテーブル (vsct) ファイルのデザイン
 XML コマンドテーブル (*vsct*) ファイルには、VSPackage のコマンド項目のレイアウトと外観が記述されています。 コマンド項目には、ボタン、コンボボックス、メニュー、ツールバー、およびコマンド項目のグループが含まれます。 この記事では、XML コマンドテーブルファイル、コマンド項目とメニューに対する影響、およびそれらの作成方法について説明します。
@@ -123,5 +123,5 @@ XML コマンドテーブル (*vsct*) ファイルには、VSPackage のコマ�
 
  **Createexpinstance/Reset** コマンドを使用して、ツールを実行します。 このツールは、通常インストールされていない、登録済みのすべての Vspackage を実験的なハイブから削除することに注意してください [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [メニューとコマンドを拡張する](../../extensibility/extending-menus-and-commands.md)

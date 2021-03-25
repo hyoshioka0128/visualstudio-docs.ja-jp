@@ -8,19 +8,19 @@ helpviewer_keywords:
 - debugging [Debugging SDK], threads
 - threading [Debugging SDK]
 ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec3c427e722739f17984866b8756d606ecb57813
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 168d29b8306ec58233f426b48c3ab0adfacb2bd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965461"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057846"
 ---
-# <a name="threads"></a>スレッド
+# <a name="threads"></a>Threads
 デバッガーアーキテクチャでは、 *スレッド* は次のようになります。
 
 - は計算の基本単位です。 スレッドは、単一の呼び出し履歴のコンテキスト内で命令を順番に実行し、1つのコードコンテキストから次のコンテキストに移動します。
@@ -29,7 +29,7 @@ ms.locfileid: "99965461"
 
 - は [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) インターフェイスによって表されます。通常は、プログラムを実行した結果として、デバッグエンジン (DE) または仮想マシンによって作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Programs](../../extensibility/debugger/programs.md)
 - [スタックフレーム](../../extensibility/debugger/stack-frames.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)

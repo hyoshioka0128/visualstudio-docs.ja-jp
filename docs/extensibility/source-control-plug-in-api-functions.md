@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c28c175d53fb37cf890dad4240a84fb132f6af35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927939"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090123"
 ---
 # <a name="source-control-plug-in-api-functions"></a>ソース管理プラグインの API 関数
 ソース管理プラグイン API には、次の関数が用意されています。これらの関数は、この API に従ってソース管理プラグインによって実装される必要があります。 各関数のシグネチャと、ビットフラグとその他のパラメーターに関連付けられているセマンティクスについては、このリファレンスで詳しく説明します。
 
 ## <a name="initialization-and-housekeeping-functions"></a>初期化関数とハウスキーピング関数
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|プロジェクトを閉じます。|
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|指定されたコマンドの詳細オプションをユーザーに表示します。|
@@ -36,7 +36,7 @@ ms.locfileid: "99927939"
 
 ## <a name="core-source-control-functions"></a>コアソース管理関数
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |[SccAdd](../extensibility/sccadd-function.md)|完全修飾パス名によって指定されたファイルの配列をソース管理システムに追加します。|
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|ソース管理システムに既に存在するファイルをユーザーが参照し、そのファイルを現在のプロジェクトの一部として使用できるようにします。|
@@ -58,7 +58,7 @@ ms.locfileid: "99927939"
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>追加機能をサポートする関数 (バージョン1.2 のソース管理プラグイン API)
  この関数のグループは、ソース管理プラグイン API のバージョン1.2 に含まれる追加機能を定義します。 これらは、より高度なソース管理機能へのアクセスを提供します。
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|バッチ操作を開始します。|
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|指定された名前のサブプロジェクトを既存の親プロジェクトの下に作成します。|
@@ -72,7 +72,7 @@ ms.locfileid: "99927939"
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>高度な機能をサポートする関数 (バージョン1.3 のソース管理プラグイン API)
  この関数のグループは、ソース管理プラグイン API のバージョン1.3 に含まれる追加機能を定義します。 これらは、より高度なソース管理機能へのアクセスを提供します。
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|ソース管理から現在のプロジェクトにファイルの一覧を追加します。|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|ユーザーインターフェイスを使用せずに、ソース管理からファイルのリストを取得します。|

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07e93db9ffe79c3c49072b3379def14a3be2852c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902957"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091007"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>既定のコマンド、グループ、およびツールバーの配置
 製品の統一性と安定性を確保するために、UI には特定のコマンドグループが既定で表示され、コマンド [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] とコマンドグループの定義が用意されています。 Vspackage では、標準のコマンドとコマンドグループを使用することもできます。
@@ -42,6 +42,6 @@ ms.locfileid: "99902957"
 
  エディターのツールバーは、IDE と製品ツールバーの下に配置する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDE で定義されているコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Vspackage のユーザーインターフェイス要素の追加方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 965bc201646c7e068c58f9238dccba9a9e587d26
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d4f3a37f6e664d7fe3278e3a7c3e088e1e9e4565
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224903"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058158"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 このメソッドは、現在の列挙体のコピーを別のオブジェクトとして返します。
@@ -47,8 +47,8 @@ int Clone(
 ## <a name="property-valuereturn-value"></a>プロパティ値/戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  列挙体のコピーは、このメソッドが呼び出されたときの元の状態と同じ状態になります。 ただし、コピーと元の状態は別々であり、個別に変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
