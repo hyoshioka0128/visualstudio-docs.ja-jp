@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba25698cd1efc6aebf030638e191f139a14f99a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6436d05d3b15be1c1fe8d7c7bb9c8592dee091dc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967294"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090279"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Windows インストーラー展開の拡張機能を準備する
 Windows インストーラーパッケージ (MSI) を使用して VSIX パッケージを配置することはできません。 ただし、MSI の展開用に VSIX パッケージのコンテンツを抽出することはできます。 このドキュメントでは、既定の出力がセットアッププロジェクトに含める VSIX パッケージであるプロジェクトを準備する方法について説明します。
@@ -56,6 +56,6 @@ Windows インストーラーパッケージ (MSI) を使用して VSIX パッ�
 
 5. 残りのファイルをセットアッププロジェクトに追加します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio インストーラーの配置](/previous-versions/2kt85ked(v=vs.120))
 - [チュートリアル: カスタム動作の作成](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

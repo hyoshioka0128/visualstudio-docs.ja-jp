@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da499ee9bbdcdff95456a4e4d5f5dc63f2acfb2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967398"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090253"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 これは、 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 関数に与えられたコールバック関数であり、ディレクトリのコレクションと (必要に応じて) ファイル名を更新して、ソース管理下にある場所を検索します。
@@ -58,10 +58,10 @@ typedef BOOL (*POPDIRLISTFUNC)(
 |SCC_I_OPERATIONCANCELED|処理を停止します。|
 |SCC_E_xxx|適切なソース管理エラーが発生すると、処理が停止します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  関数のパラメーターにフラグが含まれている場合、 `fOptions` `SccPopulateDirList` `SCC_PDL_INCLUDEFILES` リストにはファイル名とディレクトリ名が含まれている可能性があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [エラー コード](../extensibility/error-codes.md)

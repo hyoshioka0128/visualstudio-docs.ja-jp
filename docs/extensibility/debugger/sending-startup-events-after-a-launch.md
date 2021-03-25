@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 227d863df1e3318d2df6be6a24aaf05b5033e92d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960846"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070401"
 ---
 # <a name="send-startup-events-after-a-launch"></a>起動後にスタートアップイベントを送信する
 デバッグエンジン (DE) がプログラムにアタッチされると、一連のスタートアップイベントがデバッグセッションに返されます。
@@ -45,6 +45,6 @@ ms.locfileid: "99960846"
 
   コードが読み込まれ、実行の準備が整うと、コードが実行される前に、DE は SDM a [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) load complete イベントを送信します。 最後に、プログラムがまだ実行されていない場合、DE は [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) entry point イベントを送信し、プログラムがメインエントリポイントに到達し、デバッグの準備ができたことを通知します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [実行の制御](../../extensibility/debugger/control-of-execution.md)
 - [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

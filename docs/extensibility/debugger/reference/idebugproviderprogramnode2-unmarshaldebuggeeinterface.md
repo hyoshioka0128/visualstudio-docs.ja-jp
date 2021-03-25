@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 ms.assetid: 2e4653c5-10f1-493c-9973-f31d266c5d48
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f51484ae1e9acbb9b94fe546f8157145673e22f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 42b51d93f9c0cec3a2ee74b2dfc0f4621c608c07
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167868"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083688"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 プロセスの境界を越えて、指定されたインターフェイスを取得します。
@@ -52,8 +52,8 @@ int UnmarshalDebuggeeInterface(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドは、デバッグエンジンがプロセス空間で実行されて [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] おり、デバッグ中のプログラムが独自のプロセス空間で実行されている場合に使用されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

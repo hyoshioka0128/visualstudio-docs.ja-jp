@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75ea6485e2ae613ca03fb3900e3e2ba9d415af95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6aefb6b1670da812a36efcc1baa3cb23f23e2561
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852597"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064489"
 ---
 # <a name="project-priority"></a>プロジェクトの優先順位
 通常、プロジェクトアイテムは、ソリューション内の1つのプロジェクトのメンバーです。 そのため、IDE では、項目を開くために使用されるプロジェクトを簡単に判断できます。 ただし、1つの項目が複数のプロジェクトのメンバーである場合、IDE は優先度スキームを使用して、項目を開くのに最適なプロジェクトを決定します。
@@ -34,7 +34,7 @@ ms.locfileid: "99852597"
 
 - 最も高い優先順位を指定するプロジェクトには、ドキュメントを開くコンテキストが付与されます。 2つのプロジェクトが同じ優先順位値を返す場合、アクティブなプロジェクトが優先されます。 ソリューション内のプロジェクトがドキュメントを開くことができない場合、IDE はそのドキュメントを [その他のファイル] プロジェクトに配置します。 詳細については、「 [その他のファイルプロジェクト](../../extensibility/internals/miscellaneous-files-project.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [その他のファイル プロジェクト](../../extensibility/internals/miscellaneous-files-project.md)
 - [方法: 開いているドキュメントのエディターを開く](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [プロジェクト テンプレートとプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)

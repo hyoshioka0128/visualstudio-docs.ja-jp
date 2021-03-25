@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject interface
 ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cb90893ab39a95dd3bd8046d8ba61a32064ccf7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 88eadb33aaccc09a7c4667ad01d9acee538169f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165224"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076863"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102165224"
 
  このインターフェイスを使用すると、式エバリュエーター (EE) は、値クラスのインスタンス (など) でプロパティやメソッドを呼び出し `System.Decimal` たり、デバッグ中のプログラムで [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) を呼び出さずに値を設定したりできます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugManagedObject : IDebugObject
@@ -46,16 +46,16 @@ IDebugManagedObject : IDebugObject
 |[GetManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-getmanagedobject.md)|マネージコードオブジェクトを表し、適切なマネージコードインターフェイスを取得できるインターフェイスを返します。|
 |[SetFromManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject-setfrommanagedobject.md)|このオブジェクトの値を、指定したマネージコードオブジェクトの値に設定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  式エバリュエーターは、このインターフェイスを使用して、マネージコードオブジェクトを解析ツリーに格納します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

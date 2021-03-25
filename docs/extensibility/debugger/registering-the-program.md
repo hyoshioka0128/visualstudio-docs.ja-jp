@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8326bb2c3938ce76d777c73d0d0f24da145d8ef5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fda27bd0572713e16311e6feae8ff74870cb006
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961067"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070636"
 ---
 # <a name="register-the-program"></a>プログラムを登録する
 デバッグエンジンが [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) インターフェイスによって表されるポートを取得した後、デバッグ対象のプログラムを有効にするための次の手順として、そのポートをポートに登録します。 登録されると、プログラムは次のいずれかの方法でデバッグできるようになります。
@@ -106,6 +106,6 @@ ms.locfileid: "99961067"
 
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ポートを取得する](../../extensibility/debugger/getting-a-port.md)
 - [プログラムのデバッグを有効にする](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

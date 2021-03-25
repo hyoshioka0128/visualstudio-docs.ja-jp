@@ -8,17 +8,17 @@ helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce3bdaafef2c8d526892571e8f53d9060148df10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06213de552685e13be5569fd631fc780598954ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960989"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070441"
 ---
 # <a name="sample-implementation-of-changing-values"></a>値の変更の実装例
 > [!IMPORTANT]
@@ -422,6 +422,6 @@ HRESULT FieldSetValue(
 
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ローカルの値の変更](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

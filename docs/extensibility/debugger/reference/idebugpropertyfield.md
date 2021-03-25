@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField interface
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 097d73485773052afa1e9852293211084a225099
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 28fbdfc16733b5cce0d1442c98c624f694adbe1d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083779"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 このインターフェイスには、プロパティの取得と設定を可能にする関数が用意されています。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPropertyField : IDebugContainerField
@@ -43,16 +43,16 @@ IDebugPropertyField : IDebugContainerField
 |[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)|プロパティを取得するメソッドを取得します。|
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|プロパティを設定するメソッドを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  プロパティはマネージコードの概念であり、変数として扱われるメソッドを表します。 プロパティがアンマネージ C++ に存在しません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [シンボル プロバイダーのインターフェイス](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

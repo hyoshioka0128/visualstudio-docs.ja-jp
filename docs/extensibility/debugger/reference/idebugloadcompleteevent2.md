@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugLoadCompleteEvent2
 ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 430b112a0fff4a0bbd009c4e0eba7c055842f823
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 53351ca836658d55cdef1b793e0162b8573f6c6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165307"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076928"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 このインターフェイスは、プログラムが読み込まれるときに、コードが実行される前に、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugLoadCompleteEvent2 : IUnknown
@@ -35,14 +35,14 @@ IDebugLoadCompleteEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
  DE は、このイベントオブジェクトを作成して送信し、プログラムが正常に読み込まれたことを報告します。 イベントは、デバッグ対象のプログラムにアタッチされたときに SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - port suppliers, required interfaces
 - debugging [Debugging SDK], port suppliers
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930166d84e6203b0d1d62ef661e768f0f14e60f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f5755ce47a2b76c9a0d38b1f7eed3b38d64c876
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961054"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070610"
 ---
 # <a name="required-port-supplier-interfaces"></a>必要なポート供給業者インターフェイス
 ポートサプライヤーは、 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) インターフェイスを実装する必要があります。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -82,5 +82,5 @@ ms.locfileid: "99961054"
 
   SDM をこのプログラムにアタッチする方法を提供します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ポートサプライヤーの実装](../../extensibility/debugger/implementing-a-port-supplier.md)

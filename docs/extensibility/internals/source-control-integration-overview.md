@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f3b0ddf956c3f5c2ec2fe51163b52f2a7a973aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9feacd8e051b47b1fec6c3d3ad08e34e591fc57c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846427"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064320"
 ---
 # <a name="source-control-integration-overview"></a>ソース管理の統合の概要
 このセクションでは、Visual Studio ソース管理に統合する2つの方法を比較します。ソース管理のプラグインと、ソース管理ソリューションを提供し、新しいソース管理機能を強調する VSPackage。 Visual Studio では、ソース管理 Vspackage とソース管理プラグインを手動で切り替えることができ、ソリューションベースの自動切り替えも可能です。
@@ -75,7 +75,7 @@ ms.locfileid: "99846427"
 
 - VSPackage は、特定のソース管理モデルに限定されていません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理](../../extensibility/internals/source-control.md)
 - [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)
 - [ソース管理 VSPackage の作成](../../extensibility/internals/creating-a-source-control-vspackage.md)

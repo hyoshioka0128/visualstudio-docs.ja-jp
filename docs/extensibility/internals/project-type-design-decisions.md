@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project types, items
 - project types, design decisions
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b051abfede6ec90350878f669ed32e7e26b299
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f1a90082b0ba9d18336463b26cf72acea39851b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896748"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064310"
 ---
 # <a name="project-type-design-decisions"></a>プロジェクト タイプのデザインの方針
 新しいプロジェクトの種類を作成する前に、プロジェクトの種類に関するいくつかの設計上の決定を行う必要があります。 プロジェクトに含める項目の種類、プロジェクトファイルを永続化する方法、および使用するコミットメントモデルを決定する必要があります。
@@ -58,7 +58,7 @@ ms.locfileid: "99896748"
 
  トランザクションモードでデータオブジェクトを開くと、変更はメモリ内の一時的な場所に保存され、ユーザーが手動でファイルの保存を選択するまでコミットされません。 その時点で、すべての変更が同時に行われるか、変更は行われません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [プロジェクト項目のオープンと保存](../../extensibility/internals/opening-and-saving-project-items.md)
 - [プロジェクトの永続化](../../extensibility/internals/project-persistence.md)

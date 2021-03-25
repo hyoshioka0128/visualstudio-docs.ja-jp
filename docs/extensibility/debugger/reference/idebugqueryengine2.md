@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2 interface
 ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8e4cd9358cf63188ec88f4ec4a613aebf9d4f79
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 899c5dceab16d4783cb28bff31c67e67bf5df774
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151403"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083649"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) は、デバッグエンジン (DE) を表すインターフェイスを取得できます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugQueryEngine2 : IUnknown
@@ -42,17 +42,17 @@ IDebugQueryEngine2 : IUnknown
 |------------|-----------------|
 |[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|カスタムデバッグエンジン (DE) インターフェイスを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、通常、 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスを実装するオブジェクトに実装されます。これは、関数を使用した因果関係のステップ実行をサポートするためです。つまり、デバッガーが関数からステップアウトすると、次に実行される関数がスタック上の前の関数ではなく、別のスレッドの関数が完全になることがあります。 "因果関係" の定義については、「 [Visual Studio デバッガー用語集](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)」を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

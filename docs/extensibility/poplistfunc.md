@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPLISTFUNC callback function
 ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddf641cf309eb5b5352904da2ac07b64b0886f97
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aec322d73e49d4aae91956bd8df015a01c922a10
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967359"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090240"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 このコールバックは、IDE によって [SccPopulateList](../extensibility/sccpopulatelist-function.md) に提供され、ソース管理プラグインがファイルまたはディレクトリの一覧を更新するために使用します (関数にも指定されてい `SccPopulateList` ます)。
@@ -54,13 +54,13 @@ typedef BOOL (*POPLISTFUNC) (
 |`TRUE`|プラグインは、この関数の呼び出しを続行できます。|
 |`FALSE`|IDE 側で問題が発生しました (メモリ不足など)。 プラグインが動作を停止する必要があります。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ソース管理プラグインがファイルリストに追加または削除しようとしているファイルごとに、この関数を呼び出してを渡し `lpFileName` ます。 フラグは、 `fAddRemove` 一覧に追加する新しいファイルまたは削除する古いファイルを示します。 パラメーターは、 `nStatus` ファイルの状態を示します。 SCC プラグインがファイルの追加と削除を完了すると、 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 呼び出しから制御が戻ります。
 
 > [!NOTE]
 > `SCC_CAP_POPULATELIST`Visual Studio では、機能ビットが必要です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [ソース管理プラグイン](../extensibility/source-control-plug-ins.md)
 - [SccPopulateList](../extensibility/sccpopulatelist-function.md)

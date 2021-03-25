@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd787b88ae0e45de7afe944a79fdd0a788aa1449
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1aee107f518f0134e71f43f4a30d4ec7a5d8cccd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167933"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083818"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 プロパティを設定するメソッドを取得します。
@@ -47,10 +47,10 @@ int GetPropertySetter(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  プロパティを取得するメソッドを取得するには、 [Getpropertygetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) メソッドを呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)

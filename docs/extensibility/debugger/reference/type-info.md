@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0e6b37fbc4d2d812bfa10d8f05455050bb5a239d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b83c4a829a050b9e78b65a9a68be96d2397ea8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223421"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070740"
 ---
 # <a name="type_info"></a>TYPE_INFO
 この構造体は、フィールドの型に関するさまざまな種類の情報を指定します。
@@ -69,7 +69,7 @@ public struct TYPE_INFO {
  `unionmember`\
  [C# のみ]このをに基づいて適切な構造体型にマーシャリングし `dwKind` ます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この構造体は、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) メソッドに渡され、そこに格納されます。 構造体の内容がどのように解釈されるかは、フィールドに基づいて決まり `dwKind` ます。
 
 > [!NOTE]
@@ -107,14 +107,14 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

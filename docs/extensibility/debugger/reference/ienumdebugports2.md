@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b93aa34870d05b9a4ec0a9a0aa92f681735dfe3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 66598460a48c960b78cb89315fff6bd7ac9a845e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224461"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064593"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 このインターフェイスは、コンピューターまたはポートの供給元のポートを列挙します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugPorts2 : IUnknown
@@ -46,19 +46,19 @@ IEnumDebugPorts2 : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugports2-getcount.md)|列挙子内のポートの数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  Visual Studio は、このインターフェイスを使用して、プロセスへのアタッチに使用されるポートの一覧を作成します。
 
  通常、デバッグエンジンはこのインターフェイスを使用しません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

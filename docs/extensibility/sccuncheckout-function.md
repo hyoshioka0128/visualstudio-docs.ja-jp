@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221354"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090162"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 関数
 この関数は、前のチェックアウト操作を元に戻します。これにより、選択したファイルの内容がチェックアウト前の状態に復元されます。 チェックアウト後にファイルに加えられたすべての変更は失われます。
@@ -64,7 +64,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|チェックアウトが正常に取り消されました。|
 |SCC_E_FILENOTCONTROLLED|選択したファイルはソースコード管理されていません。|
@@ -75,8 +75,8 @@ SCCRTN SccUncheckout (
 |SCC_E_PROJNOTOPEN|プロジェクトがソース管理から開かれていません。|
 |SCC_I_OPERATIONCANCELED|操作は完了前に取り消されました。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この操作の後、 `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` undo チェックアウトが実行されたファイルに対して、フラグとフラグの両方がクリアされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

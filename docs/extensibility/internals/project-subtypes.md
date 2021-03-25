@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00d44014ced9253328890c34d877beb68120c0c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1695bc79e38c7a9ebbda7736e57116123343f30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896792"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064333"
 ---
 # <a name="project-subtypes"></a>プロジェクト サブタイプ
 プロジェクトのサブタイプを使用すると、のプロジェクトシステムの動作をカスタマイズまたはフレーバーでき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 カスタマイズには、プロジェクトファイルへの追加データの保存、[ **新しい項目の追加** ] ダイアログボックスでの項目の追加またはフィルター処理、アセンブリのデバッグと配置の方法の制御、および [プロジェクト **プロパティページ** ] ダイアログボックスの拡張が含まれます。 Vspackage は、COM 集計を使用してプロジェクトのサブタイプを実装します。
