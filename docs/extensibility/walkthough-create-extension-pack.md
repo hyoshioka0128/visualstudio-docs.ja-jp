@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: c959660b920abc18be70b228fa6b40de1ab585f8
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 57b447be3ee411b737c1aea5b0a4be5ef966c8c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037661"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062149"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>チュートリアル: 拡張機能パックを作成する
 
@@ -35,7 +35,7 @@ Visual studio 2015 以降では、visual studio SDK は visual studio セット�
 
 1. [ **新しいプロジェクト** ] ダイアログで、"vsix" を検索し、[ **vsix プロジェクト**] を選択します。 [ **プロジェクト名**] に「Test Extension Pack」と入力します。 **［作成］** を選択します
 
-2. **ソリューションエクスプローラー**で、プロジェクトノードを右クリックし、[新しい項目の**追加**] を選択し  >  **New Item**ます。 Visual C# の **機能拡張** ノードにアクセスし、[ **拡張機能パック**] を選択します。 既定のファイル名 (ExtensionPack1.cs) をそのまま使用します。
+2. **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 Visual C# の **機能拡張** ノードにアクセスし、[ **拡張機能パック**] を選択します。 既定のファイル名 (ExtensionPack1) をそのまま使用します。
 
 3. 次のコードを含む ExtensionPack1 vsext ファイルが追加されます。
 

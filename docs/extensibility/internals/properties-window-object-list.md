@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ffc64876e015ba2139022698576e04b12625e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 489ea25e0b06ab69650d4b48a306483945b34598
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945644"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060979"
 ---
 # <a name="properties-window-object-list"></a>プロパティ ウィンドウのオブジェクト一覧
 [ **プロパティ** ] ウィンドウの [オブジェクト] ボックスの一覧では、選択範囲を、選択した1つまたは複数のウィンドウ内で使用可能な他のオブジェクトに変更できます。 この一覧内から別のオブジェクトを選択すると、への呼び出しがトリガーされ <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 、新しいオブジェクトが選択されたことが環境に通知されます。 次に、[ **プロパティ** ] ウィンドウに表示される情報が変更され、新しく選択されたオブジェクトに関連付けられたプロパティが表示されます。
@@ -31,5 +31,5 @@ ms.locfileid: "99945644"
 
  COM オブジェクトがを実装していない場合、[ <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo> **プロパティ** ] ウィンドウには、一覧の左側のオブジェクト名の代わりにインターフェイス名が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)

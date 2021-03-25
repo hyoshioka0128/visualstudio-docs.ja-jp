@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4e4c551c516b78ababb2400f7cfbd699ab06627
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6c897801b98857f4a310323d4e00583c98245d5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932593"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078878"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>方法: ライブラリ内のシンボルを識別する
 シンボル参照ツールは、シンボルの階層ビューを表示します。 シンボルは、名前空間、オブジェクト、クラス、クラスメンバー、およびその他の言語要素を表します。
@@ -81,7 +81,7 @@ N1
 
      オブジェクトマネージャーは、このメソッドを呼び出して、シンボルのプレゼンテーションパスに含まれるノードの一覧を取得します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [方法: オブジェクトマネージャーにライブラリを登録する](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [方法: ライブラリによって提供されるシンボルのリストをオブジェクトマネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85b31996a7a0636f136e43531e69fe25c6d87d8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946762"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061291"
 ---
 # <a name="elements-of-a-project-model"></a>プロジェクトモデルの要素
 のすべてのプロジェクトのインターフェイスと実装は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 基本構造を共有します。プロジェクトの種類のプロジェクトモデルです。 開発中の VSPackage であるプロジェクトモデルでは、設計上の決定に準拠したオブジェクトを作成し、IDE によって提供されるグローバル機能と連携します。 たとえば、プロジェクト項目を永続化する方法を制御しますが、ファイルを永続化する必要があるという通知は制御しません。 開いているプロジェクト項目にフォーカスを移動し、メニューバーの [**ファイル**] メニューの [**保存**] を選択した場合 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、プロジェクトの種類のコードは ide からコマンドをインターセプトし、ファイルを永続化して、ファイルが変更されていないことを ide に通知を送信する必要があります。
@@ -42,7 +42,7 @@ ms.locfileid: "99946762"
 
   プロジェクトはコマンドをサポートできます。したがって、コマンド <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> コンテキスト guid を使用してコマンドルーティングに参加するには、インターフェイスを実装する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チェックリスト: 新しいプロジェクトの種類を作成する](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [HierUtil7 プロジェクトクラスを使用してプロジェクトの種類を実装する (C++)](/previous-versions/bb166212(v=vs.100))
 - [プロジェクトモデルコアコンポーネント](../../extensibility/internals/project-model-core-components.md)

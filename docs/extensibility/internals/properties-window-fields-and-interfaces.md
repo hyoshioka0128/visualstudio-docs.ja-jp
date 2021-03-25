@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f445d31fe995321ad6ec334a5b6eb93570b8875
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970011"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061031"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>プロパティ ウィンドウのフィールドとインターフェイス
 [ **プロパティ** ] ウィンドウに表示される情報を決定するために選択するモデルは、IDE にフォーカスがあるウィンドウに基づいています。 すべてのウィンドウおよび選択したウィンドウ内のオブジェクトは、選択コンテキストオブジェクトをグローバル選択コンテキストにプッシュできます。 環境では、ウィンドウにフォーカスがあるときに、ウィンドウフレームの値を使用してグローバル選択コンテキストを更新します。 フォーカスが変更されると、選択コンテキストが変わります。
@@ -116,6 +116,6 @@ STDAPI DLLGetDocumentation
 
  別の方法でプロパティのローカライズされた名前と説明の取得には、<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A> を実装します。 このメソッドの実装に関する詳細については、「 [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadId
 ms.assetid: db8b1c07-6b86-47f9-b292-bac19c276d36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 95dd724310b3aae6e2266d9d18a3846bc9efccf7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 39702dad7ad154e2922f217f36c13a47588cb06d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164553"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053036"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 システムスレッド識別子を取得します。
@@ -47,7 +47,7 @@ int GetThreadId (
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 スレッド ID は、プロセス内の他のすべてのスレッド間でスレッドを識別するために使用されます。
 
 ## <a name="example"></a>例
@@ -60,5 +60,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

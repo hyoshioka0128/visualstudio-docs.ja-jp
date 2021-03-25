@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f92aa921c7bb78511ed685d846e288518258fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2617050ff26536df5a94d0cb51fe74d37a55725
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946827"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061343"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>[ファイルを開く] コマンドを使用してファイルを表示する
 次の手順では、IDE で [ **ファイルを開く** ] コマンドを処理する方法について説明します。これは、の [ **ファイル** ] メニューで使用でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 この手順では、このコマンドからの呼び出しにプロジェクトが応答する方法についても説明します。
@@ -53,7 +53,7 @@ ms.locfileid: "99946827"
 
 5. プロジェクトには、プロジェクト固有のエディターまたは標準エディターを使用してファイルを開くオプションがあります。 詳細については、「 [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md) 」および「 [方法: 標準エディターを開く](../../extensibility/how-to-open-standard-editors.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [[ファイルを開くアプリケーションの表示] コマンドを使用してファイルを表示する](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [プロジェクト項目を開いて保存する](../../extensibility/internals/opening-and-saving-project-items.md)
 - [方法: プロジェクト固有のエディターを開く](../../extensibility/how-to-open-project-specific-editors.md)

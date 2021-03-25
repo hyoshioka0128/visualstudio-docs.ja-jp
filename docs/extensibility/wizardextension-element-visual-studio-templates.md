@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a542150b1f06fd0571fc55d85785cfea870cb406
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c32f9f2050e04741a2612de30e2718f45c0603de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971558"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061811"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 要素 (Visual Studio テンプレート)
 テンプレートウィザードをカスタマイズするための登録要素が含まれています。
@@ -56,7 +56,7 @@ ms.locfileid: "99971558"
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|プロジェクトテンプレート、項目テンプレート、またはスタートキットのすべてのメタデータが含まれます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `WizardExtension` は、`VSTemplate` の子要素で、省略可能な要素です。
 
 ## <a name="example"></a>例
@@ -90,7 +90,7 @@ ms.locfileid: "99971558"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [方法 : プロジェクト テンプレートを組み合わせたウィザードを使用する](../extensibility/how-to-use-wizards-with-project-templates.md)

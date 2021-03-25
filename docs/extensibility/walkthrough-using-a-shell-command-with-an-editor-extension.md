@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f36d141c75b43dfaf90960261e40c4a619069802
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888915"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061993"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェルコマンドを使用する
 VSPackage から、メニューコマンドなどの機能をエディターに追加できます。 このチュートリアルでは、メニューコマンドを呼び出して、エディターのテキストビューに表示要素を追加する方法について説明します。
@@ -614,7 +614,7 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
     - VisualStudio (Microsoft. UI)
 
-2. *AddAdornment.cs* ファイルを開き、次のディレクティブを追加し `using` ます。
+2. *Addadornment .cs* ファイルを開き、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;
@@ -693,5 +693,5 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
      4スコア...
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

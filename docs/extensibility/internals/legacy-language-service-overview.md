@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], about language services
 ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5226f9a3464786f85ad9d5348226e82e070cf57e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 236fc2a2923ffd0829f74ab56a119ff81b29cd7f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061174"
 ---
 # <a name="legacy-language-service-overview"></a>従来の言語サービスの概要
 言語サービスでは、特定の機能を実装できるエディターのサポートが提供され [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 Managed Package Framework (MPF) 言語サービスクラスは、頻繁に使用される機能とその他の機能の部分的なサポートを完全にサポートしています。
@@ -91,6 +91,6 @@ ms.locfileid: "99839587"
 
 - [従来の言語サービスでのブレークポイントの検証](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)

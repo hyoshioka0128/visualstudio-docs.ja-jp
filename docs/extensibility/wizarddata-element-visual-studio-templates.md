@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WizardData element [Visual Studio Templates]
 - <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6839a4ac8e53ec70fc88d23525985e8d1b7cccd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd7b85433b4e02491852589d32eea9a4f223da14
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904518"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061889"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 要素 (Visual Studio テンプレート)
 
@@ -65,7 +65,7 @@ ms.locfileid: "99904518"
 
 このテキストは、 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 要素で指定されたカスタムウィザード拡張機能に渡すカスタム XML を指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この要素には、任意の XML を指定できます。 XML は、カスタムウィザード拡張機能にパラメーターとして渡されます。これにより、拡張機能はこの要素の内容を使用できるようになります。 このデータに対する検証は行われません。
 
@@ -106,7 +106,7 @@ ms.locfileid: "99904518"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

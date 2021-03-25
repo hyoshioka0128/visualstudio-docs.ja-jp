@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925831"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062500"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio テンプレートマニフェストスキーマリファレンス
 このスキーマは、Visual Studio プロジェクトまたは項目テンプレートに対して生成される Visual Studio テンプレートマニフェスト (*vstman*) ファイルの形式を記述します。 また、このスキーマでは、テンプレートに関する場所やその他の関連情報についても説明します。
@@ -32,7 +32,7 @@ ms.locfileid: "99925831"
 
 - **Version**: テンプレートマニフェストのバージョンを表す文字列。 必須。
 
-- **Locale**: テンプレートマニフェストのロケールまたはロケールを表す文字列。 ロケール値はすべてのテンプレートに適用されます。 ロケールごとに個別のマニフェストを使用する必要があります。 任意。
+- **Locale**: テンプレートマニフェストのロケールまたはロケールを表す文字列。 ロケール値はすべてのテンプレートに適用されます。 ロケールごとに個別のマニフェストを使用する必要があります。 省略可能。
 
 ### <a name="child-elements"></a>子要素
 
@@ -70,11 +70,11 @@ ms.locfileid: "99925831"
 
 - **RelativePath**: テンプレートのパス。 パスごとに1つのエントリしか存在できないため、最初のエントリはすべてのマニフェストに対して優先されます。
 
-- **LocalizedName**: ローカライズされた名前を指定する **namedescriptionicon** 要素。 任意。
+- **LocalizedName**: ローカライズされた名前を指定する **namedescriptionicon** 要素。 省略可能。
 
-- **順序** 付け: 並べ替え順序を指定する文字列。 任意。
+- **順序** 付け: 並べ替え順序を指定する文字列。 省略可能。
 
-- **ParentFolderOverrideName**: 親フォルダーのオーバーライドされた名前。 任意。 この要素には **name 属性が** あり、これは名前を指定する文字列値です。
+- **ParentFolderOverrideName**: 親フォルダーのオーバーライドされた名前。 省略可能。 この要素には **name 属性が** あり、これは名前を指定する文字列値です。
 
 ### <a name="parent-element"></a>親要素
  **VSTemplateManifest**
@@ -84,9 +84,9 @@ ms.locfileid: "99925831"
 
 ### <a name="attributes"></a>属性
 
-- **Package**: パッケージを示す文字列値です。 任意。
+- **Package**: パッケージを示す文字列値です。 省略可能。
 
-- **Id**: id を指定する文字列値。 任意。
+- **Id**: id を指定する文字列値。 省略可能。
 
 ### <a name="child-elements"></a>子要素
  なし。

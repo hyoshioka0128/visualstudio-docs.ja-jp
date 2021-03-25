@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88eacbdbcc50dc843769cdcf4701ba1a2bfe895a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970024"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061070"
 ---
 # <a name="properties-window-buttons"></a>プロパティ ウィンドウのボタン
 開発言語と製品の種類によっては、[ **プロパティ** ] ウィンドウのツールバーに、既定で特定のボタンが表示されます。 どのような場合でも、[ **分類** 済み]、[ **アルファベット**]、[ **プロパティ**]、[ **プロパティページ** ] の各ボタンが表示されます。 Visual C# と Visual Basic では、[ **イベント** ] ボタンも表示されます。 特定の Visual C++ プロジェクトでは、[ **vc + + メッセージ** ] ボタンと [ **vc 上書き** ] ボタンが表示されます。 他のプロジェクトの種類では、追加のボタンが表示される場合があります。 [ **プロパティ** ] ウィンドウのボタンの詳細については、「 [プロパティウィンドウ](../../ide/reference/properties-window.md)」を参照してください。
@@ -38,5 +38,5 @@ ms.locfileid: "99970024"
 > [!NOTE]
 > アンマネージコードを使用して、[ **プロパティ** ] ウィンドウにツールバーボタンを追加することはできません。 ツールバーボタンを追加するには、から派生するマネージオブジェクトを作成する必要があり <xref:System.Windows.Forms.Design.PropertyTab> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d40ca34ea8d579e85ee56170f621b98a10b89f2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886991"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069635"
 ---
 # <a name="feedback-to-the-user"></a>ユーザーへのフィードバック
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、使用可能な機能に関するビジュアルフィードバックは、ユーザーの現在の選択とグローバル選択コンテキストに基づいています。 次の表に、さまざまな選択コンテキストで使用できる機能を示します。
@@ -59,7 +59,7 @@ ms.locfileid: "99886991"
 
 - [アクティブな階層] ウィンドウ (通常は **ソリューションエクスプローラー**) で、現在のコンテキストを反映するようにタイトルバーが更新され、コンテキスト依存の [ **プロジェクト** ] メニューコマンドがアクティブな Web アプリケーションプロジェクトに適用されるようになりました。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDE での選択と通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [選択コンテキストオブジェクト](../../extensibility/internals/selection-context-objects.md)
 - [階層と選択](../../extensibility/internals/hierarchies-and-selection.md)

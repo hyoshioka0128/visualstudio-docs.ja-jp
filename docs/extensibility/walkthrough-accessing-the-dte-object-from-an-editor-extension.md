@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7228165d49c7f11c15d12086933c473699ef6bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7035842f608428f149dd2c0965b4792afa25db67
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905586"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062071"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>チュートリアル: エディター拡張機能から DTE オブジェクトにアクセスする
 
@@ -40,7 +40,7 @@ Vspackage では、dte <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>
     - Microsoft. VisualStudio
     - VisualStudio (変更不可)
 
-3. *DTETestProvider.cs* ファイルで、次のディレクティブを追加し `using` ます。
+3. *Dtetestprovider .cs* ファイルで、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using EnvDTE;
@@ -70,7 +70,7 @@ Vspackage では、dte <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>
    - EnvDTE
    - Microsoft. VisualStudio
 
-3. *DTETestProvider.cs* ファイルで、次のディレクティブを追加し `using` ます。
+3. *Dtetestprovider .cs* ファイルで、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using EnvDTE;
@@ -92,7 +92,7 @@ Vspackage では、dte <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>
 
 ::: moniker-end
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)
 - [DTE を使って Visual Studio を起動する](launch-visual-studio-dte.md)

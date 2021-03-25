@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a33d393cfd904bdae890f4ead9a4c25a6451460
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f378200072df603817a445a9c3406cf62233c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837295"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061005"
 ---
 # <a name="properties-window-overview"></a>プロパティ ウィンドウの概要
 [ **プロパティ** ] ウィンドウは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 統合開発環境 (IDE: integrated development environment) で使用できる2つの主要な種類のウィンドウで選択されたオブジェクトのプロパティを表示するために使用されます。 この2種類のウィンドウは次のとおりです。
@@ -50,6 +50,6 @@ ms.locfileid: "99837295"
 
  の詳細については `IDispatch` 、MSDN ライブラリを参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)
 - [プロパティ ウィンドウのフィールドとインターフェイス](../../extensibility/internals/properties-window-fields-and-interfaces.md)
