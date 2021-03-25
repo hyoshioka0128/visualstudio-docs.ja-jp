@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTIES structure
 ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 186d9b0cd4f9ee3a822a528ab16788902d9ff1af
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0707cb5da4c63ffd686f22fa691c103c954478c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225263"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070857"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 スレッドのプロパティについて説明します。
@@ -74,17 +74,17 @@ public struct THREADPROPERTIES {
  `bstrLocation`\
  スレッドの場所 (通常は最上位のスタックフレーム)。通常は、実行が現在停止しているメソッドの名前として表されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この構造体は、 [Getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) メソッドの呼び出しによって格納されます。 返される情報は、通常、[ **スレッド** ] ウィンドウの設定に使用されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

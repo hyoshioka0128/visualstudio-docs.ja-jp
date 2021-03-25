@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47991a3d1140893c4695e4edb7b76b808ab2917a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e02493cbb2f872806ade33d77609d45d1938ccd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907729"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057313"
 ---
 # <a name="command-routing-algorithm"></a>コマンドルーティングアルゴリズム
 Visual Studio のコマンドは、さまざまなコンポーネントによって処理されます。 コマンドは、現在の選択内容に基づいて最も内側のコンテキストから最も外側のコンテキスト (グローバルとも呼ばれます) にルーティングされます。 詳細については、「 [コマンドの可用性](../../extensibility/internals/command-availability.md)」を参照してください。
@@ -44,5 +44,5 @@ Visual Studio のコマンドは、さまざまなコンポーネントによっ
 
 8. グローバル: コマンドが前に説明したコンテキストによって処理されていない場合、Visual Studio は、インターフェイスを実装するコマンドを所有する VSPackage へのルーティングを試み <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 VSPackage がまだ読み込まれていない場合は、Visual Studio がメソッドを呼び出すと読み込まれません <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 。 VSPackage は、メソッドが呼び出されたときにのみ読み込まれ <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コマンドのデザイン](../../extensibility/internals/command-design.md)

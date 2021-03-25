@@ -10,17 +10,17 @@ helpviewer_keywords:
 - project types, determining which editor opens a file
 - persistence, determining which editor opens a file
 ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48d642c8a3b7883507c06453c0025badc299ce75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb6f142ea25748f6798fb60d7c03862c51819349
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963420"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090864"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>プロジェクト内のファイルを開くエディターを決定する
 ユーザーがプロジェクト内のファイルを開くと、環境はポーリングプロセスを実行し、最終的にそのファイルの適切なエディターまたはデザイナーを開きます。 環境で採用されている最初の手順は、標準エディターとカスタムエディターの両方で同じです。 この環境では、ファイルを開くために使用するエディターをポーリングするときに、さまざまな条件を使用します。 VSPackage は、この処理中に環境を調整する必要があります。

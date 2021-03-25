@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_POSITION structure
 ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7793870c91279b219a450463c921339b76565a62
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1b99b5dcede7f0e40e0ff77d1e3f7f64b5943c18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221848"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070896"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 指定されたテキスト内の行と列の位置を記述します。
@@ -50,7 +50,7 @@ public struct TEXT_POSITION {
 `dwColumn`\
 直線への文字オフセット。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この構造体は、 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) と [disassemblydata](../../../extensibility/debugger/reference/disassemblydata.md) 構造体で使用されます。
 
@@ -76,7 +76,7 @@ public struct TEXT_POSITION {
 
 - [onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
  ヘッダー: msdbg. h
 
@@ -84,7 +84,7 @@ public struct TEXT_POSITION {
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
