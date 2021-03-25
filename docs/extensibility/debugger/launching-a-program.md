@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a21036d3a9661306d1efff5a66ae47f8f7404209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945917"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094719"
 ---
 # <a name="launch-a-program"></a>プログラムを起動する
 プログラムをデバッグするユーザーは、 **F5** キーを押して、IDE からデバッガーを実行できます。 これにより、次のように、最終的に IDE がデバッグエンジン (DE) に接続されるか、またはアタッチされてからプログラムに接続されるようになる一連のイベントが開始されます。
@@ -27,7 +27,7 @@ ms.locfileid: "99945917"
 
 2. DE が指定されている場合、DE はオペレーティングシステムを呼び出してプログラムを起動します。 プログラムを起動した結果として、プログラムの実行時環境が読み込まれます。 たとえば、プログラムが MSIL で記述されている場合、プログラムを実行するために共通言語ランタイムが呼び出されます。
 
-    \- または -
+    または
 
     DE が指定されていない場合、ポートはオペレーティングシステムを呼び出してプログラムを起動します。これにより、プログラムの実行時環境が読み込まれます。
 

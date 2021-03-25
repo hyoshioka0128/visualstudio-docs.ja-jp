@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0566453d5ce34f829f43fab465b4310942e44e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 17eafb8f974c193fd4796cd246bf7e0a1abe929a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165840"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075706"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 このインターフェイスは、関数のステップアウト後に、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugReturnValueEvent2 : IUnknown
@@ -42,16 +42,16 @@ IDebugReturnValueEvent2 : IUnknown
 |------------|-----------------|
 |[GetReturnValue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)|関数のステップアウトで返される値を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  関数によって返される値は、 [Getreturnvalue](../../../extensibility/debugger/reference/idebugreturnvalueevent2-getreturnvalue.md)値を呼び出すことによって取得できます。 返された値は、[ **自動変数** ] ウィンドウに表示されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

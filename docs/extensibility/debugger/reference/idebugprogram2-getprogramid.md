@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetProgramId
 ms.assetid: 2c31c0aa-2b71-46c7-849c-356e237d26f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45721d4214c396f3366bd23c2bc48e74a1427ec8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ad0b5c8af1723414e6805e362312f167f995fbe4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168964"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084507"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 このプログラムの GUID を取得します。
@@ -47,10 +47,10 @@ int GetProgramId(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  デバッグエンジン (DE) は、最初に [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) メソッドまたは [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドに渡されたプログラム id を返す必要があります。 これにより、デバッガーコンポーネント間でプログラムを識別できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
 - [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)

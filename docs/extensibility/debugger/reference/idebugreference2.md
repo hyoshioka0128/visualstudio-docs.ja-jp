@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04d9795388b2a079d0eb7ac1d787bf92de6cdff4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f6b1c30b2da2862e17a1ebf16cc41008341127c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165853"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075758"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 このインターフェイスは、スタックフレームプロパティまたはその他のプロパティへの参照を表します。
@@ -26,7 +26,7 @@ ms.locfileid: "102165853"
 > [!NOTE]
 > `IDebugReference2` 将来使用するために予約されており、すべてのメソッドがを返す必要があり `E_NOTIMPL` ます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugReference2 : IUnknown
@@ -55,7 +55,7 @@ IDebugReference2 : IUnknown
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|この参照型を設定します。|
 |[比較](../../../extensibility/debugger/reference/idebugreference2-compare.md)|この参照と別の参照を比較します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 > [!NOTE]
 > この "property" の使用は、クラスのメンバー変数と混同しないようにしてください。ただし、は、この `IDebugReference2` ようなエンティティを表すことができます。
@@ -66,14 +66,14 @@ IDebugReference2 : IUnknown
 
  インターフェイスは、 `IDebugProperty2` 名前、型、およびアドレスを持つ値と考えることができます。 一方、は、 `IDebugReference2` 型とアドレスとして考えることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMessageEvent2 interface
 ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c84bf93a50ce9a5e530ebb7143d7b1c69f50360
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5593e822b974ddb7c666f622192e3e4630b7222
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172274"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058431"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 このインターフェイスは、ユーザーからの応答を必要とするメッセージを Visual Studio に送信するために、デバッグエンジン (DE) によって使用されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugMessageEvent2 : IUnknown
@@ -45,21 +45,21 @@ IDebugMessageEvent2 : IUnknown
 |[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)|表示されるメッセージを取得します。|
 |[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)|メッセージボックスから応答 (存在する場合) を設定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  DE は、特定のメッセージに対してユーザーからの特定の応答が必要な場合に、このインターフェイスを使用します。 たとえば、プログラムにリモートでアタッチしようとした後に "アクセスが拒否されました" というメッセージが表示されない場合、DE は、 `IDebugMessageEvent2` メッセージボックスのスタイルを持つイベントでこの特定のメッセージを Visual Studio に送信し `MB_RETRYCANCEL` ます。 これにより、ユーザーはアタッチ操作を再試行またはキャンセルできます。
 
  DE は、Win32 関数の規則に従うことによって、このメッセージを処理する方法を指定し `MessageBox` ます (詳細については、「 [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) 」を参照してください)。
 
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)インターフェイスを使用して、ユーザーからの応答を必要としないメッセージを Visual Studio に送信します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

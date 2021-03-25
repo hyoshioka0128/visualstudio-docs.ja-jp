@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], launching the debugger
 - debugger [Debugging SDK], launching
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9f8bc85672fc89205ab25fa9954e1c28e10f859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67764a7f59c1b44e7e8cbc7a81befb120c541461
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926385"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094667"
 ---
 # <a name="launch-the-debugger"></a>デバッガーを起動します
 デバッガーを起動するには、適切な属性を使用してメソッドとイベントの正しいシーケンスを送信する必要があります。
@@ -33,7 +33,7 @@ ms.locfileid: "99926385"
 
      が `S_FALSE` を返した場合、デバッグエンジン (DE) は仮想マシンのプロセスで読み込まれます。
 
-     \- または -
+     または
 
      が `S_OK` を返した場合、DE は SDM のインプロセスで読み込まれます。 その後、SDM は次のタスクを実行します。
 
@@ -53,6 +53,6 @@ ms.locfileid: "99926385"
 
 8. DE は、属性を使用して [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) を SDM に送信し `EVENT_SYNC` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)
 - [プログラムの起動](../../extensibility/debugger/launching-a-program.md)

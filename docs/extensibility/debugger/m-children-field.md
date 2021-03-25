@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_children field, ContingentProperties class [.NET Framework debug engines]
 ms.assetid: 0a3b5653-7bc0-4a7a-8963-9020bc52b9cb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5aaf29d76a7bbd81a416c86360f315bc5c09b76c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 90394afd982f22977d3d3ed74850032bfb5634c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158870"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094693"
 ---
 # <a name="m_children-field"></a>m_children フィールド
 このタスクに登録されている子タスクの一覧。
@@ -38,5 +38,5 @@ ms.locfileid: "102158870"
 
  タスクが完了している場合は、他のスレッドがこのフィールドに何も追加していない限り、または削除しない限り、このフィールドにアクセスできます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ContingentProperties クラス](../../extensibility/debugger/contingentproperties-class-internal-members.md)
