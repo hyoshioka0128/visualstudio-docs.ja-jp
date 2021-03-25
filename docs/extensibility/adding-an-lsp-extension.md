@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: accf054cbf0b58066568124a3f35e064ce3cba78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939293"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094992"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>言語サーバー プロトコルの拡張機能の追加
 
@@ -47,48 +47,48 @@ Visual Studio での LSP とそのサポートの目的は、Visual Studio 製�
 
 Message | Visual Studio でのサポートがある
 --- | ---
-initialize | yes
-初期化済み | yes
-shutdown | yes
-exit | yes
-$/cancelrequest | yes
-window/showMessage | yes
-window/showMessageRequest | yes
-window/logMessage | yes
+initialize | はい
+初期化済み | はい
+shutdown | はい
+exit | はい
+$/cancelrequest | はい
+window/showMessage | はい
+window/showMessageRequest | はい
+window/logMessage | はい
 テレメトリ/イベント |
 クライアント/registerCapability |
 クライアント/unregisterCapability |
-ワークスペース/didChangeConfiguration | yes
-ワークスペース/didChangeWatchedFiles | yes
-ワークスペース/シンボル | yes
-ワークスペース/executeCommand | yes
-ワークスペース/applyEdit | yes
-textDocument/publishDiagnostics | yes
-textDocument/didOpen | yes
-textDocument/didChange | yes
+ワークスペース/didChangeConfiguration | はい
+ワークスペース/didChangeWatchedFiles | はい
+ワークスペース/シンボル | はい
+ワークスペース/executeCommand | はい
+ワークスペース/applyEdit | はい
+textDocument/publishDiagnostics | はい
+textDocument/didOpen | はい
+textDocument/didChange | はい
 textDocument/保存 |
 textDocument/は、 |
-textDocument/didSave | yes
-textDocument/didClose | yes
-textDocument/補完機能 | yes
-完了/解決 | yes
-textDocument/ホバー | yes
-textDocument/signatureHelp | yes
-textDocument/references | yes
-textDocument/documentHighlight | yes
-textDocument/documentSymbol | yes
-textDocument/書式設定 | yes
-textDocument/rangeFormatting 設定 | yes
+textDocument/didSave | はい
+textDocument/didClose | はい
+textDocument/補完機能 | はい
+完了/解決 | はい
+textDocument/ホバー | はい
+textDocument/signatureHelp | はい
+textDocument/references | はい
+textDocument/documentHighlight | はい
+textDocument/documentSymbol | はい
+textDocument/書式設定 | はい
+textDocument/rangeFormatting 設定 | はい
 textDocument/onTypeFormatting 設定 |
-textDocument/定義 | yes
-textDocument/codeAction | yes
+textDocument/定義 | はい
+textDocument/codeAction | はい
 textDocument/codeLens |
 codeLens/解決 |
 textDocument/documentLink |
 documentLink/解決 |
-textDocument/名前の変更 | yes
+textDocument/名前の変更 | はい
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>はじめに
 
 > [!NOTE]
 > Visual Studio 2017 バージョン15.8 以降では、共通言語サーバープロトコルのサポートが Visual Studio に組み込まれています。 プレビュー [言語サーバークライアントの VSIX](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview) バージョンを使用して LSP 拡張機能をビルドした場合、バージョン15.8 以降にアップグレードすると、その拡張機能が動作しなくなります。 LSP 拡張機能を再び動作させるには、次の手順を実行する必要があります。
@@ -482,7 +482,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 Visual Studio で LSP クライアント API を使用してサンプル拡張機能のソースコードを表示するには、「VSSDK-拡張性-サンプル [LSP サンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol)」を参照してください。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よく寄せられる質問
 
 **LSP 言語サーバーを補完して Visual Studio で豊富な機能サポートを提供するカスタムプロジェクトシステムを構築したいと思います。**
 
@@ -500,6 +500,6 @@ Visual Studio での LSP ベースの言語サーバーのサポートは、 [�
 
 Marketplace の手順については、 [こちら](walkthrough-publishing-a-visual-studio-extension.md)を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio エディターの他の言語のサポートの追加](../ide/adding-visual-studio-editor-support-for-other-languages.md)

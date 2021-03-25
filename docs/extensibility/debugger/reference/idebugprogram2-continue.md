@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f10d9266e8562d7ba1afed45b4b054f306bfbca
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 60f3cb4764a53d359e971020df8261d064c62e81
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164722"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076122"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 このプログラムの実行を停止状態から続行します。 前の実行状態 (ステップなど) はすべて保持され、プログラムは再度実行を開始します。
@@ -49,12 +49,12 @@ int Continue(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドは、デバッグされているプログラムの数や、停止イベントを生成したプログラムに関係なく、このプログラムで呼び出されます。 の実装では、前の実行状態 (ステップなど) を保持し、以前の実行を完了する前に停止していないかのように実行を継続する必要があります。 つまり、このプログラムのスレッドがステップオーバー操作を行っていて、他のプログラムが停止したために停止された場合、このメソッドが呼び出されたときには、プログラムは元のステップオーバー操作を完了する必要があります。
 
 > [!WARNING]
 > この呼び出しの処理中に、停止イベントまたは即時 (同期) イベントを [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) に送信しないでください。それ以外の場合、デバッガーは応答を停止する可能性があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

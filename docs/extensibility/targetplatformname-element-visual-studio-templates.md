@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f2b8903c99e5bd2f62587b7921be855e4ed6323
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5045a5fc2f29d00c08996fc71acedb228e4f98ae
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938773"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068402"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 要素 (Visual Studio テンプレート)
 プロジェクト テンプレートの対象となるプラットフォームを指定します。 この要素は、 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] アプリを作成するためにプロジェクト テンプレートを使用することを指定するために使用されます。
@@ -50,7 +50,7 @@ ms.locfileid: "99938773"
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  テキストは、 **Windows** である必要があります。
 
 ## <a name="example"></a>例
@@ -66,6 +66,6 @@ ms.locfileid: "99938773"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)

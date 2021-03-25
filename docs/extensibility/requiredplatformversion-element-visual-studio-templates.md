@@ -7,17 +7,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 6f0e4986-3157-4bba-aed3-c28413ebe976
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f281e51bd07c76d63bc0247d9d7f62fe0390283
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 8b1d7e3b8cc67f839977eb1e53d80731e59c064e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221783"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068428"
 ---
 # <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 要素 (Visual Studio テンプレート)
 
@@ -57,7 +57,7 @@ ms.locfileid: "102221783"
 
  テキスト値が必要です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  このテキストは、テンプレートで必要なオペレーティング システムの最小バージョンを指定します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "102221783"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [TargetPlatformName 要素 (Visual Studio テンプレート)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [プロジェクト テンプレートと項目テンプレートを作成する](../ide/creating-project-and-item-templates.md)

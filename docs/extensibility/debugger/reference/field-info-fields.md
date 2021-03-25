@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 024c12d5112398e055141a8db4995f2801ca5401
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0bd13473be5817e821f61b646bd1634cfe06388b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059431"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトについて取得する情報を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FIELD_INFO_FIELDS { 
@@ -64,14 +64,14 @@ FIELD_INFO 構造体のフィールドを初期化/使用し `bstrFullName` ま�
 `FIF_MODIFIERS`\
 構造体のフィールドを初期化/使用し `bstrModifiers` `FIELD_INFO` ます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 また、これらの値は、 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)構造体を初期化するフィールドを指定するために、 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)メソッドに引数として渡されます。
 
 これらの値は `dwFields` 、使用される `FIELD_INFO` フィールドと有効なフィールドを示すために、構造体のメンバーでも使用されます。
 
 これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

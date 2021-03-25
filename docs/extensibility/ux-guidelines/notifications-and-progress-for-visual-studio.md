@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bac47ee29029bdcccb5c248bc8e366376b5aed0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6b273c1ee2ee83c713500d972ecab27a67b3145
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931657"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068545"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio の通知と進行状況
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> 通知システム
@@ -151,7 +151,7 @@ ms.locfileid: "99931657"
 
 #### <a name="determinate-progress"></a>確定した進行状況
 
-|進行状況の種類|使用するタイミングと方法|ノート|
+|進行状況の種類|使用するタイミングと方法|メモ|
 |-------------------|-------------------------|-----------|
 |進行状況バー (確定)|>5 秒の予想される期間。<br /><br /> プロセスの詳細の説明テキストを含めることができます。|テキストをアニメーションに埋め込ま **ない** でください。|
 |情報バー|コンテキスト UI に関連付けられたメッセージング。 「 [Infobob」](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)を参照してください。<br /><br /> プロセスの詳細の説明テキストを含めることができます。|複数のプロセスを示す必要がある場合は、複数の infobobを使用 **しない** でください。 代わりに、積み上げられた進行状況バーを使用してください。|
@@ -161,7 +161,7 @@ ms.locfileid: "99931657"
 
 #### <a name="indeterminate-progress"></a>不確定の進行状況
 
-|進行状況の種類|使用するタイミングと方法|ノート|
+|進行状況の種類|使用するタイミングと方法|メモ|
 |-------------------|-------------------------|-----------|
 |進行状況バー (不確定)|>5 秒の予想される期間。<br /><br /> プロセスの詳細の説明テキストを含めることができます。|テキストをアニメーションに埋め込ま **ない** でください。|
 |アリ (水平方向のドット)|サーバーへのラウンドトリップ。<br /><br /> 親コンテナーの最上位に配置されます。|コンテナー全体で親を持たない場合は使用 **しない** でください。|

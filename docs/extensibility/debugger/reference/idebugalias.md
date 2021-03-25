@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAlias interface
 ms.assetid: 3cc4c9a4-7805-4239-b00e-eb4a024f3c55
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fd5639c510ba5a4a346c7a6f2630e7f14ddf036
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d5eb9f1d4bc493779d9b42a984c8fc1577e2fe66
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143884"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059146"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102143884"
 
  変数の数値の別名を表します。 別名は、単に変数の異なる名前です。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugAlias : IUnknown
@@ -48,17 +48,17 @@ IDebugAlias : IUnknown
 |[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|`ICorDebugValue`このオブジェクトに関するマネージコード情報へのアクセスを提供するインターフェイスを取得します (マネージコードのみ)。|
 |[Dispose](../../../extensibility/debugger/reference/idebugalias-dispose.md)|このエイリアスは使用されなくなったものとしてマークします。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  エイリアスは、文字列形式の10進数の後に # 文字が続きます (たとえば、1001 #)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
 - [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)

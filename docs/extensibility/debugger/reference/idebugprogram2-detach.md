@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::Detach
 ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d303db7043865d770604d7feeec57ddf584fc346
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2e9e7527ee13c703bbf7e1ba5a15ae225cf87c0b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146172"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076096"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 プログラムからデバッグエンジンをデタッチします。
@@ -41,8 +41,8 @@ int Detach();
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  デタッチされたプログラムは実行を継続しますが、デバッグセッションの一部ではなくなりました。 デバッグエンジンがデタッチされると、それ以上のプログラムデバッグイベントは送信されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - <RequiredFrameworkVersion> (Visual Studio Templates)
 - RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3700735f987da7320d569b2cee020f0d8a072bdc
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 661e4067ac0191444be8ec7f1136f805ea8b39b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221797"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068454"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 要素 (Visual Studio テンプレート)
 
@@ -58,7 +58,7 @@ ms.locfileid: "102221797"
 
  このテキストは、テンプレートに必要な .NET Framework の最小バージョン番号である必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 `RequiredFrameworkVersion` は省略可能な要素です。 この要素は、テンプレートが .NET Framework の特定の最小バージョン (およびそれ以降のバージョン) をサポートしている場合にのみ使用します。 要素を指定し、 `RequiredFrameworkVersion` テンプレートが特定の最小バージョンの .NET Framework をサポートしていない場合、[ **ターゲットフレームワークのバージョン** ] ドロップダウンは適用できないときに表示されます。
 

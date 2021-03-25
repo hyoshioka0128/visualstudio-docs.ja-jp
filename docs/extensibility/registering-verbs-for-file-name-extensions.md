@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068480"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>ファイル名拡張子の動詞を登録する
 通常、ファイル名拡張子とアプリケーションの関連付けには、ユーザーがファイルをダブルクリックしたときに発生する優先的な操作があります。 この優先アクションは、アクションに対応する動詞 (たとえば、open) にリンクされています。
@@ -27,9 +27,9 @@ ms.locfileid: "99837006"
 ## <a name="register-standard-verbs"></a>標準動詞の登録
  オペレーティングシステムは、次の標準動詞を認識します。
 
-- [ファイル]
+- 開く
 
-- [編集]
+- 編集
 
 - [再生]
 
@@ -113,5 +113,5 @@ ms.locfileid: "99837006"
 > [!NOTE]
 > サイドバイサイド展開で拡張機能の既定の動詞を変更する場合は、インストールと削除に与える影響について検討してください。 インストール中に、元の既定値が上書きされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Side-by-side ファイルの関連付けの管理](../extensibility/managing-side-by-side-file-associations.md)

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0a3ccb96aecf00943bc637b78fb5219c3273281
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8e35e0b219bb77ce722f2e06a260de7ecc837dfb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165671"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085326"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
 には、ブレークポイントを設定するときに追加情報を指定するために使用できるオプションのフラグが用意されています。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_FLAGS {
@@ -55,12 +55,12 @@ public enum enum_BP_FLAGS {
 `BP_FLAG_DONT_STOP`\
 ブレークポイントがデバッグエンジンによって処理される必要があることを指定します。ただし、デバッグエンジンは、最終的にはそれを停止しないようにする必要があります (つまり、 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) イベントオブジェクトを送信することはできません)。 このフラグは、主にトレースポイントで使用されるように設計されています。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 `dwFlags` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)および[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のメンバーに使用されます。
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
