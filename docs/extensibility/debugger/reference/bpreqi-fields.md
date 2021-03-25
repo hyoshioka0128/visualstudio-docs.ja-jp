@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BPREQI_FIELDS enumeration
 ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f7ee5d8dbf48ad8d1b07512727b1b91635ab990
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fc0d24d07f5c7473df7e963ee56ca6023fffa16d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162460"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067622"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 ブレークポイント要求について取得する情報を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPREQI_FIELDS {
@@ -110,14 +110,14 @@ public enum enum_BPREQI_FIELDS {
 `BPREQI_ALLFIELDS`\
 構造体のすべてのフィールドを指定し `BP_REQUEST_INFO2` ます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [Getrequestinfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)メソッドと[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)メソッドに引数として渡され、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)および[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)構造体のどのフィールドを初期化するかを指定します。
 
 これらのフラグは、および構造体のどのフィールドが使用され、 `BP_REQUEST_INFO` `BP_REQUEST_INFO2` 各構造体が返されたときに有効であるかを示すためにも使用されます。
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 857f07e70809200567b6c2f79c5a22aff78b4af8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 13f723c6395b8b271d6f097d811c5a31569c5853
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162551"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067700"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
 ブレークポイントがバインド解除された理由を示します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_UNBOUND_REASON {
@@ -60,10 +60,10 @@ public enum enum_BP_UNBOUND_REASON {
 `BPUR_ BREAKPOINT_ERROR`\
 ブレークポイントは、バインド後にエラーが発生していると判断されます。 これは、条件が有効でなくなったマネージブレークポイントに発生します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [Getreason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)メソッドによって返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

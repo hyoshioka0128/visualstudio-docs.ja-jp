@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc0636334cfde4452f427285bfe21141bc7614e1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 58b524de5d2d230e240ae7338190568ccfe6fb2a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170732"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096487"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
 この構造体は、メモリコンテキストまたはコードコンテキストを記述します。
@@ -74,19 +74,19 @@ public struct CONTEXT_INFO {
 `bstrAddressAbsolute`\
 指定したコンテキストが配置されているメモリ内の絶対アドレス。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この構造体は、 [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) メソッドの呼び出しから返されます。
 
 この構造体の一般的な用途は、 **メモリ** デバッグウィンドウをサポートすることです。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)

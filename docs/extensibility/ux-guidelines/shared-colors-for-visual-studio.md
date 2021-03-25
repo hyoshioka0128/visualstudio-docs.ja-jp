@@ -4,17 +4,17 @@ description: 一般的な Visual Studio シェルの要素とテーマを使用�
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856f071cbab3156daa6afd0a5282a69636f2fe8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8edd16744a6c094ece00ee5e4b8239f3d4f5a92e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927224"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054037"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio の共有色
 共通の Visual Studio シェル要素を使用する UI を設計する場合、またはインターフェイス要素と同様の機能を使用する場合は、パッケージ定義ファイル内の既存のトークン名を使用して、色を選択して割り当てます。 これにより、UI が Visual Studio 環境全体で一貫性を保ち、テーマが追加された場合や更新された場合に自動的に更新されるようになります。

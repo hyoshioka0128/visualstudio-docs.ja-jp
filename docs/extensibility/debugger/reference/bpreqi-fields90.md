@@ -6,25 +6,25 @@ ms.topic: reference
 helpviewer_keywords:
 - BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5405f728cf979738de5a830421c4306c5e398bb2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e977d6e85430dbd9f1931bd4fb62c02f22181d5a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151085"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067609"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 ブレークポイント要求について取得する情報を指定する有効な値を列挙します。 この列挙体は [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 列挙体を拡張します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPREQI_FIELDS90
@@ -123,7 +123,7 @@ public enum enum_BPREQI_FIELDS90
 `BPREQI90_ALLFIELDS`\
 構造体のすべてのフィールドを指定し `BP_REQUEST_INFO2` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: Msdbg90
 
 名前空間: VisualStudio。

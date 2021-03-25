@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS_UNION union
 ms.assetid: e3d11aab-de0d-4109-b5dc-11e07e64382d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea2999e85c721ce2582a781b8914241076470710
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 71867a6a2cbaaf87b5b0a66eab5f53826fe47fdf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170706"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096435"
 ---
 # <a name="debug_address_union"></a>DEBUG_ADDRESS_UNION
 さまざまな種類のアドレスについて説明します。
@@ -93,7 +93,7 @@ public struct DEBUG_ADDRESS_UNION {
 `unionmember`\
 [C# のみ]この値は、に基づいて適切な構造体の型にマーシャリングする必要があり `dwKind` ます。 共用体のとの間の関連付けについては、「解説」を参照してください `dwKind` 。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この構造体は [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 構造体に含まれており、さまざまな種類のアドレスのうちの1つを表し `DEBUG_ADDRESS` ます (構造体は、 [getaddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) メソッドの呼び出しによって入力されます)。
 
  [C# のみ]次の表は、 `unionmember` アドレスの種類ごとにメンバーを解釈する方法を示しています。 この例では、1つのアドレスに対してこれがどのように行われるかを示します。
@@ -135,14 +135,14 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

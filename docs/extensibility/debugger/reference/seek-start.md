@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - SEEK_START enumeration
 ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bb097c6015b5457a0ad4808674321c410a559d2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a15635f2cf56f3be1e9955af4ee79782ed3c85fa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221900"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061525"
 ---
 # <a name="seek_start"></a>SEEK_START
 逆アセンブリストリームでシークを開始する位置を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_SEEK_START { 
@@ -65,10 +65,10 @@ public enum enum_SEEK_START {
  `SEEK_START_CODELOCID`\
  指定されたコード位置識別子でシークを開始します。 コードの場所の識別子は、 [Getcurrentlocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)を呼び出すことによって取得されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

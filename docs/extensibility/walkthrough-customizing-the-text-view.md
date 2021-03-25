@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f967235eed7e563b01b96cd9ed19d0aa5975b1fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17aa8644fc4823df5b68378e9045fa190980306d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916994"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080308"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>チュートリアル: テキストビューのカスタマイズ
 テキストビューをカスタマイズするには、エディターで次のいずれかのプロパティを変更します。
@@ -93,5 +93,5 @@ ms.locfileid: "99916994"
 
 5. 参照可能な空白を有効にします。 ([ **編集** ] メニューの [ **詳細設定** ] をポイントし、[ **空白の表示**] をクリックします)。 テキストにいくつかのタブを入力します。 タブを表す赤色の矢印が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [言語サービスとエディターの拡張点](../extensibility/language-service-and-editor-extension-points.md)

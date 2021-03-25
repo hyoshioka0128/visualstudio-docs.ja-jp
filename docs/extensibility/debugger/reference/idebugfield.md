@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField interface
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175f9a329a93587873db7c76b53757ba715ace67
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c519ccfe70ba5685dec8230bf3e4fcb0eb768921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073678"
 ---
 # <a name="idebugfield"></a>IDebugField
 このインターフェイスは、フィールド、つまりシンボルまたは型の説明を表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugField : IUnknown
@@ -50,7 +50,7 @@ IDebugField : IUnknown
 |[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|2つのフィールドを比較します。|
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|記号または型に関する型に依存しない情報を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  型は C 言語に相当 `typedef` します。
 
  次の C++ 言語の例で `weather` は、はクラス型であり、 `sunny` と `stormy` は記号です。
@@ -63,12 +63,12 @@ weather stormy;
 
  フィールドがシンボルまたは型を表すかどうかを判断するには、 [Getkind](../../../extensibility/debugger/reference/idebugfield-getkind.md) を呼び出し、 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) の結果を調べます。 ビットが設定されている場合、 `FIELD_KIND_TYPE` フィールドは型であり、ビットが設定されている場合 `FIELD_KIND_SYMBOL` は記号になります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [シンボル プロバイダーのインターフェイス](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
