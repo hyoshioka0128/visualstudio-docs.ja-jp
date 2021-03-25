@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetSymbolPath
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e2b029413e3b402e1d8dfa19ccb3ad22644b241
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f3bc24aa6ae07505f4f1fce16593f11e44e752a9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066118"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 デバッグシンボル用に検索されるパスを設定します。
@@ -58,7 +58,7 @@ int SetSymbolPath(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  文字列は、 `szSymbolSearchPath` 記号を検索するための、セミコロンで区切られた1つ以上のパスの一覧です。 これらのパスには、ローカルパス、UNC スタイルのパス、または URL を指定できます。 これらのパスは、異なる種類を混在させることもできます。 パスが UNC (たとえば、 \\ \ Sym\ シンボル) の場合、デバッグエンジンは、パスがシンボルサーバーであるかどうかを判断し、そのサーバーからシンボルを読み込んで、で指定したパスにキャッシュする必要があり `szSymbolCachePath` ます。
 
  シンボルパスには、1つまたは複数のキャッシュの場所を含めることもできます。 キャッシュは優先順位順に一覧表示され、優先順位が最も高いキャッシュが先頭になり、* 記号で区切られます。 次に例を示します。
@@ -69,6 +69,6 @@ int SetSymbolPath(
 
  [Loadsymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)メソッドは、シンボルの実際の読み込みを実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

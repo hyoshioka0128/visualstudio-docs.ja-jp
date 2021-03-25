@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2::GetPortProcessId
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e10dbc648f8233a826c440c261308c6c3688fa30
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ed85141cc6f127867910777ca6fb5f417326bef5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169432"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072521"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 ポート自体のプロセス ID を取得します。
@@ -47,8 +47,8 @@ int GetPortProcessId (
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  たとえば、Win32 ランタイムでは、このメソッドは通常、 `GetCurrentProcessId` 物理プロセス ID を取得するために win32 関数を呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

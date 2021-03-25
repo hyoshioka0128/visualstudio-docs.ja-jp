@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e671b3e578a78665a6a816582e0290119f77ea58
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b78e0ec9f720307a60485283b98939dee954ff29
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225475"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079788"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 モジュールを記述するために使用されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_MODULE_FLAGS { 
@@ -70,12 +70,12 @@ public enum enum_MODULE_FLAGS {
  `MODULE_FLAG_UNOPTIMIZED`\
  モジュールが最適化されていないことを指定します。 この状態は、[ **モジュール** ] ウィンドウに反映されます。 これが既定の状態です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `m_dwModuleFlags` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)構造体のメンバーに使用されます。
 
  これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

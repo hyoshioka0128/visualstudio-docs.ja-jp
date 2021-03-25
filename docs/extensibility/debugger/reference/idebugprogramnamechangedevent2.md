@@ -6,22 +6,22 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramNameChangedEvent2 interface
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 408d564efe6b0cbd76d5bf6993fcc0113a299cb7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 60fbc8aac3fd621a8f19074682bd82fbe957ed3b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145223"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053699"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 プログラムの名前が変更されたときに、デバッグエンジン (DE) からセッションデバッグマネージャー (SDM) に送信されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNameChangedEvent2 : IUnknown
@@ -33,7 +33,7 @@ IDebugProgramNameChangedEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
  DE は、このイベントオブジェクトを作成して送信し、プログラム名の変更を報告します。 このイベントは、デバッグ対象のプログラムにアタッチされたときに SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。 カスタムポート供給業者は、I インターフェイスを使用してこのイベントを送信します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。

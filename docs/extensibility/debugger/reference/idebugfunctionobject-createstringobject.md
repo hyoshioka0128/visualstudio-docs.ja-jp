@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateStringObject method
 ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78d9d0be09ee8fa6374273ad308616a7d294c8cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 15ad52d990492d7f78f3f8246e786dc0b037e23f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166477"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072898"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 文字列オブジェクトを作成します。
@@ -52,8 +52,8 @@ int CreateStringObject(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイスによって表される関数のパラメーターである文字列を表すオブジェクトを作成するには、このメソッドを呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

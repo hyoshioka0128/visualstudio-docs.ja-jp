@@ -9,20 +9,20 @@ helpviewer_keywords:
 - GetInfo method
 - IDebugMemoryContext2::GetInfo method
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2dfcd6063988f188b307b03febaeca988c8fb025
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: fe87f5dbf14d714f4915e99c23a56b8c9490dd23
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165047"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058626"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 コンテキストを記述する [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 構造体を取得します。
@@ -53,7 +53,7 @@ int GetInfo(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

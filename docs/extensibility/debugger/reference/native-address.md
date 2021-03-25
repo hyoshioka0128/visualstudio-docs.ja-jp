@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - NATIVE_ADDRESS structure
 ms.assetid: 7a0cd085-bfc8-45cc-a3d4-4459070e207a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5e243982eefbfbb8aab5797bf40031aa5d8aca4c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 799120bf3a068ccbc7eebad729b4312d6715af34
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222186"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086470"
 ---
 # <a name="native_address"></a>NATIVE_ADDRESS
 
@@ -46,11 +46,11 @@ public struct NATIVE_ADDRESS {
 `unknown`\
 ネイティブアドレス (その意味は、ランタイムとオペレーティングシステムによって異なります)。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この構造体は、構造体のフィールドがに設定されている場合に、 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 構造体の和集合の一部になり `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_NATIVE` ます ( [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙型の値)。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ヘッダー: sh. h
 
@@ -58,7 +58,7 @@ public struct NATIVE_ADDRESS {
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

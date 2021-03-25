@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2::GetAttributes
 ms.assetid: 2ac5b5fb-da17-43f7-811a-313f677e60d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a7402c2b5a367a3a0a681a9a17ef89872a7b3e96
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b41e3f50b73c16c9acb28a809b8c33b535370c47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152976"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065854"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 このデバッグイベントの属性を取得します。
@@ -47,9 +47,9 @@ int GetAttribute(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)インターフェイスは、すべてのイベントに共通です。 このメソッドは、イベントの種類を表します。たとえば、イベントは同期または非同期であり、イベントは停止イベントです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

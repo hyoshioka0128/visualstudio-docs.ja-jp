@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65b38d342dc84e680e202b73976550fcca5809cf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 4a34b7160849852da7f1cbe94dae9dc75dc47501
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221952"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086327"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 参照の比較の種類を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_REFERENCE_COMPARE { 
@@ -55,10 +55,10 @@ public enum enum_REFERENCE_COMPARE {
  `REF_COMPARE_GREATER_THAN`\
  より大きい比較を指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

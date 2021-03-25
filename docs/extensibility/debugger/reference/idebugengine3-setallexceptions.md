@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 734a227bbd9387f591314c65be1124d1b2593fd2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4a6dbce81ed358ad13b49206e86c5f547a4db420
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153756"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066205"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 このメソッドは、すべての未処理の例外の状態を設定します。
@@ -47,6 +47,6 @@ int SetAllExceptions(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8851dffa0de1155edf401c0d0b0feadda199a5e9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ed6a93b9e2b90fc125642697b193d51713b01e69
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222030"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086353"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
 プログラムプロバイダーから取得する必要のあるプロパティを指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PROVIDER_FLAGS {
@@ -75,7 +75,7 @@ public enum enum_PROVIDER_FLAGS {
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
  呼び出し元 `fIsTheDebuggerPresent` は、構造体のフィールドを必要と `PROVIDER_PROCESS_DATA` します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  これらのフラグは、次のメソッドに渡されます。
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
@@ -86,7 +86,7 @@ public enum enum_PROVIDER_FLAGS {
 
   これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

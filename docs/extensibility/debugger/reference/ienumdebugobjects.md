@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects interface
 ms.assetid: 0950364c-6c8a-4b6c-ba37-c6aa359fa72c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eece06d64a4eeefefe4e132295f20e40a032434b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0d9cd15c267906730ea94636e94978f5f77374e6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224630"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052828"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102224630"
 
  このインターフェイスは、 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) インターフェイスを実装するオブジェクトのコレクションを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugObjects : IUnknown
@@ -49,16 +49,16 @@ IEnumDebugObjects : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumdebugobjects-clone.md)|現在の列挙体のコピーを取得します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugobjects-getcount.md)|列挙体のエントリ数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスを使用すると、デバッグエンジンは配列内のオブジェクトのセットを列挙できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

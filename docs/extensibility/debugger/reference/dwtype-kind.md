@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - dwTYPE_KIND enumeration
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f51a84951cdfe09e13454035c3219324e9a68368
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 25b7fd89de0af624425767f21b81780459068372
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170329"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095954"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)オブジェクトの型を解釈する方法を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_dwTYPE_KIND {
@@ -56,10 +56,10 @@ public enum enum_dwTYPE_KIND {
 `TYPE_KIND_BUILT`\
 `TYPE_INFO`共用体は、 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)構造体として解釈される必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この列挙体の値は `dwKind` [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 構造体のフィールドに表示され、共用体メンバーを解釈する方法を決定するために使用され `type` ます。 `TYPE_INFO`構造体は、 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)メソッドの呼び出しによって返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。

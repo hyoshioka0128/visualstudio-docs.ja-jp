@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROCESS_INFO structure
 ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5557e4171bdeb51ae1ac954870a85227a8c4c92
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b6fe223d67b876dca1604b2617a33a888ec8180c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222095"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079644"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 プロセスに関する情報を格納します。
@@ -84,17 +84,17 @@ public struct PROCESS_INFO {
  `Flags`\
  プロセスのプロパティを指定する、 [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) 列挙のフラグの組み合わせ。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この構造体は、入力されている [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) メソッドに渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)

@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2 interface
 ms.assetid: 1f0e9ac0-6dfb-461a-976c-888d82144cdb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce76ccdc444dafc4b6b8ee6afb3c9ded8adcf3d0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f6e32c4798ad1bea65a9aadcf8a0d73052acc238
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153834"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105066153"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 このインターフェイスは、デバッグエンジン (DE) を表します。 ブレークポイントの作成から例外の設定および消去まで、デバッグセッションのさまざまな側面を管理するために使用されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugEngine2 : IUnknown
@@ -54,13 +54,13 @@ IDebugEngine2 : IUnknown
 |[SetMetric](../../../extensibility/debugger/reference/idebugengine2-setmetric.md)|メトリックを設定します。|
 |[CauseBreak](../../../extensibility/debugger/reference/idebugengine2-causebreak.md)|この DE によってデバッグされているすべてのプログラムは、そのスレッドの1つが次に実行を試みたときに実行を停止するよう要求します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetEngine](../../../extensibility/debugger/reference/idebugenginecreateevent2-getengine.md)

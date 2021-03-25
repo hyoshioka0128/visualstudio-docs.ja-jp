@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73d16337daefdfe25425982a7fc7249c42f0fa1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906066"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086340"
 ---
 # <a name="author-vsct-files"></a>作成した vsct ファイル
 このドキュメントでは、メニュー項目、ツールバー、およびその他のユーザーインターフェイス (UI) 要素を Visual Studio 統合開発環境 (IDE) に追加するために、vsct ファイルを作成する方法について説明 *します* 。 この手順は、まだ *vsct* ファイルがない Visual Studio パッケージ (VSPackage) に UI 要素を追加する場合に使用します。
@@ -235,7 +235,7 @@ ms.locfileid: "99906066"
 
    - メニューコントローラー: メニューコントローラーは、その横に矢印が付いたボタンです。 矢印をクリックすると、一覧が表示されます。 メニューコントローラーを UI に追加するに `Menu` は、必要な動作に応じて、要素を作成し、その `type` 属性をまたはに設定し `MenuController` `MenuControllerLatched` ます。 メニューコントローラーを設定するには、要素の親として設定し `Group` ます。 メニューコントローラーには、そのグループのすべての子がドロップダウンリストに表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [メニューとコマンドを拡張する](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML スキーマリファレンス](../../extensibility/vsct-xml-schema-reference.md)

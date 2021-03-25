@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - NAME_MATCH enumeration
 ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6c3818318ea65cb2f5262ac4ec6dd9042d6f8c5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c093c49745d7fa1b754db020c85a538992de9555
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086483"
 ---
 # <a name="name_match"></a>NAME_MATCH
 一致する名前の case オプションを選択します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum { 
@@ -54,7 +54,7 @@ public enum NameMatchOptions {
  `nmCaseInsensitive`\
  照合する名前が大文字と小文字を区別しないことを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  次のメソッドに引数として渡されます。
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
@@ -65,7 +65,7 @@ public enum NameMatchOptions {
 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: sh. h
 
  名前空間: VisualStudio。

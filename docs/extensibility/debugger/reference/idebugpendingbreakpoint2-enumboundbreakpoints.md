@@ -9,20 +9,20 @@ helpviewer_keywords:
 - EnumBoundBreakpoints method
 - IDebugPendingBreakpoint2::EnumBoundBreakpoints method
 ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 198470afbf40f72b33c6163bcf4fe0eb19b956eb
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a25a335ea373a6086b5a57829330e4c84566fe9c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169913"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072703"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 この保留中のブレークポイントからバインドされたすべてのブレークポイントを列挙します。
@@ -121,6 +121,6 @@ HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** p
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
