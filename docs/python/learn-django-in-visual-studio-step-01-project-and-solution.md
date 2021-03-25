@@ -11,26 +11,35 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942661"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806070"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>チュートリアル: Visual Studio での Django Web フレームワークの概要
 
 [Django](https://www.djangoproject.com/) は、高速、安全、スケーラブルな Web 開発用に設計されたハイレベルの Python フレームワークです。 このチュートリアルでは、Visual Studio が Django ベースの Web アプリの作成を合理化するために提供するプロジェクト テンプレートのコンテキストで Django フレームワークについて説明します。
 
-このチュートリアルでは、以下の内容を学習します。
+このチュートリアルでは、次の作業を行う方法について説明します。
 
-> [!div class="checklist"]
-> - "空の Django Web プロジェクト" テンプレートを使用して Git リポジトリに基本的な Django プロジェクトを作成する (手順 1)
-> - 1 つのページがある Django アプリを作成し、テンプレートを使用してそのページをレンダリングする (手順 2)
-> - 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する (手順 3)
-> - Django Web プロジェクト テンプレートを使用して、複数のページを持つ応答性に優れたデザインのアプリを作成する (手順 4)
-> - ユーザーを認証する (手順 5)
-> - ポーリング Django Web プロジェクト テンプレートを使用して、モデル、データベースの移行、管理インターフェイスのカスタマイズを使用するアプリを作成する (手順 6)
+::: moniker range="vs-2017"
+- "空の Django Web プロジェクト" テンプレートを使用して Git リポジトリに基本的な Django プロジェクトを作成する (手順 1)
+- 1 つのページがある Django アプリを作成し、テンプレートを使用してそのページをレンダリングする (手順 2)
+- 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する (手順 3)
+- Django Web プロジェクト テンプレートを使用して、複数のページを持つ応答性に優れたデザインのアプリを作成する (手順 4)
+- ユーザーを認証する (手順 5)
+- ポーリング Django Web プロジェクト テンプレートを使用して、モデル、データベースの移行、管理インターフェイスのカスタマイズを使用するアプリを作成する (手順 6)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- "空の Django Web プロジェクト" テンプレートを使用して Git リポジトリに基本的な Django プロジェクトを作成する (手順 1)
+- 1 つのページがある Django アプリを作成し、テンプレートを使用してそのページをレンダリングする (手順 2)
+- 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する (手順 3)
+- Django Web プロジェクト テンプレートを使用して、複数のページを持つ応答性に優れたデザインのアプリを作成する (手順 4)
+- ユーザーを認証する (手順 5)
+::: moniker-end
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -67,7 +76,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
     - **ソリューションのディレクトリを作成**: オンのままにします (既定)。
     - **新しい Git リポジトリの作成**: ソリューションの作成時に Visual Studio でローカルの Git リポジトリが作成されるように、このオプション (既定ではオフ) をオンにします。 このオプションが表示されない場合は、Visual Studio インストーラーを実行し、**[コード ツール]** の **[個別のコンポーネント]** タブで **Windows 用 Git** および **Visual Studio 用 GitHub 拡張機能** を追加します。
 
-1. しばらくすると、Visual Studio に (次に示すように) "**このプロジェクトには外部パッケージが必要です**" というダイアログが表示されます。 テンプレートには、最新の Django 1.x パッケージを参照する *requirements.txt* ファイルが含まれているため、このダイアログが表示されます (正確な依存関係を確認するには **[必要なパッケージを表示]** を選択します)。
+1. しばらくすると、Visual Studio に (次に示すように) "**このプロジェクトには外部パッケージが必要です**" というダイアログが表示されます。 テンプレートには、最新の Django 1.x パッケージを参照する *requirements.txt* ファイルが含まれているため、このダイアログが表示されます  (正確な依存関係を確認するには **[必要なパッケージを表示]** を選択します)。
 
     ![プロジェクトに外部パッケージが必要であることを示すプロンプト](media/django/step01-requirements-prompt-install-myself.png)
 
@@ -159,14 +168,14 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 プロジェクトの作成が完了したら、定型 Django プロジェクト コードを確認します (これは CLI コマンド `django-admin startproject <project_name>` によって生成されるコードと同じです)。
 
-1. プロジェクトのルートには *manage.py* があります。これは、Visual Studio によってプロジェクトのスタートアップ ファイルとして自動的に設定される Django コマンドライン管理ユーティリティです。 コマンドラインで `python manage.py <command> [options]` を使用してユーティリティを実行します。 Django の一般的なタスクの場合、Visual Studio は便利なメニュー コマンドを提供します。 **ソリューション エクスプローラー** でプロジェクトを右クリックし、 **[Python]** を選択して一覧を表示します。 このチュートリアルの過程では、これらのコマンドの一部が見られます。
+1. プロジェクトのルートには *manage.py* があります。これは、Visual Studio によってプロジェクトのスタートアップ ファイルとして自動的に設定される Django コマンドライン管理ユーティリティです。 コマンドラインで `python manage.py <command> [options]` を使用してユーティリティを実行します。 Django の一般的なタスクの場合、Visual Studio は便利なメニュー コマンドを提供します。 **ソリューション エクスプローラー** でプロジェクトを右クリックし、**[Python]** を選択して一覧を表示します。 このチュートリアルの過程では、これらのコマンドの一部が見られます。
 
     ![Python プロジェクトのコンテキスト メニューの Django コマンド](media/django/step01-django-commands-menu.png)
 
 2. プロジェクトでは、フォルダーの名前はプロジェクトと同じです。 これには基本的な Django プロジェクト ファイルが含まれています。
 
    - *__init.py*: このフォルダーが Python パッケージであることを Python に通知する空のファイルです。
-   - *wsgi.py*: プロジェクトを処理する WSGI 互換 Web サーバーのエントリ ポイントです。 通常、このファイルは実稼働 Web サーバーのフックを提供するため、現状のままにします。
+   - *wsgi.py*: プロジェクトを処理する WSGI 互換 Web サーバーのエントリ ポイントです。 通常、このファイルは実稼働 Web サーバーへのフックを提供するので、そのままにしておきます。
    - *settings.py*: Web アプリの開発の過程で変更する Django プロジェクトの設定が含まれています。
    - *urls.py*: 同様に開発の過程で変更する Django プロジェクトの目次が含まれています。
 
@@ -194,7 +203,7 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>質問: Django は Web サーバーおよびフレームワークですか?
 
-回答: はい、そしていいえです。 Django には、開発目的で使用される組み込みの Web サーバーがあります。 この Web サーバーは、Visual Studio でデバッグする場合など、Web アプリをローカルで実行するときに使用されます。 一方、Web ホストにデプロイする場合、Django はホストの Web サーバーを代わりに使用します。 Django プロジェクトの *wsgi.py* モジュールは、実稼働サーバーへのフックに対処します。
+回答: はい、そしていいえです。 Django には、開発目的で使用される組み込みの Web サーバーがあります。 この Web サーバーは、Visual Studio でデバッグする場合など、Web アプリをローカルで実行するときに使用されます。 ただし、Web ホストに配置する場合、Django はホストの Web サーバーを代わりに使用します。 Django プロジェクトの *wsgi.py* モジュールは、実稼働サーバーへのフックに対処します。
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>質問: [デバッグ] メニュー コマンドとプロジェクトの Python サブメニュー上のサーバー コマンドの使用にはどのような違いがありますか?
 
@@ -211,4 +220,4 @@ Visual Studio プロジェクトには、Django プロジェクトと複数の�
 
 - Django プロジェクト コード: [最初の Django アプリの作成、パート 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - 管理ユーティリティ: [django-admin と manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- GitHub 上のチュートリアルのソース コード: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
+- GitHub のチュートリアルのソース コード:[Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

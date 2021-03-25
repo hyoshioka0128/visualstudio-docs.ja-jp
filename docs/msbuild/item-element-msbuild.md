@@ -18,20 +18,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b5fd7129cfb21e5b59e8cdf0049b4ee75d59c87
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913948"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672736"
 ---
 # <a name="item-element-msbuild"></a>Item 要素 (MSBuild)
 
 ユーザー定義のアイテムおよびそのメタデータが含まれます。 MSBuild プロジェクトで使用されるすべてのアイテムが、`ItemGroup` 要素の子として指定されている必要があります。
 
-\<Project>
-\<ItemGroup>
-\<Item>
+\<Project>\
+&nbsp;\<ItemGroup>\
+&nbsp;&nbsp;\<Item>
 
 ## <a name="syntax"></a>構文
 

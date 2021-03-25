@@ -3,15 +3,15 @@ title: 特定の GUID を Visual Studio サブスクライバーに割り当て�
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 02/18/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 管理者が特定のサブスクリプション GUID をサブスクライバーに割り当てる方法について説明します
-ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249683"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776651"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Visual Studio サブスクリプション管理ポータルで特定のサブスクリプションを割り当てる
 
@@ -63,7 +63,7 @@ ms.locfileid: "102249683"
 A: ユーザーへの GUID の割り当てを変更する場合は、まずそのユーザーのサブスクリプションを削除する必要があります。  詳細については、[サブスクリプションの削除](delete-license.md)に関するページを参照してください。  そのユーザーのサブスクリプションを削除したら、上記のプロセスを使用してリストをエクスポートし、新しいサブスクリプション情報をアップロードします。  
 
 ## <a name="resources"></a>リソース
-- [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)
+- [サブスクリプション サポート](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
@@ -78,5 +78,3 @@ A: ユーザーへの GUID の割り当てを変更する場合は、まずそ�
 - [サブスクリプションの編集](edit-license.md)
 - [サブスクリプションの削除](delete-license.md)
 - [最大使用量の確認](maximum-usage.md)
-
-

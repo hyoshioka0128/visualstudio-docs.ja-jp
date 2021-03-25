@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 09/21/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 管理者が管理者ポータルで個々のサブスクライバーまたはグループを探す方法について説明します。
-ms.openlocfilehash: e1fd5ea959043cbea58d0eb9a14649044f5d556e
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: df94b32dfcc5e2672282c0d18859cba42b490437
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904541"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776689"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのサブスクライバーの検索とフィルター処理
 Visual Studio サブスクリプション管理ポータルでは、さまざまな条件を基にサブスクライバーの特定のサブセットを検索することができます。 名前、メール アドレス、サブスクリプション レベル、その他の情報で、サブスクライバーの一覧をフィルター処理できます。
@@ -36,14 +36,12 @@ Visual Studio サブスクリプション管理ポータルでは、さまざま
    > [!div class="mx-imgBorder"]
    > ![サブスクライバー リストからフィルターをクリアする](_img/search-filter/clear-filter.png "[フィルターのクリア] をクリックすると、フィルターが削除され、割り当てたすべてのサブスクリプションが再び表示されます。")
 
-
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
 
-
 ## <a name="next-steps"></a>次の手順
 - サブスクライバーを検索する方法がわかりました。次にサブスクリプションを[編集する](edit-license.md)方法を確認します。
-- 管理ポータルの使用に関するサポートが必要ですか?  [Visual Studio の管理とサブスクリプションのサポート](https://visualstudio.microsoft.com/support/support-overview-vs)にお問い合わせください。
+- 管理ポータルの使用に関するサポートが必要ですか?  [Visual Studio の管理とサブスクリプションのサポート](https://aka.ms/vsadminhelp)にお問い合わせください。
