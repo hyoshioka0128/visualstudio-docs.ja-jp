@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - properties [Visual Studio SDK], grid
 ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd336701fc25497fdecba8b5b9860a02447558d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9ccf8afd293c47a1eb55b0b57b8190c11492cfa8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970050"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061122"
 ---
 # <a name="properties-display-grid"></a>プロパティ表示グリッド
 
@@ -57,6 +57,6 @@ VSPackage が __VSHPROPID をサポートしていない場合 [。VSHPROPID_Bro
 
 - 省略記号ボタン ([...]) をクリックすると、ユーザーが選択できるプロパティ値の一覧が表示されます (カラーピッカーやフォント一覧など)。 <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> これらの値を提供します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [プロパティの拡張](../../extensibility/internals/extending-properties.md)

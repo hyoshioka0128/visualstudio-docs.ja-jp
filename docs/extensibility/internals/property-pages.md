@@ -9,17 +9,17 @@ helpviewer_keywords:
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7d1ce463377daa2800d5c3e635adc71935d9d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3e36960b35119434e56f075f622ae2513454dd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883169"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061018"
 ---
 # <a name="property-pages"></a>[プロパティ ページ]
 ユーザーは、プロパティページを使用して、プロジェクトの構成に依存し、依存しないプロパティを表示および変更できます。 選択したオブジェクトのプロパティページビューを提供するオブジェクトの **プロパティウィンドウまた** はソリューションエクスプローラーツールバーで、[**プロパティページ**] ボタンが有効になります。 プロパティページは環境によって作成され、ソリューションとプロジェクトで使用できます。 ただし、構成に依存するプロパティを使用するプロジェクトアイテムに対しても使用できます。 この機能は、プロジェクト内のファイルが、正しくビルドするために異なるコンパイラスイッチ設定を必要とする場合に使用できます。
@@ -79,7 +79,7 @@ ms.locfileid: "99883169"
 
    <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>プロジェクト階層とプロジェクト項目、または選択した項目を取得するメソッドを実装します。 DTE からは、 `SelectedItems.SelectedItem.Project` メソッドとメソッドを使用し `SelectedItems.SelectedItem.ProjectItem` ます。 コアドキュメントには、これらの見出しの下にサンプルコードがあり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 - [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)

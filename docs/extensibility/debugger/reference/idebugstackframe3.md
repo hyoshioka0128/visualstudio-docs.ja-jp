@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3 interface
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d70095db80b8bbd349509de2858b641c520b0623
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4049b728842e630a0f0b300130362b8efa8ceec0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159771"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053205"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 このインターフェイスは、インターセプトされた例外を処理するために [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) を拡張します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame3 : IDebugStackFrame2
@@ -43,7 +43,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 |[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)|通常の例外処理の前に、現在のスタックフレームの例外を処理します。|
 |[GetUnwindCodeContext](../../../extensibility/debugger/reference/idebugstackframe3-getunwindcodecontext.md)|スタックアンワインドが発生した場合は、コードコンテキストを返します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  インターセプトされた例外は、通常の例外処理ルーチンが実行時に呼び出される前に、デバッガーが例外を処理できることを意味します。 例外をインターセプトすることは、基本的に、実行時に例外ハンドラーが存在しないということを示しています。
 
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) は、通常のすべての例外コールバックイベントの発生時に呼び出されます (唯一の例外は、混合モードコード (マネージコードとアンマネージコード) をデバッグする場合です。この場合、最後のコールバック時に例外を受け取ることはできません)。 DE がを実装していない場合、 `IDebugStackFrame3` または de によって IDebugStackFrame3:: (など) からエラーが返された場合、 `InterceptCurrentException` `E_NOTIMPL` デバッガーは通常どおり例外を処理します。
@@ -55,14 +55,14 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  デバッグエンジンは、関数を使用して、実行時に "metricExceptions" を1の値に設定することによって、例外のインターセプトをサポートしていることを示してい `SetMetric` ます。 詳細については、「 [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)」を参照してください。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [デバッグ用の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

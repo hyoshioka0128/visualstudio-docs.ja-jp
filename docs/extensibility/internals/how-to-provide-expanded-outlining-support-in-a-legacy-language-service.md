@@ -9,17 +9,17 @@ helpviewer_keywords:
 - language services, supporting outlining
 - outlining, supporting
 ms.assetid: df759e89-8193-418c-8038-6626304d387b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3db7c4f886a071b4b759072a1b141690f4e4b097
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11d04af2afac04d4ec9ab197c3d3f7b5a15ad28c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890722"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078787"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>方法: 従来の言語サービスで拡張されたアウトラインサポートを提供する
 [ **定義に折りたたむ** ] コマンドをサポートしていないと、言語のアウトラインサポートを拡張するためのオプションが2つあります。 エディターによって制御されるアウトライン領域を追加し、クライアントによって制御されるアウトライン領域を追加できます。

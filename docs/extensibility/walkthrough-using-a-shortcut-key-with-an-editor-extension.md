@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061954"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でのショートカットキーの使用
 エディター拡張機能のショートカットキーに応答できます。 次のチュートリアルでは、ショートカットキーを使用して、ビューの表示要素をテキストビューに追加する方法について説明します。 このチュートリアルは、ビューポートの表示要素エディターテンプレートに基づいており、+ 文字を使用して表示要素を追加できます。
@@ -47,7 +47,7 @@ ms.locfileid: "99931267"
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-KeyBindingTestTextViewCreationListener.cs クラスファイルで、AdornmentLayer の名前を **Keybindingtest** から **PurpleCornerBox** に変更します。
+KeybindingtesttextviewAdornmentLayer クラスファイルで、 **Keybindingtest** の名前を **PurpleCornerBox** に変更します。
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
    }
    ```
 
-   7. *KeyBindingTestTextViewCreationListener.cs* ファイルから *KeyBindingCommandHandler.cs* レイヤーの定義をコピーし、 *KeyBindingTestTextViewCreationListener.cs* ファイルを削除します。
+   7. 装飾層の定義を *Keybindingtesttextviewの* ファイルから *Keybindingcommandhandler* にコピーし、次に *keybindingtesttextviewを* 削除します。
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ Visual Studio 2017 バージョン15.6 より前では、エディター拡張�
 
 元の表示要素は、テキストファイル内のすべての文字 "a" に表示されます。 文字への応答として装飾を追加するようにコードを変更したので、次は **+** 文字が入力された行にのみ装飾を追加し **+** ます。 表示要素のコードを変更して、すべての "a" に表示されるようになります。
 
-*KeyBindingTest.cs* ファイルで、メソッドを変更し `CreateVisuals()` て、' a ' 文字を修飾するビュー内のすべての行を反復処理します。
+*Keybindingtest .cs* ファイルで、メソッドを変更し `CreateVisuals()` て、' a ' 文字を修飾するビュー内のすべての行を反復処理します。
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

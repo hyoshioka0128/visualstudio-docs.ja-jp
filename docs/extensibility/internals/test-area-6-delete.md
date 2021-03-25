@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e405df704dfbba14413bd3787a9fb9f959c62a46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078592"
 ---
 # <a name="test-area-6-delete"></a>テスト領域 6: 削除
 このソース管理プラグインのテスト領域は、削除アクションを対象とします。
@@ -29,7 +29,7 @@ ms.locfileid: "99884482"
 
 - ファイル
 
-- フォルダー
+- Folders
 
 - Project
 
@@ -46,7 +46,7 @@ ms.locfileid: "99884482"
 
 - 項目は、削除後でもソース管理ストア内に存在し、手動で消去する必要があります。
 
-|操作|テストステップ|確認が必要な結果|
+|アクション|テストステップ|確認が必要な結果|
 |------------|----------------|--------------------------------|
 |クライアントプロジェクトの削除|1. クライアントプロジェクトを作成します。<br />2. ソース管理にソリューションを追加します。<br />3. ソリューションからプロジェクト全体を削除する|予期される動作は一般的です。|
 |空のファイルを削除する|1. クライアントプロジェクトを作成します。<br />2. 0 バイトのファイルをプロジェクトに追加します。<br />3. ソリューションをソース管理に追加します。<br />4. ファイルを選択して削除します。|予期される動作は一般的です。|
@@ -54,5 +54,5 @@ ms.locfileid: "99884482"
 |ファイルシステム Web プロジェクトの削除|1. ファイルシステム Web プロジェクトを作成します (UNC パスを指定するには、[参照] ボタンを使用します)。<br />2. ソース管理にソリューションを追加します。<br />3. ソリューションからプロジェクト全体を削除します。<br />4. ローカル Web プロジェクトに対して手順 1. ~ 3. を繰り返します (コードを使用してさまざまなパスを実行しますが、外部のインターフェイスと動作は同じです)。|予期される動作は一般的です。|
 |ファイルシステム Web プロジェクトからのファイルの削除|1. ファイルシステム Web プロジェクトを作成します。<br />2. ソース管理にソリューションを追加します。<br />3. プロジェクトからファイルを削除します。<br />4. ローカル Web プロジェクトに対して手順 1. ~ 3. を繰り返します (コードを使用してさまざまなパスを実行しますが、外部のインターフェイスと動作は同じです)。|予期される動作は一般的です。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

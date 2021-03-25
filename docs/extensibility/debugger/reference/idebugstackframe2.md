@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2 interface
 ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5ec53e89afb43187c641058620df53c4a61d6cc
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f9675627bf3044258a532ca91768619f2c6de3ba
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053257"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 このインターフェイスは、特定のスレッドのコールスタック内の1つのスタックフレームを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugStackFrame2 : IUnknown
@@ -51,15 +51,15 @@ IDebugStackFrame2 : IUnknown
 |[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)|スタックフレームのプロパティの列挙子を作成します。|
 |[GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)|スタックフレームに関連付けられているスレッドを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、デバッグ中のプログラムがブレークポイントで停止された場合にのみ取得されます (ユーザー設定のブレークポイントまたは例外によって発生します)。 このインターフェイスから式のコンテキストを取得して、式を評価したり、レジスタの一覧を返したり、呼び出し履歴を取得して検査したりすることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

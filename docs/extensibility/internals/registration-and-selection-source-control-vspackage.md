@@ -8,17 +8,17 @@ helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff23784bb833c6a68e368f5db5d3b6f1a7433bb0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837204"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069414"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>登録と選択 (ソース管理 VSPackage)
 に公開するには、ソース管理 VSPackage を登録する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 複数のソース管理 VSPackage が登録されている場合、ユーザーは適切なタイミングで読み込む VSPackage を選択できます。 Vspackage とその登録方法の詳細については、「 [vspackage](../../extensibility/internals/vspackages.md) 」を参照してください。
@@ -81,7 +81,7 @@ ms.locfileid: "99837204"
 
   以前のバージョンのとは異なり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、IDE の再起動は、ソース管理の vspackage を切り替える唯一の方法ではなくなりました。 VSPackage の選択は自動的に行うことができます。 パッケージを切り替えるには、管理者またはパワーユーザーではなく、Windows ユーザー特権が必要です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [機能](../../extensibility/internals/source-control-vspackage-features.md)
 - [ソース管理プラグインの作成](../../extensibility/internals/creating-a-source-control-plug-in.md)

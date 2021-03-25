@@ -9,17 +9,17 @@ helpviewer_keywords:
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36552c3a10f4ddbf50a7a28978acf27118bbd34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5208de3af52e4dad5fb9bb59b16f7b59efb72340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887095"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069674"
 ---
 # <a name="expose-types-to-visual-designers"></a>ビジュアルデザイナーに型を公開する
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビジュアルデザイナーを表示するには、デザイン時にクラスと型の定義にアクセスできる必要があります。 クラスは、現在のプロジェクト (参照とその依存関係) の完全な依存関係セットを含む、定義済みのアセンブリセットから読み込まれます。 また、カスタムツールによって生成されるファイルで定義されているクラスや型にビジュアルデザイナーがアクセスする場合にも必要になることがあります。
@@ -45,7 +45,7 @@ ms.locfileid: "99887095"
 
      一時 PE がコンパイルされると、コンパイラに提供されるソースファイルは、カスタムツールの出力だけになります。 そのため、一時 PE を使用するカスタムツールでは、プロジェクト内の他のファイルとは別にコンパイルできる出力ファイルを生成する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [BuildManager オブジェクトの概要](/previous-versions/8f9kffa8(v=vs.140))
 - [単一ファイルジェネレーターを実装する](../../extensibility/internals/implementing-single-file-generators.md)
 - [単一ファイルジェネレーターの登録](../../extensibility/internals/registering-single-file-generators.md)

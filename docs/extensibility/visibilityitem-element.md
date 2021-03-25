@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VisibilityItem element (VSCT XML schema)
 - VSCT XML schema elements, VisibilityItem
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa4c2910a1f694a822d2a31b5ad537c8104f99c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1229c5e63838a8192c7622cdddd9881799a2da11
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221302"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062513"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 要素
 要素は、 `VisibilityItem` コマンドおよびツールバーの静的表示を決定します。 すべてのエントリは、コマンドまたはメニュー、および関連付けられたコマンド UI コンテキストを識別します。 Visual Studio では、コマンド、メニュー、ツールバー、およびそれらを定義する Vspackage が読み込まれていないかどうかが検出されます。 IDE では、メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> コマンド UI コンテキストがアクティブかどうかを判断します。
@@ -45,9 +45,9 @@ ms.locfileid: "102221302"
 
 |属性|説明|
 |---------------|-----------------|
-|guid|必須です。 GUID/ID コマンド識別子の GUID。|
-|id|必須です。 GUID/ID コマンド識別子の ID。|
-|context|必須です。 コマンドが表示される UI コンテキスト。|
+|guid|必須。 GUID/ID コマンド識別子の GUID。|
+|id|必須。 GUID/ID コマンド識別子の ID。|
+|context|必須。 コマンドが表示される UI コンテキスト。|
 |条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
@@ -59,7 +59,7 @@ ms.locfileid: "102221302"
 |-------------|-----------------|
 |[VisibilityConstraints 要素](../extensibility/visibilityconstraints-element.md)|要素は、 `VisibilityConstraints` コマンドおよびツールバーのグループを静的に表示するかどうかを決定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  標準の Visual Studio UI コンテキストは、 *Visual STUDIO SDK のインストールパス*\VisualStudioIntegration\Common\Inc\vsshlids.h ファイルだけでなく、クラスおよびクラスでも定義されてい <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> ます。 UI コンテキストの完全なセットは、クラスで定義されてい <xref:Microsoft.VisualStudio.VSConstants> ます。
 
 ## <a name="example"></a>例

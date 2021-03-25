@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf0f8bc567a097d4bb7d400f829489c517e9a68f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946684"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061239"
 ---
 # <a name="elimination-of-sak-files"></a>~ SAK ファイルの削除
 ソース管理プラグイン API 1.2 では、 *~ SAK* ファイルは機能フラグと、ソース管理プラグインが *mssccprj.scc* ファイルと共有チェックアウトをサポートしているかどうかを検出する新しい関数に置き換えられています。
@@ -52,5 +52,5 @@ Visual Studio .NET 2003 では、 *~ SAK* で始まる一時ファイルが作�
 > [!NOTE]
 > このレジストリキーが *dword: 00000000* に設定されている場合は、キーが存在しないことに相当し、Visual Studio は一時ファイルの作成を試みます。 ただし、レジストリキーが *dword: 00000001* に設定されている場合、Visual Studio は一時ファイルを作成しません。 代わりに、ソース管理プラグインが *mssccprj.scc* ファイルをサポートしておらず、共有チェックアウトをサポートしていないことを前提としています。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API バージョン1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

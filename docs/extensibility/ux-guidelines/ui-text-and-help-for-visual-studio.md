@@ -4,17 +4,17 @@ description: Visual Studio のヘルプ情報で使用される UI テキスト�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0da682f8403890e57118384b7d979f8760d62f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8635907b5c0190165855378fa692fb9abca4b0ec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052659"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio の UI テキストとヘルプ
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI のテキストと用語
@@ -156,7 +156,7 @@ ms.locfileid: "99926148"
 
 ### <a name="common-terminology"></a>一般的な用語
 
-|用語|説明|解説|
+|項目|説明|コメント|
 |----------|-----------------|-------------|
 |サインイン/サインアウト|動詞は、web プロパティに認証を表すために、web で同義語とに使用されていました。 クライアント内では、これを1回使用して、IDE ユーザー接続にサインインおよびサインアウトするための最上位レベルの概念として使用します。これは、他のすべての接続で使用できないローミングやライセンスなどの上位レベルの機能を提供する最上位レベルの id を表します。|IDE ユーザーは、トップレベルの IDE ユーザーを表すため、サインイン/サインアウト動詞を表す唯一の機能です。|
 |接続/切断|機能がオンラインサービスへの単一の接続を保持する場所で使用します。|サーバーエクスプローラーには、一度に1つのアクティブな Azure 接続のみを使用できます。接続/切断の例を次に示します。|
@@ -421,7 +421,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio のフォントと書式設定](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Visual Studio のレイアウト](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Visual Studio の通知と進行状況](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

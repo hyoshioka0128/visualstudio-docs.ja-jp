@@ -8,17 +8,17 @@ helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ea9300c96cf63c932d88335c0ca0f9fd4542f72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cb0175f3e74bf979bcbabaa5785ed9e015c5e7a1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954775"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061213"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>グリフコントロール (ソース管理 VSPackage)
 ソース管理 Vspackage で使用できる詳細な統合の一部は、ソース管理下の項目の状態を示す独自のグリフを表示する機能です。
@@ -27,7 +27,7 @@ ms.locfileid: "99954775"
  状態グリフは、 **ソリューションエクスプローラー** や **クラスビュー** などで表示されたときの項目の現在の状態を示すアイコンです。 ソース管理 VSPackage は、2つのレベルのグリフコントロールを実行できます。 このオプションは、IDE によって提供される定義済みのグリフセットに対して、グリフの選択を制限し [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] たり、表示されるグリフのカスタムセットを定義したりすることができます。
 
 ### <a name="default-set-of-glyphs"></a>既定のグリフセット
- **ソリューションエクスプローラー** の項目に関連付けられている状態グリフを確認するために、プロジェクトはを使用してソース管理から状態グリフを要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> ます。 ソース管理 VSPackage は、IDE によって提供される定義済みのグリフに限定されたグリフの選択を保持することができます。 この場合、VSPackage は、 *vsshell .idl* に定義されているグリフ列挙体を表す値の配列を返します。 詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>」を参照してください。 これは、チェックインされたグリフの南京錠、チェックアウトされたグリフのチェックマークなど、IDE によって設定された定義済みのグリフセットです。
+ **ソリューションエクスプローラー** の項目に関連付けられている状態グリフを確認するために、プロジェクトはを使用してソース管理から状態グリフを要求し <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2.GetSccGlyph%2A> ます。 ソース管理 VSPackage は、IDE によって提供される定義済みのグリフに限定されたグリフの選択を保持することができます。 この場合、VSPackage は、 *vsshell .idl* に定義されているグリフ列挙体を表す値の配列を返します。 詳細については、 <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon> を参照してください。 これは、チェックインされたグリフの南京錠、チェックアウトされたグリフのチェックマークなど、IDE によって設定された定義済みのグリフセットです。
 
 ### <a name="custom-set-of-glyphs"></a>グリフのカスタムセット
  ソース管理 VSPackage は、インストールされている独自の外観に独自のグリフを使用できます。 新しいソース管理 VSPackage がアクティブになると、以前のソース管理 VSPackage がまだ読み込まれていても非アクティブであっても、独自のグリフの使用を開始できるようになります。 このモードでは、ソース管理 VSPackage は既存のアイコンを使用して、選択されている場合にとの一貫性を維持することができ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f628039cdd9715d9463b0def9912da8f78ef6b84
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e27aa1e26c9ac80356446c59f0f7775d35328517
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221887"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061486"
 ---
 # <a name="stepunit"></a>STEPUNIT
 ステップ実行のステップ単位を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_STEPUNIT { 
@@ -55,10 +55,10 @@ enum enum_STEPUNIT {
  `STEP_INSTRUCTION`\
  命令別のステップ。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [ステップ](../../../extensibility/debugger/reference/idebugprocess3-step.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
