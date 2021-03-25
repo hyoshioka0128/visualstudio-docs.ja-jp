@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f11be641cb77b6b27b735b7a4f66d45e11d7a193
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8baac2f0e288e9bde1288ed72e43d7f1d150d04
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930682"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055077"
 ---
 # <a name="change-the-value-of-a-local"></a>ローカルの値を変更する
 > [!IMPORTANT]
@@ -30,7 +30,7 @@ ms.locfileid: "99930682"
 
 1. ユーザーが新しい値を入力すると、Visual Studio はローカルに関連付けられている[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)オブジェクトで[Setvalueasstring](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)を呼び出します。
 
-2. `IDebugProperty2::SetValueAsString` は、以下のタスクを実行します。
+2. `IDebugProperty2::SetValueAsString` では次のタスクを実行します。
 
    1. 文字列を評価して値を生成します。
 
@@ -47,6 +47,6 @@ ms.locfileid: "99930682"
 ## <a name="in-this-section"></a>このセクションの内容
  [値の変更の実装例](../../extensibility/debugger/sample-implementation-of-changing-values.md) MyCEE サンプルを使用して、値を変更するプロセスを段階的に実行します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [CLR 式エバリュエーターの記述](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [表示 (ローカルを)](../../extensibility/debugger/displaying-locals.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27a7e0f3175388b963e85950ea903843caff3baa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895779"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063150"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新しいプロジェクトの生成: 内部的な処理、パート 1
 独自のプロジェクトの種類を作成するにはどうすればよいでしょうか。 新しいプロジェクトを作成すると、実際にはどうなるのでしょうか。 では、実際の状況を見てみましょう。
@@ -54,7 +54,7 @@ ms.locfileid: "99895779"
 devenv /setup
 ```
 
- or
+ または
 
 ```
 devenv /installvstemplates
@@ -213,5 +213,5 @@ devenv /installvstemplates
 
     **Myprojectnode** は、Windows ノードのすぐ下にある Visual C# の子ノードとして表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [新しいプロジェクトの生成: 内部的な処理、パート 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

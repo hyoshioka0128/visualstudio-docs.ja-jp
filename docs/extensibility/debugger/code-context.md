@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 685650e0e97c3f9851f051fdaa78f86252597ff8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c668cd1fa80efe24fa596cc4e9f311e2db519246
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930721"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055038"
 ---
 # <a name="code-context"></a>コードコンテキスト
 デバッグでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、 **コードコンテキスト** は次のようになります。
@@ -32,6 +32,6 @@ ms.locfileid: "99930721"
 
 - は、 [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) インターフェイスによって実装されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ドキュメントのコンテキスト](../../extensibility/debugger/document-context.md)
 - [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895610"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063085"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>新しいプロジェクトの生成: 内部的な処理、パート 2
 
@@ -31,7 +31,7 @@ ms.locfileid: "99895610"
 ### <a name="template-parameter-replacement"></a>テンプレートパラメーターの置換
  テンプレートが項目テンプレートを新しいプロジェクトにコピーすると、テンプレートパラメーターが文字列に置き換えられ、ファイルがカスタマイズされます。 テンプレートパラメーターは、$ 記号 ($date $ など) の前と後にある特別なトークンです。
 
- 一般的なプロジェクト項目テンプレートを見てみましょう。 プログラムの [Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip フォルダー内の Program.cs を抽出して確認します。
+ 一般的なプロジェクト項目テンプレートを見てみましょう。 Program にある program の Visual Studio の 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip フォルダーで、プログラム .cs を抽出して確認します。
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  これにより、新しいプロジェクトテンプレートは、テンプレート項目 windowsapplication .csproj をコピーおよびカスタマイズすることによって、単純な .csproj プロジェクトファイルを作成するように指示します。
 
 ### <a name="designers-and-references"></a>デザイナーと参照
- ソリューションエクスプローラーに、Properties フォルダーが存在し、予想されるファイルが含まれていることを確認できます。 しかし、プロジェクト参照とデザイナーファイルの依存関係 (Resources.Designer.cs to Form1.cs、Form1.Designer.cs to など) はどうでしょうか。  これらは、単純な .csproj ファイルの生成時に設定されます。
+ ソリューションエクスプローラーに、Properties フォルダーが存在し、予想されるファイルが含まれていることを確認できます。 しかし、プロジェクト参照とデザイナーファイルの依存関係 (リソースデザイナーからリソース .resx、および Form1 から Form1) についてはどうでしょうか。  これらは、単純な .csproj ファイルの生成時に設定されます。
 
  \<ItemGroup>プロジェクト参照を作成する単純な .csproj のを次に示します。
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- これらは、ソリューションエクスプローラーに表示される6つのプロジェクト参照であることがわかります。 もう1つのセクションを次に示し \<ItemGroup> ます。 わかりやすくするために、多くのコード行が削除されています。 このセクションでは、Settings.Designer.cs を設定に依存させます。設定:
+ これらは、ソリューションエクスプローラーに表示される6つのプロジェクト参照であることがわかります。 もう1つのセクションを次に示し \<ItemGroup> ます。 わかりやすくするために、多くのコード行が削除されています。 このセクションでは、設定に応じてデザイナを設定します。設定に依存します。
 
 ```xml
 <ItemGroup>
@@ -155,7 +155,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [新しいプロジェクトの生成: 内部的な処理、パート 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

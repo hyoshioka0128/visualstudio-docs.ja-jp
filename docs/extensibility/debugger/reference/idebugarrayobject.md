@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject method
 ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16162cee8a02bf02b192336425101ec4bb579106
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e27f40a3f8a54c9cda285ba30bdcbc53472aab59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158528"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078111"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102158528"
 
  このインターフェイスは、配列オブジェクトを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugArrayObject : IDebugObject
@@ -49,15 +49,15 @@ IDebugArrayObject : IDebugObject
 |[GetRank](../../../extensibility/debugger/reference/idebugarrayobject-getrank.md)|配列のランクを取得します。|
 |[GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md)|配列の次元を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  式エバリュエーターは、このインターフェイスを使用して、解析ツリー内の配列を表します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
