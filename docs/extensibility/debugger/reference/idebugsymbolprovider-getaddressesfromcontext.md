@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fcbc974fe3556f16d339f8be8b8f1738fa8eb74
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e9748e2e2cf7f82724398afe25624f2d1762363c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102159693"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087133"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 このメソッドは、ドキュメントコンテキストをデバッグアドレスの配列にマップします。
@@ -62,12 +62,12 @@ int GetAddressesFromContext(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ドキュメントコンテキストは、通常、ソース行の範囲を示します。 このメソッドは、これらの行に関連付けられているデバッグの開始アドレスと終了アドレスを提供します。 一部の言語では、複数の行にまたがるステートメントや、複数のステートメントを含む行が許可されます。 このメソッドには、デバッグアドレスを1つのステートメントに制限するフラグが用意されています。
 
  テンプレートの場合のように、1つのステートメントに複数のデバッグアドレスを含めることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

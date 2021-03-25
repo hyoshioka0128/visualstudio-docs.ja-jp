@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPendingBreakpoint2 interface
 ms.assetid: d416b095-917e-475e-b796-ec0a03ffb8da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05e66a0066abca5fb657960f2042b738a10e59ca
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a52856cfa70491b7a7daa9079c111b1430475d22
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169731"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053712"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 このインターフェイスは、コードの場所にバインドする準備ができているブレークポイントを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPendingBreakpoint2 : IUnknown
@@ -52,19 +52,19 @@ IDebugPendingBreakpoint2 : IUnknown
 |[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)|この保留中のブレークポイントが原因で発生したすべてのエラーブレークポイントを列挙します。|
 |[削除](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md)|この保留中のブレークポイントと、それにバインドされているすべてのブレークポイントを削除します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `IDebugPendingBreakpoint2` は、ブレークポイントを1つまたは複数のプログラムに適用できるコードにバインドするために必要なすべての情報のプロバイダーと考えることができます。
 
  保留中のブレークポイントによって、複数のバインドされたブレークポイントが生成される可能性があります。 たとえば、C++ スタイルのテンプレート内のブレークポイントによって、そのテンプレートの一意のインスタンスごとにバインドされたブレークポイントが生成される場合があります。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6af1f32a627b713c7907c9de29470f7624fdd7e4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222888"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080295"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "102222888"
 
  このインターフェイスは、型ビジュアライザーを使用してオブジェクトの値を変更する機能を提供します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEEVisualizerDataProvider : IUnknown
@@ -50,17 +50,17 @@ IEEVisualizerDataProvider : IUnknown
 |[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|このビジュアライザーの既存のオブジェクトを取得します (評価は行われません)。|
 |[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|ビジュアライザーによって表示される値を変更して、このビジュアライザーのオブジェクトを更新します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ビジュアライザーサービス ( [Ieevisualizerservice](../../../extensibility/debugger/reference/ieevisualizerservice.md) インターフェイスによって表され、 [Createvisualizerservice](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)によって返される) は、インターフェイスを実装するオブジェクトへの参照を保持し `IEEVisualizerDataProvider` ます。 その結果、 `IEEVisualizerDataProvider` そのオブジェクトがオブジェクトへの参照を保持している場合、 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) を実装するオブジェクトにインターフェイスを実装することはできません `IEEVisualizerService` 。循環参照の結果と、オブジェクトが破棄されるとデッドロックが発生します。 を `IEEVisualizerDataProvider` 呼び出さずにオブジェクトがデリゲートする別のオブジェクトにを実装する方法をお勧めし `IDebugProperty2` `IUnknown::AddRef` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

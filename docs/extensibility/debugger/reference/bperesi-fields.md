@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BPERESI_FIELDS enumeration
 ms.assetid: dd7dd89c-1043-46a1-a929-099cc039c344
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e26b5a7285c2e5c9135429777b4b58f35252e550
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8164f377e56c884149fb0711286d7702fe92eb82
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162525"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067687"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
 ブレークポイントの失敗した解決について取得する情報を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPERESI_FIELDS {
@@ -70,14 +70,14 @@ public enum enum_BPERESI_FIELDS {
 `BPERESI_ALLFIELDS`\
 構造体のすべてのフィールドを初期化/使用し `BP_ERROR_RESOLUTION_INFO` ます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)構造体のどのフィールドを初期化するかを示すために、 [get解決情報](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)メソッドにパラメーターとして渡されます。
 
 これらの値は、構造内のどのフィールドが使用され、 `BP_ERROR_RESOLUTION_INFO` その構造体が返されたときに有効であるかを示すためにも使用されます。
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

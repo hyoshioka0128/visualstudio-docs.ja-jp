@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f5a34513130ea112393ffbb4935093bcea6e797
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936003"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061538"
 ---
 # <a name="sdk-helpers-for-debugging"></a>デバッグ用の SDK ヘルパー
 これらの関数と宣言は、C++ でデバッグエンジン、式エバリュエーター、およびシンボルプロバイダーを実装するためのグローバルヘルパー関数です。
@@ -49,7 +49,7 @@ HRESULT GetMetric(
 );
 ```
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |pszMachine|からレジスタが書き込まれる可能性のあるリモートコンピューターの名前 ( `NULL` つまり、ローカルコンピューター)。|
 |pszType|からメトリック型の1つ。|
@@ -72,7 +72,7 @@ HRESULT SetMetric(
 );
 ```
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |pszType|からメトリック型の1つ。|
 |guidSection|から特定のエンジン、エバリュエーター、例外などの GUID。これにより、特定の要素のメトリック型の下にサブセクションが指定します。|
@@ -93,7 +93,7 @@ HRESULT RemoveMetric(
 );
 ```
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |pszType|からメトリック型の1つ。|
 |guidSection|から特定のエンジン、エバリュエーター、例外などの GUID。これにより、特定の要素のメトリック型の下にサブセクションが指定します。|
@@ -113,7 +113,7 @@ HRESULT EnumMetricSections(
 );
 ```
 
-|パラメーター|説明|
+|パラメーター|Description|
 |---------------|-----------------|
 |pszMachine|からレジスタが書き込まれる可能性のあるリモートコンピューターの名前 ( `NULL` つまり、ローカルコンピューター)。|
 |pszType|からメトリック型の1つ。|
@@ -123,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>式エバリュエーター関数
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |GetEEMetric|レジストリからメトリック値を取得します。|
 |SetEEMetric|指定されたメトリック値をレジストリに設定します。|
@@ -132,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>例外関数
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |GetExceptionMetric|レジストリからメトリック値を取得します。|
 |SetExceptionMetric|指定されたメトリック値をレジストリに設定します。|
@@ -141,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>シンボルプロバイダー関数
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |GetSPMetric|レジストリからメトリック値を取得します。|
 |SetSPMetric|指定されたメトリック値をレジストリに設定します。|
@@ -149,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>列挙関数
 
-|Function|説明|
+|機能|Description|
 |--------------|-----------------|
 |EnumMetricSections|指定したメトリックの種類のすべてのメトリックを列挙します。|
 |EnumDebugEngine|登録されているデバッグエンジンを列挙します。|
@@ -166,7 +166,7 @@ HRESULT EnumMetricSections(
 |metrictypeException|すべての例外メトリック。|
 |metricttypeEEExtension|すべての式エバリュエーター拡張機能。|
 
-|デバッグエンジンのプロパティ|説明|
+|デバッグエンジンのプロパティ|Description|
 |-----------------------------|-----------------|
 |metricAddressBP|アドレスのブレークポイントのサポートを示すには、0以外に設定します。|
 |metricAlwaysLoadLocal|常にデバッグエンジンをローカルに読み込むには、0以外に設定します。|
@@ -202,13 +202,13 @@ HRESULT EnumMetricSections(
 |metricIncompatibleList|このデバッグエンジンと互換性のないデバッグエンジンの Guid を指定するエントリを含むレジストリキー。|
 |metricDisableJITOptimization|デバッグ中に just-in-time 最適化 (マネージコードの場合) を無効にする場合は、0以外に設定します。|
 
-|式エバリュエーターのプロパティ|説明|
+|式エバリュエーターのプロパティ|Description|
 |-------------------------------------|-----------------|
 |metricEngine|これは、指定された式エバリュエーターをサポートするデバッグエンジンの数を保持します。|
 |metricPreloadModules|プログラムに対して式エバリュエーターを起動したときにモジュールをプリロードする場合は、0以外に設定します。|
 |metricThisObjectName|これを "this" オブジェクト名に設定します。|
 
-|式エバリュエーター拡張機能のプロパティ|説明|
+|式エバリュエーター拡張機能のプロパティ|Description|
 | - |-----------------|
 |metricExtensionDll|この拡張機能をサポートする dll の名前。|
 |metricExtensionRegistersSupported|サポートされているレジスタの一覧。|
@@ -216,18 +216,18 @@ HRESULT EnumMetricSections(
 |サポートされている Metricextensionタイプ|サポートされている型のリスト。|
 |Metricextensionentrypoint Entrypoint|型にアクセスするためのエントリポイント。|
 
-|ポートサプライヤーのプロパティ|説明|
+|ポートサプライヤーのプロパティ|Description|
 |------------------------------|-----------------|
 |metricPortPickerCLSID|ポートピッカーの CLSID (ユーザーがポートを選択し、デバッグに使用するポートを追加するために使用できるダイアログボックス)。|
 |metricDisallowUserEnteredPorts|ユーザーが入力したポートをポート供給業者に追加できない場合は0以外の値です (これにより、ポートピッカーダイアログボックスが基本的に読み取り専用になります)。|
 |metricPidBase|プロセス Id を割り当てるときにポートサプライヤーによって使用される基本プロセス ID。|
 
-|定義済み SP ストアの種類|説明|
+|定義済み SP ストアの種類|Description|
 |-------------------------------|-----------------|
 |storetypeFile|シンボルは別のファイルに格納されます。|
 |storetypeMetadata|シンボルは、メタデータとしてアセンブリに格納されます。|
 
-|その他のプロパティ|説明|
+|その他のプロパティ|Description|
 |------------------------------|-----------------|
 |metricShowNonUserCode|非ユーザーコードを表示するには、0以外に設定します。|
 |Metricジャスト Mycodeステッピング|ユーザーコードでのみステップ実行が可能であることを示す場合は、0以外に設定します。|
@@ -426,5 +426,5 @@ HRESULT EnumMetricSections(
 
  ライブラリ: lib\ のようになります。ライブラリ
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [API リファレンス](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

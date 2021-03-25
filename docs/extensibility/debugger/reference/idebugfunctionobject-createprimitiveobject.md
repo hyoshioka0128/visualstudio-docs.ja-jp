@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eed6bf305667b98e16f4a112b1196456269e5b3c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c706d8908f1fa8776d1d7304772a0c5eec03bd2d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165542"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073496"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 単純な整数などのプリミティブデータオブジェクトを作成します。
@@ -52,8 +52,8 @@ int CreatePrimitiveObject(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)インターフェイスによって表される関数のパラメーターであるプリミティブオブジェクトを表すオブジェクトを作成するには、このメソッドを呼び出します。 たとえば、式の文字列が "myString (5)" の場合、このメソッドを使用して、整数5を表すオブジェクトを作成します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

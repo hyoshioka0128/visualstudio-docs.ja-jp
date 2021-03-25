@@ -8,19 +8,19 @@ helpviewer_keywords:
 - ports
 - debugging [Debugging SDK], ports
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9629a27931fad9e0a7f753caad1c21893700d42
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927185"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067778"
 ---
-# <a name="ports"></a>ポート
+# <a name="ports"></a>Port
 デバッガーアーキテクチャでは、 *ポート* は次のようになります。
 
 - は、サーバーで実行されている一連のプロセスのコンテナーです。 たとえば、ポートは、シリアルケーブルまたはネットワークに接続されていない非 DCOM マシンへの、Windows CE ベースのデバイスへの接続を表します。 ローカルポートと呼ばれる1つの特殊なポートには、ローカルコンピューター上で実行されているすべてのプロセスが含まれます。
@@ -33,7 +33,7 @@ ms.locfileid: "99927185"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ネイティブとマネージの両方の Windows ベースのプロセスを処理する既定のポートを提供します。 Windows ベースではない外部デバイスとの接続には、カスタムポートを設定する必要があります。 このようなカスタムポートを指定するには、カスタムポート供給業者もセットアップする必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [サーバー](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [プロセス](../../extensibility/debugger/processes.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)

@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2 interface
 ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8b09aa546e4711b1c11623a3596ba0e385b2a14
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 24a9cef2e62dc2597871f270c9ee48ad58c0a0e1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164423"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086977"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 このインターフェイスは、プログラムで実行されているスレッドを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThread2 : IUnknown
@@ -52,23 +52,23 @@ IDebugThread2 : IUnknown
 |[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|指定されたスタックフレームおよびコードコンテキストに次のステートメントを設定します。|
 |[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|システムスレッド識別子を取得します。|
 |[[中断]](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|スレッドを中断します。|
-|[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)|スレッドを再開します。|
+|[再開](../../../extensibility/debugger/reference/idebugthread2-resume.md)|スレッドを再開します。|
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|スレッドを説明するプロパティを取得します。|
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|この物理スレッドに関連付けられている論理スレッドを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  1つの物理スレッドが複数のプログラムで実行される可能性があるため、複数の `IDebugThread2` プログラムから複数のプログラムが同じ物理スレッドを表すことができます。
 
  ブレークポイントまたは例外が発生した場合、イベントは呼び出し元の [イベント](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)によって送信されます。 このメソッドの引数の1つは、 `IDebugThread2` 現在のスレッドを表すインターフェイスです。 [Enumframe info](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) は、現在のスタックフレームの [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) インターフェイスを取得するために使用されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)

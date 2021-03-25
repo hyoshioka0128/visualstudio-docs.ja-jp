@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetProgramName
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88a4bc58f5d91cdb52482f4dc862446cfc9e7eb1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 376054406d0c127a0bbdcd5ee0a90bc694f9cd02
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161386"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087237"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 プログラムの名前を取得します。
@@ -47,7 +47,7 @@ int GetProgramName (
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 プログラムの名前は、プログラムのパスと同じではありませんが、プログラムの名前はそのようなパスの一部である場合があります。
 
 ## <a name="example"></a>例
@@ -64,5 +64,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

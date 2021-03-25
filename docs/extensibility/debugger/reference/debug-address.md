@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a13a83b5622053593702409c44b6481ba76d17d8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1b250654f45f18adcfd9c52a6047b2b8798be75b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170680"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096370"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 この構造体は、アドレスを表します。
@@ -62,7 +62,7 @@ public struct DEBUG_ADDRESS {
 `addr`\
 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)構造体。個々のアドレスの種類を記述する構造体の和集合を格納します。 値 `addr` 。`dwKind` は、 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 列挙体から取得します。これは、共用体を解釈する方法を説明します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この構造体は、入力される [Getaddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) メソッドに渡されます。
 
 **警告 [C++ のみ]**
@@ -76,14 +76,14 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: sh. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

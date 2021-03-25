@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad000d486b0808ea4ddc3311daa7178c6eda1231
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931293"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080321"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>チュートリアル: 電球の提案を表示する
 電球は、Visual Studio エディターのアイコンです。これは、組み込みのコードアナライザーまたはコードリファクタリングで特定された問題の修正など、一連のアクションを表示するために展開されます。
@@ -74,7 +74,7 @@ ms.locfileid: "99931293"
 
 ## <a name="implement-the-light-bulb-source-provider"></a>電球ソースプロバイダーを実装する
 
-1. *LightBulbTest.cs* クラスファイルで、ライトを削除します。 を実装する **TestSuggestedActionsSourceProvider** という名前のクラスを追加 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> します。 テストの提案された **アクション** の名前と "text" を使用してエクスポートし <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> ます。
+1. *ライト* の組み込みのクラスファイルで、ライトを削除します。 を実装する **TestSuggestedActionsSourceProvider** という名前のクラスを追加 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> します。 テストの提案された **アクション** の名前と "text" を使用してエクスポートし <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> ます。
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2c0059b7b3b12b8e2e59524939c4a47aad97219
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d7265187172d79eb59624edb9c2428b243aae540
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170188"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105053855"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 このオブジェクトの一意の ID または別名を作成するか、既存のエイリアスを返します。
@@ -47,9 +47,9 @@ int CreateAlias(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  エイリアスは、オブジェクトがメモリ内にあるときに特定のオブジェクトを表すラベルです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
