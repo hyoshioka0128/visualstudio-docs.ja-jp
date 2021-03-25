@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], properties UI
 - project properties UI
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da60258f41665bbbb5510eb73b4fbca0a88809ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 051c373b85eff4483012dec5b264fa09fe7d962e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970180"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064476"
 ---
 # <a name="project-property-user-interface"></a>プロジェクト プロパティのユーザー インターフェイス
 
@@ -59,7 +59,7 @@ ms.locfileid: "99970180"
 
 プロジェクトのサブタイプによって追加された新しいプロパティページには、プロジェクト構成の参照オブジェクトが基本プロジェクトの実装から渡されます。 このプロジェクト構成の参照オブジェクトは、オートメーションエクステンダーをサポートしています。 AutomationExtenders の詳細については、「 [オートメーションエクステンダーの実装と使用](/previous-versions/0y92k2w2(v=vs.140))」を参照してください。 プロジェクトのサブタイプの呼び出しによって実装されるプロパティページでは、 <xref:EnvDTE.Project.Extender%2A> 基本プロジェクトの構成参照オブジェクトを拡張する独自のプロジェクトサブタイプの構成参照オブジェクトを取得します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - <xref:EnvDTE.IFilterProperties>
 - [[プロパティページ] ダイアログボックス](/previous-versions/visualstudio/visual-studio-2010/as5chysf(v=vs.100))

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669ef527e65e56612199b8303f7cc99e8b993b50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fe51878603996044535b0abfb70302ef9027c03
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846401"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064255"
 ---
 # <a name="source-control-plug-in-architecture"></a>アーキテクチャのソース管理プラグイン
 ソース [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 管理プラグインを実装してアタッチすることによって、統合開発環境 (IDE) にソース管理サポートを追加できます。 IDE は、適切に定義されたソース管理 Plug-In API を使用してソース管理プラグインに接続します。 IDE では、ツールバーとメニューコマンドで構成されるユーザーインターフェイス (UI) を提供することによって、ソース管理システムのバージョン管理機能を公開しています。 ソース管理プラグインは、ソース管理機能を実装します。
@@ -27,7 +27,7 @@ ms.locfileid: "99846401"
 
  ソース管理プラグイン api 仕様を使用すると、ソース管理プラグイン API に従って実装されている必要な関数のセットを使用してソース管理 DLL を作成する場合に、任意のソース管理システムを利用できます。
 
-## <a name="components"></a>Components
+## <a name="components"></a>コンポーネント
  この図のソース管理アダプターパッケージは、ソース管理操作に対するユーザーの要求を、ソース管理プラグインによってサポートされる関数呼び出しに変換する IDE のコンポーネントです。 これを行うには、ide とソース管理プラグインに、IDE とプラグインの間で情報をやり取りする効果的なダイアログが必要です。 このダイアログを実行するには、どちらも同じ言語を話す必要があります。 このドキュメントに記載されているソース管理プラグイン API は、この exchange の一般的な語彙です。
 
  ![ソースコード管理アーキテクチャの図](../../extensibility/internals/media/vs_sccsdk_plug_in_arch.gif "vs_sccsdk_plug_in_arch") VS とソース管理プラグイン間の相互作用を示すアーキテクチャ図

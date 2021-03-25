@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a262759cfcedd5fb0d09bcb995dcbcb7f7ee2a7
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1aea4f233160f9bdcc5c18c1dda16b4e3f361540
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165268"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076941"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 マネージオブジェクトを表すインターフェイスを返します。
@@ -47,8 +47,8 @@ int GetManagedObject(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドから返されるインターフェイスは、マネージクラスによって実装されたインターフェイスに対してクエリを実行できるため、そのメソッドを呼び出すことができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

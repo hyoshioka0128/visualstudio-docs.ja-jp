@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, architecture
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e4de5f46746f79e1c7598e1c2a2a6af6ae1d92a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e9f19506c58f65f80900c08fe339c7478144546
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912684"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064229"
 ---
 # <a name="source-control-vspackage-architecture"></a>ソース管理 VSPackage アーキテクチャ
 ソース管理パッケージは、IDE によって提供されるサービスを使用する VSPackage です [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 戻り値として、ソース管理パッケージの機能がソース管理サービスとして提供されます。 また、ソース管理パッケージは、ソース管理をに統合するためのソース管理プラグインよりも汎用性の高い方法です [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

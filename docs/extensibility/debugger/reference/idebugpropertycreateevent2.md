@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a8a4317ec3e1c2c83becf0bffb5274ae5a44cf4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6197420428bf07cecf2bfe891e06ddb7a830ea30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168050"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083883"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 このインターフェイスは、特定のドキュメントに関連付けられているプロパティを作成するときに、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPropertyCreateEvent2 : IUnknown
@@ -42,17 +42,17 @@ IDebugPropertyCreateEvent2 : IUnknown
 |------------|-----------------|
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|新しいプロパティを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  プロパティに特定のドキュメントまたはスクリプトが関連付けられている場合、DE はこのイベントを SDM に送信して、 **スクリプトドキュメント** ウィンドウをドキュメントの名前で更新することができます。 SDM は、引数を指定して [Getextendedinfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md) を呼び出し、 `guidDocument` `VARIANT` [IUnknown](/cpp/atl/iunknown) ポインターを含むを取得します。 SDM は、このポインターの [QueryInterface](/cpp/atl/queryinterface)を呼び出して、[**スクリプトドキュメント**] ウィンドウの更新に使用される [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)インターフェイスを取得します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

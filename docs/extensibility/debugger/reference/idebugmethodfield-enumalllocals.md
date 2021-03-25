@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 38f14ba2d520974b9f8f567c7840737ed2763080
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 021dd54157a46e35c0acbb7dd7315fe155304b6d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172169"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076694"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 コンパイラによって内部的に生成されたものも含め、メソッドのすべてのローカル変数の列挙子を作成します。
@@ -52,12 +52,12 @@ int EnumAllLocals(
 ## <a name="return-value"></a>戻り値
  成功した場合、は S_OK を返します。ローカルがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  指定されたデバッグアドレスを含むブロック内で定義されている変数のみが列挙されます。 このメソッドには、コンパイラによって生成されるローカル変数が含まれます。 必要なものがすべてソースで明示的に定義されている場合は、 [enumlocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) メソッドを呼び出します。
 
  メソッドには、複数のスコープコンテキストまたはブロックを含めることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

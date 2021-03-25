@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProviderProgramNode2
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a615c076fd34d7bc230efb0f36683b7167b66566
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3d09046d70d6bc766d17963ea4cdd6469c0981fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102167855"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083675"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 このインターフェイスは、プロセスの境界を越えてプログラムに関連するインターフェイスをマーシャリングします。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProviderProgramNode2 : IUnknown
@@ -42,16 +42,16 @@ IDebugProviderProgramNode2 : IUnknown
 |------------|-----------------|
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|プロセスの境界を越えて、指定されたインターフェイスを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、デバッグ中のプログラムとは別のプロセス空間で DE が実行されるときに実装されます。たとえば、デバッグ中のプログラムのプロセス空間ではなく、Visual Studio のプロセス領域で DE が実行されている場合などです。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
