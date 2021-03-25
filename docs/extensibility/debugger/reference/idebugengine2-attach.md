@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 38275cc623fcb8b30646c9d84ef194f584369ef2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160149"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105093913"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 プログラムまたはプログラムにデバッグエンジン (DE) をアタッチします。 DE が SDM に対してインプロセスで実行されているときに、セッションデバッグマネージャー (SDM) によって呼び出されます。
@@ -67,7 +67,7 @@ int Attach(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  プログラムにアタッチする理由には、次の3つがあります。
 
 - `ATTACH_REASON_LAUNCH` ユーザーがプログラムを含むプロセスを起動したため、DE がプログラムにアタッチされていることを示します。
@@ -90,7 +90,7 @@ int Attach(
 
    またはによって指定された配列内のプログラムノードのメソッドを呼び出す前に、 `pProgram` `rgpProgramNodes` プログラムノードを表すインターフェイスで、必要に応じて偽装を有効にする必要があり `IDebugProgram2` ます。 ただし、通常、この手順は必要ありません。 詳細については、「 [セキュリティの問題](../../../extensibility/debugger/security-issues.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54f62a90ece61fc2dd8f3cc2b242957f249ed33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944512"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062773"
 ---
 # <a name="registering-a-project-type"></a>プロジェクト タイプの登録
 新しいプロジェクトの種類を作成する場合は、がプロジェクトの種類を認識して使用できるようにするレジストリエントリを作成する必要があり [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 通常、これらのレジストリエントリを作成するには、レジストリスクリプト (.rgs) ファイルを使用します。
@@ -49,7 +49,7 @@ ms.locfileid: "99944512"
    @="devenv.exe \"%1\""
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|拡張子が figp であるプロジェクトの種類のファイルの名前と説明。|
 |`Content Type`|REG_SZ|`Text/plain`|プロジェクトファイルのコンテンツの種類。|
@@ -81,7 +81,7 @@ ms.locfileid: "99944512"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@` (既定値)|REG_SZ|`FigPrj Project VSPackage`|この登録された VSPackage のローカライズ可能な名前 (プロジェクトの種類)。|
 |`InprocServer32`|REG_SZ|`%MODULE%`|プロジェクトの種類の DLL のパス。 IDE はこの DLL を読み込み、VSPackage CLSID をに渡して `DllGetClassObject` <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> 、オブジェクトを構築し <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> ます。|
@@ -132,7 +132,7 @@ ms.locfileid: "99944512"
    "SortPriority"=dword:00000064
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|この種類のプロジェクトの既定の名前。|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|パッケージに登録されているサテライト DLL から取得する名前のリソース ID。|
@@ -149,7 +149,7 @@ ms.locfileid: "99944512"
 
  次の表は、前のコードセグメントで使用できるフィルターオプションを示しています。
 
-|フィルターオプション|説明|
+|フィルターオプション|Description|
 |-------------------|-----------------|
 |`CommonFindFilesFilter`|フィルターが [ **フォルダーを** 指定して検索] ダイアログボックスの一般的なフィルターの1つであることを示します。 共通フィルターが [共通] としてマークされていない場合は、フィルター一覧に共通のフィルターが一覧表示されます。|
 |`CommonOpenFilesFilter`|フィルターが [ **ファイルを開く** ] ダイアログボックスの一般的なフィルターの1つであることを示します。 共通フィルターが [共通] としてマークされていない場合は、フィルター一覧に共通のフィルターが一覧表示されます。|
@@ -172,7 +172,7 @@ ms.locfileid: "99944512"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新しいプロジェクトテンプレートのリソース ID。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|登録されているプロジェクトの種類のプロジェクトの既定のパス。|
@@ -193,7 +193,7 @@ ms.locfileid: "99944512"
    "SortPriority"=dword:00000064
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|なし|次のエントリがその他のファイルプロジェクトエントリ用であることを示す既定値。|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|新しい項目の追加テンプレートファイルのリソース ID 値。|
@@ -222,7 +222,7 @@ ms.locfileid: "99944512"
 
   最後のフィールドは、CTMENU リソースのバージョン番号を示します。 バージョン番号を変更することによって、もう一度メニューをマージできます。
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |% CLSID_Package%|REG_SZ|`,1000,1`|メニュー情報を取得するリソース。|
 
@@ -236,7 +236,7 @@ ms.locfileid: "99944512"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|図プロジェクトの新しいプロジェクトテンプレートのリソース ID 値。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新しいプロジェクトディレクトリの既定のパス。 このディレクトリ内の項目は、[ **新しいプロジェクトウィザード** ] ダイアログボックスに表示されます。|
@@ -251,7 +251,7 @@ ms.locfileid: "99944512"
    "UseInterface"=dword:00000001
 ```
 
-|名前|種類|データ|説明|
+|Name|種類|Data|説明|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|登録されている VSPackage のクラス ID。|
 |`UseInterface`|REG_DWORD|`1`|1は、このプロジェクトとの対話に UI が使用されることを示します。 0は、UI インターフェイスがないことを示します。|
@@ -266,7 +266,7 @@ ms.locfileid: "99944512"
 
  つまり、.vsz ファイルに PROJECT_TYPE = EF エントリを含めると、環境では、前に指定した ProductDir ディレクトリにある .vsz ファイルが検索されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [プロジェクト モデルの要素](../../extensibility/internals/elements-of-a-project-model.md)
 - [プロジェクト ファクトリを使用したプロジェクト インスタンスの作成](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

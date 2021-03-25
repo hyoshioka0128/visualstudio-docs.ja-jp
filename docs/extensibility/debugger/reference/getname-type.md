@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9811312188e63017e074d12be6dfa67ab6929aa6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a65c29a1925c8d0c1de97f87707f191713c2bb03
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102162447"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105054596"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 取得するファイルの名前の種類を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_GETNAME_TYPE {
@@ -75,10 +75,10 @@ public enum enum_GETNAME_TYPE {
 `GN_STARTPAGEURL`\
 プロセスの開始ページの URL を取得します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これらの値は、返される名前の種類を指定するために、 [getname](../../../extensibility/debugger/reference/idebugdocument2-getname.md)、 [Getname](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)、および [getname](../../../extensibility/debugger/reference/idebugprocess2-getname.md) メソッドにパラメーターとして渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
