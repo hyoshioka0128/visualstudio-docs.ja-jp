@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - LAUNCH_FLAGS enumeration
 ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e53cb955cda833d2172ed369e5573f257082b08
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 3e12dc587a77e428d3d4c4740043ab5651b7897a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225527"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058002"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
 デバッグ起動フラグを指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_LAUNCH_FLAGS {
@@ -60,12 +60,12 @@ public enum enum_LAUNCH_FLAGS {
 `LAUNCH_MERGE_ENV`\
 プロセスを起動し、環境を起動中のホストにマージします。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これらの値は、 [Launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) メソッドに引数として渡されます。
 
 これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

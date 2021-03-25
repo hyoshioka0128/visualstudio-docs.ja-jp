@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42cdd3f9e5fd1d92e007bb9a15cf9e1fa5e44e83
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c5d20f0bd3727860f32e111baad2d2513590e880
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171453"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064801"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 このインターフェイスは、スタックフレームプロパティ、プログラムドキュメントプロパティ、またはその他のプロパティを表します。 通常、プロパティは、式の評価の結果です。
@@ -26,7 +26,7 @@ ms.locfileid: "102171453"
 > [!NOTE]
 > この "property" の使用は、クラスのメンバー変数と混同しないようにしてください。ただし、は、この `IDebugProperty2` ようなエンティティを表すことができます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProperty2 : IUnknown
@@ -63,21 +63,21 @@ IDebugProperty2 : IUnknown
 |[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|このプロパティの値への参照を返します。|
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|プロパティの拡張された情報を返します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  インターフェイスによって表されるプロパティは、 `IDebugProperty2` 名前、型、およびアドレスを持つ値と考えることができます。 一般的に、は、 `IDebugProperty2` 親ノードと子ノードを持つ階層構造を持つ任意のものを表すことができます。
 
  通常、プロパティは一時的であり、現在のスタックフレームと同じ長さになります。たとえば、のようになります。 一方、 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) インターフェイスによって表される参照は、値がメモリ内に保持されている限り継続します。
 
  IDE では、インターフェイスを使用して、 `IDebugProperty2` ユーザーが実行時にプロパティを参照および変更できるようにすることができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

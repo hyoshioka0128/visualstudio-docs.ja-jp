@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
 ms.assetid: 11fb3545-8974-4776-9a54-6b6e7739ae31
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f739135a9a4bed969163ce26911e5304a66822b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943395"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057456"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 要素
 要素には、 `GuidSymbol` メニュー、グループ、またはコマンドを表す guid: ID ペアの guid が含まれます。 ID は、要素の要素から取得され `IDSymbol` `GuidSymbol` ます。 `GuidSymbol`要素には、 `name` 属性に含まれている GUID のフレンドリ名を提供する属性があり `value` ます。
@@ -54,8 +54,8 @@ ms.locfileid: "99943395"
 |-------------|-----------------|
 |[Symbols 要素](../extensibility/symbols-element.md)|`GuidSymbol` *Vsct* ファイル内の要素をグループ化します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  通常、 *. vsct* ファイルには、パッケージ自体用の3つの要素が含まれています。1つはパッケージ自体用で、もう1つは `GuidSymbol` `Symbols` コマンドセット (パッケージが使用可能にするメニュー、グループ、およびコマンドのコレクション)、もう1つはボタンとその他のビジュアルコンポーネントのアイコンを提供するビットマップ用です。 `IDSymbol`指定された要素内のすべての要素は `GuidSymbol` 、一意である必要があり `value` ます。ただし、 `IDSymbol` 同一の値を持つ要素は、異なる親を持つ限り、パッケージ内に存在することができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio コマンドテーブル (vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

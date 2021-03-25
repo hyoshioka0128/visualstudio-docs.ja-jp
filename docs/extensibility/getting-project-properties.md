@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968191"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057664"
 ---
 # <a name="get-project-properties"></a>プロジェクトのプロパティを取得する
 
@@ -38,7 +38,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>ツールウィンドウにプロジェクトのプロパティを表示するには
 
-1. ProjectPropertiesToolWindowCommand.cs ファイルで、次の using ディレクティブを追加します。
+1. ProjectPropertiesToolWindowCommand ファイルで、次の using ディレクティブを追加します。
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
     ```
 
-2. *ProjectPropertiesToolWindowControl* で、既存のボタンを削除し、ツールボックスから TreeView を追加します。 また、 *ProjectPropertiesToolWindowControl.xaml.cs* ファイルから click イベントハンドラーを削除することもできます。
+2. *ProjectPropertiesToolWindowControl* で、既存のボタンを削除し、ツールボックスから TreeView を追加します。 また、 *ProjectPropertiesToolWindowControl* ファイルから click イベントハンドラーを削除することもできます。
 
-3. *ProjectPropertiesToolWindowCommand.cs* で、メソッドを使用して `ShowToolWindow()` プロジェクトを開き、そのプロパティを読み取り、プロパティを TreeView に追加します。 ShowToolWindow のコードは次のようになります。
+3. *ProjectPropertiesToolWindowCommand* で、メソッドを使用して `ShowToolWindow()` プロジェクトを開き、そのプロパティを読み取り、プロパティを TreeView に追加します。 ShowToolWindow のコードは次のようになります。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

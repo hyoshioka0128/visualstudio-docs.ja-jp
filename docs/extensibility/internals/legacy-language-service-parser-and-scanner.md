@@ -8,17 +8,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c57bd9f8b71f861fd5be4176211af6907b27e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839561"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090838"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>従来の言語サービスのパーサーとスキャナー
 パーサーは言語サービスの中核です。 Managed Package Framework (MPF) 言語クラスでは、表示されているコードに関する情報を選択する言語パーサーが必要です。 パーサーはテキストを字句トークンに分割し、型と機能によってそれらのトークンを識別します。
@@ -50,7 +50,7 @@ namespace MyNamespace
 |MyNamespace|namespace|
 |MyClass|class|
 |MyFunction|method|
-|arg1|parameter|
+|arg1|パラメーター (parameter)|
 |var1|ローカル変数 (local variable)|
 
  パーサーの役割は、トークンを識別することです。 トークンによっては、複数の型を持つことができます。 パーサーによってトークンが識別された後、言語サービスでは、構文の強調表示、かっこの一致、IntelliSense 操作などの有用な機能を提供するために情報を使用できます。
@@ -133,7 +133,7 @@ namespace MyNamespace
 
  オブジェクトは <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトの一部としてパーサーに渡され、新しいオブジェクトが作成されるたびに <xref:Microsoft.VisualStudio.Package.ParseRequest> 新しい <xref:Microsoft.VisualStudio.Package.AuthoringSink> オブジェクトが作成され <xref:Microsoft.VisualStudio.Package.ParseRequest> ます。 また、メソッドは、 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> <xref:Microsoft.VisualStudio.Package.AuthoringScope> さまざまな IntelliSense 操作を処理するために使用されるオブジェクトを返す必要があります。 オブジェクトは、 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 解析の理由に応じて、宣言のリストとメソッドのリストを保持します。これらのメソッドのいずれかに設定されます。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>クラスを実装する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [従来の言語サービスの概要](../../extensibility/internals/legacy-language-service-overview.md)
 - [従来の言語サービスでの構文の配色変更](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

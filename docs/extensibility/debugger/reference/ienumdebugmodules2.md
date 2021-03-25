@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2
 ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33853804078d5f32aba6fda6dac409cf2a24de0a
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 96a35f11346b769a4329b1212a8202e5e5ded006
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224760"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058171"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 このインターフェイスは、モジュールの一覧を列挙します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumDebugModules2 : IUnknown
@@ -46,19 +46,19 @@ IEnumDebugModules2 : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumdebugmodules2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|モジュールの数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  Visual Studio では、主にこのインターフェイスを使用して [ **モジュール** ] ウィンドウを更新します。
 
  Visual Studio でのデバッグのために、プログラムはモジュールの境界を越えることができるコード命令の論理的なシーケンスです。そのため、単一の [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスのモジュールの一覧が必要になります。 リスト内の最初のモジュールには、通常、関連付けられているプログラムの最初のエントリポイントが含まれています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)

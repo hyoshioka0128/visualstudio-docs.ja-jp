@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97926070bd06e4e8a99a4d6b2fe59e4ea57233ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a034fc1c7cded7de4ead38cfba5d3410341c95d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929226"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057417"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>方法: ドキュメントデータにビューをアタッチする
 新しいドキュメントビューがある場合は、それを既存のドキュメントデータオブジェクトにアタッチすることができます。
@@ -44,6 +44,6 @@ ms.locfileid: "99929226"
 ## <a name="robust-programming"></a>信頼性の高いプログラミング
  Visual Studio がメソッドの実装を呼び出すと <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 、パラメーター内の既存のドキュメントデータオブジェクトへのポインターが渡さ `punkDocDataExisting` れます (存在する場合)。 で返されたドキュメントデータオブジェクトを調べ `punkDocDataExisting` て、ドキュメントデータオブジェクトがエディターに適しているかどうかを確認します。これについては、このトピックの手順 4. のメモを参照してください。 適切な場合は、「 [複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)」で説明されているように、エディターファクトリはデータの2番目のビューを提供する必要があります。 そうでない場合は、適切なエラーメッセージが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [複数のドキュメントビューのサポート](../extensibility/supporting-multiple-document-views.md)
 - [カスタムエディターでのドキュメントデータとドキュメントビュー](../extensibility/document-data-and-document-view-in-custom-editors.md)

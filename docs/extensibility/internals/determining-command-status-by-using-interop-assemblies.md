@@ -8,17 +8,17 @@ helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef6940aef83ad3865385b4e39fd9cfd62b8866d7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963446"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090903"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>相互運用機能アセンブリを使用してコマンドの状態を確認する
 VSPackage は、処理可能なコマンドの状態を追跡する必要があります。 環境では、VSPackage 内で処理されたコマンドが有効または無効になるタイミングを判断できません。 **切り取り**、**コピー**、**貼り付け** などの一般的なコマンドの状態など、コマンドの状態について環境に通知するのは、VSPackage の役割です。
@@ -35,6 +35,6 @@ VSPackage は、処理可能なコマンドの状態を追跡する必要があ�
 ## <a name="status-notification-failure"></a>状態通知エラー
  VSPackage がコマンドの状態の変更を環境に通知するのに失敗すると、UI が不整合な状態になる可能性があります。 メニューまたはコンテキストメニューのコマンドは、ユーザーがツールバー上に配置できることに注意してください。 そのため、メニューまたはコンテキストメニューが開いている場合にのみ UI を更新するだけでは十分ではありません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Vspackage のユーザーインターフェイス要素の追加方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [実装](../../extensibility/internals/command-implementation.md)

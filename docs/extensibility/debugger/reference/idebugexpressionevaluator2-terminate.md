@@ -7,20 +7,20 @@ helpviewer_keywords:
 - Terminate
 - IDebugExpressionEvaluator2::Terminate
 ms.assetid: 38265100-4d80-4902-833a-07bb569f9ba8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 703d6a0179fca8da68af1b0815a07fd01fb672c6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: cab26c681b621980f1c9220c72bd3107a03c64fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152248"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077318"
 ---
 # <a name="idebugexpressionevaluator2terminate"></a>IDebugExpressionEvaluator2::Terminate
 式エバリュエーターを停止してクリーンアップします。
@@ -40,7 +40,7 @@ int Terminate ();
 ## <a name="return-value"></a>戻り値
 成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 クリーンアップされるときに、式エバリュエーターに通知します。
 
 ## <a name="example"></a>例
@@ -60,5 +60,5 @@ STDMETHODIMP ExpressionEvaluatorPackage::Terminate(void)
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

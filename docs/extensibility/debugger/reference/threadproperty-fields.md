@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 698c803304cf5efd3375b6d49e4dedbc4622f4c1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 81d185a80761e42e706dc3ef36da056bb37b0b1c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221835"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070870"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 スレッドに関する情報を取得するかどうかを指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_THREADPROPERTY_FIELDS { 
@@ -75,14 +75,14 @@ public enum enum_THREADPROPERTY_FIELDS {
  `TPF_ALLFIELDS`\
  すべてのフィールドを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  これらの値は、引数として [Getthreadproperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) メソッドに渡さ [れ、どの](../../../extensibility/debugger/reference/threadproperties.md) フィールドを初期化するかを示します。
 
  これらの値は `dwFields` 、使用される `THREADPROPERTIES` フィールドと有効なフィールドを示すために、構造体のメンバーでも使用されます。
 
  これらのフラグは、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

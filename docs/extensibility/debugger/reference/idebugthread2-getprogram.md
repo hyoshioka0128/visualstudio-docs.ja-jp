@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetProgram
 ms.assetid: 8c9c5ea1-2031-472e-bc8f-30e22e754566
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd58ffb9cbcfd073d20643c4702194759f6267a0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e29b0683931e82617a4d34cfa438fd5cac6d55e9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164592"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070961"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 スレッドが実行されているプログラムを取得します。
@@ -47,6 +47,6 @@ int GetProgram (
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

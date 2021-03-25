@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - OPTNAMECHANGEPFN callback function
 ms.assetid: 147303f3-c7f1-438a-81b7-db891ea3d076
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e583c7e19fb6123da06d0ee525abe9c573d8d788
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e6cb58aebbe76eff5c66dc29ecfad8c77c8717c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922890"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090370"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 これは、 [Sccsetoption](../extensibility/sccsetoption-function.md) (using オプション) の呼び出しで指定されたコールバック関数であり、 `SCC_OPT_NAMECHANGEPFN` ソース管理プラグインによって IDE に戻された名前の変更を通知するために使用されます。
@@ -55,6 +55,6 @@ typedef void (*OPTNAMECHANGEPFN)(
 
  IDE がこのコールバックをサポートしていない場合は、 [Sccsetoption](../extensibility/sccsetoption-function.md) を呼び出して指定しません。 プラグインがこのコールバックをサポートしていない場合、 `SCC_E_OPNOTSUPPORTED` `SccSetOption` IDE がコールバックを設定しようとすると、関数からが返されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDE によって実装されるコールバック関数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccSetOption](../extensibility/sccsetoption-function.md)

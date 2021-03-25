@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57a273d994e6b8a4b34a139ab98713cc8c6cd83b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a39987e13ed3af4bc19c3a80baf0049467daf3a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057651"
 ---
 # <a name="get-service-information-from-the-settings-store"></a>設定ストアからサービス情報を取得する
 設定ストアを使用して、使用可能なすべてのサービスを検索したり、特定のサービスがインストールされているかどうかを判断したりできます。 サービスクラスの型を把握している必要があります。
@@ -24,7 +24,7 @@ ms.locfileid: "99968126"
 
 1. という名前の VSIX プロジェクトを作成し、と `FindServicesExtension` いう名前のカスタムコマンドを追加し `FindServicesCommand` ます。 カスタムコマンドを作成する方法の詳細については、「[メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. *FindServicesCommand.cs* で、次の using ディレクティブを追加します。
+2. *Findサービスコマンド .cs* で、次の using ディレクティブを追加します。
 
     ```csharp
     using System.Collections.Generic;

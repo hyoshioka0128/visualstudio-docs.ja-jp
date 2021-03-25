@@ -6,16 +6,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b804d3f7697890773b4b6888bcffa108b7a11b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 0ce09edd20c0c46a6b93ace77808fdfc7d5d1c5d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993459"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057365"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>方法: 規則ベースの UI コンテキストを Visual Studio 拡張機能に使用する
 
@@ -132,7 +132,7 @@ Visual Studio では、特定の既知のがアクティブになったときに
 
 サポートされているさまざまな種類の用語を次に示します。
 
-|項目|説明|
+|項目|Description|
 |-|-|
 |{nnnnnnnn-nnnn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|GUID は、UI コンテキストを参照します。 この用語は、UI コンテキストがアクティブである場合は true、それ以外の場合は false になります。|
 |HierSingleSelectionName:\<pattern>|この用語は、アクティブ階層内の選択が単一の項目であり、選択した項目の名前が "pattern" で指定された .Net 正規表現と一致する場合に true になります。|

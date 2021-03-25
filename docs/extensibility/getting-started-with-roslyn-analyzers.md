@@ -5,23 +5,23 @@ ms.custom: SEO-VS-2020
 ms.date: 04/02/2018
 ms.topic: conceptual
 ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e12c418365ad7127823a115aa1ed66b06ff6e156
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4579f148d2e27961fe1c579ffe3583e0e6be806c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945813"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057599"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn アナライザーを使ってみる
 
 Visual Studio のプロジェクトベースのコードアナライザーを使用すると、API の作成者は、NuGet パッケージの一部としてドメイン固有のコード分析を行うことができます。 これらのアナライザーは .NET Compiler Platform (コードネーム "Roslyn") を備えているので、行を完了する前に入力したコードに警告を生成することができます (問題を検出するためのコードのビルドを待機する必要はありません)。 また、アナライザーは、Visual Studio 電球のプロンプトを使用してコードを自動的に修正することもできます。これにより、コードをすぐにクリーンアップできます。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>はじめに
 
 [Roslyn アナライザーの概要](../code-quality/roslyn-analyzers-overview.md)
 
@@ -33,7 +33,7 @@ Visual Studio のプロジェクトベースのコードアナライザーを使
 
 [3種類のアナライザーにグループ化された GitHub のいくつかの例](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [.NET compiler platform パッケージバージョンリファレンス](roslyn-version-support.md)
 - [GitHub OSS サイトに関するその他のドキュメント](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)

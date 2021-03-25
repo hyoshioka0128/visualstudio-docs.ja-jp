@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc914334fc4b8ebf2dd73f691cdec242e19364a9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 266d786df422e5260e212a4005feb7d3167af099
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222290"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057898"
 ---
 # <a name="module_symbol_search_info"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -52,7 +52,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 `bstrVerboseSearchInfo`\
 検索パスと結果が1つの文字列に連結されます。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
 この構造体は、 [Getシンボル情報](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) メソッドの呼び出しから返されます。
 
@@ -70,7 +70,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 
 `\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.`
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 
 ヘッダー: msdbg. h
 
@@ -78,7 +78,7 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

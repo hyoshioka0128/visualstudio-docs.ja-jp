@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, termination events
 - debugging [Debugging SDK], terminating a program
 ms.assetid: eedda0a3-5e05-44fe-841d-a2f4866ac72d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f44cb287945576d361d0318eaeafa42de99871d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db67e0a391f40fc17a80e616e10aa46a600337a4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057859"
 ---
 # <a name="terminating-a-program"></a>プログラムを終了する
 次のセクションでは、1つのスレッドで1つのプログラムを終了する方法について説明します。
@@ -31,5 +31,5 @@ ms.locfileid: "99895909"
 
    IDE がデザインモードになります。 デバッグエンジンまたはランタイム環境は、 [IDebugPortNotify2:: RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) を呼び出して、ポートからプログラムを削除します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [呼び出し (デバッガーイベントを)](../../extensibility/debugger/calling-debugger-events.md)

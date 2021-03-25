@@ -7,17 +7,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - RegPkg
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b73f968d51cb15cde910a5bcbd7e541007f22fe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48e3699b095ed7b9d0e72cf7b09ad02e26ac5a51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959468"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090760"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg パッケージ登録のトラブルシューティング
 > [!NOTE]
@@ -38,6 +38,6 @@ ms.locfileid: "99959468"
 
    以前のバージョンの RegPkg では、Microsoft.VisualStudio.Shell.dll アセンブリを使用してビルドされたパッケージを登録できます。 ただし、新しいバージョンのアセンブリを使用してビルドされたパッケージを登録することはできません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Visual Studio トラブルシューティング](/troubleshoot/visualstudio/welcome-visual-studio/)

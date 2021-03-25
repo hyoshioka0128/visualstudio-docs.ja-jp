@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetExtendedInfo method
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98d522222d57a0828ebcefe446262033d2d8dfc1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 3e17c824d2be7ff12e3e967b953e25359b650b1c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151963"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105077071"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 このメソッドは、フィールドに関する拡張情報を取得します。
@@ -46,7 +46,7 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>パラメーター
 `guidExtendedInfo`\
-から返される情報を選択します。 有効な値は次のとおりです。
+から返される情報を選択します。 次の値を指定できます。
 
 |値|説明|
 |-----------|-----------------|
@@ -62,8 +62,8 @@ int GetExtendedInfo(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  現在、このメソッドは定数の型または値のみを返します。 呼び出し元は、 `prgBuffer` COM の `CoTaskMemFree` 関数 (C++) または (C#) を呼び出すことによって、で返されたバッファーを解放する必要があり <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

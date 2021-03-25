@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943245"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090643"
 ---
 # <a name="manage-universal-windows-projects"></a>ユニバーサル Windows プロジェクトを管理する
 
@@ -31,7 +31,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 2. *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* と *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* への参照を追加します (「 **Extensions** 」セクション)。
 
-3. *TestUniversalProject.cs* を開き、次のディレクティブを追加し `using` ます。
+3. *TestUniversalProject* を開き、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using EnvDTE;
@@ -425,9 +425,9 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
       この手順では、共有プロジェクトとプラットフォームプロジェクトにイベントリスナーを追加します。 次に、共有プロジェクト内の1つのファイルの名前を変更し、プラットフォームプロジェクト内の別のファイルを変更すると、各名前変更操作に対して発生したイベントを確認できます。
 
-2. イベントリスナーを追加します。 新しいクラスファイルをプロジェクトに追加し、 *HierarchyEventListener.cs* を呼び出します。
+2. イベントリスナーを追加します。 新しいクラスファイルをプロジェクトに追加し、 *HierarchyEventListener* を呼び出します。
 
-3. *HierarchyEventListener.cs* ファイルを開き、次の using ディレクティブを追加します。
+3. *HierarchyEventListener* ファイルを開き、次の using ディレクティブを追加します。
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. プロジェクトをビルドして実行します。 実験用インスタンスで C# ユニバーサルハブアプリを作成し、[ **ツール** ] メニューにアクセスし、[ **TestUniversalProject の呼び出し**] をクリックして、[全般出力] ウィンドウのテキストを確認します。 共有プロジェクトの最初の項目の名前 (app.xaml ファイルであることが予想され *ます* ) は変更する必要があり、イベントが発生したことを確認する必要があり <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ます。 この場合、 *app.xaml* の名前を変更すると *App.xaml.cs* の名前も変更されるため、4つのイベント (プラットフォームプロジェクトごとに2つ) が表示されます。 (DTE イベントは、共有プロジェクト内の項目を追跡しません)。2つ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> のイベント (プラットフォームプロジェクトごとに1つ) が表示しますが、イベントはありません <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 。
+11. プロジェクトをビルドして実行します。 実験用インスタンスで C# ユニバーサルハブアプリを作成し、[ **ツール** ] メニューにアクセスし、[ **TestUniversalProject の呼び出し**] をクリックして、[全般出力] ウィンドウのテキストを確認します。 共有プロジェクトの最初の項目の名前 (app.xaml ファイルであることが予想され *ます* ) は変更する必要があり、イベントが発生したことを確認する必要があり <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> ます。 この場合 *、app.xaml の名前を**変更すると*、app.xaml の名前も変更されるため、4つのイベント (プラットフォームプロジェクトごとに2つ) が表示されます。 (DTE イベントは、共有プロジェクト内の項目を追跡しません)。2つ <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> のイベント (プラットフォームプロジェクトごとに1つ) が表示しますが、イベントはありません <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 。
 
 12. ここで、プラットフォームプロジェクト内のファイルの名前を変更しようとすると、発生したイベントの違いを確認できます。 の呼び出しの後に、次のコードを追加し `ShowMessageBox` `ModifyFileName` ます。
 

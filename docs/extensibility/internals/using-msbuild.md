@@ -9,17 +9,17 @@ helpviewer_keywords:
 - MSBuild, extensibility
 - packages, compiling with MSBuild
 ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92c423254c2e2e0a605ab3f7ff2238db41f4b45a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8891d9674a952f0272855c8b9203109ad2e22468
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883130"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090695"
 ---
 # <a name="using-msbuild"></a>MSBuild の使用
 MSBuild には、ビルドするプロジェクト項目、ビルドタスク、およびビルド構成を完全に記述したプロジェクトファイルを作成するための、適切に定義された拡張可能な XML 形式が用意されています。
@@ -42,7 +42,7 @@ MSBuild には、ビルドするプロジェクト項目、ビルドタスク、
 
  プロジェクト固有の MPF クラスは次のとおりです。
 
-|インスタンス|実装|
+|クラス|実装|
 |-----------|--------------------|
 |`Microsoft.VisualStudio.Package.ProjectNode`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents>|
 |`Microsoft.VisualStudio.Package.ProjectFactory`|<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>|
@@ -55,7 +55,7 @@ MSBuild には、ビルドするプロジェクト項目、ビルドタスク、
 #### <a name="single-file-generators-vs-msbuild-tasks"></a>単一ファイルジェネレーターと MSBuild タスク
  1つのファイルジェネレーターにはデザイン時にのみアクセスできますが、MSBuild タスクはデザイン時およびビルド時に使用できます。 そのため、柔軟性を最大限に高めるために、MSBuild タスクを使用してコードを変換および生成します。 詳細については、「 [カスタムツール](../../extensibility/internals/custom-tools.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [MSBuild リファレンス](../../msbuild/msbuild-reference.md)
 - [MSBuild](../../msbuild/msbuild.md)
 - [カスタムツール](../../extensibility/internals/custom-tools.md)

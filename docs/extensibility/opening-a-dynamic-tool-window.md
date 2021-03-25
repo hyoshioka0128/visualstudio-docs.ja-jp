@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 357644f67da9a3bbc468d708cf39e44f737dbf0f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946593"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090422"
 ---
 # <a name="open-a-dynamic-tool-window"></a>動的ツールウィンドウを開く
 ツールウィンドウは、通常、メニューのコマンドから、または同等のキーボードショートカットによって開かれます。 ただし、特定の UI コンテキストが適用されるたびに表示されるツールウィンドウが必要になる場合があり、UI コンテキストが適用されなくなると、が終了します。 これらの種類のツールウィンドウは、 *動的* または *自動で表示* されます。
@@ -34,9 +34,9 @@ ms.locfileid: "99946593"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>動的ツールウィンドウを開くには
 
-1. **DynamicToolWindow** という名前の VSIX プロジェクトを作成し、 *DynamicWindowPane.cs* という名前のツールウィンドウ項目テンプレートを追加します。 詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
+1. **DynamicToolWindow** という名前の VSIX プロジェクトを作成し、 *DynamicWindowPane* という名前のツールウィンドウ項目テンプレートを追加します。 詳細については、「 [ツールウィンドウで拡張機能を作成](../extensibility/creating-an-extension-with-a-tool-window.md)する」を参照してください。
 
-2. *DynamicWindowPanePackage.cs* ファイルで、DynamicWindowPanePackage 宣言を見つけます。 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ツールウィンドウを登録するには、属性と属性を追加します。
+2. *Dynamicwindowpanepackage .cs* ファイルで、dynamicwindowpanepackage 宣言を見つけます。 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> ツールウィンドウを登録するには、属性と属性を追加します。
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]

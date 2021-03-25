@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3b220fa02809015d1fa699c5e9eb5edac8cf2f3
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 21baaa5e5eb7446636fcbab9038db87444d50017
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166685"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083935"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 このプロパティに関連付けられている文字列を取得し、ユーザー指定のバッファーに格納します。
@@ -59,7 +59,7 @@ int GetStringChars(
 ## <a name="return-value"></a>戻り値
 成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 C++ では、バッファーの長さが Unicode 文字以上であることを保証するために注意する必要があり `buflen` ます。 Unicode 文字は2バイト長であることに注意してください。
 
 > [!NOTE]
