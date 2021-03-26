@@ -12,17 +12,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9f5066c5ae5c9fa57517406b8eca388747979c4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970271"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082089"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio メニューの Guid と Id
 この記事では、Visual Studio のメニューバーにあるメニューとグループの GUID と ID の値を列挙します。 これらの値は、Visual Studio SDK の一部としてインストールされる、 *vsct* ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
@@ -34,12 +34,12 @@ ms.locfileid: "99970271"
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio のメニューバーのグループ
  メニューバーにメニューを追加するには、これらのグループのいずれかを親として設定します。
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |ファイル/編集/表示|IDG_VS_MM_FILEEDITVIEW|
 |リファクタリング|IDG_VS_MM_REFACTORING:|
 |Project|IDG_VS_MM_PROJECT|
-|ビルド|IDG_VS_MM_BUILDDEBUGRUN|
+|Build|IDG_VS_MM_BUILDDEBUGRUN|
 |形式/ツール|IDG_VS_MM_TOOLSADDINS|
 |ウィンドウ/ヘルプ/コミュニティ|IDG_VS_MM_WINDOWHELP|
 |Addins|IDG_VS_MM_MACROS|
@@ -51,14 +51,14 @@ ms.locfileid: "99970271"
 |メニュー|id|
 |----------|--------|
 |ファイル|IDM_VS_MENU_FILE|
-|[編集]|IDM_VS_MENU_EDIT|
+|編集|IDM_VS_MENU_EDIT|
 |表示|IDM_VS_MENU_VIEW|
 |リファクター|IDM_VS_MENU_REFACTORING|
 |Project|IDM_VS_MENU_PROJECT|
-|ビルド|IDM_VS_MENU_BUILD|
+|Build|IDM_VS_MENU_BUILD|
 |フォーマット|IDM_VS_MENU_FORMAT|
 |ツール|IDM_VS_MENU_TOOLS|
-|Extensions|IDM_VS_MENU_EXTENSIONS|
+|拡張機能|IDM_VS_MENU_EXTENSIONS|
 |ウィンドウ|IDM_VS_MENU_WINDOW|
 |Addins|IDM_VS_MENU_ADDINS|
 |コミュニティ|IDM_VS_MENU_COMMUNITY|
@@ -69,15 +69,15 @@ ms.locfileid: "99970271"
 
 ### <a name="file-menu-groups"></a>[ファイル] メニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |新規/オープン|IDG_VS_FILE_FILE|
 |追加|IDG_VS_FILE_ADD|
 |解決策|IDG_VS_FILE_SOLUTION|
 |その他|IDG_VS_FILE_MISC|
 |保存|IDG_VS_FILE_SAVE|
-|[名前の変更]|IDG_VS_FILE_RENAME|
-|ブラウザー|IDG_VS_FILE_BROWSER|
+|名前の変更|IDG_VS_FILE_RENAME|
+|Browser|IDG_VS_FILE_BROWSER|
 |印刷|IDG_VS_FILE_PRINT|
 |最近使用|IDG_VS_FILE_MRU|
 |詳細ビュー|IDG_VS_FILE_MOVE|
@@ -85,30 +85,30 @@ ms.locfileid: "99970271"
 
 ### <a name="edit-menu-groups"></a>メニューグループの編集
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |元に戻す/やり直し|IDG_VS_EDIT_UNDOREDO|
 |切り取り/コピー/貼り付け|IDG_VS_EDIT_CUTCOPY|
 |Select|IDG_VS_EDIT_SELECT|
 |GoTo|IDG_VS_EDIT_GOTO|
 |Find|IDG_VS_EDIT_FIND|
-|オブジェクト|IDG_VS_EDIT_OBJECTS|
+|Objects|IDG_VS_EDIT_OBJECTS|
 |OLE 動詞|IDG_VS_EDIT_OLEVERBS|
 |コマンドウェル|IDG_VS_EDIT_COMMANDWELL|
 
 ### <a name="refactor-menu-groups"></a>[リファクター] メニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |共通|IDG_REFACTORING_COMMON|
-|詳細設定|IDG_REFACTORING_ADVANCED|
+|上級|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>メニューグループの表示
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |フォームコード|IDG_VS_VIEW_FORMCODE|
-|ブラウザー|IDG_VS_VIEW_BROWSER|
+|Browser|IDG_VS_VIEW_BROWSER|
 |ビューの定義|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
 |Windows の設計|IDG_VS_VIEW_ARCH_WINDOWS|
@@ -126,7 +126,7 @@ ms.locfileid: "99970271"
 
 ### <a name="project-menu-groups"></a>[プロジェクト] メニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |その他の追加|IDG_VS_PROJ_MISCADD|
 |追加|IDG_VS_PROJ_ADD|
@@ -138,7 +138,7 @@ ms.locfileid: "99970271"
 
 ### <a name="build-menu-groups"></a>ビルドメニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |解決策|IDG_VS_BUILD_SOLUTION|
 |選択|IDG_VS_BUILD_SELECTION|
@@ -148,7 +148,7 @@ ms.locfileid: "99970271"
 
 ### <a name="tools-menu-groups"></a>[ツール] メニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |コマンド ライン|IDG_VS_TOOLS_CMDLINE|
 |スニペット|IDG_VS_TOOLS_SNIPPETS|
@@ -160,22 +160,22 @@ ms.locfileid: "99970271"
 
 ### <a name="window-menu-groups"></a>ウィンドウメニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
-|新規|IDG_VS_WINDOW_NEW|
+|新規作成|IDG_VS_WINDOW_NEW|
 |Dock/Close|IDG_VS_DOCKCLOSE|
 |Dock/Hide|IDG_VS_DOCKHIDE|
 |整列|IDG_VS_WINDOW_ARRANGE|
-|［ナビゲーション］|IDG_VS_WINDOW_NAVIGATION|
+|ナビゲーション|IDG_VS_WINDOW_NAVIGATION|
 |List|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>ヘルプメニューグループ
 
-|Group|id|
+|グループ|id|
 |-----------|--------|
 |サンプル|IDG_VS_HELP_SAMPLES|
 |サポート|IDG_VS_HELP_SUPPORT|
-|バージョン情報|IDG_VS_HELP_ABOUT|
+|詳細|IDG_VS_HELP_ABOUT|
 
 ## <a name="submenus-of-visual-studio-menus"></a>Visual Studio メニューのサブメニュー
  次の階層は、Visual Studio のメニューバーのメニューに関連付けられているサブメニューを示しています。 親としてメニューを持つことができるのはグループのみなので、すべてのサブメニューは、メニューから直接ではなく、メニュー上のグループから降下する必要があります。 メニュー、グループ、サブメニュー間の関係の詳細については、「 [メニューへのサブメニューの追加](../../extensibility/adding-a-submenu-to-a-menu.md)」を参照してください。
@@ -215,7 +215,7 @@ ms.locfileid: "99970271"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio ツールバーの Guid と Id](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [Visual Studio コマンドの Guid と Id](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

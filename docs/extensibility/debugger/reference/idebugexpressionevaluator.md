@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator interface
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2e1fb465155bac2aa4be2b0d0a041715bf63bfa
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: dd14e85d279bd724dcfdf2cd9b71028ac5a4fd87
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152352"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092073"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102152352"
 
 このインターフェイスは、式エバリュエーターを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugExpressionEvaluator : IUnknown
@@ -49,12 +49,12 @@ IDebugExpressionEvaluator : IUnknown
 |[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|印刷可能な結果を作成するために使用する言語を決定します。|
 |[SetRegistryRoot](../../../extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot.md)|レジストリルートを設定します。 サイドバイサイドデバッグに使用されます。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 一般的な状況では、デバッグエンジン (DE) は [Parsetext](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)の呼び出しの結果として式エバリュエーター (EE) をインスタンス化します。 DE は使用する EE の言語とベンダーを認識しているため、DE は、EE の CLSID をレジストリから取得します ( [デバッグ機能の SDK ヘルパー](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) は、 `GetEEMetric` この取得に役立ちます)。
 
 EE がインスタンス化されると、DE は [解析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) を呼び出して式を解析し、 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) オブジェクトに格納します。 後で [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) を呼び出すと、式が評価されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: ee
 
 名前空間: VisualStudio。
@@ -103,7 +103,7 @@ IDebugExpressionEvaluator GetExpressionEvaluator(IDebugSymbolProvider pSymbolPro
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)

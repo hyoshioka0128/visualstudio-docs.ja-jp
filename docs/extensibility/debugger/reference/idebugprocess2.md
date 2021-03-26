@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2 interface
 ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131eacba321bac70c75b77faf33b18aae0135e55
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0d56687cb3559b5807b488fa44dfdfc4048e4c58
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150264"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081608"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 このインターフェイスは、ポートで実行されているプロセスを表します。 ポートがローカルポートの場合、 `IDebugProcess2` 通常はローカルコンピューター上の物理プロセスを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProcess2 : IUnknown
@@ -59,17 +59,17 @@ IDebugProcess2 : IUnknown
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|このプロセスでコードを実行している次のプログラムが停止することを要求します。|
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|このプロセスが実行されているポートを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  に `IDebugProcess2` は、1つ以上の [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) インターフェイスが含まれています。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

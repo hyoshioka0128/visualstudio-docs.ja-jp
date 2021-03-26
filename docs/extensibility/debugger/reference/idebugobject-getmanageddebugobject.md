@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87956b3630f9d152ecdda7754623e7257cf0a01a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 56961930e08e7d53dfe387c00642ae7266c230c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164768"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081920"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 デバッグエンジンのアドレス空間にマネージオブジェクトのコピーを作成します。
@@ -47,9 +47,9 @@ int GetManagedDebugObject(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。それ以外の場合は、エラーコードを返します。 この [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) がマネージ値クラスのインスタンスを表していない場合は E_FAIL を返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) オブジェクトは、インスタンスなどのマネージ値クラスのインスタンスを表す必要があり `System.Decimal` ます。 ローカルコピーを用意することで、 [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 呼び出しのオーバーヘッドが解消されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 418da1be71b0299c93f2813397c28144425f81a4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a9817e68cc01c6a867ee2e53a8824ecd759ee014
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164769"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081829"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 プロセスのタイトル、フレンドリ名、またはファイル名を取得します。
@@ -52,6 +52,6 @@ int GetName(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)
