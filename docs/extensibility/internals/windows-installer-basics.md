@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe009fa3ee8c8b9f2d15d3de4ee1fd067647c925
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869493"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074289"
 ---
 # <a name="windows-installer-basics"></a>Windows インストーラーの基本事項
 Windows インストーラーは、ユーザーのコンピューターにアプリケーションまたはソフトウェア製品をインストールしてアンインストールし、これらのタスクを Windows インストーラーコンポーネント (WICs またはコンポーネントとも呼ばれます) と呼ばれる単位で実行します。 GUID は、各 WIC を識別します。これは、インストールの基本単位であり、Windows インストーラーを使用したセットアップの参照カウントです。
@@ -69,5 +69,5 @@ Windows インストーラーは、ユーザーのコンピューターにアプ
 
 - バージョン管理されたリソースを複数の WIC に発送することはできません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コンポーネントルールが壊れている場合はどうなりますか。](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

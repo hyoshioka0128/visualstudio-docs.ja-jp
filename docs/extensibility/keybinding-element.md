@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9162d9b21c54577e48f4dced6ddddd7138c9de66
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943349"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074094"
 ---
 # <a name="keybinding-element"></a>キーバインド要素
 キーバインド要素は、コマンドのキーボードショートカットを指定します。
@@ -42,11 +42,11 @@ ms.locfileid: "99943349"
 |id|必須。|
 |エディター|必須。 エディターの GUID は、このショートカットキーがアクティブになる編集コンテキストを示します。 グローバルバインドスコープの値は "guidVSStd97" です。|
 |key1|必須。 有効な値には、すべての種類の英数字を含めることができます。また、2桁の16進値の前に0x と [VK_constants](/windows/desktop/inputdev/virtual-key-codes)を指定します。|
-|mod1|任意。 スペースで区切られた **Ctrl**、 **Alt**、および **Shift** の任意の組み合わせ。|
-|key2|任意。 有効な値には、すべての種類の英数字を含めることができます。また、2桁の16進値の前に0x と [VK_constants](/windows/desktop/inputdev/virtual-key-codes)を指定します。|
-|mod2|任意。 スペースで区切られた **Ctrl**、 **Alt**、および **Shift** の任意の組み合わせ。|
-|エミュレーター|任意。|
-|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|mod1|省略可能。 スペースで区切られた **Ctrl**、 **Alt**、および **Shift** の任意の組み合わせ。|
+|key2|省略可能。 有効な値には、すべての種類の英数字を含めることができます。また、2桁の16進値の前に0x と [VK_constants](/windows/desktop/inputdev/virtual-key-codes)を指定します。|
+|mod2|省略可能。 スペースで区切られた **Ctrl**、 **Alt**、および **Shift** の任意の組み合わせ。|
+|エミュレーター|省略可能。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 

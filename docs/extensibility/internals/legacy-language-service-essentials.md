@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Visual Studio, integrating programming languages
 - programming languages, integrating into Visual Studio
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a96b17fbb4caca92124732593da8982f07349155
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa3fc358e7557360f02a80f108bcbec74ae48e5f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074562"
 ---
 # <a name="legacy-language-service-essentials"></a>従来の言語サービスの基本情報
 プログラミング言語を Visual Studio に統合するには、言語サービスを提供する必要があります。 このトピックでは、従来の言語サービスで使用できる機能について説明します。
@@ -32,7 +32,7 @@ ms.locfileid: "99839691"
 
  従来の言語サービスでは、次の機能が提供されます。
 
-|機能|Description|
+|特徴量|Description|
 |-------------|-----------------|
 |構文の色分け表示|エディタービューで、言語のさまざまな要素に対して異なる色とフォントスタイルを表示します。 このような違いにより、ファイルの読み取りと編集が容易になります。<br /><br /> 一般的な情報については、「 [従来の言語サービスの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)表示」を参照してください。<br /><br /> Managed package framework (MPF) のこの機能の詳細については、「 [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)」を参照してください。|
 |ステートメント入力候補|ユーザーが入力を開始したステートメントまたはキーワードを完了します。 ステートメント入力候補を使用すると、入力が少なく、エラーが発生する可能性が少なくなるため、ユーザーは複雑なステートメントを簡単に入力できます。<br /><br /> 一般的な情報については、「 [従来の言語サービスでのステートメント入力候補](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)」を参照してください。<br /><br /> MPF のこの機能の詳細については、「 [従来の言語サービスでの単語補完](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)」を参照してください。|
@@ -44,7 +44,7 @@ ms.locfileid: "99839691"
 
  次の機能は、プログラミング言語のサポートに関連していますが、言語サービスには含まれていません。
 
-| 機能 | Description |
+| 特徴量 | Description |
 |-----------------------| - |
 | 式エバリュエーター | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ブレークポイントを検証し、[**自動変数** デバッグ] ウィンドウに表示される式の一覧を指定することにより、デバッガーをサポートします。<br /><br /> 詳細については、「 [デバッグのための言語サービスのサポート](../../extensibility/internals/language-service-support-for-debugging.md)」を参照してください。 |
 | シンボル参照ツール | **シンボル結果** の **オブジェクトブラウザー**、**クラスビュー**、**呼び出しブラウザー**、および検索をサポートします。 |

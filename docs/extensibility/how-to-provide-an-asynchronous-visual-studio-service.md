@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbdd539437bce6f160dfa8661f514bf9f40b134
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9973bb86296442f4b936ddb54ff645d74d7ab74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965331"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074939"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>方法: 非同期の Visual Studio サービスを提供する
 UI スレッドをブロックせずにサービスを取得する場合は、非同期サービスを作成し、バックグラウンドスレッドでパッケージを読み込む必要があります。 このため、ではなくを使用 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> <xref:Microsoft.VisualStudio.Shell.Package> して、非同期パッケージの特別な非同期メソッドを使用してサービスを追加できます。
@@ -26,9 +26,9 @@ UI スレッドをブロックせずにサービスを取得する場合は、�
 
 1. Vsix プロジェクトを作成します ([**ファイル**] [新規] [プロジェクト] [  >    >    >  **Visual C#**  >  **Extensiblity**] [  >  **vsix プロジェクト**])。 プロジェクトに **Testasync** という名前を指定します。
 
-2. VSPackage をプロジェクトに追加します。 **ソリューションエクスプローラー** でプロジェクトノードを選択し、[**追加**] [  >  **新しい項目**] [  >  **visual C# 項目**] [拡張] [  >    >  **visual Studio パッケージ**] の順にクリックします。 このファイルに *TestAsyncPackage.cs* という名前を指定します。
+2. VSPackage をプロジェクトに追加します。 **ソリューションエクスプローラー** でプロジェクトノードを選択し、[**追加**] [  >  **新しい項目**] [  >  **visual C# 項目**] [拡張] [  >    >  **visual Studio パッケージ**] の順にクリックします。 このファイルに「 *Testasyncpackage .cs*」という名前を指定します。
 
-3. *TestAsyncPackage.cs* で、次のようにではなくから継承するようにパッケージを変更し `AsyncPackage` `Package` ます。
+3. *Testasyncpackage .cs* で、次のようにで `AsyncPackage` はなくから継承するようにパッケージを変更します。 `Package`
 
     ```csharp
     public sealed class TestAsyncPackage : AsyncPackage
@@ -122,7 +122,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 ## <a name="add-a-service"></a>サービスの追加
 
-1. *TestAsyncPackage.cs* で、メソッドを削除 `Initialize()` し、メソッドをオーバーライドし `InitializeAsync()` ます。 サービスを追加し、コールバックメソッドを追加してサービスを作成します。 サービスを追加する非同期初期化子の例を次に示します。
+1. *Testasyncpackage .cs* で、メソッドを削除 `Initialize()` し、メソッドをオーバーライドし `InitializeAsync()` ます。 サービスを追加し、コールバックメソッドを追加してサービスを作成します。 サービスを追加する非同期初期化子の例を次に示します。
 
     ```csharp
     protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)
@@ -173,15 +173,15 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>コマンドハンドラーでの非同期サービスの使用
  メニューコマンドで非同期サービスを使用する方法の例を次に示します。 次に示す手順を使用すると、他の非同期メソッドでサービスを使用できます。
 
-1. プロジェクトにメニューコマンドを追加します。 (**ソリューションエクスプローラー** で、プロジェクトノードを選択して右クリックし、[**追加**  >  ] を選択します。**新しい項目**  > **拡張性**  > **カスタムコマンド**。)コマンドファイルに *TestAsyncCommand.cs* という名前を指定します。
+1. プロジェクトにメニューコマンドを追加します。 (**ソリューションエクスプローラー** で、プロジェクトノードを選択して右クリックし、[**追加**  >  ] を選択します。**新しい項目**  > **拡張性**  > **カスタムコマンド**。)コマンドファイルに *Testasynccommand .cs* という名前を指定します。
 
-2. カスタムコマンドテンプレートは、 `Initialize()` コマンドを初期化するために、 *TestAsyncPackage.cs* ファイルにメソッドを再度追加します。 メソッドで、 `Initialize()` コマンドを初期化する行をコピーします。 次のようになります。
+2. カスタムコマンドテンプレートは、 `Initialize()` コマンドを初期化するために、メソッドを *Testasyncpackage .cs* ファイルに再追加します。 メソッドで、 `Initialize()` コマンドを初期化する行をコピーします。 次のようになります。
 
     ```csharp
     TestAsyncCommand.Initialize(this);
     ```
 
-     この行を `InitializeAsync()` *AsyncPackageForService.cs* ファイル内のメソッドに移動します。 これは非同期初期化であるため、を使用してコマンドを初期化する前に、メインスレッドに切り替える必要があり <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> ます。 その結果、次のようになります。
+     この行を `InitializeAsync()` *Asyncpackageforservice .cs* ファイルのメソッドに移動します。 これは非同期初期化であるため、を使用してコマンドを初期化する前に、メインスレッドに切り替える必要があり <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> ます。 その結果、次のようになります。
 
     ```csharp
 
@@ -204,7 +204,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 3. メソッドを削除 `Initialize()` します。
 
-4. *TestAsyncCommand.cs* ファイルで、メソッドを見つけ `MenuItemCallback()` ます。 メソッドの本体を削除します。
+4. *Testasynccommand .cs* ファイルで、メソッドを見つけ `MenuItemCallback()` ます。 メソッドの本体を削除します。
 
 5. Using ディレクティブを追加します。
 
@@ -240,5 +240,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. ソリューションをビルドし、デバッグを開始します。 Visual Studio の実験用インスタンスが表示されたら、[ **ツール** ] メニューの [ **Testasynccommand の呼び出し** ] メニュー項目を探します。 これをクリックすると、TextWriterService は指定したファイルに書き込みます。 (コマンドを呼び出すとパッケージも読み込まれるため、ソリューションを開く必要はありません)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [サービスを使用して提供する](../extensibility/using-and-providing-services.md)

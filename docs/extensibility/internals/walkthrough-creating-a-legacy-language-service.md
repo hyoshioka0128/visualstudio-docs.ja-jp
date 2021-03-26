@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074276"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>チュートリアル: 従来の言語サービスの作成
 Managed package framework (MPF) 言語クラスを使用して、言語サービスをに実装するの [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] は簡単です。 言語サービス、言語サービス自体、および言語のパーサーをホストするための VSPackage が必要です。
@@ -52,7 +52,7 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
     コードスニペットをサポートしない場合は、[完了] をクリックするだけで、次の手順は無視できます。
 
-6. **コマンド名** として「 **Insert スニペット**」と入力し、 `cmdidInsertSnippet` **コマンド ID** に「」と入力します。 **[Finish]** をクリックします。
+6. **コマンド名** として「 **Insert スニペット**」と入力し、 `cmdidInsertSnippet` **コマンド ID** に「」と入力します。 **[完了]** をクリックします。
 
     **コマンド名** と **コマンド ID** は任意のものにすることができます。これらは例にすぎません。
 
@@ -68,11 +68,11 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
 4. [テンプレート] ボックスの一覧で [ **クラス** ] が選択されていることを確認します。
 
-5. クラスファイルの名前として「 **MyLanguageService.cs** 」と入力し、[ **追加**] をクリックします。
+5. クラスファイルの名前として「 **MyLanguageService** 」と入力し、[ **追加**] をクリックします。
 
      任意の名前を使用できます。 ここで説明する手順では `MyLanguageService` 、名前としてを想定しています。
 
-6. MyLanguageService.cs ファイルで、次のディレクティブを追加し `using` ます。
+6. MyLanguageService ファイルで、次のディレクティブを追加し `using` ます。
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
@@ -88,7 +88,7 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
 ### <a name="register-the-language-service"></a>言語サービスを登録する
 
-1. MyLanguagePackagePackage.cs ファイルを開き、次のディレクティブを追加し `using` ます。
+1. My言語 Packagepackage .cs ファイルを開き、次のディレクティブを追加し `using` ます。
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
@@ -132,5 +132,5 @@ Managed package framework (MPF) 言語クラスを使用して、言語サービ
 
      たとえば、「」と入力すると、 `public override` そのクラスでオーバーライド可能なすべてのメソッドの一覧が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの実装](../../extensibility/internals/implementing-a-legacy-language-service1.md)

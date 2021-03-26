@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ae225a7eeb782257a716c48c1882d78ad150e7e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 886469727e9a20802f375faac12abbdd0d2b1ff2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168336"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089109"
 ---
 # <a name="bp_state"></a>BP_STATE
 バインドされたブレークポイントが存在することを指定し、有効になっているかどうかも指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BP_STATE {
@@ -60,10 +60,10 @@ public enum enum_BP_STATE {
 `BPS_ENABLED`\
 ブレークポイントが有効であることを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)メソッドから返されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsz files
 - wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935860"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074237"
 ---
 # <a name="wizard-vsz-file"></a>ウィザード (.Vsz) ファイル
 
@@ -38,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 .Vsz ファイルの各部分を次に示します。
 
-|パーツ|説明|
+|パーツ|Description|
 |----------|-----------------|
 |VSWizard|ファイルの最初のパラメーターは、テンプレートファイル形式のバージョン番号です。 このバージョン番号は6.0、7.0、7.1、または8.0 である必要があります。 他の数値を開始できないため、無効な形式エラーが発生します。|
 |ウィザード|このフィールドには、ウィザードの OLE ProgID、または IDE によって作成されたウィザードの CLSID の GUID 文字列表現が含まれます。|
@@ -48,8 +48,8 @@ Param="WIZARDUI = FALSE"
 
 既定のロケール ID を .vsz ファイルに追加するには、= xxxx を指定します。ここで、 `FALLBACK_LCID` xxxx はロケール id (たとえば、英語の場合は 1033) を指定します。 `FALLBACK_LCID`パラメーターが定義されている場合、現在の ID が見つからない場合、ウィザードは指定されたフォールバックロケール ID を使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
-- [カスタム パラメーター](../../extensibility/internals/custom-parameters.md)
+- [カスタムパラメーター](../../extensibility/internals/custom-parameters.md)
 - [ウィザード](../../extensibility/internals/wizards.md)
 - [テンプレート ディレクトリの説明 (.Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

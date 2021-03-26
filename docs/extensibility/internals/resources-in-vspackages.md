@@ -9,17 +9,17 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f88f48f62818882dd15889cdfa1bd2a48d9808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4863fb40bc6f70556d8f00305d882e6edd93a0e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905820"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074393"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage のリソース
 ローカライズされたリソースは、ネイティブサテライト UI Dll、マネージサテライト Dll、またはマネージ VSPackage 自体に埋め込むことができます。
@@ -87,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]がセットアップ後に VSPackage からリソースを要求した場合、そのパッケージは既に読み込まれて初期化される可能性があるため、パフォーマンスが低下することはほとんどありません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [VSPackage の管理](../../extensibility/managing-vspackages.md)
 - [MFC アプリケーションのローカライズされたリソース: サテライト Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
