@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, displaying locals
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e0ebeb4155fef551f98a81f93e02ecdf2ecb9b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 564b42a15e1420027b79cb5f00c70f61649ad4f9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840770"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097267"
 ---
 # <a name="display-locals"></a>ローカルの表示
 > [!IMPORTANT]
@@ -39,5 +39,5 @@ ms.locfileid: "99840770"
 ## <a name="related-sections"></a>関連項目
  [評価コンテキスト](../../extensibility/debugger/evaluation-context.md) デバッグエンジン (DE) が式エバリュエーター (EE) を呼び出すと、3つの引数が渡されることについて説明します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
  [CLR 式エバリュエーターを記述する](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
