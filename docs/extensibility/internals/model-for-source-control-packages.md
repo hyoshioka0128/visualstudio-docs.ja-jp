@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4e437afdfa0d3de03da6814e221840cbd0763fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895662"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063202"
 ---
 # <a name="model-for-source-control-packages"></a>ソース管理パッケージのモデル
 次のモデルは、ソース管理の実装例を表しています。 モデルには、実装する必要があるインターフェイスと、呼び出す必要がある環境サービスが表示されます。 すべてのサービスと同様に、実際には、サービスを通じて取得する特定のインターフェイスのメソッドを呼び出します。 クラスの名前は、ソース管理がどのように実行されているかを簡単に確認できるように識別されます。
@@ -35,7 +35,7 @@ ms.locfileid: "99895662"
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|ソース管理パッケージに登録し、ソース管理の状態に関する情報を取得するために、プロジェクトによって呼び出されます。 このインターフェイスには、サービスを使用してアクセスし <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> ます。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|ファイルに関する情報のソース管理要求に応答し、プロジェクトファイルに必要なソース管理設定を取得するために、プロジェクトによって実装されます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>

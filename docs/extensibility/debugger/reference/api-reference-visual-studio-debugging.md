@@ -6,24 +6,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8a43e4bae5afce98e07b196f5a01c33d44c72ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085547"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 参照 (Visual Studio のデバッグ)
 このリファレンスセクションでは、API の概念の概要、すべての API 要素の構文と使用法、および一連のコード例を紹介するガイドを紹介します。 すべての参照は、カテゴリ別にアルファベット順に一覧表示されます。
 
  次の表は、 `HRESULT` メソッドによって返される共通の値を示しています。
 
-|名前|説明|値|
+|Name|説明|値|
 |----------|-----------------|-----------|
 |S_OK|正常終了しました。|0x00000000|
 |E_UNEXPECTED|予期しないエラーです。|0x8000FFFF|

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEventCallback2::Event
 ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afa0cfd8f96d21a510370a4fc526a3cae053c77b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0fec6984ffc30c3c368193079fdabc1752f63a65
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065802"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 デバッグイベントの通知を送信します。
@@ -77,12 +77,12 @@ int Event(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドを呼び出す場合、パラメーターは、 `dwAttrib` パラメーターで渡されるイベントオブジェクトで呼び出される [getattributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) メソッドから返される値と一致する必要があり `pEvent` ます。
 
  すべてのデバッグイベントは、イベント自体が非同期であるかどうかに関係なく、非同期的にポストされます。 DE がこのメソッドを呼び出すと、戻り値は、イベントが処理されたかどうかを示すのではなく、イベントが受信されたかどうかのみを示します。 実際、ほとんどの状況では、このメソッドから制御が戻ったときにイベントは処理されていません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

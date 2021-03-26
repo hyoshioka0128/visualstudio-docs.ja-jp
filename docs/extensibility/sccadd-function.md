@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAdd function
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 7c577bd865a7534a5c4e13253e921ef188e7f0ac
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221726"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085690"
 ---
 # <a name="sccadd-function"></a>SccAdd 関数
 この関数は、ソース管理システムに新しいファイルを追加します。
@@ -69,7 +69,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|追加操作が正常に完了しました。|
 |SCC_E_FILEALREADYEXISTS|選択されたファイルは既にソース管理下にあります。|
@@ -82,7 +82,7 @@ SCCRTN SccAdd(
 |SCC_I_RELOADFILE|ファイルまたはプロジェクトを再度読み込む必要があります。|
 |SCC_E_FILENOTEXIST|ローカルファイルが見つかりませんでした。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  通常は、 `fOptions` ここでは配列で置き換えられ、 `pfOptions` ファイルごとに1つのオプションが指定され `LONG` ます。 これは、ファイルの種類がファイルによって異なる場合があるためです。
 
 > [!NOTE]
@@ -90,7 +90,7 @@ SCCRTN SccAdd(
 
  配列で使用されるフラグの一覧を次に示し `pfOptions` ます。
 
-|オプション|値|説明|
+|オプション|値|意味|
 |------------|-----------|-------------|
 |SCC_FILETYPE_AUTO|0x00|ソース管理プラグインは、ファイルの種類を検出する必要があります。|
 |SCC_FILETYPE_TEXT|0x01|ASCII テキストファイルを示します。|
@@ -101,5 +101,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|ファイルを、UTF16 リトルエンディアン形式で Unicode テキストとして扱います。|
 |SCC_FILETYPE_UTF16BE|0x40|は、ファイルを UTF16 ビッグエンディアン形式の Unicode テキストとして扱います。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

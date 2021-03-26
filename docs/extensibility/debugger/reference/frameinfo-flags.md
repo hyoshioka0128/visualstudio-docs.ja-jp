@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO_FLAGS enumeration
 ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4029212aae6d4557e17c42a0c0e024a83c94b0a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d4214dd81945c3e7e2711a500e2e3a2b173e33e0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102150823"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059263"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 スタックフレームオブジェクトについて取得する情報を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_FRAMEINFO_FLAGS {
@@ -195,12 +195,12 @@ public enum enum_FRAMEINFO_FLAGS {
 `FIF_DESIGN_TIME_EXPR_EVAL`\
 フレーム情報は、ホストプロセスではなく、ホストされているアプリケーションドメインからのものである必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これらのフラグは、[フレーム情報](../../../extensibility/debugger/reference/frameinfo.md)の構造体または構造体で初期化されるフィールドを示すために、 [enumフレーム情報](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)メソッドと[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)メソッドに渡されます。
 
 これらのフラグは、 [フレーム情報](../../../extensibility/debugger/reference/frameinfo.md) 構造のどのフィールドが使用され、構造体が返されたときに有効であるかを示すためにも使用されます。 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

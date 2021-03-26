@@ -8,17 +8,17 @@ helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39e61e3566f848e23fdea7b4fb4d0ea5bc181370
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c9b3b5c01e9c1ad5de9fbb0a44398d3f7963295
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903157"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056841"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>ソリューションの親コンテナーフォルダーを作成する
 ソース管理プラグイン API バージョン1.2 では、ユーザーは、ソリューション内のすべての web プロジェクトに対して単一のルートソース管理のターゲットを指定できます。 この1つのルートは、スーパー統合ルート (.SUR) と呼ばれます。
@@ -47,7 +47,7 @@ ms.locfileid: "99903157"
 
 で [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、.sur フォルダーの名前は、拡張子のないソリューション名と同じにすることをお勧めします。 次の表は、2つのバージョンの動作をまとめたものです。
 
-|機能|ソース管理プラグイン API バージョン1.1|ソース管理プラグイン API バージョン1.2|
+|特徴量|ソース管理プラグイン API バージョン1.1|ソース管理プラグイン API バージョン1.2|
 |-------------| - | - |
 |SCC へのソリューションの追加|SccInitialize ()<br /><br /> SccGetProjPath ()<br /><br /> SccGetProjPath ()<br /><br /> SccOpenProject ()|SccInitialize ()<br /><br /> SccGetProjPath ()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject ()|
 |ソース管理ソリューションへのプロジェクトの追加|SccGetProjPath ()<br /><br /> OpenProject ()|SccGetParentProjectPath()<br /><br /> SccOpenProject ()<br /><br />  **注:**  Visual Studio では、ソリューションが .SUR の直接の子であることを前提としています。|
@@ -66,5 +66,5 @@ ms.locfileid: "99903157"
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  = *dword: 00000001*
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API バージョン1.2 の新機能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

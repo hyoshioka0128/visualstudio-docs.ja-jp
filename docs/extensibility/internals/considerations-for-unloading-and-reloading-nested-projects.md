@@ -8,17 +8,17 @@ helpviewer_keywords:
 - nested projects, unloading and reloading
 - projects [Visual Studio SDK], unloading and reloading nested
 ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed91ac56929682205937122a4521ad7233af675f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9852454d487ab2a7ee08218c9712aa0afc1467ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884651"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057072"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>入れ子になったプロジェクトのアンロードと再読み込みに関する考慮事項
 
@@ -36,7 +36,7 @@ ms.locfileid: "99884651"
 
 このプロセスを処理するために、親プロジェクトは `QueryInterface` インターフェイスでを呼び出し <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> ます。 `IVsFireSolutionEvents` には、入れ子になったプロジェクトをアンロードするように IDE に指示し、イベントを発生させて同じプロジェクトを再読み込みする機能があり `OnBeforeUnloadProject` `OnAfterLoadProject` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [入れ子 (プロジェクトを)](../../extensibility/internals/nesting-projects.md)

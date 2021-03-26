@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da408e159f654f9eb707e71710a178d22881d715
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 913490588fcf739e9659318cb72a9ca74d6db99d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102170511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096227"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 デバッグ参照オブジェクトについて取得する情報を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_DEBUGREF_INFO_FLAGS {
@@ -85,14 +85,14 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 `DEBUGREF_INFO_ALL`\
 フラグのマスクを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 これらのフラグは、 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)構造体のどのフィールドを初期化するかを示すために、 [Enumchildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)メソッドと[getreferenceinfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)メソッドに渡されます。
 
 構造体 `dwFields` のメンバーに、 `DEBUG_REFERENCE_INFO` 構造体が返されるときに使用されるフィールドと有効なフィールドを示すために使用されます。
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
