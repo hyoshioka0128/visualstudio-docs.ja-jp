@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, implementation strategies
 ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e544e4cebaa4e2e1691f6c175dfa750a1f951abc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6126df3e4adb1e0d942669b561801be4449036df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930695"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055063"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>デバッグエンジンの実装方法を選択する
 実行時アーキテクチャを使用して、デバッグエンジン (DE) 実装戦略を決定します。 デバッグ中のプログラムにデバッグエンジンをインプロセスで作成できます。 Visual Studio セッションデバッグマネージャー (SDM) にデバッグエンジンをインプロセスで作成します。 または、その両方に対してデバッグエンジンをアウトプロセスで作成します。 次のガイドラインは、これら3つの方法のいずれかを選択するのに役立ちます。
@@ -33,5 +33,5 @@ ms.locfileid: "99930695"
 
 - DE がシンボルストアにアクセスするためにプログラムを呼び出す必要がある場合は、プログラムでインプロセスインプロセスを作成します。 この場合、プログラムは DE のインスタンスを作成します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio デバッガーの機能拡張](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

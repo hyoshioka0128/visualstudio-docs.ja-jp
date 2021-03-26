@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb94554b4ac1af30d8187a8ab75aa83f65dccc72
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877487"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055805"
 ---
 # <a name="create-an-options-page"></a>オプションページを作成する
 
@@ -166,7 +166,7 @@ ms.locfileid: "99877487"
 
 7. **TextBox** コントロールをユーザーコントロールに追加します。
 
-     [ **プロパティ** ] ウィンドウのツールバーで、[ **イベント** ] ボタンをクリックし、[ **Leave** ] イベントをダブルクリックします。 新しいイベントハンドラーが *MyUserControl.cs* コードに表示されます。
+     [ **プロパティ** ] ウィンドウのツールバーで、[ **イベント** ] ボタンをクリックし、[ **Leave** ] イベントをダブルクリックします。 新しいイベントハンドラーが *MyUserControl* コードに表示されます。
 
 8. パブリックフィールドと `OptionsPage` `Initialize` メソッドをコントロールクラスに追加し、イベントハンドラーを更新して、オプションの値をテキストボックスの内容に設定します。
 
@@ -249,7 +249,7 @@ ms.locfileid: "99877487"
 
      このコード <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> は、を呼び出してインスタンスを作成または取得 `OptionPageGrid` します。 `OptionPageGrid` を呼び出して <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 、パブリックプロパティであるオプションを読み込みます。
 
-2. ここで、 **MyToolsOptionsCommand** という名前のカスタムコマンド項目テンプレートを追加して、値を表示します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolsOptionsCommand.cs* に変更します。
+2. ここで、 **MyToolsOptionsCommand** という名前のカスタムコマンド項目テンプレートを追加して、値を表示します。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *MyToolsOptionsCommand* に変更します。
 
 3. *MyToolsOptionsCommand* ファイルで、コマンドのメソッドの本体を `ShowMessageBox` 次のように置き換えます。
 
@@ -268,6 +268,6 @@ ms.locfileid: "99877487"
 
      メッセージボックスに、の現在の値が表示され `OptionInteger` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [[オプション] ページと [オプション] ページ](../extensibility/internals/options-and-options-pages.md)

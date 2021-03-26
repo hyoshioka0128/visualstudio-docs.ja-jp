@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e55bb5f4473971f99ce04f9e48b7e05ec13f94c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952188"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090110"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio の コモン コントロール パターン
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> コモンコントロール
@@ -301,10 +301,10 @@ Visual Studio のほとんどのボタンはユーティリティダイアログ
 > [!NOTE]
 > ユーザーはこれらのボタン (アクセスキーがない) にタブを設定する必要があるため、適切な順序で配置します。 `name`ボタンのプロパティを、スクリーンリーダーがボタンの操作を正しく解釈するために実行するアクションにマップします。
 
-| Function | Button |
+| 機能 | Button |
 | --- | --- |
 | 追加 | ![グラフィカルな [追加] ボタン](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| [削除] | ![グラフィカルな [削除] ボタン](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| 削除 | ![グラフィカルな [削除] ボタン](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
 | [すべてを追加] | ![グラフィカルな [すべて追加] ボタン](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703-10_ButtonAddAll") |
 | [すべて削除] | ![グラフィカルな [すべて削除] ボタン](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
 | [上へ移動] | ![グラフィカルな [上へ移動] ボタン](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703-12_ButtonMoveUp") |

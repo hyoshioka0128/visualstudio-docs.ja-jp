@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79141361253df4e1ccaf29ff15332d534ceade84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67bf92c8c447faac2969bde3f208823158663712
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056078"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 要素 (Visual Studio テンプレート)
 
@@ -61,7 +61,7 @@ Web 項目テンプレートが複数の言語で同一であるかどうか、�
 
  テキストはまたはのいずれかである必要があり `true` `false` ます。 [**新しい項目の追加**] ダイアログボックスで [**言語**] オプションを使用できるかどうかを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 
  `SupportsLanguageDropDown` は省略可能な要素です。 既定値は `false` です。
 
@@ -95,7 +95,7 @@ Web 項目テンプレートが複数の言語で同一であるかどうか、�
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

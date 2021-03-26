@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884976"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055753"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>モーダルダイアログボックスの作成と管理
 Visual Studio 内でモーダルダイアログボックスを作成する場合は、ダイアログボックスが表示されている間、ダイアログボックスの親ウィンドウが無効になっていることを確認し、ダイアログボックスを閉じた後で親ウィンドウを再び有効にする必要があります。 そうしないと、 *モーダルダイアログボックスがアクティブになっているため Microsoft Visual Studio をシャットダウンできないことがあります。アクティブなダイアログを閉じて、もう一度やり直してください。*
@@ -40,7 +40,7 @@ Visual Studio 内でモーダルダイアログボックスを作成する場合
 
     - *System.Xaml*
 
-3. *OpenDialog.cs* で、次のステートメントを追加し `using` ます。
+3. *Opendialog .cs* で、次のステートメントを追加し `using` ます。
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3add4d46a258eb7e6c107f8d2eb16f7cd84ba919
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 80ef6cce37967d61611ac48f60aaf5b2a1d184f1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222160"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082386"
 ---
 # <a name="object_type"></a>OBJECT_TYPE
 式エバリュエーターからオブジェクトの型を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_OBJECT_TYPE { 
@@ -115,10 +115,10 @@ public enum enum_OBJECT_TYPE {
  `OBJECT_TYPE_CLASS`\
  オブジェクトがクラスであることを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md)メソッドおよび[createarrayobject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)メソッドに引数として渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。

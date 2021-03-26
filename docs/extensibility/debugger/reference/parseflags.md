@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 192e4de399540ce189bbf52cbb0f615b2b9bc855
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f7dabef93e8160a2319bc5cefeb189fa335f4b9f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222147"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082336"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 式を解析する方法を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PARSEFLAGS { 
@@ -55,10 +55,10 @@ public enum enum_PARSEFLAGS {
  `PARSE_DESIGN_TIME_EXPR_EVAL`\
  デザイン時に式が解析されることを示します (つまり、デザイナーが開いている場合)。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  [Parsetext](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)メソッドおよび[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)メソッドにパラメーターとして渡されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

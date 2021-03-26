@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62873d57da04f94ce1cdda16c5fe4801af5d19c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b9c0bd759083a0d0d053133cc9f2d4d03a52389
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055740"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>再利用可能なボタンのグループを作成する
 コマンドグループは、メニューまたはツールバーに常に一緒に表示されるコマンドのコレクションです。 任意のコマンドグループは、 *vsct* ファイルの commandplacements セクションの別の親メニューに割り当てて再利用できます。
@@ -30,7 +30,7 @@ ms.locfileid: "99884924"
 
 1. という名前の VSIX プロジェクトを作成 `ReusableButtons` します。 詳細については、「 [メニューコマンドを使用して拡張機能を作成](../extensibility/creating-an-extension-with-a-menu-command.md)する」を参照してください。
 
-2. プロジェクトが開いたら、 **Reusablecommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *ReusableCommand.cs* に変更します。
+2. プロジェクトが開いたら、 **Reusablecommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の  >  **機能拡張**] にアクセスし、[**カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、コマンドファイル名を「 *reusablecommand* 変更する」に変更します。
 
 3. *. Vsct* ファイルで、[シンボル] セクションにアクセスし、プロジェクトのグループとコマンドを含む guidsymbol 要素を見つけます。 GuidReusableCommandPackageCmdSet という名前にする必要があります。
 

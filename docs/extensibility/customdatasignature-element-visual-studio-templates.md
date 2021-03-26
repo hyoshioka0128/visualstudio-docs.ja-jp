@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <CustomDataSignature> Element (Visual Studio Templates)
 - CustomDataSignature Element (Visual Studio Templates)
 ms.assetid: 8c3db51d-7014-4484-802a-15aa1353dbdb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f42b3c5fe1dc5b9ab9697275876509eb0f8509
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a07f53beb7e73d5608dcb6f75c8c55b353a10123
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946060"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055610"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>CustomDataSignature 要素 (Visual Studio テンプレート)
 カスタムデータを検索するテキスト署名を指定します。
@@ -53,9 +53,9 @@ ms.locfileid: "99946060"
 
  テキストは、カスタムデータを検索するために必要なテキスト署名が含まれている文字列です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `CustomDataSignature` は省略可能な要素です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
 - [プロジェクトと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

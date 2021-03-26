@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 83a8ee40205cafcaff29399ead4036374f798abf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968451"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082271"
 ---
 # <a name="define-element"></a>Define 要素
 シンボル名と値のペアを定義します。 このシンボルは、条件付き属性で評価できます。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。 [Symbols 要素](../extensibility/symbols-element.md)も参照してください。
@@ -38,7 +38,7 @@ ms.locfileid: "99968451"
 |---------------|-----------------|
 |name|必須。 シンボルの名前。<br /><br /> name = "Mode"|
 |value|必須。 シンボルの値。<br /><br /> 値 = "Standard"|
-|条件|任意。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 詳細については、「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
  なし。

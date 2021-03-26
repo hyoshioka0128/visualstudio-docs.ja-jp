@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 157e8b4b4d7a00845fb76e0105414879cb1f472d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 083eef2454a9e805b1cb8b3e85a6d7d81263a0dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924850"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073054"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Side-by-side ファイルの関連付けの管理
 
@@ -61,7 +61,7 @@ VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vs
 
   **Visual Studio の最新バージョンを決定する InstallExecuteSequence テーブル行**
 
-  |操作|条件|Sequence|
+  |アクション|条件|Sequence|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 と NOT (DEVENV_EXE_2003 または DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 であり DEVENV_EXE_2005 ではありません|420|
@@ -87,7 +87,7 @@ VSPackage がファイルの関連付けを提供する場合は、 [!INCLUDE[vs
 
 - [構成オプション] ページまたはダイアログボックスを使用して、ユーザーがファイルの関連付けを選択し、失われた関連付けを再利用できるようにします。 アンインストール後に実行するようにユーザーに指示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [サイドバイサイド配置のためにファイル名拡張子を登録する](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [ファイル名拡張子の動詞を登録する](../extensibility/registering-verbs-for-file-name-extensions.md)

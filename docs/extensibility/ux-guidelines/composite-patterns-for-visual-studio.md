@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952097"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090058"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio の複合パターン
 複合パターンでは、個別の構成で相互作用とデザイン要素を組み合わせています。 一貫性に関して、Visual Studio で最も重要な複合パターンには次のようなものがあります。
@@ -483,8 +483,8 @@ ms.locfileid: "99952097"
 |選択可能なオブジェクト (たとえば、コード行)|コード行のブレークポイント<br /><br /> コード行に関連付けられているユーザーショートカット|プロジェクトが保存されたとき|プロジェクトの **ユーザーオプション (.suo)** ファイル|
 |ダイアログ|ダイアログの場所 (移動された場合)<br /><br /> ユーザーがダイアログで最後に使用したビュー|ダイアログが閉じたとき<br /><br /> Visual Studio セッションが終了したとき|メモリ内<br /><br /> **HKEY_Current_User** のレジストリ|
 |ウィンドウ|ウィンドウのサイズと場所|ウィンドウが閉じるとき<br /><br /> Visual Studio モードが変更されたとき<br /><br /> Visual Studio セッションが終了したとき|プロジェクトの **ユーザーオプション (.suo)** ファイル<br /><br /> ウィンドウ設定のカスタムオプションファイル|
-|マニュアル名の正式名称|ドキュメント内の現在の選択項目<br /><br /> ドキュメントのビュー<br /><br /> ユーザーが最後にアクセスした場所|ドキュメントが保存されたとき|プロジェクトの **ユーザーオプション (.suo)** ファイル|
-|Project|ファイルへの参照<br /><br /> ディスク上のディレクトリへの参照<br /><br /> その他のソフトウェアへの参照<br /><br /> Components<br /><br /> プロジェクト自体に関する状態情報|プロジェクトが保存されたとき|プロジェクト ファイル|
+|ドキュメント|ドキュメント内の現在の選択項目<br /><br /> ドキュメントのビュー<br /><br /> ユーザーが最後にアクセスした場所|ドキュメントが保存されたとき|プロジェクトの **ユーザーオプション (.suo)** ファイル|
+|Project|ファイルへの参照<br /><br /> ディスク上のディレクトリへの参照<br /><br /> その他のソフトウェアへの参照<br /><br /> コンポーネント<br /><br /> プロジェクト自体に関する状態情報|プロジェクトが保存されたとき|プロジェクト ファイル|
 |解決策|プロジェクトへの参照<br /><br /> ファイルへの参照|プロジェクトまたはソリューションが保存されたとき|**ソリューション (.sln)** ファイル|
 |**ツール > オプション** の設定|キーボードのカスタマイズ<br /><br /> ツールバーのカスタマイズ<br /><br /> 配色|[ **ツール > オプション** ] ダイアログを閉じるとき<br /><br /> Visual Studio セッションが終了したとき|**HKEY_Current_User** のレジストリ|
 

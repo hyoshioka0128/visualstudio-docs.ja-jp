@@ -13,17 +13,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970219"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082076"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio ツールバーの Guid と Id
 このトピックでは、Visual Studio 統合開発環境 (IDE: integrated development environment) に含まれるツールバーの GUID と ID の値、およびそれらに含まれるグループについて説明します。 これらの値は、Visual Studio SDK の一部としてインストールされる、 *vsct* ファイルで定義されています。 詳細については、「 [IDE で定義されたコマンド、メニュー、およびグループ](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)」を参照してください。
@@ -43,7 +43,7 @@ ms.locfileid: "99970219"
 |ツール バー|id|
 |-------------|--------|
 |Standard|IDM_VS_TOOL_STANDARD|
-|ビルド|IDM_VS_TOOL_BUILD|
+|Build|IDM_VS_TOOL_BUILD|
 |テキスト エディター|IDM_VS_TOOL_TEXTEDITOR|
 |デバッグ|guidVSDebugGroup: IDM_DEBUG_TOOLBAR|
 |デバッグの場所|guidVSDebugGroup: IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -88,7 +88,7 @@ ms.locfileid: "99970219"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |インデントする|IDG_VS_EDITTOOLBAR_INDENT|
-|解説|IDG_VS_EDITTOOLBAR_COMMENT|
+|コメント|IDG_VS_EDITTOOLBAR_COMMENT|
 |ブックマーク|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>デバッグツールバーグループ
@@ -116,7 +116,7 @@ ms.locfileid: "99970219"
 |-----------------|-------------|------------|
 |ソリューション エクスプローラー|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1..5/5|
 |[サーバー エクスプローラー]|guid_SE_MenuGroup: IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
-|Properties|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
+|プロパティ|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |クラス ビュー|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|
 |クラス ビュー|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |オブジェクト ブラウザー|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
@@ -136,7 +136,7 @@ ms.locfileid: "99970219"
 |メモリ1-4|guidVSDebugGroup: IDM_MEMORY_WINDOW_TOOLBAR1...4/4|IDG_MEMORY_EXPRESSION1..4/4<br /><br /> IDG_MEMORY_COLUMNS1..4/4|
 |プロセス|guidVSDebugGroup: IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ツールバーにメニューコントローラーを追加する](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [ツールウィンドウにツールバーを追加する](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Visual Studio メニューの Guid と Id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
