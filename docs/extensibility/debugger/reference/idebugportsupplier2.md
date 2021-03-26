@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier2 interface
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bd28e261c9c74601bd88f2d84e1296a1ed508f37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172040"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072027"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 このインターフェイスは、セッションデバッグマネージャー (SDM) にポートを提供します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortSupplier2 : IUnknown
@@ -71,17 +71,17 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 |[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|ポートを追加します。|
 |[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|ポートを削除します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 ポートサプライヤーは、名前と ID で自身を識別したり、ポートを追加および削除したり、ポート供給元が提供するすべてのポートを列挙したりできます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

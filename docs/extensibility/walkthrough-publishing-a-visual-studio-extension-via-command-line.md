@@ -8,17 +8,17 @@ helpviewer_keywords:
 - publishing extensions
 - extension, publishing
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c73da67e607346138d7d6fae124a86b7a34618
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3548c9a206e874848756944fb48d447c34e28cc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961847"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078371"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>チュートリアル: コマンドラインを使用した Visual Studio 拡張機能の発行
 
@@ -32,7 +32,7 @@ VsixPublisher.exe は、Visual Studio 拡張機能を Marketplace に発行す�
 
 拡張機能を Marketplace に発行します。 拡張機能には、vsix、exe/msi ファイル、またはリンクを指定できます。 同じバージョンの拡張機能が既に存在する場合は、拡張機能が上書きされます。 拡張機能がまだ存在しない場合は、新しい拡張機能が作成されます。
 
-|コマンドオプション |説明 |
+|コマンドオプション |Description |
 |---------|---------|
 |ペイロード (必須) | 発行するペイロードのパス、または "more info URL" として使用するリンク。 |
 |publishManifest (必須) | 使用する発行マニフェストファイルへのパス。 |
@@ -47,7 +47,7 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Marketplace で発行元を作成します。 また、は、後のアクション (拡張機能の削除/発行など) のためにパブリッシャーをコンピューターに記録します。
 
-|コマンドオプション |説明 |
+|コマンドオプション |Description |
 |---------|---------|
 |displayName (必須) | パブリッシャーの表示名。 |
 |publisherName (必須) | 発行元の名前 (たとえば、識別子)。 |
@@ -63,7 +63,7 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Marketplace 上のパブリッシャーを削除します。
 
-|コマンドオプション |説明 |
+|コマンドオプション |Description |
 |---------|---------|
 |publisherName (必須) | 発行元の名前 (たとえば、識別子)。 |
 |personalAccessToken (必須) | 発行元の認証に使用される個人用アクセストークン。 |
@@ -76,7 +76,7 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Marketplace から拡張機能を削除します。
 
-|コマンドオプション |説明 |
+|コマンドオプション |Description |
 |---------|---------|
 |extensionName (必須) | 削除する拡張機能の名前。 |
 |publisherName (必須) | 発行元の名前 (たとえば、識別子)。 |
@@ -90,7 +90,7 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 パブリッシャーをコンピューターに記録します。
 
-|コマンドオプション |説明 |
+|コマンドオプション |Description |
 |---------|---------|
 |personalAccessToken (必須 | 発行元の認証に使用される個人用アクセストークン。 |
 |publisherName (必須) | 発行元の名前 (たとえば、識別子)。 |
@@ -104,7 +104,7 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 パブリッシャーをコンピューターからログアウトします。
 
-|コマンドオプション |説明 |
+|コマンドオプション |Description |
 |---------|---------|
 |publisherName (必須) | 発行元の名前 (たとえば、識別子)。 |
 |ignoreMissingPublisher | 指定されたパブリッシャーがまだログインしていない場合に、ツールがエラーにならないように指定します。 |

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220704"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063969"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 関数
 この関数は、ソース管理プラグインにのみ意味のある文字列であるプロジェクトパスをユーザーに要求します。 これは、ユーザーが次の場合に呼び出されます。
@@ -77,20 +77,20 @@ SCCRTN SccGetProjPath (
 
 [入力、出力][受信した値は、新しいプロジェクトを作成するかどうかを示します。 返される値は、プロジェクトの作成が成功したことを示します。
 
-|着信|解釈|
+|受信|解釈|
 |--------------|--------------------|
-|TRUE|ユーザーは、新しいプロジェクトを作成できます。|
+|true|ユーザーは、新しいプロジェクトを作成できます。|
 |false|ユーザーは、新しいプロジェクトを作成することはできません。|
 
 |送信|解釈|
 |--------------|--------------------|
-|TRUE|新しいプロジェクトが作成されました。|
+|true|新しいプロジェクトが作成されました。|
 |false|既存のプロジェクトが選択されました。|
 
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|プロジェクトが正常に作成または取得されました。|
 |SCC_I_OPERATIONCANCELED|操作は取り消されました。|
@@ -98,7 +98,7 @@ SCCRTN SccGetProjPath (
 |SCC_E_CONNECTIONFAILURE|ソース管理システムに接続しようとして問題が発生しました。|
 |SCC_E_NONSPECIFICERROR|未指定のエラーが発生しました。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この関数の目的は、IDE でパラメーターとを取得することです `lpProjName` `lpAuxProjPath` 。 ソース管理プラグインは、この情報の入力をユーザーに求めた後、これらの2つの文字列を IDE に戻します。 IDE では、ソリューションファイルにこれらの文字列が保持され、ユーザーがこのプロジェクトを開くたびに [Sccopenproject](../extensibility/sccopenproject-function.md) に渡されます。 これらの文字列を使用すると、プラグインはプロジェクトに関連付けられている情報を追跡できます。
 
  関数が最初に呼び出されると、 `lpAuxProjPath` は空の文字列に設定されます。 `lProjName` 空の場合もあります。また、ソース管理プラグインが使用または無視する IDE プロジェクト名が含まれている場合もあります。 関数が正常にを返した場合、プラグインは、対応する2つの文字列を返します。 IDE では、これらの文字列に関する仮定は行われず、使用されません。ユーザーが変更することはできません。 ユーザーが設定を変更したい場合は、IDE が再びを呼び出して、 `SccGetProjPath` 以前の時刻と同じ値を渡します。 これにより、プラグインはこれら2つの文字列を完全に制御できます。
@@ -114,6 +114,6 @@ SCCRTN SccGetProjPath (
 
  たとえば、Visual Studio の **新しいプロジェクト** ウィザードのユーザーがプロジェクトをソース管理に追加すると、visual studio はこの関数を呼び出します。このプラグインは、visual studio プロジェクトを格納するための新しいプロジェクトをソース管理システムに作成することができているかどうかを判断します。 ウィザードを完了する前にユーザーが **[キャンセル]** をクリックした場合、プロジェクトは作成されません。 ユーザーが **[OK]** をクリックすると、Visual Studio はを呼び出し、を `SccOpenProject` 渡し `SCC_OPT_CREATEIFNEW` ます。その時点で、ソース管理されたプロジェクトが作成されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

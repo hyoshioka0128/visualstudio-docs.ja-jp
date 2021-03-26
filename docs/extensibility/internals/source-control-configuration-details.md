@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a3a2f33fcbb94d1e863daf69b8561f7bad4f2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5c93e690922057116b395bed3881627e8a37847
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846505"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069349"
 ---
 # <a name="source-control-configuration-details"></a>ソース管理構成の詳細
 ソース管理を実装するには、次の操作を行うためにプロジェクトシステムまたはエディターを適切に構成する必要があります。
@@ -52,7 +52,7 @@ ms.locfileid: "99846505"
 
  [追加]、[名前の変更]、および [削除] の各アクションには、 `OnQuery*` メソッドとメソッドがあり `OnAfter*` ます。 メソッドを呼び出して、 `OnQuery*` ファイルまたはディレクトリを追加、名前変更、または削除するアクセス許可を要求します。 `OnAfter*`ファイルまたはディレクトリが追加、名前変更、または削除され、プロジェクトの状態が新しい状態を反映した後に、メソッドを呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>
