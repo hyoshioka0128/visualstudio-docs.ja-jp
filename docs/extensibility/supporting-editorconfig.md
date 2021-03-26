@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [extensibility]
 - editorconfig, supporting in a language service
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ddd7e0c7c1e2655f08b7b7113f43e14bbb37584
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3754c40ec1142684b5041341b22035eaec06ec8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914965"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056260"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>言語サービスの EditorConfig のサポート
 
@@ -45,7 +45,7 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize<br/>Micro
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [EditorConfig を使用して移植可能なエディター設定を作成する](../ide/create-portable-custom-editor-options.md)
 - [エディターと言語サービスの拡張](../extensibility/extending-the-editor-and-language-services.md)

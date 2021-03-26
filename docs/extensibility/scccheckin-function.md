@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a835ead5fb0404b78d9e9c9ecc92ee0c73eaf252
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d6864549c6825092b6ad26be199f8c7b5ea6bab6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220860"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060433"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 関数
 この関数は、以前にチェックアウトされたファイルをソース管理システムにチェックインし、変更を保存し、新しいバージョンを作成します。 この関数は、カウントと、チェックインするファイルの名前の配列を使用して呼び出されます。
@@ -69,14 +69,14 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|ファイルは正常にチェックインされました。|
 |SCC_E_FILENOTCONTROLLED|選択したファイルはソースコード管理されていません。|
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。 ファイルがチェックインされませんでした。|
 |SCC_E_NOTCHECKEDOUT|ユーザーはファイルをチェックアウトしていないので、チェックインできません。|
-|SCC_E_CHECKINCONFLICT|次の理由により、チェックインを実行できませんでした:<br /><br /> -別のユーザーが事前にチェックインし、 `bAutoReconcile` が false でした。<br /><br /> - または -<br /><br /> -自動マージは実行できません (たとえば、ファイルがバイナリの場合)。|
+|SCC_E_CHECKINCONFLICT|次の理由により、チェックインを実行できませんでした:<br /><br /> -別のユーザーが事前にチェックインし、 `bAutoReconcile` が false でした。<br /><br /> または<br /><br /> -自動マージは実行できません (たとえば、ファイルがバイナリの場合)。|
 |SCC_E_VERIFYMERGE|ファイルは自動マージされていますが、保留中のユーザーの検証がチェックインされていません。|
 |SCC_E_FIXMERGE|ファイルは自動マージされていますが、マージの競合が原因でチェックインされていないため、手動で解決する必要があります。|
 |SCC_E_NOTAUTHORIZED|ユーザーはこの操作を実行できません。|
@@ -84,10 +84,10 @@ SCCRTN SccCheckin (
 |SCC_I_RELOADFILE|ファイルまたはプロジェクトを再度読み込む必要があります。|
 |SCC_E_FILENOTEXIST|ローカルファイルが見つかりませんでした。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  コメントは、チェックインされているすべてのファイルに適用されます。 Comment 引数には文字列を指定できます `null` 。この場合、ソース管理プラグインは、ファイルごとにコメント文字列の入力をユーザーに求めることができます。
 
  `fOptions`引数にフラグの値を指定 `SCC_KEEP_CHECKEDOUT` すると、ユーザーがファイルをチェックインする目的を示すことができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::EnumThreads
 ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13d348376429bafaf113e6fb7dbd181bed4dab8f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6c502504b3a31f3e4689db34f907f9596b214877
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142610"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071611"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 プロセスで実行されているすべてのスレッドの一覧を取得します。
@@ -47,12 +47,12 @@ int EnumThreads(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドは、各プログラムで実行されているスレッドを列挙し、それらをスレッドのプロセスビューに結合します。 1つのスレッドが複数のプログラムで実行される場合があります。このメソッドは、そのスレッドを1回だけ列挙します。
 
  このメソッドは、重複しないプロセスのスレッドの一覧を表示します。 それ以外の場合、特定のプログラムで実行されているスレッドを列挙するには、 [Enumthreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) メソッドを使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

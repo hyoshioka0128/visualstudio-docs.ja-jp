@@ -10,17 +10,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 627c0b5184588f77188928b6355a9034a3a3465e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898261"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080545"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>従来の言語サービスでの構文の配色変更
 構文の色づけは、プログラミング言語のさまざまな要素を異なる色やスタイルのソースファイルに表示する機能です。 この機能をサポートするには、ファイル内の字句要素またはトークンの種類を識別できるパーサーまたはスキャナーを用意する必要があります。 多くの言語では、キーワード、区切り記号 (かっこや中かっこなど)、コメントを区別するためにさまざまな方法で色分けしています。
@@ -146,7 +146,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの特徴](../../extensibility/internals/legacy-language-service-features1.md)
 - [従来の言語サービスのパーサーとスキャナー](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [従来の言語サービスの登録](../../extensibility/internals/registering-a-legacy-language-service1.md)

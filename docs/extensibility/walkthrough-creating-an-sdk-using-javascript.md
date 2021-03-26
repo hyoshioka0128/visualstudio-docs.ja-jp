@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b9a3d9e84731fe0c2526b69f60cdda1b1487583
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895194"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080386"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>チュートリアル: JavaScript を使用した SDK の作成
 このチュートリアルでは、JavaScript を使用して、Visual Studio 拡張機能 (VSIX) として簡単な数値演算 SDK を作成する方法について説明します。  このチュートリアルは、次の部分に分かれています。
@@ -315,5 +315,5 @@ ms.locfileid: "99895194"
 
 12. アプリ UI で、任意の2つの数値を入力し、操作を選択して、ボタンをクリックし **=** ます。 正しい結果が表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)

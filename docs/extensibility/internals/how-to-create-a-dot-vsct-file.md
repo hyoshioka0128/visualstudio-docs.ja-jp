@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66174d5de1abb4f5bdd23eeab0155a795cf0b634
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fe1d92a9117193a72f579a01f264f1a13be6b6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879983"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056611"
 ---
 # <a name="how-to-create-a-vsct-file"></a>方法: vsct ファイルを作成する
 
@@ -71,7 +71,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
 5. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]コマンドプロンプトウィンドウで、ディレクトリに移動します。
 
-6. Type
+6. 型
 
    ```
    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct
@@ -98,7 +98,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
 3. Visual Studio のコマンドプロンプトで、 *cto* ファイルと *ctsym* ファイルが格納されているディレクトリにアクセスします。
 
-4. Type
+4. 型
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -140,7 +140,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
      このマークアップは、 `ItemGroup` 埋め込まれたリソースを含む要素内に配置する必要があります。
 
-4. エディターで、通常は *\<ProjectName\> Package.cs* または *\<ProjectName\> .vb* という名前のパッケージファイルを開きます。
+4. エディターで、通常は package *\<ProjectName\> .cs* または *\<ProjectName\> .vb* という名前のパッケージファイルを開きます。
 
 5. 次の `ProvideMenuResource` 例に示すように、属性を package クラスに追加します。
 
@@ -150,7 +150,7 @@ XML ベースの Visual Studio コマンドテーブル構成 (*vsct*) ファイ
 
      最初のパラメーター値は、 `ResourceName` プロジェクトファイルで定義した属性の値と一致する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [作成した vsct ファイル](../../extensibility/internals/authoring-dot-vsct-files.md)
 - [Visual Studio コマンドテーブル (vsct) ファイル](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML スキーマリファレンス](../../extensibility/vsct-xml-schema-reference.md)

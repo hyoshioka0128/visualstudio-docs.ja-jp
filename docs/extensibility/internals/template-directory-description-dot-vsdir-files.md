@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898237"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080503"
 ---
 # <a name="template-directory-description-vsdir-files"></a>テンプレート ディレクトリの説明 (.Vsdir) ファイル
 テンプレートディレクトリ記述ファイル (.vsdir) は、統合開発環境 (IDE: integrated development environment) が、プロジェクトに関連付けられているフォルダー、ウィザード .vsz ファイル、およびテンプレートファイルをダイアログボックスに表示できるようにするテキストファイルです。 コンテンツには、ファイルまたはフォルダーごとに1つのレコードが含まれます。 参照先の場所にあるすべての .vsdir ファイルはマージされますが、複数のフォルダー、ウィザード、またはテンプレートファイルを記述するために通常提供されるのは1つの .vsdir ファイルだけです。
@@ -38,13 +38,13 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ## <a name="fields"></a>フィールド
  次の表に、各レコードに対して指定されているフィールドを示します。
 
-| フィールド | 説明 |
+| フィールド | Description |
 | - | - |
 | 相対パス名 (RelPathName) | フォルダー、テンプレート、または .vsz ファイルの名前 (HeaderFile、MyWizard、.vsz など)。 このフィールドは、フォルダーを表すために使用される名前にすることもできます。 |
 | {clsidPackage} | VSPackage のサテライトダイナミックリンクライブラリ (DLL) リソースで、ローカライズされた文字列 (LocalizedName、Description、IconResourceId、SuggestedBaseName など) へのアクセスを可能にする VSPackage の GUID。 DLLPath が指定されていない場合、IconResourceId が適用されます。 **注:**  前のフィールドの1つ以上がリソース識別子の場合を除き、このフィールドは省略可能です。 このフィールドは通常、テキストをローカライズしないサードパーティのウィザードに対応する .vsdir ファイルに対しては空白になります。 |
 | LocalizedName | テンプレートファイルまたはテンプレートウィザードのローカライズされた名前。 このフィールドには、文字列または "#ResID" 形式のリソース識別子を指定できます。 この名前は、[ **新しい項目の追加** ] ダイアログボックスに表示されます。 **注:**  LocalizedName がリソース識別子の場合は、{clsidPackage} が必要です。 |
 | SortPriority | このテンプレートファイルまたはウィザードの相対的な優先順位を表す整数。 たとえば、この項目の値が1の場合、この項目は、並べ替え値が2以上のすべての項目の値が1で前になる他の項目の横に表示されます。<br /><br /> 並べ替えの優先順位は、同じディレクトリ内の項目に対して相対的です。 同じディレクトリに複数の vsdir ファイルがある可能性があります。 この場合、すべての項目が含ま <em>れます。</em>そのディレクトリ内の vsdir ファイルがマージされます。 同じ優先順位の項目は、表示名の大文字小文字を区別しない辞書順に一覧表示されます。 関数は、 `_wcsicmp` 項目の順序付けに使用されます。<br /><br /> .Vsdir ファイルに記述されていない項目には、.vsdir ファイルに記載されている最も高い優先順位よりも大きい優先順位番号が含まれます。 結果として、これらの項目は、名前に関係なく、表示されている一覧の末尾にあります。 |
-| 説明 | テンプレートファイルまたはテンプレートウィザードのローカライズされた説明。 このフィールドには、文字列または "#ResID" 形式のリソース識別子を指定できます。 この文字列は、項目が選択されたときに [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されます。 |
+| Description | テンプレートファイルまたはテンプレートウィザードのローカライズされた説明。 このフィールドには、文字列または "#ResID" 形式のリソース識別子を指定できます。 この文字列は、項目が選択されたときに [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されます。 |
 | DLLPath または {clsidPackage} | テンプレートファイルまたはウィザードのアイコンを読み込むために使用します。 アイコンは、IconResourceId を使用して .dll または .exe ファイルからリソースとして読み込まれます。 この .dll または .exe ファイルは、完全パスを使用するか、VSPackage の GUID を使用して識別できます。 VSPackage の実装 DLL は、(サテライト DLL ではなく) アイコンを読み込むために使用されます。 |
 | IconResourceId | 表示するアイコンを決定する DLL または VSPackage の実装 DLL 内のリソース識別子。 |
 | Flags ( <xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS> ) | [**新しい項目の追加**] ダイアログボックスの [**名前**] フィールドと [**場所**] フィールドを無効または有効にするために使用します。 **Flags** フィールドの値は、必要なビットフラグの組み合わせに相当する10進数です。<br /><br /> ユーザーが [ **新規** ] タブで項目を選択すると、[ **新しい項目の追加** ] ダイアログボックスが最初に表示されたときに、[名前] フィールドと [場所] フィールドが表示されるかどうかがプロジェクトによって決定されます。 項目は、.vsdir ファイルを介して、項目が選択されている場合に、フィールドが有効か無効かを制御できます。 |
@@ -64,6 +64,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - .Vsz ファイル、フォルダー、またはテンプレートファイルを削除する場合は、関連付けられているレコードも .vsdir ファイルから削除する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ウィザード](../../extensibility/internals/wizards.md)
 - [ウィザード (.Vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)

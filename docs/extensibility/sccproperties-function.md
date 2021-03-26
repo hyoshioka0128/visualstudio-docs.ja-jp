@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 56306bb7c248ea500e16964c0929f34a27187298
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220535"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056520"
 ---
 # <a name="sccproperties-function"></a>SccProperties 関数
 この関数は、ファイルまたはプロジェクトのソース管理プロパティを表示します。
@@ -49,7 +49,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|プロパティが正常に表示されました。|
 |SCC_I_RELOADFILE|バージョンコントロールシステムによってファイルのプロパティが変更されたため、IDE がこのファイルを再読み込みする必要があります。|
@@ -58,10 +58,10 @@ SCCRTN SccProperties (
 |SCC_E_FILENOTCONTROLLED|指定されたファイルまたはプロジェクトは、ソース管理下にありません。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不明または一般的なエラーが発生しました。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ソース管理プラグインによって、独自のダイアログボックスにプロパティが表示されます。
 
  プロパティはソース管理プラグインによって定義され、プラグインにプラグインとは異なる場合があります。 プラグインでファイルのソース管理プロパティを変更できる場合、 `SCC_I_RELOAD` このファイルまたはプロジェクトを再読み込みする必要があることを IDE に通知するために、が返されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - hierarchies, Visual Studio IDE
 - IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 826ef8f7836aaea0b934bb2a7fa8f568492f0b1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3fe1487e082907958c1cf8a36f1653efb97c9de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880009"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056624"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio での階層
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE: integrated development environment) では、プロジェクトが *階層* として表示されます。 IDE では、階層はノードのツリーで、各ノードには関連付けられたプロパティのセットがあります。 *プロジェクト階層* は、プロジェクトの項目、項目のリレーションシップ、および項目に関連付けられているプロパティとコマンドを保持するコンテナーです。
@@ -34,7 +34,7 @@ ms.locfileid: "99880009"
 
  ユーザーがエディターで項目を開くと、その項目を制御する階層が選択され、アクティブな階層になります。 選択した階層によって、その項目に対して操作できるコマンドのセットが決まります。 この方法でユーザーフォーカスを追跡することで、階層にユーザーの現在のコンテキストを反映させることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクトの種類](../../extensibility/internals/project-types.md)
 - [IDE での選択と通貨](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [VSSDK のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

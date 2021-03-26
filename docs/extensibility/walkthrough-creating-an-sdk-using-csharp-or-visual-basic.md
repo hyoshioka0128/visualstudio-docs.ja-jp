@@ -5,20 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838696"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080399"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>チュートリアル: C# または Visual Basic を使用した SDK の作成
 このチュートリアルでは、Visual C# を使用して単純な数値演算ライブラリ SDK を作成し、その SDK を Visual Studio 拡張機能 (VSIX) としてパッケージ化する方法について説明します。 次の手順を実行します。
@@ -41,7 +41,7 @@ ms.locfileid: "99838696"
 
 4. **ソリューションエクスプローラー** で、 **SimpleMath** プロジェクトノードのショートカットメニューを開き、[**プロパティ**] を選択します。
 
-5. **Class1.cs** の名前を **Arithmetic.cs** に変更し、次のコードに一致するように更新します。
+5. **Class1** を「**数学的**」に変更し、次のコードに一致するように更新します。
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
@@ -234,7 +234,7 @@ ms.locfileid: "99838696"
     </Page>
     ```
 
-11. 次のコードに一致するように **MainPage.xaml.cs** を更新します。
+11. 次のコードに一致するように **mainpage.xaml** を更新します。
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]
@@ -247,7 +247,7 @@ ms.locfileid: "99838696"
 
     拡張機能 SDK が正常に作成され、使用されました。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チュートリアル: C++ を使用して SDK を作成する](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [チュートリアル: JavaScript を使用した SDK の作成](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [ソフトウェア開発キットを作成する](../extensibility/creating-a-software-development-kit.md)

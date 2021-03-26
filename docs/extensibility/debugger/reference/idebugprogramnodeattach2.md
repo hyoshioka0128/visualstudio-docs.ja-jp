@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2 interface
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa623097224afc4f3a6b93d6b98ece0e14149ca5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1a1de6c7480e1ce4dcc0723614741a05dcc961a6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171735"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071468"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 関連付けられているプログラムにアタッチしようとしたことをプログラムノードに通知します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugProgramNodeAttach2 : IUnknown
@@ -42,21 +42,21 @@ IDebugProgramNodeAttach2 : IUnknown
 |------------|-----------------|
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|関連付けられているプログラムにアタッチするか、アタッチプロセスを [attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドに従います。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、非推奨の [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md) 方法の代わりに使用することをお勧めします。 すべてのデバッグエンジンは、常に関数と共に読み込まれ `CoCreateInstance` ます。つまり、デバッグ対象のプログラムのアドレス空間の外部でインスタンス化されます。
 
  メソッドの以前の実装が、単にデバッグ対象のプログラムのを設定している場合は、 `IDebugProgramNode2::Attach_V7` `GUID` [onattach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) メソッドのみを実装する必要があります。
 
  メソッドの以前の実装で `IDebugProgramNode2::Attach_V7` 、指定されたコールバックインターフェイスが使用されていた場合、その機能を [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) メソッドの実装に移動し、インターフェイスを実装する必要はあり `IDebugProgramNodeAttach2` ません。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
 - [[アタッチ]](../../../extensibility/debugger/reference/idebugengine2-attach.md)

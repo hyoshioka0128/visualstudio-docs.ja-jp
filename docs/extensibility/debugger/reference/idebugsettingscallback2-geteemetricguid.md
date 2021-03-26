@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16bc9671ee9f982eaf924d8966f2fc39a274eb6e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 45e858cf78e8b0acf7e50a95d73cd06523396bc1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165775"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071377"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 名前を指定して、式エバリュエーターメトリックの一意の識別子を取得します。
@@ -60,5 +60,5 @@ HRESULT GetEEMetricGuid(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

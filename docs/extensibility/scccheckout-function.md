@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f93052ebe255cddb4703a8246b7e89c744548a7f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221628"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060381"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 関数
 完全修飾ファイル名のリストを指定した場合、この関数はローカルドライブを確認します。 コメントは、チェックアウトされているすべてのファイルに適用されます。Comment 引数には文字列を指定でき `null` ます。
@@ -69,7 +69,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|チェックアウトに成功しました。|
 |SCC_E_FILENOTCONTROLLED|選択したファイルはソースコード管理されていません。|
@@ -81,6 +81,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|別のユーザーがこのファイルに対して排他チェックアウトを実行しました。|
 |SCC_I_OPERATIONCANCELED|操作は完了前に取り消されました。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定のコマンドで使用されるビットフラグ](../extensibility/bitflags-used-by-specific-commands.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project files
 - project files, saving data
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c18923a7866f2bb141371c4c703377e298c1e61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 24f3f0b84f22532187537c31ba6e47a823eef8f7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060498"
 ---
 # <a name="save-data-in-project-files"></a>プロジェクトファイルにデータを保存する
 プロジェクトのサブタイプは、プロジェクトファイル内のサブタイプ固有のデータを保存および取得できます。 Managed Package Framework (MPF) には、このタスクを実行するための2つのインターフェイスが用意されています。
@@ -210,5 +210,5 @@ ms.locfileid: "99926912"
 > [!NOTE]
 > このトピックで説明するすべてのコード例は、 [Vssdk サンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)の大きな例の一部です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [MSBuild プロジェクトファイルのデータを保持する](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

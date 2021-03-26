@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e8b7ea0dc29e4f8df9113963a95c363998c758d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b56eb762cf4a2746af04ed69c7c4c49afc15dec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850469"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056312"
 ---
 # <a name="supply-undo-support-to-designers"></a>デザイナーに取り消しサポートを提供する
 
@@ -101,7 +101,7 @@ Visual Studio で作成されたすべてのデザイナーでは、デザイナ
 
 - デザイナーは、の実装によって提供される標準の取り消し単位、またはから派生した Visual Studio 固有の実装のいずれかを使用して、元に戻す単位を明示的に作成することを選択し <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> ます。また、 <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> との両方の実装も提供し <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>
