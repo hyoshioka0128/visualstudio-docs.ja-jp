@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d99b67e76c8cc8719c77c88c8b93ca667c3a025a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 80420f12369ef038c2faccb51c9b1bfc9b0073a4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164163"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088420"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 このコードコンテキストに対応するドキュメントコンテキストを取得します。 ドキュメントコンテキストは、この命令を生成したソースコードに対応するソースファイル内の位置を表します。
@@ -47,9 +47,9 @@ int GetDocumentContext(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。 デバッグエンジンは、 `E_FAIL` `out` `null` コードコンテキストにソース位置が関連付けられていない場合など、パラメーターがの場合などのエラーコードを返す必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  一般に、コードコンテキストは実行ストリーム内のコード命令の位置であるのに対し、ドキュメントコンテキストはソースファイル内の位置と考えることができます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

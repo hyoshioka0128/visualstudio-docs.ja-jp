@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 73dbe76a32e67794736fd26595378485879b00b8
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: c518a91ae6b6de32926f922d55943d7d950b4013
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161445"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071702"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 セッションデバッグマネージャー (SDM) をプロセスにアタッチします。
@@ -68,11 +68,11 @@ int Attach(
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Attach プロシージャの実行中にセキュリティ違反が発生しました。|
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|デスクトッププロセスをデバッガーにアタッチすることはできません。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  プロセスにアタッチすると、そのプロセスで実行されているすべてのプログラムに SDM がアタッチされます。このプロセスは、配列で指定されたデバッグエンジン (DE) によってデバッグでき `rgguidSpecificEngines` ます。 パラメーターを `rgguidSpecificEngines` null 値に設定するか、または `GUID_NULL` プロセス内のすべてのプログラムにアタッチする配列に含めます。
 
  プロセスで発生するすべてのデバッグイベントは、指定された [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) オブジェクトに送信されます。 この `IDebugEventCallback2` オブジェクトは、SDM がこのメソッドを呼び出したときに提供されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

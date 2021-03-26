@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Solution Items folder
 - files, opening with Miscellaneous Files project
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e22ff1c0f95c78e7e19f8e309d1c37f85c7b9aa5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b79eaaeaf94954e2d3dc1bd855b56bee5b8bdae4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895701"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063280"
 ---
 # <a name="miscellaneous-files-project"></a>その他のファイル プロジェクト
 ユーザーがプロジェクト項目を開くと、IDE はその他のファイルプロジェクトに、ソリューション内のプロジェクトのメンバーではないすべての項目を割り当てます。
@@ -37,7 +37,7 @@ ms.locfileid: "99895701"
 
  その他のファイルプロジェクトでは、ユーザーが [ **新しいプロジェクト** ] ダイアログボックスを使用して明示的に作成する必要はありません。 また、その他のファイルプロジェクトでは、プロジェクトメンバーの一覧は永続的には管理されません。 また、オプションの機能を使用して、各ユーザーが最近使用したファイルの一覧を記録します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e75103d008e65c6d2060d598e442499f38a0e322
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932580"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080659"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>従来の言語サービスでのナビゲーション バーのサポート
 エディタービューの上部にあるナビゲーションバーには、ファイル内の型とメンバーが表示されます。 型は左のドロップダウンリストに表示され、メンバーは右のドロップダウンリストに表示されます。 ユーザーが型を選択すると、カレットが型の最初の行に配置されます。 ユーザーがメンバーを選択すると、そのメンバーの定義にカレットが配置されます。 ドロップダウンボックスは、カレットの現在位置を反映して更新されます。

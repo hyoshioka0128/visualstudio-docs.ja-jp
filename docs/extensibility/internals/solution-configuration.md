@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf2694b26305cdaefefd61dc1119b7b019b12d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910980"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080789"
 ---
 # <a name="solution-configuration"></a>ソリューション構成
 ソリューション構成には、ソリューションレベルのプロパティが格納します。 これらは、 **Start** (F5) キーと **Build** コマンドの動作を指示します。 既定では、これらのコマンドはデバッグ構成をビルドして開始します。 どちらのコマンドも、ソリューション構成のコンテキストで実行されます。 つまり、ユーザーは F5 キーを押して、アクティブなソリューションが設定を使用して構成されていることをすべてビルドすることができます。 この環境は、ビルドと実行の際にプロジェクトではなく、ソリューション用に最適化するように設計されています。
@@ -25,7 +25,7 @@ ms.locfileid: "99910980"
  標準の Visual Studio ツールバーには、[スタート] ボタンと、[スタート] ボタンの右側にある [ソリューション構成] ドロップダウンが表示されます。 この一覧では、ユーザーは、F5 キーを押したときに開始する構成を選択したり、独自のソリューション構成を作成したり、既存の構成を編集したりできます。
 
 > [!NOTE]
-> ソリューション構成を作成または編集するための機能拡張インターフェイスはありません。 `DTE.SolutionBuild` を使用する必要があります。 ただし、ソリューションビルドを管理するための機能拡張 Api もあります。 詳細については、「<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>」を参照してください。
+> ソリューション構成を作成または編集するための機能拡張インターフェイスはありません。 `DTE.SolutionBuild` を使用する必要があります。 ただし、ソリューションビルドを管理するための機能拡張 Api もあります。 詳細については、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> を参照してください。
 
  プロジェクトの種類でサポートされているソリューション構成を実装する方法を次に示します。
 
@@ -47,17 +47,17 @@ ms.locfileid: "99910980"
 
    プロジェクトでプラットフォームがサポートされていない場合、そのプロジェクトの [プラットフォーム] 列には [なし] が表示され、は無効になります。
 
-- ビルド
+- Build
 
    現在のソリューション構成によってプロジェクトがビルドされるかどうかを指定します。 選択されていないプロジェクトは、プロジェクトの依存関係が含まれているにもかかわらず、ソリューションレベルのビルドコマンドが呼び出されてもビルドされません。 ビルド対象として選択されていないプロジェクトは、ソリューションのデバッグ、実行、パッケージ化、および配置にまだ含まれています。
 
-- 配置
+- デプロイ
 
    選択したソリューションビルド構成で開始コマンドまたは配置コマンドが使用されたときに、プロジェクトを配置するかどうかを指定します。 このフィールドのチェックボックスは、プロジェクトがオブジェクトにインターフェイスを実装することによって配置をサポートしている場合に使用でき <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> ます。
 
   新しいソリューション構成が追加されると、ユーザーは [標準] ツールバーの [ソリューション構成] ボックスの一覧からその構成を選択して、その構成をビルドまたは開始できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 - [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)
 - [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)

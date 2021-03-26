@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef557c0c679fad0dff25a51a8529270e4bd7ced2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884729"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057144"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>インストール後に実行する必要があるコマンド
 *.Msi* ファイルを使用して拡張機能を展開する場合は、Visual Studio で拡張機能を検出するために、インストールの一部として **devenv/setup** を実行する必要があります。
@@ -30,7 +30,7 @@ ms.locfileid: "99884729"
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>さまざまなバージョンの Visual Studio から devenv.exe を検索するための RegLocator テーブル行
 
-|署名|Root|キー|名前|Type|
+|署名|Root|キー|名前|型|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|環境パス|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|環境パス|2|
@@ -76,12 +76,12 @@ ms.locfileid: "99884729"
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>カスタムアクション devenv.exe をスケジュールするための InstallExecuteSequence テーブル
 
-|操作|条件|Sequence|
+|アクション|条件|Sequence|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Windows インストーラーと共に Vspackage をインストールする](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

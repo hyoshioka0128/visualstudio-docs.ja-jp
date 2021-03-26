@@ -10,17 +10,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056884"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef ユーティリティ
 は、Visual Studio 拡張機能の .dll ファイルをパラメーターとして受け取り、 *.dll* ファイルに付随する *pkgdef* ファイルを作成します。 *Pkgdef* ファイルには、拡張機能のインストール時にシステムレジストリに書き込まれるすべての情報が含まれています。
@@ -39,7 +39,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 必須。 *Pkgdef* 出力ファイルの名前を FileName に設定し &lt; ます &gt; 。
 
 **/codebase**\
-任意。 **CodeBase** ユーティリティに強制的に登録します。
+省略可能。 **CodeBase** ユーティリティに強制的に登録します。
 
 **/assembly**\
 **アセンブリ** ユーティリティに登録を強制します。
@@ -47,7 +47,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 **&lt;AssemblyPath&gt;**\
 *Pkgdef* を生成する元となる *.dll* ファイルのパス。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 *Pkgdef* ファイルを使用した拡張機能の展開では、以前のバージョンの Visual Studio のレジストリ要件が置き換えられています。
 
 ::: moniker range=">=vs-2019"
@@ -84,5 +84,5 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 
 ::: moniker-end
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Createのインスタンスユーティリティ](../../extensibility/internals/createexpinstance-utility.md)

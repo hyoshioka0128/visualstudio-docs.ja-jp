@@ -8,17 +8,17 @@ helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df029be478fef3cf1e9b6138456986016465d5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f08c5c9e533e3a21ec4b87e7d148c3022ee0fed1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903015"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056800"
 ---
 # <a name="custom-colorable-items"></a>カスタム装飾項目
 言語サービスの一部としてカスタム装飾項目を実装することで、キーワードやコメントなど、色分けの型の一覧をオーバーライドできます。
@@ -66,7 +66,7 @@ ms.locfileid: "99903015"
 
     インターフェイスとインターフェイスを実装する方法の例につい <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> ては、「」を参照してください <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスのモデル](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [カスタムエディターでの構文の色分け](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
