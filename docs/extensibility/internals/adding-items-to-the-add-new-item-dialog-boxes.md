@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 574cc5384018d14fdc05a834876002bbcbdbaaf7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969010"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079100"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログボックスへの項目の追加
 [ **新しい項目の追加** ] ダイアログボックスに項目を追加するプロセスは、レジストリキーから開始されます。 次のレジストリエントリに示すように、[ **Additemtemplates** ] セクションには、[ **新しい項目の追加** ] ダイアログボックスで使用できる項目が配置されているディレクトリのパスと名前が含まれています。
@@ -37,7 +37,7 @@ ms.locfileid: "99969010"
 
  **Sortpriority** = dword: 00000064
 
-| 名前 | Type | データ ( *.rgs* ファイルから) | 説明 |
+| Name | 型 | データ ( *.rgs* ファイルから) | Description |
 |------------------|-----------| - | - |
 | @ (既定値) | REG_SZ | % IDS_ADDITEM_TEMPLATES_ENTRY% | 項目テンプレートの **追加** 用のリソース ID。 |
 | Val Templates ディレクトリ | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | **新しい項目の追加** ウィザードのダイアログに表示されるプロジェクト項目のパス。 |
@@ -79,7 +79,7 @@ ms.locfileid: "99969010"
 
   このフィルター機能を実装する場合は、非表示にする必要があるすべての項目のテーブルをマップする必要はありません。 単純に項目を型に分類し、その分類を *.vsdir* ファイルに含めることができます。 その後、インターフェイスを実装することによって、特定の分類を持つすべての項目を非表示にすることができます。 このようにして、[ **新しい項目の追加** ] ダイアログボックスの項目を、プロジェクト内の状態に基づいて動的に設定できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
 - [プロジェクトの拡張に通常使用されるオブジェクトの Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

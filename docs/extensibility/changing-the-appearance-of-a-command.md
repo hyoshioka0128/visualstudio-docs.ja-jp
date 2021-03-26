@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b6911d865b253ff82ffcc6c4911e0989f109f28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911225"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089824"
 ---
 # <a name="change-the-appearance-of-a-command"></a>コマンドの外観を変更する
 コマンドの外観を変更することで、ユーザーにフィードバックを提供できます。 たとえば、使用できなくなったときに、コマンドの外観を変更することができます。 コマンドを使用できるようにするか、使用できないようにするか、メニューの表示と非表示を切り替えることができます。
@@ -38,19 +38,19 @@ ms.locfileid: "99911225"
 
 1. 「 [メニューコマンドのテキストを変更](../extensibility/changing-the-text-of-a-menu-command.md) する」の指示に従って、という名前のメニュー項目を作成 `New Text` します。
 
-2. *ChangeMenuText.cs* ファイルで、次の using ステートメントを追加します。
+2. *ChangeMenuText* ファイルで、次の using ステートメントを追加します。
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. *ChangeMenuTextPackageGuids.cs* ファイルに、次の行を追加します。
+3. *ChangeMenuTextPackageGuids* ファイルに、次の行を追加します。
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. *ChangeMenuText.cs* ファイルで、showmessagebox メソッドのコードを次のコードに置き換えます。
+4. *ChangeMenuText* ファイルで、showmessagebox メソッドのコードを次のコードに置き換えます。
 
     ```csharp
     private void Execute(object sender, EventArgs e)
@@ -86,7 +86,7 @@ ms.locfileid: "99911225"
 
 8. [ **ツール** ] メニューに、 **新しいテキスト** が表示されます。 [ **新しいテキスト**] をクリックします。 これで、コマンドが淡色表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage のユーザーインターフェイス要素の追加方法](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [メニューとコマンドの拡張](../extensibility/extending-menus-and-commands.md)

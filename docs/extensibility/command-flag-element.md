@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f9f9db3d7a8146bd7b44cf779fd62fd75803d86
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848196"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089642"
 ---
 # <a name="command-flag-eelement"></a>コマンドフラグ Eelement
 親要素を変更します。
@@ -76,5 +76,5 @@ ms.locfileid: "99848196"
 |[Buttons 要素](../extensibility/buttons-element.md)|[ボタン要素](../extensibility/button-element.md)の要素のグループを提供します。|
 |[Menus 要素](../extensibility/menus-element.md)|VSPackage が実装するすべてのメニューを定義します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio コマンドテーブル (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

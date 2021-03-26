@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0bd9ad9b8059eb7fd566c1e0c26a938af6d18b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848013"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089902"
 ---
 # <a name="strings-element"></a>文字列要素
 Strings 要素には、少なくとも **Buttontext** 子要素が含まれている必要があります。 その他のすべての子要素は省略可能です。 ' & ' や ' < ' などの無効な XML 文字は、エンティティ (' ' と ' ' など) としてコーディングする必要があり &amp; &lt; ます。
@@ -41,7 +41,7 @@ Strings 要素には、少なくとも **Buttontext** 子要素が含まれて�
 
 |属性|説明|
 |---------------|-----------------|
-|language|任意。 Language = "."。|
+|language|省略可能。 Language = "."。|
 
 ### <a name="child-elements"></a>子要素
 
@@ -62,5 +62,5 @@ Strings 要素には、少なくとも **Buttontext** 子要素が含まれて�
 |[Menu 要素](../extensibility/menu-element.md)|1つのメニュー項目を定義します。|
 |[Combo 要素](../extensibility/combo-element.md)|コンボボックスに表示されるコマンドを定義します。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio Command Table (.Vsct) ファイル](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

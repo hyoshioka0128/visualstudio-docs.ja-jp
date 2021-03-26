@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a55ad867e91a79689a1983837f5ba0030e10a35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952032"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089928"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio のフォントと書式設定
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 環境フォント
@@ -326,7 +326,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |ボタン|ステータス バー|
 |テーブルラベル||
 |列見出し||
-|ツールヒント||
+|ヒント||
 
 ##### <a name="title-case"></a>先頭文字が大文字
  Title case は、語句内の単語の大部分または全部の最初の文字が大文字になるスタイルです。 Visual Studio では、次のような多くの項目にタイトルケースが使用されます。
@@ -483,7 +483,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 太字で表示される環境のフォントテキストは、行の高さの既定の間隔と余白に従う必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [フォント (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [ユーザーインターフェイスのテキスト (Windows)](/windows/desktop/uxguide/text-ui)

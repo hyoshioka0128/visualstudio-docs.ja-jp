@@ -12,17 +12,17 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960781"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079463"
 ---
 # <a name="session-debug-manager"></a>セッションデバッグマネージャー
 セッションデバッグマネージャー (SDM) は、任意の数のコンピューターで複数のプロセス内の任意の数のプログラムをデバッグする、任意の数のデバッグエンジン (DE) を管理します。 デバッグエンジンのマルチプレクサーに加えて、SDM はデバッグセッションを IDE に統合したビューを提供します。
@@ -38,7 +38,7 @@ ms.locfileid: "99960781"
 
  SDM は、現在のプログラム、スレッド、またはスタックフレームを追跡しません。 プロセス、プログラム、スレッドの情報は、特定のデバッグイベントと共に SDM に送信されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)
 - [デバッガーコンポーネント](../../extensibility/debugger/debugger-components.md)
 - [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md)

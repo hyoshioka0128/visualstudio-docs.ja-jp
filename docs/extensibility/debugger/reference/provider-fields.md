@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: daf2ca4aa53c2800685f8fdbde26c402f217b811
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1ab410d9780078cd786b75f14d0321498eca8fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225306"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079541"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 プログラムプロバイダーに関連付けられているプロパティを指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_PROVIDER_FIELDS {
@@ -50,12 +50,12 @@ public enum enum_PROVIDER_FIELDS {
  `PFIELD_IS_DEBUGGER_PRESENT`\
  `fIsDebuggerPresent`フィールドは有効です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  これらの値は、 `Fields` 構造体のどのフィールドが明示的に入力されたかを示すために、 [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) 構造体のメンバーに返されます。
 
  これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。

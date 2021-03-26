@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, extending
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68a16d544147ca95512f8b6064d2b9712b26ed64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 131c04d1025885c59a884220a61098b2c85dd5a1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969023"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079151"
 ---
 # <a name="add-directories-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログボックスにディレクトリを追加する
 次のコード例は、[ **新しい項目の追加** ] ダイアログボックスのディレクトリの新しいセットを登録する方法を示しています。 [ **新しい項目の追加** ] ダイアログボックスのディレクトリは、プロジェクトごとに異なります。 そのため、ディレクトリは、 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects** にある **Projects** サブキーの下に登録されます。
@@ -56,7 +56,7 @@ NoRemove Projects
 
  また、プロジェクトのサブタイプをプログラミングすることによって、既存のプロジェクトを拡張することもできます。 プロジェクトのサブタイプを使用すると、新しいプロジェクトの種類を記述せずにプロジェクトを拡張できます。 プロジェクトのサブタイプの詳細については、「 [プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)
 - [[新しい項目の追加] ダイアログボックスへの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [[新しいプロジェクト] ダイアログボックスにディレクトリを追加する](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
