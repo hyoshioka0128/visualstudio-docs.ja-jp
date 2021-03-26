@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], stack frames
 - stack frames
 ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97adb5d453e147c45ae1f268a20a2d3091286508
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0c54292d79b119fc36c9eff3f0f3519c92a4205
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960729"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079396"
 ---
 # <a name="stack-frames"></a>スタックフレーム
 デバッガーのアーキテクチャでは、 *スタックフレーム* は次のようになります。
@@ -32,7 +32,7 @@ ms.locfileid: "99960729"
 
 - は、スレッドを実行した結果としてデバッグエンジン (DE) または仮想マシンによって作成される [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) インターフェイスによって表されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md)
 - [デバッガーの概念](../../extensibility/debugger/debugger-concepts.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)

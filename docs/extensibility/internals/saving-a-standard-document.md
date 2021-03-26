@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving standard documents
 - persistence, saving standard documents
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18e7fcb73a5ce89fae0936189eada9e3b959a55f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1864ec689c1068b97775ca1a8bddbd390e7b43a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958454"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080893"
 ---
 # <a name="saving-a-standard-document"></a>標準ドキュメントの保存
 環境は、[保存]、[名前を付けて保存]、および [すべてを保存] コマンドを処理します。 ユーザーが [**ファイル**] メニューの [**保存**]、[名前を付け **て保存**]、または [**すべて** 保存] を選択すると、**すべて保存** が行われるため、次のプロセスが実行されます。
@@ -58,6 +58,6 @@ ms.locfileid: "99958454"
 
 2. ドキュメントを <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` `punkWindowFrame` 新しい階層に転送するには、(,) メソッドを呼び出します。 [名前を付けて保存] コマンドを実行する階層では、このメソッドを呼び出します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [プロジェクト項目のオープンと保存](../../extensibility/internals/opening-and-saving-project-items.md)

@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23bb194dfadd202cf2899b1834f3b6ceeaa2b3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75be4f32abd5ab0bdf945ad250b73a6f060cae25
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968204"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074965"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 要素 (Visual Studio テンプレートウィザード拡張)
 インターフェイスを実装するクラスの完全修飾名 `IWizard` 。
@@ -54,7 +54,7 @@ ms.locfileid: "99968204"
 
  このテキストは、インターフェイスを実装するクラスを指定し `IWizard` ます。 指定されたクラスは、 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 要素によって指定されたアセンブリ内に存在する必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `FullClassName` は `WizardExtension` に必須の子要素です。
 
 ## <a name="example"></a>例

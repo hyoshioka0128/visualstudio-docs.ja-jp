@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc98e3c2717b14ac1933e5b41269af1efb8e932f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089915"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio の色とスタイル
 
@@ -46,7 +46,7 @@ Visual Studio の UI 要素に色を割り当てるには、いくつかのオ�
 
 UI 要素に最適な方法を選択します。
 
-| UI | Method | それらは何ですか? |
+| UI | メソッド | それらは何ですか? |
 | --- | --- | --- |
 | ダイアログボックスが埋め込まれています。 | **システムカラー** | オペレーティングシステムが UI 要素の色と外観を定義できるシステム名 (コモンダイアログコントロールなど)。 |
 | VS 環境全体と一貫性を持たせ、共有トークンのカテゴリとセマンティックの意味に一致する UI 要素があるカスタム UI があること。 | **共通の共有色** | 特定の UI 要素の既存の定義済みの色のトークン名 |
@@ -360,10 +360,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | データ | 説明 |
+| Name | 種類 | Data | 説明 |
 | --- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
  レジストリに指定されたサービスは、対応するカテゴリの [Ivsfontandcolordefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) の実装を提供する必要があります。
 
@@ -373,10 +373,10 @@ VSPackage は、カスタムカテゴリを使用してフォントや色を制�
 
 次の2つの値を使用してレジストリを設定します。
 
-| 名前 | 種類 | データ | 説明 |
+| Name | 種類 | Data | 説明 |
 |--- | --- | --- | --- |
 | カテゴリ | REG_SZ | GUID | カテゴリを識別するために作成された GUID |
-| Package | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
+| パッケージ | REG_SZ | GUID | カテゴリをサポートする VSPackage サービスの GUID |
 
 レジストリに指定されたサービスは、対応するグループのの実装を提供する必要があり <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> ます。
 

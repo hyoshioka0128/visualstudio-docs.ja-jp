@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f956aa520bca79a84fe203093c225cfeb8389ba1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944922"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089200"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>ツールウィンドウで拡張機能を作成する
 
@@ -29,7 +29,7 @@ ms.locfileid: "99944922"
 
 1. **Firstwindow** という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、 **Mywindow** という名前のツールウィンドウ項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >   [**カスタムツールウィンドウ**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、ツールウィンドウのファイル名を *MyWindow.cs* に変更します。
+2. プロジェクトが開いたら、 **Mywindow** という名前のツールウィンドウ項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **Visual C#** の機能拡張] にアクセスし、  >   [**カスタムツールウィンドウ**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、ツールウィンドウのファイル名を *mywindow .cs* に変更します。
 
 3. プロジェクトをビルドし、デバッグを開始します。
 

@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 215606f12eb14c4a4b8db8313356a363dea5247e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2e2f4d36c911e3b41d86e9cc0480c97979d63897
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149614"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081387"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 このメソッドは、デバッグプロセスの指定されたプロパティ値を照会します。
@@ -45,7 +45,7 @@ int QueryProperties(
 からプロパティ定義とプロパティ値を含む配列のサイズ。
 
 `dwPropType`\
-からクエリ対象のプロパティの定義を格納している配列。 指定できる値は、
+からクエリ対象のプロパティの定義を格納している配列。 次の値を指定できます。
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -59,8 +59,8 @@ int QueryProperties(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドはほとんど使用されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

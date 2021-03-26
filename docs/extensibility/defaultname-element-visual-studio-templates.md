@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - DefaultName element [Visual Studio project templates]
 ms.assetid: 0ff056c8-b9d2-4747-9308-92adf1811491
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a34fa9fd362f7a344dc13f1c557f8362e9e10b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8b11655424086b65a1b4e2089e245f1e389b611
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968464"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091384"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 要素 (Visual Studio テンプレート)
 プロジェクトまたはアイテムの作成時に Visual Studio プロジェクトシステムによって生成される名前を指定します。
@@ -56,7 +56,7 @@ ms.locfileid: "99968464"
 
  このテキストは、プロジェクトまたはアイテムの既定の名前を指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `DefaultName` は省略可能な要素です。
 
  プロジェクトの場合、この要素は、プロジェクトをディスクに格納するディレクトリの名前を指定します。 項目の場合は、ソースファイルのファイル名を指定します。

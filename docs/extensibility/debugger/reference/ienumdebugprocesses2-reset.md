@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Reset
 ms.assetid: 31cbde4f-0bba-497a-9969-d2c342ef4a7b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e812385425fa711b9bb0f2da57ba242c3031386b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 233f6e6226f6469f58c240ff299bd5fb70ca9f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224396"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091553"
 ---
 # <a name="ienumdebugprocesses2reset"></a>IEnumDebugProcesses2::Reset
 列挙体を最初の要素にリセットします。
@@ -41,8 +41,8 @@ int Reset();
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドが呼び出された後 [、次のメソッドを](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md) 呼び出すと、列挙体の最初の要素が返されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)
