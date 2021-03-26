@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 427c35a03f9d0cb11667ca9eaf88f144d018f620
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074302"
 ---
 # <a name="when-to-create-project-types"></a>プロジェクト タイプを作成する状況
 新しいプロジェクトの種類を作成すると、ユーザー向けにカスタマイズするための基礎と [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] なります。 ただし、すべてのカスタマイズに新しいプロジェクトの種類を作成する必要はありません [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 次のガイドラインは、シナリオに新しいプロジェクトの種類が必要かどうかを判断するのに役立ちます。
@@ -59,7 +59,7 @@ ms.locfileid: "99869519"
 ## <a name="create-a-project-subtype"></a>プロジェクトのサブタイプを作成する
  プロジェクトのサブタイプを使用して、新しいプロジェクトの種類を作成することなく、マネージプロジェクトの種類を拡張することができます。 プロジェクトのサブタイプは、COM 集計を使用して、Microsoft またはで記述されたマネージプロジェクトを拡張し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ます。 COM 集計を使用すると、マネージプロジェクトシステムの実装の大部分を再利用しながら、集計やサポートインターフェイスを使用して特定のシナリオに合わせてカスタマイズできます。 プロジェクトのサブタイプの詳細については、「 [プロジェクトのサブタイプ](../../extensibility/internals/project-subtypes.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ドキュメントウィンドウとエディター](/previous-versions/bb165691(v=vs.100))
 - [チェックリスト: 新しいプロジェクト タイプの作成](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)

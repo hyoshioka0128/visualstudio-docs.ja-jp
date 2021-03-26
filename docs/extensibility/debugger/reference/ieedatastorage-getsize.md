@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetSize
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 46051ae73859213b3206e27fb83d40c0561d0c0b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 632d2adeaca976d0bb3fdfbe1b88571e337e02dd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222927"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083532"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 このオブジェクトに格納されているバイト数を返します。
@@ -47,9 +47,9 @@ int GetSize(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  実際のデータバイトを取得するには、 [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) メソッドを使用します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

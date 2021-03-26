@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6c93d90771eeffbfe28ae91781403019743afa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944896"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089148"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>VSPackage を使用して拡張機能を作成する
 
@@ -29,7 +29,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 1. **Firstpackage** という名前の VSIX プロジェクトを作成します。 VSIX プロジェクトテンプレートは、"vsix" を検索することで、[ **新しいプロジェクト** ] ダイアログで見つけることができます。
 
-2. プロジェクトが開いたら、 **Firstpackage** という名前の Visual Studio パッケージ項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **visual C#** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *FirstPackage.cs* に変更します。
+2. プロジェクトが開いたら、 **Firstpackage** という名前の Visual Studio パッケージ項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 [**新しい項目の追加**] ダイアログで、[ **visual C#** の  >  **機能拡張**] にアクセスし、[ **visual Studio パッケージ**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *firstpackage. .cs* に変更します。
 
 3. プロジェクトをビルドし、デバッグを開始します。
 
@@ -41,7 +41,7 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 この時点では、読み込まれる原因となるものがないため、拡張機能は読み込まれません。 通常、拡張機能を読み込むには、UI を操作する (メニューコマンドをクリックするか、ツールウィンドウを開く) か、または VSPackage が特定の UI コンテキストで読み込むように指定します。 Vspackage と UI コンテキストの読み込みの詳細については、「 [vspackage の読み込み](../extensibility/loading-vspackages.md)」を参照してください。 この手順では、ソリューションが開いているときに VSPackage を読み込む方法について説明します。
 
-1. *FirstPackage.cs* ファイルを開きます。 クラスの宣言を探し `FirstPackage` ます。 既存の属性を次の属性に置き換えます。
+1. *Firstpackage .cs* ファイルを開きます。 クラスの宣言を探し `FirstPackage` ます。 既存の属性を次の属性に置き換えます。
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]

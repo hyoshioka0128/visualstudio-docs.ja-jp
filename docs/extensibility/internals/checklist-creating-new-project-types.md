@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a8cdeb250b81a39a5d9350da61a872ef43ae23b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac6495a6c2d5edcde00a3eb002f2fc41211a27e3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944499"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074770"
 ---
 # <a name="checklist-create-new-project-types"></a>チェックリスト: 新しいプロジェクトの種類を作成する
 新しいプロジェクトの種類を作成するには、いくつかのタスクを完了する必要があります。 次のチェックリストに、これらのタスクのガイドを示します。
@@ -59,7 +59,7 @@ ms.locfileid: "99944499"
 
 8. Vspackage をインストールするための Microsoft インストーラー (*.msi*) ファイルを作成します。 詳細については、「 [Install vspackage with Windows インストーラー](../../extensibility/internals/installing-vspackages-with-windows-installer.md)」、「 [Register a project type](../../extensibility/internals/registering-a-project-type.md)」、および「 [vspackage](../../extensibility/internals/vspackages.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Visual Studio での階層](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [プロジェクトの種類を作成する場合](../../extensibility/internals/when-to-create-project-types.md)
 - [プロジェクトの種類の作成](../../extensibility/internals/creating-project-types.md)

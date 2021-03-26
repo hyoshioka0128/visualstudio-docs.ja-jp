@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsLanguageInfo interface
 - language services, objects
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77647daeae2cf6e3bc76f9b0f2a58608b5bb28a4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839600"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074516"
 ---
 # <a name="legacy-language-service-interfaces"></a>従来の言語サービスのインターフェイス
 特定のプログラミング言語では、言語サービスのインスタンスは一度に1つしか存在できません。 ただし、1つの言語サービスで複数のエディターを使用できます。
@@ -52,6 +52,6 @@ ms.locfileid: "99839600"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>|コマンドハンドラーを使用してテキストビューを変更できるようにします。 インターフェイスを実装するクラスは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> インターフェイスも実装する必要があり <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> ます。 テキストビューでは、 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> メソッドに渡されたオブジェクトをクエリすることによって、オブジェクトを取得し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。 ビューごとに1つのオブジェクトが存在する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> ます。|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|ユーザーがコードウィンドウに入力するコマンドをインターセプトします。 実装からの出力を監視して、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> カスタムの完了情報とビューの変更を提供する<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>オブジェクトをテキストビューに渡すには、を呼び出し <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> ます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの開発](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [チェックリスト: 従来の言語サービスの作成](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

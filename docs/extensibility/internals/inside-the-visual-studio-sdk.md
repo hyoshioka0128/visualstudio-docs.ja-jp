@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839860"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074705"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Visual Studio SDK の内部
 
@@ -64,7 +64,7 @@ ms.locfileid: "99839860"
 
  一部のツールウィンドウは、ソリューションエクスプローラーツールウィンドウを表示し、他のツールウィンドウを非表示にして、タブをクリックして使用できるようにする1つのウィンドウにまとめてドッキングされます。 この図には、2つのツールウィンドウである [ **エラー一覧** ] ウィンドウと [ **出力** ] ウィンドウが1つのウィンドウにまとめてドッキングされています。
 
- また、[メインドキュメント] ウィンドウには、複数のエディターウィンドウが表示されています。 ツールウィンドウには通常1つのインスタンスしかありませんが (たとえば、1つの **ソリューションエクスプローラー** のみを開くことができます)、エディターウィンドウには複数のインスタンスを含めることができます。各ドキュメントは、それぞれ同じウィンドウにドッキングされています。 この図は、2つのエディターウィンドウ (1 つのフォームデザイナーウィンドウ) を持つドキュメントペインを示しています。 ドキュメントウィンドウ内のすべてのウィンドウは、[タブ] をクリックすると表示されますが、EditorPane.cs ファイルが含まれているエディターウィンドウが表示され、アクティブになります。
+ また、[メインドキュメント] ウィンドウには、複数のエディターウィンドウが表示されています。 ツールウィンドウには通常1つのインスタンスしかありませんが (たとえば、1つの **ソリューションエクスプローラー** のみを開くことができます)、エディターウィンドウには複数のインスタンスを含めることができます。各ドキュメントは、それぞれ同じウィンドウにドッキングされています。 この図は、2つのエディターウィンドウ (1 つのフォームデザイナーウィンドウ) を持つドキュメントペインを示しています。 ドキュメントペイン内のすべてのウィンドウは、[タブ] をクリックすると使用できますが、EditorPane .cs ファイルを含むエディターウィンドウは表示され、アクティブになります。
 
  Visual Studio を拡張すると、Visual Studio ユーザーが拡張機能と対話できるツールウィンドウを作成できます。 また、Visual Studio ユーザーがドキュメントを編集できる独自のエディターを作成することもできます。 ツールウィンドウとエディターは Visual Studio に統合されるため、タブに正しくドッキングしたり、タブに表示したりする必要はありません。 Visual Studio に正しく登録されると、Visual Studio のツールウィンドウとドキュメントウィンドウの標準的な機能が自動的に設定されます。 詳細については、「 [ツールウィンドウの拡張とカスタマイズ](../../extensibility/extending-and-customizing-tool-windows.md)」を参照してください。
 

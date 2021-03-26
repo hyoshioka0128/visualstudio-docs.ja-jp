@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder interface
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: febe22338ddeaf275b37ae09c76921c91ec509da
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4fdfe0cffce209880d870cde7b70cc1e02252413
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143624"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089083"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "102143624"
 
  このインターフェイスは、通常、シンボルプロバイダーによって返されるシンボルフィールドを、シンボルの現在の値を含むメモリコンテキストまたはオブジェクトにバインドします。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugBinder : IUnknown
@@ -49,17 +49,17 @@ IDebugBinder : IUnknown
 |[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|関数パラメーターの作成に使用される [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) オブジェクトを取得します。|
 |[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|変数の正確な型を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、解析ツリーの式エバリュエーターによって使用されるオブジェクトを返します。 式エバリュエーターは、シンボルプロバイダーを使用して式を解析し、式のシンボルを [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)のインスタンスに変換します。これにより、ソースコード内の型と場所について、各シンボルが記述されます。 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)メソッドは、 `IDebugField` オブジェクトを[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)オブジェクトに変換します。このオブジェクトは、シンボル型をメモリ内の実際の値に接続またはバインドします。 これらの `IDebugObject` オブジェクトは、後で評価できるように解析ツリーに格納されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: ee
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価のインターフェイス](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

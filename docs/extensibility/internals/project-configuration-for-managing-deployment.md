@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebdc1dc529e73e17ba55a0b4766f11dced4addcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 589403f126a4fd614911c1deb99e9acd32d1ec7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893647"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074419"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>展開の管理のためのプロジェクト構成
 配置は、デバッグとインストールのために、ビルドプロセスから予想される場所に出力項目を物理的に移動する操作です。 たとえば、Web アプリケーションがローカルコンピューター上に構築され、サーバー上に配置される場合があります。
@@ -39,7 +39,7 @@ ms.locfileid: "99893647"
 
   構成では、ビルドまたは配置操作に影響を与える依存関係を指定できます。 ビルドまたは配置の依存関係は、構成自体がビルドまたは配置される前または後にビルドまたは配置する必要があるプロジェクトです。 プロジェクト間のビルド依存関係についてはインターフェイスで説明 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> し、インターフェイスを使用して依存関係を配置し <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> ます。 詳細については、「 [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構成オプションの管理](../../extensibility/internals/managing-configuration-options.md)
 - [ビルドのためのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)
 - [出力のためのプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md)

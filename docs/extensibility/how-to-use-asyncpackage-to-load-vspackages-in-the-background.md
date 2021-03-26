@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b5917a42e7083f7357ce76762bf8b51a1b60f9
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 516b6797d622a3f88ed1fcd37b87ecd117d4e8a8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993485"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074822"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>方法: AsyncPackage を使用してバックグラウンドで Vspackage を読み込む
 VS パッケージを読み込んで初期化すると、ディスク i/o が発生する可能性があります。 このような i/o が UI スレッドで発生した場合は、応答性の問題が発生する可能性があります。 これに対処するために、Visual Studio 2015 では、バックグラウンドスレッドでのパッケージの読み込みを有効にするクラスが導入されまし  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> た。
