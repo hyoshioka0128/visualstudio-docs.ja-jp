@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1847801ed9dcbb1b7c7145c86b1998b54e2bb5d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951343"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055792"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>ツールウィンドウにツールバーを追加する
 このチュートリアルでは、ツールウィンドウにツールバーを追加する方法について説明します。
@@ -86,14 +86,14 @@ ms.locfileid: "99951343"
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>ツールウィンドウにツールバーを追加する
 
-1. *TWTestCommandPackageGuids.cs* で、次の行を追加します。
+1. *Twtestcommandpackageguids .cs* で、次の行を追加します。
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. *TestToolWindow.cs* で、次の using ステートメントを追加します。
+2. *TestToolWindow* で、次の using ステートメントを追加します。
 
     ```csharp
     using System.ComponentModel.Design;
@@ -115,5 +115,5 @@ ms.locfileid: "99951343"
 
 3. ツールバーで、アイコンをクリックして、 **Twtestcommandpackage 内に Twtestcommandpackage というメッセージを表示します。 TWTestCommand. MenuItemCallback ()**。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ツールバーの追加](../extensibility/adding-a-toolbar.md)

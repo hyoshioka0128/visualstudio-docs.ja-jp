@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4483d73a5e6124006f09d05065b6f75f7a654e47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912736"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082128"
 ---
 # <a name="image-service-and-catalog"></a>イメージサービスとカタログ
 このクックブックには、visual studio イメージサービスと Visual Studio 2015 で導入されたイメージカタログを採用するためのガイダンスとベストプラクティスが含まれています。
@@ -127,10 +127,10 @@ ms.locfileid: "99912736"
 |ManifestFolder|マニフェストファイルを含むフォルダー|
 |マイドキュメント]|現在のユーザーの [マイドキュメント] フォルダーの完全なパス|
 |ProgramFiles|% ProgramFiles% 環境変数の値|
-|System (システム)|*Windows\System32* フォルダー|
+|システム|*Windows\System32* フォルダー|
 |WinDir|% WinDir% 環境変数の値|
 
- **イメージ**
+ **Image**
 
  要素は、 \<Image> モニカーによって参照できるイメージを定義します。 イメージモニカーを形成する GUID と ID。 イメージのモニカーは、イメージライブラリ全体で一意である必要があります。 複数のイメージに特定のモニカーが含まれている場合は、ライブラリのビルド中に最初に検出されたものが保持されます。
 
@@ -181,7 +181,7 @@ ms.locfileid: "99912736"
 
 |**属性**|**定義**|
 |-|-|
-|Type|必要ネイティブリソースの型 (XAML または PNG)|
+|型|必要ネイティブリソースの型 (XAML または PNG)|
 |id|必要ネイティブリソースの整数の ID 部分|
 
  **ImageList**
@@ -738,7 +738,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  イメージライブラリビューアーツールでは、イメージマニフェストを読み込んで、Visual Studio がマニフェストを正しく作成するのと同じ方法でユーザーが操作できるようにすることができます。 ユーザーは、背景、サイズ、DPI 設定、ハイコントラストなどの設定を変更できます。 また、マニフェスト内のエラーを検出するための読み込み情報が表示され、マニフェスト内の各イメージのソース情報が表示されます。
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>よく寄せられる質問
 
 - 読み込み時に含める必要がある依存関係はあり \<Reference Include="Microsoft.VisualStudio.*.Interop.14.0.DesignTime" /> ますか。
 
@@ -1028,7 +1028,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphRecursion||再帰|
     |GlyphXmlItem||タグ|
     |GlyphJSharpProject||DocumentCollection|
-    |GlyphJSharpDocument||マニュアル名の正式名称|
+    |GlyphJSharpDocument||ドキュメント|
     |GlyphForwardType||GoToNext|
     |GlyphCallersGraph||CallTo|
     |GlyphCallGraph||CallFrom|

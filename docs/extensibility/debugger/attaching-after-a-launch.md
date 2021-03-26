@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ce6497b820e1dcd37315f9d74cb97de4cc34e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9010d2619b76c2932ca1a8a5aed8db6c6a5cf075
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837737"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055324"
 ---
 # <a name="attach-after-a-launch"></a>起動後にアタッチする
 プログラムが起動した後、デバッグセッションはデバッグエンジン (DE) をプログラムにアタッチする準備ができています。
@@ -45,7 +45,7 @@ ms.locfileid: "99837737"
 
  これで、DE がプログラムにアタッチされ、スタートアップイベントを送信する準備が整いました。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プログラムに直接アタッチする](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [ポートへの通知](../../extensibility/debugger/notifying-the-port.md)
 - [デバッグタスク](../../extensibility/debugger/debugging-tasks.md)

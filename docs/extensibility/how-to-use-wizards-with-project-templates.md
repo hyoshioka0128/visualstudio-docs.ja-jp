@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883312"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082284"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>方法: プロジェクトテンプレートでウィザードを使用する
 
@@ -74,7 +74,7 @@ Visual Studio SDK の一部であるプロジェクトテンプレートプロ�
 
 5. ウィザード実装のクラスを VSIX プロジェクトに追加します。 ( **ソリューションエクスプローラー** で、[VSIX プロジェクト] ノードを右クリックし、[ **追加**]、[ **新しい項目**]、[ **クラス**] の順に選択します)。クラスに **WizardImplementation** という名前を指定します。
 
-6. *WizardImplementationClass.cs* ファイルのコードを次のコードに置き換えます。
+6. *WizardImplementationClass* ファイル内のコードを次のコードに置き換えます。
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ Visual Studio SDK の一部であるプロジェクトテンプレートプロ�
 
      この例では、ユーザー入力フォームから <xref:System.Collections.Generic.Dictionary%602> パラメーターにパラメーター値を追加します。 プロジェクト内の `$custommessage$` パラメーターのすべてのインスタンスは、ユーザーが入力したテキストと置き換えられます。
 
-7. 次に、 **Userinputform** を作成します。 *WizardImplementation.cs* ファイルで、クラスの末尾の後に次のコードを追加し `WizardImplementation` ます。
+7. 次に、 **Userinputform** を作成します。 *WizardImplementation* ファイルで、クラスの末尾の後に次のコードを追加します `WizardImplementation` 。
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Visual Studio SDK の一部であるプロジェクトテンプレートプロ�
 
 この例では、テンプレートとして使用されるプロジェクトに、カスタムウィザードのユーザー入力フォームで指定されたメッセージが表示されます。
 
-1. **ソリューションエクスプローラー** で、 **myprojecttemplate** プロジェクトにアクセスし、 *Class1.cs* を開きます。
+1. **ソリューションエクスプローラー** で、 **myprojecttemplate** プロジェクトにアクセスし、 *Class1* を開きます。
 
 2. アプリケーションの `Main` メソッドに次のコード行を追加します。
 

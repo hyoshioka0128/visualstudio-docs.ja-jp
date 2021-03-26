@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6442a8475c862693b851be783ae85bbb0a2e90af
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874075"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082115"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>VSPackage のインストールディレクトリを選択してください
 VSPackage とそのサポートファイルは、ユーザーのファイルシステム上にある必要があります。 場所は、VSPackage が管理されているかどうか、サイドバイサイドのバージョン管理スキーム、およびユーザーの選択によって異なります。
@@ -61,7 +61,7 @@ VSPackage とそのサポートファイルは、ユーザーのファイルシ�
 
 VSPackage DLL にリソースと **SatelliteDll\DllName** レジストリエントリが含まれている場合、はこれらの DLL を [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 上記の順序で読み込もうとします。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [共有バージョンとバージョン付き Vspackage を選択する](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage を管理する](../../extensibility/managing-vspackages.md)
 - [パッケージ登録の管理](/previous-versions/bb166783(v=vs.100))
