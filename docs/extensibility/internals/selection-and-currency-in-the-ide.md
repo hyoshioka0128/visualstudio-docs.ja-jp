@@ -10,17 +10,17 @@ helpviewer_keywords:
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f77afea813158c787978e2ea4dbec1a55e36eca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0fb65a63b99f625f8d32af8436db753a0f17322e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890631"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080906"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE での選択と通貨
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) は、選択 *コンテキスト* を使用して、ユーザーの現在選択されているオブジェクトに関する情報を保持します。 選択コンテキストを使用すると、Vspackage は次の2つの方法で通貨追跡に参加できます。
@@ -64,6 +64,6 @@ ms.locfileid: "99890631"
 
 - ウィンドウのフレーム選択コンテキスト内でトレースされた要素を変更するイベント。 例としては、DocObject 内での選択の変更や、プロジェクトタイプウィンドウでの選択の変更などがあります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コンテキスト オブジェクトの選択](../../extensibility/internals/selection-context-objects.md)
 - [ユーザーへのフィードバック](../../extensibility/internals/feedback-to-the-user.md)

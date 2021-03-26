@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 81087d4f4da3435fb7bc80ec4a965394c7d6c7f3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220821"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060329"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 関数
 この関数は、現在の状態の完全修飾ディレクトリの一覧を調べます。
@@ -54,14 +54,14 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|クエリが正常に実行されました。|
 |SCC_E_OPNOTSUPPORTED|ソースコード管理システムでは、この操作はサポートされていません。|
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  関数は、返される配列にファミリのビットのビットマスク `SCC_DIRSTATUS` ( [ディレクトリステータスコード](../extensibility/directory-status-code-enumerator.md)を参照) を入力します。これは、指定されたディレクトリごとに1つのエントリです。 状態配列は、呼び出し元によって割り当てられます。
 
  IDE では、ディレクトリの名前を変更する前に、この関数を使用して、ディレクトリがソース管理下にあるかどうかを、対応するプロジェクトがあるかどうかを照会することによって確認します。 ディレクトリがソース管理下にない場合、IDE はユーザーに適切な警告を提供できます。
@@ -69,6 +69,6 @@ LPLONG  lpStatus
 > [!NOTE]
 > ソース管理プラグインが1つ以上の状態値を実装しないことを選択した場合は、実装されていないビットを0に設定する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [ディレクトリの状態コード](../extensibility/directory-status-code-enumerator.md)

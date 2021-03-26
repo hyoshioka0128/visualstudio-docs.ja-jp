@@ -9,17 +9,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3be218565feb26d66f623a281fc9277b7fa8fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a536a5f0f2b1cac09c65079974c661e09e9139ab
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080919"
 ---
 # <a name="saving-a-custom-document"></a>カスタム ドキュメントの保存
 環境は、[ **保存**]、[名前を付け **て保存**]、および [ **すべてを保存** ] コマンドを処理します。 ユーザーが [**ファイル** の保存]、[名前を付け **て保存**]、**または [すべて** を保存]**をクリックする** と、すべて保存が行われるため、次のプロセスが実行されます。
@@ -43,6 +43,6 @@ ms.locfileid: "99958519"
     > [!NOTE]
     > 独自の永続性を実装する場合は、必ずメソッドを呼び出して時間を節約してください <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> 。 このメソッドは、ファイルが安全に保存されていることを確認します (たとえば、ファイルが読み取り専用ではない)。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [プロジェクト項目のオープンと保存](../../extensibility/internals/opening-and-saving-project-items.md)

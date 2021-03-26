@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e6e4a07a023be398c4106984fe4dc33eddd2706
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9486f1cd3e931d134c6fe2842f8704926de70966
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929200"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060706"
 ---
 # <a name="vsix-color-compiler"></a>VSIX カラー コンパイラ
 Visual Studio 拡張機能の色コンパイラツールは、既存の Visual Studio テーマの色を表す .xml ファイルを取得し、それを pkgdef ファイルに反映して、それらの色を Visual Studio で使用できるようにするコンソールアプリケーションです。 このツールは、.xml ファイル間の違いを簡単に比較できるため、ソース管理でカスタムカラーを管理する場合に便利です。 また、ビルド環境にフックして、ビルドの出力が有効な pkgdef ファイルであるようにすることもできます。
@@ -54,7 +54,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|名前|必要テーマの名前|
+|Name|必要テーマの名前|
 |GUID|必要テーマの GUID (GUID の書式設定と一致する必要があります)|
 
  Visual Studio のカスタム色を作成する場合は、次のテーマに対してこれらの色を定義する必要があります。 特定のテーマに対して色が存在しない場合、Visual Studio は、淡色テーマから不足している色の読み込みを試みます。
@@ -63,7 +63,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 |-|-|
 |白|{de3dbbcd-f642-433c-8353-8f1df4370aba}|
 |黒|{1ded0138-47ce-435e-84ef-9ec1f439b749}|
-|ブルー|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
+|青|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 |ハイコントラスト|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|
 
  **カテゴリ**
@@ -78,10 +78,10 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|名前|必要カテゴリの名前|
+|Name|必要カテゴリの名前|
 |GUID|必要カテゴリの GUID (GUID の書式設定と一致する必要があります)|
 
- **色**
+ **Color**
 
  要素は、 \<Color> コンポーネントまたは UI の状態の色を定義します。 色には [UI の種類] [状態] という名前を付けることをお勧めします。 重複しているため、"color" という語は使用しないでください。 色は、要素の種類と、その色が適用される状況 ("状態") を明確に示す必要があります。 色を空にすることはできません。また、要素と要素のいずれかまたは両方を含める必要があり \<Background> \<Foreground> ます。 Color 要素は次のように定義されます。
 
@@ -94,7 +94,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|名前|必要色の名前|
+|Name|必要色の名前|
 
  **背景または前景**
 
@@ -107,7 +107,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 |**属性**|**定義**|
 |-|-|
-|Type|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|
+|型|必要色の種類。 次のいずれかを指定できます。<br /><br /> *CT_INVALID:* 色が無効であるか、設定されていません。<br /><br /> *CT_RAW:* 生の ARGB 値。<br /><br /> *CT_COLORINDEX:* 使用しないでください。<br /><br /> *CT_SYSCOLOR:* SysColor からの Windows システム色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX からの Visual Studio の色。<br /><br /> *CT_AUTOMATIC:* 自動色。<br /><br /> *CT_TRACK_FOREGROUND:* 使用しないでください。<br /><br /> *CT_TRACK_BACKGROUND:* 使用しないでください。|
 |source|必要16進数で表される色の値|
 
  __VSCOLORTYPE 列挙体によってサポートされるすべての値は、Type 属性のスキーマでサポートされています。 ただし、CT_RAW と CT_SYSCOLOR のみを使用することをお勧めします。
@@ -138,9 +138,9 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 |**スイッチ名**|**メモ**|**必須またはオプション**|
 |-|-|-|
 |名前のない (.xml ファイル)|これは、最初の名前のないパラメーターで、は変換する XML ファイルへのパスです。|必須|
-|名前のない (pkgdef ファイル)|これは2番目の名前のないパラメーターで、は生成された pkgdef ファイルの出力パスです。<br /><br /> 既定値: \<XML Filename> pkgdef|Optional|
-|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|Optional|
-|/?|ヘルプ情報を印刷します。|Optional|
+|名前のない (pkgdef ファイル)|これは2番目の名前のないパラメーターで、は生成された pkgdef ファイルの出力パスです。<br /><br /> 既定値: \<XML Filename> pkgdef|オプション|
+|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|オプション|
+|/?|ヘルプ情報を印刷します。|オプション|
 |/help|ヘルプ情報を印刷します。|オプション|
 
  **例**
@@ -149,7 +149,7 @@ Visual Studio 拡張機能の色コンパイラツールは、既存の Visual S
 
 - VsixColorCompiler D:\xml\colors.xml/noLogo
 
-## <a name="notes"></a>ノート
+## <a name="notes"></a>メモ
 
 - このツールを使用するには、最新バージョンの VC + + ランタイムがインストールされている必要があります。
 

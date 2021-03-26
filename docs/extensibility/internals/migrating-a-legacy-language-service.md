@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afe98f2d96618999aa02dd01f03f55395af46e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895688"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063267"
 ---
 # <a name="migrating-a-legacy-language-service"></a>従来の言語サービスの移行
 レガシ言語サービスを Visual Studio の新しいバージョンに移行するには、プロジェクトを更新し、source.extension.vsixmanifest ファイルをプロジェクトに追加します。 言語サービス自体は以前と同様に機能します。これは、Visual Studio エディターによってそれが適応されるためです。
@@ -71,13 +71,13 @@ ms.locfileid: "99895688"
 
     - Microsoft.VisualStudio.Shell.Interop.10.0.dll への参照を追加します。
 
-8. VsPkg.cs ファイルを開き、属性の値をに変更します。 `DefaultRegistryRoot`
+8. VsPkg ファイルを開き、属性の値をに変更します。 `DefaultRegistryRoot`
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
     ```
 
-9. 元のサンプルでは言語サービスが登録されていないため、次の属性を VsPkg.cs に追加する必要があります。
+9. 元のサンプルでは言語サービスが登録されていないため、次の属性を VsPkg に追加する必要があります。
 
     ```
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]
@@ -109,5 +109,5 @@ ms.locfileid: "99895688"
 
 12. デバッグを開始します。 Visual Studio の2番目のインスタンスが開かれました。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)

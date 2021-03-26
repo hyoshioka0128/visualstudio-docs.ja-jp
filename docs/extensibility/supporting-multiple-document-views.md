@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965123"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056208"
 ---
 # <a name="supporting-multiple-document-views"></a>複数のドキュメント ビューのサポート
 エディター用に個別のドキュメントデータとドキュメントビューオブジェクトを作成することにより、ドキュメントの複数のビューを提供できます。 追加のドキュメントビューが役に立つ場合は、次のような場合があります。
@@ -26,7 +26,7 @@ ms.locfileid: "99965123"
 
 - フォームとコードビューのサポート: エディターがさまざまな種類のビューを提供する必要があります。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]たとえば、には、フォームビューとコードビューの両方が用意されています。
 
-  詳細については、Visual Studio パッケージテンプレートによって作成されたカスタムエディタープロジェクトの EditorFactory.cs ファイルにある CreateEditorInstance プロシージャを参照してください。 このプロジェクトの詳細については、「 [チュートリアル: カスタムエディターを作成](../extensibility/walkthrough-creating-a-custom-editor.md)する」を参照してください。
+  詳細については、Visual Studio パッケージテンプレートによって作成されたカスタムエディタープロジェクトの EditorFactory .cs ファイルにある CreateEditorInstance プロシージャを参照してください。 このプロジェクトの詳細については、「 [チュートリアル: カスタムエディターを作成](../extensibility/walkthrough-creating-a-custom-editor.md)する」を参照してください。
 
 ## <a name="synchronizing-views"></a>ビューの同期
  複数のビューを実装する場合、ドキュメントデータオブジェクトは、すべてのビューがデータと同期されるようにします。 のイベント処理インターフェイスを使用して <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 、複数のビューをデータと同期することができます。

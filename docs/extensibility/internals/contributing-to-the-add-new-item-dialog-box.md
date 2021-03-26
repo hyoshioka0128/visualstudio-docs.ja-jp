@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, contributing to
 ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3fdc5705cad0ec696a520350042d7f18aaec146
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8186f25f8e1631f0e13aa7a8f43620812c4c7693
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057053"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>[新しい項目の追加] ダイアログボックスに投稿する
 **Projects** サブキーの下に **項目** テンプレートを追加することにより、プロジェクトのサブタイプは、[**新しい項目の追加**] ダイアログボックスの項目の完全な新しいディレクトリを提供できます。
@@ -43,6 +43,6 @@ ms.locfileid: "99884638"
 
  [ **新しい項目の追加** ] ダイアログボックスで項目をフィルター処理するには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg> プロジェクトのサブタイプアグリゲーターオブジェクトにインターフェイスを実装します。 たとえば、プロジェクトを集計することによってデータベースプロジェクトを実装するプロジェクトのサブタイプでは、フィルター処理を実装することで、[ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **新しい項目の追加** ] ダイアログボックスから特定の項目をフィルター処理できます。さらに、でをサポートすることにより、データベースプロジェクト固有の項目を追加でき `VSHPROPID_ AddItemTemplatesGuid` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> ます。 [ **新しい項目の追加** ] ダイアログボックスにフィルターを適用して項目を追加する方法の詳細については、「 [[新しい項目の追加] ダイアログボックスへの項目の追加](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [プロジェクトの拡張に通常使用されるオブジェクトの Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

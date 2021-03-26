@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint methods
 - breakpoints, methods
 ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c20a92e847f120850d7cbd424cc073018903911d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06494b5ed6c1826e665f42e180ad8c71de596e30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930825"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055241"
 ---
 # <a name="breakpoint-related-methods"></a>ブレークポイントに関連するメソッド
 デバッグエンジン (DE) は、ブレークポイントの設定をサポートしている必要があります。 Visual Studio のデバッグでは、次の種類のブレークポイントをサポートしています。
@@ -27,7 +27,7 @@ ms.locfileid: "99930825"
 
      UI を通じて要求され、指定したコードの場所に正常にバインドされます。
 
-- Pending
+- 保留中
 
      UI で要求されますが、実際の命令にはまだバインドされていません。
 
@@ -38,7 +38,7 @@ ms.locfileid: "99930825"
 
  保留中のブレークポイントを作成および使用するには、 [IDebugEngine2:: CreatePendingBreakpoint ポイント](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) メソッドと [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) インターフェイスの次のメソッドの実装が必要です。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)|指定した保留中のブレークポイントをコードの場所にバインドできるかどうかを判断します。|
 |[束縛](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)|指定された保留中のブレークポイントを1つまたは複数のコードの場所にバインドします。|
@@ -53,7 +53,7 @@ ms.locfileid: "99930825"
 
  コードの場所にバインドする保留中のブレークポイントには、次の [IDebugBoundBreakpoint2](../../extensibility/debugger/reference/idebugboundbreakpoint2.md) メソッドの実装が必要です。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugboundbreakpoint2-getpendingbreakpoint.md)|ブレークポイントを含む保留中のブレークポイントを取得します。|
 |[GetState](../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|バインドされたブレークポイントの状態を取得します。|
@@ -63,26 +63,26 @@ ms.locfileid: "99930825"
 
  解決と要求情報には、次の [IDebugBreakpointResolution2](../../extensibility/debugger/reference/idebugbreakpointresolution2.md) メソッドの実装が必要です。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)|解決によって表されるブレークポイントの型を取得します。|
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)|ブレークポイントを説明するブレークポイントの解決情報を取得します。|
 
  バインディング中に発生する可能性のあるエラーの解決には、次の [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) メソッドの実装が必要です。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md)|エラーブレークポイントを含む保留中のブレークポイントを取得します。|
 |[GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)|エラーブレークポイントを説明するブレークポイントエラーの解決方法を取得します。|
 
  また、バインド中に発生する可能性のあるエラーを解決するには、次の [IDebugErrorBreakpointResolution2](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)メソッドも必要です。
 
-|Method|説明|
+|メソッド|説明|
 |------------|-----------------|
 |[GetBreakpointType](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)|ブレークポイントの種類を取得します。|
 |[GetResolutionInfo](../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)|ブレークポイントの解決情報を取得します。|
 
  ブレークポイントでソースコードを表示するには、 [IDebugStackFrame2:: GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) および [IDebugStackFrame2:: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)のメソッドのメソッドを実装する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [実行制御と状態の評価](../../extensibility/debugger/execution-control-and-state-evaluation.md)

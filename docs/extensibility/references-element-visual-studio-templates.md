@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a9c2cc5d8827f6419472e5fd84add4d9c9f5228
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be367bbd1b466c5df3051af384ccefdcf93f8b44
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837178"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056572"
 ---
 # <a name="references-element-visual-studio-templates"></a>References 要素 (Visual Studio テンプレート)
 テンプレートによってプロジェクトに追加されるアセンブリ参照をグループ化します。
@@ -49,7 +49,7 @@ ms.locfileid: "99837178"
 
 |要素|説明|
 |-------------|-----------------|
-|[参照](../extensibility/reference-element-visual-studio-templates.md)|必須の要素です。<br /><br /> 項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。 要素には1つ以上 `Reference` の要素が必要 `References` です。|
+|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|必須の要素です。<br /><br /> 項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。 要素には1つ以上 `Reference` の要素が必要 `References` です。|
 
 ### <a name="parent-elements"></a>親要素
 
@@ -57,7 +57,7 @@ ms.locfileid: "99837178"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|テンプレートの内容を指定します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `References` は、`TemplateContent` の子要素で、省略可能な要素です。
 
  `Reference`要素と `References` 要素は、属性値がである *.vstemplate* ファイルでのみ使用できます `Type` `Item` 。

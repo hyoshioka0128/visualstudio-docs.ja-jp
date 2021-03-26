@@ -8,17 +8,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ee1a3afe313cdc11bb28e0a24a89e3e3ad7f0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9767af4c30957111526303600f9e8eda815b42f0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852727"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057092"
 ---
 # <a name="component-management"></a>コンポーネント管理
 Windows インストーラー内のタスクの単位は、Windows インストーラーコンポーネント (WICs またはコンポーネントとも呼ばれます) と呼ばれます。 GUID は、各 WIC を識別します。これは、インストールの基本単位であり、Windows インストーラーを使用するセットアップの参照カウントです。
@@ -49,6 +49,6 @@ Windows インストーラー内のタスクの単位は、Windows インスト�
 
      この場合、別のバージョンの VSPackage がインストールされていると、共有キーは上書きされます。 2番目のバージョンを削除すると、キーが指しているファイルが消えます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [共有バージョンとバージョン付き Vspackage を選択する](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [VSPackage セットアップシナリオ](../../extensibility/internals/vspackage-setup-scenarios.md)

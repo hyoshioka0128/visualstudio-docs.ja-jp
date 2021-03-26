@@ -6,23 +6,23 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875524"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060588"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>ImmutableArrays 用の roslyn アナライザーとコード対応ライブラリ
 
 [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") を使用すると、コード対応のライブラリをビルドできます。 コード対応ライブラリは、ツール (Roslyn アナライザー) を使用して、最適な方法でライブラリを使用したり、エラーを回避したりするための機能を提供します。 このトピックでは、 [システムコレクション](https://www.nuget.org/packages/System.Collections.Immutable) の NuGet パッケージを使用するときに、一般的なエラーをキャッチするために、実際の Roslyn アナライザーを構築する方法について説明します。 また、この例では、アナライザーによって検出されたコードの問題に対してコード修正を行う方法も示しています。 ユーザーは、Visual Studio 電球 UI にコード修正プログラムを表示し、コードの修正を自動的に適用できます。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>はじめに
 
 この例をビルドするには、次のものが必要です。
 
@@ -66,7 +66,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 メインメニューから、[**ファイル**] [  >  **新規作成**] [プロジェクト] の順に選択し  >  ます。 [ **新しいプロジェクト** ] ダイアログの左側のナビゲーションバーで、[ **C#** プロジェクト] の下にある [ **機能拡張**] を選択し、右側のウィンドウで [ **コード修正プロジェクトテンプレートを含むアナライザー** ] を選択します。 名前を入力し、ダイアログを確認します。
 
-このテンプレートは、 *DiagnosticAnalyzer.cs* ファイルを開きます。 [エディターバッファー] タブを選択します。このファイルには、( `DiagnosticAnalyzer` Roslyn API 型) から派生したアナライザークラス (プロジェクトに指定した名前の形式) が含まれています。 新しいクラスでは、アナライザー `DiagnosticAnalyzerAttribute` が C# 言語に関連していることを宣言することで、コンパイラがアナライザーを検出して読み込むようにします。
+このテンプレートは、 *DiagnosticAnalyzer* ファイルを開きます。 [エディターバッファー] タブを選択します。このファイルには、( `DiagnosticAnalyzer` Roslyn API 型) から派生したアナライザークラス (プロジェクトに指定した名前の形式) が含まれています。 新しいクラスでは、アナライザー `DiagnosticAnalyzerAttribute` が C# 言語に関連していることを宣言することで、コンパイラがアナライザーを検出して読み込むようにします。
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -309,7 +309,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 完成したすべてのコードを [ここで](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)確認できます。 サブフォルダー *DoNotUseImmutableArrayCollectionInitializer* と *DoNotUseImmutableArrayCtor* にはそれぞれ、問題を見つけるための C# ファイルと、Visual Studio 電球 UI に表示されるコード修正を実装する c# ファイルがあります。 完成したコードでは、ImmutableArray type オブジェクトが過剰にフェッチされないように、もう少し抽象化されてい \<T> ます。 入れ子になった登録済みのアクションを使用して、サブアクション (オブジェクトの分析の分析とコレクションの分析の分析) を実行するたびに使用可能なコンテキストに型オブジェクトを保存します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 * [\\\ ビルド2015トーク](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub の完成したコード](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9be8b97b3e37a224b12781e66543f7ab126f2c6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1085275427aeb02a767a66088ee58ced890dcb05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958532"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056858"
 ---
 # <a name="create-a-source-control-vspackage"></a>ソース管理 VSPackage を作成する
 このドキュメントには、に統合されているソース管理パッケージのアーキテクチャの概要、実装するインターフェイスによって定義されている API、および使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] されるサービスと、単純なソース管理パッケージの実装を示すサンプルへのリンクが含まれています。
@@ -26,7 +26,7 @@ ms.locfileid: "99958532"
  ソース管理 VSPackage を使用すると、と統合するソース管理の詳細な統合パスを作成でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。 これにより、パッケージは、でホストされている既定のソース管理 UI をバイパスし、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] プロジェクトシステムからのソース管理要求に応答して、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **ソリューションエクスプローラー** などのコンポーネントと対話できます。 は [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] サービスモデルを使用してと統合できる VSPackage を作成するメカニズムをパートナーに提供します。
 
 ## <a name="in-this-section"></a>このセクションの内容
-- [作業開始](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
+- [開始するには](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
  ソース管理パッケージについて説明します。これは、のソース管理機能を実装するためのソース管理プラグインに代わる、より高度な代替手段です [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 

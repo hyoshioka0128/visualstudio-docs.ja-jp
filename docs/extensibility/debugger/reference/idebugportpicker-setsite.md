@@ -6,20 +6,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortPicker::SetSite
 ms.assetid: 7319e187-adfe-4b3f-aec9-521356fb5a8a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1c222bd06a974e7f2b1a57096a120399b554b82
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8a442c438f233187265c90e724f57e8681b95556
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169276"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072261"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 サービスプロバイダーを設定します。
@@ -45,8 +45,8 @@ public int SetSite(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドは、他のメソッドが呼び出される前に呼び出されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

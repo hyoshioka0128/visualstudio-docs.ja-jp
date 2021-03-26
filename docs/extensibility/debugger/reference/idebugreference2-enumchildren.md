@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::EnumChildren
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1481e58dd36e330bf9c4cff1644629bd93de55ac
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 92f55f511a68cca6685579eeb6d686108bf70799
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102151377"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105071455"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 参照の選択された子のリストを取得します。 将来使用するために予約されています。
@@ -72,7 +72,7 @@ int EnumChildren (
 ## <a name="return-value"></a>戻り値
  常に `E_NOTIMPL` を返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)

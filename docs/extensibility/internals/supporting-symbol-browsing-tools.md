@@ -15,17 +15,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377cdd9875ebc2fddd80c673e53ecb318d171e47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d54f56ae3bc5fd5956f67400d84edfd4c8c9e55c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875563"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080568"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>シンボル参照ツールのサポート
 **オブジェクトブラウザー**、 **クラスビュー**、 **呼び出しブラウザー** および **検索シンボル結果** ツールは、Visual Studio のシンボル参照機能を提供します。 これらのツールでは、シンボルの階層ツリービューが表示され、ツリー内のシンボル間の関係が表示されます。 シンボルは、さまざまなコンポーネントに含まれる名前空間、オブジェクト、クラス、クラスメンバー、およびその他の言語要素を表すことができます。 コンポーネントには、Visual Studio プロジェクト、外部 .NET Framework コンポーネント、および型 (.tlb) ライブラリが含まれます。 詳細については、「[コードの構造の表示](../../ide/viewing-the-structure-of-code.md)」を参照してください。
@@ -50,7 +50,7 @@ ms.locfileid: "99875563"
 > [!NOTE]
 > ネイティブコードシンボルプロバイダーを実装するには、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> インターフェイスとインターフェイスを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [方法: オブジェクト マネージャーを使用したライブラリの登録](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [方法: ライブラリによって提供されるシンボルのリストをオブジェクト マネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [方法: ライブラリでのシンボルの識別](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

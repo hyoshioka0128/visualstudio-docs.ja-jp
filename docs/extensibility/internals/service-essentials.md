@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 145097b9e012d8c09df1424747d04148df3cae8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69e7e1c5b18019c4ff063ec504fc702f47f7e023
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080828"
 ---
 # <a name="service-essentials"></a>サービスの基本情報
 サービスは、2つの Vspackage 間のコントラクトです。 VSPackage は、別の VSPackage が使用するインターフェイスの特定のセットを提供します。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] は、他の Vspackage にサービスを提供する Vspackage のコレクションです。
@@ -94,7 +94,7 @@ ms.locfileid: "99911006"
 
     このコードは、SVsActivityLog サービスを取得し、それを IVsActivityLog インターフェイスにキャストします。これを使用してアクティビティログに書き込むことができます。 例については、「 [方法: アクティビティログを使用する](../../extensibility/how-to-use-the-activity-log.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [使用可能なサービスの一覧](../../extensibility/internals/list-of-available-services.md)
 - [サービスの使用と提供](../../extensibility/using-and-providing-services.md)

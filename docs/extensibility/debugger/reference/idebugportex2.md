@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54da202e6bbaf08216b921afbde2e39f1da3a788
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e26fec4b47a301bfb266f40b41fd88216ccf671f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142792"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072430"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 このインターフェイスを使用すると、セッションデバッグマネージャー (SDM) は、ポートで実行されているプログラムとプロセスを制御できます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPortEx2 : IUnknown
@@ -47,18 +47,18 @@ IDebugPortEx2 : IUnknown
 |[GetPortProcessId](../../../extensibility/debugger/reference/idebugportex2-getportprocessid.md)|ポート自体のプロセス ID を取得します。|
 |[GetProgram](../../../extensibility/debugger/reference/idebugportex2-getprogram.md)|プログラムノードに関連付けられているプログラムを取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このインターフェイスは、通常、SDM とカスタムポート供給業者の間でプライベートです。
 
  必要に応じて、デバッグエンジン (DE) は、 [launchsuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)に渡された[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)インターフェイスでこのインターフェイスを検索し、 [launchsuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)を使用してプログラムを起動することができます。 ただし、これは必須ではありません。また、DE は、要求プログラムを起動するために必要な操作を行うことができます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: portpriv. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad30e3f7b91e8a76715f66d9f6701597f3830bd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884690"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057131"
 ---
 # <a name="configuration-options-overview"></a>構成オプションの概要
 のプロジェクトでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ビルド、デバッグ、実行、および配置が可能な複数の構成をサポートできます。 構成は、プロパティの名前付きセット (通常はコンパイラスイッチとファイルの場所) で記述されたビルドの種類です。 既定では、新しいソリューションには、 *デバッグ* と *リリース* の2つの構成が含まれています。 これらの構成は、既定の設定を使用して適用することも、特定のソリューションやプロジェクトの要件に合わせて変更することもできます。 一部のパッケージは、ActiveX エディターとして、またはインプレースコンポーネントとして、2つの方法で構築できます。 ただし、プロジェクトでは複数の構成をサポートする必要はありません。 使用できる構成が1つだけの場合、その構成はすべてのソリューション構成にマップされます。
@@ -70,7 +70,7 @@ ms.locfileid: "99884690"
 
   前の図の構成オブジェクトインターフェイスと構成プロバイダーオブジェクトインターフェイスの詳細については、「 [プロジェクト構成オブジェクト](../../extensibility/internals/project-configuration-object.md)」を参照してください。 また、 [ビルド用のプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md) には、構成ビルダーとビルド依存関係オブジェクトインターフェイスの詳細情報が記載されています。また、 [配置を管理するためのプロジェクト構成](../../extensibility/internals/project-configuration-for-managing-deployment.md) では、configuration 配置機能と配置依存関係オブジェクトにアタッチされているインターフェイスについて詳しく説明しています。 最後に、 [出力のプロジェクト構成](../../extensibility/internals/project-configuration-for-output.md) では、出力グループと出力オブジェクトインターフェイス、およびプロパティページを使用して、構成に依存するプロパティを表示および設定する方法について説明します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
 - [ビルドのプロジェクト構成](../../extensibility/internals/project-configuration-for-building.md)
 - [ソリューションの構成](../../extensibility/internals/solution-configuration.md)

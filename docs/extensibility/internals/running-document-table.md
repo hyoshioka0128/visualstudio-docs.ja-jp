@@ -11,17 +11,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 863a9b1cdb68218539045c9154fc18d845495222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615910684fd79d3cbd8d8a1e012c239e27abc180
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902891"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080971"
 ---
 # <a name="running-document-table"></a>ドキュメント テーブルの実行
 IDE では、現在開いているすべてのドキュメントの一覧が、実行中のドキュメントテーブル (RDT) と呼ばれる内部構造で保持されます。 この一覧には、これらのドキュメントが現在編集されているかどうかに関係なく、メモリ内のすべての開いているドキュメントが含まれます。 ドキュメントは、プロジェクトまたはメインプロジェクトファイル (.vcxproj ファイルなど) 内のファイルを含む、永続化された任意の項目です。
@@ -58,6 +58,6 @@ IDE では、現在開いているすべてのドキュメントの一覧が、�
 
 - 階層または項目 ID を使用して、プロジェクトシステムに完全なドキュメントパスを要求してから、RDT で項目を確認します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [RDT_ReadLock の使用法](../../extensibility/internals/rdt-readlock-usage.md)
 - [ドキュメント テーブルの保存と実行](../../extensibility/internals/persistence-and-the-running-document-table.md)

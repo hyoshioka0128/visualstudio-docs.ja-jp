@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895753"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063319"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft ヘルプ ビューアー SDK
 
@@ -452,7 +452,7 @@ Branding.xml ファイルには、トピックにが含まれる場合に、ト�
 | 機能: | **CollapsibleArea** |
 | 次のコマンドを使用します。 | 折りたたみコンテンツコントロールのテキストを展開します |
 | **要素** | **Value** |
-| ExpandText | expand |
+| ExpandText | Expand |
 | CollapseText | [折りたたみ] |
 | 機能: | **CodeSnippet** |
 | 次のコマンドを使用します。 | コードスニペットコントロールテキスト。  注: "非互換性" 領域があるコードスニペットコンテンツは、スペースに変更されます。 |
@@ -690,7 +690,7 @@ Visual Studio ブランド化パッケージを入手するには、.mshc ファ
 </html>
 ```
 
-**要約**
+**まとめ**
 
 上記の手順を使用および拡張すると、Vsp は Visual Studio ヘルプビューアー用のコンテンツセットを配置できるようになります。
 

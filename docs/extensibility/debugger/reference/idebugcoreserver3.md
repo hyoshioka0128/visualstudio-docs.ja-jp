@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3 interface
 ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1328a97742a4672cdc71805c4c674d66fe05e817
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ab605db6a49b8b7cc9893692ff1bb9e6da15171f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154614"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088147"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 このインターフェイスは、プロセスが実行されているサーバーに関する情報へのアクセスを提供します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugCoreServer3 : IDebugCoreServer2
@@ -49,16 +49,16 @@ IDebugCoreServer3 : IDebugCoreServer2
 |[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)|サーバーとの通信に使用されているプロトコルを示す値を取得します。|
 |[DisableAutoAttach](../../../extensibility/debugger/reference/idebugcoreserver3-disableautoattach.md)|このサーバーが認識しているすべてのデバッグエンジンのすべての自動アタッチ設定を無効にします。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  カスタムポートサプライヤーは、[イベント](../../../extensibility/debugger/reference/idebugportevents2-event.md)の呼び出しで[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)インターフェイスを受け取ります。 インターフェイスは、 `IDebugCoreServer3` そのインターフェイスから取得できます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

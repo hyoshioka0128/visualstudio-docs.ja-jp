@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccBackgroundGet function
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4df0866458f04081c82796767808194b292866a1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6d850b1f8493f3118cb4d3e49915361daa1e4837
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220925"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060459"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 関数
 この関数は、指定された各ファイルを、ユーザー操作なしでソース管理から取得します。
@@ -62,17 +62,17 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|操作は正常に完了しました。|
 |SCC_E_BACKGROUNDGETINPROGRESS|バックグラウンドでの取得が既に進行中である (ソース管理プラグインは、同時バッチ操作をサポートしていない場合にのみ、これを返す必要があります)。|
 |SCC_I_OPERATIONCANCELED|操作が完了する前に取り消されました。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この関数は、ソース管理プラグインが読み込まれたスレッドとは異なるスレッド上で常に呼び出されます。 この関数は、完了するまでを返すことは想定されていません。ただし、ファイルの複数のリストを使用して複数回呼び出すことができます。
 
  引数の使用 `dwFlags` は [Sccget](../extensibility/sccget-function.md)と同じです。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)
