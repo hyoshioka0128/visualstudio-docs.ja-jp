@@ -9,24 +9,24 @@ helpviewer_keywords:
 - GUIDs, VSPackages
 - CATIDs for VSPackages
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bebaf35fc19cbad86a1e1ee4c8bbeddef0259cb4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276e7f146858c2de166c0ba20063a0bf4d8b88a0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905876"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086093"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>プロジェクトの拡張に通常使用されるオブジェクトの Catid
 次の表に、 `Project` `ProjectItem` 、、およびの各プロジェクトのオブジェクトを拡張するために使用される catid の一覧を示し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ます。 これらの Catid は、 *VSLangProj* で定義されています。
 
 ## <a name="listing-of-catids"></a>Catid の一覧
 
-|名前|GUID|
+|Name|GUID|
 |----------|----------|
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|
@@ -34,7 +34,7 @@ ms.locfileid: "99905876"
 ## <a name="visual-basic-catids"></a>Visual Basic Catid
  次の表に、参照オブジェクトを拡張するために使用される Catid の一覧を示し [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ます。 これらはすべて、 *VSLangProj* で定義されています。
 
-|名前|GUID|
+|Name|GUID|
 |----------|----------|
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectBrowseObject>|{E0FDC879-C32A-4751-A3D3-0B3824BD575F}|
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBProjectConfigBrowseObject>|{67F8DD11-14EB-489b-87F0-F01C52AF3870}|
@@ -45,7 +45,7 @@ ms.locfileid: "99905876"
 ## <a name="visual-c-catids"></a>Visual C# catid
  次の Catid を使用して、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 参照オブジェクトを拡張できます。 これらはすべて、 *VSLangProj* で定義されています。
 
-|名前|GUID|
+|Name|GUID|
 |----------|----------|
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectBrowseObject>|{4EF9F003-DE95-4d60-96B0-212979F2A857}|
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpProjectConfigBrowseObject>|{A12CE10A-227F-4963-ADB6-3A43388513CA}|
@@ -56,7 +56,7 @@ ms.locfileid: "99905876"
 ## <a name="c-catids"></a>C++ Catid
  次の [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] プロジェクトシステム catid は、.net 2003 のタイプライブラリで公開されていません。これらのプロジェクトオブジェクトを拡張する場合は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必ずコードに含める必要があります。 これらの Catid は、の今後のリリースでタイプライブラリに含まれる予定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] です。
 
-|名前|GUID|
+|Name|GUID|
 |----------|----------|
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|
@@ -72,7 +72,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
 
  次の [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] project System catid は、.net 2003 のタイプライブラリにも公開されていません。これらのプロジェクトオブジェクトを拡張する場合は、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必ずコードに含める必要があります。 これらの Catid は .Net 2003 でのみ使用でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、の今後のリリースでは使用できません [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-|名前|GUID|
+|Name|GUID|
 |----------|----------|
 |`CVCAssemblyReferenceNode`|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|
@@ -95,6 +95,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 | [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] | {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC} |
 | [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] | {F184B08F-C81C-45F6-A57F-5ABD9991F28F} |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクトおよびプロジェクト項目テンプレートの追加](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [プロジェクトと項目テンプレートの登録](../../extensibility/internals/registering-project-and-item-templates.md)

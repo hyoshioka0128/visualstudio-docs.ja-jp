@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], automation support
 - automation [Visual Studio SDK], creating Tools Options pages
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 532568dc0e4d181dfe3de56151096565bf9ff771
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b587af698cf7f044c02baab1a8207be1457d6cfd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905975"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086223"
 ---
 # <a name="automation-support-for-options-pages"></a>オプションページのオートメーションサポート
 Vspackage では、の [**ツール**] メニュー ([**ツール**] [オプション] ページ) にカスタム **オプション** のダイアログボックスを表示し、オートメーションモデルで使用できるようにすることができ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
@@ -38,5 +38,5 @@ Vspackage では、の [**ツール**] メニュー ([**ツール**] [オプシ�
 
    カスタム **ツールオプション** ページを実装するサンプルについては、「 [vssdk のサンプル](https://github.com/Microsoft/VSSDK-Extensibility-Samples)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [プロジェクトオブジェクトの公開](../../extensibility/internals/exposing-project-objects.md)

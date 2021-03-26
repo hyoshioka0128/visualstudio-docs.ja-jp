@@ -11,17 +11,17 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5f4e9805eec8fd5d0089f1b8348253523d9056f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b83b68af4c026c40aca7969068ad015a61d64321
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925015"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086067"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>方法: オブジェクトマネージャーにライブラリを登録する
 シンボルを参照することができます。たとえば、 **クラスビュー**、 **オブジェクトブラウザー**、 **呼び出しブラウザー** **シンボルの検索結果** などがあります。これにより、プロジェクトまたは外部コンポーネントでシンボルを表示できます。 シンボルには、名前空間、クラス、インターフェイス、メソッド、およびその他の言語要素が含まれます。 これらのシンボルは、ライブラリによって追跡され、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ツールにデータを設定するオブジェクトマネージャーに公開されます。
@@ -166,7 +166,7 @@ ms.locfileid: "99925015"
 
     ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスの機能拡張](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [シンボル参照ツールのサポート](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [方法: ライブラリによって提供されるシンボルのリストをオブジェクトマネージャーに公開する](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

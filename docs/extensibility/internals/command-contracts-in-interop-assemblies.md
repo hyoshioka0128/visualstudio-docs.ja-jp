@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command handling with interop assemblies, command contracts
 - interop assemblies, command contracts
 ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ed9435f4f0618ee0c0f4bc47cdb21e2cbf92f77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36c757faacb7fe3193f9acbbd040468f66b0623a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086054"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>相互運用機能アセンブリのコマンドコントラクト
 インターフェイスを使用してコマンドを処理するための基本的なコントラクトは、環境がメソッドを呼び出して、コマンドがサポートされているかどうかを判断し、 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> サポートされている場合はその状態とテキストを判断することです。 次に、環境はメソッドを呼び出して <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> コマンドを実行します。
@@ -29,7 +29,7 @@ ms.locfileid: "99940126"
 
  コマンドが階層ウィンドウ内で動作する必要がある場合は、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> インターフェイスを使用する必要があります。 インターフェイスには同様の <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> コントラクトがあり、同様のメソッドとがあり <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Vspackage のユーザーインターフェイス要素の追加方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage でのコマンドルーティング](../../extensibility/internals/command-routing-in-vspackages.md)
 - [コマンドの実装](../../extensibility/internals/command-implementation.md)

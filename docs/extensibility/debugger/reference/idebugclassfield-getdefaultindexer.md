@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::GetDefaultIndexer method
 ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29ebdcab870ba18d38fa6957d37f09abb65db000
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ce8a492ea4d45a54a295617d7863b0623fd6a87
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164215"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088550"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 既定のインデクサーの名前を取得します。
@@ -46,7 +46,7 @@ int GetDefaultIndexer(
 ## <a name="return-value"></a>戻り値
  成功した場合は S_OK を返します。既定のインデクサーがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  クラスの既定のインデクサーは、 `Default` 配列アクセスのプロパティとしてマークされているプロパティです。 これは、に固有のものです [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 。 で宣言された既定のインデクサーの例 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] と、その使用方法を次に示します。
 
 ```vb
@@ -79,5 +79,5 @@ Function GetItem(Index as Integer) as Integer
 End Function
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

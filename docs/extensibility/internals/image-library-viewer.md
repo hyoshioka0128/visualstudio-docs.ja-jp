@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d60443e97bc557bc964d59750417b2662e4c3c8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840120"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085976"
 ---
 # <a name="image-library-viewer"></a>イメージ ライブラリ ビューア
 Visual Studio のイメージライブラリビューアーツールでは、イメージマニフェストを読み込んで検索することができます。これにより、Visual Studio の場合と同じ方法でユーザーが操作できるようになります。 ユーザーは、背景、サイズ、DPI、ハイコントラストなどの設定を変更できます。 このツールでは、各イメージマニフェストの読み込み情報も表示され、イメージマニフェスト内の各イメージのソース情報が表示されます。 このツールは、次の場合に役立ちます。
@@ -94,10 +94,10 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 |ManifestFolder|マニフェストファイルを含むフォルダー|
 |マイドキュメント]|現在のユーザーの [マイドキュメント] フォルダーの完全なパス|
 |ProgramFiles|% ProgramFiles% 環境変数の値|
-|System (システム)|Windows\System32 フォルダー|
+|システム|Windows\System32 フォルダー|
 |WinDir|% WinDir% 環境変数の値|
 
- **イメージ**
+ **Image**
 
  要素は、 \<Image> モニカーによって参照できるイメージを定義します。 イメージモニカーを形成する GUID と ID。 イメージのモニカーは、イメージライブラリ全体で一意である必要があります。 複数のイメージに特定のモニカーが含まれている場合は、ライブラリのビルド中に最初に検出されたものが保持されます。
 
@@ -148,7 +148,7 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
 |**属性**|**定義**|
 |-|-|
-|Type|必要ネイティブリソースの型 (XAML または PNG)|
+|型|必要ネイティブリソースの型 (XAML または PNG)|
 |id|必要ネイティブリソースの整数の ID 部分|
 
  **ImageList**
@@ -217,11 +217,11 @@ Visual Studio のイメージライブラリビューアーツールでは、イ
 
  ![イメージ ライブラリ ビューアーのフィルター ID](../../extensibility/internals/media/image-library-viewer-filter-id.png "イメージ ライブラリ ビューアーのフィルター ID")
 
-## <a name="notes"></a>ノート
+## <a name="notes"></a>メモ
 
 - 既定では、ツールは Visual Studio のインストールディレクトリに存在する複数のイメージマニフェストを取得します。 一般公開されているモニカーを持つ唯一のものは、 **VisualStudio ImageCatalog** マニフェストです。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (カスタムマニフェストでこの GUID をオーバーライドし **ません** ) 型: knownmonikers
 
 - 検出されたすべてのイメージマニフェストを読み込むために起動が試行されるため、アプリケーションが実際に表示されるまでに数秒かかることがあります。 マニフェストの読み込み中に、処理速度が低下したり、応答しなくなったりすることもあります。
 
-## <a name="sample-output"></a>サンプル出力
+## <a name="sample-output"></a>出力例
  このツールでは、出力は生成されません。

@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87538db39df590fd3885f545e5442c7dafecb9a1
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 95f423b556263dc7ad634feaebda90d62eeeeb04
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164267"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088576"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 このクラスで入れ子になっているクラスの列挙子を作成します。
@@ -47,7 +47,7 @@ int EnumNestedClasses(
 ## <a name="return-value"></a>戻り値
 成功した場合は、S_OK を返すか、入れ子になったクラスがない場合は S_FALSE を返します。 それ以外の場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 列挙体の各要素は、入れ子になったクラスを記述する [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) オブジェクトです。
 
 入れ子になったクラスは、別のクラス内で定義されたクラスです。 次に例を示します。
@@ -60,6 +60,6 @@ class RootClass {
 
 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列挙体には、クラスを表す1つのオブジェクトが含まれ `NestedClass` ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

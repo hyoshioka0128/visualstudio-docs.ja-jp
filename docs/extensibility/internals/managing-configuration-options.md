@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - configuration options
 ms.assetid: 596c28ee-f48d-4252-a5c4-f730c43a39e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565f73b9809f3f18fe6828a19860a46b14ff07e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f773148f11a115ee82c8ee84a8d4668001908000
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839468"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095200"
 ---
 # <a name="managing-configuration-options"></a>構成オプションの管理
 新しいプロジェクトの種類を作成する場合は、プロジェクトのビルド、パッケージ化、配置、および実行の方法を決定するプロジェクトとソリューションの構成設定を管理する必要があります。 次のトピックでは、プロジェクトとソリューションの構成について説明します。

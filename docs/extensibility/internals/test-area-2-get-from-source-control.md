@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83b869a91b823a2f14823ab65a745a3ef6c0d883
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab6a35aa896d7a68e151007d6f694672f7477688
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898222"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073431"
 ---
 # <a name="test-area-2-get-from-source-control"></a>テスト領域 2: ソース管理から取得
 このテスト領域は、Get コマンドを使用してバージョンストアから項目を取得するためのテストケースを対象とします。 これらのテストケースは、ローカルプロジェクトと Web プロジェクトの両方に適用できます。
@@ -46,7 +46,7 @@ ms.locfileid: "99898222"
 
 ## <a name="test-cases"></a>テスト ケース
 
-|操作|テストステップ|確認が必要な結果|
+|アクション|テストステップ|確認が必要な結果|
 |------------|----------------|--------------------------------|
 |ローカルに存在しないファイルの最新バージョンを取得する|1. プロジェクトを作成します。<br />2. プロジェクトに項目を追加します。<br />3. プロジェクトをソース管理下に配置します。<br />4. 項目のローカルコピーを削除します。<br />5. 項目の最新バージョンを取得します (ショートカットメニュー、 **最新バージョンの取得**)。|項目ファイルはローカルに取得されます。|
 |ローカルに存在しないファイルを取得する|1. プロジェクトを作成します。<br />2. プロジェクトに項目を追加します。<br />3. プロジェクトをソース管理下に配置します。<br />4. 項目のローカルコピーを削除します。<br />5. 項目 (**ファイル**、 **ソース管理**、 **取得** \<item> ) を取得します。|項目ファイルはローカルに取得されます。|
@@ -55,5 +55,5 @@ ms.locfileid: "99898222"
 |ローカルに存在するファイルを取得します。バージョンストアの最新バージョンと同じです。|1. 新しいプロジェクトを作成します。<br />2. プロジェクトに項目を追加します。<br />3. プロジェクトをソース管理下に配置します。<br />4. 項目 (**ファイル**、 **ソース管理**、 **取得** \<item> ) を取得します。|ローカルファイルは変更されていません。|
 |1つのプロジェクトでソリューションを取得する|1. 1 つのプロジェクトでソリューションを作成します。<br />2. ソリューションをソース管理下に配置します。<br />3. すべてのプロジェクトファイルをローカルで削除します。<br />4. ソリューション (**ファイル**、 **ソース管理**、 **取得**) を取得します。|削除されたファイルはすべてローカルに復元されます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン向けのテスト ガイド](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
