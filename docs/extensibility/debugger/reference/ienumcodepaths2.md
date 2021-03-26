@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2 interface
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9758bacf6dc22ad65dc4d8db9b21d0f6728efaf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e8ff8b4532ab67a969c8270eeb83bdf715e0b1c0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227087"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091735"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 このインターフェイスは、コードパスの一覧を表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IEnumCodePaths2 : IUnknown
@@ -46,15 +46,15 @@ IEnumCodePaths2 : IUnknown
 |[複製](../../../extensibility/debugger/reference/ienumcodepaths2-clone.md)|現在の列挙子と同じ列挙状態を含む列挙子を作成します。|
 |[GetCount](../../../extensibility/debugger/reference/ienumcodepaths2-getcount.md)|列挙子内のコードパスの数を取得します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  コードパスは、プログラム内の分岐点または関数呼び出しを表します。 コードパスの一覧は、コードの実行が行われたパスを表します。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)

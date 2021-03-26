@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862123"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075017"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>ソリューションエクスプローラーフィルターを拡張する
 **ソリューションエクスプローラー** フィルター機能を拡張して、さまざまなファイルの表示と非表示を切り替えることができます。 たとえば、このチュートリアルで示すように、 **ソリューションエクスプローラー** に C# クラスファクトリファイルのみを表示するフィルターを作成できます。
@@ -60,14 +60,14 @@ ms.locfileid: "99862123"
 
 ### <a name="add-the-filter-code"></a>フィルターコードを追加する
 
-1. いくつかの Guid を *FileFilterPackageGuids.cs* ファイルに追加します。
+1. いくつかの Guid を *Filefilterpackageguids .cs* ファイルに追加します。
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. *FileNameFilter.cs* という名前の FileFilter プロジェクトにクラスファイルを追加します。
+2. *FileNameFilter* という名前の FileFilter プロジェクトにクラスファイルを追加します。
 
 3. 空の名前空間と空のクラスを次のコードに置き換えます。
 
@@ -160,7 +160,7 @@ ms.locfileid: "99862123"
 
     ```
 
-4. *FileFilter.cs* で、FileFilter コンストラクターからコマンド配置および処理コードを削除します。 結果は次のようになります。
+4. *Filefilter* で、filefilter コンストラクターからコマンド配置と処理コードを削除します。 結果は次のようになります。
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ ms.locfileid: "99862123"
 
      `ShowMessageBox()`メソッドも削除します。
 
-5. *FileFilterPackage.cs* で、メソッド内のコードを `Initialize()` 次のコードに置き換えます。
+5. *Filefilterpackage .cs* で、メソッドのコードを次のコードに置き換え `Initialize()` ます。
 
     ```csharp
     protected override void Initialize()
@@ -186,7 +186,7 @@ ms.locfileid: "99862123"
     }
     ```
 
-### <a name="test-your-code"></a>コードのテスト
+### <a name="test-your-code"></a>コードをテストする
 
 1. プロジェクトをビルドして実行します。 Visual Studio の 2 番目のインスタンスが表示されます。 これは実験用インスタンスと呼ばれます。
 

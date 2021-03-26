@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugModules2::Clone
 ms.assetid: fd6d3abc-20d9-4f6f-9c8e-5bd29f68d47d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 699afcaabdf88ca8b2b6ea60b6ad06dfcb12e3bd
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 803f6df911aeb3ea68a152524faf5a2e5ad9c9c5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224890"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091657"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 現在の列挙体のコピーを別のオブジェクトとして返します。
@@ -47,8 +47,8 @@ int Clone(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  列挙体のコピーは、このメソッドが呼び出されたときの元の状態と同じ状態になります。 ただし、コピーと元の状態は別々であり、個別に変更できます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

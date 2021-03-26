@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <PreviewImage> Element (Visual Studio Templates)
 - PreviewImage Element (Visual Studio Templates)
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e306f6453ca3abbc2ad881821254ca88a160d01b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fc7a370885d24a586262bebd4182daacd84a9b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967281"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090227"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 要素 (Visual Studio テンプレート)
 [ **新しいプロジェクト** ] ダイアログボックスまたは [ **新しい項目の追加** ] ダイアログボックスに表示されるプレビューイメージのプレビューイメージをファイル名として指定します。
@@ -53,7 +53,7 @@ ms.locfileid: "99967281"
 
  テキストは、ファイル名を表す文字列である必要があります。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `PreviewImage` は省略可能な要素です。
 
 ## <a name="see-also"></a>関連項目

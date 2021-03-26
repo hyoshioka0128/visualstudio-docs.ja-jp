@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpression2::EvaluateAsync
 ms.assetid: 848fe6cb-0759-42f2-890b-d2b551c527d6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7b01289c792e887c096d0a9068bac55b21a3a503
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: bea7a5a05dc5277e693d033452f0b4e7342ea946
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102152690"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092424"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 このメソッドは、式を非同期的に評価します。
@@ -56,7 +56,7 @@ int EvaluateAsync(
 |-----------|-----------------|
 |E_EVALUATE_BUSY_WITH_EVALUATION|現在、別の式が評価されていますが、同時式の評価はサポートされていません。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 このメソッドは、式の評価を開始した直後にを返します。 式が正常に評価された場合は、 [attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)または[attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)によって提供される[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)イベントコールバックに[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)を送信する必要があります。
 
 ## <a name="example"></a>例
@@ -76,7 +76,7 @@ HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)

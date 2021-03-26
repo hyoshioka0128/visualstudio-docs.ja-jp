@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback interface
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0ef2072967aad5f2cd012283b0c6f4ac7b9b3be
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 461003f3bdb83e51e8b5c525895d134b717d8fc6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102172559"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091904"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ ms.locfileid: "102172559"
 
  デバッガーの出力ウィンドウにメッセージを表示する式エバリュエーター (EE) を有効にします。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugIDECallback : IUnknown
@@ -43,7 +43,7 @@ IDebugIDECallback : IUnknown
 |------------|-----------------|
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|指定したメッセージ文字列をデバッガーの出力ウィンドウに送信します。|
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: Ee
 
  名前空間: VisualStudio。
