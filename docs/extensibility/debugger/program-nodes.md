@@ -10,17 +10,17 @@ helpviewer_keywords:
 - program nodes, adding
 - program nodes, superceding
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5658026b60006a58ba168ca713028b9876a3c57d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948440"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094628"
 ---
 # <a name="program-nodes"></a>プログラムノード
 デバッガーアーキテクチャでは、 *プログラムノード* は次のようになります。
@@ -35,7 +35,7 @@ ms.locfileid: "99948440"
 
   プログラムをにアタッチする前に、IDE には、プログラムの簡易記述のみが必要です。 この情報は、プログラムノードから取得できます。 プログラムがにアタッチされると、IDE では、プログラムで実行されているすべてのスレッドの一覧など、より詳細な情報が表示されます。 この情報は、プログラム自体から取得されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Programs](../../extensibility/debugger/programs.md)
 - [プロセス](../../extensibility/debugger/processes.md)
 - [デバッグエンジン](../../extensibility/debugger/debug-engine.md)

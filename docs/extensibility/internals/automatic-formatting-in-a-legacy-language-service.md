@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, automatic formatting
 ms.assetid: c210fc94-77bd-4694-b312-045087d8a549
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: de54f43ca8abc7547609882647e014cb3695da33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a08a56a6820917b3a954c162b1875430875c7585
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906048"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086275"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>従来の言語サービスでのオートフォーマット
 自動書式設定を使用すると、ユーザーが既知のコードコンストラクターの入力を開始したときに、言語サービスによってコードスニペットが自動的に挿入されます。
@@ -27,5 +27,5 @@ ms.locfileid: "99906048"
 
  言語サービスの残りの部分に使用されるコマンドフィルターは、自動書式設定にも使用できます。 を呼び出して、対応する中かっこを強調表示することもでき <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> ます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービスを開発する](../../extensibility/internals/developing-a-legacy-language-service.md)
