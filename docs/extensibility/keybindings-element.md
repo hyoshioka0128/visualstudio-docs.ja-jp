@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBindings element (VSCT XML schema)
 ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 451e0bab9568d794205e38e3573265c20c259961
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a590dc8bc1313e5c32b26465ae3dd346ed0564fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943336"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074016"
 ---
 # <a name="keybindings-element"></a>キーバインド要素
 キーバインド要素は、キーバインド要素とその他のキーバインドグループをグループ化します。
@@ -41,7 +41,7 @@ ms.locfileid: "99943336"
 
 |属性|説明|
 |---------------|-----------------|
-|条件|任意。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
+|条件|省略可能。 「 [条件付き属性](../extensibility/vsct-xml-schema-conditional-attributes.md)」を参照してください。|
 
 ### <a name="child-elements"></a>子要素
 

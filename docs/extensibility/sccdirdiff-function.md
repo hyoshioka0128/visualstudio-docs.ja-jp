@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98a843c061941765404397186af74ab71923a9da
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 974d0aa22ff3940472be34b691a61632dc742223
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221601"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073977"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 関数
 この関数は、クライアントディスク上の現在のローカルディレクトリと、ソース管理下にある対応するプロジェクトの相違点を表示します。
@@ -59,7 +59,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|ディスク上のディレクトリは、ソースコード管理のプロジェクトと同じです。|
 |SCC_I_FILESDIFFER|ディスク上のディレクトリが、ソースコード管理のプロジェクトと異なります。|
@@ -70,7 +70,7 @@ SCCRTN SccDirDiff(
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 |SCC_E_FILENOTEXIST|ローカルディレクトリが見つかりませんでした。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この関数は、指定されたディレクトリに対する変更の一覧をユーザーに表示するようにソース管理プラグインに指示するために使用されます。 プラグインによって、独自のウィンドウが選択された形式で開き、ディスク上のユーザーのディレクトリとバージョン管理下の対応するプロジェクトの違いが表示されます。
 
  プラグインがディレクトリの比較をサポートしている場合は、[クイック差分] オプションがサポートされていない場合でも、ファイル名に基づいたディレクトリの比較をサポートする必要があります。
@@ -86,5 +86,5 @@ SCCRTN SccDirDiff(
 > [!NOTE]
 > この関数では、 [Sccdiff](../extensibility/sccdiff-function.md)と同じコマンドフラグが使用されます。 ただし、ソース管理プラグインは、ディレクトリの "クイック差分" 操作をサポートしないことを選択する場合があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

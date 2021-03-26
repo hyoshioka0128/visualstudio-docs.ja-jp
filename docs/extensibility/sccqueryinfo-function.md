@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 880cb2cf7db5c7a988d6549865de1864cb799e53
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 911219605859025f1877d040b5932714b10f836a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221497"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073899"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 関数
 この関数は、ソース管理下で選択された一連のファイルのステータス情報を取得します。
@@ -54,14 +54,14 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|クエリが成功しました。|
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスに問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_PROJNOTOPEN|プロジェクトがソース管理下で開かれていません。|
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `lpFileName`が空の文字列の場合、現在更新する状態情報はありません。 それ以外の場合は、ステータス情報が変更された可能性があるファイルの完全なパス名です。
 
  戻り値の配列には、ビットのビットマスクを指定でき `SCC_STATUS_xxxx` ます。 詳細については、「 [ファイルのステータスコード](../extensibility/file-status-code-enumerator.md)」を参照してください。 ソース管理システムは、すべてのビット型をサポートしていない場合があります。 たとえば、が提供されていない場合、 `SCC_STATUS_OUTOFDATE` ビットは設定されません。
@@ -76,6 +76,6 @@ SCCRTN SccQueryInfo(
 
 - ファイルが現在のユーザーによって作業ディレクトリ以外のディレクトリにチェックアウトされている場合、は設定されますが、 `SCC_STATUS_OUTBYUSER` は設定され `SCC_STATUS_CHECKEDOUT` ません。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [ファイルの状態コード](../extensibility/file-status-code-enumerator.md)

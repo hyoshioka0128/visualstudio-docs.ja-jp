@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220847"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073990"
 ---
 # <a name="sccdiff-function"></a>SccDiff 関数
 この関数は、ソース管理システムで現在のファイル (ローカルディスク上) と最後にチェックインされたバージョンとの相違点を表示します (または、必要に応じて確認するだけです)。
@@ -59,7 +59,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|作業コピーとサーバーのバージョンが同じです。|
 |SCC_I_FILESDIFFERS|作業コピーは、ソース管理下のバージョンとは異なります。|
@@ -70,7 +70,7 @@ SCCRTN SccDiff(
 |SCC_E_NONSPECIFICERROR|不特定のエラーです。ファイルの差は取得されませんでした。|
 |SCC_E_FILENOTEXIST|ローカルファイルが見つかりませんでした。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この関数は、2つの異なる目的で機能します。 既定では、ファイルに対する変更の一覧が表示されます。 ソース管理プラグインは、選択した形式で独自のウィンドウを開き、ユーザーのディスク上のファイルと、ソース管理下の最新バージョンのファイルとの違いを表示します。
 
  また、IDE では、ファイルが変更されたかどうかを判断するだけで済む場合もあります。 たとえば、IDE では、ユーザーに通知することなくファイルをチェックアウトしても安全かどうかを判断する必要がある場合があります。 その場合は、IDE によってフラグが渡され `SCC_DIFF_CONTENTS` ます。 ソース管理プラグインは、ソース管理されたファイルに対して、ディスク上のファイルをバイト単位でチェックし、ユーザーに何も表示しないで2つのファイルが異なっているかどうかを示す値を返す必要があります。
@@ -80,7 +80,7 @@ SCCRTN SccDiff(
 > [!NOTE]
 > クイック差分フラグは相互に排他的です。 フラグを渡すことは有効ですが、複数のを同時に渡すことはできません。 `SCC_DIFF_QUICK_DIFF`は、すべてのフラグを組み合わせたマスクであり、テストに使用できますが、パラメーターとして渡すことはできません。
 
-|`fOption`|説明|
+|`fOption`|意味|
 |---------------|-------------|
 |SCC_DIFF_IGNORECASE|大文字と小文字を区別しない比較 (クイックまたはビジュアルの違いに使用できます)。|
 |SCC_DIFF_IGNORESPACE|空白は無視されます (クイックまたはビジュアルの違いに使用される場合があります)。|
@@ -88,5 +88,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|サポートされている場合は、チェックサムを使用してファイルをサイレントに比較します。 サポートされていない場合は、内容の比較にフォールバックします。|
 |SCC_DIFF_QD_TIME|サポートされている場合は、タイムスタンプを使用してファイルを自動的に比較します。 サポートされていない場合は、内容の比較にフォールバックします。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)

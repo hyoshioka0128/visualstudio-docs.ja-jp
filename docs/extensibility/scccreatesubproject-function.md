@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221614"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074003"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 関数
 この関数は、引数で指定された既存の親プロジェクトの下に、指定された名前のサブプロジェクトを作成し `lpParentProjPath` ます。
@@ -69,7 +69,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|サブプロジェクトが正常に作成されました。|
 |SCC_E_INITIALIZEFAILED|親プロジェクトを初期化できませんでした。|
@@ -83,7 +83,7 @@ SCCRTN SccCreateSubProject(
 |SCC_E_CONNECTIONFAILURE|ソース管理プラグイン接続の問題が発生しました。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  同じ名前のサブプロジェクトが既に存在する場合、関数は、既定の名前を変更して一意の名前を作成できます。たとえば、"_ \<number> " を追加します。 、、およびへの変更を受け入れるには、呼び出し元が準備されている必要があり `lpUser` `lpSubProjPath` `lpAuxProjPath` ます。 次に、 `lpSubProjPath` `lpAuxProjPath` 引数と引数を [Sccopenproject](../extensibility/sccopenproject-function.md)の呼び出しで使用します。 返されるときに、呼び出し元によって変更されないようにする必要があります。 これらの文字列は、ソース管理プラグインがプロジェクトに関連付けるために必要な情報を追跡するための手段を提供します。 呼び出し元 IDE では、これらの2つのパラメーターは返されません。これは、プラグインが表示に適さない可能性のある書式設定された文字列を使用できるためです。 関数は成功または失敗のコードを返し、成功した場合は、 `lpSubProjPath` 新しいプロジェクトへの完全なプロジェクトパスを変数に入力します。
 
  この関数は [Sccgetprojpath](../extensibility/sccgetprojpath-function.md)に似ていますが、ユーザーに選択を求めるのではなく、プロジェクトが自動的に作成される点が異なります。 `SccCreateSubProject`関数が呼び出されると、 `lpParentProjName` と `lpAuxProjPath` は空にならず、有効なプロジェクトに対応します。 これらの文字列は、通常、以前の `SccGetProjPath` 関数または [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)の呼び出しから IDE によって受信されます。
@@ -99,7 +99,7 @@ SCCRTN SccCreateSubProject(
 
  レジストリエントリが dword: 00000001 に設定されている場合、Visual Studio はこれらの新しい関数を使用しません。また、ソース管理に追加する操作は、以前のバージョンの Visual Studio の場合と同様に動作します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

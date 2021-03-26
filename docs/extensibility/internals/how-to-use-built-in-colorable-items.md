@@ -8,17 +8,17 @@ helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 253c108fe83eaf44f945f546bd64dd6529de1dd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898317"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086080"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>方法: 組み込みの装飾項目を使用する
 組み込みの装飾項目を使用する前に、まず、独自のカスタム装飾項目 (この場合はオブジェクト) を提供しないことを統合開発環境 (IDE) に通知する必要があり <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> ます。 これを行うには、言語サービスのレジストリエントリを設定します。
@@ -34,7 +34,7 @@ ms.locfileid: "99898317"
    > [!NOTE]
    > カスタム装飾項目を指定する場合は、このレジストリエントリを設定しないでください。 詳細については、「 [Custom 装飾 items](../../extensibility/internals/custom-colorable-items.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [カスタムエディターでの構文の色分け](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [従来の言語サービスでの構文の色分け](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [実装 (構文の色分けを)](../../extensibility/internals/implementing-syntax-coloring.md)

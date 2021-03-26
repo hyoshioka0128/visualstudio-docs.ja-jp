@@ -8,17 +8,17 @@ helpviewer_keywords:
 - commands, project systems
 - project systems, environment-defined commands
 ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a08d60a52ed970781ceafdb15d0d5c64440f0cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6fedca7081c531fef257e20e64426f8b35e88e87
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968074"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086002"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>プロジェクト システムを拡張するための IDE 定義コマンド
 プロジェクトシステムを拡張する場合は、IDE によって提供されるコマンドとコマンドグループを使用でき [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ます。
@@ -28,7 +28,7 @@ ms.locfileid: "99968074"
 ## <a name="command-menus"></a>コマンドメニュー
  次の表は、プロジェクトエクステンダーを呼び出す高レベルのコマンドを配置するのに役立つコマンドメニューを示しています。
 
-|コマンドメニュー|説明|
+|コマンドメニュー|Description|
 |------------------|-----------------|
 |IDM_VS_MENU_PROJECT|**プロジェクト** のトップレベルメニュー。|
 |IDM_VS_TOOL_PROJWIN|**ソリューションエクスプローラー** ツールバー。|
@@ -36,7 +36,7 @@ ms.locfileid: "99968074"
 ## <a name="shortcut-menus"></a>ショートカット メニュー
  次の表は、 **ソリューションエクスプローラー** で1つのノードが選択されたとき、または選択されたすべてのノードが同じ種類である場合に、 **ソリューションエクスプローラー** に複数の同種選択があるときに適用されるショートカットメニューを示しています。
 
-|ショートカットメニュー|説明|
+|ショートカットメニュー|Description|
 |-------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|プロジェクトノードが選択されたときに適用されます。|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|ファイルが選択されたときに適用されます。|
@@ -47,7 +47,7 @@ ms.locfileid: "99968074"
 
  次の表は、 **ソリューションエクスプローラー** の選択範囲が複数の階層にまたがっている場合に適用されるショートカットメニューを示しています。
 
-|ショートカットメニュー|説明|
+|ショートカットメニュー|Description|
 |-------------------|-----------------|
 |IDM_VS_CTXT_XPROJ_SLNPROJ|現在の選択範囲にソリューションノードとルートプロジェクトノードが含まれている場合に適用されます。|
 |IDM_VS_CTXT_XPROJ_SLNITEM|現在の選択範囲にソリューションノードとプロジェクト項目が含まれている場合に適用されます。|
@@ -58,7 +58,7 @@ ms.locfileid: "99968074"
 ## <a name="command-groups"></a>コマンドグループ
  次の表に、プロジェクトを拡張するときに使用できるコマンドグループと、ショートカットメニューからアクセスできるコマンドグループを示し <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> ます。
 
-|コマンドグループ|説明|
+|コマンドグループ|Description|
 |-------------------|-----------------|
 |IDG_VS_CTXT_PROJECT_BUILD|プロジェクトをビルド、リビルド、および配置するためのコマンドです。|
 |IDG_VS_CTXT_COMPILELINK|プロジェクトをコンパイルおよびリンクするためのコマンドです。|
@@ -71,7 +71,7 @@ ms.locfileid: "99968074"
 |IDG_VS_CTXT_PROJECT_TRANSFER|切り取り、コピー、および貼り付け操作用のコマンド。|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|[ **プロジェクトのプロパティ** ] ダイアログボックスへのアクセスを提供するコマンド。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [VSPackage でユーザー インターフェイス要素を追加する方法](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [再利用可能なボタンのグループの作成](../../extensibility/creating-reusable-groups-of-buttons.md)

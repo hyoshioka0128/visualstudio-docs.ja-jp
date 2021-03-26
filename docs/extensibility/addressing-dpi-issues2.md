@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8151748b946d2c1b5ad21359569d6f5f856f9250
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf7b4fe19cdefe11b77de1418b16454089f45c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876161"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097514"
 ---
 # <a name="address-dpi-issues"></a>アドレス DPI の問題
 "高解像度" の画面で出荷されるデバイスの数が増えています。 これらの画面は、通常、200ピクセル/インチ (ppi) を超えています。 これらのコンピューターでアプリケーションを使用する場合、コンテンツを表示するための要件を満たすために、デバイスの通常の表示距離でコンテンツを拡大する必要があります。 2014のうち、高密度ディスプレイのプライマリターゲットは、モバイルコンピューティングデバイス (タブレット、clamshell ラップトップ、および携帯電話) です。

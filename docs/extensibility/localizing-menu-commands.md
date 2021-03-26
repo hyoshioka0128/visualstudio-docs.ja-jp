@@ -12,17 +12,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86f64935d4e99d4c1245669505fcef8ce7ec1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 141fb0d8ba6746e7d299984461fb3ca739d931d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893621"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073262"
 ---
 # <a name="localize-menu-commands"></a>メニューコマンドのローカライズ
 
@@ -112,9 +112,9 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
 ## <a name="incorporate-localized-resources-into-the-project"></a>ローカライズされたリソースをプロジェクトに組み込む
 
-ローカライズされたリソースを組み込むには、 *assemblyinfo.cs* ファイルとプロジェクトファイルを変更する必要があります。
+ローカライズされたリソースを組み込むには、 *assemblyinfo* ファイルとプロジェクトファイルを変更する必要があります。
 
-1. **ソリューションエクスプローラー** の [**プロパティ**] ノードで、エディターの *assemblyinfo.cs* または *assemblyinfo* を開きます。
+1. **ソリューションエクスプローラー** の [**プロパティ**] ノードで、エディターの *assemblyinfo* または *assemblyinfo* を開きます。
 
 2. 次のエントリを追加します。
 
@@ -167,7 +167,7 @@ Vspackage では、メニューコマンドとツールバーボタンは、 *vs
 
      これにより、各言語のメインアセンブリとリソースアセンブリが作成されます。 デプロイプロセスのローカライズの詳細については、「 [VSIX パッケージのローカライズ](../extensibility/localizing-vsix-packages.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [メニューとコマンドを拡張する](../extensibility/extending-menus-and-commands.md)
 - [アプリケーションのグローバライズとローカライズ](../ide/globalizing-and-localizing-applications.md)

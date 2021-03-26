@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadNameChangedEvent2
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 878c1196c3d2343924be316725be35f1b6f01ae6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 28d61260b1f92df82b365d7aa8464b084681500e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227347"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083623"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 このインターフェイスは、デバッグ対象のプログラムでスレッド名が変更された場合に、デバッグエンジン (DE) によってセッションデバッグマネージャー (SDM) に送信されます。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugThreadNameChangedEvent2 : IUnknown
@@ -35,14 +35,14 @@ IDebugThreadNameChangedEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>呼び出し元に関する注意事項
  DE は、このイベントオブジェクトを作成し、送信して、スレッドの名前が変更されたことを報告します。 イベントは、デバッグ対象のプログラムにアタッチされているときに、SDM によって提供される [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) callback 関数を使用して送信されます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

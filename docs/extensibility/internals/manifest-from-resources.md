@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839429"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095174"
 ---
 # <a name="manifest-from-resources"></a>リソースからのマニフェスト
 Manifest from Resources ツールは、イメージリソース (.png または .xaml ファイル) の一覧を取得し、それらのイメージを Visual Studio Image Service と共に使用できるようにする imagemanifest ファイルを生成するコンソールアプリケーションです。 また、このツールを使用して、既存の imagemanifest にイメージを追加することもできます。 このツールは、イメージの高 DPI およびテーマサポートを Visual Studio 拡張機能に追加する場合に便利です。 生成された imagemanifest ファイルは、Visual Studio 拡張機能 (.vsix) の一部としてに含まれ、配置される必要があります。
@@ -31,15 +31,15 @@ Manifest from Resources ツールは、イメージリソース (.png または 
 |-|-|-|
 |/リソース|セミコロンで区切られたイメージまたはディレクトリのリスト。 この一覧には、マニフェストに含まれるイメージの完全な一覧が必ず含まれている必要があります。 部分的なリストだけを指定した場合、含まれていないエントリは失われます。<br /><br /> 指定されたリソースファイルがイメージストリップである場合は、各サブイメージをマニフェストに追加する前に、ツールによって個別のイメージに分割されます。<br /><br /> 画像が .png ファイルの場合は、次のように名前を設定して、ツールがイメージの適切な属性を入力できるようにすることをお \<Name> 勧めします \<Width> 。 \<Height>.png.|必須|
 |/assembly|マネージアセンブリの名前 (拡張子を含まない)、またはリソースをホストするネイティブアセンブリのランタイムパス (マニフェストのランタイムの場所を基準とします)。|必須|
-|/manifest|生成された imagemanifest ファイルに付ける名前。 これには、ファイルを別の場所に作成するための絶対パスまたは相対パスを含めることもできます。 既定の名前は、アセンブリ名と一致します。<br /><br /> 既定値: \<Current Directory> \\<\> imagemanifest|Optional|
-|/guidname|生成されたマニフェスト内のすべてのイメージの GUID シンボルに付ける名前。<br /><br /> 既定値: Asセット Guid|Optional|
-|/rootpath|マネージリソース Uri を作成する前に削除する必要があるルートパス。 (このフラグは、相対 URI パスが正しく取得されず、リソースの読み込みに失敗した場合に役立ちます)。<br /><br /> 既定値: \<Current Directory>|Optional|
-|/recursive|このフラグを設定すると、/resources 引数内のディレクトリを再帰的に検索するようにツールに指示します。 このフラグを省略すると、ディレクトリの最上位レベルの検索が行われます。|Optional|
-|/isnative|アセンブリ引数がネイティブアセンブリのパスである場合は、このフラグを設定します。 アセンブリ引数がマネージアセンブリの名前である場合は、このフラグを省略します。 (このフラグの詳細については、「メモ」を参照してください)。|Optional|
-|/newguid|このフラグを設定すると、既存のマニフェストにあるものをマージするのではなく、イメージの GUID シンボルに新しい値を作成するようにツールに指示します。|Optional|
-|/newIds|このフラグを設定すると、既存のマニフェストから値をマージするのではなく、すべてのイメージに対して新しい ID シンボル値を作成するようにツールに指示します。|Optional|
-|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|Optional|
-|/?|ヘルプ情報を印刷します。|Optional|
+|/manifest|生成された imagemanifest ファイルに付ける名前。 これには、ファイルを別の場所に作成するための絶対パスまたは相対パスを含めることもできます。 既定の名前は、アセンブリ名と一致します。<br /><br /> 既定値: \<Current Directory> \\<\> imagemanifest|オプション|
+|/guidname|生成されたマニフェスト内のすべてのイメージの GUID シンボルに付ける名前。<br /><br /> 既定値: Asセット Guid|オプション|
+|/rootpath|マネージリソース Uri を作成する前に削除する必要があるルートパス。 (このフラグは、相対 URI パスが正しく取得されず、リソースの読み込みに失敗した場合に役立ちます)。<br /><br /> 既定値: \<Current Directory>|オプション|
+|/recursive|このフラグを設定すると、/resources 引数内のディレクトリを再帰的に検索するようにツールに指示します。 このフラグを省略すると、ディレクトリの最上位レベルの検索が行われます。|オプション|
+|/isnative|アセンブリ引数がネイティブアセンブリのパスである場合は、このフラグを設定します。 アセンブリ引数がマネージアセンブリの名前である場合は、このフラグを省略します。 (このフラグの詳細については、「メモ」を参照してください)。|オプション|
+|/newguid|このフラグを設定すると、既存のマニフェストにあるものをマージするのではなく、イメージの GUID シンボルに新しい値を作成するようにツールに指示します。|オプション|
+|/newIds|このフラグを設定すると、既存のマニフェストから値をマージするのではなく、すべてのイメージに対して新しい ID シンボル値を作成するようにツールに指示します。|オプション|
+|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|オプション|
+|/?|ヘルプ情報を印刷します。|オプション|
 |/help|ヘルプ情報を印刷します。|オプション|
 
  **例**
@@ -50,7 +50,7 @@ Manifest from Resources ツールは、イメージリソース (.png または 
 
 - ManifestFromResources/resources:D:\Images\Image1.png;D: \ imag? image1 xaml/assembly:/newIds/guidname: MyImages/newguid
 
-## <a name="notes"></a>ノート
+## <a name="notes"></a>メモ
 
 - このツールでは、.png ファイルと .xaml ファイルのみがサポートされます。 その他のイメージまたはファイルの種類は無視されます。 リソースの解析中に検出された、サポートされていないすべての型に対して警告が生成されます。 ツールがリソースの解析を完了したときにサポートされているイメージが見つからない場合は、エラーが生成されます。
 
@@ -64,7 +64,7 @@ Manifest from Resources ツールは、イメージリソース (.png または 
 
 - ネイティブアセンブリ用に生成されるマニフェストは、ID シンボルがネイティブアセンブリの .rc ファイルのリソース Id と一致するように、生成後に手動で編集する必要がある場合があります。
 
-## <a name="sample-output"></a>サンプル出力
+## <a name="sample-output"></a>出力例
  **単純なイメージマニフェスト**
 
  イメージマニフェストは、次の .xml ファイルに似ています。

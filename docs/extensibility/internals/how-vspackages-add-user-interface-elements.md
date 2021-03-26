@@ -9,17 +9,17 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1d01c2ed91a5f4aad55c196dfb2e689aeea288a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934125"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086041"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage のユーザーインターフェイス要素の追加方法
 VSPackage を使用すると、ユーザーインターフェイス (UI) 要素 (メニュー、ツールバー、ツールウィンドウなど) を、 *vsct* ファイルを使用して Visual Studio に追加できます。
@@ -187,7 +187,7 @@ Combos は、セクションで定義されてい `Combos` ます。 各 `Combo`
 
 |要素|コマンドテーブルのこのセクションで定義されています。|(親またはセクション内の配置によって、 `CommandPlacements` またはその両方) が含まれている可能性があります。|含めることができます (親と呼ばれます)|
 |-------------| - | - | - |
-|Group|[Groups 要素](../../extensibility/groups-element.md)、IDE、other vspackage|メニュー、グループ、項目自体|メニュー、グループ、およびコマンド|
+|グループ|[Groups 要素](../../extensibility/groups-element.md)、IDE、other vspackage|メニュー、グループ、項目自体|メニュー、グループ、およびコマンド|
 |メニュー|[Menus 要素](../../extensibility/menus-element.md)、IDE、other vspackage|1 ~ *n 個* のグループ|0 ~ *n 個* のグループ|
 |ツール バー|[Menus 要素](../../extensibility/menus-element.md)、IDE、other vspackage|項目自体|0 ~ *n 個* のグループ|
 |メニュー項目|[Buttons 要素](../../extensibility/buttons-element.md)、IDE、other vspackage|1 ~ *n* 個のグループ、項目自体|-0 ~ *n 個* のグループ|
@@ -290,5 +290,5 @@ Combos は、セクションで定義されてい `Combos` ます。 各 `Combo`
 
 - 特定の UI 要素が IDE に表示されるようにするには、1つまたは複数のインターフェイスを実装するか、コードを記述する必要があります。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [メニューとコマンドを拡張する](../../extensibility/extending-menus-and-commands.md)

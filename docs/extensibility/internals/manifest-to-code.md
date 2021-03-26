@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839416"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095161"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code ツールは、Visual Studio イメージサービスの imagemanifest ファイルを取得し、Visual Studio 拡張機能の C++、C#、VB、または vsct ファイルでイメージマニフェストの値を参照するためのラッパーファイルを生成するコンソールアプリケーションです。 このツールは、Visual Studio イメージサービスから直接イメージを要求するために使用できるラッパーファイルを生成します。また、コードが独自の UI やレンダリングを処理しない場合は、Api を介してマニフェスト値を渡すために使用できます。
@@ -31,12 +31,12 @@ Manifest to Code ツールは、Visual Studio イメージサービスの imagem
 |-|-|-|
 |/manifest|コードラッパーを作成または更新するために使用するイメージマニフェストへのパス。|必須|
 |/language|コードラッパーを生成する言語。<br /><br /> 有効な値: CPP、C++、CS、CSharp、C#、VB、または VSCT 値では大文字と小文字が区別されません。<br /><br /> VSCT 言語オプションでは、/monikerClass、/classaccess、および/namespace オプションは無視されます。|必須|
-|/imageidclass|ImageIdClass の名前とツールによって作成された関連ファイル。 C++ 言語オプションでは、.h ファイルのみが生成されます。<br /><br /> 既定値: \<Manifest Path> \MyImageIds.\<Lang Ext>|Optional|
-|/monikerClass|MonikerClass の名前とツールによって作成された関連ファイル。 C++ 言語オプションでは、.h ファイルのみが生成されます。 VSCT 言語では、これは無視されます。<br /><br /> 既定値: \<Manifest Path> \MyMonikers.\<Lang Ext>|Optional|
-|/classaccess|ImageIdClass と monikerClass のアクセス修飾子。 アクセス修飾子が特定の言語に対して有効であることを確認します。 VSCT 言語オプションでは、この設定は無視されます。<br /><br /> 既定値: Public|Optional|
-|/namespace|コードラッパーで定義されている名前空間。 VSCT 言語オプションでは、この設定は無視されます。 '. ' または ':: ' は、選択した言語オプションに関係なく、有効な名前空間の区切り記号です。<br /><br /> 既定値: MyImages|Optional|
-|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|Optional|
-|/?|ヘルプ情報を印刷します。|Optional|
+|/imageidclass|ImageIdClass の名前とツールによって作成された関連ファイル。 C++ 言語オプションでは、.h ファイルのみが生成されます。<br /><br /> 既定値: \<Manifest Path> \MyImageIds.\<Lang Ext>|オプション|
+|/monikerClass|MonikerClass の名前とツールによって作成された関連ファイル。 C++ 言語オプションでは、.h ファイルのみが生成されます。 VSCT 言語では、これは無視されます。<br /><br /> 既定値: \<Manifest Path> \MyMonikers.\<Lang Ext>|オプション|
+|/classaccess|ImageIdClass と monikerClass のアクセス修飾子。 アクセス修飾子が特定の言語に対して有効であることを確認します。 VSCT 言語オプションでは、この設定は無視されます。<br /><br /> 既定値: Public|オプション|
+|/namespace|コードラッパーで定義されている名前空間。 VSCT 言語オプションでは、この設定は無視されます。 '. ' または ':: ' は、選択した言語オプションに関係なく、有効な名前空間の区切り記号です。<br /><br /> 既定値: MyImages|オプション|
+|/noLogo|このフラグを設定すると、製品および著作権情報は印刷されなくなります。|オプション|
+|/?|ヘルプ情報を印刷します。|オプション|
 |/help|ヘルプ情報を印刷します。|オプション|
 
  **例**
@@ -47,7 +47,7 @@ Manifest to Code ツールは、Visual Studio イメージサービスの imagem
 
 - ManifestToCode/manifest: D:\MyManifest.imagemanifest/language: VSCT/imageidclass: MyImageIds
 
-## <a name="notes"></a>ノート
+## <a name="notes"></a>メモ
 
 - このツールは、Manifest from Resources ツールで生成されたイメージマニフェストと共に使用することをお勧めします。
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 826029154763a98279b5e5446317802531b08bfe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939228"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097566"
 ---
 # <a name="add-command-line-switches"></a>コマンドラインスイッチの追加
 *devenv.exe* の実行時に、VSPackage に適用するコマンドラインスイッチを追加できます。 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>スイッチとそのプロパティの名前を宣言するには、を使用します。 この例では、 **Addcommandswitchpackage** という名前の VSPackage のサブクラスの MySwitch スイッチが追加され、引数と VSPackage が自動的に読み込まれます。
@@ -31,12 +31,12 @@ ms.locfileid: "99939228"
 
  名前付きパラメーターについては、次の説明を参照してください。
 
-|名前|説明|
+|Name|説明|
 |-|-|
 | 引数 | スイッチの引数の数。 "*"、または引数のリストを指定できます。 |
 | DemandLoad | このが1に設定されている場合は、VSPackage を自動的に読み込みます。それ以外の場合は0に設定します。 |
 | HelpString | **Devenv/?** で表示する文字列のヘルプ文字列またはリソース ID。 |
-| 名前 | スイッチ。 |
+| Name | スイッチ。 |
 | PackageGuid | パッケージの GUID。 |
 
  引数の最初の値は、通常は0または1です。 特別な値 ' * ' を使用すると、コマンドラインの残りの部分が引数であることを示すことができます。 これは、ユーザーがデバッガーのコマンド文字列を渡す必要があるデバッグシナリオに役立ちます。
