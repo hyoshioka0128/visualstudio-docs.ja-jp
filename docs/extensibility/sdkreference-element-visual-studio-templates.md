@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ab748a309bf57af79753596ede11b371589faa8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ea070cf466782a1da09e1ba48d08a6965fd041a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941565"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063709"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 要素 (Visual Studio テンプレート)
 項目テンプレートが SDK 参照を使用することを指定します。
@@ -44,12 +44,12 @@ ms.locfileid: "99941565"
 
 |要素|説明|
 |-------------|-----------------|
-|[参照](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
+|[リファレンス](../extensibility/reference-element-visual-studio-templates.md)|項目がプロジェクトに追加されたときに追加するアセンブリ参照を指定します。|
 
 ## <a name="text-value"></a>テキスト値
  テキスト値が必要です。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このテキストは、項目テンプレートがインスタンス化されたときに、プロジェクトに追加する SDK 参照を指定します。
 
 ```xml
@@ -62,7 +62,7 @@ ms.locfileid: "99941565"
 ...
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [References 要素 (Visual Studio テンプレート)](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 要素 (Visual Studio テンプレート)](../extensibility/reference-element-visual-studio-templates.md)
 - [プロジェクトテンプレートと項目テンプレートの作成](../ide/creating-project-and-item-templates.md)

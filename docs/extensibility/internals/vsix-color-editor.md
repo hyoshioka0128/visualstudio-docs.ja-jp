@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bf699a5dcb7f14c2a0ac88943b94d9e65c86450
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfd6ff388119d829c2e5994c0fa78d01958326bc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900083"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069284"
 ---
 # <a name="vsix-color-editor"></a>VSIX カラー エディター
 Visual Studio 拡張機能のカラーエディターツールでは、Visual Studio のカスタム色を作成および編集できます。 ツールでは、色をコードで使用できるように、テーマリソースキーを生成することもできます。 このツールは、テーマをサポートする Visual Studio 拡張機能の色を作成する場合に便利です。 このツールでは、pkgdef ファイルと .xml ファイルを開くことができます。 Visual studio のテーマ (vstheme ファイル) は、ファイル拡張子を .xml に変更することで、Visual Studio 拡張機能のカラーエディターと共に使用できます。 また、vstheme ファイルを現在の .xml ファイルにインポートすることもできます。
@@ -189,10 +189,10 @@ namespace MyCustomColors
 
  変更を永続的にするには、新しい色を pkgdef ファイルに追加し、それらの色を使用するコードを記述した後で、Visual Studio 拡張機能をリビルドして再配置します。 Visual Studio 拡張機能を再構築すると、新しい色のレジストリ値がテーマの残りの部分にマージされます。 次に、Visual Studio を再起動し、UI を表示して、新しい色が想定どおりに表示されることを確認します。
 
-## <a name="notes"></a>ノート
+## <a name="notes"></a>メモ
  このツールは、既存の Visual Studio テーマに対してカスタムの色を作成したり、カスタム Visual Studio テーマの色を編集したりするために使用することを目的としています。 カスタム Visual Studio の完全なテーマを作成するには、visual studio 拡張機能ギャラリーから [Visual Studio 配色テーマエディター拡張機能](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) をダウンロードします。
 
-## <a name="sample-output"></a>サンプル出力
+## <a name="sample-output"></a>出力例
  **XML カラー出力**
 
  ツールによって生成される .xml ファイルは次のようになります。

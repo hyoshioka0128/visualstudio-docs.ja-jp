@@ -11,17 +11,17 @@ helpviewer_keywords:
 - solutions, user options
 - solution user options (.suo) file
 ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a978986ed6ef32dbad3ad06eafcba11d7f4782ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 92e755053d3519212c27fd2567610baf189db309
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962913"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069362"
 ---
 # <a name="solution-user-options-suo-file"></a>ソリューション ユーザー オプション (.Suo) ファイル
 ソリューションユーザーオプション (.suo) ファイルには、ユーザーごとのソリューションオプションが含まれています。 このファイルをソースコード管理にチェックインしないでください。
@@ -38,6 +38,6 @@ ms.locfileid: "99962913"
 
  これらの2つのメソッド ( `SaveUserOptions` と `WriteUserOptions` ) は、.suo ファイルに保存される情報のストリームごとに再帰的に呼び出され、へのポインターを渡し `IVsSolutionPersistence` ます。 これらは再帰的に呼び出され、.suo ファイルへの複数のストリームの書き込みを可能にします。 このようにすると、ユーザー情報はソリューションと共に保持され、次にソリューションを開いたときに確実に表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [ソリューション](../../extensibility/internals/solutions-overview.md)

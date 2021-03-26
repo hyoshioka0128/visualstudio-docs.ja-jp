@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a9b8db832207eff93e08f123db57b4beef4eb7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79d27c01035f83b506ffad4ec138c8c68f98d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840601"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097033"
 ---
 # <a name="evaluate-expressions"></a>式の評価
 式は、[ **自動変数**]、[ **ウォッチ**]、[ **クイックウォッチ**]、または [ **イミディエイト** ] ウィンドウから渡された文字列から作成されます。 式が評価されると、変数または引数の名前と型、およびその値を含む、印刷可能な文字列が生成されます。 この文字列は、対応する IDE ウィンドウに表示されます。
@@ -33,7 +33,7 @@ ms.locfileid: "99840601"
 
  式の評価を有効にするには、DE で [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) インターフェイスと [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) インターフェイスを実装する必要があります。 同期と非同期のどちらの評価でも、 [IDebugProperty2:: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) メソッドの実装が必要です。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [スタックフレーム](../../extensibility/debugger/stack-frames.md)
 - [式の評価コンテキスト](../../extensibility/debugger/expression-evaluation-context.md)
 - [タスクをデバッグする](../../extensibility/debugger/debugging-tasks.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetParentProjectPath function
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220613"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063982"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 関数
 この関数は、指定されたプロジェクトの親プロジェクトパスを決定します。 この関数は、ユーザーが Visual Studio プロジェクトをソース管理に追加しているときに呼び出されます。
@@ -64,7 +64,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|親プロジェクトのパスが正常に取得されました。|
 |SCC_E_INITIALIZEFAILED|プロジェクトを初期化できませんでした。|
@@ -77,7 +77,7 @@ SCCRTN SccGetParentProjectPath(
 |SCC_E_CONNECTIONFAILURE|ストア接続の問題です。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|不特定のエラーです。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  この関数は成功または失敗のコードを返し、成功した場合は、 `lpParentProjPath` 指定されたプロジェクトの完全なプロジェクトパスを変数に入力します。
 
  この関数は、既存のプロジェクトの親プロジェクトパスを返します。 ルートプロジェクトの場合、関数は、渡されたプロジェクトパス (つまり、同じルートプロジェクトパス) を返します。 プロジェクトパスは、ソース管理プラグインに対してのみ意味のある文字列であることに注意してください。
@@ -99,7 +99,7 @@ SCCRTN SccGetParentProjectPath(
 
  レジストリエントリが dword: 00000001 に設定されている場合、Visual Studio はこれらの新しい関数を使用しません。また、ソース管理に追加する操作は、以前のバージョンの Visual Studio の場合と同様に動作します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグイン API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

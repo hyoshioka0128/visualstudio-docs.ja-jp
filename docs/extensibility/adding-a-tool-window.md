@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951434"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085521"
 ---
 # <a name="add-a-tool-window"></a>ツールウィンドウを追加する
 
@@ -117,7 +117,7 @@ Visual Studio SDK は、Visual Studio セットアップでオプション機能
     </Button>
     ```
 
-3. *FirstToolWindowCommand.cs* を開き、既存のフィールドの直後に、クラスに次の行を追加します。
+3. *Firsttoolwindowcommand .cs* を開き、既存のフィールドの直後に次の行をクラスに追加します。
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>ツールウィンドウとツールバーのインスタンス化
 ツールバーとメニューコマンドを追加して、[ **ファイルを開く** ] ダイアログを起動し、選択したメディアファイルを再生します。
 
-1. *FirstToolWindow.cs* を開き、次のディレクティブを追加し `using` ます。
+1. *FirstToolWindow* を開き、次のディレクティブを追加し `using` ます。
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,7 +188,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-6. メニューコマンドをツールバーに追加します。 FirstToolWindowCommand.cs クラスに、次の using ディレクティブを追加します。
+6. メニューコマンドをツールバーに追加します。 FirstToolWindowCommand .cs クラスで、次の using ディレクティブを追加します。
 
     ```csharp
     using System.Windows.Forms;
@@ -255,9 +255,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>ツールウィンドウの既定の位置を設定する
 
-次に、ツールウィンドウの IDE で既定の場所を指定します。 ツールウィンドウの構成情報は、 *FirstToolWindowPackage.cs* ファイルにあります。
+次に、ツールウィンドウの IDE で既定の場所を指定します。 ツールウィンドウの構成情報は、 *Firsttoolwindowpackage .cs* ファイルにあります。
 
-1. *FirstToolWindowPackage.cs* で、クラスの <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 属性を見つけ `FirstToolWindowPackage` ます。これにより、FirstToolWindow 型がコンストラクターに渡されます。 既定の位置を指定するには、次の例のように、コンストラクターにさらにパラメーターを追加する必要があります。
+1. *Firsttoolwindowpackage .cs* で、クラスの属性を見つけます。これにより、 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `FirstToolWindowPackage` FirstToolWindow 型がコンストラクターに渡されます。 既定の位置を指定するには、次の例のように、コンストラクターにさらにパラメーターを追加する必要があります。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -282,5 +282,5 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
     チャイム音が聞こえます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

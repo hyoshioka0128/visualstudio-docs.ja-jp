@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: baada63e84e95fd466e0e5640c592dfe303d8e1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221549"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063761"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 関数
 この関数は、既存のソース管理プロジェクトを開くか、新しいプロジェクトを作成します。
@@ -79,7 +79,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>戻り値
  この関数のソース管理プラグインの実装では、次の値のいずれかが返されることが想定されています。
 
-|[値]|説明|
+|値|説明|
 |-----------|-----------------|
 |SCC_OK|プロジェクトを開く操作に成功します。|
 |SCC_E_INITIALIZEFAILED|プロジェクトを初期化できませんでした。|
@@ -92,7 +92,7 @@ SCCRTN SccOpenProject (
 |SCC_E_ACCESSFAILURE|ネットワークまたは競合の問題が原因で、ソース管理システムへのアクセスで問題が発生しました。 再試行することをお勧めします。|
 |SCC_E_NONSPECFICERROR|不特定のエラーです。ソース管理システムが初期化されませんでした。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  IDE はユーザー名 () を渡すことができ `lpUser` ます。または、単に空の文字列へのポインターを渡すこともできます。 ユーザー名がある場合は、ソース管理プラグインで既定値として使用する必要があります。 ただし、名前が渡されなかった場合、またはログインが指定された名前で失敗した場合、プラグインはユーザーにログインを求めるプロンプトを表示し、有効なログインを受け取ったときにの有効な名前を返します。これは、プラグインによっ `lpUser` `.` てユーザー名の SCC_USER_SIZE 文字列が変更される可能性があるためです `SCC_USER_LEN` 。
 
 > [!NOTE]
@@ -115,7 +115,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 > この `SCC_CAP_REENTRANT` ビットは、ソース管理プラグイン API のバージョン1.1 で導入されました。 バージョン1.0 では設定されていないか、または無視され、すべてのバージョン1.0 ソース管理プラグインは再入可能でないと見なされます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

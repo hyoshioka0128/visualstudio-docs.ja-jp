@@ -8,22 +8,22 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f78db8ba9a29b40d111dc5a82827395b100302b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 4d0b173f362418171def93ee92e3883b2910ad18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169484"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087341"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 このインターフェイスは、コンピューター上のデバッグポートを表します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```
 IDebugPort2 : IUnknown
@@ -49,17 +49,17 @@ IDebugPort2 : IUnknown
 |[GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)|プロセスの識別子を指定して、プロセスへのインターフェイスを返します。|
 |[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)|ポートで実行されているすべてのプロセスを列挙します。|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  ローカルポートは、ローカルコンピューター上で実行されているすべてのプロセスとプログラムへのアクセスを提供します。 その他のポートは、Windows CE ベースのデバイスへのシリアルケーブル接続、または非 DCOM コンピューターへのネットワーク接続を表す場合があります。 インターフェイスは、ポート `IDebugPort2` の名前と識別子を検索し、ポートで実行されているすべてのプロセスを列挙するために使用されます。 ポートでプロセスを起動して終了するための機能は、インターフェイスに実装されてい `IDebugPortEx2` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
  ヘッダー: msdbg. h
 
  名前空間: VisualStudio。
 
  アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コアインターフェイス](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

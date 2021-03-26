@@ -8,25 +8,25 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 91fa2a8b973149cb9365d817e14ac877bfc9f617
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 652d1423b95f923a8413bdec6fbbed528e9f624a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171032"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096695"
 ---
 # <a name="bpresi_fields"></a>BPRESI_FIELDS
 ブレークポイントが正常に解決されたかどうかを取得するための情報を指定します。
 
-## <a name="syntax"></a>構文
+## <a name="syntax"></a>Syntax
 
 ```cpp
 enum enum_BPRESI_FIELDS {
@@ -60,14 +60,14 @@ public enum enum_BPRESI_FIELDS {
 `BPRESI_ALLFIELDS`\
 すべてのフィールドを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)構造体のどのフィールドを初期化するかを示すために[get解決情報](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)メソッドに渡されます。
 
 これらのフラグは、構造体のどのフィールドが使用され、その構造が返されたときに有効であるかを示すためにも使用され `BP_RESOLUTION_INFO` ます。
 
 これらの値は、ビットごとのを使用して組み合わせることができ `OR` ます。
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。

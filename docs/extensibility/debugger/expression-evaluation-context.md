@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, context
 ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 127746b06ef09496ef8f50aa874ff32e2f983f65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 249510349d831f4f00578e36200f0d236d83ef59
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921541"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096838"
 ---
 # <a name="expression-evaluation-context"></a>式の評価コンテキスト
 デバッグでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、 **式の評価コンテキスト**:
@@ -30,6 +30,6 @@ ms.locfileid: "99921541"
 
      `BSTR`と[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)インターフェイスが指定されている場合、デバッグエンジン (DE) は、式を解析することによって[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)インターフェイスを作成できます。 インターフェイスが指定され `IDebugExpression2` ている場合、DE は、同期または非同期の式の評価によって値を取得できます。 この値は、変数または引数の名前および型と共に IDE に送信され、表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [式の評価インターフェイス](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [デバッガーコンテキスト](../../extensibility/debugger/debugger-contexts.md)

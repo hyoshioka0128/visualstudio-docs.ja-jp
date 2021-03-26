@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ProjectTemplateLink> element [Visual Studio Templates]
 - ProjectTemplateLink element [Visual Studio Templates]
 ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dba5063080fb45c366e7a1b76461b0a0d8978f7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f1dc03239481e59d26445161dcd7c0137b18d75
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915163"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068662"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 要素 (Visual Studio テンプレート)
 複数プロジェクトのテンプレート内の1つのプロジェクトの *.vstemplate* ファイルへのパスを指定します。
@@ -68,7 +68,7 @@ ms.locfileid: "99915163"
 
  このテキストは、テンプレートの *.vstemplate* ファイルへのパスを指定します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  複数プロジェクトのテンプレートは、2 つ以上のプロジェクトのコンテナーとして機能します。 `ProjectTemplateLink`要素は、テンプレート内のいずれかのプロジェクトの *.vstemplate* ファイルの場所を指定するために使用されます。 複数プロジェクトのテンプレートの *.vstemplate* ファイルには `ProjectTemplateLink` 、テンプレート内のプロジェクトごとに1つの要素が含まれています。 複数プロジェクトのテンプレートの詳細については、「 [方法: 複数プロジェクトのテンプレートを作成する](../ide/how-to-create-multi-project-templates.md)」を参照してください。
 
 ## <a name="example"></a>例

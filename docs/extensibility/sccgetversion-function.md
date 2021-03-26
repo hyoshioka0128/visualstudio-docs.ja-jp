@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetVersion function
 ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a71d3374ffd65e0e7b9a7b2e654885d84e370a9d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 42273951768591dc89f4c9e4b9a27de1d646e209
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220600"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063813"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 関数
 この関数は、ソース管理プラグインによってサポートされているソース管理プラグイン API のバージョン番号を取得します。
@@ -35,13 +35,13 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>戻り値
  `LONG`サポートされているソース管理プラグイン API のバージョン番号を含むデータ型。
 
-|WORD|説明|
+|WORD|Description|
 |----------|-----------------|
 |HIWORD|メジャー バージョン|
 |LOWORD|マイナー バージョン|
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  たとえば、ソース管理プラグインがソース管理プラグイン API のバージョン1.3 をサポートしている場合、この関数は0x0103 を返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ソース管理プラグインの API 関数](../extensibility/source-control-plug-in-api-functions.md)

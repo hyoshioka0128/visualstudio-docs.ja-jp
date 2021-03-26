@@ -8,17 +8,17 @@ helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d53117456318039837a371f68745b4688cbbd087
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c712f1458aa182abcf9e10bee6c6cf90e11b194d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884703"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057105"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>従来の言語サービスでのコメントコード
 プログラミング言語は、通常、コードに注釈を付けたり、コメントを付けたりするための手段を提供します。 コメントは、コードに関する追加情報を提供するテキストのセクションですが、コンパイル時または解釈時には無視されます。
@@ -63,6 +63,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [従来の言語サービス機能](../../extensibility/internals/legacy-language-service-features1.md)
 - [従来の言語サービスを登録する](../../extensibility/internals/registering-a-legacy-language-service1.md)

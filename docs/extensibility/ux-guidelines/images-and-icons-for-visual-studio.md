@@ -4,17 +4,17 @@ description: Visual Studio のイメージとアイコンの作成に使用さ�
 ms.date: 04/26/2017
 ms.topic: overview
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c7bc09147c2c9a6cf36a1a967241219df9e9bce
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 141e388e6877efe2b14c6f652b38b876bafe197f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884162"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069076"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio のイメージとアイコン
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"> Visual Studio でのイメージの使用</a>

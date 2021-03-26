@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - ProvideDefaultName element [Visual Studio project templates]
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f207a4c86a9c76f009341f96a7d562da1e8fb33
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29ca3075ee6e5ef031bb360ecfd10d6cb341c26
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910961"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068636"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>可視 Defaultname 要素 (Visual Studio テンプレート)
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)][**新しい項目の追加**] ダイアログボックスまたは [**新しいプロジェクト**] ダイアログボックスで、プロジェクトシステムがテンプレートの既定の名前を生成するかどうかを指定します。
@@ -54,7 +54,7 @@ ms.locfileid: "99910961"
 
  テキストはまたはである必要があり `true` `false` ます。これは、[ **新しい項目の追加** ] または [ **新しいプロジェクト** ] ダイアログボックスでテンプレートの既定の名前を生成するかどうかを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `ProvideDefaultName` は省略可能な要素です。 既定値は `true` です。
 
  `ProvideDefaultName`要素がの場合 `false` 、[**新しい項目の追加**] ダイアログボックスと [**新しいプロジェクト**] ダイアログボックスの [**名前**] ボックスには値が含まれ `<Enter_name>` ます。

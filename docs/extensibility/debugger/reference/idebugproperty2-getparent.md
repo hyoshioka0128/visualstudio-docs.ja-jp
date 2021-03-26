@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetParent
 ms.assetid: 58780469-fe25-4d84-9187-67940ca0767f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ae5557734ab59a2e71a67404a50519d72ca1ec0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: ef12171d338802b585818954858f5af4d723a34c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102166828"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064840"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 プロパティの親プロパティを取得します。
@@ -47,5 +47,5 @@ int GetParent (
 ## <a name="return-value"></a>戻り値
  成功した場合は、を返します。それ以外の場合は `S_OK` エラーコードを返します。 親が存在しない場合は `S_GETPARENT_NO_PARENT` を返します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

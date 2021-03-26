@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852623"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057079"
 ---
 # <a name="context-parameters"></a>コンテキスト パラメーター
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]統合開発環境 (IDE) では、[**新しいプロジェクト**]、[**新しい項目の追加**]、または [**サブプロジェクトの追加**] ダイアログボックスにウィザードを追加できます。 追加したウィザードは、[ **ファイル** ] メニューまたは **ソリューションエクスプローラー** でプロジェクトを右クリックして表示できます。 IDE は、ウィザードの実装にコンテキストパラメーターを渡します。 IDE がウィザードを呼び出すと、コンテキストパラメーターによってプロジェクトの状態が定義されます。
@@ -60,10 +60,10 @@ ms.locfileid: "99852623"
 | `InstallationDirectory` | インストールのディレクトリパス [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
 | `Silent` | ウィザードを **[完了** ] がクリックされたかのようにサイレントモードで実行するかどうかを示すブール値 `TRUE` です ()。 |
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
-- [カスタムパラメーター](../../extensibility/internals/custom-parameters.md)
+- [カスタム パラメーター](../../extensibility/internals/custom-parameters.md)
 - [ウィザード](../../extensibility/internals/wizards.md)
 - [ウィザード (.vsz) ファイル](../../extensibility/internals/wizard-dot-vsz-file.md)
 - [ウィザードを起動するためのコンテキストパラメーター](/previous-versions/tz690efs(v=vs.140))

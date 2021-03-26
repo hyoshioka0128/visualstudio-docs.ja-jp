@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule3::LoadSymbols
 ms.assetid: 7548c8c1-cbc6-48aa-a845-19058d4a85bb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0612be8ffdde8a942331a89e08298f71414a4c76
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2e8a9c34c85263ab538bf07b10b87f12fddf12db
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102164826"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065516"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
 現在のモジュールのシンボルを読み込みます。
@@ -41,11 +41,11 @@ int LoadSymbols();
 ## <a name="return-value"></a>戻り値
  メソッドが成功した場合は `S_OK` を返します。 失敗した場合はエラー コードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  このメソッドは、現在の検索パスからシンボルを読み込みます ( [setsymbols path](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) メソッドを呼び出すことによって変更できます)。
 
  このメソッドは、 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) メソッドよりも優先されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)

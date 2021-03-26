@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6f7933441eff3754b90385cfe62dc1314c2d1cb4
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a0ab15c0f232695dbc017d80f666154e5c35a8fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153015"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105065776"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 人間が判読できるエラーメッセージの構築を可能にする情報を返します。
@@ -72,9 +72,9 @@ int GetErrorMessage(
 ## <a name="return-value"></a>戻り値
  成功した場合はを返し `S_OK` ます。それ以外の場合はエラーコードを返します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  エラーメッセージは、の行に沿って書式設定する必要があり `"What I was doing.  %1"` ます。 次に、は、 `"%1"` エラーコードから派生したエラーメッセージ (で返されます) を使用して、呼び出し元によって置き換えられ `hrErrorReason` ます。 パラメーターは、 `pMessageType` 最後のエラーメッセージをどのように表示するかを呼び出し元に指示します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

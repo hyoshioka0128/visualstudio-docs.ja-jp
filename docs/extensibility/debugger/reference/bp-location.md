@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION union
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 472dc7b2e642608691ea2adb2ad1a7dce170729f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 0ee3c9246c25517c2b0bc095c4035400e43d29b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144183"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096721"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 ブレークポイントの位置を示すために使用される構造体の種類を指定します。
@@ -91,7 +91,7 @@ public struct BP_LOCATION {
 `unionmember4`\
 [C# のみ]解釈方法については、「解説」を参照してください。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
 この構造体は、 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) および [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 構造体のメンバーです。
 
  [C# のみ] `unionmemberX` メンバーは、次の表に従って解釈されます。 左側の列で値を確認 `bpLocationType` し、他の列を参照して各メンバーが表すものを特定し `unionmemberX` 、それに応じてをマーシャリングし `unionmemberX` ます。 C# でこの構造体の一部を解釈する方法については、例を参照してください。
@@ -132,14 +132,14 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>必要条件
+## <a name="requirements"></a>要件
 ヘッダー: msdbg. h
 
 名前空間: VisualStudio。
 
 アセンブリ: Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [構造体と共用体](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

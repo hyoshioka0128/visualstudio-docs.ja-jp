@@ -8,17 +8,17 @@ helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bd568e53c3a74819f642f0593524b314e065afb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ce9bc00f24278fd2c0533052d7bd5e944b1ebf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951564"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078345"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>メニューを Visual Studio のメニューバーに追加する
 
@@ -45,13 +45,13 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
 ::: moniker range="vs-2017"
 
-2. プロジェクトが開いたら、 **Testcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >   ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *TestCommand.cs* に変更します。
+2. プロジェクトが開いたら、 **Testcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >   ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **カスタムコマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を「 *testcommand .cs*」に変更します。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. プロジェクトが開いたら、 **Testcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >   ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を *TestCommand.cs* に変更します。
+2. プロジェクトが開いたら、 **Testcommand** という名前のカスタムコマンド項目テンプレートを追加します。 **ソリューションエクスプローラー** で、プロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >   ます。 [ **新しい項目の追加** ] ダイアログで、[ **Visual C#]/[拡張機能** ] にアクセスし、[ **コマンド**] を選択します。 ウィンドウの下部にある [ **名前** ] フィールドで、[コマンドファイル名] を「 *testcommand .cs*」に変更します。
 
 ::: moniker-end
 
@@ -169,6 +169,6 @@ Visual Studio 2015 以降では、ダウンロードセンターから Visual St
 
     メッセージボックスが表示され、"TestCommand in TopLevelMenu ()" というメッセージが表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [コマンド、メニュー、およびツールバー](../extensibility/internals/commands-menus-and-toolbars.md)

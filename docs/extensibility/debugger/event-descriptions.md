@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d4ee971e2c53c9431982ef33483471a50c54bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd8c6dbb4eddfcffa779b70b17819bf5e92c0c45
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851310"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096968"
 ---
 # <a name="event-descriptions"></a>イベントの説明
 各種類のイベントには特定の目的があります。
 
 ## <a name="events-and-the-reasons-for-their-use"></a>イベントとその用途の理由
 
-|Event|説明|
+|event|説明|
 |-----------|-----------------|
 |ドキュメントイベントのアクティブ化|デバッグエンジン (DE) が、ドキュメントを開いたり、前面に表示したりすることを望む場合に発生します。|
 |ブレークポイントのバインドまたはブレークポイントのエラーイベント|ブレークポイントがバインドされたとき、またはブレークポイントがバインドできずエラーが返されたときに送信されます。|
@@ -46,5 +46,5 @@ ms.locfileid: "99851310"
 |スレッド名の変更イベント|ユーザーがスレッドの名前を変更したときに送信されます。|
 |プログラム名の変更イベント|ユーザーがプログラムの名前を変更したときに送信されます。|
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [イベントの送信](../../extensibility/debugger/sending-events.md)

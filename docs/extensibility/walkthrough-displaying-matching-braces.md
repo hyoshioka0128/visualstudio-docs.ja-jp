@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f89c6303dc8ca9e48fb212a3ae889251b34ece91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0950f6b8ed647a3922fe63e365a97ea0a888ec6e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961730"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078618"
 ---
 # <a name="walkthrough-display-matching-braces"></a>チュートリアル: 一致する中かっこの表示
 一致させるかっこを定義することによる中かっこの一致など、言語に基づく機能を実装し、カレットが中かっこのいずれかにある場合は、対応する中かっこにテキストマーカータグを追加します。 言語のコンテキストで中かっこを定義し、独自のファイル名の拡張子とコンテンツの種類を定義し、その種類のタグだけを適用するか、既存のコンテンツの種類 ("text" など) にタグを適用することができます。 次のチュートリアルでは、かっこに一致するタグを "text" コンテンツタイプに適用する方法を示します。
@@ -124,5 +124,5 @@ ms.locfileid: "99961730"
 
 4. 左中かっこの前にカレットを配置する場合は、その中かっこと一致する終わりかっこの両方を強調表示する必要があります。 終わりかっこの直後にカーソルを置くと、その中かっこと一致する左中かっこの両方が強調表示されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
