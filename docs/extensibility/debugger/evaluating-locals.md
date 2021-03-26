@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 291c77568f17cfb0aed9d0d5b55e5ca193a6a702
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26543152293cd93bc5565995f2e6c451417aca37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840640"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096994"
 ---
 # <a name="evaluate-locals"></a>ローカルの評価
 > [!IMPORTANT]
@@ -191,7 +191,7 @@ HRESULT FieldGetPrimitiveValue(
 }
 ```
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [ローカルの実装のサンプル](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [ローカル値の取得](../../extensibility/debugger/getting-local-values.md)
 - [評価コンテキスト](../../extensibility/debugger/evaluation-context.md)

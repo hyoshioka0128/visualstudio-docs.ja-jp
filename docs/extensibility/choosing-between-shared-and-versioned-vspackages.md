@@ -9,17 +9,17 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 257158ec3c8d4364e1aa52133c457e24fd98cff3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949637"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078241"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>共有バージョンとバージョン付き Vspackage を選択する
 異なるバージョンの Visual Studio を同じコンピューターに共存させることができます。 Vspackage は、すべてのバージョンをサポートでき [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。
@@ -63,6 +63,6 @@ ms.locfileid: "99949637"
 
   VSPackage バイナリのバイナリ互換性を計画するだけでなく、ソリューションとプロジェクトファイルの形式も考慮する必要があります。 VSPackage が新しいプロジェクトの種類を作成する場合、1つのバージョンだけでも複数のバージョンのでも実行できるかどうかを決定する必要があり [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ます。 詳細については、「 [カスタムプロジェクトのアップグレード](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [Windows インストーラーを使用した Vspackage のインストール](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [コンポーネント管理](../extensibility/internals/component-management.md)

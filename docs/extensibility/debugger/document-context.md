@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], contexts
 ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be2e5e168b232f120a22e7e4b39352008fee7418
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34c69e11c57574c07a8ecb40480842834a8ee53f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840757"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097241"
 ---
 # <a name="document-context"></a>ドキュメントのコンテキスト
 デバッグでは [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、 *ドキュメントコンテキスト* は次のようになります。
@@ -28,7 +28,7 @@ ms.locfileid: "99840757"
 
 - は、 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md) インターフェイスによって実装されます。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 - [コードコンテキスト](../../extensibility/debugger/code-context.md)
 - [シンボルプロバイダー](../../extensibility/debugger/symbol-provider.md)
 - [シンボルプロバイダーインターフェイス](../../extensibility/debugger/reference/symbol-provider-interfaces.md)

@@ -11,18 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - PromptForSaveOnCreation element [Visual Studio project templates]
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: c95f643c11919d19f3cb4fd827bca98a4f7b50b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bc3c28bcfa35dac23c96d9a566b9767f8db9c1c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915130"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068644"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 要素 (Visual Studio テンプレート)
 
@@ -60,7 +60,7 @@ ms.locfileid: "99915130"
 
  テキストは `true` または `false` である必要があります。`true` は、新しいプロジェクトの作成時にユーザーに保存場所の入力を求めることを示します。
 
-## <a name="remarks"></a>解説
+## <a name="remarks"></a>注釈
  `PromptForSaveOnCreation` は省略可能な要素です。 既定値は `false` です。
 
  一時プロジェクトは、プロジェクトの内容を保存しないで作成および変更できるプロジェクトです。
