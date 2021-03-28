@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションで使用可能な CAST Highlight 特典について説明します
-ms.openlocfilehash: 0acc7b62dbac66d25e61dcddfeee0c9124d66694
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: e8f218db14340171cc056075699dd80d3fb7ef55
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473323"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672055"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CAST Highlight 特典
 開発者は、クラウドに移行するときにソフトウェアに関する重要な分析情報が必要です。 Visual Studio サブスクライバーは、CAST Highlight を使用することで、そのアプリケーションのソース コードを迅速にスキャンして、Azure へ移行するためのアプリケーションのクラウド レディネスを識別したり、移行中と移行後両方のアプリの進行状況を監視したりできます。
@@ -75,7 +75,7 @@ ms.locfileid: "102473323"
    > 受信した電子メールにあるアクティブ化リンクを必ずクリックしてください。  クリックしないと、CAST Highlight サブスクリプションにアクセスすることはできません。 受信トレイにメールが表示されない場合は、迷惑メール フォルダーを確認してください。
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 5 つのアプリを 3 か月間評価する|  いいえ。  新しいサブスクライバーのみが使用できます          |
@@ -86,7 +86,7 @@ ms.locfileid: "102473323"
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine、NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

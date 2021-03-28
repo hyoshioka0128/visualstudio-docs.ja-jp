@@ -11,18 +11,24 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ea708c1721d85468d99a0ccc327f378042579f85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f589aed953a852cb57570988d914f77b2fa10b2
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942491"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806018"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>手順 5: Django でユーザーを認証する
 
 **前の手順:[Django Web プロジェクト テンプレートを使用する](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
+::: moniker range="vs-2017"
 認証は Web アプリ共通のニーズであるため、"Django Web プロジェクト" テンプレートには基本認証フローが含まれています (このチュートリアルの手順 6. で説明する "ポーリング Django Web プロジェクト" テンプレートにも、同じフローが含まれています)。いずれかの Django プロジェクト テンプレートを使用する場合、Visual Studio には Django プロジェクトの *settings.py* での認証に必要なすべてのモジュールが含まれています。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+認証は Web アプリ共通のニーズであるため、"Django Web プロジェクト" テンプレートには基本認証フローが含まれています いずれかの Django プロジェクト テンプレートを使用する場合、Visual Studio には Django プロジェクトの *settings.py* での認証に必要なすべてのモジュールが含まれています。
+::: moniker-end
 
 この手順では、次のことを学習します。
 
@@ -210,9 +216,28 @@ ms.locfileid: "99942491"
 
 ## <a name="next-steps"></a>次の手順
 
-> [!div class="nextstepaction"]
-> [ポーリング Django Web プロジェクト テンプレートを使用する](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker range="vs-2017"
+- [ポーリング Django Web プロジェクト テンプレートを使用する](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+::: moniker-end
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> このチュートリアルの途中で Visual Studio ソリューションをソース コード管理にコミットした場合は、もう 1 つのコミットを実行することをお勧めします。 ソリューションは、GitHub [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) のチュートリアル ソース コードと一致するようにします。
+
+Visual Studio で "空の Django Web プロジェクト" と "Django Web プロジェクト" の各テンプレートを全体的に確認しました。 ビューとテンプレートの使用方法など、Django のすべての基本を学習し、ルーティング、認証、データベース モデルの使用方法を確認しました。 これで、必要なビューとモデルがある独自の Web アプリを作成できるようになったはずです。
+
+開発用コンピューター上で Web アプリを実行することは、アプリを顧客に提供するための単なる 1 つの手順です。 今後の手順には、以下のようなタスクがあります。
+
+- Web アプリを Azure App Service などの運用サーバーに展開します。 「[Azure App Service に発行する](publishing-python-web-applications-to-azure-from-visual-studio.md)」を参照してください。
+
+- *templates/404.html* というテンプレートを作成して、404 ページをカスタマイズします。 このテンプレートがある場合、Django は既定のテンプレートではなくこのテンプレートを使用します。 詳細については、Django ドキュメントの「[Error views](https://docs.djangoproject.com/en/2.0/ref/views/#error-views)」(エラー ビュー) を参照してください。
+
+- *tests.py* で単体テストを作成します。Visual Studio プロジェクト テンプレートには、そのための出発点が用意されています。詳細については、Django ドキュメントの「[Writing your first Django app, part 5 - testing](https://docs.djangoproject.com/en/2.0/intro/tutorial05/)」(最初の Django アプリを作成する、パート 5 - テスト) と「[Testing in Django](https://docs.djangoproject.com/en/2.0/topics/testing/)」(Django のテスト) を参照してください。
+
+- SQLite から、PostgreSQL、MySQL、SQL Server など (これらはいずれも Azure でホストできます) の運用レベルのデータ ストアにアプリを変更します。 「[When to use SQLite](https://www.sqlite.org/whentouse.html)」(SQLite を使用する場合) (sqlite.org) で説明されているように、SQLite は、1 日あたり 100,000 ヒット未満のトラフィックが中小規模のサイトには適していますが、高ボリュームのサイトにはお勧めできません。 また、単一のコンピューターに制限されているため、負荷分散処理や geo レプリケーションなど、マルチサーバーのシナリオには使用できません。 他のデータベースに対する Django のサポートについては、「[Database setup](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)」(データベースの設定) を参照してください。 テーブルや BLOB のような Azure ストレージ サービスを使用する場合は、[Azure SDK for Python](/azure/python/) も使用できます。
+
+- Azure DevOps などのサービスに対して、継続的インテグレーション/継続的配置パイプラインを設定します。 (Azure Repos、GitHub、または他の場所で) ソース コード管理を使用するだけでなく、リリースの前提条件として単体テストを自動的に実行するよう、Azure DevOps プロジェクトを構成することができます。また、運用環境にデプロイする前に、追加テストのためにステージング サーバーにデプロイするパイプラインを構成することもできます。 さらに、Azure DevOps は App Insights などの監視ソリューションと統合されているので、アジャイル計画ツールを使用してサイクル全体に対応することができます。 詳細については、「[Azure DevOps プロジェクトで Python 用の CI/CD パイプラインを作成する](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true)」、および一般的な [Azure DevOps ドキュメント](/azure/devops/?view=vsts&preserve-view=true)を参照してください。
+::: moniker-end
 ## <a name="go-deeper"></a>詳しい説明
 
 - [Django でのユーザー認証](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)

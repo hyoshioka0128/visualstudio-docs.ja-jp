@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: 新しく購入した月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する方法について説明します
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467597"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757647"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>新しい月単位の Visual Studio サブスクリプションをサブスクリプション管理ポータルに追加する
 Azure サブスクリプションを使用して新しい月単位の Visual Studio サブスクリプションを購入するときに、それらをユーザーに割り当てるにはサブスクリプション管理ポータルへの追加が必要な場合があります。  
@@ -40,6 +40,9 @@ Azure サブスクリプションを使用して新しい月単位の Visual Stu
 ## <a name="things-to-keep-in-mind"></a>留意事項
 - 新しい月単位のサブスクリプションを追加するオプションは、初回の購入時にのみ使用できます。  月単位のサブスクリプションを追加している場合は、ポータルにサインインするたびに、新しいサブスクリプションの有無が確認されます。 
 - 新しいサブスクリプションが見つかった場合は、それらが既にサブスクライバーに割り当てられていることを確認できます。  これは、Azure サブスクリプションへのアクセス権を持つ他の管理者が存在し、その管理者によって既に新しい Visual Studio サブスクリプションがユーザーに割り当てられているためです。  これで自分のポータルにも追加したので、それらのサブスクリプションを管理できます。 
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの管理については、[ Visual Studio サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。
 
 ## <a name="next-steps"></a>次の手順
 サブスクリプションを追加したので、それらをユーザーに割り当てることができます。  それはさまざまな方法で実行できます。

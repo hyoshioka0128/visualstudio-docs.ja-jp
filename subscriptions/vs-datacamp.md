@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる DataCamp トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: c675d49f1a099c53dfdabe08a71f1c5545010f97
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 270dffd75a0b442e5f275d0840033e54be5fe883
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538086"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672016"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの DataCamp トレーニング特典
 有効な Visual Studio サブスクリプションには、DataCamp へのサブスクリプションが含まれます。  DataCamp を使用すると、必要なすべてのデータ サイエンスのスキルを使い慣れたブラウザーから学習できます。 いつ、どのような内容を学習するかを選択します。 ソフトウェアのインストールも特殊なハードウェアも必要ないので、これまでよりも簡単にデータ サイエンスを学習できます。
@@ -57,7 +57,7 @@ ms.locfileid: "96538086"
 > ![DataCamp: トレーニングの続行](_img/vs-datacamp/vs-datacamp-continue-training.png "[Continue Track]\(トラックを続行\) をクリックして、いつでもトレーニングを再開できます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 3 か月間       |  いいえ。  新しいサブスクライバーのみが使用できます          |
@@ -68,7 +68,7 @@ ms.locfileid: "96538086"
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。以下は含まれません: NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -80,7 +80,7 @@ ms.locfileid: "96538086"
   - フォーラムとチュートリアルを特徴とする [DataCamp コミュニティ](https://www.datacamp.com/community/tutorials)
   - [DataCamp Help Center](https://support.datacamp.com/hc) では、サポート トピックを検索し、要求ユーザーの質問を参照できます。
   - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

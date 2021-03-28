@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52eb7535430248f519654c09924541a6900336cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6820b9d94e8b4849c646c16075614aed17a4dd3
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933090"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884136"
 ---
 # <a name="install-debugging-symbols-for-python-interpreters"></a>Python インタープリターのデバッグ シンボルをインストールする
 
@@ -24,18 +24,18 @@ Visual Studio 2017 以降では、Python 3 および Anaconda 3 インタープ�
 
 Visual Studio でシンボルが必要なとき、通常は混合モードのデバッグ セッションを開始したときに、プロンプトが表示されることがあります。 この場合、ダイアログで 2 つの選択肢が示されます。
 
-- **[シンボル設定ダイアログを開く]** を選択すると、 **[オプション]** ダイアログが開き、 **[デバッグ]**  >  **[シンボル]** タブが表示されます。
-- **[インタープリター用のシンボルをダウンロード]** を選択すると、この現在のドキュメント ページが開きます。この場合は、 **[ツール]**  >  **[オプション]** を選択し、 **[デバッグ]**  >  **[シンボル]** タブに移動して続行します。
+- **[シンボル設定ダイアログを開く]** を選択すると、**[オプション]** ダイアログが開き、**[デバッグ]** > **[シンボル]** タブが表示されます。
+- **[インタープリター用のシンボルをダウンロード]** を選択すると、この現在のドキュメント ページが開きます。この場合は、**[ツール]** > **[オプション]** を選択し、**[デバッグ]** > **[シンボル]** タブに移動して続行します。
 
     ![混合モード デバッガーのシンボルのプロンプト](media/mixed-mode-debugging-symbols-required.png)
 
 ## <a name="download-symbols"></a>シンボルをダウンロードする
 
-- Python 3.5 以前: Python インストーラーでデバッグ シンボルを取得します。 **[カスタム インストール]** を選択し、 **[次へ]** を選択します。 **[詳細設定]** 画面で、 **[Download debugging symbols]** (デバッグ シンボルのダウンロード) と **[Download debug binaries]** (デバッグ バイナリのダウンロード) を選択します。
+- Python 3.5 以前: Python インストーラーでデバッグ シンボルを取得します。 **[カスタム インストール]** を選択し、**[次へ]** を選択します。**[詳細設定]** 画面で、**[Download debugging symbols]** (デバッグ シンボルのダウンロード) と **[Download debug binaries]** (デバッグ バイナリのダウンロード) を選択します。
 
     ![デバッグ シンボルを含む Python 3.x インストーラー](media/mixed-mode-debugging-symbols-installer35.png)
 
-    シンボル ファイル ( *.pdb*) はルート インストール フォルダーにあります (個々のモジュールのシンボル ファイルも *DLLs* フォルダーにあります)。 そのため、シンボル ファイルは Visual Studio で自動的に検出されます。追加の手順は必要ありません。
+    シンボル ファイル (*.pdb*) はルート インストール フォルダーにあります (個々のモジュールのシンボル ファイルも *DLLs* フォルダーにあります)。 そのため、シンボル ファイルは Visual Studio で自動的に検出されます。追加の手順は必要ありません。
 
 - Python 3.4.x 以前: シンボルは、[公式のディストリビューション](#official-distributions)または [Enthought Canopy](#enthought-canopy) から、ダウンロード可能な *.zip* ファイルとして入手できます。 ダウンロード後は、Python フォルダー内の *Symbols* などのローカル フォルダーにファイルを展開して続行します。
 
@@ -50,7 +50,7 @@ Visual Studio でシンボルが必要なとき、通常は混合モードのデ
 
 1. **[ツール]**  >  **[オプション]** メニューを選択し、 **[デバッグ]**  >  **[シンボル]** に移動します。
 
-1. ツールバーの **[追加]** ボタン (下図の線で囲まれたボタン) を選択し、ダウンロードしたシンボルを展開したフォルダー (下図のように、*c:\python34\Symbols* など、*python.pdb* がある場所) を入力し、 **[OK]** を選びます。
+1. ツールバーの **[追加]** ボタン (下図の線で囲まれたボタン) を選択し、ダウンロードしたシンボルを展開したフォルダー (下図のように、*c:\python34\Symbols* など、*python.pdb* がある場所) を入力し、**[OK]** を選びます。
 
     ![混合モードのデバッグでのシンボルのオプション](media/mixed-mode-debugging-symbols.png)
 
@@ -61,7 +61,7 @@ Visual Studio でシンボルが必要なとき、通常は混合モードのデ
 
 ## <a name="official-distributions"></a>公式ディストリビューション
 
-| Python のバージョン | ダウンロード |
+| Python バージョン | ダウンロード |
 | --- | --- |
 | 3.5 以降 | Python インストーラーでシンボルをインストールします。 |
 | 3.4.4 | [32 ビット](https://www.python.org/ftp/python/3.4.4/python-3.4.4-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/3.4.4/python-3.4.4.amd64-pdb.zip) |
@@ -75,6 +75,9 @@ Visual Studio でシンボルが必要なとき、通常は混合モードのデ
 | 3.3.2 | [32 ビット](https://www.python.org/ftp/python/3.3.2/python-3.3.2-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/3.3.2/python-3.3.2.amd64-pdb.zip) |
 | 3.3.1 | [32 ビット](https://www.python.org/ftp/python/3.3.1/python-3.3.1-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/3.3.1/python-3.3.1.amd64-pdb.zip) |
 | 3.3.0 | [32 ビット](https://www.python.org/ftp/python/3.3.0/python-3.3.0-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/3.3.0/python-3.3.0.amd64-pdb.zip) |
+| 2.7.18 | [32 ビット](https://www.python.org/ftp/python/2.7.18/python-2.7.18-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/2.7.18/python-2.7.18.amd64-pdb.zip) |
+| 2.7.17 | [32 ビット](https://www.python.org/ftp/python/2.7.17/python-2.7.17-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/2.7.17/python-2.7.17.amd64-pdb.zip) |
+| 2.7.16 | [32 ビット](https://www.python.org/ftp/python/2.7.16/python-2.7.16-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64-pdb.zip) |
 | 2.7.15 | [32 ビット](https://www.python.org/ftp/python/2.7.15/python-2.7.15-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/2.7.15/python-2.7.15.amd64-pdb.zip) |
 | 2.7.14 | [32 ビット](https://www.python.org/ftp/python/2.7.14/python-2.7.14-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/2.7.14/python-2.7.14.amd64-pdb.zip) |
 | 2.7.13 | [32 ビット](https://www.python.org/ftp/python/2.7.13/python-2.7.13-pdb.zip) - [64 ビット](https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64-pdb.zip) |

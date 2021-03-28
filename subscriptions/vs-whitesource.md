@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる WhiteSource Bolt サブスクリプションをアクティブ化する方法を説明します。
-ms.openlocfilehash: dffa4645795e771b2f947426907ed3e03caedf80
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: def7e206fee75dcc76212df2163e41a8b1a96a83
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537683"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671808"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの WhiteSource Bolt
 
@@ -40,25 +40,25 @@ ms.locfileid: "96537683"
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 6 か月       |  はい       |
 | Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 6 か月       |  はい       |
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | 使用できません                                                           |N/A         |
 | Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用できません                                                           |N/A         |
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |N/A         |
-| MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |N/A         |
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |N/A|
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                           |NA         |
+| MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                                           |NA         |
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |NA|
 ||
 
-<sup>1</sup>  *以下が含まれます:Microsoft Partner Network (Enterprise) が含まれます除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services は含まれません。*
+<sup>1</sup>  *以下が含まれます: Microsoft Partner Network (Enterprise)。以下は含まれません: Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services、Imagine、NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
 
 ## <a name="support-resources"></a>サポート リソース
 - WhiteSource Bolt のヘルプが必要ですか。  [https://www.whitesourcesoftware.com/vse_whitesource_bolt/](https://www.whitesourcesoftware.com/vse_whitesource_bolt/ ) で WhiteSource Bolt の担当者とオンライン チャットしてください。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

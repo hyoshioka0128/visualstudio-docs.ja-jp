@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Azure コミュニティ サポート特典について学習します。
-ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 43633e20bbf10988092a2d98d7d0a5ddd9b08601
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672108"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Azure コミュニティ サポート特典
 Azure コミュニティを通じて、選ばれたサポート フォーラム内で Azure チームから直接ヘルプを受けます。  Azure コミュニティ特典は、Azure 関連のトピックに重点を置いたフォーラムのコレクションへのアクセスを提供します。
@@ -68,7 +68,7 @@ Azure コミュニティの開始は簡単です。
 ## <a name="eligibility"></a>特典を受ける条件
 Azure コミュニティ特典を利用できるかどうかは、以下のようにサブスクリプション レベルによって変わります。
 
-|                                          サブスクリプション レベル                                           |     チャンネル      |    特長    | 更新可能かどうか |
+|                                          サブスクリプション レベル                                           |     チャンネル      |    長所    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)、NFR<sup>1</sup>                            | VL、Azure、リテール |   使用可能    |    はい     |
 |                           Visual Studio Enterprise Subscription with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
@@ -78,7 +78,7 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   使用可能    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)|        すべて        | 使用できません |     いいえ     |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT)。以下は含まれません: NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。

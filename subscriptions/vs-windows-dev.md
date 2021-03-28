@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 02/09/2021
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Windows 開発者アカウントについて説明します。
-ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
-ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
+ms.openlocfilehash: 4ea61f0bdb131c20412c0b99bbd09cbc44777fb7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100089594"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672762"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Windows 開発者アカウント
 選択した Visual Studio サブスクリプションに含まれる Windows 開発者アカウントでは、Windows ストアに無料と有料の Windows アプリを送信できます。
@@ -44,18 +44,18 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 12. **[ダッシュボードへ移動]** をクリックして、Windows 開発者アカウントの使用を開始します。
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 長所                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | Included       |  はい|
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL  | Included       |  はい|
 | Visual Studio Professional (Standard) | VL、Azure、リテール                                       | Included                                                            |はい|
 | Visual Studio Professional Subscription with GitHub Enterprise | VL                                        | Included                                                            |はい|
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用不可                                            |  NA|
-| MSDN Platforms (標準)                                          | VL、リテール                                              |  使用不可                                            |  NA|
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用不可                                                           |N/A|
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                            |  NA|
+| MSDN Platforms (標準)                                          | VL、リテール                                              |  使用できません                                            |  NA|
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |NA|
 ||
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、Most Valuable Professional (MVP)、Regional Director (RD)。除外:Microsoft Partner Network (MPN)、Imagine、MCT Software & Services。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、Most Valuable Professional (MVP)、Regional Director (RD)。以下は含まれません: Microsoft Partner Network (MPN)、Imagine、MCT Software & Services、NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -65,7 +65,7 @@ Windows 開発者アカウントを使うには、アカウントを設定する
 ## <a name="support-resources"></a>サポート リソース
 - Windows 開発者アカウントの使用に関するヘルプが必要ですか。  [Windows デベロッパー センター](https://developer.microsoft.com/windows)で [サポート](https://developer.microsoft.com/windows/support) リソースを確認してください。
 - [Windows 開発](/windows/)
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

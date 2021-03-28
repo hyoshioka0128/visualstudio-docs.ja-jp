@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 提供されているサブスクリプションの種類、該当する規則、および MPN で提供しているサブスクリプション数の詳細について説明します。
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005834"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776754"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Microsoft Partner Network (MPN) でパートナーに提供される Visual Studio サブスクリプション
 
@@ -50,7 +50,7 @@ MPN でコンピテンシーを取得するか、Action Pack を購入したパ�
 
 コンピテンシーを持つパートナーは、Action Pack を購入する資格があります。 パートナーごとに Action Pack を 1 つだけ購入できます。
 
-Action Pack では、パートナーは **Visual Studio Professional (MPN) サブスクリプションを 3 つ**取得します。 Visual Studio Professional (MPN) は、市場で販売されているのと同等のものではない、カスタム プランです。 含まれる内容は次のとおりです。
+Action Pack では、パートナーは **Visual Studio Professional (MPN) サブスクリプションを 3 つ** 取得します。 Visual Studio Professional (MPN) は、市場で販売されているのと同等のものではない、カスタム プランです。 含まれる内容は次のとおりです。
 
 - Visual Studio Professional -- 最新バージョンのみ
 - Windows Enterprise -- 最新バージョンのみ、開発およびテスト用のみに使用
@@ -71,11 +71,10 @@ Visual Studio Professional (MPN) サブスクリプションには、商用に�
 MPN 経由で提供される Visual Studio サブスクリプションでは、ライセンス ユーザーは Visual Studio サブスクリプションのアクティブ化に使用したのと同じ ID またはログインを使用して、Visual Studio にサインインする必要があります。 プロダクト キーは、製品のロックを解除するために提供されているわけではありません。サインインのみが Visual Studio を実行するためのオプションです。 Visual Studio サブスクライバーは、Visual Studio で動作が停止されるまで、最大 30 日間オフラインで操作できます。 オンラインで作業しているときに、Visual Studio ではサブスクリプションがまだ有効であることを確認するために、定期的にユーザーのライセンスの状態を通知せずに更新します。
 
 ## <a name="resources"></a>リソース
-
 - [Microsoft Partner Network プログラム ガイド](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [Visual Studio サブスクリプションを MPN 従業員に割り当てる](manage-mpn-subscriptions.md)
 - [使用条件](https://www.microsoft.com/useterms/) - MPN 経由で提供される Visual Studio サブスクリプションは、Visual Studio サブスクリプションの再販禁止 (NFR) EULA の対象です。
-
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: 長期契約ではなく、月または年単位の一定期間だけ Visual Studio Professional または Visual Studio Enterprise をレンタルします。
-ms.openlocfilehash: 6aa17046726e19086f511c7ab59ab19228142e20
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473388"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672544"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Visual Studio Professional および Visual Studio Enterprise クラウド サブスクリプションの購入
 [Visual Studio Professional と Visual Studio Enterprise のサブスクリプション](https://visualstudio.microsoft.com/subscriptions/)は、[Visual Studio Marketplace](https://marketplace.visualstudio.com) から購入できます。 これらは、 **"クラウド サブスクリプション"** と呼ばれます。
@@ -127,7 +127,7 @@ A: 別のクラウド サブスクリプション年間プランを購入する�
 - [Visual Studio サブスクリプションの管理ポータル](https://manage.visualstudio.com/)
 - [Visual Studio クラウド サブスクリプションの請求に関してよくあるご質問](vscloud-billing-faq.md)
 - [CSP 向けの Visual Studio クラウド サブスクリプションの購入](vscloud-csp.md)
-- - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
+- - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)をご覧ください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

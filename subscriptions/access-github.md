@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションの一部として GitHub Enterprise にアクセスする方法について説明します
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511359"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757712"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>Visual Studio Subscription with GitHub Enterprise 
 
@@ -20,7 +20,7 @@ Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visu
 
 - お使いの IDE およびワークフローにオープン ソース コード、コミュニティ、およびベスト プラクティスを安全に取り込むことで、Visual Studio と GitHub に合わせたスケールで革新を行います。
 - 最も包括的な一連のリソースと共に、開発者向けのクラス最高の開発ツールおよびサービスを使用して、優れたアプリケーションを作成、デプロイ、管理します。 
-- 共同作業を行い、GitHub Enterprise でプル要求を管理し、記述された場所 (エディター) でソース コードを確認します。 
+- 共同作業を行い、GitHub Enterprise で "プル要求" を管理し、記述された場所 (エディター) でソース コードを確認します。 
 
 ## <a name="whats-available"></a>使用できるオプション 
 
@@ -31,7 +31,7 @@ Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visu
 
 Visual Studio Enterprise、Visual Studio Professional、GitHub Enterprise は、引き続き個別に利用できます。 
 
-メリットとオプションの詳細については、 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> にアクセスしてください。 
+ベネフィットとオプションの詳細については、<https://visualstudio.microsoft.com/subscriptions/visual-studio-github> にアクセスしてください。 
 
 ## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>Visual Studio Subscription with GitHub Enterprise の設定プロセス
 
@@ -85,7 +85,7 @@ A: GitHub Enterprise に加えて、サブスクリプションを個別に購�
 - GitHub のさまざまなトピックに関する質問への回答については、[GitHub ヘルプ](https://help.github.com)で検索できます。
 - 他に支援が必要でしょうか。  [GitHub サポート](https://support.github.com/)にお問い合わせください。
 - [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Microsoft の「[ヘルプを受ける](https://my.visualstudio.com/GetHelp)」ページにアクセスしてください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Microsoft の「[ヘルプを受ける](https://aka.ms/vssubscriberhelp)」ページにアクセスしてください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 

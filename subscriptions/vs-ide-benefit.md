@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Visual Studio IDE をダウンロードしてインストールする方法を説明します
-ms.openlocfilehash: edabaa21e8f8b6c7fe8fee33d2c1a4252efa7a1c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2cff154f61d662f180fe5087a877073a9d84e27c
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538060"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672003"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 の特典
 
@@ -60,7 +60,7 @@ IDE をダウンロードするには:
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 使用可能       |  はい          |
@@ -69,7 +69,7 @@ IDE をダウンロードするには:
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用可能                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用できません                                              |  N/A          |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。除外:MCT Software & Services は含まれません。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、NFR Basic、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、BizSpark、Imagine、Most Valuable Professional (MVP)、Regional Director (RD)。MCT Software & Services は含まれません。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -80,7 +80,7 @@ IDE をダウンロードするには:
 - Visual Studio IDE のヘルプが必要な場合は、以下のリソースを確認してください。
   - テクニカル サポート: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [ドキュメント](/visualstudio/)
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

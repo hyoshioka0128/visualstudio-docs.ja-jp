@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるテクニカル サポート特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: ea67dde54dd66af6d20b7f9af84d2bfe80211444
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 77856cf8a1f3497f66e89110e7b951c768da8c28
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672134"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのテクニカル サポート特典をアクティブ化して使用する
 Visual Studio サブスクリプションのテクニカル サポート特典は、[サポート ライフサイクル](https://support.microsoft.com/lifecycle/search)のメインストリーム サポート フェーズにある製品の **非運用環境** で発生した障害対応の問題を解決するためのものです。 Visual Studio Enterprise の Standard および年間のクラウド サブスクリプションは、特典のアクティブ化から最長 1 年間、4 つのインシデントを受け取り、Visual Studio Professional Standard および年間のクラウド サブスクリプションが 2 つのインシデントを受け取ります。 サブスクリプションが最新である間は、特典のアクティブ化を行う必要があります。
@@ -105,7 +105,7 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 4 つのインシデント       |  はい|
 | Visual Studio Enterprise Subscription with GitHub Enterprise | VL | 4 つのインシデント       |  はい|
@@ -113,15 +113,18 @@ Azure に関連する問題がある場合に Visual Studio サブスクリプ�
 | Visual Studio Professional Subscription with GitHub Enterprise | VL                                     | 2 つのインシデント                                                          |はい         |
 | Visual Studio Test Professional (標準)                         | VL、リテール                                              | 2 つのインシデント                                             |  はい         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 2 つのインシデント                                               | はい         |
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用不可                                                           |N/A|
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure                                       | 使用できません                                                           |NA|
 ||
 
-<sup>1</sup> *次のものが含まれます: Imagine Premium、BizSpark。除外:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。*
+<sup>1</sup> *以下が含まれます: Imagine Premium、BizSpark。以下は含まれません: Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Partner Network (MPN)、FTE、MCT Software & Services Developer、Imagine Standard、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services。以下は含まれません: NFR Basic。*
 
 <sup>2</sup> *Imagine Standard が含まれます。*
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
+- 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)

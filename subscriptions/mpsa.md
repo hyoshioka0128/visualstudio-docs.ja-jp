@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 03/05/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: マイクロソフト製品とサービス契約 (MPSA) での Visual Studio サブスクリプションの管理について説明します
-ms.openlocfilehash: 49f18b540d27678b46a5fa111c76a069b705309d
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 63124e8853184fde04db7bc202e5acea3cfbe89f
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249463"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776533"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>マイクロソフト製品/サービス契約 (MPSA) の Visual Studio サブスクリプション
 MPSA プログラムを使用して Visual Studio サブスクリプションを購入した場合、Visual Studio サブスクリプション管理者になってサブスクリプションをユーザーに割り当てる前に、いくつか注意が必要な点があります。 管理者として既に設定されている場合は、Visual Studio サブスクリプション[管理ポータル](https://manage.visualstudio.com/)に直接進むことができます。
@@ -56,6 +56,9 @@ MPSA のお客様は、MPSA を通じて購入した資産を、ボリューム 
 
 > [!NOTE]
 > ドメインの引き継ぎプロセスを完了したら、「テナントの関連付け前 (管理対象のテナント)」セクションの 5 つの手順の条件を満たす必要があります。 条件を満たした後に必要な手順は、MPSA サポートに連絡して追加の Visual Studio サブスクリプション管理者をプロビジョニングすることのみです。
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの管理については、[Visual Studio サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

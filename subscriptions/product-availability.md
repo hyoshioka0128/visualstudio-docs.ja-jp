@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションに対するソフトウェア ダウンロードでの製品の利用可能性について説明します。
-ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 8188395c236ae116c36da7f60f0afb8042cb81b3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005860"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776624"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのソフトウェア ダウンロードに対する製品の利用可能性
 サブスクライバー特典の一環として、広い範囲のソフトウェアのダウンロードにアクセスできます。
@@ -34,9 +34,12 @@ ms.locfileid: "91005860"
 ダウンロードの種類と数は、サブスクリプション レベルとプログラムのメンバーシップによって異なります。  Visual Studio Enterprise Standard のサブスクリプションを持つサブスクライバーは、Microsoft Partner Network または BizSpark プログラム サブスクリプションを介してサブスクリプションを取得したサブスクライバーと使用できるダウンロードが異なる場合があります。  各サブスクリプション レベルで利用できるダウンロードの詳細については、「[Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)」(特典レベル別の製品) の一覧をダウンロードしてください。
 
 > [!NOTE]
-> 同じメール アドレスに複数のサブスクリプションが関連付けられている場合、利用できるソフトウェア タイトルは、お持ちの**最上位**レベルのサブスクリプションによって決まります。  たとえば、Visual Studio Enterprise サブスクリプションと Visual Studio Test Professional サブスクリプションをお持ちの場合、現在サブスクリプション ポータルで使われているサブスクリプションに関係なく、Visual Studio Enterprise サブスクリプションに含まれるソフトウェア タイトルにアクセスできます。 
+> 同じメール アドレスに複数のサブスクリプションが関連付けられている場合、利用できるソフトウェア タイトルは、お持ちの **最上位** レベルのサブスクリプションによって決まります。  たとえば、Visual Studio Enterprise サブスクリプションと Visual Studio Test Professional サブスクリプションをお持ちの場合、現在サブスクリプション ポータルで使われているサブスクリプションに関係なく、Visual Studio Enterprise サブスクリプションに含まれるソフトウェア タイトルにアクセスできます。 
 
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

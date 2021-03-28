@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bb2fa359-8170-4db0-a0c5-d49fc692b0aa
-ms.date: 03/05/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプション レベルをアップグレードまたはダウンロードした場合の影響について説明します。
-ms.openlocfilehash: ac4355149ba66cd06ae5c1abaeb57e7065631050
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 93ea729280916cb62ba2b87ff820bb25069369d7
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672983"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>Visual Studio のサブスクリプション レベルを変更した場合に起きること
 Visual Studio サブスクリプションにおいては、お客様が利用できるソフトウェア、ツール、サービス、その他の特典は、お客様のサブスクリプション レベルによって異なります。  一般に、サブスクリプション レベルが上位であるほど、より強力な特典が提供されます。  
@@ -63,7 +63,7 @@ Visual Studio にサインインするたびに認証される特典を使用し
 現在のサブスクリプションで提供されている特典のうち、ダウングレード後のサブスクリプションには含まれないものを使用している場合は、それらの特典にアクセスできなくなるおそれがあります。  
 
 ## <a name="support-resources"></a>サポート リソース
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8fccb5f6-ff61-488f-a91e-447faeda798d
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: 選択した Visual Studio サブスクリプションに含まれる Microsoft Tech Community フォーラムのサポート特典について説明します。
-ms.openlocfilehash: 2bdd6b638ba490c2643374b15bc8b9644d519ebd
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: f1078204d69b9249b1691f9c96496ba1975fffd6
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537813"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671951"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでの Microsoft Tech Community フォーラムのサポート
 ベスト プラクティス、設計アーキテクチャ、および最新情報について、他のユーザーや Microsoft の技術者とつながることができます。
@@ -41,7 +41,7 @@ ms.locfileid: "96537813"
 ## <a name="eligibility"></a>特典を受ける条件
 Azure コミュニティ特典を利用できるかどうかは、以下のようにサブスクリプション レベルによって変わります。
 
-|                                          サブスクリプション レベル                                           |     チャネル      |    特長    | 更新可能かどうか |
+|                                          サブスクリプション レベル                                           |     チャンネル      |    長所    | 更新可能かどうか |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)、NFR<sup>1</sup>                            | VL、Azure、リテール |   使用可能    |    はい     |
 |                           Visual Studio Enterprise Subscription with GitHub Enterprise                           | VL、Azure、リテール |   使用可能    |    はい     |
@@ -51,7 +51,7 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 |                                       MSDN Platforms (標準)                                       |    VL、リテール     |   使用可能    |    はい     |
 | Visual Studio Enterprise (月間クラウド)、Visual Studio Professional (月間クラウド)|        すべて        | 使用できません |     いいえ     |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT) が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)、BizSpark、Imagine、Microsoft Certified Trainer (MCT)。以下は含まれません: NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -59,7 +59,7 @@ Azure コミュニティ特典を利用できるかどうかは、以下のよ�
 どのサブスクリプション使用しているかわからない場合は次の手順を実行してください。  [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) に接続し、お使いのメール アドレスに割り当てられているすべてのサブスクリプションを確認します。 すべてのサブスクリプションが表示されない場合は、1 つ以上のサブスクリプションが別のメール アドレスに割り当てられている可能性があります。  それらのサブスクリプションを表示するには、そのメール アドレスを使用してサインインする必要があります。
 
 ## <a name="support-resources"></a>サポート リソース
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートが必要な場合は、  [Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

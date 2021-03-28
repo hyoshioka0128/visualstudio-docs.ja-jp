@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: サブスクリプションに含まれる特典と、それらをアクティブにする方法について説明します。
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750142"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757634"
 ---
 # <a name="about-your-subscription-benefits"></a>サブスクリプションの特典について
 Visual Studio サブスクライバーは、サブスクリプション レベルに応じてさまざまな特典にアクセスできます。 特典に関しては、注意すべき重要な点がいくつかあります。
@@ -42,6 +42,9 @@ Visual Studio サブスクリプションに含まれる特典の一部 (トレ�
 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>一時的に使用できなくなった特典
 めったにありませんが、技術的な問題によって特典を短期間利用できなくなることがあります。 このような場合は、[Visual Studio サブスクリプション ポータル](https://my.visualstudio.com/benefits)の特典タイルが変更され、問題が解決されるまで特典が "一時的に使用不可" になっていることが示されます。問題が解決された時点でタイルは復元され、特典を再び利用できるようになります。
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

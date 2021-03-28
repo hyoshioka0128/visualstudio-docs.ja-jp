@@ -1,6 +1,6 @@
 ---
 title: 開発者向けのコマンドライン シェル
-description: Visual Studio、Developer PowerShell、および Visual Studio ターミナルの開発者コマンド プロンプトを見つけて使用する方法について説明します。これにより、.NET および C++ ツールをより簡単に使用できるようになります。
+description: Visual Studio 開発者コマンド プロンプト、Visual Studio Developer PowerShell、および Visual Studio ターミナルを見つけて使用する方法について説明します。これにより、.NET および C++ ツールをより簡単に使用できるようになります。
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249745"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672326"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>開発者コマンド プロンプトと開発者用 PowerShell
 
 Visual Studio 2019 には、開発者向けの 2 つのコマンドライン シェルが含まれています。
 
-- **Visual Studio の開発者コマンド プロンプト** - 開発者用コマンドライン ツールを簡単に使用できるように特定の環境変数が設定されている標準コマンド プロンプトです。
-- **開発者用 PowerShell** - コマンド プロンプトよりも、さらに高機能です。 たとえば、1 つのコマンド ( *cmdlet* と呼ばれる) の出力を別のcmdletに渡すことができます。 このシェルには、開発者コマンド プロンプトと同じ環境変数が設定されています。
+- **Visual Studio 開発者コマンド プロンプト** - 開発者用コマンドライン ツールを簡単に使用できるように特定の環境変数が設定されている標準コマンド プロンプトです。 Visual Studio 2015 以降で使用できます。
+- **Visual Studio Developer PowerShell** - コマンド プロンプトよりも、さらに高機能です。 たとえば、1 つのコマンド ( *cmdlet* と呼ばれる) の出力を別のcmdletに渡すことができます。 このシェルには、開発者コマンド プロンプトと同じ環境変数が設定されています。 Visual Studio 2019 以降で使用できます。
 
 どちらのシェルにも、開発者用コマンドライン ツールをより簡単に使用できるように特定の環境変数が設定されています。 これらのシェルのいずれかを開いたら、さまざまなユーティリティのコマンドを入力できます。それらがどこにあるのかを知っている必要はありません。 次のようなコマンドを実行できます。
 
@@ -40,10 +40,6 @@ Visual Studio 2019 バージョン 16.5 以降、Visual Studio には、これ�
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="複数のタブが表示された Visual Studio ターミナル":::
 
 いずれかの開発者シェルを Visual Studio から別のアプリとして、またはターミナル ウィンドウで開くと、現在のソリューションのディレクトリが表示されます (ソリューションを読み込み済みの場合)。 この動作により、ソリューションまたはそのプロジェクトに対してコマンドを実行するのが容易になります。
-
-## <a name="prerequisites"></a>前提条件
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>Visual Studio 内からコマンド プロンプトを開始する
 

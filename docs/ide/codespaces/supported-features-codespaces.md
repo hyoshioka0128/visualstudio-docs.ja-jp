@@ -11,14 +11,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebd64a314f1c4d6afd7b6e6fcc3b38148ff68225
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971142"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672970"
 ---
 # <a name="supported-visual-studio-features-preview"></a>サポートされている Visual Studio の機能 (プレビュー)
+
+> [!Important] 
+> 2021 年 4 月 12 日以後は、Visual Studio 2019 から GitHub Codespaces への接続はサポートされなくなります。このプライベート プレビューは終了しています。 Microsoft では、クラウドを利用した内部ループと、さまざまな Visual Studio ワークロードに合わせて最適化された VDI ソリューションの進化し続けるエクスペリエンスに焦点を合わせています。 今後のプレビューとロードマップの情報のために、Visual Studio の[開発者コミュニティ フォーラム](https://developercommunity.visualstudio.com/home)に参加することをお勧めします。 
+
 
 Visual Studio は、codespace に接続するときに豊富な開発エクスペリエンスを提供します。 使い慣れた Visual Studio の内部ループ ツールを使用して、ソース コードの編集、デバッグ、テスト、バージョン管理を行うことができます。また、プロジェクト テンプレート、リッチ コード ナビゲーション、IntelliSense などの生産性機能も利用できます。
 

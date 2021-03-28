@@ -11,25 +11,25 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 374e07735667a2a8891824b23d49b061651b3b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911731"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672788"
 ---
 # <a name="what-is-github-codespaces-preview"></a>GitHub Codespaces とは (プレビュー)
 
+> [!Important] 
+> 2021 年 4 月 12 日以後は、Visual Studio 2019 から GitHub Codespaces への接続はサポートされなくなります。このプライベート プレビューは終了しています。 Microsoft では、クラウドを利用した内部ループと、さまざまな Visual Studio ワークロードに合わせて最適化された VDI ソリューションの進化し続けるエクスペリエンスに焦点を合わせています。 今後のプレビューとロードマップの情報のために、Visual Studio の[開発者コミュニティ フォーラム](https://developercommunity.visualstudio.com/home)に参加することをお勧めします。 
+
 Codespaces へようこそ。 お待ちしておりました。
 
-GitHub Codespaces は、クラウドを利用した開発環境をすべてのアクティビティに対して提供します。これは、長期のプロジェクトである場合も、pull request のレビューのような短期的なタスクである場合もあります。 codespace は Visual Studio 2019 Preview 内から操作できます ([制限されたパブリック ベータ版にサインアップしてください](https://github.com/features/codespaces/signup-vs))。
+GitHub Codespaces は、クラウドを利用した開発環境をすべてのアクティビティに対して提供します。これは、長期のプロジェクトである場合も、pull request のレビューのような短期的なタスクである場合もあります。
 
 さらに、GitHub Codespaces は、&mdash;一般的には運用ワークロード用に予約されている&mdash;再現性や信頼性のような多くの DevOps のベネフィットを開発環境にもたらします。 また、任意の必要なツール、プロセス、構成が存在するように、GitHub Codespaces を個人用に設定することもできます。
 
 このドキュメントでは、主要な概念について説明し、Codespaces の機能を紹介します。 作業を開始する方法については、[codespace での Visual Studio の使用](use-visual-studio-with-codespaces.md)に関するページを参照してください。
-
-> [!IMPORTANT]
-> GitHub Codespaces を使用するには、制限された[パブリック ベータ版](https://github.com/features/codespaces/signup-vs)にサインアップする必要があります。 ベータ期間中、GitHub は Codespaces の可用性に関して一切の保証を行いません。 ベータ版に参加する方法の詳細については、「[About Codespaces](https://docs.github.com/github/developing-online-with-codespaces/about-codespaces#joining-the-beta)」(Codespaces について) を参照してください。
 
 ## <a name="concepts-and-features"></a>概念と機能
 

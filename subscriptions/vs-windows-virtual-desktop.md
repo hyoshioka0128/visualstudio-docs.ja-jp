@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを使用して Microsoft Windows Virtual Desktop を活用する方法について説明します
-ms.openlocfilehash: 9198f4180a2f98b89540f1eedc0dab4be59558ab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 2e7aad5d3f8214d39e5671e4bf5c4d5d357cd930
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537956"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671740"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>サブスクリプション内で Windows Virtual Desktop にアクセスする 
 Visual Studio のサブスクライバーは、Microsoft Windows Virtual Desktop サービスで Azure Dev/Test の個人クレジットを使用できるようになりました。  
@@ -44,7 +44,7 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 - Windows Virtual Desktop の[アプリ グループを管理する](/azure/virtual-desktop/manage-app-groups)
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 使用可能|  はい          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能|  はい          |
@@ -55,7 +55,7 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine、NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -65,6 +65,7 @@ Windows Virtual Desktop を使用するための前提条件の完全な一覧�
 ## <a name="see-also"></a>関連項目
 - [Azure ドキュメント](/azure/)
 - [Windows Virtual Desktop のドキュメント](/azure/virtual-desktop/)
+- [Visual Studio サブスクリプションのサポート](https://my.visualstudio.com/gethelp)
 
 ## <a name="next-steps"></a>次の手順
 -   Visual Studio サブスクリプションを購入する必要がある場合は、次のことを確認してください。
