@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/10/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Azure DevTest の個人クレジットの特典をアクティブ化する方法を説明します。
-ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335221"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672258"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションで Microsoft Azure を使用する
 Visual Studio サブスクライバーは、追加料金なしで Microsoft Azure を使うことができます。  [月単位の Azure DevTest の個人クレジット](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)で、Azure が開発/テストのための個人用サンドボックスになります。  仮想マシン、クラウド サービス、その他の Azure リソースをプロビジョニングできます。  クレジットの額はサブスクリプションのレベルによって異なります。
@@ -80,7 +80,7 @@ Visual Studio のサブスクリプションまたはクレジットは不要に
 |              Visual Studio Professional - 月間プラン              |        使用できません        |                                                             |
 |                    Visual Studio Test Pro                    |     50 ドルのクレジット/月      |                             はい                             |
 |                        MSDN Platforms                        |     100 ドルのクレジット/月     |                             はい                             |
-|               Visual Studio Enterprise - NFR\*               |     150 ドルのクレジット/月     |                             はい                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     150 ドルのクレジット/月     |                             はい                             |
 |                Visual Studio Enterprise - FTE                |     150 ドルのクレジット/月     |                             はい                             |
 |     Visual Studio Enterprise - Microsoft Partner Network     |     150 ドルのクレジット/月     |                             はい                             |
 |    Visual Studio Professional - Microsoft Partner Network    |        使用できません        |                                                             |
@@ -90,7 +90,7 @@ Visual Studio のサブスクリプションまたはクレジットは不要に
 |      Visual Studio Enterprise – MCT Software & Services      |     100 ドルのクレジット/月     |                             はい                             |
 | Visual Studio Enterprise – MCT Software & Services Developer |     150 ドルのクレジット/月     |                             はい                             |
 
-\* Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP) が含まれます。
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Most Valuable Professional (MVP)、Regional Director (RD)、Visual Studio Industry Partner (VSIP)。以下は含まれません: NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -113,7 +113,7 @@ A: 従業員が生成した知的財産で、その会社が提供するリソ�
 - Azure に関するヘルプが必要ですか。  以下のリソースを確認してください。
   - テクニカル サポート: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure のヒントとコツ](https://microsoft.github.io/AzureTipsAndTricks/ "Azure のヒントとコツ") 
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

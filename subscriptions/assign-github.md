@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: Visual Studio Subscription with GitHub Enterprise でのサブスクリプションの管理
-ms.openlocfilehash: 5837ec33e6f17f0970178a0f1b306960e9c42668
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: c66932d9f0da5e7dbca6dccb8efc911b1453bb8e
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249687"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757660"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>GitHub Enterprise を使用して Visual Studio サブスクリプションを管理する
 Microsoft と Enterprise Agreement (EA) を契約しているお客様は、Visual Studio Standard サブスクリプションと GitHub Enterprise が一体化した、新しいサブスクリプション オファーを購入できます。 この方法により、Visual Studio サブスクライバーは GitHub Enterprise を簡単かつ経済的に入手することができます。 
@@ -68,23 +68,20 @@ GitHub Enterprise サブスクリプションが購入されると、GitHub で�
 GitHub は、クラウド ベースの GitHub.com、またはオンプレミスの GitHub Enterprise Server のいずれかとして使用できます。  2 つのバージョンを管理するプロセスは異なります。  GitHub では、GitHub Enterprise サブスクリプションの管理に役立つ、さまざまなヘルプ トピックや管理者ガイドが提供されています。  選択したトピックへのリンクを次に示します。  
 
 ## <a name="support-resources"></a>サポート リソース
-
 - GitHub の割り当ての詳細については、[GitHub ドキュメント](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)を参照してください。
 - GitHub のさまざまなトピックに関する質問への回答については、[GitHub ヘルプ](https://help.github.com/en)で検索できます。
 - [GitHub Community Forum](https://github.community/) で、他の GitHub ユーザーからサポートを得ることができます。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの管理については、[Visual Studio サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 - GitHub Enterprise の[テクニカル サポート](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)を利用してください。   
 
 ## <a name="see-also"></a>関連項目
-
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
 
 ## <a name="next-steps"></a>次のステップ
-
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
 - [個別のサブスクリプションの割り当て](assign-license.md)
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)

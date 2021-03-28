@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる CODE Magazine 特典について説明します。
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672042"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションに含まれる CODE Magazine 特典
 
@@ -47,7 +47,7 @@ CODE Magazine の購読を設定するプロセスは簡単です。  以下の�
 購読注文が完了すると、確認ページが表示されます。このページには、受け取った号を確認するために使用できるリンク (https://codemag.com/my/fulfillment ) が表示されます。 
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール| 使用可能       |  いいえ          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL| 使用可能       |  いいえ          |
@@ -58,7 +58,7 @@ CODE Magazine の購読を設定するプロセスは簡単です。  以下の�
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft Partner Network (MPN)、Most Valuable Professional (MVP)、Regional Director (RD)、MCT Software & Services Developer、MCT Software & Services。  
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -74,7 +74,7 @@ A: CODE Magazine では、フルフィルメント、オファー選択、およ
 
 ## <a name="support-resources"></a>サポート リソース
 - CODE Magazine の購読について質問がある場合は、  メールまたは電話で [CODE Magazine](https://www.codemag.com/contact) に問い合わせるか、オンライン サポート リクエストを送信してください。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

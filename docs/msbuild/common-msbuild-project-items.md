@@ -17,22 +17,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ceb6b01f06964b8c79fa7357da6688e2e0229799
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963199"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672827"
 ---
 # <a name="common-msbuild-project-items"></a>MSBuild プロジェクトの共通項目
 
 MSBuild では、項目は 1 つ以上のファイルに対応する名前付きの参照です。 項目には、ファイル名、パス、バージョン番号などのメタデータが含まれます。 Visual Studio のすべてのプロジェクト タイプには、共通の項目がいくつかあります。 これらの項目は、*Microsoft.Build.CommonTypes.xsd* ファイルで定義されています。
 
-## <a name="common-items"></a>共通の項目
+この記事では、共通のプロジェクト項目をすべて一覧表示します。
 
-次に、プロジェクトの共通項目の一覧を示します。
-
-### <a name="reference"></a>関連項目
+## <a name="reference"></a>関連項目
 
 プロジェクト内のアセンブリ (マネージド) 参照を表します。
 
@@ -45,7 +43,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 |Aliases|省略可能な文字列。 参照の任意のエイリアスです。|
 |Private|省略可能なブール値。 参照を出力フォルダーにコピーする必要があるかどうかを指定します。 この属性は、Visual Studio IDE に存在する参照の **[ローカルにコピー]** プロパティに一致します。|
 
-### <a name="comreference"></a>COMReference
+## <a name="comreference"></a>COMReference
 
 プロジェクト内の COM (アンマネージ) コンポーネント参照を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
@@ -59,7 +57,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 |WrapperTool|省略可能な文字列。 コンポーネントで使用されるラッパー ツールの名前を指定します (たとえば、"tlbimp")。|
 |Isolated|省略可能なブール値。 コンポーネントが Reg-Free コンポーネントであるかどうかを指定します。|
 
-### <a name="comfilereference"></a>COMFileReference
+## <a name="comfilereference"></a>COMFileReference
 
 [ResolveComReference](resolvecomreference-task.md) ターゲットの `TypeLibFiles` パラメーターに渡されるタイプ ライブラリの一覧を表します。 この項目は .NET プロジェクトにのみ適用されます。
 
@@ -67,7 +65,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 |---------------|-----------------|
 |WrapperTool|省略可能な文字列。 コンポーネントで使用されるラッパー ツールの名前を指定します (たとえば、"tlbimp")。|
 
-### <a name="nativereference"></a>NativeReference
+## <a name="nativereference"></a>NativeReference
 
 ネイティブ マニフェスト ファイル、またはこのようなファイルへの参照を表します。
 
@@ -76,7 +74,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 |名前|必須の文字列。 マニフェスト ファイルの基本名を指定します。|
 |HintPath|必須の文字列。 マニフェスト ファイルの相対パスを指定します。|
 
-### <a name="projectreference"></a>ProjectReference
+## <a name="projectreference"></a>ProjectReference
 
 別のプロジェクトへの参照を表します。 `ProjectReference` 項目は `ResolveProjectReferences` ターゲットによって[参照](#reference)項目に変換されるため、参照の有効なメタデータは、変換処理で上書きされない場合、`ProjectReference`で有効になることがあります。
 
@@ -93,7 +91,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 |SkipGetTargetFrameworkProperties|省略可能なブール値。 `true` の場合、最も互換性のある `TargetFramework` 値をネゴシエートせずに参照プロジェクトをビルドします。 既定値は `false` です。|
 |対象サーバー|`string[]` で、省略可能です。 ビルドする参照プロジェクトのターゲットをセミコロンで区切って一覧にしたもの。 既定は `$(ProjectReferenceBuildTargets)` の値であり、指定しないと空になり、既定のターゲットを示します。|
 
-### <a name="compile"></a>Compile
+## <a name="compile"></a>Compile
 
 コンパイラのソース ファイルを表します。
 
@@ -105,7 +103,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="embeddedresource"></a>EmbeddedResource
+## <a name="embeddedresource"></a>EmbeddedResource
 
 生成されるアセンブリに埋め込まれるリソースを表します。
 
@@ -120,7 +118,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 | LogicalName | 必須の文字列。 埋め込まれるリソースの論理名です。 |
 
-### <a name="content"></a>Content
+## <a name="content"></a>Content
 
 プロジェクトにコンパイルはされないものの、プロジェクトと共に埋め込まれるか発行されることのあるファイルを表します。
 
@@ -136,7 +134,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="none"></a>None
+## <a name="none"></a>None
 
 ビルド プロセスでは使用しないことが推奨されるファイルを表します。
 
@@ -150,7 +148,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 | Visible | 省略可能なブール値。 Visual Studio の **ソリューション エクスプローラー** にファイルを表示するかどうかを示します。 |
 | CopyToOutputDirectory | 省略可能な文字列。 出力ディレクトリにファイルをコピーするかどうかを判断します。 値は次のとおりです。<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata
+## <a name="assemblymetadata"></a>AssemblyMetadata
 
 `[AssemblyMetadata(key, value)]` として生成されるアセンブリ属性を表します。
 
@@ -162,7 +160,7 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 > [!NOTE]
 > この項目は、SDK for .NET 5 (および .NET Core) 以降のバージョンを使用するプロジェクトに適用されます。
 
-### <a name="internalsvisibleto"></a>InternalsVisibleTo
+## <a name="internalsvisibleto"></a>InternalsVisibleTo
 
 `[InternalsVisibleTo(..)]` アセンブリ属性として出力されるアセンブリを指定します。
 
@@ -174,15 +172,15 @@ MSBuild では、項目は 1 つ以上のファイルに対応する名前付き
 > [!NOTE]
 > この項目は、SDK for .NET 5 (および .NET Core) 以降のバージョンを使用するプロジェクトに適用されます。
 
-### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
+## <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
 ビルドの基本アプリケーション マニフェストを表し、ClickOnce 配置セキュリティ情報を含みます。
 
-### <a name="codeanalysisimport"></a>CodeAnalysisImport
+## <a name="codeanalysisimport"></a>CodeAnalysisImport
 
 インポートする FxCop プロジェクトを表します。
 
-### <a name="import"></a>インポート
+## <a name="import"></a>インポート
 
 Visual Basic コンパイラによってその名前空間がインポートされるアセンブリを表します。
 

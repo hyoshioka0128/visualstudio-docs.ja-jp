@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 'Visual Studio のサブスクリプション: サブスクライバーに Hotmail や Gmail のアドレスが表示される理由'
-ms.openlocfilehash: fda7dab50c2151049e0feffa50609bf4c38e38cc
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 99c22d74a9a6fb57e79f699e548de928ef1ebcb6
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189044"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777001"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Visual Studio のサブスクリプション: サブスクライバーに個人用アカウントが表示される理由
 ボリューム ライセンス サービス センター (VLSC) から Visual Studio の新しい[サブスクリプション管理ポータル](https://manage.visualstudio.com)に移行した後、一部のサブスクライバーの "サインイン用のメール アドレス" として、Hotmail や Outlook などの個人用メール アドレスが表示され、管理者が驚くことがありました。  
@@ -49,6 +49,9 @@ ms.locfileid: "96189044"
 
 > [!NOTE]
 > サインイン電子メール アドレスを編集した場合、これによって更新されるのは、サブスクライバーが https://my.visualstudio.com 上で自分のサブスクリプションにサインインするときに使用する電子メールのみとなります。 他の電子メール アドレスを使用して Azure や Pluralsight などのベネフィットを既にアクティブ化しているサブスクライバーは、該当する電子メール アドレスを引き続き使用してそれらにアクセスする必要があります。 彼らが新しいベネフィットにアクセスする場合は、新しい電子メール アドレスを使用する必要があります。 
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの管理については、[Visual Studio サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 別名またはフレンドリ名の使用でサインインに失敗する場合がある
-ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467610"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757699"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>別名を使用すると、Visual Studio サブスクリプションへのサインインが失敗する場合がある
 サインインに使用されるアカウントの種類によっては、[https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) にサインインするときに利用可能なサブスクリプションが正しく表示されない場合があります。 考えられる原因の 1 つは、サブスクリプションが割り当てられているサインイン ID の代わりに "別名" または "表示名" を使用していることです。 これは "別名定義" と呼ばれます。
@@ -91,14 +91,16 @@ Visual Studio プラットフォームでは、サブスクリプションの詳
 > [!NOTE]
 > 個別変更および一括変更のどちらの場合も、サブスクライバーは、サインイン電子メール アドレスが変更されており、更新された電子メール アドレスを使用してサインインする必要があることを示した電子メールを受け取ります。 また、サブスクライバーが以前に他のサインイン アドレス下で特典を有効にした場合は、該当の他のサインイン アドレスを引き続き使用してアクセスする必要があることにも、注意してください。  
 
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの管理については、[Visual Studio サブスクリプション サポート](https://aka.ms/vsadminhelp)にお問い合わせください。
+
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)
 - [Azure DevOps ドキュメント](/azure/devops/)
 - [Azure ドキュメント](/azure/)
 - [Microsoft 365 ドキュメント](/microsoft-365/)
 
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 Visual Studio サブスクリプションの管理に関する詳細情報をご覧ください。
 - [個別のサブスクリプションの割り当て](assign-license.md)
 - [複数のサブスクリプションを管理する](assign-license-bulk.md)

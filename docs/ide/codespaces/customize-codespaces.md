@@ -11,14 +11,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e23ca3255761f4d93f89251d00c12c14aecf7b9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971155"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672352"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>codespace をカスタマイズする方法 (プレビュー)
+
+> [!Important] 
+> 2021 年 4 月 12 日以後は、Visual Studio 2019 から GitHub Codespaces への接続はサポートされなくなります。このプライベート プレビューは終了しています。 Microsoft では、クラウドを利用した内部ループと、さまざまな Visual Studio ワークロードに合わせて最適化された VDI ソリューションの進化し続けるエクスペリエンスに焦点を合わせています。 今後のプレビューとロードマップの情報のために、Visual Studio の[開発者コミュニティ フォーラム](https://developercommunity.visualstudio.com/home)に参加することをお勧めします。 
 
 GitHub Codespaces では、クラウド内に完全な開発環境を提供しています。 Visual Studio 2019 を使用した Windows ベースの開発の場合、GitHub Codespaces の既定のインスタンスを出発点として使うことをお勧めしますが、特定のプロジェクトに合わせて環境をカスタマイズすることもできます。
 

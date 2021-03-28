@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942517"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806057"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>チュートリアル: Visual Studio での Flask Web フレームワークの概要
 
@@ -24,16 +24,27 @@ ms.locfileid: "99942517"
 
 Flask は、フォームの検証、データベースの抽象化、認証などの機能を直接提供しないため、"マイクロ" フレームワークと呼ばれます。 このような機能は、Flask "*拡張機能*" と呼ばれる特別な Python パッケージによって代わりに提供されます。 拡張機能は Flask とシームレスに統合するので、Flask 自体の一部であるかのように見えます。 たとえば、Flask 自体ではページ テンプレート エンジンは提供されません。 テンプレートは、このチュートリアルで紹介するように Jinja や Jade などの拡張機能によって提供されます。
 
+::: moniker range="vs-2017"
 このチュートリアルでは、以下の内容を学習します。
-
-> [!div class="checklist"]
-> - "空の Flask Web プロジェクト" テンプレートを使用して Git リポジトリに基本的な Flask プロジェクトを作成する (手順 1)
-> - 1 つのページがある Flask アプリを作成し、テンプレートを使用してそのページをレンダリングする (手順 2)
-> - 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する (手順 3)
-> - Flask Web プロジェクト テンプレートを使用して、複数のページを持つ応答性に優れたデザインのアプリを作成する (手順 4)
-> - Polls Flask Web プロジェクト テンプレートを使用して、さまざまなストレージ オプション (Azure Storage、MongoDB、またはメモリ) を使用するポーリング アプリを作成する
+- "空の Flask Web プロジェクト" テンプレートを使用して Git リポジトリに基本的な Flask プロジェクトを作成する (手順 1)
+- 1 つのページがある Flask アプリを作成し、テンプレートを使用してそのページをレンダリングする (手順 2)
+- 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する (手順 3)
+- Flask Web プロジェクト テンプレートを使用して、複数のページを持つ応答性に優れたデザインのアプリを作成する (手順 4)
+- Polls Flask Web プロジェクト テンプレートを使用して、さまざまなストレージ オプション (Azure Storage、MongoDB、またはメモリ) を使用するポーリング アプリを作成する
 
 一連の手順に従って、3 つの独立したプロジェクトを含む 1 つの Visual Studio ソリューションを作成します。 Visual Studio に含まれる異なる Flask プロジェクト テンプレートを使用して、プロジェクトを作成します。 同じソリューション内にプロジェクトを保持することで、異なるファイル間を簡単に切り替えて比較できます。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+このチュートリアルでは、以下の内容を学習します。
+- "空の Flask Web プロジェクト" テンプレートを使用して Git リポジトリに基本的な Flask プロジェクトを作成する (手順 1)
+- 1 つのページがある Flask アプリを作成し、テンプレートを使用してそのページをレンダリングする (手順 2)
+- 静的ファイルを提供し、ページを追加し、テンプレート継承を使用する (手順 3)
+- Flask Web プロジェクト テンプレートを使用して、複数のページを持つ応答性に優れたデザインのアプリを作成する (手順 4)
+
+一連の手順に従って、2 つの独立したプロジェクトを含む 1 つの Visual Studio ソリューションを作成します。 Visual Studio に含まれる異なる Flask プロジェクト テンプレートを使用して、プロジェクトを作成します。 同じソリューション内にプロジェクトを保持することで、異なるファイル間を簡単に切り替えて比較できます。
+::: moniker-end
 
 > [!Note]
 > [Flask クイック スタート](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)とは異なり、このチュートリアルでは、Flask の機能についていっそう詳しく説明すると共に、独自のプロジェクトの広範な起点となるさまざまな Flask プロジェクト テンプレートの使用方法を示します。 たとえば、プロジェクトを作成すると、プロジェクト テンプレートによって Flask パッケージが自動的にインストールされます。クイック スタートで示されているように手動でパッケージをインストールする必要はありません。

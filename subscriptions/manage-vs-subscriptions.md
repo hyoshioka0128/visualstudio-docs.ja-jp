@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションを最大限に活用する方法を説明します
-ms.openlocfilehash: a865bfa5cf7d55504e022efb1b134bddde7d231c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904682"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776833"
 ---
 # <a name="managing-subscriptions"></a>サブスクリプションを管理する
 
@@ -112,6 +112,9 @@ A: これは購入されたチャネルによって異なります。Microsoft �
 > [!NOTE]
 > - Microsoft アカウントまたは Azure AD を閉じることを選択した場合、個人データは直ちに匿名化されます。
 > - アクティブなサブスクリプションがある場合、すべての個人データが完全に削除されることはありません。
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: d1257931-392a-4a65-bf26-177737505122
-ms.date: 06/24/2020
+ms.date: 03/21/2021
 ms.topic: how-to
 description: Microsoft 365 Apps for enterprise に関する説明を読み、インストールする
-ms.openlocfilehash: d23f8cccd284972d05d7085aea7e0b1cab0f275d
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: e1d629aae2d3c9e5d906a5593c287bd0b3250446
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537826"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776715"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Microsoft 365 Apps for enterprise
 Microsoft 365 Apps for enterprise (以前の Office 365 Pro Plus) は、一部の Visual Studio サブスクリプションで利用できます。 
@@ -34,7 +34,7 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 Apps for enterprise の顧客情報](_img/microsoft-365-apps-for-enterprise/get-to-know-you.png "連絡先情報を入力する")
 
-1. [ユーザー ID の作成] ダイアログでテナントのユーザー名とパスワードを作成し、 **[Create my acccount]\(アカウントの作成\)** を選択します。
+1. [ユーザー ID の作成] ダイアログでテナントのユーザー名とパスワードを作成し、 **[Create my account]\(アカウントの作成\)** を選択します。
    > [!div class="mx-imgBorder"]
    > ![Microsoft 365 Apps for enterprise のユーザー ID 作成](_img/microsoft-365-apps-for-enterprise/create-your-user-id.png "ユーザー ID とパスワードを作成する")
 
@@ -53,7 +53,7 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール| 使用可能       |  はい          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能       |  はい          |
@@ -74,7 +74,7 @@ Microsoft 365 Apps for enterprise サブスクリプションをアクティブ�
 
 ## <a name="support-resources"></a>サポート リソース
 - Microsoft 365 Apps for enterprise のコンポーネントのテクニカル サポートについては、 https://support.microsoft.com/allproducts にアクセスして製品を選択してください。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

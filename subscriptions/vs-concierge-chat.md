@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: dcd99e32-c9f3-4e19-8428-319dfa220463
-ms.date: 12/02/2020
+ms.date: 03/18/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれるコンシェルジェ チャット特典について説明します。
-ms.openlocfilehash: 4f5f188ee7b6662549e5ade80a97c57f24bce64c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 468433ba6cc378fd422f1fee6c806c6a701a9e65
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538099"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672029"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションのコンシェルジェ チャット
 コンシェルジェ チャット サービスでは、製品情報やテクニカル ドキュメントの検索のサポートと、Visual Studio サブスクリプション特典の使用におけるヘルプを提供します。
@@ -36,7 +36,7 @@ ms.locfileid: "96538099"
     > ![コンシェルジェ チャット セッション](_img/vs-concierge-chat/vs-concierge-chat-session.png "エージェントがセッションに参加すると、チャット セッション ウィンドウが表示されます。")
 
 ## <a name="eligibility"></a>特典を受ける条件
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise | VL| 使用可能       |  はい          |
@@ -46,7 +46,7 @@ ms.locfileid: "96538099"
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能                                              |  はい          |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark が含まれます除外:FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Imagine は含まれません。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark。以下は含まれません: FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Imagine。以下は含まれません: NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -58,7 +58,7 @@ ms.locfileid: "96538099"
    A: アカウント、請求およびサブスクリプションの問題に関するアシスタンスは、複数の言語で使用できます。  製品情報とテクニカル ドキュメントの検索に関するアシスタンスは、英語で使用できます。
 
 ## <a name="support-resources"></a>サポート リソース
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

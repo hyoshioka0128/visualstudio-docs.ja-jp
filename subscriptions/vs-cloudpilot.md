@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 一部の Visual Studio サブスクリプションで使用可能な CloudPilot 特典について説明します
-ms.openlocfilehash: 4d9b7bea4b2165b8efc9f57396b078c42a5fc8eb
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: 466358af00fe0f174043989c6eb54e976d98d3be
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473362"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672068"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの CloudPilot 特典
 いくつかの簡単な手順で、アプリを Microsoft Azure に移行します。 数分で、Containers、VM、App Services、SQL Azure、SQL MI への正常な移行のためにコード変更が必要なすべてのコード行が識別されます。 次に、ASR、DMA、および DMS を活用するウィザードを使用して、アプリを Azure に移行します。
@@ -57,7 +57,7 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャンネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、 | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise   | VL | 2 つのライセンス、90 日間、無制限のスキャン       |  いいえ。  新しいサブスクライバーのみが使用できます          |
@@ -68,7 +68,7 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |使用できません  | N/A |
 | Visual Studio Enterprise、Visual Studio Professional (月間クラウド) | Azure | 使用できません | N/A |
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、FTE、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、Visual Studio Industry Partner (VSIP)、Microsoft Certified Trainer、BizSpark、Imagine、NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -79,8 +79,6 @@ UnifyCloud の CloudPilot は、開発者がアプリケーションを Azure �
 - CloudPilot の使用に関するヘルプが必要ですか。  以下のリソースを確認してください。
   - UnifyCloud 製品に関するご質問は、[UnifyCloud にお問い合わせください](https://www.unifycloud.com/contacts/)。
   - [CloudPilot ユーザー マニュアル](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-  - [サポート要求を送信する](https://support.datacamp.com/hc/requests/new)
-
 - Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://aka.ms/vssubscriberhelp)をご覧ください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 

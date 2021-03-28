@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: Visual Studio サブスクリプションで、プロダクト キーを取得して管理する方法を説明します。
-ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: ad9672d089c6e50aa879b38841c468f235347963
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904002"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776767"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションでのプロダクト キーの使用
 
@@ -78,6 +78,9 @@ Microsoft は、Visual Studio サブスクリプション プログラムの健�
 |
 
 製品のダウンロード ページからキーを要求できます。または、[[プロダクト キー]](https://my.visualstudio.com/productkeys) ページで必要なキーを検索することができます。
+
+## <a name="support-resources"></a>サポート リソース
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://aka.ms/vssubscriberhelp)にお問い合わせください。
 
 ## <a name="see-also"></a>関連項目
 - [Visual Studio ドキュメント](/visualstudio/)

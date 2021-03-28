@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Pluralsight トレーニング サブスクリプションについて説明します。
-ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
-ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
+ms.openlocfilehash: 6d12fcf49184d8e8293d4f4e3a3c552e859d3afe
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100542991"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671701"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Pluralsight トレーニング特典
 
@@ -70,19 +70,19 @@ Pluralsight サブスクリプションの有効期限が切れると、状態�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-|                          サブスクリプション レベル                          |     チャネル      |    特長    |   更新可能かどうか   |
+|                          サブスクリプション レベル                          |     チャンネル      |    長所    |   更新可能かどうか   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | VL、Azure、リテール |   6 か月    | はい<sup>2</sup> |
 |          Visual Studio Enterprise Subscription with GitHub Enterprise          | VL  |   6 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional (Standard)          | VL、Azure、リテール |   3 か月    | はい<sup>2</sup> |
 |         Visual Studio Professional Subscription with GitHub Enterprise          | VL  |   3 か月    | はい<sup>2</sup> |
-|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用不可    | NA  |
-|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用不可    | NA  |
-| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用不可 |       N/A       |
-|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       N/A       |
+|              Visual Studio Test Professional (標準)              |    VL、リテール     |   使用できません    | NA  |
+|                      MSDN Platforms (標準)                       |    VL、リテール     |   使用できません    | NA  |
+| Visual Studio Enterprise、Visual Studio Professional (月間クラウド) |       Azure       | 使用できません |       N/A       |
+|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      プログラム      | 使用できません |       NA       |
 ||
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD)、Microsoft Partner Network (MPN)、FTE、Imagine。以下は含まれません: NFR Basic。*
 
 <sup>2</sup> *選択した Visual Studio サブスクリプションの Pluralsight 特典は、ご利用のサブスクリプションが更新されると、更新されます。たとえば、毎年更新する年間サブスクリプションをお持ちの場合、毎年更新すると特典を利用できるようになります。複数年のサブスクリプションをお持ちの場合、Pluralsight 特典はサブスクリプションの有効期間中に 1 回使用できます。複数年のサブスクリプションを更新した場合、更新後に特典が再度利用できるようになります。*
 
@@ -110,7 +110,7 @@ A: Pluralsight 無料サブスクリプションの終了時、Pluralsight か�
 
 ## <a name="support-resources"></a>サポート リソース
 - [Pluralsight ヘルプ センター](https://help.pluralsight.com/help)は、Pluralsight コースの取得や Pluralsight Web サイトの使用をサポートします。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: Visual Studio サブスクリプションに含まれる Visual Studio App Center 特典について説明します。
-ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85d8a8aeda72e9a5c8fc94e98d1cbec22af32221
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537774"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672710"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Visual Studio App Center
 
@@ -40,7 +40,7 @@ Visual Studio App Center を開始するのは簡単です。
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard、月間クラウド)   | VL、Azure、リテール、NFR<sup>1</sup> | Included       |  はい          |
 | Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | Included       |  はい          |
@@ -50,7 +50,7 @@ Visual Studio App Center を開始するのは簡単です。
 | MSDN Platforms (標準)                                          | VL、リテール                                              | Included                                                            |はい |
 ||
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft Partner Network (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、FTE、Visual Studio Industry Partner (VSIP)、Imagine、Microsoft Partner Network (MPN)、MCT Software & Services、MCT Software & Services Developer、BizSpark、Most Valuable Professional (MVP)、Regional Director (RD)。以下は含まれません: NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -71,7 +71,7 @@ A: App Center では、一部の古いブラウザーでは提供されていな
 - App Center に関するヘルプが必要ですか?
   - [App Center のヘルプ センター](https://intercom.help/appcenter/)で、アドバイスと回答チームが得られます。
   - 完全な [App Center のドキュメント](/appcenter/)を確認してください。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目

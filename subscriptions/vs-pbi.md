@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 一部の Visual Studio サブスクリプションに含まれる Power BI Pro サブスクリプションについて説明します。
-ms.openlocfilehash: 6d64c9e5d15e24dcf53dd5b45261305dffb43353
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 1801ed8deae3294837078401420e16efdc016979
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538073"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672905"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio サブスクリプションの Power BI Pro
 
@@ -61,18 +61,18 @@ Power BI Pro を使うには、アカウントを設定するか、既存のア�
 
 ## <a name="eligibility"></a>特典を受ける条件
 
-| サブスクリプション レベル                                                 |     チャネル                                            | 特長                                                          | 更新可能かどうか    |
+| サブスクリプション レベル                                                 |     チャンネル                                            | 長所                                                          | 更新可能かどうか    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL、Azure、リテール、一部の NFR<sup>1</sup> | 使用可能       |  はい|
 | Visual Studio Enterprise Subscription with GitHub Enterprise  | VL | 使用可能       |  はい|
 | Visual Studio Professional (Standard、月間クラウド) | VL、Azure、リテール                                       | 使用できません                                                            |N/A         |
 | Visual Studio Professional Subscription with GitHub Enterprise | VL                                      | 使用できません                                                            |N/A         |
-| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                            |N/A         |
+| Visual Studio Test Professional (標準)                         | VL、リテール                                              | 使用できません                                                            |NA         |
 | MSDN Platforms (標準)                                          | VL、リテール                                              | 使用可能       |  はい|
-| Visual Studio Enterprise (月間クラウド) | Azure                                       | 使用できません                                  |N/A|
+| Visual Studio Enterprise (月間クラウド) | Azure                                       | 使用できません                                  |NA|
 ||
 
-<sup>1</sup>  *以下が含まれます:Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD) が含まれます。除外:Microsoft Partner Network (MPN)、FTE、Imagine は含まれません。*
+<sup>1</sup>  *以下が含まれます: Not for Resale (NFR)、Visual Studio Industry Partner (VSIP)、BizSpark、MCT Software & Services Developer、MCT Software & Service、Most Valuable Professional (MVP)、Regional Director (RD)。以下は含まれません: Microsoft Partner Network (MPN)、FTE、Imagine、NFR Basic。*
 
 > [!NOTE]
 > Microsoft では、クラウド サブスクリプションの Visual Studio Professional 年間サブスクリプションおよび Visual Studio Enterprise 年間サブスクリプションが提供されなくなりました。 サブスクリプションの更新、増減、キャンセルに関する既存のお客様のエクスペリエンスと機能については変更はありません。 新規のお客様は、[https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) に移動し、Visual Studio のさまざまな購入オプションを調べることをお勧めします。
@@ -110,7 +110,7 @@ A: いいえ。  Power BI Pro 特典は、政府機関向けのテナントに�
   - [オンライン ドキュメント](/power-bi/)を参照してください。
   - サインアップ時の問題ですか。  「[個人として Power BI にサインアップする](/power-bi/service-self-service-signup-for-power-bi)」を参照してください。
   - よくある問題を調べ、コミュニティからサポートを受けるか、[サポート ページ](https://powerbi.microsoft.com/support/)でサポート チケットを送信してください。
-- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、Visual Studio [サブスクリプション サポート](https://visualstudio.microsoft.com/subscriptions/support/)にお問い合わせください。
+- Visual Studio サブスクリプションの販売、サブスクリプション、アカウント、課金のサポートについては、[Visual Studio サブスクリプション サポート](https://my.visualstudio.com/gethelp)にお問い合わせください。
 - Visual Studio IDE、Azure DevOps Services、またはその他の Visual Studio の製品やサービスに関する質問がありますか。  [Visual Studio のサポート](https://visualstudio.microsoft.com/support/)にアクセスしてください。
 
 ## <a name="see-also"></a>関連項目
