@@ -62,6 +62,10 @@
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: 企業に展開する
           items:
+            - name: 管理者の更新を適用する
+              href: install/applying-administrator-updates.md
+            - name: 管理者の更新を有効にする
+              href: install/enabling-administrator-updates.md
             - name: 応答ファイルで Visual Studio インストールを自動化する
               href: install/automated-installation-with-response-file.md
             - name: Visual Studio の展開時にプロダクト キーを自動的に適用する
