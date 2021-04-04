@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbffa062e1115264f9496081cdcf63d17d2a36c7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837815"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217490"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>ClickOnce アプリケーションにおけるローカル データおよびリモート データへのアクセス
 ほとんどのアプリケーションはデータを使用または作成します。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] には、データをローカルとリモートの両方で読み書きするための各種のオプションがあります。
@@ -55,8 +55,8 @@ ms.locfileid: "99837815"
 
  アプリケーションにこれらのアクセス許可が与えられると、アプリケーションは <xref:System.IO>に属する各クラスのメソッド呼び出しを使用して、データ ディレクトリにアクセスできます。 Windows フォーム [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] アプリケーション内のデータ ディレクトリのパスを取得するには、 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> の <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> プロパティで定義された <xref:System.Deployment.Application.ApplicationDeployment>プロパティを使用できます。 これは、データにアクセスする最も便利な方法として推奨されています。 次のコード例では、ご利用の配置にデータ ファイルとして組み込んだ *CSV.txt* というテキスト ファイルに対してこの操作を実行する方法を示します。
 
- [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
- [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
+ :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs" id="Snippet1":::
+ :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb" id="Snippet1":::
 
  配置内のファイルをデータ ファイルとしてマークする方法の詳細については、「 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)」を参照してください。
 

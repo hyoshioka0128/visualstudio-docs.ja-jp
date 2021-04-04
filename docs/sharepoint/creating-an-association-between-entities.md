@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7efd3d622e40c21574c0aa9e39263d53979706ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d40c4e5c5d61b9da3cdbdd3fe96f45c4a0cff929
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949195"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213967"
 ---
 # <a name="create-an-association-between-entities"></a>エンティティ間の関連付けを作成する
   関連付けを作成することによって、Business Data Connectivity (BDC) モデルのエンティティ間のリレーションシップを定義できます。 Visual Studio では、モデルのコンシューマーに各アソシエーションに関する情報を提供するメソッドが生成されます。 これらのメソッドは、SharePoint web パーツ、リスト、またはカスタムアプリケーションで、ユーザーインターフェイス (UI) にデータリレーションシップを表示するために使用できます。
@@ -53,13 +53,13 @@ ms.locfileid: "99949195"
 
  変換先エンティティのコレクションを返すソースエンティティの Association Navigator メソッドにコードを追加します。 次の例では、連絡先の販売注文を返します。
 
- [!code-csharp[SP_BDC#7](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#7)]
- [!code-vb[SP_BDC#7](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#7)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet7":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet7":::
 
  ソースエンティティを返す宛先エンティティの Association Navigator メソッドにコードを追加します。 次の例では、販売注文に関連付けられている連絡先を返します。
 
- [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
- [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs" id="Snippet8":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet8":::
 
 ### <a name="foreign-keyless-association"></a>外部キーなしの関連付け
  識別子をフィールド型記述子にマップせずにアソシエーションを作成できます。 ソースエンティティに宛先エンティティとの直接的な関係がない場合は、この種類の関連付けを作成します。 たとえば、テーブルには、 `SalesOrderDetail` テーブル内の主キーにマップされる外部キーがありません `Contact` 。
@@ -70,13 +70,13 @@ ms.locfileid: "99949195"
 
  次の例では、テーブルを結合して、すべての販売注文の詳細を返します。
 
- [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
- [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet9":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet9":::
 
  エンティティのアソシエーションナビゲーションメソッドで、 `SalesOrderDetail` 関連するを返し `Contact` ます。 次に例を示します。
-
- [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
- [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
+                                                                            
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs" id="Snippet10":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet10":::
 
 ## <a name="see-also"></a>関連項目
 - [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4983930a7c16edef826a5912abf0870598b1f906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e38f1d18736c18f5273eb2e202de52af81e73f85
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943797"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217451"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>方法: サーバーエクスプローラーで SharePoint ノードを拡張する
   **サーバーエクスプローラー** の [ **SharePoint 接続**] ノードの下でノードを拡張できます。 これは、新しい子ノード、ショートカットメニュー項目、またはプロパティを既存のノードに追加する場合に便利です。 詳細については、「[サーバー エクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
@@ -64,8 +64,8 @@ ms.locfileid: "99943797"
 
 - **ContosoExampleProperty** という名前のカスタムプロパティを、 **Body** という名前のフィールドを表す各ノードに追加する拡張機能。
 
-  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
-  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs" id="Snippet9":::
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb" id="Snippet9":::
 
   この拡張機能により、編集可能な文字列プロパティがノードに追加されます。 SharePoint サーバーから読み取り専用のデータを表示するカスタムプロパティを作成することもできます。 これを行う方法を示す例については、「 [チュートリアル: web パーツを表示するためのサーバーエクスプローラーの拡張](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)」を参照してください。
 

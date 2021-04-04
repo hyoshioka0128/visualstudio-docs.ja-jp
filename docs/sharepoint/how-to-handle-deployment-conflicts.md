@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b09db3fecde5d4b87b24963930b2783b0c68052c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885613"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213980"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>方法: 配置の競合を処理する
   SharePoint プロジェクト項目の配置の競合を処理する独自のコードを指定できます。 たとえば、現在のプロジェクト項目のファイルが配置場所に既に存在するかどうかを判断し、現在のプロジェクト項目が配置される前に配置済みのファイルを削除することができます。 配置の競合の詳細については、「 [SharePoint のパッケージ化と配置の拡張](../sharepoint/extending-sharepoint-packaging-and-deployment.md)」を参照してください。
@@ -44,8 +44,8 @@ ms.locfileid: "99885613"
 
  わかりやすくするために、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> この例のイベントハンドラーでは、配置の競合が存在することを前提としています (つまり、常に新しいオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> `Resolve` ます)。メソッドは、競合が解決されたことを示すために **true** を返します。 実際のシナリオでは、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> イベントハンドラーは、現在のプロジェクト項目内のファイルと配置場所のファイルの間に競合があるかどうかを最初に判断し、競合が存在する場合にのみオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> ます。 たとえば、イベントハンドラーのプロパティを使用して `e.ProjectItem.Files` プロジェクト項目内のファイルを分析し、SharePoint コマンドを呼び出して配置場所でファイルを分析することができます。 同様に、実際のシナリオでは、メソッドは sharepoint `Resolve` コマンドを呼び出して sharepoint サイトの競合を解決することがあります。 SharePoint コマンドの作成の詳細については、「 [方法: sharepoint コマンドを作成](../sharepoint/how-to-create-a-sharepoint-command.md)する」を参照してください。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のアセンブリへの参照が必要です。

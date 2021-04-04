@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d4baeb8a93a1bb5e70f3ee6266bb1a832a2a3fe
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 743759896bf1de104825825d450be081ab2cc666
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080412"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217425"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>チュートリアル: C++ を使用して SDK を作成する
 このチュートリアルでは、ネイティブ C++ math library SDK を作成し、SDK を Visual Studio 拡張機能 (VSIX) としてパッケージ化して、それを使用してアプリを作成する方法について説明します。 このチュートリアルは、次の手順に分かれています。
@@ -37,11 +37,11 @@ ms.locfileid: "105080412"
 
 3. 次のコードに一致するように *NativeMath* を更新します。
 
-     [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.h" id="Snippet1":::
 
 4. 次のコードに一致するように *NativeMath* を更新します。
 
-     [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp" id="Snippet2":::
 
 5. **ソリューションエクスプローラー** で、**ソリューション ' NativeMath '** のショートカットメニューを開き、[新しいプロジェクトの **追加**] を選択し  >  ます。
 
@@ -49,11 +49,11 @@ ms.locfileid: "105080412"
 
 7. 次のコードに一致するように *Class1* を更新します。
 
-     [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.h" id="Snippet3":::
 
 8. 次のコードに一致するように *Class1* を更新します。
 
-     [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp" id="Snippet4":::
 
 9. メニュー バーで、 **[ビルド]**  >  **[ソリューションのビルド]** の順にクリックします。
 
@@ -67,7 +67,8 @@ ms.locfileid: "105080412"
 
 4. 次の XML を使用して、既存の XML を置き換えます。
 
-    [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
+
 
 5. **ソリューションエクスプローラー** で、 **nativem、vsix** プロジェクトのショートカットメニューを開き、[新しい項目の **追加**] を選択し  >  ます。
 
@@ -75,7 +76,7 @@ ms.locfileid: "105080412"
 
 7. ファイルの内容を置き換えるには、次の XML を使用します。
 
-     [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml" id="Snippet5":::
 
 8. **ソリューションエクスプローラー** の [ **Nativem] vsix** プロジェクトで、次のフォルダー構造を作成します。
 
@@ -108,8 +109,21 @@ ms.locfileid: "105080412"
      *$ \Debug\NativeMathWRT\NativeMathWRT.pri $SolutionRoot* コピーし、 *$SolutionRoot $ \NativeMathVSIX\References\CommonConfiguration\Neutral* フォルダーに貼り付けます。
 
 11. *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\* フォルダーに、 *nativem* という名前のテキストファイルを作成し、次の内容を貼り付けます。
-
-    [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
+   
+    ```xml
+    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <PropertyGroup>
+        <NativeMathSDKPath>$(FrameworkSDKRoot)\..\..\UAP\v0.8.0.0\ExtensionSDKs\NativeMathSDK\1.0\</NativeMathSDKPath>
+        <IncludePath>$(NativeMathSDKPath)DesignTime\CommonConfiguration\Neutral\Include;$(IncludePath)</IncludePath>
+        <LibraryPath>$(NativeMathSDKPath)DesignTime\Debug\x86;$(LibraryPath)</LibraryPath>
+      </PropertyGroup>
+      <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+         <Link>
+           <AdditionalDependencies>NativeMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+         </Link>
+      </ItemDefinitionGroup>
+    </Project>
+    ```
 
 12. メニューバーで、[   >  **他のウィンドウの** プロパティウィンドウを表示] を選択し  >  ます (キーボード: **F4** キーを押します)。
 
@@ -155,15 +169,15 @@ ms.locfileid: "105080412"
 
 6. **ソリューションエクスプローラー** で **mainpage.xaml** を開き、次の xaml を使用してそのコンテンツを置き換えます。
 
-    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml" id="Snippet1":::
 
 7. 次のコードに一致するように *mainpage.xaml* を更新します。
 
-    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h" id="Snippet2":::
 
 8. 次のコードに一致するように *mainpage.xaml* を更新します。
 
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_10.cpp)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.cpp" id="Snippet3":::
 
 9. F5 キーを **押し** てアプリを実行します。
 
