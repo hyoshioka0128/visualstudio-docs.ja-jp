@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949130"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213915"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Web パーツまたはアプリケーション ページの再利用できるコントロールを作成する
   Visual Studio では、SharePoint で実行されるアプリケーション ページと Web パーツで使用できる、再利用可能なカスタム コントロールを作成できます。 これらのコントロールは、ユーザー コントロールと呼ばれます。 ユーザー コントロールは、ASP.NET Web ページと同様に動作する一種の複合コントロールです。既存の Web サーバー コントロールやマークアップをユーザー コントロールに追加し、コントロールのプロパティとメソッドを定義することができます。 その後、それらを ASP.NET Web ページに埋め込むと、1 つの単位として機能します。
@@ -47,8 +47,8 @@ ms.locfileid: "99949130"
 
  Web パーツにユーザー コントロールを追加するには、Web パーツ コード ファイルの Web パーツ <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> コレクションにユーザー コントロールを追加します。 次の例では、Web パーツの <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> コレクションにユーザー コントロールを追加します。
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>ユーザー コントロールをデバッグする
  ユーザー コントロールをデバッグするには、SharePoint プロジェクトのアプリケーション ページまたは Web パーツにユーザー コントロールが含まれていることを確認します。 次に、Visual Studio プロジェクトでコードをデバッグするのと同じように、ユーザー コントロールのコードをデバッグできます。

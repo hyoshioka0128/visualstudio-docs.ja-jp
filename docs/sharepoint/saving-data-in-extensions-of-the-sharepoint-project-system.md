@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87e05ba763095a818cc5db6f92828e6259d30e73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881569"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217438"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>SharePoint プロジェクトシステムの拡張機能にデータを保存する
   SharePoint プロジェクトシステムを拡張すると、SharePoint プロジェクトを閉じた後も保持される文字列データを保存できます。 データは、通常、特定のプロジェクトアイテムまたはプロジェクト自体に関連付けられています。
@@ -32,8 +32,8 @@ ms.locfileid: "99881569"
 
  次のコード例は、プロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> て、カスタム SharePoint プロジェクト項目の種類で定義されている文字列プロパティの値を保存する方法を示しています。 大きな例のコンテキストでこの例を確認するには、「 [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet14":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet14":::
 
 ## <a name="save-data-that-is-associated-with-a-project"></a>プロジェクトに関連付けられているデータを保存する
  SharePoint プロジェクトに追加するプロパティの値などのプロジェクトレベルのデータがある場合は、プロジェクトファイル ( *.csproj* ファイルまたは *.vbproj* ファイル) またはプロジェクトユーザーオプションファイル ( *.csproj* ファイルまたは *.vbproj* ファイル) にデータを保存することができます。このような場合は、 データの保存先として選択するファイルは、データの使用方法によって異なります。
@@ -45,16 +45,16 @@ ms.locfileid: "99881569"
 ### <a name="save-data-to-the-project-file"></a>データをプロジェクトファイルに保存する
  データをプロジェクトファイルに保存するには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> オブジェクトをオブジェクトに変換 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> してから、メソッドを使用し <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> ます。 次のコード例は、このメソッドを使用してプロジェクトプロパティの値をプロジェクトファイルに保存する方法を示しています。 大規模なサンプルのコンテキストでこの例を確認するには、「 [方法: SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)する」を参照してください。
 
- [!code-vb[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#3)]
- [!code-csharp[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#3)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet3":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet3":::
 
  <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>Visual studio オートメーションオブジェクトモデルまたは統合オブジェクトモデルでオブジェクトを他の型に変換する方法の詳細については、「 [SharePoint プロジェクトシステムの種類とその他の visual studio プロジェクトの種類の間での変換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)」を参照してください。
 
 ### <a name="save-data-to-the-project-user-option-file"></a>プロジェクトユーザーオプションファイルにデータを保存する
  プロジェクトユーザーオプションファイルにデータを保存するには、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> オブジェクトのプロパティを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> ます。 次のコード例では、このプロパティを使用してプロジェクトのプロパティの値をプロジェクトのユーザーオプションファイルに保存する方法を示します。 大規模なサンプルのコンテキストでこの例を確認するには、「 [方法: SharePoint プロジェクトにプロパティを追加](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)する」を参照してください。
 
- [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
- [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet2":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet2":::
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint プロジェクト システムを拡張する](../sharepoint/extending-the-sharepoint-project-system.md)

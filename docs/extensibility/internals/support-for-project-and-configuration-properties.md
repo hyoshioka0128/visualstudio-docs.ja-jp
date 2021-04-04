@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c5ac6cf82d39790fa2d7762fea6b711a546da24
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6f3932658442774ad6f54bd5e6243fe73679b38f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080750"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214032"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>プロジェクトおよび構成プロパティのサポート
 統合開発環境 (IDE: integrated development environment) の [ **プロパティ** ] ウィンドウでは、 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] プロジェクトと構成のプロパティを表示できます。 ユーザーがアプリケーションのプロパティを設定できるように、独自のプロジェクトの種類のプロパティページを提供できます。
@@ -72,8 +72,8 @@ ms.locfileid: "105080750"
 ## <a name="provideobjectattribute-and-registry-path"></a>属性とレジストリパス
  から派生したクラス `SettingsPage` は、vspackage 間で共有されるように設計されています。 VSPackage がから派生したクラスを作成できるようにするに `SettingsPage` は、 `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` から派生したクラスにを追加し `Microsoft.VisualStudio.Shell.Package` ます。
 
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_1.cs)]
- [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/vssdksupportprojectconfigurationpropertiespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/vssdksupportprojectconfigurationpropertiespackage.vb" id="Snippet1":::
 
  属性がアタッチされている VSPackage は、重要ではありません。 VSPackage がに登録されると [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、を呼び出すことができるように、作成できる任意のオブジェクトのクラス id (CLSID) が登録され <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> ます。
 
@@ -87,12 +87,12 @@ ms.locfileid: "105080750"
 
  次のコードがあるとします。
 
- [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/vb/myprojectpropertypage.vb" id="Snippet2":::
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportprojectconfigurationproperties/cs/myprojectpropertypage.cs" id="Snippet2":::
 
  構成プロパティは、[構成] プロパティページの [カテゴリ] カテゴリの [my `MyConfigProp` **Config] プロパティ** として表示されます。  このオプションが選択されている場合は、説明パネルに " **My description**" という説明が表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [プロパティ ページの追加と削除](../../extensibility/adding-and-removing-property-pages.md)
 - [プロジェクト](../../extensibility/internals/projects.md)
 - [テンプレート ディレクトリの説明 (.Vsdir) ファイル](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

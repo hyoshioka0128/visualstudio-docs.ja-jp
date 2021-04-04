@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a500d63eb497ce6d2b23860cd3793cbc2632b819
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f9e69f635b18d4ed67b78751ac6179cad04f002c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078462"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217529"
 ---
 # <a name="walkthrough-highlight-text"></a>チュートリアル: テキストの強調表示
 Managed Extensibility Framework (MEF) コンポーネントパーツを作成することによって、エディターにさまざまな視覚効果を追加できます。 このチュートリアルでは、テキストファイル内で現在の単語が出現するたびに強調表示する方法について説明します。 1つの単語がテキストファイル内に複数回出現し、カレットを1回の出現時に配置すると、すべての出現箇所が強調表示されます。
@@ -201,8 +201,9 @@ Managed Extensibility Framework (MEF) コンポーネントパーツを作成す
 
 5. また、 `TagsChanged` update メソッドによって呼び出されるイベントも追加する必要があります。
 
-     [!code-csharp[VSSDKHighlightWordTest#10](../extensibility/codesnippet/CSharp/walkthrough-highlighting-text_1.cs)]
-     [!code-vb[VSSDKHighlightWordTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-highlighting-text_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkhighlightwordtest/cs/highlightwordtag.cs" id="Snippet10":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkhighlightwordtest/vb/highlightwordtag.vb" id="Snippet10":::
+
 
 6. メソッドは、 `UpdateAtCaretPosition()` テキストバッファー内で、カーソルが置かれている単語と同一のすべての単語を検索し、 <xref:Microsoft.VisualStudio.Text.SnapshotSpan> その単語の出現に対応するオブジェクトのリストを構築します。 次 `SynchronousUpdate` に、を呼び出します。これにより、イベントが発生し `TagsChanged` ます。
 
@@ -407,5 +408,5 @@ Managed Extensibility Framework (MEF) コンポーネントパーツを作成す
 
 4. "Hello" のいずれかの位置にカーソルを置きます。 すべての出現箇所が青色で強調表示されます。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
