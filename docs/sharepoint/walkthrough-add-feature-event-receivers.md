@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305220a8206cc84e55ed7319b5ce6ce1c8058b3c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851531"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217035"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>チュートリアル: フィーチャーイベントレシーバーの追加
 フィーチャーイベントレシーバーは、SharePoint で次の機能に関連するイベントのいずれかが発生したときに実行されるメソッドです。
@@ -85,16 +85,16 @@ ms.locfileid: "99851531"
 
 2. [ **機能** ] ノードで **feature1.feature** のショートカットメニューを開き、[ **イベントレシーバーの追加** ] を選択して、この機能にイベントレシーバーを追加します。
 
-     これにより、Feature1.feature の下にコードファイルが追加されます。 この場合、プロジェクトの開発言語に応じて、 *Feature1.EventReceiver.cs* または *feature1.feature* のいずれかという名前が付けられます。
+     これにより、Feature1.feature の下にコードファイルが追加されます。 この場合、プロジェクトの開発言語に応じて、 *feature1.feature* または *feature1.feature* のいずれかという名前が付けられます。
 
 3. プロジェクトがに記述されている場合は [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] 、イベントレシーバーの先頭に次のコードを追加します (まだ存在していない場合)。
 
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet1":::
 
 4. イベントレシーバークラスには、イベントとして機能するいくつかのコメントアウトされたメソッドが含まれています。 **Featuredeactivating 非アクティブ** 化メソッドを次のように置き換えます。
 
-     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet2":::
 
 ## <a name="test-the-feature-event-receiver"></a>フィーチャーイベントレシーバーをテストする
  次に、機能を非アクティブ化して、 **featuredeactivating** メソッドが SharePoint アナウンスリストにアナウンスを出力するかどうかをテストします。

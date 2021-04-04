@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2f7dddfca06d7bc475286c73087828305464daa5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078332"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217217"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>チュートリアル: スタートページにユーザー設定を保存する
 
@@ -83,7 +83,7 @@ Visual Studio の実験用インスタンスで実行されている場合、設
 
 2. `using`ファイルの先頭に次のディレクティブを追加します。
 
-     [!code-csharp[StartPageDTE#11](../extensibility/codesnippet/CSharp/walkthrough-saving-user-settings-on-a-start-page_1.cs)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs" id="Snippet11":::
 
 3. `SettingsStore`次の例に示すように、プライベートプロパティを追加します。
 
@@ -198,7 +198,7 @@ Visual Studio の実験用インスタンスで実行されている場合、設
 
 このユーザーコントロールを変更して、さまざまなイベントハンドラーの異なる値を使用してプロパティを取得および設定することにより、任意の数のカスタム設定を保存および取得でき `SettingsStore` ます。 の呼び出しごとに異なるパラメーターを使用している限り、 `propertyName` <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> 値はレジストリ内で相互に上書きされません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 
 - <xref:EnvDTE80.DTE2?displayProperty=fullName>
 - [スタートページへの Visual Studio コマンドの追加](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

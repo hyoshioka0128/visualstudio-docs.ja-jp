@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 25bdda6a1b62f47c752a2975fa3acfd1379a470c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff8c641cc0b817b5f2a145af49c5e0accdc295d0
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867149"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216333"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>複合データ バインディングをサポートする Windows フォーム ユーザー コントロールの作成
 
@@ -97,8 +97,8 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 1. `ComplexDataGridView` のコードを次のコードで置き換えます。
 
-    [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
-    [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/ComplexDataGridView.cs" id="Snippet4":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/ComplexDataGridView.vb" id="Snippet4":::
 
 1. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
@@ -150,7 +150,7 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 **F5** キーを押してアプリケーションを実行します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 アプリケーションの要件に応じて、データ バインディングをサポートするコントロールの作成後に、追加の操作を実行できます。 次の手順として、一般的には、次のようなことを実行します。
 
@@ -162,4 +162,4 @@ Windows アプリケーションのフォームにデータを表示する場合
 
 - [Visual Studio でのデータへの Windows フォーム コントロールのバインド](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [[データ ソース] ウィンドウからドラッグしたときに作成されるコントロールを設定する](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Windows フォームコントロール](/dotnet/framework/winforms/controls/index)
+- [Windows フォーム コントロール](/dotnet/framework/winforms/controls/index)

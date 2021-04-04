@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f4b174e10eae63044c547d8ed87c46db03d23c6
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866581"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216047"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>データベースへのデータの保存 (複数テーブル)
 
@@ -65,7 +65,7 @@ ms.locfileid: "99866581"
 
 C# または Visual Basic 用の新しい **Windows フォームアプリ** プロジェクトを作成します。 プロジェクトに **UpdateMultipleTablesWalkthrough** という名前を付けます。
 
-## <a name="create-the-data-source"></a>データソースを作成する
+## <a name="create-the-data-source"></a>データ ソースを作成する
 
 この手順では、**データ ソース構成ウィザード** を使用して、Northwind データベースからデータ ソースを作成します。 接続を作成するには、Northwind サンプル データベースへのアクセス権を持っている必要があります。 Northwind サンプルデータベースの設定の詳細については、「 [方法: サンプルデータベースをインストール](../data-tools/installing-database-systems-tools-and-samples.md)する」を参照してください。
 
@@ -81,7 +81,7 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 
     - Northwind サンプル データベースへのデータ接続がドロップダウン リストに表示されている場合は選択します。
 
-         \- または -
+         または
 
     - **[新しい接続]** を選択して **[接続の追加] または [接続の変更]** ダイアログ ボックスを開きます。
 
@@ -133,8 +133,8 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 
 2. イベント ハンドラーのコードを、関連する TableAdapter の `Update` メソッドを呼び出すコードに置き換えます。 次のコードは、最初に、各 <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>、<xref:System.Data.DataRowState.Added>、および <xref:System.Data.DataRowState.Modified>) の更新済み情報を保持する 3 つの一時的なデータ テーブルを作成します。 更新プログラムは正しい順序で実行されます。 コードは、次のようになります。
 
-     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
-     [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb" id="Snippet10":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs" id="Snippet10":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
 
@@ -142,7 +142,7 @@ C# または Visual Basic 用の新しい **Windows フォームアプリ** プ�
 
 2. 各テーブルの 1 つ以上のレコードのデータを変更します。
 
-3. **[保存]** を選択します。
+3. **[保存]** ボタンを選択します。
 
 4. データベースの値をチェックし、変更が保存されたことを確認します。
 

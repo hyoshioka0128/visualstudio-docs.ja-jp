@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b5a9ea96820aafe32ca119d7e6d08057b91206fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e22ade9b2414e1d598065bb9e417c4706f75a07
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943823"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217178"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>方法: SharePoint コマンドを実行する
   SharePoint ツールの拡張機能でサーバーオブジェクトモデルを使用する場合は、API を呼び出すカスタム *SharePoint コマンド* を作成する必要があります。 コマンドを定義し、SharePoint ツールの拡張機能を使用して配置した後、コマンドを実行して、SharePoint サーバーオブジェクトモデルを呼び出すことができます。 コマンドを実行するには、オブジェクトの ExecuteCommand メソッドのいずれかを使用し <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> ます。
@@ -56,8 +56,8 @@ ms.locfileid: "99943823"
 ## <a name="example"></a>例
  次のコード例は、「 <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection.ExecuteCommand%2A> `Contoso.Commands.UpgradeSolution` [方法: SharePoint コマンドを作成](../sharepoint/how-to-create-a-sharepoint-command.md)する」で説明されているコマンドをオーバーロードを使用して呼び出す方法を示しています。
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#6)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#6](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#6)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet6":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet6":::
 
  `Execute`この例に示すメソッドは、 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep.Execute%2A> <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> カスタム配置手順でインターフェイスのメソッドを実装したものです。 このコードをより大きな例のコンテキストで表示するには、「 [チュートリアル: SharePoint プロジェクトのカスタム配置手順を作成](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)する」を参照してください。
 

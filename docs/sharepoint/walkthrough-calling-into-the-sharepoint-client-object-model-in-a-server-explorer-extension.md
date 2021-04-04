@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dee53642e042c8d4db88bdba7c093f327527798d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937681"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217022"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>チュートリアル: サーバーエクスプローラー拡張機能での SharePoint クライアントオブジェクトモデルの呼び出し
   このチュートリアルでは、**サーバーエクスプローラー** の [ **sharepoint 接続** ノードの拡張機能から sharepoint クライアントオブジェクトモデルを呼び出す方法について説明します。 SharePoint クライアントオブジェクトモデルの使用方法の詳細については、「 [sharepoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)」を参照してください。
@@ -166,8 +166,8 @@ ms.locfileid: "99937681"
     > [!NOTE]
     > このコードを追加した直後は、いくつかのコンパイル エラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Web パーツを表すノードの種類を定義する
  Web パーツを表す新しい型のノードを定義するクラスを作成します。 Visual Studio では、この新しいノードタイプを使用して、 **Web パーツギャラリー** ノードの下に子ノードを表示します。 これらの各子ノードは、SharePoint サイト上の1つの Web パーツを表します。
@@ -178,8 +178,8 @@ ms.locfileid: "99937681"
 
 1. 次のコードを、 **Webpartnodeextension** プロジェクトの **Webpartnodetypeprovider** コードファイルに貼り付けます。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
 
 ## <a name="checkpoint"></a>Checkpoint
  このチュートリアルのこの時点で、 **Web パーツギャラリー** ノードのすべてのコードがプロジェクト内にあります。 **Webpartnodeextension** プロジェクトをビルドして、エラーが発生せずにコンパイルされるようにします。
@@ -286,5 +286,5 @@ ms.locfileid: "99937681"
 - [SharePoint オブジェクトモデルの呼び出し](../sharepoint/calling-into-the-sharepoint-object-models.md)
 - [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
-- [アイコン用イメージエディター](/cpp/windows/image-editor-for-icons)
+- [アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)
 - [アイコンまたはその他のイメージを作成するアイコンのイメージエディター &#40;&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

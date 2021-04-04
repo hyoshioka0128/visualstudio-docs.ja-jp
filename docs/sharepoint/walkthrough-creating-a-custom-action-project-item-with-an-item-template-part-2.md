@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b6fad27342c086e551320977cdf712f816b383c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839098"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217945"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 2)
   SharePoint プロジェクト項目のカスタムの種類を定義し、Visual Studio の項目テンプレートに関連付けると、テンプレートのウィザードを指定することもできます。 ウィザードを使用すると、ユーザーがテンプレートを使用してプロジェクトにプロジェクト項目の新しいインスタンスを追加するときに、ユーザーから情報を収集できます。 収集した情報を使用して、プロジェクト項目を初期化できます。
@@ -115,8 +115,8 @@ ms.locfileid: "99839098"
 
 2. **Itemtemplatewizard** プロジェクトで、文字列コードファイル内のコードを次のコードに置き換えます。
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb" id="Snippet6":::
 
 ## <a name="create-the-wizard-ui"></a>ウィザード UI を作成する
  ウィザードの UI を定義する XAML を追加し、ウィザードの一部のコントロールを ID 文字列にバインドするコードをいくつか追加します。 作成するウィザードは、Visual Studio の SharePoint プロジェクト用の組み込みウィザードに似ています。
@@ -130,7 +130,7 @@ ms.locfileid: "99839098"
     > [!NOTE]
     > このコードを追加すると、プロジェクトにコンパイルエラーが発生します。 これらのエラーは、この後の手順でコードを追加すると解消されます。
 
-     [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
+     :::code language="xml" source="../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml" id="Snippet9":::
 
     > [!NOTE]
     > この XAML で作成されるウィンドウは、 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基本クラスから派生します。 カスタム WPF ダイアログボックスを Visual Studio に追加する場合は、Visual Studio の他のダイアログボックスとの一貫性のあるスタイルを持つように、このクラスからダイアログボックスを派生させ、モーダルダイアログボックスで発生する可能性のある問題を回避することをお勧めします。 詳細については、「 [モーダルダイアログボックスの作成と管理](../extensibility/creating-and-managing-modal-dialog-boxes.md)」を参照してください。
@@ -143,8 +143,8 @@ ms.locfileid: "99839098"
 
 4. WizardWindow .xaml ファイルの分離コードファイルで、現在のコードを次のコードに置き換えます。
 
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs" id="Snippet7":::
 
 ## <a name="implement-the-wizard"></a>ウィザードを実装する
  インターフェイスを実装して、ウィザードの機能を定義し <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> ます。
@@ -153,8 +153,8 @@ ms.locfileid: "99839098"
 
 1. **Itemtemplatewizard** プロジェクトで、 **CustomActionWizard** コードファイルを開き、このファイルの現在のコードを次のコードに置き換えます。
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs" id="Snippet8":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Checkpoint
  この段階で、ウィザードに必要なすべてのコードがプロジェクトに揃ったことになります。 エラーが発生することなくプロジェクトをコンパイルできるかどうか、プロジェクトをビルドして確認してください。

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c49f091477d204b7ed81a6f89fb24a56b2d60669
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c58de345400c7b724a755839cb8baa1afc3cfce2
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945111"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217191"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>方法: サーバーエクスプローラーで組み込みの SharePoint ノードのデータを取得する
   **サーバーエクスプローラー** の組み込みの sharepoint ノードごとに、ノードが表す基になる sharepoint コンポーネントのデータを取得できます。 詳細については、「[サーバー エクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
@@ -29,8 +29,8 @@ ms.locfileid: "99945111"
 ## <a name="example"></a>例
  次のコード例では、リストノードが **サーバーエクスプローラー** で表す、基になる SharePoint リストのデータを取得する方法を示します。 既定では、リストノードの [ **ブラウザーで表示** ] コンテキストメニュー項目をクリックすると、Web ブラウザーでリストを開くことができます。 この例では、visual studio のコンテキストメニュー項目 **でビュー** を追加してリストノードを拡張し、visual studio でリストを直接開きます。 このコードは、ノードのリストデータにアクセスして、Visual Studio で開くリストの URL を取得します。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet10":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet10":::
 
  この例では、SharePoint プロジェクトサービスを使用して、 <xref:EnvDTE.DTE> Visual Studio でリストを開くために使用されるオブジェクトを取得します。 SharePoint プロジェクトサービスの詳細については、「 [sharepoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)」を参照してください。
 

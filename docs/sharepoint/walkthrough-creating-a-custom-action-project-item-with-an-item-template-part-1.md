@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71e9d83cbe3459abb05e24b127e54651aade8ee5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839124"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217958"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>チュートリアル: 項目テンプレートを使用してカスタム動作プロジェクト項目を作成する (パート 1)
   Visual Studio の SharePoint プロジェクト システムは、プロジェクト項目の種類を独自に作成することによって拡張することができます。 このチュートリアルでは、SharePoint プロジェクトに追加できるプロジェクト項目を作成します。これは SharePoint サイトにカスタム動作を作成するためのプロジェクト項目です。 カスタムアクションは、SharePoint サイトの [ **サイトの操作** ] メニューにメニュー項目を追加します。
@@ -152,8 +152,8 @@ ms.locfileid: "99839124"
 
 2. このファイル内のコードを次のコードに置き換えます。
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb" id="Snippet1":::
 
 ## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>でプロジェクト項目のアイコンを作成ソリューションエクスプローラー
  カスタム SharePoint プロジェクト項目を作成した場合、そのプロジェクト項目にはイメージ (アイコンまたはビットマップ) を関連付けることができます。 このイメージは、 **ソリューションエクスプローラー** のプロジェクト項目の横に表示されます。
@@ -449,7 +449,7 @@ ms.locfileid: "99839124"
 
 5. Visual Studio の実験用インスタンスと、CustomActionProjectItem ソリューションが開いているインスタンスの両方を閉じます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルを完了すると、項目テンプレートにウィザードを追加できるようになります。 ユーザーがカスタムアクションプロジェクト項目を SharePoint プロジェクトに追加すると、ウィザードによって、アクション (操作が選択されたときの移動先の場所や URL など) に関する情報が収集され、この情報が新しいプロジェクト項目の *Elements.xml* ファイルに追加されます。 詳細については、「 [チュートリアル: 項目テンプレートを使用したカスタムアクションプロジェクト項目の作成 (パート 2)](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
@@ -459,5 +459,5 @@ ms.locfileid: "99839124"
 - [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [SharePoint プロジェクトサービスの使用](../sharepoint/using-the-sharepoint-project-service.md)
 - [Visual Studio テンプレートスキーマリファレンス](../extensibility/visual-studio-template-schema-reference.md)
-- [アイコン用イメージエディター](/cpp/windows/image-editor-for-icons)
+- [アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)
 - [アイコンまたはその他のイメージを作成するアイコンのイメージエディター &#40;&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

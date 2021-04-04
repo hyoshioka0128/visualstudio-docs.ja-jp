@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07f3b90df070eca4e17e5bba9fa6a9e3582bd238
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918733"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217800"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>チュートリアル: プロジェクトテンプレートを使用したサイト列プロジェクト項目の作成 (パート 1)
   SharePoint プロジェクトは、1 つ以上の SharePoint プロジェクト項目のコンテナーです。 独自の SharePoint プロジェクト項目の種類を作成し、それらをプロジェクト テンプレートと関連付けることで、Visual Studio で SharePoint プロジェクト システムを拡張できます。 このチュートリアルでは、サイト内の列を作成するためのプロジェクト項目の種類を定義し、サイト内の列プロジェクト項目が含まれる新しいプロジェクトの作成に使用できるプロジェクト テンプレートを作成します。
@@ -150,8 +150,8 @@ ms.locfileid: "99918733"
 
 1. **SiteColumnProjectItemTypeProvider** コードファイルで、既定のコードを次のコードに置き換え、ファイルを保存します。
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb" id="Snippet1":::
 
 ## <a name="create-a-visual-studio-project-template"></a>Visual Studio プロジェクトテンプレートを作成する
  プロジェクト テンプレートを作成することにより、サイト内の列プロジェクト項目が含まれる SharePoint プロジェクトを他の開発者が作成できるようになります。 SharePoint プロジェクトテンプレートには、 *.csproj* ファイル、 *.vbproj* ファイル、 *.vstemplate* ファイル、sharepoint プロジェクトに固有のファイルなど、Visual Studio のすべてのプロジェクトに必要なファイルが含まれています。 詳細については、「 [SharePoint プロジェクト項目の項目テンプレートとプロジェクトテンプレートを作成する](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)」を参照してください。
@@ -225,7 +225,7 @@ ms.locfileid: "99918733"
 ## <a name="edit-the-project-template-files"></a>プロジェクトテンプレートファイルを編集する
  SiteColumnProjectTemplate プロジェクトで次のファイルを編集して、プロジェクト テンプレートの動作を定義します。
 
-- *AssemblyInfo.cs* または *AssemblyInfo*
+- *AssemblyInfo* または *AssemblyInfo*
 
 - *Elements.xml*
 
@@ -243,7 +243,7 @@ ms.locfileid: "99918733"
 
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>AssemblyInfo.cs ファイルまたは AssemblyInfo.vb ファイルを編集するには
 
-1. SiteColumnProjectTemplate プロジェクトで、 *AssemblyInfo.cs* または *AssemblyInfo* ファイルを開き、そのファイルの先頭に次のステートメントを追加します。
+1. SiteColumnProjectTemplate プロジェクトで、 *AssemblyInfo* または *AssemblyInfo* ファイルを開き、そのファイルの先頭に次のステートメントを追加します。
 
     ```vb
     Imports System.Security
