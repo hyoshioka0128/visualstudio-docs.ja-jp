@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b67e70792f6e7864749b603f30ab868ef177336a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859282"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215566"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>データセットへの WPF コントロールのバインド
 
@@ -110,7 +110,7 @@ ms.locfileid: "99859282"
 
 7. **[データベース オブジェクトの選択]** ページで、**[テーブル]** を展開し、**Product (SalesLT)** テーブルを選択します。
 
-8. **[Finish]** をクリックします。
+8. **[完了]** をクリックします。
 
    Visual Studio によって新しいファイルがプロジェクトに追加され、 `AdventureWorksLTDataSet.xsd` 対応する **adventureworksltdataset.xsd** アイテムが [ **データソース** ] ウィンドウに追加されます。 このファイルは、という名前の `AdventureWorksLTDataSet.xsd` 型指定されたデータセットと、という名前の TableAdapter を定義し `AdventureWorksLTDataSet` `ProductTableAdapter` ます。 このチュートリアルの後半で、`ProductTableAdapter` を使用してデータセットにデータを読み込み、変更をデータベースに保存します。
 
@@ -134,7 +134,7 @@ ms.locfileid: "99859282"
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. **[Finish]** をクリックします。
+4. **[完了]** をクリックします。
 
 ## <a name="define-the-user-interface"></a>ユーザーインターフェイスを定義する
 
@@ -201,20 +201,20 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 2. `Window_Loaded` イベント ハンドラーを変更して、`ProductViewSource`、`AdventureWorksLTDataSet`、`AdventureWorksLTDataSetProductTableAdapter` がメソッドの外部になり、フォーム全体からアクセスできるようにします。 これらのをフォームに対してグローバルに宣言し、 `Window_Loaded` 次のようなイベントハンドラー内でそれらを割り当てます。
 
-     [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
-     [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet1":::
 
 3. `backButton_Click` イベント ハンドラーに次のコードを追加します。
 
-     [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
-     [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet2":::
 
 4. デザイナーに戻り、ボタンをダブルクリックし **>** ます。
 
 5. `nextButton_Click` イベント ハンドラーに次のコードを追加します。
 
-     [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
-     [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet3":::
 
 ## <a name="save-changes-to-product-records"></a>製品レコードへの変更を保存する
 
@@ -226,8 +226,8 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 2. `saveButton_Click` イベント ハンドラーに次のコードを追加します。
 
-     [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]
-     [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet4":::
 
     > [!NOTE]
     > この例では、`Save` の `TableAdapter` メソッドを使用して変更を保存します。 このチュートリアルでは、データ テーブルが 1 つのみ変更されるため、この方法が適しています。 複数のデータ テーブルへの変更を保存する必要がある場合は、Visual Studio によってデータセットと共に生成される `UpdateAll` の `TableAdapterManager` メソッドを使用することもできます。 詳細については、「 [tableadapter](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
@@ -252,7 +252,7 @@ WPF デザイナーで XAML を変更して、いくつかのボタンをウィ�
 
 5. アプリケーションを終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このチュートリアルを完了すると、次の関連タスクを試すことができます。
 

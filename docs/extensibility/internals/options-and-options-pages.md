@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6c5810cd95b50a63f32cfaa6123e81e35a4be9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 32bcb32c4fc80a5806c9007c3119a2ba3de62427
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063033"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214513"
 ---
 # <a name="options-and-options-pages"></a>オプションとオプション ページ
 [**ツール**] メニューの [**オプション**] をクリックすると、[**オプション**] ダイアログボックスが開きます。 このダイアログボックスのオプションは、総称してオプションページと呼ばれます。 ナビゲーションウィンドウのツリーコントロールにはオプションカテゴリが含まれており、すべてのカテゴリにオプションページがあります。 ページを選択すると、そのページのオプションが右ペインに表示されます。 これらのページを使用すると、VSPackage の状態を決定するオプションの値を変更できます。
@@ -36,8 +36,8 @@ ms.locfileid: "105063033"
 ## <a name="options-page-registry-path"></a>[オプション] ページのレジストリパス
  既定では、[オプション] ページによって管理されるプロパティのレジストリパスは <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> 、[オプション] ページクラスの [テキスト] ページと [型名] の組み合わせによって決定されます。 たとえば、オプションページクラスは次のように定義できます。
 
- [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet1":::
 
  <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>が HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp の場合、プロパティ名と値のペアは HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral のサブキーになります。
 
@@ -46,8 +46,8 @@ ms.locfileid: "105063033"
 ## <a name="toolsoptions-page-attributes-and-layout"></a>[ツール]/[オプション] ページの属性とレイアウト
  属性を指定すると、 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> [ **オプション** ] ダイアログボックスのナビゲーションツリーで、カスタムオプションページのグループ化がカテゴリに設定されます。 属性は、 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> オプションページと、インターフェイスを提供する VSPackage を関連付けます。 次のコードがあるとします。
 
- [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet2":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet2":::
 
  これは、MyPackage が2つのオプションページ、OptionsPageGeneral と OptionsPageCustom を提供することを宣言します。 [ **オプション** ] ダイアログボックスの **[マイオプションページ** ] カテゴリには、それぞれ **[全般** ] と [ **カスタム**] という両方のオプションページが表示されます。
 
@@ -65,21 +65,21 @@ ms.locfileid: "105063033"
 
   次のコードがあるとします。
 
-  [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
-  [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs" id="Snippet3":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb" id="Snippet3":::
 
   オプションの整数オプションは、[オプション] ページの [**マイオプション**] カテゴリの [**整数] オプション** で表示されます。 このオプションが選択されている場合は、[説明] ボックスに **[整数] オプション** が表示されます。
 
 ## <a name="accessing-options-pages-from-another-vspackage"></a>別の VSPackage からオプションページにアクセスする
  オプションページをホストおよび管理する VSPackage は、オートメーションモデルを使用して別の VSPackage からプログラムでアクセスできます。 たとえば、次のコードでは、VSPackage はオプションページのホストとして登録されています。
 
- [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet4":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet4":::
 
  次のコード片は、MyOptionPage から OptionInteger の値を取得します。
 
- [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet5":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet5":::
 
  属性が <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> オプションページを登録すると、属性の引数がの場合、ページは automationproperties.automationid キーの下に登録され `SupportsAutomation` `true` ます。 オートメーションは、このレジストリエントリを調べて関連する VSPackage を見つけます。オートメーションは、ホストされているオプションページ (この場合は [マイグリッド] ページ) を使用してプロパティにアクセスします。
 

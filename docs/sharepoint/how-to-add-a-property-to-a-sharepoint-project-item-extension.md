@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d721c8d4f381e99a814852839de0e808d326b3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2634035435679bd5ab2627f803ff9d2c1dc5a863
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889643"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215449"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>方法: SharePoint プロジェクト項目の拡張機能にプロパティを追加する
   プロジェクト項目の拡張機能を使用して、Visual Studio に既にインストールされている SharePoint プロジェクト項目にプロパティを追加できます。 **ソリューションエクスプローラー** でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
@@ -40,8 +40,8 @@ ms.locfileid: "99889643"
 ## <a name="example"></a>例
  次のコード例は、" **Example property** " という名前のプロパティをイベントレシーバープロジェクト項目に追加する方法を示しています。
 
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs#8)]
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb#8)]
+:::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs" id="Snippet8":::
+:::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemextensionproperty.vb" id="Snippet8":::
 
 ### <a name="understand-the-code"></a>コードの理解
  イベントが発生するたびにクラスの同じインスタンスが使用されるようにするため、 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> このコード例では、 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> このイベントが初めて発生したときに、プロジェクト項目のプロパティにプロパティオブジェクトを追加します。 このコードは、このイベントが再び発生するたびにこのオブジェクトを取得します。 プロパティを使用してデータをプロジェクトアイテムに関連付ける方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ては、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。

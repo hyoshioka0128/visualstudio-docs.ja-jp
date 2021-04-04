@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc0eca8005c4eee6e1eb89c410b50be5d0228ec6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 973c3d4b3c4fa2dc602e45736dc3a2d2f23c7616
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946333"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215293"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>SharePoint プロジェクトシステムの種類とその他の Visual Studio プロジェクトの種類の変換
   場合によっては、SharePoint プロジェクトシステムにオブジェクトがあり、Visual Studio オートメーションオブジェクトモデルまたは統合オブジェクトモデルで対応するオブジェクトの機能を使用する必要がある場合があります。 このような場合は、 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> SharePoint プロジェクトサービスのメソッドを使用して、オブジェクトを別のオブジェクトモデルに変換できます。
@@ -40,8 +40,8 @@ ms.locfileid: "99946333"
 ## <a name="example"></a>例
  メソッドを使用してオブジェクトをに変換する方法を次のコード例に示し <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> <xref:EnvDTE.Project> ます。
 
- [!code-csharp[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs#2)]
- [!code-vb[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb#2)]
+:::code language="csharp" source="../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs" id="Snippet2":::
+:::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb" id="Snippet2":::
 
  この例で必要な要素は次のとおりです。
 

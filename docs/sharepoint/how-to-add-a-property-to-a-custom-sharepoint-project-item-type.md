@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b8f690b15f843af9337e16ee803509b72e85d7af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17d9ac144b97c090292395dd5ae5e85319dd1308
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889669"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215514"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>方法: プロパティをカスタム SharePoint プロジェクト項目の種類に追加する
   カスタム SharePoint プロジェクト項目の種類を定義するときに、プロパティをプロジェクト項目に追加できます。 **ソリューションエクスプローラー** でプロジェクト項目を選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
@@ -39,8 +39,8 @@ ms.locfileid: "99889669"
 ## <a name="example"></a>例
  次のコード例は、" **Example property** " という名前のプロパティをカスタムプロジェクト項目の種類に追加する方法を示しています。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet11":::
 
 ### <a name="understand-the-code"></a>コードの理解
  イベントが発生するたびにクラスの同じインスタンスが使用されるように、 `CustomProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> このコード例では、 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> このイベントが初めて発生したときに、プロジェクト項目のプロパティにプロパティオブジェクトを保存します。 このコードは、このイベントが再び発生するたびにこのオブジェクトを取得します。 プロパティを使用して <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> プロジェクトアイテムでデータを保存する方法の詳細については、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。

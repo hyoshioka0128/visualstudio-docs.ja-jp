@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6ae4000bb0ef147a8f601ce80483b9f2ecbe2de8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef53a0328fe8427b356132fe878b52a3e504ea9a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955230"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214461"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>方法: SharePoint プロジェクトサービスを取得する
   SharePoint プロジェクトサービスには、次の種類のソリューションでアクセスできます。
@@ -43,8 +43,8 @@ ms.locfileid: "99955230"
 
      次のコード例では、プロジェクトサービスを使用して、単純なプロジェクト拡張機能で [ **出力** ] ウィンドウおよび **エラー一覧** ウィンドウにメッセージを書き込む方法を示します。
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#1)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
      プロジェクト拡張機能の作成の詳細については、「 [方法: SharePoint プロジェクトの拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-extension.md)する」を参照してください。
 
@@ -56,8 +56,8 @@ ms.locfileid: "99955230"
 
      次のコード例では、project service を使用して、[**出力**] ウィンドウにメッセージを書き込み、**リスト定義** プロジェクト項目の単純な拡張機能に **エラー一覧** ウィンドウにメッセージを書き込む方法を示します。
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#2)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#2](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet2":::
 
      プロジェクト項目の拡張機能の作成の詳細については、「 [方法: SharePoint プロジェクト項目の拡張機能を作成](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)する」を参照してください。
 
@@ -69,8 +69,8 @@ ms.locfileid: "99955230"
 
      次のコード例では、プロジェクトサービスを使用して、単純なプロジェクト項目の種類の定義で [ **出力** ] ウィンドウと [ **エラー一覧** ] ウィンドウにメッセージを書き込む方法を示します。
 
-     [!code-vb[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb#3)]
-     [!code-csharp[SPExtensibility.ProjectService.FromProjectSystemExtensions#3](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet3":::
 
      プロジェクト項目の種類の定義の詳細については、「 [方法: SharePoint プロジェクト項目の種類を定義](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)する」を参照してください。
 
@@ -85,8 +85,8 @@ ms.locfileid: "99955230"
 
      次のコード例では、プロジェクトサービスを使用して、[**出力**] ウィンドウにメッセージを書き込む方法と、拡張機能によって **サーバーエクスプローラー** の一覧ノードに追加されるショートカットメニューから [**エラー一覧**] ウィンドウにメッセージを書き込む方法を示します。
 
-     [!code-vb[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb#1)]
-     [!code-csharp[SPExtensibility.ProjectService.FromSPExplorerExtensions#1](../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
      **サーバーエクスプローラー** の [ **sharepoint 接続**] ノードの拡張の詳細については、「[方法: サーバーエクスプローラーで sharepoint ノードを拡張](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)する」を参照してください。
 

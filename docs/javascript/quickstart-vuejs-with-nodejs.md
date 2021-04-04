@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ee855700502469783a8eab60bb24a28c2e30a9c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad2892ab7c605ba25902ac2c4c24e68236a5d740
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950641"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616975"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>クイック スタート:Visual Studio を使用して初めての Vue.js アプリを作成する
 
@@ -140,6 +140,8 @@ JavaScript Vue.js プロジェクト テンプレート (および TypeScript �
 
 ## <a name="next-steps"></a>次のステップ
 
-- [Vue.js](create-application-with-vuejs.md) に関する記事をご覧ください。
-- [Node.js と Express のチュートリアル](tutorial-nodejs.md)を読む
-- [アプリを Linux App Service にデプロイする](../javascript/publish-nodejs-app-azure.md)
+> [!div class="nextstepaction"]
+> [Vue.js アプリを作成する](create-application-with-vuejs.md)
+
+> [!div class="nextstepaction"]
+> [アプリを Linux App Service にデプロイする](../javascript/publish-nodejs-app-azure.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cde9235ffb7c692240c8f16ea0e93f49c79f002e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7be241dd4a043b8104c628e73f98e8881dc8b88b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934872"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215423"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>方法: SharePoint プロジェクトにプロパティを追加する
   プロジェクトの拡張機能を使用して、任意の SharePoint プロジェクトにプロパティを追加できます。 **ソリューションエクスプローラー** でプロジェクトを選択すると、プロパティが [**プロパティ**] ウィンドウに表示されます。
@@ -39,8 +39,8 @@ ms.locfileid: "99934872"
 ## <a name="example"></a>例
  次のコード例は、SharePoint プロジェクトに2つのプロパティを追加する方法を示しています。 1つのプロパティは、プロジェクトのユーザーオプションファイル ( *.csproj* ファイルまたは *.vbproj* ファイル) でデータを永続化します。 もう一方のプロパティは、プロジェクトファイル (*.csproj* ファイルまたは *.vbproj* ファイル) でデータを永続化します。
 
- [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
- [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet1":::
 
 ### <a name="understand-the-code"></a>コードの理解
  イベントが発生するたびにクラスの同じインスタンスが使用されるようにするため、 `CustomProjectProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> このコード例では、 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> このイベントが初めて発生したときに、プロジェクトのプロパティにプロパティオブジェクトを追加します。 このコードは、このイベントが再び発生するたびにこのオブジェクトを取得します。 プロパティを使用してデータをプロジェクトに関連付ける方法の詳細につい <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ては、「 [SharePoint ツールの拡張機能とカスタムデータの関連付け](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)」を参照してください。
