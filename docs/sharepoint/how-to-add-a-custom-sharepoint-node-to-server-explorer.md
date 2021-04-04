@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7c0a13879850bbd31112ddcb3193d027abeb5d1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878124"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216359"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>方法: サーバーエクスプローラーにカスタム SharePoint ノードを追加する
   カスタムノードは、**サーバーエクスプローラー** の [ **SharePoint 接続**] ノードの下に追加できます。 これは、既定では **サーバーエクスプローラー** に表示されない追加の SharePoint コンポーネントを表示する場合に便利です。 詳細については、「[サーバー エクスプローラーで SharePoint 接続ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)」を参照してください。
@@ -54,8 +54,8 @@ ms.locfileid: "99878124"
 
      次のコード例は、新しいノードを定義する方法を示しています。 この例では、プロジェクトに CustomChildNodeIcon というアイコンが埋め込みリソースとして含まれていることを前提としています。
 
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
-     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet6":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet6":::
 
 ### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>新しいノードを既存のノードの子として追加するには
 
@@ -77,14 +77,14 @@ ms.locfileid: "99878124"
 
      次のコード例は、 **サーバーエクスプローラー** で SharePoint サイトノードの子として新しいノードを追加する方法を示しています。
 
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet7":::
 
 ## <a name="complete-example"></a>コード例全体
  次のコード例では、単純なノードを定義し、それを **サーバーエクスプローラー** の SharePoint サイトノードの子として追加するための完全なコードを示します。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet5":::
 
 ## <a name="compiling-the-code"></a>コードのコンパイル
  この例では、プロジェクトに CustomChildNodeIcon というアイコンが埋め込みリソースとして含まれていることを前提としています。 この例では、次のアセンブリへの参照も必要です。

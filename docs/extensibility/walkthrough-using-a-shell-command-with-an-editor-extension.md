@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f36d141c75b43dfaf90960261e40c4a619069802
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c6d60d9d6a0eb83f8b5d357f202a4f2f29ac509
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061993"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217204"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>チュートリアル: エディター拡張機能でシェルコマンドを使用する
 VSPackage から、メニューコマンドなどの機能をエディターに追加できます。 このチュートリアルでは、メニューコマンドを呼び出して、エディターのテキストビューに表示要素を追加する方法について説明します。
@@ -271,8 +271,8 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 3. を実装するクラスを宣言 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> し、 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> "text" およびのを使用してエクスポートし <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document> ます。 Content type 属性は、コンポーネントが適用されるコンテンツの種類を指定します。 テキスト型は、すべての非バイナリファイルの種類の基本型です。 このため、作成されるほとんどすべてのテキストビューがこの型になります。 Text view role 属性は、コンポーネントが適用されるテキストビューの種類を指定します。 ドキュメントテキストビューロールでは、通常、行で構成され、ファイルに格納されているテキストが表示されます。
 
-     [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]
-     [!code-csharp[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/connector.vb" id="Snippet11":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/connector.cs" id="Snippet11":::
 
 4. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>の静的イベントを呼び出すように、メソッドを実装し `Create()` `CommentAdornmentManager` ます。
 
@@ -389,8 +389,8 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 8. `OnBufferChanged`イベントハンドラーを追加します。
 
-     [!code-csharp[VSSDKMenuCommandTest#21](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_2.cs)]
-     [!code-vb[VSSDKMenuCommandTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentprovider.cs" id="Snippet21":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentprovider.vb" id="Snippet21":::
 
 9. イベントの宣言を追加 `CommentsChanged` します。
 
@@ -600,8 +600,8 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
 10. コメントを描画するプライベートメソッドを追加します。
 
-     [!code-csharp[VSSDKMenuCommandTest#35](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs)]
-     [!code-vb[VSSDKMenuCommandTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/commentadornmentmanager.cs" id="Snippet35":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/commentadornmentmanager.vb" id="Snippet35":::
 
 ## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>メニューコマンドを使用して、コメントの装飾を追加します。
  メニューコマンドを使用して、VSPackage のメソッドを実装することにより、コメントの表示要素を作成でき `MenuItemCallback` ます。
@@ -693,5 +693,5 @@ VSPackage から、メニューコマンドなどの機能をエディターに�
 
      4スコア...
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [チュートリアル: コンテンツの種類をファイル名拡張子にリンクする](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

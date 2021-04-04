@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 237cd28bffece4517e80b979602ac8d2ed357aa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87f5b0cf86178b88b1611f4b0ce8a4bbacde780e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882688"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216801"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>方法: 特定の Finder メソッドを追加する
   *特定の Finder* メソッドを作成することによって、1つのエンティティインスタンスを返すことができます。 Business data Connectivity (BDC) サービスは、ユーザーがビジネスデータ web パーツまたは外部リストでエンティティを選択したときに、特定の Finder メソッドを実行します。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -84,8 +84,8 @@ ms.locfileid: "99882688"
      > [!NOTE]
      > フィールドの値を `ServerName` サーバーの名前に置き換えます。
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="see-also"></a>関連項目
 - [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)

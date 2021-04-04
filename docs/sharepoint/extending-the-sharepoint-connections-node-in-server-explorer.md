@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c10c2bc69086e3c98633ba746c1e6fc8d7f2a20
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f77e0044b8ae3c7456a31bb9c9153ba9e9f4c99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889695"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218036"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する
   Visual Studio では、[**サーバーエクスプローラー** ] ウィンドウの [ **sharepoint 接続**] ノードを使用して、開発用コンピューターのローカル sharepoint サイトに接続できます。 このノードには、ローカル SharePoint サイトの多くのコンポーネントが階層ツリービューで表示されます。 たとえば、ローカルサイトのリスト、ドキュメントライブラリ、コンテンツの種類を表示できます。 **サーバーエクスプローラー** を使用してローカルの SharePoint サイトに接続する方法の詳細については、「[サーバーエクスプローラーを使用した Sharepoint 接続の参照](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)」を参照してください。
@@ -50,16 +50,16 @@ ms.locfileid: "99889695"
 
  次のコード例は、リストノードのデータオブジェクトを取得する方法を示しています。 大きな例のコンテキストでこの例を確認するには、「 [方法: サーバーエクスプローラーの組み込み SharePoint ノードのデータを取得](../sharepoint/how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer.md)する」を参照してください。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#11)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#11](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs" id="Snippet11":::
 
  次の表は、各組み込みノード型のデータオブジェクトの種類を示しています。
 
-|ノードの種類|データオブジェクトの種類|
+|ノード型|データオブジェクトの種類|
 |---------------|----------------------|
 |SharePoint サイトノード|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
 |Content type|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
-|機能|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
+|特徴量|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |フィールド|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
 |List|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |リストテンプレート|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|

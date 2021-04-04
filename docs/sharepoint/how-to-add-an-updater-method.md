@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fff7083305d4e19495b81525c8a67a42c5ff6c70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6337ac237c2a030593b90b29af5e8474052de99
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967502"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216736"
 ---
 # <a name="how-to-add-an-updater-method"></a>方法: Updater メソッドを追加する
   ユーザーが *Updater* メソッドを作成することによって、SharePoint 外部リストのビジネスデータを更新できるようにすることができます。 詳細については、「[ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)」を参照してください。
@@ -63,8 +63,8 @@ ms.locfileid: "99967502"
    > [!NOTE]
    > フィールドの値を `ServerName` サーバーの名前に置き換えます。
 
-    [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
-    [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet5":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet5":::
 
 ## <a name="see-also"></a>関連項目
 - [ビジネス データ接続モデルを設計する](../sharepoint/designing-a-business-data-connectivity-model.md)

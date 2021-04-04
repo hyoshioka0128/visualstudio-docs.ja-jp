@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1de6cdc2f5c1f1480a738f99aa05b8833eb4b2ed
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918758"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217793"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>チュートリアル: SharePoint プロジェクト拡張機能の作成
   このチュートリアルでは、SharePoint プロジェクトの拡張機能を作成する方法について説明します。 プロジェクト拡張機能を使用して、プロジェクトが追加、削除、または名前変更されたときなどのプロジェクトレベルのイベントに応答できます。 また、カスタムプロパティを追加したり、プロパティ値が変更したときに応答したりすることもできます。 プロジェクト項目の拡張機能とは異なり、プロジェクトの拡張機能を特定の SharePoint プロジェクトの種類に関連付けることはできません。 プロジェクト拡張機能を作成すると、で任意の種類の SharePoint プロジェクトが開かれたときに、拡張機能が読み込まれ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。
@@ -113,8 +113,8 @@ ms.locfileid: "99918758"
 
 1. 次のコードを CustomProperty コードファイルに貼り付けます。
 
-     [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
-     [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs" id="Snippet1":::
 
 ## <a name="build-the-solution"></a>ソリューションをビルドする
  次に、ソリューションをビルドして、エラーを発生させずにコンパイルされるようにします。

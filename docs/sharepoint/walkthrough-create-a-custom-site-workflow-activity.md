@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29a3cd6fe37ec824a3db3a2c83aad7434d0018cb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937720"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218049"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>チュートリアル: サイトのカスタム ワークフロー アクティビティの作成
   このチュートリアルでは、を使用してサイトレベルワークフローのカスタムアクティビティを作成する方法について説明し [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ます。 (サイトレベルのワークフローは、サイトのリストだけでなく、サイト全体に適用されます)。カスタムアクティビティでは、バックアップのアナウンスリストを作成し、お知らせリストの内容をそこにコピーします。
@@ -91,8 +91,8 @@ ms.locfileid: "99937720"
 
 3. Class1 のすべてのコードを次のコードに置き換えます。
 
-     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
-     [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb" id="Snippet1":::
 
 4. プロジェクトを保存し、メニューバーで [ビルド] [ソリューションの **ビルド**] の順に選択し  >  ます。
 

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276315b7f470777da30fda33b15bac995deb07fd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952669"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217672"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>チュートリアル: サーバーエクスプローラーを拡張して web パーツを表示する
   Visual Studio では、**サーバーエクスプローラー** の [ **sharepoint 接続**] ノードを使用して、sharepoint サイトのコンポーネントを表示できます。 ただし、一部のコンポーネントは既定では **サーバーエクスプローラー** 表示されません。 このチュートリアルでは、接続されている各 SharePoint サイトに Web パーツギャラリーを表示するように **サーバーエクスプローラー** を拡張します。
@@ -216,8 +216,8 @@ ms.locfileid: "99952669"
     > [!NOTE]
     > このコードを追加すると、プロジェクトのコンパイルエラーが発生しますが、後の手順でコードを追加したときに、そのエラーが解消されます。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Web パーツを表すノードの種類を定義する
  Web パーツを表す新しい型のノードを定義するクラスを作成します。 Visual Studio では、この新しいノードタイプを使用して、 **Web パーツギャラリー** ノードの下に子ノードを表示します。 各子ノードは、SharePoint サイト上の1つの Web パーツを表します。
@@ -228,8 +228,8 @@ ms.locfileid: "99952669"
 
 1. WebPartNodeExtension プロジェクトで、WebPartNodeTypeProvder コードファイルを開き、次のコードを貼り付けます。
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
 
 ## <a name="define-the-web-part-data-class"></a>Web パーツのデータクラスを定義する
  SharePoint サイトの1つの Web パーツに関するデータを含むクラスを定義します。 このチュートリアルの後半では、サイトの各 Web パーツに関するデータを取得し、このクラスのインスタンスにデータを割り当てるカスタム SharePoint コマンドを作成します。
@@ -238,8 +238,8 @@ ms.locfileid: "99952669"
 
 1. WebPartNodeExtension プロジェクトで、Webpartnodeextension コードファイルを開き、次のコードを貼り付けます。
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs" id="Snippet3":::
 
 ## <a name="define-the-ids-for-the-sharepoint-commands"></a>SharePoint コマンドの Id を定義します。
  カスタム SharePoint コマンドを識別する複数の文字列を定義します。 これらのコマンドは、このチュートリアルの後半で実装します。
@@ -248,8 +248,8 @@ ms.locfileid: "99952669"
 
 1. WebPartNodeExtension プロジェクトで、Webpartのコードファイルを開き、次のコードを貼り付けます。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb" id="Snippet4":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>カスタム SharePoint コマンドを作成する
  Sharepoint のサーバーオブジェクトモデルを呼び出すカスタムコマンドを作成して、SharePoint サイトの Web パーツに関するデータを取得します。 各コマンドは、が適用されたメソッドです <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> 。
@@ -258,8 +258,8 @@ ms.locfileid: "99952669"
 
 1. WebPartCommands プロジェクトで、WebPartCommands コードファイルを開き、次のコードを貼り付けます。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb" id="Snippet6":::
 
 ## <a name="checkpoint"></a>Checkpoint
  このチュートリアルのこの時点で、 **Web パーツギャラリー** ノードと SharePoint コマンドのすべてのコードがプロジェクトに含まれるようになりました。 ソリューションをビルドして、両方のプロジェクトがエラーなしでコンパイルされるようにします。
@@ -375,5 +375,5 @@ ms.locfileid: "99952669"
 ## <a name="see-also"></a>関連項目
 - [サーバー エクスプローラーで [SharePoint 接続] ノードを拡張する](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [チュートリアル: サーバーエクスプローラーの拡張機能で SharePoint クライアントオブジェクトモデルを呼び出す](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)
-- [アイコン用イメージエディター](/cpp/windows/image-editor-for-icons)
+- [アイコン用イメージ エディター](/cpp/windows/image-editor-for-icons)
 - [アイコンまたはその他のイメージを作成するアイコンのイメージエディター &#40;&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

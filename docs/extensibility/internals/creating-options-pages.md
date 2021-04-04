@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056838"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217243"
 ---
 # <a name="create-options-pages"></a>オプションページの作成
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]マネージパッケージフレームワークでは、から派生したクラスは <xref:Microsoft.VisualStudio.Shell.DialogPage> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、[**ツール**] メニューの下に **オプション** ページを追加して IDE を拡張します。
@@ -61,19 +61,19 @@ ms.locfileid: "105056838"
 ## <a name="example"></a>例
  次に示すのは、オプションページの単純な "Hello world" の実装です。 Visual Studio パッケージテンプレートによって作成された既定のプロジェクトに、 **メニューコマンド** オプションを選択して次のコードを追加すると、オプションページの機能が適切に示されます。
 
-### <a name="description"></a>Description
+### <a name="description"></a>説明
  次のクラスでは、最小限の "Hello world" オプションページを定義しています。 ユーザーは、開いたときに、 `HelloWorld` プロパティグリッドでパブリックプロパティを設定できます。
 
 ### <a name="code"></a>コード
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/class1.cs" id="Snippet11":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/class1.vb" id="Snippet11":::
 
 ### <a name="description"></a>説明
  パッケージクラスに次の属性を適用すると、パッケージの読み込み時にオプションページが使用できるようになります。 数値は、カテゴリおよびページの任意のリソース Id であり、最後のブール値は、ページがオートメーションをサポートするかどうかを指定します。
 
 ### <a name="code"></a>コード
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet07":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet07":::
 
 ### <a name="description"></a>説明
  次のイベントハンドラーは、[オプション] ページで設定されたプロパティの値に応じて結果を表示します。 この例では、メソッドを使用して、 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 結果をカスタムオプションページ型に明示的にキャストし、ページによって公開されるプロパティにアクセスします。
@@ -81,8 +81,8 @@ ms.locfileid: "105056838"
  パッケージテンプレートによって生成されたプロジェクトの場合は、関数からこの関数を呼び出して `MenuItemCallback` 、[ **ツール** ] メニューに追加された既定のコマンドにアタッチします。
 
 ### <a name="code"></a>コード
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)]
- [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
 ## <a name="see-also"></a>関連項目
 - [ユーザー設定とオプションの拡張](../../extensibility/extending-user-settings-and-options.md)

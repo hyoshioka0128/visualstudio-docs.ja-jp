@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859191"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216060"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>WPF と Entity Framework 6 を使用して単純なデータ アプリケーションを作成する
 
@@ -60,7 +60,7 @@ ms.locfileid: "99859191"
 
 ## <a name="create-the-model"></a>モデルを作成する
 
-1. **ソリューションエクスプローラー** のプロジェクトノードを右クリックし、[新しい項目の **追加**] を選択し  >  ます。 左側のウィンドウの [C#] ノードで、[ **データ** ] を選択し、中央のペインで [ **ADO.NET Entity Data Model**] を選択します。
+1. **ソリューション エクスプローラー** でプロジェクト ノードを右クリックし、 **[追加]**  >  **[新しい項目]** を選択します。 左側のウィンドウの [C#] ノードで、[ **データ** ] を選択し、中央のペインで [ **ADO.NET Entity Data Model**] を選択します。
 
    ![Entity Framework モデルの新しい項目](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "99859191"
 
      ![エンティティクラスをデータソースとして追加する](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. **[Finish]** をクリックします。
+3. **[完了]** をクリックします。
 
 4. コードビューで *mainwindow.xaml* に移動します。 この例では、XAML を単純なものにしています。 Mainwindow.xaml のタイトルをわかりやすいものに変更し、高さと幅を 600 x 800 に増やします。 後でいつでも変更できます。 ここで、次の3つの行定義をメイングリッドに追加します。1行はナビゲーションボタン用、もう1つは顧客の詳細用、もう1つは注文を表示するグリッド用です。
 
@@ -130,9 +130,9 @@ ms.locfileid: "99859191"
 
      ![Orders クラスをグリッドとしてドラッグ](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio は、UI コントロールをモデル内のイベントに接続するすべてのバインドコードを生成しました。 いくつかのデータを表示するために必要なのは、モデルを作成するためのコードを記述することだけです。 まず、 *MainWindow.xaml.cs* に移動し、データコンテキストの mainwindow.xaml クラスにデータメンバーを追加します。 生成されたこのオブジェクトは、モデル内の変更とイベントを追跡するコントロールのように機能します。 また、顧客と注文の CollectionViewSource データメンバーと、関連するコンストラクター初期化ロジックも追加します。 クラスの先頭は次のようになります。
+7. Visual Studio は、UI コントロールをモデル内のイベントに接続するすべてのバインドコードを生成しました。 いくつかのデータを表示するために必要なのは、モデルを作成するためのコードを記述することだけです。 まず、 *mainwindow.xaml* に移動し、データコンテキストの mainwindow.xaml クラスにデータメンバーを追加します。 生成されたこのオブジェクトは、モデル内の変更とイベントを追跡するコントロールのように機能します。 また、顧客と注文の CollectionViewSource データメンバーと、関連するコンストラクター初期化ロジックも追加します。 クラスの先頭は次のようになります。
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      Add `using` 拡張メソッドをスコープに取り込むために、system.string のディレクティブを追加します。
 
@@ -142,7 +142,8 @@ ms.locfileid: "99859191"
 
      次に、下にスクロールして、 `Window_Loaded` イベントハンドラーを見つけます。 Visual Studio によって CollectionViewSource オブジェクトが追加されていることに注意してください。 これは、モデルの作成時に選択した NorthwindEntities オブジェクトを表します。 これは既に追加されているので、ここでは必要ありません。 ここでは、メソッドが次のようになるように、のコードを置き換え `Window_Loaded` ます。
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. **F5** キーを押します。 CollectionViewSource に最初に取得された顧客の詳細が表示されます。 また、データグリッドにも注文が表示されます。 書式設定はそれほど優れていないので、修正しましょう。 また、他のレコードを表示し、基本的な CRUD 操作を実行する方法を作成することもできます。
 
@@ -421,9 +422,10 @@ Windows フォームアプリケーションでは、データベース内の行
 
 コードビハインドは、add メソッドと delete メソッドを除き、最小限ではありません。 ナビゲーションは、CollectionViewSource の View プロパティでメソッドを呼び出すことによって実行されます。 は、 `DeleteOrderCommandHandler` 注文に対して連鎖削除を実行する方法を示しています。 最初に、関連付けられている Order_Details を削除する必要があります。 は `UpdateCommandHandler` 新しい顧客または注文をコレクションに追加します。それ以外の場合は、ユーザーがテキストボックスで行った変更を使用して、既存の顧客または注文を更新します。
 
-これらのハンドラーメソッドを *MainWindow.xaml.cs* の mainwindow.xaml クラスに追加します。 Customers テーブルの CollectionViewSource に別の名前が付いている場合は、次の各メソッドで名前を調整する必要があります。
+これらのハンドラーメソッドを *mainwindow.xaml* の mainwindow.xaml クラスに追加します。 Customers テーブルの CollectionViewSource に別の名前が付いている場合は、次の各メソッドで名前を調整する必要があります。
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>アプリケーションの実行
 

@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: daf4f722eb51a08e7a6ddb287e5b54956ecdfe73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866334"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216021"
 ---
 # <a name="typed-vs-untyped-datasets"></a>型指定されたデータセットと型指定されていないデータセットの比較
 型指定されたデータセットは、最初に基本クラスから派生したデータセットで <xref:System.Data.DataSet> あり、 **データセットデザイナー** の情報を使用して .xsd ファイルに格納され、新しい厳密に型指定された dataset クラスを生成します。 スキーマ (テーブル、列など) からの情報が生成され、この新しいデータセットクラスとして、ファーストクラスのオブジェクトとプロパティのセットとしてコンパイルされます。 型指定されたデータセットは基本クラスから継承するため、 <xref:System.Data.DataSet> 型指定されたクラスはクラスのすべての機能を前提 <xref:System.Data.DataSet> としており、クラスのインスタンスをパラメーターとして受け取るメソッドで使用でき <xref:System.Data.DataSet> ます。
@@ -28,13 +28,13 @@ ms.locfileid: "99866334"
 ## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>型指定され、型指定されていないデータセットでのデータアクセスのコントラスト
 型指定されたデータセットのクラスには、そのプロパティがテーブルと列の実際の名前を取得するオブジェクトモデルがあります。 たとえば、型指定されたデータセットを操作する場合は、次のようなコードを使用して列を参照できます。
 
-[!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
-[!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet4":::
 
 これに対し、型指定されていないデータセットを使用している場合、同等のコードは次のようになります。
 
-[!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
-[!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet5":::
 
 型指定されたアクセスは、読みやすくなるだけでなく、Visual Studio **コードエディター** の IntelliSense でも完全にサポートされています。 操作が簡単になるだけでなく、型指定されたデータセットの構文では、コンパイル時に型チェックが行われるため、データセットのメンバーに値を代入する際にエラーが発生する可能性が大幅に減少します。 クラスの列の名前を変更して <xref:System.Data.DataSet> からアプリケーションをコンパイルすると、ビルドエラーが発生します。 **タスク一覧** でビルドエラーをダブルクリックすると、古い列名を参照する行またはコード行に直接進むことができます。 実行時には、型指定されたデータセット内のテーブルおよび列へのアクセスも、実行時に多少高速になります。これは、実行時にコレクションを使用するのではなく、コンパイル時にアクセスが決定されるためです。
 

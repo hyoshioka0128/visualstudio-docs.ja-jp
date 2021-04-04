@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0811b029bf7e4705bc0c3689eff73f38280c3b3d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847714"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217685"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>チュートリアル: ビジネスデータを使用した SharePoint での外部リストの作成
 
@@ -114,9 +114,9 @@ Business Data Connectivity (BDC) サービスを使用すると、SharePoint で
 
 3. デザイナーで **Entity1** のショートカットメニューを開き、[ **削除**] を選択します。
 
-4. **ソリューションエクスプローラー** で、 *Entity1* (Visual Basic) または *Entity1.cs* (C# の場合) のショートカットメニューを開き、[**削除**] を選択します。
+4. **ソリューションエクスプローラー** で、 *Entity1* (Visual Basic) または *Entity1* (C# の場合) のショートカットメニューを開き、[**削除**] を選択します。
 
-5. *Entity1Service* (Visual Basic) または *Entity1Service.cs* (C# の場合) のショートカットメニューを開き、[**削除**] を選択します。
+5. *Entity1Service* (Visual Basic) または *Entity1Service* (C# の場合) のショートカットメニューを開き、[**削除**] を選択します。
 
 ## <a name="add-an-entity-to-the-model"></a>エンティティをモデルに追加する
 
@@ -126,7 +126,7 @@ Business Data Connectivity (BDC) サービスを使用すると、SharePoint で
 
 2. **ツールボックス** の [ **BusinessDataConnectivity** ] タブで、BDC デザイナーに **エンティティ** を追加します。
 
-     新しいエンティティがデザイナーに表示されます。 Visual Studio によって、 *Entityservice .vb* という名前のファイル (Visual Basic) または *EntityService.cs* (C# の場合) がプロジェクトに追加されます。
+     新しいエンティティがデザイナーに表示されます。 Visual Studio によって、 *entityservice .vb* という名前のファイル (Visual Basic) または *Entityservice .cs* (C# の場合) がプロジェクトに追加されます。
 
 3. メニューバーで、[プロパティウィンドウの **表示**] を選択し  >    >  ます。
 
@@ -208,8 +208,8 @@ BDC サービスで特定の連絡先を表示できるようにするには、�
     > [!NOTE]
     > フィールドの値を `ServerName` サーバーの名前に置き換えます。
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="add-a-finder-method"></a>Finder メソッドを追加する
 
@@ -236,8 +236,8 @@ BDC サービスが連絡先を一覧に表示できるようにするには、F
      > [!NOTE]
      > フィールドの値を `ServerName` サーバーの名前に置き換えます。
 
-     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>プロジェクトをテストする
 
@@ -268,7 +268,7 @@ BDC サービスが連絡先を一覧に表示できるようにするには、F
 
      選択した連絡先の詳細がフォームに表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 SharePoint で BDC サービスのモデルを設計する方法の詳細については、次のトピックを参照してください。
 

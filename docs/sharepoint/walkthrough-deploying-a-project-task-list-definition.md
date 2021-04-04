@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0692b676ec701b40edd12d1634ab9cdf419f85f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901039"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217724"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>チュートリアル: プロジェクトタスクリスト定義の配置
 
@@ -77,8 +77,8 @@ SharePoint リストプロジェクトを作成し、リスト定義をタスク
 
 6. `ItemAdded` **Projecttasklisteventreceiver** コードファイルのメソッドにコードを追加します。 新しいタスクが追加されるたびに、既定の期限日と説明がタスクに追加されます。 既定の期限は2009年7月1日です。
 
-     [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
-     [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs" id="Snippet1":::
 
 ## <a name="customize-the-project-task-list-feature"></a>プロジェクトタスク一覧機能のカスタマイズ
 
@@ -158,15 +158,15 @@ Visual Studio は IIS アプリケーションプールをリサイクルし、�
 
 5. PowerShell コマンドを使用して、 `Add-SPUserSolution` リモートの SharePoint インストールにパッケージをインストールします。 (ファームソリューションの場合は、コマンドを使用し `Add-SPSolution` ます)。
 
-     たとえば、`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` のようにします。
+     たとえば、「 `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` 」のように入力します。
 
 6. PowerShell コマンドを使用し `Install-SPUserSolution` て、ソリューションを配置します。 (ファームソリューションの場合は、コマンドを使用し `Install-SPSolution` ます)。
 
-     たとえば、`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` のようにします。
+     たとえば、「 `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` 」のように入力します。
 
      リモート配置の詳細については、「SharePoint 2010 での [ソリューションの使用](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) と [PowerShell を使用したソリューションの追加と配置](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 SharePoint ソリューションをカスタマイズおよび展開する方法の詳細については、次のトピックを参照してください。
 

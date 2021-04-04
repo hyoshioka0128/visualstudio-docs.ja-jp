@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4863fb40bc6f70556d8f00305d882e6edd93a0e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a80fc4fbfaf9a308492345ba897363d31d4669ca
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074393"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216541"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage のリソース
 ローカライズされたリソースは、ネイティブサテライト UI Dll、マネージサテライト Dll、またはマネージ VSPackage 自体に埋め込むことができます。
@@ -44,8 +44,8 @@ ms.locfileid: "105074393"
 
   属性を使用 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] して、マネージリソースが使用可能であることを示すことができます。
 
-  [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
-  [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs" id="Snippet1":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb" id="Snippet1":::
 
   この方法でを設定すると、は、 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] などを使用してリソースを検索するときに、アンマネージサテライト dll を無視することを示し <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> ます。 が [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 同じリソース ID を持つ2つ以上のリソースを検出した場合は、最初に検出されたリソースを使用します。
 
@@ -87,6 +87,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]がセットアップ後に VSPackage からリソースを要求した場合、そのパッケージは既に読み込まれて初期化される可能性があるため、パフォーマンスが低下することはほとんどありません。
 
-## <a name="see-also"></a>こちらもご覧ください
+## <a name="see-also"></a>関連項目
 - [VSPackage の管理](../../extensibility/managing-vspackages.md)
 - [MFC アプリケーションのローカライズされたリソース: サテライト Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

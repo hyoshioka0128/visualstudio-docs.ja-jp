@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8d42726cddb0565af66e161b41c16c94cfe2cb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77c80134ad63346b363c072ef2eff7e49978501f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839137"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217932"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>チュートリアル: SharePoint プロジェクトのカスタム配置手順の作成
   SharePoint プロジェクトを配置すると、Visual Studio は一連の配置手順を特定の順序で実行します。 Visual Studio には多くの組み込みの配置手順が含まれていますが、独自に作成することもできます。
@@ -151,8 +151,8 @@ ms.locfileid: "99839137"
     > [!NOTE]
     > このコードを追加すると、プロジェクトのコンパイルエラーが発生しますが、後の手順でコードを追加したときに、そのエラーが解消されます。
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb" id="Snippet1":::
 
 ## <a name="create-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>カスタム展開手順を含む展開構成を作成する
  新しい配置構成のプロジェクト拡張機能を作成します。これには、いくつかの組み込みの配置手順と新しいアップグレード配置手順が含まれます。 この拡張機能を作成することにより、sharepoint 開発者は SharePoint プロジェクトの [配置のアップグレード] 手順を使用することができます。
@@ -163,8 +163,8 @@ ms.locfileid: "99839137"
 
 1. **Deploymentstepextension** プロジェクトで deploymentstepextension コードファイルを開き、次のコードを貼り付けます。
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb" id="Snippet2":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>カスタム SharePoint コマンドを作成する
  SharePoint のサーバーオブジェクトモデルを呼び出す2つのカスタムコマンドを作成します。 1つのコマンドは、ソリューションが既にデプロイされているかどうかを判断します。もう1つのコマンドは、ソリューションをアップグレードします。
@@ -173,8 +173,8 @@ ms.locfileid: "99839137"
 
 1. **Sharepointcommands** プロジェクトで Commands コードファイルを開き、次のコードを貼り付けます。
 
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
-     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet4":::
 
 ## <a name="checkpoint"></a>Checkpoint
  このチュートリアルのこの時点で、カスタム配置手順と SharePoint コマンドのすべてのコードがプロジェクトに含まれるようになりました。 これらをビルドして、エラーが発生せずにコンパイルされるようにします。

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917346"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216905"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>チュートリアル: ClickOnce 配置 API を使用して必要に応じてアセンブリをダウンロードする
 既定では、アプリケーションに含まれるすべてのアセンブリ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] は、アプリケーションの初回実行時にダウンロードされます。 ただし、少数のユーザーによって使用されるアプリケーションの一部を使用することもできます。 その場合は、そのような型を作成するときにだけアセンブリをダウンロードすることができます。 以下のチュートリアルでは、アプリケーション内の特定のアセンブリに "オプション" マークを付ける方法、および共通言語ランタイム (CLR) でそのアセンブリが必要なときに <xref:System.Deployment.Application> 名前空間にあるクラスを使用してアセンブリをダウンロードする方法について説明します。
@@ -56,10 +56,10 @@ ms.locfileid: "99917346"
 
 5. メモ帳などのテキストエディターを使用して、という名前の1つのプロパティを持つという名前のクラスを定義し `DynamicClass` `Message` ます。
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. テキストを ClickOnceLibrary.cs という名前のファイルとして保存 *するか、* 使用している言語に応じて [ *click* *] ディレクトリに* クリックします。
+6. テキストを、使用している言語に応じ *て clickという名前* のファイルとして保存 *するか、* クリックして *オンデマンド* のディレクトリに保存します。
 
 7. ファイルをアセンブリにコンパイルします。
 
@@ -79,14 +79,14 @@ ms.locfileid: "99917346"
 
 9. テキストエディターを使用して新しいファイルを作成し、次のコードを入力します。 このコードでは、必要に応じて Clicklibrary アセンブリをダウンロードする Windows フォームアプリケーションを作成します。
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. コードで、への呼び出しを見つけ <xref:System.Reflection.Assembly.LoadFile%2A> ます。
 
 11. は、前の手順で取得した `PublicKeyToken` 値に設定されます。
 
-12. ファイルを *Form1.cs* または *form1.vb* として保存します。
+12. ファイルを *form1.vb* または *form1.vb* として保存します。
 
 13. 次のコマンドを使用して、実行可能ファイルにコンパイルします。
 
