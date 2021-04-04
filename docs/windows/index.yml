@@ -8,16 +8,16 @@ metadata:
   description: Visual Studio を使って、アプリケーション、サービス、ツールを、任意の言語で、任意のプラットフォームやデバイス向けに開発する方法について説明します。
   ms.topic: hub-page
   ms.custom: contperf-fy21q1
-  ms.date: 03/23/2021
+  ms.date: 03/30/2021
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 9ea356f29ed511dc5e968dd0947f614277d497f0
-  ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+  ms.openlocfilehash: c2f3b148f99924047c71f2bf1a13a99183e77063
+  ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "105080282"
+  ms.lasthandoff: 03/31/2021
+  ms.locfileid: "106083543"
 highlightedContent:
   items:
   - title: セットアップとインストール
@@ -186,8 +186,8 @@ additionalContent:
       summary: Web 配置、InstallShield、NuGet、継続的インテグレーションなどを使用して、アプリとコードを共有します。
       url: ../deployment/index.yml
     - title: バージョン管理
-      summary: Git や TFVC などのバージョン コントロール テクノロジを使ってコードを共有します。
-      url: /azure/devops/repos/index
+      summary: Git や GitHub などのバージョン コントロール テクノロジを使ってコードを共有します。
+      url: ../ide/git-with-visual-studio.md
     - title: DevOps
       summary: 継続的にクラウドでアプリを構築およびリリースし、Azure DevOps Services でアジャイル プラクティスを実装します。
       url: /azure/devops

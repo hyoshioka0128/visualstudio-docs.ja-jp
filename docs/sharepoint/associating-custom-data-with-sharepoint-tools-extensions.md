@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5665fc28bacb76c6887cb7dcb1820ec9dc0d2b3a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851718"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215319"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>カスタムデータと SharePoint ツールの拡張機能の関連付け
   SharePoint ツールの拡張機能では、特定のオブジェクトにカスタムデータを追加できます。 これは、拡張機能の一部に、後で拡張機能の他のコードからアクセスするデータがある場合に便利です。 データを格納してアクセスするための独自の方法を実装する代わりに、拡張機能のオブジェクトにデータを関連付け、後で同じオブジェクトからデータを取得することができます。
@@ -79,8 +79,8 @@ ms.locfileid: "99851718"
 
   次のコード例では、特定のデータオブジェクトが既にプロジェクト項目に関連付けられているかどうかを判断します。 データオブジェクトがまだプロジェクト項目に関連付けられていない場合、コードはプロジェクト項目のプロパティにオブジェクトを追加し <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ます。 大きな例のコンテキストでこの例を確認するには、「 [方法: カスタム SharePoint プロジェクト項目の種類にプロパティを追加](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)する」を参照してください。
 
-  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
-  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
 
 ## <a name="see-also"></a>関連項目
 - [SharePoint ツール拡張機能におけるプログラミングに関する概念および特徴](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

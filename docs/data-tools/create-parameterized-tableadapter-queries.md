@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 373e062ad7f2d8600fd28f098cbc0cae1c8d5a65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d747459abc62462864e94ed9b8af9b11c6b9eabe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859009"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215931"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>パラメーター付きの TableAdapter クエリを作成する
 
@@ -42,7 +42,7 @@ ms.locfileid: "99859009"
 
 - 新しい TableAdapter を作成し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。 詳細については、「 [tableadapter の作成と構成](../data-tools/create-and-configure-tableadapters.md)」を参照してください。
 
-     \- または -
+     または
 
 - 既存の TableAdapter にクエリを追加し、目的のパラメーターを含む WHERE 句を SQL ステートメントに追加します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "99859009"
 
 4. 新しいクエリを作成する場合は、**[新しいクエリ名]** ボックスに名前を入力します。
 
-     \- または -
+     または
 
      **[既存のクエリ名]** ボックスでクエリを選択します。
 
@@ -89,8 +89,8 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 これが TableAdapter に対するクエリであった場合は、次のコードで出荷されていないすべての注文に対してクエリを実行できます。
 
-[!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)]
-[!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb" id="Snippet8":::
 
 クエリで null 値を使用できるようにするには、次のようにします。
 

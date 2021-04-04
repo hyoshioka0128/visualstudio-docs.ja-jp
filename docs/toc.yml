@@ -906,6 +906,7 @@
 - name: デバッグ >>
   href: debugger/index.yml
 - name: バージョン コントロール
+  expanded: true
   items:
     - name: Visual Studio での新しい Git エクスペリエンス
       href: ide/git-with-visual-studio.md
