@@ -2,7 +2,7 @@
 title: Visual Studio 2019 の新機能
 titleSuffix: ''
 description: Visual Studio 2019 の新機能について説明します。
-ms.date: 03/04/2021
+ms.date: 03/19/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221185"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082024"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 の新機能
 
@@ -222,13 +222,7 @@ Azure VM で実行される ASP.NET (Core およびデスクトップ) アプリ
 
 Visual Studio 2019 は、より優れた開発を可能にする新機能で頻繁に更新されています。 最新のイノベーションの詳細については、「[The Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/)」 (Visual Studio に関するブログ) を参照してください。 現在までプレビューでリリースしたものの記録については、[プレビュー リリース ノート](/visualstudio/releases/2019/release-notes-preview/)に関する記事を参照してください。 今後のリリース予定の一覧については、[Visual Studio のロードマップ](/visualstudio/productinfo/vs-roadmap)に関するページを参照してください。
 
-ここでは、現在作業中の新機能をいくつか紹介します。
-
-- **Visual Studio 2019 による GitHub Codespaces のサポート (プレビュー)**
-
-  これまで以上に、開発者は職場や自宅で複数のプロジェクトの作業を行っています。 新機能、バグ修正、PR レビュー、プロトタイプのすべてに時間が奪われ、一定のコンテキスト切り替えが必要です。 [GitHub Codespaces](https://github.com/features/codespaces) が役に立ちます。 すべてをクラウド内で開発でき、プロジェクトごとに専用のカスタム環境を数秒で作成できます。 Visual Studio 2019 を使用すると、コードスペースに接続して、ローカル環境と同じように作業できます。
-
-  詳細については、[GitHub Codespaces の概要](codespaces/codespaces-overview.md)に関するページを参照してください。
+一方、現在機能している新機能は次のとおりです。
 
 - **Visual Studio 2019 での Git エクスペリエンスの向上 (プレビュー)**
 

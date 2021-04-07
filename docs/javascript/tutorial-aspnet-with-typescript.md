@@ -1,7 +1,7 @@
 ---
 title: TypeScript を使用した ASP.NET Core アプリの作成
 description: このチュートリアルでは、ASP.NET Core と TypeScript を使用してアプリを作成します。
-ms.date: 03/16/2020
+ms.date: 03/25/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6297f7a392a497b79adca991b1ceba7fd701856d
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672840"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616988"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>チュートリアル: Visual Studio での TypeScript を使用した ASP.NET Core アプリの作成
 
@@ -287,7 +287,10 @@ Visual Studio では、*プロジェクト* の 1 つのアプリケーション
 
 ## <a name="next-steps"></a>次の手順
 
-ASP.NET Core で TypeScript を使用する方法の詳細については、こちらを参照してください。
+ASP.NET Core で TypeScript を使用する方法の詳細については、こちらを参照してください。 Visual Studio での AngularJS プログラミングに関心がある場合は、Visual Studio の [AngularJS Language Service 拡張機能](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)を使用できます。
 
 > [!div class="nextstepaction"]
 > [ASP.NET Core と TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+
+> [!div class="nextstepaction"]
+> [AngularJS Language Service 拡張機能](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)

@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを更新する
 description: --layout コマンドを実行して Visual Studio のネットワークベース インストールを更新する方法について説明します
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959156"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547402"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Visual Studio のネットワーク ベース インストールを更新する
 
@@ -33,17 +33,7 @@ ms.locfileid: "99959156"
 
 最新の更新プログラムが含まれるように、ネットワーク インストールの共有を更新するには、`--layout` コマンドを実行して、更新されたパッケージの増分をダウンロードします。
 
-::: moniker range="vs-2017"
-
-**15.3 の新機能**:[最初にネットワーク レイアウトを作成](create-a-network-installation-of-visual-studio.md)したときに部分的レイアウトを選択した場合は、その設定が保存されます。 以後のレイアウト コマンドでは以前のオプションと、指定した新しいすべてのオプションが使用されます。 以前のバージョンのレイアウトを使用している場合は、コンテンツの更新時に最初にネットワーク インストール レイアウトを作成したときに使用したものと同じコマンドライン パラメーター (つまり、同じワークロードと言語) を使用してください。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 [最初にネットワーク レイアウトを作成](create-a-network-installation-of-visual-studio.md)したときに部分的レイアウトを選択した場合は、その設定が保存されます。 以後のレイアウト コマンドでは以前のオプションと、指定した新しいすべてのオプションが使用されます。
-
-::: moniker-end
 
 ファイル共有上にレイアウトをホストしている場合は、レイアウトのプライベート コピーを更新し (例: c:\VSLayout)、すべての更新されたコンテンツがダウンロードされた後に、ファイル共有にコピーします (例: \\server\products\VS)。 この操作を行わない場合、レイアウトの更新中にユーザーがセットアップを実行しても、レイアウトが完全に更新されていないため、レイアウトからすべてのコンテンツを取得できない可能性が非常に高くなります。
 

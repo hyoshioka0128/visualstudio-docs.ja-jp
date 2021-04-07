@@ -1,7 +1,7 @@
 ---
 title: JavaScript 開発者向けの編集の概要
 description: この Visual Studio のコード エディターの概要では、Visual Studio で JavaScript コードを記述、コード内を移動、およびコードを理解する簡単な方法をいくつか示します。
-ms.date: 12/13/2018
+ms.date: 03/25/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1d9fb7cdc850bc54298cd3d82d52786a9e6a639
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935691"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616962"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>JavaScript 用コード エディターを使用する方法を学習する
 
@@ -48,7 +48,7 @@ IDE を使用して、新しいファイルをプロジェクトに追加する�
 
 また、IntelliSense では、プログラミング要素をポイントしたときに種類に関する情報を表示できます。
 
-IntelliSense 情報を提供する場合、言語サービスで TypeScript *d.ts* ファイルと JSDoc コメントを使用できます。 最も一般的な JavaScript ライブラリの場合、*d.ts* ファイルは自動的に取得されます。 IntelliSense 情報の取得方法について詳しくは、「[JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)」を参照してください
+IntelliSense 情報を提供する場合、言語サービスで TypeScript *d.ts* ファイルと JSDoc コメントを使用できます。 最も一般的な JavaScript ライブラリの場合、*d.ts* ファイルは自動的に取得されます。 IntelliSense 情報の取得方法について詳しくは、「[JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)」を参照してください。 Visual Studio での AngularJS プログラミングに関心がある場合は、Visual Studio の [AngularJS Language Service 拡張機能](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)を使用して IntelliSense を取得できます。
 
 ## <a name="check-syntax"></a>構文の確認
 
