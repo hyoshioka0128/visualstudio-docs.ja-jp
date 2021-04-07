@@ -40,7 +40,7 @@
   items:
     - name: クラウド サービス プロジェクトの作業
       items:
-        - name: Cloud Services の使用 (延長サポート) (プレビュー)
+        - name: Cloud Services を使用する (延長サポート)
           href: cloud-services-extended-support.md
         - name: Azure クラウド サービス プロジェクトの作成
           href: vs-azure-tools-azure-project-create.md

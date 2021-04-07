@@ -15,12 +15,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77daa47cdd6336849903202233392d3eecc33c1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f59375e9e64e6a7302d65b8c940d82b63adef54f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868895"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214201"
 ---
 # <a name="step-6-add-a-timer"></a>手順 6: タイマーの追加
 次に、絵合わせゲームに <xref:System.Windows.Forms.Timer> コントロールを追加します。 タイマーは、指定されたミリ秒間待機してから、*ティック* と呼ばれるイベントを発生させます。 タイマーは、アクションを開始したり定期的に繰り返したりする場合に便利です。 ここではタイマーの使用例として、プレーヤーが 2 つのアイコンを選択し、アイコンが一致しない場合は、短時間の経過後にその 2 つのアイコンが再び非表示になるようにします。
@@ -39,8 +39,8 @@ ms.locfileid: "99868895"
 
 3. **Windows フォーム デザイナー** でタイマー コントロール アイコンを選択して **Enter** キーを押すか、タイマーをダブルクリックして、空の Tick イベント ハンドラーを追加します。 次のコードを既存のコードと置き換えるか、手動でイベント ハンドラーに入力します。
 
-     [!code-csharp[VbExpressTutorial4Step6#7](../ide/codesnippet/CSharp/step-6-add-a-timer_1.cs)]
-     [!code-vb[VbExpressTutorial4Step6#7](../ide/codesnippet/VisualBasic/step-6-add-a-timer_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet7":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet7":::
 
       > [!IMPORTANT]
       > このページの右上にあるプログラミング言語のコントロールを使用して、C# コード スニペットまたは Visual Basic コード スニペットのいずれかを表示します。<br><br>![Docs.Microsoft.com のプログラミング言語コントロール](../ide/media/docs-programming-language-control.png)
@@ -52,8 +52,8 @@ ms.locfileid: "99868895"
 
 4. 新しいタイマーの動作を確認するには、コード エディターに移動し、`label_Click()` イベント ハンドラー メソッドの上部と下部に次のコードを追加します (`if` ステートメントを、上部に 2 つ追加し、下部に 3 つ追加することになります。メソッドの他の部分は同じです)。
 
-     [!code-csharp[VbExpressTutorial4Step6#8](../ide/codesnippet/CSharp/step-6-add-a-timer_2.cs)]
-     [!code-vb[VbExpressTutorial4Step6#8](../ide/codesnippet/VisualBasic/step-6-add-a-timer_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step6/cs/form1.cs" id="Snippet8":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step6/vb/form1.vb" id="Snippet8":::
 
      メソッドの上部のコードは、**Enabled** プロパティの値をチェックして、タイマーが開始されているかどうかをチェックします。 これにより、プレーヤーが 1 つ目と 2 つ目の Label コントロールをクリックした場合はタイマーが開始され、3 つ目のラベルをクリックした場合は何も実行されません。 ゲームの最初のクリックの準備が整う前に、プレーヤーが 3 つ目をクリックするのを防ぐこともできます。 
 

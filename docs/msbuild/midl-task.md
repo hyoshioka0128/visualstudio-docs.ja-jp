@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932014"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094979"
 ---
 # <a name="midl-task"></a>MIDL タスク
 
@@ -79,7 +79,7 @@ Microsoft インターフェイス定義言語 (MIDL: Microsoft Interface Defini
 
      省略可能な **String** 型のパラメーターです。
 
-     C/C++ プリプロセッサに渡すオプションを指定します。 スペースで区切られたプリプロセッサ オプションのリストを指定します。
+     C/C++ プリプロセッサに渡すオプションを指定します。 スペースで区切られたプリプロセッサ オプションのリストを指定します。 `/E` オプションを含める必要があります。
 
      詳細については、「[MIDL Command-Line Reference](/windows/desktop/Midl/midl-command-line-reference)」 (MIDL コマンド ライン リファレンス) の **/cpp_opt** オプションを参照してください。
 

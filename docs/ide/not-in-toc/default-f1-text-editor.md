@@ -1,45 +1,46 @@
 ---
 title: テキスト エディターの既定の F1 ヘルプ ページ
 description: Visual Studio テキスト エディター用 F1 ヘルプ要求の既定のページ
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.texteditor
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 6d30a7bf02202b8114e594c94f7564a1d8683e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d22a07e29b45362324074329aabfddf2b247a6b
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961652"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616910"
 ---
-# <a name="f1-help-for-the-text-editor"></a>テキスト エディターの F1 ヘルプ
+# <a name="code-editor-f1-help"></a>クエリ エディターの F1 ヘルプ
 
 検索対象が見つからなかったようです。申し訳ございません。 このページの一番下にあるボタンを使用してフィードバックを残すことで改善にご協力いただけます。または、以下のいずれかの提案をお試しください。
 
-## <a name="cursor-position"></a>カーソルの位置
+## <a name="get-help-for-your-programming-language"></a>プログラミング言語のヘルプの参照
 
-キーワードまたは API 名で F1 キー ヘルプをお探しの場合は、カーソルを対象の単語の中、または直後に置いてから **F1** キーを押してください。 それでも問題が解決しない場合は、次のいずれかの提案をお試しください。
+- [C# プログラミング ガイド](/dotnet/csharp/programming-guide/)または[言語リファレンス](/dotnet/csharp/language-reference/)。
+- [Visual Basic 言語の機能](/dotnet/visual-basic/programming-guide/language-features/)または[言語リファレンス](/dotnet/visual-basic/language-reference/)。
+- [Python ドキュメント](https://docs.python.org/)。
+- [C/C++ 言語および標準ライブラリのリファレンス](/cpp/cpp/c-cpp-language-and-standard-libraries)。
+- [F# ガイド](/dotnet/fsharp/)。
+- [TypeScript ドキュメント](https://www.typescriptlang.org/docs)。
 
-## <a name="find-help-on-a-keyword-or-api"></a>キーワードまたは API に関するヘルプを検索する
-
-- C# のヘルプについては、[C# プログラミング ガイド](/dotnet/csharp/programming-guide/)または[言語リファレンス](/dotnet/csharp/language-reference/)を参照してください。
-- Visual Basic のヘルプについては、[Visual Basic 言語の機能](/dotnet/visual-basic/programming-guide/language-features/)または[言語リファレンス](/dotnet/visual-basic/language-reference/)を参照してください。
-- Python のヘルプについては、[Python ドキュメント](https://docs.python.org/)を参照してください。
-- C++ のヘルプについては、「[C/C++ 言語および標準ライブラリのリファレンス](/cpp/cpp/c-cpp-language-and-standard-libraries)」を参照してください。
-- F# のヘルプについては、「[F# のガイド](/dotnet/fsharp/)」を参照してください。
-- TypeScript のヘルプについては、[TypeScript のドキュメント](https://www.typescriptlang.org/docs)を参照してください。
-
-## <a name="search-for-help-on-a-keyword-or-api-name"></a>キーワードまたは API 名に関するヘルプを検索する
+## <a name="search-for-help-on-keyword-api-name-file-type-or-ui-settings"></a>キーワード、API 名、ファイルの種類、または UI の設定のヘルプを検索します
 
 キーワードまたは API 名に関する F1 ヘルプをお探しの場合:
+
 - [docs.microsoft.com](/) で検索してみてください
 - 検索エンジンを使用して検索してみてください。
 - [.NET API ブラウザー](/dotnet/api/)で参照ドキュメントを検索します。
+
+## <a name="cursor-position"></a>カーソルの位置
+
+キーワードまたは API 名で F1 キー ヘルプをお探しの場合は、カーソルを対象の単語の中、または直後に置いてから **F1** キーを押してください。
 
 ## <a name="find-the-source-code-for-an-api"></a>API のソース コードを検索する
 

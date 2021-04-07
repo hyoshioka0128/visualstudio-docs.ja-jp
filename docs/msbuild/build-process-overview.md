@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939670"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082540"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild によってプロジェクトがビルドされる方法
 
@@ -139,7 +139,7 @@ Visual Studio では、ソリューション (.sln) ファイルでプロジェ�
 
 *Microsoft.Common.targets* ファイルとそれによってインポートされるターゲット ファイルでは、.NET プロジェクトの標準のビルド プロセスが定義されています。 また、ビルドのカスタマイズに使用できる拡張ポイントも提供されます。
 
-実装では、*Microsoft.Common.targets* は *Microsoft.Common.CurrentVersion.targets* をインポートする薄いラッパーです。 このファイルには、標準プロパティの設定が含まれており、ビルド プロセスを定義する実際のターゲットが定義されています。 `Build` ターゲットはここで定義されていますが、実際には空です。 ただし、`Build` ターゲットには、実際のビルド手順を構成する個々のターゲット (`BeforeBuild`、`CoreBuild`、`AfterBuild`) を指定する `DependsOn` 属性が含まれています。 `Build` ターゲットは次のように定義されています。
+実装では、*Microsoft.Common.targets* は *Microsoft.Common.CurrentVersion.targets* をインポートする薄いラッパーです。 このファイルには、標準プロパティの設定が含まれており、ビルド プロセスを定義する実際のターゲットが定義されています。 `Build` ターゲットはここで定義されていますが、実際には空です。 ただし、`Build` ターゲットには、実際のビルド手順を構成する個々のターゲット (`BeforeBuild`、`CoreBuild`、`AfterBuild`) を指定する `DependsOnTargets` 属性が含まれています。 `Build` ターゲットは次のように定義されています。
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ Visual Studio では、ソリューション (.sln) ファイルでプロジェ�
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` と `AfterBuild` は拡張ポイントです。 それらは *Microsoft.Common.CurrentVersion.targets* ファイルでは空ですが、プロジェクトで、独自の `BeforeBuild` ターゲットと `AfterBuild` ターゲットおよびメイン ビルド プロセスの前後で実行する必要があるタスクを提供できます。 `AfterBuild` は、no-op ターゲット `Build` の前に実行されます。これは、`AfterBuild` は `Build` ターゲットの `DependsOn` 属性に出現しますが、それは `CoreBuild` の後で発生するためです。
+`BeforeBuild` と `AfterBuild` は拡張ポイントです。 それらは *Microsoft.Common.CurrentVersion.targets* ファイルでは空ですが、プロジェクトで、独自の `BeforeBuild` ターゲットと `AfterBuild` ターゲットおよびメイン ビルド プロセスの前後で実行する必要があるタスクを提供できます。 `AfterBuild` は、no-op ターゲット `Build` の前に実行されます。これは、`AfterBuild` は `Build` ターゲットの `DependsOnTargets` 属性に出現しますが、それは `CoreBuild` の後で発生するためです。
 
 `CoreBuild` ターゲットには、次のようなビルド ツールの呼び出しが含まれています。
 
