@@ -1,7 +1,7 @@
 ---
 title: ネットワーク ベース インストールを作成する
 description: 企業内に Visual Studio を展開するためのネットワーク インストール ポイントを作成する方法について説明します。
-ms.date: 08/27/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,21 +15,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b572a6854d505704accd79cc4da2ac4e52c193d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 748f0da7810918d8b41247059277fb73158f1bc9
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850174"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547428"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Visual Studio のネットワーク インストールを作成する
 
-通常、企業の管理者はクライアント ワークステーションに展開するためのネットワーク インストール ポイントを作成します。 Visual Studio は、初期インストールのファイルとすべての製品の更新プログラムが単一のファイルにキャッシュされるように設計されています。 (このプロセスは _レイアウトの作成_ とも呼ばれています。)
-
-これは、最新のサービスの更新プログラムに更新されていない場合でも、クライアント ワークステーションが同じネットワークの場所を使用してインストールを管理できるようにするためです。
+エンタープライズ管理者は、クライアントワーク ステーションに展開できる Visual Studio ファイルを含むネットワーク インストール ポイントの作成が必要になる場合があります。 これは、クライアント コンピューターのアクセス許可が制限されている場合や、インターネットへのアクセスが制限されている場合や、組織が特定のバージョンの開発者ツールセットを標準化する前に、内部チームが互換性テストを行う必要がある場合に役立ちます。 Visual Studio は、管理者が "_ネットワーク レイアウトを作成_" できるように設計されました。基本的に、初期インストールと今後のすべての製品の更新プログラムの両方について、すべての Visual Studio ファイルを含む内部静的ネットワーク共有上にファイル キャッシュが作成されます。
 
  > [!NOTE]
- > 複数のエディションの Visual Studio を企業内で利用している場合 (たとえば、Visual Studio Professional と Visual Studio Enterprise の両方)、エディションごとに個別のネットワーク インストール共有を作成する必要があります。
+ >  - 複数のエディションの Visual Studio を企業内で利用している場合 (たとえば、Visual Studio 2019 と Visual Studio 2019 Enterprise の両方)、エディションごとに個別のネットワーク インストール共有を作成する必要があります。
+ >  - 最初のクライアントをインストールする "_前に_"、クライアントがどのように製品の更新プログラムを受信するかを決定することをお勧めします。  これにより、構成オプションが簡単に正しく設定されるようになります。 クライアントが更新プログラムを入手する場所としては、ネットワーク レイアウトの場所、またはインターネットを選択することができます。 
+ >  - 修復とアンインストールの機能が正しく動作するには、元の Visual Studio のインストール レイアウトとそれ以降のすべての製品の更新プログラムが同じネットワーク ディレクトリに配置されている必要があります。 
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Visual Studio ブートストラップをダウンロードする
 
@@ -37,64 +37,72 @@ ms.locfileid: "99850174"
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 のブートストラップを取得するには、その方法の詳細について、[以前のバージョンの Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) のダウンロード ページを参照してください。
-
-セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものでなければなりません。
+Visual Studio 2017 バージョン 15.9 の最新のブートストラップを入手するには、[Visual Studio の以前のバージョン](https://visualstudio.microsoft.com/vs/older-downloads/)のページに移動し、次のいずれかのブートストラップ ファイルをダウンロードします。
 
 | エディション | ファイル名 |
 |-------------|-----------------------|
-|Visual Studio Enterprise | **vs_enterprise.exe** |
-|Visual Studio Professional | **vs_professional.exe** |
-|Visual Studio Build Tools   | **vs_buildtools.exe** |
+|Visual Studio 2017 Enterprise バージョン 15.9 | vs_enterprise.exe |
+|Visual Studio 2017 Professional バージョン 15.9 | vs_professional.exe |
+|Visual Studio 2017 Build Tools バージョン 15.9  | vs_buildtools.exe |
 
-その他にサポートされているブートストラップとして、**vs_feedbackclient.exe**、**vs_teamexplorer.exe**、**vs_testagent.exe**、**vs_testcontroller.exe**、**vs_testprofessional.exe** があります。
+その他にサポートされているブートストラップとして、vs_feedbackclient.exe、vs_teamexplorer.exe、vs_testagent.exe、vs_testcontroller.exe、vs_testprofessional.exe があります。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものでなければなりません。
+まずは、Visual Studio 2019 のブートストラップを、[Visual Studio のダウンロード ページ](https://visualstudio.microsoft.com/downloads)または、「[Visual Studio 2019 リリース](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)」ページから自分で選択した Visual Studio のバージョンおよびエディション用にダウンロードします。  セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものとなります。
 
 |エディション | ダウンロード|
 |-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-| Visual Studio Build Tools   | [**vs_buildtools.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+|Visual Studio Enterprise | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio Build Tools   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 
 その他にサポートされているブートストラップして、[vs_teamexplorer.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe)、[vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe)、[vs_testcontroller.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe) があります。
 
 ::: moniker-end
 
+::: moniker range="vs-2017"
+
 >[!TIP]
->前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」ページを参照してください。
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」を参照してください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+>[!TIP]
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対応する Visual Studio のリリースを調べるには、「[Visual Studio 2019 リリース](https://docs.microsoft.com/visualstudio/releases/2019/history)」を参照してください。
+
+::: moniker-end
 
 ## <a name="create-an-offline-installation-folder"></a>オフライン インストール フォルダーを作成する
 
-このステップを実行するにはインターネット接続が必要です。 すべての言語およびすべての機能を使用してオフライン インストールを作成するには、次のいずれかの例のようなコマンドを使用します。
+このステップを実行するにはインターネット接続が必要です。 
+
+コマンド プロンプトを開き、ブートストラップをダウンロードしたディレクトリに移動し、「[コマンドライン パラメーターを使用して Visual Studio をインストールする](../install/use-command-line-parameters-to-install-visual-studio.md)」ページで定義されているようにブートストラップのパラメーターを使用して、ネットワーク インストール キャッシュを作成および維持します。 初期レイアウトの作成の一般的な例については、下記と「[Visual Studio のインストールに使用するコマンド ライン パラメーターの例](../install/command-line-parameter-examples.md)」を参照してください。  
 
    > [!IMPORTANT]
-   > 1 つの言語ロケールの完全なレイアウトを使用するには、Visual Studio Community では約 35 GB のディスク領域、Visual Studio Enterprise では 42 GB が必要です。 その他の[言語ロケール](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)には、それぞれ約 0.5 GB が必要になります。 詳細については、「[ネットワーク レイアウトをカスタマイズする](#customize-the-network-layout)」セクションを参照してください。
-   >
-   > [!TIP]
-   > コマンドをダウンロード ディレクトリから実行していることを確認してください。 通常は、Windows 10 を実行するコンピューター上の `C:\Users\<username>\Downloads` です。
-
-- Visual Studio Enterprise の場合、以下を実行します。
+   > 1 つの言語ロケールの完全な初期レイアウトを使用するには、Visual Studio Community では約 35 GB のディスク領域、Visual Studio Enterprise では 42 GB が必要です。 その他の[言語ロケール](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)には、それぞれ約 0.5 GB が必要になります。 詳細については、「[ネットワーク レイアウトをカスタマイズする](#customize-the-network-layout)」セクションを参照してください。 後続のレイアウトの更新プログラムも同じネットワークの場所に保存する必要があるため、ネットワーク レイアウトの場所のディレクトリの内容が時間の経過と共に大きくなる可能性があることに注意してください。  
+   
+- すべての言語とすべての機能が含まれる、Visual Studio Enterprise の初期レイアウトを作成するには、次のように実行します。
 
   ```vs_enterprise.exe --layout c:\VSLayout```
 
-- Visual Studio Professional の場合、以下を実行します。
+- すべての言語とすべての機能が含まれる、Visual Studio Professional の初期レイアウトを作成するには、次のように実行します。
 
   ```vs_professional.exe --layout c:\VSLayout```
 
 ## <a name="modify-the-responsejson-file"></a>response.json file を変更する
 
-response.json を変更し、セットアップの実行時に使用される既定値を設定できます。  たとえば、特定のワークロード セットが自動的に選択されるように `response.json` ファイルを構成できます。 詳細については、「[Automate Visual Studio installation with a response file](automated-installation-with-response-file.md)」 (応答ファイルで Visual Studio インストールを自動化する) を参照してください。
+`response.json` ファイルを変更し、セットアップの実行時に使用される既定値を設定できます。  たとえば、自動での選択が必要な、特定のワークロード セットが選択されるように `response.json` ファイルを構成できます。 また、`response.json` を構成して、クライアントがネットワーク レイアウトの場所から更新されたファイルのみを受信する必要があるかどうかを指定することもできます。 詳細については、[応答ファイルを使用した Visual Studio インストールの自動化](../install/automated-installation-with-response-file.md)に関する記事を参照してください。 
 
-Visual Studio ブートストラップを response.json ファイルとペアリングしている場合に Visual Studio ブートストラップがエラーをスローする問題が発生した場合、対処方法の詳細については、「[Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)」ページの「Failed to parse ID from parent process」 (親プロセスから ID を解析できませんでした) セクションを参照してください。
+Visual Studio ブートストラップを `response.json` ファイルとペアリングしている場合にエラーがスローされる問題が発生した場合の詳細については、[Visual Studio をインストールまたは使用するときのネットワーク関連のエラーのトラブルシューティング](../install/troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)に関する記事を参照してください。
 
 ## <a name="copy-the-layout-to-a-network-share"></a>ネットワーク共有にレイアウトをコピーする
 
-他のコンピューターから実行できるようにネットワーク共有でレイアウトをホストします。
+クライアント コンピューターから実行できるようにネットワーク共有でレイアウトをホストします。
 
 次の例では、[xcopy](/windows-server/administration/windows-commands/xcopy/) を使用します。 必要に応じて、[robocopy](/windows-server/administration/windows-commands/robocopy/) を使用することもできます。
 
@@ -166,17 +174,7 @@ xcopy /e c:\VSLayout \\server\products\VS2019
     vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
-::: moniker range="vs-2017"
-
-### <a name="new-in-version-153"></a>バージョン 15.3 での新機能
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 ### <a name="save-your-layout-options"></a>レイアウト オプションの保存
-
-::: moniker-end
 
 レイアウト コマンドを実行すると、(ワークロードや言語などの) 指定したオプションが保存されます。 後続のレイアウトコマンドには、それ以前のすべてのオプションが含まれます。  英語のみ対象の 1 つのワークロードを含むレイアウトの例を示します。
 
@@ -255,29 +253,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-release"></a>以前の Visual Studio リリースのレイアウトを作成する方法
 
-::: moniker range="vs-2017"
+まず、2 種類の Visual Studio ブートストラップがあることを理解しておく必要があります。"latest"、"current"、"evergreen"、および "tip" という文字が付けられたものと、本質的に "固定バージョン" を意味するものです。 どちらの種類のブートストラップ ファイルもまったく同じ名前で、種類を区別する最善の方法は、どこから入手したかに注目することです。 [Visual Studio のダウンロード ページ](https://visualstudio.microsoft.com/downloads)で入手できる Visual Studio ブートストラップは evergreen の Visual Studio ブートストラップと見なされ、ブートストラップの実行時にチャネルで利用可能な最新のリリースが常にインストール (または更新) されます。 「[Visual Studio 2019 リリース](https://docs.microsoft.com/visualstudio/releases/2019/history)」ページで使用可能な、または Microsoft Update カタログの管理者向け更新プログラムに埋め込まれている Visual Studio ブートストラップでは、特定の固定バージョンの製品がインストールされます。 
 
-> [!NOTE]
-> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) で入手可能な Visual Studio ブートストラップを使用すると、それを実行したときに利用できる最新の Visual Studio リリースをダウンロードしてインストールできます。
->
-> そのため、Visual Studio *ブートストラップ* を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
->
-> しかし、*レイアウト* を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
+そのため、Visual Studio の evergreen のブートストラップを今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点で最新の Visual Studio リリースがインストールされます。 常に最新のビットがインストールされ、最新になるように設計されています。
 
-::: moniker-end
+固定リンクのブートストラップをダウンロードした場合、または Microsoft カタログからダウンロードした管理者向け更新プログラムを実行した場合は、いつ実行されたかに関係なく、常に特定のバージョンの製品がインストールされます。
 
-::: moniker range="vs-2019"
-
-> [!NOTE]
-> [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads) で入手可能な Visual Studio ブートストラップを使用すると、それを実行したときに利用できる最新の Visual Studio リリースをダウンロードしてインストールできます。
->
-> そのため、Visual Studio *ブートストラップ* を今日ダウンロードし、今日から 6 か月後に実行すると、そのブートストラップの実行時点での最新の Visual Studio リリースがインストールされます。
->
-> しかし、*レイアウト* を作成し、そのレイアウトからインストールする場合、レイアウト内に存在する特定のバージョンの Visual Studio がインストールされます。 新しいバージョンがオンラインに存在するとしても、レイアウトに存在するバージョンの Visual Studio が取得されます。
-
-::: moniker-end
-
-旧バージョンの Visual Studio のレイアウトを作成する必要がある場合は、[https://my.visualstudio.com](https://my.visualstudio.com) に進み、Visual Studio ブートストラップの "固定" バージョンをダウンロードできます。
+最後に、これらのブートストラップのいずれかを使用してネットワーク レイアウトを作成できます。また、レイアウトで作成されるバージョンは、使用しているブートストラップによって異なります。たとえば、固定バージョンまたは最新のいずれかになります。 それから、それ以降のブートストラップを使用してネットワーク レイアウトを更新したり、Microsoft Update カタログから管理者向け更新プログラムのパッケージを使用したりもできます。 レイアウトの更新方法に関係なく、結果として得られる更新後のレイアウトは、特定のバージョンの製品を含むパッケージ キャッシュになり、固定リンクのブートストラップのように動作します。 そのため、クライアントがレイアウトからインストールされるたびに、クライアントは (新しいバージョンがオンラインに存在する場合でも) レイアウトに存在する特定のバージョンの Visual Studio をインストールします。 
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>オフライン インストーラーのサポートを受ける方法
 
