@@ -2,7 +2,7 @@
 title: Visual Studio インスタンスの検出および管理用のツール
 titleSuffix: ''
 description: クライアント コンピューター上の Visual Studio のインストールを検出して管理するために使用できるツールについて説明します。
-ms.date: 08/14/2017
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,34 +16,51 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: efd4091407d228a15cc80971d759e5371bddd3ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b6b641081c9b969cadd2c9517967adb8cc4cb1e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959260"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547441"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Visual Studio インスタンスの検出および管理用のツール
 
-クライアント コンピューターでの Visual Studio のインストールの検出と管理に使用できるツールは複数あります。
+クライアント コンピューター上の Visual Studio のインストールを検出し、インストールを管理するために使用できるツールがいくつかあります。
 
 ## <a name="detecting-existing-visual-studio-instances"></a>既存の Visual Studio インスタンスの検出
 
-クライアント コンピューターにインストールされている Visual Studio インスタンスを検出して管理するために役立つ複数のツールが用意されています。
+次のツールとユーティリティを使用すると、クライアント コンピューターにインストールされている Visual Studio インスタンスを検出および管理するのに役立ちます。
 
-* [vswhere](https://github.com/microsoft/vswhere): Visual Studio に組み込まれているか、個別のディストリビューションで使用可能な実行可能ファイルです。特定のコンピューター上のすべての Visual Studio インスタンスの場所を見つけるのに役立ちます。
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): セットアップ構成 API を使用して Visual Studio のインストール済みインスタンスを識別する PowerShell スクリプトです。
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): セットアップ構成 API を使用して既存のインストールを照会する方法を示す C# と C++ のサンプルです。
-
-さらに、[セットアップ構成 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) は、Visual Studio インスタンスを問い合わせるために独自のユーティリティを構築する開発者向けのインターフェイスを提供します。
+* [**vswhere**](https://github.com/microsoft/vswhere): Visual Studio に組み込まれているか、個別のディストリビューションで使用可能な実行可能ファイルです。特定のコンピューター上のすべての Visual Studio インスタンスの場所を見つけるのに役立ちます。
+* [**VSSetup.PowerShell**](https://github.com/microsoft/vssetup.powershell): セットアップ構成 API を使用して Visual Studio のインストール済みインスタンスを識別する PowerShell スクリプトです。
+* [**VS-Setup-Samples**](https://github.com/microsoft/vs-setup-samples): セットアップ構成 API を使用して既存のインストールを照会する方法を示す C# と C++ のサンプルです。
+* [**Windows Management Instrumentation (WMI)** ](https://docs.microsoft.com/windows/win32/wmisdk/wmi-start-page): Visual Studio のインスタンス情報は、Visual Studio のクラス MSFT_VSInstance を使用して照会できます。 
+* [**セットアップ構成 API**](<xref:Microsoft.VisualStudio.Setup.Configuration>) は、Visual Studio インスタンスを問い合わせるために独自のユーティリティを構築する開発者向けのインターフェイスを提供します。
+* [**Microsoft Endpoint Configuration Manager ソフトウェア インベントリ**](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory): クライアント デバイス上の Visual Studio インスタンスに関する情報を収集するために使用できます。 
 
 ## <a name="using-vswhereexe"></a>vswhere.exe の使用
 
-`vswhere.exe` は Visual Studio (Visual Studio 2017 バージョン 15.2 以降のバージョン) に自動的に取り込まれます。またはそれを [vswhere リリース ページ](https://github.com/Microsoft/vswhere/releases)からダウンロードすることもできます。 ツールのヘルプ情報を取得する場合は `vswhere -?` を使用します。 たとえば、このコマンドでは以前のバージョンの製品やプレリリースを含む、Visual Studio のすべてのリリースが表示され、JSON 形式で結果が出力されます。
+`vswhere.exe` は Visual Studio 2017 以降に自動的に含まれていますが、[vswhere リリース ページ](https://github.com/Microsoft/vswhere/releases)からダウンロードすることもできます。 ツールのヘルプ情報を取得する場合は `vswhere -?` を使用します。 たとえば、このコマンドを使用すると、製品の以前のバージョンとプレリリースを含む Visual Studio のすべてのリリースが表示され、結果が JSON 形式で出力されます。
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
+## <a name="using-windows-management-instrumentation-wmi"></a>Windows Management Instrumentation (WMI) の使用
+
+コンピューターに Visual Studio Client Detector Utility がインストールされている場合は、WMI を使用して Visual Studio インスタンス情報を照会できます。 Visual Studio Client Detector Utility は、2020 年 5 月 12 日以降にリリースされたすべての Visual Studio 2017 および Visual Studio 2019 の更新プログラムにより既定でインストールされます。 個別にインストールする場合は、[Microsoft Update カタログ](https://catalog.update.microsoft.com/)からも入手できます。  ユーティリティを使用して Visual Studio インスタンス情報を返す方法の例については、クライアント コンピューターで管理者として PowerShell を開き、次のコマンドを入力します。
+
+```cmd
+Get-CimInstance MSFT_VSInstance
+```
+
+## <a name="using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager の使用 
+
+[Microsoft Endpoint Configuration Manager ソフトウェア インベントリ](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)機能を使用して、クライアント デバイス上の Visual Studio インスタンスに関する情報のクエリを実行し、収集することができます。 たとえば、次のクエリを実行すると、インストールされているすべての Visual Studio 2017 および 2019 インスタンスについて、Visual Studio がインストールされている表示名、バージョン、およびデバイス名が返されます。 
+
+```WQL 
+select distinct SMS_G_System_COMPUTER_SYSTEM.Name, SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName, SMS_G_System_ADD_REMOVE_PROGRAMS.Version from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Visual Studio %[a-z]% 201[7,9]" 
+``` 
 
 ::: moniker range="vs-2017"
 
@@ -80,6 +97,6 @@ Visual Studio ではレジストリ設定はプライベートな場所に保存
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-* [Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)
+* [Visual Studio 管理者ガイド](../install/visual-studio-administrator-guide.md)

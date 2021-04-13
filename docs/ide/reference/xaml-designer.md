@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836190"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082527"
 ---
 # <a name="xaml-designer-options-page"></a>XAML デザイナーのオプション ページ
 
@@ -63,6 +63,17 @@ ms.locfileid: "99836190"
 |**Alt + マウス ホイール**|**Alt** キーを押しながらマウス ホイールをスクロールして、XAML デザイナーを拡大します。|
 
 これらの設定は、XAML ドキュメントを編集するときのデザイナーの動作を決定します。
+
+## <a name="default-zoom-setting"></a>既定のズーム設定
+
+この設定を使用し、XAML ドキュメントを表示するための既定のズーム値を決定します。
+
+|名前|[説明]|
+|-|-|
+|**[Last Used]\(最終使用\)**|既定ですべての XAML ドキュメントに最後に使用されたズーム値を使用します。 XAML ドキュメントを初めて開くと、初回のみ "全体を表示" 設定が使用されます。|
+|**[全体を表示]**|このオプションを使用すると、XAML デザイナーのズーム値が "全体を表示" に設定されます。 XAML ドキュメントを閉じて再び開くと、そのセッションには最後に設定された値が残りますが、別のセッションには既定で "全体を表示" が使用されます。|
+
+これらの設定により、XAML ドキュメントを編集するときのデザイナーの動作が決定されます。
 
 |名前|説明|
 |-|-|

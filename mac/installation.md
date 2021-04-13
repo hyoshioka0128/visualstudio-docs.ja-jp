@@ -3,17 +3,17 @@ title: Visual Studio 2019 for Mac をインストールする
 description: Visual Studio 2019 for Mac とクロスプラット フォーム開発に必要なその他のコンポーネントをインストールする手順について説明します。
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 03/04/2021
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 653e653a0574da52c0030b06c7a8c13b436ed686
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727568"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273415"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Visual Studio 2019 for Mac をインストールする
 
@@ -28,7 +28,8 @@ macOS でネイティブのクロスプラット フォーム対応の .NET ア�
 
 iOS または macOS 向けに Xamarin アプリをビルドするには、以下も必要になります。
 
-- Xcode 10.0 以降。 通常は最新の安定バージョンをお勧めします。
+- 最新バージョンの Xcode と互換性がある Mac。 Apple の[最小要件に関するドキュメント](https://developer.apple.com/support/xcode/)を参照してください。
+- 最新バージョンの [Xcode](https://developer.apple.com/xcode)。 お使いの Mac と最新バージョンの間に互換性がない場合、[以前のバージョンの Xcode を使用](https://docs.microsoft.com/xamarin/ios/troubleshooting/questions/old-version-xcode)できることがあります。
 - Apple ID。 Apple ID をまだ持っていない場合は、 https://appleid.apple.com で新しい ID を作成できます。 Xcode をインストールしてサインインするには、Apple ID を持っている必要があります。
 
 ## <a name="installation-instructions"></a>インストール手順
@@ -96,14 +97,21 @@ Visual Studio for Mac をインストールすると、アプリのコードの�
 
 ### <a name="ios"></a>iOS
 
-1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
-2. [デバイス プロビジョニング](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning) (デバイスでアプリケーションを実行する場合)。
+1. [Hello, iOS](https://docs.microsoft.com//xamarin/ios/get-started/hello-ios/)
+2. [デバイス プロビジョニング](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/) (デバイスでアプリケーションを実行する場合)。
 
 ### <a name="android"></a>Android
 
-1. [Xamarin Android SDK Manager の使用](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Android SDK エミュレーター](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [開発用のデバイスの設定](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+1. [Hello Android](https://docs.microsoft.com/xamarin/android/get-started/hello-android/)
+2. [Xamarin Android SDK Manager の使用](https://docs.microsoft.com/xamarin/android/get-started/installation/android-sdk?tabs=macos)
+3. [Android SDK エミュレーター](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)
+4. [開発用のデバイスの設定](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)
+
+### <a name="xamarinforms"></a>Xamarin.Forms
+
+Xamarin.Forms でネイティブ クロスプラットフォーム アプリケーションを構築する:
+
+1. [Xamarin.Forms のクイックスタート](https://docs.microsoft.com/xamarin/get-started/quickstarts/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core アプリ, ASP.NET Core Web アプリ, Unity ゲーム開発
 

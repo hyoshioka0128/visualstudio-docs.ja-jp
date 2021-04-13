@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 企業向けガイド
 description: 企業環境で Visual Studio の設定とトラブルシューティングを行います。
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -16,18 +16,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5e8a28ac89c2bea85aee8323060bf948266ad2e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967112"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547389"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio 企業向けガイド
 お客様の会社で Visual Studio の利用を開始するときに時間を節約したい場合は、ここから開始してください。 この企業向けガイドには、一般的な企業シナリオにおいて Visual Studio をインストールおよび更新したり、問題が発生した場合にブロックを解除したり、さらにヘルプが必要な場合に問題を報告する方法を把握したりするためのヒントが含まれています。 
 
 ## <a name="get-started"></a>作業開始 
-ネットワーク環境およびオフライン環境で、企業に Visual Studio を展開する方法について説明します。 
+ネットワーク環境およびオフライン環境で、企業に Visual Studio を展開する方法について説明します。
+
+- **[Microsoft Endpoint Configuration Manager (SCCM) を使用して管理者の更新を有効にする](enabling-administrator-updates.md)** 。  Visual Studio 更新プログラムは、[Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Home.aspx)と [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) に含まれています。 エンタープライズ管理者は更新プログラムをダウンロードし、Microsoft Endpoint Configuration Manager (SCCM) などの標準展開ツールを使用し、組織全体の Visual Studio クライアント コンピューターに更新プログラムを配布できます。
 
 - **ネットワーク環境での企業向け展開のオプションについて理解します**。 「[Visual Studio 管理者ガイド](visual-studio-administrator-guide.md)」には、システム管理者に向けたシナリオベースのガイダンスが記載されています。 
 
@@ -43,17 +45,19 @@ ms.locfileid: "99967112"
 
 一般的な企業シナリオにおける Visual Studio のインストール方法について説明します。 
 
-- **[コマンド ライン パラメーターを使用して Visual Studio をインストールします](use-command-line-parameters-to-install-visual-studio.md)** 。 各種パラメーターを使用して、Visual Studio のインストールを制御またはカスタマイズします。 インストール プロセスを自動化するか、後で使用するためにインストール ファイルのキャッシュを作成します。 
+- **[コマンド ライン パラメーターを使用して Visual Studio をインストールします](use-command-line-parameters-to-install-visual-studio.md)** 。 各種パラメーターを使用して、Visual Studio のインストールを制御またはカスタマイズします。 インストール プロセスを自動化するか、後で使用するためにインストール ファイルのキャッシュを作成します。 詳細については、[コマンド ライン パラメーターの例](command-line-parameter-examples.md)に関するページを参照してください。
 
-- **「[Visual Studio のインストールに使用するコマンド ライン パラメーターの例](command-line-parameter-examples.md)」をご覧ください**。 コマンド ライン パラメーターを使用して Visual Studio をインストールする方法を説明するため、いくつかの例が示されます。例は必要に応じてカスタマイズできます。 
+- **[Visual Studio のネットワーク インストールを作成します](create-a-network-installation-of-visual-studio.md)** 。 初期インストールのファイルとすべての製品の更新プログラムを、単一のフォルダーにキャッシュします。 
 
-- **[ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure サービスをインストールして使用します](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)** 。 お客様の組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策が取られている場合は、Visual Studio および Azure サービスをインストールして使用する際に最良のエクスペリエンスを得るために、"許可リスト" への追加をお勧めするドメイン URL と、開くことをお勧めするポートおよびプロトコルがあります。 
+- **[ファイアウォールまたはプロキシ サーバーの内側に Visual Studio および Azure サービスをインストールして使用します](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)** 。 お客様の組織でファイアウォールやプロキシ サーバーなどのセキュリティ対策が取られている場合は、Visual Studio および Azure サービスをインストールして使用する場合に最良のエクスペリエンスを得るために、"許可リスト" への追加をお勧めするドメイン URL と、開くことが推奨されるポートとプロトコルがあります。 
 
-- **[Visual Studio のネットワーク インストールを作成します](create-a-network-installation-of-visual-studio.md)** 。 初期インストールのファイルとすべての製品の更新プログラムを、単一のフォルダーにキャッシュします。  
+- **[オフライン インストールに必要な証明書をインストールする](../install/install-certificates-for-visual-studio-offline.md)** 。 クライアント コンピューターがインターネットから完全に切断されている場合、必要な証明書をインストールします。
 
 ## <a name="update-visual-studio"></a>Visual Studio を更新する 
 
 Visual Studio を正常に更新し、更新に関する問題を修正する方法について説明します。 
+
+- **[Microsoft Endpoint Configuration Manager (SCCM) を使用して管理者の更新を適用する](../install/applying-administrator-updates.md)** 。 SCCM を使用して Visual Studio の機能、セキュリティ、品質の更新プログラムを配布する方法について説明します。 
 
 - **[Visual Studio のネットワーク ベース インストールを更新します](update-a-network-installation-of-visual-studio.md)** 。 ネットワーク インストール レイアウトを Visual Studio の最新の更新プログラムのインストール ポイントとして使用できるように、また、クライアント ワークステーションに既に配置されているインストールを保持するために、最新の製品の更新プログラムを使って Visual Studio のネットワーク インストール レイアウトを更新します。
 
@@ -70,3 +74,4 @@ Visual Studio を正常に更新し、更新に関する問題を修正する方
 ## <a name="see-also"></a>関連項目 
 
 - [Visual Studio の生産性に関するガイド](../ide/productivity-features.md)
+

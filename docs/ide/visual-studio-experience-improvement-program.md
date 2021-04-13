@@ -8,16 +8,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60a67da568703282a3ae469afa4dbc15c53cf4ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c7f425d87ba6316c3a3cab66f2b342b4c1141f4
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873945"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110598"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio カスタマー エクスペリエンス向上プログラム
 
-Visual Studio カスタマー エクスペリエンス向上プログラム (VSCEIP) は、Microsoft による Visual Studio の改善を時間の経過と共に支援するように設計されています。 このプログラムは、コンピューターでのユーザーのタスクを中断させずにコンピューター ハードウェア、ユーザーの Visual Studio の利用、[エラーに関する情報を収集](../ide/diagnostic-data-collection.md)します。 収集される情報は、Microsoft が改善する機能を特定するために役立ちます。 このドキュメントは、VSCEIP を有効または無効を選択する方法を説明します。
+Visual Studio カスタマー エクスペリエンス向上プログラム (VSCEIP) は、Microsoft による Visual Studio の改善を時間の経過と共に支援するように設計されています。 このプログラムは、コンピューターでのユーザーのタスクを中断させずにコンピューター ハードウェア、ユーザーの Visual Studio の利用、[エラーに関する情報を収集](../ide/diagnostic-data-collection.md)します。 収集される情報は、Microsoft が改善する機能を特定するために役立ちます。 このドキュメントは、VSCEIP を有効または無効を選択する方法を説明します。 オプトアウトすると、**任意** の診断データ収集を選択しないことになります。 Visual Studio をセキュリティで保護し、常に最新の状態にし、予想どおりに実行させるには、一部の診断データ収集が **必須** です。 必須の診断データ収集は、VSCEIP のオプトアウトを選択しても影響を受けません。
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]

@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 01/08/2020
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 4009e6c139ef33bcd4caa01a9313695628757884
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: a04d15fc2fc768c2d6896396df5dc0f134d1720b
+ms.sourcegitcommit: 67f3bdeee583a4fb41cacc7f38839a737bfecc6b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583932"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "105735526"
 ---
 # <a name="net-core-support"></a>.NET Core サポート
 
@@ -24,7 +24,7 @@ ms.locfileid: "91583932"
 |v2.2.200 + |✔︎|✔︎|✔︎|✔︎|✔︎|✔︎|
 |v3.0 | | |✔︎|✔︎|✔︎|✔︎|
 |v3.1 | | | |✔︎|✔︎|✔︎|
-|v5.0 (プレビュー) | | | | | |✔︎|
+|v5.0 | | | | | |✔︎|
 
 > [!IMPORTANT]
 > .NET Core SDK のプレビュー バージョンはサポートされていません。リリース バージョンに更新してください。 Visual Studio for Mac 8.4 をインストールすると、.NET Core v3.1 のリリース バージョンがインストールされます。

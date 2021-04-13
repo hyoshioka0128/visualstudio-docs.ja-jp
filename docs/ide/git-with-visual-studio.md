@@ -2,18 +2,18 @@
 title: Visual Studio での Git エクスペリエンス
 titleSuffix: ''
 description: Visual Studio 2019 での新しい統合 Git エクスペリエンスが、生産性の向上にどのように役立つかについて学習します。
-ms.date: 03/16/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: b58a60efbf2c602706eed6d9278574d1bf1fffcc
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622648"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216762"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio での Git エクスペリエンス
 
@@ -202,9 +202,10 @@ Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-no
 
 ## <a name="see-also"></a>関連項目
 
+- Microsoft Learn の「[Visual Studio で Git と GitHub の使用を開始する](/learn/modules/visual-studio-github-push/)」チュートリアル
 - YouTube の [Visual Studio での Git の概要](https://www.youtube.com/watch?v=GCZ9x3yqkyc)のビデオ
 - 「[Visual Studio での Git エクスペリエンスのリリースの発表](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)」ブログ記事
-- YouTube の[新しい Git エクスペリエンスの起動](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
+- YouTube の動画「[新しい Git エクスペリエンスの起動](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)」
 - [Visual Studio のツールボックス シリーズでは、以下が示されます: 新しい Git エクスペリエンス](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)の動画 (Channel 9)。[YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be) でもご覧いただけます
 - [Visual Studio での Git エクスペリエンスに関する新しい更新プログラム](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/)のブログ記事
 - [Visual Studio 2019 での Git エクスペリエンスの向上](https://devblogs.microsoft.com/visualstudio/improved-git-experience-in-visual-studio-2019/)のブログ記事
