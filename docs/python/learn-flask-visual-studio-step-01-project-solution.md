@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806057"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110611"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>チュートリアル: Visual Studio での Flask Web フレームワークの概要
 
@@ -221,17 +221,17 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>質問: Flask は変数の URL ルートとクエリ パラメーターをどのように処理しますか?
 
-応答: ルートでは、変数を `<variable_name>` でマークします。Flask は、名前付き引数を使用して変数を関数に渡します。 変数が URL パスまたはクエリ パラメーターに含まれていてもかまいません。 たとえば、`'/hello/<name>` という形式のルートでは、関数に対する `name` という名前の文字列引数が生成されます。ルート内で `?message=<msg>` を使用すると、"message=" クエリ パラメーターの値が解析され、`msg` として関数に渡されます。
+応答: ルートでは、変数を `<variable_name>` でマークします。Flask は、URL パスの名前付き引数を使用して変数を関数に渡します。 たとえば、`/hello/<name>` 形式のルートの場合、`name` という名称の文字列引数が関数に生成されます。 クエリ パラメーターが `request.args` プロパティを通じて (具体的には `request.args.get` メソッド) 使用できます。 詳しくは、Flask のドキュメントで [Request オブジェクト](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object)に関する説明をご覧ください。
 
 ```python
-@app.route('/hello/<name>?message=<msg>')
-def hello(name, msg):
-    return "Hello " + name + "! Message is " + msg + "."
+# URL: /hello/<name>?message=Have%20a%20nice%20day
+@app.route('/hello/<name>')
+def hello(name):
+    msg = request.args.get('message','')
+    return "Hello " + name + "! "+ msg + "."
 ```
 
 型を変更するには、変数の前に `int`、`float`、`path` (フォルダー名を区切るためのスラッシュを受け付けます)、`uuid` を付加します。 詳しくは、Flask のドキュメントで[変数のルール](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules)に関する説明をご覧ください。
-
-クエリ パラメーターも `request.args` プロパティを通じて (具体的には `request.args.get` メソッド) 使用できます。 詳しくは、Flask のドキュメントで [Request オブジェクト](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object)に関する説明をご覧ください。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>質問: Visual Studio では、他のパッケージをインストールした後に仮想環境から requirements.txt ファイルを生成できますか?
 

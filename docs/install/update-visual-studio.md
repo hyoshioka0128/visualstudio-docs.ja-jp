@@ -2,7 +2,7 @@
 title: Visual Studio を更新する
 titleSuffix: ''
 description: Visual Studio を最新のリリースに更新する詳細な手順を説明します。
-ms.date: 10/12/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935717"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547506"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Visual Studio を最新リリースに更新する
 
@@ -218,7 +218,7 @@ Visual&nbsp;Studio&nbsp;2019 を更新する方法を次に示します。
 
     Visual Studio が開きます。 IDE 内に、**Visual Studio 2019 の更新プログラム** に関するメッセージが表示されます。
 
-    ![IDE 内の "Visual Studio 2019 の更新プログラム" に関するメッセージ](media/vs-2019/update-visual-studio-ide-message.png "IDE 内の "Visual Studio 2019 の更新プログラム" に関するメッセージ")
+    ![IDE 内の "Visual Studio 2019 の更新プログラム" に関するメッセージ](media/vs-2019/update-visual-studio-ide-message.png "IDE 内の &quot;Visual Studio 2019 の更新プログラム&quot; に関するメッセージ")
 
 1. **Visual Studio 2019 の更新プログラム** に関するメッセージで、**[詳細の表示]** を選択します。
 
@@ -287,12 +287,17 @@ Visual Studio の更新設定は、いくつかの異なる方法でカスタマ
 
 ::: moniker-end
 
+## <a name="administrator-updates"></a>管理者の更新 
+
+ソフトウェア インストールの管理を一元化している組織に属している場合、お使いのコンピューターでの更新をエンタープライズ管理者が Visual Studio に指示できます。 お使いのコンピューターで受け取れる更新プログラムの種類を制御または構成する方法については、「[Configuration Manager を使用して Visual Studio 更新プログラムを展開する](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)」を参照してください。 
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>関連項目
 
 * [複数バージョンの Visual Studio をインストールする](install-visual-studio-versions-side-by-side.md)
 * [Visual Studio のネットワーク ベース インストールを更新する](update-a-network-installation-of-visual-studio.md)
+* [Visual Studio 企業向けガイド](visual-studio-enterprise-guide.md)
 * [サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)
 * [ネットワーク ベースの Visual Studio 配置の更新プログラムを制御する](controlling-updates-to-visual-studio-deployments.md)
 * [Visual Studio の変更](modify-visual-studio.md)

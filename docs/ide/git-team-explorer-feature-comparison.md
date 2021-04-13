@@ -2,18 +2,18 @@
 title: Visual Studio での Git とチーム エクスプローラーを並べて比較する
 titleSuffix: ''
 description: ソース コントロールを管理するために Visual Studio で新しい Git エクスペリエンスを使用する方法とチーム エクスプローラーを使用する方法を比較対照します。
-ms.date: 03/12/2021
+ms.date: 04/01/2021
 ms.topic: how-to
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4cbd5b928bb066401c2f091863ad610fbd9f23d5
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: bff03c9435a763607fd32936ddfa3fb38b45296b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482578"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216918"
 ---
 # <a name="side-by-side-comparison-of-git-and-team-explorer"></a>Git とチーム エクスプローラーを並べて比較する
 
@@ -69,5 +69,7 @@ Visual Studio 2019 [バージョン 16.8](/visualstudio/releases/2019/release-no
 新しい Git エクスペリエンスの詳細については、YouTube の最新のビデオ「[Visual Studio の Git の概要](https://www.youtube.com/watch?v=GCZ9x3yqkyc)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
+
 - [Visual Studio での新しい Git エクスペリエンス](git-with-visual-studio.md)
+- [Visual Studio で Git と GitHub の使用を開始する](/learn/modules/visual-studio-github-push/)
 - [Visual Studio の GitHub アカウントを使って作業する](work-with-github-accounts.md)

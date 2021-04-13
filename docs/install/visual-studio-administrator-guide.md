@@ -2,7 +2,7 @@
 title: Visual Studio 管理者ガイド
 titleSuffix: ''
 description: エンタープライズ環境で Visual Studio を展開する方法について説明します。
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935613"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547415"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理者ガイド
 
@@ -38,53 +38,45 @@ ms.locfileid: "99935613"
 
 * 各ターゲット コンピューターで[最小インストール要件](/visualstudio/releases/2019/system-requirements/)が満たされていることを確認します。
 
-* サービス ニーズについて決定します。
-
-  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)」ページの「***Enterprise および Professional のお客様向けのサポート オプショ***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
-
-  累積された機能更新と共にサービス更新を適用する予定の場合、最新の更新プログラムを選択できます。
-
-* 更新モデルについて決定します。
-
-  個々のクライアント コンピューターはどこから更新プログラムを入手しますか? 具体的には、更新プログラムをインターネットから取得するか、全社的なローカル共有から取得するかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。
-
-  ネットワーク インストール レイアウトを Visual Studio の最新の更新プログラムのインストール ポイントとして使用できるように、また、クライアント ワークステーションに既に配置されているインストールを保持するために、最新の製品の更新プログラムを使って Visual Studio のネットワーク インストール レイアウトを更新できます。 詳細については、「[Visual Studio のネットワーク ベース インストールを更新する](../install/update-a-network-installation-of-visual-studio.md)」をご覧ください。
-
-  インターネットに接続されていないコンピューターの場合、オフラインの Visual Studio インスタンスを更新する最も簡単かつ迅速な方法は、最小限のレイアウトを作成することです。 詳細については、「[最小限のオフライン レイアウトを使用して Visual Studio を更新する](update-minimal-layout.md)」をご覧ください。
-
-* 会社に必要な[ワークロードとコンポーネント](workload-and-component-ids.md?view=vs-2019&preserve-view=true)を決定します。
-
-* (スクリプト ファイルの詳細管理を簡単にする) [応答ファイル](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)を使用するかどうかを決定します。
-
-* グループ ポリシーを有効にするかどうかと、個々のコンピューターで顧客フィードバックを無効にするように Visual Studio を構成するかどうかを決定します。
-
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 各ターゲット コンピューターで[最小インストール要件](/visualstudio/productinfo/vs2017-system-requirements-vs/)が満たされていることを確認します。
 
+::: moniker-end
+
 * サービス ニーズについて決定します。
 
-  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)」ページの「***旧バージョンの Visual Studio のサポート***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
-
-  累積された機能更新と共にサービス更新を適用する予定の場合、最新の更新プログラムを選択できます。
+  会社がある機能セットを長く使用する必要があるが、定期的なサービス更新を取得する場合、サービス ベースラインの使用を計画します。 詳細については、「[Visual Studio の製品ライフサイクルとサービス](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)」ページの「***Enterprise および Professional のお客様向けのサポート オプショ***」セクション、および「[サービス ベースライン使用時の Visual Studio の更新](update-servicing-baseline.md)」ページをご覧ください。
 
 * 更新モデルについて決定します。
 
-  個々のクライアント コンピューターはどこから更新プログラムを入手しますか? 具体的には、更新プログラムをインターネットから取得するか、全社的なローカル共有から取得するかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。
+  個々のクライアント コンピューターにはどこから製品更新プログラムを取得させますか。 具体的には、クライアントに更新プログラムをインターネットから取得させるか、全社的なローカル共有から取得させるかを決定します。 次に、ローカル共有を使用する場合、個々のユーザーが自分のクライアントを更新できるのか、管理者にプログラムでクライアントを更新してもらうのかを決定します。 クライアント コンピューターで元のインストールが行われる前にこうした決定が行われていることが望まれます。 詳細については、「[Visual Studio のネットワーク ベース インストールを作成する](../install/create-a-network-installation-of-visual-studio.md)」をご覧ください。
 
   ネットワーク インストール レイアウトを Visual Studio の最新の更新プログラムのインストール ポイントとして使用できるように、また、クライアント ワークステーションに既に配置されているインストールを保持するために、最新の製品の更新プログラムを使って Visual Studio のネットワーク インストール レイアウトを更新できます。 詳細については、「[Visual Studio のネットワーク ベース インストールを更新する](../install/update-a-network-installation-of-visual-studio.md)」をご覧ください。
 
+  エンタープライズ展開ツールを利用する組織は、Visual Studio 更新プログラムは Microsoft Update カタログと Windows Server Update Services で入手できるという事実を最大限に活用できます。 詳細については、[管理者向け更新を有効にする](../install/enabling-administrator-updates.md)と[管理者の更新を適用する](../install/applying-administrator-updates.md)方法に関するページを参照してください。
+
   インターネットに接続されていないコンピューターの場合、オフラインの Visual Studio インスタンスを更新する最も簡単かつ迅速な方法は、最小限のレイアウトを作成することです。 詳細については、「[最小限のオフライン レイアウトを使用して Visual Studio を更新する](update-minimal-layout.md)」をご覧ください。
+
+::: moniker range="vs-2019"
+
+* 会社に必要な[ワークロードとコンポーネント](workload-and-component-ids.md?view=vs-2019&preserve-view=true)を決定します。
+
+* (スクリプト ファイルの詳細管理を簡単にする) [応答ファイル](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)を使用するかどうかを決定します。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 * 会社に必要な[ワークロードとコンポーネント](workload-and-component-ids.md?view=vs-2017&preserve-view=true)を決定します。
 
 * (スクリプト ファイルの詳細管理を簡単にする) [応答ファイル](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true)を使用するかどうかを決定します。
 
-* グループ ポリシーを有効にするかどうかと、個々のコンピューターで顧客フィードバックを無効にするように Visual Studio を構成するかどうかを決定します。
-
 ::: moniker-end
+
+* グループ ポリシーを有効にするかどうかと、個々のコンピューターで顧客フィードバックを無効にするように Visual Studio を構成するかどうかを決定します。
 
 ::: moniker range="vs-2019"
 
@@ -109,17 +101,17 @@ ms.locfileid: "99935613"
 
 * (任意) グループ ポリシーを設定します。 個々のコンピューターで[顧客フィードバックを無効にするように Visual Studio を構成する](../ide/visual-studio-experience-improvement-program.md)こともできます。
 
-## <a name="step-3---deploy"></a>手順 3 - 展開
+## <a name="step-3---deploy-updates"></a>手順 3 - 更新プログラムの展開
 
-* 任意の配置テクノロジを使用し、スクリプトをターゲットの開発者ワークステーションで実行します。
-
-## <a name="step-4---deploy-updates"></a>手順 4 - 更新プログラムの展開
+任意の配置テクノロジを使用し、スクリプトをターゲットの開発者ワークステーションで実行します。
 
 * 手順 1 で使用したコマンドを定期的に実行して更新されたコンポーネントを追加し、Visual Studio の[最新の更新プログラムを適用してネットワークの場所を更新](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true)します。
 
   更新スクリプトを使用して Visual Studio を更新できます。 それを行うには、[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) コマンドライン パラメーターを使用します。
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>手順 5 - (任意) Visual Studio ツールの使用
+  System Center Configuration Manager のようなツールを使用し、Windows Server Update Services または Microsoft Update カタログから Visual Studio 更新プログラムを展開できます。  詳細については、[管理者の更新を適用する](applying-administrator-updates.md)方法に関するページを参照してください。 
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>手順 4 - (省略可能) Visual Studio ツールを使用し、インストールの有効性を検証する
 
 クライアント コンピューターに[インストールされている Visual Studio インスタンスを検出して管理する](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true)ために役立つ複数のツールが用意されています。
 
@@ -156,17 +148,17 @@ ms.locfileid: "99935613"
 
 * (任意) グループ ポリシーを設定します。 個々のコンピューターで[顧客フィードバックを無効にするように Visual Studio を構成する](../ide/visual-studio-experience-improvement-program.md)こともできます。
 
-## <a name="step-3---deploy"></a>手順 3 - 展開
+## <a name="step-3---deploy-updates"></a>手順 3 - 更新プログラムの展開
 
-* 任意の配置テクノロジを使用し、スクリプトをターゲットの開発者ワークステーションで実行します。
-
-## <a name="step-4---deploy-updates"></a>手順 4 - 更新プログラムの展開
+任意の配置テクノロジを使用し、スクリプトをターゲットの開発者ワークステーションで実行します。
 
 * 手順 1 で使用したコマンドを定期的に実行して更新されたコンポーネントを追加し、Visual Studio の[最新の更新プログラムを適用してネットワークの場所を更新](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true)します。
 
   更新スクリプトを使用して Visual Studio を更新できます。 それを行うには、[`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) コマンドライン パラメーターを使用します。
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>手順 5 - (任意) Visual Studio ツールの使用
+  System Center Configuration Manager のようなツールを使用し、Windows Server Update Services または Microsoft Update カタログから Visual Studio 更新プログラムを展開できます。 詳細については、[管理者向け更新プログラムを適用する](applying-administrator-updates.md)方法に関するページを参照してください。
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>手順 4 - (省略可能) Visual Studio ツールを使用し、インストールの有効性を検証する
 
 クライアント コンピューターに[インストールされている Visual Studio インスタンスを検出して管理する](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true)ために役立つ複数のツールが用意されています。
 
@@ -176,7 +168,7 @@ ms.locfileid: "99935613"
 
 **“PutCustomTypeInBingSearch” DWORD 0**
 
-レジストリは、プライベート レジストリ ハイブの *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* にあります。 レジストリ ハイブを開く方法については、「[Visual Studio インスタンスのレジストリの編集](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)」を参照してください。
+レジストリは、プライベート レジストリ ハイブの `Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\` ディレクトリにあります。 レジストリ ハイブを開く方法については、「[Visual Studio インスタンスのレジストリの編集](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)」を参照してください。
 
 ::: moniker-end
 
@@ -184,6 +176,8 @@ ms.locfileid: "99935613"
 
 ## <a name="see-also"></a>関連項目
 
+* [管理者の更新を有効にする](enabling-administrator-updates.md)
+* [管理者の更新を適用する](applying-administrator-updates.md)
 * [コマンド ライン パラメーターの例](command-line-parameter-examples.md)
 * [Visual Studio オフライン インストールに必要な証明書をインストールする](install-certificates-for-visual-studio-offline.md)
 * [インストール構成をインポートまたはエクスポートする](import-export-installation-configurations.md)

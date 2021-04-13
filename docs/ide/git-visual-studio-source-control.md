@@ -2,18 +2,18 @@
 title: Visual Studio でソース管理を簡単にする方法
 titleSuffix: ''
 description: Visual Studio で Git および GitHub を使用して、ご利用のコードに加えた変更を追跡し、必要に応じてそれらを元に戻す方法について説明します。
-ms.date: 03/22/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 15e3c08606edf0e491785ba8599c5eb07c6b4551
-ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
+ms.openlocfilehash: 6e4bed3201a48975e9da266794f085f78be6d68c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105006863"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215579"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Visual Studio でソース管理を簡単にする方法
 
@@ -51,5 +51,6 @@ Visual Studio で Git と GitHub を使用する方法の詳細については�
 
 ## <a name="see-also"></a>関連項目
 
+- [Visual Studio で Git と GitHub の使用を開始する](/learn/modules/visual-studio-github-push/)
 - [Visual Studio での新しい Git エクスペリエンス](git-with-visual-studio.md)
 - [Git とチーム エクスプローラーを並べて比較する](git-team-explorer-feature-comparison.md)

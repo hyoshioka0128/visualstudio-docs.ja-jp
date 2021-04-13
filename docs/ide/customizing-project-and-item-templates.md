@@ -1,8 +1,8 @@
 ---
 title: プロジェクトと項目テンプレートのカスタマイズ
 description: プロジェクトと項目テンプレートを作成した後にカスタマイズする方法について説明します。
-ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.custom: SEO-VS-2021
+ms.date: 03/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 332e894372c05361ec162a3e046bd675a54b04a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4229b0dcaf1c1cdacd7dd5a44cbb56afdfe9707d
+ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954411"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933785"
 ---
 # <a name="customize-project-and-item-templates"></a>プロジェクト テンプレートと項目テンプレートのカスタマイズ
 
@@ -45,3 +45,5 @@ ms.locfileid: "99954411"
 - [方法: 項目テンプレートを作成する](../ide/how-to-create-item-templates.md)
 - [Visual Studio テンプレート スキーマ参照](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
+- [`dotnet new` コマンドを使用してテンプレートをカスタマイズする](/dotnet/core/tools/custom-templates/)
+- [`dotnet sln` コマンドを使用し、.NET ソリューション ファイル内のプロジェクトを一覧表示または変更する](/dotnet/core/tools/dotnet-sln/)

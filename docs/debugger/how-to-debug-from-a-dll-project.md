@@ -2,7 +2,7 @@
 title: DLL プロジェクトからデバッグする | Microsoft Docs
 description: プロジェクト自体から DLL プロジェクトのデバッグを開始するには、プロジェクトのプロパティで呼び出し元のアプリを指定します。 詳しくは、この記事をご覧ください。
 ms.custom: SEO-VS-2020
-ms.date: 10/10/2018
+ms.date: 3/30/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7846cc3fd17b46365da59f6fe1a744032cb8ba14
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160435"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083643"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>方法: Visual Studio で DLL プロジェクトからデバッグする (C#、C++、Visual Basic、F#)
 
@@ -81,7 +81,13 @@ DLL プロジェクトをデバッグする 1 つの方法は、DLL プロジェ
 
 1. ソリューションの **[構成]** フィールドが **[デバッグ]** に設定されていることを確認します。 **F5** キーを押して、緑色の **[開始]** 矢印をクリックするか、または **[デバッグ]**  >  **[デバッグの開始]** を選択します。
 
-デバッグでブレークポイントがヒットされない場合、ご自分の DLL 出力 (既定では、 *\<project>\Debug* フォルダー) が、呼び出し元のアプリで呼び出されている場所であることを確認します。
+次の点にも注意してください。
+
+- デバッグでブレークポイントがヒットされない場合、ご自分の DLL 出力 (既定では、 *\<project>\Debug* フォルダー) が、呼び出し元のアプリで呼び出されている場所であることを確認します。
+
+- ネイティブ DLL から呼び出し元のマネージド アプリのコードを中断する場合、あるいはその逆を行う場合、[混合モード デバッグ](../debugger/how-to-debug-in-mixed-mode.md)を有効にします。
+
+- 場合によっては、ソース コードが見つかる場所をデバッガーに通知する必要があります。 詳細については、「[[シンボルが読み込まれていません] または [ソースが読み込まれていません] ページを使用する](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#use-the-no-symbols-loadedno-source-loaded-pages)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 - [DLL プロジェクトのデバッグ](../debugger/debugging-dll-projects.md)

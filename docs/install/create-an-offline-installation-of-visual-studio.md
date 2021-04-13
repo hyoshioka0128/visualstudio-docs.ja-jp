@@ -1,7 +1,7 @@
 ---
 title: オフライン インストールを作成する
 description: インターネット接続の信頼性が低い場合や帯域幅が低い場合にオフラインで Visual Studio をインストールする方法について説明します。
-ms.date: 10/22/2019
+ms.date: 3/29/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,24 +16,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2e4a7e0f9335971bb026ccc1c6b977680d9e3121
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c4815540a5911ca0193a89a237a3c4d690c4dba
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949559"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981304"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Visual Studio のオフライン インストールを作成する
 
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 はさまざまなネットワークとコンピューターの構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/vs/older-downloads)&mdash;ファイルが小さく、最新の修正プログラムと機能がすべて含まれています&mdash;の利用をお勧めしますが、それが難しい場合もあると思います。
+Visual Studio 2017 はさまざまなネットワークとコンピューターの構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/vs/older-downloads)を試すことを推奨していますが (これは最新の修正プログラムおよび機能が使用されるようにする小さなファイルです)、これが不可能な場合もあります。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Visual Studio 2019 はさまざまなネットワーク構成およびコンピューター構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/downloads)&mdash;ファイルが小さく、最新の修正プログラムと機能がすべて含まれています&mdash;の利用をお勧めしますが、それが難しい場合もあると思います。
+Visual Studio 2019 はさまざまなネットワーク構成およびコンピューター構成で問題なく動作するように設計されています。 [Visual Studio Web インストーラー](https://visualstudio.microsoft.com/downloads)を試すことを推奨していますが (これは最新の修正プログラムおよび機能が使用されるようにする小さなファイルです)、これが不可能な場合もあります。
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Visual Studio 2019 はさまざまなネットワーク構成およびコンピ�
 
 ::: moniker range="vs-2017"
 
-[**バージョン 15.8 の新機能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install):Web インストーラーをダウンロードした後、Visual Studio インストーラーから **[Download all, then install]\(全部ダウンロードしてからインストールする\)** オプションを選択します。 次に、インストールを続行します。
+[**15.8 の新機能**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Web インストーラーをダウンロードした後、Visual Studio インストーラーの新しい **[全部ダウンロードしてからインストールする]** オプションを選択します。 次に、インストールを続行します。
 
    !["全部ダウンロードしてからインストールする" オプション](media/download-all-then-install.png)
 
@@ -63,38 +63,42 @@ Web インストーラーをダウンロードした後、Visual Studio イン�
 "全部ダウンロードしてからインストールする" 機能は、ダウンロードしたのと同じコンピューターを対象とする 1 つのインストールとして Visual Studio をダウンロードできるように設計されています。 これにより、Visual Studio をインストールする前に安全に Web から切断できます。
 
 > [!IMPORTANT]
-> 別のコンピューターに転送する目的のオフライン キャッシュを作成するために "全部ダウンロードしてからインストールする" 機能を使わないでください。 これは、そのように動作するようには設計されていません。 <br><br>別のコンピューターに Visual Studio をインストールするためにオフライン キャッシュを作成したい場合、ローカル キャッシュを作成する方法について詳しくは、このページの「[コマンドラインを使用してローカル キャッシュを作成する](#use-the-command-line-to-create-a-local-cache)」セクションをご覧ください。または、ネットワーク キャッシュを作成する方法を、[Visual Studio のネットワーク インストールの作成](../install/create-a-network-installation-of-visual-studio.md)に関するページでご覧ください。
+> 別のコンピューターに転送する目的のオフライン キャッシュを作成するために "全部ダウンロードしてからインストールする" 機能を使わないでください。 これは、そのように動作するようには設計されていません。 <br><br>ローカル コンピューターにオフライン キャッシュを作成して、それを使用して Visual Studio をインストールする場合は、以下の「[コマンド ラインを使用してローカル キャッシュを作成する](#use-the-command-line-to-create-a-local-cache)」セクションを参照してください。  または、「[Visual Studio のネットワーク インストールを作成する](../install/create-a-network-installation-of-visual-studio.md)」ページに、ネットワーク上にキャッシュを作成する方法の情報があります。
 
 ## <a name="use-the-command-line-to-create-a-local-cache"></a>コマンドラインを使用してローカル キャッシュを作成する
-
-小規模のブートストラップをダウンロードした後、コマンド ラインを使用してローカル キャッシュを作成します。 次に、ローカル キャッシュを使用して Visual Studio をインストールします。 (このプロセスは以前のバージョンで利用できた ISO ファイルに置き換わるものです。)
-
-ここではその方法を説明します。
-
-### <a name="step-1---download-the-visual-studio-bootstrapper"></a>ステップ 1 - Visual Studio ブートストラップをダウンロードする
-
-このステップを実行するにはインターネット接続が必要です。
-
 ::: moniker range="vs-2017"
 
-Visual Studio 2017 のブートストラップを取得するには、その方法の詳細について、[以前のバージョンの Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) のダウンロード ページを参照してください。
-
-セットアップ実行可能ファイル、より具体的にはブートストラップ ファイルは、次のいずれかと一致するか、またはそれに似たものでなければなりません。
-
-| エディション | ファイル名 |
-|-------------|-----------------------|
-|Visual Studio コミュニティ | vs_community.exe |
-|Visual Studio Professional | vs_professional.exe |
-|Visual Studio Enterprise | vs_enterprise.exe |
-|Visual Studio Build Tools   | vs_buildtools.exe |
+小規模のブートストラップをダウンロードした後、コマンド ラインを使用してローカル キャッシュを作成します。 次に、ローカル キャッシュを使用して Visual Studio をインストールします。 (この手順は、以前のバージョンで利用できた ISO ファイルに代わるものです。) 
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-最初に、選択したエディションの Visual Studio の Visual Studio ブートストラップをダウンロードします。 セットアップ ファイル&mdash;またはブートストラップ&mdash;は、次のいずれかになります (あるいは同様のファイル)。
+小規模のブートストラップ ファイルをダウンロードした後、コマンド ラインを使用してローカル キャッシュを作成します。 次に、ローカル キャッシュを使用して Visual Studio をインストールします。
 
-| エディション                    | ファイル                                                                    |
+::: moniker-end
+
+### <a name="step-1---download-the-visual-studio-bootstrapper"></a>ステップ 1 - Visual Studio ブートストラップをダウンロードする
+
+この手順を完了するには、インターネット接続が必要です。
+
+::: moniker range="vs-2017"
+
+Visual Studio 2017 バージョン 15.9 の最新のブートストラップを入手するには、[Visual Studio の以前のバージョン](https://visualstudio.microsoft.com/vs/older-downloads/)のページに移動し、次のいずれかのブートストラップ ファイルをダウンロードします。 
+
+| エディション | ファイル名 |
+|-------------|-----------------------|
+|Visual Studio Professional 2017 バージョン 15.9 | vs_professional.exe |
+|Visual Studio Enterprise 2017 バージョン 15.9 | vs_enterprise.exe |
+|Visual Studio Build Tools 2017 バージョン 15.9  | vs_buildtools.exe |
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+まずは、Visual Studio 2019 のブートストラップを、[Visual Studio のダウンロード ページ](https://visualstudio.microsoft.com/downloads)または、「[Visual Studio 2019 リリース](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)」のページからご自分で選択した Visual Studio のバージョンおよびエディション用にダウンロードします。 お使いのセットアップ ファイル &mdash; またはブートストラップ &mdash; は、次のいずれかになります (あるいは同様のファイル)。
+
+| Edition                    | ファイル                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Visual Studio コミュニティ    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
@@ -103,17 +107,25 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 
 ::: moniker-end
 
+::: moniker range="vs-2017"
+
 >[!TIP]
->前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」ページを参照してください。
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対応する Visual Studio のリリースを調べるには、「[Visual Studio のビルド番号とリリース日](visual-studio-build-numbers-and-release-dates.md)」ページを参照してください。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+>[!TIP]
+>前にブートストラップ ファイルをダウンロードしてあり、そのバージョンを確認したい場合は、次のようにします。 Windows でエクスプローラーを開き、ブートストラップ ファイルを右クリックし、 **[プロパティ]** を選択して、 **[詳細]** タブを選択し、 **[製品バージョン]** の値を表示します。 この値に対応する Visual Studio のリリースを調べるには、「[Visual Studio 2019 リリース](https://docs.microsoft.com/visualstudio/releases/2019/history)」のページを参照してください。
+
+::: moniker-end
 
 ### <a name="step-2---create-a-local-install-cache"></a>ステップ 2 - ローカル インストール キャッシュを作成する
 
-このステップを実行するにはインターネット接続が必要です。
+この手順を完了するには、インターネット接続が必要です。
 
-> [!IMPORTANT]
-> Visual Studio Community をインストールする場合、インストールしてから 30 日以内にアクティブ化する必要があります。 これにはインターネット接続が必要です。
-
-コマンド プロンプトを開き、次の例にあるいずれかのコマンドを使用します。 ここに挙げた例は、Visual Studio の Community Edition を使用することを前提としています。ご利用のエディションに応じて適切なコマンドに修正してください。
+コマンド プロンプトを開き、「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」ページで定義されているブートストラップのパラメーターを使用して、ご自分のローカル インストール キャッシュを作成します。 Enterprise のブートストラップを使用する一般的な例については、[コマンド ライン パラメーターの例](command-line-parameter-examples.md)に関するページを参照してください。 英語以外の言語をインストールするには、`en-US` を「[言語ロケールの一覧](#list-of-language-locales)」のロケールに変更します。また、[コンポーネントとワークロードのリスト](workload-and-component-ids.md) を使用して、お使いのキャッシュをさらにカスタマイズできます。
 
 > [!TIP]
 > エラーを防ぐために、インストール パス全体が 80 文字未満であることを確認してください。
@@ -121,70 +133,68 @@ Visual Studio 2017 のブートストラップを取得するには、その方�
 - .NET Web と .NET デスクトップ開発の場合、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - .NET デスクトップと Office 開発の場合、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - C++ デスクトップ開発の場合、次を実行します。
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
-- すべての機能を備えた完全なローカル レイアウトを作成するには、次を実行します (多くの機能があるため、これには時間がかかります)。
+- すべての機能を備えた完全なローカル レイアウトを作成するには (英語のみ)、次を実行します ("_多くの_" 機能があるため、これには時間がかかります)。
 
    ```cmd
-    vs_community.exe --layout c:\vslayout --lang en-US
+    vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
 ::: moniker range="vs-2017"
 
    > [!NOTE]
-   > Visual Studio の完全なレイアウトでは、少なくとも 35 GB のディスク領域が必要です。 詳細については、[システム必要条件](/visualstudio/productinfo/vs2017-system-requirements-vs/)に関するページをご覧ください。 さらに、インストールするコンポーネントのみでレイアウトを作成する方法については、「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」をご覧ください。
+   > Visual Studio の完全なレイアウトでは、少なくとも 35 GB のディスク領域が必要です。 詳細については、[システム要件](/visualstudio/productinfo/vs2017-system-requirements-vs/)に関するページを参照してください。 
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
    > [!NOTE]
-   > Visual Studio の完全なレイアウトでは、少なくとも 35 GB のディスク領域が必要です。 詳細については、[システム必要条件](/visualstudio/releases/2019/system-requirements/)に関するページをご覧ください。 さらに、インストールするコンポーネントのみでレイアウトを作成する方法については、「[コマンド ライン パラメーターを使用して Visual Studio をインストールする](use-command-line-parameters-to-install-visual-studio.md)」をご覧ください。
+   > Visual Studio の完全なレイアウトでは、少なくとも 35 GB のディスク領域が必要です。 詳細については、[システム要件](/visualstudio/releases/2019/system-requirements/)に関するページを参照してください。
 
 ::: moniker-end
 
-英語以外の言語をインストールする場合、`en-US` を[言語ロケールの一覧](#list-of-language-locales)にあるロケールに変更します。 次に、[利用できるコンポーネントとワークロードの一覧](workload-and-component-ids.md)を利用して、インストール キャッシュをさらにカスタマイズします。
 
 ### <a name="step-3---install-visual-studio-from-the-local-cache"></a>ステップ 3 - ローカル キャッシュから Visual Studio をインストールする
+Visual Studio をローカル インストール キャッシュからインストールすると、Visual Studio インストーラーでは、そのファイルのローカルにキャッシュされたバージョンを使用します。 ただし、インストール時にキャッシュにないコンポーネントを選択すると、Visual Studio インストーラーではそれをインターネットからダウンロードしようとします。 以前にダウンロードしたファイルのみをインストールするには、レイアウト キャッシュの作成に利用したのと同じ[コマンド ライン オプション](use-command-line-parameters-to-install-visual-studio.md)を使用します。 
 
-> [!TIP]
-> ローカル インストール キャッシュから実行するとき、セットアップは各ファイルのローカル バージョンを使います。 ただし、インストール中にキャッシュにないコンポーネントを選択すると、セットアップ中にインターネットからのダウンロードが試みられます。
-
-::: moniker range="vs-2019"
-> [!IMPORTANT]
-> オフライン インストールで、"次のパラメーターと一致する製品が見つかりません" というエラー メッセージが表示される場合は、バージョン 16.3.5 以降で `--noweb` スイッチを使用していることを確認します。
->
-::: moniker-end
-
-以前にダウンロードしたファイルのみがインストールされるように、レイアウト キャッシュの作成に利用したものと同じコマンド ライン オプションを使用します。 たとえば、次のコマンドでレイアウト キャッシュを作成した場合、
+たとえば、次のコマンドでローカルのインストール キャッシュを作成した場合、
 
 ```cmd
-vs_community.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
+vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 次に、このコマンドを使用してインストールを実行します。
 
 ```cmd
-c:\vslayout\vs_community.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
+c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
-[コマンドライン パラメーター](use-command-line-parameters-to-install-visual-studio.md)の使用方法に関する他の例については、「[Visual Studio のインストールに使用するコマンド ライン パラメーターの例](command-line-parameter-examples.md)」ページをご覧ください。 
+> [!IMPORTANT]
+> Visual Studio Community を使用している場合は、インストール後 30 日以内に製品にログインし、ライセンス認証を行う必要があります。 ライセンス認証には、インターネット接続が必要です。
 
 > [!NOTE]
-> 署名が無効であるというエラーが発生する場合は、更新された証明書をインストールする必要があります。 オフライン キャッシュ内の証明書フォルダーを開きます。 各証明書ファイルをダブルクリックした後、証明書マネージャー ウィザードの指示に従って操作します。 パスワードを求められたら、空のままにしてください。
+> 署名が無効であるというエラーが発生する場合は、[更新された証明書をインストールする](install-certificates-for-visual-studio-offline.md)必要があります。 オフライン キャッシュ内の証明書フォルダーを開きます。 各証明書ファイルをダブルクリックした後、証明書マネージャー ウィザードの指示に従って操作します。 パスワードを求められたら、空のままにしてください。
+
+::: moniker range="vs-2019"
+> [!TIP]
+> オフライン インストールで、"次のパラメーターと一致する製品が見つかりません" というエラー メッセージが表示される場合は、バージョン 16.3.5 以降で `--noweb` スイッチを使用していることを確認します。
+
+::: moniker-end
 
 ### <a name="list-of-language-locales"></a>言語ロケールの一覧
 
@@ -192,7 +202,7 @@ c:\vslayout\vs_community.exe --noweb --add Microsoft.VisualStudio.Workload.Manag
 | ----------------------- | --------------- |
 | cs-CZ | チェコ語 |
 | de-DE | ドイツ語 |
-| en-US | 英語 |
+| ja-JP | 英語 |
 | es-ES | スペイン語 |
 | fr-FR | フランス語 |
 | it-IT | イタリア語 |
