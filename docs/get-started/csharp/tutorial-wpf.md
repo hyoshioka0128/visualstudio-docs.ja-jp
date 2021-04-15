@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682867"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295573"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>チュートリアル: C\# で単純なアプリケーションを作成する
 
@@ -293,13 +293,13 @@ Visual Studio は HelloWPFApp というプロジェクトとソリューショ�
 
 アプリケーション ウィンドウを閉じ、デバッグを停止します。
 
-### <a name="debug-with-breakpoints"></a>ブレークポイントを使用してデバッグする
+### <a name="debug-with-breakpoints&quot;></a>ブレークポイントを使用してデバッグする
 
 ブレークポイントをいくつか追加することで、デバッグ中にコードをテストできます。 ブレークポイントを追加するには、 **[デバッグ]**  >  **[ブレークポイントの設定/解除]** の順に選択するか、中断するコード行の横のエディター ウィンドウの左端の余白をクリックするか、**F9** キーを押します。
 
-#### <a name="add-breakpoints"></a>ブレークポイントを追加する
+#### <a name=&quot;add-breakpoints&quot;></a>ブレークポイントを追加する
 
-1. *Greetings.xaml.cs* を開き、`MessageBox.Show("Hello.")` という行を選択します。
+1. *Greetings.xaml.cs* を開き、`MessageBox.Show(&quot;Hello.")` という行を選択します。
 
 1. **[デバッグ]**、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 

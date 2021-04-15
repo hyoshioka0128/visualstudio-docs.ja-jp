@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944369"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295430"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>チュートリアル: Visual Basic で単純なアプリケーションを作成する
 
@@ -259,13 +259,13 @@ IsChecked="True"
 
  アプリケーション ウィンドウを閉じ、デバッグを停止します。
 
-### <a name="debug-with-breakpoints"></a>ブレークポイントを使用してデバッグする
+### <a name="debug-with-breakpoints&quot;></a>ブレークポイントを使用してデバッグする
 
 ブレークポイントをいくつか追加することで、デバッグ中にコードをテストできます。 ブレークポイントを追加するには、 **[デバッグ]**  >  **[ブレークポイントの設定/解除]** の順に選択するか、中断するコード行の横のエディター ウィンドウの左端の余白をクリックするか、**F9** キーを押します。
 
-#### <a name="add-breakpoints"></a>ブレークポイントを追加する
+#### <a name=&quot;add-breakpoints&quot;></a>ブレークポイントを追加する
 
-1. *Greetings.xaml.vb* を開き、`MessageBox.Show("Hello.")` という行を選択します。
+1. *Greetings.xaml.vb* を開き、`MessageBox.Show(&quot;Hello.")` という行を選択します。
 
 2. **F9** キーを押すか、 **[デバッグ]** 、 **[ブレークポイントの設定/解除]** の順に選択して、メニューからブレークポイントを追加します。
 
@@ -283,13 +283,13 @@ IsChecked="True"
 
 6. メニュー バーで **[デバッグ]**  >  **[ステップ アウト]** の順に選択します。
 
-     アプリケーションの実行が再開され、メッセージ ボックスに "Hello" と表示されます。
+     アプリケーションの実行が再開され、メッセージ ボックスに "Hello&quot; と表示されます。
 
 7. メッセージ ボックスの **[OK]** を選択して閉じます。
 
 8. **[Greetings]** ウィンドウで、 **[Goodbye]** オプション ボタンを選択し、 **[Display]** ボタンを選択します。
 
-     `MessageBox.Show("Goodbye.")` という行が黄色で強調表示されます。
+     `MessageBox.Show(&quot;Goodbye.")` という行が黄色で強調表示されます。
 
 9. **F5** キーを押してデバッグを続行します。 メッセージ ボックスが表示されたら、メッセージ ボックスの **[OK]** を選択して、閉じます。
 

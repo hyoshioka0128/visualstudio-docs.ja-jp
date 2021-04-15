@@ -8,19 +8,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c6646fca0f0b20f7fb5d5d018c297d1ece920d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f51e3e6617578236d31090b23e8cb7c661d6043
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945553"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296795"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>クイック スタート: Visual Studio を使用して初めての C# コンソール アプリを作成する
 
@@ -151,7 +151,7 @@ Visual Studio によって、既定の "Hello World" コードがご利用のコ
 
 1. Visual Studio を閉じます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 このクイック スタートは完了しました。 C# と Visual Studio IDE について、少しはご理解いただけたかと思います。 詳細については、引き続き以下のチュートリアルをご覧ください。
 
