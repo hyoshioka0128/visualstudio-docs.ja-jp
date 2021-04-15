@@ -3,15 +3,15 @@ title: Visual Studio コンテナー ツールのビルドとデバッグの概�
 author: ghogen
 description: コンテナー ツールのビルドとデバッグのプロセスの概要
 ms.author: ghogen
-ms.date: 11/20/2019
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 6b860abeab0745ebae580e3020c94e446f2441c8
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884084"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315954"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio でコンテナー化されたアプリをビルドする方法
 
@@ -26,7 +26,7 @@ Visual Studio では、Docker コンテナーを使用しないプロジェク�
 マルチステージ ビルドを使用すると、中間イメージを生成するステージでコンテナー イメージを作成できます。 例として、Visual Studio によって生成される一般的な Dockerfile を考えてみます。最初のステージは `base` です。
 
 ```
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
@@ -37,24 +37,24 @@ Dockerfile 内の行は、Microsoft Container Registry (mcr.microsoft.com) の D
 次のステージは `build` で、次のように表示されます。
 
 ```
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1-buster-slim AS build
 WORKDIR /src
 COPY ["WebApplication43/WebApplication43.csproj", "WebApplication43/"]
 RUN dotnet restore "WebApplication43/WebApplication43.csproj"
 COPY . .
 WORKDIR "/src/WebApplication43"
-RUN dotnet build "WebApplication43.csproj" -c Release -o /app
+RUN dotnet build "WebApplication43.csproj" -c Release -o /app/build
 ```
 
 `build` のステージは、base からの続きではなく、レジストリ (`aspnet` ではなく `sdk`) からの別の、元のイメージから開始されることがわかります。  `sdk` のイメージにはすべてのビルド ツールがあるため、実行時コンポーネントのみを含む aspnet イメージよりもかなり大きくなります。 別のイメージを使用する理由は、Dockerfile の残りの部分を確認すると明確になります。
 
 ```
 FROM build AS publish
-RUN dotnet publish "WebApplication43.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication43.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 

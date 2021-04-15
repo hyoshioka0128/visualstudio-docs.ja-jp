@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 974696d1ff7f8e82dab8ef2024710ce645b56c72
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970921"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297133"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Visual Studio で Visual Basic を使用して Windows フォーム アプリを作成する
 
@@ -49,7 +49,7 @@ Visual Studio をまだインストールしていない場合は、[Visual Stud
 
 1. 上部のメニュー バーから、 **[ファイル]** 、 **[新規]** 、 **[プロジェクト]** の順に選択します。
 
-1. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、 **[Visual Basic]** を展開し、 **[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 ファイルに `HelloWorld` という名前を付けます。
+1. 左側のウィンドウの **[新しいプロジェクト]** ダイアログ ボックスで、**[Visual Basic]** を展開し、**[Windows デスクトップ]** を選択します。 中央のウィンドウで、 **[Windows フォーム アプリケーション (.NET Framework)]** を選択します。 ファイルに `HelloWorld` という名前を付けます。
 
      **[Windows フォーム アプリケーション (.NET Framework)]** プロジェクト テンプレートが表示されない場合は、 **[新しいプロジェクト]** ダイアログ ボックスを取り消し、上部のメニュー バーで **[ツール]**  >  **[ツールと機能を取得]** を選択します。 Visual Studio インストーラーが起動します。 **.NET デスクトップ開発** ワークロードを選択し、 **[変更]** を選択します。
 
@@ -133,9 +133,9 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 
 ### <a name="add-code-to-the-form"></a>フォームにコードを追加する
 
-1. **[Form1.vb [Design]]** ウィンドウで、 **[Click this]** ボタンをダブルクリックして、 **[Form1.vb]** ウィンドウを開きます
+1. **[Form1.vb [Design]]** ウィンドウで、**[Click this]** ボタンをダブルクリックして、**[Form1.vb]** ウィンドウを開きます 
 
-      (あるいは、 **[ソリューション エクスプローラー]** で **[Form1.vb]** を展開し、 **[Form1]** をクリックします)。
+      (あるいは、**[ソリューション エクスプローラー]** で **[Form1.vb]** を展開し、**[Form1]** をクリックします)。
 
 1. 次のスクリーンショットに示すように、**Form1.vb** ウィンドウで、**Private Sub** 行と **End Sub** 行の間に `lblHelloWorld.Text = "Hello World!"` と入力します。
 
@@ -165,5 +165,5 @@ Visual Basic プロジェクト テンプレートを選択し、ファイルに
 ## <a name="see-also"></a>関連項目
 
 * [その他の Visual Basic のチュートリアル](../get-started/visual-basic/index.yml)
-* [C# のチュートリアル](../get-started/csharp/index.yml)
+* [C# チュートリアル](../get-started/csharp/index.yml)
 * [C++ のチュートリアル](/cpp/get-started/tutorial-console-cpp)
