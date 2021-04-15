@@ -2,19 +2,19 @@
 title: IDE をカスタマイズする
 description: 独自の開発スタイルと要件に最も適した方法で Visual Studio IDE をカスタマイズする方法について説明します。
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909015"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373168"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Visual Studio IDE のカスタマイズ
 
@@ -40,7 +40,7 @@ ms.locfileid: "99909015"
 
 ## <a name="environment-color-themes"></a>環境の配色テーマ
 
-明色、暗色、青の配色テーマを変更するには、検索ボックスに「**環境**」と入力した後、 **[環境] > [全般]** の順に選択します。 **[オプション]** ダイアログ ボックスで、**[配色テーマ]** オプションを変更します。
+暗色、明色、青 (エクストラ コントラスト) の配色テーマを変更するには、検索ボックスに「**テーマ**」と入力した後、 **[環境] > [全般]** の順に選択します。 **[オプション]** ダイアログ ボックスで、**[配色テーマ]** オプションを変更します。
 
 エディターで配色オプションを変更するには、検索ボックスに「**環境**」と入力した後、 **[環境] > [フォントおよび色]** の順に選択します。 「[方法: フォントと色を変更する](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)」を参照してください。
 

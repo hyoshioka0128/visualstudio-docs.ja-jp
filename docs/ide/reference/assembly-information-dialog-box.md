@@ -14,18 +14,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836423"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295443"
 ---
 # <a name="assembly-information-dialog-box"></a>[アセンブリ情報] ダイアログ ボックス
 
 [アセンブリ情報] ダイアログ ボックスは、.NET Framework グローバル アセンブリ属性の値を指定するために使用します。この値は、プロジェクトで自動的に作成される AssemblyInfo ファイルに格納されます。 ソリューション エクスプローラーでの AssemblyInfo ファイルは、Visual Basic プロジェクトの場合は **[マイ プロジェクト]** ノードにあります (表示するには **[すべてのファイルを表示]** をクリックします)。 C# プロジェクトの場合は、**[プロパティ]** にあります。 詳しくは、「[属性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)」をご覧ください。
 
-このダイアログ ボックスにアクセスするには、**ソリューション エクスプローラー** でプロジェクト ノードを選択し、**[プロジェクト]** メニューの **[プロパティ]** を選択します。**[アプリケーション]** ページで、**[アセンブリ情報]** ボタンを選択します。
+このダイアログ ボックスを表示するには、**ソリューション エクスプローラー** でプロジェクト ノードを選択し、 **[プロジェクト]** メニューの **[プロパティ]** を選択します。 **[アプリケーション]** ページで、 **[アセンブリ情報]** ボタンを選択します。
 
 ## <a name="uielement-list"></a>UIElement の一覧
 
@@ -65,7 +65,7 @@ Win32 ファイル バージョン リソースの特定のバージョン番号
 アセンブリの型を COM に使用できるようにするかどうかを指定します。 <xref:System.Runtime.InteropServices.ComVisibleAttribute> に相当します。
 
 > [!NOTE]
-> .NET Framework クラス ライブラリで NuGet パッケージを生成するときにこれらのプロパティを設定する方法の詳細については、「[パッケージのプロジェクト プロパティを構成する](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)」を参照してください。
+> .NET Framework クラス ライブラリで NuGet パッケージを生成するときにこれらのプロパティを設定する方法の詳細については、「[パッケージのプロジェクト プロパティを構成する](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)」を参照してください。 また、NuGet パッケージに関連するライセンスおよび式の詳細については、「[licenses.nuget.org](/nuget/nuget-org/licenses.nuget.org/)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

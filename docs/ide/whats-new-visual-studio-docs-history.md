@@ -15,16 +15,62 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622570"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031594"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio ドキュメントの新機能に関する履歴
 
-Visual Studio ドキュメントの新機能に関する履歴へようこそ。この記事には、2021 年 2 月より前 (2020 年 7 月以降) のドキュメントに対する主な変更点が含まれます。 最新の新機能については、[Visual Studio の最新情報](whats-new-visual-studio-docs.md)に関するドキュメントを参照してください。
+Visual Studio ドキュメントの新機能に関する履歴へようこそ。この記事には、2021 年 3 月より前 (2020 年 7 月以降) のドキュメントに対する主な変更点が含まれます。 最新の新機能については、[Visual Studio の最新情報](whats-new-visual-studio-docs.md)に関するドキュメントを参照してください。
+
+## <a name="february-2021"></a>2021 年 2 月
+
+### <a name="debugger"></a>デバッガー
+
+**更新された記事**
+
+- [Visual Studio デバッガーでブレークポイントを使用する](../debugger/using-breakpoints.md) - アクセシビリティの更新
+
+### <a name="get-started"></a>作業開始
+
+**更新された記事**
+
+- [チュートリアル: Visual Studio 2017 でリポジトリからプロジェクトを開く](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) - VS2017 を使ってリポジトリからプロジェクトを開く方法に関するセクションの関連項目リンクの更新
+- [チュートリアル: リポジトリからプロジェクトを開く](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) - 「リポジトリからプロジェクトを開く」ページに VS2017 バージョンへのリンクを追加
+
+### <a name="ide"></a>IDE
+
+**更新された記事**
+
+- [MSBuild に関する問題のトラブルシューティングとログ記録](./msbuild-logs.md) - プロジェクト システム ツールの拡張機能の使用に関する手順の追加
+
+### <a name="install"></a>インストール
+
+**更新された記事**
+
+- [最小限のオフライン レイアウトを使用して Visual Studio を更新する](../install/update-minimal-layout.md)
+  - オプション テーブルに 2017 の例を追加
+  - VS2017 の例を追加
+
+### <a name="msbuild"></a>MSBuild
+
+**新しい記事**
+
+- [MSB3644: 'FrameworkVersion' の参照アセンブリが見つかりませんでした](../msbuild/errors/msb3644.md) - MSBuild エラー
+- [MSB8036: Windows SDK' バージョン' が見つかりませんでした](../msbuild/errors/msb8036.md) - MSBuild エラー
+
+### <a name="test"></a>テスト
+
+**更新された記事**
+
+- [Visual Studio で C++ 用の Microsoft 単体テスト フレームワークを使用する](../test/how-to-use-microsoft-test-framework-for-cpp.md) - 小さいコンテンツの更新と編集
+- [Visual Studio で C++ DLL 用の単体テストを作成する](../test/how-to-write-unit-tests-for-cpp-dlls.md) - 小さいコンテンツの更新と編集
+- [テスト エクスプローラーを使用して単体テストを実行する](../test/run-unit-tests-with-test-explorer.md) - アクセシビリティの更新
+- [チュートリアル: マネージド コードの単体テストを作成し、実行する](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) - アクセシビリティの更新
+- [Microsoft Fakes を使用したテストでコードを分離する](../test/isolating-code-under-test-with-microsoft-fakes.md) - Fakes ドキュメントで .NET 5.0 を明示的に記述する
 
 ## <a name="january-2021"></a>2021 年 1 月
 ### <a name="azure"></a>Azure

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ee849354d82b11b8d94a737a2b546f686d04d34a
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684221"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386038"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>超初心者でもわかるデバッグ方法
 
@@ -70,7 +70,7 @@ Visual Studio でデバッグ モードに入るには、**F5** キー (また�
 
 Visual Studio では、コード行の左にある余白をクリックして、ブレークポイントを簡単に設定できます。 または、行にカーソルを置いて、**F9** キーを押します。
 
-これらの概念を示すため、既にバグがいくつかあるコード例を使って説明します。 ここでは C# を使いますが、デバッグ機能は Visual Basic、C++、JavaScript、Python、その他のサポートされている言語にも適用されます。
+これらの概念を示すため、既にバグがいくつかあるコード例を使って説明します。 ここでは C# を使いますが、デバッグ機能は Visual Basic、C++、JavaScript、Python、その他のサポートされている言語にも適用されます。 Visual Basic 用のサンプル コードもありますが、スクリーンショットは C# のものです。
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>サンプル アプリを作成する (バグを含むもの)
 
@@ -85,19 +85,21 @@ Visual Studio では、コード行の左にある余白をクリックして、
 1. Visual Studio を開きます。
 
     ::: moniker range=">=vs-2019"
-    スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。 検索ボックスに「**コンソール**」と入力し、言語として **C#** を選択してから、.Net Core 用の **[コンソール アプリ]** を選択します。 **[次へ]** を選択します。 「**ConsoleApp-FirstApp**」のようなプロジェクト名を入力して、 **[次へ]** をクリックします。
+    スタート ウィンドウで、 **[新しいプロジェクトの作成]** を選択します。 検索ボックスに「**コンソール**」と入力し、言語として **[C#]** または **[Visual Basic]** を選択してから、.NET Core 用の **[コンソール アプリ]** を選択します。 **[次へ]** を選択します。 「**ConsoleApp-FirstApp**」などのプロジェクト名を入力して、 **[次へ]** をクリックします。
 
     推奨されるターゲット フレームワーク (.NET Core 3.1) または .NET 5 を選択し、 **[作成]** を選択します。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のペインで、 **[Visual C#]** の下にある **[コンソール アプリ]** を選択した後、真ん中のペインでいずれかの **[コンソール アプリ (.NET Core)]** を選択します。 **ConsoleApp-FirstApp** のような名前を入力して、 **[OK]** をクリックします。
+    上部のメニュー バーから、 **[ファイル]**  >  **[新規作成]**  >  **[プロジェクト]** の順に選択します。 **[新しいプロジェクト]** ダイアログ ボックスの左側のウィンドウで、 **[Visual C#]** または **[Visual Basic]** の下にある **[コンソール アプリ]** を選択した後、中央のウィンドウでいずれかの **[コンソール アプリ (.NET Core)]** を選択します。 「**ConsoleApp-FirstApp**」などの名前を入力して、 **[OK]** をクリックします。
     ::: moniker-end
 
     .NET Core 用の **[コンソール アプリ]** プロジェクト テンプレートが表示されない場合は、 **[ツール]**  >  **[ツールと機能を取得]** に移動して、Visual Studio インストーラーを開きます。 **[.NET Core クロスプラットフォームの開発]** ワークロードを選択し、 **[変更]** を選択します。
 
     Visual Studio によってコンソール プロジェクトが作成され、ソリューション エクスプローラーの右側のウィンドウに表示されます。
 
-1. *Program.cs* で、既定のすべてのコードを次のコードに置き換えます。
+1. *Program.cs* (または *Program.vb*) で、既定のコードをすべて次のコードに置き換えます。 (最初に C# または Visual Basic の正しい言語のタブを選択します)。
+
+   #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     using System;
@@ -178,6 +180,109 @@ Visual Studio では、コード行の左にある余白をクリックして、
     }
     ```
 
+   #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
+
+    Namespace ConsoleApp_FirstApp
+        Friend Class Program
+            Public Shared Sub Main(ByVal args As String())
+                Console.WriteLine("Welcome to Galaxy News!")
+                Call IterateThroughList()
+                Console.ReadKey()
+            End Sub
+
+            Private Shared Sub IterateThroughList()
+                Dim theGalaxies = New List(Of Galaxy) From {
+                    New Galaxy() With {
+                        .Name = "Tadpole",
+                        .MegaLightYears = 400,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Pinwheel",
+                        .MegaLightYears = 25,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Cartwheel",
+                        .MegaLightYears = 500,
+                        .GalaxyType = New GType("L"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Small Magellanic Cloud",
+                        .MegaLightYears = 0.2,
+                        .GalaxyType = New GType("I"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Andromeda",
+                        .MegaLightYears = 3,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Maffei 1",
+                        .MegaLightYears = 11,
+                        .GalaxyType = New GType("E"c)
+                    }
+                }
+    
+                For Each theGalaxy As Galaxy In theGalaxies
+                    Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+                Next
+
+            End Sub
+        End Class
+    
+        Public Class Galaxy
+            Public Property Name As String
+            Public Property MegaLightYears As Double
+            Public Property GalaxyType As Object
+        End Class
+    
+        Public Class GType
+    
+            Shared Operator &(ByVal left As String, ByVal right As GType) As String
+                Return New String(left & right.ToString())
+            End Operator
+            Public Sub New(ByVal type As Char)
+                Select Case type
+                    Case "S"c
+                        MyGType = GType.Type.Spiral
+                    Case "E"c
+                        MyGType = GType.Type.Elliptical
+                    Case "l"c
+                        MyGType = GType.Type.Irregular
+                    Case "L"c
+                        MyGType = GType.Type.Lenticular
+                    Case Else
+                End Select
+    
+            End Sub
+    
+            Private _MyGType As String
+            Public Property MyGType As Object
+                Get
+                    Return _MyGType
+                End Get
+                Set(ByVal value As Object)
+                    _MyGType = value.ToString()
+                End Set
+            End Property
+    
+            Private Enum Type
+                Spiral
+                Elliptical
+                Irregular
+                Lenticular
+            End Enum
+        End Class
+    End Namespace
+    ```
+
+    ---
+
     このコードの意図は、銀河の名前、銀河までの距離、銀河の種類をすべて一覧に表示することです。 デバッグするには、コードの意図を理解することが重要です。 出力で表示する一覧の 1 行の形式を次に示します。
 
     "*銀河の名前*", "*距離*", "*銀河の種類*"
@@ -214,6 +319,8 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
 1. アプリを実行したまま、`Console.WriteLine` メソッドを呼び出している次のコード行の左側の余白をクリックして、ブレークポイントを設定します。
 
+    #### <a name="c"></a>[C#](#tab/csharp)
+
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
     {
@@ -221,6 +328,15 @@ Visual Studio では、コード行の左にある余白をクリックして、
     }
     ```
 
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    For Each theGalaxy As Galaxy In theGalaxies
+        Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+    Next
+    ```
+
+    ---
     ブレークポイントを設定すると、左側の余白に赤い点が表示されます。
 
     出力に問題があるので、出力を設定する前記のコードをデバッガーで調べることによりデバッグを始めます。
@@ -235,9 +351,12 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
     "Spiral" は、コンソールに出力することを想定していた実際に正しい値です。 アプリの実行中にこのコードのこの値にアクセスできるのは、良いスタートです。 このシナリオでは、正しくない API を使用しています。 デバッガーでコードを実行しながらこれを修正できるかどうかを見ていきます。
 
-1. 同じコードで、まだデバッグしながら、カーソルを `theGalaxy.GalaxyType` の最後に置いて、`theGalaxy.GalaxyType.MyGType` に変更します。 この変更を行うことはできますが、コード エディターには、このコードをコンパイルできないことを示すエラーが表示されます。
+1. 同じコードで、まだデバッグしながら、カーソルを `theGalaxy.GalaxyType` の最後に置いて、`theGalaxy.GalaxyType.MyGType` に変更します。 この変更を行うことはできますが、コード エディターには、このコードをコンパイルできないことを示すエラーが表示されます。 (Visual Basic ではこのエラーは表示されず、このセクションのコードは機能します)
 
     ![Visual Studio デバッガーのスクリーンショット。コード行が赤色で強調表示され、[編集] ボタンが選択された [エディット コンティニュ] メッセージ ボックスが表示されています。](../debugger/media/beginners-edit.png)
+
+   > [!NOTE]
+   > Visual Basic のコード例をデバッグする場合は、 **[再起動]** ![[アプリの再起動]](../debugger/media/dbg-tour-restart.png "RestartApp") ボタンのクリックを指示されるまで、以降のいくつかの手順をスキップします。
 
 1. **[エディット コンティニュ]** メッセージ ボックスで、 **[編集]** をクリックします。 **[エラー一覧]** ウィンドウにエラー メッセージが表示されるようになります。 エラーでは、`'object'` に `MyGType` の定義が含まれていないことが示されます。
 
@@ -274,11 +393,21 @@ Visual Studio では、コード行の左にある余白をクリックして、
     Maffei 1,  Elliptical
     ```
 
-1. このコード行にブレークポイントを設定します。
+1. このコード行の switch ステートメントの前 (Visual Basic の場合は Select ステートメントの前) に、ブレークポイントを設定します。
+
+    #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     public GType(char type)
     ```
+
+    #### <a name="visual-basic"></a>[Visual Basic](#tab/visualbasic)
+
+    ```vb
+    Public Sub New(ByVal type As Char)
+    ```
+
+    ---
 
     このコードで銀河の種類を設定しているので、それを詳しく調べます。
 
@@ -296,7 +425,7 @@ Visual Studio では、コード行の左にある余白をクリックして、
 
     **F11** キーを押すと、デバッガーは一度に 1 ステートメント進みます (そしてコードを実行します)。 **F10** キー (**ステップ オーバー**) も似たコマンドであり、どちらもデバッガーの使用方法を学習するときに非常に役に立ちます。
 
-1. **F11** キーを繰り返し押して、値 "I" に対する `switch` ステートメントでコード行を停止します。 ここで、タイプミスによって問題が発生していることがはっきりします。 `MyGType` を銀河の種類 Irregular に設定するコードに進んで欲しいのですが、デバッガーは代わりにこのコードを完全にスキップして、`switch` ステートメントの `default` セクションで一時停止します。
+1. **F11** キーを繰り返し押して、値 'I' に対する `switch` ステートメント (Visual Basic の場合は `Select` ステートメント) でコード行を停止します。 ここで、タイプミスによって問題が発生していることがはっきりします。 `MyGType` を銀河の種類 Irregular に設定するコードに進んで欲しいのですが、デバッガーは代わりにこのコードを完全にスキップして、`switch` ステートメント (Visual Basic の場合は `Else` ステートメント) の `default` セクションで一時停止します。
 
     ![タイプミスを探す](../debugger/media/beginners-typo.png)
 
