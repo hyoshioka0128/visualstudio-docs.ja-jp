@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971324"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221719"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio での IntelliSense
 
@@ -68,7 +68,7 @@ IntelliSense には、言語によって異なる要素が多数あります。 
 
 ![C&#35; コード ファイル内のパラメーター ヒント](../ide/media/vs2015_paraminfo.png)
 
-クイック ヒントを手動で起動するには、 **[編集]**  >  **[IntelliSense]**  >  **[クイック ヒント]** の順に選択するか、**Ctrl**+**I** キーを押すか、エディターのツール バーで **[クイック ヒント]** を選択します。
+クイック ヒントを手動で起動するには、 **[編集]**  >  **[IntelliSense]**  >  **[クイック ヒント]** の順に選択するか、**Ctrl**+**K**、**Ctrl**+**I** キーを押すか、エディターのツール バーで **[クイック ヒント]** を選択します。
 
 関数がオーバーロードされている場合、IntelliSense では一部のオーバーロード形式の情報が表示されないことがあります。
 
@@ -93,7 +93,7 @@ IntelliSense のアイコンでは、アイコン修飾子を使用して追加�
 | ![内部アイコン修飾子](../ide/media/intellisenseInternalModifier.png)       |    内部クラス    |    アクセスは現在のアセンブリに限定されます。    |
 |![非公開アイコン修飾子](../ide/media/intellisensePrivateModifier.png)        |    非公開クラス    |    包含クラス、または包含クラスから派生した型にアクセスが制限されます。 (C# 7.2 以降で使用可能)    |
 
-## <a name="troubleshoot-intellisense"></a>IntelliSense のトラブルシューティング
+## <a name="troubleshoot-intellisense&quot;></a>IntelliSense のトラブルシューティング
 
 IntelliSense オプションは、状況によっては意図どおりに機能しません。
 
@@ -104,7 +104,7 @@ IntelliSense オプションは、状況によっては意図どおりに機能�
 **カーソルがリテラル文字列内にある。** 次の例のように、リテラル文字列を囲む二重引用符内にカーソルがある場合は、IntelliSense を使用できません。
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **自動オプションがオフになっている。** 既定では、IntelliSense は自動的に動作しますが、無効にすることもできます。 入力候補がオフになっている場合でも、IntelliSense 機能は起動できます。

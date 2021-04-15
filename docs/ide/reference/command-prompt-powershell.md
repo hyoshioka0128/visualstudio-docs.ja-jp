@@ -1,8 +1,8 @@
 ---
-title: 開発者向けのコマンドライン シェル
-description: Visual Studio 開発者コマンド プロンプト、Visual Studio Developer PowerShell、および Visual Studio ターミナルを見つけて使用する方法について説明します。これにより、.NET および C++ ツールをより簡単に使用できるようになります。
-ms.date: 03/04/2021
-ms.custom: contperf-fy21q3
+title: 開発者向けのコマンドライン シェルとプロンプト
+description: '[ツール]、[コマンド ライン] メニューから開始します。 .NET および C++ ツールは、Visual Studio 開発者コマンド プロンプト、開発者用 PowerShell およびターミナルからより簡単に使用できます。'
+ms.date: 04/11/2021
+ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
 - command prompt, Visual Studio
@@ -11,27 +11,21 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672326"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221732"
 ---
-# <a name="developer-command-prompt-and-developer-powershell"></a>開発者コマンド プロンプトと開発者用 PowerShell
+# <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 開発者コマンド プロンプトと開発者用 PowerShell
 
 Visual Studio 2019 には、開発者向けの 2 つのコマンドライン シェルが含まれています。
 
 - **Visual Studio 開発者コマンド プロンプト** - 開発者用コマンドライン ツールを簡単に使用できるように特定の環境変数が設定されている標準コマンド プロンプトです。 Visual Studio 2015 以降で使用できます。
+
 - **Visual Studio Developer PowerShell** - コマンド プロンプトよりも、さらに高機能です。 たとえば、1 つのコマンド ( *cmdlet* と呼ばれる) の出力を別のcmdletに渡すことができます。 このシェルには、開発者コマンド プロンプトと同じ環境変数が設定されています。 Visual Studio 2019 以降で使用できます。
 
-どちらのシェルにも、開発者用コマンドライン ツールをより簡単に使用できるように特定の環境変数が設定されています。 これらのシェルのいずれかを開いたら、さまざまなユーティリティのコマンドを入力できます。それらがどこにあるのかを知っている必要はありません。 次のようなコマンドを実行できます。
-
-- [`MSBuild`](../../msbuild/msbuild-command-line-reference.md) によって、プロジェクトまたはソリューションをビルドします。
-- [.NET Framework ツール](/dotnet/framework/tools/index) ([`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool) や [`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler) など)。
-- C と C++ のコンパイル ツール ([`CL`](/cpp/build/reference/compiler-command-line-syntax) や [`NMAKE`](/cpp/build/reference/running-nmake) など)。
-- C と C++ のその他のビルド ツール ([`LIB`](/cpp/build/reference/lib-reference) や [`DUMPBIN`](/cpp/build/reference/dumpbin-reference) など)。
-- [`dotnet`](/dotnet/core/tools/dotnet) や [`dotnet run`](/dotnet/core/tools/dotnet-run) などの [.NET CLI コマンド](/dotnet/core/tools/index) (これらのコマンドは、通常のコマンド プロンプトからも使用できます)。
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="clrver ツールが表示された Visual Studio の開発者コマンド プロンプト":::
 
@@ -41,7 +35,22 @@ Visual Studio 2019 バージョン 16.5 以降、Visual Studio には、これ�
 
 いずれかの開発者シェルを Visual Studio から別のアプリとして、またはターミナル ウィンドウで開くと、現在のソリューションのディレクトリが表示されます (ソリューションを読み込み済みの場合)。 この動作により、ソリューションまたはそのプロジェクトに対してコマンドを実行するのが容易になります。
 
-## <a name="start-the-shell-from-inside-visual-studio"></a>Visual Studio 内からコマンド プロンプトを開始する
+どちらのシェルにも、開発者用コマンドライン ツールをより簡単に使用できるように特定の環境変数が設定されています。 これらのシェルのいずれかを開いたら、さまざまなユーティリティのコマンドを入力できます。それらがどこにあるのかを知っている必要はありません。 
+
+|よく使うコマンド|説明|
+|--|--|
+|[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|プロジェクトまたはソリューションをビルドする|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| clr 用の [.NET Framework ツール](/dotnet/framework/tools/index)|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|逆アセンブラー用の [.NET Framework ツール](/dotnet/framework/tools/index)|
+|[`dotnet`](/dotnet/core/tools/dotnet)|[.NET CLI コマンド](/dotnet/core/tools/index)|
+|[`dotnet run`](/dotnet/core/tools/dotnet-run)|[.NET CLI コマンド](/dotnet/core/tools/index)|
+|[`CL`](/cpp/build/reference/compiler-command-line-syntax)|C/C++ コンパイル ツール|
+|[`NMAKE`](/cpp/build/reference/running-nmake)|C/C++ コンパイル ツール|
+|[`LIB`](/cpp/build/reference/lib-reference)| C/C++ ビルド ツール|
+|[`DUMPBIN`](/cpp/build/reference/dumpbin-reference)| C/C++ ビルド ツール|
+
+
+## <a name="start-in-visual-studio"></a>Visual Studio で開始する
 
 Visual Studio 内から開発者コマンド プロンプトまたは開発者用 PowerShell を開くには、次の手順に従います。
 
@@ -51,9 +60,9 @@ Visual Studio 内から開発者コマンド プロンプトまたは開発者�
 
    ![Visual Studio でのコマンド プロンプト メニュー項目](./media/developer-command-prompt-for-vs/vs-menu.png)
 
-## <a name="use-the-windows-start-menu"></a>Windows の [スタート] メニューを使用する
+## <a name="start-from-windows-menu"></a>Windows メニューから開始する
 
-Visual Studio のバージョンと、インストールした追加の SDK およびワークロードに応じて、複数のコマンド プロンプトがある場合があります。 次の手順でうまくいかない場合は、[コンピューター上のファイルを手動で探す](#manually-locate-the-file)か、[Visual Studio 内からコマンド プロンプトを開始](#start-the-shell-from-inside-visual-studio)してみてください。
+シェルを起動するもう 1 つの方法は、[スタート] メニューからです。 Visual Studio のバージョンと、インストールした追加の SDK およびワークロードに応じて、複数のコマンド プロンプトがある場合があります。 
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -85,7 +94,7 @@ Visual Studio のバージョンと、インストールした追加の SDK お�
 
 [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) や[それ以前のバージョン](https://developer.microsoft.com/windows/downloads/sdk-archive)など、他の SDK がインストールされている場合は、コマンド プロンプトがさらに表示されることがあります。 各ツールのドキュメントを参照して、どのバージョンのコマンド プロンプトを使用する必要があるかを確認してください。
 
-## <a name="manually-locate-the-file"></a>ファイルを手動で探す
+## <a name="start-from-file-browser"></a>ファイル ブラウザーから開始する 
 
 インストール済みのシェルのショートカットは、通常、 **[スタート] メニュー** の Visual Studio フォルダー内 ( *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools* 内など) にあります。 ただし、コマンド プロンプトを探しても期待した結果が得られない場合は、コンピューター上でファイルを手動で探すことができます。
 
