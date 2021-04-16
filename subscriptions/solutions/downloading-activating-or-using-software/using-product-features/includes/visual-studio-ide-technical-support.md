@@ -10,18 +10,18 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291416"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107510801"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE のテクニカル サポート  
 
 Visual Studio サブスクリプションのサポートでは、販売、サブスクリプション、アカウント、課金に関するサポートが提供されます。 Visual Studio IDE に関する技術的な問題や質問がある場合は、[Visual Studio テクニカル サポート](https://visualstudio.microsoft.com/vs/support/)に質問していただく必要があります。 お客様の Visual Studio サブスクリプションに含まれている可能性のある限られた [Visual Studio テクニカル サポート インシデント](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)をお使いになる前に、他のオンライン リソースを試してみることをお勧めします。
 
-Visual Studio のインストールのイシューについては、「[Visual Studio のインストールとアップグレードの問題のトラブルシューティング](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019)」に記載されているステップ バイ ステップ ガイドをご覧ください。 インストール関連のイシューについては、[インストールのチャット](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションもお試しになれます。
+Visual Studio のインストールのイシューについては、「[Visual Studio のインストールとアップグレードの問題のトラブルシューティング](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues)」に記載されているステップ バイ ステップ ガイドをご覧ください。 インストール関連のイシューについては、[インストールのチャット](https://visualstudio.microsoft.com/vs/support/#talktous) (英語のみ) のサポート オプションもお試しになれます。
 
 
 ## <a name="developer-community--visual-studio-ide"></a>開発者コミュニティ | Visual Studio IDE
