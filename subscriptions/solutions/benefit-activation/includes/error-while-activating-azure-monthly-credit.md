@@ -5,21 +5,23 @@ ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 4481af6b1ff33df7542d230abba2d39964027d41
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541162"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107590163"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>Azure の月単位クレジットをアクティブにしようとするとエラーが表示されます。
 
-Visual Studio サブスクリプションに関連付けられている Azure サブスクリプションあたり、Azure Dev/Test 個別クレジット特典が 1 つ与えられます。 Azure の月単位クレジットを以前アクティブにしている場合、エラーが表示されることがあります。 クレジットをアクティブにしたかどうかわからない場合、[Azure portal](https://portal.azure.com/) にログインしてご確認ください。 
+Visual Studio サブスクリプションに関連付けられている Azure サブスクリプションあたり、月単位の Azure Dev/Test 個別クレジット特典が 1 つ与えられます。 Azure の月単位クレジットを以前アクティブにしている場合、エラーが表示されることがあります。 クレジットをアクティブにしたかどうかわからない場合、[Azure portal](https://portal.azure.com/) にログインしてご確認ください。 
+
+新しい Visual Studio サブスクリプションをお持ちで、月単位の Azure クレジット特典をアクティブ化しようとしたときに "You can't activate this Visual Studio benefit more than once" (この Visual Studio 特典を複数回アクティブ化することはできません) というエラーが表示される場合は、このソリューションの下部にある [サポート チケットを作成] ボタンをクリックして、Visual Studio サブスクリプション サポートにお問い合わせください。 
 
 ## <a name="verify-your-email"></a>電子メールを確認する 
 
