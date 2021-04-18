@@ -1,30 +1,26 @@
 ---
-title: Azure の月単位のクレジットをアクティブにする方法
-description: Visual Studio サブスクリプションに含まれる Azure の月単位クレジットをアクティブにする方法。
+title: 月単位の Azure クレジットをアクティブにする方法
+description: Visual Studio サブスクリプションに含まれる月単位の Azure クレジットをアクティブにする方法
 ms.topic: include
 ms.assetid: aa53b1d3-8e88-4d8c-8385-23f15a7b660b
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 7f1978f0d0679d94bbde3b565ff5680ce89f9063
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541131"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107589964"
 ---
-## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>月単位の Azure Dev/Test 個人クレジットをアクティブにする方法 
-
-Azure Dev/Test 個人クレジットを使用するのにコストはかからず、クレジット カードも必要ありません。 その月に割り当てられているクレジットが不足している場合は、翌月にリセットされるまで、または使用制限をなくして支払い方法を追加するまで、使用を継続することはできません。  
-
-## <a name="how-to-activate-azure-monthly-credit"></a>Azure の月単位のクレジットをアクティブにする方法
+## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>月単位の Azure Dev/Test の個別クレジット特典をアクティブ化にする方法
 
 1. [サブスクライバー ポータル](https://my.visualstudio.com/benefits)にサインインします 
-1. [特典] ページの [ツール] セクションで Azure Dev/Test の個人クレジット タイルを見つけて、特典タイルの下部にある [アクティブ化] リンクをクリックします。 Azure の月単位のクレジットのタイルが見つからない場合は、[特典の比較ページ](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)を使用して、自分のサブスクリプションに月単位のクレジットが含まれていることを確認します。 
+1. [特典] ページの月単位のクレジットの Azure のタイルを見つけて、特典タイルの下部にある [アクティブ化] リンクをクリックします。 Azure の月単位のクレジットのタイルが見つからない場合は、[特典の比較ページ](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)を使用して、自分のサブスクリプションに月単位のクレジットが含まれていることを確認します。 
 1. 既存の Azure サブスクリプションがない場合は、作成するために必要な個人情報の入力を求められます。  
 1. サブスクリプション契約に同意すれば準備完了です。 これ以降は、[portal.azure.com](https://portal.azure.com/) からサブスクリプションにアクセスできます。 
 
@@ -32,7 +28,19 @@ Azure Dev/Test 個人クレジットを使用するのにコストはかから�
 
 Visual Studio サブスクリプション特典を通じて作成された Azure サブスクリプションは、有料のサブスクリプションでは課せられない制限の影響を受ける場合があります。 VM や Azure サービスの作成に特定の地域が使用できない場合や、特定のサービスの種類が使用できない場合があります。 有料サブスクリプションよりも既定のクォータが低い場合があります。  
 
+## <a name="azure-credit-benefit-activation-errors"></a>Azure クレジット特典のアクティブ化エラー
+
+新しい Visual Studio サブスクリプションをお持ちで、月単位の Azure クレジット特典をアクティブ化しようとしたときに "You can't activate this Visual Studio benefit more than once" (この Visual Studio 特典を複数回アクティブ化することはできません) というエラーが表示される場合は、このソリューションの下部にある [サポート チケットを作成] ボタンをクリックして、Visual Studio サブスクリプション サポートにお問い合わせください。 
+
+サブスクリプションが割り当てられてから少し時間がたっている場合は、まず次の点を確認してください。
+- サブスクリプション ポータルの [[特典] ページ](https://my.visualstudio.com/benefits)で [Azure の月単位のクレジット] タイルを確認して、この特典をまだアクティブ化していないことを確認します。 
+- Azure サブスクリプションの一部として、複数のディレクトリを持つことができます。 Azure サブスクリプションを設定したディレクトリを使用していることを確認してください。 [Azure portal](https://portal.azure.com/) の右上隅にあるアカウント アイコンをクリックして、ディレクトリを表示し、切り替えることができます。
+- Visual Studio サブスクリプションに[代替アカウント](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)を関連付けることもできます。 代替アカウントで月単位のクレジットをアクティブにした場合、その電子メールで Azure サブスクリプションに常にサインインする必要があります。 
+
 ## <a name="more-information-about-azure-credits"></a>Azure クレジットに関する詳細情報
+
+Azure の月単位のクレジットを使用するのにコストはかからず、クレジット カードも必要ありません。 その月に割り当てられたクレジットがなくなると、翌月にクレジットがリセットされるまで、または使用制限をなくして支払い方法を追加するまで、Azure リソースは停止されます。 
+
 詳細については、[アクティブ化、資格、その他のサポート リソース](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)に関する記事をご覧ください。  
 
 Visual Studio サブスクリプションに含まれる [Azure クレジットを使用する方法をご確認ください](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)。  
