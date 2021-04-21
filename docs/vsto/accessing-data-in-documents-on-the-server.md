@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965799"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826773"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>サーバー上のドキュメントのデータにアクセスする
   Microsoft Office Word または Microsoft Office Excel のオブジェクトモデルを使用しなくても、ドキュメントレベルのカスタマイズでデータに対してプログラミングを行うことができます。 これは、Word または Excel がインストールされていないサーバー上のドキュメントに含まれているデータにアクセスできることを意味します。 たとえば、サーバー上のコード (たとえば、ページ内) では、 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ドキュメント内のデータをカスタマイズし、カスタマイズされたドキュメントをエンドユーザーに送信できます。 エンドユーザーがドキュメントを開くと、ソリューションアセンブリのデータバインドコードによって、カスタマイズされたデータがドキュメントにバインドされます。 これが可能なのは、ドキュメント内のデータがユーザーインターフェイスから分離されているためです。 詳細については、「 [ドキュメントレベルのカスタマイズでのキャッシュ](../vsto/cached-data-in-document-level-customizations.md)されたデータ」を参照してください。
@@ -45,8 +45,8 @@ ms.locfileid: "99965799"
 
   Excel ブックプロジェクトのクラスのキャッシュされた文字列にアクセスする方法を次のコード例に示し `Sheet1` ます。 この例は、メソッドに対して用意されている大規模な例の一部です <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 。
 
-  [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
-  [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
 
 ## <a name="modify-data-in-the-cache"></a>キャッシュ内のデータを変更する
  キャッシュされたデータオブジェクトを変更するには、通常、次の手順を実行します。
@@ -66,8 +66,8 @@ ms.locfileid: "99965799"
 
  Excel ブックプロジェクトのクラスでキャッシュされた文字列の値を変更する方法を次のコード例に示し `Sheet1` ます。 この例は、メソッドに対して用意されている大規模な例の一部です <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 。
 
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
- [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::
 
 ### <a name="modify-null-values-in-the-data-cache"></a>データキャッシュ内の null 値を変更する
  ドキュメントを保存して閉じた場合、値が **null** のオブジェクトはデータキャッシュに格納されません。 キャッシュされたデータを変更すると、次のようないくつかの影響があります。

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 377c3405211c91712f8754131d8379c3dae7e820
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906565"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824550"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする
   このチュートリアルでは Microsoft Office Excel の操作ウィンドウ上のコントロールへのデータバインドについて説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -87,7 +87,7 @@ ms.locfileid: "99906565"
 
 9. **Products** テーブルを展開し、 **ProductName**、**仕入** 先、 **QuantityPerUnit**、および **UnitPrice** を選択します。
 
-10. **[Finish]** をクリックします。
+10. **[完了]** をクリックします。
 
     ウィザードにより、[**データソース**] ウィンドウに [**仕入先** テーブルと **製品**] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
@@ -142,29 +142,29 @@ ms.locfileid: "99906565"
 
 2. <xref:System.Windows.Forms.UserControl.Load>[操作] ウィンドウコントロールのイベントに次のコードを追加します。
 
-     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet1":::
 
 3. C# では、のイベントハンドラーを作成する必要があり `ActionsControl` ます。 このコードは、コンストラクターに配置でき `ActionsControl` ます。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet2":::
 
 ## <a name="show-the-actions-pane"></a>操作ウィンドウを表示する
  実行時にコントロールを追加するまで、[操作] ウィンドウは表示されません。
 
 #### <a name="to-show-the-actions-pane"></a>操作ウィンドウを表示するには
 
-1. **ソリューションエクスプローラー** で、[ *ThisWorkbook* ] または [ *ThisWorkbook.cs*] を右クリックし、[**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ *thisworkbook* ] または [ *thisworkbook*] を右クリックし、[**コードの表示**] をクリックします。
 
 2. クラスにユーザーコントロールの新しいインスタンスを作成 `ThisWorkbook` します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet3":::
 
 3. <xref:Microsoft.Office.Tools.Excel.Workbook.Startup>のイベントハンドラーで `ThisWorkbook` 、[操作] ウィンドウにコントロールを追加します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet4":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ドキュメントをテストして、ドキュメントを開いたときに操作ウィンドウが開いていること、およびコントロールにマスター/詳細関係があることを確認できるようになりました。
@@ -179,7 +179,7 @@ ms.locfileid: "99906565"
 
 4. 会社名と製品詳細が必要に応じて変更されていることを確認するには、さまざまな企業を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  ここでは、次の作業を行います。
 
 - Word のコントロールへのデータのバインド 詳細については、「 [チュートリアル: Word の操作ウィンドウでコントロールにデータをバインドする](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)」を参照してください。

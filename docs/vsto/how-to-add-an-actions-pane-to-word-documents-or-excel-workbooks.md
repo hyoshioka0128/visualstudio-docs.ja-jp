@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f9488a15f851446c5779bdb1a4572e69a1cf3053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf079727581b9cec4b6cb77a0a0c3f0b503b3a0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917517"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825525"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>方法: Word 文書または Excel ブックに操作ウィンドウを追加する
   Microsoft Office Word 文書または Microsoft Excel ブックに操作ウィンドウを追加するには、まず Windows フォームユーザーコントロールを作成します。 次に、 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` プロジェクト内のフィールド (Word) またはフィールド (Excel) のプロパティにユーザーコントロールを追加し `ThisWorkbook.ActionsPane` ます。
@@ -53,14 +53,14 @@ ms.locfileid: "99917517"
 
 5. <xref:System.Windows.Forms.Control.Click>ボタンのイベントハンドラーにコードを追加します。 次の例は、Microsoft Office Word 文書のコードを示しています。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb" id="Snippet12":::
 
 6. C# では、ボタンクリック用のイベントハンドラーを追加する必要があります。 このコードは、の `HelloControl` 呼び出し後にコンストラクターに配置でき `InitializeComponent` ます。
 
      イベントハンドラーの作成方法の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs" id="Snippet13":::
 
 ## <a name="add-the-user-control-to-the-actions-pane"></a>操作ウィンドウにユーザーコントロールを追加する
  操作ウィンドウを表示するには、ユーザーコントロールを <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` フィールド (Word) またはフィールド (Excel) のプロパティに追加し `ThisWorkbook.ActionsPane` ます。
@@ -69,13 +69,13 @@ ms.locfileid: "99917517"
 
 1. `ThisDocument`クラスまたはクラスに、クラスレベルの宣言として次のコードを追加し `ThisWorkbook` ます (メソッドにこのコードを追加しないでください)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet14":::
 
 2. クラスの `ThisDocument_Startup` イベントハンドラー `ThisDocument` または `ThisWorkbook_Startup` クラスのイベントハンドラーに次のコードを追加し `ThisWorkbook` ます。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet15":::
 
 ## <a name="see-also"></a>関連項目
 - [操作ウィンドウの概要](../vsto/actions-pane-overview.md)

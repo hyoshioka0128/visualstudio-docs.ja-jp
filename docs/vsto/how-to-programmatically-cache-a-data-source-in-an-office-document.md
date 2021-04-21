@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 070253fb7ec57bedad628e116ce193fa2d9cf50b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968945"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827592"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>方法: Office ドキュメント内のデータソースをプログラムによってキャッシュする
   、、など `StartCaching` のホスト項目のメソッドを呼び出すことによって、プログラムを使用してデータオブジェクトをドキュメント内のデータキャッシュに追加でき <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> ます。 ホスト項目のメソッドを呼び出すことによって、データキャッシュからデータオブジェクトを削除 `StopCaching` します。
@@ -38,20 +38,20 @@ ms.locfileid: "99968945"
 
 1. データオブジェクトは、メソッドの内部ではなく、クラスレベルで宣言します。 この例では、 <xref:System.Data.DataSet> プログラムによってキャッシュするという名前のを宣言していることを前提としてい `dataSet1` ます。
 
-     [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
-     [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet12":::
 
 2. データオブジェクトをインスタンス化し、 `StartCaching` ドキュメントまたはワークシートインスタンスのメソッドを呼び出して、データオブジェクトの名前を渡します。
 
-     [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
-     [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet13":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet13":::
 
 ## <a name="to-stop-caching-a-data-object"></a>データオブジェクトのキャッシュを停止するには
 
 1. `StopCaching`ドキュメントまたはワークシートインスタンスのメソッドを呼び出し、データオブジェクトの名前を渡します。 この例では、 <xref:System.Data.DataSet> キャッシュを停止するという名前のがあることを前提としてい `dataSet1` ます。
 
-     [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
-     [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet14":::
 
     > [!NOTE]
     > `StopCaching` `Shutdown` ドキュメントまたはワークシートのイベントのイベントハンドラーからを呼び出さないでください。 イベントが発生した時点までに `Shutdown` 、データキャッシュを変更するには遅すぎます。 イベントの詳細については `Shutdown` 、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。

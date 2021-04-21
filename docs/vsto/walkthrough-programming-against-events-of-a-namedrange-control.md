@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec1c670867fae277a3c3c8290cd34d0d4be7ddf3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937395"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824966"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>チュートリアル: NamedRange コントロールのイベントに対するプログラミング
   このチュートリアルでは、 <xref:Microsoft.Office.Tools.Excel.NamedRange> Visual Studio の Office 開発ツールを使用して、Microsoft Office Excel ワークシートにコントロールを追加し、そのイベントに対してプログラムを作成する方法について説明します。
@@ -101,16 +101,16 @@ ms.locfileid: "99937395"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>BeforeDoubleClick イベントに基づいて NamedRange2 にテキストを挿入するには
 
-1. **ソリューションエクスプローラー** で、 **Sheet1** または **Sheet1.cs** を右クリックして、[**コードの表示**] を選択します。
+1. **ソリューションエクスプローラー** で、 **Sheet1** または **sheet1** を右クリックして [コードの **表示**] を選択します。
 
 2. イベントハンドラーが次のようになるように、コードを追加し `namedRange1_BeforeDoubleClick` ます。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet24":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet24":::
 
 3. C# では、次のイベントに示すように、名前付き範囲のイベントハンドラーを追加する必要があり <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> ます。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet25":::
 
 ## <a name="add-code-to-respond-to-the-change-event"></a>変更イベントに応答するコードを追加します
 
@@ -118,8 +118,8 @@ ms.locfileid: "99937395"
 
 1. イベントハンドラーが次のようになるように、コードを追加し `NamedRange1_Change` ます。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet26":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet26":::
 
     > [!NOTE]
     > Excel 範囲内のセルをダブルクリックすると編集モードに切り替わるため、 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> テキストが変更されていない場合でも、選択が範囲外に移動するときにイベントが発生します。
@@ -130,8 +130,8 @@ ms.locfileid: "99937395"
 
 1. **NamedRange1_SelectionChange** イベントハンドラーが次のようになるようにコードを追加します。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet27":::
 
     > [!NOTE]
     > Excel 範囲内のセルをダブルクリックすると選択範囲が範囲内に移動するため、イベントが <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 発生する前にイベントが発生し <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> ます。
