@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615331181b9402e0d2062142ad266bdd41dca4eb
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892074"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824940"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>方法: 増分するデータを使用してプログラムによって自動的に範囲を補完する
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>オブジェクトのメソッドを使用すると、 <xref:Microsoft.Office.Interop.Excel.Range> ワークシートの範囲に値を自動的に入力できます。 多くの場合、メソッドを使用して、 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 範囲内の値を段階的に増加または減少させることができます。 列挙から省略可能な定数を指定することにより、動作を指定でき <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> ます。
@@ -40,8 +40,8 @@ ms.locfileid: "99892074"
     > の代わりにコントロールを渡すことはできません <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Interop.Excel.Range> 。 詳細については、「 [ホスト項目とホストコントロールのプログラム上の制限事項](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)」を参照してください。
 
 ## <a name="example"></a>例
- [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet49":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet49":::
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  データを格納する範囲の最初のセルには、初期値を含める必要があります。
