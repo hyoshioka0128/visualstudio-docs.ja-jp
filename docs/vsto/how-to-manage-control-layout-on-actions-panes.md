@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 182dee248f161f3dde721c50ee996d6f621dd9af
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918593"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827449"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>方法: 操作ウィンドウのコントロールのレイアウトを管理する
   既定では、操作ウィンドウは、ドキュメントまたはワークシートの右側にドッキングされます。ただし、左、上、または下にドッキングできます。 複数のユーザーコントロールを使用している場合は、[操作] ウィンドウでユーザーコントロールを適切にスタックするコードを記述できます。 詳細については、「 [操作ウィンドウの概要](../vsto/actions-pane-overview.md)」を参照してください。
@@ -40,27 +40,27 @@ ms.locfileid: "99918593"
 
 1. 複数のユーザーコントロールまたは入れ子になった操作ウィンドウコントロールを持つ操作ウィンドウを含む Microsoft Office Word のドキュメントレベルのプロジェクトを開きます。 詳細については、「 [方法: Word 文書または Excel ブックに操作ウィンドウを追加](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)する」を参照してください。
 
-2. **ソリューションエクスプローラー** で [ **ThisDocument.cs** ] または [ **ThisDocument .vb** ] を右クリックし、[**コードの表示**] をクリックします。
+2. **ソリューションエクスプローラー** で **Thisdocument** または **thisdocument** を右クリックし、[**コードの表示**] をクリックします。
 
 3. <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>操作ウィンドウのイベントハンドラーで、操作ウィンドウの向きが横になっているかどうかを確認します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet30":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet30":::
 
 4. 向きが水平の場合は、操作ウィンドウのコントロールを左からスタックします。それ以外の場合は、上からスタックします。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet31":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet31":::
 
 5. C# では、のイベントハンドラーをイベントハンドラーに追加する必要があり `ActionsPane` <xref:Microsoft.Office.Tools.Word.Document.Startup> ます。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet32":::
 
 6. プロジェクトを実行し、操作ウィンドウがドキュメントの上部にドッキングされているときに操作ウィンドウのコントロールが左から右に積み重ねられていることを確認します。また、操作ウィンドウがドキュメントの右側にドッキングされている場合は、コントロールが上から下に積み重ねられていることを確認します。
 
 ## <a name="example"></a>例
- [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
- [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet29":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet29":::
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例で必要な要素は次のとおりです。

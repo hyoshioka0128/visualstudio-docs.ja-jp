@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6dfa2bb4d3309420cf0a9a71e79b5d07b5477ce
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875420"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828528"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Windows インストーラーを使用した Office ソリューションの配置
 
@@ -316,7 +316,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
    **Windows のバージョンに基づくコンピューター単位のインストーラー**
 
-| Windows Version<br /><br /> | InstallShield の構成パス<br /><br /> |
+| Windows のバージョン<br /><br /> | InstallShield の構成パス<br /><br /> |
 |-----------------------------| - |
 | 32 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 | 64 ビット<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
@@ -335,7 +335,7 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 7. この手順を繰り返して、次の値を追加します。
 
-|値型<br /><br />|名前<br /><br />|
+|値の種類<br /><br />|名前<br /><br />|
 |--------------|--------|
 |[Key]<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 値<br /><br />|**LoadBehavior**<br /><br />|
@@ -410,8 +410,8 @@ Office プロジェクトの出力を含めるように、 **OfficeAddInSetup** 
 
 9. このファイルの内容全体を次のコードで置き換えます。
 
-[!code-vb[Trin_CustomAction#1](../vsto/codesnippet/VisualBasic/setexceldocumentproperties/module1.vb#1)]
-[!code-csharp[Trin_CustomAction#1](../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs#1)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/setexceldocumentproperties/module1.vb" id="Snippet1":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs" id="Snippet1":::
 
 10. プロジェクトをコンパイルします。
 

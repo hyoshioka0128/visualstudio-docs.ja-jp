@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60fc27345ef148fd47fdcee15924917ce63f8d68
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954112"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825499"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>方法: マネージコード拡張機能をドキュメントにアタッチする
   カスタマイズアセンブリは、既存の Microsoft Office Word 文書または Microsoft Office Excel ブックに添付できます。 ドキュメントまたはブックは、Visual Studio の Microsoft Office プロジェクトおよび開発ツールでサポートされている任意のファイル形式にすることができます。 詳細については、「 [ドキュメントレベルのカスタマイズのアーキテクチャ](../vsto/architecture-of-document-level-customizations.md)」を参照してください。
@@ -38,15 +38,15 @@ ms.locfileid: "99954112"
 
 2. 次の **Imports** ステートメントまたは **using** ステートメントをコードファイルの先頭に追加します。
 
-     [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
-     [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet4":::
 
-3. 静的メソッドを呼び出し <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> ます。
+3. 静的メソッド <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> を呼び出します。
 
      次のコード例では、オーバーロードを使用し <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> ます。 このオーバーロードは、ドキュメントの完全パスと、 <xref:System.Uri> ドキュメントに添付するカスタマイズの配置マニフェストの場所を指定するを受け取ります。 この例では、 **WordDocument1.docx** という名前の Word 文書がデスクトップ上にあり、配置マニフェストが、デスクトップ上にある **Publish** という名前のフォルダーに配置されていることを前提としています。
 
-     [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
-     [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet3":::
 
 4. プロジェクトをビルドし、カスタマイズをアタッチするコンピューターでアプリケーションを実行します。 コンピューターには、Visual Studio 2010 Tools for Office Runtime がインストールされている必要があります。
 

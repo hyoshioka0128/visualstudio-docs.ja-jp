@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d61579181f00d97a74cc48e022bb5d93a05c0f0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937317"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828177"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>チュートリアル : オプション ボタンを使用してワークシートのグラフを更新する方法
   このチュートリアルでは、Microsoft Office の Excel ワークシートでオプションボタンを使用して、オプションをすばやく切り替える方法をユーザーに提供する方法の基本について説明します。 この場合、オプションによってグラフのスタイルが変更されます。
@@ -115,7 +115,7 @@ ms.locfileid: "99937317"
     |**名前**|**dataChart**|
     |**HasLegend**|**false**|
 
-## <a name="add-controls"></a>コントロールの追加
+## <a name="add-controls"></a>コントロールを追加する
  このワークシートは、オプションボタンを使用して、グラフのスタイルをすばやく変更する方法をユーザーに提供します。 ただし、ラジオボタンは排他的にする必要があります。1つのボタンが選択されている場合、グループ内の他のボタンを同時に選択することはできません。 ワークシートに複数のオプションボタンを追加した場合、この動作は既定では発生しません。
 
  この動作を追加する方法の1つは、ユーザーコントロールのオプションボタンをグループ化し、ユーザーコントロールの背後にコードを記述してから、ユーザーコントロールをワークシートに追加することです。
@@ -137,28 +137,28 @@ ms.locfileid: "99937317"
    | プロパティ | 値 |
    |----------|------------------|
    | **名前** | **columnChart** |
-   | **Text** | **縦棒グラフ** |
+   | **[テキスト]** | **縦棒グラフ** |
 
 3. 2番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|---------------|
    | **名前** | **barChart** |
-   | **Text** | **横棒グラフ** |
+   | **[テキスト]** | **横棒グラフ** |
 
 4. 3番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    | プロパティ | 値 |
    |----------|----------------|
    | **名前** | **lineChart** |
-   | **Text** | **折れ線グラフ** |
+   | **[テキスト]** | **折れ線グラフ** |
 
 5. 4番目のオプションボタンをユーザーコントロールに追加し、次のプロパティを変更します。
 
    |プロパティ|値|
    |--------------|-----------|
    |**名前**|**areaBlockChart**|
-   |**Text**|**Area Block Chart**|
+   |**[テキスト]**|**Area Block Chart**|
 
    次に、オプションボタンがクリックされたときにグラフを更新するコードを記述します。
 
@@ -171,34 +171,34 @@ ms.locfileid: "99937317"
 
 2. `ChartOptions`イベントとプロパティを作成するコードをクラスに追加し `SelectionChanged` `Selection` ます。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet13":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet13":::
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>オプションボタンの CheckedChanged イベントを処理するには
 
 1. `CheckedChanged` オプション ボタンの `areaBlockChart` イベント ハンドラーでグラフの種類を設定し、イベントを発生させます。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet14":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet14":::
 
 2. `CheckedChanged` オプション ボタンの `barChart` イベント ハンドラーでグラフの種類を設定します。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet15":::
 
 3. `CheckedChanged` オプション ボタンの `columnChart` イベント ハンドラーでグラフの種類を設定します。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet16":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet16":::
 
 4. `CheckedChanged` オプション ボタンの `lineChart` イベント ハンドラーでグラフの種類を設定します。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet17":::
 
 5. C# では、オプション ボタンに対してイベント ハンドラーを追加する必要があります。 このコードを、`ChartOptions` への呼び出しの後で `InitializeComponent` コンストラクターに追加できます。 イベントハンドラーの作成方法の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet18":::
 
 ## <a name="add-the-user-control-to-the-worksheet"></a>ワークシートにユーザーコントロールを追加する
  ソリューションをビルドすると、新しいユーザーコントロールが [ **ツールボックス**] に自動的に追加されます。 **ツールボックス** からワークシートにコントロールをドラッグできます。
@@ -209,7 +209,7 @@ ms.locfileid: "99937317"
 
      **ChartOptions** ユーザーコントロールが **ツールボックス** に追加されます。
 
-2. **ソリューションエクスプローラー** で、 **Sheet1** または **Sheet1.cs** を右クリックし、[デザイナーの **表示**] をクリックします。
+2. **ソリューションエクスプローラー** で、[ **sheet1** ] または [ **sheet1**] を右クリックし、[**デザイナーの表示**] をクリックします。
 
 3. [**ツールボックス**] から [ **ChartOptions** ] コントロールをワークシートにドラッグします。
 
@@ -224,12 +224,12 @@ ms.locfileid: "99937317"
 
 1. `Sheet1` クラスに次のイベント ハンドラーを追加します。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet19":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet19":::
 
 2. C# では、次に示すように、ユーザーコントロールのイベントハンドラーをイベントに追加する必要があり <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> ます。 イベントハンドラーの作成方法の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet20":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  これで、オプションボタンを選択したときに、グラフのスタイルが正しく表示されているかどうかを確認するために、ブックをテストできるようになりました。

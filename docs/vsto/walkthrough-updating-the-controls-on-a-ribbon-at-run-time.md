@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cf9bbe73bd43fa01aec8e7d0dec42fd8301ff30
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937187"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827527"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>チュートリアル: 実行時にリボンのコントロールを更新する
 
@@ -82,7 +82,7 @@ ms.locfileid: "99937187"
 
 3. 新しいリボンの名前を [顧客] **リボン** に変更し、[ **追加**] をクリックします。
 
-     リボンデザイナーで CustomerRibbon.cs またはファイルが開き、既定のタブとグループが表示され *ます。*
+     リボンデザイナーで、 *顧客のリボン .cs* または *顧客のリボン .vb* ファイルが開き、既定のタブとグループが表示されます。
 
 4. リボン デザイナーをクリックして選択します。
 
@@ -128,7 +128,7 @@ ms.locfileid: "99937187"
 
      これにより、[**メッセージ**] タブの [**クリップボード**] グループの前に **顧客の購入** グループが配置されます。
 
-## <a name="create-the-data-source"></a>データソースを作成する
+## <a name="create-the-data-source"></a>データ ソースを作成する
 
 **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
@@ -152,15 +152,15 @@ ms.locfileid: "99937187"
 
 8. 次の各テーブルの横にあるチェック ボックスをオンにします。
 
-    1. **企業**
+    1. **顧客**
 
     2. **注文の詳細**
 
-    3. **Orders**
+    3. **注文**
 
     4. **製品**
 
-9. **[Finish]** をクリックします。
+9. **[完了]** をクリックします。
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>実行時にカスタムグループのコントロールを更新する
 
@@ -180,7 +180,7 @@ ms.locfileid: "99937187"
 
     このアセンブリには、統合言語クエリ (LINQ) を使用するためのクラスが含まれています。 ここでは、LINQ を使用して Northwind データベースから取得したデータをカスタム グループのコントロールに読み込みます。
 
-3. **ソリューションエクスプローラー** で、 **CustomerRibbon.cs** または **顧客のリボン** をクリックして選択します。
+3. **ソリューションエクスプローラー** で、[**顧客] リボン** または [**顧客] リボン** をクリックして選択します。
 
 4. **[表示]** メニューの **[コード]** をクリックします。
 
@@ -188,18 +188,18 @@ ms.locfileid: "99937187"
 
 5. リボン コード ファイルの先頭に次のステートメントを追加します。 これらのステートメントによって、LINQ 名前空間や Outlook プライマリ相互運用機能アセンブリ (PIA) の名前空間に簡単にアクセスできます。
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet1":::
 
 6. クラス内に次のコードを追加し `CustomerRibbon` ます。 このコードは、Northwind データベースの Customer、Orders、Order Details、および Product テーブルから取得した情報を格納するために使用するデータ テーブルおよびテーブル アダプターを宣言します。
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet2":::
 
 7. `CustomerRibbon` クラスに次のコード ブロックを追加します。 このコードは、実行時にリボンのコントロールを作成する3つのヘルパーメソッドを追加します。
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet3":::
 
 8. `CustomerRibbon_Load` イベント ハンドラー メソッドを次のコードで置き換えます。 このコードは、LINQ クエリを使用して以下のタスクを実行します。
 
@@ -207,8 +207,8 @@ ms.locfileid: "99937187"
 
    - `PopulateSalesOrderInfo` ヘルパー メソッドを呼び出す。 このメソッドは、現在選択されている顧客に関連する販売注文番号で **products purchased** メニューを更新します。
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet4":::
 
 9. 次のコードを `CustomerRibbon` クラスに追加します。 このコードは、LINQ クエリを使用して以下のタスクを実行します。
 
@@ -218,8 +218,8 @@ ms.locfileid: "99937187"
 
    - 各ボタンにイベントハンドラーを追加する。
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet6":::
 
 10. **ソリューションエクスプローラー** で、リボンコードファイルをダブルクリックします。
 
@@ -235,13 +235,13 @@ ms.locfileid: "99937187"
 
     - `PopulateMailItem` ヘルパー メソッドを呼び出し、現在のテキスト (つまり、選択されている顧客の名前) を渡します。 このメソッドは、新しいメールメッセージの [宛先]、[件名]、および [本文] フィールドを設定します。
 
-      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]
+      :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet5":::
+      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet5":::
 
 13. 次の `Click` イベント ハンドラーを `CustomerRibbon` クラスに追加します。 このコードは、選択した製品の名前を新しいメールメッセージの本文フィールドに追加します。
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet8":::
 
 14. 次のコードを `CustomerRibbon` クラスに追加します。 このコードは、以下のタスクを実行します。
 
@@ -249,8 +249,8 @@ ms.locfileid: "99937187"
 
     - 新しいメールメッセージの [件名] フィールドと [本文] フィールドにテキストを追加します。
 
-      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]
+      :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet7":::
+      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet7":::
 
 ## <a name="test-the-controls-in-the-custom-group"></a>カスタムグループのコントロールをテストする
 

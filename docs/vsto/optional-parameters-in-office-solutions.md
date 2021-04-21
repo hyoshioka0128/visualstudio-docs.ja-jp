@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d6824d53d552a27a68a49d63497156147283fd29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c95842ac2c6d77a2312ac5c4c197ba22ed2020e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847701"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825421"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office ソリューションの省略可能なパラメーター
   Microsoft Office アプリケーションのオブジェクト モデルに含まれるメソッドの多くは、省略可能なパラメーターを受け取ります。 Visual Studio で Visual Basic を使用して Office ソリューションを開発する場合は、省略可能なパラメーターに値を渡す必要はありません。省略したパラメーターに対しては自動的に既定値が使用されます。 ほとんどの場合は、Visual C# プロジェクトでも省略可能なパラメーターを省略できます。 ただし、ドキュメントレベルの Word プロジェクトでは、クラスの省略可能な **ref** パラメーターを省略することはできません `ThisDocument` 。
@@ -40,19 +40,19 @@ ms.locfileid: "99847701"
 ## <a name="example-in-excel"></a>Excel の例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> メソッドには、多くの省略可能なパラメーターがあります。 次のコード例に示すように、一部のパラメーターの値を指定し、他のパラメーターには既定値を使用することができます。 この例では、`Sheet1` というワークシート クラスを持つドキュメント レベルのプロジェクトが必要です。
 
- [!code-csharp[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs#1)]
- [!code-vb[Trin_VstrefGeneralExcel#1](../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/excelworkbook1/Sheet1.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/excelworkbook1/Sheet1.vb" id="Snippet1":::
 
 ## <a name="example-in-word"></a>Word の例
  <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> メソッドには、多くの省略可能なパラメーターがあります。 次のコード例に示すように、一部のパラメーターの値を指定し、他のパラメーターには既定値を使用することができます。
 
- [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
- [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet1":::
 
 ## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Word の Visual C# ドキュメントレベルのプロジェクトで、ThisDocument クラスのメソッドの省略可能なパラメーターを使用する
  Word オブジェクトモデルには、値を受け入れるオプションの **ref** パラメーターを持つ多くのメソッドが含まれてい <xref:System.Object> ます。 ただし、  `ThisDocument` Word の Visual C# ドキュメントレベルのプロジェクトでは、生成されたクラスのメソッドの ref パラメーター (省略可能) を省略することはできません。 Visual C# では、クラスではなく、インターフェイスのメソッドに対してのみ省略可能な **ref** パラメーターを省略できます。 たとえば、次のコード例はコンパイルされません。これは、クラスのメソッドの省略可能な **ref** パラメーターを省略できないため <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> `ThisDocument` です。
 
- [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet3":::
 
  `ThisDocument` クラスのメソッドを呼び出す場合は、次のガイドラインに従います。
 
@@ -62,11 +62,11 @@ ms.locfileid: "99847701"
 
   次のコード例では、 <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> *ignoreuppercase* パラメーターの値を指定し、他のパラメーターの既定値をそのまま使用して、メソッドを呼び出す方法を示します。
 
-  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet4":::
 
   クラスのメソッドの省略可能な **ref** パラメーターを省略するコードを記述する場合は、 `ThisDocument` <xref:Microsoft.Office.Interop.Word.Document> プロパティによって返されるオブジェクトで同じメソッドを呼び出し、 <xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A> そのメソッドからパラメーターを省略することもできます。 これは、<xref:Microsoft.Office.Interop.Word.Document> がクラスではなくインターフェイスであるためです。
 
-  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet5":::
 
   値と参照型のパラメーターの詳細については、「 [引数を値で渡す」と「参照渡し &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (Visual Basic の場合)」と「 [&#40;パラメーターを渡す ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)」を参照してください。
 

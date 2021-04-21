@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ce8c334be74f2643bfc7fa263b01a74db109eb7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969153"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827748"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>チュートリアル: Outlook でデザインされたフォーム領域をインポートする
   このチュートリアルでは、Microsoft Office Outlook でフォーム領域をデザインし、そのフォーム領域を **[新しいフォーム領域]** ウィザードを使用して Outlook VSTO アドイン プロジェクトにインポートする方法について説明します。 Outlook でフォーム領域をデザインすると、Outlook データにバインドされたネイティブ Outlook コントロールをフォーム領域に追加できます。 フォーム領域をインポートした後で、各コントロールのイベントを処理できます。
@@ -151,7 +151,7 @@ ms.locfileid: "99969153"
 
 7. **[このフォーム領域を表示するメッセージ クラスを識別します]** ページの **[このフォーム領域を表示するカスタム メッセージ クラスを選択]** フィールドに「 **IPM.Task.TaskFormRegion**」と入力し、 **[完了]** をクリックします。
 
-     *TaskFormRegion.cs* または *TaskFormRegion* ファイルがプロジェクトに追加されます。
+     *TaskFormRegion* ファイルまたは *TaskFormRegion* ファイルがプロジェクトに追加されます。
 
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>フォーム領域上のコントロールのイベントを処理します
  プロジェクトにフォーム領域を追加したので、Outlook のフォーム領域に追加したボタンの `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` イベントを処理するコードを追加できます。
@@ -160,14 +160,14 @@ ms.locfileid: "99969153"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>フォーム領域上のコントロールのイベントを処理するには
 
-1. **ソリューションエクスプローラー** で、 *TaskFormRegion.cs* または *TaskFormRegion* を右クリックし、[コードの **表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、 *TaskFormRegion* または *TaskFormRegion* を右クリックし、[**コードの表示**] をクリックします。
 
-    *TaskFormRegion.cs* または *TaskFormRegion* がコードエディターで開きます。
+    *TaskFormRegion* または *TaskFormRegion* がコードエディターで開きます。
 
 2. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、Outlook のタスク フォルダーから各タスクの件名を取得し、フォーム領域上のコンボ ボックスに表示します。
 
-    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet1":::
 
 3. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、以下のタスクを実行します。
 
@@ -177,13 +177,13 @@ ms.locfileid: "99969153"
 
    - フォーム領域の隠しフィールドにタスクの件名を追加します。 追加した値が Outlook のアイテムの一部として隠しフィールドに格納されます。
 
-     [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet2":::
 
 4. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、前の手順で説明した `FindTaskBySubjectName` ヘルパー メソッドを提供します。
 
-    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet3":::
 
 5. 次のコードを `TaskFormRegion` クラスに追加します。 このコードは、以下のタスクを実行します。
 
@@ -193,8 +193,8 @@ ms.locfileid: "99969153"
 
    - 依存タスクのリスト ボックスに `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 値と `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 値を追加します。
 
-     [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
-     [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet4":::
 
 6. `TaskFormRegion_FormRegionShowing` イベント ハンドラーを次のコードで置き換えます。 このコードは、以下のタスクを実行します。
 
@@ -202,8 +202,8 @@ ms.locfileid: "99969153"
 
    - フォーム領域が表示されたときに、 `RefreshTaskListBox` ヘルパー メソッドを呼び出します。 これにより、前にアイテムが開かれたときにリスト ボックスに追加された依存タスクが表示されます。
 
-     [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
-     [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet5":::
 
 ## <a name="test-the-outlook-form-region"></a>Outlook フォーム領域のテスト
  フォーム領域をテストするには、フォーム領域の前提タスクの一覧にタスクを追加します。 前提タスクの完了ステータスを更新し、そのタスクの更新された完了ステータスを、前提タスクの一覧で確認します。

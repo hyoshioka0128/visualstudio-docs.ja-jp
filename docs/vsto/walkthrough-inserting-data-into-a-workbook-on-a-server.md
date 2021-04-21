@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5d3bcb09ce1db013b89e60b22308f1904c4796
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937437"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827722"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>チュートリアル: サーバー上のブックにデータを挿入する
   このチュートリアルでは、クラスを使用して Excel を起動することなく、Microsoft Office Excel ブックにキャッシュされているデータセットにデータを挿入する方法について説明 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> します。
@@ -81,9 +81,9 @@ ms.locfileid: "99937437"
 
 8. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**AdventureWorksDataSet** プロジェクトを **ソリューションエクスプローラー** に追加し、 **Class1.cs** または **Class1** コードファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**AdventureWorksDataSet** プロジェクトを **ソリューションエクスプローラー** に追加し、 **class1** または **class1** コードファイルを開きます。
 
-9. **ソリューションエクスプローラー** で、 **Class1.cs** または **Class1** を右クリックし、[**削除**] をクリックします。 このチュートリアルでは、このファイルは必要ありません。
+9. **ソリューションエクスプローラー** で、[ **class1** ] または [ **class1**] を右クリックし、[**削除**] をクリックします。 このチュートリアルでは、このファイルは必要ありません。
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>クラスライブラリプロジェクトでのデータセットの定義
  SQL Server 2005 の AdventureWorksLT データベースのデータを含む、型指定されたデータセットを定義します。 このチュートリアルの後半では、Excel ブックプロジェクトとコンソールアプリケーションプロジェクトからこのデータセットを参照します。
@@ -108,7 +108,7 @@ ms.locfileid: "99937437"
 
 7. [ **データベースオブジェクトの選択** ] ページで、[ **テーブル** ] を展開し、[ **Product (saleslt)**] を選択します。
 
-8. **[Finish]** をクリックします。
+8. **[完了]** をクリックします。
 
     *Adventureworksltdataset.xsd* ファイルが **AdventureWorksDataSet** プロジェクトに追加されます。 このファイルでは、次の項目を定義します。
 
@@ -150,7 +150,7 @@ ms.locfileid: "99937437"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>Excel ブックプロジェクトのデータソースにデータセットを追加するには
 
-1. **ソリューションエクスプローラー** で、 **AdventureWorksReport** プロジェクトの下にある **Sheet1.cs** または **Sheet1** をダブルクリックします。
+1. **ソリューションエクスプローラー** で、 **AdventureWorksReport** プロジェクトの [ **Sheet1** ] または [ **sheet1** ] をダブルクリックします。
 
      デザイナーでブックが開きます。
 
@@ -220,7 +220,7 @@ ms.locfileid: "99937437"
 
 5. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Datawriter** プロジェクトを **ソリューションエクスプローラー** に追加し、 **Program.cs** または **module1.vb コードファイル** を開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**Datawriter** プロジェクトを **ソリューションエクスプローラー** に追加し、**プログラム .cs** または module1.vb コードファイルを開き **ます。**
 
 ## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>コンソールアプリケーションを使用して、キャッシュされたデータセットにデータを追加する
  コンソールアプリケーションのクラスを使用して、ブック内のキャッシュされたデータ <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> セットにデータを設定します。
@@ -237,12 +237,12 @@ ms.locfileid: "99937437"
 
 5. [ **プロジェクト** ] タブで [ **AdventureWorksDataSet**] を選択し、[ **OK**] をクリックします。
 
-6. コードエディター で Program.cs *ファイルまたは* module1.vb ファイルを開きます。
+6. コードエディターで、*プログラム .cs* ファイルまたは module1.vb ファイルを *開きます。*
 
 7. コードファイルの先頭に、(C# の場合) または **Imports** (for Visual Basic) ステートメントを **使用して**、次のコードを追加します。
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. `Main` メソッドに次のコードを追加します。 このコードは、次のオブジェクトを宣言します。
 
@@ -255,8 +255,8 @@ ms.locfileid: "99937437"
      > [!NOTE]
      > 次のコードは、 *.xlsx* ファイル拡張子を持つブックを使用していることを前提としています。 プロジェクト内のブックのファイル拡張子が異なる場合は、必要に応じてパスを変更します。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
-     [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet3":::
 
 9. `Main`前の手順で追加したコードの後に、次のコードをメソッドに追加します。 このコードは、以下のタスクを実行します。
 
@@ -266,8 +266,8 @@ ms.locfileid: "99937437"
 
    - メソッドを使用して、キャッシュされたデータセットに、型指定された <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> ローカルデータセットのデータを設定します。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
-     [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet4":::
 
 10. **ソリューションエクスプローラー** で、 **datawriter** プロジェクトを右クリックして [**デバッグ**] をポイントし、[**新しいインスタンスを開始**] をクリックします。
 
