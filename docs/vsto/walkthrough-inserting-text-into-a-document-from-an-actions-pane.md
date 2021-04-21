@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ac42954e32b30a293abbe031218213948fb103a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937382"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824979"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>チュートリアル: 操作ウィンドウからドキュメントにテキストを挿入する
   このチュートリアルでは、Microsoft Office Word 文書に操作ウィンドウを作成する方法について説明します。 操作ウィンドウには、入力を収集し、そのテキストをドキュメントに送信する2つのコントロールが含まれています。
@@ -133,7 +133,7 @@ ms.locfileid: "99937382"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**addText**|
-    |**Text**|**挿入**|
+    |**[テキスト]**|**[挿入]**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>ドキュメントにテキストを挿入するコードを追加する
  [操作] ウィンドウで、テキストボックスのテキストをドキュメント内の適切なコントロールに挿入するコードを記述し <xref:Microsoft.Office.Tools.Word.Bookmark> ます。 クラスを使用して、 `Globals` 操作ウィンドウのコントロールからドキュメントのコントロールにアクセスできます。 詳細については、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。
@@ -142,12 +142,12 @@ ms.locfileid: "99937382"
 
 1. [ <xref:System.Windows.Forms.Control.Click> **Addtext** ] ボタンのイベントハンドラーに次のコードを追加します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb" id="Snippet8":::
 
 2. C# では、ボタンクリック用のイベントハンドラーを追加する必要があります。 このコードは、の `InsertTextControl` 呼び出し後にコンストラクターに配置でき `InitializeComponent` ます。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet9":::
 
 ## <a name="add-code-to-show-the-actions-pane"></a>操作ウィンドウを表示するコードを追加する
  操作ウィンドウを表示するには、作成したコントロールをコントロールコレクションに追加します。
@@ -156,13 +156,13 @@ ms.locfileid: "99937382"
 
 1. クラスの [操作] ウィンドウコントロールの新しいインスタンスを作成し `ThisDocument` ます。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet10":::
 
 2. のイベントハンドラーに次のコードを追加 <xref:Microsoft.Office.Tools.Word.Document.Startup> `ThisDocument` します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet11":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ドキュメントをテストして、ドキュメントを開いたときに操作ウィンドウが開かれ、ボタンがクリックされたときにテキストボックスに入力したテキストがブックマークに挿入されていることを確認します。

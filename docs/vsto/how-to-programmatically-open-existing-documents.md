@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81d134c88d93b3da3b0f0e6c3ded3cbe0d6d3f89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0153413a357a122b4bb5a1f1cbfb44079f78e128
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951681"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827306"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>方法: プログラムによって既存のドキュメントを開く
   メソッドは、 <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 完全修飾パスとファイル名で指定された既存の Microsoft Office Word 文書を開きます。 このメソッドは、 <xref:Microsoft.Office.Interop.Word.Document> 開いているドキュメントを表すを返します。
@@ -31,15 +31,15 @@ ms.locfileid: "99951681"
 
 - <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>コレクションのメソッドを呼び出し、 <xref:Microsoft.Office.Interop.Word.Documents> ドキュメントへのパスを指定します。
 
-     [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
-     [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet5":::
 
 ## <a name="to-open-a-document-as-read-only"></a>ドキュメントを読み取り専用として開くには
 
 - メソッドを呼び出し <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> 、ドキュメントへのパスを指定し、メソッド呼び出しで *ReadOnly* 引数を **True** に設定します。
 
-     [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
-     [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet6":::
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。

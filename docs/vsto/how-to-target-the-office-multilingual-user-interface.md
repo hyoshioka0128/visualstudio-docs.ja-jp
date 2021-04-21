@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 245b257140cd0b1f54719ec7a132bf2297fc2dd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cf838b544ec78c8c7d6e9e2d6f1cb747e999ccd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962341"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823916"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>方法: Office 多言語ユーザーインターフェイスを対象にする
   多言語ユーザーインターフェイス (MUI) は、エンドユーザーがユーザーインターフェイス (UI) の言語を変更できるようにする Microsoft Office の機能です。 たとえば、英語の UI を使用するエンドユーザーは、UI の言語をスペイン語に変更できます。
@@ -37,8 +37,8 @@ ms.locfileid: "99962341"
 
 1. <xref:System.Threading.Thread.CurrentUICulture%2A>現在のスレッドのプロパティを使用します。 ユーザーのコンピューターで現在実行されている Office のバージョンで使用される言語に合わせて、UI 文字列の言語を設定します。
 
-     [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
-     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="see-also"></a>関連項目
 - [方法: プライマリ相互運用機能アセンブリを使用して Office アプリケーションを対象にする](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f6fbb91c37fd8956860eed8e4d39f8b0a8c1a0e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958662"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824420"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>チュートリアル: CheckBox コントロールを使用したドキュメント書式の変更
   このチュートリアルでは、Microsoft Office Word のドキュメントレベルのカスタマイズで Windows フォームコントロールを使用して、テキストの書式設定を変更する方法について説明します。
@@ -72,7 +72,7 @@ ms.locfileid: "99958662"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**Text**|**太字**|
+    |**[テキスト]**|**太字**|
 
 4. **Enter** キーを押して、最初のチェックボックスの下に挿入ポイントを移動します。
 
@@ -81,7 +81,7 @@ ms.locfileid: "99958662"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**Applybold フォント**|
-    |**Text**|**斜体**|
+    |**[テキスト]**|**斜体**|
 
 6. **Enter** キーを押して、2番目のチェックボックスの下に挿入ポイントを移動します。
 
@@ -90,7 +90,7 @@ ms.locfileid: "99958662"
     |プロパティ|値|
     |--------------|-----------|
     |**名前**|**applyUnderlineFont**|
-    |**Text**|**Underline**|
+    |**[テキスト]**|**強調**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>テキストとブックマークコントロールを追加する
 
@@ -119,26 +119,26 @@ ms.locfileid: "99958662"
 
 2. C# の場合のみ、次の定数を **ThisDocument** クラスに追加します。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet2":::
 
 3. <xref:System.Windows.Forms.Control.Click>チェックボックスのイベントハンドラーに次のコードを追加し `applyBoldFont` ます。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet3":::
 
 4. <xref:System.Windows.Forms.Control.Click>チェックボックスのイベントハンドラーに次のコードを追加し `applyItalicFont` ます。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet4":::
 
 5. <xref:System.Windows.Forms.Control.Click>チェックボックスのイベントハンドラーに次のコードを追加し `applyUnderlineFont` ます。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet5":::
 
 6. C# では、テキストボックスのイベントハンドラーをイベントに追加する必要があり <xref:Microsoft.Office.Tools.Word.Document.Startup> ます。 イベントハンドラーの作成方法の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet6":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ドキュメントをテストして、チェックボックスをオンまたはオフにしたときにテキストが正しく書式設定されていることを確認できるようになりました。

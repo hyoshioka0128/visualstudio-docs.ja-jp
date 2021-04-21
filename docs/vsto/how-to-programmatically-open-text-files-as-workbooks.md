@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 47582718128fc9818bb42571e3f33c0190a32d9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14a73d7a06c3d79c15df5b823b38efc9ddceb846
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888746"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824173"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>方法: プログラムによってテキストファイルをブックとして開く
   テキストファイルをブックとして開くことができます。 開くテキストファイルの名前を渡す必要があります。 解析を開始する行番号やファイル内のデータの列の形式など、いくつかの省略可能なパラメーターを指定できます。
@@ -29,8 +29,8 @@ ms.locfileid: "99888746"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="example"></a>例
- [!code-csharp[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#80)]
- [!code-vb[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#80)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet80":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet80":::
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  この例では、次のコンポーネントが必要です。

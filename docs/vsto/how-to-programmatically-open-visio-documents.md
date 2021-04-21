@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f96efd41eb91551fe3cf7c03b55a44b7a9e1bf1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903657"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824745"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>方法: プログラムによって Visio 図面を開く
   既存の Microsoft Office Visio 図面を開くには、Open と OpenEx の2つの方法があります。 OpenEx メソッドは Open メソッドと同じですが、呼び出し元がドキュメントを開く方法を指定できる引数を提供する点が異なります。
@@ -33,8 +33,8 @@ ms.locfileid: "99903657"
 
 - `Microsoft.Office.Interop.Visio.Documents.Open` メソッドを呼び出し、Visio 図面の完全修飾パスを指定します。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet5":::
 
 ## <a name="open-a-visio-document-with-specified-arguments"></a>指定された引数を使用して Visio 図面を開く
 
@@ -42,8 +42,8 @@ ms.locfileid: "99903657"
 
 - `Microsoft.Office.Interop.Visio.Documents.OpenEx` メソッドを呼び出して、Visio 図面の完全修飾パスを指定し、必要な引数を指定します。この例では、ドッキングと読み取り専用の引数を指定しています。
 
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet6":::
 
 ## <a name="compile-the-code"></a>コードのコンパイル
  このコード例で必要な要素は次のとおりです。

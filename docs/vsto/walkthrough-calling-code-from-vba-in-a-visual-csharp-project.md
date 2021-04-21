@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906479"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824472"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>チュートリアル: Visual C# プロジェクトで VBA からコードを呼び出す
   このチュートリアルでは、ブック内の Visual Basic for Applications (VBA) コードから Microsoft Office Excel 用のドキュメント レベルのカスタマイズ内のメソッドを呼び出す方法を示します。 このプロシージャには次の 3 つの基本的な手順が含まれます。 `Sheet1` ホスト項目クラスにメソッドを追加する、ブックの VBA コードにメソッドを公開する、および、ブック内の VBA コードからメソッドを呼び出す、の 3 つです。
@@ -115,7 +115,7 @@ ms.locfileid: "99906479"
 
 8. **[既存のドキュメントをコピーする]** を選択し、 **[既存のドキュメントの完全なパス]** ボックスで、先ほど作成した **WorkbookWithVBA** ブックの場所を指定します。 独自のマクロ対応ブックを使用している場合は、代わりにそのブックの場所を指定します。
 
-9. **[Finish]** をクリックします。
+9. **[完了]** をクリックします。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]デザイナーで **WorkbookWithVBA** ブックを開き、**ソリューションエクスプローラー** に **CallingCodeFromVBA** プロジェクトを追加します。
 
@@ -161,15 +161,15 @@ ms.locfileid: "99906479"
 
 2. 次のコードを `Sheet1` クラスに追加します。 `CreateVstoNamedRange` メソッドは指定された範囲に新しい <xref:Microsoft.Office.Tools.Excel.NamedRange> オブジェクトを作成します。 このメソッドにより、 <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> の <xref:Microsoft.Office.Tools.Excel.NamedRange>イベントのイベント ハンドラーも作成されます。 このチュートリアルの後半では、ドキュメント内の VBA コードからこの `CreateVstoNamedRange` メソッドを呼び出します。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet2":::
 
 3. 次のメソッドを `Sheet1` クラスに追加します。 このメソッドは <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> メソッドをオーバーライドして、 `Sheet1` クラスの現在のインスタンスを返します。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet3":::
 
 4. `Sheet1` クラスの宣言の最初の行の前で、次の属性を適用します。 これらの属性によってクラスが COM で表示されるようになりますが、クラスのインターフェイスは生成されません。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet1":::
 
 ## <a name="extract-an-interface-for-the-sheet1-class"></a>Sheet1 クラスのインターフェイスを抽出する
  `CreateVstoNamedRange` メソッドを VBA コードに公開する前に、このメソッドを定義するパブリック インターフェイスを作成し、そのインターフェイスを COM に公開する必要があります
@@ -184,11 +184,11 @@ ms.locfileid: "99906479"
 
 4. **[OK]** をクリックします。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] により、 `ISheet1`という名前の新しいインターフェイスが生成され、 `Sheet1` インターフェイスを実装できるように `ISheet1` クラスの定義が変更されます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] また、コードエディターで **ISheet1.cs** ファイルを開きます。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] により、 `ISheet1`という名前の新しいインターフェイスが生成され、 `Sheet1` インターフェイスを実装できるように `ISheet1` クラスの定義が変更されます。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] また、コードエディターで **ISheet1** ファイルも開きます。
 
 5. **ISheet1.cs** ファイルで、 `ISheet1` インターフェイス宣言を次のコードで置き換えます。 このコードにより、 `ISheet1` インターフェイスはパブリック インターフェイスになり、 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性が適用されて、インターフェイスが COM で表示されるようになります。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs" id="Snippet4":::
 
 6. プロジェクトをビルドします。
 
@@ -241,7 +241,7 @@ ms.locfileid: "99906479"
 
 7. 変更を保存せずに Excel を終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Office ソリューションでの VBA からのコード呼び出しについて詳しくは、次のトピックを参照してください。
 
 - VBA から Visual Basic カスタマイズのホスト項目のコードを呼び出します。 このプロセスは、Visual C# のプロセスとは異なります。 詳細については、「 [チュートリアル: Visual Basic プロジェクトの VBA からコードを呼び出す](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)」を参照してください。
