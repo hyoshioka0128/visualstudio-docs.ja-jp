@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dce8bb0667cecbe073c734595d341f9c7b7ccac9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940801"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826084"
 ---
 # <a name="threading-support-in-office"></a>Office でのスレッドのサポート
   この記事では、Microsoft Office オブジェクトモデルでのスレッド処理のサポートについて説明します。 Office オブジェクトモデルはスレッドセーフではありませんが、Office ソリューションで複数のスレッドを使用することができます。 Office アプリケーションは、コンポーネントオブジェクトモデル (COM) サーバーです。 COM を使用すると、クライアントは任意のスレッドで COM サーバーを呼び出すことができます。 スレッドセーフでない COM サーバーの場合、COM は同時呼び出しをシリアル化して、サーバー上で一度に1つの論理スレッドだけが実行されるようにするメカニズムを提供します。 このメカニズムは、シングルスレッドアパートメント (STA) モデルと呼ばれています。 呼び出しはシリアル化されるため、サーバーがビジー状態であるかバックグラウンドスレッドで他の呼び出しを処理しているときに、呼び出し元が一定期間ブロックされることがあります。
@@ -38,7 +38,7 @@ ms.locfileid: "99940801"
 
 - コンカレンシー
 
-- 同期
+- Synchronization
 
 - マーシャリング
 
@@ -65,10 +65,10 @@ ms.locfileid: "99940801"
 ## <a name="start-the-thread-correctly"></a>スレッドを正しく開始します
  新しい STA スレッドを作成するときは、スレッドを開始する前にアパートメント状態を STA に設定します。 これを実行する方法を次のコード例に示します。
 
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs" id="Snippet5":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb" id="Snippet5":::
 
- 詳細については、「 [マネージスレッド処理のベストプラクティス](/dotnet/standard/threading/managed-threading-best-practices)」を参照してください。
+ 詳細については、「[マネージド スレッド処理のベスト プラクティス](/dotnet/standard/threading/managed-threading-best-practices)」を参照してください。
 
 ## <a name="modeless-forms"></a>モードレスフォーム
  モードレスフォームを使用すると、フォームの表示中にアプリケーションとの間で何らかの種類の操作を行うことができます。 ユーザーはフォームと対話し、フォームはを閉じずにアプリケーションと対話します。 Office オブジェクトモデルでは、マネージドモードレスフォームがサポートされています。ただし、バックグラウンドスレッドでは使用しないでください。

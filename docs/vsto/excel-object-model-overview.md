@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 509378b13e48f21a1148d700addd9ac4e78985e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910301"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825694"
 ---
 # <a name="excel-object-model-overview"></a>Excel オブジェクトモデルの概要
   Microsoft Office Excel を使用するソリューションを開発するため、Excel オブジェクト モデルによって提供されるオブジェクトと対話することができます。 このトピックでは、特に重要なオブジェクトについて説明します。
@@ -50,7 +50,7 @@ ms.locfileid: "99910301"
   ここでは、Excel オブジェクト モデルの概念について簡単に説明します。 Excel オブジェクトモデル全体の詳細については、「 [excel オブジェクトモデルドキュメントの使用](#ExcelOMDocumentation)」を参照してください。
 
 ## <a name="access-objects-in-an-excel-project"></a>Excel プロジェクト内のオブジェクトへのアクセス
- Excel 用の新しい VSTO アドインプロジェクトを作成すると、Visual Studio によって自動的に *ThisAddIn .vb* または *ThisAddIn.cs* コードファイルが作成されます。 `Me.Application` または `this.Application` を使用して、アプリケーション オブジェクトにアクセスすることができます。
+ Excel 用の新しい VSTO アドインプロジェクトを作成すると、Visual Studio によって、 *thisaddin* または *thisaddin* コードファイルが自動的に作成されます。 `Me.Application` または `this.Application` を使用して、アプリケーション オブジェクトにアクセスすることができます。
 
  Excel で新しいドキュメント レベルのプロジェクトを作成する場合は、新しい Excel ブックまたは Excel テンプレート プロジェクトを作成するオプションがあります。 Visual Studio によって新しい Excel プロジェクトの次のコード ファイルがブックとテンプレートの両方のプロジェクトで自動的に作成されます。
 
@@ -63,8 +63,8 @@ ms.locfileid: "99910301"
 
  プロジェクト内の `Globals` クラスを使用して、それぞれのクラスの外部から `ThisWorkbook`、`Sheet1`、`Sheet2`、または `Sheet3` にアクセスすることができます。 詳細については、「 [Office プロジェクト内のオブジェクトへのグローバルアクセス](../vsto/global-access-to-objects-in-office-projects.md)」を参照してください。 次の例では、 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> `Sheet1` コードが `Sheet` *n* クラスまたはクラスのいずれかに配置されているかどうかに関係なく、のメソッドを呼び出し `ThisWorkbook` ます。
 
- [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
- [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet82":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet82":::
 
  Excel ドキュメントのデータは高度に構造化されているため、オブジェクト モデルは階層的で単純です。 Excel では、何百ものオブジェクトを操作することができますが、使用可能なオブジェクトの小さなサブセットに焦点を当てることによって、オブジェクトモデルを適切に開始できます。 このようなオブジェクトには次の 4 つがあります。
 
@@ -74,7 +74,7 @@ ms.locfileid: "99910301"
 
 - ワークシート
 
-- Range
+- 範囲
 
   Excel の作業の多くはこれら 4 つのオブジェクトとそのメンバーを中心に行われます。
 

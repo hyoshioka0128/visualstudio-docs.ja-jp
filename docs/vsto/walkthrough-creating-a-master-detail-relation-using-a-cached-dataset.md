@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925510"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824849"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>チュートリアル: キャッシュされたデータセットを使用したマスター詳細関係の作成
   このチュートリアルでは、ワークシートでマスター/詳細関係を作成し、ソリューションをオフラインで使用できるようにデータをキャッシュする方法について説明します。
@@ -60,7 +60,7 @@ ms.locfileid: "99925510"
 
    新しい Excel ブックがデザイナーで開き、 **[My Master-Detail** ] プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
-## <a name="create-the-data-source"></a>データソースを作成する
+## <a name="create-the-data-source"></a>データ ソースを作成する
  **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
@@ -81,7 +81,7 @@ ms.locfileid: "99925510"
 
 8. **Orders** テーブルと **Order Details** テーブルを選択します。
 
-9. **[Finish]** をクリックします。
+9. **[完了]** をクリックします。
 
    2つのテーブルが [ **データソース** ] ウィンドウに追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
@@ -138,16 +138,16 @@ ms.locfileid: "99925510"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>データとコントロールを初期化するには
 
-1. **ソリューションエクスプローラー** で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、 **Sheet1** または **sheet1** を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. 次のコードをメソッドに追加して、 `Sheet1_Startup` ボタンのテキストを設定します。
 
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
-     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet15":::
 
 3. C# の場合のみ、ボタンクリックイベントのイベントハンドラーをメソッドに追加し `Sheet1_Startup` ます。
 
-     [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet16":::
 
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>レコードのスクロールを有効にするコードを追加する
  <xref:System.Windows.Forms.Control.Click>各ボタンのイベントハンドラーにコードを追加して、レコード間を移動します。
@@ -156,13 +156,13 @@ ms.locfileid: "99925510"
 
 1. のイベントのイベントハンドラーを追加 <xref:System.Windows.Forms.Control.Click> `Button1` し、次のコードを追加してレコードを後方に移動します。
 
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
-     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet17":::
 
 2. イベントのイベントハンドラーを追加 <xref:System.Windows.Forms.Control.Click> し、 `Button2` 次のコードを追加してレコードを事前に処理します。
 
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
-     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet18":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet18":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ブックをテストして、データが想定どおりに表示されること、およびオフラインでソリューションを使用できることを確認できるようになりました。

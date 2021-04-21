@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ee62f35b0626139a8080649076d2ac941366a26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971831"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828710"
 ---
 # <a name="program-vsto-add-ins"></a>プログラム VSTO アドイン
   VSTO アドインを作成して Microsoft Office アプリケーションを拡張するときは、プロジェクトの `ThisAddIn` クラスに対して直接コードを記述します。 このクラスを使用し、Microsoft Office ホスト アプリケーションのオブジェクト モデルにアクセスする、アプリケーションのユーザー インターフェイス (UI) をカスタマイズする、その他の Office ソリューションに VSTO アドインのオブジェクトを公開するなどの作業を実行できます。
@@ -51,7 +51,7 @@ ms.locfileid: "99971831"
  VSTO アドインと、Visual Studio の Office 開発ツールを使用して作成できるその他の種類のソリューションに関する一般的な情報については、「 [office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
 
 ## <a name="use-the-thisaddin-class"></a>ThisAddIn クラスを使用する
- VSTO アドイン コードの記述は `ThisAddIn` クラスから開始することができます。 Visual Studio は、  [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VSTO アドインプロジェクトの *ThisAddIn.cs* (の場合) または (C# の場合) コードファイルにこのクラスを自動的に生成します。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、Microsoft Office アプリケーションが VSTO アドインを読み込むと、このクラスを自動的にインスタンス化します。
+ VSTO アドイン コードの記述は `ThisAddIn` クラスから開始することができます。 このクラスは、VSTO アドインプロジェクトの *thisaddin* (の場合 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ) または *thisaddin* (C# の場合) コードファイルで、Visual Studio によって自動的に生成されます。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] は、Microsoft Office アプリケーションが VSTO アドインを読み込むと、このクラスを自動的にインスタンス化します。
 
  `ThisAddIn` クラスには既定のイベント ハンドラーが 2 つあります。 VSTO アドインが読み込まれるときにコードを実行するには、 `ThisAddIn_Startup` イベント ハンドラーにコードを追加します。 VSTO アドインが読み込み解除される直前にコードを実行するには、 `ThisAddIn_Shutdown` イベント ハンドラーにコードを追加します。 これらのイベントハンドラーの詳細については、「 [Office プロジェクトのイベント](../vsto/events-in-office-projects.md)」を参照してください。
 
@@ -66,7 +66,7 @@ ms.locfileid: "99971831"
 |Microsoft Office Excel|<xref:Microsoft.Office.Interop.Excel.Application>|
 |Microsoft Office InfoPath|<xref:Microsoft.Office.Interop.InfoPath.Application>|
 |Microsoft Office Outlook|<xref:Microsoft.Office.Interop.Outlook.Application>|
-|Microsoft Office PowerPoint|[Application](/previous-versions/office/developer/office-2010/ff764034(v=office.14))|
+|Microsoft Office PowerPoint|[アプリケーション](/previous-versions/office/developer/office-2010/ff764034(v=office.14))。|
 |Microsoft Office Project|Microsoft.Office.Interop.MSProject.Application|
 |Microsoft Office Visio|Microsoft.Office.Interop.Visio.Application|
 |Microsoft Office Word|<xref:Microsoft.Office.Interop.Word.Application>|
@@ -112,8 +112,8 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  次のコード例は、ユーザーがドキュメントを作成した、または既存のドキュメントを開いたときにのみ、Word のドキュメントと連動します。
 
- [!code-csharp[Trin_WordAddIn_Menus#3](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#3)]
- [!code-vb[Trin_WordAddIn_Menus#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb" id="Snippet3":::
 
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>他のタスクに使用する ThisAddIn メンバー
  次の表は、他の一般的なタスクに関する説明とタスクを実行するために使用できる `ThisAddIn` クラスのメンバーをまとめたものです。
