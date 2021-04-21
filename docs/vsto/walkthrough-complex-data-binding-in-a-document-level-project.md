@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a85f46cf9c234ad662966372a8d014ae0f98be84
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927666"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826370"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>チュートリアル: ドキュメントレベルのプロジェクトでの複合データバインディング
   このチュートリアルでは、ドキュメントレベルのプロジェクトでの複合データバインディングの基本について説明します。 Microsoft Office Excel ワークシートの複数のセルを、Northwind SQL Server データベースのフィールドにバインドできます。
@@ -62,7 +62,7 @@ ms.locfileid: "99927666"
 
      新しい Excel ブックがデザイナーで開き、 **[My Complex Data Binding** ] プロジェクトが **ソリューションエクスプローラー** に追加されます。
 
-## <a name="create-the-data-source"></a>データソースを作成する
+## <a name="create-the-data-source"></a>データ ソースを作成する
  **[データ ソース]** ウィンドウを使用して、型指定されたデータセットをプロジェクトに追加します。
 
 ### <a name="to-create-the-data-source"></a>データ ソースを作成するには
@@ -83,7 +83,7 @@ ms.locfileid: "99927666"
 
 8. **Employees** テーブルの横にあるチェックボックスをオンにします。
 
-9. **[Finish]** をクリックします。
+9. **[完了]** をクリックします。
 
    [**データソース**] ウィンドウに [ **Employees** ] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
@@ -117,16 +117,16 @@ ms.locfileid: "99927666"
 
 ### <a name="to-initialize-the-control"></a>コントロールを初期化するには
 
-1. **ソリューションエクスプローラー** で、[ **Sheet1** ] または [ **Sheet1.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、 **Sheet1** または **sheet1** を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. 次のコードをメソッドに追加して `Sheet1_Startup` 、b のテキストを設定し `utton` ます。
 
-    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet8":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet8":::
 
 3. C# の場合のみ、イベントのイベントハンドラーを <xref:System.Windows.Forms.Control.Click> メソッドに追加し `Sheet1_Startup` ます。
 
-    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet9":::
 
    次に、ボタンのイベントを処理するコードを追加 <xref:System.Windows.Forms.Control.Click> します。
 
@@ -137,8 +137,8 @@ ms.locfileid: "99927666"
 
 1. のイベントのイベントハンドラーを追加 <xref:System.Windows.Forms.Control.Click> し、 `button` 次のコードを追加して、データセットに加えられたすべての変更をデータベースに戻します。
 
-     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet10":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ブックをテストして、データが想定どおりに表示されること、およびリストオブジェクト内のデータを操作できることを確認できるようになりました。
@@ -181,7 +181,7 @@ ms.locfileid: "99927666"
 
 2. 空の行に次の情報を追加します。
 
-   |EmployeeID|LastName|FirstName|Title|
+   |EmployeeID|LastName|FirstName|タイトル|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|営業マネージャー|
 
@@ -217,7 +217,7 @@ ms.locfileid: "99927666"
 
      フィルター処理が削除され、すべての行が表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルでは、データベース内のテーブルをリストオブジェクトにバインドする方法の基本について説明します。 ここでは、次の作業を行います。
 
 - データをキャッシュして、オフラインで使用できるようにします。 詳細については、「 [方法: オフラインまたはサーバー上で使用するデータをキャッシュ](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)する」を参照してください。

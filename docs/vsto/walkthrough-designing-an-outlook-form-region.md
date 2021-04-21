@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80c574799029f3fe8c4769d852886a625ffd93aa
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842018"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824282"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>チュートリアル: Outlook フォーム領域のデザイン
   カスタム フォーム領域は、標準またはカスタムの Microsoft Office Outlook フォームを拡張します。 このチュートリアルでは、連絡先アイテムのインスペクター ウィンドウに新しいページとして表示するカスタム フォーム領域をデザインします。 このフォーム領域では、アドレス情報を Windows Live Local Search の Web サイトに送信することによって、連絡先に設定された個々の住所の地図を表示します。 フォーム領域の詳細については、「 [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)」を参照してください。
@@ -90,14 +90,14 @@ ms.locfileid: "99842018"
 
 8. [ **このフォーム領域を表示するメッセージクラスを指定** します] ページで、[ **メールメッセージ**] をクリアし、[ **連絡先**] を選択して、[ **完了**] をクリックします。
 
-     *MapIt.cs* ファイルまたは *mapit .vb* ファイルがプロジェクトに追加されます。
+     *Mapit .cs* または *mapit .vb* ファイルがプロジェクトに追加されます。
 
 ## <a name="design-the-layout-of-the-form-region"></a>フォーム領域のレイアウトをデザインする
  フォーム *領域デザイナー* を使用して、フォーム領域を視覚的に開発します。 フォーム領域デザイナーの画面にマネージド コントロールをドラッグできます。 デザイナーと [ **プロパティ** ] ウィンドウを使用すると、コントロールのレイアウトと外観を調整できます。
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>フォーム領域のレイアウトをデザインするには
 
-1. **ソリューションエクスプローラー** で、 **mapitaddin** プロジェクトを展開し、 *MapIt.cs* または *Mapit .Vb* をダブルクリックしてフォーム領域デザイナーを開きます。
+1. **ソリューションエクスプローラー** で、 **mapitaddin** プロジェクトを展開し、 *Mapit .cs* または *mapit .Vb* をダブルクリックして、フォーム領域デザイナーを開きます。
 
 2. デザイナーを右クリックし、[ **プロパティ**] をクリックします。
 
@@ -116,9 +116,9 @@ ms.locfileid: "99842018"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>フォーム領域の動作をカスタマイズするには
 
-1. **ソリューションエクスプローラー** で、 *MapIt.cs* または *mapit .vb* を右クリックし、[**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、 *mapit .Cs* または *mapit .vb* を右クリックし、[コードの **表示**] をクリックします。
 
-    *MapIt.cs* または *mapit. Vb* がコードエディターで開きます。
+    *Mapit .cs* または *Mapit .Vb* がコードエディターで開きます。
 
 2. **フォーム領域ファクトリ** コード領域を展開します。
 
@@ -126,8 +126,8 @@ ms.locfileid: "99842018"
 
 3. `MapItFactory_FormRegionInitializing` イベント ハンドラーに次のコードを追加します。 このイベント ハンドラーは、ユーザーが連絡先アイテムを開いたときに呼び出されます。 次のコードは、連絡先アイテムに住所が含まれているかどうかを判定します。 連絡先アイテムに住所が含まれていない場合、このコードは <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> クラスのプロパティを <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> **true** に設定し、フォーム領域は表示されません。 それ以外の場合は、VSTO アドインで <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> イベントが発生し、フォーム領域が表示されます。
 
-    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
 4. <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> イベント ハンドラーに次のコードを追加します。 このコードは、以下のタスクを実行します。
 
@@ -137,8 +137,8 @@ ms.locfileid: "99842018"
 
      Map It フォーム領域に Local Search の Web サイトが表示され、スクラッチ パッドに各住所が表示されます。
 
-     [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet2":::
 
 ## <a name="test-the-outlook-form-region"></a>Outlook フォーム領域のテスト
  プロジェクトを実行すると、Visual Studio によって Outlook が開かれます。 連絡先アイテムを開くと、Map It フォーム領域が表示されます。 Map It フォーム領域は、住所が含まれる連絡先アイテムのフォームのページとして表示されます。
@@ -169,7 +169,7 @@ ms.locfileid: "99842018"
 
      Map It フォーム領域が開き、Local Search の Web サイトが表示されます。 **ビジネス**、**自宅**、および **その他の** アドレスは、スクラッチパッドに表示されます。 スクラッチ パッドで、地図を表示する住所を選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  Outlook アプリケーションの UI をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
 - Outlook アイテムのリボンをカスタマイズする方法については、「 [outlook のリボンをカスタマイズ](../vsto/customizing-a-ribbon-for-outlook.md)する」を参照してください。

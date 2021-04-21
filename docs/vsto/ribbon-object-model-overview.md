@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f053e87f8cdfd2bdf87bbdf4b7d115f6d9bbec26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888694"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823991"
 ---
 # <a name="ribbon-object-model-overview"></a>リボンオブジェクトモデルの概要
   は、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 実行時にリボンコントロールのプロパティを取得および設定するために使用できる、厳密に型指定されたオブジェクトモデルを公開します。 たとえば、メニュー コントロールを動的に設定したり、コントロールの表示/非表示をコンテキストに応じて切り替えたりすることができます。 Office アプリケーションがリボンを読み込む前であれば、タブ、グループ、およびコントロールをリボンに追加することもできます。 詳細については、「読み取り専用に [なるプロパティの設定](#SettingReadOnlyProperties)」を参照してください。
@@ -50,13 +50,13 @@ ms.locfileid: "99888694"
 |コントロール名|クラス名|
 |------------------|----------------|
 |**ボックス**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
-|**Button**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
+|**ボタン**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|
 |**ButtonGroup**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|
 |**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
 |**リスト**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**EditBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**デザイン**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**[ギャラリー]**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**グループ**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**Menu**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
@@ -111,12 +111,12 @@ ms.locfileid: "99888694"
 
  次のコードを追加します。
 
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb" id="Snippet1":::
 
  Visual Studio 2008 からアップグレードした Visual C# プロジェクトでは、リボンコードファイルにコンストラクターが表示されます。
 
- Visual Basic プロジェクト、または [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] で作成した Visual C# プロジェクトでは、リボン デザイナー コード ファイルにコンストラクターがあります。 このファイルには、 *Ribbonitem* という名前が付けられます。Designer.cs または *Ribbonitem*。デザイナ. vb. このファイルを Visual Basic プロジェクトで表示するには、最初にソリューションエクスプローラーの [ **すべてのファイルを表示** ] ボタンをクリックする必要があります。
+ Visual Basic プロジェクト、または [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] で作成した Visual C# プロジェクトでは、リボン デザイナー コード ファイルにコンストラクターがあります。 このファイルには、 *Ribbonitem* という名前が付けられます。デザイナーの .cs または *Ribbonitem*。デザイナ. vb. このファイルを Visual Basic プロジェクトで表示するには、最初にソリューションエクスプローラーの [ **すべてのファイルを表示** ] ボタンをクリックする必要があります。
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>CreateRibbonExtensibilityObject メソッドでのプロパティの設定
  プロジェクトの `Ribbon`、`CreateRibbonExtensibilityObject`、または `ThisAddin` のいずれかのクラスの `ThisWorkbook` メソッドをオーバーライドするときに、`ThisDocument` コントロールのプロパティを設定できます。 メソッドの詳細については `CreateRibbonExtensibilityObject` 、「 [リボンの概要](../vsto/ribbon-overview.md)」を参照してください。
@@ -125,8 +125,8 @@ ms.locfileid: "99888694"
 
  次のコードを追加します。
 
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs" id="Snippet2":::
 
 ### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> 読み取り専用になるプロパティ
  次の表は、リボンが読み込まれる前にのみ設定できるプロパティを示しています。
@@ -150,13 +150,13 @@ ms.locfileid: "99888694"
 |**名前**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComponent>|
 |**Position**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonTab><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
 |**RibbonType**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
-|**行**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**RowCount**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemImage**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemLabel**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**ShowItemSelection**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**SizeString**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
 |**StartFromScratch**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
-|**Tabs**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
+|**タブ**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**Title**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 
 ### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>Outlook インスペクターに表示されるリボンのプロパティを設定する
@@ -172,7 +172,7 @@ ms.locfileid: "99888694"
 
 |Event|説明|
 |-----------|-----------------|
-|ここを|コントロールがクリックされたときに発生します。|
+|Click|コントロールがクリックされたときに発生します。|
 |TextChanged|編集ボックスまたはコンボ ボックス内のテキストが変更されたときに発生します。|
 |ItemsLoading|Office によってコントロールの項目コレクションが要求されたときに発生します。 Office では、コードによってコントロールのプロパティが変更されるか、メソッドが呼び出されるまで、項目コレクションがキャッシュされ <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> ます。|
 |System.windows.forms.toolbar.buttonclick>|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> または <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 内のボタンがクリックされたときに発生します。|
@@ -181,7 +181,7 @@ ms.locfileid: "99888694"
 
  これらのイベントのイベント ハンドラーには、次の 2 つのパラメーターがあります。
 
-|パラメーター|Description|
+|パラメーター|説明|
 |---------------|-----------------|
 |*センダー*|イベントを発生させたコントロールを表す <xref:System.Object>。|
 |*e*|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> を格納している <xref:Microsoft.Office.Core.IRibbonControl>。 このコントロールを使用すると、[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] によって提供されるリボン オブジェクト モデルには用意されていないプロパティにアクセスできます。|

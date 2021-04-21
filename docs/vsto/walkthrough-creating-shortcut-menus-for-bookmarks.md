@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48381d452b0c67a34581092a47896aba60e7125c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937421"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826305"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>チュートリアル: ブックマークのショートカットメニューを作成する
   このチュートリアルでは、Word のドキュメント レベルのカスタマイズを使用して <xref:Microsoft.Office.Tools.Word.Bookmark> コントロールのショートカット メニューを作成する方法を示します。 ユーザーがブックマーク内のテキストを右クリックすると、ショートカット メニューにテキストの書式設定オプションが表示されます。
@@ -92,7 +92,7 @@ ms.locfileid: "99937421"
 
 1. **リボン XML** 項目をプロジェクトに追加します。 詳細については、「 [方法: リボンのカスタマイズを開始](../vsto/how-to-get-started-customizing-the-ribbon.md)する」を参照してください。
 
-2. **ソリューションエクスプローラー** で、 **ThisDocument.cs** または **ThisDocument** を選択します。
+2. **ソリューションエクスプローラー** で、[ **thisdocument** ] または [ **thisdocument**] を選択します。
 
 3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
@@ -100,8 +100,8 @@ ms.locfileid: "99937421"
 
 4. **ThisDocument** クラスに次のコードを追加します。 このコードは、CreateRibbonExtensibilityObject メソッドをオーバーライドし、Office アプリケーションにリボン XML クラスを返します。
 
-     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet1":::
 
 5. **[ソリューション エクスプローラー]** でリボン XML ファイルを選択します。 既定では、リボン XML ファイルには Ribbon1.xml という名前が付けられます。
 
@@ -131,10 +131,10 @@ ms.locfileid: "99937421"
 
 9. 次の変数とブックマーク変数をクラス レベルで宣言します。
 
-     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet2":::
 
-10. **ソリューションエクスプローラー** で、リボンコードファイルを選択します。 既定では、リボンコードファイルには **Ribbon1.cs** または **ribbon1.vb** という名前が付けられます。
+10. **ソリューションエクスプローラー** で、リボンコードファイルを選択します。 既定では、リボンコードファイルには **ribbon1.vb** または **ribbon1.vb** という名前が付けられます。
 
 11. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
@@ -142,8 +142,8 @@ ms.locfileid: "99937421"
 
 12. リボン コード ファイルで、次のメソッドを追加します。 これは、ドキュメントのショートカット メニューに追加した 2 つのボタンのコールバック メソッドです。 このメソッドでは、これらのボタンがショートカット メニューに表示されるかどうかが決定されます。 [太字] ボタンおよび [斜体] ボタンは、ブックマーク内のテキストを右クリックしたときにのみ表示されます。
 
-     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet5":::
 
 ## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> ブックマーク内のテキストの書式を設定する
 
@@ -151,10 +151,10 @@ ms.locfileid: "99937421"
 
 1. リボン コード ファイルで、ブックマークに書式を適用するための `ButtonClick` イベント ハンドラーを追加します。
 
-     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet6":::
 
-2. **ソリューションエクスプローラー** には、 **ThisDocument.cs** または **ThisDocument** を選択します。
+2. **ソリューションエクスプローラー**] を選択し、 **Thisdocument** または **thisdocument** を選択します。
 
 3. メニュー バーで **[表示]**  >  **[コード]** の順に選択します。
 
@@ -162,15 +162,15 @@ ms.locfileid: "99937421"
 
 4. **ThisDocument** クラスに次のコードを追加します。
 
-     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet3":::
 
     > [!NOTE]
     > ブックマークが部分的に重なっている場合を処理するためのコードを作成する必要があります。 これを行わないと、既定でコードは選択範囲内にあるすべてのブックマークについて呼び出されます。
 
 5. C# では、次に示すように、ブックマーク コントロールのイベント ハンドラーを <xref:Microsoft.Office.Tools.Word.Document.Startup> イベントに追加する必要があります。 イベントハンドラーの作成の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet4":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ドキュメントをテストして、ブックマーク内のテキストを右クリックしたときにショートカット メニューに太字と斜体のメニュー項目が表示され、テキストが正しく書式設定されることを確認します。

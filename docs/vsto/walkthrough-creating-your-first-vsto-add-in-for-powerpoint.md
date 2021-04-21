@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5adf37c6d55d4704ee370052646e620cbe716c3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966540"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824251"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>チュートリアル: 初めての PowerPoint 用 VSTO アドインの作成
   このチュートリアルでは Microsoft Office PowerPoint 用の VSTO アドインを作成する方法について説明します。 この種のソリューションに作成した機能は、どのプレゼンテーションが開いているかにかかわらず、アプリケーション自体に対して使用できます。 詳細については、「 [Office ソリューションの開発の概要 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)」を参照してください。
@@ -82,12 +82,12 @@ ms.locfileid: "99966540"
 
     ユーザーが、アクティブなプレゼンテーションに新しいスライドを追加するとき、このイベント ハンドラーは、新しいスライドの先頭にテキスト ボックスを追加し、テキスト ボックスにテキストを追加します。
 
-    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
 2. C# を使用する場合は、次のコードを `ThisAddIn_Startup` イベント ハンドラーに追加します。 このコードは `Application_PresentationNewSlide` 、イベントハンドラーを [Microsoft.Office.Interop.PowerPoint.EApplication_Event. プレゼンテーション newslide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) イベントに接続するために必要です。
 
-    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
    新しい各スライドを変更するために、前のコード例では次のオブジェクトを使用しています。
 

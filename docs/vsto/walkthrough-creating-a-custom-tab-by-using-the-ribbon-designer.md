@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962276"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824823"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>チュートリアル: リボンデザイナーを使用したカスタムタブの作成
   リボン デザイナーでは、カスタム タブを作成し、その後、カスタム タブの中でコントロールを追加して配置することができます。
@@ -68,7 +68,7 @@ ms.locfileid: "99962276"
 
 2. [ **新しい項目の追加** ] ダイアログボックスで、[ **ActionsPaneControl**] を選択し、[ **追加**] を選択します。
 
-     デザイナーで **ActionsPaneControl1.cs** または **ActionsPaneControl1** ファイルが開きます。
+     デザイナーで **ActionsPaneControl1** ファイルまたは **ActionsPaneControl1** ファイルが開きます。
 
 3. **ツールボックス** の [**コモンコントロール**] タブから、ラベルをデザイナー画面に追加します。
 
@@ -116,22 +116,22 @@ ms.locfileid: "99962276"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>カスタム タブのボタンを使用して操作ウィンドウの表示/非表示を切り替えるには
 
-1. **ソリューションエクスプローラー** で、 *MyRibbon.cs* または *myribbon.vb* のショートカットメニューを開き、[コードの **表示**] を選択します。
+1. **ソリューションエクスプローラー** で、 *Myribbon.vb* または *myribbon.vb* のショートカットメニューを開き、[**コードの表示**] を選択します。
 
 2. `MyRibbon` クラスの先頭に、次のコードを追加します。 このコードにより、操作ウィンドウ オブジェクトが 2 つ作成されます。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet1":::
 
 3. `MyRibbon_Load` メソッドを次のコードに置き換えます。 このコードにより、<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> コレクションに操作ウィンドウ オブジェクトが追加され、オブジェクトが非表示になります。 さらに、この Visual C# コードは複数のリボン コントロール イベントにデリゲートをアタッチします。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet2":::
 
 4. `MyRibbon` クラスに、次の 3 つのイベント ハンドラー メソッドを追加します。 これらのメソッドは、2 つのボタンの <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> イベントと、トグル ボタンの <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> イベントを処理します。 button1 と button2 のイベント ハンドラーにより、別の操作ウィンドウが表示されます。 toggleButton1 のイベント ハンドラーにより、アクティブな操作ウィンドウの表示/非表示が切り替えられます。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>カスタムタブをテストする
  プロジェクトを実行すると、Excel が起動し、リボンに [ **My Custom tab** ] タブが表示されます。 **[カスタム] タブ** のボタンをクリックして、操作ウィンドウの表示と非表示を切り替えます。

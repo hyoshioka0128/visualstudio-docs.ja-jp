@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e833a480713e3c04215c03a3dc4a549c92e0f772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d42aa2d8594ed44e4fd4edbac8a0d64c4dc16da
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938474"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826149"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Office ドキュメントでのダイナミックコントロールの永続化
 
@@ -57,8 +57,8 @@ Word のホストコントロール、また <xref:Microsoft.Office.Tools.Excel.
 
 たとえば、ドキュメントが開かれた時点で既存のネイティブ <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> から <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> ホスト コントロールを作成するには、 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> メソッドを使用し、既存の <xref:Microsoft.Office.Interop.Excel.ListObject>を渡します。 これを Excel のドキュメント レベルのプロジェクトで実行する方法を、次のコード例に示します。 このコードでは、 <xref:Microsoft.Office.Tools.Excel.ListObject> クラスの <xref:Microsoft.Office.Interop.Excel.ListObject> という名前の既存の `MyListObject` に基づいてダイナミック `Sheet1` を再作成します。
 
-[!code-csharp[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs#6)]
-[!code-vb[Trin_ExcelWorkbookDynamicControls#6](../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb#6)]
+:::code language="csharp" source="../vsto/codesnippet/CSharp/trin_excelworkbookdynamiccontrols4/Sheet1.cs" id="Snippet6":::
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_excelworkbookdynamiccontrols4/Sheet1.vb" id="Snippet6":::
 
 ### <a name="re-create-chart"></a>グラフの再作成
 
@@ -94,8 +94,8 @@ VSTO アドインを使用してドキュメントに動的な Windows フォー
 
 ドキュメントが開かれたときに `GetVstoObject` メソッドを呼び出す方法を次のコード例に示します。
 
-[!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
-[!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet11":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet11":::
 
 `GetVstoObject`メソッドは、主に実行時に新しいホスト項目を生成するために使用されますが、このメソッドは、特定のドキュメントに対して初めて呼び出されたときに、ドキュメントからすべての ActiveX ラッパーもクリアします。 メソッドの使用方法の詳細については `GetVstoObject` 、「 [実行時の VSTO アドインでの Word 文書と Excel ブックの拡張](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)」を参照してください。
 
@@ -107,8 +107,8 @@ VSTO アドインを使用して、ドキュメントを閉じる前にドキュ
 
 Word 文書を閉じるときに文書からすべての Windows フォーム コントロールを削除する方法を次のコード例に示します。
 
-[!code-vb[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#10)]
-[!code-csharp[Trin_WordAddInDynamicControls#10](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#10)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet10":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet10":::
 
 ## <a name="see-also"></a>関連項目
 

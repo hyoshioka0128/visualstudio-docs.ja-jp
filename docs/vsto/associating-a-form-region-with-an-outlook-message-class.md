@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be3b789fabf00d853d447cb3489ef07a5b494fcd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882545"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826994"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>フォーム領域を Outlook メッセージクラスに関連付ける
   フォーム領域を各項目のメッセージクラスに関連付けることによって、フォーム領域を表示する Outlook アイテム Microsoft Office を指定できます。 たとえば、メールアイテムの下部にフォーム領域を追加する場合は、フォーム領域を message クラスに関連付けることができ `IPM.Note` ます。
@@ -87,8 +87,8 @@ ms.locfileid: "99882545"
 
  次の例は、 <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> という名前のフォーム領域ファクトリクラスに適用されている2つの属性を示して `myFormRegion` います。 最初の属性は、フォーム領域をメールメッセージフォームの標準のメッセージクラスに関連付けます。 2番目の属性は、フォーム領域をという名前のカスタムメッセージクラスに関連付け `IPM.Task.Contoso` ます。
 
- [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs" id="Snippet1":::
 
  属性は、次のガイドラインに従う必要があります。
 

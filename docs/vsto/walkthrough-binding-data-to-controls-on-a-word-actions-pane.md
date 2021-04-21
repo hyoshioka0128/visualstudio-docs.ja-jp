@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d94891520695117c7a395f81feda81e52f909fe6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906586"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824498"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>チュートリアル: Word の操作ウィンドウでコントロールにデータをバインドする
   このチュートリアルでは、Word の操作ウィンドウ上のコントロールへのデータバインディングについて説明します。 このコントロールは、SQL Server データベースのテーブル間のマスター/詳細の関係を示します。
@@ -97,7 +97,7 @@ ms.locfileid: "99906586"
 
 8. **仕入先** テーブルと **Products** テーブルの横にあるチェックボックスをオンにします。
 
-9. **[Finish]** をクリックします。
+9. **[完了]** をクリックします。
 
    ウィザードにより、[**データソース**] ウィンドウに [**仕入先** テーブルと **製品**] テーブルが追加されます。 また、 **ソリューションエクスプローラー** に表示される、型指定されたデータセットをプロジェクトに追加します。
 
@@ -134,8 +134,8 @@ ms.locfileid: "99906586"
 
     |プロパティ|値|
     |--------------|-----------|
-    |**名前**|**挿入**|
-    |**Text**|**挿入**|
+    |**名前**|**[挿入]**|
+    |**[テキスト]**|**[挿入]**|
 
 12. コントロールに合わせてユーザーコントロールのサイズを変更します。
 
@@ -146,12 +146,12 @@ ms.locfileid: "99906586"
 
 1. <xref:System.Windows.Forms.UserControl.Load>クラスのイベントハンドラーに `ActionsControl` 次のコードを追加します。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet1":::
 
 2. C# では、イベントハンドラーをイベントにアタッチする必要があり <xref:System.Windows.Forms.UserControl.Load> ます。 このコードは `ActionsControl` 、の呼び出しの後、コンストラクターに配置でき `InitializeComponent` ます。 イベントハンドラーを作成する方法の詳細については、「 [方法: Office プロジェクトでイベントハンドラーを作成](../vsto/how-to-create-event-handlers-in-office-projects.md)する」を参照してください。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet33":::
 
 ### <a name="to-set-data-binding-properties-of-the-controls"></a>コントロールのデータバインディングプロパティを設定するには
 
@@ -178,43 +178,43 @@ ms.locfileid: "99906586"
 
 1. クラスで、 `ActionsControl` テーブルの見出しの書式を設定するメソッドを作成します。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet2":::
 
 ### <a name="to-create-the-table"></a>テーブルを作成するには
 
 1. クラスで、 `ActionsControl` テーブルがまだ存在しない場合にテーブルを作成するメソッドを記述し、操作ウィンドウからテーブルにデータを追加します。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet3":::
 
 ### <a name="to-insert-text-into-a-word-table"></a>Word の表にテキストを挿入するには
 
 1. <xref:System.Windows.Forms.Control.Click>[**挿入**] ボタンのイベントハンドラーに次のコードを追加します。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet4":::
 
 2. C# では、ボタンのイベントのイベントハンドラーを作成する必要があり <xref:System.Windows.Forms.Control.Click> ます。  このコードは <xref:System.Windows.Forms.UserControl.Load> 、クラスのイベントハンドラーに配置でき `ActionsControl` ます。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet5":::
 
 ## <a name="show-the-actions-pane"></a>操作ウィンドウを表示する
  コントロールが追加された後、操作ウィンドウが表示されます。
 
 ### <a name="to-show-the-actions-pane"></a>操作ウィンドウを表示するには
 
-1. **ソリューションエクスプローラー** で、[ **ThisDocument** ] または [ **ThisDocument.cs**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
+1. **ソリューションエクスプローラー** で、[ **thisdocument** ] または [ **thisdocument**] を右クリックし、ショートカットメニューの [**コードの表示**] をクリックします。
 
 2. 次の例のように、クラスの上部にコントロールの新しいインスタンスを作成 `ThisDocument` します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet6":::
 
 3. <xref:Microsoft.Office.Tools.Word.Document.Startup>次の例のように、のイベントハンドラーにコードを追加 `ThisDocument` します。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>アプリケーションをテストする
  ドキュメントをテストして、ドキュメントを開いたときに操作ウィンドウが表示されることを確認できるようになりました。 操作ウィンドウのコントロールでマスター/詳細リレーションシップをテストし、[ **挿入** ] ボタンがクリックされたときに、Word テーブルにデータが入力されていることを確認します。
@@ -231,7 +231,7 @@ ms.locfileid: "99906586"
 
 5. さまざまな企業から追加の製品を挿入します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  このチュートリアルでは、Word の操作ウィンドウ上のコントロールにデータをバインドする方法の基本について説明します。 ここでは、次の作業を行います。
 
 - Excel のコントロールにデータをバインドする。 詳細については、「 [チュートリアル: Excel の操作ウィンドウでコントロールにデータをバインドする](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)」を参照してください。

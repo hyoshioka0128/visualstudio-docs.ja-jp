@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7b62d3fed62b4d17b9f1918b76760593b38d83a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b42c10fd82ec077b295a8bc683fa138c2eb095b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927822"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825746"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>方法: ワークシートのセル内のコントロールのサイズを変更する
   ワークシート上の列または行のサイズを変更すると、セル内のホストコントロールは、サイズ変更されたセルの高さまたは幅に自動的にサイズ変更されます。 Windows フォームコントロールは、既定では自動的にサイズ変更されません。
@@ -54,8 +54,8 @@ ms.locfileid: "99927822"
 
 1. 範囲 A1 にコントロールを追加します。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet5":::
 
      コントロールを含むセルのサイズを変更すると、セルに合わせてコントロールのサイズが変更されます。
 
@@ -72,8 +72,8 @@ ms.locfileid: "99927822"
 
 1. コントロールの placement プロパティを呼び出し、値をに設定し <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating> ます。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet6":::
 
 ## <a name="see-also"></a>関連項目
 - [Office ドキュメントのコントロール](../vsto/controls-on-office-documents.md)

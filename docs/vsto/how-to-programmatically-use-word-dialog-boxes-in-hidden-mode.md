@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39a81ccec284541d93d3a5901211d8a46ea6b61a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931241"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826188"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>方法: プログラムによって Word のダイアログボックスを非表示モードで使用する
   1つのメソッド呼び出しで複雑な操作を実行するには、Microsoft Office Word の組み込みダイアログボックスをユーザーに表示せずに呼び出します。 これを行うには、 <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> メソッドを呼び出さずにオブジェクトのメソッドを使用し <xref:Microsoft.Office.Interop.Word.Dialog> <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> ます。
@@ -34,12 +34,12 @@ ms.locfileid: "99931241"
 
  **Option Strict** がオフであり、を対象とする Visual C# プロジェクトでこのタスクを Visual Basic プロジェクトで実行する方法を次の例に示し [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ます。 これらのプロジェクトでは、Visual Basic および Visual C# コンパイラで遅延バインディング機能を使用できます。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
- [!code-vb[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#123)]
- [!code-csharp[Trin_VstcoreWordAutomation#123](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#123)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet123":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet123":::
 
  次の例は、 **Option Strict** がオンになっている Visual Basic プロジェクトでこのタスクを実行する方法を示しています。 これらのプロジェクトでは、遅延バインディングプロパティにアクセスするためにリフレクションを使用する必要があります。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
- [!code-vb[Trin_VstcoreWordAutomation#104](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#104)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet104":::
 
 ## <a name="see-also"></a>関連項目
 - [方法: プログラムによって Word の組み込みダイアログボックスを使用する](../vsto/how-to-programmatically-use-built-in-dialog-boxes-in-word.md)

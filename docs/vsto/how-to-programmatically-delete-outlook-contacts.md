@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98ee7773c86e85fa9ced0274bc37c4db3f8aacc2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b02ed8108daede030d460f80d8cdd76b82112401
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963895"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824771"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>方法: プログラムによって Outlook の連絡先を削除する
   この例では、連絡先を 1 件削除します。 この例では、"Armando Pinto" という名前の連絡先が **[Contacts]** フォルダーに存在することを前提にしています。
@@ -28,8 +28,8 @@ ms.locfileid: "99963895"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>例
- [!code-vb[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb#1)]
- [!code-csharp[Trin_Outlook_RL_DeleteContacts#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>関連項目
 - [連絡先アイテムの操作](../vsto/working-with-contact-items.md)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 18a6176c6472f1587e00364f0e0bd300611eabf0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6038000dec20f9183f974ad8d187230e634d5eed
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897522"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826214"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>方法: プログラムによって Word の組み込みダイアログボックスを使用する
   Microsoft Office Word を使用する場合、ユーザー入力のダイアログボックスを表示する必要がある場合があります。 独自のものを作成することもできますが、Word の組み込みダイアログボックスを使用する方法をお勧めします。この方法は、 <xref:Microsoft.Office.Interop.Word.Dialogs> オブジェクトのコレクションで公開され <xref:Microsoft.Office.Interop.Word.Application> ます。 これにより、列挙として表現される、200の組み込みダイアログボックスにアクセスできます。
@@ -33,20 +33,20 @@ ms.locfileid: "99897522"
 
  次のコード例は、[ファイルを **開く** ] ダイアログボックスを表示する方法を示しています。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
- [!code-vb[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#100)]
- [!code-csharp[Trin_VstcoreWordAutomation#100](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#100)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet100":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet100":::
 
 ### <a name="access-dialog-box-members-that-are-available-through-late-binding"></a>遅延バインディングによって使用できるダイアログボックスのメンバーにアクセスする
  Word のダイアログボックスのプロパティとメソッドの一部は、遅延バインディングを通じてのみ使用できます。 **Option Strict** がオンになっている Visual Basic プロジェクトでは、これらのメンバーにアクセスするためにリフレクションを使用する必要があります。 詳細については、「 [Office ソリューションの遅延バインディング](../vsto/late-binding-in-office-solutions.md)」を参照してください。
 
  次のコード例では、 **Option Strict** がオフになっている Visual Basic プロジェクトの [**ファイルを開く**] ダイアログボックスの [**名前**] プロパティを使用する方法と、またはを対象とする Visual C# プロジェクトを使用する方法を示し [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ます。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
- [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
- [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet122":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet122":::
 
  次のコード例は、 **Option Strict** がオンになっている Visual Basic プロジェクトの [**ファイルを開く**] ダイアログボックスの [**名前**] プロパティに、リフレクションを使用してアクセスする方法を示しています。 この例を使用するに `ThisDocument` は、プロジェクトのクラスまたはクラスから実行し `ThisAddIn` ます。
 
- [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="see-also"></a>関連項目
 - [方法: プログラムによって Word のダイアログボックスを非表示モードで使用する](../vsto/how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md)

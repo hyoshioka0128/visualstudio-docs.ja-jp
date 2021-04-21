@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e618dcd0cc699b4626f825890cf0fc8bd7ddd853
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927653"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823887"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office ソリューションの遅延バインディング
   Office アプリケーションのオブジェクトモデルの一部の型は、遅延バインディング機能を通じて使用できる機能を提供します。 たとえば、一部のメソッドとプロパティは、Office アプリケーションのコンテキストに応じて異なる種類のオブジェクトを返すことがあり、一部の型は異なるコンテキストで異なるメソッドまたはプロパティを公開できます。
@@ -43,12 +43,12 @@ ms.locfileid: "99927653"
 ### <a name="examples"></a>例
  **Option Strict** がオンの Visual Basic プロジェクト内の特定の型にオブジェクトをキャストする方法を次のコード例に示します。 この種類のプロジェクトでは、プロパティを明示的ににキャストする必要があり <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> <xref:Microsoft.Office.Interop.Excel.Range> ます。 この例では、という名前のワークシートクラスを含むドキュメントレベルの Excel プロジェクトが必要です `Sheet1` 。
 
- [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet9":::
 
  次のコード例は、 **Option Strict** がオフ Visual Basic であるか、を対象とする Visual C# プロジェクトで、オブジェクトを特定の型に暗黙的にキャストする方法を示して [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] います。 これらの種類のプロジェクトでは、 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> プロパティはに暗黙的にキャストされ <xref:Microsoft.Office.Interop.Excel.Range> ます。 この例では、という名前のワークシートクラスを含むドキュメントレベルの Excel プロジェクトが必要です `Sheet1` 。
 
- [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
- [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet10":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>遅延バインディングによってのみ使用できるメンバーにアクセスする
  Office Pia の一部のプロパティとメソッドは、遅延バインディングによってのみ使用できます。 **Option Strict** がオフであるか、またはを対象とする Visual C# プロジェクトで Visual Basic プロジェクトで [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] は、これらの [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 言語の遅延バインディング機能を使用して、遅延バインドされたメンバーにアクセスできます。 **Option Strict** がオンになっている Visual Basic プロジェクトでは、これらのメンバーにアクセスするためにリフレクションを使用する必要があります。
@@ -56,12 +56,12 @@ ms.locfileid: "99927653"
 ### <a name="examples"></a>例
  次のコード例は、 **Option Strict** がオフであるか、を対象とする Visual C# プロジェクト内の Visual Basic プロジェクトの遅延バインディングメンバーにアクセスする方法を示して [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] います。 この例では、Word の [**ファイルを開く**] ダイアログボックスの "遅延バインディング **名**" プロパティにアクセスします。 この例を使用するに `ThisDocument` は、 `ThisAddIn` Word プロジェクトのクラスまたはクラスから実行します。
 
- [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
- [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet122":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet122":::
 
  次のコード例は、 **Option Strict** がオンになっている Visual Basic プロジェクトで同じタスクを実行するためにリフレクションを使用する方法を示しています。
 
- [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="see-also"></a>関連項目
 - [Office ソリューションでコードを記述する](../vsto/writing-code-in-office-solutions.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f6e6b00e8e26d261aac18dd48af1d912bd6ffad1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dc9322dd2ad3c3a2111222d7491f9e1a82cd6c4
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899544"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825850"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>方法: Outlook でフォーム領域が表示されないようにする
   Outlook Microsoft Office 特定のアイテムのフォーム領域を表示しないようにする必要がある場合があります。 たとえば、連絡先アイテムに勤務先住所が含まれていない場合、マップ内のビジネスの場所を表示するフォーム領域が表示されないようにすることができます。
@@ -38,8 +38,9 @@ ms.locfileid: "99899544"
    この例では、連絡先アイテムに住所が含まれていない場合、 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> プロパティは **true** に設定され、フォーム領域は表示されません。
 
 ## <a name="example"></a>例
- [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
- [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
+
 
 ## <a name="see-also"></a>関連項目
 - [Outlook フォーム領域の作成](../vsto/creating-outlook-form-regions.md)

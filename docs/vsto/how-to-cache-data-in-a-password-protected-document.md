@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccdb906022d4dcfc321af294eec59afa36832773
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954034"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824186"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>方法: パスワードで保護されたドキュメントでデータをキャッシュする
   パスワードで保護されているドキュメントまたはブックのデータキャッシュにデータを追加した場合、キャッシュされたデータへの変更は自動的には保存されません。 キャッシュされたデータへの変更を保存するには、プロジェクト内の2つのメソッドをオーバーライドします。
@@ -45,8 +45,8 @@ ms.locfileid: "99954034"
 ### <a name="example"></a>例
  次のコード例は、パスワードで保護されている Word 文書にデータをキャッシュする方法を示しています。 メソッドで保護を削除する前に、メソッドで <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> 同じ種類の保護を再適用できるように、現在の値が保存され <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> ます。
 
- [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
- [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>コードのコンパイル
  プロジェクトのクラスに次のコードを追加 `ThisDocument` します。 このコードでは、パスワードがという名前のフィールドに格納されていることを前提としてい `securelyStoredPassword` ます。
@@ -69,8 +69,8 @@ ms.locfileid: "99954034"
 ### <a name="example"></a>例
  次のコード例は、パスワードで保護されている Excel ブックにデータをキャッシュする方法を示しています。 メソッドで保護を削除する前に、メソッドで <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> 同じ種類の保護を再適用できるように、現在のとの値が保存 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> され <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> ます。
 
- [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>コードのコンパイル
  プロジェクトのクラスに次のコードを追加 `ThisWorkbook` します。 このコードでは、パスワードがという名前のフィールドに格納されていることを前提としてい `securelyStoredPassword` ます。

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 61e729113ecfa988f424e2182662d506377d33e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21e0928396327911ea794c6270340c6efd27a43e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882389"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824602"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>チュートリアル: VSTO アドインのコードを VBA から呼び出す
   このチュートリアルでは、VSTO アドインのオブジェクトを Visual Basic for Applications (VBA) アドインや COM VSTO アドインなど、他の Microsoft Office ソリューションに公開する方法について説明します。
@@ -58,7 +58,7 @@ ms.locfileid: "99882389"
 
 1. Excel VSTO アドイン プロジェクト テンプレートを使用して、 **ExcelImportData** という名前の Excel VSTO アドイン プロジェクトを作成します。 詳細については、「 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)」を参照してください。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**ThisAddIn.cs** または **ThisAddIn** コードファイルを開き、**ソリューションエクスプローラー** に **ExcelImportData** プロジェクトを追加します。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]**thisaddin** または **thisaddin** コードファイルを開き、**ソリューションエクスプローラー** に **ExcelImportData** プロジェクトを追加します。
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>他の Office ソリューションに公開できるクラスを定義する
  このチュートリアルの目的は、VSTO アドインの `ImportData` というクラスの `AddInUtilities` メソッドを VBA コードから呼び出すことです。 このメソッドは、アクティブなワークシートのセル A1 に文字列を書き込みます。
@@ -75,13 +75,13 @@ ms.locfileid: "99882389"
 
 3. ファイルの先頭に次のディレクティブを追加します。
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
-     [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet2":::
 
 4. `AddInUtilities` クラスを次のコードで置き換えます。
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
-     [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb" id="Snippet3":::
 
      このコードは、 `AddInUtilities` クラスを COM から参照できるようにし、このクラスに `ImportData` メソッドを追加します。 また、 [クラスは](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) IDispatch `AddInUtilities` インターフェイスを公開するために <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 属性を持ち、COM から参照できるインターフェイスを実装します。
 
@@ -96,8 +96,8 @@ ms.locfileid: "99882389"
 
 3. 次のコードを `ThisAddIn` クラスに追加します。
 
-     [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
-     [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb" id="Snippet1":::
 
 4. **[ビルド]** メニューの **[ソリューションのビルド]** をクリックします。
 
@@ -143,7 +143,7 @@ ms.locfileid: "99882389"
 
 9. Excel を終了します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  VSTO アドインのプログラミングの詳細については、次の各トピックを参照してください。
 
 - `ThisAddIn` クラスを使用して、ホスト アプリケーションを自動化し、VSTO アドイン プロジェクトの他のタスクを実行する。 詳細については、「 [プログラム VSTO アドイン](../vsto/programming-vsto-add-ins.md)」を参照してください。
