@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a03d0fc896fcbc971bc62cd9391c4f38d0aad06c
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683481"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879383"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>変更ログ (Visual Studio Tools for Unity、Windows)
 
@@ -30,31 +30,31 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **評価:**
 
-  - `Active Scene`ルートゲームオブジェクトを示す [ローカル] に追加されました。
+  - ルートのゲーム オブジェクトを示す `Active Scene` を [ローカル] に追加しました。
 
-  - `this.gameObject`Unity プロジェクトで広く使用されている場合は、ローカルに追加されます。
+  - Unity プロジェクトで広く使用されていることから、`this.gameObject` を [ローカル] に追加しました。
 
-  - すべて `Children` のインスタンスにとグループを追加して、 `Components` `GameObject` すべてのオブジェクト階層を簡単に表示できるようにしました。
+  - `Children` と `Components` のグループを `GameObject` のすべてのインスタンスに追加し、すべてのオブジェクトを階層に簡単に表示できるようにしました。
 
-  - `Scene Path` `GameObject` シーン内の場所を表示するために、すべてのインスタンスに追加されます。
+  - シーン内のすべての位置を表示するために、`Scene Path` を `GameObject` のすべてのインスタンスに追加しました。
 
-  - `JobEntityBatch`ソースジェネレーターでエンティティを使用するときに、/ラムダのサポートが追加されました。
+  - ソース ジェネレーターでエンティティを使用するときの `JobEntityBatch`/Lambdas のサポートを追加しました。
 
-  - 大きな配列を表示するためのサポートの強化 (インデックスバケットを使用)。
+  - (インデックス バケットを使用して) 大きな配列を表示するためのサポートを強化しました。
   
-  - 2019.4 API の不足している Unity メッセージを追加しました。
+  - 2019.4 API で不足している Unity メッセージを追加しました。
 
 ### <a name="bug-fixes"></a>バグ修正
 
 - **統合:**
 
-  - ENU 以外の言語のさまざまな UI の問題を修正した。
+  - ENU 以外の言語のさまざまな UI の問題を修正しました。
 
-  - 診断に関する安定性の問題を修正 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) した。
+  - [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 診断に関する安定性の問題を修正しました。
   
 - **デバッグ:**
 
-  - メソッドを使用するときの VM の切断に関する問題を修正 `Trace` します。
+  - `Trace` メソッドを使用するときに VM が切断される問題を修正しました。
 
 - **評価:**
 
@@ -67,11 +67,11 @@ Visual Studio Tools for Unity の変更ログです。
 
 - **統合:**
 
-  - 、、およびの各ファイルのサポートを追加しました `raytrace shaders` `UXML` `USS` 。
+  - `raytrace shaders`、`UXML`、および `USS` のファイルのサポートを追加しました。
 
   - `.vsconfig`生成サポートを追加しました。 Visual Studio では、不足しているコンポーネントを検出し、Unity プロジェクトを使用するときにインストールするように求めるメッセージが表示されます。
 
-  - Unity messages API (コルーチンとして使用されるすべてのメソッド) が更新されました。
+  - (コルーチンとして使用されているすべてのメソッドの) Unity メッセージ API を更新しました。
 
   - Android SDK 検出を更新しました。
 
@@ -81,7 +81,7 @@ Visual Studio Tools for Unity の変更ログです。
 
   - インスタンス選択ダイアログを使用するときのプロセスの更新を修正します。
 
-  - [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md)診断を修正し、コルーチンおよびに対して間違った警告を出し `AssetPostprocessor.OnAssignMaterialModel` ます。
+  - コルーチンと `AssetPostprocessor.OnAssignMaterialModel` に対して間違った警告を出す、[`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 診断を修正しました。
 
 ## <a name="4820"></a>4.8.2.0
 リリース日2020年11月10日
@@ -1879,9 +1879,9 @@ Visual Studio Tools for Unity の変更ログです。
 
 - コンソール メッセージの情報を解析することにより、エラー一覧をクリックするとシンボル付きのスタックフレームの先頭に移動できるようになりました。
 
-- ユーザーがプロジェクトの生成に参加できるようにする [API](extensibility/customize-project-files-created-by-vstu.md) を追加しました。
+- ユーザーがプロジェクトの生成に参加できるようにする API を追加しました。
 
-- ユーザーが LogCallback に参加できるようにする [API](extensibility/share-the-unity-log-callback-with-vstu.md) を追加しました。
+- ユーザーが LogCallback に参加できるようにする API を追加しました。
 
 ### <a name="bug-fixes"></a>バグ修正
 

@@ -2,7 +2,7 @@
 title: トラブルシューティングと既知の問題 (VS Tools for Unity)
 description: Visual Studio Tools for Unity でのトラブルシューティングについて確認します。 既知の問題の説明を確認し、それらの問題の解決策について説明します。
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 04/15/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: troubleshooting
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e447c8cb94e536aeed9e01d00098fe4a98c6c006
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 37ee35fa66d37f9b85af01f5012e8ede76e877de
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341278"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879370"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>トラブルシューティングと既知の問題 (Visual Studio Tools for Unity)
 
@@ -25,9 +25,15 @@ ms.locfileid: "94341278"
 
 ## <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Unity と Visual Studio の間の接続のトラブルシューティング
 
-### <a name="confirm-editor-attaching-is-enabled"></a>[Editor Attaching] が有効になっていることを確認する
+### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>Confirm `Editor Attaching` が有効になっているか、 `Code Optimization On Startup` がに設定されています `Debug`
 
-Unity のメニューで **[Edit] > [Preferences]** を選択し、 **[External Tools]** タブを選択します。 **[Editor Attaching]** チェック ボックスがオンになっていることを確認します。 詳しくは、[Unity Preferences のドキュメント](https://docs.unity3d.com/Manual/Preferences.html)をご覧ください。
+Unity メニューでを選択し `Edit / Preferences` ます。
+
+使用する Unity のバージョンに応じて、次のようになります。
+- がに設定されていることを確認 `Code Optimization On Startup` `Debug` します。
+- または、[] タブを選択し `External Tools` ます。 `Editor Attaching` チェックボックスが有効になっていることを確認します。 
+
+詳しくは、[Unity Preferences のドキュメント](https://docs.unity3d.com/Manual/Preferences.html)をご覧ください。
 
 ### <a name="unable-to-attach"></a>アタッチできない
 
@@ -60,11 +66,22 @@ FMOD の場合は回避策があります。`FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio での互換性のないプロジェクト
 
-最初に、Unity で Visual Studio が外部スクリプト エディターとして設定されていることを確認します ([編集]/[環境設定]/[外部ツール])。 次に、Visual Studio プラグインが Unity にインストールされていることを確認します ([ヘルプ]/[バージョン情報] で、"Microsoft Visual Studio Tools for Unity is enabled" (Microsoft Visual Studio Tools for Unity が有効になっています) のようなメッセージが下部に表示される必要があります)。 さらに、拡張機能が Visual Studio に正しくインストールされていることを確認します ([ヘルプ]/[バージョン情報])。
+非常に重要なことは、Visual Studio ではプロジェクトの設定に "互換性のない" 状態が保存され、明示的にを使用するまでプロジェクトの再読み込みが試行されないことです `Reload Project` 。 そのため、トラブルシューティングの各手順を実行した後、ソリューションを再度開いて、互換性のないすべてのプロジェクトを右クリックして、を選択してください `Reload Project` 。
+
+1. を使用して、Visual Studio が Unity の外部スクリプトエディターとして設定されていることを確認し `Edit / Preferences / External Tools` ます。
+2. Unity のバージョンによって異なります。
+   - Visual Studio プラグインが Unity にインストールされていることを確認します。 `Help / About` 下部にある [Unity 用 Microsoft Visual Studio ツールが有効になっています。
+   - Unity 2020. x +: で最新の Visual Studio エディターパッケージを使用していることを確認 `Window / Package Manager` します。
+3. プロジェクト内のすべてのプロジェクト/ソリューションファイルとフォルダーを削除してみてください `.vs` 。
+4. またはを使用して、プロジェクト/ソリューションを再作成してみてください `Open C# Project` `Edit / Preferences / External tools / Regenerate Project files` 。
+5. Visual Studio に Game/Unity ワークロードがインストールされていることを確認します。
+6. [ここで](#visual-studio-crashes)説明するように MEF キャッシュをクリーンアップしてください。
+7. Visual Studio を再インストールしてみてください (ゲーム/Unity ワークロードを使用してのみ開始してください)。
+8. で Unity 拡張機能に干渉する可能性がある場合は、サードパーティ製の拡張機能を無効にしてください `Tools / Extensions` 。
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>余分な再読み込みが発生する、または Visual Studio で開いているウィンドウがすべて失われる
 
-アセット プロセッサなどのツールから直接プロジェクト ファイルに触れないようにしてください。 プロジェクト ファイルをどうしても操作する必要がある場合は、弊社でそのための API を公開します。 「[アセンブリ参照の問題](#assembly-reference-issues)」セクションを確認してください。
+アセット プロセッサなどのツールから直接プロジェクト ファイルに触れないようにしてください。 プロジェクト ファイルをどうしても操作する必要がある場合は、弊社でそのための API を公開します。 「[アセンブリ参照の問題](#assembly-reference-or-project-property-issues)」セクションを確認してください。
 
 余分な再読み込みが発生する場合、または Visual Studio で再読み込み時に開いているウィンドウがすべて失われる場合は、適切な .NET Targeting Pack がインストールされていることを確認してください。 詳細については、フレームワークに関する以下のセクションを確認してください。
 
@@ -78,13 +95,15 @@ FMOD の場合は回避策があります。`FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE
 
 ## <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>Windows の場合に Unity ターゲット フレームワークをダウンロードするよう Visual Studio から求められる
 
-Visual Studio Tools for Unity には .NET Framework 3.5 が必要ですが、Windows 8 や 10 では既定でインストールされません。 この問題を解決するには、.NET Framework 3.5 のダウンロードとインストールに関する手順に従ってください。
+レガシ Unity ランタイム (.NET 3.5 に相当) を使用する場合、Visual Studio Tools for Unity には .NET framework 3.5 が必要ですが、Windows 8 または10では既定でインストールされません。 この問題を解決するには、.NET Framework 3.5 のダウンロードとインストールに関する手順に従ってください。
 
-新しい Unity ランタイムを使用する場合は、.NET Targeting Pack バージョン 4.6 および 4.7.1 も必要です。 VS2017 インストーラーを使用して、すばやくインストールする (VS2017 のインストール、個々のコンポーネント、.NET カテゴリを変更して、4.x Targeting Pack をすべて選択する) ことができます。
+新しい Unity ランタイムを使用する場合は、Unity のバージョンによっては、.NET ターゲットパックのバージョン4.6 または4.7.1 も必要になります。 Visual Studio インストーラーを使用して、それらをすばやくインストールできます (インストール、個々のコンポーネント、.NET カテゴリを変更し、4.x ターゲットパックをすべて選択します)。
 
-## <a name="assembly-reference-issues"></a>アセンブリ参照の問題
+## <a name="assembly-reference-or-project-property-issues"></a>アセンブリ参照またはプロジェクトプロパティの問題
 
-プロジェクトの参照が複雑な場合、またはこの生成ステップをいっそう適切に制御したい場合は、[API](/cross-platform/customize-project-files-created-by-vstu.md) を使って、生成されるプロジェクトまたはソリューションのコンテンツを操作できます。 また、Unity プロジェクトで[応答ファイル](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)を使って処理を任せることもできます。
+プロジェクトの参照が複雑な場合、またはこの生成ステップをいっそう適切に制御したい場合は、[API](../extensibility/customize-project-files-created-by-vstu.md) を使って、生成されるプロジェクトまたはソリューションのコンテンツを操作できます。 また、Unity プロジェクトで[応答ファイル](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)を使って処理を任せることもできます。
+
+最近の Visual Studio と Unity のバージョンでは、 `Directory.Build.props` 生成されたプロジェクトと共にカスタムファイルを使用することをお勧めします。 生成プロセスに干渉することなく、プロジェクトの構造に貢献できるようになります。 詳細情報は [こちら](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets)です。
 
 ## <a name="breakpoints-with-a-warning"></a>ブレークポイントでの警告
 
@@ -92,7 +111,7 @@ Visual Studio が特定のブレークポイントのソースの場所を見つ
 
 ## <a name="breakpoints-not-hit"></a>ブレークポイントがヒットない
 
-使っているスクリプトが現在の Unity シーンに正しく読み込まれて使われていることを確認してください。 Visual Studio と Unity の両方を終了し、すべての生成されたファイル (\*.csproj、\*.sln) と Library フォルダー全体を削除します。
+使っているスクリプトが現在の Unity シーンに正しく読み込まれて使われていることを確認してください。 Visual Studio と Unity の両方を終了し、生成されたファイル ( \* .csproj、 \* .sln)、 `.vs` フォルダー、およびライブラリフォルダー全体を削除します。 C# のデバッグの詳細については、Unity の [web サイト](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)を参照してください。
 
 ## <a name="unable-to-debug-android-players"></a>Android プレーヤーをデバッグできない
 
@@ -102,13 +121,13 @@ Wi-Fi は高い汎用性を備えていますが、待機時間のため USB と
 
 USB はデバッグに関しては超高速です。Visual Studio Tools for Unity では USB デバイスを検出し、デバッグのために適切にポートを転送するよう adb サーバーに指示できるようになりました。
 
-## <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 および IntelliSense またはコード配色の問題
+## <a name="issues-with-intellisense-or-code-coloration"></a>IntelliSense またはコード配色に関する問題
 
-Visual Studio 2015 の Update 3 へのアップグレードを試してください。
+Visual Studio を最新バージョンにアップグレードしてみてください。 互換性のない [プロジェクト](#incompatible-project-in-visual-studio)の場合と同じトラブルシューティング手順を試してください。
 
 ## <a name="known-issues"></a>既知の問題
 
- デバッガーが Unity の古いバージョンの C# コンパイラとやり取りする方法に起因する、Visual Studio Tools for Unity の既知の問題があります。 これらの問題を修正するために作業中ですが、修正されるまでは以下の問題が発生する可能性があります。
+デバッガーが Unity の古いバージョンの C# コンパイラとやり取りする方法に起因する、Visual Studio Tools for Unity の既知の問題があります。 これらの問題を修正するために作業中ですが、修正されるまでは以下の問題が発生する可能性があります。
 
 - デバッグ時に Unity がクラッシュすることがあります。
 
@@ -118,11 +137,11 @@ Visual Studio 2015 の Update 3 へのアップグレードを試してくださ
 
 ## <a name="report-errors"></a>レポート エラー
 
- クラッシュ、フリーズ、またはその他のエラーが発生する場合、エラー レポートを送信することによって、Visual Studio Tools for Unity の品質向上にご協力ください。 Visual Studio Tools for Unity における問題の調査と解決に役立ちます。 ご協力に感謝いたします。
+クラッシュ、フリーズ、またはその他のエラーが発生する場合、エラー レポートを送信することによって、Visual Studio Tools for Unity の品質向上にご協力ください。 Visual Studio Tools for Unity における問題の調査と解決に役立ちます。 ご協力に感謝いたします。
 
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Visual Studio がフリーズする場合にエラーを報告する方法
 
- Visual Studio Tools for Unity でデバッグすると Visual Studio がフリーズするという報告を受け取っていますが、問題を把握するためにさらにデータを必要としています。 次の手順を実行していただくと、調査に役立ちます。
+Visual Studio Tools for Unity でデバッグすると Visual Studio がフリーズするという報告を受け取っていますが、問題を把握するためにさらにデータを必要としています。 次の手順を実行していただくと、調査に役立ちます。
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity でデバッグすると Visual Studio がフリーズすることを報告する方法
 

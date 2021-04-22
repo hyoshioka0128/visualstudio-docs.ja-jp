@@ -3,16 +3,19 @@ title: XAML コード エディター
 description: Visual Studio の XAML コード エディターの概要を説明します
 ms.date: 06/16/2020
 ms.topic: overview
+f1_keywords:
+- VS.XamlEditor
 monikerRange: vs-2019
+ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962315"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879396"
 ---
 # <a name="xaml-code-editor"></a>XAML コード エディター
 
@@ -270,7 +273,7 @@ Visual Studio IDE での "*すべての*" 設定の詳細については、「[�
 
 > [!NOTE]
 > また、キーボード ショートカットを使用して [オプション] ダイアログ ボックスにアクセスすることもできます。 次の手順に従います。**Ctrl** + **Q** キーを押して IDE を検索し、「**オプション**」と入力して **Enter** キーを押します。 次に、**Ctrl** + **E** キーを押して [オプション] ダイアログ ボックスを検索し、「**テキスト エディター**」と入力して **Enter** キーを押し、「**XAML**」と入力して **Enter** キーを押します。
->  
+>
 > キーボード ショートカットの詳細については、「[Visual Studio のショートカットに関するヒント](../ide/productivity-shortcuts.md#code-editor)」のページを参照してください。
 
 ### <a name="universal-text-editor-options"></a>テキスト エディターの共通のオプション
