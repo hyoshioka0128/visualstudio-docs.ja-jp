@@ -2,31 +2,31 @@
 title: Microsoft Endpoint Configuration Manager を使用して Visual Studio に管理者向け更新プログラムを適用する
 titleSuffix: ''
 description: Visual Studio に管理者向け更新プログラムを適用する方法について説明します。
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: d7d2950b9495846693d5edee7790b8611cbca170
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547454"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800794"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用して管理者向け更新プログラムを適用する
 
-このドキュメントでは、Visual Studio 管理者向け更新プログラムのさまざまな種類と特性について説明します。 以下に、組織全体に配布する方法と時期、使用可能な構成オプション、およびレポートを表示してトラブルシューティングを行う方法について説明します。 管理者向け更新プログラムを使用するための前提条件の詳細については、[管理者向け更新プログラムの有効化](../install/enabling-administrator-updates.md)に関するページを参照してください。
+このドキュメントでは、Visual Studio 管理者向け更新プログラムのさまざまな種類と特性について説明します。 以下に、組織全体に配布する方法と時期、使用可能な構成オプション、およびレポートを表示してトラブルシューティングを行う方法について説明します。 管理者向け更新プログラムを使用するための前提条件の詳細については、[管理者向け更新プログラムの有効化](../install/enabling-administrator-updates.md)に関するページを参照してください。 管理者向け更新プログラムは、Visual Studio が既にコンピューターにインストールされていることを前提としています。 管理者向け更新プログラムを適用しても、まったく新しいインストールが開始されるわけではありません。
 
 ## <a name="understanding-visual-studio-administrator-updates"></a>Visual Studio 管理者向け更新プログラムについて 
 
-Microsoft カタログおよび WSUS で使用される Microsoft Update に発行される Visual Studio 管理者更新プログラム パッケージには、Configuration Manager で更新プログラムをダウンロードして Visual Studio からクライアント コンピューターに配布するために必要な情報が含まれています。 IT 管理者が組織全体に配布する更新プログラムを決定するために必要な情報も含まれ、ネットワーク レイアウトの保守を容易にします。 Visual Studio 管理者更新プログラム パッケージには、製品の新規インストールを実行するために十分な情報は含まれず、Content Delivery Network に発行される実際の製品バイナリも含まれません。 Visual Studio 管理者向け更新プログラムは、Visual Studio の通常の更新プログラムと同様に累積的です。 製品バージョン番号やリリース日がより新しい Visual Studio 更新プログラムはすべて、より古い下位のバージョンのスーパーセットであると見なすことができます。 
+Microsoft カタログおよび WSUS で使用される Microsoft Update に発行される Visual Studio 管理者向け更新プログラム パッケージには、Configuration Manager で Visual Studio 更新プログラムをダウンロードしてクライアント コンピューターに配布するために必要な情報が含まれています。 IT 管理者が組織全体に配布する更新プログラムを決定するために必要な情報も含まれています。 これは、ネットワーク レイアウトのメンテナンスを容易にするためにも使用できます。 Visual Studio 管理者更新プログラム パッケージには、製品の新規インストールを実行するために十分な情報は含まれず、Content Delivery Network に発行される実際の製品バイナリも含まれません。 Visual Studio 管理者向け更新プログラムは、Visual Studio の通常の更新プログラムと同様に累積的です。 製品バージョン番号やリリース日がより新しい Visual Studio 更新プログラムはすべて、より古い下位のバージョンのスーパーセットであると見なすことができます。 
 
 Visual Studio 管理者向け更新プログラムは、サポート対象の Visual Studio サービス バージョンに適用されます。 特定の期間中に Visual Studio のどのサービス ベースラインがサポートされているかの詳細については、「[Visual Studio の製品ライフサイクルとサービス](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)」を参照してください。 Visual Studio のサポートされているサービス ベースラインはすべて安全に維持されます。  
 
@@ -83,9 +83,9 @@ Visual Studio には、次の 3 種類の管理者向け更新プログラムが
 
 ::: moniker range="vs-2019"
 
-* **サービス ベースラインの持続性**: 前述したように、機能更新プログラムである管理者向け更新プログラムによって、Visual Studio のインストールが製品のより最新のマイナー バージョンに上げられます。 ただし、開発チームが特定の安定したセキュリティで保護されたサービス ベースライン レベルを維持したい場合や、クライアントがより最新のマイナー バージョンに上げる時期を制御したい場合があります。 クライアント コンピューターをサービス ベースラインで維持し、それに送信される望ましくない管理者機能更新プログラムを無視するように構成するには、**BaselineStickinessVersions2019** Reg_SZ データ値を作成し、クライアント コンピューターがスナップして維持できる許容ベースラインを表す文字列を設定する必要があります。  文字列には、**16.4.0,16.7.0** のように、コンマで区切った一連のサービス ベースライン バージョンを含めることができます。 文字列には、任意の数のサービス ベースライン バージョンを含めることができ、サポートされているすべてのサービス ベースラインを参照するための省略表現として **All** もサポートされています。 
+* **サービス ベースラインの持続性**: 前述したように、管理者向け機能更新プログラムによって、Visual Studio のインストールが製品のより新しいマイナー バージョンに上げられます。 ただし、Visual Studio ユーザーが特定の安定したセキュリティで保護されたサービス ベースライン レベルを維持する必要があり、そのコンピューターをより新しいマイナー バージョンに上げるタイミングを制御したい場合があります。 クライアント コンピューターをサービス ベースラインで維持し、それに送信される望ましくない管理者向け機能更新プログラムを無視するように構成するには、**BaselineStickinessVersions2019** Reg_SZ データ値を作成し、クライアント コンピューターがスナップして維持できる希望のベースラインを表す文字列に設定する必要があります。 文字列には、**16.7.0** などの使用可能なサービス ベースライン バージョンを含めることができます。  
 
-     `BaselineStickinessVersions2019` レジストリ値の形式が正しくない場合は、そのコンピューターへのすべての機能更新プログラムのインストールがブロックされます。 また、[Visual Studio 機能更新プログラムのサポート期間](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)にも注意してください。 有効期間が終了している機能更新プログラムを適用することは技術的に可能ですが、それらはサポート外で、安全でない可能性があるため、お勧めしません。
+     `BaselineStickinessVersions2019` レジストリ値の形式が正しくない場合は、そのコンピューターへのすべての管理者向け機能更新プログラムのインストールがブロックされます。 また、[Visual Studio 機能更新プログラムのサポート期間](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)にも注意してください。 さらに、`BaselineStickinessVersions2019` キーの有無、または値にかかわらず、有効期間が終了している管理者向け機能更新プログラムを適用することは技術的に可能ですが、それらはサポート外で、安全でない可能性があるため、お勧めしません。
 
 ::: moniker-end
 

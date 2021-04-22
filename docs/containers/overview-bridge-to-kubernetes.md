@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571546"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526160"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Bridge to Kubernetes のしくみ
 
@@ -26,6 +26,8 @@ Bridge to Kubernetes では、接続された Kubernetes クラスターと開�
 
 > [!WARNING]
 > Bridge to Kubernetes は、開発およびテストのシナリオでのみ使用することを目的としています。 アクティブに使用されている運用クラスターまたはライブ サービスでの使用は意図されておらず、サポートされていません。
+
+現在サポートされている機能と、Bridge to Kubernetes の今後のロードマップに関する情報は、[Bridge to Kubernetes のロードマップ](https://github.com/microsoft/mindaro/projects/1)を参照してください。
 
 ## <a name="using-bridge-to-kubernetes"></a>Bridge to Kubernetes の使用
 
@@ -53,7 +55,7 @@ Visual Studio で Bridge to Kubernetes を使用するには、*ASP.NET と Web 
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml を使用した追加の構成
 
-`KubernetesLocalProcessConfig.yaml` ファイルを使用すると、クラスター内のポッドからアクセスできる環境変数とマウントされたファイルをレプリケートすることができます。 追加の構成オプションの詳細については、「[Bridge to Kubernetes を構成する][using-config-yaml]」を参照してください。
+`KubernetesLocalProcessConfig.yaml` ファイルを使用すると、クラスター内のポッドからアクセスできる環境変数とマウントされたファイルをレプリケートすることができます。 Bridge to Kubernetes の開発に Visual Studio を使用する場合は、KubernetesLocalConfig.yaml ファイルが、リダイレクトするサービスのプロジェクト ファイルと同じディレクトリに配置されている必要があります。 追加の構成オプションの詳細については、「[Bridge to Kubernetes を構成する][using-config-yaml]」を参照してください。
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>分離して開発するためのルーティング機能の使用
 
