@@ -1,13 +1,12 @@
 ---
 title: XAML デザイナーの概要
 description: XAML ベースのアプリの設計に役立つビジュアルインターフェイスを提供する、Blend for Visual Studio の XAML デザイナーのワークスペース UI と機能について説明します。
-ms.custom: SEO-VS-2020
 ms.date: 03/03/2020
 ms.topic: conceptual
+ms.custom: contperf-fy21q4; SEO-VS-2020
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
-- VS.XamlEditor
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.devlang: CSharp
@@ -15,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 132a5aef33b501ad17a2a089684cfe927321b2e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d5584380b78bba05f1596a99aa2298789df018f
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966488"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879357"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>XAML デザイナーを使用して UI を作成する
 
@@ -83,7 +82,7 @@ XAML デザイナーは、アプリでレンダリングされる XAML マーク
 
 このツール バーでは、次のコマンドを使用できます。
 
-**Zoom**
+**[ズーム]**
 
 ズームでは、デザイン画面のサイズを変更できます。 12.5% から 800% の範囲でズームしたり、**[選択範囲をズーム]** や **[すべてを合わせる]** などのオプションを選択したりできます。
 
@@ -164,7 +163,7 @@ Blend for Visual Studio でオブジェクトとタイムラインウィンド�
 
 プロパティの使用とイベントの処理の詳細については、「[コントロールとパターンの概要](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)」を参照してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>こちらもご覧ください
 
 - [XAML デザイナーで要素を操作する](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [リソースを作成して適用する方法](../xaml-tools/how-to-create-and-apply-a-resource.md)
